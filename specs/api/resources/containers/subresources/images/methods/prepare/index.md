@@ -74,7 +74,7 @@ Image url.
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -96,7 +96,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -116,7 +116,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -138,7 +138,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -158,7 +158,7 @@ pointer: optional string
 
 <summary>
 
-result: object {image, status, artifact\_digest, reason }
+result: object { image, status, artifact\_digest, reason }
 
 Durable preparation state for a container image.
 
@@ -174,7 +174,7 @@ Image url.
 
 <summary>
 
-status: "pending"or "ready"or "error"
+status: "pending" or "ready" or "error"
 
 Current durable preparation state for a container image.
 

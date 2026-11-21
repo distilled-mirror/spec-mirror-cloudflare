@@ -88,7 +88,7 @@ Specify the zone ID.
 
 <summary>
 
-errors: array of object {message }
+errors: array of object { message }
 
 </summary>
 
@@ -104,7 +104,7 @@ message: string
 
 <summary>
 
-messages: array of object {message }
+messages: array of object { message }
 
 </summary>
 
@@ -120,7 +120,7 @@ message: "Successful request"
 
 <summary>
 
-result: object {destinations, enabled, forward\_context, 3 more }
+result: object { destinations, enabled, forward\_context, 3 more }
 
 </summary>
 
@@ -152,7 +152,7 @@ Whether traces are persisted in Cloudflare.
 
 <summary>
 
-propagation\_policy: "accept"or "authenticated"or "reject"
+propagation\_policy: "accept" or "authenticated" or "reject"
 
 When inbound trace context may be continued. Authenticated propagation is not supported yet.
 

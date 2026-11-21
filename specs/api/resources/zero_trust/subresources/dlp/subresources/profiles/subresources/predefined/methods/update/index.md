@@ -102,7 +102,7 @@ enabled\_entries: optional array of string
 
 <summary>
 
-Deprecatedentries: optional array of object {id, enabled }
+Deprecatedentries: optional array of object { id, enabled }
 
 </summary>
 
@@ -130,7 +130,7 @@ ocr\_enabled: optional boolean
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -152,7 +152,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -172,7 +172,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -194,7 +194,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -252,7 +252,7 @@ Entries to enable for this predefined profile. Any entries not provided will be 
 
 <summary>
 
-Deprecatedentries: array of object {id, created\_at, enabled, 7 more } or object {id, created\_at, enabled, 4 more } or object {id, confidence, enabled, 5 more } or 4 more
+Deprecatedentries: array of object { id, created\_at, enabled, 7 more } or object { id, created\_at, enabled, 4 more } or object { id, confidence, enabled, 5 more } or 4 more
 
 This field has been deprecated for <code>enabled_entries</code>.
 
@@ -264,7 +264,7 @@ One of the following:
 
 <summary>
 
-CustomEntry object {id, created\_at, enabled, 7 more }
+CustomEntry object { id, created\_at, enabled, 7 more }
 
 </summary>
 
@@ -344,7 +344,7 @@ Returned by the entry endpoints. Not returned on entries embedded in other respo
 
 <summary>
 
-CustomPromptTopicEntry object {id, created\_at, enabled, 4 more }
+CustomPromptTopicEntry object { id, created\_at, enabled, 4 more }
 
 </summary>
 
@@ -392,7 +392,7 @@ The optional description of the custom prompt topic entry.
 
 <summary>
 
-PredefinedEntry object {id, confidence, enabled, 5 more }
+PredefinedEntry object { id, confidence, enabled, 5 more }
 
 </summary>
 
@@ -406,7 +406,7 @@ formatuuid
 
 <summary>
 
-confidence: object {ai\_context\_available, available }
+confidence: object { ai\_context\_available, available }
 
 </summary>
 
@@ -454,7 +454,7 @@ formatuuid
 
 <summary>
 
-variant: optional object {topic\_type, type, description } or object {type, description }
+variant: optional object { topic\_type, type, description } or object { type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -466,7 +466,7 @@ One of the following:
 
 <summary>
 
-object {topic\_type, type, description }
+object { topic\_type, type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -476,7 +476,7 @@ A Predefined AI prompt classification topic entry.
 
 <summary>
 
-topic\_type: "Intent"or "Content"
+topic\_type: "Intent" or "Content"
 
 </summary>
 
@@ -512,7 +512,7 @@ A customer-facing explanation of what this predefined AI prompt topic represents
 
 <summary>
 
-object {type, description }
+object { type, description }
 
 A general predefined entry.
 
@@ -544,7 +544,7 @@ A customer-facing explanation of what this predefined entry represents.
 
 <summary>
 
-IntegrationEntry object {id, created\_at, enabled, 4 more }
+IntegrationEntry object { id, created\_at, enabled, 4 more }
 
 </summary>
 
@@ -592,7 +592,7 @@ formatuuid
 
 <summary>
 
-ExactDataEntry object {id, case\_sensitive, created\_at, 6 more }
+ExactDataEntry object { id, case\_sensitive, created\_at, 6 more }
 
 </summary>
 
@@ -650,7 +650,7 @@ The optional description of the exact data entry.
 
 <summary>
 
-DocumentFingerprintEntry object {id, created\_at, enabled, 4 more }
+DocumentFingerprintEntry object { id, created\_at, enabled, 4 more }
 
 </summary>
 
@@ -698,7 +698,7 @@ The optional description of the document fingerprint entry.
 
 <summary>
 
-WordListEntry object {id, created\_at, enabled, 5 more }
+WordListEntry object { id, created\_at, enabled, 5 more }
 
 </summary>
 

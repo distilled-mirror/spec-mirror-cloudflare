@@ -64,7 +64,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 <summary>
 
-aggInterval: optional "15m"or "1h"or "1d"or "1w"
+aggInterval: optional "15m" or "1h" or "1d" or "1w"
 
 Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to <a href="https://developers.cloudflare.com/radar/concepts/aggregation-intervals/">Aggregation intervals</a>. When omitted, the interval is auto-selected from the requested date range; finer intervals are only available for shorter ranges. If the requested interval is too granular for the date range, the request is rejected.
 
@@ -120,7 +120,7 @@ Start of the date range. Alternative to `dateRange`; provide together with `date
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -156,7 +156,7 @@ Filters results by BGP network prefix.
 
 <summary>
 
-updateType: optional array of "ANNOUNCEMENT"or "WITHDRAWAL"
+updateType: optional array of "ANNOUNCEMENT" or "WITHDRAWAL"
 
 Filters results by BGP update type.
 
@@ -182,7 +182,7 @@ One of the following:
 
 <summary>
 
-result: object {meta, serie\_0 }
+result: object { meta, serie\_0 }
 
 </summary>
 
@@ -190,7 +190,7 @@ result: object {meta, serie\_0 }
 
 <summary>
 
-meta: object {aggInterval, confidenceInfo, dateRange, lastUpdated }
+meta: object { aggInterval, confidenceInfo, dateRange, lastUpdated }
 
 </summary>
 
@@ -198,7 +198,7 @@ meta: object {aggInterval, confidenceInfo, dateRange, lastUpdated }
 
 <summary>
 
-aggInterval: "15m"or "1h"or "1d"or "1w"
+aggInterval: "15m" or "1h" or "1d" or "1w"
 
 </summary>
 
@@ -228,7 +228,7 @@ One of the following:
 
 <summary>
 
-confidenceInfo: object {annotations, level }
+confidenceInfo: object { annotations, level }
 
 </summary>
 
@@ -236,7 +236,7 @@ confidenceInfo: object {annotations, level }
 
 <summary>
 
-annotations: array of object {dataSource, description, endDate, 5 more }
+annotations: array of object { dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -244,7 +244,7 @@ annotations: array of object {dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
+dataSource: "ALL" or "AI\_BOTS" or "AI\_GATEWAY" or 22 more
 
 Data source for annotations.
 
@@ -370,7 +370,7 @@ formatdate-time
 
 <summary>
 
-eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
+eventType: "GENERAL" or "OUTAGE" or "PARTIAL\_PROJECTION" or 2 more
 
 Event type for annotations.
 
@@ -442,7 +442,7 @@ Provides an indication of how much confidence Cloudflare has in the data.
 
 <summary>
 
-dateRange: array of object {endTime, startTime }
+dateRange: array of object { endTime, startTime }
 
 </summary>
 
@@ -480,7 +480,7 @@ formatdate-time
 
 <summary>
 
-serie\_0: object {timestamps, values }
+serie\_0: object { timestamps, values }
 
 </summary>
 

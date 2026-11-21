@@ -48,7 +48,7 @@ GET/accounts/{account\_id}/cni/interconnects/{icon}/status
 
 <summary>
 
-InterconnectListResponse object {items, next }
+InterconnectListResponse object { items, next }
 
 </summary>
 
@@ -56,7 +56,7 @@ InterconnectListResponse object {items, next }
 
 <summary>
 
-items: array of object {facility, name, site, 5 more } or object {name, region, type, 2 more }
+items: array of object { facility, name, site, 5 more } or object { name, region, type, 2 more }
 
 </summary>
 
@@ -66,7 +66,7 @@ One of the following:
 
 <summary>
 
-NscInterconnectPhysicalBody object {facility, name, site, 5 more }
+NscInterconnectPhysicalBody object { facility, name, site, 5 more }
 
 </summary>
 
@@ -74,7 +74,7 @@ NscInterconnectPhysicalBody object {facility, name, site, 5 more }
 
 <summary>
 
-facility: object {address, name }
+facility: object { address, name }
 
 </summary>
 
@@ -132,7 +132,7 @@ ccr\_device\_name: optional string
 
 <summary>
 
-NscInterconnectGcpPartnerBody object {name, region, type, 2 more }
+NscInterconnectGcpPartnerBody object { name, region, type, 2 more }
 
 </summary>
 
@@ -158,7 +158,7 @@ formatuuid
 
 <summary>
 
-speed: optional "50M"or "100M"or "200M"or 9 more
+speed: optional "50M" or "100M" or "200M" or 9 more
 
 Bandwidth structure as visible through the customer-facing API.
 
@@ -240,7 +240,7 @@ formatint32
 
 <summary>
 
-InterconnectGetResponse = object {facility, name, site, 5 more } or object {name, region, type, 2 more }
+InterconnectGetResponse = object { facility, name, site, 5 more } or object { name, region, type, 2 more }
 
 </summary>
 
@@ -250,7 +250,7 @@ One of the following:
 
 <summary>
 
-NscInterconnectPhysicalBody object {facility, name, site, 5 more }
+NscInterconnectPhysicalBody object { facility, name, site, 5 more }
 
 </summary>
 
@@ -258,7 +258,7 @@ NscInterconnectPhysicalBody object {facility, name, site, 5 more }
 
 <summary>
 
-facility: object {address, name }
+facility: object { address, name }
 
 </summary>
 
@@ -316,7 +316,7 @@ ccr\_device\_name: optional string
 
 <summary>
 
-NscInterconnectGcpPartnerBody object {name, region, type, 2 more }
+NscInterconnectGcpPartnerBody object { name, region, type, 2 more }
 
 </summary>
 
@@ -342,7 +342,7 @@ formatuuid
 
 <summary>
 
-speed: optional "50M"or "100M"or "200M"or 9 more
+speed: optional "50M" or "100M" or "200M" or 9 more
 
 Bandwidth structure as visible through the customer-facing API.
 
@@ -414,7 +414,7 @@ One of the following:
 
 <summary>
 
-InterconnectCreateResponse = object {facility, name, site, 5 more } or object {name, region, type, 2 more }
+InterconnectCreateResponse = object { facility, name, site, 5 more } or object { name, region, type, 2 more }
 
 </summary>
 
@@ -424,7 +424,7 @@ One of the following:
 
 <summary>
 
-NscInterconnectPhysicalBody object {facility, name, site, 5 more }
+NscInterconnectPhysicalBody object { facility, name, site, 5 more }
 
 </summary>
 
@@ -432,7 +432,7 @@ NscInterconnectPhysicalBody object {facility, name, site, 5 more }
 
 <summary>
 
-facility: object {address, name }
+facility: object { address, name }
 
 </summary>
 
@@ -490,7 +490,7 @@ ccr\_device\_name: optional string
 
 <summary>
 
-NscInterconnectGcpPartnerBody object {name, region, type, 2 more }
+NscInterconnectGcpPartnerBody object { name, region, type, 2 more }
 
 </summary>
 
@@ -516,7 +516,7 @@ formatuuid
 
 <summary>
 
-speed: optional "50M"or "100M"or "200M"or 9 more
+speed: optional "50M" or "100M" or "200M" or 9 more
 
 Bandwidth structure as visible through the customer-facing API.
 
@@ -588,7 +588,7 @@ One of the following:
 
 <summary>
 
-InterconnectStatusResponse = object {state } or object {state, reason } or object {state, reason } or object {state }
+InterconnectStatusResponse = object { state } or object { state, reason } or object { state, reason } or object { state }
 
 </summary>
 
@@ -598,7 +598,7 @@ One of the following:
 
 <summary>
 
-Pending object {state }
+Pending object { state }
 
 </summary>
 
@@ -614,7 +614,7 @@ state: "Pending"
 
 <summary>
 
-Down object {state, reason }
+Down object { state, reason }
 
 </summary>
 
@@ -636,7 +636,7 @@ Diagnostic information, if available
 
 <summary>
 
-Unhealthy object {state, reason }
+Unhealthy object { state, reason }
 
 </summary>
 
@@ -658,7 +658,7 @@ Diagnostic information, if available
 
 <summary>
 
-Healthy object {state }
+Healthy object { state }
 
 </summary>
 

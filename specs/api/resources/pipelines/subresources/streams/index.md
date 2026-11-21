@@ -44,7 +44,7 @@ DELETE/accounts/{account\_id}/pipelines/v1/streams/{stream\_id}
 
 <summary>
 
-StreamListResponse object {id, created\_at, http, 7 more }
+StreamListResponse object { id, created\_at, http, 7 more }
 
 </summary>
 
@@ -64,7 +64,7 @@ formatdate-time
 
 <summary>
 
-http: object {authentication, enabled, cors }
+http: object { authentication, enabled, cors }
 
 </summary>
 
@@ -84,7 +84,7 @@ Indicates that the HTTP endpoint is enabled.
 
 <summary>
 
-cors: optional object {origins }
+cors: optional object { origins }
 
 Specifies the CORS options for the HTTP endpoint.
 
@@ -128,7 +128,7 @@ Indicates the current version of this stream.
 
 <summary>
 
-worker\_binding: object {enabled }
+worker\_binding: object { enabled }
 
 </summary>
 
@@ -154,7 +154,7 @@ formaturi
 
 <summary>
 
-format: optional object {type, decimal\_encoding, timestamp\_format, unstructured } or object {type, compression, row\_group\_bytes }
+format: optional object { type, decimal\_encoding, timestamp\_format, unstructured } or object { type, compression, row\_group\_bytes }
 
 Defines the data format of the events.
 
@@ -166,7 +166,7 @@ One of the following:
 
 <summary>
 
-Json object {type, decimal\_encoding, timestamp\_format, unstructured }
+Json object { type, decimal\_encoding, timestamp\_format, unstructured }
 
 </summary>
 
@@ -178,7 +178,7 @@ type: "json"
 
 <summary>
 
-decimal\_encoding: optional "number"or "string"or "bytes"
+decimal\_encoding: optional "number" or "string" or "bytes"
 
 </summary>
 
@@ -204,7 +204,7 @@ One of the following:
 
 <summary>
 
-timestamp\_format: optional "rfc3339"or "unix\_millis"
+timestamp\_format: optional "rfc3339" or "unix\_millis"
 
 </summary>
 
@@ -234,7 +234,7 @@ unstructured: optional boolean
 
 <summary>
 
-Parquet object {type, compression, row\_group\_bytes }
+Parquet object { type, compression, row\_group\_bytes }
 
 </summary>
 
@@ -246,7 +246,7 @@ type: "parquet"
 
 <summary>
 
-compression: optional "uncompressed"or "snappy"or "gzip"or 2 more
+compression: optional "uncompressed" or "snappy" or "gzip" or 2 more
 
 </summary>
 
@@ -296,7 +296,7 @@ minimum0
 
 <summary>
 
-schema: optional object {fields, inferred }
+schema: optional object { fields, inferred }
 
 Defines the schema of the events in the data stream.
 
@@ -316,7 +316,7 @@ One of the following:
 
 <summary>
 
-Int32 object {type, metadata\_key, name, 2 more }
+Int32 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -348,7 +348,7 @@ sql\_name: optional string
 
 <summary>
 
-Int64 object {type, metadata\_key, name, 2 more }
+Int64 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -380,7 +380,7 @@ sql\_name: optional string
 
 <summary>
 
-Float32 object {type, metadata\_key, name, 2 more }
+Float32 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -412,7 +412,7 @@ sql\_name: optional string
 
 <summary>
 
-Float64 object {type, metadata\_key, name, 2 more }
+Float64 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -444,7 +444,7 @@ sql\_name: optional string
 
 <summary>
 
-Bool object {type, metadata\_key, name, 2 more }
+Bool object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -476,7 +476,7 @@ sql\_name: optional string
 
 <summary>
 
-String object {type, metadata\_key, name, 2 more }
+String object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -508,7 +508,7 @@ sql\_name: optional string
 
 <summary>
 
-Binary object {type, metadata\_key, name, 2 more }
+Binary object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -540,7 +540,7 @@ sql\_name: optional string
 
 <summary>
 
-Timestamp object {type, metadata\_key, name, 3 more }
+Timestamp object { type, metadata\_key, name, 3 more }
 
 </summary>
 
@@ -568,7 +568,7 @@ sql\_name: optional string
 
 <summary>
 
-unit: optional "second"or "millisecond"or "microsecond"or "nanosecond"
+unit: optional "second" or "millisecond" or "microsecond" or "nanosecond"
 
 </summary>
 
@@ -602,7 +602,7 @@ One of the following:
 
 <summary>
 
-Json object {type, metadata\_key, name, 2 more }
+Json object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -714,7 +714,7 @@ inferred: optional boolean
 
 <summary>
 
-StreamGetResponse object {id, created\_at, http, 7 more }
+StreamGetResponse object { id, created\_at, http, 7 more }
 
 </summary>
 
@@ -734,7 +734,7 @@ formatdate-time
 
 <summary>
 
-http: object {authentication, enabled, cors }
+http: object { authentication, enabled, cors }
 
 </summary>
 
@@ -754,7 +754,7 @@ Indicates that the HTTP endpoint is enabled.
 
 <summary>
 
-cors: optional object {origins }
+cors: optional object { origins }
 
 Specifies the CORS options for the HTTP endpoint.
 
@@ -798,7 +798,7 @@ Indicates the current version of this stream.
 
 <summary>
 
-worker\_binding: object {enabled }
+worker\_binding: object { enabled }
 
 </summary>
 
@@ -824,7 +824,7 @@ formaturi
 
 <summary>
 
-format: optional object {type, decimal\_encoding, timestamp\_format, unstructured } or object {type, compression, row\_group\_bytes }
+format: optional object { type, decimal\_encoding, timestamp\_format, unstructured } or object { type, compression, row\_group\_bytes }
 
 Defines the data format of the events.
 
@@ -836,7 +836,7 @@ One of the following:
 
 <summary>
 
-Json object {type, decimal\_encoding, timestamp\_format, unstructured }
+Json object { type, decimal\_encoding, timestamp\_format, unstructured }
 
 </summary>
 
@@ -848,7 +848,7 @@ type: "json"
 
 <summary>
 
-decimal\_encoding: optional "number"or "string"or "bytes"
+decimal\_encoding: optional "number" or "string" or "bytes"
 
 </summary>
 
@@ -874,7 +874,7 @@ One of the following:
 
 <summary>
 
-timestamp\_format: optional "rfc3339"or "unix\_millis"
+timestamp\_format: optional "rfc3339" or "unix\_millis"
 
 </summary>
 
@@ -904,7 +904,7 @@ unstructured: optional boolean
 
 <summary>
 
-Parquet object {type, compression, row\_group\_bytes }
+Parquet object { type, compression, row\_group\_bytes }
 
 </summary>
 
@@ -916,7 +916,7 @@ type: "parquet"
 
 <summary>
 
-compression: optional "uncompressed"or "snappy"or "gzip"or 2 more
+compression: optional "uncompressed" or "snappy" or "gzip" or 2 more
 
 </summary>
 
@@ -966,7 +966,7 @@ minimum0
 
 <summary>
 
-schema: optional object {fields, inferred }
+schema: optional object { fields, inferred }
 
 Defines the schema of the events in the data stream.
 
@@ -986,7 +986,7 @@ One of the following:
 
 <summary>
 
-Int32 object {type, metadata\_key, name, 2 more }
+Int32 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -1018,7 +1018,7 @@ sql\_name: optional string
 
 <summary>
 
-Int64 object {type, metadata\_key, name, 2 more }
+Int64 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -1050,7 +1050,7 @@ sql\_name: optional string
 
 <summary>
 
-Float32 object {type, metadata\_key, name, 2 more }
+Float32 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -1082,7 +1082,7 @@ sql\_name: optional string
 
 <summary>
 
-Float64 object {type, metadata\_key, name, 2 more }
+Float64 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -1114,7 +1114,7 @@ sql\_name: optional string
 
 <summary>
 
-Bool object {type, metadata\_key, name, 2 more }
+Bool object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -1146,7 +1146,7 @@ sql\_name: optional string
 
 <summary>
 
-String object {type, metadata\_key, name, 2 more }
+String object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -1178,7 +1178,7 @@ sql\_name: optional string
 
 <summary>
 
-Binary object {type, metadata\_key, name, 2 more }
+Binary object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -1210,7 +1210,7 @@ sql\_name: optional string
 
 <summary>
 
-Timestamp object {type, metadata\_key, name, 3 more }
+Timestamp object { type, metadata\_key, name, 3 more }
 
 </summary>
 
@@ -1238,7 +1238,7 @@ sql\_name: optional string
 
 <summary>
 
-unit: optional "second"or "millisecond"or "microsecond"or "nanosecond"
+unit: optional "second" or "millisecond" or "microsecond" or "nanosecond"
 
 </summary>
 
@@ -1272,7 +1272,7 @@ One of the following:
 
 <summary>
 
-Json object {type, metadata\_key, name, 2 more }
+Json object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -1384,7 +1384,7 @@ inferred: optional boolean
 
 <summary>
 
-StreamCreateResponse object {id, created\_at, http, 7 more }
+StreamCreateResponse object { id, created\_at, http, 7 more }
 
 </summary>
 
@@ -1404,7 +1404,7 @@ formatdate-time
 
 <summary>
 
-http: object {authentication, enabled, cors }
+http: object { authentication, enabled, cors }
 
 </summary>
 
@@ -1424,7 +1424,7 @@ Indicates that the HTTP endpoint is enabled.
 
 <summary>
 
-cors: optional object {origins }
+cors: optional object { origins }
 
 Specifies the CORS options for the HTTP endpoint.
 
@@ -1468,7 +1468,7 @@ Indicates the current version of this stream.
 
 <summary>
 
-worker\_binding: object {enabled }
+worker\_binding: object { enabled }
 
 </summary>
 
@@ -1494,7 +1494,7 @@ formaturi
 
 <summary>
 
-format: optional object {type, decimal\_encoding, timestamp\_format, unstructured } or object {type, compression, row\_group\_bytes }
+format: optional object { type, decimal\_encoding, timestamp\_format, unstructured } or object { type, compression, row\_group\_bytes }
 
 Defines the data format of the events.
 
@@ -1506,7 +1506,7 @@ One of the following:
 
 <summary>
 
-Json object {type, decimal\_encoding, timestamp\_format, unstructured }
+Json object { type, decimal\_encoding, timestamp\_format, unstructured }
 
 </summary>
 
@@ -1518,7 +1518,7 @@ type: "json"
 
 <summary>
 
-decimal\_encoding: optional "number"or "string"or "bytes"
+decimal\_encoding: optional "number" or "string" or "bytes"
 
 </summary>
 
@@ -1544,7 +1544,7 @@ One of the following:
 
 <summary>
 
-timestamp\_format: optional "rfc3339"or "unix\_millis"
+timestamp\_format: optional "rfc3339" or "unix\_millis"
 
 </summary>
 
@@ -1574,7 +1574,7 @@ unstructured: optional boolean
 
 <summary>
 
-Parquet object {type, compression, row\_group\_bytes }
+Parquet object { type, compression, row\_group\_bytes }
 
 </summary>
 
@@ -1586,7 +1586,7 @@ type: "parquet"
 
 <summary>
 
-compression: optional "uncompressed"or "snappy"or "gzip"or 2 more
+compression: optional "uncompressed" or "snappy" or "gzip" or 2 more
 
 </summary>
 
@@ -1636,7 +1636,7 @@ minimum0
 
 <summary>
 
-schema: optional object {fields, inferred }
+schema: optional object { fields, inferred }
 
 Defines the schema of the events in the data stream.
 
@@ -1656,7 +1656,7 @@ One of the following:
 
 <summary>
 
-Int32 object {type, metadata\_key, name, 2 more }
+Int32 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -1688,7 +1688,7 @@ sql\_name: optional string
 
 <summary>
 
-Int64 object {type, metadata\_key, name, 2 more }
+Int64 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -1720,7 +1720,7 @@ sql\_name: optional string
 
 <summary>
 
-Float32 object {type, metadata\_key, name, 2 more }
+Float32 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -1752,7 +1752,7 @@ sql\_name: optional string
 
 <summary>
 
-Float64 object {type, metadata\_key, name, 2 more }
+Float64 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -1784,7 +1784,7 @@ sql\_name: optional string
 
 <summary>
 
-Bool object {type, metadata\_key, name, 2 more }
+Bool object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -1816,7 +1816,7 @@ sql\_name: optional string
 
 <summary>
 
-String object {type, metadata\_key, name, 2 more }
+String object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -1848,7 +1848,7 @@ sql\_name: optional string
 
 <summary>
 
-Binary object {type, metadata\_key, name, 2 more }
+Binary object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -1880,7 +1880,7 @@ sql\_name: optional string
 
 <summary>
 
-Timestamp object {type, metadata\_key, name, 3 more }
+Timestamp object { type, metadata\_key, name, 3 more }
 
 </summary>
 
@@ -1908,7 +1908,7 @@ sql\_name: optional string
 
 <summary>
 
-unit: optional "second"or "millisecond"or "microsecond"or "nanosecond"
+unit: optional "second" or "millisecond" or "microsecond" or "nanosecond"
 
 </summary>
 
@@ -1942,7 +1942,7 @@ One of the following:
 
 <summary>
 
-Json object {type, metadata\_key, name, 2 more }
+Json object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -2054,7 +2054,7 @@ inferred: optional boolean
 
 <summary>
 
-StreamUpdateResponse object {id, created\_at, http, 7 more }
+StreamUpdateResponse object { id, created\_at, http, 7 more }
 
 </summary>
 
@@ -2074,7 +2074,7 @@ formatdate-time
 
 <summary>
 
-http: object {authentication, enabled, cors }
+http: object { authentication, enabled, cors }
 
 </summary>
 
@@ -2094,7 +2094,7 @@ Indicates that the HTTP endpoint is enabled.
 
 <summary>
 
-cors: optional object {origins }
+cors: optional object { origins }
 
 Specifies the CORS options for the HTTP endpoint.
 
@@ -2138,7 +2138,7 @@ Indicates the current version of this stream.
 
 <summary>
 
-worker\_binding: object {enabled }
+worker\_binding: object { enabled }
 
 </summary>
 
@@ -2164,7 +2164,7 @@ formaturi
 
 <summary>
 
-format: optional object {type, decimal\_encoding, timestamp\_format, unstructured } or object {type, compression, row\_group\_bytes }
+format: optional object { type, decimal\_encoding, timestamp\_format, unstructured } or object { type, compression, row\_group\_bytes }
 
 Defines the data format of the events.
 
@@ -2176,7 +2176,7 @@ One of the following:
 
 <summary>
 
-Json object {type, decimal\_encoding, timestamp\_format, unstructured }
+Json object { type, decimal\_encoding, timestamp\_format, unstructured }
 
 </summary>
 
@@ -2188,7 +2188,7 @@ type: "json"
 
 <summary>
 
-decimal\_encoding: optional "number"or "string"or "bytes"
+decimal\_encoding: optional "number" or "string" or "bytes"
 
 </summary>
 
@@ -2214,7 +2214,7 @@ One of the following:
 
 <summary>
 
-timestamp\_format: optional "rfc3339"or "unix\_millis"
+timestamp\_format: optional "rfc3339" or "unix\_millis"
 
 </summary>
 
@@ -2244,7 +2244,7 @@ unstructured: optional boolean
 
 <summary>
 
-Parquet object {type, compression, row\_group\_bytes }
+Parquet object { type, compression, row\_group\_bytes }
 
 </summary>
 
@@ -2256,7 +2256,7 @@ type: "parquet"
 
 <summary>
 
-compression: optional "uncompressed"or "snappy"or "gzip"or 2 more
+compression: optional "uncompressed" or "snappy" or "gzip" or 2 more
 
 </summary>
 
@@ -2306,7 +2306,7 @@ minimum0
 
 <summary>
 
-schema: optional object {fields, inferred }
+schema: optional object { fields, inferred }
 
 Defines the schema of the events in the data stream.
 
@@ -2326,7 +2326,7 @@ One of the following:
 
 <summary>
 
-Int32 object {type, metadata\_key, name, 2 more }
+Int32 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -2358,7 +2358,7 @@ sql\_name: optional string
 
 <summary>
 
-Int64 object {type, metadata\_key, name, 2 more }
+Int64 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -2390,7 +2390,7 @@ sql\_name: optional string
 
 <summary>
 
-Float32 object {type, metadata\_key, name, 2 more }
+Float32 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -2422,7 +2422,7 @@ sql\_name: optional string
 
 <summary>
 
-Float64 object {type, metadata\_key, name, 2 more }
+Float64 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -2454,7 +2454,7 @@ sql\_name: optional string
 
 <summary>
 
-Bool object {type, metadata\_key, name, 2 more }
+Bool object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -2486,7 +2486,7 @@ sql\_name: optional string
 
 <summary>
 
-String object {type, metadata\_key, name, 2 more }
+String object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -2518,7 +2518,7 @@ sql\_name: optional string
 
 <summary>
 
-Binary object {type, metadata\_key, name, 2 more }
+Binary object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -2550,7 +2550,7 @@ sql\_name: optional string
 
 <summary>
 
-Timestamp object {type, metadata\_key, name, 3 more }
+Timestamp object { type, metadata\_key, name, 3 more }
 
 </summary>
 
@@ -2578,7 +2578,7 @@ sql\_name: optional string
 
 <summary>
 
-unit: optional "second"or "millisecond"or "microsecond"or "nanosecond"
+unit: optional "second" or "millisecond" or "microsecond" or "nanosecond"
 
 </summary>
 
@@ -2612,7 +2612,7 @@ One of the following:
 
 <summary>
 
-Json object {type, metadata\_key, name, 2 more }
+Json object { type, metadata\_key, name, 2 more }
 
 </summary>
 

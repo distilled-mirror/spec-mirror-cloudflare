@@ -52,7 +52,7 @@ GET/accounts/{account\_id}/urlscanner/v2/dom/{scan\_id}
 
 <summary>
 
-ScanListResponse object {results }
+ScanListResponse object { results }
 
 </summary>
 
@@ -60,7 +60,7 @@ ScanListResponse object {results }
 
 <summary>
 
-results: array of object {\_id, page, result, 3 more }
+results: array of object { \_id, page, result, 3 more }
 
 </summary>
 
@@ -72,7 +72,7 @@ results: array of object {\_id, page, result, 3 more }
 
 <summary>
 
-page: object {asn, country, ip, url }
+page: object { asn, country, ip, url }
 
 </summary>
 
@@ -104,7 +104,7 @@ result: string
 
 <summary>
 
-stats: object {dataLength, requests, uniqCountries, uniqIPs }
+stats: object { dataLength, requests, uniqCountries, uniqIPs }
 
 </summary>
 
@@ -132,7 +132,7 @@ uniqIPs: number
 
 <summary>
 
-task: object {time, url, uuid, visibility }
+task: object { time, url, uuid, visibility }
 
 </summary>
 
@@ -160,7 +160,7 @@ visibility: string
 
 <summary>
 
-verdicts: object {malicious }
+verdicts: object { malicious }
 
 </summary>
 
@@ -184,7 +184,7 @@ malicious: boolean
 
 <summary>
 
-ScanGetResponse object {data, lists, meta, 5 more }
+ScanGetResponse object { data, lists, meta, 5 more }
 
 </summary>
 
@@ -192,7 +192,7 @@ ScanGetResponse object {data, lists, meta, 5 more }
 
 <summary>
 
-data: object {console, cookies, globals, 3 more }
+data: object { console, cookies, globals, 3 more }
 
 </summary>
 
@@ -200,7 +200,7 @@ data: object {console, cookies, globals, 3 more }
 
 <summary>
 
-console: array of object {message }
+console: array of object { message }
 
 </summary>
 
@@ -208,7 +208,7 @@ console: array of object {message }
 
 <summary>
 
-message: object {level, source, text, url }
+message: object { level, source, text, url }
 
 </summary>
 
@@ -240,7 +240,7 @@ url: string
 
 <summary>
 
-cookies: array of object {domain, expires, httpOnly, 10 more }
+cookies: array of object { domain, expires, httpOnly, 10 more }
 
 </summary>
 
@@ -304,7 +304,7 @@ value: string
 
 <summary>
 
-globals: array of object {prop, type }
+globals: array of object { prop, type }
 
 </summary>
 
@@ -324,7 +324,7 @@ type: string
 
 <summary>
 
-links: array of object {href, text }
+links: array of object { href, text }
 
 </summary>
 
@@ -344,7 +344,7 @@ text: string
 
 <summary>
 
-performance: array of object {duration, entryType, name, startTime }
+performance: array of object { duration, entryType, name, startTime }
 
 </summary>
 
@@ -372,7 +372,7 @@ startTime: number
 
 <summary>
 
-requests: array of object {request, response, requests }
+requests: array of object { request, response, requests }
 
 </summary>
 
@@ -380,7 +380,7 @@ requests: array of object {request, response, requests }
 
 <summary>
 
-request: object {documentURL, hasUserGesture, initiator, 9 more }
+request: object { documentURL, hasUserGesture, initiator, 9 more }
 
 </summary>
 
@@ -396,7 +396,7 @@ hasUserGesture: boolean
 
 <summary>
 
-initiator: object {host, type, url }
+initiator: object { host, type, url }
 
 </summary>
 
@@ -424,7 +424,7 @@ redirectHasExtraInfo: boolean
 
 <summary>
 
-request: object {initialPriority, isSameSite, method, 4 more }
+request: object { initialPriority, isSameSite, method, 4 more }
 
 </summary>
 
@@ -488,7 +488,7 @@ primaryRequest: optional boolean
 
 <summary>
 
-redirectResponse: optional object {charset, mimeType, protocol, 8 more }
+redirectResponse: optional object { charset, mimeType, protocol, 8 more }
 
 </summary>
 
@@ -516,7 +516,7 @@ remotePort: number
 
 <summary>
 
-securityHeaders: array of object {name, value }
+securityHeaders: array of object { name, value }
 
 </summary>
 
@@ -564,7 +564,7 @@ headers: optional unknown
 
 <summary>
 
-response: object {asn, dataLength, encodedDataLength, 8 more }
+response: object { asn, dataLength, encodedDataLength, 8 more }
 
 </summary>
 
@@ -572,7 +572,7 @@ response: object {asn, dataLength, encodedDataLength, 8 more }
 
 <summary>
 
-asn: object {asn, country, description, 3 more }
+asn: object { asn, country, description, 3 more }
 
 </summary>
 
@@ -616,7 +616,7 @@ encodedDataLength: number
 
 <summary>
 
-geoip: object {city, country, country\_name, 3 more }
+geoip: object { city, country, country\_name, 3 more }
 
 </summary>
 
@@ -660,7 +660,7 @@ requestId: string
 
 <summary>
 
-response: object {charset, mimeType, protocol, 9 more }
+response: object { charset, mimeType, protocol, 9 more }
 
 </summary>
 
@@ -688,7 +688,7 @@ remotePort: number
 
 <summary>
 
-securityDetails: object {certificateId, certificateTransparencyCompliance, cipher, 10 more }
+securityDetails: object { certificateId, certificateTransparencyCompliance, cipher, 10 more }
 
 </summary>
 
@@ -752,7 +752,7 @@ validTo: number
 
 <summary>
 
-securityHeaders: array of object {name, value }
+securityHeaders: array of object { name, value }
 
 </summary>
 
@@ -816,7 +816,7 @@ hash: optional string
 
 <summary>
 
-requests: optional array of object {documentURL, frameId, hasUserGesture, 7 more }
+requests: optional array of object { documentURL, frameId, hasUserGesture, 7 more }
 
 </summary>
 
@@ -836,7 +836,7 @@ hasUserGesture: boolean
 
 <summary>
 
-initiator: object {type }
+initiator: object { type }
 
 </summary>
 
@@ -860,7 +860,7 @@ redirectHasExtraInfo: boolean
 
 <summary>
 
-request: object {headers, initialPriority, isSameSite, 4 more }
+request: object { headers, initialPriority, isSameSite, 4 more }
 
 </summary>
 
@@ -868,7 +868,7 @@ request: object {headers, initialPriority, isSameSite, 4 more }
 
 <summary>
 
-headers: object {name }
+headers: object { name }
 
 </summary>
 
@@ -936,7 +936,7 @@ wallTime: number
 
 <summary>
 
-lists: object {asns, certificates, continents, 7 more }
+lists: object { asns, certificates, continents, 7 more }
 
 </summary>
 
@@ -948,7 +948,7 @@ asns: array of string
 
 <summary>
 
-certificates: array of object {issuer, subjectName, validFrom, validTo }
+certificates: array of object { issuer, subjectName, validFrom, validTo }
 
 </summary>
 
@@ -1012,7 +1012,7 @@ urls: array of string
 
 <summary>
 
-meta: object {processors }
+meta: object { processors }
 
 </summary>
 
@@ -1020,7 +1020,7 @@ meta: object {processors }
 
 <summary>
 
-processors: object {asn, dns, domainCategories, 8 more }
+processors: object { asn, dns, domainCategories, 8 more }
 
 </summary>
 
@@ -1028,7 +1028,7 @@ processors: object {asn, dns, domainCategories, 8 more }
 
 <summary>
 
-asn: object {data }
+asn: object { data }
 
 </summary>
 
@@ -1036,7 +1036,7 @@ asn: object {data }
 
 <summary>
 
-data: array of object {asn, country, description, 2 more }
+data: array of object { asn, country, description, 2 more }
 
 </summary>
 
@@ -1072,7 +1072,7 @@ name: string
 
 <summary>
 
-dns: object {data }
+dns: object { data }
 
 </summary>
 
@@ -1080,7 +1080,7 @@ dns: object {data }
 
 <summary>
 
-data: array of object {address, dnssec\_valid, name, type }
+data: array of object { address, dnssec\_valid, name, type }
 
 </summary>
 
@@ -1112,7 +1112,7 @@ type: string
 
 <summary>
 
-domainCategories: object {data }
+domainCategories: object { data }
 
 </summary>
 
@@ -1120,7 +1120,7 @@ domainCategories: object {data }
 
 <summary>
 
-data: array of object {inherited, isPrimary, name }
+data: array of object { inherited, isPrimary, name }
 
 </summary>
 
@@ -1148,7 +1148,7 @@ name: string
 
 <summary>
 
-geoip: object {data }
+geoip: object { data }
 
 </summary>
 
@@ -1156,7 +1156,7 @@ geoip: object {data }
 
 <summary>
 
-data: array of object {geoip, ip }
+data: array of object { geoip, ip }
 
 </summary>
 
@@ -1164,7 +1164,7 @@ data: array of object {geoip, ip }
 
 <summary>
 
-geoip: object {city, country, country\_name, 2 more }
+geoip: object { city, country, country\_name, 2 more }
 
 </summary>
 
@@ -1208,7 +1208,7 @@ ip: string
 
 <summary>
 
-phishing: object {data }
+phishing: object { data }
 
 </summary>
 
@@ -1224,7 +1224,7 @@ data: array of string
 
 <summary>
 
-radarRank: object {data }
+radarRank: object { data }
 
 </summary>
 
@@ -1232,7 +1232,7 @@ radarRank: object {data }
 
 <summary>
 
-data: array of object {bucket, hostname, rank }
+data: array of object { bucket, hostname, rank }
 
 </summary>
 
@@ -1260,7 +1260,7 @@ rank: optional number
 
 <summary>
 
-wappa: object {data }
+wappa: object { data }
 
 </summary>
 
@@ -1268,7 +1268,7 @@ wappa: object {data }
 
 <summary>
 
-data: array of object {app, categories, confidence, 3 more }
+data: array of object { app, categories, confidence, 3 more }
 
 </summary>
 
@@ -1280,7 +1280,7 @@ app: string
 
 <summary>
 
-categories: array of object {name, priority }
+categories: array of object { name, priority }
 
 </summary>
 
@@ -1300,7 +1300,7 @@ priority: number
 
 <summary>
 
-confidence: array of object {confidence, name, pattern, patternType }
+confidence: array of object { confidence, name, pattern, patternType }
 
 </summary>
 
@@ -1348,7 +1348,7 @@ website: string
 
 <summary>
 
-agentReadiness: optional object {checks, level, levelName, 3 more }
+agentReadiness: optional object { checks, level, levelName, 3 more }
 
 </summary>
 
@@ -1356,7 +1356,7 @@ agentReadiness: optional object {checks, level, levelName, 3 more }
 
 <summary>
 
-checks: object {botAccessControl, commerce, contentAccessibility, 2 more }
+checks: object { botAccessControl, commerce, contentAccessibility, 2 more }
 
 </summary>
 
@@ -1364,7 +1364,7 @@ checks: object {botAccessControl, commerce, contentAccessibility, 2 more }
 
 <summary>
 
-botAccessControl: object {contentSignals, robotsTxtAiRules, webBotAuth }
+botAccessControl: object { contentSignals, robotsTxtAiRules, webBotAuth }
 
 </summary>
 
@@ -1372,7 +1372,7 @@ botAccessControl: object {contentSignals, robotsTxtAiRules, webBotAuth }
 
 <summary>
 
-contentSignals: object {status, details, durationMs, 3 more }
+contentSignals: object { status, details, durationMs, 3 more }
 
 </summary>
 
@@ -1392,7 +1392,7 @@ durationMs: optional number
 
 <summary>
 
-evidence: optional array of object {action, label, finding, 2 more }
+evidence: optional array of object { action, label, finding, 2 more }
 
 </summary>
 
@@ -1408,7 +1408,7 @@ label: string
 
 <summary>
 
-finding: optional object {outcome, summary }
+finding: optional object { outcome, summary }
 
 </summary>
 
@@ -1428,7 +1428,7 @@ summary: string
 
 <summary>
 
-request: optional object {method, url, headers }
+request: optional object { method, url, headers }
 
 </summary>
 
@@ -1452,7 +1452,7 @@ headers: optional unknown
 
 <summary>
 
-response: optional object {status, statusText, bodyPreview, 3 more }
+response: optional object { status, statusText, bodyPreview, 3 more }
 
 </summary>
 
@@ -1496,7 +1496,7 @@ message: optional string
 
 <summary>
 
-messageRef: optional object {code, params }
+messageRef: optional object { code, params }
 
 </summary>
 
@@ -1522,7 +1522,7 @@ params: optional unknown
 
 <summary>
 
-robotsTxtAiRules: object {status, details, durationMs, 3 more }
+robotsTxtAiRules: object { status, details, durationMs, 3 more }
 
 </summary>
 
@@ -1542,7 +1542,7 @@ durationMs: optional number
 
 <summary>
 
-evidence: optional array of object {action, label, finding, 2 more }
+evidence: optional array of object { action, label, finding, 2 more }
 
 </summary>
 
@@ -1558,7 +1558,7 @@ label: string
 
 <summary>
 
-finding: optional object {outcome, summary }
+finding: optional object { outcome, summary }
 
 </summary>
 
@@ -1578,7 +1578,7 @@ summary: string
 
 <summary>
 
-request: optional object {method, url, headers }
+request: optional object { method, url, headers }
 
 </summary>
 
@@ -1602,7 +1602,7 @@ headers: optional unknown
 
 <summary>
 
-response: optional object {status, statusText, bodyPreview, 3 more }
+response: optional object { status, statusText, bodyPreview, 3 more }
 
 </summary>
 
@@ -1646,7 +1646,7 @@ message: optional string
 
 <summary>
 
-messageRef: optional object {code, params }
+messageRef: optional object { code, params }
 
 </summary>
 
@@ -1672,7 +1672,7 @@ params: optional unknown
 
 <summary>
 
-webBotAuth: object {status, details, durationMs, 3 more }
+webBotAuth: object { status, details, durationMs, 3 more }
 
 </summary>
 
@@ -1692,7 +1692,7 @@ durationMs: optional number
 
 <summary>
 
-evidence: optional array of object {action, label, finding, 2 more }
+evidence: optional array of object { action, label, finding, 2 more }
 
 </summary>
 
@@ -1708,7 +1708,7 @@ label: string
 
 <summary>
 
-finding: optional object {outcome, summary }
+finding: optional object { outcome, summary }
 
 </summary>
 
@@ -1728,7 +1728,7 @@ summary: string
 
 <summary>
 
-request: optional object {method, url, headers }
+request: optional object { method, url, headers }
 
 </summary>
 
@@ -1752,7 +1752,7 @@ headers: optional unknown
 
 <summary>
 
-response: optional object {status, statusText, bodyPreview, 3 more }
+response: optional object { status, statusText, bodyPreview, 3 more }
 
 </summary>
 
@@ -1796,769 +1796,7 @@ message: optional string
 
 <summary>
 
-messageRef: optional object {code, params }
-
-</summary>
-
-code: string
-
-Stable, translatable message code.
-
-<a href="#">Link to this property</a>
-
-params: optional unknown
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-commerce: object {acp, ap2, mpp, 2 more }
-
-</summary>
-
-<details>
-
-<summary>
-
-acp: object {status, details, durationMs, 3 more }
-
-</summary>
-
-status: string
-
-<a href="#">Link to this property</a>
-
-details: optional unknown
-
-<a href="#">Link to this property</a>
-
-durationMs: optional number
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-evidence: optional array of object {action, label, finding, 2 more }
-
-</summary>
-
-action: string
-
-<a href="#">Link to this property</a>
-
-label: string
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-finding: optional object {outcome, summary }
-
-</summary>
-
-outcome: string
-
-<a href="#">Link to this property</a>
-
-summary: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-request: optional object {method, url, headers }
-
-</summary>
-
-method: string
-
-<a href="#">Link to this property</a>
-
-url: string
-
-<a href="#">Link to this property</a>
-
-headers: optional unknown
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-response: optional object {status, statusText, bodyPreview, 3 more }
-
-</summary>
-
-status: number
-
-<a href="#">Link to this property</a>
-
-statusText: string
-
-<a href="#">Link to this property</a>
-
-bodyPreview: optional string
-
-<a href="#">Link to this property</a>
-
-bodySize: optional number
-
-<a href="#">Link to this property</a>
-
-headers: optional unknown
-
-<a href="#">Link to this property</a>
-
-redirectedTo: optional string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-message: optional string
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-messageRef: optional object {code, params }
-
-</summary>
-
-code: string
-
-Stable, translatable message code.
-
-<a href="#">Link to this property</a>
-
-params: optional unknown
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-ap2: object {status, details, durationMs, 3 more }
-
-</summary>
-
-status: string
-
-<a href="#">Link to this property</a>
-
-details: optional unknown
-
-<a href="#">Link to this property</a>
-
-durationMs: optional number
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-evidence: optional array of object {action, label, finding, 2 more }
-
-</summary>
-
-action: string
-
-<a href="#">Link to this property</a>
-
-label: string
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-finding: optional object {outcome, summary }
-
-</summary>
-
-outcome: string
-
-<a href="#">Link to this property</a>
-
-summary: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-request: optional object {method, url, headers }
-
-</summary>
-
-method: string
-
-<a href="#">Link to this property</a>
-
-url: string
-
-<a href="#">Link to this property</a>
-
-headers: optional unknown
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-response: optional object {status, statusText, bodyPreview, 3 more }
-
-</summary>
-
-status: number
-
-<a href="#">Link to this property</a>
-
-statusText: string
-
-<a href="#">Link to this property</a>
-
-bodyPreview: optional string
-
-<a href="#">Link to this property</a>
-
-bodySize: optional number
-
-<a href="#">Link to this property</a>
-
-headers: optional unknown
-
-<a href="#">Link to this property</a>
-
-redirectedTo: optional string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-message: optional string
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-messageRef: optional object {code, params }
-
-</summary>
-
-code: string
-
-Stable, translatable message code.
-
-<a href="#">Link to this property</a>
-
-params: optional unknown
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-mpp: object {status, details, durationMs, 3 more }
-
-</summary>
-
-status: string
-
-<a href="#">Link to this property</a>
-
-details: optional unknown
-
-<a href="#">Link to this property</a>
-
-durationMs: optional number
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-evidence: optional array of object {action, label, finding, 2 more }
-
-</summary>
-
-action: string
-
-<a href="#">Link to this property</a>
-
-label: string
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-finding: optional object {outcome, summary }
-
-</summary>
-
-outcome: string
-
-<a href="#">Link to this property</a>
-
-summary: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-request: optional object {method, url, headers }
-
-</summary>
-
-method: string
-
-<a href="#">Link to this property</a>
-
-url: string
-
-<a href="#">Link to this property</a>
-
-headers: optional unknown
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-response: optional object {status, statusText, bodyPreview, 3 more }
-
-</summary>
-
-status: number
-
-<a href="#">Link to this property</a>
-
-statusText: string
-
-<a href="#">Link to this property</a>
-
-bodyPreview: optional string
-
-<a href="#">Link to this property</a>
-
-bodySize: optional number
-
-<a href="#">Link to this property</a>
-
-headers: optional unknown
-
-<a href="#">Link to this property</a>
-
-redirectedTo: optional string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-message: optional string
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-messageRef: optional object {code, params }
-
-</summary>
-
-code: string
-
-Stable, translatable message code.
-
-<a href="#">Link to this property</a>
-
-params: optional unknown
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-ucp: object {status, details, durationMs, 3 more }
-
-</summary>
-
-status: string
-
-<a href="#">Link to this property</a>
-
-details: optional unknown
-
-<a href="#">Link to this property</a>
-
-durationMs: optional number
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-evidence: optional array of object {action, label, finding, 2 more }
-
-</summary>
-
-action: string
-
-<a href="#">Link to this property</a>
-
-label: string
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-finding: optional object {outcome, summary }
-
-</summary>
-
-outcome: string
-
-<a href="#">Link to this property</a>
-
-summary: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-request: optional object {method, url, headers }
-
-</summary>
-
-method: string
-
-<a href="#">Link to this property</a>
-
-url: string
-
-<a href="#">Link to this property</a>
-
-headers: optional unknown
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-response: optional object {status, statusText, bodyPreview, 3 more }
-
-</summary>
-
-status: number
-
-<a href="#">Link to this property</a>
-
-statusText: string
-
-<a href="#">Link to this property</a>
-
-bodyPreview: optional string
-
-<a href="#">Link to this property</a>
-
-bodySize: optional number
-
-<a href="#">Link to this property</a>
-
-headers: optional unknown
-
-<a href="#">Link to this property</a>
-
-redirectedTo: optional string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-message: optional string
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-messageRef: optional object {code, params }
-
-</summary>
-
-code: string
-
-Stable, translatable message code.
-
-<a href="#">Link to this property</a>
-
-params: optional unknown
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-x402: object {status, details, durationMs, 3 more }
-
-</summary>
-
-status: string
-
-<a href="#">Link to this property</a>
-
-details: optional unknown
-
-<a href="#">Link to this property</a>
-
-durationMs: optional number
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-evidence: optional array of object {action, label, finding, 2 more }
-
-</summary>
-
-action: string
-
-<a href="#">Link to this property</a>
-
-label: string
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-finding: optional object {outcome, summary }
-
-</summary>
-
-outcome: string
-
-<a href="#">Link to this property</a>
-
-summary: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-request: optional object {method, url, headers }
-
-</summary>
-
-method: string
-
-<a href="#">Link to this property</a>
-
-url: string
-
-<a href="#">Link to this property</a>
-
-headers: optional unknown
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-response: optional object {status, statusText, bodyPreview, 3 more }
-
-</summary>
-
-status: number
-
-<a href="#">Link to this property</a>
-
-statusText: string
-
-<a href="#">Link to this property</a>
-
-bodyPreview: optional string
-
-<a href="#">Link to this property</a>
-
-bodySize: optional number
-
-<a href="#">Link to this property</a>
-
-headers: optional unknown
-
-<a href="#">Link to this property</a>
-
-redirectedTo: optional string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-message: optional string
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-messageRef: optional object {code, params }
+messageRef: optional object { code, params }
 
 </summary>
 
@@ -2588,7 +1826,7 @@ params: optional unknown
 
 <summary>
 
-contentAccessibility: object {markdownNegotiation }
+commerce: object { acp, ap2, mpp, 2 more }
 
 </summary>
 
@@ -2596,7 +1834,7 @@ contentAccessibility: object {markdownNegotiation }
 
 <summary>
 
-markdownNegotiation: object {status, details, durationMs, 3 more }
+acp: object { status, details, durationMs, 3 more }
 
 </summary>
 
@@ -2616,7 +1854,7 @@ durationMs: optional number
 
 <summary>
 
-evidence: optional array of object {action, label, finding, 2 more }
+evidence: optional array of object { action, label, finding, 2 more }
 
 </summary>
 
@@ -2632,7 +1870,7 @@ label: string
 
 <summary>
 
-finding: optional object {outcome, summary }
+finding: optional object { outcome, summary }
 
 </summary>
 
@@ -2652,7 +1890,7 @@ summary: string
 
 <summary>
 
-request: optional object {method, url, headers }
+request: optional object { method, url, headers }
 
 </summary>
 
@@ -2676,7 +1914,7 @@ headers: optional unknown
 
 <summary>
 
-response: optional object {status, statusText, bodyPreview, 3 more }
+response: optional object { status, statusText, bodyPreview, 3 more }
 
 </summary>
 
@@ -2720,7 +1958,607 @@ message: optional string
 
 <summary>
 
-messageRef: optional object {code, params }
+messageRef: optional object { code, params }
+
+</summary>
+
+code: string
+
+Stable, translatable message code.
+
+<a href="#">Link to this property</a>
+
+params: optional unknown
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+ap2: object { status, details, durationMs, 3 more }
+
+</summary>
+
+status: string
+
+<a href="#">Link to this property</a>
+
+details: optional unknown
+
+<a href="#">Link to this property</a>
+
+durationMs: optional number
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+evidence: optional array of object { action, label, finding, 2 more }
+
+</summary>
+
+action: string
+
+<a href="#">Link to this property</a>
+
+label: string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+finding: optional object { outcome, summary }
+
+</summary>
+
+outcome: string
+
+<a href="#">Link to this property</a>
+
+summary: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+request: optional object { method, url, headers }
+
+</summary>
+
+method: string
+
+<a href="#">Link to this property</a>
+
+url: string
+
+<a href="#">Link to this property</a>
+
+headers: optional unknown
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+response: optional object { status, statusText, bodyPreview, 3 more }
+
+</summary>
+
+status: number
+
+<a href="#">Link to this property</a>
+
+statusText: string
+
+<a href="#">Link to this property</a>
+
+bodyPreview: optional string
+
+<a href="#">Link to this property</a>
+
+bodySize: optional number
+
+<a href="#">Link to this property</a>
+
+headers: optional unknown
+
+<a href="#">Link to this property</a>
+
+redirectedTo: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+message: optional string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+messageRef: optional object { code, params }
+
+</summary>
+
+code: string
+
+Stable, translatable message code.
+
+<a href="#">Link to this property</a>
+
+params: optional unknown
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+mpp: object { status, details, durationMs, 3 more }
+
+</summary>
+
+status: string
+
+<a href="#">Link to this property</a>
+
+details: optional unknown
+
+<a href="#">Link to this property</a>
+
+durationMs: optional number
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+evidence: optional array of object { action, label, finding, 2 more }
+
+</summary>
+
+action: string
+
+<a href="#">Link to this property</a>
+
+label: string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+finding: optional object { outcome, summary }
+
+</summary>
+
+outcome: string
+
+<a href="#">Link to this property</a>
+
+summary: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+request: optional object { method, url, headers }
+
+</summary>
+
+method: string
+
+<a href="#">Link to this property</a>
+
+url: string
+
+<a href="#">Link to this property</a>
+
+headers: optional unknown
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+response: optional object { status, statusText, bodyPreview, 3 more }
+
+</summary>
+
+status: number
+
+<a href="#">Link to this property</a>
+
+statusText: string
+
+<a href="#">Link to this property</a>
+
+bodyPreview: optional string
+
+<a href="#">Link to this property</a>
+
+bodySize: optional number
+
+<a href="#">Link to this property</a>
+
+headers: optional unknown
+
+<a href="#">Link to this property</a>
+
+redirectedTo: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+message: optional string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+messageRef: optional object { code, params }
+
+</summary>
+
+code: string
+
+Stable, translatable message code.
+
+<a href="#">Link to this property</a>
+
+params: optional unknown
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+ucp: object { status, details, durationMs, 3 more }
+
+</summary>
+
+status: string
+
+<a href="#">Link to this property</a>
+
+details: optional unknown
+
+<a href="#">Link to this property</a>
+
+durationMs: optional number
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+evidence: optional array of object { action, label, finding, 2 more }
+
+</summary>
+
+action: string
+
+<a href="#">Link to this property</a>
+
+label: string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+finding: optional object { outcome, summary }
+
+</summary>
+
+outcome: string
+
+<a href="#">Link to this property</a>
+
+summary: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+request: optional object { method, url, headers }
+
+</summary>
+
+method: string
+
+<a href="#">Link to this property</a>
+
+url: string
+
+<a href="#">Link to this property</a>
+
+headers: optional unknown
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+response: optional object { status, statusText, bodyPreview, 3 more }
+
+</summary>
+
+status: number
+
+<a href="#">Link to this property</a>
+
+statusText: string
+
+<a href="#">Link to this property</a>
+
+bodyPreview: optional string
+
+<a href="#">Link to this property</a>
+
+bodySize: optional number
+
+<a href="#">Link to this property</a>
+
+headers: optional unknown
+
+<a href="#">Link to this property</a>
+
+redirectedTo: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+message: optional string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+messageRef: optional object { code, params }
+
+</summary>
+
+code: string
+
+Stable, translatable message code.
+
+<a href="#">Link to this property</a>
+
+params: optional unknown
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+x402: object { status, details, durationMs, 3 more }
+
+</summary>
+
+status: string
+
+<a href="#">Link to this property</a>
+
+details: optional unknown
+
+<a href="#">Link to this property</a>
+
+durationMs: optional number
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+evidence: optional array of object { action, label, finding, 2 more }
+
+</summary>
+
+action: string
+
+<a href="#">Link to this property</a>
+
+label: string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+finding: optional object { outcome, summary }
+
+</summary>
+
+outcome: string
+
+<a href="#">Link to this property</a>
+
+summary: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+request: optional object { method, url, headers }
+
+</summary>
+
+method: string
+
+<a href="#">Link to this property</a>
+
+url: string
+
+<a href="#">Link to this property</a>
+
+headers: optional unknown
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+response: optional object { status, statusText, bodyPreview, 3 more }
+
+</summary>
+
+status: number
+
+<a href="#">Link to this property</a>
+
+statusText: string
+
+<a href="#">Link to this property</a>
+
+bodyPreview: optional string
+
+<a href="#">Link to this property</a>
+
+bodySize: optional number
+
+<a href="#">Link to this property</a>
+
+headers: optional unknown
+
+<a href="#">Link to this property</a>
+
+redirectedTo: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+message: optional string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+messageRef: optional object { code, params }
 
 </summary>
 
@@ -2750,7 +2588,7 @@ params: optional unknown
 
 <summary>
 
-discoverability: object {dnsAid, linkHeaders, robotsTxt, sitemap }
+contentAccessibility: object { markdownNegotiation }
 
 </summary>
 
@@ -2758,7 +2596,7 @@ discoverability: object {dnsAid, linkHeaders, robotsTxt, sitemap }
 
 <summary>
 
-dnsAid: object {status, details, durationMs, 3 more }
+markdownNegotiation: object { status, details, durationMs, 3 more }
 
 </summary>
 
@@ -2778,7 +2616,7 @@ durationMs: optional number
 
 <summary>
 
-evidence: optional array of object {action, label, finding, 2 more }
+evidence: optional array of object { action, label, finding, 2 more }
 
 </summary>
 
@@ -2794,7 +2632,7 @@ label: string
 
 <summary>
 
-finding: optional object {outcome, summary }
+finding: optional object { outcome, summary }
 
 </summary>
 
@@ -2814,7 +2652,7 @@ summary: string
 
 <summary>
 
-request: optional object {method, url, headers }
+request: optional object { method, url, headers }
 
 </summary>
 
@@ -2838,7 +2676,7 @@ headers: optional unknown
 
 <summary>
 
-response: optional object {status, statusText, bodyPreview, 3 more }
+response: optional object { status, statusText, bodyPreview, 3 more }
 
 </summary>
 
@@ -2882,457 +2720,7 @@ message: optional string
 
 <summary>
 
-messageRef: optional object {code, params }
-
-</summary>
-
-code: string
-
-Stable, translatable message code.
-
-<a href="#">Link to this property</a>
-
-params: optional unknown
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-linkHeaders: object {status, details, durationMs, 3 more }
-
-</summary>
-
-status: string
-
-<a href="#">Link to this property</a>
-
-details: optional unknown
-
-<a href="#">Link to this property</a>
-
-durationMs: optional number
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-evidence: optional array of object {action, label, finding, 2 more }
-
-</summary>
-
-action: string
-
-<a href="#">Link to this property</a>
-
-label: string
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-finding: optional object {outcome, summary }
-
-</summary>
-
-outcome: string
-
-<a href="#">Link to this property</a>
-
-summary: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-request: optional object {method, url, headers }
-
-</summary>
-
-method: string
-
-<a href="#">Link to this property</a>
-
-url: string
-
-<a href="#">Link to this property</a>
-
-headers: optional unknown
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-response: optional object {status, statusText, bodyPreview, 3 more }
-
-</summary>
-
-status: number
-
-<a href="#">Link to this property</a>
-
-statusText: string
-
-<a href="#">Link to this property</a>
-
-bodyPreview: optional string
-
-<a href="#">Link to this property</a>
-
-bodySize: optional number
-
-<a href="#">Link to this property</a>
-
-headers: optional unknown
-
-<a href="#">Link to this property</a>
-
-redirectedTo: optional string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-message: optional string
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-messageRef: optional object {code, params }
-
-</summary>
-
-code: string
-
-Stable, translatable message code.
-
-<a href="#">Link to this property</a>
-
-params: optional unknown
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-robotsTxt: object {status, details, durationMs, 3 more }
-
-</summary>
-
-status: string
-
-<a href="#">Link to this property</a>
-
-details: optional unknown
-
-<a href="#">Link to this property</a>
-
-durationMs: optional number
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-evidence: optional array of object {action, label, finding, 2 more }
-
-</summary>
-
-action: string
-
-<a href="#">Link to this property</a>
-
-label: string
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-finding: optional object {outcome, summary }
-
-</summary>
-
-outcome: string
-
-<a href="#">Link to this property</a>
-
-summary: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-request: optional object {method, url, headers }
-
-</summary>
-
-method: string
-
-<a href="#">Link to this property</a>
-
-url: string
-
-<a href="#">Link to this property</a>
-
-headers: optional unknown
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-response: optional object {status, statusText, bodyPreview, 3 more }
-
-</summary>
-
-status: number
-
-<a href="#">Link to this property</a>
-
-statusText: string
-
-<a href="#">Link to this property</a>
-
-bodyPreview: optional string
-
-<a href="#">Link to this property</a>
-
-bodySize: optional number
-
-<a href="#">Link to this property</a>
-
-headers: optional unknown
-
-<a href="#">Link to this property</a>
-
-redirectedTo: optional string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-message: optional string
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-messageRef: optional object {code, params }
-
-</summary>
-
-code: string
-
-Stable, translatable message code.
-
-<a href="#">Link to this property</a>
-
-params: optional unknown
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-sitemap: object {status, details, durationMs, 3 more }
-
-</summary>
-
-status: string
-
-<a href="#">Link to this property</a>
-
-details: optional unknown
-
-<a href="#">Link to this property</a>
-
-durationMs: optional number
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-evidence: optional array of object {action, label, finding, 2 more }
-
-</summary>
-
-action: string
-
-<a href="#">Link to this property</a>
-
-label: string
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-finding: optional object {outcome, summary }
-
-</summary>
-
-outcome: string
-
-<a href="#">Link to this property</a>
-
-summary: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-request: optional object {method, url, headers }
-
-</summary>
-
-method: string
-
-<a href="#">Link to this property</a>
-
-url: string
-
-<a href="#">Link to this property</a>
-
-headers: optional unknown
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-response: optional object {status, statusText, bodyPreview, 3 more }
-
-</summary>
-
-status: number
-
-<a href="#">Link to this property</a>
-
-statusText: string
-
-<a href="#">Link to this property</a>
-
-bodyPreview: optional string
-
-<a href="#">Link to this property</a>
-
-bodySize: optional number
-
-<a href="#">Link to this property</a>
-
-headers: optional unknown
-
-<a href="#">Link to this property</a>
-
-redirectedTo: optional string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-message: optional string
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-messageRef: optional object {code, params }
+messageRef: optional object { code, params }
 
 </summary>
 
@@ -3362,7 +2750,7 @@ params: optional unknown
 
 <summary>
 
-discovery: object {a2aAgentCard, agentSkills, apiCatalog, 7 more }
+discoverability: object { dnsAid, linkHeaders, robotsTxt, sitemap }
 
 </summary>
 
@@ -3370,7 +2758,7 @@ discovery: object {a2aAgentCard, agentSkills, apiCatalog, 7 more }
 
 <summary>
 
-a2aAgentCard: object {status, details, durationMs, 3 more }
+dnsAid: object { status, details, durationMs, 3 more }
 
 </summary>
 
@@ -3390,7 +2778,7 @@ durationMs: optional number
 
 <summary>
 
-evidence: optional array of object {action, label, finding, 2 more }
+evidence: optional array of object { action, label, finding, 2 more }
 
 </summary>
 
@@ -3406,7 +2794,7 @@ label: string
 
 <summary>
 
-finding: optional object {outcome, summary }
+finding: optional object { outcome, summary }
 
 </summary>
 
@@ -3426,7 +2814,7 @@ summary: string
 
 <summary>
 
-request: optional object {method, url, headers }
+request: optional object { method, url, headers }
 
 </summary>
 
@@ -3450,7 +2838,7 @@ headers: optional unknown
 
 <summary>
 
-response: optional object {status, statusText, bodyPreview, 3 more }
+response: optional object { status, statusText, bodyPreview, 3 more }
 
 </summary>
 
@@ -3494,7 +2882,7 @@ message: optional string
 
 <summary>
 
-messageRef: optional object {code, params }
+messageRef: optional object { code, params }
 
 </summary>
 
@@ -3520,7 +2908,7 @@ params: optional unknown
 
 <summary>
 
-agentSkills: object {status, details, durationMs, 3 more }
+linkHeaders: object { status, details, durationMs, 3 more }
 
 </summary>
 
@@ -3540,7 +2928,7 @@ durationMs: optional number
 
 <summary>
 
-evidence: optional array of object {action, label, finding, 2 more }
+evidence: optional array of object { action, label, finding, 2 more }
 
 </summary>
 
@@ -3556,7 +2944,7 @@ label: string
 
 <summary>
 
-finding: optional object {outcome, summary }
+finding: optional object { outcome, summary }
 
 </summary>
 
@@ -3576,7 +2964,7 @@ summary: string
 
 <summary>
 
-request: optional object {method, url, headers }
+request: optional object { method, url, headers }
 
 </summary>
 
@@ -3600,7 +2988,7 @@ headers: optional unknown
 
 <summary>
 
-response: optional object {status, statusText, bodyPreview, 3 more }
+response: optional object { status, statusText, bodyPreview, 3 more }
 
 </summary>
 
@@ -3644,7 +3032,7 @@ message: optional string
 
 <summary>
 
-messageRef: optional object {code, params }
+messageRef: optional object { code, params }
 
 </summary>
 
@@ -3670,7 +3058,7 @@ params: optional unknown
 
 <summary>
 
-apiCatalog: object {status, details, durationMs, 3 more }
+robotsTxt: object { status, details, durationMs, 3 more }
 
 </summary>
 
@@ -3690,7 +3078,7 @@ durationMs: optional number
 
 <summary>
 
-evidence: optional array of object {action, label, finding, 2 more }
+evidence: optional array of object { action, label, finding, 2 more }
 
 </summary>
 
@@ -3706,7 +3094,7 @@ label: string
 
 <summary>
 
-finding: optional object {outcome, summary }
+finding: optional object { outcome, summary }
 
 </summary>
 
@@ -3726,7 +3114,7 @@ summary: string
 
 <summary>
 
-request: optional object {method, url, headers }
+request: optional object { method, url, headers }
 
 </summary>
 
@@ -3750,7 +3138,7 @@ headers: optional unknown
 
 <summary>
 
-response: optional object {status, statusText, bodyPreview, 3 more }
+response: optional object { status, statusText, bodyPreview, 3 more }
 
 </summary>
 
@@ -3794,7 +3182,7 @@ message: optional string
 
 <summary>
 
-messageRef: optional object {code, params }
+messageRef: optional object { code, params }
 
 </summary>
 
@@ -3820,7 +3208,7 @@ params: optional unknown
 
 <summary>
 
-ard: object {status, details, durationMs, 3 more }
+sitemap: object { status, details, durationMs, 3 more }
 
 </summary>
 
@@ -3840,7 +3228,7 @@ durationMs: optional number
 
 <summary>
 
-evidence: optional array of object {action, label, finding, 2 more }
+evidence: optional array of object { action, label, finding, 2 more }
 
 </summary>
 
@@ -3856,7 +3244,7 @@ label: string
 
 <summary>
 
-finding: optional object {outcome, summary }
+finding: optional object { outcome, summary }
 
 </summary>
 
@@ -3876,7 +3264,7 @@ summary: string
 
 <summary>
 
-request: optional object {method, url, headers }
+request: optional object { method, url, headers }
 
 </summary>
 
@@ -3900,7 +3288,7 @@ headers: optional unknown
 
 <summary>
 
-response: optional object {status, statusText, bodyPreview, 3 more }
+response: optional object { status, statusText, bodyPreview, 3 more }
 
 </summary>
 
@@ -3944,7 +3332,169 @@ message: optional string
 
 <summary>
 
-messageRef: optional object {code, params }
+messageRef: optional object { code, params }
+
+</summary>
+
+code: string
+
+Stable, translatable message code.
+
+<a href="#">Link to this property</a>
+
+params: optional unknown
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+discovery: object { a2aAgentCard, agentSkills, apiCatalog, 7 more }
+
+</summary>
+
+<details>
+
+<summary>
+
+a2aAgentCard: object { status, details, durationMs, 3 more }
+
+</summary>
+
+status: string
+
+<a href="#">Link to this property</a>
+
+details: optional unknown
+
+<a href="#">Link to this property</a>
+
+durationMs: optional number
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+evidence: optional array of object { action, label, finding, 2 more }
+
+</summary>
+
+action: string
+
+<a href="#">Link to this property</a>
+
+label: string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+finding: optional object { outcome, summary }
+
+</summary>
+
+outcome: string
+
+<a href="#">Link to this property</a>
+
+summary: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+request: optional object { method, url, headers }
+
+</summary>
+
+method: string
+
+<a href="#">Link to this property</a>
+
+url: string
+
+<a href="#">Link to this property</a>
+
+headers: optional unknown
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+response: optional object { status, statusText, bodyPreview, 3 more }
+
+</summary>
+
+status: number
+
+<a href="#">Link to this property</a>
+
+statusText: string
+
+<a href="#">Link to this property</a>
+
+bodyPreview: optional string
+
+<a href="#">Link to this property</a>
+
+bodySize: optional number
+
+<a href="#">Link to this property</a>
+
+headers: optional unknown
+
+<a href="#">Link to this property</a>
+
+redirectedTo: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+message: optional string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+messageRef: optional object { code, params }
 
 </summary>
 
@@ -3970,7 +3520,7 @@ params: optional unknown
 
 <summary>
 
-authMd: object {status, details, durationMs, 3 more }
+agentSkills: object { status, details, durationMs, 3 more }
 
 </summary>
 
@@ -3990,7 +3540,7 @@ durationMs: optional number
 
 <summary>
 
-evidence: optional array of object {action, label, finding, 2 more }
+evidence: optional array of object { action, label, finding, 2 more }
 
 </summary>
 
@@ -4006,7 +3556,7 @@ label: string
 
 <summary>
 
-finding: optional object {outcome, summary }
+finding: optional object { outcome, summary }
 
 </summary>
 
@@ -4026,7 +3576,7 @@ summary: string
 
 <summary>
 
-request: optional object {method, url, headers }
+request: optional object { method, url, headers }
 
 </summary>
 
@@ -4050,7 +3600,7 @@ headers: optional unknown
 
 <summary>
 
-response: optional object {status, statusText, bodyPreview, 3 more }
+response: optional object { status, statusText, bodyPreview, 3 more }
 
 </summary>
 
@@ -4094,7 +3644,7 @@ message: optional string
 
 <summary>
 
-messageRef: optional object {code, params }
+messageRef: optional object { code, params }
 
 </summary>
 
@@ -4120,7 +3670,7 @@ params: optional unknown
 
 <summary>
 
-mcpServerCard: object {status, details, durationMs, 3 more }
+apiCatalog: object { status, details, durationMs, 3 more }
 
 </summary>
 
@@ -4140,7 +3690,7 @@ durationMs: optional number
 
 <summary>
 
-evidence: optional array of object {action, label, finding, 2 more }
+evidence: optional array of object { action, label, finding, 2 more }
 
 </summary>
 
@@ -4156,7 +3706,7 @@ label: string
 
 <summary>
 
-finding: optional object {outcome, summary }
+finding: optional object { outcome, summary }
 
 </summary>
 
@@ -4176,7 +3726,7 @@ summary: string
 
 <summary>
 
-request: optional object {method, url, headers }
+request: optional object { method, url, headers }
 
 </summary>
 
@@ -4200,7 +3750,7 @@ headers: optional unknown
 
 <summary>
 
-response: optional object {status, statusText, bodyPreview, 3 more }
+response: optional object { status, statusText, bodyPreview, 3 more }
 
 </summary>
 
@@ -4244,7 +3794,7 @@ message: optional string
 
 <summary>
 
-messageRef: optional object {code, params }
+messageRef: optional object { code, params }
 
 </summary>
 
@@ -4270,7 +3820,7 @@ params: optional unknown
 
 <summary>
 
-oauthDiscovery: object {status, details, durationMs, 3 more }
+ard: object { status, details, durationMs, 3 more }
 
 </summary>
 
@@ -4290,7 +3840,7 @@ durationMs: optional number
 
 <summary>
 
-evidence: optional array of object {action, label, finding, 2 more }
+evidence: optional array of object { action, label, finding, 2 more }
 
 </summary>
 
@@ -4306,7 +3856,7 @@ label: string
 
 <summary>
 
-finding: optional object {outcome, summary }
+finding: optional object { outcome, summary }
 
 </summary>
 
@@ -4326,7 +3876,7 @@ summary: string
 
 <summary>
 
-request: optional object {method, url, headers }
+request: optional object { method, url, headers }
 
 </summary>
 
@@ -4350,7 +3900,7 @@ headers: optional unknown
 
 <summary>
 
-response: optional object {status, statusText, bodyPreview, 3 more }
+response: optional object { status, statusText, bodyPreview, 3 more }
 
 </summary>
 
@@ -4394,7 +3944,7 @@ message: optional string
 
 <summary>
 
-messageRef: optional object {code, params }
+messageRef: optional object { code, params }
 
 </summary>
 
@@ -4420,7 +3970,7 @@ params: optional unknown
 
 <summary>
 
-oauthProtectedResource: object {status, details, durationMs, 3 more }
+authMd: object { status, details, durationMs, 3 more }
 
 </summary>
 
@@ -4440,7 +3990,7 @@ durationMs: optional number
 
 <summary>
 
-evidence: optional array of object {action, label, finding, 2 more }
+evidence: optional array of object { action, label, finding, 2 more }
 
 </summary>
 
@@ -4456,7 +4006,7 @@ label: string
 
 <summary>
 
-finding: optional object {outcome, summary }
+finding: optional object { outcome, summary }
 
 </summary>
 
@@ -4476,7 +4026,7 @@ summary: string
 
 <summary>
 
-request: optional object {method, url, headers }
+request: optional object { method, url, headers }
 
 </summary>
 
@@ -4500,7 +4050,7 @@ headers: optional unknown
 
 <summary>
 
-response: optional object {status, statusText, bodyPreview, 3 more }
+response: optional object { status, statusText, bodyPreview, 3 more }
 
 </summary>
 
@@ -4544,7 +4094,7 @@ message: optional string
 
 <summary>
 
-messageRef: optional object {code, params }
+messageRef: optional object { code, params }
 
 </summary>
 
@@ -4570,7 +4120,7 @@ params: optional unknown
 
 <summary>
 
-personalAgentProtocol: object {status, details, durationMs, 3 more }
+mcpServerCard: object { status, details, durationMs, 3 more }
 
 </summary>
 
@@ -4590,7 +4140,7 @@ durationMs: optional number
 
 <summary>
 
-evidence: optional array of object {action, label, finding, 2 more }
+evidence: optional array of object { action, label, finding, 2 more }
 
 </summary>
 
@@ -4606,7 +4156,7 @@ label: string
 
 <summary>
 
-finding: optional object {outcome, summary }
+finding: optional object { outcome, summary }
 
 </summary>
 
@@ -4626,7 +4176,7 @@ summary: string
 
 <summary>
 
-request: optional object {method, url, headers }
+request: optional object { method, url, headers }
 
 </summary>
 
@@ -4650,7 +4200,7 @@ headers: optional unknown
 
 <summary>
 
-response: optional object {status, statusText, bodyPreview, 3 more }
+response: optional object { status, statusText, bodyPreview, 3 more }
 
 </summary>
 
@@ -4694,7 +4244,7 @@ message: optional string
 
 <summary>
 
-messageRef: optional object {code, params }
+messageRef: optional object { code, params }
 
 </summary>
 
@@ -4720,7 +4270,7 @@ params: optional unknown
 
 <summary>
 
-webMcp: object {status, details, durationMs, 3 more }
+oauthDiscovery: object { status, details, durationMs, 3 more }
 
 </summary>
 
@@ -4740,7 +4290,7 @@ durationMs: optional number
 
 <summary>
 
-evidence: optional array of object {action, label, finding, 2 more }
+evidence: optional array of object { action, label, finding, 2 more }
 
 </summary>
 
@@ -4756,7 +4306,7 @@ label: string
 
 <summary>
 
-finding: optional object {outcome, summary }
+finding: optional object { outcome, summary }
 
 </summary>
 
@@ -4776,7 +4326,7 @@ summary: string
 
 <summary>
 
-request: optional object {method, url, headers }
+request: optional object { method, url, headers }
 
 </summary>
 
@@ -4800,7 +4350,7 @@ headers: optional unknown
 
 <summary>
 
-response: optional object {status, statusText, bodyPreview, 3 more }
+response: optional object { status, statusText, bodyPreview, 3 more }
 
 </summary>
 
@@ -4844,7 +4394,457 @@ message: optional string
 
 <summary>
 
-messageRef: optional object {code, params }
+messageRef: optional object { code, params }
+
+</summary>
+
+code: string
+
+Stable, translatable message code.
+
+<a href="#">Link to this property</a>
+
+params: optional unknown
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+oauthProtectedResource: object { status, details, durationMs, 3 more }
+
+</summary>
+
+status: string
+
+<a href="#">Link to this property</a>
+
+details: optional unknown
+
+<a href="#">Link to this property</a>
+
+durationMs: optional number
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+evidence: optional array of object { action, label, finding, 2 more }
+
+</summary>
+
+action: string
+
+<a href="#">Link to this property</a>
+
+label: string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+finding: optional object { outcome, summary }
+
+</summary>
+
+outcome: string
+
+<a href="#">Link to this property</a>
+
+summary: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+request: optional object { method, url, headers }
+
+</summary>
+
+method: string
+
+<a href="#">Link to this property</a>
+
+url: string
+
+<a href="#">Link to this property</a>
+
+headers: optional unknown
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+response: optional object { status, statusText, bodyPreview, 3 more }
+
+</summary>
+
+status: number
+
+<a href="#">Link to this property</a>
+
+statusText: string
+
+<a href="#">Link to this property</a>
+
+bodyPreview: optional string
+
+<a href="#">Link to this property</a>
+
+bodySize: optional number
+
+<a href="#">Link to this property</a>
+
+headers: optional unknown
+
+<a href="#">Link to this property</a>
+
+redirectedTo: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+message: optional string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+messageRef: optional object { code, params }
+
+</summary>
+
+code: string
+
+Stable, translatable message code.
+
+<a href="#">Link to this property</a>
+
+params: optional unknown
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+personalAgentProtocol: object { status, details, durationMs, 3 more }
+
+</summary>
+
+status: string
+
+<a href="#">Link to this property</a>
+
+details: optional unknown
+
+<a href="#">Link to this property</a>
+
+durationMs: optional number
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+evidence: optional array of object { action, label, finding, 2 more }
+
+</summary>
+
+action: string
+
+<a href="#">Link to this property</a>
+
+label: string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+finding: optional object { outcome, summary }
+
+</summary>
+
+outcome: string
+
+<a href="#">Link to this property</a>
+
+summary: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+request: optional object { method, url, headers }
+
+</summary>
+
+method: string
+
+<a href="#">Link to this property</a>
+
+url: string
+
+<a href="#">Link to this property</a>
+
+headers: optional unknown
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+response: optional object { status, statusText, bodyPreview, 3 more }
+
+</summary>
+
+status: number
+
+<a href="#">Link to this property</a>
+
+statusText: string
+
+<a href="#">Link to this property</a>
+
+bodyPreview: optional string
+
+<a href="#">Link to this property</a>
+
+bodySize: optional number
+
+<a href="#">Link to this property</a>
+
+headers: optional unknown
+
+<a href="#">Link to this property</a>
+
+redirectedTo: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+message: optional string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+messageRef: optional object { code, params }
+
+</summary>
+
+code: string
+
+Stable, translatable message code.
+
+<a href="#">Link to this property</a>
+
+params: optional unknown
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+webMcp: object { status, details, durationMs, 3 more }
+
+</summary>
+
+status: string
+
+<a href="#">Link to this property</a>
+
+details: optional unknown
+
+<a href="#">Link to this property</a>
+
+durationMs: optional number
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+evidence: optional array of object { action, label, finding, 2 more }
+
+</summary>
+
+action: string
+
+<a href="#">Link to this property</a>
+
+label: string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+finding: optional object { outcome, summary }
+
+</summary>
+
+outcome: string
+
+<a href="#">Link to this property</a>
+
+summary: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+request: optional object { method, url, headers }
+
+</summary>
+
+method: string
+
+<a href="#">Link to this property</a>
+
+url: string
+
+<a href="#">Link to this property</a>
+
+headers: optional unknown
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+response: optional object { status, statusText, bodyPreview, 3 more }
+
+</summary>
+
+status: number
+
+<a href="#">Link to this property</a>
+
+statusText: string
+
+<a href="#">Link to this property</a>
+
+bodyPreview: optional string
+
+<a href="#">Link to this property</a>
+
+bodySize: optional number
+
+<a href="#">Link to this property</a>
+
+headers: optional unknown
+
+<a href="#">Link to this property</a>
+
+redirectedTo: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+message: optional string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+messageRef: optional object { code, params }
 
 </summary>
 
@@ -4894,7 +4894,7 @@ isCommerce: optional boolean
 
 <summary>
 
-nextLevel: optional object {name, requirements, target }
+nextLevel: optional object { name, requirements, target }
 
 </summary>
 
@@ -4906,7 +4906,7 @@ name: string
 
 <summary>
 
-requirements: array of object {check, description, prompt, 2 more }
+requirements: array of object { check, description, prompt, 2 more }
 
 </summary>
 
@@ -4950,7 +4950,7 @@ target: number
 
 <summary>
 
-phishing\_v2: optional object {data }
+phishing\_v2: optional object { data }
 
 </summary>
 
@@ -4966,7 +4966,7 @@ data: array of string
 
 <summary>
 
-robotsTxt: optional object {data }
+robotsTxt: optional object { data }
 
 </summary>
 
@@ -4974,7 +4974,7 @@ robotsTxt: optional object {data }
 
 <summary>
 
-data: array of object {rules, sitemaps, hash }
+data: array of object { rules, sitemaps, hash }
 
 </summary>
 
@@ -4982,7 +4982,7 @@ data: array of object {rules, sitemaps, hash }
 
 <summary>
 
-rules: map\[object {allow, disallow, contentSignal, crawlDelay } ]
+rules: map\[object { allow, disallow, contentSignal, crawlDelay } ]
 
 </summary>
 
@@ -4998,7 +4998,7 @@ disallow: array of string
 
 <summary>
 
-contentSignal: optional object {"ai-input", "ai-train", search }
+contentSignal: optional object { "ai-input", "ai-train", search }
 
 </summary>
 
@@ -5046,7 +5046,7 @@ hash: optional string
 
 <summary>
 
-urlCategories: optional object {data }
+urlCategories: optional object { data }
 
 </summary>
 
@@ -5054,7 +5054,7 @@ urlCategories: optional object {data }
 
 <summary>
 
-data: array of object {content, inherited, name, risks }
+data: array of object { content, inherited, name, risks }
 
 </summary>
 
@@ -5062,7 +5062,7 @@ data: array of object {content, inherited, name, risks }
 
 <summary>
 
-content: array of object {id, name, super\_category\_id }
+content: array of object { id, name, super\_category\_id }
 
 </summary>
 
@@ -5086,7 +5086,7 @@ super\_category\_id: number
 
 <summary>
 
-inherited: object {content, from, risks }
+inherited: object { content, from, risks }
 
 </summary>
 
@@ -5094,7 +5094,7 @@ inherited: object {content, from, risks }
 
 <summary>
 
-content: array of object {id, name, super\_category\_id }
+content: array of object { id, name, super\_category\_id }
 
 </summary>
 
@@ -5122,7 +5122,7 @@ from: string
 
 <summary>
 
-risks: array of object {id, name, super\_category\_id }
+risks: array of object { id, name, super\_category\_id }
 
 </summary>
 
@@ -5154,7 +5154,7 @@ name: string
 
 <summary>
 
-risks: array of object {id, name, super\_category\_id }
+risks: array of object { id, name, super\_category\_id }
 
 </summary>
 
@@ -5194,7 +5194,7 @@ super\_category\_id: number
 
 <summary>
 
-page: object {apexDomain, asn, asnname, 14 more }
+page: object { apexDomain, asn, asnname, 14 more }
 
 </summary>
 
@@ -5266,7 +5266,7 @@ url: string
 
 <summary>
 
-screenshot: optional object {dhash, mm3Hash, name, phash }
+screenshot: optional object { dhash, mm3Hash, name, phash }
 
 </summary>
 
@@ -5298,7 +5298,7 @@ phash: string
 
 <summary>
 
-scanner: object {colo, country }
+scanner: object { colo, country }
 
 </summary>
 
@@ -5318,7 +5318,7 @@ country: string
 
 <summary>
 
-stats: object {domainStats, ipStats, IPv6Percentage, 10 more }
+stats: object { domainStats, ipStats, IPv6Percentage, 10 more }
 
 </summary>
 
@@ -5326,7 +5326,7 @@ stats: object {domainStats, ipStats, IPv6Percentage, 10 more }
 
 <summary>
 
-domainStats: array of object {count, countries, domain, 6 more }
+domainStats: array of object { count, countries, domain, 6 more }
 
 </summary>
 
@@ -5374,7 +5374,7 @@ size: number
 
 <summary>
 
-ipStats: array of object {asn, countries, domains, 9 more }
+ipStats: array of object { asn, countries, domains, 9 more }
 
 </summary>
 
@@ -5382,7 +5382,7 @@ ipStats: array of object {asn, countries, domains, 9 more }
 
 <summary>
 
-asn: object {asn, country, description, 3 more }
+asn: object { asn, country, description, 3 more }
 
 </summary>
 
@@ -5430,7 +5430,7 @@ encodedSize: number
 
 <summary>
 
-geoip: object {city, country, country\_name, 2 more }
+geoip: object { city, country, country\_name, 2 more }
 
 </summary>
 
@@ -5502,7 +5502,7 @@ malicious: number
 
 <summary>
 
-protocolStats: array of object {count, countries, encodedSize, 3 more }
+protocolStats: array of object { count, countries, encodedSize, 3 more }
 
 </summary>
 
@@ -5538,7 +5538,7 @@ size: number
 
 <summary>
 
-resourceStats: array of object {compression, count, countries, 5 more }
+resourceStats: array of object { compression, count, countries, 5 more }
 
 </summary>
 
@@ -5590,7 +5590,7 @@ secureRequests: number
 
 <summary>
 
-serverStats: array of object {count, countries, encodedSize, 3 more }
+serverStats: array of object { count, countries, encodedSize, 3 more }
 
 </summary>
 
@@ -5626,7 +5626,7 @@ size: number
 
 <summary>
 
-tlsStats: array of object {count, countries, encodedSize, 4 more }
+tlsStats: array of object { count, countries, encodedSize, 4 more }
 
 </summary>
 
@@ -5650,7 +5650,7 @@ ips: array of string
 
 <summary>
 
-protocols: object {"TLS 1.3 / AES\_128\_GCM" }
+protocols: object { "TLS 1.3 / AES\_128\_GCM" }
 
 </summary>
 
@@ -5694,7 +5694,7 @@ uniqCountries: number
 
 <summary>
 
-task: object {apexDomain, domain, domURL, 10 more }
+task: object { apexDomain, domain, domURL, 10 more }
 
 </summary>
 
@@ -5718,7 +5718,7 @@ method: string
 
 <summary>
 
-options: object {customHeaders, screenshotsResolutions }
+options: object { customHeaders, screenshotsResolutions }
 
 </summary>
 
@@ -5776,7 +5776,7 @@ visibility: string
 
 <summary>
 
-verdicts: object {overall }
+verdicts: object { overall }
 
 </summary>
 
@@ -5784,7 +5784,7 @@ verdicts: object {overall }
 
 <summary>
 
-overall: object {categories, hasVerdicts, malicious, tags }
+overall: object { categories, hasVerdicts, malicious, tags }
 
 </summary>
 
@@ -5820,7 +5820,7 @@ tags: array of string
 
 <summary>
 
-ScanCreateResponse object {api, message, result, 4 more }
+ScanCreateResponse object { api, message, result, 4 more }
 
 </summary>
 
@@ -5858,7 +5858,7 @@ formatuuid
 
 <summary>
 
-visibility: "public"or "unlisted"
+visibility: "public" or "unlisted"
 
 Submitted visibility status.
 
@@ -5882,7 +5882,7 @@ One of the following:
 
 <summary>
 
-options: optional object {useragent }
+options: optional object { useragent }
 
 </summary>
 
@@ -5902,7 +5902,7 @@ useragent: optional string
 
 <summary>
 
-ScanBulkCreateResponse = array of object {api, result, url, 3 more }
+ScanBulkCreateResponse = array of object { api, result, url, 3 more }
 
 </summary>
 
@@ -5936,7 +5936,7 @@ formatuuid
 
 <summary>
 
-visibility: "public"or "unlisted"
+visibility: "public" or "unlisted"
 
 Submitted visibility status.
 
@@ -5960,7 +5960,7 @@ One of the following:
 
 <summary>
 
-options: optional object {useragent }
+options: optional object { useragent }
 
 </summary>
 
@@ -5980,7 +5980,7 @@ useragent: optional string
 
 <summary>
 
-ScanHARResponse object {log }
+ScanHARResponse object { log }
 
 </summary>
 
@@ -5988,7 +5988,7 @@ ScanHARResponse object {log }
 
 <summary>
 
-log: object {creator, entries, pages, version }
+log: object { creator, entries, pages, version }
 
 </summary>
 
@@ -5996,7 +5996,7 @@ log: object {creator, entries, pages, version }
 
 <summary>
 
-creator: object {comment, name, version }
+creator: object { comment, name, version }
 
 </summary>
 
@@ -6020,7 +6020,7 @@ version: string
 
 <summary>
 
-entries: array of object {\_initialPriority, \_initiator\_type, \_priority, 11 more }
+entries: array of object { \_initialPriority, \_initiator\_type, \_priority, 11 more }
 
 </summary>
 
@@ -6064,7 +6064,7 @@ pageref: string
 
 <summary>
 
-request: object {bodySize, headers, headersSize, 3 more }
+request: object { bodySize, headers, headersSize, 3 more }
 
 </summary>
 
@@ -6076,7 +6076,7 @@ bodySize: number
 
 <summary>
 
-headers: array of object {name, value }
+headers: array of object { name, value }
 
 </summary>
 
@@ -6116,7 +6116,7 @@ url: string
 
 <summary>
 
-response: object {\_transferSize, bodySize, content, 6 more }
+response: object { \_transferSize, bodySize, content, 6 more }
 
 </summary>
 
@@ -6132,7 +6132,7 @@ bodySize: number
 
 <summary>
 
-content: object {mimeType, size, compression }
+content: object { mimeType, size, compression }
 
 </summary>
 
@@ -6156,7 +6156,7 @@ compression: optional number
 
 <summary>
 
-headers: array of object {name, value }
+headers: array of object { name, value }
 
 </summary>
 
@@ -6216,7 +6216,7 @@ time: number
 
 <summary>
 
-pages: array of object {id, pageTimings, startedDateTime, title }
+pages: array of object { id, pageTimings, startedDateTime, title }
 
 </summary>
 
@@ -6228,7 +6228,7 @@ id: string
 
 <summary>
 
-pageTimings: object {onContentLoad, onLoad }
+pageTimings: object { onContentLoad, onLoad }
 
 </summary>
 

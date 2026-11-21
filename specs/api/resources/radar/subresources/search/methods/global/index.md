@@ -70,7 +70,7 @@ String used to perform the search operation.
 
 <summary>
 
-exclude: optional array of "ADM1S"or "ASNS"or "BOTS"or 10 more
+exclude: optional array of "ADM1S" or "ASNS" or "BOTS" or 10 more
 
 Search types excluded from results.
 
@@ -138,7 +138,7 @@ One of the following:
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -162,7 +162,7 @@ One of the following:
 
 <summary>
 
-include: optional array of "ADM1S"or "ASNS"or "BOTS"or 10 more
+include: optional array of "ADM1S" or "ASNS" or "BOTS" or 10 more
 
 Search types included in results.
 
@@ -248,7 +248,7 @@ Limits the number of objects per search category.
 
 <summary>
 
-result: object {search }
+result: object { search }
 
 </summary>
 
@@ -256,7 +256,7 @@ result: object {search }
 
 <summary>
 
-search: array of object {code, name, type, entity }
+search: array of object { code, name, type, entity }
 
 </summary>
 
@@ -276,7 +276,7 @@ type: string
 
 <summary>
 
-entity: optional object {aka, asn, category, 2 more } or object {geoId, name, parent }
+entity: optional object { aka, asn, category, 2 more } or object { geoId, name, parent }
 
 Matched entity: an AS for <code>asn</code> results, a geolocation for <code>adm1</code> and <code>adm2</code>. Null for other types.
 
@@ -288,7 +288,7 @@ One of the following:
 
 <summary>
 
-object {aka, asn, category, 2 more }
+object { aka, asn, category, 2 more }
 
 </summary>
 
@@ -308,7 +308,7 @@ AS number.
 
 <summary>
 
-category: "ACCESS\_ISP"or "HOSTING\_CLOUD\_CONTENT"or "ORGANIZATION"
+category: "ACCESS\_ISP" or "HOSTING\_CLOUD\_CONTENT" or "ORGANIZATION"
 
 Inferred network type of the AS: <code>ACCESS_ISP</code> (networks connecting end users, plus transit), <code>HOSTING_CLOUD_CONTENT</code> (hosting providers, clouds and CDNs) or <code>ORGANIZATION</code> (enterprises, universities, governments, banks and IXP route servers). <code>null</code> when the AS is not classified.
 
@@ -352,7 +352,7 @@ AS name.
 
 <summary>
 
-object {geoId, name, parent }
+object { geoId, name, parent }
 
 </summary>
 
@@ -372,7 +372,7 @@ Localized name of the geolocation.
 
 <summary>
 
-parent: object {code, name, type }
+parent: object { code, name, type }
 
 Parent geolocation (country for <code>adm1</code>, <code>adm1</code> for <code>adm2</code>).
 

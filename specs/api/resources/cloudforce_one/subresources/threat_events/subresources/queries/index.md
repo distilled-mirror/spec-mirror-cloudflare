@@ -46,7 +46,7 @@ DELETE/accounts/{account\_id}/cloudforce-one/events/queries/{query\_id}
 
 <summary>
 
-QueryListResponse = array of object {id, account\_id, alert\_enabled, 10 more }
+QueryListResponse = array of object { id, account\_id, alert\_enabled, 10 more }
 
 </summary>
 
@@ -136,7 +136,7 @@ Deprecated: saved-query alerting and rules were removed. Always null.
 
 <summary>
 
-QueryCreateResponse object {id, account\_id, alert\_enabled, 10 more }
+QueryCreateResponse object { id, account\_id, alert\_enabled, 10 more }
 
 </summary>
 
@@ -226,7 +226,7 @@ Deprecated: saved-query alerting and rules were removed. Always null.
 
 <summary>
 
-QueryGetResponse object {id, account\_id, alert\_enabled, 10 more }
+QueryGetResponse object { id, account\_id, alert\_enabled, 10 more }
 
 </summary>
 
@@ -316,7 +316,7 @@ Deprecated: saved-query alerting and rules were removed. Always null.
 
 <summary>
 
-QueryEditResponse object {id, account\_id, alert\_enabled, 10 more }
+QueryEditResponse object { id, account\_id, alert\_enabled, 10 more }
 
 </summary>
 

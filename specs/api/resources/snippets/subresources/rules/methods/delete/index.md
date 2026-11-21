@@ -72,7 +72,7 @@ Use this field to specify the unique ID of the zone.
 
 <summary>
 
-errors: array of object {message, code }
+errors: array of object { message, code }
 
 Lists error messages.
 
@@ -100,7 +100,7 @@ Identify the message code.
 
 <summary>
 
-messages: array of object {message, code }
+messages: array of object { message, code }
 
 Contain warning messages.
 
@@ -128,7 +128,7 @@ Identify the message code.
 
 <summary>
 
-result: array of object {id, expression, last\_updated, 3 more }
+result: array of object { id, expression, last\_updated, 3 more }
 
 Lists snippet rules.
 

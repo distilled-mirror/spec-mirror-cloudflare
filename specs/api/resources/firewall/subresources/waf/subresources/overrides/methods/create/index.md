@@ -62,7 +62,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Zone Settings Write`
+`Zone Settings Write``Workers Routes Write`
 
 ##### P ath ParametersExpand Collapse
 

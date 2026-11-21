@@ -30,7 +30,7 @@ GET/zones/{zone\_id}/ssl/recommendation
 
 <summary>
 
-RecommendationGetResponse object {id, editable, modified\_on, 2 more }
+RecommendationGetResponse object { id, editable, modified\_on, 2 more }
 
 </summary>
 
@@ -56,7 +56,7 @@ formatdate-time
 
 <summary>
 
-value: "auto"or "custom"
+value: "auto" or "custom"
 
 Current setting of the automatic SSL/TLS.
 

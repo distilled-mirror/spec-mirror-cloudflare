@@ -40,7 +40,7 @@ DELETE/accounts/{account\_id}/secrets\_store/stores/{store\_id}
 
 <summary>
 
-StoreListResponse object {id, created, modified, 2 more }
+StoreListResponse object { id, created, modified, 2 more }
 
 </summary>
 
@@ -90,7 +90,7 @@ maxLength32
 
 <summary>
 
-StoreGetResponse object {id, created, modified, 2 more }
+StoreGetResponse object { id, created, modified, 2 more }
 
 </summary>
 
@@ -140,7 +140,7 @@ maxLength32
 
 <summary>
 
-StoreCreateResponse object {id, created, modified, 2 more }
+StoreCreateResponse object { id, created, modified, 2 more }
 
 </summary>
 
@@ -228,7 +228,7 @@ POST/accounts/{account\_id}/secrets\_store/stores/{store\_id}/secrets/{secret\_i
 
 <summary>
 
-SecretListResponse object {id, created, modified, 5 more }
+SecretListResponse object { id, created, modified, 5 more }
 
 </summary>
 
@@ -266,7 +266,7 @@ The name of the secret.
 
 <summary>
 
-status: "pending"or "active"or "deleted"
+status: "pending" or "active" or "deleted"
 
 </summary>
 
@@ -306,7 +306,7 @@ Freeform text describing the secret.
 
 <summary>
 
-scopes: optional array of "workers"or "ai\_gateway"or "dex"or 3 more
+scopes: optional array of "workers" or "ai\_gateway" or "dex" or 3 more
 
 The list of services that can use this secret, or null when the secret inherits its store’s scopes. Set it to null in a patch to inherit again. An empty list lets no service use the secret.
 
@@ -350,7 +350,7 @@ One of the following:
 
 <summary>
 
-SecretGetResponse object {id, created, modified, 5 more }
+SecretGetResponse object { id, created, modified, 5 more }
 
 </summary>
 
@@ -388,7 +388,7 @@ The name of the secret.
 
 <summary>
 
-status: "pending"or "active"or "deleted"
+status: "pending" or "active" or "deleted"
 
 </summary>
 
@@ -428,7 +428,7 @@ Freeform text describing the secret.
 
 <summary>
 
-scopes: optional array of "workers"or "ai\_gateway"or "dex"or 3 more
+scopes: optional array of "workers" or "ai\_gateway" or "dex" or 3 more
 
 The list of services that can use this secret, or null when the secret inherits its store’s scopes. Set it to null in a patch to inherit again. An empty list lets no service use the secret.
 
@@ -472,7 +472,7 @@ One of the following:
 
 <summary>
 
-SecretCreateResponse object {id, created, modified, 5 more }
+SecretCreateResponse object { id, created, modified, 5 more }
 
 </summary>
 
@@ -510,7 +510,7 @@ The name of the secret.
 
 <summary>
 
-status: "pending"or "active"or "deleted"
+status: "pending" or "active" or "deleted"
 
 </summary>
 
@@ -550,7 +550,7 @@ Freeform text describing the secret.
 
 <summary>
 
-scopes: optional array of "workers"or "ai\_gateway"or "dex"or 3 more
+scopes: optional array of "workers" or "ai\_gateway" or "dex" or 3 more
 
 The list of services that can use this secret, or null when the secret inherits its store’s scopes. Set it to null in a patch to inherit again. An empty list lets no service use the secret.
 
@@ -594,7 +594,7 @@ One of the following:
 
 <summary>
 
-SecretEditResponse object {id, created, modified, 5 more }
+SecretEditResponse object { id, created, modified, 5 more }
 
 </summary>
 
@@ -632,7 +632,7 @@ The name of the secret.
 
 <summary>
 
-status: "pending"or "active"or "deleted"
+status: "pending" or "active" or "deleted"
 
 </summary>
 
@@ -672,7 +672,7 @@ Freeform text describing the secret.
 
 <summary>
 
-scopes: optional array of "workers"or "ai\_gateway"or "dex"or 3 more
+scopes: optional array of "workers" or "ai\_gateway" or "dex" or 3 more
 
 The list of services that can use this secret, or null when the secret inherits its store’s scopes. Set it to null in a patch to inherit again. An empty list lets no service use the secret.
 
@@ -728,7 +728,7 @@ Result is null for delete operations.
 
 <summary>
 
-SecretDuplicateResponse object {id, created, modified, 5 more }
+SecretDuplicateResponse object { id, created, modified, 5 more }
 
 </summary>
 
@@ -766,7 +766,7 @@ The name of the secret.
 
 <summary>
 
-status: "pending"or "active"or "deleted"
+status: "pending" or "active" or "deleted"
 
 </summary>
 
@@ -806,7 +806,7 @@ Freeform text describing the secret.
 
 <summary>
 
-scopes: optional array of "workers"or "ai\_gateway"or "dex"or 3 more
+scopes: optional array of "workers" or "ai\_gateway" or "dex" or 3 more
 
 The list of services that can use this secret, or null when the secret inherits its store’s scopes. Set it to null in a patch to inherit again. An empty list lets no service use the secret.
 

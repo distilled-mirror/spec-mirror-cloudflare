@@ -36,7 +36,7 @@ DELETE/zones/{zone\_id}/cache/variants
 
 <summary>
 
-VariantGetResponse object {id, editable, value, modified\_on }
+VariantGetResponse object { id, editable, value, modified\_on }
 
 </summary>
 
@@ -56,7 +56,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: object {avif, bmp, gif, 8 more }
+value: object { avif, bmp, gif, 8 more }
 
 Value of the zone setting.
 
@@ -148,7 +148,7 @@ formatdate-time
 
 <summary>
 
-VariantEditResponse object {id, editable, value, modified\_on }
+VariantEditResponse object { id, editable, value, modified\_on }
 
 </summary>
 
@@ -168,7 +168,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: object {avif, bmp, gif, 8 more }
+value: object { avif, bmp, gif, 8 more }
 
 Value of the zone setting.
 
@@ -260,7 +260,7 @@ formatdate-time
 
 <summary>
 
-VariantDeleteResponse object {id, editable, modified\_on }
+VariantDeleteResponse object { id, editable, modified\_on }
 
 </summary>
 

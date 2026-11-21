@@ -32,7 +32,7 @@ GET/accounts/{account\_id}/cloudforce-one/events/indicators/aggregate
 
 <summary>
 
-AggregateListResponse object {aggregateBy, aggregations, failedDatasets, total }
+AggregateListResponse object { aggregateBy, aggregations, failedDatasets, total }
 
 </summary>
 
@@ -46,7 +46,7 @@ Column(s) that were aggregated by
 
 <summary>
 
-aggregations: array of object {count }
+aggregations: array of object { count }
 
 Array of aggregation results with dynamic fields based on aggregateBy columns
 

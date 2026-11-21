@@ -72,7 +72,7 @@ maxLength32
 
 <summary>
 
-errors: array of object {code, message }
+errors: array of object { code, message }
 
 List of errors, empty on success.
 
@@ -98,7 +98,7 @@ Human-readable error message.
 
 <summary>
 
-messages: array of object {code, message }
+messages: array of object { code, message }
 
 List of informational messages, empty on success.
 
@@ -124,7 +124,7 @@ Human-readable message.
 
 <summary>
 
-result: "on"or "off"
+result: "on" or "off"
 
 </summary>
 

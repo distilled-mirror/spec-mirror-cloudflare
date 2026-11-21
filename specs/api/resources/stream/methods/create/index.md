@@ -100,7 +100,7 @@ maxLength64
 
 "Upload-Metadata": optional string
 
-Comma-separated key-value pairs following the TUS protocol specification. Values are Base-64 encoded. Supported keys: `name`, `requiresignedurls`, `allowedorigins`, `thumbnailtimestamppct`, `watermark`, `scheduleddeletion`, `maxdurationseconds`.
+Comma-separated key-value pairs following the TUS protocol specification. Values are Base-64 encoded. Supported keys: `name`, `requiresignedurls`, `allowedorigins`, `thumbnailtimestamppct`, `watermark`, `scheduleddeletion`, `maxdurationseconds`, `encodingmode`. `encodingmode` accepts `default` or `previewFirst`.
 
 [Link to this property](#)%20stream%20%3E%20(method)%20create%20%3E%20(params)%20default%20%3E%20(param)%20Upload-Metadata%20%3E%20(schema)>)
 

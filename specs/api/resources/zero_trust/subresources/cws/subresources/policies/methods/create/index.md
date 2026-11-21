@@ -128,7 +128,7 @@ Tags to attach. Keys are limited to 256 UTF-8 bytes and values to 1024 UTF-8 byt
 
 <summary>
 
-errors: array of object {code, message, source }
+errors: array of object { code, message, source }
 
 </summary>
 
@@ -146,7 +146,7 @@ message: string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -166,7 +166,7 @@ pointer: string
 
 <summary>
 
-messages: array of object {code, message, source }
+messages: array of object { code, message, source }
 
 </summary>
 
@@ -184,7 +184,7 @@ message: string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 

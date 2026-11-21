@@ -82,7 +82,7 @@ Unique identifier for a message retrieved from investigation.
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -104,7 +104,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -124,7 +124,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -146,7 +146,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -166,7 +166,7 @@ pointer: optional string
 
 <summary>
 
-result: object {inbound, outbound }
+result: object { inbound, outbound }
 
 </summary>
 
@@ -174,7 +174,7 @@ result: object {inbound, outbound }
 
 <summary>
 
-inbound: object {lines, pending }
+inbound: object { lines, pending }
 
 </summary>
 
@@ -182,7 +182,7 @@ inbound: object {lines, pending }
 
 <summary>
 
-lines: optional array of object {lineno, logged\_at, message, ts }
+lines: optional array of object { lineno, logged\_at, message, ts }
 
 </summary>
 
@@ -226,7 +226,7 @@ pending: optional boolean
 
 <summary>
 
-outbound: object {lines, pending }
+outbound: object { lines, pending }
 
 </summary>
 
@@ -234,7 +234,7 @@ outbound: object {lines, pending }
 
 <summary>
 
-lines: optional array of object {lineno, logged\_at, message, ts }
+lines: optional array of object { lineno, logged\_at, message, ts }
 
 </summary>
 

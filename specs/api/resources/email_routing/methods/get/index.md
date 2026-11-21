@@ -72,7 +72,7 @@ maxLength32
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -94,7 +94,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -114,7 +114,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -136,7 +136,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -178,7 +178,7 @@ maxLength32
 
 <summary>
 
-enabled: trueor false
+enabled: true or false
 
 State of the zone settings for Email Routing.
 
@@ -224,7 +224,7 @@ formatdate-time
 
 <summary>
 
-skip\_wizard: optional trueor false
+skip\_wizard: optional true or false
 
 Flag to check if the user skipped the configuration wizard.
 
@@ -248,7 +248,7 @@ false
 
 <summary>
 
-status: optional "ready"or "unconfigured"or "misconfigured"or 2 more
+status: optional "ready" or "unconfigured" or "misconfigured" or 2 more
 
 Show the state of your account, and the type or configuration error.
 
@@ -284,7 +284,7 @@ One of the following:
 
 <summary>
 
-support\_subaddress: optional trueor false
+support\_subaddress: optional true or false
 
 Whether subaddressing (plus-addressing) is honored when matching incoming mail against routing rules.
 

@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Realtime Admin``Realtime`
+`Realtime Read``Realtime Admin``Realtime`
 
 ##### P ath ParametersExpand Collapse
 
@@ -86,7 +86,7 @@ formatuuid
 
 <summary>
 
-data: object {id, created\_at, enabled, 4 more }
+data: object { id, created\_at, enabled, 4 more }
 
 </summary>
 
@@ -116,7 +116,7 @@ Set to true if the webhook is active
 
 <summary>
 
-events: array of "meeting.started"or "meeting.ended"or "meeting.participantJoined"or 6 more
+events: array of "meeting.started" or "meeting.ended" or "meeting.participantJoined" or 6 more
 
 Events this webhook will send updates for
 

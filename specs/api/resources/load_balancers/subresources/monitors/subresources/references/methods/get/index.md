@@ -102,7 +102,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -144,7 +144,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -164,7 +164,7 @@ pointer: optional string
 
 <summary>
 
-result: array of object {reference\_type, resource\_id, resource\_name, resource\_type }
+result: array of object { reference\_type, resource\_id, resource\_name, resource\_type }
 
 List of resources that reference a given monitor.
 
@@ -174,7 +174,7 @@ List of resources that reference a given monitor.
 
 <summary>
 
-reference\_type: optional "\*"or "referral"or "referrer"
+reference\_type: optional "\*" or "referral" or "referrer"
 
 </summary>
 

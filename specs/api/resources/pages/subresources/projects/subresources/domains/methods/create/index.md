@@ -90,7 +90,7 @@ Fully qualified domain name for the Pages project, such as `example.com`.
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -112,7 +112,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -132,7 +132,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -154,7 +154,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -174,7 +174,7 @@ pointer: optional string
 
 <summary>
 
-result: object {id, certificate\_authority, created\_on, 6 more }
+result: object { id, certificate\_authority, created\_on, 6 more }
 
 </summary>
 
@@ -186,7 +186,7 @@ id: string
 
 <summary>
 
-certificate\_authority: "google"or "lets\_encrypt"
+certificate\_authority: "google" or "lets\_encrypt"
 
 </summary>
 
@@ -222,7 +222,7 @@ Fully qualified domain name for the Pages project, such as <code>example.com</co
 
 <summary>
 
-status: "initializing"or "pending"or "active"or 3 more
+status: "initializing" or "pending" or "active" or 3 more
 
 </summary>
 
@@ -260,7 +260,7 @@ One of the following:
 
 <summary>
 
-validation\_data: object {method, status, error\_message, 2 more }
+validation\_data: object { method, status, error\_message, 2 more }
 
 </summary>
 
@@ -268,7 +268,7 @@ validation\_data: object {method, status, error\_message, 2 more }
 
 <summary>
 
-method: "http"or "txt"
+method: "http" or "txt"
 
 </summary>
 
@@ -290,7 +290,7 @@ One of the following:
 
 <summary>
 
-status: "initializing"or "pending"or "active"or 2 more
+status: "initializing" or "pending" or "active" or 2 more
 
 </summary>
 
@@ -340,7 +340,7 @@ txt\_value: optional string
 
 <summary>
 
-verification\_data: object {status, error\_message }
+verification\_data: object { status, error\_message }
 
 </summary>
 
@@ -348,7 +348,7 @@ verification\_data: object {status, error\_message }
 
 <summary>
 
-status: "pending"or "active"or "deactivated"or 2 more
+status: "pending" or "active" or "deactivated" or 2 more
 
 </summary>
 

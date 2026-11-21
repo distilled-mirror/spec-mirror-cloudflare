@@ -60,7 +60,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Cloudflare One Connectors Write``Cloudflare One Connectors Read``Cloudflare One Connector: cloudflared Write``Cloudflare One Connector: cloudflared Read``Cloudflare Tunnel Write``Cloudflare Tunnel Read`
+`Connectivity Directory Read``Connectivity Directory Bind``Connectivity Directory Admin``Cloudflare One Connectors Write``Cloudflare One Connectors Read``Cloudflare One Connector: cloudflared Write``Cloudflare One Connector: cloudflared Read``Cloudflare Tunnel Write``Cloudflare Tunnel Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -88,7 +88,7 @@ maxLength36
 
 <summary>
 
-errors: array of object {code, message, context }
+errors: array of object { code, message, context }
 
 </summary>
 
@@ -116,7 +116,7 @@ Optional error-specific context.
 
 <summary>
 
-messages: array of object {code, message, context }
+messages: array of object { code, message, context }
 
 </summary>
 
@@ -174,7 +174,7 @@ The version of the remote tunnel configuration. Used internally to sync cloudfla
 
 <summary>
 
-conns: optional array of object {id, client\_id, client\_version, 5 more }
+conns: optional array of object { id, client\_id, client\_version, 5 more }
 
 The Cloudflare Tunnel connections between your origin and Cloudflare’s edge.
 
@@ -282,7 +282,7 @@ Whether the API call was successful
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object { count, page, per\_page, total\_count }
 
 </summary>
 

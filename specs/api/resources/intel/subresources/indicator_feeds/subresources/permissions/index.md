@@ -38,7 +38,7 @@ PUT/accounts/{account\_id}/intel/indicator-feeds/permissions/remove
 
 <summary>
 
-PermissionListResponse = array of object {id, description, is\_attributable, 3 more }
+PermissionListResponse = array of object { id, description, is\_attributable, 3 more }
 
 </summary>
 
@@ -86,7 +86,7 @@ The name of the indicator feed
 
 <summary>
 
-PermissionCreateResponse object {success }
+PermissionCreateResponse object { success }
 
 </summary>
 
@@ -104,7 +104,7 @@ Whether the update succeeded or not
 
 <summary>
 
-PermissionDeleteResponse object {success }
+PermissionDeleteResponse object { success }
 
 </summary>
 

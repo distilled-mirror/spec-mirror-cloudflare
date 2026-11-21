@@ -44,7 +44,7 @@ DELETE/zones/{zone\_id}/firewall/ua\_rules/{ua\_rule\_id}
 
 <summary>
 
-UARuleListResponse object {id, configuration, description, 2 more }
+UARuleListResponse object { id, configuration, description, 2 more }
 
 </summary>
 
@@ -60,7 +60,7 @@ maxLength32
 
 <summary>
 
-configuration: optional object {target, value }
+configuration: optional object { target, value }
 
 The configuration object for the current rule.
 
@@ -94,7 +94,7 @@ maxLength1024
 
 <summary>
 
-mode: optional "block"or "challenge"or "js\_challenge"or "managed\_challenge"
+mode: optional "block" or "challenge" or "js\_challenge" or "managed\_challenge"
 
 The action to apply to a matched request.
 
@@ -138,7 +138,7 @@ When true, indicates that the rule is currently paused.
 
 <summary>
 
-UARuleGetResponse object {id, configuration, description, 2 more }
+UARuleGetResponse object { id, configuration, description, 2 more }
 
 </summary>
 
@@ -154,7 +154,7 @@ maxLength32
 
 <summary>
 
-configuration: optional object {target, value }
+configuration: optional object { target, value }
 
 The configuration object for the current rule.
 
@@ -188,7 +188,7 @@ maxLength1024
 
 <summary>
 
-mode: optional "block"or "challenge"or "js\_challenge"or "managed\_challenge"
+mode: optional "block" or "challenge" or "js\_challenge" or "managed\_challenge"
 
 The action to apply to a matched request.
 
@@ -232,7 +232,7 @@ When true, indicates that the rule is currently paused.
 
 <summary>
 
-UARuleCreateResponse object {id, configuration, description, 2 more }
+UARuleCreateResponse object { id, configuration, description, 2 more }
 
 </summary>
 
@@ -248,7 +248,7 @@ maxLength32
 
 <summary>
 
-configuration: optional object {target, value }
+configuration: optional object { target, value }
 
 The configuration object for the current rule.
 
@@ -282,7 +282,7 @@ maxLength1024
 
 <summary>
 
-mode: optional "block"or "challenge"or "js\_challenge"or "managed\_challenge"
+mode: optional "block" or "challenge" or "js\_challenge" or "managed\_challenge"
 
 The action to apply to a matched request.
 
@@ -326,7 +326,7 @@ When true, indicates that the rule is currently paused.
 
 <summary>
 
-UARuleUpdateResponse object {id, configuration, description, 2 more }
+UARuleUpdateResponse object { id, configuration, description, 2 more }
 
 </summary>
 
@@ -342,7 +342,7 @@ maxLength32
 
 <summary>
 
-configuration: optional object {target, value }
+configuration: optional object { target, value }
 
 The configuration object for the current rule.
 
@@ -376,7 +376,7 @@ maxLength1024
 
 <summary>
 
-mode: optional "block"or "challenge"or "js\_challenge"or "managed\_challenge"
+mode: optional "block" or "challenge" or "js\_challenge" or "managed\_challenge"
 
 The action to apply to a matched request.
 
@@ -420,7 +420,7 @@ When true, indicates that the rule is currently paused.
 
 <summary>
 
-UARuleDeleteResponse object {id, configuration, description, 2 more }
+UARuleDeleteResponse object { id, configuration, description, 2 more }
 
 </summary>
 
@@ -436,7 +436,7 @@ maxLength32
 
 <summary>
 
-configuration: optional object {target, value }
+configuration: optional object { target, value }
 
 The configuration object for the current rule.
 
@@ -470,7 +470,7 @@ maxLength1024
 
 <summary>
 
-mode: optional "block"or "challenge"or "js\_challenge"or "managed\_challenge"
+mode: optional "block" or "challenge" or "js\_challenge" or "managed\_challenge"
 
 The action to apply to a matched request.
 

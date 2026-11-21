@@ -72,7 +72,7 @@ account\_id: string
 
 <summary>
 
-config: object {tls\_sockaddr, sha256 }
+config: object { tls\_sockaddr, sha256 }
 
 The configuration object containing information for the WARP client to detect the managed network.
 
@@ -134,7 +134,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -176,7 +176,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -204,7 +204,7 @@ result: <a href="https://developers.cloudflare.com/api/resources/zero_trust#(res
 
 <summary>
 
-config: optional object {tls\_sockaddr, sha256 }
+config: optional object { tls\_sockaddr, sha256 }
 
 The configuration object containing information for the WARP client to detect the managed network.
 

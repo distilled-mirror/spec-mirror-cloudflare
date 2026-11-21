@@ -48,7 +48,7 @@ tenant\_id: string
 
 <summary>
 
-account\_pubname: optional object {contains, endsWith, startsWith }
+account\_pubname: optional object { contains, endsWith, startsWith }
 
 </summary>
 
@@ -78,7 +78,7 @@ startsWith: optional string
 
 <summary>
 
-direction: optional "asc"or "desc"
+direction: optional "asc" or "desc"
 
 Sort direction for the order\_by field. Valid values: <code>asc</code>, <code>desc</code>. Defaults to <code>asc</code> when order\_by is specified.
 
@@ -108,7 +108,7 @@ Whether to calculate and return the exact `result_info.total_size` for cursor pa
 
 <summary>
 
-name: optional object {contains, endsWith, startsWith }
+name: optional object { contains, endsWith, startsWith }
 
 </summary>
 
@@ -162,7 +162,7 @@ Parameters used to filter the retrieved list must remain in subsequent requests 
 
 <summary>
 
-status: optional "active"or "deleted"
+status: optional "active" or "deleted"
 
 Filter accounts by lifecycle status. Defaults to <code>active</code>.
 
@@ -214,7 +214,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -234,7 +234,7 @@ pointer: optional string
 
 <summary>
 
-result: array of object {account\_pubname, account\_tag, account\_type, 2 more }
+result: array of object { account\_pubname, account\_tag, account\_type, 2 more }
 
 </summary>
 
@@ -250,7 +250,7 @@ account\_tag: string
 
 <summary>
 
-account\_type: "standard"or "enterprise"
+account\_type: "standard" or "enterprise"
 
 </summary>
 
@@ -278,7 +278,7 @@ formatdate-time
 
 <summary>
 
-settings: object {access\_approval\_expiry, api\_access\_enabled, enforce\_two\_factor, use\_account\_custom\_ns\_by\_default }
+settings: object { access\_approval\_expiry, api\_access\_enabled, enforce\_two\_factor, use\_account\_custom\_ns\_by\_default }
 
 </summary>
 
@@ -312,7 +312,7 @@ use\_account\_custom\_ns\_by\_default: boolean
 
 <summary>
 
-result\_info: object {next\_page\_token, total\_size }
+result\_info: object { next\_page\_token, total\_size }
 
 </summary>
 

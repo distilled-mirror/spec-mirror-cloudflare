@@ -46,7 +46,7 @@ DELETE/accounts/{account\_id}/cws/rego-metadata/{rego\_metadata\_id}
 
 <summary>
 
-RegoMetadata object {id, created\_at, data, 3 more }
+RegoMetadata object { id, created\_at, data, 3 more }
 
 </summary>
 
@@ -102,7 +102,7 @@ formatdate-time
 
 <summary>
 
-RegoMetadataDeleteResponse object {id }
+RegoMetadataDeleteResponse object { id }
 
 </summary>
 

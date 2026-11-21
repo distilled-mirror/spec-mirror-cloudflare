@@ -36,7 +36,7 @@ PUT/zones/{zone\_id}/web3/hostnames/{identifier}/ipfs\_universal\_path/content\_
 
 <summary>
 
-ContentList object {action }
+ContentList object { action }
 
 </summary>
 
@@ -78,7 +78,7 @@ DELETE/zones/{zone\_id}/web3/hostnames/{identifier}/ipfs\_universal\_path/conten
 
 <summary>
 
-EntryListResponse object {entries }
+EntryListResponse object { entries }
 
 </summary>
 
@@ -86,7 +86,7 @@ EntryListResponse object {entries }
 
 <summary>
 
-entries: optional array of object {id, content, created\_on, 3 more }
+entries: optional array of object { id, content, created\_on, 3 more }
 
 Provides content list entries.
 
@@ -132,7 +132,7 @@ formatdate-time
 
 <summary>
 
-type: optional "cid"or "content\_path"
+type: optional "cid" or "content\_path"
 
 Specify the type of content list entry to block.
 
@@ -164,7 +164,7 @@ One of the following:
 
 <summary>
 
-EntryGetResponse object {id, content, created\_on, 3 more }
+EntryGetResponse object { id, content, created\_on, 3 more }
 
 Specify a content list entry to block.
 
@@ -210,7 +210,7 @@ formatdate-time
 
 <summary>
 
-type: optional "cid"or "content\_path"
+type: optional "cid" or "content\_path"
 
 Specify the type of content list entry to block.
 
@@ -238,7 +238,7 @@ One of the following:
 
 <summary>
 
-EntryCreateResponse object {id, content, created\_on, 3 more }
+EntryCreateResponse object { id, content, created\_on, 3 more }
 
 Specify a content list entry to block.
 
@@ -284,7 +284,7 @@ formatdate-time
 
 <summary>
 
-type: optional "cid"or "content\_path"
+type: optional "cid" or "content\_path"
 
 Specify the type of content list entry to block.
 
@@ -312,7 +312,7 @@ One of the following:
 
 <summary>
 
-EntryUpdateResponse object {id, content, created\_on, 3 more }
+EntryUpdateResponse object { id, content, created\_on, 3 more }
 
 Specify a content list entry to block.
 
@@ -358,7 +358,7 @@ formatdate-time
 
 <summary>
 
-type: optional "cid"or "content\_path"
+type: optional "cid" or "content\_path"
 
 Specify the type of content list entry to block.
 
@@ -386,7 +386,7 @@ One of the following:
 
 <summary>
 
-EntryDeleteResponse object {id }
+EntryDeleteResponse object { id }
 
 </summary>
 

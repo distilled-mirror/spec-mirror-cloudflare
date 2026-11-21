@@ -74,7 +74,7 @@ maxLength32
 
 <summary>
 
-errors: array of object {message, code }
+errors: array of object { message, code }
 
 </summary>
 
@@ -96,7 +96,7 @@ minimum1000
 
 <summary>
 
-messages: array of object {message, code }
+messages: array of object { message, code }
 
 </summary>
 
@@ -124,7 +124,7 @@ Whether the API call was successful
 
 <summary>
 
-result: optional array of object {id, created\_at, end\_time, 3 more }
+result: optional array of object { id, created\_at, end\_time, 3 more }
 
 </summary>
 

@@ -98,7 +98,7 @@ limit: optional number
 
 <summary>
 
-result: object {count, items, cursor }
+result: object { count, items, cursor }
 
 </summary>
 
@@ -110,7 +110,7 @@ count: number
 
 <summary>
 
-items: array of object {a, t }
+items: array of object { a, t }
 
 </summary>
 
@@ -146,7 +146,7 @@ success: boolean
 
 <summary>
 
-errors: optional array of object {code, message }
+errors: optional array of object { code, message }
 
 </summary>
 
@@ -166,7 +166,7 @@ message: string
 
 <summary>
 
-messages: optional array of object {code, message }
+messages: optional array of object { code, message }
 
 </summary>
 

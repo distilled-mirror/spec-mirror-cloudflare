@@ -84,7 +84,7 @@ maxLength32
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -106,7 +106,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -126,7 +126,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -148,7 +148,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -212,7 +212,7 @@ Determines if Cloudflare advertises a BYOIP BGP prefix even when there is no mat
 
 <summary>
 
-bgp\_signal\_opts: optional object {enabled, modified\_at }
+bgp\_signal\_opts: optional object { enabled, modified\_at }
 
 </summary>
 
@@ -256,7 +256,7 @@ formatdate-time
 
 <summary>
 
-on\_demand: optional object {advertised, advertised\_modified\_at, on\_demand\_enabled, on\_demand\_locked }
+on\_demand: optional object { advertised, advertised\_modified\_at, on\_demand\_enabled, on\_demand\_locked }
 
 </summary>
 

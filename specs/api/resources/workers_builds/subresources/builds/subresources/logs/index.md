@@ -30,7 +30,7 @@ GET/accounts/{account\_id}/builds/builds/{build\_uuid}/logs
 
 <summary>
 
-LogGetResponse = object {cursor, lines, truncated } or object {cursor, lines, truncated }
+LogGetResponse = object { cursor, lines, truncated } or object { cursor, lines, truncated }
 
 </summary>
 
@@ -40,7 +40,7 @@ One of the following:
 
 <summary>
 
-object {cursor, lines, truncated }
+object { cursor, lines, truncated }
 
 </summary>
 
@@ -54,7 +54,7 @@ Pagination cursor for log retrieval.
 
 <summary>
 
-lines: optional array of array of numberor string
+lines: optional array of array of number or string
 
 </summary>
 
@@ -88,7 +88,7 @@ truncated: optional boolean
 
 <summary>
 
-object {cursor, lines, truncated }
+object { cursor, lines, truncated }
 
 </summary>
 
@@ -102,7 +102,7 @@ Pagination cursor for log retrieval.
 
 <summary>
 
-lines: optional array of array of numberor string
+lines: optional array of array of number or string
 
 </summary>
 

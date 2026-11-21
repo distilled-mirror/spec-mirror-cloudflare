@@ -202,7 +202,7 @@ Billing state.
 
 <summary>
 
-type: optional "CREDIT\_CARD"or "PAYPAL"or "CASHAPP"or 3 more
+type: optional "CREDIT\_CARD" or "PAYPAL" or "CASHAPP" or 3 more
 
 The payment method type.
 
@@ -272,7 +272,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -314,7 +314,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -334,7 +334,7 @@ pointer: optional string
 
 <summary>
 
-result: object {id, address, address2, 22 more }
+result: object { id, address, address2, 22 more }
 
 </summary>
 
@@ -480,7 +480,7 @@ Billing state.
 
 <summary>
 
-type: optional "CREDIT\_CARD"or "PAYPAL"or "CASHAPP"or 3 more
+type: optional "CREDIT\_CARD" or "PAYPAL" or "CASHAPP" or 3 more
 
 The payment method type.
 

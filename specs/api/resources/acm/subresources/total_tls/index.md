@@ -36,7 +36,7 @@ POST/zones/{zone\_id}/acm/total\_tls
 
 <summary>
 
-CertificateAuthority = "google"or "lets\_encrypt"or "ssl\_com"
+CertificateAuthority = "google" or "lets\_encrypt" or "ssl\_com"
 
 The Certificate Authority that Total TLS certificates will be issued through. Not returned in responses when Total TLS is disabled.
 
@@ -64,7 +64,7 @@ One of the following:
 
 <summary>
 
-TotalTLSGetResponse object {certificate\_authority, enabled, validity\_period }
+TotalTLSGetResponse object { certificate\_authority, enabled, validity\_period }
 
 </summary>
 
@@ -94,7 +94,7 @@ The validity period in days for the certificates ordered via Total TLS. Not retu
 
 <summary>
 
-TotalTLSUpdateResponse object {certificate\_authority, enabled, validity\_period }
+TotalTLSUpdateResponse object { certificate\_authority, enabled, validity\_period }
 
 </summary>
 
@@ -124,7 +124,7 @@ The validity period in days for the certificates ordered via Total TLS. Not retu
 
 <summary>
 
-TotalTLSEditResponse object {certificate\_authority, enabled, validity\_period }
+TotalTLSEditResponse object { certificate\_authority, enabled, validity\_period }
 
 </summary>
 

@@ -46,7 +46,7 @@ DELETE/accounts/{account\_id}/zt\_risk\_scoring/integrations/{integration\_id}
 
 <summary>
 
-IntegrationListResponse object {id, account\_tag, active, 5 more }
+IntegrationListResponse object { id, account\_tag, active, 5 more }
 
 </summary>
 
@@ -108,7 +108,7 @@ The URL for the Shared Signals Framework configuration, e.g. “/.well-known/sse
 
 <summary>
 
-IntegrationGetResponse object {id, account\_tag, active, 5 more }
+IntegrationGetResponse object { id, account\_tag, active, 5 more }
 
 </summary>
 
@@ -170,7 +170,7 @@ The URL for the Shared Signals Framework configuration, e.g. “/.well-known/sse
 
 <summary>
 
-IntegrationCreateResponse object {id, account\_tag, active, 5 more }
+IntegrationCreateResponse object { id, account\_tag, active, 5 more }
 
 </summary>
 
@@ -232,7 +232,7 @@ The URL for the Shared Signals Framework configuration, e.g. “/.well-known/sse
 
 <summary>
 
-IntegrationUpdateResponse object {id, account\_tag, active, 5 more }
+IntegrationUpdateResponse object { id, account\_tag, active, 5 more }
 
 </summary>
 
@@ -306,7 +306,7 @@ GET/accounts/{account\_id}/zt\_risk\_scoring/integrations/reference\_id/{referen
 
 <summary>
 
-ReferenceGetResponse object {id, account\_tag, active, 5 more }
+ReferenceGetResponse object { id, account\_tag, active, 5 more }
 
 </summary>
 

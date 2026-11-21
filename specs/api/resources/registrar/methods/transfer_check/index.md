@@ -89,7 +89,7 @@ maxLength32
 
 <summary>
 
-domains: array of object {domain\_name, auth\_code }
+domains: array of object { domain\_name, auth\_code }
 
 List of domain objects to evaluate for transfer eligibility.
 
@@ -119,7 +119,7 @@ formatbyte
 
 <summary>
 
-errors: array of object {code, message, source }
+errors: array of object { code, message, source }
 
 </summary>
 
@@ -137,7 +137,7 @@ message: string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 Location of the invalid value that caused the error.
 
@@ -161,7 +161,7 @@ JSON Pointer to the invalid or missing request value.
 
 <summary>
 
-messages: array of object {code, message, source }
+messages: array of object { code, message, source }
 
 </summary>
 
@@ -179,7 +179,7 @@ message: string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 Location of the invalid value that caused the error.
 
@@ -203,7 +203,7 @@ JSON Pointer to the invalid or missing request value.
 
 <summary>
 
-result: object {domains }
+result: object { domains }
 
 Contains the transfer eligibility results.
 
@@ -213,7 +213,7 @@ Contains the transfer eligibility results.
 
 <summary>
 
-domains: map\[object {pricing, transferable, name, reasons } or object {transferable, name, pricing, reasons } ]
+domains: map\[object { pricing, transferable, name, reasons } or object { transferable, name, pricing, reasons } ]
 
 Maps domain names to transfer eligibility results. Each value contains <code>name</code>, <code>transferable</code>, and <code>reasons</code>.
 
@@ -225,7 +225,7 @@ One of the following:
 
 <summary>
 
-TransferableResult object {pricing, transferable, name, reasons }
+TransferableResult object { pricing, transferable, name, reasons }
 
 </summary>
 
@@ -233,7 +233,7 @@ TransferableResult object {pricing, transferable, name, reasons }
 
 <summary>
 
-pricing: object {currency, renewal\_cost, transfer\_cost }
+pricing: object { currency, renewal\_cost, transfer\_cost }
 
 Provides annual pricing information for a given domain. The API returns all per-year prices as strings to preserve decimal precision.
 
@@ -279,7 +279,7 @@ The check evaluates this domain name.
 
 <summary>
 
-reasons: optional array of object {code }
+reasons: optional array of object { code }
 
 </summary>
 
@@ -287,7 +287,7 @@ reasons: optional array of object {code }
 
 <summary>
 
-code: "extension\_not\_supported\_via\_api"or "extension\_not\_supported"or "domain\_premium"or 14 more
+code: "extension\_not\_supported\_via\_api" or "extension\_not\_supported" or "domain\_premium" or 14 more
 
 Transfer eligibility reason code.
 
@@ -397,7 +397,7 @@ One of the following:
 
 <summary>
 
-NonTransferableResult object {transferable, name, pricing, reasons }
+NonTransferableResult object { transferable, name, pricing, reasons }
 
 </summary>
 
@@ -415,7 +415,7 @@ The check evaluates this domain name.
 
 <summary>
 
-pricing: optional object {currency, renewal\_cost, transfer\_cost }
+pricing: optional object { currency, renewal\_cost, transfer\_cost }
 
 Provides annual pricing information for a given domain. The API returns all per-year prices as strings to preserve decimal precision.
 
@@ -451,7 +451,7 @@ The first-year cost to transfer this domain.
 
 <summary>
 
-reasons: optional array of object {code }
+reasons: optional array of object { code }
 
 </summary>
 
@@ -459,7 +459,7 @@ reasons: optional array of object {code }
 
 <summary>
 
-code: "extension\_not\_supported\_via\_api"or "extension\_not\_supported"or "domain\_premium"or 14 more
+code: "extension\_not\_supported\_via\_api" or "extension\_not\_supported" or "domain\_premium" or 14 more
 
 Transfer eligibility reason code.
 

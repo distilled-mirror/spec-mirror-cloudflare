@@ -36,7 +36,7 @@ POST/accounts/{account\_id}/dlp/email/account\_mapping
 
 <summary>
 
-AccountMappingGetResponse object {addin\_identifier\_token, auth\_requirements }
+AccountMappingGetResponse object { addin\_identifier\_token, auth\_requirements }
 
 </summary>
 
@@ -50,7 +50,7 @@ formatuuid
 
 <summary>
 
-auth\_requirements: object {allowed\_microsoft\_organizations, type } or object {type }
+auth\_requirements: object { allowed\_microsoft\_organizations, type } or object { type }
 
 </summary>
 
@@ -60,7 +60,7 @@ One of the following:
 
 <summary>
 
-object {allowed\_microsoft\_organizations, type }
+object { allowed\_microsoft\_organizations, type }
 
 </summary>
 
@@ -80,7 +80,7 @@ type: "Org"
 
 <summary>
 
-Type object {type }
+Type object { type }
 
 </summary>
 
@@ -104,7 +104,7 @@ type: "NoAuth"
 
 <summary>
 
-AccountMappingCreateResponse object {addin\_identifier\_token, auth\_requirements }
+AccountMappingCreateResponse object { addin\_identifier\_token, auth\_requirements }
 
 </summary>
 
@@ -118,7 +118,7 @@ formatuuid
 
 <summary>
 
-auth\_requirements: object {allowed\_microsoft\_organizations, type } or object {type }
+auth\_requirements: object { allowed\_microsoft\_organizations, type } or object { type }
 
 </summary>
 
@@ -128,7 +128,7 @@ One of the following:
 
 <summary>
 
-object {allowed\_microsoft\_organizations, type }
+object { allowed\_microsoft\_organizations, type }
 
 </summary>
 
@@ -148,7 +148,7 @@ type: "Org"
 
 <summary>
 
-Type object {type }
+Type object { type }
 
 </summary>
 

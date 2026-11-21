@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 DELETE/zones/{zone\_id}/web3/hostnames/{identifier}
 
-Delete Web3 Hostname
+Deletes a Web3 hostname and its configuration from the zone.
 
 ##### Security
 
@@ -104,7 +104,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -146,7 +146,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -166,7 +166,7 @@ pointer: optional string
 
 <summary>
 
-result: object {id }
+result: object { id }
 
 </summary>
 

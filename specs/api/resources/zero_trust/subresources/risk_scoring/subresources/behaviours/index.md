@@ -34,7 +34,7 @@ PUT/accounts/{account\_id}/zt\_risk\_scoring/behaviors
 
 <summary>
 
-BehaviourGetResponse object {behaviors }
+BehaviourGetResponse object { behaviors }
 
 </summary>
 
@@ -42,7 +42,7 @@ BehaviourGetResponse object {behaviors }
 
 <summary>
 
-behaviors: map\[object {description, enabled, name, risk\_level } ]
+behaviors: map\[object { description, enabled, name, risk\_level } ]
 
 </summary>
 
@@ -62,7 +62,7 @@ name: string
 
 <summary>
 
-risk\_level: "info"or "low"or "medium"or "high"
+risk\_level: "info" or "low" or "medium" or "high"
 
 </summary>
 
@@ -100,7 +100,7 @@ One of the following:
 
 <summary>
 
-BehaviourUpdateResponse object {behaviors }
+BehaviourUpdateResponse object { behaviors }
 
 </summary>
 
@@ -108,7 +108,7 @@ BehaviourUpdateResponse object {behaviors }
 
 <summary>
 
-behaviors: map\[object {enabled, risk\_level } ]
+behaviors: map\[object { enabled, risk\_level } ]
 
 </summary>
 
@@ -120,7 +120,7 @@ enabled: boolean
 
 <summary>
 
-risk\_level: "info"or "low"or "medium"or "high"
+risk\_level: "info" or "low" or "medium" or "high"
 
 </summary>
 

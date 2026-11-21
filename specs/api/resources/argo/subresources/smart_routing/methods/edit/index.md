@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Zone Settings Write`
+`Zone Settings Write``Workers Routes Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -74,7 +74,7 @@ maxLength32
 
 <summary>
 
-value: "on"or "off"
+value: "on" or "off"
 
 Specifies the enablement value of Argo Smart Routing.
 
@@ -122,7 +122,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -164,7 +164,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -184,7 +184,7 @@ pointer: optional string
 
 <summary>
 
-result: object {id, editable, value, modified\_on }
+result: object { id, editable, value, modified\_on }
 
 </summary>
 
@@ -204,7 +204,7 @@ Specifies if the setting is editable.
 
 <summary>
 
-value: "on"or "off"
+value: "on" or "off"
 
 Specifies the enablement value of Argo Smart Routing.
 

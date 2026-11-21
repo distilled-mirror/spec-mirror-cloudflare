@@ -58,7 +58,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`AI Gateway Write`
+`AI Search Index Engine``Auto Rag Write Run Engine``AI Gateway Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -80,7 +80,7 @@ Top-up identifier to check status for.
 
 <summary>
 
-errors: array of object {code, message }
+errors: array of object { code, message }
 
 </summary>
 
@@ -100,7 +100,7 @@ message: string
 
 <summary>
 
-messages: array of object {code, message }
+messages: array of object { code, message }
 
 </summary>
 
@@ -120,7 +120,7 @@ message: string
 
 <summary>
 
-result: object {payment\_intent\_id, status }
+result: object { payment\_intent\_id, status }
 
 </summary>
 
@@ -134,7 +134,7 @@ Top-up identifier from the request.
 
 <summary>
 
-status: "completed"or "pending"
+status: "completed" or "pending"
 
 <code>completed</code> once the top-up payment is processed and its credits are added to the balance, <code>pending</code> until then.
 
@@ -166,7 +166,7 @@ success: true
 
 <summary>
 
-result\_info: optional object {has\_more, page, per\_page, total\_count }
+result\_info: optional object { has\_more, page, per\_page, total\_count }
 
 </summary>
 

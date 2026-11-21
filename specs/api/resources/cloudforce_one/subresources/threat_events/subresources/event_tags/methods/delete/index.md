@@ -58,7 +58,7 @@ Event UUID.
 
 <summary>
 
-result: object {success }
+result: object { success }
 
 </summary>
 

@@ -82,7 +82,7 @@ maxLength256
 
 <summary>
 
-direction: optional "asc"or "desc"
+direction: optional "asc" or "desc"
 
 Sort direction for results. Defaults to ascending order.
 
@@ -122,7 +122,7 @@ minimum1
 
 <summary>
 
-sort\_by: optional "name"or "created\_at"or "updated\_at"
+sort\_by: optional "name" or "created\_at" or "updated\_at"
 
 Column to sort results by. Defaults to <code>name</code> when omitted.
 
@@ -152,7 +152,7 @@ One of the following:
 
 <summary>
 
-errors: array of object {code, message, source }
+errors: array of object { code, message, source }
 
 </summary>
 
@@ -170,7 +170,7 @@ message: string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 Location of the invalid value that caused the error.
 
@@ -194,7 +194,7 @@ JSON Pointer to the invalid or missing request value.
 
 <summary>
 
-messages: array of object {code, message, source }
+messages: array of object { code, message, source }
 
 </summary>
 
@@ -212,7 +212,7 @@ message: string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 Location of the invalid value that caused the error.
 
@@ -236,7 +236,7 @@ JSON Pointer to the invalid or missing request value.
 
 <summary>
 
-result: array of object {metadata, registration\_schema, transfer\_schema }
+result: array of object { metadata, registration\_schema, transfer\_schema }
 
 </summary>
 
@@ -244,7 +244,7 @@ result: array of object {metadata, registration\_schema, transfer\_schema }
 
 <summary>
 
-metadata: object {name, tld }
+metadata: object { name, tld }
 
 Extension metadata.
 
@@ -292,7 +292,7 @@ Whether the API call was successful.
 
 <summary>
 
-result\_info: optional object {count, cursor, per\_page }
+result\_info: optional object { count, cursor, per\_page }
 
 Cursor-based pagination metadata.
 

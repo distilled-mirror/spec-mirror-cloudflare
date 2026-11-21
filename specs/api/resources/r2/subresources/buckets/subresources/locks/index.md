@@ -34,7 +34,7 @@ PUT/accounts/{account\_id}/r2/buckets/{bucket\_name}/lock
 
 <summary>
 
-LockGetResponse object {rules }
+LockGetResponse object { rules }
 
 </summary>
 
@@ -42,7 +42,7 @@ LockGetResponse object {rules }
 
 <summary>
 
-rules: optional array of object {id, condition, enabled, prefix }
+rules: optional array of object { id, condition, enabled, prefix }
 
 </summary>
 
@@ -56,7 +56,7 @@ Unique identifier for this rule.
 
 <summary>
 
-condition: object {maxAgeSeconds, type } or object {date, type } or object {type }
+condition: object { maxAgeSeconds, type } or object { date, type } or object { type }
 
 Condition to apply a lock rule to an object for how long in seconds.
 
@@ -68,7 +68,7 @@ One of the following:
 
 <summary>
 
-R2LockRuleAgeCondition object {maxAgeSeconds, type }
+R2LockRuleAgeCondition object { maxAgeSeconds, type }
 
 Condition to apply a lock rule to an object for how long in seconds.
 
@@ -90,7 +90,7 @@ type: "Age"
 
 <summary>
 
-R2LockRuleDateCondition object {date, type }
+R2LockRuleDateCondition object { date, type }
 
 Condition to apply a lock rule to an object until a specific date.
 
@@ -114,7 +114,7 @@ type: "Date"
 
 <summary>
 
-R2LockRuleIndefiniteCondition object {type }
+R2LockRuleIndefiniteCondition object { type }
 
 Condition to apply a lock rule indefinitely.
 

@@ -60,7 +60,7 @@ The ID of the resource to remove tags from.
 
 <summary>
 
-resource\_type: "access\_application"or "access\_group"or "access\_service\_token"or 33 more
+resource\_type: "access\_application" or "access\_group" or "access\_service\_token" or 33 more
 
 The type of the resource.
 

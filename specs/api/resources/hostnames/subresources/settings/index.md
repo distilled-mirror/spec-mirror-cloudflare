@@ -42,7 +42,7 @@ DELETE/zones/{zone\_id}/hostnames/settings/{setting\_id}/{hostname}
 
 <summary>
 
-Setting object {created\_at, hostname, status, 2 more }
+Setting object { created\_at, hostname, status, 2 more }
 
 </summary>
 
@@ -92,7 +92,7 @@ The TLS setting value. The type depends on the <code>setting_id</code> used in t
 
 <summary>
 
-SettingValue = "1.0"or "1.1"or "1.2"or 3 moreor array of string
+SettingValue = "1.0" or "1.1" or "1.2" or 3 more or array of string
 
 The TLS setting value. The type depends on the <code>setting_id</code> used in the request path:
 
@@ -108,7 +108,7 @@ One of the following:
 
 <summary>
 
-"1.0"or "1.1"or "1.2"or 3 more
+"1.0" or "1.1" or "1.2" or 3 more
 
 </summary>
 
@@ -156,7 +156,7 @@ Used when <code>setting_id</code> is <code>ciphers</code>. An array of allowed c
 
 <summary>
 
-TLSListResponse object {created\_at, hostname, status, 2 more }
+TLSListResponse object { created\_at, hostname, status, 2 more }
 
 </summary>
 
@@ -206,7 +206,7 @@ The TLS setting value. The type depends on the <code>setting_id</code> used in t
 
 <summary>
 
-TLSDeleteResponse object {created\_at, hostname, status, 2 more }
+TLSDeleteResponse object { created\_at, hostname, status, 2 more }
 
 </summary>
 

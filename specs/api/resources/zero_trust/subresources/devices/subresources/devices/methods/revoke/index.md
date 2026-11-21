@@ -56,7 +56,7 @@ device\_id: string
 
 <summary>
 
-errors: array of object {code, message }
+errors: array of object { code, message }
 
 </summary>
 
@@ -76,7 +76,7 @@ message: string
 
 <summary>
 
-messages: array of object {code, message }
+messages: array of object { code, message }
 
 </summary>
 

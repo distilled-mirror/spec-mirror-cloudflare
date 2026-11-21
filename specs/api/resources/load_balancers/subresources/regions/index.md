@@ -32,7 +32,7 @@ GET/accounts/{account\_id}/load\_balancers/regions/{region\_id}
 
 <summary>
 
-RegionListResponse = unknownor string
+RegionListResponse = unknown or string
 
 </summary>
 
@@ -54,7 +54,7 @@ string
 
 <summary>
 
-RegionGetResponse = unknownor string
+RegionGetResponse = unknown or string
 
 A list of countries and subdivisions mapped to a region.
 

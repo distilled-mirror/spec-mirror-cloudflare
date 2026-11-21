@@ -50,7 +50,7 @@ POST/accounts/{account\_id}/email-security/settings/content\_policies/batch
 
 <summary>
 
-ContentPolicyListResponse object {id, created\_at, enabled, 6 more }
+ContentPolicyListResponse object { id, created\_at, enabled, 6 more }
 
 A content policy pattern that matches against the subject or body of an email.
 
@@ -122,7 +122,7 @@ minLength1
 
 <summary>
 
-targets: optional array of "SUBJECT"or "BODY"
+targets: optional array of "SUBJECT" or "BODY"
 
 Parts of the email the pattern is matched against.
 
@@ -150,7 +150,7 @@ One of the following:
 
 <summary>
 
-ContentPolicyGetResponse object {id, created\_at, enabled, 6 more }
+ContentPolicyGetResponse object { id, created\_at, enabled, 6 more }
 
 A content policy pattern that matches against the subject or body of an email.
 
@@ -222,7 +222,7 @@ minLength1
 
 <summary>
 
-targets: optional array of "SUBJECT"or "BODY"
+targets: optional array of "SUBJECT" or "BODY"
 
 Parts of the email the pattern is matched against.
 
@@ -250,7 +250,7 @@ One of the following:
 
 <summary>
 
-ContentPolicyCreateResponse object {id, created\_at, enabled, 6 more }
+ContentPolicyCreateResponse object { id, created\_at, enabled, 6 more }
 
 A content policy pattern that matches against the subject or body of an email.
 
@@ -322,7 +322,7 @@ minLength1
 
 <summary>
 
-targets: optional array of "SUBJECT"or "BODY"
+targets: optional array of "SUBJECT" or "BODY"
 
 Parts of the email the pattern is matched against.
 
@@ -350,7 +350,7 @@ One of the following:
 
 <summary>
 
-ContentPolicyEditResponse object {id, created\_at, enabled, 6 more }
+ContentPolicyEditResponse object { id, created\_at, enabled, 6 more }
 
 A content policy pattern that matches against the subject or body of an email.
 
@@ -422,7 +422,7 @@ minLength1
 
 <summary>
 
-targets: optional array of "SUBJECT"or "BODY"
+targets: optional array of "SUBJECT" or "BODY"
 
 Parts of the email the pattern is matched against.
 
@@ -450,7 +450,7 @@ One of the following:
 
 <summary>
 
-ContentPolicyDeleteResponse object {id }
+ContentPolicyDeleteResponse object { id }
 
 </summary>
 
@@ -470,7 +470,7 @@ formatuuid
 
 <summary>
 
-ContentPolicyBatchResponse object {deletes, patches, posts, puts }
+ContentPolicyBatchResponse object { deletes, patches, posts, puts }
 
 </summary>
 
@@ -478,7 +478,7 @@ ContentPolicyBatchResponse object {deletes, patches, posts, puts }
 
 <summary>
 
-deletes: optional array of object {id }
+deletes: optional array of object { id }
 
 </summary>
 
@@ -498,7 +498,7 @@ formatuuid
 
 <summary>
 
-patches: optional array of object {id, created\_at, enabled, 6 more }
+patches: optional array of object { id, created\_at, enabled, 6 more }
 
 </summary>
 
@@ -568,7 +568,7 @@ minLength1
 
 <summary>
 
-targets: optional array of "SUBJECT"or "BODY"
+targets: optional array of "SUBJECT" or "BODY"
 
 Parts of the email the pattern is matched against.
 
@@ -596,7 +596,7 @@ One of the following:
 
 <summary>
 
-posts: optional array of object {id, created\_at, enabled, 6 more }
+posts: optional array of object { id, created\_at, enabled, 6 more }
 
 </summary>
 
@@ -666,7 +666,7 @@ minLength1
 
 <summary>
 
-targets: optional array of "SUBJECT"or "BODY"
+targets: optional array of "SUBJECT" or "BODY"
 
 Parts of the email the pattern is matched against.
 
@@ -694,7 +694,7 @@ One of the following:
 
 <summary>
 
-puts: optional array of object {id, created\_at, enabled, 6 more }
+puts: optional array of object { id, created\_at, enabled, 6 more }
 
 </summary>
 
@@ -764,7 +764,7 @@ minLength1
 
 <summary>
 
-targets: optional array of "SUBJECT"or "BODY"
+targets: optional array of "SUBJECT" or "BODY"
 
 Parts of the email the pattern is matched against.
 

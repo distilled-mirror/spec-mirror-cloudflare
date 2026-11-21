@@ -66,7 +66,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 <summary>
 
-direction: optional "asc"or "desc"
+direction: optional "asc" or "desc"
 
 Direction to order organizations.
 
@@ -90,7 +90,7 @@ One of the following:
 
 <summary>
 
-match: optional "any"or "all"
+match: optional "any" or "all"
 
 Whether to match all search requirements or at least one (any).
 
@@ -122,7 +122,7 @@ maxLength100
 
 <summary>
 
-order: optional "id"or "name"or "status"
+order: optional "id" or "name" or "status"
 
 Field to order organizations by.
 
@@ -168,7 +168,7 @@ minimum5
 
 <summary>
 
-status: optional "member"or "invited"
+status: optional "member" or "invited"
 
 Whether the user is a member of the organization or has an inivitation pending.
 
@@ -194,7 +194,7 @@ One of the following:
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -216,7 +216,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -236,7 +236,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -258,7 +258,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -350,7 +350,7 @@ One of the following:
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object { count, page, per\_page, total\_count }
 
 </summary>
 

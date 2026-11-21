@@ -28,7 +28,7 @@ POST/zones/{zone\_id}/waiting\_rooms/preview
 
 <summary>
 
-PagePreviewResponse object {preview\_url }
+PagePreviewResponse object { preview\_url }
 
 </summary>
 

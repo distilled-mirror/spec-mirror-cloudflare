@@ -96,7 +96,7 @@ minimum5
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -118,7 +118,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -138,7 +138,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -160,7 +160,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -234,7 +234,7 @@ Configures cookie attributes for the waiting room cookie. This encrypted cookie 
 
 <summary>
 
-samesite: optional "auto"or "lax"or "none"or "strict"
+samesite: optional "auto" or "lax" or "none" or "strict"
 
 Configures the SameSite attribute on the waiting room cookie. Value <code>auto</code> will be translated to <code>lax</code> or <code>none</code> depending if **Always Use HTTPS** is enabled. Note that when using value <code>none</code>, the secure attribute cannot be set to <code>never</code>.
 
@@ -266,7 +266,7 @@ One of the following:
 
 <summary>
 
-secure: optional "auto"or "always"or "never"
+secure: optional "auto" or "always" or "never"
 
 Configures the Secure attribute on the waiting room cookie. Value <code>always</code> indicates that the Secure attribute will be set in the Set-Cookie header, <code>never</code> indicates that the Secure attribute will not be set, and <code>auto</code> will set the Secure attribute depending if **Always Use HTTPS** is enabled.
 
@@ -325,7 +325,7 @@ To view the full list of variables, look at the <code>cfWaitingRoom</code> objec
 
 <summary>
 
-default\_template\_language: optional "en-US"or "es-ES"or "de-DE"or 36 more
+default\_template\_language: optional "en-US" or "es-ES" or "de-DE" or 36 more
 
 The language of the default page template. If no default\_template\_language is provided, then <code>en-US</code> (English) will be used.
 
@@ -670,7 +670,7 @@ If queue\_all is <code>true</code>, all the traffic that is coming to a route wi
 
 <summary>
 
-queueing\_method: optional "fifo"or "random"or "passthrough"or "reject"
+queueing\_method: optional "fifo" or "random" or "passthrough" or "reject"
 
 Sets the queueing method used by the waiting room. Changing this parameter from the **default** queueing method is only available for the Waiting Room Advanced subscription. Regardless of the queueing method, if <code>queue_all</code> is enabled or an event is prequeueing, users in the waiting room will not be accepted to the origin. These users will always see a waiting room page that refreshes automatically. The valid queueing methods are:
 
@@ -707,7 +707,7 @@ One of the following:
 
 <summary>
 
-queueing\_status\_code: optional 200or 202or 429
+queueing\_status\_code: optional 200 or 202 or 429
 
 HTTP status code returned to a user while in the queue.
 
@@ -761,7 +761,7 @@ minimum200
 
 <summary>
 
-turnstile\_action: optional "log"or "infinite\_queue"
+turnstile\_action: optional "log" or "infinite\_queue"
 
 Which action to take when a bot is detected using Turnstile. <code>log</code> will have no impact on queueing behavior, simply keeping track of how many bots are detected in Waiting Room Analytics. <code>infinite_queue</code> will send bots to a false queueing state, where they will never reach your origin. <code>infinite_queue</code> requires Advanced Waiting Room.
 
@@ -785,7 +785,7 @@ One of the following:
 
 <summary>
 
-turnstile\_mode: optional "off"or "invisible"or "visible\_non\_interactive"or "visible\_managed"
+turnstile\_mode: optional "off" or "invisible" or "visible\_non\_interactive" or "visible\_managed"
 
 Which Turnstile widget type to use for detecting bot traffic. See <a href="https://developers.cloudflare.com/turnstile/concepts/widget/#widget-types">the Turnstile documentation</a> for the definitions of these widget types. Set to <code>off</code> to disable the Turnstile integration entirely. Setting this to anything other than <code>off</code> or <code>invisible</code> requires Advanced Waiting Room.
 
@@ -821,7 +821,7 @@ One of the following:
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

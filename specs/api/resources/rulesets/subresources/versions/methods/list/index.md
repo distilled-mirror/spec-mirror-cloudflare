@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Mass URL Redirects Write``Mass URL Redirects Read``Magic Firewall Write``Magic Firewall Read``L4 DDoS Managed Ruleset Write``L4 DDoS Managed Ruleset Read``Transform Rules Write``Transform Rules Read``Select Configuration Write``Select Configuration Read``Account WAF Write``Account WAF Read``Account Rulesets Read``Account Rulesets Write``Logs Write``Logs Read`
+`Account Custom Error Rules Write``Account Custom Error Rules Read``Account Custom Pages Write``Account Custom Pages Read``Mass URL Redirects Write``Mass URL Redirects Read``Magic Firewall Write``Magic Firewall Read``L4 DDoS Managed Ruleset Write``L4 DDoS Managed Ruleset Read``Transform Rules Write``Transform Rules Read``Select Configuration Write``Select Configuration Read``Account WAF Write``Account WAF Read``Account Rulesets Read``Account Rulesets Write``Logs Write``Logs Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -84,7 +84,7 @@ The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 
 <summary>
 
-errors: array of object {message, code, source }
+errors: array of object { message, code, source }
 
 A list of error messages.
 
@@ -108,7 +108,7 @@ A unique code for this message.
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 The source of this message.
 
@@ -134,7 +134,7 @@ minLength1
 
 <summary>
 
-messages: array of object {message, code, source }
+messages: array of object { message, code, source }
 
 A list of warning messages.
 
@@ -158,7 +158,7 @@ A unique code for this message.
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 The source of this message.
 
@@ -184,7 +184,7 @@ minLength1
 
 <summary>
 
-result: unknownor array of unknownor stringor 2 more
+result: unknown or array of unknown or string or 2 more
 
 A result.
 
@@ -226,7 +226,7 @@ Whether the API call was successful.
 
 <summary>
 
-result\_info: optional object {cursors }
+result\_info: optional object { cursors }
 
 Information to navigate the results.
 
@@ -236,7 +236,7 @@ Information to navigate the results.
 
 <summary>
 
-cursors: optional object {after }
+cursors: optional object { after }
 
 The set of cursors.
 

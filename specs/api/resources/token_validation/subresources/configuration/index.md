@@ -44,7 +44,7 @@ DELETE/zones/{zone\_id}/token\_validation/config/{config\_id}
 
 <summary>
 
-TokenConfig object {id, created\_at, credentials, 5 more }
+TokenConfig object { id, created\_at, credentials, 5 more }
 
 </summary>
 
@@ -68,7 +68,7 @@ formatdate-time
 
 <summary>
 
-credentials: object {keys }
+credentials: object { keys }
 
 </summary>
 
@@ -76,7 +76,7 @@ credentials: object {keys }
 
 <summary>
 
-keys: array of object {alg, e, kid, 2 more } or object {alg, crv, kid, 3 more } or object {alg, crv, kid, 3 more } or object {alg, kid, kty }
+keys: array of object { alg, e, kid, 2 more } or object { alg, crv, kid, 3 more } or object { alg, crv, kid, 3 more } or object { alg, kid, kty }
 
 </summary>
 
@@ -86,7 +86,7 @@ One of the following:
 
 <summary>
 
-APIShieldCredentialsJWTKeyRSA object {alg, e, kid, 2 more }
+APIShieldCredentialsJWTKeyRSA object { alg, e, kid, 2 more }
 
 JSON representation of an RSA key.
 
@@ -96,7 +96,7 @@ JSON representation of an RSA key.
 
 <summary>
 
-alg: "RS256"or "RS384"or "RS512"or 3 more
+alg: "RS256" or "RS384" or "RS512" or 3 more
 
 Algorithm
 
@@ -164,7 +164,7 @@ RSA modulus
 
 <summary>
 
-APIShieldCredentialsJWTKeyEcEs256 object {alg, crv, kid, 3 more }
+APIShieldCredentialsJWTKeyEcEs256 object { alg, crv, kid, 3 more }
 
 JSON representation of an ES256 key
 
@@ -214,7 +214,7 @@ Y EC coordinate
 
 <summary>
 
-APIShieldCredentialsJWTKeyEcEs384 object {alg, crv, kid, 3 more }
+APIShieldCredentialsJWTKeyEcEs384 object { alg, crv, kid, 3 more }
 
 JSON representation of an ES384 key
 
@@ -264,7 +264,7 @@ Y EC coordinate
 
 <summary>
 
-APIShieldCredentialsJWTKeyOctResponse object {alg, kid, kty }
+APIShieldCredentialsJWTKeyOctResponse object { alg, kid, kty }
 
 JSON representation of a symmetric verification key in API responses (secret material is redacted).
 
@@ -274,7 +274,7 @@ JSON representation of a symmetric verification key in API responses (secret mat
 
 <summary>
 
-alg: "HS256"or "HS384"or "HS512"
+alg: "HS256" or "HS384" or "HS512"
 
 Algorithm
 
@@ -356,7 +356,7 @@ token\_type: "JWT"
 
 <summary>
 
-ConfigurationEditResponse object {id, description, title, token\_sources }
+ConfigurationEditResponse object { id, description, title, token\_sources }
 
 </summary>
 
@@ -394,7 +394,7 @@ token\_sources: optional array of string
 
 <summary>
 
-ConfigurationDeleteResponse object {id }
+ConfigurationDeleteResponse object { id }
 
 </summary>
 
@@ -428,7 +428,7 @@ PATCH/zones/{zone\_id}/token\_validation/config/{config\_id}/credentials
 
 <summary>
 
-CredentialUpdateResponse object {keys }
+CredentialUpdateResponse object { keys }
 
 </summary>
 
@@ -436,7 +436,7 @@ CredentialUpdateResponse object {keys }
 
 <summary>
 
-keys: array of object {alg, e, kid, 2 more } or object {alg, crv, kid, 3 more } or object {alg, crv, kid, 3 more } or object {alg, kid, kty }
+keys: array of object { alg, e, kid, 2 more } or object { alg, crv, kid, 3 more } or object { alg, crv, kid, 3 more } or object { alg, kid, kty }
 
 </summary>
 
@@ -446,7 +446,7 @@ One of the following:
 
 <summary>
 
-APIShieldCredentialsJWTKeyRSA object {alg, e, kid, 2 more }
+APIShieldCredentialsJWTKeyRSA object { alg, e, kid, 2 more }
 
 JSON representation of an RSA key.
 
@@ -456,7 +456,7 @@ JSON representation of an RSA key.
 
 <summary>
 
-alg: "RS256"or "RS384"or "RS512"or 3 more
+alg: "RS256" or "RS384" or "RS512" or 3 more
 
 Algorithm
 
@@ -524,7 +524,7 @@ RSA modulus
 
 <summary>
 
-APIShieldCredentialsJWTKeyEcEs256 object {alg, crv, kid, 3 more }
+APIShieldCredentialsJWTKeyEcEs256 object { alg, crv, kid, 3 more }
 
 JSON representation of an ES256 key
 
@@ -574,7 +574,7 @@ Y EC coordinate
 
 <summary>
 
-APIShieldCredentialsJWTKeyEcEs384 object {alg, crv, kid, 3 more }
+APIShieldCredentialsJWTKeyEcEs384 object { alg, crv, kid, 3 more }
 
 JSON representation of an ES384 key
 
@@ -624,7 +624,7 @@ Y EC coordinate
 
 <summary>
 
-APIShieldCredentialsJWTKeyOctResponse object {alg, kid, kty }
+APIShieldCredentialsJWTKeyOctResponse object { alg, kid, kty }
 
 JSON representation of a symmetric verification key in API responses (secret material is redacted).
 
@@ -634,7 +634,7 @@ JSON representation of a symmetric verification key in API responses (secret mat
 
 <summary>
 
-alg: "HS256"or "HS384"or "HS512"
+alg: "HS256" or "HS384" or "HS512"
 
 Algorithm
 
@@ -686,7 +686,7 @@ Key Type
 
 <summary>
 
-CredentialEditResponse object {keys }
+CredentialEditResponse object { keys }
 
 </summary>
 
@@ -694,7 +694,7 @@ CredentialEditResponse object {keys }
 
 <summary>
 
-keys: array of object {alg, e, kid, 2 more } or object {alg, crv, kid, 3 more } or object {alg, crv, kid, 3 more } or object {alg, kid, kty }
+keys: array of object { alg, e, kid, 2 more } or object { alg, crv, kid, 3 more } or object { alg, crv, kid, 3 more } or object { alg, kid, kty }
 
 </summary>
 
@@ -704,7 +704,7 @@ One of the following:
 
 <summary>
 
-APIShieldCredentialsJWTKeyRSA object {alg, e, kid, 2 more }
+APIShieldCredentialsJWTKeyRSA object { alg, e, kid, 2 more }
 
 JSON representation of an RSA key.
 
@@ -714,7 +714,7 @@ JSON representation of an RSA key.
 
 <summary>
 
-alg: "RS256"or "RS384"or "RS512"or 3 more
+alg: "RS256" or "RS384" or "RS512" or 3 more
 
 Algorithm
 
@@ -782,7 +782,7 @@ RSA modulus
 
 <summary>
 
-APIShieldCredentialsJWTKeyEcEs256 object {alg, crv, kid, 3 more }
+APIShieldCredentialsJWTKeyEcEs256 object { alg, crv, kid, 3 more }
 
 JSON representation of an ES256 key
 
@@ -832,7 +832,7 @@ Y EC coordinate
 
 <summary>
 
-APIShieldCredentialsJWTKeyEcEs384 object {alg, crv, kid, 3 more }
+APIShieldCredentialsJWTKeyEcEs384 object { alg, crv, kid, 3 more }
 
 JSON representation of an ES384 key
 
@@ -882,7 +882,7 @@ Y EC coordinate
 
 <summary>
 
-APIShieldCredentialsJWTKeyOctResponse object {alg, kid, kty }
+APIShieldCredentialsJWTKeyOctResponse object { alg, kid, kty }
 
 JSON representation of a symmetric verification key in API responses (secret material is redacted).
 
@@ -892,7 +892,7 @@ JSON representation of a symmetric verification key in API responses (secret mat
 
 <summary>
 
-alg: "HS256"or "HS384"or "HS512"
+alg: "HS256" or "HS384" or "HS512"
 
 Algorithm
 

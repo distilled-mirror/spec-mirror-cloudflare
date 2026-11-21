@@ -32,7 +32,7 @@ POST/zones/{zone\_id}/ai-audit/robots/bulk
 
 <summary>
 
-RobotGetResponse object {userAgents, sitemaps, status }
+RobotGetResponse object { userAgents, sitemaps, status }
 
 Parsed robots.txt rules for a single domain.
 
@@ -42,7 +42,7 @@ Parsed robots.txt rules for a single domain.
 
 <summary>
 
-userAgents: map\[object {allow, disallow, contentSignals, crawlDelay } ]
+userAgents: map\[object { allow, disallow, contentSignals, crawlDelay } ]
 
 Map of user-agent string to its parsed rules.
 
@@ -64,7 +64,7 @@ List of disallowed path patterns.
 
 <summary>
 
-contentSignals: optional object {"ai-input", "ai-train", search }
+contentSignals: optional object { "ai-input", "ai-train", search }
 
 Content signal directives from robots.txt.
 
@@ -74,7 +74,7 @@ Content signal directives from robots.txt.
 
 <summary>
 
-"ai-input": optional "yes"or "no"
+"ai-input": optional "yes" or "no"
 
 Whether AI input usage is permitted.
 
@@ -98,7 +98,7 @@ One of the following:
 
 <summary>
 
-"ai-train": optional "yes"or "no"
+"ai-train": optional "yes" or "no"
 
 Whether AI training is permitted.
 
@@ -122,7 +122,7 @@ One of the following:
 
 <summary>
 
-search: optional "yes"or "no"
+search: optional "yes" or "no"
 
 Whether search indexing is permitted.
 
@@ -176,7 +176,7 @@ HTTP status code from fetching the robots.txt file.
 
 <summary>
 
-RobotBulkGetResponse = map\[object {userAgents, sitemaps, status } ]
+RobotBulkGetResponse = map\[object { userAgents, sitemaps, status } ]
 
 Map of hostname to parsed robots.txt rules.
 
@@ -186,7 +186,7 @@ Map of hostname to parsed robots.txt rules.
 
 <summary>
 
-userAgents: map\[object {allow, disallow, contentSignals, crawlDelay } ]
+userAgents: map\[object { allow, disallow, contentSignals, crawlDelay } ]
 
 Map of user-agent string to its parsed rules.
 
@@ -208,7 +208,7 @@ List of disallowed path patterns.
 
 <summary>
 
-contentSignals: optional object {"ai-input", "ai-train", search }
+contentSignals: optional object { "ai-input", "ai-train", search }
 
 Content signal directives from robots.txt.
 
@@ -218,7 +218,7 @@ Content signal directives from robots.txt.
 
 <summary>
 
-"ai-input": optional "yes"or "no"
+"ai-input": optional "yes" or "no"
 
 Whether AI input usage is permitted.
 
@@ -242,7 +242,7 @@ One of the following:
 
 <summary>
 
-"ai-train": optional "yes"or "no"
+"ai-train": optional "yes" or "no"
 
 Whether AI training is permitted.
 
@@ -266,7 +266,7 @@ One of the following:
 
 <summary>
 
-search: optional "yes"or "no"
+search: optional "yes" or "no"
 
 Whether search indexing is permitted.
 

@@ -28,7 +28,7 @@ POST/accounts/{account\_id}/browser-rendering/screenshot
 
 <summary>
 
-ScreenshotCreateResponse object {success, errors }
+ScreenshotCreateResponse object { success, errors }
 
 </summary>
 
@@ -42,7 +42,7 @@ Response status.
 
 <summary>
 
-errors: optional array of object {code, message }
+errors: optional array of object { code, message }
 
 </summary>
 

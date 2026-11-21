@@ -32,7 +32,7 @@ PUT/accounts/{account\_id}/profile
 
 <summary>
 
-AccountProfile object {business\_address, business\_email, business\_name, 2 more }
+AccountProfile object { business\_address, business\_email, business\_name, 2 more }
 
 </summary>
 

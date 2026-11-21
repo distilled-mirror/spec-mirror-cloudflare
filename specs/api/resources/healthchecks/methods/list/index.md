@@ -114,7 +114,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -156,7 +156,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -340,7 +340,7 @@ The HTTP request headers to send in the health check. It is recommended you set 
 
 <summary>
 
-method: optional "GET"or "HEAD"
+method: optional "GET" or "HEAD"
 
 The HTTP method to use for the health check.
 
@@ -404,7 +404,7 @@ The number of retries to attempt in case of a timeout before marking the origin 
 
 <summary>
 
-status: optional "unknown"or "healthy"or "unhealthy"or "suspended"
+status: optional "unknown" or "healthy" or "unhealthy" or "suspended"
 
 The current status of the origin server according to the health check.
 
@@ -490,7 +490,7 @@ Whether the API call was successful.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object { count, page, per\_page, total\_count }
 
 </summary>
 

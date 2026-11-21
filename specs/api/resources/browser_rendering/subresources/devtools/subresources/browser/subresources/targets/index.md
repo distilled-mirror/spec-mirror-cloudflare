@@ -48,7 +48,7 @@ GET/accounts/{account\_id}/browser-rendering/devtools/browser/{session\_id}/json
 
 <summary>
 
-TargetCreateResponse object {id, type, url, 4 more }
+TargetCreateResponse object { id, type, url, 4 more }
 
 </summary>
 
@@ -102,7 +102,7 @@ WebSocket URL for debugging this target.
 
 <summary>
 
-TargetListResponse = array of object {id, type, url, 4 more }
+TargetListResponse = array of object { id, type, url, 4 more }
 
 </summary>
 
@@ -156,7 +156,7 @@ WebSocket URL for debugging this target.
 
 <summary>
 
-TargetGetResponse object {id, type, url, 4 more }
+TargetGetResponse object { id, type, url, 4 more }
 
 </summary>
 
@@ -210,7 +210,7 @@ WebSocket URL for debugging this target.
 
 <summary>
 
-TargetActivateResponse object {message }
+TargetActivateResponse object { message }
 
 </summary>
 
@@ -228,7 +228,7 @@ Target activated.
 
 <summary>
 
-TargetCloseResponse object {message }
+TargetCloseResponse object { message }
 
 </summary>
 

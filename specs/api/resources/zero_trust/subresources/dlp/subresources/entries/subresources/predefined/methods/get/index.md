@@ -80,7 +80,7 @@ formatuuid
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -102,7 +102,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -122,7 +122,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -144,7 +144,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -170,7 +170,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, created\_at, enabled, 9 more } or object {id, created\_at, enabled, 6 more } or object {id, confidence, enabled, 7 more } or 4 more
+result: optional object { id, created\_at, enabled, 9 more } or object { id, created\_at, enabled, 6 more } or object { id, confidence, enabled, 7 more } or 4 more
 
 </summary>
 
@@ -180,7 +180,7 @@ One of the following:
 
 <summary>
 
-object {id, created\_at, enabled, 9 more }
+object { id, created\_at, enabled, 9 more }
 
 </summary>
 
@@ -248,7 +248,7 @@ formatuuid
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -270,7 +270,7 @@ name: string
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -320,7 +320,7 @@ Returned by the entry endpoints. Not returned on entries embedded in other respo
 
 <summary>
 
-object {id, created\_at, enabled, 6 more }
+object { id, created\_at, enabled, 6 more }
 
 </summary>
 
@@ -364,7 +364,7 @@ The optional description of the custom prompt topic entry.
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -386,7 +386,7 @@ name: string
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -428,7 +428,7 @@ One of the following:
 
 <summary>
 
-object {id, confidence, enabled, 7 more }
+object { id, confidence, enabled, 7 more }
 
 </summary>
 
@@ -442,7 +442,7 @@ formatuuid
 
 <summary>
 
-confidence: object {ai\_context\_available, available }
+confidence: object { ai\_context\_available, available }
 
 </summary>
 
@@ -490,7 +490,7 @@ formatuuid
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -512,7 +512,7 @@ name: string
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -550,7 +550,7 @@ One of the following:
 
 <summary>
 
-variant: optional object {topic\_type, type, description } or object {type, description }
+variant: optional object { topic\_type, type, description } or object { type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -562,7 +562,7 @@ One of the following:
 
 <summary>
 
-object {topic\_type, type, description }
+object { topic\_type, type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -572,7 +572,7 @@ A Predefined AI prompt classification topic entry.
 
 <summary>
 
-topic\_type: "Intent"or "Content"
+topic\_type: "Intent" or "Content"
 
 </summary>
 
@@ -608,7 +608,7 @@ A customer-facing explanation of what this predefined AI prompt topic represents
 
 <summary>
 
-object {type, description }
+object { type, description }
 
 A general predefined entry.
 
@@ -640,7 +640,7 @@ A customer-facing explanation of what this predefined entry represents.
 
 <summary>
 
-object {id, created\_at, enabled, 6 more }
+object { id, created\_at, enabled, 6 more }
 
 </summary>
 
@@ -684,7 +684,7 @@ formatuuid
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -706,7 +706,7 @@ name: string
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -748,7 +748,7 @@ One of the following:
 
 <summary>
 
-object {id, case\_sensitive, created\_at, 8 more }
+object { id, case\_sensitive, created\_at, 8 more }
 
 </summary>
 
@@ -802,7 +802,7 @@ The optional description of the exact data entry.
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -824,7 +824,7 @@ name: string
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -866,7 +866,7 @@ One of the following:
 
 <summary>
 
-object {id, created\_at, enabled, 6 more }
+object { id, created\_at, enabled, 6 more }
 
 </summary>
 
@@ -910,7 +910,7 @@ The optional description of the document fingerprint entry.
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -932,7 +932,7 @@ name: string
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -974,7 +974,7 @@ One of the following:
 
 <summary>
 
-object {id, created\_at, enabled, 7 more }
+object { id, created\_at, enabled, 7 more }
 
 </summary>
 
@@ -1022,7 +1022,7 @@ formatuuid
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -1044,7 +1044,7 @@ name: string
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 

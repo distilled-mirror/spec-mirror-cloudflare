@@ -34,10 +34,10 @@ DELETE/accounts/{account\_id}/storage/kv/namespaces/{namespace\_id}/values/{key\
 
 ##### ModelsExpand Collapse
 
-ValueUpdateResponse object {}
+ValueUpdateResponse object { }
 
 [Link to this property](#)%20kv.namespaces.values%20%3E%20(model)%20value_update_response%20%3E%20(schema)>)
 
-ValueDeleteResponse object {}
+ValueDeleteResponse object { }
 
 [Link to this property](#)%20kv.namespaces.values%20%3E%20(model)%20value_delete_response%20%3E%20(schema)>)

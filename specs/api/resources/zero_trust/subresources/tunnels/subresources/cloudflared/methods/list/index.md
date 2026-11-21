@@ -58,7 +58,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Cloudflare One Connectors Write``Cloudflare One Connectors Read``Cloudflare One Connector: cloudflared Write``Cloudflare One Connector: cloudflared Read``Cloudflare Tunnel Write``Cloudflare Tunnel Read`
+`Connectivity Directory Read``Connectivity Directory Bind``Connectivity Directory Admin``Cloudflare One Connectors Write``Cloudflare One Connectors Read``Cloudflare One Connector: cloudflared Write``Cloudflare One Connector: cloudflared Read``Cloudflare Tunnel Write``Cloudflare Tunnel Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -122,7 +122,7 @@ minimum1
 
 <summary>
 
-status: optional "inactive"or "degraded"or "healthy"or "down"
+status: optional "inactive" or "degraded" or "healthy" or "down"
 
 The status of the tunnel. Valid values are <code>inactive</code> (tunnel has never been run), <code>degraded</code> (tunnel is active and able to serve traffic but in an unhealthy state), <code>healthy</code> (tunnel is active and able to serve traffic), or <code>down</code> (tunnel can not serve traffic as it has no connections to the Cloudflare Edge).
 
@@ -178,7 +178,7 @@ formatdate-time
 
 <summary>
 
-errors: array of object {code, message, context }
+errors: array of object { code, message, context }
 
 </summary>
 
@@ -206,7 +206,7 @@ Optional error-specific context.
 
 <summary>
 
-messages: array of object {code, message, context }
+messages: array of object { code, message, context }
 
 </summary>
 
@@ -260,7 +260,7 @@ maxLength32
 
 <summary>
 
-config\_src: optional "local"or "cloudflare"
+config\_src: optional "local" or "cloudflare"
 
 Indicates if this is a locally or remotely configured tunnel. If <code>local</code>, manage the tunnel using a YAML file on the origin machine. If <code>cloudflare</code>, manage the tunnel on the Zero Trust dashboard.
 
@@ -284,7 +284,7 @@ One of the following:
 
 <summary>
 
-Deprecatedconnections: optional array of object {id, client\_id, client\_version, 5 more }
+Deprecatedconnections: optional array of object { id, client\_id, client\_version, 5 more }
 
 This field will start returning an empty array. To fetch the connections of a given tunnel, please use the dedicated endpoint <code>/accounts/{account_id}/{tunnel_type}/{tunnel_id}/connections</code>
 
@@ -416,7 +416,7 @@ If <code>true</code>, the tunnel can be configured remotely from the Zero Trust 
 
 <summary>
 
-status: optional "inactive"or "degraded"or "healthy"or "down"
+status: optional "inactive" or "degraded" or "healthy" or "down"
 
 The status of the tunnel. Valid values are <code>inactive</code> (tunnel has never been run), <code>degraded</code> (tunnel is active and able to serve traffic but in an unhealthy state), <code>healthy</code> (tunnel is active and able to serve traffic), or <code>down</code> (tunnel can not serve traffic as it has no connections to the Cloudflare Edge).
 
@@ -448,7 +448,7 @@ One of the following:
 
 <summary>
 
-tun\_type: optional "cfd\_tunnel"or "warp\_connector"or "warp"or 4 more
+tun\_type: optional "cfd\_tunnel" or "warp\_connector" or "warp" or 4 more
 
 The type of tunnel.
 
@@ -502,7 +502,7 @@ Whether the API call was successful
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object { count, page, per\_page, total\_count }
 
 </summary>
 

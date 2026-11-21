@@ -48,7 +48,7 @@ DELETE/accounts/{account\_id}/dlp/data\_tag\_categories/{category\_id}/data\_tag
 
 <summary>
 
-DataTagListResponse object {id, created\_at, name, 2 more }
+DataTagListResponse object { id, created\_at, name, 2 more }
 
 </summary>
 
@@ -86,7 +86,7 @@ description: optional string
 
 <summary>
 
-DataTagGetResponse object {id, created\_at, name, 2 more }
+DataTagGetResponse object { id, created\_at, name, 2 more }
 
 </summary>
 
@@ -124,7 +124,7 @@ description: optional string
 
 <summary>
 
-DataTagCreateResponse object {id, created\_at, name, 2 more }
+DataTagCreateResponse object { id, created\_at, name, 2 more }
 
 </summary>
 
@@ -162,7 +162,7 @@ description: optional string
 
 <summary>
 
-DataTagUpdateResponse object {id, created\_at, name, 2 more }
+DataTagUpdateResponse object { id, created\_at, name, 2 more }
 
 </summary>
 

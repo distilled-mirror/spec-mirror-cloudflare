@@ -34,7 +34,7 @@ DELETE/accounts/{account\_id}/builds/repos/connections/{repo\_connection\_uuid}
 
 <summary>
 
-ConnectionUpsertResponse = object {created\_on, deleted\_on, modified\_on, 6 more } or object {created\_on, deleted\_on, modified\_on, 6 more }
+ConnectionUpsertResponse = object { created\_on, deleted\_on, modified\_on, 6 more } or object { created\_on, deleted\_on, modified\_on, 6 more }
 
 </summary>
 
@@ -44,7 +44,7 @@ One of the following:
 
 <summary>
 
-object {created\_on, deleted\_on, modified\_on, 6 more }
+object { created\_on, deleted\_on, modified\_on, 6 more }
 
 </summary>
 
@@ -82,7 +82,7 @@ Human-readable name of the account or namespace that owns the repository.
 
 <summary>
 
-provider\_type: optional "github"or "gitlab"or "gitlab\_internal"or "origin"
+provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
 
 Source control provider.
 
@@ -138,7 +138,7 @@ Human-readable repository name.
 
 <summary>
 
-object {created\_on, deleted\_on, modified\_on, 6 more }
+object { created\_on, deleted\_on, modified\_on, 6 more }
 
 </summary>
 
@@ -176,7 +176,7 @@ Human-readable name of the account or namespace that owns the repository.
 
 <summary>
 
-provider\_type: optional "github"or "gitlab"or "gitlab\_internal"or "origin"
+provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
 
 Source control provider.
 
@@ -236,7 +236,7 @@ Human-readable repository name.
 
 <summary>
 
-ConnectionDeleteResponse = unknownor array of unknown
+ConnectionDeleteResponse = unknown or array of unknown
 
 </summary>
 
@@ -266,7 +266,7 @@ GET/accounts/{account\_id}/builds/repos/{provider\_type}/{provider\_account\_id}
 
 <summary>
 
-ConfigAutofillGetResponse = object {config\_file, default\_worker\_name, deploy\_tool, 3 more } or object {config\_file, default\_worker\_name, deploy\_tool, 3 more }
+ConfigAutofillGetResponse = object { config\_file, default\_worker\_name, deploy\_tool, 3 more } or object { config\_file, default\_worker\_name, deploy\_tool, 3 more }
 
 </summary>
 
@@ -276,7 +276,7 @@ One of the following:
 
 <summary>
 
-object {config\_file, default\_worker\_name, deploy\_tool, 3 more }
+object { config\_file, default\_worker\_name, deploy\_tool, 3 more }
 
 </summary>
 
@@ -292,7 +292,7 @@ default\_worker\_name: optional string
 
 <summary>
 
-deploy\_tool: optional "cf"or "wrangler"
+deploy\_tool: optional "cf" or "wrangler"
 
 Deployment CLI detected in the selected root directory. A Wrangler config takes precedence. <code>cf</code> requires <code>cloudflare.config.ts</code> and a <code>cf</code> dependency or dev dependency in <code>package.json</code>.
 
@@ -320,7 +320,7 @@ env\_worker\_names: optional map\[string]
 
 <summary>
 
-package\_manager: optional "npm"or "yarn"or "pnpm"or 2 more
+package\_manager: optional "npm" or "yarn" or "pnpm" or 2 more
 
 Package manager inferred from repository lockfiles; defaults to npm when none is detected.
 
@@ -364,7 +364,7 @@ scripts: optional map\[string]
 
 <summary>
 
-object {config\_file, default\_worker\_name, deploy\_tool, 3 more }
+object { config\_file, default\_worker\_name, deploy\_tool, 3 more }
 
 </summary>
 
@@ -380,7 +380,7 @@ default\_worker\_name: optional string
 
 <summary>
 
-deploy\_tool: optional "cf"or "wrangler"
+deploy\_tool: optional "cf" or "wrangler"
 
 Deployment CLI detected in the selected root directory. A Wrangler config takes precedence. <code>cf</code> requires <code>cloudflare.config.ts</code> and a <code>cf</code> dependency or dev dependency in <code>package.json</code>.
 
@@ -408,7 +408,7 @@ env\_worker\_names: optional map\[string]
 
 <summary>
 
-package\_manager: optional "npm"or "yarn"or "pnpm"or 2 more
+package\_manager: optional "npm" or "yarn" or "pnpm" or 2 more
 
 Package manager inferred from repository lockfiles; defaults to npm when none is detected.
 

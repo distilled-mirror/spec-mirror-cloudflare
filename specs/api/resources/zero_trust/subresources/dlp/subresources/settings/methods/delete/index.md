@@ -72,7 +72,7 @@ account\_id: string
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -94,7 +94,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -114,7 +114,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -136,7 +136,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -184,7 +184,7 @@ Whether OCR is enabled at the account level.
 
 <summary>
 
-payload\_logging: object {updated\_at, masking\_level, public\_key }
+payload\_logging: object { updated\_at, masking\_level, public\_key }
 
 </summary>
 
@@ -198,7 +198,7 @@ formatdate-time
 
 <summary>
 
-masking\_level: optional "full"or "partial"or "clear"or "default"
+masking\_level: optional "full" or "partial" or "clear" or "default"
 
 Masking level for payload logs.
 

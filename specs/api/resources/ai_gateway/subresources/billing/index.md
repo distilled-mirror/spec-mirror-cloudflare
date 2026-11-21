@@ -40,7 +40,7 @@ GET/accounts/{account\_id}/ai-gateway/billing/invoice-preview
 
 <summary>
 
-BillingCreditBalanceResponse object {balance, has\_default\_payment\_method, payment\_method, 2 more }
+BillingCreditBalanceResponse object { balance, has\_default\_payment\_method, payment\_method, 2 more }
 
 </summary>
 
@@ -60,7 +60,7 @@ Whether AI Gateway billing has a default payment method for the account.
 
 <summary>
 
-payment\_method: object {brand, last4 }
+payment\_method: object { brand, last4 }
 
 The default payment method’s card. Null when there is no default, it isn’t a card, or it couldn’t be read.
 
@@ -86,7 +86,7 @@ Last 4 digits of the card.
 
 <summary>
 
-topup\_config: object {amount, threshold, disabledReason, 2 more }
+topup\_config: object { amount, threshold, disabledReason, 2 more }
 
 Auto top-up configuration, as GET /topup/config returns it.
 
@@ -140,7 +140,7 @@ Whether the account completed its first top-up. Auto top-up can be set up only a
 
 <summary>
 
-BillingUsageHistoryResponse object {history }
+BillingUsageHistoryResponse object { history }
 
 </summary>
 
@@ -148,7 +148,7 @@ BillingUsageHistoryResponse object {history }
 
 <summary>
 
-history: array of object {id, aggregated\_value, end\_time, start\_time }
+history: array of object { id, aggregated\_value, end\_time, start\_time }
 
 Usage cost per window of <code>value_grouping_window</code>.
 
@@ -190,7 +190,7 @@ Start of the window, as a Unix timestamp in seconds.
 
 <summary>
 
-BillingInvoiceHistoryResponse object {invoices, pagination }
+BillingInvoiceHistoryResponse object { invoices, pagination }
 
 </summary>
 
@@ -198,7 +198,7 @@ BillingInvoiceHistoryResponse object {invoices, pagination }
 
 <summary>
 
-invoices: array of object {amount\_due, amount\_paid, amount\_remaining, 11 more }
+invoices: array of object { amount\_due, amount\_paid, amount\_remaining, 11 more }
 
 Top-up invoices matching <code>type</code>, up to 100.
 
@@ -296,7 +296,7 @@ Invoice status: <code>draft</code>, <code>open</code>, <code>paid</code>, <code>
 
 <summary>
 
-pagination: object {has\_more, page, per\_page, total\_count }
+pagination: object { has\_more, page, per\_page, total\_count }
 
 Pagination details. Results come in a single page.
 
@@ -338,7 +338,7 @@ Number of matching invoices.
 
 <summary>
 
-BillingInvoicePreviewResponse object {id, amount\_due, amount\_paid, 6 more }
+BillingInvoicePreviewResponse object { id, amount\_due, amount\_paid, 6 more }
 
 </summary>
 
@@ -376,7 +376,7 @@ Lowercase ISO 4217 currency code.
 
 <summary>
 
-invoice\_lines: array of object {amount, currency, description, 4 more }
+invoice\_lines: array of object { amount, currency, description, 4 more }
 
 Invoice line items.
 
@@ -404,7 +404,7 @@ Line item description.
 
 <summary>
 
-period: object {end, start }
+period: object { end, start }
 
 Period the line item covers.
 
@@ -430,7 +430,7 @@ Start of the period, as a Unix timestamp in seconds.
 
 <summary>
 
-pricing: object {unit\_amount\_decimal }
+pricing: object { unit\_amount\_decimal }
 
 Line item pricing.
 
@@ -456,7 +456,7 @@ Quantity billed.
 
 <summary>
 
-pretax\_credit\_amounts: optional array of object {amount, type, credit\_balance\_transaction, discount }
+pretax\_credit\_amounts: optional array of object { amount, type, credit\_balance\_transaction, discount }
 
 Credits applied to the line item before tax.
 
@@ -510,7 +510,7 @@ Start of the billing period, as a Unix timestamp in seconds.
 
 <summary>
 
-status: "draft"or "open"or "paid"or 2 more
+status: "draft" or "open" or "paid" or 2 more
 
 Invoice status.
 
@@ -578,7 +578,7 @@ GET/accounts/{account\_id}/ai-gateway/billing/topup/limits
 
 <summary>
 
-TopupCreateResponse object {client\_secret, onboarding, payment\_intent\_id, 2 more }
+TopupCreateResponse object { client\_secret, onboarding, payment\_intent\_id, 2 more }
 
 </summary>
 
@@ -620,7 +620,7 @@ Last 4 digits of card.
 
 <summary>
 
-TopupStatusResponse object {payment\_intent\_id, status }
+TopupStatusResponse object { payment\_intent\_id, status }
 
 </summary>
 
@@ -634,7 +634,7 @@ Top-up identifier from the request.
 
 <summary>
 
-status: "completed"or "pending"
+status: "completed" or "pending"
 
 <code>completed</code> once the top-up payment is processed and its credits are added to the balance, <code>pending</code> until then.
 
@@ -662,7 +662,7 @@ One of the following:
 
 <summary>
 
-TopupEligibilityResponse object {account\_payment\_method\_state, aig\_customer\_state, aig\_default\_payment\_method\_state, 5 more }
+TopupEligibilityResponse object { account\_payment\_method\_state, aig\_customer\_state, aig\_default\_payment\_method\_state, 5 more }
 
 </summary>
 
@@ -670,7 +670,7 @@ TopupEligibilityResponse object {account\_payment\_method\_state, aig\_customer\
 
 <summary>
 
-account\_payment\_method\_state: "NONE"or "UNSUPPORTED\_ONLY"or "SUPPORTED\_PRESENT"or "UNKNOWN"
+account\_payment\_method\_state: "NONE" or "UNSUPPORTED\_ONLY" or "SUPPORTED\_PRESENT" or "UNKNOWN"
 
 Account-level payment-method state derived from the provided list.
 
@@ -702,7 +702,7 @@ One of the following:
 
 <summary>
 
-aig\_customer\_state: "RESOLVED"or "RESOLUTION\_FAILED"
+aig\_customer\_state: "RESOLVED" or "RESOLUTION\_FAILED"
 
 AI Gateway billing profile resolution outcome.
 
@@ -726,7 +726,7 @@ One of the following:
 
 <summary>
 
-aig\_default\_payment\_method\_state: "PRESENT"or "MISSING"
+aig\_default\_payment\_method\_state: "PRESENT" or "MISSING"
 
 Whether AI Gateway billing has a default payment method.
 
@@ -750,7 +750,7 @@ One of the following:
 
 <summary>
 
-display\_payment\_method: object {last4, brand }
+display\_payment\_method: object { last4, brand }
 
 Card to reference in the UI, e.g. “use card ending 1234”.
 
@@ -782,7 +782,7 @@ True only when reason === ELIGIBLE.
 
 <summary>
 
-reason: "ELIGIBLE"or "NO\_ACCOUNT\_PAYMENT\_METHOD"or "UNSUPPORTED\_ACCOUNT\_PAYMENT\_METHOD"or 6 more
+reason: "ELIGIBLE" or "NO\_ACCOUNT\_PAYMENT\_METHOD" or "UNSUPPORTED\_ACCOUNT\_PAYMENT\_METHOD" or 6 more
 
 Canonical eligibility outcome for display and support triage.
 
@@ -834,7 +834,7 @@ One of the following:
 
 <summary>
 
-recommended\_action: "NONE"or "ADD\_SUPPORTED\_PAYMENT\_METHOD"or "USE\_EXISTING\_CARD"or 4 more
+recommended\_action: "NONE" or "ADD\_SUPPORTED\_PAYMENT\_METHOD" or "USE\_EXISTING\_CARD" or 4 more
 
 Machine-readable next step.
 
@@ -888,7 +888,7 @@ Whether the customer can resolve this themselves (vs contact support).
 
 <summary>
 
-TopupGetEligibilityResponse object {auto\_topup, contract\_version, evaluated\_at, 4 more }
+TopupGetEligibilityResponse object { auto\_topup, contract\_version, evaluated\_at, 4 more }
 
 </summary>
 
@@ -896,7 +896,7 @@ TopupGetEligibilityResponse object {auto\_topup, contract\_version, evaluated\_a
 
 <summary>
 
-auto\_topup: object {can\_configure, config, limits, 3 more }
+auto\_topup: object { can\_configure, config, limits, 3 more }
 
 Auto top-up state.
 
@@ -912,7 +912,7 @@ Whether auto top-up can be set up or changed now.
 
 <summary>
 
-config: object {amount\_cents, threshold\_cents }
+config: object { amount\_cents, threshold\_cents }
 
 Configured threshold and amount. Null unless <code>state</code> is <code>active</code> or <code>needs_confirmation</code>.
 
@@ -938,7 +938,7 @@ Balance threshold in cents that triggers an auto top-up.
 
 <summary>
 
-limits: object {amount\_max\_cents, amount\_min\_cents, threshold\_min\_cents }
+limits: object { amount\_max\_cents, amount\_min\_cents, threshold\_min\_cents }
 
 Allowed auto top-up values.
 
@@ -976,7 +976,7 @@ Payment method auto top-up charges or, once stopped, the one it stopped on. Null
 
 <summary>
 
-state: "first\_topup\_required"or "not\_configured"or "active"or 2 more
+state: "first\_topup\_required" or "not\_configured" or "active" or 2 more
 
 <code>first_topup_required</code>: auto top-up can be set up after the first manual top-up. <code>not_configured</code>: auto top-up is off. <code>active</code>: auto top-up is on. <code>needs_confirmation</code>: auto top-up is on, but its card has to be confirmed or replaced. <code>stopped</code>: auto top-up was turned off; <code>stopped_reason</code> says why, when known.
 
@@ -1012,7 +1012,7 @@ One of the following:
 
 <summary>
 
-stopped\_reason: optional "payment\_method\_removed"or "payment\_method\_changed"or "expired\_card"or 4 more
+stopped\_reason: optional "payment\_method\_removed" or "payment\_method\_changed" or "expired\_card" or 4 more
 
 Why auto top-up stopped. Present only when <code>state</code> is <code>stopped</code> and the reason is known.
 
@@ -1074,7 +1074,7 @@ formatdate-time
 
 <summary>
 
-manual\_topup: object {available, default\_payment\_method\_id, limits }
+manual\_topup: object { available, default\_payment\_method\_id, limits }
 
 Manual top-up availability.
 
@@ -1096,7 +1096,7 @@ Payment method to preselect: the default when it can pay, otherwise the first th
 
 <summary>
 
-limits: object {currency, max\_cents, min\_cents }
+limits: object { currency, max\_cents, min\_cents }
 
 Allowed manual top-up amounts.
 
@@ -1132,7 +1132,7 @@ Minimum top-up amount in cents.
 
 <summary>
 
-payment\_methods: array of object {id, is\_default, type, 6 more }
+payment\_methods: array of object { id, is\_default, type, 6 more }
 
 The account’s payment methods, and whether each can pay for a top-up.
 
@@ -1154,7 +1154,7 @@ Whether this is the account’s default payment method.
 
 <summary>
 
-type: "card"or "apple\_pay"or "google\_pay"or 3 more
+type: "card" or "apple\_pay" or "google\_pay" or 3 more
 
 Payment method type.
 
@@ -1224,7 +1224,7 @@ Last 4 digits. Present for cards.
 
 <summary>
 
-unusable\_reason: optional "payment\_method\_not\_supported"or "expired\_card"or "prepaid\_card\_not\_supported"or "card\_not\_3ds\_capable"
+unusable\_reason: optional "payment\_method\_not\_supported" or "expired\_card" or "prepaid\_card\_not\_supported" or "card\_not\_3ds\_capable"
 
 Why this payment method can’t pay for a top-up. Present only when <code>usable</code> is false.
 
@@ -1260,7 +1260,7 @@ One of the following:
 
 <summary>
 
-reason: "NONE"or "CONTRACT\_BILLING"or "ACCOUNT\_RESTRICTED"or 3 more
+reason: "NONE" or "CONTRACT\_BILLING" or "ACCOUNT\_RESTRICTED" or 3 more
 
 What prevents a manual top-up, or <code>NONE</code>. <code>CONTRACT_BILLING</code>: the account is billed by contract. <code>ACCOUNT_RESTRICTED</code>: the account is restricted. <code>ELIGIBILITY_UNAVAILABLE</code>: eligibility could not be determined. <code>NO_ELIGIBLE_PAYMENT_METHOD</code>: no payment method can pay for a top-up. <code>DAILY_LIMIT_REACHED</code>: the account reached its daily top-up limit.
 
@@ -1300,7 +1300,7 @@ One of the following:
 
 <summary>
 
-status: "ready"or "blocked"or "unavailable"
+status: "ready" or "blocked" or "unavailable"
 
 <code>ready</code> when a manual top-up is available, <code>blocked</code> when <code>reason</code> prevents one, or <code>unavailable</code> when eligibility could not be determined and the request can be retried.
 
@@ -1332,7 +1332,7 @@ One of the following:
 
 <summary>
 
-TopupLimitsResponse object {currency, max\_cents, min\_cents }
+TopupLimitsResponse object { currency, max\_cents, min\_cents }
 
 </summary>
 
@@ -1380,7 +1380,7 @@ DELETE/accounts/{account\_id}/ai-gateway/billing/topup/config
 
 <summary>
 
-ConfigGetResponse object {amount, threshold, disabledReason, 2 more }
+ConfigGetResponse object { amount, threshold, disabledReason, 2 more }
 
 </summary>
 
@@ -1422,7 +1422,7 @@ When auto top-up was stopped, as a Unix timestamp in milliseconds. Present only 
 
 <summary>
 
-ConfigCreateResponse = object {amount, threshold } or object {amount, status, threshold } or object {amount, client\_secret, setup\_intent\_id, 2 more }
+ConfigCreateResponse = object { amount, threshold } or object { amount, status, threshold } or object { amount, client\_secret, setup\_intent\_id, 2 more }
 
 </summary>
 
@@ -1432,7 +1432,7 @@ One of the following:
 
 <summary>
 
-object {amount, threshold }
+object { amount, threshold }
 
 </summary>
 
@@ -1456,7 +1456,7 @@ Balance threshold in cents from the request.
 
 <summary>
 
-object {amount, status, threshold }
+object { amount, status, threshold }
 
 </summary>
 
@@ -1486,7 +1486,7 @@ Balance threshold in cents from the request.
 
 <summary>
 
-object {amount, client\_secret, setup\_intent\_id, 2 more }
+object { amount, client\_secret, setup\_intent\_id, 2 more }
 
 </summary>
 
@@ -1558,7 +1558,7 @@ DELETE/accounts/{account\_id}/ai-gateway/billing/spending-limit
 
 <summary>
 
-SpendingLimitGetResponse object {config, enabled }
+SpendingLimitGetResponse object { config, enabled }
 
 </summary>
 
@@ -1566,7 +1566,7 @@ SpendingLimitGetResponse object {config, enabled }
 
 <summary>
 
-config: object {amount, duration, strategy }
+config: object { amount, duration, strategy }
 
 Spending limit configuration.
 

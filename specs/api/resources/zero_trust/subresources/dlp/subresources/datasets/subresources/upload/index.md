@@ -36,7 +36,7 @@ POST/accounts/{account\_id}/dlp/datasets/{dataset\_id}/upload/{version}
 
 <summary>
 
-NewVersion object {encoding\_version, max\_cells, version, 3 more }
+NewVersion object { encoding\_version, max\_cells, version, 3 more }
 
 </summary>
 
@@ -70,7 +70,7 @@ case\_sensitive: optional boolean
 
 <summary>
 
-columns: optional array of object {entry\_id, header\_name, num\_cells, upload\_status }
+columns: optional array of object { entry\_id, header\_name, num\_cells, upload\_status }
 
 </summary>
 
@@ -94,7 +94,7 @@ formatint64
 
 <summary>
 
-upload\_status: "empty"or "uploading"or "pending"or 3 more
+upload\_status: "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 

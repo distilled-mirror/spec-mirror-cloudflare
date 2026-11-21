@@ -58,7 +58,7 @@ formatuuid
 
 <summary>
 
-category\_id: optional "b12a0fd6-f7b9-5393-9ef3-f888d506c550"or "d5b70eaa-626f-5761-b55b-6d9590df49fb"or "3b572d2b-890d-5286-9433-f18c85079030"or 5 more
+category\_id: optional "b12a0fd6-f7b9-5393-9ef3-f888d506c550" or "d5b70eaa-626f-5761-b55b-6d9590df49fb" or "3b572d2b-890d-5286-9433-f18c85079030" or 5 more
 
 One of the predefined Threat Signals feed categories; see GET /:account\_id/v2/threat-signals/categories.
 
@@ -146,7 +146,7 @@ maxLength255
 
 <summary>
 
-errors: array of object {message }
+errors: array of object { message }
 
 </summary>
 
@@ -162,7 +162,7 @@ message: string
 
 <summary>
 
-messages: array of object {message, code, custom\_feed\_count, 4 more }
+messages: array of object { message, code, custom\_feed\_count, 4 more }
 
 </summary>
 
@@ -202,7 +202,7 @@ path: optional array of string
 
 <summary>
 
-reason: optional "threat\_signals\_feed\_limit"or "free\_custom\_skills\_disabled"or "free\_skill\_run\_disabled"or 4 more
+reason: optional "threat\_signals\_feed\_limit" or "free\_custom\_skills\_disabled" or "free\_skill\_run\_disabled" or 4 more
 
 </summary>
 
@@ -248,7 +248,7 @@ One of the following:
 
 <summary>
 
-result: object {id, category\_id, category\_name, 13 more }
+result: object { id, category\_id, category\_name, 13 more }
 
 </summary>
 

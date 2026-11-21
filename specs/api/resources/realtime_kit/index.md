@@ -476,7 +476,7 @@ Controls whether recordings are uploaded to RealtimeKit’s bucket. If set to fa
 
 <summary>
 
-storage_config: optional object { access_key, auth_method, bucket, 9 more } or object { access_key, region, auth_method, 9 more } or object { private_key, access_key, auth_method, 9 more } or object { password, access_key, auth_method, 9 more }
+storage_config: optional object { access_key, auth_method, bucket, 9 more } or object { access_key, region, secret, 9 more } or object { access_key, region, auth_method, 9 more } or 2 more
 
 </summary>
 
@@ -566,11 +566,111 @@ Region of the storage medium.
 
 secret: optional string
 
-Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for `aws` storage. Similar to `access_key`, it is only writeable by clients, not readable.
 
 [Link to this property](#)
 
 type: optional "gcs"
+
+[Link to this property](#)
+
+username: optional string
+
+SSH destination server username for SFTP type storage medium
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+object { access_key, region, secret, 9 more }
+
+</summary>
+
+access_key: unknown
+
+minLength1
+
+[Link to this property](#)
+
+region: unknown
+
+minLength1
+
+[Link to this property](#)
+
+secret: unknown
+
+minLength1
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+auth_method: optional "KEY" or "PASSWORD"
+
+Authentication method used for “sftp” type storage medium
+
+</summary>
+
+One of the following:
+
+"KEY"
+
+[Link to this property](#)
+
+"PASSWORD"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+bucket: optional string
+
+Name of the storage medium’s bucket.
+
+[Link to this property](#)
+
+host: optional string
+
+SSH destination server host for SFTP type storage medium
+
+[Link to this property](#)
+
+password: optional string
+
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
+
+[Link to this property](#)
+
+path: optional string
+
+Path relative to the bucket root at which the recording will be placed.
+
+[Link to this property](#)
+
+port: optional number
+
+SSH destination server port for SFTP type storage medium
+
+[Link to this property](#)
+
+private_key: optional string
+
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
+
+[Link to this property](#)
+
+type: optional "aws"
 
 [Link to this property](#)
 
@@ -666,7 +766,7 @@ Private key used to login to destination SSH server for SFTP type storage medium
 
 secret: optional string
 
-Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for `aws` storage. Similar to `access_key`, it is only writeable by clients, not readable.
 
 [Link to this property](#)
 
@@ -674,15 +774,11 @@ Secret key of the storage medium. Similar to `access_key`, it is only writeable 
 
 <summary>
 
-type: optional "aws" or "azure" or "digitalocean"
+type: optional "azure" or "digitalocean"
 
 </summary>
 
 One of the following:
-
-"aws"
-
-[Link to this property](#)
 
 "azure"
 
@@ -770,7 +866,7 @@ Region of the storage medium.
 
 secret: optional string
 
-Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for `aws` storage. Similar to `access_key`, it is only writeable by clients, not readable.
 
 [Link to this property](#)
 
@@ -884,7 +980,7 @@ Region of the storage medium.
 
 secret: optional string
 
-Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for `aws` storage. Similar to `access_key`, it is only writeable by clients, not readable.
 
 [Link to this property](#)
 
@@ -1612,7 +1708,7 @@ Controls whether recordings are uploaded to RealtimeKit’s bucket. If set to fa
 
 <summary>
 
-storage_config: optional object { access_key, auth_method, bucket, 9 more } or object { access_key, region, auth_method, 9 more } or object { private_key, access_key, auth_method, 9 more } or object { password, access_key, auth_method, 9 more }
+storage_config: optional object { access_key, auth_method, bucket, 9 more } or object { access_key, region, secret, 9 more } or object { access_key, region, auth_method, 9 more } or 2 more
 
 </summary>
 
@@ -1702,11 +1798,111 @@ Region of the storage medium.
 
 secret: optional string
 
-Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for `aws` storage. Similar to `access_key`, it is only writeable by clients, not readable.
 
 [Link to this property](#)
 
 type: optional "gcs"
+
+[Link to this property](#)
+
+username: optional string
+
+SSH destination server username for SFTP type storage medium
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+object { access_key, region, secret, 9 more }
+
+</summary>
+
+access_key: unknown
+
+minLength1
+
+[Link to this property](#)
+
+region: unknown
+
+minLength1
+
+[Link to this property](#)
+
+secret: unknown
+
+minLength1
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+auth_method: optional "KEY" or "PASSWORD"
+
+Authentication method used for “sftp” type storage medium
+
+</summary>
+
+One of the following:
+
+"KEY"
+
+[Link to this property](#)
+
+"PASSWORD"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+bucket: optional string
+
+Name of the storage medium’s bucket.
+
+[Link to this property](#)
+
+host: optional string
+
+SSH destination server host for SFTP type storage medium
+
+[Link to this property](#)
+
+password: optional string
+
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
+
+[Link to this property](#)
+
+path: optional string
+
+Path relative to the bucket root at which the recording will be placed.
+
+[Link to this property](#)
+
+port: optional number
+
+SSH destination server port for SFTP type storage medium
+
+[Link to this property](#)
+
+private_key: optional string
+
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
+
+[Link to this property](#)
+
+type: optional "aws"
 
 [Link to this property](#)
 
@@ -1802,7 +1998,7 @@ Private key used to login to destination SSH server for SFTP type storage medium
 
 secret: optional string
 
-Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for `aws` storage. Similar to `access_key`, it is only writeable by clients, not readable.
 
 [Link to this property](#)
 
@@ -1810,15 +2006,11 @@ Secret key of the storage medium. Similar to `access_key`, it is only writeable 
 
 <summary>
 
-type: optional "aws" or "azure" or "digitalocean"
+type: optional "azure" or "digitalocean"
 
 </summary>
 
 One of the following:
-
-"aws"
-
-[Link to this property](#)
 
 "azure"
 
@@ -1906,7 +2098,7 @@ Region of the storage medium.
 
 secret: optional string
 
-Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for `aws` storage. Similar to `access_key`, it is only writeable by clients, not readable.
 
 [Link to this property](#)
 
@@ -2020,7 +2212,7 @@ Region of the storage medium.
 
 secret: optional string
 
-Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for `aws` storage. Similar to `access_key`, it is only writeable by clients, not readable.
 
 [Link to this property](#)
 
@@ -2718,7 +2910,7 @@ Controls whether recordings are uploaded to RealtimeKit’s bucket. If set to fa
 
 <summary>
 
-storage_config: optional object { access_key, auth_method, bucket, 9 more } or object { access_key, region, auth_method, 9 more } or object { private_key, access_key, auth_method, 9 more } or object { password, access_key, auth_method, 9 more }
+storage_config: optional object { access_key, auth_method, bucket, 9 more } or object { access_key, region, secret, 9 more } or object { access_key, region, auth_method, 9 more } or 2 more
 
 </summary>
 
@@ -2808,11 +3000,111 @@ Region of the storage medium.
 
 secret: optional string
 
-Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for `aws` storage. Similar to `access_key`, it is only writeable by clients, not readable.
 
 [Link to this property](#)
 
 type: optional "gcs"
+
+[Link to this property](#)
+
+username: optional string
+
+SSH destination server username for SFTP type storage medium
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+object { access_key, region, secret, 9 more }
+
+</summary>
+
+access_key: unknown
+
+minLength1
+
+[Link to this property](#)
+
+region: unknown
+
+minLength1
+
+[Link to this property](#)
+
+secret: unknown
+
+minLength1
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+auth_method: optional "KEY" or "PASSWORD"
+
+Authentication method used for “sftp” type storage medium
+
+</summary>
+
+One of the following:
+
+"KEY"
+
+[Link to this property](#)
+
+"PASSWORD"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+bucket: optional string
+
+Name of the storage medium’s bucket.
+
+[Link to this property](#)
+
+host: optional string
+
+SSH destination server host for SFTP type storage medium
+
+[Link to this property](#)
+
+password: optional string
+
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
+
+[Link to this property](#)
+
+path: optional string
+
+Path relative to the bucket root at which the recording will be placed.
+
+[Link to this property](#)
+
+port: optional number
+
+SSH destination server port for SFTP type storage medium
+
+[Link to this property](#)
+
+private_key: optional string
+
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
+
+[Link to this property](#)
+
+type: optional "aws"
 
 [Link to this property](#)
 
@@ -2908,7 +3200,7 @@ Private key used to login to destination SSH server for SFTP type storage medium
 
 secret: optional string
 
-Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for `aws` storage. Similar to `access_key`, it is only writeable by clients, not readable.
 
 [Link to this property](#)
 
@@ -2916,15 +3208,11 @@ Secret key of the storage medium. Similar to `access_key`, it is only writeable 
 
 <summary>
 
-type: optional "aws" or "azure" or "digitalocean"
+type: optional "azure" or "digitalocean"
 
 </summary>
 
 One of the following:
-
-"aws"
-
-[Link to this property](#)
 
 "azure"
 
@@ -3012,7 +3300,7 @@ Region of the storage medium.
 
 secret: optional string
 
-Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for `aws` storage. Similar to `access_key`, it is only writeable by clients, not readable.
 
 [Link to this property](#)
 
@@ -3126,7 +3414,7 @@ Region of the storage medium.
 
 secret: optional string
 
-Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for `aws` storage. Similar to `access_key`, it is only writeable by clients, not readable.
 
 [Link to this property](#)
 
@@ -3824,7 +4112,7 @@ Controls whether recordings are uploaded to RealtimeKit’s bucket. If set to fa
 
 <summary>
 
-storage_config: optional object { access_key, auth_method, bucket, 9 more } or object { access_key, region, auth_method, 9 more } or object { private_key, access_key, auth_method, 9 more } or object { password, access_key, auth_method, 9 more }
+storage_config: optional object { access_key, auth_method, bucket, 9 more } or object { access_key, region, secret, 9 more } or object { access_key, region, auth_method, 9 more } or 2 more
 
 </summary>
 
@@ -3914,11 +4202,111 @@ Region of the storage medium.
 
 secret: optional string
 
-Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for `aws` storage. Similar to `access_key`, it is only writeable by clients, not readable.
 
 [Link to this property](#)
 
 type: optional "gcs"
+
+[Link to this property](#)
+
+username: optional string
+
+SSH destination server username for SFTP type storage medium
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+object { access_key, region, secret, 9 more }
+
+</summary>
+
+access_key: unknown
+
+minLength1
+
+[Link to this property](#)
+
+region: unknown
+
+minLength1
+
+[Link to this property](#)
+
+secret: unknown
+
+minLength1
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+auth_method: optional "KEY" or "PASSWORD"
+
+Authentication method used for “sftp” type storage medium
+
+</summary>
+
+One of the following:
+
+"KEY"
+
+[Link to this property](#)
+
+"PASSWORD"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+bucket: optional string
+
+Name of the storage medium’s bucket.
+
+[Link to this property](#)
+
+host: optional string
+
+SSH destination server host for SFTP type storage medium
+
+[Link to this property](#)
+
+password: optional string
+
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
+
+[Link to this property](#)
+
+path: optional string
+
+Path relative to the bucket root at which the recording will be placed.
+
+[Link to this property](#)
+
+port: optional number
+
+SSH destination server port for SFTP type storage medium
+
+[Link to this property](#)
+
+private_key: optional string
+
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
+
+[Link to this property](#)
+
+type: optional "aws"
 
 [Link to this property](#)
 
@@ -4014,7 +4402,7 @@ Private key used to login to destination SSH server for SFTP type storage medium
 
 secret: optional string
 
-Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for `aws` storage. Similar to `access_key`, it is only writeable by clients, not readable.
 
 [Link to this property](#)
 
@@ -4022,15 +4410,11 @@ Secret key of the storage medium. Similar to `access_key`, it is only writeable 
 
 <summary>
 
-type: optional "aws" or "azure" or "digitalocean"
+type: optional "azure" or "digitalocean"
 
 </summary>
 
 One of the following:
-
-"aws"
-
-[Link to this property](#)
 
 "azure"
 
@@ -4118,7 +4502,7 @@ Region of the storage medium.
 
 secret: optional string
 
-Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for `aws` storage. Similar to `access_key`, it is only writeable by clients, not readable.
 
 [Link to this property](#)
 
@@ -4232,7 +4616,7 @@ Region of the storage medium.
 
 secret: optional string
 
-Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for `aws` storage. Similar to `access_key`, it is only writeable by clients, not readable.
 
 [Link to this property](#)
 
@@ -4930,7 +5314,7 @@ Controls whether recordings are uploaded to RealtimeKit’s bucket. If set to fa
 
 <summary>
 
-storage_config: optional object { access_key, auth_method, bucket, 9 more } or object { access_key, region, auth_method, 9 more } or object { private_key, access_key, auth_method, 9 more } or object { password, access_key, auth_method, 9 more }
+storage_config: optional object { access_key, auth_method, bucket, 9 more } or object { access_key, region, secret, 9 more } or object { access_key, region, auth_method, 9 more } or 2 more
 
 </summary>
 
@@ -5020,11 +5404,111 @@ Region of the storage medium.
 
 secret: optional string
 
-Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for `aws` storage. Similar to `access_key`, it is only writeable by clients, not readable.
 
 [Link to this property](#)
 
 type: optional "gcs"
+
+[Link to this property](#)
+
+username: optional string
+
+SSH destination server username for SFTP type storage medium
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+object { access_key, region, secret, 9 more }
+
+</summary>
+
+access_key: unknown
+
+minLength1
+
+[Link to this property](#)
+
+region: unknown
+
+minLength1
+
+[Link to this property](#)
+
+secret: unknown
+
+minLength1
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+auth_method: optional "KEY" or "PASSWORD"
+
+Authentication method used for “sftp” type storage medium
+
+</summary>
+
+One of the following:
+
+"KEY"
+
+[Link to this property](#)
+
+"PASSWORD"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+bucket: optional string
+
+Name of the storage medium’s bucket.
+
+[Link to this property](#)
+
+host: optional string
+
+SSH destination server host for SFTP type storage medium
+
+[Link to this property](#)
+
+password: optional string
+
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
+
+[Link to this property](#)
+
+path: optional string
+
+Path relative to the bucket root at which the recording will be placed.
+
+[Link to this property](#)
+
+port: optional number
+
+SSH destination server port for SFTP type storage medium
+
+[Link to this property](#)
+
+private_key: optional string
+
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
+
+[Link to this property](#)
+
+type: optional "aws"
 
 [Link to this property](#)
 
@@ -5120,7 +5604,7 @@ Private key used to login to destination SSH server for SFTP type storage medium
 
 secret: optional string
 
-Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for `aws` storage. Similar to `access_key`, it is only writeable by clients, not readable.
 
 [Link to this property](#)
 
@@ -5128,15 +5612,11 @@ Secret key of the storage medium. Similar to `access_key`, it is only writeable 
 
 <summary>
 
-type: optional "aws" or "azure" or "digitalocean"
+type: optional "azure" or "digitalocean"
 
 </summary>
 
 One of the following:
-
-"aws"
-
-[Link to this property](#)
 
 "azure"
 
@@ -5224,7 +5704,7 @@ Region of the storage medium.
 
 secret: optional string
 
-Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for `aws` storage. Similar to `access_key`, it is only writeable by clients, not readable.
 
 [Link to this property](#)
 
@@ -5338,7 +5818,7 @@ Region of the storage medium.
 
 secret: optional string
 
-Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for `aws` storage. Similar to `access_key`, it is only writeable by clients, not readable.
 
 [Link to this property](#)
 
@@ -12500,11 +12980,11 @@ SessionGetSessionTranscriptsResponse object { data, success }
 
 <summary>
 
-data: optional object { sessionId, transcript_download_url, transcript_download_url_expiry }
+data: optional object { session_id, transcript_download_url, transcript_download_url_expiry }
 
 </summary>
 
-sessionId: string
+session_id: string
 
 [Link to this property](#)
 
@@ -15996,7 +16476,7 @@ Controls whether recordings are uploaded to RealtimeKit’s bucket. If set to fa
 
 <summary>
 
-storage_config: optional object { access_key, auth_method, bucket, 9 more } or object { access_key, region, auth_method, 9 more } or object { private_key, access_key, auth_method, 9 more } or object { password, access_key, auth_method, 9 more }
+storage_config: optional object { access_key, auth_method, bucket, 9 more } or object { access_key, region, secret, 9 more } or object { access_key, region, auth_method, 9 more } or 2 more
 
 </summary>
 
@@ -16086,11 +16566,111 @@ Region of the storage medium.
 
 secret: optional string
 
-Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for `aws` storage. Similar to `access_key`, it is only writeable by clients, not readable.
 
 [Link to this property](#)
 
 type: optional "gcs"
+
+[Link to this property](#)
+
+username: optional string
+
+SSH destination server username for SFTP type storage medium
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+object { access_key, region, secret, 9 more }
+
+</summary>
+
+access_key: unknown
+
+minLength1
+
+[Link to this property](#)
+
+region: unknown
+
+minLength1
+
+[Link to this property](#)
+
+secret: unknown
+
+minLength1
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+auth_method: optional "KEY" or "PASSWORD"
+
+Authentication method used for “sftp” type storage medium
+
+</summary>
+
+One of the following:
+
+"KEY"
+
+[Link to this property](#)
+
+"PASSWORD"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+bucket: optional string
+
+Name of the storage medium’s bucket.
+
+[Link to this property](#)
+
+host: optional string
+
+SSH destination server host for SFTP type storage medium
+
+[Link to this property](#)
+
+password: optional string
+
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
+
+[Link to this property](#)
+
+path: optional string
+
+Path relative to the bucket root at which the recording will be placed.
+
+[Link to this property](#)
+
+port: optional number
+
+SSH destination server port for SFTP type storage medium
+
+[Link to this property](#)
+
+private_key: optional string
+
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
+
+[Link to this property](#)
+
+type: optional "aws"
 
 [Link to this property](#)
 
@@ -16186,7 +16766,7 @@ Private key used to login to destination SSH server for SFTP type storage medium
 
 secret: optional string
 
-Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for `aws` storage. Similar to `access_key`, it is only writeable by clients, not readable.
 
 [Link to this property](#)
 
@@ -16194,15 +16774,11 @@ Secret key of the storage medium. Similar to `access_key`, it is only writeable 
 
 <summary>
 
-type: optional "aws" or "azure" or "digitalocean"
+type: optional "azure" or "digitalocean"
 
 </summary>
 
 One of the following:
-
-"aws"
-
-[Link to this property](#)
 
 "azure"
 
@@ -16290,7 +16866,7 @@ Region of the storage medium.
 
 secret: optional string
 
-Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for `aws` storage. Similar to `access_key`, it is only writeable by clients, not readable.
 
 [Link to this property](#)
 
@@ -16404,7 +16980,7 @@ Region of the storage medium.
 
 secret: optional string
 
-Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for `aws` storage. Similar to `access_key`, it is only writeable by clients, not readable.
 
 [Link to this property](#)
 
@@ -16710,7 +17286,7 @@ Total recording time in seconds.
 
 <summary>
 
-storage_config: optional object { access_key, auth_method, bucket, 9 more } or object { access_key, region, auth_method, 9 more } or object { private_key, access_key, auth_method, 9 more } or object { password, access_key, auth_method, 9 more }
+storage_config: optional object { access_key, auth_method, bucket, 9 more } or object { access_key, region, secret, 9 more } or object { access_key, region, auth_method, 9 more } or 2 more
 
 </summary>
 
@@ -16800,11 +17376,111 @@ Region of the storage medium.
 
 secret: optional string
 
-Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for `aws` storage. Similar to `access_key`, it is only writeable by clients, not readable.
 
 [Link to this property](#)
 
 type: optional "gcs"
+
+[Link to this property](#)
+
+username: optional string
+
+SSH destination server username for SFTP type storage medium
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+object { access_key, region, secret, 9 more }
+
+</summary>
+
+access_key: unknown
+
+minLength1
+
+[Link to this property](#)
+
+region: unknown
+
+minLength1
+
+[Link to this property](#)
+
+secret: unknown
+
+minLength1
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+auth_method: optional "KEY" or "PASSWORD"
+
+Authentication method used for “sftp” type storage medium
+
+</summary>
+
+One of the following:
+
+"KEY"
+
+[Link to this property](#)
+
+"PASSWORD"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+bucket: optional string
+
+Name of the storage medium’s bucket.
+
+[Link to this property](#)
+
+host: optional string
+
+SSH destination server host for SFTP type storage medium
+
+[Link to this property](#)
+
+password: optional string
+
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
+
+[Link to this property](#)
+
+path: optional string
+
+Path relative to the bucket root at which the recording will be placed.
+
+[Link to this property](#)
+
+port: optional number
+
+SSH destination server port for SFTP type storage medium
+
+[Link to this property](#)
+
+private_key: optional string
+
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
+
+[Link to this property](#)
+
+type: optional "aws"
 
 [Link to this property](#)
 
@@ -16900,7 +17576,7 @@ Private key used to login to destination SSH server for SFTP type storage medium
 
 secret: optional string
 
-Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for `aws` storage. Similar to `access_key`, it is only writeable by clients, not readable.
 
 [Link to this property](#)
 
@@ -16908,15 +17584,11 @@ Secret key of the storage medium. Similar to `access_key`, it is only writeable 
 
 <summary>
 
-type: optional "aws" or "azure" or "digitalocean"
+type: optional "azure" or "digitalocean"
 
 </summary>
 
 One of the following:
-
-"aws"
-
-[Link to this property](#)
 
 "azure"
 
@@ -17004,7 +17676,7 @@ Region of the storage medium.
 
 secret: optional string
 
-Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for `aws` storage. Similar to `access_key`, it is only writeable by clients, not readable.
 
 [Link to this property](#)
 
@@ -17118,7 +17790,7 @@ Region of the storage medium.
 
 secret: optional string
 
-Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for `aws` storage. Similar to `access_key`, it is only writeable by clients, not readable.
 
 [Link to this property](#)
 
@@ -17538,7 +18210,7 @@ One of the following:
 
 <summary>
 
-storage_config: optional object { access_key, auth_method, bucket, 9 more } or object { access_key, region, auth_method, 9 more } or object { private_key, access_key, auth_method, 9 more } or object { password, access_key, auth_method, 9 more }
+storage_config: optional object { access_key, auth_method, bucket, 9 more } or object { access_key, region, secret, 9 more } or object { access_key, region, auth_method, 9 more } or 2 more
 
 </summary>
 
@@ -17628,11 +18300,111 @@ Region of the storage medium.
 
 secret: optional string
 
-Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for `aws` storage. Similar to `access_key`, it is only writeable by clients, not readable.
 
 [Link to this property](#)
 
 type: optional "gcs"
+
+[Link to this property](#)
+
+username: optional string
+
+SSH destination server username for SFTP type storage medium
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+object { access_key, region, secret, 9 more }
+
+</summary>
+
+access_key: unknown
+
+minLength1
+
+[Link to this property](#)
+
+region: unknown
+
+minLength1
+
+[Link to this property](#)
+
+secret: unknown
+
+minLength1
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+auth_method: optional "KEY" or "PASSWORD"
+
+Authentication method used for “sftp” type storage medium
+
+</summary>
+
+One of the following:
+
+"KEY"
+
+[Link to this property](#)
+
+"PASSWORD"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+bucket: optional string
+
+Name of the storage medium’s bucket.
+
+[Link to this property](#)
+
+host: optional string
+
+SSH destination server host for SFTP type storage medium
+
+[Link to this property](#)
+
+password: optional string
+
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
+
+[Link to this property](#)
+
+path: optional string
+
+Path relative to the bucket root at which the recording will be placed.
+
+[Link to this property](#)
+
+port: optional number
+
+SSH destination server port for SFTP type storage medium
+
+[Link to this property](#)
+
+private_key: optional string
+
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
+
+[Link to this property](#)
+
+type: optional "aws"
 
 [Link to this property](#)
 
@@ -17728,7 +18500,7 @@ Private key used to login to destination SSH server for SFTP type storage medium
 
 secret: optional string
 
-Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for `aws` storage. Similar to `access_key`, it is only writeable by clients, not readable.
 
 [Link to this property](#)
 
@@ -17736,15 +18508,11 @@ Secret key of the storage medium. Similar to `access_key`, it is only writeable 
 
 <summary>
 
-type: optional "aws" or "azure" or "digitalocean"
+type: optional "azure" or "digitalocean"
 
 </summary>
 
 One of the following:
-
-"aws"
-
-[Link to this property](#)
 
 "azure"
 
@@ -17832,7 +18600,7 @@ Region of the storage medium.
 
 secret: optional string
 
-Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for `aws` storage. Similar to `access_key`, it is only writeable by clients, not readable.
 
 [Link to this property](#)
 
@@ -17946,7 +18714,7 @@ Region of the storage medium.
 
 secret: optional string
 
-Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for `aws` storage. Similar to `access_key`, it is only writeable by clients, not readable.
 
 [Link to this property](#)
 
@@ -18490,7 +19258,7 @@ One of the following:
 
 <summary>
 
-storage_config: optional object { access_key, auth_method, bucket, 9 more } or object { access_key, region, auth_method, 9 more } or object { private_key, access_key, auth_method, 9 more } or object { password, access_key, auth_method, 9 more }
+storage_config: optional object { access_key, auth_method, bucket, 9 more } or object { access_key, region, secret, 9 more } or object { access_key, region, auth_method, 9 more } or 2 more
 
 </summary>
 
@@ -18580,11 +19348,111 @@ Region of the storage medium.
 
 secret: optional string
 
-Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for `aws` storage. Similar to `access_key`, it is only writeable by clients, not readable.
 
 [Link to this property](#)
 
 type: optional "gcs"
+
+[Link to this property](#)
+
+username: optional string
+
+SSH destination server username for SFTP type storage medium
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+object { access_key, region, secret, 9 more }
+
+</summary>
+
+access_key: unknown
+
+minLength1
+
+[Link to this property](#)
+
+region: unknown
+
+minLength1
+
+[Link to this property](#)
+
+secret: unknown
+
+minLength1
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+auth_method: optional "KEY" or "PASSWORD"
+
+Authentication method used for “sftp” type storage medium
+
+</summary>
+
+One of the following:
+
+"KEY"
+
+[Link to this property](#)
+
+"PASSWORD"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+bucket: optional string
+
+Name of the storage medium’s bucket.
+
+[Link to this property](#)
+
+host: optional string
+
+SSH destination server host for SFTP type storage medium
+
+[Link to this property](#)
+
+password: optional string
+
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
+
+[Link to this property](#)
+
+path: optional string
+
+Path relative to the bucket root at which the recording will be placed.
+
+[Link to this property](#)
+
+port: optional number
+
+SSH destination server port for SFTP type storage medium
+
+[Link to this property](#)
+
+private_key: optional string
+
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
+
+[Link to this property](#)
+
+type: optional "aws"
 
 [Link to this property](#)
 
@@ -18680,7 +19548,7 @@ Private key used to login to destination SSH server for SFTP type storage medium
 
 secret: optional string
 
-Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for `aws` storage. Similar to `access_key`, it is only writeable by clients, not readable.
 
 [Link to this property](#)
 
@@ -18688,15 +19556,11 @@ Secret key of the storage medium. Similar to `access_key`, it is only writeable 
 
 <summary>
 
-type: optional "aws" or "azure" or "digitalocean"
+type: optional "azure" or "digitalocean"
 
 </summary>
 
 One of the following:
-
-"aws"
-
-[Link to this property](#)
 
 "azure"
 
@@ -18784,7 +19648,7 @@ Region of the storage medium.
 
 secret: optional string
 
-Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for `aws` storage. Similar to `access_key`, it is only writeable by clients, not readable.
 
 [Link to this property](#)
 
@@ -18898,7 +19762,7 @@ Region of the storage medium.
 
 secret: optional string
 
-Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for `aws` storage. Similar to `access_key`, it is only writeable by clients, not readable.
 
 [Link to this property](#)
 
@@ -19288,7 +20152,7 @@ One of the following:
 
 <summary>
 
-storage_config: optional object { access_key, auth_method, bucket, 9 more } or object { access_key, region, auth_method, 9 more } or object { private_key, access_key, auth_method, 9 more } or object { password, access_key, auth_method, 9 more }
+storage_config: optional object { access_key, auth_method, bucket, 9 more } or object { access_key, region, secret, 9 more } or object { access_key, region, auth_method, 9 more } or 2 more
 
 </summary>
 
@@ -19378,11 +20242,111 @@ Region of the storage medium.
 
 secret: optional string
 
-Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for `aws` storage. Similar to `access_key`, it is only writeable by clients, not readable.
 
 [Link to this property](#)
 
 type: optional "gcs"
+
+[Link to this property](#)
+
+username: optional string
+
+SSH destination server username for SFTP type storage medium
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+object { access_key, region, secret, 9 more }
+
+</summary>
+
+access_key: unknown
+
+minLength1
+
+[Link to this property](#)
+
+region: unknown
+
+minLength1
+
+[Link to this property](#)
+
+secret: unknown
+
+minLength1
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+auth_method: optional "KEY" or "PASSWORD"
+
+Authentication method used for “sftp” type storage medium
+
+</summary>
+
+One of the following:
+
+"KEY"
+
+[Link to this property](#)
+
+"PASSWORD"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+bucket: optional string
+
+Name of the storage medium’s bucket.
+
+[Link to this property](#)
+
+host: optional string
+
+SSH destination server host for SFTP type storage medium
+
+[Link to this property](#)
+
+password: optional string
+
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
+
+[Link to this property](#)
+
+path: optional string
+
+Path relative to the bucket root at which the recording will be placed.
+
+[Link to this property](#)
+
+port: optional number
+
+SSH destination server port for SFTP type storage medium
+
+[Link to this property](#)
+
+private_key: optional string
+
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
+
+[Link to this property](#)
+
+type: optional "aws"
 
 [Link to this property](#)
 
@@ -19478,7 +20442,7 @@ Private key used to login to destination SSH server for SFTP type storage medium
 
 secret: optional string
 
-Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for `aws` storage. Similar to `access_key`, it is only writeable by clients, not readable.
 
 [Link to this property](#)
 
@@ -19486,15 +20450,11 @@ Secret key of the storage medium. Similar to `access_key`, it is only writeable 
 
 <summary>
 
-type: optional "aws" or "azure" or "digitalocean"
+type: optional "azure" or "digitalocean"
 
 </summary>
 
 One of the following:
-
-"aws"
-
-[Link to this property](#)
 
 "azure"
 
@@ -19582,7 +20542,7 @@ Region of the storage medium.
 
 secret: optional string
 
-Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for `aws` storage. Similar to `access_key`, it is only writeable by clients, not readable.
 
 [Link to this property](#)
 
@@ -19696,7 +20656,7 @@ Region of the storage medium.
 
 secret: optional string
 
-Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for `aws` storage. Similar to `access_key`, it is only writeable by clients, not readable.
 
 [Link to this property](#)
 
@@ -20956,7 +21916,7 @@ data: optional object { action, participants }
 
 </summary>
 
-action: optional string
+action: optional "kick"
 
 [Link to this property](#)
 
@@ -20964,39 +21924,15 @@ action: optional string
 
 <summary>
 
-participants: optional array of object { id, created_at, updated_at, 3 more }
+participants: optional array of object { id }
+
+Participants the kick was requested for.
 
 </summary>
 
 id: string
 
-ID of the session participant
-
-[Link to this property](#)
-
-created_at: string
-
-[Link to this property](#)
-
-updated_at: string
-
-[Link to this property](#)
-
-email: optional string
-
-Email of the session participant.
-
-[Link to this property](#)
-
-name: optional string
-
-Name of the session participant.
-
-[Link to this property](#)
-
-picture: optional string
-
-A URL pointing to a picture of the participant.
+ID of the participant
 
 [Link to this property](#)
 
@@ -21032,11 +21968,13 @@ data: optional object { action, kicked_participants_count }
 
 </summary>
 
-action: optional string
+action: optional "kick-all"
 
 [Link to this property](#)
 
 kicked_participants_count: optional number
+
+Number of connections (peers) that were in the session when it was ended.
 
 [Link to this property](#)
 
@@ -21184,7 +22122,7 @@ data: optional object { action, participants }
 
 </summary>
 
-action: optional string
+action: optional "mute"
 
 [Link to this property](#)
 
@@ -21192,39 +22130,15 @@ action: optional string
 
 <summary>
 
-participants: optional array of object { id, created_at, updated_at, 3 more }
+participants: optional array of object { id }
+
+Participants the mute was requested for.
 
 </summary>
 
 id: string
 
-ID of the session participant
-
-[Link to this property](#)
-
-created_at: string
-
-[Link to this property](#)
-
-updated_at: string
-
-[Link to this property](#)
-
-email: optional string
-
-Email of the session participant.
-
-[Link to this property](#)
-
-name: optional string
-
-Name of the session participant.
-
-[Link to this property](#)
-
-picture: optional string
-
-A URL pointing to a picture of the participant.
+ID of the participant
 
 [Link to this property](#)
 
@@ -21260,11 +22174,13 @@ data: optional object { action, muted_participants_count }
 
 </summary>
 
-action: optional string
+action: optional "mute-all"
 
 [Link to this property](#)
 
 muted_participants_count: optional number
+
+Number of connections (peers) whose microphone was unmuted and has been muted by this request.
 
 [Link to this property](#)
 

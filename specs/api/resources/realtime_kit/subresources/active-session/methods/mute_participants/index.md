@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/accounts/{account\_id}/realtime/kit/{app\_id}/meetings/{meeting\_id}/active-session/mute
 
-Mutes one or more participants from an active session using user ID or custom participant ID.
+Mutes the microphone of one or more participants of an active session using their participant IDs.
 
 ##### Security
 
@@ -80,11 +80,9 @@ meeting\_id: string
 
 ##### Body ParametersJSONExpand Collapse
 
-custom\_participant\_ids: optional array of string
+participant\_ids: array of string
 
-[Link to this property](#)%20realtime_kit.active-session%20%3E%20(method)%20mute_participants%20%3E%20(params)%200%20%3E%20(param)%20custom_participant_ids%20%3E%20(schema)>)
-
-participant\_ids: optional array of string
+IDs of the participants to mute, as returned when the participants were added to the meeting.
 
 [Link to this property](#)%20realtime_kit.active-session%20%3E%20(method)%20mute_participants%20%3E%20(params)%200%20%3E%20(param)%20participant_ids%20%3E%20(schema)>)
 
@@ -94,11 +92,11 @@ participant\_ids: optional array of string
 
 <summary>
 
-data: optional object {action, participants }
+data: optional object { action, participants }
 
 </summary>
 
-action: optional string
+action: optional "mute"
 
 <a href="#">Link to this property</a>
 
@@ -106,39 +104,15 @@ action: optional string
 
 <summary>
 
-participants: optional array of object {id, created\_at, updated\_at, 3 more }
+participants: optional array of object { id }
+
+Participants the mute was requested for.
 
 </summary>
 
 id: string
 
-ID of the session participant
-
-<a href="#">Link to this property</a>
-
-created\_at: string
-
-<a href="#">Link to this property</a>
-
-updated\_at: string
-
-<a href="#">Link to this property</a>
-
-email: optional string
-
-Email of the session participant.
-
-<a href="#">Link to this property</a>
-
-name: optional string
-
-Name of the session participant.
-
-<a href="#">Link to this property</a>
-
-picture: optional string
-
-A URL pointing to a picture of the participant.
+ID of the participant
 
 <a href="#">Link to this property</a>
 
@@ -164,23 +138,36 @@ HTTPTypeScriptPythonGoTerraform
 curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/realtime/kit/$APP_ID/meetings/$MEETING_ID/active-session/mute \
     -H 'Content-Type: application/json' \
     -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
-    -d '{}'
+    -d '{
+          "participant_ids": [
+            "string"
+          ]
+        }'
 ```
 
 200 example
 
+400 example
+
+400 example
+
+400 example
+
+401 example
+
+404 example
+
+404 example
+
+500 example
+
 ```
 {
   "data": {
-    "action": "action",
+    "action": "mute",
     "participants": [
       {
-        "id": "id",
-        "created_at": "created_at",
-        "updated_at": "updated_at",
-        "email": "email",
-        "name": "name",
-        "picture": "picture"
+        "id": "005f4e0c-4d08-4d4e-a391-a76be75cd296"
       }
     ]
   },
@@ -188,25 +175,206 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/realtime/kit/$APP
 }
 ```
 
+```
+{
+  "error": {
+    "code": 400,
+    "details": [
+      {
+        "code": "invalid_format",
+        "field": "meeting_id",
+        "location": "path",
+        "message": "Invalid GUID"
+      }
+    ],
+    "message": "Request validation failed"
+  },
+  "success": false
+}
+```
+
+```
+{
+  "error": {
+    "code": 400,
+    "details": [
+      {
+        "code": "invalid_type",
+        "field": "participant_ids",
+        "location": "body",
+        "message": "Invalid input: expected array, received string"
+      }
+    ],
+    "message": "Request validation failed"
+  },
+  "success": false
+}
+```
+
+```
+{
+  "error": {
+    "code": 400,
+    "message": "participant_ids is required"
+  },
+  "success": false
+}
+```
+
+```
+{
+  "error": {
+    "code": 401,
+    "message": "app not found"
+  },
+  "success": false
+}
+```
+
+```
+{
+  "error": {
+    "code": 404,
+    "message": "No active session found for meeting id: 6bf2b8be-04dd-4191-b602-1128921a306b"
+  },
+  "success": false
+}
+```
+
+```
+{
+  "error": {
+    "code": 404,
+    "message": "Meeting 6bf2b8be-04dd-4191-b602-1128921a306b not found for organization 4f6c1a8e-2b39-4f6b-9c2d-7a1e5b3c9d10"
+  },
+  "success": false
+}
+```
+
+```
+{
+  "error": {
+    "code": 500,
+    "message": "Internal Server Error"
+  },
+  "success": false
+}
+```
+
 ##### Returns Examples
 
 200 example
 
+400 example
+
+400 example
+
+400 example
+
+401 example
+
+404 example
+
+404 example
+
+500 example
+
 ```
 {
   "data": {
-    "action": "action",
+    "action": "mute",
     "participants": [
       {
-        "id": "id",
-        "created_at": "created_at",
-        "updated_at": "updated_at",
-        "email": "email",
-        "name": "name",
-        "picture": "picture"
+        "id": "005f4e0c-4d08-4d4e-a391-a76be75cd296"
       }
     ]
   },
   "success": true
+}
+```
+
+```
+{
+  "error": {
+    "code": 400,
+    "details": [
+      {
+        "code": "invalid_format",
+        "field": "meeting_id",
+        "location": "path",
+        "message": "Invalid GUID"
+      }
+    ],
+    "message": "Request validation failed"
+  },
+  "success": false
+}
+```
+
+```
+{
+  "error": {
+    "code": 400,
+    "details": [
+      {
+        "code": "invalid_type",
+        "field": "participant_ids",
+        "location": "body",
+        "message": "Invalid input: expected array, received string"
+      }
+    ],
+    "message": "Request validation failed"
+  },
+  "success": false
+}
+```
+
+```
+{
+  "error": {
+    "code": 400,
+    "message": "participant_ids is required"
+  },
+  "success": false
+}
+```
+
+```
+{
+  "error": {
+    "code": 401,
+    "message": "app not found"
+  },
+  "success": false
+}
+```
+
+```
+{
+  "error": {
+    "code": 404,
+    "message": "No active session found for meeting id: 6bf2b8be-04dd-4191-b602-1128921a306b"
+  },
+  "success": false
+}
+```
+
+```
+{
+  "error": {
+    "code": 404,
+    "message": "Meeting 6bf2b8be-04dd-4191-b602-1128921a306b not found for organization 4f6c1a8e-2b39-4f6b-9c2d-7a1e5b3c9d10"
+  },
+  "success": false
+}
+```
+
+```
+{
+  "error": {
+    "code": 500,
+    "message": "Internal Server Error"
+  },
+  "success": false
 }
 ```

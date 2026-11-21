@@ -50,7 +50,7 @@ DELETE/accounts/{account\_id}/magic/sites/{site\_id}/wans/{wan\_id}
 
 <summary>
 
-WAN object {id, health\_check\_rate, load\_balance\_inner\_flows, 8 more }
+WAN object { id, health\_check\_rate, load\_balance\_inner\_flows, 8 more }
 
 </summary>
 
@@ -66,7 +66,7 @@ maxLength32
 
 <summary>
 
-health\_check\_rate: optional "low"or "mid"or "high"
+health\_check\_rate: optional "low" or "mid" or "high"
 
 Magic WAN health check rate for tunnels created on this link. The default value is <code>mid</code>.
 
@@ -156,7 +156,7 @@ VLAN ID. Use zero for untagged.
 
 <summary>
 
-WANStaticAddressing object {address, gateway\_address, secondary\_address, secondary\_gateway\_address }
+WANStaticAddressing object { address, gateway\_address, secondary\_address, secondary\_gateway\_address }
 
 (optional) if omitted, use DHCP. Submit secondary\_address when site is in high availability mode.
 

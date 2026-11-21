@@ -102,7 +102,7 @@ Comma-separated SCIM attributes to exclude from the response.
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -124,7 +124,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -144,7 +144,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -166,7 +166,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -192,7 +192,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, active, displayName, 6 more }
+result: optional object { id, active, displayName, 6 more }
 
 A SCIM User resource. Additional SCIM extension attributes are supported.
 
@@ -214,7 +214,7 @@ displayName: optional string
 
 <summary>
 
-emails: optional array of object {primary, type, value }
+emails: optional array of object { primary, type, value }
 
 </summary>
 
@@ -242,7 +242,7 @@ externalId: optional string
 
 <summary>
 
-meta: optional object {created, lastModified, location, 2 more }
+meta: optional object { created, lastModified, location, 2 more }
 
 </summary>
 
@@ -280,7 +280,7 @@ version: optional string
 
 <summary>
 
-name: optional object {familyName, formatted, givenName, 3 more }
+name: optional object { familyName, formatted, givenName, 3 more }
 
 </summary>
 

@@ -104,7 +104,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -146,7 +146,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -246,7 +246,7 @@ priority: optional number
 
 <summary>
 
-ruleset: optional object {id, enabled, zone\_name, zone\_tag }
+ruleset: optional object { id, enabled, zone\_name, zone\_tag }
 
 </summary>
 

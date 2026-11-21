@@ -32,7 +32,7 @@ GET/accounts/{account\_id}/iam/permission\_groups/{permission\_group\_id}
 
 <summary>
 
-PermissionGroupListResponse object {id, meta, name }
+PermissionGroupListResponse object { id, meta, name }
 
 A named group of permissions that map to a group of operations against resources.
 
@@ -48,7 +48,7 @@ Identifier of the permission group.
 
 <summary>
 
-meta: optional object {category, deprecated, description, 5 more }
+meta: optional object { category, deprecated, description, 5 more }
 
 Attributes associated to the permission group.
 
@@ -122,7 +122,7 @@ Name of the permission group.
 
 <summary>
 
-PermissionGroupGetResponse object {id, meta, name }
+PermissionGroupGetResponse object { id, meta, name }
 
 A named group of permissions that map to a group of operations against resources.
 
@@ -138,7 +138,7 @@ Identifier of the permission group.
 
 <summary>
 
-meta: optional object {category, deprecated, description, 5 more }
+meta: optional object { category, deprecated, description, 5 more }
 
 Attributes associated to the permission group.
 

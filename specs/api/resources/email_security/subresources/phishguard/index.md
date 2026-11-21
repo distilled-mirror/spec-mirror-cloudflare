@@ -30,7 +30,7 @@ GET/accounts/{account\_id}/email-security/phishguard/reports
 
 <summary>
 
-ReportListResponse object {id, content, disposition, 7 more }
+ReportListResponse object { id, content, disposition, 7 more }
 
 </summary>
 
@@ -46,7 +46,7 @@ content: string
 
 <summary>
 
-disposition: "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+disposition: "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 The verdict Email Security assigns to a message.
 
@@ -102,7 +102,7 @@ One of the following:
 
 <summary>
 
-fields: object {to, from, occurred\_at, 2 more }
+fields: object { to, from, occurred\_at, 2 more }
 
 </summary>
 
@@ -156,7 +156,7 @@ formatdate-time
 
 <summary>
 
-tags: optional array of object {category, value }
+tags: optional array of object { category, value }
 
 </summary>
 

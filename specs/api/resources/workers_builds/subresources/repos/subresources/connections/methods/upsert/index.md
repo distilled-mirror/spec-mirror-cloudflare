@@ -86,7 +86,7 @@ Human-readable name of the account or namespace that owns the repository.
 
 <summary>
 
-provider\_type: "github"or "gitlab"or "gitlab\_internal"or "origin"
+provider\_type: "github" or "gitlab" or "gitlab\_internal" or "origin"
 
 Source control provider.
 
@@ -132,7 +132,7 @@ Human-readable repository name.
 
 <summary>
 
-errors: array of object {message, code }
+errors: array of object { message, code }
 
 </summary>
 
@@ -156,7 +156,7 @@ messages: array of string
 
 <summary>
 
-result: object {created\_on, deleted\_on, modified\_on, 6 more } or object {created\_on, deleted\_on, modified\_on, 6 more }
+result: object { created\_on, deleted\_on, modified\_on, 6 more } or object { created\_on, deleted\_on, modified\_on, 6 more }
 
 </summary>
 
@@ -166,7 +166,7 @@ One of the following:
 
 <summary>
 
-object {created\_on, deleted\_on, modified\_on, 6 more }
+object { created\_on, deleted\_on, modified\_on, 6 more }
 
 </summary>
 
@@ -204,7 +204,7 @@ Human-readable name of the account or namespace that owns the repository.
 
 <summary>
 
-provider\_type: optional "github"or "gitlab"or "gitlab\_internal"or "origin"
+provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
 
 Source control provider.
 
@@ -260,7 +260,7 @@ Human-readable repository name.
 
 <summary>
 
-object {created\_on, deleted\_on, modified\_on, 6 more }
+object { created\_on, deleted\_on, modified\_on, 6 more }
 
 </summary>
 
@@ -298,7 +298,7 @@ Human-readable name of the account or namespace that owns the repository.
 
 <summary>
 
-provider\_type: optional "github"or "gitlab"or "gitlab\_internal"or "origin"
+provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
 
 Source control provider.
 
@@ -362,7 +362,7 @@ success: boolean
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

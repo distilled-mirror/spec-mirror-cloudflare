@@ -88,7 +88,7 @@ minimum1
 
 <summary>
 
-period: optional "current\_billing\_cycle"or "all"
+period: optional "current\_billing\_cycle" or "all"
 
 Select current subscription billing-cycle history or history across all cycles.
 
@@ -114,7 +114,7 @@ One of the following:
 
 <summary>
 
-errors: array of object {message, code }
+errors: array of object { message, code }
 
 Always empty on success.
 
@@ -140,7 +140,7 @@ Identifies the error or notice type.
 
 <summary>
 
-messages: array of object {message, code }
+messages: array of object { message, code }
 
 Contains informational notices about the response.
 
@@ -166,7 +166,7 @@ Identifies the error or notice type.
 
 <summary>
 
-result: array of object {id, action, actor, 5 more }
+result: array of object { id, action, actor, 5 more }
 
 </summary>
 
@@ -178,7 +178,7 @@ id: string
 
 <summary>
 
-action: "created"or "updated"or "enabled"or 2 more
+action: "created" or "updated" or "enabled" or 2 more
 
 </summary>
 
@@ -218,7 +218,7 @@ Verified actor identifier, unknown when absent, or trusted internal actor.
 
 <summary>
 
-details: object {after, before }
+details: object { after, before }
 
 </summary>
 
@@ -226,7 +226,7 @@ details: object {after, before }
 
 <summary>
 
-after: optional object {id, account\_id, action, 7 more }
+after: optional object { id, account\_id, action, 7 more }
 
 A spend policy.
 
@@ -252,7 +252,7 @@ formatint64
 
 <summary>
 
-action: "notification"or "usage\_block"
+action: "notification" or "usage\_block"
 
 The action taken when the threshold is reached. <code>notification</code> sends an email to <code>notification_email</code>. <code>usage_block</code> blocks further usage of the product until the end of the billing period. Raising the threshold above the current balance, disabling the policy, or deleting it lifts the block early.
 
@@ -294,7 +294,7 @@ Email address that receives notifications. An empty string when none is set.
 
 <summary>
 
-product\_id: "workers"or "durable\_objects"
+product\_id: "workers" or "durable\_objects"
 
 The product the policy applies to: <code>workers</code> or <code>durable_objects</code>. Each product’s balance and policies are separate. Both products support <code>notification</code> and <code>usage_block</code> policies on create and update.
 
@@ -336,7 +336,7 @@ minimum1
 
 <summary>
 
-current\_state: optional object {balance\_cents, billing\_period\_end, billing\_period\_start, 3 more }
+current\_state: optional object { balance\_cents, billing\_period\_end, billing\_period\_start, 3 more }
 
 Read-only state on list/get responses, evaluated from the latest owning projector snapshot at request time, independently of the API replica. Configuration enabled/version/ETag do not change when a cycle rolls over. Audit history remains unchanged. Missing during a rolling upgrade or on mutation responses; clients must treat missing state as unavailable. Balances are asynchronous estimates, not a synchronous usage read.
 
@@ -364,7 +364,7 @@ formatdate-time
 
 <summary>
 
-enforcement: object {applied\_generation, delivery\_status, desired\_generation, 2 more }
+enforcement: object { applied\_generation, delivery\_status, desired\_generation, 2 more }
 
 Durable desired cap and delivery bookkeeping for this policy, or null if no owned effect exists. Separate from threshold evaluation: pending/leased/retry can lag the new billing period. Succeeded with equal generations means delivery completed, not an EWC readback.
 
@@ -380,7 +380,7 @@ formatint64
 
 <summary>
 
-delivery\_status: "pending"or "leased"or "retry"or "succeeded"
+delivery\_status: "pending" or "leased" or "retry" or "succeeded"
 
 </summary>
 
@@ -416,7 +416,7 @@ formatint64
 
 <summary>
 
-desired\_state: "active"or "inactive"
+desired\_state: "active" or "inactive"
 
 </summary>
 
@@ -456,7 +456,7 @@ formatdate-time
 
 <summary>
 
-status: "disabled"or "no\_current\_period"or "unavailable"or 2 more
+status: "disabled" or "no\_current\_period" or "unavailable" or 2 more
 
 Threshold evaluation, not proof of an edge cap. No current active period yields no\_current\_period for enabled policies; failed aggregate reads yield unavailable for enabled policies. Disabled policies report disabled. Neither no\_current\_period nor unavailable implies a zero balance or below-limit state. Operators may disable current-state reads, in which case current\_state is omitted.
 
@@ -500,7 +500,7 @@ One of the following:
 
 <summary>
 
-before: optional object {id, account\_id, action, 7 more }
+before: optional object { id, account\_id, action, 7 more }
 
 Prior configuration; null on creation or if a previous revision is unavailable.
 
@@ -526,7 +526,7 @@ formatint64
 
 <summary>
 
-action: "notification"or "usage\_block"
+action: "notification" or "usage\_block"
 
 The action taken when the threshold is reached. <code>notification</code> sends an email to <code>notification_email</code>. <code>usage_block</code> blocks further usage of the product until the end of the billing period. Raising the threshold above the current balance, disabling the policy, or deleting it lifts the block early.
 
@@ -568,7 +568,7 @@ Email address that receives notifications. An empty string when none is set.
 
 <summary>
 
-product\_id: "workers"or "durable\_objects"
+product\_id: "workers" or "durable\_objects"
 
 The product the policy applies to: <code>workers</code> or <code>durable_objects</code>. Each product’s balance and policies are separate. Both products support <code>notification</code> and <code>usage_block</code> policies on create and update.
 
@@ -610,7 +610,7 @@ minimum1
 
 <summary>
 
-current\_state: optional object {balance\_cents, billing\_period\_end, billing\_period\_start, 3 more }
+current\_state: optional object { balance\_cents, billing\_period\_end, billing\_period\_start, 3 more }
 
 Read-only state on list/get responses, evaluated from the latest owning projector snapshot at request time, independently of the API replica. Configuration enabled/version/ETag do not change when a cycle rolls over. Audit history remains unchanged. Missing during a rolling upgrade or on mutation responses; clients must treat missing state as unavailable. Balances are asynchronous estimates, not a synchronous usage read.
 
@@ -638,7 +638,7 @@ formatdate-time
 
 <summary>
 
-enforcement: object {applied\_generation, delivery\_status, desired\_generation, 2 more }
+enforcement: object { applied\_generation, delivery\_status, desired\_generation, 2 more }
 
 Durable desired cap and delivery bookkeeping for this policy, or null if no owned effect exists. Separate from threshold evaluation: pending/leased/retry can lag the new billing period. Succeeded with equal generations means delivery completed, not an EWC readback.
 
@@ -654,7 +654,7 @@ formatint64
 
 <summary>
 
-delivery\_status: "pending"or "leased"or "retry"or "succeeded"
+delivery\_status: "pending" or "leased" or "retry" or "succeeded"
 
 </summary>
 
@@ -690,7 +690,7 @@ formatint64
 
 <summary>
 
-desired\_state: "active"or "inactive"
+desired\_state: "active" or "inactive"
 
 </summary>
 
@@ -730,7 +730,7 @@ formatdate-time
 
 <summary>
 
-status: "disabled"or "no\_current\_period"or "unavailable"or 2 more
+status: "disabled" or "no\_current\_period" or "unavailable" or 2 more
 
 Threshold evaluation, not proof of an edge cap. No current active period yields no\_current\_period for enabled policies; failed aggregate reads yield unavailable for enabled policies. Disabled policies report disabled. Neither no\_current\_period nor unavailable implies a zero balance or below-limit state. Operators may disable current-state reads, in which case current\_state is omitted.
 
@@ -808,7 +808,7 @@ product\_id: string
 
 <summary>
 
-result\_info: object {count, cursor }
+result\_info: object { count, cursor }
 
 </summary>
 

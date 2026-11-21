@@ -60,7 +60,7 @@ DELETE/accounts/{account\_id}/mnm/config
 
 <summary>
 
-Configuration object {default\_sampling, name, router\_ips, warp\_devices }
+Configuration object { default\_sampling, name, router\_ips, warp\_devices }
 
 </summary>
 
@@ -86,7 +86,7 @@ router\_ips: array of string
 
 <summary>
 
-warp\_devices: array of object {id, name, router\_ip }
+warp\_devices: array of object { id, name, router\_ip }
 
 </summary>
 
@@ -154,7 +154,7 @@ DELETE/accounts/{account\_id}/mnm/rules/{rule\_id}
 
 <summary>
 
-MagicNetworkMonitoringRule object {id, automatic\_advertisement, name, 8 more }
+MagicNetworkMonitoringRule object { id, automatic\_advertisement, name, 8 more }
 
 </summary>
 
@@ -184,7 +184,7 @@ prefixes: array of string
 
 <summary>
 
-type: "threshold"or "zscore"or "advanced\_ddos"
+type: "threshold" or "zscore" or "advanced\_ddos"
 
 MNM rule type.
 
@@ -220,7 +220,7 @@ minimum1
 
 <summary>
 
-duration: optional "1m"or "5m"or "10m"or 5 more
+duration: optional "1m" or "5m" or "10m" or 5 more
 
 The amount of time that the rule threshold must be exceeded to send an alert notification. The final value must be equivalent to one of the following 8 values \[“1m”,“5m”,“10m”,“15m”,“20m”,“30m”,“45m”,“60m”].
 
@@ -276,7 +276,7 @@ minimum1
 
 <summary>
 
-prefix\_match: optional "exact"or "subnet"or "supernet"
+prefix\_match: optional "exact" or "subnet" or "supernet"
 
 Prefix match type to be applied for a prefix auto advertisement when using an advanced\_ddos rule.
 
@@ -304,7 +304,7 @@ One of the following:
 
 <summary>
 
-zscore\_sensitivity: optional "low"or "medium"or "high"
+zscore\_sensitivity: optional "low" or "medium" or "high"
 
 Level of sensitivity set for zscore rules.
 
@@ -332,7 +332,7 @@ One of the following:
 
 <summary>
 
-zscore\_target: optional "bits"or "packets"
+zscore\_target: optional "bits" or "packets"
 
 Target of the zscore rule analysis.
 
@@ -368,7 +368,7 @@ PATCH/accounts/{account\_id}/mnm/rules/{rule\_id}/advertisement
 
 <summary>
 
-Advertisement object {automatic\_advertisement }
+Advertisement object { automatic\_advertisement }
 
 </summary>
 

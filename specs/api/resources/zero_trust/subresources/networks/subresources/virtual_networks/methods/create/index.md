@@ -108,7 +108,7 @@ If `true`, this virtual network is the default for the account.
 
 <summary>
 
-errors: array of object {code, message, context }
+errors: array of object { code, message, context }
 
 </summary>
 
@@ -136,7 +136,7 @@ Optional error-specific context.
 
 <summary>
 
-messages: array of object {code, message, context }
+messages: array of object { code, message, context }
 
 </summary>
 

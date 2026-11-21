@@ -38,7 +38,7 @@ The preferred authorization scheme for interacting with the Cloudflare API. [Cre
 
 ##### Accepted Permissions (at least one required)
 
-`Zero Trust Read``Zero Trust Write`
+`CASB Write``CASB Read``Zero Trust Read``Zero Trust Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -52,7 +52,7 @@ account\_id: string
 
 <summary>
 
-direction: optional "asc"or "desc"
+direction: optional "asc" or "desc"
 
 Direction to order results.
 
@@ -108,7 +108,7 @@ formatdate-time
 
 <summary>
 
-order: optional "asset\_name"or "dlp\_profile\_count"or "integration\_name"or "latest\_affliction\_date"
+order: optional "asset\_name" or "dlp\_profile\_count" or "integration\_name" or "latest\_affliction\_date"
 
 Which field to use when ordering content assets.
 
@@ -160,7 +160,7 @@ A search term.
 
 <summary>
 
-vendor: optional "ANTHROPIC"or "AWS"or "BITBUCKET"or 14 more
+vendor: optional "ANTHROPIC" or "AWS" or "BITBUCKET" or 14 more
 
 Filter by vendor
 
@@ -246,7 +246,7 @@ One of the following:
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -276,7 +276,7 @@ formaturi
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -298,7 +298,7 @@ JSON pointer to the source of the error.
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -328,7 +328,7 @@ formaturi
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -350,7 +350,7 @@ JSON pointer to the source of the error.
 
 <summary>
 
-result\_info: object {count, cursor, next, 4 more }
+result\_info: object { count, cursor, next, 4 more }
 
 Pagination and result information.
 
@@ -416,7 +416,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional array of object {asset\_id, asset\_name, dlp\_contexts, 4 more }
+result: optional array of object { asset\_id, asset\_name, dlp\_contexts, 4 more }
 
 Array of content asset objects.
 
@@ -440,7 +440,7 @@ Name of the asset.
 
 <summary>
 
-dlp\_contexts: array of object {created, entry\_ids, profile\_id, 6 more }
+dlp\_contexts: array of object { created, entry\_ids, profile\_id, 6 more }
 
 DLP context information for this asset.
 
@@ -538,7 +538,7 @@ IDs of DLP profiles that flagged this asset.
 
 <summary>
 
-integration: object {created, last\_hydrated, name, 12 more }
+integration: object { created, last\_hydrated, name, 12 more }
 
 Summary information about an integration.
 
@@ -578,7 +578,7 @@ The vendor-specific permissions associated with the integration.
 
 <summary>
 
-policy: object {id, client\_id, compliance\_level, 4 more }
+policy: object { id, client\_id, compliance\_level, 4 more }
 
 Policy configuration for an integration.
 
@@ -658,7 +658,7 @@ Whether the integrations permissions can be updated.
 
 <summary>
 
-vendor: object {id, description, display\_name, 5 more }
+vendor: object { id, description, display\_name, 5 more }
 
 Information about a vendor/service provider.
 
@@ -724,7 +724,7 @@ The policies related to the vendor.
 
 <summary>
 
-zt\_enrollments: array of object {id, description, display\_name, enabled }
+zt\_enrollments: array of object { id, description, display\_name, enabled }
 
 Zero Trust products associated with this integration.
 
@@ -770,7 +770,7 @@ formatuuid
 
 <summary>
 
-credential\_health\_status: optional "Initializing"or "Healthy"or "Unhealthy"
+credential\_health\_status: optional "Initializing" or "Healthy" or "Unhealthy"
 
 Health status of integration credentials.
 

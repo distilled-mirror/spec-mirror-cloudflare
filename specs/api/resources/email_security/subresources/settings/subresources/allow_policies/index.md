@@ -50,7 +50,7 @@ POST/accounts/{account\_id}/email-security/settings/allow\_policies/batch
 
 <summary>
 
-AllowPolicyListResponse object {id, created\_at, last\_modified, 13 more }
+AllowPolicyListResponse object { id, created\_at, last\_modified, 13 more }
 
 An email allow policy.
 
@@ -160,7 +160,7 @@ minLength1
 
 <summary>
 
-pattern\_type: optional "EMAIL"or "DOMAIN"or "IP"or "UNKNOWN"
+pattern\_type: optional "EMAIL" or "DOMAIN" or "IP" or "UNKNOWN"
 
 Type of pattern matching.
 
@@ -207,7 +207,7 @@ Enforce DMARC, SPF or DKIM authentication. When on, Email Security only honors p
 
 <summary>
 
-AllowPolicyGetResponse object {id, created\_at, last\_modified, 13 more }
+AllowPolicyGetResponse object { id, created\_at, last\_modified, 13 more }
 
 An email allow policy.
 
@@ -317,7 +317,7 @@ minLength1
 
 <summary>
 
-pattern\_type: optional "EMAIL"or "DOMAIN"or "IP"or "UNKNOWN"
+pattern\_type: optional "EMAIL" or "DOMAIN" or "IP" or "UNKNOWN"
 
 Type of pattern matching.
 
@@ -364,7 +364,7 @@ Enforce DMARC, SPF or DKIM authentication. When on, Email Security only honors p
 
 <summary>
 
-AllowPolicyCreateResponse object {id, created\_at, last\_modified, 13 more }
+AllowPolicyCreateResponse object { id, created\_at, last\_modified, 13 more }
 
 An email allow policy.
 
@@ -474,7 +474,7 @@ minLength1
 
 <summary>
 
-pattern\_type: optional "EMAIL"or "DOMAIN"or "IP"or "UNKNOWN"
+pattern\_type: optional "EMAIL" or "DOMAIN" or "IP" or "UNKNOWN"
 
 Type of pattern matching.
 
@@ -521,7 +521,7 @@ Enforce DMARC, SPF or DKIM authentication. When on, Email Security only honors p
 
 <summary>
 
-AllowPolicyEditResponse object {id, created\_at, last\_modified, 13 more }
+AllowPolicyEditResponse object { id, created\_at, last\_modified, 13 more }
 
 An email allow policy.
 
@@ -631,7 +631,7 @@ minLength1
 
 <summary>
 
-pattern\_type: optional "EMAIL"or "DOMAIN"or "IP"or "UNKNOWN"
+pattern\_type: optional "EMAIL" or "DOMAIN" or "IP" or "UNKNOWN"
 
 Type of pattern matching.
 
@@ -678,7 +678,7 @@ Enforce DMARC, SPF or DKIM authentication. When on, Email Security only honors p
 
 <summary>
 
-AllowPolicyDeleteResponse object {id }
+AllowPolicyDeleteResponse object { id }
 
 </summary>
 
@@ -698,7 +698,7 @@ formatuuid
 
 <summary>
 
-AllowPolicyBatchResponse object {deletes, patches, posts, puts }
+AllowPolicyBatchResponse object { deletes, patches, posts, puts }
 
 </summary>
 
@@ -706,7 +706,7 @@ AllowPolicyBatchResponse object {deletes, patches, posts, puts }
 
 <summary>
 
-deletes: optional array of object {id }
+deletes: optional array of object { id }
 
 </summary>
 
@@ -726,7 +726,7 @@ formatuuid
 
 <summary>
 
-patches: optional array of object {id, created\_at, last\_modified, 13 more }
+patches: optional array of object { id, created\_at, last\_modified, 13 more }
 
 </summary>
 
@@ -834,7 +834,7 @@ minLength1
 
 <summary>
 
-pattern\_type: optional "EMAIL"or "DOMAIN"or "IP"or "UNKNOWN"
+pattern\_type: optional "EMAIL" or "DOMAIN" or "IP" or "UNKNOWN"
 
 Type of pattern matching.
 
@@ -881,7 +881,7 @@ Enforce DMARC, SPF or DKIM authentication. When on, Email Security only honors p
 
 <summary>
 
-posts: optional array of object {id, created\_at, last\_modified, 13 more }
+posts: optional array of object { id, created\_at, last\_modified, 13 more }
 
 </summary>
 
@@ -989,7 +989,7 @@ minLength1
 
 <summary>
 
-pattern\_type: optional "EMAIL"or "DOMAIN"or "IP"or "UNKNOWN"
+pattern\_type: optional "EMAIL" or "DOMAIN" or "IP" or "UNKNOWN"
 
 Type of pattern matching.
 
@@ -1036,7 +1036,7 @@ Enforce DMARC, SPF or DKIM authentication. When on, Email Security only honors p
 
 <summary>
 
-puts: optional array of object {id, created\_at, last\_modified, 13 more }
+puts: optional array of object { id, created\_at, last\_modified, 13 more }
 
 </summary>
 
@@ -1144,7 +1144,7 @@ minLength1
 
 <summary>
 
-pattern\_type: optional "EMAIL"or "DOMAIN"or "IP"or "UNKNOWN"
+pattern\_type: optional "EMAIL" or "DOMAIN" or "IP" or "UNKNOWN"
 
 Type of pattern matching.
 

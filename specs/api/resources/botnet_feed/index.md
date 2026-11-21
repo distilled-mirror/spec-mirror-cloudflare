@@ -32,7 +32,7 @@ GET/accounts/{account\_id}/botnet\_feed/asn/{asn\_id}/full\_report
 
 <summary>
 
-ASNDayReportResponse object {cidr, date, offense\_count }
+ASNDayReportResponse object { cidr, date, offense\_count }
 
 </summary>
 
@@ -58,7 +58,7 @@ offense\_count: optional number
 
 <summary>
 
-ASNFullReportResponse object {cidr, date, offense\_count }
+ASNFullReportResponse object { cidr, date, offense\_count }
 
 </summary>
 
@@ -98,7 +98,7 @@ DELETE/accounts/{account\_id}/botnet\_feed/configs/asn/{asn\_id}
 
 <summary>
 
-ASNGetResponse object {asn }
+ASNGetResponse object { asn }
 
 </summary>
 
@@ -114,7 +114,7 @@ asn: optional number
 
 <summary>
 
-ASNDeleteResponse object {asn }
+ASNDeleteResponse object { asn }
 
 </summary>
 

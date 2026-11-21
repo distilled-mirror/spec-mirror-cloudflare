@@ -78,7 +78,7 @@ formatuuid
 
 <summary>
 
-status: "closing"or "closed"
+status: "closing" or "closed"
 
 </summary>
 

@@ -58,6 +58,10 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 </details>
 
+##### Accepted Permissions (at least one required)
+
+`AI Search Metadata Read``AI Search Write``AI Search Read``Auto Rag Write``Auto Rag Read`
+
 ##### P ath ParametersExpand Collapse
 
 account\_id: string
@@ -104,7 +108,7 @@ minimum0
 
 <summary>
 
-result: array of object {id, item, text, 5 more }
+result: array of object { id, item, text, 5 more }
 
 </summary>
 
@@ -116,7 +120,7 @@ id: string
 
 <summary>
 
-item: object {key, metadata, timestamp }
+item: object { key, metadata, timestamp }
 
 </summary>
 
@@ -164,7 +168,7 @@ minimum0
 
 <summary>
 
-source\_media\_type: optional "audio"or "video"
+source\_media\_type: optional "audio" or "video"
 
 Audio/video transcript chunks only: type of the source media file. Omitted for all other chunks.
 
@@ -196,7 +200,7 @@ start\_byte: optional number
 
 <summary>
 
-result\_info: object {count, limit, offset, total }
+result\_info: object { count, limit, offset, total }
 
 </summary>
 

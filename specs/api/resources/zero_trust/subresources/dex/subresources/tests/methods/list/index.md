@@ -100,7 +100,7 @@ Optionally filter result stats to a specific device(s). Cannot be used in combin
 
 <summary>
 
-kind: optional "http"or "traceroute"
+kind: optional "http" or "traceroute"
 
 Filter by test type.
 
@@ -156,7 +156,7 @@ Optionally filter results by test name.
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -178,7 +178,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -198,7 +198,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -220,7 +220,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -254,7 +254,7 @@ result: optional <a href="https://developers.cloudflare.com/api/resources/zero_t
 
 <summary>
 
-overviewMetrics: object {testsTotal, avgHttpAvailabilityPct, avgTracerouteAvailabilityPct }
+overviewMetrics: object { testsTotal, avgHttpAvailabilityPct, avgTracerouteAvailabilityPct }
 
 </summary>
 
@@ -288,7 +288,7 @@ formatfloat
 
 <summary>
 
-tests: array of object {id, created, description, 13 more }
+tests: array of object { id, created, description, 13 more }
 
 array of test results objects.
 
@@ -334,7 +334,7 @@ The interval at which the synthetic application test is set to run.
 
 <summary>
 
-kind: "http"or "traceroute"
+kind: "http" or "traceroute"
 
 test type, http or traceroute
 
@@ -368,7 +368,7 @@ updated: string
 
 <summary>
 
-httpResults: optional object {resourceFetchTime }
+httpResults: optional object { resourceFetchTime }
 
 </summary>
 
@@ -376,7 +376,7 @@ httpResults: optional object {resourceFetchTime }
 
 <summary>
 
-resourceFetchTime: object {history, avgMs, overTime }
+resourceFetchTime: object { history, avgMs, overTime }
 
 </summary>
 
@@ -384,7 +384,7 @@ resourceFetchTime: object {history, avgMs, overTime }
 
 <summary>
 
-history: array of object {timePeriod, avgMs, deltaPct }
+history: array of object { timePeriod, avgMs, deltaPct }
 
 </summary>
 
@@ -400,7 +400,7 @@ timePeriod: <a href="https://developers.cloudflare.com/api/resources/zero_trust#
 
 <summary>
 
-units: "hours"or "days"or "testRuns"
+units: "hours" or "days" or "testRuns"
 
 </summary>
 
@@ -452,7 +452,7 @@ avgMs: optional number
 
 <summary>
 
-overTime: optional object {timePeriod, values }
+overTime: optional object { timePeriod, values }
 
 </summary>
 
@@ -468,7 +468,7 @@ timePeriod: <a href="https://developers.cloudflare.com/api/resources/zero_trust#
 
 <summary>
 
-units: "hours"or "days"or "testRuns"
+units: "hours" or "days" or "testRuns"
 
 </summary>
 
@@ -502,7 +502,7 @@ value: number
 
 <summary>
 
-values: array of object {avgMs, timestamp }
+values: array of object { avgMs, timestamp }
 
 </summary>
 
@@ -534,7 +534,7 @@ timestamp: string
 
 <summary>
 
-httpResultsByColo: optional array of object {colo, resourceFetchTime }
+httpResultsByColo: optional array of object { colo, resourceFetchTime }
 
 </summary>
 
@@ -548,7 +548,7 @@ Cloudflare colo
 
 <summary>
 
-resourceFetchTime: object {history, avgMs, overTime }
+resourceFetchTime: object { history, avgMs, overTime }
 
 </summary>
 
@@ -556,7 +556,7 @@ resourceFetchTime: object {history, avgMs, overTime }
 
 <summary>
 
-history: array of object {timePeriod, avgMs, deltaPct }
+history: array of object { timePeriod, avgMs, deltaPct }
 
 </summary>
 
@@ -572,7 +572,7 @@ timePeriod: <a href="https://developers.cloudflare.com/api/resources/zero_trust#
 
 <summary>
 
-units: "hours"or "days"or "testRuns"
+units: "hours" or "days" or "testRuns"
 
 </summary>
 
@@ -624,7 +624,7 @@ avgMs: optional number
 
 <summary>
 
-overTime: optional object {timePeriod, values }
+overTime: optional object { timePeriod, values }
 
 </summary>
 
@@ -640,7 +640,7 @@ timePeriod: <a href="https://developers.cloudflare.com/api/resources/zero_trust#
 
 <summary>
 
-units: "hours"or "days"or "testRuns"
+units: "hours" or "days" or "testRuns"
 
 </summary>
 
@@ -674,7 +674,7 @@ value: number
 
 <summary>
 
-values: array of object {avgMs, timestamp }
+values: array of object { avgMs, timestamp }
 
 </summary>
 
@@ -746,7 +746,7 @@ targeted: optional boolean
 
 <summary>
 
-tracerouteResults: optional object {roundTripTime }
+tracerouteResults: optional object { roundTripTime }
 
 </summary>
 
@@ -754,7 +754,7 @@ tracerouteResults: optional object {roundTripTime }
 
 <summary>
 
-roundTripTime: object {history, avgMs, overTime }
+roundTripTime: object { history, avgMs, overTime }
 
 </summary>
 
@@ -762,7 +762,7 @@ roundTripTime: object {history, avgMs, overTime }
 
 <summary>
 
-history: array of object {timePeriod, avgMs, deltaPct }
+history: array of object { timePeriod, avgMs, deltaPct }
 
 </summary>
 
@@ -778,7 +778,7 @@ timePeriod: <a href="https://developers.cloudflare.com/api/resources/zero_trust#
 
 <summary>
 
-units: "hours"or "days"or "testRuns"
+units: "hours" or "days" or "testRuns"
 
 </summary>
 
@@ -830,7 +830,7 @@ avgMs: optional number
 
 <summary>
 
-overTime: optional object {timePeriod, values }
+overTime: optional object { timePeriod, values }
 
 </summary>
 
@@ -846,7 +846,7 @@ timePeriod: <a href="https://developers.cloudflare.com/api/resources/zero_trust#
 
 <summary>
 
-units: "hours"or "days"or "testRuns"
+units: "hours" or "days" or "testRuns"
 
 </summary>
 
@@ -880,7 +880,7 @@ value: number
 
 <summary>
 
-values: array of object {avgMs, timestamp }
+values: array of object { avgMs, timestamp }
 
 </summary>
 
@@ -912,7 +912,7 @@ timestamp: string
 
 <summary>
 
-tracerouteResultsByColo: optional array of object {colo, roundTripTime }
+tracerouteResultsByColo: optional array of object { colo, roundTripTime }
 
 </summary>
 
@@ -926,7 +926,7 @@ Cloudflare colo
 
 <summary>
 
-roundTripTime: object {history, avgMs, overTime }
+roundTripTime: object { history, avgMs, overTime }
 
 </summary>
 
@@ -934,7 +934,7 @@ roundTripTime: object {history, avgMs, overTime }
 
 <summary>
 
-history: array of object {timePeriod, avgMs, deltaPct }
+history: array of object { timePeriod, avgMs, deltaPct }
 
 </summary>
 
@@ -950,7 +950,7 @@ timePeriod: <a href="https://developers.cloudflare.com/api/resources/zero_trust#
 
 <summary>
 
-units: "hours"or "days"or "testRuns"
+units: "hours" or "days" or "testRuns"
 
 </summary>
 
@@ -1002,7 +1002,7 @@ avgMs: optional number
 
 <summary>
 
-overTime: optional object {timePeriod, values }
+overTime: optional object { timePeriod, values }
 
 </summary>
 
@@ -1018,7 +1018,7 @@ timePeriod: <a href="https://developers.cloudflare.com/api/resources/zero_trust#
 
 <summary>
 
-units: "hours"or "days"or "testRuns"
+units: "hours" or "days" or "testRuns"
 
 </summary>
 
@@ -1052,7 +1052,7 @@ value: number
 
 <summary>
 
-values: array of object {avgMs, timestamp }
+values: array of object { avgMs, timestamp }
 
 </summary>
 

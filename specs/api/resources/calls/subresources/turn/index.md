@@ -44,7 +44,7 @@ DELETE/accounts/{account\_id}/calls/turn\_keys/{key\_id}
 
 <summary>
 
-TURNListResponse object {created, modified, name, uid }
+TURNListResponse object { created, modified, name, uid }
 
 </summary>
 
@@ -88,7 +88,7 @@ minLength32
 
 <summary>
 
-TURNGetResponse object {created, modified, name, uid }
+TURNGetResponse object { created, modified, name, uid }
 
 </summary>
 
@@ -132,7 +132,7 @@ minLength32
 
 <summary>
 
-TURNCreateResponse object {created, modified, name, 2 more }
+TURNCreateResponse object { created, modified, name, 2 more }
 
 </summary>
 
@@ -186,7 +186,7 @@ minLength32
 
 <summary>
 
-TURNUpdateResponse object {created, modified, name, uid }
+TURNUpdateResponse object { created, modified, name, uid }
 
 </summary>
 
@@ -230,7 +230,7 @@ minLength32
 
 <summary>
 
-TURNDeleteResponse object {created, modified, name, uid }
+TURNDeleteResponse object { created, modified, name, uid }
 
 </summary>
 

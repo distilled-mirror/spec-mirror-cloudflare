@@ -48,7 +48,7 @@ DELETE/accounts/{account\_id}/workers/observability/issues/automations/{automati
 
 <summary>
 
-AutomationListResponse object {automations }
+AutomationListResponse object { automations }
 
 </summary>
 
@@ -56,7 +56,7 @@ AutomationListResponse object {automations }
 
 <summary>
 
-automations: array of object {id, ansPolicyId, created, 12 more }
+automations: array of object { id, ansPolicyId, created, 12 more }
 
 </summary>
 
@@ -96,7 +96,7 @@ revision: number
 
 <summary>
 
-scope: "account"or "service"
+scope: "account" or "service"
 
 </summary>
 
@@ -130,7 +130,7 @@ threshold: number
 
 <summary>
 
-triggerType: "occurrence\_threshold"or "recurrence\_after\_inactivity"
+triggerType: "occurrence\_threshold" or "recurrence\_after\_inactivity"
 
 </summary>
 
@@ -168,7 +168,7 @@ updatedByUserId: string
 
 <summary>
 
-AutomationGetResponse object {automation }
+AutomationGetResponse object { automation }
 
 </summary>
 
@@ -176,7 +176,7 @@ AutomationGetResponse object {automation }
 
 <summary>
 
-automation: object {id, ansPolicyId, created, 12 more }
+automation: object { id, ansPolicyId, created, 12 more }
 
 </summary>
 
@@ -216,7 +216,7 @@ revision: number
 
 <summary>
 
-scope: "account"or "service"
+scope: "account" or "service"
 
 </summary>
 
@@ -250,7 +250,7 @@ threshold: number
 
 <summary>
 
-triggerType: "occurrence\_threshold"or "recurrence\_after\_inactivity"
+triggerType: "occurrence\_threshold" or "recurrence\_after\_inactivity"
 
 </summary>
 
@@ -288,7 +288,7 @@ updatedByUserId: string
 
 <summary>
 
-AutomationCreateResponse object {automation }
+AutomationCreateResponse object { automation }
 
 </summary>
 
@@ -296,7 +296,7 @@ AutomationCreateResponse object {automation }
 
 <summary>
 
-automation: object {id, ansPolicyId, created, 12 more }
+automation: object { id, ansPolicyId, created, 12 more }
 
 </summary>
 
@@ -336,7 +336,7 @@ revision: number
 
 <summary>
 
-scope: "account"or "service"
+scope: "account" or "service"
 
 </summary>
 
@@ -370,7 +370,7 @@ threshold: number
 
 <summary>
 
-triggerType: "occurrence\_threshold"or "recurrence\_after\_inactivity"
+triggerType: "occurrence\_threshold" or "recurrence\_after\_inactivity"
 
 </summary>
 
@@ -408,7 +408,7 @@ updatedByUserId: string
 
 <summary>
 
-AutomationUpdateResponse object {automation }
+AutomationUpdateResponse object { automation }
 
 </summary>
 
@@ -416,7 +416,7 @@ AutomationUpdateResponse object {automation }
 
 <summary>
 
-automation: object {id, ansPolicyId, created, 12 more }
+automation: object { id, ansPolicyId, created, 12 more }
 
 </summary>
 
@@ -456,7 +456,7 @@ revision: number
 
 <summary>
 
-scope: "account"or "service"
+scope: "account" or "service"
 
 </summary>
 
@@ -490,7 +490,7 @@ threshold: number
 
 <summary>
 
-triggerType: "occurrence\_threshold"or "recurrence\_after\_inactivity"
+triggerType: "occurrence\_threshold" or "recurrence\_after\_inactivity"
 
 </summary>
 
@@ -528,7 +528,7 @@ updatedByUserId: string
 
 <summary>
 
-AutomationDeleteResponse object {automation }
+AutomationDeleteResponse object { automation }
 
 </summary>
 
@@ -536,7 +536,7 @@ AutomationDeleteResponse object {automation }
 
 <summary>
 
-automation: object {id, ansPolicyId, created, 12 more }
+automation: object { id, ansPolicyId, created, 12 more }
 
 </summary>
 
@@ -576,7 +576,7 @@ revision: number
 
 <summary>
 
-scope: "account"or "service"
+scope: "account" or "service"
 
 </summary>
 
@@ -610,7 +610,7 @@ threshold: number
 
 <summary>
 
-triggerType: "occurrence\_threshold"or "recurrence\_after\_inactivity"
+triggerType: "occurrence\_threshold" or "recurrence\_after\_inactivity"
 
 </summary>
 

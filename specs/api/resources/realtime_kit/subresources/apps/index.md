@@ -40,7 +40,7 @@ POST/accounts/{account\_id}/realtime/kit/apps
 
 <summary>
 
-AppGetResponse object {data, paging, success }
+AppGetResponse object { data, paging, success }
 
 </summary>
 
@@ -48,7 +48,7 @@ AppGetResponse object {data, paging, success }
 
 <summary>
 
-data: optional array of object {id, created\_at, name }
+data: optional array of object { id, created\_at, name }
 
 </summary>
 
@@ -76,7 +76,7 @@ name: optional string
 
 <summary>
 
-paging: optional object {end\_offset, start\_offset, total\_count }
+paging: optional object { end\_offset, start\_offset, total\_count }
 
 </summary>
 
@@ -108,7 +108,7 @@ success: optional boolean
 
 <summary>
 
-AppGetAppByIDResponse object {data, success }
+AppGetAppByIDResponse object { data, success }
 
 </summary>
 
@@ -116,7 +116,7 @@ AppGetAppByIDResponse object {data, success }
 
 <summary>
 
-data: optional object {id, created\_at, name }
+data: optional object { id, created\_at, name }
 
 </summary>
 
@@ -152,7 +152,7 @@ success: optional boolean
 
 <summary>
 
-AppUpdateAppByIDResponse object {data, success }
+AppUpdateAppByIDResponse object { data, success }
 
 </summary>
 
@@ -160,7 +160,7 @@ AppUpdateAppByIDResponse object {data, success }
 
 <summary>
 
-data: object {id, created\_at, name }
+data: object { id, created\_at, name }
 
 </summary>
 
@@ -196,7 +196,7 @@ success: true
 
 <summary>
 
-AppPostResponse object {data, success }
+AppPostResponse object { data, success }
 
 </summary>
 
@@ -204,7 +204,7 @@ AppPostResponse object {data, success }
 
 <summary>
 
-data: optional object {app }
+data: optional object { app }
 
 </summary>
 
@@ -212,7 +212,7 @@ data: optional object {app }
 
 <summary>
 
-app: optional object {id, created\_at, name }
+app: optional object { id, created\_at, name }
 
 </summary>
 

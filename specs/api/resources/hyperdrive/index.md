@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 <summary>
 
-Hyperdrive object {id, name, origin, 6 more }
+Hyperdrive object { id, name, origin, 6 more }
 
 </summary>
 
@@ -46,7 +46,7 @@ maxLength2048
 
 <summary>
 
-origin: object {database, host, password, 3 more } or object {access\_client\_id, access\_client\_secret, database, 4 more } or object {database, password, scheme, 2 more }
+origin: object { database, host, password, 3 more } or object { access\_client\_id, access\_client\_secret, database, 4 more } or object { database, password, scheme, 2 more }
 
 Combines database connection fields with exactly one supported network location.
 
@@ -58,7 +58,7 @@ One of the following:
 
 <summary>
 
-PublicDatabase object {database, host, password, 3 more }
+PublicDatabase object { database, host, password, 3 more }
 
 </summary>
 
@@ -98,7 +98,7 @@ minimum1
 
 <summary>
 
-scheme: "postgres"or "postgresql"or "mysql"
+scheme: "postgres" or "postgresql" or "mysql"
 
 Specifies the URL scheme used to connect to your origin database.
 
@@ -138,7 +138,7 @@ maxLength2048
 
 <summary>
 
-AccessProtectedDatabaseBehindCloudflareTunnel object {access\_client\_id, access\_client\_secret, database, 4 more }
+AccessProtectedDatabaseBehindCloudflareTunnel object { access\_client\_id, access\_client\_secret, database, 4 more }
 
 </summary>
 
@@ -180,7 +180,7 @@ maxLength2048
 
 <summary>
 
-scheme: "postgres"or "postgresql"or "mysql"
+scheme: "postgres" or "postgresql" or "mysql"
 
 Specifies the URL scheme used to connect to your origin database.
 
@@ -220,7 +220,7 @@ maxLength2048
 
 <summary>
 
-DatabaseReachableThroughAWorkersVPC object {database, password, scheme, 2 more }
+DatabaseReachableThroughAWorkersVPC object { database, password, scheme, 2 more }
 
 </summary>
 
@@ -244,7 +244,7 @@ maxLength2048
 
 <summary>
 
-scheme: "postgres"or "postgresql"or "mysql"
+scheme: "postgres" or "postgresql" or "mysql"
 
 Specifies the URL scheme used to connect to your origin database.
 
@@ -294,7 +294,7 @@ maxLength2048
 
 <summary>
 
-caching: optional object {disabled } or object {disabled, max\_age, stale\_while\_revalidate }
+caching: optional object { disabled } or object { disabled, max\_age, stale\_while\_revalidate }
 
 </summary>
 
@@ -304,7 +304,7 @@ One of the following:
 
 <summary>
 
-HyperdriveHyperdriveCachingCommon object {disabled }
+HyperdriveHyperdriveCachingCommon object { disabled }
 
 </summary>
 
@@ -322,7 +322,7 @@ Set to true to disable caching of SQL responses. Default is false.
 
 <summary>
 
-HyperdriveHyperdriveCachingEnabled object {disabled, max\_age, stale\_while\_revalidate }
+HyperdriveHyperdriveCachingEnabled object { disabled, max\_age, stale\_while\_revalidate }
 
 </summary>
 
@@ -372,7 +372,7 @@ formatdate-time
 
 <summary>
 
-mtls: optional object {ca\_certificate\_id, mtls\_certificate\_id, sslmode }
+mtls: optional object { ca\_certificate\_id, mtls\_certificate\_id, sslmode }
 
 mTLS configuration for the origin connection. Cannot be used with VPC Service origins; TLS must be managed on the VPC Service.
 
@@ -458,7 +458,7 @@ DELETE/accounts/{account\_id}/hyperdrive/configs/{hyperdrive\_id}
 
 <summary>
 
-ConfigListResponse object {id, caching, name, 7 more }
+ConfigListResponse object { id, caching, name, 7 more }
 
 </summary>
 
@@ -474,7 +474,7 @@ maxLength32
 
 <summary>
 
-caching: object {disabled, max\_age, stale\_while\_revalidate }
+caching: object { disabled, max\_age, stale\_while\_revalidate }
 
 </summary>
 
@@ -518,7 +518,7 @@ maxLength2048
 
 <summary>
 
-origin: object {database, host, password, 3 more } or object {access\_client\_id, access\_client\_secret, database, 4 more } or object {database, password, scheme, 2 more }
+origin: object { database, host, password, 3 more } or object { access\_client\_id, access\_client\_secret, database, 4 more } or object { database, password, scheme, 2 more }
 
 Combines database connection fields with exactly one supported network location.
 
@@ -530,7 +530,7 @@ One of the following:
 
 <summary>
 
-PublicDatabase object {database, host, password, 3 more }
+PublicDatabase object { database, host, password, 3 more }
 
 </summary>
 
@@ -570,7 +570,7 @@ minimum1
 
 <summary>
 
-scheme: "postgres"or "postgresql"or "mysql"
+scheme: "postgres" or "postgresql" or "mysql"
 
 Specifies the URL scheme used to connect to your origin database.
 
@@ -610,7 +610,7 @@ maxLength2048
 
 <summary>
 
-AccessProtectedDatabaseBehindCloudflareTunnel object {access\_client\_id, access\_client\_secret, database, 4 more }
+AccessProtectedDatabaseBehindCloudflareTunnel object { access\_client\_id, access\_client\_secret, database, 4 more }
 
 </summary>
 
@@ -652,7 +652,7 @@ maxLength2048
 
 <summary>
 
-scheme: "postgres"or "postgresql"or "mysql"
+scheme: "postgres" or "postgresql" or "mysql"
 
 Specifies the URL scheme used to connect to your origin database.
 
@@ -692,7 +692,7 @@ maxLength2048
 
 <summary>
 
-DatabaseReachableThroughAWorkersVPC object {database, password, scheme, 2 more }
+DatabaseReachableThroughAWorkersVPC object { database, password, scheme, 2 more }
 
 </summary>
 
@@ -716,7 +716,7 @@ maxLength2048
 
 <summary>
 
-scheme: "postgres"or "postgresql"or "mysql"
+scheme: "postgres" or "postgresql" or "mysql"
 
 Specifies the URL scheme used to connect to your origin database.
 
@@ -774,7 +774,7 @@ formatdate-time
 
 <summary>
 
-integration: optional object {database\_branch\_name, database\_name, organization\_name, 3 more }
+integration: optional object { database\_branch\_name, database\_name, organization\_name, 3 more }
 
 Selects a PlanetScale database and provisions credentials managed by Cloudflare when creating a Hyperdrive configuration. The Cloudflare account must already be linked to PlanetScale in the Hyperdrive dashboard. The selection is returned as read-only metadata and cannot be changed with replace or update operations.
 
@@ -820,7 +820,7 @@ The database integration provider used by this operation.
 
 <summary>
 
-scheme: "postgres"or "postgresql"or "mysql"
+scheme: "postgres" or "postgresql" or "mysql"
 
 Specifies the URL scheme used to connect to your origin database.
 
@@ -868,7 +868,7 @@ formatdate-time
 
 <summary>
 
-mtls: optional object {ca\_certificate\_id, mtls\_certificate\_id, sslmode }
+mtls: optional object { ca\_certificate\_id, mtls\_certificate\_id, sslmode }
 
 mTLS configuration for the origin connection. Cannot be used with VPC Service origins; TLS must be managed on the VPC Service.
 
@@ -922,7 +922,7 @@ formatdate-time
 
 <summary>
 
-ConfigGetResponse object {id, caching, name, 7 more }
+ConfigGetResponse object { id, caching, name, 7 more }
 
 </summary>
 
@@ -938,7 +938,7 @@ maxLength32
 
 <summary>
 
-caching: object {disabled, max\_age, stale\_while\_revalidate }
+caching: object { disabled, max\_age, stale\_while\_revalidate }
 
 </summary>
 
@@ -982,7 +982,7 @@ maxLength2048
 
 <summary>
 
-origin: object {database, host, password, 3 more } or object {access\_client\_id, access\_client\_secret, database, 4 more } or object {database, password, scheme, 2 more }
+origin: object { database, host, password, 3 more } or object { access\_client\_id, access\_client\_secret, database, 4 more } or object { database, password, scheme, 2 more }
 
 Combines database connection fields with exactly one supported network location.
 
@@ -994,7 +994,7 @@ One of the following:
 
 <summary>
 
-PublicDatabase object {database, host, password, 3 more }
+PublicDatabase object { database, host, password, 3 more }
 
 </summary>
 
@@ -1034,7 +1034,7 @@ minimum1
 
 <summary>
 
-scheme: "postgres"or "postgresql"or "mysql"
+scheme: "postgres" or "postgresql" or "mysql"
 
 Specifies the URL scheme used to connect to your origin database.
 
@@ -1074,7 +1074,7 @@ maxLength2048
 
 <summary>
 
-AccessProtectedDatabaseBehindCloudflareTunnel object {access\_client\_id, access\_client\_secret, database, 4 more }
+AccessProtectedDatabaseBehindCloudflareTunnel object { access\_client\_id, access\_client\_secret, database, 4 more }
 
 </summary>
 
@@ -1116,7 +1116,7 @@ maxLength2048
 
 <summary>
 
-scheme: "postgres"or "postgresql"or "mysql"
+scheme: "postgres" or "postgresql" or "mysql"
 
 Specifies the URL scheme used to connect to your origin database.
 
@@ -1156,7 +1156,7 @@ maxLength2048
 
 <summary>
 
-DatabaseReachableThroughAWorkersVPC object {database, password, scheme, 2 more }
+DatabaseReachableThroughAWorkersVPC object { database, password, scheme, 2 more }
 
 </summary>
 
@@ -1180,7 +1180,7 @@ maxLength2048
 
 <summary>
 
-scheme: "postgres"or "postgresql"or "mysql"
+scheme: "postgres" or "postgresql" or "mysql"
 
 Specifies the URL scheme used to connect to your origin database.
 
@@ -1238,7 +1238,7 @@ formatdate-time
 
 <summary>
 
-integration: optional object {database\_branch\_name, database\_name, organization\_name, 3 more }
+integration: optional object { database\_branch\_name, database\_name, organization\_name, 3 more }
 
 Selects a PlanetScale database and provisions credentials managed by Cloudflare when creating a Hyperdrive configuration. The Cloudflare account must already be linked to PlanetScale in the Hyperdrive dashboard. The selection is returned as read-only metadata and cannot be changed with replace or update operations.
 
@@ -1284,7 +1284,7 @@ The database integration provider used by this operation.
 
 <summary>
 
-scheme: "postgres"or "postgresql"or "mysql"
+scheme: "postgres" or "postgresql" or "mysql"
 
 Specifies the URL scheme used to connect to your origin database.
 
@@ -1332,7 +1332,7 @@ formatdate-time
 
 <summary>
 
-mtls: optional object {ca\_certificate\_id, mtls\_certificate\_id, sslmode }
+mtls: optional object { ca\_certificate\_id, mtls\_certificate\_id, sslmode }
 
 mTLS configuration for the origin connection. Cannot be used with VPC Service origins; TLS must be managed on the VPC Service.
 
@@ -1386,7 +1386,7 @@ formatdate-time
 
 <summary>
 
-ConfigCreateResponse object {id, caching, name, 7 more }
+ConfigCreateResponse object { id, caching, name, 7 more }
 
 </summary>
 
@@ -1402,7 +1402,7 @@ maxLength32
 
 <summary>
 
-caching: object {disabled, max\_age, stale\_while\_revalidate }
+caching: object { disabled, max\_age, stale\_while\_revalidate }
 
 </summary>
 
@@ -1446,7 +1446,7 @@ maxLength2048
 
 <summary>
 
-origin: object {database, host, password, 3 more } or object {access\_client\_id, access\_client\_secret, database, 4 more } or object {database, password, scheme, 2 more }
+origin: object { database, host, password, 3 more } or object { access\_client\_id, access\_client\_secret, database, 4 more } or object { database, password, scheme, 2 more }
 
 Combines database connection fields with exactly one supported network location.
 
@@ -1458,7 +1458,7 @@ One of the following:
 
 <summary>
 
-PublicDatabase object {database, host, password, 3 more }
+PublicDatabase object { database, host, password, 3 more }
 
 </summary>
 
@@ -1498,7 +1498,7 @@ minimum1
 
 <summary>
 
-scheme: "postgres"or "postgresql"or "mysql"
+scheme: "postgres" or "postgresql" or "mysql"
 
 Specifies the URL scheme used to connect to your origin database.
 
@@ -1538,7 +1538,7 @@ maxLength2048
 
 <summary>
 
-AccessProtectedDatabaseBehindCloudflareTunnel object {access\_client\_id, access\_client\_secret, database, 4 more }
+AccessProtectedDatabaseBehindCloudflareTunnel object { access\_client\_id, access\_client\_secret, database, 4 more }
 
 </summary>
 
@@ -1580,7 +1580,7 @@ maxLength2048
 
 <summary>
 
-scheme: "postgres"or "postgresql"or "mysql"
+scheme: "postgres" or "postgresql" or "mysql"
 
 Specifies the URL scheme used to connect to your origin database.
 
@@ -1620,7 +1620,7 @@ maxLength2048
 
 <summary>
 
-DatabaseReachableThroughAWorkersVPC object {database, password, scheme, 2 more }
+DatabaseReachableThroughAWorkersVPC object { database, password, scheme, 2 more }
 
 </summary>
 
@@ -1644,7 +1644,7 @@ maxLength2048
 
 <summary>
 
-scheme: "postgres"or "postgresql"or "mysql"
+scheme: "postgres" or "postgresql" or "mysql"
 
 Specifies the URL scheme used to connect to your origin database.
 
@@ -1702,7 +1702,7 @@ formatdate-time
 
 <summary>
 
-integration: optional object {database\_branch\_name, database\_name, organization\_name, 3 more }
+integration: optional object { database\_branch\_name, database\_name, organization\_name, 3 more }
 
 Selects a PlanetScale database and provisions credentials managed by Cloudflare when creating a Hyperdrive configuration. The Cloudflare account must already be linked to PlanetScale in the Hyperdrive dashboard. The selection is returned as read-only metadata and cannot be changed with replace or update operations.
 
@@ -1748,7 +1748,7 @@ The database integration provider used by this operation.
 
 <summary>
 
-scheme: "postgres"or "postgresql"or "mysql"
+scheme: "postgres" or "postgresql" or "mysql"
 
 Specifies the URL scheme used to connect to your origin database.
 
@@ -1796,7 +1796,7 @@ formatdate-time
 
 <summary>
 
-mtls: optional object {ca\_certificate\_id, mtls\_certificate\_id, sslmode }
+mtls: optional object { ca\_certificate\_id, mtls\_certificate\_id, sslmode }
 
 mTLS configuration for the origin connection. Cannot be used with VPC Service origins; TLS must be managed on the VPC Service.
 
@@ -1850,7 +1850,7 @@ formatdate-time
 
 <summary>
 
-ConfigUpdateResponse object {id, caching, name, 7 more }
+ConfigUpdateResponse object { id, caching, name, 7 more }
 
 </summary>
 
@@ -1866,7 +1866,7 @@ maxLength32
 
 <summary>
 
-caching: object {disabled, max\_age, stale\_while\_revalidate }
+caching: object { disabled, max\_age, stale\_while\_revalidate }
 
 </summary>
 
@@ -1910,7 +1910,7 @@ maxLength2048
 
 <summary>
 
-origin: object {database, host, password, 3 more } or object {access\_client\_id, access\_client\_secret, database, 4 more } or object {database, password, scheme, 2 more }
+origin: object { database, host, password, 3 more } or object { access\_client\_id, access\_client\_secret, database, 4 more } or object { database, password, scheme, 2 more }
 
 Combines database connection fields with exactly one supported network location.
 
@@ -1922,7 +1922,7 @@ One of the following:
 
 <summary>
 
-PublicDatabase object {database, host, password, 3 more }
+PublicDatabase object { database, host, password, 3 more }
 
 </summary>
 
@@ -1962,7 +1962,7 @@ minimum1
 
 <summary>
 
-scheme: "postgres"or "postgresql"or "mysql"
+scheme: "postgres" or "postgresql" or "mysql"
 
 Specifies the URL scheme used to connect to your origin database.
 
@@ -2002,7 +2002,7 @@ maxLength2048
 
 <summary>
 
-AccessProtectedDatabaseBehindCloudflareTunnel object {access\_client\_id, access\_client\_secret, database, 4 more }
+AccessProtectedDatabaseBehindCloudflareTunnel object { access\_client\_id, access\_client\_secret, database, 4 more }
 
 </summary>
 
@@ -2044,7 +2044,7 @@ maxLength2048
 
 <summary>
 
-scheme: "postgres"or "postgresql"or "mysql"
+scheme: "postgres" or "postgresql" or "mysql"
 
 Specifies the URL scheme used to connect to your origin database.
 
@@ -2084,7 +2084,7 @@ maxLength2048
 
 <summary>
 
-DatabaseReachableThroughAWorkersVPC object {database, password, scheme, 2 more }
+DatabaseReachableThroughAWorkersVPC object { database, password, scheme, 2 more }
 
 </summary>
 
@@ -2108,7 +2108,7 @@ maxLength2048
 
 <summary>
 
-scheme: "postgres"or "postgresql"or "mysql"
+scheme: "postgres" or "postgresql" or "mysql"
 
 Specifies the URL scheme used to connect to your origin database.
 
@@ -2166,7 +2166,7 @@ formatdate-time
 
 <summary>
 
-integration: optional object {database\_branch\_name, database\_name, organization\_name, 3 more }
+integration: optional object { database\_branch\_name, database\_name, organization\_name, 3 more }
 
 Selects a PlanetScale database and provisions credentials managed by Cloudflare when creating a Hyperdrive configuration. The Cloudflare account must already be linked to PlanetScale in the Hyperdrive dashboard. The selection is returned as read-only metadata and cannot be changed with replace or update operations.
 
@@ -2212,7 +2212,7 @@ The database integration provider used by this operation.
 
 <summary>
 
-scheme: "postgres"or "postgresql"or "mysql"
+scheme: "postgres" or "postgresql" or "mysql"
 
 Specifies the URL scheme used to connect to your origin database.
 
@@ -2260,7 +2260,7 @@ formatdate-time
 
 <summary>
 
-mtls: optional object {ca\_certificate\_id, mtls\_certificate\_id, sslmode }
+mtls: optional object { ca\_certificate\_id, mtls\_certificate\_id, sslmode }
 
 mTLS configuration for the origin connection. Cannot be used with VPC Service origins; TLS must be managed on the VPC Service.
 
@@ -2314,7 +2314,7 @@ formatdate-time
 
 <summary>
 
-ConfigEditResponse object {id, caching, name, 7 more }
+ConfigEditResponse object { id, caching, name, 7 more }
 
 </summary>
 
@@ -2330,7 +2330,7 @@ maxLength32
 
 <summary>
 
-caching: object {disabled, max\_age, stale\_while\_revalidate }
+caching: object { disabled, max\_age, stale\_while\_revalidate }
 
 </summary>
 
@@ -2374,7 +2374,7 @@ maxLength2048
 
 <summary>
 
-origin: object {database, host, password, 3 more } or object {access\_client\_id, access\_client\_secret, database, 4 more } or object {database, password, scheme, 2 more }
+origin: object { database, host, password, 3 more } or object { access\_client\_id, access\_client\_secret, database, 4 more } or object { database, password, scheme, 2 more }
 
 Combines database connection fields with exactly one supported network location.
 
@@ -2386,7 +2386,7 @@ One of the following:
 
 <summary>
 
-PublicDatabase object {database, host, password, 3 more }
+PublicDatabase object { database, host, password, 3 more }
 
 </summary>
 
@@ -2426,7 +2426,7 @@ minimum1
 
 <summary>
 
-scheme: "postgres"or "postgresql"or "mysql"
+scheme: "postgres" or "postgresql" or "mysql"
 
 Specifies the URL scheme used to connect to your origin database.
 
@@ -2466,7 +2466,7 @@ maxLength2048
 
 <summary>
 
-AccessProtectedDatabaseBehindCloudflareTunnel object {access\_client\_id, access\_client\_secret, database, 4 more }
+AccessProtectedDatabaseBehindCloudflareTunnel object { access\_client\_id, access\_client\_secret, database, 4 more }
 
 </summary>
 
@@ -2508,7 +2508,7 @@ maxLength2048
 
 <summary>
 
-scheme: "postgres"or "postgresql"or "mysql"
+scheme: "postgres" or "postgresql" or "mysql"
 
 Specifies the URL scheme used to connect to your origin database.
 
@@ -2548,7 +2548,7 @@ maxLength2048
 
 <summary>
 
-DatabaseReachableThroughAWorkersVPC object {database, password, scheme, 2 more }
+DatabaseReachableThroughAWorkersVPC object { database, password, scheme, 2 more }
 
 </summary>
 
@@ -2572,7 +2572,7 @@ maxLength2048
 
 <summary>
 
-scheme: "postgres"or "postgresql"or "mysql"
+scheme: "postgres" or "postgresql" or "mysql"
 
 Specifies the URL scheme used to connect to your origin database.
 
@@ -2630,7 +2630,7 @@ formatdate-time
 
 <summary>
 
-integration: optional object {database\_branch\_name, database\_name, organization\_name, 3 more }
+integration: optional object { database\_branch\_name, database\_name, organization\_name, 3 more }
 
 Selects a PlanetScale database and provisions credentials managed by Cloudflare when creating a Hyperdrive configuration. The Cloudflare account must already be linked to PlanetScale in the Hyperdrive dashboard. The selection is returned as read-only metadata and cannot be changed with replace or update operations.
 
@@ -2676,7 +2676,7 @@ The database integration provider used by this operation.
 
 <summary>
 
-scheme: "postgres"or "postgresql"or "mysql"
+scheme: "postgres" or "postgresql" or "mysql"
 
 Specifies the URL scheme used to connect to your origin database.
 
@@ -2724,7 +2724,7 @@ formatdate-time
 
 <summary>
 
-mtls: optional object {ca\_certificate\_id, mtls\_certificate\_id, sslmode }
+mtls: optional object { ca\_certificate\_id, mtls\_certificate\_id, sslmode }
 
 mTLS configuration for the origin connection. Cannot be used with VPC Service origins; TLS must be managed on the VPC Service.
 
@@ -2778,7 +2778,7 @@ formatdate-time
 
 <summary>
 
-ConfigRestartResponse object {id, caching, name, 7 more }
+ConfigRestartResponse object { id, caching, name, 7 more }
 
 </summary>
 
@@ -2794,7 +2794,7 @@ maxLength32
 
 <summary>
 
-caching: object {disabled, max\_age, stale\_while\_revalidate }
+caching: object { disabled, max\_age, stale\_while\_revalidate }
 
 </summary>
 
@@ -2838,7 +2838,7 @@ maxLength2048
 
 <summary>
 
-origin: object {database, host, password, 3 more } or object {access\_client\_id, access\_client\_secret, database, 4 more } or object {database, password, scheme, 2 more }
+origin: object { database, host, password, 3 more } or object { access\_client\_id, access\_client\_secret, database, 4 more } or object { database, password, scheme, 2 more }
 
 Combines database connection fields with exactly one supported network location.
 
@@ -2850,7 +2850,7 @@ One of the following:
 
 <summary>
 
-PublicDatabase object {database, host, password, 3 more }
+PublicDatabase object { database, host, password, 3 more }
 
 </summary>
 
@@ -2890,7 +2890,7 @@ minimum1
 
 <summary>
 
-scheme: "postgres"or "postgresql"or "mysql"
+scheme: "postgres" or "postgresql" or "mysql"
 
 Specifies the URL scheme used to connect to your origin database.
 
@@ -2930,7 +2930,7 @@ maxLength2048
 
 <summary>
 
-AccessProtectedDatabaseBehindCloudflareTunnel object {access\_client\_id, access\_client\_secret, database, 4 more }
+AccessProtectedDatabaseBehindCloudflareTunnel object { access\_client\_id, access\_client\_secret, database, 4 more }
 
 </summary>
 
@@ -2972,7 +2972,7 @@ maxLength2048
 
 <summary>
 
-scheme: "postgres"or "postgresql"or "mysql"
+scheme: "postgres" or "postgresql" or "mysql"
 
 Specifies the URL scheme used to connect to your origin database.
 
@@ -3012,7 +3012,7 @@ maxLength2048
 
 <summary>
 
-DatabaseReachableThroughAWorkersVPC object {database, password, scheme, 2 more }
+DatabaseReachableThroughAWorkersVPC object { database, password, scheme, 2 more }
 
 </summary>
 
@@ -3036,7 +3036,7 @@ maxLength2048
 
 <summary>
 
-scheme: "postgres"or "postgresql"or "mysql"
+scheme: "postgres" or "postgresql" or "mysql"
 
 Specifies the URL scheme used to connect to your origin database.
 
@@ -3094,7 +3094,7 @@ formatdate-time
 
 <summary>
 
-integration: optional object {database\_branch\_name, database\_name, organization\_name, 3 more }
+integration: optional object { database\_branch\_name, database\_name, organization\_name, 3 more }
 
 Selects a PlanetScale database and provisions credentials managed by Cloudflare when creating a Hyperdrive configuration. The Cloudflare account must already be linked to PlanetScale in the Hyperdrive dashboard. The selection is returned as read-only metadata and cannot be changed with replace or update operations.
 
@@ -3140,7 +3140,7 @@ The database integration provider used by this operation.
 
 <summary>
 
-scheme: "postgres"or "postgresql"or "mysql"
+scheme: "postgres" or "postgresql" or "mysql"
 
 Specifies the URL scheme used to connect to your origin database.
 
@@ -3188,7 +3188,7 @@ formatdate-time
 
 <summary>
 
-mtls: optional object {ca\_certificate\_id, mtls\_certificate\_id, sslmode }
+mtls: optional object { ca\_certificate\_id, mtls\_certificate\_id, sslmode }
 
 mTLS configuration for the origin connection. Cannot be used with VPC Service origins; TLS must be managed on the VPC Service.
 

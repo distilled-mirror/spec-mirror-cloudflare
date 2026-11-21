@@ -26,7 +26,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/zones/{zone\_id}/web3/hostnames/{identifier}/ipfs\_universal\_path/content\_list
 
-IPFS Universal Path Gateway Content List Details
+Retrieves the IPFS Universal Path Gateway content list configuration for a Web3 hostname.
 
 ##### Security
 
@@ -108,7 +108,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -150,7 +150,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -194,7 +194,7 @@ Specifies whether the API call was successful.
 
 <summary>
 
-result\_info: optional unknownor string
+result\_info: optional unknown or string
 
 Provides the API response.
 

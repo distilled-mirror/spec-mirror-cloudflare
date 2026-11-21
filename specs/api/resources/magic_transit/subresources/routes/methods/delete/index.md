@@ -104,7 +104,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -146,7 +146,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -166,7 +166,7 @@ pointer: optional string
 
 <summary>
 
-result: object {deleted, deleted\_route }
+result: object { deleted, deleted\_route }
 
 </summary>
 
@@ -178,7 +178,7 @@ deleted: optional boolean
 
 <summary>
 
-deleted\_route: optional object {id, nexthop, prefix, 6 more }
+deleted\_route: optional object { id, nexthop, prefix, 6 more }
 
 </summary>
 

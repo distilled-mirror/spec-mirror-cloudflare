@@ -30,7 +30,7 @@ PATCH/zones/{zone\_id}/settings/csam\_scanner\_third\_party
 
 <summary>
 
-CsamScannerGetResponse object {id, editable, modified\_on, value }
+CsamScannerGetResponse object { id, editable, modified\_on, value }
 
 CSAM Scanner configuration for a zone.
 
@@ -60,7 +60,7 @@ formatdate-time
 
 <summary>
 
-value: optional object {email, email\_state, enabled, 2 more }
+value: optional object { email, email\_state, enabled, 2 more }
 
 The CSAM Scanner feature configuration values. Contains the notification email and scanning enablement settings.
 
@@ -78,7 +78,7 @@ maxLength254
 
 <summary>
 
-email\_state: optional "valid"or "pending"or "unverified"
+email\_state: optional "valid" or "pending" or "unverified"
 
 Current verification state of the notification email.
 
@@ -132,7 +132,7 @@ The zone’s plan level.
 
 <summary>
 
-CsamScannerEditResponse object {id, editable, modified\_on, value }
+CsamScannerEditResponse object { id, editable, modified\_on, value }
 
 CSAM Scanner configuration for a zone.
 
@@ -162,7 +162,7 @@ formatdate-time
 
 <summary>
 
-value: optional object {email, email\_state, enabled, 2 more }
+value: optional object { email, email\_state, enabled, 2 more }
 
 The CSAM Scanner feature configuration values. Contains the notification email and scanning enablement settings.
 
@@ -180,7 +180,7 @@ maxLength254
 
 <summary>
 
-email\_state: optional "valid"or "pending"or "unverified"
+email\_state: optional "valid" or "pending" or "unverified"
 
 Current verification state of the notification email.
 

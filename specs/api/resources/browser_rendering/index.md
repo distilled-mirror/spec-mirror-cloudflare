@@ -48,7 +48,7 @@ POST/accounts/{account\_id}/browser-rendering/scrape
 
 <summary>
 
-ScrapeCreateResponse = array of object {results, selector }
+ScrapeCreateResponse = array of object { results, selector }
 
 </summary>
 
@@ -56,7 +56,7 @@ ScrapeCreateResponse = array of object {results, selector }
 
 <summary>
 
-results: object {attributes, height, html, 4 more }
+results: object { attributes, height, html, 4 more }
 
 </summary>
 
@@ -64,7 +64,7 @@ results: object {attributes, height, html, 4 more }
 
 <summary>
 
-attributes: array of object {name, value }
+attributes: array of object { name, value }
 
 </summary>
 
@@ -146,7 +146,7 @@ POST/accounts/{account\_id}/browser-rendering/screenshot
 
 <summary>
 
-ScreenshotCreateResponse object {success, errors }
+ScreenshotCreateResponse object { success, errors }
 
 </summary>
 
@@ -160,7 +160,7 @@ Response status.
 
 <summary>
 
-errors: optional array of object {code, message }
+errors: optional array of object { code, message }
 
 </summary>
 
@@ -196,7 +196,7 @@ POST/accounts/{account\_id}/browser-rendering/snapshot
 
 <summary>
 
-SnapshotCreateResponse object {accessibilityTree, content, json, 5 more }
+SnapshotCreateResponse object { accessibilityTree, content, json, 5 more }
 
 </summary>
 
@@ -204,7 +204,7 @@ SnapshotCreateResponse object {accessibilityTree, content, json, 5 more }
 
 <summary>
 
-accessibilityTree: optional object {role, autocomplete, checked, 23 more }
+accessibilityTree: optional object { role, autocomplete, checked, 23 more }
 
 Accessibility tree node
 
@@ -222,7 +222,7 @@ autocomplete: optional string
 
 <summary>
 
-checked: optional booleanor "mixed"
+checked: optional boolean or "mixed"
 
 </summary>
 
@@ -300,7 +300,7 @@ orientation: optional string
 
 <summary>
 
-pressed: optional booleanor "mixed"
+pressed: optional boolean or "mixed"
 
 </summary>
 
@@ -338,7 +338,7 @@ selected: optional boolean
 
 <summary>
 
-value: optional stringor number
+value: optional string or number
 
 </summary>
 
@@ -382,7 +382,7 @@ HTML content.
 
 <summary>
 
-json: optional map\[unknown]or array of unknown
+json: optional map\[unknown] or array of unknown
 
 Data extracted from the page HTML by the requested prompt.
 
@@ -424,7 +424,7 @@ Base64 encoded PDF.
 
 <summary>
 
-scrape: optional array of object {results, selector }
+scrape: optional array of object { results, selector }
 
 Elements matched by the requested selectors.
 
@@ -434,7 +434,7 @@ Elements matched by the requested selectors.
 
 <summary>
 
-results: array of object {attributes, html, left, 4 more }
+results: array of object { attributes, html, left, 4 more }
 
 </summary>
 
@@ -442,7 +442,7 @@ results: array of object {attributes, html, left, 4 more }
 
 <summary>
 
-attributes: array of object {name, value }
+attributes: array of object { name, value }
 
 </summary>
 
@@ -554,7 +554,7 @@ POST/accounts/{account\_id}/browser-rendering/accessibilityTree
 
 <summary>
 
-AccessibilityTreeCreateResponse object {accessibilityTree }
+AccessibilityTreeCreateResponse object { accessibilityTree }
 
 </summary>
 
@@ -562,7 +562,7 @@ AccessibilityTreeCreateResponse object {accessibilityTree }
 
 <summary>
 
-accessibilityTree: object {role, autocomplete, checked, 23 more }
+accessibilityTree: object { role, autocomplete, checked, 23 more }
 
 Accessibility tree node
 
@@ -580,7 +580,7 @@ autocomplete: optional string
 
 <summary>
 
-checked: optional booleanor "mixed"
+checked: optional boolean or "mixed"
 
 </summary>
 
@@ -658,7 +658,7 @@ orientation: optional string
 
 <summary>
 
-pressed: optional booleanor "mixed"
+pressed: optional boolean or "mixed"
 
 </summary>
 
@@ -696,7 +696,7 @@ selected: optional boolean
 
 <summary>
 
-value: optional stringor number
+value: optional string or number
 
 </summary>
 
@@ -760,7 +760,7 @@ Crawl job ID.
 
 <summary>
 
-CrawlGetResponse object {id, browserSecondsUsed, finished, 6 more }
+CrawlGetResponse object { id, browserSecondsUsed, finished, 6 more }
 
 </summary>
 
@@ -786,7 +786,7 @@ Total number of URLs that have been crawled so far.
 
 <summary>
 
-records: array of object {status, url, html, 4 more }
+records: array of object { status, url, html, 4 more }
 
 List of crawl job records.
 
@@ -796,7 +796,7 @@ List of crawl job records.
 
 <summary>
 
-status: "queued"or "errored"or "completed"or 3 more
+status: "queued" or "errored" or "completed" or 3 more
 
 Current status of the crawled URL.
 
@@ -848,7 +848,7 @@ HTML content of the crawled URL. Null if unreadable.
 
 <summary>
 
-json: optional map\[stringor numberor booleanor 2 more]or array of stringor numberor booleanor 2 moreor string
+json: optional map\[string or number or boolean or 2 more] or array of string or number or boolean or 2 more or string
 
 JSON of the content of the crawled URL, or the raw text if it is not an object or array. Null if unreadable.
 
@@ -860,7 +860,7 @@ One of the following:
 
 <summary>
 
-map\[stringor numberor booleanor 2 more]
+map\[string or number or boolean or 2 more]
 
 </summary>
 
@@ -894,7 +894,7 @@ map\[unknown]
 
 <summary>
 
-array of stringor numberor booleanor 2 more
+array of string or number or boolean or 2 more
 
 </summary>
 
@@ -942,7 +942,7 @@ Markdown of the content of the crawled URL. Null if unreadable.
 
 <summary>
 
-metadata: optional object {status, url, lastModified, 6 more }
+metadata: optional object { status, url, lastModified, 6 more }
 
 Absent for urls that never reached a fetch.
 
@@ -1010,7 +1010,7 @@ Title of the crawled page.
 
 <summary>
 
-outcome: optional "success"or "robots\_disallowed"or "crawl\_purpose\_disallowed"or 9 more
+outcome: optional "success" or "robots\_disallowed" or "crawl\_purpose\_disallowed" or 9 more
 
 Result of processing the URL. Absent for older records.
 
@@ -1078,7 +1078,7 @@ One of the following:
 
 <summary>
 
-robots: array of object {origin, state, status }
+robots: array of object { origin, state, status }
 
 Robots.txt state for the first 50 origins encountered by the crawl.
 
@@ -1094,7 +1094,7 @@ Origin whose robots.txt was checked.
 
 <summary>
 
-state: "available"or "absent"or "fetch\_failed"
+state: "available" or "absent" or "fetch\_failed"
 
 Whether usable robots.txt rules were available.
 
@@ -1160,7 +1160,7 @@ Cursor for pagination.
 
 <summary>
 
-CrawlDeleteResponse object {job\_id, message }
+CrawlDeleteResponse object { job\_id, message }
 
 </summary>
 
@@ -1196,7 +1196,7 @@ POST/accounts/{account\_id}/browser-rendering/script/{session\_id}
 
 <summary>
 
-ScriptCreateResponse = stringor numberor booleanor 2 more
+ScriptCreateResponse = string or number or boolean or 2 more
 
 The script’s return value, or null when it returned nothing. Arrays nested inside arrays are also returned, but this schema does not describe them.
 
@@ -1224,7 +1224,7 @@ map\[unknown]
 
 <summary>
 
-array of stringor numberor booleanor map\[unknown]
+array of string or number or boolean or map\[unknown]
 
 </summary>
 
@@ -1258,7 +1258,7 @@ map\[unknown]
 
 <summary>
 
-ScriptExecuteResponse = stringor numberor booleanor 2 more
+ScriptExecuteResponse = string or number or boolean or 2 more
 
 The script’s return value, or null when it returned nothing. Arrays nested inside arrays are also returned, but this schema does not describe them.
 
@@ -1286,7 +1286,7 @@ map\[unknown]
 
 <summary>
 
-array of stringor numberor booleanor map\[unknown]
+array of string or number or boolean or map\[unknown]
 
 </summary>
 
@@ -1334,7 +1334,7 @@ GET/accounts/{account\_id}/browser-rendering/devtools/session/{session\_id}
 
 <summary>
 
-SessionListResponse = array of object {sessionId, closeReason, closeReasonText, 8 more }
+SessionListResponse = array of object { sessionId, closeReason, closeReasonText, 8 more }
 
 </summary>
 
@@ -1414,7 +1414,7 @@ WebSocket URL for debugging this target.
 
 <summary>
 
-SessionGetResponse object {sessionId, closeReason, closeReasonText, 8 more }
+SessionGetResponse object { sessionId, closeReason, closeReasonText, 8 more }
 
 </summary>
 
@@ -1514,7 +1514,7 @@ GET/accounts/{account\_id}/browser-rendering/devtools/browser/{session\_id}/json
 
 <summary>
 
-BrowserCreateResponse object {sessionId, webSocketDebuggerUrl }
+BrowserCreateResponse object { sessionId, webSocketDebuggerUrl }
 
 </summary>
 
@@ -1538,7 +1538,7 @@ WebSocket URL for the session.
 
 <summary>
 
-BrowserDeleteResponse object {status }
+BrowserDeleteResponse object { status }
 
 </summary>
 
@@ -1546,7 +1546,7 @@ BrowserDeleteResponse object {status }
 
 <summary>
 
-status: "closing"or "closed"
+status: "closing" or "closed"
 
 </summary>
 
@@ -1572,7 +1572,7 @@ One of the following:
 
 <summary>
 
-BrowserVersionResponse object {Browser, "Protocol-Version", "User-Agent", 3 more }
+BrowserVersionResponse object { Browser, "Protocol-Version", "User-Agent", 3 more }
 
 </summary>
 
@@ -1620,7 +1620,7 @@ WebSocket URL for debugging the browser.
 
 <summary>
 
-BrowserProtocolResponse object {domains, version }
+BrowserProtocolResponse object { domains, version }
 
 </summary>
 
@@ -1628,7 +1628,7 @@ BrowserProtocolResponse object {domains, version }
 
 <summary>
 
-domains: array of object {domain, commands, dependencies, 3 more }
+domains: array of object { domain, commands, dependencies, 3 more }
 
 List of protocol domains.
 
@@ -1678,7 +1678,7 @@ Type definitions.
 
 <summary>
 
-version: optional object {major, minor }
+version: optional object { major, minor }
 
 Protocol version.
 
@@ -1716,7 +1716,7 @@ POST/accounts/{account\_id}/browser-rendering/devtools/browser/{session\_id}/liv
 
 <summary>
 
-LiveViewCreateResponse object {id, devtoolsFrontendUrl, options, webSocketDebuggerUrl }
+LiveViewCreateResponse object { id, devtoolsFrontendUrl, options, webSocketDebuggerUrl }
 
 </summary>
 
@@ -1738,7 +1738,7 @@ formaturi
 
 <summary>
 
-options: object {mode, guardrails }
+options: object { mode, guardrails }
 
 </summary>
 
@@ -1746,7 +1746,7 @@ options: object {mode, guardrails }
 
 <summary>
 
-mode: "devtools"or "tab"or "full"
+mode: "devtools" or "tab" or "full"
 
 UI mode for the live view
 
@@ -1774,7 +1774,7 @@ One of the following:
 
 <summary>
 
-guardrails: optional object {mode }
+guardrails: optional object { mode }
 
 Connection guardrails applied to this link
 
@@ -1834,7 +1834,7 @@ GET/accounts/{account\_id}/browser-rendering/devtools/browser/{session\_id}/json
 
 <summary>
 
-TargetCreateResponse object {id, type, url, 4 more }
+TargetCreateResponse object { id, type, url, 4 more }
 
 </summary>
 
@@ -1888,7 +1888,7 @@ WebSocket URL for debugging this target.
 
 <summary>
 
-TargetListResponse = array of object {id, type, url, 4 more }
+TargetListResponse = array of object { id, type, url, 4 more }
 
 </summary>
 
@@ -1942,7 +1942,7 @@ WebSocket URL for debugging this target.
 
 <summary>
 
-TargetGetResponse object {id, type, url, 4 more }
+TargetGetResponse object { id, type, url, 4 more }
 
 </summary>
 
@@ -1996,7 +1996,7 @@ WebSocket URL for debugging this target.
 
 <summary>
 
-TargetActivateResponse object {message }
+TargetActivateResponse object { message }
 
 </summary>
 
@@ -2014,7 +2014,7 @@ Target activated.
 
 <summary>
 
-TargetCloseResponse object {message }
+TargetCloseResponse object { message }
 
 </summary>
 

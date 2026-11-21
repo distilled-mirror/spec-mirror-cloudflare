@@ -36,7 +36,7 @@ The preferred authorization scheme for interacting with the Cloudflare API. [Cre
 
 ##### Accepted Permissions (at least one required)
 
-`Workers R2 Storage Write`
+`Auto Rag Write Run Engine``Workers R2 Storage Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -72,7 +72,7 @@ maxLength32
 
 <summary>
 
-"cf-r2-jurisdiction": optional "default"or "eu"or "us"or 2 more
+"cf-r2-jurisdiction": optional "default" or "eu" or "us" or 2 more
 
 </summary>
 
@@ -108,7 +108,7 @@ One of the following:
 
 <summary>
 
-rules: array of object {actions, description, prefix, suffix }
+rules: array of object { actions, description, prefix, suffix }
 
 Array of rules to drive notifications.
 
@@ -118,7 +118,7 @@ Array of rules to drive notifications.
 
 <summary>
 
-actions: array of "PutObject"or "CopyObject"or "DeleteObject"or 2 more
+actions: array of "PutObject" or "CopyObject" or "DeleteObject" or 2 more
 
 Array of R2 object actions that will trigger notifications.
 
@@ -200,7 +200,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 

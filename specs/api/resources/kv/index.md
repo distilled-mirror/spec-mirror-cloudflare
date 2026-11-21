@@ -56,7 +56,7 @@ POST/accounts/{account\_id}/storage/kv/namespaces/{namespace\_id}/bulk/get
 
 <summary>
 
-Namespace object {id, title, jurisdiction, 2 more }
+Namespace object { id, title, jurisdiction, 2 more }
 
 </summary>
 
@@ -80,7 +80,7 @@ maxLength512
 
 <summary>
 
-jurisdiction: optional "eu"or "fedramp"or "us"
+jurisdiction: optional "eu" or "fedramp" or "us"
 
 Specify the jurisdiction to restrict the KV namespace to durably store data within. Can only be set at namespace creation time.
 
@@ -120,7 +120,7 @@ True if keys written on the URL will be URL-decoded before storing. For example,
 
 [Link to this property](#)%20kv.namespaces%20%3E%20(model)%20namespace%20%3E%20(schema)>)
 
-NamespaceDeleteResponse object {}
+NamespaceDeleteResponse object { }
 
 [Link to this property](#)%20kv.namespaces%20%3E%20(model)%20namespace_delete_response%20%3E%20(schema)>)
 
@@ -128,7 +128,7 @@ NamespaceDeleteResponse object {}
 
 <summary>
 
-NamespaceBulkUpdateResponse object {successful\_key\_count, unsuccessful\_keys }
+NamespaceBulkUpdateResponse object { successful\_key\_count, unsuccessful\_keys }
 
 </summary>
 
@@ -152,7 +152,7 @@ Names of keys that failed to be written or deleted. Retry the operation for thes
 
 <summary>
 
-NamespaceBulkDeleteResponse object {successful\_key\_count, unsuccessful\_keys }
+NamespaceBulkDeleteResponse object { successful\_key\_count, unsuccessful\_keys }
 
 </summary>
 
@@ -176,7 +176,7 @@ Names of keys that failed to be written or deleted. Retry the operation for thes
 
 <summary>
 
-NamespaceBulkGetResponse = object {values } or object {values }
+NamespaceBulkGetResponse = object { values } or object { values }
 
 </summary>
 
@@ -186,7 +186,7 @@ One of the following:
 
 <summary>
 
-WorkersKVBulkGetResult object {values }
+WorkersKVBulkGetResult object { values }
 
 </summary>
 
@@ -194,7 +194,7 @@ WorkersKVBulkGetResult object {values }
 
 <summary>
 
-values: optional map\[stringor numberor booleanor map\[unknown]]
+values: optional map\[string or number or boolean or map\[unknown]]
 
 Requested keys are paired with their values in an object.
 
@@ -230,7 +230,7 @@ map\[unknown]
 
 <summary>
 
-WorkersKVBulkGetResultWithMetadata object {values }
+WorkersKVBulkGetResultWithMetadata object { values }
 
 </summary>
 
@@ -238,7 +238,7 @@ WorkersKVBulkGetResultWithMetadata object {values }
 
 <summary>
 
-values: optional map\[object {metadata, value, expiration } ]
+values: optional map\[object { metadata, value, expiration } ]
 
 Requested keys are paired with their values and metadata in an object.
 
@@ -304,7 +304,7 @@ POST/accounts/{account\_id}/storage/kv/namespaces/{namespace\_id}/bulk/get
 
 <summary>
 
-Key object {name, expiration, metadata }
+Key object { name, expiration, metadata }
 
 A name for a value. A value stored under a given key may be retrieved via the same key.
 
@@ -338,7 +338,7 @@ Arbitrary JSON that is associated with a key.
 
 <summary>
 
-KeyBulkUpdateResponse object {successful\_key\_count, unsuccessful\_keys }
+KeyBulkUpdateResponse object { successful\_key\_count, unsuccessful\_keys }
 
 </summary>
 
@@ -362,7 +362,7 @@ Names of keys that failed to be written or deleted. Retry the operation for thes
 
 <summary>
 
-KeyBulkDeleteResponse object {successful\_key\_count, unsuccessful\_keys }
+KeyBulkDeleteResponse object { successful\_key\_count, unsuccessful\_keys }
 
 </summary>
 
@@ -386,7 +386,7 @@ Names of keys that failed to be written or deleted. Retry the operation for thes
 
 <summary>
 
-KeyBulkGetResponse = object {values } or object {values }
+KeyBulkGetResponse = object { values } or object { values }
 
 </summary>
 
@@ -396,7 +396,7 @@ One of the following:
 
 <summary>
 
-WorkersKVBulkGetResult object {values }
+WorkersKVBulkGetResult object { values }
 
 </summary>
 
@@ -404,7 +404,7 @@ WorkersKVBulkGetResult object {values }
 
 <summary>
 
-values: optional map\[stringor numberor booleanor map\[unknown]]
+values: optional map\[string or number or boolean or map\[unknown]]
 
 Requested keys are paired with their values in an object.
 
@@ -440,7 +440,7 @@ map\[unknown]
 
 <summary>
 
-WorkersKVBulkGetResultWithMetadata object {values }
+WorkersKVBulkGetResultWithMetadata object { values }
 
 </summary>
 
@@ -448,7 +448,7 @@ WorkersKVBulkGetResultWithMetadata object {values }
 
 <summary>
 
-values: optional map\[object {metadata, value, expiration } ]
+values: optional map\[object { metadata, value, expiration } ]
 
 Requested keys are paired with their values and metadata in an object.
 
@@ -514,10 +514,10 @@ DELETE/accounts/{account\_id}/storage/kv/namespaces/{namespace\_id}/values/{key\
 
 ##### ModelsExpand Collapse
 
-ValueUpdateResponse object {}
+ValueUpdateResponse object { }
 
 [Link to this property](#)%20kv.namespaces.values%20%3E%20(model)%20value_update_response%20%3E%20(schema)>)
 
-ValueDeleteResponse object {}
+ValueDeleteResponse object { }
 
 [Link to this property](#)%20kv.namespaces.values%20%3E%20(model)%20value_delete_response%20%3E%20(schema)>)

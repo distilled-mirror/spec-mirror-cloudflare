@@ -38,7 +38,7 @@ DELETE/accounts/{account\_id}/workers/scripts/{script\_name}/subdomain
 
 <summary>
 
-SubdomainGetResponse object {enabled, previews\_enabled }
+SubdomainGetResponse object { enabled, previews\_enabled }
 
 </summary>
 
@@ -62,7 +62,7 @@ Whether the Worker’s Preview URLs are available on the workers.dev subdomain.
 
 <summary>
 
-SubdomainCreateResponse object {enabled, previews\_enabled }
+SubdomainCreateResponse object { enabled, previews\_enabled }
 
 </summary>
 
@@ -86,7 +86,7 @@ Whether the Worker’s Preview URLs are available on the workers.dev subdomain.
 
 <summary>
 
-SubdomainDeleteResponse object {enabled, previews\_enabled }
+SubdomainDeleteResponse object { enabled, previews\_enabled }
 
 </summary>
 

@@ -48,7 +48,7 @@ Host = string
 
 <summary>
 
-RequestValidity = 7or 30or 90or 4 more
+RequestValidity = 7 or 30 or 90 or 4 more
 
 The number of days for which the certificate should be valid.
 
@@ -92,7 +92,7 @@ One of the following:
 
 <summary>
 
-Status = "initializing"or "pending\_validation"or "deleted"or 18 more
+Status = "initializing" or "pending\_validation" or "deleted" or 18 more
 
 Status of certificate pack.
 
@@ -192,7 +192,7 @@ One of the following:
 
 <summary>
 
-ValidationMethod = "http"or "cname"or "txt"
+ValidationMethod = "http" or "cname" or "txt"
 
 Validation method in use for a certificate pack order.
 
@@ -220,7 +220,7 @@ One of the following:
 
 <summary>
 
-CertificatePackListResponse object {id, certificates, hosts, 10 more }
+CertificatePackListResponse object { id, certificates, hosts, 10 more }
 
 A certificate pack with all its properties.
 
@@ -236,7 +236,7 @@ The unique identifier for a certificate\_pack.
 
 <summary>
 
-certificates: array of object {id, hosts, status, 9 more }
+certificates: array of object { id, hosts, status, 9 more }
 
 Array of certificates in this pack.
 
@@ -278,7 +278,7 @@ formatdate-time
 
 <summary>
 
-geo\_restrictions: optional object {label }
+geo\_restrictions: optional object { label }
 
 Specify the region where your private key can be held locally.
 
@@ -288,7 +288,7 @@ Specify the region where your private key can be held locally.
 
 <summary>
 
-label: optional "us"or "eu"or "highest\_security"
+label: optional "us" or "eu" or "highest\_security"
 
 </summary>
 
@@ -376,7 +376,7 @@ Status of certificate pack.
 
 <summary>
 
-type: "mh\_custom"or "managed\_hostname"or "sni\_custom"or 5 more
+type: "mh\_custom" or "managed\_hostname" or "sni\_custom" or 5 more
 
 Type of certificate pack.
 
@@ -424,7 +424,7 @@ One of the following:
 
 <summary>
 
-certificate\_authority: optional "google"or "lets\_encrypt"or "ssl\_com"
+certificate\_authority: optional "google" or "lets\_encrypt" or "ssl\_com"
 
 Certificate Authority selected for the order. For information on any certificate authority specific details or restrictions <a href="https://developers.cloudflare.com/ssl/reference/certificate-authorities">see this page for more details</a>.
 
@@ -458,7 +458,7 @@ Whether or not to add Cloudflare Branding for the order. This will add a subdoma
 
 <summary>
 
-dcv\_delegation\_records: optional array of object {cname, cname\_target, emails, 5 more }
+dcv\_delegation\_records: optional array of object { cname, cname\_target, emails, 5 more }
 
 DCV Delegation records for domain validation.
 
@@ -526,7 +526,7 @@ Identifier of the primary certificate in a pack.
 
 <summary>
 
-validation\_errors: optional array of object {message }
+validation\_errors: optional array of object { message }
 
 Domain validation errors that have been received by the certificate authority (CA).
 
@@ -546,7 +546,7 @@ A domain validation error.
 
 <summary>
 
-validation\_method: optional "txt"or "http"or "email"
+validation\_method: optional "txt" or "http" or "email"
 
 Validation Method selected for the order.
 
@@ -574,7 +574,7 @@ One of the following:
 
 <summary>
 
-validation\_records: optional array of object {cname, cname\_target, emails, 5 more }
+validation\_records: optional array of object { cname, cname\_target, emails, 5 more }
 
 Certificates’ validation records.
 
@@ -636,7 +636,7 @@ The TXT record that the certificate authority (CA) will check during domain vali
 
 <summary>
 
-validity\_days: optional 14or 30or 90or 365
+validity\_days: optional 14 or 30 or 90 or 365
 
 Validity Days selected for the order.
 
@@ -672,7 +672,7 @@ One of the following:
 
 <summary>
 
-CertificatePackGetResponse object {id, certificates, hosts, 10 more }
+CertificatePackGetResponse object { id, certificates, hosts, 10 more }
 
 A certificate pack with all its properties.
 
@@ -688,7 +688,7 @@ The unique identifier for a certificate\_pack.
 
 <summary>
 
-certificates: array of object {id, hosts, status, 9 more }
+certificates: array of object { id, hosts, status, 9 more }
 
 Array of certificates in this pack.
 
@@ -730,7 +730,7 @@ formatdate-time
 
 <summary>
 
-geo\_restrictions: optional object {label }
+geo\_restrictions: optional object { label }
 
 Specify the region where your private key can be held locally.
 
@@ -740,7 +740,7 @@ Specify the region where your private key can be held locally.
 
 <summary>
 
-label: optional "us"or "eu"or "highest\_security"
+label: optional "us" or "eu" or "highest\_security"
 
 </summary>
 
@@ -828,7 +828,7 @@ Status of certificate pack.
 
 <summary>
 
-type: "mh\_custom"or "managed\_hostname"or "sni\_custom"or 5 more
+type: "mh\_custom" or "managed\_hostname" or "sni\_custom" or 5 more
 
 Type of certificate pack.
 
@@ -876,7 +876,7 @@ One of the following:
 
 <summary>
 
-certificate\_authority: optional "google"or "lets\_encrypt"or "ssl\_com"
+certificate\_authority: optional "google" or "lets\_encrypt" or "ssl\_com"
 
 Certificate Authority selected for the order. For information on any certificate authority specific details or restrictions <a href="https://developers.cloudflare.com/ssl/reference/certificate-authorities">see this page for more details</a>.
 
@@ -910,7 +910,7 @@ Whether or not to add Cloudflare Branding for the order. This will add a subdoma
 
 <summary>
 
-dcv\_delegation\_records: optional array of object {cname, cname\_target, emails, 5 more }
+dcv\_delegation\_records: optional array of object { cname, cname\_target, emails, 5 more }
 
 DCV Delegation records for domain validation.
 
@@ -978,7 +978,7 @@ Identifier of the primary certificate in a pack.
 
 <summary>
 
-validation\_errors: optional array of object {message }
+validation\_errors: optional array of object { message }
 
 Domain validation errors that have been received by the certificate authority (CA).
 
@@ -998,7 +998,7 @@ A domain validation error.
 
 <summary>
 
-validation\_method: optional "txt"or "http"or "email"
+validation\_method: optional "txt" or "http" or "email"
 
 Validation Method selected for the order.
 
@@ -1026,7 +1026,7 @@ One of the following:
 
 <summary>
 
-validation\_records: optional array of object {cname, cname\_target, emails, 5 more }
+validation\_records: optional array of object { cname, cname\_target, emails, 5 more }
 
 Certificates’ validation records.
 
@@ -1088,7 +1088,7 @@ The TXT record that the certificate authority (CA) will check during domain vali
 
 <summary>
 
-validity\_days: optional 14or 30or 90or 365
+validity\_days: optional 14 or 30 or 90 or 365
 
 Validity Days selected for the order.
 
@@ -1124,7 +1124,7 @@ One of the following:
 
 <summary>
 
-CertificatePackCreateResponse object {id, hosts, status, 4 more }
+CertificatePackCreateResponse object { id, hosts, status, 4 more }
 
 A newly ordered certificate pack. Certificates are not included until they are issued; get the certificate pack to retrieve them.
 
@@ -1152,7 +1152,7 @@ Status of certificate pack.
 
 <summary>
 
-type: "mh\_custom"or "managed\_hostname"or "sni\_custom"or 5 more
+type: "mh\_custom" or "managed\_hostname" or "sni\_custom" or 5 more
 
 Type of certificate pack.
 
@@ -1200,7 +1200,7 @@ One of the following:
 
 <summary>
 
-certificate\_authority: optional "google"or "lets\_encrypt"or "ssl\_com"
+certificate\_authority: optional "google" or "lets\_encrypt" or "ssl\_com"
 
 Certificate Authority selected for the order. For information on any certificate authority specific details or restrictions <a href="https://developers.cloudflare.com/ssl/reference/certificate-authorities">see this page for more details</a>.
 
@@ -1228,7 +1228,7 @@ One of the following:
 
 <summary>
 
-validation\_method: optional "txt"or "http"or "email"
+validation\_method: optional "txt" or "http" or "email"
 
 Validation Method selected for the order.
 
@@ -1256,7 +1256,7 @@ One of the following:
 
 <summary>
 
-validity\_days: optional 14or 30or 90or 365
+validity\_days: optional 14 or 30 or 90 or 365
 
 Validity Days selected for the order.
 
@@ -1292,7 +1292,7 @@ One of the following:
 
 <summary>
 
-CertificatePackEditResponse object {id, certificates, hosts, 10 more }
+CertificatePackEditResponse object { id, certificates, hosts, 10 more }
 
 A certificate pack with all its properties.
 
@@ -1308,7 +1308,7 @@ The unique identifier for a certificate\_pack.
 
 <summary>
 
-certificates: array of object {id, hosts, status, 9 more }
+certificates: array of object { id, hosts, status, 9 more }
 
 Array of certificates in this pack.
 
@@ -1350,7 +1350,7 @@ formatdate-time
 
 <summary>
 
-geo\_restrictions: optional object {label }
+geo\_restrictions: optional object { label }
 
 Specify the region where your private key can be held locally.
 
@@ -1360,7 +1360,7 @@ Specify the region where your private key can be held locally.
 
 <summary>
 
-label: optional "us"or "eu"or "highest\_security"
+label: optional "us" or "eu" or "highest\_security"
 
 </summary>
 
@@ -1448,7 +1448,7 @@ Status of certificate pack.
 
 <summary>
 
-type: "mh\_custom"or "managed\_hostname"or "sni\_custom"or 5 more
+type: "mh\_custom" or "managed\_hostname" or "sni\_custom" or 5 more
 
 Type of certificate pack.
 
@@ -1496,7 +1496,7 @@ One of the following:
 
 <summary>
 
-certificate\_authority: optional "google"or "lets\_encrypt"or "ssl\_com"
+certificate\_authority: optional "google" or "lets\_encrypt" or "ssl\_com"
 
 Certificate Authority selected for the order. For information on any certificate authority specific details or restrictions <a href="https://developers.cloudflare.com/ssl/reference/certificate-authorities">see this page for more details</a>.
 
@@ -1530,7 +1530,7 @@ Whether or not to add Cloudflare Branding for the order. This will add a subdoma
 
 <summary>
 
-dcv\_delegation\_records: optional array of object {cname, cname\_target, emails, 5 more }
+dcv\_delegation\_records: optional array of object { cname, cname\_target, emails, 5 more }
 
 DCV Delegation records for domain validation.
 
@@ -1598,7 +1598,7 @@ Identifier of the primary certificate in a pack.
 
 <summary>
 
-validation\_errors: optional array of object {message }
+validation\_errors: optional array of object { message }
 
 Domain validation errors that have been received by the certificate authority (CA).
 
@@ -1618,7 +1618,7 @@ A domain validation error.
 
 <summary>
 
-validation\_method: optional "txt"or "http"or "email"
+validation\_method: optional "txt" or "http" or "email"
 
 Validation Method selected for the order.
 
@@ -1646,7 +1646,7 @@ One of the following:
 
 <summary>
 
-validation\_records: optional array of object {cname, cname\_target, emails, 5 more }
+validation\_records: optional array of object { cname, cname\_target, emails, 5 more }
 
 Certificates’ validation records.
 
@@ -1708,7 +1708,7 @@ The TXT record that the certificate authority (CA) will check during domain vali
 
 <summary>
 
-validity\_days: optional 14or 30or 90or 365
+validity\_days: optional 14 or 30 or 90 or 365
 
 Validity Days selected for the order.
 
@@ -1744,7 +1744,7 @@ One of the following:
 
 <summary>
 
-CertificatePackDeleteResponse object {id }
+CertificatePackDeleteResponse object { id }
 
 </summary>
 
@@ -1770,7 +1770,7 @@ GET/zones/{zone\_id}/ssl/certificate\_packs/quota
 
 <summary>
 
-QuotaGetResponse object {advanced }
+QuotaGetResponse object { advanced }
 
 </summary>
 
@@ -1778,7 +1778,7 @@ QuotaGetResponse object {advanced }
 
 <summary>
 
-advanced: optional object {allocated, used }
+advanced: optional object { allocated, used }
 
 </summary>
 

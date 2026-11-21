@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 <summary>
 
-HealthCheck object {enabled, rate, target, type }
+HealthCheck object { enabled, rate, target, type }
 
 </summary>
 
@@ -42,7 +42,7 @@ How frequent the health check is run. The default value is <code>mid</code>.
 
 <summary>
 
-target: optional object {effective, saved } or string
+target: optional object { effective, saved } or string
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target. Must be in object form if the x-magic-new-hc-target header is set to true and string form if x-magic-new-hc-target is absent or set to false.
 
@@ -54,7 +54,7 @@ One of the following:
 
 <summary>
 
-MagicHealthCheckTarget object {effective, saved }
+MagicHealthCheckTarget object { effective, saved }
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target.
 
@@ -98,7 +98,7 @@ The type of healthcheck to run, reply or request. The default value is <code>rep
 
 <summary>
 
-HealthCheckRate = "low"or "mid"or "high"
+HealthCheckRate = "low" or "mid" or "high"
 
 How frequent the health check is run. The default value is <code>mid</code>.
 
@@ -126,7 +126,7 @@ One of the following:
 
 <summary>
 
-HealthCheckType = "reply"or "request"
+HealthCheckType = "reply" or "request"
 
 The type of healthcheck to run, reply or request. The default value is <code>reply</code>.
 
@@ -174,7 +174,7 @@ DELETE/accounts/{account\_id}/magic/apps/{account\_app\_id}
 
 <summary>
 
-AppListResponse = object {account\_app\_id, hostnames, ip\_subnets, 3 more } or object {managed\_app\_id, hostnames, ip\_subnets, 3 more }
+AppListResponse = object { account\_app\_id, hostnames, ip\_subnets, 3 more } or object { managed\_app\_id, hostnames, ip\_subnets, 3 more }
 
 Collection of Hostnames and/or IP Subnets to associate with traffic decisions.
 
@@ -186,7 +186,7 @@ One of the following:
 
 <summary>
 
-MagicAccountApp object {account\_app\_id, hostnames, ip\_subnets, 3 more }
+MagicAccountApp object { account\_app\_id, hostnames, ip\_subnets, 3 more }
 
 Custom app defined for an account.
 
@@ -236,7 +236,7 @@ Category of the app.
 
 <summary>
 
-MagicManagedApp object {managed\_app\_id, hostnames, ip\_subnets, 3 more }
+MagicManagedApp object { managed\_app\_id, hostnames, ip\_subnets, 3 more }
 
 Managed app defined by Cloudflare.
 
@@ -290,7 +290,7 @@ Category of the app.
 
 <summary>
 
-AppCreateResponse object {account\_app\_id, hostnames, ip\_subnets, 3 more }
+AppCreateResponse object { account\_app\_id, hostnames, ip\_subnets, 3 more }
 
 Custom app defined for an account.
 
@@ -340,7 +340,7 @@ Category of the app.
 
 <summary>
 
-AppUpdateResponse object {account\_app\_id, hostnames, ip\_subnets, 3 more }
+AppUpdateResponse object { account\_app\_id, hostnames, ip\_subnets, 3 more }
 
 Custom app defined for an account.
 
@@ -390,7 +390,7 @@ Category of the app.
 
 <summary>
 
-AppEditResponse object {account\_app\_id, hostnames, ip\_subnets, 3 more }
+AppEditResponse object { account\_app\_id, hostnames, ip\_subnets, 3 more }
 
 Custom app defined for an account.
 
@@ -440,7 +440,7 @@ Category of the app.
 
 <summary>
 
-AppDeleteResponse object {account\_app\_id, hostnames, ip\_subnets, 3 more }
+AppDeleteResponse object { account\_app\_id, hostnames, ip\_subnets, 3 more }
 
 Custom app defined for an account.
 
@@ -510,7 +510,7 @@ PUT/accounts/{account\_id}/magic/cf\_interconnects
 
 <summary>
 
-CfInterconnectListResponse object {interconnects }
+CfInterconnectListResponse object { interconnects }
 
 </summary>
 
@@ -518,7 +518,7 @@ CfInterconnectListResponse object {interconnects }
 
 <summary>
 
-interconnects: optional array of object {id, automatic\_return\_routing, bgp, 12 more }
+interconnects: optional array of object { id, automatic\_return\_routing, bgp, 12 more }
 
 </summary>
 
@@ -540,7 +540,7 @@ True if automatic stateful return routing should be enabled for a tunnel, false 
 
 <summary>
 
-bgp: optional object {as\_no, cloudflare\_endpoint, customer\_asn, 5 more }
+bgp: optional object { as\_no, cloudflare\_endpoint, customer\_asn, 5 more }
 
 </summary>
 
@@ -637,7 +637,7 @@ An optional description of the interconnect.
 
 <summary>
 
-gre: optional object {cloudflare\_endpoint }
+gre: optional object { cloudflare\_endpoint }
 
 Omitted in responses for version 1.5 interconnects.
 
@@ -657,7 +657,7 @@ The IP address assigned to the Cloudflare side of the GRE tunnel created as part
 
 <summary>
 
-health\_check: optional object {direction, enabled, rate, 3 more }
+health\_check: optional object { direction, enabled, rate, 3 more }
 
 </summary>
 
@@ -665,7 +665,7 @@ health\_check: optional object {direction, enabled, rate, 3 more }
 
 <summary>
 
-direction: optional "unidirectional"or "bidirectional"
+direction: optional "unidirectional" or "bidirectional"
 
 The direction of the flow of the healthcheck. Either unidirectional, where the probe comes to you via the interconnect and the result comes back to Cloudflare via the open Internet, or bidirectional where both the probe and result come and go via the interconnect.
 
@@ -707,7 +707,7 @@ The source IPv4 address used for bidirectional health checks. Supported only for
 
 <summary>
 
-target: optional object {effective, saved } or string
+target: optional object { effective, saved } or string
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target. Must be in object form if the x-magic-new-hc-target header is set to true and string form if x-magic-new-hc-target is absent or set to false.
 
@@ -719,7 +719,7 @@ One of the following:
 
 <summary>
 
-MagicHealthCheckTarget object {effective, saved }
+MagicHealthCheckTarget object { effective, saved }
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target.
 
@@ -821,7 +821,7 @@ maxLength32
 
 <summary>
 
-CfInterconnectGetResponse object {interconnect }
+CfInterconnectGetResponse object { interconnect }
 
 </summary>
 
@@ -829,7 +829,7 @@ CfInterconnectGetResponse object {interconnect }
 
 <summary>
 
-interconnect: optional object {id, automatic\_return\_routing, bgp, 12 more }
+interconnect: optional object { id, automatic\_return\_routing, bgp, 12 more }
 
 </summary>
 
@@ -851,7 +851,7 @@ True if automatic stateful return routing should be enabled for a tunnel, false 
 
 <summary>
 
-bgp: optional object {as\_no, cloudflare\_endpoint, customer\_asn, 5 more }
+bgp: optional object { as\_no, cloudflare\_endpoint, customer\_asn, 5 more }
 
 </summary>
 
@@ -948,7 +948,7 @@ An optional description of the interconnect.
 
 <summary>
 
-gre: optional object {cloudflare\_endpoint }
+gre: optional object { cloudflare\_endpoint }
 
 Omitted in responses for version 1.5 interconnects.
 
@@ -968,7 +968,7 @@ The IP address assigned to the Cloudflare side of the GRE tunnel created as part
 
 <summary>
 
-health\_check: optional object {direction, enabled, rate, 3 more }
+health\_check: optional object { direction, enabled, rate, 3 more }
 
 </summary>
 
@@ -976,7 +976,7 @@ health\_check: optional object {direction, enabled, rate, 3 more }
 
 <summary>
 
-direction: optional "unidirectional"or "bidirectional"
+direction: optional "unidirectional" or "bidirectional"
 
 The direction of the flow of the healthcheck. Either unidirectional, where the probe comes to you via the interconnect and the result comes back to Cloudflare via the open Internet, or bidirectional where both the probe and result come and go via the interconnect.
 
@@ -1018,7 +1018,7 @@ The source IPv4 address used for bidirectional health checks. Supported only for
 
 <summary>
 
-target: optional object {effective, saved } or string
+target: optional object { effective, saved } or string
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target. Must be in object form if the x-magic-new-hc-target header is set to true and string form if x-magic-new-hc-target is absent or set to false.
 
@@ -1030,7 +1030,7 @@ One of the following:
 
 <summary>
 
-MagicHealthCheckTarget object {effective, saved }
+MagicHealthCheckTarget object { effective, saved }
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target.
 
@@ -1132,7 +1132,7 @@ maxLength32
 
 <summary>
 
-CfInterconnectUpdateResponse object {modified, modified\_interconnect }
+CfInterconnectUpdateResponse object { modified, modified\_interconnect }
 
 </summary>
 
@@ -1144,7 +1144,7 @@ modified: optional boolean
 
 <summary>
 
-modified\_interconnect: optional object {id, automatic\_return\_routing, bgp, 12 more }
+modified\_interconnect: optional object { id, automatic\_return\_routing, bgp, 12 more }
 
 </summary>
 
@@ -1166,7 +1166,7 @@ True if automatic stateful return routing should be enabled for a tunnel, false 
 
 <summary>
 
-bgp: optional object {as\_no, cloudflare\_endpoint, customer\_asn, 5 more }
+bgp: optional object { as\_no, cloudflare\_endpoint, customer\_asn, 5 more }
 
 </summary>
 
@@ -1263,7 +1263,7 @@ An optional description of the interconnect.
 
 <summary>
 
-gre: optional object {cloudflare\_endpoint }
+gre: optional object { cloudflare\_endpoint }
 
 Omitted in responses for version 1.5 interconnects.
 
@@ -1283,7 +1283,7 @@ The IP address assigned to the Cloudflare side of the GRE tunnel created as part
 
 <summary>
 
-health\_check: optional object {direction, enabled, rate, 3 more }
+health\_check: optional object { direction, enabled, rate, 3 more }
 
 </summary>
 
@@ -1291,7 +1291,7 @@ health\_check: optional object {direction, enabled, rate, 3 more }
 
 <summary>
 
-direction: optional "unidirectional"or "bidirectional"
+direction: optional "unidirectional" or "bidirectional"
 
 The direction of the flow of the healthcheck. Either unidirectional, where the probe comes to you via the interconnect and the result comes back to Cloudflare via the open Internet, or bidirectional where both the probe and result come and go via the interconnect.
 
@@ -1333,7 +1333,7 @@ The source IPv4 address used for bidirectional health checks. Supported only for
 
 <summary>
 
-target: optional object {effective, saved } or string
+target: optional object { effective, saved } or string
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target. Must be in object form if the x-magic-new-hc-target header is set to true and string form if x-magic-new-hc-target is absent or set to false.
 
@@ -1345,7 +1345,7 @@ One of the following:
 
 <summary>
 
-MagicHealthCheckTarget object {effective, saved }
+MagicHealthCheckTarget object { effective, saved }
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target.
 
@@ -1447,7 +1447,7 @@ maxLength32
 
 <summary>
 
-CfInterconnectBulkUpdateResponse object {modified, modified\_interconnects }
+CfInterconnectBulkUpdateResponse object { modified, modified\_interconnects }
 
 </summary>
 
@@ -1459,7 +1459,7 @@ modified: optional boolean
 
 <summary>
 
-modified\_interconnects: optional array of object {id, automatic\_return\_routing, bgp, 12 more }
+modified\_interconnects: optional array of object { id, automatic\_return\_routing, bgp, 12 more }
 
 </summary>
 
@@ -1481,7 +1481,7 @@ True if automatic stateful return routing should be enabled for a tunnel, false 
 
 <summary>
 
-bgp: optional object {as\_no, cloudflare\_endpoint, customer\_asn, 5 more }
+bgp: optional object { as\_no, cloudflare\_endpoint, customer\_asn, 5 more }
 
 </summary>
 
@@ -1578,7 +1578,7 @@ An optional description of the interconnect.
 
 <summary>
 
-gre: optional object {cloudflare\_endpoint }
+gre: optional object { cloudflare\_endpoint }
 
 Omitted in responses for version 1.5 interconnects.
 
@@ -1598,7 +1598,7 @@ The IP address assigned to the Cloudflare side of the GRE tunnel created as part
 
 <summary>
 
-health\_check: optional object {direction, enabled, rate, 3 more }
+health\_check: optional object { direction, enabled, rate, 3 more }
 
 </summary>
 
@@ -1606,7 +1606,7 @@ health\_check: optional object {direction, enabled, rate, 3 more }
 
 <summary>
 
-direction: optional "unidirectional"or "bidirectional"
+direction: optional "unidirectional" or "bidirectional"
 
 The direction of the flow of the healthcheck. Either unidirectional, where the probe comes to you via the interconnect and the result comes back to Cloudflare via the open Internet, or bidirectional where both the probe and result come and go via the interconnect.
 
@@ -1648,7 +1648,7 @@ The source IPv4 address used for bidirectional health checks. Supported only for
 
 <summary>
 
-target: optional object {effective, saved } or string
+target: optional object { effective, saved } or string
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target. Must be in object form if the x-magic-new-hc-target header is set to true and string form if x-magic-new-hc-target is absent or set to false.
 
@@ -1660,7 +1660,7 @@ One of the following:
 
 <summary>
 
-MagicHealthCheckTarget object {effective, saved }
+MagicHealthCheckTarget object { effective, saved }
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target.
 
@@ -1790,7 +1790,7 @@ PUT/accounts/{account\_id}/magic/gre\_tunnels
 
 <summary>
 
-GRETunnelListResponse object {gre\_tunnels }
+GRETunnelListResponse object { gre\_tunnels }
 
 </summary>
 
@@ -1798,7 +1798,7 @@ GRETunnelListResponse object {gre\_tunnels }
 
 <summary>
 
-gre\_tunnels: optional array of object {id, cloudflare\_gre\_endpoint, customer\_gre\_endpoint, 12 more }
+gre\_tunnels: optional array of object { id, cloudflare\_gre\_endpoint, customer\_gre\_endpoint, 12 more }
 
 </summary>
 
@@ -1844,7 +1844,7 @@ True if automatic stateful return routing should be enabled for a tunnel, false 
 
 <summary>
 
-bgp: optional object {customer\_asn, export\_filter\_id, extra\_prefixes, 2 more }
+bgp: optional object { customer\_asn, export\_filter\_id, extra\_prefixes, 2 more }
 
 </summary>
 
@@ -1899,7 +1899,7 @@ In other words, MD5 keys may contain any printable ASCII character aside from ne
 
 <summary>
 
-bgp\_status: optional object {state, tcp\_established, updated\_at, 5 more }
+bgp\_status: optional object { state, tcp\_established, updated\_at, 5 more }
 
 </summary>
 
@@ -1907,7 +1907,7 @@ bgp\_status: optional object {state, tcp\_established, updated\_at, 5 more }
 
 <summary>
 
-state: "BGP\_DOWN"or "BGP\_UP"or "BGP\_ESTABLISHING"
+state: "BGP\_DOWN" or "BGP\_UP" or "BGP\_ESTABLISHING"
 
 </summary>
 
@@ -1993,7 +1993,7 @@ An optional description of the GRE tunnel.
 
 <summary>
 
-health\_check: optional object {direction, enabled, rate, 2 more }
+health\_check: optional object { direction, enabled, rate, 2 more }
 
 </summary>
 
@@ -2001,7 +2001,7 @@ health\_check: optional object {direction, enabled, rate, 2 more }
 
 <summary>
 
-direction: optional "unidirectional"or "bidirectional"
+direction: optional "unidirectional" or "bidirectional"
 
 The direction of the flow of the healthcheck. Either unidirectional, where the probe comes to you via the tunnel and the result comes back to Cloudflare via the open Internet, or bidirectional where both the probe and result come and go via the tunnel.
 
@@ -2037,7 +2037,7 @@ How frequent the health check is run. The default value is <code>mid</code>.
 
 <summary>
 
-target: optional object {effective, saved } or string
+target: optional object { effective, saved } or string
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target. Must be in object form if the x-magic-new-hc-target header is set to true and string form if x-magic-new-hc-target is absent or set to false.
 
@@ -2049,7 +2049,7 @@ One of the following:
 
 <summary>
 
-MagicHealthCheckTarget object {effective, saved }
+MagicHealthCheckTarget object { effective, saved }
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target.
 
@@ -2127,7 +2127,7 @@ Time To Live (TTL) in number of hops of the GRE tunnel.
 
 <summary>
 
-GRETunnelGetResponse object {gre\_tunnel }
+GRETunnelGetResponse object { gre\_tunnel }
 
 </summary>
 
@@ -2135,7 +2135,7 @@ GRETunnelGetResponse object {gre\_tunnel }
 
 <summary>
 
-gre\_tunnel: optional object {id, cloudflare\_gre\_endpoint, customer\_gre\_endpoint, 12 more }
+gre\_tunnel: optional object { id, cloudflare\_gre\_endpoint, customer\_gre\_endpoint, 12 more }
 
 </summary>
 
@@ -2181,7 +2181,7 @@ True if automatic stateful return routing should be enabled for a tunnel, false 
 
 <summary>
 
-bgp: optional object {customer\_asn, export\_filter\_id, extra\_prefixes, 2 more }
+bgp: optional object { customer\_asn, export\_filter\_id, extra\_prefixes, 2 more }
 
 </summary>
 
@@ -2236,7 +2236,7 @@ In other words, MD5 keys may contain any printable ASCII character aside from ne
 
 <summary>
 
-bgp\_status: optional object {state, tcp\_established, updated\_at, 5 more }
+bgp\_status: optional object { state, tcp\_established, updated\_at, 5 more }
 
 </summary>
 
@@ -2244,7 +2244,7 @@ bgp\_status: optional object {state, tcp\_established, updated\_at, 5 more }
 
 <summary>
 
-state: "BGP\_DOWN"or "BGP\_UP"or "BGP\_ESTABLISHING"
+state: "BGP\_DOWN" or "BGP\_UP" or "BGP\_ESTABLISHING"
 
 </summary>
 
@@ -2330,7 +2330,7 @@ An optional description of the GRE tunnel.
 
 <summary>
 
-health\_check: optional object {direction, enabled, rate, 2 more }
+health\_check: optional object { direction, enabled, rate, 2 more }
 
 </summary>
 
@@ -2338,7 +2338,7 @@ health\_check: optional object {direction, enabled, rate, 2 more }
 
 <summary>
 
-direction: optional "unidirectional"or "bidirectional"
+direction: optional "unidirectional" or "bidirectional"
 
 The direction of the flow of the healthcheck. Either unidirectional, where the probe comes to you via the tunnel and the result comes back to Cloudflare via the open Internet, or bidirectional where both the probe and result come and go via the tunnel.
 
@@ -2374,7 +2374,7 @@ How frequent the health check is run. The default value is <code>mid</code>.
 
 <summary>
 
-target: optional object {effective, saved } or string
+target: optional object { effective, saved } or string
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target. Must be in object form if the x-magic-new-hc-target header is set to true and string form if x-magic-new-hc-target is absent or set to false.
 
@@ -2386,7 +2386,7 @@ One of the following:
 
 <summary>
 
-MagicHealthCheckTarget object {effective, saved }
+MagicHealthCheckTarget object { effective, saved }
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target.
 
@@ -2464,7 +2464,7 @@ Time To Live (TTL) in number of hops of the GRE tunnel.
 
 <summary>
 
-GRETunnelCreateResponse object {id, cloudflare\_gre\_endpoint, customer\_gre\_endpoint, 12 more }
+GRETunnelCreateResponse object { id, cloudflare\_gre\_endpoint, customer\_gre\_endpoint, 12 more }
 
 </summary>
 
@@ -2510,7 +2510,7 @@ True if automatic stateful return routing should be enabled for a tunnel, false 
 
 <summary>
 
-bgp: optional object {customer\_asn, export\_filter\_id, extra\_prefixes, 2 more }
+bgp: optional object { customer\_asn, export\_filter\_id, extra\_prefixes, 2 more }
 
 </summary>
 
@@ -2565,7 +2565,7 @@ In other words, MD5 keys may contain any printable ASCII character aside from ne
 
 <summary>
 
-bgp\_status: optional object {state, tcp\_established, updated\_at, 5 more }
+bgp\_status: optional object { state, tcp\_established, updated\_at, 5 more }
 
 </summary>
 
@@ -2573,7 +2573,7 @@ bgp\_status: optional object {state, tcp\_established, updated\_at, 5 more }
 
 <summary>
 
-state: "BGP\_DOWN"or "BGP\_UP"or "BGP\_ESTABLISHING"
+state: "BGP\_DOWN" or "BGP\_UP" or "BGP\_ESTABLISHING"
 
 </summary>
 
@@ -2659,7 +2659,7 @@ An optional description of the GRE tunnel.
 
 <summary>
 
-health\_check: optional object {direction, enabled, rate, 2 more }
+health\_check: optional object { direction, enabled, rate, 2 more }
 
 </summary>
 
@@ -2667,7 +2667,7 @@ health\_check: optional object {direction, enabled, rate, 2 more }
 
 <summary>
 
-direction: optional "unidirectional"or "bidirectional"
+direction: optional "unidirectional" or "bidirectional"
 
 The direction of the flow of the healthcheck. Either unidirectional, where the probe comes to you via the tunnel and the result comes back to Cloudflare via the open Internet, or bidirectional where both the probe and result come and go via the tunnel.
 
@@ -2703,7 +2703,7 @@ How frequent the health check is run. The default value is <code>mid</code>.
 
 <summary>
 
-target: optional object {effective, saved } or string
+target: optional object { effective, saved } or string
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target. Must be in object form if the x-magic-new-hc-target header is set to true and string form if x-magic-new-hc-target is absent or set to false.
 
@@ -2715,7 +2715,7 @@ One of the following:
 
 <summary>
 
-MagicHealthCheckTarget object {effective, saved }
+MagicHealthCheckTarget object { effective, saved }
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target.
 
@@ -2789,7 +2789,7 @@ Time To Live (TTL) in number of hops of the GRE tunnel.
 
 <summary>
 
-GRETunnelUpdateResponse object {modified, modified\_gre\_tunnel }
+GRETunnelUpdateResponse object { modified, modified\_gre\_tunnel }
 
 </summary>
 
@@ -2801,7 +2801,7 @@ modified: optional boolean
 
 <summary>
 
-modified\_gre\_tunnel: optional object {id, cloudflare\_gre\_endpoint, customer\_gre\_endpoint, 12 more }
+modified\_gre\_tunnel: optional object { id, cloudflare\_gre\_endpoint, customer\_gre\_endpoint, 12 more }
 
 </summary>
 
@@ -2847,7 +2847,7 @@ True if automatic stateful return routing should be enabled for a tunnel, false 
 
 <summary>
 
-bgp: optional object {customer\_asn, export\_filter\_id, extra\_prefixes, 2 more }
+bgp: optional object { customer\_asn, export\_filter\_id, extra\_prefixes, 2 more }
 
 </summary>
 
@@ -2902,7 +2902,7 @@ In other words, MD5 keys may contain any printable ASCII character aside from ne
 
 <summary>
 
-bgp\_status: optional object {state, tcp\_established, updated\_at, 5 more }
+bgp\_status: optional object { state, tcp\_established, updated\_at, 5 more }
 
 </summary>
 
@@ -2910,7 +2910,7 @@ bgp\_status: optional object {state, tcp\_established, updated\_at, 5 more }
 
 <summary>
 
-state: "BGP\_DOWN"or "BGP\_UP"or "BGP\_ESTABLISHING"
+state: "BGP\_DOWN" or "BGP\_UP" or "BGP\_ESTABLISHING"
 
 </summary>
 
@@ -2996,7 +2996,7 @@ An optional description of the GRE tunnel.
 
 <summary>
 
-health\_check: optional object {direction, enabled, rate, 2 more }
+health\_check: optional object { direction, enabled, rate, 2 more }
 
 </summary>
 
@@ -3004,7 +3004,7 @@ health\_check: optional object {direction, enabled, rate, 2 more }
 
 <summary>
 
-direction: optional "unidirectional"or "bidirectional"
+direction: optional "unidirectional" or "bidirectional"
 
 The direction of the flow of the healthcheck. Either unidirectional, where the probe comes to you via the tunnel and the result comes back to Cloudflare via the open Internet, or bidirectional where both the probe and result come and go via the tunnel.
 
@@ -3040,7 +3040,7 @@ How frequent the health check is run. The default value is <code>mid</code>.
 
 <summary>
 
-target: optional object {effective, saved } or string
+target: optional object { effective, saved } or string
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target. Must be in object form if the x-magic-new-hc-target header is set to true and string form if x-magic-new-hc-target is absent or set to false.
 
@@ -3052,7 +3052,7 @@ One of the following:
 
 <summary>
 
-MagicHealthCheckTarget object {effective, saved }
+MagicHealthCheckTarget object { effective, saved }
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target.
 
@@ -3130,7 +3130,7 @@ Time To Live (TTL) in number of hops of the GRE tunnel.
 
 <summary>
 
-GRETunnelDeleteResponse object {deleted, deleted\_gre\_tunnel }
+GRETunnelDeleteResponse object { deleted, deleted\_gre\_tunnel }
 
 </summary>
 
@@ -3142,7 +3142,7 @@ deleted: optional boolean
 
 <summary>
 
-deleted\_gre\_tunnel: optional object {id, cloudflare\_gre\_endpoint, customer\_gre\_endpoint, 12 more }
+deleted\_gre\_tunnel: optional object { id, cloudflare\_gre\_endpoint, customer\_gre\_endpoint, 12 more }
 
 </summary>
 
@@ -3188,7 +3188,7 @@ True if automatic stateful return routing should be enabled for a tunnel, false 
 
 <summary>
 
-bgp: optional object {customer\_asn, export\_filter\_id, extra\_prefixes, 2 more }
+bgp: optional object { customer\_asn, export\_filter\_id, extra\_prefixes, 2 more }
 
 </summary>
 
@@ -3243,7 +3243,7 @@ In other words, MD5 keys may contain any printable ASCII character aside from ne
 
 <summary>
 
-bgp\_status: optional object {state, tcp\_established, updated\_at, 5 more }
+bgp\_status: optional object { state, tcp\_established, updated\_at, 5 more }
 
 </summary>
 
@@ -3251,7 +3251,7 @@ bgp\_status: optional object {state, tcp\_established, updated\_at, 5 more }
 
 <summary>
 
-state: "BGP\_DOWN"or "BGP\_UP"or "BGP\_ESTABLISHING"
+state: "BGP\_DOWN" or "BGP\_UP" or "BGP\_ESTABLISHING"
 
 </summary>
 
@@ -3337,7 +3337,7 @@ An optional description of the GRE tunnel.
 
 <summary>
 
-health\_check: optional object {direction, enabled, rate, 2 more }
+health\_check: optional object { direction, enabled, rate, 2 more }
 
 </summary>
 
@@ -3345,7 +3345,7 @@ health\_check: optional object {direction, enabled, rate, 2 more }
 
 <summary>
 
-direction: optional "unidirectional"or "bidirectional"
+direction: optional "unidirectional" or "bidirectional"
 
 The direction of the flow of the healthcheck. Either unidirectional, where the probe comes to you via the tunnel and the result comes back to Cloudflare via the open Internet, or bidirectional where both the probe and result come and go via the tunnel.
 
@@ -3381,7 +3381,7 @@ How frequent the health check is run. The default value is <code>mid</code>.
 
 <summary>
 
-target: optional object {effective, saved } or string
+target: optional object { effective, saved } or string
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target. Must be in object form if the x-magic-new-hc-target header is set to true and string form if x-magic-new-hc-target is absent or set to false.
 
@@ -3393,7 +3393,7 @@ One of the following:
 
 <summary>
 
-MagicHealthCheckTarget object {effective, saved }
+MagicHealthCheckTarget object { effective, saved }
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target.
 
@@ -3471,7 +3471,7 @@ Time To Live (TTL) in number of hops of the GRE tunnel.
 
 <summary>
 
-GRETunnelBulkUpdateResponse object {modified, modified\_gre\_tunnels }
+GRETunnelBulkUpdateResponse object { modified, modified\_gre\_tunnels }
 
 </summary>
 
@@ -3483,7 +3483,7 @@ modified: optional boolean
 
 <summary>
 
-modified\_gre\_tunnels: optional array of object {id, cloudflare\_gre\_endpoint, customer\_gre\_endpoint, 12 more }
+modified\_gre\_tunnels: optional array of object { id, cloudflare\_gre\_endpoint, customer\_gre\_endpoint, 12 more }
 
 </summary>
 
@@ -3529,7 +3529,7 @@ True if automatic stateful return routing should be enabled for a tunnel, false 
 
 <summary>
 
-bgp: optional object {customer\_asn, export\_filter\_id, extra\_prefixes, 2 more }
+bgp: optional object { customer\_asn, export\_filter\_id, extra\_prefixes, 2 more }
 
 </summary>
 
@@ -3584,7 +3584,7 @@ In other words, MD5 keys may contain any printable ASCII character aside from ne
 
 <summary>
 
-bgp\_status: optional object {state, tcp\_established, updated\_at, 5 more }
+bgp\_status: optional object { state, tcp\_established, updated\_at, 5 more }
 
 </summary>
 
@@ -3592,7 +3592,7 @@ bgp\_status: optional object {state, tcp\_established, updated\_at, 5 more }
 
 <summary>
 
-state: "BGP\_DOWN"or "BGP\_UP"or "BGP\_ESTABLISHING"
+state: "BGP\_DOWN" or "BGP\_UP" or "BGP\_ESTABLISHING"
 
 </summary>
 
@@ -3678,7 +3678,7 @@ An optional description of the GRE tunnel.
 
 <summary>
 
-health\_check: optional object {direction, enabled, rate, 2 more }
+health\_check: optional object { direction, enabled, rate, 2 more }
 
 </summary>
 
@@ -3686,7 +3686,7 @@ health\_check: optional object {direction, enabled, rate, 2 more }
 
 <summary>
 
-direction: optional "unidirectional"or "bidirectional"
+direction: optional "unidirectional" or "bidirectional"
 
 The direction of the flow of the healthcheck. Either unidirectional, where the probe comes to you via the tunnel and the result comes back to Cloudflare via the open Internet, or bidirectional where both the probe and result come and go via the tunnel.
 
@@ -3722,7 +3722,7 @@ How frequent the health check is run. The default value is <code>mid</code>.
 
 <summary>
 
-target: optional object {effective, saved } or string
+target: optional object { effective, saved } or string
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target. Must be in object form if the x-magic-new-hc-target header is set to true and string form if x-magic-new-hc-target is absent or set to false.
 
@@ -3734,7 +3734,7 @@ One of the following:
 
 <summary>
 
-MagicHealthCheckTarget object {effective, saved }
+MagicHealthCheckTarget object { effective, saved }
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target.
 
@@ -3848,7 +3848,7 @@ POST/accounts/{account\_id}/magic/ipsec\_tunnels/psk
 
 <summary>
 
-PSKMetadata object {last\_generated\_on }
+PSKMetadata object { last\_generated\_on }
 
 The PSK metadata that includes when the PSK was generated.
 
@@ -3870,7 +3870,7 @@ formatdate-time
 
 <summary>
 
-IPSECTunnelListResponse object {ipsec\_tunnels }
+IPSECTunnelListResponse object { ipsec\_tunnels }
 
 </summary>
 
@@ -3878,7 +3878,7 @@ IPSECTunnelListResponse object {ipsec\_tunnels }
 
 <summary>
 
-ipsec\_tunnels: optional array of object {id, cloudflare\_endpoint, interface\_address, 14 more }
+ipsec\_tunnels: optional array of object { id, cloudflare\_endpoint, interface\_address, 14 more }
 
 </summary>
 
@@ -3924,7 +3924,7 @@ True if automatic stateful return routing should be enabled for a tunnel, false 
 
 <summary>
 
-bgp: optional object {customer\_asn, export\_filter\_id, extra\_prefixes, 2 more }
+bgp: optional object { customer\_asn, export\_filter\_id, extra\_prefixes, 2 more }
 
 </summary>
 
@@ -3979,7 +3979,7 @@ In other words, MD5 keys may contain any printable ASCII character aside from ne
 
 <summary>
 
-bgp\_status: optional object {state, tcp\_established, updated\_at, 5 more }
+bgp\_status: optional object { state, tcp\_established, updated\_at, 5 more }
 
 </summary>
 
@@ -3987,7 +3987,7 @@ bgp\_status: optional object {state, tcp\_established, updated\_at, 5 more }
 
 <summary>
 
-state: "BGP\_DOWN"or "BGP\_UP"or "BGP\_ESTABLISHING"
+state: "BGP\_DOWN" or "BGP\_UP" or "BGP\_ESTABLISHING"
 
 </summary>
 
@@ -4067,7 +4067,7 @@ formatdate-time
 
 <summary>
 
-custom\_remote\_identities: optional object {fqdn\_id }
+custom\_remote\_identities: optional object { fqdn\_id }
 
 </summary>
 
@@ -4101,7 +4101,7 @@ An optional description forthe IPsec tunnel.
 
 <summary>
 
-health\_check: optional object {direction, enabled, rate, 2 more }
+health\_check: optional object { direction, enabled, rate, 2 more }
 
 </summary>
 
@@ -4109,7 +4109,7 @@ health\_check: optional object {direction, enabled, rate, 2 more }
 
 <summary>
 
-direction: optional "unidirectional"or "bidirectional"
+direction: optional "unidirectional" or "bidirectional"
 
 The direction of the flow of the healthcheck. Either unidirectional, where the probe comes to you via the tunnel and the result comes back to Cloudflare via the open Internet, or bidirectional where both the probe and result come and go via the tunnel.
 
@@ -4145,7 +4145,7 @@ How frequent the health check is run. The default value is <code>mid</code>.
 
 <summary>
 
-target: optional object {effective, saved } or string
+target: optional object { effective, saved } or string
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target. Must be in object form if the x-magic-new-hc-target header is set to true and string form if x-magic-new-hc-target is absent or set to false.
 
@@ -4157,7 +4157,7 @@ One of the following:
 
 <summary>
 
-MagicHealthCheckTarget object {effective, saved }
+MagicHealthCheckTarget object { effective, saved }
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target.
 
@@ -4235,7 +4235,7 @@ If <code>true</code>, then IPsec replay protection will be supported in the Clou
 
 <summary>
 
-IPSECTunnelGetResponse object {ipsec\_tunnel }
+IPSECTunnelGetResponse object { ipsec\_tunnel }
 
 </summary>
 
@@ -4243,7 +4243,7 @@ IPSECTunnelGetResponse object {ipsec\_tunnel }
 
 <summary>
 
-ipsec\_tunnel: optional object {id, cloudflare\_endpoint, interface\_address, 14 more }
+ipsec\_tunnel: optional object { id, cloudflare\_endpoint, interface\_address, 14 more }
 
 </summary>
 
@@ -4289,7 +4289,7 @@ True if automatic stateful return routing should be enabled for a tunnel, false 
 
 <summary>
 
-bgp: optional object {customer\_asn, export\_filter\_id, extra\_prefixes, 2 more }
+bgp: optional object { customer\_asn, export\_filter\_id, extra\_prefixes, 2 more }
 
 </summary>
 
@@ -4344,7 +4344,7 @@ In other words, MD5 keys may contain any printable ASCII character aside from ne
 
 <summary>
 
-bgp\_status: optional object {state, tcp\_established, updated\_at, 5 more }
+bgp\_status: optional object { state, tcp\_established, updated\_at, 5 more }
 
 </summary>
 
@@ -4352,7 +4352,7 @@ bgp\_status: optional object {state, tcp\_established, updated\_at, 5 more }
 
 <summary>
 
-state: "BGP\_DOWN"or "BGP\_UP"or "BGP\_ESTABLISHING"
+state: "BGP\_DOWN" or "BGP\_UP" or "BGP\_ESTABLISHING"
 
 </summary>
 
@@ -4432,7 +4432,7 @@ formatdate-time
 
 <summary>
 
-custom\_remote\_identities: optional object {fqdn\_id }
+custom\_remote\_identities: optional object { fqdn\_id }
 
 </summary>
 
@@ -4466,7 +4466,7 @@ An optional description forthe IPsec tunnel.
 
 <summary>
 
-health\_check: optional object {direction, enabled, rate, 2 more }
+health\_check: optional object { direction, enabled, rate, 2 more }
 
 </summary>
 
@@ -4474,7 +4474,7 @@ health\_check: optional object {direction, enabled, rate, 2 more }
 
 <summary>
 
-direction: optional "unidirectional"or "bidirectional"
+direction: optional "unidirectional" or "bidirectional"
 
 The direction of the flow of the healthcheck. Either unidirectional, where the probe comes to you via the tunnel and the result comes back to Cloudflare via the open Internet, or bidirectional where both the probe and result come and go via the tunnel.
 
@@ -4510,7 +4510,7 @@ How frequent the health check is run. The default value is <code>mid</code>.
 
 <summary>
 
-target: optional object {effective, saved } or string
+target: optional object { effective, saved } or string
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target. Must be in object form if the x-magic-new-hc-target header is set to true and string form if x-magic-new-hc-target is absent or set to false.
 
@@ -4522,7 +4522,7 @@ One of the following:
 
 <summary>
 
-MagicHealthCheckTarget object {effective, saved }
+MagicHealthCheckTarget object { effective, saved }
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target.
 
@@ -4600,7 +4600,7 @@ If <code>true</code>, then IPsec replay protection will be supported in the Clou
 
 <summary>
 
-IPSECTunnelCreateResponse object {id, cloudflare\_endpoint, interface\_address, 14 more }
+IPSECTunnelCreateResponse object { id, cloudflare\_endpoint, interface\_address, 14 more }
 
 </summary>
 
@@ -4646,7 +4646,7 @@ True if automatic stateful return routing should be enabled for a tunnel, false 
 
 <summary>
 
-bgp: optional object {customer\_asn, export\_filter\_id, extra\_prefixes, 2 more }
+bgp: optional object { customer\_asn, export\_filter\_id, extra\_prefixes, 2 more }
 
 </summary>
 
@@ -4701,7 +4701,7 @@ In other words, MD5 keys may contain any printable ASCII character aside from ne
 
 <summary>
 
-bgp\_status: optional object {state, tcp\_established, updated\_at, 5 more }
+bgp\_status: optional object { state, tcp\_established, updated\_at, 5 more }
 
 </summary>
 
@@ -4709,7 +4709,7 @@ bgp\_status: optional object {state, tcp\_established, updated\_at, 5 more }
 
 <summary>
 
-state: "BGP\_DOWN"or "BGP\_UP"or "BGP\_ESTABLISHING"
+state: "BGP\_DOWN" or "BGP\_UP" or "BGP\_ESTABLISHING"
 
 </summary>
 
@@ -4789,7 +4789,7 @@ formatdate-time
 
 <summary>
 
-custom\_remote\_identities: optional object {fqdn\_id }
+custom\_remote\_identities: optional object { fqdn\_id }
 
 </summary>
 
@@ -4823,7 +4823,7 @@ An optional description forthe IPsec tunnel.
 
 <summary>
 
-health\_check: optional object {direction, enabled, rate, 2 more }
+health\_check: optional object { direction, enabled, rate, 2 more }
 
 </summary>
 
@@ -4831,7 +4831,7 @@ health\_check: optional object {direction, enabled, rate, 2 more }
 
 <summary>
 
-direction: optional "unidirectional"or "bidirectional"
+direction: optional "unidirectional" or "bidirectional"
 
 The direction of the flow of the healthcheck. Either unidirectional, where the probe comes to you via the tunnel and the result comes back to Cloudflare via the open Internet, or bidirectional where both the probe and result come and go via the tunnel.
 
@@ -4867,7 +4867,7 @@ How frequent the health check is run. The default value is <code>mid</code>.
 
 <summary>
 
-target: optional object {effective, saved } or string
+target: optional object { effective, saved } or string
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target. Must be in object form if the x-magic-new-hc-target header is set to true and string form if x-magic-new-hc-target is absent or set to false.
 
@@ -4879,7 +4879,7 @@ One of the following:
 
 <summary>
 
-MagicHealthCheckTarget object {effective, saved }
+MagicHealthCheckTarget object { effective, saved }
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target.
 
@@ -4953,7 +4953,7 @@ If <code>true</code>, then IPsec replay protection will be supported in the Clou
 
 <summary>
 
-IPSECTunnelUpdateResponse object {modified, modified\_ipsec\_tunnel }
+IPSECTunnelUpdateResponse object { modified, modified\_ipsec\_tunnel }
 
 </summary>
 
@@ -4965,7 +4965,7 @@ modified: optional boolean
 
 <summary>
 
-modified\_ipsec\_tunnel: optional object {id, cloudflare\_endpoint, interface\_address, 14 more }
+modified\_ipsec\_tunnel: optional object { id, cloudflare\_endpoint, interface\_address, 14 more }
 
 </summary>
 
@@ -5011,7 +5011,7 @@ True if automatic stateful return routing should be enabled for a tunnel, false 
 
 <summary>
 
-bgp: optional object {customer\_asn, export\_filter\_id, extra\_prefixes, 2 more }
+bgp: optional object { customer\_asn, export\_filter\_id, extra\_prefixes, 2 more }
 
 </summary>
 
@@ -5066,7 +5066,7 @@ In other words, MD5 keys may contain any printable ASCII character aside from ne
 
 <summary>
 
-bgp\_status: optional object {state, tcp\_established, updated\_at, 5 more }
+bgp\_status: optional object { state, tcp\_established, updated\_at, 5 more }
 
 </summary>
 
@@ -5074,7 +5074,7 @@ bgp\_status: optional object {state, tcp\_established, updated\_at, 5 more }
 
 <summary>
 
-state: "BGP\_DOWN"or "BGP\_UP"or "BGP\_ESTABLISHING"
+state: "BGP\_DOWN" or "BGP\_UP" or "BGP\_ESTABLISHING"
 
 </summary>
 
@@ -5154,7 +5154,7 @@ formatdate-time
 
 <summary>
 
-custom\_remote\_identities: optional object {fqdn\_id }
+custom\_remote\_identities: optional object { fqdn\_id }
 
 </summary>
 
@@ -5188,7 +5188,7 @@ An optional description forthe IPsec tunnel.
 
 <summary>
 
-health\_check: optional object {direction, enabled, rate, 2 more }
+health\_check: optional object { direction, enabled, rate, 2 more }
 
 </summary>
 
@@ -5196,7 +5196,7 @@ health\_check: optional object {direction, enabled, rate, 2 more }
 
 <summary>
 
-direction: optional "unidirectional"or "bidirectional"
+direction: optional "unidirectional" or "bidirectional"
 
 The direction of the flow of the healthcheck. Either unidirectional, where the probe comes to you via the tunnel and the result comes back to Cloudflare via the open Internet, or bidirectional where both the probe and result come and go via the tunnel.
 
@@ -5232,7 +5232,7 @@ How frequent the health check is run. The default value is <code>mid</code>.
 
 <summary>
 
-target: optional object {effective, saved } or string
+target: optional object { effective, saved } or string
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target. Must be in object form if the x-magic-new-hc-target header is set to true and string form if x-magic-new-hc-target is absent or set to false.
 
@@ -5244,7 +5244,7 @@ One of the following:
 
 <summary>
 
-MagicHealthCheckTarget object {effective, saved }
+MagicHealthCheckTarget object { effective, saved }
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target.
 
@@ -5322,7 +5322,7 @@ If <code>true</code>, then IPsec replay protection will be supported in the Clou
 
 <summary>
 
-IPSECTunnelDeleteResponse object {deleted, deleted\_ipsec\_tunnel }
+IPSECTunnelDeleteResponse object { deleted, deleted\_ipsec\_tunnel }
 
 </summary>
 
@@ -5334,7 +5334,7 @@ deleted: optional boolean
 
 <summary>
 
-deleted\_ipsec\_tunnel: optional object {id, cloudflare\_endpoint, interface\_address, 14 more }
+deleted\_ipsec\_tunnel: optional object { id, cloudflare\_endpoint, interface\_address, 14 more }
 
 </summary>
 
@@ -5380,7 +5380,7 @@ True if automatic stateful return routing should be enabled for a tunnel, false 
 
 <summary>
 
-bgp: optional object {customer\_asn, export\_filter\_id, extra\_prefixes, 2 more }
+bgp: optional object { customer\_asn, export\_filter\_id, extra\_prefixes, 2 more }
 
 </summary>
 
@@ -5435,7 +5435,7 @@ In other words, MD5 keys may contain any printable ASCII character aside from ne
 
 <summary>
 
-bgp\_status: optional object {state, tcp\_established, updated\_at, 5 more }
+bgp\_status: optional object { state, tcp\_established, updated\_at, 5 more }
 
 </summary>
 
@@ -5443,7 +5443,7 @@ bgp\_status: optional object {state, tcp\_established, updated\_at, 5 more }
 
 <summary>
 
-state: "BGP\_DOWN"or "BGP\_UP"or "BGP\_ESTABLISHING"
+state: "BGP\_DOWN" or "BGP\_UP" or "BGP\_ESTABLISHING"
 
 </summary>
 
@@ -5523,7 +5523,7 @@ formatdate-time
 
 <summary>
 
-custom\_remote\_identities: optional object {fqdn\_id }
+custom\_remote\_identities: optional object { fqdn\_id }
 
 </summary>
 
@@ -5557,7 +5557,7 @@ An optional description forthe IPsec tunnel.
 
 <summary>
 
-health\_check: optional object {direction, enabled, rate, 2 more }
+health\_check: optional object { direction, enabled, rate, 2 more }
 
 </summary>
 
@@ -5565,7 +5565,7 @@ health\_check: optional object {direction, enabled, rate, 2 more }
 
 <summary>
 
-direction: optional "unidirectional"or "bidirectional"
+direction: optional "unidirectional" or "bidirectional"
 
 The direction of the flow of the healthcheck. Either unidirectional, where the probe comes to you via the tunnel and the result comes back to Cloudflare via the open Internet, or bidirectional where both the probe and result come and go via the tunnel.
 
@@ -5601,7 +5601,7 @@ How frequent the health check is run. The default value is <code>mid</code>.
 
 <summary>
 
-target: optional object {effective, saved } or string
+target: optional object { effective, saved } or string
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target. Must be in object form if the x-magic-new-hc-target header is set to true and string form if x-magic-new-hc-target is absent or set to false.
 
@@ -5613,7 +5613,7 @@ One of the following:
 
 <summary>
 
-MagicHealthCheckTarget object {effective, saved }
+MagicHealthCheckTarget object { effective, saved }
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target.
 
@@ -5691,7 +5691,7 @@ If <code>true</code>, then IPsec replay protection will be supported in the Clou
 
 <summary>
 
-IPSECTunnelBulkUpdateResponse object {modified, modified\_ipsec\_tunnels }
+IPSECTunnelBulkUpdateResponse object { modified, modified\_ipsec\_tunnels }
 
 </summary>
 
@@ -5703,7 +5703,7 @@ modified: optional boolean
 
 <summary>
 
-modified\_ipsec\_tunnels: optional array of object {id, cloudflare\_endpoint, interface\_address, 14 more }
+modified\_ipsec\_tunnels: optional array of object { id, cloudflare\_endpoint, interface\_address, 14 more }
 
 </summary>
 
@@ -5749,7 +5749,7 @@ True if automatic stateful return routing should be enabled for a tunnel, false 
 
 <summary>
 
-bgp: optional object {customer\_asn, export\_filter\_id, extra\_prefixes, 2 more }
+bgp: optional object { customer\_asn, export\_filter\_id, extra\_prefixes, 2 more }
 
 </summary>
 
@@ -5804,7 +5804,7 @@ In other words, MD5 keys may contain any printable ASCII character aside from ne
 
 <summary>
 
-bgp\_status: optional object {state, tcp\_established, updated\_at, 5 more }
+bgp\_status: optional object { state, tcp\_established, updated\_at, 5 more }
 
 </summary>
 
@@ -5812,7 +5812,7 @@ bgp\_status: optional object {state, tcp\_established, updated\_at, 5 more }
 
 <summary>
 
-state: "BGP\_DOWN"or "BGP\_UP"or "BGP\_ESTABLISHING"
+state: "BGP\_DOWN" or "BGP\_UP" or "BGP\_ESTABLISHING"
 
 </summary>
 
@@ -5892,7 +5892,7 @@ formatdate-time
 
 <summary>
 
-custom\_remote\_identities: optional object {fqdn\_id }
+custom\_remote\_identities: optional object { fqdn\_id }
 
 </summary>
 
@@ -5926,7 +5926,7 @@ An optional description forthe IPsec tunnel.
 
 <summary>
 
-health\_check: optional object {direction, enabled, rate, 2 more }
+health\_check: optional object { direction, enabled, rate, 2 more }
 
 </summary>
 
@@ -5934,7 +5934,7 @@ health\_check: optional object {direction, enabled, rate, 2 more }
 
 <summary>
 
-direction: optional "unidirectional"or "bidirectional"
+direction: optional "unidirectional" or "bidirectional"
 
 The direction of the flow of the healthcheck. Either unidirectional, where the probe comes to you via the tunnel and the result comes back to Cloudflare via the open Internet, or bidirectional where both the probe and result come and go via the tunnel.
 
@@ -5970,7 +5970,7 @@ How frequent the health check is run. The default value is <code>mid</code>.
 
 <summary>
 
-target: optional object {effective, saved } or string
+target: optional object { effective, saved } or string
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target. Must be in object form if the x-magic-new-hc-target header is set to true and string form if x-magic-new-hc-target is absent or set to false.
 
@@ -5982,7 +5982,7 @@ One of the following:
 
 <summary>
 
-MagicHealthCheckTarget object {effective, saved }
+MagicHealthCheckTarget object { effective, saved }
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target.
 
@@ -6060,7 +6060,7 @@ If <code>true</code>, then IPsec replay protection will be supported in the Clou
 
 <summary>
 
-IPSECTunnelPSKGenerateResponse object {ipsec\_tunnel\_id, psk, psk\_metadata }
+IPSECTunnelPSKGenerateResponse object { ipsec\_tunnel\_id, psk, psk\_metadata }
 
 </summary>
 
@@ -6092,7 +6092,7 @@ The PSK metadata that includes when the PSK was generated.
 
 <summary>
 
-IPSECTunnelPSKSetResponse object {successfully\_applied\_psks, unapplied\_psks }
+IPSECTunnelPSKSetResponse object { successfully\_applied\_psks, unapplied\_psks }
 
 </summary>
 
@@ -6100,7 +6100,7 @@ IPSECTunnelPSKSetResponse object {successfully\_applied\_psks, unapplied\_psks }
 
 <summary>
 
-successfully\_applied\_psks: optional map\[object {ipsec\_id, ipsec\_tunnel\_id, psk, psk\_metadata } ]
+successfully\_applied\_psks: optional map\[object { ipsec\_id, ipsec\_tunnel\_id, psk, psk\_metadata } ]
 
 Map of tunnel IDs to successfully applied PSK details.
 
@@ -6182,7 +6182,7 @@ DELETE/accounts/{account\_id}/magic/routes
 
 <summary>
 
-Scope object {colo\_names, colo\_regions }
+Scope object { colo\_names, colo\_regions }
 
 Used only for ECMP routes.
 
@@ -6208,7 +6208,7 @@ List of colo regions for the ECMP scope.
 
 <summary>
 
-RouteListResponse object {routes }
+RouteListResponse object { routes }
 
 </summary>
 
@@ -6216,7 +6216,7 @@ RouteListResponse object {routes }
 
 <summary>
 
-routes: optional array of object {id, nexthop, prefix, 6 more }
+routes: optional array of object { id, nexthop, prefix, 6 more }
 
 </summary>
 
@@ -6292,7 +6292,7 @@ Optional weight of the ECMP scope - if provided.
 
 <summary>
 
-RouteGetResponse object {route }
+RouteGetResponse object { route }
 
 </summary>
 
@@ -6300,7 +6300,7 @@ RouteGetResponse object {route }
 
 <summary>
 
-route: optional object {id, nexthop, prefix, 6 more }
+route: optional object { id, nexthop, prefix, 6 more }
 
 </summary>
 
@@ -6376,7 +6376,7 @@ Optional weight of the ECMP scope - if provided.
 
 <summary>
 
-RouteCreateResponse object {id, nexthop, prefix, 6 more }
+RouteCreateResponse object { id, nexthop, prefix, 6 more }
 
 </summary>
 
@@ -6448,7 +6448,7 @@ Optional weight of the ECMP scope - if provided.
 
 <summary>
 
-RouteUpdateResponse object {modified, modified\_route }
+RouteUpdateResponse object { modified, modified\_route }
 
 </summary>
 
@@ -6460,7 +6460,7 @@ modified: optional boolean
 
 <summary>
 
-modified\_route: optional object {id, nexthop, prefix, 6 more }
+modified\_route: optional object { id, nexthop, prefix, 6 more }
 
 </summary>
 
@@ -6536,7 +6536,7 @@ Optional weight of the ECMP scope - if provided.
 
 <summary>
 
-RouteDeleteResponse object {deleted, deleted\_route }
+RouteDeleteResponse object { deleted, deleted\_route }
 
 </summary>
 
@@ -6548,7 +6548,7 @@ deleted: optional boolean
 
 <summary>
 
-deleted\_route: optional object {id, nexthop, prefix, 6 more }
+deleted\_route: optional object { id, nexthop, prefix, 6 more }
 
 </summary>
 
@@ -6624,7 +6624,7 @@ Optional weight of the ECMP scope - if provided.
 
 <summary>
 
-RouteBulkUpdateResponse object {modified, modified\_routes }
+RouteBulkUpdateResponse object { modified, modified\_routes }
 
 </summary>
 
@@ -6636,7 +6636,7 @@ modified: optional boolean
 
 <summary>
 
-modified\_routes: optional array of object {id, nexthop, prefix, 6 more }
+modified\_routes: optional array of object { id, nexthop, prefix, 6 more }
 
 </summary>
 
@@ -6712,7 +6712,7 @@ Optional weight of the ECMP scope - if provided.
 
 <summary>
 
-RouteEmptyResponse object {deleted, deleted\_routes }
+RouteEmptyResponse object { deleted, deleted\_routes }
 
 </summary>
 
@@ -6724,7 +6724,7 @@ deleted: optional boolean
 
 <summary>
 
-deleted\_routes: optional array of object {id, nexthop, prefix, 6 more }
+deleted\_routes: optional array of object { id, nexthop, prefix, 6 more }
 
 </summary>
 
@@ -6824,7 +6824,7 @@ DELETE/accounts/{account\_id}/magic/bgp/filter\_profiles/{profile\_id}
 
 <summary>
 
-BGPFilterProfileListResponse object {id, description, match\_action, 4 more }
+BGPFilterProfileListResponse object { id, description, match\_action, 4 more }
 
 </summary>
 
@@ -6848,7 +6848,7 @@ maxLength1024
 
 <summary>
 
-match\_action: "allow"or "deny"
+match\_action: "allow" or "deny"
 
 Action to take when a route matches one of the targets in this profile
 
@@ -6904,7 +6904,7 @@ formatdate-time
 
 <summary>
 
-BGPFilterProfileGetResponse object {id, description, match\_action, 4 more }
+BGPFilterProfileGetResponse object { id, description, match\_action, 4 more }
 
 </summary>
 
@@ -6928,7 +6928,7 @@ maxLength1024
 
 <summary>
 
-match\_action: "allow"or "deny"
+match\_action: "allow" or "deny"
 
 Action to take when a route matches one of the targets in this profile
 
@@ -6984,7 +6984,7 @@ formatdate-time
 
 <summary>
 
-BGPFilterProfileCreateResponse object {id, description, match\_action, 4 more }
+BGPFilterProfileCreateResponse object { id, description, match\_action, 4 more }
 
 </summary>
 
@@ -7008,7 +7008,7 @@ maxLength1024
 
 <summary>
 
-match\_action: "allow"or "deny"
+match\_action: "allow" or "deny"
 
 Action to take when a route matches one of the targets in this profile
 
@@ -7064,7 +7064,7 @@ formatdate-time
 
 <summary>
 
-BGPFilterProfileUpdateResponse object {id, description, match\_action, 4 more }
+BGPFilterProfileUpdateResponse object { id, description, match\_action, 4 more }
 
 </summary>
 
@@ -7088,7 +7088,7 @@ maxLength1024
 
 <summary>
 
-match\_action: "allow"or "deny"
+match\_action: "allow" or "deny"
 
 Action to take when a route matches one of the targets in this profile
 
@@ -7144,7 +7144,7 @@ formatdate-time
 
 <summary>
 
-BGPFilterProfileDeleteResponse object {id, description, match\_action, 4 more }
+BGPFilterProfileDeleteResponse object { id, description, match\_action, 4 more }
 
 </summary>
 
@@ -7168,7 +7168,7 @@ maxLength1024
 
 <summary>
 
-match\_action: "allow"or "deny"
+match\_action: "allow" or "deny"
 
 Action to take when a route matches one of the targets in this profile
 
@@ -7252,7 +7252,7 @@ DELETE/accounts/{account\_id}/magic/sites/{site\_id}
 
 <summary>
 
-Site object {id, connector\_id, description, 4 more }
+Site object { id, connector\_id, description, 4 more }
 
 </summary>
 
@@ -7306,7 +7306,7 @@ Magic Connector identifier tag. Used when high availability mode is on.
 
 <summary>
 
-SiteLocation object {lat, lon }
+SiteLocation object { lat, lon }
 
 Location of site in latitude and longitude.
 
@@ -7356,7 +7356,7 @@ DELETE/accounts/{account\_id}/magic/sites/{site\_id}/app\_configs/{app\_config\_
 
 <summary>
 
-AppConfigurationListResponse = object {account\_app\_id, id, breakout, 3 more } or object {managed\_app\_id, id, breakout, 3 more }
+AppConfigurationListResponse = object { account\_app\_id, id, breakout, 3 more } or object { managed\_app\_id, id, breakout, 3 more }
 
 Traffic decision configuration for an app.
 
@@ -7368,7 +7368,7 @@ One of the following:
 
 <summary>
 
-AccountApp object {account\_app\_id, id, breakout, 3 more }
+AccountApp object { account\_app\_id, id, breakout, 3 more }
 
 </summary>
 
@@ -7424,7 +7424,7 @@ maxLength32
 
 <summary>
 
-ManagedApp object {managed\_app\_id, id, breakout, 3 more }
+ManagedApp object { managed\_app\_id, id, breakout, 3 more }
 
 </summary>
 
@@ -7484,7 +7484,7 @@ maxLength32
 
 <summary>
 
-AppConfigurationCreateResponse = object {account\_app\_id, id, breakout, 3 more } or object {managed\_app\_id, id, breakout, 3 more }
+AppConfigurationCreateResponse = object { account\_app\_id, id, breakout, 3 more } or object { managed\_app\_id, id, breakout, 3 more }
 
 Traffic decision configuration for an app.
 
@@ -7496,7 +7496,7 @@ One of the following:
 
 <summary>
 
-AccountApp object {account\_app\_id, id, breakout, 3 more }
+AccountApp object { account\_app\_id, id, breakout, 3 more }
 
 </summary>
 
@@ -7552,7 +7552,7 @@ maxLength32
 
 <summary>
 
-ManagedApp object {managed\_app\_id, id, breakout, 3 more }
+ManagedApp object { managed\_app\_id, id, breakout, 3 more }
 
 </summary>
 
@@ -7612,7 +7612,7 @@ maxLength32
 
 <summary>
 
-AppConfigurationUpdateResponse = object {account\_app\_id, id, breakout, 3 more } or object {managed\_app\_id, id, breakout, 3 more }
+AppConfigurationUpdateResponse = object { account\_app\_id, id, breakout, 3 more } or object { managed\_app\_id, id, breakout, 3 more }
 
 Traffic decision configuration for an app.
 
@@ -7624,7 +7624,7 @@ One of the following:
 
 <summary>
 
-AccountApp object {account\_app\_id, id, breakout, 3 more }
+AccountApp object { account\_app\_id, id, breakout, 3 more }
 
 </summary>
 
@@ -7680,7 +7680,7 @@ maxLength32
 
 <summary>
 
-ManagedApp object {managed\_app\_id, id, breakout, 3 more }
+ManagedApp object { managed\_app\_id, id, breakout, 3 more }
 
 </summary>
 
@@ -7740,7 +7740,7 @@ maxLength32
 
 <summary>
 
-AppConfigurationEditResponse = object {account\_app\_id, id, breakout, 3 more } or object {managed\_app\_id, id, breakout, 3 more }
+AppConfigurationEditResponse = object { account\_app\_id, id, breakout, 3 more } or object { managed\_app\_id, id, breakout, 3 more }
 
 Traffic decision configuration for an app.
 
@@ -7752,7 +7752,7 @@ One of the following:
 
 <summary>
 
-AccountApp object {account\_app\_id, id, breakout, 3 more }
+AccountApp object { account\_app\_id, id, breakout, 3 more }
 
 </summary>
 
@@ -7808,7 +7808,7 @@ maxLength32
 
 <summary>
 
-ManagedApp object {managed\_app\_id, id, breakout, 3 more }
+ManagedApp object { managed\_app\_id, id, breakout, 3 more }
 
 </summary>
 
@@ -7868,7 +7868,7 @@ maxLength32
 
 <summary>
 
-AppConfigurationDeleteResponse = object {account\_app\_id, id, breakout, 3 more } or object {managed\_app\_id, id, breakout, 3 more }
+AppConfigurationDeleteResponse = object { account\_app\_id, id, breakout, 3 more } or object { managed\_app\_id, id, breakout, 3 more }
 
 Traffic decision configuration for an app.
 
@@ -7880,7 +7880,7 @@ One of the following:
 
 <summary>
 
-AccountApp object {account\_app\_id, id, breakout, 3 more }
+AccountApp object { account\_app\_id, id, breakout, 3 more }
 
 </summary>
 
@@ -7936,7 +7936,7 @@ maxLength32
 
 <summary>
 
-ManagedApp object {managed\_app\_id, id, breakout, 3 more }
+ManagedApp object { managed\_app\_id, id, breakout, 3 more }
 
 </summary>
 
@@ -8024,7 +8024,7 @@ DELETE/accounts/{account\_id}/magic/sites/{site\_id}/acls/{acl\_id}
 
 <summary>
 
-ACL object {id, description, forward\_locally, 5 more }
+ACL object { id, description, forward\_locally, 5 more }
 
 Bidirectional ACL policy for network traffic within a site.
 
@@ -8104,7 +8104,7 @@ The desired traffic direction for this ACL policy. If set to “false”, the po
 
 <summary>
 
-ACLConfiguration object {lan\_id, lan\_name, port\_ranges, 2 more }
+ACLConfiguration object { lan\_id, lan\_name, port\_ranges, 2 more }
 
 </summary>
 
@@ -8146,7 +8146,7 @@ Array of subnet IPs within the LAN that will be included in the ACL. If no subne
 
 <summary>
 
-AllowedProtocol = "tcp"or "udp"or "icmp"
+AllowedProtocol = "tcp" or "udp" or "icmp"
 
 Array of allowed communication protocols between configured LANs. If no protocols are provided, all protocols are allowed.
 
@@ -8208,7 +8208,7 @@ DELETE/accounts/{account\_id}/magic/sites/{site\_id}/lans/{lan\_id}
 
 <summary>
 
-DHCPRelay object {server\_addresses }
+DHCPRelay object { server\_addresses }
 
 </summary>
 
@@ -8226,7 +8226,7 @@ List of DHCP server IPs.
 
 <summary>
 
-DHCPServer object {dhcp\_options, dhcp\_pool\_end, dhcp\_pool\_start, 3 more }
+DHCPServer object { dhcp\_options, dhcp\_pool\_end, dhcp\_pool\_start, 3 more }
 
 </summary>
 
@@ -8234,7 +8234,7 @@ DHCPServer object {dhcp\_options, dhcp\_pool\_end, dhcp\_pool\_start, 3 more }
 
 <summary>
 
-dhcp\_options: optional array of object {code, type, value }
+dhcp\_options: optional array of object { code, type, value }
 
 Optional list of custom DHCP options to include in DHCP responses. Only valid when DHCP server is enabled.
 
@@ -8254,7 +8254,7 @@ minimum1
 
 <summary>
 
-type: "text"or "hex"or "ip"or 3 more
+type: "text" or "hex" or "ip" or 3 more
 
 The type of the option value. text: a string (max 255 bytes). hex: colon-separated hex bytes (e.g. “01:04:aa:bb:cc”, max 255 bytes). ip: an IPv4 address (e.g. “10.20.30.40”). byte: an unsigned integer 0-255 (1 byte). short: an unsigned integer 0-65535 (2 bytes). integer: an unsigned integer 0-4294967295 (4 bytes).
 
@@ -8336,7 +8336,7 @@ Mapping of MAC addresses to IP addresses
 
 <summary>
 
-LAN object {id, bond\_id, ha\_link, 10 more }
+LAN object { id, bond\_id, ha\_link, 10 more }
 
 </summary>
 
@@ -8386,7 +8386,7 @@ physport: optional number
 
 <summary>
 
-remote\_subnets: optional array of object {local\_alias\_prefix, remote\_prefix }
+remote\_subnets: optional array of object { local\_alias\_prefix, remote\_prefix }
 
 </summary>
 
@@ -8462,7 +8462,7 @@ VLAN ID. Use zero for untagged.
 
 <summary>
 
-LANStaticAddressing object {address, dhcp\_relay, dhcp\_server, 2 more }
+LANStaticAddressing object { address, dhcp\_relay, dhcp\_server, 2 more }
 
 If the site is not configured in high availability mode, this configuration is optional (if omitted, use DHCP). However, if in high availability mode, static\_address is required along with secondary and virtual address.
 
@@ -8502,7 +8502,7 @@ A valid CIDR notation representing an IP range.
 
 <summary>
 
-Nat object {static\_prefix }
+Nat object { static\_prefix }
 
 </summary>
 
@@ -8520,7 +8520,7 @@ A valid CIDR notation representing an IP range.
 
 <summary>
 
-RoutedSubnet object {next\_hop, prefix, nat }
+RoutedSubnet object { next\_hop, prefix, nat }
 
 </summary>
 
@@ -8576,7 +8576,7 @@ DELETE/accounts/{account\_id}/magic/sites/{site\_id}/wans/{wan\_id}
 
 <summary>
 
-WAN object {id, health\_check\_rate, load\_balance\_inner\_flows, 8 more }
+WAN object { id, health\_check\_rate, load\_balance\_inner\_flows, 8 more }
 
 </summary>
 
@@ -8592,7 +8592,7 @@ maxLength32
 
 <summary>
 
-health\_check\_rate: optional "low"or "mid"or "high"
+health\_check\_rate: optional "low" or "mid" or "high"
 
 Magic WAN health check rate for tunnels created on this link. The default value is <code>mid</code>.
 
@@ -8682,7 +8682,7 @@ VLAN ID. Use zero for untagged.
 
 <summary>
 
-WANStaticAddressing object {address, gateway\_address, secondary\_address, secondary\_gateway\_address }
+WANStaticAddressing object { address, gateway\_address, secondary\_address, secondary\_gateway\_address }
 
 (optional) if omitted, use DHCP. Submit secondary\_address when site is in high availability mode.
 
@@ -8748,7 +8748,7 @@ DELETE/accounts/{account\_id}/magic/connectors/{connector\_id}
 
 <summary>
 
-ConnectorListResponse object {id, activated, interrupt\_window\_days\_of\_week, 10 more }
+ConnectorListResponse object { id, activated, interrupt\_window\_days\_of\_week, 10 more }
 
 </summary>
 
@@ -8764,7 +8764,7 @@ activated: boolean
 
 <summary>
 
-interrupt\_window\_days\_of\_week: array of "Sunday"or "Monday"or "Tuesday"or 4 more
+interrupt\_window\_days\_of\_week: array of "Sunday" or "Monday" or "Tuesday" or 4 more
 
 Allowed days of the week for upgrades. Default is all days.
 
@@ -8838,7 +8838,7 @@ timezone: string
 
 <summary>
 
-device: optional object {id, serial\_number, type }
+device: optional object { id, serial\_number, type }
 
 </summary>
 
@@ -8854,7 +8854,7 @@ serial\_number: optional string
 
 <summary>
 
-type: optional "MANAGED"or "LICENSED"
+type: optional "MANAGED" or "LICENSED"
 
 </summary>
 
@@ -8896,7 +8896,7 @@ license\_key: optional string
 
 <summary>
 
-ConnectorGetResponse object {id, activated, interrupt\_window\_days\_of\_week, 10 more }
+ConnectorGetResponse object { id, activated, interrupt\_window\_days\_of\_week, 10 more }
 
 </summary>
 
@@ -8912,7 +8912,7 @@ activated: boolean
 
 <summary>
 
-interrupt\_window\_days\_of\_week: array of "Sunday"or "Monday"or "Tuesday"or 4 more
+interrupt\_window\_days\_of\_week: array of "Sunday" or "Monday" or "Tuesday" or 4 more
 
 Allowed days of the week for upgrades. Default is all days.
 
@@ -8986,7 +8986,7 @@ timezone: string
 
 <summary>
 
-device: optional object {id, serial\_number, type }
+device: optional object { id, serial\_number, type }
 
 </summary>
 
@@ -9002,7 +9002,7 @@ serial\_number: optional string
 
 <summary>
 
-type: optional "MANAGED"or "LICENSED"
+type: optional "MANAGED" or "LICENSED"
 
 </summary>
 
@@ -9044,7 +9044,7 @@ license\_key: optional string
 
 <summary>
 
-ConnectorCreateResponse object {id, activated, interrupt\_window\_days\_of\_week, 10 more }
+ConnectorCreateResponse object { id, activated, interrupt\_window\_days\_of\_week, 10 more }
 
 </summary>
 
@@ -9060,7 +9060,7 @@ activated: boolean
 
 <summary>
 
-interrupt\_window\_days\_of\_week: array of "Sunday"or "Monday"or "Tuesday"or 4 more
+interrupt\_window\_days\_of\_week: array of "Sunday" or "Monday" or "Tuesday" or 4 more
 
 Allowed days of the week for upgrades. Default is all days.
 
@@ -9134,7 +9134,7 @@ timezone: string
 
 <summary>
 
-device: optional object {id, serial\_number, type }
+device: optional object { id, serial\_number, type }
 
 </summary>
 
@@ -9150,7 +9150,7 @@ serial\_number: optional string
 
 <summary>
 
-type: optional "MANAGED"or "LICENSED"
+type: optional "MANAGED" or "LICENSED"
 
 </summary>
 
@@ -9192,7 +9192,7 @@ license\_key: optional string
 
 <summary>
 
-ConnectorUpdateResponse object {id, activated, interrupt\_window\_days\_of\_week, 10 more }
+ConnectorUpdateResponse object { id, activated, interrupt\_window\_days\_of\_week, 10 more }
 
 </summary>
 
@@ -9208,7 +9208,7 @@ activated: boolean
 
 <summary>
 
-interrupt\_window\_days\_of\_week: array of "Sunday"or "Monday"or "Tuesday"or 4 more
+interrupt\_window\_days\_of\_week: array of "Sunday" or "Monday" or "Tuesday" or 4 more
 
 Allowed days of the week for upgrades. Default is all days.
 
@@ -9282,7 +9282,7 @@ timezone: string
 
 <summary>
 
-device: optional object {id, serial\_number, type }
+device: optional object { id, serial\_number, type }
 
 </summary>
 
@@ -9298,7 +9298,7 @@ serial\_number: optional string
 
 <summary>
 
-type: optional "MANAGED"or "LICENSED"
+type: optional "MANAGED" or "LICENSED"
 
 </summary>
 
@@ -9340,7 +9340,7 @@ license\_key: optional string
 
 <summary>
 
-ConnectorEditResponse object {id, activated, interrupt\_window\_days\_of\_week, 10 more }
+ConnectorEditResponse object { id, activated, interrupt\_window\_days\_of\_week, 10 more }
 
 </summary>
 
@@ -9356,7 +9356,7 @@ activated: boolean
 
 <summary>
 
-interrupt\_window\_days\_of\_week: array of "Sunday"or "Monday"or "Tuesday"or 4 more
+interrupt\_window\_days\_of\_week: array of "Sunday" or "Monday" or "Tuesday" or 4 more
 
 Allowed days of the week for upgrades. Default is all days.
 
@@ -9430,7 +9430,7 @@ timezone: string
 
 <summary>
 
-device: optional object {id, serial\_number, type }
+device: optional object { id, serial\_number, type }
 
 </summary>
 
@@ -9446,7 +9446,7 @@ serial\_number: optional string
 
 <summary>
 
-type: optional "MANAGED"or "LICENSED"
+type: optional "MANAGED" or "LICENSED"
 
 </summary>
 
@@ -9488,7 +9488,7 @@ license\_key: optional string
 
 <summary>
 
-ConnectorDeleteResponse object {id, activated, interrupt\_window\_days\_of\_week, 10 more }
+ConnectorDeleteResponse object { id, activated, interrupt\_window\_days\_of\_week, 10 more }
 
 </summary>
 
@@ -9504,7 +9504,7 @@ activated: boolean
 
 <summary>
 
-interrupt\_window\_days\_of\_week: array of "Sunday"or "Monday"or "Tuesday"or 4 more
+interrupt\_window\_days\_of\_week: array of "Sunday" or "Monday" or "Tuesday" or 4 more
 
 Allowed days of the week for upgrades. Default is all days.
 
@@ -9578,7 +9578,7 @@ timezone: string
 
 <summary>
 
-device: optional object {id, serial\_number, type }
+device: optional object { id, serial\_number, type }
 
 </summary>
 
@@ -9594,7 +9594,7 @@ serial\_number: optional string
 
 <summary>
 
-type: optional "MANAGED"or "LICENSED"
+type: optional "MANAGED" or "LICENSED"
 
 </summary>
 
@@ -9648,7 +9648,7 @@ POST/accounts/{account\_id}/magic/connectors/{connector\_id}/interrupts
 
 <summary>
 
-InterruptListResponse object {submitted\_at, reboot, restart, 2 more }
+InterruptListResponse object { submitted\_at, reboot, restart, 2 more }
 
 Interrupt action for a connector.
 
@@ -9662,7 +9662,7 @@ submitted\_at: string
 
 <summary>
 
-reboot: optional object {purge }
+reboot: optional object { purge }
 
 </summary>
 
@@ -9680,7 +9680,7 @@ Purge connector state.
 
 <summary>
 
-restart: optional object {purge }
+restart: optional object { purge }
 
 </summary>
 
@@ -9698,7 +9698,7 @@ Purge connector state.
 
 <summary>
 
-shutdown: optional object {purge }
+shutdown: optional object { purge }
 
 </summary>
 
@@ -9724,7 +9724,7 @@ triggered\_at: optional string
 
 <summary>
 
-InterruptCreateResponse object {submitted\_at, reboot, restart, 2 more }
+InterruptCreateResponse object { submitted\_at, reboot, restart, 2 more }
 
 Interrupt action for a connector.
 
@@ -9738,7 +9738,7 @@ submitted\_at: string
 
 <summary>
 
-reboot: optional object {purge }
+reboot: optional object { purge }
 
 </summary>
 
@@ -9756,7 +9756,7 @@ Purge connector state.
 
 <summary>
 
-restart: optional object {purge }
+restart: optional object { purge }
 
 </summary>
 
@@ -9774,7 +9774,7 @@ Purge connector state.
 
 <summary>
 
-shutdown: optional object {purge }
+shutdown: optional object { purge }
 
 </summary>
 
@@ -9812,7 +9812,7 @@ GET/accounts/{account\_id}/magic/connectors/{connector\_id}/telemetry/events/{ev
 
 <summary>
 
-EventListResponse object {count, items, cursor }
+EventListResponse object { count, items, cursor }
 
 </summary>
 
@@ -9824,7 +9824,7 @@ count: number
 
 <summary>
 
-items: array of object {a, k, n, t }
+items: array of object { a, k, n, t }
 
 </summary>
 
@@ -9868,7 +9868,7 @@ cursor: optional string
 
 <summary>
 
-EventGetResponse object {e, n, t, v }
+EventGetResponse object { e, n, t, v }
 
 Recorded Event
 
@@ -9878,7 +9878,7 @@ Recorded Event
 
 <summary>
 
-e: object {k }
+e: object { k }
 
 Event kind plus event-specific payload fields.
 
@@ -9920,7 +9920,7 @@ Event kinds:
 
 <summary>
 
-k: "Init"or "Leave"or "StartAttestation"or 26 more
+k: "Init" or "Leave" or "StartAttestation" or 26 more
 
 Event kind
 
@@ -10086,7 +10086,7 @@ GET/accounts/{account\_id}/magic/connectors/{connector\_id}/telemetry/events/lat
 
 <summary>
 
-LatestListResponse object {count, items }
+LatestListResponse object { count, items }
 
 </summary>
 
@@ -10098,7 +10098,7 @@ count: number
 
 <summary>
 
-items: array of object {e, n, t, v }
+items: array of object { e, n, t, v }
 
 </summary>
 
@@ -10106,7 +10106,7 @@ items: array of object {e, n, t, v }
 
 <summary>
 
-e: object {k }
+e: object { k }
 
 Event kind plus event-specific payload fields.
 
@@ -10148,7 +10148,7 @@ Event kinds:
 
 <summary>
 
-k: "Init"or "Leave"or "StartAttestation"or 26 more
+k: "Init" or "Leave" or "StartAttestation" or 26 more
 
 Event kind
 
@@ -10322,7 +10322,7 @@ GET/accounts/{account\_id}/magic/connectors/{connector\_id}/telemetry/snapshots/
 
 <summary>
 
-SnapshotListResponse object {count, items, cursor }
+SnapshotListResponse object { count, items, cursor }
 
 </summary>
 
@@ -10334,7 +10334,7 @@ count: number
 
 <summary>
 
-items: array of object {a, t }
+items: array of object { a, t }
 
 </summary>
 
@@ -10366,7 +10366,7 @@ cursor: optional string
 
 <summary>
 
-SnapshotGetResponse object {count\_reclaim\_failures, count\_reclaimed\_paths, count\_record\_failed, 173 more }
+SnapshotGetResponse object { count\_reclaim\_failures, count\_reclaimed\_paths, count\_record\_failed, 173 more }
 
 Snapshot
 
@@ -10412,7 +10412,7 @@ Version
 
 <summary>
 
-bonds: optional array of object {name, status }
+bonds: optional array of object { name, status }
 
 </summary>
 
@@ -10532,7 +10532,7 @@ Number of network operations applied during state transition
 
 <summary>
 
-dhcp\_leases: optional array of object {client\_id, expiry\_time, hostname, 3 more }
+dhcp\_leases: optional array of object { client\_id, expiry\_time, hostname, 3 more }
 
 </summary>
 
@@ -10580,7 +10580,7 @@ MAC Address of the device the IP Address was leased to
 
 <summary>
 
-disks: optional array of object {in\_progress, major, merged, 17 more }
+disks: optional array of object { in\_progress, major, merged, 17 more }
 
 </summary>
 
@@ -10730,7 +10730,7 @@ Numeric value associated with high availability state (0 = disabled, 1 = active,
 
 <summary>
 
-interfaces: optional array of object {name, operstate, health\_reason, 3 more }
+interfaces: optional array of object { name, operstate, health\_reason, 3 more }
 
 </summary>
 
@@ -10762,7 +10762,7 @@ Aggregate health score (0-100)
 
 <summary>
 
-ip\_addresses: optional array of object {interface\_name, ip\_address }
+ip\_addresses: optional array of object { interface\_name, ip\_address }
 
 </summary>
 
@@ -11228,7 +11228,7 @@ Amount of anonymous memory stored in zswap, uncompressed
 
 <summary>
 
-mounts: optional array of object {file\_system, kind, mount\_point, 7 more }
+mounts: optional array of object { file\_system, kind, mount\_point, 7 more }
 
 </summary>
 
@@ -11300,7 +11300,7 @@ Total inodes on filesystem
 
 <summary>
 
-netdevs: optional array of object {name, recv\_bytes, recv\_compressed, 14 more }
+netdevs: optional array of object { name, recv\_bytes, recv\_compressed, 14 more }
 
 </summary>
 
@@ -11420,7 +11420,7 @@ Platform identifier
 
 <summary>
 
-qdiscs: optional array of object {backlog, bytes, dev, 10 more }
+qdiscs: optional array of object { backlog, bytes, dev, 10 more }
 
 </summary>
 
@@ -11488,7 +11488,7 @@ Total packets requeued
 
 <summary>
 
-cake\_stats: optional object {avg\_hdr\_offset, capacity\_estimate, max\_adj\_size, 7 more }
+cake\_stats: optional object { avg\_hdr\_offset, capacity\_estimate, max\_adj\_size, 7 more }
 
 Snapshot Qdisc CAKE
 
@@ -11546,7 +11546,7 @@ Smallest network-layer packet seen (bytes, 65535 until the first packet after cr
 
 <summary>
 
-options: object {ack\_filter, bandwidth, diffserv, 13 more }
+options: object { ack\_filter, bandwidth, diffserv, 13 more }
 
 Snapshot Qdisc CAKE Options
 
@@ -11656,7 +11656,7 @@ Minimum packet size (bytes, absent when unset)
 
 <summary>
 
-tins: array of object {ack\_drops, avg\_delay\_us, backlog\_bytes, 17 more }
+tins: array of object { ack\_drops, avg\_delay\_us, backlog\_bytes, 17 more }
 
 </summary>
 
@@ -11808,7 +11808,7 @@ Set when attached at the root of the interface
 
 <summary>
 
-routes: optional array of object {destination, interface\_name, kind, 3 more }
+routes: optional array of object { destination, interface\_name, kind, 3 more }
 
 </summary>
 
@@ -12252,7 +12252,7 @@ Boottime of the system (seconds since the Unix epoch)
 
 <summary>
 
-thermals: optional array of object {label, critical\_celcius, current\_celcius, max\_celcius }
+thermals: optional array of object { label, critical\_celcius, current\_celcius, max\_celcius }
 
 </summary>
 
@@ -12288,7 +12288,7 @@ Maximum temperature of the component (degrees Celsius)
 
 <summary>
 
-tunnels: optional array of object {health\_state, health\_value, interface\_name, 9 more }
+tunnels: optional array of object { health\_state, health\_value, interface\_name, 9 more }
 
 </summary>
 
@@ -12396,7 +12396,7 @@ GET/accounts/{account\_id}/magic/connectors/{connector\_id}/telemetry/snapshots/
 
 <summary>
 
-LatestListResponse object {count, items }
+LatestListResponse object { count, items }
 
 </summary>
 
@@ -12408,7 +12408,7 @@ count: number
 
 <summary>
 
-items: array of object {count\_reclaim\_failures, count\_reclaimed\_paths, count\_record\_failed, 173 more }
+items: array of object { count\_reclaim\_failures, count\_reclaimed\_paths, count\_record\_failed, 173 more }
 
 </summary>
 
@@ -12452,7 +12452,7 @@ Version
 
 <summary>
 
-bonds: optional array of object {name, status }
+bonds: optional array of object { name, status }
 
 </summary>
 
@@ -12572,7 +12572,7 @@ Number of network operations applied during state transition
 
 <summary>
 
-dhcp\_leases: optional array of object {client\_id, expiry\_time, hostname, 3 more }
+dhcp\_leases: optional array of object { client\_id, expiry\_time, hostname, 3 more }
 
 </summary>
 
@@ -12620,7 +12620,7 @@ MAC Address of the device the IP Address was leased to
 
 <summary>
 
-disks: optional array of object {in\_progress, major, merged, 17 more }
+disks: optional array of object { in\_progress, major, merged, 17 more }
 
 </summary>
 
@@ -12770,7 +12770,7 @@ Numeric value associated with high availability state (0 = disabled, 1 = active,
 
 <summary>
 
-interfaces: optional array of object {name, operstate, health\_reason, 3 more }
+interfaces: optional array of object { name, operstate, health\_reason, 3 more }
 
 </summary>
 
@@ -12802,7 +12802,7 @@ Aggregate health score (0-100)
 
 <summary>
 
-ip\_addresses: optional array of object {interface\_name, ip\_address }
+ip\_addresses: optional array of object { interface\_name, ip\_address }
 
 </summary>
 
@@ -13268,7 +13268,7 @@ Amount of anonymous memory stored in zswap, uncompressed
 
 <summary>
 
-mounts: optional array of object {file\_system, kind, mount\_point, 7 more }
+mounts: optional array of object { file\_system, kind, mount\_point, 7 more }
 
 </summary>
 
@@ -13340,7 +13340,7 @@ Total inodes on filesystem
 
 <summary>
 
-netdevs: optional array of object {name, recv\_bytes, recv\_compressed, 14 more }
+netdevs: optional array of object { name, recv\_bytes, recv\_compressed, 14 more }
 
 </summary>
 
@@ -13460,7 +13460,7 @@ Platform identifier
 
 <summary>
 
-qdiscs: optional array of object {backlog, bytes, dev, 10 more }
+qdiscs: optional array of object { backlog, bytes, dev, 10 more }
 
 </summary>
 
@@ -13528,7 +13528,7 @@ Total packets requeued
 
 <summary>
 
-cake\_stats: optional object {avg\_hdr\_offset, capacity\_estimate, max\_adj\_size, 7 more }
+cake\_stats: optional object { avg\_hdr\_offset, capacity\_estimate, max\_adj\_size, 7 more }
 
 Snapshot Qdisc CAKE
 
@@ -13586,7 +13586,7 @@ Smallest network-layer packet seen (bytes, 65535 until the first packet after cr
 
 <summary>
 
-options: object {ack\_filter, bandwidth, diffserv, 13 more }
+options: object { ack\_filter, bandwidth, diffserv, 13 more }
 
 Snapshot Qdisc CAKE Options
 
@@ -13696,7 +13696,7 @@ Minimum packet size (bytes, absent when unset)
 
 <summary>
 
-tins: array of object {ack\_drops, avg\_delay\_us, backlog\_bytes, 17 more }
+tins: array of object { ack\_drops, avg\_delay\_us, backlog\_bytes, 17 more }
 
 </summary>
 
@@ -13848,7 +13848,7 @@ Set when attached at the root of the interface
 
 <summary>
 
-routes: optional array of object {destination, interface\_name, kind, 3 more }
+routes: optional array of object { destination, interface\_name, kind, 3 more }
 
 </summary>
 
@@ -14292,7 +14292,7 @@ Boottime of the system (seconds since the Unix epoch)
 
 <summary>
 
-thermals: optional array of object {label, critical\_celcius, current\_celcius, max\_celcius }
+thermals: optional array of object { label, critical\_celcius, current\_celcius, max\_celcius }
 
 </summary>
 
@@ -14328,7 +14328,7 @@ Maximum temperature of the component (degrees Celsius)
 
 <summary>
 
-tunnels: optional array of object {health\_state, health\_value, interface\_name, 9 more }
+tunnels: optional array of object { health\_state, health\_value, interface\_name, 9 more }
 
 </summary>
 
@@ -14456,7 +14456,7 @@ DELETE/accounts/{account\_id}/magic/cf1\_sites/{cf1\_site\_id}
 
 <summary>
 
-Cf1Site object {name, id, created\_on, 3 more }
+Cf1Site object { name, id, created\_on, 3 more }
 
 </summary>
 
@@ -14504,7 +14504,7 @@ formatdate-time
 
 <summary>
 
-Cf1SiteLocation object {lat, long, name }
+Cf1SiteLocation object { lat, long, name }
 
 </summary>
 
@@ -14558,7 +14558,7 @@ DELETE/accounts/{account\_id}/magic/cf1\_sites/{cf1\_site\_id}/ramps/{ramp\_id}
 
 <summary>
 
-Ramp object {id, created\_on, modified\_on, 8 more }
+Ramp object { id, created\_on, modified\_on, 8 more }
 
 </summary>
 
@@ -14604,7 +14604,7 @@ A human-provided description of the ramp.
 
 <summary>
 
-gre: optional object {managed\_by }
+gre: optional object { managed\_by }
 
 </summary>
 
@@ -14622,7 +14622,7 @@ URL reference to the source network resource that this ramp is managed by.
 
 <summary>
 
-gre\_interconnect: optional object {managed\_by }
+gre\_interconnect: optional object { managed\_by }
 
 </summary>
 
@@ -14640,7 +14640,7 @@ URL reference to the source network resource that this ramp is managed by.
 
 <summary>
 
-ipsec: optional object {managed\_by }
+ipsec: optional object { managed\_by }
 
 </summary>
 
@@ -14658,7 +14658,7 @@ URL reference to the source network resource that this ramp is managed by.
 
 <summary>
 
-mconn: optional object {managed\_by }
+mconn: optional object { managed\_by }
 
 </summary>
 
@@ -14676,7 +14676,7 @@ URL reference to the source network resource that this ramp is managed by.
 
 <summary>
 
-mpls\_interconnect: optional object {managed\_by }
+mpls\_interconnect: optional object { managed\_by }
 
 </summary>
 
@@ -14698,7 +14698,7 @@ URL reference to the source network resource that this ramp is managed by.
 
 <summary>
 
-RampType = "gre"or "gre\_interconnect"or "mpls\_interconnect"or 2 more
+RampType = "gre" or "gre\_interconnect" or "mpls\_interconnect" or 2 more
 
 The type of network connection (ramp) linking a CF1 Site to Cloudflare’s network.
 
@@ -14754,7 +14754,7 @@ PUT/accounts/{account\_id}/pcaps/{pcap\_id}/stop
 
 <summary>
 
-PCAP object {id, filter\_v1, offset\_time, 5 more }
+PCAP object { id, filter\_v1, offset\_time, 5 more }
 
 </summary>
 
@@ -14786,7 +14786,7 @@ formatdate-time
 
 <summary>
 
-status: optional "unknown"or "success"or "pending"or 5 more
+status: optional "unknown" or "success" or "pending" or 5 more
 
 The status of the packet capture request.
 
@@ -14856,7 +14856,7 @@ minimum1
 
 <summary>
 
-type: optional "simple"or "full"
+type: optional "simple" or "full"
 
 The type of packet capture. <code>Simple</code> captures sampled packets, and <code>full</code> captures entire payloads and non-sampled packets.
 
@@ -14884,7 +14884,7 @@ One of the following:
 
 <summary>
 
-PCAPFilter object {destination\_address, destination\_port, protocol, 2 more }
+PCAPFilter object { destination\_address, destination\_port, protocol, 2 more }
 
 The packet capture filter. When this field is empty, all packets are captured.
 
@@ -14928,7 +14928,7 @@ The source port of the packet.
 
 <summary>
 
-PCAPListResponse = <a href="https://developers.cloudflare.com/api/resources/magic_transit#(resource)%20magic_transit.pcaps%20%3E%20(model)%20pcap%20%3E%20(schema)">PCAP</a> { id, filter\_v1, offset\_time, 5 more } or object {id, byte\_limit, colo\_name, 10 more }
+PCAPListResponse = <a href="https://developers.cloudflare.com/api/resources/magic_transit#(resource)%20magic_transit.pcaps%20%3E%20(model)%20pcap%20%3E%20(schema)">PCAP</a> { id, filter\_v1, offset\_time, 5 more } or object { id, byte\_limit, colo\_name, 10 more }
 
 </summary>
 
@@ -14938,7 +14938,7 @@ One of the following:
 
 <summary>
 
-PCAP object {id, filter\_v1, offset\_time, 5 more }
+PCAP object { id, filter\_v1, offset\_time, 5 more }
 
 </summary>
 
@@ -14970,7 +14970,7 @@ formatdate-time
 
 <summary>
 
-status: optional "unknown"or "success"or "pending"or 5 more
+status: optional "unknown" or "success" or "pending" or 5 more
 
 The status of the packet capture request.
 
@@ -15040,7 +15040,7 @@ minimum1
 
 <summary>
 
-type: optional "simple"or "full"
+type: optional "simple" or "full"
 
 The type of packet capture. <code>Simple</code> captures sampled packets, and <code>full</code> captures entire payloads and non-sampled packets.
 
@@ -15068,7 +15068,7 @@ One of the following:
 
 <summary>
 
-MagicVisibilityPCAPsPCAPsResponseFull object {id, byte\_limit, colo\_name, 10 more }
+MagicVisibilityPCAPsPCAPsResponseFull object { id, byte\_limit, colo\_name, 10 more }
 
 </summary>
 
@@ -15126,7 +15126,7 @@ The number of packets captured.
 
 <summary>
 
-status: optional "unknown"or "success"or "pending"or 5 more
+status: optional "unknown" or "success" or "pending" or 5 more
 
 The status of the packet capture request.
 
@@ -15204,7 +15204,7 @@ minimum1
 
 <summary>
 
-type: optional "simple"or "full"
+type: optional "simple" or "full"
 
 The type of packet capture. <code>Simple</code> captures sampled packets, and <code>full</code> captures entire payloads and non-sampled packets.
 
@@ -15236,7 +15236,7 @@ One of the following:
 
 <summary>
 
-PCAPGetResponse = <a href="https://developers.cloudflare.com/api/resources/magic_transit#(resource)%20magic_transit.pcaps%20%3E%20(model)%20pcap%20%3E%20(schema)">PCAP</a> { id, filter\_v1, offset\_time, 5 more } or object {id, byte\_limit, colo\_name, 10 more }
+PCAPGetResponse = <a href="https://developers.cloudflare.com/api/resources/magic_transit#(resource)%20magic_transit.pcaps%20%3E%20(model)%20pcap%20%3E%20(schema)">PCAP</a> { id, filter\_v1, offset\_time, 5 more } or object { id, byte\_limit, colo\_name, 10 more }
 
 </summary>
 
@@ -15246,7 +15246,7 @@ One of the following:
 
 <summary>
 
-PCAP object {id, filter\_v1, offset\_time, 5 more }
+PCAP object { id, filter\_v1, offset\_time, 5 more }
 
 </summary>
 
@@ -15278,7 +15278,7 @@ formatdate-time
 
 <summary>
 
-status: optional "unknown"or "success"or "pending"or 5 more
+status: optional "unknown" or "success" or "pending" or 5 more
 
 The status of the packet capture request.
 
@@ -15348,7 +15348,7 @@ minimum1
 
 <summary>
 
-type: optional "simple"or "full"
+type: optional "simple" or "full"
 
 The type of packet capture. <code>Simple</code> captures sampled packets, and <code>full</code> captures entire payloads and non-sampled packets.
 
@@ -15376,7 +15376,7 @@ One of the following:
 
 <summary>
 
-MagicVisibilityPCAPsPCAPsResponseFull object {id, byte\_limit, colo\_name, 10 more }
+MagicVisibilityPCAPsPCAPsResponseFull object { id, byte\_limit, colo\_name, 10 more }
 
 </summary>
 
@@ -15434,7 +15434,7 @@ The number of packets captured.
 
 <summary>
 
-status: optional "unknown"or "success"or "pending"or 5 more
+status: optional "unknown" or "success" or "pending" or 5 more
 
 The status of the packet capture request.
 
@@ -15512,7 +15512,7 @@ minimum1
 
 <summary>
 
-type: optional "simple"or "full"
+type: optional "simple" or "full"
 
 The type of packet capture. <code>Simple</code> captures sampled packets, and <code>full</code> captures entire payloads and non-sampled packets.
 
@@ -15544,7 +15544,7 @@ One of the following:
 
 <summary>
 
-PCAPCreateResponse = <a href="https://developers.cloudflare.com/api/resources/magic_transit#(resource)%20magic_transit.pcaps%20%3E%20(model)%20pcap%20%3E%20(schema)">PCAP</a> { id, filter\_v1, offset\_time, 5 more } or object {id, byte\_limit, colo\_name, 10 more }
+PCAPCreateResponse = <a href="https://developers.cloudflare.com/api/resources/magic_transit#(resource)%20magic_transit.pcaps%20%3E%20(model)%20pcap%20%3E%20(schema)">PCAP</a> { id, filter\_v1, offset\_time, 5 more } or object { id, byte\_limit, colo\_name, 10 more }
 
 </summary>
 
@@ -15554,7 +15554,7 @@ One of the following:
 
 <summary>
 
-PCAP object {id, filter\_v1, offset\_time, 5 more }
+PCAP object { id, filter\_v1, offset\_time, 5 more }
 
 </summary>
 
@@ -15586,7 +15586,7 @@ formatdate-time
 
 <summary>
 
-status: optional "unknown"or "success"or "pending"or 5 more
+status: optional "unknown" or "success" or "pending" or 5 more
 
 The status of the packet capture request.
 
@@ -15656,7 +15656,7 @@ minimum1
 
 <summary>
 
-type: optional "simple"or "full"
+type: optional "simple" or "full"
 
 The type of packet capture. <code>Simple</code> captures sampled packets, and <code>full</code> captures entire payloads and non-sampled packets.
 
@@ -15684,7 +15684,7 @@ One of the following:
 
 <summary>
 
-MagicVisibilityPCAPsPCAPsResponseFull object {id, byte\_limit, colo\_name, 10 more }
+MagicVisibilityPCAPsPCAPsResponseFull object { id, byte\_limit, colo\_name, 10 more }
 
 </summary>
 
@@ -15742,7 +15742,7 @@ The number of packets captured.
 
 <summary>
 
-status: optional "unknown"or "success"or "pending"or 5 more
+status: optional "unknown" or "success" or "pending" or 5 more
 
 The status of the packet capture request.
 
@@ -15820,7 +15820,7 @@ minimum1
 
 <summary>
 
-type: optional "simple"or "full"
+type: optional "simple" or "full"
 
 The type of packet capture. <code>Simple</code> captures sampled packets, and <code>full</code> captures entire payloads and non-sampled packets.
 
@@ -15872,7 +15872,7 @@ POST/accounts/{account\_id}/pcaps/ownership/validate
 
 <summary>
 
-Ownership object {id, destination\_conf, filename, 3 more }
+Ownership object { id, destination\_conf, filename, 3 more }
 
 </summary>
 
@@ -15902,7 +15902,7 @@ The ownership challenge filename stored in the bucket.
 
 <summary>
 
-status: "pending"or "success"or "failed"
+status: "pending" or "success" or "failed"
 
 The status of the ownership challenge. Can be pending, success or failed.
 

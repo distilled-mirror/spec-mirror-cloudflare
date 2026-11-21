@@ -82,7 +82,7 @@ connector\_id: string
 
 <summary>
 
-result: object {count, items }
+result: object { count, items }
 
 </summary>
 
@@ -94,7 +94,7 @@ count: number
 
 <summary>
 
-items: array of object {e, n, t, v }
+items: array of object { e, n, t, v }
 
 </summary>
 
@@ -102,7 +102,7 @@ items: array of object {e, n, t, v }
 
 <summary>
 
-e: object {k }
+e: object { k }
 
 Event kind plus event-specific payload fields.
 
@@ -144,7 +144,7 @@ Event kinds:
 
 <summary>
 
-k: "Init"or "Leave"or "StartAttestation"or 26 more
+k: "Init" or "Leave" or "StartAttestation" or 26 more
 
 Event kind
 
@@ -310,7 +310,7 @@ success: boolean
 
 <summary>
 
-errors: optional array of object {code, message }
+errors: optional array of object { code, message }
 
 </summary>
 
@@ -330,7 +330,7 @@ message: string
 
 <summary>
 
-messages: optional array of object {code, message }
+messages: optional array of object { code, message }
 
 </summary>
 

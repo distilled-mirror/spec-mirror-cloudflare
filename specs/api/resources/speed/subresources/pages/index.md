@@ -32,7 +32,7 @@ GET/zones/{zone\_id}/speed\_api/pages/{url}/trend
 
 <summary>
 
-PageListResponse object {region, scheduleFrequency, tests, url }
+PageListResponse object { region, scheduleFrequency, tests, url }
 
 </summary>
 
@@ -46,7 +46,7 @@ A test region with a label.
 
 <summary>
 
-scheduleFrequency: optional "DAILY"or "WEEKLY"
+scheduleFrequency: optional "DAILY" or "WEEKLY"
 
 The frequency of the test.
 
@@ -110,7 +110,7 @@ A test region with a label.
 
 <summary>
 
-scheduleFrequency: optional "DAILY"or "WEEKLY"
+scheduleFrequency: optional "DAILY" or "WEEKLY"
 
 The frequency of the test.
 
@@ -174,7 +174,7 @@ DELETE/zones/{zone\_id}/speed\_api/pages/{url}/tests
 
 <summary>
 
-Test object {id, date, desktopReport, 4 more }
+Test object { id, date, desktopReport, 4 more }
 
 </summary>
 
@@ -214,7 +214,7 @@ A test region with a label.
 
 <summary>
 
-scheduleFrequency: optional "DAILY"or "WEEKLY"
+scheduleFrequency: optional "DAILY" or "WEEKLY"
 
 The frequency of the test.
 
@@ -248,7 +248,7 @@ A URL.
 
 <summary>
 
-TestDeleteResponse object {count }
+TestDeleteResponse object { count }
 
 </summary>
 

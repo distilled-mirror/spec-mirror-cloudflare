@@ -32,7 +32,7 @@ PATCH/zones/{zone\_id}/settings/auto\_origin\_tls\_kex
 
 <summary>
 
-AutoOriginTLSKexGetResponse object {id, enabled, modified\_on }
+AutoOriginTLSKexGetResponse object { id, enabled, modified\_on }
 
 </summary>
 
@@ -62,7 +62,7 @@ formatdate-time
 
 <summary>
 
-AutoOriginTLSKexEditResponse object {id, enabled, modified\_on }
+AutoOriginTLSKexEditResponse object { id, enabled, modified\_on }
 
 </summary>
 

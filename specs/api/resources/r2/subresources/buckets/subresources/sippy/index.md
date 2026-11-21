@@ -42,7 +42,7 @@ Provider = "r2"
 
 <summary>
 
-Sippy object {destination, enabled, source }
+Sippy object { destination, enabled, source }
 
 </summary>
 
@@ -50,7 +50,7 @@ Sippy object {destination, enabled, source }
 
 <summary>
 
-destination: optional object {accessKeyId, account, bucket, provider }
+destination: optional object { accessKeyId, account, bucket, provider }
 
 Details about the configured destination bucket.
 
@@ -90,7 +90,7 @@ State of Sippy for this bucket.
 
 <summary>
 
-source: optional object {bucket, bucketUrl, container, 2 more }
+source: optional object { bucket, bucketUrl, container, 2 more }
 
 Details about the configured source bucket.
 
@@ -118,7 +118,7 @@ Name of the Azure Blob Storage container (Azure only).
 
 <summary>
 
-provider: optional "aws"or "gcs"or "s3"or "azure"
+provider: optional "aws" or "gcs" or "s3" or "azure"
 
 </summary>
 
@@ -162,7 +162,7 @@ Region where the bucket resides (AWS only).
 
 <summary>
 
-SippyDeleteResponse object {enabled }
+SippyDeleteResponse object { enabled }
 
 </summary>
 

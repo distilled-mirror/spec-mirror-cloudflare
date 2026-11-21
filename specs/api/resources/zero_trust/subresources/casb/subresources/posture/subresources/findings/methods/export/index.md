@@ -38,7 +38,7 @@ The preferred authorization scheme for interacting with the Cloudflare API. [Cre
 
 ##### Accepted Permissions (at least one required)
 
-`Zero Trust Read``Zero Trust Write`
+`CASB Write``CASB Read``Zero Trust Read``Zero Trust Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -80,7 +80,7 @@ formatdate-time
 
 <summary>
 
-orders: optional array of object {direction, name }
+orders: optional array of object { direction, name }
 
 Which fields to use when ordering the findings.
 
@@ -90,7 +90,7 @@ Which fields to use when ordering the findings.
 
 <summary>
 
-direction: "asc"or "desc"
+direction: "asc" or "desc"
 
 Sort direction.
 
@@ -114,7 +114,7 @@ One of the following:
 
 <summary>
 
-name: "instance\_count"or "finding.name"or "integration.name"or 2 more
+name: "instance\_count" or "finding.name" or "integration.name" or 2 more
 
 Which field to use when ordering the findings.
 
@@ -154,7 +154,7 @@ One of the following:
 
 <summary>
 
-product: optional "SaaS"or "Cloud"
+product: optional "SaaS" or "Cloud"
 
 Filter by finding’s category product.
 
@@ -184,7 +184,7 @@ A search term.
 
 <summary>
 
-severities: optional array of "CRITICAL"or "HIGH"or "MEDIUM"or "LOW"
+severities: optional array of "CRITICAL" or "HIGH" or "MEDIUM" or "LOW"
 
 Filter by severity levels.
 
@@ -216,7 +216,7 @@ One of the following:
 
 <summary>
 
-vendors: optional array of "ANTHROPIC"or "AWS"or "BITBUCKET"or 14 more
+vendors: optional array of "ANTHROPIC" or "AWS" or "BITBUCKET" or 14 more
 
 Filter by vendor types.
 
@@ -302,7 +302,7 @@ One of the following:
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -332,7 +332,7 @@ formaturi
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -354,7 +354,7 @@ JSON pointer to the source of the error.
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -384,7 +384,7 @@ formaturi
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -412,7 +412,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, status, type, 5 more }
+result: optional object { id, status, type, 5 more }
 
 Information about an export job.
 
@@ -430,7 +430,7 @@ formatuuid
 
 <summary>
 
-status: "Pending"or "Success"or "Failure"or 2 more
+status: "Pending" or "Success" or "Failure" or 2 more
 
 Status of an export job.
 
@@ -466,7 +466,7 @@ One of the following:
 
 <summary>
 
-type: "finding"or "findingInstance"or "content"or "remediationJob"
+type: "finding" or "findingInstance" or "content" or "remediationJob"
 
 Type of export job.
 

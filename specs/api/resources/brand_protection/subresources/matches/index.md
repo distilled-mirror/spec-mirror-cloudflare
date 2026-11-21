@@ -32,7 +32,7 @@ GET/accounts/{account\_id}/brand-protection/matches/download
 
 <summary>
 
-MatchGetResponse object {matches, total }
+MatchGetResponse object { matches, total }
 
 </summary>
 
@@ -52,7 +52,7 @@ total: optional number
 
 <summary>
 
-MatchDownloadResponse object {matches, total }
+MatchDownloadResponse object { matches, total }
 
 </summary>
 

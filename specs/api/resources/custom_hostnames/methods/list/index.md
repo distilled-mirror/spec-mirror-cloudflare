@@ -82,7 +82,7 @@ minLength36
 
 <summary>
 
-certificate\_authority: optional "google"or "lets\_encrypt"or "ssl\_com"
+certificate\_authority: optional "google" or "lets\_encrypt" or "ssl\_com"
 
 Filter by the certificate authority that issued the SSL certificate.
 
@@ -116,7 +116,7 @@ Filter by custom origin server name.
 
 <summary>
 
-direction: optional "asc"or "desc"
+direction: optional "asc" or "desc"
 
 Direction to order hostnames.
 
@@ -140,7 +140,7 @@ One of the following:
 
 <summary>
 
-hostname: optional object {contain, exact, startsWith }
+hostname: optional object { contain, exact, startsWith }
 
 </summary>
 
@@ -176,7 +176,7 @@ maxLength255
 
 <summary>
 
-hostname\_status: optional "active"or "pending"or "active\_redeploying"or 13 more
+hostname\_status: optional "active" or "pending" or "active\_redeploying" or 13 more
 
 Filter by the hostname’s activation status.
 
@@ -256,7 +256,7 @@ One of the following:
 
 <summary>
 
-order: optional "ssl"or "ssl\_status"
+order: optional "ssl" or "ssl\_status"
 
 Field to order hostnames by.
 
@@ -298,7 +298,7 @@ minimum5
 
 <summary>
 
-ssl: optional 0or 1
+ssl: optional 0 or 1
 
 Whether to filter hostnames based on if they have SSL enabled.
 
@@ -322,7 +322,7 @@ One of the following:
 
 <summary>
 
-ssl\_status: optional "initializing"or "pending\_validation"or "deleted"or 18 more
+ssl\_status: optional "initializing" or "pending\_validation" or "deleted" or 18 more
 
 Filter by SSL certificate status.
 
@@ -430,7 +430,7 @@ Filter by whether the custom hostname is a wildcard hostname.
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -452,7 +452,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -484,7 +484,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional array of object {id, hostname, created\_at, 8 more }
+result: optional array of object { id, hostname, created\_at, 8 more }
 
 </summary>
 
@@ -536,7 +536,7 @@ A hostname that will be sent to your custom origin server as SNI for TLS handsha
 
 <summary>
 
-ownership\_verification: optional object {name, type, value }
+ownership\_verification: optional object { name, type, value }
 
 This is a record which can be placed to activate a hostname.
 
@@ -568,7 +568,7 @@ Content for the record.
 
 <summary>
 
-ownership\_verification\_http: optional object {http\_body, http\_url }
+ownership\_verification\_http: optional object { http\_body, http\_url }
 
 This presents the token to be served by the given http url to activate a hostname.
 
@@ -594,7 +594,7 @@ The HTTP URL that will be checked during custom hostname verification and where 
 
 <summary>
 
-ssl: optional object {id, bundle\_method, certificate\_authority, 15 more }
+ssl: optional object { id, bundle\_method, certificate\_authority, 15 more }
 
 </summary>
 
@@ -678,7 +678,7 @@ The identifier for the Custom CSR that was used.
 
 <summary>
 
-dcv\_delegation\_records: optional array of object {cname, cname\_target, emails, 5 more }
+dcv\_delegation\_records: optional array of object { cname, cname\_target, emails, 5 more }
 
 DCV Delegation records for domain validation.
 
@@ -794,7 +794,7 @@ The serial number on a custom uploaded certificate.
 
 <summary>
 
-settings: optional object {ciphers, early\_hints, http2, 2 more }
+settings: optional object { ciphers, early\_hints, http2, 2 more }
 
 </summary>
 
@@ -808,7 +808,7 @@ An allowlist of ciphers for TLS termination. These ciphers must be in the Boring
 
 <summary>
 
-early\_hints: optional "on"or "off"
+early\_hints: optional "on" or "off"
 
 Whether or not Early Hints is enabled.
 
@@ -832,7 +832,7 @@ One of the following:
 
 <summary>
 
-http2: optional "on"or "off"
+http2: optional "on" or "off"
 
 Whether or not HTTP2 is enabled.
 
@@ -856,7 +856,7 @@ One of the following:
 
 <summary>
 
-min\_tls\_version: optional "1.0"or "1.1"or "1.2"or "1.3"
+min\_tls\_version: optional "1.0" or "1.1" or "1.2" or "1.3"
 
 The minimum TLS version supported.
 
@@ -888,7 +888,7 @@ One of the following:
 
 <summary>
 
-tls\_1\_3: optional "on"or "off"
+tls\_1\_3: optional "on" or "off"
 
 Whether or not TLS 1.3 is enabled.
 
@@ -922,7 +922,7 @@ The signature on a custom uploaded certificate.
 
 <summary>
 
-status: optional "initializing"or "pending\_validation"or "deleted"or 18 more
+status: optional "initializing" or "pending\_validation" or "deleted" or 18 more
 
 Status of the hostname’s SSL certificates.
 
@@ -1036,7 +1036,7 @@ formatdate-time
 
 <summary>
 
-validation\_errors: optional array of object {message }
+validation\_errors: optional array of object { message }
 
 Domain validation errors that have been received by the certificate authority (CA).
 
@@ -1056,7 +1056,7 @@ A domain validation error.
 
 <summary>
 
-validation\_records: optional array of object {cname, cname\_target, emails, 5 more }
+validation\_records: optional array of object { cname, cname\_target, emails, 5 more }
 
 </summary>
 
@@ -1126,7 +1126,7 @@ Indicates whether the certificate covers a wildcard.
 
 <summary>
 
-status: optional "active"or "pending"or "active\_redeploying"or 13 more
+status: optional "active" or "pending" or "active\_redeploying" or 13 more
 
 Status of the hostname’s activation.
 
@@ -1216,7 +1216,7 @@ These are errors that were encountered while trying to activate a hostname.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

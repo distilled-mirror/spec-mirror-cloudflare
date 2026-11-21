@@ -46,7 +46,7 @@ AllowedOrigins = string
 
 <summary>
 
-Video object {allowedOrigins, clippedFrom, created, 23 more }
+Video object { allowedOrigins, clippedFrom, created, 25 more }
 
 </summary>
 
@@ -88,7 +88,31 @@ The duration of the video in seconds. A value of <code>-1</code> means the durat
 
 <summary>
 
-input: optional object {height, width }
+encodingMode: optional "default" or "previewFirst"
+
+Specifies whether to generate a preview rendition before the standard encoding ladder. <code>default</code> generates only the standard encoding ladder. <code>previewFirst</code> generates a preview rendition first.
+
+</summary>
+
+One of the following:
+
+"default"
+
+<a href="#">Link to this property</a>
+
+"previewFirst"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+input: optional object { height, width }
 
 </summary>
 
@@ -152,7 +176,7 @@ formatdate-time
 
 <summary>
 
-playback: optional object {dash, hls }
+playback: optional object { dash, hls }
 
 </summary>
 
@@ -184,7 +208,67 @@ formaturi
 
 <summary>
 
-publicDetails: optional object {channel\_link, logo, media\_id, 2 more }
+previewStatus: optional "pending" or "ready" or "error" or 8 more
+
+Reports the current status of preview generation. This value is <code>null</code> when <code>encodingMode</code> is <code>default</code>.
+
+</summary>
+
+One of the following:
+
+"pending"
+
+<a href="#">Link to this property</a>
+
+"ready"
+
+<a href="#">Link to this property</a>
+
+"error"
+
+<a href="#">Link to this property</a>
+
+"not-eligible-container"
+
+<a href="#">Link to this property</a>
+
+"not-eligible-video-codec"
+
+<a href="#">Link to this property</a>
+
+"not-eligible-audio-codec"
+
+<a href="#">Link to this property</a>
+
+"not-eligible-resolution"
+
+<a href="#">Link to this property</a>
+
+"not-eligible-bitrate"
+
+<a href="#">Link to this property</a>
+
+"not-eligible-gop"
+
+<a href="#">Link to this property</a>
+
+"not-eligible-pixel-format"
+
+<a href="#">Link to this property</a>
+
+"not-eligible-edit-list"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+publicDetails: optional object { channel\_link, logo, media\_id, 2 more }
 
 Public details for the video including title, share link, channel link, and logo.
 
@@ -252,7 +336,7 @@ The size of the media item in bytes.
 
 <summary>
 
-status: optional object {errorReasonCode, errorReasonText, pctComplete, state }
+status: optional object { errorReasonCode, errorReasonText, pctComplete, state }
 
 Specifies a detailed status for a video. If the <code>state</code> is <code>inprogress</code> or <code>error</code>, the <code>step</code> field returns <code>encoding</code> or <code>manifest</code>. If the <code>state</code> is <code>inprogress</code>, <code>pctComplete</code> returns a number between 0 and 100 to indicate the approximate percent of completion. If the <code>state</code> is <code>error</code>, <code>errorReasonCode</code> and <code>errorReasonText</code> provide additional details.
 
@@ -280,7 +364,7 @@ Indicates the progress as a percentage between 0 and 100.
 
 <summary>
 
-state: optional "pendingupload"or "downloading"or "queued"or 4 more
+state: optional "pendingupload" or "downloading" or "queued" or 4 more
 
 Specifies the processing status for all quality levels for a video.
 
@@ -398,7 +482,7 @@ POST/accounts/{account\_id}/stream/{identifier}/audio/copy
 
 <summary>
 
-Audio object {default, label, status, uid }
+Audio object { default, label, status, uid }
 
 </summary>
 
@@ -418,7 +502,7 @@ A string to uniquely identify the track amongst other audio track labels for the
 
 <summary>
 
-status: optional "queued"or "ready"or "error"
+status: optional "queued" or "ready" or "error"
 
 Specifies the processing status of the video.
 
@@ -458,7 +542,7 @@ maxLength32
 
 <summary>
 
-AudioTrackGetResponse object {audio }
+AudioTrackGetResponse object { audio }
 
 </summary>
 
@@ -488,7 +572,7 @@ A string to uniquely identify the track amongst other audio track labels for the
 
 <summary>
 
-status: optional "queued"or "ready"or "error"
+status: optional "queued" or "ready" or "error"
 
 Specifies the processing status of the video.
 
@@ -544,7 +628,7 @@ GET/accounts/{account\_id}/stream/storage-usage
 
 <summary>
 
-VideoStorageUsageResponse object {creator, totalStorageMinutes, totalStorageMinutesLimit, videoCount }
+VideoStorageUsageResponse object { creator, totalStorageMinutes, totalStorageMinutesLimit, videoCount }
 
 </summary>
 
@@ -604,7 +688,7 @@ POST/accounts/{account\_id}/stream/direct\_upload
 
 <summary>
 
-DirectUploadCreateResponse object {scheduledDeletion, uid, uploadURL, watermark }
+DirectUploadCreateResponse object { scheduledDeletion, uid, uploadURL, watermark }
 
 </summary>
 
@@ -658,7 +742,7 @@ DELETE/accounts/{account\_id}/stream/keys/{identifier}
 
 <summary>
 
-Keys object {id, created, jwk, pem }
+Keys object { id, created, jwk, pem }
 
 </summary>
 
@@ -698,7 +782,7 @@ The signing key in PEM format.
 
 <summary>
 
-KeyGetResponse object {id, created, key\_id }
+KeyGetResponse object { id, created, key\_id }
 
 </summary>
 
@@ -760,7 +844,7 @@ DELETE/accounts/{account\_id}/stream/live\_inputs/{live\_input\_identifier}
 
 <summary>
 
-LiveInput object {created, deleteRecordingAfterDays, enabled, 14 more }
+LiveInput object { created, deleteRecordingAfterDays, enabled, 14 more }
 
 Details about a live input.
 
@@ -814,7 +898,7 @@ formatdate-time
 
 <summary>
 
-playback: optional object {dash, hls }
+playback: optional object { dash, hls }
 
 Details for playing a live input’s broadcast using the HLS or DASH manifests. URLs reference the live input ID.
 
@@ -846,7 +930,7 @@ When enabled, the live stream is delivered using Low-Latency HLS (LL-HLS), reduc
 
 <summary>
 
-recording: optional object {allowedOrigins, hideLiveViewerCount, mode, 2 more }
+recording: optional object { allowedOrigins, hideLiveViewerCount, mode, 2 more }
 
 Records the input to a Cloudflare Stream video. Behavior depends on the mode. In most cases, the video will initially be viewable as a live video and transition to on-demand after a condition is satisfied.
 
@@ -868,7 +952,7 @@ Disables reporting the number of live viewers when this property is set to <code
 
 <summary>
 
-mode: optional "off"or "automatic"
+mode: optional "off" or "automatic"
 
 Specifies the recording behavior for the live input. Set this value to <code>off</code> to prevent a recording. Set the value to <code>automatic</code> to begin a recording and transition to on-demand after Stream Live stops receiving input.
 
@@ -908,7 +992,7 @@ Determines the amount of time a live input configured in <code>automatic</code> 
 
 <summary>
 
-rtmps: optional object {streamKey, url }
+rtmps: optional object { streamKey, url }
 
 Details for streaming to an live input using RTMPS.
 
@@ -934,7 +1018,7 @@ The RTMPS URL you provide to the broadcaster, which they stream live video to.
 
 <summary>
 
-rtmpsPlayback: optional object {streamKey, url }
+rtmpsPlayback: optional object { streamKey, url }
 
 Details for playback from an live input using RTMPS.
 
@@ -960,7 +1044,7 @@ The URL used to play live video over RTMPS.
 
 <summary>
 
-srt: optional object {passphrase, streamId, url }
+srt: optional object { passphrase, streamId, url }
 
 Details for streaming to a live input using SRT.
 
@@ -992,7 +1076,7 @@ The SRT URL you provide to the broadcaster, which they stream live video to.
 
 <summary>
 
-srtPlayback: optional object {passphrase, streamId, url }
+srtPlayback: optional object { passphrase, streamId, url }
 
 Details for playback from an live input using SRT.
 
@@ -1024,7 +1108,7 @@ The URL used to play live video over SRT.
 
 <summary>
 
-status: optional "connected"or "reconnected"or "reconnecting"or 5 more
+status: optional "connected" or "reconnected" or "reconnecting" or 5 more
 
 The connection status of a live input.
 
@@ -1080,7 +1164,7 @@ maxLength32
 
 <summary>
 
-webRTC: optional object {url }
+webRTC: optional object { url }
 
 Details for streaming to a live input using WebRTC.
 
@@ -1100,7 +1184,7 @@ The WebRTC URL you provide to the broadcaster, which they stream live video to.
 
 <summary>
 
-webRTCPlayback: optional object {url }
+webRTCPlayback: optional object { url }
 
 Details for playback from a live input using WebRTC.
 
@@ -1124,7 +1208,7 @@ The URL used to play live video over WebRTC.
 
 <summary>
 
-LiveInputListResponse object {liveInputs, range, total }
+LiveInputListResponse object { liveInputs, range, total }
 
 </summary>
 
@@ -1132,7 +1216,7 @@ LiveInputListResponse object {liveInputs, range, total }
 
 <summary>
 
-liveInputs: optional array of object {created, deleteRecordingAfterDays, enabled, 3 more }
+liveInputs: optional array of object { created, deleteRecordingAfterDays, enabled, 3 more }
 
 </summary>
 
@@ -1224,7 +1308,7 @@ DELETE/accounts/{account\_id}/stream/live\_inputs/{live\_input\_identifier}/outp
 
 <summary>
 
-Output object {enabled, streamKey, uid, url }
+Output object { enabled, streamKey, uid, url }
 
 </summary>
 
@@ -1282,7 +1366,7 @@ DELETE/accounts/{account\_id}/stream/watermarks/{identifier}
 
 <summary>
 
-Watermark object {created, downloadedFrom, height, 8 more }
+Watermark object { created, downloadedFrom, height, 8 more }
 
 </summary>
 
@@ -1396,7 +1480,7 @@ DELETE/accounts/{account\_id}/stream/webhook
 
 <summary>
 
-WebhookGetResponse object {modified, notificationUrl, secret }
+WebhookGetResponse object { modified, notificationUrl, secret }
 
 </summary>
 
@@ -1430,7 +1514,7 @@ The secret used to verify webhook signatures.
 
 <summary>
 
-WebhookUpdateResponse object {modified, notificationUrl, secret }
+WebhookUpdateResponse object { modified, notificationUrl, secret }
 
 </summary>
 
@@ -1476,7 +1560,7 @@ GET/accounts/{account\_id}/stream/{identifier}/captions
 
 <summary>
 
-Caption object {generated, label, language, status }
+Caption object { generated, label, language, status }
 
 </summary>
 
@@ -1502,7 +1586,7 @@ The language tag in BCP 47 format.
 
 <summary>
 
-status: optional "ready"or "inprogress"or "error"
+status: optional "ready" or "inprogress" or "error"
 
 The status of a generated caption.
 
@@ -1586,7 +1670,7 @@ DELETE/accounts/{account\_id}/stream/{identifier}/downloads
 
 <summary>
 
-DownloadGetResponse object {audio, default }
+DownloadGetResponse object { audio, default }
 
 An object with download type keys. Each key is optional and only present if that download type has been created.
 
@@ -1596,7 +1680,7 @@ An object with download type keys. Each key is optional and only present if that
 
 <summary>
 
-audio: optional object {percentComplete, status, url }
+audio: optional object { percentComplete, status, url }
 
 The audio-only download. Only present if this download type has been created.
 
@@ -1616,7 +1700,7 @@ minimum0
 
 <summary>
 
-status: "ready"or "inprogress"or "error"
+status: "ready" or "inprogress" or "error"
 
 The status of a generated download.
 
@@ -1656,7 +1740,7 @@ formaturi
 
 <summary>
 
-default: optional object {percentComplete, status, url }
+default: optional object { percentComplete, status, url }
 
 The default video download. Only present if this download type has been created.
 
@@ -1676,7 +1760,7 @@ minimum0
 
 <summary>
 
-status: "ready"or "inprogress"or "error"
+status: "ready" or "inprogress" or "error"
 
 The status of a generated download.
 
@@ -1720,7 +1804,7 @@ formaturi
 
 <summary>
 
-DownloadCreateResponse object {audio, default }
+DownloadCreateResponse object { audio, default }
 
 An object with download type keys. Each key is optional and only present if that download type has been created.
 
@@ -1730,7 +1814,7 @@ An object with download type keys. Each key is optional and only present if that
 
 <summary>
 
-audio: optional object {percentComplete, status, url }
+audio: optional object { percentComplete, status, url }
 
 The audio-only download. Only present if this download type has been created.
 
@@ -1750,7 +1834,7 @@ minimum0
 
 <summary>
 
-status: "ready"or "inprogress"or "error"
+status: "ready" or "inprogress" or "error"
 
 The status of a generated download.
 
@@ -1790,7 +1874,7 @@ formaturi
 
 <summary>
 
-default: optional object {percentComplete, status, url }
+default: optional object { percentComplete, status, url }
 
 The default video download. Only present if this download type has been created.
 
@@ -1810,7 +1894,7 @@ minimum0
 
 <summary>
 
-status: "ready"or "inprogress"or "error"
+status: "ready" or "inprogress" or "error"
 
 The status of a generated download.
 
@@ -1878,7 +1962,7 @@ POST/accounts/{account\_id}/stream/{identifier}/token
 
 <summary>
 
-TokenCreateResponse object {token }
+TokenCreateResponse object { token }
 
 </summary>
 

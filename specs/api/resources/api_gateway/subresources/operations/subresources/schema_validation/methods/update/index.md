@@ -86,7 +86,7 @@ maxLength36
 
 <summary>
 
-mitigation\_action: optional "log"or "block"or "none"
+mitigation\_action: optional "log" or "block" or "none"
 
 When set, this applies a mitigation action to this operation
 
@@ -121,7 +121,7 @@ One of the following:
 
 <summary>
 
-mitigation\_action: optional "log"or "block"or "none"
+mitigation\_action: optional "log" or "block" or "none"
 
 When set, this applies a mitigation action to this operation
 

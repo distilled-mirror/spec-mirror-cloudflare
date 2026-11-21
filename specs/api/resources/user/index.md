@@ -30,7 +30,7 @@ PATCH/user
 
 <summary>
 
-UserGetResponse object {id, email, betas, 12 more }
+UserGetResponse object { id, email, betas, 12 more }
 
 </summary>
 
@@ -186,7 +186,7 @@ maxLength20
 
 <summary>
 
-UserEditResponse object {id, email, betas, 12 more }
+UserEditResponse object { id, email, betas, 12 more }
 
 </summary>
 
@@ -360,7 +360,7 @@ GET/user/billing/history
 
 <summary>
 
-BillingHistory object {id, action, amount, 5 more }
+BillingHistory object { id, action, amount, 5 more }
 
 </summary>
 
@@ -420,7 +420,7 @@ maxLength30
 
 <summary>
 
-zone: object {name }
+zone: object { name }
 
 </summary>
 
@@ -450,7 +450,7 @@ GET/user/billing/profile
 
 <summary>
 
-ProfileGetResponse object {id, account\_type, address, 35 more }
+ProfileGetResponse object { id, account\_type, address, 35 more }
 
 </summary>
 
@@ -640,7 +640,7 @@ PATCH/user/invites/{invite\_id}
 
 <summary>
 
-Invite object {invited\_member\_id, organization\_id, id, 8 more }
+Invite object { invited\_member\_id, organization\_id, id, 8 more }
 
 </summary>
 
@@ -722,7 +722,7 @@ List of role names the membership has for this account.
 
 <summary>
 
-status: optional "pending"or "accepted"or "rejected"or "expired"
+status: optional "pending" or "accepted" or "rejected" or "expired"
 
 Current status of the invitation.
 
@@ -780,7 +780,7 @@ DELETE/user/organizations/{organization\_id}
 
 <summary>
 
-Organization object {id, name, permissions, 2 more }
+Organization object { id, name, permissions, 2 more }
 
 </summary>
 
@@ -832,7 +832,7 @@ OrganizationGetResponse = unknown
 
 <summary>
 
-OrganizationDeleteResponse object {id }
+OrganizationDeleteResponse object { id }
 
 </summary>
 
@@ -866,7 +866,7 @@ GET/user/spectrum\_analytics/zones/report
 
 <summary>
 
-ReportGetResponse = array of object {totals, zone\_id }
+ReportGetResponse = array of object { totals, zone\_id }
 
 </summary>
 
@@ -874,7 +874,7 @@ ReportGetResponse = array of object {totals, zone\_id }
 
 <summary>
 
-totals: object {bandwidth }
+totals: object { bandwidth }
 
 </summary>
 
@@ -882,7 +882,7 @@ totals: object {bandwidth }
 
 <summary>
 
-bandwidth: object {all, egress, ingress }
+bandwidth: object { all, egress, ingress }
 
 </summary>
 
@@ -944,7 +944,7 @@ DELETE/user/subscriptions/{identifier}
 
 <summary>
 
-SubscriptionUpdateResponse = unknownor string
+SubscriptionUpdateResponse = unknown or string
 
 </summary>
 
@@ -966,7 +966,7 @@ string
 
 <summary>
 
-SubscriptionDeleteResponse object {subscription\_id }
+SubscriptionDeleteResponse object { subscription\_id }
 
 </summary>
 
@@ -994,7 +994,7 @@ GET/user/tenants
 
 <summary>
 
-TenantListResponse object {cdate, customer\_id, edate, 10 more }
+TenantListResponse object { cdate, customer\_id, edate, 10 more }
 
 </summary>
 
@@ -1018,7 +1018,7 @@ formatdate-time
 
 <summary>
 
-tenant\_contacts: object {email, website }
+tenant\_contacts: object { email, website }
 
 </summary>
 
@@ -1042,7 +1042,7 @@ tenant\_labels: array of string
 
 <summary>
 
-tenant\_metadata: object {billing\_account\_type, configuration\_account, created\_by, 4 more }
+tenant\_metadata: object { billing\_account\_type, configuration\_account, created\_by, 4 more }
 
 </summary>
 
@@ -1062,7 +1062,7 @@ created\_by: optional string
 
 <summary>
 
-dns: optional object {ns\_pool }
+dns: optional object { ns\_pool }
 
 </summary>
 
@@ -1070,7 +1070,7 @@ dns: optional object {ns\_pool }
 
 <summary>
 
-ns\_pool: object {primary, secondary }
+ns\_pool: object { primary, secondary }
 
 </summary>
 
@@ -1098,7 +1098,7 @@ flags: optional map\[string]
 
 <summary>
 
-innate\_account\_entitlements: optional array of object {allocation, feature }
+innate\_account\_entitlements: optional array of object { allocation, feature }
 
 </summary>
 
@@ -1106,7 +1106,7 @@ innate\_account\_entitlements: optional array of object {allocation, feature }
 
 <summary>
 
-allocation: object {type, value }
+allocation: object { type, value }
 
 </summary>
 
@@ -1118,7 +1118,7 @@ type: string
 
 <summary>
 
-value: booleanor numberor stringor 2 more
+value: boolean or number or string or 2 more
 
 </summary>
 
@@ -1156,7 +1156,7 @@ array of unknown
 
 <summary>
 
-feature: object {key }
+feature: object { key }
 
 </summary>
 
@@ -1176,7 +1176,7 @@ key: string
 
 <summary>
 
-tenant\_entitlements: optional array of object {allocation, feature }
+tenant\_entitlements: optional array of object { allocation, feature }
 
 </summary>
 
@@ -1184,7 +1184,7 @@ tenant\_entitlements: optional array of object {allocation, feature }
 
 <summary>
 
-allocation: object {type, value }
+allocation: object { type, value }
 
 </summary>
 
@@ -1196,7 +1196,7 @@ type: string
 
 <summary>
 
-value: booleanor numberor stringor 2 more
+value: boolean or number or string or 2 more
 
 </summary>
 
@@ -1234,7 +1234,7 @@ array of unknown
 
 <summary>
 
-feature: object {key }
+feature: object { key }
 
 </summary>
 
@@ -1262,7 +1262,7 @@ tenant\_name: string
 
 <summary>
 
-tenant\_network: object {choices }
+tenant\_network: object { choices }
 
 </summary>
 
@@ -1290,7 +1290,7 @@ tenant\_type: string
 
 <summary>
 
-tenant\_units: array of object {unit\_memberships, unit\_metadata, unit\_name, 2 more }
+tenant\_units: array of object { unit\_memberships, unit\_metadata, unit\_name, 2 more }
 
 </summary>
 
@@ -1298,7 +1298,7 @@ tenant\_units: array of object {unit\_memberships, unit\_metadata, unit\_name, 2
 
 <summary>
 
-unit\_memberships: array of object {member\_metadata, member\_status, member\_tag }
+unit\_memberships: array of object { member\_metadata, member\_status, member\_tag }
 
 </summary>
 
@@ -1342,7 +1342,7 @@ unit\_tag: string
 
 <summary>
 
-ui\_flags: object {show\_orgs\_ui, show\_tenants\_ui }
+ui\_flags: object { show\_orgs\_ui, show\_tenants\_ui }
 
 Which top-level dashboard experiences to render for this tenant; both may be true.
 
@@ -1400,7 +1400,7 @@ GET/user/tokens/verify
 
 <summary>
 
-TokenCreateResponse object {id, condition, creator\_email\_at\_creation, 13 more }
+TokenCreateResponse object { id, condition, creator\_email\_at\_creation, 13 more }
 
 </summary>
 
@@ -1416,7 +1416,7 @@ maxLength32
 
 <summary>
 
-condition: optional object {request\_ip }
+condition: optional object { request\_ip }
 
 </summary>
 
@@ -1424,7 +1424,7 @@ condition: optional object {request\_ip }
 
 <summary>
 
-request\_ip: optional object {in, not\_in }
+request\_ip: optional object { in, not\_in }
 
 Client IP restrictions.
 
@@ -1526,7 +1526,7 @@ Policy identifier.
 
 <summary>
 
-effect: "allow"or "deny"
+effect: "allow" or "deny"
 
 Allow or deny operations against the resources.
 
@@ -1550,7 +1550,7 @@ One of the following:
 
 <summary>
 
-permission\_groups: array of object {id, meta, name }
+permission\_groups: array of object { id, meta, name }
 
 A set of permission groups that are specified to the policy.
 
@@ -1566,7 +1566,7 @@ Identifier of the permission group.
 
 <summary>
 
-meta: optional object {category, deprecated, description, 5 more }
+meta: optional object { category, deprecated, description, 5 more }
 
 Attributes associated to the permission group.
 
@@ -1640,7 +1640,7 @@ Name of the permission group.
 
 <summary>
 
-resources: map\[string]or map\[map\[string]]
+resources: map\[string] or map\[map\[string]]
 
 A list of resource names that the policy applies to.
 
@@ -1684,7 +1684,7 @@ The type of service that provisioned the token. Only present for provisioned Acc
 
 <summary>
 
-status: optional "active"or "disabled"or "expired"
+status: optional "active" or "disabled" or "expired"
 
 Status of the token.
 
@@ -1742,7 +1742,7 @@ minLength40
 
 <summary>
 
-TokenDeleteResponse object {id }
+TokenDeleteResponse object { id }
 
 </summary>
 
@@ -1764,7 +1764,7 @@ minLength32
 
 <summary>
 
-TokenVerifyResponse object {id, status, expires\_on, not\_before }
+TokenVerifyResponse object { id, status, expires\_on, not\_before }
 
 </summary>
 
@@ -1780,7 +1780,7 @@ maxLength32
 
 <summary>
 
-status: "active"or "disabled"or "expired"
+status: "active" or "disabled" or "expired"
 
 Status of the token.
 
@@ -1836,7 +1836,7 @@ GET/user/tokens/permission\_groups
 
 <summary>
 
-PermissionGroupListResponse object {id, category, is\_selectable, 2 more }
+PermissionGroupListResponse object { id, category, is\_selectable, 2 more }
 
 </summary>
 
@@ -1850,7 +1850,7 @@ Public ID.
 
 <summary>
 
-category: optional "developer\_platform"or "ai\_and\_machine\_learning"or "dns\_and\_zones"or 10 more
+category: optional "developer\_platform" or "ai\_and\_machine\_learning" or "dns\_and\_zones" or 10 more
 
 Product category that this permission group belongs to.
 
@@ -1930,7 +1930,7 @@ Permission Group Name
 
 <summary>
 
-scopes: optional array of "com.cloudflare.api.account"or "com.cloudflare.api.account.zone"or "com.cloudflare.api.user"or "com.cloudflare.edge.r2.bucket"
+scopes: optional array of "com.cloudflare.api.account" or "com.cloudflare.api.account.zone" or "com.cloudflare.api.user" or "com.cloudflare.edge.r2.bucket"
 
 Resources to which the Permission Group is scoped
 

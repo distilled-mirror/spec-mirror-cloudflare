@@ -88,7 +88,7 @@ minLength32
 
 <summary>
 
-members: array of object {id }
+members: array of object { id }
 
 Set/Replace members to a user group.
 
@@ -114,7 +114,7 @@ minLength32
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -136,7 +136,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -156,7 +156,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -178,7 +178,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -204,7 +204,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional array of object {id, email, status }
+result: optional array of object { id, email, status }
 
 </summary>
 
@@ -226,7 +226,7 @@ maxLength90
 
 <summary>
 
-status: optional "accepted"or "pending"
+status: optional "accepted" or "pending"
 
 The member’s status in the account.
 

@@ -78,7 +78,7 @@ maxLength32
 
 <summary>
 
-validation\_default\_mitigation\_action: optional "none"or "log"or "block"
+validation\_default\_mitigation\_action: optional "none" or "log" or "block"
 
 The default mitigation action used when there is no mitigation action defined on the operation Mitigation actions are as follows:
 
@@ -113,7 +113,7 @@ One of the following:
 
 <summary>
 
-validation\_override\_mitigation\_action: optional "none"or "disable\_override"
+validation\_override\_mitigation\_action: optional "none" or "disable\_override"
 
 When set, this overrides both zone level and operation level mitigation actions.
 
@@ -145,7 +145,7 @@ One of the following:
 
 <summary>
 
-Settings object {validation\_default\_mitigation\_action, validation\_override\_mitigation\_action }
+Settings object { validation\_default\_mitigation\_action, validation\_override\_mitigation\_action }
 
 </summary>
 
@@ -153,7 +153,7 @@ Settings object {validation\_default\_mitigation\_action, validation\_override\_
 
 <summary>
 
-validation\_default\_mitigation\_action: optional "none"or "log"or "block"
+validation\_default\_mitigation\_action: optional "none" or "log" or "block"
 
 The default mitigation action used when there is no mitigation action defined on the operation
 

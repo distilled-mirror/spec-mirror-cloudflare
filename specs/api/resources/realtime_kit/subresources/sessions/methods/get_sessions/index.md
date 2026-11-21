@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Realtime Admin``Realtime`
+`Realtime Read``Realtime Admin``Realtime`
 
 ##### P ath ParametersExpand Collapse
 
@@ -122,7 +122,7 @@ Search string that matches sessions based on meeting title, meeting ID, and sess
 
 <summary>
 
-sort\_by: optional "minutesConsumed"or "createdAt"
+sort\_by: optional "minutesConsumed" or "createdAt"
 
 </summary>
 
@@ -144,7 +144,7 @@ One of the following:
 
 <summary>
 
-sort\_order: optional "ASC"or "DESC"
+sort\_order: optional "ASC" or "DESC"
 
 </summary>
 
@@ -174,7 +174,7 @@ formatdate-time
 
 <summary>
 
-status: optional "LIVE"or "ENDED"
+status: optional "LIVE" or "ENDED"
 
 </summary>
 
@@ -198,7 +198,7 @@ One of the following:
 
 <summary>
 
-data: optional object {sessions }
+data: optional object { sessions }
 
 </summary>
 
@@ -206,7 +206,7 @@ data: optional object {sessions }
 
 <summary>
 
-sessions: optional array of object {id, associated\_id, created\_at, 11 more }
+sessions: optional array of object { id, associated\_id, created\_at, 11 more }
 
 </summary>
 
@@ -268,7 +268,7 @@ timestamp when session started
 
 <summary>
 
-status: "LIVE"or "ENDED"
+status: "LIVE" or "ENDED"
 
 current status of session
 
@@ -292,7 +292,7 @@ One of the following:
 
 <summary>
 
-type: "meeting"or "livestream"or "participant"
+type: "meeting" or "livestream" or "participant"
 
 type of session
 
@@ -344,7 +344,7 @@ timestamp when session ended
 
 <summary>
 
-paging: optional object {end\_offset, start\_offset, total\_count }
+paging: optional object { end\_offset, start\_offset, total\_count }
 
 </summary>
 

@@ -56,7 +56,7 @@ minLength1
 
 <summary>
 
-version\_config: array of object {target\_environment, version }
+version\_config: array of object { target\_environment, version }
 
 Contains at least one version configuration.
 
@@ -90,7 +90,7 @@ Contains an optional list of policy IDs assigned to a group.
 
 <summary>
 
-errors: array of object {code, message }
+errors: array of object { code, message }
 
 </summary>
 
@@ -110,7 +110,7 @@ message: string
 
 <summary>
 
-messages: array of object {code, message }
+messages: array of object { code, message }
 
 </summary>
 
@@ -166,7 +166,7 @@ The RFC3339Nano timestamp when the deployment group was last updated.
 
 <summary>
 
-version\_config: array of object {target\_environment, version }
+version\_config: array of object { target\_environment, version }
 
 Contains version configurations for different target environments.
 

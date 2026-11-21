@@ -40,7 +40,7 @@ DELETE/zones/{zone\_id}/observability/tracing/rules
 
 <summary>
 
-RuleGetResponse object {rules }
+RuleGetResponse object { rules }
 
 </summary>
 
@@ -48,7 +48,7 @@ RuleGetResponse object {rules }
 
 <summary>
 
-rules: array of object {action, action\_parameters, description, 2 more }
+rules: array of object { action, action\_parameters, description, 2 more }
 
 Trace rules in evaluation order.
 
@@ -62,7 +62,7 @@ action: "set\_trace\_settings"
 
 <summary>
 
-action\_parameters: object {sampling\_ratio }
+action\_parameters: object { sampling\_ratio }
 
 </summary>
 
@@ -112,7 +112,7 @@ minLength1
 
 <summary>
 
-RuleUpdateResponse object {rules }
+RuleUpdateResponse object { rules }
 
 </summary>
 
@@ -120,7 +120,7 @@ RuleUpdateResponse object {rules }
 
 <summary>
 
-rules: array of object {action, action\_parameters, description, 2 more }
+rules: array of object { action, action\_parameters, description, 2 more }
 
 Trace rules in evaluation order.
 
@@ -134,7 +134,7 @@ action: "set\_trace\_settings"
 
 <summary>
 
-action\_parameters: object {sampling\_ratio }
+action\_parameters: object { sampling\_ratio }
 
 </summary>
 
@@ -184,7 +184,7 @@ minLength1
 
 <summary>
 
-RuleDeleteResponse object {rules }
+RuleDeleteResponse object { rules }
 
 </summary>
 
@@ -192,7 +192,7 @@ RuleDeleteResponse object {rules }
 
 <summary>
 
-rules: array of object {action, action\_parameters, description, 2 more }
+rules: array of object { action, action\_parameters, description, 2 more }
 
 Trace rules in evaluation order.
 
@@ -206,7 +206,7 @@ action: "set\_trace\_settings"
 
 <summary>
 
-action\_parameters: object {sampling\_ratio }
+action\_parameters: object { sampling\_ratio }
 
 </summary>
 

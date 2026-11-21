@@ -34,7 +34,7 @@ Authenticate with the JWT obtained from the upload-token endpoint: GET /accounts
 
 <summary>
 
-body: array of object {base64, key, metadata, value }
+body: array of object { base64, key, metadata, value }
 
 </summary>
 
@@ -54,7 +54,7 @@ File content hash used as the object key in the Pages asset store.
 
 <summary>
 
-metadata: object {contentType }
+metadata: object { contentType }
 
 </summary>
 
@@ -84,7 +84,7 @@ File content. When base64 is true, this value is base64 encoded.
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -106,7 +106,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -126,7 +126,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -148,7 +148,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 

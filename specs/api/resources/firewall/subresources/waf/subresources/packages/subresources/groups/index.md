@@ -46,7 +46,7 @@ PATCH/zones/{zone\_id}/firewall/waf/packages/{package\_id}/groups/{group\_id}
 
 <summary>
 
-Group object {id, description, mode, 5 more }
+Group object { id, description, mode, 5 more }
 
 </summary>
 
@@ -68,7 +68,7 @@ Defines an informative summary of what the rule group does.
 
 <summary>
 
-mode: "on"or "off"
+mode: "on" or "off"
 
 Defines the state of the rules contained in the rule group. When <code>on</code>, the rules in the group are configurable/usable.
 
@@ -104,7 +104,7 @@ Defines the number of rules in the current rule group.
 
 <summary>
 
-allowed\_modes: optional array of "on"or "off"
+allowed\_modes: optional array of "on" or "off"
 
 Defines the available states for the rule group.
 
@@ -146,7 +146,7 @@ maxLength32
 
 <summary>
 
-GroupGetResponse = unknownor string
+GroupGetResponse = unknown or string
 
 </summary>
 
@@ -168,7 +168,7 @@ string
 
 <summary>
 
-GroupEditResponse = unknownor string
+GroupEditResponse = unknown or string
 
 </summary>
 

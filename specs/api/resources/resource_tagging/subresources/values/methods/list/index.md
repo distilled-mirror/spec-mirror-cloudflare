@@ -64,7 +64,7 @@ Cursor for pagination.
 
 <summary>
 
-type: optional "access\_application"or "access\_application\_policy"or "access\_group"or 44 more
+type: optional "access\_application" or "access\_application\_policy" or "access\_group" or 44 more
 
 Filter by resource type.
 
@@ -270,7 +270,7 @@ One of the following:
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -292,7 +292,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -312,7 +312,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -334,7 +334,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -364,7 +364,7 @@ result: optional array of string
 
 <summary>
 
-result\_info: optional object {count, cursor }
+result\_info: optional object { count, cursor }
 
 </summary>
 

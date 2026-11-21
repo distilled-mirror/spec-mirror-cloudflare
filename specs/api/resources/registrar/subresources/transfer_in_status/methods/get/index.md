@@ -102,7 +102,7 @@ Provides a fully qualified domain name (FQDN), including the extension (e.g., `e
 
 <summary>
 
-errors: array of object {code, message, source }
+errors: array of object { code, message, source }
 
 </summary>
 
@@ -120,7 +120,7 @@ message: string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 Location of the invalid value that caused the error.
 
@@ -144,7 +144,7 @@ JSON Pointer to the invalid or missing request value.
 
 <summary>
 
-messages: array of object {code, message, source }
+messages: array of object { code, message, source }
 
 </summary>
 
@@ -162,7 +162,7 @@ message: string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 Location of the invalid value that caused the error.
 
@@ -208,7 +208,7 @@ formatdate-time
 
 <summary>
 
-links: object {self, resource }
+links: object { self, resource }
 
 </summary>
 
@@ -232,7 +232,7 @@ URL to the domain resource.
 
 <summary>
 
-state: "pending"or "in\_progress"or "action\_required"or 3 more
+state: "pending" or "in\_progress" or "action\_required" or 3 more
 
 Describes the workflow lifecycle state.
 
@@ -293,7 +293,7 @@ For domain-centric workflows, <code>context.domain_name</code> identifies the wo
 
 <summary>
 
-error: optional object {code, message }
+error: optional object { code, message }
 
 Provides error details when a workflow reaches the <code>failed</code> state. The workflow type (registration, update, etc.) and underlying registry response determine the specific codes and messages. Workflow error codes differ from immediate HTTP error <code>errors[].code</code> values in non-2xx responses. Surface <code>error.message</code> to the user for context.
 

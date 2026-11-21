@@ -30,7 +30,7 @@ GET/accounts/{account\_id}/rules/lists/bulk\_operations/{operation\_id}
 
 <summary>
 
-BulkOperationGetResponse = object {id, status } or object {id, completed, status } or object {id, completed, error, status }
+BulkOperationGetResponse = object { id, status } or object { id, completed, status } or object { id, completed, error, status }
 
 </summary>
 
@@ -40,7 +40,7 @@ One of the following:
 
 <summary>
 
-ListsBulkOperationPendingOrRunning object {id, status }
+ListsBulkOperationPendingOrRunning object { id, status }
 
 </summary>
 
@@ -54,7 +54,7 @@ The unique operation ID of the asynchronous action.
 
 <summary>
 
-status: "pending"or "running"
+status: "pending" or "running"
 
 The current status of the asynchronous operation.
 
@@ -82,7 +82,7 @@ One of the following:
 
 <summary>
 
-ListsBulkOperationCompleted object {id, completed, status }
+ListsBulkOperationCompleted object { id, completed, status }
 
 </summary>
 
@@ -112,7 +112,7 @@ The current status of the asynchronous operation.
 
 <summary>
 
-ListsBulkOperationFailed object {id, completed, error, status }
+ListsBulkOperationFailed object { id, completed, error, status }
 
 </summary>
 

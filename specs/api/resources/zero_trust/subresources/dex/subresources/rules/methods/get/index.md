@@ -96,7 +96,7 @@ maxLength36
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -118,7 +118,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -138,7 +138,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -160,7 +160,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -186,7 +186,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, created\_at, match, 4 more }
+result: optional object { id, created\_at, match, 4 more }
 
 </summary>
 
@@ -218,7 +218,7 @@ description: optional string
 
 <summary>
 
-targeted\_tests: optional array of object {data, enabled, name, test\_id }
+targeted\_tests: optional array of object { data, enabled, name, test\_id }
 
 </summary>
 
@@ -242,7 +242,7 @@ The desired endpoint to test.
 
 <summary>
 
-kind: "http"or "traceroute"
+kind: "http" or "traceroute"
 
 The type of test.
 

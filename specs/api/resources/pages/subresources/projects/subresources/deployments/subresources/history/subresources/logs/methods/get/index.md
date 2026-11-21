@@ -62,7 +62,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Pages Read``Pages Write`
+`Pages Metadata Read``Pages Read``Pages Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -94,7 +94,7 @@ formatuuid
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -116,7 +116,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -136,7 +136,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -158,7 +158,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -178,7 +178,7 @@ pointer: optional string
 
 <summary>
 
-result: object {data, includes\_container\_logs, total }
+result: object { data, includes\_container\_logs, total }
 
 </summary>
 
@@ -186,7 +186,7 @@ result: object {data, includes\_container\_logs, total }
 
 <summary>
 
-data: array of object {line, ts }
+data: array of object { line, ts }
 
 </summary>
 

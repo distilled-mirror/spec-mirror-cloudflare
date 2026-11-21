@@ -28,7 +28,7 @@ GET/accounts/{account\_id}/alerting/v3/available\_alerts
 
 <summary>
 
-AvailableAlertListResponse = map\[array of object {description, display\_name, filter\_options, type } ]
+AvailableAlertListResponse = map\[array of object { description, display\_name, filter\_options, type } ]
 
 </summary>
 

@@ -98,7 +98,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -124,7 +124,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, account\_id, account\_name, 13 more }
+result: optional object { id, account\_id, account\_name, 13 more }
 
 </summary>
 
@@ -190,7 +190,7 @@ minLength32
 
 <summary>
 
-status: "active"or "deleting"or "deleted"
+status: "active" or "deleting" or "deleted"
 
 </summary>
 
@@ -216,7 +216,7 @@ One of the following:
 
 <summary>
 
-target\_type: "account"or "organization"
+target\_type: "account" or "organization"
 
 </summary>
 
@@ -262,7 +262,7 @@ The number of recipients in the ‘disassociating’ state. This field is only i
 
 <summary>
 
-kind: optional "sent"or "received"
+kind: optional "sent" or "received"
 
 </summary>
 
@@ -284,7 +284,7 @@ One of the following:
 
 <summary>
 
-resources: optional array of object {id, created, meta, 6 more }
+resources: optional array of object { id, created, meta, 6 more }
 
 A list of resources that are part of the share. This field is only included when requested via the ‘include\_resources’ parameter.
 
@@ -342,7 +342,7 @@ Identifier assigned by the service that owns the shared resource.
 
 <summary>
 
-resource\_type: "custom-ruleset"or "gateway-policy"or "gateway-destination-ip"or 4 more
+resource\_type: "custom-ruleset" or "gateway-policy" or "gateway-destination-ip" or 4 more
 
 Resource Type.
 
@@ -392,7 +392,7 @@ Resource Version.
 
 <summary>
 
-status: "active"or "deleting"or "deleted"
+status: "active" or "deleting" or "deleted"
 
 Resource Status.
 

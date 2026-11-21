@@ -92,7 +92,7 @@ minLength32
 
 <summary>
 
-body: array of object {ip, comment } or object {redirect, comment } or object {hostname, comment } or object {asn, comment }
+body: array of object { ip, comment } or object { redirect, comment } or object { hostname, comment } or object { asn, comment }
 
 </summary>
 
@@ -102,7 +102,7 @@ One of the following:
 
 <summary>
 
-ListsListItemIPComment object {ip, comment }
+ListsListItemIPComment object { ip, comment }
 
 </summary>
 
@@ -126,7 +126,7 @@ Defines an informative summary of the list item.
 
 <summary>
 
-ListsListItemRedirectComment object {redirect, comment }
+ListsListItemRedirectComment object { redirect, comment }
 
 </summary>
 
@@ -164,7 +164,7 @@ preserve\_query\_string: optional boolean
 
 <summary>
 
-status\_code: optional 301or 302or 307or 308
+status\_code: optional 301 or 302 or 307 or 308
 
 </summary>
 
@@ -212,7 +212,7 @@ Defines an informative summary of the list item.
 
 <summary>
 
-ListsListItemHostnameComment object {hostname, comment }
+ListsListItemHostnameComment object { hostname, comment }
 
 </summary>
 
@@ -254,7 +254,7 @@ Defines an informative summary of the list item.
 
 <summary>
 
-ListsListItemASNComment object {asn, comment }
+ListsListItemASNComment object { asn, comment }
 
 </summary>
 
@@ -306,7 +306,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -348,7 +348,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -368,7 +368,7 @@ pointer: optional string
 
 <summary>
 
-result: object {operation\_id }
+result: object { operation\_id }
 
 </summary>
 

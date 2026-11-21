@@ -84,7 +84,7 @@ minimum0
 
 <summary>
 
-errors: array of object {message, code }
+errors: array of object { message, code }
 
 </summary>
 
@@ -96,7 +96,7 @@ message: string
 
 <summary>
 
-code: optional stringor number
+code: optional string or number
 
 </summary>
 
@@ -122,7 +122,7 @@ number
 
 <summary>
 
-messages: array of object {message, code }
+messages: array of object { message, code }
 
 </summary>
 
@@ -134,7 +134,7 @@ message: string
 
 <summary>
 
-code: optional stringor number
+code: optional string or number
 
 </summary>
 
@@ -160,7 +160,7 @@ number
 
 <summary>
 
-result: array of object {created, parameters, query\_id, 3 more } or object {created, parameters, query\_id, 3 more }
+result: array of object { created, parameters, query\_id, 3 more } or object { created, parameters, query\_id, 3 more }
 
 </summary>
 
@@ -170,7 +170,7 @@ One of the following:
 
 <summary>
 
-array of object {created, parameters, query\_id, 3 more }
+array of object { created, parameters, query\_id, 3 more }
 
 </summary>
 
@@ -182,7 +182,7 @@ created: string
 
 <summary>
 
-parameters: object {string\_matches, max\_time, min\_time }
+parameters: object { string\_matches, max\_time, min\_time }
 
 </summary>
 
@@ -190,7 +190,7 @@ parameters: object {string\_matches, max\_time, min\_time }
 
 <summary>
 
-string\_matches: array of object {pattern }
+string\_matches: array of object { pattern }
 
 </summary>
 
@@ -242,7 +242,7 @@ updated: string
 
 <summary>
 
-object {created, parameters, query\_id, 3 more }
+object { created, parameters, query\_id, 3 more }
 
 </summary>
 
@@ -254,7 +254,7 @@ created: string
 
 <summary>
 
-parameters: object {string\_matches, max\_time, min\_time }
+parameters: object { string\_matches, max\_time, min\_time }
 
 </summary>
 
@@ -262,7 +262,7 @@ parameters: object {string\_matches, max\_time, min\_time }
 
 <summary>
 
-string\_matches: array of object {pattern }
+string\_matches: array of object { pattern }
 
 </summary>
 
@@ -322,7 +322,7 @@ success: boolean
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object { count, page, per\_page, total\_count }
 
 Present on paginated list responses when page or per\_page is supplied.
 

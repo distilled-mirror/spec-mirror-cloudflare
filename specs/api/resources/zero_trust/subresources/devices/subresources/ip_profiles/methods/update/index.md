@@ -94,7 +94,7 @@ The ID of the Subnet.
 
 <summary>
 
-errors: array of object {code, message }
+errors: array of object { code, message }
 
 </summary>
 
@@ -114,7 +114,7 @@ message: string
 
 <summary>
 
-messages: array of object {code, message }
+messages: array of object { code, message }
 
 </summary>
 

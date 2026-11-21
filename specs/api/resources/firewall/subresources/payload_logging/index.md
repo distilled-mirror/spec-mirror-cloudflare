@@ -36,7 +36,7 @@ DELETE/{accounts\_or\_zones}/{account\_or\_zone\_id}/firewall/payload\_logging/k
 
 <summary>
 
-PayloadLoggingKey object {public\_key }
+PayloadLoggingKey object { public\_key }
 
 </summary>
 

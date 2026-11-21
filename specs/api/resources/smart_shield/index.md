@@ -30,7 +30,7 @@ PATCH/zones/{zone\_id}/smart\_shield
 
 <summary>
 
-SmartShieldGetResponse = object {cache\_reserve, healthchecks\_count, regional\_tiered\_cache, 2 more } or object {cache\_reserve, healthchecks\_count, regional\_tiered\_cache, 2 more } or object {cache\_reserve, healthchecks\_count, regional\_tiered\_cache, 2 more }
+SmartShieldGetResponse = object { cache\_reserve, healthchecks\_count, regional\_tiered\_cache, 2 more } or object { cache\_reserve, healthchecks\_count, regional\_tiered\_cache, 2 more } or object { cache\_reserve, healthchecks\_count, regional\_tiered\_cache, 2 more }
 
 </summary>
 
@@ -40,7 +40,7 @@ One of the following:
 
 <summary>
 
-object {cache\_reserve, healthchecks\_count, regional\_tiered\_cache, 2 more }
+object { cache\_reserve, healthchecks\_count, regional\_tiered\_cache, 2 more }
 
 </summary>
 
@@ -48,7 +48,7 @@ object {cache\_reserve, healthchecks\_count, regional\_tiered\_cache, 2 more }
 
 <summary>
 
-cache\_reserve: optional object {id, editable, value }
+cache\_reserve: optional object { id, editable, value }
 
 </summary>
 
@@ -68,7 +68,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Cache Reserve.
 
@@ -102,7 +102,7 @@ The total number of health checks associated with the zone.
 
 <summary>
 
-regional\_tiered\_cache: optional object {id, editable, value }
+regional\_tiered\_cache: optional object { id, editable, value }
 
 </summary>
 
@@ -122,7 +122,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Cache Reserve.
 
@@ -150,7 +150,7 @@ One of the following:
 
 <summary>
 
-smart\_routing: optional object {id, editable, value }
+smart\_routing: optional object { id, editable, value }
 
 </summary>
 
@@ -170,7 +170,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Argo Smart Routing.
 
@@ -198,7 +198,7 @@ One of the following:
 
 <summary>
 
-smart\_tiered\_cache: optional object {id, editable, modified\_on, value }
+smart\_tiered\_cache: optional object { id, editable, modified\_on, value }
 
 </summary>
 
@@ -224,7 +224,7 @@ The last time the setting was modified.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Tiered Cache.
 
@@ -256,7 +256,7 @@ One of the following:
 
 <summary>
 
-object {cache\_reserve, healthchecks\_count, regional\_tiered\_cache, 2 more }
+object { cache\_reserve, healthchecks\_count, regional\_tiered\_cache, 2 more }
 
 </summary>
 
@@ -264,7 +264,7 @@ object {cache\_reserve, healthchecks\_count, regional\_tiered\_cache, 2 more }
 
 <summary>
 
-cache\_reserve: optional object {id, editable, value }
+cache\_reserve: optional object { id, editable, value }
 
 </summary>
 
@@ -284,7 +284,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Cache Reserve.
 
@@ -318,7 +318,7 @@ The total number of health checks associated with the zone.
 
 <summary>
 
-regional\_tiered\_cache: optional object {id, editable, value }
+regional\_tiered\_cache: optional object { id, editable, value }
 
 </summary>
 
@@ -338,7 +338,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Cache Reserve.
 
@@ -366,7 +366,7 @@ One of the following:
 
 <summary>
 
-smart\_routing: optional object {id, editable, value }
+smart\_routing: optional object { id, editable, value }
 
 </summary>
 
@@ -386,7 +386,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Argo Smart Routing.
 
@@ -414,7 +414,7 @@ One of the following:
 
 <summary>
 
-smart\_tiered\_cache: optional object {id, editable, modified\_on, value }
+smart\_tiered\_cache: optional object { id, editable, modified\_on, value }
 
 </summary>
 
@@ -440,7 +440,7 @@ The last time the setting was modified.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Tiered Cache.
 
@@ -472,7 +472,7 @@ One of the following:
 
 <summary>
 
-object {cache\_reserve, healthchecks\_count, regional\_tiered\_cache, 2 more }
+object { cache\_reserve, healthchecks\_count, regional\_tiered\_cache, 2 more }
 
 </summary>
 
@@ -480,7 +480,7 @@ object {cache\_reserve, healthchecks\_count, regional\_tiered\_cache, 2 more }
 
 <summary>
 
-cache\_reserve: optional object {id, editable, value }
+cache\_reserve: optional object { id, editable, value }
 
 </summary>
 
@@ -500,7 +500,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Cache Reserve.
 
@@ -534,7 +534,7 @@ The total number of health checks associated with the zone.
 
 <summary>
 
-regional\_tiered\_cache: optional object {id, editable, value }
+regional\_tiered\_cache: optional object { id, editable, value }
 
 </summary>
 
@@ -554,7 +554,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Cache Reserve.
 
@@ -582,7 +582,7 @@ One of the following:
 
 <summary>
 
-smart\_routing: optional object {id, editable, value }
+smart\_routing: optional object { id, editable, value }
 
 </summary>
 
@@ -602,7 +602,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Argo Smart Routing.
 
@@ -630,7 +630,7 @@ One of the following:
 
 <summary>
 
-smart\_tiered\_cache: optional object {id, editable, modified\_on, value }
+smart\_tiered\_cache: optional object { id, editable, modified\_on, value }
 
 </summary>
 
@@ -656,7 +656,7 @@ The last time the setting was modified.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Tiered Cache.
 
@@ -692,7 +692,7 @@ One of the following:
 
 <summary>
 
-SmartShieldUpdateResponse = object {cache\_reserve, regional\_tiered\_cache, smart\_routing, smart\_tiered\_cache } or object {cache\_reserve, regional\_tiered\_cache, smart\_routing, smart\_tiered\_cache } or object {cache\_reserve, regional\_tiered\_cache, smart\_routing, smart\_tiered\_cache }
+SmartShieldUpdateResponse = object { cache\_reserve, regional\_tiered\_cache, smart\_routing, smart\_tiered\_cache } or object { cache\_reserve, regional\_tiered\_cache, smart\_routing, smart\_tiered\_cache } or object { cache\_reserve, regional\_tiered\_cache, smart\_routing, smart\_tiered\_cache }
 
 </summary>
 
@@ -702,7 +702,7 @@ One of the following:
 
 <summary>
 
-object {cache\_reserve, regional\_tiered\_cache, smart\_routing, smart\_tiered\_cache }
+object { cache\_reserve, regional\_tiered\_cache, smart\_routing, smart\_tiered\_cache }
 
 </summary>
 
@@ -710,7 +710,7 @@ object {cache\_reserve, regional\_tiered\_cache, smart\_routing, smart\_tiered\_
 
 <summary>
 
-cache\_reserve: optional object {id, editable, value }
+cache\_reserve: optional object { id, editable, value }
 
 </summary>
 
@@ -730,7 +730,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Cache Reserve.
 
@@ -758,7 +758,7 @@ One of the following:
 
 <summary>
 
-regional\_tiered\_cache: optional object {id, editable, value }
+regional\_tiered\_cache: optional object { id, editable, value }
 
 </summary>
 
@@ -778,7 +778,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Regional Tiered Cache.
 
@@ -806,7 +806,7 @@ One of the following:
 
 <summary>
 
-smart\_routing: optional object {id, editable, value }
+smart\_routing: optional object { id, editable, value }
 
 </summary>
 
@@ -826,7 +826,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Argo Smart Routing.
 
@@ -854,7 +854,7 @@ One of the following:
 
 <summary>
 
-smart\_tiered\_cache: optional object {id, editable, modified\_on, value }
+smart\_tiered\_cache: optional object { id, editable, modified\_on, value }
 
 </summary>
 
@@ -880,7 +880,7 @@ The last time the setting was modified.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Tiered Cache.
 
@@ -912,7 +912,7 @@ One of the following:
 
 <summary>
 
-object {cache\_reserve, regional\_tiered\_cache, smart\_routing, smart\_tiered\_cache }
+object { cache\_reserve, regional\_tiered\_cache, smart\_routing, smart\_tiered\_cache }
 
 </summary>
 
@@ -920,7 +920,7 @@ object {cache\_reserve, regional\_tiered\_cache, smart\_routing, smart\_tiered\_
 
 <summary>
 
-cache\_reserve: optional object {id, editable, value }
+cache\_reserve: optional object { id, editable, value }
 
 </summary>
 
@@ -940,7 +940,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Cache Reserve.
 
@@ -968,7 +968,7 @@ One of the following:
 
 <summary>
 
-regional\_tiered\_cache: optional object {id, editable, value }
+regional\_tiered\_cache: optional object { id, editable, value }
 
 </summary>
 
@@ -988,7 +988,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Regional Tiered Cache.
 
@@ -1016,7 +1016,7 @@ One of the following:
 
 <summary>
 
-smart\_routing: optional object {id, editable, value }
+smart\_routing: optional object { id, editable, value }
 
 </summary>
 
@@ -1036,7 +1036,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Argo Smart Routing.
 
@@ -1064,7 +1064,7 @@ One of the following:
 
 <summary>
 
-smart\_tiered\_cache: optional object {id, editable, modified\_on, value }
+smart\_tiered\_cache: optional object { id, editable, modified\_on, value }
 
 </summary>
 
@@ -1090,7 +1090,7 @@ The last time the setting was modified.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Tiered Cache.
 
@@ -1122,7 +1122,7 @@ One of the following:
 
 <summary>
 
-object {cache\_reserve, regional\_tiered\_cache, smart\_routing, smart\_tiered\_cache }
+object { cache\_reserve, regional\_tiered\_cache, smart\_routing, smart\_tiered\_cache }
 
 </summary>
 
@@ -1130,7 +1130,7 @@ object {cache\_reserve, regional\_tiered\_cache, smart\_routing, smart\_tiered\_
 
 <summary>
 
-cache\_reserve: optional object {id, editable, value }
+cache\_reserve: optional object { id, editable, value }
 
 </summary>
 
@@ -1150,7 +1150,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Cache Reserve.
 
@@ -1178,7 +1178,7 @@ One of the following:
 
 <summary>
 
-regional\_tiered\_cache: optional object {id, editable, value }
+regional\_tiered\_cache: optional object { id, editable, value }
 
 </summary>
 
@@ -1198,7 +1198,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Regional Tiered Cache.
 
@@ -1226,7 +1226,7 @@ One of the following:
 
 <summary>
 
-smart\_routing: optional object {id, editable, value }
+smart\_routing: optional object { id, editable, value }
 
 </summary>
 
@@ -1246,7 +1246,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Argo Smart Routing.
 
@@ -1274,7 +1274,7 @@ One of the following:
 
 <summary>
 
-smart\_tiered\_cache: optional object {id, editable, modified\_on, value }
+smart\_tiered\_cache: optional object { id, editable, modified\_on, value }
 
 </summary>
 
@@ -1300,7 +1300,7 @@ The last time the setting was modified.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Tiered Cache.
 
@@ -1364,7 +1364,7 @@ DELETE/zones/{zone\_id}/smart\_shield/healthchecks/{healthcheck\_id}
 
 <summary>
 
-HealthCheckListResponse = unknownor array of unknownor string
+HealthCheckListResponse = unknown or array of unknown or string
 
 </summary>
 
@@ -1390,7 +1390,7 @@ string
 
 <summary>
 
-HealthCheckGetResponse = object {id, address, check\_regions, 15 more } or object {id, address, check\_regions, 15 more } or object {id, address, check\_regions, 15 more }
+HealthCheckGetResponse = object { id, address, check\_regions, 15 more } or object { id, address, check\_regions, 15 more } or object { id, address, check\_regions, 15 more }
 
 </summary>
 
@@ -1400,7 +1400,7 @@ One of the following:
 
 <summary>
 
-object {id, address, check\_regions, 15 more }
+object { id, address, check\_regions, 15 more }
 
 </summary>
 
@@ -1422,7 +1422,7 @@ The hostname or IP address of the origin server to run health checks on.
 
 <summary>
 
-check\_regions: optional array of "WNAM"or "ENAM"or "WEU"or 11 more
+check\_regions: optional array of "WNAM" or "ENAM" or "WEU" or 11 more
 
 A list of regions from which to run health checks. Null means Cloudflare will pick a default region.
 
@@ -1524,7 +1524,7 @@ The current failure reason if status is unhealthy.
 
 <summary>
 
-http\_config: optional object {allow\_insecure, expected\_body, expected\_codes, 5 more }
+http\_config: optional object { allow\_insecure, expected\_body, expected\_codes, 5 more }
 
 Parameters specific to an HTTP or HTTPS health check.
 
@@ -1564,7 +1564,7 @@ The HTTP request headers to send in the health check. It is recommended you set 
 
 <summary>
 
-method: optional "GET"or "HEAD"
+method: optional "GET" or "HEAD"
 
 The HTTP method to use for the health check.
 
@@ -1628,7 +1628,7 @@ The number of retries to attempt in case of a timeout before marking the origin 
 
 <summary>
 
-status: optional "unknown"or "healthy"or "unhealthy"or "suspended"
+status: optional "unknown" or "healthy" or "unhealthy" or "suspended"
 
 The current status of the origin server according to the health check.
 
@@ -1666,7 +1666,7 @@ If suspended, no health checks are sent to the origin.
 
 <summary>
 
-tcp\_config: optional object {method, port }
+tcp\_config: optional object { method, port }
 
 Parameters specific to TCP health check.
 
@@ -1708,7 +1708,7 @@ The protocol to use for the health check. Currently supported protocols are ‘H
 
 <summary>
 
-object {id, address, check\_regions, 15 more }
+object { id, address, check\_regions, 15 more }
 
 </summary>
 
@@ -1730,7 +1730,7 @@ The hostname or IP address of the origin server to run health checks on.
 
 <summary>
 
-check\_regions: optional array of "WNAM"or "ENAM"or "WEU"or 11 more
+check\_regions: optional array of "WNAM" or "ENAM" or "WEU" or 11 more
 
 A list of regions from which to run health checks. Null means Cloudflare will pick a default region.
 
@@ -1832,7 +1832,7 @@ The current failure reason if status is unhealthy.
 
 <summary>
 
-http\_config: optional object {allow\_insecure, expected\_body, expected\_codes, 5 more }
+http\_config: optional object { allow\_insecure, expected\_body, expected\_codes, 5 more }
 
 Parameters specific to an HTTP or HTTPS health check.
 
@@ -1872,7 +1872,7 @@ The HTTP request headers to send in the health check. It is recommended you set 
 
 <summary>
 
-method: optional "GET"or "HEAD"
+method: optional "GET" or "HEAD"
 
 The HTTP method to use for the health check.
 
@@ -1936,7 +1936,7 @@ The number of retries to attempt in case of a timeout before marking the origin 
 
 <summary>
 
-status: optional "unknown"or "healthy"or "unhealthy"or "suspended"
+status: optional "unknown" or "healthy" or "unhealthy" or "suspended"
 
 The current status of the origin server according to the health check.
 
@@ -1974,7 +1974,7 @@ If suspended, no health checks are sent to the origin.
 
 <summary>
 
-tcp\_config: optional object {method, port }
+tcp\_config: optional object { method, port }
 
 Parameters specific to TCP health check.
 
@@ -2016,7 +2016,7 @@ The protocol to use for the health check. Currently supported protocols are ‘H
 
 <summary>
 
-object {id, address, check\_regions, 15 more }
+object { id, address, check\_regions, 15 more }
 
 </summary>
 
@@ -2038,7 +2038,7 @@ The hostname or IP address of the origin server to run health checks on.
 
 <summary>
 
-check\_regions: optional array of "WNAM"or "ENAM"or "WEU"or 11 more
+check\_regions: optional array of "WNAM" or "ENAM" or "WEU" or 11 more
 
 A list of regions from which to run health checks. Null means Cloudflare will pick a default region.
 
@@ -2140,7 +2140,7 @@ The current failure reason if status is unhealthy.
 
 <summary>
 
-http\_config: optional object {allow\_insecure, expected\_body, expected\_codes, 5 more }
+http\_config: optional object { allow\_insecure, expected\_body, expected\_codes, 5 more }
 
 Parameters specific to an HTTP or HTTPS health check.
 
@@ -2180,7 +2180,7 @@ The HTTP request headers to send in the health check. It is recommended you set 
 
 <summary>
 
-method: optional "GET"or "HEAD"
+method: optional "GET" or "HEAD"
 
 The HTTP method to use for the health check.
 
@@ -2244,7 +2244,7 @@ The number of retries to attempt in case of a timeout before marking the origin 
 
 <summary>
 
-status: optional "unknown"or "healthy"or "unhealthy"or "suspended"
+status: optional "unknown" or "healthy" or "unhealthy" or "suspended"
 
 The current status of the origin server according to the health check.
 
@@ -2282,7 +2282,7 @@ If suspended, no health checks are sent to the origin.
 
 <summary>
 
-tcp\_config: optional object {method, port }
+tcp\_config: optional object { method, port }
 
 Parameters specific to TCP health check.
 
@@ -2328,7 +2328,7 @@ The protocol to use for the health check. Currently supported protocols are ‘H
 
 <summary>
 
-HealthCheckCreateResponse = object {id, address, check\_regions, 15 more } or object {id, address, check\_regions, 15 more } or object {id, address, check\_regions, 15 more }
+HealthCheckCreateResponse = object { id, address, check\_regions, 15 more } or object { id, address, check\_regions, 15 more } or object { id, address, check\_regions, 15 more }
 
 </summary>
 
@@ -2338,7 +2338,7 @@ One of the following:
 
 <summary>
 
-object {id, address, check\_regions, 15 more }
+object { id, address, check\_regions, 15 more }
 
 </summary>
 
@@ -2360,7 +2360,7 @@ The hostname or IP address of the origin server to run health checks on.
 
 <summary>
 
-check\_regions: optional array of "WNAM"or "ENAM"or "WEU"or 11 more
+check\_regions: optional array of "WNAM" or "ENAM" or "WEU" or 11 more
 
 A list of regions from which to run health checks. Null means Cloudflare will pick a default region.
 
@@ -2462,7 +2462,7 @@ The current failure reason if status is unhealthy.
 
 <summary>
 
-http\_config: optional object {allow\_insecure, expected\_body, expected\_codes, 5 more }
+http\_config: optional object { allow\_insecure, expected\_body, expected\_codes, 5 more }
 
 Parameters specific to an HTTP or HTTPS health check.
 
@@ -2502,7 +2502,7 @@ The HTTP request headers to send in the health check. It is recommended you set 
 
 <summary>
 
-method: optional "GET"or "HEAD"
+method: optional "GET" or "HEAD"
 
 The HTTP method to use for the health check.
 
@@ -2566,7 +2566,7 @@ The number of retries to attempt in case of a timeout before marking the origin 
 
 <summary>
 
-status: optional "unknown"or "healthy"or "unhealthy"or "suspended"
+status: optional "unknown" or "healthy" or "unhealthy" or "suspended"
 
 The current status of the origin server according to the health check.
 
@@ -2604,7 +2604,7 @@ If suspended, no health checks are sent to the origin.
 
 <summary>
 
-tcp\_config: optional object {method, port }
+tcp\_config: optional object { method, port }
 
 Parameters specific to TCP health check.
 
@@ -2646,7 +2646,7 @@ The protocol to use for the health check. Currently supported protocols are ‘H
 
 <summary>
 
-object {id, address, check\_regions, 15 more }
+object { id, address, check\_regions, 15 more }
 
 </summary>
 
@@ -2668,7 +2668,7 @@ The hostname or IP address of the origin server to run health checks on.
 
 <summary>
 
-check\_regions: optional array of "WNAM"or "ENAM"or "WEU"or 11 more
+check\_regions: optional array of "WNAM" or "ENAM" or "WEU" or 11 more
 
 A list of regions from which to run health checks. Null means Cloudflare will pick a default region.
 
@@ -2770,7 +2770,7 @@ The current failure reason if status is unhealthy.
 
 <summary>
 
-http\_config: optional object {allow\_insecure, expected\_body, expected\_codes, 5 more }
+http\_config: optional object { allow\_insecure, expected\_body, expected\_codes, 5 more }
 
 Parameters specific to an HTTP or HTTPS health check.
 
@@ -2810,7 +2810,7 @@ The HTTP request headers to send in the health check. It is recommended you set 
 
 <summary>
 
-method: optional "GET"or "HEAD"
+method: optional "GET" or "HEAD"
 
 The HTTP method to use for the health check.
 
@@ -2874,7 +2874,7 @@ The number of retries to attempt in case of a timeout before marking the origin 
 
 <summary>
 
-status: optional "unknown"or "healthy"or "unhealthy"or "suspended"
+status: optional "unknown" or "healthy" or "unhealthy" or "suspended"
 
 The current status of the origin server according to the health check.
 
@@ -2912,7 +2912,7 @@ If suspended, no health checks are sent to the origin.
 
 <summary>
 
-tcp\_config: optional object {method, port }
+tcp\_config: optional object { method, port }
 
 Parameters specific to TCP health check.
 
@@ -2954,7 +2954,7 @@ The protocol to use for the health check. Currently supported protocols are ‘H
 
 <summary>
 
-object {id, address, check\_regions, 15 more }
+object { id, address, check\_regions, 15 more }
 
 </summary>
 
@@ -2976,7 +2976,7 @@ The hostname or IP address of the origin server to run health checks on.
 
 <summary>
 
-check\_regions: optional array of "WNAM"or "ENAM"or "WEU"or 11 more
+check\_regions: optional array of "WNAM" or "ENAM" or "WEU" or 11 more
 
 A list of regions from which to run health checks. Null means Cloudflare will pick a default region.
 
@@ -3078,7 +3078,7 @@ The current failure reason if status is unhealthy.
 
 <summary>
 
-http\_config: optional object {allow\_insecure, expected\_body, expected\_codes, 5 more }
+http\_config: optional object { allow\_insecure, expected\_body, expected\_codes, 5 more }
 
 Parameters specific to an HTTP or HTTPS health check.
 
@@ -3118,7 +3118,7 @@ The HTTP request headers to send in the health check. It is recommended you set 
 
 <summary>
 
-method: optional "GET"or "HEAD"
+method: optional "GET" or "HEAD"
 
 The HTTP method to use for the health check.
 
@@ -3182,7 +3182,7 @@ The number of retries to attempt in case of a timeout before marking the origin 
 
 <summary>
 
-status: optional "unknown"or "healthy"or "unhealthy"or "suspended"
+status: optional "unknown" or "healthy" or "unhealthy" or "suspended"
 
 The current status of the origin server according to the health check.
 
@@ -3220,7 +3220,7 @@ If suspended, no health checks are sent to the origin.
 
 <summary>
 
-tcp\_config: optional object {method, port }
+tcp\_config: optional object { method, port }
 
 Parameters specific to TCP health check.
 
@@ -3266,7 +3266,7 @@ The protocol to use for the health check. Currently supported protocols are ‘H
 
 <summary>
 
-HealthCheckUpdateResponse = object {id, address, check\_regions, 15 more } or object {id, address, check\_regions, 15 more } or object {id, address, check\_regions, 15 more }
+HealthCheckUpdateResponse = object { id, address, check\_regions, 15 more } or object { id, address, check\_regions, 15 more } or object { id, address, check\_regions, 15 more }
 
 </summary>
 
@@ -3276,7 +3276,7 @@ One of the following:
 
 <summary>
 
-object {id, address, check\_regions, 15 more }
+object { id, address, check\_regions, 15 more }
 
 </summary>
 
@@ -3298,7 +3298,7 @@ The hostname or IP address of the origin server to run health checks on.
 
 <summary>
 
-check\_regions: optional array of "WNAM"or "ENAM"or "WEU"or 11 more
+check\_regions: optional array of "WNAM" or "ENAM" or "WEU" or 11 more
 
 A list of regions from which to run health checks. Null means Cloudflare will pick a default region.
 
@@ -3400,7 +3400,7 @@ The current failure reason if status is unhealthy.
 
 <summary>
 
-http\_config: optional object {allow\_insecure, expected\_body, expected\_codes, 5 more }
+http\_config: optional object { allow\_insecure, expected\_body, expected\_codes, 5 more }
 
 Parameters specific to an HTTP or HTTPS health check.
 
@@ -3440,7 +3440,7 @@ The HTTP request headers to send in the health check. It is recommended you set 
 
 <summary>
 
-method: optional "GET"or "HEAD"
+method: optional "GET" or "HEAD"
 
 The HTTP method to use for the health check.
 
@@ -3504,7 +3504,7 @@ The number of retries to attempt in case of a timeout before marking the origin 
 
 <summary>
 
-status: optional "unknown"or "healthy"or "unhealthy"or "suspended"
+status: optional "unknown" or "healthy" or "unhealthy" or "suspended"
 
 The current status of the origin server according to the health check.
 
@@ -3542,7 +3542,7 @@ If suspended, no health checks are sent to the origin.
 
 <summary>
 
-tcp\_config: optional object {method, port }
+tcp\_config: optional object { method, port }
 
 Parameters specific to TCP health check.
 
@@ -3584,7 +3584,7 @@ The protocol to use for the health check. Currently supported protocols are ‘H
 
 <summary>
 
-object {id, address, check\_regions, 15 more }
+object { id, address, check\_regions, 15 more }
 
 </summary>
 
@@ -3606,7 +3606,7 @@ The hostname or IP address of the origin server to run health checks on.
 
 <summary>
 
-check\_regions: optional array of "WNAM"or "ENAM"or "WEU"or 11 more
+check\_regions: optional array of "WNAM" or "ENAM" or "WEU" or 11 more
 
 A list of regions from which to run health checks. Null means Cloudflare will pick a default region.
 
@@ -3708,7 +3708,7 @@ The current failure reason if status is unhealthy.
 
 <summary>
 
-http\_config: optional object {allow\_insecure, expected\_body, expected\_codes, 5 more }
+http\_config: optional object { allow\_insecure, expected\_body, expected\_codes, 5 more }
 
 Parameters specific to an HTTP or HTTPS health check.
 
@@ -3748,7 +3748,7 @@ The HTTP request headers to send in the health check. It is recommended you set 
 
 <summary>
 
-method: optional "GET"or "HEAD"
+method: optional "GET" or "HEAD"
 
 The HTTP method to use for the health check.
 
@@ -3812,7 +3812,7 @@ The number of retries to attempt in case of a timeout before marking the origin 
 
 <summary>
 
-status: optional "unknown"or "healthy"or "unhealthy"or "suspended"
+status: optional "unknown" or "healthy" or "unhealthy" or "suspended"
 
 The current status of the origin server according to the health check.
 
@@ -3850,7 +3850,7 @@ If suspended, no health checks are sent to the origin.
 
 <summary>
 
-tcp\_config: optional object {method, port }
+tcp\_config: optional object { method, port }
 
 Parameters specific to TCP health check.
 
@@ -3892,7 +3892,7 @@ The protocol to use for the health check. Currently supported protocols are ‘H
 
 <summary>
 
-object {id, address, check\_regions, 15 more }
+object { id, address, check\_regions, 15 more }
 
 </summary>
 
@@ -3914,7 +3914,7 @@ The hostname or IP address of the origin server to run health checks on.
 
 <summary>
 
-check\_regions: optional array of "WNAM"or "ENAM"or "WEU"or 11 more
+check\_regions: optional array of "WNAM" or "ENAM" or "WEU" or 11 more
 
 A list of regions from which to run health checks. Null means Cloudflare will pick a default region.
 
@@ -4016,7 +4016,7 @@ The current failure reason if status is unhealthy.
 
 <summary>
 
-http\_config: optional object {allow\_insecure, expected\_body, expected\_codes, 5 more }
+http\_config: optional object { allow\_insecure, expected\_body, expected\_codes, 5 more }
 
 Parameters specific to an HTTP or HTTPS health check.
 
@@ -4056,7 +4056,7 @@ The HTTP request headers to send in the health check. It is recommended you set 
 
 <summary>
 
-method: optional "GET"or "HEAD"
+method: optional "GET" or "HEAD"
 
 The HTTP method to use for the health check.
 
@@ -4120,7 +4120,7 @@ The number of retries to attempt in case of a timeout before marking the origin 
 
 <summary>
 
-status: optional "unknown"or "healthy"or "unhealthy"or "suspended"
+status: optional "unknown" or "healthy" or "unhealthy" or "suspended"
 
 The current status of the origin server according to the health check.
 
@@ -4158,7 +4158,7 @@ If suspended, no health checks are sent to the origin.
 
 <summary>
 
-tcp\_config: optional object {method, port }
+tcp\_config: optional object { method, port }
 
 Parameters specific to TCP health check.
 
@@ -4204,7 +4204,7 @@ The protocol to use for the health check. Currently supported protocols are ‘H
 
 <summary>
 
-HealthCheckEditResponse = object {id, address, check\_regions, 15 more } or object {id, address, check\_regions, 15 more } or object {id, address, check\_regions, 15 more }
+HealthCheckEditResponse = object { id, address, check\_regions, 15 more } or object { id, address, check\_regions, 15 more } or object { id, address, check\_regions, 15 more }
 
 </summary>
 
@@ -4214,7 +4214,7 @@ One of the following:
 
 <summary>
 
-object {id, address, check\_regions, 15 more }
+object { id, address, check\_regions, 15 more }
 
 </summary>
 
@@ -4236,7 +4236,7 @@ The hostname or IP address of the origin server to run health checks on.
 
 <summary>
 
-check\_regions: optional array of "WNAM"or "ENAM"or "WEU"or 11 more
+check\_regions: optional array of "WNAM" or "ENAM" or "WEU" or 11 more
 
 A list of regions from which to run health checks. Null means Cloudflare will pick a default region.
 
@@ -4338,7 +4338,7 @@ The current failure reason if status is unhealthy.
 
 <summary>
 
-http\_config: optional object {allow\_insecure, expected\_body, expected\_codes, 5 more }
+http\_config: optional object { allow\_insecure, expected\_body, expected\_codes, 5 more }
 
 Parameters specific to an HTTP or HTTPS health check.
 
@@ -4378,7 +4378,7 @@ The HTTP request headers to send in the health check. It is recommended you set 
 
 <summary>
 
-method: optional "GET"or "HEAD"
+method: optional "GET" or "HEAD"
 
 The HTTP method to use for the health check.
 
@@ -4442,7 +4442,7 @@ The number of retries to attempt in case of a timeout before marking the origin 
 
 <summary>
 
-status: optional "unknown"or "healthy"or "unhealthy"or "suspended"
+status: optional "unknown" or "healthy" or "unhealthy" or "suspended"
 
 The current status of the origin server according to the health check.
 
@@ -4480,7 +4480,7 @@ If suspended, no health checks are sent to the origin.
 
 <summary>
 
-tcp\_config: optional object {method, port }
+tcp\_config: optional object { method, port }
 
 Parameters specific to TCP health check.
 
@@ -4522,7 +4522,7 @@ The protocol to use for the health check. Currently supported protocols are ‘H
 
 <summary>
 
-object {id, address, check\_regions, 15 more }
+object { id, address, check\_regions, 15 more }
 
 </summary>
 
@@ -4544,7 +4544,7 @@ The hostname or IP address of the origin server to run health checks on.
 
 <summary>
 
-check\_regions: optional array of "WNAM"or "ENAM"or "WEU"or 11 more
+check\_regions: optional array of "WNAM" or "ENAM" or "WEU" or 11 more
 
 A list of regions from which to run health checks. Null means Cloudflare will pick a default region.
 
@@ -4646,7 +4646,7 @@ The current failure reason if status is unhealthy.
 
 <summary>
 
-http\_config: optional object {allow\_insecure, expected\_body, expected\_codes, 5 more }
+http\_config: optional object { allow\_insecure, expected\_body, expected\_codes, 5 more }
 
 Parameters specific to an HTTP or HTTPS health check.
 
@@ -4686,7 +4686,7 @@ The HTTP request headers to send in the health check. It is recommended you set 
 
 <summary>
 
-method: optional "GET"or "HEAD"
+method: optional "GET" or "HEAD"
 
 The HTTP method to use for the health check.
 
@@ -4750,7 +4750,7 @@ The number of retries to attempt in case of a timeout before marking the origin 
 
 <summary>
 
-status: optional "unknown"or "healthy"or "unhealthy"or "suspended"
+status: optional "unknown" or "healthy" or "unhealthy" or "suspended"
 
 The current status of the origin server according to the health check.
 
@@ -4788,7 +4788,7 @@ If suspended, no health checks are sent to the origin.
 
 <summary>
 
-tcp\_config: optional object {method, port }
+tcp\_config: optional object { method, port }
 
 Parameters specific to TCP health check.
 
@@ -4830,7 +4830,7 @@ The protocol to use for the health check. Currently supported protocols are ‘H
 
 <summary>
 
-object {id, address, check\_regions, 15 more }
+object { id, address, check\_regions, 15 more }
 
 </summary>
 
@@ -4852,7 +4852,7 @@ The hostname or IP address of the origin server to run health checks on.
 
 <summary>
 
-check\_regions: optional array of "WNAM"or "ENAM"or "WEU"or 11 more
+check\_regions: optional array of "WNAM" or "ENAM" or "WEU" or 11 more
 
 A list of regions from which to run health checks. Null means Cloudflare will pick a default region.
 
@@ -4954,7 +4954,7 @@ The current failure reason if status is unhealthy.
 
 <summary>
 
-http\_config: optional object {allow\_insecure, expected\_body, expected\_codes, 5 more }
+http\_config: optional object { allow\_insecure, expected\_body, expected\_codes, 5 more }
 
 Parameters specific to an HTTP or HTTPS health check.
 
@@ -4994,7 +4994,7 @@ The HTTP request headers to send in the health check. It is recommended you set 
 
 <summary>
 
-method: optional "GET"or "HEAD"
+method: optional "GET" or "HEAD"
 
 The HTTP method to use for the health check.
 
@@ -5058,7 +5058,7 @@ The number of retries to attempt in case of a timeout before marking the origin 
 
 <summary>
 
-status: optional "unknown"or "healthy"or "unhealthy"or "suspended"
+status: optional "unknown" or "healthy" or "unhealthy" or "suspended"
 
 The current status of the origin server according to the health check.
 
@@ -5096,7 +5096,7 @@ If suspended, no health checks are sent to the origin.
 
 <summary>
 
-tcp\_config: optional object {method, port }
+tcp\_config: optional object { method, port }
 
 Parameters specific to TCP health check.
 
@@ -5142,7 +5142,7 @@ The protocol to use for the health check. Currently supported protocols are ‘H
 
 <summary>
 
-HealthCheckDeleteResponse = object {id } or object {id } or object {id }
+HealthCheckDeleteResponse = object { id } or object { id } or object { id }
 
 </summary>
 
@@ -5152,7 +5152,7 @@ One of the following:
 
 <summary>
 
-ID object {id }
+ID object { id }
 
 </summary>
 
@@ -5172,7 +5172,7 @@ maxLength32
 
 <summary>
 
-ID object {id }
+ID object { id }
 
 </summary>
 
@@ -5192,7 +5192,7 @@ maxLength32
 
 <summary>
 
-ID object {id }
+ID object { id }
 
 </summary>
 
@@ -5228,7 +5228,7 @@ POST/zones/{zone\_id}/smart\_shield/cache\_reserve\_clear
 
 <summary>
 
-CacheReserveClearStatusResponse = object {id, end\_ts, modified\_on, 2 more } or object {id, end\_ts, modified\_on, 2 more } or object {id, end\_ts, modified\_on, 2 more }
+CacheReserveClearStatusResponse = object { id, end\_ts, modified\_on, 2 more } or object { id, end\_ts, modified\_on, 2 more } or object { id, end\_ts, modified\_on, 2 more }
 
 </summary>
 
@@ -5238,7 +5238,7 @@ One of the following:
 
 <summary>
 
-object {id, end\_ts, modified\_on, 2 more }
+object { id, end\_ts, modified\_on, 2 more }
 
 </summary>
 
@@ -5276,7 +5276,7 @@ formatdate-time
 
 <summary>
 
-state: optional "In-progress"or "Completed"
+state: optional "In-progress" or "Completed"
 
 The current state of the Cache Reserve Clear operation.
 
@@ -5304,7 +5304,7 @@ One of the following:
 
 <summary>
 
-object {id, end\_ts, modified\_on, 2 more }
+object { id, end\_ts, modified\_on, 2 more }
 
 </summary>
 
@@ -5342,7 +5342,7 @@ formatdate-time
 
 <summary>
 
-state: optional "In-progress"or "Completed"
+state: optional "In-progress" or "Completed"
 
 The current state of the Cache Reserve Clear operation.
 
@@ -5370,7 +5370,7 @@ One of the following:
 
 <summary>
 
-object {id, end\_ts, modified\_on, 2 more }
+object { id, end\_ts, modified\_on, 2 more }
 
 </summary>
 
@@ -5408,7 +5408,7 @@ formatdate-time
 
 <summary>
 
-state: optional "In-progress"or "Completed"
+state: optional "In-progress" or "Completed"
 
 The current state of the Cache Reserve Clear operation.
 
@@ -5440,7 +5440,7 @@ One of the following:
 
 <summary>
 
-CacheReserveClearClearResponse = object {id, end\_ts, modified\_on, 2 more } or object {id, end\_ts, modified\_on, 2 more } or object {id, end\_ts, modified\_on, 2 more }
+CacheReserveClearClearResponse = object { id, end\_ts, modified\_on, 2 more } or object { id, end\_ts, modified\_on, 2 more } or object { id, end\_ts, modified\_on, 2 more }
 
 </summary>
 
@@ -5450,7 +5450,7 @@ One of the following:
 
 <summary>
 
-object {id, end\_ts, modified\_on, 2 more }
+object { id, end\_ts, modified\_on, 2 more }
 
 </summary>
 
@@ -5488,7 +5488,7 @@ formatdate-time
 
 <summary>
 
-state: optional "In-progress"or "Completed"
+state: optional "In-progress" or "Completed"
 
 The current state of the Cache Reserve Clear operation.
 
@@ -5516,7 +5516,7 @@ One of the following:
 
 <summary>
 
-object {id, end\_ts, modified\_on, 2 more }
+object { id, end\_ts, modified\_on, 2 more }
 
 </summary>
 
@@ -5554,7 +5554,7 @@ formatdate-time
 
 <summary>
 
-state: optional "In-progress"or "Completed"
+state: optional "In-progress" or "Completed"
 
 The current state of the Cache Reserve Clear operation.
 
@@ -5582,7 +5582,7 @@ One of the following:
 
 <summary>
 
-object {id, end\_ts, modified\_on, 2 more }
+object { id, end\_ts, modified\_on, 2 more }
 
 </summary>
 
@@ -5620,7 +5620,7 @@ formatdate-time
 
 <summary>
 
-state: optional "In-progress"or "Completed"
+state: optional "In-progress" or "Completed"
 
 The current state of the Cache Reserve Clear operation.
 

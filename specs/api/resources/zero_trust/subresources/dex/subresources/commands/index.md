@@ -34,7 +34,7 @@ POST/accounts/{account\_id}/dex/commands
 
 <summary>
 
-CommandListResponse object {commands }
+CommandListResponse object { commands }
 
 </summary>
 
@@ -42,7 +42,7 @@ CommandListResponse object {commands }
 
 <summary>
 
-commands: optional array of object {id, completed\_date, created\_date, 6 more }
+commands: optional array of object { id, completed\_date, created\_date, 6 more }
 
 </summary>
 
@@ -100,7 +100,7 @@ user\_email: optional string
 
 <summary>
 
-CommandCreateResponse object {commands }
+CommandCreateResponse object { commands }
 
 </summary>
 
@@ -108,7 +108,7 @@ CommandCreateResponse object {commands }
 
 <summary>
 
-commands: optional array of object {id, args, device\_id, 3 more }
+commands: optional array of object { id, args, device\_id, 3 more }
 
 List of created commands
 
@@ -142,7 +142,7 @@ Unique identifier for the device registration
 
 <summary>
 
-status: optional "PENDING\_EXEC"or "PENDING\_UPLOAD"or "SUCCESS"or "FAILED"
+status: optional "PENDING\_EXEC" or "PENDING\_UPLOAD" or "SUCCESS" or "FAILED"
 
 Current status of the command
 
@@ -196,7 +196,7 @@ GET/accounts/{account\_id}/dex/commands/devices
 
 <summary>
 
-DeviceListResponse object {devices }
+DeviceListResponse object { devices }
 
 </summary>
 
@@ -204,7 +204,7 @@ DeviceListResponse object {devices }
 
 <summary>
 
-devices: optional array of object {deviceId, deviceName, eligible, 7 more }
+devices: optional array of object { deviceId, deviceName, eligible, 7 more }
 
 List of eligible devices
 
@@ -294,7 +294,7 @@ GET/accounts/{account\_id}/dex/commands/quota
 
 <summary>
 
-QuotaGetResponse object {quota, quota\_usage, reset\_time }
+QuotaGetResponse object { quota, quota\_usage, reset\_time }
 
 </summary>
 

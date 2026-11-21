@@ -66,7 +66,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -110,7 +110,7 @@ minimum0
 
 <summary>
 
-result: object {certificateAuthorities }
+result: object { certificateAuthorities }
 
 </summary>
 
@@ -118,7 +118,7 @@ result: object {certificateAuthorities }
 
 <summary>
 
-certificateAuthorities: array of object {certificateRecordType, country, countryName, 6 more }
+certificateAuthorities: array of object { certificateRecordType, country, countryName, 6 more }
 
 </summary>
 
@@ -126,7 +126,7 @@ certificateAuthorities: array of object {certificateRecordType, country, country
 
 <summary>
 
-certificateRecordType: "ROOT\_CERTIFICATE"or "INTERMEDIATE\_CERTIFICATE"
+certificateRecordType: "ROOT\_CERTIFICATE" or "INTERMEDIATE\_CERTIFICATE"
 
 Specifies the type of certificate in the trust chain.
 
@@ -186,7 +186,7 @@ The SHA-256 fingerprint of the parent certificate.
 
 <summary>
 
-revocationStatus: "NOT\_REVOKED"or "REVOKED"or "PARENT\_CERT\_REVOKED"
+revocationStatus: "NOT\_REVOKED" or "REVOKED" or "PARENT\_CERT\_REVOKED"
 
 The current revocation status of a Certificate Authority (CA) certificate.
 

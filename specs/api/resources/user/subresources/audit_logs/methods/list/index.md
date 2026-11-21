@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Account Settings Write``Account Settings Read`
+`Audit Logs Read``Account Settings Write``Account Settings Read`
 
 ##### Q uery ParametersExpand Collapse
 
@@ -70,7 +70,7 @@ Finds a specific log by its ID.
 
 <summary>
 
-action: optional object {type }
+action: optional object { type }
 
 </summary>
 
@@ -88,7 +88,7 @@ Filters by the action type.
 
 <summary>
 
-actor: optional object {email, ip }
+actor: optional object { email, ip }
 
 </summary>
 
@@ -114,7 +114,7 @@ Filters by the IP address of the request that made the change by specific IP add
 
 <summary>
 
-before: optional stringor string
+before: optional string or string
 
 Limits the returned results to logs older than the specified date. A <code>full-date</code> that conforms to RFC3339.
 
@@ -142,7 +142,7 @@ Limits the returned results to logs older than the specified date. A <code>date-
 
 <summary>
 
-direction: optional "desc"or "asc"
+direction: optional "desc" or "asc"
 
 Changes the direction of the chronological sorting.
 
@@ -196,7 +196,7 @@ minimum1
 
 <summary>
 
-since: optional stringor string
+since: optional string or string
 
 Limits the returned results to logs newer than the specified date. A <code>full-date</code> that conforms to RFC3339.
 
@@ -224,7 +224,7 @@ Limits the returned results to logs newer than the specified date. A <code>date-
 
 <summary>
 
-zone: optional object {name }
+zone: optional object { name }
 
 </summary>
 
@@ -244,7 +244,7 @@ Filters by the name of the zone associated to the change.
 
 <summary>
 
-object {errors, messages, result, success }
+object { errors, messages, result, success }
 
 </summary>
 
@@ -274,7 +274,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -316,7 +316,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -350,7 +350,7 @@ A string that uniquely identifies the audit log.
 
 <summary>
 
-action: optional object {result, type }
+action: optional object { result, type }
 
 </summary>
 
@@ -374,7 +374,7 @@ A short string that describes the action that was performed.
 
 <summary>
 
-actor: optional object {id, email, ip, type }
+actor: optional object { id, email, ip, type }
 
 </summary>
 
@@ -402,7 +402,7 @@ The IP address of the request that performed the action.
 
 <summary>
 
-type: optional "user"or "admin"or "Cloudflare"
+type: optional "user" or "admin" or "Cloudflare"
 
 The type of actor, whether a User, Cloudflare Admin, or an Automated System.
 
@@ -458,7 +458,7 @@ The value of the resource before it was modified.
 
 <summary>
 
-owner: optional object {id }
+owner: optional object { id }
 
 </summary>
 
@@ -478,7 +478,7 @@ maxLength32
 
 <summary>
 
-resource: optional object {id, type }
+resource: optional object { id, type }
 
 </summary>
 
@@ -522,7 +522,7 @@ success: optional boolean
 
 <summary>
 
-AaaAPIResponseCommon object {errors, messages, success }
+AaaAPIResponseCommon object { errors, messages, success }
 
 </summary>
 
@@ -552,7 +552,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -594,7 +594,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 

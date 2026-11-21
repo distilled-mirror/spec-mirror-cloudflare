@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Zone Settings Write`
+`Zone Settings Write``Workers Routes Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -80,7 +80,7 @@ A URL.
 
 <summary>
 
-region: optional "asia-east1"or "asia-northeast1"or "asia-northeast2"or 18 more
+region: optional "asia-east1" or "asia-northeast1" or "asia-northeast2" or 18 more
 
 A test region.
 
@@ -204,7 +204,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -246,7 +246,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -272,7 +272,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {count }
+result: optional object { count }
 
 </summary>
 

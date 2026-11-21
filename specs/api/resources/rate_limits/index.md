@@ -52,7 +52,7 @@ DELETE/zones/{zone\_id}/rate\_limits/{rate\_limit\_id}
 
 <summary>
 
-Action = "block"or "challenge"or "js\_challenge"or 4 more
+Action = "block" or "challenge" or "js\_challenge" or 4 more
 
 The action to apply to a matched request. The <code>log</code> action is only available on an Enterprise plan.
 

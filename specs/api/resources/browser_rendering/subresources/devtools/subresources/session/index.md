@@ -34,7 +34,7 @@ GET/accounts/{account\_id}/browser-rendering/devtools/session/{session\_id}
 
 <summary>
 
-SessionListResponse = array of object {sessionId, closeReason, closeReasonText, 8 more }
+SessionListResponse = array of object { sessionId, closeReason, closeReasonText, 8 more }
 
 </summary>
 
@@ -114,7 +114,7 @@ WebSocket URL for debugging this target.
 
 <summary>
 
-SessionGetResponse object {sessionId, closeReason, closeReasonText, 8 more }
+SessionGetResponse object { sessionId, closeReason, closeReasonText, 8 more }
 
 </summary>
 

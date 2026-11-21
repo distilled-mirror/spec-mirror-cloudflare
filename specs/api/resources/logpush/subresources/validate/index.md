@@ -36,7 +36,7 @@ POST/{accounts\_or\_zones}/{account\_or\_zone\_id}/logpush/validate/origin
 
 <summary>
 
-ValidateDestinationResponse object {message, valid }
+ValidateDestinationResponse object { message, valid }
 
 </summary>
 
@@ -56,7 +56,7 @@ valid: optional boolean
 
 <summary>
 
-ValidateDestinationExistsResponse object {exists }
+ValidateDestinationExistsResponse object { exists }
 
 </summary>
 
@@ -72,7 +72,7 @@ exists: optional boolean
 
 <summary>
 
-ValidateOriginResponse object {message, valid }
+ValidateOriginResponse object { message, valid }
 
 </summary>
 

@@ -48,7 +48,7 @@ DELETE/accounts/{account\_id}/dns\_settings/views/{view\_id}
 
 <summary>
 
-ViewListResponse object {id, created\_time, modified\_time, 2 more }
+ViewListResponse object { id, created\_time, modified\_time, 2 more }
 
 </summary>
 
@@ -100,7 +100,7 @@ The list of zones linked to this view.
 
 <summary>
 
-ViewGetResponse object {id, created\_time, modified\_time, 2 more }
+ViewGetResponse object { id, created\_time, modified\_time, 2 more }
 
 </summary>
 
@@ -152,7 +152,7 @@ The list of zones linked to this view.
 
 <summary>
 
-ViewCreateResponse object {id, created\_time, modified\_time, 2 more }
+ViewCreateResponse object { id, created\_time, modified\_time, 2 more }
 
 </summary>
 
@@ -204,7 +204,7 @@ The list of zones linked to this view.
 
 <summary>
 
-ViewEditResponse object {id, created\_time, modified\_time, 2 more }
+ViewEditResponse object { id, created\_time, modified\_time, 2 more }
 
 </summary>
 
@@ -256,7 +256,7 @@ The list of zones linked to this view.
 
 <summary>
 
-ViewDeleteResponse object {id }
+ViewDeleteResponse object { id }
 
 </summary>
 

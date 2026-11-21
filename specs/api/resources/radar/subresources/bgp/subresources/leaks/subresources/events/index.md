@@ -32,7 +32,7 @@ GET/radar/bgp/leaks/events
 
 <summary>
 
-EventListResponse object {asn\_info, events }
+EventListResponse object { asn\_info, events }
 
 </summary>
 
@@ -40,7 +40,7 @@ EventListResponse object {asn\_info, events }
 
 <summary>
 
-asn\_info: array of object {asn, country\_code, org\_name }
+asn\_info: array of object { asn, country\_code, org\_name }
 
 </summary>
 
@@ -64,7 +64,7 @@ org\_name: string
 
 <summary>
 
-events: array of object {id, countries, detected\_ts, 10 more }
+events: array of object { id, countries, detected\_ts, 10 more }
 
 </summary>
 

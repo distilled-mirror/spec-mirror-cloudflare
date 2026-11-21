@@ -34,7 +34,7 @@ DELETE/accounts/{account\_id}/custom\_ns/{custom\_ns\_id}
 
 <summary>
 
-CustomNameserver object {dns\_records, ns\_name, status, 2 more }
+CustomNameserver object { dns\_records, ns\_name, status, 2 more }
 
 A single account custom nameserver.
 
@@ -44,7 +44,7 @@ A single account custom nameserver.
 
 <summary>
 
-dns\_records: array of object {type, value }
+dns\_records: array of object { type, value }
 
 A and AAAA records associated with the nameserver.
 
@@ -54,7 +54,7 @@ A and AAAA records associated with the nameserver.
 
 <summary>
 
-type: optional "A"or "AAAA"
+type: optional "A" or "AAAA"
 
 DNS record type.
 
@@ -96,7 +96,7 @@ formathostname
 
 <summary>
 
-Deprecatedstatus: "moved"or "pending"or "verified"
+Deprecatedstatus: "moved" or "pending" or "verified"
 
 Verification status of the nameserver.
 

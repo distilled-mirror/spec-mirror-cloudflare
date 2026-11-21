@@ -28,7 +28,7 @@ GET/accounts/{account\_id}/intel/ip
 
 <summary>
 
-IP object {belongs\_to\_ref, ip, risk\_types }
+IP object { belongs\_to\_ref, ip, risk\_types }
 
 </summary>
 
@@ -36,7 +36,7 @@ IP object {belongs\_to\_ref, ip, risk\_types }
 
 <summary>
 
-belongs\_to\_ref: optional object {id, country, description, 2 more }
+belongs\_to\_ref: optional object { id, country, description, 2 more }
 
 Specifies a reference to the autonomous systems (AS) that the IP address belongs to.
 
@@ -58,7 +58,7 @@ description: optional string
 
 <summary>
 
-type: optional "hosting\_provider"or "isp"or "organization"
+type: optional "hosting\_provider" or "isp" or "organization"
 
 Infrastructure type of this ASN.
 
@@ -100,7 +100,7 @@ formatipv4
 
 <summary>
 
-risk\_types: optional array of object {id, name, super\_category\_id }
+risk\_types: optional array of object { id, name, super\_category\_id }
 
 </summary>
 
@@ -136,7 +136,7 @@ IPGetResponse = array of <a href="https://developers.cloudflare.com/api/resource
 
 <summary>
 
-belongs\_to\_ref: optional object {id, country, description, 2 more }
+belongs\_to\_ref: optional object { id, country, description, 2 more }
 
 Specifies a reference to the autonomous systems (AS) that the IP address belongs to.
 
@@ -158,7 +158,7 @@ description: optional string
 
 <summary>
 
-type: optional "hosting\_provider"or "isp"or "organization"
+type: optional "hosting\_provider" or "isp" or "organization"
 
 Infrastructure type of this ASN.
 
@@ -200,7 +200,7 @@ formatipv4
 
 <summary>
 
-risk\_types: optional array of object {id, name, super\_category\_id }
+risk\_types: optional array of object { id, name, super\_category\_id }
 
 </summary>
 

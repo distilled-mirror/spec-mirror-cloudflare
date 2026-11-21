@@ -72,7 +72,7 @@ formatipv4
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -98,7 +98,7 @@ One of the following:
 
 <summary>
 
-result: object {ip }
+result: object { ip }
 
 </summary>
 
@@ -106,7 +106,7 @@ result: object {ip }
 
 <summary>
 
-ip: object {asn, asnLocation, asnName, 5 more }
+ip: object { asn, asnLocation, asnName, 5 more }
 
 </summary>
 

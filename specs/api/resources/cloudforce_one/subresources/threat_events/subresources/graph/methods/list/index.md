@@ -116,7 +116,7 @@ messages: array of map\[unknown]
 
 <summary>
 
-result: object {edges, node, nodes }
+result: object { edges, node, nodes }
 
 </summary>
 
@@ -124,7 +124,7 @@ result: object {edges, node, nodes }
 
 <summary>
 
-edges: array of object {id, relationshipType, source, 5 more }
+edges: array of object { id, relationshipType, source, 5 more }
 
 </summary>
 
@@ -192,7 +192,7 @@ success: boolean
 
 <summary>
 
-result\_info: optional object {count, edge\_count, query\_time\_ms, 6 more }
+result\_info: optional object { count, edge\_count, query\_time\_ms, 6 more }
 
 </summary>
 

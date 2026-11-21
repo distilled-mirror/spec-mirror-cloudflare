@@ -44,7 +44,7 @@ DELETE/accounts/{account\_id}/ai-gateway/billing/spending-limit
 
 <summary>
 
-SpendingLimitGetResponse object {config, enabled }
+SpendingLimitGetResponse object { config, enabled }
 
 </summary>
 
@@ -52,7 +52,7 @@ SpendingLimitGetResponse object {config, enabled }
 
 <summary>
 
-config: object {amount, duration, strategy }
+config: object { amount, duration, strategy }
 
 Spending limit configuration.
 

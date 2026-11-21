@@ -60,7 +60,7 @@ Array of dataset IDs to query target industries from. If not provided, uses the 
 
 <summary>
 
-items: object {type }
+items: object { type }
 
 </summary>
 

@@ -28,7 +28,7 @@ GET/accounts/{account\_id}/intel/whois
 
 <summary>
 
-WhoisGetResponse object {dnssec, domain, extension, 84 more }
+WhoisGetResponse object { dnssec, domain, extension, 84 more }
 
 </summary>
 

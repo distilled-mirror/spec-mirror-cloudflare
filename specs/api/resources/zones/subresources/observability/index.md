@@ -40,7 +40,7 @@ DELETE/zones/{zone\_id}/observability/tracing/settings
 
 <summary>
 
-SettingGetResponse object {destinations, enabled, forward\_context, 3 more }
+SettingGetResponse object { destinations, enabled, forward\_context, 3 more }
 
 </summary>
 
@@ -72,7 +72,7 @@ Whether traces are persisted in Cloudflare.
 
 <summary>
 
-propagation\_policy: "accept"or "authenticated"or "reject"
+propagation\_policy: "accept" or "authenticated" or "reject"
 
 When inbound trace context may be continued. Authenticated propagation is not supported yet.
 
@@ -114,7 +114,7 @@ minimum0
 
 <summary>
 
-SettingUpdateResponse object {destinations, enabled, forward\_context, 3 more }
+SettingUpdateResponse object { destinations, enabled, forward\_context, 3 more }
 
 </summary>
 
@@ -146,7 +146,7 @@ Whether traces are persisted in Cloudflare.
 
 <summary>
 
-propagation\_policy: "accept"or "authenticated"or "reject"
+propagation\_policy: "accept" or "authenticated" or "reject"
 
 When inbound trace context may be continued. Authenticated propagation is not supported yet.
 
@@ -188,7 +188,7 @@ minimum0
 
 <summary>
 
-SettingDeleteResponse object {destinations, enabled, forward\_context, 3 more }
+SettingDeleteResponse object { destinations, enabled, forward\_context, 3 more }
 
 </summary>
 
@@ -220,7 +220,7 @@ Whether traces are persisted in Cloudflare.
 
 <summary>
 
-propagation\_policy: "accept"or "authenticated"or "reject"
+propagation\_policy: "accept" or "authenticated" or "reject"
 
 When inbound trace context may be continued. Authenticated propagation is not supported yet.
 
@@ -278,7 +278,7 @@ DELETE/zones/{zone\_id}/observability/tracing/rules
 
 <summary>
 
-RuleGetResponse object {rules }
+RuleGetResponse object { rules }
 
 </summary>
 
@@ -286,7 +286,7 @@ RuleGetResponse object {rules }
 
 <summary>
 
-rules: array of object {action, action\_parameters, description, 2 more }
+rules: array of object { action, action\_parameters, description, 2 more }
 
 Trace rules in evaluation order.
 
@@ -300,7 +300,7 @@ action: "set\_trace\_settings"
 
 <summary>
 
-action\_parameters: object {sampling\_ratio }
+action\_parameters: object { sampling\_ratio }
 
 </summary>
 
@@ -350,7 +350,7 @@ minLength1
 
 <summary>
 
-RuleUpdateResponse object {rules }
+RuleUpdateResponse object { rules }
 
 </summary>
 
@@ -358,7 +358,7 @@ RuleUpdateResponse object {rules }
 
 <summary>
 
-rules: array of object {action, action\_parameters, description, 2 more }
+rules: array of object { action, action\_parameters, description, 2 more }
 
 Trace rules in evaluation order.
 
@@ -372,7 +372,7 @@ action: "set\_trace\_settings"
 
 <summary>
 
-action\_parameters: object {sampling\_ratio }
+action\_parameters: object { sampling\_ratio }
 
 </summary>
 
@@ -422,7 +422,7 @@ minLength1
 
 <summary>
 
-RuleDeleteResponse object {rules }
+RuleDeleteResponse object { rules }
 
 </summary>
 
@@ -430,7 +430,7 @@ RuleDeleteResponse object {rules }
 
 <summary>
 
-rules: array of object {action, action\_parameters, description, 2 more }
+rules: array of object { action, action\_parameters, description, 2 more }
 
 Trace rules in evaluation order.
 
@@ -444,7 +444,7 @@ action: "set\_trace\_settings"
 
 <summary>
 
-action\_parameters: object {sampling\_ratio }
+action\_parameters: object { sampling\_ratio }
 
 </summary>
 

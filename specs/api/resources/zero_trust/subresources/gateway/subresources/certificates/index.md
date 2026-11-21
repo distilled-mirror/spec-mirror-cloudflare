@@ -50,7 +50,7 @@ POST/accounts/{account\_id}/gateway/certificates/{certificate\_id}/deactivate
 
 <summary>
 
-CertificateListResponse object {id, binding\_status, certificate, 10 more }
+CertificateListResponse object { id, binding\_status, certificate, 10 more }
 
 </summary>
 
@@ -66,7 +66,7 @@ maxLength36
 
 <summary>
 
-binding\_status: optional "pending\_deployment"or "available"or "pending\_deletion"or "inactive"
+binding\_status: optional "pending\_deployment" or "available" or "pending\_deletion" or "inactive"
 
 Indicate the read-only deployment status of the certificate on Cloudflare’s edge. Gateway TLS interception can use certificates in the ‘available’ (previously called ‘active’) state.
 
@@ -146,7 +146,7 @@ Indicate the read-only Data Localization Suite region the certificate authority�
 
 <summary>
 
-type: optional "custom"or "gateway\_managed"
+type: optional "custom" or "gateway\_managed"
 
 Indicate the read-only certificate type, BYO-PKI (custom) or Gateway-managed.
 
@@ -186,7 +186,7 @@ formatdate-time
 
 <summary>
 
-CertificateGetResponse object {id, binding\_status, certificate, 10 more }
+CertificateGetResponse object { id, binding\_status, certificate, 10 more }
 
 </summary>
 
@@ -202,7 +202,7 @@ maxLength36
 
 <summary>
 
-binding\_status: optional "pending\_deployment"or "available"or "pending\_deletion"or "inactive"
+binding\_status: optional "pending\_deployment" or "available" or "pending\_deletion" or "inactive"
 
 Indicate the read-only deployment status of the certificate on Cloudflare’s edge. Gateway TLS interception can use certificates in the ‘available’ (previously called ‘active’) state.
 
@@ -282,7 +282,7 @@ Indicate the read-only Data Localization Suite region the certificate authority�
 
 <summary>
 
-type: optional "custom"or "gateway\_managed"
+type: optional "custom" or "gateway\_managed"
 
 Indicate the read-only certificate type, BYO-PKI (custom) or Gateway-managed.
 
@@ -322,7 +322,7 @@ formatdate-time
 
 <summary>
 
-CertificateCreateResponse object {id, binding\_status, certificate, 10 more }
+CertificateCreateResponse object { id, binding\_status, certificate, 10 more }
 
 </summary>
 
@@ -338,7 +338,7 @@ maxLength36
 
 <summary>
 
-binding\_status: optional "pending\_deployment"or "available"or "pending\_deletion"or "inactive"
+binding\_status: optional "pending\_deployment" or "available" or "pending\_deletion" or "inactive"
 
 Indicate the read-only deployment status of the certificate on Cloudflare’s edge. Gateway TLS interception can use certificates in the ‘available’ (previously called ‘active’) state.
 
@@ -418,7 +418,7 @@ Indicate the read-only Data Localization Suite region the certificate authority�
 
 <summary>
 
-type: optional "custom"or "gateway\_managed"
+type: optional "custom" or "gateway\_managed"
 
 Indicate the read-only certificate type, BYO-PKI (custom) or Gateway-managed.
 
@@ -458,7 +458,7 @@ formatdate-time
 
 <summary>
 
-CertificateDeleteResponse object {id, binding\_status, certificate, 10 more }
+CertificateDeleteResponse object { id, binding\_status, certificate, 10 more }
 
 </summary>
 
@@ -474,7 +474,7 @@ maxLength36
 
 <summary>
 
-binding\_status: optional "pending\_deployment"or "available"or "pending\_deletion"or "inactive"
+binding\_status: optional "pending\_deployment" or "available" or "pending\_deletion" or "inactive"
 
 Indicate the read-only deployment status of the certificate on Cloudflare’s edge. Gateway TLS interception can use certificates in the ‘available’ (previously called ‘active’) state.
 
@@ -554,7 +554,7 @@ Indicate the read-only Data Localization Suite region the certificate authority�
 
 <summary>
 
-type: optional "custom"or "gateway\_managed"
+type: optional "custom" or "gateway\_managed"
 
 Indicate the read-only certificate type, BYO-PKI (custom) or Gateway-managed.
 
@@ -594,7 +594,7 @@ formatdate-time
 
 <summary>
 
-CertificateActivateResponse object {id, binding\_status, certificate, 10 more }
+CertificateActivateResponse object { id, binding\_status, certificate, 10 more }
 
 </summary>
 
@@ -610,7 +610,7 @@ maxLength36
 
 <summary>
 
-binding\_status: optional "pending\_deployment"or "available"or "pending\_deletion"or "inactive"
+binding\_status: optional "pending\_deployment" or "available" or "pending\_deletion" or "inactive"
 
 Indicate the read-only deployment status of the certificate on Cloudflare’s edge. Gateway TLS interception can use certificates in the ‘available’ (previously called ‘active’) state.
 
@@ -690,7 +690,7 @@ Indicate the read-only Data Localization Suite region the certificate authority�
 
 <summary>
 
-type: optional "custom"or "gateway\_managed"
+type: optional "custom" or "gateway\_managed"
 
 Indicate the read-only certificate type, BYO-PKI (custom) or Gateway-managed.
 
@@ -730,7 +730,7 @@ formatdate-time
 
 <summary>
 
-CertificateDeactivateResponse object {id, binding\_status, certificate, 10 more }
+CertificateDeactivateResponse object { id, binding\_status, certificate, 10 more }
 
 </summary>
 
@@ -746,7 +746,7 @@ maxLength36
 
 <summary>
 
-binding\_status: optional "pending\_deployment"or "available"or "pending\_deletion"or "inactive"
+binding\_status: optional "pending\_deployment" or "available" or "pending\_deletion" or "inactive"
 
 Indicate the read-only deployment status of the certificate on Cloudflare’s edge. Gateway TLS interception can use certificates in the ‘available’ (previously called ‘active’) state.
 
@@ -826,7 +826,7 @@ Indicate the read-only Data Localization Suite region the certificate authority�
 
 <summary>
 
-type: optional "custom"or "gateway\_managed"
+type: optional "custom" or "gateway\_managed"
 
 Indicate the read-only certificate type, BYO-PKI (custom) or Gateway-managed.
 

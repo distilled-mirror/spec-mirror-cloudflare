@@ -88,7 +88,7 @@ Specify the zone ID.
 
 <summary>
 
-errors: array of object {message }
+errors: array of object { message }
 
 </summary>
 
@@ -104,7 +104,7 @@ message: string
 
 <summary>
 
-messages: array of object {message }
+messages: array of object { message }
 
 </summary>
 
@@ -120,7 +120,7 @@ message: "Successful request"
 
 <summary>
 
-result: object {rules }
+result: object { rules }
 
 </summary>
 
@@ -128,7 +128,7 @@ result: object {rules }
 
 <summary>
 
-rules: array of object {action, action\_parameters, description, 2 more }
+rules: array of object { action, action\_parameters, description, 2 more }
 
 Trace rules in evaluation order.
 
@@ -142,7 +142,7 @@ action: "set\_trace\_settings"
 
 <summary>
 
-action\_parameters: object {sampling\_ratio }
+action\_parameters: object { sampling\_ratio }
 
 </summary>
 

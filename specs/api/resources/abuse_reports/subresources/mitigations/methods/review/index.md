@@ -57,7 +57,7 @@ report\_id: string
 
 <summary>
 
-appeals: optional array of object {id, reason }
+appeals: optional array of object { id, reason }
 
 List of mitigations to appeal.
 
@@ -73,7 +73,7 @@ ID of the mitigation to appeal.
 
 <summary>
 
-reason: "removed"or "misclassified"
+reason: "removed" or "misclassified"
 
 Reason why the customer is appealing.
 
@@ -101,7 +101,7 @@ One of the following:
 
 <summary>
 
-data: optional object {city, country, email, 11 more }
+data: optional object { city, country, email, 11 more }
 
 Counter-notice details supporting an appeal.
 
@@ -181,7 +181,7 @@ maxLength5000
 
 <summary>
 
-type: optional "counter\_notice"or "content\_removed"
+type: optional "counter\_notice" or "content\_removed"
 
 The type of appeal being submitted.
 
@@ -207,7 +207,7 @@ One of the following:
 
 <summary>
 
-result\_info: object {count, page, per\_page, 2 more }
+result\_info: object { count, page, per\_page, 2 more }
 
 </summary>
 
@@ -243,7 +243,7 @@ success: boolean
 
 <summary>
 
-errors: optional array of object {message }
+errors: optional array of object { message }
 
 </summary>
 
@@ -259,7 +259,7 @@ message: string
 
 <summary>
 
-messages: optional array of object {message }
+messages: optional array of object { message }
 
 </summary>
 
@@ -275,7 +275,7 @@ message: string
 
 <summary>
 
-result: optional array of object {id, effective\_date, entity\_id, 3 more }
+result: optional array of object { id, effective\_date, entity\_id, 3 more }
 
 </summary>
 
@@ -299,7 +299,7 @@ entity\_id: string
 
 <summary>
 
-entity\_type: "url\_pattern"or "account"or "zone"or 2 more
+entity\_type: "url\_pattern" or "account" or "zone" or 2 more
 
 The type of entity targeted by a mitigation.
 
@@ -335,7 +335,7 @@ One of the following:
 
 <summary>
 
-status: "pending"or "active"or "in\_review"or 2 more
+status: "pending" or "active" or "in\_review" or 2 more
 
 The status of a mitigation
 

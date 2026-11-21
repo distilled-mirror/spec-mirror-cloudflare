@@ -64,7 +64,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 <summary>
 
-botCategory: optional "ACADEMIC\_RESEARCH"or "ADVERTISING\_AND\_MARKETING"or "AI\_ASSISTANT"or 15 more
+botCategory: optional "ACADEMIC\_RESEARCH" or "ADVERTISING\_AND\_MARKETING" or "AI\_ASSISTANT" or 15 more
 
 Filters results by bot category. <code>ACCESSIBILITY</code>, <code>AGGREGATOR</code>, <code>AI_SEARCH</code>, <code>ARCHIVER</code>, <code>SOCIAL_MEDIA_MARKETING</code> and <code>WEBHOOKS</code> are deprecated legacy categories that match only that exact category.
 
@@ -166,7 +166,7 @@ Filters results by bot verification status.
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -190,7 +190,7 @@ One of the following:
 
 <summary>
 
-kind: optional "AGENT"or "BOT"
+kind: optional "AGENT" or "BOT"
 
 Filters results by bot kind. Deprecated: the Verified Bot / Signed Agent distinction is being removed.
 
@@ -234,7 +234,7 @@ minimum0
 
 <summary>
 
-result: object {bots }
+result: object { bots }
 
 </summary>
 
@@ -242,7 +242,7 @@ result: object {bots }
 
 <summary>
 
-bots: array of object {accessLevel, categories, category, 7 more }
+bots: array of object { accessLevel, categories, category, 7 more }
 
 </summary>
 

@@ -70,7 +70,7 @@ Used when interacting with the Origin CA certificates API. <a href="https://deve
 
 ##### Accepted Permissions (at least one required)
 
-`Workers Observability Write``Workers Observability Read`
+`Workers Metadata Read-Only``Workers Observability Write``Workers Observability Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -90,7 +90,7 @@ service: optional string
 
 <summary>
 
-errors: array of object {message }
+errors: array of object { message }
 
 </summary>
 
@@ -106,7 +106,7 @@ message: string
 
 <summary>
 
-messages: array of object {message }
+messages: array of object { message }
 
 </summary>
 
@@ -122,7 +122,7 @@ message: "Successful request"
 
 <summary>
 
-result: object {activeIssues, activeOccurrences, lastIssue, resolvedIssues }
+result: object { activeIssues, activeOccurrences, lastIssue, resolvedIssues }
 
 </summary>
 

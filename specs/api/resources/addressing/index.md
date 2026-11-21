@@ -44,7 +44,7 @@ DELETE/zones/{zone\_id}/addressing/regional\_hostnames/{hostname}
 
 <summary>
 
-RegionalHostnameListResponse object {created\_on, hostname, region\_key, routing }
+RegionalHostnameListResponse object { created\_on, hostname, region\_key, routing }
 
 </summary>
 
@@ -82,7 +82,7 @@ Configure which routing method to use for the regional hostname
 
 <summary>
 
-RegionalHostnameGetResponse object {created\_on, hostname, region\_key, routing }
+RegionalHostnameGetResponse object { created\_on, hostname, region\_key, routing }
 
 </summary>
 
@@ -120,7 +120,7 @@ Configure which routing method to use for the regional hostname
 
 <summary>
 
-RegionalHostnameCreateResponse object {created\_on, hostname, region\_key, routing }
+RegionalHostnameCreateResponse object { created\_on, hostname, region\_key, routing }
 
 </summary>
 
@@ -158,7 +158,7 @@ Configure which routing method to use for the regional hostname
 
 <summary>
 
-RegionalHostnameEditResponse object {created\_on, hostname, region\_key, routing }
+RegionalHostnameEditResponse object { created\_on, hostname, region\_key, routing }
 
 </summary>
 
@@ -196,7 +196,7 @@ Configure which routing method to use for the regional hostname
 
 <summary>
 
-RegionalHostnameDeleteResponse object {errors, messages, success }
+RegionalHostnameDeleteResponse object { errors, messages, success }
 
 </summary>
 
@@ -204,7 +204,7 @@ RegionalHostnameDeleteResponse object {errors, messages, success }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -226,7 +226,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -246,7 +246,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -268,7 +268,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -306,7 +306,7 @@ GET/accounts/{account\_id}/addressing/regional\_hostnames/regions
 
 <summary>
 
-RegionListResponse object {key, label }
+RegionListResponse object { key, label }
 
 </summary>
 
@@ -338,7 +338,7 @@ GET/accounts/{account\_id}/addressing/services
 
 <summary>
 
-ServiceListResponse object {id, name }
+ServiceListResponse object { id, name }
 
 </summary>
 
@@ -388,7 +388,7 @@ DELETE/accounts/{account\_id}/addressing/address\_maps/{address\_map\_id}
 
 <summary>
 
-AddressMap object {id, can\_delete, can\_modify\_ips, 5 more }
+AddressMap object { id, can\_delete, can\_modify\_ips, 5 more }
 
 </summary>
 
@@ -450,7 +450,7 @@ formatdate-time
 
 <summary>
 
-Kind = "zone"or "account"
+Kind = "zone" or "account"
 
 The type of the membership.
 
@@ -474,7 +474,7 @@ One of the following:
 
 <summary>
 
-AddressMapGetResponse object {id, can\_delete, can\_modify\_ips, 7 more }
+AddressMapGetResponse object { id, can\_delete, can\_modify\_ips, 7 more }
 
 </summary>
 
@@ -532,7 +532,7 @@ The set of IPs on the Address Map.
 
 <summary>
 
-memberships: optional array of object {can\_delete, created\_at, identifier, kind }
+memberships: optional array of object { can\_delete, created\_at, identifier, kind }
 
 Zones and Accounts which will be assigned IPs on this Address Map. A zone membership will take priority over an account membership.
 
@@ -582,7 +582,7 @@ formatdate-time
 
 <summary>
 
-AddressMapCreateResponse object {id, can\_delete, can\_modify\_ips, 7 more }
+AddressMapCreateResponse object { id, can\_delete, can\_modify\_ips, 7 more }
 
 </summary>
 
@@ -640,7 +640,7 @@ The set of IPs on the Address Map.
 
 <summary>
 
-memberships: optional array of object {can\_delete, created\_at, identifier, kind }
+memberships: optional array of object { can\_delete, created\_at, identifier, kind }
 
 Zones and Accounts which will be assigned IPs on this Address Map. A zone membership will take priority over an account membership.
 
@@ -690,7 +690,7 @@ formatdate-time
 
 <summary>
 
-AddressMapDeleteResponse object {errors, messages, success, result\_info }
+AddressMapDeleteResponse object { errors, messages, success, result\_info }
 
 </summary>
 
@@ -698,7 +698,7 @@ AddressMapDeleteResponse object {errors, messages, success, result\_info }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -720,7 +720,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -740,7 +740,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -762,7 +762,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -788,7 +788,7 @@ Whether the API call was successful.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 
@@ -846,7 +846,7 @@ DELETE/accounts/{account\_id}/addressing/address\_maps/{address\_map\_id}/accoun
 
 <summary>
 
-AccountUpdateResponse object {errors, messages, success, result\_info }
+AccountUpdateResponse object { errors, messages, success, result\_info }
 
 </summary>
 
@@ -854,7 +854,7 @@ AccountUpdateResponse object {errors, messages, success, result\_info }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -876,7 +876,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -896,7 +896,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -918,7 +918,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -944,7 +944,7 @@ Whether the API call was successful.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 
@@ -990,7 +990,7 @@ The number of total pages in the entire result set.
 
 <summary>
 
-AccountDeleteResponse object {errors, messages, success, result\_info }
+AccountDeleteResponse object { errors, messages, success, result\_info }
 
 </summary>
 
@@ -998,7 +998,7 @@ AccountDeleteResponse object {errors, messages, success, result\_info }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -1020,7 +1020,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -1040,7 +1040,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -1062,7 +1062,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -1088,7 +1088,7 @@ Whether the API call was successful.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 
@@ -1146,7 +1146,7 @@ DELETE/accounts/{account\_id}/addressing/address\_maps/{address\_map\_id}/ips/{i
 
 <summary>
 
-IPUpdateResponse object {errors, messages, success, result\_info }
+IPUpdateResponse object { errors, messages, success, result\_info }
 
 </summary>
 
@@ -1154,7 +1154,7 @@ IPUpdateResponse object {errors, messages, success, result\_info }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -1176,7 +1176,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -1196,7 +1196,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -1218,7 +1218,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -1244,7 +1244,7 @@ Whether the API call was successful.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 
@@ -1290,7 +1290,7 @@ The number of total pages in the entire result set.
 
 <summary>
 
-IPDeleteResponse object {errors, messages, success, result\_info }
+IPDeleteResponse object { errors, messages, success, result\_info }
 
 </summary>
 
@@ -1298,7 +1298,7 @@ IPDeleteResponse object {errors, messages, success, result\_info }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -1320,7 +1320,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -1340,7 +1340,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -1362,7 +1362,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -1388,7 +1388,7 @@ Whether the API call was successful.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 
@@ -1446,7 +1446,7 @@ DELETE/accounts/{account\_id}/addressing/address\_maps/{address\_map\_id}/zones/
 
 <summary>
 
-ZoneUpdateResponse object {errors, messages, success, result\_info }
+ZoneUpdateResponse object { errors, messages, success, result\_info }
 
 </summary>
 
@@ -1454,7 +1454,7 @@ ZoneUpdateResponse object {errors, messages, success, result\_info }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -1476,7 +1476,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -1496,7 +1496,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -1518,7 +1518,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -1544,7 +1544,7 @@ Whether the API call was successful.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 
@@ -1590,7 +1590,7 @@ The number of total pages in the entire result set.
 
 <summary>
 
-ZoneDeleteResponse object {errors, messages, success, result\_info }
+ZoneDeleteResponse object { errors, messages, success, result\_info }
 
 </summary>
 
@@ -1598,7 +1598,7 @@ ZoneDeleteResponse object {errors, messages, success, result\_info }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -1620,7 +1620,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -1640,7 +1640,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -1662,7 +1662,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -1688,7 +1688,7 @@ Whether the API call was successful.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 
@@ -1746,7 +1746,7 @@ POST/accounts/{account\_id}/addressing/loa\_documents
 
 <summary>
 
-LOADocumentCreateResponse object {id, account\_id, auto\_generated, 5 more }
+LOADocumentCreateResponse object { id, account\_id, auto\_generated, 5 more }
 
 </summary>
 
@@ -1840,7 +1840,7 @@ POST/accounts/{account\_id}/addressing/prefixes/{prefix\_id}/validate
 
 <summary>
 
-Prefix object {id, account\_id, advertised, 17 more }
+Prefix object { id, account\_id, advertised, 17 more }
 
 </summary>
 
@@ -1894,7 +1894,7 @@ Autonomous System Number (ASN) the prefix will be advertised under. Use 13335 fo
 
 <summary>
 
-asn\_ownership\_validation\_state: optional "pending"or "valid"or "missing"or "invalid"
+asn\_ownership\_validation\_state: optional "pending" or "valid" or "missing" or "invalid"
 
 State of ASN ownership validation for a customer-owned Autonomous System Number (ASN). Returned when an ASN ownership validation result exists. Omitted when validation does not apply, such as for Cloudflare-owned ASNs. Verification is reused for prefixes with the same account and ASN. Refer to <a href="https://developers.cloudflare.com/byoip/troubleshooting/prefix-validation/#asn-ownership-validation">ASN ownership validation states</a> for state meanings and resolutions.
 
@@ -1926,7 +1926,7 @@ One of the following:
 
 <summary>
 
-aspa\_validation\_state: optional "pending"or "valid"or "invalid"
+aspa\_validation\_state: optional "pending" or "valid" or "invalid"
 
 State of Autonomous System Provider Authorization (ASPA) validation for a customer-owned ASN. Returned when an ASPA validation result exists. Publishing an ASPA is optional. A published ASPA must authorize AS13335 as a provider. An invalid result blocks approval. If omitted, no ASPA validation result is available. Omission does not indicate successful validation or confirm that no ASPA exists. Refer to <a href="https://developers.cloudflare.com/byoip/troubleshooting/prefix-validation/#aspa-validation">ASPA validation states</a> for state meanings and resolutions, and <a href="https://developers.cloudflare.com/byoip/concepts/route-filtering-rpki/#aspa-authorization">ASPA authorization</a> for publication guidance.
 
@@ -2038,7 +2038,7 @@ State of one kind of validation for an IP prefix.
 
 <summary>
 
-PrefixDeleteResponse object {errors, messages, success }
+PrefixDeleteResponse object { errors, messages, success }
 
 </summary>
 
@@ -2046,7 +2046,7 @@ PrefixDeleteResponse object {errors, messages, success }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -2068,7 +2068,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -2088,7 +2088,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -2110,7 +2110,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -2160,7 +2160,7 @@ DELETE/accounts/{account\_id}/addressing/prefixes/{prefix\_id}/bindings/{binding
 
 <summary>
 
-ServiceBinding object {id, cidr, provisioning, 2 more }
+ServiceBinding object { id, cidr, provisioning, 2 more }
 
 </summary>
 
@@ -2182,7 +2182,7 @@ IP Prefix in Classless Inter-Domain Routing format.
 
 <summary>
 
-provisioning: optional object {state }
+provisioning: optional object { state }
 
 Status of a Service Binding’s deployment to the Cloudflare network
 
@@ -2192,7 +2192,7 @@ Status of a Service Binding’s deployment to the Cloudflare network
 
 <summary>
 
-state: optional "provisioning"or "active"or "magic\_transit\_route\_missing"
+state: optional "provisioning" or "active" or "magic\_transit\_route\_missing"
 
 When a binding has been deployed to a majority of Cloudflare datacenters, the binding will become active and can be used with its associated service.
 
@@ -2242,7 +2242,7 @@ Name of a service running on the Cloudflare network
 
 <summary>
 
-ServiceBindingDeleteResponse object {errors, messages, success }
+ServiceBindingDeleteResponse object { errors, messages, success }
 
 </summary>
 
@@ -2250,7 +2250,7 @@ ServiceBindingDeleteResponse object {errors, messages, success }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -2272,7 +2272,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -2292,7 +2292,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -2314,7 +2314,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -2368,7 +2368,7 @@ DELETE/accounts/{account\_id}/addressing/prefixes/{prefix\_id}/bgp/prefixes/{bgp
 
 <summary>
 
-BGPPrefix object {id, asn, asn\_prepend\_count, 6 more }
+BGPPrefix object { id, asn, asn\_prepend\_count, 6 more }
 
 </summary>
 
@@ -2406,7 +2406,7 @@ Determines if Cloudflare advertises a BYOIP BGP prefix even when there is no mat
 
 <summary>
 
-bgp\_signal\_opts: optional object {enabled, modified\_at }
+bgp\_signal\_opts: optional object { enabled, modified\_at }
 
 </summary>
 
@@ -2450,7 +2450,7 @@ formatdate-time
 
 <summary>
 
-on\_demand: optional object {advertised, advertised\_modified\_at, on\_demand\_enabled, on\_demand\_locked }
+on\_demand: optional object { advertised, advertised\_modified\_at, on\_demand\_enabled, on\_demand\_locked }
 
 </summary>
 
@@ -2492,7 +2492,7 @@ Whether the advertisement status of the prefix is locked, meaning it cannot be c
 
 <summary>
 
-BGPPrefixDeleteResponse object {errors, messages, success }
+BGPPrefixDeleteResponse object { errors, messages, success }
 
 </summary>
 
@@ -2500,7 +2500,7 @@ BGPPrefixDeleteResponse object {errors, messages, success }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -2522,7 +2522,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -2542,7 +2542,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -2564,7 +2564,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -2610,7 +2610,7 @@ PATCH/accounts/{account\_id}/addressing/prefixes/{prefix\_id}/bgp/status
 
 <summary>
 
-AdvertisementStatusGetResponse object {advertised, advertised\_modified\_at }
+AdvertisementStatusGetResponse object { advertised, advertised\_modified\_at }
 
 </summary>
 
@@ -2636,7 +2636,7 @@ formatdate-time
 
 <summary>
 
-AdvertisementStatusEditResponse object {advertised, advertised\_modified\_at }
+AdvertisementStatusEditResponse object { advertised, advertised\_modified\_at }
 
 </summary>
 
@@ -2678,7 +2678,7 @@ DELETE/accounts/{account\_id}/addressing/prefixes/{prefix\_id}/delegations/{dele
 
 <summary>
 
-Delegations object {id, cidr, created\_at, 3 more }
+Delegations object { id, cidr, created\_at, 3 more }
 
 </summary>
 
@@ -2732,7 +2732,7 @@ maxLength32
 
 <summary>
 
-DelegationDeleteResponse object {id }
+DelegationDeleteResponse object { id }
 
 </summary>
 

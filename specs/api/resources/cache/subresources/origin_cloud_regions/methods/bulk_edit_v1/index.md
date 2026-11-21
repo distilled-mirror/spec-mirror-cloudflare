@@ -72,7 +72,7 @@ maxLength32
 
 <summary>
 
-body: array of object {ip, region, vendor }
+body: array of object { ip, region, vendor }
 
 </summary>
 
@@ -92,7 +92,7 @@ Cloud vendor region identifier. Must be a valid region for the specified vendor 
 
 <summary>
 
-vendor: "aws"or "azure"or "gcp"or "oci"
+vendor: "aws" or "azure" or "gcp" or "oci"
 
 Cloud vendor hosting the origin. Must be one of the supported vendors.
 
@@ -152,7 +152,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -194,7 +194,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -220,7 +220,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, editable, value, modified\_on }
+result: optional object { id, editable, value, modified\_on }
 
 Response result for a batch origin cloud region operation.
 
@@ -240,7 +240,7 @@ Whether the setting can be modified by the current user.
 
 <summary>
 
-value: object {failed, succeeded }
+value: object { failed, succeeded }
 
 </summary>
 
@@ -248,7 +248,7 @@ value: object {failed, succeeded }
 
 <summary>
 
-failed: array of object {"origin-ip", error, region, vendor }
+failed: array of object { "origin-ip", error, region, vendor }
 
 Items that could not be applied, with error details.
 
@@ -286,7 +286,7 @@ Cloud vendor identifier. Present on succeeded items for patch operations.
 
 <summary>
 
-succeeded: array of object {"origin-ip", error, region, vendor }
+succeeded: array of object { "origin-ip", error, region, vendor }
 
 Items that were successfully applied.
 

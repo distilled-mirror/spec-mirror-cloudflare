@@ -38,7 +38,7 @@ The preferred authorization scheme for interacting with the Cloudflare API. [Cre
 
 ##### Accepted Permissions (at least one required)
 
-`Zero Trust Read``Zero Trust Write`
+`CASB Write``CASB Read``Zero Trust Read``Zero Trust Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -58,7 +58,7 @@ A cursor for pagination. Obtained from the `result_info.cursor` field of a previ
 
 <summary>
 
-direction: optional "asc"or "desc"
+direction: optional "asc" or "desc"
 
 Direction to order results.
 
@@ -120,7 +120,7 @@ formatdate-time
 
 <summary>
 
-observation: optional "Activity"or "Insight"or "Issue"
+observation: optional "Activity" or "Insight" or "Issue"
 
 Filter by observation type of the finding
 
@@ -148,7 +148,7 @@ One of the following:
 
 <summary>
 
-order: optional "finding.name"or "instance\_count"or "integration.name"or 2 more
+order: optional "finding.name" or "instance\_count" or "integration.name" or 2 more
 
 Which field to use when ordering the findings.
 
@@ -198,7 +198,7 @@ minimum1
 
 <summary>
 
-product: optional "Cloud"or "Saas"
+product: optional "Cloud" or "Saas"
 
 Filter by product category of the finding
 
@@ -228,7 +228,7 @@ A search term.
 
 <summary>
 
-severity: optional "Critical"or "High"or "Medium"or "Low"
+severity: optional "Critical" or "High" or "Medium" or "Low"
 
 Filter by severity
 
@@ -260,7 +260,7 @@ One of the following:
 
 <summary>
 
-type: optional "Content"or "Posture"
+type: optional "Content" or "Posture"
 
 Filter by type of the finding
 
@@ -284,7 +284,7 @@ One of the following:
 
 <summary>
 
-vendor: optional "ANTHROPIC"or "AWS"or "BITBUCKET"or 14 more
+vendor: optional "ANTHROPIC" or "AWS" or "BITBUCKET" or 14 more
 
 Filter by vendor
 
@@ -370,7 +370,7 @@ One of the following:
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -400,7 +400,7 @@ formaturi
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -422,7 +422,7 @@ JSON pointer to the source of the error.
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -452,7 +452,7 @@ formaturi
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -474,7 +474,7 @@ JSON pointer to the source of the error.
 
 <summary>
 
-result\_info: object {count, cursor, next, 4 more }
+result\_info: object { count, cursor, next, 4 more }
 
 Pagination and result information.
 
@@ -540,7 +540,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional array of object {id, active\_count, archived\_count, 6 more }
+result: optional array of object { id, active\_count, archived\_count, 6 more }
 
 Array of finding objects.
 
@@ -570,7 +570,7 @@ Number of archived instances identified in the security finding.
 
 <summary>
 
-finding: object {id, category, name, 15 more }
+finding: object { id, category, name, 15 more }
 
 Basic finding type information.
 
@@ -588,7 +588,7 @@ formatuuid
 
 <summary>
 
-category: object {observation, product, type }
+category: object { observation, product, type }
 
 </summary>
 
@@ -596,7 +596,7 @@ category: object {observation, product, type }
 
 <summary>
 
-observation: "Issue"or "Insight"or "Activity"
+observation: "Issue" or "Insight" or "Activity"
 
 The type of the observation.
 
@@ -624,7 +624,7 @@ One of the following:
 
 <summary>
 
-product: "SaaS"or "Cloud"
+product: "SaaS" or "Cloud"
 
 The product category.
 
@@ -648,7 +648,7 @@ One of the following:
 
 <summary>
 
-type: "Content"or "Posture"
+type: "Content" or "Posture"
 
 The type of the finding category.
 
@@ -682,7 +682,7 @@ The name of the finding.
 
 <summary>
 
-severity: "Critical"or "High"or "Medium"or "Low"
+severity: "Critical" or "High" or "Medium" or "Low"
 
 Default severity used when no integration-specific severity override exists.
 
@@ -732,7 +732,7 @@ Asset class the finding type’s policy evaluates.
 
 <summary>
 
-asset\_vendor: optional "ANTHROPIC"or "AWS"or "BITBUCKET"or 13 more
+asset\_vendor: optional "ANTHROPIC" or "AWS" or "BITBUCKET" or 13 more
 
 Canonical vendor enum value.
 
@@ -846,7 +846,7 @@ formatint64
 
 <summary>
 
-origin: optional "system"or "custom"
+origin: optional "system" or "custom"
 
 Whether the finding type is system-managed or customer-created.
 
@@ -876,7 +876,7 @@ Whether evaluation of this finding type is suspended by an operator. Present onl
 
 <summary>
 
-remediation: optional object {id, frameworks, guide, 3 more }
+remediation: optional object { id, frameworks, guide, 3 more }
 
 Remediation guide information for a finding.
 
@@ -960,7 +960,7 @@ Number of total (Active or archived) problematic instances identified in the sec
 
 <summary>
 
-integration: object {created, last\_hydrated, name, 12 more }
+integration: object { created, last\_hydrated, name, 12 more }
 
 Summary information about an integration.
 
@@ -1000,7 +1000,7 @@ The vendor-specific permissions associated with the integration.
 
 <summary>
 
-policy: object {id, client\_id, compliance\_level, 4 more }
+policy: object { id, client\_id, compliance\_level, 4 more }
 
 Policy configuration for an integration.
 
@@ -1080,7 +1080,7 @@ Whether the integrations permissions can be updated.
 
 <summary>
 
-vendor: object {id, description, display\_name, 5 more }
+vendor: object { id, description, display\_name, 5 more }
 
 Information about a vendor/service provider.
 
@@ -1146,7 +1146,7 @@ The policies related to the vendor.
 
 <summary>
 
-zt\_enrollments: array of object {id, description, display\_name, enabled }
+zt\_enrollments: array of object { id, description, display\_name, enabled }
 
 Zero Trust products associated with this integration.
 
@@ -1192,7 +1192,7 @@ formatuuid
 
 <summary>
 
-credential\_health\_status: optional "Initializing"or "Healthy"or "Unhealthy"
+credential\_health\_status: optional "Initializing" or "Healthy" or "Unhealthy"
 
 Health status of integration credentials.
 
@@ -1252,7 +1252,7 @@ formatdate-time
 
 <summary>
 
-severity\_override: optional object {created\_by, severity }
+severity\_override: optional object { created\_by, severity }
 
 Override information for finding severity.
 
@@ -1268,7 +1268,7 @@ User ID who created the override.
 
 <summary>
 
-severity: "Critical"or "High"or "Medium"or "Low"
+severity: "Critical" or "High" or "Medium" or "Low"
 
 The severity level of a finding.
 

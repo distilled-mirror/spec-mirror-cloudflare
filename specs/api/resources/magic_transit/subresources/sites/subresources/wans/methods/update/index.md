@@ -92,7 +92,7 @@ maxLength32
 
 <summary>
 
-health\_check\_rate: optional "low"or "mid"or "high"
+health\_check\_rate: optional "low" or "mid" or "high"
 
 Magic WAN health check rate for tunnels created on this link.
 
@@ -156,7 +156,7 @@ minimum1
 
 <summary>
 
-static\_addressing: optional object {address, gateway\_address, secondary\_address, secondary\_gateway\_address }
+static\_addressing: optional object { address, gateway\_address, secondary\_address, secondary\_gateway\_address }
 
 Static addressing configuration. PATCH updates only the fields provided, and PUT replaces the configuration.
 
@@ -224,7 +224,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -266,7 +266,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -302,7 +302,7 @@ maxLength32
 
 <summary>
 
-health\_check\_rate: optional "low"or "mid"or "high"
+health\_check\_rate: optional "low" or "mid" or "high"
 
 Magic WAN health check rate for tunnels created on this link. The default value is <code>mid</code>.
 

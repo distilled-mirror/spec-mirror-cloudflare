@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 <summary>
 
-IPList object {id, description, name }
+IPList object { id, description, name }
 
 </summary>
 

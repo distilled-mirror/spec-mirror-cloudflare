@@ -26,7 +26,7 @@ GET/ips
 
 <summary>
 
-IPs = array of object {created\_at, ip }
+IPs = array of object { created\_at, ip }
 
 The set of IPs on the Address Map.
 
@@ -52,7 +52,7 @@ An IPv4 or IPv6 address.
 
 <summary>
 
-IPListResponse = object {etag, ipv4\_cidrs, ipv6\_cidrs } or object {etag, ipv4\_cidrs, ipv6\_cidrs, jdcloud\_cidrs }
+IPListResponse = object { etag, ipv4\_cidrs, ipv6\_cidrs } or object { etag, ipv4\_cidrs, ipv6\_cidrs, jdcloud\_cidrs }
 
 </summary>
 
@@ -62,7 +62,7 @@ One of the following:
 
 <summary>
 
-PublicIPIPs object {etag, ipv4\_cidrs, ipv6\_cidrs }
+PublicIPIPs object { etag, ipv4\_cidrs, ipv6\_cidrs }
 
 </summary>
 
@@ -92,7 +92,7 @@ List of Cloudflare IPv6 CIDR addresses.
 
 <summary>
 
-PublicIPIPsJDCloud object {etag, ipv4\_cidrs, ipv6\_cidrs, jdcloud\_cidrs }
+PublicIPIPsJDCloud object { etag, ipv4\_cidrs, ipv6\_cidrs, jdcloud\_cidrs }
 
 </summary>
 

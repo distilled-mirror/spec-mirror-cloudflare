@@ -72,7 +72,7 @@ id: string
 
 <summary>
 
-result: object {id, application, auth\_method, 12 more }
+result: object { id, application, auth\_method, 12 more }
 
 The requested item.
 
@@ -100,7 +100,7 @@ The integration’s authentication method.
 
 <summary>
 
-authorization\_link: object {components, link }
+authorization\_link: object { components, link }
 
 Authorization link for the integration.
 
@@ -122,7 +122,7 @@ link: string
 
 <summary>
 
-config: object {gitlab }
+config: object { gitlab }
 
 Vendor-specific integration configuration.
 
@@ -132,7 +132,7 @@ Vendor-specific integration configuration.
 
 <summary>
 
-gitlab: optional object {groups, projects }
+gitlab: optional object { groups, projects }
 
 GitLab-specific configuration. Present only for GitLab integrations.
 
@@ -142,7 +142,7 @@ GitLab-specific configuration. Present only for GitLab integrations.
 
 <summary>
 
-groups: array of object {id, display\_name, path }
+groups: array of object { id, display\_name, path }
 
 Selected top-level GitLab groups.
 
@@ -174,7 +174,7 @@ Full GitLab resource path.
 
 <summary>
 
-projects: array of object {id, display\_name, path }
+projects: array of object { id, display\_name, path }
 
 Selected GitLab projects.
 

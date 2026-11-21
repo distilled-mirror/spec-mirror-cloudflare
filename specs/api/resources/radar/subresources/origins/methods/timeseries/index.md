@@ -64,7 +64,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 <summary>
 
-metric: "CONNECTION\_FAILURES"or "REQUESTS"or "RESPONSE\_HEADER\_RECEIVE\_DURATION"or 3 more
+metric: "CONNECTION\_FAILURES" or "REQUESTS" or "RESPONSE\_HEADER\_RECEIVE\_DURATION" or 3 more
 
 Specifies the metric to retrieve. Without a <code>region</code>, only <code>REQUESTS</code> or <code>CONNECTION_FAILURES</code> are available; specify a <code>region</code> to use the latency metrics.
 
@@ -104,7 +104,7 @@ One of the following:
 
 <summary>
 
-origin: array of "AMAZON"or "GOOGLE"or "MICROSOFT"or "ORACLE"
+origin: array of "AMAZON" or "GOOGLE" or "MICROSOFT" or "ORACLE"
 
 Filters results by origin.
 
@@ -136,7 +136,7 @@ One of the following:
 
 <summary>
 
-aggInterval: optional "15m"or "1h"or "1d"or "1w"
+aggInterval: optional "15m" or "1h" or "1d" or "1w"
 
 Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to <a href="https://developers.cloudflare.com/radar/concepts/aggregation-intervals/">Aggregation intervals</a>. When omitted, the interval is auto-selected from the requested date range; finer intervals are only available for shorter ranges. If the requested interval is too granular for the date range, the request is rejected.
 
@@ -186,7 +186,7 @@ Start of the date range. Alternative to `dateRange`; provide together with `date
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -224,7 +224,7 @@ Filters results by origin region. Requires `origin` to be set and is validated a
 
 <summary>
 
-result: object {meta }
+result: object { meta }
 
 </summary>
 
@@ -232,7 +232,7 @@ result: object {meta }
 
 <summary>
 
-meta: object {aggInterval, confidenceInfo, dateRange, 3 more }
+meta: object { aggInterval, confidenceInfo, dateRange, 3 more }
 
 Metadata for the results.
 
@@ -242,7 +242,7 @@ Metadata for the results.
 
 <summary>
 
-aggInterval: "FIFTEEN\_MINUTES"or "ONE\_HOUR"or "ONE\_DAY"or 2 more
+aggInterval: "FIFTEEN\_MINUTES" or "ONE\_HOUR" or "ONE\_DAY" or 2 more
 
 Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to <a href="https://developers.cloudflare.com/radar/concepts/aggregation-intervals/">Aggregation intervals</a>.
 
@@ -278,7 +278,7 @@ One of the following:
 
 <summary>
 
-confidenceInfo: object {annotations, level }
+confidenceInfo: object { annotations, level }
 
 </summary>
 
@@ -286,7 +286,7 @@ confidenceInfo: object {annotations, level }
 
 <summary>
 
-annotations: array of object {dataSource, description, endDate, 5 more }
+annotations: array of object { dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -294,7 +294,7 @@ annotations: array of object {dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
+dataSource: "ALL" or "AI\_BOTS" or "AI\_GATEWAY" or 22 more
 
 Data source for annotations.
 
@@ -420,7 +420,7 @@ formatdate-time
 
 <summary>
 
-eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
+eventType: "GENERAL" or "OUTAGE" or "PARTIAL\_PROJECTION" or 2 more
 
 Event type for annotations.
 
@@ -492,7 +492,7 @@ Provides an indication of how much confidence Cloudflare has in the data.
 
 <summary>
 
-dateRange: array of object {endTime, startTime }
+dateRange: array of object { endTime, startTime }
 
 </summary>
 
@@ -528,7 +528,7 @@ formatdate-time
 
 <summary>
 
-normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
+normalization: "PERCENTAGE" or "MIN0\_MAX" or "MIN\_MAX" or 5 more
 
 Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
@@ -576,7 +576,7 @@ One of the following:
 
 <summary>
 
-units: array of object {name, value }
+units: array of object { name, value }
 
 Measurement units for the results.
 

@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Zone Settings Write``Zone Settings Read`
+`Workers Metadata Read-Only``Workers Editor``Workers Content Read-Only``Workers Admin``Zone Settings Write``Zone Settings Read``Workers Routes Write``Workers Routes Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -96,7 +96,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -138,7 +138,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -180,7 +180,7 @@ ID of the zone setting.
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -212,7 +212,7 @@ formatdate-time
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Current value of the zone setting.
 

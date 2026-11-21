@@ -106,7 +106,7 @@ A user modifiable key-value store used to reference other systems of record for 
 
 <summary>
 
-publicDetails: optional object {channel\_link, logo, share\_link, title }
+publicDetails: optional object { channel\_link, logo, share\_link, title }
 
 Public details for the video including title, share link, channel link, and logo.
 
@@ -176,7 +176,7 @@ formatdate-time
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -198,7 +198,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -218,7 +218,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -240,7 +240,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -266,7 +266,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional <a href="https://developers.cloudflare.com/api/resources/stream#(resource)%20stream%20%3E%20(model)%20video%20%3E%20(schema)">Video</a> { allowedOrigins, clippedFrom, created, 23 more }
+result: optional <a href="https://developers.cloudflare.com/api/resources/stream#(resource)%20stream%20%3E%20(model)%20video%20%3E%20(schema)">Video</a> { allowedOrigins, clippedFrom, created, 25 more }
 
 </summary>
 
@@ -308,7 +308,31 @@ The duration of the video in seconds. A value of <code>-1</code> means the durat
 
 <summary>
 
-input: optional object {height, width }
+encodingMode: optional "default" or "previewFirst"
+
+Specifies whether to generate a preview rendition before the standard encoding ladder. <code>default</code> generates only the standard encoding ladder. <code>previewFirst</code> generates a preview rendition first.
+
+</summary>
+
+One of the following:
+
+"default"
+
+<a href="#">Link to this property</a>
+
+"previewFirst"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+input: optional object { height, width }
 
 </summary>
 
@@ -372,7 +396,7 @@ formatdate-time
 
 <summary>
 
-playback: optional object {dash, hls }
+playback: optional object { dash, hls }
 
 </summary>
 
@@ -404,7 +428,67 @@ formaturi
 
 <summary>
 
-publicDetails: optional object {channel\_link, logo, media\_id, 2 more }
+previewStatus: optional "pending" or "ready" or "error" or 8 more
+
+Reports the current status of preview generation. This value is <code>null</code> when <code>encodingMode</code> is <code>default</code>.
+
+</summary>
+
+One of the following:
+
+"pending"
+
+<a href="#">Link to this property</a>
+
+"ready"
+
+<a href="#">Link to this property</a>
+
+"error"
+
+<a href="#">Link to this property</a>
+
+"not-eligible-container"
+
+<a href="#">Link to this property</a>
+
+"not-eligible-video-codec"
+
+<a href="#">Link to this property</a>
+
+"not-eligible-audio-codec"
+
+<a href="#">Link to this property</a>
+
+"not-eligible-resolution"
+
+<a href="#">Link to this property</a>
+
+"not-eligible-bitrate"
+
+<a href="#">Link to this property</a>
+
+"not-eligible-gop"
+
+<a href="#">Link to this property</a>
+
+"not-eligible-pixel-format"
+
+<a href="#">Link to this property</a>
+
+"not-eligible-edit-list"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+publicDetails: optional object { channel\_link, logo, media\_id, 2 more }
 
 Public details for the video including title, share link, channel link, and logo.
 
@@ -472,7 +556,7 @@ The size of the media item in bytes.
 
 <summary>
 
-status: optional object {errorReasonCode, errorReasonText, pctComplete, state }
+status: optional object { errorReasonCode, errorReasonText, pctComplete, state }
 
 Specifies a detailed status for a video. If the <code>state</code> is <code>inprogress</code> or <code>error</code>, the <code>step</code> field returns <code>encoding</code> or <code>manifest</code>. If the <code>state</code> is <code>inprogress</code>, <code>pctComplete</code> returns a number between 0 and 100 to indicate the approximate percent of completion. If the <code>state</code> is <code>error</code>, <code>errorReasonCode</code> and <code>errorReasonText</code> provide additional details.
 
@@ -500,7 +584,7 @@ Indicates the progress as a percentage between 0 and 100.
 
 <summary>
 
-state: optional "pendingupload"or "downloading"or "queued"or 4 more
+state: optional "pendingupload" or "downloading" or "queued" or 4 more
 
 Specifies the processing status for all quality levels for a video.
 
@@ -743,6 +827,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/stream/$IDENTIFIE
     "created": "2014-01-02T02:20:00Z",
     "creator": "creator-id_abcde12345",
     "duration": 0,
+    "encodingMode": "default",
     "input": {
       "height": 0,
       "width": 0
@@ -759,6 +844,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/stream/$IDENTIFIE
       "hls": "https://customer-m033z5x00ks6nunl.cloudflarestream.com/ea95132c15732412d22c1476fa83f27a/manifest/video.m3u8"
     },
     "preview": "https://customer-m033z5x00ks6nunl.cloudflarestream.com/ea95132c15732412d22c1476fa83f27a/watch",
+    "previewStatus": "pending",
     "publicDetails": {
       "channel_link": "channel_link",
       "logo": "logo",
@@ -834,6 +920,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/stream/$IDENTIFIE
     "created": "2014-01-02T02:20:00Z",
     "creator": "creator-id_abcde12345",
     "duration": 0,
+    "encodingMode": "default",
     "input": {
       "height": 0,
       "width": 0
@@ -850,6 +937,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/stream/$IDENTIFIE
       "hls": "https://customer-m033z5x00ks6nunl.cloudflarestream.com/ea95132c15732412d22c1476fa83f27a/manifest/video.m3u8"
     },
     "preview": "https://customer-m033z5x00ks6nunl.cloudflarestream.com/ea95132c15732412d22c1476fa83f27a/watch",
+    "previewStatus": "pending",
     "publicDetails": {
       "channel_link": "channel_link",
       "logo": "logo",

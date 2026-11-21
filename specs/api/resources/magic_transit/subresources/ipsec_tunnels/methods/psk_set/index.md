@@ -82,7 +82,7 @@ If `true`, only run validation without persisting changes.
 
 <summary>
 
-psks: array of object {id, psk }
+psks: array of object { id, psk }
 
 List of tunnel ID and PSK pairs.
 
@@ -134,7 +134,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -176,7 +176,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -196,7 +196,7 @@ pointer: optional string
 
 <summary>
 
-result: object {successfully\_applied\_psks, unapplied\_psks }
+result: object { successfully\_applied\_psks, unapplied\_psks }
 
 </summary>
 
@@ -204,7 +204,7 @@ result: object {successfully\_applied\_psks, unapplied\_psks }
 
 <summary>
 
-successfully\_applied\_psks: optional map\[object {ipsec\_id, ipsec\_tunnel\_id, psk, psk\_metadata } ]
+successfully\_applied\_psks: optional map\[object { ipsec\_id, ipsec\_tunnel\_id, psk, psk\_metadata } ]
 
 Map of tunnel IDs to successfully applied PSK details.
 

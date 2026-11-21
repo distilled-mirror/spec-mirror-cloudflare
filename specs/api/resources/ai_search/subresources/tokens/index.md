@@ -44,7 +44,7 @@ DELETE/accounts/{account\_id}/ai-search/tokens/{id}
 
 <summary>
 
-TokenListResponse object {id, cf\_api\_id, created\_at, 6 more }
+TokenListResponse object { id, cf\_api\_id, created\_at, 6 more }
 
 </summary>
 
@@ -98,7 +98,7 @@ modified\_by: optional string
 
 <summary>
 
-TokenCreateResponse object {id, cf\_api\_id, created\_at, 6 more }
+TokenCreateResponse object { id, cf\_api\_id, created\_at, 6 more }
 
 </summary>
 
@@ -152,7 +152,7 @@ modified\_by: optional string
 
 <summary>
 
-TokenReadResponse object {id, cf\_api\_id, created\_at, 6 more }
+TokenReadResponse object { id, cf\_api\_id, created\_at, 6 more }
 
 </summary>
 
@@ -206,7 +206,7 @@ modified\_by: optional string
 
 <summary>
 
-TokenUpdateResponse object {id, cf\_api\_id, created\_at, 6 more }
+TokenUpdateResponse object { id, cf\_api\_id, created\_at, 6 more }
 
 </summary>
 

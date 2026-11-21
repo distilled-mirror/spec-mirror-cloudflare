@@ -38,7 +38,7 @@ DELETE/certificates/{certificate\_id}
 
 <summary>
 
-OriginCACertificate object {id, certificate, csr, 5 more }
+OriginCACertificate object { id, certificate, csr, 5 more }
 
 </summary>
 
@@ -82,7 +82,7 @@ Signature type desired on certificate (“origin-rsa” (rsa), “origin-ecc” 
 
 <summary>
 
-requested\_validity: optional 7or 30or 90or 4 more
+requested\_validity: optional 7 or 30 or 90 or 4 more
 
 The number of days for which the certificate was requested to be valid. Only returned in the Create Certificate response, where it echoes the requested value. Not returned when getting or listing certificates.
 
@@ -138,7 +138,7 @@ formatdate-time
 
 <summary>
 
-OriginCACertificateDeleteResponse object {id, revoked\_at }
+OriginCACertificateDeleteResponse object { id, revoked\_at }
 
 </summary>
 

@@ -38,7 +38,7 @@ POST/zones/{zone\_id}/environments/{environment\_id}/invalidate\_cache
 
 <summary>
 
-CachePurgeResponse object {id }
+CachePurgeResponse object { id }
 
 </summary>
 
@@ -56,7 +56,7 @@ maxLength32
 
 <summary>
 
-CachePurgeEnvironmentResponse object {id }
+CachePurgeEnvironmentResponse object { id }
 
 </summary>
 
@@ -74,7 +74,7 @@ maxLength32
 
 <summary>
 
-CacheInvalidateResponse object {id }
+CacheInvalidateResponse object { id }
 
 </summary>
 
@@ -92,7 +92,7 @@ maxLength32
 
 <summary>
 
-CacheInvalidateEnvironmentResponse object {id }
+CacheInvalidateEnvironmentResponse object { id }
 
 </summary>
 
@@ -142,7 +142,7 @@ ID of the zone setting.
 
 <summary>
 
-CacheReserveGetResponse object {id, editable, value, modified\_on }
+CacheReserveGetResponse object { id, editable, value, modified\_on }
 
 </summary>
 
@@ -162,7 +162,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: "on"or "off"
+value: "on" or "off"
 
 Value of the Cache Reserve zone setting.
 
@@ -198,7 +198,7 @@ formatdate-time
 
 <summary>
 
-CacheReserveEditResponse object {id, editable, value, modified\_on }
+CacheReserveEditResponse object { id, editable, value, modified\_on }
 
 </summary>
 
@@ -218,7 +218,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: "on"or "off"
+value: "on" or "off"
 
 Value of the Cache Reserve zone setting.
 
@@ -254,7 +254,7 @@ formatdate-time
 
 <summary>
 
-CacheReserveStatusResponse object {id, start\_ts, state, 2 more }
+CacheReserveStatusResponse object { id, start\_ts, state, 2 more }
 
 You can use Cache Reserve Clear to clear your Cache Reserve, but you must first disable Cache Reserve. In most cases, this will be accomplished within 24 hours. You cannot re-enable Cache Reserve while this process is ongoing. Keep in mind that you cannot undo or cancel this operation.
 
@@ -278,7 +278,7 @@ formatdate-time
 
 <summary>
 
-state: "In-progress"or "Completed"
+state: "In-progress" or "Completed"
 
 The current state of the Cache Reserve Clear operation.
 
@@ -322,7 +322,7 @@ formatdate-time
 
 <summary>
 
-CacheReserveClearResponse object {id, start\_ts, state, 2 more }
+CacheReserveClearResponse object { id, start\_ts, state, 2 more }
 
 You can use Cache Reserve Clear to clear your Cache Reserve, but you must first disable Cache Reserve. In most cases, this will be accomplished within 24 hours. You cannot re-enable Cache Reserve while this process is ongoing. Keep in mind that you cannot undo or cancel this operation.
 
@@ -346,7 +346,7 @@ formatdate-time
 
 <summary>
 
-state: "In-progress"or "Completed"
+state: "In-progress" or "Completed"
 
 The current state of the Cache Reserve Clear operation.
 
@@ -410,7 +410,7 @@ DELETE/zones/{zone\_id}/cache/tiered\_cache\_smart\_topology\_enable
 
 <summary>
 
-SmartTieredCacheGetResponse object {id, editable, value, modified\_on }
+SmartTieredCacheGetResponse object { id, editable, value, modified\_on }
 
 </summary>
 
@@ -430,7 +430,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: "on"or "off"
+value: "on" or "off"
 
 Value of the Smart Tiered Cache zone setting.
 
@@ -466,7 +466,7 @@ formatdate-time
 
 <summary>
 
-SmartTieredCacheCreateResponse object {id, editable, value, modified\_on }
+SmartTieredCacheCreateResponse object { id, editable, value, modified\_on }
 
 </summary>
 
@@ -486,7 +486,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: "on"or "off"
+value: "on" or "off"
 
 Value of the Smart Tiered Cache zone setting.
 
@@ -522,7 +522,7 @@ formatdate-time
 
 <summary>
 
-SmartTieredCacheEditResponse object {id, editable, value, modified\_on }
+SmartTieredCacheEditResponse object { id, editable, value, modified\_on }
 
 </summary>
 
@@ -542,7 +542,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: "on"or "off"
+value: "on" or "off"
 
 Value of the Smart Tiered Cache zone setting.
 
@@ -578,7 +578,7 @@ formatdate-time
 
 <summary>
 
-SmartTieredCacheDeleteResponse object {id, editable, modified\_on }
+SmartTieredCacheDeleteResponse object { id, editable, modified\_on }
 
 </summary>
 
@@ -626,7 +626,7 @@ DELETE/zones/{zone\_id}/cache/variants
 
 <summary>
 
-VariantGetResponse object {id, editable, value, modified\_on }
+VariantGetResponse object { id, editable, value, modified\_on }
 
 </summary>
 
@@ -646,7 +646,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: object {avif, bmp, gif, 8 more }
+value: object { avif, bmp, gif, 8 more }
 
 Value of the zone setting.
 
@@ -738,7 +738,7 @@ formatdate-time
 
 <summary>
 
-VariantEditResponse object {id, editable, value, modified\_on }
+VariantEditResponse object { id, editable, value, modified\_on }
 
 </summary>
 
@@ -758,7 +758,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: object {avif, bmp, gif, 8 more }
+value: object { avif, bmp, gif, 8 more }
 
 Value of the zone setting.
 
@@ -850,7 +850,7 @@ formatdate-time
 
 <summary>
 
-VariantDeleteResponse object {id, editable, modified\_on }
+VariantDeleteResponse object { id, editable, modified\_on }
 
 </summary>
 
@@ -900,7 +900,7 @@ The identifier of the caching setting.
 
 <summary>
 
-RegionalTieredCacheGetResponse object {id, editable, value, modified\_on }
+RegionalTieredCacheGetResponse object { id, editable, value, modified\_on }
 
 </summary>
 
@@ -920,7 +920,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: "on"or "off"
+value: "on" or "off"
 
 Value of the Regional Tiered Cache zone setting.
 
@@ -956,7 +956,7 @@ formatdate-time
 
 <summary>
 
-RegionalTieredCacheEditResponse object {id, editable, value, modified\_on }
+RegionalTieredCacheEditResponse object { id, editable, value, modified\_on }
 
 </summary>
 
@@ -976,7 +976,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: "on"or "off"
+value: "on" or "off"
 
 Value of the Regional Tiered Cache zone setting.
 
@@ -1092,7 +1092,7 @@ GET/zones/{zone\_id}/cache/origin\_cloud\_regions/supported\_regions
 
 <summary>
 
-OriginCloudRegionListResponse object {origin\_ip, region, vendor, modified\_on }
+OriginCloudRegionListResponse object { origin\_ip, region, vendor, modified\_on }
 
 A single origin IP-to-cloud-region mapping.
 
@@ -1114,7 +1114,7 @@ Cloud vendor region identifier.
 
 <summary>
 
-vendor: "aws"or "azure"or "gcp"or "oci"
+vendor: "aws" or "azure" or "gcp" or "oci"
 
 Cloud vendor hosting the origin.
 
@@ -1158,7 +1158,7 @@ formatdate-time
 
 <summary>
 
-OriginCloudRegionGetResponse object {origin\_ip, region, vendor, modified\_on }
+OriginCloudRegionGetResponse object { origin\_ip, region, vendor, modified\_on }
 
 A single origin IP-to-cloud-region mapping.
 
@@ -1180,7 +1180,7 @@ Cloud vendor region identifier.
 
 <summary>
 
-vendor: "aws"or "azure"or "gcp"or "oci"
+vendor: "aws" or "azure" or "gcp" or "oci"
 
 Cloud vendor hosting the origin.
 
@@ -1224,7 +1224,7 @@ formatdate-time
 
 <summary>
 
-OriginCloudRegionUpdateResponse object {origin\_ip, region, vendor, modified\_on }
+OriginCloudRegionUpdateResponse object { origin\_ip, region, vendor, modified\_on }
 
 A single origin IP-to-cloud-region mapping.
 
@@ -1246,7 +1246,7 @@ Cloud vendor region identifier.
 
 <summary>
 
-vendor: "aws"or "azure"or "gcp"or "oci"
+vendor: "aws" or "azure" or "gcp" or "oci"
 
 Cloud vendor hosting the origin.
 
@@ -1290,7 +1290,7 @@ formatdate-time
 
 <summary>
 
-OriginCloudRegionDeleteResponse object {origin\_ip }
+OriginCloudRegionDeleteResponse object { origin\_ip }
 
 Response result for a delete operation. Identifies the deleted mapping.
 
@@ -1310,7 +1310,7 @@ The origin IP address whose mapping was deleted.
 
 <summary>
 
-OriginCloudRegionBulkUpdateResponse object {failed, succeeded }
+OriginCloudRegionBulkUpdateResponse object { failed, succeeded }
 
 Response result for a batch origin cloud region operation.
 
@@ -1320,7 +1320,7 @@ Response result for a batch origin cloud region operation.
 
 <summary>
 
-failed: array of object {origin\_ip, error, region, vendor }
+failed: array of object { origin\_ip, error, region, vendor }
 
 Items that could not be applied, with error details.
 
@@ -1358,7 +1358,7 @@ Cloud vendor identifier. Present on succeeded items (the new value for upsert, t
 
 <summary>
 
-succeeded: array of object {origin\_ip, error, region, vendor }
+succeeded: array of object { origin\_ip, error, region, vendor }
 
 Items that were successfully applied.
 
@@ -1400,7 +1400,7 @@ Cloud vendor identifier. Present on succeeded items (the new value for upsert, t
 
 <summary>
 
-OriginCloudRegionBulkDeleteResponse object {failed, succeeded }
+OriginCloudRegionBulkDeleteResponse object { failed, succeeded }
 
 Response result for a batch origin cloud region operation.
 
@@ -1410,7 +1410,7 @@ Response result for a batch origin cloud region operation.
 
 <summary>
 
-failed: array of object {origin\_ip, error, region, vendor }
+failed: array of object { origin\_ip, error, region, vendor }
 
 Items that could not be applied, with error details.
 
@@ -1448,7 +1448,7 @@ Cloud vendor identifier. Present on succeeded items (the new value for upsert, t
 
 <summary>
 
-succeeded: array of object {origin\_ip, error, region, vendor }
+succeeded: array of object { origin\_ip, error, region, vendor }
 
 Items that were successfully applied.
 
@@ -1490,7 +1490,7 @@ Cloud vendor identifier. Present on succeeded items (the new value for upsert, t
 
 <summary>
 
-OriginCloudRegionSupportedRegionsResponse object {obtained\_codes, vendors }
+OriginCloudRegionSupportedRegionsResponse object { obtained\_codes, vendors }
 
 Cloud vendors and their supported regions for origin cloud region mappings.
 
@@ -1506,7 +1506,7 @@ Whether Cloudflare airport codes (IATA colo identifiers) were successfully resol
 
 <summary>
 
-vendors: map\[array of object {name, upper\_tier\_colos } ]
+vendors: map\[array of object { name, upper\_tier\_colos } ]
 
 Map of vendor name to list of supported regions.
 
@@ -1536,7 +1536,7 @@ Cloudflare Tiered Cache upper-tier colocation codes co-located with this cloud r
 
 <summary>
 
-OriginCloudRegionListV1Response object {id, editable, value, modified\_on }
+OriginCloudRegionListV1Response object { id, editable, value, modified\_on }
 
 Response result for a list of origin cloud region mappings.
 
@@ -1556,7 +1556,7 @@ Whether the setting can be modified by the current user.
 
 <summary>
 
-value: array of object {"origin-ip", region, vendor, modified\_on }
+value: array of object { "origin-ip", region, vendor, modified\_on }
 
 </summary>
 
@@ -1576,7 +1576,7 @@ Cloud vendor region identifier.
 
 <summary>
 
-vendor: "aws"or "azure"or "gcp"or "oci"
+vendor: "aws" or "azure" or "gcp" or "oci"
 
 Cloud vendor hosting the origin.
 
@@ -1632,7 +1632,7 @@ formatdate-time
 
 <summary>
 
-OriginCloudRegionCreateV1Response object {id, editable, value, modified\_on }
+OriginCloudRegionCreateV1Response object { id, editable, value, modified\_on }
 
 Response result for a single origin cloud region mapping.
 
@@ -1652,7 +1652,7 @@ Whether the setting can be modified by the current user.
 
 <summary>
 
-value: object {"origin-ip", region, vendor, modified\_on }
+value: object { "origin-ip", region, vendor, modified\_on }
 
 A single origin IP-to-cloud-region mapping.
 
@@ -1674,7 +1674,7 @@ Cloud vendor region identifier.
 
 <summary>
 
-vendor: "aws"or "azure"or "gcp"or "oci"
+vendor: "aws" or "azure" or "gcp" or "oci"
 
 Cloud vendor hosting the origin.
 
@@ -1730,7 +1730,7 @@ formatdate-time
 
 <summary>
 
-OriginCloudRegionEditV1Response object {id, editable, value, modified\_on }
+OriginCloudRegionEditV1Response object { id, editable, value, modified\_on }
 
 Response result for a list of origin cloud region mappings.
 
@@ -1750,7 +1750,7 @@ Whether the setting can be modified by the current user.
 
 <summary>
 
-value: array of object {"origin-ip", region, vendor, modified\_on }
+value: array of object { "origin-ip", region, vendor, modified\_on }
 
 </summary>
 
@@ -1770,7 +1770,7 @@ Cloud vendor region identifier.
 
 <summary>
 
-vendor: "aws"or "azure"or "gcp"or "oci"
+vendor: "aws" or "azure" or "gcp" or "oci"
 
 Cloud vendor hosting the origin.
 
@@ -1826,7 +1826,7 @@ formatdate-time
 
 <summary>
 
-OriginCloudRegionGetV1Response object {id, editable, value, modified\_on }
+OriginCloudRegionGetV1Response object { id, editable, value, modified\_on }
 
 Response result for a single origin cloud region mapping.
 
@@ -1846,7 +1846,7 @@ Whether the setting can be modified by the current user.
 
 <summary>
 
-value: object {"origin-ip", region, vendor, modified\_on }
+value: object { "origin-ip", region, vendor, modified\_on }
 
 A single origin IP-to-cloud-region mapping.
 
@@ -1868,7 +1868,7 @@ Cloud vendor region identifier.
 
 <summary>
 
-vendor: "aws"or "azure"or "gcp"or "oci"
+vendor: "aws" or "azure" or "gcp" or "oci"
 
 Cloud vendor hosting the origin.
 
@@ -1924,7 +1924,7 @@ formatdate-time
 
 <summary>
 
-OriginCloudRegionDeleteV1Response object {id, editable, value, modified\_on }
+OriginCloudRegionDeleteV1Response object { id, editable, value, modified\_on }
 
 Response result for a single origin cloud region mapping.
 
@@ -1944,7 +1944,7 @@ Whether the setting can be modified by the current user.
 
 <summary>
 
-value: object {"origin-ip", region, vendor, modified\_on }
+value: object { "origin-ip", region, vendor, modified\_on }
 
 A single origin IP-to-cloud-region mapping.
 
@@ -1966,7 +1966,7 @@ Cloud vendor region identifier.
 
 <summary>
 
-vendor: "aws"or "azure"or "gcp"or "oci"
+vendor: "aws" or "azure" or "gcp" or "oci"
 
 Cloud vendor hosting the origin.
 
@@ -2022,7 +2022,7 @@ formatdate-time
 
 <summary>
 
-OriginCloudRegionBulkEditV1Response object {id, editable, value, modified\_on }
+OriginCloudRegionBulkEditV1Response object { id, editable, value, modified\_on }
 
 Response result for a batch origin cloud region operation.
 
@@ -2042,7 +2042,7 @@ Whether the setting can be modified by the current user.
 
 <summary>
 
-value: object {failed, succeeded }
+value: object { failed, succeeded }
 
 </summary>
 
@@ -2050,7 +2050,7 @@ value: object {failed, succeeded }
 
 <summary>
 
-failed: array of object {"origin-ip", error, region, vendor }
+failed: array of object { "origin-ip", error, region, vendor }
 
 Items that could not be applied, with error details.
 
@@ -2088,7 +2088,7 @@ Cloud vendor identifier. Present on succeeded items for patch operations.
 
 <summary>
 
-succeeded: array of object {"origin-ip", error, region, vendor }
+succeeded: array of object { "origin-ip", error, region, vendor }
 
 Items that were successfully applied.
 
@@ -2142,7 +2142,7 @@ formatdate-time
 
 <summary>
 
-OriginCloudRegionBulkDeleteV1Response object {id, editable, value, modified\_on }
+OriginCloudRegionBulkDeleteV1Response object { id, editable, value, modified\_on }
 
 Response result for a batch origin cloud region operation.
 
@@ -2162,7 +2162,7 @@ Whether the setting can be modified by the current user.
 
 <summary>
 
-value: object {failed, succeeded }
+value: object { failed, succeeded }
 
 </summary>
 
@@ -2170,7 +2170,7 @@ value: object {failed, succeeded }
 
 <summary>
 
-failed: array of object {"origin-ip", error, region, vendor }
+failed: array of object { "origin-ip", error, region, vendor }
 
 Items that could not be applied, with error details.
 
@@ -2208,7 +2208,7 @@ Cloud vendor identifier. Present on succeeded items for patch operations.
 
 <summary>
 
-succeeded: array of object {"origin-ip", error, region, vendor }
+succeeded: array of object { "origin-ip", error, region, vendor }
 
 Items that were successfully applied.
 
@@ -2262,7 +2262,7 @@ formatdate-time
 
 <summary>
 
-OriginCloudRegionSupportedRegionsV1Response object {obtained\_codes, vendors }
+OriginCloudRegionSupportedRegionsV1Response object { obtained\_codes, vendors }
 
 Cloud vendors and their supported regions for origin cloud region mappings.
 
@@ -2278,7 +2278,7 @@ Whether Cloudflare airport codes (IATA colo identifiers) were successfully resol
 
 <summary>
 
-vendors: map\[array of object {name, upper\_tier\_colos } ]
+vendors: map\[array of object { name, upper\_tier\_colos } ]
 
 Map of vendor name to list of supported regions.
 

@@ -72,7 +72,7 @@ maxLength32
 
 <summary>
 
-errors: array of object {message, code }
+errors: array of object { message, code }
 
 </summary>
 
@@ -94,7 +94,7 @@ minimum1000
 
 <summary>
 
-messages: array of object {message, code }
+messages: array of object { message, code }
 
 </summary>
 
@@ -122,7 +122,7 @@ Whether the API call was successful
 
 <summary>
 
-result: optional map\[array of object {eligible, ready, type } ]
+result: optional map\[array of object { eligible, ready, type } ]
 
 </summary>
 
@@ -142,7 +142,7 @@ Beta flag. Users can create a policy with a mechanism that is not ready, but we 
 
 <summary>
 
-type: optional "email"or "pagerduty"or "webhook"
+type: optional "email" or "pagerduty" or "webhook"
 
 Determines type of delivery mechanism.
 

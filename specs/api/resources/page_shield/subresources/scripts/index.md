@@ -32,7 +32,7 @@ GET/zones/{zone\_id}/page\_shield/scripts/{script\_id}
 
 <summary>
 
-ScriptListResponse object {id, added\_at, first\_seen\_at, 18 more }
+ScriptListResponse object { id, added\_at, first\_seen\_at, 18 more }
 
 </summary>
 
@@ -182,7 +182,7 @@ url\_reported\_malicious: optional boolean
 
 <summary>
 
-ScriptGetResponse object {id, added\_at, first\_seen\_at, 19 more }
+ScriptGetResponse object { id, added\_at, first\_seen\_at, 19 more }
 
 </summary>
 
@@ -328,7 +328,7 @@ url\_reported\_malicious: optional boolean
 
 <summary>
 
-versions: optional array of object {cryptomining\_score, dataflow\_score, fetched\_at, 5 more }
+versions: optional array of object { cryptomining\_score, dataflow\_score, fetched\_at, 5 more }
 
 </summary>
 

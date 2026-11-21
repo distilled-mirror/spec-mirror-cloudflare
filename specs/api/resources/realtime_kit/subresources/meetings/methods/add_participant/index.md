@@ -98,7 +98,7 @@ Name of the preset to apply to this participant.
 
 <summary>
 
-token: optional object {expires\_on, not\_before }
+token: optional object { expires\_on, not\_before }
 
 Validity window of the participant authentication token. The window is \[not\_before, expires\_on) and cannot be longer than 100 days. Defaults to a token valid from now for 100 days.
 
@@ -150,7 +150,7 @@ Success status of the operation
 
 <summary>
 
-data: optional object {id, token, created\_at, 7 more }
+data: optional object { id, token, created\_at, 7 more }
 
 Represents a participant.
 

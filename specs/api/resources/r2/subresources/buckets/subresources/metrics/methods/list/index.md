@@ -72,7 +72,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -96,7 +96,7 @@ messages: array of string
 
 <summary>
 
-result: object {infrequentAccess, standard }
+result: object { infrequentAccess, standard }
 
 Metrics based on the class they belong to.
 
@@ -106,7 +106,7 @@ Metrics based on the class they belong to.
 
 <summary>
 
-infrequentAccess: optional object {published, uploaded }
+infrequentAccess: optional object { published, uploaded }
 
 Metrics based on what state they are in(uploaded or published).
 
@@ -116,7 +116,7 @@ Metrics based on what state they are in(uploaded or published).
 
 <summary>
 
-published: optional object {metadataSize, objects, payloadSize }
+published: optional object { metadataSize, objects, payloadSize }
 
 Metrics on number of objects/amount of storage used.
 
@@ -148,7 +148,7 @@ Amount of storage used by object data.
 
 <summary>
 
-uploaded: optional object {metadataSize, objects, payloadSize }
+uploaded: optional object { metadataSize, objects, payloadSize }
 
 Metrics on number of objects/amount of storage used.
 
@@ -184,7 +184,7 @@ Amount of storage used by object data.
 
 <summary>
 
-standard: optional object {published, uploaded }
+standard: optional object { published, uploaded }
 
 Metrics based on what state they are in(uploaded or published).
 
@@ -194,7 +194,7 @@ Metrics based on what state they are in(uploaded or published).
 
 <summary>
 
-published: optional object {metadataSize, objects, payloadSize }
+published: optional object { metadataSize, objects, payloadSize }
 
 Metrics on number of objects/amount of storage used.
 
@@ -226,7 +226,7 @@ Amount of storage used by object data.
 
 <summary>
 
-uploaded: optional object {metadataSize, objects, payloadSize }
+uploaded: optional object { metadataSize, objects, payloadSize }
 
 Metrics on number of objects/amount of storage used.
 

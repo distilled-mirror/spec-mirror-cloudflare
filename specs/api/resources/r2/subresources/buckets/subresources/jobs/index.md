@@ -38,7 +38,7 @@ GET/accounts/{account\_id}/r2/buckets/{bucket\_name}/jobs/{job\_id}
 
 <summary>
 
-JobListResponse object {jobs, nextContinuationToken }
+JobListResponse object { jobs, nextContinuationToken }
 
 </summary>
 
@@ -46,7 +46,7 @@ JobListResponse object {jobs, nextContinuationToken }
 
 <summary>
 
-jobs: array of object {id, jobType, prefixDelete, 3 more } or object {id, jobType, startTime, 3 more }
+jobs: array of object { id, jobType, prefixDelete, 3 more } or object { id, jobType, startTime, 3 more }
 
 Bucket jobs in the current page.
 
@@ -58,7 +58,7 @@ One of the following:
 
 <summary>
 
-PrefixDelete object {id, jobType, prefixDelete, 3 more }
+PrefixDelete object { id, jobType, prefixDelete, 3 more }
 
 Descriptor of a prefix-delete job. An empty prefix indicates a job that empties the whole bucket.
 
@@ -80,7 +80,7 @@ The job kind.
 
 <summary>
 
-prefixDelete: object {deletedObjects, prefix, isBucketClear }
+prefixDelete: object { deletedObjects, prefix, isBucketClear }
 
 Details specific to the prefix-delete job.
 
@@ -120,7 +120,7 @@ formatdate-time
 
 <summary>
 
-status: "ENQUEUED"or "RUNNING"or "COMPLETED"or 2 more
+status: "ENQUEUED" or "RUNNING" or "COMPLETED" or 2 more
 
 Lifecycle status of a bucket background job.
 
@@ -168,7 +168,7 @@ formatdate-time
 
 <summary>
 
-StorageClassMigration object {id, jobType, startTime, 3 more }
+StorageClassMigration object { id, jobType, startTime, 3 more }
 
 Descriptor of a bucket-wide storage-class migration job.
 
@@ -198,7 +198,7 @@ formatdate-time
 
 <summary>
 
-status: "ENQUEUED"or "RUNNING"or "COMPLETED"or 2 more
+status: "ENQUEUED" or "RUNNING" or "COMPLETED" or 2 more
 
 Lifecycle status of a bucket background job.
 
@@ -234,7 +234,7 @@ One of the following:
 
 <summary>
 
-storageClassMigration: object {destinationStorageClass, migratedObjects, sourceStorageClass, 6 more }
+storageClassMigration: object { destinationStorageClass, migratedObjects, sourceStorageClass, 6 more }
 
 </summary>
 
@@ -242,7 +242,7 @@ storageClassMigration: object {destinationStorageClass, migratedObjects, sourceS
 
 <summary>
 
-destinationStorageClass: "Standard"or "InfrequentAccess"
+destinationStorageClass: "Standard" or "InfrequentAccess"
 
 The storage class objects are migrated to. The source and destination storage classes always differ.
 
@@ -274,7 +274,7 @@ minimum0
 
 <summary>
 
-sourceStorageClass: "Standard"or "InfrequentAccess"
+sourceStorageClass: "Standard" or "InfrequentAccess"
 
 The storage class objects are migrated from.
 
@@ -376,7 +376,7 @@ Token to pass as <code>continuationToken</code> to retrieve the next page.
 
 <summary>
 
-JobCreateResponse = object {id, jobType, prefixDelete, 3 more } or object {id, jobType, startTime, 3 more }
+JobCreateResponse = object { id, jobType, prefixDelete, 3 more } or object { id, jobType, startTime, 3 more }
 
 Descriptor of a bucket background job, discriminated by <code>jobType</code>. Returned by the Create Bucket Job, Get Bucket Job and List Bucket Jobs endpoints. A small operation can already be <code>COMPLETED</code> when it is returned.
 
@@ -388,7 +388,7 @@ One of the following:
 
 <summary>
 
-PrefixDelete object {id, jobType, prefixDelete, 3 more }
+PrefixDelete object { id, jobType, prefixDelete, 3 more }
 
 Descriptor of a prefix-delete job. An empty prefix indicates a job that empties the whole bucket.
 
@@ -410,7 +410,7 @@ The job kind.
 
 <summary>
 
-prefixDelete: object {deletedObjects, prefix, isBucketClear }
+prefixDelete: object { deletedObjects, prefix, isBucketClear }
 
 Details specific to the prefix-delete job.
 
@@ -450,7 +450,7 @@ formatdate-time
 
 <summary>
 
-status: "ENQUEUED"or "RUNNING"or "COMPLETED"or 2 more
+status: "ENQUEUED" or "RUNNING" or "COMPLETED" or 2 more
 
 Lifecycle status of a bucket background job.
 
@@ -498,7 +498,7 @@ formatdate-time
 
 <summary>
 
-StorageClassMigration object {id, jobType, startTime, 3 more }
+StorageClassMigration object { id, jobType, startTime, 3 more }
 
 Descriptor of a bucket-wide storage-class migration job.
 
@@ -528,7 +528,7 @@ formatdate-time
 
 <summary>
 
-status: "ENQUEUED"or "RUNNING"or "COMPLETED"or 2 more
+status: "ENQUEUED" or "RUNNING" or "COMPLETED" or 2 more
 
 Lifecycle status of a bucket background job.
 
@@ -564,7 +564,7 @@ One of the following:
 
 <summary>
 
-storageClassMigration: object {destinationStorageClass, migratedObjects, sourceStorageClass, 6 more }
+storageClassMigration: object { destinationStorageClass, migratedObjects, sourceStorageClass, 6 more }
 
 </summary>
 
@@ -572,7 +572,7 @@ storageClassMigration: object {destinationStorageClass, migratedObjects, sourceS
 
 <summary>
 
-destinationStorageClass: "Standard"or "InfrequentAccess"
+destinationStorageClass: "Standard" or "InfrequentAccess"
 
 The storage class objects are migrated to. The source and destination storage classes always differ.
 
@@ -604,7 +604,7 @@ minimum0
 
 <summary>
 
-sourceStorageClass: "Standard"or "InfrequentAccess"
+sourceStorageClass: "Standard" or "InfrequentAccess"
 
 The storage class objects are migrated from.
 
@@ -696,7 +696,7 @@ formatdate-time
 
 <summary>
 
-JobGetResponse = object {id, jobType, prefixDelete, 3 more } or object {id, jobType, startTime, 3 more }
+JobGetResponse = object { id, jobType, prefixDelete, 3 more } or object { id, jobType, startTime, 3 more }
 
 Descriptor of a bucket background job, discriminated by <code>jobType</code>. Returned by the Create Bucket Job, Get Bucket Job and List Bucket Jobs endpoints. A small operation can already be <code>COMPLETED</code> when it is returned.
 
@@ -708,7 +708,7 @@ One of the following:
 
 <summary>
 
-PrefixDelete object {id, jobType, prefixDelete, 3 more }
+PrefixDelete object { id, jobType, prefixDelete, 3 more }
 
 Descriptor of a prefix-delete job. An empty prefix indicates a job that empties the whole bucket.
 
@@ -730,7 +730,7 @@ The job kind.
 
 <summary>
 
-prefixDelete: object {deletedObjects, prefix, isBucketClear }
+prefixDelete: object { deletedObjects, prefix, isBucketClear }
 
 Details specific to the prefix-delete job.
 
@@ -770,7 +770,7 @@ formatdate-time
 
 <summary>
 
-status: "ENQUEUED"or "RUNNING"or "COMPLETED"or 2 more
+status: "ENQUEUED" or "RUNNING" or "COMPLETED" or 2 more
 
 Lifecycle status of a bucket background job.
 
@@ -818,7 +818,7 @@ formatdate-time
 
 <summary>
 
-StorageClassMigration object {id, jobType, startTime, 3 more }
+StorageClassMigration object { id, jobType, startTime, 3 more }
 
 Descriptor of a bucket-wide storage-class migration job.
 
@@ -848,7 +848,7 @@ formatdate-time
 
 <summary>
 
-status: "ENQUEUED"or "RUNNING"or "COMPLETED"or 2 more
+status: "ENQUEUED" or "RUNNING" or "COMPLETED" or 2 more
 
 Lifecycle status of a bucket background job.
 
@@ -884,7 +884,7 @@ One of the following:
 
 <summary>
 
-storageClassMigration: object {destinationStorageClass, migratedObjects, sourceStorageClass, 6 more }
+storageClassMigration: object { destinationStorageClass, migratedObjects, sourceStorageClass, 6 more }
 
 </summary>
 
@@ -892,7 +892,7 @@ storageClassMigration: object {destinationStorageClass, migratedObjects, sourceS
 
 <summary>
 
-destinationStorageClass: "Standard"or "InfrequentAccess"
+destinationStorageClass: "Standard" or "InfrequentAccess"
 
 The storage class objects are migrated to. The source and destination storage classes always differ.
 
@@ -924,7 +924,7 @@ minimum0
 
 <summary>
 
-sourceStorageClass: "Standard"or "InfrequentAccess"
+sourceStorageClass: "Standard" or "InfrequentAccess"
 
 The storage class objects are migrated from.
 

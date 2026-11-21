@@ -26,7 +26,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 PUT/zones/{zone\_id}/web3/hostnames/{identifier}/ipfs\_universal\_path/content\_list
 
-Update IPFS Universal Path Gateway Content List
+Updates the IPFS Universal Path Gateway content list for a Web3 hostname.
 
 ##### Security
 
@@ -92,7 +92,7 @@ Behavior of the content list.
 
 <summary>
 
-entries: array of object {id, content, created\_on, 3 more }
+entries: array of object { id, content, created\_on, 3 more }
 
 Provides content list entries.
 
@@ -138,7 +138,7 @@ formatdate-time
 
 <summary>
 
-type: optional "cid"or "content\_path"
+type: optional "cid" or "content\_path"
 
 Specify the type of content list entry to block.
 
@@ -190,7 +190,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -232,7 +232,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -276,7 +276,7 @@ Specifies whether the API call was successful.
 
 <summary>
 
-result\_info: optional unknownor string
+result\_info: optional unknown or string
 
 Provides the API response.
 

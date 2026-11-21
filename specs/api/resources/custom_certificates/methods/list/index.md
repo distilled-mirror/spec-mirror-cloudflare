@@ -72,7 +72,7 @@ maxLength32
 
 <summary>
 
-match: optional "any"or "all"
+match: optional "any" or "all"
 
 Whether to match all search requirements or at least one (any).
 
@@ -114,7 +114,7 @@ minimum5
 
 <summary>
 
-status: optional "active"or "expired"or "deleted"or 2 more
+status: optional "active" or "expired" or "deleted" or 2 more
 
 Status of the zone’s custom SSL.
 
@@ -152,7 +152,7 @@ One of the following:
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -174,7 +174,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -194,7 +194,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -216,7 +216,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -318,7 +318,7 @@ Specify the region where your private key can be held locally for optimal TLS pe
 
 <summary>
 
-label: optional "us"or "eu"or "highest\_security"
+label: optional "us" or "eu" or "highest\_security"
 
 </summary>
 
@@ -428,7 +428,7 @@ maxLength65535
 
 <summary>
 
-status: "active"or "deleted"
+status: "active" or "deleted"
 
 Status of the Keyless SSL.
 
@@ -510,7 +510,7 @@ The type of hash used for the certificate.
 
 <summary>
 
-status: optional "active"or "expired"or "deleted"or 2 more
+status: optional "active" or "expired" or "deleted" or 2 more
 
 Status of the zone’s custom SSL.
 
@@ -558,7 +558,7 @@ formatdate-time
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

@@ -87,7 +87,7 @@ POST/accounts/{account\_id}/registrar/domain-transfer-check
 
 <summary>
 
-Registration object {auto\_renew, created\_at, domain\_name, 4 more }
+Registration object { auto\_renew, created\_at, domain\_name, 4 more }
 
 A domain registration resource representing the current state of a registered domain.
 
@@ -131,7 +131,7 @@ Whether the domain is locked for transfer.
 
 <summary>
 
-privacy\_mode: "off"or "redaction"
+privacy\_mode: "off" or "redaction"
 
 Current WHOIS privacy mode for the registration.
 
@@ -155,7 +155,7 @@ One of the following:
 
 <summary>
 
-status: "active"or "registration\_pending"or "transfer\_pending"or 4 more
+status: "active" or "registration\_pending" or "transfer\_pending" or 4 more
 
 Current registration status.
 
@@ -211,7 +211,7 @@ One of the following:
 
 <summary>
 
-WorkflowStatus object {completed, created\_at, links, 4 more }
+WorkflowStatus object { completed, created\_at, links, 4 more }
 
 Status of an async registration workflow.
 
@@ -233,7 +233,7 @@ formatdate-time
 
 <summary>
 
-links: object {self, resource }
+links: object { self, resource }
 
 </summary>
 
@@ -257,7 +257,7 @@ URL to the domain resource.
 
 <summary>
 
-state: "pending"or "in\_progress"or "action\_required"or 3 more
+state: "pending" or "in\_progress" or "action\_required" or 3 more
 
 Describes the workflow lifecycle state.
 
@@ -318,7 +318,7 @@ For domain-centric workflows, <code>context.domain_name</code> identifies the wo
 
 <summary>
 
-error: optional object {code, message }
+error: optional object { code, message }
 
 Provides error details when a workflow reaches the <code>failed</code> state. The workflow type (registration, update, etc.) and underlying registry response determine the specific codes and messages. Workflow error codes differ from immediate HTTP error <code>errors[].code</code> values in non-2xx responses. Surface <code>error.message</code> to the user for context.
 
@@ -348,7 +348,7 @@ Human-readable explanation of the failure. May include registry-specific details
 
 <summary>
 
-RegistrarSearchResponse object {domains }
+RegistrarSearchResponse object { domains }
 
 Contains the search results.
 
@@ -358,7 +358,7 @@ Contains the search results.
 
 <summary>
 
-domains: array of object {name, registrable, pricing, 2 more }
+domains: array of object { name, registrable, pricing, 2 more }
 
 Lists domain suggestions in relevance order. An empty array indicates that the search criteria matched zero domains.
 
@@ -383,7 +383,7 @@ Indicates domain availability according to potentially stale, non-authoritative 
 
 <summary>
 
-pricing: optional object {currency, registration\_cost, renewal\_cost }
+pricing: optional object { currency, registration\_cost, renewal\_cost }
 
 Provides annual pricing information for a given domain. The API returns all per-year prices as strings to preserve decimal precision.
 
@@ -419,7 +419,7 @@ Per-year renewal cost for this domain. Applied to each year beyond the first yea
 
 <summary>
 
-reason: optional "extension\_not\_supported\_via\_api"or "extension\_not\_supported"or "extension\_disallows\_registration"or 2 more
+reason: optional "extension\_not\_supported\_via\_api" or "extension\_not\_supported" or "extension\_disallows\_registration" or 2 more
 
 Appears only when <code>registrable</code> is <code>false</code> and explains the advisory search result. Use POST /domain-check for authoritative status.
 
@@ -461,7 +461,7 @@ One of the following:
 
 <summary>
 
-tier: optional "standard"or "premium"
+tier: optional "standard" or "premium"
 
 The pricing tier for this domain. A <code>registrable</code> value of <code>true</code> always includes this field, which defaults to <code>standard</code> for most domains. A <code>registrable</code> value of <code>false</code> may omit it.
 
@@ -496,7 +496,7 @@ One of the following:
 
 <summary>
 
-RegistrarCheckResponse object {domains }
+RegistrarCheckResponse object { domains }
 
 Contains the availability check results.
 
@@ -506,7 +506,7 @@ Contains the availability check results.
 
 <summary>
 
-domains: array of object {name, registrable, pricing, 2 more }
+domains: array of object { name, registrable, pricing, 2 more }
 
 Array of domain availability results. Results for unsupported extensions contain <code>registrable: false</code> and a <code>reason</code> field. The response may omit malformed domain names.
 
@@ -531,7 +531,7 @@ Indicates programmatic registration eligibility according to a real-time registr
 
 <summary>
 
-pricing: optional object {currency, registration\_cost, renewal\_cost }
+pricing: optional object { currency, registration\_cost, renewal\_cost }
 
 Provides annual pricing information for a given domain. The API returns all per-year prices as strings to preserve decimal precision.
 
@@ -567,7 +567,7 @@ Per-year renewal cost for this domain. Applied to each year beyond the first yea
 
 <summary>
 
-reason: optional "extension\_not\_supported\_via\_api"or "extension\_not\_supported"or "extension\_disallows\_registration"or 2 more
+reason: optional "extension\_not\_supported\_via\_api" or "extension\_not\_supported" or "extension\_disallows\_registration" or 2 more
 
 Appears only when <code>registrable</code> is <code>false</code> and explains the result.
 
@@ -609,7 +609,7 @@ One of the following:
 
 <summary>
 
-tier: optional "standard"or "premium"
+tier: optional "standard" or "premium"
 
 The pricing tier for this domain. A <code>registrable</code> value of <code>true</code> always includes this field, which defaults to <code>standard</code> for most domains. A <code>registrable</code> value of <code>false</code> may omit it.
 
@@ -644,7 +644,7 @@ One of the following:
 
 <summary>
 
-RegistrarTransferCheckResponse object {domains }
+RegistrarTransferCheckResponse object { domains }
 
 Contains the transfer eligibility results.
 
@@ -654,7 +654,7 @@ Contains the transfer eligibility results.
 
 <summary>
 
-domains: map\[object {pricing, transferable, name, reasons } or object {transferable, name, pricing, reasons } ]
+domains: map\[object { pricing, transferable, name, reasons } or object { transferable, name, pricing, reasons } ]
 
 Maps domain names to transfer eligibility results. Each value contains <code>name</code>, <code>transferable</code>, and <code>reasons</code>.
 
@@ -666,7 +666,7 @@ One of the following:
 
 <summary>
 
-TransferableResult object {pricing, transferable, name, reasons }
+TransferableResult object { pricing, transferable, name, reasons }
 
 </summary>
 
@@ -674,7 +674,7 @@ TransferableResult object {pricing, transferable, name, reasons }
 
 <summary>
 
-pricing: object {currency, renewal\_cost, transfer\_cost }
+pricing: object { currency, renewal\_cost, transfer\_cost }
 
 Provides annual pricing information for a given domain. The API returns all per-year prices as strings to preserve decimal precision.
 
@@ -720,7 +720,7 @@ The check evaluates this domain name.
 
 <summary>
 
-reasons: optional array of object {code }
+reasons: optional array of object { code }
 
 </summary>
 
@@ -728,7 +728,7 @@ reasons: optional array of object {code }
 
 <summary>
 
-code: "extension\_not\_supported\_via\_api"or "extension\_not\_supported"or "domain\_premium"or 14 more
+code: "extension\_not\_supported\_via\_api" or "extension\_not\_supported" or "domain\_premium" or 14 more
 
 Transfer eligibility reason code.
 
@@ -838,7 +838,7 @@ One of the following:
 
 <summary>
 
-NonTransferableResult object {transferable, name, pricing, reasons }
+NonTransferableResult object { transferable, name, pricing, reasons }
 
 </summary>
 
@@ -856,7 +856,7 @@ The check evaluates this domain name.
 
 <summary>
 
-pricing: optional object {currency, renewal\_cost, transfer\_cost }
+pricing: optional object { currency, renewal\_cost, transfer\_cost }
 
 Provides annual pricing information for a given domain. The API returns all per-year prices as strings to preserve decimal precision.
 
@@ -892,7 +892,7 @@ The first-year cost to transfer this domain.
 
 <summary>
 
-reasons: optional array of object {code }
+reasons: optional array of object { code }
 
 </summary>
 
@@ -900,7 +900,7 @@ reasons: optional array of object {code }
 
 <summary>
 
-code: "extension\_not\_supported\_via\_api"or "extension\_not\_supported"or "domain\_premium"or 14 more
+code: "extension\_not\_supported\_via\_api" or "extension\_not\_supported" or "domain\_premium" or 14 more
 
 Transfer eligibility reason code.
 
@@ -1060,7 +1060,7 @@ GET/accounts/{account\_id}/registrar/extensions/{extension}
 
 <summary>
 
-ExtensionListResponse object {metadata, registration\_schema, transfer\_schema }
+ExtensionListResponse object { metadata, registration\_schema, transfer\_schema }
 
 Extension entry with metadata and JSON Schema documents for registration and transfer operations.
 
@@ -1070,7 +1070,7 @@ Extension entry with metadata and JSON Schema documents for registration and tra
 
 <summary>
 
-metadata: object {name, tld }
+metadata: object { name, tld }
 
 Extension metadata.
 
@@ -1112,7 +1112,7 @@ JSON Schema describing the expected input structure for transfer operations on t
 
 <summary>
 
-ExtensionGetResponse object {metadata, registration\_schema, transfer\_schema }
+ExtensionGetResponse object { metadata, registration\_schema, transfer\_schema }
 
 Extension entry with metadata and JSON Schema documents for registration and transfer operations.
 
@@ -1122,7 +1122,7 @@ Extension entry with metadata and JSON Schema documents for registration and tra
 
 <summary>
 
-metadata: object {name, tld }
+metadata: object { name, tld }
 
 Extension metadata.
 

@@ -48,7 +48,7 @@ POST/workers/builds/deploy\_hooks/{deploy\_hook\_uuid}
 
 <summary>
 
-DeployHookListResponse = unknownor array of unknown
+DeployHookListResponse = unknown or array of unknown
 
 </summary>
 
@@ -70,7 +70,7 @@ array of unknown
 
 <summary>
 
-DeployHookCreateResponse = object {branch, created\_on, deploy\_hook\_name, 3 more } or object {branch, created\_on, deploy\_hook\_name, 3 more }
+DeployHookCreateResponse = object { branch, created\_on, deploy\_hook\_name, 3 more } or object { branch, created\_on, deploy\_hook\_name, 3 more }
 
 </summary>
 
@@ -80,7 +80,7 @@ One of the following:
 
 <summary>
 
-object {branch, created\_on, deploy\_hook\_name, 3 more }
+object { branch, created\_on, deploy\_hook\_name, 3 more }
 
 </summary>
 
@@ -134,7 +134,7 @@ formatdate-time
 
 <summary>
 
-object {branch, created\_on, deploy\_hook\_name, 3 more }
+object { branch, created\_on, deploy\_hook\_name, 3 more }
 
 </summary>
 
@@ -192,7 +192,7 @@ formatdate-time
 
 <summary>
 
-DeployHookGetResponse = object {branch, created\_on, deploy\_hook\_name, 3 more } or object {branch, created\_on, deploy\_hook\_name, 3 more }
+DeployHookGetResponse = object { branch, created\_on, deploy\_hook\_name, 3 more } or object { branch, created\_on, deploy\_hook\_name, 3 more }
 
 </summary>
 
@@ -202,7 +202,7 @@ One of the following:
 
 <summary>
 
-object {branch, created\_on, deploy\_hook\_name, 3 more }
+object { branch, created\_on, deploy\_hook\_name, 3 more }
 
 </summary>
 
@@ -256,7 +256,7 @@ formatdate-time
 
 <summary>
 
-object {branch, created\_on, deploy\_hook\_name, 3 more }
+object { branch, created\_on, deploy\_hook\_name, 3 more }
 
 </summary>
 
@@ -314,7 +314,7 @@ formatdate-time
 
 <summary>
 
-DeployHookUpdateResponse = object {branch, created\_on, deploy\_hook\_name, 3 more } or object {branch, created\_on, deploy\_hook\_name, 3 more }
+DeployHookUpdateResponse = object { branch, created\_on, deploy\_hook\_name, 3 more } or object { branch, created\_on, deploy\_hook\_name, 3 more }
 
 </summary>
 
@@ -324,7 +324,7 @@ One of the following:
 
 <summary>
 
-object {branch, created\_on, deploy\_hook\_name, 3 more }
+object { branch, created\_on, deploy\_hook\_name, 3 more }
 
 </summary>
 
@@ -378,7 +378,7 @@ formatdate-time
 
 <summary>
 
-object {branch, created\_on, deploy\_hook\_name, 3 more }
+object { branch, created\_on, deploy\_hook\_name, 3 more }
 
 </summary>
 
@@ -436,7 +436,7 @@ formatdate-time
 
 <summary>
 
-DeployHookDeleteResponse = object {branch, created\_on, deploy\_hook\_name, 3 more } or object {branch, created\_on, deploy\_hook\_name, 3 more }
+DeployHookDeleteResponse = object { branch, created\_on, deploy\_hook\_name, 3 more } or object { branch, created\_on, deploy\_hook\_name, 3 more }
 
 </summary>
 
@@ -446,7 +446,7 @@ One of the following:
 
 <summary>
 
-object {branch, created\_on, deploy\_hook\_name, 3 more }
+object { branch, created\_on, deploy\_hook\_name, 3 more }
 
 </summary>
 
@@ -500,7 +500,7 @@ formatdate-time
 
 <summary>
 
-object {branch, created\_on, deploy\_hook\_name, 3 more }
+object { branch, created\_on, deploy\_hook\_name, 3 more }
 
 </summary>
 
@@ -558,7 +558,7 @@ formatdate-time
 
 <summary>
 
-DeployHookTriggerResponse = object {already\_exists, build\_uuid, created\_on, status } or object {already\_exists, build\_uuid, created\_on, status }
+DeployHookTriggerResponse = object { already\_exists, build\_uuid, created\_on, status } or object { already\_exists, build\_uuid, created\_on, status }
 
 </summary>
 
@@ -568,7 +568,7 @@ One of the following:
 
 <summary>
 
-object {already\_exists, build\_uuid, created\_on, status }
+object { already\_exists, build\_uuid, created\_on, status }
 
 </summary>
 
@@ -596,7 +596,7 @@ formatdate-time
 
 <summary>
 
-status: optional "queued"or "initializing"or "running"or "stopped"
+status: optional "queued" or "initializing" or "running" or "stopped"
 
 </summary>
 
@@ -630,7 +630,7 @@ One of the following:
 
 <summary>
 
-object {already\_exists, build\_uuid, created\_on, status }
+object { already\_exists, build\_uuid, created\_on, status }
 
 </summary>
 
@@ -658,7 +658,7 @@ formatdate-time
 
 <summary>
 
-status: optional "queued"or "initializing"or "running"or "stopped"
+status: optional "queued" or "initializing" or "running" or "stopped"
 
 </summary>
 

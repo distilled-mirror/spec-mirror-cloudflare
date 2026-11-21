@@ -82,7 +82,7 @@ maxLength32
 
 <summary>
 
-status: "unverified"or "verified"
+status: "unverified" or "verified"
 
 Destination address status. Non-admin callers may only set verified addresses back to unverified; setting to verified requires admin privileges.
 
@@ -108,7 +108,7 @@ One of the following:
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -130,7 +130,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -150,7 +150,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -172,7 +172,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 

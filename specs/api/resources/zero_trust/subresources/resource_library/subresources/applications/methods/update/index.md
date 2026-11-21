@@ -110,7 +110,7 @@ Support domains matched by the application.
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -132,7 +132,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -152,7 +152,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -174,7 +174,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -200,7 +200,7 @@ Indicates whether the API call was successful.
 
 <summary>
 
-result: optional object {id, application\_confidence\_score, application\_source, 15 more }
+result: optional object { id, application\_confidence\_score, application\_source, 15 more }
 
 </summary>
 
@@ -308,7 +308,7 @@ Support domains matched by the application.
 
 <summary>
 
-supported: array of "GATEWAY"or "ACCESS"or "CASB"
+supported: array of "GATEWAY" or "ACCESS" or "CASB"
 
 Cloudflare products that support this application.
 

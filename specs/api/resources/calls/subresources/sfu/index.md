@@ -44,7 +44,7 @@ DELETE/accounts/{account\_id}/calls/apps/{app\_id}
 
 <summary>
 
-SFUListResponse object {created, modified, name, uid }
+SFUListResponse object { created, modified, name, uid }
 
 </summary>
 
@@ -88,7 +88,7 @@ minLength32
 
 <summary>
 
-SFUGetResponse object {created, modified, name, uid }
+SFUGetResponse object { created, modified, name, uid }
 
 </summary>
 
@@ -132,7 +132,7 @@ minLength32
 
 <summary>
 
-SFUCreateResponse object {created, modified, name, 2 more }
+SFUCreateResponse object { created, modified, name, 2 more }
 
 </summary>
 
@@ -186,7 +186,7 @@ minLength32
 
 <summary>
 
-SFUUpdateResponse object {created, modified, name, uid }
+SFUUpdateResponse object { created, modified, name, uid }
 
 </summary>
 
@@ -230,7 +230,7 @@ minLength32
 
 <summary>
 
-SFUDeleteResponse object {created, modified, name, uid }
+SFUDeleteResponse object { created, modified, name, uid }
 
 </summary>
 

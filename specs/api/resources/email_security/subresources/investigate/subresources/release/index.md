@@ -30,7 +30,7 @@ POST/accounts/{account\_id}/email-security/investigate/release
 
 <summary>
 
-ReleaseBulkResponse object {id, delivered, failed, 2 more }
+ReleaseBulkResponse object { id, delivered, failed, 2 more }
 
 </summary>
 

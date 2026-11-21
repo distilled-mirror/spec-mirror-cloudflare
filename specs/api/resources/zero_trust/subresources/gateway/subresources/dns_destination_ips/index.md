@@ -36,7 +36,7 @@ Indicate the identifier of the pair of IPv4 addresses assigned to this location.
 
 <summary>
 
-DNSDestinationIPListResponse object {id, backup\_ip, pair\_type, primary\_ip }
+DNSDestinationIPListResponse object { id, backup\_ip, pair\_type, primary\_ip }
 
 </summary>
 
@@ -52,7 +52,7 @@ backup\_ip: string
 
 <summary>
 
-pair\_type: "shared"or "dedicated"or "byoip"
+pair\_type: "shared" or "dedicated" or "byoip"
 
 Specify whether the pair shared across multiple accounts (shared) or available exclusively to this account. Non-shared pairs can contain Cloudflare-owned IPs (dedicated) or customer-provided IPs (byoip).
 

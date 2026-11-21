@@ -62,7 +62,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Zone Settings Write`
+`Zone Settings Write``Workers Routes Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -106,7 +106,7 @@ Specifies that, when a WAF rule matches, its configured action will be replaced 
 
 <summary>
 
-block: optional "challenge"or "block"or "simulate"or 2 more
+block: optional "challenge" or "block" or "simulate" or 2 more
 
 The WAF rule action to apply.
 
@@ -142,7 +142,7 @@ One of the following:
 
 <summary>
 
-challenge: optional "challenge"or "block"or "simulate"or 2 more
+challenge: optional "challenge" or "block" or "simulate" or 2 more
 
 The WAF rule action to apply.
 
@@ -178,7 +178,7 @@ One of the following:
 
 <summary>
 
-default: optional "challenge"or "block"or "simulate"or 2 more
+default: optional "challenge" or "block" or "simulate" or 2 more
 
 The WAF rule action to apply.
 
@@ -214,7 +214,7 @@ One of the following:
 
 <summary>
 
-disable: optional "challenge"or "block"or "simulate"or 2 more
+disable: optional "challenge" or "block" or "simulate" or 2 more
 
 The WAF rule action to apply.
 
@@ -250,7 +250,7 @@ One of the following:
 
 <summary>
 
-simulate: optional "challenge"or "block"or "simulate"or 2 more
+simulate: optional "challenge" or "block" or "simulate" or 2 more
 
 The WAF rule action to apply.
 

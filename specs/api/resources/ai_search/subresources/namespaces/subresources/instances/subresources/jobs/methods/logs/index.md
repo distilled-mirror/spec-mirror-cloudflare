@@ -58,6 +58,10 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 </details>
 
+##### Accepted Permissions (at least one required)
+
+`AI Search Metadata Read``AI Search Write``AI Search Read``Auto Rag Write``Auto Rag Read`
+
 ##### P ath ParametersExpand Collapse
 
 account\_id: string
@@ -106,7 +110,7 @@ minimum0
 
 <summary>
 
-result: array of object {id, created\_at, message, message\_type }
+result: array of object { id, created\_at, message, message\_type }
 
 </summary>
 
@@ -134,7 +138,7 @@ message\_type: number
 
 <summary>
 
-result\_info: object {count, page, per\_page, total\_count }
+result\_info: object { count, page, per\_page, total\_count }
 
 </summary>
 

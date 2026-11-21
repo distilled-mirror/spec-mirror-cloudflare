@@ -32,7 +32,7 @@ PATCH/zones/{zone\_id}/argo/smart\_routing
 
 <summary>
 
-SmartRoutingGetResponse object {id, editable, value, modified\_on }
+SmartRoutingGetResponse object { id, editable, value, modified\_on }
 
 </summary>
 
@@ -52,7 +52,7 @@ Specifies if the setting is editable.
 
 <summary>
 
-value: "on"or "off"
+value: "on" or "off"
 
 Specifies the enablement value of Argo Smart Routing.
 
@@ -88,7 +88,7 @@ formatdate-time
 
 <summary>
 
-SmartRoutingEditResponse object {id, editable, value, modified\_on }
+SmartRoutingEditResponse object { id, editable, value, modified\_on }
 
 </summary>
 
@@ -108,7 +108,7 @@ Specifies if the setting is editable.
 
 <summary>
 
-value: "on"or "off"
+value: "on" or "off"
 
 Specifies the enablement value of Argo Smart Routing.
 
@@ -156,7 +156,7 @@ PATCH/zones/{zone\_id}/argo/tiered\_caching
 
 <summary>
 
-TieredCachingGetResponse object {id, editable, value, modified\_on }
+TieredCachingGetResponse object { id, editable, value, modified\_on }
 
 </summary>
 
@@ -176,7 +176,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: "on"or "off"
+value: "on" or "off"
 
 Value of the Tiered Cache zone setting.
 
@@ -212,7 +212,7 @@ formatdate-time
 
 <summary>
 
-TieredCachingEditResponse object {id, editable, value, modified\_on }
+TieredCachingEditResponse object { id, editable, value, modified\_on }
 
 </summary>
 
@@ -232,7 +232,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: "on"or "off"
+value: "on" or "off"
 
 Value of the Tiered Cache zone setting.
 

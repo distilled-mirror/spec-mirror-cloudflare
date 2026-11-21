@@ -66,7 +66,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -110,7 +110,7 @@ minLength2
 
 <summary>
 
-sortBy: optional "cone"or "pfxs"or "ipv4"or 4 more
+sortBy: optional "cone" or "pfxs" or "ipv4" or 4 more
 
 Sorts results by the specified field.
 
@@ -154,7 +154,7 @@ One of the following:
 
 <summary>
 
-sortOrder: optional "ASC"or "DESC"
+sortOrder: optional "ASC" or "DESC"
 
 Sort order.
 
@@ -180,7 +180,7 @@ One of the following:
 
 <summary>
 
-result: object {asns, meta }
+result: object { asns, meta }
 
 </summary>
 
@@ -188,7 +188,7 @@ result: object {asns, meta }
 
 <summary>
 
-asns: array of object {asn, coneSize, country, 7 more }
+asns: array of object { asn, coneSize, country, 7 more }
 
 </summary>
 
@@ -258,7 +258,7 @@ Number of RPKI valid prefixes originated by the AS.
 
 <summary>
 
-meta: object {dataTime, queryTime, totalPeers }
+meta: object { dataTime, queryTime, totalPeers }
 
 </summary>
 

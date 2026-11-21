@@ -30,7 +30,7 @@ POST/accounts/{account\_id}/bulk/subscriptions
 
 <summary>
 
-BulkCreateResponse object {client\_secrets, subscriptions }
+BulkCreateResponse object { client\_secrets, subscriptions }
 
 </summary>
 
@@ -80,7 +80,7 @@ formatdate-time
 
 <summary>
 
-frequency: optional "weekly"or "monthly"or "quarterly"or "yearly"
+frequency: optional "weekly" or "monthly" or "quarterly" or "yearly"
 
 How often the subscription is renewed automatically.
 
@@ -124,7 +124,7 @@ The rate plan applied to the subscription.
 
 <summary>
 
-state: optional "Trial"or "Provisioned"or "Paid"or 4 more
+state: optional "Trial" or "Provisioned" or "Paid" or 4 more
 
 The state that the subscription is in.
 

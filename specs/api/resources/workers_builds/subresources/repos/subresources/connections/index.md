@@ -34,7 +34,7 @@ DELETE/accounts/{account\_id}/builds/repos/connections/{repo\_connection\_uuid}
 
 <summary>
 
-ConnectionUpsertResponse = object {created\_on, deleted\_on, modified\_on, 6 more } or object {created\_on, deleted\_on, modified\_on, 6 more }
+ConnectionUpsertResponse = object { created\_on, deleted\_on, modified\_on, 6 more } or object { created\_on, deleted\_on, modified\_on, 6 more }
 
 </summary>
 
@@ -44,7 +44,7 @@ One of the following:
 
 <summary>
 
-object {created\_on, deleted\_on, modified\_on, 6 more }
+object { created\_on, deleted\_on, modified\_on, 6 more }
 
 </summary>
 
@@ -82,7 +82,7 @@ Human-readable name of the account or namespace that owns the repository.
 
 <summary>
 
-provider\_type: optional "github"or "gitlab"or "gitlab\_internal"or "origin"
+provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
 
 Source control provider.
 
@@ -138,7 +138,7 @@ Human-readable repository name.
 
 <summary>
 
-object {created\_on, deleted\_on, modified\_on, 6 more }
+object { created\_on, deleted\_on, modified\_on, 6 more }
 
 </summary>
 
@@ -176,7 +176,7 @@ Human-readable name of the account or namespace that owns the repository.
 
 <summary>
 
-provider\_type: optional "github"or "gitlab"or "gitlab\_internal"or "origin"
+provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
 
 Source control provider.
 
@@ -236,7 +236,7 @@ Human-readable repository name.
 
 <summary>
 
-ConnectionDeleteResponse = unknownor array of unknown
+ConnectionDeleteResponse = unknown or array of unknown
 
 </summary>
 

@@ -98,7 +98,7 @@ maxLength32
 
 <summary>
 
-body: object {tags } or object {hosts } or object {prefixes } or 3 more
+body: object { tags } or object { hosts } or object { prefixes } or 3 more
 
 </summary>
 
@@ -108,7 +108,7 @@ One of the following:
 
 <summary>
 
-CachePurgeFlexPurgeByTags object {tags }
+CachePurgeFlexPurgeByTags object { tags }
 
 </summary>
 
@@ -126,7 +126,7 @@ Cache tags. Targets all content whose <code>Cache-Tag</code> response header con
 
 <summary>
 
-CachePurgeFlexPurgeByHostnames object {hosts }
+CachePurgeFlexPurgeByHostnames object { hosts }
 
 </summary>
 
@@ -144,7 +144,7 @@ Hostnames, such as <code>www.example.com</code>. Targets all content cached for 
 
 <summary>
 
-CachePurgeFlexPurgeByPrefixes object {prefixes }
+CachePurgeFlexPurgeByPrefixes object { prefixes }
 
 </summary>
 
@@ -162,7 +162,7 @@ URL prefixes, each a hostname followed by a path, such as <code>www.example.com/
 
 <summary>
 
-CachePurgeEverything object {purge\_everything }
+CachePurgeEverything object { purge\_everything }
 
 </summary>
 
@@ -180,7 +180,7 @@ Set to <code>true</code> to target all cached content in the zone, or in the env
 
 <summary>
 
-CachePurgeSingleFile object {files }
+CachePurgeSingleFile object { files }
 
 </summary>
 
@@ -198,7 +198,7 @@ Full URLs, such as <code>https://www.example.com/css/styles.css</code>. Targets 
 
 <summary>
 
-CachePurgeSingleFileWithURLAndHeaders object {files }
+CachePurgeSingleFileWithURLAndHeaders object { files }
 
 </summary>
 
@@ -206,7 +206,7 @@ CachePurgeSingleFileWithURLAndHeaders object {files }
 
 <summary>
 
-files: optional array of object {headers, url }
+files: optional array of object { headers, url }
 
 URLs with the request headers your cache key uses. Use this form when your cache key includes request headers, or the visitor’s device type, country, or language: send the header values each URL was cached with, such as <code>CF-Device-Type</code>, <code>CF-IPCountry</code>, or <code>Accept-Language</code>.
 
@@ -268,7 +268,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -310,7 +310,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -336,7 +336,7 @@ Indicates the API call’s success or failure.
 
 <summary>
 
-result: optional object {id }
+result: optional object { id }
 
 </summary>
 

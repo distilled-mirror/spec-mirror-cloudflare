@@ -46,7 +46,7 @@ DELETE/accounts/{account\_id}/devices/ip-profiles/{profile\_id}
 
 <summary>
 
-IPProfile object {id, created\_at, description, 6 more }
+IPProfile object { id, created\_at, description, 6 more }
 
 </summary>
 
@@ -114,7 +114,7 @@ The RFC3339Nano timestamp when the Device IP profile was last updated.
 
 <summary>
 
-IPProfileDeleteResponse object {id }
+IPProfileDeleteResponse object { id }
 
 </summary>
 

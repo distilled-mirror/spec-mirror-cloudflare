@@ -84,7 +84,7 @@ account\_id: string
 
 <summary>
 
-configuration: object {headers, logpushDataset, type, url }
+configuration: object { headers, logpushDataset, type, url }
 
 </summary>
 
@@ -96,7 +96,7 @@ headers: map\[string]
 
 <summary>
 
-logpushDataset: "opentelemetry-traces"or "opentelemetry-logs"or "opentelemetry-metrics"
+logpushDataset: "opentelemetry-traces" or "opentelemetry-logs" or "opentelemetry-metrics"
 
 </summary>
 
@@ -148,7 +148,7 @@ skipPreflightCheck: optional boolean
 
 <summary>
 
-errors: array of object {message }
+errors: array of object { message }
 
 </summary>
 
@@ -164,7 +164,7 @@ message: string
 
 <summary>
 
-messages: array of object {message }
+messages: array of object { message }
 
 </summary>
 
@@ -180,7 +180,7 @@ message: "Resource created"
 
 <summary>
 
-result: object {configuration, enabled, name, 2 more }
+result: object { configuration, enabled, name, 2 more }
 
 </summary>
 
@@ -188,7 +188,7 @@ result: object {configuration, enabled, name, 2 more }
 
 <summary>
 
-configuration: object {headers, jobStatus, logpushDataset, 2 more }
+configuration: object { headers, jobStatus, logpushDataset, 2 more }
 
 </summary>
 
@@ -200,7 +200,7 @@ headers: map\[string]
 
 <summary>
 
-jobStatus: object {error\_message, last\_complete, last\_error }
+jobStatus: object { error\_message, last\_complete, last\_error }
 
 </summary>
 
@@ -224,7 +224,7 @@ last\_error: string
 
 <summary>
 
-logpushDataset: "opentelemetry-traces"or "opentelemetry-logs"or "opentelemetry-metrics"
+logpushDataset: "opentelemetry-traces" or "opentelemetry-logs" or "opentelemetry-metrics"
 
 </summary>
 

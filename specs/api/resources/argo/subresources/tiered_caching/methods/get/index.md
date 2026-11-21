@@ -92,7 +92,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -134,7 +134,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -160,7 +160,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, editable, value, modified\_on }
+result: optional object { id, editable, value, modified\_on }
 
 </summary>
 
@@ -180,7 +180,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: "on"or "off"
+value: "on" or "off"
 
 Value of the Tiered Cache zone setting.
 

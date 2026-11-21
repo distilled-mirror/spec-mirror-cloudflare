@@ -122,7 +122,7 @@ minimum1
 
 <summary>
 
-status: optional "inactive"or "degraded"or "healthy"or "down"
+status: optional "inactive" or "degraded" or "healthy" or "down"
 
 The status of the tunnel. Valid values are <code>inactive</code> (tunnel has never been run), <code>degraded</code> (tunnel is active and able to serve traffic but in an unhealthy state), <code>healthy</code> (tunnel is active and able to serve traffic), or <code>down</code> (tunnel can not serve traffic as it has no connections to the Cloudflare Edge).
 
@@ -178,7 +178,7 @@ formatdate-time
 
 <summary>
 
-errors: array of object {code, message, context }
+errors: array of object { code, message, context }
 
 </summary>
 
@@ -206,7 +206,7 @@ Optional error-specific context.
 
 <summary>
 
-messages: array of object {code, message, context }
+messages: array of object { code, message, context }
 
 </summary>
 
@@ -234,7 +234,7 @@ Optional error-specific context.
 
 <summary>
 
-result: array of object {id, account\_tag, connections, 8 more }
+result: array of object { id, account\_tag, connections, 8 more }
 
 </summary>
 
@@ -260,7 +260,7 @@ maxLength32
 
 <summary>
 
-Deprecatedconnections: optional array of object {id, client\_id, client\_version, 5 more }
+Deprecatedconnections: optional array of object { id, client\_id, client\_version, 5 more }
 
 This field will start returning an empty array. To fetch the connections of a given tunnel, please use the dedicated endpoint <code>/accounts/{account_id}/{tunnel_type}/{tunnel_id}/connections</code>
 
@@ -384,7 +384,7 @@ A user-friendly name for a tunnel.
 
 <summary>
 
-status: optional "inactive"or "degraded"or "healthy"or "down"
+status: optional "inactive" or "degraded" or "healthy" or "down"
 
 The status of the tunnel. Valid values are <code>inactive</code> (tunnel has never been run), <code>degraded</code> (tunnel is active and able to serve traffic but in an unhealthy state), <code>healthy</code> (tunnel is active and able to serve traffic), or <code>down</code> (tunnel can not serve traffic as it has no connections to the Cloudflare Edge).
 
@@ -416,7 +416,7 @@ One of the following:
 
 <summary>
 
-tun\_type: optional "cfd\_tunnel"or "warp\_connector"or "warp"or 4 more
+tun\_type: optional "cfd\_tunnel" or "warp\_connector" or "warp" or 4 more
 
 The type of tunnel.
 
@@ -470,7 +470,7 @@ Whether the API call was successful
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object { count, page, per\_page, total\_count }
 
 </summary>
 

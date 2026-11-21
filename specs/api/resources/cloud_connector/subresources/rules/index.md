@@ -32,7 +32,7 @@ PUT/zones/{zone\_id}/cloud\_connector/rules
 
 <summary>
 
-RuleListResponse object {id, description, enabled, 3 more }
+RuleListResponse object { id, description, enabled, 3 more }
 
 </summary>
 
@@ -56,7 +56,7 @@ expression: optional string
 
 <summary>
 
-parameters: optional object {host }
+parameters: optional object { host }
 
 Parameters of Cloud Connector Rule
 
@@ -76,7 +76,7 @@ Host to perform Cloud Connection to
 
 <summary>
 
-provider: optional "aws\_s3"or "cloudflare\_r2"or "gcp\_storage"or 2 more
+provider: optional "aws\_s3" or "cloudflare\_r2" or "gcp\_storage" or 2 more
 
 Cloud Provider type
 
@@ -116,7 +116,7 @@ One of the following:
 
 <summary>
 
-RuleUpdateResponse object {id, description, enabled, 3 more }
+RuleUpdateResponse object { id, description, enabled, 3 more }
 
 </summary>
 
@@ -140,7 +140,7 @@ expression: optional string
 
 <summary>
 
-parameters: optional object {host }
+parameters: optional object { host }
 
 Parameters of Cloud Connector Rule
 
@@ -160,7 +160,7 @@ Host to perform Cloud Connection to
 
 <summary>
 
-provider: optional "aws\_s3"or "cloudflare\_r2"or "gcp\_storage"or 2 more
+provider: optional "aws\_s3" or "cloudflare\_r2" or "gcp\_storage" or 2 more
 
 Cloud Provider type
 

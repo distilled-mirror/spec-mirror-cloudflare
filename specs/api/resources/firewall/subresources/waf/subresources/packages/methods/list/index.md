@@ -80,7 +80,7 @@ maxLength32
 
 <summary>
 
-direction: optional "asc"or "desc"
+direction: optional "asc" or "desc"
 
 The direction used to sort returned packages.
 
@@ -104,7 +104,7 @@ One of the following:
 
 <summary>
 
-match: optional "any"or "all"
+match: optional "any" or "all"
 
 When set to <code>all</code>, all the search requirements must match. When set to <code>any</code>, only one of the search requirements has to match.
 
@@ -160,7 +160,7 @@ minimum5
 
 <summary>
 
-FirewallAPIResponseCollection object {errors, messages, result, 2 more }
+FirewallAPIResponseCollection object { errors, messages, result, 2 more }
 
 </summary>
 
@@ -190,7 +190,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -232,7 +232,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -262,7 +262,7 @@ Defines whether the API call was successful.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object { count, page, per\_page, total\_count }
 
 </summary>
 
@@ -302,7 +302,7 @@ Defines the total results available without any search parameters.
 
 <summary>
 
-Result object {result }
+Result object { result }
 
 </summary>
 
@@ -310,7 +310,7 @@ Result object {result }
 
 <summary>
 
-result: optional array of object {id, description, detection\_mode, 3 more } or object {id, description, detection\_mode, 5 more }
+result: optional array of object { id, description, detection\_mode, 3 more } or object { id, description, detection\_mode, 5 more }
 
 </summary>
 
@@ -320,7 +320,7 @@ One of the following:
 
 <summary>
 
-FirewallPackageDefinition object {id, description, detection\_mode, 3 more }
+FirewallPackageDefinition object { id, description, detection\_mode, 3 more }
 
 </summary>
 
@@ -342,7 +342,7 @@ A summary of the purpose/function of the WAF package.
 
 <summary>
 
-detection\_mode: "anomaly"or "traditional"
+detection\_mode: "anomaly" or "traditional"
 
 The mode that defines how rules within the package are evaluated during the course of a request. When a package uses anomaly detection mode (<code>anomaly</code> value), each rule is given a score when triggered. If the total score of all triggered rules exceeds the sensitivity defined in the WAF package, the action configured in the package will be performed. Traditional detection mode (<code>traditional</code> value) will decide the action to take when it is triggered by the request. If multiple rules are triggered, the action providing the highest protection will be applied (for example, a ‘block’ action will win over a ‘challenge’ action).
 
@@ -390,7 +390,7 @@ When set to <code>active</code>, indicates that the WAF package will be applied 
 
 <summary>
 
-FirewallAnomalyPackage object {id, description, detection\_mode, 5 more }
+FirewallAnomalyPackage object { id, description, detection\_mode, 5 more }
 
 </summary>
 
@@ -412,7 +412,7 @@ A summary of the purpose/function of the WAF package.
 
 <summary>
 
-detection\_mode: "anomaly"or "traditional"
+detection\_mode: "anomaly" or "traditional"
 
 When a WAF package uses anomaly detection, each rule is given a score when triggered. If the total score of all triggered rules exceeds the sensitivity defined on the WAF package, the action defined on the package will be taken.
 
@@ -450,7 +450,7 @@ maxLength32
 
 <summary>
 
-action\_mode: optional "simulate"or "block"or "challenge"
+action\_mode: optional "simulate" or "block" or "challenge"
 
 The default action performed by the rules in the WAF package.
 
@@ -478,7 +478,7 @@ One of the following:
 
 <summary>
 
-sensitivity: optional "high"or "medium"or "low"or "off"
+sensitivity: optional "high" or "medium" or "low" or "off"
 
 The sensitivity of the WAF package.
 

@@ -28,7 +28,7 @@ GET/accounts/{account\_id}/addressing/services
 
 <summary>
 
-ServiceListResponse object {id, name }
+ServiceListResponse object { id, name }
 
 </summary>
 

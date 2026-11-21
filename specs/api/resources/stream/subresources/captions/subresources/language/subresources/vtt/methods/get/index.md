@@ -60,7 +60,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Stream Write``Stream Read`
+`Stream Metadata Read``AI Search Index Engine``Stream Write``Stream Read`
 
 ##### P ath ParametersExpand Collapse
 

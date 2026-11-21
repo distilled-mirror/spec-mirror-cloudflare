@@ -116,7 +116,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -142,7 +142,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional array of object {id, account\_id, association\_status, 3 more }
+result: optional array of object { id, account\_id, association\_status, 3 more }
 
 </summary>
 
@@ -170,7 +170,7 @@ minLength32
 
 <summary>
 
-association\_status: "associating"or "associated"or "disassociating"or "disassociated"
+association\_status: "associating" or "associated" or "disassociating" or "disassociated"
 
 The current state of the recipient relative to the share. The <code>desired_association_status</code> (not exposed in the response) tracks the target state set by the API; the background reconciliation workflow drives <code>current_association_status</code> toward it.
 
@@ -223,7 +223,7 @@ formatdate-time
 
 <summary>
 
-resources: optional array of object {error, resource\_id, resource\_version, terminal }
+resources: optional array of object { error, resource\_id, resource\_version, terminal }
 
 </summary>
 
@@ -263,7 +263,7 @@ Whether the error is terminal or will be continually retried.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

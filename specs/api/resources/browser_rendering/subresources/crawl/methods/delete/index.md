@@ -74,7 +74,7 @@ The ID of the crawl job to cancel.
 
 <summary>
 
-result: object {job\_id, message }
+result: object { job\_id, message }
 
 </summary>
 
@@ -104,7 +104,7 @@ Response status.
 
 <summary>
 
-errors: optional array of object {code, message }
+errors: optional array of object { code, message }
 
 </summary>
 

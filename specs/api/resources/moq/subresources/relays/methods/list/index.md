@@ -82,7 +82,7 @@ minimum1
 
 <summary>
 
-errors: array of object {code, message }
+errors: array of object { code, message }
 
 </summary>
 
@@ -102,7 +102,7 @@ message: optional string
 
 <summary>
 
-messages: array of object {code, message }
+messages: array of object { code, message }
 
 </summary>
 
@@ -126,7 +126,7 @@ success: boolean
 
 <summary>
 
-result: optional array of object {created, modified, name, uid }
+result: optional array of object { created, modified, name, uid }
 
 </summary>
 
@@ -158,7 +158,7 @@ uid: string
 
 <summary>
 
-result\_info: optional object {count, total }
+result\_info: optional object { count, total }
 
 </summary>
 

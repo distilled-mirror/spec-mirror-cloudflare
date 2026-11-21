@@ -60,7 +60,7 @@ A list of registration IDs to unrevoke.
 
 <summary>
 
-errors: array of object {code, message }
+errors: array of object { code, message }
 
 </summary>
 
@@ -80,7 +80,7 @@ message: string
 
 <summary>
 
-messages: array of object {code, message }
+messages: array of object { code, message }
 
 </summary>
 
@@ -110,7 +110,7 @@ Whether the API call was successful.
 
 <summary>
 
-result\_info: optional object {count, cursor, per\_page, total\_count }
+result\_info: optional object { count, cursor, per\_page, total\_count }
 
 V4 public API Pagination/Cursor info.
 

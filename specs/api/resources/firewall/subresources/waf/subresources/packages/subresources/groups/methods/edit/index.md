@@ -98,7 +98,7 @@ maxLength32
 
 <summary>
 
-mode: optional "on"or "off"
+mode: optional "on" or "off"
 
 Defines the state of the rules contained in the rule group. When <code>on</code>, the rules in the group are configurable/usable.
 
@@ -146,7 +146,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -188,7 +188,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -208,7 +208,7 @@ pointer: optional string
 
 <summary>
 
-result: unknownor string
+result: unknown or string
 
 </summary>
 

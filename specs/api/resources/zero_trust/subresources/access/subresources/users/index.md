@@ -46,7 +46,7 @@ DELETE/accounts/{account\_id}/access/users/{user\_id}
 
 <summary>
 
-AccessUser object {id, active, displayName, 4 more }
+AccessUser object { id, active, displayName, 4 more }
 
 </summary>
 
@@ -72,7 +72,7 @@ The name of the SCIM User resource.
 
 <summary>
 
-emails: optional array of object {primary, type, value }
+emails: optional array of object { primary, type, value }
 
 </summary>
 
@@ -110,7 +110,7 @@ The IdP-generated Id of the SCIM resource.
 
 <summary>
 
-meta: optional object {created, lastModified }
+meta: optional object { created, lastModified }
 
 The metadata of the SCIM resource.
 
@@ -150,7 +150,7 @@ The list of URIs which indicate the attributes contained within a SCIM resource.
 
 <summary>
 
-UserListResponse object {id, access\_seat, active\_device\_count, 8 more }
+UserListResponse object { id, access\_seat, active\_device\_count, 8 more }
 
 </summary>
 
@@ -234,7 +234,7 @@ formatdate-time
 
 <summary>
 
-UserGetResponse object {id, access\_seat, active\_device\_count, 8 more }
+UserGetResponse object { id, access\_seat, active\_device\_count, 8 more }
 
 </summary>
 
@@ -318,7 +318,7 @@ formatdate-time
 
 <summary>
 
-UserCreateResponse object {id, access\_seat, active\_device\_count, 8 more }
+UserCreateResponse object { id, access\_seat, active\_device\_count, 8 more }
 
 </summary>
 
@@ -402,7 +402,7 @@ formatdate-time
 
 <summary>
 
-UserUpdateResponse object {id, access\_seat, active\_device\_count, 8 more }
+UserUpdateResponse object { id, access\_seat, active\_device\_count, 8 more }
 
 </summary>
 
@@ -502,7 +502,7 @@ GET/accounts/{account\_id}/access/users/{user\_id}/active\_sessions/{nonce}
 
 <summary>
 
-ActiveSessionListResponse object {expiration, metadata, name }
+ActiveSessionListResponse object { expiration, metadata, name }
 
 </summary>
 
@@ -514,7 +514,7 @@ expiration: optional number
 
 <summary>
 
-metadata: optional object {apps, expires, iat, 2 more }
+metadata: optional object { apps, expires, iat, 2 more }
 
 </summary>
 
@@ -522,7 +522,7 @@ metadata: optional object {apps, expires, iat, 2 more }
 
 <summary>
 
-apps: optional map\[object {hostname, name, type, uid } ]
+apps: optional map\[object { hostname, name, type, uid } ]
 
 </summary>
 
@@ -578,7 +578,7 @@ name: optional string
 
 <summary>
 
-ActiveSessionGetResponse object {account\_id, auth\_status, common\_name, 16 more }
+ActiveSessionGetResponse object { account\_id, auth\_status, common\_name, 16 more }
 
 </summary>
 
@@ -602,7 +602,7 @@ device\_id: optional string
 
 <summary>
 
-device\_sessions: optional map\[object {last\_authenticated } ]
+device\_sessions: optional map\[object { last\_authenticated } ]
 
 </summary>
 
@@ -618,7 +618,7 @@ last\_authenticated: optional number
 
 <summary>
 
-devicePosture: optional map\[object {id, check, data, 6 more } ]
+devicePosture: optional map\[object { id, check, data, 6 more } ]
 
 </summary>
 
@@ -630,7 +630,7 @@ id: optional string
 
 <summary>
 
-check: optional object {exists, path }
+check: optional object { exists, path }
 
 </summary>
 
@@ -686,7 +686,7 @@ email: optional string
 
 <summary>
 
-geo: optional object {country }
+geo: optional object { country }
 
 </summary>
 
@@ -706,7 +706,7 @@ iat: optional number
 
 <summary>
 
-idp: optional object {id, type }
+idp: optional object { id, type }
 
 </summary>
 
@@ -742,7 +742,7 @@ isActive: optional boolean
 
 <summary>
 
-mtls\_auth: optional object {auth\_status, cert\_issuer\_dn, cert\_issuer\_ski, 2 more }
+mtls\_auth: optional object { auth\_status, cert\_issuer\_dn, cert\_issuer\_ski, 2 more }
 
 </summary>
 
@@ -802,7 +802,7 @@ GET/accounts/{account\_id}/access/users/{user\_id}/last\_seen\_identity
 
 <summary>
 
-Identity object {account\_id, auth\_status, common\_name, 15 more }
+Identity object { account\_id, auth\_status, common\_name, 15 more }
 
 </summary>
 
@@ -826,7 +826,7 @@ device\_id: optional string
 
 <summary>
 
-device\_sessions: optional map\[object {last\_authenticated } ]
+device\_sessions: optional map\[object { last\_authenticated } ]
 
 </summary>
 
@@ -842,7 +842,7 @@ last\_authenticated: optional number
 
 <summary>
 
-devicePosture: optional map\[object {id, check, data, 6 more } ]
+devicePosture: optional map\[object { id, check, data, 6 more } ]
 
 </summary>
 
@@ -854,7 +854,7 @@ id: optional string
 
 <summary>
 
-check: optional object {exists, path }
+check: optional object { exists, path }
 
 </summary>
 
@@ -910,7 +910,7 @@ email: optional string
 
 <summary>
 
-geo: optional object {country }
+geo: optional object { country }
 
 </summary>
 
@@ -930,7 +930,7 @@ iat: optional number
 
 <summary>
 
-idp: optional object {id, type }
+idp: optional object { id, type }
 
 </summary>
 
@@ -962,7 +962,7 @@ is\_warp: optional boolean
 
 <summary>
 
-mtls\_auth: optional object {auth\_status, cert\_issuer\_dn, cert\_issuer\_ski, 2 more }
+mtls\_auth: optional object { auth\_status, cert\_issuer\_dn, cert\_issuer\_ski, 2 more }
 
 </summary>
 
@@ -1014,7 +1014,7 @@ version: optional number
 
 <summary>
 
-LastSeenIdentityGetResponse object {account\_id, auth\_status, common\_name, 16 more }
+LastSeenIdentityGetResponse object { account\_id, auth\_status, common\_name, 16 more }
 
 </summary>
 
@@ -1038,7 +1038,7 @@ device\_id: optional string
 
 <summary>
 
-device\_sessions: optional map\[object {last\_authenticated } ]
+device\_sessions: optional map\[object { last\_authenticated } ]
 
 </summary>
 
@@ -1054,7 +1054,7 @@ last\_authenticated: optional number
 
 <summary>
 
-devicePosture: optional map\[object {id, check, data, 6 more } ]
+devicePosture: optional map\[object { id, check, data, 6 more } ]
 
 </summary>
 
@@ -1066,7 +1066,7 @@ id: optional string
 
 <summary>
 
-check: optional object {exists, path }
+check: optional object { exists, path }
 
 </summary>
 
@@ -1122,7 +1122,7 @@ email: optional string
 
 <summary>
 
-geo: optional object {country }
+geo: optional object { country }
 
 </summary>
 
@@ -1142,7 +1142,7 @@ iat: optional number
 
 <summary>
 
-idp: optional object {id, type }
+idp: optional object { id, type }
 
 </summary>
 
@@ -1174,7 +1174,7 @@ is\_warp: optional boolean
 
 <summary>
 
-mtls\_auth: optional object {auth\_status, cert\_issuer\_dn, cert\_issuer\_ski, 2 more }
+mtls\_auth: optional object { auth\_status, cert\_issuer\_dn, cert\_issuer\_ski, 2 more }
 
 </summary>
 
@@ -1206,7 +1206,7 @@ cert\_serial: optional string
 
 <summary>
 
-passkeys: optional array of object {id, created\_at, last\_used\_at, name }
+passkeys: optional array of object { id, created\_at, last\_used\_at, name }
 
 Active passkey enrollments for the user.
 
@@ -1270,7 +1270,7 @@ GET/accounts/{account\_id}/access/users/{user\_id}/failed\_logins
 
 <summary>
 
-FailedLoginListResponse object {expiration, metadata }
+FailedLoginListResponse object { expiration, metadata }
 
 </summary>
 

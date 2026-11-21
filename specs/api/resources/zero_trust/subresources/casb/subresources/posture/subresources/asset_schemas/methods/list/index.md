@@ -38,7 +38,7 @@ The preferred authorization scheme for interacting with the Cloudflare API. [Cre
 
 ##### Accepted Permissions (at least one required)
 
-`Zero Trust Read``Zero Trust Write`
+`CASB Write``CASB Read``Zero Trust Read``Zero Trust Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -52,7 +52,7 @@ account\_id: string
 
 <summary>
 
-vendor: optional "ANTHROPIC"or "AWS"or "BITBUCKET"or 14 more
+vendor: optional "ANTHROPIC" or "AWS" or "BITBUCKET" or 14 more
 
 Restrict the result to a single vendor. Unknown values return 400.
 
@@ -138,7 +138,7 @@ One of the following:
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -168,7 +168,7 @@ formaturi
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -190,7 +190,7 @@ JSON pointer to the source of the error.
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -220,7 +220,7 @@ formaturi
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -248,7 +248,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional array of object {asset\_classes, vendor }
+result: optional array of object { asset\_classes, vendor }
 
 Asset classes grouped by vendor, sorted by vendor enum.
 
@@ -258,7 +258,7 @@ Asset classes grouped by vendor, sorted by vendor enum.
 
 <summary>
 
-asset\_classes: array of object {asset\_class, origin, id, 2 more }
+asset\_classes: array of object { asset\_class, origin, id, 2 more }
 
 Asset classes belonging to this vendor, sorted by asset\_class.
 
@@ -274,7 +274,7 @@ Asset class identifier (PascalCase), e.g. AnthropicUser.
 
 <summary>
 
-origin: "system"or "cloudflare"or "custom"
+origin: "system" or "cloudflare" or "custom"
 
 Who defines the asset class: <code>system</code> for built-in asset classes, <code>cloudflare</code> for asset types provided by Cloudflare, and <code>custom</code> for the account’s own asset types.
 

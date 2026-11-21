@@ -34,7 +34,7 @@ POST/accounts/{account\_id}/data-security/posture/webhooks/jobs
 
 <summary>
 
-JobCreateResponse object {created, failed }
+JobCreateResponse object { created, failed }
 
 </summary>
 
@@ -42,7 +42,7 @@ JobCreateResponse object {created, failed }
 
 <summary>
 
-created: array of object {id, asset\_data, created\_at, 9 more }
+created: array of object { id, asset\_data, created\_at, 9 more }
 
 Successfully created webhook jobs.
 
@@ -90,7 +90,7 @@ formatdate-time
 
 <summary>
 
-parameters: object {finding\_instance\_id }
+parameters: object { finding\_instance\_id }
 
 Parameters for a webhook job.
 
@@ -112,7 +112,7 @@ formatuuid
 
 <summary>
 
-status: "pending"or "processing"or "completed"or "failed"
+status: "pending" or "processing" or "completed" or "failed"
 
 Status of a webhook job.
 
@@ -144,7 +144,7 @@ One of the following:
 
 <summary>
 
-triggered\_by\_actor: "user"or "account\_token"
+triggered\_by\_actor: "user" or "account\_token"
 
 Type of actor that triggered the webhook job.
 
@@ -188,7 +188,7 @@ Additional details about the failure.
 
 <summary>
 
-failure\_reason: optional "Permission Denied"or "Integration Unavailable"or "Service Temporarily Unavailable"or "System Error"
+failure\_reason: optional "Permission Denied" or "Integration Unavailable" or "Service Temporarily Unavailable" or "System Error"
 
 Reason for webhook job failure.
 
@@ -224,7 +224,7 @@ One of the following:
 
 <summary>
 
-failed: array of object {error, finding\_instance\_id, webhook\_id }
+failed: array of object { error, finding\_instance\_id, webhook\_id }
 
 Failed webhook job creation attempts.
 

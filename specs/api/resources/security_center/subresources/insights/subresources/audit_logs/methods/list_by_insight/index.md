@@ -100,7 +100,7 @@ Opaque cursor for pagination. Use the cursor value from result\_info of the prev
 
 <summary>
 
-field\_changed: optional "status"or "user\_classification"
+field\_changed: optional "status" or "user\_classification"
 
 Filter by the field that was changed.
 
@@ -124,7 +124,7 @@ One of the following:
 
 <summary>
 
-order: optional "asc"or "desc"
+order: optional "asc" or "desc"
 
 Sort order for results. Use ‘asc’ for oldest first or ‘desc’ for newest first.
 
@@ -168,7 +168,7 @@ formatdate-time
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -190,7 +190,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -210,7 +210,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -232,7 +232,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -258,7 +258,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional array of object {id, changed\_at, changed\_by, 6 more }
+result: optional array of object { id, changed\_at, changed\_by, 6 more }
 
 </summary>
 
@@ -294,7 +294,7 @@ The value of the field after the change. Null if the field was cleared.
 
 <summary>
 
-field\_changed: optional "status"or "user\_classification"
+field\_changed: optional "status" or "user\_classification"
 
 The field that was changed.
 
@@ -348,7 +348,7 @@ formatint64
 
 <summary>
 
-result\_info: optional object {count, cursor, per\_page }
+result\_info: optional object { count, cursor, per\_page }
 
 </summary>
 

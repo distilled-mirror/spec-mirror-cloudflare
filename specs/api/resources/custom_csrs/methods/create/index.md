@@ -120,7 +120,7 @@ Optional description for the CSR.
 
 <summary>
 
-key\_type: optional "rsa2048"or "p256v1"
+key\_type: optional "rsa2048" or "p256v1"
 
 Key algorithm to use for the CSR. Defaults to rsa2048 if not specified.
 
@@ -158,7 +158,7 @@ Organizational unit name.
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -180,7 +180,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -200,7 +200,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -222,7 +222,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -248,7 +248,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, created\_at, key\_type, 11 more }
+result: optional object { id, created\_at, key\_type, 11 more }
 
 A custom Certificate Signing Request (CSR).
 
@@ -274,7 +274,7 @@ formatdate-time
 
 <summary>
 
-key\_type: "rsa2048"or "p256v1"
+key\_type: "rsa2048" or "p256v1"
 
 The key algorithm used to generate the CSR.
 

@@ -52,7 +52,7 @@ POST/accounts/{account\_id}/pages/projects/{project\_name}/purge\_build\_cache
 
 <summary>
 
-Deployment object {id, aliases, build\_config, 15 more }
+Deployment object { id, aliases, build\_config, 15 more }
 
 </summary>
 
@@ -72,7 +72,7 @@ A list of alias URLs pointing to this deployment.
 
 <summary>
 
-build\_config: object {web\_analytics\_tag, web\_analytics\_token, build\_caching, 3 more }
+build\_config: object { web\_analytics\_tag, web\_analytics\_token, build\_caching, 3 more }
 
 Configs for the project build process.
 
@@ -130,7 +130,7 @@ formatdate-time
 
 <summary>
 
-deployment\_trigger: object {metadata, type }
+deployment\_trigger: object { metadata, type }
 
 Info about what caused the deployment.
 
@@ -140,7 +140,7 @@ Info about what caused the deployment.
 
 <summary>
 
-metadata: object {branch, commit\_dirty, commit\_hash, commit\_message }
+metadata: object { branch, commit\_dirty, commit\_hash, commit\_message }
 
 Additional info about the trigger.
 
@@ -178,7 +178,7 @@ Message of the deployment trigger commit.
 
 <summary>
 
-type: "github:push"or "ad\_hoc"or "deploy\_hook"
+type: "github:push" or "ad\_hoc" or "deploy\_hook"
 
 What caused the deployment.
 
@@ -210,7 +210,7 @@ One of the following:
 
 <summary>
 
-env\_vars: map\[object {type, value } or object {type, value } ]
+env\_vars: map\[object { type, value } or object { type, value } ]
 
 Environment variables used for builds and Pages Functions.
 
@@ -222,7 +222,7 @@ One of the following:
 
 <summary>
 
-PlainText object {type, value }
+PlainText object { type, value }
 
 A plaintext environment variable.
 
@@ -246,7 +246,7 @@ Environment variable value.
 
 <summary>
 
-SecretText object {type, value }
+SecretText object { type, value }
 
 An encrypted environment variable.
 
@@ -274,7 +274,7 @@ Secret value.
 
 <summary>
 
-environment: "preview"or "production"
+environment: "preview" or "production"
 
 Type of deploy.
 
@@ -336,7 +336,7 @@ Short Id (8 character) of the deployment.
 
 <summary>
 
-source: object {config, type }
+source: object { config, type }
 
 Configs for the project source control.
 
@@ -346,7 +346,7 @@ Configs for the project source control.
 
 <summary>
 
-config: object {deployments\_enabled, owner, owner\_id, 10 more }
+config: object { deployments\_enabled, owner, owner\_id, 10 more }
 
 </summary>
 
@@ -404,7 +404,7 @@ A list of branches that should trigger a preview deployment. Wildcard syntax (<c
 
 <summary>
 
-preview\_deployment\_setting: "all"or "none"or "custom"
+preview\_deployment\_setting: "all" or "none" or "custom"
 
 Controls whether commits to preview branches trigger a preview deployment.
 
@@ -460,7 +460,7 @@ The name of the repository.
 
 <summary>
 
-type: "github"or "gitlab"
+type: "github" or "gitlab"
 
 The source control management provider.
 
@@ -506,7 +506,7 @@ formatdate-time
 
 <summary>
 
-name: "queued"or "initialize"or "clone\_repo"or 2 more
+name: "queued" or "initialize" or "clone\_repo" or 2 more
 
 The current build stage.
 
@@ -550,7 +550,7 @@ formatdate-time
 
 <summary>
 
-status: "success"or "idle"or "active"or 3 more
+status: "success" or "idle" or "active" or 3 more
 
 State of the current stage.
 
@@ -600,7 +600,7 @@ The live URL to view this deployment.
 
 <summary>
 
-skip\_reason: optional "commit\_message"or "preview\_deployments\_disabled"or "production\_deployments\_disabled"or 4 more
+skip\_reason: optional "commit\_message" or "preview\_deployments\_disabled" or "production\_deployments\_disabled" or 4 more
 
 Why the deployment was skipped.
 
@@ -654,7 +654,7 @@ Whether the deployment uses functions.
 
 <summary>
 
-Project object {id, canonical\_deployment, created\_on, 14 more }
+Project object { id, canonical\_deployment, created\_on, 14 more }
 
 </summary>
 
@@ -682,7 +682,7 @@ formatdate-time
 
 <summary>
 
-deployment\_configs: object {preview, production }
+deployment\_configs: object { preview, production }
 
 Configs for deployments in a project.
 
@@ -692,7 +692,7 @@ Configs for deployments in a project.
 
 <summary>
 
-preview: object {always\_use\_latest\_compatibility\_date, build\_image\_major\_version, compatibility\_date, 19 more }
+preview: object { always\_use\_latest\_compatibility\_date, build\_image\_major\_version, compatibility\_date, 19 more }
 
 Configs for preview deploys.
 
@@ -726,7 +726,7 @@ Compatibility flags used for Pages Functions.
 
 <summary>
 
-env\_vars: map\[object {type, value } or object {type, value } ]
+env\_vars: map\[object { type, value } or object { type, value } ]
 
 Environment variables used for builds and Pages Functions.
 
@@ -738,7 +738,7 @@ One of the following:
 
 <summary>
 
-PlainText object {type, value }
+PlainText object { type, value }
 
 A plaintext environment variable.
 
@@ -762,7 +762,7 @@ Environment variable value.
 
 <summary>
 
-SecretText object {type, value }
+SecretText object { type, value }
 
 An encrypted environment variable.
 
@@ -796,7 +796,7 @@ Whether to fail open when the deployment config cannot be applied.
 
 <summary>
 
-Deprecatedusage\_model: "standard"or "bundled"or "unbound"
+Deprecatedusage\_model: "standard" or "bundled" or "unbound"
 
 All new projects now use the Standard usage model.
 
@@ -826,7 +826,7 @@ One of the following:
 
 <summary>
 
-ai\_bindings: optional map\[object {project\_id } ]
+ai\_bindings: optional map\[object { project\_id } ]
 
 Constellation bindings used for Pages Functions.
 
@@ -844,7 +844,7 @@ project\_id: string
 
 <summary>
 
-analytics\_engine\_datasets: optional map\[object {dataset } ]
+analytics\_engine\_datasets: optional map\[object { dataset } ]
 
 Analytics Engine bindings used for Pages Functions.
 
@@ -860,7 +860,7 @@ Name of the dataset.
 
 <a href="#">Link to this property</a>
 
-browsers: optional map\[object {} ]
+browsers: optional map\[object { } ]
 
 Browser bindings used for Pages Functions.
 
@@ -870,7 +870,7 @@ Browser bindings used for Pages Functions.
 
 <summary>
 
-d1\_databases: optional map\[object {id } ]
+d1\_databases: optional map\[object { id } ]
 
 D1 databases used for Pages Functions.
 
@@ -890,7 +890,7 @@ UUID of the D1 database.
 
 <summary>
 
-durable\_object\_namespaces: optional map\[object {namespace\_id } ]
+durable\_object\_namespaces: optional map\[object { namespace\_id } ]
 
 Durable Object namespaces used for Pages Functions.
 
@@ -910,7 +910,7 @@ ID of the Durable Object namespace.
 
 <summary>
 
-hyperdrive\_bindings: optional map\[object {id } ]
+hyperdrive\_bindings: optional map\[object { id } ]
 
 Hyperdrive bindings used for Pages Functions.
 
@@ -928,7 +928,7 @@ id: string
 
 <summary>
 
-kv\_namespaces: optional map\[object {namespace\_id } ]
+kv\_namespaces: optional map\[object { namespace\_id } ]
 
 KV namespaces used for Pages Functions.
 
@@ -948,7 +948,7 @@ ID of the KV namespace.
 
 <summary>
 
-limits: optional object {cpu\_ms }
+limits: optional object { cpu\_ms }
 
 Limits for Pages Functions.
 
@@ -968,7 +968,7 @@ CPU time limit in milliseconds.
 
 <summary>
 
-mtls\_certificates: optional map\[object {certificate\_id } ]
+mtls\_certificates: optional map\[object { certificate\_id } ]
 
 mTLS bindings used for Pages Functions.
 
@@ -986,7 +986,7 @@ certificate\_id: string
 
 <summary>
 
-placement: optional object {mode }
+placement: optional object { mode }
 
 Placement setting used for Pages Functions.
 
@@ -1006,7 +1006,7 @@ Placement mode.
 
 <summary>
 
-queue\_producers: optional map\[object {name } ]
+queue\_producers: optional map\[object { name } ]
 
 Queue Producer bindings used for Pages Functions.
 
@@ -1026,7 +1026,7 @@ Name of the Queue.
 
 <summary>
 
-r2\_buckets: optional map\[object {name, jurisdiction } ]
+r2\_buckets: optional map\[object { name, jurisdiction } ]
 
 R2 buckets used for Pages Functions.
 
@@ -1052,7 +1052,7 @@ Jurisdiction of the R2 bucket.
 
 <summary>
 
-services: optional map\[object {environment, service, entrypoint } ]
+services: optional map\[object { environment, service, entrypoint } ]
 
 Services used for Pages Functions.
 
@@ -1084,7 +1084,7 @@ The entrypoint to bind to.
 
 <summary>
 
-vectorize\_bindings: optional map\[object {index\_name } ]
+vectorize\_bindings: optional map\[object { index\_name } ]
 
 Vectorize bindings used for Pages Functions.
 
@@ -1112,7 +1112,7 @@ Hash of the Wrangler configuration used for the deployment.
 
 <summary>
 
-production: object {always\_use\_latest\_compatibility\_date, build\_image\_major\_version, compatibility\_date, 19 more }
+production: object { always\_use\_latest\_compatibility\_date, build\_image\_major\_version, compatibility\_date, 19 more }
 
 Configs for production deploys.
 
@@ -1146,7 +1146,7 @@ Compatibility flags used for Pages Functions.
 
 <summary>
 
-env\_vars: map\[object {type, value } or object {type, value } ]
+env\_vars: map\[object { type, value } or object { type, value } ]
 
 Environment variables used for builds and Pages Functions.
 
@@ -1158,7 +1158,7 @@ One of the following:
 
 <summary>
 
-PlainText object {type, value }
+PlainText object { type, value }
 
 A plaintext environment variable.
 
@@ -1182,7 +1182,7 @@ Environment variable value.
 
 <summary>
 
-SecretText object {type, value }
+SecretText object { type, value }
 
 An encrypted environment variable.
 
@@ -1216,7 +1216,7 @@ Whether to fail open when the deployment config cannot be applied.
 
 <summary>
 
-Deprecatedusage\_model: "standard"or "bundled"or "unbound"
+Deprecatedusage\_model: "standard" or "bundled" or "unbound"
 
 All new projects now use the Standard usage model.
 
@@ -1246,7 +1246,7 @@ One of the following:
 
 <summary>
 
-ai\_bindings: optional map\[object {project\_id } ]
+ai\_bindings: optional map\[object { project\_id } ]
 
 Constellation bindings used for Pages Functions.
 
@@ -1264,7 +1264,7 @@ project\_id: string
 
 <summary>
 
-analytics\_engine\_datasets: optional map\[object {dataset } ]
+analytics\_engine\_datasets: optional map\[object { dataset } ]
 
 Analytics Engine bindings used for Pages Functions.
 
@@ -1280,7 +1280,7 @@ Name of the dataset.
 
 <a href="#">Link to this property</a>
 
-browsers: optional map\[object {} ]
+browsers: optional map\[object { } ]
 
 Browser bindings used for Pages Functions.
 
@@ -1290,7 +1290,7 @@ Browser bindings used for Pages Functions.
 
 <summary>
 
-d1\_databases: optional map\[object {id } ]
+d1\_databases: optional map\[object { id } ]
 
 D1 databases used for Pages Functions.
 
@@ -1310,7 +1310,7 @@ UUID of the D1 database.
 
 <summary>
 
-durable\_object\_namespaces: optional map\[object {namespace\_id } ]
+durable\_object\_namespaces: optional map\[object { namespace\_id } ]
 
 Durable Object namespaces used for Pages Functions.
 
@@ -1330,7 +1330,7 @@ ID of the Durable Object namespace.
 
 <summary>
 
-hyperdrive\_bindings: optional map\[object {id } ]
+hyperdrive\_bindings: optional map\[object { id } ]
 
 Hyperdrive bindings used for Pages Functions.
 
@@ -1348,7 +1348,7 @@ id: string
 
 <summary>
 
-kv\_namespaces: optional map\[object {namespace\_id } ]
+kv\_namespaces: optional map\[object { namespace\_id } ]
 
 KV namespaces used for Pages Functions.
 
@@ -1368,7 +1368,7 @@ ID of the KV namespace.
 
 <summary>
 
-limits: optional object {cpu\_ms }
+limits: optional object { cpu\_ms }
 
 Limits for Pages Functions.
 
@@ -1388,7 +1388,7 @@ CPU time limit in milliseconds.
 
 <summary>
 
-mtls\_certificates: optional map\[object {certificate\_id } ]
+mtls\_certificates: optional map\[object { certificate\_id } ]
 
 mTLS bindings used for Pages Functions.
 
@@ -1406,7 +1406,7 @@ certificate\_id: string
 
 <summary>
 
-placement: optional object {mode }
+placement: optional object { mode }
 
 Placement setting used for Pages Functions.
 
@@ -1426,7 +1426,7 @@ Placement mode.
 
 <summary>
 
-queue\_producers: optional map\[object {name } ]
+queue\_producers: optional map\[object { name } ]
 
 Queue Producer bindings used for Pages Functions.
 
@@ -1446,7 +1446,7 @@ Name of the Queue.
 
 <summary>
 
-r2\_buckets: optional map\[object {name, jurisdiction } ]
+r2\_buckets: optional map\[object { name, jurisdiction } ]
 
 R2 buckets used for Pages Functions.
 
@@ -1472,7 +1472,7 @@ Jurisdiction of the R2 bucket.
 
 <summary>
 
-services: optional map\[object {environment, service, entrypoint } ]
+services: optional map\[object { environment, service, entrypoint } ]
 
 Services used for Pages Functions.
 
@@ -1504,7 +1504,7 @@ The entrypoint to bind to.
 
 <summary>
 
-vectorize\_bindings: optional map\[object {index\_name } ]
+vectorize\_bindings: optional map\[object { index\_name } ]
 
 Vectorize bindings used for Pages Functions.
 
@@ -1584,7 +1584,7 @@ Whether the project uses functions.
 
 <summary>
 
-build\_config: optional object {web\_analytics\_tag, web\_analytics\_token, build\_caching, 3 more }
+build\_config: optional object { web\_analytics\_tag, web\_analytics\_token, build\_caching, 3 more }
 
 Configs for the project build process.
 
@@ -1634,7 +1634,7 @@ Directory to run the command.
 
 <summary>
 
-build\_image\_auto\_upgrade: optional object {from\_version, to\_version }
+build\_image\_auto\_upgrade: optional object { from\_version, to\_version }
 
 Present when the project is set to a retired build image major version and its builds have been moved to a newer one. <code>build_image_major_version</code> in <code>deployment_configs</code> then reports the version the builds run on.
 
@@ -1666,7 +1666,7 @@ A list of associated custom domains for the project.
 
 <summary>
 
-source: optional object {config, type }
+source: optional object { config, type }
 
 Configs for the project source control.
 
@@ -1676,7 +1676,7 @@ Configs for the project source control.
 
 <summary>
 
-config: object {deployments\_enabled, owner, owner\_id, 10 more }
+config: object { deployments\_enabled, owner, owner\_id, 10 more }
 
 </summary>
 
@@ -1734,7 +1734,7 @@ A list of branches that should trigger a preview deployment. Wildcard syntax (<c
 
 <summary>
 
-preview\_deployment\_setting: "all"or "none"or "custom"
+preview\_deployment\_setting: "all" or "none" or "custom"
 
 Controls whether commits to preview branches trigger a preview deployment.
 
@@ -1790,7 +1790,7 @@ The name of the repository.
 
 <summary>
 
-type: "github"or "gitlab"
+type: "github" or "gitlab"
 
 The source control management provider.
 
@@ -1828,7 +1828,7 @@ The Cloudflare subdomain associated with the project.
 
 <summary>
 
-Stage object {ended\_on, name, started\_on, status }
+Stage object { ended\_on, name, started\_on, status }
 
 The status of the deployment.
 
@@ -1846,7 +1846,7 @@ formatdate-time
 
 <summary>
 
-name: "queued"or "initialize"or "clone\_repo"or 2 more
+name: "queued" or "initialize" or "clone\_repo" or 2 more
 
 The current build stage.
 
@@ -1890,7 +1890,7 @@ formatdate-time
 
 <summary>
 
-status: "success"or "idle"or "active"or 3 more
+status: "success" or "idle" or "active" or 3 more
 
 State of the current stage.
 
@@ -1934,7 +1934,7 @@ One of the following:
 
 <summary>
 
-ProjectGetUploadTokenResponse object {jwt }
+ProjectGetUploadTokenResponse object { jwt }
 
 </summary>
 
@@ -2002,7 +2002,7 @@ GET/accounts/{account\_id}/pages/projects/{project\_name}/deployments/{deploymen
 
 <summary>
 
-LogGetResponse object {data, includes\_container\_logs, total }
+LogGetResponse object { data, includes\_container\_logs, total }
 
 </summary>
 
@@ -2010,7 +2010,7 @@ LogGetResponse object {data, includes\_container\_logs, total }
 
 <summary>
 
-data: array of object {line, ts }
+data: array of object { line, ts }
 
 </summary>
 
@@ -2054,7 +2054,7 @@ DELETE/accounts/{account\_id}/pages/projects/{project\_name}/deployments/{deploy
 
 <summary>
 
-TailCreateResponse object {id, url }
+TailCreateResponse object { id, url }
 
 A tail session for streaming logs from a Pages deployment.
 
@@ -2108,7 +2108,7 @@ DELETE/accounts/{account\_id}/pages/projects/{project\_name}/domains/{domain\_na
 
 <summary>
 
-DomainListResponse object {id, certificate\_authority, created\_on, 6 more }
+DomainListResponse object { id, certificate\_authority, created\_on, 6 more }
 
 </summary>
 
@@ -2120,7 +2120,7 @@ id: string
 
 <summary>
 
-certificate\_authority: "google"or "lets\_encrypt"
+certificate\_authority: "google" or "lets\_encrypt"
 
 </summary>
 
@@ -2156,7 +2156,7 @@ Fully qualified domain name for the Pages project, such as <code>example.com</co
 
 <summary>
 
-status: "initializing"or "pending"or "active"or 3 more
+status: "initializing" or "pending" or "active" or 3 more
 
 </summary>
 
@@ -2194,7 +2194,7 @@ One of the following:
 
 <summary>
 
-validation\_data: object {method, status, error\_message, 2 more }
+validation\_data: object { method, status, error\_message, 2 more }
 
 </summary>
 
@@ -2202,7 +2202,7 @@ validation\_data: object {method, status, error\_message, 2 more }
 
 <summary>
 
-method: "http"or "txt"
+method: "http" or "txt"
 
 </summary>
 
@@ -2224,7 +2224,7 @@ One of the following:
 
 <summary>
 
-status: "initializing"or "pending"or "active"or 2 more
+status: "initializing" or "pending" or "active" or 2 more
 
 </summary>
 
@@ -2274,7 +2274,7 @@ txt\_value: optional string
 
 <summary>
 
-verification\_data: object {status, error\_message }
+verification\_data: object { status, error\_message }
 
 </summary>
 
@@ -2282,7 +2282,7 @@ verification\_data: object {status, error\_message }
 
 <summary>
 
-status: "pending"or "active"or "deactivated"or 2 more
+status: "pending" or "active" or "deactivated" or 2 more
 
 </summary>
 
@@ -2332,7 +2332,7 @@ zone\_tag: string
 
 <summary>
 
-DomainGetResponse object {id, certificate\_authority, created\_on, 6 more }
+DomainGetResponse object { id, certificate\_authority, created\_on, 6 more }
 
 </summary>
 
@@ -2344,7 +2344,7 @@ id: string
 
 <summary>
 
-certificate\_authority: "google"or "lets\_encrypt"
+certificate\_authority: "google" or "lets\_encrypt"
 
 </summary>
 
@@ -2380,7 +2380,7 @@ Fully qualified domain name for the Pages project, such as <code>example.com</co
 
 <summary>
 
-status: "initializing"or "pending"or "active"or 3 more
+status: "initializing" or "pending" or "active" or 3 more
 
 </summary>
 
@@ -2418,7 +2418,7 @@ One of the following:
 
 <summary>
 
-validation\_data: object {method, status, error\_message, 2 more }
+validation\_data: object { method, status, error\_message, 2 more }
 
 </summary>
 
@@ -2426,7 +2426,7 @@ validation\_data: object {method, status, error\_message, 2 more }
 
 <summary>
 
-method: "http"or "txt"
+method: "http" or "txt"
 
 </summary>
 
@@ -2448,7 +2448,7 @@ One of the following:
 
 <summary>
 
-status: "initializing"or "pending"or "active"or 2 more
+status: "initializing" or "pending" or "active" or 2 more
 
 </summary>
 
@@ -2498,7 +2498,7 @@ txt\_value: optional string
 
 <summary>
 
-verification\_data: object {status, error\_message }
+verification\_data: object { status, error\_message }
 
 </summary>
 
@@ -2506,7 +2506,7 @@ verification\_data: object {status, error\_message }
 
 <summary>
 
-status: "pending"or "active"or "deactivated"or 2 more
+status: "pending" or "active" or "deactivated" or 2 more
 
 </summary>
 
@@ -2556,7 +2556,7 @@ zone\_tag: string
 
 <summary>
 
-DomainCreateResponse object {id, certificate\_authority, created\_on, 6 more }
+DomainCreateResponse object { id, certificate\_authority, created\_on, 6 more }
 
 </summary>
 
@@ -2568,7 +2568,7 @@ id: string
 
 <summary>
 
-certificate\_authority: "google"or "lets\_encrypt"
+certificate\_authority: "google" or "lets\_encrypt"
 
 </summary>
 
@@ -2604,7 +2604,7 @@ Fully qualified domain name for the Pages project, such as <code>example.com</co
 
 <summary>
 
-status: "initializing"or "pending"or "active"or 3 more
+status: "initializing" or "pending" or "active" or 3 more
 
 </summary>
 
@@ -2642,7 +2642,7 @@ One of the following:
 
 <summary>
 
-validation\_data: object {method, status, error\_message, 2 more }
+validation\_data: object { method, status, error\_message, 2 more }
 
 </summary>
 
@@ -2650,7 +2650,7 @@ validation\_data: object {method, status, error\_message, 2 more }
 
 <summary>
 
-method: "http"or "txt"
+method: "http" or "txt"
 
 </summary>
 
@@ -2672,7 +2672,7 @@ One of the following:
 
 <summary>
 
-status: "initializing"or "pending"or "active"or 2 more
+status: "initializing" or "pending" or "active" or 2 more
 
 </summary>
 
@@ -2722,7 +2722,7 @@ txt\_value: optional string
 
 <summary>
 
-verification\_data: object {status, error\_message }
+verification\_data: object { status, error\_message }
 
 </summary>
 
@@ -2730,7 +2730,7 @@ verification\_data: object {status, error\_message }
 
 <summary>
 
-status: "pending"or "active"or "deactivated"or 2 more
+status: "pending" or "active" or "deactivated" or 2 more
 
 </summary>
 
@@ -2780,7 +2780,7 @@ zone\_tag: string
 
 <summary>
 
-DomainEditResponse object {id, certificate\_authority, created\_on, 6 more }
+DomainEditResponse object { id, certificate\_authority, created\_on, 6 more }
 
 </summary>
 
@@ -2792,7 +2792,7 @@ id: string
 
 <summary>
 
-certificate\_authority: "google"or "lets\_encrypt"
+certificate\_authority: "google" or "lets\_encrypt"
 
 </summary>
 
@@ -2828,7 +2828,7 @@ Fully qualified domain name for the Pages project, such as <code>example.com</co
 
 <summary>
 
-status: "initializing"or "pending"or "active"or 3 more
+status: "initializing" or "pending" or "active" or 3 more
 
 </summary>
 
@@ -2866,7 +2866,7 @@ One of the following:
 
 <summary>
 
-validation\_data: object {method, status, error\_message, 2 more }
+validation\_data: object { method, status, error\_message, 2 more }
 
 </summary>
 
@@ -2874,7 +2874,7 @@ validation\_data: object {method, status, error\_message, 2 more }
 
 <summary>
 
-method: "http"or "txt"
+method: "http" or "txt"
 
 </summary>
 
@@ -2896,7 +2896,7 @@ One of the following:
 
 <summary>
 
-status: "initializing"or "pending"or "active"or 2 more
+status: "initializing" or "pending" or "active" or 2 more
 
 </summary>
 
@@ -2946,7 +2946,7 @@ txt\_value: optional string
 
 <summary>
 
-verification\_data: object {status, error\_message }
+verification\_data: object { status, error\_message }
 
 </summary>
 
@@ -2954,7 +2954,7 @@ verification\_data: object {status, error\_message }
 
 <summary>
 
-status: "pending"or "active"or "deactivated"or 2 more
+status: "pending" or "active" or "deactivated" or 2 more
 
 </summary>
 
@@ -3024,7 +3024,7 @@ POST/pages/assets/upload
 
 <summary>
 
-AssetUpsertHashesResponse object {errors, messages, success }
+AssetUpsertHashesResponse object { errors, messages, success }
 
 </summary>
 
@@ -3032,7 +3032,7 @@ AssetUpsertHashesResponse object {errors, messages, success }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -3054,7 +3054,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -3074,7 +3074,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -3096,7 +3096,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -3130,7 +3130,7 @@ AssetCheckMissingResponse = string
 
 <summary>
 
-AssetUploadResponse object {errors, messages, success }
+AssetUploadResponse object { errors, messages, success }
 
 </summary>
 
@@ -3138,7 +3138,7 @@ AssetUploadResponse object {errors, messages, success }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -3160,7 +3160,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -3180,7 +3180,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -3202,7 +3202,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 

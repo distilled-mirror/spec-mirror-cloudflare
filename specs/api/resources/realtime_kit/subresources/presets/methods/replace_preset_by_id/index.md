@@ -86,7 +86,7 @@ formatuuid
 
 <summary>
 
-config: object {max\_screenshare\_count, max\_video\_streams, media, 2 more }
+config: object { max\_screenshare\_count, max\_video\_streams, media, 2 more }
 
 </summary>
 
@@ -100,7 +100,7 @@ Maximum number of screen shares that can be active at a given time
 
 <summary>
 
-max\_video\_streams: object {desktop, mobile }
+max\_video\_streams: object { desktop, mobile }
 
 Maximum number of streams that are visible on a device
 
@@ -126,7 +126,7 @@ Maximum number of streams visible on mobile devices
 
 <summary>
 
-media: object {screenshare, video, audio }
+media: object { screenshare, video, audio }
 
 Media configuration options. eg: Video quality
 
@@ -136,7 +136,7 @@ Media configuration options. eg: Video quality
 
 <summary>
 
-screenshare: object {frame\_rate, quality }
+screenshare: object { frame\_rate, quality }
 
 Configuration options for participant screen shares
 
@@ -152,7 +152,7 @@ Frame rate of screen share
 
 <summary>
 
-quality: "hd"or "vga"or "qvga"or 2 more
+quality: "hd" or "vga" or "qvga" or 2 more
 
 Quality of screen share
 
@@ -192,7 +192,7 @@ One of the following:
 
 <summary>
 
-video: object {frame\_rate, quality, simulcast }
+video: object { frame\_rate, quality, simulcast }
 
 Configuration options for participant videos
 
@@ -210,7 +210,7 @@ maximum30
 
 <summary>
 
-quality: "hd"or "vga"or "qvga"or 2 more
+quality: "hd" or "vga" or "qvga" or 2 more
 
 Video quality of participants
 
@@ -256,7 +256,7 @@ Enable simulcast for participant videos.
 
 <summary>
 
-audio: optional object {enable\_high\_bitrate, enable\_stereo }
+audio: optional object { enable\_high\_bitrate, enable\_stereo }
 
 Control options for Audio quality.
 
@@ -286,7 +286,7 @@ Enable Stereo for your meetings
 
 <summary>
 
-view\_type: "GROUP\_CALL"or "WEBINAR"or "AUDIO\_ROOM"or "LIVESTREAM"
+view\_type: "GROUP\_CALL" or "WEBINAR" or "AUDIO\_ROOM" or "LIVESTREAM"
 
 Type of the meeting
 
@@ -334,7 +334,7 @@ Name of the preset
 
 <summary>
 
-permissions: object {accept\_waiting\_requests, can\_accept\_production\_requests, can\_change\_participant\_permissions, 24 more }
+permissions: object { accept\_waiting\_requests, can\_accept\_production\_requests, can\_change\_participant\_permissions, 24 more }
 
 </summary>
 
@@ -372,7 +372,7 @@ can\_spotlight: boolean
 
 <summary>
 
-chat: object {private, public }
+chat: object { private, public }
 
 </summary>
 
@@ -380,7 +380,7 @@ chat: object {private, public }
 
 <summary>
 
-private: object {can\_receive, can\_send, files, text }
+private: object { can\_receive, can\_send, files, text }
 
 </summary>
 
@@ -408,7 +408,7 @@ text: boolean
 
 <summary>
 
-public: object {can\_send, files, text }
+public: object { can\_send, files, text }
 
 </summary>
 
@@ -442,7 +442,7 @@ Can send text messages
 
 <summary>
 
-connected\_meetings: object {can\_alter\_connected\_meetings, can\_switch\_connected\_meetings, can\_switch\_to\_parent\_meeting }
+connected\_meetings: object { can\_alter\_connected\_meetings, can\_switch\_connected\_meetings, can\_switch\_to\_parent\_meeting }
 
 </summary>
 
@@ -488,7 +488,7 @@ kick\_participant: boolean
 
 <summary>
 
-media: object {audio, screenshare, video }
+media: object { audio, screenshare, video }
 
 Media permissions
 
@@ -498,7 +498,7 @@ Media permissions
 
 <summary>
 
-audio: object {can\_produce }
+audio: object { can\_produce }
 
 Audio permissions
 
@@ -508,7 +508,7 @@ Audio permissions
 
 <summary>
 
-can\_produce: "ALLOWED"or "NOT\_ALLOWED"or "CAN\_REQUEST"
+can\_produce: "ALLOWED" or "NOT\_ALLOWED" or "CAN\_REQUEST"
 
 Can produce audio
 
@@ -540,7 +540,7 @@ One of the following:
 
 <summary>
 
-screenshare: object {can\_produce }
+screenshare: object { can\_produce }
 
 Screenshare permissions
 
@@ -550,7 +550,7 @@ Screenshare permissions
 
 <summary>
 
-can\_produce: "ALLOWED"or "NOT\_ALLOWED"or "CAN\_REQUEST"
+can\_produce: "ALLOWED" or "NOT\_ALLOWED" or "CAN\_REQUEST"
 
 Can produce screen share video
 
@@ -582,7 +582,7 @@ One of the following:
 
 <summary>
 
-video: object {can\_produce }
+video: object { can\_produce }
 
 Video permissions
 
@@ -592,7 +592,7 @@ Video permissions
 
 <summary>
 
-can\_produce: "ALLOWED"or "NOT\_ALLOWED"or "CAN\_REQUEST"
+can\_produce: "ALLOWED" or "NOT\_ALLOWED" or "CAN\_REQUEST"
 
 Can produce video
 
@@ -632,7 +632,7 @@ pin\_participant: boolean
 
 <summary>
 
-plugins: object {can\_close, can\_edit\_config, can\_start, config }
+plugins: object { can\_close, can\_edit\_config, can\_start, config }
 
 Plugin permissions
 
@@ -660,7 +660,7 @@ Can start plugins
 
 <summary>
 
-config: map\[object {access\_control, handles\_view\_only } ]
+config: map\[object { access\_control, handles\_view\_only } ]
 
 Plugin configuration keyed by plugin UUID.
 
@@ -670,7 +670,7 @@ Plugin configuration keyed by plugin UUID.
 
 <summary>
 
-access\_control: optional "FULL\_ACCESS"or "VIEW\_ONLY"
+access\_control: optional "FULL\_ACCESS" or "VIEW\_ONLY"
 
 </summary>
 
@@ -704,7 +704,7 @@ handles\_view\_only: optional boolean
 
 <summary>
 
-polls: object {can\_create, can\_view, can\_vote }
+polls: object { can\_create, can\_view, can\_vote }
 
 Poll permissions
 
@@ -736,7 +736,7 @@ Can vote on polls
 
 <summary>
 
-recorder\_type: "RECORDER"or "LIVESTREAMER"or "NONE"
+recorder\_type: "RECORDER" or "LIVESTREAMER" or "NONE"
 
 Type of the recording peer
 
@@ -768,7 +768,7 @@ show\_participant\_list: boolean
 
 <summary>
 
-waiting\_room\_type: "SKIP"or "ON\_PRIVILEGED\_USER\_ENTRY"or "SKIP\_ON\_ACCEPT"
+waiting\_room\_type: "SKIP" or "ON\_PRIVILEGED\_USER\_ENTRY" or "SKIP\_ON\_ACCEPT"
 
 Waiting room type
 
@@ -810,7 +810,7 @@ is\_recorder: optional boolean
 
 <summary>
 
-stage\_access: optional "ALLOWED"or "NOT\_ALLOWED"or "CAN\_REQUEST"
+stage\_access: optional "ALLOWED" or "NOT\_ALLOWED" or "CAN\_REQUEST"
 
 </summary>
 
@@ -848,7 +848,7 @@ transcription\_enabled: optional boolean
 
 <summary>
 
-ui: object {design\_tokens }
+ui: object { design\_tokens }
 
 </summary>
 
@@ -856,7 +856,7 @@ ui: object {design\_tokens }
 
 <summary>
 
-design\_tokens: object {border\_radius, border\_width, colors, 5 more }
+design\_tokens: object { border\_radius, border\_width, colors, 5 more }
 
 </summary>
 
@@ -864,7 +864,7 @@ design\_tokens: object {border\_radius, border\_width, colors, 5 more }
 
 <summary>
 
-border\_radius: "sharp"or "rounded"or "extra-rounded"or "circular"
+border\_radius: "sharp" or "rounded" or "extra-rounded" or "circular"
 
 </summary>
 
@@ -894,7 +894,7 @@ One of the following:
 
 <summary>
 
-border\_width: "none"or "thin"or "fat"
+border\_width: "none" or "thin" or "fat"
 
 </summary>
 
@@ -920,7 +920,7 @@ One of the following:
 
 <summary>
 
-colors: object {background, brand, danger, 5 more }
+colors: object { background, brand, danger, 5 more }
 
 </summary>
 
@@ -928,7 +928,7 @@ colors: object {background, brand, danger, 5 more }
 
 <summary>
 
-background: object {"1000", "600", "700", 2 more }
+background: object { "1000", "600", "700", 2 more }
 
 </summary>
 
@@ -960,7 +960,7 @@ background: object {"1000", "600", "700", 2 more }
 
 <summary>
 
-brand: object {"300", "400", "500", 2 more }
+brand: object { "300", "400", "500", 2 more }
 
 </summary>
 
@@ -1026,7 +1026,7 @@ minimum1
 
 <summary>
 
-theme: "darkest"or "dark"or "light"
+theme: "darkest" or "dark" or "light"
 
 </summary>
 
@@ -1076,7 +1076,7 @@ formaturi
 
 <summary>
 
-data: object {id, config, created\_at, 4 more }
+data: object { id, config, created\_at, 4 more }
 
 Data returned by the operation
 
@@ -1094,7 +1094,7 @@ formatuuid
 
 <summary>
 
-config: object {max\_screenshare\_count, max\_video\_streams, media, 2 more }
+config: object { max\_screenshare\_count, max\_video\_streams, media, 2 more }
 
 </summary>
 
@@ -1108,7 +1108,7 @@ Maximum number of screen shares that can be active at a given time
 
 <summary>
 
-max\_video\_streams: object {desktop, mobile }
+max\_video\_streams: object { desktop, mobile }
 
 Maximum number of streams that are visible on a device
 
@@ -1134,7 +1134,7 @@ Maximum number of streams visible on mobile devices
 
 <summary>
 
-media: object {screenshare, video, audio }
+media: object { screenshare, video, audio }
 
 Media configuration options. eg: Video quality
 
@@ -1144,7 +1144,7 @@ Media configuration options. eg: Video quality
 
 <summary>
 
-screenshare: object {frame\_rate, quality }
+screenshare: object { frame\_rate, quality }
 
 Configuration options for participant screen shares
 
@@ -1160,7 +1160,7 @@ Frame rate of screen share
 
 <summary>
 
-quality: "hd"or "vga"or "qvga"or 2 more
+quality: "hd" or "vga" or "qvga" or 2 more
 
 Quality of screen share
 
@@ -1200,7 +1200,7 @@ One of the following:
 
 <summary>
 
-video: object {frame\_rate, quality, simulcast }
+video: object { frame\_rate, quality, simulcast }
 
 Configuration options for participant videos
 
@@ -1218,7 +1218,7 @@ maximum30
 
 <summary>
 
-quality: "hd"or "vga"or "qvga"or 2 more
+quality: "hd" or "vga" or "qvga" or 2 more
 
 Video quality of participants
 
@@ -1264,7 +1264,7 @@ Enable simulcast for participant videos.
 
 <summary>
 
-audio: optional object {enable\_high\_bitrate, enable\_stereo }
+audio: optional object { enable\_high\_bitrate, enable\_stereo }
 
 Control options for Audio quality.
 
@@ -1294,7 +1294,7 @@ Enable Stereo for your meetings
 
 <summary>
 
-view\_type: "GROUP\_CALL"or "WEBINAR"or "AUDIO\_ROOM"or "LIVESTREAM"
+view\_type: "GROUP\_CALL" or "WEBINAR" or "AUDIO\_ROOM" or "LIVESTREAM"
 
 Type of the meeting
 
@@ -1350,7 +1350,7 @@ Name of the preset
 
 <summary>
 
-permissions: object {accept\_waiting\_requests, can\_accept\_production\_requests, can\_change\_participant\_permissions, 24 more }
+permissions: object { accept\_waiting\_requests, can\_accept\_production\_requests, can\_change\_participant\_permissions, 24 more }
 
 </summary>
 
@@ -1388,7 +1388,7 @@ can\_spotlight: boolean
 
 <summary>
 
-chat: object {private, public }
+chat: object { private, public }
 
 </summary>
 
@@ -1396,7 +1396,7 @@ chat: object {private, public }
 
 <summary>
 
-private: object {can\_receive, can\_send, files, text }
+private: object { can\_receive, can\_send, files, text }
 
 </summary>
 
@@ -1424,7 +1424,7 @@ text: boolean
 
 <summary>
 
-public: object {can\_send, files, text }
+public: object { can\_send, files, text }
 
 </summary>
 
@@ -1458,7 +1458,7 @@ Can send text messages
 
 <summary>
 
-connected\_meetings: object {can\_alter\_connected\_meetings, can\_switch\_connected\_meetings, can\_switch\_to\_parent\_meeting }
+connected\_meetings: object { can\_alter\_connected\_meetings, can\_switch\_connected\_meetings, can\_switch\_to\_parent\_meeting }
 
 </summary>
 
@@ -1504,7 +1504,7 @@ kick\_participant: boolean
 
 <summary>
 
-media: object {audio, screenshare, video }
+media: object { audio, screenshare, video }
 
 Media permissions
 
@@ -1514,7 +1514,7 @@ Media permissions
 
 <summary>
 
-audio: object {can\_produce }
+audio: object { can\_produce }
 
 Audio permissions
 
@@ -1524,7 +1524,7 @@ Audio permissions
 
 <summary>
 
-can\_produce: "ALLOWED"or "NOT\_ALLOWED"or "CAN\_REQUEST"
+can\_produce: "ALLOWED" or "NOT\_ALLOWED" or "CAN\_REQUEST"
 
 Can produce audio
 
@@ -1556,7 +1556,7 @@ One of the following:
 
 <summary>
 
-screenshare: object {can\_produce }
+screenshare: object { can\_produce }
 
 Screenshare permissions
 
@@ -1566,7 +1566,7 @@ Screenshare permissions
 
 <summary>
 
-can\_produce: "ALLOWED"or "NOT\_ALLOWED"or "CAN\_REQUEST"
+can\_produce: "ALLOWED" or "NOT\_ALLOWED" or "CAN\_REQUEST"
 
 Can produce screen share video
 
@@ -1598,7 +1598,7 @@ One of the following:
 
 <summary>
 
-video: object {can\_produce }
+video: object { can\_produce }
 
 Video permissions
 
@@ -1608,7 +1608,7 @@ Video permissions
 
 <summary>
 
-can\_produce: "ALLOWED"or "NOT\_ALLOWED"or "CAN\_REQUEST"
+can\_produce: "ALLOWED" or "NOT\_ALLOWED" or "CAN\_REQUEST"
 
 Can produce video
 
@@ -1648,7 +1648,7 @@ pin\_participant: boolean
 
 <summary>
 
-plugins: object {can\_close, can\_edit\_config, can\_start, config }
+plugins: object { can\_close, can\_edit\_config, can\_start, config }
 
 Plugin permissions
 
@@ -1676,7 +1676,7 @@ Can start plugins
 
 <summary>
 
-config: map\[object {access\_control, handles\_view\_only } ]
+config: map\[object { access\_control, handles\_view\_only } ]
 
 Plugin configuration keyed by plugin UUID.
 
@@ -1686,7 +1686,7 @@ Plugin configuration keyed by plugin UUID.
 
 <summary>
 
-access\_control: optional "FULL\_ACCESS"or "VIEW\_ONLY"
+access\_control: optional "FULL\_ACCESS" or "VIEW\_ONLY"
 
 </summary>
 
@@ -1720,7 +1720,7 @@ handles\_view\_only: optional boolean
 
 <summary>
 
-polls: object {can\_create, can\_view, can\_vote }
+polls: object { can\_create, can\_view, can\_vote }
 
 Poll permissions
 
@@ -1752,7 +1752,7 @@ Can vote on polls
 
 <summary>
 
-recorder\_type: "RECORDER"or "LIVESTREAMER"or "NONE"
+recorder\_type: "RECORDER" or "LIVESTREAMER" or "NONE"
 
 Type of the recording peer
 
@@ -1784,7 +1784,7 @@ show\_participant\_list: boolean
 
 <summary>
 
-waiting\_room\_type: "SKIP"or "ON\_PRIVILEGED\_USER\_ENTRY"or "SKIP\_ON\_ACCEPT"
+waiting\_room\_type: "SKIP" or "ON\_PRIVILEGED\_USER\_ENTRY" or "SKIP\_ON\_ACCEPT"
 
 Waiting room type
 
@@ -1826,7 +1826,7 @@ is\_recorder: optional boolean
 
 <summary>
 
-stage\_access: optional "ALLOWED"or "NOT\_ALLOWED"or "CAN\_REQUEST"
+stage\_access: optional "ALLOWED" or "NOT\_ALLOWED" or "CAN\_REQUEST"
 
 </summary>
 
@@ -1864,7 +1864,7 @@ transcription\_enabled: optional boolean
 
 <summary>
 
-ui: object {design\_tokens }
+ui: object { design\_tokens }
 
 </summary>
 
@@ -1872,7 +1872,7 @@ ui: object {design\_tokens }
 
 <summary>
 
-design\_tokens: object {border\_radius, border\_width, colors, 5 more }
+design\_tokens: object { border\_radius, border\_width, colors, 5 more }
 
 </summary>
 
@@ -1880,7 +1880,7 @@ design\_tokens: object {border\_radius, border\_width, colors, 5 more }
 
 <summary>
 
-border\_radius: "sharp"or "rounded"or "extra-rounded"or "circular"
+border\_radius: "sharp" or "rounded" or "extra-rounded" or "circular"
 
 </summary>
 
@@ -1910,7 +1910,7 @@ One of the following:
 
 <summary>
 
-border\_width: "none"or "thin"or "fat"
+border\_width: "none" or "thin" or "fat"
 
 </summary>
 
@@ -1936,7 +1936,7 @@ One of the following:
 
 <summary>
 
-colors: object {background, brand, danger, 5 more }
+colors: object { background, brand, danger, 5 more }
 
 </summary>
 
@@ -1944,7 +1944,7 @@ colors: object {background, brand, danger, 5 more }
 
 <summary>
 
-background: object {"1000", "600", "700", 2 more }
+background: object { "1000", "600", "700", 2 more }
 
 </summary>
 
@@ -1976,7 +1976,7 @@ background: object {"1000", "600", "700", 2 more }
 
 <summary>
 
-brand: object {"300", "400", "500", 2 more }
+brand: object { "300", "400", "500", 2 more }
 
 </summary>
 
@@ -2042,7 +2042,7 @@ minimum1
 
 <summary>
 
-theme: "darkest"or "dark"or "light"
+theme: "darkest" or "dark" or "light"
 
 </summary>
 

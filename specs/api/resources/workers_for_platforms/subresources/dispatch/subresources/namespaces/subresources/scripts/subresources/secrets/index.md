@@ -50,7 +50,7 @@ PATCH/accounts/{account\_id}/workers/dispatch/namespaces/{dispatch\_namespace}/s
 
 <summary>
 
-SecretListResponse = object {name, text, type } or object {algorithm, format, name, 4 more }
+SecretListResponse = object { name, text, type } or object { algorithm, format, name, 4 more }
 
 A secret value accessible through a binding.
 
@@ -62,7 +62,7 @@ One of the following:
 
 <summary>
 
-SecretText object {name, text, type }
+SecretText object { name, text, type }
 
 </summary>
 
@@ -92,7 +92,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-SecretKey object {algorithm, format, name, 4 more }
+SecretKey object { algorithm, format, name, 4 more }
 
 </summary>
 
@@ -106,7 +106,7 @@ Algorithm-specific key parameters. <a href="https://developer.mozilla.org/en-US/
 
 <summary>
 
-format: "raw"or "pkcs8"or "spki"or "jwk"
+format: "raw" or "pkcs8" or "spki" or "jwk"
 
 Data format of the key. <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#format">Learn more</a>.
 
@@ -150,7 +150,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-usages: array of "encrypt"or "decrypt"or "sign"or 5 more
+usages: array of "encrypt" or "decrypt" or "sign" or 5 more
 
 Allowed operations with the key. <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#keyUsages">Learn more</a>.
 
@@ -218,7 +218,7 @@ Key data in <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCryp
 
 <summary>
 
-SecretGetResponse = object {name, text, type } or object {algorithm, format, name, 4 more }
+SecretGetResponse = object { name, text, type } or object { algorithm, format, name, 4 more }
 
 A secret value accessible through a binding.
 
@@ -230,7 +230,7 @@ One of the following:
 
 <summary>
 
-SecretText object {name, text, type }
+SecretText object { name, text, type }
 
 </summary>
 
@@ -260,7 +260,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-SecretKey object {algorithm, format, name, 4 more }
+SecretKey object { algorithm, format, name, 4 more }
 
 </summary>
 
@@ -274,7 +274,7 @@ Algorithm-specific key parameters. <a href="https://developer.mozilla.org/en-US/
 
 <summary>
 
-format: "raw"or "pkcs8"or "spki"or "jwk"
+format: "raw" or "pkcs8" or "spki" or "jwk"
 
 Data format of the key. <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#format">Learn more</a>.
 
@@ -318,7 +318,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-usages: array of "encrypt"or "decrypt"or "sign"or 5 more
+usages: array of "encrypt" or "decrypt" or "sign" or 5 more
 
 Allowed operations with the key. <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#keyUsages">Learn more</a>.
 
@@ -386,7 +386,7 @@ Key data in <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCryp
 
 <summary>
 
-SecretUpdateResponse = object {name, text, type } or object {algorithm, format, name, 4 more }
+SecretUpdateResponse = object { name, text, type } or object { algorithm, format, name, 4 more }
 
 A secret value accessible through a binding.
 
@@ -398,7 +398,7 @@ One of the following:
 
 <summary>
 
-SecretText object {name, text, type }
+SecretText object { name, text, type }
 
 </summary>
 
@@ -428,7 +428,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-SecretKey object {algorithm, format, name, 4 more }
+SecretKey object { algorithm, format, name, 4 more }
 
 </summary>
 
@@ -442,7 +442,7 @@ Algorithm-specific key parameters. <a href="https://developer.mozilla.org/en-US/
 
 <summary>
 
-format: "raw"or "pkcs8"or "spki"or "jwk"
+format: "raw" or "pkcs8" or "spki" or "jwk"
 
 Data format of the key. <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#format">Learn more</a>.
 
@@ -486,7 +486,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-usages: array of "encrypt"or "decrypt"or "sign"or 5 more
+usages: array of "encrypt" or "decrypt" or "sign" or 5 more
 
 Allowed operations with the key. <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#keyUsages">Learn more</a>.
 
@@ -558,7 +558,7 @@ SecretDeleteResponse = unknown
 
 <summary>
 
-SecretBulkUpdateResponse = map\[object {name, text, type } or object {algorithm, format, name, 4 more } ]
+SecretBulkUpdateResponse = map\[object { name, text, type } or object { algorithm, format, name, 4 more } ]
 
 Map of secret names to secret metadata for resulting secrets.
 
@@ -570,7 +570,7 @@ One of the following:
 
 <summary>
 
-SecretText object {name, text, type }
+SecretText object { name, text, type }
 
 </summary>
 
@@ -600,7 +600,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-SecretKey object {algorithm, format, name, 4 more }
+SecretKey object { algorithm, format, name, 4 more }
 
 </summary>
 
@@ -614,7 +614,7 @@ Algorithm-specific key parameters. <a href="https://developer.mozilla.org/en-US/
 
 <summary>
 
-format: "raw"or "pkcs8"or "spki"or "jwk"
+format: "raw" or "pkcs8" or "spki" or "jwk"
 
 Data format of the key. <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#format">Learn more</a>.
 
@@ -658,7 +658,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-usages: array of "encrypt"or "decrypt"or "sign"or 5 more
+usages: array of "encrypt" or "decrypt" or "sign" or 5 more
 
 Allowed operations with the key. <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#keyUsages">Learn more</a>.
 

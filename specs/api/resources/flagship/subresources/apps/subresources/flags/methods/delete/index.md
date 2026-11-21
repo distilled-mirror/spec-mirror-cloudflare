@@ -86,7 +86,7 @@ Case-sensitive key identifying the flag within the app.
 
 <summary>
 
-errors: array of object {message }
+errors: array of object { message }
 
 </summary>
 
@@ -102,7 +102,7 @@ message: string
 
 <summary>
 
-messages: array of object {message }
+messages: array of object { message }
 
 </summary>
 
@@ -118,7 +118,7 @@ message: string
 
 <summary>
 
-result: object {key }
+result: object { key }
 
 </summary>
 

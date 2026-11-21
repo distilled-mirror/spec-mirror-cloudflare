@@ -74,7 +74,7 @@ Set to `false` to allow deletion of this dataset.
 
 <summary>
 
-fields: optional array of object {enabled, name }
+fields: optional array of object { enabled, name }
 
 Controls which fields the API ingests after the update. Defaults to all available fields when absent.
 
@@ -136,7 +136,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -206,7 +206,7 @@ Whether log ingest is currently active for this dataset.
 
 <summary>
 
-fields: array of object {enabled, name }
+fields: array of object { enabled, name }
 
 The field configuration for this dataset.
 
@@ -238,7 +238,7 @@ Public ID of the account or zone that owns this dataset.
 
 <summary>
 
-object\_type: "account"or "zone"
+object\_type: "account" or "zone"
 
 Whether this dataset belongs to an account or a zone.
 

@@ -54,6 +54,10 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 </details>
 
+##### Accepted Permissions (at least one required)
+
+`Email Sending Write``Email Sending Read`
+
 ##### P ath ParametersExpand Collapse
 
 account\_id: string
@@ -94,7 +98,7 @@ minimum1
 
 <summary>
 
-reason: optional "manual"or "complaint"or "hard\_bounce"or 2 more
+reason: optional "manual" or "complaint" or "hard\_bounce" or 2 more
 
 Filter to suppressions with this reason.
 
@@ -130,7 +134,7 @@ One of the following:
 
 <summary>
 
-scope\_type: optional "account"or "sending\_domain"
+scope\_type: optional "account" or "sending\_domain"
 
 Filter by scope: <code>account</code> returns only account-wide suppressions, <code>sending_domain</code> only sending-domain suppressions. Omit to list both; the order between the two scopes is not fixed.
 
@@ -182,7 +186,7 @@ messages: array of unknown
 
 <summary>
 
-result: array of object {id, created\_at, email, 5 more }
+result: array of object { id, created\_at, email, 5 more }
 
 </summary>
 
@@ -240,7 +244,7 @@ Advisory note for this suppression, if any.
 
 <summary>
 
-scope: optional object {type } or object {type, value }
+scope: optional object { type } or object { type, value }
 
 Where the suppression applies: <code>account</code> for every sending domain of the account, or <code>sending_domain</code> for one envelope MAIL FROM domain.
 
@@ -252,7 +256,7 @@ One of the following:
 
 <summary>
 
-Type object {type }
+Type object { type }
 
 </summary>
 
@@ -270,7 +274,7 @@ Blocks the recipient for every sending domain of the account.
 
 <summary>
 
-object {type, value }
+object { type, value }
 
 </summary>
 
@@ -304,7 +308,7 @@ maxLength1024
 
 <summary>
 
-result\_info: object {count, next\_cursor, per\_page }
+result\_info: object { count, next\_cursor, per\_page }
 
 Pagination metadata.
 

@@ -66,7 +66,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -106,7 +106,7 @@ prefix: optional string
 
 <summary>
 
-rpkiStatus: optional "VALID"or "INVALID"or "UNKNOWN"
+rpkiStatus: optional "VALID" or "INVALID" or "UNKNOWN"
 
 Return only results with matching rpki status: valid, invalid or unknown.
 
@@ -136,7 +136,7 @@ One of the following:
 
 <summary>
 
-result: object {meta, prefix\_origins }
+result: object { meta, prefix\_origins }
 
 </summary>
 
@@ -144,7 +144,7 @@ result: object {meta, prefix\_origins }
 
 <summary>
 
-meta: object {data\_time, query\_time, total\_peers }
+meta: object { data\_time, query\_time, total\_peers }
 
 </summary>
 
@@ -168,7 +168,7 @@ total\_peers: number
 
 <summary>
 
-prefix\_origins: array of object {origin, peer\_count, prefix, rpki\_validation }
+prefix\_origins: array of object { origin, peer\_count, prefix, rpki\_validation }
 
 </summary>
 

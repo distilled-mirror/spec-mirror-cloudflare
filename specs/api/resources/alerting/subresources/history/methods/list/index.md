@@ -110,7 +110,7 @@ formatdate-time
 
 <summary>
 
-errors: array of object {message, code }
+errors: array of object { message, code }
 
 </summary>
 
@@ -132,7 +132,7 @@ minimum1000
 
 <summary>
 
-messages: array of object {message, code }
+messages: array of object { message, code }
 
 </summary>
 
@@ -200,7 +200,7 @@ The mechanism to which the notification has been dispatched.
 
 <summary>
 
-mechanism\_type: optional "email"or "pagerduty"or "webhook"
+mechanism\_type: optional "email" or "pagerduty" or "webhook"
 
 The type of mechanism to which the notification has been dispatched. This can be email/pagerduty/webhook based on the mechanism configured.
 
@@ -254,7 +254,7 @@ formatdate-time
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object { count, page, per\_page, total\_count }
 
 </summary>
 

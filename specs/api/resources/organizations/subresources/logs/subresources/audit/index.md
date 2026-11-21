@@ -34,7 +34,7 @@ GET/organizations/{organization\_id}/logs/audit/{id}/history
 
 <summary>
 
-AuditListResponse object {id, action, actor, 3 more }
+AuditListResponse object { id, action, actor, 3 more }
 
 </summary>
 
@@ -50,7 +50,7 @@ maxLength32
 
 <summary>
 
-action: optional object {description, result, time, type }
+action: optional object { description, result, time, type }
 
 Provides information about the action performed.
 
@@ -90,7 +90,7 @@ A short string that describes the action that was performed.
 
 <summary>
 
-actor: optional object {id, context, email, 4 more }
+actor: optional object { id, context, email, 4 more }
 
 Provides details about the actor who performed the action.
 
@@ -106,7 +106,7 @@ The ID of the actor who performed the action. If a user performed the action, th
 
 <summary>
 
-context: optional "api"or "api\_key"or "api\_token"or 3 more
+context: optional "api" or "api\_key" or "api\_token" or 3 more
 
 The context in which the action was initiated.
 
@@ -179,7 +179,7 @@ The API token name when the actor context is an api\_token or oauth.
 
 <summary>
 
-type: optional "cloudflare\_admin"or "system"or "user"
+type: optional "cloudflare\_admin" or "system" or "user"
 
 The type of actor.
 
@@ -211,7 +211,7 @@ One of the following:
 
 <summary>
 
-organization: optional object {id }
+organization: optional object { id }
 
 Contains organization related information.
 
@@ -231,7 +231,7 @@ A unique identifier for the organization.
 
 <summary>
 
-raw: optional object {cf\_ray\_id, method, status\_code, 2 more }
+raw: optional object { cf\_ray\_id, method, status\_code, 2 more }
 
 Provides raw information about the request and response.
 
@@ -275,7 +275,7 @@ The client’s user agent string sent with the request.
 
 <summary>
 
-resource: optional object {id, product, request, 3 more }
+resource: optional object { id, product, request, 3 more }
 
 Provides details about the affected resource.
 
@@ -325,7 +325,7 @@ The type of the resource.
 
 <summary>
 
-AuditHistoryResponse = array of object {id, action, actor, 3 more }
+AuditHistoryResponse = array of object { id, action, actor, 3 more }
 
 </summary>
 
@@ -341,7 +341,7 @@ maxLength32
 
 <summary>
 
-action: optional object {description, result, time, type }
+action: optional object { description, result, time, type }
 
 Provides information about the action performed.
 
@@ -381,7 +381,7 @@ A short string that describes the action that was performed.
 
 <summary>
 
-actor: optional object {id, context, email, 4 more }
+actor: optional object { id, context, email, 4 more }
 
 Provides details about the actor who performed the action.
 
@@ -397,7 +397,7 @@ The ID of the actor who performed the action. If a user performed the action, th
 
 <summary>
 
-context: optional "api"or "api\_key"or "api\_token"or 3 more
+context: optional "api" or "api\_key" or "api\_token" or 3 more
 
 The context in which the action was initiated.
 
@@ -470,7 +470,7 @@ The API token name when the actor context is an api\_token or oauth.
 
 <summary>
 
-type: optional "cloudflare\_admin"or "system"or "user"
+type: optional "cloudflare\_admin" or "system" or "user"
 
 The type of actor.
 
@@ -502,7 +502,7 @@ One of the following:
 
 <summary>
 
-organization: optional object {id }
+organization: optional object { id }
 
 Contains organization related information.
 
@@ -522,7 +522,7 @@ A unique identifier for the organization.
 
 <summary>
 
-raw: optional object {cf\_ray\_id, method, status\_code, 2 more }
+raw: optional object { cf\_ray\_id, method, status\_code, 2 more }
 
 Provides raw information about the request and response.
 
@@ -566,7 +566,7 @@ The client’s user agent string sent with the request.
 
 <summary>
 
-resource: optional object {id, product, request, 3 more }
+resource: optional object { id, product, request, 3 more }
 
 Provides details about the affected resource.
 

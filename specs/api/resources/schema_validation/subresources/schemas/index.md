@@ -44,7 +44,7 @@ DELETE/zones/{zone\_id}/schema\_validation/schemas/{schema\_id}
 
 <summary>
 
-PublicSchema object {created\_at, kind, name, 3 more }
+PublicSchema object { created\_at, kind, name, 3 more }
 
 A schema used in schema validation
 

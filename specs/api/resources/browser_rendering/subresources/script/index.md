@@ -32,7 +32,7 @@ POST/accounts/{account\_id}/browser-rendering/script/{session\_id}
 
 <summary>
 
-ScriptCreateResponse = stringor numberor booleanor 2 more
+ScriptCreateResponse = string or number or boolean or 2 more
 
 The script’s return value, or null when it returned nothing. Arrays nested inside arrays are also returned, but this schema does not describe them.
 
@@ -60,7 +60,7 @@ map\[unknown]
 
 <summary>
 
-array of stringor numberor booleanor map\[unknown]
+array of string or number or boolean or map\[unknown]
 
 </summary>
 
@@ -94,7 +94,7 @@ map\[unknown]
 
 <summary>
 
-ScriptExecuteResponse = stringor numberor booleanor 2 more
+ScriptExecuteResponse = string or number or boolean or 2 more
 
 The script’s return value, or null when it returned nothing. Arrays nested inside arrays are also returned, but this schema does not describe them.
 
@@ -122,7 +122,7 @@ map\[unknown]
 
 <summary>
 
-array of stringor numberor booleanor map\[unknown]
+array of string or number or boolean or map\[unknown]
 
 </summary>
 

@@ -44,7 +44,7 @@ DELETE/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/datasets/{id}
 
 <summary>
 
-DatasetListResponse object {id, created\_at, enable, 4 more }
+DatasetListResponse object { id, created\_at, enable, 4 more }
 
 </summary>
 
@@ -66,7 +66,7 @@ enable: boolean
 
 <summary>
 
-filters: array of object {key, operator, value }
+filters: array of object { key, operator, value }
 
 </summary>
 
@@ -74,7 +74,7 @@ filters: array of object {key, operator, value }
 
 <summary>
 
-key: "created\_at"or "request\_content\_type"or "response\_content\_type"or 10 more
+key: "created\_at" or "request\_content\_type" or "response\_content\_type" or 10 more
 
 </summary>
 
@@ -140,7 +140,7 @@ One of the following:
 
 <summary>
 
-operator: "eq"or "contains"or "lt"or "gt"
+operator: "eq" or "contains" or "lt" or "gt"
 
 </summary>
 
@@ -170,7 +170,7 @@ One of the following:
 
 <summary>
 
-value: array of stringor numberor boolean
+value: array of string or number or boolean
 
 </summary>
 
@@ -224,7 +224,7 @@ name: string
 
 <summary>
 
-DatasetGetResponse object {id, created\_at, enable, 4 more }
+DatasetGetResponse object { id, created\_at, enable, 4 more }
 
 </summary>
 
@@ -246,7 +246,7 @@ enable: boolean
 
 <summary>
 
-filters: array of object {key, operator, value }
+filters: array of object { key, operator, value }
 
 </summary>
 
@@ -254,7 +254,7 @@ filters: array of object {key, operator, value }
 
 <summary>
 
-key: "created\_at"or "request\_content\_type"or "response\_content\_type"or 10 more
+key: "created\_at" or "request\_content\_type" or "response\_content\_type" or 10 more
 
 </summary>
 
@@ -320,7 +320,7 @@ One of the following:
 
 <summary>
 
-operator: "eq"or "contains"or "lt"or "gt"
+operator: "eq" or "contains" or "lt" or "gt"
 
 </summary>
 
@@ -350,7 +350,7 @@ One of the following:
 
 <summary>
 
-value: array of stringor numberor boolean
+value: array of string or number or boolean
 
 </summary>
 
@@ -404,7 +404,7 @@ name: string
 
 <summary>
 
-DatasetCreateResponse object {id, created\_at, enable, 4 more }
+DatasetCreateResponse object { id, created\_at, enable, 4 more }
 
 </summary>
 
@@ -426,7 +426,7 @@ enable: boolean
 
 <summary>
 
-filters: array of object {key, operator, value }
+filters: array of object { key, operator, value }
 
 </summary>
 
@@ -434,7 +434,7 @@ filters: array of object {key, operator, value }
 
 <summary>
 
-key: "created\_at"or "request\_content\_type"or "response\_content\_type"or 10 more
+key: "created\_at" or "request\_content\_type" or "response\_content\_type" or 10 more
 
 </summary>
 
@@ -500,7 +500,7 @@ One of the following:
 
 <summary>
 
-operator: "eq"or "contains"or "lt"or "gt"
+operator: "eq" or "contains" or "lt" or "gt"
 
 </summary>
 
@@ -530,7 +530,7 @@ One of the following:
 
 <summary>
 
-value: array of stringor numberor boolean
+value: array of string or number or boolean
 
 </summary>
 
@@ -584,7 +584,7 @@ name: string
 
 <summary>
 
-DatasetUpdateResponse object {id, created\_at, enable, 4 more }
+DatasetUpdateResponse object { id, created\_at, enable, 4 more }
 
 </summary>
 
@@ -606,7 +606,7 @@ enable: boolean
 
 <summary>
 
-filters: array of object {key, operator, value }
+filters: array of object { key, operator, value }
 
 </summary>
 
@@ -614,7 +614,7 @@ filters: array of object {key, operator, value }
 
 <summary>
 
-key: "created\_at"or "request\_content\_type"or "response\_content\_type"or 10 more
+key: "created\_at" or "request\_content\_type" or "response\_content\_type" or 10 more
 
 </summary>
 
@@ -680,7 +680,7 @@ One of the following:
 
 <summary>
 
-operator: "eq"or "contains"or "lt"or "gt"
+operator: "eq" or "contains" or "lt" or "gt"
 
 </summary>
 
@@ -710,7 +710,7 @@ One of the following:
 
 <summary>
 
-value: array of stringor numberor boolean
+value: array of string or number or boolean
 
 </summary>
 
@@ -764,7 +764,7 @@ name: string
 
 <summary>
 
-DatasetDeleteResponse object {id, created\_at, enable, 4 more }
+DatasetDeleteResponse object { id, created\_at, enable, 4 more }
 
 </summary>
 
@@ -786,7 +786,7 @@ enable: boolean
 
 <summary>
 
-filters: array of object {key, operator, value }
+filters: array of object { key, operator, value }
 
 </summary>
 
@@ -794,7 +794,7 @@ filters: array of object {key, operator, value }
 
 <summary>
 
-key: "created\_at"or "request\_content\_type"or "response\_content\_type"or 10 more
+key: "created\_at" or "request\_content\_type" or "response\_content\_type" or 10 more
 
 </summary>
 
@@ -860,7 +860,7 @@ One of the following:
 
 <summary>
 
-operator: "eq"or "contains"or "lt"or "gt"
+operator: "eq" or "contains" or "lt" or "gt"
 
 </summary>
 
@@ -890,7 +890,7 @@ One of the following:
 
 <summary>
 
-value: array of stringor numberor boolean
+value: array of string or number or boolean
 
 </summary>
 

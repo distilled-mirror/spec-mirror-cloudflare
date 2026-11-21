@@ -92,7 +92,7 @@ The unique Cloudflare-generated Id of the SCIM resource. Pass once for a single 
 
 <summary>
 
-direction: optional "desc"or "asc"
+direction: optional "desc" or "asc"
 
 The chronological order used to sort the logs.
 
@@ -142,7 +142,7 @@ maximum1000
 
 <summary>
 
-request\_method: optional array of "DELETE"or "PATCH"or "POST"or "PUT"
+request\_method: optional array of "DELETE" or "PATCH" or "POST" or "PUT"
 
 The request method of the SCIM request.
 
@@ -180,7 +180,7 @@ The display name of the SCIM Group resource. Pass once for a single lookup (`?re
 
 <summary>
 
-resource\_type: optional array of "USER"or "GROUP"
+resource\_type: optional array of "USER" or "GROUP"
 
 The resource type of the SCIM request.
 
@@ -218,7 +218,7 @@ formatdate-time
 
 <summary>
 
-status: optional array of "FAILURE"or "SUCCESS"
+status: optional array of "FAILURE" or "SUCCESS"
 
 The status of the SCIM request.
 
@@ -252,7 +252,7 @@ formatdate-time
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -274,7 +274,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -294,7 +294,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -316,7 +316,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -342,7 +342,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional array of object {cf\_resource\_id, error\_description, idp\_id, 8 more }
+result: optional array of object { cf\_resource\_id, error\_description, idp\_id, 8 more }
 
 </summary>
 
@@ -422,7 +422,7 @@ The status of the SCIM request.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

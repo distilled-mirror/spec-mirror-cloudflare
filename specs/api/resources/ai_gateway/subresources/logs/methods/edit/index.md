@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`AI Gateway Write`
+`AI Search Index Engine``Auto Rag Write Run Engine``AI Gateway Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -92,7 +92,7 @@ minimum-1
 
 <summary>
 
-metadata: optional map\[stringor numberor boolean]
+metadata: optional map\[string or number or boolean]
 
 </summary>
 

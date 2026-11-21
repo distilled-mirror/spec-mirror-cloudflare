@@ -104,7 +104,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -146,7 +146,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -174,7 +174,7 @@ result: <a href="https://developers.cloudflare.com/api/resources/api_gateway#(re
 
 <summary>
 
-auth\_id\_characteristics: array of object {name, type } or object {name, type }
+auth\_id\_characteristics: array of object { name, type } or object { name, type }
 
 </summary>
 
@@ -184,7 +184,7 @@ One of the following:
 
 <summary>
 
-APIShieldAuthIDCharacteristic object {name, type }
+APIShieldAuthIDCharacteristic object { name, type }
 
 Auth ID Characteristic
 
@@ -202,7 +202,7 @@ maxLength128
 
 <summary>
 
-type: "header"or "cookie"
+type: "header" or "cookie"
 
 The type of characteristic.
 
@@ -230,7 +230,7 @@ One of the following:
 
 <summary>
 
-APIShieldAuthIDCharacteristicJWTClaim object {name, type }
+APIShieldAuthIDCharacteristicJWTClaim object { name, type }
 
 Auth ID Characteristic extracted from JWT Token Claims
 

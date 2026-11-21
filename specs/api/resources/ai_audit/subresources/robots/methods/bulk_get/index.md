@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Zone Settings Write``Zone Settings Read`
+`Workers Metadata Read-Only``Workers Editor``Workers Content Read-Only``Workers Admin``Zone Settings Write``Zone Settings Read``Workers Routes Write``Workers Routes Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -100,7 +100,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -142,7 +142,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -166,7 +166,7 @@ success: boolean
 
 <summary>
 
-result: optional map\[object {userAgents, sitemaps, status } ]
+result: optional map\[object { userAgents, sitemaps, status } ]
 
 Map of hostname to parsed robots.txt rules.
 
@@ -176,7 +176,7 @@ Map of hostname to parsed robots.txt rules.
 
 <summary>
 
-userAgents: map\[object {allow, disallow, contentSignals, crawlDelay } ]
+userAgents: map\[object { allow, disallow, contentSignals, crawlDelay } ]
 
 Map of user-agent string to its parsed rules.
 
@@ -198,7 +198,7 @@ List of disallowed path patterns.
 
 <summary>
 
-contentSignals: optional object {"ai-input", "ai-train", search }
+contentSignals: optional object { "ai-input", "ai-train", search }
 
 Content signal directives from robots.txt.
 
@@ -208,7 +208,7 @@ Content signal directives from robots.txt.
 
 <summary>
 
-"ai-input": optional "yes"or "no"
+"ai-input": optional "yes" or "no"
 
 Whether AI input usage is permitted.
 
@@ -232,7 +232,7 @@ One of the following:
 
 <summary>
 
-"ai-train": optional "yes"or "no"
+"ai-train": optional "yes" or "no"
 
 Whether AI training is permitted.
 
@@ -256,7 +256,7 @@ One of the following:
 
 <summary>
 
-search: optional "yes"or "no"
+search: optional "yes" or "no"
 
 Whether search indexing is permitted.
 

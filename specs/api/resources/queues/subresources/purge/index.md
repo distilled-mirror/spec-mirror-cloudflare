@@ -32,7 +32,7 @@ POST/accounts/{account\_id}/queues/{queue\_id}/purge
 
 <summary>
 
-PurgeStatusResponse object {completed, started\_at }
+PurgeStatusResponse object { completed, started\_at }
 
 </summary>
 

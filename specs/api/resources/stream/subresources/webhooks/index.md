@@ -36,7 +36,7 @@ DELETE/accounts/{account\_id}/stream/webhook
 
 <summary>
 
-WebhookGetResponse object {modified, notificationUrl, secret }
+WebhookGetResponse object { modified, notificationUrl, secret }
 
 </summary>
 
@@ -70,7 +70,7 @@ The secret used to verify webhook signatures.
 
 <summary>
 
-WebhookUpdateResponse object {modified, notificationUrl, secret }
+WebhookUpdateResponse object { modified, notificationUrl, secret }
 
 </summary>
 

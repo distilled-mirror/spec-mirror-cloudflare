@@ -94,7 +94,7 @@ formatdate
 
 <summary>
 
-errors: array of object {message, code }
+errors: array of object { message, code }
 
 Contains error details if the request failed.
 
@@ -120,7 +120,7 @@ Identifies the error or notice type.
 
 <summary>
 
-messages: array of object {message, code }
+messages: array of object { message, code }
 
 Contains informational notices about the response.
 
@@ -146,7 +146,7 @@ Identifies the error or notice type.
 
 <summary>
 
-result: array of object {ChargeCategory, ChargeDescription, ChargeFrequency, 33 more }
+result: array of object { ChargeCategory, ChargeDescription, ChargeFrequency, 33 more }
 
 Contains the array of cost and usage records.
 
@@ -338,7 +338,7 @@ Name assigned to a grouping of services. For Cloudflare, this is the subscriptio
 
 <summary>
 
-Tags: optional map\[stringor true]
+Tags: optional map\[string or true]
 
 Tag values for the requested <code>GroupBy</code> keys. Omitted when <code>GroupBy</code> is not provided. Missing keys are omitted, and key-only tags are returned as boolean <code>true</code>. All other tag values are strings.
 

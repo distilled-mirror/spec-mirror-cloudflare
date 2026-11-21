@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Access: Organizations, Identity Providers, and Groups Write`
+`Access: Organizations Write``Zero Trust Write``Access: Organizations, Identity Providers, and Groups Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -112,7 +112,7 @@ When set to `true`, the user will be required to re-authenticate to WARP for all
 
 <summary>
 
-result: optional trueor false
+result: optional true or false
 
 </summary>
 
@@ -134,7 +134,7 @@ false
 
 <summary>
 
-success: optional trueor false
+success: optional true or false
 
 </summary>
 

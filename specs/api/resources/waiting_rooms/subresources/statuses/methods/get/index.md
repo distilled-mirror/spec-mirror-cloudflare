@@ -88,7 +88,7 @@ waiting\_room\_id: string
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -110,7 +110,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -130,7 +130,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -152,7 +152,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -172,7 +172,7 @@ pointer: optional string
 
 <summary>
 
-result: object {estimated\_queued\_users, estimated\_total\_active\_users, event\_id, 2 more }
+result: object { estimated\_queued\_users, estimated\_total\_active\_users, event\_id, 2 more }
 
 </summary>
 
@@ -196,7 +196,7 @@ max\_estimated\_time\_minutes: optional number
 
 <summary>
 
-status: optional "event\_prequeueing"or "not\_queueing"or "queueing"or "suspended"
+status: optional "event\_prequeueing" or "not\_queueing" or "queueing" or "suspended"
 
 </summary>
 

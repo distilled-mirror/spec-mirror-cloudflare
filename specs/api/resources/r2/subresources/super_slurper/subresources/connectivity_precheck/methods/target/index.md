@@ -72,7 +72,7 @@ bucket: string
 
 <summary>
 
-secret: object {accessKeyId, secretAccessKey }
+secret: object { accessKeyId, secretAccessKey }
 
 </summary>
 
@@ -96,7 +96,7 @@ vendor: [Provider](<https://developers.cloudflare.com/api/resources/r2#(resource
 
 <summary>
 
-jurisdiction: optional "default"or "eu"or "us"or "fedramp"
+jurisdiction: optional "default" or "eu" or "us" or "fedramp"
 
 </summary>
 
@@ -152,7 +152,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -176,7 +176,7 @@ messages: optional array of string
 
 <summary>
 
-result: optional object {connectivityStatus }
+result: optional object { connectivityStatus }
 
 </summary>
 
@@ -184,7 +184,7 @@ result: optional object {connectivityStatus }
 
 <summary>
 
-connectivityStatus: optional "success"or "error"
+connectivityStatus: optional "success" or "error"
 
 </summary>
 

@@ -106,7 +106,7 @@ minimum1
 
 <summary>
 
-command\_type: optional "pcap"or "speed-test"or "warp-diag"
+command\_type: optional "pcap" or "speed-test" or "warp-diag"
 
 Optionally filter executed commands by command type.
 
@@ -148,7 +148,7 @@ formatdate-time
 
 <summary>
 
-status: optional "PENDING\_EXEC"or "PENDING\_UPLOAD"or "SUCCESS"or "FAILED"
+status: optional "PENDING\_EXEC" or "PENDING\_UPLOAD" or "SUCCESS" or "FAILED"
 
 Optionally filter executed commands by status.
 
@@ -196,7 +196,7 @@ Email tied to the device.
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -218,7 +218,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -238,7 +238,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -260,7 +260,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -286,7 +286,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {commands }
+result: optional object { commands }
 
 </summary>
 
@@ -294,7 +294,7 @@ result: optional object {commands }
 
 <summary>
 
-commands: optional array of object {id, completed\_date, created\_date, 6 more }
+commands: optional array of object { id, completed\_date, created\_date, 6 more }
 
 </summary>
 
@@ -352,7 +352,7 @@ user\_email: optional string
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

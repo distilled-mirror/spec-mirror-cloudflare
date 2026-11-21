@@ -36,7 +36,7 @@ PATCH/{accounts\_or\_zones}/{account\_or\_zone\_id}/access/apps/{app\_id}/settin
 
 <summary>
 
-SettingUpdateResponse object {allow\_iframe, skip\_interstitial }
+SettingUpdateResponse object { allow\_iframe, skip\_interstitial }
 
 </summary>
 
@@ -60,7 +60,7 @@ Enables automatic authentication through cloudflared.
 
 <summary>
 
-SettingEditResponse object {allow\_iframe, skip\_interstitial }
+SettingEditResponse object { allow\_iframe, skip\_interstitial }
 
 </summary>
 

@@ -86,7 +86,7 @@ GET/radar/http/timeseries\_groups/post\_quantum
 
 <summary>
 
-TimeseriesGroupTLSVersionResponse object {meta, serie\_0 }
+TimeseriesGroupTLSVersionResponse object { meta, serie\_0 }
 
 </summary>
 
@@ -94,7 +94,7 @@ TimeseriesGroupTLSVersionResponse object {meta, serie\_0 }
 
 <summary>
 
-meta: object {aggInterval, confidenceInfo, dateRange, 3 more }
+meta: object { aggInterval, confidenceInfo, dateRange, 3 more }
 
 Metadata for the results.
 
@@ -104,7 +104,7 @@ Metadata for the results.
 
 <summary>
 
-aggInterval: "FIFTEEN\_MINUTES"or "ONE\_HOUR"or "ONE\_DAY"or 2 more
+aggInterval: "FIFTEEN\_MINUTES" or "ONE\_HOUR" or "ONE\_DAY" or 2 more
 
 Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to <a href="https://developers.cloudflare.com/radar/concepts/aggregation-intervals/">Aggregation intervals</a>.
 
@@ -140,7 +140,7 @@ One of the following:
 
 <summary>
 
-confidenceInfo: object {annotations, level }
+confidenceInfo: object { annotations, level }
 
 </summary>
 
@@ -148,7 +148,7 @@ confidenceInfo: object {annotations, level }
 
 <summary>
 
-annotations: array of object {dataSource, description, endDate, 5 more }
+annotations: array of object { dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -156,7 +156,7 @@ annotations: array of object {dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
+dataSource: "ALL" or "AI\_BOTS" or "AI\_GATEWAY" or 22 more
 
 Data source for annotations.
 
@@ -282,7 +282,7 @@ formatdate-time
 
 <summary>
 
-eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
+eventType: "GENERAL" or "OUTAGE" or "PARTIAL\_PROJECTION" or 2 more
 
 Event type for annotations.
 
@@ -354,7 +354,7 @@ Provides an indication of how much confidence Cloudflare has in the data.
 
 <summary>
 
-dateRange: array of object {endTime, startTime }
+dateRange: array of object { endTime, startTime }
 
 </summary>
 
@@ -390,7 +390,7 @@ formatdate-time
 
 <summary>
 
-normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
+normalization: "PERCENTAGE" or "MIN0\_MAX" or "MIN\_MAX" or 5 more
 
 Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
@@ -438,7 +438,7 @@ One of the following:
 
 <summary>
 
-units: array of object {name, value }
+units: array of object { name, value }
 
 Measurement units for the results.
 
@@ -464,7 +464,7 @@ value: string
 
 <summary>
 
-serie\_0: object {timestamps, "TLS 1.0", "TLS 1.1", 3 more }
+serie\_0: object { timestamps, "TLS 1.0", "TLS 1.1", 3 more }
 
 </summary>
 
@@ -504,7 +504,7 @@ timestamps: array of string
 
 <summary>
 
-TimeseriesGroupBotClassResponse object {meta, serie\_0 }
+TimeseriesGroupBotClassResponse object { meta, serie\_0 }
 
 </summary>
 
@@ -512,7 +512,7 @@ TimeseriesGroupBotClassResponse object {meta, serie\_0 }
 
 <summary>
 
-meta: object {aggInterval, confidenceInfo, dateRange, 3 more }
+meta: object { aggInterval, confidenceInfo, dateRange, 3 more }
 
 Metadata for the results.
 
@@ -522,7 +522,7 @@ Metadata for the results.
 
 <summary>
 
-aggInterval: "FIFTEEN\_MINUTES"or "ONE\_HOUR"or "ONE\_DAY"or 2 more
+aggInterval: "FIFTEEN\_MINUTES" or "ONE\_HOUR" or "ONE\_DAY" or 2 more
 
 Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to <a href="https://developers.cloudflare.com/radar/concepts/aggregation-intervals/">Aggregation intervals</a>.
 
@@ -558,7 +558,7 @@ One of the following:
 
 <summary>
 
-confidenceInfo: object {annotations, level }
+confidenceInfo: object { annotations, level }
 
 </summary>
 
@@ -566,7 +566,7 @@ confidenceInfo: object {annotations, level }
 
 <summary>
 
-annotations: array of object {dataSource, description, endDate, 5 more }
+annotations: array of object { dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -574,7 +574,7 @@ annotations: array of object {dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
+dataSource: "ALL" or "AI\_BOTS" or "AI\_GATEWAY" or 22 more
 
 Data source for annotations.
 
@@ -700,7 +700,7 @@ formatdate-time
 
 <summary>
 
-eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
+eventType: "GENERAL" or "OUTAGE" or "PARTIAL\_PROJECTION" or 2 more
 
 Event type for annotations.
 
@@ -772,7 +772,7 @@ Provides an indication of how much confidence Cloudflare has in the data.
 
 <summary>
 
-dateRange: array of object {endTime, startTime }
+dateRange: array of object { endTime, startTime }
 
 </summary>
 
@@ -808,7 +808,7 @@ formatdate-time
 
 <summary>
 
-normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
+normalization: "PERCENTAGE" or "MIN0\_MAX" or "MIN\_MAX" or 5 more
 
 Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
@@ -856,7 +856,7 @@ One of the following:
 
 <summary>
 
-units: array of object {name, value }
+units: array of object { name, value }
 
 Measurement units for the results.
 
@@ -882,7 +882,7 @@ value: string
 
 <summary>
 
-serie\_0: object {bot, human, timestamps }
+serie\_0: object { bot, human, timestamps }
 
 </summary>
 
@@ -910,7 +910,7 @@ timestamps: array of string
 
 <summary>
 
-TimeseriesGroupBrowserResponse object {meta, serie\_0 }
+TimeseriesGroupBrowserResponse object { meta, serie\_0 }
 
 </summary>
 
@@ -918,7 +918,7 @@ TimeseriesGroupBrowserResponse object {meta, serie\_0 }
 
 <summary>
 
-meta: object {aggInterval, confidenceInfo, dateRange, 3 more }
+meta: object { aggInterval, confidenceInfo, dateRange, 3 more }
 
 Metadata for the results.
 
@@ -928,7 +928,7 @@ Metadata for the results.
 
 <summary>
 
-aggInterval: "FIFTEEN\_MINUTES"or "ONE\_HOUR"or "ONE\_DAY"or 2 more
+aggInterval: "FIFTEEN\_MINUTES" or "ONE\_HOUR" or "ONE\_DAY" or 2 more
 
 Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to <a href="https://developers.cloudflare.com/radar/concepts/aggregation-intervals/">Aggregation intervals</a>.
 
@@ -964,7 +964,7 @@ One of the following:
 
 <summary>
 
-confidenceInfo: object {annotations, level }
+confidenceInfo: object { annotations, level }
 
 </summary>
 
@@ -972,7 +972,7 @@ confidenceInfo: object {annotations, level }
 
 <summary>
 
-annotations: array of object {dataSource, description, endDate, 5 more }
+annotations: array of object { dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -980,7 +980,7 @@ annotations: array of object {dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
+dataSource: "ALL" or "AI\_BOTS" or "AI\_GATEWAY" or 22 more
 
 Data source for annotations.
 
@@ -1106,7 +1106,7 @@ formatdate-time
 
 <summary>
 
-eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
+eventType: "GENERAL" or "OUTAGE" or "PARTIAL\_PROJECTION" or 2 more
 
 Event type for annotations.
 
@@ -1178,7 +1178,7 @@ Provides an indication of how much confidence Cloudflare has in the data.
 
 <summary>
 
-dateRange: array of object {endTime, startTime }
+dateRange: array of object { endTime, startTime }
 
 </summary>
 
@@ -1214,7 +1214,7 @@ formatdate-time
 
 <summary>
 
-normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
+normalization: "PERCENTAGE" or "MIN0\_MAX" or "MIN\_MAX" or 5 more
 
 Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
@@ -1262,7 +1262,7 @@ One of the following:
 
 <summary>
 
-units: array of object {name, value }
+units: array of object { name, value }
 
 Measurement units for the results.
 
@@ -1288,7 +1288,7 @@ value: string
 
 <summary>
 
-serie\_0: object {timestamps }
+serie\_0: object { timestamps }
 
 </summary>
 
@@ -1308,7 +1308,7 @@ timestamps: array of string
 
 <summary>
 
-TimeseriesGroupBrowserFamilyResponse object {meta, serie\_0 }
+TimeseriesGroupBrowserFamilyResponse object { meta, serie\_0 }
 
 </summary>
 
@@ -1316,7 +1316,7 @@ TimeseriesGroupBrowserFamilyResponse object {meta, serie\_0 }
 
 <summary>
 
-meta: object {aggInterval, confidenceInfo, dateRange, 3 more }
+meta: object { aggInterval, confidenceInfo, dateRange, 3 more }
 
 Metadata for the results.
 
@@ -1326,7 +1326,7 @@ Metadata for the results.
 
 <summary>
 
-aggInterval: "FIFTEEN\_MINUTES"or "ONE\_HOUR"or "ONE\_DAY"or 2 more
+aggInterval: "FIFTEEN\_MINUTES" or "ONE\_HOUR" or "ONE\_DAY" or 2 more
 
 Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to <a href="https://developers.cloudflare.com/radar/concepts/aggregation-intervals/">Aggregation intervals</a>.
 
@@ -1362,7 +1362,7 @@ One of the following:
 
 <summary>
 
-confidenceInfo: object {annotations, level }
+confidenceInfo: object { annotations, level }
 
 </summary>
 
@@ -1370,7 +1370,7 @@ confidenceInfo: object {annotations, level }
 
 <summary>
 
-annotations: array of object {dataSource, description, endDate, 5 more }
+annotations: array of object { dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -1378,7 +1378,7 @@ annotations: array of object {dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
+dataSource: "ALL" or "AI\_BOTS" or "AI\_GATEWAY" or 22 more
 
 Data source for annotations.
 
@@ -1504,7 +1504,7 @@ formatdate-time
 
 <summary>
 
-eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
+eventType: "GENERAL" or "OUTAGE" or "PARTIAL\_PROJECTION" or 2 more
 
 Event type for annotations.
 
@@ -1576,7 +1576,7 @@ Provides an indication of how much confidence Cloudflare has in the data.
 
 <summary>
 
-dateRange: array of object {endTime, startTime }
+dateRange: array of object { endTime, startTime }
 
 </summary>
 
@@ -1612,7 +1612,7 @@ formatdate-time
 
 <summary>
 
-normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
+normalization: "PERCENTAGE" or "MIN0\_MAX" or "MIN\_MAX" or 5 more
 
 Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
@@ -1660,7 +1660,7 @@ One of the following:
 
 <summary>
 
-units: array of object {name, value }
+units: array of object { name, value }
 
 Measurement units for the results.
 
@@ -1686,7 +1686,7 @@ value: string
 
 <summary>
 
-serie\_0: object {timestamps }
+serie\_0: object { timestamps }
 
 </summary>
 
@@ -1706,7 +1706,7 @@ timestamps: array of string
 
 <summary>
 
-TimeseriesGroupDeviceTypeResponse object {meta, serie\_0 }
+TimeseriesGroupDeviceTypeResponse object { meta, serie\_0 }
 
 </summary>
 
@@ -1714,7 +1714,7 @@ TimeseriesGroupDeviceTypeResponse object {meta, serie\_0 }
 
 <summary>
 
-meta: object {aggInterval, confidenceInfo, dateRange, 3 more }
+meta: object { aggInterval, confidenceInfo, dateRange, 3 more }
 
 Metadata for the results.
 
@@ -1724,7 +1724,7 @@ Metadata for the results.
 
 <summary>
 
-aggInterval: "FIFTEEN\_MINUTES"or "ONE\_HOUR"or "ONE\_DAY"or 2 more
+aggInterval: "FIFTEEN\_MINUTES" or "ONE\_HOUR" or "ONE\_DAY" or 2 more
 
 Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to <a href="https://developers.cloudflare.com/radar/concepts/aggregation-intervals/">Aggregation intervals</a>.
 
@@ -1760,7 +1760,7 @@ One of the following:
 
 <summary>
 
-confidenceInfo: object {annotations, level }
+confidenceInfo: object { annotations, level }
 
 </summary>
 
@@ -1768,7 +1768,7 @@ confidenceInfo: object {annotations, level }
 
 <summary>
 
-annotations: array of object {dataSource, description, endDate, 5 more }
+annotations: array of object { dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -1776,7 +1776,7 @@ annotations: array of object {dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
+dataSource: "ALL" or "AI\_BOTS" or "AI\_GATEWAY" or 22 more
 
 Data source for annotations.
 
@@ -1902,7 +1902,7 @@ formatdate-time
 
 <summary>
 
-eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
+eventType: "GENERAL" or "OUTAGE" or "PARTIAL\_PROJECTION" or 2 more
 
 Event type for annotations.
 
@@ -1974,7 +1974,7 @@ Provides an indication of how much confidence Cloudflare has in the data.
 
 <summary>
 
-dateRange: array of object {endTime, startTime }
+dateRange: array of object { endTime, startTime }
 
 </summary>
 
@@ -2010,7 +2010,7 @@ formatdate-time
 
 <summary>
 
-normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
+normalization: "PERCENTAGE" or "MIN0\_MAX" or "MIN\_MAX" or 5 more
 
 Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
@@ -2058,7 +2058,7 @@ One of the following:
 
 <summary>
 
-units: array of object {name, value }
+units: array of object { name, value }
 
 Measurement units for the results.
 
@@ -2084,7 +2084,7 @@ value: string
 
 <summary>
 
-serie\_0: object {desktop, mobile, other, timestamps }
+serie\_0: object { desktop, mobile, other, timestamps }
 
 </summary>
 
@@ -2116,7 +2116,7 @@ timestamps: array of string
 
 <summary>
 
-TimeseriesGroupHTTPProtocolResponse object {meta, serie\_0 }
+TimeseriesGroupHTTPProtocolResponse object { meta, serie\_0 }
 
 </summary>
 
@@ -2124,7 +2124,7 @@ TimeseriesGroupHTTPProtocolResponse object {meta, serie\_0 }
 
 <summary>
 
-meta: object {aggInterval, confidenceInfo, dateRange, 3 more }
+meta: object { aggInterval, confidenceInfo, dateRange, 3 more }
 
 Metadata for the results.
 
@@ -2134,7 +2134,7 @@ Metadata for the results.
 
 <summary>
 
-aggInterval: "FIFTEEN\_MINUTES"or "ONE\_HOUR"or "ONE\_DAY"or 2 more
+aggInterval: "FIFTEEN\_MINUTES" or "ONE\_HOUR" or "ONE\_DAY" or 2 more
 
 Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to <a href="https://developers.cloudflare.com/radar/concepts/aggregation-intervals/">Aggregation intervals</a>.
 
@@ -2170,7 +2170,7 @@ One of the following:
 
 <summary>
 
-confidenceInfo: object {annotations, level }
+confidenceInfo: object { annotations, level }
 
 </summary>
 
@@ -2178,7 +2178,7 @@ confidenceInfo: object {annotations, level }
 
 <summary>
 
-annotations: array of object {dataSource, description, endDate, 5 more }
+annotations: array of object { dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -2186,7 +2186,7 @@ annotations: array of object {dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
+dataSource: "ALL" or "AI\_BOTS" or "AI\_GATEWAY" or 22 more
 
 Data source for annotations.
 
@@ -2312,7 +2312,7 @@ formatdate-time
 
 <summary>
 
-eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
+eventType: "GENERAL" or "OUTAGE" or "PARTIAL\_PROJECTION" or 2 more
 
 Event type for annotations.
 
@@ -2384,7 +2384,7 @@ Provides an indication of how much confidence Cloudflare has in the data.
 
 <summary>
 
-dateRange: array of object {endTime, startTime }
+dateRange: array of object { endTime, startTime }
 
 </summary>
 
@@ -2420,7 +2420,7 @@ formatdate-time
 
 <summary>
 
-normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
+normalization: "PERCENTAGE" or "MIN0\_MAX" or "MIN\_MAX" or 5 more
 
 Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
@@ -2468,7 +2468,7 @@ One of the following:
 
 <summary>
 
-units: array of object {name, value }
+units: array of object { name, value }
 
 Measurement units for the results.
 
@@ -2494,7 +2494,7 @@ value: string
 
 <summary>
 
-serie\_0: object {http, https, timestamps }
+serie\_0: object { http, https, timestamps }
 
 </summary>
 
@@ -2522,7 +2522,7 @@ timestamps: array of string
 
 <summary>
 
-TimeseriesGroupHTTPVersionResponse object {meta, serie\_0 }
+TimeseriesGroupHTTPVersionResponse object { meta, serie\_0 }
 
 </summary>
 
@@ -2530,7 +2530,7 @@ TimeseriesGroupHTTPVersionResponse object {meta, serie\_0 }
 
 <summary>
 
-meta: object {aggInterval, confidenceInfo, dateRange, 3 more }
+meta: object { aggInterval, confidenceInfo, dateRange, 3 more }
 
 Metadata for the results.
 
@@ -2540,7 +2540,7 @@ Metadata for the results.
 
 <summary>
 
-aggInterval: "FIFTEEN\_MINUTES"or "ONE\_HOUR"or "ONE\_DAY"or 2 more
+aggInterval: "FIFTEEN\_MINUTES" or "ONE\_HOUR" or "ONE\_DAY" or 2 more
 
 Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to <a href="https://developers.cloudflare.com/radar/concepts/aggregation-intervals/">Aggregation intervals</a>.
 
@@ -2576,7 +2576,7 @@ One of the following:
 
 <summary>
 
-confidenceInfo: object {annotations, level }
+confidenceInfo: object { annotations, level }
 
 </summary>
 
@@ -2584,7 +2584,7 @@ confidenceInfo: object {annotations, level }
 
 <summary>
 
-annotations: array of object {dataSource, description, endDate, 5 more }
+annotations: array of object { dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -2592,7 +2592,7 @@ annotations: array of object {dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
+dataSource: "ALL" or "AI\_BOTS" or "AI\_GATEWAY" or 22 more
 
 Data source for annotations.
 
@@ -2718,7 +2718,7 @@ formatdate-time
 
 <summary>
 
-eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
+eventType: "GENERAL" or "OUTAGE" or "PARTIAL\_PROJECTION" or 2 more
 
 Event type for annotations.
 
@@ -2790,7 +2790,7 @@ Provides an indication of how much confidence Cloudflare has in the data.
 
 <summary>
 
-dateRange: array of object {endTime, startTime }
+dateRange: array of object { endTime, startTime }
 
 </summary>
 
@@ -2826,7 +2826,7 @@ formatdate-time
 
 <summary>
 
-normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
+normalization: "PERCENTAGE" or "MIN0\_MAX" or "MIN\_MAX" or 5 more
 
 Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
@@ -2874,7 +2874,7 @@ One of the following:
 
 <summary>
 
-units: array of object {name, value }
+units: array of object { name, value }
 
 Measurement units for the results.
 
@@ -2900,7 +2900,7 @@ value: string
 
 <summary>
 
-serie\_0: object {"HTTP/1.x", "HTTP/2", "HTTP/3", timestamps }
+serie\_0: object { "HTTP/1.x", "HTTP/2", "HTTP/3", timestamps }
 
 </summary>
 
@@ -2932,7 +2932,7 @@ timestamps: array of string
 
 <summary>
 
-TimeseriesGroupIPVersionResponse object {meta, serie\_0 }
+TimeseriesGroupIPVersionResponse object { meta, serie\_0 }
 
 </summary>
 
@@ -2940,7 +2940,7 @@ TimeseriesGroupIPVersionResponse object {meta, serie\_0 }
 
 <summary>
 
-meta: object {aggInterval, confidenceInfo, dateRange, 3 more }
+meta: object { aggInterval, confidenceInfo, dateRange, 3 more }
 
 Metadata for the results.
 
@@ -2950,7 +2950,7 @@ Metadata for the results.
 
 <summary>
 
-aggInterval: "FIFTEEN\_MINUTES"or "ONE\_HOUR"or "ONE\_DAY"or 2 more
+aggInterval: "FIFTEEN\_MINUTES" or "ONE\_HOUR" or "ONE\_DAY" or 2 more
 
 Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to <a href="https://developers.cloudflare.com/radar/concepts/aggregation-intervals/">Aggregation intervals</a>.
 
@@ -2986,7 +2986,7 @@ One of the following:
 
 <summary>
 
-confidenceInfo: object {annotations, level }
+confidenceInfo: object { annotations, level }
 
 </summary>
 
@@ -2994,7 +2994,7 @@ confidenceInfo: object {annotations, level }
 
 <summary>
 
-annotations: array of object {dataSource, description, endDate, 5 more }
+annotations: array of object { dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -3002,7 +3002,7 @@ annotations: array of object {dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
+dataSource: "ALL" or "AI\_BOTS" or "AI\_GATEWAY" or 22 more
 
 Data source for annotations.
 
@@ -3128,7 +3128,7 @@ formatdate-time
 
 <summary>
 
-eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
+eventType: "GENERAL" or "OUTAGE" or "PARTIAL\_PROJECTION" or 2 more
 
 Event type for annotations.
 
@@ -3200,7 +3200,7 @@ Provides an indication of how much confidence Cloudflare has in the data.
 
 <summary>
 
-dateRange: array of object {endTime, startTime }
+dateRange: array of object { endTime, startTime }
 
 </summary>
 
@@ -3236,7 +3236,7 @@ formatdate-time
 
 <summary>
 
-normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
+normalization: "PERCENTAGE" or "MIN0\_MAX" or "MIN\_MAX" or 5 more
 
 Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
@@ -3284,7 +3284,7 @@ One of the following:
 
 <summary>
 
-units: array of object {name, value }
+units: array of object { name, value }
 
 Measurement units for the results.
 
@@ -3310,7 +3310,7 @@ value: string
 
 <summary>
 
-serie\_0: object {IPv4, IPv6, timestamps }
+serie\_0: object { IPv4, IPv6, timestamps }
 
 </summary>
 
@@ -3338,7 +3338,7 @@ timestamps: array of string
 
 <summary>
 
-TimeseriesGroupOSResponse object {meta, serie\_0 }
+TimeseriesGroupOSResponse object { meta, serie\_0 }
 
 </summary>
 
@@ -3346,7 +3346,7 @@ TimeseriesGroupOSResponse object {meta, serie\_0 }
 
 <summary>
 
-meta: object {aggInterval, confidenceInfo, dateRange, 3 more }
+meta: object { aggInterval, confidenceInfo, dateRange, 3 more }
 
 Metadata for the results.
 
@@ -3356,7 +3356,7 @@ Metadata for the results.
 
 <summary>
 
-aggInterval: "FIFTEEN\_MINUTES"or "ONE\_HOUR"or "ONE\_DAY"or 2 more
+aggInterval: "FIFTEEN\_MINUTES" or "ONE\_HOUR" or "ONE\_DAY" or 2 more
 
 Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to <a href="https://developers.cloudflare.com/radar/concepts/aggregation-intervals/">Aggregation intervals</a>.
 
@@ -3392,7 +3392,7 @@ One of the following:
 
 <summary>
 
-confidenceInfo: object {annotations, level }
+confidenceInfo: object { annotations, level }
 
 </summary>
 
@@ -3400,7 +3400,7 @@ confidenceInfo: object {annotations, level }
 
 <summary>
 
-annotations: array of object {dataSource, description, endDate, 5 more }
+annotations: array of object { dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -3408,7 +3408,7 @@ annotations: array of object {dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
+dataSource: "ALL" or "AI\_BOTS" or "AI\_GATEWAY" or 22 more
 
 Data source for annotations.
 
@@ -3534,7 +3534,7 @@ formatdate-time
 
 <summary>
 
-eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
+eventType: "GENERAL" or "OUTAGE" or "PARTIAL\_PROJECTION" or 2 more
 
 Event type for annotations.
 
@@ -3606,7 +3606,7 @@ Provides an indication of how much confidence Cloudflare has in the data.
 
 <summary>
 
-dateRange: array of object {endTime, startTime }
+dateRange: array of object { endTime, startTime }
 
 </summary>
 
@@ -3642,7 +3642,7 @@ formatdate-time
 
 <summary>
 
-normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
+normalization: "PERCENTAGE" or "MIN0\_MAX" or "MIN\_MAX" or 5 more
 
 Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
@@ -3690,7 +3690,7 @@ One of the following:
 
 <summary>
 
-units: array of object {name, value }
+units: array of object { name, value }
 
 Measurement units for the results.
 
@@ -3716,7 +3716,7 @@ value: string
 
 <summary>
 
-serie\_0: object {timestamps }
+serie\_0: object { timestamps }
 
 </summary>
 
@@ -3736,7 +3736,7 @@ timestamps: array of string
 
 <summary>
 
-TimeseriesGroupPostQuantumResponse object {meta, serie\_0 }
+TimeseriesGroupPostQuantumResponse object { meta, serie\_0 }
 
 </summary>
 
@@ -3744,7 +3744,7 @@ TimeseriesGroupPostQuantumResponse object {meta, serie\_0 }
 
 <summary>
 
-meta: object {aggInterval, confidenceInfo, dateRange, 3 more }
+meta: object { aggInterval, confidenceInfo, dateRange, 3 more }
 
 Metadata for the results.
 
@@ -3754,7 +3754,7 @@ Metadata for the results.
 
 <summary>
 
-aggInterval: "FIFTEEN\_MINUTES"or "ONE\_HOUR"or "ONE\_DAY"or 2 more
+aggInterval: "FIFTEEN\_MINUTES" or "ONE\_HOUR" or "ONE\_DAY" or 2 more
 
 Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to <a href="https://developers.cloudflare.com/radar/concepts/aggregation-intervals/">Aggregation intervals</a>.
 
@@ -3790,7 +3790,7 @@ One of the following:
 
 <summary>
 
-confidenceInfo: object {annotations, level }
+confidenceInfo: object { annotations, level }
 
 </summary>
 
@@ -3798,7 +3798,7 @@ confidenceInfo: object {annotations, level }
 
 <summary>
 
-annotations: array of object {dataSource, description, endDate, 5 more }
+annotations: array of object { dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -3806,7 +3806,7 @@ annotations: array of object {dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
+dataSource: "ALL" or "AI\_BOTS" or "AI\_GATEWAY" or 22 more
 
 Data source for annotations.
 
@@ -3932,7 +3932,7 @@ formatdate-time
 
 <summary>
 
-eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
+eventType: "GENERAL" or "OUTAGE" or "PARTIAL\_PROJECTION" or 2 more
 
 Event type for annotations.
 
@@ -4004,7 +4004,7 @@ Provides an indication of how much confidence Cloudflare has in the data.
 
 <summary>
 
-dateRange: array of object {endTime, startTime }
+dateRange: array of object { endTime, startTime }
 
 </summary>
 
@@ -4040,7 +4040,7 @@ formatdate-time
 
 <summary>
 
-normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
+normalization: "PERCENTAGE" or "MIN0\_MAX" or "MIN\_MAX" or 5 more
 
 Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
@@ -4088,7 +4088,7 @@ One of the following:
 
 <summary>
 
-units: array of object {name, value }
+units: array of object { name, value }
 
 Measurement units for the results.
 
@@ -4114,7 +4114,7 @@ value: string
 
 <summary>
 
-serie\_0: object {NOT\_SUPPORTED, SUPPORTED, timestamps }
+serie\_0: object { NOT\_SUPPORTED, SUPPORTED, timestamps }
 
 </summary>
 

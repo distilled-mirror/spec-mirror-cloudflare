@@ -86,7 +86,7 @@ formatint64
 
 <summary>
 
-body: array of object {entry\_id, header\_name, num\_cells } or object {entry\_name, header\_name, num\_cells }
+body: array of object { entry\_id, header\_name, num\_cells } or object { entry\_name, header\_name, num\_cells }
 
 </summary>
 
@@ -96,7 +96,7 @@ One of the following:
 
 <summary>
 
-ExistingColumn object {entry\_id, header\_name, num\_cells }
+ExistingColumn object { entry\_id, header\_name, num\_cells }
 
 </summary>
 
@@ -126,7 +126,7 @@ minimum0
 
 <summary>
 
-NewColumn object {entry\_name, header\_name, num\_cells }
+NewColumn object { entry\_name, header\_name, num\_cells }
 
 </summary>
 
@@ -160,7 +160,7 @@ minimum0
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -182,7 +182,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -202,7 +202,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -224,7 +224,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -250,7 +250,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional array of object {entry\_id, header\_name, num\_cells, upload\_status }
+result: optional array of object { entry\_id, header\_name, num\_cells, upload\_status }
 
 </summary>
 
@@ -274,7 +274,7 @@ formatint64
 
 <summary>
 
-upload\_status: "empty"or "uploading"or "pending"or 3 more
+upload\_status: "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 

@@ -32,7 +32,7 @@ GET/accounts/{account\_id}/slurper/jobs/{job\_id}/logs
 
 <summary>
 
-LogListResponse object {createdAt, job, logType, 2 more }
+LogListResponse object { createdAt, job, logType, 2 more }
 
 </summary>
 
@@ -48,7 +48,7 @@ job: optional string
 
 <summary>
 
-logType: optional "migrationStart"or "migrationComplete"or "migrationAbort"or 12 more
+logType: optional "migrationStart" or "migrationComplete" or "migrationAbort" or 12 more
 
 </summary>
 

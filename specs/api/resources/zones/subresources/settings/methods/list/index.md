@@ -58,7 +58,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Zone Settings Write``Zone Settings Read`
+`Workers Metadata Read-Only``Workers Editor``Workers Content Read-Only``Workers Admin``Zone Settings Write``Zone Settings Read``Workers Routes Write``Workers Routes Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -98,7 +98,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -140,7 +140,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -166,7 +166,7 @@ Whether the API call was successful
 
 <summary>
 
-result: optional array of <a href="https://developers.cloudflare.com/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20zero_rtt%20%3E%20(schema)">ZeroRTT</a> { id, value, editable, modified\_on } or <a href="https://developers.cloudflare.com/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20advanced_ddos%20%3E%20(schema)">AdvancedDDoS</a> { id, value, editable, modified\_on } or object {id, modified\_on, value } or 64 more
+result: optional array of <a href="https://developers.cloudflare.com/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20zero_rtt%20%3E%20(schema)">ZeroRTT</a> { id, value, editable, modified\_on } or <a href="https://developers.cloudflare.com/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20advanced_ddos%20%3E%20(schema)">AdvancedDDoS</a> { id, value, editable, modified\_on } or object { id, modified\_on, value } or 64 more
 
 </summary>
 
@@ -176,7 +176,7 @@ One of the following:
 
 <summary>
 
-ZeroRTT object {id, value, editable, modified\_on }
+ZeroRTT object { id, value, editable, modified\_on }
 
 0-RTT session resumption enabled for this zone. Changing this setting does not enable or disable TLS 1.3. Writing the <code>tls_1_3</code> setting also changes 0-RTT: <code>zrt</code> enables it, and <code>on</code> or <code>off</code> disables it.
 
@@ -192,7 +192,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -228,7 +228,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -264,7 +264,7 @@ formatdate-time
 
 <summary>
 
-AdvancedDDoS object {id, value, editable, modified\_on }
+AdvancedDDoS object { id, value, editable, modified\_on }
 
 Advanced protection from Distributed Denial of Service (DDoS) attacks on your website. This is an uneditable value that is ‘on’ in the case of Business and Enterprise zones.
 
@@ -280,7 +280,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -316,7 +316,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -352,7 +352,7 @@ formatdate-time
 
 <summary>
 
-ZonesCacheRulesAegis object {id, modified\_on, value }
+ZonesCacheRulesAegis object { id, modified\_on, value }
 
 Aegis provides dedicated egress IPs (from Cloudflare to your origin) for your layer 7 WAF and CDN services. The egress IPs are reserved exclusively for your account so that you can increase your origin security by only allowing traffic from a small list of IP addresses.
 
@@ -376,7 +376,7 @@ formatdate-time
 
 <summary>
 
-value: optional object {enabled, pool\_id }
+value: optional object { enabled, pool\_id }
 
 Value of the zone setting.
 
@@ -406,7 +406,7 @@ Egress pool id which refers to a grouping of dedicated egress IPs through which 
 
 <summary>
 
-AlwaysOnline object {id, value, editable, modified\_on }
+AlwaysOnline object { id, value, editable, modified\_on }
 
 When enabled, Cloudflare serves limited copies of web pages available from the <a href="https://archive.org/web/">Internet Archive’s Wayback Machine</a> if your server is offline. Refer to <a href="https://developers.cloudflare.com/cache/about/always-online">Always Online</a> for more information.
 
@@ -422,7 +422,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -458,7 +458,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -494,7 +494,7 @@ formatdate-time
 
 <summary>
 
-ZonesAlwaysUseHTTPS2 object {id, value, editable, modified\_on }
+ZonesAlwaysUseHTTPS2 object { id, value, editable, modified\_on }
 
 Reply to all requests for URLs that use “http” with a 301 redirect to the equivalent “https” URL. If you only want to redirect for a subset of requests, consider creating an “Always use HTTPS” page rule.
 
@@ -510,7 +510,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -546,7 +546,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -582,7 +582,7 @@ formatdate-time
 
 <summary>
 
-ZonesAutomaticHTTPSRewrites2 object {id, value, editable, modified\_on }
+ZonesAutomaticHTTPSRewrites2 object { id, value, editable, modified\_on }
 
 Enable the Automatic HTTPS Rewrites feature for this zone.
 
@@ -598,7 +598,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -634,7 +634,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -670,7 +670,7 @@ formatdate-time
 
 <summary>
 
-Brotli object {id, value, editable, modified\_on }
+Brotli object { id, value, editable, modified\_on }
 
 When the client requesting an asset supports the Brotli compression algorithm, Cloudflare will serve a Brotli compressed version of the asset.
 
@@ -686,7 +686,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -722,7 +722,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -758,7 +758,7 @@ formatdate-time
 
 <summary>
 
-ZonesBrowserCacheTTL2 object {id, value, editable, modified\_on }
+ZonesBrowserCacheTTL2 object { id, value, editable, modified\_on }
 
 Browser Cache TTL (in seconds) specifies how long Cloudflare-cached resources will remain on your visitors’ computers. Cloudflare will honor any larger times specified by your server. (<a href="https://support.cloudflare.com/hc/en-us/articles/200168276">https://support.cloudflare.com/hc/en-us/articles/200168276</a>).
 
@@ -774,7 +774,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Value of the zone setting in seconds. Minimum values by plan:
 
@@ -819,7 +819,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -855,7 +855,7 @@ formatdate-time
 
 <summary>
 
-ZonesBrowserCheck2 object {id, value, editable, modified\_on }
+ZonesBrowserCheck2 object { id, value, editable, modified\_on }
 
 Browser Integrity Check is similar to Bad Behavior and looks for common HTTP headers abused most commonly by spammers and denies access to your page. It will also challenge visitors that do not have a user agent or a non standard user agent (also commonly used by abuse bots, crawlers or visitors). (<a href="https://support.cloudflare.com/hc/en-us/articles/200170086">https://support.cloudflare.com/hc/en-us/articles/200170086</a>).
 
@@ -871,7 +871,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -907,7 +907,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -943,7 +943,7 @@ formatdate-time
 
 <summary>
 
-ZonesCacheLevel2 object {id, value, editable, modified\_on }
+ZonesCacheLevel2 object { id, value, editable, modified\_on }
 
 Cache Level functions based off the setting level. The basic setting will cache most static resources (i.e., css, images, and JavaScript). The simplified setting will ignore the query string when delivering a cached resource. The aggressive setting will cache all static resources, including ones with a query string. (<a href="https://support.cloudflare.com/hc/en-us/articles/200168256">https://support.cloudflare.com/hc/en-us/articles/200168256</a>).
 
@@ -959,7 +959,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -995,7 +995,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -1031,7 +1031,7 @@ formatdate-time
 
 <summary>
 
-ChallengeTTL object {id, value, editable, modified\_on }
+ChallengeTTL object { id, value, editable, modified\_on }
 
 Specify how long a visitor is allowed access to your site after successfully completing a challenge (such as a CAPTCHA). After the TTL has expired the visitor will have to complete a new challenge. We recommend a 15 - 45 minute setting and will attempt to honor any setting above 45 minutes. (<a href="https://support.cloudflare.com/hc/en-us/articles/200170136">https://support.cloudflare.com/hc/en-us/articles/200170136</a>).
 
@@ -1047,7 +1047,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -1083,7 +1083,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -1119,7 +1119,7 @@ formatdate-time
 
 <summary>
 
-Ciphers object {id, value, editable, modified\_on }
+Ciphers object { id, value, editable, modified\_on }
 
 An allowlist of ciphers for TLS termination. These ciphers must be in the BoringSSL format.
 
@@ -1135,7 +1135,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -1171,7 +1171,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -1207,7 +1207,7 @@ formatdate-time
 
 <summary>
 
-ZonesContentConverter object {id, value, editable, modified\_on }
+ZonesContentConverter object { id, value, editable, modified\_on }
 
 When enabled and the client sends an Accept header requesting text/markdown, Cloudflare will convert HTML responses to Markdown format using the toMarkdown() service. Refer to the <a href="https://developers.cloudflare.com/workers-ai/features/markdown-conversion/">developer documentation</a> for more information.
 
@@ -1223,7 +1223,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -1259,7 +1259,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -1295,7 +1295,7 @@ formatdate-time
 
 <summary>
 
-ZonesCNAMEFlattening object {id, value, editable, modified\_on }
+ZonesCNAMEFlattening object { id, value, editable, modified\_on }
 
 Whether or not cname flattening is on.
 
@@ -1311,7 +1311,7 @@ How to flatten the cname destination.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -1347,7 +1347,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -1383,7 +1383,7 @@ formatdate-time
 
 <summary>
 
-DevelopmentMode object {id, value, editable, 2 more }
+DevelopmentMode object { id, value, editable, 2 more }
 
 Development Mode temporarily allows you to enter development mode for your websites if you need to make changes to your site. This will bypass Cloudflare’s accelerated cache and slow down your site, but is useful if you are making changes to cacheable content (like images, css, or JavaScript) and would like to see those changes right away. Once entered, development mode will last for 3 hours and then automatically toggle off.
 
@@ -1399,7 +1399,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -1435,7 +1435,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -1477,7 +1477,7 @@ Value of the zone setting. Notes: The interval (in seconds) from when developmen
 
 <summary>
 
-EarlyHints object {id, value, editable, modified\_on }
+EarlyHints object { id, value, editable, modified\_on }
 
 When enabled, Cloudflare will attempt to speed up overall page loads by serving <code>103</code> responses with <code>Link</code> headers from the final response. Refer to <a href="https://developers.cloudflare.com/cache/about/early-hints">Early Hints</a> for more information.
 
@@ -1493,7 +1493,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -1529,7 +1529,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -1565,7 +1565,7 @@ formatdate-time
 
 <summary>
 
-ZonesEdgeCacheTTL2 object {id, value, editable, modified\_on }
+ZonesEdgeCacheTTL2 object { id, value, editable, modified\_on }
 
 Time (in seconds) that a resource will be ensured to remain on Cloudflare’s cache servers.
 
@@ -1581,7 +1581,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -1617,7 +1617,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -1653,7 +1653,7 @@ formatdate-time
 
 <summary>
 
-ZonesEmailObfuscation2 object {id, value, editable, modified\_on }
+ZonesEmailObfuscation2 object { id, value, editable, modified\_on }
 
 Encrypt email adresses on your web page from bots, while keeping them visible to humans. (<a href="https://support.cloudflare.com/hc/en-us/articles/200170016">https://support.cloudflare.com/hc/en-us/articles/200170016</a>).
 
@@ -1669,7 +1669,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -1705,7 +1705,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -1741,7 +1741,7 @@ formatdate-time
 
 <summary>
 
-H2Prioritization object {id, value, editable, modified\_on }
+H2Prioritization object { id, value, editable, modified\_on }
 
 HTTP/2 Edge Prioritization optimises the delivery of resources served through HTTP/2 to improve page load performance. It also supports fine control of content delivery when used in conjunction with Workers.
 
@@ -1757,7 +1757,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -1793,7 +1793,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -1829,7 +1829,7 @@ formatdate-time
 
 <summary>
 
-HotlinkProtection object {id, value, editable, modified\_on }
+HotlinkProtection object { id, value, editable, modified\_on }
 
 When enabled, the Hotlink Protection option ensures that other sites cannot suck up your bandwidth by building pages that use images hosted on your site. Anytime a request for an image on your site hits Cloudflare, we check to ensure that it’s not another site requesting them. People will still be able to download and view images from your page, but other sites won’t be able to steal them for use on their own pages. (<a href="https://support.cloudflare.com/hc/en-us/articles/200170026">https://support.cloudflare.com/hc/en-us/articles/200170026</a>).
 
@@ -1845,7 +1845,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -1881,7 +1881,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -1917,7 +1917,7 @@ formatdate-time
 
 <summary>
 
-HTTP2 object {id, value, editable, modified\_on }
+HTTP2 object { id, value, editable, modified\_on }
 
 HTTP2 enabled for this zone.
 
@@ -1933,7 +1933,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -1969,7 +1969,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -2005,7 +2005,7 @@ formatdate-time
 
 <summary>
 
-HTTP3 object {id, value, editable, modified\_on }
+HTTP3 object { id, value, editable, modified\_on }
 
 HTTP3 enabled for this zone.
 
@@ -2021,7 +2021,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -2057,7 +2057,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -2093,7 +2093,7 @@ formatdate-time
 
 <summary>
 
-ImageResizing object {id, value, editable, modified\_on }
+ImageResizing object { id, value, editable, modified\_on }
 
 Image Transformations provides on-demand resizing, conversion and optimization for images served through Cloudflare’s network. Refer to the <a href="https://developers.cloudflare.com/images/">Image Transformations documentation</a> for more information.
 
@@ -2109,7 +2109,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -2145,7 +2145,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -2181,7 +2181,7 @@ formatdate-time
 
 <summary>
 
-ZonesIPGeolocation2 object {id, value, editable, modified\_on }
+ZonesIPGeolocation2 object { id, value, editable, modified\_on }
 
 Enable IP Geolocation to have Cloudflare geolocate visitors to your website and pass the country code to you. (<a href="https://support.cloudflare.com/hc/en-us/articles/200168236">https://support.cloudflare.com/hc/en-us/articles/200168236</a>).
 
@@ -2197,7 +2197,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -2233,7 +2233,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -2269,7 +2269,7 @@ formatdate-time
 
 <summary>
 
-IPV6 object {id, value, editable, modified\_on }
+IPV6 object { id, value, editable, modified\_on }
 
 Enable IPv6 on all subdomains that are Cloudflare enabled. (<a href="https://support.cloudflare.com/hc/en-us/articles/200168586">https://support.cloudflare.com/hc/en-us/articles/200168586</a>).
 
@@ -2285,7 +2285,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -2321,7 +2321,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -2357,7 +2357,7 @@ formatdate-time
 
 <summary>
 
-ZonesMaxUpload object {id, value, editable, modified\_on }
+ZonesMaxUpload object { id, value, editable, modified\_on }
 
 Maximum size of an allowable upload.
 
@@ -2373,7 +2373,7 @@ identifier of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -2409,7 +2409,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -2445,7 +2445,7 @@ formatdate-time
 
 <summary>
 
-MinTLSVersion object {id, value, editable, modified\_on }
+MinTLSVersion object { id, value, editable, modified\_on }
 
 Only accepts HTTPS requests that use at least the TLS protocol version specified. For example, if TLS 1.1 is selected, TLS 1.0 connections will be rejected, while 1.1, 1.2, and 1.3 (if enabled) will be permitted.
 
@@ -2461,7 +2461,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -2497,7 +2497,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -2533,7 +2533,7 @@ formatdate-time
 
 <summary>
 
-ZonesMirage2 object {id, value, editable, modified\_on }
+ZonesMirage2 object { id, value, editable, modified\_on }
 
 Automatically optimize image loading for website visitors on mobile devices. Refer to <a href="http://blog.cloudflare.com/mirage2-solving-mobile-speed">our blog post</a> for more information.
 
@@ -2549,7 +2549,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -2585,7 +2585,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -2621,7 +2621,7 @@ formatdate-time
 
 <summary>
 
-NEL object {id, value, editable, modified\_on }
+NEL object { id, value, editable, modified\_on }
 
 Enable Network Error Logging reporting on your zone. (Beta)
 
@@ -2637,7 +2637,7 @@ Zone setting identifier.
 
 <summary>
 
-value: object {enabled } or object {enabled } or object {enabled } or 2 more
+value: object { enabled } or object { enabled } or object { enabled } or 2 more
 
 Current value of the zone setting.
 
@@ -2649,7 +2649,7 @@ One of the following:
 
 <summary>
 
-Enabled object {enabled }
+Enabled object { enabled }
 
 </summary>
 
@@ -2665,7 +2665,7 @@ enabled: optional boolean
 
 <summary>
 
-Enabled object {enabled }
+Enabled object { enabled }
 
 </summary>
 
@@ -2681,7 +2681,7 @@ enabled: optional boolean
 
 <summary>
 
-Enabled object {enabled }
+Enabled object { enabled }
 
 </summary>
 
@@ -2697,7 +2697,7 @@ enabled: optional boolean
 
 <summary>
 
-Enabled object {enabled }
+Enabled object { enabled }
 
 </summary>
 
@@ -2713,7 +2713,7 @@ enabled: optional boolean
 
 <summary>
 
-Enabled object {enabled }
+Enabled object { enabled }
 
 </summary>
 
@@ -2733,7 +2733,7 @@ enabled: optional boolean
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -2769,7 +2769,7 @@ formatdate-time
 
 <summary>
 
-ZonesOpportunisticEncryption2 object {id, value, editable, modified\_on }
+ZonesOpportunisticEncryption2 object { id, value, editable, modified\_on }
 
 Enables the Opportunistic Encryption feature for a zone.
 
@@ -2785,7 +2785,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -2821,7 +2821,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -2857,7 +2857,7 @@ formatdate-time
 
 <summary>
 
-OpportunisticOnion object {id, value, editable, modified\_on }
+OpportunisticOnion object { id, value, editable, modified\_on }
 
 Add an Alt-Svc header to all legitimate requests from Tor, allowing the connection to use our onion services instead of exit nodes.
 
@@ -2873,7 +2873,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -2909,7 +2909,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -2945,7 +2945,7 @@ formatdate-time
 
 <summary>
 
-OrangeToOrange object {id, value, editable, modified\_on }
+OrangeToOrange object { id, value, editable, modified\_on }
 
 Orange to Orange (O2O) allows zones on Cloudflare to CNAME to other zones also on Cloudflare.
 
@@ -2961,7 +2961,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -2997,7 +2997,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -3033,7 +3033,7 @@ formatdate-time
 
 <summary>
 
-ZonesOriginErrorPagePassThru2 object {id, value, editable, modified\_on }
+ZonesOriginErrorPagePassThru2 object { id, value, editable, modified\_on }
 
 Cloudflare will proxy customer error pages on any 502,504 errors on origin server instead of showing a default Cloudflare error page. This does not apply to 522 errors and is limited to Enterprise Zones.
 
@@ -3049,7 +3049,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -3085,7 +3085,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -3121,7 +3121,7 @@ formatdate-time
 
 <summary>
 
-ZonesCacheRulesOriginH2MaxStreams object {id, modified\_on, value }
+ZonesCacheRulesOriginH2MaxStreams object { id, modified\_on, value }
 
 Origin H2 Max Streams configures the max number of concurrent requests that Cloudflare will send within the same connection when communicating with the origin server, if the origin supports it. Note that if your origin does not support H2 multiplexing, 5xx errors may be observed, particularly 520s. Also note that the default value is <code>100</code> for all plan types except Enterprise where it is <code>1</code>. <code>1</code> means that H2 multiplexing is disabled.
 
@@ -3159,7 +3159,7 @@ minimum1
 
 <summary>
 
-ZonesCacheRulesOriginMaxHTTPVersion object {id, modified\_on, value }
+ZonesCacheRulesOriginMaxHTTPVersion object { id, modified\_on, value }
 
 Origin Max HTTP Setting Version sets the highest HTTP version Cloudflare will attempt to use with your origin. This setting allows Cloudflare to make HTTP/2 requests to your origin. (Refer to <a href="https://developers.cloudflare.com/cache/how-to/enable-http2-to-origin/">Enable HTTP/2 to Origin</a>, for more information.). The default value is “2” for all plan types except Enterprise where it is “1”.
 
@@ -3183,7 +3183,7 @@ formatdate-time
 
 <summary>
 
-value: optional "2"or "1"
+value: optional "2" or "1"
 
 Value of the Origin Max HTTP Version Setting.
 
@@ -3211,7 +3211,7 @@ One of the following:
 
 <summary>
 
-ZonesPolish2 object {id, value, editable, modified\_on }
+ZonesPolish2 object { id, value, editable, modified\_on }
 
 Removes metadata and compresses your images for faster page load times. Basic (Lossless): Reduce the size of PNG, JPEG, and GIF files - no impact on visual quality. Basic + JPEG (Lossy): Further reduce the size of JPEG files for faster image loading. Larger JPEGs are converted to progressive images, loading a lower-resolution image first and ending in a higher-resolution version. Not recommended for hi-res photography sites.
 
@@ -3227,7 +3227,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -3263,7 +3263,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -3299,7 +3299,7 @@ formatdate-time
 
 <summary>
 
-PrefetchPreload object {id, value, editable, modified\_on }
+PrefetchPreload object { id, value, editable, modified\_on }
 
 Cloudflare will prefetch any URLs that are included in the response headers. This is limited to Enterprise Zones.
 
@@ -3315,7 +3315,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -3351,7 +3351,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -3387,7 +3387,7 @@ formatdate-time
 
 <summary>
 
-ZonesPreRender object {id, value, editable, modified\_on }
+ZonesPreRender object { id, value, editable, modified\_on }
 
 When enabled, Cloudflare serves pre-rendered HTML to eligible search and AI crawlers instead of the origin’s unrendered response.
 
@@ -3403,7 +3403,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -3439,7 +3439,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -3475,7 +3475,7 @@ formatdate-time
 
 <summary>
 
-ZonesPrivacyPass object {id, value, editable, modified\_on }
+ZonesPrivacyPass object { id, value, editable, modified\_on }
 
 Privacy Pass v1 was a browser extension developed by the Privacy Pass Team to improve the browsing experience for your visitors by allowing users to reduce the number of CAPTCHAs shown. (<a href="https://support.cloudflare.com/hc/en-us/articles/115001992652-Privacy-Pass">https://support.cloudflare.com/hc/en-us/articles/115001992652-Privacy-Pass</a>).
 
@@ -3491,7 +3491,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -3527,7 +3527,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -3563,7 +3563,7 @@ formatdate-time
 
 <summary>
 
-ProxyReadTimeout object {id, value, editable, modified\_on }
+ProxyReadTimeout object { id, value, editable, modified\_on }
 
 Maximum time in seconds between two read operations from origin.
 
@@ -3579,7 +3579,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Value of the zone setting, in seconds. Notes: Value must be between 1 and 6000
 
@@ -3615,7 +3615,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -3651,7 +3651,7 @@ formatdate-time
 
 <summary>
 
-PseudoIPV4 object {id, value, editable, modified\_on }
+PseudoIPV4 object { id, value, editable, modified\_on }
 
 The value set for the Pseudo IPv4 setting.
 
@@ -3667,7 +3667,7 @@ Value of the Pseudo IPv4 setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -3703,7 +3703,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -3739,7 +3739,7 @@ formatdate-time
 
 <summary>
 
-ZonesRedirectsForAITraining object {id, value, editable, modified\_on }
+ZonesRedirectsForAITraining object { id, value, editable, modified\_on }
 
 When enabled, Cloudflare will redirect verified AI training crawlers to canonical URLs found in the HTML response, ensuring AI models train on authoritative content.
 
@@ -3755,7 +3755,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -3791,7 +3791,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -3827,7 +3827,7 @@ formatdate-time
 
 <summary>
 
-ZonesReplaceInsecureJS object {id, value, editable, modified\_on }
+ZonesReplaceInsecureJS object { id, value, editable, modified\_on }
 
 Automatically replace insecure JavaScript libraries with safer and faster alternatives provided under cdnjs and powered by Cloudflare. Currently supports the following libraries: Polyfill under polyfill.io.
 
@@ -3843,7 +3843,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -3879,7 +3879,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -3915,7 +3915,7 @@ formatdate-time
 
 <summary>
 
-ZonesResponseBuffering2 object {id, value, editable, modified\_on }
+ZonesResponseBuffering2 object { id, value, editable, modified\_on }
 
 Enables or disables buffering of responses from the proxied server. Cloudflare may buffer the whole payload to deliver it at once to the client versus allowing it to be delivered in chunks. By default, the proxied server streams directly and is not buffered by Cloudflare. This is limited to Enterprise Zones.
 
@@ -3931,7 +3931,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -3967,7 +3967,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -4003,7 +4003,7 @@ formatdate-time
 
 <summary>
 
-ZonesRocketLoader2 object {id, value, editable, modified\_on }
+ZonesRocketLoader2 object { id, value, editable, modified\_on }
 
 Rocket Loader is a general-purpose asynchronous JavaScript optimisation that prioritises rendering your content while loading your site’s Javascript asynchronously. Turning on Rocket Loader will immediately improve a web page’s rendering time sometimes measured as Time to First Paint (TTFP), and also the <code>window.onload</code> time (assuming there is JavaScript on the page). This can have a positive impact on your Google search ranking. When turned on, Rocket Loader will automatically defer the loading of all Javascript referenced in your HTML, with no configuration required. Refer to <a href="https://support.cloudflare.com/hc/articles/200168056">Understanding Rocket Loader</a> for more information.
 
@@ -4019,7 +4019,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -4055,7 +4055,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -4091,7 +4091,7 @@ formatdate-time
 
 <summary>
 
-ZonesSchemasAutomaticPlatformOptimization object {id, value, editable, modified\_on }
+ZonesSchemasAutomaticPlatformOptimization object { id, value, editable, modified\_on }
 
 <a href="https://developers.cloudflare.com/automatic-platform-optimization/">Automatic Platform Optimization for WordPress</a> serves your WordPress site from Cloudflare’s edge network and caches third-party fonts.
 
@@ -4107,7 +4107,7 @@ ID of the zone setting.
 
 <summary>
 
-value: object {cache\_by\_device\_type, cf, enabled, 3 more } or object {cache\_by\_device\_type, cf, enabled, 3 more } or object {cache\_by\_device\_type, cf, enabled, 3 more } or 2 more
+value: object { cache\_by\_device\_type, cf, enabled, 3 more } or object { cache\_by\_device\_type, cf, enabled, 3 more } or object { cache\_by\_device\_type, cf, enabled, 3 more } or 2 more
 
 Current value of the zone setting.
 
@@ -4119,7 +4119,7 @@ One of the following:
 
 <summary>
 
-object {cache\_by\_device\_type, cf, enabled, 3 more }
+object { cache\_by\_device\_type, cf, enabled, 3 more }
 
 </summary>
 
@@ -4167,7 +4167,7 @@ Indicates whether or not <a href="https://wordpress.org/plugins/cloudflare/">Clo
 
 <summary>
 
-object {cache\_by\_device\_type, cf, enabled, 3 more }
+object { cache\_by\_device\_type, cf, enabled, 3 more }
 
 </summary>
 
@@ -4215,7 +4215,7 @@ Indicates whether or not <a href="https://wordpress.org/plugins/cloudflare/">Clo
 
 <summary>
 
-object {cache\_by\_device\_type, cf, enabled, 3 more }
+object { cache\_by\_device\_type, cf, enabled, 3 more }
 
 </summary>
 
@@ -4263,7 +4263,7 @@ Indicates whether or not <a href="https://wordpress.org/plugins/cloudflare/">Clo
 
 <summary>
 
-object {cache\_by\_device\_type, cf, enabled, 3 more }
+object { cache\_by\_device\_type, cf, enabled, 3 more }
 
 </summary>
 
@@ -4311,7 +4311,7 @@ Indicates whether or not <a href="https://wordpress.org/plugins/cloudflare/">Clo
 
 <summary>
 
-object {cache\_by\_device\_type, cf, enabled, 3 more }
+object { cache\_by\_device\_type, cf, enabled, 3 more }
 
 </summary>
 
@@ -4363,7 +4363,7 @@ Indicates whether or not <a href="https://wordpress.org/plugins/cloudflare/">Clo
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -4399,7 +4399,7 @@ formatdate-time
 
 <summary>
 
-ZonesSearchForAgents object {id, value, editable, modified\_on }
+ZonesSearchForAgents object { id, value, editable, modified\_on }
 
 When enabled, Cloudflare provisions an AI Search instance for the zone and exposes a /.well-known/ai-search endpoint that AI agents can query. Markdown responses also receive an agent: YAML capability block advertising the search endpoint.
 
@@ -4415,7 +4415,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -4451,7 +4451,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -4487,7 +4487,7 @@ formatdate-time
 
 <summary>
 
-SecurityHeaders object {id, value, editable, modified\_on }
+SecurityHeaders object { id, value, editable, modified\_on }
 
 Cloudflare security header for a zone.
 
@@ -4503,7 +4503,7 @@ ID of the zone’s security header.
 
 <summary>
 
-value: object {strict\_transport\_security } or object {strict\_transport\_security } or object {strict\_transport\_security } or 2 more
+value: object { strict\_transport\_security } or object { strict\_transport\_security } or object { strict\_transport\_security } or 2 more
 
 Current value of the zone setting.
 
@@ -4515,7 +4515,7 @@ One of the following:
 
 <summary>
 
-StrictTransportSecurity object {strict\_transport\_security }
+StrictTransportSecurity object { strict\_transport\_security }
 
 </summary>
 
@@ -4523,7 +4523,7 @@ StrictTransportSecurity object {strict\_transport\_security }
 
 <summary>
 
-strict\_transport\_security: optional object {enabled, include\_subdomains, max\_age, 2 more }
+strict\_transport\_security: optional object { enabled, include\_subdomains, max\_age, 2 more }
 
 Strict Transport Security.
 
@@ -4571,7 +4571,7 @@ Enable automatic preload of the HSTS configuration.
 
 <summary>
 
-StrictTransportSecurity object {strict\_transport\_security }
+StrictTransportSecurity object { strict\_transport\_security }
 
 </summary>
 
@@ -4579,7 +4579,7 @@ StrictTransportSecurity object {strict\_transport\_security }
 
 <summary>
 
-strict\_transport\_security: optional object {enabled, include\_subdomains, max\_age, 2 more }
+strict\_transport\_security: optional object { enabled, include\_subdomains, max\_age, 2 more }
 
 Strict Transport Security.
 
@@ -4627,7 +4627,7 @@ Enable automatic preload of the HSTS configuration.
 
 <summary>
 
-StrictTransportSecurity object {strict\_transport\_security }
+StrictTransportSecurity object { strict\_transport\_security }
 
 </summary>
 
@@ -4635,7 +4635,7 @@ StrictTransportSecurity object {strict\_transport\_security }
 
 <summary>
 
-strict\_transport\_security: optional object {enabled, include\_subdomains, max\_age, 2 more }
+strict\_transport\_security: optional object { enabled, include\_subdomains, max\_age, 2 more }
 
 Strict Transport Security.
 
@@ -4683,7 +4683,7 @@ Enable automatic preload of the HSTS configuration.
 
 <summary>
 
-StrictTransportSecurity object {strict\_transport\_security }
+StrictTransportSecurity object { strict\_transport\_security }
 
 </summary>
 
@@ -4691,7 +4691,7 @@ StrictTransportSecurity object {strict\_transport\_security }
 
 <summary>
 
-strict\_transport\_security: optional object {enabled, include\_subdomains, max\_age, 2 more }
+strict\_transport\_security: optional object { enabled, include\_subdomains, max\_age, 2 more }
 
 Strict Transport Security.
 
@@ -4739,7 +4739,7 @@ Enable automatic preload of the HSTS configuration.
 
 <summary>
 
-StrictTransportSecurity object {strict\_transport\_security }
+StrictTransportSecurity object { strict\_transport\_security }
 
 </summary>
 
@@ -4747,7 +4747,7 @@ StrictTransportSecurity object {strict\_transport\_security }
 
 <summary>
 
-strict\_transport\_security: optional object {enabled, include\_subdomains, max\_age, 2 more }
+strict\_transport\_security: optional object { enabled, include\_subdomains, max\_age, 2 more }
 
 Strict Transport Security.
 
@@ -4799,7 +4799,7 @@ Enable automatic preload of the HSTS configuration.
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -4835,7 +4835,7 @@ formatdate-time
 
 <summary>
 
-ZonesSecurityLevel2 object {id, value, editable, modified\_on }
+ZonesSecurityLevel2 object { id, value, editable, modified\_on }
 
 Choose the appropriate security profile for your website, which will automatically adjust each of the security settings. If you choose to customize an individual security setting, the profile will become Custom. (<a href="https://support.cloudflare.com/hc/en-us/articles/200170056">https://support.cloudflare.com/hc/en-us/articles/200170056</a>).
 
@@ -4851,7 +4851,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -4887,7 +4887,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -4923,7 +4923,7 @@ formatdate-time
 
 <summary>
 
-ServerSideExcludes object {id, value, editable, modified\_on }
+ServerSideExcludes object { id, value, editable, modified\_on }
 
 If there is sensitive content on your website that you want visible to real visitors, but that you want to hide from suspicious visitors, all you have to do is wrap the content with Cloudflare SSE tags. Wrap any content that you want to be excluded from suspicious visitors in the following SSE tags: . For example: Bad visitors won’t see my phone number, 555-555-5555 . Note: SSE only will work with HTML. If you have HTML minification enabled, you won’t see the SSE tags in your HTML source when it’s served through Cloudflare. SSE will still function in this case, as Cloudflare’s HTML minification and SSE functionality occur on-the-fly as the resource moves through our network to the visitor’s computer. (<a href="https://support.cloudflare.com/hc/en-us/articles/200170036">https://support.cloudflare.com/hc/en-us/articles/200170036</a>).
 
@@ -4939,7 +4939,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -4975,7 +4975,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -5011,7 +5011,7 @@ formatdate-time
 
 <summary>
 
-ZonesSha1Support object {id, value, editable, modified\_on }
+ZonesSha1Support object { id, value, editable, modified\_on }
 
 Allow SHA1 support.
 
@@ -5027,7 +5027,7 @@ Zone setting identifier.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -5063,7 +5063,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -5099,7 +5099,7 @@ formatdate-time
 
 <summary>
 
-ZonesSortQueryStringForCache2 object {id, value, editable, modified\_on }
+ZonesSortQueryStringForCache2 object { id, value, editable, modified\_on }
 
 Cloudflare will treat files with the same query strings as the same file in cache, regardless of the order of the query strings. This is limited to Enterprise Zones.
 
@@ -5115,7 +5115,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -5151,7 +5151,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -5187,7 +5187,7 @@ formatdate-time
 
 <summary>
 
-ZonesSSL2 object {id, value, editable, modified\_on }
+ZonesSSL2 object { id, value, editable, modified\_on }
 
 SSL encrypts your visitor’s connection and safeguards credit card numbers and other personal data to and from your website. SSL can take up to 5 minutes to fully activate. Requires Cloudflare active on your root domain or www domain. Off: no SSL between the visitor and Cloudflare, and no SSL between Cloudflare and your web server (all HTTP traffic). Flexible: SSL between the visitor and Cloudflare — visitor sees HTTPS on your site, but no SSL between Cloudflare and your web server. You don’t need to have an SSL cert on your web server, but your vistors will still see the site as being HTTPS enabled. Full: SSL between the visitor and Cloudflare — visitor sees HTTPS on your site, and SSL between Cloudflare and your web server. You’ll need to have your own SSL cert or self-signed cert at the very least. Full (Strict): SSL between the visitor and Cloudflare — visitor sees HTTPS on your site, and SSL between Cloudflare and your web server. You’ll need to have a valid SSL certificate installed on your web server. This certificate must be signed by a certificate authority, have an expiration date in the future, and respond for the request domain name (hostname). (<a href="https://support.cloudflare.com/hc/en-us/articles/200170416">https://support.cloudflare.com/hc/en-us/articles/200170416</a>).
 
@@ -5203,7 +5203,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -5239,7 +5239,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -5275,7 +5275,7 @@ formatdate-time
 
 <summary>
 
-SSLRecommender object {id, enabled }
+SSLRecommender object { id, enabled }
 
 Enrollment in the SSL/TLS Recommender service which tries to detect and recommend (by sending periodic emails) the most secure SSL/TLS setting your origin servers support.
 
@@ -5301,7 +5301,7 @@ ssl-recommender enrollment setting.
 
 <summary>
 
-ZonesTLS1\_2Only object {id, value, editable, modified\_on }
+ZonesTLS1\_2Only object { id, value, editable, modified\_on }
 
 Only allows TLS1.2.
 
@@ -5317,7 +5317,7 @@ Zone setting identifier.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -5353,7 +5353,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -5389,7 +5389,7 @@ formatdate-time
 
 <summary>
 
-TLS1\_3 object {id, value, editable, modified\_on }
+TLS1\_3 object { id, value, editable, modified\_on }
 
 Enables Crypto TLS 1.3 feature for a zone. This setting also controls 0-RTT. <code>zrt</code> enables TLS 1.3 and 0-RTT, <code>on</code> enables TLS 1.3 and disables 0-RTT, and <code>off</code> disables both. Reads return <code>zrt</code> when TLS 1.3 and 0-RTT are both enabled, so setting <code>on</code> while 0-RTT is enabled turns 0-RTT off.
 
@@ -5405,7 +5405,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -5441,7 +5441,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -5477,7 +5477,7 @@ formatdate-time
 
 <summary>
 
-TLSClientAuth object {id, value, editable, modified\_on }
+TLSClientAuth object { id, value, editable, modified\_on }
 
 TLS Client Auth requires Cloudflare to connect to your origin server using a client certificate (Enterprise Only).
 
@@ -5493,7 +5493,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -5529,7 +5529,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -5565,7 +5565,7 @@ formatdate-time
 
 <summary>
 
-ZonesTransformations object {id, value, editable, modified\_on }
+ZonesTransformations object { id, value, editable, modified\_on }
 
 Media Transformations provides on-demand resizing, conversion and optimization for images and video served through Cloudflare’s network. Refer to the <a href="https://developers.cloudflare.com/images/">Image Transformations</a> and <a href="https://developers.cloudflare.com/stream/transform-videos/#getting-started">Video Transformations</a> documentation for more information.
 
@@ -5581,7 +5581,7 @@ ID of the zone setting. Shared between Image Transformations and Video Transform
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -5617,7 +5617,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -5653,7 +5653,7 @@ formatdate-time
 
 <summary>
 
-ZonesTransformationsAllowedOrigins object {id, value, editable, modified\_on }
+ZonesTransformationsAllowedOrigins object { id, value, editable, modified\_on }
 
 Media Transformations Allowed Origins restricts transformations for images and video served through Cloudflare’s network. Refer to the <a href="https://developers.cloudflare.com/images/">Image Transformations</a> and <a href="https://developers.cloudflare.com/stream/transform-videos/#getting-started">Video Transformations</a> documentation for more information.
 
@@ -5669,7 +5669,7 @@ ID of the zone setting. Shared between Image Transformations and Video Transform
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Comma-separated list of allowed origins. Refer to the <a href="https://developers.cloudflare.com/images/transform-images/sources/">Image Transformations</a> and <a href="https://developers.cloudflare.com/stream/transform-videos/#getting-started">Video Transformations</a> documentation for more information.
 
@@ -5705,7 +5705,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -5741,7 +5741,7 @@ formatdate-time
 
 <summary>
 
-ZonesTrueClientIPHeader2 object {id, value, editable, modified\_on }
+ZonesTrueClientIPHeader2 object { id, value, editable, modified\_on }
 
 Allows customer to continue to use True Client IP (Akamai feature) in the headers we send to the origin. This is limited to Enterprise Zones.
 
@@ -5757,7 +5757,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -5793,7 +5793,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -5829,7 +5829,7 @@ formatdate-time
 
 <summary>
 
-ZonesWAF2 object {id, value, editable, modified\_on }
+ZonesWAF2 object { id, value, editable, modified\_on }
 
 The WAF examines HTTP requests to your website. It inspects both GET and POST requests and applies rules to help filter out illegitimate traffic from legitimate website visitors. The Cloudflare WAF inspects website addresses or URLs to detect anything out of the ordinary. If the Cloudflare WAF determines suspicious user behavior, then the WAF will ‘challenge’ the web visitor with a page that asks them to submit a CAPTCHA successfully to continue their action. If the challenge is failed, the action will be stopped. What this means is that Cloudflare’s WAF will block any traffic identified as illegitimate before it reaches your origin web server. (<a href="https://support.cloudflare.com/hc/en-us/articles/200172016">https://support.cloudflare.com/hc/en-us/articles/200172016</a>).
 
@@ -5845,7 +5845,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -5881,7 +5881,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -5917,7 +5917,7 @@ formatdate-time
 
 <summary>
 
-ZonesWebmcpEnabled object {id, value, editable, modified\_on }
+ZonesWebmcpEnabled object { id, value, editable, modified\_on }
 
 When enabled, Cloudflare injects the WebMCP bridge (bridge.js) into HTML responses for this zone, exposing DOM and Content Credentials tools to an in-browser AI agent via navigator.modelContext. No origin-side code changes are required. This setting is currently in beta and its behavior may change.
 
@@ -5933,7 +5933,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -5969,7 +5969,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -6005,7 +6005,7 @@ formatdate-time
 
 <summary>
 
-ZonesWebmcpMcpURL object {id, value, editable, modified\_on }
+ZonesWebmcpMcpURL object { id, value, editable, modified\_on }
 
 Optional per-zone path of the site’s own MCP server, used by the WebMCP mcp-server-client tool pack to list and call the site’s MCP tools from the browser. The path is resolved against the page’s origin, so it applies to every hostname in the zone. Only takes effect when webmcp\_enabled is on and the mcp-server-client pack is active. Leave empty to use /mcp. This setting is currently in beta and its behavior may change.
 
@@ -6021,7 +6021,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Root-relative path (with optional query string) of this zone’s MCP endpoint, for example “/api/mcp”. Surfaced to the injected bridge as the data-mcp-url attribute. Absolute and protocol-relative URLs, fragments, and characters outside RFC 3986 paths and queries are rejected. An empty value clears the override so the bridge uses /mcp.
 
@@ -6059,7 +6059,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -6095,7 +6095,7 @@ formatdate-time
 
 <summary>
 
-ZonesWebmcpPacks object {id, value, editable, modified\_on }
+ZonesWebmcpPacks object { id, value, editable, modified\_on }
 
 Optional per-zone override of which bundled WebMCP tool packs the injected bridge.js activates. Only takes effect when webmcp\_enabled is on. Leave empty to use the bridge’s default pack set. Unknown pack names are ignored by the bridge. This setting is currently in beta and its behavior may change.
 
@@ -6111,7 +6111,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Comma-separated list of WebMCP tool-pack names to activate for this zone (for example, “c2pa,mcp-server-client”), surfaced to the injected bridge as the data-packs attribute. An empty value clears the override so the bridge uses its built-in default pack set.
 
@@ -6149,7 +6149,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -6185,7 +6185,7 @@ formatdate-time
 
 <summary>
 
-WebP object {id, value, editable, modified\_on }
+WebP object { id, value, editable, modified\_on }
 
 When the client requesting the image supports the WebP image codec, and WebP offers a performance advantage over the original image format, Cloudflare will serve a WebP version of the original image.
 
@@ -6201,7 +6201,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -6237,7 +6237,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -6273,7 +6273,7 @@ formatdate-time
 
 <summary>
 
-ZonesAVIF object {id, value, editable, modified\_on }
+ZonesAVIF object { id, value, editable, modified\_on }
 
 When the client requesting the image supports the AVIF image codec, and AVIF offers a performance advantage over the original image format, Cloudflare will serve an AVIF version of the original image.
 
@@ -6289,7 +6289,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -6325,7 +6325,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -6361,7 +6361,7 @@ formatdate-time
 
 <summary>
 
-Websocket object {id, value, editable, modified\_on }
+Websocket object { id, value, editable, modified\_on }
 
 WebSockets are open connections sustained between the client and the origin server. Inside a WebSockets connection, the client and the origin can pass data back and forth without having to reestablish sessions. This makes exchanging data within a WebSockets connection fast. WebSockets are often used for real-time applications such as live chat and gaming. For more information refer to <a href="https://support.cloudflare.com/hc/en-us/articles/200169466-Can-I-use-Cloudflare-with-WebSockets-">Can I use Cloudflare with Websockets</a>.
 
@@ -6377,7 +6377,7 @@ ID of the zone setting.
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -6413,7 +6413,7 @@ array of string
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 

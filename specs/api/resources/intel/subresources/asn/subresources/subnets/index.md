@@ -30,7 +30,7 @@ GET/accounts/{account\_id}/intel/asn/{asn}/subnets
 
 <summary>
 
-SubnetGetResponse object {asn, count, ip\_count\_total, 3 more }
+SubnetGetResponse object { asn, count, ip\_count\_total, 3 more }
 
 </summary>
 

@@ -36,7 +36,7 @@ GET/radar/ct/timeseries\_groups/{dimension}
 
 <summary>
 
-CTSummaryResponse object {meta, summary\_0 }
+CTSummaryResponse object { meta, summary\_0 }
 
 </summary>
 
@@ -44,7 +44,7 @@ CTSummaryResponse object {meta, summary\_0 }
 
 <summary>
 
-meta: object {confidenceInfo, dateRange, lastUpdated, 2 more }
+meta: object { confidenceInfo, dateRange, lastUpdated, 2 more }
 
 Metadata for the results.
 
@@ -54,7 +54,7 @@ Metadata for the results.
 
 <summary>
 
-confidenceInfo: object {annotations, level }
+confidenceInfo: object { annotations, level }
 
 </summary>
 
@@ -62,7 +62,7 @@ confidenceInfo: object {annotations, level }
 
 <summary>
 
-annotations: array of object {dataSource, description, endDate, 5 more }
+annotations: array of object { dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -70,7 +70,7 @@ annotations: array of object {dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
+dataSource: "ALL" or "AI\_BOTS" or "AI\_GATEWAY" or 22 more
 
 Data source for annotations.
 
@@ -196,7 +196,7 @@ formatdate-time
 
 <summary>
 
-eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
+eventType: "GENERAL" or "OUTAGE" or "PARTIAL\_PROJECTION" or 2 more
 
 Event type for annotations.
 
@@ -268,7 +268,7 @@ Provides an indication of how much confidence Cloudflare has in the data.
 
 <summary>
 
-dateRange: array of object {endTime, startTime }
+dateRange: array of object { endTime, startTime }
 
 </summary>
 
@@ -304,7 +304,7 @@ formatdate-time
 
 <summary>
 
-normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
+normalization: "PERCENTAGE" or "MIN0\_MAX" or "MIN\_MAX" or 5 more
 
 Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
@@ -352,7 +352,7 @@ One of the following:
 
 <summary>
 
-units: array of object {name, value }
+units: array of object { name, value }
 
 Measurement units for the results.
 
@@ -378,7 +378,7 @@ value: string
 
 <summary>
 
-summary\_0: map\[string]or object {rfc6962, static } or object {gt\_121d, gt\_16d\_lte\_31d, gt\_31d\_lte\_91d, 3 more } or 5 more
+summary\_0: map\[string] or object { rfc6962, static } or object { gt\_121d, gt\_16d\_lte\_31d, gt\_31d\_lte\_91d, 3 more } or 5 more
 
 </summary>
 
@@ -392,7 +392,7 @@ map\[string]
 
 <summary>
 
-object {rfc6962, static }
+object { rfc6962, static }
 
 </summary>
 
@@ -412,7 +412,7 @@ static: string
 
 <summary>
 
-object {gt\_121d, gt\_16d\_lte\_31d, gt\_31d\_lte\_91d, 3 more }
+object { gt\_121d, gt\_16d\_lte\_31d, gt\_31d\_lte\_91d, 3 more }
 
 </summary>
 
@@ -448,7 +448,7 @@ lte\_3d: string
 
 <summary>
 
-object {CERTIFICATE, PRECERTIFICATE }
+object { CERTIFICATE, PRECERTIFICATE }
 
 </summary>
 
@@ -468,7 +468,7 @@ PRECERTIFICATE: string
 
 <summary>
 
-object {EXPIRED, VALID }
+object { EXPIRED, VALID }
 
 </summary>
 
@@ -488,7 +488,7 @@ VALID: string
 
 <summary>
 
-object {NEGATIVE, POSITIVE }
+object { NEGATIVE, POSITIVE }
 
 </summary>
 
@@ -508,7 +508,7 @@ POSITIVE: string
 
 <summary>
 
-object {DSA, ECDSA, RSA }
+object { DSA, ECDSA, RSA }
 
 </summary>
 
@@ -532,7 +532,7 @@ RSA: string
 
 <summary>
 
-object {domain, extended, organization, unknown }
+object { domain, extended, organization, unknown }
 
 </summary>
 
@@ -568,7 +568,7 @@ unknown: string
 
 <summary>
 
-CTTimeseriesResponse object {meta }
+CTTimeseriesResponse object { meta }
 
 </summary>
 
@@ -576,7 +576,7 @@ CTTimeseriesResponse object {meta }
 
 <summary>
 
-meta: object {aggInterval, confidenceInfo, dateRange, 3 more }
+meta: object { aggInterval, confidenceInfo, dateRange, 3 more }
 
 Metadata for the results.
 
@@ -586,7 +586,7 @@ Metadata for the results.
 
 <summary>
 
-aggInterval: "FIFTEEN\_MINUTES"or "ONE\_HOUR"or "ONE\_DAY"or 2 more
+aggInterval: "FIFTEEN\_MINUTES" or "ONE\_HOUR" or "ONE\_DAY" or 2 more
 
 Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to <a href="https://developers.cloudflare.com/radar/concepts/aggregation-intervals/">Aggregation intervals</a>.
 
@@ -622,7 +622,7 @@ One of the following:
 
 <summary>
 
-confidenceInfo: object {annotations, level }
+confidenceInfo: object { annotations, level }
 
 </summary>
 
@@ -630,7 +630,7 @@ confidenceInfo: object {annotations, level }
 
 <summary>
 
-annotations: array of object {dataSource, description, endDate, 5 more }
+annotations: array of object { dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -638,7 +638,7 @@ annotations: array of object {dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
+dataSource: "ALL" or "AI\_BOTS" or "AI\_GATEWAY" or 22 more
 
 Data source for annotations.
 
@@ -764,7 +764,7 @@ formatdate-time
 
 <summary>
 
-eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
+eventType: "GENERAL" or "OUTAGE" or "PARTIAL\_PROJECTION" or 2 more
 
 Event type for annotations.
 
@@ -836,7 +836,7 @@ Provides an indication of how much confidence Cloudflare has in the data.
 
 <summary>
 
-dateRange: array of object {endTime, startTime }
+dateRange: array of object { endTime, startTime }
 
 </summary>
 
@@ -872,7 +872,7 @@ formatdate-time
 
 <summary>
 
-normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
+normalization: "PERCENTAGE" or "MIN0\_MAX" or "MIN\_MAX" or 5 more
 
 Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
@@ -920,7 +920,7 @@ One of the following:
 
 <summary>
 
-units: array of object {name, value }
+units: array of object { name, value }
 
 Measurement units for the results.
 
@@ -950,7 +950,7 @@ value: string
 
 <summary>
 
-CTTimeseriesGroupsResponse object {meta, serie\_0 }
+CTTimeseriesGroupsResponse object { meta, serie\_0 }
 
 </summary>
 
@@ -958,7 +958,7 @@ CTTimeseriesGroupsResponse object {meta, serie\_0 }
 
 <summary>
 
-meta: object {aggInterval, confidenceInfo, dateRange, 3 more }
+meta: object { aggInterval, confidenceInfo, dateRange, 3 more }
 
 Metadata for the results.
 
@@ -968,7 +968,7 @@ Metadata for the results.
 
 <summary>
 
-aggInterval: "FIFTEEN\_MINUTES"or "ONE\_HOUR"or "ONE\_DAY"or 2 more
+aggInterval: "FIFTEEN\_MINUTES" or "ONE\_HOUR" or "ONE\_DAY" or 2 more
 
 Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to <a href="https://developers.cloudflare.com/radar/concepts/aggregation-intervals/">Aggregation intervals</a>.
 
@@ -1004,7 +1004,7 @@ One of the following:
 
 <summary>
 
-confidenceInfo: object {annotations, level }
+confidenceInfo: object { annotations, level }
 
 </summary>
 
@@ -1012,7 +1012,7 @@ confidenceInfo: object {annotations, level }
 
 <summary>
 
-annotations: array of object {dataSource, description, endDate, 5 more }
+annotations: array of object { dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -1020,7 +1020,7 @@ annotations: array of object {dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
+dataSource: "ALL" or "AI\_BOTS" or "AI\_GATEWAY" or 22 more
 
 Data source for annotations.
 
@@ -1146,7 +1146,7 @@ formatdate-time
 
 <summary>
 
-eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
+eventType: "GENERAL" or "OUTAGE" or "PARTIAL\_PROJECTION" or 2 more
 
 Event type for annotations.
 
@@ -1218,7 +1218,7 @@ Provides an indication of how much confidence Cloudflare has in the data.
 
 <summary>
 
-dateRange: array of object {endTime, startTime }
+dateRange: array of object { endTime, startTime }
 
 </summary>
 
@@ -1254,7 +1254,7 @@ formatdate-time
 
 <summary>
 
-normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
+normalization: "PERCENTAGE" or "MIN0\_MAX" or "MIN\_MAX" or 5 more
 
 Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
@@ -1302,7 +1302,7 @@ One of the following:
 
 <summary>
 
-units: array of object {name, value }
+units: array of object { name, value }
 
 Measurement units for the results.
 
@@ -1328,7 +1328,7 @@ value: string
 
 <summary>
 
-serie\_0: object {timestamps } or object {rfc6962, static } or object {gt\_121d, gt\_16d\_lte\_31d, gt\_31d\_lte\_91d, 3 more } or 5 more
+serie\_0: object { timestamps } or object { rfc6962, static } or object { gt\_121d, gt\_16d\_lte\_31d, gt\_31d\_lte\_91d, 3 more } or 5 more
 
 </summary>
 
@@ -1338,7 +1338,7 @@ One of the following:
 
 <summary>
 
-UnnamedSchemaRef7826220e105d84352ba1108d9ed88e55 object {timestamps }
+UnnamedSchemaRef7826220e105d84352ba1108d9ed88e55 object { timestamps }
 
 </summary>
 
@@ -1354,7 +1354,7 @@ timestamps: array of string
 
 <summary>
 
-object {rfc6962, static }
+object { rfc6962, static }
 
 </summary>
 
@@ -1374,7 +1374,7 @@ static: array of string
 
 <summary>
 
-object {gt\_121d, gt\_16d\_lte\_31d, gt\_31d\_lte\_91d, 3 more }
+object { gt\_121d, gt\_16d\_lte\_31d, gt\_31d\_lte\_91d, 3 more }
 
 </summary>
 
@@ -1410,7 +1410,7 @@ lte\_3d: array of string
 
 <summary>
 
-object {CERTIFICATE, PRECERTIFICATE }
+object { CERTIFICATE, PRECERTIFICATE }
 
 </summary>
 
@@ -1430,7 +1430,7 @@ PRECERTIFICATE: array of string
 
 <summary>
 
-object {EXPIRED, VALID }
+object { EXPIRED, VALID }
 
 </summary>
 
@@ -1450,7 +1450,7 @@ VALID: array of string
 
 <summary>
 
-object {NEGATIVE, POSITIVE }
+object { NEGATIVE, POSITIVE }
 
 </summary>
 
@@ -1470,7 +1470,7 @@ POSITIVE: array of string
 
 <summary>
 
-object {DSA, ECDSA, RSA }
+object { DSA, ECDSA, RSA }
 
 </summary>
 
@@ -1494,7 +1494,7 @@ RSA: array of string
 
 <summary>
 
-object {domain, extended, organization, unknown }
+object { domain, extended, organization, unknown }
 
 </summary>
 
@@ -1542,7 +1542,7 @@ GET/radar/ct/authorities
 
 <summary>
 
-AuthorityGetResponse object {certificateAuthority }
+AuthorityGetResponse object { certificateAuthority }
 
 </summary>
 
@@ -1550,7 +1550,7 @@ AuthorityGetResponse object {certificateAuthority }
 
 <summary>
 
-certificateAuthority: object {appleStatus, authorityKeyIdentifier, certificateRecordType, 15 more }
+certificateAuthority: object { appleStatus, authorityKeyIdentifier, certificateRecordType, 15 more }
 
 </summary>
 
@@ -1558,7 +1558,7 @@ certificateAuthority: object {appleStatus, authorityKeyIdentifier, certificateRe
 
 <summary>
 
-appleStatus: "INCLUDED"or "NOT\_YET\_INCLUDED"or "NOT\_INCLUDED"or 4 more
+appleStatus: "INCLUDED" or "NOT\_YET\_INCLUDED" or "NOT\_INCLUDED" or 4 more
 
 The inclusion status of a Certificate Authority (CA) in the trust store.
 
@@ -1608,7 +1608,7 @@ The authorityKeyIdentifier value extracted from the certificate PEM.
 
 <summary>
 
-certificateRecordType: "ROOT\_CERTIFICATE"or "INTERMEDIATE\_CERTIFICATE"
+certificateRecordType: "ROOT\_CERTIFICATE" or "INTERMEDIATE\_CERTIFICATE"
 
 Specifies the type of certificate in the trust chain.
 
@@ -1632,7 +1632,7 @@ One of the following:
 
 <summary>
 
-chromeStatus: "INCLUDED"or "NOT\_YET\_INCLUDED"or "NOT\_INCLUDED"or 4 more
+chromeStatus: "INCLUDED" or "NOT\_YET\_INCLUDED" or "NOT\_INCLUDED" or 4 more
 
 The inclusion status of a Certificate Authority (CA) in the trust store.
 
@@ -1688,7 +1688,7 @@ The full country name corresponding to the country code.
 
 <summary>
 
-microsoftStatus: "INCLUDED"or "NOT\_YET\_INCLUDED"or "NOT\_INCLUDED"or 4 more
+microsoftStatus: "INCLUDED" or "NOT\_YET\_INCLUDED" or "NOT\_INCLUDED" or 4 more
 
 The inclusion status of a Certificate Authority (CA) in the trust store.
 
@@ -1732,7 +1732,7 @@ One of the following:
 
 <summary>
 
-mozillaStatus: "INCLUDED"or "NOT\_YET\_INCLUDED"or "NOT\_INCLUDED"or 4 more
+mozillaStatus: "INCLUDED" or "NOT\_YET\_INCLUDED" or "NOT\_INCLUDED" or 4 more
 
 The inclusion status of a Certificate Authority (CA) in the trust store.
 
@@ -1800,7 +1800,7 @@ The SHA-256 fingerprint of the parent certificate.
 
 <summary>
 
-related: array of object {certificateRecordType, name, revocationStatus, sha256Fingerprint }
+related: array of object { certificateRecordType, name, revocationStatus, sha256Fingerprint }
 
 CAs from the same owner.
 
@@ -1810,7 +1810,7 @@ CAs from the same owner.
 
 <summary>
 
-certificateRecordType: "ROOT\_CERTIFICATE"or "INTERMEDIATE\_CERTIFICATE"
+certificateRecordType: "ROOT\_CERTIFICATE" or "INTERMEDIATE\_CERTIFICATE"
 
 Specifies the type of certificate in the trust chain.
 
@@ -1840,7 +1840,7 @@ The full name of the certificate authority (CA).
 
 <summary>
 
-revocationStatus: "NOT\_REVOKED"or "REVOKED"or "PARENT\_CERT\_REVOKED"
+revocationStatus: "NOT\_REVOKED" or "REVOKED" or "PARENT\_CERT\_REVOKED"
 
 The current revocation status of a Certificate Authority (CA) certificate.
 
@@ -1878,7 +1878,7 @@ The SHA-256 fingerprint of the intermediate certificate.
 
 <summary>
 
-revocationStatus: "NOT\_REVOKED"or "REVOKED"or "PARENT\_CERT\_REVOKED"
+revocationStatus: "NOT\_REVOKED" or "REVOKED" or "PARENT\_CERT\_REVOKED"
 
 The current revocation status of a Certificate Authority (CA) certificate.
 
@@ -1942,7 +1942,7 @@ formatdate
 
 <summary>
 
-AuthorityListResponse object {certificateAuthorities }
+AuthorityListResponse object { certificateAuthorities }
 
 </summary>
 
@@ -1950,7 +1950,7 @@ AuthorityListResponse object {certificateAuthorities }
 
 <summary>
 
-certificateAuthorities: array of object {certificateRecordType, country, countryName, 6 more }
+certificateAuthorities: array of object { certificateRecordType, country, countryName, 6 more }
 
 </summary>
 
@@ -1958,7 +1958,7 @@ certificateAuthorities: array of object {certificateRecordType, country, country
 
 <summary>
 
-certificateRecordType: "ROOT\_CERTIFICATE"or "INTERMEDIATE\_CERTIFICATE"
+certificateRecordType: "ROOT\_CERTIFICATE" or "INTERMEDIATE\_CERTIFICATE"
 
 Specifies the type of certificate in the trust chain.
 
@@ -2018,7 +2018,7 @@ The SHA-256 fingerprint of the parent certificate.
 
 <summary>
 
-revocationStatus: "NOT\_REVOKED"or "REVOKED"or "PARENT\_CERT\_REVOKED"
+revocationStatus: "NOT\_REVOKED" or "REVOKED" or "PARENT\_CERT\_REVOKED"
 
 The current revocation status of a Certificate Authority (CA) certificate.
 
@@ -2072,7 +2072,7 @@ GET/radar/ct/logs
 
 <summary>
 
-LogGetResponse object {certificateLog }
+LogGetResponse object { certificateLog }
 
 </summary>
 
@@ -2080,7 +2080,7 @@ LogGetResponse object {certificateLog }
 
 <summary>
 
-certificateLog: object {api, avgThroughput, description, 12 more }
+certificateLog: object { api, avgThroughput, description, 12 more }
 
 </summary>
 
@@ -2088,7 +2088,7 @@ certificateLog: object {api, avgThroughput, description, 12 more }
 
 <summary>
 
-api: "RFC6962"or "STATIC"
+api: "RFC6962" or "STATIC"
 
 The API standard that the certificate log follows.
 
@@ -2146,7 +2146,7 @@ The organization responsible for operating the certificate log.
 
 <summary>
 
-performance: object {endpoints, responseTime, uptime }
+performance: object { endpoints, responseTime, uptime }
 
 Log performance metrics, including averages and per-endpoint details.
 
@@ -2156,7 +2156,7 @@ Log performance metrics, including averages and per-endpoint details.
 
 <summary>
 
-endpoints: array of object {endpoint, responseTime, uptime }
+endpoints: array of object { endpoint, responseTime, uptime }
 
 </summary>
 
@@ -2164,7 +2164,7 @@ endpoints: array of object {endpoint, responseTime, uptime }
 
 <summary>
 
-endpoint: "add-chain (new)"or "add-chain (old)"or "add-pre-chain (new)"or 4 more
+endpoint: "add-chain (new)" or "add-chain (old)" or "add-pre-chain (new)" or 4 more
 
 The certificate log endpoint names used in performance metrics.
 
@@ -2232,7 +2232,7 @@ uptime: number
 
 <summary>
 
-related: array of object {description, endExclusive, slug, 2 more }
+related: array of object { description, endExclusive, slug, 2 more }
 
 Logs from the same operator.
 
@@ -2270,7 +2270,7 @@ formatdate-time
 
 <summary>
 
-state: "USABLE"or "PENDING"or "QUALIFIED"or 3 more
+state: "USABLE" or "PENDING" or "QUALIFIED" or 3 more
 
 The current state of the certificate log. More details about log states can be found here: <a href="https://googlechrome.github.io/CertificateTransparency/log_states.html">https://googlechrome.github.io/CertificateTransparency/log\_states.html</a>
 
@@ -2328,7 +2328,7 @@ formatdate-time
 
 <summary>
 
-state: "USABLE"or "PENDING"or "QUALIFIED"or 3 more
+state: "USABLE" or "PENDING" or "QUALIFIED" or 3 more
 
 The current state of the certificate log. More details about log states can be found here: <a href="https://googlechrome.github.io/CertificateTransparency/log_states.html">https://googlechrome.github.io/CertificateTransparency/log\_states.html</a>
 
@@ -2402,7 +2402,7 @@ The URL for the certificate log.
 
 <summary>
 
-LogListResponse object {certificateLogs }
+LogListResponse object { certificateLogs }
 
 </summary>
 
@@ -2410,7 +2410,7 @@ LogListResponse object {certificateLogs }
 
 <summary>
 
-certificateLogs: array of object {api, description, endExclusive, 6 more }
+certificateLogs: array of object { api, description, endExclusive, 6 more }
 
 </summary>
 
@@ -2418,7 +2418,7 @@ certificateLogs: array of object {api, description, endExclusive, 6 more }
 
 <summary>
 
-api: "RFC6962"or "STATIC"
+api: "RFC6962" or "STATIC"
 
 The API standard that the certificate log follows.
 
@@ -2476,7 +2476,7 @@ formatdate-time
 
 <summary>
 
-state: "USABLE"or "PENDING"or "QUALIFIED"or 3 more
+state: "USABLE" or "PENDING" or "QUALIFIED" or 3 more
 
 The current state of the certificate log. More details about log states can be found here: <a href="https://googlechrome.github.io/CertificateTransparency/log_states.html">https://googlechrome.github.io/CertificateTransparency/log\_states.html</a>
 

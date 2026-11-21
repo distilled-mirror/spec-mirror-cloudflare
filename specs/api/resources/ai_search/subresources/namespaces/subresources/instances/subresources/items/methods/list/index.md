@@ -58,6 +58,10 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 </details>
 
+##### Accepted Permissions (at least one required)
+
+`AI Search Metadata Read``AI Search Write``AI Search Read``Auto Rag Write``Auto Rag Read`
+
 ##### P ath ParametersExpand Collapse
 
 account\_id: string
@@ -130,7 +134,7 @@ maxLength256
 
 <summary>
 
-sort\_by: optional "status"or "modified\_at"
+sort\_by: optional "status" or "modified\_at"
 
 Sort order for items. “status” (default) sorts items according to status priority, then last\_seen\_at. “modified\_at” sorts items according to file modification time (most recent first), falling back to created\_at.
 
@@ -162,7 +166,7 @@ maxLength512
 
 <summary>
 
-status: optional "queued"or "running"or "completed"or 3 more
+status: optional "queued" or "running" or "completed" or 3 more
 
 </summary>
 
@@ -202,7 +206,7 @@ One of the following:
 
 <summary>
 
-result: array of object {id, checksum, chunks\_count, 10 more }
+result: array of object { id, checksum, chunks\_count, 10 more }
 
 </summary>
 
@@ -242,7 +246,7 @@ formatdate-time
 
 <summary>
 
-metadata: map\[stringor numberor boolean]
+metadata: map\[string or number or boolean]
 
 Built-in, configured filterable, and retained source metadata for the item.
 
@@ -274,7 +278,7 @@ namespace: string
 
 <summary>
 
-next\_action: "INDEX"or "DELETE"
+next\_action: "INDEX" or "DELETE"
 
 </summary>
 
@@ -302,7 +306,7 @@ Identifies which data source this item belongs to. “builtin” for uploaded fi
 
 <summary>
 
-status: "queued"or "running"or "completed"or 3 more
+status: "queued" or "running" or "completed" or 3 more
 
 </summary>
 
@@ -348,7 +352,7 @@ error: optional string
 
 <summary>
 
-result\_info: object {count, page, total\_count, per\_page }
+result\_info: object { count, page, total\_count, per\_page }
 
 </summary>
 

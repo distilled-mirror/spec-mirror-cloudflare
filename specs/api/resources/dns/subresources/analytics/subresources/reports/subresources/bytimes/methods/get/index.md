@@ -120,7 +120,7 @@ A comma-separated list of dimensions to sort by, where each dimension may be pre
 
 <summary>
 
-time\_delta: optional "all"or "auto"or "year"or 7 more
+time\_delta: optional "all" or "auto" or "year" or 7 more
 
 Unit of time to group data by.
 
@@ -186,7 +186,7 @@ formatdate-time
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -208,7 +208,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -228,7 +228,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -250,7 +250,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -284,7 +284,7 @@ result: optional <a href="https://developers.cloudflare.com/api/resources/dns#(r
 
 <summary>
 
-data: array of object {dimensions, metrics }
+data: array of object { dimensions, metrics }
 
 Array with one row per combination of dimension values.
 
@@ -330,7 +330,7 @@ Minimum results for each metric (object mapping metric names to values). Current
 
 <summary>
 
-query: object {dimensions, limit, metrics, 5 more }
+query: object { dimensions, limit, metrics, 5 more }
 
 </summary>
 
@@ -364,7 +364,7 @@ formatdate-time
 
 <summary>
 
-time\_delta: "all"or "auto"or "year"or 7 more
+time\_delta: "all" or "auto" or "year" or 7 more
 
 Unit of time to group data by.
 

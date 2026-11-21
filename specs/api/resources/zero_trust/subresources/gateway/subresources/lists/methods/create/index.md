@@ -56,6 +56,10 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 </details>
 
+##### Accepted Permissions (at least one required)
+
+`Zero Trust Write`
+
 ##### P ath ParametersExpand Collapse
 
 account\_id: string
@@ -76,7 +80,7 @@ Specify the list name.
 
 <summary>
 
-type: "SERIAL"or "URL"or "DOMAIN"or 6 more
+type: "SERIAL" or "URL" or "DOMAIN" or 6 more
 
 Specify the list type.
 
@@ -134,7 +138,7 @@ Provide the list description.
 
 <summary>
 
-items: optional array of object {description, value }
+items: optional array of object { description, value }
 
 Add items to the list.
 
@@ -186,7 +190,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -228,7 +232,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -254,7 +258,7 @@ Indicate whether the API call was successful.
 
 <summary>
 
-result: optional object {id, created\_at, description, 4 more }
+result: optional object { id, created\_at, description, 4 more }
 
 </summary>
 
@@ -322,7 +326,7 @@ Specify the list name.
 
 <summary>
 
-type: optional "SERIAL"or "URL"or "DOMAIN"or 6 more
+type: optional "SERIAL" or "URL" or "DOMAIN" or 6 more
 
 Specify the list type.
 

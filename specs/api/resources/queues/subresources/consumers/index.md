@@ -44,7 +44,7 @@ DELETE/accounts/{account\_id}/queues/{queue\_id}/consumers/{consumer\_id}
 
 <summary>
 
-Consumer = object {consumer\_id, created\_on, dead\_letter\_queue, 4 more } or object {consumer\_id, created\_on, dead\_letter\_queue, 3 more }
+Consumer = object { consumer\_id, created\_on, dead\_letter\_queue, 4 more } or object { consumer\_id, created\_on, dead\_letter\_queue, 3 more }
 
 Response body representing a consumer
 
@@ -56,7 +56,7 @@ One of the following:
 
 <summary>
 
-Worker object {consumer\_id, created\_on, dead\_letter\_queue, 4 more }
+Worker object { consumer\_id, created\_on, dead\_letter\_queue, 4 more }
 
 </summary>
 
@@ -94,7 +94,7 @@ Name of a Worker
 
 <summary>
 
-settings: optional object {batch\_size, max\_concurrency, max\_retries, 2 more }
+settings: optional object { batch\_size, max\_concurrency, max\_retries, 2 more }
 
 </summary>
 
@@ -144,7 +144,7 @@ type: optional "worker"
 
 <summary>
 
-HTTPPull object {consumer\_id, created\_on, dead\_letter\_queue, 3 more }
+HTTPPull object { consumer\_id, created\_on, dead\_letter\_queue, 3 more }
 
 </summary>
 
@@ -176,7 +176,7 @@ queue\_name: optional string
 
 <summary>
 
-settings: optional object {batch\_size, max\_retries, retry\_delay, visibility\_timeout\_ms }
+settings: optional object { batch\_size, max\_retries, retry\_delay, visibility\_timeout\_ms }
 
 </summary>
 
@@ -224,7 +224,7 @@ type: optional "http\_pull"
 
 <summary>
 
-ConsumerDeleteResponse object {errors, messages, success }
+ConsumerDeleteResponse object { errors, messages, success }
 
 </summary>
 
@@ -256,7 +256,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 

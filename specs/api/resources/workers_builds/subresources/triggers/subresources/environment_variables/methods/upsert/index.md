@@ -82,7 +82,7 @@ formatuuid
 
 <summary>
 
-body: map\[object {is\_secret, value } ]
+body: map\[object { is\_secret, value } ]
 
 Map of environment-variable names to build-time values. Names must begin with a letter or underscore and contain only letters, numbers, and underscores.
 
@@ -112,7 +112,7 @@ maxLength5000
 
 <summary>
 
-errors: array of object {message, code }
+errors: array of object { message, code }
 
 </summary>
 
@@ -136,7 +136,7 @@ messages: array of string
 
 <summary>
 
-result: unknownor unknown
+result: unknown or unknown
 
 </summary>
 
@@ -162,7 +162,7 @@ success: boolean
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

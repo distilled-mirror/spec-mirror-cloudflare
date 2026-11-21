@@ -46,7 +46,7 @@ DELETE/organizations/{organization\_id}
 
 <summary>
 
-Organization object {id, create\_time, meta, 3 more }
+Organization object { id, create\_time, meta, 3 more }
 
 References an Organization in the Cloudflare data model.
 
@@ -66,7 +66,7 @@ formatdate-time
 
 <summary>
 
-meta: object {are\_child\_accounts\_accessible\_by\_org\_members, hierarchy\_tags, managed\_by, 2 more }
+meta: object { are\_child\_accounts\_accessible\_by\_org\_members, hierarchy\_tags, managed\_by, 2 more }
 
 </summary>
 
@@ -88,7 +88,7 @@ managed\_by: optional string
 
 <summary>
 
-tenant\_flags: optional object {account\_creation, account\_creation\_applies\_tenant\_defaults, account\_deletion, 5 more }
+tenant\_flags: optional object { account\_creation, account\_creation\_applies\_tenant\_defaults, account\_deletion, 5 more }
 
 Enable features for Organizations.
 
@@ -146,7 +146,7 @@ name: string
 
 <summary>
 
-parent: optional object {id, name }
+parent: optional object { id, name }
 
 </summary>
 
@@ -174,7 +174,7 @@ profile: optional <a href="https://developers.cloudflare.com/api/resources/accou
 
 <summary>
 
-OrganizationDeleteResponse object {id }
+OrganizationDeleteResponse object { id }
 
 </summary>
 
@@ -198,7 +198,7 @@ GET/organizations/{organization\_id}/accounts
 
 <summary>
 
-OrganizationAccounts object {id, name, type, 4 more }
+OrganizationAccounts object { id, name, type, 4 more }
 
 </summary>
 
@@ -222,7 +222,7 @@ Account name. When creating or updating an account, the name is limited to 65 UT
 
 <summary>
 
-type: "standard"or "enterprise"
+type: "standard" or "enterprise"
 
 </summary>
 
@@ -252,7 +252,7 @@ formatdate-time
 
 <summary>
 
-legacy\_flags: optional object {enterprise\_zone\_quota }
+legacy\_flags: optional object { enterprise\_zone\_quota }
 
 Legacy account flags.
 
@@ -262,7 +262,7 @@ Legacy account flags.
 
 <summary>
 
-enterprise\_zone\_quota: optional object {available, current, maximum }
+enterprise\_zone\_quota: optional object { available, current, maximum }
 
 Enterprise zone quota for standard and enterprise accounts. Accounts without a quota have a maximum of 0.
 
@@ -298,7 +298,7 @@ Maximum number of Enterprise zones allowed.
 
 <summary>
 
-managed\_by: optional object {parent\_org\_id, parent\_org\_name, root\_org\_id, should\_display\_parent\_orgs }
+managed\_by: optional object { parent\_org\_id, parent\_org\_name, root\_org\_id, should\_display\_parent\_orgs }
 
 Parent container details
 
@@ -340,7 +340,7 @@ Indicates whether the parent Organization hierarchy should be displayed
 
 <summary>
 
-settings: optional object {abuse\_contact\_email, enforce\_twofactor }
+settings: optional object { abuse\_contact\_email, enforce\_twofactor }
 
 Account settings
 
@@ -370,7 +370,7 @@ Indicates whether membership in this account requires that Two-Factor Authentica
 
 <summary>
 
-OrganizationAccountGetResponse = array of <a href="https://developers.cloudflare.com/api/resources/tenants#(resource)%20tenants.accounts%20%3E%20(model)%20tenant_account%20%3E%20(schema)">TenantAccount</a> { id, created\_on, name, 3 more } or object {account\_pubname, account\_tag, account\_type, 2 more }
+OrganizationAccountGetResponse = array of <a href="https://developers.cloudflare.com/api/resources/tenants#(resource)%20tenants.accounts%20%3E%20(model)%20tenant_account%20%3E%20(schema)">TenantAccount</a> { id, created\_on, name, 3 more } or object { account\_pubname, account\_tag, account\_type, 2 more }
 
 </summary>
 
@@ -380,7 +380,7 @@ One of the following:
 
 <summary>
 
-TenantAccount object {id, created\_on, name, 3 more }
+TenantAccount object { id, created\_on, name, 3 more }
 
 </summary>
 
@@ -402,7 +402,7 @@ name: string
 
 <summary>
 
-settings: object {abuse\_contact\_email, access\_approval\_expiry, api\_access\_enabled, 3 more }
+settings: object { abuse\_contact\_email, access\_approval\_expiry, api\_access\_enabled, 3 more }
 
 </summary>
 
@@ -444,7 +444,7 @@ Use <a href="https://developers.cloudflare.com/api/operations/dns-settings-for-a
 
 <summary>
 
-type: "standard"or "enterprise"
+type: "standard" or "enterprise"
 
 </summary>
 
@@ -476,7 +476,7 @@ Account tags, present only when <code>include_tags=true</code> is requested.
 
 <summary>
 
-OrganizationsAPILegacyAccount object {account\_pubname, account\_tag, account\_type, 2 more }
+OrganizationsAPILegacyAccount object { account\_pubname, account\_tag, account\_type, 2 more }
 
 </summary>
 
@@ -492,7 +492,7 @@ account\_tag: string
 
 <summary>
 
-account\_type: "standard"or "enterprise"
+account\_type: "standard" or "enterprise"
 
 </summary>
 
@@ -520,7 +520,7 @@ formatdate-time
 
 <summary>
 
-settings: object {access\_approval\_expiry, api\_access\_enabled, enforce\_two\_factor, use\_account\_custom\_ns\_by\_default }
+settings: object { access\_approval\_expiry, api\_access\_enabled, enforce\_two\_factor, use\_account\_custom\_ns\_by\_default }
 
 </summary>
 
@@ -570,7 +570,7 @@ PUT/organizations/{organization\_id}/profile
 
 <summary>
 
-OrganizationProfile object {business\_address, business\_email, business\_name, 2 more }
+OrganizationProfile object { business\_address, business\_email, business\_name, 2 more }
 
 </summary>
 
@@ -622,7 +622,7 @@ DELETE/organizations/{organization\_id}/members/{member\_id}
 
 <summary>
 
-OrganizationMember object {id, create\_time, meta, 4 more }
+OrganizationMember object { id, create\_time, meta, 4 more }
 
 </summary>
 
@@ -646,7 +646,7 @@ meta: map\[unknown]
 
 <summary>
 
-status: "active"or "pending"or "rejected"or "canceled"
+status: "active" or "pending" or "rejected" or "canceled"
 
 </summary>
 
@@ -682,7 +682,7 @@ formatdate-time
 
 <summary>
 
-user: object {id, email, name, two\_factor\_authentication\_enabled }
+user: object { id, email, name, two\_factor\_authentication\_enabled }
 
 </summary>
 
@@ -710,7 +710,7 @@ two\_factor\_authentication\_enabled: boolean
 
 <summary>
 
-policies: optional array of object {roles, scopes, id }
+policies: optional array of object { roles, scopes, id }
 
 Direct policies of the membership. Present only for DSR members enrolled in Organization Roles.
 
@@ -720,7 +720,7 @@ Direct policies of the membership. Present only for DSR members enrolled in Orga
 
 <summary>
 
-roles: array of object {id }
+roles: array of object { id }
 
 </summary>
 
@@ -736,7 +736,7 @@ id: string
 
 <summary>
 
-scopes: array of object {key, subset\_of }
+scopes: array of object { key, subset\_of }
 
 </summary>
 
@@ -774,7 +774,7 @@ Omit to create a policy. An unchanged policy keeps its ID; a changed policy is r
 
 <summary>
 
-MemberDeleteResponse object {id }
+MemberDeleteResponse object { id }
 
 </summary>
 
@@ -804,7 +804,7 @@ GET/organizations/{organization\_id}/logs/audit/{id}/history
 
 <summary>
 
-AuditListResponse object {id, action, actor, 3 more }
+AuditListResponse object { id, action, actor, 3 more }
 
 </summary>
 
@@ -820,7 +820,7 @@ maxLength32
 
 <summary>
 
-action: optional object {description, result, time, type }
+action: optional object { description, result, time, type }
 
 Provides information about the action performed.
 
@@ -860,7 +860,7 @@ A short string that describes the action that was performed.
 
 <summary>
 
-actor: optional object {id, context, email, 4 more }
+actor: optional object { id, context, email, 4 more }
 
 Provides details about the actor who performed the action.
 
@@ -876,7 +876,7 @@ The ID of the actor who performed the action. If a user performed the action, th
 
 <summary>
 
-context: optional "api"or "api\_key"or "api\_token"or 3 more
+context: optional "api" or "api\_key" or "api\_token" or 3 more
 
 The context in which the action was initiated.
 
@@ -949,7 +949,7 @@ The API token name when the actor context is an api\_token or oauth.
 
 <summary>
 
-type: optional "cloudflare\_admin"or "system"or "user"
+type: optional "cloudflare\_admin" or "system" or "user"
 
 The type of actor.
 
@@ -981,7 +981,7 @@ One of the following:
 
 <summary>
 
-organization: optional object {id }
+organization: optional object { id }
 
 Contains organization related information.
 
@@ -1001,7 +1001,7 @@ A unique identifier for the organization.
 
 <summary>
 
-raw: optional object {cf\_ray\_id, method, status\_code, 2 more }
+raw: optional object { cf\_ray\_id, method, status\_code, 2 more }
 
 Provides raw information about the request and response.
 
@@ -1045,7 +1045,7 @@ The client’s user agent string sent with the request.
 
 <summary>
 
-resource: optional object {id, product, request, 3 more }
+resource: optional object { id, product, request, 3 more }
 
 Provides details about the affected resource.
 
@@ -1095,7 +1095,7 @@ The type of the resource.
 
 <summary>
 
-AuditHistoryResponse = array of object {id, action, actor, 3 more }
+AuditHistoryResponse = array of object { id, action, actor, 3 more }
 
 </summary>
 
@@ -1111,7 +1111,7 @@ maxLength32
 
 <summary>
 
-action: optional object {description, result, time, type }
+action: optional object { description, result, time, type }
 
 Provides information about the action performed.
 
@@ -1151,7 +1151,7 @@ A short string that describes the action that was performed.
 
 <summary>
 
-actor: optional object {id, context, email, 4 more }
+actor: optional object { id, context, email, 4 more }
 
 Provides details about the actor who performed the action.
 
@@ -1167,7 +1167,7 @@ The ID of the actor who performed the action. If a user performed the action, th
 
 <summary>
 
-context: optional "api"or "api\_key"or "api\_token"or 3 more
+context: optional "api" or "api\_key" or "api\_token" or 3 more
 
 The context in which the action was initiated.
 
@@ -1240,7 +1240,7 @@ The API token name when the actor context is an api\_token or oauth.
 
 <summary>
 
-type: optional "cloudflare\_admin"or "system"or "user"
+type: optional "cloudflare\_admin" or "system" or "user"
 
 The type of actor.
 
@@ -1272,7 +1272,7 @@ One of the following:
 
 <summary>
 
-organization: optional object {id }
+organization: optional object { id }
 
 Contains organization related information.
 
@@ -1292,7 +1292,7 @@ A unique identifier for the organization.
 
 <summary>
 
-raw: optional object {cf\_ray\_id, method, status\_code, 2 more }
+raw: optional object { cf\_ray\_id, method, status\_code, 2 more }
 
 Provides raw information about the request and response.
 
@@ -1336,7 +1336,7 @@ The client’s user agent string sent with the request.
 
 <summary>
 
-resource: optional object {id, product, request, 3 more }
+resource: optional object { id, product, request, 3 more }
 
 Provides details about the affected resource.
 
@@ -1396,7 +1396,7 @@ GET/organizations/{organization\_id}/billable/usage
 
 <summary>
 
-UsageGetResponse = array of object {ChargeCategory, ChargeDescription, ChargeFrequency, 33 more }
+UsageGetResponse = array of object { ChargeCategory, ChargeDescription, ChargeFrequency, 33 more }
 
 Contains the array of cost and usage records.
 
@@ -1588,7 +1588,7 @@ Name assigned to a grouping of services. For Cloudflare, this is the subscriptio
 
 <summary>
 
-Tags: optional map\[stringor true]
+Tags: optional map\[string or true]
 
 Tag values for the requested <code>GroupBy</code> keys. Omitted when <code>GroupBy</code> is not provided. Missing keys are omitted, and key-only tags are returned as boolean <code>true</code>. All other tag values are strings.
 

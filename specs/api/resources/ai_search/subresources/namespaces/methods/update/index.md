@@ -54,6 +54,10 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 </details>
 
+##### Accepted Permissions (at least one required)
+
+`AI Search Write``Auto Rag Write`
+
 ##### P ath ParametersExpand Collapse
 
 account\_id: string
@@ -78,7 +82,7 @@ maxLength256
 
 <summary>
 
-public\_endpoint\_params: optional object {authorized\_hosts, chat\_completions\_endpoint, custom\_domains, 6 more }
+public\_endpoint\_params: optional object { authorized\_hosts, chat\_completions\_endpoint, custom\_domains, 6 more }
 
 </summary>
 
@@ -90,7 +94,7 @@ authorized\_hosts: optional array of string
 
 <summary>
 
-chat\_completions\_endpoint: optional object {disabled }
+chat\_completions\_endpoint: optional object { disabled }
 
 </summary>
 
@@ -130,7 +134,7 @@ Instance IDs exposed through the namespace public endpoint. Empty means nothing 
 
 <summary>
 
-mcp: optional object {description, disabled }
+mcp: optional object { description, disabled }
 
 </summary>
 
@@ -152,7 +156,7 @@ Disable MCP endpoint for this public endpoint.
 
 <summary>
 
-rate\_limit: optional object {period\_ms, requests, technique }
+rate\_limit: optional object { period\_ms, requests, technique }
 
 </summary>
 
@@ -174,7 +178,7 @@ minimum1
 
 <summary>
 
-technique: optional "fixed"or "sliding"
+technique: optional "fixed" or "sliding"
 
 </summary>
 
@@ -200,7 +204,7 @@ One of the following:
 
 <summary>
 
-search\_endpoint: optional object {disabled }
+search\_endpoint: optional object { disabled }
 
 </summary>
 
@@ -224,7 +228,7 @@ Disable search endpoint for this public endpoint.
 
 <summary>
 
-result: object {created\_at, name, description, 2 more }
+result: object { created\_at, name, description, 2 more }
 
 </summary>
 
@@ -254,7 +258,7 @@ public\_endpoint\_id: optional string
 
 <summary>
 
-public\_endpoint\_params: optional object {authorized\_hosts, chat\_completions\_endpoint, custom\_domains, 6 more }
+public\_endpoint\_params: optional object { authorized\_hosts, chat\_completions\_endpoint, custom\_domains, 6 more }
 
 </summary>
 
@@ -266,7 +270,7 @@ authorized\_hosts: optional array of string
 
 <summary>
 
-chat\_completions\_endpoint: optional object {disabled }
+chat\_completions\_endpoint: optional object { disabled }
 
 </summary>
 
@@ -306,7 +310,7 @@ Instance IDs exposed through the namespace public endpoint. Empty means nothing 
 
 <summary>
 
-mcp: optional object {description, disabled }
+mcp: optional object { description, disabled }
 
 </summary>
 
@@ -328,7 +332,7 @@ Disable MCP endpoint for this public endpoint.
 
 <summary>
 
-rate\_limit: optional object {period\_ms, requests, technique }
+rate\_limit: optional object { period\_ms, requests, technique }
 
 </summary>
 
@@ -350,7 +354,7 @@ minimum1
 
 <summary>
 
-technique: optional "fixed"or "sliding"
+technique: optional "fixed" or "sliding"
 
 </summary>
 
@@ -376,7 +380,7 @@ One of the following:
 
 <summary>
 
-search\_endpoint: optional object {disabled }
+search\_endpoint: optional object { disabled }
 
 </summary>
 

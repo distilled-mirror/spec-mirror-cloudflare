@@ -64,7 +64,7 @@ account\_id: string
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -86,7 +86,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -106,7 +106,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -128,7 +128,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -148,7 +148,7 @@ pointer: optional string
 
 <summary>
 
-result: object {maximum, usage, utilization }
+result: object { maximum, usage, utilization }
 
 Current live usage, maximum limits, and utilization percentages for your account. Usage includes active and assigned instances and is a current snapshot, not a historical or billable metric.
 
@@ -158,7 +158,7 @@ Current live usage, maximum limits, and utilization percentages for your account
 
 <summary>
 
-maximum: object {disk\_mb, memory\_mib, vcpus }
+maximum: object { disk\_mb, memory\_mib, vcpus }
 
 Lists account limits for the resources reported in usage.
 
@@ -192,7 +192,7 @@ formatfloat
 
 <summary>
 
-usage: object {disk\_mb, instances, memory\_mib, vcpus }
+usage: object { disk\_mb, instances, memory\_mib, vcpus }
 
 Lists current resource consumption for active and assigned instances.
 
@@ -224,7 +224,7 @@ formatfloat
 
 <summary>
 
-utilization: object {disk\_mb, memory\_mib, vcpus }
+utilization: object { disk\_mb, memory\_mib, vcpus }
 
 Live resource utilization percentages. A value of 100 represents full utilization. Values can exceed 100 when usage exceeds quota. The API omits fields whose corresponding maximum is zero.
 

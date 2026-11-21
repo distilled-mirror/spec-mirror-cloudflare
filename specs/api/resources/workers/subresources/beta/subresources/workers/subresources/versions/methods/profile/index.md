@@ -110,7 +110,7 @@ Identifies the Durable Object namespace containing the actor to profile. Must be
 
 <summary>
 
-profile\_type: optional "cpu"or "heap"
+profile\_type: optional "cpu" or "heap"
 
 </summary>
 

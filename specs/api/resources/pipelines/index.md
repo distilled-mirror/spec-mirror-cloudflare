@@ -72,7 +72,7 @@ POST/accounts/{account\_id}/pipelines/v1/validate\_sql
 
 <summary>
 
-FieldType = object {type } or object {type } or object {type } or 8 more
+FieldType = object { type } or object { type } or object { type } or 8 more
 
 </summary>
 
@@ -82,7 +82,7 @@ One of the following:
 
 <summary>
 
-Int32 object {type }
+Int32 object { type }
 
 </summary>
 
@@ -98,7 +98,7 @@ type: "int32"
 
 <summary>
 
-Int64 object {type }
+Int64 object { type }
 
 </summary>
 
@@ -114,7 +114,7 @@ type: "int64"
 
 <summary>
 
-Float32 object {type }
+Float32 object { type }
 
 </summary>
 
@@ -130,7 +130,7 @@ type: "float32"
 
 <summary>
 
-Float64 object {type }
+Float64 object { type }
 
 </summary>
 
@@ -146,7 +146,7 @@ type: "float64"
 
 <summary>
 
-Bool object {type }
+Bool object { type }
 
 </summary>
 
@@ -162,7 +162,7 @@ type: "bool"
 
 <summary>
 
-String object {type }
+String object { type }
 
 </summary>
 
@@ -178,7 +178,7 @@ type: "string"
 
 <summary>
 
-Binary object {type }
+Binary object { type }
 
 </summary>
 
@@ -194,7 +194,7 @@ type: "binary"
 
 <summary>
 
-Timestamp object {type, unit }
+Timestamp object { type, unit }
 
 </summary>
 
@@ -206,7 +206,7 @@ type: "timestamp"
 
 <summary>
 
-unit: optional "second"or "millisecond"or "microsecond"or "nanosecond"
+unit: optional "second" or "millisecond" or "microsecond" or "nanosecond"
 
 </summary>
 
@@ -240,7 +240,7 @@ One of the following:
 
 <summary>
 
-Json object {type }
+Json object { type }
 
 </summary>
 
@@ -256,7 +256,7 @@ type: "json"
 
 <summary>
 
-Struct object {fields, type, name }
+Struct object { fields, type, name }
 
 </summary>
 
@@ -274,7 +274,7 @@ One of the following:
 
 <summary>
 
-Int32 object {type, metadata\_key, name, 2 more }
+Int32 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -306,7 +306,7 @@ sql\_name: optional string
 
 <summary>
 
-Int64 object {type, metadata\_key, name, 2 more }
+Int64 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -338,7 +338,7 @@ sql\_name: optional string
 
 <summary>
 
-Float32 object {type, metadata\_key, name, 2 more }
+Float32 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -370,7 +370,7 @@ sql\_name: optional string
 
 <summary>
 
-Float64 object {type, metadata\_key, name, 2 more }
+Float64 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -402,7 +402,7 @@ sql\_name: optional string
 
 <summary>
 
-Bool object {type, metadata\_key, name, 2 more }
+Bool object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -434,7 +434,7 @@ sql\_name: optional string
 
 <summary>
 
-String object {type, metadata\_key, name, 2 more }
+String object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -466,7 +466,7 @@ sql\_name: optional string
 
 <summary>
 
-Binary object {type, metadata\_key, name, 2 more }
+Binary object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -498,7 +498,7 @@ sql\_name: optional string
 
 <summary>
 
-Timestamp object {type, metadata\_key, name, 3 more }
+Timestamp object { type, metadata\_key, name, 3 more }
 
 </summary>
 
@@ -526,7 +526,7 @@ sql\_name: optional string
 
 <summary>
 
-unit: optional "second"or "millisecond"or "microsecond"or "nanosecond"
+unit: optional "second" or "millisecond" or "microsecond" or "nanosecond"
 
 </summary>
 
@@ -560,7 +560,7 @@ One of the following:
 
 <summary>
 
-Json object {type, metadata\_key, name, 2 more }
+Json object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -672,7 +672,7 @@ name: optional string
 
 <summary>
 
-List object {items, type }
+List object { items, type }
 
 </summary>
 
@@ -696,7 +696,7 @@ type: "list"
 
 <summary>
 
-ListField object {items }
+ListField object { items }
 
 </summary>
 
@@ -712,7 +712,7 @@ items: <a href="https://developers.cloudflare.com/api/resources/pipelines#(resou
 
 <summary>
 
-SourceField = object {type, metadata\_key, name, 2 more } or object {type, metadata\_key, name, 2 more } or object {type, metadata\_key, name, 2 more } or 8 more
+SourceField = object { type, metadata\_key, name, 2 more } or object { type, metadata\_key, name, 2 more } or object { type, metadata\_key, name, 2 more } or 8 more
 
 </summary>
 
@@ -722,7 +722,7 @@ One of the following:
 
 <summary>
 
-Int32 object {type, metadata\_key, name, 2 more }
+Int32 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -754,7 +754,7 @@ sql\_name: optional string
 
 <summary>
 
-Int64 object {type, metadata\_key, name, 2 more }
+Int64 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -786,7 +786,7 @@ sql\_name: optional string
 
 <summary>
 
-Float32 object {type, metadata\_key, name, 2 more }
+Float32 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -818,7 +818,7 @@ sql\_name: optional string
 
 <summary>
 
-Float64 object {type, metadata\_key, name, 2 more }
+Float64 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -850,7 +850,7 @@ sql\_name: optional string
 
 <summary>
 
-Bool object {type, metadata\_key, name, 2 more }
+Bool object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -882,7 +882,7 @@ sql\_name: optional string
 
 <summary>
 
-String object {type, metadata\_key, name, 2 more }
+String object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -914,7 +914,7 @@ sql\_name: optional string
 
 <summary>
 
-Binary object {type, metadata\_key, name, 2 more }
+Binary object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -946,7 +946,7 @@ sql\_name: optional string
 
 <summary>
 
-Timestamp object {type, metadata\_key, name, 3 more }
+Timestamp object { type, metadata\_key, name, 3 more }
 
 </summary>
 
@@ -974,7 +974,7 @@ sql\_name: optional string
 
 <summary>
 
-unit: optional "second"or "millisecond"or "microsecond"or "nanosecond"
+unit: optional "second" or "millisecond" or "microsecond" or "nanosecond"
 
 </summary>
 
@@ -1008,7 +1008,7 @@ One of the following:
 
 <summary>
 
-Json object {type, metadata\_key, name, 2 more }
+Json object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -1108,7 +1108,7 @@ sql\_name: optional string
 
 <summary>
 
-StructField object {fields, name }
+StructField object { fields, name }
 
 </summary>
 
@@ -1128,7 +1128,7 @@ name: optional string
 
 <summary>
 
-PipelineListResponse object {result\_info, results, success }
+PipelineListResponse object { result\_info, results, success }
 
 </summary>
 
@@ -1136,7 +1136,7 @@ PipelineListResponse object {result\_info, results, success }
 
 <summary>
 
-result\_info: object {count, page, per\_page, total\_count }
+result\_info: object { count, page, per\_page, total\_count }
 
 </summary>
 
@@ -1172,7 +1172,7 @@ Indicates the total number of items.
 
 <summary>
 
-results: array of object {id, destination, endpoint, 3 more }
+results: array of object { id, destination, endpoint, 3 more }
 
 </summary>
 
@@ -1186,7 +1186,7 @@ Specifies the pipeline identifier.
 
 <summary>
 
-destination: object {batch, compression, format, 2 more }
+destination: object { batch, compression, format, 2 more }
 
 </summary>
 
@@ -1194,7 +1194,7 @@ destination: object {batch, compression, format, 2 more }
 
 <summary>
 
-batch: object {max\_bytes, max\_duration\_s, max\_rows }
+batch: object { max\_bytes, max\_duration\_s, max\_rows }
 
 </summary>
 
@@ -1236,7 +1236,7 @@ minimum100
 
 <summary>
 
-compression: object {type }
+compression: object { type }
 
 </summary>
 
@@ -1244,7 +1244,7 @@ compression: object {type }
 
 <summary>
 
-type: "none"or "gzip"or "deflate"
+type: "none" or "gzip" or "deflate"
 
 Specifies the desired compression algorithm and format.
 
@@ -1282,7 +1282,7 @@ Specifies the format of data to deliver.
 
 <summary>
 
-path: object {bucket, filename, filepath, prefix }
+path: object { bucket, filename, filepath, prefix }
 
 </summary>
 
@@ -1344,7 +1344,7 @@ minLength1
 
 <summary>
 
-source: array of object {format, type, authentication, cors } or object {format, type }
+source: array of object { format, type, authentication, cors } or object { format, type }
 
 </summary>
 
@@ -1354,7 +1354,7 @@ One of the following:
 
 <summary>
 
-CloudflarePipelinesWorkersPipelinesHTTPSource object {format, type, authentication, cors }
+CloudflarePipelinesWorkersPipelinesHTTPSource object { format, type, authentication, cors }
 
 \[DEPRECATED] HTTP source configuration. Use the new streams API instead.
 
@@ -1380,7 +1380,7 @@ Specifies whether authentication is required to send to this pipeline via HTTP.
 
 <summary>
 
-cors: optional object {origins }
+cors: optional object { origins }
 
 </summary>
 
@@ -1402,7 +1402,7 @@ Specifies allowed origins to allow Cross Origin HTTP Requests.
 
 <summary>
 
-CloudflarePipelinesWorkersPipelinesBindingSource object {format, type }
+CloudflarePipelinesWorkersPipelinesBindingSource object { format, type }
 
 \[DEPRECATED] Worker binding source configuration. Use the new streams API instead.
 
@@ -1450,7 +1450,7 @@ Indicates whether the API call was successful.
 
 <summary>
 
-PipelineGetResponse object {id, destination, endpoint, 3 more }
+PipelineGetResponse object { id, destination, endpoint, 3 more }
 
 \[DEPRECATED] Describes the configuration of a pipeline. Use the new streams/sinks/pipelines API instead.
 
@@ -1466,7 +1466,7 @@ Specifies the pipeline identifier.
 
 <summary>
 
-destination: object {batch, compression, format, 2 more }
+destination: object { batch, compression, format, 2 more }
 
 </summary>
 
@@ -1474,7 +1474,7 @@ destination: object {batch, compression, format, 2 more }
 
 <summary>
 
-batch: object {max\_bytes, max\_duration\_s, max\_rows }
+batch: object { max\_bytes, max\_duration\_s, max\_rows }
 
 </summary>
 
@@ -1516,7 +1516,7 @@ minimum100
 
 <summary>
 
-compression: object {type }
+compression: object { type }
 
 </summary>
 
@@ -1524,7 +1524,7 @@ compression: object {type }
 
 <summary>
 
-type: "none"or "gzip"or "deflate"
+type: "none" or "gzip" or "deflate"
 
 Specifies the desired compression algorithm and format.
 
@@ -1562,7 +1562,7 @@ Specifies the format of data to deliver.
 
 <summary>
 
-path: object {bucket, filename, filepath, prefix }
+path: object { bucket, filename, filepath, prefix }
 
 </summary>
 
@@ -1624,7 +1624,7 @@ minLength1
 
 <summary>
 
-source: array of object {format, type, authentication, cors } or object {format, type }
+source: array of object { format, type, authentication, cors } or object { format, type }
 
 </summary>
 
@@ -1634,7 +1634,7 @@ One of the following:
 
 <summary>
 
-CloudflarePipelinesWorkersPipelinesHTTPSource object {format, type, authentication, cors }
+CloudflarePipelinesWorkersPipelinesHTTPSource object { format, type, authentication, cors }
 
 \[DEPRECATED] HTTP source configuration. Use the new streams API instead.
 
@@ -1660,7 +1660,7 @@ Specifies whether authentication is required to send to this pipeline via HTTP.
 
 <summary>
 
-cors: optional object {origins }
+cors: optional object { origins }
 
 </summary>
 
@@ -1682,7 +1682,7 @@ Specifies allowed origins to allow Cross Origin HTTP Requests.
 
 <summary>
 
-CloudflarePipelinesWorkersPipelinesBindingSource object {format, type }
+CloudflarePipelinesWorkersPipelinesBindingSource object { format, type }
 
 \[DEPRECATED] Worker binding source configuration. Use the new streams API instead.
 
@@ -1720,7 +1720,7 @@ Indicates the version number of last saved configuration.
 
 <summary>
 
-PipelineCreateResponse object {id, destination, endpoint, 3 more }
+PipelineCreateResponse object { id, destination, endpoint, 3 more }
 
 \[DEPRECATED] Describes the configuration of a pipeline. Use the new streams/sinks/pipelines API instead.
 
@@ -1736,7 +1736,7 @@ Specifies the pipeline identifier.
 
 <summary>
 
-destination: object {batch, compression, format, 2 more }
+destination: object { batch, compression, format, 2 more }
 
 </summary>
 
@@ -1744,7 +1744,7 @@ destination: object {batch, compression, format, 2 more }
 
 <summary>
 
-batch: object {max\_bytes, max\_duration\_s, max\_rows }
+batch: object { max\_bytes, max\_duration\_s, max\_rows }
 
 </summary>
 
@@ -1786,7 +1786,7 @@ minimum100
 
 <summary>
 
-compression: object {type }
+compression: object { type }
 
 </summary>
 
@@ -1794,7 +1794,7 @@ compression: object {type }
 
 <summary>
 
-type: "none"or "gzip"or "deflate"
+type: "none" or "gzip" or "deflate"
 
 Specifies the desired compression algorithm and format.
 
@@ -1832,7 +1832,7 @@ Specifies the format of data to deliver.
 
 <summary>
 
-path: object {bucket, filename, filepath, prefix }
+path: object { bucket, filename, filepath, prefix }
 
 </summary>
 
@@ -1894,7 +1894,7 @@ minLength1
 
 <summary>
 
-source: array of object {format, type, authentication, cors } or object {format, type }
+source: array of object { format, type, authentication, cors } or object { format, type }
 
 </summary>
 
@@ -1904,7 +1904,7 @@ One of the following:
 
 <summary>
 
-CloudflarePipelinesWorkersPipelinesHTTPSource object {format, type, authentication, cors }
+CloudflarePipelinesWorkersPipelinesHTTPSource object { format, type, authentication, cors }
 
 \[DEPRECATED] HTTP source configuration. Use the new streams API instead.
 
@@ -1930,7 +1930,7 @@ Specifies whether authentication is required to send to this pipeline via HTTP.
 
 <summary>
 
-cors: optional object {origins }
+cors: optional object { origins }
 
 </summary>
 
@@ -1952,7 +1952,7 @@ Specifies allowed origins to allow Cross Origin HTTP Requests.
 
 <summary>
 
-CloudflarePipelinesWorkersPipelinesBindingSource object {format, type }
+CloudflarePipelinesWorkersPipelinesBindingSource object { format, type }
 
 \[DEPRECATED] Worker binding source configuration. Use the new streams API instead.
 
@@ -1990,7 +1990,7 @@ Indicates the version number of last saved configuration.
 
 <summary>
 
-PipelineUpdateResponse object {id, destination, endpoint, 3 more }
+PipelineUpdateResponse object { id, destination, endpoint, 3 more }
 
 \[DEPRECATED] Describes the configuration of a pipeline. Use the new streams/sinks/pipelines API instead.
 
@@ -2006,7 +2006,7 @@ Specifies the pipeline identifier.
 
 <summary>
 
-destination: object {batch, compression, format, 2 more }
+destination: object { batch, compression, format, 2 more }
 
 </summary>
 
@@ -2014,7 +2014,7 @@ destination: object {batch, compression, format, 2 more }
 
 <summary>
 
-batch: object {max\_bytes, max\_duration\_s, max\_rows }
+batch: object { max\_bytes, max\_duration\_s, max\_rows }
 
 </summary>
 
@@ -2056,7 +2056,7 @@ minimum100
 
 <summary>
 
-compression: object {type }
+compression: object { type }
 
 </summary>
 
@@ -2064,7 +2064,7 @@ compression: object {type }
 
 <summary>
 
-type: "none"or "gzip"or "deflate"
+type: "none" or "gzip" or "deflate"
 
 Specifies the desired compression algorithm and format.
 
@@ -2102,7 +2102,7 @@ Specifies the format of data to deliver.
 
 <summary>
 
-path: object {bucket, filename, filepath, prefix }
+path: object { bucket, filename, filepath, prefix }
 
 </summary>
 
@@ -2164,7 +2164,7 @@ minLength1
 
 <summary>
 
-source: array of object {format, type, authentication, cors } or object {format, type }
+source: array of object { format, type, authentication, cors } or object { format, type }
 
 </summary>
 
@@ -2174,7 +2174,7 @@ One of the following:
 
 <summary>
 
-CloudflarePipelinesWorkersPipelinesHTTPSource object {format, type, authentication, cors }
+CloudflarePipelinesWorkersPipelinesHTTPSource object { format, type, authentication, cors }
 
 \[DEPRECATED] HTTP source configuration. Use the new streams API instead.
 
@@ -2200,7 +2200,7 @@ Specifies whether authentication is required to send to this pipeline via HTTP.
 
 <summary>
 
-cors: optional object {origins }
+cors: optional object { origins }
 
 </summary>
 
@@ -2222,7 +2222,7 @@ Specifies allowed origins to allow Cross Origin HTTP Requests.
 
 <summary>
 
-CloudflarePipelinesWorkersPipelinesBindingSource object {format, type }
+CloudflarePipelinesWorkersPipelinesBindingSource object { format, type }
 
 \[DEPRECATED] Worker binding source configuration. Use the new streams API instead.
 
@@ -2260,7 +2260,7 @@ Indicates the version number of last saved configuration.
 
 <summary>
 
-PipelineListV1Response object {id, created\_at, modified\_at, 3 more }
+PipelineListV1Response object { id, created\_at, modified\_at, 3 more }
 
 </summary>
 
@@ -2308,7 +2308,7 @@ Indicates the current status of the Pipeline.
 
 <summary>
 
-PipelineGetV1Response object {id, created\_at, modified\_at, 6 more }
+PipelineGetV1Response object { id, created\_at, modified\_at, 6 more }
 
 </summary>
 
@@ -2358,7 +2358,7 @@ Indicates the current status of the Pipeline.
 
 <summary>
 
-tables: array of object {id, latest, name, 2 more }
+tables: array of object { id, latest, name, 2 more }
 
 List of streams and sinks used by this pipeline.
 
@@ -2390,7 +2390,7 @@ minLength1
 
 <summary>
 
-type: "stream"or "sink"
+type: "stream" or "sink"
 
 Type of the connection.
 
@@ -2434,7 +2434,7 @@ Indicates the reason for the failure of the Pipeline.
 
 <summary>
 
-PipelineCreateV1Response object {id, created\_at, modified\_at, 3 more }
+PipelineCreateV1Response object { id, created\_at, modified\_at, 3 more }
 
 </summary>
 
@@ -2486,7 +2486,7 @@ PipelineDeleteV1Response = unknown
 
 <summary>
 
-PipelineValidateSqlResponse object {tables, graph }
+PipelineValidateSqlResponse object { tables, graph }
 
 </summary>
 
@@ -2494,7 +2494,7 @@ PipelineValidateSqlResponse object {tables, graph }
 
 <summary>
 
-tables: map\[object {id, name, type, version } ]
+tables: map\[object { id, name, type, version } ]
 
 Indicates tables involved in the processing.
 
@@ -2524,7 +2524,7 @@ version: number
 
 <summary>
 
-graph: optional object {edges, nodes }
+graph: optional object { edges, nodes }
 
 Indicates the processing flow to implement the SQL.
 
@@ -2534,7 +2534,7 @@ Indicates the processing flow to implement the SQL.
 
 <summary>
 
-edges: array of object {dest\_id, edge\_type, key\_type, 2 more }
+edges: array of object { dest\_id, edge\_type, key\_type, 2 more }
 
 </summary>
 
@@ -2574,7 +2574,7 @@ value\_type: string
 
 <summary>
 
-nodes: array of object {description, node\_id, operator, parallelism }
+nodes: array of object { description, node\_id, operator, parallelism }
 
 </summary>
 
@@ -2638,7 +2638,7 @@ DELETE/accounts/{account\_id}/pipelines/v1/sinks/{sink\_id}
 
 <summary>
 
-SinkListResponse object {id, created\_at, modified\_at, 5 more }
+SinkListResponse object { id, created\_at, modified\_at, 5 more }
 
 </summary>
 
@@ -2674,7 +2674,7 @@ minLength1
 
 <summary>
 
-type: "r2"or "r2\_data\_catalog"or "basin\_catalog"
+type: "r2" or "r2\_data\_catalog" or "basin\_catalog"
 
 Specifies the type of sink.
 
@@ -2702,7 +2702,7 @@ One of the following:
 
 <summary>
 
-config: optional object {account\_id, bucket, file\_naming, 4 more } or object {account\_id, bucket, table\_name, 2 more }
+config: optional object { account\_id, bucket, file\_naming, 4 more } or object { account\_id, bucket, table\_name, 2 more }
 
 Defines the configuration of the R2 Sink.
 
@@ -2714,7 +2714,7 @@ One of the following:
 
 <summary>
 
-CloudflarePipelinesR2TablePublic object {account\_id, bucket, file\_naming, 4 more }
+CloudflarePipelinesR2TablePublic object { account\_id, bucket, file\_naming, 4 more }
 
 R2 Sink public configuration.
 
@@ -2736,7 +2736,7 @@ R2 Bucket to write to
 
 <summary>
 
-file\_naming: optional object {prefix, strategy, suffix }
+file\_naming: optional object { prefix, strategy, suffix }
 
 Controls filename prefix/suffix and strategy.
 
@@ -2752,7 +2752,7 @@ The prefix to use in file name. i.e prefix-.parquet
 
 <summary>
 
-strategy: optional "serial"or "uuid"or "uuid\_v7"or "ulid"
+strategy: optional "serial" or "uuid" or "uuid\_v7" or "ulid"
 
 Filename generation strategy.
 
@@ -2800,7 +2800,7 @@ Jurisdiction this bucket is hosted in
 
 <summary>
 
-partitioning: optional object {time\_pattern }
+partitioning: optional object { time\_pattern }
 
 Data-layout partitioning for sinks.
 
@@ -2826,7 +2826,7 @@ Subpath within the bucket to write to
 
 <summary>
 
-rolling\_policy: optional object {file\_size\_bytes, inactivity\_seconds, interval\_seconds }
+rolling\_policy: optional object { file\_size\_bytes, inactivity\_seconds, interval\_seconds }
 
 Rolling policy for file sinks (when &amp; why to close a file and open a new one).
 
@@ -2874,7 +2874,7 @@ minimum1
 
 <summary>
 
-CloudflarePipelinesR2DataCatalogTablePublic object {account\_id, bucket, table\_name, 2 more }
+CloudflarePipelinesR2DataCatalogTablePublic object { account\_id, bucket, table\_name, 2 more }
 
 R2 Data Catalog Sink public configuration.
 
@@ -2910,7 +2910,7 @@ Table namespace
 
 <summary>
 
-rolling\_policy: optional object {file\_size\_bytes, inactivity\_seconds, interval\_seconds }
+rolling\_policy: optional object { file\_size\_bytes, inactivity\_seconds, interval\_seconds }
 
 Rolling policy for file sinks (when &amp; why to close a file and open a new one).
 
@@ -2962,7 +2962,7 @@ minimum1
 
 <summary>
 
-format: optional object {type, compression, decimal\_encoding, 2 more } or object {type, compression, row\_group\_bytes }
+format: optional object { type, compression, decimal\_encoding, 2 more } or object { type, compression, row\_group\_bytes }
 
 Defines the output data format of a sink.
 
@@ -2974,7 +2974,7 @@ One of the following:
 
 <summary>
 
-Json object {type, compression, decimal\_encoding, 2 more }
+Json object { type, compression, decimal\_encoding, 2 more }
 
 </summary>
 
@@ -2986,7 +2986,7 @@ type: "json"
 
 <summary>
 
-compression: optional "uncompressed"or "gzip"
+compression: optional "uncompressed" or "gzip"
 
 Specifies the compression applied to JSON sink output.
 
@@ -3010,7 +3010,7 @@ One of the following:
 
 <summary>
 
-decimal\_encoding: optional "number"or "string"or "bytes"
+decimal\_encoding: optional "number" or "string" or "bytes"
 
 </summary>
 
@@ -3036,7 +3036,7 @@ One of the following:
 
 <summary>
 
-timestamp\_format: optional "rfc3339"or "unix\_millis"
+timestamp\_format: optional "rfc3339" or "unix\_millis"
 
 </summary>
 
@@ -3066,7 +3066,7 @@ unstructured: optional boolean
 
 <summary>
 
-Parquet object {type, compression, row\_group\_bytes }
+Parquet object { type, compression, row\_group\_bytes }
 
 </summary>
 
@@ -3078,7 +3078,7 @@ type: "parquet"
 
 <summary>
 
-compression: optional "uncompressed"or "snappy"or "gzip"or 2 more
+compression: optional "uncompressed" or "snappy" or "gzip" or 2 more
 
 </summary>
 
@@ -3128,7 +3128,7 @@ minimum0
 
 <summary>
 
-schema: optional object {fields, inferred }
+schema: optional object { fields, inferred }
 
 Defines the schema of the events in the data stream.
 
@@ -3148,7 +3148,7 @@ One of the following:
 
 <summary>
 
-Int32 object {type, metadata\_key, name, 2 more }
+Int32 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -3180,7 +3180,7 @@ sql\_name: optional string
 
 <summary>
 
-Int64 object {type, metadata\_key, name, 2 more }
+Int64 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -3212,7 +3212,7 @@ sql\_name: optional string
 
 <summary>
 
-Float32 object {type, metadata\_key, name, 2 more }
+Float32 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -3244,7 +3244,7 @@ sql\_name: optional string
 
 <summary>
 
-Float64 object {type, metadata\_key, name, 2 more }
+Float64 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -3276,7 +3276,7 @@ sql\_name: optional string
 
 <summary>
 
-Bool object {type, metadata\_key, name, 2 more }
+Bool object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -3308,7 +3308,7 @@ sql\_name: optional string
 
 <summary>
 
-String object {type, metadata\_key, name, 2 more }
+String object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -3340,7 +3340,7 @@ sql\_name: optional string
 
 <summary>
 
-Binary object {type, metadata\_key, name, 2 more }
+Binary object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -3372,7 +3372,7 @@ sql\_name: optional string
 
 <summary>
 
-Timestamp object {type, metadata\_key, name, 3 more }
+Timestamp object { type, metadata\_key, name, 3 more }
 
 </summary>
 
@@ -3400,7 +3400,7 @@ sql\_name: optional string
 
 <summary>
 
-unit: optional "second"or "millisecond"or "microsecond"or "nanosecond"
+unit: optional "second" or "millisecond" or "microsecond" or "nanosecond"
 
 </summary>
 
@@ -3434,7 +3434,7 @@ One of the following:
 
 <summary>
 
-Json object {type, metadata\_key, name, 2 more }
+Json object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -3546,7 +3546,7 @@ inferred: optional boolean
 
 <summary>
 
-SinkGetResponse object {id, created\_at, latest, 8 more }
+SinkGetResponse object { id, created\_at, latest, 8 more }
 
 </summary>
 
@@ -3588,7 +3588,7 @@ minLength1
 
 <summary>
 
-type: "r2"or "r2\_data\_catalog"or "basin\_catalog"
+type: "r2" or "r2\_data\_catalog" or "basin\_catalog"
 
 Specifies the type of sink.
 
@@ -3622,7 +3622,7 @@ Indicates the version of this sink.
 
 <summary>
 
-config: optional object {account\_id, bucket, file\_naming, 4 more } or object {account\_id, bucket, table\_name, 2 more }
+config: optional object { account\_id, bucket, file\_naming, 4 more } or object { account\_id, bucket, table\_name, 2 more }
 
 Defines the configuration of the R2 Sink.
 
@@ -3634,7 +3634,7 @@ One of the following:
 
 <summary>
 
-CloudflarePipelinesR2TablePublic object {account\_id, bucket, file\_naming, 4 more }
+CloudflarePipelinesR2TablePublic object { account\_id, bucket, file\_naming, 4 more }
 
 R2 Sink public configuration.
 
@@ -3656,7 +3656,7 @@ R2 Bucket to write to
 
 <summary>
 
-file\_naming: optional object {prefix, strategy, suffix }
+file\_naming: optional object { prefix, strategy, suffix }
 
 Controls filename prefix/suffix and strategy.
 
@@ -3672,7 +3672,7 @@ The prefix to use in file name. i.e prefix-.parquet
 
 <summary>
 
-strategy: optional "serial"or "uuid"or "uuid\_v7"or "ulid"
+strategy: optional "serial" or "uuid" or "uuid\_v7" or "ulid"
 
 Filename generation strategy.
 
@@ -3720,7 +3720,7 @@ Jurisdiction this bucket is hosted in
 
 <summary>
 
-partitioning: optional object {time\_pattern }
+partitioning: optional object { time\_pattern }
 
 Data-layout partitioning for sinks.
 
@@ -3746,7 +3746,7 @@ Subpath within the bucket to write to
 
 <summary>
 
-rolling\_policy: optional object {file\_size\_bytes, inactivity\_seconds, interval\_seconds }
+rolling\_policy: optional object { file\_size\_bytes, inactivity\_seconds, interval\_seconds }
 
 Rolling policy for file sinks (when &amp; why to close a file and open a new one).
 
@@ -3794,7 +3794,7 @@ minimum1
 
 <summary>
 
-CloudflarePipelinesR2DataCatalogTablePublic object {account\_id, bucket, table\_name, 2 more }
+CloudflarePipelinesR2DataCatalogTablePublic object { account\_id, bucket, table\_name, 2 more }
 
 R2 Data Catalog Sink public configuration.
 
@@ -3830,7 +3830,7 @@ Table namespace
 
 <summary>
 
-rolling\_policy: optional object {file\_size\_bytes, inactivity\_seconds, interval\_seconds }
+rolling\_policy: optional object { file\_size\_bytes, inactivity\_seconds, interval\_seconds }
 
 Rolling policy for file sinks (when &amp; why to close a file and open a new one).
 
@@ -3882,7 +3882,7 @@ minimum1
 
 <summary>
 
-format: optional object {type, compression, decimal\_encoding, 2 more } or object {type, compression, row\_group\_bytes }
+format: optional object { type, compression, decimal\_encoding, 2 more } or object { type, compression, row\_group\_bytes }
 
 Defines the output data format of a sink.
 
@@ -3894,7 +3894,7 @@ One of the following:
 
 <summary>
 
-Json object {type, compression, decimal\_encoding, 2 more }
+Json object { type, compression, decimal\_encoding, 2 more }
 
 </summary>
 
@@ -3906,7 +3906,7 @@ type: "json"
 
 <summary>
 
-compression: optional "uncompressed"or "gzip"
+compression: optional "uncompressed" or "gzip"
 
 Specifies the compression applied to JSON sink output.
 
@@ -3930,7 +3930,7 @@ One of the following:
 
 <summary>
 
-decimal\_encoding: optional "number"or "string"or "bytes"
+decimal\_encoding: optional "number" or "string" or "bytes"
 
 </summary>
 
@@ -3956,7 +3956,7 @@ One of the following:
 
 <summary>
 
-timestamp\_format: optional "rfc3339"or "unix\_millis"
+timestamp\_format: optional "rfc3339" or "unix\_millis"
 
 </summary>
 
@@ -3986,7 +3986,7 @@ unstructured: optional boolean
 
 <summary>
 
-Parquet object {type, compression, row\_group\_bytes }
+Parquet object { type, compression, row\_group\_bytes }
 
 </summary>
 
@@ -3998,7 +3998,7 @@ type: "parquet"
 
 <summary>
 
-compression: optional "uncompressed"or "snappy"or "gzip"or 2 more
+compression: optional "uncompressed" or "snappy" or "gzip" or 2 more
 
 </summary>
 
@@ -4048,7 +4048,7 @@ minimum0
 
 <summary>
 
-schema: optional object {fields, inferred }
+schema: optional object { fields, inferred }
 
 Defines the schema of the events in the data stream.
 
@@ -4068,7 +4068,7 @@ One of the following:
 
 <summary>
 
-Int32 object {type, metadata\_key, name, 2 more }
+Int32 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -4100,7 +4100,7 @@ sql\_name: optional string
 
 <summary>
 
-Int64 object {type, metadata\_key, name, 2 more }
+Int64 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -4132,7 +4132,7 @@ sql\_name: optional string
 
 <summary>
 
-Float32 object {type, metadata\_key, name, 2 more }
+Float32 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -4164,7 +4164,7 @@ sql\_name: optional string
 
 <summary>
 
-Float64 object {type, metadata\_key, name, 2 more }
+Float64 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -4196,7 +4196,7 @@ sql\_name: optional string
 
 <summary>
 
-Bool object {type, metadata\_key, name, 2 more }
+Bool object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -4228,7 +4228,7 @@ sql\_name: optional string
 
 <summary>
 
-String object {type, metadata\_key, name, 2 more }
+String object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -4260,7 +4260,7 @@ sql\_name: optional string
 
 <summary>
 
-Binary object {type, metadata\_key, name, 2 more }
+Binary object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -4292,7 +4292,7 @@ sql\_name: optional string
 
 <summary>
 
-Timestamp object {type, metadata\_key, name, 3 more }
+Timestamp object { type, metadata\_key, name, 3 more }
 
 </summary>
 
@@ -4320,7 +4320,7 @@ sql\_name: optional string
 
 <summary>
 
-unit: optional "second"or "millisecond"or "microsecond"or "nanosecond"
+unit: optional "second" or "millisecond" or "microsecond" or "nanosecond"
 
 </summary>
 
@@ -4354,7 +4354,7 @@ One of the following:
 
 <summary>
 
-Json object {type, metadata\_key, name, 2 more }
+Json object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -4462,7 +4462,7 @@ inferred: optional boolean
 
 <summary>
 
-used\_by: optional array of object {id, href, type }
+used\_by: optional array of object { id, href, type }
 
 Lists the pipelines that use this sink. Omitted when no pipeline uses it.
 
@@ -4500,7 +4500,7 @@ Indicates the type of resource using this sink.
 
 <summary>
 
-SinkCreateResponse object {id, created\_at, modified\_at, 5 more }
+SinkCreateResponse object { id, created\_at, modified\_at, 5 more }
 
 </summary>
 
@@ -4536,7 +4536,7 @@ minLength1
 
 <summary>
 
-type: "r2"or "r2\_data\_catalog"or "basin\_catalog"
+type: "r2" or "r2\_data\_catalog" or "basin\_catalog"
 
 Specifies the type of sink.
 
@@ -4564,7 +4564,7 @@ One of the following:
 
 <summary>
 
-config: optional object {account\_id, bucket, credentials, 5 more } or object {token, account\_id, bucket, 3 more }
+config: optional object { account\_id, bucket, credentials, 5 more } or object { token, account\_id, bucket, 3 more }
 
 R2 Data Catalog Sink
 
@@ -4576,7 +4576,7 @@ One of the following:
 
 <summary>
 
-CloudflarePipelinesR2Table object {account\_id, bucket, credentials, 5 more }
+CloudflarePipelinesR2Table object { account\_id, bucket, credentials, 5 more }
 
 </summary>
 
@@ -4596,7 +4596,7 @@ R2 Bucket to write to
 
 <summary>
 
-credentials: object {access\_key\_id, secret\_access\_key }
+credentials: object { access\_key\_id, secret\_access\_key }
 
 </summary>
 
@@ -4624,7 +4624,7 @@ formatvar-str
 
 <summary>
 
-file\_naming: optional object {prefix, strategy, suffix }
+file\_naming: optional object { prefix, strategy, suffix }
 
 Controls filename prefix/suffix and strategy.
 
@@ -4640,7 +4640,7 @@ The prefix to use in file name. i.e prefix-.parquet
 
 <summary>
 
-strategy: optional "serial"or "uuid"or "uuid\_v7"or "ulid"
+strategy: optional "serial" or "uuid" or "uuid\_v7" or "ulid"
 
 Filename generation strategy.
 
@@ -4688,7 +4688,7 @@ Jurisdiction this bucket is hosted in
 
 <summary>
 
-partitioning: optional object {time\_pattern }
+partitioning: optional object { time\_pattern }
 
 Data-layout partitioning for sinks.
 
@@ -4714,7 +4714,7 @@ Subpath within the bucket to write to
 
 <summary>
 
-rolling\_policy: optional object {file\_size\_bytes, inactivity\_seconds, interval\_seconds }
+rolling\_policy: optional object { file\_size\_bytes, inactivity\_seconds, interval\_seconds }
 
 Rolling policy for file sinks (when &amp; why to close a file and open a new one).
 
@@ -4762,7 +4762,7 @@ minimum1
 
 <summary>
 
-CloudflarePipelinesR2DataCatalogTable object {token, account\_id, bucket, 3 more }
+CloudflarePipelinesR2DataCatalogTable object { token, account\_id, bucket, 3 more }
 
 R2 Data Catalog Sink
 
@@ -4806,7 +4806,7 @@ Table namespace
 
 <summary>
 
-rolling\_policy: optional object {file\_size\_bytes, inactivity\_seconds, interval\_seconds }
+rolling\_policy: optional object { file\_size\_bytes, inactivity\_seconds, interval\_seconds }
 
 Rolling policy for file sinks (when &amp; why to close a file and open a new one).
 
@@ -4858,7 +4858,7 @@ minimum1
 
 <summary>
 
-format: optional object {type, compression, decimal\_encoding, 2 more } or object {type, compression, row\_group\_bytes }
+format: optional object { type, compression, decimal\_encoding, 2 more } or object { type, compression, row\_group\_bytes }
 
 Defines the output data format of a sink.
 
@@ -4870,7 +4870,7 @@ One of the following:
 
 <summary>
 
-Json object {type, compression, decimal\_encoding, 2 more }
+Json object { type, compression, decimal\_encoding, 2 more }
 
 </summary>
 
@@ -4882,7 +4882,7 @@ type: "json"
 
 <summary>
 
-compression: optional "uncompressed"or "gzip"
+compression: optional "uncompressed" or "gzip"
 
 Specifies the compression applied to JSON sink output.
 
@@ -4906,7 +4906,7 @@ One of the following:
 
 <summary>
 
-decimal\_encoding: optional "number"or "string"or "bytes"
+decimal\_encoding: optional "number" or "string" or "bytes"
 
 </summary>
 
@@ -4932,7 +4932,7 @@ One of the following:
 
 <summary>
 
-timestamp\_format: optional "rfc3339"or "unix\_millis"
+timestamp\_format: optional "rfc3339" or "unix\_millis"
 
 </summary>
 
@@ -4962,7 +4962,7 @@ unstructured: optional boolean
 
 <summary>
 
-Parquet object {type, compression, row\_group\_bytes }
+Parquet object { type, compression, row\_group\_bytes }
 
 </summary>
 
@@ -4974,7 +4974,7 @@ type: "parquet"
 
 <summary>
 
-compression: optional "uncompressed"or "snappy"or "gzip"or 2 more
+compression: optional "uncompressed" or "snappy" or "gzip" or 2 more
 
 </summary>
 
@@ -5024,7 +5024,7 @@ minimum0
 
 <summary>
 
-schema: optional object {fields, inferred }
+schema: optional object { fields, inferred }
 
 Defines the schema of the events in the data stream.
 
@@ -5044,7 +5044,7 @@ One of the following:
 
 <summary>
 
-Int32 object {type, metadata\_key, name, 2 more }
+Int32 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -5076,7 +5076,7 @@ sql\_name: optional string
 
 <summary>
 
-Int64 object {type, metadata\_key, name, 2 more }
+Int64 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -5108,7 +5108,7 @@ sql\_name: optional string
 
 <summary>
 
-Float32 object {type, metadata\_key, name, 2 more }
+Float32 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -5140,7 +5140,7 @@ sql\_name: optional string
 
 <summary>
 
-Float64 object {type, metadata\_key, name, 2 more }
+Float64 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -5172,7 +5172,7 @@ sql\_name: optional string
 
 <summary>
 
-Bool object {type, metadata\_key, name, 2 more }
+Bool object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -5204,7 +5204,7 @@ sql\_name: optional string
 
 <summary>
 
-String object {type, metadata\_key, name, 2 more }
+String object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -5236,7 +5236,7 @@ sql\_name: optional string
 
 <summary>
 
-Binary object {type, metadata\_key, name, 2 more }
+Binary object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -5268,7 +5268,7 @@ sql\_name: optional string
 
 <summary>
 
-Timestamp object {type, metadata\_key, name, 3 more }
+Timestamp object { type, metadata\_key, name, 3 more }
 
 </summary>
 
@@ -5296,7 +5296,7 @@ sql\_name: optional string
 
 <summary>
 
-unit: optional "second"or "millisecond"or "microsecond"or "nanosecond"
+unit: optional "second" or "millisecond" or "microsecond" or "nanosecond"
 
 </summary>
 
@@ -5330,7 +5330,7 @@ One of the following:
 
 <summary>
 
-Json object {type, metadata\_key, name, 2 more }
+Json object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -5470,7 +5470,7 @@ DELETE/accounts/{account\_id}/pipelines/v1/streams/{stream\_id}
 
 <summary>
 
-StreamListResponse object {id, created\_at, http, 7 more }
+StreamListResponse object { id, created\_at, http, 7 more }
 
 </summary>
 
@@ -5490,7 +5490,7 @@ formatdate-time
 
 <summary>
 
-http: object {authentication, enabled, cors }
+http: object { authentication, enabled, cors }
 
 </summary>
 
@@ -5510,7 +5510,7 @@ Indicates that the HTTP endpoint is enabled.
 
 <summary>
 
-cors: optional object {origins }
+cors: optional object { origins }
 
 Specifies the CORS options for the HTTP endpoint.
 
@@ -5554,7 +5554,7 @@ Indicates the current version of this stream.
 
 <summary>
 
-worker\_binding: object {enabled }
+worker\_binding: object { enabled }
 
 </summary>
 
@@ -5580,7 +5580,7 @@ formaturi
 
 <summary>
 
-format: optional object {type, decimal\_encoding, timestamp\_format, unstructured } or object {type, compression, row\_group\_bytes }
+format: optional object { type, decimal\_encoding, timestamp\_format, unstructured } or object { type, compression, row\_group\_bytes }
 
 Defines the data format of the events.
 
@@ -5592,7 +5592,7 @@ One of the following:
 
 <summary>
 
-Json object {type, decimal\_encoding, timestamp\_format, unstructured }
+Json object { type, decimal\_encoding, timestamp\_format, unstructured }
 
 </summary>
 
@@ -5604,7 +5604,7 @@ type: "json"
 
 <summary>
 
-decimal\_encoding: optional "number"or "string"or "bytes"
+decimal\_encoding: optional "number" or "string" or "bytes"
 
 </summary>
 
@@ -5630,7 +5630,7 @@ One of the following:
 
 <summary>
 
-timestamp\_format: optional "rfc3339"or "unix\_millis"
+timestamp\_format: optional "rfc3339" or "unix\_millis"
 
 </summary>
 
@@ -5660,7 +5660,7 @@ unstructured: optional boolean
 
 <summary>
 
-Parquet object {type, compression, row\_group\_bytes }
+Parquet object { type, compression, row\_group\_bytes }
 
 </summary>
 
@@ -5672,7 +5672,7 @@ type: "parquet"
 
 <summary>
 
-compression: optional "uncompressed"or "snappy"or "gzip"or 2 more
+compression: optional "uncompressed" or "snappy" or "gzip" or 2 more
 
 </summary>
 
@@ -5722,7 +5722,7 @@ minimum0
 
 <summary>
 
-schema: optional object {fields, inferred }
+schema: optional object { fields, inferred }
 
 Defines the schema of the events in the data stream.
 
@@ -5742,7 +5742,7 @@ One of the following:
 
 <summary>
 
-Int32 object {type, metadata\_key, name, 2 more }
+Int32 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -5774,7 +5774,7 @@ sql\_name: optional string
 
 <summary>
 
-Int64 object {type, metadata\_key, name, 2 more }
+Int64 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -5806,7 +5806,7 @@ sql\_name: optional string
 
 <summary>
 
-Float32 object {type, metadata\_key, name, 2 more }
+Float32 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -5838,7 +5838,7 @@ sql\_name: optional string
 
 <summary>
 
-Float64 object {type, metadata\_key, name, 2 more }
+Float64 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -5870,7 +5870,7 @@ sql\_name: optional string
 
 <summary>
 
-Bool object {type, metadata\_key, name, 2 more }
+Bool object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -5902,7 +5902,7 @@ sql\_name: optional string
 
 <summary>
 
-String object {type, metadata\_key, name, 2 more }
+String object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -5934,7 +5934,7 @@ sql\_name: optional string
 
 <summary>
 
-Binary object {type, metadata\_key, name, 2 more }
+Binary object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -5966,7 +5966,7 @@ sql\_name: optional string
 
 <summary>
 
-Timestamp object {type, metadata\_key, name, 3 more }
+Timestamp object { type, metadata\_key, name, 3 more }
 
 </summary>
 
@@ -5994,7 +5994,7 @@ sql\_name: optional string
 
 <summary>
 
-unit: optional "second"or "millisecond"or "microsecond"or "nanosecond"
+unit: optional "second" or "millisecond" or "microsecond" or "nanosecond"
 
 </summary>
 
@@ -6028,7 +6028,7 @@ One of the following:
 
 <summary>
 
-Json object {type, metadata\_key, name, 2 more }
+Json object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -6140,7 +6140,7 @@ inferred: optional boolean
 
 <summary>
 
-StreamGetResponse object {id, created\_at, http, 7 more }
+StreamGetResponse object { id, created\_at, http, 7 more }
 
 </summary>
 
@@ -6160,7 +6160,7 @@ formatdate-time
 
 <summary>
 
-http: object {authentication, enabled, cors }
+http: object { authentication, enabled, cors }
 
 </summary>
 
@@ -6180,7 +6180,7 @@ Indicates that the HTTP endpoint is enabled.
 
 <summary>
 
-cors: optional object {origins }
+cors: optional object { origins }
 
 Specifies the CORS options for the HTTP endpoint.
 
@@ -6224,7 +6224,7 @@ Indicates the current version of this stream.
 
 <summary>
 
-worker\_binding: object {enabled }
+worker\_binding: object { enabled }
 
 </summary>
 
@@ -6250,7 +6250,7 @@ formaturi
 
 <summary>
 
-format: optional object {type, decimal\_encoding, timestamp\_format, unstructured } or object {type, compression, row\_group\_bytes }
+format: optional object { type, decimal\_encoding, timestamp\_format, unstructured } or object { type, compression, row\_group\_bytes }
 
 Defines the data format of the events.
 
@@ -6262,7 +6262,7 @@ One of the following:
 
 <summary>
 
-Json object {type, decimal\_encoding, timestamp\_format, unstructured }
+Json object { type, decimal\_encoding, timestamp\_format, unstructured }
 
 </summary>
 
@@ -6274,7 +6274,7 @@ type: "json"
 
 <summary>
 
-decimal\_encoding: optional "number"or "string"or "bytes"
+decimal\_encoding: optional "number" or "string" or "bytes"
 
 </summary>
 
@@ -6300,7 +6300,7 @@ One of the following:
 
 <summary>
 
-timestamp\_format: optional "rfc3339"or "unix\_millis"
+timestamp\_format: optional "rfc3339" or "unix\_millis"
 
 </summary>
 
@@ -6330,7 +6330,7 @@ unstructured: optional boolean
 
 <summary>
 
-Parquet object {type, compression, row\_group\_bytes }
+Parquet object { type, compression, row\_group\_bytes }
 
 </summary>
 
@@ -6342,7 +6342,7 @@ type: "parquet"
 
 <summary>
 
-compression: optional "uncompressed"or "snappy"or "gzip"or 2 more
+compression: optional "uncompressed" or "snappy" or "gzip" or 2 more
 
 </summary>
 
@@ -6392,7 +6392,7 @@ minimum0
 
 <summary>
 
-schema: optional object {fields, inferred }
+schema: optional object { fields, inferred }
 
 Defines the schema of the events in the data stream.
 
@@ -6412,7 +6412,7 @@ One of the following:
 
 <summary>
 
-Int32 object {type, metadata\_key, name, 2 more }
+Int32 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -6444,7 +6444,7 @@ sql\_name: optional string
 
 <summary>
 
-Int64 object {type, metadata\_key, name, 2 more }
+Int64 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -6476,7 +6476,7 @@ sql\_name: optional string
 
 <summary>
 
-Float32 object {type, metadata\_key, name, 2 more }
+Float32 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -6508,7 +6508,7 @@ sql\_name: optional string
 
 <summary>
 
-Float64 object {type, metadata\_key, name, 2 more }
+Float64 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -6540,7 +6540,7 @@ sql\_name: optional string
 
 <summary>
 
-Bool object {type, metadata\_key, name, 2 more }
+Bool object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -6572,7 +6572,7 @@ sql\_name: optional string
 
 <summary>
 
-String object {type, metadata\_key, name, 2 more }
+String object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -6604,7 +6604,7 @@ sql\_name: optional string
 
 <summary>
 
-Binary object {type, metadata\_key, name, 2 more }
+Binary object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -6636,7 +6636,7 @@ sql\_name: optional string
 
 <summary>
 
-Timestamp object {type, metadata\_key, name, 3 more }
+Timestamp object { type, metadata\_key, name, 3 more }
 
 </summary>
 
@@ -6664,7 +6664,7 @@ sql\_name: optional string
 
 <summary>
 
-unit: optional "second"or "millisecond"or "microsecond"or "nanosecond"
+unit: optional "second" or "millisecond" or "microsecond" or "nanosecond"
 
 </summary>
 
@@ -6698,7 +6698,7 @@ One of the following:
 
 <summary>
 
-Json object {type, metadata\_key, name, 2 more }
+Json object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -6810,7 +6810,7 @@ inferred: optional boolean
 
 <summary>
 
-StreamCreateResponse object {id, created\_at, http, 7 more }
+StreamCreateResponse object { id, created\_at, http, 7 more }
 
 </summary>
 
@@ -6830,7 +6830,7 @@ formatdate-time
 
 <summary>
 
-http: object {authentication, enabled, cors }
+http: object { authentication, enabled, cors }
 
 </summary>
 
@@ -6850,7 +6850,7 @@ Indicates that the HTTP endpoint is enabled.
 
 <summary>
 
-cors: optional object {origins }
+cors: optional object { origins }
 
 Specifies the CORS options for the HTTP endpoint.
 
@@ -6894,7 +6894,7 @@ Indicates the current version of this stream.
 
 <summary>
 
-worker\_binding: object {enabled }
+worker\_binding: object { enabled }
 
 </summary>
 
@@ -6920,7 +6920,7 @@ formaturi
 
 <summary>
 
-format: optional object {type, decimal\_encoding, timestamp\_format, unstructured } or object {type, compression, row\_group\_bytes }
+format: optional object { type, decimal\_encoding, timestamp\_format, unstructured } or object { type, compression, row\_group\_bytes }
 
 Defines the data format of the events.
 
@@ -6932,7 +6932,7 @@ One of the following:
 
 <summary>
 
-Json object {type, decimal\_encoding, timestamp\_format, unstructured }
+Json object { type, decimal\_encoding, timestamp\_format, unstructured }
 
 </summary>
 
@@ -6944,7 +6944,7 @@ type: "json"
 
 <summary>
 
-decimal\_encoding: optional "number"or "string"or "bytes"
+decimal\_encoding: optional "number" or "string" or "bytes"
 
 </summary>
 
@@ -6970,7 +6970,7 @@ One of the following:
 
 <summary>
 
-timestamp\_format: optional "rfc3339"or "unix\_millis"
+timestamp\_format: optional "rfc3339" or "unix\_millis"
 
 </summary>
 
@@ -7000,7 +7000,7 @@ unstructured: optional boolean
 
 <summary>
 
-Parquet object {type, compression, row\_group\_bytes }
+Parquet object { type, compression, row\_group\_bytes }
 
 </summary>
 
@@ -7012,7 +7012,7 @@ type: "parquet"
 
 <summary>
 
-compression: optional "uncompressed"or "snappy"or "gzip"or 2 more
+compression: optional "uncompressed" or "snappy" or "gzip" or 2 more
 
 </summary>
 
@@ -7062,7 +7062,7 @@ minimum0
 
 <summary>
 
-schema: optional object {fields, inferred }
+schema: optional object { fields, inferred }
 
 Defines the schema of the events in the data stream.
 
@@ -7082,7 +7082,7 @@ One of the following:
 
 <summary>
 
-Int32 object {type, metadata\_key, name, 2 more }
+Int32 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -7114,7 +7114,7 @@ sql\_name: optional string
 
 <summary>
 
-Int64 object {type, metadata\_key, name, 2 more }
+Int64 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -7146,7 +7146,7 @@ sql\_name: optional string
 
 <summary>
 
-Float32 object {type, metadata\_key, name, 2 more }
+Float32 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -7178,7 +7178,7 @@ sql\_name: optional string
 
 <summary>
 
-Float64 object {type, metadata\_key, name, 2 more }
+Float64 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -7210,7 +7210,7 @@ sql\_name: optional string
 
 <summary>
 
-Bool object {type, metadata\_key, name, 2 more }
+Bool object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -7242,7 +7242,7 @@ sql\_name: optional string
 
 <summary>
 
-String object {type, metadata\_key, name, 2 more }
+String object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -7274,7 +7274,7 @@ sql\_name: optional string
 
 <summary>
 
-Binary object {type, metadata\_key, name, 2 more }
+Binary object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -7306,7 +7306,7 @@ sql\_name: optional string
 
 <summary>
 
-Timestamp object {type, metadata\_key, name, 3 more }
+Timestamp object { type, metadata\_key, name, 3 more }
 
 </summary>
 
@@ -7334,7 +7334,7 @@ sql\_name: optional string
 
 <summary>
 
-unit: optional "second"or "millisecond"or "microsecond"or "nanosecond"
+unit: optional "second" or "millisecond" or "microsecond" or "nanosecond"
 
 </summary>
 
@@ -7368,7 +7368,7 @@ One of the following:
 
 <summary>
 
-Json object {type, metadata\_key, name, 2 more }
+Json object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -7480,7 +7480,7 @@ inferred: optional boolean
 
 <summary>
 
-StreamUpdateResponse object {id, created\_at, http, 7 more }
+StreamUpdateResponse object { id, created\_at, http, 7 more }
 
 </summary>
 
@@ -7500,7 +7500,7 @@ formatdate-time
 
 <summary>
 
-http: object {authentication, enabled, cors }
+http: object { authentication, enabled, cors }
 
 </summary>
 
@@ -7520,7 +7520,7 @@ Indicates that the HTTP endpoint is enabled.
 
 <summary>
 
-cors: optional object {origins }
+cors: optional object { origins }
 
 Specifies the CORS options for the HTTP endpoint.
 
@@ -7564,7 +7564,7 @@ Indicates the current version of this stream.
 
 <summary>
 
-worker\_binding: object {enabled }
+worker\_binding: object { enabled }
 
 </summary>
 
@@ -7590,7 +7590,7 @@ formaturi
 
 <summary>
 
-format: optional object {type, decimal\_encoding, timestamp\_format, unstructured } or object {type, compression, row\_group\_bytes }
+format: optional object { type, decimal\_encoding, timestamp\_format, unstructured } or object { type, compression, row\_group\_bytes }
 
 Defines the data format of the events.
 
@@ -7602,7 +7602,7 @@ One of the following:
 
 <summary>
 
-Json object {type, decimal\_encoding, timestamp\_format, unstructured }
+Json object { type, decimal\_encoding, timestamp\_format, unstructured }
 
 </summary>
 
@@ -7614,7 +7614,7 @@ type: "json"
 
 <summary>
 
-decimal\_encoding: optional "number"or "string"or "bytes"
+decimal\_encoding: optional "number" or "string" or "bytes"
 
 </summary>
 
@@ -7640,7 +7640,7 @@ One of the following:
 
 <summary>
 
-timestamp\_format: optional "rfc3339"or "unix\_millis"
+timestamp\_format: optional "rfc3339" or "unix\_millis"
 
 </summary>
 
@@ -7670,7 +7670,7 @@ unstructured: optional boolean
 
 <summary>
 
-Parquet object {type, compression, row\_group\_bytes }
+Parquet object { type, compression, row\_group\_bytes }
 
 </summary>
 
@@ -7682,7 +7682,7 @@ type: "parquet"
 
 <summary>
 
-compression: optional "uncompressed"or "snappy"or "gzip"or 2 more
+compression: optional "uncompressed" or "snappy" or "gzip" or 2 more
 
 </summary>
 
@@ -7732,7 +7732,7 @@ minimum0
 
 <summary>
 
-schema: optional object {fields, inferred }
+schema: optional object { fields, inferred }
 
 Defines the schema of the events in the data stream.
 
@@ -7752,7 +7752,7 @@ One of the following:
 
 <summary>
 
-Int32 object {type, metadata\_key, name, 2 more }
+Int32 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -7784,7 +7784,7 @@ sql\_name: optional string
 
 <summary>
 
-Int64 object {type, metadata\_key, name, 2 more }
+Int64 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -7816,7 +7816,7 @@ sql\_name: optional string
 
 <summary>
 
-Float32 object {type, metadata\_key, name, 2 more }
+Float32 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -7848,7 +7848,7 @@ sql\_name: optional string
 
 <summary>
 
-Float64 object {type, metadata\_key, name, 2 more }
+Float64 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -7880,7 +7880,7 @@ sql\_name: optional string
 
 <summary>
 
-Bool object {type, metadata\_key, name, 2 more }
+Bool object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -7912,7 +7912,7 @@ sql\_name: optional string
 
 <summary>
 
-String object {type, metadata\_key, name, 2 more }
+String object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -7944,7 +7944,7 @@ sql\_name: optional string
 
 <summary>
 
-Binary object {type, metadata\_key, name, 2 more }
+Binary object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -7976,7 +7976,7 @@ sql\_name: optional string
 
 <summary>
 
-Timestamp object {type, metadata\_key, name, 3 more }
+Timestamp object { type, metadata\_key, name, 3 more }
 
 </summary>
 
@@ -8004,7 +8004,7 @@ sql\_name: optional string
 
 <summary>
 
-unit: optional "second"or "millisecond"or "microsecond"or "nanosecond"
+unit: optional "second" or "millisecond" or "microsecond" or "nanosecond"
 
 </summary>
 
@@ -8038,7 +8038,7 @@ One of the following:
 
 <summary>
 
-Json object {type, metadata\_key, name, 2 more }
+Json object { type, metadata\_key, name, 2 more }
 
 </summary>
 

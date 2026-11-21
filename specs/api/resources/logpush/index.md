@@ -52,7 +52,7 @@ POST/zones/{zone\_id}/logpush/edge/jobs
 
 <summary>
 
-InstantLogpushJob object {destination\_conf, fields, filter, 2 more }
+InstantLogpushJob object { destination\_conf, fields, filter, 2 more }
 
 </summary>
 
@@ -122,7 +122,7 @@ DELETE/{accounts\_or\_zones}/{account\_or\_zone\_id}/logpush/jobs/{job\_id}
 
 <summary>
 
-LogpushJob object {id, dataset, destination\_conf, 14 more }
+LogpushJob object { id, dataset, destination\_conf, 14 more }
 
 </summary>
 
@@ -138,7 +138,7 @@ minimum1
 
 <summary>
 
-dataset: optional "access\_requests"or "account\_abuse\_protection\_events"or "ai\_gateway\_events"or 35 more
+dataset: optional "access\_requests" or "account\_abuse\_protection\_events" or "ai\_gateway\_events" or 35 more
 
 Name of the dataset. A list of supported datasets can be found on the <a href="https://developers.cloudflare.com/logs/reference/log-fields/">Developer Docs</a>.
 
@@ -344,7 +344,7 @@ When true, excludes DDoS attack traffic from logs. This option is supported for 
 
 <summary>
 
-Deprecatedfrequency: optional "high"or "low"
+Deprecatedfrequency: optional "high" or "low"
 
 This field is deprecated. Please use <code>max_upload_*</code> parameters instead. . The frequency at which Cloudflare sends batches of logs to your destination. Setting frequency to high sends your logs in larger quantities of smaller files. Setting frequency to low sends logs in smaller quantities of larger files.
 
@@ -368,7 +368,7 @@ One of the following:
 
 <summary>
 
-kind: optional ""or "edge"
+kind: optional "" or "edge"
 
 The kind parameter (optional) is used to differentiate between Logpush and Edge Log Delivery jobs (when supported by the dataset).
 
@@ -418,7 +418,7 @@ maxLength4096
 
 <summary>
 
-max\_upload\_bytes: optional 0or number
+max\_upload\_bytes: optional 0 or number
 
 The maximum uncompressed file size of a batch of logs. This setting value must be between <code>5 MB</code> and <code>1 GB</code>, or <code>0</code> to disable it. Note that you cannot set a minimum file size; this means that log files may be much smaller than this batch size.
 
@@ -444,7 +444,7 @@ number
 
 <summary>
 
-max\_upload\_interval\_seconds: optional 0or number
+max\_upload\_interval\_seconds: optional 0 or number
 
 The maximum interval in seconds for log batches. This setting must be between 30 and 300 seconds (5 minutes), or <code>0</code> to disable it. Note that you cannot specify a minimum interval for log batches; this means that log files may be sent in shorter intervals than this.
 
@@ -470,7 +470,7 @@ number
 
 <summary>
 
-max\_upload\_records: optional 0or number
+max\_upload\_records: optional 0 or number
 
 The maximum number of log lines per batch. This setting must be between 1000 and 1,000,000 lines, or <code>0</code> to disable it. Note that you cannot specify a minimum number of log lines per batch; this means that log files may contain many fewer lines than this.
 
@@ -514,7 +514,7 @@ The structured replacement for <code>logpull_options</code>. When including this
 
 <summary>
 
-OutputOptions object {batch\_prefix, batch\_suffix, "CVE-2021-44228", 10 more }
+OutputOptions object { batch\_prefix, batch\_suffix, "CVE-2021-44228", 10 more }
 
 The structured replacement for <code>logpull_options</code>. When including this field, the <code>logpull_option</code> field will be ignored.
 
@@ -560,7 +560,7 @@ If set to true, subrequests will be merged into the parent request. Only support
 
 <summary>
 
-output\_type: optional "ndjson"or "csv"
+output\_type: optional "ndjson" or "csv"
 
 Specifies the output type, such as <code>ndjson</code> or <code>csv</code>. This sets default values for the rest of the settings, depending on the chosen output type. Some formatting rules, like string quoting, are different between output types.
 
@@ -622,7 +622,7 @@ minimum0
 
 <summary>
 
-timestamp\_format: optional "unixnano"or "unix"or "rfc3339"or 2 more
+timestamp\_format: optional "unixnano" or "unix" or "rfc3339" or 2 more
 
 String to specify the format for timestamps, such as <code>unixnano</code>, <code>unix</code>, <code>rfc3339</code>, <code>rfc3339ms</code> or <code>rfc3339ns</code>.
 
@@ -662,7 +662,7 @@ One of the following:
 
 <summary>
 
-JobDeleteResponse object {id }
+JobDeleteResponse object { id }
 
 </summary>
 
@@ -694,7 +694,7 @@ POST/{accounts\_or\_zones}/{account\_or\_zone\_id}/logpush/ownership/validate
 
 <summary>
 
-OwnershipValidation object {valid }
+OwnershipValidation object { valid }
 
 </summary>
 
@@ -710,7 +710,7 @@ valid: optional boolean
 
 <summary>
 
-OwnershipCreateResponse object {filename, message, valid }
+OwnershipCreateResponse object { filename, message, valid }
 
 </summary>
 
@@ -762,7 +762,7 @@ POST/accounts/{account\_id}/logpush/transformers/preview
 
 <summary>
 
-TransformerListResponse object {id, associated\_jobs, created\_at, 4 more }
+TransformerListResponse object { id, associated\_jobs, created\_at, 4 more }
 
 </summary>
 
@@ -778,7 +778,7 @@ minimum1
 
 <summary>
 
-associated\_jobs: optional array of object {id, name, object\_tag, object\_type }
+associated\_jobs: optional array of object { id, name, object\_tag, object\_type }
 
 Logpush jobs that reference this transformer.
 
@@ -806,7 +806,7 @@ The zone or account tag.
 
 <summary>
 
-object\_type: optional "zone"or "account"
+object\_type: optional "zone" or "account"
 
 Whether the job is zone-scoped or account-scoped.
 
@@ -876,7 +876,7 @@ formatdate-time
 
 <summary>
 
-TransformerGetResponse object {id, associated\_jobs, created\_at, 4 more }
+TransformerGetResponse object { id, associated\_jobs, created\_at, 4 more }
 
 </summary>
 
@@ -892,7 +892,7 @@ minimum1
 
 <summary>
 
-associated\_jobs: optional array of object {id, name, object\_tag, object\_type }
+associated\_jobs: optional array of object { id, name, object\_tag, object\_type }
 
 Logpush jobs that reference this transformer.
 
@@ -920,7 +920,7 @@ The zone or account tag.
 
 <summary>
 
-object\_type: optional "zone"or "account"
+object\_type: optional "zone" or "account"
 
 Whether the job is zone-scoped or account-scoped.
 
@@ -990,7 +990,7 @@ formatdate-time
 
 <summary>
 
-TransformerCreateResponse object {id, associated\_jobs, created\_at, 4 more }
+TransformerCreateResponse object { id, associated\_jobs, created\_at, 4 more }
 
 </summary>
 
@@ -1006,7 +1006,7 @@ minimum1
 
 <summary>
 
-associated\_jobs: optional array of object {id, name, object\_tag, object\_type }
+associated\_jobs: optional array of object { id, name, object\_tag, object\_type }
 
 Logpush jobs that reference this transformer.
 
@@ -1034,7 +1034,7 @@ The zone or account tag.
 
 <summary>
 
-object\_type: optional "zone"or "account"
+object\_type: optional "zone" or "account"
 
 Whether the job is zone-scoped or account-scoped.
 
@@ -1104,7 +1104,7 @@ formatdate-time
 
 <summary>
 
-TransformerUpdateResponse object {id, associated\_jobs, created\_at, 4 more }
+TransformerUpdateResponse object { id, associated\_jobs, created\_at, 4 more }
 
 </summary>
 
@@ -1120,7 +1120,7 @@ minimum1
 
 <summary>
 
-associated\_jobs: optional array of object {id, name, object\_tag, object\_type }
+associated\_jobs: optional array of object { id, name, object\_tag, object\_type }
 
 Logpush jobs that reference this transformer.
 
@@ -1148,7 +1148,7 @@ The zone or account tag.
 
 <summary>
 
-object\_type: optional "zone"or "account"
+object\_type: optional "zone" or "account"
 
 Whether the job is zone-scoped or account-scoped.
 
@@ -1218,7 +1218,7 @@ formatdate-time
 
 <summary>
 
-TransformerDeleteResponse object {id }
+TransformerDeleteResponse object { id }
 
 </summary>
 
@@ -1248,7 +1248,7 @@ GET/accounts/{account\_id}/logpush/transformers/{transformer\_id}/content
 
 <summary>
 
-ContentGetResponse object {content }
+ContentGetResponse object { content }
 
 </summary>
 
@@ -1274,7 +1274,7 @@ GET/accounts/{account\_id}/logpush/transformers/{transformer\_id}/versions
 
 <summary>
 
-VersionListResponse object {id, created\_at, version }
+VersionListResponse object { id, created\_at, version }
 
 </summary>
 
@@ -1328,7 +1328,7 @@ POST/{accounts\_or\_zones}/{account\_or\_zone\_id}/logpush/validate/origin
 
 <summary>
 
-ValidateDestinationResponse object {message, valid }
+ValidateDestinationResponse object { message, valid }
 
 </summary>
 
@@ -1348,7 +1348,7 @@ valid: optional boolean
 
 <summary>
 
-ValidateDestinationExistsResponse object {exists }
+ValidateDestinationExistsResponse object { exists }
 
 </summary>
 
@@ -1364,7 +1364,7 @@ exists: optional boolean
 
 <summary>
 
-ValidateOriginResponse object {message, valid }
+ValidateOriginResponse object { message, valid }
 
 </summary>
 

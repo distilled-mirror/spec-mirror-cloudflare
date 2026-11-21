@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`AI Gateway Write``AI Gateway Read`
+`AI Gateway Metadata Read``AI Search Index Engine``Auto Rag Write Run Engine``AI Gateway Write``AI Gateway Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -112,7 +112,7 @@ Search by id, name, filters
 
 <summary>
 
-result: array of object {id, created\_at, enable, 4 more }
+result: array of object { id, created\_at, enable, 4 more }
 
 </summary>
 
@@ -134,7 +134,7 @@ enable: boolean
 
 <summary>
 
-filters: array of object {key, operator, value }
+filters: array of object { key, operator, value }
 
 </summary>
 
@@ -142,7 +142,7 @@ filters: array of object {key, operator, value }
 
 <summary>
 
-key: "created\_at"or "request\_content\_type"or "response\_content\_type"or 10 more
+key: "created\_at" or "request\_content\_type" or "response\_content\_type" or 10 more
 
 </summary>
 
@@ -208,7 +208,7 @@ One of the following:
 
 <summary>
 
-operator: "eq"or "contains"or "lt"or "gt"
+operator: "eq" or "contains" or "lt" or "gt"
 
 </summary>
 
@@ -238,7 +238,7 @@ One of the following:
 
 <summary>
 
-value: array of stringor numberor boolean
+value: array of string or number or boolean
 
 </summary>
 

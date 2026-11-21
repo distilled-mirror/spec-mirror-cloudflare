@@ -82,7 +82,7 @@ minLength1
 
 <summary>
 
-Deprecatedresult: object {id, destination, endpoint, 3 more }
+Deprecatedresult: object { id, destination, endpoint, 3 more }
 
 \[DEPRECATED] Describes the configuration of a pipeline. Use the new streams/sinks/pipelines API instead.
 
@@ -98,7 +98,7 @@ Specifies the pipeline identifier.
 
 <summary>
 
-destination: object {batch, compression, format, 2 more }
+destination: object { batch, compression, format, 2 more }
 
 </summary>
 
@@ -106,7 +106,7 @@ destination: object {batch, compression, format, 2 more }
 
 <summary>
 
-batch: object {max\_bytes, max\_duration\_s, max\_rows }
+batch: object { max\_bytes, max\_duration\_s, max\_rows }
 
 </summary>
 
@@ -148,7 +148,7 @@ minimum100
 
 <summary>
 
-compression: object {type }
+compression: object { type }
 
 </summary>
 
@@ -156,7 +156,7 @@ compression: object {type }
 
 <summary>
 
-type: "none"or "gzip"or "deflate"
+type: "none" or "gzip" or "deflate"
 
 Specifies the desired compression algorithm and format.
 
@@ -194,7 +194,7 @@ Specifies the format of data to deliver.
 
 <summary>
 
-path: object {bucket, filename, filepath, prefix }
+path: object { bucket, filename, filepath, prefix }
 
 </summary>
 
@@ -256,7 +256,7 @@ minLength1
 
 <summary>
 
-source: array of object {format, type, authentication, cors } or object {format, type }
+source: array of object { format, type, authentication, cors } or object { format, type }
 
 </summary>
 
@@ -266,7 +266,7 @@ One of the following:
 
 <summary>
 
-CloudflarePipelinesWorkersPipelinesHTTPSource object {format, type, authentication, cors }
+CloudflarePipelinesWorkersPipelinesHTTPSource object { format, type, authentication, cors }
 
 \[DEPRECATED] HTTP source configuration. Use the new streams API instead.
 
@@ -292,7 +292,7 @@ Specifies whether authentication is required to send to this pipeline via HTTP.
 
 <summary>
 
-cors: optional object {origins }
+cors: optional object { origins }
 
 </summary>
 
@@ -314,7 +314,7 @@ Specifies allowed origins to allow Cross Origin HTTP Requests.
 
 <summary>
 
-CloudflarePipelinesWorkersPipelinesBindingSource object {format, type }
+CloudflarePipelinesWorkersPipelinesBindingSource object { format, type }
 
 \[DEPRECATED] Worker binding source configuration. Use the new streams API instead.
 

@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Workers Tail Read``Workers Scripts Write``Workers Scripts Read`
+`Workers Metadata Read-Only``Workers Editor``Workers Content Read-Only``Workers Admin``Individual Workers Metadata Read-Only``Individual Workers Editor``Individual Workers Content Read-Only``Individual Workers Admin``Granular Workers Scripts Read``Workers Tail Read``Workers Scripts Write``Workers Scripts Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -94,7 +94,7 @@ minimum1
 
 <summary>
 
-errors: array of object {code, message }
+errors: array of object { code, message }
 
 </summary>
 
@@ -114,7 +114,7 @@ message: string
 
 <summary>
 
-messages: array of object {code, message }
+messages: array of object { code, message }
 
 </summary>
 
@@ -134,7 +134,7 @@ message: string
 
 <summary>
 
-result: array of object {id, class\_name, created\_on, 7 more }
+result: array of object { id, class\_name, created\_on, 7 more }
 
 </summary>
 
@@ -162,7 +162,7 @@ has\_dag: boolean
 
 <summary>
 
-language: "javascript"or "python"
+language: "javascript" or "python"
 
 The programming language of the workflow implementation.
 
@@ -198,7 +198,7 @@ formatuuid
 
 <summary>
 
-concurrency: optional object {limit }
+concurrency: optional object { limit }
 
 </summary>
 
@@ -220,7 +220,7 @@ minimum1
 
 <summary>
 
-default\_retention: optional object {error\_retention, success\_retention }
+default\_retention: optional object { error\_retention, success\_retention }
 
 </summary>
 
@@ -252,7 +252,7 @@ minimum-9007199254740991
 
 <summary>
 
-limits: optional object {steps }
+limits: optional object { steps }
 
 </summary>
 
@@ -280,7 +280,7 @@ success: true
 
 <summary>
 
-result\_info: optional object {count, per\_page, total\_count, 3 more }
+result\_info: optional object { count, per\_page, total\_count, 3 more }
 
 </summary>
 

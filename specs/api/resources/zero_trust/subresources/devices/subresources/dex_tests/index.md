@@ -46,7 +46,7 @@ DELETE/accounts/{account\_id}/dex/devices/dex\_tests/{dex\_test\_id}
 
 <summary>
 
-SchemaData object {host, kind, method }
+SchemaData object { host, kind, method }
 
 The configuration object which contains the details for the WARP client to conduct the test.
 
@@ -62,7 +62,7 @@ The desired endpoint to test.
 
 <summary>
 
-kind: "http"or "traceroute"
+kind: "http" or "traceroute"
 
 The type of test.
 
@@ -96,7 +96,7 @@ The HTTP request method type.
 
 <summary>
 
-SchemaHTTP object {data, enabled, interval, 7 more }
+SchemaHTTP object { data, enabled, interval, 7 more }
 
 </summary>
 
@@ -142,7 +142,7 @@ Additional details about the test.
 
 <summary>
 
-target\_policies: optional array of object {id, default, name }
+target\_policies: optional array of object { id, default, name }
 
 DEX rules targeted by this test
 
@@ -200,7 +200,7 @@ formatdate-time
 
 <summary>
 
-DEXTestDeleteResponse object {dex\_tests }
+DEXTestDeleteResponse object { dex\_tests }
 
 </summary>
 
@@ -254,7 +254,7 @@ Additional details about the test.
 
 <summary>
 
-target\_policies: optional array of object {id, default, name }
+target\_policies: optional array of object { id, default, name }
 
 DEX rules targeted by this test
 

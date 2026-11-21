@@ -82,7 +82,7 @@ Unique identifier for a message retrieved from investigation.
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -104,7 +104,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -124,7 +124,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -146,7 +146,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -166,7 +166,7 @@ pointer: optional string
 
 <summary>
 
-result: object {action, attachments, findings, 6 more }
+result: object { action, attachments, findings, 6 more }
 
 </summary>
 
@@ -178,7 +178,7 @@ action: string
 
 <summary>
 
-attachments: array of object {size, content\_type, detection, 6 more }
+attachments: array of object { size, content\_type, detection, 6 more }
 
 </summary>
 
@@ -200,7 +200,7 @@ MIME type of the attachment.
 
 <summary>
 
-detection: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+detection: optional "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 Detection result for this attachment.
 
@@ -296,7 +296,7 @@ SHA256 hash of the attachment.
 
 <summary>
 
-findings: array of object {attachment, detail, detection, 6 more }
+findings: array of object { attachment, detail, detection, 6 more }
 
 </summary>
 
@@ -312,7 +312,7 @@ detail: optional string
 
 <summary>
 
-detection: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+detection: optional "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 Detection result associated with this finding.
 
@@ -398,7 +398,7 @@ value: optional string
 
 <summary>
 
-headers: array of object {name, value }
+headers: array of object { name, value }
 
 </summary>
 
@@ -418,7 +418,7 @@ value: string
 
 <summary>
 
-links: array of object {href, text }
+links: array of object { href, text }
 
 </summary>
 
@@ -438,7 +438,7 @@ text: optional string
 
 <summary>
 
-sender\_info: object {as\_name, as\_number, geo, 2 more }
+sender\_info: object { as\_name, as\_number, geo, 2 more }
 
 </summary>
 
@@ -474,7 +474,7 @@ pld: optional string
 
 <summary>
 
-threat\_categories: array of object {id, description, name }
+threat\_categories: array of object { id, description, name }
 
 </summary>
 
@@ -498,7 +498,7 @@ name: optional string
 
 <summary>
 
-validation: object {comment, dkim, dmarc, spf }
+validation: object { comment, dkim, dmarc, spf }
 
 </summary>
 
@@ -510,7 +510,7 @@ comment: optional string
 
 <summary>
 
-dkim: optional "pass"or "neutral"or "fail"or 2 more
+dkim: optional "pass" or "neutral" or "fail" or 2 more
 
 </summary>
 
@@ -544,7 +544,7 @@ One of the following:
 
 <summary>
 
-dmarc: optional "pass"or "neutral"or "fail"or 2 more
+dmarc: optional "pass" or "neutral" or "fail" or 2 more
 
 </summary>
 
@@ -578,7 +578,7 @@ One of the following:
 
 <summary>
 
-spf: optional "pass"or "neutral"or "fail"or 2 more
+spf: optional "pass" or "neutral" or "fail" or 2 more
 
 </summary>
 
@@ -616,7 +616,7 @@ One of the following:
 
 <summary>
 
-final\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+final\_disposition: optional "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 The verdict Email Security assigns to a message.
 

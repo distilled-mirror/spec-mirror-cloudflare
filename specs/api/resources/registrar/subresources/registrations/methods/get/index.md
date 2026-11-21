@@ -78,7 +78,7 @@ Provides a fully qualified domain name (FQDN), including the extension (e.g., `e
 
 <summary>
 
-errors: array of object {code, message, source }
+errors: array of object { code, message, source }
 
 </summary>
 
@@ -96,7 +96,7 @@ message: string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 Location of the invalid value that caused the error.
 
@@ -120,7 +120,7 @@ JSON Pointer to the invalid or missing request value.
 
 <summary>
 
-messages: array of object {code, message, source }
+messages: array of object { code, message, source }
 
 </summary>
 
@@ -138,7 +138,7 @@ message: string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 Location of the invalid value that caused the error.
 
@@ -206,7 +206,7 @@ Whether the domain is locked for transfer.
 
 <summary>
 
-privacy\_mode: "off"or "redaction"
+privacy\_mode: "off" or "redaction"
 
 Current WHOIS privacy mode for the registration.
 
@@ -230,7 +230,7 @@ One of the following:
 
 <summary>
 
-status: "active"or "registration\_pending"or "transfer\_pending"or 4 more
+status: "active" or "registration\_pending" or "transfer\_pending" or 4 more
 
 Current registration status.
 

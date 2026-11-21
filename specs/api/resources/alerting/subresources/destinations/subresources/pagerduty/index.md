@@ -42,7 +42,7 @@ GET/accounts/{account\_id}/alerting/v3/destinations/pagerduty/connect/{token\_id
 
 <summary>
 
-Pagerduty object {id, name }
+Pagerduty object { id, name }
 
 </summary>
 
@@ -68,7 +68,7 @@ The name of the pagerduty service.
 
 <summary>
 
-PagerdutyCreateResponse object {id }
+PagerdutyCreateResponse object { id }
 
 </summary>
 
@@ -88,7 +88,7 @@ maxLength32
 
 <summary>
 
-PagerdutyDeleteResponse object {errors, messages, success }
+PagerdutyDeleteResponse object { errors, messages, success }
 
 </summary>
 
@@ -96,7 +96,7 @@ PagerdutyDeleteResponse object {errors, messages, success }
 
 <summary>
 
-errors: array of object {message, code }
+errors: array of object { message, code }
 
 </summary>
 
@@ -118,7 +118,7 @@ minimum1000
 
 <summary>
 
-messages: array of object {message, code }
+messages: array of object { message, code }
 
 </summary>
 
@@ -150,7 +150,7 @@ Whether the API call was successful
 
 <summary>
 
-PagerdutyLinkResponse object {id }
+PagerdutyLinkResponse object { id }
 
 </summary>
 

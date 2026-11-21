@@ -64,7 +64,7 @@ minLength32
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -86,7 +86,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -106,7 +106,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -128,7 +128,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -154,7 +154,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, created\_on, email\_domain, 4 more }
+result: optional object { id, created\_on, email\_domain, 4 more }
 
 </summary>
 
@@ -202,7 +202,7 @@ Controls the display of FedRAMP language to the user during SSO login
 
 <summary>
 
-verification: optional object {code, status }
+verification: optional object { code, status }
 
 </summary>
 
@@ -216,7 +216,7 @@ DNS verification code. Add this entire string to the DNS TXT record of the email
 
 <summary>
 
-status: optional "awaiting"or "pending"or "failed"or "verified"
+status: optional "awaiting" or "pending" or "failed" or "verified"
 
 The status of the verification code from the verification process.
 

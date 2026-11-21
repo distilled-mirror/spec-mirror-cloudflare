@@ -98,7 +98,7 @@ minLength1
 
 <summary>
 
-messages: array of object {code, message, error\_chain }
+messages: array of object { code, message, error\_chain }
 
 </summary>
 
@@ -126,7 +126,7 @@ Optional upstream error context for APIv4 errors that wrap downstream service fa
 
 <summary>
 
-result: object {id, cidr, prefix\_id, region\_key }
+result: object { id, cidr, prefix\_id, region\_key }
 
 </summary>
 
@@ -170,7 +170,7 @@ success: boolean
 
 <summary>
 
-errors: optional array of object {code, message, error\_chain }
+errors: optional array of object { code, message, error\_chain }
 
 maxLength0
 

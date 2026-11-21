@@ -58,7 +58,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Workers AI Write``Workers AI Read`
+`AI Search Index Engine``Auto Rag Write Run Engine``Workers AI Write``Workers AI Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -80,7 +80,7 @@ Workers AI model identifier, including its namespace and model name.
 
 <summary>
 
-body: optional object {text } or object {prompt, guidance, height, 8 more } or object {prompt, lang } or 12 more
+body: optional object { text } or object { prompt, guidance, height, 8 more } or object { prompt, lang } or 12 more
 
 </summary>
 
@@ -90,7 +90,7 @@ One of the following:
 
 <summary>
 
-TextClassification object {text }
+TextClassification object { text }
 
 </summary>
 
@@ -110,7 +110,7 @@ minLength1
 
 <summary>
 
-TextToImage object {prompt, guidance, height, 8 more }
+TextToImage object { prompt, guidance, height, 8 more }
 
 </summary>
 
@@ -200,7 +200,7 @@ minimum256
 
 <summary>
 
-TextToSpeech object {prompt, lang }
+TextToSpeech object { prompt, lang }
 
 </summary>
 
@@ -226,7 +226,7 @@ The speech language (e.g., ‘en’ for English, ‘fr’ for French). Defaults 
 
 <summary>
 
-TextEmbeddings object {text }
+TextEmbeddings object { text }
 
 </summary>
 
@@ -234,7 +234,7 @@ TextEmbeddings object {text }
 
 <summary>
 
-text: stringor array of string
+text: string or array of string
 
 The text to embed
 
@@ -266,7 +266,7 @@ Batch of text values to embed
 
 <summary>
 
-AutomaticSpeechRecognition object {audio, source\_lang, target\_lang }
+AutomaticSpeechRecognition object { audio, source\_lang, target\_lang }
 
 </summary>
 
@@ -296,7 +296,7 @@ The language to translate the transcription into. Currently only English is supp
 
 <summary>
 
-ImageClassification object {image }
+ImageClassification object { image }
 
 </summary>
 
@@ -314,7 +314,7 @@ An array of integers that represent the image data constrained to 8-bit unsigned
 
 <summary>
 
-ObjectDetection object {image }
+ObjectDetection object { image }
 
 </summary>
 
@@ -332,7 +332,7 @@ An array of integers that represent the image data constrained to 8-bit unsigned
 
 <summary>
 
-Prompt object {prompt, frequency\_penalty, lora, 10 more }
+Prompt object { prompt, frequency\_penalty, lora, 10 more }
 
 </summary>
 
@@ -396,7 +396,7 @@ minimum0
 
 <summary>
 
-response\_format: optional object {json\_schema, type }
+response\_format: optional object { json\_schema, type }
 
 </summary>
 
@@ -408,7 +408,7 @@ json\_schema: optional unknown
 
 <summary>
 
-type: optional "json\_object"or "json\_schema"
+type: optional "json\_object" or "json\_schema"
 
 </summary>
 
@@ -484,7 +484,7 @@ minimum0.001
 
 <summary>
 
-TextGeneration object {messages, frequency\_penalty, functions, 11 more }
+TextGeneration object { messages, frequency\_penalty, functions, 11 more }
 
 </summary>
 
@@ -492,7 +492,7 @@ TextGeneration object {messages, frequency\_penalty, functions, 11 more }
 
 <summary>
 
-messages: array of object {content, role }
+messages: array of object { content, role }
 
 An array of message objects representing the conversation history.
 
@@ -502,7 +502,7 @@ An array of message objects representing the conversation history.
 
 <summary>
 
-content: stringor array of object {text, type }
+content: string or array of object { text, type }
 
 The content of the message as a string.
 
@@ -520,7 +520,7 @@ The content of the message as a string.
 
 <summary>
 
-array of object {text, type }
+array of object { text, type }
 
 Array of text content parts.
 
@@ -570,7 +570,7 @@ minimum-2
 
 <summary>
 
-functions: optional array of object {code, name }
+functions: optional array of object { code, name }
 
 </summary>
 
@@ -622,7 +622,7 @@ minimum0
 
 <summary>
 
-response\_format: optional object {json\_schema, type }
+response\_format: optional object { json\_schema, type }
 
 </summary>
 
@@ -634,7 +634,7 @@ json\_schema: optional unknown
 
 <summary>
 
-type: optional "json\_object"or "json\_schema"
+type: optional "json\_object" or "json\_schema"
 
 </summary>
 
@@ -686,7 +686,7 @@ minimum0
 
 <summary>
 
-tools: optional array of object {description, name, parameters } or object {function, type }
+tools: optional array of object { description, name, parameters } or object { function, type }
 
 A list of tools available for the assistant to use.
 
@@ -698,7 +698,7 @@ One of the following:
 
 <summary>
 
-object {description, name, parameters }
+object { description, name, parameters }
 
 </summary>
 
@@ -718,7 +718,7 @@ The name of the tool. More descriptive the better.
 
 <summary>
 
-parameters: object {properties, type, required }
+parameters: object { properties, type, required }
 
 Schema defining the parameters accepted by the tool.
 
@@ -728,7 +728,7 @@ Schema defining the parameters accepted by the tool.
 
 <summary>
 
-properties: map\[object {description, type } ]
+properties: map\[object { description, type } ]
 
 Definitions of each parameter.
 
@@ -774,7 +774,7 @@ List of required parameter names.
 
 <summary>
 
-Function object {function, type }
+Function object { function, type }
 
 </summary>
 
@@ -782,7 +782,7 @@ Function object {function, type }
 
 <summary>
 
-function: object {description, name, parameters }
+function: object { description, name, parameters }
 
 Details of the function tool.
 
@@ -804,7 +804,7 @@ The name of the function.
 
 <summary>
 
-parameters: object {properties, type, required }
+parameters: object { properties, type, required }
 
 Schema defining the parameters accepted by the function.
 
@@ -814,7 +814,7 @@ Schema defining the parameters accepted by the function.
 
 <summary>
 
-properties: map\[object {description, type } ]
+properties: map\[object { description, type } ]
 
 Definitions of each parameter.
 
@@ -898,7 +898,7 @@ minimum0.001
 
 <summary>
 
-Translation object {target\_lang, text, source\_lang }
+Translation object { target\_lang, text, source\_lang }
 
 </summary>
 
@@ -930,7 +930,7 @@ The language code of the source text (e.g., ‘en’ for English). Defaults to �
 
 <summary>
 
-Summarization object {input\_text, max\_length }
+Summarization object { input\_text, max\_length }
 
 </summary>
 
@@ -956,7 +956,7 @@ The maximum length of the generated summary in tokens
 
 <summary>
 
-ImageToText object {image, frequency\_penalty, max\_tokens, 8 more }
+ImageToText object { image, frequency\_penalty, max\_tokens, 8 more }
 
 </summary>
 
@@ -1034,7 +1034,7 @@ Controls the creativity of the AI’s responses by adjusting how many possible w
 
 <summary>
 
-object {image, prompt, frequency\_penalty, 8 more }
+object { image, prompt, frequency\_penalty, 8 more }
 
 </summary>
 
@@ -1114,7 +1114,7 @@ Controls the creativity of the AI’s responses by adjusting how many possible w
 
 <summary>
 
-ImageTextToText object {image, messages, frequency\_penalty, 8 more }
+ImageTextToText object { image, messages, frequency\_penalty, 8 more }
 
 </summary>
 
@@ -1128,7 +1128,7 @@ Image in base64 encoded format.
 
 <summary>
 
-messages: array of object {content, role }
+messages: array of object { content, role }
 
 An array of message objects representing the conversation history.
 
@@ -1138,7 +1138,7 @@ An array of message objects representing the conversation history.
 
 <summary>
 
-content: stringor array of object {type, image\_url, text }
+content: string or array of object { type, image\_url, text }
 
 The content of the message as a string.
 
@@ -1156,7 +1156,7 @@ The content of the message as a string.
 
 <summary>
 
-array of object {type, image\_url, text }
+array of object { type, image\_url, text }
 
 Array of content parts (text, image\_url, etc.).
 
@@ -1172,7 +1172,7 @@ Type of the content part (e.g. ‘text’, ‘image\_url’).
 
 <summary>
 
-image\_url: optional object {url }
+image\_url: optional object { url }
 
 Image URL object (when type is ‘image\_url’).
 
@@ -1274,7 +1274,7 @@ Controls the creativity of the AI’s responses by adjusting how many possible w
 
 <summary>
 
-MultimodalEmbeddings object {image, text }
+MultimodalEmbeddings object { image, text }
 
 </summary>
 
@@ -1304,7 +1304,7 @@ text: optional array of string
 
 <summary>
 
-result: optional array of object {label, score } or stringor object {audio } or 12 more
+result: optional array of object { label, score } or string or object { audio } or 12 more
 
 An array of classification results for the input text
 
@@ -1316,7 +1316,7 @@ One of the following:
 
 <summary>
 
-TextClassification = array of object {label, score }
+TextClassification = array of object { label, score }
 
 An array of classification results for the input text
 
@@ -1348,7 +1348,7 @@ The generated image in PNG format
 
 <summary>
 
-Audio object {audio }
+Audio object { audio }
 
 </summary>
 
@@ -1372,7 +1372,7 @@ The generated audio in MP3 format
 
 <summary>
 
-TextEmbeddings object {data, shape }
+TextEmbeddings object { data, shape }
 
 </summary>
 
@@ -1394,7 +1394,7 @@ shape: optional array of number
 
 <summary>
 
-AutomaticSpeechRecognition object {text, vtt, word\_count, words }
+AutomaticSpeechRecognition object { text, vtt, word\_count, words }
 
 </summary>
 
@@ -1416,7 +1416,7 @@ word\_count: optional number
 
 <summary>
 
-words: optional array of object {end, start, word }
+words: optional array of object { end, start, word }
 
 </summary>
 
@@ -1448,7 +1448,7 @@ word: optional string
 
 <summary>
 
-ImageClassification = array of object {label, score }
+ImageClassification = array of object { label, score }
 
 </summary>
 
@@ -1472,7 +1472,7 @@ A confidence value, between 0 and 1, indicating how certain the model is about t
 
 <summary>
 
-ObjectDetection = array of object {box, label, score }
+ObjectDetection = array of object { box, label, score }
 
 An array of detected objects within the input image
 
@@ -1482,7 +1482,7 @@ An array of detected objects within the input image
 
 <summary>
 
-box: optional object {xmax, xmin, ymax, ymin }
+box: optional object { xmax, xmin, ymax, ymin }
 
 Coordinates defining the bounding box around the detected object
 
@@ -1536,7 +1536,7 @@ Confidence score indicating the likelihood that the detection is correct
 
 <summary>
 
-object {response, tool\_calls, usage }
+object { response, tool\_calls, usage }
 
 </summary>
 
@@ -1550,7 +1550,7 @@ The generated text response from the model
 
 <summary>
 
-tool\_calls: optional array of object {arguments, name }
+tool\_calls: optional array of object { arguments, name }
 
 An array of tool calls requests made during the response generation
 
@@ -1576,7 +1576,7 @@ The name of the tool to be called
 
 <summary>
 
-usage: optional object {completion\_tokens, prompt\_tokens, total\_tokens }
+usage: optional object { completion\_tokens, prompt\_tokens, total\_tokens }
 
 Usage statistics for the inference request
 
@@ -1616,7 +1616,7 @@ string
 
 <summary>
 
-Translation object {translated\_text }
+Translation object { translated\_text }
 
 </summary>
 
@@ -1634,7 +1634,7 @@ The translated text in the target language
 
 <summary>
 
-Summarization object {summary }
+Summarization object { summary }
 
 </summary>
 
@@ -1652,7 +1652,7 @@ The summarized version of the input text
 
 <summary>
 
-ImageToText object {description }
+ImageToText object { description }
 
 </summary>
 
@@ -1668,7 +1668,7 @@ description: optional string
 
 <summary>
 
-ImageTextToText object {description }
+ImageTextToText object { description }
 
 </summary>
 
@@ -1684,7 +1684,7 @@ description: optional string
 
 <summary>
 
-MultimodalEmbeddings object {data, shape }
+MultimodalEmbeddings object { data, shape }
 
 </summary>
 

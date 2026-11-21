@@ -114,7 +114,7 @@ GET/accounts/{account\_id}/access/logs/jit\_requests/{knock\_request\_id}
 
 <summary>
 
-JitRequestListResponse object {app\_aud, app\_hostname, approvals\_received, 7 more }
+JitRequestListResponse object { app\_aud, app\_hostname, approvals\_received, 7 more }
 
 </summary>
 
@@ -172,7 +172,7 @@ formatemail
 
 <summary>
 
-status: optional "PENDING"or "APPROVED"or "DENIED"or 2 more
+status: optional "PENDING" or "APPROVED" or "DENIED" or 2 more
 
 JIT request status. <code>SPENT</code> is deprecated and interpreted as <code>APPROVED</code>.
 
@@ -212,7 +212,7 @@ One of the following:
 
 <summary>
 
-JitRequestGetResponse object {app\_aud, app\_hostname, approvals\_received, 8 more }
+JitRequestGetResponse object { app\_aud, app\_hostname, approvals\_received, 8 more }
 
 </summary>
 
@@ -248,7 +248,7 @@ formatdate-time
 
 <summary>
 
-events: optional array of object {actor\_email, actor\_idp, actor\_uuid, 6 more }
+events: optional array of object { actor\_email, actor\_idp, actor\_uuid, 6 more }
 
 </summary>
 
@@ -294,7 +294,7 @@ formatdate-time
 
 <summary>
 
-type: optional "CREATED"or "APPROVER\_DECISION"or "COMMITTED"or 3 more
+type: optional "CREATED" or "APPROVER\_DECISION" or "COMMITTED" or 3 more
 
 </summary>
 
@@ -358,7 +358,7 @@ formatemail
 
 <summary>
 
-status: optional "PENDING"or "APPROVED"or "DENIED"or 2 more
+status: optional "PENDING" or "APPROVED" or "DENIED" or 2 more
 
 JIT request status. <code>SPENT</code> is deprecated and interpreted as <code>APPROVED</code>.
 
@@ -402,7 +402,7 @@ One of the following:
 
 <summary>
 
-AccessRequest object {action, allowed, app\_domain, 6 more }
+AccessRequest object { action, allowed, app\_domain, 6 more }
 
 </summary>
 
@@ -480,7 +480,7 @@ GET/accounts/{account\_id}/access/logs/scim/updates
 
 <summary>
 
-UpdateListResponse object {cf\_resource\_id, error\_description, idp\_id, 8 more }
+UpdateListResponse object { cf\_resource\_id, error\_description, idp\_id, 8 more }
 
 </summary>
 

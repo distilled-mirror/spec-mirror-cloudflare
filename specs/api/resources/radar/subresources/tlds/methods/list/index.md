@@ -64,7 +64,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -120,7 +120,7 @@ maxLength100
 
 <summary>
 
-tldType: optional "GENERIC"or "COUNTRY\_CODE"or "SPECIAL\_USE"or 3 more
+tldType: optional "GENERIC" or "COUNTRY\_CODE" or "SPECIAL\_USE" or 3 more
 
 Filters results by TLD type. GENERIC\_RESTRICTED and SPONSORED are deprecated and return no results, as IANA consolidated them into GENERIC. INFRASTRUCTURE is deprecated, as IANA reclassified .arpa as SPECIAL\_USE.
 
@@ -162,7 +162,7 @@ One of the following:
 
 <summary>
 
-result: object {tlds }
+result: object { tlds }
 
 </summary>
 
@@ -170,7 +170,7 @@ result: object {tlds }
 
 <summary>
 
-tlds: array of object {manager, tld, type }
+tlds: array of object { manager, tld, type }
 
 </summary>
 

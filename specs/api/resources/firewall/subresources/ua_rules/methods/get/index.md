@@ -104,7 +104,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -146,7 +146,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -166,7 +166,7 @@ pointer: optional string
 
 <summary>
 
-result: object {id, configuration, description, 2 more }
+result: object { id, configuration, description, 2 more }
 
 </summary>
 
@@ -182,7 +182,7 @@ maxLength32
 
 <summary>
 
-configuration: optional object {target, value }
+configuration: optional object { target, value }
 
 The configuration object for the current rule.
 
@@ -216,7 +216,7 @@ maxLength1024
 
 <summary>
 
-mode: optional "block"or "challenge"or "js\_challenge"or "managed\_challenge"
+mode: optional "block" or "challenge" or "js\_challenge" or "managed\_challenge"
 
 The action to apply to a matched request.
 

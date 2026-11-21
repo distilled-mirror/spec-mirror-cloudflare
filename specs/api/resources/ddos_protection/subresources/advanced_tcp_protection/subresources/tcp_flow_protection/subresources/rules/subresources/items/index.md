@@ -42,7 +42,7 @@ DELETE/accounts/{account\_id}/magic/advanced\_tcp\_protection/configs/tcp\_flow\
 
 <summary>
 
-ItemGetResponse object {id, burst\_sensitivity, created\_on, 5 more }
+ItemGetResponse object { id, burst\_sensitivity, created\_on, 5 more }
 
 </summary>
 
@@ -106,7 +106,7 @@ The scope for the TCP Flow Protection rule. Must be one of ‘global’, ‘regi
 
 <summary>
 
-ItemEditResponse object {id, burst\_sensitivity, created\_on, 5 more }
+ItemEditResponse object { id, burst\_sensitivity, created\_on, 5 more }
 
 </summary>
 
@@ -170,7 +170,7 @@ The scope for the TCP Flow Protection rule. Must be one of ‘global’, ‘regi
 
 <summary>
 
-ItemDeleteResponse object {errors, messages, success }
+ItemDeleteResponse object { errors, messages, success }
 
 </summary>
 
@@ -178,7 +178,7 @@ ItemDeleteResponse object {errors, messages, success }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -200,7 +200,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -220,7 +220,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -242,7 +242,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 

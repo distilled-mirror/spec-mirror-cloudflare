@@ -92,7 +92,7 @@ formatdate-time
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -114,7 +114,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -134,7 +134,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -156,7 +156,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -176,7 +176,7 @@ pointer: optional string
 
 <summary>
 
-query: object {since, until }
+query: object { since, until }
 
 </summary>
 
@@ -204,7 +204,7 @@ formatdate-time
 
 <summary>
 
-result: array of object {totals, zone\_id }
+result: array of object { totals, zone\_id }
 
 </summary>
 
@@ -212,7 +212,7 @@ result: array of object {totals, zone\_id }
 
 <summary>
 
-totals: object {bandwidth }
+totals: object { bandwidth }
 
 </summary>
 
@@ -220,7 +220,7 @@ totals: object {bandwidth }
 
 <summary>
 
-bandwidth: object {all, egress, ingress }
+bandwidth: object { all, egress, ingress }
 
 </summary>
 
@@ -272,7 +272,7 @@ Whether the API call was successful.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

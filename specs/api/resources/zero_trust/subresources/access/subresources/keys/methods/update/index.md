@@ -58,7 +58,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Access: Organizations, Identity Providers, and Groups Write`
+`Access: Keys Write``Zero Trust Write``Access: Organizations, Identity Providers, and Groups Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -88,7 +88,7 @@ minimum21
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -110,7 +110,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -130,7 +130,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -152,7 +152,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -178,7 +178,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {days\_until\_next\_rotation, key\_rotation\_interval\_days, last\_key\_rotation\_at }
+result: optional object { days\_until\_next\_rotation, key\_rotation\_interval\_days, last\_key\_rotation\_at }
 
 </summary>
 

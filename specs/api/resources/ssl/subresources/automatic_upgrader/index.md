@@ -32,7 +32,7 @@ PATCH/zones/{zone\_id}/settings/ssl\_automatic\_mode
 
 <summary>
 
-AutomaticUpgraderGetResponse object {id, editable, modified\_on, 2 more }
+AutomaticUpgraderGetResponse object { id, editable, modified\_on, 2 more }
 
 </summary>
 
@@ -58,7 +58,7 @@ formatdate-time
 
 <summary>
 
-value: "auto"or "custom"
+value: "auto" or "custom"
 
 Current setting of the automatic SSL/TLS.
 
@@ -94,7 +94,7 @@ formatdate-time
 
 <summary>
 
-AutomaticUpgraderPatchResponse object {id, editable, modified\_on, 2 more }
+AutomaticUpgraderPatchResponse object { id, editable, modified\_on, 2 more }
 
 </summary>
 
@@ -120,7 +120,7 @@ formatdate-time
 
 <summary>
 
-value: "auto"or "custom"
+value: "auto" or "custom"
 
 Current setting of the automatic SSL/TLS.
 

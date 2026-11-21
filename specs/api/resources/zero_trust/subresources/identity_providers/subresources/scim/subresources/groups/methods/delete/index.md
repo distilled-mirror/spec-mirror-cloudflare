@@ -60,7 +60,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Access: Organizations, Identity Providers, and Groups Write`
+`Individual Access Identity Provider Admin``Access: Identity Providers Write``Zero Trust Write``Access: Organizations, Identity Providers, and Groups Write`
 
 ##### P ath ParametersExpand Collapse
 

@@ -90,7 +90,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -132,7 +132,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -152,7 +152,7 @@ pointer: optional string
 
 <summary>
 
-result: object {enabled }
+result: object { enabled }
 
 AI Security for Apps enablement status for a zone.
 

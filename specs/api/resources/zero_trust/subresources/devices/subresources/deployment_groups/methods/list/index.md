@@ -34,6 +34,10 @@ The preferred authorization scheme for interacting with the Cloudflare API. [Cre
 
 **Example:**`Authorization: Bearer Sn3lZJTBX6kkg7OdcBUAxOO963GEIyGQqnFTOFYY`
 
+##### Accepted Permissions (at least one required)
+
+`Zero Trust Read``Zero Trust Write`
+
 ##### P ath ParametersExpand Collapse
 
 account\_id: string
@@ -66,7 +70,7 @@ minimum1
 
 <summary>
 
-errors: array of object {code, message }
+errors: array of object { code, message }
 
 </summary>
 
@@ -86,7 +90,7 @@ message: string
 
 <summary>
 
-messages: array of object {code, message }
+messages: array of object { code, message }
 
 </summary>
 
@@ -142,7 +146,7 @@ The RFC3339Nano timestamp when the deployment group was last updated.
 
 <summary>
 
-version\_config: array of object {target\_environment, version }
+version\_config: array of object { target\_environment, version }
 
 Contains version configurations for different target environments.
 
@@ -178,7 +182,7 @@ Contains a list of policy IDs assigned to this deployment group.
 
 <summary>
 
-result\_info: object {count, page, per\_page, 2 more }
+result\_info: object { count, page, per\_page, 2 more }
 
 </summary>
 

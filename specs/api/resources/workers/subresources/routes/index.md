@@ -44,7 +44,7 @@ DELETE/zones/{zone\_id}/workers/routes/{route\_id}
 
 <summary>
 
-RouteListResponse object {id, pattern, script }
+RouteListResponse object { id, pattern, script }
 
 </summary>
 
@@ -76,7 +76,7 @@ Name of the script to run if the route matches.
 
 <summary>
 
-RouteGetResponse object {id, pattern, script }
+RouteGetResponse object { id, pattern, script }
 
 </summary>
 
@@ -108,7 +108,7 @@ Name of the script to run if the route matches.
 
 <summary>
 
-RouteCreateResponse object {id, pattern, script }
+RouteCreateResponse object { id, pattern, script }
 
 </summary>
 
@@ -140,7 +140,7 @@ Name of the script to run if the route matches.
 
 <summary>
 
-RouteUpdateResponse object {id, pattern, script }
+RouteUpdateResponse object { id, pattern, script }
 
 </summary>
 
@@ -172,7 +172,7 @@ Name of the script to run if the route matches.
 
 <summary>
 
-RouteDeleteResponse object {id }
+RouteDeleteResponse object { id }
 
 </summary>
 

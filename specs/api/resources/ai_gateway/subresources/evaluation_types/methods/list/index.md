@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`AI Gateway Write``AI Gateway Read`
+`AI Gateway Metadata Read``AI Search Index Engine``Auto Rag Write Run Engine``AI Gateway Write``AI Gateway Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -74,7 +74,7 @@ order\_by: optional string
 
 <summary>
 
-order\_by\_direction: optional "asc"or "desc"
+order\_by\_direction: optional "asc" or "desc"
 
 </summary>
 
@@ -114,7 +114,7 @@ minimum5
 
 <summary>
 
-result: array of object {id, created\_at, description, 5 more }
+result: array of object { id, created\_at, description, 5 more }
 
 </summary>
 
@@ -162,7 +162,7 @@ type: string
 
 <summary>
 
-result\_info: object {count, page, per\_page, total\_count }
+result\_info: object { count, page, per\_page, total\_count }
 
 </summary>
 

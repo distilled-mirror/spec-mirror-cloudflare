@@ -52,7 +52,7 @@ report\_param: string
 
 <summary>
 
-result: object {id, cdate, domain, 8 more }
+result: object { id, cdate, domain, 8 more }
 
 </summary>
 
@@ -78,7 +78,7 @@ Domain that relates to the report.
 
 <summary>
 
-mitigation\_summary: object {accepted\_url\_count, active\_count, external\_host\_notified, 2 more }
+mitigation\_summary: object { accepted\_url\_count, active\_count, external\_host\_notified, 2 more }
 
 A summary of the mitigations related to this report.
 
@@ -122,7 +122,7 @@ How many mitigations are pending their effective date.
 
 <summary>
 
-status: "accepted"or "in\_review"
+status: "accepted" or "in\_review"
 
 An enum value that represents the status of an abuse record
 
@@ -146,7 +146,7 @@ One of the following:
 
 <summary>
 
-type: "PHISH"or "GEN"or "THREAT"or 6 more
+type: "PHISH" or "GEN" or "THREAT" or 6 more
 
 The abuse report type
 
@@ -216,7 +216,7 @@ Original work / Targeted brand in the alleged abuse.
 
 <summary>
 
-submitter: optional object {company, email, name, telephone }
+submitter: optional object { company, email, name, telephone }
 
 Information about the submitter of the report.
 
@@ -258,7 +258,7 @@ success: boolean
 
 <summary>
 
-errors: optional array of object {message, code }
+errors: optional array of object { message, code }
 
 </summary>
 
@@ -270,7 +270,7 @@ message: string
 
 <summary>
 
-code: optional stringor number
+code: optional string or number
 
 </summary>
 
@@ -296,7 +296,7 @@ number
 
 <summary>
 
-messages: optional array of object {message }
+messages: optional array of object { message }
 
 </summary>
 

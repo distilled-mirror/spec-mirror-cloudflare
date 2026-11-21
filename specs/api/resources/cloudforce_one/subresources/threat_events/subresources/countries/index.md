@@ -30,7 +30,7 @@ GET/accounts/{account\_id}/cloudforce-one/events/countries
 
 <summary>
 
-CountryListResponse = array of object {result, success }
+CountryListResponse = array of object { result, success }
 
 </summary>
 
@@ -38,7 +38,7 @@ CountryListResponse = array of object {result, success }
 
 <summary>
 
-result: array of object {alpha2, alpha3, name }
+result: array of object { alpha2, alpha3, name }
 
 </summary>
 

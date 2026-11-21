@@ -66,7 +66,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -110,7 +110,7 @@ minimum0
 
 <summary>
 
-result: object {certificateLogs }
+result: object { certificateLogs }
 
 </summary>
 
@@ -118,7 +118,7 @@ result: object {certificateLogs }
 
 <summary>
 
-certificateLogs: array of object {api, description, endExclusive, 6 more }
+certificateLogs: array of object { api, description, endExclusive, 6 more }
 
 </summary>
 
@@ -126,7 +126,7 @@ certificateLogs: array of object {api, description, endExclusive, 6 more }
 
 <summary>
 
-api: "RFC6962"or "STATIC"
+api: "RFC6962" or "STATIC"
 
 The API standard that the certificate log follows.
 
@@ -184,7 +184,7 @@ formatdate-time
 
 <summary>
 
-state: "USABLE"or "PENDING"or "QUALIFIED"or 3 more
+state: "USABLE" or "PENDING" or "QUALIFIED" or 3 more
 
 The current state of the certificate log. More details about log states can be found here: <a href="https://googlechrome.github.io/CertificateTransparency/log_states.html">https://googlechrome.github.io/CertificateTransparency/log\_states.html</a>
 

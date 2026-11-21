@@ -98,7 +98,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -140,7 +140,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -176,7 +176,7 @@ One of the following:
 
 <summary>
 
-ZeroTrustGatewayApplication object {id, application\_type\_id, created\_at, name }
+ZeroTrustGatewayApplication object { id, application\_type\_id, created\_at, name }
 
 </summary>
 
@@ -212,7 +212,7 @@ Specify the name of the application or application type.
 
 <summary>
 
-ZeroTrustGatewayApplicationType object {id, created\_at, description, name }
+ZeroTrustGatewayApplicationType object { id, created\_at, description, name }
 
 </summary>
 
@@ -252,7 +252,7 @@ Specify the name of the application or application type.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object { count, page, per\_page, total\_count }
 
 </summary>
 

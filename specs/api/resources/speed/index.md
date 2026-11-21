@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 <summary>
 
-LabeledRegion object {label, value }
+LabeledRegion object { label, value }
 
 A test region with a label.
 
@@ -36,7 +36,7 @@ label: optional string
 
 <summary>
 
-value: optional "asia-east1"or "asia-northeast1"or "asia-northeast2"or 18 more
+value: optional "asia-east1" or "asia-northeast1" or "asia-northeast2" or 18 more
 
 A test region.
 
@@ -140,7 +140,7 @@ One of the following:
 
 <summary>
 
-LighthouseReport object {cls, deviceType, error, 9 more }
+LighthouseReport object { cls, deviceType, error, 9 more }
 
 The Lighthouse report.
 
@@ -156,7 +156,7 @@ Cumulative Layout Shift.
 
 <summary>
 
-deviceType: optional "DESKTOP"or "MOBILE"
+deviceType: optional "DESKTOP" or "MOBILE"
 
 The type of device.
 
@@ -180,7 +180,7 @@ One of the following:
 
 <summary>
 
-error: optional object {code, detail, finalDisplayedUrl }
+error: optional object { code, detail, finalDisplayedUrl }
 
 </summary>
 
@@ -188,7 +188,7 @@ error: optional object {code, detail, finalDisplayedUrl }
 
 <summary>
 
-code: optional "NOT\_REACHABLE"or "DNS\_FAILURE"or "NOT\_HTML"or 2 more
+code: optional "NOT\_REACHABLE" or "DNS\_FAILURE" or "NOT\_HTML" or 2 more
 
 The error code of the Lighthouse result.
 
@@ -270,7 +270,7 @@ Speed Index.
 
 <summary>
 
-state: optional "RUNNING"or "COMPLETE"or "FAILED"
+state: optional "RUNNING" or "COMPLETE" or "FAILED"
 
 The state of the Lighthouse report.
 
@@ -320,7 +320,7 @@ Time To Interactive.
 
 <summary>
 
-Trend object {cls, fcp, lcp, 5 more }
+Trend object { cls, fcp, lcp, 5 more }
 
 </summary>
 
@@ -396,7 +396,7 @@ DELETE/zones/{zone\_id}/speed\_api/schedule/{url}
 
 <summary>
 
-Schedule object {frequency, region, url }
+Schedule object { frequency, region, url }
 
 The test schedule.
 
@@ -406,7 +406,7 @@ The test schedule.
 
 <summary>
 
-frequency: optional "DAILY"or "WEEKLY"
+frequency: optional "DAILY" or "WEEKLY"
 
 The frequency of the test.
 
@@ -430,7 +430,7 @@ One of the following:
 
 <summary>
 
-region: optional "asia-east1"or "asia-northeast1"or "asia-northeast2"or 18 more
+region: optional "asia-east1" or "asia-northeast1" or "asia-northeast2" or 18 more
 
 A test region.
 
@@ -540,7 +540,7 @@ A URL.
 
 <summary>
 
-ScheduleCreateResponse object {schedule, test }
+ScheduleCreateResponse object { schedule, test }
 
 </summary>
 
@@ -562,7 +562,7 @@ test: optional <a href="https://developers.cloudflare.com/api/resources/speed#(r
 
 <summary>
 
-ScheduleDeleteResponse object {count }
+ScheduleDeleteResponse object { count }
 
 </summary>
 
@@ -588,7 +588,7 @@ GET/zones/{zone\_id}/speed\_api/availabilities
 
 <summary>
 
-Availability object {quota, regions, regionsPerPlan }
+Availability object { quota, regions, regionsPerPlan }
 
 </summary>
 
@@ -596,7 +596,7 @@ Availability object {quota, regions, regionsPerPlan }
 
 <summary>
 
-quota: optional object {plan, quotasPerPlan, remainingSchedules, 2 more }
+quota: optional object { plan, quotasPerPlan, remainingSchedules, 2 more }
 
 </summary>
 
@@ -610,7 +610,7 @@ Cloudflare plan.
 
 <summary>
 
-quotasPerPlan: optional object {value }
+quotasPerPlan: optional object { value }
 
 The number of tests available per plan.
 
@@ -620,7 +620,7 @@ The number of tests available per plan.
 
 <summary>
 
-value: optional object {business, enterprise, free, pro }
+value: optional object { business, enterprise, free, pro }
 
 Counts per account plan.
 
@@ -666,7 +666,7 @@ The number of remaining tests available.
 
 <summary>
 
-scheduleQuotasPerPlan: optional object {value }
+scheduleQuotasPerPlan: optional object { value }
 
 The number of schedules available per plan.
 
@@ -676,7 +676,7 @@ The number of schedules available per plan.
 
 <summary>
 
-value: optional object {business, enterprise, free, pro }
+value: optional object { business, enterprise, free, pro }
 
 Counts per account plan.
 
@@ -726,7 +726,7 @@ label: optional string
 
 <summary>
 
-value: optional "asia-east1"or "asia-northeast1"or "asia-northeast2"or 18 more
+value: optional "asia-east1" or "asia-northeast1" or "asia-northeast2" or 18 more
 
 A test region.
 
@@ -830,7 +830,7 @@ One of the following:
 
 <summary>
 
-regionsPerPlan: optional object {business, enterprise, free, pro }
+regionsPerPlan: optional object { business, enterprise, free, pro }
 
 Available regions.
 
@@ -852,7 +852,7 @@ label: optional string
 
 <summary>
 
-value: optional "asia-east1"or "asia-northeast1"or "asia-northeast2"or 18 more
+value: optional "asia-east1" or "asia-northeast1" or "asia-northeast2" or 18 more
 
 A test region.
 
@@ -968,7 +968,7 @@ label: optional string
 
 <summary>
 
-value: optional "asia-east1"or "asia-northeast1"or "asia-northeast2"or 18 more
+value: optional "asia-east1" or "asia-northeast1" or "asia-northeast2" or 18 more
 
 A test region.
 
@@ -1084,7 +1084,7 @@ label: optional string
 
 <summary>
 
-value: optional "asia-east1"or "asia-northeast1"or "asia-northeast2"or 18 more
+value: optional "asia-east1" or "asia-northeast1" or "asia-northeast2" or 18 more
 
 A test region.
 
@@ -1200,7 +1200,7 @@ label: optional string
 
 <summary>
 
-value: optional "asia-east1"or "asia-northeast1"or "asia-northeast2"or 18 more
+value: optional "asia-east1" or "asia-northeast1" or "asia-northeast2" or 18 more
 
 A test region.
 
@@ -1324,7 +1324,7 @@ GET/zones/{zone\_id}/speed\_api/pages/{url}/trend
 
 <summary>
 
-PageListResponse object {region, scheduleFrequency, tests, url }
+PageListResponse object { region, scheduleFrequency, tests, url }
 
 </summary>
 
@@ -1338,7 +1338,7 @@ A test region with a label.
 
 <summary>
 
-scheduleFrequency: optional "DAILY"or "WEEKLY"
+scheduleFrequency: optional "DAILY" or "WEEKLY"
 
 The frequency of the test.
 
@@ -1402,7 +1402,7 @@ A test region with a label.
 
 <summary>
 
-scheduleFrequency: optional "DAILY"or "WEEKLY"
+scheduleFrequency: optional "DAILY" or "WEEKLY"
 
 The frequency of the test.
 
@@ -1466,7 +1466,7 @@ DELETE/zones/{zone\_id}/speed\_api/pages/{url}/tests
 
 <summary>
 
-Test object {id, date, desktopReport, 4 more }
+Test object { id, date, desktopReport, 4 more }
 
 </summary>
 
@@ -1506,7 +1506,7 @@ A test region with a label.
 
 <summary>
 
-scheduleFrequency: optional "DAILY"or "WEEKLY"
+scheduleFrequency: optional "DAILY" or "WEEKLY"
 
 The frequency of the test.
 
@@ -1540,7 +1540,7 @@ A URL.
 
 <summary>
 
-TestDeleteResponse object {count }
+TestDeleteResponse object { count }
 
 </summary>
 

@@ -88,7 +88,7 @@ To poll an in-progress export, provide the current bookmark (returned by your fi
 
 <summary>
 
-dump\_options: optional object {compatibility, no\_data, no\_schema, tables }
+dump\_options: optional object { compatibility, no\_data, no\_schema, tables }
 
 </summary>
 
@@ -96,7 +96,7 @@ dump\_options: optional object {compatibility, no\_data, no\_schema, tables }
 
 <summary>
 
-compatibility: optional "d1"or "sqlite3\_cli\_only"
+compatibility: optional "d1" or "sqlite3\_cli\_only"
 
 Dump format. <code>d1</code> (the default) gives a dump that D1 can import. <code>sqlite3_cli_only</code> matches the output of the <code>sqlite3 .dump</code> command, including virtual tables such as FTS5 or R\*Tree tables, but cannot be imported back into D1.
 
@@ -166,7 +166,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -208,7 +208,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -228,7 +228,7 @@ pointer: optional string
 
 <summary>
 
-result: object {at\_bookmark, error, messages, 4 more }
+result: object { at\_bookmark, error, messages, 4 more }
 
 </summary>
 
@@ -254,7 +254,7 @@ Logs since the last time you polled
 
 <summary>
 
-result: optional object {filename, signed\_url }
+result: optional object { filename, signed\_url }
 
 Only present when status = ‘complete’
 
@@ -280,7 +280,7 @@ The URL to download the exported SQL. Available for one hour.
 
 <summary>
 
-status: optional "complete"or "error"
+status: optional "complete" or "error"
 
 </summary>
 

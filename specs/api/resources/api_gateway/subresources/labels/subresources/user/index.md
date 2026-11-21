@@ -50,7 +50,7 @@ DELETE/zones/{zone\_id}/api\_gateway/labels/user/{name}
 
 <summary>
 
-UserBulkCreateResponse object {created\_at, description, last\_updated, 3 more }
+UserBulkCreateResponse object { created\_at, description, last\_updated, 3 more }
 
 </summary>
 
@@ -88,7 +88,7 @@ The name of the label
 
 <summary>
 
-source: "user"or "managed"
+source: "user" or "managed"
 
 - <code>user</code> - label is owned by the user
 - <code>managed</code> - label is owned by cloudflare
@@ -117,7 +117,7 @@ One of the following:
 
 <summary>
 
-UserBulkDeleteResponse object {created\_at, description, last\_updated, 3 more }
+UserBulkDeleteResponse object { created\_at, description, last\_updated, 3 more }
 
 </summary>
 
@@ -155,7 +155,7 @@ The name of the label
 
 <summary>
 
-source: "user"or "managed"
+source: "user" or "managed"
 
 - <code>user</code> - label is owned by the user
 - <code>managed</code> - label is owned by cloudflare
@@ -184,7 +184,7 @@ One of the following:
 
 <summary>
 
-UserGetResponse object {created\_at, description, last\_updated, 4 more }
+UserGetResponse object { created\_at, description, last\_updated, 4 more }
 
 </summary>
 
@@ -222,7 +222,7 @@ The name of the label
 
 <summary>
 
-source: "user"or "managed"
+source: "user" or "managed"
 
 - <code>user</code> - label is owned by the user
 - <code>managed</code> - label is owned by cloudflare
@@ -257,7 +257,7 @@ Provides counts of what resources are linked to this label
 
 <summary>
 
-UserUpdateResponse object {created\_at, description, last\_updated, 3 more }
+UserUpdateResponse object { created\_at, description, last\_updated, 3 more }
 
 </summary>
 
@@ -295,7 +295,7 @@ The name of the label
 
 <summary>
 
-source: "user"or "managed"
+source: "user" or "managed"
 
 - <code>user</code> - label is owned by the user
 - <code>managed</code> - label is owned by cloudflare
@@ -324,7 +324,7 @@ One of the following:
 
 <summary>
 
-UserEditResponse object {created\_at, description, last\_updated, 3 more }
+UserEditResponse object { created\_at, description, last\_updated, 3 more }
 
 </summary>
 
@@ -362,7 +362,7 @@ The name of the label
 
 <summary>
 
-source: "user"or "managed"
+source: "user" or "managed"
 
 - <code>user</code> - label is owned by the user
 - <code>managed</code> - label is owned by cloudflare
@@ -391,7 +391,7 @@ One of the following:
 
 <summary>
 
-UserDeleteResponse object {created\_at, description, last\_updated, 3 more }
+UserDeleteResponse object { created\_at, description, last\_updated, 3 more }
 
 </summary>
 
@@ -429,7 +429,7 @@ The name of the label
 
 <summary>
 
-source: "user"or "managed"
+source: "user" or "managed"
 
 - <code>user</code> - label is owned by the user
 - <code>managed</code> - label is owned by cloudflare
@@ -468,7 +468,7 @@ PUT/zones/{zone\_id}/api\_gateway/labels/user/{name}/resources/operation
 
 <summary>
 
-OperationUpdateResponse object {created\_at, description, last\_updated, 4 more }
+OperationUpdateResponse object { created\_at, description, last\_updated, 4 more }
 
 </summary>
 
@@ -506,7 +506,7 @@ The name of the label
 
 <summary>
 
-source: "user"or "managed"
+source: "user" or "managed"
 
 - <code>user</code> - label is owned by the user
 - <code>managed</code> - label is owned by cloudflare

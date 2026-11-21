@@ -90,7 +90,7 @@ maxLength32
 
 <summary>
 
-direction: optional "asc"or "desc"
+direction: optional "asc" or "desc"
 
 Defines the direction used to sort returned rule groups.
 
@@ -114,7 +114,7 @@ One of the following:
 
 <summary>
 
-match: optional "any"or "all"
+match: optional "any" or "all"
 
 Defines the condition for search requirements. When set to <code>all</code>, all the search requirements must match. When set to <code>any</code>, only one of the search requirements has to match.
 
@@ -138,7 +138,7 @@ One of the following:
 
 <summary>
 
-mode: optional "on"or "off"
+mode: optional "on" or "off"
 
 Defines the state of the rules contained in the rule group. When <code>on</code>, the rules in the group are configurable/usable.
 
@@ -168,7 +168,7 @@ Defines the name of the rule group.
 
 <summary>
 
-order: optional "mode"or "rules\_count"
+order: optional "mode" or "rules\_count"
 
 Defines the field used to sort returned rule groups.
 
@@ -240,7 +240,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -282,7 +282,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -324,7 +324,7 @@ Defines an informative summary of what the rule group does.
 
 <summary>
 
-mode: "on"or "off"
+mode: "on" or "off"
 
 Defines the state of the rules contained in the rule group. When <code>on</code>, the rules in the group are configurable/usable.
 
@@ -360,7 +360,7 @@ Defines the number of rules in the current rule group.
 
 <summary>
 
-allowed\_modes: optional array of "on"or "off"
+allowed\_modes: optional array of "on" or "off"
 
 Defines the available states for the rule group.
 
@@ -408,7 +408,7 @@ Defines whether the API call was successful.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object { count, page, per\_page, total\_count }
 
 </summary>
 

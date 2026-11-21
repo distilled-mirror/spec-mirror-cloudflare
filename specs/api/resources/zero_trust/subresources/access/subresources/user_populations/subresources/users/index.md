@@ -52,7 +52,7 @@ DELETE/accounts/{account\_id}/access/user\_populations/{user\_population\_id}/us
 
 <summary>
 
-UserListResponse object {itemsPerPage, Resources, schemas, 2 more }
+UserListResponse object { itemsPerPage, Resources, schemas, 2 more }
 
 </summary>
 
@@ -64,7 +64,7 @@ itemsPerPage: number
 
 <summary>
 
-Resources: array of object {id, active, displayName, 6 more }
+Resources: array of object { id, active, displayName, 6 more }
 
 </summary>
 
@@ -84,7 +84,7 @@ displayName: optional string
 
 <summary>
 
-emails: optional array of object {primary, type, value }
+emails: optional array of object { primary, type, value }
 
 </summary>
 
@@ -112,7 +112,7 @@ externalId: optional string
 
 <summary>
 
-meta: optional object {created, lastModified, location, 2 more }
+meta: optional object { created, lastModified, location, 2 more }
 
 </summary>
 
@@ -150,7 +150,7 @@ version: optional string
 
 <summary>
 
-name: optional object {familyName, formatted, givenName, 3 more }
+name: optional object { familyName, formatted, givenName, 3 more }
 
 </summary>
 
@@ -216,7 +216,7 @@ totalResults: number
 
 <summary>
 
-UserCreateResponse object {id, active, displayName, 6 more }
+UserCreateResponse object { id, active, displayName, 6 more }
 
 A SCIM User resource. Additional SCIM extension attributes are supported.
 
@@ -238,7 +238,7 @@ displayName: optional string
 
 <summary>
 
-emails: optional array of object {primary, type, value }
+emails: optional array of object { primary, type, value }
 
 </summary>
 
@@ -266,7 +266,7 @@ externalId: optional string
 
 <summary>
 
-meta: optional object {created, lastModified, location, 2 more }
+meta: optional object { created, lastModified, location, 2 more }
 
 </summary>
 
@@ -304,7 +304,7 @@ version: optional string
 
 <summary>
 
-name: optional object {familyName, formatted, givenName, 3 more }
+name: optional object { familyName, formatted, givenName, 3 more }
 
 </summary>
 
@@ -354,7 +354,7 @@ userName: optional string
 
 <summary>
 
-UserGetResponse object {id, active, displayName, 6 more }
+UserGetResponse object { id, active, displayName, 6 more }
 
 A SCIM User resource. Additional SCIM extension attributes are supported.
 
@@ -376,7 +376,7 @@ displayName: optional string
 
 <summary>
 
-emails: optional array of object {primary, type, value }
+emails: optional array of object { primary, type, value }
 
 </summary>
 
@@ -404,7 +404,7 @@ externalId: optional string
 
 <summary>
 
-meta: optional object {created, lastModified, location, 2 more }
+meta: optional object { created, lastModified, location, 2 more }
 
 </summary>
 
@@ -442,7 +442,7 @@ version: optional string
 
 <summary>
 
-name: optional object {familyName, formatted, givenName, 3 more }
+name: optional object { familyName, formatted, givenName, 3 more }
 
 </summary>
 
@@ -492,7 +492,7 @@ userName: optional string
 
 <summary>
 
-UserUpdateResponse object {id, active, displayName, 6 more }
+UserUpdateResponse object { id, active, displayName, 6 more }
 
 A SCIM User resource. Additional SCIM extension attributes are supported.
 
@@ -514,7 +514,7 @@ displayName: optional string
 
 <summary>
 
-emails: optional array of object {primary, type, value }
+emails: optional array of object { primary, type, value }
 
 </summary>
 
@@ -542,7 +542,7 @@ externalId: optional string
 
 <summary>
 
-meta: optional object {created, lastModified, location, 2 more }
+meta: optional object { created, lastModified, location, 2 more }
 
 </summary>
 
@@ -580,7 +580,7 @@ version: optional string
 
 <summary>
 
-name: optional object {familyName, formatted, givenName, 3 more }
+name: optional object { familyName, formatted, givenName, 3 more }
 
 </summary>
 
@@ -630,7 +630,7 @@ userName: optional string
 
 <summary>
 
-UserReplaceResponse object {id, active, displayName, 6 more }
+UserReplaceResponse object { id, active, displayName, 6 more }
 
 A SCIM User resource. Additional SCIM extension attributes are supported.
 
@@ -652,7 +652,7 @@ displayName: optional string
 
 <summary>
 
-emails: optional array of object {primary, type, value }
+emails: optional array of object { primary, type, value }
 
 </summary>
 
@@ -680,7 +680,7 @@ externalId: optional string
 
 <summary>
 
-meta: optional object {created, lastModified, location, 2 more }
+meta: optional object { created, lastModified, location, 2 more }
 
 </summary>
 
@@ -718,7 +718,7 @@ version: optional string
 
 <summary>
 
-name: optional object {familyName, formatted, givenName, 3 more }
+name: optional object { familyName, formatted, givenName, 3 more }
 
 </summary>
 

@@ -48,7 +48,7 @@ POST/accounts/{account\_id}/logpush/transformers/preview
 
 <summary>
 
-TransformerListResponse object {id, associated\_jobs, created\_at, 4 more }
+TransformerListResponse object { id, associated\_jobs, created\_at, 4 more }
 
 </summary>
 
@@ -64,7 +64,7 @@ minimum1
 
 <summary>
 
-associated\_jobs: optional array of object {id, name, object\_tag, object\_type }
+associated\_jobs: optional array of object { id, name, object\_tag, object\_type }
 
 Logpush jobs that reference this transformer.
 
@@ -92,7 +92,7 @@ The zone or account tag.
 
 <summary>
 
-object\_type: optional "zone"or "account"
+object\_type: optional "zone" or "account"
 
 Whether the job is zone-scoped or account-scoped.
 
@@ -162,7 +162,7 @@ formatdate-time
 
 <summary>
 
-TransformerGetResponse object {id, associated\_jobs, created\_at, 4 more }
+TransformerGetResponse object { id, associated\_jobs, created\_at, 4 more }
 
 </summary>
 
@@ -178,7 +178,7 @@ minimum1
 
 <summary>
 
-associated\_jobs: optional array of object {id, name, object\_tag, object\_type }
+associated\_jobs: optional array of object { id, name, object\_tag, object\_type }
 
 Logpush jobs that reference this transformer.
 
@@ -206,7 +206,7 @@ The zone or account tag.
 
 <summary>
 
-object\_type: optional "zone"or "account"
+object\_type: optional "zone" or "account"
 
 Whether the job is zone-scoped or account-scoped.
 
@@ -276,7 +276,7 @@ formatdate-time
 
 <summary>
 
-TransformerCreateResponse object {id, associated\_jobs, created\_at, 4 more }
+TransformerCreateResponse object { id, associated\_jobs, created\_at, 4 more }
 
 </summary>
 
@@ -292,7 +292,7 @@ minimum1
 
 <summary>
 
-associated\_jobs: optional array of object {id, name, object\_tag, object\_type }
+associated\_jobs: optional array of object { id, name, object\_tag, object\_type }
 
 Logpush jobs that reference this transformer.
 
@@ -320,7 +320,7 @@ The zone or account tag.
 
 <summary>
 
-object\_type: optional "zone"or "account"
+object\_type: optional "zone" or "account"
 
 Whether the job is zone-scoped or account-scoped.
 
@@ -390,7 +390,7 @@ formatdate-time
 
 <summary>
 
-TransformerUpdateResponse object {id, associated\_jobs, created\_at, 4 more }
+TransformerUpdateResponse object { id, associated\_jobs, created\_at, 4 more }
 
 </summary>
 
@@ -406,7 +406,7 @@ minimum1
 
 <summary>
 
-associated\_jobs: optional array of object {id, name, object\_tag, object\_type }
+associated\_jobs: optional array of object { id, name, object\_tag, object\_type }
 
 Logpush jobs that reference this transformer.
 
@@ -434,7 +434,7 @@ The zone or account tag.
 
 <summary>
 
-object\_type: optional "zone"or "account"
+object\_type: optional "zone" or "account"
 
 Whether the job is zone-scoped or account-scoped.
 
@@ -504,7 +504,7 @@ formatdate-time
 
 <summary>
 
-TransformerDeleteResponse object {id }
+TransformerDeleteResponse object { id }
 
 </summary>
 
@@ -534,7 +534,7 @@ GET/accounts/{account\_id}/logpush/transformers/{transformer\_id}/content
 
 <summary>
 
-ContentGetResponse object {content }
+ContentGetResponse object { content }
 
 </summary>
 
@@ -560,7 +560,7 @@ GET/accounts/{account\_id}/logpush/transformers/{transformer\_id}/versions
 
 <summary>
 
-VersionListResponse object {id, created\_at, version }
+VersionListResponse object { id, created\_at, version }
 
 </summary>
 

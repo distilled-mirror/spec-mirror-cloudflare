@@ -76,7 +76,7 @@ maxLength32
 
 <summary>
 
-direction: optional "asc"or "desc"
+direction: optional "asc" or "desc"
 
 The sorting direction.
 
@@ -100,7 +100,7 @@ One of the following:
 
 <summary>
 
-order: optional "domain"or "created\_at"
+order: optional "domain" or "created\_at"
 
 Field to sort by.
 
@@ -150,7 +150,7 @@ Search term for filtering records. Behavior may change.
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -172,7 +172,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -192,7 +192,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -214,7 +214,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -240,7 +240,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional array of object {id, comments, created\_at, 4 more }
+result: optional array of object { id, comments, created\_at, 4 more }
 
 </summary>
 
@@ -300,7 +300,7 @@ formatdate-time
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object { count, page, per\_page, total\_count }
 
 </summary>
 

@@ -86,7 +86,7 @@ The language tag in BCP 47 format.
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -108,7 +108,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -128,7 +128,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -150,7 +150,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -202,7 +202,7 @@ The language tag in BCP 47 format.
 
 <summary>
 
-status: optional "ready"or "inprogress"or "error"
+status: optional "ready" or "inprogress" or "error"
 
 The status of a generated caption.
 

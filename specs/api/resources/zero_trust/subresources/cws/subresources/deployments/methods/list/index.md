@@ -80,7 +80,7 @@ Pagination cursor from previous response
 
 <summary>
 
-direction: optional "asc"or "desc"
+direction: optional "asc" or "desc"
 
 Sort direction (default: asc)
 
@@ -110,7 +110,7 @@ Filter by deployment name (case-insensitive substring match)
 
 <summary>
 
-order: optional "name"or "created\_at"or "updated\_at"
+order: optional "name" or "created\_at" or "updated\_at"
 
 Field to order results by (default: created\_at)
 
@@ -152,7 +152,7 @@ minimum1
 
 <summary>
 
-errors: array of object {code, message, source }
+errors: array of object { code, message, source }
 
 </summary>
 
@@ -170,7 +170,7 @@ message: string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -190,7 +190,7 @@ pointer: string
 
 <summary>
 
-messages: array of object {code, message, source }
+messages: array of object { code, message, source }
 
 </summary>
 
@@ -208,7 +208,7 @@ message: string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -256,7 +256,7 @@ formatdate-time
 
 <summary>
 
-default\_mode: "ALLOW"or "BLOCK"
+default\_mode: "ALLOW" or "BLOCK"
 
 Default traffic decision when no policy set matches
 
@@ -290,7 +290,7 @@ minLength1
 
 <summary>
 
-on\_error\_action: "BLOCK"or "SKIP"
+on\_error\_action: "BLOCK" or "SKIP"
 
 Action applied when an enforcing policy has a runtime Rego error
 
@@ -358,7 +358,7 @@ formatuuid
 
 <summary>
 
-result\_info: object {count, per\_page, total\_count, cursor }
+result\_info: object { count, per\_page, total\_count, cursor }
 
 </summary>
 

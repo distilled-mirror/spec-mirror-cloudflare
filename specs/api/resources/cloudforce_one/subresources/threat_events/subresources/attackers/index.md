@@ -30,7 +30,7 @@ GET/accounts/{account\_id}/cloudforce-one/events/attackers
 
 <summary>
 
-AttackerListResponse object {items, type }
+AttackerListResponse object { items, type }
 
 </summary>
 
@@ -38,7 +38,7 @@ AttackerListResponse object {items, type }
 
 <summary>
 
-items: object {type }
+items: object { type }
 
 </summary>
 

@@ -48,7 +48,7 @@ POST/accounts/{account\_id}/storage/kv/namespaces/{namespace\_id}/bulk/get
 
 <summary>
 
-Key object {name, expiration, metadata }
+Key object { name, expiration, metadata }
 
 A name for a value. A value stored under a given key may be retrieved via the same key.
 
@@ -82,7 +82,7 @@ Arbitrary JSON that is associated with a key.
 
 <summary>
 
-KeyBulkUpdateResponse object {successful\_key\_count, unsuccessful\_keys }
+KeyBulkUpdateResponse object { successful\_key\_count, unsuccessful\_keys }
 
 </summary>
 
@@ -106,7 +106,7 @@ Names of keys that failed to be written or deleted. Retry the operation for thes
 
 <summary>
 
-KeyBulkDeleteResponse object {successful\_key\_count, unsuccessful\_keys }
+KeyBulkDeleteResponse object { successful\_key\_count, unsuccessful\_keys }
 
 </summary>
 
@@ -130,7 +130,7 @@ Names of keys that failed to be written or deleted. Retry the operation for thes
 
 <summary>
 
-KeyBulkGetResponse = object {values } or object {values }
+KeyBulkGetResponse = object { values } or object { values }
 
 </summary>
 
@@ -140,7 +140,7 @@ One of the following:
 
 <summary>
 
-WorkersKVBulkGetResult object {values }
+WorkersKVBulkGetResult object { values }
 
 </summary>
 
@@ -148,7 +148,7 @@ WorkersKVBulkGetResult object {values }
 
 <summary>
 
-values: optional map\[stringor numberor booleanor map\[unknown]]
+values: optional map\[string or number or boolean or map\[unknown]]
 
 Requested keys are paired with their values in an object.
 
@@ -184,7 +184,7 @@ map\[unknown]
 
 <summary>
 
-WorkersKVBulkGetResultWithMetadata object {values }
+WorkersKVBulkGetResultWithMetadata object { values }
 
 </summary>
 
@@ -192,7 +192,7 @@ WorkersKVBulkGetResultWithMetadata object {values }
 
 <summary>
 
-values: optional map\[object {metadata, value, expiration } ]
+values: optional map\[object { metadata, value, expiration } ]
 
 Requested keys are paired with their values and metadata in an object.
 

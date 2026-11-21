@@ -106,7 +106,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -148,7 +148,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -176,7 +176,7 @@ result: array of <a href="https://developers.cloudflare.com/api/resources/intel#
 
 <summary>
 
-belongs\_to\_ref: optional object {id, country, description, 2 more }
+belongs\_to\_ref: optional object { id, country, description, 2 more }
 
 Specifies a reference to the autonomous systems (AS) that the IP address belongs to.
 
@@ -198,7 +198,7 @@ description: optional string
 
 <summary>
 
-type: optional "hosting\_provider"or "isp"or "organization"
+type: optional "hosting\_provider" or "isp" or "organization"
 
 Infrastructure type of this ASN.
 
@@ -240,7 +240,7 @@ formatipv4
 
 <summary>
 
-risk\_types: optional array of object {id, name, super\_category\_id }
+risk\_types: optional array of object { id, name, super\_category\_id }
 
 </summary>
 
@@ -274,7 +274,7 @@ Whether the API call was successful.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object { count, page, per\_page, total\_count }
 
 </summary>
 

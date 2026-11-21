@@ -30,7 +30,7 @@ GET/accounts/{account\_id}/addressing/regional\_hostnames/regions
 
 <summary>
 
-RegionListResponse object {key, label }
+RegionListResponse object { key, label }
 
 </summary>
 

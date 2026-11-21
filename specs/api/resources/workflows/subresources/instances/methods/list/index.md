@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Workers Tail Read``Workers Scripts Write``Workers Scripts Read`
+`Workers Metadata Read-Only``Workers Editor``Workers Content Read-Only``Workers Admin``Individual Workers Metadata Read-Only``Individual Workers Editor``Individual Workers Content Read-Only``Individual Workers Admin``Granular Workers Scripts Read``Workers Tail Read``Workers Scripts Write``Workers Scripts Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -100,7 +100,7 @@ formatdate-time
 
 <summary>
 
-direction: optional "asc"or "desc"
+direction: optional "asc" or "desc"
 
 Defines the direction for cursor-based pagination.
 
@@ -140,7 +140,7 @@ minimum1
 
 <summary>
 
-status: optional "queued"or "running"or "paused"or 6 more
+status: optional "queued" or "running" or "paused" or 6 more
 
 </summary>
 
@@ -192,7 +192,7 @@ One of the following:
 
 <summary>
 
-errors: array of object {code, message }
+errors: array of object { code, message }
 
 </summary>
 
@@ -212,7 +212,7 @@ message: string
 
 <summary>
 
-messages: array of object {code, message }
+messages: array of object { code, message }
 
 </summary>
 
@@ -232,7 +232,7 @@ message: string
 
 <summary>
 
-result: array of object {id, created\_on, ended\_on, 6 more }
+result: array of object { id, created\_on, ended\_on, 6 more }
 
 </summary>
 
@@ -272,7 +272,7 @@ formatdate-time
 
 <summary>
 
-status: "queued"or "running"or "paused"or 6 more
+status: "queued" or "running" or "paused" or 6 more
 
 </summary>
 
@@ -334,7 +334,7 @@ formatuuid
 
 <summary>
 
-trigger\_source: optional "unknown"or "api"or "binding"or 2 more
+trigger\_source: optional "unknown" or "api" or "binding" or 2 more
 
 </summary>
 
@@ -376,7 +376,7 @@ success: true
 
 <summary>
 
-result\_info: optional object {count, per\_page, total\_count, 3 more }
+result\_info: optional object { count, per\_page, total\_count, 3 more }
 
 </summary>
 

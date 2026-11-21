@@ -34,7 +34,7 @@ POST/accounts/{account\_id}/email-security/investigate/move
 
 <summary>
 
-MoveCreateResponse object {success, completed\_at, completed\_timestamp, 6 more }
+MoveCreateResponse object { success, completed\_at, completed\_timestamp, 6 more }
 
 </summary>
 
@@ -108,7 +108,7 @@ Operation status.
 
 <summary>
 
-MoveBulkResponse object {success, completed\_at, completed\_timestamp, 6 more }
+MoveBulkResponse object { success, completed\_at, completed\_timestamp, 6 more }
 
 </summary>
 

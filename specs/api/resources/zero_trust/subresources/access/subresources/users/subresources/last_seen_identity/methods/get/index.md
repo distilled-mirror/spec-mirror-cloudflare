@@ -60,7 +60,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Access: Audit Logs Read`
+`Access: Users Write``Access: Users Read``Access: Audit Logs Read``Zero Trust Read``Zero Trust Write``Access: Organizations, Identity Providers, and Groups Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -86,7 +86,7 @@ maxLength36
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -108,7 +108,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -128,7 +128,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -150,7 +150,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -176,7 +176,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {account\_id, auth\_status, common\_name, 16 more }
+result: optional object { account\_id, auth\_status, common\_name, 16 more }
 
 </summary>
 
@@ -200,7 +200,7 @@ device\_id: optional string
 
 <summary>
 
-device\_sessions: optional map\[object {last\_authenticated } ]
+device\_sessions: optional map\[object { last\_authenticated } ]
 
 </summary>
 
@@ -216,7 +216,7 @@ last\_authenticated: optional number
 
 <summary>
 
-devicePosture: optional map\[object {id, check, data, 6 more } ]
+devicePosture: optional map\[object { id, check, data, 6 more } ]
 
 </summary>
 
@@ -228,7 +228,7 @@ id: optional string
 
 <summary>
 
-check: optional object {exists, path }
+check: optional object { exists, path }
 
 </summary>
 
@@ -284,7 +284,7 @@ email: optional string
 
 <summary>
 
-geo: optional object {country }
+geo: optional object { country }
 
 </summary>
 
@@ -304,7 +304,7 @@ iat: optional number
 
 <summary>
 
-idp: optional object {id, type }
+idp: optional object { id, type }
 
 </summary>
 
@@ -336,7 +336,7 @@ is\_warp: optional boolean
 
 <summary>
 
-mtls\_auth: optional object {auth\_status, cert\_issuer\_dn, cert\_issuer\_ski, 2 more }
+mtls\_auth: optional object { auth\_status, cert\_issuer\_dn, cert\_issuer\_ski, 2 more }
 
 </summary>
 
@@ -368,7 +368,7 @@ cert\_serial: optional string
 
 <summary>
 
-passkeys: optional array of object {id, created\_at, last\_used\_at, name }
+passkeys: optional array of object { id, created\_at, last\_used\_at, name }
 
 Active passkey enrollments for the user.
 

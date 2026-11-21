@@ -86,7 +86,7 @@ formatuuid
 
 <summary>
 
-facility: object {address, name }
+facility: object { address, name }
 
 </summary>
 

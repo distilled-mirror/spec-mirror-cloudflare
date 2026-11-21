@@ -28,7 +28,7 @@ POST/accounts/{account\_id}/r2/temp-access-credentials
 
 <summary>
 
-TemporaryCredential object {bucket, parentAccessKeyId, ttlSeconds, 4 more }
+TemporaryCredential object { bucket, parentAccessKeyId, ttlSeconds, 4 more }
 
 </summary>
 
@@ -58,7 +58,7 @@ minimum0
 
 <summary>
 
-actions: optional array of "HeadBucket"or "HeadObject"or "GetObject"or 15 more
+actions: optional array of "HeadBucket" or "HeadObject" or "GetObject" or 15 more
 
 S3 actions allowed on the credentials; requests for any other action are denied. For example, <code>["GetObject", "HeadObject"]</code> allows reading objects without listing them. Exactly one of <code>permission</code> or <code>actions</code> must be provided. The parent token must have Object Read &amp; Write permission if any action writes, and Object Read otherwise.
 
@@ -152,7 +152,7 @@ Optional object paths to scope the credentials to.
 
 <summary>
 
-permission: optional "admin-read-write"or "admin-read-only"or "object-read-write"or "object-read-only"
+permission: optional "admin-read-write" or "admin-read-only" or "object-read-write" or "object-read-only"
 
 Permissions allowed on the credentials. Exactly one of <code>permission</code> or <code>actions</code> must be provided.
 
@@ -194,7 +194,7 @@ Optional prefix paths to scope the credentials to.
 
 <summary>
 
-TemporaryCredentialCreateResponse object {accessKeyId, secretAccessKey, sessionToken }
+TemporaryCredentialCreateResponse object { accessKeyId, secretAccessKey, sessionToken }
 
 </summary>
 

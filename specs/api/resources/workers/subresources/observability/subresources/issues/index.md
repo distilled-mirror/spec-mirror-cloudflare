@@ -66,7 +66,7 @@ GET/accounts/{account\_id}/workers/observability/issues/{issueId}/occurrences
 
 <summary>
 
-IssueListResponse object {id, activity, count, 11 more }
+IssueListResponse object { id, activity, count, 11 more }
 
 </summary>
 
@@ -78,7 +78,7 @@ id: string
 
 <summary>
 
-activity: array of object {id, created, inactivitySeconds, 14 more }
+activity: array of object { id, created, inactivitySeconds, 14 more }
 
 </summary>
 
@@ -98,7 +98,7 @@ inactivitySeconds: number
 
 <summary>
 
-initiatedBy: "automatic"or "manual"
+initiatedBy: "automatic" or "manual"
 
 </summary>
 
@@ -136,7 +136,7 @@ policyId: string
 
 <summary>
 
-status: "pending"or "succeeded"or "failed"
+status: "pending" or "succeeded" or "failed"
 
 </summary>
 
@@ -186,7 +186,7 @@ automationRevision: optional number
 
 <summary>
 
-scope: optional "account"or "service"
+scope: optional "account" or "service"
 
 </summary>
 
@@ -208,7 +208,7 @@ One of the following:
 
 <summary>
 
-triggerType: optional "occurrence\_threshold"or "recurrence\_after\_inactivity"
+triggerType: optional "occurrence\_threshold" or "recurrence\_after\_inactivity"
 
 </summary>
 
@@ -254,7 +254,7 @@ service: string
 
 <summary>
 
-status: "active"or "resolved"or "ignored"
+status: "active" or "resolved" or "ignored"
 
 </summary>
 
@@ -296,7 +296,7 @@ fingerprint: optional string
 
 <summary>
 
-members: optional array of object {fingerprint, issueId, title }
+members: optional array of object { fingerprint, issueId, title }
 
 </summary>
 
@@ -328,7 +328,7 @@ type: optional string
 
 <summary>
 
-IssueGetResponse object {issue }
+IssueGetResponse object { issue }
 
 </summary>
 
@@ -336,7 +336,7 @@ IssueGetResponse object {issue }
 
 <summary>
 
-issue: object {id, activity, count, 11 more }
+issue: object { id, activity, count, 11 more }
 
 </summary>
 
@@ -348,7 +348,7 @@ id: string
 
 <summary>
 
-activity: array of object {id, created, inactivitySeconds, 14 more }
+activity: array of object { id, created, inactivitySeconds, 14 more }
 
 </summary>
 
@@ -368,7 +368,7 @@ inactivitySeconds: number
 
 <summary>
 
-initiatedBy: "automatic"or "manual"
+initiatedBy: "automatic" or "manual"
 
 </summary>
 
@@ -406,7 +406,7 @@ policyId: string
 
 <summary>
 
-status: "pending"or "succeeded"or "failed"
+status: "pending" or "succeeded" or "failed"
 
 </summary>
 
@@ -456,7 +456,7 @@ automationRevision: optional number
 
 <summary>
 
-scope: optional "account"or "service"
+scope: optional "account" or "service"
 
 </summary>
 
@@ -478,7 +478,7 @@ One of the following:
 
 <summary>
 
-triggerType: optional "occurrence\_threshold"or "recurrence\_after\_inactivity"
+triggerType: optional "occurrence\_threshold" or "recurrence\_after\_inactivity"
 
 </summary>
 
@@ -524,7 +524,7 @@ service: string
 
 <summary>
 
-status: "active"or "resolved"or "ignored"
+status: "active" or "resolved" or "ignored"
 
 </summary>
 
@@ -566,7 +566,7 @@ fingerprint: optional string
 
 <summary>
 
-members: optional array of object {fingerprint, issueId, title }
+members: optional array of object { fingerprint, issueId, title }
 
 </summary>
 
@@ -602,7 +602,7 @@ type: optional string
 
 <summary>
 
-IssueUpdateResponse object {id, count, created, 10 more }
+IssueUpdateResponse object { id, count, created, 10 more }
 
 </summary>
 
@@ -634,7 +634,7 @@ service: string
 
 <summary>
 
-status: "active"or "resolved"or "ignored"
+status: "active" or "resolved" or "ignored"
 
 </summary>
 
@@ -676,7 +676,7 @@ fingerprint: optional string
 
 <summary>
 
-members: optional array of object {fingerprint, issueId, title }
+members: optional array of object { fingerprint, issueId, title }
 
 </summary>
 
@@ -708,7 +708,7 @@ type: optional string
 
 <summary>
 
-IssueSummaryResponse object {activeIssues, activeOccurrences, lastIssue, resolvedIssues }
+IssueSummaryResponse object { activeIssues, activeOccurrences, lastIssue, resolvedIssues }
 
 </summary>
 
@@ -736,7 +736,7 @@ resolvedIssues: number
 
 <summary>
 
-IssueGroupResponse object {id, count, created, 10 more }
+IssueGroupResponse object { id, count, created, 10 more }
 
 </summary>
 
@@ -768,7 +768,7 @@ service: string
 
 <summary>
 
-status: "active"or "resolved"or "ignored"
+status: "active" or "resolved" or "ignored"
 
 </summary>
 
@@ -810,7 +810,7 @@ fingerprint: optional string
 
 <summary>
 
-members: optional array of object {fingerprint, issueId, title }
+members: optional array of object { fingerprint, issueId, title }
 
 </summary>
 
@@ -842,7 +842,7 @@ type: optional string
 
 <summary>
 
-IssueUngroupResponse object {deleted }
+IssueUngroupResponse object { deleted }
 
 </summary>
 
@@ -858,7 +858,7 @@ deleted: true
 
 <summary>
 
-IssueAddResponse object {id, count, created, 10 more }
+IssueAddResponse object { id, count, created, 10 more }
 
 </summary>
 
@@ -890,7 +890,7 @@ service: string
 
 <summary>
 
-status: "active"or "resolved"or "ignored"
+status: "active" or "resolved" or "ignored"
 
 </summary>
 
@@ -932,7 +932,7 @@ fingerprint: optional string
 
 <summary>
 
-members: optional array of object {fingerprint, issueId, title }
+members: optional array of object { fingerprint, issueId, title }
 
 </summary>
 
@@ -964,7 +964,7 @@ type: optional string
 
 <summary>
 
-IssueRemoveResponse object {id, count, created, 10 more }
+IssueRemoveResponse object { id, count, created, 10 more }
 
 </summary>
 
@@ -996,7 +996,7 @@ service: string
 
 <summary>
 
-status: "active"or "resolved"or "ignored"
+status: "active" or "resolved" or "ignored"
 
 </summary>
 
@@ -1038,7 +1038,7 @@ fingerprint: optional string
 
 <summary>
 
-members: optional array of object {fingerprint, issueId, title }
+members: optional array of object { fingerprint, issueId, title }
 
 </summary>
 
@@ -1070,7 +1070,7 @@ type: optional string
 
 <summary>
 
-IssueNotifyResponse object {run }
+IssueNotifyResponse object { run }
 
 </summary>
 
@@ -1078,7 +1078,7 @@ IssueNotifyResponse object {run }
 
 <summary>
 
-run: object {id, created, inactivitySeconds, 13 more }
+run: object { id, created, inactivitySeconds, 13 more }
 
 </summary>
 
@@ -1098,7 +1098,7 @@ inactivitySeconds: number
 
 <summary>
 
-initiatedBy: "automatic"or "manual"
+initiatedBy: "automatic" or "manual"
 
 </summary>
 
@@ -1136,7 +1136,7 @@ policyId: string
 
 <summary>
 
-status: "pending"or "succeeded"or "failed"
+status: "pending" or "succeeded" or "failed"
 
 </summary>
 
@@ -1182,7 +1182,7 @@ automationRevision: optional number
 
 <summary>
 
-scope: optional "account"or "service"
+scope: optional "account" or "service"
 
 </summary>
 
@@ -1204,7 +1204,7 @@ One of the following:
 
 <summary>
 
-triggerType: optional "occurrence\_threshold"or "recurrence\_after\_inactivity"
+triggerType: optional "occurrence\_threshold" or "recurrence\_after\_inactivity"
 
 </summary>
 
@@ -1234,7 +1234,7 @@ One of the following:
 
 <summary>
 
-IssueOccurrencesResponse = array of object {id, error, invocation, 5 more }
+IssueOccurrencesResponse = array of object { id, error, invocation, 5 more }
 
 </summary>
 
@@ -1248,7 +1248,7 @@ Unique occurrence ID.
 
 <summary>
 
-error: object {handled, mechanism, message, 3 more }
+error: object { handled, mechanism, message, 3 more }
 
 </summary>
 
@@ -1260,7 +1260,7 @@ handled: boolean
 
 <summary>
 
-mechanism: "structured-log"or "error-log"or "stack-log"or 3 more
+mechanism: "structured-log" or "error-log" or "stack-log" or 3 more
 
 </summary>
 
@@ -1318,7 +1318,7 @@ stack: optional string
 
 <summary>
 
-invocation: object {id, traceId, type, 16 more }
+invocation: object { id, traceId, type, 16 more }
 
 </summary>
 
@@ -1418,7 +1418,7 @@ Occurrence timestamp as Unix epoch milliseconds.
 
 <summary>
 
-trail: array of object {level, message, timestamp, type } or object {name, ongoing, spanId, 3 more }
+trail: array of object { level, message, timestamp, type } or object { name, ongoing, spanId, 3 more }
 
 </summary>
 
@@ -1428,7 +1428,7 @@ One of the following:
 
 <summary>
 
-object {level, message, timestamp, type }
+object { level, message, timestamp, type }
 
 </summary>
 
@@ -1456,7 +1456,7 @@ type: "log"
 
 <summary>
 
-object {name, ongoing, spanId, 3 more }
+object { name, ongoing, spanId, 3 more }
 
 </summary>
 
@@ -1496,7 +1496,7 @@ parentSpanId: optional string
 
 <summary>
 
-worker: object {executionModel, scriptName, scriptTags, 3 more }
+worker: object { executionModel, scriptName, scriptTags, 3 more }
 
 </summary>
 
@@ -1524,7 +1524,7 @@ entrypoint: optional string
 
 <summary>
 
-scriptVersion: optional object {id, tag }
+scriptVersion: optional object { id, tag }
 
 </summary>
 
@@ -1548,7 +1548,7 @@ tag: optional string
 
 <summary>
 
-context: optional object {account, session, user }
+context: optional object { account, session, user }
 
 </summary>
 
@@ -1572,7 +1572,7 @@ user: optional string
 
 <summary>
 
-request: optional object {headers }
+request: optional object { headers }
 
 </summary>
 
@@ -1616,7 +1616,7 @@ DELETE/accounts/{account\_id}/workers/observability/issues/automations/{automati
 
 <summary>
 
-AutomationListResponse object {automations }
+AutomationListResponse object { automations }
 
 </summary>
 
@@ -1624,7 +1624,7 @@ AutomationListResponse object {automations }
 
 <summary>
 
-automations: array of object {id, ansPolicyId, created, 12 more }
+automations: array of object { id, ansPolicyId, created, 12 more }
 
 </summary>
 
@@ -1664,7 +1664,7 @@ revision: number
 
 <summary>
 
-scope: "account"or "service"
+scope: "account" or "service"
 
 </summary>
 
@@ -1698,7 +1698,7 @@ threshold: number
 
 <summary>
 
-triggerType: "occurrence\_threshold"or "recurrence\_after\_inactivity"
+triggerType: "occurrence\_threshold" or "recurrence\_after\_inactivity"
 
 </summary>
 
@@ -1736,7 +1736,7 @@ updatedByUserId: string
 
 <summary>
 
-AutomationGetResponse object {automation }
+AutomationGetResponse object { automation }
 
 </summary>
 
@@ -1744,7 +1744,7 @@ AutomationGetResponse object {automation }
 
 <summary>
 
-automation: object {id, ansPolicyId, created, 12 more }
+automation: object { id, ansPolicyId, created, 12 more }
 
 </summary>
 
@@ -1784,7 +1784,7 @@ revision: number
 
 <summary>
 
-scope: "account"or "service"
+scope: "account" or "service"
 
 </summary>
 
@@ -1818,7 +1818,7 @@ threshold: number
 
 <summary>
 
-triggerType: "occurrence\_threshold"or "recurrence\_after\_inactivity"
+triggerType: "occurrence\_threshold" or "recurrence\_after\_inactivity"
 
 </summary>
 
@@ -1856,7 +1856,7 @@ updatedByUserId: string
 
 <summary>
 
-AutomationCreateResponse object {automation }
+AutomationCreateResponse object { automation }
 
 </summary>
 
@@ -1864,7 +1864,7 @@ AutomationCreateResponse object {automation }
 
 <summary>
 
-automation: object {id, ansPolicyId, created, 12 more }
+automation: object { id, ansPolicyId, created, 12 more }
 
 </summary>
 
@@ -1904,7 +1904,7 @@ revision: number
 
 <summary>
 
-scope: "account"or "service"
+scope: "account" or "service"
 
 </summary>
 
@@ -1938,7 +1938,7 @@ threshold: number
 
 <summary>
 
-triggerType: "occurrence\_threshold"or "recurrence\_after\_inactivity"
+triggerType: "occurrence\_threshold" or "recurrence\_after\_inactivity"
 
 </summary>
 
@@ -1976,7 +1976,7 @@ updatedByUserId: string
 
 <summary>
 
-AutomationUpdateResponse object {automation }
+AutomationUpdateResponse object { automation }
 
 </summary>
 
@@ -1984,7 +1984,7 @@ AutomationUpdateResponse object {automation }
 
 <summary>
 
-automation: object {id, ansPolicyId, created, 12 more }
+automation: object { id, ansPolicyId, created, 12 more }
 
 </summary>
 
@@ -2024,7 +2024,7 @@ revision: number
 
 <summary>
 
-scope: "account"or "service"
+scope: "account" or "service"
 
 </summary>
 
@@ -2058,7 +2058,7 @@ threshold: number
 
 <summary>
 
-triggerType: "occurrence\_threshold"or "recurrence\_after\_inactivity"
+triggerType: "occurrence\_threshold" or "recurrence\_after\_inactivity"
 
 </summary>
 
@@ -2096,7 +2096,7 @@ updatedByUserId: string
 
 <summary>
 
-AutomationDeleteResponse object {automation }
+AutomationDeleteResponse object { automation }
 
 </summary>
 
@@ -2104,7 +2104,7 @@ AutomationDeleteResponse object {automation }
 
 <summary>
 
-automation: object {id, ansPolicyId, created, 12 more }
+automation: object { id, ansPolicyId, created, 12 more }
 
 </summary>
 
@@ -2144,7 +2144,7 @@ revision: number
 
 <summary>
 
-scope: "account"or "service"
+scope: "account" or "service"
 
 </summary>
 
@@ -2178,7 +2178,7 @@ threshold: number
 
 <summary>
 
-triggerType: "occurrence\_threshold"or "recurrence\_after\_inactivity"
+triggerType: "occurrence\_threshold" or "recurrence\_after\_inactivity"
 
 </summary>
 

@@ -28,7 +28,7 @@ POST/accounts/{account\_id}/containers/image-preparations
 
 <summary>
 
-ImagePrepareResponse object {image, status, artifact\_digest, reason }
+ImagePrepareResponse object { image, status, artifact\_digest, reason }
 
 Durable preparation state for a container image.
 
@@ -44,7 +44,7 @@ Image url.
 
 <summary>
 
-status: "pending"or "ready"or "error"
+status: "pending" or "ready" or "error"
 
 Current durable preparation state for a container image.
 

@@ -62,7 +62,7 @@ categoryUuid: optional string
 
 <summary>
 
-filters: optional array of object {field, op, value }
+filters: optional array of object { field, op, value }
 
 Structured filters as a JSON array of {field, op, value} objects. Searchable fields: uuid, value, categoryName, description, dateOfDiscovery, tlp, confidence, actorCategory, motive, attributionOrganization, originCountryISO, aliases, externalReferences, opsecLevel, sophisticationLevel, activeDuration, priority, lastSeen, aliasGroupNames. Operators: equals, not, contains, startsWith, endsWith, gt, lt, gte, lte, like, in, find. Use ‘in’ for bulk OR within a single field, e.g. filters=\[{“field”:“originCountryISO”,“op”:“in”,“value”:\[“IR”,“CN”]}]. Multiple entries are AND-joined. Max 10 entries per request, max 100 values per ‘in’. Per-field notes: <code>uuid</code> accepts only ‘equals’ and ‘in’ (other operators throw ValidationError) — matched against the canonical lowercase storage but callers may pass either case (the server lowercases before comparison); index-backed by the column’s UNIQUE constraint and intended for batched UUID → tag resolution. <code>originCountryISO</code> uses its B-tree index for equals/not/in. <code>priority</code> uses its B-tree index for numeric comparisons. Other string columns (<code>actorCategory</code>, <code>motive</code>, etc.) are case-insensitive and unindexed; current catalog size makes this a non-issue. <code>endsWith</code> and <code>aliasGroupNames</code> contains/like are leading-wildcard scans and slow on large result sets. <code>aliasGroupNames</code> matches on the JSON-encoded text, so substrings can cross alias boundaries (a search for “apt28” will also match “apt280” if both appear in the same tag’s alias list).
 
@@ -78,7 +78,7 @@ Tag field to search on. Allowed first-class fields: uuid, value, categoryName, d
 
 <summary>
 
-op: "equals"or "not"or "gt"or 9 more
+op: "equals" or "not" or "gt" or 9 more
 
 Search operator. Use ‘in’ for bulk OR within a single field.
 
@@ -142,7 +142,7 @@ One of the following:
 
 <summary>
 
-value: optional stringor numberor array of stringor number
+value: optional string or number or array of string or number
 
 Search value. String or number for most operators. Array for ‘in’ (max 100 items).
 
@@ -162,7 +162,7 @@ number
 
 <summary>
 
-array of stringor number
+array of string or number
 
 </summary>
 
@@ -208,7 +208,7 @@ Free-text substring match on tag value AND custom-field properties. Searches cas
 
 <summary>
 
-pagination: object {page, pageSize, totalCount, totalPages }
+pagination: object { page, pageSize, totalCount, totalPages }
 
 </summary>
 
@@ -236,7 +236,7 @@ totalPages: number
 
 <summary>
 
-tags: array of object {uuid, value, activeDuration, 34 more }
+tags: array of object { uuid, value, activeDuration, 34 more }
 
 </summary>
 
@@ -256,7 +256,7 @@ activeDuration: optional string
 
 <summary>
 
-activeDuration\_annotated: optional object {value, tlp }
+activeDuration\_annotated: optional object { value, tlp }
 
 </summary>
 
@@ -268,7 +268,7 @@ value: string
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -318,7 +318,7 @@ actorCategory: optional string
 
 <summary>
 
-actorCategory\_annotated: optional object {value, confidence, tlp }
+actorCategory\_annotated: optional object { value, confidence, tlp }
 
 </summary>
 
@@ -334,7 +334,7 @@ confidence: optional number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -380,7 +380,7 @@ One of the following:
 
 <summary>
 
-aliases: optional array of object {value, confidence, tlp }
+aliases: optional array of object { value, confidence, tlp }
 
 Structured aliases ({ value, confidence 1-10, tlp }). Public: returned to all accounts with per-entry TLP filtering (entries with tlp: purple are removed for non-CFONE accounts).
 
@@ -402,7 +402,7 @@ minimum1
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -460,7 +460,7 @@ attributionOrganization: optional string
 
 <summary>
 
-attributionOrganization\_annotated: optional object {value, confidence, tlp }
+attributionOrganization\_annotated: optional object { value, confidence, tlp }
 
 </summary>
 
@@ -476,7 +476,7 @@ confidence: optional number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -556,7 +556,7 @@ externalReferenceLinks: optional array of string
 
 <summary>
 
-externalReferences: optional array of object {url, description }
+externalReferences: optional array of object { url, description }
 
 Structured external references ({ url, description }). Public: returned to all accounts.
 
@@ -578,7 +578,7 @@ description: optional string
 
 <summary>
 
-externalReferences\_annotated: optional array of object {value, tlp }
+externalReferences\_annotated: optional array of object { value, tlp }
 
 </summary>
 
@@ -590,7 +590,7 @@ value: string
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -636,7 +636,7 @@ One of the following:
 
 <summary>
 
-internalAliases: optional array of object {value, confidence, tlp }
+internalAliases: optional array of object { value, confidence, tlp }
 
 Owner-private structured aliases ({ value, confidence 1-10, tlp }). Returned to the owning account and omitted from shared-catalog non-owner responses.
 
@@ -658,7 +658,7 @@ minimum1
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -716,7 +716,7 @@ motive: optional string
 
 <summary>
 
-motive\_annotated: optional object {value, confidence, tlp }
+motive\_annotated: optional object { value, confidence, tlp }
 
 </summary>
 
@@ -732,7 +732,7 @@ confidence: optional number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -782,7 +782,7 @@ opsecLevel: optional string
 
 <summary>
 
-opsecLevel\_annotated: optional object {value, confidence, tlp }
+opsecLevel\_annotated: optional object { value, confidence, tlp }
 
 </summary>
 
@@ -798,7 +798,7 @@ confidence: optional number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -850,7 +850,7 @@ ISO country code (alpha-2 or alpha-3). Normalized to uppercase on read. Null whe
 
 <summary>
 
-originCountryISO\_annotated: optional object {value, confidence, tlp }
+originCountryISO\_annotated: optional object { value, confidence, tlp }
 
 </summary>
 
@@ -866,7 +866,7 @@ confidence: optional number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -916,7 +916,7 @@ priority: optional number
 
 <summary>
 
-priority\_annotated: optional object {value, tlp }
+priority\_annotated: optional object { value, tlp }
 
 </summary>
 
@@ -928,7 +928,7 @@ value: number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -984,7 +984,7 @@ sophisticationLevel: optional string
 
 <summary>
 
-sophisticationLevel\_annotated: optional object {value, confidence, tlp }
+sophisticationLevel\_annotated: optional object { value, confidence, tlp }
 
 </summary>
 
@@ -1000,7 +1000,7 @@ confidence: optional number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -1046,7 +1046,7 @@ One of the following:
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 Tag-level TLP handling marking.
 

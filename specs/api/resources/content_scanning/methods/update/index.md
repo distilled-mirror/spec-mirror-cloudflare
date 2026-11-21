@@ -72,7 +72,7 @@ maxLength32
 
 <summary>
 
-value: "enabled"or "disabled"
+value: "enabled" or "disabled"
 
 The status value for Content Scanning.
 
@@ -120,7 +120,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -162,7 +162,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -182,7 +182,7 @@ pointer: optional string
 
 <summary>
 
-result: object {modified, value }
+result: object { modified, value }
 
 Defines the status for Content Scanning.
 

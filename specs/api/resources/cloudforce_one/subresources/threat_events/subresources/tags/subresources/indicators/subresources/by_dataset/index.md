@@ -36,7 +36,7 @@ GET/accounts/{account\_id}/cloudforce-one/events/dataset/{dataset\_id}/tags/{tag
 
 <summary>
 
-ByDatasetListResponse object {indicators, pagination, failedShardCount, partialResults }
+ByDatasetListResponse object { indicators, pagination, failedShardCount, partialResults }
 
 </summary>
 
@@ -44,7 +44,7 @@ ByDatasetListResponse object {indicators, pagination, failedShardCount, partialR
 
 <summary>
 
-indicators: array of object {createdAt, indicatorType, updatedAt, 7 more }
+indicators: array of object { createdAt, indicatorType, updatedAt, 7 more }
 
 </summary>
 
@@ -82,7 +82,7 @@ The dataset ID this indicator belongs to. Included in list responses.
 
 <summary>
 
-relatedEvents: optional array of object {datasetId, eventId, eventDate }
+relatedEvents: optional array of object { datasetId, eventId, eventDate }
 
 Related events, capped by <code>relatedEventsLimit</code> (default 2). Check <code>relatedEventsHasMore</code> to detect a capped list; pass <code>relatedEventsLimit=-1</code> to retrieve all of them.
 
@@ -116,7 +116,7 @@ True when this indicator appears in more events than <code>relatedEvents</code> 
 
 <summary>
 
-tags: optional array of object {categoryId, categoryName, uuid, value }
+tags: optional array of object { categoryId, categoryName, uuid, value }
 
 </summary>
 
@@ -156,7 +156,7 @@ Traffic Light Protocol designation. UPPERCASE. Possible values: CLEAR, GREEN, AM
 
 <summary>
 
-pagination: object {page, pageSize, totalCount, totalPages }
+pagination: object { page, pageSize, totalCount, totalPages }
 
 </summary>
 

@@ -38,7 +38,7 @@ POST/accounts/{account\_id}/access/keys/rotate
 
 <summary>
 
-KeyGetResponse object {days\_until\_next\_rotation, key\_rotation\_interval\_days, last\_key\_rotation\_at }
+KeyGetResponse object { days\_until\_next\_rotation, key\_rotation\_interval\_days, last\_key\_rotation\_at }
 
 </summary>
 
@@ -74,7 +74,7 @@ formatdate-time
 
 <summary>
 
-KeyUpdateResponse object {days\_until\_next\_rotation, key\_rotation\_interval\_days, last\_key\_rotation\_at }
+KeyUpdateResponse object { days\_until\_next\_rotation, key\_rotation\_interval\_days, last\_key\_rotation\_at }
 
 </summary>
 
@@ -110,7 +110,7 @@ formatdate-time
 
 <summary>
 
-KeyRotateResponse object {days\_until\_next\_rotation, key\_rotation\_interval\_days, last\_key\_rotation\_at }
+KeyRotateResponse object { days\_until\_next\_rotation, key\_rotation\_interval\_days, last\_key\_rotation\_at }
 
 </summary>
 

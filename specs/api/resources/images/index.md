@@ -46,7 +46,7 @@ DELETE/accounts/{account\_id}/images/v1/{image\_id}
 
 <summary>
 
-Image object {id, creator, filename, 4 more }
+Image object { id, creator, filename, 4 more }
 
 </summary>
 
@@ -108,7 +108,7 @@ Object specifying available variants for an image.
 
 <summary>
 
-V1ListResponse object {images }
+V1ListResponse object { images }
 
 </summary>
 
@@ -182,7 +182,7 @@ Object specifying available variants for an image.
 
 <summary>
 
-V1DeleteResponse = unknownor string
+V1DeleteResponse = unknown or string
 
 </summary>
 
@@ -220,7 +220,7 @@ DELETE/accounts/{account\_id}/images/v1/keys/{signing\_key\_name}
 
 <summary>
 
-Key object {name, value }
+Key object { name, value }
 
 </summary>
 
@@ -244,7 +244,7 @@ Key value.
 
 <summary>
 
-KeyListResponse object {keys }
+KeyListResponse object { keys }
 
 </summary>
 
@@ -280,7 +280,7 @@ Key value.
 
 <summary>
 
-KeyUpdateResponse object {keys }
+KeyUpdateResponse object { keys }
 
 </summary>
 
@@ -316,7 +316,7 @@ Key value.
 
 <summary>
 
-KeyDeleteResponse object {keys }
+KeyDeleteResponse object { keys }
 
 </summary>
 
@@ -360,7 +360,7 @@ GET/accounts/{account\_id}/images/v1/stats
 
 <summary>
 
-Stat object {count }
+Stat object { count }
 
 </summary>
 
@@ -368,7 +368,7 @@ Stat object {count }
 
 <summary>
 
-count: optional object {allowed, current }
+count: optional object { allowed, current }
 
 </summary>
 
@@ -420,7 +420,7 @@ DELETE/accounts/{account\_id}/images/v1/variants/{variant\_id}
 
 <summary>
 
-Variant object {variants }
+Variant object { variants }
 
 </summary>
 
@@ -428,7 +428,7 @@ Variant object {variants }
 
 <summary>
 
-variants: optional object {hero }
+variants: optional object { hero }
 
 </summary>
 
@@ -436,7 +436,7 @@ variants: optional object {hero }
 
 <summary>
 
-hero: optional object {id, options, neverRequireSignedURLs }
+hero: optional object { id, options, neverRequireSignedURLs }
 
 </summary>
 
@@ -450,7 +450,7 @@ maxLength99
 
 <summary>
 
-options: object {fit, height, metadata, width }
+options: object { fit, height, metadata, width }
 
 Allows you to define image resizing sizes for different use cases.
 
@@ -460,7 +460,7 @@ Allows you to define image resizing sizes for different use cases.
 
 <summary>
 
-fit: "scale-down"or "contain"or "cover"or 2 more
+fit: "scale-down" or "contain" or "cover" or 2 more
 
 The fit property describes how the width and height dimensions should be interpreted.
 
@@ -504,7 +504,7 @@ minimum1
 
 <summary>
 
-metadata: "keep"or "copyright"or "none"
+metadata: "keep" or "copyright" or "none"
 
 What EXIF data should be preserved in the output image.
 
@@ -562,7 +562,7 @@ Indicates whether the variant can access an image without a signature, regardles
 
 <summary>
 
-VariantGetResponse object {variant }
+VariantGetResponse object { variant }
 
 </summary>
 
@@ -570,7 +570,7 @@ VariantGetResponse object {variant }
 
 <summary>
 
-variant: optional object {id, options, neverRequireSignedURLs }
+variant: optional object { id, options, neverRequireSignedURLs }
 
 </summary>
 
@@ -584,7 +584,7 @@ maxLength99
 
 <summary>
 
-options: object {fit, height, metadata, width }
+options: object { fit, height, metadata, width }
 
 Allows you to define image resizing sizes for different use cases.
 
@@ -594,7 +594,7 @@ Allows you to define image resizing sizes for different use cases.
 
 <summary>
 
-fit: "scale-down"or "contain"or "cover"or 2 more
+fit: "scale-down" or "contain" or "cover" or 2 more
 
 The fit property describes how the width and height dimensions should be interpreted.
 
@@ -638,7 +638,7 @@ minimum1
 
 <summary>
 
-metadata: "keep"or "copyright"or "none"
+metadata: "keep" or "copyright" or "none"
 
 What EXIF data should be preserved in the output image.
 
@@ -692,7 +692,7 @@ Indicates whether the variant can access an image without a signature, regardles
 
 <summary>
 
-VariantCreateResponse object {variant }
+VariantCreateResponse object { variant }
 
 </summary>
 
@@ -700,7 +700,7 @@ VariantCreateResponse object {variant }
 
 <summary>
 
-variant: optional object {id, options, neverRequireSignedURLs }
+variant: optional object { id, options, neverRequireSignedURLs }
 
 </summary>
 
@@ -714,7 +714,7 @@ maxLength99
 
 <summary>
 
-options: object {fit, height, metadata, width }
+options: object { fit, height, metadata, width }
 
 Allows you to define image resizing sizes for different use cases.
 
@@ -724,7 +724,7 @@ Allows you to define image resizing sizes for different use cases.
 
 <summary>
 
-fit: "scale-down"or "contain"or "cover"or 2 more
+fit: "scale-down" or "contain" or "cover" or 2 more
 
 The fit property describes how the width and height dimensions should be interpreted.
 
@@ -768,7 +768,7 @@ minimum1
 
 <summary>
 
-metadata: "keep"or "copyright"or "none"
+metadata: "keep" or "copyright" or "none"
 
 What EXIF data should be preserved in the output image.
 
@@ -822,7 +822,7 @@ Indicates whether the variant can access an image without a signature, regardles
 
 <summary>
 
-VariantEditResponse object {variant }
+VariantEditResponse object { variant }
 
 </summary>
 
@@ -830,7 +830,7 @@ VariantEditResponse object {variant }
 
 <summary>
 
-variant: optional object {id, options, neverRequireSignedURLs }
+variant: optional object { id, options, neverRequireSignedURLs }
 
 </summary>
 
@@ -844,7 +844,7 @@ maxLength99
 
 <summary>
 
-options: object {fit, height, metadata, width }
+options: object { fit, height, metadata, width }
 
 Allows you to define image resizing sizes for different use cases.
 
@@ -854,7 +854,7 @@ Allows you to define image resizing sizes for different use cases.
 
 <summary>
 
-fit: "scale-down"or "contain"or "cover"or 2 more
+fit: "scale-down" or "contain" or "cover" or 2 more
 
 The fit property describes how the width and height dimensions should be interpreted.
 
@@ -898,7 +898,7 @@ minimum1
 
 <summary>
 
-metadata: "keep"or "copyright"or "none"
+metadata: "keep" or "copyright" or "none"
 
 What EXIF data should be preserved in the output image.
 
@@ -952,7 +952,7 @@ Indicates whether the variant can access an image without a signature, regardles
 
 <summary>
 
-VariantDeleteResponse = unknownor string
+VariantDeleteResponse = unknown or string
 
 </summary>
 
@@ -988,7 +988,7 @@ GET/accounts/{account\_id}/images/v2
 
 <summary>
 
-V2ListResponse object {continuation\_token, images }
+V2ListResponse object { continuation\_token, images }
 
 </summary>
 
@@ -1078,7 +1078,7 @@ POST/accounts/{account\_id}/images/v2/direct\_upload
 
 <summary>
 
-DirectUploadCreateResponse object {id, uploadURL }
+DirectUploadCreateResponse object { id, uploadURL }
 
 </summary>
 

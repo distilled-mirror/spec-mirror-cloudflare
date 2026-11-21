@@ -84,7 +84,7 @@ maxLength100
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -108,7 +108,7 @@ One of the following:
 
 <summary>
 
-ipVersion: optional "IPv4"or "IPv6"
+ipVersion: optional "IPv4" or "IPv6"
 
 Address family of the observed paths. Defaults to IPv4.
 
@@ -134,7 +134,7 @@ One of the following:
 
 <summary>
 
-result: object {asnInfo, collectors, meta, paths }
+result: object { asnInfo, collectors, meta, paths }
 
 </summary>
 
@@ -142,7 +142,7 @@ result: object {asnInfo, collectors, meta, paths }
 
 <summary>
 
-asnInfo: map\[object {asn, country, name } ]
+asnInfo: map\[object { asn, country, name } ]
 
 </summary>
 
@@ -176,7 +176,7 @@ collectors: array of string
 
 <summary>
 
-meta: object {dataTime, effectiveCollector, queryTime, stale }
+meta: object { dataTime, effectiveCollector, queryTime, stale }
 
 </summary>
 
@@ -212,7 +212,7 @@ stale: boolean
 
 <summary>
 
-paths: array of object {collectors, pathsCount, peersCount, segment }
+paths: array of object { collectors, pathsCount, peersCount, segment }
 
 </summary>
 

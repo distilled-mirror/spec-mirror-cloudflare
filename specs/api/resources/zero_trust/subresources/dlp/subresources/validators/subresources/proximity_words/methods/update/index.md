@@ -140,7 +140,7 @@ The word or phrase to look for. Must contain 1–128 characters and is matched c
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -162,7 +162,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -182,7 +182,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -204,7 +204,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -270,7 +270,7 @@ Read-only. A validator is attached or detached by updating the detection entry t
 
 <summary>
 
-entries: array of object {id, name, type }
+entries: array of object { id, name, type }
 
 The detection entries using this validator, ordered by name.
 
@@ -290,7 +290,7 @@ name: string
 
 <summary>
 
-type: "custom"or "custom\_prompt\_topic"or "predefined"or 4 more
+type: "custom" or "custom\_prompt\_topic" or "predefined" or 4 more
 
 The type of a detection entry.
 

@@ -48,7 +48,7 @@ POST/accounts/{account\_id}/challenges/widgets/{sitekey}/rotate\_secret
 
 <summary>
 
-Widget object {bot\_fight\_mode, clearance\_level, created\_on, 11 more }
+Widget object { bot\_fight\_mode, clearance\_level, created\_on, 11 more }
 
 A Turnstile widget’s detailed configuration
 
@@ -64,7 +64,7 @@ If bot\_fight\_mode is set to <code>true</code>, Cloudflare issues computational
 
 <summary>
 
-clearance\_level: "no\_clearance"or "jschallenge"or "managed"or "interactive"
+clearance\_level: "no\_clearance" or "jschallenge" or "managed" or "interactive"
 
 If Turnstile is embedded on a Cloudflare site and the widget should grant challenge clearance, this setting can determine the clearance level to be set
 
@@ -116,7 +116,7 @@ Return the Ephemeral ID in /siteverify (ENT only).
 
 <summary>
 
-mode: "non-interactive"or "invisible"or "managed"
+mode: "non-interactive" or "invisible" or "managed"
 
 Widget Mode
 
@@ -168,7 +168,7 @@ Do not show any Cloudflare branding on the widget (ENT only).
 
 <summary>
 
-region: "world"or "china"
+region: "world" or "china"
 
 Region where this widget can be used. This cannot be changed after creation.
 
@@ -206,7 +206,7 @@ maxLength32
 
 <summary>
 
-deployed\_via: optional "wrangler"or "dashboard"or "spin"or 2 more
+deployed\_via: optional "wrangler" or "dashboard" or "spin" or 2 more
 
 Origin that created this widget, recorded at creation time and immutable afterward. Server-derived from the create request; not client-settable. Omitted from the response for widgets created before this field existed.
 
@@ -242,7 +242,7 @@ One of the following:
 
 <summary>
 
-last\_modified\_via: optional "wrangler"or "dashboard"or "spin"or 2 more
+last\_modified\_via: optional "wrangler" or "dashboard" or "spin" or 2 more
 
 Origin of the most recent mutation (create, update, delete, or secret rotation). Server-derived; not client-settable. Omitted for widgets last mutated before this field existed.
 
@@ -288,7 +288,7 @@ Hosts as a hostname or IPv4/IPv6 address represented by strings. The widget will
 
 <summary>
 
-WidgetListResponse object {bot\_fight\_mode, clearance\_level, created\_on, 10 more }
+WidgetListResponse object { bot\_fight\_mode, clearance\_level, created\_on, 10 more }
 
 A Turnstile Widgets configuration as it appears in listings
 
@@ -304,7 +304,7 @@ If bot\_fight\_mode is set to <code>true</code>, Cloudflare issues computational
 
 <summary>
 
-clearance\_level: "no\_clearance"or "jschallenge"or "managed"or "interactive"
+clearance\_level: "no\_clearance" or "jschallenge" or "managed" or "interactive"
 
 If Turnstile is embedded on a Cloudflare site and the widget should grant challenge clearance, this setting can determine the clearance level to be set
 
@@ -356,7 +356,7 @@ Return the Ephemeral ID in /siteverify (ENT only).
 
 <summary>
 
-mode: "non-interactive"or "invisible"or "managed"
+mode: "non-interactive" or "invisible" or "managed"
 
 Widget Mode
 
@@ -408,7 +408,7 @@ Do not show any Cloudflare branding on the widget (ENT only).
 
 <summary>
 
-region: "world"or "china"
+region: "world" or "china"
 
 Region where this widget can be used. This cannot be changed after creation.
 
@@ -440,7 +440,7 @@ maxLength32
 
 <summary>
 
-deployed\_via: optional "wrangler"or "dashboard"or "spin"or 2 more
+deployed\_via: optional "wrangler" or "dashboard" or "spin" or 2 more
 
 Origin that created this widget, recorded at creation time and immutable afterward. Server-derived from the create request; not client-settable. Omitted from the response for widgets created before this field existed.
 
@@ -476,7 +476,7 @@ One of the following:
 
 <summary>
 
-last\_modified\_via: optional "wrangler"or "dashboard"or "spin"or 2 more
+last\_modified\_via: optional "wrangler" or "dashboard" or "spin" or 2 more
 
 Origin of the most recent mutation (create, update, delete, or secret rotation). Server-derived; not client-settable. Omitted for widgets last mutated before this field existed.
 

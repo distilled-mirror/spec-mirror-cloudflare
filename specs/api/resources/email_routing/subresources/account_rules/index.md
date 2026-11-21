@@ -28,7 +28,7 @@ GET/{accounts\_or\_zones}/{account\_or\_zone\_id}/email/routing/rules
 
 <summary>
 
-AccountRule object {id, actions, enabled, 6 more }
+AccountRule object { id, actions, enabled, 6 more }
 
 </summary>
 
@@ -54,7 +54,7 @@ List actions patterns.
 
 <summary>
 
-type: "drop"or "forward"or "worker"
+type: "drop" or "forward" or "worker"
 
 Type of supported action.
 
@@ -92,7 +92,7 @@ List of values for the action. Currently limited to a single value.
 
 <summary>
 
-enabled: optional trueor false
+enabled: optional true or false
 
 Routing rule status.
 
@@ -126,7 +126,7 @@ Matching patterns to forward to your actions.
 
 <summary>
 
-type: "all"or "literal"
+type: "all" or "literal"
 
 Type of matcher.
 
@@ -184,7 +184,7 @@ minimum0
 
 <summary>
 
-source: optional "api"or "wrangler"
+source: optional "api" or "wrangler"
 
 Who manages the rule. <code>api</code> covers dashboard, generic API, and Terraform; <code>wrangler</code> means the rule is managed by a Worker’s wrangler.jsonc. Defaults to <code>api</code> when omitted on write.
 
@@ -216,7 +216,7 @@ maxLength32
 
 <summary>
 
-zone: optional object {name, tag }
+zone: optional object { name, tag }
 
 Zone information for the routing rule.
 

@@ -76,7 +76,7 @@ maxLength32
 
 <summary>
 
-address\_family: optional "v4"or "v6"
+address\_family: optional "v4" or "v6"
 
 If set, only include subnets in the given address family - <code>v4</code> or <code>v6</code>
 
@@ -156,7 +156,7 @@ minimum1
 
 <summary>
 
-sort\_order: optional "asc"or "desc"
+sort\_order: optional "asc" or "desc"
 
 Sort order of the results. <code>asc</code> means oldest to newest, <code>desc</code> means newest to oldest. If not set, they will not be in any particular order.
 
@@ -180,7 +180,7 @@ One of the following:
 
 <summary>
 
-subnet\_types: optional "cloudflare\_source"or "initial\_resolved\_ip"or "warp"
+subnet\_types: optional "cloudflare\_source" or "initial\_resolved\_ip" or "warp"
 
 If set, the types of subnets to include, separated by comma.
 
@@ -210,7 +210,7 @@ One of the following:
 
 <summary>
 
-errors: array of object {code, message, context }
+errors: array of object { code, message, context }
 
 </summary>
 
@@ -238,7 +238,7 @@ Optional error-specific context.
 
 <summary>
 
-messages: array of object {code, message, context }
+messages: array of object { code, message, context }
 
 </summary>
 
@@ -282,7 +282,7 @@ formatuuid
 
 <summary>
 
-capacity: optional object {total, used }
+capacity: optional object { total, used }
 
 IP capacity information for the subnet.
 
@@ -348,7 +348,7 @@ The private IPv4 or IPv6 range defining the subnet, in CIDR notation.
 
 <summary>
 
-subnet\_type: optional "cloudflare\_source"or "initial\_resolved\_ip"or "warp"
+subnet\_type: optional "cloudflare\_source" or "initial\_resolved\_ip" or "warp"
 
 The type of subnet.
 
@@ -386,7 +386,7 @@ Whether the API call was successful
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object { count, page, per\_page, total\_count }
 
 </summary>
 

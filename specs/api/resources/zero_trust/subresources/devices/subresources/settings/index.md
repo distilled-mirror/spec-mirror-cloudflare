@@ -44,7 +44,7 @@ DELETE/accounts/{account\_id}/devices/settings
 
 <summary>
 
-DeviceSettings object {disable\_for\_time, external\_emergency\_signal\_enabled, external\_emergency\_signal\_fingerprint, 6 more }
+DeviceSettings object { disable\_for\_time, external\_emergency\_signal\_enabled, external\_emergency\_signal\_fingerprint, 6 more }
 
 </summary>
 

@@ -86,7 +86,7 @@ name: optional string
 
 <summary>
 
-tags: optional array of object {id, description, name }
+tags: optional array of object { id, description, name }
 
 The desired final state of tags.
 
@@ -122,7 +122,7 @@ name: optional string
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -144,7 +144,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -164,7 +164,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -186,7 +186,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -212,7 +212,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, created\_at, name, 4 more }
+result: optional object { id, created\_at, name, 4 more }
 
 </summary>
 
@@ -236,7 +236,7 @@ name: string
 
 <summary>
 
-tags: array of object {id, created\_at, name, 2 more }
+tags: array of object { id, created\_at, name, 2 more }
 
 </summary>
 

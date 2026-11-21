@@ -36,7 +36,7 @@ DELETE/accounts/{account\_id}/pages/projects/{project\_name}/deployments/{deploy
 
 <summary>
 
-TailCreateResponse object {id, url }
+TailCreateResponse object { id, url }
 
 A tail session for streaming logs from a Pages deployment.
 

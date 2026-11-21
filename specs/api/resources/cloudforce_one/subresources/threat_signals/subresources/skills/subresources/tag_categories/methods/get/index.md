@@ -58,7 +58,7 @@ Must be default-tagging-skill; configures the managed default tagging skill
 
 <summary>
 
-errors: array of object {message }
+errors: array of object { message }
 
 </summary>
 
@@ -74,7 +74,7 @@ message: string
 
 <summary>
 
-result: object {category\_uuids, skill\_id }
+result: object { category\_uuids, skill\_id }
 
 </summary>
 

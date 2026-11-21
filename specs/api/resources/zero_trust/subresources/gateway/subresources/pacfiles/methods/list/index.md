@@ -116,7 +116,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -158,7 +158,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -184,7 +184,7 @@ Indicate whether the API call was successful.
 
 <summary>
 
-result: optional array of object {id, created\_at, description, 4 more }
+result: optional array of object { id, created\_at, description, 4 more }
 
 </summary>
 
@@ -236,7 +236,7 @@ Unique URL to download the PAC file.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

@@ -36,7 +36,7 @@ POST/accounts/{account\_id}/data-security/posture/content/export
 
 <summary>
 
-ContentListResponse object {asset\_id, asset\_name, dlp\_contexts, 4 more }
+ContentListResponse object { asset\_id, asset\_name, dlp\_contexts, 4 more }
 
 Content asset with DLP information.
 
@@ -60,7 +60,7 @@ Name of the asset.
 
 <summary>
 
-dlp\_contexts: array of object {created, entry\_ids, profile\_id, 6 more }
+dlp\_contexts: array of object { created, entry\_ids, profile\_id, 6 more }
 
 DLP context information for this asset.
 
@@ -158,7 +158,7 @@ IDs of DLP profiles that flagged this asset.
 
 <summary>
 
-integration: object {created, last\_hydrated, name, 12 more }
+integration: object { created, last\_hydrated, name, 12 more }
 
 Summary information about an integration.
 
@@ -198,7 +198,7 @@ The vendor-specific permissions associated with the integration.
 
 <summary>
 
-policy: object {id, client\_id, compliance\_level, 4 more }
+policy: object { id, client\_id, compliance\_level, 4 more }
 
 Policy configuration for an integration.
 
@@ -278,7 +278,7 @@ Whether the integrations permissions can be updated.
 
 <summary>
 
-vendor: object {id, description, display\_name, 5 more }
+vendor: object { id, description, display\_name, 5 more }
 
 Information about a vendor/service provider.
 
@@ -344,7 +344,7 @@ The policies related to the vendor.
 
 <summary>
 
-zt\_enrollments: array of object {id, description, display\_name, enabled }
+zt\_enrollments: array of object { id, description, display\_name, enabled }
 
 Zero Trust products associated with this integration.
 
@@ -390,7 +390,7 @@ formatuuid
 
 <summary>
 
-credential\_health\_status: optional "Initializing"or "Healthy"or "Unhealthy"
+credential\_health\_status: optional "Initializing" or "Healthy" or "Unhealthy"
 
 Health status of integration credentials.
 
@@ -454,7 +454,7 @@ formatdate-time
 
 <summary>
 
-ContentExportResponse object {id, status, type, 5 more }
+ContentExportResponse object { id, status, type, 5 more }
 
 Information about an export job.
 
@@ -472,7 +472,7 @@ formatuuid
 
 <summary>
 
-status: "Pending"or "Success"or "Failure"or 2 more
+status: "Pending" or "Success" or "Failure" or 2 more
 
 Status of an export job.
 
@@ -508,7 +508,7 @@ One of the following:
 
 <summary>
 
-type: "finding"or "findingInstance"or "content"or "remediationJob"
+type: "finding" or "findingInstance" or "content" or "remediationJob"
 
 Type of export job.
 

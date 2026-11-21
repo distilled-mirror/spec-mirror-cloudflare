@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Realtime Admin``Realtime`
+`Realtime Read``Realtime Admin``Realtime`
 
 ##### P ath ParametersExpand Collapse
 
@@ -94,7 +94,7 @@ List all breakout rooms
 
 <summary>
 
-data: optional object {id, associated\_id, created\_at, 11 more }
+data: optional object { id, associated\_id, created\_at, 11 more }
 
 </summary>
 
@@ -156,7 +156,7 @@ timestamp when session started
 
 <summary>
 
-status: "LIVE"or "ENDED"
+status: "LIVE" or "ENDED"
 
 current status of session
 
@@ -180,7 +180,7 @@ One of the following:
 
 <summary>
 
-type: "meeting"or "livestream"or "participant"
+type: "meeting" or "livestream" or "participant"
 
 type of session
 

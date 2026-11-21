@@ -74,7 +74,7 @@ dataset: string
 
 <summary>
 
-filters: array of object {name, op, values }
+filters: array of object { name, op, values }
 
 Filters to apply before aggregating results.
 
@@ -96,7 +96,7 @@ Filter operator. Common values: <code>eq</code>, <code>neq</code>, <code>in</cod
 
 <summary>
 
-values: array of stringor booleanor number
+values: array of string or boolean or number
 
 Values to match against. Type depends on the column.
 
@@ -174,7 +174,7 @@ formatdate-time
 
 <summary>
 
-errors: array of object {code, message }
+errors: array of object { code, message }
 
 </summary>
 
@@ -194,7 +194,7 @@ message: optional string
 
 <summary>
 
-messages: array of object {code, message }
+messages: array of object { code, message }
 
 </summary>
 

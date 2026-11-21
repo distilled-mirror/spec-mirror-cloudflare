@@ -76,7 +76,7 @@ minLength32
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -98,7 +98,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -118,7 +118,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -140,7 +140,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -166,7 +166,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional array of object {client\_id, visibility, allowed\_cors\_origins, 17 more }
+result: optional array of object { client\_id, visibility, allowed\_cors\_origins, 17 more }
 
 </summary>
 
@@ -180,7 +180,7 @@ The unique identifier for an OAuth client.
 
 <summary>
 
-visibility: "public"or "private"
+visibility: "public" or "private"
 
 Visibility of the OAuth client.
 
@@ -222,7 +222,7 @@ URL of the home page of the client.
 
 <summary>
 
-client\_uri\_verification: optional object {status, text }
+client\_uri\_verification: optional object { status, text }
 
 Client URI domain control verification state.
 
@@ -232,7 +232,7 @@ Client URI domain control verification state.
 
 <summary>
 
-status: optional "pending"or "in\_progress"or "verified"or "failed"
+status: optional "pending" or "in\_progress" or "verified" or "failed"
 
 Current verification status for the client URI host.
 
@@ -282,7 +282,7 @@ formatdate-time
 
 <summary>
 
-grant\_types: optional array of "authorization\_code"or "refresh\_token"
+grant\_types: optional array of "authorization\_code" or "refresh\_token"
 
 Array of OAuth grant types the client is allowed to use. <code>authorization_code</code> is required; <code>refresh_token</code> may be included optionally.
 
@@ -350,7 +350,7 @@ Array of allowed redirect URIs for the client.
 
 <summary>
 
-response\_types: optional array of "token"or "id\_token"or "code"
+response\_types: optional array of "token" or "id\_token" or "code"
 
 Array of OAuth response types the client is allowed to use.
 
@@ -384,7 +384,7 @@ Array of OAuth scopes the client is allowed to request. Colon-delimited scopes a
 
 <summary>
 
-token\_endpoint\_auth\_method: optional "none"or "client\_secret\_basic"or "client\_secret\_post"
+token\_endpoint\_auth\_method: optional "none" or "client\_secret\_basic" or "client\_secret\_post"
 
 The authentication method the client uses at the token endpoint.
 
@@ -430,7 +430,7 @@ formatdate-time
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object { count, page, per\_page, total\_count }
 
 </summary>
 

@@ -60,6 +60,10 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 </details>
 
+##### Accepted Permissions (at least one required)
+
+`Zero Trust Read``Zero Trust Write`
+
 ##### P ath ParametersExpand Collapse
 
 account\_id: string
@@ -74,7 +78,7 @@ Specify the Cloudflare account identifier.
 
 <summary>
 
-CustomCertificateSettings object {enabled, id, binding\_status, updated\_at }
+CustomCertificateSettings object { enabled, id, binding\_status, updated\_at }
 
 Specify custom certificate settings for BYO-PKI. This field is deprecated; use <code>certificate</code> instead.
 

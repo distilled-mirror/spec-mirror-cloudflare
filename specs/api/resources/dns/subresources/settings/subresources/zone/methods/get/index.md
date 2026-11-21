@@ -76,7 +76,7 @@ maxLength32
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -98,7 +98,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -118,7 +118,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -140,7 +140,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -166,7 +166,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {flatten\_all\_cnames, internal\_dns, multi\_provider, 5 more }
+result: optional object { flatten\_all\_cnames, internal\_dns, multi\_provider, 5 more }
 
 </summary>
 
@@ -180,7 +180,7 @@ Whether to flatten all CNAME records in the zone. Note that, due to DNS limitati
 
 <summary>
 
-internal\_dns: object {reference\_zone\_id }
+internal\_dns: object { reference\_zone\_id }
 
 Settings for this internal zone.
 
@@ -206,7 +206,7 @@ Whether to enable multi-provider DNS, which causes Cloudflare to activate the zo
 
 <summary>
 
-nameservers: object {type } or object {type, ns\_set } or object {nameserver\_set\_id, type }
+nameservers: object { type } or object { type, ns\_set } or object { nameserver\_set\_id, type }
 
 Controls the nameservers through which the zone is available.
 
@@ -218,7 +218,7 @@ One of the following:
 
 <summary>
 
-DNSSettingsZoneNameserversCloudflare object {type }
+DNSSettingsZoneNameserversCloudflare object { type }
 
 </summary>
 
@@ -226,7 +226,7 @@ DNSSettingsZoneNameserversCloudflare object {type }
 
 <summary>
 
-type: "cloudflare.standard"or "cloudflare.advanced"
+type: "cloudflare.standard" or "cloudflare.advanced"
 
 Nameserver type.
 
@@ -254,7 +254,7 @@ One of the following:
 
 <summary>
 
-DNSSettingsZoneNameserversCustomExisting object {type, ns\_set }
+DNSSettingsZoneNameserversCustomExisting object { type, ns\_set }
 
 </summary>
 
@@ -262,7 +262,7 @@ DNSSettingsZoneNameserversCustomExisting object {type, ns\_set }
 
 <summary>
 
-type: "custom.account"or "custom.tenant"or "custom.zone"
+type: "custom.account" or "custom.tenant" or "custom.zone"
 
 Nameserver type.
 
@@ -304,7 +304,7 @@ minimum1
 
 <summary>
 
-DNSSettingsZoneNameserversCustomSet object {nameserver\_set\_id, type }
+DNSSettingsZoneNameserversCustomSet object { nameserver\_set\_id, type }
 
 </summary>
 
@@ -352,7 +352,7 @@ Allows a Secondary DNS zone to use (proxied) override records and CNAME flatteni
 
 <summary>
 
-soa: object {expire, min\_ttl, mname, 4 more }
+soa: object { expire, min\_ttl, mname, 4 more }
 
 Components of the zone’s SOA record.
 
@@ -428,7 +428,7 @@ minimum300
 
 <summary>
 
-zone\_mode: "standard"or "cdn\_only"or "dns\_only"
+zone\_mode: "standard" or "cdn\_only" or "dns\_only"
 
 Whether the zone mode is a regular or CDN/DNS only zone.
 

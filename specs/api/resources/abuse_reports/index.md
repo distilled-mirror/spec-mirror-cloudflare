@@ -40,7 +40,7 @@ The result should be ‘success’ for successful response
 
 <summary>
 
-AbuseReportGetResponse object {id, cdate, domain, 8 more }
+AbuseReportGetResponse object { id, cdate, domain, 8 more }
 
 </summary>
 
@@ -66,7 +66,7 @@ Domain that relates to the report.
 
 <summary>
 
-mitigation\_summary: object {accepted\_url\_count, active\_count, external\_host\_notified, 2 more }
+mitigation\_summary: object { accepted\_url\_count, active\_count, external\_host\_notified, 2 more }
 
 A summary of the mitigations related to this report.
 
@@ -110,7 +110,7 @@ How many mitigations are pending their effective date.
 
 <summary>
 
-status: "accepted"or "in\_review"
+status: "accepted" or "in\_review"
 
 An enum value that represents the status of an abuse record
 
@@ -134,7 +134,7 @@ One of the following:
 
 <summary>
 
-type: "PHISH"or "GEN"or "THREAT"or 6 more
+type: "PHISH" or "GEN" or "THREAT" or 6 more
 
 The abuse report type
 
@@ -204,7 +204,7 @@ Original work / Targeted brand in the alleged abuse.
 
 <summary>
 
-submitter: optional object {company, email, name, telephone }
+submitter: optional object { company, email, name, telephone }
 
 Information about the submitter of the report.
 
@@ -242,7 +242,7 @@ urls: optional array of string
 
 <summary>
 
-AbuseReportListResponse object {reports }
+AbuseReportListResponse object { reports }
 
 </summary>
 
@@ -250,7 +250,7 @@ AbuseReportListResponse object {reports }
 
 <summary>
 
-reports: array of object {id, cdate, domain, 8 more }
+reports: array of object { id, cdate, domain, 8 more }
 
 </summary>
 
@@ -276,7 +276,7 @@ Domain that relates to the report.
 
 <summary>
 
-mitigation\_summary: object {accepted\_url\_count, active\_count, external\_host\_notified, 2 more }
+mitigation\_summary: object { accepted\_url\_count, active\_count, external\_host\_notified, 2 more }
 
 A summary of the mitigations related to this report.
 
@@ -320,7 +320,7 @@ How many mitigations are pending their effective date.
 
 <summary>
 
-status: "accepted"or "in\_review"
+status: "accepted" or "in\_review"
 
 An enum value that represents the status of an abuse record
 
@@ -344,7 +344,7 @@ One of the following:
 
 <summary>
 
-type: "PHISH"or "GEN"or "THREAT"or 6 more
+type: "PHISH" or "GEN" or "THREAT" or 6 more
 
 The abuse report type
 
@@ -414,7 +414,7 @@ Original work / Targeted brand in the alleged abuse.
 
 <summary>
 
-submitter: optional object {company, email, name, telephone }
+submitter: optional object { company, email, name, telephone }
 
 Information about the submitter of the report.
 
@@ -468,7 +468,7 @@ GET/accounts/{account\_id}/abuse-reports/submitted/{report\_id}
 
 <summary>
 
-SubmittedListResponse object {reports }
+SubmittedListResponse object { reports }
 
 </summary>
 
@@ -476,7 +476,7 @@ SubmittedListResponse object {reports }
 
 <summary>
 
-reports: array of object {id, cdate, denial\_reason, 4 more }
+reports: array of object { id, cdate, denial\_reason, 4 more }
 
 </summary>
 
@@ -498,7 +498,7 @@ formatdate-time
 
 <summary>
 
-denial\_reason: "unable\_to\_confirm"or "incomplete\_report"or "not\_on\_cloudflare"or 10 more
+denial\_reason: "unable\_to\_confirm" or "incomplete\_report" or "not\_on\_cloudflare" or 10 more
 
 Submitter-safe reason for a denied report. Null when unavailable.
 
@@ -572,7 +572,7 @@ Domain identified in the report.
 
 <summary>
 
-status: "submitted"or "accepted"or "denied"
+status: "submitted" or "accepted" or "denied"
 
 Status visible to the account that submitted the report.
 
@@ -600,7 +600,7 @@ One of the following:
 
 <summary>
 
-type: "PHISH"or "GEN"or "THREAT"or 6 more
+type: "PHISH" or "GEN" or "THREAT" or 6 more
 
 The abuse report type
 
@@ -652,7 +652,7 @@ One of the following:
 
 <summary>
 
-submitter: optional object {company, email, name, telephone }
+submitter: optional object { company, email, name, telephone }
 
 Information about the submitter of the report.
 
@@ -690,7 +690,7 @@ telephone: optional string
 
 <summary>
 
-SubmittedGetResponse object {id, cdate, denial\_reason, 25 more }
+SubmittedGetResponse object { id, cdate, denial\_reason, 25 more }
 
 </summary>
 
@@ -712,7 +712,7 @@ formatdate-time
 
 <summary>
 
-denial\_reason: "unable\_to\_confirm"or "incomplete\_report"or "not\_on\_cloudflare"or 10 more
+denial\_reason: "unable\_to\_confirm" or "incomplete\_report" or "not\_on\_cloudflare" or 10 more
 
 Submitter-safe reason for a denied report. Null when unavailable.
 
@@ -792,7 +792,7 @@ Whether the submitter provided the Digital Services Act attestation.
 
 <summary>
 
-status: "submitted"or "accepted"or "denied"
+status: "submitted" or "accepted" or "denied"
 
 Status visible to the account that submitted the report.
 
@@ -820,7 +820,7 @@ One of the following:
 
 <summary>
 
-type: "PHISH"or "GEN"or "THREAT"or 6 more
+type: "PHISH" or "GEN" or "THREAT" or 6 more
 
 The abuse report type
 
@@ -944,7 +944,7 @@ Ports and protocols supplied with a network abuse report.
 
 <summary>
 
-reg\_who\_request: optional object {reg\_who\_good\_faith\_affirmation, reg\_who\_lawful\_processing\_agreement, reg\_who\_legal\_basis, 4 more }
+reg\_who\_request: optional object { reg\_who\_good\_faith\_affirmation, reg\_who\_lawful\_processing\_agreement, reg\_who\_legal\_basis, 4 more }
 
 RDP-mandated fields for registrar WHOIS data disclosure requests.
 
@@ -974,7 +974,7 @@ maxLength5000
 
 <summary>
 
-reg\_who\_request\_type: "disclosure"or "invalid\_whois"
+reg\_who\_request\_type: "disclosure" or "invalid\_whois"
 
 The type of WHOIS data request per RDP procedure.
 
@@ -998,7 +998,7 @@ One of the following:
 
 <summary>
 
-reg\_who\_requested\_data\_elements: array of "registrant\_name"or "registrant\_organization"or "registrant\_email"or 14 more
+reg\_who\_requested\_data\_elements: array of "registrant\_name" or "registrant\_organization" or "registrant\_email" or 14 more
 
 The specific WHOIS data elements being requested per RDP 10.2.2. Required for all WHOIS requests.
 
@@ -1090,7 +1090,7 @@ maxLength5000
 
 <summary>
 
-reg\_who\_requestor\_type: optional "government"or "corporation"or "individual"
+reg\_who\_requestor\_type: optional "government" or "corporation" or "individual"
 
 The nature of the requestor per RDP 10.2.1.2.
 
@@ -1140,7 +1140,7 @@ Source IP addresses supplied with a network abuse report.
 
 <summary>
 
-submitter: optional object {company, email, name, telephone }
+submitter: optional object { company, email, name, telephone }
 
 Information about the submitter of the report.
 
@@ -1206,7 +1206,7 @@ GET/accounts/{account\_id}/abuse-reports/submitted/{report\_id}/emails
 
 <summary>
 
-EmailListResponse object {emails }
+EmailListResponse object { emails }
 
 </summary>
 
@@ -1214,7 +1214,7 @@ EmailListResponse object {emails }
 
 <summary>
 
-emails: array of object {id, body, recipient, 2 more }
+emails: array of object { id, body, recipient, 2 more }
 
 </summary>
 
@@ -1272,7 +1272,7 @@ POST/accounts/{account\_id}/abuse-reports/{report\_id}/mitigations/appeal
 
 <summary>
 
-MitigationListResponse object {mitigations }
+MitigationListResponse object { mitigations }
 
 </summary>
 
@@ -1280,7 +1280,7 @@ MitigationListResponse object {mitigations }
 
 <summary>
 
-mitigations: array of object {id, effective\_date, entity\_id, 3 more }
+mitigations: array of object { id, effective\_date, entity\_id, 3 more }
 
 </summary>
 
@@ -1304,7 +1304,7 @@ entity\_id: string
 
 <summary>
 
-entity\_type: "url\_pattern"or "account"or "zone"or 2 more
+entity\_type: "url\_pattern" or "account" or "zone" or 2 more
 
 The type of entity targeted by a mitigation.
 
@@ -1340,7 +1340,7 @@ One of the following:
 
 <summary>
 
-status: "pending"or "active"or "in\_review"or 2 more
+status: "pending" or "active" or "in\_review" or 2 more
 
 The status of a mitigation
 
@@ -1390,7 +1390,7 @@ The type of mitigation applied to a reported entity.
 
 <summary>
 
-MitigationReviewResponse object {id, effective\_date, entity\_id, 3 more }
+MitigationReviewResponse object { id, effective\_date, entity\_id, 3 more }
 
 </summary>
 
@@ -1414,7 +1414,7 @@ entity\_id: string
 
 <summary>
 
-entity\_type: "url\_pattern"or "account"or "zone"or 2 more
+entity\_type: "url\_pattern" or "account" or "zone" or 2 more
 
 The type of entity targeted by a mitigation.
 
@@ -1450,7 +1450,7 @@ One of the following:
 
 <summary>
 
-status: "pending"or "active"or "in\_review"or 2 more
+status: "pending" or "active" or "in\_review" or 2 more
 
 The status of a mitigation
 

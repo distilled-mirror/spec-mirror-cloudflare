@@ -38,7 +38,7 @@ GET/accounts/{account\_id}/cloudforce-one/v2/brand-protection/logo/queries
 
 <summary>
 
-LogoCreateResponse object {message, success, query\_id }
+LogoCreateResponse object { message, success, query\_id }
 
 </summary>
 
@@ -64,7 +64,7 @@ ID of the created logo query.
 
 <summary>
 
-LogoDeleteResponse object {message, success }
+LogoDeleteResponse object { message, success }
 
 </summary>
 
@@ -84,7 +84,7 @@ success: boolean
 
 <summary>
 
-LogoGetResponse = array of object {id, r2\_path, similarity\_threshold, 4 more }
+LogoGetResponse = array of object { id, r2\_path, similarity\_threshold, 4 more }
 
 </summary>
 

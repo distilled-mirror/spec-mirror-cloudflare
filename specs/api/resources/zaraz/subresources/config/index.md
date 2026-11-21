@@ -32,7 +32,7 @@ PUT/zones/{zone\_id}/settings/zaraz/config
 
 <summary>
 
-Configuration object {dataLayer, debugKey, settings, 7 more }
+Configuration object { dataLayer, debugKey, settings, 7 more }
 
 Zaraz configuration.
 
@@ -54,7 +54,7 @@ The key for Zaraz debug mode.
 
 <summary>
 
-settings: object {autoInjectScript, botScoreThreshold, contextEnricher, 12 more }
+settings: object { autoInjectScript, botScoreThreshold, contextEnricher, 12 more }
 
 General Zaraz settings.
 
@@ -78,7 +78,7 @@ formatint64
 
 <summary>
 
-contextEnricher: optional object {escapedWorkerName, workerTag }
+contextEnricher: optional object { escapedWorkerName, workerTag }
 
 Details of the worker that receives and edits Zaraz Context object.
 
@@ -176,7 +176,7 @@ Custom endpoint for Zaraz tracking requests.
 
 <summary>
 
-tools: map\[object {blockingTriggers, component, defaultFields, 10 more } or object {blockingTriggers, component, defaultFields, 11 more } ]
+tools: map\[object { blockingTriggers, component, defaultFields, 10 more } or object { blockingTriggers, component, defaultFields, 11 more } ]
 
 Tools set up under Zaraz configuration, where key is the alpha-numeric tool ID and value is the tool configuration object.
 
@@ -188,7 +188,7 @@ One of the following:
 
 <summary>
 
-ZarazManagedComponent object {blockingTriggers, component, defaultFields, 10 more }
+ZarazManagedComponent object { blockingTriggers, component, defaultFields, 10 more }
 
 </summary>
 
@@ -208,7 +208,7 @@ Name of the Managed Component the tool runs, for example <code>google-analytics_
 
 <summary>
 
-defaultFields: map\[stringor boolean]
+defaultFields: map\[string or boolean]
 
 Default fields for tool’s actions.
 
@@ -250,7 +250,7 @@ List of permissions granted to the component.
 
 <summary>
 
-settings: map\[stringor boolean]
+settings: map\[string or boolean]
 
 Tool’s settings.
 
@@ -376,7 +376,7 @@ Vendor’s Privacy Policy URL for TCF compliant consent modal, required for Cust
 
 <summary>
 
-Worker object {blockingTriggers, component, defaultFields, 11 more }
+Worker object { blockingTriggers, component, defaultFields, 11 more }
 
 </summary>
 
@@ -396,7 +396,7 @@ Name of the Managed Component the tool runs, for example <code>google-analytics_
 
 <summary>
 
-defaultFields: map\[stringor boolean]
+defaultFields: map\[string or boolean]
 
 Default fields for tool’s actions.
 
@@ -438,7 +438,7 @@ List of permissions granted to the component.
 
 <summary>
 
-settings: map\[stringor boolean]
+settings: map\[string or boolean]
 
 Tool’s settings.
 
@@ -466,7 +466,7 @@ type: "custom-mc"
 
 <summary>
 
-worker: object {escapedWorkerName, workerTag, mutableId }
+worker: object { escapedWorkerName, workerTag, mutableId }
 
 Cloudflare Worker that acts as a Managed Component.
 
@@ -600,7 +600,7 @@ Vendor’s Privacy Policy URL for TCF compliant consent modal, required for Cust
 
 <summary>
 
-triggers: map\[object {excludeRules, loadRules, name, 2 more } ]
+triggers: map\[object { excludeRules, loadRules, name, 2 more } ]
 
 Triggers set up under Zaraz configuration, where key is the trigger alpha-numeric ID and value is the trigger configuration.
 
@@ -610,7 +610,7 @@ Triggers set up under Zaraz configuration, where key is the trigger alpha-numeri
 
 <summary>
 
-excludeRules: array of object {id, match, op, value } or object {id, action, settings } or object {id, action, settings } or 4 more
+excludeRules: array of object { id, match, op, value } or object { id, action, settings } or object { id, action, settings } or 4 more
 
 Rules defining when the trigger is not fired.
 
@@ -622,7 +622,7 @@ One of the following:
 
 <summary>
 
-ZarazLoadRule object {id, match, op, value }
+ZarazLoadRule object { id, match, op, value }
 
 </summary>
 
@@ -638,7 +638,7 @@ match: string
 
 <summary>
 
-op: "CONTAINS"or "EQUALS"or "STARTS\_WITH"or 7 more
+op: "CONTAINS" or "EQUALS" or "STARTS\_WITH" or 7 more
 
 </summary>
 
@@ -700,7 +700,7 @@ value: string
 
 <summary>
 
-ZarazClickListenerRule object {id, action, settings }
+ZarazClickListenerRule object { id, action, settings }
 
 </summary>
 
@@ -716,7 +716,7 @@ action: "clickListener"
 
 <summary>
 
-settings: object {selector, type, waitForTags }
+settings: object { selector, type, waitForTags }
 
 </summary>
 
@@ -728,7 +728,7 @@ selector: string
 
 <summary>
 
-type: "xpath"or "css"
+type: "xpath" or "css"
 
 </summary>
 
@@ -764,7 +764,7 @@ minimum0
 
 <summary>
 
-ZarazTimerRule object {id, action, settings }
+ZarazTimerRule object { id, action, settings }
 
 </summary>
 
@@ -780,7 +780,7 @@ action: "timer"
 
 <summary>
 
-settings: object {interval, limit }
+settings: object { interval, limit }
 
 </summary>
 
@@ -808,7 +808,7 @@ minimum0
 
 <summary>
 
-ZarazFormSubmissionRule object {id, action, settings }
+ZarazFormSubmissionRule object { id, action, settings }
 
 </summary>
 
@@ -824,7 +824,7 @@ action: "formSubmission"
 
 <summary>
 
-settings: object {selector, validate }
+settings: object { selector, validate }
 
 </summary>
 
@@ -848,7 +848,7 @@ validate: boolean
 
 <summary>
 
-ZarazVariableMatchRule object {id, action, settings }
+ZarazVariableMatchRule object { id, action, settings }
 
 </summary>
 
@@ -864,7 +864,7 @@ action: "variableMatch"
 
 <summary>
 
-settings: object {match, variable }
+settings: object { match, variable }
 
 </summary>
 
@@ -888,7 +888,7 @@ variable: string
 
 <summary>
 
-ZarazScrollDepthRule object {id, action, settings }
+ZarazScrollDepthRule object { id, action, settings }
 
 </summary>
 
@@ -904,7 +904,7 @@ action: "scrollDepth"
 
 <summary>
 
-settings: object {positions }
+settings: object { positions }
 
 </summary>
 
@@ -924,7 +924,7 @@ positions: string
 
 <summary>
 
-ZarazElementVisibilityRule object {id, action, settings }
+ZarazElementVisibilityRule object { id, action, settings }
 
 </summary>
 
@@ -940,7 +940,7 @@ action: "elementVisibility"
 
 <summary>
 
-settings: object {selector }
+settings: object { selector }
 
 </summary>
 
@@ -964,7 +964,7 @@ selector: string
 
 <summary>
 
-loadRules: array of object {id, match, op, value } or object {id, action, settings } or object {id, action, settings } or 4 more
+loadRules: array of object { id, match, op, value } or object { id, action, settings } or object { id, action, settings } or 4 more
 
 Rules defining when the trigger is fired.
 
@@ -976,7 +976,7 @@ One of the following:
 
 <summary>
 
-ZarazLoadRule object {id, match, op, value }
+ZarazLoadRule object { id, match, op, value }
 
 </summary>
 
@@ -992,7 +992,7 @@ match: string
 
 <summary>
 
-op: "CONTAINS"or "EQUALS"or "STARTS\_WITH"or 7 more
+op: "CONTAINS" or "EQUALS" or "STARTS\_WITH" or 7 more
 
 </summary>
 
@@ -1054,7 +1054,7 @@ value: string
 
 <summary>
 
-ZarazClickListenerRule object {id, action, settings }
+ZarazClickListenerRule object { id, action, settings }
 
 </summary>
 
@@ -1070,7 +1070,7 @@ action: "clickListener"
 
 <summary>
 
-settings: object {selector, type, waitForTags }
+settings: object { selector, type, waitForTags }
 
 </summary>
 
@@ -1082,7 +1082,7 @@ selector: string
 
 <summary>
 
-type: "xpath"or "css"
+type: "xpath" or "css"
 
 </summary>
 
@@ -1118,7 +1118,7 @@ minimum0
 
 <summary>
 
-ZarazTimerRule object {id, action, settings }
+ZarazTimerRule object { id, action, settings }
 
 </summary>
 
@@ -1134,7 +1134,7 @@ action: "timer"
 
 <summary>
 
-settings: object {interval, limit }
+settings: object { interval, limit }
 
 </summary>
 
@@ -1162,7 +1162,7 @@ minimum0
 
 <summary>
 
-ZarazFormSubmissionRule object {id, action, settings }
+ZarazFormSubmissionRule object { id, action, settings }
 
 </summary>
 
@@ -1178,7 +1178,7 @@ action: "formSubmission"
 
 <summary>
 
-settings: object {selector, validate }
+settings: object { selector, validate }
 
 </summary>
 
@@ -1202,7 +1202,7 @@ validate: boolean
 
 <summary>
 
-ZarazVariableMatchRule object {id, action, settings }
+ZarazVariableMatchRule object { id, action, settings }
 
 </summary>
 
@@ -1218,7 +1218,7 @@ action: "variableMatch"
 
 <summary>
 
-settings: object {match, variable }
+settings: object { match, variable }
 
 </summary>
 
@@ -1242,7 +1242,7 @@ variable: string
 
 <summary>
 
-ZarazScrollDepthRule object {id, action, settings }
+ZarazScrollDepthRule object { id, action, settings }
 
 </summary>
 
@@ -1258,7 +1258,7 @@ action: "scrollDepth"
 
 <summary>
 
-settings: object {positions }
+settings: object { positions }
 
 </summary>
 
@@ -1278,7 +1278,7 @@ positions: string
 
 <summary>
 
-ZarazElementVisibilityRule object {id, action, settings }
+ZarazElementVisibilityRule object { id, action, settings }
 
 </summary>
 
@@ -1294,7 +1294,7 @@ action: "elementVisibility"
 
 <summary>
 
-settings: object {selector }
+settings: object { selector }
 
 </summary>
 
@@ -1338,7 +1338,7 @@ system: optional "pageload"
 
 <summary>
 
-variables: map\[object {name, type, value } or object {name, type, value } or object {name, type, value } ]
+variables: map\[object { name, type, value } or object { name, type, value } or object { name, type, value } ]
 
 Variables set up under Zaraz configuration, where key is the variable alpha-numeric ID and value is the variable configuration. Values of variables of type secret are not included.
 
@@ -1350,7 +1350,7 @@ One of the following:
 
 <summary>
 
-String object {name, type, value }
+String object { name, type, value }
 
 </summary>
 
@@ -1374,7 +1374,7 @@ value: string
 
 <summary>
 
-Secret object {name, type, value }
+Secret object { name, type, value }
 
 </summary>
 
@@ -1398,7 +1398,7 @@ value: string
 
 <summary>
 
-Worker object {name, type, value }
+Worker object { name, type, value }
 
 </summary>
 
@@ -1414,7 +1414,7 @@ type: "worker"
 
 <summary>
 
-value: object {escapedWorkerName, workerTag }
+value: object { escapedWorkerName, workerTag }
 
 </summary>
 
@@ -1448,7 +1448,7 @@ Zaraz internal version of the config.
 
 <summary>
 
-analytics: optional object {defaultPurpose, enabled, sessionExpTime }
+analytics: optional object { defaultPurpose, enabled, sessionExpTime }
 
 Cloudflare Monitoring settings.
 
@@ -1484,7 +1484,7 @@ minimum60
 
 <summary>
 
-consent: optional object {enabled, buttonTextTranslations, companyEmail, 12 more }
+consent: optional object { enabled, buttonTextTranslations, companyEmail, 12 more }
 
 Consent management configuration.
 
@@ -1544,7 +1544,7 @@ hideModal: optional boolean
 
 <summary>
 
-purposes: optional map\[object {description, name } ]
+purposes: optional map\[object { description, name } ]
 
 Object where keys are purpose alpha-numeric IDs.
 
@@ -1566,7 +1566,7 @@ name: string
 
 <summary>
 
-purposesWithTranslations: optional map\[object {description, name, order } ]
+purposesWithTranslations: optional map\[object { description, name, order } ]
 
 Object where keys are purpose alpha-numeric IDs.
 

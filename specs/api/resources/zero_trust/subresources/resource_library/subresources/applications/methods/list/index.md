@@ -155,7 +155,7 @@ minLength2
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -177,7 +177,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -197,7 +197,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -219,7 +219,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -245,7 +245,7 @@ Indicates whether the API call was successful.
 
 <summary>
 
-result: optional array of object {id, application\_confidence\_score, application\_score\_composition, 16 more }
+result: optional array of object { id, application\_confidence\_score, application\_score\_composition, 16 more }
 
 Returns the list of applications.
 
@@ -355,7 +355,7 @@ Ports matched by the application, in <code>protocol/port</code> or inclusive <co
 
 <summary>
 
-review\_status: optional "approved"or "unapproved"or "in\_review"or "unreviewed"
+review\_status: optional "approved" or "unapproved" or "in\_review" or "unreviewed"
 
 The account-specific Gateway review status. Applications with no assigned review status are returned as <code>unreviewed</code>.
 
@@ -393,7 +393,7 @@ Support domains matched by the application.
 
 <summary>
 
-supported: optional array of "GATEWAY"or "ACCESS"or "CASB"
+supported: optional array of "GATEWAY" or "ACCESS" or "CASB"
 
 Cloudflare products that support this application.
 
@@ -437,7 +437,7 @@ Returns the application version.
 
 <summary>
 
-result\_info: optional object {count, cursor, page, 3 more }
+result\_info: optional object { count, cursor, page, 3 more }
 
 </summary>
 

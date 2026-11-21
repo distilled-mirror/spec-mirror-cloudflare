@@ -46,7 +46,7 @@ DELETE/accounts/{account\_id}/devices/networks/{network\_id}
 
 <summary>
 
-DeviceNetwork object {config, name, network\_id, type }
+DeviceNetwork object { config, name, network\_id, type }
 
 </summary>
 
@@ -54,7 +54,7 @@ DeviceNetwork object {config, name, network\_id, type }
 
 <summary>
 
-config: optional object {tls\_sockaddr, sha256 }
+config: optional object { tls\_sockaddr, sha256 }
 
 The configuration object containing information for the WARP client to detect the managed network.
 

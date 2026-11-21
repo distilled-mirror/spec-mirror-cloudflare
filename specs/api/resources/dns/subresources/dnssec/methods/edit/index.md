@@ -98,7 +98,7 @@ See [DNSSEC with NSEC3](https://developers.cloudflare.com/dns/dnssec/enable-nsec
 
 <summary>
 
-status: optional "active"or "disabled"
+status: optional "active" or "disabled"
 
 Status of DNSSEC, based on user-desired state and presence of necessary records.
 
@@ -124,7 +124,7 @@ One of the following:
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -146,7 +146,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -166,7 +166,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -188,7 +188,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -308,7 +308,7 @@ Public key for DS record.
 
 <summary>
 
-status: optional "active"or "pending"or "disabled"or 2 more
+status: optional "active" or "pending" or "disabled" or 2 more
 
 Status of DNSSEC, based on user-desired state and presence of necessary records.
 

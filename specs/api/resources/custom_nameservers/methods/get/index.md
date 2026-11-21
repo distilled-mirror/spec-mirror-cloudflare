@@ -72,7 +72,7 @@ maxLength32
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -94,7 +94,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -114,7 +114,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -136,7 +136,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -170,7 +170,7 @@ result: optional array of <a href="https://developers.cloudflare.com/api/resourc
 
 <summary>
 
-dns\_records: array of object {type, value }
+dns\_records: array of object { type, value }
 
 A and AAAA records associated with the nameserver.
 
@@ -180,7 +180,7 @@ A and AAAA records associated with the nameserver.
 
 <summary>
 
-type: optional "A"or "AAAA"
+type: optional "A" or "AAAA"
 
 DNS record type.
 
@@ -222,7 +222,7 @@ formathostname
 
 <summary>
 
-Deprecatedstatus: "moved"or "pending"or "verified"
+Deprecatedstatus: "moved" or "pending" or "verified"
 
 Verification status of the nameserver.
 
@@ -272,7 +272,7 @@ minimum1
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

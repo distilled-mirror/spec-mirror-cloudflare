@@ -64,7 +64,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Workers Scripts Write`
+`Workers Admin``Individual Workers Admin``Workers Scripts Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -110,7 +110,7 @@ minLength1
 
 <summary>
 
-WorkersTagsKVResponse object {errors, messages, result, success }
+WorkersTagsKVResponse object { errors, messages, result, success }
 
 </summary>
 
@@ -118,7 +118,7 @@ WorkersTagsKVResponse object {errors, messages, result, success }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -140,7 +140,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -160,7 +160,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -182,7 +182,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -218,7 +218,7 @@ Whether the API call was successful.
 
 <summary>
 
-WorkersAPIResponseNullResult object {errors, messages, success, result }
+WorkersAPIResponseNullResult object { errors, messages, success, result }
 
 </summary>
 
@@ -226,7 +226,7 @@ WorkersAPIResponseNullResult object {errors, messages, success, result }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -248,7 +248,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -268,7 +268,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -290,7 +290,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 

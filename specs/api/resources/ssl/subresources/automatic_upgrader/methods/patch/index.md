@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Zone Settings Write``SSL and Certificates Write`
+`Zone Settings Write``Workers Routes Write``SSL and Certificates Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -72,7 +72,7 @@ maxLength32
 
 <summary>
 
-value: "auto"or "custom"
+value: "auto" or "custom"
 
 Controls enablement of Automatic SSL/TLS.
 
@@ -120,7 +120,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -162,7 +162,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -182,7 +182,7 @@ pointer: optional string
 
 <summary>
 
-result: object {id, editable, modified\_on, 2 more }
+result: object { id, editable, modified\_on, 2 more }
 
 </summary>
 
@@ -208,7 +208,7 @@ formatdate-time
 
 <summary>
 
-value: "auto"or "custom"
+value: "auto" or "custom"
 
 Current setting of the automatic SSL/TLS.
 

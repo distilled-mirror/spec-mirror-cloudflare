@@ -106,7 +106,7 @@ One of the following:
 
 <summary>
 
-ARecord object {name, ttl, type, 6 more }
+ARecord object { name, ttl, type, 6 more }
 
 </summary>
 
@@ -182,7 +182,7 @@ Whether the record is receiving the performance and security benefits of Cloudfl
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4\_only, ipv6\_only }
 
 Settings for the DNS record.
 
@@ -218,7 +218,7 @@ Custom tags for the DNS record. This field has no effect on DNS responses.
 
 <summary>
 
-AAAARecord object {name, ttl, type, 6 more }
+AAAARecord object { name, ttl, type, 6 more }
 
 </summary>
 
@@ -294,7 +294,7 @@ Whether the record is receiving the performance and security benefits of Cloudfl
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4\_only, ipv6\_only }
 
 Settings for the DNS record.
 
@@ -330,7 +330,7 @@ Custom tags for the DNS record. This field has no effect on DNS responses.
 
 <summary>
 
-CNAMERecord object {name, ttl, type, 5 more }
+CNAMERecord object { name, ttl, type, 5 more }
 
 </summary>
 
@@ -398,7 +398,7 @@ Whether the record is receiving the performance and security benefits of Cloudfl
 
 <summary>
 
-settings: optional object {flatten\_cname, ipv4\_only, ipv6\_only }
+settings: optional object { flatten\_cname, ipv4\_only, ipv6\_only }
 
 Settings for the DNS record.
 
@@ -440,7 +440,7 @@ Custom tags for the DNS record. This field has no effect on DNS responses.
 
 <summary>
 
-MXRecord object {name, ttl, type, 6 more }
+MXRecord object { name, ttl, type, 6 more }
 
 </summary>
 
@@ -520,7 +520,7 @@ Whether the record is receiving the performance and security benefits of Cloudfl
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4\_only, ipv6\_only }
 
 Settings for the DNS record.
 
@@ -556,7 +556,7 @@ Custom tags for the DNS record. This field has no effect on DNS responses.
 
 <summary>
 
-NSRecord object {name, ttl, type, 5 more }
+NSRecord object { name, ttl, type, 5 more }
 
 </summary>
 
@@ -624,7 +624,7 @@ Whether the record is receiving the performance and security benefits of Cloudfl
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4\_only, ipv6\_only }
 
 Settings for the DNS record.
 
@@ -660,7 +660,7 @@ Custom tags for the DNS record. This field has no effect on DNS responses.
 
 <summary>
 
-DNSRecordsOpenpgpkeyRecord object {name, ttl, type, 5 more }
+DNSRecordsOpenpgpkeyRecord object { name, ttl, type, 5 more }
 
 </summary>
 
@@ -728,7 +728,7 @@ Whether the record is receiving the performance and security benefits of Cloudfl
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4\_only, ipv6\_only }
 
 Settings for the DNS record.
 
@@ -764,7 +764,7 @@ Custom tags for the DNS record. This field has no effect on DNS responses.
 
 <summary>
 
-PTRRecord object {name, ttl, type, 5 more }
+PTRRecord object { name, ttl, type, 5 more }
 
 </summary>
 
@@ -832,7 +832,7 @@ Whether the record is receiving the performance and security benefits of Cloudfl
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4\_only, ipv6\_only }
 
 Settings for the DNS record.
 
@@ -868,7 +868,7 @@ Custom tags for the DNS record. This field has no effect on DNS responses.
 
 <summary>
 
-TXTRecord object {name, ttl, type, 5 more }
+TXTRecord object { name, ttl, type, 5 more }
 
 </summary>
 
@@ -938,7 +938,7 @@ Whether the record is receiving the performance and security benefits of Cloudfl
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4\_only, ipv6\_only }
 
 Settings for the DNS record.
 
@@ -974,7 +974,7 @@ Custom tags for the DNS record. This field has no effect on DNS responses.
 
 <summary>
 
-CAARecord object {name, ttl, type, 6 more }
+CAARecord object { name, ttl, type, 6 more }
 
 </summary>
 
@@ -1036,7 +1036,7 @@ Formatted CAA content. See ‘data’ to set CAA properties.
 
 <summary>
 
-data: optional object {flags, tag, value }
+data: optional object { flags, tag, value }
 
 Components of a CAA record.
 
@@ -1078,7 +1078,7 @@ Whether the record is receiving the performance and security benefits of Cloudfl
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4\_only, ipv6\_only }
 
 Settings for the DNS record.
 
@@ -1114,7 +1114,7 @@ Custom tags for the DNS record. This field has no effect on DNS responses.
 
 <summary>
 
-CERTRecord object {name, ttl, type, 6 more }
+CERTRecord object { name, ttl, type, 6 more }
 
 </summary>
 
@@ -1176,7 +1176,7 @@ Formatted CERT content. See ‘data’ to set CERT properties.
 
 <summary>
 
-data: optional object {algorithm, certificate, key\_tag, type }
+data: optional object { algorithm, certificate, key\_tag, type }
 
 Components of a CERT record.
 
@@ -1232,7 +1232,7 @@ Whether the record is receiving the performance and security benefits of Cloudfl
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4\_only, ipv6\_only }
 
 Settings for the DNS record.
 
@@ -1268,7 +1268,7 @@ Custom tags for the DNS record. This field has no effect on DNS responses.
 
 <summary>
 
-DNSKEYRecord object {name, ttl, type, 6 more }
+DNSKEYRecord object { name, ttl, type, 6 more }
 
 </summary>
 
@@ -1330,7 +1330,7 @@ Formatted DNSKEY content. See ‘data’ to set DNSKEY properties.
 
 <summary>
 
-data: optional object {algorithm, flags, protocol, public\_key }
+data: optional object { algorithm, flags, protocol, public\_key }
 
 Components of a DNSKEY record.
 
@@ -1386,7 +1386,7 @@ Whether the record is receiving the performance and security benefits of Cloudfl
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4\_only, ipv6\_only }
 
 Settings for the DNS record.
 
@@ -1422,7 +1422,7 @@ Custom tags for the DNS record. This field has no effect on DNS responses.
 
 <summary>
 
-DSRecord object {name, ttl, type, 6 more }
+DSRecord object { name, ttl, type, 6 more }
 
 </summary>
 
@@ -1484,7 +1484,7 @@ Formatted DS content. See ‘data’ to set DS properties.
 
 <summary>
 
-data: optional object {algorithm, digest, digest\_type, key\_tag }
+data: optional object { algorithm, digest, digest\_type, key\_tag }
 
 Components of a DS record.
 
@@ -1540,7 +1540,7 @@ Whether the record is receiving the performance and security benefits of Cloudfl
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4\_only, ipv6\_only }
 
 Settings for the DNS record.
 
@@ -1576,7 +1576,7 @@ Custom tags for the DNS record. This field has no effect on DNS responses.
 
 <summary>
 
-HTTPSRecord object {name, ttl, type, 6 more }
+HTTPSRecord object { name, ttl, type, 6 more }
 
 </summary>
 
@@ -1638,7 +1638,7 @@ Formatted HTTPS content. See ‘data’ to set HTTPS properties.
 
 <summary>
 
-data: optional object {priority, target, value }
+data: optional object { priority, target, value }
 
 Components of a HTTPS record.
 
@@ -1680,7 +1680,7 @@ Whether the record is receiving the performance and security benefits of Cloudfl
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4\_only, ipv6\_only }
 
 Settings for the DNS record.
 
@@ -1716,7 +1716,7 @@ Custom tags for the DNS record. This field has no effect on DNS responses.
 
 <summary>
 
-LOCRecord object {name, ttl, type, 6 more }
+LOCRecord object { name, ttl, type, 6 more }
 
 </summary>
 
@@ -1778,7 +1778,7 @@ Formatted LOC content. See ‘data’ to set LOC properties.
 
 <summary>
 
-data: optional object {altitude, lat\_degrees, lat\_direction, 9 more }
+data: optional object { altitude, lat\_degrees, lat\_direction, 9 more }
 
 Components of a LOC record.
 
@@ -1808,7 +1808,7 @@ minimum0
 
 <summary>
 
-lat\_direction: optional "N"or "S"
+lat\_direction: optional "N" or "S"
 
 Latitude direction.
 
@@ -1862,7 +1862,7 @@ minimum0
 
 <summary>
 
-long\_direction: optional "E"or "W"
+long\_direction: optional "E" or "W"
 
 Longitude direction.
 
@@ -1946,7 +1946,7 @@ Whether the record is receiving the performance and security benefits of Cloudfl
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4\_only, ipv6\_only }
 
 Settings for the DNS record.
 
@@ -1982,7 +1982,7 @@ Custom tags for the DNS record. This field has no effect on DNS responses.
 
 <summary>
 
-NAPTRRecord object {name, ttl, type, 6 more }
+NAPTRRecord object { name, ttl, type, 6 more }
 
 </summary>
 
@@ -2044,7 +2044,7 @@ Formatted NAPTR content. See ‘data’ to set NAPTR properties.
 
 <summary>
 
-data: optional object {flags, order, preference, 3 more }
+data: optional object { flags, order, preference, 3 more }
 
 Components of a NAPTR record.
 
@@ -2108,7 +2108,7 @@ Whether the record is receiving the performance and security benefits of Cloudfl
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4\_only, ipv6\_only }
 
 Settings for the DNS record.
 
@@ -2144,7 +2144,7 @@ Custom tags for the DNS record. This field has no effect on DNS responses.
 
 <summary>
 
-SMIMEARecord object {name, ttl, type, 6 more }
+SMIMEARecord object { name, ttl, type, 6 more }
 
 </summary>
 
@@ -2206,7 +2206,7 @@ Formatted SMIMEA content. See ‘data’ to set SMIMEA properties.
 
 <summary>
 
-data: optional object {certificate, matching\_type, selector, usage }
+data: optional object { certificate, matching\_type, selector, usage }
 
 Components of a SMIMEA record.
 
@@ -2262,7 +2262,7 @@ Whether the record is receiving the performance and security benefits of Cloudfl
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4\_only, ipv6\_only }
 
 Settings for the DNS record.
 
@@ -2298,7 +2298,7 @@ Custom tags for the DNS record. This field has no effect on DNS responses.
 
 <summary>
 
-SRVRecord object {name, ttl, type, 6 more }
+SRVRecord object { name, ttl, type, 6 more }
 
 </summary>
 
@@ -2360,7 +2360,7 @@ Priority, weight, port, and SRV target. See ‘data’ for setting the individua
 
 <summary>
 
-data: optional object {port, priority, target, weight }
+data: optional object { port, priority, target, weight }
 
 Components of a SRV record.
 
@@ -2418,7 +2418,7 @@ Whether the record is receiving the performance and security benefits of Cloudfl
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4\_only, ipv6\_only }
 
 Settings for the DNS record.
 
@@ -2454,7 +2454,7 @@ Custom tags for the DNS record. This field has no effect on DNS responses.
 
 <summary>
 
-SSHFPRecord object {name, ttl, type, 6 more }
+SSHFPRecord object { name, ttl, type, 6 more }
 
 </summary>
 
@@ -2516,7 +2516,7 @@ Formatted SSHFP content. See ‘data’ to set SSHFP properties.
 
 <summary>
 
-data: optional object {algorithm, fingerprint, type }
+data: optional object { algorithm, fingerprint, type }
 
 Components of a SSHFP record.
 
@@ -2562,7 +2562,7 @@ Whether the record is receiving the performance and security benefits of Cloudfl
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4\_only, ipv6\_only }
 
 Settings for the DNS record.
 
@@ -2598,7 +2598,7 @@ Custom tags for the DNS record. This field has no effect on DNS responses.
 
 <summary>
 
-SVCBRecord object {name, ttl, type, 6 more }
+SVCBRecord object { name, ttl, type, 6 more }
 
 </summary>
 
@@ -2660,7 +2660,7 @@ Formatted SVCB content. See ‘data’ to set SVCB properties.
 
 <summary>
 
-data: optional object {priority, target, value }
+data: optional object { priority, target, value }
 
 Components of a SVCB record.
 
@@ -2702,7 +2702,7 @@ Whether the record is receiving the performance and security benefits of Cloudfl
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4\_only, ipv6\_only }
 
 Settings for the DNS record.
 
@@ -2738,7 +2738,7 @@ Custom tags for the DNS record. This field has no effect on DNS responses.
 
 <summary>
 
-TLSARecord object {name, ttl, type, 6 more }
+TLSARecord object { name, ttl, type, 6 more }
 
 </summary>
 
@@ -2800,7 +2800,7 @@ Formatted TLSA content. See ‘data’ to set TLSA properties.
 
 <summary>
 
-data: optional object {certificate, matching\_type, selector, usage }
+data: optional object { certificate, matching\_type, selector, usage }
 
 Components of a TLSA record.
 
@@ -2856,7 +2856,7 @@ Whether the record is receiving the performance and security benefits of Cloudfl
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4\_only, ipv6\_only }
 
 Settings for the DNS record.
 
@@ -2892,7 +2892,7 @@ Custom tags for the DNS record. This field has no effect on DNS responses.
 
 <summary>
 
-URIRecord object {name, ttl, type, 7 more }
+URIRecord object { name, ttl, type, 7 more }
 
 </summary>
 
@@ -2954,7 +2954,7 @@ Formatted URI content. See ‘data’ to set URI properties.
 
 <summary>
 
-data: optional object {target, weight }
+data: optional object { target, weight }
 
 Components of a URI record.
 
@@ -3000,7 +3000,7 @@ Whether the record is receiving the performance and security benefits of Cloudfl
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4\_only, ipv6\_only }
 
 Settings for the DNS record.
 
@@ -3042,7 +3042,7 @@ Custom tags for the DNS record. This field has no effect on DNS responses.
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -3064,7 +3064,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -3084,7 +3084,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -3106,7 +3106,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -3166,7 +3166,7 @@ formatdate-time
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
 
 Extra Cloudflare-specific metadata about the record.
 
@@ -3266,7 +3266,7 @@ formatdate-time
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
 
 Extra Cloudflare-specific metadata about the record.
 
@@ -3366,7 +3366,7 @@ formatdate-time
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
 
 Extra Cloudflare-specific metadata about the record.
 
@@ -3466,7 +3466,7 @@ formatdate-time
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
 
 Extra Cloudflare-specific metadata about the record.
 
@@ -3566,7 +3566,7 @@ formatdate-time
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
 
 Extra Cloudflare-specific metadata about the record.
 
@@ -3642,7 +3642,7 @@ formatdate-time
 
 <summary>
 
-OpenpgpkeyRecord object {id, comment, content, 12 more }
+OpenpgpkeyRecord object { id, comment, content, 12 more }
 
 </summary>
 
@@ -3678,7 +3678,7 @@ formatdate-time
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
 
 Extra Cloudflare-specific metadata about the record.
 
@@ -3750,7 +3750,7 @@ Whether the record is receiving the performance and security benefits of Cloudfl
 
 <summary>
 
-settings: object {ipv4\_only, ipv6\_only }
+settings: object { ipv4\_only, ipv6\_only }
 
 Settings for the DNS record.
 
@@ -3858,7 +3858,7 @@ formatdate-time
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
 
 Extra Cloudflare-specific metadata about the record.
 
@@ -3958,7 +3958,7 @@ formatdate-time
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
 
 Extra Cloudflare-specific metadata about the record.
 
@@ -4058,7 +4058,7 @@ formatdate-time
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
 
 Extra Cloudflare-specific metadata about the record.
 
@@ -4158,7 +4158,7 @@ formatdate-time
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
 
 Extra Cloudflare-specific metadata about the record.
 
@@ -4258,7 +4258,7 @@ formatdate-time
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
 
 Extra Cloudflare-specific metadata about the record.
 
@@ -4358,7 +4358,7 @@ formatdate-time
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
 
 Extra Cloudflare-specific metadata about the record.
 
@@ -4458,7 +4458,7 @@ formatdate-time
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
 
 Extra Cloudflare-specific metadata about the record.
 
@@ -4558,7 +4558,7 @@ formatdate-time
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
 
 Extra Cloudflare-specific metadata about the record.
 
@@ -4658,7 +4658,7 @@ formatdate-time
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
 
 Extra Cloudflare-specific metadata about the record.
 
@@ -4758,7 +4758,7 @@ formatdate-time
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
 
 Extra Cloudflare-specific metadata about the record.
 
@@ -4858,7 +4858,7 @@ formatdate-time
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
 
 Extra Cloudflare-specific metadata about the record.
 
@@ -4958,7 +4958,7 @@ formatdate-time
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
 
 Extra Cloudflare-specific metadata about the record.
 
@@ -5058,7 +5058,7 @@ formatdate-time
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
 
 Extra Cloudflare-specific metadata about the record.
 
@@ -5158,7 +5158,7 @@ formatdate-time
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
 
 Extra Cloudflare-specific metadata about the record.
 
@@ -5258,7 +5258,7 @@ formatdate-time
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
 
 Extra Cloudflare-specific metadata about the record.
 

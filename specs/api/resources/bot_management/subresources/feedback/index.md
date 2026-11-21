@@ -32,7 +32,7 @@ POST/zones/{zone\_id}/bot\_management/feedback
 
 <summary>
 
-FeedbackReport object {description, expression, first\_request\_seen\_at, 8 more }
+FeedbackReport object { description, expression, first\_request\_seen\_at, 8 more }
 
 </summary>
 
@@ -106,7 +106,7 @@ subtype: optional string
 
 <summary>
 
-FeedbackType = "false\_positive"or "false\_negative"
+FeedbackType = "false\_positive" or "false\_negative"
 
 Type of feedback report.
 
@@ -130,7 +130,7 @@ One of the following:
 
 <summary>
 
-MetricRequests object {metric, requests }
+MetricRequests object { metric, requests }
 
 </summary>
 

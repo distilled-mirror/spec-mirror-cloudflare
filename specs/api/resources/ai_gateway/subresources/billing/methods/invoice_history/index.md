@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`AI Gateway Write``AI Gateway Read`
+`AI Gateway Metadata Read``AI Search Index Engine``Auto Rag Write Run Engine``AI Gateway Write``AI Gateway Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -70,7 +70,7 @@ account\_id: string
 
 <summary>
 
-type: optional "auto"or "all"or "manual"
+type: optional "auto" or "all" or "manual"
 
 Filter invoice type: auto, manual, or all.
 
@@ -100,7 +100,7 @@ One of the following:
 
 <summary>
 
-errors: array of object {code, message }
+errors: array of object { code, message }
 
 </summary>
 
@@ -120,7 +120,7 @@ message: string
 
 <summary>
 
-messages: array of object {code, message }
+messages: array of object { code, message }
 
 </summary>
 
@@ -140,7 +140,7 @@ message: string
 
 <summary>
 
-result: object {invoices, pagination }
+result: object { invoices, pagination }
 
 </summary>
 
@@ -148,7 +148,7 @@ result: object {invoices, pagination }
 
 <summary>
 
-invoices: array of object {amount\_due, amount\_paid, amount\_remaining, 11 more }
+invoices: array of object { amount\_due, amount\_paid, amount\_remaining, 11 more }
 
 Top-up invoices matching <code>type</code>, up to 100.
 
@@ -246,7 +246,7 @@ Invoice status: <code>draft</code>, <code>open</code>, <code>paid</code>, <code>
 
 <summary>
 
-pagination: object {has\_more, page, per\_page, total\_count }
+pagination: object { has\_more, page, per\_page, total\_count }
 
 Pagination details. Results come in a single page.
 
@@ -292,7 +292,7 @@ success: true
 
 <summary>
 
-result\_info: optional object {has\_more, page, per\_page, total\_count }
+result\_info: optional object { has\_more, page, per\_page, total\_count }
 
 </summary>
 

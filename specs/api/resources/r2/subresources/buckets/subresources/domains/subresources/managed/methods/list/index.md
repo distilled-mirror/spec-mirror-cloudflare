@@ -62,7 +62,7 @@ minLength3
 
 <summary>
 
-"cf-r2-jurisdiction": optional "default"or "eu"or "us"or 2 more
+"cf-r2-jurisdiction": optional "default" or "eu" or "us" or 2 more
 
 </summary>
 
@@ -120,7 +120,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -144,7 +144,7 @@ messages: array of string
 
 <summary>
 
-result: object {bucketId, domain, enabled }
+result: object { bucketId, domain, enabled }
 
 </summary>
 

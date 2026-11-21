@@ -28,7 +28,7 @@ GET/zones/{zone\_id}/content-upload-scan/settings
 
 <summary>
 
-SettingGetResponse object {modified, value }
+SettingGetResponse object { modified, value }
 
 Defines the status for Content Scanning.
 

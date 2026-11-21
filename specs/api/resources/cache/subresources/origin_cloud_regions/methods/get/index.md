@@ -96,7 +96,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -138,7 +138,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -164,7 +164,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {origin\_ip, region, vendor, modified\_on }
+result: optional object { origin\_ip, region, vendor, modified\_on }
 
 A single origin IP-to-cloud-region mapping.
 
@@ -186,7 +186,7 @@ Cloud vendor region identifier.
 
 <summary>
 
-vendor: "aws"or "azure"or "gcp"or "oci"
+vendor: "aws" or "azure" or "gcp" or "oci"
 
 Cloud vendor hosting the origin.
 

@@ -96,7 +96,7 @@ The unique identifier of a event.
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -162,7 +162,7 @@ minimum0
 
 <summary>
 
-sortBy: optional "ID"or "LEAKS"or "PEERS"or 3 more
+sortBy: optional "ID" or "LEAKS" or "PEERS" or 3 more
 
 Sorts results by the specified field.
 
@@ -202,7 +202,7 @@ One of the following:
 
 <summary>
 
-sortOrder: optional "ASC"or "DESC"
+sortOrder: optional "ASC" or "DESC"
 
 Sort order.
 
@@ -228,7 +228,7 @@ One of the following:
 
 <summary>
 
-result: object {asn\_info, events }
+result: object { asn\_info, events }
 
 </summary>
 
@@ -236,7 +236,7 @@ result: object {asn\_info, events }
 
 <summary>
 
-asn\_info: array of object {asn, country\_code, org\_name }
+asn\_info: array of object { asn, country\_code, org\_name }
 
 </summary>
 
@@ -260,7 +260,7 @@ org\_name: string
 
 <summary>
 
-events: array of object {id, countries, detected\_ts, 10 more }
+events: array of object { id, countries, detected\_ts, 10 more }
 
 </summary>
 
@@ -328,7 +328,7 @@ prefix\_count: number
 
 <summary>
 
-result\_info: object {count, page, per\_page, total\_count }
+result\_info: object { count, page, per\_page, total\_count }
 
 </summary>
 

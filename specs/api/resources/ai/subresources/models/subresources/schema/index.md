@@ -30,7 +30,7 @@ GET/accounts/{account\_id}/ai/models/schema
 
 <summary>
 
-SchemaGetResponse object {input, output }
+SchemaGetResponse object { input, output }
 
 </summary>
 
@@ -38,7 +38,7 @@ SchemaGetResponse object {input, output }
 
 <summary>
 
-input: object {additionalProperties, description, type }
+input: object { additionalProperties, description, type }
 
 </summary>
 
@@ -62,7 +62,7 @@ type: string
 
 <summary>
 
-output: object {additionalProperties, description, type }
+output: object { additionalProperties, description, type }
 
 </summary>
 

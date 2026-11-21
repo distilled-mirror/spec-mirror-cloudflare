@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/accounts/{account\_id}/realtime/kit/{app\_id}/meetings/{meeting\_id}/active-session/mute-all
 
-Mutes all participants of an active session for the given meeting ID.
+Mutes the microphone of all participants of an active session for the given meeting ID.
 
 ##### Security
 
@@ -80,9 +80,9 @@ meeting\_id: string
 
 ##### Body ParametersJSONExpand Collapse
 
-allow\_unmute: optional boolean
+Deprecatedallow\_unmute: optional boolean
 
-if false, participants won’t be able to unmute themselves after they are muted
+This field is ignored. Muted participants can unmute themselves if their preset allows them to produce audio.
 
 [Link to this property](#)%20realtime_kit.active-session%20%3E%20(method)%20mute_all_participants%20%3E%20(params)%200%20%3E%20(param)%20allow_unmute%20%3E%20(schema)>)
 
@@ -92,15 +92,17 @@ if false, participants won’t be able to unmute themselves after they are muted
 
 <summary>
 
-data: optional object {action, muted\_participants\_count }
+data: optional object { action, muted\_participants\_count }
 
 </summary>
 
-action: optional string
+action: optional "mute-all"
 
 <a href="#">Link to this property</a>
 
 muted\_participants\_count: optional number
+
+Number of connections (peers) whose microphone was unmuted and has been muted by this request.
 
 <a href="#">Link to this property</a>
 
@@ -120,20 +122,107 @@ HTTPTypeScriptPythonGoTerraform
 
 ```
 curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/realtime/kit/$APP_ID/meetings/$MEETING_ID/active-session/mute-all \
-    -H 'Content-Type: application/json' \
-    -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
-    -d '{}'
+    -X POST \
+    -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN"
 ```
 
 200 example
 
+400 example
+
+400 example
+
+401 example
+
+404 example
+
+404 example
+
+500 example
+
 ```
 {
   "data": {
-    "action": "action",
-    "muted_participants_count": 0
+    "action": "mute-all",
+    "muted_participants_count": 2
   },
   "success": true
+}
+```
+
+```
+{
+  "error": {
+    "code": 400,
+    "details": [
+      {
+        "code": "invalid_type",
+        "field": "allow_unmute",
+        "location": "body",
+        "message": "Invalid input: expected boolean, received string"
+      }
+    ],
+    "message": "Request validation failed"
+  },
+  "success": false
+}
+```
+
+```
+{
+  "error": {
+    "code": 400,
+    "details": [
+      {
+        "code": "invalid_format",
+        "field": "meeting_id",
+        "location": "path",
+        "message": "Invalid GUID"
+      }
+    ],
+    "message": "Request validation failed"
+  },
+  "success": false
+}
+```
+
+```
+{
+  "error": {
+    "code": 401,
+    "message": "app not found"
+  },
+  "success": false
+}
+```
+
+```
+{
+  "error": {
+    "code": 404,
+    "message": "No active session found for meeting id: 6bf2b8be-04dd-4191-b602-1128921a306b"
+  },
+  "success": false
+}
+```
+
+```
+{
+  "error": {
+    "code": 404,
+    "message": "Meeting 6bf2b8be-04dd-4191-b602-1128921a306b not found for organization 4f6c1a8e-2b39-4f6b-9c2d-7a1e5b3c9d10"
+  },
+  "success": false
+}
+```
+
+```
+{
+  "error": {
+    "code": 500,
+    "message": "Internal Server Error"
+  },
+  "success": false
 }
 ```
 
@@ -141,12 +230,100 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/realtime/kit/$APP
 
 200 example
 
+400 example
+
+400 example
+
+401 example
+
+404 example
+
+404 example
+
+500 example
+
 ```
 {
   "data": {
-    "action": "action",
-    "muted_participants_count": 0
+    "action": "mute-all",
+    "muted_participants_count": 2
   },
   "success": true
+}
+```
+
+```
+{
+  "error": {
+    "code": 400,
+    "details": [
+      {
+        "code": "invalid_type",
+        "field": "allow_unmute",
+        "location": "body",
+        "message": "Invalid input: expected boolean, received string"
+      }
+    ],
+    "message": "Request validation failed"
+  },
+  "success": false
+}
+```
+
+```
+{
+  "error": {
+    "code": 400,
+    "details": [
+      {
+        "code": "invalid_format",
+        "field": "meeting_id",
+        "location": "path",
+        "message": "Invalid GUID"
+      }
+    ],
+    "message": "Request validation failed"
+  },
+  "success": false
+}
+```
+
+```
+{
+  "error": {
+    "code": 401,
+    "message": "app not found"
+  },
+  "success": false
+}
+```
+
+```
+{
+  "error": {
+    "code": 404,
+    "message": "No active session found for meeting id: 6bf2b8be-04dd-4191-b602-1128921a306b"
+  },
+  "success": false
+}
+```
+
+```
+{
+  "error": {
+    "code": 404,
+    "message": "Meeting 6bf2b8be-04dd-4191-b602-1128921a306b not found for organization 4f6c1a8e-2b39-4f6b-9c2d-7a1e5b3c9d10"
+  },
+  "success": false
+}
+```
+
+```
+{
+  "error": {
+    "code": 500,
+    "message": "Internal Server Error"
+  },
+  "success": false
 }
 ```

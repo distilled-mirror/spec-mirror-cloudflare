@@ -96,7 +96,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -138,7 +138,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -158,7 +158,7 @@ pointer: optional string
 
 <summary>
 
-result: object {id, editable, modified\_on, 2 more }
+result: object { id, editable, modified\_on, 2 more }
 
 </summary>
 
@@ -184,7 +184,7 @@ formatdate-time
 
 <summary>
 
-value: "auto"or "custom"
+value: "auto" or "custom"
 
 Current setting of the automatic SSL/TLS.
 

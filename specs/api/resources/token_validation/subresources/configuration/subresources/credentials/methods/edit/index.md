@@ -84,7 +84,7 @@ maxLength36
 
 <summary>
 
-keys: array of object {alg, e, kid, 2 more } or object {alg, crv, kid, 3 more } or object {alg, crv, kid, 3 more } or object {alg, kid, kty, k }
+keys: array of object { alg, e, kid, 2 more } or object { alg, crv, kid, 3 more } or object { alg, crv, kid, 3 more } or object { alg, kid, kty, k }
 
 </summary>
 
@@ -94,7 +94,7 @@ One of the following:
 
 <summary>
 
-APIShieldCredentialsJWTKeyRSA object {alg, e, kid, 2 more }
+APIShieldCredentialsJWTKeyRSA object { alg, e, kid, 2 more }
 
 JSON representation of an RSA key.
 
@@ -104,7 +104,7 @@ JSON representation of an RSA key.
 
 <summary>
 
-alg: "RS256"or "RS384"or "RS512"or 3 more
+alg: "RS256" or "RS384" or "RS512" or 3 more
 
 Algorithm
 
@@ -172,7 +172,7 @@ RSA modulus
 
 <summary>
 
-APIShieldCredentialsJWTKeyEcEs256 object {alg, crv, kid, 3 more }
+APIShieldCredentialsJWTKeyEcEs256 object { alg, crv, kid, 3 more }
 
 JSON representation of an ES256 key
 
@@ -222,7 +222,7 @@ Y EC coordinate
 
 <summary>
 
-APIShieldCredentialsJWTKeyEcEs384 object {alg, crv, kid, 3 more }
+APIShieldCredentialsJWTKeyEcEs384 object { alg, crv, kid, 3 more }
 
 JSON representation of an ES384 key
 
@@ -272,7 +272,7 @@ Y EC coordinate
 
 <summary>
 
-APIShieldCredentialsJWTKeyOctPatchRequest object {alg, kid, kty, k }
+APIShieldCredentialsJWTKeyOctPatchRequest object { alg, kid, kty, k }
 
 JSON representation of a symmetric key for PATCH requests.
 
@@ -282,7 +282,7 @@ JSON representation of a symmetric key for PATCH requests.
 
 <summary>
 
-alg: "HS256"or "HS384"or "HS512"
+alg: "HS256" or "HS384" or "HS512"
 
 Algorithm
 
@@ -360,7 +360,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -402,7 +402,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -422,7 +422,7 @@ pointer: optional string
 
 <summary>
 
-result: object {keys }
+result: object { keys }
 
 </summary>
 
@@ -430,7 +430,7 @@ result: object {keys }
 
 <summary>
 
-keys: array of object {alg, e, kid, 2 more } or object {alg, crv, kid, 3 more } or object {alg, crv, kid, 3 more } or object {alg, kid, kty }
+keys: array of object { alg, e, kid, 2 more } or object { alg, crv, kid, 3 more } or object { alg, crv, kid, 3 more } or object { alg, kid, kty }
 
 </summary>
 
@@ -440,7 +440,7 @@ One of the following:
 
 <summary>
 
-APIShieldCredentialsJWTKeyRSA object {alg, e, kid, 2 more }
+APIShieldCredentialsJWTKeyRSA object { alg, e, kid, 2 more }
 
 JSON representation of an RSA key.
 
@@ -450,7 +450,7 @@ JSON representation of an RSA key.
 
 <summary>
 
-alg: "RS256"or "RS384"or "RS512"or 3 more
+alg: "RS256" or "RS384" or "RS512" or 3 more
 
 Algorithm
 
@@ -518,7 +518,7 @@ RSA modulus
 
 <summary>
 
-APIShieldCredentialsJWTKeyEcEs256 object {alg, crv, kid, 3 more }
+APIShieldCredentialsJWTKeyEcEs256 object { alg, crv, kid, 3 more }
 
 JSON representation of an ES256 key
 
@@ -568,7 +568,7 @@ Y EC coordinate
 
 <summary>
 
-APIShieldCredentialsJWTKeyEcEs384 object {alg, crv, kid, 3 more }
+APIShieldCredentialsJWTKeyEcEs384 object { alg, crv, kid, 3 more }
 
 JSON representation of an ES384 key
 
@@ -618,7 +618,7 @@ Y EC coordinate
 
 <summary>
 
-APIShieldCredentialsJWTKeyOctResponse object {alg, kid, kty }
+APIShieldCredentialsJWTKeyOctResponse object { alg, kid, kty }
 
 JSON representation of a symmetric verification key in API responses (secret material is redacted).
 
@@ -628,7 +628,7 @@ JSON representation of a symmetric verification key in API responses (secret mat
 
 <summary>
 
-alg: "HS256"or "HS384"or "HS512"
+alg: "HS256" or "HS384" or "HS512"
 
 Algorithm
 

@@ -42,7 +42,7 @@ DELETE/user/organizations/{organization\_id}
 
 <summary>
 
-Organization object {id, name, permissions, 2 more }
+Organization object { id, name, permissions, 2 more }
 
 </summary>
 
@@ -94,7 +94,7 @@ OrganizationGetResponse = unknown
 
 <summary>
 
-OrganizationDeleteResponse object {id }
+OrganizationDeleteResponse object { id }
 
 </summary>
 

@@ -30,7 +30,7 @@ GET/radar/bgp/top/prefixes
 
 <summary>
 
-TopPrefixesResponse object {meta, top\_0 }
+TopPrefixesResponse object { meta, top\_0 }
 
 </summary>
 
@@ -38,7 +38,7 @@ TopPrefixesResponse object {meta, top\_0 }
 
 <summary>
 
-meta: object {dateRange }
+meta: object { dateRange }
 
 </summary>
 
@@ -46,7 +46,7 @@ meta: object {dateRange }
 
 <summary>
 
-dateRange: array of object {endTime, startTime }
+dateRange: array of object { endTime, startTime }
 
 </summary>
 
@@ -78,7 +78,7 @@ formatdate-time
 
 <summary>
 
-top\_0: array of object {prefix, value }
+top\_0: array of object { prefix, value }
 
 </summary>
 
@@ -116,7 +116,7 @@ GET/radar/bgp/top/ases/prefixes
 
 <summary>
 
-AseGetResponse object {meta, top\_0 }
+AseGetResponse object { meta, top\_0 }
 
 </summary>
 
@@ -124,7 +124,7 @@ AseGetResponse object {meta, top\_0 }
 
 <summary>
 
-meta: object {dateRange }
+meta: object { dateRange }
 
 </summary>
 
@@ -132,7 +132,7 @@ meta: object {dateRange }
 
 <summary>
 
-dateRange: array of object {endTime, startTime }
+dateRange: array of object { endTime, startTime }
 
 </summary>
 
@@ -164,7 +164,7 @@ formatdate-time
 
 <summary>
 
-top\_0: array of object {asn, ASName, value }
+top\_0: array of object { asn, ASName, value }
 
 </summary>
 
@@ -194,7 +194,7 @@ Percentage of updates by this AS out of the total updates by all autonomous syst
 
 <summary>
 
-AsePrefixesResponse object {asns, meta }
+AsePrefixesResponse object { asns, meta }
 
 </summary>
 
@@ -202,7 +202,7 @@ AsePrefixesResponse object {asns, meta }
 
 <summary>
 
-asns: array of object {asn, country, name, pfxs\_count }
+asns: array of object { asn, country, name, pfxs\_count }
 
 </summary>
 
@@ -230,7 +230,7 @@ pfxs\_count: number
 
 <summary>
 
-meta: object {data\_time, query\_time, total\_peers }
+meta: object { data\_time, query\_time, total\_peers }
 
 </summary>
 

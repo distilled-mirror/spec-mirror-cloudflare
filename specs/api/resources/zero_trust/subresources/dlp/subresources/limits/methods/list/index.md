@@ -72,7 +72,7 @@ account\_id: string
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -94,7 +94,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -114,7 +114,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -136,7 +136,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -162,7 +162,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {max\_custom\_regex\_entries, max\_dataset\_cells, max\_document\_fingerprints, 3 more }
+result: optional object { max\_custom\_regex\_entries, max\_dataset\_cells, max\_document\_fingerprints, 3 more }
 
 </summary>
 

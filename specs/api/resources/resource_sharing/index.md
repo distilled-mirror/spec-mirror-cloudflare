@@ -42,7 +42,7 @@ DELETE/accounts/{account\_id}/shares/{share\_id}
 
 <summary>
 
-ResourceSharingListResponse object {id, account\_id, account\_name, 13 more }
+ResourceSharingListResponse object { id, account\_id, account\_name, 13 more }
 
 </summary>
 
@@ -108,7 +108,7 @@ minLength32
 
 <summary>
 
-status: "active"or "deleting"or "deleted"
+status: "active" or "deleting" or "deleted"
 
 </summary>
 
@@ -134,7 +134,7 @@ One of the following:
 
 <summary>
 
-target\_type: "account"or "organization"
+target\_type: "account" or "organization"
 
 </summary>
 
@@ -180,7 +180,7 @@ The number of recipients in the ‘disassociating’ state. This field is only i
 
 <summary>
 
-kind: optional "sent"or "received"
+kind: optional "sent" or "received"
 
 </summary>
 
@@ -202,7 +202,7 @@ One of the following:
 
 <summary>
 
-resources: optional array of object {id, created, meta, 6 more }
+resources: optional array of object { id, created, meta, 6 more }
 
 A list of resources that are part of the share. This field is only included when requested via the ‘include\_resources’ parameter.
 
@@ -260,7 +260,7 @@ Identifier assigned by the service that owns the shared resource.
 
 <summary>
 
-resource\_type: "custom-ruleset"or "gateway-policy"or "gateway-destination-ip"or 4 more
+resource\_type: "custom-ruleset" or "gateway-policy" or "gateway-destination-ip" or 4 more
 
 Resource Type.
 
@@ -310,7 +310,7 @@ Resource Version.
 
 <summary>
 
-status: "active"or "deleting"or "deleted"
+status: "active" or "deleting" or "deleted"
 
 Resource Status.
 
@@ -352,7 +352,7 @@ Tags associated with the share. Included in create and update responses when tag
 
 <summary>
 
-ResourceSharingGetResponse object {id, account\_id, account\_name, 13 more }
+ResourceSharingGetResponse object { id, account\_id, account\_name, 13 more }
 
 </summary>
 
@@ -418,7 +418,7 @@ minLength32
 
 <summary>
 
-status: "active"or "deleting"or "deleted"
+status: "active" or "deleting" or "deleted"
 
 </summary>
 
@@ -444,7 +444,7 @@ One of the following:
 
 <summary>
 
-target\_type: "account"or "organization"
+target\_type: "account" or "organization"
 
 </summary>
 
@@ -490,7 +490,7 @@ The number of recipients in the ‘disassociating’ state. This field is only i
 
 <summary>
 
-kind: optional "sent"or "received"
+kind: optional "sent" or "received"
 
 </summary>
 
@@ -512,7 +512,7 @@ One of the following:
 
 <summary>
 
-resources: optional array of object {id, created, meta, 6 more }
+resources: optional array of object { id, created, meta, 6 more }
 
 A list of resources that are part of the share. This field is only included when requested via the ‘include\_resources’ parameter.
 
@@ -570,7 +570,7 @@ Identifier assigned by the service that owns the shared resource.
 
 <summary>
 
-resource\_type: "custom-ruleset"or "gateway-policy"or "gateway-destination-ip"or 4 more
+resource\_type: "custom-ruleset" or "gateway-policy" or "gateway-destination-ip" or 4 more
 
 Resource Type.
 
@@ -620,7 +620,7 @@ Resource Version.
 
 <summary>
 
-status: "active"or "deleting"or "deleted"
+status: "active" or "deleting" or "deleted"
 
 Resource Status.
 
@@ -662,7 +662,7 @@ Tags associated with the share. Included in create and update responses when tag
 
 <summary>
 
-ResourceSharingCreateResponse object {id, account\_id, account\_name, 13 more }
+ResourceSharingCreateResponse object { id, account\_id, account\_name, 13 more }
 
 </summary>
 
@@ -728,7 +728,7 @@ minLength32
 
 <summary>
 
-status: "active"or "deleting"or "deleted"
+status: "active" or "deleting" or "deleted"
 
 </summary>
 
@@ -754,7 +754,7 @@ One of the following:
 
 <summary>
 
-target\_type: "account"or "organization"
+target\_type: "account" or "organization"
 
 </summary>
 
@@ -800,7 +800,7 @@ The number of recipients in the ‘disassociating’ state. This field is only i
 
 <summary>
 
-kind: optional "sent"or "received"
+kind: optional "sent" or "received"
 
 </summary>
 
@@ -822,7 +822,7 @@ One of the following:
 
 <summary>
 
-resources: optional array of object {id, created, meta, 6 more }
+resources: optional array of object { id, created, meta, 6 more }
 
 A list of resources that are part of the share. This field is only included when requested via the ‘include\_resources’ parameter.
 
@@ -880,7 +880,7 @@ Identifier assigned by the service that owns the shared resource.
 
 <summary>
 
-resource\_type: "custom-ruleset"or "gateway-policy"or "gateway-destination-ip"or 4 more
+resource\_type: "custom-ruleset" or "gateway-policy" or "gateway-destination-ip" or 4 more
 
 Resource Type.
 
@@ -930,7 +930,7 @@ Resource Version.
 
 <summary>
 
-status: "active"or "deleting"or "deleted"
+status: "active" or "deleting" or "deleted"
 
 Resource Status.
 
@@ -972,7 +972,7 @@ Tags associated with the share. Included in create and update responses when tag
 
 <summary>
 
-ResourceSharingUpdateResponse object {id, account\_id, account\_name, 13 more }
+ResourceSharingUpdateResponse object { id, account\_id, account\_name, 13 more }
 
 </summary>
 
@@ -1038,7 +1038,7 @@ minLength32
 
 <summary>
 
-status: "active"or "deleting"or "deleted"
+status: "active" or "deleting" or "deleted"
 
 </summary>
 
@@ -1064,7 +1064,7 @@ One of the following:
 
 <summary>
 
-target\_type: "account"or "organization"
+target\_type: "account" or "organization"
 
 </summary>
 
@@ -1110,7 +1110,7 @@ The number of recipients in the ‘disassociating’ state. This field is only i
 
 <summary>
 
-kind: optional "sent"or "received"
+kind: optional "sent" or "received"
 
 </summary>
 
@@ -1132,7 +1132,7 @@ One of the following:
 
 <summary>
 
-resources: optional array of object {id, created, meta, 6 more }
+resources: optional array of object { id, created, meta, 6 more }
 
 A list of resources that are part of the share. This field is only included when requested via the ‘include\_resources’ parameter.
 
@@ -1190,7 +1190,7 @@ Identifier assigned by the service that owns the shared resource.
 
 <summary>
 
-resource\_type: "custom-ruleset"or "gateway-policy"or "gateway-destination-ip"or 4 more
+resource\_type: "custom-ruleset" or "gateway-policy" or "gateway-destination-ip" or 4 more
 
 Resource Type.
 
@@ -1240,7 +1240,7 @@ Resource Version.
 
 <summary>
 
-status: "active"or "deleting"or "deleted"
+status: "active" or "deleting" or "deleted"
 
 Resource Status.
 
@@ -1282,7 +1282,7 @@ Tags associated with the share. Included in create and update responses when tag
 
 <summary>
 
-ResourceSharingDeleteResponse object {id, account\_id, account\_name, 13 more }
+ResourceSharingDeleteResponse object { id, account\_id, account\_name, 13 more }
 
 </summary>
 
@@ -1348,7 +1348,7 @@ minLength32
 
 <summary>
 
-status: "active"or "deleting"or "deleted"
+status: "active" or "deleting" or "deleted"
 
 </summary>
 
@@ -1374,7 +1374,7 @@ One of the following:
 
 <summary>
 
-target\_type: "account"or "organization"
+target\_type: "account" or "organization"
 
 </summary>
 
@@ -1420,7 +1420,7 @@ The number of recipients in the ‘disassociating’ state. This field is only i
 
 <summary>
 
-kind: optional "sent"or "received"
+kind: optional "sent" or "received"
 
 </summary>
 
@@ -1442,7 +1442,7 @@ One of the following:
 
 <summary>
 
-resources: optional array of object {id, created, meta, 6 more }
+resources: optional array of object { id, created, meta, 6 more }
 
 A list of resources that are part of the share. This field is only included when requested via the ‘include\_resources’ parameter.
 
@@ -1500,7 +1500,7 @@ Identifier assigned by the service that owns the shared resource.
 
 <summary>
 
-resource\_type: "custom-ruleset"or "gateway-policy"or "gateway-destination-ip"or 4 more
+resource\_type: "custom-ruleset" or "gateway-policy" or "gateway-destination-ip" or 4 more
 
 Resource Type.
 
@@ -1550,7 +1550,7 @@ Resource Version.
 
 <summary>
 
-status: "active"or "deleting"or "deleted"
+status: "active" or "deleting" or "deleted"
 
 Resource Status.
 
@@ -1612,7 +1612,7 @@ DELETE/accounts/{account\_id}/shares/{share\_id}/recipients/{recipient\_id}
 
 <summary>
 
-RecipientListResponse object {id, account\_id, association\_status, 3 more }
+RecipientListResponse object { id, account\_id, association\_status, 3 more }
 
 A recipient of a share. The <code>association_status</code> field tracks the lifecycle of the shared resources in the recipient account. All recipients are returned by the list endpoint regardless of status; filter client-side if only active recipients are needed.
 
@@ -1642,7 +1642,7 @@ minLength32
 
 <summary>
 
-association\_status: "associating"or "associated"or "disassociating"or "disassociated"
+association\_status: "associating" or "associated" or "disassociating" or "disassociated"
 
 The current state of the recipient relative to the share. The <code>desired_association_status</code> (not exposed in the response) tracks the target state set by the API; the background reconciliation workflow drives <code>current_association_status</code> toward it.
 
@@ -1695,7 +1695,7 @@ formatdate-time
 
 <summary>
 
-resources: optional array of object {error, resource\_id, resource\_version, terminal }
+resources: optional array of object { error, resource\_id, resource\_version, terminal }
 
 </summary>
 
@@ -1735,7 +1735,7 @@ Whether the error is terminal or will be continually retried.
 
 <summary>
 
-RecipientGetResponse object {id, account\_id, association\_status, 3 more }
+RecipientGetResponse object { id, account\_id, association\_status, 3 more }
 
 A recipient of a share. The <code>association_status</code> field tracks the lifecycle of the shared resources in the recipient account. All recipients are returned by the list endpoint regardless of status; filter client-side if only active recipients are needed.
 
@@ -1765,7 +1765,7 @@ minLength32
 
 <summary>
 
-association\_status: "associating"or "associated"or "disassociating"or "disassociated"
+association\_status: "associating" or "associated" or "disassociating" or "disassociated"
 
 The current state of the recipient relative to the share. The <code>desired_association_status</code> (not exposed in the response) tracks the target state set by the API; the background reconciliation workflow drives <code>current_association_status</code> toward it.
 
@@ -1818,7 +1818,7 @@ formatdate-time
 
 <summary>
 
-resources: optional array of object {error, resource\_id, resource\_version, terminal }
+resources: optional array of object { error, resource\_id, resource\_version, terminal }
 
 </summary>
 
@@ -1858,7 +1858,7 @@ Whether the error is terminal or will be continually retried.
 
 <summary>
 
-RecipientCreateResponse object {id, account\_id, association\_status, 3 more }
+RecipientCreateResponse object { id, account\_id, association\_status, 3 more }
 
 A recipient of a share. The <code>association_status</code> field tracks the lifecycle of the shared resources in the recipient account. All recipients are returned by the list endpoint regardless of status; filter client-side if only active recipients are needed.
 
@@ -1888,7 +1888,7 @@ minLength32
 
 <summary>
 
-association\_status: "associating"or "associated"or "disassociating"or "disassociated"
+association\_status: "associating" or "associated" or "disassociating" or "disassociated"
 
 The current state of the recipient relative to the share. The <code>desired_association_status</code> (not exposed in the response) tracks the target state set by the API; the background reconciliation workflow drives <code>current_association_status</code> toward it.
 
@@ -1941,7 +1941,7 @@ formatdate-time
 
 <summary>
 
-resources: optional array of object {error, resource\_id, resource\_version, terminal }
+resources: optional array of object { error, resource\_id, resource\_version, terminal }
 
 </summary>
 
@@ -1981,7 +1981,7 @@ Whether the error is terminal or will be continually retried.
 
 <summary>
 
-RecipientDeleteResponse object {id, account\_id, association\_status, 3 more }
+RecipientDeleteResponse object { id, account\_id, association\_status, 3 more }
 
 A recipient of a share. The <code>association_status</code> field tracks the lifecycle of the shared resources in the recipient account. All recipients are returned by the list endpoint regardless of status; filter client-side if only active recipients are needed.
 
@@ -2011,7 +2011,7 @@ minLength32
 
 <summary>
 
-association\_status: "associating"or "associated"or "disassociating"or "disassociated"
+association\_status: "associating" or "associated" or "disassociating" or "disassociated"
 
 The current state of the recipient relative to the share. The <code>desired_association_status</code> (not exposed in the response) tracks the target state set by the API; the background reconciliation workflow drives <code>current_association_status</code> toward it.
 
@@ -2064,7 +2064,7 @@ formatdate-time
 
 <summary>
 
-resources: optional array of object {error, resource\_id, resource\_version, terminal }
+resources: optional array of object { error, resource\_id, resource\_version, terminal }
 
 </summary>
 
@@ -2128,7 +2128,7 @@ DELETE/accounts/{account\_id}/shares/{share\_id}/resources/{share\_resource\_id}
 
 <summary>
 
-ResourceListResponse object {id, created, meta, 6 more }
+ResourceListResponse object { id, created, meta, 6 more }
 
 </summary>
 
@@ -2184,7 +2184,7 @@ Identifier assigned by the service that owns the shared resource.
 
 <summary>
 
-resource\_type: "custom-ruleset"or "gateway-policy"or "gateway-destination-ip"or 4 more
+resource\_type: "custom-ruleset" or "gateway-policy" or "gateway-destination-ip" or 4 more
 
 Resource Type.
 
@@ -2234,7 +2234,7 @@ Resource Version.
 
 <summary>
 
-status: "active"or "deleting"or "deleted"
+status: "active" or "deleting" or "deleted"
 
 Resource Status.
 
@@ -2266,7 +2266,7 @@ One of the following:
 
 <summary>
 
-ResourceGetResponse object {id, created, meta, 6 more }
+ResourceGetResponse object { id, created, meta, 6 more }
 
 </summary>
 
@@ -2322,7 +2322,7 @@ Identifier assigned by the service that owns the shared resource.
 
 <summary>
 
-resource\_type: "custom-ruleset"or "gateway-policy"or "gateway-destination-ip"or 4 more
+resource\_type: "custom-ruleset" or "gateway-policy" or "gateway-destination-ip" or 4 more
 
 Resource Type.
 
@@ -2372,7 +2372,7 @@ Resource Version.
 
 <summary>
 
-status: "active"or "deleting"or "deleted"
+status: "active" or "deleting" or "deleted"
 
 Resource Status.
 
@@ -2404,7 +2404,7 @@ One of the following:
 
 <summary>
 
-ResourceCreateResponse object {id, created, meta, 6 more }
+ResourceCreateResponse object { id, created, meta, 6 more }
 
 </summary>
 
@@ -2460,7 +2460,7 @@ Identifier assigned by the service that owns the shared resource.
 
 <summary>
 
-resource\_type: "custom-ruleset"or "gateway-policy"or "gateway-destination-ip"or 4 more
+resource\_type: "custom-ruleset" or "gateway-policy" or "gateway-destination-ip" or 4 more
 
 Resource Type.
 
@@ -2510,7 +2510,7 @@ Resource Version.
 
 <summary>
 
-status: "active"or "deleting"or "deleted"
+status: "active" or "deleting" or "deleted"
 
 Resource Status.
 
@@ -2542,7 +2542,7 @@ One of the following:
 
 <summary>
 
-ResourceUpdateResponse object {id, created, meta, 6 more }
+ResourceUpdateResponse object { id, created, meta, 6 more }
 
 </summary>
 
@@ -2598,7 +2598,7 @@ Identifier assigned by the service that owns the shared resource.
 
 <summary>
 
-resource\_type: "custom-ruleset"or "gateway-policy"or "gateway-destination-ip"or 4 more
+resource\_type: "custom-ruleset" or "gateway-policy" or "gateway-destination-ip" or 4 more
 
 Resource Type.
 
@@ -2648,7 +2648,7 @@ Resource Version.
 
 <summary>
 
-status: "active"or "deleting"or "deleted"
+status: "active" or "deleting" or "deleted"
 
 Resource Status.
 
@@ -2680,7 +2680,7 @@ One of the following:
 
 <summary>
 
-ResourceDeleteResponse object {id, created, meta, 6 more }
+ResourceDeleteResponse object { id, created, meta, 6 more }
 
 </summary>
 
@@ -2736,7 +2736,7 @@ Identifier assigned by the service that owns the shared resource.
 
 <summary>
 
-resource\_type: "custom-ruleset"or "gateway-policy"or "gateway-destination-ip"or 4 more
+resource\_type: "custom-ruleset" or "gateway-policy" or "gateway-destination-ip" or 4 more
 
 Resource Type.
 
@@ -2786,7 +2786,7 @@ Resource Version.
 
 <summary>
 
-status: "active"or "deleting"or "deleted"
+status: "active" or "deleting" or "deleted"
 
 Resource Status.
 

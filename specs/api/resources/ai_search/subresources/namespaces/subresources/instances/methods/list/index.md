@@ -56,6 +56,10 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 </details>
 
+##### Accepted Permissions (at least one required)
+
+`AI Search Metadata Read``AI Search Write``AI Search Read``Auto Rag Write``Auto Rag Read`
+
 ##### P ath ParametersExpand Collapse
 
 account\_id: string
@@ -88,7 +92,7 @@ Field to order results by.
 
 <summary>
 
-order\_by\_direction: optional "asc"or "desc"
+order\_by\_direction: optional "asc" or "desc"
 
 Order direction.
 
@@ -142,7 +146,7 @@ maxLength64
 
 <summary>
 
-result: array of object {id, ai\_gateway\_id, ai\_search\_model, 42 more }
+result: array of object { id, ai\_gateway\_id, ai\_search\_model, 42 more }
 
 </summary>
 
@@ -166,7 +170,7 @@ cache: boolean
 
 <summary>
 
-cache\_threshold: "super\_strict\_match"or "close\_enough"or "flexible\_friend"or "anything\_goes"
+cache\_threshold: "super\_strict\_match" or "close\_enough" or "flexible\_friend" or "anything\_goes"
 
 </summary>
 
@@ -196,7 +200,7 @@ One of the following:
 
 <summary>
 
-cache\_ttl: 600or 1800or 3600or 7 more
+cache\_ttl: 600 or 1800 or 3600 or 7 more
 
 </summary>
 
@@ -272,7 +276,7 @@ created\_by: string
 
 <summary>
 
-custom\_metadata: array of object {data\_type, field\_name }
+custom\_metadata: array of object { data\_type, field\_name }
 
 </summary>
 
@@ -280,7 +284,7 @@ custom\_metadata: array of object {data\_type, field\_name }
 
 <summary>
 
-data\_type: "text"or "number"or "boolean"or "datetime"
+data\_type: "text" or "number" or "boolean" or "datetime"
 
 </summary>
 
@@ -330,7 +334,7 @@ engine\_version: number
 
 <summary>
 
-fusion\_method: "max"or "rrf"
+fusion\_method: "max" or "rrf"
 
 </summary>
 
@@ -356,7 +360,7 @@ hybrid\_search\_enabled: boolean
 
 <summary>
 
-index\_method: object {keyword, vector }
+index\_method: object { keyword, vector }
 
 </summary>
 
@@ -376,7 +380,7 @@ vector: boolean
 
 <summary>
 
-indexing\_options: object {file\_summary, keyword\_tokenizer, use\_ocr }
+indexing\_options: object { file\_summary, keyword\_tokenizer, use\_ocr }
 
 </summary>
 
@@ -390,7 +394,7 @@ Generates a per-file summary, topics, and keywords during indexing for text file
 
 <summary>
 
-keyword\_tokenizer: optional "porter"or "trigram"
+keyword\_tokenizer: optional "porter" or "trigram"
 
 </summary>
 
@@ -430,7 +434,7 @@ max\_num\_results: number
 
 <summary>
 
-metadata: object {created\_from\_aisearch\_wizard, created\_from\_emdash\_plugin, worker\_domain }
+metadata: object { created\_from\_aisearch\_wizard, created\_from\_emdash\_plugin, worker\_domain }
 
 </summary>
 
@@ -442,7 +446,7 @@ created\_from\_aisearch\_wizard: optional boolean
 
 <summary>
 
-created\_from\_emdash\_plugin: optional object {type, version }
+created\_from\_emdash\_plugin: optional object { type, version }
 
 </summary>
 
@@ -450,7 +454,7 @@ created\_from\_emdash\_plugin: optional object {type, version }
 
 <summary>
 
-type: "native"or "rest"
+type: "native" or "rest"
 
 </summary>
 
@@ -510,7 +514,7 @@ public\_endpoint\_id: string
 
 <summary>
 
-public\_endpoint\_params: object {authorized\_hosts, chat\_completions\_endpoint, custom\_domains, 5 more }
+public\_endpoint\_params: object { authorized\_hosts, chat\_completions\_endpoint, custom\_domains, 5 more }
 
 </summary>
 
@@ -522,7 +526,7 @@ authorized\_hosts: optional array of string
 
 <summary>
 
-chat\_completions\_endpoint: optional object {disabled }
+chat\_completions\_endpoint: optional object { disabled }
 
 </summary>
 
@@ -550,7 +554,7 @@ enabled: optional boolean
 
 <summary>
 
-mcp: optional object {description, disabled }
+mcp: optional object { description, disabled }
 
 </summary>
 
@@ -570,7 +574,7 @@ disabled: optional boolean
 
 <summary>
 
-rate\_limit: optional object {period\_ms, requests, technique }
+rate\_limit: optional object { period\_ms, requests, technique }
 
 </summary>
 
@@ -592,7 +596,7 @@ minimum1
 
 <summary>
 
-technique: optional "fixed"or "sliding"
+technique: optional "fixed" or "sliding"
 
 </summary>
 
@@ -618,7 +622,7 @@ One of the following:
 
 <summary>
 
-search\_endpoint: optional object {disabled }
+search\_endpoint: optional object { disabled }
 
 </summary>
 
@@ -646,7 +650,7 @@ reranking\_model: string
 
 <summary>
 
-retrieval\_options: object {boost\_by, keyword\_match\_mode }
+retrieval\_options: object { boost\_by, keyword\_match\_mode }
 
 </summary>
 
@@ -654,7 +658,7 @@ retrieval\_options: object {boost\_by, keyword\_match\_mode }
 
 <summary>
 
-boost\_by: optional array of object {field, dataType, direction }
+boost\_by: optional array of object { field, dataType, direction }
 
 </summary>
 
@@ -670,7 +674,7 @@ minLength1
 
 <summary>
 
-dataType: optional "number"or "datetime"or "text"or "boolean"
+dataType: optional "number" or "datetime" or "text" or "boolean"
 
 </summary>
 
@@ -700,7 +704,7 @@ One of the following:
 
 <summary>
 
-direction: optional "asc"or "desc"or "exists"or "not\_exists"
+direction: optional "asc" or "desc" or "exists" or "not\_exists"
 
 </summary>
 
@@ -734,7 +738,7 @@ One of the following:
 
 <summary>
 
-keyword\_match\_mode: optional "and"or "or"
+keyword\_match\_mode: optional "and" or "or"
 
 </summary>
 
@@ -776,7 +780,7 @@ source: string
 
 <summary>
 
-source\_params: object {d1, exclude\_items, include\_items, 3 more }
+source\_params: object { d1, exclude\_items, include\_items, 3 more }
 
 </summary>
 
@@ -784,7 +788,7 @@ source\_params: object {d1, exclude\_items, include\_items, 3 more }
 
 <summary>
 
-d1: optional object {query, template }
+d1: optional object { query, template }
 
 D1 source configuration of a d1 instance.
 
@@ -826,7 +830,7 @@ r2\_jurisdiction: optional string
 
 <summary>
 
-web\_crawler: optional object {discover\_options, parse\_options, parse\_type }
+web\_crawler: optional object { discover\_options, parse\_options, parse\_type }
 
 </summary>
 
@@ -834,7 +838,7 @@ web\_crawler: optional object {discover\_options, parse\_options, parse\_type }
 
 <summary>
 
-discover\_options: optional object {depth, include\_external\_links, include\_subdomains, 3 more }
+discover\_options: optional object { depth, include\_external\_links, include\_subdomains, 3 more }
 
 </summary>
 
@@ -876,7 +880,7 @@ minimum0
 
 <summary>
 
-source: optional "all"or "sitemaps"or "links"
+source: optional "all" or "sitemaps" or "links"
 
 </summary>
 
@@ -906,7 +910,7 @@ One of the following:
 
 <summary>
 
-parse\_options: optional object {content\_selector, include\_headers, include\_images, 2 more }
+parse\_options: optional object { content\_selector, include\_headers, include\_images, 2 more }
 
 </summary>
 
@@ -914,7 +918,7 @@ parse\_options: optional object {content\_selector, include\_headers, include\_i
 
 <summary>
 
-content\_selector: optional array of object {path, selector }
+content\_selector: optional array of object { path, selector }
 
 </summary>
 
@@ -962,7 +966,7 @@ use\_browser\_rendering: optional boolean
 
 <summary>
 
-parse\_type: optional "sitemap"or "discover"
+parse\_type: optional "sitemap" or "discover"
 
 </summary>
 
@@ -1008,7 +1012,7 @@ Deprecated and ignored during indexing and search; changing it still re-indexes 
 
 <summary>
 
-sync\_interval: 900or 1800or 3600or 5 more
+sync\_interval: 900 or 1800 or 3600 or 5 more
 
 </summary>
 
@@ -1072,7 +1076,7 @@ token\_id: string
 
 <summary>
 
-type: "r2"or "web-crawler"or "d1"
+type: "r2" or "web-crawler" or "d1"
 
 </summary>
 
@@ -1102,7 +1106,7 @@ One of the following:
 
 <summary>
 
-result\_info: object {count, page, per\_page, total\_count }
+result\_info: object { count, page, per\_page, total\_count }
 
 </summary>
 

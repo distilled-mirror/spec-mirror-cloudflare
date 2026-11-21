@@ -74,7 +74,7 @@ Retrieves all AS-SETs that the given AS is a member of.
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -100,7 +100,7 @@ One of the following:
 
 <summary>
 
-result: object {as\_sets, paths }
+result: object { as\_sets, paths }
 
 </summary>
 
@@ -108,7 +108,7 @@ result: object {as\_sets, paths }
 
 <summary>
 
-as\_sets: array of object {as\_members\_count, as\_set\_members\_count, as\_set\_upstreams\_count, 6 more }
+as\_sets: array of object { as\_members\_count, as\_set\_members\_count, as\_set\_upstreams\_count, 6 more }
 
 </summary>
 

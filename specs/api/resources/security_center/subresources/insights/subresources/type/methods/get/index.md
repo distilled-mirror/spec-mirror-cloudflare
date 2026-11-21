@@ -224,7 +224,7 @@ One of the following:
 
 <summary>
 
-source: optional array of "cloudflare"or "riskrecon"
+source: optional array of "cloudflare" or "riskrecon"
 
 </summary>
 
@@ -256,7 +256,7 @@ subject: optional array of string
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -278,7 +278,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -298,7 +298,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -320,7 +320,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -346,7 +346,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional array of object {count, value }
+result: optional array of object { count, value }
 
 </summary>
 

@@ -110,7 +110,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -134,7 +134,7 @@ messages: optional array of string
 
 <summary>
 
-result: optional array of object {createdAt, job, logType, 2 more }
+result: optional array of object { createdAt, job, logType, 2 more }
 
 </summary>
 
@@ -150,7 +150,7 @@ job: optional string
 
 <summary>
 
-logType: optional "migrationStart"or "migrationComplete"or "migrationAbort"or 12 more
+logType: optional "migrationStart" or "migrationComplete" or "migrationAbort" or 12 more
 
 </summary>
 

@@ -92,7 +92,7 @@ minLength32
 
 <summary>
 
-items: optional array of object {id }
+items: optional array of object { id }
 
 The list items to delete, identified by their unique IDs.
 
@@ -140,7 +140,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -182,7 +182,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -202,7 +202,7 @@ pointer: optional string
 
 <summary>
 
-result: object {operation\_id }
+result: object { operation\_id }
 
 </summary>
 

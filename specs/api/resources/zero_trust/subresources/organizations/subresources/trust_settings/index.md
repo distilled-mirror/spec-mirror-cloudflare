@@ -42,7 +42,7 @@ DELETE/accounts/{account\_id}/access/organizations/trust\_settings
 
 <summary>
 
-TrustSettingGetResponse object {grant\_trust\_to\_all\_accounts\_in\_org, trusting\_accounts }
+TrustSettingGetResponse object { grant\_trust\_to\_all\_accounts\_in\_org, trusting\_accounts }
 
 </summary>
 
@@ -66,7 +66,7 @@ Explicit account IDs trusted to use this account’s cross-account Access resour
 
 <summary>
 
-TrustSettingReplaceResponse object {grant\_trust\_to\_all\_accounts\_in\_org, trusting\_accounts }
+TrustSettingReplaceResponse object { grant\_trust\_to\_all\_accounts\_in\_org, trusting\_accounts }
 
 </summary>
 
@@ -90,7 +90,7 @@ Explicit account IDs trusted to use this account’s cross-account Access resour
 
 <summary>
 
-TrustSettingUpdateResponse object {grant\_trust\_to\_all\_accounts\_in\_org, trusting\_accounts }
+TrustSettingUpdateResponse object { grant\_trust\_to\_all\_accounts\_in\_org, trusting\_accounts }
 
 </summary>
 
@@ -114,7 +114,7 @@ Explicit account IDs trusted to use this account’s cross-account Access resour
 
 <summary>
 
-TrustSettingDeleteResponse object {grant\_trust\_to\_all\_accounts\_in\_org, trusting\_accounts }
+TrustSettingDeleteResponse object { grant\_trust\_to\_all\_accounts\_in\_org, trusting\_accounts }
 
 </summary>
 

@@ -28,7 +28,7 @@ GET/accounts/{account\_id}/entitlements
 
 <summary>
 
-EntitlementListResponse object {id, allocation, created\_date, 3 more }
+EntitlementListResponse object { id, allocation, created\_date, 3 more }
 
 A single entitlement record for a zone or account.
 
@@ -44,7 +44,7 @@ Entitlement identifier — equal to the feature key.
 
 <summary>
 
-allocation: object {type, value }
+allocation: object { type, value }
 
 Represents the allocation value for an entitlement. The shape of <code>value</code> depends on <code>type</code>: <code>bool</code> uses a boolean, <code>max_count</code> uses an integer, <code>enum_number</code> uses an array of numbers, <code>range</code> uses an object with <code>min</code> and <code>max</code> integer fields, and <code>string</code> uses a string.
 
@@ -54,7 +54,7 @@ Represents the allocation value for an entitlement. The shape of <code>value</co
 
 <summary>
 
-type: "bool"or "max\_count"or "enum\_number"or 2 more
+type: "bool" or "max\_count" or "enum\_number" or 2 more
 
 Allocation type discriminator.
 
@@ -90,7 +90,7 @@ One of the following:
 
 <summary>
 
-value: booleanor numberor stringor 2 more
+value: boolean or number or string or 2 more
 
 Contains the allocation value whose concrete type the <code>type</code> field determines: bool yields a boolean, max\_count yields an integer, enum\_number yields an array of numbers, range yields an object with <code>min</code> and <code>max</code>, and string yields a string.
 
@@ -118,7 +118,7 @@ array of number
 
 <summary>
 
-object {max, min }
+object { max, min }
 
 </summary>
 
@@ -164,7 +164,7 @@ ISO 8601 timestamp (microsecond precision, no timezone offset) when the entitlem
 
 <summary>
 
-feature: object {id, feature\_set, key, name }
+feature: object { id, feature\_set, key, name }
 
 Describes a product feature associated with an entitlement.
 

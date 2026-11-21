@@ -72,7 +72,7 @@ Cloudflare account ID that owns the Flagship app.
 
 <summary>
 
-errors: array of object {message }
+errors: array of object { message }
 
 </summary>
 
@@ -88,7 +88,7 @@ message: string
 
 <summary>
 
-messages: array of object {message }
+messages: array of object { message }
 
 </summary>
 
@@ -104,7 +104,7 @@ message: string
 
 <summary>
 
-result: array of object {id, created\_at, name, 2 more }
+result: array of object { id, created\_at, name, 2 more }
 
 </summary>
 

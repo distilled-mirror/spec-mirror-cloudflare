@@ -66,7 +66,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 <summary>
 
-continent: optional "AF"or "AS"or "EU"or 3 more
+continent: optional "AF" or "AS" or "EU" or 3 more
 
 Filters results by continent code.
 
@@ -106,7 +106,7 @@ One of the following:
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -172,7 +172,7 @@ maxLength100
 
 <summary>
 
-result: object {locations }
+result: object { locations }
 
 </summary>
 
@@ -180,7 +180,7 @@ result: object {locations }
 
 <summary>
 
-locations: array of object {alpha2, continent, latitude, 4 more }
+locations: array of object { alpha2, continent, latitude, 4 more }
 
 </summary>
 

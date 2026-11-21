@@ -36,7 +36,7 @@ POST/radar/datasets/download
 
 <summary>
 
-DatasetListResponse object {datasets }
+DatasetListResponse object { datasets }
 
 </summary>
 
@@ -44,7 +44,7 @@ DatasetListResponse object {datasets }
 
 <summary>
 
-datasets: array of object {id, description, meta, 3 more }
+datasets: array of object { id, description, meta, 3 more }
 
 </summary>
 
@@ -88,7 +88,7 @@ DatasetGetResponse = string
 
 <summary>
 
-DatasetDownloadResponse object {dataset }
+DatasetDownloadResponse object { dataset }
 
 </summary>
 
@@ -96,7 +96,7 @@ DatasetDownloadResponse object {dataset }
 
 <summary>
 
-dataset: object {url }
+dataset: object { url }
 
 </summary>
 

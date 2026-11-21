@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`URL Scanner Write``URL Scanner Read`
+`Cloudforce One Write``Cloudforce One Read``URL Scanner Write``URL Scanner Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -80,7 +80,7 @@ formatuuid
 
 <summary>
 
-log: object {creator, entries, pages, version }
+log: object { creator, entries, pages, version }
 
 </summary>
 
@@ -88,7 +88,7 @@ log: object {creator, entries, pages, version }
 
 <summary>
 
-creator: object {comment, name, version }
+creator: object { comment, name, version }
 
 </summary>
 
@@ -112,7 +112,7 @@ version: string
 
 <summary>
 
-entries: array of object {\_initialPriority, \_initiator\_type, \_priority, 11 more }
+entries: array of object { \_initialPriority, \_initiator\_type, \_priority, 11 more }
 
 </summary>
 
@@ -156,7 +156,7 @@ pageref: string
 
 <summary>
 
-request: object {bodySize, headers, headersSize, 3 more }
+request: object { bodySize, headers, headersSize, 3 more }
 
 </summary>
 
@@ -168,7 +168,7 @@ bodySize: number
 
 <summary>
 
-headers: array of object {name, value }
+headers: array of object { name, value }
 
 </summary>
 
@@ -208,7 +208,7 @@ url: string
 
 <summary>
 
-response: object {\_transferSize, bodySize, content, 6 more }
+response: object { \_transferSize, bodySize, content, 6 more }
 
 </summary>
 
@@ -224,7 +224,7 @@ bodySize: number
 
 <summary>
 
-content: object {mimeType, size, compression }
+content: object { mimeType, size, compression }
 
 </summary>
 
@@ -248,7 +248,7 @@ compression: optional number
 
 <summary>
 
-headers: array of object {name, value }
+headers: array of object { name, value }
 
 </summary>
 
@@ -308,7 +308,7 @@ time: number
 
 <summary>
 
-pages: array of object {id, pageTimings, startedDateTime, title }
+pages: array of object { id, pageTimings, startedDateTime, title }
 
 </summary>
 
@@ -320,7 +320,7 @@ id: string
 
 <summary>
 
-pageTimings: object {onContentLoad, onLoad }
+pageTimings: object { onContentLoad, onLoad }
 
 </summary>
 

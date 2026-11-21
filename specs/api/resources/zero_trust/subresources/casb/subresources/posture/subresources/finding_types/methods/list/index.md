@@ -38,7 +38,7 @@ The preferred authorization scheme for interacting with the Cloudflare API. [Cre
 
 ##### Accepted Permissions (at least one required)
 
-`Zero Trust Read``Zero Trust Write`
+`CASB Write``CASB Read``Zero Trust Read``Zero Trust Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -52,7 +52,7 @@ account\_id: string
 
 <summary>
 
-direction: optional "asc"or "desc"
+direction: optional "asc" or "desc"
 
 Sort direction for the primary field. Defaults to ‘desc’. Ties are resolved by case-insensitive name, then ID, both ascending regardless of direction.
 
@@ -92,7 +92,7 @@ formatdate-time
 
 <summary>
 
-order: optional "created"or "updated"or "match\_count"or 5 more
+order: optional "created" or "updated" or "match\_count" or 5 more
 
 Field to sort by (case-insensitive). Defaults to ‘created’. Name and vendor sorting is case-insensitive; vendor uses friendly provider names. Ascending order: type Content then Posture; origin custom then system; severity Low, Medium, High, Critical.
 
@@ -140,7 +140,7 @@ One of the following:
 
 <summary>
 
-origins: optional array of "custom"or "system"
+origins: optional array of "custom" or "system"
 
 Filter finding types by origin. Supports multiple comma-separated, case-insensitive values.
 
@@ -190,7 +190,7 @@ Filter finding types by name or ID (case-insensitive substring match).
 
 <summary>
 
-severities: optional array of "critical"or "high"or "medium"or "low"
+severities: optional array of "critical" or "high" or "medium" or "low"
 
 Filter finding types by severity. Supports multiple comma-separated, case-insensitive values.
 
@@ -222,7 +222,7 @@ One of the following:
 
 <summary>
 
-types: optional array of "Content"or "Posture"
+types: optional array of "Content" or "Posture"
 
 Filter finding types by category type. Supports multiple comma-separated, case-insensitive values.
 
@@ -246,7 +246,7 @@ One of the following:
 
 <summary>
 
-vendors: optional array of "ANTHROPIC"or "AWS"or "BITBUCKET"or 13 more
+vendors: optional array of "ANTHROPIC" or "AWS" or "BITBUCKET" or 13 more
 
 Filter finding types by vendor. Supports multiple comma-separated values. Each value may be either the vendor enum (GOOGLE\_WORKSPACE) or the friendly name returned by the read routes (Google Workspace).
 
@@ -328,7 +328,7 @@ One of the following:
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -358,7 +358,7 @@ formaturi
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -380,7 +380,7 @@ JSON pointer to the source of the error.
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -410,7 +410,7 @@ formaturi
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -432,7 +432,7 @@ JSON pointer to the source of the error.
 
 <summary>
 
-result\_info: object {count, cursor, next, 4 more }
+result\_info: object { count, cursor, next, 4 more }
 
 Pagination and result information.
 
@@ -498,7 +498,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional array of object {id, category, name, 14 more }
+result: optional array of object { id, category, name, 14 more }
 
 Array of finding type objects.
 
@@ -516,7 +516,7 @@ formatuuid
 
 <summary>
 
-category: object {observation, product, type }
+category: object { observation, product, type }
 
 Category information for a finding.
 
@@ -526,7 +526,7 @@ Category information for a finding.
 
 <summary>
 
-observation: "Issue"or "Insight"or "Activity"
+observation: "Issue" or "Insight" or "Activity"
 
 The type of the observation.
 
@@ -554,7 +554,7 @@ One of the following:
 
 <summary>
 
-product: "SaaS"or "Cloud"
+product: "SaaS" or "Cloud"
 
 The product category.
 
@@ -578,7 +578,7 @@ One of the following:
 
 <summary>
 
-type: "Content"or "Posture"
+type: "Content" or "Posture"
 
 The type of the finding category.
 
@@ -612,7 +612,7 @@ The name of the finding.
 
 <summary>
 
-severity: "Critical"or "High"or "Medium"or "Low"
+severity: "Critical" or "High" or "Medium" or "Low"
 
 Default severity used when no integration-specific severity override exists.
 
@@ -662,7 +662,7 @@ Asset class the finding type’s policy evaluates.
 
 <summary>
 
-asset\_vendor: optional "ANTHROPIC"or "AWS"or "BITBUCKET"or 13 more
+asset\_vendor: optional "ANTHROPIC" or "AWS" or "BITBUCKET" or 13 more
 
 Canonical vendor enum value.
 
@@ -776,7 +776,7 @@ formatint64
 
 <summary>
 
-origin: optional "system"or "custom"
+origin: optional "system" or "custom"
 
 Whether the finding type is system-managed or customer-created.
 

@@ -44,7 +44,7 @@ DELETE/accounts/{account\_id}/alerting/v3/silences/{silence\_id}
 
 <summary>
 
-SilenceListResponse object {id, created\_at, end\_time, 3 more }
+SilenceListResponse object { id, created\_at, end\_time, 3 more }
 
 </summary>
 
@@ -96,7 +96,7 @@ When the silence was modified.
 
 <summary>
 
-SilenceGetResponse object {id, created\_at, end\_time, 3 more }
+SilenceGetResponse object { id, created\_at, end\_time, 3 more }
 
 </summary>
 
@@ -148,7 +148,7 @@ When the silence was modified.
 
 <summary>
 
-SilenceCreateResponse object {errors, messages, success }
+SilenceCreateResponse object { errors, messages, success }
 
 </summary>
 
@@ -156,7 +156,7 @@ SilenceCreateResponse object {errors, messages, success }
 
 <summary>
 
-errors: array of object {message, code }
+errors: array of object { message, code }
 
 </summary>
 
@@ -178,7 +178,7 @@ minimum1000
 
 <summary>
 
-messages: array of object {message, code }
+messages: array of object { message, code }
 
 </summary>
 
@@ -210,7 +210,7 @@ Whether the API call was successful
 
 <summary>
 
-SilenceUpdateResponse object {id, created\_at, end\_time, 3 more }
+SilenceUpdateResponse object { id, created\_at, end\_time, 3 more }
 
 </summary>
 
@@ -262,7 +262,7 @@ When the silence was modified.
 
 <summary>
 
-SilenceDeleteResponse object {errors, messages, success }
+SilenceDeleteResponse object { errors, messages, success }
 
 </summary>
 
@@ -270,7 +270,7 @@ SilenceDeleteResponse object {errors, messages, success }
 
 <summary>
 
-errors: array of object {message, code }
+errors: array of object { message, code }
 
 </summary>
 
@@ -292,7 +292,7 @@ minimum1000
 
 <summary>
 
-messages: array of object {message, code }
+messages: array of object { message, code }
 
 </summary>
 

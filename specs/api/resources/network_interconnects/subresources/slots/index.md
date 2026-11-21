@@ -32,7 +32,7 @@ GET/accounts/{account\_id}/cni/slots/{slot}
 
 <summary>
 
-SlotListResponse object {items, next }
+SlotListResponse object { items, next }
 
 </summary>
 
@@ -40,7 +40,7 @@ SlotListResponse object {items, next }
 
 <summary>
 
-items: array of object {id, facility, occupied, 4 more }
+items: array of object { id, facility, occupied, 4 more }
 
 </summary>
 
@@ -56,7 +56,7 @@ formatuuid
 
 <summary>
 
-facility: object {address, name }
+facility: object { address, name }
 
 </summary>
 
@@ -114,7 +114,7 @@ formatint32
 
 <summary>
 
-SlotGetResponse object {id, facility, occupied, 4 more }
+SlotGetResponse object { id, facility, occupied, 4 more }
 
 </summary>
 
@@ -130,7 +130,7 @@ formatuuid
 
 <summary>
 
-facility: object {address, name }
+facility: object { address, name }
 
 </summary>
 

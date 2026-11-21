@@ -34,7 +34,7 @@ DELETE/accounts/{account\_id}/addressing/address\_maps/{address\_map\_id}/accoun
 
 <summary>
 
-AccountUpdateResponse object {errors, messages, success, result\_info }
+AccountUpdateResponse object { errors, messages, success, result\_info }
 
 </summary>
 
@@ -42,7 +42,7 @@ AccountUpdateResponse object {errors, messages, success, result\_info }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -64,7 +64,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -84,7 +84,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -106,7 +106,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -132,7 +132,7 @@ Whether the API call was successful.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 
@@ -178,7 +178,7 @@ The number of total pages in the entire result set.
 
 <summary>
 
-AccountDeleteResponse object {errors, messages, success, result\_info }
+AccountDeleteResponse object { errors, messages, success, result\_info }
 
 </summary>
 
@@ -186,7 +186,7 @@ AccountDeleteResponse object {errors, messages, success, result\_info }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -208,7 +208,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -228,7 +228,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -250,7 +250,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -276,7 +276,7 @@ Whether the API call was successful.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

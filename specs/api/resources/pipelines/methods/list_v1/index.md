@@ -92,7 +92,7 @@ minimum1
 
 <summary>
 
-result: array of object {id, created\_at, modified\_at, 3 more }
+result: array of object { id, created\_at, modified\_at, 3 more }
 
 </summary>
 
@@ -140,7 +140,7 @@ Indicates the current status of the Pipeline.
 
 <summary>
 
-result\_info: object {count, page, per\_page, total\_count }
+result\_info: object { count, page, per\_page, total\_count }
 
 </summary>
 

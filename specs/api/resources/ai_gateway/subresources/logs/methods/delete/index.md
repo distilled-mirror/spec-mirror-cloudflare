@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`AI Gateway Write`
+`AI Search Index Engine``Auto Rag Write Run Engine``AI Gateway Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -80,7 +80,7 @@ minLength1
 
 <summary>
 
-filters: optional array of object {key, operator, value }
+filters: optional array of object { key, operator, value }
 
 </summary>
 
@@ -88,7 +88,7 @@ filters: optional array of object {key, operator, value }
 
 <summary>
 
-key: "id"or "created\_at"or "request\_content\_type"or 21 more
+key: "id" or "created\_at" or "request\_content\_type" or 21 more
 
 </summary>
 
@@ -198,7 +198,7 @@ One of the following:
 
 <summary>
 
-operator: "eq"or "neq"or "contains"or 2 more
+operator: "eq" or "neq" or "contains" or 2 more
 
 </summary>
 
@@ -232,7 +232,7 @@ One of the following:
 
 <summary>
 
-value: array of stringor numberor boolean
+value: array of string or number or boolean
 
 Filter values.
 
@@ -272,7 +272,7 @@ minimum1
 
 <summary>
 
-order\_by: optional "created\_at"or "provider"or "model"or 8 more
+order\_by: optional "created\_at" or "provider" or "model" or 8 more
 
 </summary>
 
@@ -330,7 +330,7 @@ One of the following:
 
 <summary>
 
-order\_by\_direction: optional "asc"or "desc"
+order\_by\_direction: optional "asc" or "desc"
 
 </summary>
 

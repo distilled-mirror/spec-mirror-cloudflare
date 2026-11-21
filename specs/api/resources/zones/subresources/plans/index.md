@@ -32,7 +32,7 @@ GET/zones/{zone\_id}/available\_plans/{plan\_identifier}
 
 <summary>
 
-AvailableRatePlan object {id, can\_subscribe, currency, 6 more }
+AvailableRatePlan object { id, can\_subscribe, currency, 6 more }
 
 </summary>
 
@@ -66,7 +66,7 @@ Indicates whether this plan is managed externally.
 
 <summary>
 
-frequency: optional "weekly"or "monthly"or "quarterly"or "yearly"
+frequency: optional "weekly" or "monthly" or "quarterly" or "yearly"
 
 The frequency at which you will be billed for this plan.
 

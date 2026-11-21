@@ -140,7 +140,7 @@ maxLength36
 
 <summary>
 
-errors: array of object {code, message, context }
+errors: array of object { code, message, context }
 
 </summary>
 
@@ -168,7 +168,7 @@ Optional error-specific context.
 
 <summary>
 
-messages: array of object {code, message, context }
+messages: array of object { code, message, context }
 
 </summary>
 
@@ -240,7 +240,7 @@ The hostname of the route.
 
 <summary>
 
-tun\_type: optional "cfd\_tunnel"or "warp\_connector"or "warp"or 4 more
+tun\_type: optional "cfd\_tunnel" or "warp\_connector" or "warp" or 4 more
 
 The type of tunnel.
 
@@ -310,7 +310,7 @@ Whether the API call was successful
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object { count, page, per\_page, total\_count }
 
 </summary>
 

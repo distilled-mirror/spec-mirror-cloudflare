@@ -90,7 +90,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -132,7 +132,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -198,7 +198,7 @@ One of the following:
 
 <summary>
 
-FileInput object {operating\_system, path, exists, 2 more }
+FileInput object { operating\_system, path, exists, 2 more }
 
 </summary>
 
@@ -206,7 +206,7 @@ FileInput object {operating\_system, path, exists, 2 more }
 
 <summary>
 
-operating\_system: "windows"or "linux"or "mac"
+operating\_system: "windows" or "linux" or "mac"
 
 Operating system.
 
@@ -262,7 +262,7 @@ Signing certificate thumbprint.
 
 <summary>
 
-UniqueClientIDInput object {id, operating\_system }
+UniqueClientIDInput object { id, operating\_system }
 
 </summary>
 
@@ -276,7 +276,7 @@ List ID.
 
 <summary>
 
-operating\_system: "android"or "ios"or "chromeos"
+operating\_system: "android" or "ios" or "chromeos"
 
 Operating System.
 
@@ -308,7 +308,7 @@ One of the following:
 
 <summary>
 
-DomainJoinedInput object {operating\_system, domain }
+DomainJoinedInput object { operating\_system, domain }
 
 </summary>
 
@@ -332,7 +332,7 @@ Domain.
 
 <summary>
 
-OSVersionInput object {operating\_system, operator, version, 3 more }
+OSVersionInput object { operating\_system, operator, version, 3 more }
 
 </summary>
 
@@ -346,7 +346,7 @@ Operating System.
 
 <summary>
 
-operator: "&lt;"or "&lt;="or "&gt;"or 2 more
+operator: "&lt;" or "&lt;=" or "&gt;" or 2 more
 
 Operator.
 
@@ -410,7 +410,7 @@ Additional operating system version details. For Windows, the UBR (Update Build 
 
 <summary>
 
-FirewallInput object {enabled, operating\_system }
+FirewallInput object { enabled, operating\_system }
 
 </summary>
 
@@ -424,7 +424,7 @@ Enabled.
 
 <summary>
 
-operating\_system: "windows"or "mac"
+operating\_system: "windows" or "mac"
 
 Operating System.
 
@@ -452,7 +452,7 @@ One of the following:
 
 <summary>
 
-SentineloneInput object {operating\_system, path, sha256, thumbprint }
+SentineloneInput object { operating\_system, path, sha256, thumbprint }
 
 </summary>
 
@@ -460,7 +460,7 @@ SentineloneInput object {operating\_system, path, sha256, thumbprint }
 
 <summary>
 
-operating\_system: "windows"or "linux"or "mac"
+operating\_system: "windows" or "linux" or "mac"
 
 Operating system.
 
@@ -510,7 +510,7 @@ Signing certificate thumbprint.
 
 <summary>
 
-TeamsDevicesCarbonblackInputRequest object {operating\_system, path, sha256, thumbprint }
+TeamsDevicesCarbonblackInputRequest object { operating\_system, path, sha256, thumbprint }
 
 </summary>
 
@@ -518,7 +518,7 @@ TeamsDevicesCarbonblackInputRequest object {operating\_system, path, sha256, thu
 
 <summary>
 
-operating\_system: "windows"or "linux"or "mac"
+operating\_system: "windows" or "linux" or "mac"
 
 Operating system.
 
@@ -568,7 +568,7 @@ Signing certificate thumbprint.
 
 <summary>
 
-TeamsDevicesAccessSerialNumberListInputRequest object {id }
+TeamsDevicesAccessSerialNumberListInputRequest object { id }
 
 </summary>
 
@@ -588,7 +588,7 @@ maxLength36
 
 <summary>
 
-DiskEncryptionInput object {checkDisks, requireAll }
+DiskEncryptionInput object { checkDisks, requireAll }
 
 </summary>
 
@@ -612,7 +612,7 @@ Whether to check all disks for encryption.
 
 <summary>
 
-TeamsDevicesApplicationInputRequest object {operating\_system, path, sha256, thumbprint }
+TeamsDevicesApplicationInputRequest object { operating\_system, path, sha256, thumbprint }
 
 </summary>
 
@@ -620,7 +620,7 @@ TeamsDevicesApplicationInputRequest object {operating\_system, path, sha256, thu
 
 <summary>
 
-operating\_system: "windows"or "linux"or "mac"
+operating\_system: "windows" or "linux" or "mac"
 
 Operating system.
 
@@ -670,7 +670,7 @@ Signing certificate thumbprint.
 
 <summary>
 
-ClientCertificateInput object {certificate\_id, cn }
+ClientCertificateInput object { certificate\_id, cn }
 
 </summary>
 
@@ -696,7 +696,7 @@ Common Name that is protected by the certificate.
 
 <summary>
 
-TeamsDevicesClientCertificateV2InputRequest object {certificate\_id, check\_private\_key, operating\_system, 4 more }
+TeamsDevicesClientCertificateV2InputRequest object { certificate\_id, check\_private\_key, operating\_system, 4 more }
 
 </summary>
 
@@ -718,7 +718,7 @@ Confirm the certificate was not imported from another device. We recommend keepi
 
 <summary>
 
-operating\_system: "windows"or "linux"or "mac"
+operating\_system: "windows" or "linux" or "mac"
 
 Operating system.
 
@@ -752,7 +752,7 @@ Certificate Common Name. This may include one or more variables in the ${ } nota
 
 <summary>
 
-extended\_key\_usage: optional array of "clientAuth"or "emailProtection"
+extended\_key\_usage: optional array of "clientAuth" or "emailProtection"
 
 List of values indicating purposes for which the certificate public key can be used.
 
@@ -776,7 +776,7 @@ One of the following:
 
 <summary>
 
-locations: optional object {paths, trust\_stores }
+locations: optional object { paths, trust\_stores }
 
 </summary>
 
@@ -790,7 +790,7 @@ List of paths to check for client certificate on linux.
 
 <summary>
 
-trust\_stores: optional array of "system"or "user"
+trust\_stores: optional array of "system" or "user"
 
 List of trust stores to check for client certificate.
 
@@ -828,7 +828,7 @@ List of certificate Subject Alternative Names.
 
 <summary>
 
-TeamsDevicesAntivirusInputRequest object {update\_window\_days }
+TeamsDevicesAntivirusInputRequest object { update\_window\_days }
 
 </summary>
 
@@ -846,7 +846,7 @@ Number of days that the antivirus should be updated within.
 
 <summary>
 
-WorkspaceOneInput object {compliance\_status, connection\_id }
+WorkspaceOneInput object { compliance\_status, connection\_id }
 
 </summary>
 
@@ -854,7 +854,7 @@ WorkspaceOneInput object {compliance\_status, connection\_id }
 
 <summary>
 
-compliance\_status: "compliant"or "noncompliant"or "unknown"
+compliance\_status: "compliant" or "noncompliant" or "unknown"
 
 Compliance Status.
 
@@ -892,7 +892,7 @@ Posture Integration ID.
 
 <summary>
 
-CrowdstrikeInput object {connection\_id, last\_seen, operator, 6 more }
+CrowdstrikeInput object { connection\_id, last\_seen, operator, 6 more }
 
 </summary>
 
@@ -912,7 +912,7 @@ For more details on last seen, please refer to the Crowdstrike documentation.
 
 <summary>
 
-operator: optional "&lt;"or "&lt;="or "&gt;"or 2 more
+operator: optional "&lt;" or "&lt;=" or "&gt;" or 2 more
 
 Operator.
 
@@ -966,7 +966,7 @@ SensorConfig.
 
 <summary>
 
-state: optional "online"or "offline"or "unknown"
+state: optional "online" or "offline" or "unknown"
 
 For more details on state, please refer to the Crowdstrike documentation.
 
@@ -1000,7 +1000,7 @@ Version.
 
 <summary>
 
-versionOperator: optional "&lt;"or "&lt;="or "&gt;"or 2 more
+versionOperator: optional "&lt;" or "&lt;=" or "&gt;" or 2 more
 
 Version Operator.
 
@@ -1040,7 +1040,7 @@ One of the following:
 
 <summary>
 
-IntuneInput object {compliance\_status, connection\_id }
+IntuneInput object { compliance\_status, connection\_id }
 
 </summary>
 
@@ -1048,7 +1048,7 @@ IntuneInput object {compliance\_status, connection\_id }
 
 <summary>
 
-compliance\_status: "compliant"or "noncompliant"or "unknown"or 5 more
+compliance\_status: "compliant" or "noncompliant" or "unknown" or 5 more
 
 Compliance Status.
 
@@ -1106,7 +1106,7 @@ Posture Integration ID.
 
 <summary>
 
-KolideInput object {connection\_id, auth\_state, countOperator, issue\_count }
+KolideInput object { connection\_id, auth\_state, countOperator, issue\_count }
 
 </summary>
 
@@ -1120,7 +1120,7 @@ Posture Integration ID.
 
 <summary>
 
-auth\_state: optional array of "Good"or "Notified"or "Will Block"or "Blocked"
+auth\_state: optional array of "Good" or "Notified" or "Will Block" or "Blocked"
 
 The set of Kolide device authentication states that pass the posture check. Device must match one of the specified states.
 
@@ -1152,7 +1152,7 @@ One of the following:
 
 <summary>
 
-countOperator: optional "&lt;"or "&lt;="or "&gt;"or 2 more
+countOperator: optional "&lt;" or "&lt;=" or "&gt;" or 2 more
 
 Count Operator.
 
@@ -1198,7 +1198,7 @@ The Number of Issues.
 
 <summary>
 
-TaniumInput object {connection\_id, eid\_last\_seen, operator, 3 more }
+TaniumInput object { connection\_id, eid\_last\_seen, operator, 3 more }
 
 </summary>
 
@@ -1218,7 +1218,7 @@ For more details on eid last seen, refer to the Tanium documentation.
 
 <summary>
 
-operator: optional "&lt;"or "&lt;="or "&gt;"or 2 more
+operator: optional "&lt;" or "&lt;=" or "&gt;" or 2 more
 
 Operator to evaluate risk\_level or eid\_last\_seen.
 
@@ -1254,7 +1254,7 @@ One of the following:
 
 <summary>
 
-risk\_level: optional "low"or "medium"or "high"or "critical"
+risk\_level: optional "low" or "medium" or "high" or "critical"
 
 For more details on risk level, refer to the Tanium documentation.
 
@@ -1286,7 +1286,7 @@ One of the following:
 
 <summary>
 
-scoreOperator: optional "&lt;"or "&lt;="or "&gt;"or 2 more
+scoreOperator: optional "&lt;" or "&lt;=" or "&gt;" or 2 more
 
 Score Operator.
 
@@ -1332,7 +1332,7 @@ For more details on total score, refer to the Tanium documentation.
 
 <summary>
 
-SentineloneS2sInput object {connection\_id, active\_threats, infected, 4 more }
+SentineloneS2sInput object { connection\_id, active\_threats, infected, 4 more }
 
 </summary>
 
@@ -1364,7 +1364,7 @@ Whether device is active.
 
 <summary>
 
-network\_status: optional "connected"or "disconnected"or "disconnecting"or "connecting"
+network\_status: optional "connected" or "disconnected" or "disconnecting" or "connecting"
 
 Network status of device.
 
@@ -1396,7 +1396,7 @@ One of the following:
 
 <summary>
 
-operational\_state: optional "na"or "partially\_disabled"or "auto\_fully\_disabled"or 4 more
+operational\_state: optional "na" or "partially\_disabled" or "auto\_fully\_disabled" or 4 more
 
 Agent operational state.
 
@@ -1440,7 +1440,7 @@ One of the following:
 
 <summary>
 
-operator: optional "&lt;"or "&lt;="or "&gt;"or 2 more
+operator: optional "&lt;" or "&lt;=" or "&gt;" or 2 more
 
 Operator.
 
@@ -1480,7 +1480,7 @@ One of the following:
 
 <summary>
 
-TeamsDevicesCustomS2sInputRequest object {connection\_id, operator, score }
+TeamsDevicesCustomS2sInputRequest object { connection\_id, operator, score }
 
 </summary>
 
@@ -1494,7 +1494,7 @@ Posture Integration ID.
 
 <summary>
 
-operator: "&lt;"or "&lt;="or "&gt;"or 2 more
+operator: "&lt;" or "&lt;=" or "&gt;" or 2 more
 
 Operator.
 
@@ -1554,7 +1554,7 @@ The conditions that the client must match to run the rule.
 
 <summary>
 
-platform: optional "windows"or "mac"or "linux"or 3 more
+platform: optional "windows" or "mac" or "linux" or 3 more
 
 </summary>
 
@@ -1608,7 +1608,7 @@ Polling frequency for the WARP client posture check. Default: <code>5m</code> (p
 
 <summary>
 
-type: optional "file"or "application"or "tanium"or 20 more
+type: optional "file" or "application" or "tanium" or 20 more
 
 The type of device posture rule.
 
@@ -1726,7 +1726,7 @@ Whether the API call was successful.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object { count, page, per\_page, total\_count }
 
 </summary>
 

@@ -42,7 +42,7 @@ DELETE/accounts/{account\_id}/email-security/investigate/bulk/{job\_id}
 
 <summary>
 
-BulkListResponse object {action\_params, action\_type, created\_at, 13 more }
+BulkListResponse object { action\_params, action\_type, created\_at, 13 more }
 
 </summary>
 
@@ -50,7 +50,7 @@ BulkListResponse object {action\_params, action\_type, created\_at, 13 more }
 
 <summary>
 
-action\_params: object {destination, type, expected\_disposition } or object {type }
+action\_params: object { destination, type, expected\_disposition } or object { type }
 
 </summary>
 
@@ -60,7 +60,7 @@ One of the following:
 
 <summary>
 
-Move object {destination, type, expected\_disposition }
+Move object { destination, type, expected\_disposition }
 
 </summary>
 
@@ -68,7 +68,7 @@ Move object {destination, type, expected\_disposition }
 
 <summary>
 
-destination: "Inbox"or "JunkEmail"or "DeletedItems"or 2 more
+destination: "Inbox" or "JunkEmail" or "DeletedItems" or 2 more
 
 The mailbox folder to move messages to.
 
@@ -108,7 +108,7 @@ type: "MOVE"
 
 <summary>
 
-Deprecatedexpected\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+Deprecatedexpected\_disposition: optional "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 This field is nonfunctional.
 
@@ -170,7 +170,7 @@ One of the following:
 
 <summary>
 
-Release object {type }
+Release object { type }
 
 </summary>
 
@@ -190,7 +190,7 @@ type: "RELEASE"
 
 <summary>
 
-action\_type: "MOVE"or "RELEASE"
+action\_type: "MOVE" or "RELEASE"
 
 </summary>
 
@@ -248,7 +248,7 @@ messages\_successful: number
 
 <summary>
 
-search\_params: object {action\_log, alert\_id, delivery\_status, 15 more }
+search\_params: object { action\_log, alert\_id, delivery\_status, 15 more }
 
 </summary>
 
@@ -270,7 +270,7 @@ Alert ID of the detection to filter by.
 
 <summary>
 
-delivery\_status: optional "delivered"or "moved"or "quarantined"or 5 more
+delivery\_status: optional "delivered" or "moved" or "quarantined" or 5 more
 
 Delivery status to filter by.
 
@@ -344,7 +344,7 @@ Match messages whose subject line equals this value exactly.
 
 <summary>
 
-final\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+final\_disposition: optional "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 Dispositions to filter by.
 
@@ -400,7 +400,7 @@ One of the following:
 
 <summary>
 
-message\_action: optional "PREVIEW"or "QUARANTINE\_RELEASED"or "MOVED"
+message\_action: optional "PREVIEW" or "QUARANTINE\_RELEASED" or "MOVED"
 
 Message actions to filter by.
 
@@ -488,7 +488,7 @@ Whether to search reclassification submissions instead of original messages.
 
 <summary>
 
-status: "PENDING"or "DISCOVERING"or "PROCESSING"or 3 more
+status: "PENDING" or "DISCOVERING" or "PROCESSING" or 3 more
 
 Status of a bulk action job.
 
@@ -556,7 +556,7 @@ status\_message: optional string
 
 <summary>
 
-BulkCreateResponse object {action\_params, action\_type, created\_at, 13 more }
+BulkCreateResponse object { action\_params, action\_type, created\_at, 13 more }
 
 </summary>
 
@@ -564,7 +564,7 @@ BulkCreateResponse object {action\_params, action\_type, created\_at, 13 more }
 
 <summary>
 
-action\_params: object {destination, type, expected\_disposition } or object {type }
+action\_params: object { destination, type, expected\_disposition } or object { type }
 
 </summary>
 
@@ -574,7 +574,7 @@ One of the following:
 
 <summary>
 
-Move object {destination, type, expected\_disposition }
+Move object { destination, type, expected\_disposition }
 
 </summary>
 
@@ -582,7 +582,7 @@ Move object {destination, type, expected\_disposition }
 
 <summary>
 
-destination: "Inbox"or "JunkEmail"or "DeletedItems"or 2 more
+destination: "Inbox" or "JunkEmail" or "DeletedItems" or 2 more
 
 The mailbox folder to move messages to.
 
@@ -622,7 +622,7 @@ type: "MOVE"
 
 <summary>
 
-Deprecatedexpected\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+Deprecatedexpected\_disposition: optional "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 This field is nonfunctional.
 
@@ -684,7 +684,7 @@ One of the following:
 
 <summary>
 
-Release object {type }
+Release object { type }
 
 </summary>
 
@@ -704,7 +704,7 @@ type: "RELEASE"
 
 <summary>
 
-action\_type: "MOVE"or "RELEASE"
+action\_type: "MOVE" or "RELEASE"
 
 </summary>
 
@@ -762,7 +762,7 @@ messages\_successful: number
 
 <summary>
 
-search\_params: object {action\_log, alert\_id, delivery\_status, 15 more }
+search\_params: object { action\_log, alert\_id, delivery\_status, 15 more }
 
 </summary>
 
@@ -784,7 +784,7 @@ Alert ID of the detection to filter by.
 
 <summary>
 
-delivery\_status: optional "delivered"or "moved"or "quarantined"or 5 more
+delivery\_status: optional "delivered" or "moved" or "quarantined" or 5 more
 
 Delivery status to filter by.
 
@@ -858,7 +858,7 @@ Match messages whose subject line equals this value exactly.
 
 <summary>
 
-final\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+final\_disposition: optional "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 Dispositions to filter by.
 
@@ -914,7 +914,7 @@ One of the following:
 
 <summary>
 
-message\_action: optional "PREVIEW"or "QUARANTINE\_RELEASED"or "MOVED"
+message\_action: optional "PREVIEW" or "QUARANTINE\_RELEASED" or "MOVED"
 
 Message actions to filter by.
 
@@ -1002,7 +1002,7 @@ Whether to search reclassification submissions instead of original messages.
 
 <summary>
 
-status: "PENDING"or "DISCOVERING"or "PROCESSING"or 3 more
+status: "PENDING" or "DISCOVERING" or "PROCESSING" or 3 more
 
 Status of a bulk action job.
 
@@ -1070,7 +1070,7 @@ status\_message: optional string
 
 <summary>
 
-BulkGetResponse object {action\_params, action\_type, created\_at, 13 more }
+BulkGetResponse object { action\_params, action\_type, created\_at, 13 more }
 
 </summary>
 
@@ -1078,7 +1078,7 @@ BulkGetResponse object {action\_params, action\_type, created\_at, 13 more }
 
 <summary>
 
-action\_params: object {destination, type, expected\_disposition } or object {type }
+action\_params: object { destination, type, expected\_disposition } or object { type }
 
 </summary>
 
@@ -1088,7 +1088,7 @@ One of the following:
 
 <summary>
 
-Move object {destination, type, expected\_disposition }
+Move object { destination, type, expected\_disposition }
 
 </summary>
 
@@ -1096,7 +1096,7 @@ Move object {destination, type, expected\_disposition }
 
 <summary>
 
-destination: "Inbox"or "JunkEmail"or "DeletedItems"or 2 more
+destination: "Inbox" or "JunkEmail" or "DeletedItems" or 2 more
 
 The mailbox folder to move messages to.
 
@@ -1136,7 +1136,7 @@ type: "MOVE"
 
 <summary>
 
-Deprecatedexpected\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+Deprecatedexpected\_disposition: optional "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 This field is nonfunctional.
 
@@ -1198,7 +1198,7 @@ One of the following:
 
 <summary>
 
-Release object {type }
+Release object { type }
 
 </summary>
 
@@ -1218,7 +1218,7 @@ type: "RELEASE"
 
 <summary>
 
-action\_type: "MOVE"or "RELEASE"
+action\_type: "MOVE" or "RELEASE"
 
 </summary>
 
@@ -1276,7 +1276,7 @@ messages\_successful: number
 
 <summary>
 
-search\_params: object {action\_log, alert\_id, delivery\_status, 15 more }
+search\_params: object { action\_log, alert\_id, delivery\_status, 15 more }
 
 </summary>
 
@@ -1298,7 +1298,7 @@ Alert ID of the detection to filter by.
 
 <summary>
 
-delivery\_status: optional "delivered"or "moved"or "quarantined"or 5 more
+delivery\_status: optional "delivered" or "moved" or "quarantined" or 5 more
 
 Delivery status to filter by.
 
@@ -1372,7 +1372,7 @@ Match messages whose subject line equals this value exactly.
 
 <summary>
 
-final\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+final\_disposition: optional "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 Dispositions to filter by.
 
@@ -1428,7 +1428,7 @@ One of the following:
 
 <summary>
 
-message\_action: optional "PREVIEW"or "QUARANTINE\_RELEASED"or "MOVED"
+message\_action: optional "PREVIEW" or "QUARANTINE\_RELEASED" or "MOVED"
 
 Message actions to filter by.
 
@@ -1516,7 +1516,7 @@ Whether to search reclassification submissions instead of original messages.
 
 <summary>
 
-status: "PENDING"or "DISCOVERING"or "PROCESSING"or 3 more
+status: "PENDING" or "DISCOVERING" or "PROCESSING" or 3 more
 
 Status of a bulk action job.
 
@@ -1584,7 +1584,7 @@ status\_message: optional string
 
 <summary>
 
-BulkDeleteResponse object {id }
+BulkDeleteResponse object { id }
 
 </summary>
 
@@ -1610,7 +1610,7 @@ POST/accounts/{account\_id}/email-security/investigate/bulk/{job\_id}/cancel
 
 <summary>
 
-CancelCreateResponse object {action\_params, action\_type, created\_at, 13 more }
+CancelCreateResponse object { action\_params, action\_type, created\_at, 13 more }
 
 </summary>
 
@@ -1618,7 +1618,7 @@ CancelCreateResponse object {action\_params, action\_type, created\_at, 13 more 
 
 <summary>
 
-action\_params: object {destination, type, expected\_disposition } or object {type }
+action\_params: object { destination, type, expected\_disposition } or object { type }
 
 </summary>
 
@@ -1628,7 +1628,7 @@ One of the following:
 
 <summary>
 
-Move object {destination, type, expected\_disposition }
+Move object { destination, type, expected\_disposition }
 
 </summary>
 
@@ -1636,7 +1636,7 @@ Move object {destination, type, expected\_disposition }
 
 <summary>
 
-destination: "Inbox"or "JunkEmail"or "DeletedItems"or 2 more
+destination: "Inbox" or "JunkEmail" or "DeletedItems" or 2 more
 
 The mailbox folder to move messages to.
 
@@ -1676,7 +1676,7 @@ type: "MOVE"
 
 <summary>
 
-Deprecatedexpected\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+Deprecatedexpected\_disposition: optional "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 This field is nonfunctional.
 
@@ -1738,7 +1738,7 @@ One of the following:
 
 <summary>
 
-Release object {type }
+Release object { type }
 
 </summary>
 
@@ -1758,7 +1758,7 @@ type: "RELEASE"
 
 <summary>
 
-action\_type: "MOVE"or "RELEASE"
+action\_type: "MOVE" or "RELEASE"
 
 </summary>
 
@@ -1816,7 +1816,7 @@ messages\_successful: number
 
 <summary>
 
-search\_params: object {action\_log, alert\_id, delivery\_status, 15 more }
+search\_params: object { action\_log, alert\_id, delivery\_status, 15 more }
 
 </summary>
 
@@ -1838,7 +1838,7 @@ Alert ID of the detection to filter by.
 
 <summary>
 
-delivery\_status: optional "delivered"or "moved"or "quarantined"or 5 more
+delivery\_status: optional "delivered" or "moved" or "quarantined" or 5 more
 
 Delivery status to filter by.
 
@@ -1912,7 +1912,7 @@ Match messages whose subject line equals this value exactly.
 
 <summary>
 
-final\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+final\_disposition: optional "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 Dispositions to filter by.
 
@@ -1968,7 +1968,7 @@ One of the following:
 
 <summary>
 
-message\_action: optional "PREVIEW"or "QUARANTINE\_RELEASED"or "MOVED"
+message\_action: optional "PREVIEW" or "QUARANTINE\_RELEASED" or "MOVED"
 
 Message actions to filter by.
 
@@ -2056,7 +2056,7 @@ Whether to search reclassification submissions instead of original messages.
 
 <summary>
 
-status: "PENDING"or "DISCOVERING"or "PROCESSING"or 3 more
+status: "PENDING" or "DISCOVERING" or "PROCESSING" or 3 more
 
 Status of a bulk action job.
 
@@ -2132,7 +2132,7 @@ GET/accounts/{account\_id}/email-security/investigate/bulk/{job\_id}/messages
 
 <summary>
 
-MessageListResponse object {action\_params, action\_type, created\_at, 10 more }
+MessageListResponse object { action\_params, action\_type, created\_at, 10 more }
 
 </summary>
 
@@ -2140,7 +2140,7 @@ MessageListResponse object {action\_params, action\_type, created\_at, 10 more }
 
 <summary>
 
-action\_params: object {client\_recipient, destination, type, expected\_disposition } or object {client\_recipient, type }
+action\_params: object { client\_recipient, destination, type, expected\_disposition } or object { client\_recipient, type }
 
 </summary>
 
@@ -2150,7 +2150,7 @@ One of the following:
 
 <summary>
 
-Move object {client\_recipient, destination, type, expected\_disposition }
+Move object { client\_recipient, destination, type, expected\_disposition }
 
 </summary>
 
@@ -2162,7 +2162,7 @@ client\_recipient: string
 
 <summary>
 
-destination: "Inbox"or "JunkEmail"or "DeletedItems"or 2 more
+destination: "Inbox" or "JunkEmail" or "DeletedItems" or 2 more
 
 The mailbox folder to move messages to.
 
@@ -2202,7 +2202,7 @@ type: "MOVE"
 
 <summary>
 
-Deprecatedexpected\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+Deprecatedexpected\_disposition: optional "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 This field is nonfunctional.
 
@@ -2264,7 +2264,7 @@ One of the following:
 
 <summary>
 
-Release object {client\_recipient, type }
+Release object { client\_recipient, type }
 
 </summary>
 
@@ -2288,7 +2288,7 @@ type: "RELEASE"
 
 <summary>
 
-action\_type: "MOVE"or "RELEASE"
+action\_type: "MOVE" or "RELEASE"
 
 </summary>
 
@@ -2330,7 +2330,7 @@ retry\_count: number
 
 <summary>
 
-status: "PENDING"or "PROCESSING"or "COMPLETED"or 3 more
+status: "PENDING" or "PROCESSING" or "COMPLETED" or 3 more
 
 Status of a message within a bulk action job.
 
@@ -2378,7 +2378,7 @@ email\_message\_id: optional string
 
 <summary>
 
-message: optional object {id, action\_log, client\_recipients, 32 more }
+message: optional object { id, action\_log, client\_recipients, 32 more }
 
 </summary>
 
@@ -2392,7 +2392,7 @@ Unique identifier for a message retrieved from investigation.
 
 <summary>
 
-Deprecatedaction\_log: array of object {completed\_at, operation, completed\_timestamp, 2 more }
+Deprecatedaction\_log: array of object { completed\_at, operation, completed\_timestamp, 2 more }
 
 Use GET /investigate/{investigate\_id}/action\_log instead.
 
@@ -2412,7 +2412,7 @@ formatdate-time
 
 <summary>
 
-operation: "MOVE"or "RELEASE"or "RECLASSIFY"or 3 more
+operation: "MOVE" or "RELEASE" or "RECLASSIFY" or 3 more
 
 Type of action performed.
 
@@ -2460,7 +2460,7 @@ Deprecated, use <code>completed_at</code> instead. End of life: November 1, 2026
 
 <summary>
 
-properties: optional object {folder, requested\_by }
+properties: optional object { folder, requested\_by }
 
 Additional properties for the action.
 
@@ -2518,7 +2518,7 @@ The identifier of the message.
 
 <summary>
 
-properties: object {allowlisted\_pattern, allowlisted\_pattern\_type, blocklisted\_message, 2 more }
+properties: object { allowlisted\_pattern, allowlisted\_pattern\_type, blocklisted\_message, 2 more }
 
 Message processing properties.
 
@@ -2534,7 +2534,7 @@ Pattern that allowlisted this message.
 
 <summary>
 
-allowlisted\_pattern\_type: optional "quarantine\_release"or "acceptable\_sender"or "allowed\_sender"or 5 more
+allowlisted\_pattern\_type: optional "quarantine\_release" or "acceptable\_sender" or "allowed\_sender" or 5 more
 
 Type of allowlist pattern.
 
@@ -2594,7 +2594,7 @@ Pattern that blocklisted this message.
 
 <summary>
 
-whitelisted\_pattern\_type: optional "quarantine\_release"or "acceptable\_sender"or "allowed\_sender"or 5 more
+whitelisted\_pattern\_type: optional "quarantine\_release" or "acceptable\_sender" or "allowed\_sender" or 5 more
 
 Legacy field for allowlist pattern type.
 
@@ -2658,7 +2658,7 @@ alert\_id: optional string
 
 <summary>
 
-delivery\_mode: optional "DIRECT"or "BCC"or "JOURNAL"or 8 more
+delivery\_mode: optional "DIRECT" or "BCC" or "JOURNAL" or 8 more
 
 </summary>
 
@@ -2716,7 +2716,7 @@ One of the following:
 
 <summary>
 
-delivery\_status: optional array of "delivered"or "moved"or "quarantined"or 5 more
+delivery\_status: optional array of "delivered" or "moved" or "quarantined" or 5 more
 
 </summary>
 
@@ -2774,7 +2774,7 @@ envelope\_to: optional array of string
 
 <summary>
 
-final\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+final\_disposition: optional "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 The verdict Email Security assigns to a message.
 
@@ -2830,7 +2830,7 @@ One of the following:
 
 <summary>
 
-Deprecatedfindings: optional array of object {attachment, detail, detection, 6 more }
+Deprecatedfindings: optional array of object { attachment, detail, detection, 6 more }
 
 Use the <code>findings</code> field from GET /investigate/{investigate\_id}/detections instead.
 
@@ -2850,7 +2850,7 @@ detail: optional string
 
 <summary>
 
-detection: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+detection: optional "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 The verdict Email Security assigns to a message.
 
@@ -2952,7 +2952,7 @@ message\_id: optional string
 
 <summary>
 
-post\_delivery\_operations: optional array of "PREVIEW"or "QUARANTINE\_RELEASE"or "SUBMISSION"or "MOVE"
+post\_delivery\_operations: optional array of "PREVIEW" or "QUARANTINE\_RELEASE" or "SUBMISSION" or "MOVE"
 
 Post-delivery operations performed on this message.
 
@@ -3036,7 +3036,7 @@ to\_name: optional array of string
 
 <summary>
 
-validation: optional object {comment, dkim, dmarc, spf } or unknown
+validation: optional object { comment, dkim, dmarc, spf } or unknown
 
 </summary>
 
@@ -3046,7 +3046,7 @@ One of the following:
 
 <summary>
 
-EmailSecurityValidation object {comment, dkim, dmarc, spf }
+EmailSecurityValidation object { comment, dkim, dmarc, spf }
 
 </summary>
 
@@ -3058,7 +3058,7 @@ comment: optional string
 
 <summary>
 
-dkim: optional "pass"or "neutral"or "fail"or 2 more
+dkim: optional "pass" or "neutral" or "fail" or 2 more
 
 </summary>
 
@@ -3092,7 +3092,7 @@ One of the following:
 
 <summary>
 
-dmarc: optional "pass"or "neutral"or "fail"or 2 more
+dmarc: optional "pass" or "neutral" or "fail" or 2 more
 
 </summary>
 
@@ -3126,7 +3126,7 @@ One of the following:
 
 <summary>
 
-spf: optional "pass"or "neutral"or "fail"or 2 more
+spf: optional "pass" or "neutral" or "fail" or 2 more
 
 </summary>
 

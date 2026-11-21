@@ -102,7 +102,7 @@ Start time for aggregate metrics in ISO ms.
 
 <summary>
 
-interval: "minute"or "hour"
+interval: "minute" or "hour"
 
 Time interval for aggregate time slots.
 
@@ -146,7 +146,7 @@ Optionally filter result stats to a specific device(s). Cannot be used in combin
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -168,7 +168,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -188,7 +188,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -210,7 +210,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -250,7 +250,7 @@ The url of the HTTP synthetic application test.
 
 <summary>
 
-httpStats: optional object {availabilityPct, dnsResponseTimeMs, httpStatusCode, 3 more }
+httpStats: optional object { availabilityPct, dnsResponseTimeMs, httpStatusCode, 3 more }
 
 </summary>
 
@@ -258,7 +258,7 @@ httpStats: optional object {availabilityPct, dnsResponseTimeMs, httpStatusCode, 
 
 <summary>
 
-availabilityPct: object {slots, avg, max, min }
+availabilityPct: object { slots, avg, max, min }
 
 </summary>
 
@@ -266,7 +266,7 @@ availabilityPct: object {slots, avg, max, min }
 
 <summary>
 
-slots: array of object {timestamp, value }
+slots: array of object { timestamp, value }
 
 </summary>
 
@@ -324,7 +324,7 @@ dnsResponseTimeMs: <a href="https://developers.cloudflare.com/api/resources/zero
 
 <summary>
 
-slots: array of object {timestamp, value }
+slots: array of object { timestamp, value }
 
 </summary>
 
@@ -366,7 +366,7 @@ lowest observed in the time period.
 
 <summary>
 
-httpStatusCode: array of object {status200, status300, status400, 2 more }
+httpStatusCode: array of object { status200, status300, status400, 2 more }
 
 </summary>
 
@@ -406,7 +406,7 @@ resourceFetchTimeMs: <a href="https://developers.cloudflare.com/api/resources/ze
 
 <summary>
 
-slots: array of object {timestamp, value }
+slots: array of object { timestamp, value }
 
 </summary>
 
@@ -456,7 +456,7 @@ serverResponseTimeMs: <a href="https://developers.cloudflare.com/api/resources/z
 
 <summary>
 
-slots: array of object {timestamp, value }
+slots: array of object { timestamp, value }
 
 </summary>
 
@@ -508,7 +508,7 @@ Count of unique devices that have run this test in the given time period.
 
 <summary>
 
-httpStatsByColo: optional array of object {availabilityPct, colo, dnsResponseTimeMs, 4 more }
+httpStatsByColo: optional array of object { availabilityPct, colo, dnsResponseTimeMs, 4 more }
 
 </summary>
 
@@ -516,7 +516,7 @@ httpStatsByColo: optional array of object {availabilityPct, colo, dnsResponseTim
 
 <summary>
 
-availabilityPct: object {slots, avg, max, min }
+availabilityPct: object { slots, avg, max, min }
 
 </summary>
 
@@ -524,7 +524,7 @@ availabilityPct: object {slots, avg, max, min }
 
 <summary>
 
-slots: array of object {timestamp, value }
+slots: array of object { timestamp, value }
 
 </summary>
 
@@ -586,7 +586,7 @@ dnsResponseTimeMs: <a href="https://developers.cloudflare.com/api/resources/zero
 
 <summary>
 
-slots: array of object {timestamp, value }
+slots: array of object { timestamp, value }
 
 </summary>
 
@@ -628,7 +628,7 @@ lowest observed in the time period.
 
 <summary>
 
-httpStatusCode: array of object {status200, status300, status400, 2 more }
+httpStatusCode: array of object { status200, status300, status400, 2 more }
 
 </summary>
 
@@ -668,7 +668,7 @@ resourceFetchTimeMs: <a href="https://developers.cloudflare.com/api/resources/ze
 
 <summary>
 
-slots: array of object {timestamp, value }
+slots: array of object { timestamp, value }
 
 </summary>
 
@@ -718,7 +718,7 @@ serverResponseTimeMs: <a href="https://developers.cloudflare.com/api/resources/z
 
 <summary>
 
-slots: array of object {timestamp, value }
+slots: array of object { timestamp, value }
 
 </summary>
 

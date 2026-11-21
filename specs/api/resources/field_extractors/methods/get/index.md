@@ -76,7 +76,7 @@ minLength1
 
 <summary>
 
-errors: array of object {code, message, source }
+errors: array of object { code, message, source }
 
 </summary>
 
@@ -92,7 +92,7 @@ message: string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 Points to the offending input as a JSON Pointer into the request body.
 
@@ -114,7 +114,7 @@ pointer: string
 
 <summary>
 
-messages: array of object {code, message }
+messages: array of object { code, message }
 
 Additional informational messages.
 
@@ -136,7 +136,7 @@ message: string
 
 <summary>
 
-result: object {extractor, rules }
+result: object { extractor, rules }
 
 </summary>
 
@@ -150,7 +150,7 @@ Extractor type.
 
 <summary>
 
-rules: array of object {fields, ref, description }
+rules: array of object { fields, ref, description }
 
 </summary>
 
@@ -158,7 +158,7 @@ rules: array of object {fields, ref, description }
 
 <summary>
 
-fields: array of object {expression, name }
+fields: array of object { expression, name }
 
 </summary>
 

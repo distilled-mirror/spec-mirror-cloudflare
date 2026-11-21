@@ -106,7 +106,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -148,7 +148,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -232,7 +232,7 @@ physport: optional number
 
 <summary>
 
-remote\_subnets: optional array of object {local\_alias\_prefix, remote\_prefix }
+remote\_subnets: optional array of object { local\_alias\_prefix, remote\_prefix }
 
 </summary>
 
@@ -348,7 +348,7 @@ dhcp\_server: optional <a href="https://developers.cloudflare.com/api/resources/
 
 <summary>
 
-dhcp\_options: optional array of object {code, type, value }
+dhcp\_options: optional array of object { code, type, value }
 
 Optional list of custom DHCP options to include in DHCP responses. Only valid when DHCP server is enabled.
 
@@ -368,7 +368,7 @@ minimum1
 
 <summary>
 
-type: "text"or "hex"or "ip"or 3 more
+type: "text" or "hex" or "ip" or 3 more
 
 The type of the option value. text: a string (max 255 bytes). hex: colon-separated hex bytes (e.g. “01:04:aa:bb:cc”, max 255 bytes). ip: an IPv4 address (e.g. “10.20.30.40”). byte: an unsigned integer 0-255 (1 byte). short: an unsigned integer 0-65535 (2 bytes). integer: an unsigned integer 0-4294967295 (4 bytes).
 

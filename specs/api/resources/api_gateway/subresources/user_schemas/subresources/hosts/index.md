@@ -32,7 +32,7 @@ GET/zones/{zone\_id}/api\_gateway/user\_schemas/hosts
 
 <summary>
 
-HostListResponse object {created\_at, hosts, name, schema\_id }
+HostListResponse object { created\_at, hosts, name, schema\_id }
 
 </summary>
 

@@ -54,7 +54,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Trust and Safety Write``Trust and Safety Read``DNS View Write``DNS View Read``SCIM Provisioning``Load Balancers Account Write``Load Balancers Account Read``Zero Trust: PII Read``DDoS Botnet Feed Write``DDoS Botnet Feed Read``Workers R2 Storage Write``Workers R2 Storage Read``DDoS Protection Write``DDoS Protection Read``Workers Tail Read``Workers KV Storage Write``Workers KV Storage Read``Workers Scripts Write``Workers Scripts Read``Load Balancing: Monitors and Pools Write``Load Balancing: Monitors and Pools Read``Account Firewall Access Rules Write``Account Firewall Access Rules Read``DNS Firewall Write``DNS Firewall Read``Billing Write``Billing Read``Account Settings Write``Account Settings Read`
+`Account Security Insights Partner Integrations Write``Account Security Insights Partner Integrations Read``Workers Metadata Read-Only``Workers Editor``Workers Content Read-Only``Workers Admin``Account Abuse Protection PII Read``Workers R2 Storage Metadata Read``AI Search Index Engine``Account Security Center Insights Write``Account Security Center Insights Read``Auto Rag Write Run Engine``Trust and Safety Write``Trust and Safety Read``DNS View Write``DNS View Read``SCIM Provisioning``Load Balancers Account Write``Load Balancers Account Read``Zero Trust: PII Read``DDoS Botnet Feed Write``DDoS Botnet Feed Read``Workers R2 Storage Write``Workers R2 Storage Read``DDoS Protection Write``DDoS Protection Read``Workers Tail Read``Workers KV Storage Write``Workers KV Storage Read``Workers Scripts Write``Workers Scripts Read``Load Balancing: Monitors and Pools Write``Load Balancing: Monitors and Pools Read``Account Firewall Access Rules Write``Account Firewall Access Rules Read``DNS Firewall Write``DNS Firewall Read``Billing Write``Billing Read``Account Settings Write``Account Settings Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -74,7 +74,7 @@ minLength32
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -96,7 +96,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -116,7 +116,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -138,7 +138,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -188,7 +188,7 @@ Account name. When creating or updating an account, the name is limited to 65 UT
 
 <summary>
 
-type: "standard"or "enterprise"
+type: "standard" or "enterprise"
 
 </summary>
 
@@ -218,7 +218,7 @@ formatdate-time
 
 <summary>
 
-legacy\_flags: optional object {enterprise\_zone\_quota }
+legacy\_flags: optional object { enterprise\_zone\_quota }
 
 Legacy account flags.
 
@@ -228,7 +228,7 @@ Legacy account flags.
 
 <summary>
 
-enterprise\_zone\_quota: optional object {available, current, maximum }
+enterprise\_zone\_quota: optional object { available, current, maximum }
 
 Enterprise zone quota for standard and enterprise accounts. Accounts without a quota have a maximum of 0.
 
@@ -264,7 +264,7 @@ Maximum number of Enterprise zones allowed.
 
 <summary>
 
-managed\_by: optional object {parent\_org\_id, parent\_org\_name, root\_org\_id, should\_display\_parent\_orgs }
+managed\_by: optional object { parent\_org\_id, parent\_org\_name, root\_org\_id, should\_display\_parent\_orgs }
 
 Parent container details
 
@@ -306,7 +306,7 @@ Indicates whether the parent Organization hierarchy should be displayed
 
 <summary>
 
-settings: optional object {abuse\_contact\_email, enforce\_twofactor }
+settings: optional object { abuse\_contact\_email, enforce\_twofactor }
 
 Account settings
 

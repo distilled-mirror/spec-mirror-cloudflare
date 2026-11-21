@@ -96,7 +96,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -138,7 +138,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -158,7 +158,7 @@ pointer: optional string
 
 <summary>
 
-result: array of object {id, components, currency, 3 more }
+result: array of object { id, components, currency, 3 more }
 
 </summary>
 
@@ -172,7 +172,7 @@ Plan identifier tag.
 
 <summary>
 
-components: optional array of object {default, name, unit\_price }
+components: optional array of object { default, name, unit\_price }
 
 Array of available components values for the plan.
 
@@ -188,7 +188,7 @@ The default amount allocated.
 
 <summary>
 
-name: optional "zones"or "page\_rules"or "dedicated\_certificates"or "dedicated\_certificates\_custom"
+name: optional "zones" or "page\_rules" or "dedicated\_certificates" or "dedicated\_certificates\_custom"
 
 The unique component.
 
@@ -242,7 +242,7 @@ The duration of the plan subscription.
 
 <summary>
 
-frequency: optional "weekly"or "monthly"or "quarterly"or "yearly"
+frequency: optional "weekly" or "monthly" or "quarterly" or "yearly"
 
 The frequency at which you will be billed for this plan.
 
@@ -292,7 +292,7 @@ Whether the API call was successful
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object { count, page, per\_page, total\_count }
 
 </summary>
 

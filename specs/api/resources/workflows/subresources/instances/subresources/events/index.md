@@ -30,7 +30,7 @@ POST/accounts/{account\_id}/workflows/{workflow\_name}/instances/{instance\_id}/
 
 <summary>
 
-EventCreateResponse object {instanceId, timestamp }
+EventCreateResponse object { instanceId, timestamp }
 
 </summary>
 

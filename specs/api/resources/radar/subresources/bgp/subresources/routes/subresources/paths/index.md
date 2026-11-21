@@ -32,7 +32,7 @@ GET/radar/bgp/routes/paths/{asn}
 
 <summary>
 
-PathListResponse object {asnInfo, collectors, meta, paths }
+PathListResponse object { asnInfo, collectors, meta, paths }
 
 </summary>
 
@@ -40,7 +40,7 @@ PathListResponse object {asnInfo, collectors, meta, paths }
 
 <summary>
 
-asnInfo: map\[object {asn, country, name } ]
+asnInfo: map\[object { asn, country, name } ]
 
 </summary>
 
@@ -74,7 +74,7 @@ collectors: array of string
 
 <summary>
 
-meta: object {dataTime, effectiveCollector, queryTime, stale }
+meta: object { dataTime, effectiveCollector, queryTime, stale }
 
 </summary>
 
@@ -110,7 +110,7 @@ stale: boolean
 
 <summary>
 
-paths: array of object {collectors, pathsCount, peersCount, segment }
+paths: array of object { collectors, pathsCount, peersCount, segment }
 
 </summary>
 

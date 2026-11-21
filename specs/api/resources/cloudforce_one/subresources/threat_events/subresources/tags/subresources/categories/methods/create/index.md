@@ -62,7 +62,7 @@ description: optional string
 
 <summary>
 
-schema: optional array of object {key, kind, allowedValues, 11 more }
+schema: optional array of object { key, kind, allowedValues, 11 more }
 
 Optional array of FieldDefinition objects defining custom fields for tags in this category. Persisted as JSON; returned as a parsed array.
 
@@ -76,7 +76,7 @@ key: string
 
 <summary>
 
-kind: "string"or "number"or "enum"or 3 more
+kind: "string" or "number" or "enum" or 3 more
 
 </summary>
 
@@ -118,7 +118,7 @@ allowedValues: optional array of string
 
 <summary>
 
-annotations: optional object {confidence, tlp }
+annotations: optional object { confidence, tlp }
 
 </summary>
 
@@ -154,7 +154,7 @@ element: optional unknown
 
 <summary>
 
-enforcement: optional "error"or "warn"or "off"
+enforcement: optional "error" or "warn" or "off"
 
 </summary>
 
@@ -180,7 +180,7 @@ One of the following:
 
 <summary>
 
-format: optional "date"or "url"or "duration"or "country"
+format: optional "date" or "url" or "duration" or "country"
 
 </summary>
 
@@ -226,7 +226,7 @@ minimum0
 
 <summary>
 
-numberConstraint: optional object {integer, max, min }
+numberConstraint: optional object { integer, max, min }
 
 </summary>
 
@@ -282,7 +282,7 @@ description: optional string
 
 <summary>
 
-schema: optional array of object {key, kind, allowedValues, 11 more }
+schema: optional array of object { key, kind, allowedValues, 11 more }
 
 Parsed FieldDefinition\[] defining custom fields for this category, or null if none.
 
@@ -296,7 +296,7 @@ key: string
 
 <summary>
 
-kind: "string"or "number"or "enum"or 3 more
+kind: "string" or "number" or "enum" or 3 more
 
 </summary>
 
@@ -338,7 +338,7 @@ allowedValues: optional array of string
 
 <summary>
 
-annotations: optional object {confidence, tlp }
+annotations: optional object { confidence, tlp }
 
 </summary>
 
@@ -374,7 +374,7 @@ element: optional unknown
 
 <summary>
 
-enforcement: optional "error"or "warn"or "off"
+enforcement: optional "error" or "warn" or "off"
 
 </summary>
 
@@ -400,7 +400,7 @@ One of the following:
 
 <summary>
 
-format: optional "date"or "url"or "duration"or "country"
+format: optional "date" or "url" or "duration" or "country"
 
 </summary>
 
@@ -446,7 +446,7 @@ minimum0
 
 <summary>
 
-numberConstraint: optional object {integer, max, min }
+numberConstraint: optional object { integer, max, min }
 
 </summary>
 

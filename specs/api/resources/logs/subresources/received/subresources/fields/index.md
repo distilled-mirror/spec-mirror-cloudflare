@@ -30,7 +30,7 @@ GET/zones/{zone\_id}/logs/received/fields
 
 <summary>
 
-FieldGetResponse object {key }
+FieldGetResponse object { key }
 
 </summary>
 

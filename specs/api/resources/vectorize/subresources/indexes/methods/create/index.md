@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Vectorize Write`
+`Auto Rag Write Run Engine``Vectorize Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -74,7 +74,7 @@ maxLength32
 
 <summary>
 
-config: <a href="https://developers.cloudflare.com/api/resources/vectorize#(resource)%20vectorize.indexes%20%3E%20(model)%20index_dimension_configuration%20%3E%20(schema)">IndexDimensionConfiguration</a> { dimensions, metric } or object {preset }
+config: <a href="https://developers.cloudflare.com/api/resources/vectorize#(resource)%20vectorize.indexes%20%3E%20(model)%20index_dimension_configuration%20%3E%20(schema)">IndexDimensionConfiguration</a> { dimensions, metric } or object { preset }
 
 Specifies the type of configuration to use for the index.
 
@@ -86,7 +86,7 @@ One of the following:
 
 <summary>
 
-IndexDimensionConfiguration object {dimensions, metric }
+IndexDimensionConfiguration object { dimensions, metric }
 
 </summary>
 
@@ -104,7 +104,7 @@ minimum1
 
 <summary>
 
-metric: "cosine"or "euclidean"or "dot-product"
+metric: "cosine" or "euclidean" or "dot-product"
 
 Specifies the type of metric to use calculating distance.
 
@@ -136,7 +136,7 @@ One of the following:
 
 <summary>
 
-VectorizeIndexPresetConfiguration object {preset }
+VectorizeIndexPresetConfiguration object { preset }
 
 </summary>
 
@@ -144,7 +144,7 @@ VectorizeIndexPresetConfiguration object {preset }
 
 <summary>
 
-preset: "@cf/baai/bge-small-en-v1.5"or "@cf/baai/bge-base-en-v1.5"or "@cf/baai/bge-large-en-v1.5"or 2 more
+preset: "@cf/baai/bge-small-en-v1.5" or "@cf/baai/bge-base-en-v1.5" or "@cf/baai/bge-large-en-v1.5" or 2 more
 
 Specifies the preset to use for the index.
 
@@ -222,7 +222,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -264,7 +264,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -292,7 +292,7 @@ result: <a href="https://developers.cloudflare.com/api/resources/vectorize#(reso
 
 <summary>
 
-config: optional object {dimensions, metric, preset }
+config: optional object { dimensions, metric, preset }
 
 </summary>
 
@@ -310,7 +310,7 @@ minimum1
 
 <summary>
 
-metric: "cosine"or "euclidean"or "dot-product"
+metric: "cosine" or "euclidean" or "dot-product"
 
 Specifies the type of metric to use calculating distance.
 
@@ -338,7 +338,7 @@ One of the following:
 
 <summary>
 
-preset: optional "@cf/baai/bge-small-en-v1.5"or "@cf/baai/bge-base-en-v1.5"or "@cf/baai/bge-large-en-v1.5"or 2 more
+preset: optional "@cf/baai/bge-small-en-v1.5" or "@cf/baai/bge-base-en-v1.5" or "@cf/baai/bge-large-en-v1.5" or 2 more
 
 Specifies the preset to use for the index.
 

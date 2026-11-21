@@ -44,7 +44,7 @@ DELETE/zones/{zone\_id}/web3/hostnames/{identifier}
 
 <summary>
 
-Hostname object {id, created\_on, description, 5 more }
+Hostname object { id, created\_on, description, 5 more }
 
 </summary>
 
@@ -94,7 +94,7 @@ maxLength255
 
 <summary>
 
-status: optional "active"or "pending"or "deleting"or "error"
+status: optional "active" or "pending" or "deleting" or "error"
 
 Specifies the status of the hostname’s activation.
 
@@ -126,7 +126,7 @@ One of the following:
 
 <summary>
 
-target: optional "ethereum"or "ipfs"or "ipfs\_universal\_path"
+target: optional "ethereum" or "ipfs" or "ipfs\_universal\_path"
 
 Specify the target gateway of the hostname.
 
@@ -158,7 +158,7 @@ One of the following:
 
 <summary>
 
-HostnameDeleteResponse object {id }
+HostnameDeleteResponse object { id }
 
 </summary>
 
@@ -192,7 +192,7 @@ PUT/zones/{zone\_id}/web3/hostnames/{identifier}/ipfs\_universal\_path/content\_
 
 <summary>
 
-ContentList object {action }
+ContentList object { action }
 
 </summary>
 
@@ -234,7 +234,7 @@ DELETE/zones/{zone\_id}/web3/hostnames/{identifier}/ipfs\_universal\_path/conten
 
 <summary>
 
-EntryListResponse object {entries }
+EntryListResponse object { entries }
 
 </summary>
 
@@ -242,7 +242,7 @@ EntryListResponse object {entries }
 
 <summary>
 
-entries: optional array of object {id, content, created\_on, 3 more }
+entries: optional array of object { id, content, created\_on, 3 more }
 
 Provides content list entries.
 
@@ -288,7 +288,7 @@ formatdate-time
 
 <summary>
 
-type: optional "cid"or "content\_path"
+type: optional "cid" or "content\_path"
 
 Specify the type of content list entry to block.
 
@@ -320,7 +320,7 @@ One of the following:
 
 <summary>
 
-EntryGetResponse object {id, content, created\_on, 3 more }
+EntryGetResponse object { id, content, created\_on, 3 more }
 
 Specify a content list entry to block.
 
@@ -366,7 +366,7 @@ formatdate-time
 
 <summary>
 
-type: optional "cid"or "content\_path"
+type: optional "cid" or "content\_path"
 
 Specify the type of content list entry to block.
 
@@ -394,7 +394,7 @@ One of the following:
 
 <summary>
 
-EntryCreateResponse object {id, content, created\_on, 3 more }
+EntryCreateResponse object { id, content, created\_on, 3 more }
 
 Specify a content list entry to block.
 
@@ -440,7 +440,7 @@ formatdate-time
 
 <summary>
 
-type: optional "cid"or "content\_path"
+type: optional "cid" or "content\_path"
 
 Specify the type of content list entry to block.
 
@@ -468,7 +468,7 @@ One of the following:
 
 <summary>
 
-EntryUpdateResponse object {id, content, created\_on, 3 more }
+EntryUpdateResponse object { id, content, created\_on, 3 more }
 
 Specify a content list entry to block.
 
@@ -514,7 +514,7 @@ formatdate-time
 
 <summary>
 
-type: optional "cid"or "content\_path"
+type: optional "cid" or "content\_path"
 
 Specify the type of content list entry to block.
 
@@ -542,7 +542,7 @@ One of the following:
 
 <summary>
 
-EntryDeleteResponse object {id }
+EntryDeleteResponse object { id }
 
 </summary>
 

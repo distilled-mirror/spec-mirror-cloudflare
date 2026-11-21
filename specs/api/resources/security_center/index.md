@@ -32,7 +32,7 @@ PUT/{accounts\_or\_zones}/{account\_or\_zone\_id}/security-center/insights/{issu
 
 <summary>
 
-InsightListResponse object {count, issues, page, per\_page }
+InsightListResponse object { count, issues, page, per\_page }
 
 </summary>
 
@@ -46,7 +46,7 @@ Indicates the total number of results.
 
 <summary>
 
-issues: optional array of object {id, dismissed, has\_extended\_context, 12 more }
+issues: optional array of object { id, dismissed, has\_extended\_context, 12 more }
 
 </summary>
 
@@ -76,7 +76,7 @@ issue\_type: optional <a href="https://developers.cloudflare.com/api/resources/i
 
 <summary>
 
-payload: optional object {detection\_method, zone\_tag }
+payload: optional object { detection\_method, zone\_tag }
 
 </summary>
 
@@ -106,7 +106,7 @@ resolve\_text: optional string
 
 <summary>
 
-severity: optional "Low"or "Moderate"or "Critical"
+severity: optional "Low" or "Moderate" or "Critical"
 
 </summary>
 
@@ -138,7 +138,7 @@ formatdate-time
 
 <summary>
 
-source: optional "cloudflare"or "riskrecon"
+source: optional "cloudflare" or "riskrecon"
 
 Who generated the insight. <code>cloudflare</code> for Cloudflare-generated insights, otherwise the partner.
 
@@ -162,7 +162,7 @@ One of the following:
 
 <summary>
 
-status: optional "active"or "resolved"
+status: optional "active" or "resolved"
 
 The current status of the insight.
 
@@ -196,7 +196,7 @@ formatdate-time
 
 <summary>
 
-user\_classification: optional "false\_positive"or "accept\_risk"or "other"
+user\_classification: optional "false\_positive" or "accept\_risk" or "other"
 
 User-defined classification for the insight. Can be ‘false\_positive’, ‘accept\_risk’, ‘other’, or null.
 
@@ -248,7 +248,7 @@ minimum1
 
 <summary>
 
-InsightDismissResponse object {errors, messages, success }
+InsightDismissResponse object { errors, messages, success }
 
 </summary>
 
@@ -256,7 +256,7 @@ InsightDismissResponse object {errors, messages, success }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -278,7 +278,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -298,7 +298,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -320,7 +320,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -358,7 +358,7 @@ GET/{accounts\_or\_zones}/{account\_or\_zone\_id}/security-center/insights/class
 
 <summary>
 
-ClassGetResponse = array of object {count, value }
+ClassGetResponse = array of object { count, value }
 
 </summary>
 
@@ -386,7 +386,7 @@ GET/{accounts\_or\_zones}/{account\_or\_zone\_id}/security-center/insights/sever
 
 <summary>
 
-SeverityGetResponse = array of object {count, value }
+SeverityGetResponse = array of object { count, value }
 
 </summary>
 
@@ -414,7 +414,7 @@ GET/{accounts\_or\_zones}/{account\_or\_zone\_id}/security-center/insights/type
 
 <summary>
 
-TypeGetResponse = array of object {count, value }
+TypeGetResponse = array of object { count, value }
 
 </summary>
 
@@ -446,7 +446,7 @@ GET/{accounts\_or\_zones}/{account\_or\_zone\_id}/security-center/insights/{issu
 
 <summary>
 
-AuditLogListResponse object {id, changed\_at, changed\_by, 6 more }
+AuditLogListResponse object { id, changed\_at, changed\_by, 6 more }
 
 </summary>
 
@@ -482,7 +482,7 @@ The value of the field after the change. Null if the field was cleared.
 
 <summary>
 
-field\_changed: optional "status"or "user\_classification"
+field\_changed: optional "status" or "user\_classification"
 
 The field that was changed.
 
@@ -536,7 +536,7 @@ formatint64
 
 <summary>
 
-AuditLogListByInsightResponse object {id, changed\_at, changed\_by, 6 more }
+AuditLogListByInsightResponse object { id, changed\_at, changed\_by, 6 more }
 
 </summary>
 
@@ -572,7 +572,7 @@ The value of the field after the change. Null if the field was cleared.
 
 <summary>
 
-field\_changed: optional "status"or "user\_classification"
+field\_changed: optional "status" or "user\_classification"
 
 The field that was changed.
 
@@ -634,7 +634,7 @@ PATCH/{accounts\_or\_zones}/{account\_or\_zone\_id}/security-center/insights/{is
 
 <summary>
 
-ClassificationUpdateResponse object {errors, messages, success }
+ClassificationUpdateResponse object { errors, messages, success }
 
 </summary>
 
@@ -642,7 +642,7 @@ ClassificationUpdateResponse object {errors, messages, success }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -664,7 +664,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -684,7 +684,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -706,7 +706,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -760,7 +760,7 @@ PUT/accounts/{account\_id}/security-center/state
 
 <summary>
 
-StateGetResponse object {recent\_dormant\_reactivation, scans\_enabled }
+StateGetResponse object { recent\_dormant\_reactivation, scans\_enabled }
 
 </summary>
 
@@ -784,7 +784,7 @@ Whether on-demand and scheduled scans are enabled for the account.
 
 <summary>
 
-StateUpdateResponse object {recent\_dormant\_reactivation, scans\_enabled }
+StateUpdateResponse object { recent\_dormant\_reactivation, scans\_enabled }
 
 </summary>
 

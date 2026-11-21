@@ -58,6 +58,10 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 </details>
 
+##### Accepted Permissions (at least one required)
+
+`AI Search Write``Auto Rag Write`
+
 ##### P ath ParametersExpand Collapse
 
 account\_id: string
@@ -84,7 +88,7 @@ minLength1
 
 <summary>
 
-file: object {file, metadata, wait\_for\_completion }
+file: object { file, metadata, wait\_for\_completion }
 
 </summary>
 
@@ -116,7 +120,7 @@ Wait for indexing before responding. After processing, vector-indexed instances 
 
 <summary>
 
-result: object {id, checksum, chunks\_count, 11 more }
+result: object { id, checksum, chunks\_count, 11 more }
 
 </summary>
 
@@ -156,7 +160,7 @@ formatdate-time
 
 <summary>
 
-metadata: map\[stringor numberor boolean]
+metadata: map\[string or number or boolean]
 
 Built-in, configured filterable, and retained source metadata for the item.
 
@@ -188,7 +192,7 @@ namespace: string
 
 <summary>
 
-next\_action: "INDEX"or "DELETE"
+next\_action: "INDEX" or "DELETE"
 
 </summary>
 
@@ -216,7 +220,7 @@ Identifies which data source this item belongs to. “builtin” for uploaded fi
 
 <summary>
 
-status: "queued"or "running"or "completed"or 3 more
+status: "queued" or "running" or "completed" or 3 more
 
 </summary>
 
@@ -258,7 +262,7 @@ error: optional string
 
 <summary>
 
-warnings: optional array of object {code, expected\_type, field } or object {code, field }
+warnings: optional array of object { code, expected\_type, field } or object { code, field }
 
 </summary>
 
@@ -268,7 +272,7 @@ One of the following:
 
 <summary>
 
-object {code, expected\_type, field }
+object { code, expected\_type, field }
 
 </summary>
 
@@ -280,7 +284,7 @@ code: "custom\_metadata\_value\_not\_indexed"
 
 <summary>
 
-expected\_type: "text"or "number"or "boolean"or "datetime"
+expected\_type: "text" or "number" or "boolean" or "datetime"
 
 </summary>
 
@@ -320,7 +324,7 @@ maxLength512
 
 <summary>
 
-object {code, field }
+object { code, field }
 
 </summary>
 

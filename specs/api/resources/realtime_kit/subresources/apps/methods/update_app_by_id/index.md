@@ -90,7 +90,7 @@ maxLength150
 
 <summary>
 
-data: object {id, created\_at, name }
+data: object { id, created\_at, name }
 
 </summary>
 

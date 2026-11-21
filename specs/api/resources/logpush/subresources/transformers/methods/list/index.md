@@ -74,7 +74,7 @@ maxLength32
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -96,7 +96,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -116,7 +116,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -138,7 +138,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -164,7 +164,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional array of object {id, associated\_jobs, created\_at, 4 more }
+result: optional array of object { id, associated\_jobs, created\_at, 4 more }
 
 </summary>
 
@@ -180,7 +180,7 @@ minimum1
 
 <summary>
 
-associated\_jobs: optional array of object {id, name, object\_tag, object\_type }
+associated\_jobs: optional array of object { id, name, object\_tag, object\_type }
 
 Logpush jobs that reference this transformer.
 
@@ -208,7 +208,7 @@ The zone or account tag.
 
 <summary>
 
-object\_type: optional "zone"or "account"
+object\_type: optional "zone" or "account"
 
 Whether the job is zone-scoped or account-scoped.
 

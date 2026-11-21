@@ -58,7 +58,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Images Read``Images Write`
+`Images Metadata Read``Images Read``Images Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -98,7 +98,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -140,7 +140,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -168,7 +168,7 @@ result: <a href="https://developers.cloudflare.com/api/resources/images#(resourc
 
 <summary>
 
-count: optional object {allowed, current }
+count: optional object { allowed, current }
 
 </summary>
 

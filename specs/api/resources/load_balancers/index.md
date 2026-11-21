@@ -46,7 +46,7 @@ DELETE/{accounts\_or\_zones}/{account\_or\_zone\_id}/load\_balancers/{load\_bala
 
 <summary>
 
-AdaptiveRouting object {failover\_across\_pools }
+AdaptiveRouting object { failover\_across\_pools }
 
 Controls features that modify the routing of requests to pools and origins in response to dynamic conditions, such as during the interval between active health monitoring requests. For example, zero-downtime failover occurs immediately when an origin becomes unavailable due to HTTP 521, 522, or 523 response codes. If there is another healthy origin in the same pool, the request is retried once against this alternate origin.
 
@@ -66,7 +66,7 @@ Extends zero-downtime failover of requests to healthy origins from alternate poo
 
 <summary>
 
-CheckRegion = "WNAM"or "ENAM"or "WEU"or 12 more
+CheckRegion = "WNAM" or "ENAM" or "WEU" or 12 more
 
 WNAM: Western North America, ENAM: Eastern North America, WEU: Western Europe, EEU: Eastern Europe, NSAM: Northern South America, SSAM: Southern South America, OC: Oceania, ME: Middle East, NAF: North Africa, SAF: South Africa, SAS: Southern Asia, SEAS: South East Asia, NEAS: North East Asia, CHINA: China (ENTERPRISE customers only), ALL\_REGIONS: all regions (ENTERPRISE customers only).
 
@@ -148,7 +148,7 @@ A pool ID.
 
 <summary>
 
-FilterOptions object {disable, healthy }
+FilterOptions object { disable, healthy }
 
 Filter options for a particular resource type (pool or origin). Use null to reset.
 
@@ -174,7 +174,7 @@ If present, send notifications only for this health status (e.g. false for only 
 
 <summary>
 
-Header object {Host }
+Header object { Host }
 
 The request header is used to pass additional information with an HTTP request. Currently supported header is ‘Host’.
 
@@ -198,7 +198,7 @@ Host = string
 
 <summary>
 
-LoadBalancer object {id, adaptive\_routing, country\_pools, 21 more }
+LoadBalancer object { id, adaptive\_routing, country\_pools, 21 more }
 
 </summary>
 
@@ -272,7 +272,7 @@ List of networks where Load Balancer or Pool is enabled.
 
 <summary>
 
-pool\_sets: optional array of object {disabled, fixed\_response, match, 2 more }
+pool\_sets: optional array of object { disabled, fixed\_response, match, 2 more }
 
 An optional list of pool sets, evaluated in array order with first match wins. Pool sets are independent from the standard steering fields (<code>region_pools</code> / <code>country_pools</code> / <code>pop_pools</code> / <code>default_pools</code> / <code>steering_policy</code> / <code>random_steering</code> / <code>fallback_pool</code> / <code>rules</code>). On a PATCH, an empty array (<code>pool_sets: []</code>) clears all pool sets, while omitting the field leaves existing pool sets unchanged.
 
@@ -288,7 +288,7 @@ Disable this specific pool set. It will no longer be evaluated.
 
 <summary>
 
-fixed\_response: optional object {content\_type, location, message\_body, status\_code }
+fixed\_response: optional object { content\_type, location, message\_body, status\_code }
 
 A collection of fields used to directly respond to the client instead of routing to a pool. When supplied on a rule, that rule stops further rule evaluation.
 
@@ -332,7 +332,7 @@ The http status code to respond with.
 
 <summary>
 
-match: optional object {default, topology }
+match: optional object { default, topology }
 
 Determines which requests a pool set applies to. Set <code>topology</code> to match by location or <code>default: true</code> to match all requests; the two are mutually exclusive. A pool set with no <code>match</code> matches all requests.
 
@@ -348,7 +348,7 @@ When true, matches every request. Cannot be combined with <code>topology</code>.
 
 <summary>
 
-topology: optional object {countries, pops, regions }
+topology: optional object { countries, pops, regions }
 
 Matches requests by location. Set any combination of <code>pops</code>, <code>countries</code>, and <code>regions</code> (at least one is required); a request matches when its value appears in any populated list (e.g. <code>regions: ["WNAM"]</code> with <code>countries: ["US"]</code> matches a request in either WNAM or the US).
 
@@ -392,7 +392,7 @@ maxLength200
 
 <summary>
 
-overrides: optional object {fallback\_pool, pool\_default\_weight, pool\_weights, 2 more }
+overrides: optional object { fallback\_pool, pool\_default\_weight, pool\_weights, 2 more }
 
 The behavior a pool set applies when its <code>match</code> succeeds. A strict subset of a rule’s <code>overrides</code>: a pool set replaces the topology wholesale with a flat pool list (<code>pools</code>), so only the declarative pool-routing fields plus <code>fallback_pool</code> and <code>steering_policy</code> are settable. All fields are optional.
 
@@ -505,7 +505,7 @@ Disable this specific rule. It will no longer be evaluated by this load balancer
 
 <summary>
 
-fixed\_response: optional object {content\_type, location, message\_body, status\_code }
+fixed\_response: optional object { content\_type, location, message\_body, status\_code }
 
 A collection of fields used to directly respond to the client instead of routing to a pool. When supplied on a rule, that rule stops further rule evaluation.
 
@@ -557,7 +557,7 @@ maxLength200
 
 <summary>
 
-overrides: optional object {adaptive\_routing, country\_pools, default\_pools, 13 more }
+overrides: optional object { adaptive\_routing, country\_pools, default\_pools, 13 more }
 
 A collection of overrides to apply when this rule’s condition (or a pool set’s <code>match</code>) is true. All fields are optional.
 
@@ -627,7 +627,7 @@ Enterprise only: A mapping of Cloudflare PoP identifiers to a list of pool IDs (
 
 <summary>
 
-random\_steering: optional object {default\_weight, pool\_weights }
+random\_steering: optional object { default\_weight, pool\_weights }
 
 Configures pool weights for a rule override. An omitted default\_weight inherits the load balancer’s default weight.
 
@@ -777,7 +777,7 @@ zone\_name: optional string
 
 <summary>
 
-LoadShedding object {default\_percent, default\_policy, session\_percent, session\_policy }
+LoadShedding object { default\_percent, default\_policy, session\_percent, session\_policy }
 
 Configures load shedding policies and percentages for the pool.
 
@@ -797,7 +797,7 @@ minimum0
 
 <summary>
 
-default\_policy: optional "random"or "hash"
+default\_policy: optional "random" or "hash"
 
 The default policy to use when load shedding. A random policy randomly sheds a given percent of requests. A hash policy computes a hash over the CF-Connecting-IP address and sheds all requests originating from a percent of IPs.
 
@@ -841,7 +841,7 @@ Only the hash policy is supported for existing sessions (to avoid exponential de
 
 <summary>
 
-LocationStrategy object {mode, prefer\_ecs }
+LocationStrategy object { mode, prefer\_ecs }
 
 Controls location-based steering for non-proxied requests. See <code>steering_policy</code> to learn how steering is affected.
 
@@ -851,7 +851,7 @@ Controls location-based steering for non-proxied requests. See <code>steering_po
 
 <summary>
 
-mode: optional "pop"or "resolver\_ip"
+mode: optional "pop" or "resolver\_ip"
 
 Determines the authoritative location when ECS is not preferred, does not exist in the request, or its GeoIP lookup is unsuccessful.
 
@@ -878,7 +878,7 @@ One of the following:
 
 <summary>
 
-prefer\_ecs: optional "always"or "never"or "proximity"or "geo"
+prefer\_ecs: optional "always" or "never" or "proximity" or "geo"
 
 Whether the EDNS Client Subnet (ECS) GeoIP should be preferred as the authoritative location.
 
@@ -919,7 +919,7 @@ One of the following:
 
 <summary>
 
-NotificationFilter object {origin, pool }
+NotificationFilter object { origin, pool }
 
 Filter pool and origin health notifications by resource type or health status. Use null to reset.
 
@@ -945,7 +945,7 @@ Filter options for a particular resource type (pool or origin). Use null to rese
 
 <summary>
 
-Origin object {address, disabled\_at, enabled, 6 more }
+Origin object { address, disabled\_at, enabled, 6 more }
 
 </summary>
 
@@ -1022,7 +1022,7 @@ multipleOf0.01
 
 <summary>
 
-OriginSteering object {policy }
+OriginSteering object { policy }
 
 Configures origin steering for the pool. Controls how origins are selected for new sessions and traffic without session affinity.
 
@@ -1032,7 +1032,7 @@ Configures origin steering for the pool. Controls how origins are selected for n
 
 <summary>
 
-policy: optional "random"or "hash"or "least\_outstanding\_requests"or "least\_connections"
+policy: optional "random" or "hash" or "least\_outstanding\_requests" or "least\_connections"
 
 The type of origin steering policy to use.
 
@@ -1073,7 +1073,7 @@ One of the following:
 
 <summary>
 
-RandomSteering object {default\_weight, pool\_weights }
+RandomSteering object { default\_weight, pool\_weights }
 
 Configures pool weights.
 
@@ -1109,7 +1109,7 @@ A mapping of pool IDs to custom weights. The weight is relative to other pools i
 
 <summary>
 
-Rules object {condition, disabled, fixed\_response, 4 more }
+Rules object { condition, disabled, fixed\_response, 4 more }
 
 A rule object containing conditions and overrides for this load balancer to evaluate.
 
@@ -1131,7 +1131,7 @@ Disable this specific rule. It will no longer be evaluated by this load balancer
 
 <summary>
 
-fixed\_response: optional object {content\_type, location, message\_body, status\_code }
+fixed\_response: optional object { content\_type, location, message\_body, status\_code }
 
 A collection of fields used to directly respond to the client instead of routing to a pool. When supplied on a rule, that rule stops further rule evaluation.
 
@@ -1183,7 +1183,7 @@ maxLength200
 
 <summary>
 
-overrides: optional object {adaptive\_routing, country\_pools, default\_pools, 13 more }
+overrides: optional object { adaptive\_routing, country\_pools, default\_pools, 13 more }
 
 A collection of overrides to apply when this rule’s condition (or a pool set’s <code>match</code>) is true. All fields are optional.
 
@@ -1253,7 +1253,7 @@ Enterprise only: A mapping of Cloudflare PoP identifiers to a list of pool IDs (
 
 <summary>
 
-random\_steering: optional object {default\_weight, pool\_weights }
+random\_steering: optional object { default\_weight, pool\_weights }
 
 Configures pool weights for a rule override. An omitted default\_weight inherits the load balancer’s default weight.
 
@@ -1356,7 +1356,7 @@ If this rule’s condition is true, this causes rule evaluation to stop after pr
 
 <summary>
 
-SessionAffinity = "none"or "cookie"or "ip\_cookie"or "header"
+SessionAffinity = "none" or "cookie" or "ip\_cookie" or "header"
 
 Specifies the type of session affinity the load balancer should use unless specified as <code>"none"</code>. The supported types are: - <code>"cookie"</code>: On the first request to a proxied load balancer, a cookie is generated, encoding information of which origin the request will be forwarded to. Subsequent requests, by the same client to the same load balancer, will be sent to the origin server the cookie encodes, for the duration of the cookie and as long as the origin server remains healthy. If the cookie has expired or the origin server is unhealthy, then a new origin server is calculated and used. - <code>"ip_cookie"</code>: Behaves the same as <code>"cookie"</code> except the initial origin selection is stable and based on the client’s ip address. - <code>"header"</code>: On the first request to a proxied load balancer, a session key based on the configured HTTP headers (see <code>session_affinity_attributes.headers</code>) is generated, encoding the request headers used for storing in the load balancer session state which origin the request will be forwarded to. Subsequent requests to the load balancer with the same headers will be sent to the same origin server, for the duration of the session and as long as the origin server remains healthy. If the session has been idle for the duration of <code>session_affinity_ttl</code> seconds or the origin server is unhealthy, then a new origin server is calculated and used. See <code>headers</code> in <code>session_affinity_attributes</code> for additional required configuration.
 
@@ -1388,7 +1388,7 @@ One of the following:
 
 <summary>
 
-SessionAffinityAttributes object {drain\_duration, headers, require\_all\_headers, 3 more }
+SessionAffinityAttributes object { drain\_duration, headers, require\_all\_headers, 3 more }
 
 Configures attributes for session affinity.
 
@@ -1416,7 +1416,7 @@ When header <code>session_affinity</code> is enabled, this option can be used to
 
 <summary>
 
-samesite: optional "Auto"or "Lax"or "None"or "Strict"
+samesite: optional "Auto" or "Lax" or "None" or "Strict"
 
 Configures the SameSite attribute on session affinity cookie. Value “Auto” will be translated to “Lax” or “None” depending if Always Use HTTPS is enabled. Note: when using value “None”, the secure attribute can not be set to “Never”.
 
@@ -1448,7 +1448,7 @@ One of the following:
 
 <summary>
 
-secure: optional "Auto"or "Always"or "Never"
+secure: optional "Auto" or "Always" or "Never"
 
 Configures the Secure attribute on session affinity cookie. Value “Always” indicates the Secure attribute will be set in the Set-Cookie header, “Never” indicates the Secure attribute will not be set, and “Auto” will set the Secure attribute depending if Always Use HTTPS is enabled.
 
@@ -1476,7 +1476,7 @@ One of the following:
 
 <summary>
 
-zero\_downtime\_failover: optional "none"or "temporary"or "sticky"
+zero\_downtime\_failover: optional "none" or "temporary" or "sticky"
 
 Configures the zero-downtime failover between origins within a pool when session affinity is enabled. This feature is currently incompatible with Argo, Tiered Cache, and Bandwidth Alliance. The supported values are: - <code>"none"</code>: No failover takes place for sessions pinned to the origin (default). - <code>"temporary"</code>: Traffic will be sent to another other healthy origin until the originally pinned origin is available; note that this can potentially result in heavy origin flapping. - <code>"sticky"</code>: The session affinity cookie is updated and subsequent requests are sent to the new origin. Note: Zero-downtime failover with sticky sessions is currently not supported for session affinity by header.
 
@@ -1508,7 +1508,7 @@ One of the following:
 
 <summary>
 
-SteeringPolicy = "off"or "geo"or "random"or 5 more
+SteeringPolicy = "off" or "geo" or "random" or 5 more
 
 Steering Policy for this load balancer.
 
@@ -1565,7 +1565,7 @@ One of the following:
 
 <summary>
 
-LoadBalancerDeleteResponse object {id }
+LoadBalancerDeleteResponse object { id }
 
 </summary>
 
@@ -1609,7 +1609,7 @@ DELETE/accounts/{account\_id}/load\_balancers/monitors/{monitor\_id}
 
 <summary>
 
-Monitor object {id, allow\_insecure, consecutive\_down, 16 more }
+Monitor object { id, allow\_insecure, consecutive\_down, 16 more }
 
 </summary>
 
@@ -1719,7 +1719,7 @@ The timeout (in seconds) before marking the health check as failed.
 
 <summary>
 
-type: optional "http"or "https"or "tcp"or 3 more
+type: optional "http" or "https" or "tcp" or 3 more
 
 The protocol to use for the health check. Currently supported protocols are ‘HTTP’,‘HTTPS’, ‘TCP’, ‘ICMP-PING’, ‘UDP-ICMP’, and ‘SMTP’.
 
@@ -1763,7 +1763,7 @@ One of the following:
 
 <summary>
 
-MonitorDeleteResponse object {id }
+MonitorDeleteResponse object { id }
 
 </summary>
 
@@ -1787,7 +1787,7 @@ POST/accounts/{account\_id}/load\_balancers/monitors/{monitor\_id}/preview
 
 <summary>
 
-PreviewCreateResponse object {pools, preview\_id }
+PreviewCreateResponse object { pools, preview\_id }
 
 </summary>
 
@@ -1817,7 +1817,7 @@ GET/accounts/{account\_id}/load\_balancers/monitors/{monitor\_id}/references
 
 <summary>
 
-ReferenceGetResponse object {reference\_type, resource\_id, resource\_name, resource\_type }
+ReferenceGetResponse object { reference\_type, resource\_id, resource\_name, resource\_type }
 
 </summary>
 
@@ -1825,7 +1825,7 @@ ReferenceGetResponse object {reference\_type, resource\_id, resource\_name, reso
 
 <summary>
 
-reference\_type: optional "\*"or "referral"or "referrer"
+reference\_type: optional "\*" or "referral" or "referrer"
 
 </summary>
 
@@ -1895,7 +1895,7 @@ DELETE/accounts/{account\_id}/load\_balancers/monitor\_groups/{monitor\_group\_i
 
 <summary>
 
-MonitorGroup object {id, description, members, 2 more }
+MonitorGroup object { id, description, members, 2 more }
 
 </summary>
 
@@ -1915,7 +1915,7 @@ A short description of the monitor group
 
 <summary>
 
-members: array of object {enabled, monitor\_id, monitoring\_only, 3 more }
+members: array of object { enabled, monitor\_id, monitoring\_only, 3 more }
 
 List of monitors in this group
 
@@ -1997,7 +1997,7 @@ GET/accounts/{account\_id}/load\_balancers/monitor\_groups/{monitor\_group\_id}/
 
 <summary>
 
-ReferenceGetResponse object {reference\_type, resource\_id, resource\_name, resource\_type }
+ReferenceGetResponse object { reference\_type, resource\_id, resource\_name, resource\_type }
 
 </summary>
 
@@ -2005,7 +2005,7 @@ ReferenceGetResponse object {reference\_type, resource\_id, resource\_name, reso
 
 <summary>
 
-reference\_type: optional "\*"or "referral"or "referrer"
+reference\_type: optional "\*" or "referral" or "referrer"
 
 </summary>
 
@@ -2079,7 +2079,7 @@ PATCH/accounts/{account\_id}/load\_balancers/pools
 
 <summary>
 
-Pool object {id, check\_regions, created\_on, 17 more }
+Pool object { id, check\_regions, created\_on, 17 more }
 
 </summary>
 
@@ -2191,7 +2191,7 @@ Whether to enable (the default) or disable this pool. Disabled pools will not re
 
 <summary>
 
-health\_sources: optional array of "local"or "regional"or "global"
+health\_sources: optional array of "local" or "regional" or "global"
 
 A list of health sources, ordered from highest to lowest priority, used to evaluate individual origin health and overall pool health. The load balancer uses the first source that has data and falls back to the next. Currently accepted values are null or the exact array \[“regional”, “global”]; any other combination is rejected. Null (the default) behaves like \[“local”, “global”]. \[“regional”, “global”] makes each region steer on its own health, falling back to the global decision when a region has no fresh data. Setting regional requires at least one region in check\_regions.
 
@@ -2372,7 +2372,7 @@ multipleOf0.01
 
 <summary>
 
-PoolDeleteResponse object {id }
+PoolDeleteResponse object { id }
 
 </summary>
 
@@ -2400,7 +2400,7 @@ POST/accounts/{account\_id}/load\_balancers/pools/{pool\_id}/preview
 
 <summary>
 
-HealthGetResponse object {pool\_id, pop\_health }
+HealthGetResponse object { pool\_id, pop\_health }
 
 A list of regions from which to run health checks. Null means every Cloudflare data center.
 
@@ -2416,7 +2416,7 @@ Pool ID.
 
 <summary>
 
-pop\_health: optional object {healthy, origins }
+pop\_health: optional object { healthy, origins }
 
 List of regions and associated health status.
 
@@ -2432,7 +2432,7 @@ Whether health check in region is healthy.
 
 <summary>
 
-origins: optional array of object {ip }
+origins: optional array of object { ip }
 
 </summary>
 
@@ -2440,7 +2440,7 @@ origins: optional array of object {ip }
 
 <summary>
 
-ip: optional object {failure\_reason, healthy, response\_code, rtt }
+ip: optional object { failure\_reason, healthy, response\_code, rtt }
 
 </summary>
 
@@ -2488,7 +2488,7 @@ Origin RTT (Round Trip Time) response.
 
 <summary>
 
-HealthCreateResponse object {pools, preview\_id }
+HealthCreateResponse object { pools, preview\_id }
 
 </summary>
 
@@ -2518,7 +2518,7 @@ GET/accounts/{account\_id}/load\_balancers/pools/{pool\_id}/references
 
 <summary>
 
-ReferenceGetResponse object {reference\_type, resource\_id, resource\_name, resource\_type }
+ReferenceGetResponse object { reference\_type, resource\_id, resource\_name, resource\_type }
 
 </summary>
 
@@ -2526,7 +2526,7 @@ ReferenceGetResponse object {reference\_type, resource\_id, resource\_name, reso
 
 <summary>
 
-reference\_type: optional "\*"or "referral"or "referrer"
+reference\_type: optional "\*" or "referral" or "referrer"
 
 </summary>
 
@@ -2576,7 +2576,7 @@ GET/accounts/{account\_id}/load\_balancers/preview/{preview\_id}
 
 <summary>
 
-PreviewGetResponse = map\[object {healthy, origins } ]
+PreviewGetResponse = map\[object { healthy, origins } ]
 
 Resulting health data from a preview operation.
 
@@ -2590,7 +2590,7 @@ healthy: optional boolean
 
 <summary>
 
-origins: optional array of map\[object {failure\_reason, healthy, response\_code, rtt } ]
+origins: optional array of map\[object { failure\_reason, healthy, response\_code, rtt } ]
 
 </summary>
 
@@ -2634,7 +2634,7 @@ GET/accounts/{account\_id}/load\_balancers/regions/{region\_id}
 
 <summary>
 
-RegionListResponse = unknownor string
+RegionListResponse = unknown or string
 
 </summary>
 
@@ -2656,7 +2656,7 @@ string
 
 <summary>
 
-RegionGetResponse = unknownor string
+RegionGetResponse = unknown or string
 
 A list of countries and subdivisions mapped to a region.
 
@@ -2688,7 +2688,7 @@ GET/accounts/{account\_id}/load\_balancers/search
 
 <summary>
 
-SearchListResponse object {resources }
+SearchListResponse object { resources }
 
 </summary>
 
@@ -2696,7 +2696,7 @@ SearchListResponse object {resources }
 
 <summary>
 
-resources: optional array of object {reference\_type, references, resource\_id, 2 more }
+resources: optional array of object { reference\_type, references, resource\_id, 2 more }
 
 A list of resources matching the search query.
 
@@ -2706,7 +2706,7 @@ A list of resources matching the search query.
 
 <summary>
 
-reference\_type: optional "referral"or "referrer"
+reference\_type: optional "referral" or "referrer"
 
 When listed as a reference, the type (direction) of the reference.
 
@@ -2746,7 +2746,7 @@ The human-identifiable name of the resource.
 
 <summary>
 
-resource\_type: optional "load\_balancer"or "monitor"or "pool"
+resource\_type: optional "load\_balancer" or "monitor" or "pool"
 
 The type of the resource.
 

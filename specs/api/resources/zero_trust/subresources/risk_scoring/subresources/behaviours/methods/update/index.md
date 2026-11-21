@@ -72,7 +72,7 @@ account\_id: string
 
 <summary>
 
-behaviors: map\[object {enabled, risk\_level } ]
+behaviors: map\[object { enabled, risk\_level } ]
 
 </summary>
 
@@ -84,7 +84,7 @@ enabled: boolean
 
 <summary>
 
-risk\_level: "info"or "low"or "medium"or "high"
+risk\_level: "info" or "low" or "medium" or "high"
 
 </summary>
 
@@ -120,7 +120,7 @@ One of the following:
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -142,7 +142,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -162,7 +162,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -184,7 +184,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -210,7 +210,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {behaviors }
+result: optional object { behaviors }
 
 </summary>
 
@@ -218,7 +218,7 @@ result: optional object {behaviors }
 
 <summary>
 
-behaviors: map\[object {enabled, risk\_level } ]
+behaviors: map\[object { enabled, risk\_level } ]
 
 </summary>
 
@@ -230,7 +230,7 @@ enabled: boolean
 
 <summary>
 
-risk\_level: "info"or "low"or "medium"or "high"
+risk\_level: "info" or "low" or "medium" or "high"
 
 </summary>
 

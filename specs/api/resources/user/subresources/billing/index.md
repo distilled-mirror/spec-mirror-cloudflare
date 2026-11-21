@@ -32,7 +32,7 @@ GET/user/billing/history
 
 <summary>
 
-BillingHistory object {id, action, amount, 5 more }
+BillingHistory object { id, action, amount, 5 more }
 
 </summary>
 
@@ -92,7 +92,7 @@ maxLength30
 
 <summary>
 
-zone: object {name }
+zone: object { name }
 
 </summary>
 
@@ -122,7 +122,7 @@ GET/user/billing/profile
 
 <summary>
 
-ProfileGetResponse object {id, account\_type, address, 35 more }
+ProfileGetResponse object { id, account\_type, address, 35 more }
 
 </summary>
 

@@ -46,7 +46,7 @@ DELETE/accounts/{account\_id}/rules/lists/{list\_id}/items
 
 <summary>
 
-ItemListResponse = object {id, created\_on, ip, 2 more } or object {id, created\_on, hostname, 2 more } or object {id, created\_on, modified\_on, 2 more } or object {id, asn, created\_on, 2 more }
+ItemListResponse = object { id, created\_on, ip, 2 more } or object { id, created\_on, hostname, 2 more } or object { id, created\_on, modified\_on, 2 more } or object { id, asn, created\_on, 2 more }
 
 </summary>
 
@@ -56,7 +56,7 @@ One of the following:
 
 <summary>
 
-ListsListItemIPFull object {id, created\_on, ip, 2 more }
+ListsListItemIPFull object { id, created\_on, ip, 2 more }
 
 </summary>
 
@@ -102,7 +102,7 @@ Defines an informative summary of the list item.
 
 <summary>
 
-ListsListItemHostnameFull object {id, created\_on, hostname, 2 more }
+ListsListItemHostnameFull object { id, created\_on, hostname, 2 more }
 
 </summary>
 
@@ -148,7 +148,7 @@ Defines an informative summary of the list item.
 
 <summary>
 
-ListsListItemRedirectFull object {id, created\_on, modified\_on, 2 more }
+ListsListItemRedirectFull object { id, created\_on, modified\_on, 2 more }
 
 </summary>
 
@@ -194,7 +194,7 @@ Defines an informative summary of the list item.
 
 <summary>
 
-ListsListItemASNFull object {id, asn, created\_on, 2 more }
+ListsListItemASNFull object { id, asn, created\_on, 2 more }
 
 </summary>
 
@@ -244,7 +244,7 @@ Defines an informative summary of the list item.
 
 <summary>
 
-ItemGetResponse = object {id, created\_on, ip, 2 more } or object {id, created\_on, hostname, 2 more } or object {id, created\_on, modified\_on, 2 more } or object {id, asn, created\_on, 2 more }
+ItemGetResponse = object { id, created\_on, ip, 2 more } or object { id, created\_on, hostname, 2 more } or object { id, created\_on, modified\_on, 2 more } or object { id, asn, created\_on, 2 more }
 
 </summary>
 
@@ -254,7 +254,7 @@ One of the following:
 
 <summary>
 
-ListsListItemIPFull object {id, created\_on, ip, 2 more }
+ListsListItemIPFull object { id, created\_on, ip, 2 more }
 
 </summary>
 
@@ -300,7 +300,7 @@ Defines an informative summary of the list item.
 
 <summary>
 
-ListsListItemHostnameFull object {id, created\_on, hostname, 2 more }
+ListsListItemHostnameFull object { id, created\_on, hostname, 2 more }
 
 </summary>
 
@@ -346,7 +346,7 @@ Defines an informative summary of the list item.
 
 <summary>
 
-ListsListItemRedirectFull object {id, created\_on, modified\_on, 2 more }
+ListsListItemRedirectFull object { id, created\_on, modified\_on, 2 more }
 
 </summary>
 
@@ -392,7 +392,7 @@ Defines an informative summary of the list item.
 
 <summary>
 
-ListsListItemASNFull object {id, asn, created\_on, 2 more }
+ListsListItemASNFull object { id, asn, created\_on, 2 more }
 
 </summary>
 
@@ -442,7 +442,7 @@ Defines an informative summary of the list item.
 
 <summary>
 
-ItemCreateResponse object {operation\_id }
+ItemCreateResponse object { operation\_id }
 
 </summary>
 
@@ -460,7 +460,7 @@ The unique operation ID of the asynchronous action.
 
 <summary>
 
-ItemUpdateResponse object {operation\_id }
+ItemUpdateResponse object { operation\_id }
 
 </summary>
 
@@ -478,7 +478,7 @@ The unique operation ID of the asynchronous action.
 
 <summary>
 
-ItemDeleteResponse object {operation\_id }
+ItemDeleteResponse object { operation\_id }
 
 </summary>
 

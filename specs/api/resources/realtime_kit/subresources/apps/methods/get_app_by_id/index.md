@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Realtime Admin``Realtime`
+`Realtime Read``Realtime Admin``Realtime`
 
 ##### P ath ParametersExpand Collapse
 
@@ -80,7 +80,7 @@ The app identifier tag.
 
 <summary>
 
-data: optional object {id, created\_at, name }
+data: optional object { id, created\_at, name }
 
 </summary>
 

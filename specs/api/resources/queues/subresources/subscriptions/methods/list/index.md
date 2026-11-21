@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Queues Write``Queues Read``Workers Scripts Write``Workers Scripts Read`
+`Workers Metadata Read-Only``Workers Editor``Workers Content Read-Only``Workers Admin``Queues Metadata Read``Queues Write``Queues Read``Workers Scripts Write``Workers Scripts Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -74,7 +74,7 @@ maxLength32
 
 <summary>
 
-direction: optional "asc"or "desc"
+direction: optional "asc" or "desc"
 
 Sort direction
 
@@ -98,7 +98,7 @@ One of the following:
 
 <summary>
 
-order: optional "created\_at"or "name"or "enabled"or "source"
+order: optional "created\_at" or "name" or "enabled" or "source"
 
 Field to sort by
 
@@ -144,6 +144,12 @@ minimum1
 
 [Link to this property](#)%20queues.subscriptions%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20per_page%20%3E%20(schema)>)
 
+queue\_id: optional string
+
+Filter event subscriptions by destination queue ID.
+
+[Link to this property](#)%20queues.subscriptions%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20queue_id%20%3E%20(schema)>)
+
 ##### ReturnsExpand Collapse
 
 <details>
@@ -174,7 +180,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -198,7 +204,7 @@ messages: optional array of string
 
 <summary>
 
-result: optional array of object {id, created\_at, destination, 5 more }
+result: optional array of object { id, created\_at, destination, 5 more }
 
 </summary>
 
@@ -220,7 +226,7 @@ formatdate-time
 
 <summary>
 
-destination: object {queue\_id, type }
+destination: object { queue\_id, type }
 
 Destination configuration for the subscription
 
@@ -272,7 +278,7 @@ Name of the subscription
 
 <summary>
 
-source: object {type } or object {type } or object {type } or 6 more
+source: object { type } or object { type } or object { type } or 6 more
 
 Source configuration for the subscription
 
@@ -284,7 +290,7 @@ One of the following:
 
 <summary>
 
-MqEventSourceImages object {type }
+MqEventSourceImages object { type }
 
 </summary>
 
@@ -302,7 +308,7 @@ Type of source
 
 <summary>
 
-MqEventSourceKV object {type }
+MqEventSourceKV object { type }
 
 </summary>
 
@@ -320,7 +326,7 @@ Type of source
 
 <summary>
 
-MqEventSourceR2 object {type }
+MqEventSourceR2 object { type }
 
 </summary>
 
@@ -338,7 +344,7 @@ Type of source
 
 <summary>
 
-MqEventSourceSuperSlurper object {type }
+MqEventSourceSuperSlurper object { type }
 
 </summary>
 
@@ -356,7 +362,7 @@ Type of source
 
 <summary>
 
-MqEventSourceVectorize object {type }
+MqEventSourceVectorize object { type }
 
 </summary>
 
@@ -374,7 +380,7 @@ Type of source
 
 <summary>
 
-MqEventSourceWorkersAIModel object {model\_name, type }
+MqEventSourceWorkersAIModel object { model\_name, type }
 
 </summary>
 
@@ -398,7 +404,7 @@ Type of source
 
 <summary>
 
-MqEventSourceWorkersBuildsWorker object {type, worker\_name }
+MqEventSourceWorkersBuildsWorker object { type, worker\_name }
 
 </summary>
 
@@ -422,7 +428,7 @@ Name of the worker
 
 <summary>
 
-MqEventSourceWorkersScript object {script\_tag, type }
+MqEventSourceWorkersScript object { script\_tag, type }
 
 </summary>
 
@@ -446,7 +452,7 @@ Type of source
 
 <summary>
 
-MqEventSourceWorkflowsWorkflow object {type, workflow\_name }
+MqEventSourceWorkflowsWorkflow object { type, workflow\_name }
 
 </summary>
 
@@ -478,7 +484,7 @@ Name of the workflow
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

@@ -48,7 +48,7 @@ POST/accounts/{account\_id}/realtime/kit/{app\_id}/meetings/{meeting\_id}/active
 
 <summary>
 
-ActiveSessionGetActiveSessionResponse object {data, success }
+ActiveSessionGetActiveSessionResponse object { data, success }
 
 </summary>
 
@@ -56,7 +56,7 @@ ActiveSessionGetActiveSessionResponse object {data, success }
 
 <summary>
 
-data: optional object {id, associated\_id, created\_at, 11 more }
+data: optional object { id, associated\_id, created\_at, 11 more }
 
 </summary>
 
@@ -118,7 +118,7 @@ timestamp when session started
 
 <summary>
 
-status: "LIVE"or "ENDED"
+status: "LIVE" or "ENDED"
 
 current status of session
 
@@ -142,7 +142,7 @@ One of the following:
 
 <summary>
 
-type: "meeting"or "livestream"or "participant"
+type: "meeting" or "livestream" or "participant"
 
 type of session
 
@@ -198,7 +198,7 @@ success: optional boolean
 
 <summary>
 
-ActiveSessionKickParticipantsResponse object {data, success }
+ActiveSessionKickParticipantsResponse object { data, success }
 
 </summary>
 
@@ -206,11 +206,11 @@ ActiveSessionKickParticipantsResponse object {data, success }
 
 <summary>
 
-data: optional object {action, participants }
+data: optional object { action, participants }
 
 </summary>
 
-action: optional string
+action: optional "kick"
 
 <a href="#">Link to this property</a>
 
@@ -218,39 +218,15 @@ action: optional string
 
 <summary>
 
-participants: optional array of object {id, created\_at, updated\_at, 3 more }
+participants: optional array of object { id }
+
+Participants the kick was requested for.
 
 </summary>
 
 id: string
 
-ID of the session participant
-
-<a href="#">Link to this property</a>
-
-created\_at: string
-
-<a href="#">Link to this property</a>
-
-updated\_at: string
-
-<a href="#">Link to this property</a>
-
-email: optional string
-
-Email of the session participant.
-
-<a href="#">Link to this property</a>
-
-name: optional string
-
-Name of the session participant.
-
-<a href="#">Link to this property</a>
-
-picture: optional string
-
-A URL pointing to a picture of the participant.
+ID of the participant
 
 <a href="#">Link to this property</a>
 
@@ -274,7 +250,7 @@ success: optional boolean
 
 <summary>
 
-ActiveSessionKickAllParticipantsResponse object {data, success }
+ActiveSessionKickAllParticipantsResponse object { data, success }
 
 </summary>
 
@@ -282,15 +258,17 @@ ActiveSessionKickAllParticipantsResponse object {data, success }
 
 <summary>
 
-data: optional object {action, kicked\_participants\_count }
+data: optional object { action, kicked\_participants\_count }
 
 </summary>
 
-action: optional string
+action: optional "kick-all"
 
 <a href="#">Link to this property</a>
 
 kicked\_participants\_count: optional number
+
+Number of connections (peers) that were in the session when it was ended.
 
 <a href="#">Link to this property</a>
 
@@ -310,7 +288,7 @@ success: optional boolean
 
 <summary>
 
-ActiveSessionCreatePollResponse object {data, success }
+ActiveSessionCreatePollResponse object { data, success }
 
 </summary>
 
@@ -318,7 +296,7 @@ ActiveSessionCreatePollResponse object {data, success }
 
 <summary>
 
-data: optional object {action, poll }
+data: optional object { action, poll }
 
 </summary>
 
@@ -330,7 +308,7 @@ action: optional string
 
 <summary>
 
-poll: optional object {id, options, question, 4 more }
+poll: optional object { id, options, question, 4 more }
 
 </summary>
 
@@ -344,7 +322,7 @@ ID of the poll
 
 <summary>
 
-options: array of object {count, text, votes }
+options: array of object { count, text, votes }
 
 Answer options
 
@@ -364,7 +342,7 @@ Text of the answer option
 
 <summary>
 
-votes: array of object {id, name }
+votes: array of object { id, name }
 
 </summary>
 
@@ -426,7 +404,7 @@ success: optional boolean
 
 <summary>
 
-ActiveSessionMuteParticipantsResponse object {data, success }
+ActiveSessionMuteParticipantsResponse object { data, success }
 
 </summary>
 
@@ -434,11 +412,11 @@ ActiveSessionMuteParticipantsResponse object {data, success }
 
 <summary>
 
-data: optional object {action, participants }
+data: optional object { action, participants }
 
 </summary>
 
-action: optional string
+action: optional "mute"
 
 <a href="#">Link to this property</a>
 
@@ -446,39 +424,15 @@ action: optional string
 
 <summary>
 
-participants: optional array of object {id, created\_at, updated\_at, 3 more }
+participants: optional array of object { id }
+
+Participants the mute was requested for.
 
 </summary>
 
 id: string
 
-ID of the session participant
-
-<a href="#">Link to this property</a>
-
-created\_at: string
-
-<a href="#">Link to this property</a>
-
-updated\_at: string
-
-<a href="#">Link to this property</a>
-
-email: optional string
-
-Email of the session participant.
-
-<a href="#">Link to this property</a>
-
-name: optional string
-
-Name of the session participant.
-
-<a href="#">Link to this property</a>
-
-picture: optional string
-
-A URL pointing to a picture of the participant.
+ID of the participant
 
 <a href="#">Link to this property</a>
 
@@ -502,7 +456,7 @@ success: optional boolean
 
 <summary>
 
-ActiveSessionMuteAllParticipantsResponse object {data, success }
+ActiveSessionMuteAllParticipantsResponse object { data, success }
 
 </summary>
 
@@ -510,15 +464,17 @@ ActiveSessionMuteAllParticipantsResponse object {data, success }
 
 <summary>
 
-data: optional object {action, muted\_participants\_count }
+data: optional object { action, muted\_participants\_count }
 
 </summary>
 
-action: optional string
+action: optional "mute-all"
 
 <a href="#">Link to this property</a>
 
 muted\_participants\_count: optional number
+
+Number of connections (peers) whose microphone was unmuted and has been muted by this request.
 
 <a href="#">Link to this property</a>
 

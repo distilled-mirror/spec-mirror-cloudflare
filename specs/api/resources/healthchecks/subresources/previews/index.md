@@ -36,7 +36,7 @@ DELETE/zones/{zone\_id}/healthchecks/preview/{healthcheck\_id}
 
 <summary>
 
-PreviewDeleteResponse object {id }
+PreviewDeleteResponse object { id }
 
 </summary>
 

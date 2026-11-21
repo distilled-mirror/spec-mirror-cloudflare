@@ -46,7 +46,7 @@ DELETE/accounts/{account\_id}/gateway/pacfiles/{pacfile\_id}
 
 <summary>
 
-PacfileListResponse object {id, created\_at, description, 4 more }
+PacfileListResponse object { id, created\_at, description, 4 more }
 
 </summary>
 
@@ -98,7 +98,7 @@ Unique URL to download the PAC file.
 
 <summary>
 
-PacfileGetResponse object {id, contents, created\_at, 5 more }
+PacfileGetResponse object { id, contents, created\_at, 5 more }
 
 </summary>
 
@@ -156,7 +156,7 @@ Unique URL to download the PAC file.
 
 <summary>
 
-PacfileCreateResponse object {id, contents, created\_at, 5 more }
+PacfileCreateResponse object { id, contents, created\_at, 5 more }
 
 </summary>
 
@@ -214,7 +214,7 @@ Unique URL to download the PAC file.
 
 <summary>
 
-PacfileUpdateResponse object {id, contents, created\_at, 5 more }
+PacfileUpdateResponse object { id, contents, created\_at, 5 more }
 
 </summary>
 

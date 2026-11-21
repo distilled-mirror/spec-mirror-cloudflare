@@ -62,7 +62,7 @@ minLength3
 
 <summary>
 
-"cf-r2-jurisdiction": optional "default"or "eu"or "us"or 2 more
+"cf-r2-jurisdiction": optional "default" or "eu" or "us" or 2 more
 
 </summary>
 
@@ -122,7 +122,7 @@ An allowlist of ciphers for TLS termination. These ciphers must be in the Boring
 
 <summary>
 
-minTLS: optional "1.0"or "1.1"or "1.2"or "1.3"
+minTLS: optional "1.0" or "1.1" or "1.2" or "1.3"
 
 Minimum TLS Version the custom domain will accept for incoming connections. If not set, defaults to 1.0.
 
@@ -178,7 +178,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -202,7 +202,7 @@ messages: array of string
 
 <summary>
 
-result: object {domain, enabled, zoneId, 2 more }
+result: object { domain, enabled, zoneId, 2 more }
 
 </summary>
 
@@ -234,7 +234,7 @@ An allowlist of ciphers for TLS termination. These ciphers must be in the Boring
 
 <summary>
 
-minTLS: optional "1.0"or "1.1"or "1.2"or "1.3"
+minTLS: optional "1.0" or "1.1" or "1.2" or "1.3"
 
 Minimum TLS Version the custom domain will accept for incoming connections. If not set, defaults to 1.0.
 

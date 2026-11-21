@@ -80,7 +80,7 @@ maxLength36
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -102,7 +102,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -122,7 +122,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -144,7 +144,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -230,7 +230,7 @@ The type of hash used for the certificate.
 
 <summary>
 
-type: optional "custom"or "gateway\_managed"or "access\_managed"
+type: optional "custom" or "gateway\_managed" or "access\_managed"
 
 The type of the certificate, indicating how it was created and who manages it.
 

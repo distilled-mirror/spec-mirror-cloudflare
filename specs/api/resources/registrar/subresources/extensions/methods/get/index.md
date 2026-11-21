@@ -76,7 +76,7 @@ extension: string
 
 <summary>
 
-errors: array of object {code, message, source }
+errors: array of object { code, message, source }
 
 </summary>
 
@@ -94,7 +94,7 @@ message: string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 Location of the invalid value that caused the error.
 
@@ -118,7 +118,7 @@ JSON Pointer to the invalid or missing request value.
 
 <summary>
 
-messages: array of object {code, message, source }
+messages: array of object { code, message, source }
 
 </summary>
 
@@ -136,7 +136,7 @@ message: string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 Location of the invalid value that caused the error.
 
@@ -160,7 +160,7 @@ JSON Pointer to the invalid or missing request value.
 
 <summary>
 
-result: object {metadata, registration\_schema, transfer\_schema }
+result: object { metadata, registration\_schema, transfer\_schema }
 
 Extension entry with metadata and JSON Schema documents for registration and transfer operations.
 
@@ -170,7 +170,7 @@ Extension entry with metadata and JSON Schema documents for registration and tra
 
 <summary>
 
-metadata: object {name, tld }
+metadata: object { name, tld }
 
 Extension metadata.
 

@@ -66,7 +66,7 @@ account\_id: string
 
 <summary>
 
-application\_id: "ANTHROPIC"or "AWS"or "BITBUCKET"or 13 more
+application\_id: "ANTHROPIC" or "AWS" or "BITBUCKET" or 13 more
 
 </summary>
 
@@ -146,7 +146,7 @@ One of the following:
 
 <summary>
 
-environment: optional "fedramp"or "standard"
+environment: optional "fedramp" or "standard"
 
 Environment to request (standard, fedramp). The result follows the account’s FedRAMP entitlement: FedRAMP-enabled accounts always receive FedRAMP applications and other accounts receive standard applications. Any other non-empty value returns 400.
 
@@ -172,7 +172,7 @@ One of the following:
 
 <summary>
 
-result: object {id, auth\_methods, category, 6 more }
+result: object { id, auth\_methods, category, 6 more }
 
 The requested item.
 
@@ -182,7 +182,7 @@ The requested item.
 
 <summary>
 
-id: "ANTHROPIC"or "AWS"or "BITBUCKET"or 13 more
+id: "ANTHROPIC" or "AWS" or "BITBUCKET" or 13 more
 
 Vendor identifier.
 
@@ -279,7 +279,7 @@ One of the following:
 
 <summary>
 
-auth\_methods: array of object {id, display\_name, is\_default, supported\_environments }
+auth\_methods: array of object { id, display\_name, is\_default, supported\_environments }
 
 Available authentication methods.
 
@@ -353,7 +353,7 @@ Logo path.
 
 <summary>
 
-use\_cases: array of object {id, base\_scopes, description, 2 more }
+use\_cases: array of object { id, base\_scopes, description, 2 more }
 
 Use cases with full scope details.
 
@@ -369,7 +369,7 @@ Use case identifier.
 
 <summary>
 
-base\_scopes: array of object {display\_name, scope, severity }
+base\_scopes: array of object { display\_name, scope, severity }
 
 Scopes always required for this use case.
 
@@ -391,7 +391,7 @@ Vendor-native scope identifier.
 
 <summary>
 
-severity: "low"or "medium"or "high"or "critical"
+severity: "low" or "medium" or "high" or "critical"
 
 Permission sensitivity level.
 
@@ -444,7 +444,7 @@ Human-readable use case name.
 
 <summary>
 
-features: array of object {id, description, display\_name, scopes }
+features: array of object { id, description, display\_name, scopes }
 
 Optional features with extra scopes.
 
@@ -472,7 +472,7 @@ Human-readable feature name.
 
 <summary>
 
-scopes: array of object {display\_name, scope, severity }
+scopes: array of object { display\_name, scope, severity }
 
 Additional scopes when feature is enabled.
 
@@ -494,7 +494,7 @@ Vendor-native scope identifier.
 
 <summary>
 
-severity: "low"or "medium"or "high"or "critical"
+severity: "low" or "medium" or "high" or "critical"
 
 Permission sensitivity level.
 

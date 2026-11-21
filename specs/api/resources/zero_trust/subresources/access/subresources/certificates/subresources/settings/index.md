@@ -36,7 +36,7 @@ PUT/{accounts\_or\_zones}/{account\_or\_zone\_id}/access/certificates/settings
 
 <summary>
 
-CertificateSettings object {china\_network, client\_certificate\_forwarding, hostname }
+CertificateSettings object { china\_network, client\_certificate\_forwarding, hostname }
 
 </summary>
 

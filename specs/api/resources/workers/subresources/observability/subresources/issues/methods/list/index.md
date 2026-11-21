@@ -70,7 +70,7 @@ Used when interacting with the Origin CA certificates API. <a href="https://deve
 
 ##### Accepted Permissions (at least one required)
 
-`Workers Observability Write``Workers Observability Read`
+`Workers Metadata Read-Only``Workers Observability Write``Workers Observability Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -84,7 +84,7 @@ account\_id: string
 
 <summary>
 
-order: optional "asc"or "desc"
+order: optional "asc" or "desc"
 
 </summary>
 
@@ -106,7 +106,7 @@ One of the following:
 
 <summary>
 
-orderBy: optional "id"or "service"or "title"or 8 more
+orderBy: optional "id" or "service" or "title" or 8 more
 
 </summary>
 
@@ -188,7 +188,7 @@ service: optional string
 
 <summary>
 
-status: optional "active"or "resolved"or "ignored"
+status: optional "active" or "resolved" or "ignored"
 
 </summary>
 
@@ -224,7 +224,7 @@ minLength1
 
 <summary>
 
-errors: array of object {message }
+errors: array of object { message }
 
 </summary>
 
@@ -240,7 +240,7 @@ message: string
 
 <summary>
 
-messages: array of object {message }
+messages: array of object { message }
 
 </summary>
 
@@ -256,7 +256,7 @@ message: "Successful request"
 
 <summary>
 
-result: array of object {id, activity, count, 11 more }
+result: array of object { id, activity, count, 11 more }
 
 </summary>
 
@@ -268,7 +268,7 @@ id: string
 
 <summary>
 
-activity: array of object {id, created, inactivitySeconds, 14 more }
+activity: array of object { id, created, inactivitySeconds, 14 more }
 
 </summary>
 
@@ -288,7 +288,7 @@ inactivitySeconds: number
 
 <summary>
 
-initiatedBy: "automatic"or "manual"
+initiatedBy: "automatic" or "manual"
 
 </summary>
 
@@ -326,7 +326,7 @@ policyId: string
 
 <summary>
 
-status: "pending"or "succeeded"or "failed"
+status: "pending" or "succeeded" or "failed"
 
 </summary>
 
@@ -376,7 +376,7 @@ automationRevision: optional number
 
 <summary>
 
-scope: optional "account"or "service"
+scope: optional "account" or "service"
 
 </summary>
 
@@ -398,7 +398,7 @@ One of the following:
 
 <summary>
 
-triggerType: optional "occurrence\_threshold"or "recurrence\_after\_inactivity"
+triggerType: optional "occurrence\_threshold" or "recurrence\_after\_inactivity"
 
 </summary>
 
@@ -444,7 +444,7 @@ service: string
 
 <summary>
 
-status: "active"or "resolved"or "ignored"
+status: "active" or "resolved" or "ignored"
 
 </summary>
 
@@ -486,7 +486,7 @@ fingerprint: optional string
 
 <summary>
 
-members: optional array of object {fingerprint, issueId, title }
+members: optional array of object { fingerprint, issueId, title }
 
 </summary>
 
@@ -518,7 +518,7 @@ type: optional string
 
 <summary>
 
-result\_info: object {count, page, per\_page, 2 more }
+result\_info: object { count, page, per\_page, 2 more }
 
 </summary>
 

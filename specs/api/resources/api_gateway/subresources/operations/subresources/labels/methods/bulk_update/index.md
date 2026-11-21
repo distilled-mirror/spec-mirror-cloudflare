@@ -76,7 +76,7 @@ maxLength32
 
 <summary>
 
-managed: object {labels }
+managed: object { labels }
 
 Managed labels to replace for all affected operations
 
@@ -96,7 +96,7 @@ List of managed label names. Providing an empty array will result in all managed
 
 <summary>
 
-selector: object {include }
+selector: object { include }
 
 Operation IDs selector
 
@@ -106,7 +106,7 @@ Operation IDs selector
 
 <summary>
 
-include: object {operation\_ids }
+include: object { operation\_ids }
 
 </summary>
 
@@ -126,7 +126,7 @@ operation\_ids: array of string
 
 <summary>
 
-user: object {labels }
+user: object { labels }
 
 User labels to replace for all affected operations
 
@@ -170,7 +170,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -212,7 +212,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -232,7 +232,7 @@ pointer: optional string
 
 <summary>
 
-result: array of object {endpoint, host, last\_updated, 3 more }
+result: array of object { endpoint, host, last\_updated, 3 more }
 
 </summary>
 
@@ -266,7 +266,7 @@ formatdate-time
 
 <summary>
 
-method: "GET"or "POST"or "HEAD"or 6 more
+method: "GET" or "POST" or "HEAD" or 6 more
 
 The HTTP method used to access the endpoint.
 
@@ -328,7 +328,7 @@ minLength36
 
 <summary>
 
-labels: optional array of object {created\_at, description, last\_updated, 3 more }
+labels: optional array of object { created\_at, description, last\_updated, 3 more }
 
 </summary>
 
@@ -366,7 +366,7 @@ The name of the label
 
 <summary>
 
-source: "user"or "managed"
+source: "user" or "managed"
 
 - <code>user</code> - label is owned by the user
 - <code>managed</code> - label is owned by cloudflare

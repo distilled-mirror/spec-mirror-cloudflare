@@ -40,7 +40,7 @@ DELETE/zones/{zone\_id}/email/routing/dns
 
 <summary>
 
-DNSRecord object {content, name, priority, 2 more }
+DNSRecord object { content, name, priority, 2 more }
 
 List of records needed to enable an Email Routing zone.
 
@@ -74,7 +74,7 @@ minimum0
 
 <summary>
 
-ttl: optional numberor 1
+ttl: optional number or 1
 
 Time to live, in seconds, of the DNS record. Must be between 60 and 86400, or 1 for ‘automatic’.
 
@@ -100,7 +100,7 @@ Time to live, in seconds, of the DNS record. Must be between 60 and 86400, or 1 
 
 <summary>
 
-type: optional "A"or "AAAA"or "CNAME"or 15 more
+type: optional "A" or "AAAA" or "CNAME" or 15 more
 
 DNS record type.
 
@@ -224,7 +224,7 @@ minimum0
 
 <summary>
 
-ttl: optional numberor 1
+ttl: optional number or 1
 
 Time to live, in seconds, of the DNS record. Must be between 60 and 86400, or 1 for ‘automatic’.
 
@@ -250,7 +250,7 @@ Time to live, in seconds, of the DNS record. Must be between 60 and 86400, or 1 
 
 <summary>
 
-type: optional "A"or "AAAA"or "CNAME"or 15 more
+type: optional "A" or "AAAA" or "CNAME" or 15 more
 
 DNS record type.
 

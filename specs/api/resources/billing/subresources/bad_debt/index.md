@@ -28,7 +28,7 @@ GET/accounts/{account\_id}/billing/bad-debt
 
 <summary>
 
-BadDebtGetResponse object {already\_paid, bad\_debt\_status, invoices, total\_debt\_amount }
+BadDebtGetResponse object { already\_paid, bad\_debt\_status, invoices, total\_debt\_amount }
 
 </summary>
 
@@ -48,7 +48,7 @@ The current bad debt status of the account.
 
 <summary>
 
-invoices: optional array of object {id, action, amount, 12 more }
+invoices: optional array of object { id, action, amount, 12 more }
 
 List of outstanding invoices contributing to bad debt.
 

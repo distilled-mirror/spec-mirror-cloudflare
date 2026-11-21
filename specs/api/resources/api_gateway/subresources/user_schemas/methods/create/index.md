@@ -94,7 +94,7 @@ Name of the schema
 
 <summary>
 
-validation\_enabled: optional "true"or "false"
+validation\_enabled: optional "true" or "false"
 
 Flag whether schema is enabled for validation.
 
@@ -142,7 +142,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -184,7 +184,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -204,7 +204,7 @@ pointer: optional string
 
 <summary>
 
-result: object {schema, upload\_details }
+result: object { schema, upload\_details }
 
 </summary>
 
@@ -264,7 +264,7 @@ Flag whether schema is enabled for validation.
 
 <summary>
 
-upload\_details: optional object {warnings }
+upload\_details: optional object { warnings }
 
 </summary>
 
@@ -272,7 +272,7 @@ upload\_details: optional object {warnings }
 
 <summary>
 
-warnings: optional array of object {code, locations, message }
+warnings: optional array of object { code, locations, message }
 
 Diagnostic warning events that occurred during processing. These events are non-critical errors found within the schema.
 

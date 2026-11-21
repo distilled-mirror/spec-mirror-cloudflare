@@ -44,7 +44,7 @@ DELETE/accounts/{account\_id}/magic/cf1\_sites/{cf1\_site\_id}
 
 <summary>
 
-Cf1Site object {name, id, created\_on, 3 more }
+Cf1Site object { name, id, created\_on, 3 more }
 
 </summary>
 
@@ -92,7 +92,7 @@ formatdate-time
 
 <summary>
 
-Cf1SiteLocation object {lat, long, name }
+Cf1SiteLocation object { lat, long, name }
 
 </summary>
 
@@ -146,7 +146,7 @@ DELETE/accounts/{account\_id}/magic/cf1\_sites/{cf1\_site\_id}/ramps/{ramp\_id}
 
 <summary>
 
-Ramp object {id, created\_on, modified\_on, 8 more }
+Ramp object { id, created\_on, modified\_on, 8 more }
 
 </summary>
 
@@ -192,7 +192,7 @@ A human-provided description of the ramp.
 
 <summary>
 
-gre: optional object {managed\_by }
+gre: optional object { managed\_by }
 
 </summary>
 
@@ -210,7 +210,7 @@ URL reference to the source network resource that this ramp is managed by.
 
 <summary>
 
-gre\_interconnect: optional object {managed\_by }
+gre\_interconnect: optional object { managed\_by }
 
 </summary>
 
@@ -228,7 +228,7 @@ URL reference to the source network resource that this ramp is managed by.
 
 <summary>
 
-ipsec: optional object {managed\_by }
+ipsec: optional object { managed\_by }
 
 </summary>
 
@@ -246,7 +246,7 @@ URL reference to the source network resource that this ramp is managed by.
 
 <summary>
 
-mconn: optional object {managed\_by }
+mconn: optional object { managed\_by }
 
 </summary>
 
@@ -264,7 +264,7 @@ URL reference to the source network resource that this ramp is managed by.
 
 <summary>
 
-mpls\_interconnect: optional object {managed\_by }
+mpls\_interconnect: optional object { managed\_by }
 
 </summary>
 
@@ -286,7 +286,7 @@ URL reference to the source network resource that this ramp is managed by.
 
 <summary>
 
-RampType = "gre"or "gre\_interconnect"or "mpls\_interconnect"or 2 more
+RampType = "gre" or "gre\_interconnect" or "mpls\_interconnect" or 2 more
 
 The type of network connection (ramp) linking a CF1 Site to Cloudflare’s network.
 

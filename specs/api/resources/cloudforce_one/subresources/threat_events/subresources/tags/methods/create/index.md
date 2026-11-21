@@ -56,7 +56,7 @@ value: string
 
 <summary>
 
-activeDuration: optional stringor object {value, confidence, tlp }
+activeDuration: optional string or object { value, confidence, tlp }
 
 </summary>
 
@@ -70,7 +70,7 @@ string
 
 <summary>
 
-object {value, confidence, tlp }
+object { value, confidence, tlp }
 
 </summary>
 
@@ -90,7 +90,7 @@ minimum1
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -140,7 +140,7 @@ One of the following:
 
 <summary>
 
-actorCategory: optional stringor object {value, confidence, tlp }
+actorCategory: optional string or object { value, confidence, tlp }
 
 </summary>
 
@@ -154,7 +154,7 @@ string
 
 <summary>
 
-object {value, confidence, tlp }
+object { value, confidence, tlp }
 
 </summary>
 
@@ -174,7 +174,7 @@ minimum1
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -224,7 +224,7 @@ One of the following:
 
 <summary>
 
-aliases: optional array of object {value, confidence, tlp }
+aliases: optional array of object { value, confidence, tlp }
 
 Structured aliases ({ value, confidence 1-10, tlp }). Public: returned to all accounts with per-entry TLP filtering (entries with tlp: purple are removed for non-CFONE accounts).
 
@@ -246,7 +246,7 @@ minimum1
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -300,7 +300,7 @@ aliasGroupNamesInternal: optional array of string
 
 <summary>
 
-attributionOrganization: optional stringor object {value, confidence, tlp }
+attributionOrganization: optional string or object { value, confidence, tlp }
 
 </summary>
 
@@ -314,7 +314,7 @@ string
 
 <summary>
 
-object {value, confidence, tlp }
+object { value, confidence, tlp }
 
 </summary>
 
@@ -334,7 +334,7 @@ minimum1
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -414,7 +414,7 @@ externalReferenceLinks: optional array of string
 
 <summary>
 
-externalReferences: optional array of object {url, description }
+externalReferences: optional array of object { url, description }
 
 Structured external references ({ url, description }). Public: returned to all accounts.
 
@@ -436,7 +436,7 @@ description: optional string
 
 <summary>
 
-internalAliases: optional array of object {value, confidence, tlp }
+internalAliases: optional array of object { value, confidence, tlp }
 
 Owner-private structured aliases ({ value, confidence 1-10, tlp }). Returned to the owning account and omitted from shared-catalog non-owner responses.
 
@@ -458,7 +458,7 @@ minimum1
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -512,7 +512,7 @@ lastSeen: optional string
 
 <summary>
 
-motive: optional stringor object {value, confidence, tlp }
+motive: optional string or object { value, confidence, tlp }
 
 </summary>
 
@@ -526,7 +526,7 @@ string
 
 <summary>
 
-object {value, confidence, tlp }
+object { value, confidence, tlp }
 
 </summary>
 
@@ -546,7 +546,7 @@ minimum1
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -596,7 +596,7 @@ One of the following:
 
 <summary>
 
-opsecLevel: optional stringor object {value, confidence, tlp }
+opsecLevel: optional string or object { value, confidence, tlp }
 
 </summary>
 
@@ -610,7 +610,7 @@ string
 
 <summary>
 
-object {value, confidence, tlp }
+object { value, confidence, tlp }
 
 </summary>
 
@@ -630,7 +630,7 @@ minimum1
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -680,7 +680,7 @@ One of the following:
 
 <summary>
 
-originCountryISO: optional stringor object {value, confidence, tlp }
+originCountryISO: optional string or object { value, confidence, tlp }
 
 </summary>
 
@@ -694,7 +694,7 @@ string
 
 <summary>
 
-object {value, confidence, tlp }
+object { value, confidence, tlp }
 
 </summary>
 
@@ -714,7 +714,7 @@ minimum1
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -764,7 +764,7 @@ One of the following:
 
 <summary>
 
-priority: optional numberor object {value, confidence, tlp }
+priority: optional number or object { value, confidence, tlp }
 
 </summary>
 
@@ -778,7 +778,7 @@ number
 
 <summary>
 
-object {value, confidence, tlp }
+object { value, confidence, tlp }
 
 </summary>
 
@@ -798,7 +798,7 @@ minimum1
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -854,7 +854,7 @@ Structured metadata blob. Optional. When `categoryUuid` is given, validated agai
 
 <summary>
 
-sophisticationLevel: optional stringor object {value, confidence, tlp }
+sophisticationLevel: optional string or object { value, confidence, tlp }
 
 </summary>
 
@@ -868,7 +868,7 @@ string
 
 <summary>
 
-object {value, confidence, tlp }
+object { value, confidence, tlp }
 
 </summary>
 
@@ -888,7 +888,7 @@ minimum1
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -938,7 +938,7 @@ One of the following:
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 Tag-level TLP handling marking. Optional. Allowed values: red, amber, amber-strict, green, clear, purple, amber+strict.
 
@@ -996,7 +996,7 @@ activeDuration: optional string
 
 <summary>
 
-activeDuration\_annotated: optional object {value, tlp }
+activeDuration\_annotated: optional object { value, tlp }
 
 </summary>
 
@@ -1008,7 +1008,7 @@ value: string
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -1058,7 +1058,7 @@ actorCategory: optional string
 
 <summary>
 
-actorCategory\_annotated: optional object {value, confidence, tlp }
+actorCategory\_annotated: optional object { value, confidence, tlp }
 
 </summary>
 
@@ -1074,7 +1074,7 @@ confidence: optional number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -1120,7 +1120,7 @@ One of the following:
 
 <summary>
 
-aliases: optional array of object {value, confidence, tlp }
+aliases: optional array of object { value, confidence, tlp }
 
 Structured aliases ({ value, confidence 1-10, tlp }). Public: returned to all accounts with per-entry TLP filtering (entries with tlp: purple are removed for non-CFONE accounts).
 
@@ -1142,7 +1142,7 @@ minimum1
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -1200,7 +1200,7 @@ attributionOrganization: optional string
 
 <summary>
 
-attributionOrganization\_annotated: optional object {value, confidence, tlp }
+attributionOrganization\_annotated: optional object { value, confidence, tlp }
 
 </summary>
 
@@ -1216,7 +1216,7 @@ confidence: optional number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -1296,7 +1296,7 @@ externalReferenceLinks: optional array of string
 
 <summary>
 
-externalReferences: optional array of object {url, description }
+externalReferences: optional array of object { url, description }
 
 Structured external references ({ url, description }). Public: returned to all accounts.
 
@@ -1318,7 +1318,7 @@ description: optional string
 
 <summary>
 
-externalReferences\_annotated: optional array of object {value, tlp }
+externalReferences\_annotated: optional array of object { value, tlp }
 
 </summary>
 
@@ -1330,7 +1330,7 @@ value: string
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -1376,7 +1376,7 @@ One of the following:
 
 <summary>
 
-internalAliases: optional array of object {value, confidence, tlp }
+internalAliases: optional array of object { value, confidence, tlp }
 
 Owner-private structured aliases ({ value, confidence 1-10, tlp }). Returned to the owning account and omitted from shared-catalog non-owner responses.
 
@@ -1398,7 +1398,7 @@ minimum1
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -1456,7 +1456,7 @@ motive: optional string
 
 <summary>
 
-motive\_annotated: optional object {value, confidence, tlp }
+motive\_annotated: optional object { value, confidence, tlp }
 
 </summary>
 
@@ -1472,7 +1472,7 @@ confidence: optional number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -1522,7 +1522,7 @@ opsecLevel: optional string
 
 <summary>
 
-opsecLevel\_annotated: optional object {value, confidence, tlp }
+opsecLevel\_annotated: optional object { value, confidence, tlp }
 
 </summary>
 
@@ -1538,7 +1538,7 @@ confidence: optional number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -1590,7 +1590,7 @@ ISO country code (alpha-2 or alpha-3). Normalized to uppercase on read. Null whe
 
 <summary>
 
-originCountryISO\_annotated: optional object {value, confidence, tlp }
+originCountryISO\_annotated: optional object { value, confidence, tlp }
 
 </summary>
 
@@ -1606,7 +1606,7 @@ confidence: optional number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -1656,7 +1656,7 @@ priority: optional number
 
 <summary>
 
-priority\_annotated: optional object {value, tlp }
+priority\_annotated: optional object { value, tlp }
 
 </summary>
 
@@ -1668,7 +1668,7 @@ value: number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -1724,7 +1724,7 @@ sophisticationLevel: optional string
 
 <summary>
 
-sophisticationLevel\_annotated: optional object {value, confidence, tlp }
+sophisticationLevel\_annotated: optional object { value, confidence, tlp }
 
 </summary>
 
@@ -1740,7 +1740,7 @@ confidence: optional number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -1786,7 +1786,7 @@ One of the following:
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 Tag-level TLP handling marking.
 

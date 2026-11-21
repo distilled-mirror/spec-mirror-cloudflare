@@ -54,7 +54,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Queues Write``Workers Scripts Write`
+`Workers Admin``Queues Write``Workers Scripts Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -80,7 +80,7 @@ maxLength32
 
 <summary>
 
-jurisdiction: optional "eu"or "us"or "fedramp"
+jurisdiction: optional "eu" or "us" or "fedramp"
 
 </summary>
 
@@ -110,7 +110,7 @@ queue\_name: optional string
 
 <summary>
 
-settings: optional object {delivery\_delay, delivery\_paused, message\_retention\_period }
+settings: optional object { delivery\_delay, delivery\_paused, message\_retention\_period }
 
 </summary>
 
@@ -166,7 +166,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -208,7 +208,7 @@ One of the following:
 
 <summary>
 
-Worker object {consumer\_id, created\_on, dead\_letter\_queue, 4 more }
+Worker object { consumer\_id, created\_on, dead\_letter\_queue, 4 more }
 
 </summary>
 
@@ -246,7 +246,7 @@ Name of a Worker
 
 <summary>
 
-settings: optional object {batch\_size, max\_concurrency, max\_retries, 2 more }
+settings: optional object { batch\_size, max\_concurrency, max\_retries, 2 more }
 
 </summary>
 
@@ -296,7 +296,7 @@ type: optional "worker"
 
 <summary>
 
-HTTPPull object {consumer\_id, created\_on, dead\_letter\_queue, 3 more }
+HTTPPull object { consumer\_id, created\_on, dead\_letter\_queue, 3 more }
 
 </summary>
 
@@ -328,7 +328,7 @@ queue\_name: optional string
 
 <summary>
 
-settings: optional object {batch\_size, max\_retries, retry\_delay, visibility\_timeout\_ms }
+settings: optional object { batch\_size, max\_retries, retry\_delay, visibility\_timeout\_ms }
 
 </summary>
 
@@ -384,7 +384,7 @@ created\_on: optional string
 
 <summary>
 
-jurisdiction: optional "eu"or "us"or "fedramp"
+jurisdiction: optional "eu" or "us" or "fedramp"
 
 </summary>
 
@@ -414,7 +414,7 @@ modified\_on: optional string
 
 <summary>
 
-producers: optional array of object {script, type } or object {bucket\_name, type }
+producers: optional array of object { script, type } or object { bucket\_name, type }
 
 </summary>
 
@@ -424,7 +424,7 @@ One of the following:
 
 <summary>
 
-MqWorkerProducer object {script, type }
+MqWorkerProducer object { script, type }
 
 </summary>
 
@@ -444,7 +444,7 @@ type: optional "worker"
 
 <summary>
 
-MqR2Producer object {bucket\_name, type }
+MqR2Producer object { bucket\_name, type }
 
 </summary>
 
@@ -480,7 +480,7 @@ queue\_name: optional string
 
 <summary>
 
-settings: optional object {delivery\_delay, delivery\_paused, message\_retention\_period }
+settings: optional object { delivery\_delay, delivery\_paused, message\_retention\_period }
 
 </summary>
 

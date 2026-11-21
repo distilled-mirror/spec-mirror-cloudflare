@@ -70,7 +70,7 @@ GET/radar/attacks/layer3/summary/vertical
 
 <summary>
 
-SummaryBitrateResponse object {meta, summary\_0 }
+SummaryBitrateResponse object { meta, summary\_0 }
 
 </summary>
 
@@ -78,7 +78,7 @@ SummaryBitrateResponse object {meta, summary\_0 }
 
 <summary>
 
-meta: object {confidenceInfo, dateRange, lastUpdated, 2 more }
+meta: object { confidenceInfo, dateRange, lastUpdated, 2 more }
 
 Metadata for the results.
 
@@ -88,7 +88,7 @@ Metadata for the results.
 
 <summary>
 
-confidenceInfo: object {annotations, level }
+confidenceInfo: object { annotations, level }
 
 </summary>
 
@@ -96,7 +96,7 @@ confidenceInfo: object {annotations, level }
 
 <summary>
 
-annotations: array of object {dataSource, description, endDate, 5 more }
+annotations: array of object { dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -104,7 +104,7 @@ annotations: array of object {dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
+dataSource: "ALL" or "AI\_BOTS" or "AI\_GATEWAY" or 22 more
 
 Data source for annotations.
 
@@ -230,7 +230,7 @@ formatdate-time
 
 <summary>
 
-eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
+eventType: "GENERAL" or "OUTAGE" or "PARTIAL\_PROJECTION" or 2 more
 
 Event type for annotations.
 
@@ -302,7 +302,7 @@ Provides an indication of how much confidence Cloudflare has in the data.
 
 <summary>
 
-dateRange: array of object {endTime, startTime }
+dateRange: array of object { endTime, startTime }
 
 </summary>
 
@@ -338,7 +338,7 @@ formatdate-time
 
 <summary>
 
-normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
+normalization: "PERCENTAGE" or "MIN0\_MAX" or "MIN\_MAX" or 5 more
 
 Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
@@ -386,7 +386,7 @@ One of the following:
 
 <summary>
 
-units: array of object {name, value }
+units: array of object { name, value }
 
 Measurement units for the results.
 
@@ -412,7 +412,7 @@ value: string
 
 <summary>
 
-summary\_0: object {\_1\_GBPS\_TO\_10\_GBPS, \_10\_GBPS\_TO\_100\_GBPS, \_500\_MBPS\_TO\_1\_GBPS, 2 more }
+summary\_0: object { \_1\_GBPS\_TO\_10\_GBPS, \_10\_GBPS\_TO\_100\_GBPS, \_500\_MBPS\_TO\_1\_GBPS, 2 more }
 
 </summary>
 
@@ -458,7 +458,7 @@ A numeric string.
 
 <summary>
 
-SummaryDurationResponse object {meta, summary\_0 }
+SummaryDurationResponse object { meta, summary\_0 }
 
 </summary>
 
@@ -466,7 +466,7 @@ SummaryDurationResponse object {meta, summary\_0 }
 
 <summary>
 
-meta: object {confidenceInfo, dateRange, lastUpdated, 2 more }
+meta: object { confidenceInfo, dateRange, lastUpdated, 2 more }
 
 Metadata for the results.
 
@@ -476,7 +476,7 @@ Metadata for the results.
 
 <summary>
 
-confidenceInfo: object {annotations, level }
+confidenceInfo: object { annotations, level }
 
 </summary>
 
@@ -484,7 +484,7 @@ confidenceInfo: object {annotations, level }
 
 <summary>
 
-annotations: array of object {dataSource, description, endDate, 5 more }
+annotations: array of object { dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -492,7 +492,7 @@ annotations: array of object {dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
+dataSource: "ALL" or "AI\_BOTS" or "AI\_GATEWAY" or 22 more
 
 Data source for annotations.
 
@@ -618,7 +618,7 @@ formatdate-time
 
 <summary>
 
-eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
+eventType: "GENERAL" or "OUTAGE" or "PARTIAL\_PROJECTION" or 2 more
 
 Event type for annotations.
 
@@ -690,7 +690,7 @@ Provides an indication of how much confidence Cloudflare has in the data.
 
 <summary>
 
-dateRange: array of object {endTime, startTime }
+dateRange: array of object { endTime, startTime }
 
 </summary>
 
@@ -726,7 +726,7 @@ formatdate-time
 
 <summary>
 
-normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
+normalization: "PERCENTAGE" or "MIN0\_MAX" or "MIN\_MAX" or 5 more
 
 Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
@@ -774,7 +774,7 @@ One of the following:
 
 <summary>
 
-units: array of object {name, value }
+units: array of object { name, value }
 
 Measurement units for the results.
 
@@ -800,7 +800,7 @@ value: string
 
 <summary>
 
-summary\_0: object {\_1\_HOUR\_TO\_3\_HOURS, \_10\_MINS\_TO\_20\_MINS, \_20\_MINS\_TO\_40\_MINS, 3 more }
+summary\_0: object { \_1\_HOUR\_TO\_3\_HOURS, \_10\_MINS\_TO\_20\_MINS, \_20\_MINS\_TO\_40\_MINS, 3 more }
 
 </summary>
 
@@ -852,7 +852,7 @@ A numeric string.
 
 <summary>
 
-SummaryIPVersionResponse object {meta, summary\_0 }
+SummaryIPVersionResponse object { meta, summary\_0 }
 
 </summary>
 
@@ -860,7 +860,7 @@ SummaryIPVersionResponse object {meta, summary\_0 }
 
 <summary>
 
-meta: object {confidenceInfo, dateRange, lastUpdated, 2 more }
+meta: object { confidenceInfo, dateRange, lastUpdated, 2 more }
 
 Metadata for the results.
 
@@ -870,7 +870,7 @@ Metadata for the results.
 
 <summary>
 
-confidenceInfo: object {annotations, level }
+confidenceInfo: object { annotations, level }
 
 </summary>
 
@@ -878,7 +878,7 @@ confidenceInfo: object {annotations, level }
 
 <summary>
 
-annotations: array of object {dataSource, description, endDate, 5 more }
+annotations: array of object { dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -886,7 +886,7 @@ annotations: array of object {dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
+dataSource: "ALL" or "AI\_BOTS" or "AI\_GATEWAY" or 22 more
 
 Data source for annotations.
 
@@ -1012,7 +1012,7 @@ formatdate-time
 
 <summary>
 
-eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
+eventType: "GENERAL" or "OUTAGE" or "PARTIAL\_PROJECTION" or 2 more
 
 Event type for annotations.
 
@@ -1084,7 +1084,7 @@ Provides an indication of how much confidence Cloudflare has in the data.
 
 <summary>
 
-dateRange: array of object {endTime, startTime }
+dateRange: array of object { endTime, startTime }
 
 </summary>
 
@@ -1120,7 +1120,7 @@ formatdate-time
 
 <summary>
 
-normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
+normalization: "PERCENTAGE" or "MIN0\_MAX" or "MIN\_MAX" or 5 more
 
 Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
@@ -1168,7 +1168,7 @@ One of the following:
 
 <summary>
 
-units: array of object {name, value }
+units: array of object { name, value }
 
 Measurement units for the results.
 
@@ -1194,7 +1194,7 @@ value: string
 
 <summary>
 
-summary\_0: object {IPv4, IPv6 }
+summary\_0: object { IPv4, IPv6 }
 
 </summary>
 
@@ -1222,7 +1222,7 @@ A numeric string.
 
 <summary>
 
-SummaryProtocolResponse object {meta, summary\_0 }
+SummaryProtocolResponse object { meta, summary\_0 }
 
 </summary>
 
@@ -1230,7 +1230,7 @@ SummaryProtocolResponse object {meta, summary\_0 }
 
 <summary>
 
-meta: object {confidenceInfo, dateRange, lastUpdated, 2 more }
+meta: object { confidenceInfo, dateRange, lastUpdated, 2 more }
 
 Metadata for the results.
 
@@ -1240,7 +1240,7 @@ Metadata for the results.
 
 <summary>
 
-confidenceInfo: object {annotations, level }
+confidenceInfo: object { annotations, level }
 
 </summary>
 
@@ -1248,7 +1248,7 @@ confidenceInfo: object {annotations, level }
 
 <summary>
 
-annotations: array of object {dataSource, description, endDate, 5 more }
+annotations: array of object { dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -1256,7 +1256,7 @@ annotations: array of object {dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
+dataSource: "ALL" or "AI\_BOTS" or "AI\_GATEWAY" or 22 more
 
 Data source for annotations.
 
@@ -1382,7 +1382,7 @@ formatdate-time
 
 <summary>
 
-eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
+eventType: "GENERAL" or "OUTAGE" or "PARTIAL\_PROJECTION" or 2 more
 
 Event type for annotations.
 
@@ -1454,7 +1454,7 @@ Provides an indication of how much confidence Cloudflare has in the data.
 
 <summary>
 
-dateRange: array of object {endTime, startTime }
+dateRange: array of object { endTime, startTime }
 
 </summary>
 
@@ -1490,7 +1490,7 @@ formatdate-time
 
 <summary>
 
-normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
+normalization: "PERCENTAGE" or "MIN0\_MAX" or "MIN\_MAX" or 5 more
 
 Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
@@ -1538,7 +1538,7 @@ One of the following:
 
 <summary>
 
-units: array of object {name, value }
+units: array of object { name, value }
 
 Measurement units for the results.
 
@@ -1564,7 +1564,7 @@ value: string
 
 <summary>
 
-summary\_0: object {GRE, ICMP, TCP, UDP }
+summary\_0: object { GRE, ICMP, TCP, UDP }
 
 </summary>
 
@@ -1604,7 +1604,7 @@ A numeric string.
 
 <summary>
 
-SummaryVectorResponse object {meta, summary\_0 }
+SummaryVectorResponse object { meta, summary\_0 }
 
 </summary>
 
@@ -1612,7 +1612,7 @@ SummaryVectorResponse object {meta, summary\_0 }
 
 <summary>
 
-meta: object {confidenceInfo, dateRange, lastUpdated, 2 more }
+meta: object { confidenceInfo, dateRange, lastUpdated, 2 more }
 
 Metadata for the results.
 
@@ -1622,7 +1622,7 @@ Metadata for the results.
 
 <summary>
 
-confidenceInfo: object {annotations, level }
+confidenceInfo: object { annotations, level }
 
 </summary>
 
@@ -1630,7 +1630,7 @@ confidenceInfo: object {annotations, level }
 
 <summary>
 
-annotations: array of object {dataSource, description, endDate, 5 more }
+annotations: array of object { dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -1638,7 +1638,7 @@ annotations: array of object {dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
+dataSource: "ALL" or "AI\_BOTS" or "AI\_GATEWAY" or 22 more
 
 Data source for annotations.
 
@@ -1764,7 +1764,7 @@ formatdate-time
 
 <summary>
 
-eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
+eventType: "GENERAL" or "OUTAGE" or "PARTIAL\_PROJECTION" or 2 more
 
 Event type for annotations.
 
@@ -1836,7 +1836,7 @@ Provides an indication of how much confidence Cloudflare has in the data.
 
 <summary>
 
-dateRange: array of object {endTime, startTime }
+dateRange: array of object { endTime, startTime }
 
 </summary>
 
@@ -1872,7 +1872,7 @@ formatdate-time
 
 <summary>
 
-normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
+normalization: "PERCENTAGE" or "MIN0\_MAX" or "MIN\_MAX" or 5 more
 
 Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
@@ -1920,7 +1920,7 @@ One of the following:
 
 <summary>
 
-units: array of object {name, value }
+units: array of object { name, value }
 
 Measurement units for the results.
 
@@ -1954,7 +1954,7 @@ summary\_0: map\[string]
 
 <summary>
 
-SummaryIndustryResponse object {meta, summary\_0 }
+SummaryIndustryResponse object { meta, summary\_0 }
 
 </summary>
 
@@ -1962,7 +1962,7 @@ SummaryIndustryResponse object {meta, summary\_0 }
 
 <summary>
 
-meta: object {confidenceInfo, dateRange, lastUpdated, 2 more }
+meta: object { confidenceInfo, dateRange, lastUpdated, 2 more }
 
 Metadata for the results.
 
@@ -1972,7 +1972,7 @@ Metadata for the results.
 
 <summary>
 
-confidenceInfo: object {annotations, level }
+confidenceInfo: object { annotations, level }
 
 </summary>
 
@@ -1980,7 +1980,7 @@ confidenceInfo: object {annotations, level }
 
 <summary>
 
-annotations: array of object {dataSource, description, endDate, 5 more }
+annotations: array of object { dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -1988,7 +1988,7 @@ annotations: array of object {dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
+dataSource: "ALL" or "AI\_BOTS" or "AI\_GATEWAY" or 22 more
 
 Data source for annotations.
 
@@ -2114,7 +2114,7 @@ formatdate-time
 
 <summary>
 
-eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
+eventType: "GENERAL" or "OUTAGE" or "PARTIAL\_PROJECTION" or 2 more
 
 Event type for annotations.
 
@@ -2186,7 +2186,7 @@ Provides an indication of how much confidence Cloudflare has in the data.
 
 <summary>
 
-dateRange: array of object {endTime, startTime }
+dateRange: array of object { endTime, startTime }
 
 </summary>
 
@@ -2222,7 +2222,7 @@ formatdate-time
 
 <summary>
 
-normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
+normalization: "PERCENTAGE" or "MIN0\_MAX" or "MIN\_MAX" or 5 more
 
 Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
@@ -2270,7 +2270,7 @@ One of the following:
 
 <summary>
 
-units: array of object {name, value }
+units: array of object { name, value }
 
 Measurement units for the results.
 
@@ -2304,7 +2304,7 @@ summary\_0: map\[string]
 
 <summary>
 
-SummaryVerticalResponse object {meta, summary\_0 }
+SummaryVerticalResponse object { meta, summary\_0 }
 
 </summary>
 
@@ -2312,7 +2312,7 @@ SummaryVerticalResponse object {meta, summary\_0 }
 
 <summary>
 
-meta: object {confidenceInfo, dateRange, lastUpdated, 2 more }
+meta: object { confidenceInfo, dateRange, lastUpdated, 2 more }
 
 Metadata for the results.
 
@@ -2322,7 +2322,7 @@ Metadata for the results.
 
 <summary>
 
-confidenceInfo: object {annotations, level }
+confidenceInfo: object { annotations, level }
 
 </summary>
 
@@ -2330,7 +2330,7 @@ confidenceInfo: object {annotations, level }
 
 <summary>
 
-annotations: array of object {dataSource, description, endDate, 5 more }
+annotations: array of object { dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -2338,7 +2338,7 @@ annotations: array of object {dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
+dataSource: "ALL" or "AI\_BOTS" or "AI\_GATEWAY" or 22 more
 
 Data source for annotations.
 
@@ -2464,7 +2464,7 @@ formatdate-time
 
 <summary>
 
-eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
+eventType: "GENERAL" or "OUTAGE" or "PARTIAL\_PROJECTION" or 2 more
 
 Event type for annotations.
 
@@ -2536,7 +2536,7 @@ Provides an indication of how much confidence Cloudflare has in the data.
 
 <summary>
 
-dateRange: array of object {endTime, startTime }
+dateRange: array of object { endTime, startTime }
 
 </summary>
 
@@ -2572,7 +2572,7 @@ formatdate-time
 
 <summary>
 
-normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
+normalization: "PERCENTAGE" or "MIN0\_MAX" or "MIN\_MAX" or 5 more
 
 Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
@@ -2620,7 +2620,7 @@ One of the following:
 
 <summary>
 
-units: array of object {name, value }
+units: array of object { name, value }
 
 Measurement units for the results.
 

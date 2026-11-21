@@ -70,7 +70,7 @@ account\_id: string
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -92,7 +92,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -112,7 +112,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -134,7 +134,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -154,7 +154,7 @@ pointer: optional string
 
 <summary>
 
-result: array of object {created\_at, domain, kind, public\_key }
+result: array of object { created\_at, domain, kind, public\_key }
 
 </summary>
 
@@ -174,7 +174,7 @@ A string representation of a domain name. See RFC-1034 (<a href="https://www.iet
 
 <summary>
 
-kind: optional "ECR"or "DockerHub"or "GAR"or "default"
+kind: optional "ECR" or "DockerHub" or "GAR" or "default"
 
 The type of registry that is being configured.
 

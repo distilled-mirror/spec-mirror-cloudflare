@@ -58,7 +58,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Workers R2 Data Catalog Write``Workers R2 Data Catalog Read`
+`Workers R2 SQL Read``Workers R2 Data Catalog Write``Workers R2 Data Catalog Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -120,7 +120,7 @@ Whether to include namespace UUIDs in the response. Set to true to receive the n
 
 <summary>
 
-errors: array of object {code, message }
+errors: array of object { code, message }
 
 Contains errors if the API call was unsuccessful.
 
@@ -146,7 +146,7 @@ Describes the error.
 
 <summary>
 
-messages: array of object {code, message }
+messages: array of object { code, message }
 
 Contains informational messages.
 
@@ -178,7 +178,7 @@ Indicates whether the API call was successful.
 
 <summary>
 
-result: optional object {namespaces, details, namespace\_uuids, next\_page\_token }
+result: optional object { namespaces, details, namespace\_uuids, next\_page\_token }
 
 Contains the list of namespaces with optional pagination.
 
@@ -194,7 +194,7 @@ Lists namespaces in the catalog.
 
 <summary>
 
-details: optional array of object {namespace, namespace\_uuid, created\_at, updated\_at }
+details: optional array of object { namespace, namespace\_uuid, created\_at, updated\_at }
 
 Contains detailed metadata for each namespace when return\_details is true. Each object includes the namespace, UUID, and timestamps.
 

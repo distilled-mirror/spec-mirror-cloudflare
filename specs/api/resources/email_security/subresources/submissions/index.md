@@ -32,7 +32,7 @@ POST/accounts/{account\_id}/email-security/submissions
 
 <summary>
 
-SubmissionListResponse object {requested\_at, submission\_id, customer\_status, 15 more }
+SubmissionListResponse object { requested\_at, submission\_id, customer\_status, 15 more }
 
 </summary>
 
@@ -52,7 +52,7 @@ submission\_id: string
 
 <summary>
 
-customer\_status: optional "escalated"or "reviewed"or "unreviewed"
+customer\_status: optional "escalated" or "reviewed" or "unreviewed"
 
 </summary>
 
@@ -78,7 +78,7 @@ One of the following:
 
 <summary>
 
-escalated\_as: optional "MALICIOUS"or "SUSPICIOUS"or "SPOOF"or 3 more
+escalated\_as: optional "MALICIOUS" or "SUSPICIOUS" or "SPOOF" or 3 more
 
 The disposition a message is submitted to have.
 
@@ -138,7 +138,7 @@ Submission ID of the escalated team submission, when this user submission was es
 
 <summary>
 
-original\_disposition: optional "MALICIOUS"or "SUSPICIOUS"or "SPOOF"or 3 more
+original\_disposition: optional "MALICIOUS" or "SUSPICIOUS" or "SPOOF" or 3 more
 
 The disposition a message is submitted to have.
 
@@ -196,7 +196,7 @@ Processing outcome of the submission.
 
 <summary>
 
-outcome\_disposition: optional "MALICIOUS"or "SUSPICIOUS"or "SPOOF"or 3 more
+outcome\_disposition: optional "MALICIOUS" or "SUSPICIOUS" or "SPOOF" or 3 more
 
 The disposition a message is submitted to have.
 
@@ -242,7 +242,7 @@ Email address of the user who requested the submission.
 
 <summary>
 
-requested\_disposition: optional "MALICIOUS"or "SUSPICIOUS"or "SPOOF"or 3 more
+requested\_disposition: optional "MALICIOUS" or "SUSPICIOUS" or "SPOOF" or 3 more
 
 The disposition a message is submitted to have.
 
@@ -302,7 +302,7 @@ Subject line of the submitted message.
 
 <summary>
 
-type: optional "Team"or "User"
+type: optional "Team" or "User"
 
 Indicates whether a team member or an end user created the submission.
 
@@ -330,7 +330,7 @@ One of the following:
 
 <summary>
 
-SubmissionCreateResponse object {results }
+SubmissionCreateResponse object { results }
 
 </summary>
 
@@ -338,7 +338,7 @@ SubmissionCreateResponse object {results }
 
 <summary>
 
-results: array of object {id, accepted, error }
+results: array of object { id, accepted, error }
 
 </summary>
 

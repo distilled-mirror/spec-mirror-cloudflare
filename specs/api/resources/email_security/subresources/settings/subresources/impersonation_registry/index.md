@@ -46,7 +46,7 @@ DELETE/accounts/{account\_id}/email-security/settings/impersonation\_registry/{i
 
 <summary>
 
-ImpersonationRegistryListResponse object {id, comments, created\_at, 9 more }
+ImpersonationRegistryListResponse object { id, comments, created\_at, 9 more }
 
 An impersonation registry entry.
 
@@ -132,7 +132,7 @@ maxLength1024
 
 <summary>
 
-provenance: optional "A1S\_INTERNAL"or "SNOOPY-CASB\_OFFICE\_365"or "SNOOPY-OFFICE\_365"or "SNOOPY-GOOGLE\_DIRECTORY"
+provenance: optional "A1S\_INTERNAL" or "SNOOPY-CASB\_OFFICE\_365" or "SNOOPY-OFFICE\_365" or "SNOOPY-GOOGLE\_DIRECTORY"
 
 Source the entry was created from.
 
@@ -168,7 +168,7 @@ One of the following:
 
 <summary>
 
-ImpersonationRegistryGetResponse object {id, comments, created\_at, 9 more }
+ImpersonationRegistryGetResponse object { id, comments, created\_at, 9 more }
 
 An impersonation registry entry.
 
@@ -254,7 +254,7 @@ maxLength1024
 
 <summary>
 
-provenance: optional "A1S\_INTERNAL"or "SNOOPY-CASB\_OFFICE\_365"or "SNOOPY-OFFICE\_365"or "SNOOPY-GOOGLE\_DIRECTORY"
+provenance: optional "A1S\_INTERNAL" or "SNOOPY-CASB\_OFFICE\_365" or "SNOOPY-OFFICE\_365" or "SNOOPY-GOOGLE\_DIRECTORY"
 
 Source the entry was created from.
 
@@ -290,7 +290,7 @@ One of the following:
 
 <summary>
 
-ImpersonationRegistryCreateResponse object {id, comments, created\_at, 9 more }
+ImpersonationRegistryCreateResponse object { id, comments, created\_at, 9 more }
 
 An impersonation registry entry.
 
@@ -376,7 +376,7 @@ maxLength1024
 
 <summary>
 
-provenance: optional "A1S\_INTERNAL"or "SNOOPY-CASB\_OFFICE\_365"or "SNOOPY-OFFICE\_365"or "SNOOPY-GOOGLE\_DIRECTORY"
+provenance: optional "A1S\_INTERNAL" or "SNOOPY-CASB\_OFFICE\_365" or "SNOOPY-OFFICE\_365" or "SNOOPY-GOOGLE\_DIRECTORY"
 
 Source the entry was created from.
 
@@ -412,7 +412,7 @@ One of the following:
 
 <summary>
 
-ImpersonationRegistryEditResponse object {id, comments, created\_at, 9 more }
+ImpersonationRegistryEditResponse object { id, comments, created\_at, 9 more }
 
 An impersonation registry entry.
 
@@ -498,7 +498,7 @@ maxLength1024
 
 <summary>
 
-provenance: optional "A1S\_INTERNAL"or "SNOOPY-CASB\_OFFICE\_365"or "SNOOPY-OFFICE\_365"or "SNOOPY-GOOGLE\_DIRECTORY"
+provenance: optional "A1S\_INTERNAL" or "SNOOPY-CASB\_OFFICE\_365" or "SNOOPY-OFFICE\_365" or "SNOOPY-GOOGLE\_DIRECTORY"
 
 Source the entry was created from.
 
@@ -534,7 +534,7 @@ One of the following:
 
 <summary>
 
-ImpersonationRegistryDeleteResponse object {id }
+ImpersonationRegistryDeleteResponse object { id }
 
 </summary>
 

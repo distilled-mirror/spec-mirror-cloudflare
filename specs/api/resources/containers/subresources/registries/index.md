@@ -36,7 +36,7 @@ DELETE/accounts/{account\_id}/containers/registries/{domain}
 
 <summary>
 
-RegistryListResponse object {created\_at, domain, kind, public\_key }
+RegistryListResponse object { created\_at, domain, kind, public\_key }
 
 An image registry added in a customer account.
 
@@ -58,7 +58,7 @@ A string representation of a domain name. See RFC-1034 (<a href="https://www.iet
 
 <summary>
 
-kind: optional "ECR"or "DockerHub"or "GAR"or "default"
+kind: optional "ECR" or "DockerHub" or "GAR" or "default"
 
 The type of registry that is being configured.
 
@@ -100,7 +100,7 @@ Public component of the registry credentials. For managed registries this is a b
 
 <summary>
 
-RegistryCreateResponse object {created\_at, domain, kind, public\_key }
+RegistryCreateResponse object { created\_at, domain, kind, public\_key }
 
 An image registry added in a customer account.
 
@@ -122,7 +122,7 @@ A string representation of a domain name. See RFC-1034 (<a href="https://www.iet
 
 <summary>
 
-kind: optional "ECR"or "DockerHub"or "GAR"or "default"
+kind: optional "ECR" or "DockerHub" or "GAR" or "default"
 
 The type of registry that is being configured.
 
@@ -164,7 +164,7 @@ Public component of the registry credentials. For managed registries this is a b
 
 <summary>
 
-RegistryDeleteResponse object {domain }
+RegistryDeleteResponse object { domain }
 
 Result of deleting an image registry from a Containers account.
 
@@ -192,7 +192,7 @@ POST/accounts/{account\_id}/containers/registries/{domain}/credentials
 
 <summary>
 
-CredentialGenerateResponse object {account\_id, password, registry\_host, username }
+CredentialGenerateResponse object { account\_id, password, registry\_host, username }
 
 Credentials returned for an authenticated registry configured on a Containers account.
 

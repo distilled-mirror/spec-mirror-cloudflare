@@ -30,7 +30,7 @@ GET/{accounts\_or\_zones}/{account\_or\_zone\_id}/security-center/insights/type
 
 <summary>
 
-TypeGetResponse = array of object {count, value }
+TypeGetResponse = array of object { count, value }
 
 </summary>
 

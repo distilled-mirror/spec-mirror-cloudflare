@@ -58,7 +58,7 @@ Comma-separated list of additional information that should be included in the de
 
 <summary>
 
-errors: array of object {code, message }
+errors: array of object { code, message }
 
 </summary>
 
@@ -78,7 +78,7 @@ message: string
 
 <summary>
 
-messages: array of object {code, message }
+messages: array of object { code, message }
 
 </summary>
 
@@ -98,7 +98,7 @@ message: string
 
 <summary>
 
-result: object {id, active\_registrations, created\_at, 18 more }
+result: object { id, active\_registrations, created\_at, 18 more }
 
 A WARP Device.
 
@@ -174,7 +174,7 @@ A string that uniquely identifies the hardware or virtual machine (VM).
 
 <summary>
 
-last\_seen\_registration: optional object {policy }
+last\_seen\_registration: optional object { policy }
 
 The last seen registration for the device.
 
@@ -184,7 +184,7 @@ The last seen registration for the device.
 
 <summary>
 
-policy: optional object {id, default, deleted, 2 more }
+policy: optional object { id, default, deleted, 2 more }
 
 A summary of the device profile evaluated for the registration.
 
@@ -232,7 +232,7 @@ The RFC3339 timestamp of when the device settings profile last changed for the r
 
 <summary>
 
-last\_seen\_user: optional object {id, email, name }
+last\_seen\_user: optional object { id, email, name }
 
 The last user to use the WARP device.
 

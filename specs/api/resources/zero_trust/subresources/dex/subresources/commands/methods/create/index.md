@@ -88,7 +88,7 @@ maxLength32
 
 <summary>
 
-commands: array of object {device\_id, type, user\_email, 2 more }
+commands: array of object { device\_id, type, user\_email, 2 more }
 
 List of device-level commands to execute
 
@@ -104,7 +104,7 @@ Unique identifier for the physical device
 
 <summary>
 
-type: "pcap"or "speed-test"or "warp-diag"
+type: "pcap" or "speed-test" or "warp-diag"
 
 Type of command to execute on the device
 
@@ -138,7 +138,7 @@ Email tied to the device
 
 <summary>
 
-args: optional object {"test-all-routes" } or object {"max-file-size-mb", "packet-size-bytes", "time-limit-min" } or object {interfaces }
+args: optional object { "test-all-routes" } or object { "max-file-size-mb", "packet-size-bytes", "time-limit-min" } or object { interfaces }
 
 Command arguments. Allowed fields depend on <code>type</code>.
 
@@ -150,7 +150,7 @@ One of the following:
 
 <summary>
 
-WARPDiagArgs object {"test-all-routes" }
+WARPDiagArgs object { "test-all-routes" }
 
 </summary>
 
@@ -168,7 +168,7 @@ Test an IP address from all included or excluded ranges. Essentially the same as
 
 <summary>
 
-PCAPArgs object {"max-file-size-mb", "packet-size-bytes", "time-limit-min" }
+PCAPArgs object { "max-file-size-mb", "packet-size-bytes", "time-limit-min" }
 
 </summary>
 
@@ -204,7 +204,7 @@ minimum1
 
 <summary>
 
-SpeedTestArgs object {interfaces }
+SpeedTestArgs object { interfaces }
 
 </summary>
 
@@ -212,7 +212,7 @@ SpeedTestArgs object {interfaces }
 
 <summary>
 
-interfaces: optional array of "default"or "tunnel"
+interfaces: optional array of "default" or "tunnel"
 
 List of interfaces to run the speed test on
 
@@ -256,7 +256,7 @@ Unique identifier for the device registration. Required for multi-user devices t
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -278,7 +278,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -298,7 +298,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -320,7 +320,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -346,7 +346,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {commands }
+result: optional object { commands }
 
 </summary>
 
@@ -354,7 +354,7 @@ result: optional object {commands }
 
 <summary>
 
-commands: optional array of object {id, args, device\_id, 3 more }
+commands: optional array of object { id, args, device\_id, 3 more }
 
 List of created commands
 
@@ -388,7 +388,7 @@ Unique identifier for the device registration
 
 <summary>
 
-status: optional "PENDING\_EXEC"or "PENDING\_UPLOAD"or "SUCCESS"or "FAILED"
+status: optional "PENDING\_EXEC" or "PENDING\_UPLOAD" or "SUCCESS" or "FAILED"
 
 Current status of the command
 
@@ -434,7 +434,7 @@ Type of the command (e.g., “pcap”, “speed-test”, or “warp-diag”)
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

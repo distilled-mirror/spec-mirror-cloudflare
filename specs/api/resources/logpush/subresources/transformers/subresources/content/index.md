@@ -30,7 +30,7 @@ GET/accounts/{account\_id}/logpush/transformers/{transformer\_id}/content
 
 <summary>
 
-ContentGetResponse object {content }
+ContentGetResponse object { content }
 
 </summary>
 

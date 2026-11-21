@@ -44,7 +44,7 @@ DELETE/accounts/{account\_id}/rum/site\_info/{site\_id}
 
 <summary>
 
-Site object {auto\_install, created, rules, 4 more }
+Site object { auto\_install, created, rules, 4 more }
 
 </summary>
 
@@ -118,7 +118,7 @@ priority: optional number
 
 <summary>
 
-ruleset: optional object {id, enabled, zone\_name, zone\_tag }
+ruleset: optional object { id, enabled, zone\_name, zone\_tag }
 
 </summary>
 
@@ -174,7 +174,7 @@ Encoded JavaScript snippet.
 
 <summary>
 
-SiteInfoDeleteResponse object {site\_tag }
+SiteInfoDeleteResponse object { site\_tag }
 
 </summary>
 
@@ -216,7 +216,7 @@ POST/accounts/{account\_id}/rum/v2/{ruleset\_id}/rules
 
 <summary>
 
-RUMRule object {id, created, host, 4 more }
+RUMRule object { id, created, host, 4 more }
 
 </summary>
 
@@ -268,7 +268,7 @@ priority: optional number
 
 <summary>
 
-RuleListResponse object {rules, ruleset }
+RuleListResponse object { rules, ruleset }
 
 </summary>
 
@@ -330,7 +330,7 @@ priority: optional number
 
 <summary>
 
-ruleset: optional object {id, enabled, zone\_name, zone\_tag }
+ruleset: optional object { id, enabled, zone\_name, zone\_tag }
 
 </summary>
 
@@ -368,7 +368,7 @@ The zone identifier.
 
 <summary>
 
-RuleDeleteResponse object {id }
+RuleDeleteResponse object { id }
 
 </summary>
 
@@ -386,7 +386,7 @@ The Web Analytics rule identifier.
 
 <summary>
 
-RuleBulkCreateResponse object {rules, ruleset }
+RuleBulkCreateResponse object { rules, ruleset }
 
 </summary>
 
@@ -448,7 +448,7 @@ priority: optional number
 
 <summary>
 
-ruleset: optional object {id, enabled, zone\_name, zone\_tag }
+ruleset: optional object { id, enabled, zone\_name, zone\_tag }
 
 </summary>
 

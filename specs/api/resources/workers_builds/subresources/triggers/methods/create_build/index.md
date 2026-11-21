@@ -92,7 +92,7 @@ Git commit hash (required if branch not provided)
 
 <summary>
 
-seed\_repo: optional object {owner, provider, repository, 3 more }
+seed\_repo: optional object { owner, provider, repository, 3 more }
 
 Optional repository and file overrides used to seed this build.
 
@@ -108,7 +108,7 @@ Repository owner or namespace.
 
 <summary>
 
-provider: "github"or "gitlab"
+provider: "github" or "gitlab"
 
 Source control provider for the seed repository.
 
@@ -144,7 +144,7 @@ Repository branch to seed.
 
 <summary>
 
-files: optional array of object {content, filename, isBase64, replace }
+files: optional array of object { content, filename, isBase64, replace }
 
 Files to add or replace for this build. Maximum 2.
 
@@ -190,7 +190,7 @@ Path within the repository to seed.
 
 <summary>
 
-errors: array of object {message, code }
+errors: array of object { message, code }
 
 </summary>
 
@@ -214,7 +214,7 @@ messages: array of string
 
 <summary>
 
-result: object {build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more } or object {build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more }
+result: object { build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more } or object { build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more }
 
 </summary>
 
@@ -224,7 +224,7 @@ One of the following:
 
 <summary>
 
-object {build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more }
+object { build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more }
 
 </summary>
 
@@ -232,7 +232,7 @@ object {build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more }
 
 <summary>
 
-build\_outcome: optional "success"or "fail"or "skipped"or 2 more
+build\_outcome: optional "success" or "fail" or "skipped" or 2 more
 
 </summary>
 
@@ -266,7 +266,7 @@ One of the following:
 
 <summary>
 
-build\_trigger\_metadata: optional object {author, branch, build\_command, 11 more }
+build\_trigger\_metadata: optional object { author, branch, build\_command, 11 more }
 
 </summary>
 
@@ -302,7 +302,7 @@ formatuuid
 
 <summary>
 
-build\_trigger\_source: optional "push"or "pull\_request"or "manual"or "api"
+build\_trigger\_source: optional "push" or "pull\_request" or "manual" or "api"
 
 </summary>
 
@@ -358,7 +358,7 @@ Human-readable name of the account or namespace that owns the repository.
 
 <summary>
 
-provider\_type: optional "github"or "gitlab"or "gitlab\_internal"or "origin"
+provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
 
 Source control provider.
 
@@ -420,7 +420,7 @@ formatdate-time
 
 <summary>
 
-deploy\_hook: optional object {deploy\_hook\_name }
+deploy\_hook: optional object { deploy\_hook\_name }
 
 </summary>
 
@@ -462,7 +462,7 @@ formaturi
 
 <summary>
 
-pull\_request: optional object {closed\_on, created\_on, pull\_request\_url }
+pull\_request: optional object { closed\_on, created\_on, pull\_request\_url }
 
 </summary>
 
@@ -498,7 +498,7 @@ formatdate-time
 
 <summary>
 
-status: optional "queued"or "initializing"or "running"or "stopped"
+status: optional "queued" or "initializing" or "running" or "stopped"
 
 </summary>
 
@@ -534,7 +534,7 @@ formatdate-time
 
 <summary>
 
-trigger: optional object {branch\_excludes, branch\_includes, build\_caching\_enabled, 12 more }
+trigger: optional object { branch\_excludes, branch\_includes, build\_caching\_enabled, 12 more }
 
 Trigger information without build\_token\_uuid
 
@@ -610,7 +610,7 @@ Path patterns that can start builds.
 
 <summary>
 
-repo\_connection: optional object {created\_on, deleted\_on, modified\_on, 6 more }
+repo\_connection: optional object { created\_on, deleted\_on, modified\_on, 6 more }
 
 </summary>
 
@@ -648,7 +648,7 @@ Human-readable name of the account or namespace that owns the repository.
 
 <summary>
 
-provider\_type: optional "github"or "gitlab"or "gitlab\_internal"or "origin"
+provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
 
 Source control provider.
 
@@ -732,7 +732,7 @@ formatuuid
 
 <summary>
 
-object {build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more }
+object { build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more }
 
 </summary>
 
@@ -740,7 +740,7 @@ object {build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more }
 
 <summary>
 
-build\_outcome: optional "success"or "fail"or "skipped"or 2 more
+build\_outcome: optional "success" or "fail" or "skipped" or 2 more
 
 </summary>
 
@@ -774,7 +774,7 @@ One of the following:
 
 <summary>
 
-build\_trigger\_metadata: optional object {author, branch, build\_command, 11 more }
+build\_trigger\_metadata: optional object { author, branch, build\_command, 11 more }
 
 </summary>
 
@@ -810,7 +810,7 @@ formatuuid
 
 <summary>
 
-build\_trigger\_source: optional "push"or "pull\_request"or "manual"or "api"
+build\_trigger\_source: optional "push" or "pull\_request" or "manual" or "api"
 
 </summary>
 
@@ -866,7 +866,7 @@ Human-readable name of the account or namespace that owns the repository.
 
 <summary>
 
-provider\_type: optional "github"or "gitlab"or "gitlab\_internal"or "origin"
+provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
 
 Source control provider.
 
@@ -928,7 +928,7 @@ formatdate-time
 
 <summary>
 
-deploy\_hook: optional object {deploy\_hook\_name }
+deploy\_hook: optional object { deploy\_hook\_name }
 
 </summary>
 
@@ -970,7 +970,7 @@ formaturi
 
 <summary>
 
-pull\_request: optional object {closed\_on, created\_on, pull\_request\_url }
+pull\_request: optional object { closed\_on, created\_on, pull\_request\_url }
 
 </summary>
 
@@ -1006,7 +1006,7 @@ formatdate-time
 
 <summary>
 
-status: optional "queued"or "initializing"or "running"or "stopped"
+status: optional "queued" or "initializing" or "running" or "stopped"
 
 </summary>
 
@@ -1042,7 +1042,7 @@ formatdate-time
 
 <summary>
 
-trigger: optional object {branch\_excludes, branch\_includes, build\_caching\_enabled, 12 more }
+trigger: optional object { branch\_excludes, branch\_includes, build\_caching\_enabled, 12 more }
 
 Trigger information without build\_token\_uuid
 
@@ -1118,7 +1118,7 @@ Path patterns that can start builds.
 
 <summary>
 
-repo\_connection: optional object {created\_on, deleted\_on, modified\_on, 6 more }
+repo\_connection: optional object { created\_on, deleted\_on, modified\_on, 6 more }
 
 </summary>
 
@@ -1156,7 +1156,7 @@ Human-readable name of the account or namespace that owns the repository.
 
 <summary>
 
-provider\_type: optional "github"or "gitlab"or "gitlab\_internal"or "origin"
+provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
 
 Source control provider.
 
@@ -1248,7 +1248,7 @@ success: boolean
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

@@ -74,7 +74,7 @@ account\_id: string
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -96,7 +96,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -116,7 +116,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -138,7 +138,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -164,7 +164,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {addin\_identifier\_token, auth\_requirements }
+result: optional object { addin\_identifier\_token, auth\_requirements }
 
 </summary>
 
@@ -178,7 +178,7 @@ formatuuid
 
 <summary>
 
-auth\_requirements: object {allowed\_microsoft\_organizations, type } or object {type }
+auth\_requirements: object { allowed\_microsoft\_organizations, type } or object { type }
 
 </summary>
 
@@ -188,7 +188,7 @@ One of the following:
 
 <summary>
 
-object {allowed\_microsoft\_organizations, type }
+object { allowed\_microsoft\_organizations, type }
 
 </summary>
 
@@ -208,7 +208,7 @@ type: "Org"
 
 <summary>
 
-Type object {type }
+Type object { type }
 
 </summary>
 

@@ -56,6 +56,10 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 </details>
 
+##### Accepted Permissions (at least one required)
+
+`Zero Trust Read``Zero Trust Write`
+
 ##### P ath ParametersExpand Collapse
 
 account\_id: string
@@ -70,7 +74,7 @@ Specify the Cloudflare account identifier.
 
 <summary>
 
-direction: optional "asc"or "desc"
+direction: optional "asc" or "desc"
 
 Sort direction. Applies to the field named in <code>order_by</code>; when <code>order_by</code> is omitted it applies to the default <code>created_at</code> ordering. When <code>direction</code> is omitted the default is field-specific: explicitly choosing <code>created_at</code> or <code>updated_at</code> defaults to descending (newest first); <code>name</code> and <code>item_count</code> default to ascending; and the default <code>created_at</code> ordering used when <code>order_by</code> is omitted is ascending (for backwards compatibility).
 
@@ -112,7 +116,7 @@ Each entry must match one of the per-field patterns below: the field must be one
 
 <summary>
 
-order\_by: optional "name"or "created\_at"or "updated\_at"or "item\_count"
+order\_by: optional "name" or "created\_at" or "updated\_at" or "item\_count"
 
 Field to sort the returned lists by. When omitted, results are ordered by <code>created_at</code> in ascending order (i.e. creation order) for backwards compatibility. Supported values:
 
@@ -155,7 +159,7 @@ Case-insensitive substring match on the list name or description. When combined 
 
 <summary>
 
-type: optional "SERIAL"or "URL"or "DOMAIN"or 6 more
+type: optional "SERIAL" or "URL" or "DOMAIN" or 6 more
 
 Specify the list type.
 
@@ -231,7 +235,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -273,7 +277,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -373,7 +377,7 @@ Specify the list name.
 
 <summary>
 
-type: optional "SERIAL"or "URL"or "DOMAIN"or 6 more
+type: optional "SERIAL" or "URL" or "DOMAIN" or 6 more
 
 Specify the list type.
 
@@ -435,7 +439,7 @@ formatdate-time
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object { count, page, per\_page, total\_count }
 
 </summary>
 

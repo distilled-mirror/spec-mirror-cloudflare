@@ -120,7 +120,7 @@ The identifier for the Custom CSR that was used.
 
 <summary>
 
-deploy: optional "staging"or "production"
+deploy: optional "staging" or "production"
 
 The environment to deploy the certificate to, defaults to production.
 
@@ -154,7 +154,7 @@ Specify the region where your private key can be held locally for optimal TLS pe
 
 <summary>
 
-label: optional "us"or "eu"or "highest\_security"
+label: optional "us" or "eu" or "highest\_security"
 
 </summary>
 
@@ -198,7 +198,7 @@ The zone’s private key. Not required if custom\_csr\_id is provided, in which 
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -220,7 +220,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -240,7 +240,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -262,7 +262,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -364,7 +364,7 @@ Specify the region where your private key can be held locally for optimal TLS pe
 
 <summary>
 
-label: optional "us"or "eu"or "highest\_security"
+label: optional "us" or "eu" or "highest\_security"
 
 </summary>
 
@@ -474,7 +474,7 @@ maxLength65535
 
 <summary>
 
-status: "active"or "deleted"
+status: "active" or "deleted"
 
 Status of the Keyless SSL.
 
@@ -556,7 +556,7 @@ The type of hash used for the certificate.
 
 <summary>
 
-status: optional "active"or "expired"or "deleted"or 2 more
+status: optional "active" or "expired" or "deleted" or 2 more
 
 Status of the zone’s custom SSL.
 

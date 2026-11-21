@@ -28,7 +28,7 @@ GET/accounts/{account\_id}/alerting/v3/available\_alerts
 
 <summary>
 
-AvailableAlertListResponse = map\[array of object {description, display\_name, filter\_options, type } ]
+AvailableAlertListResponse = map\[array of object { description, display\_name, filter\_options, type } ]
 
 </summary>
 
@@ -74,7 +74,7 @@ GET/accounts/{account\_id}/alerting/v3/destinations/eligible
 
 <summary>
 
-EligibleGetResponse = map\[array of object {eligible, ready, type } ]
+EligibleGetResponse = map\[array of object { eligible, ready, type } ]
 
 </summary>
 
@@ -94,7 +94,7 @@ Beta flag. Users can create a policy with a mechanism that is not ready, but we 
 
 <summary>
 
-type: optional "email"or "pagerduty"or "webhook"
+type: optional "email" or "pagerduty" or "webhook"
 
 Determines type of delivery mechanism.
 
@@ -146,7 +146,7 @@ GET/accounts/{account\_id}/alerting/v3/destinations/pagerduty/connect/{token\_id
 
 <summary>
 
-Pagerduty object {id, name }
+Pagerduty object { id, name }
 
 </summary>
 
@@ -172,7 +172,7 @@ The name of the pagerduty service.
 
 <summary>
 
-PagerdutyCreateResponse object {id }
+PagerdutyCreateResponse object { id }
 
 </summary>
 
@@ -192,7 +192,7 @@ maxLength32
 
 <summary>
 
-PagerdutyDeleteResponse object {errors, messages, success }
+PagerdutyDeleteResponse object { errors, messages, success }
 
 </summary>
 
@@ -200,7 +200,7 @@ PagerdutyDeleteResponse object {errors, messages, success }
 
 <summary>
 
-errors: array of object {message, code }
+errors: array of object { message, code }
 
 </summary>
 
@@ -222,7 +222,7 @@ minimum1000
 
 <summary>
 
-messages: array of object {message, code }
+messages: array of object { message, code }
 
 </summary>
 
@@ -254,7 +254,7 @@ Whether the API call was successful
 
 <summary>
 
-PagerdutyLinkResponse object {id }
+PagerdutyLinkResponse object { id }
 
 </summary>
 
@@ -298,7 +298,7 @@ DELETE/accounts/{account\_id}/alerting/v3/destinations/webhooks/{webhook\_id}
 
 <summary>
 
-Webhooks object {id, created\_at, last\_failure, 5 more }
+Webhooks object { id, created\_at, last\_failure, 5 more }
 
 </summary>
 
@@ -350,7 +350,7 @@ Optional secret that will be passed in the <code>cf-webhook-auth</code> header w
 
 <summary>
 
-type: optional "datadog"or "discord"or "feishu"or 5 more
+type: optional "datadog" or "discord" or "feishu" or 5 more
 
 Type of webhook endpoint.
 
@@ -408,7 +408,7 @@ The POST endpoint to call when dispatching a notification.
 
 <summary>
 
-WebhookCreateResponse object {id }
+WebhookCreateResponse object { id }
 
 </summary>
 
@@ -428,7 +428,7 @@ maxLength32
 
 <summary>
 
-WebhookUpdateResponse object {id }
+WebhookUpdateResponse object { id }
 
 </summary>
 
@@ -448,7 +448,7 @@ maxLength32
 
 <summary>
 
-WebhookDeleteResponse object {errors, messages, success }
+WebhookDeleteResponse object { errors, messages, success }
 
 </summary>
 
@@ -456,7 +456,7 @@ WebhookDeleteResponse object {errors, messages, success }
 
 <summary>
 
-errors: array of object {message, code }
+errors: array of object { message, code }
 
 </summary>
 
@@ -478,7 +478,7 @@ minimum1000
 
 <summary>
 
-messages: array of object {message, code }
+messages: array of object { message, code }
 
 </summary>
 
@@ -518,7 +518,7 @@ GET/accounts/{account\_id}/alerting/v3/history
 
 <summary>
 
-History object {id, alert\_body, alert\_type, 6 more }
+History object { id, alert\_body, alert\_type, 6 more }
 
 </summary>
 
@@ -558,7 +558,7 @@ The mechanism to which the notification has been dispatched.
 
 <summary>
 
-mechanism\_type: optional "email"or "pagerduty"or "webhook"
+mechanism\_type: optional "email" or "pagerduty" or "webhook"
 
 The type of mechanism to which the notification has been dispatched. This can be email/pagerduty/webhook based on the mechanism configured.
 
@@ -636,7 +636,7 @@ DELETE/accounts/{account\_id}/alerting/v3/policies/{policy\_id}
 
 <summary>
 
-Mechanism object {email, pagerduty, webhooks }
+Mechanism object { email, pagerduty, webhooks }
 
 List of IDs that will be used when dispatching a notification. IDs for email type will be the email address.
 
@@ -646,7 +646,7 @@ List of IDs that will be used when dispatching a notification. IDs for email typ
 
 <summary>
 
-email: optional array of object {id }
+email: optional array of object { id }
 
 </summary>
 
@@ -664,7 +664,7 @@ The email address
 
 <summary>
 
-pagerduty: optional array of object {id }
+pagerduty: optional array of object { id }
 
 </summary>
 
@@ -684,7 +684,7 @@ maxLength32
 
 <summary>
 
-webhooks: optional array of object {id }
+webhooks: optional array of object { id }
 
 </summary>
 
@@ -708,7 +708,7 @@ maxLength32
 
 <summary>
 
-Policy object {id, alert\_interval, alert\_type, 7 more }
+Policy object { id, alert\_interval, alert\_type, 7 more }
 
 </summary>
 
@@ -730,7 +730,7 @@ Optional specification of how often to re-alert from the same incident, not supp
 
 <summary>
 
-alert\_type: optional "abuse\_report\_alert"or "access\_custom\_certificate\_expiration\_type"or "advanced\_ddos\_attack\_l4\_alert"or 88 more
+alert\_type: optional "abuse\_report\_alert" or "access\_custom\_certificate\_expiration\_type" or "advanced\_ddos\_attack\_l4\_alert" or 88 more
 
 Refers to which event will trigger a Notification dispatch. You can use the endpoint to get available alert types which then will give you a list of possible values. This enum lists every alert type, not the ones a given account can create, since some types depend on entitlements or account type. To get the alert types an account can create, call <code>GET /accounts/{account_id}/alerting/v3/available_alerts</code>.
 
@@ -1156,7 +1156,7 @@ Name of the policy.
 
 <summary>
 
-PolicyFilter object {actions, affected\_asns, affected\_components, 44 more }
+PolicyFilter object { actions, affected\_asns, affected\_components, 44 more }
 
 Optional filters that allow you to be alerted only on a subset of events for that alert type based on some criteria. This is only available for select alert types. See alert type documentation for more details.
 
@@ -1256,7 +1256,7 @@ Used for configuring health\_check\_status\_notification
 
 <summary>
 
-incident\_impact: optional array of "INCIDENT\_IMPACT\_NONE"or "INCIDENT\_IMPACT\_MINOR"or "INCIDENT\_IMPACT\_MAJOR"or "INCIDENT\_IMPACT\_CRITICAL"
+incident\_impact: optional array of "INCIDENT\_IMPACT\_NONE" or "INCIDENT\_IMPACT\_MINOR" or "INCIDENT\_IMPACT\_MAJOR" or "INCIDENT\_IMPACT\_CRITICAL"
 
 Used for configuring incident\_alert
 
@@ -1478,7 +1478,7 @@ Usage depends on specific alert type
 
 <summary>
 
-PolicyCreateResponse object {id }
+PolicyCreateResponse object { id }
 
 </summary>
 
@@ -1498,7 +1498,7 @@ maxLength32
 
 <summary>
 
-PolicyUpdateResponse object {id }
+PolicyUpdateResponse object { id }
 
 </summary>
 
@@ -1518,7 +1518,7 @@ maxLength32
 
 <summary>
 
-PolicyDeleteResponse object {errors, messages, success, result\_info }
+PolicyDeleteResponse object { errors, messages, success, result\_info }
 
 </summary>
 
@@ -1526,7 +1526,7 @@ PolicyDeleteResponse object {errors, messages, success, result\_info }
 
 <summary>
 
-errors: array of object {message, code }
+errors: array of object { message, code }
 
 </summary>
 
@@ -1548,7 +1548,7 @@ minimum1000
 
 <summary>
 
-messages: array of object {message, code }
+messages: array of object { message, code }
 
 </summary>
 
@@ -1576,7 +1576,7 @@ Whether the API call was successful
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object { count, page, per\_page, total\_count }
 
 </summary>
 
@@ -1640,7 +1640,7 @@ DELETE/accounts/{account\_id}/alerting/v3/silences/{silence\_id}
 
 <summary>
 
-SilenceListResponse object {id, created\_at, end\_time, 3 more }
+SilenceListResponse object { id, created\_at, end\_time, 3 more }
 
 </summary>
 
@@ -1692,7 +1692,7 @@ When the silence was modified.
 
 <summary>
 
-SilenceGetResponse object {id, created\_at, end\_time, 3 more }
+SilenceGetResponse object { id, created\_at, end\_time, 3 more }
 
 </summary>
 
@@ -1744,7 +1744,7 @@ When the silence was modified.
 
 <summary>
 
-SilenceCreateResponse object {errors, messages, success }
+SilenceCreateResponse object { errors, messages, success }
 
 </summary>
 
@@ -1752,7 +1752,7 @@ SilenceCreateResponse object {errors, messages, success }
 
 <summary>
 
-errors: array of object {message, code }
+errors: array of object { message, code }
 
 </summary>
 
@@ -1774,7 +1774,7 @@ minimum1000
 
 <summary>
 
-messages: array of object {message, code }
+messages: array of object { message, code }
 
 </summary>
 
@@ -1806,7 +1806,7 @@ Whether the API call was successful
 
 <summary>
 
-SilenceUpdateResponse object {id, created\_at, end\_time, 3 more }
+SilenceUpdateResponse object { id, created\_at, end\_time, 3 more }
 
 </summary>
 
@@ -1858,7 +1858,7 @@ When the silence was modified.
 
 <summary>
 
-SilenceDeleteResponse object {errors, messages, success }
+SilenceDeleteResponse object { errors, messages, success }
 
 </summary>
 
@@ -1866,7 +1866,7 @@ SilenceDeleteResponse object {errors, messages, success }
 
 <summary>
 
-errors: array of object {message, code }
+errors: array of object { message, code }
 
 </summary>
 
@@ -1888,7 +1888,7 @@ minimum1000
 
 <summary>
 
-messages: array of object {message, code }
+messages: array of object { message, code }
 
 </summary>
 

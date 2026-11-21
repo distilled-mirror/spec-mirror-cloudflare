@@ -80,7 +80,7 @@ Certificate Pack UUID.
 
 <summary>
 
-validation\_method: optional "http"or "cname"or "txt"or "email"
+validation\_method: optional "http" or "cname" or "txt" or "email"
 
 SSL validation method.
 
@@ -114,7 +114,7 @@ One of the following:
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -136,7 +136,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -156,7 +156,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -178,7 +178,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -204,7 +204,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {status, validation\_method }
+result: optional object { status, validation\_method }
 
 </summary>
 
@@ -218,7 +218,7 @@ Result status.
 
 <summary>
 
-validation\_method: optional "http"or "cname"or "txt"or "email"
+validation\_method: optional "http" or "cname" or "txt" or "email"
 
 SSL validation method.
 

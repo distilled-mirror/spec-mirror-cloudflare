@@ -58,7 +58,7 @@ Opaque token indicating the starting position when requesting the next set of re
 
 <summary>
 
-device: optional object {id }
+device: optional object { id }
 
 </summary>
 
@@ -90,7 +90,7 @@ formatuint64
 
 <summary>
 
-policy: optional object {id }
+policy: optional object { id }
 
 </summary>
 
@@ -110,7 +110,7 @@ formatuuid
 
 <summary>
 
-registration\_type: optional "warp"or "browser\_extension"
+registration\_type: optional "warp" or "browser\_extension"
 
 Filter by registration client type.
 
@@ -152,7 +152,7 @@ Filter by the last\_seen timestamp - returns only registrations last seen before
 
 <summary>
 
-sort\_by: optional "id"or "user.name"or "user.email"or 2 more
+sort\_by: optional "id" or "user.name" or "user.email" or 2 more
 
 The registration field to order results by.
 
@@ -188,7 +188,7 @@ One of the following:
 
 <summary>
 
-sort\_order: optional "asc"or "desc"
+sort\_order: optional "asc" or "desc"
 
 Sort direction.
 
@@ -212,7 +212,7 @@ One of the following:
 
 <summary>
 
-status: optional "active"or "all"or "revoked"
+status: optional "active" or "all" or "revoked"
 
 Filter by registration status. Defaults to ‘active’.
 
@@ -240,7 +240,7 @@ One of the following:
 
 <summary>
 
-user: optional object {id }
+user: optional object { id }
 
 </summary>
 
@@ -260,7 +260,7 @@ Filter by user ID.
 
 <summary>
 
-errors: array of object {code, message }
+errors: array of object { code, message }
 
 </summary>
 
@@ -280,7 +280,7 @@ message: string
 
 <summary>
 
-messages: array of object {code, message }
+messages: array of object { code, message }
 
 </summary>
 
@@ -300,7 +300,7 @@ message: string
 
 <summary>
 
-result: array of object {id, created\_at, device, 12 more }
+result: array of object { id, created\_at, device, 12 more }
 
 </summary>
 
@@ -320,7 +320,7 @@ The RFC3339 timestamp when the registration was created.
 
 <summary>
 
-device: object {id, name, client\_version }
+device: object { id, name, client\_version }
 
 Device details embedded inside of a registration.
 
@@ -364,7 +364,7 @@ The RFC3339 timestamp when the registration was last seen.
 
 <summary>
 
-registration\_type: "warp"or "browser\_extension"
+registration\_type: "warp" or "browser\_extension"
 
 The registration client type, derived from device\_type.
 
@@ -406,7 +406,7 @@ The type of encryption key used by the WARP client for the active key. Currently
 
 <summary>
 
-policy: optional object {id, default, deleted, 2 more }
+policy: optional object { id, default, deleted, 2 more }
 
 The device settings profile assigned to this registration.
 
@@ -462,7 +462,7 @@ Type of the tunnel - wireguard or masque.
 
 <summary>
 
-user: optional object {id, email, name }
+user: optional object { id, email, name }
 
 </summary>
 
@@ -518,7 +518,7 @@ Whether the API call was successful.
 
 <summary>
 
-result\_info: optional object {count, cursor, per\_page, total\_count }
+result\_info: optional object { count, cursor, per\_page, total\_count }
 
 V4 public API Pagination/Cursor info.
 

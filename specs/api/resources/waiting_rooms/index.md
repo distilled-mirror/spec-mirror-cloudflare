@@ -46,7 +46,7 @@ DELETE/zones/{zone\_id}/waiting\_rooms/{waiting\_room\_id}
 
 <summary>
 
-AdditionalRoutes object {host, path }
+AdditionalRoutes object { host, path }
 
 </summary>
 
@@ -70,7 +70,7 @@ Sets the path within the host to enable the waiting room on. The waiting room wi
 
 <summary>
 
-CookieAttributes object {samesite, secure }
+CookieAttributes object { samesite, secure }
 
 Configures cookie attributes for the waiting room cookie. This encrypted cookie stores a user’s status in the waiting room, such as queue position.
 
@@ -80,7 +80,7 @@ Configures cookie attributes for the waiting room cookie. This encrypted cookie 
 
 <summary>
 
-samesite: optional "auto"or "lax"or "none"or "strict"
+samesite: optional "auto" or "lax" or "none" or "strict"
 
 Configures the SameSite attribute on the waiting room cookie. Value <code>auto</code> will be translated to <code>lax</code> or <code>none</code> depending if **Always Use HTTPS** is enabled. Note that when using value <code>none</code>, the secure attribute cannot be set to <code>never</code>.
 
@@ -112,7 +112,7 @@ One of the following:
 
 <summary>
 
-secure: optional "auto"or "always"or "never"
+secure: optional "auto" or "always" or "never"
 
 Configures the Secure attribute on the waiting room cookie. Value <code>always</code> indicates that the Secure attribute will be set in the Set-Cookie header, <code>never</code> indicates that the Secure attribute will not be set, and <code>auto</code> will set the Secure attribute depending if **Always Use HTTPS** is enabled.
 
@@ -144,7 +144,7 @@ One of the following:
 
 <summary>
 
-Query object {host, name, new\_users\_per\_minute, 18 more }
+Query object { host, name, new\_users\_per\_minute, 18 more }
 
 </summary>
 
@@ -237,7 +237,7 @@ To view the full list of variables, look at the <code>cfWaitingRoom</code> objec
 
 <summary>
 
-default\_template\_language: optional "en-US"or "es-ES"or "de-DE"or 36 more
+default\_template\_language: optional "en-US" or "es-ES" or "de-DE" or 36 more
 
 The language of the default page template. If no default\_template\_language is provided, then <code>en-US</code> (English) will be used.
 
@@ -542,7 +542,7 @@ If queue\_all is <code>true</code>, all the traffic that is coming to a route wi
 
 <summary>
 
-queueing\_method: optional "fifo"or "random"or "passthrough"or "reject"
+queueing\_method: optional "fifo" or "random" or "passthrough" or "reject"
 
 Sets the queueing method used by the waiting room. Changing this parameter from the **default** queueing method is only available for the Waiting Room Advanced subscription. Regardless of the queueing method, if <code>queue_all</code> is enabled or an event is prequeueing, users in the waiting room will not be accepted to the origin. These users will always see a waiting room page that refreshes automatically. The valid queueing methods are:
 
@@ -579,7 +579,7 @@ One of the following:
 
 <summary>
 
-queueing\_status\_code: optional 200or 202or 429
+queueing\_status\_code: optional 200 or 202 or 429
 
 HTTP status code returned to a user while in the queue.
 
@@ -623,7 +623,7 @@ Suspends or allows traffic going to the waiting room. If set to <code>true</code
 
 <summary>
 
-turnstile\_action: optional "log"or "infinite\_queue"
+turnstile\_action: optional "log" or "infinite\_queue"
 
 Which action to take when a bot is detected using Turnstile. <code>log</code> will have no impact on queueing behavior, simply keeping track of how many bots are detected in Waiting Room Analytics. <code>infinite_queue</code> will send bots to a false queueing state, where they will never reach your origin. <code>infinite_queue</code> requires Advanced Waiting Room.
 
@@ -647,7 +647,7 @@ One of the following:
 
 <summary>
 
-turnstile\_mode: optional "off"or "invisible"or "visible\_non\_interactive"or "visible\_managed"
+turnstile\_mode: optional "off" or "invisible" or "visible\_non\_interactive" or "visible\_managed"
 
 Which Turnstile widget type to use for detecting bot traffic. See <a href="https://developers.cloudflare.com/turnstile/concepts/widget/#widget-types">the Turnstile documentation</a> for the definitions of these widget types. Set to <code>off</code> to disable the Turnstile integration entirely. Setting this to anything other than <code>off</code> or <code>invisible</code> requires Advanced Waiting Room.
 
@@ -683,7 +683,7 @@ One of the following:
 
 <summary>
 
-WaitingRoom object {id, additional\_routes, cookie\_attributes, 23 more }
+WaitingRoom object { id, additional\_routes, cookie\_attributes, 23 more }
 
 </summary>
 
@@ -754,7 +754,7 @@ To view the full list of variables, look at the <code>cfWaitingRoom</code> objec
 
 <summary>
 
-default\_template\_language: optional "en-US"or "es-ES"or "de-DE"or 36 more
+default\_template\_language: optional "en-US" or "es-ES" or "de-DE" or 36 more
 
 The language of the default page template. If no default\_template\_language is provided, then <code>en-US</code> (English) will be used.
 
@@ -1099,7 +1099,7 @@ If queue\_all is <code>true</code>, all the traffic that is coming to a route wi
 
 <summary>
 
-queueing\_method: optional "fifo"or "random"or "passthrough"or "reject"
+queueing\_method: optional "fifo" or "random" or "passthrough" or "reject"
 
 Sets the queueing method used by the waiting room. Changing this parameter from the **default** queueing method is only available for the Waiting Room Advanced subscription. Regardless of the queueing method, if <code>queue_all</code> is enabled or an event is prequeueing, users in the waiting room will not be accepted to the origin. These users will always see a waiting room page that refreshes automatically. The valid queueing methods are:
 
@@ -1136,7 +1136,7 @@ One of the following:
 
 <summary>
 
-queueing\_status\_code: optional 200or 202or 429
+queueing\_status\_code: optional 200 or 202 or 429
 
 HTTP status code returned to a user while in the queue.
 
@@ -1190,7 +1190,7 @@ minimum200
 
 <summary>
 
-turnstile\_action: optional "log"or "infinite\_queue"
+turnstile\_action: optional "log" or "infinite\_queue"
 
 Which action to take when a bot is detected using Turnstile. <code>log</code> will have no impact on queueing behavior, simply keeping track of how many bots are detected in Waiting Room Analytics. <code>infinite_queue</code> will send bots to a false queueing state, where they will never reach your origin. <code>infinite_queue</code> requires Advanced Waiting Room.
 
@@ -1214,7 +1214,7 @@ One of the following:
 
 <summary>
 
-turnstile\_mode: optional "off"or "invisible"or "visible\_non\_interactive"or "visible\_managed"
+turnstile\_mode: optional "off" or "invisible" or "visible\_non\_interactive" or "visible\_managed"
 
 Which Turnstile widget type to use for detecting bot traffic. See <a href="https://developers.cloudflare.com/turnstile/concepts/widget/#widget-types">the Turnstile documentation</a> for the definitions of these widget types. Set to <code>off</code> to disable the Turnstile integration entirely. Setting this to anything other than <code>off</code> or <code>invisible</code> requires Advanced Waiting Room.
 
@@ -1250,7 +1250,7 @@ One of the following:
 
 <summary>
 
-WaitingRoomDeleteResponse object {id }
+WaitingRoomDeleteResponse object { id }
 
 </summary>
 
@@ -1274,7 +1274,7 @@ POST/zones/{zone\_id}/waiting\_rooms/preview
 
 <summary>
 
-PagePreviewResponse object {preview\_url }
+PagePreviewResponse object { preview\_url }
 
 </summary>
 
@@ -1320,7 +1320,7 @@ DELETE/zones/{zone\_id}/waiting\_rooms/{waiting\_room\_id}/events/{event\_id}
 
 <summary>
 
-Event object {id, created\_on, custom\_page\_html, 15 more }
+Event object { id, created\_on, custom\_page\_html, 15 more }
 
 </summary>
 
@@ -1434,7 +1434,7 @@ minimum200
 
 <summary>
 
-turnstile\_action: optional "log"or "infinite\_queue"
+turnstile\_action: optional "log" or "infinite\_queue"
 
 If set, the event will override the waiting room’s <code>turnstile_action</code> property while it is active. If null, the event will inherit it.
 
@@ -1458,7 +1458,7 @@ One of the following:
 
 <summary>
 
-turnstile\_mode: optional "off"or "invisible"or "visible\_non\_interactive"or "visible\_managed"
+turnstile\_mode: optional "off" or "invisible" or "visible\_non\_interactive" or "visible\_managed"
 
 If set, the event will override the waiting room’s <code>turnstile_mode</code> property while it is active. If null, the event will inherit it.
 
@@ -1494,7 +1494,7 @@ One of the following:
 
 <summary>
 
-EventDeleteResponse object {id }
+EventDeleteResponse object { id }
 
 </summary>
 
@@ -1518,7 +1518,7 @@ GET/zones/{zone\_id}/waiting\_rooms/{waiting\_room\_id}/events/{event\_id}/detai
 
 <summary>
 
-EventQuery object {event\_end\_time, event\_start\_time, name, 12 more }
+EventQuery object { event\_end\_time, event\_start\_time, name, 12 more }
 
 </summary>
 
@@ -1616,7 +1616,7 @@ minimum200
 
 <summary>
 
-turnstile\_action: optional "log"or "infinite\_queue"
+turnstile\_action: optional "log" or "infinite\_queue"
 
 If set, the event will override the waiting room’s <code>turnstile_action</code> property while it is active. If null, the event will inherit it.
 
@@ -1640,7 +1640,7 @@ One of the following:
 
 <summary>
 
-turnstile\_mode: optional "off"or "invisible"or "visible\_non\_interactive"or "visible\_managed"
+turnstile\_mode: optional "off" or "invisible" or "visible\_non\_interactive" or "visible\_managed"
 
 If set, the event will override the waiting room’s <code>turnstile_mode</code> property while it is active. If null, the event will inherit it.
 
@@ -1676,7 +1676,7 @@ One of the following:
 
 <summary>
 
-DetailGetResponse object {id, created\_on, custom\_page\_html, 13 more }
+DetailGetResponse object { id, created\_on, custom\_page\_html, 13 more }
 
 </summary>
 
@@ -1794,7 +1794,7 @@ DELETE/zones/{zone\_id}/waiting\_rooms/{waiting\_room\_id}/rules/{rule\_id}
 
 <summary>
 
-WaitingRoomRule object {id, action, description, 4 more }
+WaitingRoomRule object { id, action, description, 4 more }
 
 </summary>
 
@@ -1856,7 +1856,7 @@ GET/zones/{zone\_id}/waiting\_rooms/{waiting\_room\_id}/status
 
 <summary>
 
-StatusGetResponse object {estimated\_queued\_users, estimated\_total\_active\_users, event\_id, 2 more }
+StatusGetResponse object { estimated\_queued\_users, estimated\_total\_active\_users, event\_id, 2 more }
 
 </summary>
 
@@ -1880,7 +1880,7 @@ max\_estimated\_time\_minutes: optional number
 
 <summary>
 
-status: optional "event\_prequeueing"or "not\_queueing"or "queueing"or "suspended"
+status: optional "event\_prequeueing" or "not\_queueing" or "queueing" or "suspended"
 
 </summary>
 
@@ -1930,7 +1930,7 @@ PATCH/zones/{zone\_id}/waiting\_rooms/settings
 
 <summary>
 
-Setting object {search\_engine\_crawler\_bypass }
+Setting object { search\_engine\_crawler\_bypass }
 
 </summary>
 
@@ -1948,7 +1948,7 @@ Whether to allow verified search engine crawlers to bypass all waiting rooms on 
 
 <summary>
 
-SettingGetResponse object {search\_engine\_crawler\_bypass }
+SettingGetResponse object { search\_engine\_crawler\_bypass }
 
 </summary>
 
@@ -1966,7 +1966,7 @@ Whether to allow verified search engine crawlers to bypass all waiting rooms on 
 
 <summary>
 
-SettingUpdateResponse object {search\_engine\_crawler\_bypass }
+SettingUpdateResponse object { search\_engine\_crawler\_bypass }
 
 </summary>
 
@@ -1984,7 +1984,7 @@ Whether to allow verified search engine crawlers to bypass all waiting rooms on 
 
 <summary>
 
-SettingEditResponse object {search\_engine\_crawler\_bypass }
+SettingEditResponse object { search\_engine\_crawler\_bypass }
 
 </summary>
 

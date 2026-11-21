@@ -56,7 +56,7 @@ DELETE/zones/{zone\_id}/secondary\_dns/incoming
 
 <summary>
 
-Incoming object {id, auto\_refresh\_seconds, checked\_time, 5 more }
+Incoming object { id, auto\_refresh\_seconds, checked\_time, 5 more }
 
 </summary>
 
@@ -116,7 +116,7 @@ The serial number of the SOA for the given zone.
 
 <summary>
 
-IncomingGetResponse object {id, auto\_refresh\_seconds, checked\_time, 5 more }
+IncomingGetResponse object { id, auto\_refresh\_seconds, checked\_time, 5 more }
 
 </summary>
 
@@ -176,7 +176,7 @@ The serial number of the SOA for the given zone.
 
 <summary>
 
-IncomingCreateResponse object {id, auto\_refresh\_seconds, checked\_time, 5 more }
+IncomingCreateResponse object { id, auto\_refresh\_seconds, checked\_time, 5 more }
 
 </summary>
 
@@ -236,7 +236,7 @@ The serial number of the SOA for the given zone.
 
 <summary>
 
-IncomingUpdateResponse object {id, auto\_refresh\_seconds, checked\_time, 5 more }
+IncomingUpdateResponse object { id, auto\_refresh\_seconds, checked\_time, 5 more }
 
 </summary>
 
@@ -296,7 +296,7 @@ The serial number of the SOA for the given zone.
 
 <summary>
 
-IncomingDeleteResponse object {id }
+IncomingDeleteResponse object { id }
 
 </summary>
 
@@ -356,7 +356,7 @@ The zone transfer status of a primary zone.
 
 <summary>
 
-Outgoing object {id, checked\_time, created\_time, 4 more }
+Outgoing object { id, checked\_time, created\_time, 4 more }
 
 </summary>
 
@@ -414,7 +414,7 @@ The zone transfer status of a primary zone.
 
 <summary>
 
-OutgoingGetResponse object {id, checked\_time, created\_time, 4 more }
+OutgoingGetResponse object { id, checked\_time, created\_time, 4 more }
 
 </summary>
 
@@ -466,7 +466,7 @@ The serial number of the SOA for the given zone.
 
 <summary>
 
-OutgoingCreateResponse object {id, checked\_time, created\_time, 4 more }
+OutgoingCreateResponse object { id, checked\_time, created\_time, 4 more }
 
 </summary>
 
@@ -518,7 +518,7 @@ The serial number of the SOA for the given zone.
 
 <summary>
 
-OutgoingUpdateResponse object {id, checked\_time, created\_time, 4 more }
+OutgoingUpdateResponse object { id, checked\_time, created\_time, 4 more }
 
 </summary>
 
@@ -570,7 +570,7 @@ The serial number of the SOA for the given zone.
 
 <summary>
 
-OutgoingDeleteResponse object {id }
+OutgoingDeleteResponse object { id }
 
 </summary>
 
@@ -622,7 +622,7 @@ DELETE/accounts/{account\_id}/secondary\_dns/acls/{acl\_id}
 
 <summary>
 
-ACL object {id, ip\_range, name }
+ACL object { id, ip\_range, name }
 
 </summary>
 
@@ -650,7 +650,7 @@ The name of the acl.
 
 <summary>
 
-ACLDeleteResponse object {id }
+ACLDeleteResponse object { id }
 
 </summary>
 
@@ -690,7 +690,7 @@ DELETE/accounts/{account\_id}/secondary\_dns/peers/{peer\_id}
 
 <summary>
 
-Peer object {id, name, ip, 3 more }
+Peer object { id, name, ip, 3 more }
 
 </summary>
 
@@ -736,7 +736,7 @@ TSIG authentication will be used for zone transfer if configured.
 
 <summary>
 
-PeerDeleteResponse object {id }
+PeerDeleteResponse object { id }
 
 </summary>
 
@@ -776,7 +776,7 @@ DELETE/accounts/{account\_id}/secondary\_dns/tsigs/{tsig\_id}
 
 <summary>
 
-TSIG object {id, algo, name, secret }
+TSIG object { id, algo, name, secret }
 
 </summary>
 
@@ -810,7 +810,7 @@ TSIG secret.
 
 <summary>
 
-TSIGDeleteResponse object {id }
+TSIGDeleteResponse object { id }
 
 </summary>
 

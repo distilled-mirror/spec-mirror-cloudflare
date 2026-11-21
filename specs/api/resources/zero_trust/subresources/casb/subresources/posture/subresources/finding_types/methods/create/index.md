@@ -38,7 +38,7 @@ The preferred authorization scheme for interacting with the Cloudflare API. [Cre
 
 ##### Accepted Permissions (at least one required)
 
-`Zero Trust Write`
+`CASB Write``Zero Trust Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -64,7 +64,7 @@ Asset class this finding type applies to (PascalCase, e.g. GoogleWorkspaceFile)
 
 <summary>
 
-asset\_vendor: "ANTHROPIC"or "AWS"or "BITBUCKET"or 13 more
+asset\_vendor: "ANTHROPIC" or "AWS" or "BITBUCKET" or 13 more
 
 Canonical vendor enum for the platform whose assets this finding type evaluates.
 
@@ -168,7 +168,7 @@ maxLength256
 
 <summary>
 
-severity: "Critical"or "High"or "Medium"or "Low"
+severity: "Critical" or "High" or "Medium" or "Low"
 
 Default severity used when no integration-specific severity override exists.
 
@@ -208,7 +208,7 @@ Required and non-empty when applies\_to\_all\_integrations is false; omit when i
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -238,7 +238,7 @@ formaturi
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -260,7 +260,7 @@ JSON pointer to the source of the error.
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -290,7 +290,7 @@ formaturi
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -318,7 +318,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, applies\_to\_all\_integrations, asset\_class, 14 more }
+result: optional object { id, applies\_to\_all\_integrations, asset\_class, 14 more }
 
 Basic finding type information.
 
@@ -348,7 +348,7 @@ Asset class the finding type’s policy evaluates.
 
 <summary>
 
-asset\_vendor: "ANTHROPIC"or "AWS"or "BITBUCKET"or 13 more
+asset\_vendor: "ANTHROPIC" or "AWS" or "BITBUCKET" or 13 more
 
 Canonical vendor enum value.
 
@@ -428,7 +428,7 @@ One of the following:
 
 <summary>
 
-category: object {observation, product, type }
+category: object { observation, product, type }
 
 Category information for a finding.
 
@@ -438,7 +438,7 @@ Category information for a finding.
 
 <summary>
 
-observation: "Issue"or "Insight"or "Activity"
+observation: "Issue" or "Insight" or "Activity"
 
 The type of the observation.
 
@@ -466,7 +466,7 @@ One of the following:
 
 <summary>
 
-product: "SaaS"or "Cloud"
+product: "SaaS" or "Cloud"
 
 The product category.
 
@@ -490,7 +490,7 @@ One of the following:
 
 <summary>
 
-type: "Content"or "Posture"
+type: "Content" or "Posture"
 
 The type of the finding category.
 
@@ -544,7 +544,7 @@ The name of the finding.
 
 <summary>
 
-origin: "system"or "custom"
+origin: "system" or "custom"
 
 Whether the finding type is system-managed or customer-created.
 
@@ -568,7 +568,7 @@ One of the following:
 
 <summary>
 
-severity: "Critical"or "High"or "Medium"or "Low"
+severity: "Critical" or "High" or "Medium" or "Low"
 
 Default severity used when no integration-specific severity override exists.
 

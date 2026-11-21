@@ -40,7 +40,7 @@ The preferred authorization scheme for interacting with the Cloudflare API. [Cre
 
 ##### Accepted Permissions (at least one required)
 
-`Zero Trust Read``Zero Trust Write`
+`CASB Write``CASB Read``Zero Trust Read``Zero Trust Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -90,7 +90,7 @@ minimum1
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -120,7 +120,7 @@ formaturi
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -142,7 +142,7 @@ JSON pointer to the source of the error.
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -172,7 +172,7 @@ formaturi
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -194,7 +194,7 @@ JSON pointer to the source of the error.
 
 <summary>
 
-result\_info: object {count, cursor, next, 4 more }
+result\_info: object { count, cursor, next, 4 more }
 
 Pagination and result information.
 
@@ -260,7 +260,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional array of object {id, description, display\_name, 2 more }
+result: optional array of object { id, description, display\_name, 2 more }
 
 Array of remediation type objects.
 

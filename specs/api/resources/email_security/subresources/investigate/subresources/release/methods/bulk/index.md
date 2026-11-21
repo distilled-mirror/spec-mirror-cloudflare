@@ -84,7 +84,7 @@ Investigate IDs of the messages to release.
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -106,7 +106,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -126,7 +126,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -148,7 +148,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -168,7 +168,7 @@ pointer: optional string
 
 <summary>
 
-result: array of object {id, delivered, failed, 2 more }
+result: array of object { id, delivered, failed, 2 more }
 
 </summary>
 

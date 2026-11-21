@@ -40,7 +40,7 @@ GET/radar/bgp/rpki/aspa/timeseries
 
 <summary>
 
-ASPASnapshotResponse object {asnInfo, aspaObjects, meta }
+ASPASnapshotResponse object { asnInfo, aspaObjects, meta }
 
 </summary>
 
@@ -48,7 +48,7 @@ ASPASnapshotResponse object {asnInfo, aspaObjects, meta }
 
 <summary>
 
-asnInfo: object {"13335" }
+asnInfo: object { "13335" }
 
 </summary>
 
@@ -56,7 +56,7 @@ asnInfo: object {"13335" }
 
 <summary>
 
-"13335": object {asn, country, name }
+"13335": object { asn, country, name }
 
 </summary>
 
@@ -90,7 +90,7 @@ AS name.
 
 <summary>
 
-aspaObjects: array of object {customerAsn, providers }
+aspaObjects: array of object { customerAsn, providers }
 
 </summary>
 
@@ -112,7 +112,7 @@ providers: array of number
 
 <summary>
 
-meta: object {dataTime, queryTime, totalCount }
+meta: object { dataTime, queryTime, totalCount }
 
 </summary>
 
@@ -150,7 +150,7 @@ Total number of ASPA objects.
 
 <summary>
 
-ASPAChangesResponse object {asnInfo, changes, meta }
+ASPAChangesResponse object { asnInfo, changes, meta }
 
 </summary>
 
@@ -158,7 +158,7 @@ ASPAChangesResponse object {asnInfo, changes, meta }
 
 <summary>
 
-asnInfo: object {"13335" }
+asnInfo: object { "13335" }
 
 </summary>
 
@@ -166,7 +166,7 @@ asnInfo: object {"13335" }
 
 <summary>
 
-"13335": object {asn, country, name }
+"13335": object { asn, country, name }
 
 </summary>
 
@@ -200,7 +200,7 @@ AS name.
 
 <summary>
 
-changes: array of object {customersAdded, customersRemoved, date, 4 more }
+changes: array of object { customersAdded, customersRemoved, date, 4 more }
 
 </summary>
 
@@ -228,7 +228,7 @@ formatdate-time
 
 <summary>
 
-entries: array of object {customerAsn, providers, type }
+entries: array of object { customerAsn, providers, type }
 
 </summary>
 
@@ -246,7 +246,7 @@ providers: array of number
 
 <summary>
 
-type: "CustomerAdded"or "CustomerRemoved"or "ProvidersAdded"or "ProvidersRemoved"
+type: "CustomerAdded" or "CustomerRemoved" or "ProvidersAdded" or "ProvidersRemoved"
 
 </summary>
 
@@ -302,7 +302,7 @@ Running total of active ASPA objects after this day.
 
 <summary>
 
-meta: object {dataTime, queryTime }
+meta: object { dataTime, queryTime }
 
 </summary>
 
@@ -334,7 +334,7 @@ formatdate-time
 
 <summary>
 
-ASPATimeseriesResponse object {meta, serie\_0 }
+ASPATimeseriesResponse object { meta, serie\_0 }
 
 </summary>
 
@@ -342,7 +342,7 @@ ASPATimeseriesResponse object {meta, serie\_0 }
 
 <summary>
 
-meta: object {dataTime, queryTime }
+meta: object { dataTime, queryTime }
 
 </summary>
 
@@ -370,7 +370,7 @@ formatdate-time
 
 <summary>
 
-serie\_0: object {timestamps, values }
+serie\_0: object { timestamps, values }
 
 </summary>
 
@@ -402,7 +402,7 @@ GET/radar/bgp/rpki/roas/timeseries
 
 <summary>
 
-RoaTimeseriesResponse object {meta, serie\_0 }
+RoaTimeseriesResponse object { meta, serie\_0 }
 
 </summary>
 
@@ -410,7 +410,7 @@ RoaTimeseriesResponse object {meta, serie\_0 }
 
 <summary>
 
-meta: object {dataTime, queryTime }
+meta: object { dataTime, queryTime }
 
 </summary>
 
@@ -438,7 +438,7 @@ formatdate-time
 
 <summary>
 
-serie\_0: object {timestamps, values }
+serie\_0: object { timestamps, values }
 
 </summary>
 

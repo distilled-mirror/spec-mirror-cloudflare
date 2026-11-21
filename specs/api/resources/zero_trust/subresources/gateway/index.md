@@ -32,7 +32,7 @@ POST/accounts/{account\_id}/gateway
 
 <summary>
 
-GatewayListResponse object {id, gateway\_tag, provider\_name }
+GatewayListResponse object { id, gateway\_tag, provider\_name }
 
 </summary>
 
@@ -66,7 +66,7 @@ Specify the provider name (usually Cloudflare).
 
 <summary>
 
-GatewayCreateResponse object {id, gateway\_tag, provider\_name }
+GatewayCreateResponse object { id, gateway\_tag, provider\_name }
 
 </summary>
 
@@ -116,7 +116,7 @@ POST/accounts/{account\_id}/gateway/audit\_ssh\_settings/rotate\_seed
 
 <summary>
 
-GatewaySettings object {created\_at, public\_key, seed\_id, updated\_at }
+GatewaySettings object { created\_at, public\_key, seed\_id, updated\_at }
 
 </summary>
 
@@ -162,7 +162,7 @@ GET/accounts/{account\_id}/gateway/categories
 
 <summary>
 
-Category object {id, beta, class, 3 more }
+Category object { id, beta, class, 3 more }
 
 </summary>
 
@@ -182,7 +182,7 @@ Indicate whether the category is in beta and subject to change.
 
 <summary>
 
-class: optional "free"or "premium"or "blocked"or 2 more
+class: optional "free" or "premium" or "blocked" or 2 more
 
 Specify which account types can create policies for this category. <code>blocked</code> Blocks unconditionally for all accounts. <code>removalPending</code> Allows removal from policies but disables addition. <code>noBlock</code> Prevents blocking.
 
@@ -230,7 +230,7 @@ Specify the category name.
 
 <summary>
 
-subcategories: optional array of object {id, beta, class, 2 more }
+subcategories: optional array of object { id, beta, class, 2 more }
 
 Provide all subcategories for this category.
 
@@ -252,7 +252,7 @@ Indicate whether the category is in beta and subject to change.
 
 <summary>
 
-class: optional "free"or "premium"or "blocked"or 2 more
+class: optional "free" or "premium" or "blocked" or 2 more
 
 Specify which account types can create policies for this category. <code>blocked</code> Blocks unconditionally for all accounts. <code>removalPending</code> Allows removal from policies but disables addition. <code>noBlock</code> Prevents blocking.
 
@@ -316,7 +316,7 @@ GET/accounts/{account\_id}/gateway/app\_types
 
 <summary>
 
-AppType = object {id, application\_type\_id, created\_at, name } or object {id, created\_at, description, name }
+AppType = object { id, application\_type\_id, created\_at, name } or object { id, created\_at, description, name }
 
 </summary>
 
@@ -326,7 +326,7 @@ One of the following:
 
 <summary>
 
-ZeroTrustGatewayApplication object {id, application\_type\_id, created\_at, name }
+ZeroTrustGatewayApplication object { id, application\_type\_id, created\_at, name }
 
 </summary>
 
@@ -362,7 +362,7 @@ Specify the name of the application or application type.
 
 <summary>
 
-ZeroTrustGatewayApplicationType object {id, created\_at, description, name }
+ZeroTrustGatewayApplicationType object { id, created\_at, description, name }
 
 </summary>
 
@@ -418,7 +418,7 @@ PATCH/accounts/{account\_id}/gateway/configuration
 
 <summary>
 
-ActivityLogSettings object {enabled }
+ActivityLogSettings object { enabled }
 
 Specify activity log settings.
 
@@ -438,7 +438,7 @@ Specify whether to log activity.
 
 <summary>
 
-AntiVirusSettings object {enabled\_download\_phase, enabled\_upload\_phase, fail\_closed, notification\_settings }
+AntiVirusSettings object { enabled\_download\_phase, enabled\_upload\_phase, fail\_closed, notification\_settings }
 
 Specify anti-virus settings.
 
@@ -476,7 +476,7 @@ Configure the message the user’s device shows during an antivirus scan.
 
 <summary>
 
-BlockPageSettings object {background\_color, enabled, footer\_text, 12 more }
+BlockPageSettings object { background\_color, enabled, footer\_text, 12 more }
 
 Specify block page layout settings.
 
@@ -534,7 +534,7 @@ Specify the subject line for emails created from the block page when the mode is
 
 <summary>
 
-mode: optional ""or "customized\_block\_page"or "redirect\_uri"
+mode: optional "" or "customized\_block\_page" or "redirect\_uri"
 
 Specify whether to redirect users to a Cloudflare-hosted block page or a customer-provided URI.
 
@@ -604,7 +604,7 @@ Indicate the version number of the setting.
 
 <summary>
 
-BodyScanningSettings object {inspection\_mode }
+BodyScanningSettings object { inspection\_mode }
 
 Specify the DLP inspection mode.
 
@@ -614,7 +614,7 @@ Specify the DLP inspection mode.
 
 <summary>
 
-inspection\_mode: optional "deep"or "shallow"
+inspection\_mode: optional "deep" or "shallow"
 
 Specify the inspection mode as either <code>deep</code> or <code>shallow</code>.
 
@@ -642,7 +642,7 @@ One of the following:
 
 <summary>
 
-BrowserIsolationSettings object {non\_identity\_enabled, url\_browser\_isolation\_enabled }
+BrowserIsolationSettings object { non\_identity\_enabled, url\_browser\_isolation\_enabled }
 
 Specify Clientless Browser Isolation settings.
 
@@ -668,7 +668,7 @@ Specify whether to enable Clientless Browser Isolation.
 
 <summary>
 
-CustomCertificateSettings object {enabled, id, binding\_status, updated\_at }
+CustomCertificateSettings object { enabled, id, binding\_status, updated\_at }
 
 Specify custom certificate settings for BYO-PKI. This field is deprecated; use <code>certificate</code> instead.
 
@@ -706,7 +706,7 @@ formatdate-time
 
 <summary>
 
-ExtendedEmailMatching object {enabled, read\_only, source\_account, version }
+ExtendedEmailMatching object { enabled, read\_only, source\_account, version }
 
 Configures user email settings for firewall policies. When you enable this, the system standardizes email addresses in the identity portion of the rule to match extended email variants in firewall policies. When you disable this setting, the system matches email addresses exactly as you provide them. Enable this setting if your email uses <code>.</code> or <code>+</code> modifiers.
 
@@ -744,7 +744,7 @@ Indicate the version number of the setting.
 
 <summary>
 
-FipsSettings object {tls }
+FipsSettings object { tls }
 
 Specify FIPS settings.
 
@@ -764,7 +764,7 @@ Enforce cipher suites and TLS versions compliant with FIPS 140-2.
 
 <summary>
 
-GatewayConfigurationSettings object {activity\_log, antivirus, block\_page, 13 more }
+GatewayConfigurationSettings object { activity\_log, antivirus, block\_page, 13 more }
 
 Specify account settings.
 
@@ -804,7 +804,7 @@ Specify Clientless Browser Isolation settings.
 
 <summary>
 
-certificate: optional object {id }
+certificate: optional object { id }
 
 Specify certificate settings for Gateway TLS interception. If unset, the Cloudflare Root CA handles interception.
 
@@ -842,7 +842,7 @@ Specify FIPS settings.
 
 <summary>
 
-host\_selector: optional object {enabled }
+host\_selector: optional object { enabled }
 
 Enable host selection in egress policies.
 
@@ -862,7 +862,7 @@ Specify whether to enable filtering via hosts for egress policies.
 
 <summary>
 
-inspection: optional object {mode }
+inspection: optional object { mode }
 
 Define the proxy inspection mode.
 
@@ -872,7 +872,7 @@ Define the proxy inspection mode.
 
 <summary>
 
-mode: optional "static"or "dynamic"
+mode: optional "static" or "dynamic"
 
 Define the proxy inspection mode. 1. static: Gateway applies static inspection to HTTP on TCP(80). With TLS decryption on, Gateway inspects HTTPS traffic on TCP(443) and UDP(443). 2. dynamic: Gateway applies protocol detection to inspect HTTP and HTTPS traffic on any port. TLS decryption must remain on to inspect HTTPS traffic.
 
@@ -916,7 +916,7 @@ Specify whether to detect protocols from the initial bytes of client traffic.
 
 <summary>
 
-regions: optional map\[object {tls\_decrypt, certificate } ]
+regions: optional map\[object { tls\_decrypt, certificate } ]
 
 Specify per-region TLS interception and certificate settings for Gateway, keyed by Data Localization Suite region key. Relies on the Zero Trust account region setting (<code>GET</code>/<code>PUT /accounts/{account_id}/zerotrust/region</code>) - the account must select a region before Gateway applies these settings for it.
 
@@ -932,7 +932,7 @@ Specify whether to inspect encrypted HTTP traffic.
 
 <summary>
 
-certificate: optional object {id }
+certificate: optional object { id }
 
 Specify certificate settings for Gateway TLS interception. If unset, the Cloudflare Root CA handles interception.
 
@@ -956,7 +956,7 @@ Specify the UUID of the certificate used for interception. Ensure the certificat
 
 <summary>
 
-sandbox: optional object {enabled, fallback\_action }
+sandbox: optional object { enabled, fallback\_action }
 
 Specify whether to enable the sandbox.
 
@@ -972,7 +972,7 @@ Specify whether to enable the sandbox.
 
 <summary>
 
-fallback\_action: optional "allow"or "block"
+fallback\_action: optional "allow" or "block"
 
 Specify the action to take when the system cannot scan the file.
 
@@ -1010,7 +1010,7 @@ Specify whether to inspect encrypted HTTP traffic.
 
 <summary>
 
-NotificationSettings object {enabled, include\_context, msg, support\_url }
+NotificationSettings object { enabled, include\_context, msg, support\_url }
 
 Configure the message the user’s device shows during an antivirus scan.
 
@@ -1048,7 +1048,7 @@ Specify a URL that directs users to more information. If unset, the notification
 
 <summary>
 
-ProtocolDetection object {enabled }
+ProtocolDetection object { enabled }
 
 Specify whether to detect protocols from the initial bytes of client traffic.
 
@@ -1068,7 +1068,7 @@ Specify whether to detect protocols from the initial bytes of client traffic.
 
 <summary>
 
-TLSSettings object {enabled }
+TLSSettings object { enabled }
 
 Specify whether to inspect encrypted HTTP traffic.
 
@@ -1088,7 +1088,7 @@ Specify whether to inspect encrypted HTTP traffic.
 
 <summary>
 
-ConfigurationGetResponse object {created\_at, settings, updated\_at }
+ConfigurationGetResponse object { created\_at, settings, updated\_at }
 
 Specify account settings.
 
@@ -1120,7 +1120,7 @@ formatdate-time
 
 <summary>
 
-ConfigurationUpdateResponse object {created\_at, settings, updated\_at }
+ConfigurationUpdateResponse object { created\_at, settings, updated\_at }
 
 Specify account settings.
 
@@ -1152,7 +1152,7 @@ formatdate-time
 
 <summary>
 
-ConfigurationEditResponse object {created\_at, settings, updated\_at }
+ConfigurationEditResponse object { created\_at, settings, updated\_at }
 
 Specify account settings.
 
@@ -1220,7 +1220,7 @@ DELETE/accounts/{account\_id}/gateway/lists/{list\_id}
 
 <summary>
 
-GatewayItem object {created\_at, description, value }
+GatewayItem object { created\_at, description, value }
 
 </summary>
 
@@ -1252,7 +1252,7 @@ Specify the item value.
 
 <summary>
 
-GatewayList object {id, count, created\_at, 5 more }
+GatewayList object { id, count, created\_at, 5 more }
 
 </summary>
 
@@ -1326,7 +1326,7 @@ Specify the list name.
 
 <summary>
 
-type: optional "SERIAL"or "URL"or "DOMAIN"or 6 more
+type: optional "SERIAL" or "URL" or "DOMAIN" or 6 more
 
 Specify the list type.
 
@@ -1388,7 +1388,7 @@ formatdate-time
 
 <summary>
 
-ListCreateResponse object {id, created\_at, description, 4 more }
+ListCreateResponse object { id, created\_at, description, 4 more }
 
 </summary>
 
@@ -1456,7 +1456,7 @@ Specify the list name.
 
 <summary>
 
-type: optional "SERIAL"or "URL"or "DOMAIN"or 6 more
+type: optional "SERIAL" or "URL" or "DOMAIN" or 6 more
 
 Specify the list type.
 
@@ -1552,7 +1552,7 @@ DELETE/accounts/{account\_id}/gateway/locations/{location\_id}
 
 <summary>
 
-DOHEndpoint object {enabled, networks, require\_token }
+DOHEndpoint object { enabled, networks, require\_token }
 
 </summary>
 
@@ -1596,7 +1596,7 @@ Specify whether the DOH endpoint requires user identity authentication.
 
 <summary>
 
-DOTEndpoint object {enabled, networks }
+DOTEndpoint object { enabled, networks }
 
 </summary>
 
@@ -1634,7 +1634,7 @@ Specify the IP address or IP CIDR.
 
 <summary>
 
-Endpoint object {doh, dot, ipv4, ipv6 }
+Endpoint object { doh, dot, ipv4, ipv6 }
 
 Configure the destination endpoints for this location.
 
@@ -1664,7 +1664,7 @@ ipv6: <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resou
 
 <summary>
 
-IPNetwork object {network }
+IPNetwork object { network }
 
 </summary>
 
@@ -1682,7 +1682,7 @@ Specify the IP address or IP CIDR.
 
 <summary>
 
-IPV4Endpoint object {enabled }
+IPV4Endpoint object { enabled }
 
 </summary>
 
@@ -1700,7 +1700,7 @@ Indicate whether the IPv4 endpoint is enabled for this location.
 
 <summary>
 
-IPV6Endpoint object {enabled, networks }
+IPV6Endpoint object { enabled, networks }
 
 </summary>
 
@@ -1738,7 +1738,7 @@ Specify the IPv6 address or IPv6 CIDR.
 
 <summary>
 
-IPV6Network object {network }
+IPV6Network object { network }
 
 </summary>
 
@@ -1756,7 +1756,7 @@ Specify the IPv6 address or IPv6 CIDR.
 
 <summary>
 
-Location object {id, client\_default, created\_at, 13 more }
+Location object { id, client\_default, created\_at, 13 more }
 
 </summary>
 
@@ -1834,7 +1834,7 @@ Show the backup destination IPv4 address from the pair identified dns\_destinati
 
 <summary>
 
-max\_ttl: optional object {mode, ttl\_secs }
+max\_ttl: optional object { mode, ttl\_secs }
 
 Controls how DNS response TTLs are capped for this location relative to the account <code>max_ttl_secs</code> setting. Omitting <code>max_ttl</code> on update resets it to <code>inherit</code>.
 
@@ -1844,7 +1844,7 @@ Controls how DNS response TTLs are capped for this location relative to the acco
 
 <summary>
 
-mode: "inherit"or "override"or "disabled"
+mode: "inherit" or "override" or "disabled"
 
 <code>inherit</code> uses the account <code>max_ttl_secs</code>. <code>override</code> uses this location’s <code>ttl_secs</code>. <code>disabled</code> leaves returned TTLs unchanged.
 
@@ -1892,7 +1892,7 @@ Specify the location name.
 
 <summary>
 
-networks: optional array of object {network }
+networks: optional array of object { network }
 
 Specify the list of network ranges from which requests at this location originate. The list takes effect only if it is non-empty and the IPv4 endpoint is enabled for this location.
 
@@ -1938,7 +1938,7 @@ PUT/accounts/{account\_id}/gateway/logging
 
 <summary>
 
-LoggingSetting object {redact\_pii, settings\_by\_rule\_type }
+LoggingSetting object { redact\_pii, settings\_by\_rule\_type }
 
 </summary>
 
@@ -1952,7 +1952,7 @@ Indicate whether to redact personally identifiable information from activity log
 
 <summary>
 
-settings\_by\_rule\_type: optional object {dns, http, l4 }
+settings\_by\_rule\_type: optional object { dns, http, l4 }
 
 Configure logging settings for each rule type.
 
@@ -1962,7 +1962,7 @@ Configure logging settings for each rule type.
 
 <summary>
 
-dns: optional object {log\_all, log\_blocks }
+dns: optional object { log\_all, log\_blocks }
 
 Configure logging settings for DNS firewall.
 
@@ -1988,7 +1988,7 @@ Specify whether to log only blocking requests to this service.
 
 <summary>
 
-http: optional object {log\_all, log\_blocks }
+http: optional object { log\_all, log\_blocks }
 
 Configure logging settings for HTTP/HTTPS firewall.
 
@@ -2014,7 +2014,7 @@ Specify whether to log only blocking requests to this service.
 
 <summary>
 
-l4: optional object {log\_all, log\_blocks }
+l4: optional object { log\_all, log\_blocks }
 
 Configure logging settings for Network firewall.
 
@@ -2078,7 +2078,7 @@ Specify an IPv4 or IPv6 CIDR. Limit IPv6 to a maximum of /109 and IPv4 to a maxi
 
 <summary>
 
-ProxyEndpoint = object {ips, name, id, 4 more } or object {kind, name, id, 3 more }
+ProxyEndpoint = object { ips, name, id, 4 more } or object { kind, name, id, 3 more }
 
 </summary>
 
@@ -2088,7 +2088,7 @@ One of the following:
 
 <summary>
 
-IP object {ips, name, id, 4 more }
+IP object { ips, name, id, 4 more }
 
 </summary>
 
@@ -2140,7 +2140,7 @@ formatdate-time
 
 <summary>
 
-Identity object {kind, name, id, 3 more }
+Identity object { kind, name, id, 3 more }
 
 </summary>
 
@@ -2226,7 +2226,7 @@ POST/accounts/{account\_id}/gateway/rules/{rule\_id}/reset\_expiration
 
 <summary>
 
-DNSResolverSettingsV4 object {ip, port, route\_through\_private\_network, vnet\_id }
+DNSResolverSettingsV4 object { ip, port, route\_through\_private\_network, vnet\_id }
 
 </summary>
 
@@ -2262,7 +2262,7 @@ Specify an optional virtual network for this resolver. Uses default virtual netw
 
 <summary>
 
-DNSResolverSettingsV6 object {ip, port, route\_through\_private\_network, vnet\_id }
+DNSResolverSettingsV6 object { ip, port, route\_through\_private\_network, vnet\_id }
 
 </summary>
 
@@ -2298,7 +2298,7 @@ Specify an optional virtual network for this resolver. Uses default virtual netw
 
 <summary>
 
-GatewayFilter = "http"or "dns"or "l4"or 2 more
+GatewayFilter = "http" or "dns" or "l4" or 2 more
 
 Specify the protocol or layer to use.
 
@@ -2334,7 +2334,7 @@ One of the following:
 
 <summary>
 
-GatewayRule object {action, enabled, filters, 18 more }
+GatewayRule object { action, enabled, filters, 18 more }
 
 </summary>
 
@@ -2342,7 +2342,7 @@ GatewayRule object {action, enabled, filters, 18 more }
 
 <summary>
 
-action: "on"or "off"or "allow"or 14 more
+action: "on" or "off" or "allow" or 14 more
 
 Specify the action to perform when the associated traffic, identity, and device posture expressions either absent or evaluate to <code>true</code>.
 
@@ -2522,7 +2522,7 @@ Specify the wirefilter expression used for device posture check. The API automat
 
 <summary>
 
-expiration: optional object {expires\_at, duration, expired }
+expiration: optional object { expires\_at, duration, expired }
 
 Defines the expiration time stamp and default duration of a DNS policy. Takes precedence over the policy’s <code>schedule</code> configuration, if any. This does not apply to HTTP or network policies. Settable only for <code>dns</code> rules.
 
@@ -2616,7 +2616,7 @@ Indicate a warning for a misconfigured rule, if any.
 
 <summary>
 
-RuleSetting object {add\_headers, allow\_child\_bypass, biso\_admin\_controls, 25 more }
+RuleSetting object { add\_headers, allow\_child\_bypass, biso\_admin\_controls, 25 more }
 
 Defines settings for this rule. Settings apply only to specific rule types and must use compatible selectors. If Terraform detects drift, confirm the setting supports your rule type and check whether the API modifies the value. Use API-returned values in your configuration to prevent drift.
 
@@ -2638,7 +2638,7 @@ Set to enable MSP children to bypass this rule. Only parent MSP accounts can set
 
 <summary>
 
-biso\_admin\_controls: optional object {copy, dcp, dd, 10 more }
+biso\_admin\_controls: optional object { copy, dcp, dd, 10 more }
 
 Configure browser isolation behavior. Settable only for <code>http</code> rules with the action set to <code>isolate</code>.
 
@@ -2648,7 +2648,7 @@ Configure browser isolation behavior. Settable only for <code>http</code> rules 
 
 <summary>
 
-copy: optional "enabled"or "disabled"or "remote\_only"
+copy: optional "enabled" or "disabled" or "remote\_only"
 
 Configure copy behavior. If set to remote\_only, users cannot copy isolated content from the remote browser to the local clipboard. If this field is absent, copying remains enabled. Applies only when version == “v2”.
 
@@ -2694,7 +2694,7 @@ Set to false to enable keyboard usage. Only applies when <code>version == "v1"</
 
 <summary>
 
-download: optional "enabled"or "disabled"or "remote\_only"
+download: optional "enabled" or "disabled" or "remote\_only"
 
 Configure download behavior. When set to remote\_only, users can view downloads but cannot save them. If this field is absent, downloading remains enabled. Applies only when version == “v2”.
 
@@ -2734,7 +2734,7 @@ Set to false to enable uploading. Only applies when <code>version == "v1"</code>
 
 <summary>
 
-keyboard: optional "enabled"or "disabled"or "enable\_read\_only\_actions"
+keyboard: optional "enabled" or "disabled" or "enable\_read\_only\_actions"
 
 Configure keyboard usage behavior. When set to enable\_read\_only\_actions, only approved browser commands (find, copy, print, zoom, and select-all) may execute; other keyboard input is blocked from reaching the page. Copy and print remain subject to their independent controls. If this field is absent, keyboard usage remains enabled. Applies only when version == “v2”. The enable\_read\_only\_actions value requires an explicit version of “v2”.
 
@@ -2762,7 +2762,7 @@ One of the following:
 
 <summary>
 
-paste: optional "enabled"or "disabled"or "remote\_only"
+paste: optional "enabled" or "disabled" or "remote\_only"
 
 Configure paste behavior. If set to remote\_only, users cannot paste content from the local clipboard into isolated pages. If this field is absent, pasting remains enabled. Applies only when version == “v2”.
 
@@ -2790,7 +2790,7 @@ One of the following:
 
 <summary>
 
-printing: optional "enabled"or "disabled"
+printing: optional "enabled" or "disabled"
 
 Configure print behavior. Default, Printing is enabled. Applies only when version == “v2”.
 
@@ -2814,7 +2814,7 @@ One of the following:
 
 <summary>
 
-upload: optional "enabled"or "disabled"
+upload: optional "enabled" or "disabled"
 
 Configure upload behavior. If this field is absent, uploading remains enabled. Applies only when version == “v2”.
 
@@ -2838,7 +2838,7 @@ One of the following:
 
 <summary>
 
-version: optional "v1"or "v2"
+version: optional "v1" or "v2"
 
 Indicate which version of the browser isolation controls should apply.
 
@@ -2878,7 +2878,7 @@ minLength1
 
 <summary>
 
-block\_page: optional object {target\_uri, include\_context }
+block\_page: optional object { target\_uri, include\_context }
 
 Configure custom block page settings. If missing or null, use the account settings. Settable only for <code>http</code> rules with the action set to <code>block</code>.
 
@@ -2924,7 +2924,7 @@ Set to enable MSP accounts to bypass their parent’s rules. Only MSP child acco
 
 <summary>
 
-check\_session: optional object {duration, enforce }
+check\_session: optional object { duration, enforce }
 
 Configure session check behavior. Settable only for <code>l4</code> and <code>http</code> rules with the action set to <code>allow</code>.
 
@@ -2956,7 +2956,7 @@ Remove headers from allowed requests by name. A maximum of 20 header operations 
 
 <summary>
 
-dns\_resolvers: optional object {ipv4, ipv6 }
+dns\_resolvers: optional object { ipv4, ipv6 }
 
 Configure custom resolvers to route queries that match the resolver policy. Unused with ‘resolve\_dns\_through\_cloudflare’ or ‘resolve\_dns\_internally’ settings. DNS queries get routed to the address closest to their origin. Only valid when a rule’s action set to ‘resolve’. Settable only for <code>dns_resolver</code> rules.
 
@@ -3042,7 +3042,7 @@ Specify an optional virtual network for this resolver. Uses default virtual netw
 
 <summary>
 
-egress: optional object {ipv4, ipv4\_fallback, ipv6 }
+egress: optional object { ipv4, ipv4\_fallback, ipv6 }
 
 Configure how Gateway Proxy traffic egresses. You can enable this setting for rules with Egress actions and filters, or omit it to indicate local egress via WARP IPs. Settable only for <code>egress</code> rules.
 
@@ -3074,7 +3074,7 @@ Specify the IPv6 range to use for egress.
 
 <summary>
 
-forensic\_copy: optional object {enabled }
+forensic\_copy: optional object { enabled }
 
 Configure whether a copy of the HTTP request will be sent to storage when the rule matches.
 
@@ -3094,7 +3094,7 @@ Enable sending the copy to storage.
 
 <summary>
 
-forward: optional object {worker\_id }
+forward: optional object { worker\_id }
 
 Forward matching HTTP requests to a Worker. Required for <code>http</code> rules with the action set to <code>forward</code>.
 
@@ -3138,7 +3138,7 @@ Indicates whether to include IPs in DNS resolver indicator feed blocks. Default,
 
 <summary>
 
-l4override: optional object {ip, port }
+l4override: optional object { ip, port }
 
 Send matching traffic to the supplied destination IP address and port. Settable only for <code>l4</code> rules with the action set to <code>l4_override</code>.
 
@@ -3164,7 +3164,7 @@ Defines a port number to use for TCP/UDP overrides.
 
 <summary>
 
-notification\_settings: optional object {enabled, include\_context, msg, support\_url }
+notification\_settings: optional object { enabled, include\_context, msg, support\_url }
 
 Configure a notification to display on the user’s device when this rule matched. Settable for all types of rules with the action set to <code>block</code>.
 
@@ -3214,7 +3214,7 @@ Defines a an IP or set of IPs for overriding matched DNS queries. Settable only 
 
 <summary>
 
-payload\_log: optional object {enabled }
+payload\_log: optional object { enabled }
 
 Configure DLP payload logging. Settable only for <code>http</code> rules.
 
@@ -3234,7 +3234,7 @@ Enable DLP payload logging for this rule.
 
 <summary>
 
-quarantine: optional object {file\_types }
+quarantine: optional object { file\_types }
 
 Configure settings that apply to quarantine rules. Settable only for <code>http</code> rules.
 
@@ -3244,7 +3244,7 @@ Configure settings that apply to quarantine rules. Settable only for <code>http<
 
 <summary>
 
-file\_types: optional array of "exe"or "pdf"or "doc"or 10 more
+file\_types: optional array of "exe" or "pdf" or "doc" or 10 more
 
 Specify the types of files to sandbox.
 
@@ -3316,7 +3316,7 @@ One of the following:
 
 <summary>
 
-redirect: optional object {target\_uri, include\_context, preserve\_path\_and\_query }
+redirect: optional object { target\_uri, include\_context, preserve\_path\_and\_query }
 
 Apply settings to redirect rules. Settable only for <code>http</code> rules with the action set to <code>redirect</code>.
 
@@ -3350,7 +3350,7 @@ Specify whether to append the path and query parameters from the original reques
 
 <summary>
 
-resolve\_dns\_internally: optional object {fallback, view\_id }
+resolve\_dns\_internally: optional object { fallback, view\_id }
 
 Configure to forward the query to the internal DNS service, passing the specified ‘view\_id’ as input. Not used when ‘dns\_resolvers’ is specified or ‘resolve\_dns\_through\_cloudflare’ is set. Only valid when a rule’s action set to ‘resolve’. Settable only for <code>dns_resolver</code> rules.
 
@@ -3360,7 +3360,7 @@ Configure to forward the query to the internal DNS service, passing the specifie
 
 <summary>
 
-fallback: optional "none"or "public\_dns"
+fallback: optional "none" or "public\_dns"
 
 Specify the fallback behavior to apply when the internal DNS response code differs from ‘NOERROR’ or when the response data contains only CNAME records for ‘A’ or ‘AAAA’ queries.
 
@@ -3406,7 +3406,7 @@ Replace existing headers on allowed requests with the specified key-value pairs.
 
 <summary>
 
-untrusted\_cert: optional object {action }
+untrusted\_cert: optional object { action }
 
 Configure behavior when an upstream certificate is invalid or an SSL error occurs. Settable only for <code>http</code> rules with the action set to <code>allow</code>.
 
@@ -3416,7 +3416,7 @@ Configure behavior when an upstream certificate is invalid or an SSL error occur
 
 <summary>
 
-action: optional "pass\_through"or "block"or "error"
+action: optional "pass\_through" or "block" or "error"
 
 Defines the action performed when an untrusted certificate seen. The default action an error with HTTP code 526.
 
@@ -3452,7 +3452,7 @@ One of the following:
 
 <summary>
 
-Schedule object {fri, mon, sat, 5 more }
+Schedule object { fri, mon, sat, 5 more }
 
 Defines the schedule for activating DNS policies. Settable only for <code>dns</code> and <code>dns_resolver</code> rules.
 
@@ -3546,7 +3546,7 @@ POST/accounts/{account\_id}/gateway/certificates/{certificate\_id}/deactivate
 
 <summary>
 
-CertificateListResponse object {id, binding\_status, certificate, 10 more }
+CertificateListResponse object { id, binding\_status, certificate, 10 more }
 
 </summary>
 
@@ -3562,7 +3562,7 @@ maxLength36
 
 <summary>
 
-binding\_status: optional "pending\_deployment"or "available"or "pending\_deletion"or "inactive"
+binding\_status: optional "pending\_deployment" or "available" or "pending\_deletion" or "inactive"
 
 Indicate the read-only deployment status of the certificate on Cloudflare’s edge. Gateway TLS interception can use certificates in the ‘available’ (previously called ‘active’) state.
 
@@ -3642,7 +3642,7 @@ Indicate the read-only Data Localization Suite region the certificate authority�
 
 <summary>
 
-type: optional "custom"or "gateway\_managed"
+type: optional "custom" or "gateway\_managed"
 
 Indicate the read-only certificate type, BYO-PKI (custom) or Gateway-managed.
 
@@ -3682,7 +3682,7 @@ formatdate-time
 
 <summary>
 
-CertificateGetResponse object {id, binding\_status, certificate, 10 more }
+CertificateGetResponse object { id, binding\_status, certificate, 10 more }
 
 </summary>
 
@@ -3698,7 +3698,7 @@ maxLength36
 
 <summary>
 
-binding\_status: optional "pending\_deployment"or "available"or "pending\_deletion"or "inactive"
+binding\_status: optional "pending\_deployment" or "available" or "pending\_deletion" or "inactive"
 
 Indicate the read-only deployment status of the certificate on Cloudflare’s edge. Gateway TLS interception can use certificates in the ‘available’ (previously called ‘active’) state.
 
@@ -3778,7 +3778,7 @@ Indicate the read-only Data Localization Suite region the certificate authority�
 
 <summary>
 
-type: optional "custom"or "gateway\_managed"
+type: optional "custom" or "gateway\_managed"
 
 Indicate the read-only certificate type, BYO-PKI (custom) or Gateway-managed.
 
@@ -3818,7 +3818,7 @@ formatdate-time
 
 <summary>
 
-CertificateCreateResponse object {id, binding\_status, certificate, 10 more }
+CertificateCreateResponse object { id, binding\_status, certificate, 10 more }
 
 </summary>
 
@@ -3834,7 +3834,7 @@ maxLength36
 
 <summary>
 
-binding\_status: optional "pending\_deployment"or "available"or "pending\_deletion"or "inactive"
+binding\_status: optional "pending\_deployment" or "available" or "pending\_deletion" or "inactive"
 
 Indicate the read-only deployment status of the certificate on Cloudflare’s edge. Gateway TLS interception can use certificates in the ‘available’ (previously called ‘active’) state.
 
@@ -3914,7 +3914,7 @@ Indicate the read-only Data Localization Suite region the certificate authority�
 
 <summary>
 
-type: optional "custom"or "gateway\_managed"
+type: optional "custom" or "gateway\_managed"
 
 Indicate the read-only certificate type, BYO-PKI (custom) or Gateway-managed.
 
@@ -3954,7 +3954,7 @@ formatdate-time
 
 <summary>
 
-CertificateDeleteResponse object {id, binding\_status, certificate, 10 more }
+CertificateDeleteResponse object { id, binding\_status, certificate, 10 more }
 
 </summary>
 
@@ -3970,7 +3970,7 @@ maxLength36
 
 <summary>
 
-binding\_status: optional "pending\_deployment"or "available"or "pending\_deletion"or "inactive"
+binding\_status: optional "pending\_deployment" or "available" or "pending\_deletion" or "inactive"
 
 Indicate the read-only deployment status of the certificate on Cloudflare’s edge. Gateway TLS interception can use certificates in the ‘available’ (previously called ‘active’) state.
 
@@ -4050,7 +4050,7 @@ Indicate the read-only Data Localization Suite region the certificate authority�
 
 <summary>
 
-type: optional "custom"or "gateway\_managed"
+type: optional "custom" or "gateway\_managed"
 
 Indicate the read-only certificate type, BYO-PKI (custom) or Gateway-managed.
 
@@ -4090,7 +4090,7 @@ formatdate-time
 
 <summary>
 
-CertificateActivateResponse object {id, binding\_status, certificate, 10 more }
+CertificateActivateResponse object { id, binding\_status, certificate, 10 more }
 
 </summary>
 
@@ -4106,7 +4106,7 @@ maxLength36
 
 <summary>
 
-binding\_status: optional "pending\_deployment"or "available"or "pending\_deletion"or "inactive"
+binding\_status: optional "pending\_deployment" or "available" or "pending\_deletion" or "inactive"
 
 Indicate the read-only deployment status of the certificate on Cloudflare’s edge. Gateway TLS interception can use certificates in the ‘available’ (previously called ‘active’) state.
 
@@ -4186,7 +4186,7 @@ Indicate the read-only Data Localization Suite region the certificate authority�
 
 <summary>
 
-type: optional "custom"or "gateway\_managed"
+type: optional "custom" or "gateway\_managed"
 
 Indicate the read-only certificate type, BYO-PKI (custom) or Gateway-managed.
 
@@ -4226,7 +4226,7 @@ formatdate-time
 
 <summary>
 
-CertificateDeactivateResponse object {id, binding\_status, certificate, 10 more }
+CertificateDeactivateResponse object { id, binding\_status, certificate, 10 more }
 
 </summary>
 
@@ -4242,7 +4242,7 @@ maxLength36
 
 <summary>
 
-binding\_status: optional "pending\_deployment"or "available"or "pending\_deletion"or "inactive"
+binding\_status: optional "pending\_deployment" or "available" or "pending\_deletion" or "inactive"
 
 Indicate the read-only deployment status of the certificate on Cloudflare’s edge. Gateway TLS interception can use certificates in the ‘available’ (previously called ‘active’) state.
 
@@ -4322,7 +4322,7 @@ Indicate the read-only Data Localization Suite region the certificate authority�
 
 <summary>
 
-type: optional "custom"or "gateway\_managed"
+type: optional "custom" or "gateway\_managed"
 
 Indicate the read-only certificate type, BYO-PKI (custom) or Gateway-managed.
 
@@ -4386,7 +4386,7 @@ DELETE/accounts/{account\_id}/gateway/pacfiles/{pacfile\_id}
 
 <summary>
 
-PacfileListResponse object {id, created\_at, description, 4 more }
+PacfileListResponse object { id, created\_at, description, 4 more }
 
 </summary>
 
@@ -4438,7 +4438,7 @@ Unique URL to download the PAC file.
 
 <summary>
 
-PacfileGetResponse object {id, contents, created\_at, 5 more }
+PacfileGetResponse object { id, contents, created\_at, 5 more }
 
 </summary>
 
@@ -4496,7 +4496,7 @@ Unique URL to download the PAC file.
 
 <summary>
 
-PacfileCreateResponse object {id, contents, created\_at, 5 more }
+PacfileCreateResponse object { id, contents, created\_at, 5 more }
 
 </summary>
 
@@ -4554,7 +4554,7 @@ Unique URL to download the PAC file.
 
 <summary>
 
-PacfileUpdateResponse object {id, contents, created\_at, 5 more }
+PacfileUpdateResponse object { id, contents, created\_at, 5 more }
 
 </summary>
 
@@ -4630,7 +4630,7 @@ Indicate the identifier of the pair of IPv4 addresses assigned to this location.
 
 <summary>
 
-DNSDestinationIPListResponse object {id, backup\_ip, pair\_type, primary\_ip }
+DNSDestinationIPListResponse object { id, backup\_ip, pair\_type, primary\_ip }
 
 </summary>
 
@@ -4646,7 +4646,7 @@ backup\_ip: string
 
 <summary>
 
-pair\_type: "shared"or "dedicated"or "byoip"
+pair\_type: "shared" or "dedicated" or "byoip"
 
 Specify whether the pair shared across multiple accounts (shared) or available exclusively to this account. Non-shared pairs can contain Cloudflare-owned IPs (dedicated) or customer-provided IPs (byoip).
 

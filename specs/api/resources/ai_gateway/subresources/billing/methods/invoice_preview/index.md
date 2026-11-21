@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`AI Gateway Write``AI Gateway Read`
+`AI Gateway Metadata Read``AI Search Index Engine``Auto Rag Write Run Engine``AI Gateway Write``AI Gateway Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -70,7 +70,7 @@ account\_id: string
 
 <summary>
 
-errors: array of object {code, message }
+errors: array of object { code, message }
 
 </summary>
 
@@ -90,7 +90,7 @@ message: string
 
 <summary>
 
-messages: array of object {code, message }
+messages: array of object { code, message }
 
 </summary>
 
@@ -110,7 +110,7 @@ message: string
 
 <summary>
 
-result: object {id, amount\_due, amount\_paid, 6 more }
+result: object { id, amount\_due, amount\_paid, 6 more }
 
 </summary>
 
@@ -148,7 +148,7 @@ Lowercase ISO 4217 currency code.
 
 <summary>
 
-invoice\_lines: array of object {amount, currency, description, 4 more }
+invoice\_lines: array of object { amount, currency, description, 4 more }
 
 Invoice line items.
 
@@ -176,7 +176,7 @@ Line item description.
 
 <summary>
 
-period: object {end, start }
+period: object { end, start }
 
 Period the line item covers.
 
@@ -202,7 +202,7 @@ Start of the period, as a Unix timestamp in seconds.
 
 <summary>
 
-pricing: object {unit\_amount\_decimal }
+pricing: object { unit\_amount\_decimal }
 
 Line item pricing.
 
@@ -228,7 +228,7 @@ Quantity billed.
 
 <summary>
 
-pretax\_credit\_amounts: optional array of object {amount, type, credit\_balance\_transaction, discount }
+pretax\_credit\_amounts: optional array of object { amount, type, credit\_balance\_transaction, discount }
 
 Credits applied to the line item before tax.
 
@@ -282,7 +282,7 @@ Start of the billing period, as a Unix timestamp in seconds.
 
 <summary>
 
-status: "draft"or "open"or "paid"or 2 more
+status: "draft" or "open" or "paid" or 2 more
 
 Invoice status.
 
@@ -326,7 +326,7 @@ success: true
 
 <summary>
 
-result\_info: optional object {has\_more, page, per\_page, total\_count }
+result\_info: optional object { has\_more, page, per\_page, total\_count }
 
 </summary>
 

@@ -74,7 +74,7 @@ Freeform text describing the secret.
 
 <summary>
 
-scopes: optional array of "workers"or "ai\_gateway"or "dex"or 3 more
+scopes: optional array of "workers" or "ai\_gateway" or "dex" or 3 more
 
 The list of services that can use this secret, or null when the secret inherits its store’s scopes. Set it to null in a patch to inherit again. An empty list lets no service use the secret.
 
@@ -124,7 +124,7 @@ maxLength65536
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -146,7 +146,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -166,7 +166,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -188,7 +188,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -214,7 +214,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, created, modified, 5 more }
+result: optional object { id, created, modified, 5 more }
 
 </summary>
 
@@ -252,7 +252,7 @@ The name of the secret.
 
 <summary>
 
-status: "pending"or "active"or "deleted"
+status: "pending" or "active" or "deleted"
 
 </summary>
 
@@ -292,7 +292,7 @@ Freeform text describing the secret.
 
 <summary>
 
-scopes: optional array of "workers"or "ai\_gateway"or "dex"or 3 more
+scopes: optional array of "workers" or "ai\_gateway" or "dex" or 3 more
 
 The list of services that can use this secret, or null when the secret inherits its store’s scopes. Set it to null in a patch to inherit again. An empty list lets no service use the secret.
 

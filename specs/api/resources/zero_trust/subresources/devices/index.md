@@ -36,7 +36,7 @@ GET/accounts/{account\_id}/devices/{device\_id}
 
 <summary>
 
-Device object {id, created, deleted, 17 more }
+Device object { id, created, deleted, 17 more }
 
 </summary>
 
@@ -66,7 +66,7 @@ True if the device was deleted.
 
 <summary>
 
-device\_type: optional "windows"or "mac"or "linux"or 3 more
+device\_type: optional "windows" or "mac" or "linux" or 3 more
 
 </summary>
 
@@ -194,7 +194,7 @@ formatdate-time
 
 <summary>
 
-user: optional object {id, email, name }
+user: optional object { id, email, name }
 
 </summary>
 
@@ -238,7 +238,7 @@ The WARP client version.
 
 <summary>
 
-DeviceGetResponse object {id, account, created, 16 more }
+DeviceGetResponse object { id, account, created, 16 more }
 
 </summary>
 
@@ -254,7 +254,7 @@ maxLength36
 
 <summary>
 
-account: optional object {id, account\_type, name }
+account: optional object { id, account\_type, name }
 
 </summary>
 
@@ -372,7 +372,7 @@ formatdate-time
 
 <summary>
 
-user: optional object {id, email, name }
+user: optional object { id, email, name }
 
 </summary>
 
@@ -438,7 +438,7 @@ POST/accounts/{account\_id}/devices/physical-devices/{device\_id}/revoke
 
 <summary>
 
-DeviceListResponse object {id, active\_registrations, created\_at, 18 more }
+DeviceListResponse object { id, active\_registrations, created\_at, 18 more }
 
 A WARP Device.
 
@@ -514,7 +514,7 @@ A string that uniquely identifies the hardware or virtual machine (VM).
 
 <summary>
 
-last\_seen\_registration: optional object {policy }
+last\_seen\_registration: optional object { policy }
 
 The last seen registration for the device.
 
@@ -524,7 +524,7 @@ The last seen registration for the device.
 
 <summary>
 
-policy: optional object {id, default, deleted, 2 more }
+policy: optional object { id, default, deleted, 2 more }
 
 A summary of the device profile evaluated for the registration.
 
@@ -572,7 +572,7 @@ The RFC3339 timestamp of when the device settings profile last changed for the r
 
 <summary>
 
-last\_seen\_user: optional object {id, email, name }
+last\_seen\_user: optional object { id, email, name }
 
 The last user to use the WARP device.
 
@@ -660,7 +660,7 @@ The device serial number.
 
 <summary>
 
-DeviceGetResponse object {id, active\_registrations, created\_at, 18 more }
+DeviceGetResponse object { id, active\_registrations, created\_at, 18 more }
 
 A WARP Device.
 
@@ -736,7 +736,7 @@ A string that uniquely identifies the hardware or virtual machine (VM).
 
 <summary>
 
-last\_seen\_registration: optional object {policy }
+last\_seen\_registration: optional object { policy }
 
 The last seen registration for the device.
 
@@ -746,7 +746,7 @@ The last seen registration for the device.
 
 <summary>
 
-policy: optional object {id, default, deleted, 2 more }
+policy: optional object { id, default, deleted, 2 more }
 
 A summary of the device profile evaluated for the registration.
 
@@ -794,7 +794,7 @@ The RFC3339 timestamp of when the device settings profile last changed for the r
 
 <summary>
 
-last\_seen\_user: optional object {id, email, name }
+last\_seen\_user: optional object { id, email, name }
 
 The last user to use the WARP device.
 
@@ -904,7 +904,7 @@ POST/accounts/{account\_id}/devices/resilience/disconnect
 
 <summary>
 
-GlobalWARPOverrideGetResponse object {disconnect, timestamp }
+GlobalWARPOverrideGetResponse object { disconnect, timestamp }
 
 </summary>
 
@@ -930,7 +930,7 @@ formatdate-time
 
 <summary>
 
-GlobalWARPOverrideCreateResponse object {disconnect, timestamp }
+GlobalWARPOverrideCreateResponse object { disconnect, timestamp }
 
 </summary>
 
@@ -988,7 +988,7 @@ POST/accounts/{account\_id}/devices/registrations/unrevoke
 
 <summary>
 
-RegistrationListResponse object {id, created\_at, device, 12 more }
+RegistrationListResponse object { id, created\_at, device, 12 more }
 
 A WARP configuration tied to a single user. Multiple registrations can be created from a single WARP device.
 
@@ -1010,7 +1010,7 @@ The RFC3339 timestamp when the registration was created.
 
 <summary>
 
-device: object {id, name, client\_version }
+device: object { id, name, client\_version }
 
 Device details embedded inside of a registration.
 
@@ -1054,7 +1054,7 @@ The RFC3339 timestamp when the registration was last seen.
 
 <summary>
 
-registration\_type: "warp"or "browser\_extension"
+registration\_type: "warp" or "browser\_extension"
 
 The registration client type, derived from device\_type.
 
@@ -1096,7 +1096,7 @@ The type of encryption key used by the WARP client for the active key. Currently
 
 <summary>
 
-policy: optional object {id, default, deleted, 2 more }
+policy: optional object { id, default, deleted, 2 more }
 
 The device settings profile assigned to this registration.
 
@@ -1152,7 +1152,7 @@ Type of the tunnel - wireguard or masque.
 
 <summary>
 
-user: optional object {id, email, name }
+user: optional object { id, email, name }
 
 </summary>
 
@@ -1202,7 +1202,7 @@ The virtual IPv6 address assigned to the network interface of the tunnel for thi
 
 <summary>
 
-RegistrationGetResponse object {id, created\_at, device, 12 more }
+RegistrationGetResponse object { id, created\_at, device, 12 more }
 
 A WARP configuration tied to a single user. Multiple registrations can be created from a single WARP device.
 
@@ -1224,7 +1224,7 @@ The RFC3339 timestamp when the registration was created.
 
 <summary>
 
-device: object {id, name, client\_version }
+device: object { id, name, client\_version }
 
 Device details embedded inside of a registration.
 
@@ -1268,7 +1268,7 @@ The RFC3339 timestamp when the registration was last seen.
 
 <summary>
 
-registration\_type: "warp"or "browser\_extension"
+registration\_type: "warp" or "browser\_extension"
 
 The registration client type, derived from device\_type.
 
@@ -1310,7 +1310,7 @@ The type of encryption key used by the WARP client for the active key. Currently
 
 <summary>
 
-policy: optional object {id, default, deleted, 2 more }
+policy: optional object { id, default, deleted, 2 more }
 
 The device settings profile assigned to this registration.
 
@@ -1366,7 +1366,7 @@ Type of the tunnel - wireguard or masque.
 
 <summary>
 
-user: optional object {id, email, name }
+user: optional object { id, email, name }
 
 </summary>
 
@@ -1456,7 +1456,7 @@ DELETE/accounts/{account\_id}/dex/devices/dex\_tests/{dex\_test\_id}
 
 <summary>
 
-SchemaData object {host, kind, method }
+SchemaData object { host, kind, method }
 
 The configuration object which contains the details for the WARP client to conduct the test.
 
@@ -1472,7 +1472,7 @@ The desired endpoint to test.
 
 <summary>
 
-kind: "http"or "traceroute"
+kind: "http" or "traceroute"
 
 The type of test.
 
@@ -1506,7 +1506,7 @@ The HTTP request method type.
 
 <summary>
 
-SchemaHTTP object {data, enabled, interval, 7 more }
+SchemaHTTP object { data, enabled, interval, 7 more }
 
 </summary>
 
@@ -1552,7 +1552,7 @@ Additional details about the test.
 
 <summary>
 
-target\_policies: optional array of object {id, default, name }
+target\_policies: optional array of object { id, default, name }
 
 DEX rules targeted by this test
 
@@ -1610,7 +1610,7 @@ formatdate-time
 
 <summary>
 
-DEXTestDeleteResponse object {dex\_tests }
+DEXTestDeleteResponse object { dex\_tests }
 
 </summary>
 
@@ -1664,7 +1664,7 @@ Additional details about the test.
 
 <summary>
 
-target\_policies: optional array of object {id, default, name }
+target\_policies: optional array of object { id, default, name }
 
 DEX rules targeted by this test
 
@@ -1750,7 +1750,7 @@ DELETE/accounts/{account\_id}/devices/ip-profiles/{profile\_id}
 
 <summary>
 
-IPProfile object {id, created\_at, description, 6 more }
+IPProfile object { id, created\_at, description, 6 more }
 
 </summary>
 
@@ -1818,7 +1818,7 @@ The RFC3339Nano timestamp when the Device IP profile was last updated.
 
 <summary>
 
-IPProfileDeleteResponse object {id }
+IPProfileDeleteResponse object { id }
 
 </summary>
 
@@ -1860,7 +1860,7 @@ DELETE/accounts/{account\_id}/devices/deployment-groups/{group\_id}
 
 <summary>
 
-DeploymentGroup object {id, created\_at, name, 3 more }
+DeploymentGroup object { id, created\_at, name, 3 more }
 
 </summary>
 
@@ -1896,7 +1896,7 @@ The RFC3339Nano timestamp when the deployment group was last updated.
 
 <summary>
 
-version\_config: array of object {target\_environment, version }
+version\_config: array of object { target\_environment, version }
 
 Contains version configurations for different target environments.
 
@@ -1968,7 +1968,7 @@ The RFC3339Nano timestamp when the deployment group was last updated.
 
 <summary>
 
-version\_config: array of object {target\_environment, version }
+version\_config: array of object { target\_environment, version }
 
 Contains version configurations for different target environments.
 
@@ -2004,7 +2004,7 @@ Contains a list of policy IDs assigned to this deployment group.
 
 <summary>
 
-DeploymentGroupDeleteResponse object {id }
+DeploymentGroupDeleteResponse object { id }
 
 </summary>
 
@@ -2046,7 +2046,7 @@ DELETE/accounts/{account\_id}/devices/networks/{network\_id}
 
 <summary>
 
-DeviceNetwork object {config, name, network\_id, type }
+DeviceNetwork object { config, name, network\_id, type }
 
 </summary>
 
@@ -2054,7 +2054,7 @@ DeviceNetwork object {config, name, network\_id, type }
 
 <summary>
 
-config: optional object {tls\_sockaddr, sha256 }
+config: optional object { tls\_sockaddr, sha256 }
 
 The configuration object containing information for the WARP client to detect the managed network.
 
@@ -2112,7 +2112,7 @@ GET/accounts/{account\_id}/dex/devices/{device\_id}/fleet-status/live
 
 <summary>
 
-FleetStatusGetResponse object {colo, deviceId, mode, 40 more }
+FleetStatusGetResponse object { colo, deviceId, mode, 40 more }
 
 </summary>
 
@@ -2190,7 +2190,7 @@ formatfloat
 
 <summary>
 
-cpuPctByApp: optional array of object {cpu\_pct, name }
+cpuPctByApp: optional array of object { cpu\_pct, name }
 
 </summary>
 
@@ -2220,7 +2220,7 @@ Application name.
 
 <summary>
 
-deviceIpv4: optional object {address, asn, aso, 4 more }
+deviceIpv4: optional object { address, asn, aso, 4 more }
 
 </summary>
 
@@ -2240,7 +2240,7 @@ aso: optional string
 
 <summary>
 
-location: optional object {city, country\_iso, state\_iso, zip }
+location: optional object { city, country\_iso, state\_iso, zip }
 
 </summary>
 
@@ -2286,7 +2286,7 @@ IP version (<code>1</code> for IPv4, <code>2</code> for IPv6, <code>0</code> if 
 
 <summary>
 
-deviceIpv6: optional object {address, asn, aso, 4 more }
+deviceIpv6: optional object { address, asn, aso, 4 more }
 
 </summary>
 
@@ -2306,7 +2306,7 @@ aso: optional string
 
 <summary>
 
-location: optional object {city, country\_iso, state\_iso, zip }
+location: optional object { city, country\_iso, state\_iso, zip }
 
 </summary>
 
@@ -2398,7 +2398,7 @@ firewallEnabled: optional boolean
 
 <summary>
 
-gatewayIpv4: optional object {address, asn, aso, 4 more }
+gatewayIpv4: optional object { address, asn, aso, 4 more }
 
 </summary>
 
@@ -2418,7 +2418,7 @@ aso: optional string
 
 <summary>
 
-location: optional object {city, country\_iso, state\_iso, zip }
+location: optional object { city, country\_iso, state\_iso, zip }
 
 </summary>
 
@@ -2464,7 +2464,7 @@ IP version (<code>1</code> for IPv4, <code>2</code> for IPv6, <code>0</code> if 
 
 <summary>
 
-gatewayIpv6: optional object {address, asn, aso, 4 more }
+gatewayIpv6: optional object { address, asn, aso, 4 more }
 
 </summary>
 
@@ -2484,7 +2484,7 @@ aso: optional string
 
 <summary>
 
-location: optional object {city, country\_iso, state\_iso, zip }
+location: optional object { city, country\_iso, state\_iso, zip }
 
 </summary>
 
@@ -2536,7 +2536,7 @@ formatint64
 
 <summary>
 
-ispIpv4: optional object {address, asn, aso, 4 more }
+ispIpv4: optional object { address, asn, aso, 4 more }
 
 </summary>
 
@@ -2556,7 +2556,7 @@ aso: optional string
 
 <summary>
 
-location: optional object {city, country\_iso, state\_iso, zip }
+location: optional object { city, country\_iso, state\_iso, zip }
 
 </summary>
 
@@ -2602,7 +2602,7 @@ IP version (<code>1</code> for IPv4, <code>2</code> for IPv6, <code>0</code> if 
 
 <summary>
 
-ispIpv6: optional object {address, asn, aso, 4 more }
+ispIpv6: optional object { address, asn, aso, 4 more }
 
 </summary>
 
@@ -2622,7 +2622,7 @@ aso: optional string
 
 <summary>
 
-location: optional object {city, country\_iso, state\_iso, zip }
+location: optional object { city, country\_iso, state\_iso, zip }
 
 </summary>
 
@@ -2706,7 +2706,7 @@ formatfloat
 
 <summary>
 
-ramUsedPctByApp: optional array of object {name, ram\_used\_pct }
+ramUsedPctByApp: optional array of object { name, ram\_used\_pct }
 
 </summary>
 
@@ -2742,7 +2742,7 @@ Device registration identifier (UUID v4). On multi-user devices, this uniquely i
 
 <summary>
 
-rtt: optional object {minRttUs, rttUs, rttVarUs }
+rtt: optional object { minRttUs, rttUs, rttVarUs }
 
 Round-trip time statistics for the WARP tunnel.
 
@@ -2752,7 +2752,7 @@ Round-trip time statistics for the WARP tunnel.
 
 <summary>
 
-minRttUs: optional object {downstream, upstream }
+minRttUs: optional object { downstream, upstream }
 
 Minimum round-trip time in microseconds.
 
@@ -2774,7 +2774,7 @@ upstream: optional number
 
 <summary>
 
-rttUs: optional object {downstream, upstream }
+rttUs: optional object { downstream, upstream }
 
 Round-trip time in microseconds.
 
@@ -2796,7 +2796,7 @@ upstream: optional number
 
 <summary>
 
-rttVarUs: optional object {downstream, upstream }
+rttVarUs: optional object { downstream, upstream }
 
 Round-trip time variance in microseconds.
 
@@ -2826,7 +2826,7 @@ switchLocked: optional boolean
 
 <summary>
 
-tunnelStats: optional object {bytesLost, bytesReceived, bytesRetransmitted, 6 more }
+tunnelStats: optional object { bytesLost, bytesReceived, bytesRetransmitted, 6 more }
 
 WARP tunnel packet and byte counters.
 
@@ -2836,7 +2836,7 @@ WARP tunnel packet and byte counters.
 
 <summary>
 
-bytesLost: optional object {downstream, upstream }
+bytesLost: optional object { downstream, upstream }
 
 Number of bytes lost, split by direction.
 
@@ -2858,7 +2858,7 @@ upstream: optional number
 
 <summary>
 
-bytesReceived: optional object {downstream, upstream }
+bytesReceived: optional object { downstream, upstream }
 
 Number of bytes received, split by direction.
 
@@ -2880,7 +2880,7 @@ upstream: optional number
 
 <summary>
 
-bytesRetransmitted: optional object {downstream, upstream }
+bytesRetransmitted: optional object { downstream, upstream }
 
 Number of bytes retransmitted, split by direction.
 
@@ -2902,7 +2902,7 @@ upstream: optional number
 
 <summary>
 
-bytesSent: optional object {downstream, upstream }
+bytesSent: optional object { downstream, upstream }
 
 Number of bytes sent, split by direction.
 
@@ -2924,7 +2924,7 @@ upstream: optional number
 
 <summary>
 
-packetsLost: optional object {downstream, upstream }
+packetsLost: optional object { downstream, upstream }
 
 Number of packets lost, split by direction.
 
@@ -2946,7 +2946,7 @@ upstream: optional number
 
 <summary>
 
-packetsReceived: optional object {downstream, upstream }
+packetsReceived: optional object { downstream, upstream }
 
 Number of packets received, split by direction.
 
@@ -2968,7 +2968,7 @@ upstream: optional number
 
 <summary>
 
-packetsRetransmitted: optional object {downstream, upstream }
+packetsRetransmitted: optional object { downstream, upstream }
 
 Number of packets retransmitted, split by direction.
 
@@ -2990,7 +2990,7 @@ upstream: optional number
 
 <summary>
 
-packetsSent: optional object {downstream, upstream }
+packetsSent: optional object { downstream, upstream }
 
 Number of packets sent, split by direction.
 
@@ -3040,7 +3040,7 @@ formatint64
 
 <summary>
 
-DevicePolicyCertificates object {enabled }
+DevicePolicyCertificates object { enabled }
 
 </summary>
 
@@ -3058,7 +3058,7 @@ The current status of the device policy certificate provisioning feature for WAR
 
 <summary>
 
-FallbackDomain object {suffix, description, dns\_server }
+FallbackDomain object { suffix, description, dns\_server }
 
 </summary>
 
@@ -3090,7 +3090,7 @@ A list of IP addresses to handle domain resolution.
 
 <summary>
 
-SettingsPolicy object {allow\_mode\_switch, allow\_updates, allowed\_to\_leave, 32 more }
+SettingsPolicy object { allow\_mode\_switch, allow\_updates, allowed\_to\_leave, 32 more }
 
 </summary>
 
@@ -3122,7 +3122,7 @@ The amount of time in seconds to reconnect after having been disabled.
 
 <summary>
 
-browser\_extension\_config: optional object {proxy\_control, proxy\_enabled }
+browser\_extension\_config: optional object { proxy\_control, proxy\_enabled }
 
 Browser extension proxy settings. Required when profile\_type is browser\_extension and invalid for WARP profiles.
 
@@ -3132,7 +3132,7 @@ Browser extension proxy settings. Required when profile\_type is browser\_extens
 
 <summary>
 
-proxy\_control: "unlocked"or "locked"
+proxy\_control: "unlocked" or "locked"
 
 Whether the user may disable the browser extension proxy.
 
@@ -3192,7 +3192,7 @@ If the <code>dns_server</code> field of a fallback domain is not present, the cl
 
 <summary>
 
-dns\_search\_suffixes: optional array of object {suffix, description }
+dns\_search\_suffixes: optional array of object { suffix, description }
 
 List of DNS search suffixes to apply to clients. Suffixes are evaluated in order. Use an empty array to clear.
 
@@ -3248,7 +3248,7 @@ One of the following:
 
 <summary>
 
-TeamsDevicesExcludeSplitTunnelWithAddress object {address, description }
+TeamsDevicesExcludeSplitTunnelWithAddress object { address, description }
 
 </summary>
 
@@ -3274,7 +3274,7 @@ maxLength100
 
 <summary>
 
-TeamsDevicesExcludeSplitTunnelWithHost object {host, description }
+TeamsDevicesExcludeSplitTunnelWithHost object { host, description }
 
 </summary>
 
@@ -3346,7 +3346,7 @@ gateway\_unique\_id: optional string
 
 <summary>
 
-global\_acceleration: optional object {api\_endpoints, enabled, masque\_endpoints, 3 more }
+global\_acceleration: optional object { api\_endpoints, enabled, masque\_endpoints, 3 more }
 
 Global Acceleration settings for China. When configured, WARP clients connect to the Global Accelerator addresses instead of the default ones. Please contact your account representative to enable this feature on your account. See <a href="https://developers.cloudflare.com/china-network/concepts/global-acceleration/">https://developers.cloudflare.com/china-network/concepts/global-acceleration/</a>.
 
@@ -3408,7 +3408,7 @@ One of the following:
 
 <summary>
 
-TeamsDevicesIncludeSplitTunnelWithAddress object {address, description }
+TeamsDevicesIncludeSplitTunnelWithAddress object { address, description }
 
 </summary>
 
@@ -3434,7 +3434,7 @@ maxLength100
 
 <summary>
 
-TeamsDevicesIncludeSplitTunnelWithHost object {host, description }
+TeamsDevicesIncludeSplitTunnelWithHost object { host, description }
 
 </summary>
 
@@ -3504,7 +3504,7 @@ The precedence of the policy. Lower values indicate higher precedence. Policies 
 
 <summary>
 
-profile\_type: optional "warp"or "browser\_extension"
+profile\_type: optional "warp" or "browser\_extension"
 
 The client type to which the device settings profile applies. This field is set when the profile is created and cannot be changed.
 
@@ -3540,7 +3540,7 @@ Determines whether the WARP client indicates to SCCM that it is inside a VPN bou
 
 <summary>
 
-service\_mode\_v2: optional object {mode, port }
+service\_mode\_v2: optional object { mode, port }
 
 </summary>
 
@@ -3576,7 +3576,7 @@ Whether to allow the user to turn off the WARP switch and disconnect the client.
 
 <summary>
 
-Deprecatedtarget\_tests: optional array of object {id, name }
+Deprecatedtarget\_tests: optional array of object { id, name }
 
 </summary>
 
@@ -3612,7 +3612,7 @@ Determines whether uninstalling the WARP client requires an override code. (Wind
 
 <summary>
 
-virtual\_networks: optional object {allowed, default }
+virtual\_networks: optional object { allowed, default }
 
 Virtual network access settings for the device.
 
@@ -3644,7 +3644,7 @@ formatuuid
 
 <summary>
 
-SplitTunnelExclude = object {address, description } or object {host, description }
+SplitTunnelExclude = object { address, description } or object { host, description }
 
 </summary>
 
@@ -3654,7 +3654,7 @@ One of the following:
 
 <summary>
 
-TeamsDevicesExcludeSplitTunnelWithAddress object {address, description }
+TeamsDevicesExcludeSplitTunnelWithAddress object { address, description }
 
 </summary>
 
@@ -3680,7 +3680,7 @@ maxLength100
 
 <summary>
 
-TeamsDevicesExcludeSplitTunnelWithHost object {host, description }
+TeamsDevicesExcludeSplitTunnelWithHost object { host, description }
 
 </summary>
 
@@ -3710,7 +3710,7 @@ maxLength100
 
 <summary>
 
-SplitTunnelInclude = object {address, description } or object {host, description }
+SplitTunnelInclude = object { address, description } or object { host, description }
 
 </summary>
 
@@ -3720,7 +3720,7 @@ One of the following:
 
 <summary>
 
-TeamsDevicesIncludeSplitTunnelWithAddress object {address, description }
+TeamsDevicesIncludeSplitTunnelWithAddress object { address, description }
 
 </summary>
 
@@ -3746,7 +3746,7 @@ maxLength100
 
 <summary>
 
-TeamsDevicesIncludeSplitTunnelWithHost object {host, description }
+TeamsDevicesIncludeSplitTunnelWithHost object { host, description }
 
 </summary>
 
@@ -3788,7 +3788,7 @@ PATCH/accounts/{account\_id}/devices/policy
 
 <summary>
 
-DefaultGetResponse object {allow\_mode\_switch, allow\_updates, allowed\_to\_leave, 26 more }
+DefaultGetResponse object { allow\_mode\_switch, allow\_updates, allowed\_to\_leave, 26 more }
 
 </summary>
 
@@ -3838,7 +3838,7 @@ If the <code>dns_server</code> field of a fallback domain is not present, the cl
 
 <summary>
 
-dns\_search\_suffixes: optional array of object {suffix, description }
+dns\_search\_suffixes: optional array of object { suffix, description }
 
 List of DNS search suffixes to apply to clients. Suffixes are evaluated in order. Use an empty array to clear.
 
@@ -3894,7 +3894,7 @@ One of the following:
 
 <summary>
 
-TeamsDevicesExcludeSplitTunnelWithAddress object {address, description }
+TeamsDevicesExcludeSplitTunnelWithAddress object { address, description }
 
 </summary>
 
@@ -3920,7 +3920,7 @@ maxLength100
 
 <summary>
 
-TeamsDevicesExcludeSplitTunnelWithHost object {host, description }
+TeamsDevicesExcludeSplitTunnelWithHost object { host, description }
 
 </summary>
 
@@ -3992,7 +3992,7 @@ gateway\_unique\_id: optional string
 
 <summary>
 
-global\_acceleration: optional object {api\_endpoints, enabled, masque\_endpoints, 3 more }
+global\_acceleration: optional object { api\_endpoints, enabled, masque\_endpoints, 3 more }
 
 Global Acceleration settings for China. When configured, WARP clients connect to the Global Accelerator addresses instead of the default ones. Please contact your account representative to enable this feature on your account. See <a href="https://developers.cloudflare.com/china-network/concepts/global-acceleration/">https://developers.cloudflare.com/china-network/concepts/global-acceleration/</a>.
 
@@ -4054,7 +4054,7 @@ One of the following:
 
 <summary>
 
-TeamsDevicesIncludeSplitTunnelWithAddress object {address, description }
+TeamsDevicesIncludeSplitTunnelWithAddress object { address, description }
 
 </summary>
 
@@ -4080,7 +4080,7 @@ maxLength100
 
 <summary>
 
-TeamsDevicesIncludeSplitTunnelWithHost object {host, description }
+TeamsDevicesIncludeSplitTunnelWithHost object { host, description }
 
 </summary>
 
@@ -4128,7 +4128,7 @@ maxLength36
 
 <summary>
 
-profile\_type: optional "warp"or "browser\_extension"
+profile\_type: optional "warp" or "browser\_extension"
 
 The client type to which the device settings profile applies. This field is set when the profile is created and cannot be changed.
 
@@ -4164,7 +4164,7 @@ Determines whether the WARP client indicates to SCCM that it is inside a VPN bou
 
 <summary>
 
-service\_mode\_v2: optional object {mode, port }
+service\_mode\_v2: optional object { mode, port }
 
 </summary>
 
@@ -4212,7 +4212,7 @@ Determines whether uninstalling the WARP client requires an override code. (Wind
 
 <summary>
 
-virtual\_networks: optional object {allowed, default }
+virtual\_networks: optional object { allowed, default }
 
 Virtual network access settings for the device.
 
@@ -4244,7 +4244,7 @@ formatuuid
 
 <summary>
 
-DefaultEditResponse object {allow\_mode\_switch, allow\_updates, allowed\_to\_leave, 26 more }
+DefaultEditResponse object { allow\_mode\_switch, allow\_updates, allowed\_to\_leave, 26 more }
 
 </summary>
 
@@ -4294,7 +4294,7 @@ If the <code>dns_server</code> field of a fallback domain is not present, the cl
 
 <summary>
 
-dns\_search\_suffixes: optional array of object {suffix, description }
+dns\_search\_suffixes: optional array of object { suffix, description }
 
 List of DNS search suffixes to apply to clients. Suffixes are evaluated in order. Use an empty array to clear.
 
@@ -4350,7 +4350,7 @@ One of the following:
 
 <summary>
 
-TeamsDevicesExcludeSplitTunnelWithAddress object {address, description }
+TeamsDevicesExcludeSplitTunnelWithAddress object { address, description }
 
 </summary>
 
@@ -4376,7 +4376,7 @@ maxLength100
 
 <summary>
 
-TeamsDevicesExcludeSplitTunnelWithHost object {host, description }
+TeamsDevicesExcludeSplitTunnelWithHost object { host, description }
 
 </summary>
 
@@ -4448,7 +4448,7 @@ gateway\_unique\_id: optional string
 
 <summary>
 
-global\_acceleration: optional object {api\_endpoints, enabled, masque\_endpoints, 3 more }
+global\_acceleration: optional object { api\_endpoints, enabled, masque\_endpoints, 3 more }
 
 Global Acceleration settings for China. When configured, WARP clients connect to the Global Accelerator addresses instead of the default ones. Please contact your account representative to enable this feature on your account. See <a href="https://developers.cloudflare.com/china-network/concepts/global-acceleration/">https://developers.cloudflare.com/china-network/concepts/global-acceleration/</a>.
 
@@ -4510,7 +4510,7 @@ One of the following:
 
 <summary>
 
-TeamsDevicesIncludeSplitTunnelWithAddress object {address, description }
+TeamsDevicesIncludeSplitTunnelWithAddress object { address, description }
 
 </summary>
 
@@ -4536,7 +4536,7 @@ maxLength100
 
 <summary>
 
-TeamsDevicesIncludeSplitTunnelWithHost object {host, description }
+TeamsDevicesIncludeSplitTunnelWithHost object { host, description }
 
 </summary>
 
@@ -4584,7 +4584,7 @@ maxLength36
 
 <summary>
 
-profile\_type: optional "warp"or "browser\_extension"
+profile\_type: optional "warp" or "browser\_extension"
 
 The client type to which the device settings profile applies. This field is set when the profile is created and cannot be changed.
 
@@ -4620,7 +4620,7 @@ Determines whether the WARP client indicates to SCCM that it is inside a VPN bou
 
 <summary>
 
-service\_mode\_v2: optional object {mode, port }
+service\_mode\_v2: optional object { mode, port }
 
 </summary>
 
@@ -4668,7 +4668,7 @@ Determines whether uninstalling the WARP client requires an override code. (Wind
 
 <summary>
 
-virtual\_networks: optional object {allowed, default }
+virtual\_networks: optional object { allowed, default }
 
 Virtual network access settings for the device.
 
@@ -4820,7 +4820,7 @@ CarbonblackInput = string
 
 <summary>
 
-ClientCertificateInput object {certificate\_id, cn }
+ClientCertificateInput object { certificate\_id, cn }
 
 </summary>
 
@@ -4846,7 +4846,7 @@ Common Name that is protected by the certificate.
 
 <summary>
 
-CrowdstrikeInput object {connection\_id, last\_seen, operator, 6 more }
+CrowdstrikeInput object { connection\_id, last\_seen, operator, 6 more }
 
 </summary>
 
@@ -4866,7 +4866,7 @@ For more details on last seen, please refer to the Crowdstrike documentation.
 
 <summary>
 
-operator: optional "&lt;"or "&lt;="or "&gt;"or 2 more
+operator: optional "&lt;" or "&lt;=" or "&gt;" or 2 more
 
 Operator.
 
@@ -4920,7 +4920,7 @@ SensorConfig.
 
 <summary>
 
-state: optional "online"or "offline"or "unknown"
+state: optional "online" or "offline" or "unknown"
 
 For more details on state, please refer to the Crowdstrike documentation.
 
@@ -4954,7 +4954,7 @@ Version.
 
 <summary>
 
-versionOperator: optional "&lt;"or "&lt;="or "&gt;"or 2 more
+versionOperator: optional "&lt;" or "&lt;=" or "&gt;" or 2 more
 
 Version Operator.
 
@@ -5006,7 +5006,7 @@ One of the following:
 
 <summary>
 
-FileInput object {operating\_system, path, exists, 2 more }
+FileInput object { operating\_system, path, exists, 2 more }
 
 </summary>
 
@@ -5014,7 +5014,7 @@ FileInput object {operating\_system, path, exists, 2 more }
 
 <summary>
 
-operating\_system: "windows"or "linux"or "mac"
+operating\_system: "windows" or "linux" or "mac"
 
 Operating system.
 
@@ -5070,7 +5070,7 @@ Signing certificate thumbprint.
 
 <summary>
 
-UniqueClientIDInput object {id, operating\_system }
+UniqueClientIDInput object { id, operating\_system }
 
 </summary>
 
@@ -5084,7 +5084,7 @@ List ID.
 
 <summary>
 
-operating\_system: "android"or "ios"or "chromeos"
+operating\_system: "android" or "ios" or "chromeos"
 
 Operating System.
 
@@ -5116,7 +5116,7 @@ One of the following:
 
 <summary>
 
-DomainJoinedInput object {operating\_system, domain }
+DomainJoinedInput object { operating\_system, domain }
 
 </summary>
 
@@ -5140,7 +5140,7 @@ Domain.
 
 <summary>
 
-OSVersionInput object {operating\_system, operator, version, 3 more }
+OSVersionInput object { operating\_system, operator, version, 3 more }
 
 </summary>
 
@@ -5154,7 +5154,7 @@ Operating System.
 
 <summary>
 
-operator: "&lt;"or "&lt;="or "&gt;"or 2 more
+operator: "&lt;" or "&lt;=" or "&gt;" or 2 more
 
 Operator.
 
@@ -5218,7 +5218,7 @@ Additional operating system version details. For Windows, the UBR (Update Build 
 
 <summary>
 
-FirewallInput object {enabled, operating\_system }
+FirewallInput object { enabled, operating\_system }
 
 </summary>
 
@@ -5232,7 +5232,7 @@ Enabled.
 
 <summary>
 
-operating\_system: "windows"or "mac"
+operating\_system: "windows" or "mac"
 
 Operating System.
 
@@ -5260,7 +5260,7 @@ One of the following:
 
 <summary>
 
-SentineloneInput object {operating\_system, path, sha256, thumbprint }
+SentineloneInput object { operating\_system, path, sha256, thumbprint }
 
 </summary>
 
@@ -5268,7 +5268,7 @@ SentineloneInput object {operating\_system, path, sha256, thumbprint }
 
 <summary>
 
-operating\_system: "windows"or "linux"or "mac"
+operating\_system: "windows" or "linux" or "mac"
 
 Operating system.
 
@@ -5318,7 +5318,7 @@ Signing certificate thumbprint.
 
 <summary>
 
-TeamsDevicesCarbonblackInputRequest object {operating\_system, path, sha256, thumbprint }
+TeamsDevicesCarbonblackInputRequest object { operating\_system, path, sha256, thumbprint }
 
 </summary>
 
@@ -5326,7 +5326,7 @@ TeamsDevicesCarbonblackInputRequest object {operating\_system, path, sha256, thu
 
 <summary>
 
-operating\_system: "windows"or "linux"or "mac"
+operating\_system: "windows" or "linux" or "mac"
 
 Operating system.
 
@@ -5376,7 +5376,7 @@ Signing certificate thumbprint.
 
 <summary>
 
-TeamsDevicesAccessSerialNumberListInputRequest object {id }
+TeamsDevicesAccessSerialNumberListInputRequest object { id }
 
 </summary>
 
@@ -5396,7 +5396,7 @@ maxLength36
 
 <summary>
 
-DiskEncryptionInput object {checkDisks, requireAll }
+DiskEncryptionInput object { checkDisks, requireAll }
 
 </summary>
 
@@ -5420,7 +5420,7 @@ Whether to check all disks for encryption.
 
 <summary>
 
-TeamsDevicesApplicationInputRequest object {operating\_system, path, sha256, thumbprint }
+TeamsDevicesApplicationInputRequest object { operating\_system, path, sha256, thumbprint }
 
 </summary>
 
@@ -5428,7 +5428,7 @@ TeamsDevicesApplicationInputRequest object {operating\_system, path, sha256, thu
 
 <summary>
 
-operating\_system: "windows"or "linux"or "mac"
+operating\_system: "windows" or "linux" or "mac"
 
 Operating system.
 
@@ -5478,7 +5478,7 @@ Signing certificate thumbprint.
 
 <summary>
 
-ClientCertificateInput object {certificate\_id, cn }
+ClientCertificateInput object { certificate\_id, cn }
 
 </summary>
 
@@ -5504,7 +5504,7 @@ Common Name that is protected by the certificate.
 
 <summary>
 
-TeamsDevicesClientCertificateV2InputRequest object {certificate\_id, check\_private\_key, operating\_system, 4 more }
+TeamsDevicesClientCertificateV2InputRequest object { certificate\_id, check\_private\_key, operating\_system, 4 more }
 
 </summary>
 
@@ -5526,7 +5526,7 @@ Confirm the certificate was not imported from another device. We recommend keepi
 
 <summary>
 
-operating\_system: "windows"or "linux"or "mac"
+operating\_system: "windows" or "linux" or "mac"
 
 Operating system.
 
@@ -5560,7 +5560,7 @@ Certificate Common Name. This may include one or more variables in the ${ } nota
 
 <summary>
 
-extended\_key\_usage: optional array of "clientAuth"or "emailProtection"
+extended\_key\_usage: optional array of "clientAuth" or "emailProtection"
 
 List of values indicating purposes for which the certificate public key can be used.
 
@@ -5584,7 +5584,7 @@ One of the following:
 
 <summary>
 
-locations: optional object {paths, trust\_stores }
+locations: optional object { paths, trust\_stores }
 
 </summary>
 
@@ -5598,7 +5598,7 @@ List of paths to check for client certificate on linux.
 
 <summary>
 
-trust\_stores: optional array of "system"or "user"
+trust\_stores: optional array of "system" or "user"
 
 List of trust stores to check for client certificate.
 
@@ -5636,7 +5636,7 @@ List of certificate Subject Alternative Names.
 
 <summary>
 
-TeamsDevicesAntivirusInputRequest object {update\_window\_days }
+TeamsDevicesAntivirusInputRequest object { update\_window\_days }
 
 </summary>
 
@@ -5654,7 +5654,7 @@ Number of days that the antivirus should be updated within.
 
 <summary>
 
-WorkspaceOneInput object {compliance\_status, connection\_id }
+WorkspaceOneInput object { compliance\_status, connection\_id }
 
 </summary>
 
@@ -5662,7 +5662,7 @@ WorkspaceOneInput object {compliance\_status, connection\_id }
 
 <summary>
 
-compliance\_status: "compliant"or "noncompliant"or "unknown"
+compliance\_status: "compliant" or "noncompliant" or "unknown"
 
 Compliance Status.
 
@@ -5700,7 +5700,7 @@ Posture Integration ID.
 
 <summary>
 
-CrowdstrikeInput object {connection\_id, last\_seen, operator, 6 more }
+CrowdstrikeInput object { connection\_id, last\_seen, operator, 6 more }
 
 </summary>
 
@@ -5720,7 +5720,7 @@ For more details on last seen, please refer to the Crowdstrike documentation.
 
 <summary>
 
-operator: optional "&lt;"or "&lt;="or "&gt;"or 2 more
+operator: optional "&lt;" or "&lt;=" or "&gt;" or 2 more
 
 Operator.
 
@@ -5774,7 +5774,7 @@ SensorConfig.
 
 <summary>
 
-state: optional "online"or "offline"or "unknown"
+state: optional "online" or "offline" or "unknown"
 
 For more details on state, please refer to the Crowdstrike documentation.
 
@@ -5808,7 +5808,7 @@ Version.
 
 <summary>
 
-versionOperator: optional "&lt;"or "&lt;="or "&gt;"or 2 more
+versionOperator: optional "&lt;" or "&lt;=" or "&gt;" or 2 more
 
 Version Operator.
 
@@ -5848,7 +5848,7 @@ One of the following:
 
 <summary>
 
-IntuneInput object {compliance\_status, connection\_id }
+IntuneInput object { compliance\_status, connection\_id }
 
 </summary>
 
@@ -5856,7 +5856,7 @@ IntuneInput object {compliance\_status, connection\_id }
 
 <summary>
 
-compliance\_status: "compliant"or "noncompliant"or "unknown"or 5 more
+compliance\_status: "compliant" or "noncompliant" or "unknown" or 5 more
 
 Compliance Status.
 
@@ -5914,7 +5914,7 @@ Posture Integration ID.
 
 <summary>
 
-KolideInput object {connection\_id, auth\_state, countOperator, issue\_count }
+KolideInput object { connection\_id, auth\_state, countOperator, issue\_count }
 
 </summary>
 
@@ -5928,7 +5928,7 @@ Posture Integration ID.
 
 <summary>
 
-auth\_state: optional array of "Good"or "Notified"or "Will Block"or "Blocked"
+auth\_state: optional array of "Good" or "Notified" or "Will Block" or "Blocked"
 
 The set of Kolide device authentication states that pass the posture check. Device must match one of the specified states.
 
@@ -5960,7 +5960,7 @@ One of the following:
 
 <summary>
 
-countOperator: optional "&lt;"or "&lt;="or "&gt;"or 2 more
+countOperator: optional "&lt;" or "&lt;=" or "&gt;" or 2 more
 
 Count Operator.
 
@@ -6006,7 +6006,7 @@ The Number of Issues.
 
 <summary>
 
-TaniumInput object {connection\_id, eid\_last\_seen, operator, 3 more }
+TaniumInput object { connection\_id, eid\_last\_seen, operator, 3 more }
 
 </summary>
 
@@ -6026,7 +6026,7 @@ For more details on eid last seen, refer to the Tanium documentation.
 
 <summary>
 
-operator: optional "&lt;"or "&lt;="or "&gt;"or 2 more
+operator: optional "&lt;" or "&lt;=" or "&gt;" or 2 more
 
 Operator to evaluate risk\_level or eid\_last\_seen.
 
@@ -6062,7 +6062,7 @@ One of the following:
 
 <summary>
 
-risk\_level: optional "low"or "medium"or "high"or "critical"
+risk\_level: optional "low" or "medium" or "high" or "critical"
 
 For more details on risk level, refer to the Tanium documentation.
 
@@ -6094,7 +6094,7 @@ One of the following:
 
 <summary>
 
-scoreOperator: optional "&lt;"or "&lt;="or "&gt;"or 2 more
+scoreOperator: optional "&lt;" or "&lt;=" or "&gt;" or 2 more
 
 Score Operator.
 
@@ -6140,7 +6140,7 @@ For more details on total score, refer to the Tanium documentation.
 
 <summary>
 
-SentineloneS2sInput object {connection\_id, active\_threats, infected, 4 more }
+SentineloneS2sInput object { connection\_id, active\_threats, infected, 4 more }
 
 </summary>
 
@@ -6172,7 +6172,7 @@ Whether device is active.
 
 <summary>
 
-network\_status: optional "connected"or "disconnected"or "disconnecting"or "connecting"
+network\_status: optional "connected" or "disconnected" or "disconnecting" or "connecting"
 
 Network status of device.
 
@@ -6204,7 +6204,7 @@ One of the following:
 
 <summary>
 
-operational\_state: optional "na"or "partially\_disabled"or "auto\_fully\_disabled"or 4 more
+operational\_state: optional "na" or "partially\_disabled" or "auto\_fully\_disabled" or 4 more
 
 Agent operational state.
 
@@ -6248,7 +6248,7 @@ One of the following:
 
 <summary>
 
-operator: optional "&lt;"or "&lt;="or "&gt;"or 2 more
+operator: optional "&lt;" or "&lt;=" or "&gt;" or 2 more
 
 Operator.
 
@@ -6288,7 +6288,7 @@ One of the following:
 
 <summary>
 
-TeamsDevicesCustomS2sInputRequest object {connection\_id, operator, score }
+TeamsDevicesCustomS2sInputRequest object { connection\_id, operator, score }
 
 </summary>
 
@@ -6302,7 +6302,7 @@ Posture Integration ID.
 
 <summary>
 
-operator: "&lt;"or "&lt;="or "&gt;"or 2 more
+operator: "&lt;" or "&lt;=" or "&gt;" or 2 more
 
 Operator.
 
@@ -6352,7 +6352,7 @@ A value between 0-100 assigned to devices set by the 3rd party posture provider.
 
 <summary>
 
-DeviceMatch object {platform }
+DeviceMatch object { platform }
 
 </summary>
 
@@ -6360,7 +6360,7 @@ DeviceMatch object {platform }
 
 <summary>
 
-platform: optional "windows"or "mac"or "linux"or 3 more
+platform: optional "windows" or "mac" or "linux" or 3 more
 
 </summary>
 
@@ -6402,7 +6402,7 @@ One of the following:
 
 <summary>
 
-DevicePostureRule object {id, description, enabled, 6 more }
+DevicePostureRule object { id, description, enabled, 6 more }
 
 </summary>
 
@@ -6452,7 +6452,7 @@ The conditions that the client must match to run the rule.
 
 <summary>
 
-platform: optional "windows"or "mac"or "linux"or 3 more
+platform: optional "windows" or "mac" or "linux" or 3 more
 
 </summary>
 
@@ -6506,7 +6506,7 @@ Polling frequency for the WARP client posture check. Default: <code>5m</code> (p
 
 <summary>
 
-type: optional "file"or "application"or "tanium"or 20 more
+type: optional "file" or "application" or "tanium" or 20 more
 
 The type of device posture rule.
 
@@ -6618,7 +6618,7 @@ One of the following:
 
 <summary>
 
-DiskEncryptionInput object {checkDisks, requireAll }
+DiskEncryptionInput object { checkDisks, requireAll }
 
 </summary>
 
@@ -6642,7 +6642,7 @@ Whether to check all disks for encryption.
 
 <summary>
 
-DomainJoinedInput object {operating\_system, domain }
+DomainJoinedInput object { operating\_system, domain }
 
 </summary>
 
@@ -6666,7 +6666,7 @@ Domain.
 
 <summary>
 
-FileInput object {operating\_system, path, exists, 2 more }
+FileInput object { operating\_system, path, exists, 2 more }
 
 </summary>
 
@@ -6674,7 +6674,7 @@ FileInput object {operating\_system, path, exists, 2 more }
 
 <summary>
 
-operating\_system: "windows"or "linux"or "mac"
+operating\_system: "windows" or "linux" or "mac"
 
 Operating system.
 
@@ -6730,7 +6730,7 @@ Signing certificate thumbprint.
 
 <summary>
 
-FirewallInput object {enabled, operating\_system }
+FirewallInput object { enabled, operating\_system }
 
 </summary>
 
@@ -6744,7 +6744,7 @@ Enabled.
 
 <summary>
 
-operating\_system: "windows"or "mac"
+operating\_system: "windows" or "mac"
 
 Operating System.
 
@@ -6772,7 +6772,7 @@ One of the following:
 
 <summary>
 
-IntuneInput object {compliance\_status, connection\_id }
+IntuneInput object { compliance\_status, connection\_id }
 
 </summary>
 
@@ -6780,7 +6780,7 @@ IntuneInput object {compliance\_status, connection\_id }
 
 <summary>
 
-compliance\_status: "compliant"or "noncompliant"or "unknown"or 5 more
+compliance\_status: "compliant" or "noncompliant" or "unknown" or 5 more
 
 Compliance Status.
 
@@ -6838,7 +6838,7 @@ Posture Integration ID.
 
 <summary>
 
-KolideInput object {connection\_id, auth\_state, countOperator, issue\_count }
+KolideInput object { connection\_id, auth\_state, countOperator, issue\_count }
 
 </summary>
 
@@ -6852,7 +6852,7 @@ Posture Integration ID.
 
 <summary>
 
-auth\_state: optional array of "Good"or "Notified"or "Will Block"or "Blocked"
+auth\_state: optional array of "Good" or "Notified" or "Will Block" or "Blocked"
 
 The set of Kolide device authentication states that pass the posture check. Device must match one of the specified states.
 
@@ -6884,7 +6884,7 @@ One of the following:
 
 <summary>
 
-countOperator: optional "&lt;"or "&lt;="or "&gt;"or 2 more
+countOperator: optional "&lt;" or "&lt;=" or "&gt;" or 2 more
 
 Count Operator.
 
@@ -6930,7 +6930,7 @@ The Number of Issues.
 
 <summary>
 
-OSVersionInput object {operating\_system, operator, version, 3 more }
+OSVersionInput object { operating\_system, operator, version, 3 more }
 
 </summary>
 
@@ -6944,7 +6944,7 @@ Operating System.
 
 <summary>
 
-operator: "&lt;"or "&lt;="or "&gt;"or 2 more
+operator: "&lt;" or "&lt;=" or "&gt;" or 2 more
 
 Operator.
 
@@ -7008,7 +7008,7 @@ Additional operating system version details. For Windows, the UBR (Update Build 
 
 <summary>
 
-SentineloneInput object {operating\_system, path, sha256, thumbprint }
+SentineloneInput object { operating\_system, path, sha256, thumbprint }
 
 </summary>
 
@@ -7016,7 +7016,7 @@ SentineloneInput object {operating\_system, path, sha256, thumbprint }
 
 <summary>
 
-operating\_system: "windows"or "linux"or "mac"
+operating\_system: "windows" or "linux" or "mac"
 
 Operating system.
 
@@ -7066,7 +7066,7 @@ Signing certificate thumbprint.
 
 <summary>
 
-SentineloneS2sInput object {connection\_id, active\_threats, infected, 4 more }
+SentineloneS2sInput object { connection\_id, active\_threats, infected, 4 more }
 
 </summary>
 
@@ -7098,7 +7098,7 @@ Whether device is active.
 
 <summary>
 
-network\_status: optional "connected"or "disconnected"or "disconnecting"or "connecting"
+network\_status: optional "connected" or "disconnected" or "disconnecting" or "connecting"
 
 Network status of device.
 
@@ -7130,7 +7130,7 @@ One of the following:
 
 <summary>
 
-operational\_state: optional "na"or "partially\_disabled"or "auto\_fully\_disabled"or 4 more
+operational\_state: optional "na" or "partially\_disabled" or "auto\_fully\_disabled" or 4 more
 
 Agent operational state.
 
@@ -7174,7 +7174,7 @@ One of the following:
 
 <summary>
 
-operator: optional "&lt;"or "&lt;="or "&gt;"or 2 more
+operator: optional "&lt;" or "&lt;=" or "&gt;" or 2 more
 
 Operator.
 
@@ -7214,7 +7214,7 @@ One of the following:
 
 <summary>
 
-TaniumInput object {connection\_id, eid\_last\_seen, operator, 3 more }
+TaniumInput object { connection\_id, eid\_last\_seen, operator, 3 more }
 
 </summary>
 
@@ -7234,7 +7234,7 @@ For more details on eid last seen, refer to the Tanium documentation.
 
 <summary>
 
-operator: optional "&lt;"or "&lt;="or "&gt;"or 2 more
+operator: optional "&lt;" or "&lt;=" or "&gt;" or 2 more
 
 Operator to evaluate risk\_level or eid\_last\_seen.
 
@@ -7270,7 +7270,7 @@ One of the following:
 
 <summary>
 
-risk\_level: optional "low"or "medium"or "high"or "critical"
+risk\_level: optional "low" or "medium" or "high" or "critical"
 
 For more details on risk level, refer to the Tanium documentation.
 
@@ -7302,7 +7302,7 @@ One of the following:
 
 <summary>
 
-scoreOperator: optional "&lt;"or "&lt;="or "&gt;"or 2 more
+scoreOperator: optional "&lt;" or "&lt;=" or "&gt;" or 2 more
 
 Score Operator.
 
@@ -7348,7 +7348,7 @@ For more details on total score, refer to the Tanium documentation.
 
 <summary>
 
-UniqueClientIDInput object {id, operating\_system }
+UniqueClientIDInput object { id, operating\_system }
 
 </summary>
 
@@ -7362,7 +7362,7 @@ List ID.
 
 <summary>
 
-operating\_system: "android"or "ios"or "chromeos"
+operating\_system: "android" or "ios" or "chromeos"
 
 Operating System.
 
@@ -7394,7 +7394,7 @@ One of the following:
 
 <summary>
 
-WorkspaceOneInput object {compliance\_status, connection\_id }
+WorkspaceOneInput object { compliance\_status, connection\_id }
 
 </summary>
 
@@ -7402,7 +7402,7 @@ WorkspaceOneInput object {compliance\_status, connection\_id }
 
 <summary>
 
-compliance\_status: "compliant"or "noncompliant"or "unknown"
+compliance\_status: "compliant" or "noncompliant" or "unknown"
 
 Compliance Status.
 
@@ -7440,7 +7440,7 @@ Posture Integration ID.
 
 <summary>
 
-PostureDeleteResponse object {id }
+PostureDeleteResponse object { id }
 
 </summary>
 
@@ -7484,7 +7484,7 @@ DELETE/accounts/{account\_id}/devices/posture/integration/{integration\_id}
 
 <summary>
 
-Integration object {id, config, interval, 2 more }
+Integration object { id, config, interval, 2 more }
 
 </summary>
 
@@ -7500,7 +7500,7 @@ maxLength36
 
 <summary>
 
-config: optional object {api\_url, auth\_url, client\_id }
+config: optional object { api\_url, auth\_url, client\_id }
 
 The configuration object containing third-party integration information.
 
@@ -7544,7 +7544,7 @@ The name of the device posture integration.
 
 <summary>
 
-type: optional "workspace\_one"or "crowdstrike\_s2s"or "uptycs"or 5 more
+type: optional "workspace\_one" or "crowdstrike\_s2s" or "uptycs" or 5 more
 
 The type of device posture integration.
 
@@ -7596,7 +7596,7 @@ One of the following:
 
 <summary>
 
-IntegrationDeleteResponse = unknownor string
+IntegrationDeleteResponse = unknown or string
 
 </summary>
 
@@ -7628,7 +7628,7 @@ POST/accounts/{account\_id}/devices/revoke
 
 <summary>
 
-RevokeCreateResponse = unknownor string
+RevokeCreateResponse = unknown or string
 
 </summary>
 
@@ -7672,7 +7672,7 @@ DELETE/accounts/{account\_id}/devices/settings
 
 <summary>
 
-DeviceSettings object {disable\_for\_time, external\_emergency\_signal\_enabled, external\_emergency\_signal\_fingerprint, 6 more }
+DeviceSettings object { disable\_for\_time, external\_emergency\_signal\_enabled, external\_emergency\_signal\_fingerprint, 6 more }
 
 </summary>
 
@@ -7748,7 +7748,7 @@ POST/accounts/{account\_id}/devices/unrevoke
 
 <summary>
 
-UnrevokeCreateResponse = unknownor string
+UnrevokeCreateResponse = unknown or string
 
 </summary>
 
@@ -7784,7 +7784,7 @@ GET/accounts/{account\_id}/devices/registrations/{registration\_id}/override\_co
 
 <summary>
 
-OverrideCodeListResponse object {disable\_for\_time }
+OverrideCodeListResponse object { disable\_for\_time }
 
 </summary>
 
@@ -7792,7 +7792,7 @@ OverrideCodeListResponse object {disable\_for\_time }
 
 <summary>
 
-disable\_for\_time: optional object {"1", "12", "24", 2 more }
+disable\_for\_time: optional object { "1", "12", "24", 2 more }
 
 </summary>
 
@@ -7838,7 +7838,7 @@ Override code that is valid for 6 hours.
 
 <summary>
 
-OverrideCodeGetResponse object {disable\_for\_time }
+OverrideCodeGetResponse object { disable\_for\_time }
 
 </summary>
 

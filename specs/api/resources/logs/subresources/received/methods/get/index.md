@@ -74,7 +74,7 @@ maxLength32
 
 <summary>
 
-end: stringor number
+end: string or number
 
 Sets the (exclusive) end of the requested time frame. This can be a unix timestamp (in seconds or nanoseconds), or an absolute timestamp that conforms to RFC 3339. <code>end</code> must be at least five minutes earlier than now and must be later than <code>start</code>. Difference between <code>start</code> and <code>end</code> must be not greater than one hour.
 
@@ -122,7 +122,7 @@ minimum0
 
 <summary>
 
-start: optional stringor number
+start: optional string or number
 
 Sets the (inclusive) beginning of the requested time frame. This can be a unix timestamp (in seconds or nanoseconds), or an absolute timestamp that conforms to RFC 3339. At this point in time, it cannot exceed a time in the past greater than seven days.
 
@@ -146,7 +146,7 @@ number
 
 <summary>
 
-timestamps: optional "unix"or "unixnano"or "rfc3339"
+timestamps: optional "unix" or "unixnano" or "rfc3339"
 
 By default, timestamps in responses are returned as Unix nanosecond integers. The <code>?timestamps=</code> argument can be set to change the format in which response timestamps are returned. Possible values are: <code>unix</code>, <code>unixnano</code>, <code>rfc3339</code>. Note that <code>unix</code> and <code>unixnano</code> return timestamps as integers; <code>rfc3339</code> returns timestamps as strings.
 

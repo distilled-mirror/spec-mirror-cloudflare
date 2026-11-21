@@ -88,7 +88,7 @@ minimum1
 
 <summary>
 
-period: optional "current\_billing\_cycle"or "all"
+period: optional "current\_billing\_cycle" or "all"
 
 Select current subscription billing-cycle history or history across all cycles.
 
@@ -114,7 +114,7 @@ One of the following:
 
 <summary>
 
-errors: array of object {message, code }
+errors: array of object { message, code }
 
 Always empty on success.
 
@@ -140,7 +140,7 @@ Identifies the error or notice type.
 
 <summary>
 
-messages: array of object {message, code }
+messages: array of object { message, code }
 
 Contains informational notices about the response.
 
@@ -166,7 +166,7 @@ Identifies the error or notice type.
 
 <summary>
 
-result: array of object {action, balance\_cents, billing\_period\_end, 7 more }
+result: array of object { action, balance\_cents, billing\_period\_end, 7 more }
 
 Audit entries, newest first. An empty array when there are none.
 
@@ -176,7 +176,7 @@ Audit entries, newest first. An empty array when there are none.
 
 <summary>
 
-action: "notification"or "usage\_block"
+action: "notification" or "usage\_block"
 
 The action taken when the threshold is reached. <code>notification</code> sends an email to <code>notification_email</code>. <code>usage_block</code> blocks further usage of the product until the end of the billing period. Raising the threshold above the current balance, disabling the policy, or deleting it lifts the block early.
 
@@ -246,7 +246,7 @@ A human-readable explanation of the trigger.
 
 <summary>
 
-source: "kafka"or "policy\_revision"
+source: "kafka" or "policy\_revision"
 
 What caused the evaluation. <code>kafka</code> means a balance update. <code>policy_revision</code> means a change to the policy.
 

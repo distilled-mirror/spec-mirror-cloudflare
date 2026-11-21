@@ -46,7 +46,7 @@ POST/accounts/{account\_id}/workers/observability/telemetry/live-tail/heartbeat
 
 <summary>
 
-TelemetryKeysResponse object {key, lastSeenAt, type }
+TelemetryKeysResponse object { key, lastSeenAt, type }
 
 </summary>
 
@@ -62,7 +62,7 @@ lastSeenAt: number
 
 <summary>
 
-type: "string"or "boolean"or "number"
+type: "string" or "boolean" or "number"
 
 </summary>
 
@@ -92,7 +92,7 @@ One of the following:
 
 <summary>
 
-TelemetryQueryResponse object {run, statistics, agents, 6 more }
+TelemetryQueryResponse object { run, statistics, agents, 6 more }
 
 Complete results of a query run. The populated fields depend on the requested view type (events, calculations, invocations, traces, or agents).
 
@@ -102,7 +102,7 @@ Complete results of a query run. The populated fields depend on the requested vi
 
 <summary>
 
-run: object {id, accountId, dry, 8 more }
+run: object { id, accountId, dry, 8 more }
 
 Represents a single execution of a query against Workers Observability data, including the query definition, execution status, and performance statistics.
 
@@ -136,7 +136,7 @@ Number of time-series buckets used for the query. Higher values produce more det
 
 <summary>
 
-query: object {id, adhoc, created, 6 more }
+query: object { id, adhoc, created, 6 more }
 
 A saved query definition with its parameters, metadata, and ownership information.
 
@@ -156,7 +156,7 @@ If the query wasn’t explcitly saved
 
 <summary>
 
-created: stringor string
+created: string or string
 
 formatdate-time
 
@@ -200,7 +200,7 @@ minLength1
 
 <summary>
 
-parameters: object {calculations, datasets, filterCombination, 6 more }
+parameters: object { calculations, datasets, filterCombination, 6 more }
 
 </summary>
 
@@ -208,7 +208,7 @@ parameters: object {calculations, datasets, filterCombination, 6 more }
 
 <summary>
 
-calculations: optional array of object {operator, alias, key, keyType } or object {key, operator, alias, keyType }
+calculations: optional array of object { operator, alias, key, keyType } or object { key, operator, alias, keyType }
 
 Create Calculations to compute as part of the query.
 
@@ -220,7 +220,7 @@ One of the following:
 
 <summary>
 
-object {operator, alias, key, keyType }
+object { operator, alias, key, keyType }
 
 </summary>
 
@@ -228,7 +228,7 @@ object {operator, alias, key, keyType }
 
 <summary>
 
-operator: "count"or "COUNT"
+operator: "count" or "COUNT"
 
 </summary>
 
@@ -258,7 +258,7 @@ key: optional string
 
 <summary>
 
-keyType: optional "string"or "number"or "boolean"
+keyType: optional "string" or "number" or "boolean"
 
 </summary>
 
@@ -288,7 +288,7 @@ One of the following:
 
 <summary>
 
-object {key, operator, alias, keyType }
+object { key, operator, alias, keyType }
 
 </summary>
 
@@ -300,7 +300,7 @@ key: string
 
 <summary>
 
-operator: "uniq"or "max"or "min"or 33 more
+operator: "uniq" or "max" or "min" or 33 more
 
 </summary>
 
@@ -462,7 +462,7 @@ alias: optional string
 
 <summary>
 
-keyType: optional "string"or "number"or "boolean"
+keyType: optional "string" or "number" or "boolean"
 
 </summary>
 
@@ -502,7 +502,7 @@ Set the Datasets to query. Leave it empty to query all the datasets.
 
 <summary>
 
-filterCombination: optional "and"or "or"or "AND"or "OR"
+filterCombination: optional "and" or "or" or "AND" or "OR"
 
 Set a Flag to describe how to combine the filters on the query.
 
@@ -534,7 +534,7 @@ One of the following:
 
 <summary>
 
-filters: optional array of object {filterCombination, filters, kind } or object {key, operation, type, 2 more }
+filters: optional array of object { filterCombination, filters, kind } or object { key, operation, type, 2 more }
 
 Configure the Filters to apply to the query. Supports nested groups via kind: ‘group’.
 
@@ -546,7 +546,7 @@ One of the following:
 
 <summary>
 
-object {filterCombination, filters, kind }
+object { filterCombination, filters, kind }
 
 </summary>
 
@@ -554,7 +554,7 @@ object {filterCombination, filters, kind }
 
 <summary>
 
-filterCombination: "and"or "or"or "AND"or "OR"
+filterCombination: "and" or "or" or "AND" or "OR"
 
 </summary>
 
@@ -596,7 +596,7 @@ kind: "group"
 
 <summary>
 
-WorkersObservabilityFilterLeaf object {key, operation, type, 2 more }
+WorkersObservabilityFilterLeaf object { key, operation, type, 2 more }
 
 A filter condition applied to query results. Use the keys and values endpoints to discover available fields and their values before constructing filters.
 
@@ -612,7 +612,7 @@ Filter field name. Use verified keys from previous query results or the keys end
 
 <summary>
 
-operation: "includes"or "not\_includes"or "starts\_with"or 27 more
+operation: "includes" or "not\_includes" or "starts\_with" or 27 more
 
 Comparison operator. String operators: includes, not\_includes, starts\_with, ends\_with, regex. Existence: exists, is\_null. Set membership: in, not\_in (comma-separated values). Numeric: eq, neq, gt, gte, lt, lte.
 
@@ -748,7 +748,7 @@ One of the following:
 
 <summary>
 
-type: "string"or "number"or "boolean"
+type: "string" or "number" or "boolean"
 
 Data type of the filter field. Must match the actual type of the key being filtered.
 
@@ -782,7 +782,7 @@ Discriminator for leaf filter nodes. Always ‘filter’ when present; may be om
 
 <summary>
 
-value: optional stringor numberor boolean
+value: optional string or number or boolean
 
 Comparison value. Must match actual values in your data — verify with the values endpoint. Ensure the value type (string/number/boolean) matches the field type. String comparisons are case-sensitive. Regex uses RE2 syntax (no lookaheads/lookbehinds).
 
@@ -818,7 +818,7 @@ boolean
 
 <summary>
 
-groupBys: optional array of object {type, value }
+groupBys: optional array of object { type, value }
 
 Define how to group the results of the query.
 
@@ -828,7 +828,7 @@ Define how to group the results of the query.
 
 <summary>
 
-type: "string"or "number"or "boolean"
+type: "string" or "number" or "boolean"
 
 </summary>
 
@@ -862,7 +862,7 @@ value: string
 
 <summary>
 
-havings: optional array of object {key, operation, value }
+havings: optional array of object { key, operation, value }
 
 Configure the Having clauses that filter on calculations in the query result.
 
@@ -876,7 +876,7 @@ key: string
 
 <summary>
 
-operation: "eq"or "neq"or "gt"or 3 more
+operation: "eq" or "neq" or "gt" or 3 more
 
 </summary>
 
@@ -932,7 +932,7 @@ minimum0
 
 <summary>
 
-needle: optional object {value, isRegex, matchCase }
+needle: optional object { value, isRegex, matchCase }
 
 Define an expression to search using full-text search.
 
@@ -958,7 +958,7 @@ matchCase: optional boolean
 
 <summary>
 
-orderBy: optional object {value, order }
+orderBy: optional object { value, order }
 
 Configure the order of the results returned by the query.
 
@@ -974,7 +974,7 @@ Configure which Calculation to order the results by.
 
 <summary>
 
-order: optional "asc"or "desc"
+order: optional "asc" or "desc"
 
 Set the order of the results
 
@@ -1006,7 +1006,7 @@ One of the following:
 
 <summary>
 
-updated: stringor string
+updated: string or string
 
 formatdate-time
 
@@ -1038,7 +1038,7 @@ updatedBy: string
 
 <summary>
 
-status: "STARTED"or "COMPLETED"
+status: "STARTED" or "COMPLETED"
 
 Current execution status of the query run.
 
@@ -1062,7 +1062,7 @@ One of the following:
 
 <summary>
 
-timeframe: object {from, to }
+timeframe: object { from, to }
 
 Time range for the query execution. ‘from’ must be earlier than ‘to’. No fractional milliseconds.
 
@@ -1108,7 +1108,7 @@ ISO-8601 timestamp when the query run was created.
 
 <summary>
 
-statistics: optional object {bytes\_read, elapsed, rows\_read, abr\_level }
+statistics: optional object { bytes\_read, elapsed, rows\_read, abr\_level }
 
 Query performance statistics from the database (does not include network latency).
 
@@ -1156,7 +1156,7 @@ ISO-8601 timestamp when the query run was last updated.
 
 <summary>
 
-statistics: object {bytes\_read, elapsed, rows\_read, abr\_level }
+statistics: object { bytes\_read, elapsed, rows\_read, abr\_level }
 
 Query performance statistics from the database. Includes execution time, rows scanned, and bytes read. Does not include network latency.
 
@@ -1194,7 +1194,7 @@ The level of Adaptive Bit Rate (ABR) sampling used for the query. If empty the A
 
 <summary>
 
-agents: optional array of object {id, errors, models, 13 more }
+agents: optional array of object { id, errors, models, 13 more }
 
 Agent run summaries. Present when the query view is ‘agents’. Each entry represents one trace containing at least one agent invocation.
 
@@ -1240,7 +1240,7 @@ Number of spans in the run’s trace.
 
 <summary>
 
-status: "completed"or "error"
+status: "completed" or "error"
 
 Observed run status.
 
@@ -1322,7 +1322,7 @@ Output tokens summed across chat spans in the run’s trace; informational, not 
 
 <summary>
 
-calculations: optional array of object {aggregates, calculation, series, alias }
+calculations: optional array of object { aggregates, calculation, series, alias }
 
 Aggregated calculation results. Present when the query view is ‘calculations’. Contains computed metrics (count, avg, p99, etc.) with optional group-by breakdowns and time-series data.
 
@@ -1332,7 +1332,7 @@ Aggregated calculation results. Present when the query view is ‘calculations�
 
 <summary>
 
-aggregates: array of object {count, interval, sampleInterval, 2 more }
+aggregates: array of object { count, interval, sampleInterval, 2 more }
 
 </summary>
 
@@ -1364,7 +1364,7 @@ Result of the calculation. count, sum, avg, median, and percentiles are weighted
 
 <summary>
 
-groups: optional array of object {key, value }
+groups: optional array of object { key, value }
 
 </summary>
 
@@ -1376,7 +1376,7 @@ key: string
 
 <summary>
 
-value: stringor numberor boolean
+value: string or number or boolean
 
 </summary>
 
@@ -1414,7 +1414,7 @@ calculation: string
 
 <summary>
 
-series: array of object {data, time }
+series: array of object { data, time }
 
 </summary>
 
@@ -1422,7 +1422,7 @@ series: array of object {data, time }
 
 <summary>
 
-data: array of object {count, interval, sampleInterval, 4 more }
+data: array of object { count, interval, sampleInterval, 4 more }
 
 </summary>
 
@@ -1458,7 +1458,7 @@ firstSeen: optional string
 
 <summary>
 
-groups: optional array of object {key, value }
+groups: optional array of object { key, value }
 
 </summary>
 
@@ -1470,7 +1470,7 @@ key: string
 
 <summary>
 
-value: stringor numberor boolean
+value: string or number or boolean
 
 </summary>
 
@@ -1524,7 +1524,7 @@ alias: optional string
 
 <summary>
 
-compare: optional array of object {aggregates, calculation, series, alias }
+compare: optional array of object { aggregates, calculation, series, alias }
 
 Comparison calculation results from the previous time period. Present when the compare option is enabled. Same structure as calculations.
 
@@ -1534,7 +1534,7 @@ Comparison calculation results from the previous time period. Present when the c
 
 <summary>
 
-aggregates: array of object {count, interval, sampleInterval, 2 more }
+aggregates: array of object { count, interval, sampleInterval, 2 more }
 
 </summary>
 
@@ -1566,7 +1566,7 @@ Result of the calculation. count, sum, avg, median, and percentiles are weighted
 
 <summary>
 
-groups: optional array of object {key, value }
+groups: optional array of object { key, value }
 
 </summary>
 
@@ -1578,7 +1578,7 @@ key: string
 
 <summary>
 
-value: stringor numberor boolean
+value: string or number or boolean
 
 </summary>
 
@@ -1616,7 +1616,7 @@ calculation: string
 
 <summary>
 
-series: array of object {data, time }
+series: array of object { data, time }
 
 </summary>
 
@@ -1624,7 +1624,7 @@ series: array of object {data, time }
 
 <summary>
 
-data: array of object {count, interval, sampleInterval, 4 more }
+data: array of object { count, interval, sampleInterval, 4 more }
 
 </summary>
 
@@ -1660,7 +1660,7 @@ firstSeen: optional string
 
 <summary>
 
-groups: optional array of object {key, value }
+groups: optional array of object { key, value }
 
 </summary>
 
@@ -1672,7 +1672,7 @@ key: string
 
 <summary>
 
-value: stringor numberor boolean
+value: string or number or boolean
 
 </summary>
 
@@ -1726,7 +1726,7 @@ alias: optional string
 
 <summary>
 
-distribution: optional object {bins, bucketBoundaries, bucketMode, 2 more }
+distribution: optional object { bins, bucketBoundaries, bucketMode, 2 more }
 
 Bucketed 2D histogram of a numeric field over time. Present when chartType is ‘distribution’.
 
@@ -1748,7 +1748,7 @@ Raw bucket edges in the value’s native unit, length buckets.length + 1. Used f
 
 <summary>
 
-bucketMode: "log"or "linear"
+bucketMode: "log" or "linear"
 
 Bucketing scheme used to derive the boundaries. ‘log’ produces geometric edges; ‘linear’ produces fixed-width edges.
 
@@ -1788,7 +1788,7 @@ Sampling-corrected counts. matrix\[bucketIdx]\[binIdx] is the estimated number o
 
 <summary>
 
-events: optional object {count, events, fields, series }
+events: optional object { count, events, fields, series }
 
 Individual event results. Present when the query view is ‘events’. Contains the matching log lines and their metadata.
 
@@ -1804,7 +1804,7 @@ Total number of events matching the query (may exceed the number returned due to
 
 <summary>
 
-events: optional array of object {"$metadata", dataset, source, 3 more }
+events: optional array of object { "$metadata", dataset, source, 3 more }
 
 List of individual telemetry events matching the query.
 
@@ -1814,7 +1814,7 @@ List of individual telemetry events matching the query.
 
 <summary>
 
-"$metadata": object {id, account, cloudService, 35 more }
+"$metadata": object { id, account, cloudService, 35 more }
 
 Structured metadata extracted from the event. These fields are indexed and available for filtering and aggregation.
 
@@ -1988,7 +1988,7 @@ Human-readable name for this span.
 
 <summary>
 
-spanStatus: optional "unset"or "ok"or "error"
+spanStatus: optional "unset" or "ok" or "error"
 
 OpenTelemetry span status. Present only on spans. <code>unset</code> when the span did not set a status, including spans recorded before status was captured.
 
@@ -2108,7 +2108,7 @@ The dataset this event belongs to (e.g. cloudflare-workers).
 
 <summary>
 
-source: stringor map\[unknown]
+source: string or map\[unknown]
 
 Raw log payload. May be a string or a structured object depending on how the log was emitted.
 
@@ -2146,7 +2146,7 @@ Cloudflare Containers event information that enriches your logs for identifying 
 
 <summary>
 
-"$workers": optional object {eventType, scriptName, durableObjectId, 11 more } or object {cpuTimeMs, eventType, outcome, 15 more }
+"$workers": optional object { eventType, scriptName, durableObjectId, 11 more } or object { cpuTimeMs, eventType, outcome, 15 more }
 
 Cloudflare Workers event information that enriches your logs for identifying and debugging issues.
 
@@ -2158,7 +2158,7 @@ One of the following:
 
 <summary>
 
-object {eventType, scriptName, durableObjectId, 11 more }
+object { eventType, scriptName, durableObjectId, 11 more }
 
 </summary>
 
@@ -2166,7 +2166,7 @@ object {eventType, scriptName, durableObjectId, 11 more }
 
 <summary>
 
-eventType: "fetch"or "scheduled"or "alarm"or 9 more
+eventType: "fetch" or "scheduled" or "alarm" or 9 more
 
 </summary>
 
@@ -2244,7 +2244,7 @@ event: optional map\[unknown]
 
 <summary>
 
-executionModel: optional "durableObject"or "stateless"
+executionModel: optional "durableObject" or "stateless"
 
 </summary>
 
@@ -2266,7 +2266,7 @@ One of the following:
 
 <summary>
 
-gateway: optional object {requestId }
+gateway: optional object { requestId }
 
 </summary>
 
@@ -2286,7 +2286,7 @@ outcome: optional string
 
 <summary>
 
-preview: optional object {id, name, slug }
+preview: optional object { id, name, slug }
 
 </summary>
 
@@ -2314,7 +2314,7 @@ requestId: optional string
 
 <summary>
 
-scriptVersion: optional object {id, message, tag }
+scriptVersion: optional object { id, message, tag }
 
 </summary>
 
@@ -2354,7 +2354,7 @@ truncated: optional boolean
 
 <summary>
 
-object {cpuTimeMs, eventType, outcome, 15 more }
+object { cpuTimeMs, eventType, outcome, 15 more }
 
 </summary>
 
@@ -2366,7 +2366,7 @@ cpuTimeMs: number
 
 <summary>
 
-eventType: "fetch"or "scheduled"or "alarm"or 9 more
+eventType: "fetch" or "scheduled" or "alarm" or 9 more
 
 </summary>
 
@@ -2440,7 +2440,7 @@ wallTimeMs: number
 
 <summary>
 
-diagnosticsChannelEvents: optional array of object {channel, message, timestamp }
+diagnosticsChannelEvents: optional array of object { channel, message, timestamp }
 
 </summary>
 
@@ -2480,7 +2480,7 @@ event: optional map\[unknown]
 
 <summary>
 
-executionModel: optional "durableObject"or "stateless"
+executionModel: optional "durableObject" or "stateless"
 
 </summary>
 
@@ -2502,7 +2502,7 @@ One of the following:
 
 <summary>
 
-gateway: optional object {requestId }
+gateway: optional object { requestId }
 
 </summary>
 
@@ -2518,7 +2518,7 @@ requestId: string
 
 <summary>
 
-preview: optional object {id, name, slug }
+preview: optional object { id, name, slug }
 
 </summary>
 
@@ -2546,7 +2546,7 @@ requestId: optional string
 
 <summary>
 
-scriptVersion: optional object {id, message, tag }
+scriptVersion: optional object { id, message, tag }
 
 </summary>
 
@@ -2594,7 +2594,7 @@ truncated: optional boolean
 
 <summary>
 
-fields: optional array of object {key, type }
+fields: optional array of object { key, type }
 
 List of fields discovered in the matched events. Useful for building dynamic UIs.
 
@@ -2620,7 +2620,7 @@ Data type of the field (string, number, or boolean).
 
 <summary>
 
-series: optional array of object {data, time }
+series: optional array of object { data, time }
 
 Time-series data for the matched events, bucketed by the query granularity.
 
@@ -2630,7 +2630,7 @@ Time-series data for the matched events, bucketed by the query granularity.
 
 <summary>
 
-data: array of object {aggregates, count, interval, 3 more }
+data: array of object { aggregates, count, interval, 3 more }
 
 </summary>
 
@@ -2638,7 +2638,7 @@ data: array of object {aggregates, count, interval, 3 more }
 
 <summary>
 
-aggregates: object {\_count, \_interval, \_firstSeen, 2 more }
+aggregates: object { \_count, \_interval, \_firstSeen, 2 more }
 
 </summary>
 
@@ -2700,7 +2700,7 @@ errors: optional number
 
 <summary>
 
-groups: optional map\[stringor numberor boolean]
+groups: optional map\[string or number or boolean]
 
 Groups in the query results.
 
@@ -2744,7 +2744,7 @@ time: string
 
 <summary>
 
-invocations: optional map\[array of object {"$metadata", dataset, source, 3 more } ]
+invocations: optional map\[array of object { "$metadata", dataset, source, 3 more } ]
 
 Events grouped by invocation (request ID). Present when the query view is ‘invocations’. Each key is a request ID mapping to all events from that invocation.
 
@@ -2754,7 +2754,7 @@ Events grouped by invocation (request ID). Present when the query view is ‘inv
 
 <summary>
 
-"$metadata": object {id, account, cloudService, 35 more }
+"$metadata": object { id, account, cloudService, 35 more }
 
 Structured metadata extracted from the event. These fields are indexed and available for filtering and aggregation.
 
@@ -2928,7 +2928,7 @@ Human-readable name for this span.
 
 <summary>
 
-spanStatus: optional "unset"or "ok"or "error"
+spanStatus: optional "unset" or "ok" or "error"
 
 OpenTelemetry span status. Present only on spans. <code>unset</code> when the span did not set a status, including spans recorded before status was captured.
 
@@ -3048,7 +3048,7 @@ The dataset this event belongs to (e.g. cloudflare-workers).
 
 <summary>
 
-source: stringor map\[unknown]
+source: string or map\[unknown]
 
 Raw log payload. May be a string or a structured object depending on how the log was emitted.
 
@@ -3086,7 +3086,7 @@ Cloudflare Containers event information that enriches your logs for identifying 
 
 <summary>
 
-"$workers": optional object {eventType, scriptName, durableObjectId, 11 more } or object {cpuTimeMs, eventType, outcome, 15 more }
+"$workers": optional object { eventType, scriptName, durableObjectId, 11 more } or object { cpuTimeMs, eventType, outcome, 15 more }
 
 Cloudflare Workers event information that enriches your logs for identifying and debugging issues.
 
@@ -3098,7 +3098,7 @@ One of the following:
 
 <summary>
 
-object {eventType, scriptName, durableObjectId, 11 more }
+object { eventType, scriptName, durableObjectId, 11 more }
 
 </summary>
 
@@ -3106,7 +3106,7 @@ object {eventType, scriptName, durableObjectId, 11 more }
 
 <summary>
 
-eventType: "fetch"or "scheduled"or "alarm"or 9 more
+eventType: "fetch" or "scheduled" or "alarm" or 9 more
 
 </summary>
 
@@ -3184,7 +3184,7 @@ event: optional map\[unknown]
 
 <summary>
 
-executionModel: optional "durableObject"or "stateless"
+executionModel: optional "durableObject" or "stateless"
 
 </summary>
 
@@ -3206,7 +3206,7 @@ One of the following:
 
 <summary>
 
-gateway: optional object {requestId }
+gateway: optional object { requestId }
 
 </summary>
 
@@ -3226,7 +3226,7 @@ outcome: optional string
 
 <summary>
 
-preview: optional object {id, name, slug }
+preview: optional object { id, name, slug }
 
 </summary>
 
@@ -3254,7 +3254,7 @@ requestId: optional string
 
 <summary>
 
-scriptVersion: optional object {id, message, tag }
+scriptVersion: optional object { id, message, tag }
 
 </summary>
 
@@ -3294,7 +3294,7 @@ truncated: optional boolean
 
 <summary>
 
-object {cpuTimeMs, eventType, outcome, 15 more }
+object { cpuTimeMs, eventType, outcome, 15 more }
 
 </summary>
 
@@ -3306,7 +3306,7 @@ cpuTimeMs: number
 
 <summary>
 
-eventType: "fetch"or "scheduled"or "alarm"or 9 more
+eventType: "fetch" or "scheduled" or "alarm" or 9 more
 
 </summary>
 
@@ -3380,7 +3380,7 @@ wallTimeMs: number
 
 <summary>
 
-diagnosticsChannelEvents: optional array of object {channel, message, timestamp }
+diagnosticsChannelEvents: optional array of object { channel, message, timestamp }
 
 </summary>
 
@@ -3420,7 +3420,7 @@ event: optional map\[unknown]
 
 <summary>
 
-executionModel: optional "durableObject"or "stateless"
+executionModel: optional "durableObject" or "stateless"
 
 </summary>
 
@@ -3442,7 +3442,7 @@ One of the following:
 
 <summary>
 
-gateway: optional object {requestId }
+gateway: optional object { requestId }
 
 </summary>
 
@@ -3458,7 +3458,7 @@ requestId: string
 
 <summary>
 
-preview: optional object {id, name, slug }
+preview: optional object { id, name, slug }
 
 </summary>
 
@@ -3486,7 +3486,7 @@ requestId: optional string
 
 <summary>
 
-scriptVersion: optional object {id, message, tag }
+scriptVersion: optional object { id, message, tag }
 
 </summary>
 
@@ -3534,7 +3534,7 @@ truncated: optional boolean
 
 <summary>
 
-traces: optional array of object {rootSpanName, rootTransactionName, service, 6 more }
+traces: optional array of object { rootSpanName, rootTransactionName, service, 6 more }
 
 Trace summaries matching the query. Present when the query view is ‘traces’. Each entry represents a distributed trace with its spans, duration, and services involved.
 
@@ -3606,7 +3606,7 @@ Error messages encountered during the trace, if any.
 
 <summary>
 
-TelemetryValuesResponse object {dataset, key, type, value }
+TelemetryValuesResponse object { dataset, key, type, value }
 
 </summary>
 
@@ -3622,7 +3622,7 @@ key: string
 
 <summary>
 
-type: "string"or "boolean"or "number"
+type: "string" or "boolean" or "number"
 
 </summary>
 
@@ -3648,7 +3648,7 @@ One of the following:
 
 <summary>
 
-value: stringor numberor boolean
+value: string or number or boolean
 
 </summary>
 
@@ -3678,7 +3678,7 @@ boolean
 
 <summary>
 
-TelemetryLiveTailResponse object {wsUrl }
+TelemetryLiveTailResponse object { wsUrl }
 
 </summary>
 

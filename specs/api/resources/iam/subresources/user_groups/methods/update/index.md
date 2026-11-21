@@ -92,7 +92,7 @@ Name of the User group.
 
 <summary>
 
-policies: optional array of object {id, access, permission\_groups, resource\_groups }
+policies: optional array of object { id, access, permission\_groups, resource\_groups }
 
 Policies attached to the User group
 
@@ -108,7 +108,7 @@ Policy identifier.
 
 <summary>
 
-access: "allow"or "deny"
+access: "allow" or "deny"
 
 Allow or deny operations against the resources.
 
@@ -132,7 +132,7 @@ One of the following:
 
 <summary>
 
-permission\_groups: array of object {id }
+permission\_groups: array of object { id }
 
 A set of permission groups that are specified to the policy.
 
@@ -156,7 +156,7 @@ minLength32
 
 <summary>
 
-resource\_groups: array of object {id }
+resource\_groups: array of object { id }
 
 A set of resource groups that are specified to the policy.
 
@@ -186,7 +186,7 @@ minLength32
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -208,7 +208,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -228,7 +228,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -250,7 +250,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -276,7 +276,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, created\_on, modified\_on, 2 more }
+result: optional object { id, created\_on, modified\_on, 2 more }
 
 A group of policies resources.
 
@@ -318,7 +318,7 @@ Name of the user group.
 
 <summary>
 
-policies: optional array of object {id, access, permission\_groups, resource\_groups }
+policies: optional array of object { id, access, permission\_groups, resource\_groups }
 
 Policies attached to the User group
 
@@ -334,7 +334,7 @@ Policy identifier.
 
 <summary>
 
-access: optional "allow"or "deny"
+access: optional "allow" or "deny"
 
 Allow or deny operations against the resources.
 
@@ -358,7 +358,7 @@ One of the following:
 
 <summary>
 
-permission\_groups: optional array of object {id, meta, name }
+permission\_groups: optional array of object { id, meta, name }
 
 A set of permission groups that are specified to the policy.
 
@@ -374,7 +374,7 @@ Identifier of the permission group.
 
 <summary>
 
-meta: optional object {category, deprecated, description, 5 more }
+meta: optional object { category, deprecated, description, 5 more }
 
 Attributes associated to the permission group.
 
@@ -448,7 +448,7 @@ Name of the permission group.
 
 <summary>
 
-resource\_groups: optional array of object {id, scope, meta, name }
+resource\_groups: optional array of object { id, scope, meta, name }
 
 A list of resource groups that the policy applies to.
 
@@ -464,7 +464,7 @@ Identifier of the resource group.
 
 <summary>
 
-scope: object {key, objects }
+scope: object { key, objects }
 
 The scope associated to the resource group
 
@@ -480,7 +480,7 @@ This is a combination of pre-defined resource name and identifier (like Account 
 
 <summary>
 
-objects: array of object {key }
+objects: array of object { key }
 
 A list of scope objects for additional context.
 
@@ -504,7 +504,7 @@ This is a combination of pre-defined resource name and identifier (like Zone ID 
 
 <summary>
 
-meta: optional object {key, value }
+meta: optional object { key, value }
 
 Attributes associated to the resource group.
 

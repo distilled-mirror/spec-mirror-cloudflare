@@ -30,7 +30,7 @@ GET/user/tokens/permission\_groups
 
 <summary>
 
-PermissionGroupListResponse object {id, category, is\_selectable, 2 more }
+PermissionGroupListResponse object { id, category, is\_selectable, 2 more }
 
 </summary>
 
@@ -44,7 +44,7 @@ Public ID.
 
 <summary>
 
-category: optional "developer\_platform"or "ai\_and\_machine\_learning"or "dns\_and\_zones"or 10 more
+category: optional "developer\_platform" or "ai\_and\_machine\_learning" or "dns\_and\_zones" or 10 more
 
 Product category that this permission group belongs to.
 
@@ -124,7 +124,7 @@ Permission Group Name
 
 <summary>
 
-scopes: optional array of "com.cloudflare.api.account"or "com.cloudflare.api.account.zone"or "com.cloudflare.api.user"or "com.cloudflare.edge.r2.bucket"
+scopes: optional array of "com.cloudflare.api.account" or "com.cloudflare.api.account.zone" or "com.cloudflare.api.user" or "com.cloudflare.edge.r2.bucket"
 
 Resources to which the Permission Group is scoped
 

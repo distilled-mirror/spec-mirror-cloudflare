@@ -32,7 +32,7 @@ GET/user/spectrum\_analytics/zones/report
 
 <summary>
 
-ReportGetResponse = array of object {totals, zone\_id }
+ReportGetResponse = array of object { totals, zone\_id }
 
 </summary>
 
@@ -40,7 +40,7 @@ ReportGetResponse = array of object {totals, zone\_id }
 
 <summary>
 
-totals: object {bandwidth }
+totals: object { bandwidth }
 
 </summary>
 
@@ -48,7 +48,7 @@ totals: object {bandwidth }
 
 <summary>
 
-bandwidth: object {all, egress, ingress }
+bandwidth: object { all, egress, ingress }
 
 </summary>
 

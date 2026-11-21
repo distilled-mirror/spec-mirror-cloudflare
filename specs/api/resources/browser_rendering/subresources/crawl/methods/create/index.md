@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Browser Rendering Write`
+`AI Search Index Engine``Auto Rag Write Run Engine``Browser Run Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -84,7 +84,7 @@ minimum0
 
 <summary>
 
-body: object {url, actionTimeout, addScriptTag, 27 more } or object {render, url, contentUse, 9 more }
+body: object { url, actionTimeout, addScriptTag, 27 more } or object { render, url, contentUse, 9 more }
 
 </summary>
 
@@ -94,7 +94,7 @@ One of the following:
 
 <summary>
 
-object {url, actionTimeout, addScriptTag, 27 more }
+object { url, actionTimeout, addScriptTag, 27 more }
 
 </summary>
 
@@ -118,7 +118,7 @@ maximum120000
 
 <summary>
 
-addScriptTag: optional array of object {id, content, type, url }
+addScriptTag: optional array of object { id, content, type, url }
 
 Adds a script element into the page with the desired URL or content.
 
@@ -150,7 +150,7 @@ formaturi
 
 <summary>
 
-addStyleTag: optional array of object {content, url }
+addStyleTag: optional array of object { content, url }
 
 Adds a <code>&lt;link rel="stylesheet"&gt;</code> tag into the page with the desired URL or a <code>&lt;style type="text/css"&gt;</code> tag with the content.
 
@@ -180,7 +180,7 @@ Only allow requests that match the provided regex patterns, eg. ’/^.\*.(css)�
 
 <summary>
 
-allowResourceTypes: optional array of "document"or "stylesheet"or "image"or 15 more
+allowResourceTypes: optional array of "document" or "stylesheet" or "image" or 15 more
 
 Only allow requests that match the provided resource types, eg. ‘image’ or ‘script’. Reject rules are applied first.
 
@@ -268,7 +268,7 @@ One of the following:
 
 <summary>
 
-authenticate: optional object {password, username }
+authenticate: optional object { password, username }
 
 Provide credentials for HTTP authentication.
 
@@ -306,7 +306,7 @@ Rendering backend for this crawl. Set to <code>kitesurf</code> to render pages w
 
 <summary>
 
-contentUse: optional "reference"or "full"
+contentUse: optional "reference" or "full"
 
 Intended content use level to respect the <code>use</code> Content-Signal directive in robots.txt. Levels (least to most permissive): ‘reference’, ‘full’. A URL is disallowed when the publisher’s declared <code>use</code> level is lower than this intent. Learn more: <a href="https://contentsignals.org/">https://contentsignals.org/</a>. Default: ‘full’.
 
@@ -330,7 +330,7 @@ One of the following:
 
 <summary>
 
-cookies: optional array of object {name, value, domain, 11 more }
+cookies: optional array of object { name, value, domain, 11 more }
 
 Check <a href="https://pptr.dev/api/puppeteer.page.setcookie">options</a>.
 
@@ -370,7 +370,7 @@ path: optional string
 
 <summary>
 
-priority: optional "Low"or "Medium"or "High"
+priority: optional "Low" or "Medium" or "High"
 
 </summary>
 
@@ -400,7 +400,7 @@ sameParty: optional boolean
 
 <summary>
 
-sameSite: optional "Strict"or "Lax"or "None"
+sameSite: optional "Strict" or "Lax" or "None"
 
 </summary>
 
@@ -434,7 +434,7 @@ sourcePort: optional number
 
 <summary>
 
-sourceScheme: optional "Unset"or "NonSecure"or "Secure"
+sourceScheme: optional "Unset" or "NonSecure" or "Secure"
 
 </summary>
 
@@ -468,7 +468,7 @@ url: optional string
 
 <summary>
 
-crawlPurposes: optional array of "search"or "ai-input"or "ai-train"
+crawlPurposes: optional array of "search" or "ai-input" or "ai-train"
 
 List of crawl purposes to respect Content-Signal directives in robots.txt. Allowed values: ‘search’, ‘ai-input’, ‘ai-train’. Learn more: <a href="https://contentsignals.org/">https://contentsignals.org/</a>. Default: \[‘search’, ‘ai-input’, ‘ai-train’].
 
@@ -510,7 +510,7 @@ emulateMediaType: optional string
 
 <summary>
 
-formats: optional array of "html"or "markdown"or "json"
+formats: optional array of "html" or "markdown" or "json"
 
 Formats to return. Default is <code>html</code>.
 
@@ -538,7 +538,7 @@ One of the following:
 
 <summary>
 
-gotoOptions: optional object {referer, referrerPolicy, timeout, waitUntil }
+gotoOptions: optional object { referer, referrerPolicy, timeout, waitUntil }
 
 Check <a href="https://pptr.dev/api/puppeteer.gotooptions">options</a>.
 
@@ -562,7 +562,7 @@ maximum60000
 
 <summary>
 
-waitUntil: optional "load"or "domcontentloaded"or "networkidle0"or "networkidle2"or array of "load"or "domcontentloaded"or "networkidle0"or "networkidle2"
+waitUntil: optional "load" or "domcontentloaded" or "networkidle0" or "networkidle2" or array of "load" or "domcontentloaded" or "networkidle0" or "networkidle2"
 
 </summary>
 
@@ -572,37 +572,7 @@ One of the following:
 
 <summary>
 
-"load"or "domcontentloaded"or "networkidle0"or "networkidle2"
-
-</summary>
-
-One of the following:
-
-"load"
-
-<a href="#">Link to this property</a>
-
-"domcontentloaded"
-
-<a href="#">Link to this property</a>
-
-"networkidle0"
-
-<a href="#">Link to this property</a>
-
-"networkidle2"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-array of "load"or "domcontentloaded"or "networkidle0"or "networkidle2"
+"load" or "domcontentloaded" or "networkidle0" or "networkidle2"
 
 </summary>
 
@@ -628,6 +598,36 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+array of "load" or "domcontentloaded" or "networkidle0" or "networkidle2"
+
+</summary>
+
+One of the following:
+
+"load"
+
+<a href="#">Link to this property</a>
+
+"domcontentloaded"
+
+<a href="#">Link to this property</a>
+
+"networkidle0"
+
+<a href="#">Link to this property</a>
+
+"networkidle2"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -640,7 +640,7 @@ One of the following:
 
 <summary>
 
-jsonOptions: optional object {custom\_ai, prompt, response\_format }
+jsonOptions: optional object { custom\_ai, prompt, response\_format }
 
 Options for JSON extraction.
 
@@ -650,7 +650,7 @@ Options for JSON extraction.
 
 <summary>
 
-custom\_ai: optional array of object {model, authorization }
+custom\_ai: optional array of object { model, authorization }
 
 Optional list of custom AI models to use for the request. The models will be tried in the order provided, and in case a model returns an error, the next one will be used as fallback.
 
@@ -680,7 +680,7 @@ prompt: optional string
 
 <summary>
 
-response\_format: optional object {type, json\_schema }
+response\_format: optional object { type, json\_schema }
 
 </summary>
 
@@ -736,7 +736,7 @@ minimum0
 
 <summary>
 
-options: optional object {excludePatterns, includeExternalLinks, includePatterns, includeSubdomains }
+options: optional object { excludePatterns, includeExternalLinks, includePatterns, includeSubdomains }
 
 Additional options for the crawler.
 
@@ -780,7 +780,7 @@ Block undesired requests that match the provided regex patterns, eg. ’/^.\*.(c
 
 <summary>
 
-rejectResourceTypes: optional array of "document"or "stylesheet"or "image"or 15 more
+rejectResourceTypes: optional array of "document" or "stylesheet" or "image" or 15 more
 
 Block undesired requests that match the provided resource types, eg. ‘image’ or ‘script’.
 
@@ -882,7 +882,7 @@ setJavaScriptEnabled: optional boolean
 
 <summary>
 
-source: optional "sitemaps"or "links"or "all"
+source: optional "sitemaps" or "links" or "all"
 
 Source of links to crawl. ‘sitemaps’ - only crawl URLs from sitemaps, ‘links’ - only crawl URLs scraped from pages, ‘all’ - crawl both sitemap and scraped links (default).
 
@@ -910,7 +910,7 @@ One of the following:
 
 <summary>
 
-viewport: optional object {height, width, deviceScaleFactor, 3 more }
+viewport: optional object { height, width, deviceScaleFactor, 3 more }
 
 Check <a href="https://pptr.dev/api/puppeteer.page.setviewport">options</a>.
 
@@ -948,7 +948,7 @@ isMobile: optional boolean
 
 <summary>
 
-waitForSelector: optional object {selector, hidden, timeout, visible }
+waitForSelector: optional object { selector, hidden, timeout, visible }
 
 Wait for the selector to appear in page. Check <a href="https://pptr.dev/api/puppeteer.page.waitforselector">options</a>.
 
@@ -992,7 +992,7 @@ maximum120000
 
 <summary>
 
-object {render, url, contentUse, 9 more }
+object { render, url, contentUse, 9 more }
 
 </summary>
 
@@ -1014,7 +1014,7 @@ formaturi
 
 <summary>
 
-contentUse: optional "reference"or "full"
+contentUse: optional "reference" or "full"
 
 Intended content use level to respect the <code>use</code> Content-Signal directive in robots.txt. Levels (least to most permissive): ‘reference’, ‘full’. A URL is disallowed when the publisher’s declared <code>use</code> level is lower than this intent. Learn more: <a href="https://contentsignals.org/">https://contentsignals.org/</a>. Default: ‘full’.
 
@@ -1038,7 +1038,7 @@ One of the following:
 
 <summary>
 
-crawlPurposes: optional array of "search"or "ai-input"or "ai-train"
+crawlPurposes: optional array of "search" or "ai-input" or "ai-train"
 
 List of crawl purposes to respect Content-Signal directives in robots.txt. Allowed values: ‘search’, ‘ai-input’, ‘ai-train’. Learn more: <a href="https://contentsignals.org/">https://contentsignals.org/</a>. Default: \[‘search’, ‘ai-input’, ‘ai-train’].
 
@@ -1076,7 +1076,7 @@ minimum1
 
 <summary>
 
-formats: optional array of "html"or "markdown"or "json"
+formats: optional array of "html" or "markdown" or "json"
 
 Formats to return. Default is <code>html</code>.
 
@@ -1104,7 +1104,7 @@ One of the following:
 
 <summary>
 
-jsonOptions: optional object {custom\_ai, prompt, response\_format }
+jsonOptions: optional object { custom\_ai, prompt, response\_format }
 
 Options for JSON extraction.
 
@@ -1114,7 +1114,7 @@ Options for JSON extraction.
 
 <summary>
 
-custom\_ai: optional array of object {model, authorization }
+custom\_ai: optional array of object { model, authorization }
 
 Optional list of custom AI models to use for the request. The models will be tried in the order provided, and in case a model returns an error, the next one will be used as fallback.
 
@@ -1144,7 +1144,7 @@ prompt: optional string
 
 <summary>
 
-response\_format: optional object {type, json\_schema }
+response\_format: optional object { type, json\_schema }
 
 </summary>
 
@@ -1200,7 +1200,7 @@ minimum0
 
 <summary>
 
-options: optional object {excludePatterns, includeExternalLinks, includePatterns, includeSubdomains }
+options: optional object { excludePatterns, includeExternalLinks, includePatterns, includeSubdomains }
 
 Additional options for the crawler.
 
@@ -1238,7 +1238,7 @@ Include links to subdomains in the crawl job. This option is ignored if includeE
 
 <summary>
 
-source: optional "sitemaps"or "links"or "all"
+source: optional "sitemaps" or "links" or "all"
 
 Source of links to crawl. ‘sitemaps’ - only crawl URLs from sitemaps, ‘links’ - only crawl URLs scraped from pages, ‘all’ - crawl both sitemap and scraped links (default).
 
@@ -1288,7 +1288,7 @@ Response status.
 
 <summary>
 
-errors: optional array of object {code, message }
+errors: optional array of object { code, message }
 
 </summary>
 

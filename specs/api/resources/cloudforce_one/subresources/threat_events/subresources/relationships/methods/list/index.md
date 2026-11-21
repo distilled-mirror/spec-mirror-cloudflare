@@ -66,7 +66,7 @@ The dataset ID to search within.
 
 <summary>
 
-direction: optional "ancestors"or "descendants"or "both"
+direction: optional "ancestors" or "descendants" or "both"
 
 The direction to traverse the graph. Defaults to ‘both’ to search all.
 
@@ -120,7 +120,7 @@ pageSize: optional number
 
 <summary>
 
-relationshipTypes: optional stringor array of string
+relationshipTypes: optional string or array of string
 
 An optional array of relationship types to filter by.
 

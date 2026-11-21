@@ -86,7 +86,7 @@ Unique identifier for the prefix binding.
 
 <summary>
 
-messages: array of object {code, message, error\_chain }
+messages: array of object { code, message, error\_chain }
 
 </summary>
 
@@ -118,7 +118,7 @@ success: boolean
 
 <summary>
 
-errors: optional array of object {code, message, error\_chain }
+errors: optional array of object { code, message, error\_chain }
 
 maxLength0
 

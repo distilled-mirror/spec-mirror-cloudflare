@@ -86,7 +86,7 @@ The feature identifier.
 
 <summary>
 
-value: optional object {email, enabled, resend\_email, sources }
+value: optional object { email, enabled, resend\_email, sources }
 
 Writable CSAM Scanner feature configuration values.
 
@@ -150,7 +150,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -192,7 +192,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -218,7 +218,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, editable, modified\_on, value }
+result: optional object { id, editable, modified\_on, value }
 
 CSAM Scanner configuration for a zone.
 
@@ -248,7 +248,7 @@ formatdate-time
 
 <summary>
 
-value: optional object {email, email\_state, enabled, 2 more }
+value: optional object { email, email\_state, enabled, 2 more }
 
 The CSAM Scanner feature configuration values. Contains the notification email and scanning enablement settings.
 
@@ -266,7 +266,7 @@ maxLength254
 
 <summary>
 
-email\_state: optional "valid"or "pending"or "unverified"
+email\_state: optional "valid" or "pending" or "unverified"
 
 Current verification state of the notification email.
 

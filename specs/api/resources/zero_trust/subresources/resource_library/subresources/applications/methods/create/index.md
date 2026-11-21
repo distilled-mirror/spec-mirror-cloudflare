@@ -72,7 +72,7 @@ account\_id: string
 
 <summary>
 
-body: object {hostnames, category\_id, human\_id, 4 more } or object {ip\_subnets, category\_id, hostnames, 4 more }
+body: object { hostnames, category\_id, human\_id, 4 more } or object { ip\_subnets, category\_id, hostnames, 4 more }
 
 Defines a custom application. At least one hostname or IP subnet is required. Support domains and port/protocol pairs do not satisfy this requirement. A NUL character (U+0000) in any string value returns <code>400</code>.
 
@@ -84,7 +84,7 @@ One of the following:
 
 <summary>
 
-object {hostnames, category\_id, human\_id, 4 more }
+object { hostnames, category\_id, human\_id, 4 more }
 
 </summary>
 
@@ -144,7 +144,7 @@ Support domains matched by the application.
 
 <summary>
 
-object {ip\_subnets, category\_id, hostnames, 4 more }
+object { ip\_subnets, category\_id, hostnames, 4 more }
 
 </summary>
 
@@ -210,7 +210,7 @@ Support domains matched by the application.
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -232,7 +232,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -252,7 +252,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -274,7 +274,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -300,7 +300,7 @@ Indicates whether the API call was successful.
 
 <summary>
 
-result: optional object {id, application\_confidence\_score, application\_source, 15 more }
+result: optional object { id, application\_confidence\_score, application\_source, 15 more }
 
 </summary>
 
@@ -408,7 +408,7 @@ Support domains matched by the application.
 
 <summary>
 
-supported: array of "GATEWAY"or "ACCESS"or "CASB"
+supported: array of "GATEWAY" or "ACCESS" or "CASB"
 
 Cloudflare products that support this application.
 

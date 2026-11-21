@@ -32,7 +32,7 @@ GET/accounts/{account\_id}/brand-protection/logo-matches/download
 
 <summary>
 
-LogoMatchGetResponse object {matches, total }
+LogoMatchGetResponse object { matches, total }
 
 </summary>
 
@@ -52,7 +52,7 @@ total: optional number
 
 <summary>
 
-LogoMatchDownloadResponse object {matches, total }
+LogoMatchDownloadResponse object { matches, total }
 
 </summary>
 

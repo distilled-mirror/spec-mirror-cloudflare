@@ -82,7 +82,7 @@ maxLength32
 
 <summary>
 
-result: object {id, action, description, 3 more }
+result: object { id, action, description, 3 more }
 
 </summary>
 
@@ -98,7 +98,7 @@ maxLength32
 
 <summary>
 
-action: "allow"or "log"or "add\_reporting\_directives"
+action: "allow" or "log" or "add\_reporting\_directives"
 
 The action to take if the expression matches
 
@@ -182,7 +182,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -224,7 +224,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 

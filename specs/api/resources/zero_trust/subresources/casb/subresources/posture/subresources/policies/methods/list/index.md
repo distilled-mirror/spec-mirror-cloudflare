@@ -38,7 +38,7 @@ The preferred authorization scheme for interacting with the Cloudflare API. [Cre
 
 ##### Accepted Permissions (at least one required)
 
-`Zero Trust Read``Zero Trust Write`
+`CASB Write``CASB Read``Zero Trust Read``Zero Trust Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -60,7 +60,7 @@ Cursor for pagination. Obtained from the `result_info.cursor` field of a previou
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -90,7 +90,7 @@ formaturi
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -112,7 +112,7 @@ JSON pointer to the source of the error.
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -142,7 +142,7 @@ formaturi
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -164,7 +164,7 @@ JSON pointer to the source of the error.
 
 <summary>
 
-result\_info: object {count, cursor, next, 4 more }
+result\_info: object { count, cursor, next, 4 more }
 
 Pagination and result information.
 
@@ -230,7 +230,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional array of object {id, actions, applies\_to\_all\_integrations, 9 more }
+result: optional array of object { id, actions, applies\_to\_all\_integrations, 9 more }
 
 </summary>
 
@@ -246,7 +246,7 @@ formatuuid
 
 <summary>
 
-actions: object {remediation\_types, webhook\_configs }
+actions: object { remediation\_types, webhook\_configs }
 
 The actions configured for this policy.
 
@@ -256,7 +256,7 @@ The actions configured for this policy.
 
 <summary>
 
-remediation\_types: array of object {display\_name, remediation\_type, remediation\_type\_id }
+remediation\_types: array of object { display\_name, remediation\_type, remediation\_type\_id }
 
 List of remediation types that will be executed.
 
@@ -290,7 +290,7 @@ formatuuid
 
 <summary>
 
-webhook\_configs: array of object {display\_name, webhook\_config\_id }
+webhook\_configs: array of object { display\_name, webhook\_config\_id }
 
 List of webhook configurations that will be triggered.
 

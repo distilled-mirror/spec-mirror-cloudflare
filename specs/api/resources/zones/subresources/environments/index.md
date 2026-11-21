@@ -48,7 +48,7 @@ POST/zones/{zone\_id}/environments/{environment\_id}/rollback
 
 <summary>
 
-EnvironmentListResponse object {environments }
+EnvironmentListResponse object { environments }
 
 </summary>
 
@@ -56,7 +56,7 @@ EnvironmentListResponse object {environments }
 
 <summary>
 
-environments: array of object {expression, locked\_on\_deployment, name, 4 more }
+environments: array of object { expression, locked\_on\_deployment, name, 4 more }
 
 </summary>
 
@@ -76,7 +76,7 @@ name: string
 
 <summary>
 
-position: object {after, before }
+position: object { after, before }
 
 </summary>
 
@@ -118,7 +118,7 @@ http\_application\_id: optional string
 
 <summary>
 
-EnvironmentCreateResponse object {environments }
+EnvironmentCreateResponse object { environments }
 
 </summary>
 
@@ -126,7 +126,7 @@ EnvironmentCreateResponse object {environments }
 
 <summary>
 
-environments: array of object {expression, locked\_on\_deployment, name, 4 more }
+environments: array of object { expression, locked\_on\_deployment, name, 4 more }
 
 </summary>
 
@@ -146,7 +146,7 @@ name: string
 
 <summary>
 
-position: object {after, before }
+position: object { after, before }
 
 </summary>
 
@@ -188,7 +188,7 @@ http\_application\_id: optional string
 
 <summary>
 
-EnvironmentUpdateResponse object {environments }
+EnvironmentUpdateResponse object { environments }
 
 </summary>
 
@@ -196,7 +196,7 @@ EnvironmentUpdateResponse object {environments }
 
 <summary>
 
-environments: array of object {expression, locked\_on\_deployment, name, 4 more }
+environments: array of object { expression, locked\_on\_deployment, name, 4 more }
 
 </summary>
 
@@ -216,7 +216,7 @@ name: string
 
 <summary>
 
-position: object {after, before }
+position: object { after, before }
 
 </summary>
 
@@ -258,7 +258,7 @@ http\_application\_id: optional string
 
 <summary>
 
-EnvironmentEditResponse object {environments }
+EnvironmentEditResponse object { environments }
 
 </summary>
 
@@ -266,7 +266,7 @@ EnvironmentEditResponse object {environments }
 
 <summary>
 
-environments: array of object {expression, locked\_on\_deployment, name, 4 more }
+environments: array of object { expression, locked\_on\_deployment, name, 4 more }
 
 </summary>
 
@@ -286,7 +286,7 @@ name: string
 
 <summary>
 
-position: object {after, before }
+position: object { after, before }
 
 </summary>
 
@@ -328,7 +328,7 @@ http\_application\_id: optional string
 
 <summary>
 
-EnvironmentDeleteResponse object {environments }
+EnvironmentDeleteResponse object { environments }
 
 </summary>
 
@@ -336,7 +336,7 @@ EnvironmentDeleteResponse object {environments }
 
 <summary>
 
-environments: array of object {expression, locked\_on\_deployment, name, 4 more }
+environments: array of object { expression, locked\_on\_deployment, name, 4 more }
 
 </summary>
 
@@ -356,7 +356,7 @@ name: string
 
 <summary>
 
-position: object {after, before }
+position: object { after, before }
 
 </summary>
 
@@ -398,7 +398,7 @@ http\_application\_id: optional string
 
 <summary>
 
-EnvironmentRollbackResponse object {environments }
+EnvironmentRollbackResponse object { environments }
 
 </summary>
 
@@ -406,7 +406,7 @@ EnvironmentRollbackResponse object {environments }
 
 <summary>
 
-environments: array of object {expression, locked\_on\_deployment, name, 4 more }
+environments: array of object { expression, locked\_on\_deployment, name, 4 more }
 
 </summary>
 
@@ -426,7 +426,7 @@ name: string
 
 <summary>
 
-position: object {after, before }
+position: object { after, before }
 
 </summary>
 

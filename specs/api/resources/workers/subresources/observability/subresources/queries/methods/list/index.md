@@ -70,7 +70,7 @@ Used when interacting with the Origin CA certificates API. <a href="https://deve
 
 ##### Accepted Permissions (at least one required)
 
-`Workers Observability Write``Workers Observability Read`
+`Workers Metadata Read-Only``Workers Observability Write``Workers Observability Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -84,7 +84,7 @@ account\_id: string
 
 <summary>
 
-order: optional "asc"or "desc"
+order: optional "asc" or "desc"
 
 </summary>
 
@@ -106,7 +106,7 @@ One of the following:
 
 <summary>
 
-orderBy: optional "created"or "updated"
+orderBy: optional "created" or "updated"
 
 </summary>
 
@@ -144,7 +144,7 @@ minimum5
 
 <summary>
 
-errors: array of object {message }
+errors: array of object { message }
 
 </summary>
 
@@ -160,7 +160,7 @@ message: string
 
 <summary>
 
-messages: array of object {message }
+messages: array of object { message }
 
 </summary>
 
@@ -176,7 +176,7 @@ message: "Successful request"
 
 <summary>
 
-result: array of object {id, adhoc, created, 6 more }
+result: array of object { id, adhoc, created, 6 more }
 
 </summary>
 
@@ -220,7 +220,7 @@ minLength1
 
 <summary>
 
-parameters: object {calculations, datasets, filterCombination, 6 more }
+parameters: object { calculations, datasets, filterCombination, 6 more }
 
 </summary>
 
@@ -228,7 +228,7 @@ parameters: object {calculations, datasets, filterCombination, 6 more }
 
 <summary>
 
-calculations: optional array of object {operator, alias, key, keyType } or object {key, operator, alias, keyType }
+calculations: optional array of object { operator, alias, key, keyType } or object { key, operator, alias, keyType }
 
 Create Calculations to compute as part of the query.
 
@@ -240,7 +240,7 @@ One of the following:
 
 <summary>
 
-object {operator, alias, key, keyType }
+object { operator, alias, key, keyType }
 
 </summary>
 
@@ -248,7 +248,7 @@ object {operator, alias, key, keyType }
 
 <summary>
 
-operator: "count"or "COUNT"
+operator: "count" or "COUNT"
 
 </summary>
 
@@ -278,7 +278,7 @@ key: optional string
 
 <summary>
 
-keyType: optional "string"or "number"or "boolean"
+keyType: optional "string" or "number" or "boolean"
 
 </summary>
 
@@ -308,7 +308,7 @@ One of the following:
 
 <summary>
 
-object {key, operator, alias, keyType }
+object { key, operator, alias, keyType }
 
 </summary>
 
@@ -320,7 +320,7 @@ key: string
 
 <summary>
 
-operator: "uniq"or "max"or "min"or 33 more
+operator: "uniq" or "max" or "min" or 33 more
 
 </summary>
 
@@ -482,7 +482,7 @@ alias: optional string
 
 <summary>
 
-keyType: optional "string"or "number"or "boolean"
+keyType: optional "string" or "number" or "boolean"
 
 </summary>
 
@@ -522,7 +522,7 @@ Set the Datasets to query. Leave it empty to query all the datasets.
 
 <summary>
 
-filterCombination: optional "and"or "or"or "AND"or "OR"
+filterCombination: optional "and" or "or" or "AND" or "OR"
 
 Set a Flag to describe how to combine the filters on the query.
 
@@ -554,7 +554,7 @@ One of the following:
 
 <summary>
 
-filters: optional array of object {filterCombination, filters, kind } or object {key, operation, type, 2 more }
+filters: optional array of object { filterCombination, filters, kind } or object { key, operation, type, 2 more }
 
 Configure the Filters to apply to the query. Supports nested groups via kind: ‘group’.
 
@@ -566,7 +566,7 @@ One of the following:
 
 <summary>
 
-object {filterCombination, filters, kind }
+object { filterCombination, filters, kind }
 
 </summary>
 
@@ -574,7 +574,7 @@ object {filterCombination, filters, kind }
 
 <summary>
 
-filterCombination: "and"or "or"or "AND"or "OR"
+filterCombination: "and" or "or" or "AND" or "OR"
 
 </summary>
 
@@ -616,7 +616,7 @@ kind: "group"
 
 <summary>
 
-WorkersObservabilityFilterLeaf object {key, operation, type, 2 more }
+WorkersObservabilityFilterLeaf object { key, operation, type, 2 more }
 
 A filter condition applied to query results. Use the keys and values endpoints to discover available fields and their values before constructing filters.
 
@@ -632,7 +632,7 @@ Filter field name. Use verified keys from previous query results or the keys end
 
 <summary>
 
-operation: "includes"or "not\_includes"or "starts\_with"or 27 more
+operation: "includes" or "not\_includes" or "starts\_with" or 27 more
 
 Comparison operator. String operators: includes, not\_includes, starts\_with, ends\_with, regex. Existence: exists, is\_null. Set membership: in, not\_in (comma-separated values). Numeric: eq, neq, gt, gte, lt, lte.
 
@@ -768,7 +768,7 @@ One of the following:
 
 <summary>
 
-type: "string"or "number"or "boolean"
+type: "string" or "number" or "boolean"
 
 Data type of the filter field. Must match the actual type of the key being filtered.
 
@@ -802,7 +802,7 @@ Discriminator for leaf filter nodes. Always ‘filter’ when present; may be om
 
 <summary>
 
-value: optional stringor numberor boolean
+value: optional string or number or boolean
 
 Comparison value. Must match actual values in your data — verify with the values endpoint. Ensure the value type (string/number/boolean) matches the field type. String comparisons are case-sensitive. Regex uses RE2 syntax (no lookaheads/lookbehinds).
 
@@ -838,7 +838,7 @@ boolean
 
 <summary>
 
-groupBys: optional array of object {type, value }
+groupBys: optional array of object { type, value }
 
 Define how to group the results of the query.
 
@@ -848,7 +848,7 @@ Define how to group the results of the query.
 
 <summary>
 
-type: "string"or "number"or "boolean"
+type: "string" or "number" or "boolean"
 
 </summary>
 
@@ -882,7 +882,7 @@ value: string
 
 <summary>
 
-havings: optional array of object {key, operation, value }
+havings: optional array of object { key, operation, value }
 
 Configure the Having clauses that filter on calculations in the query result.
 
@@ -896,7 +896,7 @@ key: string
 
 <summary>
 
-operation: "eq"or "neq"or "gt"or 3 more
+operation: "eq" or "neq" or "gt" or 3 more
 
 </summary>
 
@@ -952,7 +952,7 @@ minimum0
 
 <summary>
 
-needle: optional object {value, isRegex, matchCase }
+needle: optional object { value, isRegex, matchCase }
 
 Define an expression to search using full-text search.
 
@@ -962,7 +962,7 @@ Define an expression to search using full-text search.
 
 <summary>
 
-value: stringor numberor boolean
+value: string or number or boolean
 
 maxLength1000
 
@@ -1002,7 +1002,7 @@ matchCase: optional boolean
 
 <summary>
 
-orderBy: optional object {value, order }
+orderBy: optional object { value, order }
 
 Configure the order of the results returned by the query.
 
@@ -1018,7 +1018,7 @@ Configure which Calculation to order the results by.
 
 <summary>
 
-order: optional "asc"or "desc"
+order: optional "asc" or "desc"
 
 Set the order of the results
 

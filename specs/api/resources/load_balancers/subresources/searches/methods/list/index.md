@@ -94,7 +94,7 @@ Search query term.
 
 <summary>
 
-references: optional ""or "\*"or "referral"or "referrer"
+references: optional "" or "\*" or "referral" or "referrer"
 
 The type of references to include. ”\*” to include both referral and referrer references. "" to not include any reference information.
 
@@ -150,7 +150,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -192,7 +192,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -212,7 +212,7 @@ pointer: optional string
 
 <summary>
 
-result: object {resources }
+result: object { resources }
 
 </summary>
 
@@ -220,7 +220,7 @@ result: object {resources }
 
 <summary>
 
-resources: optional array of object {reference\_type, references, resource\_id, 2 more }
+resources: optional array of object { reference\_type, references, resource\_id, 2 more }
 
 A list of resources matching the search query.
 
@@ -230,7 +230,7 @@ A list of resources matching the search query.
 
 <summary>
 
-reference\_type: optional "referral"or "referrer"
+reference\_type: optional "referral" or "referrer"
 
 When listed as a reference, the type (direction) of the reference.
 
@@ -270,7 +270,7 @@ The human-identifiable name of the resource.
 
 <summary>
 
-resource\_type: optional "load\_balancer"or "monitor"or "pool"
+resource\_type: optional "load\_balancer" or "monitor" or "pool"
 
 The type of the resource.
 
@@ -312,7 +312,7 @@ Whether the API call was successful.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

@@ -112,7 +112,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -154,7 +154,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -174,7 +174,7 @@ pointer: optional string
 
 <summary>
 
-result: array of object {origin\_ip, region, vendor, modified\_on }
+result: array of object { origin\_ip, region, vendor, modified\_on }
 
 </summary>
 
@@ -194,7 +194,7 @@ Cloud vendor region identifier.
 
 <summary>
 
-vendor: "aws"or "azure"or "gcp"or "oci"
+vendor: "aws" or "azure" or "gcp" or "oci"
 
 Cloud vendor hosting the origin.
 
@@ -238,7 +238,7 @@ formatdate-time
 
 <summary>
 
-result\_info: object {count, page, per\_page, 2 more }
+result\_info: object { count, page, per\_page, 2 more }
 
 Pagination metadata for list responses.
 

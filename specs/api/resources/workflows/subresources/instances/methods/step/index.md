@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Workers Tail Read``Workers Scripts Write``Workers Scripts Read`
+`Workers Metadata Read-Only``Workers Editor``Workers Content Read-Only``Workers Admin``Individual Workers Metadata Read-Only``Individual Workers Editor``Individual Workers Content Read-Only``Individual Workers Admin``Granular Workers Scripts Read``Workers Tail Read``Workers Scripts Write``Workers Scripts Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -94,7 +94,7 @@ minLength1
 
 <summary>
 
-type: "step"or "waitForEvent"
+type: "step" or "waitForEvent"
 
 Step type to disambiguate step.do and waitForEvent entries that share the same name.
 
@@ -132,7 +132,7 @@ minimum0
 
 <summary>
 
-errors: array of object {code, message }
+errors: array of object { code, message }
 
 </summary>
 
@@ -152,7 +152,7 @@ message: string
 
 <summary>
 
-messages: array of object {code, message }
+messages: array of object { code, message }
 
 </summary>
 
@@ -172,7 +172,7 @@ message: string
 
 <summary>
 
-result: object {error, status, event\_type, output }
+result: object { error, status, event\_type, output }
 
 </summary>
 
@@ -180,7 +180,7 @@ result: object {error, status, event\_type, output }
 
 <summary>
 
-error: object {message, name }
+error: object { message, name }
 
 Error details when status=‘errored’; null otherwise.
 
@@ -202,7 +202,7 @@ name: string
 
 <summary>
 
-status: "queued"or "running"or "paused"or 6 more
+status: "queued" or "running" or "paused" or 6 more
 
 </summary>
 
@@ -272,7 +272,7 @@ success: true
 
 <summary>
 
-result\_info: optional object {count, per\_page, total\_count, 3 more }
+result\_info: optional object { count, per\_page, total\_count, 3 more }
 
 </summary>
 

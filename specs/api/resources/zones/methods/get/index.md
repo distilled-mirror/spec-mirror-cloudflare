@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Trust and Safety Write``Trust and Safety Read``Zero Trust: PII Read``Zaraz Edit``Zaraz Read``Zaraz Admin``Access: Apps and Policies Revoke``Access: Apps and Policies Write``Access: Apps and Policies Read``Access: Apps and Policies Revoke``Access: Mutual TLS Certificates Write``Access: Organizations, Identity Providers, and Groups Write``Zone Settings Write``Zone Settings Read``Zone Read``DNS Read``Workers Scripts Write``Workers Scripts Read``Zone Write``Workers Routes Write``Workers Routes Read``Stream Write``Stream Read``SSL and Certificates Write``SSL and Certificates Read``Logs Write``Logs Read``Cache Purge``Page Rules Write``Page Rules Read``Load Balancers Write``Load Balancers Read``Firewall Services Write``Firewall Services Read``DNS Write``Apps Write``Analytics Read``Access: Apps and Policies Write``Access: Apps and Policies Read`
+`Zone Security Insights Partner Assets Read``Workers Metadata Read-Only``Workers Editor``Workers Content Read-Only``Workers Admin``Registrar Sandbox Domains Read``Registrar Sandbox Domains Admin``Precursor Write``Precursor Read``Account Abuse Protection PII Read``Registrar Domains Admin``Zone Security Center Insights Write``Zone Security Center Insights Read``Access: Policies Write``Access: Policies Read``Access: Apps Write``Access: Apps Revoke``Access: Apps Read``Registrar Domains Read``Trust and Safety Write``Trust and Safety Read``Zero Trust: PII Read``Zaraz Edit``Zaraz Read``Zaraz Admin``Access: Apps and Policies Revoke``Access: Apps and Policies Write``Access: Apps and Policies Read``Access: Apps and Policies Revoke``Access: Mutual TLS Certificates Write``Access: Organizations, Identity Providers, and Groups Write``Zone Settings Write``Zone Settings Read``Zone Read``DNS Read``Workers Scripts Write``Workers Scripts Read``Zone Write``Workers Routes Write``Workers Routes Read``Stream Write``Stream Read``SSL and Certificates Write``SSL and Certificates Read``Logs Write``Logs Read``Cache Purge``Page Rules Write``Page Rules Read``Load Balancers Write``Load Balancers Read``Firewall Services Write``Firewall Services Read``DNS Write``Apps Write``Analytics Read``Access: Apps and Policies Write``Access: Apps and Policies Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -96,7 +96,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -138,7 +138,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -180,7 +180,7 @@ maxLength32
 
 <summary>
 
-account: object {id, name }
+account: object { id, name }
 
 The account the zone belongs to.
 
@@ -230,7 +230,7 @@ The interval (in seconds) from when development mode expires (positive integer) 
 
 <summary>
 
-meta: object {cdn\_only, custom\_certificate\_quota, dns\_only, 4 more }
+meta: object { cdn\_only, custom\_certificate\_quota, dns\_only, 4 more }
 
 Metadata about the zone.
 
@@ -326,7 +326,7 @@ Registrar for the domain at the time of switching to Cloudflare.
 
 <summary>
 
-owner: object {id, name, type }
+owner: object { id, name, type }
 
 The owner of the zone.
 
@@ -360,7 +360,7 @@ The type of owner.
 
 <summary>
 
-Deprecatedplan: object {id, can\_subscribe, currency, 7 more }
+Deprecatedplan: object { id, can\_subscribe, currency, 7 more }
 
 Please use the <code>/zones/{zone_id}/subscription</code> API to update a zone’s plan. Changing this value will create/cancel associated subscriptions. To view available plans for this zone, see <a href="https://developers.cloudflare.com/api/resources/zones/subresources/plans/">Zone Plans</a>.
 
@@ -458,7 +458,7 @@ Legacy permissions based on legacy user membership information.
 
 <summary>
 
-status: optional "initializing"or "pending"or "active"or "moved"
+status: optional "initializing" or "pending" or "active" or "moved"
 
 The zone status on Cloudflare.
 
@@ -490,7 +490,7 @@ One of the following:
 
 <summary>
 
-tenant: optional object {id, name }
+tenant: optional object { id, name }
 
 The root organizational unit that this zone belongs to (such as a tenant or organization).
 
@@ -518,7 +518,7 @@ The name of the Tenant account.
 
 <summary>
 
-tenant\_unit: optional object {id }
+tenant\_unit: optional object { id }
 
 The immediate parent organizational unit that this zone belongs to (such as under a tenant or sub-organization).
 

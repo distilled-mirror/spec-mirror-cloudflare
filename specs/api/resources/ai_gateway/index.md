@@ -42,7 +42,7 @@ DELETE/accounts/{account\_id}/ai-gateway/gateways/{id}
 
 <summary>
 
-AIGatewayListResponse object {id, cache\_invalidate\_on\_update, cache\_ttl, 29 more }
+AIGatewayListResponse object { id, cache\_invalidate\_on\_update, cache\_ttl, 29 more }
 
 </summary>
 
@@ -118,7 +118,7 @@ Requires customer-provided provider credentials and prevents fallback to Unified
 
 <summary>
 
-dlp: optional object {action, enabled, profiles } or object {enabled, policies }
+dlp: optional object { action, enabled, profiles } or object { enabled, policies }
 
 </summary>
 
@@ -128,7 +128,7 @@ One of the following:
 
 <summary>
 
-object {action, enabled, profiles }
+object { action, enabled, profiles }
 
 </summary>
 
@@ -136,7 +136,7 @@ object {action, enabled, profiles }
 
 <summary>
 
-action: "BLOCK"or "FLAG"
+action: "BLOCK" or "FLAG"
 
 </summary>
 
@@ -170,7 +170,7 @@ profiles: array of string
 
 <summary>
 
-object {enabled, policies }
+object { enabled, policies }
 
 </summary>
 
@@ -182,7 +182,7 @@ enabled: boolean
 
 <summary>
 
-policies: array of object {id, action, check, 2 more }
+policies: array of object { id, action, check, 2 more }
 
 </summary>
 
@@ -194,7 +194,7 @@ id: string
 
 <summary>
 
-action: "FLAG"or "BLOCK"
+action: "FLAG" or "BLOCK"
 
 </summary>
 
@@ -216,7 +216,7 @@ One of the following:
 
 <summary>
 
-check: array of "REQUEST"or "RESPONSE"
+check: array of "REQUEST" or "RESPONSE"
 
 </summary>
 
@@ -258,7 +258,7 @@ profiles: array of string
 
 <summary>
 
-fedramp\_level: optional "fedramp-medium"or "fedramp-high"
+fedramp\_level: optional "fedramp-medium" or "fedramp-high"
 
 FedRAMP compliance level: fedramp-medium or fedramp-high.
 
@@ -282,7 +282,7 @@ One of the following:
 
 <summary>
 
-fedramp\_mode: optional "prefer"or "require"
+fedramp\_mode: optional "prefer" or "require"
 
 FedRAMP enforcement mode. “prefer” prioritizes compliant connectors but allows fallback. “require” strictly filters.
 
@@ -306,7 +306,7 @@ One of the following:
 
 <summary>
 
-guardrails: optional object {prompt, response }
+guardrails: optional object { prompt, response }
 
 </summary>
 
@@ -314,7 +314,7 @@ guardrails: optional object {prompt, response }
 
 <summary>
 
-prompt: object {P1, S1, S10, 12 more }
+prompt: object { P1, S1, S10, 12 more }
 
 </summary>
 
@@ -322,29 +322,7 @@ prompt: object {P1, S1, S10, 12 more }
 
 <summary>
 
-P1: optional "FLAG"or "BLOCK"
-
-</summary>
-
-One of the following:
-
-"FLAG"
-
-<a href="#">Link to this property</a>
-
-"BLOCK"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-S1: optional "FLAG"or "BLOCK"
+P1: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -366,7 +344,7 @@ One of the following:
 
 <summary>
 
-S10: optional "FLAG"or "BLOCK"
+S1: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -388,7 +366,7 @@ One of the following:
 
 <summary>
 
-S11: optional "FLAG"or "BLOCK"
+S10: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -410,7 +388,7 @@ One of the following:
 
 <summary>
 
-S12: optional "FLAG"or "BLOCK"
+S11: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -432,7 +410,7 @@ One of the following:
 
 <summary>
 
-S13: optional "FLAG"or "BLOCK"
+S12: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -454,7 +432,7 @@ One of the following:
 
 <summary>
 
-S14: optional "FLAG"or "BLOCK"
+S13: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -476,7 +454,7 @@ One of the following:
 
 <summary>
 
-S2: optional "FLAG"or "BLOCK"
+S14: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -498,7 +476,7 @@ One of the following:
 
 <summary>
 
-S3: optional "FLAG"or "BLOCK"
+S2: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -520,7 +498,7 @@ One of the following:
 
 <summary>
 
-S4: optional "FLAG"or "BLOCK"
+S3: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -542,7 +520,7 @@ One of the following:
 
 <summary>
 
-S5: optional "FLAG"or "BLOCK"
+S4: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -564,7 +542,7 @@ One of the following:
 
 <summary>
 
-S6: optional "FLAG"or "BLOCK"
+S5: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -586,7 +564,7 @@ One of the following:
 
 <summary>
 
-S7: optional "FLAG"or "BLOCK"
+S6: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -608,7 +586,7 @@ One of the following:
 
 <summary>
 
-S8: optional "FLAG"or "BLOCK"
+S7: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -630,7 +608,29 @@ One of the following:
 
 <summary>
 
-S9: optional "FLAG"or "BLOCK"
+S8: optional "FLAG" or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S9: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -656,7 +656,7 @@ One of the following:
 
 <summary>
 
-response: object {P1, S1, S10, 12 more }
+response: object { P1, S1, S10, 12 more }
 
 </summary>
 
@@ -664,29 +664,7 @@ response: object {P1, S1, S10, 12 more }
 
 <summary>
 
-P1: optional "FLAG"or "BLOCK"
-
-</summary>
-
-One of the following:
-
-"FLAG"
-
-<a href="#">Link to this property</a>
-
-"BLOCK"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-S1: optional "FLAG"or "BLOCK"
+P1: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -708,7 +686,7 @@ One of the following:
 
 <summary>
 
-S10: optional "FLAG"or "BLOCK"
+S1: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -730,7 +708,7 @@ One of the following:
 
 <summary>
 
-S11: optional "FLAG"or "BLOCK"
+S10: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -752,7 +730,7 @@ One of the following:
 
 <summary>
 
-S12: optional "FLAG"or "BLOCK"
+S11: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -774,7 +752,7 @@ One of the following:
 
 <summary>
 
-S13: optional "FLAG"or "BLOCK"
+S12: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -796,7 +774,7 @@ One of the following:
 
 <summary>
 
-S14: optional "FLAG"or "BLOCK"
+S13: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -818,7 +796,7 @@ One of the following:
 
 <summary>
 
-S2: optional "FLAG"or "BLOCK"
+S14: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -840,7 +818,7 @@ One of the following:
 
 <summary>
 
-S3: optional "FLAG"or "BLOCK"
+S2: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -862,7 +840,7 @@ One of the following:
 
 <summary>
 
-S4: optional "FLAG"or "BLOCK"
+S3: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -884,7 +862,7 @@ One of the following:
 
 <summary>
 
-S5: optional "FLAG"or "BLOCK"
+S4: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -906,7 +884,7 @@ One of the following:
 
 <summary>
 
-S6: optional "FLAG"or "BLOCK"
+S5: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -928,7 +906,7 @@ One of the following:
 
 <summary>
 
-S7: optional "FLAG"or "BLOCK"
+S6: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -950,7 +928,7 @@ One of the following:
 
 <summary>
 
-S8: optional "FLAG"or "BLOCK"
+S7: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -972,7 +950,29 @@ One of the following:
 
 <summary>
 
-S9: optional "FLAG"or "BLOCK"
+S8: optional "FLAG" or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S9: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -1018,7 +1018,7 @@ minimum10000
 
 <summary>
 
-log\_management\_strategy: optional "STOP\_INSERTING"or "DELETE\_OLDEST"
+log\_management\_strategy: optional "STOP\_INSERTING" or "DELETE\_OLDEST"
 
 </summary>
 
@@ -1058,7 +1058,7 @@ Lets requests to a model use every provider that serves it. When off, a model us
 
 <summary>
 
-otel: optional array of object {headers, url, authorization, content\_type }
+otel: optional array of object { headers, url, authorization, content\_type }
 
 </summary>
 
@@ -1084,7 +1084,7 @@ maxLength256
 
 <summary>
 
-content\_type: optional "json"or "protobuf"
+content\_type: optional "json" or "protobuf"
 
 </summary>
 
@@ -1110,7 +1110,7 @@ One of the following:
 
 <summary>
 
-rate\_limiting\_technique: optional "fixed"or "sliding"
+rate\_limiting\_technique: optional "fixed" or "sliding"
 
 </summary>
 
@@ -1132,7 +1132,7 @@ One of the following:
 
 <summary>
 
-retry\_backoff: optional "constant"or "linear"or "exponential"
+retry\_backoff: optional "constant" or "linear" or "exponential"
 
 Backoff strategy for retry delays
 
@@ -1180,7 +1180,7 @@ minimum1
 
 <summary>
 
-spend\_limits: optional object {enabled, rules }
+spend\_limits: optional object { enabled, rules }
 
 </summary>
 
@@ -1192,7 +1192,7 @@ enabled: optional boolean
 
 <summary>
 
-rules: optional array of object {limit, limitType, window, 6 more }
+rules: optional array of object { limit, limitType, window, 6 more }
 
 </summary>
 
@@ -1230,7 +1230,7 @@ enabled: optional boolean
 
 <summary>
 
-metadata: optional map\[object {mode } or object {mode, values } ]
+metadata: optional map\[object { mode } or object { mode, values } ]
 
 </summary>
 
@@ -1240,7 +1240,7 @@ One of the following:
 
 <summary>
 
-Mode object {mode }
+Mode object { mode }
 
 </summary>
 
@@ -1256,7 +1256,7 @@ mode: "partition"
 
 <summary>
 
-object {mode, values }
+object { mode, values }
 
 </summary>
 
@@ -1280,7 +1280,7 @@ values: array of string
 
 <summary>
 
-model: optional object {mode, values }
+model: optional object { mode, values }
 
 </summary>
 
@@ -1300,7 +1300,7 @@ values: array of string
 
 <summary>
 
-provider: optional object {mode, values }
+provider: optional object { mode, values }
 
 </summary>
 
@@ -1320,7 +1320,7 @@ values: array of string
 
 <summary>
 
-technique: optional "fixed"or "sliding"
+technique: optional "fixed" or "sliding"
 
 </summary>
 
@@ -1356,7 +1356,7 @@ Secrets Store used by this gateway. Omit on update to keep the current store. Ca
 
 <summary>
 
-stripe: optional object {authorization, usage\_events }
+stripe: optional object { authorization, usage\_events }
 
 </summary>
 
@@ -1368,7 +1368,7 @@ authorization: string
 
 <summary>
 
-usage\_events: array of object {payload }
+usage\_events: array of object { payload }
 
 </summary>
 
@@ -1388,7 +1388,7 @@ payload: string
 
 <summary>
 
-workers\_ai\_billing\_mode: optional "postpaid"or "unified"
+workers\_ai\_billing\_mode: optional "postpaid" or "unified"
 
 Controls how Workers AI inference calls routed through this gateway are billed. ‘postpaid’ bills the account directly through Workers AI; ‘unified’ deducts credits via AI Gateway using neuron-based pricing and delegates billing to AI Gateway.
 
@@ -1420,7 +1420,7 @@ zdr: optional boolean
 
 <summary>
 
-AIGatewayGetResponse object {id, cache\_invalidate\_on\_update, cache\_ttl, 29 more }
+AIGatewayGetResponse object { id, cache\_invalidate\_on\_update, cache\_ttl, 29 more }
 
 </summary>
 
@@ -1496,7 +1496,7 @@ Requires customer-provided provider credentials and prevents fallback to Unified
 
 <summary>
 
-dlp: optional object {action, enabled, profiles } or object {enabled, policies }
+dlp: optional object { action, enabled, profiles } or object { enabled, policies }
 
 </summary>
 
@@ -1506,7 +1506,7 @@ One of the following:
 
 <summary>
 
-object {action, enabled, profiles }
+object { action, enabled, profiles }
 
 </summary>
 
@@ -1514,7 +1514,7 @@ object {action, enabled, profiles }
 
 <summary>
 
-action: "BLOCK"or "FLAG"
+action: "BLOCK" or "FLAG"
 
 </summary>
 
@@ -1548,7 +1548,7 @@ profiles: array of string
 
 <summary>
 
-object {enabled, policies }
+object { enabled, policies }
 
 </summary>
 
@@ -1560,7 +1560,7 @@ enabled: boolean
 
 <summary>
 
-policies: array of object {id, action, check, 2 more }
+policies: array of object { id, action, check, 2 more }
 
 </summary>
 
@@ -1572,7 +1572,7 @@ id: string
 
 <summary>
 
-action: "FLAG"or "BLOCK"
+action: "FLAG" or "BLOCK"
 
 </summary>
 
@@ -1594,7 +1594,7 @@ One of the following:
 
 <summary>
 
-check: array of "REQUEST"or "RESPONSE"
+check: array of "REQUEST" or "RESPONSE"
 
 </summary>
 
@@ -1636,7 +1636,7 @@ profiles: array of string
 
 <summary>
 
-fedramp\_level: optional "fedramp-medium"or "fedramp-high"
+fedramp\_level: optional "fedramp-medium" or "fedramp-high"
 
 FedRAMP compliance level: fedramp-medium or fedramp-high.
 
@@ -1660,7 +1660,7 @@ One of the following:
 
 <summary>
 
-fedramp\_mode: optional "prefer"or "require"
+fedramp\_mode: optional "prefer" or "require"
 
 FedRAMP enforcement mode. “prefer” prioritizes compliant connectors but allows fallback. “require” strictly filters.
 
@@ -1684,7 +1684,7 @@ One of the following:
 
 <summary>
 
-guardrails: optional object {prompt, response }
+guardrails: optional object { prompt, response }
 
 </summary>
 
@@ -1692,7 +1692,7 @@ guardrails: optional object {prompt, response }
 
 <summary>
 
-prompt: object {P1, S1, S10, 12 more }
+prompt: object { P1, S1, S10, 12 more }
 
 </summary>
 
@@ -1700,29 +1700,7 @@ prompt: object {P1, S1, S10, 12 more }
 
 <summary>
 
-P1: optional "FLAG"or "BLOCK"
-
-</summary>
-
-One of the following:
-
-"FLAG"
-
-<a href="#">Link to this property</a>
-
-"BLOCK"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-S1: optional "FLAG"or "BLOCK"
+P1: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -1744,7 +1722,7 @@ One of the following:
 
 <summary>
 
-S10: optional "FLAG"or "BLOCK"
+S1: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -1766,7 +1744,7 @@ One of the following:
 
 <summary>
 
-S11: optional "FLAG"or "BLOCK"
+S10: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -1788,7 +1766,7 @@ One of the following:
 
 <summary>
 
-S12: optional "FLAG"or "BLOCK"
+S11: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -1810,7 +1788,7 @@ One of the following:
 
 <summary>
 
-S13: optional "FLAG"or "BLOCK"
+S12: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -1832,7 +1810,7 @@ One of the following:
 
 <summary>
 
-S14: optional "FLAG"or "BLOCK"
+S13: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -1854,7 +1832,7 @@ One of the following:
 
 <summary>
 
-S2: optional "FLAG"or "BLOCK"
+S14: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -1876,7 +1854,7 @@ One of the following:
 
 <summary>
 
-S3: optional "FLAG"or "BLOCK"
+S2: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -1898,7 +1876,7 @@ One of the following:
 
 <summary>
 
-S4: optional "FLAG"or "BLOCK"
+S3: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -1920,7 +1898,7 @@ One of the following:
 
 <summary>
 
-S5: optional "FLAG"or "BLOCK"
+S4: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -1942,7 +1920,7 @@ One of the following:
 
 <summary>
 
-S6: optional "FLAG"or "BLOCK"
+S5: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -1964,7 +1942,7 @@ One of the following:
 
 <summary>
 
-S7: optional "FLAG"or "BLOCK"
+S6: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -1986,7 +1964,7 @@ One of the following:
 
 <summary>
 
-S8: optional "FLAG"or "BLOCK"
+S7: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -2008,7 +1986,29 @@ One of the following:
 
 <summary>
 
-S9: optional "FLAG"or "BLOCK"
+S8: optional "FLAG" or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S9: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -2034,7 +2034,7 @@ One of the following:
 
 <summary>
 
-response: object {P1, S1, S10, 12 more }
+response: object { P1, S1, S10, 12 more }
 
 </summary>
 
@@ -2042,29 +2042,7 @@ response: object {P1, S1, S10, 12 more }
 
 <summary>
 
-P1: optional "FLAG"or "BLOCK"
-
-</summary>
-
-One of the following:
-
-"FLAG"
-
-<a href="#">Link to this property</a>
-
-"BLOCK"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-S1: optional "FLAG"or "BLOCK"
+P1: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -2086,7 +2064,7 @@ One of the following:
 
 <summary>
 
-S10: optional "FLAG"or "BLOCK"
+S1: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -2108,7 +2086,7 @@ One of the following:
 
 <summary>
 
-S11: optional "FLAG"or "BLOCK"
+S10: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -2130,7 +2108,7 @@ One of the following:
 
 <summary>
 
-S12: optional "FLAG"or "BLOCK"
+S11: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -2152,7 +2130,7 @@ One of the following:
 
 <summary>
 
-S13: optional "FLAG"or "BLOCK"
+S12: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -2174,7 +2152,7 @@ One of the following:
 
 <summary>
 
-S14: optional "FLAG"or "BLOCK"
+S13: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -2196,7 +2174,7 @@ One of the following:
 
 <summary>
 
-S2: optional "FLAG"or "BLOCK"
+S14: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -2218,7 +2196,7 @@ One of the following:
 
 <summary>
 
-S3: optional "FLAG"or "BLOCK"
+S2: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -2240,7 +2218,7 @@ One of the following:
 
 <summary>
 
-S4: optional "FLAG"or "BLOCK"
+S3: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -2262,7 +2240,7 @@ One of the following:
 
 <summary>
 
-S5: optional "FLAG"or "BLOCK"
+S4: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -2284,7 +2262,7 @@ One of the following:
 
 <summary>
 
-S6: optional "FLAG"or "BLOCK"
+S5: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -2306,7 +2284,7 @@ One of the following:
 
 <summary>
 
-S7: optional "FLAG"or "BLOCK"
+S6: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -2328,7 +2306,7 @@ One of the following:
 
 <summary>
 
-S8: optional "FLAG"or "BLOCK"
+S7: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -2350,7 +2328,29 @@ One of the following:
 
 <summary>
 
-S9: optional "FLAG"or "BLOCK"
+S8: optional "FLAG" or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S9: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -2396,7 +2396,7 @@ minimum10000
 
 <summary>
 
-log\_management\_strategy: optional "STOP\_INSERTING"or "DELETE\_OLDEST"
+log\_management\_strategy: optional "STOP\_INSERTING" or "DELETE\_OLDEST"
 
 </summary>
 
@@ -2436,7 +2436,7 @@ Lets requests to a model use every provider that serves it. When off, a model us
 
 <summary>
 
-otel: optional array of object {headers, url, authorization, content\_type }
+otel: optional array of object { headers, url, authorization, content\_type }
 
 </summary>
 
@@ -2462,7 +2462,7 @@ maxLength256
 
 <summary>
 
-content\_type: optional "json"or "protobuf"
+content\_type: optional "json" or "protobuf"
 
 </summary>
 
@@ -2488,7 +2488,7 @@ One of the following:
 
 <summary>
 
-rate\_limiting\_technique: optional "fixed"or "sliding"
+rate\_limiting\_technique: optional "fixed" or "sliding"
 
 </summary>
 
@@ -2510,7 +2510,7 @@ One of the following:
 
 <summary>
 
-retry\_backoff: optional "constant"or "linear"or "exponential"
+retry\_backoff: optional "constant" or "linear" or "exponential"
 
 Backoff strategy for retry delays
 
@@ -2558,7 +2558,7 @@ minimum1
 
 <summary>
 
-spend\_limits: optional object {enabled, rules }
+spend\_limits: optional object { enabled, rules }
 
 </summary>
 
@@ -2570,7 +2570,7 @@ enabled: optional boolean
 
 <summary>
 
-rules: optional array of object {limit, limitType, window, 6 more }
+rules: optional array of object { limit, limitType, window, 6 more }
 
 </summary>
 
@@ -2608,7 +2608,7 @@ enabled: optional boolean
 
 <summary>
 
-metadata: optional map\[object {mode } or object {mode, values } ]
+metadata: optional map\[object { mode } or object { mode, values } ]
 
 </summary>
 
@@ -2618,7 +2618,7 @@ One of the following:
 
 <summary>
 
-Mode object {mode }
+Mode object { mode }
 
 </summary>
 
@@ -2634,7 +2634,7 @@ mode: "partition"
 
 <summary>
 
-object {mode, values }
+object { mode, values }
 
 </summary>
 
@@ -2658,7 +2658,7 @@ values: array of string
 
 <summary>
 
-model: optional object {mode, values }
+model: optional object { mode, values }
 
 </summary>
 
@@ -2678,7 +2678,7 @@ values: array of string
 
 <summary>
 
-provider: optional object {mode, values }
+provider: optional object { mode, values }
 
 </summary>
 
@@ -2698,7 +2698,7 @@ values: array of string
 
 <summary>
 
-technique: optional "fixed"or "sliding"
+technique: optional "fixed" or "sliding"
 
 </summary>
 
@@ -2734,7 +2734,7 @@ Secrets Store used by this gateway. Omit on update to keep the current store. Ca
 
 <summary>
 
-stripe: optional object {authorization, usage\_events }
+stripe: optional object { authorization, usage\_events }
 
 </summary>
 
@@ -2746,7 +2746,7 @@ authorization: string
 
 <summary>
 
-usage\_events: array of object {payload }
+usage\_events: array of object { payload }
 
 </summary>
 
@@ -2766,7 +2766,7 @@ payload: string
 
 <summary>
 
-workers\_ai\_billing\_mode: optional "postpaid"or "unified"
+workers\_ai\_billing\_mode: optional "postpaid" or "unified"
 
 Controls how Workers AI inference calls routed through this gateway are billed. ‘postpaid’ bills the account directly through Workers AI; ‘unified’ deducts credits via AI Gateway using neuron-based pricing and delegates billing to AI Gateway.
 
@@ -2798,7 +2798,7 @@ zdr: optional boolean
 
 <summary>
 
-AIGatewayCreateResponse object {id, cache\_invalidate\_on\_update, cache\_ttl, 29 more }
+AIGatewayCreateResponse object { id, cache\_invalidate\_on\_update, cache\_ttl, 29 more }
 
 </summary>
 
@@ -2874,7 +2874,7 @@ Requires customer-provided provider credentials and prevents fallback to Unified
 
 <summary>
 
-dlp: optional object {action, enabled, profiles } or object {enabled, policies }
+dlp: optional object { action, enabled, profiles } or object { enabled, policies }
 
 </summary>
 
@@ -2884,7 +2884,7 @@ One of the following:
 
 <summary>
 
-object {action, enabled, profiles }
+object { action, enabled, profiles }
 
 </summary>
 
@@ -2892,7 +2892,7 @@ object {action, enabled, profiles }
 
 <summary>
 
-action: "BLOCK"or "FLAG"
+action: "BLOCK" or "FLAG"
 
 </summary>
 
@@ -2926,7 +2926,7 @@ profiles: array of string
 
 <summary>
 
-object {enabled, policies }
+object { enabled, policies }
 
 </summary>
 
@@ -2938,7 +2938,7 @@ enabled: boolean
 
 <summary>
 
-policies: array of object {id, action, check, 2 more }
+policies: array of object { id, action, check, 2 more }
 
 </summary>
 
@@ -2950,7 +2950,7 @@ id: string
 
 <summary>
 
-action: "FLAG"or "BLOCK"
+action: "FLAG" or "BLOCK"
 
 </summary>
 
@@ -2972,7 +2972,7 @@ One of the following:
 
 <summary>
 
-check: array of "REQUEST"or "RESPONSE"
+check: array of "REQUEST" or "RESPONSE"
 
 </summary>
 
@@ -3014,7 +3014,7 @@ profiles: array of string
 
 <summary>
 
-fedramp\_level: optional "fedramp-medium"or "fedramp-high"
+fedramp\_level: optional "fedramp-medium" or "fedramp-high"
 
 FedRAMP compliance level: fedramp-medium or fedramp-high.
 
@@ -3038,7 +3038,7 @@ One of the following:
 
 <summary>
 
-fedramp\_mode: optional "prefer"or "require"
+fedramp\_mode: optional "prefer" or "require"
 
 FedRAMP enforcement mode. “prefer” prioritizes compliant connectors but allows fallback. “require” strictly filters.
 
@@ -3062,7 +3062,7 @@ One of the following:
 
 <summary>
 
-guardrails: optional object {prompt, response }
+guardrails: optional object { prompt, response }
 
 </summary>
 
@@ -3070,7 +3070,7 @@ guardrails: optional object {prompt, response }
 
 <summary>
 
-prompt: object {P1, S1, S10, 12 more }
+prompt: object { P1, S1, S10, 12 more }
 
 </summary>
 
@@ -3078,29 +3078,7 @@ prompt: object {P1, S1, S10, 12 more }
 
 <summary>
 
-P1: optional "FLAG"or "BLOCK"
-
-</summary>
-
-One of the following:
-
-"FLAG"
-
-<a href="#">Link to this property</a>
-
-"BLOCK"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-S1: optional "FLAG"or "BLOCK"
+P1: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -3122,7 +3100,7 @@ One of the following:
 
 <summary>
 
-S10: optional "FLAG"or "BLOCK"
+S1: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -3144,7 +3122,7 @@ One of the following:
 
 <summary>
 
-S11: optional "FLAG"or "BLOCK"
+S10: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -3166,7 +3144,7 @@ One of the following:
 
 <summary>
 
-S12: optional "FLAG"or "BLOCK"
+S11: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -3188,7 +3166,7 @@ One of the following:
 
 <summary>
 
-S13: optional "FLAG"or "BLOCK"
+S12: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -3210,7 +3188,7 @@ One of the following:
 
 <summary>
 
-S14: optional "FLAG"or "BLOCK"
+S13: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -3232,7 +3210,7 @@ One of the following:
 
 <summary>
 
-S2: optional "FLAG"or "BLOCK"
+S14: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -3254,7 +3232,7 @@ One of the following:
 
 <summary>
 
-S3: optional "FLAG"or "BLOCK"
+S2: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -3276,7 +3254,7 @@ One of the following:
 
 <summary>
 
-S4: optional "FLAG"or "BLOCK"
+S3: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -3298,7 +3276,7 @@ One of the following:
 
 <summary>
 
-S5: optional "FLAG"or "BLOCK"
+S4: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -3320,7 +3298,7 @@ One of the following:
 
 <summary>
 
-S6: optional "FLAG"or "BLOCK"
+S5: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -3342,7 +3320,7 @@ One of the following:
 
 <summary>
 
-S7: optional "FLAG"or "BLOCK"
+S6: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -3364,7 +3342,7 @@ One of the following:
 
 <summary>
 
-S8: optional "FLAG"or "BLOCK"
+S7: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -3386,7 +3364,29 @@ One of the following:
 
 <summary>
 
-S9: optional "FLAG"or "BLOCK"
+S8: optional "FLAG" or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S9: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -3412,7 +3412,7 @@ One of the following:
 
 <summary>
 
-response: object {P1, S1, S10, 12 more }
+response: object { P1, S1, S10, 12 more }
 
 </summary>
 
@@ -3420,29 +3420,7 @@ response: object {P1, S1, S10, 12 more }
 
 <summary>
 
-P1: optional "FLAG"or "BLOCK"
-
-</summary>
-
-One of the following:
-
-"FLAG"
-
-<a href="#">Link to this property</a>
-
-"BLOCK"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-S1: optional "FLAG"or "BLOCK"
+P1: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -3464,7 +3442,7 @@ One of the following:
 
 <summary>
 
-S10: optional "FLAG"or "BLOCK"
+S1: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -3486,7 +3464,7 @@ One of the following:
 
 <summary>
 
-S11: optional "FLAG"or "BLOCK"
+S10: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -3508,7 +3486,7 @@ One of the following:
 
 <summary>
 
-S12: optional "FLAG"or "BLOCK"
+S11: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -3530,7 +3508,7 @@ One of the following:
 
 <summary>
 
-S13: optional "FLAG"or "BLOCK"
+S12: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -3552,7 +3530,7 @@ One of the following:
 
 <summary>
 
-S14: optional "FLAG"or "BLOCK"
+S13: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -3574,7 +3552,7 @@ One of the following:
 
 <summary>
 
-S2: optional "FLAG"or "BLOCK"
+S14: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -3596,7 +3574,7 @@ One of the following:
 
 <summary>
 
-S3: optional "FLAG"or "BLOCK"
+S2: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -3618,7 +3596,7 @@ One of the following:
 
 <summary>
 
-S4: optional "FLAG"or "BLOCK"
+S3: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -3640,7 +3618,7 @@ One of the following:
 
 <summary>
 
-S5: optional "FLAG"or "BLOCK"
+S4: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -3662,7 +3640,7 @@ One of the following:
 
 <summary>
 
-S6: optional "FLAG"or "BLOCK"
+S5: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -3684,7 +3662,7 @@ One of the following:
 
 <summary>
 
-S7: optional "FLAG"or "BLOCK"
+S6: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -3706,7 +3684,7 @@ One of the following:
 
 <summary>
 
-S8: optional "FLAG"or "BLOCK"
+S7: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -3728,7 +3706,29 @@ One of the following:
 
 <summary>
 
-S9: optional "FLAG"or "BLOCK"
+S8: optional "FLAG" or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S9: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -3774,7 +3774,7 @@ minimum10000
 
 <summary>
 
-log\_management\_strategy: optional "STOP\_INSERTING"or "DELETE\_OLDEST"
+log\_management\_strategy: optional "STOP\_INSERTING" or "DELETE\_OLDEST"
 
 </summary>
 
@@ -3814,7 +3814,7 @@ Lets requests to a model use every provider that serves it. When off, a model us
 
 <summary>
 
-otel: optional array of object {headers, url, authorization, content\_type }
+otel: optional array of object { headers, url, authorization, content\_type }
 
 </summary>
 
@@ -3840,7 +3840,7 @@ maxLength256
 
 <summary>
 
-content\_type: optional "json"or "protobuf"
+content\_type: optional "json" or "protobuf"
 
 </summary>
 
@@ -3866,7 +3866,7 @@ One of the following:
 
 <summary>
 
-rate\_limiting\_technique: optional "fixed"or "sliding"
+rate\_limiting\_technique: optional "fixed" or "sliding"
 
 </summary>
 
@@ -3888,7 +3888,7 @@ One of the following:
 
 <summary>
 
-retry\_backoff: optional "constant"or "linear"or "exponential"
+retry\_backoff: optional "constant" or "linear" or "exponential"
 
 Backoff strategy for retry delays
 
@@ -3936,7 +3936,7 @@ minimum1
 
 <summary>
 
-spend\_limits: optional object {enabled, rules }
+spend\_limits: optional object { enabled, rules }
 
 </summary>
 
@@ -3948,7 +3948,7 @@ enabled: optional boolean
 
 <summary>
 
-rules: optional array of object {limit, limitType, window, 6 more }
+rules: optional array of object { limit, limitType, window, 6 more }
 
 </summary>
 
@@ -3986,7 +3986,7 @@ enabled: optional boolean
 
 <summary>
 
-metadata: optional map\[object {mode } or object {mode, values } ]
+metadata: optional map\[object { mode } or object { mode, values } ]
 
 </summary>
 
@@ -3996,7 +3996,7 @@ One of the following:
 
 <summary>
 
-Mode object {mode }
+Mode object { mode }
 
 </summary>
 
@@ -4012,7 +4012,7 @@ mode: "partition"
 
 <summary>
 
-object {mode, values }
+object { mode, values }
 
 </summary>
 
@@ -4036,7 +4036,7 @@ values: array of string
 
 <summary>
 
-model: optional object {mode, values }
+model: optional object { mode, values }
 
 </summary>
 
@@ -4056,7 +4056,7 @@ values: array of string
 
 <summary>
 
-provider: optional object {mode, values }
+provider: optional object { mode, values }
 
 </summary>
 
@@ -4076,7 +4076,7 @@ values: array of string
 
 <summary>
 
-technique: optional "fixed"or "sliding"
+technique: optional "fixed" or "sliding"
 
 </summary>
 
@@ -4112,7 +4112,7 @@ Secrets Store used by this gateway. Omit on update to keep the current store. Ca
 
 <summary>
 
-stripe: optional object {authorization, usage\_events }
+stripe: optional object { authorization, usage\_events }
 
 </summary>
 
@@ -4124,7 +4124,7 @@ authorization: string
 
 <summary>
 
-usage\_events: array of object {payload }
+usage\_events: array of object { payload }
 
 </summary>
 
@@ -4144,7 +4144,7 @@ payload: string
 
 <summary>
 
-workers\_ai\_billing\_mode: optional "postpaid"or "unified"
+workers\_ai\_billing\_mode: optional "postpaid" or "unified"
 
 Controls how Workers AI inference calls routed through this gateway are billed. ‘postpaid’ bills the account directly through Workers AI; ‘unified’ deducts credits via AI Gateway using neuron-based pricing and delegates billing to AI Gateway.
 
@@ -4176,7 +4176,7 @@ zdr: optional boolean
 
 <summary>
 
-AIGatewayUpdateResponse object {id, cache\_invalidate\_on\_update, cache\_ttl, 29 more }
+AIGatewayUpdateResponse object { id, cache\_invalidate\_on\_update, cache\_ttl, 29 more }
 
 </summary>
 
@@ -4252,7 +4252,7 @@ Requires customer-provided provider credentials and prevents fallback to Unified
 
 <summary>
 
-dlp: optional object {action, enabled, profiles } or object {enabled, policies }
+dlp: optional object { action, enabled, profiles } or object { enabled, policies }
 
 </summary>
 
@@ -4262,7 +4262,7 @@ One of the following:
 
 <summary>
 
-object {action, enabled, profiles }
+object { action, enabled, profiles }
 
 </summary>
 
@@ -4270,7 +4270,7 @@ object {action, enabled, profiles }
 
 <summary>
 
-action: "BLOCK"or "FLAG"
+action: "BLOCK" or "FLAG"
 
 </summary>
 
@@ -4304,7 +4304,7 @@ profiles: array of string
 
 <summary>
 
-object {enabled, policies }
+object { enabled, policies }
 
 </summary>
 
@@ -4316,7 +4316,7 @@ enabled: boolean
 
 <summary>
 
-policies: array of object {id, action, check, 2 more }
+policies: array of object { id, action, check, 2 more }
 
 </summary>
 
@@ -4328,7 +4328,7 @@ id: string
 
 <summary>
 
-action: "FLAG"or "BLOCK"
+action: "FLAG" or "BLOCK"
 
 </summary>
 
@@ -4350,7 +4350,7 @@ One of the following:
 
 <summary>
 
-check: array of "REQUEST"or "RESPONSE"
+check: array of "REQUEST" or "RESPONSE"
 
 </summary>
 
@@ -4392,7 +4392,7 @@ profiles: array of string
 
 <summary>
 
-fedramp\_level: optional "fedramp-medium"or "fedramp-high"
+fedramp\_level: optional "fedramp-medium" or "fedramp-high"
 
 FedRAMP compliance level: fedramp-medium or fedramp-high.
 
@@ -4416,7 +4416,7 @@ One of the following:
 
 <summary>
 
-fedramp\_mode: optional "prefer"or "require"
+fedramp\_mode: optional "prefer" or "require"
 
 FedRAMP enforcement mode. “prefer” prioritizes compliant connectors but allows fallback. “require” strictly filters.
 
@@ -4440,7 +4440,7 @@ One of the following:
 
 <summary>
 
-guardrails: optional object {prompt, response }
+guardrails: optional object { prompt, response }
 
 </summary>
 
@@ -4448,7 +4448,7 @@ guardrails: optional object {prompt, response }
 
 <summary>
 
-prompt: object {P1, S1, S10, 12 more }
+prompt: object { P1, S1, S10, 12 more }
 
 </summary>
 
@@ -4456,29 +4456,7 @@ prompt: object {P1, S1, S10, 12 more }
 
 <summary>
 
-P1: optional "FLAG"or "BLOCK"
-
-</summary>
-
-One of the following:
-
-"FLAG"
-
-<a href="#">Link to this property</a>
-
-"BLOCK"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-S1: optional "FLAG"or "BLOCK"
+P1: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -4500,7 +4478,7 @@ One of the following:
 
 <summary>
 
-S10: optional "FLAG"or "BLOCK"
+S1: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -4522,7 +4500,7 @@ One of the following:
 
 <summary>
 
-S11: optional "FLAG"or "BLOCK"
+S10: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -4544,7 +4522,7 @@ One of the following:
 
 <summary>
 
-S12: optional "FLAG"or "BLOCK"
+S11: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -4566,7 +4544,7 @@ One of the following:
 
 <summary>
 
-S13: optional "FLAG"or "BLOCK"
+S12: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -4588,7 +4566,7 @@ One of the following:
 
 <summary>
 
-S14: optional "FLAG"or "BLOCK"
+S13: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -4610,7 +4588,7 @@ One of the following:
 
 <summary>
 
-S2: optional "FLAG"or "BLOCK"
+S14: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -4632,7 +4610,7 @@ One of the following:
 
 <summary>
 
-S3: optional "FLAG"or "BLOCK"
+S2: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -4654,7 +4632,7 @@ One of the following:
 
 <summary>
 
-S4: optional "FLAG"or "BLOCK"
+S3: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -4676,7 +4654,7 @@ One of the following:
 
 <summary>
 
-S5: optional "FLAG"or "BLOCK"
+S4: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -4698,7 +4676,7 @@ One of the following:
 
 <summary>
 
-S6: optional "FLAG"or "BLOCK"
+S5: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -4720,7 +4698,7 @@ One of the following:
 
 <summary>
 
-S7: optional "FLAG"or "BLOCK"
+S6: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -4742,7 +4720,7 @@ One of the following:
 
 <summary>
 
-S8: optional "FLAG"or "BLOCK"
+S7: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -4764,7 +4742,29 @@ One of the following:
 
 <summary>
 
-S9: optional "FLAG"or "BLOCK"
+S8: optional "FLAG" or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S9: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -4790,7 +4790,7 @@ One of the following:
 
 <summary>
 
-response: object {P1, S1, S10, 12 more }
+response: object { P1, S1, S10, 12 more }
 
 </summary>
 
@@ -4798,29 +4798,7 @@ response: object {P1, S1, S10, 12 more }
 
 <summary>
 
-P1: optional "FLAG"or "BLOCK"
-
-</summary>
-
-One of the following:
-
-"FLAG"
-
-<a href="#">Link to this property</a>
-
-"BLOCK"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-S1: optional "FLAG"or "BLOCK"
+P1: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -4842,7 +4820,7 @@ One of the following:
 
 <summary>
 
-S10: optional "FLAG"or "BLOCK"
+S1: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -4864,7 +4842,7 @@ One of the following:
 
 <summary>
 
-S11: optional "FLAG"or "BLOCK"
+S10: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -4886,7 +4864,7 @@ One of the following:
 
 <summary>
 
-S12: optional "FLAG"or "BLOCK"
+S11: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -4908,7 +4886,7 @@ One of the following:
 
 <summary>
 
-S13: optional "FLAG"or "BLOCK"
+S12: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -4930,7 +4908,7 @@ One of the following:
 
 <summary>
 
-S14: optional "FLAG"or "BLOCK"
+S13: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -4952,7 +4930,7 @@ One of the following:
 
 <summary>
 
-S2: optional "FLAG"or "BLOCK"
+S14: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -4974,7 +4952,7 @@ One of the following:
 
 <summary>
 
-S3: optional "FLAG"or "BLOCK"
+S2: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -4996,7 +4974,7 @@ One of the following:
 
 <summary>
 
-S4: optional "FLAG"or "BLOCK"
+S3: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -5018,7 +4996,7 @@ One of the following:
 
 <summary>
 
-S5: optional "FLAG"or "BLOCK"
+S4: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -5040,7 +5018,7 @@ One of the following:
 
 <summary>
 
-S6: optional "FLAG"or "BLOCK"
+S5: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -5062,7 +5040,7 @@ One of the following:
 
 <summary>
 
-S7: optional "FLAG"or "BLOCK"
+S6: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -5084,7 +5062,7 @@ One of the following:
 
 <summary>
 
-S8: optional "FLAG"or "BLOCK"
+S7: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -5106,7 +5084,29 @@ One of the following:
 
 <summary>
 
-S9: optional "FLAG"or "BLOCK"
+S8: optional "FLAG" or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S9: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -5152,7 +5152,7 @@ minimum10000
 
 <summary>
 
-log\_management\_strategy: optional "STOP\_INSERTING"or "DELETE\_OLDEST"
+log\_management\_strategy: optional "STOP\_INSERTING" or "DELETE\_OLDEST"
 
 </summary>
 
@@ -5192,7 +5192,7 @@ Lets requests to a model use every provider that serves it. When off, a model us
 
 <summary>
 
-otel: optional array of object {headers, url, authorization, content\_type }
+otel: optional array of object { headers, url, authorization, content\_type }
 
 </summary>
 
@@ -5218,7 +5218,7 @@ maxLength256
 
 <summary>
 
-content\_type: optional "json"or "protobuf"
+content\_type: optional "json" or "protobuf"
 
 </summary>
 
@@ -5244,7 +5244,7 @@ One of the following:
 
 <summary>
 
-rate\_limiting\_technique: optional "fixed"or "sliding"
+rate\_limiting\_technique: optional "fixed" or "sliding"
 
 </summary>
 
@@ -5266,7 +5266,7 @@ One of the following:
 
 <summary>
 
-retry\_backoff: optional "constant"or "linear"or "exponential"
+retry\_backoff: optional "constant" or "linear" or "exponential"
 
 Backoff strategy for retry delays
 
@@ -5314,7 +5314,7 @@ minimum1
 
 <summary>
 
-spend\_limits: optional object {enabled, rules }
+spend\_limits: optional object { enabled, rules }
 
 </summary>
 
@@ -5326,7 +5326,7 @@ enabled: optional boolean
 
 <summary>
 
-rules: optional array of object {limit, limitType, window, 6 more }
+rules: optional array of object { limit, limitType, window, 6 more }
 
 </summary>
 
@@ -5364,7 +5364,7 @@ enabled: optional boolean
 
 <summary>
 
-metadata: optional map\[object {mode } or object {mode, values } ]
+metadata: optional map\[object { mode } or object { mode, values } ]
 
 </summary>
 
@@ -5374,7 +5374,7 @@ One of the following:
 
 <summary>
 
-Mode object {mode }
+Mode object { mode }
 
 </summary>
 
@@ -5390,7 +5390,7 @@ mode: "partition"
 
 <summary>
 
-object {mode, values }
+object { mode, values }
 
 </summary>
 
@@ -5414,7 +5414,7 @@ values: array of string
 
 <summary>
 
-model: optional object {mode, values }
+model: optional object { mode, values }
 
 </summary>
 
@@ -5434,7 +5434,7 @@ values: array of string
 
 <summary>
 
-provider: optional object {mode, values }
+provider: optional object { mode, values }
 
 </summary>
 
@@ -5454,7 +5454,7 @@ values: array of string
 
 <summary>
 
-technique: optional "fixed"or "sliding"
+technique: optional "fixed" or "sliding"
 
 </summary>
 
@@ -5490,7 +5490,7 @@ Secrets Store used by this gateway. Omit on update to keep the current store. Ca
 
 <summary>
 
-stripe: optional object {authorization, usage\_events }
+stripe: optional object { authorization, usage\_events }
 
 </summary>
 
@@ -5502,7 +5502,7 @@ authorization: string
 
 <summary>
 
-usage\_events: array of object {payload }
+usage\_events: array of object { payload }
 
 </summary>
 
@@ -5522,7 +5522,7 @@ payload: string
 
 <summary>
 
-workers\_ai\_billing\_mode: optional "postpaid"or "unified"
+workers\_ai\_billing\_mode: optional "postpaid" or "unified"
 
 Controls how Workers AI inference calls routed through this gateway are billed. ‘postpaid’ bills the account directly through Workers AI; ‘unified’ deducts credits via AI Gateway using neuron-based pricing and delegates billing to AI Gateway.
 
@@ -5554,7 +5554,7 @@ zdr: optional boolean
 
 <summary>
 
-AIGatewayDeleteResponse object {id, cache\_invalidate\_on\_update, cache\_ttl, 29 more }
+AIGatewayDeleteResponse object { id, cache\_invalidate\_on\_update, cache\_ttl, 29 more }
 
 </summary>
 
@@ -5630,7 +5630,7 @@ Requires customer-provided provider credentials and prevents fallback to Unified
 
 <summary>
 
-dlp: optional object {action, enabled, profiles } or object {enabled, policies }
+dlp: optional object { action, enabled, profiles } or object { enabled, policies }
 
 </summary>
 
@@ -5640,7 +5640,7 @@ One of the following:
 
 <summary>
 
-object {action, enabled, profiles }
+object { action, enabled, profiles }
 
 </summary>
 
@@ -5648,7 +5648,7 @@ object {action, enabled, profiles }
 
 <summary>
 
-action: "BLOCK"or "FLAG"
+action: "BLOCK" or "FLAG"
 
 </summary>
 
@@ -5682,7 +5682,7 @@ profiles: array of string
 
 <summary>
 
-object {enabled, policies }
+object { enabled, policies }
 
 </summary>
 
@@ -5694,7 +5694,7 @@ enabled: boolean
 
 <summary>
 
-policies: array of object {id, action, check, 2 more }
+policies: array of object { id, action, check, 2 more }
 
 </summary>
 
@@ -5706,7 +5706,7 @@ id: string
 
 <summary>
 
-action: "FLAG"or "BLOCK"
+action: "FLAG" or "BLOCK"
 
 </summary>
 
@@ -5728,7 +5728,7 @@ One of the following:
 
 <summary>
 
-check: array of "REQUEST"or "RESPONSE"
+check: array of "REQUEST" or "RESPONSE"
 
 </summary>
 
@@ -5770,7 +5770,7 @@ profiles: array of string
 
 <summary>
 
-fedramp\_level: optional "fedramp-medium"or "fedramp-high"
+fedramp\_level: optional "fedramp-medium" or "fedramp-high"
 
 FedRAMP compliance level: fedramp-medium or fedramp-high.
 
@@ -5794,7 +5794,7 @@ One of the following:
 
 <summary>
 
-fedramp\_mode: optional "prefer"or "require"
+fedramp\_mode: optional "prefer" or "require"
 
 FedRAMP enforcement mode. “prefer” prioritizes compliant connectors but allows fallback. “require” strictly filters.
 
@@ -5818,7 +5818,7 @@ One of the following:
 
 <summary>
 
-guardrails: optional object {prompt, response }
+guardrails: optional object { prompt, response }
 
 </summary>
 
@@ -5826,7 +5826,7 @@ guardrails: optional object {prompt, response }
 
 <summary>
 
-prompt: object {P1, S1, S10, 12 more }
+prompt: object { P1, S1, S10, 12 more }
 
 </summary>
 
@@ -5834,29 +5834,7 @@ prompt: object {P1, S1, S10, 12 more }
 
 <summary>
 
-P1: optional "FLAG"or "BLOCK"
-
-</summary>
-
-One of the following:
-
-"FLAG"
-
-<a href="#">Link to this property</a>
-
-"BLOCK"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-S1: optional "FLAG"or "BLOCK"
+P1: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -5878,7 +5856,7 @@ One of the following:
 
 <summary>
 
-S10: optional "FLAG"or "BLOCK"
+S1: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -5900,7 +5878,7 @@ One of the following:
 
 <summary>
 
-S11: optional "FLAG"or "BLOCK"
+S10: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -5922,7 +5900,7 @@ One of the following:
 
 <summary>
 
-S12: optional "FLAG"or "BLOCK"
+S11: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -5944,7 +5922,7 @@ One of the following:
 
 <summary>
 
-S13: optional "FLAG"or "BLOCK"
+S12: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -5966,7 +5944,7 @@ One of the following:
 
 <summary>
 
-S14: optional "FLAG"or "BLOCK"
+S13: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -5988,7 +5966,7 @@ One of the following:
 
 <summary>
 
-S2: optional "FLAG"or "BLOCK"
+S14: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -6010,7 +5988,7 @@ One of the following:
 
 <summary>
 
-S3: optional "FLAG"or "BLOCK"
+S2: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -6032,7 +6010,7 @@ One of the following:
 
 <summary>
 
-S4: optional "FLAG"or "BLOCK"
+S3: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -6054,7 +6032,7 @@ One of the following:
 
 <summary>
 
-S5: optional "FLAG"or "BLOCK"
+S4: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -6076,7 +6054,7 @@ One of the following:
 
 <summary>
 
-S6: optional "FLAG"or "BLOCK"
+S5: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -6098,7 +6076,7 @@ One of the following:
 
 <summary>
 
-S7: optional "FLAG"or "BLOCK"
+S6: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -6120,7 +6098,7 @@ One of the following:
 
 <summary>
 
-S8: optional "FLAG"or "BLOCK"
+S7: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -6142,7 +6120,29 @@ One of the following:
 
 <summary>
 
-S9: optional "FLAG"or "BLOCK"
+S8: optional "FLAG" or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S9: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -6168,7 +6168,7 @@ One of the following:
 
 <summary>
 
-response: object {P1, S1, S10, 12 more }
+response: object { P1, S1, S10, 12 more }
 
 </summary>
 
@@ -6176,29 +6176,7 @@ response: object {P1, S1, S10, 12 more }
 
 <summary>
 
-P1: optional "FLAG"or "BLOCK"
-
-</summary>
-
-One of the following:
-
-"FLAG"
-
-<a href="#">Link to this property</a>
-
-"BLOCK"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-S1: optional "FLAG"or "BLOCK"
+P1: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -6220,7 +6198,7 @@ One of the following:
 
 <summary>
 
-S10: optional "FLAG"or "BLOCK"
+S1: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -6242,7 +6220,7 @@ One of the following:
 
 <summary>
 
-S11: optional "FLAG"or "BLOCK"
+S10: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -6264,7 +6242,7 @@ One of the following:
 
 <summary>
 
-S12: optional "FLAG"or "BLOCK"
+S11: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -6286,7 +6264,7 @@ One of the following:
 
 <summary>
 
-S13: optional "FLAG"or "BLOCK"
+S12: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -6308,7 +6286,7 @@ One of the following:
 
 <summary>
 
-S14: optional "FLAG"or "BLOCK"
+S13: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -6330,7 +6308,7 @@ One of the following:
 
 <summary>
 
-S2: optional "FLAG"or "BLOCK"
+S14: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -6352,7 +6330,7 @@ One of the following:
 
 <summary>
 
-S3: optional "FLAG"or "BLOCK"
+S2: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -6374,7 +6352,7 @@ One of the following:
 
 <summary>
 
-S4: optional "FLAG"or "BLOCK"
+S3: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -6396,7 +6374,7 @@ One of the following:
 
 <summary>
 
-S5: optional "FLAG"or "BLOCK"
+S4: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -6418,7 +6396,7 @@ One of the following:
 
 <summary>
 
-S6: optional "FLAG"or "BLOCK"
+S5: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -6440,7 +6418,7 @@ One of the following:
 
 <summary>
 
-S7: optional "FLAG"or "BLOCK"
+S6: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -6462,7 +6440,7 @@ One of the following:
 
 <summary>
 
-S8: optional "FLAG"or "BLOCK"
+S7: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -6484,7 +6462,29 @@ One of the following:
 
 <summary>
 
-S9: optional "FLAG"or "BLOCK"
+S8: optional "FLAG" or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S9: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -6530,7 +6530,7 @@ minimum10000
 
 <summary>
 
-log\_management\_strategy: optional "STOP\_INSERTING"or "DELETE\_OLDEST"
+log\_management\_strategy: optional "STOP\_INSERTING" or "DELETE\_OLDEST"
 
 </summary>
 
@@ -6570,7 +6570,7 @@ Lets requests to a model use every provider that serves it. When off, a model us
 
 <summary>
 
-otel: optional array of object {headers, url, authorization, content\_type }
+otel: optional array of object { headers, url, authorization, content\_type }
 
 </summary>
 
@@ -6596,7 +6596,7 @@ maxLength256
 
 <summary>
 
-content\_type: optional "json"or "protobuf"
+content\_type: optional "json" or "protobuf"
 
 </summary>
 
@@ -6622,7 +6622,7 @@ One of the following:
 
 <summary>
 
-rate\_limiting\_technique: optional "fixed"or "sliding"
+rate\_limiting\_technique: optional "fixed" or "sliding"
 
 </summary>
 
@@ -6644,7 +6644,7 @@ One of the following:
 
 <summary>
 
-retry\_backoff: optional "constant"or "linear"or "exponential"
+retry\_backoff: optional "constant" or "linear" or "exponential"
 
 Backoff strategy for retry delays
 
@@ -6692,7 +6692,7 @@ minimum1
 
 <summary>
 
-spend\_limits: optional object {enabled, rules }
+spend\_limits: optional object { enabled, rules }
 
 </summary>
 
@@ -6704,7 +6704,7 @@ enabled: optional boolean
 
 <summary>
 
-rules: optional array of object {limit, limitType, window, 6 more }
+rules: optional array of object { limit, limitType, window, 6 more }
 
 </summary>
 
@@ -6742,7 +6742,7 @@ enabled: optional boolean
 
 <summary>
 
-metadata: optional map\[object {mode } or object {mode, values } ]
+metadata: optional map\[object { mode } or object { mode, values } ]
 
 </summary>
 
@@ -6752,7 +6752,7 @@ One of the following:
 
 <summary>
 
-Mode object {mode }
+Mode object { mode }
 
 </summary>
 
@@ -6768,7 +6768,7 @@ mode: "partition"
 
 <summary>
 
-object {mode, values }
+object { mode, values }
 
 </summary>
 
@@ -6792,7 +6792,7 @@ values: array of string
 
 <summary>
 
-model: optional object {mode, values }
+model: optional object { mode, values }
 
 </summary>
 
@@ -6812,7 +6812,7 @@ values: array of string
 
 <summary>
 
-provider: optional object {mode, values }
+provider: optional object { mode, values }
 
 </summary>
 
@@ -6832,7 +6832,7 @@ values: array of string
 
 <summary>
 
-technique: optional "fixed"or "sliding"
+technique: optional "fixed" or "sliding"
 
 </summary>
 
@@ -6868,7 +6868,7 @@ Secrets Store used by this gateway. Omit on update to keep the current store. Ca
 
 <summary>
 
-stripe: optional object {authorization, usage\_events }
+stripe: optional object { authorization, usage\_events }
 
 </summary>
 
@@ -6880,7 +6880,7 @@ authorization: string
 
 <summary>
 
-usage\_events: array of object {payload }
+usage\_events: array of object { payload }
 
 </summary>
 
@@ -6900,7 +6900,7 @@ payload: string
 
 <summary>
 
-workers\_ai\_billing\_mode: optional "postpaid"or "unified"
+workers\_ai\_billing\_mode: optional "postpaid" or "unified"
 
 Controls how Workers AI inference calls routed through this gateway are billed. ‘postpaid’ bills the account directly through Workers AI; ‘unified’ deducts credits via AI Gateway using neuron-based pricing and delegates billing to AI Gateway.
 
@@ -6940,7 +6940,7 @@ GET/accounts/{account\_id}/ai-gateway/evaluation-types
 
 <summary>
 
-EvaluationTypeListResponse object {id, created\_at, description, 5 more }
+EvaluationTypeListResponse object { id, created\_at, description, 5 more }
 
 </summary>
 
@@ -7008,7 +7008,7 @@ DELETE/accounts/{account\_id}/ai-gateway/custom-providers/{id}
 
 <summary>
 
-CustomProviderListResponse object {id, base\_url, created\_at, 12 more }
+CustomProviderListResponse object { id, base\_url, created\_at, 12 more }
 
 </summary>
 
@@ -7092,7 +7092,7 @@ position: optional number
 
 <summary>
 
-CustomProviderGetResponse object {id, base\_url, created\_at, 12 more }
+CustomProviderGetResponse object { id, base\_url, created\_at, 12 more }
 
 </summary>
 
@@ -7176,7 +7176,7 @@ position: optional number
 
 <summary>
 
-CustomProviderCreateResponse object {id, base\_url, created\_at, 12 more }
+CustomProviderCreateResponse object { id, base\_url, created\_at, 12 more }
 
 </summary>
 
@@ -7260,7 +7260,7 @@ position: optional number
 
 <summary>
 
-CustomProviderDeleteResponse object {id, base\_url, created\_at, 12 more }
+CustomProviderDeleteResponse object { id, base\_url, created\_at, 12 more }
 
 </summary>
 
@@ -7372,7 +7372,7 @@ GET/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/logs/{id}/response
 
 <summary>
 
-LogListResponse object {id, cached, created\_at, 17 more }
+LogListResponse object { id, cached, created\_at, 17 more }
 
 </summary>
 
@@ -7468,7 +7468,7 @@ step: optional number
 
 <summary>
 
-LogGetResponse object {id, cached, created\_at, 23 more }
+LogGetResponse object { id, cached, created\_at, 23 more }
 
 </summary>
 
@@ -7592,7 +7592,7 @@ LogEditResponse = unknown
 
 <summary>
 
-LogDeleteResponse object {success }
+LogDeleteResponse object { success }
 
 </summary>
 
@@ -7640,7 +7640,7 @@ DELETE/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/datasets/{id}
 
 <summary>
 
-DatasetListResponse object {id, created\_at, enable, 4 more }
+DatasetListResponse object { id, created\_at, enable, 4 more }
 
 </summary>
 
@@ -7662,7 +7662,7 @@ enable: boolean
 
 <summary>
 
-filters: array of object {key, operator, value }
+filters: array of object { key, operator, value }
 
 </summary>
 
@@ -7670,7 +7670,7 @@ filters: array of object {key, operator, value }
 
 <summary>
 
-key: "created\_at"or "request\_content\_type"or "response\_content\_type"or 10 more
+key: "created\_at" or "request\_content\_type" or "response\_content\_type" or 10 more
 
 </summary>
 
@@ -7736,7 +7736,7 @@ One of the following:
 
 <summary>
 
-operator: "eq"or "contains"or "lt"or "gt"
+operator: "eq" or "contains" or "lt" or "gt"
 
 </summary>
 
@@ -7766,7 +7766,7 @@ One of the following:
 
 <summary>
 
-value: array of stringor numberor boolean
+value: array of string or number or boolean
 
 </summary>
 
@@ -7820,7 +7820,7 @@ name: string
 
 <summary>
 
-DatasetGetResponse object {id, created\_at, enable, 4 more }
+DatasetGetResponse object { id, created\_at, enable, 4 more }
 
 </summary>
 
@@ -7842,7 +7842,7 @@ enable: boolean
 
 <summary>
 
-filters: array of object {key, operator, value }
+filters: array of object { key, operator, value }
 
 </summary>
 
@@ -7850,7 +7850,7 @@ filters: array of object {key, operator, value }
 
 <summary>
 
-key: "created\_at"or "request\_content\_type"or "response\_content\_type"or 10 more
+key: "created\_at" or "request\_content\_type" or "response\_content\_type" or 10 more
 
 </summary>
 
@@ -7916,7 +7916,7 @@ One of the following:
 
 <summary>
 
-operator: "eq"or "contains"or "lt"or "gt"
+operator: "eq" or "contains" or "lt" or "gt"
 
 </summary>
 
@@ -7946,7 +7946,7 @@ One of the following:
 
 <summary>
 
-value: array of stringor numberor boolean
+value: array of string or number or boolean
 
 </summary>
 
@@ -8000,7 +8000,7 @@ name: string
 
 <summary>
 
-DatasetCreateResponse object {id, created\_at, enable, 4 more }
+DatasetCreateResponse object { id, created\_at, enable, 4 more }
 
 </summary>
 
@@ -8022,7 +8022,7 @@ enable: boolean
 
 <summary>
 
-filters: array of object {key, operator, value }
+filters: array of object { key, operator, value }
 
 </summary>
 
@@ -8030,7 +8030,7 @@ filters: array of object {key, operator, value }
 
 <summary>
 
-key: "created\_at"or "request\_content\_type"or "response\_content\_type"or 10 more
+key: "created\_at" or "request\_content\_type" or "response\_content\_type" or 10 more
 
 </summary>
 
@@ -8096,7 +8096,7 @@ One of the following:
 
 <summary>
 
-operator: "eq"or "contains"or "lt"or "gt"
+operator: "eq" or "contains" or "lt" or "gt"
 
 </summary>
 
@@ -8126,7 +8126,7 @@ One of the following:
 
 <summary>
 
-value: array of stringor numberor boolean
+value: array of string or number or boolean
 
 </summary>
 
@@ -8180,7 +8180,7 @@ name: string
 
 <summary>
 
-DatasetUpdateResponse object {id, created\_at, enable, 4 more }
+DatasetUpdateResponse object { id, created\_at, enable, 4 more }
 
 </summary>
 
@@ -8202,7 +8202,7 @@ enable: boolean
 
 <summary>
 
-filters: array of object {key, operator, value }
+filters: array of object { key, operator, value }
 
 </summary>
 
@@ -8210,7 +8210,7 @@ filters: array of object {key, operator, value }
 
 <summary>
 
-key: "created\_at"or "request\_content\_type"or "response\_content\_type"or 10 more
+key: "created\_at" or "request\_content\_type" or "response\_content\_type" or 10 more
 
 </summary>
 
@@ -8276,7 +8276,7 @@ One of the following:
 
 <summary>
 
-operator: "eq"or "contains"or "lt"or "gt"
+operator: "eq" or "contains" or "lt" or "gt"
 
 </summary>
 
@@ -8306,7 +8306,7 @@ One of the following:
 
 <summary>
 
-value: array of stringor numberor boolean
+value: array of string or number or boolean
 
 </summary>
 
@@ -8360,7 +8360,7 @@ name: string
 
 <summary>
 
-DatasetDeleteResponse object {id, created\_at, enable, 4 more }
+DatasetDeleteResponse object { id, created\_at, enable, 4 more }
 
 </summary>
 
@@ -8382,7 +8382,7 @@ enable: boolean
 
 <summary>
 
-filters: array of object {key, operator, value }
+filters: array of object { key, operator, value }
 
 </summary>
 
@@ -8390,7 +8390,7 @@ filters: array of object {key, operator, value }
 
 <summary>
 
-key: "created\_at"or "request\_content\_type"or "response\_content\_type"or 10 more
+key: "created\_at" or "request\_content\_type" or "response\_content\_type" or 10 more
 
 </summary>
 
@@ -8456,7 +8456,7 @@ One of the following:
 
 <summary>
 
-operator: "eq"or "contains"or "lt"or "gt"
+operator: "eq" or "contains" or "lt" or "gt"
 
 </summary>
 
@@ -8486,7 +8486,7 @@ One of the following:
 
 <summary>
 
-value: array of stringor numberor boolean
+value: array of string or number or boolean
 
 </summary>
 
@@ -8560,7 +8560,7 @@ DELETE/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/evaluations/{id}
 
 <summary>
 
-EvaluationListResponse object {id, created\_at, datasets, 6 more }
+EvaluationListResponse object { id, created\_at, datasets, 6 more }
 
 </summary>
 
@@ -8578,7 +8578,7 @@ formatdate-time
 
 <summary>
 
-datasets: array of object {id, account\_id, account\_tag, 6 more }
+datasets: array of object { id, account\_id, account\_tag, 6 more }
 
 </summary>
 
@@ -8608,7 +8608,7 @@ enable: boolean
 
 <summary>
 
-filters: array of object {key, operator, value }
+filters: array of object { key, operator, value }
 
 </summary>
 
@@ -8616,7 +8616,7 @@ filters: array of object {key, operator, value }
 
 <summary>
 
-key: "created\_at"or "request\_content\_type"or "response\_content\_type"or 10 more
+key: "created\_at" or "request\_content\_type" or "response\_content\_type" or 10 more
 
 </summary>
 
@@ -8682,7 +8682,7 @@ One of the following:
 
 <summary>
 
-operator: "eq"or "contains"or "lt"or "gt"
+operator: "eq" or "contains" or "lt" or "gt"
 
 </summary>
 
@@ -8712,7 +8712,7 @@ One of the following:
 
 <summary>
 
-value: array of stringor numberor boolean
+value: array of string or number or boolean
 
 </summary>
 
@@ -8790,7 +8790,7 @@ processed: boolean
 
 <summary>
 
-results: array of object {id, created\_at, evaluation\_id, 6 more }
+results: array of object { id, created\_at, evaluation\_id, 6 more }
 
 </summary>
 
@@ -8850,7 +8850,7 @@ total\_logs: number
 
 <summary>
 
-EvaluationGetResponse object {id, created\_at, datasets, 6 more }
+EvaluationGetResponse object { id, created\_at, datasets, 6 more }
 
 </summary>
 
@@ -8868,7 +8868,7 @@ formatdate-time
 
 <summary>
 
-datasets: array of object {id, account\_id, account\_tag, 6 more }
+datasets: array of object { id, account\_id, account\_tag, 6 more }
 
 </summary>
 
@@ -8898,7 +8898,7 @@ enable: boolean
 
 <summary>
 
-filters: array of object {key, operator, value }
+filters: array of object { key, operator, value }
 
 </summary>
 
@@ -8906,7 +8906,7 @@ filters: array of object {key, operator, value }
 
 <summary>
 
-key: "created\_at"or "request\_content\_type"or "response\_content\_type"or 10 more
+key: "created\_at" or "request\_content\_type" or "response\_content\_type" or 10 more
 
 </summary>
 
@@ -8972,7 +8972,7 @@ One of the following:
 
 <summary>
 
-operator: "eq"or "contains"or "lt"or "gt"
+operator: "eq" or "contains" or "lt" or "gt"
 
 </summary>
 
@@ -9002,7 +9002,7 @@ One of the following:
 
 <summary>
 
-value: array of stringor numberor boolean
+value: array of string or number or boolean
 
 </summary>
 
@@ -9080,7 +9080,7 @@ processed: boolean
 
 <summary>
 
-results: array of object {id, created\_at, evaluation\_id, 6 more }
+results: array of object { id, created\_at, evaluation\_id, 6 more }
 
 </summary>
 
@@ -9140,7 +9140,7 @@ total\_logs: number
 
 <summary>
 
-EvaluationCreateResponse object {id, created\_at, datasets, 6 more }
+EvaluationCreateResponse object { id, created\_at, datasets, 6 more }
 
 </summary>
 
@@ -9158,7 +9158,7 @@ formatdate-time
 
 <summary>
 
-datasets: array of object {id, account\_id, account\_tag, 6 more }
+datasets: array of object { id, account\_id, account\_tag, 6 more }
 
 </summary>
 
@@ -9188,7 +9188,7 @@ enable: boolean
 
 <summary>
 
-filters: array of object {key, operator, value }
+filters: array of object { key, operator, value }
 
 </summary>
 
@@ -9196,7 +9196,7 @@ filters: array of object {key, operator, value }
 
 <summary>
 
-key: "created\_at"or "request\_content\_type"or "response\_content\_type"or 10 more
+key: "created\_at" or "request\_content\_type" or "response\_content\_type" or 10 more
 
 </summary>
 
@@ -9262,7 +9262,7 @@ One of the following:
 
 <summary>
 
-operator: "eq"or "contains"or "lt"or "gt"
+operator: "eq" or "contains" or "lt" or "gt"
 
 </summary>
 
@@ -9292,7 +9292,7 @@ One of the following:
 
 <summary>
 
-value: array of stringor numberor boolean
+value: array of string or number or boolean
 
 </summary>
 
@@ -9370,7 +9370,7 @@ processed: boolean
 
 <summary>
 
-results: array of object {id, created\_at, evaluation\_id, 6 more }
+results: array of object { id, created\_at, evaluation\_id, 6 more }
 
 </summary>
 
@@ -9430,7 +9430,7 @@ total\_logs: number
 
 <summary>
 
-EvaluationDeleteResponse object {id, created\_at, datasets, 6 more }
+EvaluationDeleteResponse object { id, created\_at, datasets, 6 more }
 
 </summary>
 
@@ -9448,7 +9448,7 @@ formatdate-time
 
 <summary>
 
-datasets: array of object {id, account\_id, account\_tag, 6 more }
+datasets: array of object { id, account\_id, account\_tag, 6 more }
 
 </summary>
 
@@ -9478,7 +9478,7 @@ enable: boolean
 
 <summary>
 
-filters: array of object {key, operator, value }
+filters: array of object { key, operator, value }
 
 </summary>
 
@@ -9486,7 +9486,7 @@ filters: array of object {key, operator, value }
 
 <summary>
 
-key: "created\_at"or "request\_content\_type"or "response\_content\_type"or 10 more
+key: "created\_at" or "request\_content\_type" or "response\_content\_type" or 10 more
 
 </summary>
 
@@ -9552,7 +9552,7 @@ One of the following:
 
 <summary>
 
-operator: "eq"or "contains"or "lt"or "gt"
+operator: "eq" or "contains" or "lt" or "gt"
 
 </summary>
 
@@ -9582,7 +9582,7 @@ One of the following:
 
 <summary>
 
-value: array of stringor numberor boolean
+value: array of string or number or boolean
 
 </summary>
 
@@ -9660,7 +9660,7 @@ processed: boolean
 
 <summary>
 
-results: array of object {id, created\_at, evaluation\_id, 6 more }
+results: array of object { id, created\_at, evaluation\_id, 6 more }
 
 </summary>
 
@@ -9764,7 +9764,7 @@ GET/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/routes/{id}/version
 
 <summary>
 
-DynamicRoutingListResponse object {data, success }
+DynamicRoutingListResponse object { data, success }
 
 </summary>
 
@@ -9772,7 +9772,7 @@ DynamicRoutingListResponse object {data, success }
 
 <summary>
 
-data: object {order\_by, order\_by\_direction, page, 2 more }
+data: object { order\_by, order\_by\_direction, page, 2 more }
 
 </summary>
 
@@ -9796,7 +9796,7 @@ per\_page: number
 
 <summary>
 
-routes: array of object {id, account\_tag, created\_at, 6 more }
+routes: array of object { id, account\_tag, created\_at, 6 more }
 
 </summary>
 
@@ -9818,7 +9818,7 @@ formatdate-time
 
 <summary>
 
-deployment: object {created\_at, deployment\_id, version\_id }
+deployment: object { created\_at, deployment\_id, version\_id }
 
 </summary>
 
@@ -9842,7 +9842,7 @@ version\_id: string
 
 <summary>
 
-elements: array of object {id, outputs, type } or object {id, outputs, properties, type } or object {id, outputs, type } or 3 more
+elements: array of object { id, outputs, type } or object { id, outputs, properties, type } or object { id, outputs, type } or 3 more
 
 </summary>
 
@@ -9852,7 +9852,7 @@ One of the following:
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -9864,7 +9864,7 @@ id: string
 
 <summary>
 
-outputs: object {next }
+outputs: object { next }
 
 </summary>
 
@@ -9872,7 +9872,7 @@ outputs: object {next }
 
 <summary>
 
-next: object {elementId }
+next: object { elementId }
 
 </summary>
 
@@ -9900,7 +9900,7 @@ type: "start"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -9912,7 +9912,7 @@ id: string
 
 <summary>
 
-outputs: object {false, true }
+outputs: object { false, true }
 
 </summary>
 
@@ -9920,23 +9920,7 @@ outputs: object {false, true }
 
 <summary>
 
-false: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-true: object {elementId }
+false: object { elementId }
 
 </summary>
 
@@ -9948,6 +9932,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+true: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -9956,7 +9956,7 @@ elementId: string
 
 <summary>
 
-properties: object {conditions }
+properties: object { conditions }
 
 </summary>
 
@@ -9980,7 +9980,7 @@ type: "conditional"
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -9992,7 +9992,7 @@ id: string
 
 <summary>
 
-outputs: map\[object {elementId } ]
+outputs: map\[object { elementId } ]
 
 </summary>
 
@@ -10016,7 +10016,7 @@ type: "percentage"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -10028,7 +10028,7 @@ id: string
 
 <summary>
 
-outputs: object {fallback, success }
+outputs: object { fallback, success }
 
 </summary>
 
@@ -10036,23 +10036,7 @@ outputs: object {fallback, success }
 
 <summary>
 
-fallback: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-success: object {elementId }
+fallback: object { elementId }
 
 </summary>
 
@@ -10064,6 +10048,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+success: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -10072,7 +10072,7 @@ elementId: string
 
 <summary>
 
-properties: object {key, limit, limitType, window }
+properties: object { key, limit, limitType, window }
 
 </summary>
 
@@ -10088,7 +10088,7 @@ limit: number
 
 <summary>
 
-limitType: "count"or "cost"
+limitType: "count" or "cost"
 
 </summary>
 
@@ -10126,7 +10126,7 @@ type: "rate"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -10138,7 +10138,7 @@ id: string
 
 <summary>
 
-outputs: object {fallback, success }
+outputs: object { fallback, success }
 
 </summary>
 
@@ -10146,23 +10146,7 @@ outputs: object {fallback, success }
 
 <summary>
 
-fallback: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-success: object {elementId }
+fallback: object { elementId }
 
 </summary>
 
@@ -10174,6 +10158,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+success: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -10182,7 +10182,7 @@ elementId: string
 
 <summary>
 
-properties: object {model, provider, retries, timeout }
+properties: object { model, provider, retries, timeout }
 
 </summary>
 
@@ -10218,7 +10218,7 @@ type: "model"
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -10230,7 +10230,7 @@ id: string
 
 <summary>
 
-outputs: map\[object {elementId } ]
+outputs: map\[object { elementId } ]
 
 </summary>
 
@@ -10274,7 +10274,7 @@ minLength1
 
 <summary>
 
-version: object {active, created\_at, data, 2 more }
+version: object { active, created\_at, data, 2 more }
 
 </summary>
 
@@ -10282,7 +10282,7 @@ version: object {active, created\_at, data, 2 more }
 
 <summary>
 
-active: "true"or "false"
+active: "true" or "false"
 
 </summary>
 
@@ -10340,7 +10340,7 @@ success: boolean
 
 <summary>
 
-DynamicRoutingGetResponse object {id, created\_at, deployment, 5 more }
+DynamicRoutingGetResponse object { id, created\_at, deployment, 5 more }
 
 </summary>
 
@@ -10358,7 +10358,7 @@ formatdate-time
 
 <summary>
 
-deployment: object {created\_at, deployment\_id, version\_id }
+deployment: object { created\_at, deployment\_id, version\_id }
 
 </summary>
 
@@ -10382,7 +10382,7 @@ version\_id: string
 
 <summary>
 
-elements: array of object {id, outputs, type } or object {id, outputs, properties, type } or object {id, outputs, type } or 3 more
+elements: array of object { id, outputs, type } or object { id, outputs, properties, type } or object { id, outputs, type } or 3 more
 
 </summary>
 
@@ -10392,7 +10392,7 @@ One of the following:
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -10404,7 +10404,7 @@ id: string
 
 <summary>
 
-outputs: object {next }
+outputs: object { next }
 
 </summary>
 
@@ -10412,7 +10412,7 @@ outputs: object {next }
 
 <summary>
 
-next: object {elementId }
+next: object { elementId }
 
 </summary>
 
@@ -10440,7 +10440,7 @@ type: "start"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -10452,7 +10452,7 @@ id: string
 
 <summary>
 
-outputs: object {false, true }
+outputs: object { false, true }
 
 </summary>
 
@@ -10460,23 +10460,7 @@ outputs: object {false, true }
 
 <summary>
 
-false: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-true: object {elementId }
+false: object { elementId }
 
 </summary>
 
@@ -10488,6 +10472,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+true: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -10496,7 +10496,7 @@ elementId: string
 
 <summary>
 
-properties: object {conditions }
+properties: object { conditions }
 
 </summary>
 
@@ -10520,7 +10520,7 @@ type: "conditional"
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -10532,7 +10532,7 @@ id: string
 
 <summary>
 
-outputs: map\[object {elementId } ]
+outputs: map\[object { elementId } ]
 
 </summary>
 
@@ -10556,7 +10556,7 @@ type: "percentage"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -10568,7 +10568,7 @@ id: string
 
 <summary>
 
-outputs: object {fallback, success }
+outputs: object { fallback, success }
 
 </summary>
 
@@ -10576,23 +10576,7 @@ outputs: object {fallback, success }
 
 <summary>
 
-fallback: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-success: object {elementId }
+fallback: object { elementId }
 
 </summary>
 
@@ -10604,6 +10588,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+success: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -10612,7 +10612,7 @@ elementId: string
 
 <summary>
 
-properties: object {key, limit, limitType, window }
+properties: object { key, limit, limitType, window }
 
 </summary>
 
@@ -10628,7 +10628,7 @@ limit: number
 
 <summary>
 
-limitType: "count"or "cost"
+limitType: "count" or "cost"
 
 </summary>
 
@@ -10666,7 +10666,7 @@ type: "rate"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -10678,7 +10678,7 @@ id: string
 
 <summary>
 
-outputs: object {fallback, success }
+outputs: object { fallback, success }
 
 </summary>
 
@@ -10686,23 +10686,7 @@ outputs: object {fallback, success }
 
 <summary>
 
-fallback: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-success: object {elementId }
+fallback: object { elementId }
 
 </summary>
 
@@ -10714,6 +10698,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+success: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -10722,7 +10722,7 @@ elementId: string
 
 <summary>
 
-properties: object {model, provider, retries, timeout }
+properties: object { model, provider, retries, timeout }
 
 </summary>
 
@@ -10758,7 +10758,7 @@ type: "model"
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -10770,7 +10770,7 @@ id: string
 
 <summary>
 
-outputs: map\[object {elementId } ]
+outputs: map\[object { elementId } ]
 
 </summary>
 
@@ -10814,7 +10814,7 @@ minLength1
 
 <summary>
 
-version: object {active, created\_at, data, 2 more }
+version: object { active, created\_at, data, 2 more }
 
 </summary>
 
@@ -10822,7 +10822,7 @@ version: object {active, created\_at, data, 2 more }
 
 <summary>
 
-active: "true"or "false"
+active: "true" or "false"
 
 </summary>
 
@@ -10868,7 +10868,7 @@ is\_valid: optional boolean
 
 <summary>
 
-DynamicRoutingCreateResponse object {id, created\_at, deployment, 5 more }
+DynamicRoutingCreateResponse object { id, created\_at, deployment, 5 more }
 
 </summary>
 
@@ -10886,7 +10886,7 @@ formatdate-time
 
 <summary>
 
-deployment: object {created\_at, deployment\_id, version\_id }
+deployment: object { created\_at, deployment\_id, version\_id }
 
 </summary>
 
@@ -10910,7 +10910,7 @@ version\_id: string
 
 <summary>
 
-elements: array of object {id, outputs, type } or object {id, outputs, properties, type } or object {id, outputs, type } or 3 more
+elements: array of object { id, outputs, type } or object { id, outputs, properties, type } or object { id, outputs, type } or 3 more
 
 </summary>
 
@@ -10920,7 +10920,7 @@ One of the following:
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -10932,7 +10932,7 @@ id: string
 
 <summary>
 
-outputs: object {next }
+outputs: object { next }
 
 </summary>
 
@@ -10940,7 +10940,7 @@ outputs: object {next }
 
 <summary>
 
-next: object {elementId }
+next: object { elementId }
 
 </summary>
 
@@ -10968,7 +10968,7 @@ type: "start"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -10980,7 +10980,7 @@ id: string
 
 <summary>
 
-outputs: object {false, true }
+outputs: object { false, true }
 
 </summary>
 
@@ -10988,23 +10988,7 @@ outputs: object {false, true }
 
 <summary>
 
-false: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-true: object {elementId }
+false: object { elementId }
 
 </summary>
 
@@ -11016,6 +11000,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+true: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -11024,7 +11024,7 @@ elementId: string
 
 <summary>
 
-properties: object {conditions }
+properties: object { conditions }
 
 </summary>
 
@@ -11048,7 +11048,7 @@ type: "conditional"
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -11060,7 +11060,7 @@ id: string
 
 <summary>
 
-outputs: map\[object {elementId } ]
+outputs: map\[object { elementId } ]
 
 </summary>
 
@@ -11084,7 +11084,7 @@ type: "percentage"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -11096,7 +11096,7 @@ id: string
 
 <summary>
 
-outputs: object {fallback, success }
+outputs: object { fallback, success }
 
 </summary>
 
@@ -11104,23 +11104,7 @@ outputs: object {fallback, success }
 
 <summary>
 
-fallback: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-success: object {elementId }
+fallback: object { elementId }
 
 </summary>
 
@@ -11132,6 +11116,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+success: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -11140,7 +11140,7 @@ elementId: string
 
 <summary>
 
-properties: object {key, limit, limitType, window }
+properties: object { key, limit, limitType, window }
 
 </summary>
 
@@ -11156,7 +11156,7 @@ limit: number
 
 <summary>
 
-limitType: "count"or "cost"
+limitType: "count" or "cost"
 
 </summary>
 
@@ -11194,7 +11194,7 @@ type: "rate"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -11206,7 +11206,7 @@ id: string
 
 <summary>
 
-outputs: object {fallback, success }
+outputs: object { fallback, success }
 
 </summary>
 
@@ -11214,23 +11214,7 @@ outputs: object {fallback, success }
 
 <summary>
 
-fallback: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-success: object {elementId }
+fallback: object { elementId }
 
 </summary>
 
@@ -11242,6 +11226,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+success: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -11250,7 +11250,7 @@ elementId: string
 
 <summary>
 
-properties: object {model, provider, retries, timeout }
+properties: object { model, provider, retries, timeout }
 
 </summary>
 
@@ -11286,7 +11286,7 @@ type: "model"
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -11298,7 +11298,7 @@ id: string
 
 <summary>
 
-outputs: map\[object {elementId } ]
+outputs: map\[object { elementId } ]
 
 </summary>
 
@@ -11342,7 +11342,7 @@ minLength1
 
 <summary>
 
-version: object {active, created\_at, data, 2 more }
+version: object { active, created\_at, data, 2 more }
 
 </summary>
 
@@ -11350,7 +11350,7 @@ version: object {active, created\_at, data, 2 more }
 
 <summary>
 
-active: "true"or "false"
+active: "true" or "false"
 
 </summary>
 
@@ -11396,7 +11396,7 @@ is\_valid: optional boolean
 
 <summary>
 
-DynamicRoutingUpdateResponse object {route, success }
+DynamicRoutingUpdateResponse object { route, success }
 
 </summary>
 
@@ -11404,7 +11404,7 @@ DynamicRoutingUpdateResponse object {route, success }
 
 <summary>
 
-route: object {id, account\_tag, created\_at, 6 more }
+route: object { id, account\_tag, created\_at, 6 more }
 
 </summary>
 
@@ -11426,7 +11426,7 @@ formatdate-time
 
 <summary>
 
-deployment: object {created\_at, deployment\_id, version\_id }
+deployment: object { created\_at, deployment\_id, version\_id }
 
 </summary>
 
@@ -11450,7 +11450,7 @@ version\_id: string
 
 <summary>
 
-elements: array of object {id, outputs, type } or object {id, outputs, properties, type } or object {id, outputs, type } or 3 more
+elements: array of object { id, outputs, type } or object { id, outputs, properties, type } or object { id, outputs, type } or 3 more
 
 </summary>
 
@@ -11460,7 +11460,7 @@ One of the following:
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -11472,7 +11472,7 @@ id: string
 
 <summary>
 
-outputs: object {next }
+outputs: object { next }
 
 </summary>
 
@@ -11480,7 +11480,7 @@ outputs: object {next }
 
 <summary>
 
-next: object {elementId }
+next: object { elementId }
 
 </summary>
 
@@ -11508,7 +11508,7 @@ type: "start"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -11520,7 +11520,7 @@ id: string
 
 <summary>
 
-outputs: object {false, true }
+outputs: object { false, true }
 
 </summary>
 
@@ -11528,23 +11528,7 @@ outputs: object {false, true }
 
 <summary>
 
-false: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-true: object {elementId }
+false: object { elementId }
 
 </summary>
 
@@ -11556,6 +11540,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+true: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -11564,7 +11564,7 @@ elementId: string
 
 <summary>
 
-properties: object {conditions }
+properties: object { conditions }
 
 </summary>
 
@@ -11588,7 +11588,7 @@ type: "conditional"
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -11600,7 +11600,7 @@ id: string
 
 <summary>
 
-outputs: map\[object {elementId } ]
+outputs: map\[object { elementId } ]
 
 </summary>
 
@@ -11624,7 +11624,7 @@ type: "percentage"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -11636,7 +11636,7 @@ id: string
 
 <summary>
 
-outputs: object {fallback, success }
+outputs: object { fallback, success }
 
 </summary>
 
@@ -11644,23 +11644,7 @@ outputs: object {fallback, success }
 
 <summary>
 
-fallback: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-success: object {elementId }
+fallback: object { elementId }
 
 </summary>
 
@@ -11672,6 +11656,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+success: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -11680,7 +11680,7 @@ elementId: string
 
 <summary>
 
-properties: object {key, limit, limitType, window }
+properties: object { key, limit, limitType, window }
 
 </summary>
 
@@ -11696,7 +11696,7 @@ limit: number
 
 <summary>
 
-limitType: "count"or "cost"
+limitType: "count" or "cost"
 
 </summary>
 
@@ -11734,7 +11734,7 @@ type: "rate"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -11746,7 +11746,7 @@ id: string
 
 <summary>
 
-outputs: object {fallback, success }
+outputs: object { fallback, success }
 
 </summary>
 
@@ -11754,23 +11754,7 @@ outputs: object {fallback, success }
 
 <summary>
 
-fallback: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-success: object {elementId }
+fallback: object { elementId }
 
 </summary>
 
@@ -11782,6 +11766,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+success: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -11790,7 +11790,7 @@ elementId: string
 
 <summary>
 
-properties: object {model, provider, retries, timeout }
+properties: object { model, provider, retries, timeout }
 
 </summary>
 
@@ -11826,7 +11826,7 @@ type: "model"
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -11838,7 +11838,7 @@ id: string
 
 <summary>
 
-outputs: map\[object {elementId } ]
+outputs: map\[object { elementId } ]
 
 </summary>
 
@@ -11882,7 +11882,7 @@ minLength1
 
 <summary>
 
-version: object {active, created\_at, data, 2 more }
+version: object { active, created\_at, data, 2 more }
 
 </summary>
 
@@ -11890,7 +11890,7 @@ version: object {active, created\_at, data, 2 more }
 
 <summary>
 
-active: "true"or "false"
+active: "true" or "false"
 
 </summary>
 
@@ -11944,7 +11944,7 @@ success: boolean
 
 <summary>
 
-DynamicRoutingDeleteResponse object {id, created\_at, elements, 3 more }
+DynamicRoutingDeleteResponse object { id, created\_at, elements, 3 more }
 
 </summary>
 
@@ -11962,7 +11962,7 @@ formatdate-time
 
 <summary>
 
-elements: array of object {id, outputs, type } or object {id, outputs, properties, type } or object {id, outputs, type } or 3 more
+elements: array of object { id, outputs, type } or object { id, outputs, properties, type } or object { id, outputs, type } or 3 more
 
 </summary>
 
@@ -11972,7 +11972,7 @@ One of the following:
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -11984,7 +11984,7 @@ id: string
 
 <summary>
 
-outputs: object {next }
+outputs: object { next }
 
 </summary>
 
@@ -11992,7 +11992,7 @@ outputs: object {next }
 
 <summary>
 
-next: object {elementId }
+next: object { elementId }
 
 </summary>
 
@@ -12020,7 +12020,7 @@ type: "start"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -12032,7 +12032,7 @@ id: string
 
 <summary>
 
-outputs: object {false, true }
+outputs: object { false, true }
 
 </summary>
 
@@ -12040,23 +12040,7 @@ outputs: object {false, true }
 
 <summary>
 
-false: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-true: object {elementId }
+false: object { elementId }
 
 </summary>
 
@@ -12068,6 +12052,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+true: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -12076,7 +12076,7 @@ elementId: string
 
 <summary>
 
-properties: object {conditions }
+properties: object { conditions }
 
 </summary>
 
@@ -12100,7 +12100,7 @@ type: "conditional"
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -12112,7 +12112,7 @@ id: string
 
 <summary>
 
-outputs: map\[object {elementId } ]
+outputs: map\[object { elementId } ]
 
 </summary>
 
@@ -12136,7 +12136,7 @@ type: "percentage"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -12148,7 +12148,7 @@ id: string
 
 <summary>
 
-outputs: object {fallback, success }
+outputs: object { fallback, success }
 
 </summary>
 
@@ -12156,23 +12156,7 @@ outputs: object {fallback, success }
 
 <summary>
 
-fallback: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-success: object {elementId }
+fallback: object { elementId }
 
 </summary>
 
@@ -12184,6 +12168,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+success: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -12192,7 +12192,7 @@ elementId: string
 
 <summary>
 
-properties: object {key, limit, limitType, window }
+properties: object { key, limit, limitType, window }
 
 </summary>
 
@@ -12208,7 +12208,7 @@ limit: number
 
 <summary>
 
-limitType: "count"or "cost"
+limitType: "count" or "cost"
 
 </summary>
 
@@ -12246,7 +12246,7 @@ type: "rate"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -12258,7 +12258,7 @@ id: string
 
 <summary>
 
-outputs: object {fallback, success }
+outputs: object { fallback, success }
 
 </summary>
 
@@ -12266,23 +12266,7 @@ outputs: object {fallback, success }
 
 <summary>
 
-fallback: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-success: object {elementId }
+fallback: object { elementId }
 
 </summary>
 
@@ -12294,6 +12278,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+success: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -12302,7 +12302,7 @@ elementId: string
 
 <summary>
 
-properties: object {model, provider, retries, timeout }
+properties: object { model, provider, retries, timeout }
 
 </summary>
 
@@ -12338,7 +12338,7 @@ type: "model"
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -12350,7 +12350,7 @@ id: string
 
 <summary>
 
-outputs: map\[object {elementId } ]
+outputs: map\[object { elementId } ]
 
 </summary>
 
@@ -12398,7 +12398,7 @@ minLength1
 
 <summary>
 
-DynamicRoutingListDeploymentsResponse object {data, success }
+DynamicRoutingListDeploymentsResponse object { data, success }
 
 </summary>
 
@@ -12406,7 +12406,7 @@ DynamicRoutingListDeploymentsResponse object {data, success }
 
 <summary>
 
-data: object {deployments, order\_by, order\_by\_direction, 2 more }
+data: object { deployments, order\_by, order\_by\_direction, 2 more }
 
 </summary>
 
@@ -12414,7 +12414,7 @@ data: object {deployments, order\_by, order\_by\_direction, 2 more }
 
 <summary>
 
-deployments: array of object {created\_at, deployment\_id, version\_id }
+deployments: array of object { created\_at, deployment\_id, version\_id }
 
 </summary>
 
@@ -12466,7 +12466,7 @@ success: boolean
 
 <summary>
 
-DynamicRoutingCreateDeploymentResponse object {id, created\_at, elements, 3 more }
+DynamicRoutingCreateDeploymentResponse object { id, created\_at, elements, 3 more }
 
 </summary>
 
@@ -12484,7 +12484,7 @@ formatdate-time
 
 <summary>
 
-elements: array of object {id, outputs, type } or object {id, outputs, properties, type } or object {id, outputs, type } or 3 more
+elements: array of object { id, outputs, type } or object { id, outputs, properties, type } or object { id, outputs, type } or 3 more
 
 </summary>
 
@@ -12494,7 +12494,7 @@ One of the following:
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -12506,7 +12506,7 @@ id: string
 
 <summary>
 
-outputs: object {next }
+outputs: object { next }
 
 </summary>
 
@@ -12514,7 +12514,7 @@ outputs: object {next }
 
 <summary>
 
-next: object {elementId }
+next: object { elementId }
 
 </summary>
 
@@ -12542,7 +12542,7 @@ type: "start"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -12554,7 +12554,7 @@ id: string
 
 <summary>
 
-outputs: object {false, true }
+outputs: object { false, true }
 
 </summary>
 
@@ -12562,23 +12562,7 @@ outputs: object {false, true }
 
 <summary>
 
-false: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-true: object {elementId }
+false: object { elementId }
 
 </summary>
 
@@ -12590,6 +12574,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+true: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -12598,7 +12598,7 @@ elementId: string
 
 <summary>
 
-properties: object {conditions }
+properties: object { conditions }
 
 </summary>
 
@@ -12622,7 +12622,7 @@ type: "conditional"
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -12634,7 +12634,7 @@ id: string
 
 <summary>
 
-outputs: map\[object {elementId } ]
+outputs: map\[object { elementId } ]
 
 </summary>
 
@@ -12658,7 +12658,7 @@ type: "percentage"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -12670,7 +12670,7 @@ id: string
 
 <summary>
 
-outputs: object {fallback, success }
+outputs: object { fallback, success }
 
 </summary>
 
@@ -12678,23 +12678,7 @@ outputs: object {fallback, success }
 
 <summary>
 
-fallback: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-success: object {elementId }
+fallback: object { elementId }
 
 </summary>
 
@@ -12706,6 +12690,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+success: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -12714,7 +12714,7 @@ elementId: string
 
 <summary>
 
-properties: object {key, limit, limitType, window }
+properties: object { key, limit, limitType, window }
 
 </summary>
 
@@ -12730,7 +12730,7 @@ limit: number
 
 <summary>
 
-limitType: "count"or "cost"
+limitType: "count" or "cost"
 
 </summary>
 
@@ -12768,7 +12768,7 @@ type: "rate"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -12780,7 +12780,7 @@ id: string
 
 <summary>
 
-outputs: object {fallback, success }
+outputs: object { fallback, success }
 
 </summary>
 
@@ -12788,23 +12788,7 @@ outputs: object {fallback, success }
 
 <summary>
 
-fallback: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-success: object {elementId }
+fallback: object { elementId }
 
 </summary>
 
@@ -12816,6 +12800,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+success: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -12824,7 +12824,7 @@ elementId: string
 
 <summary>
 
-properties: object {model, provider, retries, timeout }
+properties: object { model, provider, retries, timeout }
 
 </summary>
 
@@ -12860,7 +12860,7 @@ type: "model"
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -12872,7 +12872,7 @@ id: string
 
 <summary>
 
-outputs: map\[object {elementId } ]
+outputs: map\[object { elementId } ]
 
 </summary>
 
@@ -12920,7 +12920,7 @@ minLength1
 
 <summary>
 
-DynamicRoutingListVersionsResponse object {data, success }
+DynamicRoutingListVersionsResponse object { data, success }
 
 </summary>
 
@@ -12928,7 +12928,7 @@ DynamicRoutingListVersionsResponse object {data, success }
 
 <summary>
 
-data: object {order\_by, order\_by\_direction, page, 2 more }
+data: object { order\_by, order\_by\_direction, page, 2 more }
 
 </summary>
 
@@ -12952,7 +12952,7 @@ per\_page: number
 
 <summary>
 
-versions: array of object {active, created\_at, data, 2 more }
+versions: array of object { active, created\_at, data, 2 more }
 
 </summary>
 
@@ -12960,7 +12960,7 @@ versions: array of object {active, created\_at, data, 2 more }
 
 <summary>
 
-active: "true"or "false"
+active: "true" or "false"
 
 </summary>
 
@@ -13014,7 +13014,7 @@ success: boolean
 
 <summary>
 
-DynamicRoutingCreateVersionResponse object {id, created\_at, elements, 3 more }
+DynamicRoutingCreateVersionResponse object { id, created\_at, elements, 3 more }
 
 </summary>
 
@@ -13032,7 +13032,7 @@ formatdate-time
 
 <summary>
 
-elements: array of object {id, outputs, type } or object {id, outputs, properties, type } or object {id, outputs, type } or 3 more
+elements: array of object { id, outputs, type } or object { id, outputs, properties, type } or object { id, outputs, type } or 3 more
 
 </summary>
 
@@ -13042,7 +13042,7 @@ One of the following:
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -13054,7 +13054,7 @@ id: string
 
 <summary>
 
-outputs: object {next }
+outputs: object { next }
 
 </summary>
 
@@ -13062,7 +13062,7 @@ outputs: object {next }
 
 <summary>
 
-next: object {elementId }
+next: object { elementId }
 
 </summary>
 
@@ -13090,7 +13090,7 @@ type: "start"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -13102,7 +13102,7 @@ id: string
 
 <summary>
 
-outputs: object {false, true }
+outputs: object { false, true }
 
 </summary>
 
@@ -13110,23 +13110,7 @@ outputs: object {false, true }
 
 <summary>
 
-false: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-true: object {elementId }
+false: object { elementId }
 
 </summary>
 
@@ -13138,6 +13122,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+true: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -13146,7 +13146,7 @@ elementId: string
 
 <summary>
 
-properties: object {conditions }
+properties: object { conditions }
 
 </summary>
 
@@ -13170,7 +13170,7 @@ type: "conditional"
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -13182,7 +13182,7 @@ id: string
 
 <summary>
 
-outputs: map\[object {elementId } ]
+outputs: map\[object { elementId } ]
 
 </summary>
 
@@ -13206,7 +13206,7 @@ type: "percentage"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -13218,7 +13218,7 @@ id: string
 
 <summary>
 
-outputs: object {fallback, success }
+outputs: object { fallback, success }
 
 </summary>
 
@@ -13226,23 +13226,7 @@ outputs: object {fallback, success }
 
 <summary>
 
-fallback: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-success: object {elementId }
+fallback: object { elementId }
 
 </summary>
 
@@ -13254,6 +13238,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+success: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -13262,7 +13262,7 @@ elementId: string
 
 <summary>
 
-properties: object {key, limit, limitType, window }
+properties: object { key, limit, limitType, window }
 
 </summary>
 
@@ -13278,7 +13278,7 @@ limit: number
 
 <summary>
 
-limitType: "count"or "cost"
+limitType: "count" or "cost"
 
 </summary>
 
@@ -13316,7 +13316,7 @@ type: "rate"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -13328,7 +13328,7 @@ id: string
 
 <summary>
 
-outputs: object {fallback, success }
+outputs: object { fallback, success }
 
 </summary>
 
@@ -13336,23 +13336,7 @@ outputs: object {fallback, success }
 
 <summary>
 
-fallback: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-success: object {elementId }
+fallback: object { elementId }
 
 </summary>
 
@@ -13364,6 +13348,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+success: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -13372,7 +13372,7 @@ elementId: string
 
 <summary>
 
-properties: object {model, provider, retries, timeout }
+properties: object { model, provider, retries, timeout }
 
 </summary>
 
@@ -13408,7 +13408,7 @@ type: "model"
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -13420,7 +13420,7 @@ id: string
 
 <summary>
 
-outputs: map\[object {elementId } ]
+outputs: map\[object { elementId } ]
 
 </summary>
 
@@ -13468,7 +13468,7 @@ minLength1
 
 <summary>
 
-DynamicRoutingGetVersionResponse object {id, active, created\_at, 7 more }
+DynamicRoutingGetVersionResponse object { id, active, created\_at, 7 more }
 
 </summary>
 
@@ -13480,7 +13480,7 @@ id: string
 
 <summary>
 
-active: "true"or "false"
+active: "true" or "false"
 
 </summary>
 
@@ -13510,7 +13510,7 @@ data: string
 
 <summary>
 
-elements: array of object {id, outputs, type } or object {id, outputs, properties, type } or object {id, outputs, type } or 3 more
+elements: array of object { id, outputs, type } or object { id, outputs, properties, type } or object { id, outputs, type } or 3 more
 
 </summary>
 
@@ -13520,7 +13520,7 @@ One of the following:
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -13532,7 +13532,7 @@ id: string
 
 <summary>
 
-outputs: object {next }
+outputs: object { next }
 
 </summary>
 
@@ -13540,7 +13540,7 @@ outputs: object {next }
 
 <summary>
 
-next: object {elementId }
+next: object { elementId }
 
 </summary>
 
@@ -13568,7 +13568,7 @@ type: "start"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -13580,7 +13580,7 @@ id: string
 
 <summary>
 
-outputs: object {false, true }
+outputs: object { false, true }
 
 </summary>
 
@@ -13588,23 +13588,7 @@ outputs: object {false, true }
 
 <summary>
 
-false: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-true: object {elementId }
+false: object { elementId }
 
 </summary>
 
@@ -13616,6 +13600,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+true: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -13624,7 +13624,7 @@ elementId: string
 
 <summary>
 
-properties: object {conditions }
+properties: object { conditions }
 
 </summary>
 
@@ -13648,7 +13648,7 @@ type: "conditional"
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -13660,7 +13660,7 @@ id: string
 
 <summary>
 
-outputs: map\[object {elementId } ]
+outputs: map\[object { elementId } ]
 
 </summary>
 
@@ -13684,7 +13684,7 @@ type: "percentage"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -13696,7 +13696,7 @@ id: string
 
 <summary>
 
-outputs: object {fallback, success }
+outputs: object { fallback, success }
 
 </summary>
 
@@ -13704,23 +13704,7 @@ outputs: object {fallback, success }
 
 <summary>
 
-fallback: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-success: object {elementId }
+fallback: object { elementId }
 
 </summary>
 
@@ -13732,6 +13716,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+success: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -13740,7 +13740,7 @@ elementId: string
 
 <summary>
 
-properties: object {key, limit, limitType, window }
+properties: object { key, limit, limitType, window }
 
 </summary>
 
@@ -13756,7 +13756,7 @@ limit: number
 
 <summary>
 
-limitType: "count"or "cost"
+limitType: "count" or "cost"
 
 </summary>
 
@@ -13794,7 +13794,7 @@ type: "rate"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -13806,7 +13806,7 @@ id: string
 
 <summary>
 
-outputs: object {fallback, success }
+outputs: object { fallback, success }
 
 </summary>
 
@@ -13814,23 +13814,7 @@ outputs: object {fallback, success }
 
 <summary>
 
-fallback: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-success: object {elementId }
+fallback: object { elementId }
 
 </summary>
 
@@ -13842,6 +13826,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+success: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -13850,7 +13850,7 @@ elementId: string
 
 <summary>
 
-properties: object {model, provider, retries, timeout }
+properties: object { model, provider, retries, timeout }
 
 </summary>
 
@@ -13886,7 +13886,7 @@ type: "model"
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -13898,7 +13898,7 @@ id: string
 
 <summary>
 
-outputs: map\[object {elementId } ]
+outputs: map\[object { elementId } ]
 
 </summary>
 
@@ -13966,7 +13966,7 @@ POST/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/provider\_configs
 
 <summary>
 
-ProviderConfigListResponse object {id, alias, default\_config, 8 more }
+ProviderConfigListResponse object { id, alias, default\_config, 8 more }
 
 </summary>
 
@@ -14034,7 +14034,7 @@ rate\_limit\_period: optional number
 
 <summary>
 
-ProviderConfigCreateResponse object {id, alias, default\_config, 8 more }
+ProviderConfigCreateResponse object { id, alias, default\_config, 8 more }
 
 </summary>
 
@@ -14134,7 +14134,7 @@ GET/accounts/{account\_id}/ai-gateway/billing/invoice-preview
 
 <summary>
 
-BillingCreditBalanceResponse object {balance, has\_default\_payment\_method, payment\_method, 2 more }
+BillingCreditBalanceResponse object { balance, has\_default\_payment\_method, payment\_method, 2 more }
 
 </summary>
 
@@ -14154,7 +14154,7 @@ Whether AI Gateway billing has a default payment method for the account.
 
 <summary>
 
-payment\_method: object {brand, last4 }
+payment\_method: object { brand, last4 }
 
 The default payment method’s card. Null when there is no default, it isn’t a card, or it couldn’t be read.
 
@@ -14180,7 +14180,7 @@ Last 4 digits of the card.
 
 <summary>
 
-topup\_config: object {amount, threshold, disabledReason, 2 more }
+topup\_config: object { amount, threshold, disabledReason, 2 more }
 
 Auto top-up configuration, as GET /topup/config returns it.
 
@@ -14234,7 +14234,7 @@ Whether the account completed its first top-up. Auto top-up can be set up only a
 
 <summary>
 
-BillingUsageHistoryResponse object {history }
+BillingUsageHistoryResponse object { history }
 
 </summary>
 
@@ -14242,7 +14242,7 @@ BillingUsageHistoryResponse object {history }
 
 <summary>
 
-history: array of object {id, aggregated\_value, end\_time, start\_time }
+history: array of object { id, aggregated\_value, end\_time, start\_time }
 
 Usage cost per window of <code>value_grouping_window</code>.
 
@@ -14284,7 +14284,7 @@ Start of the window, as a Unix timestamp in seconds.
 
 <summary>
 
-BillingInvoiceHistoryResponse object {invoices, pagination }
+BillingInvoiceHistoryResponse object { invoices, pagination }
 
 </summary>
 
@@ -14292,7 +14292,7 @@ BillingInvoiceHistoryResponse object {invoices, pagination }
 
 <summary>
 
-invoices: array of object {amount\_due, amount\_paid, amount\_remaining, 11 more }
+invoices: array of object { amount\_due, amount\_paid, amount\_remaining, 11 more }
 
 Top-up invoices matching <code>type</code>, up to 100.
 
@@ -14390,7 +14390,7 @@ Invoice status: <code>draft</code>, <code>open</code>, <code>paid</code>, <code>
 
 <summary>
 
-pagination: object {has\_more, page, per\_page, total\_count }
+pagination: object { has\_more, page, per\_page, total\_count }
 
 Pagination details. Results come in a single page.
 
@@ -14432,7 +14432,7 @@ Number of matching invoices.
 
 <summary>
 
-BillingInvoicePreviewResponse object {id, amount\_due, amount\_paid, 6 more }
+BillingInvoicePreviewResponse object { id, amount\_due, amount\_paid, 6 more }
 
 </summary>
 
@@ -14470,7 +14470,7 @@ Lowercase ISO 4217 currency code.
 
 <summary>
 
-invoice\_lines: array of object {amount, currency, description, 4 more }
+invoice\_lines: array of object { amount, currency, description, 4 more }
 
 Invoice line items.
 
@@ -14498,7 +14498,7 @@ Line item description.
 
 <summary>
 
-period: object {end, start }
+period: object { end, start }
 
 Period the line item covers.
 
@@ -14524,7 +14524,7 @@ Start of the period, as a Unix timestamp in seconds.
 
 <summary>
 
-pricing: object {unit\_amount\_decimal }
+pricing: object { unit\_amount\_decimal }
 
 Line item pricing.
 
@@ -14550,7 +14550,7 @@ Quantity billed.
 
 <summary>
 
-pretax\_credit\_amounts: optional array of object {amount, type, credit\_balance\_transaction, discount }
+pretax\_credit\_amounts: optional array of object { amount, type, credit\_balance\_transaction, discount }
 
 Credits applied to the line item before tax.
 
@@ -14604,7 +14604,7 @@ Start of the billing period, as a Unix timestamp in seconds.
 
 <summary>
 
-status: "draft"or "open"or "paid"or 2 more
+status: "draft" or "open" or "paid" or 2 more
 
 Invoice status.
 
@@ -14672,7 +14672,7 @@ GET/accounts/{account\_id}/ai-gateway/billing/topup/limits
 
 <summary>
 
-TopupCreateResponse object {client\_secret, onboarding, payment\_intent\_id, 2 more }
+TopupCreateResponse object { client\_secret, onboarding, payment\_intent\_id, 2 more }
 
 </summary>
 
@@ -14714,7 +14714,7 @@ Last 4 digits of card.
 
 <summary>
 
-TopupStatusResponse object {payment\_intent\_id, status }
+TopupStatusResponse object { payment\_intent\_id, status }
 
 </summary>
 
@@ -14728,7 +14728,7 @@ Top-up identifier from the request.
 
 <summary>
 
-status: "completed"or "pending"
+status: "completed" or "pending"
 
 <code>completed</code> once the top-up payment is processed and its credits are added to the balance, <code>pending</code> until then.
 
@@ -14756,7 +14756,7 @@ One of the following:
 
 <summary>
 
-TopupEligibilityResponse object {account\_payment\_method\_state, aig\_customer\_state, aig\_default\_payment\_method\_state, 5 more }
+TopupEligibilityResponse object { account\_payment\_method\_state, aig\_customer\_state, aig\_default\_payment\_method\_state, 5 more }
 
 </summary>
 
@@ -14764,7 +14764,7 @@ TopupEligibilityResponse object {account\_payment\_method\_state, aig\_customer\
 
 <summary>
 
-account\_payment\_method\_state: "NONE"or "UNSUPPORTED\_ONLY"or "SUPPORTED\_PRESENT"or "UNKNOWN"
+account\_payment\_method\_state: "NONE" or "UNSUPPORTED\_ONLY" or "SUPPORTED\_PRESENT" or "UNKNOWN"
 
 Account-level payment-method state derived from the provided list.
 
@@ -14796,7 +14796,7 @@ One of the following:
 
 <summary>
 
-aig\_customer\_state: "RESOLVED"or "RESOLUTION\_FAILED"
+aig\_customer\_state: "RESOLVED" or "RESOLUTION\_FAILED"
 
 AI Gateway billing profile resolution outcome.
 
@@ -14820,7 +14820,7 @@ One of the following:
 
 <summary>
 
-aig\_default\_payment\_method\_state: "PRESENT"or "MISSING"
+aig\_default\_payment\_method\_state: "PRESENT" or "MISSING"
 
 Whether AI Gateway billing has a default payment method.
 
@@ -14844,7 +14844,7 @@ One of the following:
 
 <summary>
 
-display\_payment\_method: object {last4, brand }
+display\_payment\_method: object { last4, brand }
 
 Card to reference in the UI, e.g. “use card ending 1234”.
 
@@ -14876,7 +14876,7 @@ True only when reason === ELIGIBLE.
 
 <summary>
 
-reason: "ELIGIBLE"or "NO\_ACCOUNT\_PAYMENT\_METHOD"or "UNSUPPORTED\_ACCOUNT\_PAYMENT\_METHOD"or 6 more
+reason: "ELIGIBLE" or "NO\_ACCOUNT\_PAYMENT\_METHOD" or "UNSUPPORTED\_ACCOUNT\_PAYMENT\_METHOD" or 6 more
 
 Canonical eligibility outcome for display and support triage.
 
@@ -14928,7 +14928,7 @@ One of the following:
 
 <summary>
 
-recommended\_action: "NONE"or "ADD\_SUPPORTED\_PAYMENT\_METHOD"or "USE\_EXISTING\_CARD"or 4 more
+recommended\_action: "NONE" or "ADD\_SUPPORTED\_PAYMENT\_METHOD" or "USE\_EXISTING\_CARD" or 4 more
 
 Machine-readable next step.
 
@@ -14982,7 +14982,7 @@ Whether the customer can resolve this themselves (vs contact support).
 
 <summary>
 
-TopupGetEligibilityResponse object {auto\_topup, contract\_version, evaluated\_at, 4 more }
+TopupGetEligibilityResponse object { auto\_topup, contract\_version, evaluated\_at, 4 more }
 
 </summary>
 
@@ -14990,7 +14990,7 @@ TopupGetEligibilityResponse object {auto\_topup, contract\_version, evaluated\_a
 
 <summary>
 
-auto\_topup: object {can\_configure, config, limits, 3 more }
+auto\_topup: object { can\_configure, config, limits, 3 more }
 
 Auto top-up state.
 
@@ -15006,7 +15006,7 @@ Whether auto top-up can be set up or changed now.
 
 <summary>
 
-config: object {amount\_cents, threshold\_cents }
+config: object { amount\_cents, threshold\_cents }
 
 Configured threshold and amount. Null unless <code>state</code> is <code>active</code> or <code>needs_confirmation</code>.
 
@@ -15032,7 +15032,7 @@ Balance threshold in cents that triggers an auto top-up.
 
 <summary>
 
-limits: object {amount\_max\_cents, amount\_min\_cents, threshold\_min\_cents }
+limits: object { amount\_max\_cents, amount\_min\_cents, threshold\_min\_cents }
 
 Allowed auto top-up values.
 
@@ -15070,7 +15070,7 @@ Payment method auto top-up charges or, once stopped, the one it stopped on. Null
 
 <summary>
 
-state: "first\_topup\_required"or "not\_configured"or "active"or 2 more
+state: "first\_topup\_required" or "not\_configured" or "active" or 2 more
 
 <code>first_topup_required</code>: auto top-up can be set up after the first manual top-up. <code>not_configured</code>: auto top-up is off. <code>active</code>: auto top-up is on. <code>needs_confirmation</code>: auto top-up is on, but its card has to be confirmed or replaced. <code>stopped</code>: auto top-up was turned off; <code>stopped_reason</code> says why, when known.
 
@@ -15106,7 +15106,7 @@ One of the following:
 
 <summary>
 
-stopped\_reason: optional "payment\_method\_removed"or "payment\_method\_changed"or "expired\_card"or 4 more
+stopped\_reason: optional "payment\_method\_removed" or "payment\_method\_changed" or "expired\_card" or 4 more
 
 Why auto top-up stopped. Present only when <code>state</code> is <code>stopped</code> and the reason is known.
 
@@ -15168,7 +15168,7 @@ formatdate-time
 
 <summary>
 
-manual\_topup: object {available, default\_payment\_method\_id, limits }
+manual\_topup: object { available, default\_payment\_method\_id, limits }
 
 Manual top-up availability.
 
@@ -15190,7 +15190,7 @@ Payment method to preselect: the default when it can pay, otherwise the first th
 
 <summary>
 
-limits: object {currency, max\_cents, min\_cents }
+limits: object { currency, max\_cents, min\_cents }
 
 Allowed manual top-up amounts.
 
@@ -15226,7 +15226,7 @@ Minimum top-up amount in cents.
 
 <summary>
 
-payment\_methods: array of object {id, is\_default, type, 6 more }
+payment\_methods: array of object { id, is\_default, type, 6 more }
 
 The account’s payment methods, and whether each can pay for a top-up.
 
@@ -15248,7 +15248,7 @@ Whether this is the account’s default payment method.
 
 <summary>
 
-type: "card"or "apple\_pay"or "google\_pay"or 3 more
+type: "card" or "apple\_pay" or "google\_pay" or 3 more
 
 Payment method type.
 
@@ -15318,7 +15318,7 @@ Last 4 digits. Present for cards.
 
 <summary>
 
-unusable\_reason: optional "payment\_method\_not\_supported"or "expired\_card"or "prepaid\_card\_not\_supported"or "card\_not\_3ds\_capable"
+unusable\_reason: optional "payment\_method\_not\_supported" or "expired\_card" or "prepaid\_card\_not\_supported" or "card\_not\_3ds\_capable"
 
 Why this payment method can’t pay for a top-up. Present only when <code>usable</code> is false.
 
@@ -15354,7 +15354,7 @@ One of the following:
 
 <summary>
 
-reason: "NONE"or "CONTRACT\_BILLING"or "ACCOUNT\_RESTRICTED"or 3 more
+reason: "NONE" or "CONTRACT\_BILLING" or "ACCOUNT\_RESTRICTED" or 3 more
 
 What prevents a manual top-up, or <code>NONE</code>. <code>CONTRACT_BILLING</code>: the account is billed by contract. <code>ACCOUNT_RESTRICTED</code>: the account is restricted. <code>ELIGIBILITY_UNAVAILABLE</code>: eligibility could not be determined. <code>NO_ELIGIBLE_PAYMENT_METHOD</code>: no payment method can pay for a top-up. <code>DAILY_LIMIT_REACHED</code>: the account reached its daily top-up limit.
 
@@ -15394,7 +15394,7 @@ One of the following:
 
 <summary>
 
-status: "ready"or "blocked"or "unavailable"
+status: "ready" or "blocked" or "unavailable"
 
 <code>ready</code> when a manual top-up is available, <code>blocked</code> when <code>reason</code> prevents one, or <code>unavailable</code> when eligibility could not be determined and the request can be retried.
 
@@ -15426,7 +15426,7 @@ One of the following:
 
 <summary>
 
-TopupLimitsResponse object {currency, max\_cents, min\_cents }
+TopupLimitsResponse object { currency, max\_cents, min\_cents }
 
 </summary>
 
@@ -15474,7 +15474,7 @@ DELETE/accounts/{account\_id}/ai-gateway/billing/topup/config
 
 <summary>
 
-ConfigGetResponse object {amount, threshold, disabledReason, 2 more }
+ConfigGetResponse object { amount, threshold, disabledReason, 2 more }
 
 </summary>
 
@@ -15516,7 +15516,7 @@ When auto top-up was stopped, as a Unix timestamp in milliseconds. Present only 
 
 <summary>
 
-ConfigCreateResponse = object {amount, threshold } or object {amount, status, threshold } or object {amount, client\_secret, setup\_intent\_id, 2 more }
+ConfigCreateResponse = object { amount, threshold } or object { amount, status, threshold } or object { amount, client\_secret, setup\_intent\_id, 2 more }
 
 </summary>
 
@@ -15526,7 +15526,7 @@ One of the following:
 
 <summary>
 
-object {amount, threshold }
+object { amount, threshold }
 
 </summary>
 
@@ -15550,7 +15550,7 @@ Balance threshold in cents from the request.
 
 <summary>
 
-object {amount, status, threshold }
+object { amount, status, threshold }
 
 </summary>
 
@@ -15580,7 +15580,7 @@ Balance threshold in cents from the request.
 
 <summary>
 
-object {amount, client\_secret, setup\_intent\_id, 2 more }
+object { amount, client\_secret, setup\_intent\_id, 2 more }
 
 </summary>
 
@@ -15652,7 +15652,7 @@ DELETE/accounts/{account\_id}/ai-gateway/billing/spending-limit
 
 <summary>
 
-SpendingLimitGetResponse object {config, enabled }
+SpendingLimitGetResponse object { config, enabled }
 
 </summary>
 
@@ -15660,7 +15660,7 @@ SpendingLimitGetResponse object {config, enabled }
 
 <summary>
 
-config: object {amount, duration, strategy }
+config: object { amount, duration, strategy }
 
 Spending limit configuration.
 

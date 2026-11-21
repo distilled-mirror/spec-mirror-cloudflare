@@ -40,7 +40,7 @@ DELETE/zones/{zone\_id}/origin\_tls\_client\_auth/{certificate\_id}
 
 <summary>
 
-ZoneAuthenticatedOriginPull object {id, certificate, expires\_on, 4 more }
+ZoneAuthenticatedOriginPull object { id, certificate, expires\_on, 4 more }
 
 </summary>
 
@@ -82,7 +82,7 @@ The type of hash used for the certificate.
 
 <summary>
 
-status: optional "initializing"or "pending\_deployment"or "pending\_deletion"or 4 more
+status: optional "initializing" or "pending\_deployment" or "pending\_deletion" or 4 more
 
 Status of the certificate activation.
 

@@ -46,7 +46,7 @@ DELETE/accounts/{account\_id}/secondary\_dns/peers/{peer\_id}
 
 <summary>
 
-Peer object {id, name, ip, 3 more }
+Peer object { id, name, ip, 3 more }
 
 </summary>
 
@@ -92,7 +92,7 @@ TSIG authentication will be used for zone transfer if configured.
 
 <summary>
 
-PeerDeleteResponse object {id }
+PeerDeleteResponse object { id }
 
 </summary>
 

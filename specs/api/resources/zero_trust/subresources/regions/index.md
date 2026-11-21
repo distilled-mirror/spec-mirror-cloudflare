@@ -40,7 +40,7 @@ DELETE/accounts/{account\_id}/zerotrust/region
 
 <summary>
 
-AccountRegion object {region\_key }
+AccountRegion object { region\_key }
 
 </summary>
 
@@ -60,7 +60,7 @@ minLength1
 
 <summary>
 
-ActiveAccountRegion object {region\_key }
+ActiveAccountRegion object { region\_key }
 
 </summary>
 

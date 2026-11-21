@@ -61,7 +61,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`URL Scanner Write``URL Scanner Read`
+`Cloudforce One Write``Cloudforce One Read``URL Scanner Write``URL Scanner Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -91,7 +91,7 @@ Limit the number of objects in the response.
 
 <summary>
 
-results: array of object {\_id, page, result, 3 more }
+results: array of object { \_id, page, result, 3 more }
 
 </summary>
 
@@ -103,7 +103,7 @@ results: array of object {\_id, page, result, 3 more }
 
 <summary>
 
-page: object {asn, country, ip, url }
+page: object { asn, country, ip, url }
 
 </summary>
 
@@ -135,7 +135,7 @@ result: string
 
 <summary>
 
-stats: object {dataLength, requests, uniqCountries, uniqIPs }
+stats: object { dataLength, requests, uniqCountries, uniqIPs }
 
 </summary>
 
@@ -163,7 +163,7 @@ uniqIPs: number
 
 <summary>
 
-task: object {time, url, uuid, visibility }
+task: object { time, url, uuid, visibility }
 
 </summary>
 
@@ -191,7 +191,7 @@ visibility: string
 
 <summary>
 
-verdicts: object {malicious }
+verdicts: object { malicious }
 
 </summary>
 

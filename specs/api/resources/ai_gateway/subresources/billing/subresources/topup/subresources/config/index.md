@@ -42,7 +42,7 @@ DELETE/accounts/{account\_id}/ai-gateway/billing/topup/config
 
 <summary>
 
-ConfigGetResponse object {amount, threshold, disabledReason, 2 more }
+ConfigGetResponse object { amount, threshold, disabledReason, 2 more }
 
 </summary>
 
@@ -84,7 +84,7 @@ When auto top-up was stopped, as a Unix timestamp in milliseconds. Present only 
 
 <summary>
 
-ConfigCreateResponse = object {amount, threshold } or object {amount, status, threshold } or object {amount, client\_secret, setup\_intent\_id, 2 more }
+ConfigCreateResponse = object { amount, threshold } or object { amount, status, threshold } or object { amount, client\_secret, setup\_intent\_id, 2 more }
 
 </summary>
 
@@ -94,7 +94,7 @@ One of the following:
 
 <summary>
 
-object {amount, threshold }
+object { amount, threshold }
 
 </summary>
 
@@ -118,7 +118,7 @@ Balance threshold in cents from the request.
 
 <summary>
 
-object {amount, status, threshold }
+object { amount, status, threshold }
 
 </summary>
 
@@ -148,7 +148,7 @@ Balance threshold in cents from the request.
 
 <summary>
 
-object {amount, client\_secret, setup\_intent\_id, 2 more }
+object { amount, client\_secret, setup\_intent\_id, 2 more }
 
 </summary>
 

@@ -42,7 +42,7 @@ DELETE/accounts/{account\_id}/dlp/settings
 
 <summary>
 
-DLPSettings object {ai\_context\_analysis, ocr, payload\_logging }
+DLPSettings object { ai\_context\_analysis, ocr, payload\_logging }
 
 DLP account-level settings response.
 
@@ -64,7 +64,7 @@ Whether OCR is enabled at the account level.
 
 <summary>
 
-payload\_logging: object {updated\_at, masking\_level, public\_key }
+payload\_logging: object { updated\_at, masking\_level, public\_key }
 
 </summary>
 
@@ -78,7 +78,7 @@ formatdate-time
 
 <summary>
 
-masking\_level: optional "full"or "partial"or "clear"or "default"
+masking\_level: optional "full" or "partial" or "clear" or "default"
 
 Masking level for payload logs.
 

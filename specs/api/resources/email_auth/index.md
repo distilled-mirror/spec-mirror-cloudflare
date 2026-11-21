@@ -32,7 +32,7 @@ PATCH/zones/{zone\_id}/email/auth/dmarc-reports
 
 <summary>
 
-DMARCReportGetResponse object {approved\_sources, created, created\_at, 9 more }
+DMARCReportGetResponse object { approved\_sources, created, created\_at, 9 more }
 
 Response for GET/PATCH /dmarc-reports
 
@@ -42,7 +42,7 @@ Response for GET/PATCH /dmarc-reports
 
 <summary>
 
-approved\_sources: optional array of object {created, created\_at, domain, 6 more }
+approved\_sources: optional array of object { created, created\_at, domain, 6 more }
 
 List of approved sending sources (omitted when empty)
 
@@ -164,7 +164,7 @@ formatdate-time
 
 <summary>
 
-records: optional object {bimi\_records, cname\_dkim\_records, cname\_dmarc\_records, 5 more }
+records: optional object { bimi\_records, cname\_dkim\_records, cname\_dmarc\_records, 5 more }
 
 Live DNS records for the zone, grouped by type
 
@@ -174,7 +174,7 @@ Live DNS records for the zone, grouped by type
 
 <summary>
 
-bimi\_records: optional array of object {id, content, name, 3 more }
+bimi\_records: optional array of object { id, content, name, 3 more }
 
 BIMI TXT records
 
@@ -224,7 +224,7 @@ Record type
 
 <summary>
 
-cname\_dkim\_records: optional array of object {id, content, name, 3 more }
+cname\_dkim\_records: optional array of object { id, content, name, 3 more }
 
 CNAME records for DKIM selectors. Each selector is resolved independently; when a selector’s CNAME resolves to a DKIM TXT record, the API returns that record’s content in the <code>resolved</code> field of the corresponding entry.
 
@@ -274,7 +274,7 @@ Record type
 
 <summary>
 
-cname\_dmarc\_records: optional array of object {id, content, name, 3 more }
+cname\_dmarc\_records: optional array of object { id, content, name, 3 more }
 
 CNAME records at \_dmarc. When such a CNAME resolves to a DMARC TXT record, the API returns that record’s content in the <code>resolved</code> field of the corresponding entry.
 
@@ -324,7 +324,7 @@ Record type
 
 <summary>
 
-cname\_spf\_records: optional array of object {id, content, name, 3 more }
+cname\_spf\_records: optional array of object { id, content, name, 3 more }
 
 CNAME records at the zone apex. When such a CNAME resolves to an SPF TXT record, the API returns that record’s content in the <code>resolved</code> field of the corresponding entry.
 
@@ -374,7 +374,7 @@ Record type
 
 <summary>
 
-dkim\_records: optional array of object {id, content, name, 3 more }
+dkim\_records: optional array of object { id, content, name, 3 more }
 
 DKIM TXT records
 
@@ -424,7 +424,7 @@ Record type
 
 <summary>
 
-dmarc\_records: optional array of object {id, content, name, 3 more }
+dmarc\_records: optional array of object { id, content, name, 3 more }
 
 DMARC TXT records
 
@@ -474,7 +474,7 @@ Record type
 
 <summary>
 
-Deprecatedresolved\_dmarc\_records: optional array of object {content, name }
+Deprecatedresolved\_dmarc\_records: optional array of object { content, name }
 
 Use the <code>resolved</code> field on the corresponding entry in cname\_dmarc\_records instead.
 
@@ -502,7 +502,7 @@ The name the API queried.
 
 <summary>
 
-spf\_records: optional array of object {id, content, name, 3 more }
+spf\_records: optional array of object { id, content, name, 3 more }
 
 SPF TXT records
 
@@ -568,7 +568,7 @@ Whether to skip the setup wizard
 
 <summary>
 
-status: optional "missing-dmarc-report"or "multiple-dmarc-reports"or "missing-dmarc-rua"or 2 more
+status: optional "missing-dmarc-report" or "multiple-dmarc-reports" or "missing-dmarc-rua" or 2 more
 
 DMARC configuration status. The API omits this field when DMARC is correctly configured. If the zone lacks a DMARC TXT record of its own, the API resolves \_dmarc.{zone} recursively and evaluates whatever that lookup returns. A CNAME at \_dmarc.{zone} that points to a valid DMARC record is therefore healthy; the cname-on-dmarc-record value means the CNAME resolves to no DMARC record at all.
 
@@ -622,7 +622,7 @@ Zone identifier
 
 <summary>
 
-DMARCReportEditResponse object {approved\_sources, created, created\_at, 9 more }
+DMARCReportEditResponse object { approved\_sources, created, created\_at, 9 more }
 
 Response for GET/PATCH /dmarc-reports
 
@@ -632,7 +632,7 @@ Response for GET/PATCH /dmarc-reports
 
 <summary>
 
-approved\_sources: optional array of object {created, created\_at, domain, 6 more }
+approved\_sources: optional array of object { created, created\_at, domain, 6 more }
 
 List of approved sending sources (omitted when empty)
 
@@ -754,7 +754,7 @@ formatdate-time
 
 <summary>
 
-records: optional object {bimi\_records, cname\_dkim\_records, cname\_dmarc\_records, 5 more }
+records: optional object { bimi\_records, cname\_dkim\_records, cname\_dmarc\_records, 5 more }
 
 Live DNS records for the zone, grouped by type
 
@@ -764,7 +764,7 @@ Live DNS records for the zone, grouped by type
 
 <summary>
 
-bimi\_records: optional array of object {id, content, name, 3 more }
+bimi\_records: optional array of object { id, content, name, 3 more }
 
 BIMI TXT records
 
@@ -814,7 +814,7 @@ Record type
 
 <summary>
 
-cname\_dkim\_records: optional array of object {id, content, name, 3 more }
+cname\_dkim\_records: optional array of object { id, content, name, 3 more }
 
 CNAME records for DKIM selectors. Each selector is resolved independently; when a selector’s CNAME resolves to a DKIM TXT record, the API returns that record’s content in the <code>resolved</code> field of the corresponding entry.
 
@@ -864,7 +864,7 @@ Record type
 
 <summary>
 
-cname\_dmarc\_records: optional array of object {id, content, name, 3 more }
+cname\_dmarc\_records: optional array of object { id, content, name, 3 more }
 
 CNAME records at \_dmarc. When such a CNAME resolves to a DMARC TXT record, the API returns that record’s content in the <code>resolved</code> field of the corresponding entry.
 
@@ -914,7 +914,7 @@ Record type
 
 <summary>
 
-cname\_spf\_records: optional array of object {id, content, name, 3 more }
+cname\_spf\_records: optional array of object { id, content, name, 3 more }
 
 CNAME records at the zone apex. When such a CNAME resolves to an SPF TXT record, the API returns that record’s content in the <code>resolved</code> field of the corresponding entry.
 
@@ -964,7 +964,7 @@ Record type
 
 <summary>
 
-dkim\_records: optional array of object {id, content, name, 3 more }
+dkim\_records: optional array of object { id, content, name, 3 more }
 
 DKIM TXT records
 
@@ -1014,7 +1014,7 @@ Record type
 
 <summary>
 
-dmarc\_records: optional array of object {id, content, name, 3 more }
+dmarc\_records: optional array of object { id, content, name, 3 more }
 
 DMARC TXT records
 
@@ -1064,7 +1064,7 @@ Record type
 
 <summary>
 
-Deprecatedresolved\_dmarc\_records: optional array of object {content, name }
+Deprecatedresolved\_dmarc\_records: optional array of object { content, name }
 
 Use the <code>resolved</code> field on the corresponding entry in cname\_dmarc\_records instead.
 
@@ -1092,7 +1092,7 @@ The name the API queried.
 
 <summary>
 
-spf\_records: optional array of object {id, content, name, 3 more }
+spf\_records: optional array of object { id, content, name, 3 more }
 
 SPF TXT records
 
@@ -1158,7 +1158,7 @@ Whether to skip the setup wizard
 
 <summary>
 
-status: optional "missing-dmarc-report"or "multiple-dmarc-reports"or "missing-dmarc-rua"or 2 more
+status: optional "missing-dmarc-report" or "multiple-dmarc-reports" or "missing-dmarc-rua" or 2 more
 
 DMARC configuration status. The API omits this field when DMARC is correctly configured. If the zone lacks a DMARC TXT record of its own, the API resolves \_dmarc.{zone} recursively and evaluates whatever that lookup returns. A CNAME at \_dmarc.{zone} that points to a valid DMARC record is therefore healthy; the cname-on-dmarc-record value means the CNAME resolves to no DMARC record at all.
 
@@ -1222,7 +1222,7 @@ GET/zones/{zone\_id}/email/auth/spf/inspect
 
 <summary>
 
-InspectGetResponse object {components, domain, record, 2 more }
+InspectGetResponse object { components, domain, record, 2 more }
 
 Recursive SPF inspection tree
 
@@ -1256,7 +1256,7 @@ Total number of DNS lookups performed across all includes
 
 <summary>
 
-errors: optional array of object {code, domain, message, details }
+errors: optional array of object { code, domain, message, details }
 
 All errors encountered during inspection, collected from the entire tree. This includes errors from nested includes at any depth, providing a quick overview of all issues without needing to traverse the nested structure. Each error includes a <code>domain</code> field to identify where it occurred. Empty array if no errors (omitted from JSON when empty).
 

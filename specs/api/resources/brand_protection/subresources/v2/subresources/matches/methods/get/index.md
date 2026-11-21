@@ -88,7 +88,7 @@ Number of matches to skip, for pagination. Defaults to 0.
 
 <summary>
 
-order: optional "asc"or "desc"
+order: optional "asc" or "desc"
 
 Sort direction: <code>asc</code> or <code>desc</code>. Defaults to <code>desc</code>. For single-query requests, <code>asc</code> applies only when <code>orderBy</code> is set.
 
@@ -112,7 +112,7 @@ One of the following:
 
 <summary>
 
-orderBy: optional "domain"or "first\_seen"or "registrar"
+orderBy: optional "domain" or "first\_seen" or "registrar"
 
 Field to sort by: <code>domain</code>, <code>first_seen</code>, or <code>registrar</code>. Defaults to <code>first_seen</code>.
 
@@ -140,7 +140,7 @@ One of the following:
 
 <summary>
 
-quality: optional "high"or "low"
+quality: optional "high" or "low"
 
 Filter matches by quality. Options: ‘high’ or ‘low’
 
@@ -166,7 +166,7 @@ One of the following:
 
 <summary>
 
-matches: array of object {ai\_verdict, domain, edit\_distance, 11 more }
+matches: array of object { ai\_verdict, domain, edit\_distance, 11 more }
 
 </summary>
 
@@ -174,7 +174,7 @@ matches: array of object {ai\_verdict, domain, edit\_distance, 11 more }
 
 <summary>
 
-ai\_verdict: "confirmed"or "rejected"or "unavailable"or "not\_sent"
+ai\_verdict: "confirmed" or "rejected" or "unavailable" or "not\_sent"
 
 </summary>
 
@@ -224,7 +224,7 @@ match\_category: string
 
 <summary>
 
-public\_scans: object {submission\_id }
+public\_scans: object { submission\_id }
 
 </summary>
 
@@ -240,7 +240,7 @@ submission\_id: string
 
 <summary>
 
-quality: "high"or "low"
+quality: "high" or "low"
 
 </summary>
 
@@ -292,7 +292,7 @@ ID of the matched domain. Present only when <code>include_domain_id=true</code>.
 
 <summary>
 
-match\_details: optional array of object {ai\_verdict, dismissed, edit\_distance, 5 more }
+match\_details: optional array of object { ai\_verdict, dismissed, edit\_distance, 5 more }
 
 Per-match detail objects with query metadata and individual dismissed state. Only present when multiple query\_ids are requested.
 
@@ -302,7 +302,7 @@ Per-match detail objects with query metadata and individual dismissed state. Onl
 
 <summary>
 
-ai\_verdict: "confirmed"or "rejected"or "unavailable"or "not\_sent"
+ai\_verdict: "confirmed" or "rejected" or "unavailable" or "not\_sent"
 
 </summary>
 
@@ -352,7 +352,7 @@ ID of the match. Accepted by the legacy <code>match_ids</code> format.
 
 <summary>
 
-quality: "high"or "low"
+quality: "high" or "low"
 
 </summary>
 

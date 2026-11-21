@@ -68,7 +68,7 @@ account\_id: string
 
 <summary>
 
-environment: optional "fedramp"or "standard"
+environment: optional "fedramp" or "standard"
 
 Environment to request (standard, fedramp). The result follows the account’s FedRAMP entitlement: FedRAMP-enabled accounts always receive FedRAMP applications and other accounts receive standard applications. Any other non-empty value returns 400.
 
@@ -118,7 +118,7 @@ List of messages.
 
 <summary>
 
-result: array of object {id, auth\_methods, category, 7 more }
+result: array of object { id, auth\_methods, category, 7 more }
 
 List of items.
 
@@ -128,7 +128,7 @@ List of items.
 
 <summary>
 
-id: "ANTHROPIC"or "AWS"or "BITBUCKET"or 13 more
+id: "ANTHROPIC" or "AWS" or "BITBUCKET" or 13 more
 
 Vendor identifier (e.g. microsoft\_internal, google\_workspace).
 
@@ -225,7 +225,7 @@ One of the following:
 
 <summary>
 
-auth\_methods: array of object {id, display\_name }
+auth\_methods: array of object { id, display\_name }
 
 Available auth methods.
 
@@ -281,7 +281,7 @@ Logo path.
 
 <summary>
 
-permissions: array of object {display\_name, scope, severity }
+permissions: array of object { display\_name, scope, severity }
 
 All permissions with severity.
 
@@ -303,7 +303,7 @@ Vendor-native scope identifier.
 
 <summary>
 
-severity: "low"or "medium"or "high"or "critical"
+severity: "low" or "medium" or "high" or "critical"
 
 Permission sensitivity level.
 
@@ -350,7 +350,7 @@ Environments this vendor supports (standard, fedramp).
 
 <summary>
 
-use\_cases: array of object {id, display\_name }
+use\_cases: array of object { id, display\_name }
 
 Supported use cases.
 
@@ -380,7 +380,7 @@ Human-readable use case name.
 
 <summary>
 
-result\_info: object {count, next, page, 3 more }
+result\_info: object { count, next, page, 3 more }
 
 Pagination metadata.
 

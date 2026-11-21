@@ -76,7 +76,7 @@ icon: string
 
 <summary>
 
-Pending object {state }
+Pending object { state }
 
 </summary>
 
@@ -92,7 +92,7 @@ state: "Pending"
 
 <summary>
 
-Down object {state, reason }
+Down object { state, reason }
 
 </summary>
 
@@ -114,7 +114,7 @@ Diagnostic information, if available
 
 <summary>
 
-Unhealthy object {state, reason }
+Unhealthy object { state, reason }
 
 </summary>
 
@@ -136,7 +136,7 @@ Diagnostic information, if available
 
 <summary>
 
-Healthy object {state }
+Healthy object { state }
 
 </summary>
 

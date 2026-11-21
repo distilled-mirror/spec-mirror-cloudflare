@@ -60,7 +60,7 @@ DELETE/accounts/{account\_id}/email-security/settings/domains
 
 <summary>
 
-DomainListResponse object {id, allowed\_delivery\_modes, authorization, 19 more }
+DomainListResponse object { id, allowed\_delivery\_modes, authorization, 19 more }
 
 </summary>
 
@@ -76,7 +76,7 @@ formatuuid
 
 <summary>
 
-allowed\_delivery\_modes: optional array of "DIRECT"or "BCC"or "JOURNAL"or 2 more
+allowed\_delivery\_modes: optional array of "DIRECT" or "BCC" or "JOURNAL" or 2 more
 
 </summary>
 
@@ -110,7 +110,7 @@ One of the following:
 
 <summary>
 
-authorization: optional object {authorized, timestamp, status\_message }
+authorization: optional object { authorized, timestamp, status\_message }
 
 </summary>
 
@@ -142,7 +142,7 @@ formatdate-time
 
 <summary>
 
-dmarc\_status: optional "none"or "good"or "invalid"
+dmarc\_status: optional "none" or "good" or "invalid"
 
 </summary>
 
@@ -172,7 +172,7 @@ domain: optional string
 
 <summary>
 
-drop\_dispositions: optional array of "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+drop\_dispositions: optional array of "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 </summary>
 
@@ -226,7 +226,7 @@ One of the following:
 
 <summary>
 
-emails\_processed: optional object {timestamp, total\_emails\_processed, total\_emails\_processed\_previous }
+emails\_processed: optional object { timestamp, total\_emails\_processed, total\_emails\_processed\_previous }
 
 </summary>
 
@@ -256,7 +256,7 @@ minimum0
 
 <summary>
 
-folder: optional "AllItems"or "Inbox"
+folder: optional "AllItems" or "Inbox"
 
 The mailbox folder to scan, for API-scanning domains.
 
@@ -280,7 +280,7 @@ One of the following:
 
 <summary>
 
-inbox\_provider: optional "Microsoft"or "Google"
+inbox\_provider: optional "Microsoft" or "Google"
 
 </summary>
 
@@ -336,7 +336,7 @@ o365\_tenant\_id: optional string
 
 <summary>
 
-regions: optional array of "GLOBAL"or "AU"or "DE"or 2 more
+regions: optional array of "GLOBAL" or "AU" or "DE" or 2 more
 
 </summary>
 
@@ -378,7 +378,7 @@ require\_tls\_outbound: optional boolean
 
 <summary>
 
-spf\_status: optional "none"or "good"or "neutral"or 2 more
+spf\_status: optional "none" or "good" or "neutral" or 2 more
 
 </summary>
 
@@ -412,7 +412,7 @@ One of the following:
 
 <summary>
 
-status: optional "PENDING"or "ACTIVE"or "FAILED"or "TIMEOUT"
+status: optional "PENDING" or "ACTIVE" or "FAILED" or "TIMEOUT"
 
 </summary>
 
@@ -450,7 +450,7 @@ transport: optional string
 
 <summary>
 
-DomainGetResponse object {id, allowed\_delivery\_modes, authorization, 19 more }
+DomainGetResponse object { id, allowed\_delivery\_modes, authorization, 19 more }
 
 </summary>
 
@@ -466,7 +466,7 @@ formatuuid
 
 <summary>
 
-allowed\_delivery\_modes: optional array of "DIRECT"or "BCC"or "JOURNAL"or 2 more
+allowed\_delivery\_modes: optional array of "DIRECT" or "BCC" or "JOURNAL" or 2 more
 
 </summary>
 
@@ -500,7 +500,7 @@ One of the following:
 
 <summary>
 
-authorization: optional object {authorized, timestamp, status\_message }
+authorization: optional object { authorized, timestamp, status\_message }
 
 </summary>
 
@@ -532,7 +532,7 @@ formatdate-time
 
 <summary>
 
-dmarc\_status: optional "none"or "good"or "invalid"
+dmarc\_status: optional "none" or "good" or "invalid"
 
 </summary>
 
@@ -562,7 +562,7 @@ domain: optional string
 
 <summary>
 
-drop\_dispositions: optional array of "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+drop\_dispositions: optional array of "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 </summary>
 
@@ -616,7 +616,7 @@ One of the following:
 
 <summary>
 
-emails\_processed: optional object {timestamp, total\_emails\_processed, total\_emails\_processed\_previous }
+emails\_processed: optional object { timestamp, total\_emails\_processed, total\_emails\_processed\_previous }
 
 </summary>
 
@@ -646,7 +646,7 @@ minimum0
 
 <summary>
 
-folder: optional "AllItems"or "Inbox"
+folder: optional "AllItems" or "Inbox"
 
 The mailbox folder to scan, for API-scanning domains.
 
@@ -670,7 +670,7 @@ One of the following:
 
 <summary>
 
-inbox\_provider: optional "Microsoft"or "Google"
+inbox\_provider: optional "Microsoft" or "Google"
 
 </summary>
 
@@ -726,7 +726,7 @@ o365\_tenant\_id: optional string
 
 <summary>
 
-regions: optional array of "GLOBAL"or "AU"or "DE"or 2 more
+regions: optional array of "GLOBAL" or "AU" or "DE" or 2 more
 
 </summary>
 
@@ -768,7 +768,7 @@ require\_tls\_outbound: optional boolean
 
 <summary>
 
-spf\_status: optional "none"or "good"or "neutral"or 2 more
+spf\_status: optional "none" or "good" or "neutral" or 2 more
 
 </summary>
 
@@ -802,7 +802,7 @@ One of the following:
 
 <summary>
 
-status: optional "PENDING"or "ACTIVE"or "FAILED"or "TIMEOUT"
+status: optional "PENDING" or "ACTIVE" or "FAILED" or "TIMEOUT"
 
 </summary>
 
@@ -840,7 +840,7 @@ transport: optional string
 
 <summary>
 
-DomainUpdateResponse object {id, allowed\_delivery\_modes, authorization, 19 more }
+DomainUpdateResponse object { id, allowed\_delivery\_modes, authorization, 19 more }
 
 </summary>
 
@@ -856,7 +856,7 @@ formatuuid
 
 <summary>
 
-allowed\_delivery\_modes: optional array of "DIRECT"or "BCC"or "JOURNAL"or 2 more
+allowed\_delivery\_modes: optional array of "DIRECT" or "BCC" or "JOURNAL" or 2 more
 
 </summary>
 
@@ -890,7 +890,7 @@ One of the following:
 
 <summary>
 
-authorization: optional object {authorized, timestamp, status\_message }
+authorization: optional object { authorized, timestamp, status\_message }
 
 </summary>
 
@@ -922,7 +922,7 @@ formatdate-time
 
 <summary>
 
-dmarc\_status: optional "none"or "good"or "invalid"
+dmarc\_status: optional "none" or "good" or "invalid"
 
 </summary>
 
@@ -952,7 +952,7 @@ domain: optional string
 
 <summary>
 
-drop\_dispositions: optional array of "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+drop\_dispositions: optional array of "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 </summary>
 
@@ -1006,7 +1006,7 @@ One of the following:
 
 <summary>
 
-emails\_processed: optional object {timestamp, total\_emails\_processed, total\_emails\_processed\_previous }
+emails\_processed: optional object { timestamp, total\_emails\_processed, total\_emails\_processed\_previous }
 
 </summary>
 
@@ -1036,7 +1036,7 @@ minimum0
 
 <summary>
 
-folder: optional "AllItems"or "Inbox"
+folder: optional "AllItems" or "Inbox"
 
 The mailbox folder to scan, for API-scanning domains.
 
@@ -1060,7 +1060,7 @@ One of the following:
 
 <summary>
 
-inbox\_provider: optional "Microsoft"or "Google"
+inbox\_provider: optional "Microsoft" or "Google"
 
 </summary>
 
@@ -1116,7 +1116,7 @@ o365\_tenant\_id: optional string
 
 <summary>
 
-regions: optional array of "GLOBAL"or "AU"or "DE"or 2 more
+regions: optional array of "GLOBAL" or "AU" or "DE" or 2 more
 
 </summary>
 
@@ -1158,7 +1158,7 @@ require\_tls\_outbound: optional boolean
 
 <summary>
 
-spf\_status: optional "none"or "good"or "neutral"or 2 more
+spf\_status: optional "none" or "good" or "neutral" or 2 more
 
 </summary>
 
@@ -1192,7 +1192,7 @@ One of the following:
 
 <summary>
 
-status: optional "PENDING"or "ACTIVE"or "FAILED"or "TIMEOUT"
+status: optional "PENDING" or "ACTIVE" or "FAILED" or "TIMEOUT"
 
 </summary>
 
@@ -1230,7 +1230,7 @@ transport: optional string
 
 <summary>
 
-DomainEditResponse object {id, allowed\_delivery\_modes, authorization, 19 more }
+DomainEditResponse object { id, allowed\_delivery\_modes, authorization, 19 more }
 
 </summary>
 
@@ -1246,7 +1246,7 @@ formatuuid
 
 <summary>
 
-allowed\_delivery\_modes: optional array of "DIRECT"or "BCC"or "JOURNAL"or 2 more
+allowed\_delivery\_modes: optional array of "DIRECT" or "BCC" or "JOURNAL" or 2 more
 
 </summary>
 
@@ -1280,7 +1280,7 @@ One of the following:
 
 <summary>
 
-authorization: optional object {authorized, timestamp, status\_message }
+authorization: optional object { authorized, timestamp, status\_message }
 
 </summary>
 
@@ -1312,7 +1312,7 @@ formatdate-time
 
 <summary>
 
-dmarc\_status: optional "none"or "good"or "invalid"
+dmarc\_status: optional "none" or "good" or "invalid"
 
 </summary>
 
@@ -1342,7 +1342,7 @@ domain: optional string
 
 <summary>
 
-drop\_dispositions: optional array of "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+drop\_dispositions: optional array of "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 </summary>
 
@@ -1396,7 +1396,7 @@ One of the following:
 
 <summary>
 
-emails\_processed: optional object {timestamp, total\_emails\_processed, total\_emails\_processed\_previous }
+emails\_processed: optional object { timestamp, total\_emails\_processed, total\_emails\_processed\_previous }
 
 </summary>
 
@@ -1426,7 +1426,7 @@ minimum0
 
 <summary>
 
-folder: optional "AllItems"or "Inbox"
+folder: optional "AllItems" or "Inbox"
 
 The mailbox folder to scan, for API-scanning domains.
 
@@ -1450,7 +1450,7 @@ One of the following:
 
 <summary>
 
-inbox\_provider: optional "Microsoft"or "Google"
+inbox\_provider: optional "Microsoft" or "Google"
 
 </summary>
 
@@ -1506,7 +1506,7 @@ o365\_tenant\_id: optional string
 
 <summary>
 
-regions: optional array of "GLOBAL"or "AU"or "DE"or 2 more
+regions: optional array of "GLOBAL" or "AU" or "DE" or 2 more
 
 </summary>
 
@@ -1548,7 +1548,7 @@ require\_tls\_outbound: optional boolean
 
 <summary>
 
-spf\_status: optional "none"or "good"or "neutral"or 2 more
+spf\_status: optional "none" or "good" or "neutral" or 2 more
 
 </summary>
 
@@ -1582,7 +1582,7 @@ One of the following:
 
 <summary>
 
-status: optional "PENDING"or "ACTIVE"or "FAILED"or "TIMEOUT"
+status: optional "PENDING" or "ACTIVE" or "FAILED" or "TIMEOUT"
 
 </summary>
 
@@ -1620,7 +1620,7 @@ transport: optional string
 
 <summary>
 
-DomainCreateResponse object {id, allowed\_delivery\_modes, authorization, 19 more }
+DomainCreateResponse object { id, allowed\_delivery\_modes, authorization, 19 more }
 
 </summary>
 
@@ -1636,7 +1636,7 @@ formatuuid
 
 <summary>
 
-allowed\_delivery\_modes: optional array of "DIRECT"or "BCC"or "JOURNAL"or 2 more
+allowed\_delivery\_modes: optional array of "DIRECT" or "BCC" or "JOURNAL" or 2 more
 
 </summary>
 
@@ -1670,7 +1670,7 @@ One of the following:
 
 <summary>
 
-authorization: optional object {authorized, timestamp, status\_message }
+authorization: optional object { authorized, timestamp, status\_message }
 
 </summary>
 
@@ -1702,7 +1702,7 @@ formatdate-time
 
 <summary>
 
-dmarc\_status: optional "none"or "good"or "invalid"
+dmarc\_status: optional "none" or "good" or "invalid"
 
 </summary>
 
@@ -1732,7 +1732,7 @@ domain: optional string
 
 <summary>
 
-drop\_dispositions: optional array of "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+drop\_dispositions: optional array of "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 </summary>
 
@@ -1786,7 +1786,7 @@ One of the following:
 
 <summary>
 
-emails\_processed: optional object {timestamp, total\_emails\_processed, total\_emails\_processed\_previous }
+emails\_processed: optional object { timestamp, total\_emails\_processed, total\_emails\_processed\_previous }
 
 </summary>
 
@@ -1816,7 +1816,7 @@ minimum0
 
 <summary>
 
-folder: optional "AllItems"or "Inbox"
+folder: optional "AllItems" or "Inbox"
 
 The mailbox folder to scan, for API-scanning domains.
 
@@ -1840,7 +1840,7 @@ One of the following:
 
 <summary>
 
-inbox\_provider: optional "Microsoft"or "Google"
+inbox\_provider: optional "Microsoft" or "Google"
 
 </summary>
 
@@ -1896,7 +1896,7 @@ o365\_tenant\_id: optional string
 
 <summary>
 
-regions: optional array of "GLOBAL"or "AU"or "DE"or 2 more
+regions: optional array of "GLOBAL" or "AU" or "DE" or 2 more
 
 </summary>
 
@@ -1938,7 +1938,7 @@ require\_tls\_outbound: optional boolean
 
 <summary>
 
-spf\_status: optional "none"or "good"or "neutral"or 2 more
+spf\_status: optional "none" or "good" or "neutral" or 2 more
 
 </summary>
 
@@ -1972,7 +1972,7 @@ One of the following:
 
 <summary>
 
-status: optional "PENDING"or "ACTIVE"or "FAILED"or "TIMEOUT"
+status: optional "PENDING" or "ACTIVE" or "FAILED" or "TIMEOUT"
 
 </summary>
 
@@ -2010,7 +2010,7 @@ transport: optional string
 
 <summary>
 
-DomainDeleteResponse object {id }
+DomainDeleteResponse object { id }
 
 </summary>
 
@@ -2030,7 +2030,7 @@ formatuuid
 
 <summary>
 
-DomainBatchResponse object {deletes, patches, posts, puts }
+DomainBatchResponse object { deletes, patches, posts, puts }
 
 </summary>
 
@@ -2038,7 +2038,7 @@ DomainBatchResponse object {deletes, patches, posts, puts }
 
 <summary>
 
-deletes: array of object {id }
+deletes: array of object { id }
 
 </summary>
 
@@ -2058,7 +2058,7 @@ formatuuid
 
 <summary>
 
-patches: array of object {id, allowed\_delivery\_modes, authorization, 19 more }
+patches: array of object { id, allowed\_delivery\_modes, authorization, 19 more }
 
 </summary>
 
@@ -2074,7 +2074,7 @@ formatuuid
 
 <summary>
 
-allowed\_delivery\_modes: optional array of "DIRECT"or "BCC"or "JOURNAL"or 2 more
+allowed\_delivery\_modes: optional array of "DIRECT" or "BCC" or "JOURNAL" or 2 more
 
 </summary>
 
@@ -2108,7 +2108,7 @@ One of the following:
 
 <summary>
 
-authorization: optional object {authorized, timestamp, status\_message }
+authorization: optional object { authorized, timestamp, status\_message }
 
 </summary>
 
@@ -2140,7 +2140,7 @@ formatdate-time
 
 <summary>
 
-dmarc\_status: optional "none"or "good"or "invalid"
+dmarc\_status: optional "none" or "good" or "invalid"
 
 </summary>
 
@@ -2170,7 +2170,7 @@ domain: optional string
 
 <summary>
 
-drop\_dispositions: optional array of "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+drop\_dispositions: optional array of "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 </summary>
 
@@ -2224,7 +2224,7 @@ One of the following:
 
 <summary>
 
-emails\_processed: optional object {timestamp, total\_emails\_processed, total\_emails\_processed\_previous }
+emails\_processed: optional object { timestamp, total\_emails\_processed, total\_emails\_processed\_previous }
 
 </summary>
 
@@ -2254,7 +2254,7 @@ minimum0
 
 <summary>
 
-folder: optional "AllItems"or "Inbox"
+folder: optional "AllItems" or "Inbox"
 
 The mailbox folder to scan, for API-scanning domains.
 
@@ -2278,7 +2278,7 @@ One of the following:
 
 <summary>
 
-inbox\_provider: optional "Microsoft"or "Google"
+inbox\_provider: optional "Microsoft" or "Google"
 
 </summary>
 
@@ -2334,7 +2334,7 @@ o365\_tenant\_id: optional string
 
 <summary>
 
-regions: optional array of "GLOBAL"or "AU"or "DE"or 2 more
+regions: optional array of "GLOBAL" or "AU" or "DE" or 2 more
 
 </summary>
 
@@ -2376,7 +2376,7 @@ require\_tls\_outbound: optional boolean
 
 <summary>
 
-spf\_status: optional "none"or "good"or "neutral"or 2 more
+spf\_status: optional "none" or "good" or "neutral" or 2 more
 
 </summary>
 
@@ -2410,7 +2410,7 @@ One of the following:
 
 <summary>
 
-status: optional "PENDING"or "ACTIVE"or "FAILED"or "TIMEOUT"
+status: optional "PENDING" or "ACTIVE" or "FAILED" or "TIMEOUT"
 
 </summary>
 
@@ -2448,7 +2448,7 @@ transport: optional string
 
 <summary>
 
-posts: array of object {id, allowed\_delivery\_modes, authorization, 19 more }
+posts: array of object { id, allowed\_delivery\_modes, authorization, 19 more }
 
 </summary>
 
@@ -2464,7 +2464,7 @@ formatuuid
 
 <summary>
 
-allowed\_delivery\_modes: optional array of "DIRECT"or "BCC"or "JOURNAL"or 2 more
+allowed\_delivery\_modes: optional array of "DIRECT" or "BCC" or "JOURNAL" or 2 more
 
 </summary>
 
@@ -2498,7 +2498,7 @@ One of the following:
 
 <summary>
 
-authorization: optional object {authorized, timestamp, status\_message }
+authorization: optional object { authorized, timestamp, status\_message }
 
 </summary>
 
@@ -2530,7 +2530,7 @@ formatdate-time
 
 <summary>
 
-dmarc\_status: optional "none"or "good"or "invalid"
+dmarc\_status: optional "none" or "good" or "invalid"
 
 </summary>
 
@@ -2560,7 +2560,7 @@ domain: optional string
 
 <summary>
 
-drop\_dispositions: optional array of "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+drop\_dispositions: optional array of "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 </summary>
 
@@ -2614,7 +2614,7 @@ One of the following:
 
 <summary>
 
-emails\_processed: optional object {timestamp, total\_emails\_processed, total\_emails\_processed\_previous }
+emails\_processed: optional object { timestamp, total\_emails\_processed, total\_emails\_processed\_previous }
 
 </summary>
 
@@ -2644,7 +2644,7 @@ minimum0
 
 <summary>
 
-folder: optional "AllItems"or "Inbox"
+folder: optional "AllItems" or "Inbox"
 
 The mailbox folder to scan, for API-scanning domains.
 
@@ -2668,7 +2668,7 @@ One of the following:
 
 <summary>
 
-inbox\_provider: optional "Microsoft"or "Google"
+inbox\_provider: optional "Microsoft" or "Google"
 
 </summary>
 
@@ -2724,7 +2724,7 @@ o365\_tenant\_id: optional string
 
 <summary>
 
-regions: optional array of "GLOBAL"or "AU"or "DE"or 2 more
+regions: optional array of "GLOBAL" or "AU" or "DE" or 2 more
 
 </summary>
 
@@ -2766,7 +2766,7 @@ require\_tls\_outbound: optional boolean
 
 <summary>
 
-spf\_status: optional "none"or "good"or "neutral"or 2 more
+spf\_status: optional "none" or "good" or "neutral" or 2 more
 
 </summary>
 
@@ -2800,7 +2800,7 @@ One of the following:
 
 <summary>
 
-status: optional "PENDING"or "ACTIVE"or "FAILED"or "TIMEOUT"
+status: optional "PENDING" or "ACTIVE" or "FAILED" or "TIMEOUT"
 
 </summary>
 
@@ -2838,7 +2838,7 @@ transport: optional string
 
 <summary>
 
-puts: array of object {id, allowed\_delivery\_modes, authorization, 19 more }
+puts: array of object { id, allowed\_delivery\_modes, authorization, 19 more }
 
 </summary>
 
@@ -2854,7 +2854,7 @@ formatuuid
 
 <summary>
 
-allowed\_delivery\_modes: optional array of "DIRECT"or "BCC"or "JOURNAL"or 2 more
+allowed\_delivery\_modes: optional array of "DIRECT" or "BCC" or "JOURNAL" or 2 more
 
 </summary>
 
@@ -2888,7 +2888,7 @@ One of the following:
 
 <summary>
 
-authorization: optional object {authorized, timestamp, status\_message }
+authorization: optional object { authorized, timestamp, status\_message }
 
 </summary>
 
@@ -2920,7 +2920,7 @@ formatdate-time
 
 <summary>
 
-dmarc\_status: optional "none"or "good"or "invalid"
+dmarc\_status: optional "none" or "good" or "invalid"
 
 </summary>
 
@@ -2950,7 +2950,7 @@ domain: optional string
 
 <summary>
 
-drop\_dispositions: optional array of "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+drop\_dispositions: optional array of "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 </summary>
 
@@ -3004,7 +3004,7 @@ One of the following:
 
 <summary>
 
-emails\_processed: optional object {timestamp, total\_emails\_processed, total\_emails\_processed\_previous }
+emails\_processed: optional object { timestamp, total\_emails\_processed, total\_emails\_processed\_previous }
 
 </summary>
 
@@ -3034,7 +3034,7 @@ minimum0
 
 <summary>
 
-folder: optional "AllItems"or "Inbox"
+folder: optional "AllItems" or "Inbox"
 
 The mailbox folder to scan, for API-scanning domains.
 
@@ -3058,7 +3058,7 @@ One of the following:
 
 <summary>
 
-inbox\_provider: optional "Microsoft"or "Google"
+inbox\_provider: optional "Microsoft" or "Google"
 
 </summary>
 
@@ -3114,7 +3114,7 @@ o365\_tenant\_id: optional string
 
 <summary>
 
-regions: optional array of "GLOBAL"or "AU"or "DE"or 2 more
+regions: optional array of "GLOBAL" or "AU" or "DE" or 2 more
 
 </summary>
 
@@ -3156,7 +3156,7 @@ require\_tls\_outbound: optional boolean
 
 <summary>
 
-spf\_status: optional "none"or "good"or "neutral"or 2 more
+spf\_status: optional "none" or "good" or "neutral" or 2 more
 
 </summary>
 
@@ -3190,7 +3190,7 @@ One of the following:
 
 <summary>
 
-status: optional "PENDING"or "ACTIVE"or "FAILED"or "TIMEOUT"
+status: optional "PENDING" or "ACTIVE" or "FAILED" or "TIMEOUT"
 
 </summary>
 
@@ -3232,7 +3232,7 @@ transport: optional string
 
 <summary>
 
-DomainBulkDeleteResponse object {id }
+DomainBulkDeleteResponse object { id }
 
 </summary>
 

@@ -92,7 +92,7 @@ List actions patterns.
 
 <summary>
 
-type: "drop"or "forward"or "worker"
+type: "drop" or "forward" or "worker"
 
 Type of supported action.
 
@@ -140,7 +140,7 @@ Matching patterns to forward to your actions.
 
 <summary>
 
-type: "all"or "literal"
+type: "all" or "literal"
 
 Type of matcher.
 
@@ -182,7 +182,7 @@ maxLength90
 
 <summary>
 
-enabled: optional trueor false
+enabled: optional true or false
 
 Routing rule status.
 
@@ -230,7 +230,7 @@ minimum0
 
 <summary>
 
-source: optional "api"or "wrangler"
+source: optional "api" or "wrangler"
 
 Who manages the rule. <code>api</code> covers dashboard, generic API, and Terraform; <code>wrangler</code> means the rule is managed by a Worker’s wrangler.jsonc. Defaults to <code>api</code> when omitted on write.
 
@@ -256,7 +256,7 @@ One of the following:
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -278,7 +278,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -298,7 +298,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -320,7 +320,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -372,7 +372,7 @@ List actions patterns.
 
 <summary>
 
-type: "drop"or "forward"or "worker"
+type: "drop" or "forward" or "worker"
 
 Type of supported action.
 
@@ -410,7 +410,7 @@ List of values for the action. Currently limited to a single value.
 
 <summary>
 
-enabled: optional trueor false
+enabled: optional true or false
 
 Routing rule status.
 
@@ -444,7 +444,7 @@ Matching patterns to forward to your actions.
 
 <summary>
 
-type: "all"or "literal"
+type: "all" or "literal"
 
 Type of matcher.
 
@@ -502,7 +502,7 @@ minimum0
 
 <summary>
 
-source: optional "api"or "wrangler"
+source: optional "api" or "wrangler"
 
 Who manages the rule. <code>api</code> covers dashboard, generic API, and Terraform; <code>wrangler</code> means the rule is managed by a Worker’s wrangler.jsonc. Defaults to <code>api</code> when omitted on write.
 

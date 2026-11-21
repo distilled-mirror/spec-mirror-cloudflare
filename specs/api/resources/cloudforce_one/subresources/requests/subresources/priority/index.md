@@ -50,7 +50,7 @@ Label = string
 
 <summary>
 
-Priority object {id, created, labels, 4 more }
+Priority object { id, created, labels, 4 more }
 
 </summary>
 
@@ -92,7 +92,7 @@ Requirement.
 
 <summary>
 
-tlp: "clear"or "amber"or "amber-strict"or 2 more
+tlp: "clear" or "amber" or "amber-strict" or 2 more
 
 The CISA defined Traffic Light Protocol (TLP).
 
@@ -140,7 +140,7 @@ formatdate-time
 
 <summary>
 
-PriorityEdit object {labels, priority, requirement, tlp }
+PriorityEdit object { labels, priority, requirement, tlp }
 
 </summary>
 
@@ -166,7 +166,7 @@ Requirement.
 
 <summary>
 
-tlp: "clear"or "amber"or "amber-strict"or 2 more
+tlp: "clear" or "amber" or "amber-strict" or 2 more
 
 The CISA defined Traffic Light Protocol (TLP).
 
@@ -206,7 +206,7 @@ One of the following:
 
 <summary>
 
-PriorityDeleteResponse object {errors, messages, success }
+PriorityDeleteResponse object { errors, messages, success }
 
 </summary>
 
@@ -214,7 +214,7 @@ PriorityDeleteResponse object {errors, messages, success }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -236,7 +236,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -256,7 +256,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -278,7 +278,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 

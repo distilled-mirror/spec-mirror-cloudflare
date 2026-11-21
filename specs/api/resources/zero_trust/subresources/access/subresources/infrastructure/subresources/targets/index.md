@@ -62,7 +62,7 @@ POST/accounts/{account\_id}/infrastructure/targets/batch\_delete
 
 <summary>
 
-TargetListResponse object {id, created\_at, hostname, 3 more }
+TargetListResponse object { id, created\_at, hostname, 3 more }
 
 </summary>
 
@@ -94,7 +94,7 @@ A non-unique field that refers to a target
 
 <summary>
 
-ip: object {ipv4, ipv6 }
+ip: object { ipv4, ipv6 }
 
 The IPv4/IPv6 address that identifies where to reach a target
 
@@ -104,7 +104,7 @@ The IPv4/IPv6 address that identifies where to reach a target
 
 <summary>
 
-ipv4: optional object {ip\_addr, virtual\_network\_id }
+ipv4: optional object { ip\_addr, virtual\_network\_id }
 
 The target’s IPv4 address
 
@@ -132,7 +132,7 @@ formatuuid
 
 <summary>
 
-ipv6: optional object {ip\_addr, virtual\_network\_id }
+ipv6: optional object { ip\_addr, virtual\_network\_id }
 
 The target’s IPv6 address
 
@@ -182,7 +182,7 @@ Tags assigned to the target. Empty when no tags are assigned.
 
 <summary>
 
-TargetGetResponse object {id, created\_at, hostname, 3 more }
+TargetGetResponse object { id, created\_at, hostname, 3 more }
 
 </summary>
 
@@ -214,7 +214,7 @@ A non-unique field that refers to a target
 
 <summary>
 
-ip: object {ipv4, ipv6 }
+ip: object { ipv4, ipv6 }
 
 The IPv4/IPv6 address that identifies where to reach a target
 
@@ -224,7 +224,7 @@ The IPv4/IPv6 address that identifies where to reach a target
 
 <summary>
 
-ipv4: optional object {ip\_addr, virtual\_network\_id }
+ipv4: optional object { ip\_addr, virtual\_network\_id }
 
 The target’s IPv4 address
 
@@ -252,7 +252,7 @@ formatuuid
 
 <summary>
 
-ipv6: optional object {ip\_addr, virtual\_network\_id }
+ipv6: optional object { ip\_addr, virtual\_network\_id }
 
 The target’s IPv6 address
 
@@ -302,7 +302,7 @@ Tags assigned to the target. Empty when no tags are assigned.
 
 <summary>
 
-TargetCreateResponse object {id, created\_at, hostname, 3 more }
+TargetCreateResponse object { id, created\_at, hostname, 3 more }
 
 </summary>
 
@@ -334,7 +334,7 @@ A non-unique field that refers to a target
 
 <summary>
 
-ip: object {ipv4, ipv6 }
+ip: object { ipv4, ipv6 }
 
 The IPv4/IPv6 address that identifies where to reach a target
 
@@ -344,7 +344,7 @@ The IPv4/IPv6 address that identifies where to reach a target
 
 <summary>
 
-ipv4: optional object {ip\_addr, virtual\_network\_id }
+ipv4: optional object { ip\_addr, virtual\_network\_id }
 
 The target’s IPv4 address
 
@@ -372,7 +372,7 @@ formatuuid
 
 <summary>
 
-ipv6: optional object {ip\_addr, virtual\_network\_id }
+ipv6: optional object { ip\_addr, virtual\_network\_id }
 
 The target’s IPv6 address
 
@@ -422,7 +422,7 @@ Tags assigned to the target. Empty when no tags are assigned.
 
 <summary>
 
-TargetUpdateResponse object {id, created\_at, hostname, 3 more }
+TargetUpdateResponse object { id, created\_at, hostname, 3 more }
 
 </summary>
 
@@ -454,7 +454,7 @@ A non-unique field that refers to a target
 
 <summary>
 
-ip: object {ipv4, ipv6 }
+ip: object { ipv4, ipv6 }
 
 The IPv4/IPv6 address that identifies where to reach a target
 
@@ -464,7 +464,7 @@ The IPv4/IPv6 address that identifies where to reach a target
 
 <summary>
 
-ipv4: optional object {ip\_addr, virtual\_network\_id }
+ipv4: optional object { ip\_addr, virtual\_network\_id }
 
 The target’s IPv4 address
 
@@ -492,7 +492,7 @@ formatuuid
 
 <summary>
 
-ipv6: optional object {ip\_addr, virtual\_network\_id }
+ipv6: optional object { ip\_addr, virtual\_network\_id }
 
 The target’s IPv6 address
 
@@ -542,7 +542,7 @@ Tags assigned to the target. Empty when no tags are assigned.
 
 <summary>
 
-TargetBulkUpdateResponse object {id, created\_at, hostname, 3 more }
+TargetBulkUpdateResponse object { id, created\_at, hostname, 3 more }
 
 </summary>
 
@@ -574,7 +574,7 @@ A non-unique field that refers to a target
 
 <summary>
 
-ip: object {ipv4, ipv6 }
+ip: object { ipv4, ipv6 }
 
 The IPv4/IPv6 address that identifies where to reach a target
 
@@ -584,7 +584,7 @@ The IPv4/IPv6 address that identifies where to reach a target
 
 <summary>
 
-ipv4: optional object {ip\_addr, virtual\_network\_id }
+ipv4: optional object { ip\_addr, virtual\_network\_id }
 
 The target’s IPv4 address
 
@@ -612,7 +612,7 @@ formatuuid
 
 <summary>
 
-ipv6: optional object {ip\_addr, virtual\_network\_id }
+ipv6: optional object { ip\_addr, virtual\_network\_id }
 
 The target’s IPv6 address
 

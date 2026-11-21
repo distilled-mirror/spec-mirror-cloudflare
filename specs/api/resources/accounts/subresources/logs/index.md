@@ -38,7 +38,7 @@ GET/accounts/{account\_id}/logs/audit/product\_categories
 
 <summary>
 
-AuditListResponse object {id, account, action, 4 more }
+AuditListResponse object { id, account, action, 4 more }
 
 </summary>
 
@@ -54,7 +54,7 @@ maxLength32
 
 <summary>
 
-account: optional object {id, name }
+account: optional object { id, name }
 
 Contains account related information.
 
@@ -80,7 +80,7 @@ A string that identifies the account name.
 
 <summary>
 
-action: optional object {description, result, time, type }
+action: optional object { description, result, time, type }
 
 Provides information about the action performed.
 
@@ -120,7 +120,7 @@ A short string that describes the action that was performed.
 
 <summary>
 
-actor: optional object {id, context, email, 4 more }
+actor: optional object { id, context, email, 4 more }
 
 Provides details about the actor who performed the action.
 
@@ -136,7 +136,7 @@ The ID of the actor who performed the action. If a user performed the action, th
 
 <summary>
 
-context: optional "api"or "api\_key"or "api\_token"or 3 more
+context: optional "api" or "api\_key" or "api\_token" or 3 more
 
 The context in which the action was initiated.
 
@@ -209,7 +209,7 @@ The API token name when the actor context is an api\_token or oauth.
 
 <summary>
 
-type: optional "account"or "cloudflare\_admin"or "delegated\_service"or 2 more
+type: optional "account" or "cloudflare\_admin" or "delegated\_service" or 2 more
 
 The type of actor.
 
@@ -249,7 +249,7 @@ One of the following:
 
 <summary>
 
-raw: optional object {cf\_ray\_id, method, status\_code, 2 more }
+raw: optional object { cf\_ray\_id, method, status\_code, 2 more }
 
 Provides raw information about the request and response.
 
@@ -293,7 +293,7 @@ The client’s user agent string sent with the request.
 
 <summary>
 
-resource: optional object {id, product, request, 3 more }
+resource: optional object { id, product, request, 3 more }
 
 Provides details about the affected resource.
 
@@ -339,7 +339,7 @@ The type of the resource.
 
 <summary>
 
-zone: optional object {id, name }
+zone: optional object { id, name }
 
 Provides details about the zone affected by the action.
 
@@ -369,7 +369,7 @@ A string that identifies the zone name.
 
 <summary>
 
-AuditHistoryResponse = array of object {id, account, action, 4 more }
+AuditHistoryResponse = array of object { id, account, action, 4 more }
 
 </summary>
 
@@ -385,7 +385,7 @@ maxLength32
 
 <summary>
 
-account: optional object {id, name }
+account: optional object { id, name }
 
 Contains account related information.
 
@@ -411,7 +411,7 @@ A string that identifies the account name.
 
 <summary>
 
-action: optional object {description, result, time, type }
+action: optional object { description, result, time, type }
 
 Provides information about the action performed.
 
@@ -451,7 +451,7 @@ A short string that describes the action that was performed.
 
 <summary>
 
-actor: optional object {id, context, email, 4 more }
+actor: optional object { id, context, email, 4 more }
 
 Provides details about the actor who performed the action.
 
@@ -467,7 +467,7 @@ The ID of the actor who performed the action. If a user performed the action, th
 
 <summary>
 
-context: optional "api"or "api\_key"or "api\_token"or 3 more
+context: optional "api" or "api\_key" or "api\_token" or 3 more
 
 The context in which the action was initiated.
 
@@ -540,7 +540,7 @@ The API token name when the actor context is an api\_token or oauth.
 
 <summary>
 
-type: optional "account"or "cloudflare\_admin"or "delegated\_service"or 2 more
+type: optional "account" or "cloudflare\_admin" or "delegated\_service" or 2 more
 
 The type of actor.
 
@@ -580,7 +580,7 @@ One of the following:
 
 <summary>
 
-raw: optional object {cf\_ray\_id, method, status\_code, 2 more }
+raw: optional object { cf\_ray\_id, method, status\_code, 2 more }
 
 Provides raw information about the request and response.
 
@@ -624,7 +624,7 @@ The client’s user agent string sent with the request.
 
 <summary>
 
-resource: optional object {id, product, request, 3 more }
+resource: optional object { id, product, request, 3 more }
 
 Provides details about the affected resource.
 
@@ -670,7 +670,7 @@ The type of the resource.
 
 <summary>
 
-zone: optional object {id, name }
+zone: optional object { id, name }
 
 Provides details about the zone affected by the action.
 
@@ -700,7 +700,7 @@ A string that identifies the zone name.
 
 <summary>
 
-AuditProductCategoriesResponse object {label, products, value }
+AuditProductCategoriesResponse object { label, products, value }
 
 A predefined product category and the resource products it expands to.
 
@@ -716,7 +716,7 @@ A human-readable label for the product category.
 
 <summary>
 
-products: optional array of object {label, value }
+products: optional array of object { label, value }
 
 The resource products that the product category expands to.
 

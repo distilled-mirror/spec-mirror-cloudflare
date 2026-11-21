@@ -36,7 +36,7 @@ DELETE/zones/{zone\_id}/speed\_api/schedule/{url}
 
 <summary>
 
-Schedule object {frequency, region, url }
+Schedule object { frequency, region, url }
 
 The test schedule.
 
@@ -46,7 +46,7 @@ The test schedule.
 
 <summary>
 
-frequency: optional "DAILY"or "WEEKLY"
+frequency: optional "DAILY" or "WEEKLY"
 
 The frequency of the test.
 
@@ -70,7 +70,7 @@ One of the following:
 
 <summary>
 
-region: optional "asia-east1"or "asia-northeast1"or "asia-northeast2"or 18 more
+region: optional "asia-east1" or "asia-northeast1" or "asia-northeast2" or 18 more
 
 A test region.
 
@@ -180,7 +180,7 @@ A URL.
 
 <summary>
 
-ScheduleCreateResponse object {schedule, test }
+ScheduleCreateResponse object { schedule, test }
 
 </summary>
 
@@ -202,7 +202,7 @@ test: optional <a href="https://developers.cloudflare.com/api/resources/speed#(r
 
 <summary>
 
-ScheduleDeleteResponse object {count }
+ScheduleDeleteResponse object { count }
 
 </summary>
 

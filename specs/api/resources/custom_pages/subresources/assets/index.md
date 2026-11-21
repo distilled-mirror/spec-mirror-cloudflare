@@ -44,7 +44,7 @@ DELETE/{accounts\_or\_zones}/{account\_or\_zone\_id}/custom\_pages/assets/{asset
 
 <summary>
 
-AssetListResponse object {description, last\_updated, name, 2 more }
+AssetListResponse object { description, last\_updated, name, 2 more }
 
 </summary>
 
@@ -90,7 +90,7 @@ formaturi
 
 <summary>
 
-AssetGetResponse object {description, last\_updated, name, 2 more }
+AssetGetResponse object { description, last\_updated, name, 2 more }
 
 </summary>
 
@@ -136,7 +136,7 @@ formaturi
 
 <summary>
 
-AssetCreateResponse object {description, last\_updated, name, 2 more }
+AssetCreateResponse object { description, last\_updated, name, 2 more }
 
 </summary>
 
@@ -182,7 +182,7 @@ formaturi
 
 <summary>
 
-AssetUpdateResponse object {description, last\_updated, name, 2 more }
+AssetUpdateResponse object { description, last\_updated, name, 2 more }
 
 </summary>
 

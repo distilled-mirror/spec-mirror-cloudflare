@@ -38,7 +38,7 @@ DELETE/accounts/{account\_id}/r2/buckets/{bucket\_name}/cors
 
 <summary>
 
-CORSGetResponse object {rules }
+CORSGetResponse object { rules }
 
 </summary>
 
@@ -46,7 +46,7 @@ CORSGetResponse object {rules }
 
 <summary>
 
-rules: optional array of object {allowed, id, exposeHeaders, maxAgeSeconds }
+rules: optional array of object { allowed, id, exposeHeaders, maxAgeSeconds }
 
 </summary>
 
@@ -54,7 +54,7 @@ rules: optional array of object {allowed, id, exposeHeaders, maxAgeSeconds }
 
 <summary>
 
-allowed: object {methods, origins, headers }
+allowed: object { methods, origins, headers }
 
 Object specifying allowed origins, methods and headers for this CORS rule.
 
@@ -64,7 +64,7 @@ Object specifying allowed origins, methods and headers for this CORS rule.
 
 <summary>
 
-methods: array of "GET"or "PUT"or "POST"or 2 more
+methods: array of "GET" or "PUT" or "POST" or 2 more
 
 Specifies the value for the Access-Control-Allow-Methods header R2 sets when requesting objects in a bucket from a browser.
 

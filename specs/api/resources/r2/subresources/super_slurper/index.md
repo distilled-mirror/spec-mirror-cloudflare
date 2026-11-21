@@ -58,7 +58,7 @@ PUT/accounts/{account\_id}/slurper/jobs/{job\_id}/resume
 
 <summary>
 
-JobListResponse object {id, createdAt, finishedAt, 4 more }
+JobListResponse object { id, createdAt, finishedAt, 4 more }
 
 </summary>
 
@@ -82,7 +82,7 @@ overwrite: optional boolean
 
 <summary>
 
-source: optional object {bucket, endpoint, keys, 2 more } or object {bucket, keys, pathPrefix, vendor } or object {bucket, jurisdiction, keys, 2 more }
+source: optional object { bucket, endpoint, keys, 2 more } or object { bucket, keys, pathPrefix, vendor } or object { bucket, jurisdiction, keys, 2 more }
 
 </summary>
 
@@ -92,7 +92,7 @@ One of the following:
 
 <summary>
 
-S3SourceResponseSchema object {bucket, endpoint, keys, 2 more }
+S3SourceResponseSchema object { bucket, endpoint, keys, 2 more }
 
 </summary>
 
@@ -126,7 +126,7 @@ vendor: optional "s3"
 
 <summary>
 
-GcsSourceResponseSchema object {bucket, keys, pathPrefix, vendor }
+GcsSourceResponseSchema object { bucket, keys, pathPrefix, vendor }
 
 </summary>
 
@@ -154,7 +154,7 @@ vendor: optional "gcs"
 
 <summary>
 
-R2SourceResponseSchema object {bucket, jurisdiction, keys, 2 more }
+R2SourceResponseSchema object { bucket, jurisdiction, keys, 2 more }
 
 </summary>
 
@@ -166,7 +166,7 @@ bucket: optional string
 
 <summary>
 
-jurisdiction: optional "default"or "eu"or "us"or "fedramp"
+jurisdiction: optional "default" or "eu" or "us" or "fedramp"
 
 </summary>
 
@@ -216,7 +216,7 @@ vendor: optional <a href="https://developers.cloudflare.com/api/resources/r2#(re
 
 <summary>
 
-status: optional "running"or "paused"or "aborted"or "completed"
+status: optional "running" or "paused" or "aborted" or "completed"
 
 </summary>
 
@@ -246,7 +246,7 @@ One of the following:
 
 <summary>
 
-target: optional object {bucket, jurisdiction, vendor }
+target: optional object { bucket, jurisdiction, vendor }
 
 </summary>
 
@@ -258,7 +258,7 @@ bucket: optional string
 
 <summary>
 
-jurisdiction: optional "default"or "eu"or "us"or "fedramp"
+jurisdiction: optional "default" or "eu" or "us" or "fedramp"
 
 </summary>
 
@@ -300,7 +300,7 @@ vendor: optional <a href="https://developers.cloudflare.com/api/resources/r2#(re
 
 <summary>
 
-JobGetResponse object {id, createdAt, finishedAt, 4 more }
+JobGetResponse object { id, createdAt, finishedAt, 4 more }
 
 </summary>
 
@@ -324,7 +324,7 @@ overwrite: optional boolean
 
 <summary>
 
-source: optional object {bucket, endpoint, keys, 2 more } or object {bucket, keys, pathPrefix, vendor } or object {bucket, jurisdiction, keys, 2 more }
+source: optional object { bucket, endpoint, keys, 2 more } or object { bucket, keys, pathPrefix, vendor } or object { bucket, jurisdiction, keys, 2 more }
 
 </summary>
 
@@ -334,7 +334,7 @@ One of the following:
 
 <summary>
 
-S3SourceResponseSchema object {bucket, endpoint, keys, 2 more }
+S3SourceResponseSchema object { bucket, endpoint, keys, 2 more }
 
 </summary>
 
@@ -368,7 +368,7 @@ vendor: optional "s3"
 
 <summary>
 
-GcsSourceResponseSchema object {bucket, keys, pathPrefix, vendor }
+GcsSourceResponseSchema object { bucket, keys, pathPrefix, vendor }
 
 </summary>
 
@@ -396,7 +396,7 @@ vendor: optional "gcs"
 
 <summary>
 
-R2SourceResponseSchema object {bucket, jurisdiction, keys, 2 more }
+R2SourceResponseSchema object { bucket, jurisdiction, keys, 2 more }
 
 </summary>
 
@@ -408,7 +408,7 @@ bucket: optional string
 
 <summary>
 
-jurisdiction: optional "default"or "eu"or "us"or "fedramp"
+jurisdiction: optional "default" or "eu" or "us" or "fedramp"
 
 </summary>
 
@@ -458,7 +458,7 @@ vendor: optional <a href="https://developers.cloudflare.com/api/resources/r2#(re
 
 <summary>
 
-status: optional "running"or "paused"or "aborted"or "completed"
+status: optional "running" or "paused" or "aborted" or "completed"
 
 </summary>
 
@@ -488,7 +488,7 @@ One of the following:
 
 <summary>
 
-target: optional object {bucket, jurisdiction, vendor }
+target: optional object { bucket, jurisdiction, vendor }
 
 </summary>
 
@@ -500,7 +500,7 @@ bucket: optional string
 
 <summary>
 
-jurisdiction: optional "default"or "eu"or "us"or "fedramp"
+jurisdiction: optional "default" or "eu" or "us" or "fedramp"
 
 </summary>
 
@@ -542,7 +542,7 @@ vendor: optional <a href="https://developers.cloudflare.com/api/resources/r2#(re
 
 <summary>
 
-JobCreateResponse object {id }
+JobCreateResponse object { id }
 
 </summary>
 
@@ -570,7 +570,7 @@ JobPauseResponse = string
 
 <summary>
 
-JobProgressResponse object {id, createdAt, failedObjects, 4 more }
+JobProgressResponse object { id, createdAt, failedObjects, 4 more }
 
 </summary>
 
@@ -598,7 +598,7 @@ skippedObjects: optional number
 
 <summary>
 
-status: optional "running"or "paused"or "aborted"or "completed"
+status: optional "running" or "paused" or "aborted" or "completed"
 
 </summary>
 
@@ -648,7 +648,7 @@ GET/accounts/{account\_id}/slurper/jobs/{job\_id}/logs
 
 <summary>
 
-LogListResponse object {createdAt, job, logType, 2 more }
+LogListResponse object { createdAt, job, logType, 2 more }
 
 </summary>
 
@@ -664,7 +664,7 @@ job: optional string
 
 <summary>
 
-logType: optional "migrationStart"or "migrationComplete"or "migrationAbort"or 12 more
+logType: optional "migrationStart" or "migrationComplete" or "migrationAbort" or 12 more
 
 </summary>
 
@@ -762,7 +762,7 @@ PUT/accounts/{account\_id}/slurper/target/connectivity-precheck
 
 <summary>
 
-ConnectivityPrecheckSourceResponse object {connectivityStatus }
+ConnectivityPrecheckSourceResponse object { connectivityStatus }
 
 </summary>
 
@@ -770,7 +770,7 @@ ConnectivityPrecheckSourceResponse object {connectivityStatus }
 
 <summary>
 
-connectivityStatus: optional "success"or "error"
+connectivityStatus: optional "success" or "error"
 
 </summary>
 
@@ -796,7 +796,7 @@ One of the following:
 
 <summary>
 
-ConnectivityPrecheckTargetResponse object {connectivityStatus }
+ConnectivityPrecheckTargetResponse object { connectivityStatus }
 
 </summary>
 
@@ -804,7 +804,7 @@ ConnectivityPrecheckTargetResponse object {connectivityStatus }
 
 <summary>
 
-connectivityStatus: optional "success"or "error"
+connectivityStatus: optional "success" or "error"
 
 </summary>
 

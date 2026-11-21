@@ -34,7 +34,7 @@ DELETE/zones/{zone\_id}/url\_normalization
 
 <summary>
 
-URLNormalizationGetResponse = object {scope, type } or object {scope, type } or object {scope, type } or 2 more
+URLNormalizationGetResponse = object { scope, type } or object { scope, type } or object { scope, type } or 2 more
 
 A result.
 
@@ -46,7 +46,7 @@ One of the following:
 
 <summary>
 
-object {scope, type }
+object { scope, type }
 
 </summary>
 
@@ -54,7 +54,7 @@ object {scope, type }
 
 <summary>
 
-scope: optional "incoming"or "both"or "none"
+scope: optional "incoming" or "both" or "none"
 
 The scope of the URL normalization.
 
@@ -82,7 +82,7 @@ One of the following:
 
 <summary>
 
-type: optional "cloudflare"or "rfc3986"
+type: optional "cloudflare" or "rfc3986"
 
 The type of URL normalization performed by Cloudflare.
 
@@ -110,7 +110,7 @@ One of the following:
 
 <summary>
 
-object {scope, type }
+object { scope, type }
 
 </summary>
 
@@ -118,7 +118,7 @@ object {scope, type }
 
 <summary>
 
-scope: optional "incoming"or "both"or "none"
+scope: optional "incoming" or "both" or "none"
 
 The scope of the URL normalization.
 
@@ -146,7 +146,7 @@ One of the following:
 
 <summary>
 
-type: optional "cloudflare"or "rfc3986"
+type: optional "cloudflare" or "rfc3986"
 
 The type of URL normalization performed by Cloudflare.
 
@@ -174,7 +174,7 @@ One of the following:
 
 <summary>
 
-object {scope, type }
+object { scope, type }
 
 </summary>
 
@@ -182,7 +182,7 @@ object {scope, type }
 
 <summary>
 
-scope: optional "incoming"or "both"or "none"
+scope: optional "incoming" or "both" or "none"
 
 The scope of the URL normalization.
 
@@ -210,7 +210,7 @@ One of the following:
 
 <summary>
 
-type: optional "cloudflare"or "rfc3986"
+type: optional "cloudflare" or "rfc3986"
 
 The type of URL normalization performed by Cloudflare.
 
@@ -238,7 +238,7 @@ One of the following:
 
 <summary>
 
-object {scope, type }
+object { scope, type }
 
 </summary>
 
@@ -246,7 +246,7 @@ object {scope, type }
 
 <summary>
 
-scope: optional "incoming"or "both"or "none"
+scope: optional "incoming" or "both" or "none"
 
 The scope of the URL normalization.
 
@@ -274,7 +274,7 @@ One of the following:
 
 <summary>
 
-type: optional "cloudflare"or "rfc3986"
+type: optional "cloudflare" or "rfc3986"
 
 The type of URL normalization performed by Cloudflare.
 
@@ -302,7 +302,7 @@ One of the following:
 
 <summary>
 
-object {scope, type }
+object { scope, type }
 
 </summary>
 
@@ -310,7 +310,7 @@ object {scope, type }
 
 <summary>
 
-scope: optional "incoming"or "both"or "none"
+scope: optional "incoming" or "both" or "none"
 
 The scope of the URL normalization.
 
@@ -338,7 +338,7 @@ One of the following:
 
 <summary>
 
-type: optional "cloudflare"or "rfc3986"
+type: optional "cloudflare" or "rfc3986"
 
 The type of URL normalization performed by Cloudflare.
 
@@ -370,7 +370,7 @@ One of the following:
 
 <summary>
 
-URLNormalizationUpdateResponse = object {scope, type } or object {scope, type } or object {scope, type } or 2 more
+URLNormalizationUpdateResponse = object { scope, type } or object { scope, type } or object { scope, type } or 2 more
 
 A result.
 
@@ -382,7 +382,7 @@ One of the following:
 
 <summary>
 
-object {scope, type }
+object { scope, type }
 
 </summary>
 
@@ -390,7 +390,7 @@ object {scope, type }
 
 <summary>
 
-scope: optional "incoming"or "both"or "none"
+scope: optional "incoming" or "both" or "none"
 
 The scope of the URL normalization.
 
@@ -418,7 +418,7 @@ One of the following:
 
 <summary>
 
-type: optional "cloudflare"or "rfc3986"
+type: optional "cloudflare" or "rfc3986"
 
 The type of URL normalization performed by Cloudflare.
 
@@ -446,7 +446,7 @@ One of the following:
 
 <summary>
 
-object {scope, type }
+object { scope, type }
 
 </summary>
 
@@ -454,7 +454,7 @@ object {scope, type }
 
 <summary>
 
-scope: optional "incoming"or "both"or "none"
+scope: optional "incoming" or "both" or "none"
 
 The scope of the URL normalization.
 
@@ -482,7 +482,7 @@ One of the following:
 
 <summary>
 
-type: optional "cloudflare"or "rfc3986"
+type: optional "cloudflare" or "rfc3986"
 
 The type of URL normalization performed by Cloudflare.
 
@@ -510,7 +510,7 @@ One of the following:
 
 <summary>
 
-object {scope, type }
+object { scope, type }
 
 </summary>
 
@@ -518,7 +518,7 @@ object {scope, type }
 
 <summary>
 
-scope: optional "incoming"or "both"or "none"
+scope: optional "incoming" or "both" or "none"
 
 The scope of the URL normalization.
 
@@ -546,7 +546,7 @@ One of the following:
 
 <summary>
 
-type: optional "cloudflare"or "rfc3986"
+type: optional "cloudflare" or "rfc3986"
 
 The type of URL normalization performed by Cloudflare.
 
@@ -574,7 +574,7 @@ One of the following:
 
 <summary>
 
-object {scope, type }
+object { scope, type }
 
 </summary>
 
@@ -582,7 +582,7 @@ object {scope, type }
 
 <summary>
 
-scope: optional "incoming"or "both"or "none"
+scope: optional "incoming" or "both" or "none"
 
 The scope of the URL normalization.
 
@@ -610,7 +610,7 @@ One of the following:
 
 <summary>
 
-type: optional "cloudflare"or "rfc3986"
+type: optional "cloudflare" or "rfc3986"
 
 The type of URL normalization performed by Cloudflare.
 
@@ -638,7 +638,7 @@ One of the following:
 
 <summary>
 
-object {scope, type }
+object { scope, type }
 
 </summary>
 
@@ -646,7 +646,7 @@ object {scope, type }
 
 <summary>
 
-scope: optional "incoming"or "both"or "none"
+scope: optional "incoming" or "both" or "none"
 
 The scope of the URL normalization.
 
@@ -674,7 +674,7 @@ One of the following:
 
 <summary>
 
-type: optional "cloudflare"or "rfc3986"
+type: optional "cloudflare" or "rfc3986"
 
 The type of URL normalization performed by Cloudflare.
 

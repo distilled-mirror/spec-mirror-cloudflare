@@ -36,7 +36,7 @@ DELETE/zones/{zone\_id}/settings/ohttp-gateway
 
 <summary>
 
-OhttpGatewayGetResponse = "on"or "off"
+OhttpGatewayGetResponse = "on" or "off"
 
 </summary>
 
@@ -58,7 +58,7 @@ One of the following:
 
 <summary>
 
-OhttpGatewayCreateResponse = "on"or "off"
+OhttpGatewayCreateResponse = "on" or "off"
 
 </summary>
 
@@ -80,7 +80,7 @@ One of the following:
 
 <summary>
 
-OhttpGatewayDeleteResponse = "on"or "off"
+OhttpGatewayDeleteResponse = "on" or "off"
 
 </summary>
 

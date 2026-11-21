@@ -116,7 +116,7 @@ Filter devices by name or email.
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -138,7 +138,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -158,7 +158,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -180,7 +180,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -206,7 +206,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {devices }
+result: optional object { devices }
 
 </summary>
 
@@ -214,7 +214,7 @@ result: optional object {devices }
 
 <summary>
 
-devices: optional array of object {deviceId, deviceName, eligible, 7 more }
+devices: optional array of object { deviceId, deviceName, eligible, 7 more }
 
 List of eligible devices
 
@@ -290,7 +290,7 @@ WARP client version.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

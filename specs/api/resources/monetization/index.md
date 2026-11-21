@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 <summary>
 
-MonetizationAccountEligibilityCheckInput object {acceptedTermsOfService }
+MonetizationAccountEligibilityCheckInput object { acceptedTermsOfService }
 
 </summary>
 
@@ -40,7 +40,7 @@ Confirms acceptance of the Monetization Gateway terms of service.
 
 <summary>
 
-MonetizationAccountEligibilityCheckResponse object {errors, messages, result, success }
+MonetizationAccountEligibilityCheckResponse object { errors, messages, result, success }
 
 </summary>
 
@@ -48,7 +48,7 @@ MonetizationAccountEligibilityCheckResponse object {errors, messages, result, su
 
 <summary>
 
-errors: array of object {code, message }
+errors: array of object { code, message }
 
 </summary>
 
@@ -68,7 +68,7 @@ message: optional string
 
 <summary>
 
-messages: array of object {code, message }
+messages: array of object { code, message }
 
 </summary>
 
@@ -100,7 +100,7 @@ success: true
 
 <summary>
 
-MonetizationEligibilityResponse object {errors, messages, result, success }
+MonetizationEligibilityResponse object { errors, messages, result, success }
 
 </summary>
 
@@ -108,7 +108,7 @@ MonetizationEligibilityResponse object {errors, messages, result, success }
 
 <summary>
 
-errors: array of object {code, message }
+errors: array of object { code, message }
 
 </summary>
 
@@ -128,7 +128,7 @@ message: optional string
 
 <summary>
 
-messages: array of object {code, message }
+messages: array of object { code, message }
 
 </summary>
 
@@ -160,7 +160,7 @@ success: true
 
 <summary>
 
-MonetizationEligibilityResult object {status, reasons }
+MonetizationEligibilityResult object { status, reasons }
 
 </summary>
 
@@ -168,7 +168,7 @@ MonetizationEligibilityResult object {status, reasons }
 
 <summary>
 
-status: "pending"or "approved"or "rejected"
+status: "pending" or "approved" or "rejected"
 
 Current monetization eligibility decision.
 
@@ -206,7 +206,7 @@ Public, human-readable reasons for a rejected decision, when available.
 
 <summary>
 
-MonetizationZoneEligibilityCheckResponse object {errors, messages, result, success }
+MonetizationZoneEligibilityCheckResponse object { errors, messages, result, success }
 
 </summary>
 
@@ -214,27 +214,7 @@ MonetizationZoneEligibilityCheckResponse object {errors, messages, result, succe
 
 <summary>
 
-errors: array of object {code, message }
-
-</summary>
-
-code: optional number
-
-<a href="#">Link to this property</a>
-
-message: optional string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-messages: array of object {code, message }
+errors: array of object { code, message }
 
 </summary>
 
@@ -254,7 +234,27 @@ message: optional string
 
 <summary>
 
-result: object {enabled, status, reasons }
+messages: array of object { code, message }
+
+</summary>
+
+code: optional number
+
+<a href="#">Link to this property</a>
+
+message: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+result: object { enabled, status, reasons }
 
 </summary>
 
@@ -268,7 +268,7 @@ Whether this check successfully enabled the zone entitlement. Only approved deci
 
 <summary>
 
-status: "pending"or "approved"or "rejected"
+status: "pending" or "approved" or "rejected"
 
 Current monetization eligibility decision.
 
@@ -402,7 +402,7 @@ maxLength32
 
 <summary>
 
-MonetizationRuleCollection object {rules }
+MonetizationRuleCollection object { rules }
 
 The zone’s payment rules. Mirrors the shape of the ruleset submitted to the deploy endpoint, so the response can be read back as the desired state.
 
@@ -488,7 +488,7 @@ One of the following:
 
 <summary>
 
-MonetizationRuleInputFixedPrice object {address, expression, price, 4 more }
+MonetizationRuleInputFixedPrice object { address, expression, price, 4 more }
 
 Payment rule with a fixed price set at configuration time.
 
@@ -516,7 +516,7 @@ Price in the smallest indivisible unit of the configured payment token, encoded 
 
 <summary>
 
-scheme: "exact"or "upto"
+scheme: "exact" or "upto"
 
 X402 payment scheme. “exact” requires the specified payment amount; “upto” permits a payment up to the specified amount. Both fixed-price schemes require the price field.
 
@@ -562,7 +562,7 @@ enabled: optional boolean
 
 <summary>
 
-MonetizationRuleInputOriginControlled object {address, expression, scheme, 3 more }
+MonetizationRuleInputOriginControlled object { address, expression, scheme, 3 more }
 
 Payment rule whose price the origin server sets dynamically. The rule carries no price and the price field must be omitted — any provided value, including “0”, is rejected because it would not be enforced.
 
@@ -616,7 +616,7 @@ enabled: optional boolean
 
 <summary>
 
-MonetizationRuleInputFixedPrice object {address, expression, price, 4 more }
+MonetizationRuleInputFixedPrice object { address, expression, price, 4 more }
 
 Payment rule with a fixed price set at configuration time.
 
@@ -644,7 +644,7 @@ Price in the smallest indivisible unit of the configured payment token, encoded 
 
 <summary>
 
-scheme: "exact"or "upto"
+scheme: "exact" or "upto"
 
 X402 payment scheme. “exact” requires the specified payment amount; “upto” permits a payment up to the specified amount. Both fixed-price schemes require the price field.
 
@@ -690,7 +690,7 @@ enabled: optional boolean
 
 <summary>
 
-MonetizationRuleInputOriginControlled object {address, expression, scheme, 3 more }
+MonetizationRuleInputOriginControlled object { address, expression, scheme, 3 more }
 
 Payment rule whose price the origin server sets dynamically. The rule carries no price and the price field must be omitted — any provided value, including “0”, is rejected because it would not be enforced.
 
@@ -740,7 +740,7 @@ enabled: optional boolean
 
 <summary>
 
-MonetizationRulePatch object {address, description, enabled, 3 more }
+MonetizationRulePatch object { address, description, enabled, 3 more }
 
 Partial update to a single payment rule. Only the fields present are modified; omitted fields keep their existing values.
 
@@ -778,7 +778,7 @@ Price in the smallest indivisible unit of the configured payment token, encoded 
 
 <summary>
 
-scheme: optional "exact"or "upto"or "origin\_controlled"
+scheme: optional "exact" or "upto" or "origin\_controlled"
 
 X402 payment scheme. “exact” requires the specified payment amount; “upto” permits a payment up to the specified amount; “origin\_controlled” lets the origin server set pricing dynamically, in which case the rule carries no price and the price field must be omitted.
 
@@ -810,7 +810,7 @@ One of the following:
 
 <summary>
 
-MonetizationRulesetInput object {rules }
+MonetizationRulesetInput object { rules }
 
 </summary>
 
@@ -830,7 +830,7 @@ One of the following:
 
 <summary>
 
-MonetizationRuleInputFixedPrice object {address, expression, price, 4 more }
+MonetizationRuleInputFixedPrice object { address, expression, price, 4 more }
 
 Payment rule with a fixed price set at configuration time.
 
@@ -858,7 +858,7 @@ Price in the smallest indivisible unit of the configured payment token, encoded 
 
 <summary>
 
-scheme: "exact"or "upto"
+scheme: "exact" or "upto"
 
 X402 payment scheme. “exact” requires the specified payment amount; “upto” permits a payment up to the specified amount. Both fixed-price schemes require the price field.
 
@@ -904,7 +904,7 @@ enabled: optional boolean
 
 <summary>
 
-MonetizationRuleInputOriginControlled object {address, expression, scheme, 3 more }
+MonetizationRuleInputOriginControlled object { address, expression, scheme, 3 more }
 
 Payment rule whose price the origin server sets dynamically. The rule carries no price and the price field must be omitted — any provided value, including “0”, is rejected because it would not be enforced.
 

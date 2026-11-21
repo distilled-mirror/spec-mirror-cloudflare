@@ -46,7 +46,7 @@ GET/radar/bgp/routes/realtime
 
 <summary>
 
-RouteMoasResponse object {meta, moas }
+RouteMoasResponse object { meta, moas }
 
 </summary>
 
@@ -54,7 +54,7 @@ RouteMoasResponse object {meta, moas }
 
 <summary>
 
-meta: object {data\_time, query\_time, total\_peers }
+meta: object { data\_time, query\_time, total\_peers }
 
 </summary>
 
@@ -78,7 +78,7 @@ total\_peers: number
 
 <summary>
 
-moas: array of object {origins, prefix }
+moas: array of object { origins, prefix }
 
 </summary>
 
@@ -86,7 +86,7 @@ moas: array of object {origins, prefix }
 
 <summary>
 
-origins: array of object {origin, peer\_count, rpki\_validation }
+origins: array of object { origin, peer\_count, rpki\_validation }
 
 </summary>
 
@@ -122,7 +122,7 @@ prefix: string
 
 <summary>
 
-RoutePfx2asResponse object {meta, prefix\_origins }
+RoutePfx2asResponse object { meta, prefix\_origins }
 
 </summary>
 
@@ -130,7 +130,7 @@ RoutePfx2asResponse object {meta, prefix\_origins }
 
 <summary>
 
-meta: object {data\_time, query\_time, total\_peers }
+meta: object { data\_time, query\_time, total\_peers }
 
 </summary>
 
@@ -154,7 +154,7 @@ total\_peers: number
 
 <summary>
 
-prefix\_origins: array of object {origin, peer\_count, prefix, rpki\_validation }
+prefix\_origins: array of object { origin, peer\_count, prefix, rpki\_validation }
 
 </summary>
 
@@ -186,7 +186,7 @@ rpki\_validation: string
 
 <summary>
 
-RouteStatsResponse object {meta, stats }
+RouteStatsResponse object { meta, stats }
 
 </summary>
 
@@ -194,7 +194,7 @@ RouteStatsResponse object {meta, stats }
 
 <summary>
 
-meta: object {data\_time, query\_time, total\_peers }
+meta: object { data\_time, query\_time, total\_peers }
 
 </summary>
 
@@ -218,7 +218,7 @@ total\_peers: number
 
 <summary>
 
-stats: object {distinct\_origins, distinct\_origins\_ipv4, distinct\_origins\_ipv6, 15 more }
+stats: object { distinct\_origins, distinct\_origins\_ipv4, distinct\_origins\_ipv6, 15 more }
 
 </summary>
 
@@ -306,7 +306,7 @@ routes\_valid\_ipv6: number
 
 <summary>
 
-RouteAsesResponse object {asns, meta }
+RouteAsesResponse object { asns, meta }
 
 </summary>
 
@@ -314,7 +314,7 @@ RouteAsesResponse object {asns, meta }
 
 <summary>
 
-asns: array of object {asn, coneSize, country, 7 more }
+asns: array of object { asn, coneSize, country, 7 more }
 
 </summary>
 
@@ -384,7 +384,7 @@ Number of RPKI valid prefixes originated by the AS.
 
 <summary>
 
-meta: object {dataTime, queryTime, totalPeers }
+meta: object { dataTime, queryTime, totalPeers }
 
 </summary>
 
@@ -418,7 +418,7 @@ Total number of route collector peers used to generate this data.
 
 <summary>
 
-RouteRealtimeResponse object {meta, routes }
+RouteRealtimeResponse object { meta, routes }
 
 </summary>
 
@@ -426,7 +426,7 @@ RouteRealtimeResponse object {meta, routes }
 
 <summary>
 
-meta: object {asn\_info, collectors, data\_time, 2 more }
+meta: object { asn\_info, collectors, data\_time, 2 more }
 
 </summary>
 
@@ -434,7 +434,7 @@ meta: object {asn\_info, collectors, data\_time, 2 more }
 
 <summary>
 
-asn\_info: array of object {as\_name, asn, country\_code, 2 more }
+asn\_info: array of object { as\_name, asn, country\_code, 2 more }
 
 </summary>
 
@@ -476,7 +476,7 @@ Organization name.
 
 <summary>
 
-collectors: array of object {collector, latest\_realtime\_ts, latest\_rib\_ts, 4 more }
+collectors: array of object { collector, latest\_realtime\_ts, latest\_rib\_ts, 4 more }
 
 </summary>
 
@@ -536,7 +536,7 @@ The most recent data timestamp for from the real-time sources.
 
 <summary>
 
-prefix\_origins: array of object {origin, prefix, rpki\_validation, 3 more }
+prefix\_origins: array of object { origin, prefix, rpki\_validation, 3 more }
 
 </summary>
 
@@ -594,7 +594,7 @@ The timestamp of this query.
 
 <summary>
 
-routes: array of object {as\_path, collector, communities, 2 more }
+routes: array of object { as\_path, collector, communities, 2 more }
 
 </summary>
 
@@ -648,7 +648,7 @@ GET/radar/bgp/routes/upstreams/{asn}/timeseries
 
 <summary>
 
-UpstreamTimeseriesResponse object {meta, serie\_0 }
+UpstreamTimeseriesResponse object { meta, serie\_0 }
 
 </summary>
 
@@ -656,7 +656,7 @@ UpstreamTimeseriesResponse object {meta, serie\_0 }
 
 <summary>
 
-meta: object {dataTime, effectiveCollector, queryTime, stale }
+meta: object { dataTime, effectiveCollector, queryTime, stale }
 
 </summary>
 
@@ -692,7 +692,7 @@ stale: boolean
 
 <summary>
 
-serie\_0: object {timestamps }
+serie\_0: object { timestamps }
 
 </summary>
 
@@ -720,7 +720,7 @@ GET/radar/bgp/routes/paths/{asn}
 
 <summary>
 
-PathListResponse object {asnInfo, collectors, meta, paths }
+PathListResponse object { asnInfo, collectors, meta, paths }
 
 </summary>
 
@@ -728,7 +728,7 @@ PathListResponse object {asnInfo, collectors, meta, paths }
 
 <summary>
 
-asnInfo: map\[object {asn, country, name } ]
+asnInfo: map\[object { asn, country, name } ]
 
 </summary>
 
@@ -762,7 +762,7 @@ collectors: array of string
 
 <summary>
 
-meta: object {dataTime, effectiveCollector, queryTime, stale }
+meta: object { dataTime, effectiveCollector, queryTime, stale }
 
 </summary>
 
@@ -798,7 +798,7 @@ stale: boolean
 
 <summary>
 
-paths: array of object {collectors, pathsCount, peersCount, segment }
+paths: array of object { collectors, pathsCount, peersCount, segment }
 
 </summary>
 

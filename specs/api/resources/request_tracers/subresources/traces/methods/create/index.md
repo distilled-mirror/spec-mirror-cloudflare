@@ -86,7 +86,7 @@ URL to which perform tracing request
 
 <summary>
 
-body: optional object {base64, json, plain\_text }
+body: optional object { base64, json, plain\_text }
 
 </summary>
 
@@ -116,7 +116,7 @@ Request body as plain text
 
 <summary>
 
-context: optional object {bot\_score, geoloc, skip\_challenge, threat\_score }
+context: optional object { bot\_score, geoloc, skip\_challenge, threat\_score }
 
 Additional request parameters
 
@@ -132,7 +132,7 @@ Bot score used for evaluating tracing request processing
 
 <summary>
 
-geoloc: optional object {city, continent, is\_eu\_country, 7 more }
+geoloc: optional object { city, continent, is\_eu\_country, 7 more }
 
 Geodata for tracing request
 
@@ -250,7 +250,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -292,7 +292,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -318,7 +318,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {status\_code, trace }
+result: optional object { status\_code, trace }
 
 Trace result with an origin status code
 

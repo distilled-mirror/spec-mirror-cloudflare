@@ -90,7 +90,7 @@ minimum1
 
 <summary>
 
-type: optional "managed"or "custom"
+type: optional "managed" or "custom"
 
 Filter regions by type. Omit to return all regions.
 
@@ -116,7 +116,7 @@ One of the following:
 
 <summary>
 
-errors: array of object {code, message, error\_chain }
+errors: array of object { code, message, error\_chain }
 
 </summary>
 
@@ -144,7 +144,7 @@ Optional upstream error context for APIv4 errors that wrap downstream service fa
 
 <summary>
 
-messages: array of object {code, message, error\_chain }
+messages: array of object { code, message, error\_chain }
 
 </summary>
 
@@ -172,7 +172,7 @@ Optional upstream error context for APIv4 errors that wrap downstream service fa
 
 <summary>
 
-result: array of object {id, created\_on, modified\_on, 4 more }
+result: array of object { id, created\_on, modified\_on, 4 more }
 
 </summary>
 
@@ -222,7 +222,7 @@ formatdate-time
 
 <summary>
 
-result\_info: object {count, cursor, per\_page }
+result\_info: object { count, cursor, per\_page }
 
 </summary>
 

@@ -36,7 +36,7 @@ PUT/accounts/{account\_id}/cloudforce-one/v2/threat-signals/skills/{skill\_id}/t
 
 <summary>
 
-TagCategoryGetResponse object {category\_uuids, skill\_id }
+TagCategoryGetResponse object { category\_uuids, skill\_id }
 
 </summary>
 
@@ -56,7 +56,7 @@ skill\_id: "default-tagging-skill"
 
 <summary>
 
-TagCategoryUpdateResponse object {category\_uuids, skill\_id }
+TagCategoryUpdateResponse object { category\_uuids, skill\_id }
 
 </summary>
 

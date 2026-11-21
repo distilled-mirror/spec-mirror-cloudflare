@@ -58,7 +58,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Access: Audit Logs Read`
+`Access: Users Write``Access: Users Read``Access: Audit Logs Read``Zero Trust Read``Zero Trust Write``Access: Organizations, Identity Providers, and Groups Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -110,7 +110,7 @@ Search for users by other listed query parameters.
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -132,7 +132,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -152,7 +152,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -174,7 +174,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -200,7 +200,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional array of object {id, access\_seat, active\_device\_count, 8 more }
+result: optional array of object { id, access\_seat, active\_device\_count, 8 more }
 
 </summary>
 
@@ -284,7 +284,7 @@ formatdate-time
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

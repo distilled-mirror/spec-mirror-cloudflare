@@ -46,7 +46,7 @@ DELETE/accounts/{account\_id}/alerting/v3/destinations/webhooks/{webhook\_id}
 
 <summary>
 
-Webhooks object {id, created\_at, last\_failure, 5 more }
+Webhooks object { id, created\_at, last\_failure, 5 more }
 
 </summary>
 
@@ -98,7 +98,7 @@ Optional secret that will be passed in the <code>cf-webhook-auth</code> header w
 
 <summary>
 
-type: optional "datadog"or "discord"or "feishu"or 5 more
+type: optional "datadog" or "discord" or "feishu" or 5 more
 
 Type of webhook endpoint.
 
@@ -156,7 +156,7 @@ The POST endpoint to call when dispatching a notification.
 
 <summary>
 
-WebhookCreateResponse object {id }
+WebhookCreateResponse object { id }
 
 </summary>
 
@@ -176,7 +176,7 @@ maxLength32
 
 <summary>
 
-WebhookUpdateResponse object {id }
+WebhookUpdateResponse object { id }
 
 </summary>
 
@@ -196,7 +196,7 @@ maxLength32
 
 <summary>
 
-WebhookDeleteResponse object {errors, messages, success }
+WebhookDeleteResponse object { errors, messages, success }
 
 </summary>
 
@@ -204,7 +204,7 @@ WebhookDeleteResponse object {errors, messages, success }
 
 <summary>
 
-errors: array of object {message, code }
+errors: array of object { message, code }
 
 </summary>
 
@@ -226,7 +226,7 @@ minimum1000
 
 <summary>
 
-messages: array of object {message, code }
+messages: array of object { message, code }
 
 </summary>
 

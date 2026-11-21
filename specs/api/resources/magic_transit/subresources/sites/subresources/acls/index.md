@@ -50,7 +50,7 @@ DELETE/accounts/{account\_id}/magic/sites/{site\_id}/acls/{acl\_id}
 
 <summary>
 
-ACL object {id, description, forward\_locally, 5 more }
+ACL object { id, description, forward\_locally, 5 more }
 
 Bidirectional ACL policy for network traffic within a site.
 
@@ -130,7 +130,7 @@ The desired traffic direction for this ACL policy. If set to “false”, the po
 
 <summary>
 
-ACLConfiguration object {lan\_id, lan\_name, port\_ranges, 2 more }
+ACLConfiguration object { lan\_id, lan\_name, port\_ranges, 2 more }
 
 </summary>
 
@@ -172,7 +172,7 @@ Array of subnet IPs within the LAN that will be included in the ACL. If no subne
 
 <summary>
 
-AllowedProtocol = "tcp"or "udp"or "icmp"
+AllowedProtocol = "tcp" or "udp" or "icmp"
 
 Array of allowed communication protocols between configured LANs. If no protocols are provided, all protocols are allowed.
 

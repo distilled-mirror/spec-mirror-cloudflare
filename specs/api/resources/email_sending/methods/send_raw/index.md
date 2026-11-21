@@ -52,6 +52,10 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 </details>
 
+##### Accepted Permissions (at least one required)
+
+`Email Sending Write`
+
 ##### P ath ParametersExpand Collapse
 
 account\_id: string
@@ -86,7 +90,7 @@ List of recipient email addresses.
 
 <summary>
 
-errors: array of object {code, message }
+errors: array of object { code, message }
 
 </summary>
 
@@ -106,7 +110,7 @@ message: string
 
 <summary>
 
-messages: array of object {code, message }
+messages: array of object { code, message }
 
 </summary>
 
@@ -126,7 +130,7 @@ message: string
 
 <summary>
 
-result: object {delivered, message\_id, permanent\_bounces, 2 more }
+result: object { delivered, message\_id, permanent\_bounces, 2 more }
 
 </summary>
 
@@ -172,7 +176,7 @@ success: true
 
 <summary>
 
-result\_info: optional object {count, per\_page, total\_count, 2 more }
+result\_info: optional object { count, per\_page, total\_count, 2 more }
 
 </summary>
 

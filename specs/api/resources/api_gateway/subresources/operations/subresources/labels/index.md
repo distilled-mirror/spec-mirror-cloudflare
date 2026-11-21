@@ -50,7 +50,7 @@ DELETE/zones/{zone\_id}/api\_gateway/operations/labels
 
 <summary>
 
-LabelUpdateResponse object {endpoint, host, last\_updated, 3 more }
+LabelUpdateResponse object { endpoint, host, last\_updated, 3 more }
 
 </summary>
 
@@ -84,7 +84,7 @@ formatdate-time
 
 <summary>
 
-method: "GET"or "POST"or "HEAD"or 6 more
+method: "GET" or "POST" or "HEAD" or 6 more
 
 The HTTP method used to access the endpoint.
 
@@ -146,7 +146,7 @@ minLength36
 
 <summary>
 
-labels: optional array of object {created\_at, description, last\_updated, 3 more }
+labels: optional array of object { created\_at, description, last\_updated, 3 more }
 
 </summary>
 
@@ -184,7 +184,7 @@ The name of the label
 
 <summary>
 
-source: "user"or "managed"
+source: "user" or "managed"
 
 - <code>user</code> - label is owned by the user
 - <code>managed</code> - label is owned by cloudflare
@@ -217,7 +217,7 @@ One of the following:
 
 <summary>
 
-LabelCreateResponse object {endpoint, host, last\_updated, 3 more }
+LabelCreateResponse object { endpoint, host, last\_updated, 3 more }
 
 </summary>
 
@@ -251,7 +251,7 @@ formatdate-time
 
 <summary>
 
-method: "GET"or "POST"or "HEAD"or 6 more
+method: "GET" or "POST" or "HEAD" or 6 more
 
 The HTTP method used to access the endpoint.
 
@@ -313,7 +313,7 @@ minLength36
 
 <summary>
 
-labels: optional array of object {created\_at, description, last\_updated, 3 more }
+labels: optional array of object { created\_at, description, last\_updated, 3 more }
 
 </summary>
 
@@ -351,7 +351,7 @@ The name of the label
 
 <summary>
 
-source: "user"or "managed"
+source: "user" or "managed"
 
 - <code>user</code> - label is owned by the user
 - <code>managed</code> - label is owned by cloudflare
@@ -384,7 +384,7 @@ One of the following:
 
 <summary>
 
-LabelDeleteResponse object {endpoint, host, last\_updated, 3 more }
+LabelDeleteResponse object { endpoint, host, last\_updated, 3 more }
 
 </summary>
 
@@ -418,7 +418,7 @@ formatdate-time
 
 <summary>
 
-method: "GET"or "POST"or "HEAD"or 6 more
+method: "GET" or "POST" or "HEAD" or 6 more
 
 The HTTP method used to access the endpoint.
 
@@ -480,7 +480,7 @@ minLength36
 
 <summary>
 
-labels: optional array of object {created\_at, description, last\_updated, 3 more }
+labels: optional array of object { created\_at, description, last\_updated, 3 more }
 
 </summary>
 
@@ -518,7 +518,7 @@ The name of the label
 
 <summary>
 
-source: "user"or "managed"
+source: "user" or "managed"
 
 - <code>user</code> - label is owned by the user
 - <code>managed</code> - label is owned by cloudflare
@@ -551,7 +551,7 @@ One of the following:
 
 <summary>
 
-LabelBulkUpdateResponse object {endpoint, host, last\_updated, 3 more }
+LabelBulkUpdateResponse object { endpoint, host, last\_updated, 3 more }
 
 </summary>
 
@@ -585,7 +585,7 @@ formatdate-time
 
 <summary>
 
-method: "GET"or "POST"or "HEAD"or 6 more
+method: "GET" or "POST" or "HEAD" or 6 more
 
 The HTTP method used to access the endpoint.
 
@@ -647,7 +647,7 @@ minLength36
 
 <summary>
 
-labels: optional array of object {created\_at, description, last\_updated, 3 more }
+labels: optional array of object { created\_at, description, last\_updated, 3 more }
 
 </summary>
 
@@ -685,7 +685,7 @@ The name of the label
 
 <summary>
 
-source: "user"or "managed"
+source: "user" or "managed"
 
 - <code>user</code> - label is owned by the user
 - <code>managed</code> - label is owned by cloudflare
@@ -718,7 +718,7 @@ One of the following:
 
 <summary>
 
-LabelBulkCreateResponse object {endpoint, host, last\_updated, 3 more }
+LabelBulkCreateResponse object { endpoint, host, last\_updated, 3 more }
 
 </summary>
 
@@ -752,7 +752,7 @@ formatdate-time
 
 <summary>
 
-method: "GET"or "POST"or "HEAD"or 6 more
+method: "GET" or "POST" or "HEAD" or 6 more
 
 The HTTP method used to access the endpoint.
 
@@ -814,7 +814,7 @@ minLength36
 
 <summary>
 
-labels: optional array of object {created\_at, description, last\_updated, 3 more }
+labels: optional array of object { created\_at, description, last\_updated, 3 more }
 
 </summary>
 
@@ -852,7 +852,7 @@ The name of the label
 
 <summary>
 
-source: "user"or "managed"
+source: "user" or "managed"
 
 - <code>user</code> - label is owned by the user
 - <code>managed</code> - label is owned by cloudflare
@@ -885,7 +885,7 @@ One of the following:
 
 <summary>
 
-LabelBulkDeleteResponse object {endpoint, host, last\_updated, 3 more }
+LabelBulkDeleteResponse object { endpoint, host, last\_updated, 3 more }
 
 </summary>
 
@@ -919,7 +919,7 @@ formatdate-time
 
 <summary>
 
-method: "GET"or "POST"or "HEAD"or 6 more
+method: "GET" or "POST" or "HEAD" or 6 more
 
 The HTTP method used to access the endpoint.
 
@@ -981,7 +981,7 @@ minLength36
 
 <summary>
 
-labels: optional array of object {created\_at, description, last\_updated, 3 more }
+labels: optional array of object { created\_at, description, last\_updated, 3 more }
 
 </summary>
 
@@ -1019,7 +1019,7 @@ The name of the label
 
 <summary>
 
-source: "user"or "managed"
+source: "user" or "managed"
 
 - <code>user</code> - label is owned by the user
 - <code>managed</code> - label is owned by cloudflare

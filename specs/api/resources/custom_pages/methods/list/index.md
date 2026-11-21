@@ -76,7 +76,7 @@ The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -98,7 +98,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -118,7 +118,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -140,7 +140,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -166,7 +166,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional array of object {id, created\_on, description, 5 more }
+result: optional array of object { id, created\_on, description, 5 more }
 
 </summary>
 
@@ -202,7 +202,7 @@ required\_tokens: optional array of string
 
 <summary>
 
-state: optional "default"or "customized"
+state: optional "default" or "customized"
 
 The custom page state.
 
@@ -238,7 +238,7 @@ formaturi
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

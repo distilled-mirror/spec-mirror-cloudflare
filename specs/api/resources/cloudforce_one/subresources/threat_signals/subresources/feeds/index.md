@@ -46,7 +46,7 @@ POST/accounts/{account\_id}/cloudforce-one/v2/threat-signals/feeds/poll
 
 <summary>
 
-FeedListResponse object {count, custom\_feed\_count, custom\_feed\_limit, 4 more }
+FeedListResponse object { count, custom\_feed\_count, custom\_feed\_limit, 4 more }
 
 </summary>
 
@@ -76,7 +76,7 @@ minimum0
 
 <summary>
 
-feeds: array of object {id, category\_id, category\_name, 13 more }
+feeds: array of object { id, category\_id, category\_name, 13 more }
 
 </summary>
 
@@ -182,7 +182,7 @@ total\_count: number
 
 <summary>
 
-FeedCreateResponse object {id, category\_id, category\_name, 13 more }
+FeedCreateResponse object { id, category\_id, category\_name, 13 more }
 
 </summary>
 
@@ -272,7 +272,7 @@ url: string
 
 <summary>
 
-FeedEditResponse object {id, category\_id, category\_name, 13 more }
+FeedEditResponse object { id, category\_id, category\_name, 13 more }
 
 </summary>
 
@@ -362,7 +362,7 @@ url: string
 
 <summary>
 
-FeedDeleteResponse object {id, category\_id, category\_name, 13 more }
+FeedDeleteResponse object { id, category\_id, category\_name, 13 more }
 
 </summary>
 
@@ -452,7 +452,7 @@ url: string
 
 <summary>
 
-FeedPollResponse object {errors, feeds, triggered }
+FeedPollResponse object { errors, feeds, triggered }
 
 </summary>
 
@@ -464,7 +464,7 @@ errors: number
 
 <summary>
 
-feeds: array of object {feed\_id, status, workflow\_id, feed\_enabled }
+feeds: array of object { feed\_id, status, workflow\_id, feed\_enabled }
 
 </summary>
 
@@ -478,7 +478,7 @@ formatuuid
 
 <summary>
 
-status: "workflow\_created"or "error"
+status: "workflow\_created" or "error"
 
 </summary>
 
@@ -544,7 +544,7 @@ PUT/accounts/{account\_id}/cloudforce-one/v2/threat-signals/feeds/{feed\_id}/ski
 
 <summary>
 
-SkillGetResponse object {feed\_id, skills }
+SkillGetResponse object { feed\_id, skills }
 
 </summary>
 
@@ -558,7 +558,7 @@ formatuuid
 
 <summary>
 
-skills: array of object {id, config, created\_at, 7 more }
+skills: array of object { id, config, created\_at, 7 more }
 
 </summary>
 
@@ -600,7 +600,7 @@ prompt: string
 
 <summary>
 
-source: "default"or "custom"
+source: "default" or "custom"
 
 <code>default</code> for Cloudforce One managed skills (read-only), <code>custom</code> for account skills.
 
@@ -640,7 +640,7 @@ updated\_at: string
 
 <summary>
 
-SkillUpdateResponse object {feed\_id, skills }
+SkillUpdateResponse object { feed\_id, skills }
 
 </summary>
 
@@ -654,7 +654,7 @@ formatuuid
 
 <summary>
 
-skills: array of object {position, skill\_id }
+skills: array of object { position, skill\_id }
 
 </summary>
 

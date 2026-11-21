@@ -60,7 +60,7 @@ PUT/accounts/{account\_id}/cfd\_tunnel/{tunnel\_id}/configurations
 
 <summary>
 
-ConfigurationGetResponse object {account\_id, config, created\_at, 3 more }
+ConfigurationGetResponse object { account\_id, config, created\_at, 3 more }
 
 Cloudflare Tunnel configuration
 
@@ -78,7 +78,7 @@ maxLength32
 
 <summary>
 
-config: optional object {ingress, originRequest }
+config: optional object { ingress, originRequest }
 
 The tunnel configuration and ingress rules.
 
@@ -88,7 +88,7 @@ The tunnel configuration and ingress rules.
 
 <summary>
 
-ingress: optional array of object {hostname, service, originRequest, path }
+ingress: optional array of object { hostname, service, originRequest, path }
 
 List of public hostname definitions. At least one ingress rule needs to be defined for the tunnel.
 
@@ -110,7 +110,7 @@ Protocol and address of destination server. Supported protocols: http://, https:
 
 <summary>
 
-originRequest: optional object {access, caPool, connectTimeout, 12 more }
+originRequest: optional object { access, caPool, connectTimeout, 12 more }
 
 Configuration parameters for the public hostname specific connection settings between cloudflared and origin server.
 
@@ -120,7 +120,7 @@ Configuration parameters for the public hostname specific connection settings be
 
 <summary>
 
-access: optional object {audTag, teamName, required }
+access: optional object { audTag, teamName, required }
 
 For all L7 requests to this hostname, cloudflared will validate each request’s Cf-Access-Jwt-Assertion request header.
 
@@ -248,7 +248,7 @@ Requests with this path route to this public hostname.
 
 <summary>
 
-originRequest: optional object {access, caPool, connectTimeout, 12 more }
+originRequest: optional object { access, caPool, connectTimeout, 12 more }
 
 Configuration parameters for the public hostname specific connection settings between cloudflared and origin server.
 
@@ -258,7 +258,7 @@ Configuration parameters for the public hostname specific connection settings be
 
 <summary>
 
-access: optional object {audTag, teamName, required }
+access: optional object { audTag, teamName, required }
 
 For all L7 requests to this hostname, cloudflared will validate each request’s Cf-Access-Jwt-Assertion request header.
 
@@ -386,7 +386,7 @@ formatdate-time
 
 <summary>
 
-source: optional "local"or "cloudflare"
+source: optional "local" or "cloudflare"
 
 Indicates if this is a locally or remotely configured tunnel. If <code>local</code>, manage the tunnel using a YAML file on the origin machine. If <code>cloudflare</code>, manage the tunnel’s configuration on the Zero Trust dashboard.
 
@@ -430,7 +430,7 @@ The version of the Tunnel Configuration.
 
 <summary>
 
-ConfigurationDeleteResponse = object {account\_id, config, created\_at, 3 more } or unknown
+ConfigurationDeleteResponse = object { account\_id, config, created\_at, 3 more } or unknown
 
 Cloudflare Tunnel configuration
 
@@ -442,7 +442,7 @@ One of the following:
 
 <summary>
 
-TunnelConfiguration object {account\_id, config, created\_at, 3 more }
+TunnelConfiguration object { account\_id, config, created\_at, 3 more }
 
 Cloudflare Tunnel configuration
 
@@ -460,7 +460,7 @@ maxLength32
 
 <summary>
 
-config: optional object {ingress, originRequest }
+config: optional object { ingress, originRequest }
 
 The tunnel configuration and ingress rules.
 
@@ -470,7 +470,7 @@ The tunnel configuration and ingress rules.
 
 <summary>
 
-ingress: optional array of object {hostname, service, originRequest, path }
+ingress: optional array of object { hostname, service, originRequest, path }
 
 List of public hostname definitions. At least one ingress rule needs to be defined for the tunnel.
 
@@ -492,7 +492,7 @@ Protocol and address of destination server. Supported protocols: http://, https:
 
 <summary>
 
-originRequest: optional object {access, caPool, connectTimeout, 12 more }
+originRequest: optional object { access, caPool, connectTimeout, 12 more }
 
 Configuration parameters for the public hostname specific connection settings between cloudflared and origin server.
 
@@ -502,7 +502,7 @@ Configuration parameters for the public hostname specific connection settings be
 
 <summary>
 
-access: optional object {audTag, teamName, required }
+access: optional object { audTag, teamName, required }
 
 For all L7 requests to this hostname, cloudflared will validate each request’s Cf-Access-Jwt-Assertion request header.
 
@@ -630,7 +630,7 @@ Requests with this path route to this public hostname.
 
 <summary>
 
-originRequest: optional object {access, caPool, connectTimeout, 12 more }
+originRequest: optional object { access, caPool, connectTimeout, 12 more }
 
 Configuration parameters for the public hostname specific connection settings between cloudflared and origin server.
 
@@ -640,7 +640,7 @@ Configuration parameters for the public hostname specific connection settings be
 
 <summary>
 
-access: optional object {audTag, teamName, required }
+access: optional object { audTag, teamName, required }
 
 For all L7 requests to this hostname, cloudflared will validate each request’s Cf-Access-Jwt-Assertion request header.
 
@@ -768,7 +768,7 @@ formatdate-time
 
 <summary>
 
-source: optional "local"or "cloudflare"
+source: optional "local" or "cloudflare"
 
 Indicates if this is a locally or remotely configured tunnel. If <code>local</code>, manage the tunnel using a YAML file on the origin machine. If <code>cloudflare</code>, manage the tunnel’s configuration on the Zero Trust dashboard.
 
@@ -820,7 +820,7 @@ unknown
 
 <summary>
 
-ConfigurationUpdateResponse object {account\_id, config, created\_at, 3 more }
+ConfigurationUpdateResponse object { account\_id, config, created\_at, 3 more }
 
 Cloudflare Tunnel configuration
 
@@ -838,7 +838,7 @@ maxLength32
 
 <summary>
 
-config: optional object {ingress, originRequest }
+config: optional object { ingress, originRequest }
 
 The tunnel configuration and ingress rules.
 
@@ -848,7 +848,7 @@ The tunnel configuration and ingress rules.
 
 <summary>
 
-ingress: optional array of object {hostname, service, originRequest, path }
+ingress: optional array of object { hostname, service, originRequest, path }
 
 List of public hostname definitions. At least one ingress rule needs to be defined for the tunnel.
 
@@ -870,7 +870,7 @@ Protocol and address of destination server. Supported protocols: http://, https:
 
 <summary>
 
-originRequest: optional object {access, caPool, connectTimeout, 12 more }
+originRequest: optional object { access, caPool, connectTimeout, 12 more }
 
 Configuration parameters for the public hostname specific connection settings between cloudflared and origin server.
 
@@ -880,7 +880,7 @@ Configuration parameters for the public hostname specific connection settings be
 
 <summary>
 
-access: optional object {audTag, teamName, required }
+access: optional object { audTag, teamName, required }
 
 For all L7 requests to this hostname, cloudflared will validate each request’s Cf-Access-Jwt-Assertion request header.
 
@@ -1008,7 +1008,7 @@ Requests with this path route to this public hostname.
 
 <summary>
 
-originRequest: optional object {access, caPool, connectTimeout, 12 more }
+originRequest: optional object { access, caPool, connectTimeout, 12 more }
 
 Configuration parameters for the public hostname specific connection settings between cloudflared and origin server.
 
@@ -1018,7 +1018,7 @@ Configuration parameters for the public hostname specific connection settings be
 
 <summary>
 
-access: optional object {audTag, teamName, required }
+access: optional object { audTag, teamName, required }
 
 For all L7 requests to this hostname, cloudflared will validate each request’s Cf-Access-Jwt-Assertion request header.
 
@@ -1146,7 +1146,7 @@ formatdate-time
 
 <summary>
 
-source: optional "local"or "cloudflare"
+source: optional "local" or "cloudflare"
 
 Indicates if this is a locally or remotely configured tunnel. If <code>local</code>, manage the tunnel using a YAML file on the origin machine. If <code>cloudflare</code>, manage the tunnel’s configuration on the Zero Trust dashboard.
 
@@ -1202,7 +1202,7 @@ DELETE/accounts/{account\_id}/cfd\_tunnel/{tunnel\_id}/connections
 
 <summary>
 
-Client object {id, arch, config\_version, 4 more }
+Client object { id, arch, config\_version, 4 more }
 
 A client (typically cloudflared) that maintains connections to a Cloudflare data center.
 
@@ -1234,7 +1234,7 @@ The version of the remote tunnel configuration. Used internally to sync cloudfla
 
 <summary>
 
-conns: optional array of object {id, client\_id, client\_version, 5 more }
+conns: optional array of object { id, client\_id, client\_version, 5 more }
 
 The Cloudflare Tunnel connections between your origin and Cloudflare’s edge.
 

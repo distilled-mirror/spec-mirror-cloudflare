@@ -34,7 +34,7 @@ PATCH/accounts/{account\_id}/cloudforce-one/events/{event\_id}/raw/{raw\_id}
 
 <summary>
 
-RawGetResponse object {id, accountId, created, 3 more }
+RawGetResponse object { id, accountId, created, 3 more }
 
 </summary>
 
@@ -70,7 +70,7 @@ tlp: string
 
 <summary>
 
-RawEditResponse object {id, data }
+RawEditResponse object { id, data }
 
 </summary>
 

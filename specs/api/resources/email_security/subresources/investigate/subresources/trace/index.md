@@ -30,7 +30,7 @@ GET/accounts/{account\_id}/email-security/investigate/{investigate\_id}/trace
 
 <summary>
 
-TraceGetResponse object {inbound, outbound }
+TraceGetResponse object { inbound, outbound }
 
 </summary>
 
@@ -38,7 +38,7 @@ TraceGetResponse object {inbound, outbound }
 
 <summary>
 
-inbound: object {lines, pending }
+inbound: object { lines, pending }
 
 </summary>
 
@@ -46,7 +46,7 @@ inbound: object {lines, pending }
 
 <summary>
 
-lines: optional array of object {lineno, logged\_at, message, ts }
+lines: optional array of object { lineno, logged\_at, message, ts }
 
 </summary>
 
@@ -90,7 +90,7 @@ pending: optional boolean
 
 <summary>
 
-outbound: object {lines, pending }
+outbound: object { lines, pending }
 
 </summary>
 
@@ -98,7 +98,7 @@ outbound: object {lines, pending }
 
 <summary>
 
-lines: optional array of object {lineno, logged\_at, message, ts }
+lines: optional array of object { lineno, logged\_at, message, ts }
 
 </summary>
 

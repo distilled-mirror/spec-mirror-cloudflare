@@ -88,7 +88,7 @@ Payment method to charge instead of the customer’s default payment method.
 
 <summary>
 
-errors: array of object {code, message }
+errors: array of object { code, message }
 
 </summary>
 
@@ -108,7 +108,7 @@ message: string
 
 <summary>
 
-messages: array of object {code, message }
+messages: array of object { code, message }
 
 </summary>
 
@@ -128,7 +128,7 @@ message: string
 
 <summary>
 
-result: object {client\_secret, onboarding, payment\_intent\_id, 2 more }
+result: object { client\_secret, onboarding, payment\_intent\_id, 2 more }
 
 </summary>
 
@@ -174,7 +174,7 @@ success: true
 
 <summary>
 
-result\_info: optional object {has\_more, page, per\_page, total\_count }
+result\_info: optional object { has\_more, page, per\_page, total\_count }
 
 </summary>
 

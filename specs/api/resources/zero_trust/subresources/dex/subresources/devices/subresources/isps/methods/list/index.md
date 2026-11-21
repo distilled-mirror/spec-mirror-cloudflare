@@ -136,7 +136,7 @@ The field to sort results by.
 
 <summary>
 
-sort\_order: optional "ASC"or "DESC"
+sort\_order: optional "ASC" or "DESC"
 
 The order to sort results.
 
@@ -170,7 +170,7 @@ formatdate-time
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -192,7 +192,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -212,7 +212,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -234,7 +234,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -268,7 +268,7 @@ result: optional <a href="https://developers.cloudflare.com/api/resources/zero_t
 
 <summary>
 
-isps: array of object {test\_id, test\_result\_id, time\_start, ip }
+isps: array of object { test\_id, test\_result\_id, time\_start, ip }
 
 </summary>
 
@@ -296,7 +296,7 @@ formatdate-time
 
 <summary>
 
-ip: optional object {address, asn, aso, 4 more }
+ip: optional object { address, asn, aso, 4 more }
 
 IP address information for the ISP hop. Fields marked as PII-gated (<code>name</code>, <code>address</code>, <code>netmask</code>, and all <code>location</code> sub-fields) will be returned as the literal string <code>"REDACTED"</code> for callers that do not have the PII permission. <code>asn</code>, <code>aso</code>, and <code>version</code> are always returned regardless of PII access.
 
@@ -324,7 +324,7 @@ Autonomous System Organization name.
 
 <summary>
 
-location: optional object {city, country\_iso, state\_iso, zip }
+location: optional object { city, country\_iso, state\_iso, zip }
 
 Geographic location information. All fields are returned as the literal string <code>"REDACTED"</code> for callers that do not have the PII permission.
 
@@ -392,7 +392,7 @@ IP version (<code>1</code> for IPv4, <code>2</code> for IPv6, <code>0</code> if 
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

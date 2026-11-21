@@ -30,7 +30,7 @@ GET/zones/{zone\_id}/waiting\_rooms/{waiting\_room\_id}/events/{event\_id}/detai
 
 <summary>
 
-EventQuery object {event\_end\_time, event\_start\_time, name, 12 more }
+EventQuery object { event\_end\_time, event\_start\_time, name, 12 more }
 
 </summary>
 
@@ -128,7 +128,7 @@ minimum200
 
 <summary>
 
-turnstile\_action: optional "log"or "infinite\_queue"
+turnstile\_action: optional "log" or "infinite\_queue"
 
 If set, the event will override the waiting room’s <code>turnstile_action</code> property while it is active. If null, the event will inherit it.
 
@@ -152,7 +152,7 @@ One of the following:
 
 <summary>
 
-turnstile\_mode: optional "off"or "invisible"or "visible\_non\_interactive"or "visible\_managed"
+turnstile\_mode: optional "off" or "invisible" or "visible\_non\_interactive" or "visible\_managed"
 
 If set, the event will override the waiting room’s <code>turnstile_mode</code> property while it is active. If null, the event will inherit it.
 
@@ -188,7 +188,7 @@ One of the following:
 
 <summary>
 
-DetailGetResponse object {id, created\_on, custom\_page\_html, 13 more }
+DetailGetResponse object { id, created\_on, custom\_page\_html, 13 more }
 
 </summary>
 

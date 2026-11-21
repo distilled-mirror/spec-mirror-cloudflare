@@ -78,7 +78,7 @@ An Application ID represents an identifier of an application.
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -100,7 +100,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -120,7 +120,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -142,7 +142,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -162,7 +162,7 @@ pointer: optional string
 
 <summary>
 
-result: array of object {configuration, percentage, version }
+result: array of object { configuration, percentage, version }
 
 </summary>
 
@@ -170,7 +170,7 @@ result: array of object {configuration, percentage, version }
 
 <summary>
 
-configuration: object {authorized\_keys, command, entrypoint, 4 more }
+configuration: object { authorized\_keys, command, entrypoint, 4 more }
 
 User-specified container configuration changes.
 
@@ -180,7 +180,7 @@ User-specified container configuration changes.
 
 <summary>
 
-authorized\_keys: optional array of object {public\_key, name }
+authorized\_keys: optional array of object { public\_key, name }
 
 </summary>
 
@@ -216,7 +216,7 @@ The entry point for the container, specifying the executable to run when the con
 
 <summary>
 
-environment\_variables: optional array of object {name, value }
+environment\_variables: optional array of object { name, value }
 
 Container environment variables.
 
@@ -248,7 +248,7 @@ Image url.
 
 <summary>
 
-instance\_type: optional "lite"or "basic"or "standard-1"or 3 more
+instance\_type: optional "lite" or "basic" or "standard-1" or 3 more
 
 The instance type configures vCPU, memory, and disk.
 
@@ -295,7 +295,7 @@ One of the following:
 
 <summary>
 
-observability: optional object {logs }
+observability: optional object { logs }
 
 Settings for deployment observability such as logging.
 
@@ -305,7 +305,7 @@ Settings for deployment observability such as logging.
 
 <summary>
 
-logs: optional object {enabled }
+logs: optional object { enabled }
 
 Observability logging settings.
 

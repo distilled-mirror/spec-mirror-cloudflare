@@ -64,7 +64,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -96,7 +96,7 @@ datasetId: number
 
 <summary>
 
-result: object {dataset }
+result: object { dataset }
 
 </summary>
 
@@ -104,7 +104,7 @@ result: object {dataset }
 
 <summary>
 
-dataset: object {url }
+dataset: object { url }
 
 </summary>
 

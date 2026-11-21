@@ -102,7 +102,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -144,7 +144,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -172,7 +172,7 @@ result: array of <a href="https://developers.cloudflare.com/api/resources/intel#
 
 <summary>
 
-categorizations: optional array of object {categories, end, start }
+categorizations: optional array of object { categories, end, start }
 
 </summary>
 
@@ -180,7 +180,7 @@ categorizations: optional array of object {categories, end, start }
 
 <summary>
 
-categories: optional array of object {id, name }
+categories: optional array of object { id, name }
 
 </summary>
 
@@ -230,7 +230,7 @@ Whether the API call was successful.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object { count, page, per\_page, total\_count }
 
 </summary>
 
@@ -307,8 +307,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/intel/domain-hist
               "name": "Technology"
             }
           ],
-          "end": "2021-04-30",
-          "start": "2021-04-01"
+          "end": "2019-12-27",
+          "start": "2019-12-27"
         }
       ],
       "domain": "cloudflare.com"
@@ -360,8 +360,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/intel/domain-hist
               "name": "Technology"
             }
           ],
-          "end": "2021-04-30",
-          "start": "2021-04-01"
+          "end": "2019-12-27",
+          "start": "2019-12-27"
         }
       ],
       "domain": "cloudflare.com"

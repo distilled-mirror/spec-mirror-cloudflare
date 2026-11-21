@@ -72,7 +72,7 @@ account\_id: string
 
 <summary>
 
-errors: array of object {code, message }
+errors: array of object { code, message }
 
 </summary>
 
@@ -92,7 +92,7 @@ message: string
 
 <summary>
 
-messages: array of object {code, message }
+messages: array of object { code, message }
 
 </summary>
 
@@ -112,7 +112,7 @@ message: string
 
 <summary>
 
-result: object {auto\_topup, contract\_version, evaluated\_at, 4 more }
+result: object { auto\_topup, contract\_version, evaluated\_at, 4 more }
 
 </summary>
 
@@ -120,7 +120,7 @@ result: object {auto\_topup, contract\_version, evaluated\_at, 4 more }
 
 <summary>
 
-auto\_topup: object {can\_configure, config, limits, 3 more }
+auto\_topup: object { can\_configure, config, limits, 3 more }
 
 Auto top-up state.
 
@@ -136,7 +136,7 @@ Whether auto top-up can be set up or changed now.
 
 <summary>
 
-config: object {amount\_cents, threshold\_cents }
+config: object { amount\_cents, threshold\_cents }
 
 Configured threshold and amount. Null unless <code>state</code> is <code>active</code> or <code>needs_confirmation</code>.
 
@@ -162,7 +162,7 @@ Balance threshold in cents that triggers an auto top-up.
 
 <summary>
 
-limits: object {amount\_max\_cents, amount\_min\_cents, threshold\_min\_cents }
+limits: object { amount\_max\_cents, amount\_min\_cents, threshold\_min\_cents }
 
 Allowed auto top-up values.
 
@@ -200,7 +200,7 @@ Payment method auto top-up charges or, once stopped, the one it stopped on. Null
 
 <summary>
 
-state: "first\_topup\_required"or "not\_configured"or "active"or 2 more
+state: "first\_topup\_required" or "not\_configured" or "active" or 2 more
 
 <code>first_topup_required</code>: auto top-up can be set up after the first manual top-up. <code>not_configured</code>: auto top-up is off. <code>active</code>: auto top-up is on. <code>needs_confirmation</code>: auto top-up is on, but its card has to be confirmed or replaced. <code>stopped</code>: auto top-up was turned off; <code>stopped_reason</code> says why, when known.
 
@@ -236,7 +236,7 @@ One of the following:
 
 <summary>
 
-stopped\_reason: optional "payment\_method\_removed"or "payment\_method\_changed"or "expired\_card"or 4 more
+stopped\_reason: optional "payment\_method\_removed" or "payment\_method\_changed" or "expired\_card" or 4 more
 
 Why auto top-up stopped. Present only when <code>state</code> is <code>stopped</code> and the reason is known.
 
@@ -298,7 +298,7 @@ formatdate-time
 
 <summary>
 
-manual\_topup: object {available, default\_payment\_method\_id, limits }
+manual\_topup: object { available, default\_payment\_method\_id, limits }
 
 Manual top-up availability.
 
@@ -320,7 +320,7 @@ Payment method to preselect: the default when it can pay, otherwise the first th
 
 <summary>
 
-limits: object {currency, max\_cents, min\_cents }
+limits: object { currency, max\_cents, min\_cents }
 
 Allowed manual top-up amounts.
 
@@ -356,7 +356,7 @@ Minimum top-up amount in cents.
 
 <summary>
 
-payment\_methods: array of object {id, is\_default, type, 6 more }
+payment\_methods: array of object { id, is\_default, type, 6 more }
 
 The account’s payment methods, and whether each can pay for a top-up.
 
@@ -378,7 +378,7 @@ Whether this is the account’s default payment method.
 
 <summary>
 
-type: "card"or "apple\_pay"or "google\_pay"or 3 more
+type: "card" or "apple\_pay" or "google\_pay" or 3 more
 
 Payment method type.
 
@@ -448,7 +448,7 @@ Last 4 digits. Present for cards.
 
 <summary>
 
-unusable\_reason: optional "payment\_method\_not\_supported"or "expired\_card"or "prepaid\_card\_not\_supported"or "card\_not\_3ds\_capable"
+unusable\_reason: optional "payment\_method\_not\_supported" or "expired\_card" or "prepaid\_card\_not\_supported" or "card\_not\_3ds\_capable"
 
 Why this payment method can’t pay for a top-up. Present only when <code>usable</code> is false.
 
@@ -484,7 +484,7 @@ One of the following:
 
 <summary>
 
-reason: "NONE"or "CONTRACT\_BILLING"or "ACCOUNT\_RESTRICTED"or 3 more
+reason: "NONE" or "CONTRACT\_BILLING" or "ACCOUNT\_RESTRICTED" or 3 more
 
 What prevents a manual top-up, or <code>NONE</code>. <code>CONTRACT_BILLING</code>: the account is billed by contract. <code>ACCOUNT_RESTRICTED</code>: the account is restricted. <code>ELIGIBILITY_UNAVAILABLE</code>: eligibility could not be determined. <code>NO_ELIGIBLE_PAYMENT_METHOD</code>: no payment method can pay for a top-up. <code>DAILY_LIMIT_REACHED</code>: the account reached its daily top-up limit.
 
@@ -524,7 +524,7 @@ One of the following:
 
 <summary>
 
-status: "ready"or "blocked"or "unavailable"
+status: "ready" or "blocked" or "unavailable"
 
 <code>ready</code> when a manual top-up is available, <code>blocked</code> when <code>reason</code> prevents one, or <code>unavailable</code> when eligibility could not be determined and the request can be retried.
 
@@ -560,7 +560,7 @@ success: true
 
 <summary>
 
-result\_info: optional object {has\_more, page, per\_page, total\_count }
+result\_info: optional object { has\_more, page, per\_page, total\_count }
 
 </summary>
 

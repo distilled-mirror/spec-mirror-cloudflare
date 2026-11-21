@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Browser Rendering Write`
+`AI Search Index Engine``Auto Rag Write Run Engine``Browser Run Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -86,7 +86,7 @@ Function body executed against the selected library’s runner.
 
 <summary>
 
-library: optional "playwright"or "puppeteer"
+library: optional "playwright" or "puppeteer"
 
 Library the script runs with. Defaults to raw CDP when omitted.
 
@@ -128,7 +128,7 @@ minimum1
 
 <summary>
 
-result: stringor numberor booleanor 2 more
+result: string or number or boolean or 2 more
 
 The script’s return value, or null when it returned nothing. Arrays nested inside arrays are also returned, but this schema does not describe them.
 
@@ -156,7 +156,7 @@ map\[unknown]
 
 <summary>
 
-array of stringor numberor booleanor map\[unknown]
+array of string or number or boolean or map\[unknown]
 
 </summary>
 

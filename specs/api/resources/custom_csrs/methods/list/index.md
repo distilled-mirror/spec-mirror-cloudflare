@@ -76,7 +76,7 @@ The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 
 <summary>
 
-direction: optional "asc"or "desc"
+direction: optional "asc" or "desc"
 
 The direction to sort by.
 
@@ -100,7 +100,7 @@ One of the following:
 
 <summary>
 
-order: optional "name"or "account\_tag"or "created\_at"
+order: optional "name" or "account\_tag" or "created\_at"
 
 The field to sort the returned custom CSRs by.
 
@@ -148,7 +148,7 @@ minimum5
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -170,7 +170,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -190,7 +190,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -212,7 +212,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -238,7 +238,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional array of object {id, created\_at, key\_type, 11 more }
+result: optional array of object { id, created\_at, key\_type, 11 more }
 
 </summary>
 
@@ -262,7 +262,7 @@ formatdate-time
 
 <summary>
 
-key\_type: "rsa2048"or "p256v1"
+key\_type: "rsa2048" or "p256v1"
 
 The key algorithm used to generate the CSR.
 
@@ -358,7 +358,7 @@ State or province name.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

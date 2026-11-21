@@ -28,7 +28,7 @@ GET/radar/annotations
 
 <summary>
 
-AnnotationListResponse object {annotations }
+AnnotationListResponse object { annotations }
 
 </summary>
 
@@ -36,7 +36,7 @@ AnnotationListResponse object {annotations }
 
 <summary>
 
-annotations: array of object {id, asns, asnsDetails, 15 more }
+annotations: array of object { id, asns, asnsDetails, 15 more }
 
 </summary>
 
@@ -52,7 +52,7 @@ asns: array of number
 
 <summary>
 
-asnsDetails: array of object {asn, location, name }
+asnsDetails: array of object { asn, location, name }
 
 </summary>
 
@@ -64,7 +64,7 @@ asn: string
 
 <summary>
 
-location: object {code, name }
+location: object { code, name }
 
 </summary>
 
@@ -104,7 +104,7 @@ endDate: string
 
 <summary>
 
-entities: array of object {entityLocation, entityName, entityType, entityValue }
+entities: array of object { entityLocation, entityName, entityType, entityValue }
 
 </summary>
 
@@ -150,7 +150,7 @@ locations: array of string
 
 <summary>
 
-locationsDetails: array of object {code, name }
+locationsDetails: array of object { code, name }
 
 </summary>
 
@@ -174,7 +174,7 @@ origins: array of string
 
 <summary>
 
-originsDetails: array of object {name, origin }
+originsDetails: array of object { name, origin }
 
 </summary>
 
@@ -194,7 +194,7 @@ origin: string
 
 <summary>
 
-outage: object {outageCause, outageType }
+outage: object { outageCause, outageType }
 
 </summary>
 
@@ -246,7 +246,7 @@ GET/radar/annotations/outages/locations
 
 <summary>
 
-OutageGetResponse object {annotations }
+OutageGetResponse object { annotations }
 
 </summary>
 
@@ -254,7 +254,7 @@ OutageGetResponse object {annotations }
 
 <summary>
 
-annotations: array of object {id, asns, asnsDetails, 15 more }
+annotations: array of object { id, asns, asnsDetails, 15 more }
 
 </summary>
 
@@ -270,7 +270,7 @@ asns: array of number
 
 <summary>
 
-asnsDetails: array of object {asn, location, name }
+asnsDetails: array of object { asn, location, name }
 
 </summary>
 
@@ -282,7 +282,7 @@ asn: string
 
 <summary>
 
-location: object {code, name }
+location: object { code, name }
 
 </summary>
 
@@ -324,7 +324,7 @@ formatdate-time
 
 <summary>
 
-entities: array of object {entityLocation, entityName, entityType, entityValue }
+entities: array of object { entityLocation, entityName, entityType, entityValue }
 
 </summary>
 
@@ -370,7 +370,7 @@ locations: array of string
 
 <summary>
 
-locationsDetails: array of object {code, name }
+locationsDetails: array of object { code, name }
 
 </summary>
 
@@ -394,7 +394,7 @@ origins: array of string
 
 <summary>
 
-originsDetails: array of object {name, origin }
+originsDetails: array of object { name, origin }
 
 </summary>
 
@@ -414,7 +414,7 @@ origin: string
 
 <summary>
 
-outage: object {outageCause, outageType }
+outage: object { outageCause, outageType }
 
 </summary>
 
@@ -456,7 +456,7 @@ tags: array of string
 
 <summary>
 
-OutageLocationsResponse object {annotations }
+OutageLocationsResponse object { annotations }
 
 </summary>
 
@@ -464,7 +464,7 @@ OutageLocationsResponse object {annotations }
 
 <summary>
 
-annotations: array of object {clientCountryAlpha2, clientCountryName, value }
+annotations: array of object { clientCountryAlpha2, clientCountryName, value }
 
 </summary>
 

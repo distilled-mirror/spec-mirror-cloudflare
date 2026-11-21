@@ -76,7 +76,7 @@ maxLength32
 
 <summary>
 
-body: array of object {name, description, metadata }
+body: array of object { name, description, metadata }
 
 </summary>
 
@@ -130,7 +130,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -172,7 +172,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -192,7 +192,7 @@ pointer: optional string
 
 <summary>
 
-result: array of object {created\_at, description, last\_updated, 3 more }
+result: array of object { created\_at, description, last\_updated, 3 more }
 
 </summary>
 
@@ -230,7 +230,7 @@ The name of the label
 
 <summary>
 
-source: "user"or "managed"
+source: "user" or "managed"
 
 - <code>user</code> - label is owned by the user
 - <code>managed</code> - label is owned by cloudflare
@@ -265,7 +265,7 @@ Whether the API call was successful.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

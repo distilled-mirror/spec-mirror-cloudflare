@@ -34,7 +34,7 @@ PUT/zones/{zone\_id}/email/routing/rules/catch\_all
 
 <summary>
 
-CatchAllAction object {type, value }
+CatchAllAction object { type, value }
 
 Action for the catch-all routing rule.
 
@@ -44,7 +44,7 @@ Action for the catch-all routing rule.
 
 <summary>
 
-type: "drop"or "forward"or "worker"
+type: "drop" or "forward" or "worker"
 
 Type of action for catch-all rule.
 
@@ -82,7 +82,7 @@ List of values for the action. Currently limited to a single value.
 
 <summary>
 
-CatchAllMatcher object {type }
+CatchAllMatcher object { type }
 
 Matcher for catch-all routing rule.
 
@@ -102,7 +102,7 @@ Type of matcher. Default is ‘all’.
 
 <summary>
 
-CatchAllGetResponse object {id, actions, enabled, 4 more }
+CatchAllGetResponse object { id, actions, enabled, 4 more }
 
 </summary>
 
@@ -128,7 +128,7 @@ List actions for the catch-all routing rule.
 
 <summary>
 
-type: "drop"or "forward"or "worker"
+type: "drop" or "forward" or "worker"
 
 Type of action for catch-all rule.
 
@@ -166,7 +166,7 @@ List of values for the action. Currently limited to a single value.
 
 <summary>
 
-enabled: optional trueor false
+enabled: optional true or false
 
 Routing rule status.
 
@@ -218,7 +218,7 @@ maxLength256
 
 <summary>
 
-source: optional "api"or "wrangler"
+source: optional "api" or "wrangler"
 
 Who manages the rule. <code>api</code> covers dashboard, generic API, and Terraform; <code>wrangler</code> means the rule is managed by a Worker’s wrangler.jsonc. Defaults to <code>api</code> when omitted on write.
 
@@ -254,7 +254,7 @@ maxLength32
 
 <summary>
 
-CatchAllUpdateResponse object {id, actions, enabled, 4 more }
+CatchAllUpdateResponse object { id, actions, enabled, 4 more }
 
 </summary>
 
@@ -280,7 +280,7 @@ List actions for the catch-all routing rule.
 
 <summary>
 
-type: "drop"or "forward"or "worker"
+type: "drop" or "forward" or "worker"
 
 Type of action for catch-all rule.
 
@@ -318,7 +318,7 @@ List of values for the action. Currently limited to a single value.
 
 <summary>
 
-enabled: optional trueor false
+enabled: optional true or false
 
 Routing rule status.
 
@@ -370,7 +370,7 @@ maxLength256
 
 <summary>
 
-source: optional "api"or "wrangler"
+source: optional "api" or "wrangler"
 
 Who manages the rule. <code>api</code> covers dashboard, generic API, and Terraform; <code>wrangler</code> means the rule is managed by a Worker’s wrangler.jsonc. Defaults to <code>api</code> when omitted on write.
 

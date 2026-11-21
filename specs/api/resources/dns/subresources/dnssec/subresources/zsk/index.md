@@ -30,7 +30,7 @@ GET/zones/{zone\_id}/dnssec/zsk
 
 <summary>
 
-ZskListResponse object {DNSKEY, Location, Name, 2 more }
+ZskListResponse object { DNSKEY, Location, Name, 2 more }
 
 </summary>
 
@@ -38,7 +38,7 @@ ZskListResponse object {DNSKEY, Location, Name, 2 more }
 
 <summary>
 
-DNSKEY: optional object {Algorithm, Flags, Hdr, 2 more }
+DNSKEY: optional object { Algorithm, Flags, Hdr, 2 more }
 
 </summary>
 
@@ -54,7 +54,7 @@ Flags: optional number
 
 <summary>
 
-Hdr: optional object {Class, Name, Rdlength, 2 more }
+Hdr: optional object { Class, Name, Rdlength, 2 more }
 
 </summary>
 
@@ -98,7 +98,7 @@ PublicKey: optional string
 
 <summary>
 
-Location: optional "database"or "vault"
+Location: optional "database" or "vault"
 
 Storage backend where the DNSSEC key material is stored.
 
@@ -128,7 +128,7 @@ Internal key name for the ZSK.
 
 <summary>
 
-SigningKey: optional object {kek, privkey, pubkey }
+SigningKey: optional object { kek, privkey, pubkey }
 
 </summary>
 
@@ -160,7 +160,7 @@ Public key content associated with the signing key.
 
 <summary>
 
-Tag: optional "active"or "publish"or "external"or 3 more
+Tag: optional "active" or "publish" or "external" or 3 more
 
 Lifecycle state tag attached to the DNSSEC key.
 

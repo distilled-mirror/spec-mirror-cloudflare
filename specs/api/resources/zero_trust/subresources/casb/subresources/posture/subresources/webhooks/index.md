@@ -56,7 +56,7 @@ POST/accounts/{account\_id}/data-security/posture/webhooks/{webhook\_id}/evaluat
 
 <summary>
 
-WebhookListResponse object {id, authentication\_type, created\_at, 6 more }
+WebhookListResponse object { id, authentication\_type, created\_at, 6 more }
 
 Webhook configuration for sending finding notifications.
 
@@ -74,7 +74,7 @@ formatuuid
 
 <summary>
 
-authentication\_type: "Basic Auth"or "None"or "Bearer Auth"or 2 more
+authentication\_type: "Basic Auth" or "None" or "Bearer Auth" or 2 more
 
 Type of authentication used for the webhook.
 
@@ -132,7 +132,7 @@ Account-specified display label for the webhook configuration.
 
 <summary>
 
-status: "enabled"or "disabled"
+status: "enabled" or "disabled"
 
 Current status of the webhook configuration. If disabled, data cannot be sent through this configuration.
 
@@ -172,7 +172,7 @@ formatuint32
 
 <summary>
 
-headers: optional array of object {key, value }
+headers: optional array of object { key, value }
 
 List of header keys configured for this webhook. Values are not included for security reasons.
 
@@ -202,7 +202,7 @@ Header value. This field is never returned in API responses for security reasons
 
 <summary>
 
-WebhookCreateResponse object {id, authentication\_type, created\_at, 6 more }
+WebhookCreateResponse object { id, authentication\_type, created\_at, 6 more }
 
 Webhook configuration for sending finding notifications.
 
@@ -220,7 +220,7 @@ formatuuid
 
 <summary>
 
-authentication\_type: "Basic Auth"or "None"or "Bearer Auth"or 2 more
+authentication\_type: "Basic Auth" or "None" or "Bearer Auth" or 2 more
 
 Type of authentication used for the webhook.
 
@@ -278,7 +278,7 @@ Account-specified display label for the webhook configuration.
 
 <summary>
 
-status: "enabled"or "disabled"
+status: "enabled" or "disabled"
 
 Current status of the webhook configuration. If disabled, data cannot be sent through this configuration.
 
@@ -318,7 +318,7 @@ formatuint32
 
 <summary>
 
-headers: optional array of object {key, value }
+headers: optional array of object { key, value }
 
 List of header keys configured for this webhook. Values are not included for security reasons.
 
@@ -348,7 +348,7 @@ Header value. This field is never returned in API responses for security reasons
 
 <summary>
 
-WebhookGetResponse object {id, authentication\_type, created\_at, 6 more }
+WebhookGetResponse object { id, authentication\_type, created\_at, 6 more }
 
 Webhook configuration for sending finding notifications.
 
@@ -366,7 +366,7 @@ formatuuid
 
 <summary>
 
-authentication\_type: "Basic Auth"or "None"or "Bearer Auth"or 2 more
+authentication\_type: "Basic Auth" or "None" or "Bearer Auth" or 2 more
 
 Type of authentication used for the webhook.
 
@@ -424,7 +424,7 @@ Account-specified display label for the webhook configuration.
 
 <summary>
 
-status: "enabled"or "disabled"
+status: "enabled" or "disabled"
 
 Current status of the webhook configuration. If disabled, data cannot be sent through this configuration.
 
@@ -464,7 +464,7 @@ formatuint32
 
 <summary>
 
-headers: optional array of object {key, value }
+headers: optional array of object { key, value }
 
 List of header keys configured for this webhook. Values are not included for security reasons.
 
@@ -494,7 +494,7 @@ Header value. This field is never returned in API responses for security reasons
 
 <summary>
 
-WebhookUpdateResponse object {id, authentication\_type, created\_at, 6 more }
+WebhookUpdateResponse object { id, authentication\_type, created\_at, 6 more }
 
 Webhook configuration for sending finding notifications.
 
@@ -512,7 +512,7 @@ formatuuid
 
 <summary>
 
-authentication\_type: "Basic Auth"or "None"or "Bearer Auth"or 2 more
+authentication\_type: "Basic Auth" or "None" or "Bearer Auth" or 2 more
 
 Type of authentication used for the webhook.
 
@@ -570,7 +570,7 @@ Account-specified display label for the webhook configuration.
 
 <summary>
 
-status: "enabled"or "disabled"
+status: "enabled" or "disabled"
 
 Current status of the webhook configuration. If disabled, data cannot be sent through this configuration.
 
@@ -610,7 +610,7 @@ formatuint32
 
 <summary>
 
-headers: optional array of object {key, value }
+headers: optional array of object { key, value }
 
 List of header keys configured for this webhook. Values are not included for security reasons.
 
@@ -640,7 +640,7 @@ Header value. This field is never returned in API responses for security reasons
 
 <summary>
 
-WebhookDeleteResponse object {errors, messages, success }
+WebhookDeleteResponse object { errors, messages, success }
 
 Common response structure for all API endpoints.
 
@@ -650,7 +650,7 @@ Common response structure for all API endpoints.
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -680,7 +680,7 @@ formaturi
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -702,7 +702,7 @@ JSON pointer to the source of the error.
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -732,7 +732,7 @@ formaturi
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -764,7 +764,7 @@ Whether the API call was successful.
 
 <summary>
 
-WebhookEvaluateResponse object {message, status\_code, success }
+WebhookEvaluateResponse object { message, status\_code, success }
 
 Response body for webhook evaluation test results.
 
@@ -796,7 +796,7 @@ Whether the webhook test was successful (received 2xx response).
 
 <summary>
 
-WebhookEvaluateExistingResponse object {message, status\_code, success }
+WebhookEvaluateExistingResponse object { message, status\_code, success }
 
 Response body for webhook evaluation test results.
 
@@ -836,7 +836,7 @@ POST/accounts/{account\_id}/data-security/posture/webhooks/jobs
 
 <summary>
 
-JobCreateResponse object {created, failed }
+JobCreateResponse object { created, failed }
 
 </summary>
 
@@ -844,7 +844,7 @@ JobCreateResponse object {created, failed }
 
 <summary>
 
-created: array of object {id, asset\_data, created\_at, 9 more }
+created: array of object { id, asset\_data, created\_at, 9 more }
 
 Successfully created webhook jobs.
 
@@ -892,7 +892,7 @@ formatdate-time
 
 <summary>
 
-parameters: object {finding\_instance\_id }
+parameters: object { finding\_instance\_id }
 
 Parameters for a webhook job.
 
@@ -914,7 +914,7 @@ formatuuid
 
 <summary>
 
-status: "pending"or "processing"or "completed"or "failed"
+status: "pending" or "processing" or "completed" or "failed"
 
 Status of a webhook job.
 
@@ -946,7 +946,7 @@ One of the following:
 
 <summary>
 
-triggered\_by\_actor: "user"or "account\_token"
+triggered\_by\_actor: "user" or "account\_token"
 
 Type of actor that triggered the webhook job.
 
@@ -990,7 +990,7 @@ Additional details about the failure.
 
 <summary>
 
-failure\_reason: optional "Permission Denied"or "Integration Unavailable"or "Service Temporarily Unavailable"or "System Error"
+failure\_reason: optional "Permission Denied" or "Integration Unavailable" or "Service Temporarily Unavailable" or "System Error"
 
 Reason for webhook job failure.
 
@@ -1026,7 +1026,7 @@ One of the following:
 
 <summary>
 
-failed: array of object {error, finding\_instance\_id, webhook\_id }
+failed: array of object { error, finding\_instance\_id, webhook\_id }
 
 Failed webhook job creation attempts.
 

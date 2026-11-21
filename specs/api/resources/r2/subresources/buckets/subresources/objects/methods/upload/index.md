@@ -68,7 +68,7 @@ The key (name) to assign to the object. May contain slashes for path-like keys. 
 
 <summary>
 
-"cf-r2-jurisdiction": optional "default"or "eu"or "us"or 2 more
+"cf-r2-jurisdiction": optional "default" or "eu" or "us" or 2 more
 
 </summary>
 
@@ -102,7 +102,7 @@ One of the following:
 
 <summary>
 
-"cf-r2-storage-class": optional "Standard"or "InfrequentAccess"
+"cf-r2-storage-class": optional "Standard" or "InfrequentAccess"
 
 Storage class for newly uploaded objects, unless specified otherwise.
 
@@ -158,7 +158,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -182,7 +182,7 @@ messages: array of string
 
 <summary>
 
-result: object {etag, key, size, 3 more }
+result: object { etag, key, size, 3 more }
 
 Result of a successful object upload.
 
@@ -210,7 +210,7 @@ The size of the uploaded object in bytes (as a string).
 
 <summary>
 
-storage\_class: optional "Standard"or "InfrequentAccess"
+storage\_class: optional "Standard" or "InfrequentAccess"
 
 Storage class for newly uploaded objects, unless specified otherwise.
 

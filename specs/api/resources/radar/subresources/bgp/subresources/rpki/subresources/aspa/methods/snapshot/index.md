@@ -82,7 +82,7 @@ formatdate-time
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -120,7 +120,7 @@ Filter by provider ASN (an authorized upstream provider in ASPA objects).
 
 <summary>
 
-result: object {asnInfo, aspaObjects, meta }
+result: object { asnInfo, aspaObjects, meta }
 
 </summary>
 
@@ -128,7 +128,7 @@ result: object {asnInfo, aspaObjects, meta }
 
 <summary>
 
-asnInfo: object {"13335" }
+asnInfo: object { "13335" }
 
 </summary>
 
@@ -136,7 +136,7 @@ asnInfo: object {"13335" }
 
 <summary>
 
-"13335": object {asn, country, name }
+"13335": object { asn, country, name }
 
 </summary>
 
@@ -170,7 +170,7 @@ AS name.
 
 <summary>
 
-aspaObjects: array of object {customerAsn, providers }
+aspaObjects: array of object { customerAsn, providers }
 
 </summary>
 
@@ -192,7 +192,7 @@ providers: array of number
 
 <summary>
 
-meta: object {dataTime, queryTime, totalCount }
+meta: object { dataTime, queryTime, totalCount }
 
 </summary>
 

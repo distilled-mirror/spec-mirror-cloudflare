@@ -44,7 +44,7 @@ DELETE/zones/{zone\_id}/leaked-credential-checks/detections/{detection\_id}
 
 <summary>
 
-DetectionListResponse object {id, password, username }
+DetectionListResponse object { id, password, username }
 
 Defines a custom set of username/password expressions to match Leaked Credential Checks on.
 
@@ -78,7 +78,7 @@ Defines the ruleset expression to use in matching the username in a request.
 
 <summary>
 
-DetectionCreateResponse object {id, password, username }
+DetectionCreateResponse object { id, password, username }
 
 Defines a custom set of username/password expressions to match Leaked Credential Checks on.
 
@@ -112,7 +112,7 @@ Defines the ruleset expression to use in matching the username in a request.
 
 <summary>
 
-DetectionGetResponse object {id, password, username }
+DetectionGetResponse object { id, password, username }
 
 Defines a custom set of username/password expressions to match Leaked Credential Checks on.
 
@@ -146,7 +146,7 @@ Defines the ruleset expression to use in matching the username in a request.
 
 <summary>
 
-DetectionUpdateResponse object {id, password, username }
+DetectionUpdateResponse object { id, password, username }
 
 Defines a custom set of username/password expressions to match Leaked Credential Checks on.
 

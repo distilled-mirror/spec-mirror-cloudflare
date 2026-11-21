@@ -30,7 +30,7 @@ DELETE/accounts/{account\_id}/cloudforce-one/events/relate/{event\_id}
 
 <summary>
 
-RelateDeleteResponse object {success }
+RelateDeleteResponse object { success }
 
 </summary>
 

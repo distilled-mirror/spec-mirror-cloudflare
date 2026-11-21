@@ -136,7 +136,7 @@ One of the following:
 
 <summary>
 
-BotFightModeConfiguration object {ai\_agents, ai\_bots\_migration\_opt\_out, ai\_bots\_protection, 13 more }
+BotFightModeConfiguration object { ai\_agents, ai\_bots\_migration\_opt\_out, ai\_bots\_protection, 13 more }
 
 </summary>
 
@@ -144,7 +144,7 @@ BotFightModeConfiguration object {ai\_agents, ai\_bots\_migration\_opt\_out, ai\
 
 <summary>
 
-ai\_agents: optional object {anthropic\_agent, google\_agent, instinct, 2 more }
+ai\_agents: optional object { anthropic\_agent, google\_agent, instinct, 2 more }
 
 Configure blocking behavior for supported personal AI agents.
 
@@ -154,7 +154,7 @@ Configure blocking behavior for supported personal AI agents.
 
 <summary>
 
-anthropic\_agent: optional "disabled"or "block"or "only\_on\_ad\_pages"
+anthropic\_agent: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Action to apply to one supported personal AI agent.
 
@@ -182,7 +182,7 @@ One of the following:
 
 <summary>
 
-google\_agent: optional "disabled"or "block"or "only\_on\_ad\_pages"
+google\_agent: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Action to apply to one supported personal AI agent.
 
@@ -210,7 +210,7 @@ One of the following:
 
 <summary>
 
-instinct: optional "disabled"or "block"or "only\_on\_ad\_pages"
+instinct: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Action to apply to one supported personal AI agent.
 
@@ -238,7 +238,7 @@ One of the following:
 
 <summary>
 
-muse: optional "disabled"or "block"or "only\_on\_ad\_pages"
+muse: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Action to apply to one supported personal AI agent.
 
@@ -266,7 +266,7 @@ One of the following:
 
 <summary>
 
-openai\_agent: optional "disabled"or "block"or "only\_on\_ad\_pages"
+openai\_agent: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Action to apply to one supported personal AI agent.
 
@@ -304,7 +304,7 @@ Temporary migration flag tracking zones opted out of AI bots managed-rule update
 
 <summary>
 
-ai\_bots\_protection: optional "block"or "disabled"or "only\_on\_ad\_pages"
+ai\_bots\_protection: optional "block" or "disabled" or "only\_on\_ad\_pages"
 
 Enable rule to block AI Scrapers and Crawlers.
 
@@ -332,7 +332,7 @@ One of the following:
 
 <summary>
 
-ai\_search: optional "disabled"or "block"or "only\_on\_ad\_pages"
+ai\_search: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Configure robots.txt policy for AI search bots.
 
@@ -360,7 +360,7 @@ One of the following:
 
 <summary>
 
-ai\_training: optional "disabled"or "disallow"or "block"or "only\_on\_ad\_pages"
+ai\_training: optional "disabled" or "disallow" or "block" or "only\_on\_ad\_pages"
 
 Configure robots.txt policy for AI model training bots.
 
@@ -392,7 +392,7 @@ One of the following:
 
 <summary>
 
-ai\_user: optional "disabled"or "block"or "only\_on\_ad\_pages"
+ai\_user: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Configure robots.txt policy for AI assistant and agent bots.
 
@@ -426,7 +426,7 @@ Enable Bot Preference Sync for this zone. When enabled, Cloudflare can serve rob
 
 <summary>
 
-cf\_robots\_variant: optional "off"or "policy\_only"
+cf\_robots\_variant: optional "off" or "policy\_only"
 
 Specifies the Robots Access Control License variant to use.
 
@@ -450,7 +450,7 @@ One of the following:
 
 <summary>
 
-content\_bots\_protection: optional "block"or "disabled"
+content\_bots\_protection: optional "block" or "disabled"
 
 Enable rule to block content bots. When enabled, blocks automated traffic with low bot scores, excluding safe verified bot categories. Exceptions should be managed via skip rules.
 
@@ -474,7 +474,7 @@ One of the following:
 
 <summary>
 
-crawler\_protection: optional "enabled"or "disabled"
+crawler\_protection: optional "enabled" or "disabled"
 
 Enable rule to punish AI Scrapers and Crawlers via a link maze.
 
@@ -522,7 +522,7 @@ Whether to use JavaScript Detection results submitted through the API for this z
 
 <summary>
 
-stale\_zone\_configuration: optional object {optimize\_wordpress, sbfm\_definitely\_automated, sbfm\_likely\_automated, 3 more }
+stale\_zone\_configuration: optional object { optimize\_wordpress, sbfm\_definitely\_automated, sbfm\_likely\_automated, 3 more }
 
 A read-only field that shows which unauthorized settings are currently active on the zone. These settings typically result from upgrades or downgrades.
 
@@ -582,7 +582,7 @@ A read-only field that indicates whether the zone currently is running the lates
 
 <summary>
 
-SuperBotFightModeDefinitelyConfiguration object {ai\_agents, ai\_bots\_migration\_opt\_out, ai\_bots\_protection, 16 more }
+SuperBotFightModeDefinitelyConfiguration object { ai\_agents, ai\_bots\_migration\_opt\_out, ai\_bots\_protection, 16 more }
 
 </summary>
 
@@ -590,7 +590,7 @@ SuperBotFightModeDefinitelyConfiguration object {ai\_agents, ai\_bots\_migration
 
 <summary>
 
-ai\_agents: optional object {anthropic\_agent, google\_agent, instinct, 2 more }
+ai\_agents: optional object { anthropic\_agent, google\_agent, instinct, 2 more }
 
 Configure blocking behavior for supported personal AI agents.
 
@@ -600,7 +600,7 @@ Configure blocking behavior for supported personal AI agents.
 
 <summary>
 
-anthropic\_agent: optional "disabled"or "block"or "only\_on\_ad\_pages"
+anthropic\_agent: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Action to apply to one supported personal AI agent.
 
@@ -628,7 +628,7 @@ One of the following:
 
 <summary>
 
-google\_agent: optional "disabled"or "block"or "only\_on\_ad\_pages"
+google\_agent: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Action to apply to one supported personal AI agent.
 
@@ -656,7 +656,7 @@ One of the following:
 
 <summary>
 
-instinct: optional "disabled"or "block"or "only\_on\_ad\_pages"
+instinct: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Action to apply to one supported personal AI agent.
 
@@ -684,7 +684,7 @@ One of the following:
 
 <summary>
 
-muse: optional "disabled"or "block"or "only\_on\_ad\_pages"
+muse: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Action to apply to one supported personal AI agent.
 
@@ -712,7 +712,7 @@ One of the following:
 
 <summary>
 
-openai\_agent: optional "disabled"or "block"or "only\_on\_ad\_pages"
+openai\_agent: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Action to apply to one supported personal AI agent.
 
@@ -750,7 +750,7 @@ Temporary migration flag tracking zones opted out of AI bots managed-rule update
 
 <summary>
 
-ai\_bots\_protection: optional "block"or "disabled"or "only\_on\_ad\_pages"
+ai\_bots\_protection: optional "block" or "disabled" or "only\_on\_ad\_pages"
 
 Enable rule to block AI Scrapers and Crawlers.
 
@@ -778,7 +778,7 @@ One of the following:
 
 <summary>
 
-ai\_search: optional "disabled"or "block"or "only\_on\_ad\_pages"
+ai\_search: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Configure robots.txt policy for AI search bots.
 
@@ -806,7 +806,7 @@ One of the following:
 
 <summary>
 
-ai\_training: optional "disabled"or "disallow"or "block"or "only\_on\_ad\_pages"
+ai\_training: optional "disabled" or "disallow" or "block" or "only\_on\_ad\_pages"
 
 Configure robots.txt policy for AI model training bots.
 
@@ -838,7 +838,7 @@ One of the following:
 
 <summary>
 
-ai\_user: optional "disabled"or "block"or "only\_on\_ad\_pages"
+ai\_user: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Configure robots.txt policy for AI assistant and agent bots.
 
@@ -872,7 +872,7 @@ Enable Bot Preference Sync for this zone. When enabled, Cloudflare can serve rob
 
 <summary>
 
-cf\_robots\_variant: optional "off"or "policy\_only"
+cf\_robots\_variant: optional "off" or "policy\_only"
 
 Specifies the Robots Access Control License variant to use.
 
@@ -896,7 +896,7 @@ One of the following:
 
 <summary>
 
-content\_bots\_protection: optional "block"or "disabled"
+content\_bots\_protection: optional "block" or "disabled"
 
 Enable rule to block content bots. When enabled, blocks automated traffic with low bot scores, excluding safe verified bot categories. Exceptions should be managed via skip rules.
 
@@ -920,7 +920,7 @@ One of the following:
 
 <summary>
 
-crawler\_protection: optional "enabled"or "disabled"
+crawler\_protection: optional "enabled" or "disabled"
 
 Enable rule to punish AI Scrapers and Crawlers via a link maze.
 
@@ -968,7 +968,7 @@ Whether to optimize Super Bot Fight Mode protections for Wordpress.
 
 <summary>
 
-sbfm\_definitely\_automated: optional "allow"or "block"or "managed\_challenge"
+sbfm\_definitely\_automated: optional "allow" or "block" or "managed\_challenge"
 
 Super Bot Fight Mode (SBFM) action to take on definitely automated requests.
 
@@ -1002,7 +1002,7 @@ Super Bot Fight Mode (SBFM) to enable static resource protection. Enable if stat
 
 <summary>
 
-sbfm\_verified\_bots: optional "allow"or "block"
+sbfm\_verified\_bots: optional "allow" or "block"
 
 Super Bot Fight Mode (SBFM) action to take on verified bots requests.
 
@@ -1026,7 +1026,7 @@ One of the following:
 
 <summary>
 
-stale\_zone\_configuration: optional object {fight\_mode, sbfm\_likely\_automated }
+stale\_zone\_configuration: optional object { fight\_mode, sbfm\_likely\_automated }
 
 A read-only field that shows which unauthorized settings are currently active on the zone. These settings typically result from upgrades or downgrades.
 
@@ -1062,7 +1062,7 @@ A read-only field that indicates whether the zone currently is running the lates
 
 <summary>
 
-SuperBotFightModeLikelyConfiguration object {ai\_agents, ai\_bots\_migration\_opt\_out, ai\_bots\_protection, 17 more }
+SuperBotFightModeLikelyConfiguration object { ai\_agents, ai\_bots\_migration\_opt\_out, ai\_bots\_protection, 17 more }
 
 </summary>
 
@@ -1070,7 +1070,7 @@ SuperBotFightModeLikelyConfiguration object {ai\_agents, ai\_bots\_migration\_op
 
 <summary>
 
-ai\_agents: optional object {anthropic\_agent, google\_agent, instinct, 2 more }
+ai\_agents: optional object { anthropic\_agent, google\_agent, instinct, 2 more }
 
 Configure blocking behavior for supported personal AI agents.
 
@@ -1080,7 +1080,7 @@ Configure blocking behavior for supported personal AI agents.
 
 <summary>
 
-anthropic\_agent: optional "disabled"or "block"or "only\_on\_ad\_pages"
+anthropic\_agent: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Action to apply to one supported personal AI agent.
 
@@ -1108,7 +1108,7 @@ One of the following:
 
 <summary>
 
-google\_agent: optional "disabled"or "block"or "only\_on\_ad\_pages"
+google\_agent: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Action to apply to one supported personal AI agent.
 
@@ -1136,7 +1136,7 @@ One of the following:
 
 <summary>
 
-instinct: optional "disabled"or "block"or "only\_on\_ad\_pages"
+instinct: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Action to apply to one supported personal AI agent.
 
@@ -1164,7 +1164,7 @@ One of the following:
 
 <summary>
 
-muse: optional "disabled"or "block"or "only\_on\_ad\_pages"
+muse: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Action to apply to one supported personal AI agent.
 
@@ -1192,7 +1192,7 @@ One of the following:
 
 <summary>
 
-openai\_agent: optional "disabled"or "block"or "only\_on\_ad\_pages"
+openai\_agent: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Action to apply to one supported personal AI agent.
 
@@ -1230,7 +1230,7 @@ Temporary migration flag tracking zones opted out of AI bots managed-rule update
 
 <summary>
 
-ai\_bots\_protection: optional "block"or "disabled"or "only\_on\_ad\_pages"
+ai\_bots\_protection: optional "block" or "disabled" or "only\_on\_ad\_pages"
 
 Enable rule to block AI Scrapers and Crawlers.
 
@@ -1258,7 +1258,7 @@ One of the following:
 
 <summary>
 
-ai\_search: optional "disabled"or "block"or "only\_on\_ad\_pages"
+ai\_search: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Configure robots.txt policy for AI search bots.
 
@@ -1286,7 +1286,7 @@ One of the following:
 
 <summary>
 
-ai\_training: optional "disabled"or "disallow"or "block"or "only\_on\_ad\_pages"
+ai\_training: optional "disabled" or "disallow" or "block" or "only\_on\_ad\_pages"
 
 Configure robots.txt policy for AI model training bots.
 
@@ -1318,7 +1318,7 @@ One of the following:
 
 <summary>
 
-ai\_user: optional "disabled"or "block"or "only\_on\_ad\_pages"
+ai\_user: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Configure robots.txt policy for AI assistant and agent bots.
 
@@ -1352,7 +1352,7 @@ Enable Bot Preference Sync for this zone. When enabled, Cloudflare can serve rob
 
 <summary>
 
-cf\_robots\_variant: optional "off"or "policy\_only"
+cf\_robots\_variant: optional "off" or "policy\_only"
 
 Specifies the Robots Access Control License variant to use.
 
@@ -1376,7 +1376,7 @@ One of the following:
 
 <summary>
 
-content\_bots\_protection: optional "block"or "disabled"
+content\_bots\_protection: optional "block" or "disabled"
 
 Enable rule to block content bots. When enabled, blocks automated traffic with low bot scores, excluding safe verified bot categories. Exceptions should be managed via skip rules.
 
@@ -1400,7 +1400,7 @@ One of the following:
 
 <summary>
 
-crawler\_protection: optional "enabled"or "disabled"
+crawler\_protection: optional "enabled" or "disabled"
 
 Enable rule to punish AI Scrapers and Crawlers via a link maze.
 
@@ -1448,7 +1448,7 @@ Whether to optimize Super Bot Fight Mode protections for Wordpress.
 
 <summary>
 
-sbfm\_definitely\_automated: optional "allow"or "block"or "managed\_challenge"
+sbfm\_definitely\_automated: optional "allow" or "block" or "managed\_challenge"
 
 Super Bot Fight Mode (SBFM) action to take on definitely automated requests.
 
@@ -1476,7 +1476,7 @@ One of the following:
 
 <summary>
 
-sbfm\_likely\_automated: optional "allow"or "block"or "managed\_challenge"
+sbfm\_likely\_automated: optional "allow" or "block" or "managed\_challenge"
 
 Super Bot Fight Mode (SBFM) action to take on likely automated requests.
 
@@ -1510,7 +1510,7 @@ Super Bot Fight Mode (SBFM) to enable static resource protection. Enable if stat
 
 <summary>
 
-sbfm\_verified\_bots: optional "allow"or "block"
+sbfm\_verified\_bots: optional "allow" or "block"
 
 Super Bot Fight Mode (SBFM) action to take on verified bots requests.
 
@@ -1534,7 +1534,7 @@ One of the following:
 
 <summary>
 
-stale\_zone\_configuration: optional object {fight\_mode }
+stale\_zone\_configuration: optional object { fight\_mode }
 
 A read-only field that shows which unauthorized settings are currently active on the zone. These settings typically result from upgrades or downgrades.
 
@@ -1564,7 +1564,7 @@ A read-only field that indicates whether the zone currently is running the lates
 
 <summary>
 
-SubscriptionConfiguration object {ai\_agents, ai\_bots\_migration\_opt\_out, ai\_bots\_protection, 15 more }
+SubscriptionConfiguration object { ai\_agents, ai\_bots\_migration\_opt\_out, ai\_bots\_protection, 15 more }
 
 </summary>
 
@@ -1572,7 +1572,7 @@ SubscriptionConfiguration object {ai\_agents, ai\_bots\_migration\_opt\_out, ai\
 
 <summary>
 
-ai\_agents: optional object {anthropic\_agent, google\_agent, instinct, 2 more }
+ai\_agents: optional object { anthropic\_agent, google\_agent, instinct, 2 more }
 
 Configure blocking behavior for supported personal AI agents.
 
@@ -1582,7 +1582,7 @@ Configure blocking behavior for supported personal AI agents.
 
 <summary>
 
-anthropic\_agent: optional "disabled"or "block"or "only\_on\_ad\_pages"
+anthropic\_agent: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Action to apply to one supported personal AI agent.
 
@@ -1610,7 +1610,7 @@ One of the following:
 
 <summary>
 
-google\_agent: optional "disabled"or "block"or "only\_on\_ad\_pages"
+google\_agent: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Action to apply to one supported personal AI agent.
 
@@ -1638,7 +1638,7 @@ One of the following:
 
 <summary>
 
-instinct: optional "disabled"or "block"or "only\_on\_ad\_pages"
+instinct: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Action to apply to one supported personal AI agent.
 
@@ -1666,7 +1666,7 @@ One of the following:
 
 <summary>
 
-muse: optional "disabled"or "block"or "only\_on\_ad\_pages"
+muse: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Action to apply to one supported personal AI agent.
 
@@ -1694,7 +1694,7 @@ One of the following:
 
 <summary>
 
-openai\_agent: optional "disabled"or "block"or "only\_on\_ad\_pages"
+openai\_agent: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Action to apply to one supported personal AI agent.
 
@@ -1732,7 +1732,7 @@ Temporary migration flag tracking zones opted out of AI bots managed-rule update
 
 <summary>
 
-ai\_bots\_protection: optional "block"or "disabled"or "only\_on\_ad\_pages"
+ai\_bots\_protection: optional "block" or "disabled" or "only\_on\_ad\_pages"
 
 Enable rule to block AI Scrapers and Crawlers.
 
@@ -1760,7 +1760,7 @@ One of the following:
 
 <summary>
 
-ai\_search: optional "disabled"or "block"or "only\_on\_ad\_pages"
+ai\_search: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Configure robots.txt policy for AI search bots.
 
@@ -1788,7 +1788,7 @@ One of the following:
 
 <summary>
 
-ai\_training: optional "disabled"or "disallow"or "block"or "only\_on\_ad\_pages"
+ai\_training: optional "disabled" or "disallow" or "block" or "only\_on\_ad\_pages"
 
 Configure robots.txt policy for AI model training bots.
 
@@ -1820,7 +1820,7 @@ One of the following:
 
 <summary>
 
-ai\_user: optional "disabled"or "block"or "only\_on\_ad\_pages"
+ai\_user: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Configure robots.txt policy for AI assistant and agent bots.
 
@@ -1866,7 +1866,7 @@ Enable Bot Preference Sync for this zone. When enabled, Cloudflare can serve rob
 
 <summary>
 
-cf\_robots\_variant: optional "off"or "policy\_only"
+cf\_robots\_variant: optional "off" or "policy\_only"
 
 Specifies the Robots Access Control License variant to use.
 
@@ -1890,7 +1890,7 @@ One of the following:
 
 <summary>
 
-content\_bots\_protection: optional "block"or "disabled"
+content\_bots\_protection: optional "block" or "disabled"
 
 Enable rule to block content bots. When enabled, blocks automated traffic with low bot scores, excluding safe verified bot categories. Exceptions should be managed via skip rules.
 
@@ -1914,7 +1914,7 @@ One of the following:
 
 <summary>
 
-crawler\_protection: optional "enabled"or "disabled"
+crawler\_protection: optional "enabled" or "disabled"
 
 Enable rule to punish AI Scrapers and Crawlers via a link maze.
 
@@ -1956,7 +1956,7 @@ Whether to use JavaScript Detection results submitted through the API for this z
 
 <summary>
 
-stale\_zone\_configuration: optional object {fight\_mode, optimize\_wordpress, sbfm\_definitely\_automated, 3 more }
+stale\_zone\_configuration: optional object { fight\_mode, optimize\_wordpress, sbfm\_definitely\_automated, 3 more }
 
 A read-only field that shows which unauthorized settings are currently active on the zone. These settings typically result from upgrades or downgrades.
 
@@ -2028,7 +2028,7 @@ A read-only field that indicates whether the zone currently is running the lates
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -2050,7 +2050,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -2070,7 +2070,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -2092,7 +2092,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -2128,7 +2128,7 @@ One of the following:
 
 <summary>
 
-BotFightModeConfiguration object {ai\_agents, ai\_bots\_migration\_opt\_out, ai\_bots\_protection, 13 more }
+BotFightModeConfiguration object { ai\_agents, ai\_bots\_migration\_opt\_out, ai\_bots\_protection, 13 more }
 
 </summary>
 
@@ -2136,7 +2136,7 @@ BotFightModeConfiguration object {ai\_agents, ai\_bots\_migration\_opt\_out, ai\
 
 <summary>
 
-ai\_agents: optional object {anthropic\_agent, google\_agent, instinct, 2 more }
+ai\_agents: optional object { anthropic\_agent, google\_agent, instinct, 2 more }
 
 Configure blocking behavior for supported personal AI agents.
 
@@ -2146,7 +2146,7 @@ Configure blocking behavior for supported personal AI agents.
 
 <summary>
 
-anthropic\_agent: optional "disabled"or "block"or "only\_on\_ad\_pages"
+anthropic\_agent: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Action to apply to one supported personal AI agent.
 
@@ -2174,7 +2174,7 @@ One of the following:
 
 <summary>
 
-google\_agent: optional "disabled"or "block"or "only\_on\_ad\_pages"
+google\_agent: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Action to apply to one supported personal AI agent.
 
@@ -2202,7 +2202,7 @@ One of the following:
 
 <summary>
 
-instinct: optional "disabled"or "block"or "only\_on\_ad\_pages"
+instinct: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Action to apply to one supported personal AI agent.
 
@@ -2230,7 +2230,7 @@ One of the following:
 
 <summary>
 
-muse: optional "disabled"or "block"or "only\_on\_ad\_pages"
+muse: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Action to apply to one supported personal AI agent.
 
@@ -2258,7 +2258,7 @@ One of the following:
 
 <summary>
 
-openai\_agent: optional "disabled"or "block"or "only\_on\_ad\_pages"
+openai\_agent: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Action to apply to one supported personal AI agent.
 
@@ -2296,7 +2296,7 @@ Temporary migration flag tracking zones opted out of AI bots managed-rule update
 
 <summary>
 
-ai\_bots\_protection: optional "block"or "disabled"or "only\_on\_ad\_pages"
+ai\_bots\_protection: optional "block" or "disabled" or "only\_on\_ad\_pages"
 
 Enable rule to block AI Scrapers and Crawlers.
 
@@ -2324,7 +2324,7 @@ One of the following:
 
 <summary>
 
-ai\_search: optional "disabled"or "block"or "only\_on\_ad\_pages"
+ai\_search: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Configure robots.txt policy for AI search bots.
 
@@ -2352,7 +2352,7 @@ One of the following:
 
 <summary>
 
-ai\_training: optional "disabled"or "disallow"or "block"or "only\_on\_ad\_pages"
+ai\_training: optional "disabled" or "disallow" or "block" or "only\_on\_ad\_pages"
 
 Configure robots.txt policy for AI model training bots.
 
@@ -2384,7 +2384,7 @@ One of the following:
 
 <summary>
 
-ai\_user: optional "disabled"or "block"or "only\_on\_ad\_pages"
+ai\_user: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Configure robots.txt policy for AI assistant and agent bots.
 
@@ -2418,7 +2418,7 @@ Enable Bot Preference Sync for this zone. When enabled, Cloudflare can serve rob
 
 <summary>
 
-cf\_robots\_variant: optional "off"or "policy\_only"
+cf\_robots\_variant: optional "off" or "policy\_only"
 
 Specifies the Robots Access Control License variant to use.
 
@@ -2442,7 +2442,7 @@ One of the following:
 
 <summary>
 
-content\_bots\_protection: optional "block"or "disabled"
+content\_bots\_protection: optional "block" or "disabled"
 
 Enable rule to block content bots. When enabled, blocks automated traffic with low bot scores, excluding safe verified bot categories. Exceptions should be managed via skip rules.
 
@@ -2466,7 +2466,7 @@ One of the following:
 
 <summary>
 
-crawler\_protection: optional "enabled"or "disabled"
+crawler\_protection: optional "enabled" or "disabled"
 
 Enable rule to punish AI Scrapers and Crawlers via a link maze.
 
@@ -2514,7 +2514,7 @@ Whether to use JavaScript Detection results submitted through the API for this z
 
 <summary>
 
-stale\_zone\_configuration: optional object {optimize\_wordpress, sbfm\_definitely\_automated, sbfm\_likely\_automated, 3 more }
+stale\_zone\_configuration: optional object { optimize\_wordpress, sbfm\_definitely\_automated, sbfm\_likely\_automated, 3 more }
 
 A read-only field that shows which unauthorized settings are currently active on the zone. These settings typically result from upgrades or downgrades.
 
@@ -2574,7 +2574,7 @@ A read-only field that indicates whether the zone currently is running the lates
 
 <summary>
 
-SuperBotFightModeDefinitelyConfiguration object {ai\_agents, ai\_bots\_migration\_opt\_out, ai\_bots\_protection, 16 more }
+SuperBotFightModeDefinitelyConfiguration object { ai\_agents, ai\_bots\_migration\_opt\_out, ai\_bots\_protection, 16 more }
 
 </summary>
 
@@ -2582,7 +2582,7 @@ SuperBotFightModeDefinitelyConfiguration object {ai\_agents, ai\_bots\_migration
 
 <summary>
 
-ai\_agents: optional object {anthropic\_agent, google\_agent, instinct, 2 more }
+ai\_agents: optional object { anthropic\_agent, google\_agent, instinct, 2 more }
 
 Configure blocking behavior for supported personal AI agents.
 
@@ -2592,7 +2592,7 @@ Configure blocking behavior for supported personal AI agents.
 
 <summary>
 
-anthropic\_agent: optional "disabled"or "block"or "only\_on\_ad\_pages"
+anthropic\_agent: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Action to apply to one supported personal AI agent.
 
@@ -2620,7 +2620,7 @@ One of the following:
 
 <summary>
 
-google\_agent: optional "disabled"or "block"or "only\_on\_ad\_pages"
+google\_agent: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Action to apply to one supported personal AI agent.
 
@@ -2648,7 +2648,7 @@ One of the following:
 
 <summary>
 
-instinct: optional "disabled"or "block"or "only\_on\_ad\_pages"
+instinct: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Action to apply to one supported personal AI agent.
 
@@ -2676,7 +2676,7 @@ One of the following:
 
 <summary>
 
-muse: optional "disabled"or "block"or "only\_on\_ad\_pages"
+muse: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Action to apply to one supported personal AI agent.
 
@@ -2704,7 +2704,7 @@ One of the following:
 
 <summary>
 
-openai\_agent: optional "disabled"or "block"or "only\_on\_ad\_pages"
+openai\_agent: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Action to apply to one supported personal AI agent.
 
@@ -2742,7 +2742,7 @@ Temporary migration flag tracking zones opted out of AI bots managed-rule update
 
 <summary>
 
-ai\_bots\_protection: optional "block"or "disabled"or "only\_on\_ad\_pages"
+ai\_bots\_protection: optional "block" or "disabled" or "only\_on\_ad\_pages"
 
 Enable rule to block AI Scrapers and Crawlers.
 
@@ -2770,7 +2770,7 @@ One of the following:
 
 <summary>
 
-ai\_search: optional "disabled"or "block"or "only\_on\_ad\_pages"
+ai\_search: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Configure robots.txt policy for AI search bots.
 
@@ -2798,7 +2798,7 @@ One of the following:
 
 <summary>
 
-ai\_training: optional "disabled"or "disallow"or "block"or "only\_on\_ad\_pages"
+ai\_training: optional "disabled" or "disallow" or "block" or "only\_on\_ad\_pages"
 
 Configure robots.txt policy for AI model training bots.
 
@@ -2830,7 +2830,7 @@ One of the following:
 
 <summary>
 
-ai\_user: optional "disabled"or "block"or "only\_on\_ad\_pages"
+ai\_user: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Configure robots.txt policy for AI assistant and agent bots.
 
@@ -2864,7 +2864,7 @@ Enable Bot Preference Sync for this zone. When enabled, Cloudflare can serve rob
 
 <summary>
 
-cf\_robots\_variant: optional "off"or "policy\_only"
+cf\_robots\_variant: optional "off" or "policy\_only"
 
 Specifies the Robots Access Control License variant to use.
 
@@ -2888,7 +2888,7 @@ One of the following:
 
 <summary>
 
-content\_bots\_protection: optional "block"or "disabled"
+content\_bots\_protection: optional "block" or "disabled"
 
 Enable rule to block content bots. When enabled, blocks automated traffic with low bot scores, excluding safe verified bot categories. Exceptions should be managed via skip rules.
 
@@ -2912,7 +2912,7 @@ One of the following:
 
 <summary>
 
-crawler\_protection: optional "enabled"or "disabled"
+crawler\_protection: optional "enabled" or "disabled"
 
 Enable rule to punish AI Scrapers and Crawlers via a link maze.
 
@@ -2960,7 +2960,7 @@ Whether to optimize Super Bot Fight Mode protections for Wordpress.
 
 <summary>
 
-sbfm\_definitely\_automated: optional "allow"or "block"or "managed\_challenge"
+sbfm\_definitely\_automated: optional "allow" or "block" or "managed\_challenge"
 
 Super Bot Fight Mode (SBFM) action to take on definitely automated requests.
 
@@ -2994,7 +2994,7 @@ Super Bot Fight Mode (SBFM) to enable static resource protection. Enable if stat
 
 <summary>
 
-sbfm\_verified\_bots: optional "allow"or "block"
+sbfm\_verified\_bots: optional "allow" or "block"
 
 Super Bot Fight Mode (SBFM) action to take on verified bots requests.
 
@@ -3018,7 +3018,7 @@ One of the following:
 
 <summary>
 
-stale\_zone\_configuration: optional object {fight\_mode, sbfm\_likely\_automated }
+stale\_zone\_configuration: optional object { fight\_mode, sbfm\_likely\_automated }
 
 A read-only field that shows which unauthorized settings are currently active on the zone. These settings typically result from upgrades or downgrades.
 
@@ -3054,7 +3054,7 @@ A read-only field that indicates whether the zone currently is running the lates
 
 <summary>
 
-SuperBotFightModeLikelyConfiguration object {ai\_agents, ai\_bots\_migration\_opt\_out, ai\_bots\_protection, 17 more }
+SuperBotFightModeLikelyConfiguration object { ai\_agents, ai\_bots\_migration\_opt\_out, ai\_bots\_protection, 17 more }
 
 </summary>
 
@@ -3062,7 +3062,7 @@ SuperBotFightModeLikelyConfiguration object {ai\_agents, ai\_bots\_migration\_op
 
 <summary>
 
-ai\_agents: optional object {anthropic\_agent, google\_agent, instinct, 2 more }
+ai\_agents: optional object { anthropic\_agent, google\_agent, instinct, 2 more }
 
 Configure blocking behavior for supported personal AI agents.
 
@@ -3072,7 +3072,7 @@ Configure blocking behavior for supported personal AI agents.
 
 <summary>
 
-anthropic\_agent: optional "disabled"or "block"or "only\_on\_ad\_pages"
+anthropic\_agent: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Action to apply to one supported personal AI agent.
 
@@ -3100,7 +3100,7 @@ One of the following:
 
 <summary>
 
-google\_agent: optional "disabled"or "block"or "only\_on\_ad\_pages"
+google\_agent: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Action to apply to one supported personal AI agent.
 
@@ -3128,7 +3128,7 @@ One of the following:
 
 <summary>
 
-instinct: optional "disabled"or "block"or "only\_on\_ad\_pages"
+instinct: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Action to apply to one supported personal AI agent.
 
@@ -3156,7 +3156,7 @@ One of the following:
 
 <summary>
 
-muse: optional "disabled"or "block"or "only\_on\_ad\_pages"
+muse: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Action to apply to one supported personal AI agent.
 
@@ -3184,7 +3184,7 @@ One of the following:
 
 <summary>
 
-openai\_agent: optional "disabled"or "block"or "only\_on\_ad\_pages"
+openai\_agent: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Action to apply to one supported personal AI agent.
 
@@ -3222,7 +3222,7 @@ Temporary migration flag tracking zones opted out of AI bots managed-rule update
 
 <summary>
 
-ai\_bots\_protection: optional "block"or "disabled"or "only\_on\_ad\_pages"
+ai\_bots\_protection: optional "block" or "disabled" or "only\_on\_ad\_pages"
 
 Enable rule to block AI Scrapers and Crawlers.
 
@@ -3250,7 +3250,7 @@ One of the following:
 
 <summary>
 
-ai\_search: optional "disabled"or "block"or "only\_on\_ad\_pages"
+ai\_search: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Configure robots.txt policy for AI search bots.
 
@@ -3278,7 +3278,7 @@ One of the following:
 
 <summary>
 
-ai\_training: optional "disabled"or "disallow"or "block"or "only\_on\_ad\_pages"
+ai\_training: optional "disabled" or "disallow" or "block" or "only\_on\_ad\_pages"
 
 Configure robots.txt policy for AI model training bots.
 
@@ -3310,7 +3310,7 @@ One of the following:
 
 <summary>
 
-ai\_user: optional "disabled"or "block"or "only\_on\_ad\_pages"
+ai\_user: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Configure robots.txt policy for AI assistant and agent bots.
 
@@ -3344,7 +3344,7 @@ Enable Bot Preference Sync for this zone. When enabled, Cloudflare can serve rob
 
 <summary>
 
-cf\_robots\_variant: optional "off"or "policy\_only"
+cf\_robots\_variant: optional "off" or "policy\_only"
 
 Specifies the Robots Access Control License variant to use.
 
@@ -3368,7 +3368,7 @@ One of the following:
 
 <summary>
 
-content\_bots\_protection: optional "block"or "disabled"
+content\_bots\_protection: optional "block" or "disabled"
 
 Enable rule to block content bots. When enabled, blocks automated traffic with low bot scores, excluding safe verified bot categories. Exceptions should be managed via skip rules.
 
@@ -3392,7 +3392,7 @@ One of the following:
 
 <summary>
 
-crawler\_protection: optional "enabled"or "disabled"
+crawler\_protection: optional "enabled" or "disabled"
 
 Enable rule to punish AI Scrapers and Crawlers via a link maze.
 
@@ -3440,7 +3440,7 @@ Whether to optimize Super Bot Fight Mode protections for Wordpress.
 
 <summary>
 
-sbfm\_definitely\_automated: optional "allow"or "block"or "managed\_challenge"
+sbfm\_definitely\_automated: optional "allow" or "block" or "managed\_challenge"
 
 Super Bot Fight Mode (SBFM) action to take on definitely automated requests.
 
@@ -3468,7 +3468,7 @@ One of the following:
 
 <summary>
 
-sbfm\_likely\_automated: optional "allow"or "block"or "managed\_challenge"
+sbfm\_likely\_automated: optional "allow" or "block" or "managed\_challenge"
 
 Super Bot Fight Mode (SBFM) action to take on likely automated requests.
 
@@ -3502,7 +3502,7 @@ Super Bot Fight Mode (SBFM) to enable static resource protection. Enable if stat
 
 <summary>
 
-sbfm\_verified\_bots: optional "allow"or "block"
+sbfm\_verified\_bots: optional "allow" or "block"
 
 Super Bot Fight Mode (SBFM) action to take on verified bots requests.
 
@@ -3526,7 +3526,7 @@ One of the following:
 
 <summary>
 
-stale\_zone\_configuration: optional object {fight\_mode }
+stale\_zone\_configuration: optional object { fight\_mode }
 
 A read-only field that shows which unauthorized settings are currently active on the zone. These settings typically result from upgrades or downgrades.
 
@@ -3556,7 +3556,7 @@ A read-only field that indicates whether the zone currently is running the lates
 
 <summary>
 
-SubscriptionConfiguration object {ai\_agents, ai\_bots\_migration\_opt\_out, ai\_bots\_protection, 15 more }
+SubscriptionConfiguration object { ai\_agents, ai\_bots\_migration\_opt\_out, ai\_bots\_protection, 15 more }
 
 </summary>
 
@@ -3564,7 +3564,7 @@ SubscriptionConfiguration object {ai\_agents, ai\_bots\_migration\_opt\_out, ai\
 
 <summary>
 
-ai\_agents: optional object {anthropic\_agent, google\_agent, instinct, 2 more }
+ai\_agents: optional object { anthropic\_agent, google\_agent, instinct, 2 more }
 
 Configure blocking behavior for supported personal AI agents.
 
@@ -3574,7 +3574,7 @@ Configure blocking behavior for supported personal AI agents.
 
 <summary>
 
-anthropic\_agent: optional "disabled"or "block"or "only\_on\_ad\_pages"
+anthropic\_agent: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Action to apply to one supported personal AI agent.
 
@@ -3602,7 +3602,7 @@ One of the following:
 
 <summary>
 
-google\_agent: optional "disabled"or "block"or "only\_on\_ad\_pages"
+google\_agent: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Action to apply to one supported personal AI agent.
 
@@ -3630,7 +3630,7 @@ One of the following:
 
 <summary>
 
-instinct: optional "disabled"or "block"or "only\_on\_ad\_pages"
+instinct: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Action to apply to one supported personal AI agent.
 
@@ -3658,7 +3658,7 @@ One of the following:
 
 <summary>
 
-muse: optional "disabled"or "block"or "only\_on\_ad\_pages"
+muse: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Action to apply to one supported personal AI agent.
 
@@ -3686,7 +3686,7 @@ One of the following:
 
 <summary>
 
-openai\_agent: optional "disabled"or "block"or "only\_on\_ad\_pages"
+openai\_agent: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Action to apply to one supported personal AI agent.
 
@@ -3724,7 +3724,7 @@ Temporary migration flag tracking zones opted out of AI bots managed-rule update
 
 <summary>
 
-ai\_bots\_protection: optional "block"or "disabled"or "only\_on\_ad\_pages"
+ai\_bots\_protection: optional "block" or "disabled" or "only\_on\_ad\_pages"
 
 Enable rule to block AI Scrapers and Crawlers.
 
@@ -3752,7 +3752,7 @@ One of the following:
 
 <summary>
 
-ai\_search: optional "disabled"or "block"or "only\_on\_ad\_pages"
+ai\_search: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Configure robots.txt policy for AI search bots.
 
@@ -3780,7 +3780,7 @@ One of the following:
 
 <summary>
 
-ai\_training: optional "disabled"or "disallow"or "block"or "only\_on\_ad\_pages"
+ai\_training: optional "disabled" or "disallow" or "block" or "only\_on\_ad\_pages"
 
 Configure robots.txt policy for AI model training bots.
 
@@ -3812,7 +3812,7 @@ One of the following:
 
 <summary>
 
-ai\_user: optional "disabled"or "block"or "only\_on\_ad\_pages"
+ai\_user: optional "disabled" or "block" or "only\_on\_ad\_pages"
 
 Configure robots.txt policy for AI assistant and agent bots.
 
@@ -3858,7 +3858,7 @@ Enable Bot Preference Sync for this zone. When enabled, Cloudflare can serve rob
 
 <summary>
 
-cf\_robots\_variant: optional "off"or "policy\_only"
+cf\_robots\_variant: optional "off" or "policy\_only"
 
 Specifies the Robots Access Control License variant to use.
 
@@ -3882,7 +3882,7 @@ One of the following:
 
 <summary>
 
-content\_bots\_protection: optional "block"or "disabled"
+content\_bots\_protection: optional "block" or "disabled"
 
 Enable rule to block content bots. When enabled, blocks automated traffic with low bot scores, excluding safe verified bot categories. Exceptions should be managed via skip rules.
 
@@ -3906,7 +3906,7 @@ One of the following:
 
 <summary>
 
-crawler\_protection: optional "enabled"or "disabled"
+crawler\_protection: optional "enabled" or "disabled"
 
 Enable rule to punish AI Scrapers and Crawlers via a link maze.
 
@@ -3948,7 +3948,7 @@ Whether to use JavaScript Detection results submitted through the API for this z
 
 <summary>
 
-stale\_zone\_configuration: optional object {fight\_mode, optimize\_wordpress, sbfm\_definitely\_automated, 3 more }
+stale\_zone\_configuration: optional object { fight\_mode, optimize\_wordpress, sbfm\_definitely\_automated, 3 more }
 
 A read-only field that shows which unauthorized settings are currently active on the zone. These settings typically result from upgrades or downgrades.
 

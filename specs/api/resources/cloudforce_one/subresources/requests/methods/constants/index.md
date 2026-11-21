@@ -56,7 +56,7 @@ maxLength32
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -78,7 +78,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -98,7 +98,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -120,7 +120,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -154,7 +154,7 @@ result: optional <a href="https://developers.cloudflare.com/api/resources/cloudf
 
 <summary>
 
-priority: optional array of "routine"or "high"or "urgent"
+priority: optional array of "routine" or "high" or "urgent"
 
 </summary>
 
@@ -180,7 +180,7 @@ One of the following:
 
 <summary>
 
-status: optional array of "open"or "accepted"or "reported"or 3 more
+status: optional array of "open" or "accepted" or "reported" or 3 more
 
 </summary>
 
@@ -218,7 +218,7 @@ One of the following:
 
 <summary>
 
-tlp: optional array of "clear"or "amber"or "amber-strict"or 2 more
+tlp: optional array of "clear" or "amber" or "amber-strict" or 2 more
 
 </summary>
 

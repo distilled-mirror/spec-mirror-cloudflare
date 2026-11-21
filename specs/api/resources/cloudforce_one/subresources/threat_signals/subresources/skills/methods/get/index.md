@@ -56,7 +56,7 @@ Custom Skill UUID or a Managed Default Skill ID
 
 <summary>
 
-errors: array of object {message }
+errors: array of object { message }
 
 </summary>
 
@@ -72,7 +72,7 @@ message: string
 
 <summary>
 
-messages: array of object {message, code, custom\_feed\_count, 4 more }
+messages: array of object { message, code, custom\_feed\_count, 4 more }
 
 </summary>
 
@@ -112,7 +112,7 @@ path: optional array of string
 
 <summary>
 
-reason: optional "threat\_signals\_feed\_limit"or "free\_custom\_skills\_disabled"or "free\_skill\_run\_disabled"or 4 more
+reason: optional "threat\_signals\_feed\_limit" or "free\_custom\_skills\_disabled" or "free\_skill\_run\_disabled" or 4 more
 
 </summary>
 
@@ -158,7 +158,7 @@ One of the following:
 
 <summary>
 
-result: object {id, config, created\_at, 7 more }
+result: object { id, config, created\_at, 7 more }
 
 </summary>
 
@@ -200,7 +200,7 @@ prompt: string
 
 <summary>
 
-source: "default"or "custom"
+source: "default" or "custom"
 
 <code>default</code> for Cloudforce One managed skills (read-only), <code>custom</code> for account skills.
 

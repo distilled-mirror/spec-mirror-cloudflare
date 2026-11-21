@@ -58,7 +58,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Zone Settings Write``Zone Settings Read`
+`Workers Metadata Read-Only``Workers Editor``Workers Content Read-Only``Workers Admin``Zone Settings Write``Zone Settings Read``Workers Routes Write``Workers Routes Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -108,7 +108,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -150,7 +150,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -214,7 +214,7 @@ Cumulative Layout Shift.
 
 <summary>
 
-deviceType: optional "DESKTOP"or "MOBILE"
+deviceType: optional "DESKTOP" or "MOBILE"
 
 The type of device.
 
@@ -238,7 +238,7 @@ One of the following:
 
 <summary>
 
-error: optional object {code, detail, finalDisplayedUrl }
+error: optional object { code, detail, finalDisplayedUrl }
 
 </summary>
 
@@ -246,7 +246,7 @@ error: optional object {code, detail, finalDisplayedUrl }
 
 <summary>
 
-code: optional "NOT\_REACHABLE"or "DNS\_FAILURE"or "NOT\_HTML"or 2 more
+code: optional "NOT\_REACHABLE" or "DNS\_FAILURE" or "NOT\_HTML" or 2 more
 
 The error code of the Lighthouse result.
 
@@ -328,7 +328,7 @@ Speed Index.
 
 <summary>
 
-state: optional "RUNNING"or "COMPLETE"or "FAILED"
+state: optional "RUNNING" or "COMPLETE" or "FAILED"
 
 The state of the Lighthouse report.
 
@@ -394,7 +394,7 @@ Cumulative Layout Shift.
 
 <summary>
 
-deviceType: optional "DESKTOP"or "MOBILE"
+deviceType: optional "DESKTOP" or "MOBILE"
 
 The type of device.
 
@@ -418,7 +418,7 @@ One of the following:
 
 <summary>
 
-error: optional object {code, detail, finalDisplayedUrl }
+error: optional object { code, detail, finalDisplayedUrl }
 
 </summary>
 
@@ -426,7 +426,7 @@ error: optional object {code, detail, finalDisplayedUrl }
 
 <summary>
 
-code: optional "NOT\_REACHABLE"or "DNS\_FAILURE"or "NOT\_HTML"or 2 more
+code: optional "NOT\_REACHABLE" or "DNS\_FAILURE" or "NOT\_HTML" or 2 more
 
 The error code of the Lighthouse result.
 
@@ -508,7 +508,7 @@ Speed Index.
 
 <summary>
 
-state: optional "RUNNING"or "COMPLETE"or "FAILED"
+state: optional "RUNNING" or "COMPLETE" or "FAILED"
 
 The state of the Lighthouse report.
 
@@ -572,7 +572,7 @@ label: optional string
 
 <summary>
 
-value: optional "asia-east1"or "asia-northeast1"or "asia-northeast2"or 18 more
+value: optional "asia-east1" or "asia-northeast1" or "asia-northeast2" or 18 more
 
 A test region.
 
@@ -676,7 +676,7 @@ One of the following:
 
 <summary>
 
-scheduleFrequency: optional "DAILY"or "WEEKLY"
+scheduleFrequency: optional "DAILY" or "WEEKLY"
 
 The frequency of the test.
 

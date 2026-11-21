@@ -28,7 +28,7 @@ POST/accounts/{account\_id}/stream/direct\_upload
 
 <summary>
 
-DirectUploadCreateResponse object {scheduledDeletion, uid, uploadURL, watermark }
+DirectUploadCreateResponse object { scheduledDeletion, uid, uploadURL, watermark }
 
 </summary>
 

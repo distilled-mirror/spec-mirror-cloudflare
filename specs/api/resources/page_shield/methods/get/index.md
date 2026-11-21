@@ -100,7 +100,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -142,7 +142,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -162,7 +162,7 @@ pointer: optional string
 
 <summary>
 
-result: optional object {enabled, updated\_at, use\_cloudflare\_reporting\_endpoint, use\_connection\_url\_path }
+result: optional object { enabled, updated\_at, use\_cloudflare\_reporting\_endpoint, use\_connection\_url\_path }
 
 </summary>
 

@@ -50,7 +50,7 @@ DELETE/accounts/{account\_id}/queues/{queue\_id}
 
 <summary>
 
-Queue object {consumers, consumers\_total\_count, created\_on, 7 more }
+Queue object { consumers, consumers\_total\_count, created\_on, 7 more }
 
 </summary>
 
@@ -68,7 +68,7 @@ One of the following:
 
 <summary>
 
-Worker object {consumer\_id, created\_on, dead\_letter\_queue, 4 more }
+Worker object { consumer\_id, created\_on, dead\_letter\_queue, 4 more }
 
 </summary>
 
@@ -106,7 +106,7 @@ Name of a Worker
 
 <summary>
 
-settings: optional object {batch\_size, max\_concurrency, max\_retries, 2 more }
+settings: optional object { batch\_size, max\_concurrency, max\_retries, 2 more }
 
 </summary>
 
@@ -156,7 +156,7 @@ type: optional "worker"
 
 <summary>
 
-HTTPPull object {consumer\_id, created\_on, dead\_letter\_queue, 3 more }
+HTTPPull object { consumer\_id, created\_on, dead\_letter\_queue, 3 more }
 
 </summary>
 
@@ -188,7 +188,7 @@ queue\_name: optional string
 
 <summary>
 
-settings: optional object {batch\_size, max\_retries, retry\_delay, visibility\_timeout\_ms }
+settings: optional object { batch\_size, max\_retries, retry\_delay, visibility\_timeout\_ms }
 
 </summary>
 
@@ -244,7 +244,7 @@ created\_on: optional string
 
 <summary>
 
-jurisdiction: optional "eu"or "us"or "fedramp"
+jurisdiction: optional "eu" or "us" or "fedramp"
 
 </summary>
 
@@ -274,7 +274,7 @@ modified\_on: optional string
 
 <summary>
 
-producers: optional array of object {script, type } or object {bucket\_name, type }
+producers: optional array of object { script, type } or object { bucket\_name, type }
 
 </summary>
 
@@ -284,7 +284,7 @@ One of the following:
 
 <summary>
 
-MqWorkerProducer object {script, type }
+MqWorkerProducer object { script, type }
 
 </summary>
 
@@ -304,7 +304,7 @@ type: optional "worker"
 
 <summary>
 
-MqR2Producer object {bucket\_name, type }
+MqR2Producer object { bucket\_name, type }
 
 </summary>
 
@@ -340,7 +340,7 @@ queue\_name: optional string
 
 <summary>
 
-settings: optional object {delivery\_delay, delivery\_paused, message\_retention\_period }
+settings: optional object { delivery\_delay, delivery\_paused, message\_retention\_period }
 
 </summary>
 
@@ -374,7 +374,7 @@ Number of seconds after which an unconsumed message will be delayed.
 
 <summary>
 
-QueueGetMetricsResponse object {backlog\_bytes, backlog\_count, oldest\_message\_timestamp\_ms }
+QueueGetMetricsResponse object { backlog\_bytes, backlog\_count, oldest\_message\_timestamp\_ms }
 
 Best-effort metrics for the queue. Values may be approximate due to the distributed nature of queues.
 
@@ -406,7 +406,7 @@ Unix timestamp in milliseconds of the oldest unacknowledged message in the queue
 
 <summary>
 
-QueueDeleteResponse object {errors, messages, success }
+QueueDeleteResponse object { errors, messages, success }
 
 </summary>
 
@@ -438,7 +438,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -500,7 +500,7 @@ POST/accounts/{account\_id}/queues/{queue\_id}/messages/purge
 
 <summary>
 
-MessagePushResponse object {metadata }
+MessagePushResponse object { metadata }
 
 </summary>
 
@@ -508,7 +508,7 @@ MessagePushResponse object {metadata }
 
 <summary>
 
-metadata: optional object {metrics }
+metadata: optional object { metrics }
 
 </summary>
 
@@ -516,7 +516,7 @@ metadata: optional object {metrics }
 
 <summary>
 
-metrics: optional object {backlog\_bytes, backlog\_count, oldest\_message\_timestamp\_ms }
+metrics: optional object { backlog\_bytes, backlog\_count, oldest\_message\_timestamp\_ms }
 
 Best-effort metrics for the queue. Values may be approximate due to the distributed nature of queues.
 
@@ -556,7 +556,7 @@ Unix timestamp in milliseconds of the oldest unacknowledged message in the queue
 
 <summary>
 
-MessageAckResponse object {ackCount, retryCount, warnings }
+MessageAckResponse object { ackCount, retryCount, warnings }
 
 </summary>
 
@@ -586,7 +586,7 @@ Map of lease IDs to warning messages encountered during acknowledgement.
 
 <summary>
 
-MessagePullResponse object {message\_backlog\_count, messages, metadata }
+MessagePullResponse object { message\_backlog\_count, messages, metadata }
 
 </summary>
 
@@ -600,7 +600,7 @@ The number of unacknowledged messages in the queue.
 
 <summary>
 
-messages: optional array of object {id, attempts, body, 3 more }
+messages: optional array of object { id, attempts, body, 3 more }
 
 </summary>
 
@@ -638,7 +638,7 @@ timestamp\_ms: optional number
 
 <summary>
 
-metadata: optional object {metrics }
+metadata: optional object { metrics }
 
 </summary>
 
@@ -646,7 +646,7 @@ metadata: optional object {metrics }
 
 <summary>
 
-metrics: optional object {backlog\_bytes, backlog\_count, oldest\_message\_timestamp\_ms }
+metrics: optional object { backlog\_bytes, backlog\_count, oldest\_message\_timestamp\_ms }
 
 Best-effort metrics for the queue. Values may be approximate due to the distributed nature of queues.
 
@@ -686,7 +686,7 @@ Unix timestamp in milliseconds of the oldest unacknowledged message in the queue
 
 <summary>
 
-MessageBulkPushResponse object {metadata }
+MessageBulkPushResponse object { metadata }
 
 </summary>
 
@@ -694,7 +694,7 @@ MessageBulkPushResponse object {metadata }
 
 <summary>
 
-metadata: optional object {metrics }
+metadata: optional object { metrics }
 
 </summary>
 
@@ -702,7 +702,7 @@ metadata: optional object {metrics }
 
 <summary>
 
-metrics: optional object {backlog\_bytes, backlog\_count, oldest\_message\_timestamp\_ms }
+metrics: optional object { backlog\_bytes, backlog\_count, oldest\_message\_timestamp\_ms }
 
 Best-effort metrics for the queue. Values may be approximate due to the distributed nature of queues.
 
@@ -742,7 +742,7 @@ Unix timestamp in milliseconds of the oldest unacknowledged message in the queue
 
 <summary>
 
-MessagePeekResponse object {messages }
+MessagePeekResponse object { messages }
 
 </summary>
 
@@ -750,7 +750,7 @@ MessagePeekResponse object {messages }
 
 <summary>
 
-messages: optional array of object {id, attempts, body, 3 more }
+messages: optional array of object { id, attempts, body, 3 more }
 
 </summary>
 
@@ -792,7 +792,7 @@ timestamp\_ms: optional number
 
 <summary>
 
-MessagePurgeResponse object {errors, warnings }
+MessagePurgeResponse object { errors, warnings }
 
 </summary>
 
@@ -800,7 +800,7 @@ MessagePurgeResponse object {errors, warnings }
 
 <summary>
 
-errors: optional array of object {message }
+errors: optional array of object { message }
 
 Errors encountered while purging messages.
 
@@ -840,7 +840,7 @@ POST/accounts/{account\_id}/queues/{queue\_id}/purge
 
 <summary>
 
-PurgeStatusResponse object {completed, started\_at }
+PurgeStatusResponse object { completed, started\_at }
 
 </summary>
 
@@ -888,7 +888,7 @@ DELETE/accounts/{account\_id}/queues/{queue\_id}/consumers/{consumer\_id}
 
 <summary>
 
-Consumer = object {consumer\_id, created\_on, dead\_letter\_queue, 4 more } or object {consumer\_id, created\_on, dead\_letter\_queue, 3 more }
+Consumer = object { consumer\_id, created\_on, dead\_letter\_queue, 4 more } or object { consumer\_id, created\_on, dead\_letter\_queue, 3 more }
 
 Response body representing a consumer
 
@@ -900,7 +900,7 @@ One of the following:
 
 <summary>
 
-Worker object {consumer\_id, created\_on, dead\_letter\_queue, 4 more }
+Worker object { consumer\_id, created\_on, dead\_letter\_queue, 4 more }
 
 </summary>
 
@@ -938,7 +938,7 @@ Name of a Worker
 
 <summary>
 
-settings: optional object {batch\_size, max\_concurrency, max\_retries, 2 more }
+settings: optional object { batch\_size, max\_concurrency, max\_retries, 2 more }
 
 </summary>
 
@@ -988,7 +988,7 @@ type: optional "worker"
 
 <summary>
 
-HTTPPull object {consumer\_id, created\_on, dead\_letter\_queue, 3 more }
+HTTPPull object { consumer\_id, created\_on, dead\_letter\_queue, 3 more }
 
 </summary>
 
@@ -1020,7 +1020,7 @@ queue\_name: optional string
 
 <summary>
 
-settings: optional object {batch\_size, max\_retries, retry\_delay, visibility\_timeout\_ms }
+settings: optional object { batch\_size, max\_retries, retry\_delay, visibility\_timeout\_ms }
 
 </summary>
 
@@ -1068,7 +1068,7 @@ type: optional "http\_pull"
 
 <summary>
 
-ConsumerDeleteResponse object {errors, messages, success }
+ConsumerDeleteResponse object { errors, messages, success }
 
 </summary>
 
@@ -1100,7 +1100,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -1158,7 +1158,7 @@ DELETE/accounts/{account\_id}/event\_subscriptions/subscriptions/{subscription\_
 
 <summary>
 
-SubscriptionListResponse object {id, created\_at, destination, 5 more }
+SubscriptionListResponse object { id, created\_at, destination, 5 more }
 
 </summary>
 
@@ -1180,7 +1180,7 @@ formatdate-time
 
 <summary>
 
-destination: object {queue\_id, type }
+destination: object { queue\_id, type }
 
 Destination configuration for the subscription
 
@@ -1232,7 +1232,7 @@ Name of the subscription
 
 <summary>
 
-source: object {type } or object {type } or object {type } or 6 more
+source: object { type } or object { type } or object { type } or 6 more
 
 Source configuration for the subscription
 
@@ -1244,7 +1244,7 @@ One of the following:
 
 <summary>
 
-MqEventSourceImages object {type }
+MqEventSourceImages object { type }
 
 </summary>
 
@@ -1262,7 +1262,7 @@ Type of source
 
 <summary>
 
-MqEventSourceKV object {type }
+MqEventSourceKV object { type }
 
 </summary>
 
@@ -1280,7 +1280,7 @@ Type of source
 
 <summary>
 
-MqEventSourceR2 object {type }
+MqEventSourceR2 object { type }
 
 </summary>
 
@@ -1298,7 +1298,7 @@ Type of source
 
 <summary>
 
-MqEventSourceSuperSlurper object {type }
+MqEventSourceSuperSlurper object { type }
 
 </summary>
 
@@ -1316,7 +1316,7 @@ Type of source
 
 <summary>
 
-MqEventSourceVectorize object {type }
+MqEventSourceVectorize object { type }
 
 </summary>
 
@@ -1334,7 +1334,7 @@ Type of source
 
 <summary>
 
-MqEventSourceWorkersAIModel object {model\_name, type }
+MqEventSourceWorkersAIModel object { model\_name, type }
 
 </summary>
 
@@ -1358,7 +1358,7 @@ Type of source
 
 <summary>
 
-MqEventSourceWorkersBuildsWorker object {type, worker\_name }
+MqEventSourceWorkersBuildsWorker object { type, worker\_name }
 
 </summary>
 
@@ -1382,7 +1382,7 @@ Name of the worker
 
 <summary>
 
-MqEventSourceWorkersScript object {script\_tag, type }
+MqEventSourceWorkersScript object { script\_tag, type }
 
 </summary>
 
@@ -1406,7 +1406,7 @@ Type of source
 
 <summary>
 
-MqEventSourceWorkflowsWorkflow object {type, workflow\_name }
+MqEventSourceWorkflowsWorkflow object { type, workflow\_name }
 
 </summary>
 
@@ -1438,7 +1438,7 @@ Name of the workflow
 
 <summary>
 
-SubscriptionGetResponse object {id, created\_at, destination, 5 more }
+SubscriptionGetResponse object { id, created\_at, destination, 5 more }
 
 </summary>
 
@@ -1460,7 +1460,7 @@ formatdate-time
 
 <summary>
 
-destination: object {queue\_id, type }
+destination: object { queue\_id, type }
 
 Destination configuration for the subscription
 
@@ -1512,7 +1512,7 @@ Name of the subscription
 
 <summary>
 
-source: object {type } or object {type } or object {type } or 6 more
+source: object { type } or object { type } or object { type } or 6 more
 
 Source configuration for the subscription
 
@@ -1524,7 +1524,7 @@ One of the following:
 
 <summary>
 
-MqEventSourceImages object {type }
+MqEventSourceImages object { type }
 
 </summary>
 
@@ -1542,7 +1542,7 @@ Type of source
 
 <summary>
 
-MqEventSourceKV object {type }
+MqEventSourceKV object { type }
 
 </summary>
 
@@ -1560,7 +1560,7 @@ Type of source
 
 <summary>
 
-MqEventSourceR2 object {type }
+MqEventSourceR2 object { type }
 
 </summary>
 
@@ -1578,7 +1578,7 @@ Type of source
 
 <summary>
 
-MqEventSourceSuperSlurper object {type }
+MqEventSourceSuperSlurper object { type }
 
 </summary>
 
@@ -1596,7 +1596,7 @@ Type of source
 
 <summary>
 
-MqEventSourceVectorize object {type }
+MqEventSourceVectorize object { type }
 
 </summary>
 
@@ -1614,7 +1614,7 @@ Type of source
 
 <summary>
 
-MqEventSourceWorkersAIModel object {model\_name, type }
+MqEventSourceWorkersAIModel object { model\_name, type }
 
 </summary>
 
@@ -1638,7 +1638,7 @@ Type of source
 
 <summary>
 
-MqEventSourceWorkersBuildsWorker object {type, worker\_name }
+MqEventSourceWorkersBuildsWorker object { type, worker\_name }
 
 </summary>
 
@@ -1662,7 +1662,7 @@ Name of the worker
 
 <summary>
 
-MqEventSourceWorkersScript object {script\_tag, type }
+MqEventSourceWorkersScript object { script\_tag, type }
 
 </summary>
 
@@ -1686,7 +1686,7 @@ Type of source
 
 <summary>
 
-MqEventSourceWorkflowsWorkflow object {type, workflow\_name }
+MqEventSourceWorkflowsWorkflow object { type, workflow\_name }
 
 </summary>
 
@@ -1718,7 +1718,7 @@ Name of the workflow
 
 <summary>
 
-SubscriptionCreateResponse object {id, created\_at, destination, 5 more }
+SubscriptionCreateResponse object { id, created\_at, destination, 5 more }
 
 </summary>
 
@@ -1740,7 +1740,7 @@ formatdate-time
 
 <summary>
 
-destination: object {queue\_id, type }
+destination: object { queue\_id, type }
 
 Destination configuration for the subscription
 
@@ -1792,7 +1792,7 @@ Name of the subscription
 
 <summary>
 
-source: object {type } or object {type } or object {type } or 6 more
+source: object { type } or object { type } or object { type } or 6 more
 
 Source configuration for the subscription
 
@@ -1804,7 +1804,7 @@ One of the following:
 
 <summary>
 
-MqEventSourceImages object {type }
+MqEventSourceImages object { type }
 
 </summary>
 
@@ -1822,7 +1822,7 @@ Type of source
 
 <summary>
 
-MqEventSourceKV object {type }
+MqEventSourceKV object { type }
 
 </summary>
 
@@ -1840,7 +1840,7 @@ Type of source
 
 <summary>
 
-MqEventSourceR2 object {type }
+MqEventSourceR2 object { type }
 
 </summary>
 
@@ -1858,7 +1858,7 @@ Type of source
 
 <summary>
 
-MqEventSourceSuperSlurper object {type }
+MqEventSourceSuperSlurper object { type }
 
 </summary>
 
@@ -1876,7 +1876,7 @@ Type of source
 
 <summary>
 
-MqEventSourceVectorize object {type }
+MqEventSourceVectorize object { type }
 
 </summary>
 
@@ -1894,7 +1894,7 @@ Type of source
 
 <summary>
 
-MqEventSourceWorkersAIModel object {model\_name, type }
+MqEventSourceWorkersAIModel object { model\_name, type }
 
 </summary>
 
@@ -1918,7 +1918,7 @@ Type of source
 
 <summary>
 
-MqEventSourceWorkersBuildsWorker object {type, worker\_name }
+MqEventSourceWorkersBuildsWorker object { type, worker\_name }
 
 </summary>
 
@@ -1942,7 +1942,7 @@ Name of the worker
 
 <summary>
 
-MqEventSourceWorkersScript object {script\_tag, type }
+MqEventSourceWorkersScript object { script\_tag, type }
 
 </summary>
 
@@ -1966,7 +1966,7 @@ Type of source
 
 <summary>
 
-MqEventSourceWorkflowsWorkflow object {type, workflow\_name }
+MqEventSourceWorkflowsWorkflow object { type, workflow\_name }
 
 </summary>
 
@@ -1998,7 +1998,7 @@ Name of the workflow
 
 <summary>
 
-SubscriptionUpdateResponse object {id, created\_at, destination, 5 more }
+SubscriptionUpdateResponse object { id, created\_at, destination, 5 more }
 
 </summary>
 
@@ -2020,7 +2020,7 @@ formatdate-time
 
 <summary>
 
-destination: object {queue\_id, type }
+destination: object { queue\_id, type }
 
 Destination configuration for the subscription
 
@@ -2072,7 +2072,7 @@ Name of the subscription
 
 <summary>
 
-source: object {type } or object {type } or object {type } or 6 more
+source: object { type } or object { type } or object { type } or 6 more
 
 Source configuration for the subscription
 
@@ -2084,7 +2084,7 @@ One of the following:
 
 <summary>
 
-MqEventSourceImages object {type }
+MqEventSourceImages object { type }
 
 </summary>
 
@@ -2102,7 +2102,7 @@ Type of source
 
 <summary>
 
-MqEventSourceKV object {type }
+MqEventSourceKV object { type }
 
 </summary>
 
@@ -2120,7 +2120,7 @@ Type of source
 
 <summary>
 
-MqEventSourceR2 object {type }
+MqEventSourceR2 object { type }
 
 </summary>
 
@@ -2138,7 +2138,7 @@ Type of source
 
 <summary>
 
-MqEventSourceSuperSlurper object {type }
+MqEventSourceSuperSlurper object { type }
 
 </summary>
 
@@ -2156,7 +2156,7 @@ Type of source
 
 <summary>
 
-MqEventSourceVectorize object {type }
+MqEventSourceVectorize object { type }
 
 </summary>
 
@@ -2174,7 +2174,7 @@ Type of source
 
 <summary>
 
-MqEventSourceWorkersAIModel object {model\_name, type }
+MqEventSourceWorkersAIModel object { model\_name, type }
 
 </summary>
 
@@ -2198,7 +2198,7 @@ Type of source
 
 <summary>
 
-MqEventSourceWorkersBuildsWorker object {type, worker\_name }
+MqEventSourceWorkersBuildsWorker object { type, worker\_name }
 
 </summary>
 
@@ -2222,7 +2222,7 @@ Name of the worker
 
 <summary>
 
-MqEventSourceWorkersScript object {script\_tag, type }
+MqEventSourceWorkersScript object { script\_tag, type }
 
 </summary>
 
@@ -2246,7 +2246,7 @@ Type of source
 
 <summary>
 
-MqEventSourceWorkflowsWorkflow object {type, workflow\_name }
+MqEventSourceWorkflowsWorkflow object { type, workflow\_name }
 
 </summary>
 
@@ -2278,7 +2278,7 @@ Name of the workflow
 
 <summary>
 
-SubscriptionDeleteResponse object {id, created\_at, destination, 5 more }
+SubscriptionDeleteResponse object { id, created\_at, destination, 5 more }
 
 </summary>
 
@@ -2300,7 +2300,7 @@ formatdate-time
 
 <summary>
 
-destination: object {queue\_id, type }
+destination: object { queue\_id, type }
 
 Destination configuration for the subscription
 
@@ -2352,7 +2352,7 @@ Name of the subscription
 
 <summary>
 
-source: object {type } or object {type } or object {type } or 6 more
+source: object { type } or object { type } or object { type } or 6 more
 
 Source configuration for the subscription
 
@@ -2364,7 +2364,7 @@ One of the following:
 
 <summary>
 
-MqEventSourceImages object {type }
+MqEventSourceImages object { type }
 
 </summary>
 
@@ -2382,7 +2382,7 @@ Type of source
 
 <summary>
 
-MqEventSourceKV object {type }
+MqEventSourceKV object { type }
 
 </summary>
 
@@ -2400,7 +2400,7 @@ Type of source
 
 <summary>
 
-MqEventSourceR2 object {type }
+MqEventSourceR2 object { type }
 
 </summary>
 
@@ -2418,7 +2418,7 @@ Type of source
 
 <summary>
 
-MqEventSourceSuperSlurper object {type }
+MqEventSourceSuperSlurper object { type }
 
 </summary>
 
@@ -2436,7 +2436,7 @@ Type of source
 
 <summary>
 
-MqEventSourceVectorize object {type }
+MqEventSourceVectorize object { type }
 
 </summary>
 
@@ -2454,7 +2454,7 @@ Type of source
 
 <summary>
 
-MqEventSourceWorkersAIModel object {model\_name, type }
+MqEventSourceWorkersAIModel object { model\_name, type }
 
 </summary>
 
@@ -2478,7 +2478,7 @@ Type of source
 
 <summary>
 
-MqEventSourceWorkersBuildsWorker object {type, worker\_name }
+MqEventSourceWorkersBuildsWorker object { type, worker\_name }
 
 </summary>
 
@@ -2502,7 +2502,7 @@ Name of the worker
 
 <summary>
 
-MqEventSourceWorkersScript object {script\_tag, type }
+MqEventSourceWorkersScript object { script\_tag, type }
 
 </summary>
 
@@ -2526,7 +2526,7 @@ Type of source
 
 <summary>
 
-MqEventSourceWorkflowsWorkflow object {type, workflow\_name }
+MqEventSourceWorkflowsWorkflow object { type, workflow\_name }
 
 </summary>
 

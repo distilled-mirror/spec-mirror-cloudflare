@@ -42,7 +42,7 @@ DELETE/accounts/{account\_id}/workers/scripts/{script\_name}/deployments/{deploy
 
 <summary>
 
-Deployment object {id, created\_on, source, 5 more }
+Deployment object { id, created\_on, source, 5 more }
 
 </summary>
 
@@ -72,7 +72,7 @@ Strategy for routing traffic across the listed versions. <code>percentage</code>
 
 <summary>
 
-versions: array of object {percentage, version\_id }
+versions: array of object { percentage, version\_id }
 
 Worker versions included in this deployment. Each object must contain a <code>version_id</code> UUID and a <code>percentage</code>; percentages across all objects must total 100. In the <code>cf</code> CLI, pass the entire array as one JSON value to <code>--versions</code>, either inline, for example <code>--versions '[{"version_id":"023e105f-2a42-4f8b-a1c1-73f6a2a30c0f","percentage":100}]'</code>, or from a JSON file with <code>--versions @versions.json</code>.
 
@@ -104,7 +104,7 @@ formatuuid
 
 <summary>
 
-annotations: optional object {"workers/message", "workers/triggered\_by" }
+annotations: optional object { "workers/message", "workers/triggered\_by" }
 
 Metadata attached to the deployment.
 
@@ -138,7 +138,7 @@ formatemail
 
 <summary>
 
-code\_update\_strategy: optional object {mode } or object {mode, max\_delay } or unknown
+code\_update\_strategy: optional object { mode } or object { mode, max\_delay } or unknown
 
 Choose whether to apply Durable Object code updates immediately or defer them. When omitted, the default strategy applies.
 
@@ -150,7 +150,7 @@ One of the following:
 
 <summary>
 
-Mode object {mode }
+Mode object { mode }
 
 </summary>
 
@@ -168,7 +168,7 @@ Apply Durable Object code updates immediately.
 
 <summary>
 
-object {mode, max\_delay }
+object { mode, max\_delay }
 
 </summary>
 
@@ -210,7 +210,7 @@ unknown
 
 <summary>
 
-DeploymentListResponse object {deployments }
+DeploymentListResponse object { deployments }
 
 </summary>
 
@@ -248,7 +248,7 @@ Strategy for routing traffic across the listed versions. <code>percentage</code>
 
 <summary>
 
-versions: array of object {percentage, version\_id }
+versions: array of object { percentage, version\_id }
 
 Worker versions included in this deployment. Each object must contain a <code>version_id</code> UUID and a <code>percentage</code>; percentages across all objects must total 100. In the <code>cf</code> CLI, pass the entire array as one JSON value to <code>--versions</code>, either inline, for example <code>--versions '[{"version_id":"023e105f-2a42-4f8b-a1c1-73f6a2a30c0f","percentage":100}]'</code>, or from a JSON file with <code>--versions @versions.json</code>.
 
@@ -280,7 +280,7 @@ formatuuid
 
 <summary>
 
-annotations: optional object {"workers/message", "workers/triggered\_by" }
+annotations: optional object { "workers/message", "workers/triggered\_by" }
 
 Metadata attached to the deployment.
 
@@ -314,7 +314,7 @@ formatemail
 
 <summary>
 
-code\_update\_strategy: optional object {mode } or object {mode, max\_delay } or unknown
+code\_update\_strategy: optional object { mode } or object { mode, max\_delay } or unknown
 
 Choose whether to apply Durable Object code updates immediately or defer them. When omitted, the default strategy applies.
 
@@ -326,7 +326,7 @@ One of the following:
 
 <summary>
 
-Mode object {mode }
+Mode object { mode }
 
 </summary>
 
@@ -344,7 +344,7 @@ Apply Durable Object code updates immediately.
 
 <summary>
 
-object {mode, max\_delay }
+object { mode, max\_delay }
 
 </summary>
 
@@ -390,7 +390,7 @@ unknown
 
 <summary>
 
-DeploymentDeleteResponse object {errors, messages, success }
+DeploymentDeleteResponse object { errors, messages, success }
 
 </summary>
 
@@ -398,7 +398,7 @@ DeploymentDeleteResponse object {errors, messages, success }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -420,7 +420,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -440,7 +440,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -462,7 +462,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 

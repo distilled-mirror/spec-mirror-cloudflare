@@ -48,7 +48,7 @@ DELETE/accounts/{account\_id}/data-security/posture/policies/{policy\_id}
 
 <summary>
 
-PolicyListResponse object {id, actions, applies\_to\_all\_integrations, 9 more }
+PolicyListResponse object { id, actions, applies\_to\_all\_integrations, 9 more }
 
 Response body for a policy configuration.
 
@@ -66,7 +66,7 @@ formatuuid
 
 <summary>
 
-actions: object {remediation\_types, webhook\_configs }
+actions: object { remediation\_types, webhook\_configs }
 
 The actions configured for this policy.
 
@@ -76,7 +76,7 @@ The actions configured for this policy.
 
 <summary>
 
-remediation\_types: array of object {display\_name, remediation\_type, remediation\_type\_id }
+remediation\_types: array of object { display\_name, remediation\_type, remediation\_type\_id }
 
 List of remediation types that will be executed.
 
@@ -110,7 +110,7 @@ formatuuid
 
 <summary>
 
-webhook\_configs: array of object {display\_name, webhook\_config\_id }
+webhook\_configs: array of object { display\_name, webhook\_config\_id }
 
 List of webhook configurations that will be triggered.
 
@@ -216,7 +216,7 @@ formatdate-time
 
 <summary>
 
-PolicyCreateResponse object {id, actions, applies\_to\_all\_integrations, 9 more }
+PolicyCreateResponse object { id, actions, applies\_to\_all\_integrations, 9 more }
 
 Response body for a policy configuration.
 
@@ -234,7 +234,7 @@ formatuuid
 
 <summary>
 
-actions: object {remediation\_types, webhook\_configs }
+actions: object { remediation\_types, webhook\_configs }
 
 The actions configured for this policy.
 
@@ -244,7 +244,7 @@ The actions configured for this policy.
 
 <summary>
 
-remediation\_types: array of object {display\_name, remediation\_type, remediation\_type\_id }
+remediation\_types: array of object { display\_name, remediation\_type, remediation\_type\_id }
 
 List of remediation types that will be executed.
 
@@ -278,7 +278,7 @@ formatuuid
 
 <summary>
 
-webhook\_configs: array of object {display\_name, webhook\_config\_id }
+webhook\_configs: array of object { display\_name, webhook\_config\_id }
 
 List of webhook configurations that will be triggered.
 
@@ -384,7 +384,7 @@ formatdate-time
 
 <summary>
 
-PolicyGetResponse object {id, actions, applies\_to\_all\_integrations, 9 more }
+PolicyGetResponse object { id, actions, applies\_to\_all\_integrations, 9 more }
 
 Response body for a policy configuration.
 
@@ -402,7 +402,7 @@ formatuuid
 
 <summary>
 
-actions: object {remediation\_types, webhook\_configs }
+actions: object { remediation\_types, webhook\_configs }
 
 The actions configured for this policy.
 
@@ -412,7 +412,7 @@ The actions configured for this policy.
 
 <summary>
 
-remediation\_types: array of object {display\_name, remediation\_type, remediation\_type\_id }
+remediation\_types: array of object { display\_name, remediation\_type, remediation\_type\_id }
 
 List of remediation types that will be executed.
 
@@ -446,7 +446,7 @@ formatuuid
 
 <summary>
 
-webhook\_configs: array of object {display\_name, webhook\_config\_id }
+webhook\_configs: array of object { display\_name, webhook\_config\_id }
 
 List of webhook configurations that will be triggered.
 
@@ -552,7 +552,7 @@ formatdate-time
 
 <summary>
 
-PolicyUpdateResponse object {id, actions, applies\_to\_all\_integrations, 9 more }
+PolicyUpdateResponse object { id, actions, applies\_to\_all\_integrations, 9 more }
 
 Response body for a policy configuration.
 
@@ -570,7 +570,7 @@ formatuuid
 
 <summary>
 
-actions: object {remediation\_types, webhook\_configs }
+actions: object { remediation\_types, webhook\_configs }
 
 The actions configured for this policy.
 
@@ -580,7 +580,7 @@ The actions configured for this policy.
 
 <summary>
 
-remediation\_types: array of object {display\_name, remediation\_type, remediation\_type\_id }
+remediation\_types: array of object { display\_name, remediation\_type, remediation\_type\_id }
 
 List of remediation types that will be executed.
 
@@ -614,7 +614,7 @@ formatuuid
 
 <summary>
 
-webhook\_configs: array of object {display\_name, webhook\_config\_id }
+webhook\_configs: array of object { display\_name, webhook\_config\_id }
 
 List of webhook configurations that will be triggered.
 
@@ -720,7 +720,7 @@ formatdate-time
 
 <summary>
 
-PolicyDeleteResponse object {id }
+PolicyDeleteResponse object { id }
 
 Response from DeletePolicy operation.
 

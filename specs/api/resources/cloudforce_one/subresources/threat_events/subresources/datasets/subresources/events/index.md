@@ -32,7 +32,7 @@ GET/accounts/{account\_id}/cloudforce-one/events/dataset/{dataset\_id}/events/{e
 
 <summary>
 
-EventGetResponse object {attacker, attackerCountry, attackerCountryAlpha3, 26 more }
+EventGetResponse object { attacker, attackerCountry, attackerCountryAlpha3, 26 more }
 
 </summary>
 

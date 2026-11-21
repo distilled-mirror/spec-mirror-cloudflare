@@ -128,7 +128,7 @@ formatdate
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -150,7 +150,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -170,7 +170,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -192,7 +192,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -212,7 +212,7 @@ pointer: optional string
 
 <summary>
 
-result: array of object {id, content, disposition, 7 more }
+result: array of object { id, content, disposition, 7 more }
 
 </summary>
 
@@ -228,7 +228,7 @@ content: string
 
 <summary>
 
-disposition: "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+disposition: "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 The verdict Email Security assigns to a message.
 
@@ -284,7 +284,7 @@ One of the following:
 
 <summary>
 
-fields: object {to, from, occurred\_at, 2 more }
+fields: object { to, from, occurred\_at, 2 more }
 
 </summary>
 
@@ -338,7 +338,7 @@ formatdate-time
 
 <summary>
 
-tags: optional array of object {category, value }
+tags: optional array of object { category, value }
 
 </summary>
 
@@ -384,7 +384,7 @@ Whether the API call was successful.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object { count, page, per\_page, total\_count }
 
 </summary>
 

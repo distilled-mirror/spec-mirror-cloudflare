@@ -54,6 +54,10 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 </details>
 
+##### Accepted Permissions (at least one required)
+
+`Email Routing Account Rules Read`
+
 ##### P ath ParametersExpand Collapse
 
 account\_id: optional string
@@ -74,7 +78,7 @@ The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 
 <summary>
 
-enabled: optional trueor false
+enabled: optional true or false
 
 Filter by enabled routing rules.
 
@@ -118,7 +122,7 @@ minimum5
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -140,7 +144,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -160,7 +164,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -182,7 +186,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -234,7 +238,7 @@ List actions patterns.
 
 <summary>
 
-type: "drop"or "forward"or "worker"
+type: "drop" or "forward" or "worker"
 
 Type of supported action.
 
@@ -272,7 +276,7 @@ List of values for the action. Currently limited to a single value.
 
 <summary>
 
-enabled: optional trueor false
+enabled: optional true or false
 
 Routing rule status.
 
@@ -306,7 +310,7 @@ Matching patterns to forward to your actions.
 
 <summary>
 
-type: "all"or "literal"
+type: "all" or "literal"
 
 Type of matcher.
 
@@ -364,7 +368,7 @@ minimum0
 
 <summary>
 
-source: optional "api"or "wrangler"
+source: optional "api" or "wrangler"
 
 Who manages the rule. <code>api</code> covers dashboard, generic API, and Terraform; <code>wrangler</code> means the rule is managed by a Worker’s wrangler.jsonc. Defaults to <code>api</code> when omitted on write.
 
@@ -396,7 +400,7 @@ maxLength32
 
 <summary>
 
-zone: optional object {name, tag }
+zone: optional object { name, tag }
 
 Zone information for the routing rule.
 
@@ -428,7 +432,7 @@ maxLength32
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

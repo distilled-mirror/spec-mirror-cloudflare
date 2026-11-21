@@ -48,7 +48,7 @@ organization\_id: string
 
 <summary>
 
-account\_pubname: optional object {contains, endsWith, startsWith }
+account\_pubname: optional object { contains, endsWith, startsWith }
 
 </summary>
 
@@ -78,7 +78,7 @@ startsWith: optional string
 
 <summary>
 
-direction: optional "asc"or "desc"
+direction: optional "asc" or "desc"
 
 Sort direction for the order\_by field. Valid values: <code>asc</code>, <code>desc</code>. Defaults to <code>asc</code> when order\_by is specified.
 
@@ -114,7 +114,7 @@ Whether to calculate and return the exact result\_info.total\_size for cursor pa
 
 <summary>
 
-name: optional object {contains, endsWith, startsWith }
+name: optional object { contains, endsWith, startsWith }
 
 </summary>
 
@@ -168,7 +168,7 @@ Parameters used to filter the retrieved list must remain in subsequent requests 
 
 <summary>
 
-status: optional "active"or "deleted"
+status: optional "active" or "deleted"
 
 Filter accounts by lifecycle status. Defaults to <code>active</code>.
 
@@ -226,7 +226,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -246,7 +246,7 @@ pointer: optional string
 
 <summary>
 
-result: array of <a href="https://developers.cloudflare.com/api/resources/tenants#(resource)%20tenants.accounts%20%3E%20(model)%20tenant_account%20%3E%20(schema)">TenantAccount</a> { id, created\_on, name, 3 more } or object {account\_pubname, account\_tag, account\_type, 2 more }
+result: array of <a href="https://developers.cloudflare.com/api/resources/tenants#(resource)%20tenants.accounts%20%3E%20(model)%20tenant_account%20%3E%20(schema)">TenantAccount</a> { id, created\_on, name, 3 more } or object { account\_pubname, account\_tag, account\_type, 2 more }
 
 </summary>
 
@@ -256,7 +256,7 @@ One of the following:
 
 <summary>
 
-TenantAccount object {id, created\_on, name, 3 more }
+TenantAccount object { id, created\_on, name, 3 more }
 
 </summary>
 
@@ -278,7 +278,7 @@ name: string
 
 <summary>
 
-settings: object {abuse\_contact\_email, access\_approval\_expiry, api\_access\_enabled, 3 more }
+settings: object { abuse\_contact\_email, access\_approval\_expiry, api\_access\_enabled, 3 more }
 
 </summary>
 
@@ -320,7 +320,7 @@ Use <a href="https://developers.cloudflare.com/api/operations/dns-settings-for-a
 
 <summary>
 
-type: "standard"or "enterprise"
+type: "standard" or "enterprise"
 
 </summary>
 
@@ -352,7 +352,7 @@ Account tags, present only when <code>include_tags=true</code> is requested.
 
 <summary>
 
-OrganizationsAPILegacyAccount object {account\_pubname, account\_tag, account\_type, 2 more }
+OrganizationsAPILegacyAccount object { account\_pubname, account\_tag, account\_type, 2 more }
 
 </summary>
 
@@ -368,7 +368,7 @@ account\_tag: string
 
 <summary>
 
-account\_type: "standard"or "enterprise"
+account\_type: "standard" or "enterprise"
 
 </summary>
 
@@ -396,7 +396,7 @@ formatdate-time
 
 <summary>
 
-settings: object {access\_approval\_expiry, api\_access\_enabled, enforce\_two\_factor, use\_account\_custom\_ns\_by\_default }
+settings: object { access\_approval\_expiry, api\_access\_enabled, enforce\_two\_factor, use\_account\_custom\_ns\_by\_default }
 
 </summary>
 
@@ -434,7 +434,7 @@ use\_account\_custom\_ns\_by\_default: boolean
 
 <summary>
 
-result\_info: object {next\_page\_token, total\_size }
+result\_info: object { next\_page\_token, total\_size }
 
 </summary>
 

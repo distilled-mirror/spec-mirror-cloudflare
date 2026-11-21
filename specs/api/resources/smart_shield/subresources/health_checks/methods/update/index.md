@@ -104,7 +104,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -146,7 +146,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -166,7 +166,7 @@ pointer: optional string
 
 <summary>
 
-result: object {id, address, check\_regions, 15 more } or object {id, address, check\_regions, 15 more } or object {id, address, check\_regions, 15 more }
+result: object { id, address, check\_regions, 15 more } or object { id, address, check\_regions, 15 more } or object { id, address, check\_regions, 15 more }
 
 </summary>
 
@@ -176,7 +176,7 @@ One of the following:
 
 <summary>
 
-object {id, address, check\_regions, 15 more }
+object { id, address, check\_regions, 15 more }
 
 </summary>
 
@@ -198,7 +198,7 @@ The hostname or IP address of the origin server to run health checks on.
 
 <summary>
 
-check\_regions: optional array of "WNAM"or "ENAM"or "WEU"or 11 more
+check\_regions: optional array of "WNAM" or "ENAM" or "WEU" or 11 more
 
 A list of regions from which to run health checks. Null means Cloudflare will pick a default region.
 
@@ -300,7 +300,7 @@ The current failure reason if status is unhealthy.
 
 <summary>
 
-http\_config: optional object {allow\_insecure, expected\_body, expected\_codes, 5 more }
+http\_config: optional object { allow\_insecure, expected\_body, expected\_codes, 5 more }
 
 Parameters specific to an HTTP or HTTPS health check.
 
@@ -340,7 +340,7 @@ The HTTP request headers to send in the health check. It is recommended you set 
 
 <summary>
 
-method: optional "GET"or "HEAD"
+method: optional "GET" or "HEAD"
 
 The HTTP method to use for the health check.
 
@@ -404,7 +404,7 @@ The number of retries to attempt in case of a timeout before marking the origin 
 
 <summary>
 
-status: optional "unknown"or "healthy"or "unhealthy"or "suspended"
+status: optional "unknown" or "healthy" or "unhealthy" or "suspended"
 
 The current status of the origin server according to the health check.
 
@@ -442,7 +442,7 @@ If suspended, no health checks are sent to the origin.
 
 <summary>
 
-tcp\_config: optional object {method, port }
+tcp\_config: optional object { method, port }
 
 Parameters specific to TCP health check.
 
@@ -484,7 +484,7 @@ The protocol to use for the health check. Currently supported protocols are ‘H
 
 <summary>
 
-object {id, address, check\_regions, 15 more }
+object { id, address, check\_regions, 15 more }
 
 </summary>
 
@@ -506,7 +506,7 @@ The hostname or IP address of the origin server to run health checks on.
 
 <summary>
 
-check\_regions: optional array of "WNAM"or "ENAM"or "WEU"or 11 more
+check\_regions: optional array of "WNAM" or "ENAM" or "WEU" or 11 more
 
 A list of regions from which to run health checks. Null means Cloudflare will pick a default region.
 
@@ -608,7 +608,7 @@ The current failure reason if status is unhealthy.
 
 <summary>
 
-http\_config: optional object {allow\_insecure, expected\_body, expected\_codes, 5 more }
+http\_config: optional object { allow\_insecure, expected\_body, expected\_codes, 5 more }
 
 Parameters specific to an HTTP or HTTPS health check.
 
@@ -648,7 +648,7 @@ The HTTP request headers to send in the health check. It is recommended you set 
 
 <summary>
 
-method: optional "GET"or "HEAD"
+method: optional "GET" or "HEAD"
 
 The HTTP method to use for the health check.
 
@@ -712,7 +712,7 @@ The number of retries to attempt in case of a timeout before marking the origin 
 
 <summary>
 
-status: optional "unknown"or "healthy"or "unhealthy"or "suspended"
+status: optional "unknown" or "healthy" or "unhealthy" or "suspended"
 
 The current status of the origin server according to the health check.
 
@@ -750,7 +750,7 @@ If suspended, no health checks are sent to the origin.
 
 <summary>
 
-tcp\_config: optional object {method, port }
+tcp\_config: optional object { method, port }
 
 Parameters specific to TCP health check.
 
@@ -792,7 +792,7 @@ The protocol to use for the health check. Currently supported protocols are ‘H
 
 <summary>
 
-object {id, address, check\_regions, 15 more }
+object { id, address, check\_regions, 15 more }
 
 </summary>
 
@@ -814,7 +814,7 @@ The hostname or IP address of the origin server to run health checks on.
 
 <summary>
 
-check\_regions: optional array of "WNAM"or "ENAM"or "WEU"or 11 more
+check\_regions: optional array of "WNAM" or "ENAM" or "WEU" or 11 more
 
 A list of regions from which to run health checks. Null means Cloudflare will pick a default region.
 
@@ -916,7 +916,7 @@ The current failure reason if status is unhealthy.
 
 <summary>
 
-http\_config: optional object {allow\_insecure, expected\_body, expected\_codes, 5 more }
+http\_config: optional object { allow\_insecure, expected\_body, expected\_codes, 5 more }
 
 Parameters specific to an HTTP or HTTPS health check.
 
@@ -956,7 +956,7 @@ The HTTP request headers to send in the health check. It is recommended you set 
 
 <summary>
 
-method: optional "GET"or "HEAD"
+method: optional "GET" or "HEAD"
 
 The HTTP method to use for the health check.
 
@@ -1020,7 +1020,7 @@ The number of retries to attempt in case of a timeout before marking the origin 
 
 <summary>
 
-status: optional "unknown"or "healthy"or "unhealthy"or "suspended"
+status: optional "unknown" or "healthy" or "unhealthy" or "suspended"
 
 The current status of the origin server according to the health check.
 
@@ -1058,7 +1058,7 @@ If suspended, no health checks are sent to the origin.
 
 <summary>
 
-tcp\_config: optional object {method, port }
+tcp\_config: optional object { method, port }
 
 Parameters specific to TCP health check.
 
@@ -1134,7 +1134,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -1176,7 +1176,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -1196,7 +1196,7 @@ pointer: optional string
 
 <summary>
 
-result: object {id, address, check\_regions, 15 more } or object {id, address, check\_regions, 15 more } or object {id, address, check\_regions, 15 more }
+result: object { id, address, check\_regions, 15 more } or object { id, address, check\_regions, 15 more } or object { id, address, check\_regions, 15 more }
 
 </summary>
 
@@ -1206,7 +1206,7 @@ One of the following:
 
 <summary>
 
-object {id, address, check\_regions, 15 more }
+object { id, address, check\_regions, 15 more }
 
 </summary>
 
@@ -1228,7 +1228,7 @@ The hostname or IP address of the origin server to run health checks on.
 
 <summary>
 
-check\_regions: optional array of "WNAM"or "ENAM"or "WEU"or 11 more
+check\_regions: optional array of "WNAM" or "ENAM" or "WEU" or 11 more
 
 A list of regions from which to run health checks. Null means Cloudflare will pick a default region.
 
@@ -1330,7 +1330,7 @@ The current failure reason if status is unhealthy.
 
 <summary>
 
-http\_config: optional object {allow\_insecure, expected\_body, expected\_codes, 5 more }
+http\_config: optional object { allow\_insecure, expected\_body, expected\_codes, 5 more }
 
 Parameters specific to an HTTP or HTTPS health check.
 
@@ -1370,7 +1370,7 @@ The HTTP request headers to send in the health check. It is recommended you set 
 
 <summary>
 
-method: optional "GET"or "HEAD"
+method: optional "GET" or "HEAD"
 
 The HTTP method to use for the health check.
 
@@ -1434,7 +1434,7 @@ The number of retries to attempt in case of a timeout before marking the origin 
 
 <summary>
 
-status: optional "unknown"or "healthy"or "unhealthy"or "suspended"
+status: optional "unknown" or "healthy" or "unhealthy" or "suspended"
 
 The current status of the origin server according to the health check.
 
@@ -1472,7 +1472,7 @@ If suspended, no health checks are sent to the origin.
 
 <summary>
 
-tcp\_config: optional object {method, port }
+tcp\_config: optional object { method, port }
 
 Parameters specific to TCP health check.
 
@@ -1514,7 +1514,7 @@ The protocol to use for the health check. Currently supported protocols are ‘H
 
 <summary>
 
-object {id, address, check\_regions, 15 more }
+object { id, address, check\_regions, 15 more }
 
 </summary>
 
@@ -1536,7 +1536,7 @@ The hostname or IP address of the origin server to run health checks on.
 
 <summary>
 
-check\_regions: optional array of "WNAM"or "ENAM"or "WEU"or 11 more
+check\_regions: optional array of "WNAM" or "ENAM" or "WEU" or 11 more
 
 A list of regions from which to run health checks. Null means Cloudflare will pick a default region.
 
@@ -1638,7 +1638,7 @@ The current failure reason if status is unhealthy.
 
 <summary>
 
-http\_config: optional object {allow\_insecure, expected\_body, expected\_codes, 5 more }
+http\_config: optional object { allow\_insecure, expected\_body, expected\_codes, 5 more }
 
 Parameters specific to an HTTP or HTTPS health check.
 
@@ -1678,7 +1678,7 @@ The HTTP request headers to send in the health check. It is recommended you set 
 
 <summary>
 
-method: optional "GET"or "HEAD"
+method: optional "GET" or "HEAD"
 
 The HTTP method to use for the health check.
 
@@ -1742,7 +1742,7 @@ The number of retries to attempt in case of a timeout before marking the origin 
 
 <summary>
 
-status: optional "unknown"or "healthy"or "unhealthy"or "suspended"
+status: optional "unknown" or "healthy" or "unhealthy" or "suspended"
 
 The current status of the origin server according to the health check.
 
@@ -1780,7 +1780,7 @@ If suspended, no health checks are sent to the origin.
 
 <summary>
 
-tcp\_config: optional object {method, port }
+tcp\_config: optional object { method, port }
 
 Parameters specific to TCP health check.
 
@@ -1822,7 +1822,7 @@ The protocol to use for the health check. Currently supported protocols are ‘H
 
 <summary>
 
-object {id, address, check\_regions, 15 more }
+object { id, address, check\_regions, 15 more }
 
 </summary>
 
@@ -1844,7 +1844,7 @@ The hostname or IP address of the origin server to run health checks on.
 
 <summary>
 
-check\_regions: optional array of "WNAM"or "ENAM"or "WEU"or 11 more
+check\_regions: optional array of "WNAM" or "ENAM" or "WEU" or 11 more
 
 A list of regions from which to run health checks. Null means Cloudflare will pick a default region.
 
@@ -1946,7 +1946,7 @@ The current failure reason if status is unhealthy.
 
 <summary>
 
-http\_config: optional object {allow\_insecure, expected\_body, expected\_codes, 5 more }
+http\_config: optional object { allow\_insecure, expected\_body, expected\_codes, 5 more }
 
 Parameters specific to an HTTP or HTTPS health check.
 
@@ -1986,7 +1986,7 @@ The HTTP request headers to send in the health check. It is recommended you set 
 
 <summary>
 
-method: optional "GET"or "HEAD"
+method: optional "GET" or "HEAD"
 
 The HTTP method to use for the health check.
 
@@ -2050,7 +2050,7 @@ The number of retries to attempt in case of a timeout before marking the origin 
 
 <summary>
 
-status: optional "unknown"or "healthy"or "unhealthy"or "suspended"
+status: optional "unknown" or "healthy" or "unhealthy" or "suspended"
 
 The current status of the origin server according to the health check.
 
@@ -2088,7 +2088,7 @@ If suspended, no health checks are sent to the origin.
 
 <summary>
 
-tcp\_config: optional object {method, port }
+tcp\_config: optional object { method, port }
 
 Parameters specific to TCP health check.
 

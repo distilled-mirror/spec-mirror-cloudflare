@@ -62,6 +62,10 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 </details>
 
+##### Accepted Permissions (at least one required)
+
+`Precursor Write`
+
 ##### P ath ParametersExpand Collapse
 
 zone\_id: string
@@ -84,7 +88,7 @@ maxLength32
 
 <summary>
 
-mode: optional "off"or "monitor"or "arm"
+mode: optional "off" or "monitor" or "arm"
 
 Controls Precursor detection for the zone. <code>off</code> disables detection, <code>monitor</code> records detections without affecting bot scores, and <code>arm</code> allows detections to affect bot scores.
 
@@ -112,7 +116,7 @@ One of the following:
 
 <summary>
 
-rules: optional array of object {expression, show\_interstitial, id, 2 more }
+rules: optional array of object { expression, show\_interstitial, id, 2 more }
 
 The ordered list of Precursor rules for the zone.
 
@@ -166,7 +170,7 @@ Whether Precursor shows an interstitial when it takes action on a request.
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -188,7 +192,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -208,7 +212,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -230,7 +234,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -264,7 +268,7 @@ result: optional <a href="https://developers.cloudflare.com/api/resources/precur
 
 <summary>
 
-mode: optional "off"or "monitor"or "arm"
+mode: optional "off" or "monitor" or "arm"
 
 Controls Precursor detection for the zone. <code>off</code> disables detection, <code>monitor</code> records detections without affecting bot scores, and <code>arm</code> allows detections to affect bot scores.
 
@@ -292,7 +296,7 @@ One of the following:
 
 <summary>
 
-rules: optional array of object {expression, show\_interstitial, id, 2 more }
+rules: optional array of object { expression, show\_interstitial, id, 2 more }
 
 The ordered list of Precursor rules for the zone.
 

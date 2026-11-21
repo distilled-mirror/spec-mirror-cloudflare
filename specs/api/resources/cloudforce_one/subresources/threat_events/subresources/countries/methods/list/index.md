@@ -52,7 +52,7 @@ Account ID.
 
 <summary>
 
-result: array of object {alpha2, alpha3, name }
+result: array of object { alpha2, alpha3, name }
 
 </summary>
 

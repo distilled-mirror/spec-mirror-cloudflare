@@ -28,7 +28,7 @@ GET/accounts/{account\_id}/load\_balancers/preview/{preview\_id}
 
 <summary>
 
-PreviewGetResponse = map\[object {healthy, origins } ]
+PreviewGetResponse = map\[object { healthy, origins } ]
 
 Resulting health data from a preview operation.
 
@@ -42,7 +42,7 @@ healthy: optional boolean
 
 <summary>
 
-origins: optional array of map\[object {failure\_reason, healthy, response\_code, rtt } ]
+origins: optional array of map\[object { failure\_reason, healthy, response\_code, rtt } ]
 
 </summary>
 

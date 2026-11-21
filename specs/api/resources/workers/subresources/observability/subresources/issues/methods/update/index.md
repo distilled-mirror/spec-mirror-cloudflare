@@ -90,7 +90,7 @@ minLength1
 
 <summary>
 
-status: optional "active"or "resolved"or "ignored"
+status: optional "active" or "resolved" or "ignored"
 
 </summary>
 
@@ -126,7 +126,7 @@ minLength1
 
 <summary>
 
-errors: array of object {message }
+errors: array of object { message }
 
 </summary>
 
@@ -142,7 +142,7 @@ message: string
 
 <summary>
 
-messages: array of object {message }
+messages: array of object { message }
 
 </summary>
 
@@ -158,7 +158,7 @@ message: "Successful request"
 
 <summary>
 
-result: object {id, count, created, 10 more }
+result: object { id, count, created, 10 more }
 
 </summary>
 
@@ -190,7 +190,7 @@ service: string
 
 <summary>
 
-status: "active"or "resolved"or "ignored"
+status: "active" or "resolved" or "ignored"
 
 </summary>
 
@@ -232,7 +232,7 @@ fingerprint: optional string
 
 <summary>
 
-members: optional array of object {fingerprint, issueId, title }
+members: optional array of object { fingerprint, issueId, title }
 
 </summary>
 

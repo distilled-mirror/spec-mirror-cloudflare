@@ -36,7 +36,7 @@ GET/accounts/{account\_id}/data-security/posture/exports/{id}
 
 <summary>
 
-ExportListResponse object {id, status, type, 5 more }
+ExportListResponse object { id, status, type, 5 more }
 
 Information about an export job.
 
@@ -54,7 +54,7 @@ formatuuid
 
 <summary>
 
-status: "Pending"or "Success"or "Failure"or 2 more
+status: "Pending" or "Success" or "Failure" or 2 more
 
 Status of an export job.
 
@@ -90,7 +90,7 @@ One of the following:
 
 <summary>
 
-type: "finding"or "findingInstance"or "content"or "remediationJob"
+type: "finding" or "findingInstance" or "content" or "remediationJob"
 
 Type of export job.
 
@@ -166,7 +166,7 @@ maxLength512
 
 <summary>
 
-ExportGetResponse object {id, status, type, 5 more }
+ExportGetResponse object { id, status, type, 5 more }
 
 Information about an export job.
 
@@ -184,7 +184,7 @@ formatuuid
 
 <summary>
 
-status: "Pending"or "Success"or "Failure"or 2 more
+status: "Pending" or "Success" or "Failure" or 2 more
 
 Status of an export job.
 
@@ -220,7 +220,7 @@ One of the following:
 
 <summary>
 
-type: "finding"or "findingInstance"or "content"or "remediationJob"
+type: "finding" or "findingInstance" or "content" or "remediationJob"
 
 Type of export job.
 

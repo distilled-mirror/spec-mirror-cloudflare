@@ -36,7 +36,7 @@ PUT/accounts/{account\_id}/warp\_connector/{tunnel\_id}/configurations
 
 <summary>
 
-ConfigurationGetResponse object {configuration\_version, created\_at, ha\_mode, 3 more }
+ConfigurationGetResponse object { configuration\_version, created\_at, ha\_mode, 3 more }
 
 </summary>
 
@@ -58,7 +58,7 @@ formatdate-time
 
 <summary>
 
-ha\_mode: "none"or "disabled"or "aws"or "local"
+ha\_mode: "none" or "disabled" or "aws" or "local"
 
 High-availability mode for the Mesh node. <code>none</code> means HA is enabled but no provider is configured yet (newly created nodes default to this). <code>disabled</code> means HA is explicitly turned off. <code>aws</code> uses AWS ENI move for failover. <code>local</code> uses virtual IPs (VIPs) on the local interface.
 
@@ -100,7 +100,7 @@ maxLength36
 
 <summary>
 
-config: optional object {fnr\_id } or object {vips, vips\_previous }
+config: optional object { fnr\_id } or object { vips, vips\_previous }
 
 Provider-specific configuration. Present for <code>aws</code> and <code>local</code> modes.
 
@@ -112,7 +112,7 @@ One of the following:
 
 <summary>
 
-TunnelMeshAwsConfig object {fnr\_id }
+TunnelMeshAwsConfig object { fnr\_id }
 
 </summary>
 
@@ -130,7 +130,7 @@ Floating Network Resource ID — the secondary ENI that is moved between nodes o
 
 <summary>
 
-TunnelMeshLocalConfig object {vips, vips\_previous }
+TunnelMeshLocalConfig object { vips, vips\_previous }
 
 </summary>
 
@@ -138,7 +138,7 @@ TunnelMeshLocalConfig object {vips, vips\_previous }
 
 <summary>
 
-vips: array of object {address }
+vips: array of object { address }
 
 VIPs to assign on the CloudflareWARP interface.
 
@@ -158,7 +158,7 @@ Virtual IP address (IPv4 or IPv6).
 
 <summary>
 
-vips\_previous: optional array of object {address }
+vips\_previous: optional array of object { address }
 
 VIPs to clean up on demotion or version drift.
 
@@ -198,7 +198,7 @@ formatdate-time
 
 <summary>
 
-ConfigurationUpdateResponse object {configuration\_version, created\_at, ha\_mode, 3 more }
+ConfigurationUpdateResponse object { configuration\_version, created\_at, ha\_mode, 3 more }
 
 </summary>
 
@@ -220,7 +220,7 @@ formatdate-time
 
 <summary>
 
-ha\_mode: "none"or "disabled"or "aws"or "local"
+ha\_mode: "none" or "disabled" or "aws" or "local"
 
 High-availability mode for the Mesh node. <code>none</code> means HA is enabled but no provider is configured yet (newly created nodes default to this). <code>disabled</code> means HA is explicitly turned off. <code>aws</code> uses AWS ENI move for failover. <code>local</code> uses virtual IPs (VIPs) on the local interface.
 
@@ -262,7 +262,7 @@ maxLength36
 
 <summary>
 
-config: optional object {fnr\_id } or object {vips, vips\_previous }
+config: optional object { fnr\_id } or object { vips, vips\_previous }
 
 Provider-specific configuration. Present for <code>aws</code> and <code>local</code> modes.
 
@@ -274,7 +274,7 @@ One of the following:
 
 <summary>
 
-TunnelMeshAwsConfig object {fnr\_id }
+TunnelMeshAwsConfig object { fnr\_id }
 
 </summary>
 
@@ -292,7 +292,7 @@ Floating Network Resource ID — the secondary ENI that is moved between nodes o
 
 <summary>
 
-TunnelMeshLocalConfig object {vips, vips\_previous }
+TunnelMeshLocalConfig object { vips, vips\_previous }
 
 </summary>
 
@@ -300,7 +300,7 @@ TunnelMeshLocalConfig object {vips, vips\_previous }
 
 <summary>
 
-vips: array of object {address }
+vips: array of object { address }
 
 VIPs to assign on the CloudflareWARP interface.
 
@@ -320,7 +320,7 @@ Virtual IP address (IPv4 or IPv6).
 
 <summary>
 
-vips\_previous: optional array of object {address }
+vips\_previous: optional array of object { address }
 
 VIPs to clean up on demotion or version drift.
 

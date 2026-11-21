@@ -36,7 +36,7 @@ The preferred authorization scheme for interacting with the Cloudflare API. [Cre
 
 ##### Accepted Permissions (at least one required)
 
-`Workers R2 Storage Write`
+`Auto Rag Write Run Engine``Workers R2 Storage Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -72,7 +72,7 @@ maxLength32
 
 <summary>
 
-"cf-r2-jurisdiction": optional "default"or "eu"or "us"or 2 more
+"cf-r2-jurisdiction": optional "default" or "eu" or "us" or 2 more
 
 </summary>
 
@@ -130,7 +130,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 

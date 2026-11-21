@@ -38,7 +38,7 @@ DELETE/accounts/{account\_id}/images/v1/keys/{signing\_key\_name}
 
 <summary>
 
-Key object {name, value }
+Key object { name, value }
 
 </summary>
 
@@ -62,7 +62,7 @@ Key value.
 
 <summary>
 
-KeyListResponse object {keys }
+KeyListResponse object { keys }
 
 </summary>
 
@@ -98,7 +98,7 @@ Key value.
 
 <summary>
 
-KeyUpdateResponse object {keys }
+KeyUpdateResponse object { keys }
 
 </summary>
 
@@ -134,7 +134,7 @@ Key value.
 
 <summary>
 
-KeyDeleteResponse object {keys }
+KeyDeleteResponse object { keys }
 
 </summary>
 

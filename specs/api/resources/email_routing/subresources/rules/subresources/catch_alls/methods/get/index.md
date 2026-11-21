@@ -76,7 +76,7 @@ maxLength32
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -98,7 +98,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -118,7 +118,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -140,7 +140,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -166,7 +166,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, actions, enabled, 4 more }
+result: optional object { id, actions, enabled, 4 more }
 
 </summary>
 
@@ -192,7 +192,7 @@ List actions for the catch-all routing rule.
 
 <summary>
 
-type: "drop"or "forward"or "worker"
+type: "drop" or "forward" or "worker"
 
 Type of action for catch-all rule.
 
@@ -230,7 +230,7 @@ List of values for the action. Currently limited to a single value.
 
 <summary>
 
-enabled: optional trueor false
+enabled: optional true or false
 
 Routing rule status.
 
@@ -282,7 +282,7 @@ maxLength256
 
 <summary>
 
-source: optional "api"or "wrangler"
+source: optional "api" or "wrangler"
 
 Who manages the rule. <code>api</code> covers dashboard, generic API, and Terraform; <code>wrangler</code> means the rule is managed by a Worker’s wrangler.jsonc. Defaults to <code>api</code> when omitted on write.
 

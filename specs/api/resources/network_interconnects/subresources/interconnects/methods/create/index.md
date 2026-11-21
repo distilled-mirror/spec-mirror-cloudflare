@@ -72,7 +72,7 @@ Customer account tag
 
 <summary>
 
-body: object {account, slot\_id, type, speed } or object {account, bandwidth, pairing\_key, type }
+body: object { account, slot\_id, type, speed } or object { account, bandwidth, pairing\_key, type }
 
 </summary>
 
@@ -82,7 +82,7 @@ One of the following:
 
 <summary>
 
-NscInterconnectCreatePhysicalBody object {account, slot\_id, type, speed }
+NscInterconnectCreatePhysicalBody object { account, slot\_id, type, speed }
 
 </summary>
 
@@ -112,7 +112,7 @@ speed: optional string
 
 <summary>
 
-NscInterconnectCreateGcpPartnerBody object {account, bandwidth, pairing\_key, type }
+NscInterconnectCreateGcpPartnerBody object { account, bandwidth, pairing\_key, type }
 
 </summary>
 
@@ -124,7 +124,7 @@ account: string
 
 <summary>
 
-bandwidth: "50M"or "100M"or "200M"or 9 more
+bandwidth: "50M" or "100M" or "200M" or 9 more
 
 Bandwidth structure as visible through the customer-facing API.
 
@@ -208,7 +208,7 @@ type: string
 
 <summary>
 
-NscInterconnectPhysicalBody object {facility, name, site, 5 more }
+NscInterconnectPhysicalBody object { facility, name, site, 5 more }
 
 </summary>
 
@@ -216,7 +216,7 @@ NscInterconnectPhysicalBody object {facility, name, site, 5 more }
 
 <summary>
 
-facility: object {address, name }
+facility: object { address, name }
 
 </summary>
 
@@ -274,7 +274,7 @@ ccr\_device\_name: optional string
 
 <summary>
 
-NscInterconnectGcpPartnerBody object {name, region, type, 2 more }
+NscInterconnectGcpPartnerBody object { name, region, type, 2 more }
 
 </summary>
 
@@ -300,7 +300,7 @@ formatuuid
 
 <summary>
 
-speed: optional "50M"or "100M"or "200M"or 9 more
+speed: optional "50M" or "100M" or "200M" or 9 more
 
 Bandwidth structure as visible through the customer-facing API.
 

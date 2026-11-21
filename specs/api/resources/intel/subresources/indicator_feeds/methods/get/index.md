@@ -62,7 +62,7 @@ Indicator feed ID
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -84,7 +84,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -104,7 +104,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -126,7 +126,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -152,7 +152,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, created\_on, description, 10 more }
+result: optional object { id, created\_on, description, 10 more }
 
 </summary>
 
@@ -198,7 +198,7 @@ Whether the indicator feed is exposed to customers
 
 <summary>
 
-last\_upload\_summary: optional object {persisted, skipped, uploaded }
+last\_upload\_summary: optional object { persisted, skipped, uploaded }
 
 Summary of indicator counts from the last successful upload to this feed. Populated by the custom-threat-feeds loader at the end of each successful load. Absent (omitted) when no upload has completed successfully or the upload errored before the summary write. Surfaces silent-failure paths so operators can see when their indicators were dropped (popularity allowlist, expired valid\_until, etc.) without reading loader logs.
 
@@ -208,7 +208,7 @@ Summary of indicator counts from the last successful upload to this feed. Popula
 
 <summary>
 
-persisted: optional object {domains\_added, domains\_removed, ips\_added, 3 more }
+persisted: optional object { domains\_added, domains\_removed, ips\_added, 3 more }
 
 Net delta applied to feed indicators by this upload. Snapshot uploads emit both \*\_added and \*\_removed; delta-add emits only \*\_added; delta-remove emits only \*\_removed.
 
@@ -246,7 +246,7 @@ urls\_removed: optional number
 
 <summary>
 
-skipped: optional object {allowlisted\_domains, expired\_indicators, invalid\_indicators }
+skipped: optional object { allowlisted\_domains, expired\_indicators, invalid\_indicators }
 
 Counts of indicators that were uploaded but did not reach QuickSilver, broken down by reason.
 
@@ -278,7 +278,7 @@ Reserved for future use. Currently always 0 — the unifier aborts the entire up
 
 <summary>
 
-uploaded: optional object {domains, ips, urls }
+uploaded: optional object { domains, ips, urls }
 
 Indicator counts from the unified file the loader received
 
@@ -320,7 +320,7 @@ Human-readable error message describing why the latest upload failed. Populated 
 
 <summary>
 
-latest\_upload\_status: optional "Mirroring"or "Unifying"or "Loading"or 3 more
+latest\_upload\_status: optional "Mirroring" or "Unifying" or "Loading" or 3 more
 
 Status of the latest snapshot uploaded
 

@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Realtime Admin``Realtime`
+`Realtime Read``Realtime Admin``Realtime`
 
 ##### P ath ParametersExpand Collapse
 
@@ -98,7 +98,7 @@ maxLength125
 
 <summary>
 
-sort\_order: optional "ASC"or "DESC"
+sort\_order: optional "ASC" or "DESC"
 
 Sort order for apps by creation time.
 
@@ -124,7 +124,7 @@ One of the following:
 
 <summary>
 
-data: optional array of object {id, created\_at, name }
+data: optional array of object { id, created\_at, name }
 
 </summary>
 
@@ -152,7 +152,7 @@ name: optional string
 
 <summary>
 
-paging: optional object {end\_offset, start\_offset, total\_count }
+paging: optional object { end\_offset, start\_offset, total\_count }
 
 </summary>
 

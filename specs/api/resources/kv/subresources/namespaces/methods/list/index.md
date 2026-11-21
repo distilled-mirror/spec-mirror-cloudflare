@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Workers KV Storage Write``Workers KV Storage Read`
+`Workers KV Storage Metadata Read``Workers KV Storage Write``Workers KV Storage Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -74,7 +74,7 @@ maxLength32
 
 <summary>
 
-direction: optional "asc"or "desc"
+direction: optional "asc" or "desc"
 
 Sort namespaces in ascending (<code>asc</code>) or descending (<code>desc</code>) order.
 
@@ -98,7 +98,7 @@ One of the following:
 
 <summary>
 
-order: optional "id"or "title"
+order: optional "id" or "title"
 
 Namespace field to sort by (<code>id</code> or <code>title</code>).
 
@@ -164,7 +164,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -206,7 +206,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -256,7 +256,7 @@ maxLength512
 
 <summary>
 
-jurisdiction: optional "eu"or "fedramp"or "us"
+jurisdiction: optional "eu" or "fedramp" or "us"
 
 Specify the jurisdiction to restrict the KV namespace to durably store data within. Can only be set at namespace creation time.
 
@@ -300,7 +300,7 @@ True if keys written on the URL will be URL-decoded before storing. For example,
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object { count, page, per\_page, total\_count }
 
 </summary>
 

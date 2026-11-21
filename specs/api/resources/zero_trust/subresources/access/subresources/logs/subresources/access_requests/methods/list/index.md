@@ -60,7 +60,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Access: Audit Logs Read`
+`Access: Audit Logs Read``Zero Trust Read``Zero Trust Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -78,7 +78,7 @@ maxLength32
 
 <summary>
 
-allowedOp: optional "eq"or "neq"
+allowedOp: optional "eq" or "neq"
 
 Operator for the <code>allowed</code> filter.
 
@@ -102,7 +102,7 @@ One of the following:
 
 <summary>
 
-app\_typeOp: optional "eq"or "neq"
+app\_typeOp: optional "eq" or "neq"
 
 Operator for the <code>app_type</code> filter.
 
@@ -126,7 +126,7 @@ One of the following:
 
 <summary>
 
-app\_uidOp: optional "eq"or "neq"
+app\_uidOp: optional "eq" or "neq"
 
 Operator for the <code>app_uid</code> filter.
 
@@ -150,7 +150,7 @@ One of the following:
 
 <summary>
 
-country\_codeOp: optional "eq"or "neq"
+country\_codeOp: optional "eq" or "neq"
 
 Operator for the <code>country_code</code> filter.
 
@@ -174,7 +174,7 @@ One of the following:
 
 <summary>
 
-direction: optional "desc"or "asc"
+direction: optional "desc" or "asc"
 
 The chronological sorting order for the logs.
 
@@ -217,7 +217,7 @@ When true, `email` is matched exactly instead of substring matching.
 
 <summary>
 
-emailOp: optional "eq"or "neq"or "contains"
+emailOp: optional "eq" or "neq" or "contains"
 
 Operator for the <code>email</code> filter. <code>contains</code> performs a substring (case-sensitive) match. When <code>email_exact=true</code> is also set, <code>email_exact</code> takes precedence and <code>contains</code> is ignored.
 
@@ -251,7 +251,7 @@ Comma-separated list of fields to include in the response. When omitted, all fie
 
 <summary>
 
-idpOp: optional "eq"or "neq"
+idpOp: optional "eq" or "neq"
 
 Operator for the <code>idp</code> filter.
 
@@ -281,7 +281,7 @@ The maximum number of log entries to retrieve.
 
 <summary>
 
-non\_identityOp: optional "eq"or "neq"
+non\_identityOp: optional "eq" or "neq"
 
 Operator for the <code>non_identity</code> filter.
 
@@ -317,7 +317,7 @@ Number of results per page.
 
 <summary>
 
-ray\_idOp: optional "eq"or "neq"
+ray\_idOp: optional "eq" or "neq"
 
 Operator for the <code>ray_id</code> filter.
 
@@ -365,7 +365,7 @@ formatuuid
 
 <summary>
 
-user\_idOp: optional "eq"or "neq"
+user\_idOp: optional "eq" or "neq"
 
 Deprecated. Accepted for backward compatibility but no longer applied as a filter (the <code>user_id</code> parameter is itself deprecated).
 
@@ -391,7 +391,7 @@ One of the following:
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -413,7 +413,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -433,7 +433,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -455,7 +455,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 

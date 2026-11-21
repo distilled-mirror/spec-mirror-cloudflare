@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Realtime Admin``Realtime`
+`Realtime Read``Realtime Admin``Realtime`
 
 ##### P ath ParametersExpand Collapse
 
@@ -104,7 +104,7 @@ Search presets by name.
 
 <summary>
 
-data: array of object {id, created\_at, name, updated\_at }
+data: array of object { id, created\_at, name, updated\_at }
 
 </summary>
 
@@ -146,7 +146,7 @@ formatdate-time
 
 <summary>
 
-paging: object {end\_offset, start\_offset, total\_count }
+paging: object { end\_offset, start\_offset, total\_count }
 
 </summary>
 

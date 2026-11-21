@@ -32,7 +32,7 @@ PATCH/zones/{zone\_id}/settings/transformations\_c2pa
 
 <summary>
 
-TransformationsC2pa object {id, editable, modified\_on, value }
+TransformationsC2pa object { id, editable, modified\_on, value }
 
 Controls C2PA signing for images processed through Cloudflare Image Transformations.
 
@@ -48,7 +48,7 @@ ID of the zone setting.
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -80,7 +80,7 @@ formatdate-time
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Current value of the zone setting.
 

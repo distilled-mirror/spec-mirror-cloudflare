@@ -102,7 +102,7 @@ Price in the smallest indivisible unit of the configured payment token, encoded 
 
 <summary>
 
-scheme: optional "exact"or "upto"or "origin\_controlled"
+scheme: optional "exact" or "upto" or "origin\_controlled"
 
 X402 payment scheme. “exact” requires the specified payment amount; “upto” permits a payment up to the specified amount; “origin\_controlled” lets the origin server set pricing dynamically, in which case the rule carries no price and the price field must be omitted.
 
@@ -132,7 +132,7 @@ One of the following:
 
 <summary>
 
-errors: array of object {code, message }
+errors: array of object { code, message }
 
 </summary>
 
@@ -152,7 +152,7 @@ message: optional string
 
 <summary>
 
-messages: array of object {code, message }
+messages: array of object { code, message }
 
 </summary>
 

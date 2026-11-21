@@ -28,7 +28,7 @@ POST/accounts/{account\_id}/browser-rendering/scrape
 
 <summary>
 
-ScrapeCreateResponse = array of object {results, selector }
+ScrapeCreateResponse = array of object { results, selector }
 
 </summary>
 
@@ -36,7 +36,7 @@ ScrapeCreateResponse = array of object {results, selector }
 
 <summary>
 
-results: object {attributes, height, html, 4 more }
+results: object { attributes, height, html, 4 more }
 
 </summary>
 
@@ -44,7 +44,7 @@ results: object {attributes, height, html, 4 more }
 
 <summary>
 
-attributes: array of object {name, value }
+attributes: array of object { name, value }
 
 </summary>
 

@@ -90,7 +90,7 @@ participant\_id: string
 
 <summary>
 
-data: object {token }
+data: object { token }
 
 Data returned by the operation
 

@@ -88,7 +88,7 @@ formatuuid
 
 <summary>
 
-direction: optional "asc"or "desc"
+direction: optional "asc" or "desc"
 
 Sort direction (default: asc)
 
@@ -112,7 +112,7 @@ One of the following:
 
 <summary>
 
-order: optional "username"or "created\_at"or "updated\_at"
+order: optional "username" or "created\_at" or "updated\_at"
 
 Field to order results by (default: created\_at)
 
@@ -160,7 +160,7 @@ Filter by username (case-insensitive substring match)
 
 <summary>
 
-errors: array of object {code, message, source }
+errors: array of object { code, message, source }
 
 </summary>
 
@@ -178,7 +178,7 @@ message: string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -198,7 +198,7 @@ pointer: string
 
 <summary>
 
-messages: array of object {code, message, source }
+messages: array of object { code, message, source }
 
 </summary>
 
@@ -216,7 +216,7 @@ message: string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -278,7 +278,7 @@ minLength1
 
 <summary>
 
-result\_info: object {count, per\_page, total\_count, cursor }
+result\_info: object { count, per\_page, total\_count, cursor }
 
 </summary>
 

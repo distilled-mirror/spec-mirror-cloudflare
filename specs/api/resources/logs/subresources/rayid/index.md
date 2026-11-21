@@ -28,7 +28,7 @@ GET/zones/{zone\_id}/logs/rayids/{ray\_id}
 
 <summary>
 
-RayIDGetResponse = stringor unknown
+RayIDGetResponse = string or unknown
 
 </summary>
 

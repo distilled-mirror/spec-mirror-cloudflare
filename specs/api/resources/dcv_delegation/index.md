@@ -26,7 +26,7 @@ GET/zones/{zone\_id}/dcv\_delegation/uuid
 
 <summary>
 
-DCVDelegationUUID object {uuid }
+DCVDelegationUUID object { uuid }
 
 </summary>
 

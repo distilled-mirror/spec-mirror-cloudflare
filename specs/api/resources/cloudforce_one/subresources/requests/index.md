@@ -56,7 +56,7 @@ GET/accounts/{account\_id}/cloudforce-one/requests/constants
 
 <summary>
 
-Item object {id, content, created, 10 more }
+Item object { id, content, created, 10 more }
 
 </summary>
 
@@ -102,7 +102,7 @@ Brief description of the request.
 
 <summary>
 
-tlp: "clear"or "amber"or "amber-strict"or 2 more
+tlp: "clear" or "amber" or "amber-strict" or 2 more
 
 The CISA defined Traffic Light Protocol (TLP).
 
@@ -162,7 +162,7 @@ Readable Request ID.
 
 <summary>
 
-status: optional "open"or "accepted"or "reported"or 3 more
+status: optional "open" or "accepted" or "reported" or 3 more
 
 Request Status.
 
@@ -212,7 +212,7 @@ Tokens for the request.
 
 <summary>
 
-ListItem object {id, created, priority, 9 more }
+ListItem object { id, created, priority, 9 more }
 
 </summary>
 
@@ -236,7 +236,7 @@ formatdate-time
 
 <summary>
 
-priority: "routine"or "high"or "urgent"
+priority: "routine" or "high" or "urgent"
 
 </summary>
 
@@ -274,7 +274,7 @@ Brief description of the request.
 
 <summary>
 
-tlp: "clear"or "amber"or "amber-strict"or 2 more
+tlp: "clear" or "amber" or "amber-strict" or 2 more
 
 The CISA defined Traffic Light Protocol (TLP).
 
@@ -338,7 +338,7 @@ Readable Request ID.
 
 <summary>
 
-status: optional "open"or "accepted"or "reported"or 3 more
+status: optional "open" or "accepted" or "reported" or 3 more
 
 Request Status.
 
@@ -388,7 +388,7 @@ Tokens for the request.
 
 <summary>
 
-Quota object {anniversary\_date, quarter\_anniversary\_date, quota, remaining }
+Quota object { anniversary\_date, quarter\_anniversary\_date, quota, remaining }
 
 </summary>
 
@@ -428,7 +428,7 @@ Tokens remaining for the quarter.
 
 <summary>
 
-RequestConstants object {priority, status, tlp }
+RequestConstants object { priority, status, tlp }
 
 </summary>
 
@@ -436,7 +436,7 @@ RequestConstants object {priority, status, tlp }
 
 <summary>
 
-priority: optional array of "routine"or "high"or "urgent"
+priority: optional array of "routine" or "high" or "urgent"
 
 </summary>
 
@@ -462,7 +462,7 @@ One of the following:
 
 <summary>
 
-status: optional array of "open"or "accepted"or "reported"or 3 more
+status: optional array of "open" or "accepted" or "reported" or 3 more
 
 </summary>
 
@@ -500,7 +500,7 @@ One of the following:
 
 <summary>
 
-tlp: optional array of "clear"or "amber"or "amber-strict"or 2 more
+tlp: optional array of "clear" or "amber" or "amber-strict" or 2 more
 
 </summary>
 
@@ -542,7 +542,7 @@ RequestTypes = array of string
 
 <summary>
 
-RequestDeleteResponse object {errors, messages, success }
+RequestDeleteResponse object { errors, messages, success }
 
 </summary>
 
@@ -550,7 +550,7 @@ RequestDeleteResponse object {errors, messages, success }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -572,7 +572,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -592,7 +592,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -614,7 +614,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -670,7 +670,7 @@ DELETE/accounts/{account\_id}/cloudforce-one/requests/{request\_id}/message/{mes
 
 <summary>
 
-Message object {id, author, content, 3 more }
+Message object { id, author, content, 3 more }
 
 </summary>
 
@@ -722,7 +722,7 @@ formatdate-time
 
 <summary>
 
-MessageDeleteResponse object {errors, messages, success }
+MessageDeleteResponse object { errors, messages, success }
 
 </summary>
 
@@ -730,7 +730,7 @@ MessageDeleteResponse object {errors, messages, success }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -752,7 +752,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -772,7 +772,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -794,7 +794,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -852,7 +852,7 @@ Label = string
 
 <summary>
 
-Priority object {id, created, labels, 4 more }
+Priority object { id, created, labels, 4 more }
 
 </summary>
 
@@ -894,7 +894,7 @@ Requirement.
 
 <summary>
 
-tlp: "clear"or "amber"or "amber-strict"or 2 more
+tlp: "clear" or "amber" or "amber-strict" or 2 more
 
 The CISA defined Traffic Light Protocol (TLP).
 
@@ -942,7 +942,7 @@ formatdate-time
 
 <summary>
 
-PriorityEdit object {labels, priority, requirement, tlp }
+PriorityEdit object { labels, priority, requirement, tlp }
 
 </summary>
 
@@ -968,7 +968,7 @@ Requirement.
 
 <summary>
 
-tlp: "clear"or "amber"or "amber-strict"or 2 more
+tlp: "clear" or "amber" or "amber-strict" or 2 more
 
 The CISA defined Traffic Light Protocol (TLP).
 
@@ -1008,7 +1008,7 @@ One of the following:
 
 <summary>
 
-PriorityDeleteResponse object {errors, messages, success }
+PriorityDeleteResponse object { errors, messages, success }
 
 </summary>
 
@@ -1016,7 +1016,7 @@ PriorityDeleteResponse object {errors, messages, success }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -1038,7 +1038,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -1058,7 +1058,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -1080,7 +1080,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -1130,7 +1130,7 @@ DELETE/accounts/{account\_id}/cloudforce-one/requests/{request\_id}/asset/{asset
 
 <summary>
 
-AssetGetResponse object {id, name, created, 2 more }
+AssetGetResponse object { id, name, created, 2 more }
 
 </summary>
 
@@ -1174,7 +1174,7 @@ Asset file type.
 
 <summary>
 
-AssetCreateResponse object {id, name, created, 2 more }
+AssetCreateResponse object { id, name, created, 2 more }
 
 </summary>
 
@@ -1218,7 +1218,7 @@ Asset file type.
 
 <summary>
 
-AssetUpdateResponse object {id, name, created, 2 more }
+AssetUpdateResponse object { id, name, created, 2 more }
 
 </summary>
 
@@ -1262,7 +1262,7 @@ Asset file type.
 
 <summary>
 
-AssetDeleteResponse object {errors, messages, success }
+AssetDeleteResponse object { errors, messages, success }
 
 </summary>
 
@@ -1270,7 +1270,7 @@ AssetDeleteResponse object {errors, messages, success }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -1292,7 +1292,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -1312,7 +1312,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -1334,7 +1334,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 

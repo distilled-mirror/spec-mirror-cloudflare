@@ -38,7 +38,7 @@ DELETE/accounts/{account\_id}/access/gateway\_ca/{certificate\_id}
 
 <summary>
 
-GatewayCAListResponse object {id, public\_key }
+GatewayCAListResponse object { id, public\_key }
 
 </summary>
 
@@ -62,7 +62,7 @@ The public key of this certificate.
 
 <summary>
 
-GatewayCACreateResponse object {id, public\_key }
+GatewayCACreateResponse object { id, public\_key }
 
 </summary>
 
@@ -86,7 +86,7 @@ The public key of this certificate.
 
 <summary>
 
-GatewayCADeleteResponse object {id }
+GatewayCADeleteResponse object { id }
 
 </summary>
 

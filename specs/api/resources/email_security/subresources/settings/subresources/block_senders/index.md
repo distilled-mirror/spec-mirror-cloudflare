@@ -50,7 +50,7 @@ POST/accounts/{account\_id}/email-security/settings/block\_senders/batch
 
 <summary>
 
-BlockSenderListResponse object {id, comments, created\_at, 6 more }
+BlockSenderListResponse object { id, comments, created\_at, 6 more }
 
 A blocked sender pattern.
 
@@ -120,7 +120,7 @@ minLength1
 
 <summary>
 
-pattern\_type: optional "EMAIL"or "DOMAIN"or "IP"or "UNKNOWN"
+pattern\_type: optional "EMAIL" or "DOMAIN" or "IP" or "UNKNOWN"
 
 Type of pattern matching.
 
@@ -161,7 +161,7 @@ One of the following:
 
 <summary>
 
-BlockSenderGetResponse object {id, comments, created\_at, 6 more }
+BlockSenderGetResponse object { id, comments, created\_at, 6 more }
 
 A blocked sender pattern.
 
@@ -231,7 +231,7 @@ minLength1
 
 <summary>
 
-pattern\_type: optional "EMAIL"or "DOMAIN"or "IP"or "UNKNOWN"
+pattern\_type: optional "EMAIL" or "DOMAIN" or "IP" or "UNKNOWN"
 
 Type of pattern matching.
 
@@ -272,7 +272,7 @@ One of the following:
 
 <summary>
 
-BlockSenderCreateResponse object {id, comments, created\_at, 6 more }
+BlockSenderCreateResponse object { id, comments, created\_at, 6 more }
 
 A blocked sender pattern.
 
@@ -342,7 +342,7 @@ minLength1
 
 <summary>
 
-pattern\_type: optional "EMAIL"or "DOMAIN"or "IP"or "UNKNOWN"
+pattern\_type: optional "EMAIL" or "DOMAIN" or "IP" or "UNKNOWN"
 
 Type of pattern matching.
 
@@ -383,7 +383,7 @@ One of the following:
 
 <summary>
 
-BlockSenderEditResponse object {id, comments, created\_at, 6 more }
+BlockSenderEditResponse object { id, comments, created\_at, 6 more }
 
 A blocked sender pattern.
 
@@ -453,7 +453,7 @@ minLength1
 
 <summary>
 
-pattern\_type: optional "EMAIL"or "DOMAIN"or "IP"or "UNKNOWN"
+pattern\_type: optional "EMAIL" or "DOMAIN" or "IP" or "UNKNOWN"
 
 Type of pattern matching.
 
@@ -494,7 +494,7 @@ One of the following:
 
 <summary>
 
-BlockSenderDeleteResponse object {id }
+BlockSenderDeleteResponse object { id }
 
 </summary>
 
@@ -514,7 +514,7 @@ formatuuid
 
 <summary>
 
-BlockSenderBatchResponse object {deletes, patches, posts, puts }
+BlockSenderBatchResponse object { deletes, patches, posts, puts }
 
 </summary>
 
@@ -522,7 +522,7 @@ BlockSenderBatchResponse object {deletes, patches, posts, puts }
 
 <summary>
 
-deletes: optional array of object {id }
+deletes: optional array of object { id }
 
 </summary>
 
@@ -542,7 +542,7 @@ formatuuid
 
 <summary>
 
-patches: optional array of object {id, comments, created\_at, 6 more }
+patches: optional array of object { id, comments, created\_at, 6 more }
 
 </summary>
 
@@ -610,7 +610,7 @@ minLength1
 
 <summary>
 
-pattern\_type: optional "EMAIL"or "DOMAIN"or "IP"or "UNKNOWN"
+pattern\_type: optional "EMAIL" or "DOMAIN" or "IP" or "UNKNOWN"
 
 Type of pattern matching.
 
@@ -651,7 +651,7 @@ One of the following:
 
 <summary>
 
-posts: optional array of object {id, comments, created\_at, 6 more }
+posts: optional array of object { id, comments, created\_at, 6 more }
 
 </summary>
 
@@ -719,7 +719,7 @@ minLength1
 
 <summary>
 
-pattern\_type: optional "EMAIL"or "DOMAIN"or "IP"or "UNKNOWN"
+pattern\_type: optional "EMAIL" or "DOMAIN" or "IP" or "UNKNOWN"
 
 Type of pattern matching.
 
@@ -760,7 +760,7 @@ One of the following:
 
 <summary>
 
-puts: optional array of object {id, comments, created\_at, 6 more }
+puts: optional array of object { id, comments, created\_at, 6 more }
 
 </summary>
 
@@ -828,7 +828,7 @@ minLength1
 
 <summary>
 
-pattern\_type: optional "EMAIL"or "DOMAIN"or "IP"or "UNKNOWN"
+pattern\_type: optional "EMAIL" or "DOMAIN" or "IP" or "UNKNOWN"
 
 Type of pattern matching.
 

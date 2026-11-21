@@ -34,7 +34,7 @@ POST/accounts/{account\_id}/analytics/query/{dataset}/top-n
 
 <summary>
 
-AnalyticsQuerySummaryResponse object {currentTotal, previousTotal }
+AnalyticsQuerySummaryResponse object { currentTotal, previousTotal }
 
 </summary>
 
@@ -58,7 +58,7 @@ Aggregated stats for the equivalent preceding time range, for trend comparison.
 
 <summary>
 
-AnalyticsQueryTimeseriesResponse object {resolution, slots }
+AnalyticsQueryTimeseriesResponse object { resolution, slots }
 
 </summary>
 
@@ -116,7 +116,7 @@ POST/accounts/{account\_id}/analytics/query/data-security/findings/timeseries
 
 <summary>
 
-FindingSummaryResponse object {currentTotal, previousTotal }
+FindingSummaryResponse object { currentTotal, previousTotal }
 
 </summary>
 
@@ -140,7 +140,7 @@ Aggregated stats for the equivalent preceding time range, for trend comparison.
 
 <summary>
 
-FindingTimeseriesResponse object {slots, resolution }
+FindingTimeseriesResponse object { slots, resolution }
 
 Merged CASB and CDE findings timeseries result.
 

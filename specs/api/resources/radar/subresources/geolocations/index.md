@@ -32,7 +32,7 @@ GET/radar/geolocations/{geo\_id}
 
 <summary>
 
-GeolocationListResponse object {geolocations }
+GeolocationListResponse object { geolocations }
 
 </summary>
 
@@ -40,35 +40,7 @@ GeolocationListResponse object {geolocations }
 
 <summary>
 
-geolocations: array of object {geoId, latitude, longitude, 5 more }
-
-</summary>
-
-geoId: string
-
-<a href="#">Link to this property</a>
-
-latitude: string
-
-A numeric string.
-
-<a href="#">Link to this property</a>
-
-longitude: string
-
-A numeric string.
-
-<a href="#">Link to this property</a>
-
-name: string
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-parent: object {geoId, latitude, longitude, 5 more }
+geolocations: array of object { geoId, latitude, longitude, 5 more }
 
 </summary>
 
@@ -96,7 +68,7 @@ name: string
 
 <summary>
 
-parent: object {geoId, latitude, longitude, 4 more }
+parent: object { geoId, latitude, longitude, 5 more }
 
 </summary>
 
@@ -124,7 +96,35 @@ name: string
 
 <summary>
 
-type: "CONTINENT"or "COUNTRY"or "ADM1"
+parent: object { geoId, latitude, longitude, 4 more }
+
+</summary>
+
+geoId: string
+
+<a href="#">Link to this property</a>
+
+latitude: string
+
+A numeric string.
+
+<a href="#">Link to this property</a>
+
+longitude: string
+
+A numeric string.
+
+<a href="#">Link to this property</a>
+
+name: string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+type: "CONTINENT" or "COUNTRY" or "ADM1"
 
 The type of the geolocation.
 
@@ -166,7 +166,7 @@ BCP 47 locale code used for the geolocation name translation
 
 <summary>
 
-type: "CONTINENT"or "COUNTRY"or "ADM1"
+type: "CONTINENT" or "COUNTRY" or "ADM1"
 
 The type of the geolocation.
 
@@ -208,7 +208,7 @@ BCP 47 locale code used for the geolocation name translation
 
 <summary>
 
-type: "CONTINENT"or "COUNTRY"or "ADM1"
+type: "CONTINENT" or "COUNTRY" or "ADM1"
 
 The type of the geolocation.
 
@@ -254,7 +254,7 @@ BCP 47 locale code used for the geolocation name translation
 
 <summary>
 
-GeolocationGetResponse object {geolocation }
+GeolocationGetResponse object { geolocation }
 
 </summary>
 
@@ -262,35 +262,7 @@ GeolocationGetResponse object {geolocation }
 
 <summary>
 
-geolocation: object {geoId, latitude, longitude, 5 more }
-
-</summary>
-
-geoId: string
-
-<a href="#">Link to this property</a>
-
-latitude: string
-
-A numeric string.
-
-<a href="#">Link to this property</a>
-
-longitude: string
-
-A numeric string.
-
-<a href="#">Link to this property</a>
-
-name: string
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-parent: object {geoId, latitude, longitude, 5 more }
+geolocation: object { geoId, latitude, longitude, 5 more }
 
 </summary>
 
@@ -318,7 +290,7 @@ name: string
 
 <summary>
 
-parent: object {geoId, latitude, longitude, 4 more }
+parent: object { geoId, latitude, longitude, 5 more }
 
 </summary>
 
@@ -346,7 +318,35 @@ name: string
 
 <summary>
 
-type: "CONTINENT"or "COUNTRY"or "ADM1"
+parent: object { geoId, latitude, longitude, 4 more }
+
+</summary>
+
+geoId: string
+
+<a href="#">Link to this property</a>
+
+latitude: string
+
+A numeric string.
+
+<a href="#">Link to this property</a>
+
+longitude: string
+
+A numeric string.
+
+<a href="#">Link to this property</a>
+
+name: string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+type: "CONTINENT" or "COUNTRY" or "ADM1"
 
 The type of the geolocation.
 
@@ -388,7 +388,7 @@ BCP 47 locale code used for the geolocation name translation
 
 <summary>
 
-type: "CONTINENT"or "COUNTRY"or "ADM1"
+type: "CONTINENT" or "COUNTRY" or "ADM1"
 
 The type of the geolocation.
 
@@ -430,7 +430,7 @@ BCP 47 locale code used for the geolocation name translation
 
 <summary>
 
-type: "CONTINENT"or "COUNTRY"or "ADM1"
+type: "CONTINENT" or "COUNTRY" or "ADM1"
 
 The type of the geolocation.
 

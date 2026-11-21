@@ -28,7 +28,7 @@ GET/zones/{zone\_id}/api\_gateway/discovery
 
 <summary>
 
-DiscoveryOperation object {id, endpoint, host, 5 more }
+DiscoveryOperation object { id, endpoint, host, 5 more }
 
 </summary>
 
@@ -72,7 +72,7 @@ formatdate-time
 
 <summary>
 
-method: "GET"or "POST"or "HEAD"or 6 more
+method: "GET" or "POST" or "HEAD" or 6 more
 
 The HTTP method used to access the endpoint.
 
@@ -124,7 +124,7 @@ One of the following:
 
 <summary>
 
-origin: array of "ML"or "SessionIdentifier"or "LabelDiscovery"
+origin: array of "ML" or "SessionIdentifier" or "LabelDiscovery"
 
 API discovery engine(s) that discovered this operation
 
@@ -152,7 +152,7 @@ One of the following:
 
 <summary>
 
-state: "review"or "saved"or "ignored"
+state: "review" or "saved" or "ignored"
 
 State of operation in API Discovery
 
@@ -184,7 +184,7 @@ One of the following:
 
 <summary>
 
-features: optional object {traffic\_stats }
+features: optional object { traffic\_stats }
 
 </summary>
 
@@ -192,7 +192,7 @@ features: optional object {traffic\_stats }
 
 <summary>
 
-traffic\_stats: optional object {last\_updated, period\_seconds, requests }
+traffic\_stats: optional object { last\_updated, period\_seconds, requests }
 
 </summary>
 
@@ -232,7 +232,7 @@ formatfloat
 
 <summary>
 
-DiscoveryGetResponse object {schemas, timestamp }
+DiscoveryGetResponse object { schemas, timestamp }
 
 </summary>
 
@@ -270,7 +270,7 @@ PATCH/zones/{zone\_id}/api\_gateway/discovery/operations
 
 <summary>
 
-OperationEditResponse object {state }
+OperationEditResponse object { state }
 
 </summary>
 
@@ -278,7 +278,7 @@ OperationEditResponse object {state }
 
 <summary>
 
-state: optional "review"or "saved"or "ignored"
+state: optional "review" or "saved" or "ignored"
 
 State of operation in API Discovery
 
@@ -314,7 +314,7 @@ One of the following:
 
 <summary>
 
-OperationBulkEditResponse = map\[object {state } ]
+OperationBulkEditResponse = map\[object { state } ]
 
 </summary>
 
@@ -322,7 +322,7 @@ OperationBulkEditResponse = map\[object {state } ]
 
 <summary>
 
-state: optional "review"or "ignored"
+state: optional "review" or "ignored"
 
 Mark state of operation in API Discovery
 

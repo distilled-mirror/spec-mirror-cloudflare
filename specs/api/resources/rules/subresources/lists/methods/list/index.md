@@ -98,7 +98,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -140,7 +140,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -184,7 +184,7 @@ The RFC 3339 timestamp of when the list was created.
 
 <summary>
 
-kind: "ip"or "redirect"or "hostname"or "asn"
+kind: "ip" or "redirect" or "hostname" or "asn"
 
 The type of the list. Each type supports specific list items (IP addresses, ASNs, hostnames or redirects).
 

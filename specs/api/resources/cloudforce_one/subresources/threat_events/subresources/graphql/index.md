@@ -30,7 +30,7 @@ POST/accounts/{account\_id}/cloudforce-one/events/graphql
 
 <summary>
 
-GraphqlCreateResponse object {data, errors }
+GraphqlCreateResponse object { data, errors }
 
 </summary>
 

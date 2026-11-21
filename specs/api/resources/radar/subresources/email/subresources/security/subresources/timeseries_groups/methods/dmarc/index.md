@@ -70,7 +70,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 <summary>
 
-aggInterval: optional "15m"or "1h"or "1d"or "1w"
+aggInterval: optional "15m" or "1h" or "1d" or "1w"
 
 Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to <a href="https://developers.cloudflare.com/radar/concepts/aggregation-intervals/">Aggregation intervals</a>. When omitted, the interval is auto-selected from the requested date range; finer intervals are only available for shorter ranges. If the requested interval is too granular for the date range, the request is rejected.
 
@@ -102,7 +102,7 @@ One of the following:
 
 <summary>
 
-arc: optional array of "PASS"or "NONE"or "FAIL"
+arc: optional array of "PASS" or "NONE" or "FAIL"
 
 Filters results by ARC (Authenticated Received Chain) validation.
 
@@ -148,7 +148,7 @@ Start of the date range. Alternative to `dateRange`; provide together with `date
 
 <summary>
 
-dkim: optional array of "PASS"or "NONE"or "FAIL"
+dkim: optional array of "PASS" or "NONE" or "FAIL"
 
 Filters results by DKIM (DomainKeys Identified Mail) validation status.
 
@@ -176,7 +176,7 @@ One of the following:
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -206,7 +206,7 @@ Array of names used to label the series in the response.
 
 <summary>
 
-spf: optional array of "PASS"or "NONE"or "FAIL"
+spf: optional array of "PASS" or "NONE" or "FAIL"
 
 Filters results by SPF (Sender Policy Framework) validation status.
 
@@ -234,7 +234,7 @@ One of the following:
 
 <summary>
 
-tlsVersion: optional array of "TLSv1\_0"or "TLSv1\_1"or "TLSv1\_2"or "TLSv1\_3"
+tlsVersion: optional array of "TLSv1\_0" or "TLSv1\_1" or "TLSv1\_2" or "TLSv1\_3"
 
 Filters results by TLS version.
 
@@ -268,7 +268,7 @@ One of the following:
 
 <summary>
 
-result: object {meta, serie\_0 }
+result: object { meta, serie\_0 }
 
 </summary>
 
@@ -276,7 +276,7 @@ result: object {meta, serie\_0 }
 
 <summary>
 
-meta: object {aggInterval, confidenceInfo, dateRange, 3 more }
+meta: object { aggInterval, confidenceInfo, dateRange, 3 more }
 
 Metadata for the results.
 
@@ -286,7 +286,7 @@ Metadata for the results.
 
 <summary>
 
-aggInterval: "FIFTEEN\_MINUTES"or "ONE\_HOUR"or "ONE\_DAY"or 2 more
+aggInterval: "FIFTEEN\_MINUTES" or "ONE\_HOUR" or "ONE\_DAY" or 2 more
 
 Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to <a href="https://developers.cloudflare.com/radar/concepts/aggregation-intervals/">Aggregation intervals</a>.
 
@@ -322,7 +322,7 @@ One of the following:
 
 <summary>
 
-confidenceInfo: object {annotations, level }
+confidenceInfo: object { annotations, level }
 
 </summary>
 
@@ -330,7 +330,7 @@ confidenceInfo: object {annotations, level }
 
 <summary>
 
-annotations: array of object {dataSource, description, endDate, 5 more }
+annotations: array of object { dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -338,7 +338,7 @@ annotations: array of object {dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
+dataSource: "ALL" or "AI\_BOTS" or "AI\_GATEWAY" or 22 more
 
 Data source for annotations.
 
@@ -464,7 +464,7 @@ formatdate-time
 
 <summary>
 
-eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
+eventType: "GENERAL" or "OUTAGE" or "PARTIAL\_PROJECTION" or 2 more
 
 Event type for annotations.
 
@@ -536,7 +536,7 @@ Provides an indication of how much confidence Cloudflare has in the data.
 
 <summary>
 
-dateRange: array of object {endTime, startTime }
+dateRange: array of object { endTime, startTime }
 
 </summary>
 
@@ -572,7 +572,7 @@ formatdate-time
 
 <summary>
 
-normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
+normalization: "PERCENTAGE" or "MIN0\_MAX" or "MIN\_MAX" or 5 more
 
 Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
@@ -620,7 +620,7 @@ One of the following:
 
 <summary>
 
-units: array of object {name, value }
+units: array of object { name, value }
 
 Measurement units for the results.
 

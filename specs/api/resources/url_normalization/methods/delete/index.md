@@ -54,7 +54,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Response Compression Write``Config Settings Write``Dynamic URL Redirects Write``Cache Settings Write``Custom Errors Write``Origin Write``Managed headers Write``Zone Transform Rules Write``Mass URL Redirects Write``Magic Firewall Write``L4 DDoS Managed Ruleset Write``HTTP DDoS Managed Ruleset Write``Sanitize Write``Transform Rules Write``Select Configuration Write``Bot Management Write``Zone WAF Write``Account WAF Write``Account Rulesets Write``Logs Write``Logs Write`
+`Account Custom Error Rules Write``Response Compression Write``Account Custom Pages Write``Custom Pages Write``Config Settings Write``Dynamic URL Redirects Write``Cache Settings Write``Custom Errors Write``Origin Write``Managed headers Write``Zone Transform Rules Write``Mass URL Redirects Write``Magic Firewall Write``L4 DDoS Managed Ruleset Write``HTTP DDoS Managed Ruleset Write``Sanitize Write``Transform Rules Write``Select Configuration Write``Bot Management Write``Zone WAF Write``Account WAF Write``Account Rulesets Write``Logs Write``Logs Write`
 
 ##### P ath ParametersExpand Collapse
 

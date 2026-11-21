@@ -84,7 +84,7 @@ Whether OCR is enabled at the account level.
 
 <summary>
 
-payload\_logging: optional object {masking\_level, public\_key }
+payload\_logging: optional object { masking\_level, public\_key }
 
 Request model for payload log settings within the DLP settings endpoint. Unlike the legacy endpoint, null and missing are treated identically here (both mean “not provided” for PATCH, “reset to default” for PUT).
 
@@ -94,7 +94,7 @@ Request model for payload log settings within the DLP settings endpoint. Unlike 
 
 <summary>
 
-masking\_level: optional "full"or "partial"or "clear"or "default"
+masking\_level: optional "full" or "partial" or "clear" or "default"
 
 Masking level for payload logs.
 
@@ -147,7 +147,7 @@ Base64-encoded public key for encrypting payload logs.
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -169,7 +169,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -189,7 +189,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -211,7 +211,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -259,7 +259,7 @@ Whether OCR is enabled at the account level.
 
 <summary>
 
-payload\_logging: object {updated\_at, masking\_level, public\_key }
+payload\_logging: object { updated\_at, masking\_level, public\_key }
 
 </summary>
 
@@ -273,7 +273,7 @@ formatdate-time
 
 <summary>
 
-masking\_level: optional "full"or "partial"or "clear"or "default"
+masking\_level: optional "full" or "partial" or "clear" or "default"
 
 Masking level for payload logs.
 

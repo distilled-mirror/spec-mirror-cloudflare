@@ -48,7 +48,7 @@ organization\_id: string
 
 <summary>
 
-member: object {user }
+member: object { user }
 
 </summary>
 
@@ -56,7 +56,7 @@ member: object {user }
 
 <summary>
 
-user: object {email }
+user: object { email }
 
 </summary>
 
@@ -104,7 +104,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -148,7 +148,7 @@ meta: map\[unknown]
 
 <summary>
 
-status: "active"or "pending"or "rejected"or "canceled"
+status: "active" or "pending" or "rejected" or "canceled"
 
 </summary>
 
@@ -184,7 +184,7 @@ formatdate-time
 
 <summary>
 
-user: object {id, email, name, two\_factor\_authentication\_enabled }
+user: object { id, email, name, two\_factor\_authentication\_enabled }
 
 </summary>
 
@@ -212,7 +212,7 @@ two\_factor\_authentication\_enabled: boolean
 
 <summary>
 
-policies: optional array of object {roles, scopes, id }
+policies: optional array of object { roles, scopes, id }
 
 Direct policies of the membership. Present only for DSR members enrolled in Organization Roles.
 
@@ -222,7 +222,7 @@ Direct policies of the membership. Present only for DSR members enrolled in Orga
 
 <summary>
 
-roles: array of object {id }
+roles: array of object { id }
 
 </summary>
 
@@ -238,7 +238,7 @@ id: string
 
 <summary>
 
-scopes: array of object {key, subset\_of }
+scopes: array of object { key, subset\_of }
 
 </summary>
 

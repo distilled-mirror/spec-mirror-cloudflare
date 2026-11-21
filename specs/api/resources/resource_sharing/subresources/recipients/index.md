@@ -40,7 +40,7 @@ DELETE/accounts/{account\_id}/shares/{share\_id}/recipients/{recipient\_id}
 
 <summary>
 
-RecipientListResponse object {id, account\_id, association\_status, 3 more }
+RecipientListResponse object { id, account\_id, association\_status, 3 more }
 
 A recipient of a share. The <code>association_status</code> field tracks the lifecycle of the shared resources in the recipient account. All recipients are returned by the list endpoint regardless of status; filter client-side if only active recipients are needed.
 
@@ -70,7 +70,7 @@ minLength32
 
 <summary>
 
-association\_status: "associating"or "associated"or "disassociating"or "disassociated"
+association\_status: "associating" or "associated" or "disassociating" or "disassociated"
 
 The current state of the recipient relative to the share. The <code>desired_association_status</code> (not exposed in the response) tracks the target state set by the API; the background reconciliation workflow drives <code>current_association_status</code> toward it.
 
@@ -123,7 +123,7 @@ formatdate-time
 
 <summary>
 
-resources: optional array of object {error, resource\_id, resource\_version, terminal }
+resources: optional array of object { error, resource\_id, resource\_version, terminal }
 
 </summary>
 
@@ -163,7 +163,7 @@ Whether the error is terminal or will be continually retried.
 
 <summary>
 
-RecipientGetResponse object {id, account\_id, association\_status, 3 more }
+RecipientGetResponse object { id, account\_id, association\_status, 3 more }
 
 A recipient of a share. The <code>association_status</code> field tracks the lifecycle of the shared resources in the recipient account. All recipients are returned by the list endpoint regardless of status; filter client-side if only active recipients are needed.
 
@@ -193,7 +193,7 @@ minLength32
 
 <summary>
 
-association\_status: "associating"or "associated"or "disassociating"or "disassociated"
+association\_status: "associating" or "associated" or "disassociating" or "disassociated"
 
 The current state of the recipient relative to the share. The <code>desired_association_status</code> (not exposed in the response) tracks the target state set by the API; the background reconciliation workflow drives <code>current_association_status</code> toward it.
 
@@ -246,7 +246,7 @@ formatdate-time
 
 <summary>
 
-resources: optional array of object {error, resource\_id, resource\_version, terminal }
+resources: optional array of object { error, resource\_id, resource\_version, terminal }
 
 </summary>
 
@@ -286,7 +286,7 @@ Whether the error is terminal or will be continually retried.
 
 <summary>
 
-RecipientCreateResponse object {id, account\_id, association\_status, 3 more }
+RecipientCreateResponse object { id, account\_id, association\_status, 3 more }
 
 A recipient of a share. The <code>association_status</code> field tracks the lifecycle of the shared resources in the recipient account. All recipients are returned by the list endpoint regardless of status; filter client-side if only active recipients are needed.
 
@@ -316,7 +316,7 @@ minLength32
 
 <summary>
 
-association\_status: "associating"or "associated"or "disassociating"or "disassociated"
+association\_status: "associating" or "associated" or "disassociating" or "disassociated"
 
 The current state of the recipient relative to the share. The <code>desired_association_status</code> (not exposed in the response) tracks the target state set by the API; the background reconciliation workflow drives <code>current_association_status</code> toward it.
 
@@ -369,7 +369,7 @@ formatdate-time
 
 <summary>
 
-resources: optional array of object {error, resource\_id, resource\_version, terminal }
+resources: optional array of object { error, resource\_id, resource\_version, terminal }
 
 </summary>
 
@@ -409,7 +409,7 @@ Whether the error is terminal or will be continually retried.
 
 <summary>
 
-RecipientDeleteResponse object {id, account\_id, association\_status, 3 more }
+RecipientDeleteResponse object { id, account\_id, association\_status, 3 more }
 
 A recipient of a share. The <code>association_status</code> field tracks the lifecycle of the shared resources in the recipient account. All recipients are returned by the list endpoint regardless of status; filter client-side if only active recipients are needed.
 
@@ -439,7 +439,7 @@ minLength32
 
 <summary>
 
-association\_status: "associating"or "associated"or "disassociating"or "disassociated"
+association\_status: "associating" or "associated" or "disassociating" or "disassociated"
 
 The current state of the recipient relative to the share. The <code>desired_association_status</code> (not exposed in the response) tracks the target state set by the API; the background reconciliation workflow drives <code>current_association_status</code> toward it.
 
@@ -492,7 +492,7 @@ formatdate-time
 
 <summary>
 
-resources: optional array of object {error, resource\_id, resource\_version, terminal }
+resources: optional array of object { error, resource\_id, resource\_version, terminal }
 
 </summary>
 

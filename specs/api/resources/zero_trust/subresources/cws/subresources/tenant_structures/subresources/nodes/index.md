@@ -52,7 +52,7 @@ POST/accounts/{account\_id}/cws/tenant-structures/{structure\_id}/nodes/batch
 
 <summary>
 
-TenantStructureNode object {id, created\_at, native\_id, 4 more }
+TenantStructureNode object { id, created\_at, native\_id, 4 more }
 
 </summary>
 
@@ -120,7 +120,7 @@ maxLength255
 
 <summary>
 
-NodeDeleteResponse object {id }
+NodeDeleteResponse object { id }
 
 </summary>
 
@@ -138,7 +138,7 @@ formatuuid
 
 <summary>
 
-NodeBatchResponse object {created, deleted, updated }
+NodeBatchResponse object { created, deleted, updated }
 
 </summary>
 
@@ -214,7 +214,7 @@ maxLength255
 
 <summary>
 
-deleted: array of object {id }
+deleted: array of object { id }
 
 </summary>
 

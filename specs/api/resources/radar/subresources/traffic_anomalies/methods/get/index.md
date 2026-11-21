@@ -70,7 +70,7 @@ Filters results by Autonomous System. Specify a single Autonomous System Number 
 
 <summary>
 
-dataSource: optional "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
+dataSource: optional "ALL" or "AI\_BOTS" or "AI\_GATEWAY" or 22 more
 
 Filters results by data source.
 
@@ -208,7 +208,7 @@ formatdate-time
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -268,7 +268,7 @@ maxLength100
 
 <summary>
 
-status: optional "VERIFIED"or "UNVERIFIED"
+status: optional "VERIFIED" or "UNVERIFIED"
 
 </summary>
 
@@ -290,7 +290,7 @@ One of the following:
 
 <summary>
 
-type: optional array of "LOCATION"or "AS"or "ORIGIN"
+type: optional array of "LOCATION" or "AS" or "ORIGIN"
 
 Filters results by entity type (LOCATION, AS, or ORIGIN).
 
@@ -320,7 +320,7 @@ One of the following:
 
 <summary>
 
-result: object {trafficAnomalies }
+result: object { trafficAnomalies }
 
 </summary>
 
@@ -328,7 +328,7 @@ result: object {trafficAnomalies }
 
 <summary>
 
-trafficAnomalies: array of object {asnDetails, endDate, locationDetails, 7 more }
+trafficAnomalies: array of object { asnDetails, endDate, locationDetails, 7 more }
 
 </summary>
 
@@ -336,7 +336,7 @@ trafficAnomalies: array of object {asnDetails, endDate, locationDetails, 7 more 
 
 <summary>
 
-asnDetails: object {asn, location, name }
+asnDetails: object { asn, location, name }
 
 </summary>
 
@@ -348,7 +348,7 @@ asn: string
 
 <summary>
 
-location: object {code, name }
+location: object { code, name }
 
 </summary>
 
@@ -382,7 +382,7 @@ formatdate-time
 
 <summary>
 
-locationDetails: object {code, name }
+locationDetails: object { code, name }
 
 </summary>
 
@@ -402,7 +402,7 @@ name: string
 
 <summary>
 
-originDetails: object {name, origin }
+originDetails: object { name, origin }
 
 </summary>
 

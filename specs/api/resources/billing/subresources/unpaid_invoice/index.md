@@ -28,7 +28,7 @@ GET/accounts/{account\_id}/billing/unpaid-invoice
 
 <summary>
 
-UnpaidInvoiceGetResponse object {invoices }
+UnpaidInvoiceGetResponse object { invoices }
 
 </summary>
 
@@ -36,7 +36,7 @@ UnpaidInvoiceGetResponse object {invoices }
 
 <summary>
 
-invoices: optional array of object {id, action, amount, 12 more }
+invoices: optional array of object { id, action, amount, 12 more }
 
 List of unpaid invoices.
 

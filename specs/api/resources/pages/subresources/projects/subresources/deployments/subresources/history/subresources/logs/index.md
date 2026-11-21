@@ -34,7 +34,7 @@ GET/accounts/{account\_id}/pages/projects/{project\_name}/deployments/{deploymen
 
 <summary>
 
-LogGetResponse object {data, includes\_container\_logs, total }
+LogGetResponse object { data, includes\_container\_logs, total }
 
 </summary>
 
@@ -42,7 +42,7 @@ LogGetResponse object {data, includes\_container\_logs, total }
 
 <summary>
 
-data: array of object {line, ts }
+data: array of object { line, ts }
 
 </summary>
 

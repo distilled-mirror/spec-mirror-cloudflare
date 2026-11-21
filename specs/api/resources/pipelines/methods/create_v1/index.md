@@ -88,7 +88,7 @@ Specifies SQL for the Pipeline processing flow.
 
 <summary>
 
-result: object {id, created\_at, modified\_at, 3 more }
+result: object { id, created\_at, modified\_at, 3 more }
 
 </summary>
 

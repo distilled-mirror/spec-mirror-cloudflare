@@ -96,7 +96,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -138,7 +138,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -164,7 +164,7 @@ Indicate whether the API call was successful.
 
 <summary>
 
-result: optional array of object {id, backup\_ip, pair\_type, primary\_ip }
+result: optional array of object { id, backup\_ip, pair\_type, primary\_ip }
 
 </summary>
 
@@ -180,7 +180,7 @@ backup\_ip: string
 
 <summary>
 
-pair\_type: "shared"or "dedicated"or "byoip"
+pair\_type: "shared" or "dedicated" or "byoip"
 
 Specify whether the pair shared across multiple accounts (shared) or available exclusively to this account. Non-shared pairs can contain Cloudflare-owned IPs (dedicated) or customer-provided IPs (byoip).
 
@@ -216,7 +216,7 @@ primary\_ip: string
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object { count, page, per\_page, total\_count }
 
 </summary>
 

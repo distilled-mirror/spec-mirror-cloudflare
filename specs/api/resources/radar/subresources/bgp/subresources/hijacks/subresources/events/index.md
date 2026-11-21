@@ -32,7 +32,7 @@ GET/radar/bgp/hijacks/events
 
 <summary>
 
-EventListResponse object {asn\_info, events, total\_monitors }
+EventListResponse object { asn\_info, events, total\_monitors }
 
 </summary>
 
@@ -40,7 +40,7 @@ EventListResponse object {asn\_info, events, total\_monitors }
 
 <summary>
 
-asn\_info: array of object {asn, country\_code, org\_name }
+asn\_info: array of object { asn, country\_code, org\_name }
 
 </summary>
 
@@ -64,7 +64,7 @@ org\_name: string
 
 <summary>
 
-events: array of object {id, confidence\_score, duration, 15 more }
+events: array of object { id, confidence\_score, duration, 15 more }
 
 </summary>
 
@@ -132,7 +132,7 @@ prefixes: array of string
 
 <summary>
 
-tags: array of object {name, score }
+tags: array of object { name, score }
 
 </summary>
 

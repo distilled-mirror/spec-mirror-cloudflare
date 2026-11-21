@@ -58,6 +58,10 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 </details>
 
+##### Accepted Permissions (at least one required)
+
+`Zero Trust Write`
+
 ##### P ath ParametersExpand Collapse
 
 account\_id: string
@@ -80,7 +84,7 @@ A non-unique field that refers to a target. Case insensitive, maximum length of 
 
 <summary>
 
-ip: object {ipv4, ipv6 }
+ip: object { ipv4, ipv6 }
 
 The IPv4/IPv6 address that identifies where to reach a target
 
@@ -90,7 +94,7 @@ The IPv4/IPv6 address that identifies where to reach a target
 
 <summary>
 
-ipv4: optional object {ip\_addr, virtual\_network\_id }
+ipv4: optional object { ip\_addr, virtual\_network\_id }
 
 The target’s IPv4 address
 
@@ -118,7 +122,7 @@ formatuuid
 
 <summary>
 
-ipv6: optional object {ip\_addr, virtual\_network\_id }
+ipv6: optional object { ip\_addr, virtual\_network\_id }
 
 The target’s IPv6 address
 
@@ -158,7 +162,7 @@ Optional tags to associate with the target. Keys and values are user-defined str
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -180,7 +184,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -200,7 +204,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -222,7 +226,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -248,7 +252,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, created\_at, hostname, 3 more }
+result: optional object { id, created\_at, hostname, 3 more }
 
 </summary>
 
@@ -280,7 +284,7 @@ A non-unique field that refers to a target
 
 <summary>
 
-ip: object {ipv4, ipv6 }
+ip: object { ipv4, ipv6 }
 
 The IPv4/IPv6 address that identifies where to reach a target
 
@@ -290,7 +294,7 @@ The IPv4/IPv6 address that identifies where to reach a target
 
 <summary>
 
-ipv4: optional object {ip\_addr, virtual\_network\_id }
+ipv4: optional object { ip\_addr, virtual\_network\_id }
 
 The target’s IPv4 address
 
@@ -318,7 +322,7 @@ formatuuid
 
 <summary>
 
-ipv6: optional object {ip\_addr, virtual\_network\_id }
+ipv6: optional object { ip\_addr, virtual\_network\_id }
 
 The target’s IPv6 address
 

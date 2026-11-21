@@ -136,7 +136,7 @@ maxLength36
 
 <summary>
 
-tun\_types: optional array of "cfd\_tunnel"or "warp\_connector"or "warp"or 4 more
+tun\_types: optional array of "cfd\_tunnel" or "warp\_connector" or "warp" or 4 more
 
 The types of tunnels to filter by, separated by commas.
 
@@ -200,7 +200,7 @@ formatuuid
 
 <summary>
 
-errors: array of object {code, message, context }
+errors: array of object { code, message, context }
 
 </summary>
 
@@ -228,7 +228,7 @@ Optional error-specific context.
 
 <summary>
 
-messages: array of object {code, message, context }
+messages: array of object { code, message, context }
 
 </summary>
 
@@ -302,7 +302,7 @@ The private IPv4 or IPv6 range connected by the route, in CIDR notation.
 
 <summary>
 
-tun\_type: optional "cfd\_tunnel"or "warp\_connector"or "warp"or 4 more
+tun\_type: optional "cfd\_tunnel" or "warp\_connector" or "warp" or 4 more
 
 The type of tunnel.
 
@@ -388,7 +388,7 @@ Whether the API call was successful
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object { count, page, per\_page, total\_count }
 
 </summary>
 

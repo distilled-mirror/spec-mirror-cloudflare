@@ -36,7 +36,7 @@ PUT/accounts/{account\_id}/builds/builds/{build\_uuid}/cancel
 
 <summary>
 
-BuildListResponse = unknownor array of unknown
+BuildListResponse = unknown or array of unknown
 
 </summary>
 
@@ -58,7 +58,7 @@ array of unknown
 
 <summary>
 
-BuildGetResponse = object {build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more } or object {build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more }
+BuildGetResponse = object { build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more } or object { build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more }
 
 </summary>
 
@@ -68,7 +68,7 @@ One of the following:
 
 <summary>
 
-object {build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more }
+object { build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more }
 
 </summary>
 
@@ -76,7 +76,7 @@ object {build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more }
 
 <summary>
 
-build\_outcome: optional "success"or "fail"or "skipped"or 2 more
+build\_outcome: optional "success" or "fail" or "skipped" or 2 more
 
 </summary>
 
@@ -110,7 +110,7 @@ One of the following:
 
 <summary>
 
-build\_trigger\_metadata: optional object {author, branch, build\_command, 11 more }
+build\_trigger\_metadata: optional object { author, branch, build\_command, 11 more }
 
 </summary>
 
@@ -146,7 +146,7 @@ formatuuid
 
 <summary>
 
-build\_trigger\_source: optional "push"or "pull\_request"or "manual"or "api"
+build\_trigger\_source: optional "push" or "pull\_request" or "manual" or "api"
 
 </summary>
 
@@ -202,7 +202,7 @@ Human-readable name of the account or namespace that owns the repository.
 
 <summary>
 
-provider\_type: optional "github"or "gitlab"or "gitlab\_internal"or "origin"
+provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
 
 Source control provider.
 
@@ -264,7 +264,7 @@ formatdate-time
 
 <summary>
 
-deploy\_hook: optional object {deploy\_hook\_name }
+deploy\_hook: optional object { deploy\_hook\_name }
 
 </summary>
 
@@ -306,7 +306,7 @@ formaturi
 
 <summary>
 
-pull\_request: optional object {closed\_on, created\_on, pull\_request\_url }
+pull\_request: optional object { closed\_on, created\_on, pull\_request\_url }
 
 </summary>
 
@@ -342,7 +342,7 @@ formatdate-time
 
 <summary>
 
-status: optional "queued"or "initializing"or "running"or "stopped"
+status: optional "queued" or "initializing" or "running" or "stopped"
 
 </summary>
 
@@ -378,7 +378,7 @@ formatdate-time
 
 <summary>
 
-trigger: optional object {branch\_excludes, branch\_includes, build\_caching\_enabled, 12 more }
+trigger: optional object { branch\_excludes, branch\_includes, build\_caching\_enabled, 12 more }
 
 Trigger information without build\_token\_uuid
 
@@ -454,7 +454,7 @@ Path patterns that can start builds.
 
 <summary>
 
-repo\_connection: optional object {created\_on, deleted\_on, modified\_on, 6 more }
+repo\_connection: optional object { created\_on, deleted\_on, modified\_on, 6 more }
 
 </summary>
 
@@ -492,7 +492,7 @@ Human-readable name of the account or namespace that owns the repository.
 
 <summary>
 
-provider\_type: optional "github"or "gitlab"or "gitlab\_internal"or "origin"
+provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
 
 Source control provider.
 
@@ -576,7 +576,7 @@ formatuuid
 
 <summary>
 
-object {build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more }
+object { build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more }
 
 </summary>
 
@@ -584,7 +584,7 @@ object {build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more }
 
 <summary>
 
-build\_outcome: optional "success"or "fail"or "skipped"or 2 more
+build\_outcome: optional "success" or "fail" or "skipped" or 2 more
 
 </summary>
 
@@ -618,7 +618,7 @@ One of the following:
 
 <summary>
 
-build\_trigger\_metadata: optional object {author, branch, build\_command, 11 more }
+build\_trigger\_metadata: optional object { author, branch, build\_command, 11 more }
 
 </summary>
 
@@ -654,7 +654,7 @@ formatuuid
 
 <summary>
 
-build\_trigger\_source: optional "push"or "pull\_request"or "manual"or "api"
+build\_trigger\_source: optional "push" or "pull\_request" or "manual" or "api"
 
 </summary>
 
@@ -710,7 +710,7 @@ Human-readable name of the account or namespace that owns the repository.
 
 <summary>
 
-provider\_type: optional "github"or "gitlab"or "gitlab\_internal"or "origin"
+provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
 
 Source control provider.
 
@@ -772,7 +772,7 @@ formatdate-time
 
 <summary>
 
-deploy\_hook: optional object {deploy\_hook\_name }
+deploy\_hook: optional object { deploy\_hook\_name }
 
 </summary>
 
@@ -814,7 +814,7 @@ formaturi
 
 <summary>
 
-pull\_request: optional object {closed\_on, created\_on, pull\_request\_url }
+pull\_request: optional object { closed\_on, created\_on, pull\_request\_url }
 
 </summary>
 
@@ -850,7 +850,7 @@ formatdate-time
 
 <summary>
 
-status: optional "queued"or "initializing"or "running"or "stopped"
+status: optional "queued" or "initializing" or "running" or "stopped"
 
 </summary>
 
@@ -886,7 +886,7 @@ formatdate-time
 
 <summary>
 
-trigger: optional object {branch\_excludes, branch\_includes, build\_caching\_enabled, 12 more }
+trigger: optional object { branch\_excludes, branch\_includes, build\_caching\_enabled, 12 more }
 
 Trigger information without build\_token\_uuid
 
@@ -962,7 +962,7 @@ Path patterns that can start builds.
 
 <summary>
 
-repo\_connection: optional object {created\_on, deleted\_on, modified\_on, 6 more }
+repo\_connection: optional object { created\_on, deleted\_on, modified\_on, 6 more }
 
 </summary>
 
@@ -1000,7 +1000,7 @@ Human-readable name of the account or namespace that owns the repository.
 
 <summary>
 
-provider\_type: optional "github"or "gitlab"or "gitlab\_internal"or "origin"
+provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
 
 Source control provider.
 
@@ -1088,7 +1088,7 @@ formatuuid
 
 <summary>
 
-BuildCancelResponse = object {build\_outcome, build\_uuid, stopped\_on } or object {build\_outcome, build\_uuid, stopped\_on }
+BuildCancelResponse = object { build\_outcome, build\_uuid, stopped\_on } or object { build\_outcome, build\_uuid, stopped\_on }
 
 </summary>
 
@@ -1098,7 +1098,7 @@ One of the following:
 
 <summary>
 
-object {build\_outcome, build\_uuid, stopped\_on }
+object { build\_outcome, build\_uuid, stopped\_on }
 
 </summary>
 
@@ -1106,7 +1106,7 @@ object {build\_outcome, build\_uuid, stopped\_on }
 
 <summary>
 
-build\_outcome: optional "success"or "fail"or "skipped"or 2 more
+build\_outcome: optional "success" or "fail" or "skipped" or 2 more
 
 </summary>
 
@@ -1158,7 +1158,7 @@ formatdate-time
 
 <summary>
 
-object {build\_outcome, build\_uuid, stopped\_on }
+object { build\_outcome, build\_uuid, stopped\_on }
 
 </summary>
 
@@ -1166,7 +1166,7 @@ object {build\_outcome, build\_uuid, stopped\_on }
 
 <summary>
 
-build\_outcome: optional "success"or "fail"or "skipped"or 2 more
+build\_outcome: optional "success" or "fail" or "skipped" or 2 more
 
 </summary>
 
@@ -1230,7 +1230,7 @@ GET/accounts/{account\_id}/builds/builds/{build\_uuid}/logs
 
 <summary>
 
-LogGetResponse = object {cursor, lines, truncated } or object {cursor, lines, truncated }
+LogGetResponse = object { cursor, lines, truncated } or object { cursor, lines, truncated }
 
 </summary>
 
@@ -1240,7 +1240,7 @@ One of the following:
 
 <summary>
 
-object {cursor, lines, truncated }
+object { cursor, lines, truncated }
 
 </summary>
 
@@ -1254,7 +1254,7 @@ Pagination cursor for log retrieval.
 
 <summary>
 
-lines: optional array of array of numberor string
+lines: optional array of array of number or string
 
 </summary>
 
@@ -1288,7 +1288,7 @@ truncated: optional boolean
 
 <summary>
 
-object {cursor, lines, truncated }
+object { cursor, lines, truncated }
 
 </summary>
 
@@ -1302,7 +1302,7 @@ Pagination cursor for log retrieval.
 
 <summary>
 
-lines: optional array of array of numberor string
+lines: optional array of array of number or string
 
 </summary>
 

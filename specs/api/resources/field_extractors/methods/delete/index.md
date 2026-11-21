@@ -76,7 +76,7 @@ minLength1
 
 <summary>
 
-errors: array of object {code, message, source }
+errors: array of object { code, message, source }
 
 </summary>
 
@@ -92,7 +92,7 @@ message: string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 Points to the offending input as a JSON Pointer into the request body.
 
@@ -114,7 +114,7 @@ pointer: string
 
 <summary>
 
-messages: array of object {code, message }
+messages: array of object { code, message }
 
 Additional informational messages.
 

@@ -34,7 +34,7 @@ POST/accounts/{account\_id}/analytics/query/data-security/findings/timeseries
 
 <summary>
 
-FindingSummaryResponse object {currentTotal, previousTotal }
+FindingSummaryResponse object { currentTotal, previousTotal }
 
 </summary>
 
@@ -58,7 +58,7 @@ Aggregated stats for the equivalent preceding time range, for trend comparison.
 
 <summary>
 
-FindingTimeseriesResponse object {slots, resolution }
+FindingTimeseriesResponse object { slots, resolution }
 
 Merged CASB and CDE findings timeseries result.
 

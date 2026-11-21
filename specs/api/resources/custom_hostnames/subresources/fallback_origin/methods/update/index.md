@@ -84,7 +84,7 @@ maxLength255
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -106,7 +106,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -126,7 +126,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -148,7 +148,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -174,7 +174,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {created\_at, errors, origin, 2 more }
+result: optional object { created\_at, errors, origin, 2 more }
 
 </summary>
 
@@ -204,7 +204,7 @@ maxLength255
 
 <summary>
 
-status: optional "initializing"or "pending\_deployment"or "pending\_deletion"or 3 more
+status: optional "initializing" or "pending\_deployment" or "pending\_deletion" or 3 more
 
 Status of the fallback origin’s activation.
 

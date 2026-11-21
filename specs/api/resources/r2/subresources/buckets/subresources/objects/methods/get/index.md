@@ -68,7 +68,7 @@ The key (name) of the object to retrieve. May contain slashes for path-like keys
 
 <summary>
 
-"cf-r2-jurisdiction": optional "default"or "eu"or "us"or 2 more
+"cf-r2-jurisdiction": optional "default" or "eu" or "us" or 2 more
 
 </summary>
 

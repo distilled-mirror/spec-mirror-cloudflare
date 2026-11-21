@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Zone Settings Write``Zone Settings Read`
+`Workers Metadata Read-Only``Workers Editor``Workers Content Read-Only``Workers Admin``Zone Settings Write``Zone Settings Read``Workers Routes Write``Workers Routes Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -96,7 +96,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -138,7 +138,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -172,7 +172,7 @@ result: optional <a href="https://developers.cloudflare.com/api/resources/speed#
 
 <summary>
 
-quota: optional object {plan, quotasPerPlan, remainingSchedules, 2 more }
+quota: optional object { plan, quotasPerPlan, remainingSchedules, 2 more }
 
 </summary>
 
@@ -186,7 +186,7 @@ Cloudflare plan.
 
 <summary>
 
-quotasPerPlan: optional object {value }
+quotasPerPlan: optional object { value }
 
 The number of tests available per plan.
 
@@ -196,7 +196,7 @@ The number of tests available per plan.
 
 <summary>
 
-value: optional object {business, enterprise, free, pro }
+value: optional object { business, enterprise, free, pro }
 
 Counts per account plan.
 
@@ -242,7 +242,7 @@ The number of remaining tests available.
 
 <summary>
 
-scheduleQuotasPerPlan: optional object {value }
+scheduleQuotasPerPlan: optional object { value }
 
 The number of schedules available per plan.
 
@@ -252,7 +252,7 @@ The number of schedules available per plan.
 
 <summary>
 
-value: optional object {business, enterprise, free, pro }
+value: optional object { business, enterprise, free, pro }
 
 Counts per account plan.
 
@@ -302,7 +302,7 @@ label: optional string
 
 <summary>
 
-value: optional "asia-east1"or "asia-northeast1"or "asia-northeast2"or 18 more
+value: optional "asia-east1" or "asia-northeast1" or "asia-northeast2" or 18 more
 
 A test region.
 
@@ -406,7 +406,7 @@ One of the following:
 
 <summary>
 
-regionsPerPlan: optional object {business, enterprise, free, pro }
+regionsPerPlan: optional object { business, enterprise, free, pro }
 
 Available regions.
 
@@ -428,7 +428,7 @@ label: optional string
 
 <summary>
 
-value: optional "asia-east1"or "asia-northeast1"or "asia-northeast2"or 18 more
+value: optional "asia-east1" or "asia-northeast1" or "asia-northeast2" or 18 more
 
 A test region.
 
@@ -544,7 +544,7 @@ label: optional string
 
 <summary>
 
-value: optional "asia-east1"or "asia-northeast1"or "asia-northeast2"or 18 more
+value: optional "asia-east1" or "asia-northeast1" or "asia-northeast2" or 18 more
 
 A test region.
 
@@ -660,7 +660,7 @@ label: optional string
 
 <summary>
 
-value: optional "asia-east1"or "asia-northeast1"or "asia-northeast2"or 18 more
+value: optional "asia-east1" or "asia-northeast1" or "asia-northeast2" or 18 more
 
 A test region.
 
@@ -776,7 +776,7 @@ label: optional string
 
 <summary>
 
-value: optional "asia-east1"or "asia-northeast1"or "asia-northeast2"or 18 more
+value: optional "asia-east1" or "asia-northeast1" or "asia-northeast2" or 18 more
 
 A test region.
 

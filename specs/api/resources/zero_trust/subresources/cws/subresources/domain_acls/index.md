@@ -46,7 +46,7 @@ DELETE/accounts/{account\_id}/cws/domain-acls/{domain\_acl\_id}
 
 <summary>
 
-DomainACL object {id, created\_at, default\_action, 3 more }
+DomainACL object { id, created\_at, default\_action, 3 more }
 
 </summary>
 
@@ -68,7 +68,7 @@ formatdate-time
 
 <summary>
 
-default\_action: "ALLOW"or "BLOCK"
+default\_action: "ALLOW" or "BLOCK"
 
 Action applied when no entry matches the request domain
 
@@ -92,7 +92,7 @@ One of the following:
 
 <summary>
 
-entries: array of object {action, domain }
+entries: array of object { action, domain }
 
 Per-domain action overrides. Each domain appears at most once.
 
@@ -102,7 +102,7 @@ Per-domain action overrides. Each domain appears at most once.
 
 <summary>
 
-action: "ALLOW"or "BLOCK"
+action: "ALLOW" or "BLOCK"
 
 Per-domain decision overriding the parent ACL’s default\_action
 
@@ -160,7 +160,7 @@ formatdate-time
 
 <summary>
 
-DomainACLDeleteResponse object {id }
+DomainACLDeleteResponse object { id }
 
 </summary>
 

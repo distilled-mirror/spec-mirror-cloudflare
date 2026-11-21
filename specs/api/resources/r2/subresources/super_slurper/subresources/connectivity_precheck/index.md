@@ -34,7 +34,7 @@ PUT/accounts/{account\_id}/slurper/target/connectivity-precheck
 
 <summary>
 
-ConnectivityPrecheckSourceResponse object {connectivityStatus }
+ConnectivityPrecheckSourceResponse object { connectivityStatus }
 
 </summary>
 
@@ -42,7 +42,7 @@ ConnectivityPrecheckSourceResponse object {connectivityStatus }
 
 <summary>
 
-connectivityStatus: optional "success"or "error"
+connectivityStatus: optional "success" or "error"
 
 </summary>
 
@@ -68,7 +68,7 @@ One of the following:
 
 <summary>
 
-ConnectivityPrecheckTargetResponse object {connectivityStatus }
+ConnectivityPrecheckTargetResponse object { connectivityStatus }
 
 </summary>
 
@@ -76,7 +76,7 @@ ConnectivityPrecheckTargetResponse object {connectivityStatus }
 
 <summary>
 
-connectivityStatus: optional "success"or "error"
+connectivityStatus: optional "success" or "error"
 
 </summary>
 

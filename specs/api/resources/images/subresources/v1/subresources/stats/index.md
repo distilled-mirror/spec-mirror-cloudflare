@@ -30,7 +30,7 @@ GET/accounts/{account\_id}/images/v1/stats
 
 <summary>
 
-Stat object {count }
+Stat object { count }
 
 </summary>
 
@@ -38,7 +38,7 @@ Stat object {count }
 
 <summary>
 
-count: optional object {allowed, current }
+count: optional object { allowed, current }
 
 </summary>
 

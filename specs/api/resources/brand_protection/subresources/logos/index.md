@@ -32,7 +32,7 @@ DELETE/accounts/{account\_id}/brand-protection/logos/{logo\_id}
 
 <summary>
 
-LogoCreateResponse object {id, tag, upload\_path }
+LogoCreateResponse object { id, tag, upload\_path }
 
 </summary>
 

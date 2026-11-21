@@ -40,7 +40,7 @@ DELETE/accounts/{account\_id}/ai-gateway/custom-providers/{id}
 
 <summary>
 
-CustomProviderListResponse object {id, base\_url, created\_at, 12 more }
+CustomProviderListResponse object { id, base\_url, created\_at, 12 more }
 
 </summary>
 
@@ -124,7 +124,7 @@ position: optional number
 
 <summary>
 
-CustomProviderGetResponse object {id, base\_url, created\_at, 12 more }
+CustomProviderGetResponse object { id, base\_url, created\_at, 12 more }
 
 </summary>
 
@@ -208,7 +208,7 @@ position: optional number
 
 <summary>
 
-CustomProviderCreateResponse object {id, base\_url, created\_at, 12 more }
+CustomProviderCreateResponse object { id, base\_url, created\_at, 12 more }
 
 </summary>
 
@@ -292,7 +292,7 @@ position: optional number
 
 <summary>
 
-CustomProviderDeleteResponse object {id, base\_url, created\_at, 12 more }
+CustomProviderDeleteResponse object { id, base\_url, created\_at, 12 more }
 
 </summary>
 

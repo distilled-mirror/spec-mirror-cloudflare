@@ -30,7 +30,7 @@ POST/accounts/{account\_id}/load\_balancers/monitors/{monitor\_id}/preview
 
 <summary>
 
-PreviewCreateResponse object {pools, preview\_id }
+PreviewCreateResponse object { pools, preview\_id }
 
 </summary>
 

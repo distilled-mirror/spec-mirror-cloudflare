@@ -32,7 +32,7 @@ POST/{accounts\_or\_zones}/{account\_or\_zone\_id}/logpush/ownership/validate
 
 <summary>
 
-OwnershipValidation object {valid }
+OwnershipValidation object { valid }
 
 </summary>
 
@@ -48,7 +48,7 @@ valid: optional boolean
 
 <summary>
 
-OwnershipCreateResponse object {filename, message, valid }
+OwnershipCreateResponse object { filename, message, valid }
 
 </summary>
 

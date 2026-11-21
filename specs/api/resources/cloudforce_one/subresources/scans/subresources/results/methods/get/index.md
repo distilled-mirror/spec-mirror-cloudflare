@@ -88,7 +88,7 @@ messages: array of string
 
 <summary>
 
-result: object {"1.1.1.1" }
+result: object { "1.1.1.1" }
 
 </summary>
 

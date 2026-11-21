@@ -80,7 +80,7 @@ Not accepted: any value answers 400. Read the current eligibility with GET /topu
 
 <summary>
 
-payment\_methods: optional array of object {default, last\_four, type }
+payment\_methods: optional array of object { default, last\_four, type }
 
 The account’s payment methods. Omit it, or send an empty list, when there are none.
 
@@ -114,7 +114,7 @@ Payment-method type. Absent or unrecognized is treated as non-card (does not err
 
 <summary>
 
-errors: array of object {code, message }
+errors: array of object { code, message }
 
 </summary>
 
@@ -134,7 +134,7 @@ message: string
 
 <summary>
 
-messages: array of object {code, message }
+messages: array of object { code, message }
 
 </summary>
 
@@ -154,7 +154,7 @@ message: string
 
 <summary>
 
-result: object {account\_payment\_method\_state, aig\_customer\_state, aig\_default\_payment\_method\_state, 5 more }
+result: object { account\_payment\_method\_state, aig\_customer\_state, aig\_default\_payment\_method\_state, 5 more }
 
 </summary>
 
@@ -162,7 +162,7 @@ result: object {account\_payment\_method\_state, aig\_customer\_state, aig\_defa
 
 <summary>
 
-account\_payment\_method\_state: "NONE"or "UNSUPPORTED\_ONLY"or "SUPPORTED\_PRESENT"or "UNKNOWN"
+account\_payment\_method\_state: "NONE" or "UNSUPPORTED\_ONLY" or "SUPPORTED\_PRESENT" or "UNKNOWN"
 
 Account-level payment-method state derived from the provided list.
 
@@ -194,7 +194,7 @@ One of the following:
 
 <summary>
 
-aig\_customer\_state: "RESOLVED"or "RESOLUTION\_FAILED"
+aig\_customer\_state: "RESOLVED" or "RESOLUTION\_FAILED"
 
 AI Gateway billing profile resolution outcome.
 
@@ -218,7 +218,7 @@ One of the following:
 
 <summary>
 
-aig\_default\_payment\_method\_state: "PRESENT"or "MISSING"
+aig\_default\_payment\_method\_state: "PRESENT" or "MISSING"
 
 Whether AI Gateway billing has a default payment method.
 
@@ -242,7 +242,7 @@ One of the following:
 
 <summary>
 
-display\_payment\_method: object {last4, brand }
+display\_payment\_method: object { last4, brand }
 
 Card to reference in the UI, e.g. “use card ending 1234”.
 
@@ -274,7 +274,7 @@ True only when reason === ELIGIBLE.
 
 <summary>
 
-reason: "ELIGIBLE"or "NO\_ACCOUNT\_PAYMENT\_METHOD"or "UNSUPPORTED\_ACCOUNT\_PAYMENT\_METHOD"or 6 more
+reason: "ELIGIBLE" or "NO\_ACCOUNT\_PAYMENT\_METHOD" or "UNSUPPORTED\_ACCOUNT\_PAYMENT\_METHOD" or 6 more
 
 Canonical eligibility outcome for display and support triage.
 
@@ -326,7 +326,7 @@ One of the following:
 
 <summary>
 
-recommended\_action: "NONE"or "ADD\_SUPPORTED\_PAYMENT\_METHOD"or "USE\_EXISTING\_CARD"or 4 more
+recommended\_action: "NONE" or "ADD\_SUPPORTED\_PAYMENT\_METHOD" or "USE\_EXISTING\_CARD" or 4 more
 
 Machine-readable next step.
 
@@ -384,7 +384,7 @@ success: true
 
 <summary>
 
-result\_info: optional object {has\_more, page, per\_page, total\_count }
+result\_info: optional object { has\_more, page, per\_page, total\_count }
 
 </summary>
 

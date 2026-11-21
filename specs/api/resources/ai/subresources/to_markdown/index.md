@@ -32,7 +32,7 @@ GET/accounts/{account\_id}/ai/tomarkdown/supported
 
 <summary>
 
-ToMarkdownTransformResponse object {data, format, mimeType, 2 more }
+ToMarkdownTransformResponse object { data, format, mimeType, 2 more }
 
 </summary>
 
@@ -64,7 +64,7 @@ tokens: string
 
 <summary>
 
-ToMarkdownSupportedResponse object {extension, mimeType }
+ToMarkdownSupportedResponse object { extension, mimeType }
 
 </summary>
 

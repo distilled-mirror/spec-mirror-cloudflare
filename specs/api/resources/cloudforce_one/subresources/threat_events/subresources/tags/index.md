@@ -42,7 +42,7 @@ DELETE/accounts/{account\_id}/cloudforce-one/events/tags/{tag\_uuid}
 
 <summary>
 
-TagListResponse object {pagination, tags }
+TagListResponse object { pagination, tags }
 
 </summary>
 
@@ -50,7 +50,7 @@ TagListResponse object {pagination, tags }
 
 <summary>
 
-pagination: object {page, pageSize, totalCount, totalPages }
+pagination: object { page, pageSize, totalCount, totalPages }
 
 </summary>
 
@@ -78,7 +78,7 @@ totalPages: number
 
 <summary>
 
-tags: array of object {uuid, value, activeDuration, 34 more }
+tags: array of object { uuid, value, activeDuration, 34 more }
 
 </summary>
 
@@ -98,7 +98,7 @@ activeDuration: optional string
 
 <summary>
 
-activeDuration\_annotated: optional object {value, tlp }
+activeDuration\_annotated: optional object { value, tlp }
 
 </summary>
 
@@ -110,7 +110,7 @@ value: string
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -160,7 +160,7 @@ actorCategory: optional string
 
 <summary>
 
-actorCategory\_annotated: optional object {value, confidence, tlp }
+actorCategory\_annotated: optional object { value, confidence, tlp }
 
 </summary>
 
@@ -176,7 +176,7 @@ confidence: optional number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -222,7 +222,7 @@ One of the following:
 
 <summary>
 
-aliases: optional array of object {value, confidence, tlp }
+aliases: optional array of object { value, confidence, tlp }
 
 Structured aliases ({ value, confidence 1-10, tlp }). Public: returned to all accounts with per-entry TLP filtering (entries with tlp: purple are removed for non-CFONE accounts).
 
@@ -244,7 +244,7 @@ minimum1
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -302,7 +302,7 @@ attributionOrganization: optional string
 
 <summary>
 
-attributionOrganization\_annotated: optional object {value, confidence, tlp }
+attributionOrganization\_annotated: optional object { value, confidence, tlp }
 
 </summary>
 
@@ -318,7 +318,7 @@ confidence: optional number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -398,7 +398,7 @@ externalReferenceLinks: optional array of string
 
 <summary>
 
-externalReferences: optional array of object {url, description }
+externalReferences: optional array of object { url, description }
 
 Structured external references ({ url, description }). Public: returned to all accounts.
 
@@ -420,7 +420,7 @@ description: optional string
 
 <summary>
 
-externalReferences\_annotated: optional array of object {value, tlp }
+externalReferences\_annotated: optional array of object { value, tlp }
 
 </summary>
 
@@ -432,7 +432,7 @@ value: string
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -478,7 +478,7 @@ One of the following:
 
 <summary>
 
-internalAliases: optional array of object {value, confidence, tlp }
+internalAliases: optional array of object { value, confidence, tlp }
 
 Owner-private structured aliases ({ value, confidence 1-10, tlp }). Returned to the owning account and omitted from shared-catalog non-owner responses.
 
@@ -500,7 +500,7 @@ minimum1
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -558,7 +558,7 @@ motive: optional string
 
 <summary>
 
-motive\_annotated: optional object {value, confidence, tlp }
+motive\_annotated: optional object { value, confidence, tlp }
 
 </summary>
 
@@ -574,7 +574,7 @@ confidence: optional number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -624,7 +624,7 @@ opsecLevel: optional string
 
 <summary>
 
-opsecLevel\_annotated: optional object {value, confidence, tlp }
+opsecLevel\_annotated: optional object { value, confidence, tlp }
 
 </summary>
 
@@ -640,7 +640,7 @@ confidence: optional number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -692,7 +692,7 @@ ISO country code (alpha-2 or alpha-3). Normalized to uppercase on read. Null whe
 
 <summary>
 
-originCountryISO\_annotated: optional object {value, confidence, tlp }
+originCountryISO\_annotated: optional object { value, confidence, tlp }
 
 </summary>
 
@@ -708,7 +708,7 @@ confidence: optional number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -758,7 +758,7 @@ priority: optional number
 
 <summary>
 
-priority\_annotated: optional object {value, tlp }
+priority\_annotated: optional object { value, tlp }
 
 </summary>
 
@@ -770,7 +770,7 @@ value: number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -826,7 +826,7 @@ sophisticationLevel: optional string
 
 <summary>
 
-sophisticationLevel\_annotated: optional object {value, confidence, tlp }
+sophisticationLevel\_annotated: optional object { value, confidence, tlp }
 
 </summary>
 
@@ -842,7 +842,7 @@ confidence: optional number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -888,7 +888,7 @@ One of the following:
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 Tag-level TLP handling marking.
 
@@ -948,7 +948,7 @@ version: optional number
 
 <summary>
 
-TagCreateResponse object {uuid, value, activeDuration, 34 more }
+TagCreateResponse object { uuid, value, activeDuration, 34 more }
 
 </summary>
 
@@ -968,7 +968,7 @@ activeDuration: optional string
 
 <summary>
 
-activeDuration\_annotated: optional object {value, tlp }
+activeDuration\_annotated: optional object { value, tlp }
 
 </summary>
 
@@ -980,7 +980,7 @@ value: string
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -1030,7 +1030,7 @@ actorCategory: optional string
 
 <summary>
 
-actorCategory\_annotated: optional object {value, confidence, tlp }
+actorCategory\_annotated: optional object { value, confidence, tlp }
 
 </summary>
 
@@ -1046,7 +1046,7 @@ confidence: optional number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -1092,7 +1092,7 @@ One of the following:
 
 <summary>
 
-aliases: optional array of object {value, confidence, tlp }
+aliases: optional array of object { value, confidence, tlp }
 
 Structured aliases ({ value, confidence 1-10, tlp }). Public: returned to all accounts with per-entry TLP filtering (entries with tlp: purple are removed for non-CFONE accounts).
 
@@ -1114,7 +1114,7 @@ minimum1
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -1172,7 +1172,7 @@ attributionOrganization: optional string
 
 <summary>
 
-attributionOrganization\_annotated: optional object {value, confidence, tlp }
+attributionOrganization\_annotated: optional object { value, confidence, tlp }
 
 </summary>
 
@@ -1188,7 +1188,7 @@ confidence: optional number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -1268,7 +1268,7 @@ externalReferenceLinks: optional array of string
 
 <summary>
 
-externalReferences: optional array of object {url, description }
+externalReferences: optional array of object { url, description }
 
 Structured external references ({ url, description }). Public: returned to all accounts.
 
@@ -1290,7 +1290,7 @@ description: optional string
 
 <summary>
 
-externalReferences\_annotated: optional array of object {value, tlp }
+externalReferences\_annotated: optional array of object { value, tlp }
 
 </summary>
 
@@ -1302,7 +1302,7 @@ value: string
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -1348,7 +1348,7 @@ One of the following:
 
 <summary>
 
-internalAliases: optional array of object {value, confidence, tlp }
+internalAliases: optional array of object { value, confidence, tlp }
 
 Owner-private structured aliases ({ value, confidence 1-10, tlp }). Returned to the owning account and omitted from shared-catalog non-owner responses.
 
@@ -1370,7 +1370,7 @@ minimum1
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -1428,7 +1428,7 @@ motive: optional string
 
 <summary>
 
-motive\_annotated: optional object {value, confidence, tlp }
+motive\_annotated: optional object { value, confidence, tlp }
 
 </summary>
 
@@ -1444,7 +1444,7 @@ confidence: optional number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -1494,7 +1494,7 @@ opsecLevel: optional string
 
 <summary>
 
-opsecLevel\_annotated: optional object {value, confidence, tlp }
+opsecLevel\_annotated: optional object { value, confidence, tlp }
 
 </summary>
 
@@ -1510,7 +1510,7 @@ confidence: optional number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -1562,7 +1562,7 @@ ISO country code (alpha-2 or alpha-3). Normalized to uppercase on read. Null whe
 
 <summary>
 
-originCountryISO\_annotated: optional object {value, confidence, tlp }
+originCountryISO\_annotated: optional object { value, confidence, tlp }
 
 </summary>
 
@@ -1578,7 +1578,7 @@ confidence: optional number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -1628,7 +1628,7 @@ priority: optional number
 
 <summary>
 
-priority\_annotated: optional object {value, tlp }
+priority\_annotated: optional object { value, tlp }
 
 </summary>
 
@@ -1640,7 +1640,7 @@ value: number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -1696,7 +1696,7 @@ sophisticationLevel: optional string
 
 <summary>
 
-sophisticationLevel\_annotated: optional object {value, confidence, tlp }
+sophisticationLevel\_annotated: optional object { value, confidence, tlp }
 
 </summary>
 
@@ -1712,7 +1712,7 @@ confidence: optional number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -1758,7 +1758,7 @@ One of the following:
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 Tag-level TLP handling marking.
 
@@ -1814,7 +1814,7 @@ version: optional number
 
 <summary>
 
-TagEditResponse object {uuid, value, activeDuration, 34 more }
+TagEditResponse object { uuid, value, activeDuration, 34 more }
 
 </summary>
 
@@ -1834,7 +1834,7 @@ activeDuration: optional string
 
 <summary>
 
-activeDuration\_annotated: optional object {value, tlp }
+activeDuration\_annotated: optional object { value, tlp }
 
 </summary>
 
@@ -1846,7 +1846,7 @@ value: string
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -1896,7 +1896,7 @@ actorCategory: optional string
 
 <summary>
 
-actorCategory\_annotated: optional object {value, confidence, tlp }
+actorCategory\_annotated: optional object { value, confidence, tlp }
 
 </summary>
 
@@ -1912,7 +1912,7 @@ confidence: optional number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -1958,7 +1958,7 @@ One of the following:
 
 <summary>
 
-aliases: optional array of object {value, confidence, tlp }
+aliases: optional array of object { value, confidence, tlp }
 
 Structured aliases ({ value, confidence 1-10, tlp }). Public: returned to all accounts with per-entry TLP filtering (entries with tlp: purple are removed for non-CFONE accounts).
 
@@ -1980,7 +1980,7 @@ minimum1
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -2038,7 +2038,7 @@ attributionOrganization: optional string
 
 <summary>
 
-attributionOrganization\_annotated: optional object {value, confidence, tlp }
+attributionOrganization\_annotated: optional object { value, confidence, tlp }
 
 </summary>
 
@@ -2054,7 +2054,7 @@ confidence: optional number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -2134,7 +2134,7 @@ externalReferenceLinks: optional array of string
 
 <summary>
 
-externalReferences: optional array of object {url, description }
+externalReferences: optional array of object { url, description }
 
 Structured external references ({ url, description }). Public: returned to all accounts.
 
@@ -2156,7 +2156,7 @@ description: optional string
 
 <summary>
 
-externalReferences\_annotated: optional array of object {value, tlp }
+externalReferences\_annotated: optional array of object { value, tlp }
 
 </summary>
 
@@ -2168,7 +2168,7 @@ value: string
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -2214,7 +2214,7 @@ One of the following:
 
 <summary>
 
-internalAliases: optional array of object {value, confidence, tlp }
+internalAliases: optional array of object { value, confidence, tlp }
 
 Owner-private structured aliases ({ value, confidence 1-10, tlp }). Returned to the owning account and omitted from shared-catalog non-owner responses.
 
@@ -2236,7 +2236,7 @@ minimum1
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -2294,7 +2294,7 @@ motive: optional string
 
 <summary>
 
-motive\_annotated: optional object {value, confidence, tlp }
+motive\_annotated: optional object { value, confidence, tlp }
 
 </summary>
 
@@ -2310,7 +2310,7 @@ confidence: optional number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -2360,7 +2360,7 @@ opsecLevel: optional string
 
 <summary>
 
-opsecLevel\_annotated: optional object {value, confidence, tlp }
+opsecLevel\_annotated: optional object { value, confidence, tlp }
 
 </summary>
 
@@ -2376,7 +2376,7 @@ confidence: optional number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -2428,7 +2428,7 @@ ISO country code (alpha-2 or alpha-3). Normalized to uppercase on read. Null whe
 
 <summary>
 
-originCountryISO\_annotated: optional object {value, confidence, tlp }
+originCountryISO\_annotated: optional object { value, confidence, tlp }
 
 </summary>
 
@@ -2444,7 +2444,7 @@ confidence: optional number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -2494,7 +2494,7 @@ priority: optional number
 
 <summary>
 
-priority\_annotated: optional object {value, tlp }
+priority\_annotated: optional object { value, tlp }
 
 </summary>
 
@@ -2506,7 +2506,7 @@ value: number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -2562,7 +2562,7 @@ sophisticationLevel: optional string
 
 <summary>
 
-sophisticationLevel\_annotated: optional object {value, confidence, tlp }
+sophisticationLevel\_annotated: optional object { value, confidence, tlp }
 
 </summary>
 
@@ -2578,7 +2578,7 @@ confidence: optional number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -2624,7 +2624,7 @@ One of the following:
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 Tag-level TLP handling marking.
 
@@ -2680,7 +2680,7 @@ version: optional number
 
 <summary>
 
-TagDeleteResponse object {uuid }
+TagDeleteResponse object { uuid }
 
 </summary>
 
@@ -2720,7 +2720,7 @@ DELETE/accounts/{account\_id}/cloudforce-one/events/tags/categories/{category\_u
 
 <summary>
 
-CategoryListResponse object {categories }
+CategoryListResponse object { categories }
 
 </summary>
 
@@ -2728,7 +2728,7 @@ CategoryListResponse object {categories }
 
 <summary>
 
-categories: array of object {name, uuid, createdAt, 3 more }
+categories: array of object { name, uuid, createdAt, 3 more }
 
 </summary>
 
@@ -2752,7 +2752,7 @@ description: optional string
 
 <summary>
 
-schema: optional array of object {key, kind, allowedValues, 11 more }
+schema: optional array of object { key, kind, allowedValues, 11 more }
 
 Parsed FieldDefinition\[] defining custom fields for this category, or null if none.
 
@@ -2766,7 +2766,7 @@ key: string
 
 <summary>
 
-kind: "string"or "number"or "enum"or 3 more
+kind: "string" or "number" or "enum" or 3 more
 
 </summary>
 
@@ -2808,7 +2808,7 @@ allowedValues: optional array of string
 
 <summary>
 
-annotations: optional object {confidence, tlp }
+annotations: optional object { confidence, tlp }
 
 </summary>
 
@@ -2844,7 +2844,7 @@ element: optional unknown
 
 <summary>
 
-enforcement: optional "error"or "warn"or "off"
+enforcement: optional "error" or "warn" or "off"
 
 </summary>
 
@@ -2870,7 +2870,7 @@ One of the following:
 
 <summary>
 
-format: optional "date"or "url"or "duration"or "country"
+format: optional "date" or "url" or "duration" or "country"
 
 </summary>
 
@@ -2916,7 +2916,7 @@ minimum0
 
 <summary>
 
-numberConstraint: optional object {integer, max, min }
+numberConstraint: optional object { integer, max, min }
 
 </summary>
 
@@ -2966,7 +2966,7 @@ updatedAt: optional string
 
 <summary>
 
-CategoryCreateResponse object {name, uuid, createdAt, 3 more }
+CategoryCreateResponse object { name, uuid, createdAt, 3 more }
 
 </summary>
 
@@ -2990,7 +2990,7 @@ description: optional string
 
 <summary>
 
-schema: optional array of object {key, kind, allowedValues, 11 more }
+schema: optional array of object { key, kind, allowedValues, 11 more }
 
 Parsed FieldDefinition\[] defining custom fields for this category, or null if none.
 
@@ -3004,7 +3004,7 @@ key: string
 
 <summary>
 
-kind: "string"or "number"or "enum"or 3 more
+kind: "string" or "number" or "enum" or 3 more
 
 </summary>
 
@@ -3046,7 +3046,7 @@ allowedValues: optional array of string
 
 <summary>
 
-annotations: optional object {confidence, tlp }
+annotations: optional object { confidence, tlp }
 
 </summary>
 
@@ -3082,7 +3082,7 @@ element: optional unknown
 
 <summary>
 
-enforcement: optional "error"or "warn"or "off"
+enforcement: optional "error" or "warn" or "off"
 
 </summary>
 
@@ -3108,7 +3108,7 @@ One of the following:
 
 <summary>
 
-format: optional "date"or "url"or "duration"or "country"
+format: optional "date" or "url" or "duration" or "country"
 
 </summary>
 
@@ -3154,7 +3154,7 @@ minimum0
 
 <summary>
 
-numberConstraint: optional object {integer, max, min }
+numberConstraint: optional object { integer, max, min }
 
 </summary>
 
@@ -3200,7 +3200,7 @@ updatedAt: optional string
 
 <summary>
 
-CategoryEditResponse object {name, uuid, createdAt, 3 more }
+CategoryEditResponse object { name, uuid, createdAt, 3 more }
 
 </summary>
 
@@ -3224,7 +3224,7 @@ description: optional string
 
 <summary>
 
-schema: optional array of object {key, kind, allowedValues, 11 more }
+schema: optional array of object { key, kind, allowedValues, 11 more }
 
 Parsed FieldDefinition\[] defining custom fields for this category, or null if none.
 
@@ -3238,7 +3238,7 @@ key: string
 
 <summary>
 
-kind: "string"or "number"or "enum"or 3 more
+kind: "string" or "number" or "enum" or 3 more
 
 </summary>
 
@@ -3280,7 +3280,7 @@ allowedValues: optional array of string
 
 <summary>
 
-annotations: optional object {confidence, tlp }
+annotations: optional object { confidence, tlp }
 
 </summary>
 
@@ -3316,7 +3316,7 @@ element: optional unknown
 
 <summary>
 
-enforcement: optional "error"or "warn"or "off"
+enforcement: optional "error" or "warn" or "off"
 
 </summary>
 
@@ -3342,7 +3342,7 @@ One of the following:
 
 <summary>
 
-format: optional "date"or "url"or "duration"or "country"
+format: optional "date" or "url" or "duration" or "country"
 
 </summary>
 
@@ -3388,7 +3388,7 @@ minimum0
 
 <summary>
 
-numberConstraint: optional object {integer, max, min }
+numberConstraint: optional object { integer, max, min }
 
 </summary>
 
@@ -3434,7 +3434,7 @@ updatedAt: optional string
 
 <summary>
 
-CategoryDeleteResponse object {uuid }
+CategoryDeleteResponse object { uuid }
 
 </summary>
 
@@ -3458,7 +3458,7 @@ GET/accounts/{account\_id}/cloudforce-one/events/tags/{tag\_uuid}/indicators
 
 <summary>
 
-IndicatorListResponse object {indicators, pagination, failedShardCount, partialResults }
+IndicatorListResponse object { indicators, pagination, failedShardCount, partialResults }
 
 </summary>
 
@@ -3466,7 +3466,7 @@ IndicatorListResponse object {indicators, pagination, failedShardCount, partialR
 
 <summary>
 
-indicators: array of object {createdAt, indicatorType, updatedAt, 7 more }
+indicators: array of object { createdAt, indicatorType, updatedAt, 7 more }
 
 </summary>
 
@@ -3504,7 +3504,7 @@ The dataset ID this indicator belongs to. Included in list responses.
 
 <summary>
 
-relatedEvents: optional array of object {datasetId, eventId, eventDate }
+relatedEvents: optional array of object { datasetId, eventId, eventDate }
 
 Related events, capped by <code>relatedEventsLimit</code> (default 2). Check <code>relatedEventsHasMore</code> to detect a capped list; pass <code>relatedEventsLimit=-1</code> to retrieve all of them.
 
@@ -3538,7 +3538,7 @@ True when this indicator appears in more events than <code>relatedEvents</code> 
 
 <summary>
 
-tags: optional array of object {categoryId, categoryName, uuid, value }
+tags: optional array of object { categoryId, categoryName, uuid, value }
 
 </summary>
 
@@ -3578,7 +3578,7 @@ Traffic Light Protocol designation. UPPERCASE. Possible values: CLEAR, GREEN, AM
 
 <summary>
 
-pagination: object {page, pageSize, totalCount, totalPages }
+pagination: object { page, pageSize, totalCount, totalPages }
 
 </summary>
 
@@ -3632,7 +3632,7 @@ GET/accounts/{account\_id}/cloudforce-one/events/dataset/{dataset\_id}/tags/{tag
 
 <summary>
 
-ByDatasetListResponse object {indicators, pagination, failedShardCount, partialResults }
+ByDatasetListResponse object { indicators, pagination, failedShardCount, partialResults }
 
 </summary>
 
@@ -3640,7 +3640,7 @@ ByDatasetListResponse object {indicators, pagination, failedShardCount, partialR
 
 <summary>
 
-indicators: array of object {createdAt, indicatorType, updatedAt, 7 more }
+indicators: array of object { createdAt, indicatorType, updatedAt, 7 more }
 
 </summary>
 
@@ -3678,7 +3678,7 @@ The dataset ID this indicator belongs to. Included in list responses.
 
 <summary>
 
-relatedEvents: optional array of object {datasetId, eventId, eventDate }
+relatedEvents: optional array of object { datasetId, eventId, eventDate }
 
 Related events, capped by <code>relatedEventsLimit</code> (default 2). Check <code>relatedEventsHasMore</code> to detect a capped list; pass <code>relatedEventsLimit=-1</code> to retrieve all of them.
 
@@ -3712,7 +3712,7 @@ True when this indicator appears in more events than <code>relatedEvents</code> 
 
 <summary>
 
-tags: optional array of object {categoryId, categoryName, uuid, value }
+tags: optional array of object { categoryId, categoryName, uuid, value }
 
 </summary>
 
@@ -3752,7 +3752,7 @@ Traffic Light Protocol designation. UPPERCASE. Possible values: CLEAR, GREEN, AM
 
 <summary>
 
-pagination: object {page, pageSize, totalCount, totalPages }
+pagination: object { page, pageSize, totalCount, totalPages }
 
 </summary>
 

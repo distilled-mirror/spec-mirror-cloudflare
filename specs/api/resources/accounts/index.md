@@ -42,7 +42,7 @@ DELETE/accounts/{account\_id}
 
 <summary>
 
-Account object {id, name, type, 4 more }
+Account object { id, name, type, 4 more }
 
 </summary>
 
@@ -66,7 +66,7 @@ Account name. When creating or updating an account, the name is limited to 65 UT
 
 <summary>
 
-type: "standard"or "enterprise"
+type: "standard" or "enterprise"
 
 </summary>
 
@@ -96,7 +96,7 @@ formatdate-time
 
 <summary>
 
-legacy\_flags: optional object {enterprise\_zone\_quota }
+legacy\_flags: optional object { enterprise\_zone\_quota }
 
 Legacy account flags.
 
@@ -106,7 +106,7 @@ Legacy account flags.
 
 <summary>
 
-enterprise\_zone\_quota: optional object {available, current, maximum }
+enterprise\_zone\_quota: optional object { available, current, maximum }
 
 Enterprise zone quota for standard and enterprise accounts. Accounts without a quota have a maximum of 0.
 
@@ -142,7 +142,7 @@ Maximum number of Enterprise zones allowed.
 
 <summary>
 
-managed\_by: optional object {parent\_org\_id, parent\_org\_name, root\_org\_id, should\_display\_parent\_orgs }
+managed\_by: optional object { parent\_org\_id, parent\_org\_name, root\_org\_id, should\_display\_parent\_orgs }
 
 Parent container details
 
@@ -184,7 +184,7 @@ Indicates whether the parent Organization hierarchy should be displayed
 
 <summary>
 
-settings: optional object {abuse\_contact\_email, enforce\_twofactor }
+settings: optional object { abuse\_contact\_email, enforce\_twofactor }
 
 Account settings
 
@@ -214,7 +214,7 @@ Indicates whether membership in this account requires that Two-Factor Authentica
 
 <summary>
 
-AccountDeleteResponse object {id }
+AccountDeleteResponse object { id }
 
 </summary>
 
@@ -244,7 +244,7 @@ POST/accounts/{account\_id}/move
 
 <summary>
 
-AccountOrganizationCreateResponse object {account\_id, destination\_organization\_id, source\_organization\_id }
+AccountOrganizationCreateResponse object { account\_id, destination\_organization\_id, source\_organization\_id }
 
 </summary>
 
@@ -282,7 +282,7 @@ PUT/accounts/{account\_id}/profile
 
 <summary>
 
-AccountProfile object {business\_address, business\_email, business\_name, 2 more }
+AccountProfile object { business\_address, business\_email, business\_name, 2 more }
 
 </summary>
 
@@ -338,7 +338,7 @@ DELETE/accounts/{account\_id}/members/{member\_id}
 
 <summary>
 
-Status = "member"or "invited"
+Status = "member" or "invited"
 
 Whether the user is a member of the organization or has an invitation pending.
 
@@ -362,7 +362,7 @@ One of the following:
 
 <summary>
 
-MemberDeleteResponse object {id }
+MemberDeleteResponse object { id }
 
 </summary>
 
@@ -426,7 +426,7 @@ POST/accounts/{account\_id}/subscriptions/cancel-downgrade
 
 <summary>
 
-SubscriptionDeleteResponse object {subscription\_id }
+SubscriptionDeleteResponse object { subscription\_id }
 
 </summary>
 
@@ -446,7 +446,7 @@ maxLength32
 
 <summary>
 
-SubscriptionCancelDowngradeResponse = unknownor string
+SubscriptionCancelDowngradeResponse = unknown or string
 
 </summary>
 
@@ -480,7 +480,7 @@ GET/accounts/{account\_id}/subscriptions/{subscription\_identifier}/cancel-reaso
 
 <summary>
 
-CancelReasonCreateResponse object {id, other, reason\_code, 2 more }
+CancelReasonCreateResponse object { id, other, reason\_code, 2 more }
 
 </summary>
 
@@ -524,7 +524,7 @@ The subscription identifier.
 
 <summary>
 
-CancelReasonGetResponse object {id, other, reason\_code, 2 more }
+CancelReasonGetResponse object { id, other, reason\_code, 2 more }
 
 </summary>
 
@@ -582,7 +582,7 @@ POST/accounts/{account\_id}/bulk/subscriptions
 
 <summary>
 
-BulkCreateResponse object {client\_secrets, subscriptions }
+BulkCreateResponse object { client\_secrets, subscriptions }
 
 </summary>
 
@@ -632,7 +632,7 @@ formatdate-time
 
 <summary>
 
-frequency: optional "weekly"or "monthly"or "quarterly"or "yearly"
+frequency: optional "weekly" or "monthly" or "quarterly" or "yearly"
 
 How often the subscription is renewed automatically.
 
@@ -676,7 +676,7 @@ The rate plan applied to the subscription.
 
 <summary>
 
-state: optional "Trial"or "Provisioned"or "Paid"or 4 more
+state: optional "Trial" or "Provisioned" or "Paid" or 4 more
 
 The state that the subscription is in.
 
@@ -756,7 +756,7 @@ GET/accounts/{account\_id}/tokens/verify
 
 <summary>
 
-TokenCreateResponse object {id, condition, creator\_email\_at\_creation, 13 more }
+TokenCreateResponse object { id, condition, creator\_email\_at\_creation, 13 more }
 
 </summary>
 
@@ -772,7 +772,7 @@ maxLength32
 
 <summary>
 
-condition: optional object {request\_ip }
+condition: optional object { request\_ip }
 
 </summary>
 
@@ -780,7 +780,7 @@ condition: optional object {request\_ip }
 
 <summary>
 
-request\_ip: optional object {in, not\_in }
+request\_ip: optional object { in, not\_in }
 
 Client IP restrictions.
 
@@ -882,7 +882,7 @@ Policy identifier.
 
 <summary>
 
-effect: "allow"or "deny"
+effect: "allow" or "deny"
 
 Allow or deny operations against the resources.
 
@@ -906,7 +906,7 @@ One of the following:
 
 <summary>
 
-permission\_groups: array of object {id, meta, name }
+permission\_groups: array of object { id, meta, name }
 
 A set of permission groups that are specified to the policy.
 
@@ -922,7 +922,7 @@ Identifier of the permission group.
 
 <summary>
 
-meta: optional object {category, deprecated, description, 5 more }
+meta: optional object { category, deprecated, description, 5 more }
 
 Attributes associated to the permission group.
 
@@ -996,7 +996,7 @@ Name of the permission group.
 
 <summary>
 
-resources: map\[string]or map\[map\[string]]
+resources: map\[string] or map\[map\[string]]
 
 A list of resource names that the policy applies to.
 
@@ -1040,7 +1040,7 @@ The type of service that provisioned the token. Only present for provisioned Acc
 
 <summary>
 
-status: optional "active"or "disabled"or "expired"
+status: optional "active" or "disabled" or "expired"
 
 Status of the token.
 
@@ -1098,7 +1098,7 @@ minLength40
 
 <summary>
 
-TokenDeleteResponse object {id }
+TokenDeleteResponse object { id }
 
 </summary>
 
@@ -1120,7 +1120,7 @@ minLength32
 
 <summary>
 
-TokenVerifyResponse object {id, status, expires\_on, not\_before }
+TokenVerifyResponse object { id, status, expires\_on, not\_before }
 
 </summary>
 
@@ -1136,7 +1136,7 @@ maxLength32
 
 <summary>
 
-status: "active"or "disabled"or "expired"
+status: "active" or "disabled" or "expired"
 
 Status of the token.
 
@@ -1196,7 +1196,7 @@ GET/accounts/{account\_id}/tokens/permission\_groups
 
 <summary>
 
-PermissionGroupListResponse object {id, category, is\_selectable, 2 more }
+PermissionGroupListResponse object { id, category, is\_selectable, 2 more }
 
 </summary>
 
@@ -1210,7 +1210,7 @@ Public ID.
 
 <summary>
 
-category: optional "developer\_platform"or "ai\_and\_machine\_learning"or "dns\_and\_zones"or 10 more
+category: optional "developer\_platform" or "ai\_and\_machine\_learning" or "dns\_and\_zones" or 10 more
 
 Product category that this permission group belongs to.
 
@@ -1290,7 +1290,7 @@ Permission Group Name
 
 <summary>
 
-scopes: optional array of "com.cloudflare.api.account"or "com.cloudflare.api.account.zone"or "com.cloudflare.api.user"or "com.cloudflare.edge.r2.bucket"
+scopes: optional array of "com.cloudflare.api.account" or "com.cloudflare.api.account.zone" or "com.cloudflare.api.user" or "com.cloudflare.edge.r2.bucket"
 
 Resources to which the Permission Group is scoped
 
@@ -1326,7 +1326,7 @@ One of the following:
 
 <summary>
 
-PermissionGroupGetResponse = array of object {id, category, is\_selectable, 2 more }
+PermissionGroupGetResponse = array of object { id, category, is\_selectable, 2 more }
 
 </summary>
 
@@ -1340,7 +1340,7 @@ Public ID.
 
 <summary>
 
-category: optional "developer\_platform"or "ai\_and\_machine\_learning"or "dns\_and\_zones"or 10 more
+category: optional "developer\_platform" or "ai\_and\_machine\_learning" or "dns\_and\_zones" or 10 more
 
 Product category that this permission group belongs to.
 
@@ -1420,7 +1420,7 @@ Permission Group Name
 
 <summary>
 
-scopes: optional array of "com.cloudflare.api.account"or "com.cloudflare.api.account.zone"or "com.cloudflare.api.user"or "com.cloudflare.edge.r2.bucket"
+scopes: optional array of "com.cloudflare.api.account" or "com.cloudflare.api.account.zone" or "com.cloudflare.api.user" or "com.cloudflare.edge.r2.bucket"
 
 Resources to which the Permission Group is scoped
 
@@ -1480,7 +1480,7 @@ GET/accounts/{account\_id}/logs/audit/product\_categories
 
 <summary>
 
-AuditListResponse object {id, account, action, 4 more }
+AuditListResponse object { id, account, action, 4 more }
 
 </summary>
 
@@ -1496,7 +1496,7 @@ maxLength32
 
 <summary>
 
-account: optional object {id, name }
+account: optional object { id, name }
 
 Contains account related information.
 
@@ -1522,7 +1522,7 @@ A string that identifies the account name.
 
 <summary>
 
-action: optional object {description, result, time, type }
+action: optional object { description, result, time, type }
 
 Provides information about the action performed.
 
@@ -1562,7 +1562,7 @@ A short string that describes the action that was performed.
 
 <summary>
 
-actor: optional object {id, context, email, 4 more }
+actor: optional object { id, context, email, 4 more }
 
 Provides details about the actor who performed the action.
 
@@ -1578,7 +1578,7 @@ The ID of the actor who performed the action. If a user performed the action, th
 
 <summary>
 
-context: optional "api"or "api\_key"or "api\_token"or 3 more
+context: optional "api" or "api\_key" or "api\_token" or 3 more
 
 The context in which the action was initiated.
 
@@ -1651,7 +1651,7 @@ The API token name when the actor context is an api\_token or oauth.
 
 <summary>
 
-type: optional "account"or "cloudflare\_admin"or "delegated\_service"or 2 more
+type: optional "account" or "cloudflare\_admin" or "delegated\_service" or 2 more
 
 The type of actor.
 
@@ -1691,7 +1691,7 @@ One of the following:
 
 <summary>
 
-raw: optional object {cf\_ray\_id, method, status\_code, 2 more }
+raw: optional object { cf\_ray\_id, method, status\_code, 2 more }
 
 Provides raw information about the request and response.
 
@@ -1735,7 +1735,7 @@ The client’s user agent string sent with the request.
 
 <summary>
 
-resource: optional object {id, product, request, 3 more }
+resource: optional object { id, product, request, 3 more }
 
 Provides details about the affected resource.
 
@@ -1781,7 +1781,7 @@ The type of the resource.
 
 <summary>
 
-zone: optional object {id, name }
+zone: optional object { id, name }
 
 Provides details about the zone affected by the action.
 
@@ -1811,7 +1811,7 @@ A string that identifies the zone name.
 
 <summary>
 
-AuditHistoryResponse = array of object {id, account, action, 4 more }
+AuditHistoryResponse = array of object { id, account, action, 4 more }
 
 </summary>
 
@@ -1827,7 +1827,7 @@ maxLength32
 
 <summary>
 
-account: optional object {id, name }
+account: optional object { id, name }
 
 Contains account related information.
 
@@ -1853,7 +1853,7 @@ A string that identifies the account name.
 
 <summary>
 
-action: optional object {description, result, time, type }
+action: optional object { description, result, time, type }
 
 Provides information about the action performed.
 
@@ -1893,7 +1893,7 @@ A short string that describes the action that was performed.
 
 <summary>
 
-actor: optional object {id, context, email, 4 more }
+actor: optional object { id, context, email, 4 more }
 
 Provides details about the actor who performed the action.
 
@@ -1909,7 +1909,7 @@ The ID of the actor who performed the action. If a user performed the action, th
 
 <summary>
 
-context: optional "api"or "api\_key"or "api\_token"or 3 more
+context: optional "api" or "api\_key" or "api\_token" or 3 more
 
 The context in which the action was initiated.
 
@@ -1982,7 +1982,7 @@ The API token name when the actor context is an api\_token or oauth.
 
 <summary>
 
-type: optional "account"or "cloudflare\_admin"or "delegated\_service"or 2 more
+type: optional "account" or "cloudflare\_admin" or "delegated\_service" or 2 more
 
 The type of actor.
 
@@ -2022,7 +2022,7 @@ One of the following:
 
 <summary>
 
-raw: optional object {cf\_ray\_id, method, status\_code, 2 more }
+raw: optional object { cf\_ray\_id, method, status\_code, 2 more }
 
 Provides raw information about the request and response.
 
@@ -2066,7 +2066,7 @@ The client’s user agent string sent with the request.
 
 <summary>
 
-resource: optional object {id, product, request, 3 more }
+resource: optional object { id, product, request, 3 more }
 
 Provides details about the affected resource.
 
@@ -2112,7 +2112,7 @@ The type of the resource.
 
 <summary>
 
-zone: optional object {id, name }
+zone: optional object { id, name }
 
 Provides details about the zone affected by the action.
 
@@ -2142,7 +2142,7 @@ A string that identifies the zone name.
 
 <summary>
 
-AuditProductCategoriesResponse object {label, products, value }
+AuditProductCategoriesResponse object { label, products, value }
 
 A predefined product category and the resource products it expands to.
 
@@ -2158,7 +2158,7 @@ A human-readable label for the product category.
 
 <summary>
 
-products: optional array of object {label, value }
+products: optional array of object { label, value }
 
 The resource products that the product category expands to.
 
@@ -2202,7 +2202,7 @@ GET/accounts/{account\_id}/entitlements
 
 <summary>
 
-EntitlementListResponse object {id, allocation, created\_date, 3 more }
+EntitlementListResponse object { id, allocation, created\_date, 3 more }
 
 A single entitlement record for a zone or account.
 
@@ -2218,7 +2218,7 @@ Entitlement identifier — equal to the feature key.
 
 <summary>
 
-allocation: object {type, value }
+allocation: object { type, value }
 
 Represents the allocation value for an entitlement. The shape of <code>value</code> depends on <code>type</code>: <code>bool</code> uses a boolean, <code>max_count</code> uses an integer, <code>enum_number</code> uses an array of numbers, <code>range</code> uses an object with <code>min</code> and <code>max</code> integer fields, and <code>string</code> uses a string.
 
@@ -2228,7 +2228,7 @@ Represents the allocation value for an entitlement. The shape of <code>value</co
 
 <summary>
 
-type: "bool"or "max\_count"or "enum\_number"or 2 more
+type: "bool" or "max\_count" or "enum\_number" or 2 more
 
 Allocation type discriminator.
 
@@ -2264,7 +2264,7 @@ One of the following:
 
 <summary>
 
-value: booleanor numberor stringor 2 more
+value: boolean or number or string or 2 more
 
 Contains the allocation value whose concrete type the <code>type</code> field determines: bool yields a boolean, max\_count yields an integer, enum\_number yields an array of numbers, range yields an object with <code>min</code> and <code>max</code>, and string yields a string.
 
@@ -2292,7 +2292,7 @@ array of number
 
 <summary>
 
-object {max, min }
+object { max, min }
 
 </summary>
 
@@ -2338,7 +2338,7 @@ ISO 8601 timestamp (microsecond precision, no timezone offset) when the entitlem
 
 <summary>
 
-feature: object {id, feature\_set, key, name }
+feature: object { id, feature\_set, key, name }
 
 Describes a product feature associated with an entitlement.
 
@@ -2392,7 +2392,7 @@ GET/accounts/{account\_id}/settings/transformations
 
 <summary>
 
-TransformationsConfig object {id, cf\_zone\_tag, editable, 2 more }
+TransformationsConfig object { id, cf\_zone\_tag, editable, 2 more }
 
 A configuration item for a specific zone and feature.
 
@@ -2466,7 +2466,7 @@ POST/accounts/{account\_id}/payment-methods/{payment\_method\_id}/set-as-default
 
 <summary>
 
-PaymentMethodListResponse object {id, address, address2, 22 more }
+PaymentMethodListResponse object { id, address, address2, 22 more }
 
 </summary>
 
@@ -2612,7 +2612,7 @@ Billing state.
 
 <summary>
 
-type: optional "CREDIT\_CARD"or "PAYPAL"or "CASHAPP"or 3 more
+type: optional "CREDIT\_CARD" or "PAYPAL" or "CASHAPP" or 3 more
 
 The payment method type.
 
@@ -2662,7 +2662,7 @@ Billing zip code.
 
 <summary>
 
-PaymentMethodCreateResponse object {id, address, address2, 22 more }
+PaymentMethodCreateResponse object { id, address, address2, 22 more }
 
 </summary>
 
@@ -2808,7 +2808,7 @@ Billing state.
 
 <summary>
 
-type: optional "CREDIT\_CARD"or "PAYPAL"or "CASHAPP"or 3 more
+type: optional "CREDIT\_CARD" or "PAYPAL" or "CASHAPP" or 3 more
 
 The payment method type.
 
@@ -2858,7 +2858,7 @@ Billing zip code.
 
 <summary>
 
-PaymentMethodGetResponse object {id, address, address2, 22 more }
+PaymentMethodGetResponse object { id, address, address2, 22 more }
 
 </summary>
 
@@ -3004,7 +3004,7 @@ Billing state.
 
 <summary>
 
-type: optional "CREDIT\_CARD"or "PAYPAL"or "CASHAPP"or 3 more
+type: optional "CREDIT\_CARD" or "PAYPAL" or "CASHAPP" or 3 more
 
 The payment method type.
 
@@ -3054,7 +3054,7 @@ Billing zip code.
 
 <summary>
 
-PaymentMethodUpdateResponse object {id, address, address2, 22 more }
+PaymentMethodUpdateResponse object { id, address, address2, 22 more }
 
 </summary>
 
@@ -3200,7 +3200,7 @@ Billing state.
 
 <summary>
 
-type: optional "CREDIT\_CARD"or "PAYPAL"or "CASHAPP"or 3 more
+type: optional "CREDIT\_CARD" or "PAYPAL" or "CASHAPP" or 3 more
 
 The payment method type.
 
@@ -3250,7 +3250,7 @@ Billing zip code.
 
 <summary>
 
-PaymentMethodDeleteResponse = unknownor string
+PaymentMethodDeleteResponse = unknown or string
 
 </summary>
 
@@ -3272,7 +3272,7 @@ string
 
 <summary>
 
-PaymentMethodSetAsDefaultResponse = unknownor string
+PaymentMethodSetAsDefaultResponse = unknown or string
 
 </summary>
 
@@ -3302,7 +3302,7 @@ POST/accounts/{account\_id}/pay-invoice
 
 <summary>
 
-PayInvoiceCreateResponse object {client\_secret }
+PayInvoiceCreateResponse object { client\_secret }
 
 </summary>
 
@@ -3336,7 +3336,7 @@ PATCH/accounts/{account\_id}/invoices
 
 <summary>
 
-InvoiceEditResponse = unknownor string
+InvoiceEditResponse = unknown or string
 
 </summary>
 
@@ -3366,7 +3366,7 @@ POST/accounts/{account\_id}/client-secret
 
 <summary>
 
-ClientSecretCreateResponse object {client\_secret }
+ClientSecretCreateResponse object { client\_secret }
 
 </summary>
 

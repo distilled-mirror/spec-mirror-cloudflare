@@ -60,7 +60,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Account DNS Settings Write``Account DNS Settings Read`
+`Account Settings Write``Account Settings Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -98,7 +98,7 @@ minimum1
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -120,7 +120,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -140,7 +140,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -162,7 +162,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -182,7 +182,7 @@ pointer: optional string
 
 <summary>
 
-result: array of object {id, advanced, created\_on, 3 more } or object {id, advanced, created\_on, 3 more }
+result: array of object { id, advanced, created\_on, 3 more } or object { id, advanced, created\_on, 3 more }
 
 </summary>
 
@@ -192,7 +192,7 @@ One of the following:
 
 <summary>
 
-DNSSettingsNameserverSetStandardResponse object {id, advanced, created\_on, 3 more }
+DNSSettingsNameserverSetStandardResponse object { id, advanced, created\_on, 3 more }
 
 </summary>
 
@@ -244,7 +244,7 @@ minLength1
 
 <summary>
 
-nameservers: array of object {ipv4, ipv6, name }
+nameservers: array of object { ipv4, ipv6, name }
 
 </summary>
 
@@ -278,7 +278,7 @@ A unique lowercase Punycode nameserver name within the set.
 
 <summary>
 
-DNSSettingsNameserverSetAdvancedResponse object {id, advanced, created\_on, 3 more }
+DNSSettingsNameserverSetAdvancedResponse object { id, advanced, created\_on, 3 more }
 
 </summary>
 
@@ -330,7 +330,7 @@ minLength1
 
 <summary>
 
-nameservers: array of object {ipv4, ipv4\_groups, ipv6, 2 more }
+nameservers: array of object { ipv4, ipv4\_groups, ipv6, 2 more }
 
 </summary>
 
@@ -344,7 +344,7 @@ IPv4 addresses assigned to the nameserver.
 
 <summary>
 
-ipv4\_groups: array of "a"or "b"or "c"
+ipv4\_groups: array of "a" or "b" or "c"
 
 Advanced anycast group for each address in the corresponding address array. Entries have the same order as, and correspond one-to-one with, the addresses.
 
@@ -378,7 +378,7 @@ IPv6 addresses assigned to the nameserver.
 
 <summary>
 
-ipv6\_groups: array of "a"or "b"or "c"
+ipv6\_groups: array of "a" or "b" or "c"
 
 Advanced anycast group for each address in the corresponding address array. Entries have the same order as, and correspond one-to-one with, the addresses.
 
@@ -424,7 +424,7 @@ A unique lowercase Punycode nameserver name within the set.
 
 <summary>
 
-result\_info: object {count, page, per\_page, 2 more }
+result\_info: object { count, page, per\_page, 2 more }
 
 </summary>
 

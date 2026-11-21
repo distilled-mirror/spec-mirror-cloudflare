@@ -108,7 +108,7 @@ minimum60
 
 <summary>
 
-value: stringor string
+value: string or string
 
 A byte sequence to be stored, up to 25 MiB in length.
 
@@ -162,7 +162,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -204,7 +204,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -226,7 +226,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20kv.namespaces.values%20%3E%20(method)%20update%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-result: optional object {}
+result: optional object { }
 
 [Link to this property](#)%20kv.namespaces.values%20%3E%20(method)%20update%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 

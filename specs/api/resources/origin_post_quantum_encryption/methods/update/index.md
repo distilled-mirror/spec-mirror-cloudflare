@@ -74,7 +74,7 @@ maxLength32
 
 <summary>
 
-value: "preferred"or "supported"or "off"
+value: "preferred" or "supported" or "off"
 
 Value of the Origin Post Quantum Encryption Setting.
 
@@ -126,7 +126,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -168,7 +168,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -194,7 +194,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, editable, value, modified\_on }
+result: optional object { id, editable, value, modified\_on }
 
 </summary>
 
@@ -214,7 +214,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: "preferred"or "supported"or "off"
+value: "preferred" or "supported" or "off"
 
 Value of the Origin Post Quantum Encryption Setting.
 

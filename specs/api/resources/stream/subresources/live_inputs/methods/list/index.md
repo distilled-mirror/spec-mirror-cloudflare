@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Stream Write``Stream Read`
+`Stream Metadata Read``Stream Write``Stream Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -82,7 +82,7 @@ Includes the total number of videos associated with the submitted query paramete
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -104,7 +104,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -124,7 +124,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -146,7 +146,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -172,7 +172,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {liveInputs, range, total }
+result: optional object { liveInputs, range, total }
 
 </summary>
 
@@ -180,7 +180,7 @@ result: optional object {liveInputs, range, total }
 
 <summary>
 
-liveInputs: optional array of object {created, deleteRecordingAfterDays, enabled, 3 more }
+liveInputs: optional array of object { created, deleteRecordingAfterDays, enabled, 3 more }
 
 </summary>
 

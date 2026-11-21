@@ -100,7 +100,7 @@ An indicator if this schema is enabled
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -126,7 +126,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {locations, pointer }
+source: optional object { locations, pointer }
 
 </summary>
 
@@ -152,7 +152,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -178,7 +178,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {locations, pointer }
+source: optional object { locations, pointer }
 
 </summary>
 

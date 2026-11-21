@@ -42,7 +42,7 @@ DELETE/zones/{zone\_id}/secondary\_dns/incoming
 
 <summary>
 
-Incoming object {id, auto\_refresh\_seconds, checked\_time, 5 more }
+Incoming object { id, auto\_refresh\_seconds, checked\_time, 5 more }
 
 </summary>
 
@@ -102,7 +102,7 @@ The serial number of the SOA for the given zone.
 
 <summary>
 
-IncomingGetResponse object {id, auto\_refresh\_seconds, checked\_time, 5 more }
+IncomingGetResponse object { id, auto\_refresh\_seconds, checked\_time, 5 more }
 
 </summary>
 
@@ -162,7 +162,7 @@ The serial number of the SOA for the given zone.
 
 <summary>
 
-IncomingCreateResponse object {id, auto\_refresh\_seconds, checked\_time, 5 more }
+IncomingCreateResponse object { id, auto\_refresh\_seconds, checked\_time, 5 more }
 
 </summary>
 
@@ -222,7 +222,7 @@ The serial number of the SOA for the given zone.
 
 <summary>
 
-IncomingUpdateResponse object {id, auto\_refresh\_seconds, checked\_time, 5 more }
+IncomingUpdateResponse object { id, auto\_refresh\_seconds, checked\_time, 5 more }
 
 </summary>
 
@@ -282,7 +282,7 @@ The serial number of the SOA for the given zone.
 
 <summary>
 
-IncomingDeleteResponse object {id }
+IncomingDeleteResponse object { id }
 
 </summary>
 

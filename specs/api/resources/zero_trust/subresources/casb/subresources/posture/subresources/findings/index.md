@@ -56,7 +56,7 @@ POST/accounts/{account\_id}/data-security/posture/findings/{finding\_id}/reset\_
 
 <summary>
 
-FindingListResponse object {id, active\_count, archived\_count, 6 more }
+FindingListResponse object { id, active\_count, archived\_count, 6 more }
 
 Aggregated finding information with counts and metadata. This is optimized for list API queries and represents a finding along with its instance statistics.
 
@@ -86,7 +86,7 @@ Number of archived instances identified in the security finding.
 
 <summary>
 
-finding: object {id, category, name, 15 more }
+finding: object { id, category, name, 15 more }
 
 Basic finding type information.
 
@@ -104,7 +104,7 @@ formatuuid
 
 <summary>
 
-category: object {observation, product, type }
+category: object { observation, product, type }
 
 </summary>
 
@@ -112,7 +112,7 @@ category: object {observation, product, type }
 
 <summary>
 
-observation: "Issue"or "Insight"or "Activity"
+observation: "Issue" or "Insight" or "Activity"
 
 The type of the observation.
 
@@ -140,7 +140,7 @@ One of the following:
 
 <summary>
 
-product: "SaaS"or "Cloud"
+product: "SaaS" or "Cloud"
 
 The product category.
 
@@ -164,7 +164,7 @@ One of the following:
 
 <summary>
 
-type: "Content"or "Posture"
+type: "Content" or "Posture"
 
 The type of the finding category.
 
@@ -198,7 +198,7 @@ The name of the finding.
 
 <summary>
 
-severity: "Critical"or "High"or "Medium"or "Low"
+severity: "Critical" or "High" or "Medium" or "Low"
 
 Default severity used when no integration-specific severity override exists.
 
@@ -248,7 +248,7 @@ Asset class the finding type’s policy evaluates.
 
 <summary>
 
-asset\_vendor: optional "ANTHROPIC"or "AWS"or "BITBUCKET"or 13 more
+asset\_vendor: optional "ANTHROPIC" or "AWS" or "BITBUCKET" or 13 more
 
 Canonical vendor enum value.
 
@@ -362,7 +362,7 @@ formatint64
 
 <summary>
 
-origin: optional "system"or "custom"
+origin: optional "system" or "custom"
 
 Whether the finding type is system-managed or customer-created.
 
@@ -392,7 +392,7 @@ Whether evaluation of this finding type is suspended by an operator. Present onl
 
 <summary>
 
-remediation: optional object {id, frameworks, guide, 3 more }
+remediation: optional object { id, frameworks, guide, 3 more }
 
 Remediation guide information for a finding.
 
@@ -476,7 +476,7 @@ Number of total (Active or archived) problematic instances identified in the sec
 
 <summary>
 
-integration: object {created, last\_hydrated, name, 12 more }
+integration: object { created, last\_hydrated, name, 12 more }
 
 Summary information about an integration.
 
@@ -516,7 +516,7 @@ The vendor-specific permissions associated with the integration.
 
 <summary>
 
-policy: object {id, client\_id, compliance\_level, 4 more }
+policy: object { id, client\_id, compliance\_level, 4 more }
 
 Policy configuration for an integration.
 
@@ -596,7 +596,7 @@ Whether the integrations permissions can be updated.
 
 <summary>
 
-vendor: object {id, description, display\_name, 5 more }
+vendor: object { id, description, display\_name, 5 more }
 
 Information about a vendor/service provider.
 
@@ -662,7 +662,7 @@ The policies related to the vendor.
 
 <summary>
 
-zt\_enrollments: array of object {id, description, display\_name, enabled }
+zt\_enrollments: array of object { id, description, display\_name, enabled }
 
 Zero Trust products associated with this integration.
 
@@ -708,7 +708,7 @@ formatuuid
 
 <summary>
 
-credential\_health\_status: optional "Initializing"or "Healthy"or "Unhealthy"
+credential\_health\_status: optional "Initializing" or "Healthy" or "Unhealthy"
 
 Health status of integration credentials.
 
@@ -768,7 +768,7 @@ formatdate-time
 
 <summary>
 
-severity\_override: optional object {created\_by, severity }
+severity\_override: optional object { created\_by, severity }
 
 Override information for finding severity.
 
@@ -784,7 +784,7 @@ User ID who created the override.
 
 <summary>
 
-severity: "Critical"or "High"or "Medium"or "Low"
+severity: "Critical" or "High" or "Medium" or "Low"
 
 The severity level of a finding.
 
@@ -824,7 +824,7 @@ One of the following:
 
 <summary>
 
-FindingGetResponse object {id, active\_count, archived\_count, 6 more }
+FindingGetResponse object { id, active\_count, archived\_count, 6 more }
 
 Aggregated finding information with counts and metadata. This is optimized for list API queries and represents a finding along with its instance statistics.
 
@@ -854,7 +854,7 @@ Number of archived instances identified in the security finding.
 
 <summary>
 
-finding: object {id, category, name, 15 more }
+finding: object { id, category, name, 15 more }
 
 Basic finding type information.
 
@@ -872,7 +872,7 @@ formatuuid
 
 <summary>
 
-category: object {observation, product, type }
+category: object { observation, product, type }
 
 </summary>
 
@@ -880,7 +880,7 @@ category: object {observation, product, type }
 
 <summary>
 
-observation: "Issue"or "Insight"or "Activity"
+observation: "Issue" or "Insight" or "Activity"
 
 The type of the observation.
 
@@ -908,7 +908,7 @@ One of the following:
 
 <summary>
 
-product: "SaaS"or "Cloud"
+product: "SaaS" or "Cloud"
 
 The product category.
 
@@ -932,7 +932,7 @@ One of the following:
 
 <summary>
 
-type: "Content"or "Posture"
+type: "Content" or "Posture"
 
 The type of the finding category.
 
@@ -966,7 +966,7 @@ The name of the finding.
 
 <summary>
 
-severity: "Critical"or "High"or "Medium"or "Low"
+severity: "Critical" or "High" or "Medium" or "Low"
 
 Default severity used when no integration-specific severity override exists.
 
@@ -1016,7 +1016,7 @@ Asset class the finding type’s policy evaluates.
 
 <summary>
 
-asset\_vendor: optional "ANTHROPIC"or "AWS"or "BITBUCKET"or 13 more
+asset\_vendor: optional "ANTHROPIC" or "AWS" or "BITBUCKET" or 13 more
 
 Canonical vendor enum value.
 
@@ -1130,7 +1130,7 @@ formatint64
 
 <summary>
 
-origin: optional "system"or "custom"
+origin: optional "system" or "custom"
 
 Whether the finding type is system-managed or customer-created.
 
@@ -1160,7 +1160,7 @@ Whether evaluation of this finding type is suspended by an operator. Present onl
 
 <summary>
 
-remediation: optional object {id, frameworks, guide, 3 more }
+remediation: optional object { id, frameworks, guide, 3 more }
 
 Remediation guide information for a finding.
 
@@ -1244,7 +1244,7 @@ Number of total (Active or archived) problematic instances identified in the sec
 
 <summary>
 
-integration: object {created, last\_hydrated, name, 12 more }
+integration: object { created, last\_hydrated, name, 12 more }
 
 Summary information about an integration.
 
@@ -1284,7 +1284,7 @@ The vendor-specific permissions associated with the integration.
 
 <summary>
 
-policy: object {id, client\_id, compliance\_level, 4 more }
+policy: object { id, client\_id, compliance\_level, 4 more }
 
 Policy configuration for an integration.
 
@@ -1364,7 +1364,7 @@ Whether the integrations permissions can be updated.
 
 <summary>
 
-vendor: object {id, description, display\_name, 5 more }
+vendor: object { id, description, display\_name, 5 more }
 
 Information about a vendor/service provider.
 
@@ -1430,7 +1430,7 @@ The policies related to the vendor.
 
 <summary>
 
-zt\_enrollments: array of object {id, description, display\_name, enabled }
+zt\_enrollments: array of object { id, description, display\_name, enabled }
 
 Zero Trust products associated with this integration.
 
@@ -1476,7 +1476,7 @@ formatuuid
 
 <summary>
 
-credential\_health\_status: optional "Initializing"or "Healthy"or "Unhealthy"
+credential\_health\_status: optional "Initializing" or "Healthy" or "Unhealthy"
 
 Health status of integration credentials.
 
@@ -1536,7 +1536,7 @@ formatdate-time
 
 <summary>
 
-severity\_override: optional object {created\_by, severity }
+severity\_override: optional object { created\_by, severity }
 
 Override information for finding severity.
 
@@ -1552,7 +1552,7 @@ User ID who created the override.
 
 <summary>
 
-severity: "Critical"or "High"or "Medium"or "Low"
+severity: "Critical" or "High" or "Medium" or "Low"
 
 The severity level of a finding.
 
@@ -1592,7 +1592,7 @@ One of the following:
 
 <summary>
 
-FindingExportResponse object {id, status, type, 5 more }
+FindingExportResponse object { id, status, type, 5 more }
 
 Information about an export job.
 
@@ -1610,7 +1610,7 @@ formatuuid
 
 <summary>
 
-status: "Pending"or "Success"or "Failure"or 2 more
+status: "Pending" or "Success" or "Failure" or 2 more
 
 Status of an export job.
 
@@ -1646,7 +1646,7 @@ One of the following:
 
 <summary>
 
-type: "finding"or "findingInstance"or "content"or "remediationJob"
+type: "finding" or "findingInstance" or "content" or "remediationJob"
 
 Type of export job.
 
@@ -1722,7 +1722,7 @@ maxLength512
 
 <summary>
 
-FindingIgnoreResponse object {id, active\_count, archived\_count, 6 more }
+FindingIgnoreResponse object { id, active\_count, archived\_count, 6 more }
 
 Aggregated finding information with counts and metadata. This is optimized for list API queries and represents a finding along with its instance statistics.
 
@@ -1752,7 +1752,7 @@ Number of archived instances identified in the security finding.
 
 <summary>
 
-finding: object {id, category, name, 15 more }
+finding: object { id, category, name, 15 more }
 
 Basic finding type information.
 
@@ -1770,7 +1770,7 @@ formatuuid
 
 <summary>
 
-category: object {observation, product, type }
+category: object { observation, product, type }
 
 </summary>
 
@@ -1778,7 +1778,7 @@ category: object {observation, product, type }
 
 <summary>
 
-observation: "Issue"or "Insight"or "Activity"
+observation: "Issue" or "Insight" or "Activity"
 
 The type of the observation.
 
@@ -1806,7 +1806,7 @@ One of the following:
 
 <summary>
 
-product: "SaaS"or "Cloud"
+product: "SaaS" or "Cloud"
 
 The product category.
 
@@ -1830,7 +1830,7 @@ One of the following:
 
 <summary>
 
-type: "Content"or "Posture"
+type: "Content" or "Posture"
 
 The type of the finding category.
 
@@ -1864,7 +1864,7 @@ The name of the finding.
 
 <summary>
 
-severity: "Critical"or "High"or "Medium"or "Low"
+severity: "Critical" or "High" or "Medium" or "Low"
 
 Default severity used when no integration-specific severity override exists.
 
@@ -1914,7 +1914,7 @@ Asset class the finding type’s policy evaluates.
 
 <summary>
 
-asset\_vendor: optional "ANTHROPIC"or "AWS"or "BITBUCKET"or 13 more
+asset\_vendor: optional "ANTHROPIC" or "AWS" or "BITBUCKET" or 13 more
 
 Canonical vendor enum value.
 
@@ -2028,7 +2028,7 @@ formatint64
 
 <summary>
 
-origin: optional "system"or "custom"
+origin: optional "system" or "custom"
 
 Whether the finding type is system-managed or customer-created.
 
@@ -2058,7 +2058,7 @@ Whether evaluation of this finding type is suspended by an operator. Present onl
 
 <summary>
 
-remediation: optional object {id, frameworks, guide, 3 more }
+remediation: optional object { id, frameworks, guide, 3 more }
 
 Remediation guide information for a finding.
 
@@ -2142,7 +2142,7 @@ Number of total (Active or archived) problematic instances identified in the sec
 
 <summary>
 
-integration: object {created, last\_hydrated, name, 12 more }
+integration: object { created, last\_hydrated, name, 12 more }
 
 Summary information about an integration.
 
@@ -2182,7 +2182,7 @@ The vendor-specific permissions associated with the integration.
 
 <summary>
 
-policy: object {id, client\_id, compliance\_level, 4 more }
+policy: object { id, client\_id, compliance\_level, 4 more }
 
 Policy configuration for an integration.
 
@@ -2262,7 +2262,7 @@ Whether the integrations permissions can be updated.
 
 <summary>
 
-vendor: object {id, description, display\_name, 5 more }
+vendor: object { id, description, display\_name, 5 more }
 
 Information about a vendor/service provider.
 
@@ -2328,7 +2328,7 @@ The policies related to the vendor.
 
 <summary>
 
-zt\_enrollments: array of object {id, description, display\_name, enabled }
+zt\_enrollments: array of object { id, description, display\_name, enabled }
 
 Zero Trust products associated with this integration.
 
@@ -2374,7 +2374,7 @@ formatuuid
 
 <summary>
 
-credential\_health\_status: optional "Initializing"or "Healthy"or "Unhealthy"
+credential\_health\_status: optional "Initializing" or "Healthy" or "Unhealthy"
 
 Health status of integration credentials.
 
@@ -2434,7 +2434,7 @@ formatdate-time
 
 <summary>
 
-severity\_override: optional object {created\_by, severity }
+severity\_override: optional object { created\_by, severity }
 
 Override information for finding severity.
 
@@ -2450,7 +2450,7 @@ User ID who created the override.
 
 <summary>
 
-severity: "Critical"or "High"or "Medium"or "Low"
+severity: "Critical" or "High" or "Medium" or "Low"
 
 The severity level of a finding.
 
@@ -2490,7 +2490,7 @@ One of the following:
 
 <summary>
 
-FindingUnignoreResponse object {id, active\_count, archived\_count, 6 more }
+FindingUnignoreResponse object { id, active\_count, archived\_count, 6 more }
 
 Aggregated finding information with counts and metadata. This is optimized for list API queries and represents a finding along with its instance statistics.
 
@@ -2520,7 +2520,7 @@ Number of archived instances identified in the security finding.
 
 <summary>
 
-finding: object {id, category, name, 15 more }
+finding: object { id, category, name, 15 more }
 
 Basic finding type information.
 
@@ -2538,7 +2538,7 @@ formatuuid
 
 <summary>
 
-category: object {observation, product, type }
+category: object { observation, product, type }
 
 </summary>
 
@@ -2546,7 +2546,7 @@ category: object {observation, product, type }
 
 <summary>
 
-observation: "Issue"or "Insight"or "Activity"
+observation: "Issue" or "Insight" or "Activity"
 
 The type of the observation.
 
@@ -2574,7 +2574,7 @@ One of the following:
 
 <summary>
 
-product: "SaaS"or "Cloud"
+product: "SaaS" or "Cloud"
 
 The product category.
 
@@ -2598,7 +2598,7 @@ One of the following:
 
 <summary>
 
-type: "Content"or "Posture"
+type: "Content" or "Posture"
 
 The type of the finding category.
 
@@ -2632,7 +2632,7 @@ The name of the finding.
 
 <summary>
 
-severity: "Critical"or "High"or "Medium"or "Low"
+severity: "Critical" or "High" or "Medium" or "Low"
 
 Default severity used when no integration-specific severity override exists.
 
@@ -2682,7 +2682,7 @@ Asset class the finding type’s policy evaluates.
 
 <summary>
 
-asset\_vendor: optional "ANTHROPIC"or "AWS"or "BITBUCKET"or 13 more
+asset\_vendor: optional "ANTHROPIC" or "AWS" or "BITBUCKET" or 13 more
 
 Canonical vendor enum value.
 
@@ -2796,7 +2796,7 @@ formatint64
 
 <summary>
 
-origin: optional "system"or "custom"
+origin: optional "system" or "custom"
 
 Whether the finding type is system-managed or customer-created.
 
@@ -2826,7 +2826,7 @@ Whether evaluation of this finding type is suspended by an operator. Present onl
 
 <summary>
 
-remediation: optional object {id, frameworks, guide, 3 more }
+remediation: optional object { id, frameworks, guide, 3 more }
 
 Remediation guide information for a finding.
 
@@ -2910,7 +2910,7 @@ Number of total (Active or archived) problematic instances identified in the sec
 
 <summary>
 
-integration: object {created, last\_hydrated, name, 12 more }
+integration: object { created, last\_hydrated, name, 12 more }
 
 Summary information about an integration.
 
@@ -2950,7 +2950,7 @@ The vendor-specific permissions associated with the integration.
 
 <summary>
 
-policy: object {id, client\_id, compliance\_level, 4 more }
+policy: object { id, client\_id, compliance\_level, 4 more }
 
 Policy configuration for an integration.
 
@@ -3030,7 +3030,7 @@ Whether the integrations permissions can be updated.
 
 <summary>
 
-vendor: object {id, description, display\_name, 5 more }
+vendor: object { id, description, display\_name, 5 more }
 
 Information about a vendor/service provider.
 
@@ -3096,7 +3096,7 @@ The policies related to the vendor.
 
 <summary>
 
-zt\_enrollments: array of object {id, description, display\_name, enabled }
+zt\_enrollments: array of object { id, description, display\_name, enabled }
 
 Zero Trust products associated with this integration.
 
@@ -3142,7 +3142,7 @@ formatuuid
 
 <summary>
 
-credential\_health\_status: optional "Initializing"or "Healthy"or "Unhealthy"
+credential\_health\_status: optional "Initializing" or "Healthy" or "Unhealthy"
 
 Health status of integration credentials.
 
@@ -3202,7 +3202,7 @@ formatdate-time
 
 <summary>
 
-severity\_override: optional object {created\_by, severity }
+severity\_override: optional object { created\_by, severity }
 
 Override information for finding severity.
 
@@ -3218,7 +3218,7 @@ User ID who created the override.
 
 <summary>
 
-severity: "Critical"or "High"or "Medium"or "Low"
+severity: "Critical" or "High" or "Medium" or "Low"
 
 The severity level of a finding.
 
@@ -3258,7 +3258,7 @@ One of the following:
 
 <summary>
 
-FindingTuneSeverityResponse object {id, active\_count, archived\_count, 6 more }
+FindingTuneSeverityResponse object { id, active\_count, archived\_count, 6 more }
 
 Aggregated finding information with counts and metadata. This is optimized for list API queries and represents a finding along with its instance statistics.
 
@@ -3288,7 +3288,7 @@ Number of archived instances identified in the security finding.
 
 <summary>
 
-finding: object {id, category, name, 15 more }
+finding: object { id, category, name, 15 more }
 
 Basic finding type information.
 
@@ -3306,7 +3306,7 @@ formatuuid
 
 <summary>
 
-category: object {observation, product, type }
+category: object { observation, product, type }
 
 </summary>
 
@@ -3314,7 +3314,7 @@ category: object {observation, product, type }
 
 <summary>
 
-observation: "Issue"or "Insight"or "Activity"
+observation: "Issue" or "Insight" or "Activity"
 
 The type of the observation.
 
@@ -3342,7 +3342,7 @@ One of the following:
 
 <summary>
 
-product: "SaaS"or "Cloud"
+product: "SaaS" or "Cloud"
 
 The product category.
 
@@ -3366,7 +3366,7 @@ One of the following:
 
 <summary>
 
-type: "Content"or "Posture"
+type: "Content" or "Posture"
 
 The type of the finding category.
 
@@ -3400,7 +3400,7 @@ The name of the finding.
 
 <summary>
 
-severity: "Critical"or "High"or "Medium"or "Low"
+severity: "Critical" or "High" or "Medium" or "Low"
 
 Default severity used when no integration-specific severity override exists.
 
@@ -3450,7 +3450,7 @@ Asset class the finding type’s policy evaluates.
 
 <summary>
 
-asset\_vendor: optional "ANTHROPIC"or "AWS"or "BITBUCKET"or 13 more
+asset\_vendor: optional "ANTHROPIC" or "AWS" or "BITBUCKET" or 13 more
 
 Canonical vendor enum value.
 
@@ -3564,7 +3564,7 @@ formatint64
 
 <summary>
 
-origin: optional "system"or "custom"
+origin: optional "system" or "custom"
 
 Whether the finding type is system-managed or customer-created.
 
@@ -3594,7 +3594,7 @@ Whether evaluation of this finding type is suspended by an operator. Present onl
 
 <summary>
 
-remediation: optional object {id, frameworks, guide, 3 more }
+remediation: optional object { id, frameworks, guide, 3 more }
 
 Remediation guide information for a finding.
 
@@ -3678,7 +3678,7 @@ Number of total (Active or archived) problematic instances identified in the sec
 
 <summary>
 
-integration: object {created, last\_hydrated, name, 12 more }
+integration: object { created, last\_hydrated, name, 12 more }
 
 Summary information about an integration.
 
@@ -3718,7 +3718,7 @@ The vendor-specific permissions associated with the integration.
 
 <summary>
 
-policy: object {id, client\_id, compliance\_level, 4 more }
+policy: object { id, client\_id, compliance\_level, 4 more }
 
 Policy configuration for an integration.
 
@@ -3798,7 +3798,7 @@ Whether the integrations permissions can be updated.
 
 <summary>
 
-vendor: object {id, description, display\_name, 5 more }
+vendor: object { id, description, display\_name, 5 more }
 
 Information about a vendor/service provider.
 
@@ -3864,7 +3864,7 @@ The policies related to the vendor.
 
 <summary>
 
-zt\_enrollments: array of object {id, description, display\_name, enabled }
+zt\_enrollments: array of object { id, description, display\_name, enabled }
 
 Zero Trust products associated with this integration.
 
@@ -3910,7 +3910,7 @@ formatuuid
 
 <summary>
 
-credential\_health\_status: optional "Initializing"or "Healthy"or "Unhealthy"
+credential\_health\_status: optional "Initializing" or "Healthy" or "Unhealthy"
 
 Health status of integration credentials.
 
@@ -3970,7 +3970,7 @@ formatdate-time
 
 <summary>
 
-severity\_override: optional object {created\_by, severity }
+severity\_override: optional object { created\_by, severity }
 
 Override information for finding severity.
 
@@ -3986,7 +3986,7 @@ User ID who created the override.
 
 <summary>
 
-severity: "Critical"or "High"or "Medium"or "Low"
+severity: "Critical" or "High" or "Medium" or "Low"
 
 The severity level of a finding.
 
@@ -4026,7 +4026,7 @@ One of the following:
 
 <summary>
 
-FindingResetSeverityResponse object {id, active\_count, archived\_count, 6 more }
+FindingResetSeverityResponse object { id, active\_count, archived\_count, 6 more }
 
 Aggregated finding information with counts and metadata. This is optimized for list API queries and represents a finding along with its instance statistics.
 
@@ -4056,7 +4056,7 @@ Number of archived instances identified in the security finding.
 
 <summary>
 
-finding: object {id, category, name, 15 more }
+finding: object { id, category, name, 15 more }
 
 Basic finding type information.
 
@@ -4074,7 +4074,7 @@ formatuuid
 
 <summary>
 
-category: object {observation, product, type }
+category: object { observation, product, type }
 
 </summary>
 
@@ -4082,7 +4082,7 @@ category: object {observation, product, type }
 
 <summary>
 
-observation: "Issue"or "Insight"or "Activity"
+observation: "Issue" or "Insight" or "Activity"
 
 The type of the observation.
 
@@ -4110,7 +4110,7 @@ One of the following:
 
 <summary>
 
-product: "SaaS"or "Cloud"
+product: "SaaS" or "Cloud"
 
 The product category.
 
@@ -4134,7 +4134,7 @@ One of the following:
 
 <summary>
 
-type: "Content"or "Posture"
+type: "Content" or "Posture"
 
 The type of the finding category.
 
@@ -4168,7 +4168,7 @@ The name of the finding.
 
 <summary>
 
-severity: "Critical"or "High"or "Medium"or "Low"
+severity: "Critical" or "High" or "Medium" or "Low"
 
 Default severity used when no integration-specific severity override exists.
 
@@ -4218,7 +4218,7 @@ Asset class the finding type’s policy evaluates.
 
 <summary>
 
-asset\_vendor: optional "ANTHROPIC"or "AWS"or "BITBUCKET"or 13 more
+asset\_vendor: optional "ANTHROPIC" or "AWS" or "BITBUCKET" or 13 more
 
 Canonical vendor enum value.
 
@@ -4332,7 +4332,7 @@ formatint64
 
 <summary>
 
-origin: optional "system"or "custom"
+origin: optional "system" or "custom"
 
 Whether the finding type is system-managed or customer-created.
 
@@ -4362,7 +4362,7 @@ Whether evaluation of this finding type is suspended by an operator. Present onl
 
 <summary>
 
-remediation: optional object {id, frameworks, guide, 3 more }
+remediation: optional object { id, frameworks, guide, 3 more }
 
 Remediation guide information for a finding.
 
@@ -4446,7 +4446,7 @@ Number of total (Active or archived) problematic instances identified in the sec
 
 <summary>
 
-integration: object {created, last\_hydrated, name, 12 more }
+integration: object { created, last\_hydrated, name, 12 more }
 
 Summary information about an integration.
 
@@ -4486,7 +4486,7 @@ The vendor-specific permissions associated with the integration.
 
 <summary>
 
-policy: object {id, client\_id, compliance\_level, 4 more }
+policy: object { id, client\_id, compliance\_level, 4 more }
 
 Policy configuration for an integration.
 
@@ -4566,7 +4566,7 @@ Whether the integrations permissions can be updated.
 
 <summary>
 
-vendor: object {id, description, display\_name, 5 more }
+vendor: object { id, description, display\_name, 5 more }
 
 Information about a vendor/service provider.
 
@@ -4632,7 +4632,7 @@ The policies related to the vendor.
 
 <summary>
 
-zt\_enrollments: array of object {id, description, display\_name, enabled }
+zt\_enrollments: array of object { id, description, display\_name, enabled }
 
 Zero Trust products associated with this integration.
 
@@ -4678,7 +4678,7 @@ formatuuid
 
 <summary>
 
-credential\_health\_status: optional "Initializing"or "Healthy"or "Unhealthy"
+credential\_health\_status: optional "Initializing" or "Healthy" or "Unhealthy"
 
 Health status of integration credentials.
 
@@ -4738,7 +4738,7 @@ formatdate-time
 
 <summary>
 
-severity\_override: optional object {created\_by, severity }
+severity\_override: optional object { created\_by, severity }
 
 Override information for finding severity.
 
@@ -4754,7 +4754,7 @@ User ID who created the override.
 
 <summary>
 
-severity: "Critical"or "High"or "Medium"or "Low"
+severity: "Critical" or "High" or "Medium" or "Low"
 
 The severity level of a finding.
 
@@ -4818,7 +4818,7 @@ POST/accounts/{account\_id}/data-security/posture/findings/{finding\_id}/instanc
 
 <summary>
 
-InstanceListResponse object {affliction\_date, asset, dlp\_contexts, 4 more }
+InstanceListResponse object { affliction\_date, asset, dlp\_contexts, 4 more }
 
 A specific instance of a security finding. In the API interface, we refer to the ‘finding’ table in our DB as finding instances, optimized for the p99 use case.
 
@@ -4836,7 +4836,7 @@ formatdate-time
 
 <summary>
 
-asset: object {category, external\_id, fields, 4 more }
+asset: object { category, external\_id, fields, 4 more }
 
 Asset information including metadata and categorization.
 
@@ -4846,7 +4846,7 @@ Asset information including metadata and categorization.
 
 <summary>
 
-category: object {service, type, vendor, id }
+category: object { service, type, vendor, id }
 
 Category information for an asset.
 
@@ -4894,7 +4894,7 @@ maxLength512
 
 <summary>
 
-fields: array of object {name, value, link }
+fields: array of object { name, value, link }
 
 The fields associated with the asset.
 
@@ -4964,7 +4964,7 @@ formatdate-time
 
 <summary>
 
-dlp\_contexts: array of object {created, entry\_ids, profile\_id, 6 more }
+dlp\_contexts: array of object { created, entry\_ids, profile\_id, 6 more }
 
 DLP context information if this is a content finding.
 
@@ -5050,7 +5050,7 @@ DLP Match context payload that matched the profile in question.
 
 <summary>
 
-remediations: array of object {id, created\_at, stale, status }
+remediations: array of object { id, created\_at, stale, status }
 
 A list of the 10 most recent remediation jobs for this finding instance, ordered by creation time (most recent first). The ‘stale’ field indicates whether the remediation job was created before the finding instance’s affliction\_date (true) or after it (false). If there has never been a remediation job for this finding instance, this field will be an empty array.
 
@@ -5082,7 +5082,7 @@ Whether this remediation job is stale (created before the finding instance’s a
 
 <summary>
 
-status: "pending"or "processing"or "completed"or 2 more
+status: "pending" or "processing" or "completed" or 2 more
 
 Status of a remediation job.
 
@@ -5122,7 +5122,7 @@ One of the following:
 
 <summary>
 
-webhooks: array of object {latest\_job, webhook\_id, webhook\_label }
+webhooks: array of object { latest\_job, webhook\_id, webhook\_label }
 
 The most recent webhook job invocation for each webhook configuration associated with this finding instance. Each entry represents the latest job (any status) per webhook config. The ‘stale’ field indicates whether the job was invoked before the finding instance’s current affliction\_date. If no webhook jobs have been created, this field will be an empty array.
 
@@ -5132,7 +5132,7 @@ The most recent webhook job invocation for each webhook configuration associated
 
 <summary>
 
-latest\_job: object {id, created\_at, stale, status }
+latest\_job: object { id, created\_at, stale, status }
 
 The most recent webhook job for this webhook configuration.
 
@@ -5164,7 +5164,7 @@ Whether this webhook job is stale (created before the finding instance’s curre
 
 <summary>
 
-status: "pending"or "processing"or "completed"
+status: "pending" or "processing" or "completed"
 
 Current status of the webhook job.
 
@@ -5232,7 +5232,7 @@ Whether this finding instance has been archived.
 
 <summary>
 
-InstanceGetResponse object {affliction\_date, asset, dlp\_contexts, 4 more }
+InstanceGetResponse object { affliction\_date, asset, dlp\_contexts, 4 more }
 
 A specific instance of a security finding. In the API interface, we refer to the ‘finding’ table in our DB as finding instances, optimized for the p99 use case.
 
@@ -5250,7 +5250,7 @@ formatdate-time
 
 <summary>
 
-asset: object {category, external\_id, fields, 4 more }
+asset: object { category, external\_id, fields, 4 more }
 
 Asset information including metadata and categorization.
 
@@ -5260,7 +5260,7 @@ Asset information including metadata and categorization.
 
 <summary>
 
-category: object {service, type, vendor, id }
+category: object { service, type, vendor, id }
 
 Category information for an asset.
 
@@ -5308,7 +5308,7 @@ maxLength512
 
 <summary>
 
-fields: array of object {name, value, link }
+fields: array of object { name, value, link }
 
 The fields associated with the asset.
 
@@ -5378,7 +5378,7 @@ formatdate-time
 
 <summary>
 
-dlp\_contexts: array of object {created, entry\_ids, profile\_id, 6 more }
+dlp\_contexts: array of object { created, entry\_ids, profile\_id, 6 more }
 
 DLP context information if this is a content finding.
 
@@ -5464,7 +5464,7 @@ DLP Match context payload that matched the profile in question.
 
 <summary>
 
-remediations: array of object {id, created\_at, stale, status }
+remediations: array of object { id, created\_at, stale, status }
 
 A list of the 10 most recent remediation jobs for this finding instance, ordered by creation time (most recent first). The ‘stale’ field indicates whether the remediation job was created before the finding instance’s affliction\_date (true) or after it (false). If there has never been a remediation job for this finding instance, this field will be an empty array.
 
@@ -5496,7 +5496,7 @@ Whether this remediation job is stale (created before the finding instance’s a
 
 <summary>
 
-status: "pending"or "processing"or "completed"or 2 more
+status: "pending" or "processing" or "completed" or 2 more
 
 Status of a remediation job.
 
@@ -5536,7 +5536,7 @@ One of the following:
 
 <summary>
 
-webhooks: array of object {latest\_job, webhook\_id, webhook\_label }
+webhooks: array of object { latest\_job, webhook\_id, webhook\_label }
 
 The most recent webhook job invocation for each webhook configuration associated with this finding instance. Each entry represents the latest job (any status) per webhook config. The ‘stale’ field indicates whether the job was invoked before the finding instance’s current affliction\_date. If no webhook jobs have been created, this field will be an empty array.
 
@@ -5546,7 +5546,7 @@ The most recent webhook job invocation for each webhook configuration associated
 
 <summary>
 
-latest\_job: object {id, created\_at, stale, status }
+latest\_job: object { id, created\_at, stale, status }
 
 The most recent webhook job for this webhook configuration.
 
@@ -5578,7 +5578,7 @@ Whether this webhook job is stale (created before the finding instance’s curre
 
 <summary>
 
-status: "pending"or "processing"or "completed"
+status: "pending" or "processing" or "completed"
 
 Current status of the webhook job.
 
@@ -5646,7 +5646,7 @@ Whether this finding instance has been archived.
 
 <summary>
 
-InstanceExportResponse object {id, status, type, 5 more }
+InstanceExportResponse object { id, status, type, 5 more }
 
 Information about an export job.
 
@@ -5664,7 +5664,7 @@ formatuuid
 
 <summary>
 
-status: "Pending"or "Success"or "Failure"or 2 more
+status: "Pending" or "Success" or "Failure" or 2 more
 
 Status of an export job.
 
@@ -5700,7 +5700,7 @@ One of the following:
 
 <summary>
 
-type: "finding"or "findingInstance"or "content"or "remediationJob"
+type: "finding" or "findingInstance" or "content" or "remediationJob"
 
 Type of export job.
 
@@ -5776,7 +5776,7 @@ maxLength512
 
 <summary>
 
-InstanceArchiveResponse object {affliction\_date, asset, dlp\_contexts, 4 more }
+InstanceArchiveResponse object { affliction\_date, asset, dlp\_contexts, 4 more }
 
 A specific instance of a security finding. In the API interface, we refer to the ‘finding’ table in our DB as finding instances, optimized for the p99 use case.
 
@@ -5794,7 +5794,7 @@ formatdate-time
 
 <summary>
 
-asset: object {category, external\_id, fields, 4 more }
+asset: object { category, external\_id, fields, 4 more }
 
 Asset information including metadata and categorization.
 
@@ -5804,7 +5804,7 @@ Asset information including metadata and categorization.
 
 <summary>
 
-category: object {service, type, vendor, id }
+category: object { service, type, vendor, id }
 
 Category information for an asset.
 
@@ -5852,7 +5852,7 @@ maxLength512
 
 <summary>
 
-fields: array of object {name, value, link }
+fields: array of object { name, value, link }
 
 The fields associated with the asset.
 
@@ -5922,7 +5922,7 @@ formatdate-time
 
 <summary>
 
-dlp\_contexts: array of object {created, entry\_ids, profile\_id, 6 more }
+dlp\_contexts: array of object { created, entry\_ids, profile\_id, 6 more }
 
 DLP context information if this is a content finding.
 
@@ -6008,7 +6008,7 @@ DLP Match context payload that matched the profile in question.
 
 <summary>
 
-remediations: array of object {id, created\_at, stale, status }
+remediations: array of object { id, created\_at, stale, status }
 
 A list of the 10 most recent remediation jobs for this finding instance, ordered by creation time (most recent first). The ‘stale’ field indicates whether the remediation job was created before the finding instance’s affliction\_date (true) or after it (false). If there has never been a remediation job for this finding instance, this field will be an empty array.
 
@@ -6040,7 +6040,7 @@ Whether this remediation job is stale (created before the finding instance’s a
 
 <summary>
 
-status: "pending"or "processing"or "completed"or 2 more
+status: "pending" or "processing" or "completed" or 2 more
 
 Status of a remediation job.
 
@@ -6080,7 +6080,7 @@ One of the following:
 
 <summary>
 
-webhooks: array of object {latest\_job, webhook\_id, webhook\_label }
+webhooks: array of object { latest\_job, webhook\_id, webhook\_label }
 
 The most recent webhook job invocation for each webhook configuration associated with this finding instance. Each entry represents the latest job (any status) per webhook config. The ‘stale’ field indicates whether the job was invoked before the finding instance’s current affliction\_date. If no webhook jobs have been created, this field will be an empty array.
 
@@ -6090,7 +6090,7 @@ The most recent webhook job invocation for each webhook configuration associated
 
 <summary>
 
-latest\_job: object {id, created\_at, stale, status }
+latest\_job: object { id, created\_at, stale, status }
 
 The most recent webhook job for this webhook configuration.
 
@@ -6122,7 +6122,7 @@ Whether this webhook job is stale (created before the finding instance’s curre
 
 <summary>
 
-status: "pending"or "processing"or "completed"
+status: "pending" or "processing" or "completed"
 
 Current status of the webhook job.
 
@@ -6190,7 +6190,7 @@ Whether this finding instance has been archived.
 
 <summary>
 
-InstanceUnarchiveResponse object {affliction\_date, asset, dlp\_contexts, 4 more }
+InstanceUnarchiveResponse object { affliction\_date, asset, dlp\_contexts, 4 more }
 
 A specific instance of a security finding. In the API interface, we refer to the ‘finding’ table in our DB as finding instances, optimized for the p99 use case.
 
@@ -6208,7 +6208,7 @@ formatdate-time
 
 <summary>
 
-asset: object {category, external\_id, fields, 4 more }
+asset: object { category, external\_id, fields, 4 more }
 
 Asset information including metadata and categorization.
 
@@ -6218,7 +6218,7 @@ Asset information including metadata and categorization.
 
 <summary>
 
-category: object {service, type, vendor, id }
+category: object { service, type, vendor, id }
 
 Category information for an asset.
 
@@ -6266,7 +6266,7 @@ maxLength512
 
 <summary>
 
-fields: array of object {name, value, link }
+fields: array of object { name, value, link }
 
 The fields associated with the asset.
 
@@ -6336,7 +6336,7 @@ formatdate-time
 
 <summary>
 
-dlp\_contexts: array of object {created, entry\_ids, profile\_id, 6 more }
+dlp\_contexts: array of object { created, entry\_ids, profile\_id, 6 more }
 
 DLP context information if this is a content finding.
 
@@ -6422,7 +6422,7 @@ DLP Match context payload that matched the profile in question.
 
 <summary>
 
-remediations: array of object {id, created\_at, stale, status }
+remediations: array of object { id, created\_at, stale, status }
 
 A list of the 10 most recent remediation jobs for this finding instance, ordered by creation time (most recent first). The ‘stale’ field indicates whether the remediation job was created before the finding instance’s affliction\_date (true) or after it (false). If there has never been a remediation job for this finding instance, this field will be an empty array.
 
@@ -6454,7 +6454,7 @@ Whether this remediation job is stale (created before the finding instance’s a
 
 <summary>
 
-status: "pending"or "processing"or "completed"or 2 more
+status: "pending" or "processing" or "completed" or 2 more
 
 Status of a remediation job.
 
@@ -6494,7 +6494,7 @@ One of the following:
 
 <summary>
 
-webhooks: array of object {latest\_job, webhook\_id, webhook\_label }
+webhooks: array of object { latest\_job, webhook\_id, webhook\_label }
 
 The most recent webhook job invocation for each webhook configuration associated with this finding instance. Each entry represents the latest job (any status) per webhook config. The ‘stale’ field indicates whether the job was invoked before the finding instance’s current affliction\_date. If no webhook jobs have been created, this field will be an empty array.
 
@@ -6504,7 +6504,7 @@ The most recent webhook job invocation for each webhook configuration associated
 
 <summary>
 
-latest\_job: object {id, created\_at, stale, status }
+latest\_job: object { id, created\_at, stale, status }
 
 The most recent webhook job for this webhook configuration.
 
@@ -6536,7 +6536,7 @@ Whether this webhook job is stale (created before the finding instance’s curre
 
 <summary>
 
-status: "pending"or "processing"or "completed"
+status: "pending" or "processing" or "completed"
 
 Current status of the webhook job.
 

@@ -36,7 +36,7 @@ DELETE/zones/{zone\_id}/custom\_hostnames/fallback\_origin
 
 <summary>
 
-FallbackOriginGetResponse object {created\_at, errors, origin, 2 more }
+FallbackOriginGetResponse object { created\_at, errors, origin, 2 more }
 
 </summary>
 
@@ -66,7 +66,7 @@ maxLength255
 
 <summary>
 
-status: optional "initializing"or "pending\_deployment"or "pending\_deletion"or 3 more
+status: optional "initializing" or "pending\_deployment" or "pending\_deletion" or 3 more
 
 Status of the fallback origin’s activation.
 
@@ -118,7 +118,7 @@ formatdate-time
 
 <summary>
 
-FallbackOriginUpdateResponse object {created\_at, errors, origin, 2 more }
+FallbackOriginUpdateResponse object { created\_at, errors, origin, 2 more }
 
 </summary>
 
@@ -148,7 +148,7 @@ maxLength255
 
 <summary>
 
-status: optional "initializing"or "pending\_deployment"or "pending\_deletion"or 3 more
+status: optional "initializing" or "pending\_deployment" or "pending\_deletion" or 3 more
 
 Status of the fallback origin’s activation.
 
@@ -200,7 +200,7 @@ formatdate-time
 
 <summary>
 
-FallbackOriginDeleteResponse object {created\_at, errors, origin, 2 more }
+FallbackOriginDeleteResponse object { created\_at, errors, origin, 2 more }
 
 </summary>
 
@@ -230,7 +230,7 @@ maxLength255
 
 <summary>
 
-status: optional "initializing"or "pending\_deployment"or "pending\_deletion"or 3 more
+status: optional "initializing" or "pending\_deployment" or "pending\_deletion" or 3 more
 
 Status of the fallback origin’s activation.
 

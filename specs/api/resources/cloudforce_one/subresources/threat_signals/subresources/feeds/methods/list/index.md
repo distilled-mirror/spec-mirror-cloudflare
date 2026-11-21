@@ -98,7 +98,7 @@ Sort by created\_at, title, category, or url. Prefix the field with - for descen
 
 <summary>
 
-source\_type: optional "curated"or "custom"
+source\_type: optional "curated" or "custom"
 
 Filter by curated or custom feed source. Omit to include both source types.
 
@@ -130,7 +130,7 @@ Exact stored polling-status filter, such as active or error. Omit to include eve
 
 <summary>
 
-errors: array of object {message }
+errors: array of object { message }
 
 </summary>
 
@@ -146,7 +146,7 @@ message: string
 
 <summary>
 
-messages: array of object {message, code, custom\_feed\_count, 4 more }
+messages: array of object { message, code, custom\_feed\_count, 4 more }
 
 </summary>
 
@@ -186,7 +186,7 @@ path: optional array of string
 
 <summary>
 
-reason: optional "threat\_signals\_feed\_limit"or "free\_custom\_skills\_disabled"or "free\_skill\_run\_disabled"or 4 more
+reason: optional "threat\_signals\_feed\_limit" or "free\_custom\_skills\_disabled" or "free\_skill\_run\_disabled" or 4 more
 
 </summary>
 
@@ -232,7 +232,7 @@ One of the following:
 
 <summary>
 
-result: object {count, custom\_feed\_count, custom\_feed\_limit, 4 more }
+result: object { count, custom\_feed\_count, custom\_feed\_limit, 4 more }
 
 </summary>
 
@@ -262,7 +262,7 @@ minimum0
 
 <summary>
 
-feeds: array of object {id, category\_id, category\_name, 13 more }
+feeds: array of object { id, category\_id, category\_name, 13 more }
 
 </summary>
 

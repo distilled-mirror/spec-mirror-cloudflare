@@ -108,7 +108,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -150,7 +150,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -170,7 +170,7 @@ pointer: optional string
 
 <summary>
 
-result: object {id, status } or object {id, completed, status } or object {id, completed, error, status }
+result: object { id, status } or object { id, completed, status } or object { id, completed, error, status }
 
 </summary>
 
@@ -180,7 +180,7 @@ One of the following:
 
 <summary>
 
-ListsBulkOperationPendingOrRunning object {id, status }
+ListsBulkOperationPendingOrRunning object { id, status }
 
 </summary>
 
@@ -194,7 +194,7 @@ The unique operation ID of the asynchronous action.
 
 <summary>
 
-status: "pending"or "running"
+status: "pending" or "running"
 
 The current status of the asynchronous operation.
 
@@ -222,7 +222,7 @@ One of the following:
 
 <summary>
 
-ListsBulkOperationCompleted object {id, completed, status }
+ListsBulkOperationCompleted object { id, completed, status }
 
 </summary>
 
@@ -252,7 +252,7 @@ The current status of the asynchronous operation.
 
 <summary>
 
-ListsBulkOperationFailed object {id, completed, error, status }
+ListsBulkOperationFailed object { id, completed, error, status }
 
 </summary>
 

@@ -126,7 +126,7 @@ Route outbound traffic to this MCP server through Zero Trust Secure Web Gateway.
 
 <summary>
 
-updated\_prompts: optional array of object {name, alias, description, enabled }
+updated\_prompts: optional array of object { name, alias, description, enabled }
 
 Prompt overrides. Omit to preserve, send \[] to clear, or null to reset the field to absence.
 
@@ -166,7 +166,7 @@ Whether the capability is available through the MCP server.
 
 <summary>
 
-updated\_tools: optional array of object {name, alias, description, enabled }
+updated\_tools: optional array of object { name, alias, description, enabled }
 
 Tool overrides. Omit to preserve, send \[] to clear, or null to reset the field to absence.
 
@@ -208,7 +208,7 @@ Whether the capability is available through the MCP server.
 
 <summary>
 
-result: object {id, auth\_type, hostname, 20 more }
+result: object { id, auth\_type, hostname, 20 more }
 
 </summary>
 
@@ -226,7 +226,7 @@ minLength1
 
 <summary>
 
-auth\_type: "oauth"or "bearer"or "unauthenticated"
+auth\_type: "oauth" or "bearer" or "unauthenticated"
 
 Authentication method used to connect to the upstream MCP server.
 
@@ -278,7 +278,7 @@ tools: array of map\[unknown]
 
 <summary>
 
-auth\_config\_summary: optional object {auth\_mode, client\_secret\_version, config, 2 more }
+auth\_config\_summary: optional object { auth\_mode, client\_secret\_version, config, 2 more }
 
 Safe subset of auth\_credentials surfaced to the dashboard. Includes auth\_mode (dcr|manual), has\_client\_secret, client\_secret\_version, and the OAuth endpoints + client\_id for manual servers. Never includes the secret value.
 
@@ -288,7 +288,7 @@ Safe subset of auth\_credentials surfaced to the dashboard. Includes auth\_mode 
 
 <summary>
 
-auth\_mode: optional "dcr"or "manual"
+auth\_mode: optional "dcr" or "manual"
 
 </summary>
 
@@ -314,7 +314,7 @@ client\_secret\_version: optional number
 
 <summary>
 
-config: optional object {authorization\_endpoint, issuer, resource, 2 more }
+config: optional object { authorization\_endpoint, issuer, resource, 2 more }
 
 </summary>
 
@@ -350,7 +350,7 @@ has\_client\_secret: optional boolean
 
 <summary>
 
-registration\_info: optional object {client\_id, redirect\_uris, scope, token\_endpoint\_auth\_method }
+registration\_info: optional object { client\_id, redirect\_uris, scope, token\_endpoint\_auth\_method }
 
 </summary>
 
@@ -382,7 +382,7 @@ token\_endpoint\_auth\_method: optional string
 
 <summary>
 
-authentication\_status: optional "not\_required"or "required"or "connected"or 2 more
+authentication\_status: optional "not\_required" or "required" or "connected" or 2 more
 
 Whether administrative authentication is required before capabilities can be synced. Manual OAuth is user-managed and has no administrative authentication flow.
 
@@ -440,7 +440,7 @@ error: optional string
 
 <summary>
 
-error\_details: optional object {cause, is\_upstream, mcp\_code, 2 more }
+error\_details: optional object { cause, is\_upstream, mcp\_code, 2 more }
 
 </summary>
 
@@ -524,7 +524,7 @@ Route outbound traffic to this MCP server through Zero Trust Secure Web Gateway.
 
 <summary>
 
-status: optional "waiting"or "ready"or "stale"or "error"
+status: optional "waiting" or "ready" or "stale" or "error"
 
 Current sync state of the server
 
@@ -556,7 +556,7 @@ One of the following:
 
 <summary>
 
-updated\_prompts: optional array of object {name, alias, description, enabled }
+updated\_prompts: optional array of object { name, alias, description, enabled }
 
 Server-wide prompt capability overrides.
 
@@ -596,7 +596,7 @@ Whether the capability is available through the MCP server.
 
 <summary>
 
-updated\_tools: optional array of object {name, alias, description, enabled }
+updated\_tools: optional array of object { name, alias, description, enabled }
 
 Server-wide tool capability overrides.
 

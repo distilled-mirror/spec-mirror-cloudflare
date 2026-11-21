@@ -30,7 +30,7 @@ GET/accounts/{account\_id}/dex/warp-change-events
 
 <summary>
 
-WARPChangeEventGetResponse = array of object {account\_name, account\_tag, device\_id, 7 more } or object {device\_id, device\_registration, from, 6 more }
+WARPChangeEventGetResponse = array of object { account\_name, account\_tag, device\_id, 7 more } or object { device\_id, device\_registration, from, 6 more }
 
 </summary>
 
@@ -40,7 +40,7 @@ One of the following:
 
 <summary>
 
-DigitalExperienceMonitoringWARPToggleChangeEvent object {account\_name, account\_tag, device\_id, 7 more }
+DigitalExperienceMonitoringWARPToggleChangeEvent object { account\_name, account\_tag, device\_id, 7 more }
 
 </summary>
 
@@ -106,7 +106,7 @@ formatdate-time
 
 <summary>
 
-toggle: optional "on"or "off"
+toggle: optional "on" or "off"
 
 The state of the WARP toggle.
 
@@ -140,7 +140,7 @@ Email tied to the device.
 
 <summary>
 
-DigitalExperienceMonitoringWARPConfigChangeEvent object {device\_id, device\_registration, from, 6 more }
+DigitalExperienceMonitoringWARPConfigChangeEvent object { device\_id, device\_registration, from, 6 more }
 
 </summary>
 
@@ -166,7 +166,7 @@ maxLength36
 
 <summary>
 
-from: optional object {account\_name, account\_tag, config\_name }
+from: optional object { account\_name, account\_tag, config\_name }
 
 The details for the WARP configuration that was switched from.
 
@@ -228,7 +228,7 @@ formatdate-time
 
 <summary>
 
-to: optional object {account\_name, account\_tag, config\_name }
+to: optional object { account\_name, account\_tag, config\_name }
 
 The details for the WARP configuration that was switched to.
 

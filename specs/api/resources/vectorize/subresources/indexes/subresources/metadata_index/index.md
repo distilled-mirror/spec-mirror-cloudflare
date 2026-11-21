@@ -38,7 +38,7 @@ POST/accounts/{account\_id}/vectorize/v2/indexes/{index\_name}/metadata\_index/d
 
 <summary>
 
-MetadataIndexListResponse object {metadataIndexes }
+MetadataIndexListResponse object { metadataIndexes }
 
 </summary>
 
@@ -46,7 +46,7 @@ MetadataIndexListResponse object {metadataIndexes }
 
 <summary>
 
-metadataIndexes: optional array of object {indexType, propertyName }
+metadataIndexes: optional array of object { indexType, propertyName }
 
 Array of indexed metadata properties.
 
@@ -56,7 +56,7 @@ Array of indexed metadata properties.
 
 <summary>
 
-indexType: optional "string"or "number"or "boolean"
+indexType: optional "string" or "number" or "boolean"
 
 Specifies the type of indexed metadata property.
 
@@ -98,7 +98,7 @@ Specifies the indexed metadata property.
 
 <summary>
 
-MetadataIndexCreateResponse object {mutationId }
+MetadataIndexCreateResponse object { mutationId }
 
 </summary>
 
@@ -120,7 +120,7 @@ maxLength36
 
 <summary>
 
-MetadataIndexDeleteResponse object {mutationId }
+MetadataIndexDeleteResponse object { mutationId }
 
 </summary>
 

@@ -48,7 +48,7 @@ POST/accounts/{account\_id}/payment-methods/{payment\_method\_id}/set-as-default
 
 <summary>
 
-PaymentMethodListResponse object {id, address, address2, 22 more }
+PaymentMethodListResponse object { id, address, address2, 22 more }
 
 </summary>
 
@@ -194,7 +194,7 @@ Billing state.
 
 <summary>
 
-type: optional "CREDIT\_CARD"or "PAYPAL"or "CASHAPP"or 3 more
+type: optional "CREDIT\_CARD" or "PAYPAL" or "CASHAPP" or 3 more
 
 The payment method type.
 
@@ -244,7 +244,7 @@ Billing zip code.
 
 <summary>
 
-PaymentMethodCreateResponse object {id, address, address2, 22 more }
+PaymentMethodCreateResponse object { id, address, address2, 22 more }
 
 </summary>
 
@@ -390,7 +390,7 @@ Billing state.
 
 <summary>
 
-type: optional "CREDIT\_CARD"or "PAYPAL"or "CASHAPP"or 3 more
+type: optional "CREDIT\_CARD" or "PAYPAL" or "CASHAPP" or 3 more
 
 The payment method type.
 
@@ -440,7 +440,7 @@ Billing zip code.
 
 <summary>
 
-PaymentMethodGetResponse object {id, address, address2, 22 more }
+PaymentMethodGetResponse object { id, address, address2, 22 more }
 
 </summary>
 
@@ -586,7 +586,7 @@ Billing state.
 
 <summary>
 
-type: optional "CREDIT\_CARD"or "PAYPAL"or "CASHAPP"or 3 more
+type: optional "CREDIT\_CARD" or "PAYPAL" or "CASHAPP" or 3 more
 
 The payment method type.
 
@@ -636,7 +636,7 @@ Billing zip code.
 
 <summary>
 
-PaymentMethodUpdateResponse object {id, address, address2, 22 more }
+PaymentMethodUpdateResponse object { id, address, address2, 22 more }
 
 </summary>
 
@@ -782,7 +782,7 @@ Billing state.
 
 <summary>
 
-type: optional "CREDIT\_CARD"or "PAYPAL"or "CASHAPP"or 3 more
+type: optional "CREDIT\_CARD" or "PAYPAL" or "CASHAPP" or 3 more
 
 The payment method type.
 
@@ -832,7 +832,7 @@ Billing zip code.
 
 <summary>
 
-PaymentMethodDeleteResponse = unknownor string
+PaymentMethodDeleteResponse = unknown or string
 
 </summary>
 
@@ -854,7 +854,7 @@ string
 
 <summary>
 
-PaymentMethodSetAsDefaultResponse = unknownor string
+PaymentMethodSetAsDefaultResponse = unknown or string
 
 </summary>
 

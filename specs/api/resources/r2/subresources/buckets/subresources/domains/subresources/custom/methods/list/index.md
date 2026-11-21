@@ -62,7 +62,7 @@ minLength3
 
 <summary>
 
-"cf-r2-jurisdiction": optional "default"or "eu"or "us"or 2 more
+"cf-r2-jurisdiction": optional "default" or "eu" or "us" or 2 more
 
 </summary>
 
@@ -120,7 +120,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -144,7 +144,7 @@ messages: array of string
 
 <summary>
 
-result: object {domains }
+result: object { domains }
 
 </summary>
 
@@ -152,7 +152,7 @@ result: object {domains }
 
 <summary>
 
-domains: array of object {domain, enabled, status, 4 more }
+domains: array of object { domain, enabled, status, 4 more }
 
 </summary>
 
@@ -172,7 +172,7 @@ Whether this bucket is publicly accessible at the specified custom domain.
 
 <summary>
 
-status: object {ownership, ssl }
+status: object { ownership, ssl }
 
 </summary>
 
@@ -180,7 +180,7 @@ status: object {ownership, ssl }
 
 <summary>
 
-ownership: "pending"or "active"or "deactivated"or 3 more
+ownership: "pending" or "active" or "deactivated" or 3 more
 
 Ownership status of the domain.
 
@@ -220,7 +220,7 @@ One of the following:
 
 <summary>
 
-ssl: "initializing"or "pending"or "active"or 3 more
+ssl: "initializing" or "pending" or "active" or 3 more
 
 SSL certificate status.
 
@@ -270,7 +270,7 @@ An allowlist of ciphers for TLS termination. These ciphers must be in the Boring
 
 <summary>
 
-minTLS: optional "1.0"or "1.1"or "1.2"or "1.3"
+minTLS: optional "1.0" or "1.1" or "1.2" or "1.3"
 
 Minimum TLS Version the custom domain will accept for incoming connections. If not set, defaults to 1.0.
 

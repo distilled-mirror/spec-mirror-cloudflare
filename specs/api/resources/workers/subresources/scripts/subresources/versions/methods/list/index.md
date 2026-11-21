@@ -102,7 +102,7 @@ Items per-page.
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -124,7 +124,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -144,7 +144,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -166,7 +166,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -186,7 +186,7 @@ pointer: optional string
 
 <summary>
 
-result: object {items }
+result: object { items }
 
 </summary>
 
@@ -194,7 +194,7 @@ result: object {items }
 
 <summary>
 
-items: optional array of object {id, metadata, number }
+items: optional array of object { id, metadata, number }
 
 </summary>
 
@@ -208,7 +208,7 @@ Unique identifier for the version.
 
 <summary>
 
-metadata: optional object {author\_email, author\_id, created\_on, 3 more }
+metadata: optional object { author\_email, author\_id, created\_on, 3 more }
 
 </summary>
 
@@ -246,7 +246,7 @@ When the version was last modified.
 
 <summary>
 
-source: optional "unknown"or "api"or "wrangler"or 8 more
+source: optional "unknown" or "api" or "wrangler" or 8 more
 
 The source of the version upload.
 

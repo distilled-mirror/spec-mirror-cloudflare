@@ -30,7 +30,7 @@ GET/accounts/{account\_id}/cloudforce-one/scans/results/{config\_id}
 
 <summary>
 
-ScanResult object {number, proto, status }
+ScanResult object { number, proto, status }
 
 </summary>
 
@@ -54,7 +54,7 @@ status: optional string
 
 <summary>
 
-ResultGetResponse object {"1.1.1.1" }
+ResultGetResponse object { "1.1.1.1" }
 
 </summary>
 

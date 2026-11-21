@@ -130,7 +130,7 @@ Filter events by WARP configuration name changed from or to. Applicable to type=
 
 <summary>
 
-sort\_order: optional "ASC"or "DESC"
+sort\_order: optional "ASC" or "DESC"
 
 Sort response by event timestamp.
 
@@ -154,7 +154,7 @@ One of the following:
 
 <summary>
 
-toggle: optional "on"or "off"
+toggle: optional "on" or "off"
 
 Filter events by type toggle value. Applicable to type=‘toggle’ events only.
 
@@ -178,7 +178,7 @@ One of the following:
 
 <summary>
 
-type: optional "config"or "toggle"
+type: optional "config" or "toggle"
 
 Filter events by type ‘config’ or ‘toggle’.
 
@@ -204,7 +204,7 @@ One of the following:
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -226,7 +226,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -246,7 +246,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -268,7 +268,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -294,7 +294,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional array of object {account\_name, account\_tag, device\_id, 7 more } or object {device\_id, device\_registration, from, 6 more }
+result: optional array of object { account\_name, account\_tag, device\_id, 7 more } or object { device\_id, device\_registration, from, 6 more }
 
 </summary>
 
@@ -304,7 +304,7 @@ One of the following:
 
 <summary>
 
-DigitalExperienceMonitoringWARPToggleChangeEvent object {account\_name, account\_tag, device\_id, 7 more }
+DigitalExperienceMonitoringWARPToggleChangeEvent object { account\_name, account\_tag, device\_id, 7 more }
 
 </summary>
 
@@ -370,7 +370,7 @@ formatdate-time
 
 <summary>
 
-toggle: optional "on"or "off"
+toggle: optional "on" or "off"
 
 The state of the WARP toggle.
 
@@ -404,7 +404,7 @@ Email tied to the device.
 
 <summary>
 
-DigitalExperienceMonitoringWARPConfigChangeEvent object {device\_id, device\_registration, from, 6 more }
+DigitalExperienceMonitoringWARPConfigChangeEvent object { device\_id, device\_registration, from, 6 more }
 
 </summary>
 
@@ -430,7 +430,7 @@ maxLength36
 
 <summary>
 
-from: optional object {account\_name, account\_tag, config\_name }
+from: optional object { account\_name, account\_tag, config\_name }
 
 The details for the WARP configuration that was switched from.
 
@@ -492,7 +492,7 @@ formatdate-time
 
 <summary>
 
-to: optional object {account\_name, account\_tag, config\_name }
+to: optional object { account\_name, account\_tag, config\_name }
 
 The details for the WARP configuration that was switched to.
 
@@ -540,7 +540,7 @@ Email tied to the device.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

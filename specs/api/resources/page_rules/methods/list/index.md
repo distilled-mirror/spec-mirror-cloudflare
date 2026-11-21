@@ -72,7 +72,7 @@ maxLength32
 
 <summary>
 
-direction: optional "asc"or "desc"
+direction: optional "asc" or "desc"
 
 The direction used to sort returned Page Rules.
 
@@ -96,7 +96,7 @@ One of the following:
 
 <summary>
 
-match: optional "any"or "all"
+match: optional "any" or "all"
 
 When set to <code>all</code>, all the search requirements must match. When set to <code>any</code>, only one of the search requirements has to match.
 
@@ -120,7 +120,7 @@ One of the following:
 
 <summary>
 
-order: optional "status"or "priority"
+order: optional "status" or "priority"
 
 The field used to sort returned Page Rules.
 
@@ -144,7 +144,7 @@ One of the following:
 
 <summary>
 
-status: optional "active"or "disabled"
+status: optional "active" or "disabled"
 
 The status of the Page Rule.
 
@@ -170,7 +170,7 @@ One of the following:
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -192,7 +192,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -212,7 +212,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -234,7 +234,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -288,7 +288,7 @@ One of the following:
 
 <summary>
 
-AlwaysUseHTTPS object {id }
+AlwaysUseHTTPS object { id }
 
 </summary>
 
@@ -306,7 +306,7 @@ If enabled, any <code>http://`` URL is converted to</code> https://\` through a 
 
 <summary>
 
-AutomaticHTTPSRewrites object {id, value }
+AutomaticHTTPSRewrites object { id, value }
 
 </summary>
 
@@ -320,7 +320,7 @@ Turn on or off Automatic HTTPS Rewrites.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 The status of Automatic HTTPS Rewrites.
 
@@ -348,7 +348,7 @@ One of the following:
 
 <summary>
 
-BrowserCacheTTL object {id, value }
+BrowserCacheTTL object { id, value }
 
 </summary>
 
@@ -376,7 +376,7 @@ minimum0
 
 <summary>
 
-BrowserCheck object {id, value }
+BrowserCheck object { id, value }
 
 </summary>
 
@@ -390,7 +390,7 @@ Inspect the visitor’s browser for headers commonly associated with spammers an
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 The status of Browser Integrity Check.
 
@@ -418,7 +418,7 @@ One of the following:
 
 <summary>
 
-BypassCacheOnCookie object {id, value }
+BypassCacheOnCookie object { id, value }
 
 </summary>
 
@@ -446,7 +446,7 @@ minLength1
 
 <summary>
 
-CacheByDeviceType object {id, value }
+CacheByDeviceType object { id, value }
 
 </summary>
 
@@ -460,7 +460,7 @@ Separate cached content based on the visitor’s device type.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 The status of Cache By Device Type.
 
@@ -488,7 +488,7 @@ One of the following:
 
 <summary>
 
-CacheDeceptionArmor object {id, value }
+CacheDeceptionArmor object { id, value }
 
 </summary>
 
@@ -502,7 +502,7 @@ Protect from web cache deception attacks while still allowing static assets to b
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 The status of Cache Deception Armor.
 
@@ -530,7 +530,7 @@ One of the following:
 
 <summary>
 
-CacheKeyFields object {id, value }
+CacheKeyFields object { id, value }
 
 </summary>
 
@@ -544,7 +544,7 @@ Control specifically what variables to include when deciding which resources to 
 
 <summary>
 
-value: optional object {cookie, header, host, 2 more }
+value: optional object { cookie, header, host, 2 more }
 
 </summary>
 
@@ -552,7 +552,7 @@ value: optional object {cookie, header, host, 2 more }
 
 <summary>
 
-cookie: optional object {check\_presence, include }
+cookie: optional object { check\_presence, include }
 
 Controls which cookies appear in the Cache Key.
 
@@ -578,7 +578,7 @@ A list of cookies to include.
 
 <summary>
 
-header: optional object {check\_presence, exclude, include }
+header: optional object { check\_presence, exclude, include }
 
 Controls which headers go into the Cache Key. Exactly one of <code>include</code> or <code>exclude</code> is expected.
 
@@ -610,7 +610,7 @@ A list of headers to include.
 
 <summary>
 
-host: optional object {resolved }
+host: optional object { resolved }
 
 Determines which host header to include in the Cache Key.
 
@@ -630,7 +630,7 @@ Whether to include the Host header in the HTTP request sent to the origin.
 
 <summary>
 
-query\_string: optional object {exclude, include }
+query\_string: optional object { exclude, include }
 
 Controls which URL query string parameters go into the Cache Key. Exactly one of <code>include</code> or <code>exclude</code> is expected.
 
@@ -640,7 +640,7 @@ Controls which URL query string parameters go into the Cache Key. Exactly one of
 
 <summary>
 
-exclude: optional "\*"or array of string
+exclude: optional "\*" or array of string
 
 Ignore all query string parameters.
 
@@ -668,7 +668,7 @@ A list of query string parameters to ignore.
 
 <summary>
 
-include: optional "\*"or array of string
+include: optional "\*" or array of string
 
 Include all query string parameters.
 
@@ -700,7 +700,7 @@ A list of query string parameters to include.
 
 <summary>
 
-user: optional object {device\_type, geo, lang }
+user: optional object { device\_type, geo, lang }
 
 Feature fields to add features about the end-user (client) into the Cache Key.
 
@@ -740,7 +740,7 @@ Includes the first language code contained in the <code>Accept-Language</code> h
 
 <summary>
 
-CacheLevel object {id, value }
+CacheLevel object { id, value }
 
 </summary>
 
@@ -754,7 +754,7 @@ Apply custom caching based on the option selected.
 
 <summary>
 
-value: optional "bypass"or "basic"or "simplified"or 2 more
+value: optional "bypass" or "basic" or "simplified" or 2 more
 
 - <code>bypass</code>: Cloudflare does not cache.
 - <code>basic</code>: Delivers resources from cache when there is no query string.
@@ -798,7 +798,7 @@ One of the following:
 
 <summary>
 
-CacheOnCookie object {id, value }
+CacheOnCookie object { id, value }
 
 </summary>
 
@@ -826,7 +826,7 @@ minLength1
 
 <summary>
 
-CacheTTLByStatus object {id, value }
+CacheTTLByStatus object { id, value }
 
 </summary>
 
@@ -840,7 +840,7 @@ Enterprise customers can set cache time-to-live (TTL) based on the response stat
 
 <summary>
 
-value: optional map\["no-cache"or "no-store"or number]
+value: optional map\["no-cache" or "no-store" or number]
 
 A JSON object containing status codes and their corresponding TTLs. Each key-value pair in the cache TTL by status cache rule has the following syntax
 
@@ -856,7 +856,7 @@ One of the following:
 
 <summary>
 
-"no-cache"or "no-store"
+"no-cache" or "no-store"
 
 <code>no-store</code> (equivalent to -1), <code>no-cache</code> (equivalent to 0)
 
@@ -894,7 +894,7 @@ An integer value that defines the duration an asset is valid in seconds.
 
 <summary>
 
-DisableApps object {id }
+DisableApps object { id }
 
 </summary>
 
@@ -912,7 +912,7 @@ Turn off all active <a href="https://developers.cloudflare.com/support/more-dash
 
 <summary>
 
-DisablePerformance object {id }
+DisablePerformance object { id }
 
 </summary>
 
@@ -930,7 +930,7 @@ Turn off <a href="https://developers.cloudflare.com/speed/optimization/content/r
 
 <summary>
 
-DisableSecurity object {id }
+DisableSecurity object { id }
 
 </summary>
 
@@ -948,7 +948,7 @@ Turn off <a href="https://developers.cloudflare.com/waf/tools/scrape-shield/emai
 
 <summary>
 
-DisableZaraz object {id }
+DisableZaraz object { id }
 
 </summary>
 
@@ -966,7 +966,7 @@ Turn off <a href="https://developers.cloudflare.com/zaraz/">Zaraz</a>.
 
 <summary>
 
-EdgeCacheTTL object {id, value }
+EdgeCacheTTL object { id, value }
 
 </summary>
 
@@ -992,7 +992,7 @@ minimum1
 
 <summary>
 
-EmailObfuscation object {id, value }
+EmailObfuscation object { id, value }
 
 </summary>
 
@@ -1006,7 +1006,7 @@ Turn on or off **Email Obfuscation**.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 The status of Email Obfuscation.
 
@@ -1034,7 +1034,7 @@ One of the following:
 
 <summary>
 
-ExplicitCacheControl object {id, value }
+ExplicitCacheControl object { id, value }
 
 </summary>
 
@@ -1048,7 +1048,7 @@ Origin Cache Control is enabled by default for Free, Pro, and Business domains a
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 The status of Origin Cache Control.
 
@@ -1076,7 +1076,7 @@ One of the following:
 
 <summary>
 
-ForwardingURL object {id, value }
+ForwardingURL object { id, value }
 
 </summary>
 
@@ -1090,7 +1090,7 @@ Redirects one URL to another using an <code>HTTP 301/302</code> redirect. Refer 
 
 <summary>
 
-value: optional object {status\_code, url }
+value: optional object { status\_code, url }
 
 </summary>
 
@@ -1098,7 +1098,7 @@ value: optional object {status\_code, url }
 
 <summary>
 
-status\_code: optional 301or 302
+status\_code: optional 301 or 302
 
 The status code to use for the URL redirect. 301 is a permanent redirect. 302 is a temporary redirect.
 
@@ -1138,7 +1138,7 @@ maxLength1500
 
 <summary>
 
-HostHeaderOverride object {id, value }
+HostHeaderOverride object { id, value }
 
 </summary>
 
@@ -1164,7 +1164,7 @@ minLength1
 
 <summary>
 
-IPGeolocation object {id, value }
+IPGeolocation object { id, value }
 
 </summary>
 
@@ -1178,7 +1178,7 @@ Cloudflare adds a CF-IPCountry HTTP header containing the country code that corr
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 The status of adding the IP Geolocation Header.
 
@@ -1206,7 +1206,7 @@ One of the following:
 
 <summary>
 
-Mirage object {id, value }
+Mirage object { id, value }
 
 </summary>
 
@@ -1220,7 +1220,7 @@ Cloudflare Mirage reduces bandwidth used by images in mobile browsers. It can ac
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 The status of Mirage.
 
@@ -1248,7 +1248,7 @@ One of the following:
 
 <summary>
 
-OpportunisticEncryption object {id, value }
+OpportunisticEncryption object { id, value }
 
 </summary>
 
@@ -1262,7 +1262,7 @@ Opportunistic Encryption allows browsers to access HTTP URIs over an encrypted T
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 The status of Opportunistic Encryption.
 
@@ -1290,7 +1290,7 @@ One of the following:
 
 <summary>
 
-OriginErrorPagePassThru object {id, value }
+OriginErrorPagePassThru object { id, value }
 
 </summary>
 
@@ -1304,7 +1304,7 @@ Turn on or off Cloudflare error pages generated from issues sent from the origin
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 The status of Origin Error Page Passthru.
 
@@ -1332,7 +1332,7 @@ One of the following:
 
 <summary>
 
-Polish object {id, value }
+Polish object { id, value }
 
 </summary>
 
@@ -1346,7 +1346,7 @@ Apply options from the Polish feature of the Cloudflare Speed app.
 
 <summary>
 
-value: optional "off"or "lossless"or "lossy"
+value: optional "off" or "lossless" or "lossy"
 
 The level of Polish you want applied to your origin.
 
@@ -1378,7 +1378,7 @@ One of the following:
 
 <summary>
 
-ResolveOverride object {id, value }
+ResolveOverride object { id, value }
 
 </summary>
 
@@ -1402,7 +1402,7 @@ The origin address you want to override with.
 
 <summary>
 
-RespectStrongEtag object {id, value }
+RespectStrongEtag object { id, value }
 
 </summary>
 
@@ -1416,7 +1416,7 @@ Turn on or off byte-for-byte equivalency checks between the Cloudflare cache and
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 The status of Respect Strong ETags
 
@@ -1444,7 +1444,7 @@ One of the following:
 
 <summary>
 
-ResponseBuffering object {id, value }
+ResponseBuffering object { id, value }
 
 </summary>
 
@@ -1458,7 +1458,7 @@ Turn on or off whether Cloudflare should wait for an entire file from the origin
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 The status of Response Buffering
 
@@ -1486,7 +1486,7 @@ One of the following:
 
 <summary>
 
-RocketLoader object {id, value }
+RocketLoader object { id, value }
 
 </summary>
 
@@ -1500,7 +1500,7 @@ Turn on or off Rocket Loader in the Cloudflare Speed app.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 The status of Rocket Loader
 
@@ -1528,7 +1528,7 @@ One of the following:
 
 <summary>
 
-SecurityLevel object {id, value }
+SecurityLevel object { id, value }
 
 </summary>
 
@@ -1542,7 +1542,7 @@ Control options for the **Security Level** feature from the **Security** app.
 
 <summary>
 
-value: optional "off"or "essentially\_off"or "low"or 3 more
+value: optional "off" or "essentially\_off" or "low" or 3 more
 
 </summary>
 
@@ -1584,7 +1584,7 @@ One of the following:
 
 <summary>
 
-SortQueryStringForCache object {id, value }
+SortQueryStringForCache object { id, value }
 
 </summary>
 
@@ -1598,7 +1598,7 @@ Turn on or off the reordering of query strings. When query strings have the same
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 The status of Query String Sort
 
@@ -1626,7 +1626,7 @@ One of the following:
 
 <summary>
 
-SSL object {id, value }
+SSL object { id, value }
 
 </summary>
 
@@ -1640,7 +1640,7 @@ Control options for the SSL feature of the Edge Certificates tab in the Cloudfla
 
 <summary>
 
-value: optional "off"or "flexible"or "full"or 2 more
+value: optional "off" or "flexible" or "full" or 2 more
 
 The encryption mode that Cloudflare uses to connect to your origin server.
 
@@ -1680,7 +1680,7 @@ One of the following:
 
 <summary>
 
-TrueClientIPHeader object {id, value }
+TrueClientIPHeader object { id, value }
 
 </summary>
 
@@ -1694,7 +1694,7 @@ Turn on or off the True-Client-IP Header feature of the Cloudflare Network app.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 The status of True Client IP Header.
 
@@ -1722,7 +1722,7 @@ One of the following:
 
 <summary>
 
-WAF object {id, value }
+WAF object { id, value }
 
 </summary>
 
@@ -1736,7 +1736,7 @@ Turn on or off <a href="https://developers.cloudflare.com/waf/reference/legacy/o
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 The status of WAF managed rules (previous version).
 
@@ -1790,7 +1790,7 @@ The priority of the rule, used to define which Page Rule is processed over anoth
 
 <summary>
 
-status: "active"or "disabled"
+status: "active" or "disabled"
 
 The status of the Page Rule.
 
@@ -1824,7 +1824,7 @@ The rule targets to evaluate on each request.
 
 <summary>
 
-constraint: optional object {operator, value }
+constraint: optional object { operator, value }
 
 String constraint.
 
@@ -1834,7 +1834,7 @@ String constraint.
 
 <summary>
 
-operator: "matches"or "contains"or "equals"or 2 more
+operator: "matches" or "contains" or "equals" or 2 more
 
 The matches operator can use asterisks and pipes as wildcard and ‘or’ operators.
 

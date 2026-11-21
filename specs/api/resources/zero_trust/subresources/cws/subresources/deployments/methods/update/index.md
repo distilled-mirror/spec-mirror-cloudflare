@@ -88,7 +88,7 @@ Replacement set of basic-auth credential IDs
 
 <summary>
 
-default\_mode: "ALLOW"or "BLOCK"
+default\_mode: "ALLOW" or "BLOCK"
 
 Default traffic mode: ALLOW or BLOCK
 
@@ -144,7 +144,7 @@ formatuuid
 
 <summary>
 
-on\_error\_action: optional "BLOCK"or "SKIP"
+on\_error\_action: optional "BLOCK" or "SKIP"
 
 Action for runtime Rego errors. Omit to reset to BLOCK.
 
@@ -182,7 +182,7 @@ Replacement tag set. Omit or use {} to clear. Keys are limited to 256 UTF-8 byte
 
 <summary>
 
-errors: array of object {code, message, source }
+errors: array of object { code, message, source }
 
 </summary>
 
@@ -200,7 +200,7 @@ message: string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -220,7 +220,7 @@ pointer: string
 
 <summary>
 
-messages: array of object {code, message, source }
+messages: array of object { code, message, source }
 
 </summary>
 
@@ -238,7 +238,7 @@ message: string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -286,7 +286,7 @@ formatdate-time
 
 <summary>
 
-default\_mode: "ALLOW"or "BLOCK"
+default\_mode: "ALLOW" or "BLOCK"
 
 Default traffic decision when no policy set matches
 
@@ -320,7 +320,7 @@ minLength1
 
 <summary>
 
-on\_error\_action: "BLOCK"or "SKIP"
+on\_error\_action: "BLOCK" or "SKIP"
 
 Action applied when an enforcing policy has a runtime Rego error
 

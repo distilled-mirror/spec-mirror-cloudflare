@@ -36,7 +36,7 @@ GET/accounts/{account\_id}/data-security/posture/asset\_schemas/{asset\_class}
 
 <summary>
 
-AssetSchemaListResponse object {asset\_classes, vendor }
+AssetSchemaListResponse object { asset\_classes, vendor }
 
 </summary>
 
@@ -44,7 +44,7 @@ AssetSchemaListResponse object {asset\_classes, vendor }
 
 <summary>
 
-asset\_classes: array of object {asset\_class, origin, id, 2 more }
+asset\_classes: array of object { asset\_class, origin, id, 2 more }
 
 Asset classes belonging to this vendor, sorted by asset\_class.
 
@@ -60,7 +60,7 @@ Asset class identifier (PascalCase), e.g. AnthropicUser.
 
 <summary>
 
-origin: "system"or "cloudflare"or "custom"
+origin: "system" or "cloudflare" or "custom"
 
 Who defines the asset class: <code>system</code> for built-in asset classes, <code>cloudflare</code> for asset types provided by Cloudflare, and <code>custom</code> for the account’s own asset types.
 
@@ -124,7 +124,7 @@ Canonical vendor enum value, e.g. GOOGLE\_WORKSPACE.
 
 <summary>
 
-AssetSchemaGetResponse object {asset\_class, origin, schema, 4 more }
+AssetSchemaGetResponse object { asset\_class, origin, schema, 4 more }
 
 </summary>
 
@@ -138,7 +138,7 @@ Asset class identifier (PascalCase), e.g. AnthropicApiKey.
 
 <summary>
 
-origin: "system"or "cloudflare"or "custom"
+origin: "system" or "cloudflare" or "custom"
 
 Who defines the asset class: <code>system</code> for built-in asset classes, <code>cloudflare</code> for asset types provided by Cloudflare, and <code>custom</code> for the account’s own asset types.
 

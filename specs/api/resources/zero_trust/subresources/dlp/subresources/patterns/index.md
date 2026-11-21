@@ -30,7 +30,7 @@ POST/accounts/{account\_id}/dlp/patterns/validate
 
 <summary>
 
-PatternValidateResponse object {valid }
+PatternValidateResponse object { valid }
 
 </summary>
 

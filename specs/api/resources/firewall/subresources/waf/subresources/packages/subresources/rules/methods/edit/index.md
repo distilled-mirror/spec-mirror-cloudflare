@@ -98,7 +98,7 @@ maxLength32
 
 <summary>
 
-mode: optional "default"or "disable"or "simulate"or 4 more
+mode: optional "default" or "disable" or "simulate" or 4 more
 
 Defines the mode/action of the rule when triggered. You must use a value from the <code>allowed_modes</code> array of the current rule.
 
@@ -166,7 +166,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -208,7 +208,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -228,7 +228,7 @@ pointer: optional string
 
 <summary>
 
-result: object {id, allowed\_modes, description, 4 more } or object {id, allowed\_modes, default\_mode, 5 more } or object {id, allowed\_modes, description, 4 more }
+result: object { id, allowed\_modes, description, 4 more } or object { id, allowed\_modes, default\_mode, 5 more } or object { id, allowed\_modes, description, 4 more }
 
 When triggered, anomaly detection WAF rules contribute to an overall threat score that will determine if a request is considered malicious. You can configure the total scoring threshold through the ‘sensitivity’ property of the WAF package.
 
@@ -240,7 +240,7 @@ One of the following:
 
 <summary>
 
-WAFManagedRulesAnomalyRule object {id, allowed\_modes, description, 4 more }
+WAFManagedRulesAnomalyRule object { id, allowed\_modes, description, 4 more }
 
 When triggered, anomaly detection WAF rules contribute to an overall threat score that will determine if a request is considered malicious. You can configure the total scoring threshold through the ‘sensitivity’ property of the WAF package.
 
@@ -358,7 +358,7 @@ Defines the order in which the individual WAF rule is executed within its rule g
 
 <summary>
 
-WAFManagedRulesTraditionalDenyRule object {id, allowed\_modes, default\_mode, 5 more }
+WAFManagedRulesTraditionalDenyRule object { id, allowed\_modes, default\_mode, 5 more }
 
 When triggered, traditional WAF rules cause the firewall to immediately act upon the request based on the configuration of the rule. A ‘deny’ rule will immediately respond to the request based on the configured rule action/mode (for example, ‘block’) and no other rules will be processed.
 
@@ -376,7 +376,7 @@ maxLength32
 
 <summary>
 
-allowed\_modes: array of "default"or "disable"or "simulate"or 2 more
+allowed\_modes: array of "default" or "disable" or "simulate" or 2 more
 
 Defines the list of possible actions of the WAF rule when it is triggered.
 
@@ -412,7 +412,7 @@ One of the following:
 
 <summary>
 
-default\_mode: "disable"or "simulate"or "block"or "challenge"
+default\_mode: "disable" or "simulate" or "block" or "challenge"
 
 Defines the default action/mode of a rule.
 
@@ -478,7 +478,7 @@ Defines the name of the rule group.
 
 <summary>
 
-mode: "default"or "disable"or "simulate"or 2 more
+mode: "default" or "disable" or "simulate" or 2 more
 
 Defines the action that the current WAF rule will perform when triggered. Applies to traditional (deny) WAF rules.
 
@@ -532,7 +532,7 @@ Defines the order in which the individual WAF rule is executed within its rule g
 
 <summary>
 
-WAFManagedRulesTraditionalAllowRule object {id, allowed\_modes, description, 4 more }
+WAFManagedRulesTraditionalAllowRule object { id, allowed\_modes, description, 4 more }
 
 When triggered, traditional WAF rules cause the firewall to immediately act on the request based on the rule configuration. An ‘allow’ rule will immediately allow the request and no other rules will be processed.
 
@@ -550,7 +550,7 @@ maxLength32
 
 <summary>
 
-allowed\_modes: array of "on"or "off"
+allowed\_modes: array of "on" or "off"
 
 Defines the available modes for the current WAF rule.
 
@@ -608,7 +608,7 @@ Defines the name of the rule group.
 
 <summary>
 
-mode: "on"or "off"
+mode: "on" or "off"
 
 When set to <code>on</code>, the current rule will be used when evaluating the request. Applies to traditional (allow) WAF rules.
 

@@ -32,7 +32,7 @@ PUT/zones/{zone\_id}/origin\_tls\_client\_auth/hostnames
 
 <summary>
 
-AuthenticatedOriginPull object {cert\_id, cert\_status, cert\_updated\_at, 11 more }
+AuthenticatedOriginPull object { cert\_id, cert\_status, cert\_updated\_at, 11 more }
 
 </summary>
 
@@ -48,7 +48,7 @@ maxLength36
 
 <summary>
 
-cert\_status: optional "initializing"or "pending\_deployment"or "pending\_deletion"or 4 more
+cert\_status: optional "initializing" or "pending\_deployment" or "pending\_deletion" or 4 more
 
 Status of the certificate or the association.
 
@@ -162,7 +162,7 @@ The type of hash used for the certificate.
 
 <summary>
 
-status: optional "initializing"or "pending\_deployment"or "pending\_deletion"or 4 more
+status: optional "initializing" or "pending\_deployment" or "pending\_deletion" or 4 more
 
 Status of the certificate or the association.
 

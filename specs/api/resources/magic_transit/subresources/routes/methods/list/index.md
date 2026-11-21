@@ -96,7 +96,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -138,7 +138,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -158,7 +158,7 @@ pointer: optional string
 
 <summary>
 
-result: object {routes }
+result: object { routes }
 
 </summary>
 
@@ -166,7 +166,7 @@ result: object {routes }
 
 <summary>
 
-routes: optional array of object {id, nexthop, prefix, 6 more }
+routes: optional array of object { id, nexthop, prefix, 6 more }
 
 </summary>
 

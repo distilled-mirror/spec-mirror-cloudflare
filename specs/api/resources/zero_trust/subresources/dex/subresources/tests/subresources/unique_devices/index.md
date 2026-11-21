@@ -32,7 +32,7 @@ GET/accounts/{account\_id}/dex/tests/unique-devices
 
 <summary>
 
-UniqueDevices object {uniqueDevicesTotal }
+UniqueDevices object { uniqueDevicesTotal }
 
 </summary>
 

@@ -36,7 +36,7 @@ DELETE/user/subscriptions/{identifier}
 
 <summary>
 
-SubscriptionUpdateResponse = unknownor string
+SubscriptionUpdateResponse = unknown or string
 
 </summary>
 
@@ -58,7 +58,7 @@ string
 
 <summary>
 
-SubscriptionDeleteResponse object {subscription\_id }
+SubscriptionDeleteResponse object { subscription\_id }
 
 </summary>
 

@@ -32,7 +32,7 @@ PATCH/accounts/{account\_id}/zerotrust/connectivity\_settings
 
 <summary>
 
-ConnectivitySettingGetResponse object {icmp\_proxy\_enabled, offramp\_warp\_enabled }
+ConnectivitySettingGetResponse object { icmp\_proxy\_enabled, offramp\_warp\_enabled }
 
 </summary>
 
@@ -56,7 +56,7 @@ A flag to enable WARP to WARP traffic.
 
 <summary>
 
-ConnectivitySettingEditResponse object {icmp\_proxy\_enabled, offramp\_warp\_enabled }
+ConnectivitySettingEditResponse object { icmp\_proxy\_enabled, offramp\_warp\_enabled }
 
 </summary>
 

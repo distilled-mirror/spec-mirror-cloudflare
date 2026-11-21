@@ -34,7 +34,7 @@ GET/accounts/{account\_id}/resource-library/categories/{id}
 
 <summary>
 
-CategoryListResponse object {id, created\_at, description, name }
+CategoryListResponse object { id, created\_at, description, name }
 
 </summary>
 
@@ -76,7 +76,7 @@ Returns the category name.
 
 <summary>
 
-CategoryGetResponse object {id, created\_at, description, name }
+CategoryGetResponse object { id, created\_at, description, name }
 
 </summary>
 

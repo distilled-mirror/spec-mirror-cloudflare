@@ -77,7 +77,7 @@ maxLength32
 
 <summary>
 
-authentication\_settings: optional object {failure\_criteria, success\_criteria }
+authentication\_settings: optional object { failure\_criteria, success\_criteria }
 
 Configuration for classifying login authentication outcomes based on the origin response. Requires <code>user_profiles</code> to be enabled.
 
@@ -91,7 +91,7 @@ Configuration for classifying login authentication outcomes based on the origin 
 
 <summary>
 
-failure\_criteria: optional object {kind, status\_codes }
+failure\_criteria: optional object { kind, status\_codes }
 
 Criterion for identifying failed login responses.
 
@@ -123,7 +123,7 @@ HTTP status codes to match against the origin response.
 
 <summary>
 
-success\_criteria: optional object {kind, status\_codes }
+success\_criteria: optional object { kind, status\_codes }
 
 Criterion for identifying successful login responses.
 
@@ -159,7 +159,7 @@ HTTP status codes to match against the origin response.
 
 <summary>
 
-user\_profiles: optional "enabled"or "disabled"
+user\_profiles: optional "enabled" or "disabled"
 
 Whether Fraud User Profiles is enabled for the zone.
 
@@ -196,7 +196,7 @@ List of expressions to detect usernames in write HTTP requests.
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -218,7 +218,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -238,7 +238,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -260,7 +260,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -294,7 +294,7 @@ result: optional <a href="https://developers.cloudflare.com/api/resources/fraud#
 
 <summary>
 
-authentication\_settings: optional object {failure\_criteria, success\_criteria }
+authentication\_settings: optional object { failure\_criteria, success\_criteria }
 
 Configuration for classifying login authentication outcomes based on the origin response. Requires <code>user_profiles</code> to be enabled.
 
@@ -308,7 +308,7 @@ Configuration for classifying login authentication outcomes based on the origin 
 
 <summary>
 
-failure\_criteria: optional object {kind, status\_codes }
+failure\_criteria: optional object { kind, status\_codes }
 
 Criterion for identifying failed login responses.
 
@@ -340,7 +340,7 @@ HTTP status codes to match against the origin response.
 
 <summary>
 
-success\_criteria: optional object {kind, status\_codes }
+success\_criteria: optional object { kind, status\_codes }
 
 Criterion for identifying successful login responses.
 
@@ -376,7 +376,7 @@ HTTP status codes to match against the origin response.
 
 <summary>
 
-user\_profiles: optional "enabled"or "disabled"
+user\_profiles: optional "enabled" or "disabled"
 
 Whether Fraud User Profiles is enabled for the zone.
 

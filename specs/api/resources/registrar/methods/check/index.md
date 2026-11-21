@@ -110,7 +110,7 @@ List of fully qualified domain names (FQDNs) to check for availability. Each dom
 
 <summary>
 
-errors: array of object {code, message, source }
+errors: array of object { code, message, source }
 
 </summary>
 
@@ -128,7 +128,7 @@ message: string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 Location of the invalid value that caused the error.
 
@@ -152,7 +152,7 @@ JSON Pointer to the invalid or missing request value.
 
 <summary>
 
-messages: array of object {code, message, source }
+messages: array of object { code, message, source }
 
 </summary>
 
@@ -170,7 +170,7 @@ message: string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 Location of the invalid value that caused the error.
 
@@ -194,7 +194,7 @@ JSON Pointer to the invalid or missing request value.
 
 <summary>
 
-result: object {domains }
+result: object { domains }
 
 Contains the availability check results.
 
@@ -204,7 +204,7 @@ Contains the availability check results.
 
 <summary>
 
-domains: array of object {name, registrable, pricing, 2 more }
+domains: array of object { name, registrable, pricing, 2 more }
 
 Array of domain availability results. Results for unsupported extensions contain <code>registrable: false</code> and a <code>reason</code> field. The response may omit malformed domain names.
 
@@ -229,7 +229,7 @@ Indicates programmatic registration eligibility according to a real-time registr
 
 <summary>
 
-pricing: optional object {currency, registration\_cost, renewal\_cost }
+pricing: optional object { currency, registration\_cost, renewal\_cost }
 
 Provides annual pricing information for a given domain. The API returns all per-year prices as strings to preserve decimal precision.
 
@@ -265,7 +265,7 @@ Per-year renewal cost for this domain. Applied to each year beyond the first yea
 
 <summary>
 
-reason: optional "extension\_not\_supported\_via\_api"or "extension\_not\_supported"or "extension\_disallows\_registration"or 2 more
+reason: optional "extension\_not\_supported\_via\_api" or "extension\_not\_supported" or "extension\_disallows\_registration" or 2 more
 
 Appears only when <code>registrable</code> is <code>false</code> and explains the result.
 
@@ -307,7 +307,7 @@ One of the following:
 
 <summary>
 
-tier: optional "standard"or "premium"
+tier: optional "standard" or "premium"
 
 The pricing tier for this domain. A <code>registrable</code> value of <code>true</code> always includes this field, which defaults to <code>standard</code> for most domains. A <code>registrable</code> value of <code>false</code> may omit it.
 

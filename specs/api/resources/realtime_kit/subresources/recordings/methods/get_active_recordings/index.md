@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Realtime Admin``Realtime`
+`Realtime Read``Realtime Admin``Realtime`
 
 ##### P ath ParametersExpand Collapse
 
@@ -84,7 +84,7 @@ meeting\_id: string
 
 <summary>
 
-data: object {id, audio\_download\_url, download\_url, 9 more }
+data: object { id, audio\_download\_url, download\_url, 9 more }
 
 Data returned by the operation
 
@@ -162,7 +162,7 @@ formatdate-time
 
 <summary>
 
-status: "INVOKED"or "RECORDING"or "UPLOADING"or 3 more
+status: "INVOKED" or "RECORDING" or "UPLOADING" or 3 more
 
 Current status of the recording.
 

@@ -56,6 +56,10 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 </details>
 
+##### Accepted Permissions (at least one required)
+
+`AI Search Write``Auto Rag Write`
+
 ##### P ath ParametersExpand Collapse
 
 account\_id: string
@@ -82,7 +86,7 @@ minLength1
 
 <summary>
 
-messages: array of object {content, role }
+messages: array of object { content, role }
 
 </summary>
 
@@ -90,7 +94,7 @@ messages: array of object {content, role }
 
 <summary>
 
-content: stringor array of object {text, type } or object {image\_url, type } or object {file, type } or string
+content: string or array of object { text, type } or object { image\_url, type } or object { file, type } or string
 
 </summary>
 
@@ -104,7 +108,7 @@ string
 
 <summary>
 
-array of object {text, type } or object {image\_url, type } or object {file, type }
+array of object { text, type } or object { image\_url, type } or object { file, type }
 
 </summary>
 
@@ -114,7 +118,7 @@ One of the following:
 
 <summary>
 
-object {text, type }
+object { text, type }
 
 </summary>
 
@@ -136,7 +140,7 @@ type: "text"
 
 <summary>
 
-object {image\_url, type }
+object { image\_url, type }
 
 </summary>
 
@@ -144,7 +148,7 @@ object {image\_url, type }
 
 <summary>
 
-image\_url: object {url }
+image\_url: object { url }
 
 </summary>
 
@@ -172,7 +176,7 @@ type: "image\_url"
 
 <summary>
 
-object {file, type }
+object { file, type }
 
 </summary>
 
@@ -180,7 +184,7 @@ object {file, type }
 
 <summary>
 
-file: object {filename, file\_data, file\_id }
+file: object { filename, file\_data, file\_id }
 
 </summary>
 
@@ -232,7 +236,7 @@ string
 
 <summary>
 
-role: "system"or "developer"or "user"or 2 more
+role: "system" or "developer" or "user" or 2 more
 
 </summary>
 
@@ -270,7 +274,7 @@ One of the following:
 
 <summary>
 
-ai\_search\_options: optional object {cache, custom\_metadata, query\_rewrite, 2 more }
+ai\_search\_options: optional object { cache, custom\_metadata, query\_rewrite, 2 more }
 
 </summary>
 
@@ -278,7 +282,7 @@ ai\_search\_options: optional object {cache, custom\_metadata, query\_rewrite, 2
 
 <summary>
 
-cache: optional object {cache\_threshold, enabled }
+cache: optional object { cache\_threshold, enabled }
 
 </summary>
 
@@ -286,7 +290,7 @@ cache: optional object {cache\_threshold, enabled }
 
 <summary>
 
-cache\_threshold: optional "super\_strict\_match"or "close\_enough"or "flexible\_friend"or "anything\_goes"
+cache\_threshold: optional "super\_strict\_match" or "close\_enough" or "flexible\_friend" or "anything\_goes"
 
 </summary>
 
@@ -324,7 +328,7 @@ enabled: optional boolean
 
 <summary>
 
-custom\_metadata: optional map\[stringor numberor boolean]
+custom\_metadata: optional map\[string or number or boolean]
 
 Metadata added to AI Gateway logs for requests this operation triggers. Accepts up to 2 string, number, or boolean entries. Reserved keys: ‘ai-search’, ‘task’, ‘origin’, and any key beginning with ‘cf.’.
 
@@ -352,7 +356,7 @@ boolean
 
 <summary>
 
-query\_rewrite: optional object {enabled, model, rewrite\_prompt }
+query\_rewrite: optional object { enabled, model, rewrite\_prompt }
 
 </summary>
 
@@ -378,7 +382,7 @@ rewrite\_prompt: optional string
 
 <summary>
 
-reranking: optional object {enabled, match\_threshold, model }
+reranking: optional object { enabled, match\_threshold, model }
 
 </summary>
 
@@ -408,7 +412,7 @@ model: optional string
 
 <summary>
 
-retrieval: optional object {boost\_by, context\_expansion, filters, 6 more }
+retrieval: optional object { boost\_by, context\_expansion, filters, 6 more }
 
 </summary>
 
@@ -416,7 +420,7 @@ retrieval: optional object {boost\_by, context\_expansion, filters, 6 more }
 
 <summary>
 
-boost\_by: optional array of object {field, direction }
+boost\_by: optional array of object { field, direction }
 
 Metadata fields to boost search results by. Overrides the instance-level boost\_by config. Direction defaults to ‘asc’ for numeric/datetime fields, ‘exists’ for text/boolean fields. Fields must match ‘timestamp’ or a defined custom\_metadata field.
 
@@ -436,7 +440,7 @@ minLength1
 
 <summary>
 
-direction: optional "asc"or "desc"or "exists"or "not\_exists"
+direction: optional "asc" or "desc" or "exists" or "not\_exists"
 
 Boost direction. ‘desc’ = higher values rank higher (e.g. newer timestamps). ‘asc’ = lower values rank higher. ‘exists’ = boost chunks that have the field. ‘not\_exists’ = boost chunks that lack the field. Optional — defaults to ‘asc’ for numeric/datetime fields, ‘exists’ for text/boolean fields.
 
@@ -484,7 +488,7 @@ filters: optional map\[unknown]
 
 <summary>
 
-fusion\_method: optional "max"or "rrf"
+fusion\_method: optional "max" or "rrf"
 
 </summary>
 
@@ -506,7 +510,7 @@ One of the following:
 
 <summary>
 
-keyword\_match\_mode: optional "and"or "or"
+keyword\_match\_mode: optional "and" or "or"
 
 Controls which documents become candidates for BM25 scoring. ‘and’ restricts candidates to documents containing all query terms; ‘or’ includes any document containing at least one term and ranks results according to BM25 relevance. When omitted, falls back to the instance-level retrieval\_options.keyword\_match\_mode, then to ‘and’.
 
@@ -550,7 +554,7 @@ minimum1
 
 <summary>
 
-retrieval\_type: optional "vector"or "keyword"or "hybrid"
+retrieval\_type: optional "vector" or "keyword" or "hybrid"
 
 </summary>
 
@@ -600,7 +604,7 @@ stream: optional boolean
 
 <summary>
 
-choices: array of object {message, index }
+choices: array of object { message, index }
 
 </summary>
 
@@ -608,7 +612,7 @@ choices: array of object {message, index }
 
 <summary>
 
-message: object {content, role }
+message: object { content, role }
 
 </summary>
 
@@ -616,7 +620,7 @@ message: object {content, role }
 
 <summary>
 
-content: stringor array of object {text, type } or object {image\_url, type } or object {file, type } or string
+content: string or array of object { text, type } or object { image\_url, type } or object { file, type } or string
 
 </summary>
 
@@ -630,7 +634,7 @@ string
 
 <summary>
 
-array of object {text, type } or object {image\_url, type } or object {file, type }
+array of object { text, type } or object { image\_url, type } or object { file, type }
 
 </summary>
 
@@ -640,7 +644,7 @@ One of the following:
 
 <summary>
 
-object {text, type }
+object { text, type }
 
 </summary>
 
@@ -662,7 +666,7 @@ type: "text"
 
 <summary>
 
-object {image\_url, type }
+object { image\_url, type }
 
 </summary>
 
@@ -670,7 +674,7 @@ object {image\_url, type }
 
 <summary>
 
-image\_url: object {url }
+image\_url: object { url }
 
 </summary>
 
@@ -698,7 +702,7 @@ type: "image\_url"
 
 <summary>
 
-object {file, type }
+object { file, type }
 
 </summary>
 
@@ -706,7 +710,7 @@ object {file, type }
 
 <summary>
 
-file: object {filename, file\_data, file\_id }
+file: object { filename, file\_data, file\_id }
 
 </summary>
 
@@ -758,7 +762,7 @@ string
 
 <summary>
 
-role: "system"or "developer"or "user"or 2 more
+role: "system" or "developer" or "user" or 2 more
 
 </summary>
 
@@ -804,7 +808,7 @@ index: optional number
 
 <summary>
 
-chunks: array of object {id, score, text, 6 more }
+chunks: array of object { id, score, text, 6 more }
 
 </summary>
 
@@ -832,7 +836,7 @@ type: string
 
 <summary>
 
-item: optional object {key, metadata, timestamp }
+item: optional object { key, metadata, timestamp }
 
 </summary>
 
@@ -872,7 +876,7 @@ minimum0
 
 <summary>
 
-scoring\_details: optional object {fusion\_method, keyword\_rank, keyword\_score, 3 more }
+scoring\_details: optional object { fusion\_method, keyword\_rank, keyword\_score, 3 more }
 
 </summary>
 
@@ -880,7 +884,7 @@ scoring\_details: optional object {fusion\_method, keyword\_rank, keyword\_score
 
 <summary>
 
-fusion\_method: optional "rrf"or "max"
+fusion\_method: optional "rrf" or "max"
 
 </summary>
 
@@ -936,7 +940,7 @@ minimum0
 
 <summary>
 
-source\_media\_type: optional "audio"or "video"
+source\_media\_type: optional "audio" or "video"
 
 Audio/video transcript chunks only: type of the source media file. Omitted for all other chunks.
 

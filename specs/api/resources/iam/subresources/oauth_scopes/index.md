@@ -28,7 +28,7 @@ GET/oauth/scopes
 
 <summary>
 
-OAuthScopeListResponse object {id, name, category, scopes }
+OAuthScopeListResponse object { id, name, category, scopes }
 
 An available OAuth scope that can be assigned to an OAuth client.
 

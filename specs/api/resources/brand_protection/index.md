@@ -30,7 +30,7 @@ GET/accounts/{account\_id}/brand-protection/url-info
 
 <summary>
 
-BrandProtectionSubmitResponse object {skipped\_urls, submitted\_urls }
+BrandProtectionSubmitResponse object { skipped\_urls, submitted\_urls }
 
 </summary>
 
@@ -80,7 +80,7 @@ GET/accounts/{account\_id}/brand-protection/matches/download
 
 <summary>
 
-MatchGetResponse object {matches, total }
+MatchGetResponse object { matches, total }
 
 </summary>
 
@@ -100,7 +100,7 @@ total: optional number
 
 <summary>
 
-MatchDownloadResponse object {matches, total }
+MatchDownloadResponse object { matches, total }
 
 </summary>
 
@@ -132,7 +132,7 @@ DELETE/accounts/{account\_id}/brand-protection/logos/{logo\_id}
 
 <summary>
 
-LogoCreateResponse object {id, tag, upload\_path }
+LogoCreateResponse object { id, tag, upload\_path }
 
 </summary>
 
@@ -168,7 +168,7 @@ GET/accounts/{account\_id}/brand-protection/logo-matches/download
 
 <summary>
 
-LogoMatchGetResponse object {matches, total }
+LogoMatchGetResponse object { matches, total }
 
 </summary>
 
@@ -188,7 +188,7 @@ total: optional number
 
 <summary>
 
-LogoMatchDownloadResponse object {matches, total }
+LogoMatchDownloadResponse object { matches, total }
 
 </summary>
 
@@ -218,7 +218,7 @@ GET/accounts/{account\_id}/cloudforce-one/v2/brand-protection/domain/queries
 
 <summary>
 
-QueryGetResponse = array of object {created, parameters, query\_id, 3 more } or object {created, parameters, query\_id, 3 more }
+QueryGetResponse = array of object { created, parameters, query\_id, 3 more } or object { created, parameters, query\_id, 3 more }
 
 </summary>
 
@@ -228,7 +228,7 @@ One of the following:
 
 <summary>
 
-array of object {created, parameters, query\_id, 3 more }
+array of object { created, parameters, query\_id, 3 more }
 
 </summary>
 
@@ -240,7 +240,7 @@ created: string
 
 <summary>
 
-parameters: object {string\_matches, max\_time, min\_time }
+parameters: object { string\_matches, max\_time, min\_time }
 
 </summary>
 
@@ -248,7 +248,7 @@ parameters: object {string\_matches, max\_time, min\_time }
 
 <summary>
 
-string\_matches: array of object {pattern }
+string\_matches: array of object { pattern }
 
 </summary>
 
@@ -300,7 +300,7 @@ updated: string
 
 <summary>
 
-object {created, parameters, query\_id, 3 more }
+object { created, parameters, query\_id, 3 more }
 
 </summary>
 
@@ -312,7 +312,7 @@ created: string
 
 <summary>
 
-parameters: object {string\_matches, max\_time, min\_time }
+parameters: object { string\_matches, max\_time, min\_time }
 
 </summary>
 
@@ -320,7 +320,7 @@ parameters: object {string\_matches, max\_time, min\_time }
 
 <summary>
 
-string\_matches: array of object {pattern }
+string\_matches: array of object { pattern }
 
 </summary>
 
@@ -384,7 +384,7 @@ GET/accounts/{account\_id}/cloudforce-one/v2/brand-protection/domain/matches
 
 <summary>
 
-MatchGetResponse object {matches, total }
+MatchGetResponse object { matches, total }
 
 </summary>
 
@@ -392,7 +392,7 @@ MatchGetResponse object {matches, total }
 
 <summary>
 
-matches: array of object {ai\_verdict, domain, edit\_distance, 11 more }
+matches: array of object { ai\_verdict, domain, edit\_distance, 11 more }
 
 </summary>
 
@@ -400,7 +400,7 @@ matches: array of object {ai\_verdict, domain, edit\_distance, 11 more }
 
 <summary>
 
-ai\_verdict: "confirmed"or "rejected"or "unavailable"or "not\_sent"
+ai\_verdict: "confirmed" or "rejected" or "unavailable" or "not\_sent"
 
 </summary>
 
@@ -450,7 +450,7 @@ match\_category: string
 
 <summary>
 
-public\_scans: object {submission\_id }
+public\_scans: object { submission\_id }
 
 </summary>
 
@@ -466,7 +466,7 @@ submission\_id: string
 
 <summary>
 
-quality: "high"or "low"
+quality: "high" or "low"
 
 </summary>
 
@@ -518,7 +518,7 @@ ID of the matched domain. Present only when <code>include_domain_id=true</code>.
 
 <summary>
 
-match\_details: optional array of object {ai\_verdict, dismissed, edit\_distance, 5 more }
+match\_details: optional array of object { ai\_verdict, dismissed, edit\_distance, 5 more }
 
 Per-match detail objects with query metadata and individual dismissed state. Only present when multiple query\_ids are requested.
 
@@ -528,7 +528,7 @@ Per-match detail objects with query metadata and individual dismissed state. Onl
 
 <summary>
 
-ai\_verdict: "confirmed"or "rejected"or "unavailable"or "not\_sent"
+ai\_verdict: "confirmed" or "rejected" or "unavailable" or "not\_sent"
 
 </summary>
 
@@ -578,7 +578,7 @@ ID of the match. Accepted by the legacy <code>match_ids</code> format.
 
 <summary>
 
-quality: "high"or "low"
+quality: "high" or "low"
 
 </summary>
 
@@ -648,7 +648,7 @@ GET/accounts/{account\_id}/cloudforce-one/v2/brand-protection/logo/queries
 
 <summary>
 
-LogoCreateResponse object {message, success, query\_id }
+LogoCreateResponse object { message, success, query\_id }
 
 </summary>
 
@@ -674,7 +674,7 @@ ID of the created logo query.
 
 <summary>
 
-LogoDeleteResponse object {message, success }
+LogoDeleteResponse object { message, success }
 
 </summary>
 
@@ -694,7 +694,7 @@ success: boolean
 
 <summary>
 
-LogoGetResponse = array of object {id, r2\_path, similarity\_threshold, 4 more }
+LogoGetResponse = array of object { id, r2\_path, similarity\_threshold, 4 more }
 
 </summary>
 
@@ -754,7 +754,7 @@ GET/accounts/{account\_id}/cloudforce-one/v2/brand-protection/logo/matches
 
 <summary>
 
-LogoMatchGetResponse object {matches, total }
+LogoMatchGetResponse object { matches, total }
 
 </summary>
 
@@ -762,7 +762,7 @@ LogoMatchGetResponse object {matches, total }
 
 <summary>
 
-matches: array of object {id, domain, matched\_at, 6 more }
+matches: array of object { id, domain, matched\_at, 6 more }
 
 </summary>
 

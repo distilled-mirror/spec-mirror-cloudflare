@@ -40,7 +40,7 @@ The preferred authorization scheme for interacting with the Cloudflare API. [Cre
 
 ##### Accepted Permissions (at least one required)
 
-`Zero Trust Write`
+`CASB Write``Zero Trust Write`
 
 ##### P ath ParametersExpand Collapse
 

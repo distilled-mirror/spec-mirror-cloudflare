@@ -44,7 +44,7 @@ DELETE/accounts/{account\_id}/k2/streams/{stream\_id}
 
 <summary>
 
-StreamListResponse object {id, created\_at, endpoint, 5 more }
+StreamListResponse object { id, created\_at, endpoint, 5 more }
 
 </summary>
 
@@ -76,7 +76,7 @@ formaturi
 
 <summary>
 
-http: object {enabled, authentication, cors }
+http: object { enabled, authentication, cors }
 
 Configures the HTTP endpoint. Disabling HTTP keeps <code>authentication</code> and <code>cors</code>, so enabling it again restores them.
 
@@ -98,7 +98,7 @@ Indicates whether the HTTP endpoint requires an API token with K2 produce permis
 
 <summary>
 
-cors: optional object {origins }
+cors: optional object { origins }
 
 </summary>
 
@@ -146,7 +146,7 @@ minimum3600
 
 <summary>
 
-worker\_binding: object {enabled }
+worker\_binding: object { enabled }
 
 Configures whether Workers bindings can produce records to the stream.
 
@@ -170,7 +170,7 @@ Indicates whether Workers bindings can produce records to the stream.
 
 <summary>
 
-StreamGetResponse object {id, created\_at, endpoint, 5 more }
+StreamGetResponse object { id, created\_at, endpoint, 5 more }
 
 </summary>
 
@@ -202,7 +202,7 @@ formaturi
 
 <summary>
 
-http: object {enabled, authentication, cors }
+http: object { enabled, authentication, cors }
 
 Configures the HTTP endpoint. Disabling HTTP keeps <code>authentication</code> and <code>cors</code>, so enabling it again restores them.
 
@@ -224,7 +224,7 @@ Indicates whether the HTTP endpoint requires an API token with K2 produce permis
 
 <summary>
 
-cors: optional object {origins }
+cors: optional object { origins }
 
 </summary>
 
@@ -272,7 +272,7 @@ minimum3600
 
 <summary>
 
-worker\_binding: object {enabled }
+worker\_binding: object { enabled }
 
 Configures whether Workers bindings can produce records to the stream.
 
@@ -296,7 +296,7 @@ Indicates whether Workers bindings can produce records to the stream.
 
 <summary>
 
-StreamCreateResponse object {id, created\_at, endpoint, 5 more }
+StreamCreateResponse object { id, created\_at, endpoint, 5 more }
 
 </summary>
 
@@ -328,7 +328,7 @@ formaturi
 
 <summary>
 
-http: object {enabled, authentication, cors }
+http: object { enabled, authentication, cors }
 
 Configures the HTTP endpoint. Disabling HTTP keeps <code>authentication</code> and <code>cors</code>, so enabling it again restores them.
 
@@ -350,7 +350,7 @@ Indicates whether the HTTP endpoint requires an API token with K2 produce permis
 
 <summary>
 
-cors: optional object {origins }
+cors: optional object { origins }
 
 </summary>
 
@@ -398,7 +398,7 @@ minimum3600
 
 <summary>
 
-worker\_binding: object {enabled }
+worker\_binding: object { enabled }
 
 Configures whether Workers bindings can produce records to the stream.
 
@@ -422,7 +422,7 @@ Indicates whether Workers bindings can produce records to the stream.
 
 <summary>
 
-StreamUpdateResponse object {id, created\_at, endpoint, 5 more }
+StreamUpdateResponse object { id, created\_at, endpoint, 5 more }
 
 </summary>
 
@@ -454,7 +454,7 @@ formaturi
 
 <summary>
 
-http: object {enabled, authentication, cors }
+http: object { enabled, authentication, cors }
 
 Configures the HTTP endpoint. Disabling HTTP keeps <code>authentication</code> and <code>cors</code>, so enabling it again restores them.
 
@@ -476,7 +476,7 @@ Indicates whether the HTTP endpoint requires an API token with K2 produce permis
 
 <summary>
 
-cors: optional object {origins }
+cors: optional object { origins }
 
 </summary>
 
@@ -524,7 +524,7 @@ minimum3600
 
 <summary>
 
-worker\_binding: object {enabled }
+worker\_binding: object { enabled }
 
 Configures whether Workers bindings can produce records to the stream.
 
@@ -560,7 +560,7 @@ GET/accounts/{account\_id}/k2/streams/{stream\_id}/subscriptions
 
 <summary>
 
-SubscriptionListResponse object {id, created\_at, lag, 3 more }
+SubscriptionListResponse object { id, created\_at, lag, 3 more }
 
 </summary>
 
@@ -578,7 +578,7 @@ formatdate-time
 
 <summary>
 
-lag: object {records, status }
+lag: object { records, status }
 
 </summary>
 
@@ -592,7 +592,7 @@ Decimal-string distance from the subscription’s committed position to the obse
 
 <summary>
 
-status: "available"or "unsupported"or "unavailable"
+status: "available" or "unsupported" or "unavailable"
 
 Unsupported means the subscription or stream topology cannot be measured; unavailable means a required observation failed or was inconsistent.
 
@@ -634,7 +634,7 @@ name: string
 
 <summary>
 
-start\_at: object {type }
+start\_at: object { type }
 
 </summary>
 
@@ -642,7 +642,7 @@ start\_at: object {type }
 
 <summary>
 
-type: "earliest"or "latest"
+type: "earliest" or "latest"
 
 </summary>
 

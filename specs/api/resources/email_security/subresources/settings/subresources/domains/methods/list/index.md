@@ -76,7 +76,7 @@ maxLength32
 
 <summary>
 
-active\_delivery\_mode: optional "DIRECT"or "BCC"or "JOURNAL"or 2 more
+active\_delivery\_mode: optional "DIRECT" or "BCC" or "JOURNAL" or 2 more
 
 Currently active delivery mode to filter by.
 
@@ -112,7 +112,7 @@ One of the following:
 
 <summary>
 
-allowed\_delivery\_mode: optional "DIRECT"or "BCC"or "JOURNAL"or 2 more
+allowed\_delivery\_mode: optional "DIRECT" or "BCC" or "JOURNAL" or 2 more
 
 Delivery mode to filter by.
 
@@ -148,7 +148,7 @@ One of the following:
 
 <summary>
 
-direction: optional "asc"or "desc"
+direction: optional "asc" or "desc"
 
 The sorting direction.
 
@@ -186,7 +186,7 @@ formatuuid
 
 <summary>
 
-order: optional "domain"or "created\_at"
+order: optional "domain" or "created\_at"
 
 Field to sort by.
 
@@ -234,7 +234,7 @@ Search term for filtering records. Behavior may change.
 
 <summary>
 
-status: optional "PENDING"or "ACTIVE"or "FAILED"or "TIMEOUT"
+status: optional "PENDING" or "ACTIVE" or "FAILED" or "TIMEOUT"
 
 Filters response to domains with the provided status.
 
@@ -268,7 +268,7 @@ One of the following:
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -290,7 +290,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -310,7 +310,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -332,7 +332,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -358,7 +358,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional array of object {id, allowed\_delivery\_modes, authorization, 19 more }
+result: optional array of object { id, allowed\_delivery\_modes, authorization, 19 more }
 
 </summary>
 
@@ -374,7 +374,7 @@ formatuuid
 
 <summary>
 
-allowed\_delivery\_modes: optional array of "DIRECT"or "BCC"or "JOURNAL"or 2 more
+allowed\_delivery\_modes: optional array of "DIRECT" or "BCC" or "JOURNAL" or 2 more
 
 </summary>
 
@@ -408,7 +408,7 @@ One of the following:
 
 <summary>
 
-authorization: optional object {authorized, timestamp, status\_message }
+authorization: optional object { authorized, timestamp, status\_message }
 
 </summary>
 
@@ -440,7 +440,7 @@ formatdate-time
 
 <summary>
 
-dmarc\_status: optional "none"or "good"or "invalid"
+dmarc\_status: optional "none" or "good" or "invalid"
 
 </summary>
 
@@ -470,7 +470,7 @@ domain: optional string
 
 <summary>
 
-drop\_dispositions: optional array of "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+drop\_dispositions: optional array of "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 </summary>
 
@@ -524,7 +524,7 @@ One of the following:
 
 <summary>
 
-emails\_processed: optional object {timestamp, total\_emails\_processed, total\_emails\_processed\_previous }
+emails\_processed: optional object { timestamp, total\_emails\_processed, total\_emails\_processed\_previous }
 
 </summary>
 
@@ -554,7 +554,7 @@ minimum0
 
 <summary>
 
-folder: optional "AllItems"or "Inbox"
+folder: optional "AllItems" or "Inbox"
 
 The mailbox folder to scan, for API-scanning domains.
 
@@ -578,7 +578,7 @@ One of the following:
 
 <summary>
 
-inbox\_provider: optional "Microsoft"or "Google"
+inbox\_provider: optional "Microsoft" or "Google"
 
 </summary>
 
@@ -634,7 +634,7 @@ o365\_tenant\_id: optional string
 
 <summary>
 
-regions: optional array of "GLOBAL"or "AU"or "DE"or 2 more
+regions: optional array of "GLOBAL" or "AU" or "DE" or 2 more
 
 </summary>
 
@@ -676,7 +676,7 @@ require\_tls\_outbound: optional boolean
 
 <summary>
 
-spf\_status: optional "none"or "good"or "neutral"or 2 more
+spf\_status: optional "none" or "good" or "neutral" or 2 more
 
 </summary>
 
@@ -710,7 +710,7 @@ One of the following:
 
 <summary>
 
-status: optional "PENDING"or "ACTIVE"or "FAILED"or "TIMEOUT"
+status: optional "PENDING" or "ACTIVE" or "FAILED" or "TIMEOUT"
 
 </summary>
 
@@ -748,7 +748,7 @@ transport: optional string
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object { count, page, per\_page, total\_count }
 
 </summary>
 

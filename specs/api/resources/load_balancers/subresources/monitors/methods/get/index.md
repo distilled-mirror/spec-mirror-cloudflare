@@ -100,7 +100,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -142,7 +142,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -272,7 +272,7 @@ The timeout (in seconds) before marking the health check as failed.
 
 <summary>
 
-type: optional "http"or "https"or "tcp"or 3 more
+type: optional "http" or "https" or "tcp" or 3 more
 
 The protocol to use for the health check. Currently supported protocols are ‘HTTP’,‘HTTPS’, ‘TCP’, ‘ICMP-PING’, ‘UDP-ICMP’, and ‘SMTP’.
 

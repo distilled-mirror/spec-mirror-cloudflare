@@ -38,7 +38,7 @@ POST/accounts/{account\_id}/workers/scripts/{script\_name}/versions
 
 <summary>
 
-VersionListResponse object {id, metadata, number }
+VersionListResponse object { id, metadata, number }
 
 </summary>
 
@@ -52,7 +52,7 @@ Unique identifier for the version.
 
 <summary>
 
-metadata: optional object {author\_email, author\_id, created\_on, 3 more }
+metadata: optional object { author\_email, author\_id, created\_on, 3 more }
 
 </summary>
 
@@ -90,7 +90,7 @@ When the version was last modified.
 
 <summary>
 
-source: optional "unknown"or "api"or "wrangler"or 8 more
+source: optional "unknown" or "api" or "wrangler" or 8 more
 
 The source of the version upload.
 
@@ -164,7 +164,7 @@ Sequential version number.
 
 <summary>
 
-VersionGetResponse object {resources, id, metadata, number }
+VersionGetResponse object { resources, id, metadata, number }
 
 </summary>
 
@@ -172,7 +172,7 @@ VersionGetResponse object {resources, id, metadata, number }
 
 <summary>
 
-resources: object {bindings, script, script\_runtime }
+resources: object { bindings, script, script\_runtime }
 
 </summary>
 
@@ -186,7 +186,7 @@ List of bindings attached to a Worker. You can find more about bindings on our d
 
 <summary>
 
-script: optional object {etag, handlers, last\_deployed\_from, named\_handlers }
+script: optional object { etag, handlers, last\_deployed\_from, named\_handlers }
 
 </summary>
 
@@ -212,7 +212,7 @@ The client most recently used to deploy this Worker.
 
 <summary>
 
-named\_handlers: optional array of object {handlers, name }
+named\_handlers: optional array of object { handlers, name }
 
 Named exports, such as Durable Object class implementations and named entrypoints.
 
@@ -242,7 +242,7 @@ The name of the exported class or entrypoint.
 
 <summary>
 
-script\_runtime: optional object {compatibility\_date, compatibility\_flags, exports, 3 more }
+script\_runtime: optional object { compatibility\_date, compatibility\_flags, exports, 3 more }
 
 Runtime configuration for the Worker.
 
@@ -264,7 +264,7 @@ Lists the flags this version sets explicitly to enable or disable Workers runtim
 
 <summary>
 
-exports: optional map\[object {type, cache, state } or object {storage, type, container, state } or object {state, type } or 3 more]
+exports: optional map\[object { type, cache, state } or object { storage, type, container, state } or object { state, type } or 3 more]
 
 Declarative exports for this version, including Durable Object classes (with their <code>storage</code> backend) and named Worker entrypoints. Tombstoned lifecycle entries are omitted, so only live exports (<code>created</code> and <code>expecting-transfer</code>) are returned.
 
@@ -276,7 +276,7 @@ One of the following:
 
 <summary>
 
-Worker object {type, cache, state }
+Worker object { type, cache, state }
 
 A named Worker entrypoint export (<code>type: worker</code>). Worker entrypoints are always live (<code>state: created</code>) and carry no storage or lifecycle fields. The optional <code>cache</code> block overrides the Worker’s global <code>cache_options.enabled</code> for this entrypoint.
 
@@ -292,7 +292,7 @@ Marks this entry as a Worker entrypoint export.
 
 <summary>
 
-cache: optional object {enabled }
+cache: optional object { enabled }
 
 Cache override for this entrypoint. Overrides the Worker’s global <code>cache_options.enabled</code> for this entrypoint only.
 
@@ -322,7 +322,7 @@ Live export. May be omitted; defaults to <code>created</code>.
 
 <summary>
 
-WorkersDurableObjectExport object {storage, type, container, state }
+WorkersDurableObjectExport object { storage, type, container, state }
 
 A live Durable Object export (<code>state: created</code>, the default). The platform auto-provisions the namespace on first deploy, matches it on subsequent deploys, and never mutates or deletes it as a side effect of a code-only change. <code>storage</code> is required; <code>renamed_to</code>, <code>transferred_to</code> and <code>transfer_from</code> are not allowed on a live entry.
 
@@ -332,7 +332,7 @@ A live Durable Object export (<code>state: created</code>, the default). The pla
 
 <summary>
 
-storage: "sqlite"or "legacy-kv"
+storage: "sqlite" or "legacy-kv"
 
 Durable Object storage backend. <code>sqlite</code> is the recommended (and only) backend for new namespaces. <code>legacy-kv</code> is accepted only for a class whose namespace already exists as KV-backed; the <code>exports</code> flow never provisions a new <code>legacy-kv</code> namespace.
 
@@ -380,7 +380,7 @@ Live export. May be omitted; defaults to <code>created</code>.
 
 <summary>
 
-WorkersDurableObjectDeletedExport object {state, type }
+WorkersDurableObjectDeletedExport object { state, type }
 
 A <code>deleted</code> tombstone: retires the provisioned namespace for this class and all of its data. The class must be absent from the uploaded code and no other Worker in the account may bind to the namespace, otherwise the deploy is rejected. No other fields are allowed. Deletion is irreversible.
 
@@ -406,7 +406,7 @@ Marks this entry as a Durable Object export.
 
 <summary>
 
-WorkersDurableObjectRenamedExport object {renamed\_to, state, type }
+WorkersDurableObjectRenamedExport object { renamed\_to, state, type }
 
 A <code>renamed</code> tombstone: rewrites the provisioned namespace’s class name from this map key to <code>renamed_to</code>. The source class may stay in code during the rollout window (an info notice is emitted). <code>storage</code>, <code>transferred_to</code> and <code>transfer_from</code> are not allowed.
 
@@ -440,7 +440,7 @@ Marks this entry as a Durable Object export.
 
 <summary>
 
-WorkersDurableObjectTransferredExport object {state, transferred\_to, type }
+WorkersDurableObjectTransferredExport object { state, transferred\_to, type }
 
 A <code>transferred</code> tombstone (source side of a two-phase transfer): hands ownership of the provisioned namespace to another script in the same account, named by <code>transferred_to</code>. The target must have already deployed a matching <code>expecting-transfer</code> entry. The source class may stay in code during the rollout window (an info notice is emitted). <code>storage</code>, <code>renamed_to</code> and <code>transfer_from</code> are not allowed.
 
@@ -474,7 +474,7 @@ Marks this entry as a Durable Object export.
 
 <summary>
 
-WorkersDurableObjectExpectingTransferExport object {state, storage, transfer\_from, 2 more }
+WorkersDurableObjectExpectingTransferExport object { state, storage, transfer\_from, 2 more }
 
 The target side of a two-phase transfer (<code>state: expecting-transfer</code>). Declares that this script expects to receive a namespace for this class from the <code>transfer_from</code> script. This is a live entry, not a tombstone: bindings resolve through the source’s namespace until the source commits with a <code>transferred</code> tombstone. <code>storage</code> and <code>transfer_from</code> are required; <code>renamed_to</code> and <code>transferred_to</code> are not allowed.
 
@@ -490,7 +490,7 @@ Target side of a two-phase transfer.
 
 <summary>
 
-storage: "sqlite"or "legacy-kv"
+storage: "sqlite" or "legacy-kv"
 
 Durable Object storage backend. <code>sqlite</code> is the recommended (and only) backend for new namespaces. <code>legacy-kv</code> is accepted only for a class whose namespace already exists as KV-backed; the <code>exports</code> flow never provisions a new <code>legacy-kv</code> namespace.
 
@@ -544,7 +544,7 @@ maxLength128
 
 <summary>
 
-limits: optional object {cpu\_ms, subrequests }
+limits: optional object { cpu\_ms, subrequests }
 
 Resource limits for the Worker.
 
@@ -576,7 +576,7 @@ The tag of the Durable Object migration that was most recently applied for this 
 
 <summary>
 
-usage\_model: optional "bundled"or "unbound"or "standard"
+usage\_model: optional "bundled" or "unbound" or "standard"
 
 Usage model for the Worker invocations.
 
@@ -618,7 +618,7 @@ Unique identifier for the version.
 
 <summary>
 
-metadata: optional object {author\_email, author\_id, created\_on, 3 more }
+metadata: optional object { author\_email, author\_id, created\_on, 3 more }
 
 </summary>
 
@@ -656,7 +656,7 @@ When the version was last modified.
 
 <summary>
 
-source: optional "unknown"or "api"or "wrangler"or 8 more
+source: optional "unknown" or "api" or "wrangler" or 8 more
 
 The source of the version upload.
 
@@ -730,7 +730,7 @@ Sequential version number.
 
 <summary>
 
-VersionCreateResponse object {resources, id, exports\_reconciliation, 3 more }
+VersionCreateResponse object { resources, id, exports\_reconciliation, 3 more }
 
 </summary>
 
@@ -738,7 +738,7 @@ VersionCreateResponse object {resources, id, exports\_reconciliation, 3 more }
 
 <summary>
 
-resources: object {bindings, script, script\_runtime }
+resources: object { bindings, script, script\_runtime }
 
 </summary>
 
@@ -752,7 +752,7 @@ List of bindings attached to a Worker. You can find more about bindings on our d
 
 <summary>
 
-script: optional object {etag, handlers, last\_deployed\_from, named\_handlers }
+script: optional object { etag, handlers, last\_deployed\_from, named\_handlers }
 
 </summary>
 
@@ -778,7 +778,7 @@ The client most recently used to deploy this Worker.
 
 <summary>
 
-named\_handlers: optional array of object {handlers, name }
+named\_handlers: optional array of object { handlers, name }
 
 Named exports, such as Durable Object class implementations and named entrypoints.
 
@@ -808,7 +808,7 @@ The name of the exported class or entrypoint.
 
 <summary>
 
-script\_runtime: optional object {compatibility\_date, compatibility\_flags, exports, 3 more }
+script\_runtime: optional object { compatibility\_date, compatibility\_flags, exports, 3 more }
 
 Runtime configuration for the Worker.
 
@@ -830,7 +830,7 @@ Lists the flags this version sets explicitly to enable or disable Workers runtim
 
 <summary>
 
-exports: optional map\[object {type, cache, state } or object {storage, type, container, state } or object {state, type } or 3 more]
+exports: optional map\[object { type, cache, state } or object { storage, type, container, state } or object { state, type } or 3 more]
 
 Declarative exports for this version, including Durable Object classes (with their <code>storage</code> backend) and named Worker entrypoints. Tombstoned lifecycle entries are omitted, so only live exports (<code>created</code> and <code>expecting-transfer</code>) are returned.
 
@@ -842,7 +842,7 @@ One of the following:
 
 <summary>
 
-Worker object {type, cache, state }
+Worker object { type, cache, state }
 
 A named Worker entrypoint export (<code>type: worker</code>). Worker entrypoints are always live (<code>state: created</code>) and carry no storage or lifecycle fields. The optional <code>cache</code> block overrides the Worker’s global <code>cache_options.enabled</code> for this entrypoint.
 
@@ -858,7 +858,7 @@ Marks this entry as a Worker entrypoint export.
 
 <summary>
 
-cache: optional object {enabled }
+cache: optional object { enabled }
 
 Cache override for this entrypoint. Overrides the Worker’s global <code>cache_options.enabled</code> for this entrypoint only.
 
@@ -888,7 +888,7 @@ Live export. May be omitted; defaults to <code>created</code>.
 
 <summary>
 
-WorkersDurableObjectExport object {storage, type, container, state }
+WorkersDurableObjectExport object { storage, type, container, state }
 
 A live Durable Object export (<code>state: created</code>, the default). The platform auto-provisions the namespace on first deploy, matches it on subsequent deploys, and never mutates or deletes it as a side effect of a code-only change. <code>storage</code> is required; <code>renamed_to</code>, <code>transferred_to</code> and <code>transfer_from</code> are not allowed on a live entry.
 
@@ -898,7 +898,7 @@ A live Durable Object export (<code>state: created</code>, the default). The pla
 
 <summary>
 
-storage: "sqlite"or "legacy-kv"
+storage: "sqlite" or "legacy-kv"
 
 Durable Object storage backend. <code>sqlite</code> is the recommended (and only) backend for new namespaces. <code>legacy-kv</code> is accepted only for a class whose namespace already exists as KV-backed; the <code>exports</code> flow never provisions a new <code>legacy-kv</code> namespace.
 
@@ -946,7 +946,7 @@ Live export. May be omitted; defaults to <code>created</code>.
 
 <summary>
 
-WorkersDurableObjectDeletedExport object {state, type }
+WorkersDurableObjectDeletedExport object { state, type }
 
 A <code>deleted</code> tombstone: retires the provisioned namespace for this class and all of its data. The class must be absent from the uploaded code and no other Worker in the account may bind to the namespace, otherwise the deploy is rejected. No other fields are allowed. Deletion is irreversible.
 
@@ -972,7 +972,7 @@ Marks this entry as a Durable Object export.
 
 <summary>
 
-WorkersDurableObjectRenamedExport object {renamed\_to, state, type }
+WorkersDurableObjectRenamedExport object { renamed\_to, state, type }
 
 A <code>renamed</code> tombstone: rewrites the provisioned namespace’s class name from this map key to <code>renamed_to</code>. The source class may stay in code during the rollout window (an info notice is emitted). <code>storage</code>, <code>transferred_to</code> and <code>transfer_from</code> are not allowed.
 
@@ -1006,7 +1006,7 @@ Marks this entry as a Durable Object export.
 
 <summary>
 
-WorkersDurableObjectTransferredExport object {state, transferred\_to, type }
+WorkersDurableObjectTransferredExport object { state, transferred\_to, type }
 
 A <code>transferred</code> tombstone (source side of a two-phase transfer): hands ownership of the provisioned namespace to another script in the same account, named by <code>transferred_to</code>. The target must have already deployed a matching <code>expecting-transfer</code> entry. The source class may stay in code during the rollout window (an info notice is emitted). <code>storage</code>, <code>renamed_to</code> and <code>transfer_from</code> are not allowed.
 
@@ -1040,7 +1040,7 @@ Marks this entry as a Durable Object export.
 
 <summary>
 
-WorkersDurableObjectExpectingTransferExport object {state, storage, transfer\_from, 2 more }
+WorkersDurableObjectExpectingTransferExport object { state, storage, transfer\_from, 2 more }
 
 The target side of a two-phase transfer (<code>state: expecting-transfer</code>). Declares that this script expects to receive a namespace for this class from the <code>transfer_from</code> script. This is a live entry, not a tombstone: bindings resolve through the source’s namespace until the source commits with a <code>transferred</code> tombstone. <code>storage</code> and <code>transfer_from</code> are required; <code>renamed_to</code> and <code>transferred_to</code> are not allowed.
 
@@ -1056,7 +1056,7 @@ Target side of a two-phase transfer.
 
 <summary>
 
-storage: "sqlite"or "legacy-kv"
+storage: "sqlite" or "legacy-kv"
 
 Durable Object storage backend. <code>sqlite</code> is the recommended (and only) backend for new namespaces. <code>legacy-kv</code> is accepted only for a class whose namespace already exists as KV-backed; the <code>exports</code> flow never provisions a new <code>legacy-kv</code> namespace.
 
@@ -1110,7 +1110,7 @@ maxLength128
 
 <summary>
 
-limits: optional object {cpu\_ms, subrequests }
+limits: optional object { cpu\_ms, subrequests }
 
 Resource limits for the Worker.
 
@@ -1142,7 +1142,7 @@ The tag of the Durable Object migration that was most recently applied for this 
 
 <summary>
 
-usage\_model: optional "bundled"or "unbound"or "standard"
+usage\_model: optional "bundled" or "unbound" or "standard"
 
 Usage model for the Worker invocations.
 
@@ -1184,7 +1184,7 @@ Unique identifier for the version.
 
 <summary>
 
-exports\_reconciliation: optional object {created, deleted, info, 6 more }
+exports\_reconciliation: optional object { created, deleted, info, 6 more }
 
 Summary of the declarative exports reconciliation that ran on this upload. Populated only when the uploaded metadata included an <code>exports</code> block. Durable Object entries drive reconciliation; <code>type: worker</code> entries do not contribute to this summary.
 
@@ -1206,7 +1206,7 @@ Class names whose namespace was deleted by a <code>deleted</code> tombstone.
 
 <summary>
 
-info: array of object {class, message, scenario, 2 more }
+info: array of object { class, message, scenario, 2 more }
 
 Non-blocking info entries (stale tombstones, tombstone applied with class still in code). See <code>exports_reconciliation_info</code>.
 
@@ -1228,7 +1228,7 @@ Human-readable explanation.
 
 <summary>
 
-scenario: "code\_class\_not\_in\_exports"or "provisioned\_class\_missing\_from\_config"or "config\_export\_not\_in\_code"or 30 more
+scenario: "code\_class\_not\_in\_exports" or "provisioned\_class\_missing\_from\_config" or "config\_export\_not\_in\_code" or 30 more
 
 Stable, machine-readable tag identifying which reconciliation scenario produced an error, warning, or info entry. Clients may branch on this value instead of parsing <code>message</code>.
 
@@ -1400,7 +1400,7 @@ Source class names whose tombstone entry is now stale and safe to delete from <c
 
 <summary>
 
-renamed: array of object {from, to }
+renamed: array of object { from, to }
 
 Applied <code>renamed</code> tombstones.
 
@@ -1426,7 +1426,7 @@ The new class name (<code>renamed_to</code>).
 
 <summary>
 
-transfer\_pending: array of object {class, from }
+transfer\_pending: array of object { class, from }
 
 Phase-1 transfer hints recorded on the target side.
 
@@ -1452,7 +1452,7 @@ The source script the namespace will be transferred from.
 
 <summary>
 
-transferred: array of object {class, phase, to }
+transferred: array of object { class, phase, to }
 
 Committed <code>transferred</code> tombstones (phase-2).
 
@@ -1490,7 +1490,7 @@ Class names whose provisioned namespace was mutated in place.
 
 <summary>
 
-warnings: array of object {class, message, scenario, namespace\_id }
+warnings: array of object { class, message, scenario, namespace\_id }
 
 Non-blocking warnings. See <code>exports_reconciliation_warning</code>.
 
@@ -1512,7 +1512,7 @@ Human-readable explanation of the warning.
 
 <summary>
 
-scenario: "code\_class\_not\_in\_exports"or "provisioned\_class\_missing\_from\_config"or "config\_export\_not\_in\_code"or 30 more
+scenario: "code\_class\_not\_in\_exports" or "provisioned\_class\_missing\_from\_config" or "config\_export\_not\_in\_code" or 30 more
 
 Stable, machine-readable tag identifying which reconciliation scenario produced an error, warning, or info entry. Clients may branch on this value instead of parsing <code>message</code>.
 
@@ -1676,7 +1676,7 @@ formatuuid
 
 <summary>
 
-metadata: optional object {author\_email, author\_id, created\_on, 3 more }
+metadata: optional object { author\_email, author\_id, created\_on, 3 more }
 
 </summary>
 
@@ -1714,7 +1714,7 @@ When the version was last modified.
 
 <summary>
 
-source: optional "unknown"or "api"or "wrangler"or 8 more
+source: optional "unknown" or "api" or "wrangler" or 8 more
 
 The source of the version upload.
 

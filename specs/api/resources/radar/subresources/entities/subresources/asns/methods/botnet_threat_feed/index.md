@@ -86,7 +86,7 @@ formatdate
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -130,7 +130,7 @@ minLength2
 
 <summary>
 
-metric: optional "OFFENSE\_COUNT"or "NUMBER\_OF\_OFFENDING\_IPS"
+metric: optional "OFFENSE\_COUNT" or "NUMBER\_OF\_OFFENDING\_IPS"
 
 Metric to rank ASNs by.
 
@@ -162,7 +162,7 @@ minimum0
 
 <summary>
 
-sortOrder: optional "ASC"or "DESC"
+sortOrder: optional "ASC" or "DESC"
 
 Sort order.
 
@@ -188,7 +188,7 @@ One of the following:
 
 <summary>
 
-result: object {ases, meta }
+result: object { ases, meta }
 
 </summary>
 
@@ -196,7 +196,7 @@ result: object {ases, meta }
 
 <summary>
 
-ases: array of object {asn, country, name, 2 more }
+ases: array of object { asn, country, name, 2 more }
 
 </summary>
 
@@ -228,7 +228,7 @@ rankChange: optional number
 
 <summary>
 
-meta: object {date, total, compareDate }
+meta: object { date, total, compareDate }
 
 </summary>
 

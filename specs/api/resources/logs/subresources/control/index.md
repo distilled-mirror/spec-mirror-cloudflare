@@ -34,7 +34,7 @@ POST/zones/{zone\_id}/logs/control/retention/flag
 
 <summary>
 
-RetentionGetResponse object {flag }
+RetentionGetResponse object { flag }
 
 </summary>
 
@@ -52,7 +52,7 @@ The log retention flag for Logpull API.
 
 <summary>
 
-RetentionCreateResponse object {flag }
+RetentionCreateResponse object { flag }
 
 </summary>
 
@@ -88,7 +88,7 @@ DELETE/accounts/{account\_id}/logs/control/cmb/config
 
 <summary>
 
-CmbConfig object {allow\_out\_of\_region\_access, regions }
+CmbConfig object { allow\_out\_of\_region\_access, regions }
 
 </summary>
 

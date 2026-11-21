@@ -32,7 +32,7 @@ GET/accounts/{account\_id}/cloudforce-one/events/categories/catalog
 
 <summary>
 
-CatalogListResponse = array of object {killChain, name, uuid, 3 more }
+CatalogListResponse = array of object { killChain, name, uuid, 3 more }
 
 </summary>
 

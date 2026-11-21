@@ -40,7 +40,7 @@ The preferred authorization scheme for interacting with the Cloudflare API. [Cre
 
 ##### Accepted Permissions (at least one required)
 
-`Zero Trust Write`
+`CASB Write``Zero Trust Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -66,7 +66,7 @@ Asset class this finding type applies to (PascalCase, e.g. GoogleWorkspaceFile)
 
 <summary>
 
-asset\_vendor: "ANTHROPIC"or "AWS"or "BITBUCKET"or 13 more
+asset\_vendor: "ANTHROPIC" or "AWS" or "BITBUCKET" or 13 more
 
 Canonical vendor enum for the platform whose assets this finding type evaluates.
 
@@ -170,7 +170,7 @@ maxLength256
 
 <summary>
 
-severity: "Critical"or "High"or "Medium"or "Low"
+severity: "Critical" or "High" or "Medium" or "Low"
 
 Default severity used when no integration-specific severity override exists.
 
@@ -210,7 +210,7 @@ Required and non-empty when applies\_to\_all\_integrations is false; omit when i
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -240,7 +240,7 @@ formaturi
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -262,7 +262,7 @@ JSON pointer to the source of the error.
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -292,7 +292,7 @@ formaturi
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -320,7 +320,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {errors, valid }
+result: optional object { errors, valid }
 
 </summary>
 
@@ -328,7 +328,7 @@ result: optional object {errors, valid }
 
 <summary>
 
-errors: array of object {detail, message, code, 3 more }
+errors: array of object { detail, message, code, 3 more }
 
 Every problem found with the candidate, so all of them can be surfaced at once. Empty when <code>valid</code> is true. Problems without a location come first, followed by located problems ordered by <code>line</code>, then <code>column</code>.
 

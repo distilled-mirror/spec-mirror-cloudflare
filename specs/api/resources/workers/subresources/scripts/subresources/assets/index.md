@@ -32,7 +32,7 @@ POST/accounts/{account\_id}/workers/scripts/{script\_name}/assets-upload-session
 
 <summary>
 
-UploadCreateResponse object {buckets, jwt }
+UploadCreateResponse object { buckets, jwt }
 
 </summary>
 

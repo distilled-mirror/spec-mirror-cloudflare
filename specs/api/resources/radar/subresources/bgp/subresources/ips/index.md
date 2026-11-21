@@ -30,7 +30,7 @@ GET/radar/bgp/ips/timeseries
 
 <summary>
 
-IPTimeseriesResponse object {meta, serie\_0 }
+IPTimeseriesResponse object { meta, serie\_0 }
 
 </summary>
 
@@ -38,7 +38,7 @@ IPTimeseriesResponse object {meta, serie\_0 }
 
 <summary>
 
-meta: object {aggInterval, confidenceInfo, dateRange, 4 more }
+meta: object { aggInterval, confidenceInfo, dateRange, 4 more }
 
 Metadata for the results.
 
@@ -48,7 +48,7 @@ Metadata for the results.
 
 <summary>
 
-aggInterval: "FIFTEEN\_MINUTES"or "ONE\_HOUR"or "ONE\_DAY"or 2 more
+aggInterval: "FIFTEEN\_MINUTES" or "ONE\_HOUR" or "ONE\_DAY" or 2 more
 
 Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to <a href="https://developers.cloudflare.com/radar/concepts/aggregation-intervals/">Aggregation intervals</a>.
 
@@ -84,7 +84,7 @@ One of the following:
 
 <summary>
 
-confidenceInfo: object {annotations, level }
+confidenceInfo: object { annotations, level }
 
 </summary>
 
@@ -92,7 +92,7 @@ confidenceInfo: object {annotations, level }
 
 <summary>
 
-annotations: array of object {dataSource, description, endDate, 5 more }
+annotations: array of object { dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -100,7 +100,7 @@ annotations: array of object {dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
+dataSource: "ALL" or "AI\_BOTS" or "AI\_GATEWAY" or 22 more
 
 Data source for annotations.
 
@@ -226,7 +226,7 @@ formatdate-time
 
 <summary>
 
-eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
+eventType: "GENERAL" or "OUTAGE" or "PARTIAL\_PROJECTION" or 2 more
 
 Event type for annotations.
 
@@ -298,7 +298,7 @@ Provides an indication of how much confidence Cloudflare has in the data.
 
 <summary>
 
-dateRange: array of object {endTime, startTime }
+dateRange: array of object { endTime, startTime }
 
 </summary>
 
@@ -334,7 +334,7 @@ formatdate-time
 
 <summary>
 
-normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
+normalization: "PERCENTAGE" or "MIN0\_MAX" or "MIN\_MAX" or 5 more
 
 Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
@@ -382,7 +382,7 @@ One of the following:
 
 <summary>
 
-units: array of object {name, value }
+units: array of object { name, value }
 
 Measurement units for the results.
 
@@ -404,7 +404,7 @@ value: string
 
 <summary>
 
-delay: optional object {asn\_data, country\_data, healthy, nowTs }
+delay: optional object { asn\_data, country\_data, healthy, nowTs }
 
 </summary>
 
@@ -412,7 +412,7 @@ delay: optional object {asn\_data, country\_data, healthy, nowTs }
 
 <summary>
 
-asn\_data: object {delaySecs, delayStr, healthy, latest }
+asn\_data: object { delaySecs, delayStr, healthy, latest }
 
 </summary>
 
@@ -432,7 +432,7 @@ healthy: boolean
 
 <summary>
 
-latest: object {entries\_count, path, timestamp }
+latest: object { entries\_count, path, timestamp }
 
 </summary>
 
@@ -460,7 +460,7 @@ timestamp: number
 
 <summary>
 
-country\_data: object {delaySecs, delayStr, healthy, latest }
+country\_data: object { delaySecs, delayStr, healthy, latest }
 
 </summary>
 
@@ -480,7 +480,7 @@ healthy: boolean
 
 <summary>
 
-latest: object {count, timestamp }
+latest: object { count, timestamp }
 
 </summary>
 
@@ -520,7 +520,7 @@ nowTs: number
 
 <summary>
 
-serie\_0: object {ipv4, ipv6, timestamps }
+serie\_0: object { ipv4, ipv6, timestamps }
 
 </summary>
 
@@ -556,7 +556,7 @@ GET/radar/bgp/ips/top/ases
 
 <summary>
 
-TopAsesResponse object {anchorTs, asns, country, metric }
+TopAsesResponse object { anchorTs, asns, country, metric }
 
 </summary>
 
@@ -570,7 +570,7 @@ formatdate-time
 
 <summary>
 
-asns: array of object {asn, v4\_24s, v6\_48s }
+asns: array of object { asn, v4\_24s, v6\_48s }
 
 </summary>
 

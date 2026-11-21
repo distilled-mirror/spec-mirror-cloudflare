@@ -46,7 +46,7 @@ DELETE/accounts/{account\_id}/teamnet/virtual\_networks/{virtual\_network\_id}
 
 <summary>
 
-VirtualNetwork object {id, comment, created\_at, 3 more }
+VirtualNetwork object { id, comment, created\_at, 3 more }
 
 </summary>
 

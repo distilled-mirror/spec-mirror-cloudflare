@@ -48,7 +48,7 @@ DELETE/accounts/{account\_id}/cloudforce-one/events/tags/categories/{category\_u
 
 <summary>
 
-CategoryListResponse object {categories }
+CategoryListResponse object { categories }
 
 </summary>
 
@@ -56,7 +56,7 @@ CategoryListResponse object {categories }
 
 <summary>
 
-categories: array of object {name, uuid, createdAt, 3 more }
+categories: array of object { name, uuid, createdAt, 3 more }
 
 </summary>
 
@@ -80,7 +80,7 @@ description: optional string
 
 <summary>
 
-schema: optional array of object {key, kind, allowedValues, 11 more }
+schema: optional array of object { key, kind, allowedValues, 11 more }
 
 Parsed FieldDefinition\[] defining custom fields for this category, or null if none.
 
@@ -94,7 +94,7 @@ key: string
 
 <summary>
 
-kind: "string"or "number"or "enum"or 3 more
+kind: "string" or "number" or "enum" or 3 more
 
 </summary>
 
@@ -136,7 +136,7 @@ allowedValues: optional array of string
 
 <summary>
 
-annotations: optional object {confidence, tlp }
+annotations: optional object { confidence, tlp }
 
 </summary>
 
@@ -172,7 +172,7 @@ element: optional unknown
 
 <summary>
 
-enforcement: optional "error"or "warn"or "off"
+enforcement: optional "error" or "warn" or "off"
 
 </summary>
 
@@ -198,7 +198,7 @@ One of the following:
 
 <summary>
 
-format: optional "date"or "url"or "duration"or "country"
+format: optional "date" or "url" or "duration" or "country"
 
 </summary>
 
@@ -244,7 +244,7 @@ minimum0
 
 <summary>
 
-numberConstraint: optional object {integer, max, min }
+numberConstraint: optional object { integer, max, min }
 
 </summary>
 
@@ -294,7 +294,7 @@ updatedAt: optional string
 
 <summary>
 
-CategoryCreateResponse object {name, uuid, createdAt, 3 more }
+CategoryCreateResponse object { name, uuid, createdAt, 3 more }
 
 </summary>
 
@@ -318,7 +318,7 @@ description: optional string
 
 <summary>
 
-schema: optional array of object {key, kind, allowedValues, 11 more }
+schema: optional array of object { key, kind, allowedValues, 11 more }
 
 Parsed FieldDefinition\[] defining custom fields for this category, or null if none.
 
@@ -332,7 +332,7 @@ key: string
 
 <summary>
 
-kind: "string"or "number"or "enum"or 3 more
+kind: "string" or "number" or "enum" or 3 more
 
 </summary>
 
@@ -374,7 +374,7 @@ allowedValues: optional array of string
 
 <summary>
 
-annotations: optional object {confidence, tlp }
+annotations: optional object { confidence, tlp }
 
 </summary>
 
@@ -410,7 +410,7 @@ element: optional unknown
 
 <summary>
 
-enforcement: optional "error"or "warn"or "off"
+enforcement: optional "error" or "warn" or "off"
 
 </summary>
 
@@ -436,7 +436,7 @@ One of the following:
 
 <summary>
 
-format: optional "date"or "url"or "duration"or "country"
+format: optional "date" or "url" or "duration" or "country"
 
 </summary>
 
@@ -482,7 +482,7 @@ minimum0
 
 <summary>
 
-numberConstraint: optional object {integer, max, min }
+numberConstraint: optional object { integer, max, min }
 
 </summary>
 
@@ -528,7 +528,7 @@ updatedAt: optional string
 
 <summary>
 
-CategoryEditResponse object {name, uuid, createdAt, 3 more }
+CategoryEditResponse object { name, uuid, createdAt, 3 more }
 
 </summary>
 
@@ -552,7 +552,7 @@ description: optional string
 
 <summary>
 
-schema: optional array of object {key, kind, allowedValues, 11 more }
+schema: optional array of object { key, kind, allowedValues, 11 more }
 
 Parsed FieldDefinition\[] defining custom fields for this category, or null if none.
 
@@ -566,7 +566,7 @@ key: string
 
 <summary>
 
-kind: "string"or "number"or "enum"or 3 more
+kind: "string" or "number" or "enum" or 3 more
 
 </summary>
 
@@ -608,7 +608,7 @@ allowedValues: optional array of string
 
 <summary>
 
-annotations: optional object {confidence, tlp }
+annotations: optional object { confidence, tlp }
 
 </summary>
 
@@ -644,7 +644,7 @@ element: optional unknown
 
 <summary>
 
-enforcement: optional "error"or "warn"or "off"
+enforcement: optional "error" or "warn" or "off"
 
 </summary>
 
@@ -670,7 +670,7 @@ One of the following:
 
 <summary>
 
-format: optional "date"or "url"or "duration"or "country"
+format: optional "date" or "url" or "duration" or "country"
 
 </summary>
 
@@ -716,7 +716,7 @@ minimum0
 
 <summary>
 
-numberConstraint: optional object {integer, max, min }
+numberConstraint: optional object { integer, max, min }
 
 </summary>
 
@@ -762,7 +762,7 @@ updatedAt: optional string
 
 <summary>
 
-CategoryDeleteResponse object {uuid }
+CategoryDeleteResponse object { uuid }
 
 </summary>
 

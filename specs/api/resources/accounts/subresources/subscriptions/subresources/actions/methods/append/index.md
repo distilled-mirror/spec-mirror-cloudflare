@@ -84,7 +84,7 @@ maxLength32
 
 <summary>
 
-frequency: optional "weekly"or "monthly"or "quarterly"or "yearly"
+frequency: optional "weekly" or "monthly" or "quarterly" or "yearly"
 
 How often the subscription is renewed automatically.
 
@@ -126,7 +126,7 @@ The rate plan applied to the subscription.
 
 <summary>
 
-id: optional "free"or "lite"or "pro"or 7 moreor string
+id: optional "free" or "lite" or "pro" or 7 more or string
 
 The ID of the rate plan.
 
@@ -138,7 +138,7 @@ One of the following:
 
 <summary>
 
-"free"or "lite"or "pro"or 7 more
+"free" or "lite" or "pro" or 7 more
 
 The ID of the rate plan.
 
@@ -266,7 +266,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -308,7 +308,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -366,7 +366,7 @@ formatdate-time
 
 <summary>
 
-frequency: optional "weekly"or "monthly"or "quarterly"or "yearly"
+frequency: optional "weekly" or "monthly" or "quarterly" or "yearly"
 
 How often the subscription is renewed automatically.
 
@@ -414,7 +414,7 @@ The rate plan applied to the subscription.
 
 <summary>
 
-id: optional "free"or "lite"or "pro"or 7 moreor string
+id: optional "free" or "lite" or "pro" or 7 more or string
 
 The ID of the rate plan.
 
@@ -426,7 +426,7 @@ One of the following:
 
 <summary>
 
-"free"or "lite"or "pro"or 7 more
+"free" or "lite" or "pro" or 7 more
 
 The ID of the rate plan.
 
@@ -530,7 +530,7 @@ The list of sets this rate plan applies to. Returns array of strings.
 
 <summary>
 
-state: optional "Trial"or "Provisioned"or "Paid"or 4 more
+state: optional "Trial" or "Provisioned" or "Paid" or 4 more
 
 The state that the subscription is in.
 

@@ -66,7 +66,7 @@ Returns mitigations that were dispatched before the given date
 
 <summary>
 
-entity\_type: optional "url\_pattern"or "account"or "zone"or 2 more
+entity\_type: optional "url\_pattern" or "account" or "zone" or 2 more
 
 Filter by the type of entity the mitigation impacts.
 
@@ -116,7 +116,7 @@ minimum1
 
 <summary>
 
-sort: optional "type,asc"or "type,desc"or "effective\_date,asc"or 5 more
+sort: optional "type,asc" or "type,desc" or "effective\_date,asc" or 5 more
 
 A property to sort by, followed by the order
 
@@ -164,7 +164,7 @@ One of the following:
 
 <summary>
 
-status: optional "pending"or "active"or "in\_review"or 2 more
+status: optional "pending" or "active" or "in\_review" or 2 more
 
 Filter by the status of the mitigation.
 
@@ -212,7 +212,7 @@ success: boolean
 
 <summary>
 
-errors: optional array of object {message }
+errors: optional array of object { message }
 
 </summary>
 
@@ -228,7 +228,7 @@ message: string
 
 <summary>
 
-messages: optional array of object {message }
+messages: optional array of object { message }
 
 </summary>
 
@@ -244,7 +244,7 @@ message: string
 
 <summary>
 
-result: optional object {mitigations }
+result: optional object { mitigations }
 
 </summary>
 
@@ -252,7 +252,7 @@ result: optional object {mitigations }
 
 <summary>
 
-mitigations: array of object {id, effective\_date, entity\_id, 3 more }
+mitigations: array of object { id, effective\_date, entity\_id, 3 more }
 
 </summary>
 
@@ -276,7 +276,7 @@ entity\_id: string
 
 <summary>
 
-entity\_type: "url\_pattern"or "account"or "zone"or 2 more
+entity\_type: "url\_pattern" or "account" or "zone" or 2 more
 
 The type of entity targeted by a mitigation.
 
@@ -312,7 +312,7 @@ One of the following:
 
 <summary>
 
-status: "pending"or "active"or "in\_review"or 2 more
+status: "pending" or "active" or "in\_review" or 2 more
 
 The status of a mitigation
 
@@ -362,7 +362,7 @@ The type of mitigation applied to a reported entity.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

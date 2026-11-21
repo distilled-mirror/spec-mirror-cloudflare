@@ -30,7 +30,7 @@ GET/accounts/{account\_id}/cloudforce-one/v2/threat-signals/categories
 
 <summary>
 
-CategoryListResponse object {categories }
+CategoryListResponse object { categories }
 
 </summary>
 
@@ -38,7 +38,7 @@ CategoryListResponse object {categories }
 
 <summary>
 
-categories: array of object {id, description, name }
+categories: array of object { id, description, name }
 
 </summary>
 

@@ -42,7 +42,7 @@ DELETE/accounts/{account\_id}/access/idp\_federation\_grants/{grant\_id}
 
 <summary>
 
-IdPFederationGrant object {id, idp\_id }
+IdPFederationGrant object { id, idp\_id }
 
 </summary>
 
@@ -98,7 +98,7 @@ formatuuid
 
 <summary>
 
-IdPFederationGrantDeleteResponse object {id }
+IdPFederationGrantDeleteResponse object { id }
 
 </summary>
 

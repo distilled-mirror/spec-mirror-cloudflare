@@ -32,7 +32,7 @@ GET/accounts/{account\_id}/access/authenticator\_device\_aaguids
 
 <summary>
 
-AuthenticatorCatalogListResponse object {aaguid, name }
+AuthenticatorCatalogListResponse object { aaguid, name }
 
 A FIDO2 authenticator device AAGUID entry
 

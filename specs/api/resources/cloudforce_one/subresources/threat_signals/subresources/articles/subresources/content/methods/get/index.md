@@ -60,7 +60,7 @@ formatuuid
 
 <summary>
 
-format: optional "text"or "html"
+format: optional "text" or "html"
 
 Response Content-Type: text (the default) for text/plain or html for text/html. Neither value converts the content. html is deprecated; use text.
 

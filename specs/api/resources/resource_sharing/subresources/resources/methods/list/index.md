@@ -86,7 +86,7 @@ multipleOf1
 
 <summary>
 
-resource\_type: optional "custom-ruleset"or "gateway-policy"or "gateway-destination-ip"or 4 more
+resource\_type: optional "custom-ruleset" or "gateway-policy" or "gateway-destination-ip" or 4 more
 
 Filter share resources by resource\_type.
 
@@ -130,7 +130,7 @@ One of the following:
 
 <summary>
 
-status: optional "active"or "deleting"or "deleted"
+status: optional "active" or "deleting" or "deleted"
 
 Filter share resources by status.
 
@@ -182,7 +182,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -208,7 +208,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional array of object {id, created, meta, 6 more }
+result: optional array of object { id, created, meta, 6 more }
 
 </summary>
 
@@ -264,7 +264,7 @@ Identifier assigned by the service that owns the shared resource.
 
 <summary>
 
-resource\_type: "custom-ruleset"or "gateway-policy"or "gateway-destination-ip"or 4 more
+resource\_type: "custom-ruleset" or "gateway-policy" or "gateway-destination-ip" or 4 more
 
 Resource Type.
 
@@ -314,7 +314,7 @@ Resource Version.
 
 <summary>
 
-status: "active"or "deleting"or "deleted"
+status: "active" or "deleting" or "deleted"
 
 Resource Status.
 
@@ -346,7 +346,7 @@ One of the following:
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

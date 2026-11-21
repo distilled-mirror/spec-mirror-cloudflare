@@ -34,7 +34,7 @@ PATCH/accounts/{account\_id}/dns\_settings
 
 <summary>
 
-AccountGetResponse object {zone\_defaults, enforce\_dns\_only }
+AccountGetResponse object { zone\_defaults, enforce\_dns\_only }
 
 </summary>
 
@@ -42,7 +42,7 @@ AccountGetResponse object {zone\_defaults, enforce\_dns\_only }
 
 <summary>
 
-zone\_defaults: object {flatten\_all\_cnames, internal\_dns, multi\_provider, 5 more }
+zone\_defaults: object { flatten\_all\_cnames, internal\_dns, multi\_provider, 5 more }
 
 Default settings for new zones created in this account.
 
@@ -58,7 +58,7 @@ Whether to flatten all CNAME records in the zone. Note that, due to DNS limitati
 
 <summary>
 
-internal\_dns: object {reference\_zone\_id }
+internal\_dns: object { reference\_zone\_id }
 
 Settings for this internal zone.
 
@@ -84,7 +84,7 @@ Whether to enable multi-provider DNS, which causes Cloudflare to activate the zo
 
 <summary>
 
-nameservers: object {type }
+nameservers: object { type }
 
 Settings determining the nameservers through which the zone should be available.
 
@@ -94,7 +94,7 @@ Settings determining the nameservers through which the zone should be available.
 
 <summary>
 
-type: "cloudflare.standard"or "cloudflare.advanced"or "cloudflare.standard.random"or 2 more
+type: "cloudflare.standard" or "cloudflare.advanced" or "cloudflare.standard.random" or 2 more
 
 Nameserver type
 
@@ -150,7 +150,7 @@ Allows a Secondary DNS zone to use (proxied) override records and CNAME flatteni
 
 <summary>
 
-soa: object {expire, min\_ttl, mname, 4 more }
+soa: object { expire, min\_ttl, mname, 4 more }
 
 Components of the zone’s SOA record.
 
@@ -226,7 +226,7 @@ minimum300
 
 <summary>
 
-zone\_mode: "standard"or "cdn\_only"or "dns\_only"
+zone\_mode: "standard" or "cdn\_only" or "dns\_only"
 
 Whether the zone mode is a regular or CDN/DNS only zone.
 
@@ -268,7 +268,7 @@ When enabled, forces all proxied DNS records in the account to behave as DNS-onl
 
 <summary>
 
-AccountEditResponse object {zone\_defaults, enforce\_dns\_only }
+AccountEditResponse object { zone\_defaults, enforce\_dns\_only }
 
 </summary>
 
@@ -276,7 +276,7 @@ AccountEditResponse object {zone\_defaults, enforce\_dns\_only }
 
 <summary>
 
-zone\_defaults: object {flatten\_all\_cnames, internal\_dns, multi\_provider, 5 more }
+zone\_defaults: object { flatten\_all\_cnames, internal\_dns, multi\_provider, 5 more }
 
 Default settings for new zones created in this account.
 
@@ -292,7 +292,7 @@ Whether to flatten all CNAME records in the zone. Note that, due to DNS limitati
 
 <summary>
 
-internal\_dns: object {reference\_zone\_id }
+internal\_dns: object { reference\_zone\_id }
 
 Settings for this internal zone.
 
@@ -318,7 +318,7 @@ Whether to enable multi-provider DNS, which causes Cloudflare to activate the zo
 
 <summary>
 
-nameservers: object {type }
+nameservers: object { type }
 
 Settings determining the nameservers through which the zone should be available.
 
@@ -328,7 +328,7 @@ Settings determining the nameservers through which the zone should be available.
 
 <summary>
 
-type: "cloudflare.standard"or "cloudflare.advanced"or "cloudflare.standard.random"or 2 more
+type: "cloudflare.standard" or "cloudflare.advanced" or "cloudflare.standard.random" or 2 more
 
 Nameserver type
 
@@ -384,7 +384,7 @@ Allows a Secondary DNS zone to use (proxied) override records and CNAME flatteni
 
 <summary>
 
-soa: object {expire, min\_ttl, mname, 4 more }
+soa: object { expire, min\_ttl, mname, 4 more }
 
 Components of the zone’s SOA record.
 
@@ -460,7 +460,7 @@ minimum300
 
 <summary>
 
-zone\_mode: "standard"or "cdn\_only"or "dns\_only"
+zone\_mode: "standard" or "cdn\_only" or "dns\_only"
 
 Whether the zone mode is a regular or CDN/DNS only zone.
 
@@ -522,7 +522,7 @@ DELETE/accounts/{account\_id}/dns\_settings/nameserver\_sets/{nameserver\_set\_i
 
 <summary>
 
-NameserverSetListResponse = object {id, advanced, created\_on, 3 more } or object {id, advanced, created\_on, 3 more }
+NameserverSetListResponse = object { id, advanced, created\_on, 3 more } or object { id, advanced, created\_on, 3 more }
 
 </summary>
 
@@ -532,7 +532,7 @@ One of the following:
 
 <summary>
 
-DNSSettingsNameserverSetStandardResponse object {id, advanced, created\_on, 3 more }
+DNSSettingsNameserverSetStandardResponse object { id, advanced, created\_on, 3 more }
 
 </summary>
 
@@ -584,7 +584,7 @@ minLength1
 
 <summary>
 
-nameservers: array of object {ipv4, ipv6, name }
+nameservers: array of object { ipv4, ipv6, name }
 
 </summary>
 
@@ -618,7 +618,7 @@ A unique lowercase Punycode nameserver name within the set.
 
 <summary>
 
-DNSSettingsNameserverSetAdvancedResponse object {id, advanced, created\_on, 3 more }
+DNSSettingsNameserverSetAdvancedResponse object { id, advanced, created\_on, 3 more }
 
 </summary>
 
@@ -670,7 +670,7 @@ minLength1
 
 <summary>
 
-nameservers: array of object {ipv4, ipv4\_groups, ipv6, 2 more }
+nameservers: array of object { ipv4, ipv4\_groups, ipv6, 2 more }
 
 </summary>
 
@@ -684,7 +684,7 @@ IPv4 addresses assigned to the nameserver.
 
 <summary>
 
-ipv4\_groups: array of "a"or "b"or "c"
+ipv4\_groups: array of "a" or "b" or "c"
 
 Advanced anycast group for each address in the corresponding address array. Entries have the same order as, and correspond one-to-one with, the addresses.
 
@@ -718,7 +718,7 @@ IPv6 addresses assigned to the nameserver.
 
 <summary>
 
-ipv6\_groups: array of "a"or "b"or "c"
+ipv6\_groups: array of "a" or "b" or "c"
 
 Advanced anycast group for each address in the corresponding address array. Entries have the same order as, and correspond one-to-one with, the addresses.
 
@@ -764,7 +764,7 @@ A unique lowercase Punycode nameserver name within the set.
 
 <summary>
 
-NameserverSetGetResponse = object {id, advanced, created\_on, 3 more } or object {id, advanced, created\_on, 3 more }
+NameserverSetGetResponse = object { id, advanced, created\_on, 3 more } or object { id, advanced, created\_on, 3 more }
 
 </summary>
 
@@ -774,7 +774,7 @@ One of the following:
 
 <summary>
 
-DNSSettingsNameserverSetStandardResponse object {id, advanced, created\_on, 3 more }
+DNSSettingsNameserverSetStandardResponse object { id, advanced, created\_on, 3 more }
 
 </summary>
 
@@ -826,7 +826,7 @@ minLength1
 
 <summary>
 
-nameservers: array of object {ipv4, ipv6, name }
+nameservers: array of object { ipv4, ipv6, name }
 
 </summary>
 
@@ -860,7 +860,7 @@ A unique lowercase Punycode nameserver name within the set.
 
 <summary>
 
-DNSSettingsNameserverSetAdvancedResponse object {id, advanced, created\_on, 3 more }
+DNSSettingsNameserverSetAdvancedResponse object { id, advanced, created\_on, 3 more }
 
 </summary>
 
@@ -912,7 +912,7 @@ minLength1
 
 <summary>
 
-nameservers: array of object {ipv4, ipv4\_groups, ipv6, 2 more }
+nameservers: array of object { ipv4, ipv4\_groups, ipv6, 2 more }
 
 </summary>
 
@@ -926,7 +926,7 @@ IPv4 addresses assigned to the nameserver.
 
 <summary>
 
-ipv4\_groups: array of "a"or "b"or "c"
+ipv4\_groups: array of "a" or "b" or "c"
 
 Advanced anycast group for each address in the corresponding address array. Entries have the same order as, and correspond one-to-one with, the addresses.
 
@@ -960,7 +960,7 @@ IPv6 addresses assigned to the nameserver.
 
 <summary>
 
-ipv6\_groups: array of "a"or "b"or "c"
+ipv6\_groups: array of "a" or "b" or "c"
 
 Advanced anycast group for each address in the corresponding address array. Entries have the same order as, and correspond one-to-one with, the addresses.
 
@@ -1006,7 +1006,7 @@ A unique lowercase Punycode nameserver name within the set.
 
 <summary>
 
-NameserverSetCreateResponse = object {id, advanced, created\_on, 3 more } or object {id, advanced, created\_on, 3 more }
+NameserverSetCreateResponse = object { id, advanced, created\_on, 3 more } or object { id, advanced, created\_on, 3 more }
 
 </summary>
 
@@ -1016,7 +1016,7 @@ One of the following:
 
 <summary>
 
-DNSSettingsNameserverSetStandardResponse object {id, advanced, created\_on, 3 more }
+DNSSettingsNameserverSetStandardResponse object { id, advanced, created\_on, 3 more }
 
 </summary>
 
@@ -1068,7 +1068,7 @@ minLength1
 
 <summary>
 
-nameservers: array of object {ipv4, ipv6, name }
+nameservers: array of object { ipv4, ipv6, name }
 
 </summary>
 
@@ -1102,7 +1102,7 @@ A unique lowercase Punycode nameserver name within the set.
 
 <summary>
 
-DNSSettingsNameserverSetAdvancedResponse object {id, advanced, created\_on, 3 more }
+DNSSettingsNameserverSetAdvancedResponse object { id, advanced, created\_on, 3 more }
 
 </summary>
 
@@ -1154,7 +1154,7 @@ minLength1
 
 <summary>
 
-nameservers: array of object {ipv4, ipv4\_groups, ipv6, 2 more }
+nameservers: array of object { ipv4, ipv4\_groups, ipv6, 2 more }
 
 </summary>
 
@@ -1168,7 +1168,7 @@ IPv4 addresses assigned to the nameserver.
 
 <summary>
 
-ipv4\_groups: array of "a"or "b"or "c"
+ipv4\_groups: array of "a" or "b" or "c"
 
 Advanced anycast group for each address in the corresponding address array. Entries have the same order as, and correspond one-to-one with, the addresses.
 
@@ -1202,7 +1202,7 @@ IPv6 addresses assigned to the nameserver.
 
 <summary>
 
-ipv6\_groups: array of "a"or "b"or "c"
+ipv6\_groups: array of "a" or "b" or "c"
 
 Advanced anycast group for each address in the corresponding address array. Entries have the same order as, and correspond one-to-one with, the addresses.
 
@@ -1248,7 +1248,7 @@ A unique lowercase Punycode nameserver name within the set.
 
 <summary>
 
-NameserverSetDeleteResponse object {id }
+NameserverSetDeleteResponse object { id }
 
 </summary>
 
@@ -1294,7 +1294,7 @@ DELETE/accounts/{account\_id}/dns\_settings/views/{view\_id}
 
 <summary>
 
-ViewListResponse object {id, created\_time, modified\_time, 2 more }
+ViewListResponse object { id, created\_time, modified\_time, 2 more }
 
 </summary>
 
@@ -1346,7 +1346,7 @@ The list of zones linked to this view.
 
 <summary>
 
-ViewGetResponse object {id, created\_time, modified\_time, 2 more }
+ViewGetResponse object { id, created\_time, modified\_time, 2 more }
 
 </summary>
 
@@ -1398,7 +1398,7 @@ The list of zones linked to this view.
 
 <summary>
 
-ViewCreateResponse object {id, created\_time, modified\_time, 2 more }
+ViewCreateResponse object { id, created\_time, modified\_time, 2 more }
 
 </summary>
 
@@ -1450,7 +1450,7 @@ The list of zones linked to this view.
 
 <summary>
 
-ViewEditResponse object {id, created\_time, modified\_time, 2 more }
+ViewEditResponse object { id, created\_time, modified\_time, 2 more }
 
 </summary>
 
@@ -1502,7 +1502,7 @@ The list of zones linked to this view.
 
 <summary>
 
-ViewDeleteResponse object {id }
+ViewDeleteResponse object { id }
 
 </summary>
 

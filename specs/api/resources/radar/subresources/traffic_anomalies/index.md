@@ -28,7 +28,7 @@ GET/radar/traffic\_anomalies
 
 <summary>
 
-TrafficAnomalyGetResponse object {trafficAnomalies }
+TrafficAnomalyGetResponse object { trafficAnomalies }
 
 </summary>
 
@@ -36,7 +36,7 @@ TrafficAnomalyGetResponse object {trafficAnomalies }
 
 <summary>
 
-trafficAnomalies: array of object {asnDetails, endDate, locationDetails, 7 more }
+trafficAnomalies: array of object { asnDetails, endDate, locationDetails, 7 more }
 
 </summary>
 
@@ -44,7 +44,7 @@ trafficAnomalies: array of object {asnDetails, endDate, locationDetails, 7 more 
 
 <summary>
 
-asnDetails: object {asn, location, name }
+asnDetails: object { asn, location, name }
 
 </summary>
 
@@ -56,7 +56,7 @@ asn: string
 
 <summary>
 
-location: object {code, name }
+location: object { code, name }
 
 </summary>
 
@@ -90,7 +90,7 @@ formatdate-time
 
 <summary>
 
-locationDetails: object {code, name }
+locationDetails: object { code, name }
 
 </summary>
 
@@ -110,7 +110,7 @@ name: string
 
 <summary>
 
-originDetails: object {name, origin }
+originDetails: object { name, origin }
 
 </summary>
 
@@ -176,7 +176,7 @@ GET/radar/traffic\_anomalies/locations
 
 <summary>
 
-LocationGetResponse object {trafficAnomalies }
+LocationGetResponse object { trafficAnomalies }
 
 </summary>
 
@@ -184,7 +184,7 @@ LocationGetResponse object {trafficAnomalies }
 
 <summary>
 
-trafficAnomalies: array of object {clientCountryAlpha2, clientCountryName, value }
+trafficAnomalies: array of object { clientCountryAlpha2, clientCountryName, value }
 
 </summary>
 

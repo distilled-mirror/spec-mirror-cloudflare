@@ -74,7 +74,7 @@ Alpha-2 country code.
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -106,7 +106,7 @@ Maximum number of ASes to return.
 
 <summary>
 
-result: object {asns, meta }
+result: object { asns, meta }
 
 </summary>
 
@@ -114,7 +114,7 @@ result: object {asns, meta }
 
 <summary>
 
-asns: array of object {asn, country, name, pfxs\_count }
+asns: array of object { asn, country, name, pfxs\_count }
 
 </summary>
 
@@ -142,7 +142,7 @@ pfxs\_count: number
 
 <summary>
 
-meta: object {data\_time, query\_time, total\_peers }
+meta: object { data\_time, query\_time, total\_peers }
 
 </summary>
 

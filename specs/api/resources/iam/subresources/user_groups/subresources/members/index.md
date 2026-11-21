@@ -46,7 +46,7 @@ DELETE/accounts/{account\_id}/iam/user\_groups/{user\_group\_id}/members/{member
 
 <summary>
 
-MemberListResponse object {id, email, status }
+MemberListResponse object { id, email, status }
 
 Member attached to a User Group.
 
@@ -70,7 +70,7 @@ maxLength90
 
 <summary>
 
-status: optional "accepted"or "pending"
+status: optional "accepted" or "pending"
 
 The member’s status in the account.
 
@@ -98,7 +98,7 @@ One of the following:
 
 <summary>
 
-MemberGetResponse object {id, created\_at, email, 2 more }
+MemberGetResponse object { id, created\_at, email, 2 more }
 
 Detailed member information for a User Group member.
 
@@ -130,7 +130,7 @@ maxLength90
 
 <summary>
 
-status: optional "accepted"or "pending"
+status: optional "accepted" or "pending"
 
 The member’s status in the account.
 
@@ -154,7 +154,7 @@ One of the following:
 
 <summary>
 
-user: optional object {id, email, first\_name, last\_name }
+user: optional object { id, email, first\_name, last\_name }
 
 Details of the user associated with this membership.
 
@@ -198,7 +198,7 @@ User’s last name.
 
 <summary>
 
-MemberCreateResponse object {id, email, status }
+MemberCreateResponse object { id, email, status }
 
 Member attached to a User Group.
 
@@ -222,7 +222,7 @@ maxLength90
 
 <summary>
 
-status: optional "accepted"or "pending"
+status: optional "accepted" or "pending"
 
 The member’s status in the account.
 
@@ -250,7 +250,7 @@ One of the following:
 
 <summary>
 
-MemberUpdateResponse object {id, email, status }
+MemberUpdateResponse object { id, email, status }
 
 Member attached to a User Group.
 
@@ -274,7 +274,7 @@ maxLength90
 
 <summary>
 
-status: optional "accepted"or "pending"
+status: optional "accepted" or "pending"
 
 The member’s status in the account.
 
@@ -302,7 +302,7 @@ One of the following:
 
 <summary>
 
-MemberDeleteResponse object {id, email, status }
+MemberDeleteResponse object { id, email, status }
 
 Member attached to a User Group.
 
@@ -326,7 +326,7 @@ maxLength90
 
 <summary>
 
-status: optional "accepted"or "pending"
+status: optional "accepted" or "pending"
 
 The member’s status in the account.
 

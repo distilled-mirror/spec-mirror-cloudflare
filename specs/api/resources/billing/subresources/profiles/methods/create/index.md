@@ -212,7 +212,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -254,7 +254,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -274,7 +274,7 @@ pointer: optional string
 
 <summary>
 
-result: object {id, account\_type, address, 35 more }
+result: object { id, account\_type, address, 35 more }
 
 </summary>
 

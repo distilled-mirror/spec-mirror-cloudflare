@@ -32,7 +32,7 @@ GET/{accounts\_or\_zones}/{account\_or\_zone\_id}/access/apps/{app\_id}/user\_po
 
 <summary>
 
-UserPolicyCheckListResponse object {app\_state, user\_identity }
+UserPolicyCheckListResponse object { app\_state, user\_identity }
 
 </summary>
 
@@ -40,7 +40,7 @@ UserPolicyCheckListResponse object {app\_state, user\_identity }
 
 <summary>
 
-app\_state: optional object {app\_uid, aud, hostname, 3 more }
+app\_state: optional object { app\_uid, aud, hostname, 3 more }
 
 </summary>
 
@@ -80,7 +80,7 @@ status: optional string
 
 <summary>
 
-user\_identity: optional object {id, account\_id, device\_sessions, 8 more }
+user\_identity: optional object { id, account\_id, device\_sessions, 8 more }
 
 </summary>
 
@@ -104,7 +104,7 @@ email: optional string
 
 <summary>
 
-geo: optional object {country }
+geo: optional object { country }
 
 </summary>
 

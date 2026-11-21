@@ -38,7 +38,7 @@ PATCH/zones/{zone\_id}/api\_gateway/discovery/operations
 
 <summary>
 
-OperationEditResponse object {state }
+OperationEditResponse object { state }
 
 </summary>
 
@@ -46,7 +46,7 @@ OperationEditResponse object {state }
 
 <summary>
 
-state: optional "review"or "saved"or "ignored"
+state: optional "review" or "saved" or "ignored"
 
 State of operation in API Discovery
 
@@ -82,7 +82,7 @@ One of the following:
 
 <summary>
 
-OperationBulkEditResponse = map\[object {state } ]
+OperationBulkEditResponse = map\[object { state } ]
 
 </summary>
 
@@ -90,7 +90,7 @@ OperationBulkEditResponse = map\[object {state } ]
 
 <summary>
 
-state: optional "review"or "ignored"
+state: optional "review" or "ignored"
 
 Mark state of operation in API Discovery
 

@@ -28,7 +28,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/zones/{zone\_id}/web3/hostnames/{identifier}/ipfs\_universal\_path/content\_list/entries
 
-List IPFS Universal Path Gateway Content List Entries
+Lists entries in an IPFS Universal Path Gateway content list.
 
 ##### Security
 
@@ -110,7 +110,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -152,7 +152,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -172,7 +172,7 @@ pointer: optional string
 
 <summary>
 
-result: object {entries }
+result: object { entries }
 
 </summary>
 
@@ -180,7 +180,7 @@ result: object {entries }
 
 <summary>
 
-entries: optional array of object {id, content, created\_on, 3 more }
+entries: optional array of object { id, content, created\_on, 3 more }
 
 Provides content list entries.
 
@@ -226,7 +226,7 @@ formatdate-time
 
 <summary>
 
-type: optional "cid"or "content\_path"
+type: optional "cid" or "content\_path"
 
 Specify the type of content list entry to block.
 
@@ -259,42 +259,6 @@ success: true
 Specifies whether the API call was successful.
 
 [Link to this property](#)%20web3.hostnames.ipfs_universal_paths.content_lists.entries%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
-
-<details>
-
-<summary>
-
-result\_info: optional object {count, page, per\_page, total\_count }
-
-</summary>
-
-count: optional number
-
-Specifies the total number of results for the requested service.
-
-<a href="#">Link to this property</a>
-
-page: optional number
-
-Specifies the current page within paginated list of results.
-
-<a href="#">Link to this property</a>
-
-per\_page: optional number
-
-Specifies the number of results per page of results.
-
-<a href="#">Link to this property</a>
-
-total\_count: optional number
-
-Specifies the total results available without any search parameters.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-[Link to this property](#)%20web3.hostnames.ipfs_universal_paths.content_lists.entries%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20result_info>)
 
 ### List IPFS Universal Path Gateway Content List Entries
 
@@ -343,13 +307,7 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/web3/hostnames/$IDENTIF
       }
     ]
   },
-  "success": true,
-  "result_info": {
-    "count": 1,
-    "page": 1,
-    "per_page": 20,
-    "total_count": 2000
-  }
+  "success": true
 }
 ```
 
@@ -391,12 +349,6 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/web3/hostnames/$IDENTIF
       }
     ]
   },
-  "success": true,
-  "result_info": {
-    "count": 1,
-    "page": 1,
-    "per_page": 20,
-    "total_count": 2000
-  }
+  "success": true
 }
 ```

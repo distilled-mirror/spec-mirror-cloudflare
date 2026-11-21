@@ -48,7 +48,7 @@ GET/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/logs/{id}/response
 
 <summary>
 
-LogListResponse object {id, cached, created\_at, 17 more }
+LogListResponse object { id, cached, created\_at, 17 more }
 
 </summary>
 
@@ -144,7 +144,7 @@ step: optional number
 
 <summary>
 
-LogGetResponse object {id, cached, created\_at, 23 more }
+LogGetResponse object { id, cached, created\_at, 23 more }
 
 </summary>
 
@@ -268,7 +268,7 @@ LogEditResponse = unknown
 
 <summary>
 
-LogDeleteResponse object {success }
+LogDeleteResponse object { success }
 
 </summary>
 

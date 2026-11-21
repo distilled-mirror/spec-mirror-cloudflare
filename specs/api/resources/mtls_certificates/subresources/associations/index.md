@@ -28,7 +28,7 @@ GET/accounts/{account\_id}/mtls\_certificates/{mtls\_certificate\_id}/associatio
 
 <summary>
 
-CertificateAsssociation object {service, status }
+CertificateAsssociation object { service, status }
 
 </summary>
 

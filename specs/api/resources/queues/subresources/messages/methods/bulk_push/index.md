@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Queues Write``Workers Scripts Write`
+`Workers Editor``Workers Admin``Queues Write``Workers Scripts Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -88,7 +88,7 @@ The number of seconds to wait for attempting to deliver this batch to consumers
 
 <summary>
 
-messages: optional array of object {body, content\_type, delay\_seconds } or object {body, content\_type, delay\_seconds }
+messages: optional array of object { body, content\_type, delay\_seconds } or object { body, content\_type, delay\_seconds }
 
 </summary>
 
@@ -98,7 +98,7 @@ One of the following:
 
 <summary>
 
-MqQueueMessageText object {body, content\_type, delay\_seconds }
+MqQueueMessageText object { body, content\_type, delay\_seconds }
 
 </summary>
 
@@ -124,7 +124,7 @@ The number of seconds to wait for attempting to deliver this message to consumer
 
 <summary>
 
-MqQueueMessageJson object {body, content\_type, delay\_seconds }
+MqQueueMessageJson object { body, content\_type, delay\_seconds }
 
 </summary>
 
@@ -180,7 +180,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -204,7 +204,7 @@ messages: optional array of string
 
 <summary>
 
-result: optional object {metadata }
+result: optional object { metadata }
 
 </summary>
 
@@ -212,7 +212,7 @@ result: optional object {metadata }
 
 <summary>
 
-metadata: optional object {metrics }
+metadata: optional object { metrics }
 
 </summary>
 
@@ -220,7 +220,7 @@ metadata: optional object {metrics }
 
 <summary>
 
-metrics: optional object {backlog\_bytes, backlog\_count, oldest\_message\_timestamp\_ms }
+metrics: optional object { backlog\_bytes, backlog\_count, oldest\_message\_timestamp\_ms }
 
 Best-effort metrics for the queue. Values may be approximate due to the distributed nature of queues.
 

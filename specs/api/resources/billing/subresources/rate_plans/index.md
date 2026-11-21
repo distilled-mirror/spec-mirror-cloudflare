@@ -28,7 +28,7 @@ GET/billing/rate\_plans/{public\_key}
 
 <summary>
 
-RatePlanGetResponse object {id, components, currency, public\_name }
+RatePlanGetResponse object { id, components, currency, public\_name }
 
 </summary>
 

@@ -44,7 +44,7 @@ DELETE/{accounts\_or\_zones}/{account\_or\_zone\_id}/firewall/access\_rules/rule
 
 <summary>
 
-AccessRuleCIDRConfiguration object {target, value }
+AccessRuleCIDRConfiguration object { target, value }
 
 </summary>
 
@@ -68,7 +68,7 @@ The IP address range to match. You can only use prefix lengths <code>/16</code> 
 
 <summary>
 
-AccessRuleIPConfiguration object {target, value }
+AccessRuleIPConfiguration object { target, value }
 
 </summary>
 
@@ -92,7 +92,7 @@ The IP address to match. This address will be compared to the IP address of inco
 
 <summary>
 
-ASNConfiguration object {target, value }
+ASNConfiguration object { target, value }
 
 </summary>
 
@@ -116,7 +116,7 @@ The AS number to match.
 
 <summary>
 
-CountryConfiguration object {target, value }
+CountryConfiguration object { target, value }
 
 </summary>
 
@@ -140,7 +140,7 @@ The two-letter ISO-3166-1 alpha-2 code to match. For more information, refer to 
 
 <summary>
 
-IPV6Configuration object {target, value }
+IPV6Configuration object { target, value }
 
 </summary>
 
@@ -164,7 +164,7 @@ The IPv6 address to match.
 
 <summary>
 
-AccessRuleListResponse object {id, allowed\_modes, configuration, 5 more }
+AccessRuleListResponse object { id, allowed\_modes, configuration, 5 more }
 
 </summary>
 
@@ -180,7 +180,7 @@ maxLength32
 
 <summary>
 
-allowed\_modes: array of "block"or "challenge"or "whitelist"or 2 more
+allowed\_modes: array of "block" or "challenge" or "whitelist" or 2 more
 
 The available actions that a rule can apply to a matched request.
 
@@ -228,7 +228,7 @@ One of the following:
 
 <summary>
 
-AccessRuleIPConfiguration object {target, value }
+AccessRuleIPConfiguration object { target, value }
 
 </summary>
 
@@ -252,7 +252,7 @@ The IP address to match. This address will be compared to the IP address of inco
 
 <summary>
 
-IPV6Configuration object {target, value }
+IPV6Configuration object { target, value }
 
 </summary>
 
@@ -276,7 +276,7 @@ The IPv6 address to match.
 
 <summary>
 
-AccessRuleCIDRConfiguration object {target, value }
+AccessRuleCIDRConfiguration object { target, value }
 
 </summary>
 
@@ -300,7 +300,7 @@ The IP address range to match. You can only use prefix lengths <code>/16</code> 
 
 <summary>
 
-ASNConfiguration object {target, value }
+ASNConfiguration object { target, value }
 
 </summary>
 
@@ -324,7 +324,7 @@ The AS number to match.
 
 <summary>
 
-CountryConfiguration object {target, value }
+CountryConfiguration object { target, value }
 
 </summary>
 
@@ -352,7 +352,7 @@ The two-letter ISO-3166-1 alpha-2 code to match. For more information, refer to 
 
 <summary>
 
-mode: "block"or "challenge"or "whitelist"or 2 more
+mode: "block" or "challenge" or "whitelist" or 2 more
 
 The action to apply to a matched request.
 
@@ -410,7 +410,7 @@ An informative summary of the rule, typically used as a reminder or explanation.
 
 <summary>
 
-scope: optional object {id, email, type }
+scope: optional object { id, email, type }
 
 All zones owned by the user will have the rule applied.
 
@@ -436,7 +436,7 @@ maxLength90
 
 <summary>
 
-type: optional "user"or "organization"
+type: optional "user" or "organization"
 
 Defines the scope of the rule.
 
@@ -468,7 +468,7 @@ One of the following:
 
 <summary>
 
-AccessRuleGetResponse object {id, allowed\_modes, configuration, 5 more }
+AccessRuleGetResponse object { id, allowed\_modes, configuration, 5 more }
 
 </summary>
 
@@ -484,7 +484,7 @@ maxLength32
 
 <summary>
 
-allowed\_modes: array of "block"or "challenge"or "whitelist"or 2 more
+allowed\_modes: array of "block" or "challenge" or "whitelist" or 2 more
 
 The available actions that a rule can apply to a matched request.
 
@@ -532,7 +532,7 @@ One of the following:
 
 <summary>
 
-AccessRuleIPConfiguration object {target, value }
+AccessRuleIPConfiguration object { target, value }
 
 </summary>
 
@@ -556,7 +556,7 @@ The IP address to match. This address will be compared to the IP address of inco
 
 <summary>
 
-IPV6Configuration object {target, value }
+IPV6Configuration object { target, value }
 
 </summary>
 
@@ -580,7 +580,7 @@ The IPv6 address to match.
 
 <summary>
 
-AccessRuleCIDRConfiguration object {target, value }
+AccessRuleCIDRConfiguration object { target, value }
 
 </summary>
 
@@ -604,7 +604,7 @@ The IP address range to match. You can only use prefix lengths <code>/16</code> 
 
 <summary>
 
-ASNConfiguration object {target, value }
+ASNConfiguration object { target, value }
 
 </summary>
 
@@ -628,7 +628,7 @@ The AS number to match.
 
 <summary>
 
-CountryConfiguration object {target, value }
+CountryConfiguration object { target, value }
 
 </summary>
 
@@ -656,7 +656,7 @@ The two-letter ISO-3166-1 alpha-2 code to match. For more information, refer to 
 
 <summary>
 
-mode: "block"or "challenge"or "whitelist"or 2 more
+mode: "block" or "challenge" or "whitelist" or 2 more
 
 The action to apply to a matched request.
 
@@ -714,7 +714,7 @@ An informative summary of the rule, typically used as a reminder or explanation.
 
 <summary>
 
-scope: optional object {id, email, type }
+scope: optional object { id, email, type }
 
 All zones owned by the user will have the rule applied.
 
@@ -740,7 +740,7 @@ maxLength90
 
 <summary>
 
-type: optional "user"or "organization"
+type: optional "user" or "organization"
 
 Defines the scope of the rule.
 
@@ -772,7 +772,7 @@ One of the following:
 
 <summary>
 
-AccessRuleCreateResponse object {id, allowed\_modes, configuration, 5 more }
+AccessRuleCreateResponse object { id, allowed\_modes, configuration, 5 more }
 
 </summary>
 
@@ -788,7 +788,7 @@ maxLength32
 
 <summary>
 
-allowed\_modes: array of "block"or "challenge"or "whitelist"or 2 more
+allowed\_modes: array of "block" or "challenge" or "whitelist" or 2 more
 
 The available actions that a rule can apply to a matched request.
 
@@ -836,7 +836,7 @@ One of the following:
 
 <summary>
 
-AccessRuleIPConfiguration object {target, value }
+AccessRuleIPConfiguration object { target, value }
 
 </summary>
 
@@ -860,7 +860,7 @@ The IP address to match. This address will be compared to the IP address of inco
 
 <summary>
 
-IPV6Configuration object {target, value }
+IPV6Configuration object { target, value }
 
 </summary>
 
@@ -884,7 +884,7 @@ The IPv6 address to match.
 
 <summary>
 
-AccessRuleCIDRConfiguration object {target, value }
+AccessRuleCIDRConfiguration object { target, value }
 
 </summary>
 
@@ -908,7 +908,7 @@ The IP address range to match. You can only use prefix lengths <code>/16</code> 
 
 <summary>
 
-ASNConfiguration object {target, value }
+ASNConfiguration object { target, value }
 
 </summary>
 
@@ -932,7 +932,7 @@ The AS number to match.
 
 <summary>
 
-CountryConfiguration object {target, value }
+CountryConfiguration object { target, value }
 
 </summary>
 
@@ -960,7 +960,7 @@ The two-letter ISO-3166-1 alpha-2 code to match. For more information, refer to 
 
 <summary>
 
-mode: "block"or "challenge"or "whitelist"or 2 more
+mode: "block" or "challenge" or "whitelist" or 2 more
 
 The action to apply to a matched request.
 
@@ -1018,7 +1018,7 @@ An informative summary of the rule, typically used as a reminder or explanation.
 
 <summary>
 
-scope: optional object {id, email, type }
+scope: optional object { id, email, type }
 
 All zones owned by the user will have the rule applied.
 
@@ -1044,7 +1044,7 @@ maxLength90
 
 <summary>
 
-type: optional "user"or "organization"
+type: optional "user" or "organization"
 
 Defines the scope of the rule.
 
@@ -1076,7 +1076,7 @@ One of the following:
 
 <summary>
 
-AccessRuleEditResponse object {id, allowed\_modes, configuration, 5 more }
+AccessRuleEditResponse object { id, allowed\_modes, configuration, 5 more }
 
 </summary>
 
@@ -1092,7 +1092,7 @@ maxLength32
 
 <summary>
 
-allowed\_modes: array of "block"or "challenge"or "whitelist"or 2 more
+allowed\_modes: array of "block" or "challenge" or "whitelist" or 2 more
 
 The available actions that a rule can apply to a matched request.
 
@@ -1140,7 +1140,7 @@ One of the following:
 
 <summary>
 
-AccessRuleIPConfiguration object {target, value }
+AccessRuleIPConfiguration object { target, value }
 
 </summary>
 
@@ -1164,7 +1164,7 @@ The IP address to match. This address will be compared to the IP address of inco
 
 <summary>
 
-IPV6Configuration object {target, value }
+IPV6Configuration object { target, value }
 
 </summary>
 
@@ -1188,7 +1188,7 @@ The IPv6 address to match.
 
 <summary>
 
-AccessRuleCIDRConfiguration object {target, value }
+AccessRuleCIDRConfiguration object { target, value }
 
 </summary>
 
@@ -1212,7 +1212,7 @@ The IP address range to match. You can only use prefix lengths <code>/16</code> 
 
 <summary>
 
-ASNConfiguration object {target, value }
+ASNConfiguration object { target, value }
 
 </summary>
 
@@ -1236,7 +1236,7 @@ The AS number to match.
 
 <summary>
 
-CountryConfiguration object {target, value }
+CountryConfiguration object { target, value }
 
 </summary>
 
@@ -1264,7 +1264,7 @@ The two-letter ISO-3166-1 alpha-2 code to match. For more information, refer to 
 
 <summary>
 
-mode: "block"or "challenge"or "whitelist"or 2 more
+mode: "block" or "challenge" or "whitelist" or 2 more
 
 The action to apply to a matched request.
 
@@ -1322,7 +1322,7 @@ An informative summary of the rule, typically used as a reminder or explanation.
 
 <summary>
 
-scope: optional object {id, email, type }
+scope: optional object { id, email, type }
 
 All zones owned by the user will have the rule applied.
 
@@ -1348,7 +1348,7 @@ maxLength90
 
 <summary>
 
-type: optional "user"or "organization"
+type: optional "user" or "organization"
 
 Defines the scope of the rule.
 
@@ -1380,7 +1380,7 @@ One of the following:
 
 <summary>
 
-AccessRuleDeleteResponse object {id }
+AccessRuleDeleteResponse object { id }
 
 </summary>
 

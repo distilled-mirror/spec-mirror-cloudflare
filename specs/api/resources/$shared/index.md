@@ -26,7 +26,7 @@ ASN = number
 
 <summary>
 
-AuditLog object {id, action, actor, 7 more }
+AuditLog object { id, action, actor, 7 more }
 
 </summary>
 
@@ -40,7 +40,7 @@ A string that uniquely identifies the audit log.
 
 <summary>
 
-action: optional object {result, type }
+action: optional object { result, type }
 
 </summary>
 
@@ -64,7 +64,7 @@ A short string that describes the action that was performed.
 
 <summary>
 
-actor: optional object {id, email, ip, type }
+actor: optional object { id, email, ip, type }
 
 </summary>
 
@@ -92,7 +92,7 @@ The IP address of the request that performed the action.
 
 <summary>
 
-type: optional "user"or "admin"or "Cloudflare"
+type: optional "user" or "admin" or "Cloudflare"
 
 The type of actor, whether a User, Cloudflare Admin, or an Automated System.
 
@@ -148,7 +148,7 @@ The value of the resource before it was modified.
 
 <summary>
 
-owner: optional object {id }
+owner: optional object { id }
 
 </summary>
 
@@ -168,7 +168,7 @@ maxLength32
 
 <summary>
 
-resource: optional object {id, type }
+resource: optional object { id, type }
 
 </summary>
 
@@ -204,7 +204,7 @@ formatdate-time
 
 <summary>
 
-CertificateCA = "digicert"or "google"or "lets\_encrypt"or "ssl\_com"
+CertificateCA = "digicert" or "google" or "lets\_encrypt" or "ssl\_com"
 
 The Certificate Authority that will issue the certificate.
 
@@ -236,7 +236,7 @@ One of the following:
 
 <summary>
 
-CertificateRequestType = "origin-rsa"or "origin-ecc"or "keyless-certificate"
+CertificateRequestType = "origin-rsa" or "origin-ecc" or "keyless-certificate"
 
 Signature type desired on certificate (“origin-rsa” (rsa), “origin-ecc” (ecdsa), or “keyless-certificate” (for Keyless SSL servers).
 
@@ -264,7 +264,7 @@ One of the following:
 
 <summary>
 
-CloudflareTunnel object {id, account\_tag, config\_src, 10 more }
+CloudflareTunnel object { id, account\_tag, config\_src, 10 more }
 
 A Cloudflare Tunnel that connects your origin to Cloudflare’s edge.
 
@@ -292,7 +292,7 @@ maxLength32
 
 <summary>
 
-config\_src: optional "local"or "cloudflare"
+config\_src: optional "local" or "cloudflare"
 
 Indicates if this is a locally or remotely configured tunnel. If <code>local</code>, manage the tunnel using a YAML file on the origin machine. If <code>cloudflare</code>, manage the tunnel on the Zero Trust dashboard.
 
@@ -316,7 +316,7 @@ One of the following:
 
 <summary>
 
-Deprecatedconnections: optional array of object {id, client\_id, client\_version, 5 more }
+Deprecatedconnections: optional array of object { id, client\_id, client\_version, 5 more }
 
 This field will start returning an empty array. To fetch the connections of a given tunnel, please use the dedicated endpoint <code>/accounts/{account_id}/{tunnel_type}/{tunnel_id}/connections</code>
 
@@ -448,7 +448,7 @@ If <code>true</code>, the tunnel can be configured remotely from the Zero Trust 
 
 <summary>
 
-status: optional "inactive"or "degraded"or "healthy"or "down"
+status: optional "inactive" or "degraded" or "healthy" or "down"
 
 The status of the tunnel. Valid values are <code>inactive</code> (tunnel has never been run), <code>degraded</code> (tunnel is active and able to serve traffic but in an unhealthy state), <code>healthy</code> (tunnel is active and able to serve traffic), or <code>down</code> (tunnel can not serve traffic as it has no connections to the Cloudflare Edge).
 
@@ -480,7 +480,7 @@ One of the following:
 
 <summary>
 
-tun\_type: optional "cfd\_tunnel"or "warp\_connector"or "warp"or 4 more
+tun\_type: optional "cfd\_tunnel" or "warp\_connector" or "warp" or 4 more
 
 The type of tunnel.
 
@@ -528,7 +528,7 @@ One of the following:
 
 <summary>
 
-ErrorData object {code, documentation\_url, message, source }
+ErrorData object { code, documentation\_url, message, source }
 
 </summary>
 
@@ -548,7 +548,7 @@ message: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -568,7 +568,7 @@ pointer: optional string
 
 <summary>
 
-Identifier object {id }
+Identifier object { id }
 
 </summary>
 
@@ -586,7 +586,7 @@ The unique identifier for a certificate\_pack.
 
 <summary>
 
-Member object {id, email, policies, 3 more }
+Member object { id, email, policies, 3 more }
 
 </summary>
 
@@ -610,7 +610,7 @@ maxLength90
 
 <summary>
 
-policies: optional array of object {id, access, permission\_groups, resource\_groups }
+policies: optional array of object { id, access, permission\_groups, resource\_groups }
 
 Access policy for the membership
 
@@ -626,7 +626,7 @@ Policy identifier.
 
 <summary>
 
-access: optional "allow"or "deny"
+access: optional "allow" or "deny"
 
 Allow or deny operations against the resources.
 
@@ -650,7 +650,7 @@ One of the following:
 
 <summary>
 
-permission\_groups: optional array of object {id, meta, name }
+permission\_groups: optional array of object { id, meta, name }
 
 A set of permission groups that are specified to the policy.
 
@@ -666,7 +666,7 @@ Identifier of the permission group.
 
 <summary>
 
-meta: optional object {category, deprecated, description, 5 more }
+meta: optional object { category, deprecated, description, 5 more }
 
 Attributes associated to the permission group.
 
@@ -740,7 +740,7 @@ Name of the permission group.
 
 <summary>
 
-resource\_groups: optional array of object {id, scope, meta, name }
+resource\_groups: optional array of object { id, scope, meta, name }
 
 A list of resource groups that the policy applies to.
 
@@ -756,7 +756,7 @@ Identifier of the resource group.
 
 <summary>
 
-scope: object {key, objects }
+scope: object { key, objects }
 
 The scope associated to the resource group
 
@@ -772,7 +772,7 @@ This is a combination of pre-defined resource name and identifier (like Account 
 
 <summary>
 
-objects: array of object {key }
+objects: array of object { key }
 
 A list of scope objects for additional context.
 
@@ -796,7 +796,7 @@ This is a combination of pre-defined resource name and identifier (like Zone ID 
 
 <summary>
 
-meta: optional object {key, value }
+meta: optional object { key, value }
 
 Attributes associated to the resource group.
 
@@ -864,7 +864,7 @@ maxLength120
 
 <summary>
 
-permissions: object {analytics, billing, cache\_purge, 9 more }
+permissions: object { analytics, billing, cache\_purge, 9 more }
 
 </summary>
 
@@ -928,7 +928,7 @@ zones: optional <a href="https://developers.cloudflare.com/api/resources/$shared
 
 <summary>
 
-status: optional "accepted"or "pending"
+status: optional "accepted" or "pending"
 
 A member’s status in the account.
 
@@ -952,7 +952,7 @@ One of the following:
 
 <summary>
 
-user: optional object {email, id, first\_name, 2 more }
+user: optional object { email, id, first\_name, 2 more }
 
 Details of the user associated to the membership.
 
@@ -1010,7 +1010,7 @@ Indicates whether two-factor authentication is enabled for the user account. Doe
 
 <summary>
 
-PaginationInfo object {count, page, per\_page, total\_count }
+PaginationInfo object { count, page, per\_page, total\_count }
 
 </summary>
 
@@ -1050,7 +1050,7 @@ Permission = string
 
 <summary>
 
-PermissionGrant object {read, write }
+PermissionGrant object { read, write }
 
 </summary>
 
@@ -1070,7 +1070,7 @@ write: optional boolean
 
 <summary>
 
-RatePlan object {id, currency, externally\_managed, 4 more }
+RatePlan object { id, currency, externally\_managed, 4 more }
 
 The rate plan applied to the subscription.
 
@@ -1080,7 +1080,7 @@ The rate plan applied to the subscription.
 
 <summary>
 
-id: optional "free"or "lite"or "pro"or 7 moreor string
+id: optional "free" or "lite" or "pro" or 7 more or string
 
 The ID of the rate plan.
 
@@ -1092,7 +1092,7 @@ One of the following:
 
 <summary>
 
-"free"or "lite"or "pro"or 7 more
+"free" or "lite" or "pro" or 7 more
 
 The ID of the rate plan.
 
@@ -1196,7 +1196,7 @@ The list of sets this rate plan applies to. Returns array of strings.
 
 <summary>
 
-ResponseInfo object {code, message, documentation\_url, source }
+ResponseInfo object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -1218,7 +1218,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -1238,7 +1238,7 @@ pointer: optional string
 
 <summary>
 
-Result = object {errors, messages, result, success } or object {errors, messages, success }
+Result = object { errors, messages, result, success } or object { errors, messages, success }
 
 </summary>
 
@@ -1248,7 +1248,7 @@ One of the following:
 
 <summary>
 
-object {errors, messages, result, success }
+object { errors, messages, result, success }
 
 </summary>
 
@@ -1278,7 +1278,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -1320,7 +1320,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -1354,7 +1354,7 @@ A string that uniquely identifies the audit log.
 
 <summary>
 
-action: optional object {result, type }
+action: optional object { result, type }
 
 </summary>
 
@@ -1378,7 +1378,7 @@ A short string that describes the action that was performed.
 
 <summary>
 
-actor: optional object {id, email, ip, type }
+actor: optional object { id, email, ip, type }
 
 </summary>
 
@@ -1406,7 +1406,7 @@ The IP address of the request that performed the action.
 
 <summary>
 
-type: optional "user"or "admin"or "Cloudflare"
+type: optional "user" or "admin" or "Cloudflare"
 
 The type of actor, whether a User, Cloudflare Admin, or an Automated System.
 
@@ -1462,7 +1462,7 @@ The value of the resource before it was modified.
 
 <summary>
 
-owner: optional object {id }
+owner: optional object { id }
 
 </summary>
 
@@ -1482,7 +1482,7 @@ maxLength32
 
 <summary>
 
-resource: optional object {id, type }
+resource: optional object { id, type }
 
 </summary>
 
@@ -1526,7 +1526,7 @@ success: optional boolean
 
 <summary>
 
-AaaAPIResponseCommon object {errors, messages, success }
+AaaAPIResponseCommon object { errors, messages, success }
 
 </summary>
 
@@ -1556,7 +1556,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -1598,7 +1598,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -1632,7 +1632,7 @@ Whether the API call was successful
 
 <summary>
 
-Role object {id, description, name, permissions }
+Role object { id, description, name, permissions }
 
 </summary>
 
@@ -1662,7 +1662,7 @@ maxLength120
 
 <summary>
 
-permissions: object {analytics, billing, cache\_purge, 9 more }
+permissions: object { analytics, billing, cache\_purge, 9 more }
 
 </summary>
 
@@ -1726,7 +1726,7 @@ zones: optional <a href="https://developers.cloudflare.com/api/resources/$shared
 
 <summary>
 
-SortDirection = "asc"or "desc"
+SortDirection = "asc" or "desc"
 
 Direction to order DNS records in.
 
@@ -1750,7 +1750,7 @@ One of the following:
 
 <summary>
 
-Subscription object {id, currency, current\_period\_end, 5 more }
+Subscription object { id, currency, current\_period\_end, 5 more }
 
 </summary>
 
@@ -1788,7 +1788,7 @@ formatdate-time
 
 <summary>
 
-frequency: optional "weekly"or "monthly"or "quarterly"or "yearly"
+frequency: optional "weekly" or "monthly" or "quarterly" or "yearly"
 
 How often the subscription is renewed automatically.
 
@@ -1832,7 +1832,7 @@ The rate plan applied to the subscription.
 
 <summary>
 
-state: optional "Trial"or "Provisioned"or "Paid"or 4 more
+state: optional "Trial" or "Provisioned" or "Paid" or 4 more
 
 The state that the subscription is in.
 
@@ -1880,7 +1880,7 @@ One of the following:
 
 <summary>
 
-SubscriptionComponent object {default, display\_name, kind, 3 more }
+SubscriptionComponent object { default, display\_name, kind, 3 more }
 
 A component value for a subscription.
 
@@ -1902,7 +1902,7 @@ A human-readable version of the component name.
 
 <summary>
 
-kind: optional "enum"or "sum"or "usage"
+kind: optional "enum" or "sum" or "usage"
 
 The type of component value. “enum” for discrete values (including boolean on/off toggles where 0=off and 1=on), “sum” for countable quantities, “usage” for metered billing components.
 
@@ -1952,7 +1952,7 @@ The amount of the component value assigned.
 
 <summary>
 
-SubscriptionZone object {id, name }
+SubscriptionZone object { id, name }
 
 A simple zone object. May have null properties if not a zone subscription.
 
@@ -1982,7 +1982,7 @@ maxLength253
 
 <summary>
 
-Token object {id, condition, creator\_email\_at\_creation, 12 more }
+Token object { id, condition, creator\_email\_at\_creation, 12 more }
 
 </summary>
 
@@ -1998,7 +1998,7 @@ maxLength32
 
 <summary>
 
-condition: optional object {request\_ip }
+condition: optional object { request\_ip }
 
 </summary>
 
@@ -2006,7 +2006,7 @@ condition: optional object {request\_ip }
 
 <summary>
 
-request\_ip: optional object {in, not\_in }
+request\_ip: optional object { in, not\_in }
 
 Client IP restrictions.
 
@@ -2108,7 +2108,7 @@ Policy identifier.
 
 <summary>
 
-effect: "allow"or "deny"
+effect: "allow" or "deny"
 
 Allow or deny operations against the resources.
 
@@ -2132,7 +2132,7 @@ One of the following:
 
 <summary>
 
-permission\_groups: array of object {id, meta, name }
+permission\_groups: array of object { id, meta, name }
 
 A set of permission groups that are specified to the policy.
 
@@ -2148,7 +2148,7 @@ Identifier of the permission group.
 
 <summary>
 
-meta: optional object {category, deprecated, description, 5 more }
+meta: optional object { category, deprecated, description, 5 more }
 
 Attributes associated to the permission group.
 
@@ -2222,7 +2222,7 @@ Name of the permission group.
 
 <summary>
 
-resources: map\[string]or map\[map\[string]]
+resources: map\[string] or map\[map\[string]]
 
 A list of resource names that the policy applies to.
 
@@ -2266,7 +2266,7 @@ The type of service that provisioned the token. Only present for provisioned Acc
 
 <summary>
 
-status: optional "active"or "disabled"or "expired"
+status: optional "active" or "disabled" or "expired"
 
 Status of the token.
 
@@ -2320,7 +2320,7 @@ IPv4/IPv6 CIDR.
 
 <summary>
 
-TokenPolicy object {id, effect, permission\_groups, resources }
+TokenPolicy object { id, effect, permission\_groups, resources }
 
 </summary>
 
@@ -2334,7 +2334,7 @@ Policy identifier.
 
 <summary>
 
-effect: "allow"or "deny"
+effect: "allow" or "deny"
 
 Allow or deny operations against the resources.
 
@@ -2358,7 +2358,7 @@ One of the following:
 
 <summary>
 
-permission\_groups: array of object {id, meta, name }
+permission\_groups: array of object { id, meta, name }
 
 A set of permission groups that are specified to the policy.
 
@@ -2374,7 +2374,7 @@ Identifier of the permission group.
 
 <summary>
 
-meta: optional object {category, deprecated, description, 5 more }
+meta: optional object { category, deprecated, description, 5 more }
 
 Attributes associated to the permission group.
 
@@ -2448,7 +2448,7 @@ Name of the permission group.
 
 <summary>
 
-resources: map\[string]or map\[map\[string]]
+resources: map\[string] or map\[map\[string]]
 
 A list of resource names that the policy applies to.
 

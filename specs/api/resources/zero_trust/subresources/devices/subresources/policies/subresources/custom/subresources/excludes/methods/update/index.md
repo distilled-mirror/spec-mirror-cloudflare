@@ -82,7 +82,7 @@ maxLength36
 
 <summary>
 
-body: array of object {address, description } or object {host, description }
+body: array of object { address, description } or object { host, description }
 
 </summary>
 
@@ -92,7 +92,7 @@ One of the following:
 
 <summary>
 
-TeamsDevicesExcludeSplitTunnelWithAddressRequest object {address, description }
+TeamsDevicesExcludeSplitTunnelWithAddressRequest object { address, description }
 
 </summary>
 
@@ -118,7 +118,7 @@ maxLength100
 
 <summary>
 
-TeamsDevicesExcludeSplitTunnelWithHostRequest object {host, description }
+TeamsDevicesExcludeSplitTunnelWithHostRequest object { host, description }
 
 </summary>
 
@@ -172,7 +172,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -214,7 +214,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -244,7 +244,7 @@ One of the following:
 
 <summary>
 
-TeamsDevicesExcludeSplitTunnelWithAddress object {address, description }
+TeamsDevicesExcludeSplitTunnelWithAddress object { address, description }
 
 </summary>
 
@@ -270,7 +270,7 @@ maxLength100
 
 <summary>
 
-TeamsDevicesExcludeSplitTunnelWithHost object {host, description }
+TeamsDevicesExcludeSplitTunnelWithHost object { host, description }
 
 </summary>
 
@@ -306,7 +306,7 @@ Whether the API call was successful.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object { count, page, per\_page, total\_count }
 
 </summary>
 

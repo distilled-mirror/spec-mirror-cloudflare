@@ -46,7 +46,7 @@ DELETE/accounts/{account\_id}/teamnet/routes/{route\_id}
 
 <summary>
 
-NetworkRoute object {id, comment, created\_at, 4 more }
+NetworkRoute object { id, comment, created\_at, 4 more }
 
 </summary>
 
@@ -114,7 +114,7 @@ formatuuid
 
 <summary>
 
-Route object {id, comment, created\_at, 4 more }
+Route object { id, comment, created\_at, 4 more }
 
 </summary>
 
@@ -182,7 +182,7 @@ formatuuid
 
 <summary>
 
-Teamnet object {id, comment, created\_at, 7 more }
+Teamnet object { id, comment, created\_at, 7 more }
 
 </summary>
 
@@ -228,7 +228,7 @@ The private IPv4 or IPv6 range connected by the route, in CIDR notation.
 
 <summary>
 
-tun\_type: optional "cfd\_tunnel"or "warp\_connector"or "warp"or 4 more
+tun\_type: optional "cfd\_tunnel" or "warp\_connector" or "warp" or 4 more
 
 The type of tunnel.
 

@@ -38,7 +38,7 @@ Specified as `jdcloud` to list IPs used by JD Cloud data centers.
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -60,7 +60,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -80,7 +80,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -102,7 +102,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -128,7 +128,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {etag, ipv4\_cidrs, ipv6\_cidrs } or object {etag, ipv4\_cidrs, ipv6\_cidrs, jdcloud\_cidrs }
+result: optional object { etag, ipv4\_cidrs, ipv6\_cidrs } or object { etag, ipv4\_cidrs, ipv6\_cidrs, jdcloud\_cidrs }
 
 </summary>
 
@@ -138,7 +138,7 @@ One of the following:
 
 <summary>
 
-PublicIPIPs object {etag, ipv4\_cidrs, ipv6\_cidrs }
+PublicIPIPs object { etag, ipv4\_cidrs, ipv6\_cidrs }
 
 </summary>
 
@@ -168,7 +168,7 @@ List of Cloudflare IPv6 CIDR addresses.
 
 <summary>
 
-PublicIPIPsJDCloud object {etag, ipv4\_cidrs, ipv6\_cidrs, jdcloud\_cidrs }
+PublicIPIPsJDCloud object { etag, ipv4\_cidrs, ipv6\_cidrs, jdcloud\_cidrs }
 
 </summary>
 

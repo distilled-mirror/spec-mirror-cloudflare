@@ -84,13 +84,15 @@ formatuuid
 
 enabled: optional boolean
 
+Omit to keep the current value.
+
 [Link to this property](#)%20realtime_kit.webhooks%20%3E%20(method)%20edit_webhook%20%3E%20(params)%200%20%3E%20(param)%20enabled%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-events: optional array of "meeting.started"or "meeting.ended"or "meeting.participantJoined"or 6 more
+events: optional array of "meeting.started" or "meeting.ended" or "meeting.participantJoined" or 6 more
 
 Events that the webhook will get triggered by
 
@@ -158,7 +160,7 @@ formaturi
 
 <summary>
 
-data: object {id, created\_at, enabled, 4 more }
+data: object { id, created\_at, enabled, 4 more }
 
 </summary>
 
@@ -188,7 +190,7 @@ Set to true if the webhook is active
 
 <summary>
 
-events: array of "meeting.started"or "meeting.ended"or "meeting.participantJoined"or 6 more
+events: array of "meeting.started" or "meeting.ended" or "meeting.participantJoined" or 6 more
 
 Events this webhook will send updates for
 

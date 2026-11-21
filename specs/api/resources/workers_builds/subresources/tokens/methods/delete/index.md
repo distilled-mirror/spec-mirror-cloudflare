@@ -80,7 +80,7 @@ formatuuid
 
 <summary>
 
-errors: array of object {message, code }
+errors: array of object { message, code }
 
 </summary>
 
@@ -104,7 +104,7 @@ messages: array of string
 
 <summary>
 
-result: unknownor array of unknown
+result: unknown or array of unknown
 
 </summary>
 
@@ -130,7 +130,7 @@ success: boolean
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

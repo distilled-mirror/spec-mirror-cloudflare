@@ -32,7 +32,7 @@ GET/zones/{zone\_id}/page\_shield/connections/{connection\_id}
 
 <summary>
 
-ConnectionListResponse object {id, added\_at, first\_seen\_at, 10 more }
+ConnectionListResponse object { id, added\_at, first\_seen\_at, 10 more }
 
 </summary>
 
@@ -106,7 +106,7 @@ url\_reported\_malicious: optional boolean
 
 <summary>
 
-ConnectionGetResponse object {id, added\_at, first\_seen\_at, 10 more }
+ConnectionGetResponse object { id, added\_at, first\_seen\_at, 10 more }
 
 </summary>
 

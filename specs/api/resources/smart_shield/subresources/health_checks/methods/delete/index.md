@@ -104,7 +104,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -146,7 +146,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -166,7 +166,7 @@ pointer: optional string
 
 <summary>
 
-result: object {id } or object {id } or object {id }
+result: object { id } or object { id } or object { id }
 
 </summary>
 
@@ -176,7 +176,7 @@ One of the following:
 
 <summary>
 
-ID object {id }
+ID object { id }
 
 </summary>
 
@@ -196,7 +196,7 @@ maxLength32
 
 <summary>
 
-ID object {id }
+ID object { id }
 
 </summary>
 
@@ -216,7 +216,7 @@ maxLength32
 
 <summary>
 
-ID object {id }
+ID object { id }
 
 </summary>
 

@@ -42,7 +42,7 @@ DELETE/accounts/{account\_id}/magic/advanced\_tcp\_protection/configs/syn\_prote
 
 <summary>
 
-ItemGetResponse object {id, created\_on, expression, 2 more }
+ItemGetResponse object { id, created\_on, expression, 2 more }
 
 </summary>
 
@@ -88,7 +88,7 @@ formatdate-time
 
 <summary>
 
-ItemEditResponse object {id, created\_on, expression, 2 more }
+ItemEditResponse object { id, created\_on, expression, 2 more }
 
 </summary>
 
@@ -134,7 +134,7 @@ formatdate-time
 
 <summary>
 
-ItemDeleteResponse object {errors, messages, success }
+ItemDeleteResponse object { errors, messages, success }
 
 </summary>
 
@@ -142,7 +142,7 @@ ItemDeleteResponse object {errors, messages, success }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -164,7 +164,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -184,7 +184,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -206,7 +206,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 

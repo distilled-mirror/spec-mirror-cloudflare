@@ -188,7 +188,7 @@ formatfloat
 
 <summary>
 
-cpuPctByApp: optional array of object {cpu\_pct, name }
+cpuPctByApp: optional array of object { cpu\_pct, name }
 
 </summary>
 
@@ -218,7 +218,7 @@ Application name.
 
 <summary>
 
-deviceIpv4: optional object {address, asn, aso, 4 more }
+deviceIpv4: optional object { address, asn, aso, 4 more }
 
 </summary>
 
@@ -238,7 +238,7 @@ aso: optional string
 
 <summary>
 
-location: optional object {city, country\_iso, state\_iso, zip }
+location: optional object { city, country\_iso, state\_iso, zip }
 
 </summary>
 
@@ -284,7 +284,7 @@ IP version (<code>1</code> for IPv4, <code>2</code> for IPv6, <code>0</code> if 
 
 <summary>
 
-deviceIpv6: optional object {address, asn, aso, 4 more }
+deviceIpv6: optional object { address, asn, aso, 4 more }
 
 </summary>
 
@@ -304,7 +304,7 @@ aso: optional string
 
 <summary>
 
-location: optional object {city, country\_iso, state\_iso, zip }
+location: optional object { city, country\_iso, state\_iso, zip }
 
 </summary>
 
@@ -396,7 +396,7 @@ firewallEnabled: optional boolean
 
 <summary>
 
-gatewayIpv4: optional object {address, asn, aso, 4 more }
+gatewayIpv4: optional object { address, asn, aso, 4 more }
 
 </summary>
 
@@ -416,7 +416,7 @@ aso: optional string
 
 <summary>
 
-location: optional object {city, country\_iso, state\_iso, zip }
+location: optional object { city, country\_iso, state\_iso, zip }
 
 </summary>
 
@@ -462,7 +462,7 @@ IP version (<code>1</code> for IPv4, <code>2</code> for IPv6, <code>0</code> if 
 
 <summary>
 
-gatewayIpv6: optional object {address, asn, aso, 4 more }
+gatewayIpv6: optional object { address, asn, aso, 4 more }
 
 </summary>
 
@@ -482,7 +482,7 @@ aso: optional string
 
 <summary>
 
-location: optional object {city, country\_iso, state\_iso, zip }
+location: optional object { city, country\_iso, state\_iso, zip }
 
 </summary>
 
@@ -534,7 +534,7 @@ formatint64
 
 <summary>
 
-ispIpv4: optional object {address, asn, aso, 4 more }
+ispIpv4: optional object { address, asn, aso, 4 more }
 
 </summary>
 
@@ -554,7 +554,7 @@ aso: optional string
 
 <summary>
 
-location: optional object {city, country\_iso, state\_iso, zip }
+location: optional object { city, country\_iso, state\_iso, zip }
 
 </summary>
 
@@ -600,7 +600,7 @@ IP version (<code>1</code> for IPv4, <code>2</code> for IPv6, <code>0</code> if 
 
 <summary>
 
-ispIpv6: optional object {address, asn, aso, 4 more }
+ispIpv6: optional object { address, asn, aso, 4 more }
 
 </summary>
 
@@ -620,7 +620,7 @@ aso: optional string
 
 <summary>
 
-location: optional object {city, country\_iso, state\_iso, zip }
+location: optional object { city, country\_iso, state\_iso, zip }
 
 </summary>
 
@@ -704,7 +704,7 @@ formatfloat
 
 <summary>
 
-ramUsedPctByApp: optional array of object {name, ram\_used\_pct }
+ramUsedPctByApp: optional array of object { name, ram\_used\_pct }
 
 </summary>
 
@@ -740,7 +740,7 @@ Device registration identifier (UUID v4). On multi-user devices, this uniquely i
 
 <summary>
 
-rtt: optional object {minRttUs, rttUs, rttVarUs }
+rtt: optional object { minRttUs, rttUs, rttVarUs }
 
 Round-trip time statistics for the WARP tunnel.
 
@@ -750,7 +750,7 @@ Round-trip time statistics for the WARP tunnel.
 
 <summary>
 
-minRttUs: optional object {downstream, upstream }
+minRttUs: optional object { downstream, upstream }
 
 Minimum round-trip time in microseconds.
 
@@ -772,7 +772,7 @@ upstream: optional number
 
 <summary>
 
-rttUs: optional object {downstream, upstream }
+rttUs: optional object { downstream, upstream }
 
 Round-trip time in microseconds.
 
@@ -794,7 +794,7 @@ upstream: optional number
 
 <summary>
 
-rttVarUs: optional object {downstream, upstream }
+rttVarUs: optional object { downstream, upstream }
 
 Round-trip time variance in microseconds.
 
@@ -824,7 +824,7 @@ switchLocked: optional boolean
 
 <summary>
 
-tunnelStats: optional object {bytesLost, bytesReceived, bytesRetransmitted, 6 more }
+tunnelStats: optional object { bytesLost, bytesReceived, bytesRetransmitted, 6 more }
 
 WARP tunnel packet and byte counters.
 
@@ -834,7 +834,7 @@ WARP tunnel packet and byte counters.
 
 <summary>
 
-bytesLost: optional object {downstream, upstream }
+bytesLost: optional object { downstream, upstream }
 
 Number of bytes lost, split by direction.
 
@@ -856,7 +856,7 @@ upstream: optional number
 
 <summary>
 
-bytesReceived: optional object {downstream, upstream }
+bytesReceived: optional object { downstream, upstream }
 
 Number of bytes received, split by direction.
 
@@ -878,7 +878,7 @@ upstream: optional number
 
 <summary>
 
-bytesRetransmitted: optional object {downstream, upstream }
+bytesRetransmitted: optional object { downstream, upstream }
 
 Number of bytes retransmitted, split by direction.
 
@@ -900,7 +900,7 @@ upstream: optional number
 
 <summary>
 
-bytesSent: optional object {downstream, upstream }
+bytesSent: optional object { downstream, upstream }
 
 Number of bytes sent, split by direction.
 
@@ -922,7 +922,7 @@ upstream: optional number
 
 <summary>
 
-packetsLost: optional object {downstream, upstream }
+packetsLost: optional object { downstream, upstream }
 
 Number of packets lost, split by direction.
 
@@ -944,7 +944,7 @@ upstream: optional number
 
 <summary>
 
-packetsReceived: optional object {downstream, upstream }
+packetsReceived: optional object { downstream, upstream }
 
 Number of packets received, split by direction.
 
@@ -966,7 +966,7 @@ upstream: optional number
 
 <summary>
 
-packetsRetransmitted: optional object {downstream, upstream }
+packetsRetransmitted: optional object { downstream, upstream }
 
 Number of packets retransmitted, split by direction.
 
@@ -988,7 +988,7 @@ upstream: optional number
 
 <summary>
 
-packetsSent: optional object {downstream, upstream }
+packetsSent: optional object { downstream, upstream }
 
 Number of packets sent, split by direction.
 

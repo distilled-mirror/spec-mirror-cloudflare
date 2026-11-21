@@ -32,7 +32,7 @@ GET/accounts/{account\_id}/cloudforce-one/events/dataset/{dataset\_id}/targetInd
 
 <summary>
 
-ByDatasetListResponse object {items, type }
+ByDatasetListResponse object { items, type }
 
 </summary>
 
@@ -40,7 +40,7 @@ ByDatasetListResponse object {items, type }
 
 <summary>
 
-items: object {type }
+items: object { type }
 
 </summary>
 

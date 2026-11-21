@@ -38,7 +38,7 @@ DELETE/accounts/{account\_id}/mtls\_certificates/{mtls\_certificate\_id}
 
 <summary>
 
-MTLSCertificate object {id, ca, certificates, 7 more }
+MTLSCertificate object { id, ca, certificates, 7 more }
 
 </summary>
 
@@ -98,7 +98,7 @@ The type of hash used for the certificate.
 
 <summary>
 
-type: optional "custom"or "gateway\_managed"or "access\_managed"
+type: optional "custom" or "gateway\_managed" or "access\_managed"
 
 The type of the certificate, indicating how it was created and who manages it.
 
@@ -138,7 +138,7 @@ formatdate-time
 
 <summary>
 
-MTLSCertificateCreateResponse object {id, ca, certificates, 8 more }
+MTLSCertificateCreateResponse object { id, ca, certificates, 8 more }
 
 </summary>
 
@@ -198,7 +198,7 @@ The type of hash used for the certificate.
 
 <summary>
 
-type: optional "custom"or "gateway\_managed"or "access\_managed"
+type: optional "custom" or "gateway\_managed" or "access\_managed"
 
 The type of the certificate, indicating how it was created and who manages it.
 
@@ -254,7 +254,7 @@ GET/accounts/{account\_id}/mtls\_certificates/{mtls\_certificate\_id}/associatio
 
 <summary>
 
-CertificateAsssociation object {service, status }
+CertificateAsssociation object { service, status }
 
 </summary>
 

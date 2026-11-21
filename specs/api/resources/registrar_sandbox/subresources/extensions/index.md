@@ -32,7 +32,7 @@ GET/accounts/{account\_id}/registrar-sandbox/extensions/{extension}
 
 <summary>
 
-ExtensionListResponse object {metadata, registration\_schema, transfer\_schema }
+ExtensionListResponse object { metadata, registration\_schema, transfer\_schema }
 
 Extension entry with metadata and JSON Schema documents for registration and transfer operations.
 
@@ -42,7 +42,7 @@ Extension entry with metadata and JSON Schema documents for registration and tra
 
 <summary>
 
-metadata: object {name, tld }
+metadata: object { name, tld }
 
 Extension metadata.
 
@@ -84,7 +84,7 @@ JSON Schema describing the expected input structure for transfer operations on t
 
 <summary>
 
-ExtensionGetResponse object {metadata, registration\_schema, transfer\_schema }
+ExtensionGetResponse object { metadata, registration\_schema, transfer\_schema }
 
 Extension entry with metadata and JSON Schema documents for registration and transfer operations.
 
@@ -94,7 +94,7 @@ Extension entry with metadata and JSON Schema documents for registration and tra
 
 <summary>
 
-metadata: object {name, tld }
+metadata: object { name, tld }
 
 Extension metadata.
 

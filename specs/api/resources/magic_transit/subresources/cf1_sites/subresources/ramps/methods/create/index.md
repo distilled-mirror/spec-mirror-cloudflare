@@ -80,7 +80,7 @@ maxLength32
 
 <summary>
 
-body: array of object {source\_ramp\_id, type }
+body: array of object { source\_ramp\_id, type }
 
 </summary>
 
@@ -160,7 +160,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -202,7 +202,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -298,7 +298,7 @@ A human-provided description of the ramp.
 
 <summary>
 
-gre: optional object {managed\_by }
+gre: optional object { managed\_by }
 
 </summary>
 
@@ -316,7 +316,7 @@ URL reference to the source network resource that this ramp is managed by.
 
 <summary>
 
-gre\_interconnect: optional object {managed\_by }
+gre\_interconnect: optional object { managed\_by }
 
 </summary>
 
@@ -334,7 +334,7 @@ URL reference to the source network resource that this ramp is managed by.
 
 <summary>
 
-ipsec: optional object {managed\_by }
+ipsec: optional object { managed\_by }
 
 </summary>
 
@@ -352,7 +352,7 @@ URL reference to the source network resource that this ramp is managed by.
 
 <summary>
 
-mconn: optional object {managed\_by }
+mconn: optional object { managed\_by }
 
 </summary>
 
@@ -370,7 +370,7 @@ URL reference to the source network resource that this ramp is managed by.
 
 <summary>
 
-mpls\_interconnect: optional object {managed\_by }
+mpls\_interconnect: optional object { managed\_by }
 
 </summary>
 

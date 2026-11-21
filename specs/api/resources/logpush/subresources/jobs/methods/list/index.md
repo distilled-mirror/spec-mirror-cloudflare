@@ -78,7 +78,7 @@ The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -100,7 +100,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -120,7 +120,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -142,7 +142,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -184,7 +184,7 @@ minimum1
 
 <summary>
 
-dataset: optional "access\_requests"or "account\_abuse\_protection\_events"or "ai\_gateway\_events"or 35 more
+dataset: optional "access\_requests" or "account\_abuse\_protection\_events" or "ai\_gateway\_events" or 35 more
 
 Name of the dataset. A list of supported datasets can be found on the <a href="https://developers.cloudflare.com/logs/reference/log-fields/">Developer Docs</a>.
 
@@ -390,7 +390,7 @@ When true, excludes DDoS attack traffic from logs. This option is supported for 
 
 <summary>
 
-Deprecatedfrequency: optional "high"or "low"
+Deprecatedfrequency: optional "high" or "low"
 
 This field is deprecated. Please use <code>max_upload_*</code> parameters instead. . The frequency at which Cloudflare sends batches of logs to your destination. Setting frequency to high sends your logs in larger quantities of smaller files. Setting frequency to low sends logs in smaller quantities of larger files.
 
@@ -414,7 +414,7 @@ One of the following:
 
 <summary>
 
-kind: optional ""or "edge"
+kind: optional "" or "edge"
 
 The kind parameter (optional) is used to differentiate between Logpush and Edge Log Delivery jobs (when supported by the dataset).
 
@@ -464,7 +464,7 @@ maxLength4096
 
 <summary>
 
-max\_upload\_bytes: optional 0or number
+max\_upload\_bytes: optional 0 or number
 
 The maximum uncompressed file size of a batch of logs. This setting value must be between <code>5 MB</code> and <code>1 GB</code>, or <code>0</code> to disable it. Note that you cannot set a minimum file size; this means that log files may be much smaller than this batch size.
 
@@ -490,7 +490,7 @@ number
 
 <summary>
 
-max\_upload\_interval\_seconds: optional 0or number
+max\_upload\_interval\_seconds: optional 0 or number
 
 The maximum interval in seconds for log batches. This setting must be between 30 and 300 seconds (5 minutes), or <code>0</code> to disable it. Note that you cannot specify a minimum interval for log batches; this means that log files may be sent in shorter intervals than this.
 
@@ -516,7 +516,7 @@ number
 
 <summary>
 
-max\_upload\_records: optional 0or number
+max\_upload\_records: optional 0 or number
 
 The maximum number of log lines per batch. This setting must be between 1000 and 1,000,000 lines, or <code>0</code> to disable it. Note that you cannot specify a minimum number of log lines per batch; this means that log files may contain many fewer lines than this.
 
@@ -596,7 +596,7 @@ If set to true, subrequests will be merged into the parent request. Only support
 
 <summary>
 
-output\_type: optional "ndjson"or "csv"
+output\_type: optional "ndjson" or "csv"
 
 Specifies the output type, such as <code>ndjson</code> or <code>csv</code>. This sets default values for the rest of the settings, depending on the chosen output type. Some formatting rules, like string quoting, are different between output types.
 
@@ -658,7 +658,7 @@ minimum0
 
 <summary>
 
-timestamp\_format: optional "unixnano"or "unix"or "rfc3339"or 2 more
+timestamp\_format: optional "unixnano" or "unix" or "rfc3339" or 2 more
 
 String to specify the format for timestamps, such as <code>unixnano</code>, <code>unix</code>, <code>rfc3339</code>, <code>rfc3339ms</code> or <code>rfc3339ns</code>.
 

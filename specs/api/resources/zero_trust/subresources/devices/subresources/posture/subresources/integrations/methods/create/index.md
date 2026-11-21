@@ -74,7 +74,7 @@ account\_id: string
 
 <summary>
 
-config: object {api\_url, auth\_url, client\_id, client\_secret } or object {api\_url, client\_id, client\_secret, customer\_id } or object {api\_url, client\_key, client\_secret, customer\_id } or 5 more
+config: object { api\_url, auth\_url, client\_id, client\_secret } or object { api\_url, client\_id, client\_secret, customer\_id } or object { api\_url, client\_key, client\_secret, customer\_id } or 5 more
 
 The configuration object containing third-party integration information.
 
@@ -86,7 +86,7 @@ One of the following:
 
 <summary>
 
-TeamsDevicesWorkspaceOneConfigRequest object {api\_url, auth\_url, client\_id, client\_secret }
+TeamsDevicesWorkspaceOneConfigRequest object { api\_url, auth\_url, client\_id, client\_secret }
 
 </summary>
 
@@ -122,7 +122,7 @@ The Workspace One client secret provided in the Workspace One Admin Dashboard.
 
 <summary>
 
-TeamsDevicesCrowdstrikeConfigRequest object {api\_url, client\_id, client\_secret, customer\_id }
+TeamsDevicesCrowdstrikeConfigRequest object { api\_url, client\_id, client\_secret, customer\_id }
 
 </summary>
 
@@ -158,7 +158,7 @@ The Crowdstrike customer ID.
 
 <summary>
 
-TeamsDevicesUptycsConfigRequest object {api\_url, client\_key, client\_secret, customer\_id }
+TeamsDevicesUptycsConfigRequest object { api\_url, client\_key, client\_secret, customer\_id }
 
 </summary>
 
@@ -194,7 +194,7 @@ The Uptycs customer ID.
 
 <summary>
 
-TeamsDevicesIntuneConfigRequest object {client\_id, client\_secret, customer\_id }
+TeamsDevicesIntuneConfigRequest object { client\_id, client\_secret, customer\_id }
 
 </summary>
 
@@ -224,7 +224,7 @@ The Intune customer ID.
 
 <summary>
 
-TeamsDevicesKolideConfigRequest object {client\_id, client\_secret }
+TeamsDevicesKolideConfigRequest object { client\_id, client\_secret }
 
 </summary>
 
@@ -248,7 +248,7 @@ The Kolide client secret.
 
 <summary>
 
-TeamsDevicesTaniumConfigRequest object {api\_url, client\_secret, access\_client\_id, access\_client\_secret }
+TeamsDevicesTaniumConfigRequest object { api\_url, client\_secret, access\_client\_id, access\_client\_secret }
 
 </summary>
 
@@ -284,7 +284,7 @@ If present, this secret will be passed in the <code>CF-Access-Client-Secret</cod
 
 <summary>
 
-TeamsDevicesSentineloneS2sConfigRequest object {api\_url, client\_secret }
+TeamsDevicesSentineloneS2sConfigRequest object { api\_url, client\_secret }
 
 </summary>
 
@@ -308,7 +308,7 @@ The SentinelOne S2S client secret.
 
 <summary>
 
-TeamsDevicesCustomS2sConfigRequest object {access\_client\_id, access\_client\_secret, api\_url }
+TeamsDevicesCustomS2sConfigRequest object { access\_client\_id, access\_client\_secret, api\_url }
 
 </summary>
 
@@ -354,7 +354,7 @@ The name of the device posture integration.
 
 <summary>
 
-type: "workspace\_one"or "crowdstrike\_s2s"or "uptycs"or 5 more
+type: "workspace\_one" or "crowdstrike\_s2s" or "uptycs" or 5 more
 
 The type of device posture integration.
 
@@ -426,7 +426,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -468,7 +468,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -504,7 +504,7 @@ maxLength36
 
 <summary>
 
-config: optional object {api\_url, auth\_url, client\_id }
+config: optional object { api\_url, auth\_url, client\_id }
 
 The configuration object containing third-party integration information.
 
@@ -548,7 +548,7 @@ The name of the device posture integration.
 
 <summary>
 
-type: optional "workspace\_one"or "crowdstrike\_s2s"or "uptycs"or 5 more
+type: optional "workspace\_one" or "crowdstrike\_s2s" or "uptycs" or 5 more
 
 The type of device posture integration.
 

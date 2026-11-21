@@ -28,7 +28,7 @@ POST/accounts/{account\_id}/move
 
 <summary>
 
-AccountOrganizationCreateResponse object {account\_id, destination\_organization\_id, source\_organization\_id }
+AccountOrganizationCreateResponse object { account\_id, destination\_organization\_id, source\_organization\_id }
 
 </summary>
 

@@ -58,7 +58,7 @@ minLength3
 
 <summary>
 
-"cf-r2-storage-class": "Standard"or "InfrequentAccess"
+"cf-r2-storage-class": "Standard" or "InfrequentAccess"
 
 Storage class for newly uploaded objects, unless specified otherwise.
 
@@ -82,7 +82,7 @@ One of the following:
 
 <summary>
 
-"cf-r2-jurisdiction": optional "default"or "eu"or "us"or 2 more
+"cf-r2-jurisdiction": optional "default" or "eu" or "us" or 2 more
 
 </summary>
 
@@ -140,7 +140,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -180,7 +180,7 @@ Creation timestamp.
 
 <summary>
 
-jurisdiction: optional "default"or "eu"or "us"or 2 more
+jurisdiction: optional "default" or "eu" or "us" or 2 more
 
 Jurisdiction where objects in this bucket are guaranteed to be stored.
 
@@ -216,7 +216,7 @@ One of the following:
 
 <summary>
 
-location: optional "apac"or "eeur"or "enam"or 3 more
+location: optional "apac" or "eeur" or "enam" or 3 more
 
 Location of the bucket.
 
@@ -266,7 +266,7 @@ minLength3
 
 <summary>
 
-storage\_class: optional "Standard"or "InfrequentAccess"
+storage\_class: optional "Standard" or "InfrequentAccess"
 
 Storage class for newly uploaded objects, unless specified otherwise.
 

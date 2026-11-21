@@ -48,7 +48,7 @@ DELETE/accounts/{account\_id}/magic/connectors/{connector\_id}
 
 <summary>
 
-ConnectorListResponse object {id, activated, interrupt\_window\_days\_of\_week, 10 more }
+ConnectorListResponse object { id, activated, interrupt\_window\_days\_of\_week, 10 more }
 
 </summary>
 
@@ -64,7 +64,7 @@ activated: boolean
 
 <summary>
 
-interrupt\_window\_days\_of\_week: array of "Sunday"or "Monday"or "Tuesday"or 4 more
+interrupt\_window\_days\_of\_week: array of "Sunday" or "Monday" or "Tuesday" or 4 more
 
 Allowed days of the week for upgrades. Default is all days.
 
@@ -138,7 +138,7 @@ timezone: string
 
 <summary>
 
-device: optional object {id, serial\_number, type }
+device: optional object { id, serial\_number, type }
 
 </summary>
 
@@ -154,7 +154,7 @@ serial\_number: optional string
 
 <summary>
 
-type: optional "MANAGED"or "LICENSED"
+type: optional "MANAGED" or "LICENSED"
 
 </summary>
 
@@ -196,7 +196,7 @@ license\_key: optional string
 
 <summary>
 
-ConnectorGetResponse object {id, activated, interrupt\_window\_days\_of\_week, 10 more }
+ConnectorGetResponse object { id, activated, interrupt\_window\_days\_of\_week, 10 more }
 
 </summary>
 
@@ -212,7 +212,7 @@ activated: boolean
 
 <summary>
 
-interrupt\_window\_days\_of\_week: array of "Sunday"or "Monday"or "Tuesday"or 4 more
+interrupt\_window\_days\_of\_week: array of "Sunday" or "Monday" or "Tuesday" or 4 more
 
 Allowed days of the week for upgrades. Default is all days.
 
@@ -286,7 +286,7 @@ timezone: string
 
 <summary>
 
-device: optional object {id, serial\_number, type }
+device: optional object { id, serial\_number, type }
 
 </summary>
 
@@ -302,7 +302,7 @@ serial\_number: optional string
 
 <summary>
 
-type: optional "MANAGED"or "LICENSED"
+type: optional "MANAGED" or "LICENSED"
 
 </summary>
 
@@ -344,7 +344,7 @@ license\_key: optional string
 
 <summary>
 
-ConnectorCreateResponse object {id, activated, interrupt\_window\_days\_of\_week, 10 more }
+ConnectorCreateResponse object { id, activated, interrupt\_window\_days\_of\_week, 10 more }
 
 </summary>
 
@@ -360,7 +360,7 @@ activated: boolean
 
 <summary>
 
-interrupt\_window\_days\_of\_week: array of "Sunday"or "Monday"or "Tuesday"or 4 more
+interrupt\_window\_days\_of\_week: array of "Sunday" or "Monday" or "Tuesday" or 4 more
 
 Allowed days of the week for upgrades. Default is all days.
 
@@ -434,7 +434,7 @@ timezone: string
 
 <summary>
 
-device: optional object {id, serial\_number, type }
+device: optional object { id, serial\_number, type }
 
 </summary>
 
@@ -450,7 +450,7 @@ serial\_number: optional string
 
 <summary>
 
-type: optional "MANAGED"or "LICENSED"
+type: optional "MANAGED" or "LICENSED"
 
 </summary>
 
@@ -492,7 +492,7 @@ license\_key: optional string
 
 <summary>
 
-ConnectorUpdateResponse object {id, activated, interrupt\_window\_days\_of\_week, 10 more }
+ConnectorUpdateResponse object { id, activated, interrupt\_window\_days\_of\_week, 10 more }
 
 </summary>
 
@@ -508,7 +508,7 @@ activated: boolean
 
 <summary>
 
-interrupt\_window\_days\_of\_week: array of "Sunday"or "Monday"or "Tuesday"or 4 more
+interrupt\_window\_days\_of\_week: array of "Sunday" or "Monday" or "Tuesday" or 4 more
 
 Allowed days of the week for upgrades. Default is all days.
 
@@ -582,7 +582,7 @@ timezone: string
 
 <summary>
 
-device: optional object {id, serial\_number, type }
+device: optional object { id, serial\_number, type }
 
 </summary>
 
@@ -598,7 +598,7 @@ serial\_number: optional string
 
 <summary>
 
-type: optional "MANAGED"or "LICENSED"
+type: optional "MANAGED" or "LICENSED"
 
 </summary>
 
@@ -640,7 +640,7 @@ license\_key: optional string
 
 <summary>
 
-ConnectorEditResponse object {id, activated, interrupt\_window\_days\_of\_week, 10 more }
+ConnectorEditResponse object { id, activated, interrupt\_window\_days\_of\_week, 10 more }
 
 </summary>
 
@@ -656,7 +656,7 @@ activated: boolean
 
 <summary>
 
-interrupt\_window\_days\_of\_week: array of "Sunday"or "Monday"or "Tuesday"or 4 more
+interrupt\_window\_days\_of\_week: array of "Sunday" or "Monday" or "Tuesday" or 4 more
 
 Allowed days of the week for upgrades. Default is all days.
 
@@ -730,7 +730,7 @@ timezone: string
 
 <summary>
 
-device: optional object {id, serial\_number, type }
+device: optional object { id, serial\_number, type }
 
 </summary>
 
@@ -746,7 +746,7 @@ serial\_number: optional string
 
 <summary>
 
-type: optional "MANAGED"or "LICENSED"
+type: optional "MANAGED" or "LICENSED"
 
 </summary>
 
@@ -788,7 +788,7 @@ license\_key: optional string
 
 <summary>
 
-ConnectorDeleteResponse object {id, activated, interrupt\_window\_days\_of\_week, 10 more }
+ConnectorDeleteResponse object { id, activated, interrupt\_window\_days\_of\_week, 10 more }
 
 </summary>
 
@@ -804,7 +804,7 @@ activated: boolean
 
 <summary>
 
-interrupt\_window\_days\_of\_week: array of "Sunday"or "Monday"or "Tuesday"or 4 more
+interrupt\_window\_days\_of\_week: array of "Sunday" or "Monday" or "Tuesday" or 4 more
 
 Allowed days of the week for upgrades. Default is all days.
 
@@ -878,7 +878,7 @@ timezone: string
 
 <summary>
 
-device: optional object {id, serial\_number, type }
+device: optional object { id, serial\_number, type }
 
 </summary>
 
@@ -894,7 +894,7 @@ serial\_number: optional string
 
 <summary>
 
-type: optional "MANAGED"or "LICENSED"
+type: optional "MANAGED" or "LICENSED"
 
 </summary>
 
@@ -948,7 +948,7 @@ POST/accounts/{account\_id}/magic/connectors/{connector\_id}/interrupts
 
 <summary>
 
-InterruptListResponse object {submitted\_at, reboot, restart, 2 more }
+InterruptListResponse object { submitted\_at, reboot, restart, 2 more }
 
 Interrupt action for a connector.
 
@@ -962,7 +962,7 @@ submitted\_at: string
 
 <summary>
 
-reboot: optional object {purge }
+reboot: optional object { purge }
 
 </summary>
 
@@ -980,7 +980,7 @@ Purge connector state.
 
 <summary>
 
-restart: optional object {purge }
+restart: optional object { purge }
 
 </summary>
 
@@ -998,7 +998,7 @@ Purge connector state.
 
 <summary>
 
-shutdown: optional object {purge }
+shutdown: optional object { purge }
 
 </summary>
 
@@ -1024,7 +1024,7 @@ triggered\_at: optional string
 
 <summary>
 
-InterruptCreateResponse object {submitted\_at, reboot, restart, 2 more }
+InterruptCreateResponse object { submitted\_at, reboot, restart, 2 more }
 
 Interrupt action for a connector.
 
@@ -1038,7 +1038,7 @@ submitted\_at: string
 
 <summary>
 
-reboot: optional object {purge }
+reboot: optional object { purge }
 
 </summary>
 
@@ -1056,7 +1056,7 @@ Purge connector state.
 
 <summary>
 
-restart: optional object {purge }
+restart: optional object { purge }
 
 </summary>
 
@@ -1074,7 +1074,7 @@ Purge connector state.
 
 <summary>
 
-shutdown: optional object {purge }
+shutdown: optional object { purge }
 
 </summary>
 
@@ -1112,7 +1112,7 @@ GET/accounts/{account\_id}/magic/connectors/{connector\_id}/telemetry/events/{ev
 
 <summary>
 
-EventListResponse object {count, items, cursor }
+EventListResponse object { count, items, cursor }
 
 </summary>
 
@@ -1124,7 +1124,7 @@ count: number
 
 <summary>
 
-items: array of object {a, k, n, t }
+items: array of object { a, k, n, t }
 
 </summary>
 
@@ -1168,7 +1168,7 @@ cursor: optional string
 
 <summary>
 
-EventGetResponse object {e, n, t, v }
+EventGetResponse object { e, n, t, v }
 
 Recorded Event
 
@@ -1178,7 +1178,7 @@ Recorded Event
 
 <summary>
 
-e: object {k }
+e: object { k }
 
 Event kind plus event-specific payload fields.
 
@@ -1220,7 +1220,7 @@ Event kinds:
 
 <summary>
 
-k: "Init"or "Leave"or "StartAttestation"or 26 more
+k: "Init" or "Leave" or "StartAttestation" or 26 more
 
 Event kind
 
@@ -1386,7 +1386,7 @@ GET/accounts/{account\_id}/magic/connectors/{connector\_id}/telemetry/events/lat
 
 <summary>
 
-LatestListResponse object {count, items }
+LatestListResponse object { count, items }
 
 </summary>
 
@@ -1398,7 +1398,7 @@ count: number
 
 <summary>
 
-items: array of object {e, n, t, v }
+items: array of object { e, n, t, v }
 
 </summary>
 
@@ -1406,7 +1406,7 @@ items: array of object {e, n, t, v }
 
 <summary>
 
-e: object {k }
+e: object { k }
 
 Event kind plus event-specific payload fields.
 
@@ -1448,7 +1448,7 @@ Event kinds:
 
 <summary>
 
-k: "Init"or "Leave"or "StartAttestation"or 26 more
+k: "Init" or "Leave" or "StartAttestation" or 26 more
 
 Event kind
 
@@ -1622,7 +1622,7 @@ GET/accounts/{account\_id}/magic/connectors/{connector\_id}/telemetry/snapshots/
 
 <summary>
 
-SnapshotListResponse object {count, items, cursor }
+SnapshotListResponse object { count, items, cursor }
 
 </summary>
 
@@ -1634,7 +1634,7 @@ count: number
 
 <summary>
 
-items: array of object {a, t }
+items: array of object { a, t }
 
 </summary>
 
@@ -1666,7 +1666,7 @@ cursor: optional string
 
 <summary>
 
-SnapshotGetResponse object {count\_reclaim\_failures, count\_reclaimed\_paths, count\_record\_failed, 173 more }
+SnapshotGetResponse object { count\_reclaim\_failures, count\_reclaimed\_paths, count\_record\_failed, 173 more }
 
 Snapshot
 
@@ -1712,7 +1712,7 @@ Version
 
 <summary>
 
-bonds: optional array of object {name, status }
+bonds: optional array of object { name, status }
 
 </summary>
 
@@ -1832,7 +1832,7 @@ Number of network operations applied during state transition
 
 <summary>
 
-dhcp\_leases: optional array of object {client\_id, expiry\_time, hostname, 3 more }
+dhcp\_leases: optional array of object { client\_id, expiry\_time, hostname, 3 more }
 
 </summary>
 
@@ -1880,7 +1880,7 @@ MAC Address of the device the IP Address was leased to
 
 <summary>
 
-disks: optional array of object {in\_progress, major, merged, 17 more }
+disks: optional array of object { in\_progress, major, merged, 17 more }
 
 </summary>
 
@@ -2030,7 +2030,7 @@ Numeric value associated with high availability state (0 = disabled, 1 = active,
 
 <summary>
 
-interfaces: optional array of object {name, operstate, health\_reason, 3 more }
+interfaces: optional array of object { name, operstate, health\_reason, 3 more }
 
 </summary>
 
@@ -2062,7 +2062,7 @@ Aggregate health score (0-100)
 
 <summary>
 
-ip\_addresses: optional array of object {interface\_name, ip\_address }
+ip\_addresses: optional array of object { interface\_name, ip\_address }
 
 </summary>
 
@@ -2528,7 +2528,7 @@ Amount of anonymous memory stored in zswap, uncompressed
 
 <summary>
 
-mounts: optional array of object {file\_system, kind, mount\_point, 7 more }
+mounts: optional array of object { file\_system, kind, mount\_point, 7 more }
 
 </summary>
 
@@ -2600,7 +2600,7 @@ Total inodes on filesystem
 
 <summary>
 
-netdevs: optional array of object {name, recv\_bytes, recv\_compressed, 14 more }
+netdevs: optional array of object { name, recv\_bytes, recv\_compressed, 14 more }
 
 </summary>
 
@@ -2720,7 +2720,7 @@ Platform identifier
 
 <summary>
 
-qdiscs: optional array of object {backlog, bytes, dev, 10 more }
+qdiscs: optional array of object { backlog, bytes, dev, 10 more }
 
 </summary>
 
@@ -2788,7 +2788,7 @@ Total packets requeued
 
 <summary>
 
-cake\_stats: optional object {avg\_hdr\_offset, capacity\_estimate, max\_adj\_size, 7 more }
+cake\_stats: optional object { avg\_hdr\_offset, capacity\_estimate, max\_adj\_size, 7 more }
 
 Snapshot Qdisc CAKE
 
@@ -2846,7 +2846,7 @@ Smallest network-layer packet seen (bytes, 65535 until the first packet after cr
 
 <summary>
 
-options: object {ack\_filter, bandwidth, diffserv, 13 more }
+options: object { ack\_filter, bandwidth, diffserv, 13 more }
 
 Snapshot Qdisc CAKE Options
 
@@ -2956,7 +2956,7 @@ Minimum packet size (bytes, absent when unset)
 
 <summary>
 
-tins: array of object {ack\_drops, avg\_delay\_us, backlog\_bytes, 17 more }
+tins: array of object { ack\_drops, avg\_delay\_us, backlog\_bytes, 17 more }
 
 </summary>
 
@@ -3108,7 +3108,7 @@ Set when attached at the root of the interface
 
 <summary>
 
-routes: optional array of object {destination, interface\_name, kind, 3 more }
+routes: optional array of object { destination, interface\_name, kind, 3 more }
 
 </summary>
 
@@ -3552,7 +3552,7 @@ Boottime of the system (seconds since the Unix epoch)
 
 <summary>
 
-thermals: optional array of object {label, critical\_celcius, current\_celcius, max\_celcius }
+thermals: optional array of object { label, critical\_celcius, current\_celcius, max\_celcius }
 
 </summary>
 
@@ -3588,7 +3588,7 @@ Maximum temperature of the component (degrees Celsius)
 
 <summary>
 
-tunnels: optional array of object {health\_state, health\_value, interface\_name, 9 more }
+tunnels: optional array of object { health\_state, health\_value, interface\_name, 9 more }
 
 </summary>
 
@@ -3696,7 +3696,7 @@ GET/accounts/{account\_id}/magic/connectors/{connector\_id}/telemetry/snapshots/
 
 <summary>
 
-LatestListResponse object {count, items }
+LatestListResponse object { count, items }
 
 </summary>
 
@@ -3708,7 +3708,7 @@ count: number
 
 <summary>
 
-items: array of object {count\_reclaim\_failures, count\_reclaimed\_paths, count\_record\_failed, 173 more }
+items: array of object { count\_reclaim\_failures, count\_reclaimed\_paths, count\_record\_failed, 173 more }
 
 </summary>
 
@@ -3752,7 +3752,7 @@ Version
 
 <summary>
 
-bonds: optional array of object {name, status }
+bonds: optional array of object { name, status }
 
 </summary>
 
@@ -3872,7 +3872,7 @@ Number of network operations applied during state transition
 
 <summary>
 
-dhcp\_leases: optional array of object {client\_id, expiry\_time, hostname, 3 more }
+dhcp\_leases: optional array of object { client\_id, expiry\_time, hostname, 3 more }
 
 </summary>
 
@@ -3920,7 +3920,7 @@ MAC Address of the device the IP Address was leased to
 
 <summary>
 
-disks: optional array of object {in\_progress, major, merged, 17 more }
+disks: optional array of object { in\_progress, major, merged, 17 more }
 
 </summary>
 
@@ -4070,7 +4070,7 @@ Numeric value associated with high availability state (0 = disabled, 1 = active,
 
 <summary>
 
-interfaces: optional array of object {name, operstate, health\_reason, 3 more }
+interfaces: optional array of object { name, operstate, health\_reason, 3 more }
 
 </summary>
 
@@ -4102,7 +4102,7 @@ Aggregate health score (0-100)
 
 <summary>
 
-ip\_addresses: optional array of object {interface\_name, ip\_address }
+ip\_addresses: optional array of object { interface\_name, ip\_address }
 
 </summary>
 
@@ -4568,7 +4568,7 @@ Amount of anonymous memory stored in zswap, uncompressed
 
 <summary>
 
-mounts: optional array of object {file\_system, kind, mount\_point, 7 more }
+mounts: optional array of object { file\_system, kind, mount\_point, 7 more }
 
 </summary>
 
@@ -4640,7 +4640,7 @@ Total inodes on filesystem
 
 <summary>
 
-netdevs: optional array of object {name, recv\_bytes, recv\_compressed, 14 more }
+netdevs: optional array of object { name, recv\_bytes, recv\_compressed, 14 more }
 
 </summary>
 
@@ -4760,7 +4760,7 @@ Platform identifier
 
 <summary>
 
-qdiscs: optional array of object {backlog, bytes, dev, 10 more }
+qdiscs: optional array of object { backlog, bytes, dev, 10 more }
 
 </summary>
 
@@ -4828,7 +4828,7 @@ Total packets requeued
 
 <summary>
 
-cake\_stats: optional object {avg\_hdr\_offset, capacity\_estimate, max\_adj\_size, 7 more }
+cake\_stats: optional object { avg\_hdr\_offset, capacity\_estimate, max\_adj\_size, 7 more }
 
 Snapshot Qdisc CAKE
 
@@ -4886,7 +4886,7 @@ Smallest network-layer packet seen (bytes, 65535 until the first packet after cr
 
 <summary>
 
-options: object {ack\_filter, bandwidth, diffserv, 13 more }
+options: object { ack\_filter, bandwidth, diffserv, 13 more }
 
 Snapshot Qdisc CAKE Options
 
@@ -4996,7 +4996,7 @@ Minimum packet size (bytes, absent when unset)
 
 <summary>
 
-tins: array of object {ack\_drops, avg\_delay\_us, backlog\_bytes, 17 more }
+tins: array of object { ack\_drops, avg\_delay\_us, backlog\_bytes, 17 more }
 
 </summary>
 
@@ -5148,7 +5148,7 @@ Set when attached at the root of the interface
 
 <summary>
 
-routes: optional array of object {destination, interface\_name, kind, 3 more }
+routes: optional array of object { destination, interface\_name, kind, 3 more }
 
 </summary>
 
@@ -5592,7 +5592,7 @@ Boottime of the system (seconds since the Unix epoch)
 
 <summary>
 
-thermals: optional array of object {label, critical\_celcius, current\_celcius, max\_celcius }
+thermals: optional array of object { label, critical\_celcius, current\_celcius, max\_celcius }
 
 </summary>
 
@@ -5628,7 +5628,7 @@ Maximum temperature of the component (degrees Celsius)
 
 <summary>
 
-tunnels: optional array of object {health\_state, health\_value, interface\_name, 9 more }
+tunnels: optional array of object { health\_state, health\_value, interface\_name, 9 more }
 
 </summary>
 

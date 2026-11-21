@@ -58,7 +58,7 @@ Filter by the scope of the permission group. The value must be URL-encoded.
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -80,7 +80,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -100,7 +100,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -122,7 +122,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -148,7 +148,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional array of object {id, category, is\_selectable, 2 more }
+result: optional array of object { id, category, is\_selectable, 2 more }
 
 </summary>
 
@@ -162,7 +162,7 @@ Public ID.
 
 <summary>
 
-category: optional "developer\_platform"or "ai\_and\_machine\_learning"or "dns\_and\_zones"or 10 more
+category: optional "developer\_platform" or "ai\_and\_machine\_learning" or "dns\_and\_zones" or 10 more
 
 Product category that this permission group belongs to.
 
@@ -242,7 +242,7 @@ Permission Group Name
 
 <summary>
 
-scopes: optional array of "com.cloudflare.api.account"or "com.cloudflare.api.account.zone"or "com.cloudflare.api.user"or "com.cloudflare.edge.r2.bucket"
+scopes: optional array of "com.cloudflare.api.account" or "com.cloudflare.api.account.zone" or "com.cloudflare.api.user" or "com.cloudflare.edge.r2.bucket"
 
 Resources to which the Permission Group is scoped
 
@@ -278,7 +278,7 @@ One of the following:
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object { count, page, per\_page, total\_count }
 
 </summary>
 

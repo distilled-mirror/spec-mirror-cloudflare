@@ -90,7 +90,7 @@ formatdate
 
 <summary>
 
-errors: array of object {message, code }
+errors: array of object { message, code }
 
 Contains error details if the request failed.
 
@@ -116,7 +116,7 @@ Identifies the error or notice type.
 
 <summary>
 
-messages: array of object {message, code }
+messages: array of object { message, code }
 
 Contains informational notices about the response.
 
@@ -142,7 +142,7 @@ Identifies the error or notice type.
 
 <summary>
 
-result: array of object {BilledCost, BillingAccountId, BillingAccountName, 24 more }
+result: array of object { BilledCost, BillingAccountId, BillingAccountName, 24 more }
 
 Contains the array of billable usage records.
 

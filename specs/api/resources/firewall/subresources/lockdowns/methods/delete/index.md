@@ -82,7 +82,7 @@ maxLength32
 
 <summary>
 
-result: optional object {id }
+result: optional object { id }
 
 </summary>
 

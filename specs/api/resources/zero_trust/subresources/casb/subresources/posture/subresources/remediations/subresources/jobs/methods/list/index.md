@@ -40,7 +40,7 @@ The preferred authorization scheme for interacting with the Cloudflare API. [Cre
 
 ##### Accepted Permissions (at least one required)
 
-`Zero Trust Read``Zero Trust Write`
+`CASB Write``CASB Read``Zero Trust Read``Zero Trust Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -60,7 +60,7 @@ A cursor for pagination.
 
 <summary>
 
-direction: optional "asc"or "desc"
+direction: optional "asc" or "desc"
 
 Direction to order results.
 
@@ -108,7 +108,7 @@ formatdate-time
 
 <summary>
 
-order: optional "created\_at"or "affliction\_date"or "integration\_name"or 4 more
+order: optional "created\_at" or "affliction\_date" or "integration\_name" or 4 more
 
 An optional param to sort the results by the given field.
 
@@ -172,7 +172,7 @@ A search term.
 
 <summary>
 
-status: optional "pending"or "processing"or "completed"or 2 more
+status: optional "pending" or "processing" or "completed" or 2 more
 
 Filter to view remediations with the given status.
 
@@ -208,7 +208,7 @@ One of the following:
 
 <summary>
 
-triggered\_by\_actor: optional array of "user"or "account\_token"
+triggered\_by\_actor: optional array of "user" or "account\_token"
 
 Filter remediations by what kind of actor triggered them. Supports multiple comma-separated values.
 
@@ -246,7 +246,7 @@ Array of informational messages.
 
 <summary>
 
-result: array of object {id, asset, created\_at, 11 more }
+result: array of object { id, asset, created\_at, 11 more }
 
 Array of remediation job objects.
 
@@ -264,7 +264,7 @@ formatuuid
 
 <summary>
 
-asset: object {id, category, external\_id, 3 more }
+asset: object { id, category, external\_id, 3 more }
 
 Asset information for a remediation job.
 
@@ -282,7 +282,7 @@ formatuuid
 
 <summary>
 
-category: object {service, type, vendor }
+category: object { service, type, vendor }
 
 Category information for a remediation job asset.
 
@@ -304,7 +304,7 @@ Asset type.
 
 <summary>
 
-vendor: "AWS"or "Anthropic"or "Bitbucket"or 14 more
+vendor: "AWS" or "Anthropic" or "Bitbucket" or 14 more
 
 Display names for vendor types.
 
@@ -398,7 +398,7 @@ External identifier from the source system.
 
 <summary>
 
-fields: array of object {name, value, link }
+fields: array of object { name, value, link }
 
 Additional fields associated with the asset.
 
@@ -414,7 +414,7 @@ Field name.
 
 <summary>
 
-value: stringor numberor boolean
+value: string or number or boolean
 
 Field value (can be string, number, or boolean).
 
@@ -528,7 +528,7 @@ Type of remediation being performed.
 
 <summary>
 
-status: "pending"or "processing"or "completed"or 2 more
+status: "pending" or "processing" or "completed" or 2 more
 
 Status of a remediation job.
 
@@ -570,7 +570,7 @@ Email of the user who triggered the remediation. For account-token actors this i
 
 <summary>
 
-triggered\_by\_actor: optional "user"or "account\_token"
+triggered\_by\_actor: optional "user" or "account\_token"
 
 Type of actor that triggered the remediation job. Null on legacy rows created before this column was populated.
 
@@ -604,7 +604,7 @@ ID of the actor that triggered the job. Meaning depends on triggered\_by\_actor.
 
 <summary>
 
-result\_info: object {count, cursor, page, 2 more }
+result\_info: object { count, cursor, page, 2 more }
 
 </summary>
 

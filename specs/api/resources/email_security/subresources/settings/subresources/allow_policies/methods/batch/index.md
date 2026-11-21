@@ -76,7 +76,7 @@ maxLength32
 
 <summary>
 
-deletes: array of object {id }
+deletes: array of object { id }
 
 IDs of the allow policies to delete.
 
@@ -98,7 +98,7 @@ formatuuid
 
 <summary>
 
-patches: array of object {id, created\_at, last\_modified, 13 more }
+patches: array of object { id, created\_at, last\_modified, 13 more }
 
 Partial updates to apply — each entry carries the policy’s ID and only the fields to change.
 
@@ -208,7 +208,7 @@ minLength1
 
 <summary>
 
-pattern\_type: optional "EMAIL"or "DOMAIN"or "IP"or "UNKNOWN"
+pattern\_type: optional "EMAIL" or "DOMAIN" or "IP" or "UNKNOWN"
 
 Type of pattern matching.
 
@@ -255,7 +255,7 @@ Enforce DMARC, SPF or DKIM authentication. When on, Email Security only honors p
 
 <summary>
 
-posts: array of object {is\_acceptable\_sender, is\_exempt\_recipient, is\_regex, 13 more }
+posts: array of object { is\_acceptable\_sender, is\_exempt\_recipient, is\_regex, 13 more }
 
 Allow policies to create.
 
@@ -297,7 +297,7 @@ minLength1
 
 <summary>
 
-pattern\_type: "EMAIL"or "DOMAIN"or "IP"or "UNKNOWN"
+pattern\_type: "EMAIL" or "DOMAIN" or "IP" or "UNKNOWN"
 
 Type of pattern matching.
 
@@ -412,7 +412,7 @@ formatdate-time
 
 <summary>
 
-puts: array of object {id, created\_at, last\_modified, 13 more }
+puts: array of object { id, created\_at, last\_modified, 13 more }
 
 Full replacements to apply — each entry carries the policy’s ID and every field of its new value.
 
@@ -522,7 +522,7 @@ minLength1
 
 <summary>
 
-pattern\_type: optional "EMAIL"or "DOMAIN"or "IP"or "UNKNOWN"
+pattern\_type: optional "EMAIL" or "DOMAIN" or "IP" or "UNKNOWN"
 
 Type of pattern matching.
 
@@ -571,7 +571,7 @@ Enforce DMARC, SPF or DKIM authentication. When on, Email Security only honors p
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -593,7 +593,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -613,7 +613,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -635,7 +635,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -661,7 +661,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {deletes, patches, posts, puts }
+result: optional object { deletes, patches, posts, puts }
 
 </summary>
 
@@ -669,7 +669,7 @@ result: optional object {deletes, patches, posts, puts }
 
 <summary>
 
-deletes: optional array of object {id }
+deletes: optional array of object { id }
 
 </summary>
 
@@ -689,7 +689,7 @@ formatuuid
 
 <summary>
 
-patches: optional array of object {id, created\_at, last\_modified, 13 more }
+patches: optional array of object { id, created\_at, last\_modified, 13 more }
 
 </summary>
 
@@ -797,7 +797,7 @@ minLength1
 
 <summary>
 
-pattern\_type: optional "EMAIL"or "DOMAIN"or "IP"or "UNKNOWN"
+pattern\_type: optional "EMAIL" or "DOMAIN" or "IP" or "UNKNOWN"
 
 Type of pattern matching.
 
@@ -844,7 +844,7 @@ Enforce DMARC, SPF or DKIM authentication. When on, Email Security only honors p
 
 <summary>
 
-posts: optional array of object {id, created\_at, last\_modified, 13 more }
+posts: optional array of object { id, created\_at, last\_modified, 13 more }
 
 </summary>
 
@@ -952,7 +952,7 @@ minLength1
 
 <summary>
 
-pattern\_type: optional "EMAIL"or "DOMAIN"or "IP"or "UNKNOWN"
+pattern\_type: optional "EMAIL" or "DOMAIN" or "IP" or "UNKNOWN"
 
 Type of pattern matching.
 
@@ -999,7 +999,7 @@ Enforce DMARC, SPF or DKIM authentication. When on, Email Security only honors p
 
 <summary>
 
-puts: optional array of object {id, created\_at, last\_modified, 13 more }
+puts: optional array of object { id, created\_at, last\_modified, 13 more }
 
 </summary>
 
@@ -1107,7 +1107,7 @@ minLength1
 
 <summary>
 
-pattern\_type: optional "EMAIL"or "DOMAIN"or "IP"or "UNKNOWN"
+pattern\_type: optional "EMAIL" or "DOMAIN" or "IP" or "UNKNOWN"
 
 Type of pattern matching.
 

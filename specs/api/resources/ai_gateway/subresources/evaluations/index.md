@@ -40,7 +40,7 @@ DELETE/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/evaluations/{id}
 
 <summary>
 
-EvaluationListResponse object {id, created\_at, datasets, 6 more }
+EvaluationListResponse object { id, created\_at, datasets, 6 more }
 
 </summary>
 
@@ -58,7 +58,7 @@ formatdate-time
 
 <summary>
 
-datasets: array of object {id, account\_id, account\_tag, 6 more }
+datasets: array of object { id, account\_id, account\_tag, 6 more }
 
 </summary>
 
@@ -88,7 +88,7 @@ enable: boolean
 
 <summary>
 
-filters: array of object {key, operator, value }
+filters: array of object { key, operator, value }
 
 </summary>
 
@@ -96,7 +96,7 @@ filters: array of object {key, operator, value }
 
 <summary>
 
-key: "created\_at"or "request\_content\_type"or "response\_content\_type"or 10 more
+key: "created\_at" or "request\_content\_type" or "response\_content\_type" or 10 more
 
 </summary>
 
@@ -162,7 +162,7 @@ One of the following:
 
 <summary>
 
-operator: "eq"or "contains"or "lt"or "gt"
+operator: "eq" or "contains" or "lt" or "gt"
 
 </summary>
 
@@ -192,7 +192,7 @@ One of the following:
 
 <summary>
 
-value: array of stringor numberor boolean
+value: array of string or number or boolean
 
 </summary>
 
@@ -270,7 +270,7 @@ processed: boolean
 
 <summary>
 
-results: array of object {id, created\_at, evaluation\_id, 6 more }
+results: array of object { id, created\_at, evaluation\_id, 6 more }
 
 </summary>
 
@@ -330,7 +330,7 @@ total\_logs: number
 
 <summary>
 
-EvaluationGetResponse object {id, created\_at, datasets, 6 more }
+EvaluationGetResponse object { id, created\_at, datasets, 6 more }
 
 </summary>
 
@@ -348,7 +348,7 @@ formatdate-time
 
 <summary>
 
-datasets: array of object {id, account\_id, account\_tag, 6 more }
+datasets: array of object { id, account\_id, account\_tag, 6 more }
 
 </summary>
 
@@ -378,7 +378,7 @@ enable: boolean
 
 <summary>
 
-filters: array of object {key, operator, value }
+filters: array of object { key, operator, value }
 
 </summary>
 
@@ -386,7 +386,7 @@ filters: array of object {key, operator, value }
 
 <summary>
 
-key: "created\_at"or "request\_content\_type"or "response\_content\_type"or 10 more
+key: "created\_at" or "request\_content\_type" or "response\_content\_type" or 10 more
 
 </summary>
 
@@ -452,7 +452,7 @@ One of the following:
 
 <summary>
 
-operator: "eq"or "contains"or "lt"or "gt"
+operator: "eq" or "contains" or "lt" or "gt"
 
 </summary>
 
@@ -482,7 +482,7 @@ One of the following:
 
 <summary>
 
-value: array of stringor numberor boolean
+value: array of string or number or boolean
 
 </summary>
 
@@ -560,7 +560,7 @@ processed: boolean
 
 <summary>
 
-results: array of object {id, created\_at, evaluation\_id, 6 more }
+results: array of object { id, created\_at, evaluation\_id, 6 more }
 
 </summary>
 
@@ -620,7 +620,7 @@ total\_logs: number
 
 <summary>
 
-EvaluationCreateResponse object {id, created\_at, datasets, 6 more }
+EvaluationCreateResponse object { id, created\_at, datasets, 6 more }
 
 </summary>
 
@@ -638,7 +638,7 @@ formatdate-time
 
 <summary>
 
-datasets: array of object {id, account\_id, account\_tag, 6 more }
+datasets: array of object { id, account\_id, account\_tag, 6 more }
 
 </summary>
 
@@ -668,7 +668,7 @@ enable: boolean
 
 <summary>
 
-filters: array of object {key, operator, value }
+filters: array of object { key, operator, value }
 
 </summary>
 
@@ -676,7 +676,7 @@ filters: array of object {key, operator, value }
 
 <summary>
 
-key: "created\_at"or "request\_content\_type"or "response\_content\_type"or 10 more
+key: "created\_at" or "request\_content\_type" or "response\_content\_type" or 10 more
 
 </summary>
 
@@ -742,7 +742,7 @@ One of the following:
 
 <summary>
 
-operator: "eq"or "contains"or "lt"or "gt"
+operator: "eq" or "contains" or "lt" or "gt"
 
 </summary>
 
@@ -772,7 +772,7 @@ One of the following:
 
 <summary>
 
-value: array of stringor numberor boolean
+value: array of string or number or boolean
 
 </summary>
 
@@ -850,7 +850,7 @@ processed: boolean
 
 <summary>
 
-results: array of object {id, created\_at, evaluation\_id, 6 more }
+results: array of object { id, created\_at, evaluation\_id, 6 more }
 
 </summary>
 
@@ -910,7 +910,7 @@ total\_logs: number
 
 <summary>
 
-EvaluationDeleteResponse object {id, created\_at, datasets, 6 more }
+EvaluationDeleteResponse object { id, created\_at, datasets, 6 more }
 
 </summary>
 
@@ -928,7 +928,7 @@ formatdate-time
 
 <summary>
 
-datasets: array of object {id, account\_id, account\_tag, 6 more }
+datasets: array of object { id, account\_id, account\_tag, 6 more }
 
 </summary>
 
@@ -958,7 +958,7 @@ enable: boolean
 
 <summary>
 
-filters: array of object {key, operator, value }
+filters: array of object { key, operator, value }
 
 </summary>
 
@@ -966,7 +966,7 @@ filters: array of object {key, operator, value }
 
 <summary>
 
-key: "created\_at"or "request\_content\_type"or "response\_content\_type"or 10 more
+key: "created\_at" or "request\_content\_type" or "response\_content\_type" or 10 more
 
 </summary>
 
@@ -1032,7 +1032,7 @@ One of the following:
 
 <summary>
 
-operator: "eq"or "contains"or "lt"or "gt"
+operator: "eq" or "contains" or "lt" or "gt"
 
 </summary>
 
@@ -1062,7 +1062,7 @@ One of the following:
 
 <summary>
 
-value: array of stringor numberor boolean
+value: array of string or number or boolean
 
 </summary>
 
@@ -1140,7 +1140,7 @@ processed: boolean
 
 <summary>
 
-results: array of object {id, created\_at, evaluation\_id, 6 more }
+results: array of object { id, created\_at, evaluation\_id, 6 more }
 
 </summary>
 

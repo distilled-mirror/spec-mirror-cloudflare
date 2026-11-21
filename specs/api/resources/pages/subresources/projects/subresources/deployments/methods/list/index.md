@@ -58,7 +58,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Pages Read``Pages Write`
+`Pages Metadata Read``Pages Read``Pages Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -82,7 +82,7 @@ Name of the Pages project. Must begin with a lowercase letter or digit and conta
 
 <summary>
 
-env: optional "production"or "preview"
+env: optional "production" or "preview"
 
 Deployment environment to return. Valid values are <code>production</code> and <code>preview</code>.
 
@@ -120,7 +120,7 @@ Number of results to return per page.
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -142,7 +142,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -162,7 +162,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -184,7 +184,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -224,7 +224,7 @@ A list of alias URLs pointing to this deployment.
 
 <summary>
 
-build\_config: object {web\_analytics\_tag, web\_analytics\_token, build\_caching, 3 more }
+build\_config: object { web\_analytics\_tag, web\_analytics\_token, build\_caching, 3 more }
 
 Configs for the project build process.
 
@@ -282,7 +282,7 @@ formatdate-time
 
 <summary>
 
-deployment\_trigger: object {metadata, type }
+deployment\_trigger: object { metadata, type }
 
 Info about what caused the deployment.
 
@@ -292,7 +292,7 @@ Info about what caused the deployment.
 
 <summary>
 
-metadata: object {branch, commit\_dirty, commit\_hash, commit\_message }
+metadata: object { branch, commit\_dirty, commit\_hash, commit\_message }
 
 Additional info about the trigger.
 
@@ -330,7 +330,7 @@ Message of the deployment trigger commit.
 
 <summary>
 
-type: "github:push"or "ad\_hoc"or "deploy\_hook"
+type: "github:push" or "ad\_hoc" or "deploy\_hook"
 
 What caused the deployment.
 
@@ -362,7 +362,7 @@ One of the following:
 
 <summary>
 
-env\_vars: map\[object {type, value } or object {type, value } ]
+env\_vars: map\[object { type, value } or object { type, value } ]
 
 Environment variables used for builds and Pages Functions.
 
@@ -374,7 +374,7 @@ One of the following:
 
 <summary>
 
-PlainText object {type, value }
+PlainText object { type, value }
 
 A plaintext environment variable.
 
@@ -398,7 +398,7 @@ Environment variable value.
 
 <summary>
 
-SecretText object {type, value }
+SecretText object { type, value }
 
 An encrypted environment variable.
 
@@ -426,7 +426,7 @@ Secret value.
 
 <summary>
 
-environment: "preview"or "production"
+environment: "preview" or "production"
 
 Type of deploy.
 
@@ -474,7 +474,7 @@ formatdate-time
 
 <summary>
 
-name: "queued"or "initialize"or "clone\_repo"or 2 more
+name: "queued" or "initialize" or "clone\_repo" or 2 more
 
 The current build stage.
 
@@ -518,7 +518,7 @@ formatdate-time
 
 <summary>
 
-status: "success"or "idle"or "active"or 3 more
+status: "success" or "idle" or "active" or 3 more
 
 State of the current stage.
 
@@ -588,7 +588,7 @@ Short Id (8 character) of the deployment.
 
 <summary>
 
-source: object {config, type }
+source: object { config, type }
 
 Configs for the project source control.
 
@@ -598,7 +598,7 @@ Configs for the project source control.
 
 <summary>
 
-config: object {deployments\_enabled, owner, owner\_id, 10 more }
+config: object { deployments\_enabled, owner, owner\_id, 10 more }
 
 </summary>
 
@@ -656,7 +656,7 @@ A list of branches that should trigger a preview deployment. Wildcard syntax (<c
 
 <summary>
 
-preview\_deployment\_setting: "all"or "none"or "custom"
+preview\_deployment\_setting: "all" or "none" or "custom"
 
 Controls whether commits to preview branches trigger a preview deployment.
 
@@ -712,7 +712,7 @@ The name of the repository.
 
 <summary>
 
-type: "github"or "gitlab"
+type: "github" or "gitlab"
 
 The source control management provider.
 
@@ -758,7 +758,7 @@ formatdate-time
 
 <summary>
 
-name: "queued"or "initialize"or "clone\_repo"or 2 more
+name: "queued" or "initialize" or "clone\_repo" or 2 more
 
 The current build stage.
 
@@ -802,7 +802,7 @@ formatdate-time
 
 <summary>
 
-status: "success"or "idle"or "active"or 3 more
+status: "success" or "idle" or "active" or 3 more
 
 State of the current stage.
 
@@ -852,7 +852,7 @@ The live URL to view this deployment.
 
 <summary>
 
-skip\_reason: optional "commit\_message"or "preview\_deployments\_disabled"or "production\_deployments\_disabled"or 4 more
+skip\_reason: optional "commit\_message" or "preview\_deployments\_disabled" or "production\_deployments\_disabled" or 4 more
 
 Why the deployment was skipped.
 
@@ -912,7 +912,7 @@ Whether the API call was successful.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

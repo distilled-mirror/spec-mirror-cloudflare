@@ -90,7 +90,7 @@ formatdate-time
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -122,7 +122,7 @@ Include ASN metadata (name, country) in response.
 
 <summary>
 
-result: object {asnInfo, changes, meta }
+result: object { asnInfo, changes, meta }
 
 </summary>
 
@@ -130,7 +130,7 @@ result: object {asnInfo, changes, meta }
 
 <summary>
 
-asnInfo: object {"13335" }
+asnInfo: object { "13335" }
 
 </summary>
 
@@ -138,7 +138,7 @@ asnInfo: object {"13335" }
 
 <summary>
 
-"13335": object {asn, country, name }
+"13335": object { asn, country, name }
 
 </summary>
 
@@ -172,7 +172,7 @@ AS name.
 
 <summary>
 
-changes: array of object {customersAdded, customersRemoved, date, 4 more }
+changes: array of object { customersAdded, customersRemoved, date, 4 more }
 
 </summary>
 
@@ -200,7 +200,7 @@ formatdate-time
 
 <summary>
 
-entries: array of object {customerAsn, providers, type }
+entries: array of object { customerAsn, providers, type }
 
 </summary>
 
@@ -218,7 +218,7 @@ providers: array of number
 
 <summary>
 
-type: "CustomerAdded"or "CustomerRemoved"or "ProvidersAdded"or "ProvidersRemoved"
+type: "CustomerAdded" or "CustomerRemoved" or "ProvidersAdded" or "ProvidersRemoved"
 
 </summary>
 
@@ -274,7 +274,7 @@ Running total of active ASPA objects after this day.
 
 <summary>
 
-meta: object {dataTime, queryTime }
+meta: object { dataTime, queryTime }
 
 </summary>
 

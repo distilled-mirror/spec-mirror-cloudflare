@@ -44,7 +44,7 @@ DELETE/accounts/{account\_id}/mnm/config
 
 <summary>
 
-Configuration object {default\_sampling, name, router\_ips, warp\_devices }
+Configuration object { default\_sampling, name, router\_ips, warp\_devices }
 
 </summary>
 
@@ -70,7 +70,7 @@ router\_ips: array of string
 
 <summary>
 
-warp\_devices: array of object {id, name, router\_ip }
+warp\_devices: array of object { id, name, router\_ip }
 
 </summary>
 

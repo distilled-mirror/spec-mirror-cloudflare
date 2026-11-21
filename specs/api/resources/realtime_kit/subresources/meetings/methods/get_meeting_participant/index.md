@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Realtime Admin``Realtime`
+`Realtime Read``Realtime Admin``Realtime`
 
 ##### P ath ParametersExpand Collapse
 
@@ -90,7 +90,7 @@ participant\_id: string
 
 <summary>
 
-data: object {id, created\_at, custom\_participant\_id, 4 more }
+data: object { id, created\_at, custom\_participant\_id, 4 more }
 
 Data returned by the operation
 

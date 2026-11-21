@@ -56,6 +56,10 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 </details>
 
+##### Accepted Permissions (at least one required)
+
+`AI Search Metadata Read``AI Search Write``AI Search Read``Auto Rag Write``Auto Rag Read`
+
 ##### P ath ParametersExpand Collapse
 
 account\_id: string
@@ -82,7 +86,7 @@ minLength1
 
 <summary>
 
-result: object {completed, degraded, engine, 8 more }
+result: object { completed, degraded, engine, 8 more }
 
 </summary>
 
@@ -100,7 +104,7 @@ True when the API cannot compute status counts (e.g. the legacy stats query exce
 
 <summary>
 
-engine: optional object {r2, vectorize }
+engine: optional object { r2, vectorize }
 
 Engine-specific metadata. Present only for managed (v3) instances.
 
@@ -110,7 +114,7 @@ Engine-specific metadata. Present only for managed (v3) instances.
 
 <summary>
 
-r2: optional object {metadataSizeBytes, objectCount, payloadSizeBytes }
+r2: optional object { metadataSizeBytes, objectCount, payloadSizeBytes }
 
 R2 bucket storage usage in bytes.
 
@@ -136,7 +140,7 @@ payloadSizeBytes: number
 
 <summary>
 
-vectorize: optional object {dimensions, vectorsCount }
+vectorize: optional object { dimensions, vectorsCount }
 
 Vectorize index metadata (dimensions, vector count).
 

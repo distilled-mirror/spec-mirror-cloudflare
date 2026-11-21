@@ -52,7 +52,7 @@ DELETE/accounts/{account\_id}/realtime/kit/{app\_id}/webhooks/{webhook\_id}
 
 <summary>
 
-WebhookGetWebhooksResponse object {data, success }
+WebhookGetWebhooksResponse object { data, success }
 
 </summary>
 
@@ -60,7 +60,7 @@ WebhookGetWebhooksResponse object {data, success }
 
 <summary>
 
-data: array of object {id, created\_at, enabled, 4 more }
+data: array of object { id, created\_at, enabled, 4 more }
 
 </summary>
 
@@ -90,7 +90,7 @@ Set to true if the webhook is active
 
 <summary>
 
-events: array of "meeting.started"or "meeting.ended"or "meeting.participantJoined"or 6 more
+events: array of "meeting.started" or "meeting.ended" or "meeting.participantJoined" or 6 more
 
 Events this webhook will send updates for
 
@@ -176,7 +176,7 @@ success: boolean
 
 <summary>
 
-WebhookGetAllWebhooksResponse object {data, success }
+WebhookGetAllWebhooksResponse object { data, success }
 
 </summary>
 
@@ -184,7 +184,7 @@ WebhookGetAllWebhooksResponse object {data, success }
 
 <summary>
 
-data: array of "meeting.started"or "meeting.ended"or "meeting.participantJoined"or 6 more
+data: array of "meeting.started" or "meeting.ended" or "meeting.participantJoined" or 6 more
 
 </summary>
 
@@ -242,7 +242,7 @@ success: boolean
 
 <summary>
 
-WebhookCreateWebhookResponse object {data, success }
+WebhookCreateWebhookResponse object { data, success }
 
 </summary>
 
@@ -250,7 +250,7 @@ WebhookCreateWebhookResponse object {data, success }
 
 <summary>
 
-data: object {id, created\_at, enabled, 4 more }
+data: object { id, created\_at, enabled, 4 more }
 
 </summary>
 
@@ -280,7 +280,7 @@ Set to true if the webhook is active
 
 <summary>
 
-events: array of "meeting.started"or "meeting.ended"or "meeting.participantJoined"or 6 more
+events: array of "meeting.started" or "meeting.ended" or "meeting.participantJoined" or 6 more
 
 Events this webhook will send updates for
 
@@ -366,7 +366,7 @@ success: boolean
 
 <summary>
 
-WebhookGetWebhookByIDResponse object {data, success }
+WebhookGetWebhookByIDResponse object { data, success }
 
 </summary>
 
@@ -374,7 +374,7 @@ WebhookGetWebhookByIDResponse object {data, success }
 
 <summary>
 
-data: object {id, created\_at, enabled, 4 more }
+data: object { id, created\_at, enabled, 4 more }
 
 </summary>
 
@@ -404,7 +404,7 @@ Set to true if the webhook is active
 
 <summary>
 
-events: array of "meeting.started"or "meeting.ended"or "meeting.participantJoined"or 6 more
+events: array of "meeting.started" or "meeting.ended" or "meeting.participantJoined" or 6 more
 
 Events this webhook will send updates for
 
@@ -490,7 +490,7 @@ success: boolean
 
 <summary>
 
-WebhookReplaceWebhookResponse object {data, success }
+WebhookReplaceWebhookResponse object { data, success }
 
 </summary>
 
@@ -498,7 +498,7 @@ WebhookReplaceWebhookResponse object {data, success }
 
 <summary>
 
-data: object {id, created\_at, enabled, 4 more }
+data: object { id, created\_at, enabled, 4 more }
 
 </summary>
 
@@ -528,7 +528,7 @@ Set to true if the webhook is active
 
 <summary>
 
-events: array of "meeting.started"or "meeting.ended"or "meeting.participantJoined"or 6 more
+events: array of "meeting.started" or "meeting.ended" or "meeting.participantJoined" or 6 more
 
 Events this webhook will send updates for
 
@@ -614,7 +614,7 @@ success: boolean
 
 <summary>
 
-WebhookEditWebhookResponse object {data, success }
+WebhookEditWebhookResponse object { data, success }
 
 </summary>
 
@@ -622,7 +622,7 @@ WebhookEditWebhookResponse object {data, success }
 
 <summary>
 
-data: object {id, created\_at, enabled, 4 more }
+data: object { id, created\_at, enabled, 4 more }
 
 </summary>
 
@@ -652,7 +652,7 @@ Set to true if the webhook is active
 
 <summary>
 
-events: array of "meeting.started"or "meeting.ended"or "meeting.participantJoined"or 6 more
+events: array of "meeting.started" or "meeting.ended" or "meeting.participantJoined" or 6 more
 
 Events this webhook will send updates for
 
@@ -738,7 +738,7 @@ success: boolean
 
 <summary>
 
-WebhookDeleteWebhookResponse object {data, success }
+WebhookDeleteWebhookResponse object { data, success }
 
 </summary>
 
@@ -746,7 +746,7 @@ WebhookDeleteWebhookResponse object {data, success }
 
 <summary>
 
-data: object {id, created\_at, enabled, 4 more }
+data: object { id, created\_at, enabled, 4 more }
 
 </summary>
 
@@ -776,7 +776,7 @@ Set to true if the webhook is active
 
 <summary>
 
-events: array of "meeting.started"or "meeting.ended"or "meeting.participantJoined"or 6 more
+events: array of "meeting.started" or "meeting.ended" or "meeting.participantJoined" or 6 more
 
 Events this webhook will send updates for
 

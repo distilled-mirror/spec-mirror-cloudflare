@@ -34,7 +34,7 @@ GET/radar/ct/authorities
 
 <summary>
 
-AuthorityGetResponse object {certificateAuthority }
+AuthorityGetResponse object { certificateAuthority }
 
 </summary>
 
@@ -42,7 +42,7 @@ AuthorityGetResponse object {certificateAuthority }
 
 <summary>
 
-certificateAuthority: object {appleStatus, authorityKeyIdentifier, certificateRecordType, 15 more }
+certificateAuthority: object { appleStatus, authorityKeyIdentifier, certificateRecordType, 15 more }
 
 </summary>
 
@@ -50,7 +50,7 @@ certificateAuthority: object {appleStatus, authorityKeyIdentifier, certificateRe
 
 <summary>
 
-appleStatus: "INCLUDED"or "NOT\_YET\_INCLUDED"or "NOT\_INCLUDED"or 4 more
+appleStatus: "INCLUDED" or "NOT\_YET\_INCLUDED" or "NOT\_INCLUDED" or 4 more
 
 The inclusion status of a Certificate Authority (CA) in the trust store.
 
@@ -100,7 +100,7 @@ The authorityKeyIdentifier value extracted from the certificate PEM.
 
 <summary>
 
-certificateRecordType: "ROOT\_CERTIFICATE"or "INTERMEDIATE\_CERTIFICATE"
+certificateRecordType: "ROOT\_CERTIFICATE" or "INTERMEDIATE\_CERTIFICATE"
 
 Specifies the type of certificate in the trust chain.
 
@@ -124,7 +124,7 @@ One of the following:
 
 <summary>
 
-chromeStatus: "INCLUDED"or "NOT\_YET\_INCLUDED"or "NOT\_INCLUDED"or 4 more
+chromeStatus: "INCLUDED" or "NOT\_YET\_INCLUDED" or "NOT\_INCLUDED" or 4 more
 
 The inclusion status of a Certificate Authority (CA) in the trust store.
 
@@ -180,7 +180,7 @@ The full country name corresponding to the country code.
 
 <summary>
 
-microsoftStatus: "INCLUDED"or "NOT\_YET\_INCLUDED"or "NOT\_INCLUDED"or 4 more
+microsoftStatus: "INCLUDED" or "NOT\_YET\_INCLUDED" or "NOT\_INCLUDED" or 4 more
 
 The inclusion status of a Certificate Authority (CA) in the trust store.
 
@@ -224,7 +224,7 @@ One of the following:
 
 <summary>
 
-mozillaStatus: "INCLUDED"or "NOT\_YET\_INCLUDED"or "NOT\_INCLUDED"or 4 more
+mozillaStatus: "INCLUDED" or "NOT\_YET\_INCLUDED" or "NOT\_INCLUDED" or 4 more
 
 The inclusion status of a Certificate Authority (CA) in the trust store.
 
@@ -292,7 +292,7 @@ The SHA-256 fingerprint of the parent certificate.
 
 <summary>
 
-related: array of object {certificateRecordType, name, revocationStatus, sha256Fingerprint }
+related: array of object { certificateRecordType, name, revocationStatus, sha256Fingerprint }
 
 CAs from the same owner.
 
@@ -302,7 +302,7 @@ CAs from the same owner.
 
 <summary>
 
-certificateRecordType: "ROOT\_CERTIFICATE"or "INTERMEDIATE\_CERTIFICATE"
+certificateRecordType: "ROOT\_CERTIFICATE" or "INTERMEDIATE\_CERTIFICATE"
 
 Specifies the type of certificate in the trust chain.
 
@@ -332,7 +332,7 @@ The full name of the certificate authority (CA).
 
 <summary>
 
-revocationStatus: "NOT\_REVOKED"or "REVOKED"or "PARENT\_CERT\_REVOKED"
+revocationStatus: "NOT\_REVOKED" or "REVOKED" or "PARENT\_CERT\_REVOKED"
 
 The current revocation status of a Certificate Authority (CA) certificate.
 
@@ -370,7 +370,7 @@ The SHA-256 fingerprint of the intermediate certificate.
 
 <summary>
 
-revocationStatus: "NOT\_REVOKED"or "REVOKED"or "PARENT\_CERT\_REVOKED"
+revocationStatus: "NOT\_REVOKED" or "REVOKED" or "PARENT\_CERT\_REVOKED"
 
 The current revocation status of a Certificate Authority (CA) certificate.
 
@@ -434,7 +434,7 @@ formatdate
 
 <summary>
 
-AuthorityListResponse object {certificateAuthorities }
+AuthorityListResponse object { certificateAuthorities }
 
 </summary>
 
@@ -442,7 +442,7 @@ AuthorityListResponse object {certificateAuthorities }
 
 <summary>
 
-certificateAuthorities: array of object {certificateRecordType, country, countryName, 6 more }
+certificateAuthorities: array of object { certificateRecordType, country, countryName, 6 more }
 
 </summary>
 
@@ -450,7 +450,7 @@ certificateAuthorities: array of object {certificateRecordType, country, country
 
 <summary>
 
-certificateRecordType: "ROOT\_CERTIFICATE"or "INTERMEDIATE\_CERTIFICATE"
+certificateRecordType: "ROOT\_CERTIFICATE" or "INTERMEDIATE\_CERTIFICATE"
 
 Specifies the type of certificate in the trust chain.
 
@@ -510,7 +510,7 @@ The SHA-256 fingerprint of the parent certificate.
 
 <summary>
 
-revocationStatus: "NOT\_REVOKED"or "REVOKED"or "PARENT\_CERT\_REVOKED"
+revocationStatus: "NOT\_REVOKED" or "REVOKED" or "PARENT\_CERT\_REVOKED"
 
 The current revocation status of a Certificate Authority (CA) certificate.
 

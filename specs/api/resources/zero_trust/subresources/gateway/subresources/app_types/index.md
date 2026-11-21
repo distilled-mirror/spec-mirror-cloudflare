@@ -30,7 +30,7 @@ GET/accounts/{account\_id}/gateway/app\_types
 
 <summary>
 
-AppType = object {id, application\_type\_id, created\_at, name } or object {id, created\_at, description, name }
+AppType = object { id, application\_type\_id, created\_at, name } or object { id, created\_at, description, name }
 
 </summary>
 
@@ -40,7 +40,7 @@ One of the following:
 
 <summary>
 
-ZeroTrustGatewayApplication object {id, application\_type\_id, created\_at, name }
+ZeroTrustGatewayApplication object { id, application\_type\_id, created\_at, name }
 
 </summary>
 
@@ -76,7 +76,7 @@ Specify the name of the application or application type.
 
 <summary>
 
-ZeroTrustGatewayApplicationType object {id, created\_at, description, name }
+ZeroTrustGatewayApplicationType object { id, created\_at, description, name }
 
 </summary>
 

@@ -50,7 +50,7 @@ account\_id: string
 
 <summary>
 
-errors: array of object {message }
+errors: array of object { message }
 
 </summary>
 
@@ -66,7 +66,7 @@ message: string
 
 <summary>
 
-result: object {categories }
+result: object { categories }
 
 </summary>
 
@@ -74,7 +74,7 @@ result: object {categories }
 
 <summary>
 
-categories: array of object {id, description, name }
+categories: array of object { id, description, name }
 
 </summary>
 

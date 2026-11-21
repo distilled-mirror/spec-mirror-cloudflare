@@ -60,7 +60,7 @@ minLength3
 
 <summary>
 
-"cf-r2-jurisdiction": optional "default"or "eu"or "us"or 2 more
+"cf-r2-jurisdiction": optional "default" or "eu" or "us" or 2 more
 
 </summary>
 
@@ -96,7 +96,7 @@ One of the following:
 
 <summary>
 
-body: object {destination, source } or object {destination, source } or object {destination, source } or object {destination, source }
+body: object { destination, source } or object { destination, source } or object { destination, source } or object { destination, source }
 
 </summary>
 
@@ -106,7 +106,7 @@ One of the following:
 
 <summary>
 
-R2EnableSippyAws object {destination, source }
+R2EnableSippyAws object { destination, source }
 
 </summary>
 
@@ -114,7 +114,7 @@ R2EnableSippyAws object {destination, source }
 
 <summary>
 
-destination: optional object {accessKeyId, provider, secretAccessKey }
+destination: optional object { accessKeyId, provider, secretAccessKey }
 
 R2 bucket to copy objects to.
 
@@ -148,7 +148,7 @@ Sippy will use this token when writing objects to R2, so it is best to scope thi
 
 <summary>
 
-source: optional object {accessKeyId, bucket, provider, 2 more }
+source: optional object { accessKeyId, bucket, provider, 2 more }
 
 AWS S3 bucket to copy objects from.
 
@@ -194,7 +194,7 @@ Secret Access Key of an IAM credential (ideally scoped to a single S3 bucket).
 
 <summary>
 
-R2EnableSippyGcs object {destination, source }
+R2EnableSippyGcs object { destination, source }
 
 </summary>
 
@@ -202,7 +202,7 @@ R2EnableSippyGcs object {destination, source }
 
 <summary>
 
-destination: optional object {accessKeyId, provider, secretAccessKey }
+destination: optional object { accessKeyId, provider, secretAccessKey }
 
 R2 bucket to copy objects to.
 
@@ -236,7 +236,7 @@ Sippy will use this token when writing objects to R2, so it is best to scope thi
 
 <summary>
 
-source: optional object {bucket, clientEmail, privateKey, provider }
+source: optional object { bucket, clientEmail, privateKey, provider }
 
 GCS bucket to copy objects from.
 
@@ -276,7 +276,7 @@ provider: optional "gcs"
 
 <summary>
 
-R2EnableSippyS3 object {destination, source }
+R2EnableSippyS3 object { destination, source }
 
 </summary>
 
@@ -284,7 +284,7 @@ R2EnableSippyS3 object {destination, source }
 
 <summary>
 
-destination: optional object {accessKeyId, provider, secretAccessKey }
+destination: optional object { accessKeyId, provider, secretAccessKey }
 
 R2 bucket to copy objects to.
 
@@ -318,7 +318,7 @@ Sippy will use this token when writing objects to R2, so it is best to scope thi
 
 <summary>
 
-source: optional object {accessKeyId, bucketUrl, provider, secretAccessKey }
+source: optional object { accessKeyId, bucketUrl, provider, secretAccessKey }
 
 General S3-compatible provider to copy objects from.
 
@@ -358,7 +358,7 @@ Secret Access Key of an IAM credential (ideally scoped to a single S3 bucket).
 
 <summary>
 
-R2EnableSippyAzure object {destination, source }
+R2EnableSippyAzure object { destination, source }
 
 </summary>
 
@@ -366,7 +366,7 @@ R2EnableSippyAzure object {destination, source }
 
 <summary>
 
-destination: optional object {accessKeyId, provider, secretAccessKey }
+destination: optional object { accessKeyId, provider, secretAccessKey }
 
 R2 bucket to copy objects to.
 
@@ -400,7 +400,7 @@ Sippy will use this token when writing objects to R2, so it is best to scope thi
 
 <summary>
 
-source: optional object {accountKey, accountName, container, 2 more }
+source: optional object { accountKey, accountName, container, 2 more }
 
 Azure Blob Storage container to copy objects from.
 
@@ -474,7 +474,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -506,7 +506,7 @@ result: <a href="https://developers.cloudflare.com/api/resources/r2#(resource)%2
 
 <summary>
 
-destination: optional object {accessKeyId, account, bucket, provider }
+destination: optional object { accessKeyId, account, bucket, provider }
 
 Details about the configured destination bucket.
 
@@ -546,7 +546,7 @@ State of Sippy for this bucket.
 
 <summary>
 
-source: optional object {bucket, bucketUrl, container, 2 more }
+source: optional object { bucket, bucketUrl, container, 2 more }
 
 Details about the configured source bucket.
 
@@ -574,7 +574,7 @@ Name of the Azure Blob Storage container (Azure only).
 
 <summary>
 
-provider: optional "aws"or "gcs"or "s3"or "azure"
+provider: optional "aws" or "gcs" or "s3" or "azure"
 
 </summary>
 

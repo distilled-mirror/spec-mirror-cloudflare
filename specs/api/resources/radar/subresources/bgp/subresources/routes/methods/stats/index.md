@@ -72,7 +72,7 @@ Filters results by Autonomous System. Specify a single Autonomous System Number 
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -108,7 +108,7 @@ minLength2
 
 <summary>
 
-result: object {meta, stats }
+result: object { meta, stats }
 
 </summary>
 
@@ -116,7 +116,7 @@ result: object {meta, stats }
 
 <summary>
 
-meta: object {data\_time, query\_time, total\_peers }
+meta: object { data\_time, query\_time, total\_peers }
 
 </summary>
 
@@ -140,7 +140,7 @@ total\_peers: number
 
 <summary>
 
-stats: object {distinct\_origins, distinct\_origins\_ipv4, distinct\_origins\_ipv6, 15 more }
+stats: object { distinct\_origins, distinct\_origins\_ipv4, distinct\_origins\_ipv6, 15 more }
 
 </summary>
 

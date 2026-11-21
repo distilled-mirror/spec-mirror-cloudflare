@@ -60,7 +60,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Access: Audit Logs Read`
+`Access: Users Write``Access: Users Read``Access: Audit Logs Read``Zero Trust Read``Zero Trust Write``Access: Organizations, Identity Providers, and Groups Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -86,7 +86,7 @@ maxLength36
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -108,7 +108,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -128,7 +128,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -150,7 +150,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -176,7 +176,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional array of object {expiration, metadata, name }
+result: optional array of object { expiration, metadata, name }
 
 </summary>
 
@@ -188,7 +188,7 @@ expiration: optional number
 
 <summary>
 
-metadata: optional object {apps, expires, iat, 2 more }
+metadata: optional object { apps, expires, iat, 2 more }
 
 </summary>
 
@@ -196,7 +196,7 @@ metadata: optional object {apps, expires, iat, 2 more }
 
 <summary>
 
-apps: optional map\[object {hostname, name, type, uid } ]
+apps: optional map\[object { hostname, name, type, uid } ]
 
 </summary>
 
@@ -252,7 +252,7 @@ name: optional string
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

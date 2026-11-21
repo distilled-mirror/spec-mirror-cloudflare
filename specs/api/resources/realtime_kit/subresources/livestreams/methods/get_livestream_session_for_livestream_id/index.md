@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Realtime Admin``Realtime`
+`Realtime Read``Realtime Admin``Realtime`
 
 ##### P ath ParametersExpand Collapse
 
@@ -90,6 +90,8 @@ per\_page: optional number
 
 Number of results per page.
 
+minimum1
+
 [Link to this property](#)%20realtime_kit.livestreams%20%3E%20(method)%20get_livestream_session_for_livestream_id%20%3E%20(params)%20default%20%3E%20(param)%20per_page%20%3E%20(schema)>)
 
 ##### ReturnsExpand Collapse
@@ -98,7 +100,7 @@ Number of results per page.
 
 <summary>
 
-data: object {livestream, sessions }
+data: object { livestream, sessions }
 
 </summary>
 
@@ -106,7 +108,7 @@ data: object {livestream, sessions }
 
 <summary>
 
-livestream: object {id, created\_at, disabled, 9 more }
+livestream: object { id, created\_at, disabled, 9 more }
 
 </summary>
 
@@ -172,7 +174,7 @@ The web address that viewers can use to watch the livestream.
 
 <summary>
 
-status: "LIVE"or "IDLE"or "ERRORED"or 2 more
+status: "LIVE" or "IDLE" or "ERRORED" or 2 more
 
 Status of the livestream.
 
@@ -226,7 +228,7 @@ formatdate-time
 
 <summary>
 
-sessions: array of object {id, created\_at, err\_message, 7 more }
+sessions: array of object { id, created\_at, err\_message, 7 more }
 
 </summary>
 
@@ -316,7 +318,7 @@ The total view time for which the viewers watched the stream.
 
 <summary>
 
-paging: object {end\_offset, start\_offset, total\_count }
+paging: object { end\_offset, start\_offset, total\_count }
 
 </summary>
 

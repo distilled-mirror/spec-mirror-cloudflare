@@ -110,7 +110,7 @@ minLength1
 
 <summary>
 
-rules: array of object {conditions, priority, serve\_variation, rollout }
+rules: array of object { conditions, priority, serve\_variation, rollout }
 
 Targeting rules evaluated in ascending <code>priority</code>; the first matching rule wins. An empty array means the flag always serves <code>default_variation</code>.
 
@@ -120,7 +120,7 @@ Targeting rules evaluated in ascending <code>priority</code>; the first matching
 
 <summary>
 
-conditions: array of object {attribute, operator, value } or object {clauses, logical\_operator }
+conditions: array of object { attribute, operator, value } or object { clauses, logical\_operator }
 
 Conditions the context must satisfy for this rule to match. An empty array matches all contexts.
 
@@ -132,7 +132,7 @@ One of the following:
 
 <summary>
 
-FlagshipBaseCondition object {attribute, operator, value }
+FlagshipBaseCondition object { attribute, operator, value }
 
 </summary>
 
@@ -148,7 +148,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 10 more
+operator: "equals" or "not\_equals" or "greater\_than" or 10 more
 
 </summary>
 
@@ -214,7 +214,7 @@ One of the following:
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 </summary>
 
@@ -252,7 +252,7 @@ array of unknown
 
 <summary>
 
-FlagshipLogicalCondition object {clauses, logical\_operator }
+FlagshipLogicalCondition object { clauses, logical\_operator }
 
 </summary>
 
@@ -260,7 +260,7 @@ FlagshipLogicalCondition object {clauses, logical\_operator }
 
 <summary>
 
-clauses: array of object {attribute, operator, value } or object {clauses, logical\_operator }
+clauses: array of object { attribute, operator, value } or object { clauses, logical\_operator }
 
 </summary>
 
@@ -270,7 +270,7 @@ One of the following:
 
 <summary>
 
-FlagshipBaseCondition object {attribute, operator, value }
+FlagshipBaseCondition object { attribute, operator, value }
 
 </summary>
 
@@ -286,7 +286,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 10 more
+operator: "equals" or "not\_equals" or "greater\_than" or 10 more
 
 </summary>
 
@@ -352,7 +352,7 @@ One of the following:
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 </summary>
 
@@ -390,7 +390,7 @@ array of unknown
 
 <summary>
 
-FlagshipLogicalCondition1 object {clauses, logical\_operator }
+FlagshipLogicalCondition1 object { clauses, logical\_operator }
 
 </summary>
 
@@ -398,7 +398,7 @@ FlagshipLogicalCondition1 object {clauses, logical\_operator }
 
 <summary>
 
-clauses: array of object {attribute, operator, value } or object {clauses, logical\_operator }
+clauses: array of object { attribute, operator, value } or object { clauses, logical\_operator }
 
 </summary>
 
@@ -408,7 +408,7 @@ One of the following:
 
 <summary>
 
-FlagshipBaseCondition object {attribute, operator, value }
+FlagshipBaseCondition object { attribute, operator, value }
 
 </summary>
 
@@ -424,7 +424,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 10 more
+operator: "equals" or "not\_equals" or "greater\_than" or 10 more
 
 </summary>
 
@@ -490,7 +490,7 @@ One of the following:
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 </summary>
 
@@ -528,7 +528,7 @@ array of unknown
 
 <summary>
 
-FlagshipLogicalCondition2 object {clauses, logical\_operator }
+FlagshipLogicalCondition2 object { clauses, logical\_operator }
 
 </summary>
 
@@ -536,7 +536,7 @@ FlagshipLogicalCondition2 object {clauses, logical\_operator }
 
 <summary>
 
-clauses: array of object {attribute, operator, value } or object {clauses, logical\_operator }
+clauses: array of object { attribute, operator, value } or object { clauses, logical\_operator }
 
 </summary>
 
@@ -546,7 +546,7 @@ One of the following:
 
 <summary>
 
-FlagshipBaseCondition object {attribute, operator, value }
+FlagshipBaseCondition object { attribute, operator, value }
 
 </summary>
 
@@ -562,7 +562,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 10 more
+operator: "equals" or "not\_equals" or "greater\_than" or 10 more
 
 </summary>
 
@@ -628,7 +628,7 @@ One of the following:
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 </summary>
 
@@ -666,7 +666,7 @@ array of unknown
 
 <summary>
 
-FlagshipLogicalCondition3 object {clauses, logical\_operator }
+FlagshipLogicalCondition3 object { clauses, logical\_operator }
 
 </summary>
 
@@ -674,7 +674,7 @@ FlagshipLogicalCondition3 object {clauses, logical\_operator }
 
 <summary>
 
-clauses: array of object {attribute, operator, value } or object {clauses, logical\_operator }
+clauses: array of object { attribute, operator, value } or object { clauses, logical\_operator }
 
 </summary>
 
@@ -684,7 +684,7 @@ One of the following:
 
 <summary>
 
-FlagshipBaseCondition object {attribute, operator, value }
+FlagshipBaseCondition object { attribute, operator, value }
 
 </summary>
 
@@ -700,7 +700,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 10 more
+operator: "equals" or "not\_equals" or "greater\_than" or 10 more
 
 </summary>
 
@@ -766,7 +766,7 @@ One of the following:
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 </summary>
 
@@ -804,7 +804,7 @@ array of unknown
 
 <summary>
 
-FlagshipLogicalCondition4 object {clauses, logical\_operator }
+FlagshipLogicalCondition4 object { clauses, logical\_operator }
 
 </summary>
 
@@ -812,7 +812,7 @@ FlagshipLogicalCondition4 object {clauses, logical\_operator }
 
 <summary>
 
-clauses: array of object {attribute, operator, value }
+clauses: array of object { attribute, operator, value }
 
 </summary>
 
@@ -828,7 +828,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 10 more
+operator: "equals" or "not\_equals" or "greater\_than" or 10 more
 
 </summary>
 
@@ -894,7 +894,7 @@ One of the following:
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 </summary>
 
@@ -932,7 +932,7 @@ array of unknown
 
 <summary>
 
-logical\_operator: "AND"or "OR"
+logical\_operator: "AND" or "OR"
 
 </summary>
 
@@ -962,7 +962,7 @@ One of the following:
 
 <summary>
 
-logical\_operator: "AND"or "OR"
+logical\_operator: "AND" or "OR"
 
 </summary>
 
@@ -992,7 +992,7 @@ One of the following:
 
 <summary>
 
-logical\_operator: "AND"or "OR"
+logical\_operator: "AND" or "OR"
 
 </summary>
 
@@ -1022,7 +1022,7 @@ One of the following:
 
 <summary>
 
-logical\_operator: "AND"or "OR"
+logical\_operator: "AND" or "OR"
 
 </summary>
 
@@ -1052,7 +1052,7 @@ One of the following:
 
 <summary>
 
-logical\_operator: "AND"or "OR"
+logical\_operator: "AND" or "OR"
 
 </summary>
 
@@ -1098,7 +1098,7 @@ minLength1
 
 <summary>
 
-rollout: optional object {percentage, attribute }
+rollout: optional object { percentage, attribute }
 
 </summary>
 
@@ -1136,7 +1136,7 @@ minLength1
 
 <summary>
 
-variations: map\[stringor numberor booleanor 2 more]
+variations: map\[string or number or boolean or 2 more]
 
 Map of variation name to value. All values share the same type (boolean, string, number, or JSON object/array), and each serialized value stays within 10KB.
 
@@ -1180,7 +1180,7 @@ maxLength512
 
 <summary>
 
-metadata: optional map\[booleanor stringor number]
+metadata: optional map\[boolean or string or number]
 
 Key-value metadata associated with the flag. <code>null</code> or an empty object clears existing metadata; omission semantics depend on the endpoint (PUT clears it, PATCH preserves it).
 
@@ -1208,7 +1208,7 @@ number
 
 <summary>
 
-Deprecatedtype: optional "boolean"or "string"or "number"or "json"
+Deprecatedtype: optional "boolean" or "string" or "number" or "json"
 
 Deprecated compatibility field. Omit it; the API ignores this value and infers the type from the flag’s variations.
 
@@ -1242,7 +1242,7 @@ One of the following:
 
 <summary>
 
-errors: array of object {message }
+errors: array of object { message }
 
 </summary>
 
@@ -1258,7 +1258,7 @@ message: string
 
 <summary>
 
-messages: array of object {message }
+messages: array of object { message }
 
 </summary>
 
@@ -1274,7 +1274,7 @@ message: string
 
 <summary>
 
-result: object {default\_variation, enabled, key, 7 more }
+result: object { default\_variation, enabled, key, 7 more }
 
 </summary>
 
@@ -1306,7 +1306,7 @@ minLength1
 
 <summary>
 
-rules: array of object {conditions, priority, serve\_variation, rollout }
+rules: array of object { conditions, priority, serve\_variation, rollout }
 
 Targeting rules evaluated in ascending <code>priority</code>; the first matching rule wins. An empty array means the flag always serves <code>default_variation</code>.
 
@@ -1316,7 +1316,7 @@ Targeting rules evaluated in ascending <code>priority</code>; the first matching
 
 <summary>
 
-conditions: array of object {attribute, operator, value } or object {clauses, logical\_operator }
+conditions: array of object { attribute, operator, value } or object { clauses, logical\_operator }
 
 Conditions the context must satisfy for this rule to match. An empty array matches all contexts.
 
@@ -1328,7 +1328,7 @@ One of the following:
 
 <summary>
 
-FlagshipBaseCondition object {attribute, operator, value }
+FlagshipBaseCondition object { attribute, operator, value }
 
 </summary>
 
@@ -1344,7 +1344,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 10 more
+operator: "equals" or "not\_equals" or "greater\_than" or 10 more
 
 </summary>
 
@@ -1410,7 +1410,7 @@ One of the following:
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 </summary>
 
@@ -1448,7 +1448,7 @@ array of unknown
 
 <summary>
 
-FlagshipLogicalCondition object {clauses, logical\_operator }
+FlagshipLogicalCondition object { clauses, logical\_operator }
 
 </summary>
 
@@ -1456,7 +1456,7 @@ FlagshipLogicalCondition object {clauses, logical\_operator }
 
 <summary>
 
-clauses: array of object {attribute, operator, value } or object {clauses, logical\_operator }
+clauses: array of object { attribute, operator, value } or object { clauses, logical\_operator }
 
 </summary>
 
@@ -1466,7 +1466,7 @@ One of the following:
 
 <summary>
 
-FlagshipBaseCondition object {attribute, operator, value }
+FlagshipBaseCondition object { attribute, operator, value }
 
 </summary>
 
@@ -1482,7 +1482,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 10 more
+operator: "equals" or "not\_equals" or "greater\_than" or 10 more
 
 </summary>
 
@@ -1548,7 +1548,7 @@ One of the following:
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 </summary>
 
@@ -1586,7 +1586,7 @@ array of unknown
 
 <summary>
 
-FlagshipLogicalCondition1 object {clauses, logical\_operator }
+FlagshipLogicalCondition1 object { clauses, logical\_operator }
 
 </summary>
 
@@ -1594,7 +1594,7 @@ FlagshipLogicalCondition1 object {clauses, logical\_operator }
 
 <summary>
 
-clauses: array of object {attribute, operator, value } or object {clauses, logical\_operator }
+clauses: array of object { attribute, operator, value } or object { clauses, logical\_operator }
 
 </summary>
 
@@ -1604,7 +1604,7 @@ One of the following:
 
 <summary>
 
-FlagshipBaseCondition object {attribute, operator, value }
+FlagshipBaseCondition object { attribute, operator, value }
 
 </summary>
 
@@ -1620,7 +1620,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 10 more
+operator: "equals" or "not\_equals" or "greater\_than" or 10 more
 
 </summary>
 
@@ -1686,7 +1686,7 @@ One of the following:
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 </summary>
 
@@ -1724,7 +1724,7 @@ array of unknown
 
 <summary>
 
-FlagshipLogicalCondition2 object {clauses, logical\_operator }
+FlagshipLogicalCondition2 object { clauses, logical\_operator }
 
 </summary>
 
@@ -1732,7 +1732,7 @@ FlagshipLogicalCondition2 object {clauses, logical\_operator }
 
 <summary>
 
-clauses: array of object {attribute, operator, value } or object {clauses, logical\_operator }
+clauses: array of object { attribute, operator, value } or object { clauses, logical\_operator }
 
 </summary>
 
@@ -1742,7 +1742,7 @@ One of the following:
 
 <summary>
 
-FlagshipBaseCondition object {attribute, operator, value }
+FlagshipBaseCondition object { attribute, operator, value }
 
 </summary>
 
@@ -1758,7 +1758,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 10 more
+operator: "equals" or "not\_equals" or "greater\_than" or 10 more
 
 </summary>
 
@@ -1824,7 +1824,7 @@ One of the following:
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 </summary>
 
@@ -1862,7 +1862,7 @@ array of unknown
 
 <summary>
 
-FlagshipLogicalCondition3 object {clauses, logical\_operator }
+FlagshipLogicalCondition3 object { clauses, logical\_operator }
 
 </summary>
 
@@ -1870,7 +1870,7 @@ FlagshipLogicalCondition3 object {clauses, logical\_operator }
 
 <summary>
 
-clauses: array of object {attribute, operator, value } or object {clauses, logical\_operator }
+clauses: array of object { attribute, operator, value } or object { clauses, logical\_operator }
 
 </summary>
 
@@ -1880,7 +1880,7 @@ One of the following:
 
 <summary>
 
-FlagshipBaseCondition object {attribute, operator, value }
+FlagshipBaseCondition object { attribute, operator, value }
 
 </summary>
 
@@ -1896,7 +1896,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 10 more
+operator: "equals" or "not\_equals" or "greater\_than" or 10 more
 
 </summary>
 
@@ -1962,7 +1962,7 @@ One of the following:
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 </summary>
 
@@ -2000,7 +2000,7 @@ array of unknown
 
 <summary>
 
-FlagshipLogicalCondition4 object {clauses, logical\_operator }
+FlagshipLogicalCondition4 object { clauses, logical\_operator }
 
 </summary>
 
@@ -2008,7 +2008,7 @@ FlagshipLogicalCondition4 object {clauses, logical\_operator }
 
 <summary>
 
-clauses: array of object {attribute, operator, value }
+clauses: array of object { attribute, operator, value }
 
 </summary>
 
@@ -2024,7 +2024,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 10 more
+operator: "equals" or "not\_equals" or "greater\_than" or 10 more
 
 </summary>
 
@@ -2090,7 +2090,7 @@ One of the following:
 
 <summary>
 
-value: stringor numberor booleanor 2 more
+value: string or number or boolean or 2 more
 
 </summary>
 
@@ -2128,7 +2128,7 @@ array of unknown
 
 <summary>
 
-logical\_operator: "AND"or "OR"
+logical\_operator: "AND" or "OR"
 
 </summary>
 
@@ -2158,7 +2158,7 @@ One of the following:
 
 <summary>
 
-logical\_operator: "AND"or "OR"
+logical\_operator: "AND" or "OR"
 
 </summary>
 
@@ -2188,7 +2188,7 @@ One of the following:
 
 <summary>
 
-logical\_operator: "AND"or "OR"
+logical\_operator: "AND" or "OR"
 
 </summary>
 
@@ -2218,7 +2218,7 @@ One of the following:
 
 <summary>
 
-logical\_operator: "AND"or "OR"
+logical\_operator: "AND" or "OR"
 
 </summary>
 
@@ -2248,7 +2248,7 @@ One of the following:
 
 <summary>
 
-logical\_operator: "AND"or "OR"
+logical\_operator: "AND" or "OR"
 
 </summary>
 
@@ -2294,7 +2294,7 @@ minLength1
 
 <summary>
 
-rollout: optional object {percentage, attribute }
+rollout: optional object { percentage, attribute }
 
 </summary>
 
@@ -2332,7 +2332,7 @@ minLength1
 
 <summary>
 
-type: "boolean"or "string"or "number"or "json"
+type: "boolean" or "string" or "number" or "json"
 
 Server-inferred value type shared by all of the flag’s variations.
 
@@ -2364,7 +2364,7 @@ One of the following:
 
 <summary>
 
-variations: map\[stringor numberor booleanor 2 more]
+variations: map\[string or number or boolean or 2 more]
 
 Map of variation name to value. All values share the same type (boolean, string, number, or JSON object/array), and each serialized value stays within 10KB.
 
@@ -2408,7 +2408,7 @@ maxLength512
 
 <summary>
 
-metadata: optional map\[booleanor stringor number]
+metadata: optional map\[boolean or string or number]
 
 Key-value metadata associated with the flag. Returned only when the flag has metadata.
 

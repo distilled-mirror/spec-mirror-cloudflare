@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Realtime Admin``Realtime`
+`Realtime Read``Realtime Admin``Realtime`
 
 ##### P ath ParametersExpand Collapse
 
@@ -104,7 +104,7 @@ minimum0
 
 <summary>
 
-data: array of object {id, created\_at, custom\_participant\_id, 4 more }
+data: array of object { id, created\_at, custom\_participant\_id, 4 more }
 
 </summary>
 
@@ -166,7 +166,7 @@ formaturi
 
 <summary>
 
-paging: object {end\_offset, start\_offset, total\_count }
+paging: object { end\_offset, start\_offset, total\_count }
 
 </summary>
 

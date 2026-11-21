@@ -48,7 +48,7 @@ DELETE/accounts/{account\_id}/load\_balancers/monitors/{monitor\_id}
 
 <summary>
 
-Monitor object {id, allow\_insecure, consecutive\_down, 16 more }
+Monitor object { id, allow\_insecure, consecutive\_down, 16 more }
 
 </summary>
 
@@ -158,7 +158,7 @@ The timeout (in seconds) before marking the health check as failed.
 
 <summary>
 
-type: optional "http"or "https"or "tcp"or 3 more
+type: optional "http" or "https" or "tcp" or 3 more
 
 The protocol to use for the health check. Currently supported protocols are ‘HTTP’,‘HTTPS’, ‘TCP’, ‘ICMP-PING’, ‘UDP-ICMP’, and ‘SMTP’.
 
@@ -202,7 +202,7 @@ One of the following:
 
 <summary>
 
-MonitorDeleteResponse object {id }
+MonitorDeleteResponse object { id }
 
 </summary>
 
@@ -226,7 +226,7 @@ POST/accounts/{account\_id}/load\_balancers/monitors/{monitor\_id}/preview
 
 <summary>
 
-PreviewCreateResponse object {pools, preview\_id }
+PreviewCreateResponse object { pools, preview\_id }
 
 </summary>
 
@@ -256,7 +256,7 @@ GET/accounts/{account\_id}/load\_balancers/monitors/{monitor\_id}/references
 
 <summary>
 
-ReferenceGetResponse object {reference\_type, resource\_id, resource\_name, resource\_type }
+ReferenceGetResponse object { reference\_type, resource\_id, resource\_name, resource\_type }
 
 </summary>
 
@@ -264,7 +264,7 @@ ReferenceGetResponse object {reference\_type, resource\_id, resource\_name, reso
 
 <summary>
 
-reference\_type: optional "\*"or "referral"or "referrer"
+reference\_type: optional "\*" or "referral" or "referrer"
 
 </summary>
 

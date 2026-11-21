@@ -32,7 +32,7 @@ GET/accounts/{account\_id}/one/applications/{application\_id}/auth-methods
 
 <summary>
 
-AuthMethodListResponse object {id, display\_name, human\_interaction\_required, 4 more }
+AuthMethodListResponse object { id, display\_name, human\_interaction\_required, 4 more }
 
 Detailed auth method info including credentials schema and instructions.
 
@@ -60,7 +60,7 @@ Whether setup requires human interaction or integration can be created purely us
 
 <summary>
 
-instructions: object {markdown }
+instructions: object { markdown }
 
 Step-by-step instructions for obtaining credentials.
 

@@ -28,7 +28,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 DELETE/zones/{zone\_id}/web3/hostnames/{identifier}/ipfs\_universal\_path/content\_list/entries/{content\_list\_entry\_identifier}
 
-Delete IPFS Universal Path Gateway Content List Entry
+Deletes an entry from an IPFS Universal Path Gateway content list.
 
 ##### Security
 
@@ -118,7 +118,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -160,7 +160,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -180,7 +180,7 @@ pointer: optional string
 
 <summary>
 
-result: object {id }
+result: object { id }
 
 </summary>
 

@@ -86,7 +86,7 @@ A list of rule identifiers to delete.
 
 <summary>
 
-rules: optional array of object {id, host, inclusive, 2 more }
+rules: optional array of object { id, host, inclusive, 2 more }
 
 A list of rules to create or update.
 
@@ -146,7 +146,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -188,7 +188,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -214,7 +214,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {rules, ruleset }
+result: optional object { rules, ruleset }
 
 </summary>
 
@@ -276,7 +276,7 @@ priority: optional number
 
 <summary>
 
-ruleset: optional object {id, enabled, zone\_name, zone\_tag }
+ruleset: optional object { id, enabled, zone\_name, zone\_tag }
 
 </summary>
 

@@ -44,7 +44,7 @@ POST/accounts/{account\_id}/devices/physical-devices/{device\_id}/revoke
 
 <summary>
 
-DeviceListResponse object {id, active\_registrations, created\_at, 18 more }
+DeviceListResponse object { id, active\_registrations, created\_at, 18 more }
 
 A WARP Device.
 
@@ -120,7 +120,7 @@ A string that uniquely identifies the hardware or virtual machine (VM).
 
 <summary>
 
-last\_seen\_registration: optional object {policy }
+last\_seen\_registration: optional object { policy }
 
 The last seen registration for the device.
 
@@ -130,7 +130,7 @@ The last seen registration for the device.
 
 <summary>
 
-policy: optional object {id, default, deleted, 2 more }
+policy: optional object { id, default, deleted, 2 more }
 
 A summary of the device profile evaluated for the registration.
 
@@ -178,7 +178,7 @@ The RFC3339 timestamp of when the device settings profile last changed for the r
 
 <summary>
 
-last\_seen\_user: optional object {id, email, name }
+last\_seen\_user: optional object { id, email, name }
 
 The last user to use the WARP device.
 
@@ -266,7 +266,7 @@ The device serial number.
 
 <summary>
 
-DeviceGetResponse object {id, active\_registrations, created\_at, 18 more }
+DeviceGetResponse object { id, active\_registrations, created\_at, 18 more }
 
 A WARP Device.
 
@@ -342,7 +342,7 @@ A string that uniquely identifies the hardware or virtual machine (VM).
 
 <summary>
 
-last\_seen\_registration: optional object {policy }
+last\_seen\_registration: optional object { policy }
 
 The last seen registration for the device.
 
@@ -352,7 +352,7 @@ The last seen registration for the device.
 
 <summary>
 
-policy: optional object {id, default, deleted, 2 more }
+policy: optional object { id, default, deleted, 2 more }
 
 A summary of the device profile evaluated for the registration.
 
@@ -400,7 +400,7 @@ The RFC3339 timestamp of when the device settings profile last changed for the r
 
 <summary>
 
-last\_seen\_user: optional object {id, email, name }
+last\_seen\_user: optional object { id, email, name }
 
 The last user to use the WARP device.
 

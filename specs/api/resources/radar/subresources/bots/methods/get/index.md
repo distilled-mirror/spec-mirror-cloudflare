@@ -74,7 +74,7 @@ maxLength100
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -100,7 +100,7 @@ One of the following:
 
 <summary>
 
-result: object {bot }
+result: object { bot }
 
 </summary>
 
@@ -108,7 +108,7 @@ result: object {bot }
 
 <summary>
 
-bot: object {accessLevel, categories, category, 12 more }
+bot: object { accessLevel, categories, category, 12 more }
 
 </summary>
 

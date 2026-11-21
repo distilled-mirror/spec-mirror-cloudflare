@@ -28,7 +28,7 @@ GET/zones/{zone\_id}/waiting\_rooms/{waiting\_room\_id}/status
 
 <summary>
 
-StatusGetResponse object {estimated\_queued\_users, estimated\_total\_active\_users, event\_id, 2 more }
+StatusGetResponse object { estimated\_queued\_users, estimated\_total\_active\_users, event\_id, 2 more }
 
 </summary>
 
@@ -52,7 +52,7 @@ max\_estimated\_time\_minutes: optional number
 
 <summary>
 
-status: optional "event\_prequeueing"or "not\_queueing"or "queueing"or "suspended"
+status: optional "event\_prequeueing" or "not\_queueing" or "queueing" or "suspended"
 
 </summary>
 

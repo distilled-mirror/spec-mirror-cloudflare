@@ -72,7 +72,7 @@ maxLength32
 
 <summary>
 
-device\_type: optional "MANAGED"or "LICENSED"
+device\_type: optional "MANAGED" or "LICENSED"
 
 Filter connectors by device type.
 
@@ -122,7 +122,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -164,7 +164,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -184,7 +184,7 @@ pointer: optional string
 
 <summary>
 
-result: array of object {id, activated, interrupt\_window\_days\_of\_week, 10 more }
+result: array of object { id, activated, interrupt\_window\_days\_of\_week, 10 more }
 
 </summary>
 
@@ -200,7 +200,7 @@ activated: boolean
 
 <summary>
 
-interrupt\_window\_days\_of\_week: array of "Sunday"or "Monday"or "Tuesday"or 4 more
+interrupt\_window\_days\_of\_week: array of "Sunday" or "Monday" or "Tuesday" or 4 more
 
 Allowed days of the week for upgrades. Default is all days.
 
@@ -274,7 +274,7 @@ timezone: string
 
 <summary>
 
-device: optional object {id, serial\_number, type }
+device: optional object { id, serial\_number, type }
 
 </summary>
 
@@ -290,7 +290,7 @@ serial\_number: optional string
 
 <summary>
 
-type: optional "MANAGED"or "LICENSED"
+type: optional "MANAGED" or "LICENSED"
 
 </summary>
 

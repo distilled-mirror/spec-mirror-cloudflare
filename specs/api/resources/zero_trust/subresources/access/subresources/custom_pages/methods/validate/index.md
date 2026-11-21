@@ -58,7 +58,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Access: Custom Pages Write`
+`Access: Custom Pages Write``Zero Trust Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -82,7 +82,7 @@ The Liquid template to validate.
 
 <summary>
 
-type: "identity\_denied"or "forbidden"or "login"or "interstitial"
+type: "identity\_denied" or "forbidden" or "login" or "interstitial"
 
 Custom page type.
 
@@ -122,7 +122,7 @@ Contract version to validate against; omit for the latest.
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -144,7 +144,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -164,7 +164,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -186,7 +186,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -212,7 +212,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {errors, page\_type, version, warnings }
+result: optional object { errors, page\_type, version, warnings }
 
 The result of validating a template’s content.
 
@@ -222,7 +222,7 @@ The result of validating a template’s content.
 
 <summary>
 
-errors: array of object {message, tier, ref }
+errors: array of object { message, tier, ref }
 
 Blocking findings; a non-empty list means the template cannot be published.
 
@@ -254,7 +254,7 @@ Optional pointer to the part of the template the finding refers to.
 
 <summary>
 
-page\_type: "identity\_denied"or "forbidden"or "login"or "interstitial"
+page\_type: "identity\_denied" or "forbidden" or "login" or "interstitial"
 
 Custom page type.
 
@@ -292,7 +292,7 @@ The contract version the template was validated against.
 
 <summary>
 
-warnings: array of object {message, tier, ref }
+warnings: array of object { message, tier, ref }
 
 Advisory findings that do not block publishing.
 

@@ -30,7 +30,7 @@ PATCH/accounts/{account\_id}/mnm/rules/{rule\_id}/advertisement
 
 <summary>
 
-Advertisement object {automatic\_advertisement }
+Advertisement object { automatic\_advertisement }
 
 </summary>
 

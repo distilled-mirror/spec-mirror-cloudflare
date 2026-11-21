@@ -48,7 +48,7 @@ DELETE/accounts/{account\_id}/devices/posture/integration/{integration\_id}
 
 <summary>
 
-Integration object {id, config, interval, 2 more }
+Integration object { id, config, interval, 2 more }
 
 </summary>
 
@@ -64,7 +64,7 @@ maxLength36
 
 <summary>
 
-config: optional object {api\_url, auth\_url, client\_id }
+config: optional object { api\_url, auth\_url, client\_id }
 
 The configuration object containing third-party integration information.
 
@@ -108,7 +108,7 @@ The name of the device posture integration.
 
 <summary>
 
-type: optional "workspace\_one"or "crowdstrike\_s2s"or "uptycs"or 5 more
+type: optional "workspace\_one" or "crowdstrike\_s2s" or "uptycs" or 5 more
 
 The type of device posture integration.
 
@@ -160,7 +160,7 @@ One of the following:
 
 <summary>
 
-IntegrationDeleteResponse = unknownor string
+IntegrationDeleteResponse = unknown or string
 
 </summary>
 

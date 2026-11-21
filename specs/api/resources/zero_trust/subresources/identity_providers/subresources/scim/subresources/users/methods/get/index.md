@@ -60,7 +60,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Access: Organizations, Identity Providers, and Groups Write``Access: Organizations, Identity Providers, and Groups Read`
+`Individual Access Identity Provider Read``Individual Access Identity Provider Admin``Access: Identity Providers Write``Access: Identity Providers Read``Zero Trust Read``Zero Trust Write``Access: Organizations, Identity Providers, and Groups Write``Access: Organizations, Identity Providers, and Groups Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -94,7 +94,7 @@ maxLength32
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -116,7 +116,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -136,7 +136,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -158,7 +158,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -210,7 +210,7 @@ The name of the SCIM User resource.
 
 <summary>
 
-emails: optional array of object {primary, type, value }
+emails: optional array of object { primary, type, value }
 
 </summary>
 
@@ -248,7 +248,7 @@ The IdP-generated Id of the SCIM resource.
 
 <summary>
 
-meta: optional object {created, lastModified }
+meta: optional object { created, lastModified }
 
 The metadata of the SCIM resource.
 

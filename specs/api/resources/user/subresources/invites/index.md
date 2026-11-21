@@ -36,7 +36,7 @@ PATCH/user/invites/{invite\_id}
 
 <summary>
 
-Invite object {invited\_member\_id, organization\_id, id, 8 more }
+Invite object { invited\_member\_id, organization\_id, id, 8 more }
 
 </summary>
 
@@ -118,7 +118,7 @@ List of role names the membership has for this account.
 
 <summary>
 
-status: optional "pending"or "accepted"or "rejected"or "expired"
+status: optional "pending" or "accepted" or "rejected" or "expired"
 
 Current status of the invitation.
 

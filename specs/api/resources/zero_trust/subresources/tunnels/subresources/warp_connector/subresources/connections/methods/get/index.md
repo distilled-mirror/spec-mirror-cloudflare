@@ -88,7 +88,7 @@ maxLength36
 
 <summary>
 
-errors: array of object {code, message, context }
+errors: array of object { code, message, context }
 
 </summary>
 
@@ -116,7 +116,7 @@ Optional error-specific context.
 
 <summary>
 
-messages: array of object {code, message, context }
+messages: array of object { code, message, context }
 
 </summary>
 
@@ -144,7 +144,7 @@ Optional error-specific context.
 
 <summary>
 
-result: array of object {id, arch, conns, 4 more }
+result: array of object { id, arch, conns, 4 more }
 
 </summary>
 
@@ -168,7 +168,7 @@ The cloudflared OS architecture used to establish this connection.
 
 <summary>
 
-conns: optional array of object {id, client\_id, client\_version, 3 more }
+conns: optional array of object { id, client\_id, client\_version, 3 more }
 
 The Mesh node connections between your origin and Cloudflare’s edge.
 
@@ -234,7 +234,7 @@ Features enabled for the Cloudflare Tunnel.
 
 <summary>
 
-ha\_status: optional "offline"or "passive"or "active"
+ha\_status: optional "offline" or "passive" or "active"
 
 The HA status of a Mesh node connector.
 
@@ -286,7 +286,7 @@ Whether the API call was successful
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object { count, page, per\_page, total\_count }
 
 </summary>
 

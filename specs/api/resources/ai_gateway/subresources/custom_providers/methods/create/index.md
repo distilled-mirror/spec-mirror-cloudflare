@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`AI Gateway Write`
+`AI Search Index Engine``Auto Rag Write Run Engine``AI Gateway Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -122,7 +122,7 @@ position: optional number
 
 <summary>
 
-result: object {id, base\_url, created\_at, 12 more }
+result: object { id, base\_url, created\_at, 12 more }
 
 </summary>
 

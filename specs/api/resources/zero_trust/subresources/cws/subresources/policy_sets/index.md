@@ -46,7 +46,7 @@ DELETE/accounts/{account\_id}/cws/policy-sets/{policy\_set\_id}
 
 <summary>
 
-PolicySet object {id, created\_at, exclude\_workload\_ids, 6 more }
+PolicySet object { id, created\_at, exclude\_workload\_ids, 6 more }
 
 </summary>
 
@@ -90,7 +90,7 @@ minLength1
 
 <summary>
 
-policies: array of object {enforce, policy\_id }
+policies: array of object { enforce, policy\_id }
 
 Member policies and their per-membership enforcement mode
 
@@ -142,7 +142,7 @@ maxLength1024
 
 <summary>
 
-PolicySetDeleteResponse object {id }
+PolicySetDeleteResponse object { id }
 
 </summary>
 

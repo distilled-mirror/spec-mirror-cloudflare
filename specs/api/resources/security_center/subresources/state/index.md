@@ -32,7 +32,7 @@ PUT/accounts/{account\_id}/security-center/state
 
 <summary>
 
-StateGetResponse object {recent\_dormant\_reactivation, scans\_enabled }
+StateGetResponse object { recent\_dormant\_reactivation, scans\_enabled }
 
 </summary>
 
@@ -56,7 +56,7 @@ Whether on-demand and scheduled scans are enabled for the account.
 
 <summary>
 
-StateUpdateResponse object {recent\_dormant\_reactivation, scans\_enabled }
+StateUpdateResponse object { recent\_dormant\_reactivation, scans\_enabled }
 
 </summary>
 

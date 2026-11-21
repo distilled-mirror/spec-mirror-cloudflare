@@ -84,7 +84,7 @@ minLength1
 
 <summary>
 
-errors: array of object {message }
+errors: array of object { message }
 
 </summary>
 
@@ -100,7 +100,7 @@ message: string
 
 <summary>
 
-messages: array of object {message }
+messages: array of object { message }
 
 </summary>
 
@@ -116,7 +116,7 @@ message: string
 
 <summary>
 
-result: object {id, created\_at, name, 2 more }
+result: object { id, created\_at, name, 2 more }
 
 </summary>
 

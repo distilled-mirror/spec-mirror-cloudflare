@@ -48,7 +48,7 @@ BatchNackResponse = unknown
 
 <summary>
 
-BatchExtendResponse object {leased\_until\_ms }
+BatchExtendResponse object { leased\_until\_ms }
 
 </summary>
 

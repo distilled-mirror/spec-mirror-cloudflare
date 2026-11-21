@@ -56,7 +56,7 @@ minLength1
 
 <summary>
 
-errors: array of object {code, message }
+errors: array of object { code, message }
 
 </summary>
 
@@ -76,7 +76,7 @@ message: optional string
 
 <summary>
 
-messages: array of object {code, message }
+messages: array of object { code, message }
 
 </summary>
 
@@ -100,7 +100,7 @@ success: boolean
 
 <summary>
 
-result: optional object {config, created, issuers, 3 more }
+result: optional object { config, created, issuers, 3 more }
 
 Relay with its auto-created default token pair (one full-access \[publish, subscribe] and one \[subscribe]-only), each with its one-time secret, wrapped in the issuers envelope.
 
@@ -110,7 +110,7 @@ Relay with its auto-created default token pair (one full-access \[publish, subsc
 
 <summary>
 
-config: object {upstreams }
+config: object { upstreams }
 
 Relay configuration. All sub-objects use whole-object replacement when present; omitted sub-objects preserve the existing value.
 
@@ -120,7 +120,7 @@ Relay configuration. All sub-objects use whole-object replacement when present; 
 
 <summary>
 
-upstreams: optional object {enabled, upstreams }
+upstreams: optional object { enabled, upstreams }
 
 Upstreams are external MOQT server publishers that a relay falls back to when it has no local publisher for a requested namespace/track.
 
@@ -134,7 +134,7 @@ enabled: optional boolean
 
 <summary>
 
-upstreams: optional array of object {url }
+upstreams: optional array of object { url }
 
 Ordered list of upstream MOQT server publishers. Each entry is an object (not a bare string) so per-upstream configuration can be added in the future without another breaking change.
 
@@ -170,7 +170,7 @@ formatdate-time
 
 <summary>
 
-issuers: array of object {cloudflare\_tokens, issuer, type }
+issuers: array of object { cloudflare\_tokens, issuer, type }
 
 Token collection (discriminated union on <code>type</code>). On create this holds the auto-created default pair, each including its one-time secret.
 
@@ -180,7 +180,7 @@ Token collection (discriminated union on <code>type</code>). On create this hold
 
 <summary>
 
-cloudflare\_tokens: array of object {created, expires, jti, 3 more }
+cloudflare\_tokens: array of object { created, expires, jti, 3 more }
 
 Always present (\[] when empty).
 
@@ -210,7 +210,7 @@ Token identity and registry key (32 hex chars).
 
 <summary>
 
-operations: array of "publish"or "subscribe"
+operations: array of "publish" or "subscribe"
 
 Signed allowlist of what the token may do. V1 coarse roles; the array form extends to fine-grained MoQT message names later without a breaking change.
 

@@ -84,7 +84,7 @@ maxLength36
 
 <summary>
 
-state: optional "review"or "ignored"
+state: optional "review" or "ignored"
 
 Mark state of operation in API Discovery
 
@@ -135,7 +135,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -177,7 +177,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -197,7 +197,7 @@ pointer: optional string
 
 <summary>
 
-result: object {state }
+result: object { state }
 
 </summary>
 
@@ -205,7 +205,7 @@ result: object {state }
 
 <summary>
 
-state: optional "review"or "saved"or "ignored"
+state: optional "review" or "saved" or "ignored"
 
 State of operation in API Discovery
 

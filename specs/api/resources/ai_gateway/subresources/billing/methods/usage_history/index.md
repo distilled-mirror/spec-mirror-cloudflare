@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`AI Gateway Write``AI Gateway Read`
+`AI Gateway Metadata Read``AI Search Index Engine``Auto Rag Write Run Engine``AI Gateway Write``AI Gateway Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -70,7 +70,7 @@ account\_id: string
 
 <summary>
 
-value\_grouping\_window: "day"or "hour"
+value\_grouping\_window: "day" or "hour"
 
 Grouping window for usage data.
 
@@ -108,7 +108,7 @@ Start time as Unix timestamp in milliseconds.
 
 <summary>
 
-errors: array of object {code, message }
+errors: array of object { code, message }
 
 </summary>
 
@@ -128,7 +128,7 @@ message: string
 
 <summary>
 
-messages: array of object {code, message }
+messages: array of object { code, message }
 
 </summary>
 
@@ -148,7 +148,7 @@ message: string
 
 <summary>
 
-result: object {history }
+result: object { history }
 
 </summary>
 
@@ -156,7 +156,7 @@ result: object {history }
 
 <summary>
 
-history: array of object {id, aggregated\_value, end\_time, start\_time }
+history: array of object { id, aggregated\_value, end\_time, start\_time }
 
 Usage cost per window of <code>value_grouping_window</code>.
 
@@ -202,7 +202,7 @@ success: true
 
 <summary>
 
-result\_info: optional object {has\_more, page, per\_page, total\_count }
+result\_info: optional object { has\_more, page, per\_page, total\_count }
 
 </summary>
 

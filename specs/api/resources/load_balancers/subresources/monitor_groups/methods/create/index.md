@@ -54,6 +54,10 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 </details>
 
+##### Accepted Permissions (at least one required)
+
+`Load Balancing: Monitors and Pools Write`
+
 ##### P ath ParametersExpand Collapse
 
 account\_id: string
@@ -76,7 +80,7 @@ A short description of the monitor group
 
 <summary>
 
-members: array of object {enabled, monitor\_id, monitoring\_only, 3 more }
+members: array of object { enabled, monitor\_id, monitoring\_only, 3 more }
 
 List of monitors in this group
 
@@ -154,7 +158,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -196,7 +200,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -236,7 +240,7 @@ A short description of the monitor group
 
 <summary>
 
-members: array of object {enabled, monitor\_id, monitoring\_only, 3 more }
+members: array of object { enabled, monitor\_id, monitoring\_only, 3 more }
 
 List of monitors in this group
 

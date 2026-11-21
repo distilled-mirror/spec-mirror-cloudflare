@@ -74,7 +74,7 @@ maxLength32
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -96,7 +96,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -116,7 +116,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -138,7 +138,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -218,7 +218,7 @@ Autonomous System Number (ASN) the prefix will be advertised under. Use 13335 fo
 
 <summary>
 
-asn\_ownership\_validation\_state: optional "pending"or "valid"or "missing"or "invalid"
+asn\_ownership\_validation\_state: optional "pending" or "valid" or "missing" or "invalid"
 
 State of ASN ownership validation for a customer-owned Autonomous System Number (ASN). Returned when an ASN ownership validation result exists. Omitted when validation does not apply, such as for Cloudflare-owned ASNs. Verification is reused for prefixes with the same account and ASN. Refer to <a href="https://developers.cloudflare.com/byoip/troubleshooting/prefix-validation/#asn-ownership-validation">ASN ownership validation states</a> for state meanings and resolutions.
 
@@ -250,7 +250,7 @@ One of the following:
 
 <summary>
 
-aspa\_validation\_state: optional "pending"or "valid"or "invalid"
+aspa\_validation\_state: optional "pending" or "valid" or "invalid"
 
 State of Autonomous System Provider Authorization (ASPA) validation for a customer-owned ASN. Returned when an ASPA validation result exists. Publishing an ASPA is optional. A published ASPA must authorize AS13335 as a provider. An invalid result blocks approval. If omitted, no ASPA validation result is available. Omission does not indicate successful validation or confirm that no ASPA exists. Refer to <a href="https://developers.cloudflare.com/byoip/troubleshooting/prefix-validation/#aspa-validation">ASPA validation states</a> for state meanings and resolutions, and <a href="https://developers.cloudflare.com/byoip/concepts/route-filtering-rpki/#aspa-authorization">ASPA authorization</a> for publication guidance.
 

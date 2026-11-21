@@ -60,7 +60,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Browser Rendering Write`
+`AI Search Index Engine``Auto Rag Write Run Engine``Browser Run Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -94,7 +94,7 @@ minimum60000
 
 <summary>
 
-guardrails: optional object {mode }
+guardrails: optional object { mode }
 
 Connection guardrails. Use <code>{ mode: 'readonly' }</code> to generate a view-only link.
 
@@ -112,7 +112,7 @@ mode: "readonly"
 
 <summary>
 
-mode: optional "devtools"or "tab"or "full"
+mode: optional "devtools" or "tab" or "full"
 
 UI mode: ‘devtools’ (Chrome DevTools), ‘tab’ (single tab view), ‘full’ (multi-tab browser)
 
@@ -162,7 +162,7 @@ formaturi
 
 <summary>
 
-options: object {mode, guardrails }
+options: object { mode, guardrails }
 
 </summary>
 
@@ -170,7 +170,7 @@ options: object {mode, guardrails }
 
 <summary>
 
-mode: "devtools"or "tab"or "full"
+mode: "devtools" or "tab" or "full"
 
 UI mode for the live view
 
@@ -198,7 +198,7 @@ One of the following:
 
 <summary>
 
-guardrails: optional object {mode }
+guardrails: optional object { mode }
 
 Connection guardrails applied to this link
 

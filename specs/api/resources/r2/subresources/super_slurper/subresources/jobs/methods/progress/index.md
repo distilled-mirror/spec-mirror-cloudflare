@@ -96,7 +96,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -120,7 +120,7 @@ messages: optional array of string
 
 <summary>
 
-result: optional object {id, createdAt, failedObjects, 4 more }
+result: optional object { id, createdAt, failedObjects, 4 more }
 
 </summary>
 
@@ -148,7 +148,7 @@ skippedObjects: optional number
 
 <summary>
 
-status: optional "running"or "paused"or "aborted"or "completed"
+status: optional "running" or "paused" or "aborted" or "completed"
 
 </summary>
 

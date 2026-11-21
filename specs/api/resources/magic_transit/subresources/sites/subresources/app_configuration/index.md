@@ -46,7 +46,7 @@ DELETE/accounts/{account\_id}/magic/sites/{site\_id}/app\_configs/{app\_config\_
 
 <summary>
 
-AppConfigurationListResponse = object {account\_app\_id, id, breakout, 3 more } or object {managed\_app\_id, id, breakout, 3 more }
+AppConfigurationListResponse = object { account\_app\_id, id, breakout, 3 more } or object { managed\_app\_id, id, breakout, 3 more }
 
 Traffic decision configuration for an app.
 
@@ -58,7 +58,7 @@ One of the following:
 
 <summary>
 
-AccountApp object {account\_app\_id, id, breakout, 3 more }
+AccountApp object { account\_app\_id, id, breakout, 3 more }
 
 </summary>
 
@@ -114,7 +114,7 @@ maxLength32
 
 <summary>
 
-ManagedApp object {managed\_app\_id, id, breakout, 3 more }
+ManagedApp object { managed\_app\_id, id, breakout, 3 more }
 
 </summary>
 
@@ -174,7 +174,7 @@ maxLength32
 
 <summary>
 
-AppConfigurationCreateResponse = object {account\_app\_id, id, breakout, 3 more } or object {managed\_app\_id, id, breakout, 3 more }
+AppConfigurationCreateResponse = object { account\_app\_id, id, breakout, 3 more } or object { managed\_app\_id, id, breakout, 3 more }
 
 Traffic decision configuration for an app.
 
@@ -186,7 +186,7 @@ One of the following:
 
 <summary>
 
-AccountApp object {account\_app\_id, id, breakout, 3 more }
+AccountApp object { account\_app\_id, id, breakout, 3 more }
 
 </summary>
 
@@ -242,7 +242,7 @@ maxLength32
 
 <summary>
 
-ManagedApp object {managed\_app\_id, id, breakout, 3 more }
+ManagedApp object { managed\_app\_id, id, breakout, 3 more }
 
 </summary>
 
@@ -302,7 +302,7 @@ maxLength32
 
 <summary>
 
-AppConfigurationUpdateResponse = object {account\_app\_id, id, breakout, 3 more } or object {managed\_app\_id, id, breakout, 3 more }
+AppConfigurationUpdateResponse = object { account\_app\_id, id, breakout, 3 more } or object { managed\_app\_id, id, breakout, 3 more }
 
 Traffic decision configuration for an app.
 
@@ -314,7 +314,7 @@ One of the following:
 
 <summary>
 
-AccountApp object {account\_app\_id, id, breakout, 3 more }
+AccountApp object { account\_app\_id, id, breakout, 3 more }
 
 </summary>
 
@@ -370,7 +370,7 @@ maxLength32
 
 <summary>
 
-ManagedApp object {managed\_app\_id, id, breakout, 3 more }
+ManagedApp object { managed\_app\_id, id, breakout, 3 more }
 
 </summary>
 
@@ -430,7 +430,7 @@ maxLength32
 
 <summary>
 
-AppConfigurationEditResponse = object {account\_app\_id, id, breakout, 3 more } or object {managed\_app\_id, id, breakout, 3 more }
+AppConfigurationEditResponse = object { account\_app\_id, id, breakout, 3 more } or object { managed\_app\_id, id, breakout, 3 more }
 
 Traffic decision configuration for an app.
 
@@ -442,7 +442,7 @@ One of the following:
 
 <summary>
 
-AccountApp object {account\_app\_id, id, breakout, 3 more }
+AccountApp object { account\_app\_id, id, breakout, 3 more }
 
 </summary>
 
@@ -498,7 +498,7 @@ maxLength32
 
 <summary>
 
-ManagedApp object {managed\_app\_id, id, breakout, 3 more }
+ManagedApp object { managed\_app\_id, id, breakout, 3 more }
 
 </summary>
 
@@ -558,7 +558,7 @@ maxLength32
 
 <summary>
 
-AppConfigurationDeleteResponse = object {account\_app\_id, id, breakout, 3 more } or object {managed\_app\_id, id, breakout, 3 more }
+AppConfigurationDeleteResponse = object { account\_app\_id, id, breakout, 3 more } or object { managed\_app\_id, id, breakout, 3 more }
 
 Traffic decision configuration for an app.
 
@@ -570,7 +570,7 @@ One of the following:
 
 <summary>
 
-AccountApp object {account\_app\_id, id, breakout, 3 more }
+AccountApp object { account\_app\_id, id, breakout, 3 more }
 
 </summary>
 
@@ -626,7 +626,7 @@ maxLength32
 
 <summary>
 
-ManagedApp object {managed\_app\_id, id, breakout, 3 more }
+ManagedApp object { managed\_app\_id, id, breakout, 3 more }
 
 </summary>
 

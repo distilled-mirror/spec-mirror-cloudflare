@@ -30,7 +30,7 @@ GET/accounts/{account\_id}/settings/transformations
 
 <summary>
 
-TransformationsConfig object {id, cf\_zone\_tag, editable, 2 more }
+TransformationsConfig object { id, cf\_zone\_tag, editable, 2 more }
 
 A configuration item for a specific zone and feature.
 

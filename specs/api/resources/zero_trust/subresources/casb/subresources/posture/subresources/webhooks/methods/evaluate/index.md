@@ -45,7 +45,7 @@ The preferred authorization scheme for interacting with the Cloudflare API. [Cre
 
 ##### Accepted Permissions (at least one required)
 
-`Zero Trust Write`
+`CASB Write``Zero Trust Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -59,7 +59,7 @@ account\_id: string
 
 <summary>
 
-authentication\_type: "Basic Auth"or "None"or "Bearer Auth"or 2 more
+authentication\_type: "Basic Auth" or "None" or "Bearer Auth" or 2 more
 
 Type of authentication to use for the test webhook request.
 
@@ -103,7 +103,7 @@ formaturi
 
 <summary>
 
-headers: optional array of object {key, value }
+headers: optional array of object { key, value }
 
 List of custom headers to include in the test webhook request.
 
@@ -141,7 +141,7 @@ Secret key used for HMAC signing when authentication\_type is “HMAC-Signing”
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -171,7 +171,7 @@ formaturi
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -193,7 +193,7 @@ JSON pointer to the source of the error.
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -223,7 +223,7 @@ formaturi
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -251,7 +251,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {message, status\_code, success }
+result: optional object { message, status\_code, success }
 
 Response body for webhook evaluation test results.
 

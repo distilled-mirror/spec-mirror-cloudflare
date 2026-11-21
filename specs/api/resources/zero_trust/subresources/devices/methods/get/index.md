@@ -103,7 +103,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -145,7 +145,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -165,7 +165,7 @@ pointer: optional string
 
 <summary>
 
-result: object {id, account, created, 16 more }
+result: object { id, account, created, 16 more }
 
 </summary>
 
@@ -181,7 +181,7 @@ maxLength36
 
 <summary>
 
-account: optional object {id, account\_type, name }
+account: optional object { id, account\_type, name }
 
 </summary>
 
@@ -299,7 +299,7 @@ formatdate-time
 
 <summary>
 
-user: optional object {id, email, name }
+user: optional object { id, email, name }
 
 </summary>
 

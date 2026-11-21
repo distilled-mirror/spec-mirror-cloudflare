@@ -94,7 +94,7 @@ One of the following:
 
 <summary>
 
-AccessRuleIPConfiguration object {target, value }
+AccessRuleIPConfiguration object { target, value }
 
 </summary>
 
@@ -118,7 +118,7 @@ The IP address to match. This address will be compared to the IP address of inco
 
 <summary>
 
-IPV6Configuration object {target, value }
+IPV6Configuration object { target, value }
 
 </summary>
 
@@ -142,7 +142,7 @@ The IPv6 address to match.
 
 <summary>
 
-AccessRuleCIDRConfiguration object {target, value }
+AccessRuleCIDRConfiguration object { target, value }
 
 </summary>
 
@@ -166,7 +166,7 @@ The IP address range to match. You can only use prefix lengths <code>/16</code> 
 
 <summary>
 
-ASNConfiguration object {target, value }
+ASNConfiguration object { target, value }
 
 </summary>
 
@@ -190,7 +190,7 @@ The AS number to match.
 
 <summary>
 
-CountryConfiguration object {target, value }
+CountryConfiguration object { target, value }
 
 </summary>
 
@@ -218,7 +218,7 @@ The two-letter ISO-3166-1 alpha-2 code to match. For more information, refer to 
 
 <summary>
 
-mode: "block"or "challenge"or "whitelist"or 2 more
+mode: "block" or "challenge" or "whitelist" or 2 more
 
 The action to apply to a matched request.
 
@@ -292,7 +292,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -334,7 +334,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -354,7 +354,7 @@ pointer: optional string
 
 <summary>
 
-result: object {id, configuration, description, 2 more }
+result: object { id, configuration, description, 2 more }
 
 </summary>
 
@@ -370,7 +370,7 @@ maxLength32
 
 <summary>
 
-configuration: optional object {target, value }
+configuration: optional object { target, value }
 
 The configuration object for the current rule.
 
@@ -404,7 +404,7 @@ maxLength1024
 
 <summary>
 
-mode: optional "block"or "challenge"or "js\_challenge"or "managed\_challenge"
+mode: optional "block" or "challenge" or "js\_challenge" or "managed\_challenge"
 
 The action to apply to a matched request.
 

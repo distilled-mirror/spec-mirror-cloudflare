@@ -32,7 +32,7 @@ GET/accounts/{account\_id}/dls/regions/{region\_id}
 
 <summary>
 
-RegionListResponse object {id, created\_on, modified\_on, 4 more }
+RegionListResponse object { id, created\_on, modified\_on, 4 more }
 
 </summary>
 
@@ -82,7 +82,7 @@ formatdate-time
 
 <summary>
 
-RegionGetResponse object {id, created\_on, modified\_on, 4 more }
+RegionGetResponse object { id, created\_on, modified\_on, 4 more }
 
 </summary>
 

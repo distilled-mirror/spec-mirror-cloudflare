@@ -56,6 +56,10 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 </details>
 
+##### Accepted Permissions (at least one required)
+
+`Zero Trust Read``Zero Trust Write`
+
 ##### P ath ParametersExpand Collapse
 
 account\_id: string
@@ -92,7 +96,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -134,7 +138,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -160,7 +164,7 @@ Indicate whether the API call was successful.
 
 <summary>
 
-result: optional object {created\_at, settings, updated\_at }
+result: optional object { created\_at, settings, updated\_at }
 
 Specify account settings.
 
@@ -334,7 +338,7 @@ Specify the subject line for emails created from the block page when the mode is
 
 <summary>
 
-mode: optional ""or "customized\_block\_page"or "redirect\_uri"
+mode: optional "" or "customized\_block\_page" or "redirect\_uri"
 
 Specify whether to redirect users to a Cloudflare-hosted block page or a customer-provided URI.
 
@@ -414,7 +418,7 @@ Specify the DLP inspection mode.
 
 <summary>
 
-inspection\_mode: optional "deep"or "shallow"
+inspection\_mode: optional "deep" or "shallow"
 
 Specify the inspection mode as either <code>deep</code> or <code>shallow</code>.
 
@@ -468,7 +472,7 @@ Specify whether to enable Clientless Browser Isolation.
 
 <summary>
 
-certificate: optional object {id }
+certificate: optional object { id }
 
 Specify certificate settings for Gateway TLS interception. If unset, the Cloudflare Root CA handles interception.
 
@@ -584,7 +588,7 @@ Enforce cipher suites and TLS versions compliant with FIPS 140-2.
 
 <summary>
 
-host\_selector: optional object {enabled }
+host\_selector: optional object { enabled }
 
 Enable host selection in egress policies.
 
@@ -604,7 +608,7 @@ Specify whether to enable filtering via hosts for egress policies.
 
 <summary>
 
-inspection: optional object {mode }
+inspection: optional object { mode }
 
 Define the proxy inspection mode.
 
@@ -614,7 +618,7 @@ Define the proxy inspection mode.
 
 <summary>
 
-mode: optional "static"or "dynamic"
+mode: optional "static" or "dynamic"
 
 Define the proxy inspection mode. 1. static: Gateway applies static inspection to HTTP on TCP(80). With TLS decryption on, Gateway inspects HTTPS traffic on TCP(443) and UDP(443). 2. dynamic: Gateway applies protocol detection to inspect HTTP and HTTPS traffic on any port. TLS decryption must remain on to inspect HTTPS traffic.
 
@@ -672,7 +676,7 @@ Specify whether to detect protocols from the initial bytes of client traffic.
 
 <summary>
 
-regions: optional map\[object {tls\_decrypt, certificate } ]
+regions: optional map\[object { tls\_decrypt, certificate } ]
 
 Specify per-region TLS interception and certificate settings for Gateway, keyed by Data Localization Suite region key. Relies on the Zero Trust account region setting (<code>GET</code>/<code>PUT /accounts/{account_id}/zerotrust/region</code>) - the account must select a region before Gateway applies these settings for it.
 
@@ -702,7 +706,7 @@ Specify whether to inspect encrypted HTTP traffic.
 
 <summary>
 
-certificate: optional object {id }
+certificate: optional object { id }
 
 Specify certificate settings for Gateway TLS interception. If unset, the Cloudflare Root CA handles interception.
 
@@ -726,7 +730,7 @@ Specify the UUID of the certificate used for interception. Ensure the certificat
 
 <summary>
 
-sandbox: optional object {enabled, fallback\_action }
+sandbox: optional object { enabled, fallback\_action }
 
 Specify whether to enable the sandbox.
 
@@ -742,7 +746,7 @@ Specify whether to enable the sandbox.
 
 <summary>
 
-fallback\_action: optional "allow"or "block"
+fallback\_action: optional "allow" or "block"
 
 Specify the action to take when the system cannot scan the file.
 

@@ -54,7 +54,7 @@ registration\_id: string
 
 <summary>
 
-errors: array of object {code, message }
+errors: array of object { code, message }
 
 </summary>
 
@@ -74,7 +74,7 @@ message: string
 
 <summary>
 
-messages: array of object {code, message }
+messages: array of object { code, message }
 
 </summary>
 
@@ -94,7 +94,7 @@ message: string
 
 <summary>
 
-result: object {disable\_for\_time }
+result: object { disable\_for\_time }
 
 </summary>
 

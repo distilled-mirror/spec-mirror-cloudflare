@@ -32,7 +32,7 @@ PUT/zones/{zone\_id}/certificate\_authorities/hostname\_associations
 
 <summary>
 
-TLSHostnameAssociation object {hostnames, mtls\_certificate\_id }
+TLSHostnameAssociation object { hostnames, mtls\_certificate\_id }
 
 </summary>
 
@@ -60,7 +60,7 @@ minLength36
 
 <summary>
 
-HostnameAssociationGetResponse object {hostnames }
+HostnameAssociationGetResponse object { hostnames }
 
 </summary>
 
@@ -78,7 +78,7 @@ Hostnames are returned in lowercase punycode, in no particular order. Null when 
 
 <summary>
 
-HostnameAssociationUpdateResponse object {hostnames }
+HostnameAssociationUpdateResponse object { hostnames }
 
 </summary>
 

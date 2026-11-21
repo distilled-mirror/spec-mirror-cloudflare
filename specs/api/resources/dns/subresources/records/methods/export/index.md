@@ -82,7 +82,7 @@ maxLength32
 
 <summary>
 
-comment: optional object {absent, contains, endswith, 3 more }
+comment: optional object { absent, contains, endswith, 3 more }
 
 </summary>
 
@@ -130,7 +130,7 @@ Prefix of the DNS record comment. Comment filters are case-insensitive.
 
 <summary>
 
-content: optional object {contains, endswith, exact, startswith }
+content: optional object { contains, endswith, exact, startswith }
 
 </summary>
 
@@ -178,7 +178,7 @@ Set to `true` to enable the `shadowed_by_name` filter. This does not add shadow 
 
 <summary>
 
-match: optional "any"or "all"
+match: optional "any" or "all"
 
 Whether to match all search requirements or at least one (any). If set to <code>all</code>, acts like a logical AND between filters. If set to <code>any</code>, acts like a logical OR instead. Note that the interaction between tag filters is controlled by the <code>tag-match</code> parameter instead.
 
@@ -202,7 +202,7 @@ One of the following:
 
 <summary>
 
-name: optional object {contains, endswith, exact, startswith }
+name: optional object { contains, endswith, exact, startswith }
 
 </summary>
 
@@ -262,7 +262,7 @@ Returns NS records that shadow the given name, searching at the name itself and 
 
 <summary>
 
-tag: optional object {absent, contains, endswith, 3 more }
+tag: optional object { absent, contains, endswith, 3 more }
 
 </summary>
 
@@ -310,7 +310,7 @@ A tag and value, of the form <code>&lt;tag-name&gt;:&lt;tag-value&gt;</code>. Th
 
 <summary>
 
-tag\_match: optional "any"or "all"
+tag\_match: optional "any" or "all"
 
 Whether to match all tag search requirements or at least one (any). If set to <code>all</code>, acts like a logical AND between tag filters. If set to <code>any</code>, acts like a logical OR instead. Note that the regular <code>match</code> parameter is still used to combine the resulting condition with other filters that aren’t related to tags. The legacy <code>tag-match</code> parameter is an alias for this parameter.
 
@@ -334,7 +334,7 @@ One of the following:
 
 <summary>
 
-type: optional "A"or "AAAA"or "CAA"or 18 more
+type: optional "A" or "AAAA" or "CAA" or 18 more
 
 Record type.
 

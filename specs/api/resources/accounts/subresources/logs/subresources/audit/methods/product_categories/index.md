@@ -58,7 +58,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Account Settings Write``Account Settings Read`
+`Audit Logs Read``Account Settings Write``Account Settings Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -74,7 +74,7 @@ The unique id that identifies the account.
 
 <summary>
 
-errors: optional array of object {message }
+errors: optional array of object { message }
 
 </summary>
 
@@ -90,7 +90,7 @@ message: string
 
 <summary>
 
-result: optional array of object {label, products, value }
+result: optional array of object { label, products, value }
 
 </summary>
 
@@ -104,7 +104,7 @@ A human-readable label for the product category.
 
 <summary>
 
-products: optional array of object {label, value }
+products: optional array of object { label, value }
 
 The resource products that the product category expands to.
 

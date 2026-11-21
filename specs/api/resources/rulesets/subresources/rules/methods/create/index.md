@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Mass URL Redirects Write``Magic Firewall Write``L4 DDoS Managed Ruleset Write``Transform Rules Write``Select Configuration Write``Account WAF Write``Account Rulesets Write``Logs Write`
+`Account Custom Error Rules Write``Account Custom Pages Write``Mass URL Redirects Write``Magic Firewall Write``L4 DDoS Managed Ruleset Write``Transform Rules Write``Select Configuration Write``Account WAF Write``Account Rulesets Write``Logs Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -92,7 +92,7 @@ Validates the request without persisting changes when set to `true`. Responses t
 
 <summary>
 
-body: <a href="https://developers.cloudflare.com/api/resources/rulesets#(resource)%20rulesets.rules%20%3E%20(model)%20block_rule%20%3E%20(schema)">BlockRule</a> { last\_updated, version, id, 10 more } or object {last\_updated, version, id, 11 more } or <a href="https://developers.cloudflare.com/api/resources/rulesets#(resource)%20rulesets.rules%20%3E%20(model)%20compress_response_rule%20%3E%20(schema)">CompressResponseRule</a> { last\_updated, version, id, 10 more } or 18 more
+body: <a href="https://developers.cloudflare.com/api/resources/rulesets#(resource)%20rulesets.rules%20%3E%20(model)%20block_rule%20%3E%20(schema)">BlockRule</a> { last\_updated, version, id, 10 more } or object { last\_updated, version, id, 11 more } or <a href="https://developers.cloudflare.com/api/resources/rulesets#(resource)%20rulesets.rules%20%3E%20(model)%20compress_response_rule%20%3E%20(schema)">CompressResponseRule</a> { last\_updated, version, id, 10 more } or 18 more
 
 </summary>
 
@@ -110,7 +110,7 @@ BlockRule = <a href="https://developers.cloudflare.com/api/resources/rulesets#(r
 
 <summary>
 
-position: optional object {before } or object {after } or object {index }
+position: optional object { before } or object { after } or object { index }
 
 An object configuring where the rule will be placed.
 
@@ -122,7 +122,7 @@ One of the following:
 
 <summary>
 
-BeforePosition object {before }
+BeforePosition object { before }
 
 An object configuring where the rule will be placed.
 
@@ -142,7 +142,7 @@ The ID of another rule to place the rule before. An empty value causes the rule 
 
 <summary>
 
-AfterPosition object {after }
+AfterPosition object { after }
 
 An object configuring where the rule will be placed.
 
@@ -162,7 +162,7 @@ The ID of another rule to place the rule after. An empty value causes the rule t
 
 <summary>
 
-IndexPosition object {index }
+IndexPosition object { index }
 
 An object configuring where the rule will be placed.
 
@@ -192,7 +192,7 @@ minimum1
 
 <summary>
 
-ChallengeRule object {last\_updated, version, id, 11 more }
+ChallengeRule object { last\_updated, version, id, 11 more }
 
 </summary>
 
@@ -250,7 +250,7 @@ Whether the rule should be executed.
 
 <summary>
 
-exposed\_credential\_check: optional object {password\_expression, username\_expression }
+exposed\_credential\_check: optional object { password\_expression, username\_expression }
 
 Configuration for exposed credential checking.
 
@@ -308,7 +308,7 @@ Whether to generate a log when the rule matches.
 
 <summary>
 
-position: optional object {before } or object {after } or object {index }
+position: optional object { before } or object { after } or object { index }
 
 An object configuring where the rule will be placed.
 
@@ -320,7 +320,7 @@ One of the following:
 
 <summary>
 
-BeforePosition object {before }
+BeforePosition object { before }
 
 An object configuring where the rule will be placed.
 
@@ -340,7 +340,7 @@ The ID of another rule to place the rule before. An empty value causes the rule 
 
 <summary>
 
-AfterPosition object {after }
+AfterPosition object { after }
 
 An object configuring where the rule will be placed.
 
@@ -360,7 +360,7 @@ The ID of another rule to place the rule after. An empty value causes the rule t
 
 <summary>
 
-IndexPosition object {index }
+IndexPosition object { index }
 
 An object configuring where the rule will be placed.
 
@@ -386,7 +386,7 @@ minimum1
 
 <summary>
 
-ratelimit: optional object {characteristics, period, counting\_expression, 5 more }
+ratelimit: optional object { characteristics, period, counting\_expression, 5 more }
 
 An object configuring the rule’s rate limit behavior.
 
@@ -476,7 +476,7 @@ ResponseCompressionRule = <a href="https://developers.cloudflare.com/api/resourc
 
 <summary>
 
-position: optional object {before } or object {after } or object {index }
+position: optional object { before } or object { after } or object { index }
 
 An object configuring where the rule will be placed.
 
@@ -488,7 +488,7 @@ One of the following:
 
 <summary>
 
-BeforePosition object {before }
+BeforePosition object { before }
 
 An object configuring where the rule will be placed.
 
@@ -508,7 +508,7 @@ The ID of another rule to place the rule before. An empty value causes the rule 
 
 <summary>
 
-AfterPosition object {after }
+AfterPosition object { after }
 
 An object configuring where the rule will be placed.
 
@@ -528,7 +528,7 @@ The ID of another rule to place the rule after. An empty value causes the rule t
 
 <summary>
 
-IndexPosition object {index }
+IndexPosition object { index }
 
 An object configuring where the rule will be placed.
 
@@ -566,7 +566,7 @@ DDoSDynamicRule = <a href="https://developers.cloudflare.com/api/resources/rules
 
 <summary>
 
-position: optional object {before } or object {after } or object {index }
+position: optional object { before } or object { after } or object { index }
 
 An object configuring where the rule will be placed.
 
@@ -578,7 +578,7 @@ One of the following:
 
 <summary>
 
-BeforePosition object {before }
+BeforePosition object { before }
 
 An object configuring where the rule will be placed.
 
@@ -598,7 +598,7 @@ The ID of another rule to place the rule before. An empty value causes the rule 
 
 <summary>
 
-AfterPosition object {after }
+AfterPosition object { after }
 
 An object configuring where the rule will be placed.
 
@@ -618,7 +618,7 @@ The ID of another rule to place the rule after. An empty value causes the rule t
 
 <summary>
 
-IndexPosition object {index }
+IndexPosition object { index }
 
 An object configuring where the rule will be placed.
 
@@ -656,7 +656,7 @@ ExecuteRule = <a href="https://developers.cloudflare.com/api/resources/rulesets#
 
 <summary>
 
-position: optional object {before } or object {after } or object {index }
+position: optional object { before } or object { after } or object { index }
 
 An object configuring where the rule will be placed.
 
@@ -668,7 +668,7 @@ One of the following:
 
 <summary>
 
-BeforePosition object {before }
+BeforePosition object { before }
 
 An object configuring where the rule will be placed.
 
@@ -688,7 +688,7 @@ The ID of another rule to place the rule before. An empty value causes the rule 
 
 <summary>
 
-AfterPosition object {after }
+AfterPosition object { after }
 
 An object configuring where the rule will be placed.
 
@@ -708,7 +708,7 @@ The ID of another rule to place the rule after. An empty value causes the rule t
 
 <summary>
 
-IndexPosition object {index }
+IndexPosition object { index }
 
 An object configuring where the rule will be placed.
 
@@ -746,7 +746,7 @@ ForceConnectionCloseRule = <a href="https://developers.cloudflare.com/api/resour
 
 <summary>
 
-position: optional object {before } or object {after } or object {index }
+position: optional object { before } or object { after } or object { index }
 
 An object configuring where the rule will be placed.
 
@@ -758,7 +758,7 @@ One of the following:
 
 <summary>
 
-BeforePosition object {before }
+BeforePosition object { before }
 
 An object configuring where the rule will be placed.
 
@@ -778,7 +778,7 @@ The ID of another rule to place the rule before. An empty value causes the rule 
 
 <summary>
 
-AfterPosition object {after }
+AfterPosition object { after }
 
 An object configuring where the rule will be placed.
 
@@ -798,7 +798,7 @@ The ID of another rule to place the rule after. An empty value causes the rule t
 
 <summary>
 
-IndexPosition object {index }
+IndexPosition object { index }
 
 An object configuring where the rule will be placed.
 
@@ -828,7 +828,7 @@ minimum1
 
 <summary>
 
-JavaScriptChallengeRule object {last\_updated, version, id, 11 more }
+JavaScriptChallengeRule object { last\_updated, version, id, 11 more }
 
 </summary>
 
@@ -886,7 +886,7 @@ Whether the rule should be executed.
 
 <summary>
 
-exposed\_credential\_check: optional object {password\_expression, username\_expression }
+exposed\_credential\_check: optional object { password\_expression, username\_expression }
 
 Configuration for exposed credential checking.
 
@@ -944,7 +944,7 @@ Whether to generate a log when the rule matches.
 
 <summary>
 
-position: optional object {before } or object {after } or object {index }
+position: optional object { before } or object { after } or object { index }
 
 An object configuring where the rule will be placed.
 
@@ -956,7 +956,7 @@ One of the following:
 
 <summary>
 
-BeforePosition object {before }
+BeforePosition object { before }
 
 An object configuring where the rule will be placed.
 
@@ -976,7 +976,7 @@ The ID of another rule to place the rule before. An empty value causes the rule 
 
 <summary>
 
-AfterPosition object {after }
+AfterPosition object { after }
 
 An object configuring where the rule will be placed.
 
@@ -996,7 +996,7 @@ The ID of another rule to place the rule after. An empty value causes the rule t
 
 <summary>
 
-IndexPosition object {index }
+IndexPosition object { index }
 
 An object configuring where the rule will be placed.
 
@@ -1022,7 +1022,7 @@ minimum1
 
 <summary>
 
-ratelimit: optional object {characteristics, period, counting\_expression, 5 more }
+ratelimit: optional object { characteristics, period, counting\_expression, 5 more }
 
 An object configuring the rule’s rate limit behavior.
 
@@ -1112,7 +1112,7 @@ LogRule = <a href="https://developers.cloudflare.com/api/resources/rulesets#(res
 
 <summary>
 
-position: optional object {before } or object {after } or object {index }
+position: optional object { before } or object { after } or object { index }
 
 An object configuring where the rule will be placed.
 
@@ -1124,7 +1124,7 @@ One of the following:
 
 <summary>
 
-BeforePosition object {before }
+BeforePosition object { before }
 
 An object configuring where the rule will be placed.
 
@@ -1144,7 +1144,7 @@ The ID of another rule to place the rule before. An empty value causes the rule 
 
 <summary>
 
-AfterPosition object {after }
+AfterPosition object { after }
 
 An object configuring where the rule will be placed.
 
@@ -1164,7 +1164,7 @@ The ID of another rule to place the rule after. An empty value causes the rule t
 
 <summary>
 
-IndexPosition object {index }
+IndexPosition object { index }
 
 An object configuring where the rule will be placed.
 
@@ -1202,7 +1202,7 @@ LogCustomFieldRule = <a href="https://developers.cloudflare.com/api/resources/ru
 
 <summary>
 
-position: optional object {before } or object {after } or object {index }
+position: optional object { before } or object { after } or object { index }
 
 An object configuring where the rule will be placed.
 
@@ -1214,7 +1214,7 @@ One of the following:
 
 <summary>
 
-BeforePosition object {before }
+BeforePosition object { before }
 
 An object configuring where the rule will be placed.
 
@@ -1234,7 +1234,7 @@ The ID of another rule to place the rule before. An empty value causes the rule 
 
 <summary>
 
-AfterPosition object {after }
+AfterPosition object { after }
 
 An object configuring where the rule will be placed.
 
@@ -1254,7 +1254,7 @@ The ID of another rule to place the rule after. An empty value causes the rule t
 
 <summary>
 
-IndexPosition object {index }
+IndexPosition object { index }
 
 An object configuring where the rule will be placed.
 
@@ -1292,7 +1292,7 @@ ManagedChallengeRule = <a href="https://developers.cloudflare.com/api/resources/
 
 <summary>
 
-position: optional object {before } or object {after } or object {index }
+position: optional object { before } or object { after } or object { index }
 
 An object configuring where the rule will be placed.
 
@@ -1304,7 +1304,7 @@ One of the following:
 
 <summary>
 
-BeforePosition object {before }
+BeforePosition object { before }
 
 An object configuring where the rule will be placed.
 
@@ -1324,7 +1324,7 @@ The ID of another rule to place the rule before. An empty value causes the rule 
 
 <summary>
 
-AfterPosition object {after }
+AfterPosition object { after }
 
 An object configuring where the rule will be placed.
 
@@ -1344,7 +1344,7 @@ The ID of another rule to place the rule after. An empty value causes the rule t
 
 <summary>
 
-IndexPosition object {index }
+IndexPosition object { index }
 
 An object configuring where the rule will be placed.
 
@@ -1382,7 +1382,7 @@ RedirectRule = <a href="https://developers.cloudflare.com/api/resources/rulesets
 
 <summary>
 
-position: optional object {before } or object {after } or object {index }
+position: optional object { before } or object { after } or object { index }
 
 An object configuring where the rule will be placed.
 
@@ -1394,7 +1394,7 @@ One of the following:
 
 <summary>
 
-BeforePosition object {before }
+BeforePosition object { before }
 
 An object configuring where the rule will be placed.
 
@@ -1414,7 +1414,7 @@ The ID of another rule to place the rule before. An empty value causes the rule 
 
 <summary>
 
-AfterPosition object {after }
+AfterPosition object { after }
 
 An object configuring where the rule will be placed.
 
@@ -1434,7 +1434,7 @@ The ID of another rule to place the rule after. An empty value causes the rule t
 
 <summary>
 
-IndexPosition object {index }
+IndexPosition object { index }
 
 An object configuring where the rule will be placed.
 
@@ -1472,7 +1472,7 @@ RewriteRule = <a href="https://developers.cloudflare.com/api/resources/rulesets#
 
 <summary>
 
-position: optional object {before } or object {after } or object {index }
+position: optional object { before } or object { after } or object { index }
 
 An object configuring where the rule will be placed.
 
@@ -1484,7 +1484,7 @@ One of the following:
 
 <summary>
 
-BeforePosition object {before }
+BeforePosition object { before }
 
 An object configuring where the rule will be placed.
 
@@ -1504,7 +1504,7 @@ The ID of another rule to place the rule before. An empty value causes the rule 
 
 <summary>
 
-AfterPosition object {after }
+AfterPosition object { after }
 
 An object configuring where the rule will be placed.
 
@@ -1524,7 +1524,7 @@ The ID of another rule to place the rule after. An empty value causes the rule t
 
 <summary>
 
-IndexPosition object {index }
+IndexPosition object { index }
 
 An object configuring where the rule will be placed.
 
@@ -1562,7 +1562,7 @@ RouteRule = <a href="https://developers.cloudflare.com/api/resources/rulesets#(r
 
 <summary>
 
-position: optional object {before } or object {after } or object {index }
+position: optional object { before } or object { after } or object { index }
 
 An object configuring where the rule will be placed.
 
@@ -1574,7 +1574,7 @@ One of the following:
 
 <summary>
 
-BeforePosition object {before }
+BeforePosition object { before }
 
 An object configuring where the rule will be placed.
 
@@ -1594,7 +1594,7 @@ The ID of another rule to place the rule before. An empty value causes the rule 
 
 <summary>
 
-AfterPosition object {after }
+AfterPosition object { after }
 
 An object configuring where the rule will be placed.
 
@@ -1614,7 +1614,7 @@ The ID of another rule to place the rule after. An empty value causes the rule t
 
 <summary>
 
-IndexPosition object {index }
+IndexPosition object { index }
 
 An object configuring where the rule will be placed.
 
@@ -1652,7 +1652,7 @@ ScoreRule = <a href="https://developers.cloudflare.com/api/resources/rulesets#(r
 
 <summary>
 
-position: optional object {before } or object {after } or object {index }
+position: optional object { before } or object { after } or object { index }
 
 An object configuring where the rule will be placed.
 
@@ -1664,7 +1664,7 @@ One of the following:
 
 <summary>
 
-BeforePosition object {before }
+BeforePosition object { before }
 
 An object configuring where the rule will be placed.
 
@@ -1684,7 +1684,7 @@ The ID of another rule to place the rule before. An empty value causes the rule 
 
 <summary>
 
-AfterPosition object {after }
+AfterPosition object { after }
 
 An object configuring where the rule will be placed.
 
@@ -1704,7 +1704,7 @@ The ID of another rule to place the rule after. An empty value causes the rule t
 
 <summary>
 
-IndexPosition object {index }
+IndexPosition object { index }
 
 An object configuring where the rule will be placed.
 
@@ -1742,7 +1742,7 @@ ServeErrorRule = <a href="https://developers.cloudflare.com/api/resources/rulese
 
 <summary>
 
-position: optional object {before } or object {after } or object {index }
+position: optional object { before } or object { after } or object { index }
 
 An object configuring where the rule will be placed.
 
@@ -1754,7 +1754,7 @@ One of the following:
 
 <summary>
 
-BeforePosition object {before }
+BeforePosition object { before }
 
 An object configuring where the rule will be placed.
 
@@ -1774,7 +1774,7 @@ The ID of another rule to place the rule before. An empty value causes the rule 
 
 <summary>
 
-AfterPosition object {after }
+AfterPosition object { after }
 
 An object configuring where the rule will be placed.
 
@@ -1794,7 +1794,7 @@ The ID of another rule to place the rule after. An empty value causes the rule t
 
 <summary>
 
-IndexPosition object {index }
+IndexPosition object { index }
 
 An object configuring where the rule will be placed.
 
@@ -1824,7 +1824,7 @@ minimum1
 
 <summary>
 
-SetCacheControlRule object {last\_updated, version, id, 11 more }
+SetCacheControlRule object { last\_updated, version, id, 11 more }
 
 </summary>
 
@@ -1858,7 +1858,7 @@ The action to perform when the rule matches.
 
 <summary>
 
-action\_parameters: optional object {immutable, "max-age", "must-revalidate", 10 more }
+action\_parameters: optional object { immutable, "max-age", "must-revalidate", 10 more }
 
 The parameters configuring the rule’s action.
 
@@ -1868,7 +1868,7 @@ The parameters configuring the rule’s action.
 
 <summary>
 
-immutable: optional object {operation, cloudflare\_only } or object {operation, cloudflare\_only }
+immutable: optional object { operation, cloudflare\_only } or object { operation, cloudflare\_only }
 
 A cache-control directive configuration.
 
@@ -1880,7 +1880,7 @@ One of the following:
 
 <summary>
 
-SetDirective object {operation, cloudflare\_only }
+SetDirective object { operation, cloudflare\_only }
 
 Set the directive.
 
@@ -1890,7 +1890,7 @@ Set the directive.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -1924,7 +1924,7 @@ Whether the directive should only be applied to the Cloudflare CDN cache.
 
 <summary>
 
-RemoveDirective object {operation, cloudflare\_only }
+RemoveDirective object { operation, cloudflare\_only }
 
 Remove the directive.
 
@@ -1934,7 +1934,7 @@ Remove the directive.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -1972,7 +1972,7 @@ Whether the directive should only be applied to the Cloudflare CDN cache.
 
 <summary>
 
-"max-age": optional object {operation, value, cloudflare\_only } or object {operation, cloudflare\_only }
+"max-age": optional object { operation, value, cloudflare\_only } or object { operation, cloudflare\_only }
 
 A cache-control directive configuration that accepts a duration value in seconds.
 
@@ -1984,7 +1984,7 @@ One of the following:
 
 <summary>
 
-SetDirective object {operation, value, cloudflare\_only }
+SetDirective object { operation, value, cloudflare\_only }
 
 Set the directive with a duration value in seconds.
 
@@ -1994,7 +1994,7 @@ Set the directive with a duration value in seconds.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -2036,7 +2036,7 @@ Whether the directive should only be applied to the Cloudflare CDN cache.
 
 <summary>
 
-RemoveDirective object {operation, cloudflare\_only }
+RemoveDirective object { operation, cloudflare\_only }
 
 Remove the directive.
 
@@ -2046,7 +2046,7 @@ Remove the directive.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -2084,7 +2084,7 @@ Whether the directive should only be applied to the Cloudflare CDN cache.
 
 <summary>
 
-"must-revalidate": optional object {operation, cloudflare\_only } or object {operation, cloudflare\_only }
+"must-revalidate": optional object { operation, cloudflare\_only } or object { operation, cloudflare\_only }
 
 A cache-control directive configuration.
 
@@ -2096,7 +2096,7 @@ One of the following:
 
 <summary>
 
-SetDirective object {operation, cloudflare\_only }
+SetDirective object { operation, cloudflare\_only }
 
 Set the directive.
 
@@ -2106,7 +2106,7 @@ Set the directive.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -2140,7 +2140,7 @@ Whether the directive should only be applied to the Cloudflare CDN cache.
 
 <summary>
 
-RemoveDirective object {operation, cloudflare\_only }
+RemoveDirective object { operation, cloudflare\_only }
 
 Remove the directive.
 
@@ -2150,7 +2150,7 @@ Remove the directive.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -2188,7 +2188,7 @@ Whether the directive should only be applied to the Cloudflare CDN cache.
 
 <summary>
 
-"must-understand": optional object {operation, cloudflare\_only } or object {operation, cloudflare\_only }
+"must-understand": optional object { operation, cloudflare\_only } or object { operation, cloudflare\_only }
 
 A cache-control directive configuration.
 
@@ -2200,7 +2200,7 @@ One of the following:
 
 <summary>
 
-SetDirective object {operation, cloudflare\_only }
+SetDirective object { operation, cloudflare\_only }
 
 Set the directive.
 
@@ -2210,7 +2210,7 @@ Set the directive.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -2244,7 +2244,7 @@ Whether the directive should only be applied to the Cloudflare CDN cache.
 
 <summary>
 
-RemoveDirective object {operation, cloudflare\_only }
+RemoveDirective object { operation, cloudflare\_only }
 
 Remove the directive.
 
@@ -2254,7 +2254,7 @@ Remove the directive.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -2292,7 +2292,7 @@ Whether the directive should only be applied to the Cloudflare CDN cache.
 
 <summary>
 
-"no-cache": optional object {operation, cloudflare\_only, qualifiers } or object {operation, cloudflare\_only }
+"no-cache": optional object { operation, cloudflare\_only, qualifiers } or object { operation, cloudflare\_only }
 
 A cache-control directive configuration that accepts optional qualifiers (header names).
 
@@ -2304,7 +2304,7 @@ One of the following:
 
 <summary>
 
-SetDirective object {operation, cloudflare\_only, qualifiers }
+SetDirective object { operation, cloudflare\_only, qualifiers }
 
 Set the directive with optional qualifiers.
 
@@ -2314,7 +2314,7 @@ Set the directive with optional qualifiers.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -2354,7 +2354,7 @@ Optional list of header names to qualify the directive (e.g., for “private” 
 
 <summary>
 
-RemoveDirective object {operation, cloudflare\_only }
+RemoveDirective object { operation, cloudflare\_only }
 
 Remove the directive.
 
@@ -2364,7 +2364,7 @@ Remove the directive.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -2402,7 +2402,7 @@ Whether the directive should only be applied to the Cloudflare CDN cache.
 
 <summary>
 
-"no-store": optional object {operation, cloudflare\_only } or object {operation, cloudflare\_only }
+"no-store": optional object { operation, cloudflare\_only } or object { operation, cloudflare\_only }
 
 A cache-control directive configuration.
 
@@ -2414,7 +2414,7 @@ One of the following:
 
 <summary>
 
-SetDirective object {operation, cloudflare\_only }
+SetDirective object { operation, cloudflare\_only }
 
 Set the directive.
 
@@ -2424,7 +2424,7 @@ Set the directive.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -2458,7 +2458,7 @@ Whether the directive should only be applied to the Cloudflare CDN cache.
 
 <summary>
 
-RemoveDirective object {operation, cloudflare\_only }
+RemoveDirective object { operation, cloudflare\_only }
 
 Remove the directive.
 
@@ -2468,7 +2468,7 @@ Remove the directive.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -2506,7 +2506,7 @@ Whether the directive should only be applied to the Cloudflare CDN cache.
 
 <summary>
 
-"no-transform": optional object {operation, cloudflare\_only } or object {operation, cloudflare\_only }
+"no-transform": optional object { operation, cloudflare\_only } or object { operation, cloudflare\_only }
 
 A cache-control directive configuration.
 
@@ -2518,7 +2518,7 @@ One of the following:
 
 <summary>
 
-SetDirective object {operation, cloudflare\_only }
+SetDirective object { operation, cloudflare\_only }
 
 Set the directive.
 
@@ -2528,7 +2528,7 @@ Set the directive.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -2562,7 +2562,7 @@ Whether the directive should only be applied to the Cloudflare CDN cache.
 
 <summary>
 
-RemoveDirective object {operation, cloudflare\_only }
+RemoveDirective object { operation, cloudflare\_only }
 
 Remove the directive.
 
@@ -2572,7 +2572,7 @@ Remove the directive.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -2610,7 +2610,7 @@ Whether the directive should only be applied to the Cloudflare CDN cache.
 
 <summary>
 
-private: optional object {operation, cloudflare\_only, qualifiers } or object {operation, cloudflare\_only }
+private: optional object { operation, cloudflare\_only, qualifiers } or object { operation, cloudflare\_only }
 
 A cache-control directive configuration that accepts optional qualifiers (header names).
 
@@ -2622,7 +2622,7 @@ One of the following:
 
 <summary>
 
-SetDirective object {operation, cloudflare\_only, qualifiers }
+SetDirective object { operation, cloudflare\_only, qualifiers }
 
 Set the directive with optional qualifiers.
 
@@ -2632,7 +2632,7 @@ Set the directive with optional qualifiers.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -2672,7 +2672,7 @@ Optional list of header names to qualify the directive (e.g., for “private” 
 
 <summary>
 
-RemoveDirective object {operation, cloudflare\_only }
+RemoveDirective object { operation, cloudflare\_only }
 
 Remove the directive.
 
@@ -2682,7 +2682,7 @@ Remove the directive.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -2720,7 +2720,7 @@ Whether the directive should only be applied to the Cloudflare CDN cache.
 
 <summary>
 
-"proxy-revalidate": optional object {operation, cloudflare\_only } or object {operation, cloudflare\_only }
+"proxy-revalidate": optional object { operation, cloudflare\_only } or object { operation, cloudflare\_only }
 
 A cache-control directive configuration.
 
@@ -2732,7 +2732,7 @@ One of the following:
 
 <summary>
 
-SetDirective object {operation, cloudflare\_only }
+SetDirective object { operation, cloudflare\_only }
 
 Set the directive.
 
@@ -2742,7 +2742,7 @@ Set the directive.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -2776,7 +2776,7 @@ Whether the directive should only be applied to the Cloudflare CDN cache.
 
 <summary>
 
-RemoveDirective object {operation, cloudflare\_only }
+RemoveDirective object { operation, cloudflare\_only }
 
 Remove the directive.
 
@@ -2786,7 +2786,7 @@ Remove the directive.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -2824,7 +2824,7 @@ Whether the directive should only be applied to the Cloudflare CDN cache.
 
 <summary>
 
-public: optional object {operation, cloudflare\_only } or object {operation, cloudflare\_only }
+public: optional object { operation, cloudflare\_only } or object { operation, cloudflare\_only }
 
 A cache-control directive configuration.
 
@@ -2836,7 +2836,7 @@ One of the following:
 
 <summary>
 
-SetDirective object {operation, cloudflare\_only }
+SetDirective object { operation, cloudflare\_only }
 
 Set the directive.
 
@@ -2846,7 +2846,7 @@ Set the directive.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -2880,7 +2880,7 @@ Whether the directive should only be applied to the Cloudflare CDN cache.
 
 <summary>
 
-RemoveDirective object {operation, cloudflare\_only }
+RemoveDirective object { operation, cloudflare\_only }
 
 Remove the directive.
 
@@ -2890,7 +2890,7 @@ Remove the directive.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -2928,7 +2928,7 @@ Whether the directive should only be applied to the Cloudflare CDN cache.
 
 <summary>
 
-"s-maxage": optional object {operation, value, cloudflare\_only } or object {operation, cloudflare\_only }
+"s-maxage": optional object { operation, value, cloudflare\_only } or object { operation, cloudflare\_only }
 
 A cache-control directive configuration that accepts a duration value in seconds.
 
@@ -2940,7 +2940,7 @@ One of the following:
 
 <summary>
 
-SetDirective object {operation, value, cloudflare\_only }
+SetDirective object { operation, value, cloudflare\_only }
 
 Set the directive with a duration value in seconds.
 
@@ -2950,7 +2950,7 @@ Set the directive with a duration value in seconds.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -2992,7 +2992,7 @@ Whether the directive should only be applied to the Cloudflare CDN cache.
 
 <summary>
 
-RemoveDirective object {operation, cloudflare\_only }
+RemoveDirective object { operation, cloudflare\_only }
 
 Remove the directive.
 
@@ -3002,7 +3002,7 @@ Remove the directive.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -3040,7 +3040,7 @@ Whether the directive should only be applied to the Cloudflare CDN cache.
 
 <summary>
 
-"stale-if-error": optional object {operation, value, cloudflare\_only } or object {operation, cloudflare\_only }
+"stale-if-error": optional object { operation, value, cloudflare\_only } or object { operation, cloudflare\_only }
 
 A cache-control directive configuration that accepts a duration value in seconds.
 
@@ -3052,7 +3052,7 @@ One of the following:
 
 <summary>
 
-SetDirective object {operation, value, cloudflare\_only }
+SetDirective object { operation, value, cloudflare\_only }
 
 Set the directive with a duration value in seconds.
 
@@ -3062,7 +3062,7 @@ Set the directive with a duration value in seconds.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -3104,7 +3104,7 @@ Whether the directive should only be applied to the Cloudflare CDN cache.
 
 <summary>
 
-RemoveDirective object {operation, cloudflare\_only }
+RemoveDirective object { operation, cloudflare\_only }
 
 Remove the directive.
 
@@ -3114,7 +3114,7 @@ Remove the directive.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -3152,7 +3152,7 @@ Whether the directive should only be applied to the Cloudflare CDN cache.
 
 <summary>
 
-"stale-while-revalidate": optional object {operation, value, cloudflare\_only } or object {operation, cloudflare\_only }
+"stale-while-revalidate": optional object { operation, value, cloudflare\_only } or object { operation, cloudflare\_only }
 
 A cache-control directive configuration that accepts a duration value in seconds.
 
@@ -3164,7 +3164,7 @@ One of the following:
 
 <summary>
 
-SetDirective object {operation, value, cloudflare\_only }
+SetDirective object { operation, value, cloudflare\_only }
 
 Set the directive with a duration value in seconds.
 
@@ -3174,7 +3174,7 @@ Set the directive with a duration value in seconds.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -3216,7 +3216,7 @@ Whether the directive should only be applied to the Cloudflare CDN cache.
 
 <summary>
 
-RemoveDirective object {operation, cloudflare\_only }
+RemoveDirective object { operation, cloudflare\_only }
 
 Remove the directive.
 
@@ -3226,7 +3226,7 @@ Remove the directive.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -3284,7 +3284,7 @@ enabled: optional boolean
 
 <summary>
 
-exposed\_credential\_check: optional object {password\_expression, username\_expression }
+exposed\_credential\_check: optional object { password\_expression, username\_expression }
 
 Configuration for exposed credential checking.
 
@@ -3342,7 +3342,7 @@ Whether to generate a log when the rule matches.
 
 <summary>
 
-position: optional object {before } or object {after } or object {index }
+position: optional object { before } or object { after } or object { index }
 
 An object configuring where the rule will be placed.
 
@@ -3354,7 +3354,7 @@ One of the following:
 
 <summary>
 
-BeforePosition object {before }
+BeforePosition object { before }
 
 An object configuring where the rule will be placed.
 
@@ -3374,7 +3374,7 @@ The ID of another rule to place the rule before. An empty value causes the rule 
 
 <summary>
 
-AfterPosition object {after }
+AfterPosition object { after }
 
 An object configuring where the rule will be placed.
 
@@ -3394,7 +3394,7 @@ The ID of another rule to place the rule after. An empty value causes the rule t
 
 <summary>
 
-IndexPosition object {index }
+IndexPosition object { index }
 
 An object configuring where the rule will be placed.
 
@@ -3420,7 +3420,7 @@ minimum1
 
 <summary>
 
-ratelimit: optional object {characteristics, period, counting\_expression, 5 more }
+ratelimit: optional object { characteristics, period, counting\_expression, 5 more }
 
 An object configuring the rule’s rate limit behavior.
 
@@ -3510,7 +3510,7 @@ SetCacheSettingsRule = <a href="https://developers.cloudflare.com/api/resources/
 
 <summary>
 
-position: optional object {before } or object {after } or object {index }
+position: optional object { before } or object { after } or object { index }
 
 An object configuring where the rule will be placed.
 
@@ -3522,7 +3522,7 @@ One of the following:
 
 <summary>
 
-BeforePosition object {before }
+BeforePosition object { before }
 
 An object configuring where the rule will be placed.
 
@@ -3542,7 +3542,7 @@ The ID of another rule to place the rule before. An empty value causes the rule 
 
 <summary>
 
-AfterPosition object {after }
+AfterPosition object { after }
 
 An object configuring where the rule will be placed.
 
@@ -3562,7 +3562,7 @@ The ID of another rule to place the rule after. An empty value causes the rule t
 
 <summary>
 
-IndexPosition object {index }
+IndexPosition object { index }
 
 An object configuring where the rule will be placed.
 
@@ -3592,7 +3592,7 @@ minimum1
 
 <summary>
 
-SetCacheTagsRule object {last\_updated, version, id, 11 more }
+SetCacheTagsRule object { last\_updated, version, id, 11 more }
 
 </summary>
 
@@ -3626,7 +3626,7 @@ The action to perform when the rule matches.
 
 <summary>
 
-action\_parameters: optional object {operation, values } or object {expression, operation } or object {operation, values } or 3 more
+action\_parameters: optional object { operation, values } or object { expression, operation } or object { operation, values } or 3 more
 
 The parameters configuring the rule’s action.
 
@@ -3638,7 +3638,7 @@ One of the following:
 
 <summary>
 
-AddCacheTagsValues object {operation, values }
+AddCacheTagsValues object { operation, values }
 
 Add cache tags using a list of values.
 
@@ -3648,7 +3648,7 @@ Add cache tags using a list of values.
 
 <summary>
 
-operation: "add"or "remove"or "set"
+operation: "add" or "remove" or "set"
 
 The operation to perform on the cache tags.
 
@@ -3686,7 +3686,7 @@ A list of cache tag values.
 
 <summary>
 
-AddCacheTagsExpression object {expression, operation }
+AddCacheTagsExpression object { expression, operation }
 
 Add cache tags using an expression.
 
@@ -3704,7 +3704,7 @@ minLength1
 
 <summary>
 
-operation: "add"or "remove"or "set"
+operation: "add" or "remove" or "set"
 
 The operation to perform on the cache tags.
 
@@ -3736,7 +3736,7 @@ One of the following:
 
 <summary>
 
-RemoveCacheTagsValues object {operation, values }
+RemoveCacheTagsValues object { operation, values }
 
 Remove cache tags using a list of values.
 
@@ -3746,7 +3746,7 @@ Remove cache tags using a list of values.
 
 <summary>
 
-operation: "add"or "remove"or "set"
+operation: "add" or "remove" or "set"
 
 The operation to perform on the cache tags.
 
@@ -3784,7 +3784,7 @@ A list of cache tag values.
 
 <summary>
 
-RemoveCacheTagsExpression object {expression, operation }
+RemoveCacheTagsExpression object { expression, operation }
 
 Remove cache tags using an expression.
 
@@ -3802,7 +3802,7 @@ minLength1
 
 <summary>
 
-operation: "add"or "remove"or "set"
+operation: "add" or "remove" or "set"
 
 The operation to perform on the cache tags.
 
@@ -3834,7 +3834,7 @@ One of the following:
 
 <summary>
 
-SetCacheTagsValues object {operation, values }
+SetCacheTagsValues object { operation, values }
 
 Set cache tags using a list of values.
 
@@ -3844,7 +3844,7 @@ Set cache tags using a list of values.
 
 <summary>
 
-operation: "add"or "remove"or "set"
+operation: "add" or "remove" or "set"
 
 The operation to perform on the cache tags.
 
@@ -3882,7 +3882,7 @@ A list of cache tag values.
 
 <summary>
 
-SetCacheTagsExpression object {expression, operation }
+SetCacheTagsExpression object { expression, operation }
 
 Set cache tags using an expression.
 
@@ -3900,7 +3900,7 @@ minLength1
 
 <summary>
 
-operation: "add"or "remove"or "set"
+operation: "add" or "remove" or "set"
 
 The operation to perform on the cache tags.
 
@@ -3952,7 +3952,7 @@ enabled: optional boolean
 
 <summary>
 
-exposed\_credential\_check: optional object {password\_expression, username\_expression }
+exposed\_credential\_check: optional object { password\_expression, username\_expression }
 
 Configuration for exposed credential checking.
 
@@ -4010,7 +4010,7 @@ Whether to generate a log when the rule matches.
 
 <summary>
 
-position: optional object {before } or object {after } or object {index }
+position: optional object { before } or object { after } or object { index }
 
 An object configuring where the rule will be placed.
 
@@ -4022,7 +4022,7 @@ One of the following:
 
 <summary>
 
-BeforePosition object {before }
+BeforePosition object { before }
 
 An object configuring where the rule will be placed.
 
@@ -4042,7 +4042,7 @@ The ID of another rule to place the rule before. An empty value causes the rule 
 
 <summary>
 
-AfterPosition object {after }
+AfterPosition object { after }
 
 An object configuring where the rule will be placed.
 
@@ -4062,7 +4062,7 @@ The ID of another rule to place the rule after. An empty value causes the rule t
 
 <summary>
 
-IndexPosition object {index }
+IndexPosition object { index }
 
 An object configuring where the rule will be placed.
 
@@ -4088,7 +4088,7 @@ minimum1
 
 <summary>
 
-ratelimit: optional object {characteristics, period, counting\_expression, 5 more }
+ratelimit: optional object { characteristics, period, counting\_expression, 5 more }
 
 An object configuring the rule’s rate limit behavior.
 
@@ -4178,7 +4178,7 @@ SetConfigurationRule = <a href="https://developers.cloudflare.com/api/resources/
 
 <summary>
 
-position: optional object {before } or object {after } or object {index }
+position: optional object { before } or object { after } or object { index }
 
 An object configuring where the rule will be placed.
 
@@ -4190,7 +4190,7 @@ One of the following:
 
 <summary>
 
-BeforePosition object {before }
+BeforePosition object { before }
 
 An object configuring where the rule will be placed.
 
@@ -4210,7 +4210,7 @@ The ID of another rule to place the rule before. An empty value causes the rule 
 
 <summary>
 
-AfterPosition object {after }
+AfterPosition object { after }
 
 An object configuring where the rule will be placed.
 
@@ -4230,7 +4230,7 @@ The ID of another rule to place the rule after. An empty value causes the rule t
 
 <summary>
 
-IndexPosition object {index }
+IndexPosition object { index }
 
 An object configuring where the rule will be placed.
 
@@ -4268,7 +4268,7 @@ SkipRule = <a href="https://developers.cloudflare.com/api/resources/rulesets#(re
 
 <summary>
 
-position: optional object {before } or object {after } or object {index }
+position: optional object { before } or object { after } or object { index }
 
 An object configuring where the rule will be placed.
 
@@ -4280,7 +4280,7 @@ One of the following:
 
 <summary>
 
-BeforePosition object {before }
+BeforePosition object { before }
 
 An object configuring where the rule will be placed.
 
@@ -4300,7 +4300,7 @@ The ID of another rule to place the rule before. An empty value causes the rule 
 
 <summary>
 
-AfterPosition object {after }
+AfterPosition object { after }
 
 An object configuring where the rule will be placed.
 
@@ -4320,7 +4320,7 @@ The ID of another rule to place the rule after. An empty value causes the rule t
 
 <summary>
 
-IndexPosition object {index }
+IndexPosition object { index }
 
 An object configuring where the rule will be placed.
 
@@ -4350,7 +4350,7 @@ minimum1
 
 <summary>
 
-TransformResponseHTMLRule object {last\_updated, version, id, 11 more }
+TransformResponseHTMLRule object { last\_updated, version, id, 11 more }
 
 </summary>
 
@@ -4384,7 +4384,7 @@ The action to perform when the rule matches.
 
 <summary>
 
-action\_parameters: optional object {link\_maze }
+action\_parameters: optional object { link\_maze }
 
 The parameters configuring the rule’s action.
 
@@ -4420,7 +4420,7 @@ enabled: optional boolean
 
 <summary>
 
-exposed\_credential\_check: optional object {password\_expression, username\_expression }
+exposed\_credential\_check: optional object { password\_expression, username\_expression }
 
 Configuration for exposed credential checking.
 
@@ -4478,7 +4478,7 @@ Whether to generate a log when the rule matches.
 
 <summary>
 
-position: optional object {before } or object {after } or object {index }
+position: optional object { before } or object { after } or object { index }
 
 An object configuring where the rule will be placed.
 
@@ -4490,7 +4490,7 @@ One of the following:
 
 <summary>
 
-BeforePosition object {before }
+BeforePosition object { before }
 
 An object configuring where the rule will be placed.
 
@@ -4510,7 +4510,7 @@ The ID of another rule to place the rule before. An empty value causes the rule 
 
 <summary>
 
-AfterPosition object {after }
+AfterPosition object { after }
 
 An object configuring where the rule will be placed.
 
@@ -4530,7 +4530,7 @@ The ID of another rule to place the rule after. An empty value causes the rule t
 
 <summary>
 
-IndexPosition object {index }
+IndexPosition object { index }
 
 An object configuring where the rule will be placed.
 
@@ -4556,7 +4556,7 @@ minimum1
 
 <summary>
 
-ratelimit: optional object {characteristics, period, counting\_expression, 5 more }
+ratelimit: optional object { characteristics, period, counting\_expression, 5 more }
 
 An object configuring the rule’s rate limit behavior.
 
@@ -4644,7 +4644,7 @@ minLength1
 
 <summary>
 
-errors: array of object {message, code, source }
+errors: array of object { message, code, source }
 
 A list of error messages.
 
@@ -4668,7 +4668,7 @@ A unique code for this message.
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 The source of this message.
 
@@ -4694,7 +4694,7 @@ minLength1
 
 <summary>
 
-messages: array of object {message, code, source }
+messages: array of object { message, code, source }
 
 A list of warning messages.
 
@@ -4718,7 +4718,7 @@ A unique code for this message.
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 The source of this message.
 
@@ -4744,7 +4744,7 @@ minLength1
 
 <summary>
 
-result: unknownor array of unknownor stringor 4 more
+result: unknown or array of unknown or string or 4 more
 
 A result.
 
@@ -4776,7 +4776,7 @@ boolean
 
 <summary>
 
-Ruleset object {id, kind, last\_updated, 5 more }
+Ruleset object { id, kind, last\_updated, 5 more }
 
 A ruleset object.
 
@@ -4956,7 +4956,7 @@ One of the following:
 
 <summary>
 
-rules: array of <a href="https://developers.cloudflare.com/api/resources/rulesets#(resource)%20rulesets.rules%20%3E%20(model)%20block_rule%20%3E%20(schema)">BlockRule</a> { last\_updated, version, id, 10 more } or object {id, action, enabled, 10 more } or <a href="https://developers.cloudflare.com/api/resources/rulesets#(resource)%20rulesets.rules%20%3E%20(model)%20compress_response_rule%20%3E%20(schema)">CompressResponseRule</a> { last\_updated, version, id, 10 more } or 18 more
+rules: array of <a href="https://developers.cloudflare.com/api/resources/rulesets#(resource)%20rulesets.rules%20%3E%20(model)%20block_rule%20%3E%20(schema)">BlockRule</a> { last\_updated, version, id, 10 more } or object { id, action, enabled, 10 more } or <a href="https://developers.cloudflare.com/api/resources/rulesets#(resource)%20rulesets.rules%20%3E%20(model)%20compress_response_rule%20%3E%20(schema)">CompressResponseRule</a> { last\_updated, version, id, 10 more } or 18 more
 
 The list of rules in the ruleset.
 
@@ -5000,7 +5000,7 @@ ref: string
 
 <summary>
 
-ChallengeRule object {id, action, enabled, 10 more }
+ChallengeRule object { id, action, enabled, 10 more }
 
 </summary>
 
@@ -5074,7 +5074,7 @@ An informative description of the rule.
 
 <summary>
 
-exposed\_credential\_check: optional object {password\_expression, username\_expression }
+exposed\_credential\_check: optional object { password\_expression, username\_expression }
 
 Configuration for exposed credential checking.
 
@@ -5124,7 +5124,7 @@ Whether to generate a log when the rule matches.
 
 <summary>
 
-ratelimit: optional object {characteristics, period, counting\_expression, 5 more }
+ratelimit: optional object { characteristics, period, counting\_expression, 5 more }
 
 An object configuring the rule’s rate limit behavior.
 
@@ -5326,7 +5326,7 @@ ref: string
 
 <summary>
 
-JavaScriptChallengeRule object {id, action, enabled, 10 more }
+JavaScriptChallengeRule object { id, action, enabled, 10 more }
 
 </summary>
 
@@ -5400,7 +5400,7 @@ An informative description of the rule.
 
 <summary>
 
-exposed\_credential\_check: optional object {password\_expression, username\_expression }
+exposed\_credential\_check: optional object { password\_expression, username\_expression }
 
 Configuration for exposed credential checking.
 
@@ -5450,7 +5450,7 @@ Whether to generate a log when the rule matches.
 
 <summary>
 
-ratelimit: optional object {characteristics, period, counting\_expression, 5 more }
+ratelimit: optional object { characteristics, period, counting\_expression, 5 more }
 
 An object configuring the rule’s rate limit behavior.
 
@@ -5780,7 +5780,7 @@ ref: string
 
 <summary>
 
-SetCacheControlRule object {id, action, enabled, 10 more }
+SetCacheControlRule object { id, action, enabled, 10 more }
 
 </summary>
 
@@ -5834,7 +5834,7 @@ The version of the rule.
 
 <summary>
 
-action\_parameters: optional object {immutable, "max-age", "must-revalidate", 10 more }
+action\_parameters: optional object { immutable, "max-age", "must-revalidate", 10 more }
 
 The parameters configuring the rule’s action.
 
@@ -5844,7 +5844,7 @@ The parameters configuring the rule’s action.
 
 <summary>
 
-immutable: optional object {operation, cloudflare\_only } or object {operation, cloudflare\_only }
+immutable: optional object { operation, cloudflare\_only } or object { operation, cloudflare\_only }
 
 A cache-control directive configuration.
 
@@ -5856,7 +5856,7 @@ One of the following:
 
 <summary>
 
-SetDirective object {operation, cloudflare\_only }
+SetDirective object { operation, cloudflare\_only }
 
 Set the directive.
 
@@ -5866,7 +5866,7 @@ Set the directive.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -5900,7 +5900,7 @@ Whether the directive should only be applied to the Cloudflare CDN cache.
 
 <summary>
 
-RemoveDirective object {operation, cloudflare\_only }
+RemoveDirective object { operation, cloudflare\_only }
 
 Remove the directive.
 
@@ -5910,7 +5910,7 @@ Remove the directive.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -5948,7 +5948,7 @@ Whether the directive should only be applied to the Cloudflare CDN cache.
 
 <summary>
 
-"max-age": optional object {operation, value, cloudflare\_only } or object {operation, cloudflare\_only }
+"max-age": optional object { operation, value, cloudflare\_only } or object { operation, cloudflare\_only }
 
 A cache-control directive configuration that accepts a duration value in seconds.
 
@@ -5960,7 +5960,7 @@ One of the following:
 
 <summary>
 
-SetDirective object {operation, value, cloudflare\_only }
+SetDirective object { operation, value, cloudflare\_only }
 
 Set the directive with a duration value in seconds.
 
@@ -5970,7 +5970,7 @@ Set the directive with a duration value in seconds.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -6012,7 +6012,7 @@ Whether the directive should only be applied to the Cloudflare CDN cache.
 
 <summary>
 
-RemoveDirective object {operation, cloudflare\_only }
+RemoveDirective object { operation, cloudflare\_only }
 
 Remove the directive.
 
@@ -6022,7 +6022,7 @@ Remove the directive.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -6060,7 +6060,7 @@ Whether the directive should only be applied to the Cloudflare CDN cache.
 
 <summary>
 
-"must-revalidate": optional object {operation, cloudflare\_only } or object {operation, cloudflare\_only }
+"must-revalidate": optional object { operation, cloudflare\_only } or object { operation, cloudflare\_only }
 
 A cache-control directive configuration.
 
@@ -6072,7 +6072,7 @@ One of the following:
 
 <summary>
 
-SetDirective object {operation, cloudflare\_only }
+SetDirective object { operation, cloudflare\_only }
 
 Set the directive.
 
@@ -6082,7 +6082,7 @@ Set the directive.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -6116,7 +6116,7 @@ Whether the directive should only be applied to the Cloudflare CDN cache.
 
 <summary>
 
-RemoveDirective object {operation, cloudflare\_only }
+RemoveDirective object { operation, cloudflare\_only }
 
 Remove the directive.
 
@@ -6126,7 +6126,7 @@ Remove the directive.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -6164,7 +6164,7 @@ Whether the directive should only be applied to the Cloudflare CDN cache.
 
 <summary>
 
-"must-understand": optional object {operation, cloudflare\_only } or object {operation, cloudflare\_only }
+"must-understand": optional object { operation, cloudflare\_only } or object { operation, cloudflare\_only }
 
 A cache-control directive configuration.
 
@@ -6176,7 +6176,7 @@ One of the following:
 
 <summary>
 
-SetDirective object {operation, cloudflare\_only }
+SetDirective object { operation, cloudflare\_only }
 
 Set the directive.
 
@@ -6186,7 +6186,7 @@ Set the directive.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -6220,7 +6220,7 @@ Whether the directive should only be applied to the Cloudflare CDN cache.
 
 <summary>
 
-RemoveDirective object {operation, cloudflare\_only }
+RemoveDirective object { operation, cloudflare\_only }
 
 Remove the directive.
 
@@ -6230,7 +6230,7 @@ Remove the directive.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -6268,7 +6268,7 @@ Whether the directive should only be applied to the Cloudflare CDN cache.
 
 <summary>
 
-"no-cache": optional object {operation, cloudflare\_only, qualifiers } or object {operation, cloudflare\_only }
+"no-cache": optional object { operation, cloudflare\_only, qualifiers } or object { operation, cloudflare\_only }
 
 A cache-control directive configuration that accepts optional qualifiers (header names).
 
@@ -6280,7 +6280,7 @@ One of the following:
 
 <summary>
 
-SetDirective object {operation, cloudflare\_only, qualifiers }
+SetDirective object { operation, cloudflare\_only, qualifiers }
 
 Set the directive with optional qualifiers.
 
@@ -6290,7 +6290,7 @@ Set the directive with optional qualifiers.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -6330,7 +6330,7 @@ Optional list of header names to qualify the directive (e.g., for “private” 
 
 <summary>
 
-RemoveDirective object {operation, cloudflare\_only }
+RemoveDirective object { operation, cloudflare\_only }
 
 Remove the directive.
 
@@ -6340,7 +6340,7 @@ Remove the directive.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -6378,7 +6378,7 @@ Whether the directive should only be applied to the Cloudflare CDN cache.
 
 <summary>
 
-"no-store": optional object {operation, cloudflare\_only } or object {operation, cloudflare\_only }
+"no-store": optional object { operation, cloudflare\_only } or object { operation, cloudflare\_only }
 
 A cache-control directive configuration.
 
@@ -6390,7 +6390,7 @@ One of the following:
 
 <summary>
 
-SetDirective object {operation, cloudflare\_only }
+SetDirective object { operation, cloudflare\_only }
 
 Set the directive.
 
@@ -6400,7 +6400,7 @@ Set the directive.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -6434,7 +6434,7 @@ Whether the directive should only be applied to the Cloudflare CDN cache.
 
 <summary>
 
-RemoveDirective object {operation, cloudflare\_only }
+RemoveDirective object { operation, cloudflare\_only }
 
 Remove the directive.
 
@@ -6444,7 +6444,7 @@ Remove the directive.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -6482,7 +6482,7 @@ Whether the directive should only be applied to the Cloudflare CDN cache.
 
 <summary>
 
-"no-transform": optional object {operation, cloudflare\_only } or object {operation, cloudflare\_only }
+"no-transform": optional object { operation, cloudflare\_only } or object { operation, cloudflare\_only }
 
 A cache-control directive configuration.
 
@@ -6494,7 +6494,7 @@ One of the following:
 
 <summary>
 
-SetDirective object {operation, cloudflare\_only }
+SetDirective object { operation, cloudflare\_only }
 
 Set the directive.
 
@@ -6504,7 +6504,7 @@ Set the directive.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -6538,7 +6538,7 @@ Whether the directive should only be applied to the Cloudflare CDN cache.
 
 <summary>
 
-RemoveDirective object {operation, cloudflare\_only }
+RemoveDirective object { operation, cloudflare\_only }
 
 Remove the directive.
 
@@ -6548,7 +6548,7 @@ Remove the directive.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -6586,7 +6586,7 @@ Whether the directive should only be applied to the Cloudflare CDN cache.
 
 <summary>
 
-private: optional object {operation, cloudflare\_only, qualifiers } or object {operation, cloudflare\_only }
+private: optional object { operation, cloudflare\_only, qualifiers } or object { operation, cloudflare\_only }
 
 A cache-control directive configuration that accepts optional qualifiers (header names).
 
@@ -6598,7 +6598,7 @@ One of the following:
 
 <summary>
 
-SetDirective object {operation, cloudflare\_only, qualifiers }
+SetDirective object { operation, cloudflare\_only, qualifiers }
 
 Set the directive with optional qualifiers.
 
@@ -6608,7 +6608,7 @@ Set the directive with optional qualifiers.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -6648,7 +6648,7 @@ Optional list of header names to qualify the directive (e.g., for “private” 
 
 <summary>
 
-RemoveDirective object {operation, cloudflare\_only }
+RemoveDirective object { operation, cloudflare\_only }
 
 Remove the directive.
 
@@ -6658,7 +6658,7 @@ Remove the directive.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -6696,7 +6696,7 @@ Whether the directive should only be applied to the Cloudflare CDN cache.
 
 <summary>
 
-"proxy-revalidate": optional object {operation, cloudflare\_only } or object {operation, cloudflare\_only }
+"proxy-revalidate": optional object { operation, cloudflare\_only } or object { operation, cloudflare\_only }
 
 A cache-control directive configuration.
 
@@ -6708,7 +6708,7 @@ One of the following:
 
 <summary>
 
-SetDirective object {operation, cloudflare\_only }
+SetDirective object { operation, cloudflare\_only }
 
 Set the directive.
 
@@ -6718,7 +6718,7 @@ Set the directive.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -6752,7 +6752,7 @@ Whether the directive should only be applied to the Cloudflare CDN cache.
 
 <summary>
 
-RemoveDirective object {operation, cloudflare\_only }
+RemoveDirective object { operation, cloudflare\_only }
 
 Remove the directive.
 
@@ -6762,7 +6762,7 @@ Remove the directive.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -6800,7 +6800,7 @@ Whether the directive should only be applied to the Cloudflare CDN cache.
 
 <summary>
 
-public: optional object {operation, cloudflare\_only } or object {operation, cloudflare\_only }
+public: optional object { operation, cloudflare\_only } or object { operation, cloudflare\_only }
 
 A cache-control directive configuration.
 
@@ -6812,7 +6812,7 @@ One of the following:
 
 <summary>
 
-SetDirective object {operation, cloudflare\_only }
+SetDirective object { operation, cloudflare\_only }
 
 Set the directive.
 
@@ -6822,7 +6822,7 @@ Set the directive.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -6856,7 +6856,7 @@ Whether the directive should only be applied to the Cloudflare CDN cache.
 
 <summary>
 
-RemoveDirective object {operation, cloudflare\_only }
+RemoveDirective object { operation, cloudflare\_only }
 
 Remove the directive.
 
@@ -6866,7 +6866,7 @@ Remove the directive.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -6904,7 +6904,7 @@ Whether the directive should only be applied to the Cloudflare CDN cache.
 
 <summary>
 
-"s-maxage": optional object {operation, value, cloudflare\_only } or object {operation, cloudflare\_only }
+"s-maxage": optional object { operation, value, cloudflare\_only } or object { operation, cloudflare\_only }
 
 A cache-control directive configuration that accepts a duration value in seconds.
 
@@ -6916,7 +6916,7 @@ One of the following:
 
 <summary>
 
-SetDirective object {operation, value, cloudflare\_only }
+SetDirective object { operation, value, cloudflare\_only }
 
 Set the directive with a duration value in seconds.
 
@@ -6926,7 +6926,7 @@ Set the directive with a duration value in seconds.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -6968,7 +6968,7 @@ Whether the directive should only be applied to the Cloudflare CDN cache.
 
 <summary>
 
-RemoveDirective object {operation, cloudflare\_only }
+RemoveDirective object { operation, cloudflare\_only }
 
 Remove the directive.
 
@@ -6978,7 +6978,7 @@ Remove the directive.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -7016,7 +7016,7 @@ Whether the directive should only be applied to the Cloudflare CDN cache.
 
 <summary>
 
-"stale-if-error": optional object {operation, value, cloudflare\_only } or object {operation, cloudflare\_only }
+"stale-if-error": optional object { operation, value, cloudflare\_only } or object { operation, cloudflare\_only }
 
 A cache-control directive configuration that accepts a duration value in seconds.
 
@@ -7028,7 +7028,7 @@ One of the following:
 
 <summary>
 
-SetDirective object {operation, value, cloudflare\_only }
+SetDirective object { operation, value, cloudflare\_only }
 
 Set the directive with a duration value in seconds.
 
@@ -7038,7 +7038,7 @@ Set the directive with a duration value in seconds.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -7080,7 +7080,7 @@ Whether the directive should only be applied to the Cloudflare CDN cache.
 
 <summary>
 
-RemoveDirective object {operation, cloudflare\_only }
+RemoveDirective object { operation, cloudflare\_only }
 
 Remove the directive.
 
@@ -7090,7 +7090,7 @@ Remove the directive.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -7128,7 +7128,7 @@ Whether the directive should only be applied to the Cloudflare CDN cache.
 
 <summary>
 
-"stale-while-revalidate": optional object {operation, value, cloudflare\_only } or object {operation, cloudflare\_only }
+"stale-while-revalidate": optional object { operation, value, cloudflare\_only } or object { operation, cloudflare\_only }
 
 A cache-control directive configuration that accepts a duration value in seconds.
 
@@ -7140,7 +7140,7 @@ One of the following:
 
 <summary>
 
-SetDirective object {operation, value, cloudflare\_only }
+SetDirective object { operation, value, cloudflare\_only }
 
 Set the directive with a duration value in seconds.
 
@@ -7150,7 +7150,7 @@ Set the directive with a duration value in seconds.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -7192,7 +7192,7 @@ Whether the directive should only be applied to the Cloudflare CDN cache.
 
 <summary>
 
-RemoveDirective object {operation, cloudflare\_only }
+RemoveDirective object { operation, cloudflare\_only }
 
 Remove the directive.
 
@@ -7202,7 +7202,7 @@ Remove the directive.
 
 <summary>
 
-operation: "set"or "remove"
+operation: "set" or "remove"
 
 The operation to perform on the cache-control directive.
 
@@ -7256,7 +7256,7 @@ An informative description of the rule.
 
 <summary>
 
-exposed\_credential\_check: optional object {password\_expression, username\_expression }
+exposed\_credential\_check: optional object { password\_expression, username\_expression }
 
 Configuration for exposed credential checking.
 
@@ -7306,7 +7306,7 @@ Whether to generate a log when the rule matches.
 
 <summary>
 
-ratelimit: optional object {characteristics, period, counting\_expression, 5 more }
+ratelimit: optional object { characteristics, period, counting\_expression, 5 more }
 
 An object configuring the rule’s rate limit behavior.
 
@@ -7412,7 +7412,7 @@ ref: string
 
 <summary>
 
-SetCacheTagsRule object {id, action, enabled, 10 more }
+SetCacheTagsRule object { id, action, enabled, 10 more }
 
 </summary>
 
@@ -7466,7 +7466,7 @@ The version of the rule.
 
 <summary>
 
-action\_parameters: optional object {operation, values } or object {expression, operation } or object {operation, values } or 3 more
+action\_parameters: optional object { operation, values } or object { expression, operation } or object { operation, values } or 3 more
 
 The parameters configuring the rule’s action.
 
@@ -7478,7 +7478,7 @@ One of the following:
 
 <summary>
 
-AddCacheTagsValues object {operation, values }
+AddCacheTagsValues object { operation, values }
 
 Add cache tags using a list of values.
 
@@ -7488,7 +7488,7 @@ Add cache tags using a list of values.
 
 <summary>
 
-operation: "add"or "remove"or "set"
+operation: "add" or "remove" or "set"
 
 The operation to perform on the cache tags.
 
@@ -7526,7 +7526,7 @@ A list of cache tag values.
 
 <summary>
 
-AddCacheTagsExpression object {expression, operation }
+AddCacheTagsExpression object { expression, operation }
 
 Add cache tags using an expression.
 
@@ -7544,7 +7544,7 @@ minLength1
 
 <summary>
 
-operation: "add"or "remove"or "set"
+operation: "add" or "remove" or "set"
 
 The operation to perform on the cache tags.
 
@@ -7576,7 +7576,7 @@ One of the following:
 
 <summary>
 
-RemoveCacheTagsValues object {operation, values }
+RemoveCacheTagsValues object { operation, values }
 
 Remove cache tags using a list of values.
 
@@ -7586,7 +7586,7 @@ Remove cache tags using a list of values.
 
 <summary>
 
-operation: "add"or "remove"or "set"
+operation: "add" or "remove" or "set"
 
 The operation to perform on the cache tags.
 
@@ -7624,7 +7624,7 @@ A list of cache tag values.
 
 <summary>
 
-RemoveCacheTagsExpression object {expression, operation }
+RemoveCacheTagsExpression object { expression, operation }
 
 Remove cache tags using an expression.
 
@@ -7642,7 +7642,7 @@ minLength1
 
 <summary>
 
-operation: "add"or "remove"or "set"
+operation: "add" or "remove" or "set"
 
 The operation to perform on the cache tags.
 
@@ -7674,7 +7674,7 @@ One of the following:
 
 <summary>
 
-SetCacheTagsValues object {operation, values }
+SetCacheTagsValues object { operation, values }
 
 Set cache tags using a list of values.
 
@@ -7684,7 +7684,7 @@ Set cache tags using a list of values.
 
 <summary>
 
-operation: "add"or "remove"or "set"
+operation: "add" or "remove" or "set"
 
 The operation to perform on the cache tags.
 
@@ -7722,7 +7722,7 @@ A list of cache tag values.
 
 <summary>
 
-SetCacheTagsExpression object {expression, operation }
+SetCacheTagsExpression object { expression, operation }
 
 Set cache tags using an expression.
 
@@ -7740,7 +7740,7 @@ minLength1
 
 <summary>
 
-operation: "add"or "remove"or "set"
+operation: "add" or "remove" or "set"
 
 The operation to perform on the cache tags.
 
@@ -7788,7 +7788,7 @@ An informative description of the rule.
 
 <summary>
 
-exposed\_credential\_check: optional object {password\_expression, username\_expression }
+exposed\_credential\_check: optional object { password\_expression, username\_expression }
 
 Configuration for exposed credential checking.
 
@@ -7838,7 +7838,7 @@ Whether to generate a log when the rule matches.
 
 <summary>
 
-ratelimit: optional object {characteristics, period, counting\_expression, 5 more }
+ratelimit: optional object { characteristics, period, counting\_expression, 5 more }
 
 An object configuring the rule’s rate limit behavior.
 
@@ -7976,7 +7976,7 @@ ref: string
 
 <summary>
 
-TransformResponseHTMLRule object {id, action, enabled, 10 more }
+TransformResponseHTMLRule object { id, action, enabled, 10 more }
 
 </summary>
 
@@ -8030,7 +8030,7 @@ The version of the rule.
 
 <summary>
 
-action\_parameters: optional object {link\_maze }
+action\_parameters: optional object { link\_maze }
 
 The parameters configuring the rule’s action.
 
@@ -8062,7 +8062,7 @@ An informative description of the rule.
 
 <summary>
 
-exposed\_credential\_check: optional object {password\_expression, username\_expression }
+exposed\_credential\_check: optional object { password\_expression, username\_expression }
 
 Configuration for exposed credential checking.
 
@@ -8112,7 +8112,7 @@ Whether to generate a log when the rule matches.
 
 <summary>
 
-ratelimit: optional object {characteristics, period, counting\_expression, 5 more }
+ratelimit: optional object { characteristics, period, counting\_expression, 5 more }
 
 An object configuring the rule’s rate limit behavior.
 

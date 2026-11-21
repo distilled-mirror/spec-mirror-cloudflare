@@ -72,7 +72,7 @@ Filters results by Autonomous System. Specify one or more Autonomous System Numb
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -124,7 +124,7 @@ minimum0
 
 <summary>
 
-orderBy: optional "ASN"or "POPULATION"
+orderBy: optional "ASN" or "POPULATION"
 
 Specifies the metric to order the ASNs by.
 
@@ -150,7 +150,7 @@ One of the following:
 
 <summary>
 
-result: object {asns }
+result: object { asns }
 
 </summary>
 
@@ -158,7 +158,7 @@ result: object {asns }
 
 <summary>
 
-asns: array of object {asn, category, country, 6 more }
+asns: array of object { asn, category, country, 6 more }
 
 </summary>
 
@@ -170,7 +170,7 @@ asn: number
 
 <summary>
 
-category: "ACCESS\_ISP"or "HOSTING\_CLOUD\_CONTENT"or "ORGANIZATION"
+category: "ACCESS\_ISP" or "HOSTING\_CLOUD\_CONTENT" or "ORGANIZATION"
 
 Inferred network type of the AS: <code>ACCESS_ISP</code> (networks connecting end users, plus transit), <code>HOSTING_CLOUD_CONTENT</code> (hosting providers, clouds and CDNs) or <code>ORGANIZATION</code> (enterprises, universities, governments, banks and IXP route servers). <code>null</code> when the AS is not classified.
 
@@ -206,7 +206,7 @@ countryName: string
 
 <summary>
 
-estimatedUsers: object {estimatedUsers }
+estimatedUsers: object { estimatedUsers }
 
 </summary>
 

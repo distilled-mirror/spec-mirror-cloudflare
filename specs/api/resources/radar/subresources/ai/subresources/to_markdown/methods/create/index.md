@@ -60,7 +60,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Workers AI Write``Workers AI Read`
+`AI Search Index Engine``Auto Rag Write Run Engine``Workers AI Write``Workers AI Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -84,7 +84,7 @@ Files to convert, supplied as multipart file uploads.
 
 <summary>
 
-result: array of object {data, format, mimeType, 2 more }
+result: array of object { data, format, mimeType, 2 more }
 
 </summary>
 

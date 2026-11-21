@@ -30,7 +30,7 @@ GET/accounts/{account\_id}/intel/domain/bulk
 
 <summary>
 
-BulkGetResponse = array of object {additional\_information, application, content\_categories, 7 more }
+BulkGetResponse = array of object { additional\_information, application, content\_categories, 7 more }
 
 </summary>
 
@@ -38,7 +38,7 @@ BulkGetResponse = array of object {additional\_information, application, content
 
 <summary>
 
-additional\_information: optional object {suspected\_malware\_family }
+additional\_information: optional object { suspected\_malware\_family }
 
 Additional information related to the host name.
 
@@ -58,7 +58,7 @@ Suspected DGA malware family.
 
 <summary>
 
-application: optional object {id, name }
+application: optional object { id, name }
 
 Application that the hostname belongs to.
 
@@ -80,7 +80,7 @@ name: optional string
 
 <summary>
 
-content\_categories: optional array of object {id, name, super\_category\_id }
+content\_categories: optional array of object { id, name, super\_category\_id }
 
 </summary>
 
@@ -108,7 +108,7 @@ domain: optional string
 
 <summary>
 
-inherited\_content\_categories: optional array of object {id, name, super\_category\_id }
+inherited\_content\_categories: optional array of object { id, name, super\_category\_id }
 
 </summary>
 
@@ -138,7 +138,7 @@ Domain from which <code>inherited_content_categories</code> and <code>inherited_
 
 <summary>
 
-inherited\_risk\_types: optional array of object {id, name, super\_category\_id }
+inherited\_risk\_types: optional array of object { id, name, super\_category\_id }
 
 </summary>
 
@@ -174,7 +174,7 @@ Hostname risk score, which is a value between 0 (lowest risk) to 1 (highest risk
 
 <summary>
 
-risk\_types: optional array of object {id, name, super\_category\_id }
+risk\_types: optional array of object { id, name, super\_category\_id }
 
 </summary>
 

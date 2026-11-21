@@ -46,7 +46,7 @@ GET/accounts/{account\_id}/dex/rules
 
 <summary>
 
-RuleGetResponse object {id, created\_at, match, 4 more }
+RuleGetResponse object { id, created\_at, match, 4 more }
 
 </summary>
 
@@ -78,7 +78,7 @@ description: optional string
 
 <summary>
 
-targeted\_tests: optional array of object {data, enabled, name, test\_id }
+targeted\_tests: optional array of object { data, enabled, name, test\_id }
 
 </summary>
 
@@ -120,7 +120,7 @@ RuleDeleteResponse = boolean
 
 <summary>
 
-RuleUpdateResponse object {id, created\_at, match, 4 more }
+RuleUpdateResponse object { id, created\_at, match, 4 more }
 
 </summary>
 
@@ -152,7 +152,7 @@ description: optional string
 
 <summary>
 
-targeted\_tests: optional array of object {data, enabled, name, test\_id }
+targeted\_tests: optional array of object { data, enabled, name, test\_id }
 
 </summary>
 
@@ -190,7 +190,7 @@ updated\_at: optional string
 
 <summary>
 
-RuleCreateResponse object {id, created\_at, match, 4 more }
+RuleCreateResponse object { id, created\_at, match, 4 more }
 
 </summary>
 
@@ -222,7 +222,7 @@ description: optional string
 
 <summary>
 
-targeted\_tests: optional array of object {data, enabled, name, test\_id }
+targeted\_tests: optional array of object { data, enabled, name, test\_id }
 
 </summary>
 
@@ -260,7 +260,7 @@ updated\_at: optional string
 
 <summary>
 
-RuleListResponse object {rules }
+RuleListResponse object { rules }
 
 </summary>
 
@@ -268,7 +268,7 @@ RuleListResponse object {rules }
 
 <summary>
 
-rules: optional array of object {id, created\_at, match, 4 more }
+rules: optional array of object { id, created\_at, match, 4 more }
 
 </summary>
 
@@ -300,7 +300,7 @@ description: optional string
 
 <summary>
 
-targeted\_tests: optional array of object {data, enabled, name, test\_id }
+targeted\_tests: optional array of object { data, enabled, name, test\_id }
 
 </summary>
 

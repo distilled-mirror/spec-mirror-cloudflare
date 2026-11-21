@@ -104,7 +104,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -146,7 +146,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -166,7 +166,7 @@ pointer: optional string
 
 <summary>
 
-result: object {disable\_for\_time }
+result: object { disable\_for\_time }
 
 </summary>
 
@@ -174,7 +174,7 @@ result: object {disable\_for\_time }
 
 <summary>
 
-disable\_for\_time: optional object {"1", "12", "24", 2 more }
+disable\_for\_time: optional object { "1", "12", "24", 2 more }
 
 </summary>
 

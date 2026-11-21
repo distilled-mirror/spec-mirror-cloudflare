@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Vectorize Write``Vectorize Read`
+`Auto Rag Write Run Engine``Vectorize Write``Vectorize Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -96,7 +96,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -138,7 +138,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -166,7 +166,7 @@ result: array of <a href="https://developers.cloudflare.com/api/resources/vector
 
 <summary>
 
-config: optional object {dimensions, metric, preset }
+config: optional object { dimensions, metric, preset }
 
 </summary>
 
@@ -184,7 +184,7 @@ minimum1
 
 <summary>
 
-metric: "cosine"or "euclidean"or "dot-product"
+metric: "cosine" or "euclidean" or "dot-product"
 
 Specifies the type of metric to use calculating distance.
 
@@ -212,7 +212,7 @@ One of the following:
 
 <summary>
 
-preset: optional "@cf/baai/bge-small-en-v1.5"or "@cf/baai/bge-base-en-v1.5"or "@cf/baai/bge-large-en-v1.5"or 2 more
+preset: optional "@cf/baai/bge-small-en-v1.5" or "@cf/baai/bge-base-en-v1.5" or "@cf/baai/bge-large-en-v1.5" or 2 more
 
 Specifies the preset to use for the index.
 

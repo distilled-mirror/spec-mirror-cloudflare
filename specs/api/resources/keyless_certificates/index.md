@@ -42,7 +42,7 @@ DELETE/zones/{zone\_id}/keyless\_certificates/{keyless\_certificate\_id}
 
 <summary>
 
-KeylessCertificate object {id, created\_on, enabled, 7 more }
+KeylessCertificate object { id, created\_on, enabled, 7 more }
 
 </summary>
 
@@ -112,7 +112,7 @@ maxLength65535
 
 <summary>
 
-status: "active"or "deleted"
+status: "active" or "deleted"
 
 Status of the Keyless SSL.
 
@@ -146,7 +146,7 @@ Configuration for using Keyless SSL through a Cloudflare Tunnel.
 
 <summary>
 
-Tunnel object {private\_ip, vnet\_id }
+Tunnel object { private\_ip, vnet\_id }
 
 Configuration for using Keyless SSL through a Cloudflare Tunnel.
 
@@ -172,7 +172,7 @@ Cloudflare Tunnel Virtual Network ID.
 
 <summary>
 
-KeylessCertificateDeleteResponse object {id }
+KeylessCertificateDeleteResponse object { id }
 
 </summary>
 

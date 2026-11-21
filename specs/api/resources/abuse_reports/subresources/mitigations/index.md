@@ -32,7 +32,7 @@ POST/accounts/{account\_id}/abuse-reports/{report\_id}/mitigations/appeal
 
 <summary>
 
-MitigationListResponse object {mitigations }
+MitigationListResponse object { mitigations }
 
 </summary>
 
@@ -40,7 +40,7 @@ MitigationListResponse object {mitigations }
 
 <summary>
 
-mitigations: array of object {id, effective\_date, entity\_id, 3 more }
+mitigations: array of object { id, effective\_date, entity\_id, 3 more }
 
 </summary>
 
@@ -64,7 +64,7 @@ entity\_id: string
 
 <summary>
 
-entity\_type: "url\_pattern"or "account"or "zone"or 2 more
+entity\_type: "url\_pattern" or "account" or "zone" or 2 more
 
 The type of entity targeted by a mitigation.
 
@@ -100,7 +100,7 @@ One of the following:
 
 <summary>
 
-status: "pending"or "active"or "in\_review"or 2 more
+status: "pending" or "active" or "in\_review" or 2 more
 
 The status of a mitigation
 
@@ -150,7 +150,7 @@ The type of mitigation applied to a reported entity.
 
 <summary>
 
-MitigationReviewResponse object {id, effective\_date, entity\_id, 3 more }
+MitigationReviewResponse object { id, effective\_date, entity\_id, 3 more }
 
 </summary>
 
@@ -174,7 +174,7 @@ entity\_id: string
 
 <summary>
 
-entity\_type: "url\_pattern"or "account"or "zone"or 2 more
+entity\_type: "url\_pattern" or "account" or "zone" or 2 more
 
 The type of entity targeted by a mitigation.
 
@@ -210,7 +210,7 @@ One of the following:
 
 <summary>
 
-status: "pending"or "active"or "in\_review"or 2 more
+status: "pending" or "active" or "in\_review" or 2 more
 
 The status of a mitigation
 

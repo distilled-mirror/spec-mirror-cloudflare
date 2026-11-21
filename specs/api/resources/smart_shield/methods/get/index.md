@@ -94,7 +94,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -136,7 +136,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -156,7 +156,7 @@ pointer: optional string
 
 <summary>
 
-result: object {cache\_reserve, healthchecks\_count, regional\_tiered\_cache, 2 more } or object {cache\_reserve, healthchecks\_count, regional\_tiered\_cache, 2 more } or object {cache\_reserve, healthchecks\_count, regional\_tiered\_cache, 2 more }
+result: object { cache\_reserve, healthchecks\_count, regional\_tiered\_cache, 2 more } or object { cache\_reserve, healthchecks\_count, regional\_tiered\_cache, 2 more } or object { cache\_reserve, healthchecks\_count, regional\_tiered\_cache, 2 more }
 
 </summary>
 
@@ -166,7 +166,7 @@ One of the following:
 
 <summary>
 
-object {cache\_reserve, healthchecks\_count, regional\_tiered\_cache, 2 more }
+object { cache\_reserve, healthchecks\_count, regional\_tiered\_cache, 2 more }
 
 </summary>
 
@@ -174,7 +174,7 @@ object {cache\_reserve, healthchecks\_count, regional\_tiered\_cache, 2 more }
 
 <summary>
 
-cache\_reserve: optional object {id, editable, value }
+cache\_reserve: optional object { id, editable, value }
 
 </summary>
 
@@ -194,7 +194,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Cache Reserve.
 
@@ -228,7 +228,7 @@ The total number of health checks associated with the zone.
 
 <summary>
 
-regional\_tiered\_cache: optional object {id, editable, value }
+regional\_tiered\_cache: optional object { id, editable, value }
 
 </summary>
 
@@ -248,7 +248,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Cache Reserve.
 
@@ -276,7 +276,7 @@ One of the following:
 
 <summary>
 
-smart\_routing: optional object {id, editable, value }
+smart\_routing: optional object { id, editable, value }
 
 </summary>
 
@@ -296,7 +296,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Argo Smart Routing.
 
@@ -324,7 +324,7 @@ One of the following:
 
 <summary>
 
-smart\_tiered\_cache: optional object {id, editable, modified\_on, value }
+smart\_tiered\_cache: optional object { id, editable, modified\_on, value }
 
 </summary>
 
@@ -350,7 +350,7 @@ The last time the setting was modified.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Tiered Cache.
 
@@ -382,7 +382,7 @@ One of the following:
 
 <summary>
 
-object {cache\_reserve, healthchecks\_count, regional\_tiered\_cache, 2 more }
+object { cache\_reserve, healthchecks\_count, regional\_tiered\_cache, 2 more }
 
 </summary>
 
@@ -390,7 +390,7 @@ object {cache\_reserve, healthchecks\_count, regional\_tiered\_cache, 2 more }
 
 <summary>
 
-cache\_reserve: optional object {id, editable, value }
+cache\_reserve: optional object { id, editable, value }
 
 </summary>
 
@@ -410,7 +410,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Cache Reserve.
 
@@ -444,7 +444,7 @@ The total number of health checks associated with the zone.
 
 <summary>
 
-regional\_tiered\_cache: optional object {id, editable, value }
+regional\_tiered\_cache: optional object { id, editable, value }
 
 </summary>
 
@@ -464,7 +464,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Cache Reserve.
 
@@ -492,7 +492,7 @@ One of the following:
 
 <summary>
 
-smart\_routing: optional object {id, editable, value }
+smart\_routing: optional object { id, editable, value }
 
 </summary>
 
@@ -512,7 +512,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Argo Smart Routing.
 
@@ -540,7 +540,7 @@ One of the following:
 
 <summary>
 
-smart\_tiered\_cache: optional object {id, editable, modified\_on, value }
+smart\_tiered\_cache: optional object { id, editable, modified\_on, value }
 
 </summary>
 
@@ -566,7 +566,7 @@ The last time the setting was modified.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Tiered Cache.
 
@@ -598,7 +598,7 @@ One of the following:
 
 <summary>
 
-object {cache\_reserve, healthchecks\_count, regional\_tiered\_cache, 2 more }
+object { cache\_reserve, healthchecks\_count, regional\_tiered\_cache, 2 more }
 
 </summary>
 
@@ -606,7 +606,7 @@ object {cache\_reserve, healthchecks\_count, regional\_tiered\_cache, 2 more }
 
 <summary>
 
-cache\_reserve: optional object {id, editable, value }
+cache\_reserve: optional object { id, editable, value }
 
 </summary>
 
@@ -626,7 +626,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Cache Reserve.
 
@@ -660,7 +660,7 @@ The total number of health checks associated with the zone.
 
 <summary>
 
-regional\_tiered\_cache: optional object {id, editable, value }
+regional\_tiered\_cache: optional object { id, editable, value }
 
 </summary>
 
@@ -680,7 +680,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Cache Reserve.
 
@@ -708,7 +708,7 @@ One of the following:
 
 <summary>
 
-smart\_routing: optional object {id, editable, value }
+smart\_routing: optional object { id, editable, value }
 
 </summary>
 
@@ -728,7 +728,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Argo Smart Routing.
 
@@ -756,7 +756,7 @@ One of the following:
 
 <summary>
 
-smart\_tiered\_cache: optional object {id, editable, modified\_on, value }
+smart\_tiered\_cache: optional object { id, editable, modified\_on, value }
 
 </summary>
 
@@ -782,7 +782,7 @@ The last time the setting was modified.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Tiered Cache.
 

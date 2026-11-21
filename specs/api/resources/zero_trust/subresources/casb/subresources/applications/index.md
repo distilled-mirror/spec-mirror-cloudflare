@@ -34,7 +34,7 @@ GET/accounts/{account\_id}/one/applications/{application\_id}
 
 <summary>
 
-ApplicationListResponse object {id, auth\_methods, category, 7 more }
+ApplicationListResponse object { id, auth\_methods, category, 7 more }
 
 Application item in list response.
 
@@ -44,7 +44,7 @@ Application item in list response.
 
 <summary>
 
-id: "ANTHROPIC"or "AWS"or "BITBUCKET"or 13 more
+id: "ANTHROPIC" or "AWS" or "BITBUCKET" or 13 more
 
 Vendor identifier (e.g. microsoft\_internal, google\_workspace).
 
@@ -141,7 +141,7 @@ One of the following:
 
 <summary>
 
-auth\_methods: array of object {id, display\_name }
+auth\_methods: array of object { id, display\_name }
 
 Available auth methods.
 
@@ -197,7 +197,7 @@ Logo path.
 
 <summary>
 
-permissions: array of object {display\_name, scope, severity }
+permissions: array of object { display\_name, scope, severity }
 
 All permissions with severity.
 
@@ -219,7 +219,7 @@ Vendor-native scope identifier.
 
 <summary>
 
-severity: "low"or "medium"or "high"or "critical"
+severity: "low" or "medium" or "high" or "critical"
 
 Permission sensitivity level.
 
@@ -266,7 +266,7 @@ Environments this vendor supports (standard, fedramp).
 
 <summary>
 
-use\_cases: array of object {id, display\_name }
+use\_cases: array of object { id, display\_name }
 
 Supported use cases.
 
@@ -296,7 +296,7 @@ Human-readable use case name.
 
 <summary>
 
-ApplicationGetResponse object {id, auth\_methods, category, 6 more }
+ApplicationGetResponse object { id, auth\_methods, category, 6 more }
 
 The requested item.
 
@@ -306,7 +306,7 @@ The requested item.
 
 <summary>
 
-id: "ANTHROPIC"or "AWS"or "BITBUCKET"or 13 more
+id: "ANTHROPIC" or "AWS" or "BITBUCKET" or 13 more
 
 Vendor identifier.
 
@@ -403,7 +403,7 @@ One of the following:
 
 <summary>
 
-auth\_methods: array of object {id, display\_name, is\_default, supported\_environments }
+auth\_methods: array of object { id, display\_name, is\_default, supported\_environments }
 
 Available authentication methods.
 
@@ -477,7 +477,7 @@ Logo path.
 
 <summary>
 
-use\_cases: array of object {id, base\_scopes, description, 2 more }
+use\_cases: array of object { id, base\_scopes, description, 2 more }
 
 Use cases with full scope details.
 
@@ -493,7 +493,7 @@ Use case identifier.
 
 <summary>
 
-base\_scopes: array of object {display\_name, scope, severity }
+base\_scopes: array of object { display\_name, scope, severity }
 
 Scopes always required for this use case.
 
@@ -515,7 +515,7 @@ Vendor-native scope identifier.
 
 <summary>
 
-severity: "low"or "medium"or "high"or "critical"
+severity: "low" or "medium" or "high" or "critical"
 
 Permission sensitivity level.
 
@@ -568,7 +568,7 @@ Human-readable use case name.
 
 <summary>
 
-features: array of object {id, description, display\_name, scopes }
+features: array of object { id, description, display\_name, scopes }
 
 Optional features with extra scopes.
 
@@ -596,7 +596,7 @@ Human-readable feature name.
 
 <summary>
 
-scopes: array of object {display\_name, scope, severity }
+scopes: array of object { display\_name, scope, severity }
 
 Additional scopes when feature is enabled.
 
@@ -618,7 +618,7 @@ Vendor-native scope identifier.
 
 <summary>
 
-severity: "low"or "medium"or "high"or "critical"
+severity: "low" or "medium" or "high" or "critical"
 
 Permission sensitivity level.
 
@@ -679,7 +679,7 @@ GET/accounts/{account\_id}/one/applications/{application\_id}/auth-methods
 
 <summary>
 
-AuthMethodListResponse object {id, display\_name, human\_interaction\_required, 4 more }
+AuthMethodListResponse object { id, display\_name, human\_interaction\_required, 4 more }
 
 Detailed auth method info including credentials schema and instructions.
 
@@ -707,7 +707,7 @@ Whether setup requires human interaction or integration can be created purely us
 
 <summary>
 
-instructions: object {markdown }
+instructions: object { markdown }
 
 Step-by-step instructions for obtaining credentials.
 

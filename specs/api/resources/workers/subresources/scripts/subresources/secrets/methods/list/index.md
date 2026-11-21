@@ -82,7 +82,7 @@ Name of the script.
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -104,7 +104,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -124,7 +124,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -146,7 +146,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -172,7 +172,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional array of object {name, text, type } or object {algorithm, format, name, 4 more }
+result: optional array of object { name, text, type } or object { algorithm, format, name, 4 more }
 
 </summary>
 
@@ -182,7 +182,7 @@ One of the following:
 
 <summary>
 
-SecretText object {name, text, type }
+SecretText object { name, text, type }
 
 </summary>
 
@@ -212,7 +212,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-SecretKey object {algorithm, format, name, 4 more }
+SecretKey object { algorithm, format, name, 4 more }
 
 </summary>
 
@@ -226,7 +226,7 @@ Algorithm-specific key parameters. <a href="https://developer.mozilla.org/en-US/
 
 <summary>
 
-format: "raw"or "pkcs8"or "spki"or "jwk"
+format: "raw" or "pkcs8" or "spki" or "jwk"
 
 Data format of the key. <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#format">Learn more</a>.
 
@@ -270,7 +270,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-usages: array of "encrypt"or "decrypt"or "sign"or 5 more
+usages: array of "encrypt" or "decrypt" or "sign" or 5 more
 
 Allowed operations with the key. <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#keyUsages">Learn more</a>.
 

@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Zone Settings Write`
+`Zone Settings Write``Workers Routes Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -104,7 +104,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -146,7 +146,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -188,7 +188,7 @@ ID of the zone setting.
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -220,7 +220,7 @@ formatdate-time
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Comma-separated list of allowed origin domains for image and video transformations. Use ”\*” to allow all origins (default).
 

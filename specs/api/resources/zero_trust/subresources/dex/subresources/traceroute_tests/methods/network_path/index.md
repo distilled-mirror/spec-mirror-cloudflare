@@ -108,7 +108,7 @@ Start time for aggregate metrics in ISO ms.
 
 <summary>
 
-interval: "minute"or "hour"
+interval: "minute" or "hour"
 
 Time interval for aggregate time slots.
 
@@ -140,7 +140,7 @@ End time for aggregate metrics in ISO ms.
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -162,7 +162,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -182,7 +182,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -204,7 +204,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -274,7 +274,7 @@ networkPath: optional <a href="https://developers.cloudflare.com/api/resources/z
 
 <summary>
 
-slots: array of object {id, clientToAppRttMs, clientToCfEgressRttMs, 3 more }
+slots: array of object { id, clientToAppRttMs, clientToCfEgressRttMs, 3 more }
 
 </summary>
 
@@ -322,7 +322,7 @@ Round trip time in ms of the client to ISP mile
 
 <summary>
 
-sampling: optional object {unit, value }
+sampling: optional object { unit, value }
 
 Specifies the sampling applied, if any, to the slots response. When sampled, results shown represent the first test run to the start of each sampling interval.
 

@@ -60,7 +60,7 @@ GET/accounts/{account\_id}/realtime/kit/{app\_id}/sessions/peer-report/{peer\_id
 
 <summary>
 
-SessionGetSessionsResponse object {data, paging, success }
+SessionGetSessionsResponse object { data, paging, success }
 
 </summary>
 
@@ -68,7 +68,7 @@ SessionGetSessionsResponse object {data, paging, success }
 
 <summary>
 
-data: optional object {sessions }
+data: optional object { sessions }
 
 </summary>
 
@@ -76,7 +76,7 @@ data: optional object {sessions }
 
 <summary>
 
-sessions: optional array of object {id, associated\_id, created\_at, 11 more }
+sessions: optional array of object { id, associated\_id, created\_at, 11 more }
 
 </summary>
 
@@ -138,7 +138,7 @@ timestamp when session started
 
 <summary>
 
-status: "LIVE"or "ENDED"
+status: "LIVE" or "ENDED"
 
 current status of session
 
@@ -162,7 +162,7 @@ One of the following:
 
 <summary>
 
-type: "meeting"or "livestream"or "participant"
+type: "meeting" or "livestream" or "participant"
 
 type of session
 
@@ -214,7 +214,7 @@ timestamp when session ended
 
 <summary>
 
-paging: optional object {end\_offset, start\_offset, total\_count }
+paging: optional object { end\_offset, start\_offset, total\_count }
 
 </summary>
 
@@ -248,7 +248,7 @@ success: optional boolean
 
 <summary>
 
-SessionGetSessionDetailsResponse object {data, success }
+SessionGetSessionDetailsResponse object { data, success }
 
 </summary>
 
@@ -256,7 +256,7 @@ SessionGetSessionDetailsResponse object {data, success }
 
 <summary>
 
-data: optional object {id, associated\_id, created\_at, 11 more }
+data: optional object { id, associated\_id, created\_at, 11 more }
 
 </summary>
 
@@ -318,7 +318,7 @@ timestamp when session started
 
 <summary>
 
-status: "LIVE"or "ENDED"
+status: "LIVE" or "ENDED"
 
 current status of session
 
@@ -342,7 +342,7 @@ One of the following:
 
 <summary>
 
-type: "meeting"or "livestream"or "participant"
+type: "meeting" or "livestream" or "participant"
 
 type of session
 
@@ -398,7 +398,7 @@ success: optional boolean
 
 <summary>
 
-SessionGetSessionParticipantsResponse object {data, success }
+SessionGetSessionParticipantsResponse object { data, success }
 
 </summary>
 
@@ -406,7 +406,7 @@ SessionGetSessionParticipantsResponse object {data, success }
 
 <summary>
 
-data: optional object {participants }
+data: optional object { participants }
 
 </summary>
 
@@ -414,7 +414,7 @@ data: optional object {participants }
 
 <summary>
 
-participants: optional array of object {id, created\_at, custom\_participant\_id, 8 more }
+participants: optional array of object { id, created\_at, custom\_participant\_id, 8 more }
 
 </summary>
 
@@ -464,7 +464,7 @@ timestamp at which participant left the session.
 
 <summary>
 
-peer\_events: optional array of object {id, created\_at, event\_name, 7 more }
+peer\_events: optional array of object { id, created\_at, event\_name, 7 more }
 
 Connection lifecycle events for the participant’s peer. Only included when <code>include_peer_events</code> is true.
 
@@ -486,7 +486,7 @@ Timestamp when this peer event was created.
 
 <summary>
 
-event\_name: optional "PEER\_CREATED"or "PEER\_JOINING"or "PEER\_LEAVING"
+event\_name: optional "PEER\_CREATED" or "PEER\_JOINING" or "PEER\_LEAVING"
 
 Name of the peer event.
 
@@ -532,7 +532,7 @@ Peer ID this event belongs to.
 
 <summary>
 
-preset\_view\_type: optional "GROUP\_CALL"or "WEBINAR"or "AUDIO\_ROOM"or 2 more
+preset\_view\_type: optional "GROUP\_CALL" or "WEBINAR" or "AUDIO\_ROOM" or 2 more
 
 View type of the preset associated with the peer.
 
@@ -624,7 +624,7 @@ success: optional boolean
 
 <summary>
 
-SessionGetSessionParticipantDetailsResponse object {data, success }
+SessionGetSessionParticipantDetailsResponse object { data, success }
 
 </summary>
 
@@ -632,7 +632,7 @@ SessionGetSessionParticipantDetailsResponse object {data, success }
 
 <summary>
 
-data: optional object {participant }
+data: optional object { participant }
 
 </summary>
 
@@ -640,7 +640,7 @@ data: optional object {participant }
 
 <summary>
 
-participant: optional object {id, created\_at, custom\_participant\_id, 8 more }
+participant: optional object { id, created\_at, custom\_participant\_id, 8 more }
 
 </summary>
 
@@ -690,7 +690,7 @@ timestamp at which participant left the session.
 
 <summary>
 
-peer\_events: optional array of object {id, created\_at, event\_name, 7 more }
+peer\_events: optional array of object { id, created\_at, event\_name, 7 more }
 
 Connection lifecycle events for the participant’s peer. Only included when <code>include_peer_events</code> is true.
 
@@ -712,7 +712,7 @@ Timestamp when this peer event was created.
 
 <summary>
 
-event\_name: optional "PEER\_CREATED"or "PEER\_JOINING"or "PEER\_LEAVING"
+event\_name: optional "PEER\_CREATED" or "PEER\_JOINING" or "PEER\_LEAVING"
 
 Name of the peer event.
 
@@ -758,7 +758,7 @@ Peer ID this event belongs to.
 
 <summary>
 
-preset\_view\_type: optional "GROUP\_CALL"or "WEBINAR"or "AUDIO\_ROOM"or 2 more
+preset\_view\_type: optional "GROUP\_CALL" or "WEBINAR" or "AUDIO\_ROOM" or 2 more
 
 View type of the preset associated with the peer.
 
@@ -850,7 +850,7 @@ success: optional boolean
 
 <summary>
 
-SessionGetSessionChatResponse object {data, success }
+SessionGetSessionChatResponse object { data, success }
 
 </summary>
 
@@ -858,7 +858,7 @@ SessionGetSessionChatResponse object {data, success }
 
 <summary>
 
-data: optional object {chat\_download\_url, chat\_download\_url\_expiry }
+data: optional object { chat\_download\_url, chat\_download\_url\_expiry }
 
 </summary>
 
@@ -890,7 +890,7 @@ success: optional boolean
 
 <summary>
 
-SessionGetSessionTranscriptsResponse object {data, success }
+SessionGetSessionTranscriptsResponse object { data, success }
 
 </summary>
 
@@ -898,11 +898,11 @@ SessionGetSessionTranscriptsResponse object {data, success }
 
 <summary>
 
-data: optional object {sessionId, transcript\_download\_url, transcript\_download\_url\_expiry }
+data: optional object { session\_id, transcript\_download\_url, transcript\_download\_url\_expiry }
 
 </summary>
 
-sessionId: string
+session\_id: string
 
 <a href="#">Link to this property</a>
 
@@ -934,7 +934,7 @@ success: optional boolean
 
 <summary>
 
-SessionGetSessionSummaryResponse object {data, success }
+SessionGetSessionSummaryResponse object { data, success }
 
 </summary>
 
@@ -942,7 +942,7 @@ SessionGetSessionSummaryResponse object {data, success }
 
 <summary>
 
-data: optional object {sessionId, summaryDownloadUrl, summaryDownloadUrlExpiry }
+data: optional object { sessionId, summaryDownloadUrl, summaryDownloadUrlExpiry }
 
 </summary>
 
@@ -978,7 +978,7 @@ success: optional boolean
 
 <summary>
 
-SessionGenerateSummaryOfTranscriptsResponse object {data, success }
+SessionGenerateSummaryOfTranscriptsResponse object { data, success }
 
 </summary>
 
@@ -986,7 +986,7 @@ SessionGenerateSummaryOfTranscriptsResponse object {data, success }
 
 <summary>
 
-data: optional object {session\_id, status }
+data: optional object { session\_id, status }
 
 </summary>
 
@@ -1016,7 +1016,7 @@ success: optional boolean
 
 <summary>
 
-SessionGetParticipantDataFromPeerIDResponse object {data, success }
+SessionGetParticipantDataFromPeerIDResponse object { data, success }
 
 </summary>
 
@@ -1024,7 +1024,7 @@ SessionGetParticipantDataFromPeerIDResponse object {data, success }
 
 <summary>
 
-data: optional object {participant }
+data: optional object { participant }
 
 </summary>
 
@@ -1032,7 +1032,7 @@ data: optional object {participant }
 
 <summary>
 
-participant: optional object {id, created\_at, custom\_participant\_id, 10 more }
+participant: optional object { id, created\_at, custom\_participant\_id, 10 more }
 
 </summary>
 
@@ -1084,7 +1084,7 @@ timestamp at which participant left the session.
 
 <summary>
 
-peer\_events: optional array of object {id, created\_at, event\_name, 7 more }
+peer\_events: optional array of object { id, created\_at, event\_name, 7 more }
 
 Connection lifecycle events for the participant’s peer.
 
@@ -1106,7 +1106,7 @@ Timestamp when this peer event was created.
 
 <summary>
 
-event\_name: optional "PEER\_CREATED"or "PEER\_JOINING"or "PEER\_LEAVING"
+event\_name: optional "PEER\_CREATED" or "PEER\_JOINING" or "PEER\_LEAVING"
 
 Name of the peer event.
 
@@ -1152,7 +1152,7 @@ Peer ID this event belongs to.
 
 <summary>
 
-preset\_view\_type: optional "GROUP\_CALL"or "WEBINAR"or "AUDIO\_ROOM"or 2 more
+preset\_view\_type: optional "GROUP\_CALL" or "WEBINAR" or "AUDIO\_ROOM" or 2 more
 
 View type of the preset associated with the peer.
 
@@ -1210,7 +1210,7 @@ Timestamp when this peer event was last updated.
 
 <summary>
 
-peer\_report: optional object {metadata, quality }
+peer\_report: optional object { metadata, quality }
 
 Peer call statistics report.
 
@@ -1220,7 +1220,7 @@ Peer call statistics report.
 
 <summary>
 
-metadata: optional object {audio\_devices\_updates, browser\_metadata, candidate\_pairs, 12 more }
+metadata: optional object { audio\_devices\_updates, browser\_metadata, candidate\_pairs, 12 more }
 
 Connection and device metadata for the participant.
 
@@ -1230,7 +1230,7 @@ Connection and device metadata for the participant.
 
 <summary>
 
-audio\_devices\_updates: optional array of object {added, removed, timestamp }
+audio\_devices\_updates: optional array of object { added, removed, timestamp }
 
 </summary>
 
@@ -1238,7 +1238,7 @@ audio\_devices\_updates: optional array of object {added, removed, timestamp }
 
 <summary>
 
-added: optional array of object {device\_id, kind, label }
+added: optional array of object { device\_id, kind, label }
 
 Devices that became available.
 
@@ -1270,7 +1270,7 @@ Human-readable label of the device.
 
 <summary>
 
-removed: optional array of object {device\_id, kind, label }
+removed: optional array of object { device\_id, kind, label }
 
 Devices that became unavailable.
 
@@ -1312,7 +1312,7 @@ Timestamp of the device update.
 
 <summary>
 
-browser\_metadata: optional object {browser, browser\_version, engine, 2 more }
+browser\_metadata: optional object { browser, browser\_version, engine, 2 more }
 
 </summary>
 
@@ -1344,7 +1344,7 @@ webgl\_support: optional boolean
 
 <summary>
 
-candidate\_pairs: optional object {consuming\_transport, producing\_transport }
+candidate\_pairs: optional object { consuming\_transport, producing\_transport }
 
 </summary>
 
@@ -1352,135 +1352,7 @@ candidate\_pairs: optional object {consuming\_transport, producing\_transport }
 
 <summary>
 
-consuming\_transport: optional array of object {available\_incoming\_bitrate, available\_outgoing\_bitrate, bytes\_discarded\_on\_send, 25 more }
-
-</summary>
-
-available\_incoming\_bitrate: optional number
-
-<a href="#">Link to this property</a>
-
-available\_outgoing\_bitrate: optional number
-
-<a href="#">Link to this property</a>
-
-bytes\_discarded\_on\_send: optional number
-
-<a href="#">Link to this property</a>
-
-bytes\_received: optional number
-
-<a href="#">Link to this property</a>
-
-bytes\_sent: optional number
-
-<a href="#">Link to this property</a>
-
-current\_round\_trip\_time: optional number
-
-<a href="#">Link to this property</a>
-
-last\_packet\_received\_timestamp: optional number
-
-Epoch milliseconds when the last packet was received.
-
-<a href="#">Link to this property</a>
-
-last\_packet\_sent\_timestamp: optional number
-
-Epoch milliseconds when the last packet was sent.
-
-<a href="#">Link to this property</a>
-
-local\_candidate\_address: optional string
-
-<a href="#">Link to this property</a>
-
-local\_candidate\_id: optional string
-
-<a href="#">Link to this property</a>
-
-local\_candidate\_network\_type: optional string
-
-<a href="#">Link to this property</a>
-
-local\_candidate\_port: optional number
-
-<a href="#">Link to this property</a>
-
-local\_candidate\_protocol: optional string
-
-<a href="#">Link to this property</a>
-
-local\_candidate\_related\_address: optional string
-
-<a href="#">Link to this property</a>
-
-local\_candidate\_related\_port: optional number
-
-<a href="#">Link to this property</a>
-
-local\_candidate\_type: optional string
-
-<a href="#">Link to this property</a>
-
-local\_candidate\_url: optional string
-
-<a href="#">Link to this property</a>
-
-nominated: optional boolean
-
-<a href="#">Link to this property</a>
-
-packets\_discarded\_on\_send: optional number
-
-<a href="#">Link to this property</a>
-
-packets\_received: optional number
-
-<a href="#">Link to this property</a>
-
-packets\_sent: optional number
-
-<a href="#">Link to this property</a>
-
-remote\_candidate\_address: optional string
-
-<a href="#">Link to this property</a>
-
-remote\_candidate\_id: optional string
-
-<a href="#">Link to this property</a>
-
-remote\_candidate\_port: optional number
-
-<a href="#">Link to this property</a>
-
-remote\_candidate\_protocol: optional string
-
-<a href="#">Link to this property</a>
-
-remote\_candidate\_type: optional string
-
-<a href="#">Link to this property</a>
-
-remote\_candidate\_url: optional string
-
-<a href="#">Link to this property</a>
-
-total\_round\_trip\_time: optional number
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-producing\_transport: optional array of object {available\_incoming\_bitrate, available\_outgoing\_bitrate, bytes\_discarded\_on\_send, 25 more }
+consuming\_transport: optional array of object { available\_incoming\_bitrate, available\_outgoing\_bitrate, bytes\_discarded\_on\_send, 25 more }
 
 </summary>
 
@@ -1604,6 +1476,134 @@ total\_round\_trip\_time: optional number
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+producing\_transport: optional array of object { available\_incoming\_bitrate, available\_outgoing\_bitrate, bytes\_discarded\_on\_send, 25 more }
+
+</summary>
+
+available\_incoming\_bitrate: optional number
+
+<a href="#">Link to this property</a>
+
+available\_outgoing\_bitrate: optional number
+
+<a href="#">Link to this property</a>
+
+bytes\_discarded\_on\_send: optional number
+
+<a href="#">Link to this property</a>
+
+bytes\_received: optional number
+
+<a href="#">Link to this property</a>
+
+bytes\_sent: optional number
+
+<a href="#">Link to this property</a>
+
+current\_round\_trip\_time: optional number
+
+<a href="#">Link to this property</a>
+
+last\_packet\_received\_timestamp: optional number
+
+Epoch milliseconds when the last packet was received.
+
+<a href="#">Link to this property</a>
+
+last\_packet\_sent\_timestamp: optional number
+
+Epoch milliseconds when the last packet was sent.
+
+<a href="#">Link to this property</a>
+
+local\_candidate\_address: optional string
+
+<a href="#">Link to this property</a>
+
+local\_candidate\_id: optional string
+
+<a href="#">Link to this property</a>
+
+local\_candidate\_network\_type: optional string
+
+<a href="#">Link to this property</a>
+
+local\_candidate\_port: optional number
+
+<a href="#">Link to this property</a>
+
+local\_candidate\_protocol: optional string
+
+<a href="#">Link to this property</a>
+
+local\_candidate\_related\_address: optional string
+
+<a href="#">Link to this property</a>
+
+local\_candidate\_related\_port: optional number
+
+<a href="#">Link to this property</a>
+
+local\_candidate\_type: optional string
+
+<a href="#">Link to this property</a>
+
+local\_candidate\_url: optional string
+
+<a href="#">Link to this property</a>
+
+nominated: optional boolean
+
+<a href="#">Link to this property</a>
+
+packets\_discarded\_on\_send: optional number
+
+<a href="#">Link to this property</a>
+
+packets\_received: optional number
+
+<a href="#">Link to this property</a>
+
+packets\_sent: optional number
+
+<a href="#">Link to this property</a>
+
+remote\_candidate\_address: optional string
+
+<a href="#">Link to this property</a>
+
+remote\_candidate\_id: optional string
+
+<a href="#">Link to this property</a>
+
+remote\_candidate\_port: optional number
+
+<a href="#">Link to this property</a>
+
+remote\_candidate\_protocol: optional string
+
+<a href="#">Link to this property</a>
+
+remote\_candidate\_type: optional string
+
+<a href="#">Link to this property</a>
+
+remote\_candidate\_url: optional string
+
+<a href="#">Link to this property</a>
+
+total\_round\_trip\_time: optional number
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -1612,7 +1612,7 @@ total\_round\_trip\_time: optional number
 
 <summary>
 
-device\_info: optional object {cpus, is\_mobile, os, os\_version }
+device\_info: optional object { cpus, is\_mobile, os, os\_version }
 
 </summary>
 
@@ -1640,7 +1640,7 @@ os\_version: optional string
 
 <summary>
 
-events: optional array of object {metadata, name, timestamp }
+events: optional array of object { metadata, name, timestamp }
 
 </summary>
 
@@ -1648,7 +1648,7 @@ events: optional array of object {metadata, name, timestamp }
 
 <summary>
 
-metadata: optional map\[stringor numberor boolean]
+metadata: optional map\[string or number or boolean]
 
 Event-specific metadata. Keys vary per event; values are primitive scalars (string, number, boolean, or null).
 
@@ -1692,7 +1692,7 @@ Timestamp when the event occurred.
 
 <summary>
 
-ip\_information: optional object {asn, city, country, 4 more }
+ip\_information: optional object { asn, city, country, 4 more }
 
 </summary>
 
@@ -1700,7 +1700,7 @@ ip\_information: optional object {asn, city, country, 4 more }
 
 <summary>
 
-asn: optional object {asn, domain, name, 2 more }
+asn: optional object { asn, domain, name, 2 more }
 
 </summary>
 
@@ -1760,7 +1760,7 @@ timezone: optional string
 
 <summary>
 
-native\_metadata: optional object {audio\_encoder, video\_encoder }
+native\_metadata: optional object { audio\_encoder, video\_encoder }
 
 </summary>
 
@@ -1780,7 +1780,7 @@ video\_encoder: optional string
 
 <summary>
 
-pc\_metadata: optional array of object {effective\_network\_type, reflexive\_connectivity, relay\_connectivity, 3 more }
+pc\_metadata: optional array of object { effective\_network\_type, reflexive\_connectivity, relay\_connectivity, 3 more }
 
 </summary>
 
@@ -1832,7 +1832,7 @@ sdk\_version: optional string
 
 <summary>
 
-selected\_device\_updates: optional array of object {device, timestamp }
+selected\_device\_updates: optional array of object { device, timestamp }
 
 </summary>
 
@@ -1840,7 +1840,7 @@ selected\_device\_updates: optional array of object {device, timestamp }
 
 <summary>
 
-device: optional object {device\_id, kind, label }
+device: optional object { device\_id, kind, label }
 
 A media device (camera, microphone, or speaker).
 
@@ -1880,7 +1880,7 @@ timestamp: optional string
 
 <summary>
 
-speaker\_devices\_updates: optional array of object {added, removed, timestamp }
+speaker\_devices\_updates: optional array of object { added, removed, timestamp }
 
 </summary>
 
@@ -1888,7 +1888,7 @@ speaker\_devices\_updates: optional array of object {added, removed, timestamp }
 
 <summary>
 
-added: optional array of object {device\_id, kind, label }
+added: optional array of object { device\_id, kind, label }
 
 Devices that became available.
 
@@ -1920,7 +1920,7 @@ Human-readable label of the device.
 
 <summary>
 
-removed: optional array of object {device\_id, kind, label }
+removed: optional array of object { device\_id, kind, label }
 
 Devices that became unavailable.
 
@@ -1962,7 +1962,7 @@ Timestamp of the device update.
 
 <summary>
 
-video\_devices\_updates: optional array of object {added, removed, timestamp }
+video\_devices\_updates: optional array of object { added, removed, timestamp }
 
 </summary>
 
@@ -1970,7 +1970,7 @@ video\_devices\_updates: optional array of object {added, removed, timestamp }
 
 <summary>
 
-added: optional array of object {device\_id, kind, label }
+added: optional array of object { device\_id, kind, label }
 
 Devices that became available.
 
@@ -2002,7 +2002,7 @@ Human-readable label of the device.
 
 <summary>
 
-removed: optional array of object {device\_id, kind, label }
+removed: optional array of object { device\_id, kind, label }
 
 Devices that became unavailable.
 
@@ -2048,7 +2048,7 @@ Timestamp of the device update.
 
 <summary>
 
-quality: optional object {audio\_consumer, audio\_consumer\_cumulative, audio\_producer, 13 more }
+quality: optional object { audio\_consumer, audio\_consumer\_cumulative, audio\_producer, 13 more }
 
 Media quality statistics for the participant.
 
@@ -2058,7 +2058,7 @@ Media quality statistics for the participant.
 
 <summary>
 
-audio\_consumer: optional array of object {bytes\_received, concealment\_events, consumer\_id, 11 more }
+audio\_consumer: optional array of object { bytes\_received, concealment\_events, consumer\_id, 11 more }
 
 </summary>
 
@@ -2126,7 +2126,7 @@ timestamp: optional string
 
 <summary>
 
-audio\_consumer\_cumulative: optional object {jitter\_buffer\_delay, packet\_loss, quality\_mos }
+audio\_consumer\_cumulative: optional object { jitter\_buffer\_delay, packet\_loss, quality\_mos }
 
 Aggregated inbound (consumer) audio statistics for the session.
 
@@ -2136,7 +2136,7 @@ Aggregated inbound (consumer) audio statistics for the session.
 
 <summary>
 
-jitter\_buffer\_delay: optional object {"100ms\_or\_greater\_event\_fraction", "250ms\_or\_greater\_event\_fraction", "500ms\_or\_greater\_event\_fraction", avg }
+jitter\_buffer\_delay: optional object { "100ms\_or\_greater\_event\_fraction", "250ms\_or\_greater\_event\_fraction", "500ms\_or\_greater\_event\_fraction", avg }
 
 Cumulative latency distribution (milliseconds-based thresholds).
 
@@ -2166,7 +2166,7 @@ avg: optional number
 
 <summary>
 
-packet\_loss: optional object {"10\_or\_greater\_event\_fraction", "25\_or\_greater\_event\_fraction", "5\_or\_greater\_event\_fraction", 2 more }
+packet\_loss: optional object { "10\_or\_greater\_event\_fraction", "25\_or\_greater\_event\_fraction", "5\_or\_greater\_event\_fraction", 2 more }
 
 Cumulative packet loss distribution.
 
@@ -2200,7 +2200,7 @@ avg: optional number
 
 <summary>
 
-quality\_mos: optional object {avg, p50, p75, p90 }
+quality\_mos: optional object { avg, p50, p75, p90 }
 
 Distribution summary with average and percentiles.
 
@@ -2234,7 +2234,7 @@ p90: optional number
 
 <summary>
 
-audio\_producer: optional array of object {bytes\_sent, jitter, mid, 7 more }
+audio\_producer: optional array of object { bytes\_sent, jitter, mid, 7 more }
 
 </summary>
 
@@ -2286,7 +2286,7 @@ timestamp: optional string
 
 <summary>
 
-audio\_producer\_cumulative: optional object {packet\_loss, quality\_mos, rtt }
+audio\_producer\_cumulative: optional object { packet\_loss, quality\_mos, rtt }
 
 Aggregated outbound (producer) audio statistics for the session.
 
@@ -2296,7 +2296,7 @@ Aggregated outbound (producer) audio statistics for the session.
 
 <summary>
 
-packet\_loss: optional object {"10\_or\_greater\_event\_fraction", "25\_or\_greater\_event\_fraction", "5\_or\_greater\_event\_fraction", 2 more }
+packet\_loss: optional object { "10\_or\_greater\_event\_fraction", "25\_or\_greater\_event\_fraction", "5\_or\_greater\_event\_fraction", 2 more }
 
 Cumulative packet loss distribution.
 
@@ -2330,7 +2330,7 @@ avg: optional number
 
 <summary>
 
-quality\_mos: optional object {avg, p50, p75, p90 }
+quality\_mos: optional object { avg, p50, p75, p90 }
 
 Distribution summary with average and percentiles.
 
@@ -2360,7 +2360,7 @@ p90: optional number
 
 <summary>
 
-rtt: optional object {"100ms\_or\_greater\_event\_fraction", "250ms\_or\_greater\_event\_fraction", "500ms\_or\_greater\_event\_fraction", avg }
+rtt: optional object { "100ms\_or\_greater\_event\_fraction", "250ms\_or\_greater\_event\_fraction", "500ms\_or\_greater\_event\_fraction", avg }
 
 Cumulative latency distribution (milliseconds-based thresholds).
 
@@ -2394,7 +2394,7 @@ avg: optional number
 
 <summary>
 
-screenshare\_audio\_consumer: optional array of object {bytes\_received, concealment\_events, consumer\_id, 11 more }
+screenshare\_audio\_consumer: optional array of object { bytes\_received, concealment\_events, consumer\_id, 11 more }
 
 </summary>
 
@@ -2462,7 +2462,7 @@ timestamp: optional string
 
 <summary>
 
-screenshare\_audio\_consumer\_cumulative: optional object {jitter\_buffer\_delay, packet\_loss, quality\_mos }
+screenshare\_audio\_consumer\_cumulative: optional object { jitter\_buffer\_delay, packet\_loss, quality\_mos }
 
 Aggregated inbound (consumer) audio statistics for the session.
 
@@ -2472,7 +2472,7 @@ Aggregated inbound (consumer) audio statistics for the session.
 
 <summary>
 
-jitter\_buffer\_delay: optional object {"100ms\_or\_greater\_event\_fraction", "250ms\_or\_greater\_event\_fraction", "500ms\_or\_greater\_event\_fraction", avg }
+jitter\_buffer\_delay: optional object { "100ms\_or\_greater\_event\_fraction", "250ms\_or\_greater\_event\_fraction", "500ms\_or\_greater\_event\_fraction", avg }
 
 Cumulative latency distribution (milliseconds-based thresholds).
 
@@ -2502,7 +2502,7 @@ avg: optional number
 
 <summary>
 
-packet\_loss: optional object {"10\_or\_greater\_event\_fraction", "25\_or\_greater\_event\_fraction", "5\_or\_greater\_event\_fraction", 2 more }
+packet\_loss: optional object { "10\_or\_greater\_event\_fraction", "25\_or\_greater\_event\_fraction", "5\_or\_greater\_event\_fraction", 2 more }
 
 Cumulative packet loss distribution.
 
@@ -2536,7 +2536,7 @@ avg: optional number
 
 <summary>
 
-quality\_mos: optional object {avg, p50, p75, p90 }
+quality\_mos: optional object { avg, p50, p75, p90 }
 
 Distribution summary with average and percentiles.
 
@@ -2570,7 +2570,7 @@ p90: optional number
 
 <summary>
 
-screenshare\_audio\_producer: optional array of object {bytes\_sent, jitter, mid, 7 more }
+screenshare\_audio\_producer: optional array of object { bytes\_sent, jitter, mid, 7 more }
 
 </summary>
 
@@ -2622,7 +2622,7 @@ timestamp: optional string
 
 <summary>
 
-screenshare\_audio\_producer\_cumulative: optional object {packet\_loss, quality\_mos, rtt }
+screenshare\_audio\_producer\_cumulative: optional object { packet\_loss, quality\_mos, rtt }
 
 Aggregated outbound (producer) audio statistics for the session.
 
@@ -2632,7 +2632,7 @@ Aggregated outbound (producer) audio statistics for the session.
 
 <summary>
 
-packet\_loss: optional object {"10\_or\_greater\_event\_fraction", "25\_or\_greater\_event\_fraction", "5\_or\_greater\_event\_fraction", 2 more }
+packet\_loss: optional object { "10\_or\_greater\_event\_fraction", "25\_or\_greater\_event\_fraction", "5\_or\_greater\_event\_fraction", 2 more }
 
 Cumulative packet loss distribution.
 
@@ -2666,7 +2666,7 @@ avg: optional number
 
 <summary>
 
-quality\_mos: optional object {avg, p50, p75, p90 }
+quality\_mos: optional object { avg, p50, p75, p90 }
 
 Distribution summary with average and percentiles.
 
@@ -2696,7 +2696,7 @@ p90: optional number
 
 <summary>
 
-rtt: optional object {"100ms\_or\_greater\_event\_fraction", "250ms\_or\_greater\_event\_fraction", "500ms\_or\_greater\_event\_fraction", avg }
+rtt: optional object { "100ms\_or\_greater\_event\_fraction", "250ms\_or\_greater\_event\_fraction", "500ms\_or\_greater\_event\_fraction", avg }
 
 Cumulative latency distribution (milliseconds-based thresholds).
 
@@ -2730,7 +2730,7 @@ avg: optional number
 
 <summary>
 
-screenshare\_video\_consumer: optional array of object {bytes\_received, consumer\_id, fir\_count, 17 more }
+screenshare\_video\_consumer: optional array of object { bytes\_received, consumer\_id, fir\_count, 17 more }
 
 </summary>
 
@@ -2822,7 +2822,7 @@ timestamp: optional string
 
 <summary>
 
-screenshare\_video\_consumer\_cumulative: optional object {frame\_per\_second, frame\_width, issues, 4 more }
+screenshare\_video\_consumer\_cumulative: optional object { frame\_per\_second, frame\_width, issues, 4 more }
 
 Aggregated inbound (consumer) video statistics for the session.
 
@@ -2832,7 +2832,7 @@ Aggregated inbound (consumer) video statistics for the session.
 
 <summary>
 
-frame\_per\_second: optional object {avg, p50, p75, p90 }
+frame\_per\_second: optional object { avg, p50, p75, p90 }
 
 Distribution summary with average and percentiles.
 
@@ -2862,7 +2862,7 @@ p90: optional number
 
 <summary>
 
-frame\_width: optional object {avg, p50, p75, p90 }
+frame\_width: optional object { avg, p50, p75, p90 }
 
 Distribution summary with average and percentiles.
 
@@ -2892,7 +2892,7 @@ p90: optional number
 
 <summary>
 
-issues: optional object {lag\_fraction, no\_video\_fraction, poor\_resolution\_fraction }
+issues: optional object { lag\_fraction, no\_video\_fraction, poor\_resolution\_fraction }
 
 </summary>
 
@@ -2916,7 +2916,7 @@ poor\_resolution\_fraction: optional number
 
 <summary>
 
-jitter\_buffer\_delay: optional object {"100ms\_or\_greater\_event\_fraction", "250ms\_or\_greater\_event\_fraction", "500ms\_or\_greater\_event\_fraction", avg }
+jitter\_buffer\_delay: optional object { "100ms\_or\_greater\_event\_fraction", "250ms\_or\_greater\_event\_fraction", "500ms\_or\_greater\_event\_fraction", avg }
 
 Cumulative latency distribution (milliseconds-based thresholds).
 
@@ -2950,7 +2950,7 @@ key\_frames\_decoded\_fraction: optional number
 
 <summary>
 
-packet\_loss: optional object {"10\_or\_greater\_event\_fraction", "25\_or\_greater\_event\_fraction", "5\_or\_greater\_event\_fraction", 2 more }
+packet\_loss: optional object { "10\_or\_greater\_event\_fraction", "25\_or\_greater\_event\_fraction", "5\_or\_greater\_event\_fraction", 2 more }
 
 Cumulative packet loss distribution.
 
@@ -2984,7 +2984,7 @@ avg: optional number
 
 <summary>
 
-quality\_mos: optional object {avg, p50, p75, p90 }
+quality\_mos: optional object { avg, p50, p75, p90 }
 
 Distribution summary with average and percentiles.
 
@@ -3018,7 +3018,7 @@ p90: optional number
 
 <summary>
 
-screenshare\_video\_producer: optional array of object {bytes\_sent, fir\_count, frame\_height, 17 more }
+screenshare\_video\_producer: optional array of object { bytes\_sent, fir\_count, frame\_height, 17 more }
 
 </summary>
 
@@ -3082,7 +3082,7 @@ producer\_id: optional string
 
 <summary>
 
-quality\_limitation\_durations: optional object {bandwidth, cpu, none, other }
+quality\_limitation\_durations: optional object { bandwidth, cpu, none, other }
 
 </summary>
 
@@ -3110,7 +3110,7 @@ other: optional number
 
 <summary>
 
-quality\_limitation\_reason: optional "cpu"or "bandwidth"or "none"or "other"
+quality\_limitation\_reason: optional "cpu" or "bandwidth" or "none" or "other"
 
 </summary>
 
@@ -3160,7 +3160,7 @@ timestamp: optional string
 
 <summary>
 
-screenshare\_video\_producer\_cumulative: optional object {frame\_per\_second, frame\_width, high\_negative\_feedback\_fraction, 5 more }
+screenshare\_video\_producer\_cumulative: optional object { frame\_per\_second, frame\_width, high\_negative\_feedback\_fraction, 5 more }
 
 Aggregated outbound (producer) video statistics for the session.
 
@@ -3170,7 +3170,7 @@ Aggregated outbound (producer) video statistics for the session.
 
 <summary>
 
-frame\_per\_second: optional object {avg, p50, p75, p90 }
+frame\_per\_second: optional object { avg, p50, p75, p90 }
 
 Distribution summary with average and percentiles.
 
@@ -3200,7 +3200,7 @@ p90: optional number
 
 <summary>
 
-frame\_width: optional object {avg, p50, p75, p90 }
+frame\_width: optional object { avg, p50, p75, p90 }
 
 Distribution summary with average and percentiles.
 
@@ -3234,7 +3234,7 @@ high\_negative\_feedback\_fraction: optional number
 
 <summary>
 
-issues: optional object {bandwidth\_quality\_limitation\_fraction, cpu\_quality\_limitation\_fraction, no\_video\_fraction, 2 more }
+issues: optional object { bandwidth\_quality\_limitation\_fraction, cpu\_quality\_limitation\_fraction, no\_video\_fraction, 2 more }
 
 </summary>
 
@@ -3270,7 +3270,7 @@ key\_frames\_encoded\_fraction: optional number
 
 <summary>
 
-packet\_loss: optional object {"10\_or\_greater\_event\_fraction", "25\_or\_greater\_event\_fraction", "5\_or\_greater\_event\_fraction", 2 more }
+packet\_loss: optional object { "10\_or\_greater\_event\_fraction", "25\_or\_greater\_event\_fraction", "5\_or\_greater\_event\_fraction", 2 more }
 
 Cumulative packet loss distribution.
 
@@ -3304,7 +3304,7 @@ avg: optional number
 
 <summary>
 
-quality\_mos: optional object {avg, p50, p75, p90 }
+quality\_mos: optional object { avg, p50, p75, p90 }
 
 Distribution summary with average and percentiles.
 
@@ -3334,7 +3334,7 @@ p90: optional number
 
 <summary>
 
-rtt: optional object {"100ms\_or\_greater\_event\_fraction", "250ms\_or\_greater\_event\_fraction", "500ms\_or\_greater\_event\_fraction", avg }
+rtt: optional object { "100ms\_or\_greater\_event\_fraction", "250ms\_or\_greater\_event\_fraction", "500ms\_or\_greater\_event\_fraction", avg }
 
 Cumulative latency distribution (milliseconds-based thresholds).
 
@@ -3368,7 +3368,7 @@ avg: optional number
 
 <summary>
 
-video\_consumer: optional array of object {bytes\_received, consumer\_id, fir\_count, 17 more }
+video\_consumer: optional array of object { bytes\_received, consumer\_id, fir\_count, 17 more }
 
 </summary>
 
@@ -3460,7 +3460,7 @@ timestamp: optional string
 
 <summary>
 
-video\_consumer\_cumulative: optional object {frame\_per\_second, frame\_width, issues, 4 more }
+video\_consumer\_cumulative: optional object { frame\_per\_second, frame\_width, issues, 4 more }
 
 Aggregated inbound (consumer) video statistics for the session.
 
@@ -3470,7 +3470,7 @@ Aggregated inbound (consumer) video statistics for the session.
 
 <summary>
 
-frame\_per\_second: optional object {avg, p50, p75, p90 }
+frame\_per\_second: optional object { avg, p50, p75, p90 }
 
 Distribution summary with average and percentiles.
 
@@ -3500,7 +3500,7 @@ p90: optional number
 
 <summary>
 
-frame\_width: optional object {avg, p50, p75, p90 }
+frame\_width: optional object { avg, p50, p75, p90 }
 
 Distribution summary with average and percentiles.
 
@@ -3530,7 +3530,7 @@ p90: optional number
 
 <summary>
 
-issues: optional object {lag\_fraction, no\_video\_fraction, poor\_resolution\_fraction }
+issues: optional object { lag\_fraction, no\_video\_fraction, poor\_resolution\_fraction }
 
 </summary>
 
@@ -3554,7 +3554,7 @@ poor\_resolution\_fraction: optional number
 
 <summary>
 
-jitter\_buffer\_delay: optional object {"100ms\_or\_greater\_event\_fraction", "250ms\_or\_greater\_event\_fraction", "500ms\_or\_greater\_event\_fraction", avg }
+jitter\_buffer\_delay: optional object { "100ms\_or\_greater\_event\_fraction", "250ms\_or\_greater\_event\_fraction", "500ms\_or\_greater\_event\_fraction", avg }
 
 Cumulative latency distribution (milliseconds-based thresholds).
 
@@ -3588,7 +3588,7 @@ key\_frames\_decoded\_fraction: optional number
 
 <summary>
 
-packet\_loss: optional object {"10\_or\_greater\_event\_fraction", "25\_or\_greater\_event\_fraction", "5\_or\_greater\_event\_fraction", 2 more }
+packet\_loss: optional object { "10\_or\_greater\_event\_fraction", "25\_or\_greater\_event\_fraction", "5\_or\_greater\_event\_fraction", 2 more }
 
 Cumulative packet loss distribution.
 
@@ -3622,7 +3622,7 @@ avg: optional number
 
 <summary>
 
-quality\_mos: optional object {avg, p50, p75, p90 }
+quality\_mos: optional object { avg, p50, p75, p90 }
 
 Distribution summary with average and percentiles.
 
@@ -3656,7 +3656,7 @@ p90: optional number
 
 <summary>
 
-video\_producer: optional array of object {bytes\_sent, fir\_count, frame\_height, 17 more }
+video\_producer: optional array of object { bytes\_sent, fir\_count, frame\_height, 17 more }
 
 </summary>
 
@@ -3720,7 +3720,7 @@ producer\_id: optional string
 
 <summary>
 
-quality\_limitation\_durations: optional object {bandwidth, cpu, none, other }
+quality\_limitation\_durations: optional object { bandwidth, cpu, none, other }
 
 </summary>
 
@@ -3748,7 +3748,7 @@ other: optional number
 
 <summary>
 
-quality\_limitation\_reason: optional "cpu"or "bandwidth"or "none"or "other"
+quality\_limitation\_reason: optional "cpu" or "bandwidth" or "none" or "other"
 
 </summary>
 
@@ -3798,7 +3798,7 @@ timestamp: optional string
 
 <summary>
 
-video\_producer\_cumulative: optional object {frame\_per\_second, frame\_width, high\_negative\_feedback\_fraction, 5 more }
+video\_producer\_cumulative: optional object { frame\_per\_second, frame\_width, high\_negative\_feedback\_fraction, 5 more }
 
 Aggregated outbound (producer) video statistics for the session.
 
@@ -3808,7 +3808,7 @@ Aggregated outbound (producer) video statistics for the session.
 
 <summary>
 
-frame\_per\_second: optional object {avg, p50, p75, p90 }
+frame\_per\_second: optional object { avg, p50, p75, p90 }
 
 Distribution summary with average and percentiles.
 
@@ -3838,7 +3838,7 @@ p90: optional number
 
 <summary>
 
-frame\_width: optional object {avg, p50, p75, p90 }
+frame\_width: optional object { avg, p50, p75, p90 }
 
 Distribution summary with average and percentiles.
 
@@ -3872,7 +3872,7 @@ high\_negative\_feedback\_fraction: optional number
 
 <summary>
 
-issues: optional object {bandwidth\_quality\_limitation\_fraction, cpu\_quality\_limitation\_fraction, no\_video\_fraction, 2 more }
+issues: optional object { bandwidth\_quality\_limitation\_fraction, cpu\_quality\_limitation\_fraction, no\_video\_fraction, 2 more }
 
 </summary>
 
@@ -3908,7 +3908,7 @@ key\_frames\_encoded\_fraction: optional number
 
 <summary>
 
-packet\_loss: optional object {"10\_or\_greater\_event\_fraction", "25\_or\_greater\_event\_fraction", "5\_or\_greater\_event\_fraction", 2 more }
+packet\_loss: optional object { "10\_or\_greater\_event\_fraction", "25\_or\_greater\_event\_fraction", "5\_or\_greater\_event\_fraction", 2 more }
 
 Cumulative packet loss distribution.
 
@@ -3942,7 +3942,7 @@ avg: optional number
 
 <summary>
 
-quality\_mos: optional object {avg, p50, p75, p90 }
+quality\_mos: optional object { avg, p50, p75, p90 }
 
 Distribution summary with average and percentiles.
 
@@ -3972,7 +3972,7 @@ p90: optional number
 
 <summary>
 
-rtt: optional object {"100ms\_or\_greater\_event\_fraction", "250ms\_or\_greater\_event\_fraction", "500ms\_or\_greater\_event\_fraction", avg }
+rtt: optional object { "100ms\_or\_greater\_event\_fraction", "250ms\_or\_greater\_event\_fraction", "500ms\_or\_greater\_event\_fraction", avg }
 
 Cumulative latency distribution (milliseconds-based thresholds).
 

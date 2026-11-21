@@ -50,7 +50,7 @@ GET/radar/entities/asns/botnet\_threat\_feed
 
 <summary>
 
-ASNListResponse object {asns }
+ASNListResponse object { asns }
 
 </summary>
 
@@ -58,7 +58,7 @@ ASNListResponse object {asns }
 
 <summary>
 
-asns: array of object {asn, category, country, 6 more }
+asns: array of object { asn, category, country, 6 more }
 
 </summary>
 
@@ -70,7 +70,7 @@ asn: number
 
 <summary>
 
-category: "ACCESS\_ISP"or "HOSTING\_CLOUD\_CONTENT"or "ORGANIZATION"
+category: "ACCESS\_ISP" or "HOSTING\_CLOUD\_CONTENT" or "ORGANIZATION"
 
 Inferred network type of the AS: <code>ACCESS_ISP</code> (networks connecting end users, plus transit), <code>HOSTING_CLOUD_CONTENT</code> (hosting providers, clouds and CDNs) or <code>ORGANIZATION</code> (enterprises, universities, governments, banks and IXP route servers). <code>null</code> when the AS is not classified.
 
@@ -106,7 +106,7 @@ countryName: string
 
 <summary>
 
-estimatedUsers: object {estimatedUsers }
+estimatedUsers: object { estimatedUsers }
 
 </summary>
 
@@ -148,7 +148,7 @@ website: optional string
 
 <summary>
 
-ASNGetResponse object {asn }
+ASNGetResponse object { asn }
 
 </summary>
 
@@ -156,7 +156,7 @@ ASNGetResponse object {asn }
 
 <summary>
 
-asn: object {asn, category, country, 9 more }
+asn: object { asn, category, country, 9 more }
 
 </summary>
 
@@ -168,7 +168,7 @@ asn: number
 
 <summary>
 
-category: "ACCESS\_ISP"or "HOSTING\_CLOUD\_CONTENT"or "ORGANIZATION"
+category: "ACCESS\_ISP" or "HOSTING\_CLOUD\_CONTENT" or "ORGANIZATION"
 
 Inferred network type of the AS: <code>ACCESS_ISP</code> (networks connecting end users, plus transit), <code>HOSTING_CLOUD_CONTENT</code> (hosting providers, clouds and CDNs) or <code>ORGANIZATION</code> (enterprises, universities, governments, banks and IXP route servers). <code>null</code> when the AS is not classified.
 
@@ -204,7 +204,7 @@ countryName: string
 
 <summary>
 
-estimatedUsers: object {locations, estimatedUsers }
+estimatedUsers: object { locations, estimatedUsers }
 
 </summary>
 
@@ -212,7 +212,7 @@ estimatedUsers: object {locations, estimatedUsers }
 
 <summary>
 
-locations: array of object {locationAlpha2, locationName, estimatedUsers }
+locations: array of object { locationAlpha2, locationName, estimatedUsers }
 
 </summary>
 
@@ -256,7 +256,7 @@ orgName: string
 
 <summary>
 
-related: array of object {asn, category, name, 2 more }
+related: array of object { asn, category, name, 2 more }
 
 </summary>
 
@@ -268,7 +268,7 @@ asn: number
 
 <summary>
 
-category: "ACCESS\_ISP"or "HOSTING\_CLOUD\_CONTENT"or "ORGANIZATION"
+category: "ACCESS\_ISP" or "HOSTING\_CLOUD\_CONTENT" or "ORGANIZATION"
 
 Inferred network type of the AS: <code>ACCESS_ISP</code> (networks connecting end users, plus transit), <code>HOSTING_CLOUD_CONTENT</code> (hosting providers, clouds and CDNs) or <code>ORGANIZATION</code> (enterprises, universities, governments, banks and IXP route servers). <code>null</code> when the AS is not classified.
 
@@ -342,7 +342,7 @@ Omitted when <code>includeConfidenceLevel</code> is <code>false</code>.
 
 <summary>
 
-ASNRelResponse object {meta, rels }
+ASNRelResponse object { meta, rels }
 
 </summary>
 
@@ -350,7 +350,7 @@ ASNRelResponse object {meta, rels }
 
 <summary>
 
-meta: object {data\_time, query\_time, total\_peers }
+meta: object { data\_time, query\_time, total\_peers }
 
 </summary>
 
@@ -374,7 +374,7 @@ total\_peers: number
 
 <summary>
 
-rels: array of object {asn1, asn1\_country, asn1\_name, 4 more }
+rels: array of object { asn1, asn1\_country, asn1\_name, 4 more }
 
 </summary>
 
@@ -418,7 +418,7 @@ rel: string
 
 <summary>
 
-ASNAsSetResponse object {as\_sets, paths }
+ASNAsSetResponse object { as\_sets, paths }
 
 </summary>
 
@@ -426,7 +426,7 @@ ASNAsSetResponse object {as\_sets, paths }
 
 <summary>
 
-as\_sets: array of object {as\_members\_count, as\_set\_members\_count, as\_set\_upstreams\_count, 6 more }
+as\_sets: array of object { as\_members\_count, as\_set\_members\_count, as\_set\_upstreams\_count, 6 more }
 
 </summary>
 
@@ -502,7 +502,7 @@ Paths from the AS-SET that include the given AS to its upstreams recursively
 
 <summary>
 
-ASNIPResponse object {asn }
+ASNIPResponse object { asn }
 
 </summary>
 
@@ -510,7 +510,7 @@ ASNIPResponse object {asn }
 
 <summary>
 
-asn: object {asn, category, country, 8 more }
+asn: object { asn, category, country, 8 more }
 
 </summary>
 
@@ -522,7 +522,7 @@ asn: number
 
 <summary>
 
-category: "ACCESS\_ISP"or "HOSTING\_CLOUD\_CONTENT"or "ORGANIZATION"
+category: "ACCESS\_ISP" or "HOSTING\_CLOUD\_CONTENT" or "ORGANIZATION"
 
 Inferred network type of the AS: <code>ACCESS_ISP</code> (networks connecting end users, plus transit), <code>HOSTING_CLOUD_CONTENT</code> (hosting providers, clouds and CDNs) or <code>ORGANIZATION</code> (enterprises, universities, governments, banks and IXP route servers). <code>null</code> when the AS is not classified.
 
@@ -558,7 +558,7 @@ countryName: string
 
 <summary>
 
-estimatedUsers: object {locations, estimatedUsers }
+estimatedUsers: object { locations, estimatedUsers }
 
 </summary>
 
@@ -566,7 +566,7 @@ estimatedUsers: object {locations, estimatedUsers }
 
 <summary>
 
-locations: array of object {locationAlpha2, locationName, estimatedUsers }
+locations: array of object { locationAlpha2, locationName, estimatedUsers }
 
 </summary>
 
@@ -610,7 +610,7 @@ orgName: string
 
 <summary>
 
-related: array of object {asn, category, name, 2 more }
+related: array of object { asn, category, name, 2 more }
 
 </summary>
 
@@ -622,7 +622,7 @@ asn: number
 
 <summary>
 
-category: "ACCESS\_ISP"or "HOSTING\_CLOUD\_CONTENT"or "ORGANIZATION"
+category: "ACCESS\_ISP" or "HOSTING\_CLOUD\_CONTENT" or "ORGANIZATION"
 
 Inferred network type of the AS: <code>ACCESS_ISP</code> (networks connecting end users, plus transit), <code>HOSTING_CLOUD_CONTENT</code> (hosting providers, clouds and CDNs) or <code>ORGANIZATION</code> (enterprises, universities, governments, banks and IXP route servers). <code>null</code> when the AS is not classified.
 
@@ -690,7 +690,7 @@ aka: optional string
 
 <summary>
 
-ASNBotnetThreatFeedResponse object {ases, meta }
+ASNBotnetThreatFeedResponse object { ases, meta }
 
 </summary>
 
@@ -698,7 +698,7 @@ ASNBotnetThreatFeedResponse object {ases, meta }
 
 <summary>
 
-ases: array of object {asn, country, name, 2 more }
+ases: array of object { asn, country, name, 2 more }
 
 </summary>
 
@@ -730,7 +730,7 @@ rankChange: optional number
 
 <summary>
 
-meta: object {date, total, compareDate }
+meta: object { date, total, compareDate }
 
 </summary>
 

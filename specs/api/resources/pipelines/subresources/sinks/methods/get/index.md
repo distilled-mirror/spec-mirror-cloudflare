@@ -82,7 +82,7 @@ minLength32
 
 <summary>
 
-result: object {id, created\_at, latest, 8 more }
+result: object { id, created\_at, latest, 8 more }
 
 </summary>
 
@@ -124,7 +124,7 @@ minLength1
 
 <summary>
 
-type: "r2"or "r2\_data\_catalog"or "basin\_catalog"
+type: "r2" or "r2\_data\_catalog" or "basin\_catalog"
 
 Specifies the type of sink.
 
@@ -158,7 +158,7 @@ Indicates the version of this sink.
 
 <summary>
 
-config: optional object {account\_id, bucket, file\_naming, 4 more } or object {account\_id, bucket, table\_name, 2 more }
+config: optional object { account\_id, bucket, file\_naming, 4 more } or object { account\_id, bucket, table\_name, 2 more }
 
 Defines the configuration of the R2 Sink.
 
@@ -170,7 +170,7 @@ One of the following:
 
 <summary>
 
-CloudflarePipelinesR2TablePublic object {account\_id, bucket, file\_naming, 4 more }
+CloudflarePipelinesR2TablePublic object { account\_id, bucket, file\_naming, 4 more }
 
 R2 Sink public configuration.
 
@@ -192,7 +192,7 @@ R2 Bucket to write to
 
 <summary>
 
-file\_naming: optional object {prefix, strategy, suffix }
+file\_naming: optional object { prefix, strategy, suffix }
 
 Controls filename prefix/suffix and strategy.
 
@@ -208,7 +208,7 @@ The prefix to use in file name. i.e prefix-.parquet
 
 <summary>
 
-strategy: optional "serial"or "uuid"or "uuid\_v7"or "ulid"
+strategy: optional "serial" or "uuid" or "uuid\_v7" or "ulid"
 
 Filename generation strategy.
 
@@ -256,7 +256,7 @@ Jurisdiction this bucket is hosted in
 
 <summary>
 
-partitioning: optional object {time\_pattern }
+partitioning: optional object { time\_pattern }
 
 Data-layout partitioning for sinks.
 
@@ -282,7 +282,7 @@ Subpath within the bucket to write to
 
 <summary>
 
-rolling\_policy: optional object {file\_size\_bytes, inactivity\_seconds, interval\_seconds }
+rolling\_policy: optional object { file\_size\_bytes, inactivity\_seconds, interval\_seconds }
 
 Rolling policy for file sinks (when &amp; why to close a file and open a new one).
 
@@ -330,7 +330,7 @@ minimum1
 
 <summary>
 
-CloudflarePipelinesR2DataCatalogTablePublic object {account\_id, bucket, table\_name, 2 more }
+CloudflarePipelinesR2DataCatalogTablePublic object { account\_id, bucket, table\_name, 2 more }
 
 R2 Data Catalog Sink public configuration.
 
@@ -366,7 +366,7 @@ Table namespace
 
 <summary>
 
-rolling\_policy: optional object {file\_size\_bytes, inactivity\_seconds, interval\_seconds }
+rolling\_policy: optional object { file\_size\_bytes, inactivity\_seconds, interval\_seconds }
 
 Rolling policy for file sinks (when &amp; why to close a file and open a new one).
 
@@ -418,7 +418,7 @@ minimum1
 
 <summary>
 
-format: optional object {type, compression, decimal\_encoding, 2 more } or object {type, compression, row\_group\_bytes }
+format: optional object { type, compression, decimal\_encoding, 2 more } or object { type, compression, row\_group\_bytes }
 
 Defines the output data format of a sink.
 
@@ -430,7 +430,7 @@ One of the following:
 
 <summary>
 
-Json object {type, compression, decimal\_encoding, 2 more }
+Json object { type, compression, decimal\_encoding, 2 more }
 
 </summary>
 
@@ -442,7 +442,7 @@ type: "json"
 
 <summary>
 
-compression: optional "uncompressed"or "gzip"
+compression: optional "uncompressed" or "gzip"
 
 Specifies the compression applied to JSON sink output.
 
@@ -466,7 +466,7 @@ One of the following:
 
 <summary>
 
-decimal\_encoding: optional "number"or "string"or "bytes"
+decimal\_encoding: optional "number" or "string" or "bytes"
 
 </summary>
 
@@ -492,7 +492,7 @@ One of the following:
 
 <summary>
 
-timestamp\_format: optional "rfc3339"or "unix\_millis"
+timestamp\_format: optional "rfc3339" or "unix\_millis"
 
 </summary>
 
@@ -522,7 +522,7 @@ unstructured: optional boolean
 
 <summary>
 
-Parquet object {type, compression, row\_group\_bytes }
+Parquet object { type, compression, row\_group\_bytes }
 
 </summary>
 
@@ -534,7 +534,7 @@ type: "parquet"
 
 <summary>
 
-compression: optional "uncompressed"or "snappy"or "gzip"or 2 more
+compression: optional "uncompressed" or "snappy" or "gzip" or 2 more
 
 </summary>
 
@@ -584,7 +584,7 @@ minimum0
 
 <summary>
 
-schema: optional object {fields, inferred }
+schema: optional object { fields, inferred }
 
 Defines the schema of the events in the data stream.
 
@@ -604,7 +604,7 @@ One of the following:
 
 <summary>
 
-Int32 object {type, metadata\_key, name, 2 more }
+Int32 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -636,7 +636,7 @@ sql\_name: optional string
 
 <summary>
 
-Int64 object {type, metadata\_key, name, 2 more }
+Int64 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -668,7 +668,7 @@ sql\_name: optional string
 
 <summary>
 
-Float32 object {type, metadata\_key, name, 2 more }
+Float32 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -700,7 +700,7 @@ sql\_name: optional string
 
 <summary>
 
-Float64 object {type, metadata\_key, name, 2 more }
+Float64 object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -732,7 +732,7 @@ sql\_name: optional string
 
 <summary>
 
-Bool object {type, metadata\_key, name, 2 more }
+Bool object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -764,7 +764,7 @@ sql\_name: optional string
 
 <summary>
 
-String object {type, metadata\_key, name, 2 more }
+String object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -796,7 +796,7 @@ sql\_name: optional string
 
 <summary>
 
-Binary object {type, metadata\_key, name, 2 more }
+Binary object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -828,7 +828,7 @@ sql\_name: optional string
 
 <summary>
 
-Timestamp object {type, metadata\_key, name, 3 more }
+Timestamp object { type, metadata\_key, name, 3 more }
 
 </summary>
 
@@ -856,7 +856,7 @@ sql\_name: optional string
 
 <summary>
 
-unit: optional "second"or "millisecond"or "microsecond"or "nanosecond"
+unit: optional "second" or "millisecond" or "microsecond" or "nanosecond"
 
 </summary>
 
@@ -890,7 +890,7 @@ One of the following:
 
 <summary>
 
-Json object {type, metadata\_key, name, 2 more }
+Json object { type, metadata\_key, name, 2 more }
 
 </summary>
 
@@ -998,7 +998,7 @@ inferred: optional boolean
 
 <summary>
 
-used\_by: optional array of object {id, href, type }
+used\_by: optional array of object { id, href, type }
 
 Lists the pipelines that use this sink. Omitted when no pipeline uses it.
 

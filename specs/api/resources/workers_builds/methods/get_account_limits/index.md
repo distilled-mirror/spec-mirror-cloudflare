@@ -54,7 +54,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Workers CI Write``Workers CI Read`
+`Workers Metadata Read-Only``Workers CI Write``Workers CI Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -70,7 +70,7 @@ Account identifier.
 
 <summary>
 
-errors: array of object {message, code }
+errors: array of object { message, code }
 
 </summary>
 
@@ -94,7 +94,7 @@ messages: array of string
 
 <summary>
 
-result: object {build\_minutes\_refresh\_on, has\_reached\_build\_minutes\_limit } or object {build\_minutes\_refresh\_on, has\_reached\_build\_minutes\_limit }
+result: object { build\_minutes\_refresh\_on, has\_reached\_build\_minutes\_limit } or object { build\_minutes\_refresh\_on, has\_reached\_build\_minutes\_limit }
 
 </summary>
 
@@ -104,7 +104,7 @@ One of the following:
 
 <summary>
 
-object {build\_minutes\_refresh\_on, has\_reached\_build\_minutes\_limit }
+object { build\_minutes\_refresh\_on, has\_reached\_build\_minutes\_limit }
 
 </summary>
 
@@ -130,7 +130,7 @@ Whether build minutes limit has been reached (only for non-paid plans)
 
 <summary>
 
-object {build\_minutes\_refresh\_on, has\_reached\_build\_minutes\_limit }
+object { build\_minutes\_refresh\_on, has\_reached\_build\_minutes\_limit }
 
 </summary>
 
@@ -164,7 +164,7 @@ success: boolean
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

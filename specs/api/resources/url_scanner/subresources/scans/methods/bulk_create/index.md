@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`URL Scanner Write``URL Scanner Read`
+`Cloudforce One Write``Cloudforce One Read``URL Scanner Write``URL Scanner Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -72,7 +72,7 @@ Account ID.
 
 <summary>
 
-body: optional array of object {url, agentReadiness, customagent, 4 more }
+body: optional array of object { url, agentReadiness, customagent, 4 more }
 
 List of urls to scan (up to a 100).
 
@@ -110,7 +110,7 @@ maxLength4096
 
 <summary>
 
-screenshotsResolutions: optional array of "desktop"or "mobile"or "tablet"
+screenshotsResolutions: optional array of "desktop" or "mobile" or "tablet"
 
 Take multiple screenshots targeting different device types.
 
@@ -138,7 +138,7 @@ One of the following:
 
 <summary>
 
-visibility: optional "Public"or "Unlisted"
+visibility: optional "Public" or "Unlisted"
 
 The option <code>Public</code> means it will be included in listings like recent scans and search results. <code>Unlisted</code> means it will not be included in the aforementioned listings, users will need to have the scan’s ID to access it. A a scan will be automatically marked as unlisted if it fails, if it contains potential PII or other sensitive material.
 
@@ -194,7 +194,7 @@ formatuuid
 
 <summary>
 
-visibility: "public"or "unlisted"
+visibility: "public" or "unlisted"
 
 Submitted visibility status.
 
@@ -218,7 +218,7 @@ One of the following:
 
 <summary>
 
-options: optional object {useragent }
+options: optional object { useragent }
 
 </summary>
 

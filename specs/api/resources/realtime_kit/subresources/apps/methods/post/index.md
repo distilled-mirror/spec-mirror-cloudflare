@@ -82,7 +82,7 @@ minLength1
 
 <summary>
 
-data: optional object {app }
+data: optional object { app }
 
 </summary>
 
@@ -90,7 +90,7 @@ data: optional object {app }
 
 <summary>
 
-app: optional object {id, created\_at, name }
+app: optional object { id, created\_at, name }
 
 </summary>
 

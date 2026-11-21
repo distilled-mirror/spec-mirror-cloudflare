@@ -42,7 +42,7 @@ DELETE/accounts/{account\_id}/stream/live\_inputs/{live\_input\_identifier}/outp
 
 <summary>
 
-Output object {enabled, streamKey, uid, url }
+Output object { enabled, streamKey, uid, url }
 
 </summary>
 

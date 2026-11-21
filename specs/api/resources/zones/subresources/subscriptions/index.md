@@ -36,7 +36,7 @@ PUT/zones/{zone\_id}/subscription
 
 <summary>
 
-SubscriptionGetResponse object {id, currency, current\_period\_end, 5 more }
+SubscriptionGetResponse object { id, currency, current\_period\_end, 5 more }
 
 </summary>
 
@@ -74,7 +74,7 @@ formatdate-time
 
 <summary>
 
-frequency: optional "weekly"or "monthly"or "quarterly"or 2 more
+frequency: optional "weekly" or "monthly" or "quarterly" or 2 more
 
 How often the subscription is renewed automatically.
 
@@ -122,7 +122,7 @@ The rate plan applied to the subscription.
 
 <summary>
 
-state: optional "Trial"or "Provisioned"or "Paid"or 4 more
+state: optional "Trial" or "Provisioned" or "Paid" or 4 more
 
 The state that the subscription is in.
 
@@ -170,7 +170,7 @@ One of the following:
 
 <summary>
 
-SubscriptionCreateResponse object {id, currency, current\_period\_end, 5 more }
+SubscriptionCreateResponse object { id, currency, current\_period\_end, 5 more }
 
 </summary>
 
@@ -208,7 +208,7 @@ formatdate-time
 
 <summary>
 
-frequency: optional "weekly"or "monthly"or "quarterly"or 2 more
+frequency: optional "weekly" or "monthly" or "quarterly" or 2 more
 
 How often the subscription is renewed automatically.
 
@@ -256,7 +256,7 @@ The rate plan applied to the subscription.
 
 <summary>
 
-state: optional "Trial"or "Provisioned"or "Paid"or 4 more
+state: optional "Trial" or "Provisioned" or "Paid" or 4 more
 
 The state that the subscription is in.
 
@@ -304,7 +304,7 @@ One of the following:
 
 <summary>
 
-SubscriptionUpdateResponse object {id, currency, current\_period\_end, 5 more }
+SubscriptionUpdateResponse object { id, currency, current\_period\_end, 5 more }
 
 </summary>
 
@@ -342,7 +342,7 @@ formatdate-time
 
 <summary>
 
-frequency: optional "weekly"or "monthly"or "quarterly"or 2 more
+frequency: optional "weekly" or "monthly" or "quarterly" or 2 more
 
 How often the subscription is renewed automatically.
 
@@ -390,7 +390,7 @@ The rate plan applied to the subscription.
 
 <summary>
 
-state: optional "Trial"or "Provisioned"or "Paid"or 4 more
+state: optional "Trial" or "Provisioned" or "Paid" or 4 more
 
 The state that the subscription is in.
 

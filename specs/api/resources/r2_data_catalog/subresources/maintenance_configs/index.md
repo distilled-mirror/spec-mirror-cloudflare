@@ -36,7 +36,7 @@ POST/accounts/{account\_id}/r2-catalog/{bucket\_name}/maintenance-configs
 
 <summary>
 
-MaintenanceConfigGetResponse object {credential\_status, maintenance\_config }
+MaintenanceConfigGetResponse object { credential\_status, maintenance\_config }
 
 Contains maintenance configuration and credential status.
 
@@ -46,7 +46,7 @@ Contains maintenance configuration and credential status.
 
 <summary>
 
-credential\_status: "present"or "absent"
+credential\_status: "present" or "absent"
 
 Shows the credential configuration status.
 
@@ -70,7 +70,7 @@ One of the following:
 
 <summary>
 
-maintenance\_config: object {compaction, interval, snapshot\_expiration }
+maintenance\_config: object { compaction, interval, snapshot\_expiration }
 
 Configures maintenance for the catalog.
 
@@ -80,7 +80,7 @@ Configures maintenance for the catalog.
 
 <summary>
 
-compaction: optional object {state, target\_size\_mb }
+compaction: optional object { state, target\_size\_mb }
 
 Configures compaction for catalog maintenance.
 
@@ -90,7 +90,7 @@ Configures compaction for catalog maintenance.
 
 <summary>
 
-state: "enabled"or "disabled"
+state: "enabled" or "disabled"
 
 Specifies the state of maintenance operations.
 
@@ -114,7 +114,7 @@ One of the following:
 
 <summary>
 
-target\_size\_mb: "64"or "128"or "256"or "512"
+target\_size\_mb: "64" or "128" or "256" or "512"
 
 Sets the target file size for compaction in megabytes. Defaults to “128”.
 
@@ -156,7 +156,7 @@ Scheduling interval between normal table maintenance runs.
 
 <summary>
 
-snapshot\_expiration: optional object {max\_snapshot\_age, min\_snapshots\_to\_keep, state }
+snapshot\_expiration: optional object { max\_snapshot\_age, min\_snapshots\_to\_keep, state }
 
 Configures snapshot expiration settings.
 
@@ -182,7 +182,7 @@ minimum1
 
 <summary>
 
-state: "enabled"or "disabled"
+state: "enabled" or "disabled"
 
 Specifies the state of maintenance operations.
 
@@ -218,7 +218,7 @@ One of the following:
 
 <summary>
 
-MaintenanceConfigUpdateResponse object {compaction, interval, snapshot\_expiration }
+MaintenanceConfigUpdateResponse object { compaction, interval, snapshot\_expiration }
 
 Configures maintenance for the catalog.
 
@@ -228,7 +228,7 @@ Configures maintenance for the catalog.
 
 <summary>
 
-compaction: optional object {state, target\_size\_mb }
+compaction: optional object { state, target\_size\_mb }
 
 Configures compaction for catalog maintenance.
 
@@ -238,7 +238,7 @@ Configures compaction for catalog maintenance.
 
 <summary>
 
-state: "enabled"or "disabled"
+state: "enabled" or "disabled"
 
 Specifies the state of maintenance operations.
 
@@ -262,7 +262,7 @@ One of the following:
 
 <summary>
 
-target\_size\_mb: "64"or "128"or "256"or "512"
+target\_size\_mb: "64" or "128" or "256" or "512"
 
 Sets the target file size for compaction in megabytes. Defaults to “128”.
 
@@ -304,7 +304,7 @@ Scheduling interval between normal table maintenance runs.
 
 <summary>
 
-snapshot\_expiration: optional object {max\_snapshot\_age, min\_snapshots\_to\_keep, state }
+snapshot\_expiration: optional object { max\_snapshot\_age, min\_snapshots\_to\_keep, state }
 
 Configures snapshot expiration settings.
 
@@ -330,7 +330,7 @@ minimum1
 
 <summary>
 
-state: "enabled"or "disabled"
+state: "enabled" or "disabled"
 
 Specifies the state of maintenance operations.
 

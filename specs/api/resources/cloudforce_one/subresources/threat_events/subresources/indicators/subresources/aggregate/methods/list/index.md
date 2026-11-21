@@ -60,7 +60,7 @@ Column(s) to aggregate by - single column or comma-separated list (e.g., ‘indi
 
 <summary>
 
-createdAfter: optional stringor string
+createdAfter: optional string or string
 
 Filter indicators created after this date/datetime (ISO 8601, e.g., ‘2024-01-01’ or ‘2024-01-01T00:00:00Z’)
 
@@ -84,7 +84,7 @@ string
 
 <summary>
 
-createdBefore: optional stringor string
+createdBefore: optional string or string
 
 Filter indicators created before this date/datetime (ISO 8601, e.g., ‘2024-12-31’ or ‘2024-12-31T23:59:59Z’)
 
@@ -136,7 +136,7 @@ minimum1
 
 <summary>
 
-measure: optional "indicators"or "relationships"
+measure: optional "indicators" or "relationships"
 
 What to count per group: ‘indicators’ (catalog rows, default) or ‘relationships’ (linked events per indicator). Use ‘relationships’ for ‘top indicator by event activity’.
 
@@ -174,7 +174,7 @@ Column(s) that were aggregated by
 
 <summary>
 
-aggregations: array of object {count }
+aggregations: array of object { count }
 
 Array of aggregation results with dynamic fields based on aggregateBy columns
 

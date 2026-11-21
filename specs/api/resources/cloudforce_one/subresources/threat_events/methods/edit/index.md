@@ -102,7 +102,7 @@ insight: optional string
 
 <summary>
 
-raw: optional object {data, source, tlp }
+raw: optional object { data, source, tlp }
 
 </summary>
 

@@ -92,7 +92,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -134,7 +134,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -154,7 +154,7 @@ pointer: optional string
 
 <summary>
 
-result: object {environments }
+result: object { environments }
 
 </summary>
 
@@ -162,7 +162,7 @@ result: object {environments }
 
 <summary>
 
-environments: array of object {expression, locked\_on\_deployment, name, 4 more }
+environments: array of object { expression, locked\_on\_deployment, name, 4 more }
 
 </summary>
 
@@ -182,7 +182,7 @@ name: string
 
 <summary>
 
-position: object {after, before }
+position: object { after, before }
 
 </summary>
 

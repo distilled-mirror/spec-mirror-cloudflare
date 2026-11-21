@@ -74,7 +74,7 @@ maxLength32
 
 <summary>
 
-value: object {enabled }
+value: object { enabled }
 
 The NEL configuration value.
 
@@ -96,7 +96,7 @@ Whether Network Error Logging is enabled for the zone. When enabled, browsers re
 
 <summary>
 
-errors: array of object {code, message }
+errors: array of object { code, message }
 
 </summary>
 
@@ -120,7 +120,7 @@ Human-readable message.
 
 <summary>
 
-messages: array of object {code, message }
+messages: array of object { code, message }
 
 </summary>
 
@@ -174,7 +174,7 @@ formatdate-time
 
 <summary>
 
-value: object {enabled }
+value: object { enabled }
 
 The NEL configuration value.
 

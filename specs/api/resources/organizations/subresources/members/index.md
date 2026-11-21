@@ -40,7 +40,7 @@ DELETE/organizations/{organization\_id}/members/{member\_id}
 
 <summary>
 
-OrganizationMember object {id, create\_time, meta, 4 more }
+OrganizationMember object { id, create\_time, meta, 4 more }
 
 </summary>
 
@@ -64,7 +64,7 @@ meta: map\[unknown]
 
 <summary>
 
-status: "active"or "pending"or "rejected"or "canceled"
+status: "active" or "pending" or "rejected" or "canceled"
 
 </summary>
 
@@ -100,7 +100,7 @@ formatdate-time
 
 <summary>
 
-user: object {id, email, name, two\_factor\_authentication\_enabled }
+user: object { id, email, name, two\_factor\_authentication\_enabled }
 
 </summary>
 
@@ -128,7 +128,7 @@ two\_factor\_authentication\_enabled: boolean
 
 <summary>
 
-policies: optional array of object {roles, scopes, id }
+policies: optional array of object { roles, scopes, id }
 
 Direct policies of the membership. Present only for DSR members enrolled in Organization Roles.
 
@@ -138,7 +138,7 @@ Direct policies of the membership. Present only for DSR members enrolled in Orga
 
 <summary>
 
-roles: array of object {id }
+roles: array of object { id }
 
 </summary>
 
@@ -154,7 +154,7 @@ id: string
 
 <summary>
 
-scopes: array of object {key, subset\_of }
+scopes: array of object { key, subset\_of }
 
 </summary>
 
@@ -192,7 +192,7 @@ Omit to create a policy. An unchanged policy keeps its ID; a changed policy is r
 
 <summary>
 
-MemberDeleteResponse object {id }
+MemberDeleteResponse object { id }
 
 </summary>
 

@@ -46,7 +46,7 @@ DELETE/accounts/{account\_id}/dlp/data\_classes/{data\_class\_id}
 
 <summary>
 
-DataClassListResponse object {id, created\_at, data\_tags, 5 more }
+DataClassListResponse object { id, created\_at, data\_tags, 5 more }
 
 </summary>
 
@@ -78,7 +78,7 @@ name: string
 
 <summary>
 
-sensitivity\_levels: array of object {group\_id, level\_id }
+sensitivity\_levels: array of object { group\_id, level\_id }
 
 </summary>
 
@@ -116,7 +116,7 @@ description: optional string
 
 <summary>
 
-DataClassGetResponse object {id, created\_at, data\_tags, 5 more }
+DataClassGetResponse object { id, created\_at, data\_tags, 5 more }
 
 </summary>
 
@@ -148,7 +148,7 @@ name: string
 
 <summary>
 
-sensitivity\_levels: array of object {group\_id, level\_id }
+sensitivity\_levels: array of object { group\_id, level\_id }
 
 </summary>
 
@@ -186,7 +186,7 @@ description: optional string
 
 <summary>
 
-DataClassCreateResponse object {id, created\_at, data\_tags, 5 more }
+DataClassCreateResponse object { id, created\_at, data\_tags, 5 more }
 
 </summary>
 
@@ -218,7 +218,7 @@ name: string
 
 <summary>
 
-sensitivity\_levels: array of object {group\_id, level\_id }
+sensitivity\_levels: array of object { group\_id, level\_id }
 
 </summary>
 
@@ -256,7 +256,7 @@ description: optional string
 
 <summary>
 
-DataClassUpdateResponse object {id, created\_at, data\_tags, 5 more }
+DataClassUpdateResponse object { id, created\_at, data\_tags, 5 more }
 
 </summary>
 
@@ -288,7 +288,7 @@ name: string
 
 <summary>
 
-sensitivity\_levels: array of object {group\_id, level\_id }
+sensitivity\_levels: array of object { group\_id, level\_id }
 
 </summary>
 

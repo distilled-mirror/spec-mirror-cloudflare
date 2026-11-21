@@ -84,7 +84,7 @@ maxLength32
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -106,7 +106,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -126,7 +126,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -148,7 +148,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -198,7 +198,7 @@ The desired endpoint to test.
 
 <summary>
 
-kind: "http"or "traceroute"
+kind: "http" or "traceroute"
 
 The type of test.
 
@@ -264,7 +264,7 @@ Additional details about the test.
 
 <summary>
 
-target\_policies: optional array of object {id, default, name }
+target\_policies: optional array of object { id, default, name }
 
 DEX rules targeted by this test
 

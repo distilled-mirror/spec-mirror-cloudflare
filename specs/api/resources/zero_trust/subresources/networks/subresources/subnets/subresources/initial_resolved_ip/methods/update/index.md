@@ -72,7 +72,7 @@ maxLength32
 
 <summary>
 
-address\_family: "v4"or "v6"
+address\_family: "v4" or "v6"
 
 IP address family, either <code>v4</code> (IPv4) or <code>v6</code> (IPv6)
 
@@ -118,7 +118,7 @@ The private IPv4 or IPv6 range defining the subnet, in CIDR notation.
 
 <summary>
 
-errors: array of object {code, message, context }
+errors: array of object { code, message, context }
 
 </summary>
 
@@ -146,7 +146,7 @@ Optional error-specific context.
 
 <summary>
 
-messages: array of object {code, message, context }
+messages: array of object { code, message, context }
 
 </summary>
 
@@ -190,7 +190,7 @@ formatuuid
 
 <summary>
 
-capacity: optional object {total, used }
+capacity: optional object { total, used }
 
 IP capacity information for the subnet.
 
@@ -256,7 +256,7 @@ The private IPv4 or IPv6 range defining the subnet, in CIDR notation.
 
 <summary>
 
-subnet\_type: optional "cloudflare\_source"or "initial\_resolved\_ip"or "warp"
+subnet\_type: optional "cloudflare\_source" or "initial\_resolved\_ip" or "warp"
 
 The type of subnet.
 

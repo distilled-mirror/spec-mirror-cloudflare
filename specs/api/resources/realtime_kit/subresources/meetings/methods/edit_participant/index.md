@@ -118,7 +118,7 @@ Success status of the operation
 
 <summary>
 
-data: optional object {id, token, created\_at, 7 more }
+data: optional object { id, token, created\_at, 7 more }
 
 Represents a participant.
 

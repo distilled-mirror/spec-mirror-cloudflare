@@ -88,7 +88,7 @@ formatdate-time
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -124,7 +124,7 @@ minimum0
 
 <summary>
 
-result: object {annotations }
+result: object { annotations }
 
 </summary>
 
@@ -132,7 +132,7 @@ result: object {annotations }
 
 <summary>
 
-annotations: array of object {clientCountryAlpha2, clientCountryName, value }
+annotations: array of object { clientCountryAlpha2, clientCountryName, value }
 
 </summary>
 

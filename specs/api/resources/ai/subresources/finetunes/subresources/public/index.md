@@ -30,7 +30,7 @@ GET/accounts/{account\_id}/ai/finetunes/public
 
 <summary>
 
-PublicListResponse object {id, created\_at, model, 4 more }
+PublicListResponse object { id, created\_at, model, 4 more }
 
 </summary>
 

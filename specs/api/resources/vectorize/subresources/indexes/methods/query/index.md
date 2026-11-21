@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Vectorize Write``Vectorize Read`
+`Auto Rag Write Run Engine``Vectorize Write``Vectorize Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -90,7 +90,7 @@ A metadata filter expression used to limit nearest neighbor results.
 
 <summary>
 
-returnMetadata: optional "none"or "indexed"or "all"
+returnMetadata: optional "none" or "indexed" or "all"
 
 Whether to return no metadata, indexed metadata or all metadata associated with the closest vectors.
 
@@ -154,7 +154,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -196,7 +196,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -216,7 +216,7 @@ pointer: optional string
 
 <summary>
 
-result: object {count, matches }
+result: object { count, matches }
 
 </summary>
 
@@ -230,7 +230,7 @@ Specifies the count of vectors returned by the search
 
 <summary>
 
-matches: optional array of object {id, metadata, namespace, 2 more }
+matches: optional array of object { id, metadata, namespace, 2 more }
 
 Array of vectors matched by the search
 

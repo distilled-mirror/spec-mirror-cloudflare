@@ -98,7 +98,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -140,7 +140,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -186,7 +186,7 @@ Indicate whether the category is in beta and subject to change.
 
 <summary>
 
-class: optional "free"or "premium"or "blocked"or 2 more
+class: optional "free" or "premium" or "blocked" or 2 more
 
 Specify which account types can create policies for this category. <code>blocked</code> Blocks unconditionally for all accounts. <code>removalPending</code> Allows removal from policies but disables addition. <code>noBlock</code> Prevents blocking.
 
@@ -234,7 +234,7 @@ Specify the category name.
 
 <summary>
 
-subcategories: optional array of object {id, beta, class, 2 more }
+subcategories: optional array of object { id, beta, class, 2 more }
 
 Provide all subcategories for this category.
 
@@ -256,7 +256,7 @@ Indicate whether the category is in beta and subject to change.
 
 <summary>
 
-class: optional "free"or "premium"or "blocked"or 2 more
+class: optional "free" or "premium" or "blocked" or 2 more
 
 Specify which account types can create policies for this category. <code>blocked</code> Blocks unconditionally for all accounts. <code>removalPending</code> Allows removal from policies but disables addition. <code>noBlock</code> Prevents blocking.
 
@@ -312,7 +312,7 @@ Specify the category name.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object { count, page, per\_page, total\_count }
 
 </summary>
 

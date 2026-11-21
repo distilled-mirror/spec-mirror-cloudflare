@@ -1,6 +1,6 @@
 {
   "source": "https://developers.cloudflare.com/api/",
-  "count": 4109,
+  "count": 4108,
   "pages": [
     {
       "page": "https://developers.cloudflare.com/api/resources/$shared",
@@ -2665,10 +2665,6 @@
     {
       "page": "https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/methods/bulk_create",
       "markdown": "https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/methods/bulk_create/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/methods/bulk_create_relationships",
-      "markdown": "https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/methods/bulk_create_relationships/index.md"
     },
     {
       "page": "https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/methods/create",
@@ -16473,6 +16469,7 @@
     "api/resources/browser_rendering/subresources/devtools/subresources/browser/methods/launch/index.md",
     "api/resources/browser_rendering/subresources/devtools/subresources/browser/subresources/page/index.md",
     "api/resources/browser_rendering/subresources/devtools/subresources/browser/subresources/page/methods/get/index.md",
+    "api/resources/cloudforce_one/subresources/threat_events/methods/bulk_create_relationships/index.md",
     "api/resources/cloudforce_one/subresources/threat_events/subresources/indicator_types/index.md",
     "api/resources/cloudforce_one/subresources/threat_events/subresources/indicator_types/methods/list/index.md",
     "api/resources/cloudforce_one/subresources/threat_signals/methods/health/index.md",

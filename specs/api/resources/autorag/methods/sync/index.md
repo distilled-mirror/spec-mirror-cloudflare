@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Auto Rag Write`
+`AI Search Write``Auto Rag Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -80,7 +80,7 @@ minLength1
 
 <summary>
 
-result: object {job\_id }
+result: object { job\_id }
 
 </summary>
 

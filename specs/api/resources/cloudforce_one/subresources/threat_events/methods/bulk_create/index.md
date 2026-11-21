@@ -50,7 +50,7 @@ Account ID.
 
 <summary>
 
-data: array of object {category, date, event, 13 more }
+data: array of object { category, date, event, 13 more }
 
 </summary>
 
@@ -72,7 +72,7 @@ event: string
 
 <summary>
 
-raw: object {data, source, tlp }
+raw: object { data, source, tlp }
 
 </summary>
 
@@ -120,7 +120,7 @@ indicator: optional string
 
 <summary>
 
-indicators: optional array of object {indicatorType, value }
+indicators: optional array of object { indicatorType, value }
 
 Array of indicators for this event. Supports multiple indicators per event for complex scenarios.
 
@@ -214,7 +214,7 @@ formatuuid
 
 <summary>
 
-createdEvents: optional array of object {eventIndex, shardId, uuid }
+createdEvents: optional array of object { eventIndex, shardId, uuid }
 
 Array of created events with UUIDs and shard locations. Only present when includeCreatedEvents=true
 
@@ -248,7 +248,7 @@ formatuuid
 
 <summary>
 
-errors: optional array of object {error, eventIndex }
+errors: optional array of object { error, eventIndex }
 
 Array of error details
 

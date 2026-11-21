@@ -44,7 +44,7 @@ DELETE/accounts/{account\_id}/addressing/address\_maps/{address\_map\_id}
 
 <summary>
 
-AddressMap object {id, can\_delete, can\_modify\_ips, 5 more }
+AddressMap object { id, can\_delete, can\_modify\_ips, 5 more }
 
 </summary>
 
@@ -106,7 +106,7 @@ formatdate-time
 
 <summary>
 
-Kind = "zone"or "account"
+Kind = "zone" or "account"
 
 The type of the membership.
 
@@ -130,7 +130,7 @@ One of the following:
 
 <summary>
 
-AddressMapGetResponse object {id, can\_delete, can\_modify\_ips, 7 more }
+AddressMapGetResponse object { id, can\_delete, can\_modify\_ips, 7 more }
 
 </summary>
 
@@ -188,7 +188,7 @@ The set of IPs on the Address Map.
 
 <summary>
 
-memberships: optional array of object {can\_delete, created\_at, identifier, kind }
+memberships: optional array of object { can\_delete, created\_at, identifier, kind }
 
 Zones and Accounts which will be assigned IPs on this Address Map. A zone membership will take priority over an account membership.
 
@@ -238,7 +238,7 @@ formatdate-time
 
 <summary>
 
-AddressMapCreateResponse object {id, can\_delete, can\_modify\_ips, 7 more }
+AddressMapCreateResponse object { id, can\_delete, can\_modify\_ips, 7 more }
 
 </summary>
 
@@ -296,7 +296,7 @@ The set of IPs on the Address Map.
 
 <summary>
 
-memberships: optional array of object {can\_delete, created\_at, identifier, kind }
+memberships: optional array of object { can\_delete, created\_at, identifier, kind }
 
 Zones and Accounts which will be assigned IPs on this Address Map. A zone membership will take priority over an account membership.
 
@@ -346,7 +346,7 @@ formatdate-time
 
 <summary>
 
-AddressMapDeleteResponse object {errors, messages, success, result\_info }
+AddressMapDeleteResponse object { errors, messages, success, result\_info }
 
 </summary>
 
@@ -354,7 +354,7 @@ AddressMapDeleteResponse object {errors, messages, success, result\_info }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -376,7 +376,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -396,7 +396,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -418,7 +418,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -444,7 +444,7 @@ Whether the API call was successful.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 
@@ -502,7 +502,7 @@ DELETE/accounts/{account\_id}/addressing/address\_maps/{address\_map\_id}/accoun
 
 <summary>
 
-AccountUpdateResponse object {errors, messages, success, result\_info }
+AccountUpdateResponse object { errors, messages, success, result\_info }
 
 </summary>
 
@@ -510,7 +510,7 @@ AccountUpdateResponse object {errors, messages, success, result\_info }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -532,7 +532,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -552,7 +552,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -574,7 +574,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -600,7 +600,7 @@ Whether the API call was successful.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 
@@ -646,7 +646,7 @@ The number of total pages in the entire result set.
 
 <summary>
 
-AccountDeleteResponse object {errors, messages, success, result\_info }
+AccountDeleteResponse object { errors, messages, success, result\_info }
 
 </summary>
 
@@ -654,7 +654,7 @@ AccountDeleteResponse object {errors, messages, success, result\_info }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -676,7 +676,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -696,7 +696,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -718,7 +718,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -744,7 +744,7 @@ Whether the API call was successful.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 
@@ -802,7 +802,7 @@ DELETE/accounts/{account\_id}/addressing/address\_maps/{address\_map\_id}/ips/{i
 
 <summary>
 
-IPUpdateResponse object {errors, messages, success, result\_info }
+IPUpdateResponse object { errors, messages, success, result\_info }
 
 </summary>
 
@@ -810,7 +810,7 @@ IPUpdateResponse object {errors, messages, success, result\_info }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -832,7 +832,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -852,7 +852,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -874,7 +874,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -900,7 +900,7 @@ Whether the API call was successful.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 
@@ -946,7 +946,7 @@ The number of total pages in the entire result set.
 
 <summary>
 
-IPDeleteResponse object {errors, messages, success, result\_info }
+IPDeleteResponse object { errors, messages, success, result\_info }
 
 </summary>
 
@@ -954,7 +954,7 @@ IPDeleteResponse object {errors, messages, success, result\_info }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -976,7 +976,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -996,7 +996,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -1018,7 +1018,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -1044,7 +1044,7 @@ Whether the API call was successful.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 
@@ -1102,7 +1102,7 @@ DELETE/accounts/{account\_id}/addressing/address\_maps/{address\_map\_id}/zones/
 
 <summary>
 
-ZoneUpdateResponse object {errors, messages, success, result\_info }
+ZoneUpdateResponse object { errors, messages, success, result\_info }
 
 </summary>
 
@@ -1110,7 +1110,7 @@ ZoneUpdateResponse object {errors, messages, success, result\_info }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -1132,7 +1132,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -1152,7 +1152,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -1174,7 +1174,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -1200,7 +1200,7 @@ Whether the API call was successful.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 
@@ -1246,7 +1246,7 @@ The number of total pages in the entire result set.
 
 <summary>
 
-ZoneDeleteResponse object {errors, messages, success, result\_info }
+ZoneDeleteResponse object { errors, messages, success, result\_info }
 
 </summary>
 
@@ -1254,7 +1254,7 @@ ZoneDeleteResponse object {errors, messages, success, result\_info }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -1276,7 +1276,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -1296,7 +1296,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -1318,7 +1318,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -1344,7 +1344,7 @@ Whether the API call was successful.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

@@ -72,7 +72,7 @@ GET/accounts/{account\_id}/realtime/kit/{app\_id}/livestreams/{livestream\_id}
 
 <summary>
 
-LivestreamGetAllLivestreamsResponse object {data, paging, success }
+LivestreamGetAllLivestreamsResponse object { data, paging, success }
 
 </summary>
 
@@ -80,7 +80,7 @@ LivestreamGetAllLivestreamsResponse object {data, paging, success }
 
 <summary>
 
-data: array of object {id, created\_at, disabled, 9 more }
+data: array of object { id, created\_at, disabled, 9 more }
 
 </summary>
 
@@ -146,7 +146,7 @@ The web address that viewers can use to watch the livestream.
 
 <summary>
 
-status: "LIVE"or "IDLE"or "ERRORED"or 2 more
+status: "LIVE" or "IDLE" or "ERRORED" or 2 more
 
 Status of the livestream.
 
@@ -200,7 +200,7 @@ formatdate-time
 
 <summary>
 
-paging: object {end\_offset, start\_offset, total\_count }
+paging: object { end\_offset, start\_offset, total\_count }
 
 </summary>
 
@@ -234,7 +234,7 @@ success: boolean
 
 <summary>
 
-LivestreamGetLivestreamSessionDetailsForMeetingResponse object {data, success }
+LivestreamGetLivestreamSessionDetailsForMeetingResponse object { data, success }
 
 </summary>
 
@@ -242,7 +242,7 @@ LivestreamGetLivestreamSessionDetailsForMeetingResponse object {data, success }
 
 <summary>
 
-data: object {data, paging }
+data: object { data, paging }
 
 </summary>
 
@@ -250,7 +250,7 @@ data: object {data, paging }
 
 <summary>
 
-data: object {livestream, sessions }
+data: object { livestream, sessions }
 
 </summary>
 
@@ -258,7 +258,7 @@ data: object {livestream, sessions }
 
 <summary>
 
-livestream: object {id, created\_at, disabled, 9 more }
+livestream: object { id, created\_at, disabled, 9 more }
 
 </summary>
 
@@ -324,7 +324,7 @@ The web address that viewers can use to watch the livestream.
 
 <summary>
 
-status: "LIVE"or "IDLE"or "ERRORED"or 2 more
+status: "LIVE" or "IDLE" or "ERRORED" or 2 more
 
 Status of the livestream.
 
@@ -378,7 +378,7 @@ formatdate-time
 
 <summary>
 
-sessions: array of object {id, created\_at, err\_message, 7 more }
+sessions: array of object { id, created\_at, err\_message, 7 more }
 
 </summary>
 
@@ -468,7 +468,7 @@ The total view time for which the viewers watched the stream.
 
 <summary>
 
-paging: object {end\_offset, start\_offset, total\_count }
+paging: object { end\_offset, start\_offset, total\_count }
 
 </summary>
 
@@ -506,7 +506,7 @@ success: boolean
 
 <summary>
 
-LivestreamGetLivestreamSessionsForSessionResponse object {data, success }
+LivestreamGetLivestreamSessionsForSessionResponse object { data, success }
 
 </summary>
 
@@ -514,7 +514,7 @@ LivestreamGetLivestreamSessionsForSessionResponse object {data, success }
 
 <summary>
 
-data: object {data, paging }
+data: object { data, paging }
 
 </summary>
 
@@ -522,7 +522,7 @@ data: object {data, paging }
 
 <summary>
 
-data: array of object {id, created\_at, err\_message, 7 more }
+data: array of object { id, created\_at, err\_message, 7 more }
 
 </summary>
 
@@ -608,7 +608,7 @@ The total view time for which the viewers watched the stream.
 
 <summary>
 
-paging: object {end\_offset, start\_offset, total\_count }
+paging: object { end\_offset, start\_offset, total\_count }
 
 </summary>
 
@@ -646,7 +646,7 @@ success: boolean
 
 <summary>
 
-LivestreamStopLivestreamingAMeetingResponse object {data, success }
+LivestreamStopLivestreamingAMeetingResponse object { data, success }
 
 </summary>
 
@@ -654,7 +654,7 @@ LivestreamStopLivestreamingAMeetingResponse object {data, success }
 
 <summary>
 
-data: optional object {message }
+data: optional object { message }
 
 </summary>
 
@@ -678,7 +678,7 @@ success: optional boolean
 
 <summary>
 
-LivestreamStartLivestreamingAMeetingResponse object {data, success }
+LivestreamStartLivestreamingAMeetingResponse object { data, success }
 
 </summary>
 
@@ -686,7 +686,7 @@ LivestreamStartLivestreamingAMeetingResponse object {data, success }
 
 <summary>
 
-data: object {id, ingest\_server, meeting\_id, 4 more }
+data: object { id, ingest\_server, meeting\_id, 4 more }
 
 </summary>
 
@@ -726,7 +726,7 @@ The web address that viewers can use to watch the livestream.
 
 <summary>
 
-status: "LIVE"or "IDLE"or "ERRORED"or 2 more
+status: "LIVE" or "IDLE" or "ERRORED" or 2 more
 
 Status of the livestream.
 
@@ -780,7 +780,7 @@ success: boolean
 
 <summary>
 
-LivestreamGetLivestreamAnalyticsCompleteResponse object {data, success }
+LivestreamGetLivestreamAnalyticsCompleteResponse object { data, success }
 
 </summary>
 
@@ -788,7 +788,7 @@ LivestreamGetLivestreamAnalyticsCompleteResponse object {data, success }
 
 <summary>
 
-data: optional object {count, total\_ingest\_seconds, total\_viewer\_seconds }
+data: optional object { count, total\_ingest\_seconds, total\_viewer\_seconds }
 
 </summary>
 
@@ -826,7 +826,7 @@ success: optional boolean
 
 <summary>
 
-LivestreamGetLivestreamAnalyticsDaywiseResponse object {data, success }
+LivestreamGetLivestreamAnalyticsDaywiseResponse object { data, success }
 
 </summary>
 
@@ -834,7 +834,7 @@ LivestreamGetLivestreamAnalyticsDaywiseResponse object {data, success }
 
 <summary>
 
-data: optional array of object {count, date, total\_ingest\_seconds, total\_viewer\_seconds }
+data: optional array of object { count, date, total\_ingest\_seconds, total\_viewer\_seconds }
 
 </summary>
 
@@ -878,7 +878,7 @@ success: optional boolean
 
 <summary>
 
-LivestreamGetOrgAnalyticsResponse object {data, success }
+LivestreamGetOrgAnalyticsResponse object { data, success }
 
 </summary>
 
@@ -886,7 +886,7 @@ LivestreamGetOrgAnalyticsResponse object {data, success }
 
 <summary>
 
-data: optional object {recording\_stats, session\_stats }
+data: optional object { recording\_stats, session\_stats }
 
 </summary>
 
@@ -894,7 +894,7 @@ data: optional object {recording\_stats, session\_stats }
 
 <summary>
 
-recording\_stats: optional object {day\_stats, recording\_count, recording\_minutes\_consumed }
+recording\_stats: optional object { day\_stats, recording\_count, recording\_minutes\_consumed }
 
 Recording statistics of an App during the range specified
 
@@ -904,7 +904,7 @@ Recording statistics of an App during the range specified
 
 <summary>
 
-day\_stats: optional array of object {day, total\_recording\_minutes, total\_recordings }
+day\_stats: optional array of object { day, total\_recording\_minutes, total\_recordings }
 
 Day wise recording stats
 
@@ -950,7 +950,7 @@ Total recording minutes during the range specified
 
 <summary>
 
-session\_stats: optional object {day\_stats, sessions\_count, sessions\_minutes\_consumed }
+session\_stats: optional object { day\_stats, sessions\_count, sessions\_minutes\_consumed }
 
 Session statistics of an App during the range specified
 
@@ -960,7 +960,7 @@ Session statistics of an App during the range specified
 
 <summary>
 
-day\_stats: optional array of object {day, total\_session\_minutes, total\_sessions }
+day\_stats: optional array of object { day, total\_session\_minutes, total\_sessions }
 
 Day wise session stats
 
@@ -1018,7 +1018,7 @@ success: optional boolean
 
 <summary>
 
-LivestreamGetMeetingActiveLivestreamsResponse object {data, success }
+LivestreamGetMeetingActiveLivestreamsResponse object { data, success }
 
 </summary>
 
@@ -1026,7 +1026,7 @@ LivestreamGetMeetingActiveLivestreamsResponse object {data, success }
 
 <summary>
 
-data: object {id, created\_at, disabled, 9 more }
+data: object { id, created\_at, disabled, 9 more }
 
 </summary>
 
@@ -1092,7 +1092,7 @@ The web address that viewers can use to watch the livestream.
 
 <summary>
 
-status: "LIVE"or "IDLE"or "ERRORED"or 2 more
+status: "LIVE" or "IDLE" or "ERRORED" or 2 more
 
 Status of the livestream.
 
@@ -1154,7 +1154,7 @@ success: boolean
 
 <summary>
 
-LivestreamGetLivestreamSessionDetailsForSessionIDResponse object {data, success }
+LivestreamGetLivestreamSessionDetailsForSessionIDResponse object { data, success }
 
 </summary>
 
@@ -1162,7 +1162,7 @@ LivestreamGetLivestreamSessionDetailsForSessionIDResponse object {data, success 
 
 <summary>
 
-data: object {id, created\_at, err\_message, 7 more }
+data: object { id, created\_at, err\_message, 7 more }
 
 </summary>
 
@@ -1256,7 +1256,7 @@ success: boolean
 
 <summary>
 
-LivestreamGetActiveLivestreamsForLivestreamIDResponse object {data, success }
+LivestreamGetActiveLivestreamsForLivestreamIDResponse object { data, success }
 
 </summary>
 
@@ -1264,7 +1264,7 @@ LivestreamGetActiveLivestreamsForLivestreamIDResponse object {data, success }
 
 <summary>
 
-data: object {livestream, session }
+data: object { livestream, session }
 
 </summary>
 
@@ -1272,7 +1272,7 @@ data: object {livestream, session }
 
 <summary>
 
-livestream: object {id, created\_at, disabled, 9 more }
+livestream: object { id, created\_at, disabled, 9 more }
 
 </summary>
 
@@ -1338,7 +1338,7 @@ The web address that viewers can use to watch the livestream.
 
 <summary>
 
-status: "LIVE"or "IDLE"or "ERRORED"or 2 more
+status: "LIVE" or "IDLE" or "ERRORED" or 2 more
 
 Status of the livestream.
 
@@ -1392,7 +1392,7 @@ formatdate-time
 
 <summary>
 
-session: object {id, created\_at, err\_message, 7 more }
+session: object { id, created\_at, err\_message, 7 more }
 
 </summary>
 
@@ -1490,7 +1490,7 @@ success: boolean
 
 <summary>
 
-LivestreamGetLivestreamSessionForLivestreamIDResponse object {data, paging, success }
+LivestreamGetLivestreamSessionForLivestreamIDResponse object { data, paging, success }
 
 </summary>
 
@@ -1498,7 +1498,7 @@ LivestreamGetLivestreamSessionForLivestreamIDResponse object {data, paging, succ
 
 <summary>
 
-data: object {livestream, sessions }
+data: object { livestream, sessions }
 
 </summary>
 
@@ -1506,7 +1506,7 @@ data: object {livestream, sessions }
 
 <summary>
 
-livestream: object {id, created\_at, disabled, 9 more }
+livestream: object { id, created\_at, disabled, 9 more }
 
 </summary>
 
@@ -1572,7 +1572,7 @@ The web address that viewers can use to watch the livestream.
 
 <summary>
 
-status: "LIVE"or "IDLE"or "ERRORED"or 2 more
+status: "LIVE" or "IDLE" or "ERRORED" or 2 more
 
 Status of the livestream.
 
@@ -1626,7 +1626,7 @@ formatdate-time
 
 <summary>
 
-sessions: array of object {id, created\_at, err\_message, 7 more }
+sessions: array of object { id, created\_at, err\_message, 7 more }
 
 </summary>
 
@@ -1716,7 +1716,7 @@ The total view time for which the viewers watched the stream.
 
 <summary>
 
-paging: object {end\_offset, start\_offset, total\_count }
+paging: object { end\_offset, start\_offset, total\_count }
 
 </summary>
 

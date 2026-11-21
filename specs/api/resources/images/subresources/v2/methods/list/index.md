@@ -110,7 +110,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Images Read``Images Write`
+`Images Metadata Read``Images Read``Images Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -142,7 +142,7 @@ Internal user ID set within the creator field. Setting to empty string "" will r
 
 <summary>
 
-meta: optional object {"&lt;field&gt;\[&lt;operator&gt;]" }
+meta: optional object { "&lt;field&gt;\[&lt;operator&gt;]" }
 
 </summary>
 
@@ -190,7 +190,7 @@ minimum10
 
 <summary>
 
-sort\_order: optional "asc"or "desc"
+sort\_order: optional "asc" or "desc"
 
 Sorting order by upload time
 
@@ -238,7 +238,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -280,7 +280,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -300,7 +300,7 @@ pointer: optional string
 
 <summary>
 
-result: object {continuation\_token, images }
+result: object { continuation\_token, images }
 
 </summary>
 

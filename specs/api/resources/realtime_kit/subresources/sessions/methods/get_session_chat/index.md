@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Realtime Admin``Realtime`
+`Realtime Read``Realtime Admin``Realtime`
 
 ##### P ath ParametersExpand Collapse
 
@@ -86,7 +86,7 @@ formatuuid
 
 <summary>
 
-data: optional object {chat\_download\_url, chat\_download\_url\_expiry }
+data: optional object { chat\_download\_url, chat\_download\_url\_expiry }
 
 </summary>
 

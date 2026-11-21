@@ -46,7 +46,7 @@ DELETE/accounts/{account\_id}/teamnet/routes/{route\_id}
 
 <summary>
 
-NetworkRoute object {id, comment, created\_at, 4 more }
+NetworkRoute object { id, comment, created\_at, 4 more }
 
 </summary>
 
@@ -114,7 +114,7 @@ formatuuid
 
 <summary>
 
-Route object {id, comment, created\_at, 4 more }
+Route object { id, comment, created\_at, 4 more }
 
 </summary>
 
@@ -182,7 +182,7 @@ formatuuid
 
 <summary>
 
-Teamnet object {id, comment, created\_at, 7 more }
+Teamnet object { id, comment, created\_at, 7 more }
 
 </summary>
 
@@ -228,7 +228,7 @@ The private IPv4 or IPv6 range connected by the route, in CIDR notation.
 
 <summary>
 
-tun\_type: optional "cfd\_tunnel"or "warp\_connector"or "warp"or 4 more
+tun\_type: optional "cfd\_tunnel" or "warp\_connector" or "warp" or 4 more
 
 The type of tunnel.
 
@@ -358,7 +358,7 @@ DELETE/accounts/{account\_id}/teamnet/virtual\_networks/{virtual\_network\_id}
 
 <summary>
 
-VirtualNetwork object {id, comment, created\_at, 3 more }
+VirtualNetwork object { id, comment, created\_at, 3 more }
 
 </summary>
 
@@ -442,7 +442,7 @@ DELETE/accounts/{account\_id}/zerotrust/subnets/warp/{subnet\_id}
 
 <summary>
 
-Subnet object {id, capacity, comment, 6 more }
+Subnet object { id, capacity, comment, 6 more }
 
 </summary>
 
@@ -458,7 +458,7 @@ formatuuid
 
 <summary>
 
-capacity: optional object {total, used }
+capacity: optional object { total, used }
 
 IP capacity information for the subnet.
 
@@ -524,7 +524,7 @@ The private IPv4 or IPv6 range defining the subnet, in CIDR notation.
 
 <summary>
 
-subnet\_type: optional "cloudflare\_source"or "initial\_resolved\_ip"or "warp"
+subnet\_type: optional "cloudflare\_source" or "initial\_resolved\_ip" or "warp"
 
 The type of subnet.
 
@@ -556,7 +556,7 @@ One of the following:
 
 <summary>
 
-WARPDeleteResponse object {id, capacity, comment, 6 more }
+WARPDeleteResponse object { id, capacity, comment, 6 more }
 
 </summary>
 
@@ -572,7 +572,7 @@ formatuuid
 
 <summary>
 
-capacity: optional object {total, used }
+capacity: optional object { total, used }
 
 IP capacity information for the subnet.
 
@@ -638,7 +638,7 @@ The private IPv4 or IPv6 range defining the subnet, in CIDR notation.
 
 <summary>
 
-subnet\_type: optional "cloudflare\_source"or "initial\_resolved\_ip"or "warp"
+subnet\_type: optional "cloudflare\_source" or "initial\_resolved\_ip" or "warp"
 
 The type of subnet.
 
@@ -710,7 +710,7 @@ DELETE/accounts/{account\_id}/zerotrust/routes/hostname/{hostname\_route\_id}
 
 <summary>
 
-HostnameRoute object {id, comment, created\_at, 5 more }
+HostnameRoute object { id, comment, created\_at, 5 more }
 
 </summary>
 
@@ -754,7 +754,7 @@ The hostname of the route.
 
 <summary>
 
-tun\_type: optional "cfd\_tunnel"or "warp\_connector"or "warp"or 4 more
+tun\_type: optional "cfd\_tunnel" or "warp\_connector" or "warp" or 4 more
 
 The type of tunnel.
 

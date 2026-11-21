@@ -98,7 +98,7 @@ minimum1
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -120,7 +120,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -140,7 +140,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -162,7 +162,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -188,7 +188,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional array of object {created\_at, uid, updated\_at, 2 more }
+result: optional array of object { created\_at, uid, updated\_at, 2 more }
 
 </summary>
 
@@ -218,7 +218,7 @@ formatdate-time
 
 <summary>
 
-current\_certificate: optional object {is\_current, not\_after, public\_certificate, uid }
+current\_certificate: optional object { is\_current, not\_after, public\_certificate, uid }
 
 The current active certificate
 
@@ -268,7 +268,7 @@ The previous certificate (maintained during rotation period). May be null when n
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

@@ -32,7 +32,7 @@ PATCH/accounts/{account\_id}/dns\_firewall/{dns\_firewall\_id}/reverse\_dns
 
 <summary>
 
-ReverseDNSGetResponse object {ptr }
+ReverseDNSGetResponse object { ptr }
 
 </summary>
 
@@ -50,7 +50,7 @@ Map of cluster IP addresses to PTR record contents
 
 <summary>
 
-ReverseDNSEditResponse object {ptr }
+ReverseDNSEditResponse object { ptr }
 
 </summary>
 

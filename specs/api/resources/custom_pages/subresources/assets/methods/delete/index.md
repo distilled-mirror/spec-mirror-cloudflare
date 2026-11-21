@@ -54,6 +54,10 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 </details>
 
+##### Accepted Permissions (at least one required)
+
+`Account Custom Error Rules Write``Account Custom Asset Write``Account Custom Pages Write`
+
 ##### P ath ParametersExpand Collapse
 
 asset\_name: string

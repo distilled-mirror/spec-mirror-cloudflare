@@ -36,6 +36,10 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 **Example:**`X-Auth-Key: 144c9defac04969c7bfad8efaa8ea194`
 
+##### Accepted Permissions (at least one required)
+
+`Intel Write`
+
 ##### P ath ParametersExpand Collapse
 
 account\_id: string
@@ -66,7 +70,7 @@ The name of the indicator feed
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -88,7 +92,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -108,7 +112,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -130,7 +134,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -156,7 +160,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, created\_on, description, 5 more }
+result: optional object { id, created\_on, description, 5 more }
 
 </summary>
 

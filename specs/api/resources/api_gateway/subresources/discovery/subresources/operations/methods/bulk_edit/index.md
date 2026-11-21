@@ -76,7 +76,7 @@ maxLength32
 
 <summary>
 
-body: map\[object {state } ]
+body: map\[object { state } ]
 
 </summary>
 
@@ -84,7 +84,7 @@ body: map\[object {state } ]
 
 <summary>
 
-state: optional "review"or "ignored"
+state: optional "review" or "ignored"
 
 Mark state of operation in API Discovery
 
@@ -139,7 +139,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -181,7 +181,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -201,7 +201,7 @@ pointer: optional string
 
 <summary>
 
-result: map\[object {state } ]
+result: map\[object { state } ]
 
 </summary>
 
@@ -209,7 +209,7 @@ result: map\[object {state } ]
 
 <summary>
 
-state: optional "review"or "ignored"
+state: optional "review" or "ignored"
 
 Mark state of operation in API Discovery
 

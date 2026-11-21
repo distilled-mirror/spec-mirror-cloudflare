@@ -50,7 +50,7 @@ relay\_id: string
 
 <summary>
 
-errors: array of object {code, message }
+errors: array of object { code, message }
 
 </summary>
 
@@ -70,7 +70,7 @@ message: optional string
 
 <summary>
 
-messages: array of object {code, message }
+messages: array of object { code, message }
 
 </summary>
 
@@ -94,7 +94,7 @@ success: boolean
 
 <summary>
 
-result: optional object {config, created, modified, 3 more }
+result: optional object { config, created, modified, 3 more }
 
 Full relay details (no tokens).
 
@@ -104,7 +104,7 @@ Full relay details (no tokens).
 
 <summary>
 
-config: object {upstreams }
+config: object { upstreams }
 
 Relay configuration. All sub-objects use whole-object replacement when present; omitted sub-objects preserve the existing value.
 
@@ -114,7 +114,7 @@ Relay configuration. All sub-objects use whole-object replacement when present; 
 
 <summary>
 
-upstreams: optional object {enabled, upstreams }
+upstreams: optional object { enabled, upstreams }
 
 Upstreams are external MOQT server publishers that a relay falls back to when it has no local publisher for a requested namespace/track.
 
@@ -128,7 +128,7 @@ enabled: optional boolean
 
 <summary>
 
-upstreams: optional array of object {url }
+upstreams: optional array of object { url }
 
 Ordered list of upstream MOQT server publishers. Each entry is an object (not a bare string) so per-upstream configuration can be added in the future without another breaking change.
 

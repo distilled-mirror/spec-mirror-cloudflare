@@ -28,7 +28,7 @@ GET/accounts/{account\_id}/stream/{identifier}/captions
 
 <summary>
 
-Caption object {generated, label, language, status }
+Caption object { generated, label, language, status }
 
 </summary>
 
@@ -54,7 +54,7 @@ The language tag in BCP 47 format.
 
 <summary>
 
-status: optional "ready"or "inprogress"or "error"
+status: optional "ready" or "inprogress" or "error"
 
 The status of a generated caption.
 

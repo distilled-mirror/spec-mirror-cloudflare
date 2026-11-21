@@ -68,7 +68,7 @@ GET/accounts/{account\_id}/vectorize/v2/indexes/{index\_name}/list
 
 <summary>
 
-CreateIndex object {config, created\_on, description, 2 more }
+CreateIndex object { config, created\_on, description, 2 more }
 
 </summary>
 
@@ -76,7 +76,7 @@ CreateIndex object {config, created\_on, description, 2 more }
 
 <summary>
 
-config: optional object {dimensions, metric, preset }
+config: optional object { dimensions, metric, preset }
 
 </summary>
 
@@ -94,7 +94,7 @@ minimum1
 
 <summary>
 
-metric: "cosine"or "euclidean"or "dot-product"
+metric: "cosine" or "euclidean" or "dot-product"
 
 Specifies the type of metric to use calculating distance.
 
@@ -122,7 +122,7 @@ One of the following:
 
 <summary>
 
-preset: optional "@cf/baai/bge-small-en-v1.5"or "@cf/baai/bge-base-en-v1.5"or "@cf/baai/bge-large-en-v1.5"or 2 more
+preset: optional "@cf/baai/bge-small-en-v1.5" or "@cf/baai/bge-base-en-v1.5" or "@cf/baai/bge-large-en-v1.5" or 2 more
 
 Specifies the preset to use for the index.
 
@@ -192,7 +192,7 @@ name: optional string
 
 <summary>
 
-IndexDeleteVectorsByID object {count, ids }
+IndexDeleteVectorsByID object { count, ids }
 
 </summary>
 
@@ -216,7 +216,7 @@ Array of vector identifiers of the vectors that were successfully processed for 
 
 <summary>
 
-IndexDimensionConfiguration object {dimensions, metric }
+IndexDimensionConfiguration object { dimensions, metric }
 
 </summary>
 
@@ -234,7 +234,7 @@ minimum1
 
 <summary>
 
-metric: "cosine"or "euclidean"or "dot-product"
+metric: "cosine" or "euclidean" or "dot-product"
 
 Specifies the type of metric to use calculating distance.
 
@@ -266,7 +266,7 @@ One of the following:
 
 <summary>
 
-IndexInsert object {count, ids }
+IndexInsert object { count, ids }
 
 </summary>
 
@@ -290,7 +290,7 @@ Array of vector identifiers of the vectors successfully inserted.
 
 <summary>
 
-IndexQuery object {count, matches }
+IndexQuery object { count, matches }
 
 </summary>
 
@@ -304,7 +304,7 @@ Specifies the count of vectors returned by the search
 
 <summary>
 
-matches: optional array of object {id, metadata, score, values }
+matches: optional array of object { id, metadata, score, values }
 
 Array of vectors matched by the search
 
@@ -344,7 +344,7 @@ values: optional array of number
 
 <summary>
 
-IndexUpsert object {count, ids }
+IndexUpsert object { count, ids }
 
 </summary>
 
@@ -368,7 +368,7 @@ Array of vector identifiers of the vectors successfully inserted.
 
 <summary>
 
-IndexDeleteResponse = unknownor string
+IndexDeleteResponse = unknown or string
 
 </summary>
 
@@ -390,7 +390,7 @@ string
 
 <summary>
 
-IndexInsertResponse object {mutationId }
+IndexInsertResponse object { mutationId }
 
 </summary>
 
@@ -412,7 +412,7 @@ maxLength36
 
 <summary>
 
-IndexQueryResponse object {count, matches }
+IndexQueryResponse object { count, matches }
 
 </summary>
 
@@ -426,7 +426,7 @@ Specifies the count of vectors returned by the search
 
 <summary>
 
-matches: optional array of object {id, metadata, namespace, 2 more }
+matches: optional array of object { id, metadata, namespace, 2 more }
 
 Array of vectors matched by the search
 
@@ -470,7 +470,7 @@ values: optional array of number
 
 <summary>
 
-IndexUpsertResponse object {mutationId }
+IndexUpsertResponse object { mutationId }
 
 </summary>
 
@@ -492,7 +492,7 @@ maxLength36
 
 <summary>
 
-IndexDeleteByIDsResponse object {mutationId }
+IndexDeleteByIDsResponse object { mutationId }
 
 </summary>
 
@@ -514,7 +514,7 @@ maxLength36
 
 <summary>
 
-IndexGetByIDsResponse object {id, metadata, namespace, values }
+IndexGetByIDsResponse object { id, metadata, namespace, values }
 
 </summary>
 
@@ -546,7 +546,7 @@ values: optional array of number
 
 <summary>
 
-IndexInfoResponse object {dimensions, processedUpToDatetime, processedUpToMutation, vectorCount }
+IndexInfoResponse object { dimensions, processedUpToDatetime, processedUpToMutation, vectorCount }
 
 </summary>
 
@@ -592,7 +592,7 @@ Specifies the number of vectors present in the index
 
 <summary>
 
-IndexListVectorsResponse object {count, isTruncated, totalCount, 3 more }
+IndexListVectorsResponse object { count, isTruncated, totalCount, 3 more }
 
 </summary>
 
@@ -618,7 +618,7 @@ Total number of vectors in the index
 
 <summary>
 
-vectors: array of object {id }
+vectors: array of object { id }
 
 Array of vector items
 
@@ -674,7 +674,7 @@ POST/accounts/{account\_id}/vectorize/v2/indexes/{index\_name}/metadata\_index/d
 
 <summary>
 
-MetadataIndexListResponse object {metadataIndexes }
+MetadataIndexListResponse object { metadataIndexes }
 
 </summary>
 
@@ -682,7 +682,7 @@ MetadataIndexListResponse object {metadataIndexes }
 
 <summary>
 
-metadataIndexes: optional array of object {indexType, propertyName }
+metadataIndexes: optional array of object { indexType, propertyName }
 
 Array of indexed metadata properties.
 
@@ -692,7 +692,7 @@ Array of indexed metadata properties.
 
 <summary>
 
-indexType: optional "string"or "number"or "boolean"
+indexType: optional "string" or "number" or "boolean"
 
 Specifies the type of indexed metadata property.
 
@@ -734,7 +734,7 @@ Specifies the indexed metadata property.
 
 <summary>
 
-MetadataIndexCreateResponse object {mutationId }
+MetadataIndexCreateResponse object { mutationId }
 
 </summary>
 
@@ -756,7 +756,7 @@ maxLength36
 
 <summary>
 
-MetadataIndexDeleteResponse object {mutationId }
+MetadataIndexDeleteResponse object { mutationId }
 
 </summary>
 

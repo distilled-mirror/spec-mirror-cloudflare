@@ -58,7 +58,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Browser Rendering Write``Browser Rendering Read`
+`Browser Run Metadata Read``AI Search Index Engine``Auto Rag Write Run Engine``Browser Run Write``Browser Run Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -82,7 +82,7 @@ formatuuid
 
 <summary>
 
-domains: array of object {domain, commands, dependencies, 3 more }
+domains: array of object { domain, commands, dependencies, 3 more }
 
 List of protocol domains.
 
@@ -132,7 +132,7 @@ Type definitions.
 
 <summary>
 
-version: optional object {major, minor }
+version: optional object { major, minor }
 
 Protocol version.
 

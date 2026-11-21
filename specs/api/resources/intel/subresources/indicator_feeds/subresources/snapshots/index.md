@@ -30,7 +30,7 @@ PUT/accounts/{account\_id}/intel/indicator-feeds/{feed\_id}/snapshot
 
 <summary>
 
-SnapshotUpdateResponse object {file\_id, filename, poll\_url, 2 more }
+SnapshotUpdateResponse object { file\_id, filename, poll\_url, 2 more }
 
 </summary>
 

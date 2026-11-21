@@ -134,7 +134,7 @@ Examples include `.us` nexus fields, `.uk` registrant type fields, and `.ca` leg
 
 <summary>
 
-contacts: optional object {administrator, billing, registrant, technical }
+contacts: optional object { administrator, billing, registrant, technical }
 
 Provides contact data for the registration request.
 
@@ -150,7 +150,7 @@ Without either a default address book entry or a registrant contact, the registr
 
 <summary>
 
-administrator: optional object {email, phone, postal\_info, fax }
+administrator: optional object { email, phone, postal\_info, fax }
 
 Optional administrator contact. Accepted only when the extension schema includes this role. When the registry requires an omitted contact, Cloudflare may derive it from <code>contacts.registrant</code>.
 
@@ -174,7 +174,7 @@ Phone number in E.164 format: <code>+{country_code}.{number}</code> without spac
 
 <summary>
 
-postal\_info: object {address, name, organization }
+postal\_info: object { address, name, organization }
 
 Postal/mailing information for the contact. The <code>name</code> field is the complete contact name in one string. Some registries require a complete personal name, including a family or last name where applicable, but this API does not accept separate first-name and last-name fields for registration contacts.
 
@@ -184,7 +184,7 @@ Postal/mailing information for the contact. The <code>name</code> field is the c
 
 <summary>
 
-address: object {city, country\_code, postal\_code, 2 more }
+address: object { city, country\_code, postal\_code, 2 more }
 
 Physical mailing address for the registrant contact.
 
@@ -254,7 +254,7 @@ Fax number in E.164 format (e.g., <code>+1.5555555555</code>). Optional. Most re
 
 <summary>
 
-billing: optional object {email, phone, postal\_info, fax }
+billing: optional object { email, phone, postal\_info, fax }
 
 Optional billing contact. Accepted only when the extension schema includes this role. When the registry requires an omitted contact, Cloudflare may derive it from <code>contacts.registrant</code>.
 
@@ -278,7 +278,7 @@ Phone number in E.164 format: <code>+{country_code}.{number}</code> without spac
 
 <summary>
 
-postal\_info: object {address, name, organization }
+postal\_info: object { address, name, organization }
 
 Postal/mailing information for the contact. The <code>name</code> field is the complete contact name in one string. Some registries require a complete personal name, including a family or last name where applicable, but this API does not accept separate first-name and last-name fields for registration contacts.
 
@@ -288,7 +288,7 @@ Postal/mailing information for the contact. The <code>name</code> field is the c
 
 <summary>
 
-address: object {city, country\_code, postal\_code, 2 more }
+address: object { city, country\_code, postal\_code, 2 more }
 
 Physical mailing address for the registrant contact.
 
@@ -358,7 +358,7 @@ Fax number in E.164 format (e.g., <code>+1.5555555555</code>). Optional. Most re
 
 <summary>
 
-registrant: optional object {email, phone, postal\_info, fax }
+registrant: optional object { email, phone, postal\_info, fax }
 
 Optional registrant contact. If omitted, the account’s default address book entry is used instead.
 
@@ -382,7 +382,7 @@ Phone number in E.164 format: <code>+{country_code}.{number}</code> without spac
 
 <summary>
 
-postal\_info: object {address, name, organization }
+postal\_info: object { address, name, organization }
 
 Postal/mailing information for the contact. The <code>name</code> field is the complete contact name in one string. Some registries require a complete personal name, including a family or last name where applicable, but this API does not accept separate first-name and last-name fields for registration contacts.
 
@@ -392,7 +392,7 @@ Postal/mailing information for the contact. The <code>name</code> field is the c
 
 <summary>
 
-address: object {city, country\_code, postal\_code, 2 more }
+address: object { city, country\_code, postal\_code, 2 more }
 
 Physical mailing address for the registrant contact.
 
@@ -462,7 +462,7 @@ Fax number in E.164 format (e.g., <code>+1.5555555555</code>). Optional. Most re
 
 <summary>
 
-technical: optional object {email, phone, postal\_info, fax }
+technical: optional object { email, phone, postal\_info, fax }
 
 Optional technical contact. Accepted only when the extension schema includes this role. When the registry requires an omitted contact, Cloudflare may derive it from <code>contacts.registrant</code>.
 
@@ -486,7 +486,7 @@ Phone number in E.164 format: <code>+{country_code}.{number}</code> without spac
 
 <summary>
 
-postal\_info: object {address, name, organization }
+postal\_info: object { address, name, organization }
 
 Postal/mailing information for the contact. The <code>name</code> field is the complete contact name in one string. Some registries require a complete personal name, including a family or last name where applicable, but this API does not accept separate first-name and last-name fields for registration contacts.
 
@@ -496,7 +496,7 @@ Postal/mailing information for the contact. The <code>name</code> field is the c
 
 <summary>
 
-address: object {city, country\_code, postal\_code, 2 more }
+address: object { city, country\_code, postal\_code, 2 more }
 
 Physical mailing address for the registrant contact.
 
@@ -570,7 +570,7 @@ Fax number in E.164 format (e.g., <code>+1.5555555555</code>). Optional. Most re
 
 <summary>
 
-privacy\_mode: optional "off"or "redaction"
+privacy\_mode: optional "off" or "redaction"
 
 WHOIS privacy mode to apply after transfer completes. Defaults to the extension’s default privacy mode (typically <code>redaction</code>).
 
@@ -596,7 +596,7 @@ One of the following:
 
 <summary>
 
-errors: array of object {code, message, source }
+errors: array of object { code, message, source }
 
 </summary>
 
@@ -614,7 +614,7 @@ message: string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 Location of the invalid value that caused the error.
 
@@ -638,7 +638,7 @@ JSON Pointer to the invalid or missing request value.
 
 <summary>
 
-messages: array of object {code, message, source }
+messages: array of object { code, message, source }
 
 </summary>
 
@@ -656,7 +656,7 @@ message: string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 Location of the invalid value that caused the error.
 
@@ -702,7 +702,7 @@ formatdate-time
 
 <summary>
 
-links: object {self, resource }
+links: object { self, resource }
 
 </summary>
 
@@ -726,7 +726,7 @@ URL to the domain resource.
 
 <summary>
 
-state: "pending"or "in\_progress"or "action\_required"or 3 more
+state: "pending" or "in\_progress" or "action\_required" or 3 more
 
 Describes the workflow lifecycle state.
 
@@ -787,7 +787,7 @@ For domain-centric workflows, <code>context.domain_name</code> identifies the wo
 
 <summary>
 
-error: optional object {code, message }
+error: optional object { code, message }
 
 Provides error details when a workflow reaches the <code>failed</code> state. The workflow type (registration, update, etc.) and underlying registry response determine the specific codes and messages. Workflow error codes differ from immediate HTTP error <code>errors[].code</code> values in non-2xx responses. Surface <code>error.message</code> to the user for context.
 

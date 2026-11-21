@@ -46,7 +46,7 @@ DELETE/accounts/{account\_id}/secondary\_dns/acls/{acl\_id}
 
 <summary>
 
-ACL object {id, ip\_range, name }
+ACL object { id, ip\_range, name }
 
 </summary>
 
@@ -74,7 +74,7 @@ The name of the acl.
 
 <summary>
 
-ACLDeleteResponse object {id }
+ACLDeleteResponse object { id }
 
 </summary>
 

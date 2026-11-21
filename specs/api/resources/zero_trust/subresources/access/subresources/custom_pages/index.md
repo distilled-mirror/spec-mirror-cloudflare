@@ -50,7 +50,7 @@ DELETE/accounts/{account\_id}/access/custom\_pages/{custom\_page\_id}
 
 <summary>
 
-CustomPage object {custom\_html, name, type, 2 more }
+CustomPage object { custom\_html, name, type, 2 more }
 
 </summary>
 
@@ -70,7 +70,7 @@ Custom page name.
 
 <summary>
 
-type: "identity\_denied"or "forbidden"or "login"or "interstitial"
+type: "identity\_denied" or "forbidden" or "login" or "interstitial"
 
 Custom page type.
 
@@ -120,7 +120,7 @@ maxLength36
 
 <summary>
 
-CustomPageWithoutHTML object {name, type, contract\_version, 2 more }
+CustomPageWithoutHTML object { name, type, contract\_version, 2 more }
 
 </summary>
 
@@ -134,7 +134,7 @@ Custom page name.
 
 <summary>
 
-type: "identity\_denied"or "forbidden"or "login"or "interstitial"
+type: "identity\_denied" or "forbidden" or "login" or "interstitial"
 
 Custom page type.
 
@@ -180,7 +180,7 @@ maxLength36
 
 <summary>
 
-warnings: optional array of object {message, tier, ref }
+warnings: optional array of object { message, tier, ref }
 
 Advisory validation findings returned when creating or updating a template. Omitted when empty.
 
@@ -216,7 +216,7 @@ Optional pointer to the part of the template the finding refers to.
 
 <summary>
 
-CustomPageValidateResponse object {errors, page\_type, version, warnings }
+CustomPageValidateResponse object { errors, page\_type, version, warnings }
 
 The result of validating a template’s content.
 
@@ -226,7 +226,7 @@ The result of validating a template’s content.
 
 <summary>
 
-errors: array of object {message, tier, ref }
+errors: array of object { message, tier, ref }
 
 Blocking findings; a non-empty list means the template cannot be published.
 
@@ -258,7 +258,7 @@ Optional pointer to the part of the template the finding refers to.
 
 <summary>
 
-page\_type: "identity\_denied"or "forbidden"or "login"or "interstitial"
+page\_type: "identity\_denied" or "forbidden" or "login" or "interstitial"
 
 Custom page type.
 
@@ -296,7 +296,7 @@ The contract version the template was validated against.
 
 <summary>
 
-warnings: array of object {message, tier, ref }
+warnings: array of object { message, tier, ref }
 
 Advisory findings that do not block publishing.
 
@@ -332,7 +332,7 @@ Optional pointer to the part of the template the finding refers to.
 
 <summary>
 
-CustomPageDeleteResponse object {id }
+CustomPageDeleteResponse object { id }
 
 </summary>
 

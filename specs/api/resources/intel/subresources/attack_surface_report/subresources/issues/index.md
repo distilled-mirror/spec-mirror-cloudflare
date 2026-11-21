@@ -50,7 +50,7 @@ GET/accounts/{account\_id}/intel/attack-surface-report/issues/type
 
 <summary>
 
-IssueType = "compliance\_violation"or "email\_security"or "exposed\_infrastructure"or 3 more
+IssueType = "compliance\_violation" or "email\_security" or "exposed\_infrastructure" or 3 more
 
 </summary>
 
@@ -88,7 +88,7 @@ One of the following:
 
 <summary>
 
-SeverityQueryParam = "low"or "moderate"or "critical"
+SeverityQueryParam = "low" or "moderate" or "critical"
 
 </summary>
 
@@ -114,7 +114,7 @@ One of the following:
 
 <summary>
 
-IssueListResponse object {count, issues, page, per\_page }
+IssueListResponse object { count, issues, page, per\_page }
 
 </summary>
 
@@ -128,7 +128,7 @@ Indicates the total number of results.
 
 <summary>
 
-issues: optional array of object {id, dismissed, has\_extended\_context, 12 more }
+issues: optional array of object { id, dismissed, has\_extended\_context, 12 more }
 
 </summary>
 
@@ -158,7 +158,7 @@ issue\_type: optional <a href="https://developers.cloudflare.com/api/resources/i
 
 <summary>
 
-payload: optional object {detection\_method, zone\_tag }
+payload: optional object { detection\_method, zone\_tag }
 
 </summary>
 
@@ -188,7 +188,7 @@ resolve\_text: optional string
 
 <summary>
 
-severity: optional "Low"or "Moderate"or "Critical"
+severity: optional "Low" or "Moderate" or "Critical"
 
 </summary>
 
@@ -220,7 +220,7 @@ formatdate-time
 
 <summary>
 
-source: optional "cloudflare"or "riskrecon"
+source: optional "cloudflare" or "riskrecon"
 
 Who generated the insight. <code>cloudflare</code> for Cloudflare-generated insights, otherwise the partner.
 
@@ -244,7 +244,7 @@ One of the following:
 
 <summary>
 
-status: optional "active"or "resolved"
+status: optional "active" or "resolved"
 
 The current status of the insight.
 
@@ -278,7 +278,7 @@ formatdate-time
 
 <summary>
 
-user\_classification: optional "false\_positive"or "accept\_risk"or "other"
+user\_classification: optional "false\_positive" or "accept\_risk" or "other"
 
 User-defined classification for the insight. Can be ‘false\_positive’, ‘accept\_risk’, ‘other’, or null.
 
@@ -330,7 +330,7 @@ minimum1
 
 <summary>
 
-IssueClassResponse = array of object {count, value }
+IssueClassResponse = array of object { count, value }
 
 </summary>
 
@@ -350,7 +350,7 @@ value: optional string
 
 <summary>
 
-IssueSeverityResponse = array of object {count, value }
+IssueSeverityResponse = array of object { count, value }
 
 </summary>
 
@@ -370,7 +370,7 @@ value: optional string
 
 <summary>
 
-IssueTypeResponse = array of object {count, value }
+IssueTypeResponse = array of object { count, value }
 
 </summary>
 

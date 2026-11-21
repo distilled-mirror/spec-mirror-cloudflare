@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`D1 Read``D1 Write`
+`D1 Metadata Read``AI Search Index Engine``D1 Read``D1 Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -80,7 +80,7 @@ D1 database identifier (UUID).
 
 <summary>
 
-body: object {sql, params } or object {batch }
+body: object { sql, params } or object { batch }
 
 A single query object or a batch query object
 
@@ -92,7 +92,7 @@ One of the following:
 
 <summary>
 
-D1SingleQuery object {sql, params }
+D1SingleQuery object { sql, params }
 
 A single query with or without parameters
 
@@ -116,7 +116,7 @@ params: optional array of string
 
 <summary>
 
-MultipleQueries object {batch }
+MultipleQueries object { batch }
 
 </summary>
 
@@ -124,7 +124,7 @@ MultipleQueries object {batch }
 
 <summary>
 
-batch: array of object {sql, params }
+batch: array of object { sql, params }
 
 </summary>
 
@@ -178,7 +178,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -220,7 +220,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -248,7 +248,7 @@ result: array of <a href="https://developers.cloudflare.com/api/resources/d1#(re
 
 <summary>
 
-meta: optional object {changed\_db, changes, duration, 8 more }
+meta: optional object { changed\_db, changes, duration, 8 more }
 
 </summary>
 
@@ -304,7 +304,7 @@ Denotes if the query has been handled by the database primary instance.
 
 <summary>
 
-served\_by\_region: optional "WNAM"or "ENAM"or "WEUR"or 3 more
+served\_by\_region: optional "WNAM" or "ENAM" or "WEUR" or 3 more
 
 Region location hint of the database instance that handled the query.
 
@@ -350,7 +350,7 @@ Size of the database after the query committed, in bytes.
 
 <summary>
 
-timings: optional object {sql\_duration\_ms }
+timings: optional object { sql\_duration\_ms }
 
 Various durations for the query.
 

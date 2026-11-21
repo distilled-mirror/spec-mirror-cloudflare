@@ -30,7 +30,7 @@ PATCH/accounts/{account\_id}/workflows/{workflow\_name}/instances/{instance\_id}
 
 <summary>
 
-StatusEditResponse object {status, timestamp }
+StatusEditResponse object { status, timestamp }
 
 </summary>
 
@@ -38,7 +38,7 @@ StatusEditResponse object {status, timestamp }
 
 <summary>
 
-status: "queued"or "running"or "paused"or 6 more
+status: "queued" or "running" or "paused" or 6 more
 
 </summary>
 

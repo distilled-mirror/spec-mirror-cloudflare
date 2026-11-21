@@ -38,7 +38,7 @@ The identifier of the caching setting.
 
 <summary>
 
-RegionalTieredCacheGetResponse object {id, editable, value, modified\_on }
+RegionalTieredCacheGetResponse object { id, editable, value, modified\_on }
 
 </summary>
 
@@ -58,7 +58,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: "on"or "off"
+value: "on" or "off"
 
 Value of the Regional Tiered Cache zone setting.
 
@@ -94,7 +94,7 @@ formatdate-time
 
 <summary>
 
-RegionalTieredCacheEditResponse object {id, editable, value, modified\_on }
+RegionalTieredCacheEditResponse object { id, editable, value, modified\_on }
 
 </summary>
 
@@ -114,7 +114,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: "on"or "off"
+value: "on" or "off"
 
 Value of the Regional Tiered Cache zone setting.
 

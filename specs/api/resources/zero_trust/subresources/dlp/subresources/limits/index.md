@@ -30,7 +30,7 @@ GET/accounts/{account\_id}/dlp/limits
 
 <summary>
 
-LimitListResponse object {max\_custom\_regex\_entries, max\_dataset\_cells, max\_document\_fingerprints, 3 more }
+LimitListResponse object { max\_custom\_regex\_entries, max\_dataset\_cells, max\_document\_fingerprints, 3 more }
 
 </summary>
 

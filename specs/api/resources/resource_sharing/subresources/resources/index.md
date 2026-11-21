@@ -44,7 +44,7 @@ DELETE/accounts/{account\_id}/shares/{share\_id}/resources/{share\_resource\_id}
 
 <summary>
 
-ResourceListResponse object {id, created, meta, 6 more }
+ResourceListResponse object { id, created, meta, 6 more }
 
 </summary>
 
@@ -100,7 +100,7 @@ Identifier assigned by the service that owns the shared resource.
 
 <summary>
 
-resource\_type: "custom-ruleset"or "gateway-policy"or "gateway-destination-ip"or 4 more
+resource\_type: "custom-ruleset" or "gateway-policy" or "gateway-destination-ip" or 4 more
 
 Resource Type.
 
@@ -150,7 +150,7 @@ Resource Version.
 
 <summary>
 
-status: "active"or "deleting"or "deleted"
+status: "active" or "deleting" or "deleted"
 
 Resource Status.
 
@@ -182,7 +182,7 @@ One of the following:
 
 <summary>
 
-ResourceGetResponse object {id, created, meta, 6 more }
+ResourceGetResponse object { id, created, meta, 6 more }
 
 </summary>
 
@@ -238,7 +238,7 @@ Identifier assigned by the service that owns the shared resource.
 
 <summary>
 
-resource\_type: "custom-ruleset"or "gateway-policy"or "gateway-destination-ip"or 4 more
+resource\_type: "custom-ruleset" or "gateway-policy" or "gateway-destination-ip" or 4 more
 
 Resource Type.
 
@@ -288,7 +288,7 @@ Resource Version.
 
 <summary>
 
-status: "active"or "deleting"or "deleted"
+status: "active" or "deleting" or "deleted"
 
 Resource Status.
 
@@ -320,7 +320,7 @@ One of the following:
 
 <summary>
 
-ResourceCreateResponse object {id, created, meta, 6 more }
+ResourceCreateResponse object { id, created, meta, 6 more }
 
 </summary>
 
@@ -376,7 +376,7 @@ Identifier assigned by the service that owns the shared resource.
 
 <summary>
 
-resource\_type: "custom-ruleset"or "gateway-policy"or "gateway-destination-ip"or 4 more
+resource\_type: "custom-ruleset" or "gateway-policy" or "gateway-destination-ip" or 4 more
 
 Resource Type.
 
@@ -426,7 +426,7 @@ Resource Version.
 
 <summary>
 
-status: "active"or "deleting"or "deleted"
+status: "active" or "deleting" or "deleted"
 
 Resource Status.
 
@@ -458,7 +458,7 @@ One of the following:
 
 <summary>
 
-ResourceUpdateResponse object {id, created, meta, 6 more }
+ResourceUpdateResponse object { id, created, meta, 6 more }
 
 </summary>
 
@@ -514,7 +514,7 @@ Identifier assigned by the service that owns the shared resource.
 
 <summary>
 
-resource\_type: "custom-ruleset"or "gateway-policy"or "gateway-destination-ip"or 4 more
+resource\_type: "custom-ruleset" or "gateway-policy" or "gateway-destination-ip" or 4 more
 
 Resource Type.
 
@@ -564,7 +564,7 @@ Resource Version.
 
 <summary>
 
-status: "active"or "deleting"or "deleted"
+status: "active" or "deleting" or "deleted"
 
 Resource Status.
 
@@ -596,7 +596,7 @@ One of the following:
 
 <summary>
 
-ResourceDeleteResponse object {id, created, meta, 6 more }
+ResourceDeleteResponse object { id, created, meta, 6 more }
 
 </summary>
 
@@ -652,7 +652,7 @@ Identifier assigned by the service that owns the shared resource.
 
 <summary>
 
-resource\_type: "custom-ruleset"or "gateway-policy"or "gateway-destination-ip"or 4 more
+resource\_type: "custom-ruleset" or "gateway-policy" or "gateway-destination-ip" or 4 more
 
 Resource Type.
 
@@ -702,7 +702,7 @@ Resource Version.
 
 <summary>
 
-status: "active"or "deleting"or "deleted"
+status: "active" or "deleting" or "deleted"
 
 Resource Status.
 

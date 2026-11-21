@@ -42,7 +42,7 @@ POST/accounts/{account\_id}/magic/advanced\_tcp\_protection/configs/prefixes/bul
 
 <summary>
 
-PrefixListResponse object {id, comment, created\_on, 3 more }
+PrefixListResponse object { id, comment, created\_on, 3 more }
 
 </summary>
 
@@ -94,7 +94,7 @@ The prefix in CIDR format.
 
 <summary>
 
-PrefixCreateResponse object {id, comment, created\_on, 3 more }
+PrefixCreateResponse object { id, comment, created\_on, 3 more }
 
 </summary>
 
@@ -146,7 +146,7 @@ The prefix in CIDR format.
 
 <summary>
 
-PrefixBulkDeleteResponse object {errors, messages, success }
+PrefixBulkDeleteResponse object { errors, messages, success }
 
 </summary>
 
@@ -154,7 +154,7 @@ PrefixBulkDeleteResponse object {errors, messages, success }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -176,7 +176,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -196,7 +196,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -218,7 +218,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -248,7 +248,7 @@ Whether the API call was successful.
 
 <summary>
 
-PrefixBulkCreateResponse object {id, comment, created\_on, 3 more }
+PrefixBulkCreateResponse object { id, comment, created\_on, 3 more }
 
 </summary>
 
@@ -316,7 +316,7 @@ DELETE/accounts/{account\_id}/magic/advanced\_tcp\_protection/configs/prefixes/{
 
 <summary>
 
-ItemGetResponse object {id, comment, created\_on, 3 more }
+ItemGetResponse object { id, comment, created\_on, 3 more }
 
 </summary>
 
@@ -368,7 +368,7 @@ The prefix in CIDR format.
 
 <summary>
 
-ItemEditResponse object {id, comment, created\_on, 3 more }
+ItemEditResponse object { id, comment, created\_on, 3 more }
 
 </summary>
 
@@ -420,7 +420,7 @@ The prefix in CIDR format.
 
 <summary>
 
-ItemDeleteResponse object {errors, messages, success }
+ItemDeleteResponse object { errors, messages, success }
 
 </summary>
 
@@ -428,7 +428,7 @@ ItemDeleteResponse object {errors, messages, success }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -450,7 +450,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -470,7 +470,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -492,7 +492,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 

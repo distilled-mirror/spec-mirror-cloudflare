@@ -56,6 +56,10 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 </details>
 
+##### Accepted Permissions (at least one required)
+
+`Zero Trust Read``Zero Trust Write`
+
 ##### P ath ParametersExpand Collapse
 
 account\_id: string
@@ -102,7 +106,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -144,7 +148,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -178,7 +182,7 @@ result: optional <a href="https://developers.cloudflare.com/api/resources/zero_t
 
 <summary>
 
-action: "on"or "off"or "allow"or 14 more
+action: "on" or "off" or "allow" or 14 more
 
 Specify the action to perform when the associated traffic, identity, and device posture expressions either absent or evaluate to <code>true</code>.
 
@@ -358,7 +362,7 @@ Specify the wirefilter expression used for device posture check. The API automat
 
 <summary>
 
-expiration: optional object {expires\_at, duration, expired }
+expiration: optional object { expires\_at, duration, expired }
 
 Defines the expiration time stamp and default duration of a DNS policy. Takes precedence over the policy’s <code>schedule</code> configuration, if any. This does not apply to HTTP or network policies. Settable only for <code>dns</code> rules.
 
@@ -428,7 +432,7 @@ Set to enable MSP children to bypass this rule. Only parent MSP accounts can set
 
 <summary>
 
-biso\_admin\_controls: optional object {copy, dcp, dd, 10 more }
+biso\_admin\_controls: optional object { copy, dcp, dd, 10 more }
 
 Configure browser isolation behavior. Settable only for <code>http</code> rules with the action set to <code>isolate</code>.
 
@@ -438,7 +442,7 @@ Configure browser isolation behavior. Settable only for <code>http</code> rules 
 
 <summary>
 
-copy: optional "enabled"or "disabled"or "remote\_only"
+copy: optional "enabled" or "disabled" or "remote\_only"
 
 Configure copy behavior. If set to remote\_only, users cannot copy isolated content from the remote browser to the local clipboard. If this field is absent, copying remains enabled. Applies only when version == “v2”.
 
@@ -484,7 +488,7 @@ Set to false to enable keyboard usage. Only applies when <code>version == "v1"</
 
 <summary>
 
-download: optional "enabled"or "disabled"or "remote\_only"
+download: optional "enabled" or "disabled" or "remote\_only"
 
 Configure download behavior. When set to remote\_only, users can view downloads but cannot save them. If this field is absent, downloading remains enabled. Applies only when version == “v2”.
 
@@ -524,7 +528,7 @@ Set to false to enable uploading. Only applies when <code>version == "v1"</code>
 
 <summary>
 
-keyboard: optional "enabled"or "disabled"or "enable\_read\_only\_actions"
+keyboard: optional "enabled" or "disabled" or "enable\_read\_only\_actions"
 
 Configure keyboard usage behavior. When set to enable\_read\_only\_actions, only approved browser commands (find, copy, print, zoom, and select-all) may execute; other keyboard input is blocked from reaching the page. Copy and print remain subject to their independent controls. If this field is absent, keyboard usage remains enabled. Applies only when version == “v2”. The enable\_read\_only\_actions value requires an explicit version of “v2”.
 
@@ -552,7 +556,7 @@ One of the following:
 
 <summary>
 
-paste: optional "enabled"or "disabled"or "remote\_only"
+paste: optional "enabled" or "disabled" or "remote\_only"
 
 Configure paste behavior. If set to remote\_only, users cannot paste content from the local clipboard into isolated pages. If this field is absent, pasting remains enabled. Applies only when version == “v2”.
 
@@ -580,7 +584,7 @@ One of the following:
 
 <summary>
 
-printing: optional "enabled"or "disabled"
+printing: optional "enabled" or "disabled"
 
 Configure print behavior. Default, Printing is enabled. Applies only when version == “v2”.
 
@@ -604,7 +608,7 @@ One of the following:
 
 <summary>
 
-upload: optional "enabled"or "disabled"
+upload: optional "enabled" or "disabled"
 
 Configure upload behavior. If this field is absent, uploading remains enabled. Applies only when version == “v2”.
 
@@ -628,7 +632,7 @@ One of the following:
 
 <summary>
 
-version: optional "v1"or "v2"
+version: optional "v1" or "v2"
 
 Indicate which version of the browser isolation controls should apply.
 
@@ -668,7 +672,7 @@ minLength1
 
 <summary>
 
-block\_page: optional object {target\_uri, include\_context }
+block\_page: optional object { target\_uri, include\_context }
 
 Configure custom block page settings. If missing or null, use the account settings. Settable only for <code>http</code> rules with the action set to <code>block</code>.
 
@@ -714,7 +718,7 @@ Set to enable MSP accounts to bypass their parent’s rules. Only MSP child acco
 
 <summary>
 
-check\_session: optional object {duration, enforce }
+check\_session: optional object { duration, enforce }
 
 Configure session check behavior. Settable only for <code>l4</code> and <code>http</code> rules with the action set to <code>allow</code>.
 
@@ -746,7 +750,7 @@ Remove headers from allowed requests by name. A maximum of 20 header operations 
 
 <summary>
 
-dns\_resolvers: optional object {ipv4, ipv6 }
+dns\_resolvers: optional object { ipv4, ipv6 }
 
 Configure custom resolvers to route queries that match the resolver policy. Unused with ‘resolve\_dns\_through\_cloudflare’ or ‘resolve\_dns\_internally’ settings. DNS queries get routed to the address closest to their origin. Only valid when a rule’s action set to ‘resolve’. Settable only for <code>dns_resolver</code> rules.
 
@@ -832,7 +836,7 @@ Specify an optional virtual network for this resolver. Uses default virtual netw
 
 <summary>
 
-egress: optional object {ipv4, ipv4\_fallback, ipv6 }
+egress: optional object { ipv4, ipv4\_fallback, ipv6 }
 
 Configure how Gateway Proxy traffic egresses. You can enable this setting for rules with Egress actions and filters, or omit it to indicate local egress via WARP IPs. Settable only for <code>egress</code> rules.
 
@@ -864,7 +868,7 @@ Specify the IPv6 range to use for egress.
 
 <summary>
 
-forensic\_copy: optional object {enabled }
+forensic\_copy: optional object { enabled }
 
 Configure whether a copy of the HTTP request will be sent to storage when the rule matches.
 
@@ -884,7 +888,7 @@ Enable sending the copy to storage.
 
 <summary>
 
-forward: optional object {worker\_id }
+forward: optional object { worker\_id }
 
 Forward matching HTTP requests to a Worker. Required for <code>http</code> rules with the action set to <code>forward</code>.
 
@@ -928,7 +932,7 @@ Indicates whether to include IPs in DNS resolver indicator feed blocks. Default,
 
 <summary>
 
-l4override: optional object {ip, port }
+l4override: optional object { ip, port }
 
 Send matching traffic to the supplied destination IP address and port. Settable only for <code>l4</code> rules with the action set to <code>l4_override</code>.
 
@@ -954,7 +958,7 @@ Defines a port number to use for TCP/UDP overrides.
 
 <summary>
 
-notification\_settings: optional object {enabled, include\_context, msg, support\_url }
+notification\_settings: optional object { enabled, include\_context, msg, support\_url }
 
 Configure a notification to display on the user’s device when this rule matched. Settable for all types of rules with the action set to <code>block</code>.
 
@@ -1004,7 +1008,7 @@ Defines a an IP or set of IPs for overriding matched DNS queries. Settable only 
 
 <summary>
 
-payload\_log: optional object {enabled }
+payload\_log: optional object { enabled }
 
 Configure DLP payload logging. Settable only for <code>http</code> rules.
 
@@ -1024,7 +1028,7 @@ Enable DLP payload logging for this rule.
 
 <summary>
 
-quarantine: optional object {file\_types }
+quarantine: optional object { file\_types }
 
 Configure settings that apply to quarantine rules. Settable only for <code>http</code> rules.
 
@@ -1034,7 +1038,7 @@ Configure settings that apply to quarantine rules. Settable only for <code>http<
 
 <summary>
 
-file\_types: optional array of "exe"or "pdf"or "doc"or 10 more
+file\_types: optional array of "exe" or "pdf" or "doc" or 10 more
 
 Specify the types of files to sandbox.
 
@@ -1106,7 +1110,7 @@ One of the following:
 
 <summary>
 
-redirect: optional object {target\_uri, include\_context, preserve\_path\_and\_query }
+redirect: optional object { target\_uri, include\_context, preserve\_path\_and\_query }
 
 Apply settings to redirect rules. Settable only for <code>http</code> rules with the action set to <code>redirect</code>.
 
@@ -1140,7 +1144,7 @@ Specify whether to append the path and query parameters from the original reques
 
 <summary>
 
-resolve\_dns\_internally: optional object {fallback, view\_id }
+resolve\_dns\_internally: optional object { fallback, view\_id }
 
 Configure to forward the query to the internal DNS service, passing the specified ‘view\_id’ as input. Not used when ‘dns\_resolvers’ is specified or ‘resolve\_dns\_through\_cloudflare’ is set. Only valid when a rule’s action set to ‘resolve’. Settable only for <code>dns_resolver</code> rules.
 
@@ -1150,7 +1154,7 @@ Configure to forward the query to the internal DNS service, passing the specifie
 
 <summary>
 
-fallback: optional "none"or "public\_dns"
+fallback: optional "none" or "public\_dns"
 
 Specify the fallback behavior to apply when the internal DNS response code differs from ‘NOERROR’ or when the response data contains only CNAME records for ‘A’ or ‘AAAA’ queries.
 
@@ -1196,7 +1200,7 @@ Replace existing headers on allowed requests with the specified key-value pairs.
 
 <summary>
 
-untrusted\_cert: optional object {action }
+untrusted\_cert: optional object { action }
 
 Configure behavior when an upstream certificate is invalid or an SSL error occurs. Settable only for <code>http</code> rules with the action set to <code>allow</code>.
 
@@ -1206,7 +1210,7 @@ Configure behavior when an upstream certificate is invalid or an SSL error occur
 
 <summary>
 
-action: optional "pass\_through"or "block"or "error"
+action: optional "pass\_through" or "block" or "error"
 
 Defines the action performed when an untrusted certificate seen. The default action an error with HTTP code 526.
 

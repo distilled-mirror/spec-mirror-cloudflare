@@ -46,7 +46,7 @@ DELETE/accounts/{account\_id}/email-security/settings/sending\_domain\_restricti
 
 <summary>
 
-SendingDomainRestrictionListResponse object {id, comments, created\_at, 4 more }
+SendingDomainRestrictionListResponse object { id, comments, created\_at, 4 more }
 
 A sending domain restriction that enforces TLS (Transport Layer Security) requirements for emails from specific domains. If TLS is required, the system drops mail without TLS from the specified domain.
 
@@ -108,7 +108,7 @@ formatdate-time
 
 <summary>
 
-SendingDomainRestrictionGetResponse object {id, comments, created\_at, 4 more }
+SendingDomainRestrictionGetResponse object { id, comments, created\_at, 4 more }
 
 A sending domain restriction that enforces TLS (Transport Layer Security) requirements for emails from specific domains. If TLS is required, the system drops mail without TLS from the specified domain.
 
@@ -170,7 +170,7 @@ formatdate-time
 
 <summary>
 
-SendingDomainRestrictionCreateResponse object {id, comments, created\_at, 4 more }
+SendingDomainRestrictionCreateResponse object { id, comments, created\_at, 4 more }
 
 A sending domain restriction that enforces TLS (Transport Layer Security) requirements for emails from specific domains. If TLS is required, the system drops mail without TLS from the specified domain.
 
@@ -232,7 +232,7 @@ formatdate-time
 
 <summary>
 
-SendingDomainRestrictionEditResponse object {id, comments, created\_at, 4 more }
+SendingDomainRestrictionEditResponse object { id, comments, created\_at, 4 more }
 
 A sending domain restriction that enforces TLS (Transport Layer Security) requirements for emails from specific domains. If TLS is required, the system drops mail without TLS from the specified domain.
 
@@ -294,7 +294,7 @@ formatdate-time
 
 <summary>
 
-SendingDomainRestrictionDeleteResponse object {id }
+SendingDomainRestrictionDeleteResponse object { id }
 
 </summary>
 

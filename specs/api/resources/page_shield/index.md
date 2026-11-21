@@ -30,7 +30,7 @@ PUT/zones/{zone\_id}/page\_shield
 
 <summary>
 
-PageShieldGetResponse object {enabled, updated\_at, use\_cloudflare\_reporting\_endpoint, use\_connection\_url\_path }
+PageShieldGetResponse object { enabled, updated\_at, use\_cloudflare\_reporting\_endpoint, use\_connection\_url\_path }
 
 </summary>
 
@@ -66,7 +66,7 @@ When true, the paths associated with connections URLs will also be analyzed.
 
 <summary>
 
-PageShieldUpdateResponse object {enabled, updated\_at, use\_cloudflare\_reporting\_endpoint, use\_connection\_url\_path }
+PageShieldUpdateResponse object { enabled, updated\_at, use\_cloudflare\_reporting\_endpoint, use\_connection\_url\_path }
 
 </summary>
 
@@ -126,7 +126,7 @@ DELETE/zones/{zone\_id}/page\_shield/policies/{policy\_id}
 
 <summary>
 
-PolicyListResponse object {id, action, description, 3 more }
+PolicyListResponse object { id, action, description, 3 more }
 
 </summary>
 
@@ -142,7 +142,7 @@ maxLength32
 
 <summary>
 
-action: "allow"or "log"or "add\_reporting\_directives"
+action: "allow" or "log" or "add\_reporting\_directives"
 
 The action to take if the expression matches
 
@@ -198,7 +198,7 @@ The policy which will be applied
 
 <summary>
 
-PolicyGetResponse object {id, action, description, 3 more }
+PolicyGetResponse object { id, action, description, 3 more }
 
 </summary>
 
@@ -214,7 +214,7 @@ maxLength32
 
 <summary>
 
-action: "allow"or "log"or "add\_reporting\_directives"
+action: "allow" or "log" or "add\_reporting\_directives"
 
 The action to take if the expression matches
 
@@ -270,7 +270,7 @@ The policy which will be applied
 
 <summary>
 
-PolicyCreateResponse object {id, action, description, 3 more }
+PolicyCreateResponse object { id, action, description, 3 more }
 
 </summary>
 
@@ -286,7 +286,7 @@ maxLength32
 
 <summary>
 
-action: "allow"or "log"or "add\_reporting\_directives"
+action: "allow" or "log" or "add\_reporting\_directives"
 
 The action to take if the expression matches
 
@@ -342,7 +342,7 @@ The policy which will be applied
 
 <summary>
 
-PolicyUpdateResponse object {id, action, description, 3 more }
+PolicyUpdateResponse object { id, action, description, 3 more }
 
 </summary>
 
@@ -358,7 +358,7 @@ maxLength32
 
 <summary>
 
-action: "allow"or "log"or "add\_reporting\_directives"
+action: "allow" or "log" or "add\_reporting\_directives"
 
 The action to take if the expression matches
 
@@ -426,7 +426,7 @@ GET/zones/{zone\_id}/page\_shield/connections/{connection\_id}
 
 <summary>
 
-ConnectionListResponse object {id, added\_at, first\_seen\_at, 10 more }
+ConnectionListResponse object { id, added\_at, first\_seen\_at, 10 more }
 
 </summary>
 
@@ -500,7 +500,7 @@ url\_reported\_malicious: optional boolean
 
 <summary>
 
-ConnectionGetResponse object {id, added\_at, first\_seen\_at, 10 more }
+ConnectionGetResponse object { id, added\_at, first\_seen\_at, 10 more }
 
 </summary>
 
@@ -586,7 +586,7 @@ GET/zones/{zone\_id}/page\_shield/scripts/{script\_id}
 
 <summary>
 
-ScriptListResponse object {id, added\_at, first\_seen\_at, 18 more }
+ScriptListResponse object { id, added\_at, first\_seen\_at, 18 more }
 
 </summary>
 
@@ -736,7 +736,7 @@ url\_reported\_malicious: optional boolean
 
 <summary>
 
-ScriptGetResponse object {id, added\_at, first\_seen\_at, 19 more }
+ScriptGetResponse object { id, added\_at, first\_seen\_at, 19 more }
 
 </summary>
 
@@ -882,7 +882,7 @@ url\_reported\_malicious: optional boolean
 
 <summary>
 
-versions: optional array of object {cryptomining\_score, dataflow\_score, fetched\_at, 5 more }
+versions: optional array of object { cryptomining\_score, dataflow\_score, fetched\_at, 5 more }
 
 </summary>
 
@@ -986,7 +986,7 @@ GET/zones/{zone\_id}/page\_shield/cookies/{cookie\_id}
 
 <summary>
 
-CookieListResponse object {id, first\_seen\_at, host, 11 more }
+CookieListResponse object { id, first\_seen\_at, host, 11 more }
 
 </summary>
 
@@ -1022,7 +1022,7 @@ name: string
 
 <summary>
 
-type: "first\_party"or "unknown"
+type: "first\_party" or "unknown"
 
 </summary>
 
@@ -1070,7 +1070,7 @@ path\_attribute: optional string
 
 <summary>
 
-same\_site\_attribute: optional "lax"or "strict"or "none"
+same\_site\_attribute: optional "lax" or "strict" or "none"
 
 </summary>
 
@@ -1104,7 +1104,7 @@ secure\_attribute: optional boolean
 
 <summary>
 
-CookieGetResponse object {id, first\_seen\_at, host, 11 more }
+CookieGetResponse object { id, first\_seen\_at, host, 11 more }
 
 </summary>
 
@@ -1140,7 +1140,7 @@ name: string
 
 <summary>
 
-type: "first\_party"or "unknown"
+type: "first\_party" or "unknown"
 
 </summary>
 
@@ -1188,7 +1188,7 @@ path\_attribute: optional string
 
 <summary>
 
-same\_site\_attribute: optional "lax"or "strict"or "none"
+same\_site\_attribute: optional "lax" or "strict" or "none"
 
 </summary>
 

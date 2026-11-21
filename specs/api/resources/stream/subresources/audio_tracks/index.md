@@ -40,7 +40,7 @@ POST/accounts/{account\_id}/stream/{identifier}/audio/copy
 
 <summary>
 
-Audio object {default, label, status, uid }
+Audio object { default, label, status, uid }
 
 </summary>
 
@@ -60,7 +60,7 @@ A string to uniquely identify the track amongst other audio track labels for the
 
 <summary>
 
-status: optional "queued"or "ready"or "error"
+status: optional "queued" or "ready" or "error"
 
 Specifies the processing status of the video.
 
@@ -100,7 +100,7 @@ maxLength32
 
 <summary>
 
-AudioTrackGetResponse object {audio }
+AudioTrackGetResponse object { audio }
 
 </summary>
 
@@ -130,7 +130,7 @@ A string to uniquely identify the track amongst other audio track labels for the
 
 <summary>
 
-status: optional "queued"or "ready"or "error"
+status: optional "queued" or "ready" or "error"
 
 Specifies the processing status of the video.
 

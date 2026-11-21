@@ -100,7 +100,7 @@ Defines a list of ports to scan. Valid values are:“default”, “all”, or a
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -122,7 +122,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -142,7 +142,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -164,7 +164,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -190,7 +190,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, account\_id, frequency, 2 more }
+result: optional object { id, account\_id, frequency, 2 more }
 
 </summary>
 

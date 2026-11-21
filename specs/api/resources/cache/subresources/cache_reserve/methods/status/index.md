@@ -96,7 +96,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -138,7 +138,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -164,7 +164,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, start\_ts, state, 2 more }
+result: optional object { id, start\_ts, state, 2 more }
 
 You can use Cache Reserve Clear to clear your Cache Reserve, but you must first disable Cache Reserve. In most cases, this will be accomplished within 24 hours. You cannot re-enable Cache Reserve while this process is ongoing. Keep in mind that you cannot undo or cancel this operation.
 
@@ -188,7 +188,7 @@ formatdate-time
 
 <summary>
 
-state: "In-progress"or "Completed"
+state: "In-progress" or "Completed"
 
 The current state of the Cache Reserve Clear operation.
 

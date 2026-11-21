@@ -38,7 +38,7 @@ DELETE/{accounts\_or\_zones}/{account\_or\_zone\_id}/custom\_csrs/{custom\_csr\_
 
 <summary>
 
-CustomCsr object {id, created\_at, key\_type, 8 more }
+CustomCsr object { id, created\_at, key\_type, 8 more }
 
 A custom Certificate Signing Request (CSR).
 
@@ -64,7 +64,7 @@ formatdate-time
 
 <summary>
 
-key\_type: "rsa2048"or "p256v1"
+key\_type: "rsa2048" or "p256v1"
 
 The key algorithm used to generate the CSR.
 
@@ -142,7 +142,7 @@ State or province name.
 
 <summary>
 
-CustomCsrListResponse object {id, created\_at, key\_type, 11 more }
+CustomCsrListResponse object { id, created\_at, key\_type, 11 more }
 
 A custom Certificate Signing Request (CSR).
 
@@ -168,7 +168,7 @@ formatdate-time
 
 <summary>
 
-key\_type: "rsa2048"or "p256v1"
+key\_type: "rsa2048" or "p256v1"
 
 The key algorithm used to generate the CSR.
 
@@ -264,7 +264,7 @@ State or province name.
 
 <summary>
 
-CustomCsrCreateResponse object {id, created\_at, key\_type, 11 more }
+CustomCsrCreateResponse object { id, created\_at, key\_type, 11 more }
 
 A custom Certificate Signing Request (CSR).
 
@@ -290,7 +290,7 @@ formatdate-time
 
 <summary>
 
-key\_type: "rsa2048"or "p256v1"
+key\_type: "rsa2048" or "p256v1"
 
 The key algorithm used to generate the CSR.
 
@@ -386,7 +386,7 @@ State or province name.
 
 <summary>
 
-CustomCsrGetResponse object {id, created\_at, key\_type, 11 more }
+CustomCsrGetResponse object { id, created\_at, key\_type, 11 more }
 
 A custom Certificate Signing Request (CSR).
 
@@ -412,7 +412,7 @@ formatdate-time
 
 <summary>
 
-key\_type: "rsa2048"or "p256v1"
+key\_type: "rsa2048" or "p256v1"
 
 The key algorithm used to generate the CSR.
 
@@ -508,7 +508,7 @@ State or province name.
 
 <summary>
 
-CustomCsrDeleteResponse object {id }
+CustomCsrDeleteResponse object { id }
 
 </summary>
 

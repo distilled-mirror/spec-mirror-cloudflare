@@ -48,7 +48,7 @@ DELETE/accounts/{account\_id}/dlp/validators/proximity\_words/{validator\_id}
 
 <summary>
 
-ProximityWordValidator object {id, created\_at, name, 3 more }
+ProximityWordValidator object { id, created\_at, name, 3 more }
 
 A reusable list of weighted words. Attaching it to a detection entry raises the confidence of that entry’s matches when one of the words appears nearby, and lowers it when none do.
 
@@ -194,7 +194,7 @@ The word or phrase to look for. Must contain 1–128 characters and is matched c
 
 <summary>
 
-Weight = "strong"or "moderate"or "weak"
+Weight = "strong" or "moderate" or "weak"
 
 How much a word contributes to a match’s confidence when it is found nearby.
 
@@ -224,7 +224,7 @@ One of the following:
 
 <summary>
 
-Word object {weight, word }
+Word object { weight, word }
 
 A word that raises a match’s confidence when it appears near the match.
 

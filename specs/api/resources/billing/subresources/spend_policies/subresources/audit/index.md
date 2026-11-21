@@ -30,7 +30,7 @@ GET/accounts/{account\_id}/billing/spend-policies/{policy\_id}/audit
 
 <summary>
 
-AuditListResponse object {action, balance\_cents, billing\_period\_end, 7 more }
+AuditListResponse object { action, balance\_cents, billing\_period\_end, 7 more }
 
 A state transition recorded when the policy was evaluated against the account’s balance.
 
@@ -40,7 +40,7 @@ A state transition recorded when the policy was evaluated against the account’
 
 <summary>
 
-action: "notification"or "usage\_block"
+action: "notification" or "usage\_block"
 
 The action taken when the threshold is reached. <code>notification</code> sends an email to <code>notification_email</code>. <code>usage_block</code> blocks further usage of the product until the end of the billing period. Raising the threshold above the current balance, disabling the policy, or deleting it lifts the block early.
 
@@ -110,7 +110,7 @@ A human-readable explanation of the trigger.
 
 <summary>
 
-source: "kafka"or "policy\_revision"
+source: "kafka" or "policy\_revision"
 
 What caused the evaluation. <code>kafka</code> means a balance update. <code>policy_revision</code> means a change to the policy.
 

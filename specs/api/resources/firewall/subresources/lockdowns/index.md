@@ -56,7 +56,7 @@ One of the following:
 
 <summary>
 
-LockdownIPConfiguration object {target, value }
+LockdownIPConfiguration object { target, value }
 
 </summary>
 
@@ -80,7 +80,7 @@ The IP address to match. This address will be compared to the IP address of inco
 
 <summary>
 
-LockdownCIDRConfiguration object {target, value }
+LockdownCIDRConfiguration object { target, value }
 
 </summary>
 
@@ -108,7 +108,7 @@ The IP address range to match. You can only use prefix lengths <code>/16</code> 
 
 <summary>
 
-Lockdown object {id, configurations, created\_on, 4 more }
+Lockdown object { id, configurations, created\_on, 4 more }
 
 </summary>
 
@@ -170,7 +170,7 @@ The URLs to include in the rule definition. You can use wildcards. Each entered 
 
 <summary>
 
-LockdownCIDRConfiguration object {target, value }
+LockdownCIDRConfiguration object { target, value }
 
 </summary>
 
@@ -194,7 +194,7 @@ The IP address range to match. You can only use prefix lengths <code>/16</code> 
 
 <summary>
 
-LockdownIPConfiguration object {target, value }
+LockdownIPConfiguration object { target, value }
 
 </summary>
 
@@ -222,7 +222,7 @@ LockdownURL = string
 
 <summary>
 
-LockdownDeleteResponse object {id }
+LockdownDeleteResponse object { id }
 
 </summary>
 

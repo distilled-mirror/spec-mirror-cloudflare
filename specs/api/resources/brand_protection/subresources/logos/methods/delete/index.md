@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Intel Write`
+`Cloudforce One Write``Intel Write`
 
 ##### P ath ParametersExpand Collapse
 

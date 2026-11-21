@@ -32,7 +32,7 @@ POST/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/provider\_configs
 
 <summary>
 
-ProviderConfigListResponse object {id, alias, default\_config, 8 more }
+ProviderConfigListResponse object { id, alias, default\_config, 8 more }
 
 </summary>
 
@@ -100,7 +100,7 @@ rate\_limit\_period: optional number
 
 <summary>
 
-ProviderConfigCreateResponse object {id, alias, default\_config, 8 more }
+ProviderConfigCreateResponse object { id, alias, default\_config, 8 more }
 
 </summary>
 

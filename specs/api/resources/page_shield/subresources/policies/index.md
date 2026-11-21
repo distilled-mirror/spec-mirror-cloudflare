@@ -44,7 +44,7 @@ DELETE/zones/{zone\_id}/page\_shield/policies/{policy\_id}
 
 <summary>
 
-PolicyListResponse object {id, action, description, 3 more }
+PolicyListResponse object { id, action, description, 3 more }
 
 </summary>
 
@@ -60,7 +60,7 @@ maxLength32
 
 <summary>
 
-action: "allow"or "log"or "add\_reporting\_directives"
+action: "allow" or "log" or "add\_reporting\_directives"
 
 The action to take if the expression matches
 
@@ -116,7 +116,7 @@ The policy which will be applied
 
 <summary>
 
-PolicyGetResponse object {id, action, description, 3 more }
+PolicyGetResponse object { id, action, description, 3 more }
 
 </summary>
 
@@ -132,7 +132,7 @@ maxLength32
 
 <summary>
 
-action: "allow"or "log"or "add\_reporting\_directives"
+action: "allow" or "log" or "add\_reporting\_directives"
 
 The action to take if the expression matches
 
@@ -188,7 +188,7 @@ The policy which will be applied
 
 <summary>
 
-PolicyCreateResponse object {id, action, description, 3 more }
+PolicyCreateResponse object { id, action, description, 3 more }
 
 </summary>
 
@@ -204,7 +204,7 @@ maxLength32
 
 <summary>
 
-action: "allow"or "log"or "add\_reporting\_directives"
+action: "allow" or "log" or "add\_reporting\_directives"
 
 The action to take if the expression matches
 
@@ -260,7 +260,7 @@ The policy which will be applied
 
 <summary>
 
-PolicyUpdateResponse object {id, action, description, 3 more }
+PolicyUpdateResponse object { id, action, description, 3 more }
 
 </summary>
 
@@ -276,7 +276,7 @@ maxLength32
 
 <summary>
 
-action: "allow"or "log"or "add\_reporting\_directives"
+action: "allow" or "log" or "add\_reporting\_directives"
 
 The action to take if the expression matches
 

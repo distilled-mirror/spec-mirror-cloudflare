@@ -32,7 +32,7 @@ POST/accounts/{account\_id}/cloudforce-one/binary
 
 <summary>
 
-BinaryStorageCreateResponse object {content\_type, md5, sha1, sha256 }
+BinaryStorageCreateResponse object { content\_type, md5, sha1, sha256 }
 
 </summary>
 
@@ -96,7 +96,7 @@ GET/accounts/{account\_id}/cloudforce-one/requests/constants
 
 <summary>
 
-Item object {id, content, created, 10 more }
+Item object { id, content, created, 10 more }
 
 </summary>
 
@@ -142,7 +142,7 @@ Brief description of the request.
 
 <summary>
 
-tlp: "clear"or "amber"or "amber-strict"or 2 more
+tlp: "clear" or "amber" or "amber-strict" or 2 more
 
 The CISA defined Traffic Light Protocol (TLP).
 
@@ -202,7 +202,7 @@ Readable Request ID.
 
 <summary>
 
-status: optional "open"or "accepted"or "reported"or 3 more
+status: optional "open" or "accepted" or "reported" or 3 more
 
 Request Status.
 
@@ -252,7 +252,7 @@ Tokens for the request.
 
 <summary>
 
-ListItem object {id, created, priority, 9 more }
+ListItem object { id, created, priority, 9 more }
 
 </summary>
 
@@ -276,7 +276,7 @@ formatdate-time
 
 <summary>
 
-priority: "routine"or "high"or "urgent"
+priority: "routine" or "high" or "urgent"
 
 </summary>
 
@@ -314,7 +314,7 @@ Brief description of the request.
 
 <summary>
 
-tlp: "clear"or "amber"or "amber-strict"or 2 more
+tlp: "clear" or "amber" or "amber-strict" or 2 more
 
 The CISA defined Traffic Light Protocol (TLP).
 
@@ -378,7 +378,7 @@ Readable Request ID.
 
 <summary>
 
-status: optional "open"or "accepted"or "reported"or 3 more
+status: optional "open" or "accepted" or "reported" or 3 more
 
 Request Status.
 
@@ -428,7 +428,7 @@ Tokens for the request.
 
 <summary>
 
-Quota object {anniversary\_date, quarter\_anniversary\_date, quota, remaining }
+Quota object { anniversary\_date, quarter\_anniversary\_date, quota, remaining }
 
 </summary>
 
@@ -468,7 +468,7 @@ Tokens remaining for the quarter.
 
 <summary>
 
-RequestConstants object {priority, status, tlp }
+RequestConstants object { priority, status, tlp }
 
 </summary>
 
@@ -476,7 +476,7 @@ RequestConstants object {priority, status, tlp }
 
 <summary>
 
-priority: optional array of "routine"or "high"or "urgent"
+priority: optional array of "routine" or "high" or "urgent"
 
 </summary>
 
@@ -502,7 +502,7 @@ One of the following:
 
 <summary>
 
-status: optional array of "open"or "accepted"or "reported"or 3 more
+status: optional array of "open" or "accepted" or "reported" or 3 more
 
 </summary>
 
@@ -540,7 +540,7 @@ One of the following:
 
 <summary>
 
-tlp: optional array of "clear"or "amber"or "amber-strict"or 2 more
+tlp: optional array of "clear" or "amber" or "amber-strict" or 2 more
 
 </summary>
 
@@ -582,7 +582,7 @@ RequestTypes = array of string
 
 <summary>
 
-RequestDeleteResponse object {errors, messages, success }
+RequestDeleteResponse object { errors, messages, success }
 
 </summary>
 
@@ -590,7 +590,7 @@ RequestDeleteResponse object {errors, messages, success }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -612,7 +612,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -632,7 +632,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -654,7 +654,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -710,7 +710,7 @@ DELETE/accounts/{account\_id}/cloudforce-one/requests/{request\_id}/message/{mes
 
 <summary>
 
-Message object {id, author, content, 3 more }
+Message object { id, author, content, 3 more }
 
 </summary>
 
@@ -762,7 +762,7 @@ formatdate-time
 
 <summary>
 
-MessageDeleteResponse object {errors, messages, success }
+MessageDeleteResponse object { errors, messages, success }
 
 </summary>
 
@@ -770,7 +770,7 @@ MessageDeleteResponse object {errors, messages, success }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -792,7 +792,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -812,7 +812,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -834,7 +834,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -892,7 +892,7 @@ Label = string
 
 <summary>
 
-Priority object {id, created, labels, 4 more }
+Priority object { id, created, labels, 4 more }
 
 </summary>
 
@@ -934,7 +934,7 @@ Requirement.
 
 <summary>
 
-tlp: "clear"or "amber"or "amber-strict"or 2 more
+tlp: "clear" or "amber" or "amber-strict" or 2 more
 
 The CISA defined Traffic Light Protocol (TLP).
 
@@ -982,7 +982,7 @@ formatdate-time
 
 <summary>
 
-PriorityEdit object {labels, priority, requirement, tlp }
+PriorityEdit object { labels, priority, requirement, tlp }
 
 </summary>
 
@@ -1008,7 +1008,7 @@ Requirement.
 
 <summary>
 
-tlp: "clear"or "amber"or "amber-strict"or 2 more
+tlp: "clear" or "amber" or "amber-strict" or 2 more
 
 The CISA defined Traffic Light Protocol (TLP).
 
@@ -1048,7 +1048,7 @@ One of the following:
 
 <summary>
 
-PriorityDeleteResponse object {errors, messages, success }
+PriorityDeleteResponse object { errors, messages, success }
 
 </summary>
 
@@ -1056,7 +1056,7 @@ PriorityDeleteResponse object {errors, messages, success }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -1078,7 +1078,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -1098,7 +1098,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -1120,7 +1120,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -1170,7 +1170,7 @@ DELETE/accounts/{account\_id}/cloudforce-one/requests/{request\_id}/asset/{asset
 
 <summary>
 
-AssetGetResponse object {id, name, created, 2 more }
+AssetGetResponse object { id, name, created, 2 more }
 
 </summary>
 
@@ -1214,7 +1214,7 @@ Asset file type.
 
 <summary>
 
-AssetCreateResponse object {id, name, created, 2 more }
+AssetCreateResponse object { id, name, created, 2 more }
 
 </summary>
 
@@ -1258,7 +1258,7 @@ Asset file type.
 
 <summary>
 
-AssetUpdateResponse object {id, name, created, 2 more }
+AssetUpdateResponse object { id, name, created, 2 more }
 
 </summary>
 
@@ -1302,7 +1302,7 @@ Asset file type.
 
 <summary>
 
-AssetDeleteResponse object {errors, messages, success }
+AssetDeleteResponse object { errors, messages, success }
 
 </summary>
 
@@ -1310,7 +1310,7 @@ AssetDeleteResponse object {errors, messages, success }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -1332,7 +1332,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -1352,7 +1352,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -1374,7 +1374,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -1414,7 +1414,7 @@ GET/accounts/{account\_id}/cloudforce-one/scans/results/{config\_id}
 
 <summary>
 
-ScanResult object {number, proto, status }
+ScanResult object { number, proto, status }
 
 </summary>
 
@@ -1438,7 +1438,7 @@ status: optional string
 
 <summary>
 
-ResultGetResponse object {"1.1.1.1" }
+ResultGetResponse object { "1.1.1.1" }
 
 </summary>
 
@@ -1494,7 +1494,7 @@ DELETE/accounts/{account\_id}/cloudforce-one/scans/config/{config\_id}
 
 <summary>
 
-ConfigListResponse object {id, account\_id, frequency, 2 more }
+ConfigListResponse object { id, account\_id, frequency, 2 more }
 
 </summary>
 
@@ -1534,7 +1534,7 @@ Defines a list of ports to scan. Valid values are:“default”, “all”, or a
 
 <summary>
 
-ConfigCreateResponse object {id, account\_id, frequency, 2 more }
+ConfigCreateResponse object { id, account\_id, frequency, 2 more }
 
 </summary>
 
@@ -1574,7 +1574,7 @@ Defines a list of ports to scan. Valid values are:“default”, “all”, or a
 
 <summary>
 
-ConfigEditResponse object {id, account\_id, frequency, 2 more }
+ConfigEditResponse object { id, account\_id, frequency, 2 more }
 
 </summary>
 
@@ -1638,19 +1638,13 @@ PATCH/accounts/{account\_id}/cloudforce-one/events/{event\_id}
 
 POST/accounts/{account\_id}/cloudforce-one/events/create/bulk
 
-##### [Create events with relationships in bulk (legacy)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/methods/bulk_create_relationships)
-
-Deprecated
-
-POST/accounts/{account\_id}/cloudforce-one/events/create/bulk/relationships
-
 ##### ModelsExpand Collapse
 
 <details>
 
 <summary>
 
-ThreatEventListResponse = array of object {attacker, attackerCountry, attackerCountryAlpha3, 26 more }
+ThreatEventListResponse = array of object { attacker, attackerCountry, attackerCountryAlpha3, 26 more }
 
 </summary>
 
@@ -1778,7 +1772,7 @@ releasabilityId: optional string
 
 <summary>
 
-ThreatEventGetResponse object {attacker, attackerCountry, attackerCountryAlpha3, 26 more }
+ThreatEventGetResponse object { attacker, attackerCountry, attackerCountryAlpha3, 26 more }
 
 </summary>
 
@@ -1906,7 +1900,7 @@ releasabilityId: optional string
 
 <summary>
 
-ThreatEventCreateResponse object {attacker, attackerCountry, attackerCountryAlpha3, 26 more }
+ThreatEventCreateResponse object { attacker, attackerCountry, attackerCountryAlpha3, 26 more }
 
 </summary>
 
@@ -2034,7 +2028,7 @@ releasabilityId: optional string
 
 <summary>
 
-ThreatEventEditResponse object {attacker, attackerCountry, attackerCountryAlpha3, 26 more }
+ThreatEventEditResponse object { attacker, attackerCountry, attackerCountryAlpha3, 26 more }
 
 </summary>
 
@@ -2162,7 +2156,7 @@ releasabilityId: optional string
 
 <summary>
 
-ThreatEventBulkCreateResponse object {createdEventsCount, createdTagsCount, errorCount, 4 more }
+ThreatEventBulkCreateResponse object { createdEventsCount, createdTagsCount, errorCount, 4 more }
 
 Detailed result of bulk event creation with auto-tag management
 
@@ -2204,7 +2198,7 @@ formatuuid
 
 <summary>
 
-createdEvents: optional array of object {eventIndex, shardId, uuid }
+createdEvents: optional array of object { eventIndex, shardId, uuid }
 
 Array of created events with UUIDs and shard locations. Only present when includeCreatedEvents=true
 
@@ -2238,7 +2232,7 @@ formatuuid
 
 <summary>
 
-errors: optional array of object {error, eventIndex }
+errors: optional array of object { error, eventIndex }
 
 Array of error details
 
@@ -2264,70 +2258,6 @@ Index of the event that caused the error
 
 [Link to this property](#)%20cloudforce_one.threat_events%20%3E%20(model)%20threat_event_bulk_create_response%20%3E%20(schema)>)
 
-<details>
-
-<summary>
-
-ThreatEventBulkCreateRelationshipsResponse object {createdEventsCount, createdIndicatorsCount, createdRelationshipsCount, 2 more }
-
-Result of bulk relationship creation operation
-
-</summary>
-
-createdEventsCount: number
-
-Number of events created
-
-<a href="#">Link to this property</a>
-
-createdIndicatorsCount: number
-
-Number of indicators created
-
-<a href="#">Link to this property</a>
-
-createdRelationshipsCount: number
-
-Number of relationships created
-
-<a href="#">Link to this property</a>
-
-errorCount: number
-
-Number of errors encountered
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-errors: optional array of object {error, eventIndex }
-
-Array of error details
-
-</summary>
-
-error: string
-
-Error message
-
-<a href="#">Link to this property</a>
-
-eventIndex: number
-
-Index of the event that caused the error
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-[Link to this property](#)%20cloudforce_one.threat_events%20%3E%20(model)%20threat_event_bulk_create_relationships_response%20%3E%20(schema)>)
-
 #### Cloudforce OneThreat EventsAggregate
 
 ##### [Aggregate events](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/aggregate/methods/list)
@@ -2340,7 +2270,7 @@ GET/accounts/{account\_id}/cloudforce-one/events/aggregate
 
 <summary>
 
-AggregateListResponse object {aggregateBy, aggregations, total, dateRange }
+AggregateListResponse object { aggregateBy, aggregations, total, dateRange }
 
 </summary>
 
@@ -2354,7 +2284,7 @@ Column(s) that were aggregated by
 
 <summary>
 
-aggregations: array of object {count, date }
+aggregations: array of object { count, date }
 
 Array of aggregation results with dynamic fields based on aggregateBy columns
 
@@ -2386,7 +2316,7 @@ Total number of events in the aggregation
 
 <summary>
 
-dateRange: optional object {endDate, startDate }
+dateRange: optional object { endDate, startDate }
 
 Date range used for filtering
 
@@ -2420,7 +2350,7 @@ POST/accounts/{account\_id}/cloudforce-one/events/graphql
 
 <summary>
 
-GraphqlCreateResponse object {data, errors }
+GraphqlCreateResponse object { data, errors }
 
 </summary>
 
@@ -2448,7 +2378,7 @@ GET/accounts/{account\_id}/cloudforce-one/events/graph
 
 <summary>
 
-GraphListResponse object {edges, node, nodes }
+GraphListResponse object { edges, node, nodes }
 
 </summary>
 
@@ -2456,7 +2386,7 @@ GraphListResponse object {edges, node, nodes }
 
 <summary>
 
-edges: array of object {id, relationshipType, source, 5 more }
+edges: array of object { id, relationshipType, source, 5 more }
 
 </summary>
 
@@ -2544,7 +2474,7 @@ DELETE/accounts/{account\_id}/cloudforce-one/events/queries/{query\_id}
 
 <summary>
 
-QueryListResponse = array of object {id, account\_id, alert\_enabled, 10 more }
+QueryListResponse = array of object { id, account\_id, alert\_enabled, 10 more }
 
 </summary>
 
@@ -2634,7 +2564,7 @@ Deprecated: saved-query alerting and rules were removed. Always null.
 
 <summary>
 
-QueryCreateResponse object {id, account\_id, alert\_enabled, 10 more }
+QueryCreateResponse object { id, account\_id, alert\_enabled, 10 more }
 
 </summary>
 
@@ -2724,7 +2654,7 @@ Deprecated: saved-query alerting and rules were removed. Always null.
 
 <summary>
 
-QueryGetResponse object {id, account\_id, alert\_enabled, 10 more }
+QueryGetResponse object { id, account\_id, alert\_enabled, 10 more }
 
 </summary>
 
@@ -2814,7 +2744,7 @@ Deprecated: saved-query alerting and rules were removed. Always null.
 
 <summary>
 
-QueryEditResponse object {id, account\_id, alert\_enabled, 10 more }
+QueryEditResponse object { id, account\_id, alert\_enabled, 10 more }
 
 </summary>
 
@@ -2914,7 +2844,7 @@ GET/accounts/{account\_id}/cloudforce-one/events/{event\_id}/relationships
 
 <summary>
 
-RelationshipListResponse = array of object {attacker, attackerCountry, attackerCountryAlpha3, 26 more }
+RelationshipListResponse = array of object { attacker, attackerCountry, attackerCountryAlpha3, 26 more }
 
 </summary>
 
@@ -3050,7 +2980,7 @@ GET/accounts/{account\_id}/cloudforce-one/events/indicators
 
 <summary>
 
-IndicatorListResponse object {properties, type }
+IndicatorListResponse object { properties, type }
 
 </summary>
 
@@ -3058,7 +2988,7 @@ IndicatorListResponse object {properties, type }
 
 <summary>
 
-properties: object {completeness, indicators, pagination }
+properties: object { completeness, indicators, pagination }
 
 </summary>
 
@@ -3066,7 +2996,7 @@ properties: object {completeness, indicators, pagination }
 
 <summary>
 
-completeness: object {properties, type }
+completeness: object { properties, type }
 
 </summary>
 
@@ -3074,7 +3004,7 @@ completeness: object {properties, type }
 
 <summary>
 
-properties: object {complete, failedDatasets, failedShards, warnings }
+properties: object { complete, failedDatasets, failedShards, warnings }
 
 </summary>
 
@@ -3082,7 +3012,7 @@ properties: object {complete, failedDatasets, failedShards, warnings }
 
 <summary>
 
-complete: object {type }
+complete: object { type }
 
 </summary>
 
@@ -3098,7 +3028,7 @@ type: string
 
 <summary>
 
-failedDatasets: object {items, type }
+failedDatasets: object { items, type }
 
 </summary>
 
@@ -3106,85 +3036,9 @@ failedDatasets: object {items, type }
 
 <summary>
 
-items: object {type }
+items: object { type }
 
 </summary>
-
-type: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-type: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-failedShards: object {items, type }
-
-</summary>
-
-<details>
-
-<summary>
-
-items: object {properties, type }
-
-</summary>
-
-<details>
-
-<summary>
-
-properties: object {datasetId, shardId }
-
-</summary>
-
-<details>
-
-<summary>
-
-datasetId: object {type }
-
-</summary>
-
-type: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-shardId: object {type }
-
-</summary>
-
-type: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
 
 type: string
 
@@ -3206,7 +3060,7 @@ type: string
 
 <summary>
 
-warnings: object {items, type }
+failedShards: object { items, type }
 
 </summary>
 
@@ -3214,7 +3068,83 @@ warnings: object {items, type }
 
 <summary>
 
-items: object {type }
+items: object { properties, type }
+
+</summary>
+
+<details>
+
+<summary>
+
+properties: object { datasetId, shardId }
+
+</summary>
+
+<details>
+
+<summary>
+
+datasetId: object { type }
+
+</summary>
+
+type: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+shardId: object { type }
+
+</summary>
+
+type: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+type: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+type: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+warnings: object { items, type }
+
+</summary>
+
+<details>
+
+<summary>
+
+items: object { type }
 
 </summary>
 
@@ -3250,7 +3180,7 @@ type: string
 
 <summary>
 
-indicators: object {items, type }
+indicators: object { items, type }
 
 </summary>
 
@@ -3258,7 +3188,7 @@ indicators: object {items, type }
 
 <summary>
 
-items: object {createdAt, indicatorType, sources, 8 more }
+items: object { createdAt, indicatorType, sources, 8 more }
 
 </summary>
 
@@ -3276,7 +3206,7 @@ indicatorType: string
 
 <summary>
 
-sources: array of object {resourceId, resourceType, system, title }
+sources: array of object { resourceId, resourceType, system, title }
 
 RSS article sources from which this indicator was extracted.
 
@@ -3330,7 +3260,7 @@ The dataset ID this indicator belongs to. Included in list responses.
 
 <summary>
 
-relatedEvents: optional array of object {datasetId, eventId, eventDate }
+relatedEvents: optional array of object { datasetId, eventId, eventDate }
 
 Related events, capped by <code>relatedEventsLimit</code> (default 2). Check <code>relatedEventsHasMore</code> to detect a capped list; pass <code>relatedEventsLimit=-1</code> to retrieve all of them.
 
@@ -3364,7 +3294,7 @@ True when this indicator appears in more events than <code>relatedEvents</code> 
 
 <summary>
 
-tags: optional array of object {categoryId, categoryName, uuid, value }
+tags: optional array of object { categoryId, categoryName, uuid, value }
 
 </summary>
 
@@ -3412,7 +3342,7 @@ type: string
 
 <summary>
 
-pagination: object {properties, type }
+pagination: object { properties, type }
 
 </summary>
 
@@ -3420,7 +3350,7 @@ pagination: object {properties, type }
 
 <summary>
 
-properties: object {count, cursor, has\_more, 4 more }
+properties: object { count, cursor, has\_more, 4 more }
 
 </summary>
 
@@ -3428,7 +3358,7 @@ properties: object {count, cursor, has\_more, 4 more }
 
 <summary>
 
-count: object {type }
+count: object { type }
 
 </summary>
 
@@ -3444,7 +3374,7 @@ type: string
 
 <summary>
 
-cursor: object {description, nullable, type }
+cursor: object { description, nullable, type }
 
 </summary>
 
@@ -3468,7 +3398,7 @@ type: string
 
 <summary>
 
-has\_more: object {description, type }
+has\_more: object { description, type }
 
 </summary>
 
@@ -3488,7 +3418,7 @@ type: string
 
 <summary>
 
-page: object {type }
+page: object { type }
 
 </summary>
 
@@ -3504,7 +3434,7 @@ type: string
 
 <summary>
 
-per\_page: object {type }
+per\_page: object { type }
 
 </summary>
 
@@ -3520,7 +3450,7 @@ type: string
 
 <summary>
 
-total\_count: object {description, nullable, type }
+total\_count: object { description, nullable, type }
 
 </summary>
 
@@ -3544,7 +3474,7 @@ type: string
 
 <summary>
 
-total\_count\_is\_exact: object {description, type }
+total\_count\_is\_exact: object { description, type }
 
 </summary>
 
@@ -3596,7 +3526,7 @@ GET/accounts/{account\_id}/cloudforce-one/events/indicators/aggregate
 
 <summary>
 
-AggregateListResponse object {aggregateBy, aggregations, failedDatasets, total }
+AggregateListResponse object { aggregateBy, aggregations, failedDatasets, total }
 
 </summary>
 
@@ -3610,7 +3540,7 @@ Column(s) that were aggregated by
 
 <summary>
 
-aggregations: array of object {count }
+aggregations: array of object { count }
 
 Array of aggregation results with dynamic fields based on aggregateBy columns
 
@@ -3654,7 +3584,7 @@ GET/accounts/{account\_id}/cloudforce-one/events/indicator-types
 
 <summary>
 
-TypeListResponse object {items, type }
+TypeListResponse object { items, type }
 
 </summary>
 
@@ -3662,7 +3592,7 @@ TypeListResponse object {items, type }
 
 <summary>
 
-items: object {type }
+items: object { type }
 
 </summary>
 
@@ -3700,7 +3630,7 @@ GET/accounts/{account\_id}/cloudforce-one/events/dataset/{dataset\_id}/indicator
 
 <summary>
 
-ByDatasetListResponse object {indicators, pagination }
+ByDatasetListResponse object { indicators, pagination }
 
 </summary>
 
@@ -3708,7 +3638,7 @@ ByDatasetListResponse object {indicators, pagination }
 
 <summary>
 
-indicators: array of object {createdAt, indicatorType, sources, 8 more }
+indicators: array of object { createdAt, indicatorType, sources, 8 more }
 
 </summary>
 
@@ -3726,7 +3656,7 @@ indicatorType: string
 
 <summary>
 
-sources: array of object {resourceId, resourceType, system, title }
+sources: array of object { resourceId, resourceType, system, title }
 
 RSS article sources from which this indicator was extracted.
 
@@ -3780,7 +3710,7 @@ The dataset ID this indicator belongs to. Included in list responses.
 
 <summary>
 
-relatedEvents: optional array of object {datasetId, eventId, eventDate }
+relatedEvents: optional array of object { datasetId, eventId, eventDate }
 
 Related events, capped by <code>relatedEventsLimit</code> (default 2). Check <code>relatedEventsHasMore</code> to detect a capped list; pass <code>relatedEventsLimit=-1</code> to retrieve all of them.
 
@@ -3814,7 +3744,7 @@ True when this indicator appears in more events than <code>relatedEvents</code> 
 
 <summary>
 
-tags: optional array of object {categoryId, categoryName, uuid, value }
+tags: optional array of object { categoryId, categoryName, uuid, value }
 
 </summary>
 
@@ -3854,7 +3784,7 @@ Traffic Light Protocol designation. UPPERCASE. Possible values: CLEAR, GREEN, AM
 
 <summary>
 
-pagination: object {page, pageSize, totalCount, totalPages }
+pagination: object { page, pageSize, totalCount, totalPages }
 
 </summary>
 
@@ -3886,7 +3816,7 @@ totalPages: number
 
 <summary>
 
-ByDatasetGetResponse object {createdAt, indicatorType, updatedAt, 7 more }
+ByDatasetGetResponse object { createdAt, indicatorType, updatedAt, 7 more }
 
 </summary>
 
@@ -3924,7 +3854,7 @@ The dataset ID this indicator belongs to. Included in list responses.
 
 <summary>
 
-relatedEvents: optional array of object {datasetId, eventId, eventDate }
+relatedEvents: optional array of object { datasetId, eventId, eventDate }
 
 Related events, capped by <code>relatedEventsLimit</code> (default 2). Check <code>relatedEventsHasMore</code> to detect a capped list; pass <code>relatedEventsLimit=-1</code> to retrieve all of them.
 
@@ -3958,7 +3888,7 @@ True when this indicator appears in more events than <code>relatedEvents</code> 
 
 <summary>
 
-tags: optional array of object {categoryId, categoryName, uuid, value }
+tags: optional array of object { categoryId, categoryName, uuid, value }
 
 </summary>
 
@@ -4020,7 +3950,7 @@ GET/accounts/{account\_id}/cloudforce-one/events/attackers
 
 <summary>
 
-AttackerListResponse object {items, type }
+AttackerListResponse object { items, type }
 
 </summary>
 
@@ -4028,7 +3958,7 @@ AttackerListResponse object {items, type }
 
 <summary>
 
-items: object {type }
+items: object { type }
 
 </summary>
 
@@ -4082,7 +4012,7 @@ DELETE/accounts/{account\_id}/cloudforce-one/events/categories/{category\_id}
 
 <summary>
 
-CategoryListResponse = array of object {killChain, name, uuid, 3 more }
+CategoryListResponse = array of object { killChain, name, uuid, 3 more }
 
 </summary>
 
@@ -4118,7 +4048,7 @@ shortname: optional string
 
 <summary>
 
-CategoryGetResponse object {killChain, name, uuid, 3 more }
+CategoryGetResponse object { killChain, name, uuid, 3 more }
 
 </summary>
 
@@ -4154,7 +4084,7 @@ shortname: optional string
 
 <summary>
 
-CategoryCreateResponse object {killChain, name, uuid, 3 more }
+CategoryCreateResponse object { killChain, name, uuid, 3 more }
 
 </summary>
 
@@ -4190,7 +4120,7 @@ shortname: optional string
 
 <summary>
 
-CategoryEditResponse object {killChain, name, uuid, 3 more }
+CategoryEditResponse object { killChain, name, uuid, 3 more }
 
 </summary>
 
@@ -4226,7 +4156,7 @@ shortname: optional string
 
 <summary>
 
-CategoryDeleteResponse object {uuid }
+CategoryDeleteResponse object { uuid }
 
 </summary>
 
@@ -4250,7 +4180,7 @@ GET/accounts/{account\_id}/cloudforce-one/events/categories/catalog
 
 <summary>
 
-CatalogListResponse = array of object {killChain, name, uuid, 3 more }
+CatalogListResponse = array of object { killChain, name, uuid, 3 more }
 
 </summary>
 
@@ -4294,7 +4224,7 @@ GET/accounts/{account\_id}/cloudforce-one/events/countries
 
 <summary>
 
-CountryListResponse = array of object {result, success }
+CountryListResponse = array of object { result, success }
 
 </summary>
 
@@ -4302,7 +4232,7 @@ CountryListResponse = array of object {result, success }
 
 <summary>
 
-result: array of object {alpha2, alpha3, name }
+result: array of object { alpha2, alpha3, name }
 
 </summary>
 
@@ -4366,7 +4296,7 @@ GET/accounts/{account\_id}/cloudforce-one/events/raw/{dataset\_id}/{event\_id}
 
 <summary>
 
-DatasetListResponse = array of object {indicatorWriteMode, isAnalytics, isPublic, 3 more }
+DatasetListResponse = array of object { indicatorWriteMode, isAnalytics, isPublic, 3 more }
 
 </summary>
 
@@ -4374,7 +4304,7 @@ DatasetListResponse = array of object {indicatorWriteMode, isAnalytics, isPublic
 
 <summary>
 
-indicatorWriteMode: "read\_only"or "create\_only"or "full"
+indicatorWriteMode: "read\_only" or "create\_only" or "full"
 
 Effective indicator mutation capability after account/dataset authorization and dataset storage capability are applied. API Gateway method permissions are separate and must also allow the requested operation.
 
@@ -4426,7 +4356,7 @@ deletedAt: optional string
 
 <summary>
 
-DatasetGetResponse object {isAnalytics, isPublic, name, uuid }
+DatasetGetResponse object { isAnalytics, isPublic, name, uuid }
 
 </summary>
 
@@ -4454,7 +4384,7 @@ uuid: string
 
 <summary>
 
-DatasetCreateResponse object {isAnalytics, isPublic, name, uuid }
+DatasetCreateResponse object { isAnalytics, isPublic, name, uuid }
 
 </summary>
 
@@ -4482,7 +4412,7 @@ uuid: string
 
 <summary>
 
-DatasetEditResponse object {isAnalytics, isPublic, name, uuid }
+DatasetEditResponse object { isAnalytics, isPublic, name, uuid }
 
 </summary>
 
@@ -4510,7 +4440,7 @@ uuid: string
 
 <summary>
 
-DatasetDeleteResponse object {name, uuid }
+DatasetDeleteResponse object { name, uuid }
 
 </summary>
 
@@ -4530,7 +4460,7 @@ uuid: string
 
 <summary>
 
-DatasetRawResponse object {id, accountId, created, 3 more }
+DatasetRawResponse object { id, accountId, created, 3 more }
 
 </summary>
 
@@ -4576,7 +4506,7 @@ GET/accounts/{account\_id}/cloudforce-one/events/dataset/{dataset\_id}/events/{e
 
 <summary>
 
-EventGetResponse object {attacker, attackerCountry, attackerCountryAlpha3, 26 more }
+EventGetResponse object { attacker, attackerCountry, attackerCountryAlpha3, 26 more }
 
 </summary>
 
@@ -4716,7 +4646,7 @@ PATCH/accounts/{account\_id}/cloudforce-one/events/{event\_id}/raw/{raw\_id}
 
 <summary>
 
-RawGetResponse object {id, accountId, created, 3 more }
+RawGetResponse object { id, accountId, created, 3 more }
 
 </summary>
 
@@ -4752,7 +4682,7 @@ tlp: string
 
 <summary>
 
-RawEditResponse object {id, data }
+RawEditResponse object { id, data }
 
 </summary>
 
@@ -4780,7 +4710,7 @@ DELETE/accounts/{account\_id}/cloudforce-one/events/relate/{event\_id}
 
 <summary>
 
-RelateDeleteResponse object {success }
+RelateDeleteResponse object { success }
 
 </summary>
 
@@ -4816,7 +4746,7 @@ DELETE/accounts/{account\_id}/cloudforce-one/events/tags/{tag\_uuid}
 
 <summary>
 
-TagListResponse object {pagination, tags }
+TagListResponse object { pagination, tags }
 
 </summary>
 
@@ -4824,7 +4754,7 @@ TagListResponse object {pagination, tags }
 
 <summary>
 
-pagination: object {page, pageSize, totalCount, totalPages }
+pagination: object { page, pageSize, totalCount, totalPages }
 
 </summary>
 
@@ -4852,7 +4782,7 @@ totalPages: number
 
 <summary>
 
-tags: array of object {uuid, value, activeDuration, 34 more }
+tags: array of object { uuid, value, activeDuration, 34 more }
 
 </summary>
 
@@ -4872,7 +4802,7 @@ activeDuration: optional string
 
 <summary>
 
-activeDuration\_annotated: optional object {value, tlp }
+activeDuration\_annotated: optional object { value, tlp }
 
 </summary>
 
@@ -4884,7 +4814,7 @@ value: string
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -4934,7 +4864,7 @@ actorCategory: optional string
 
 <summary>
 
-actorCategory\_annotated: optional object {value, confidence, tlp }
+actorCategory\_annotated: optional object { value, confidence, tlp }
 
 </summary>
 
@@ -4950,7 +4880,7 @@ confidence: optional number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -4996,7 +4926,7 @@ One of the following:
 
 <summary>
 
-aliases: optional array of object {value, confidence, tlp }
+aliases: optional array of object { value, confidence, tlp }
 
 Structured aliases ({ value, confidence 1-10, tlp }). Public: returned to all accounts with per-entry TLP filtering (entries with tlp: purple are removed for non-CFONE accounts).
 
@@ -5018,7 +4948,7 @@ minimum1
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -5076,7 +5006,7 @@ attributionOrganization: optional string
 
 <summary>
 
-attributionOrganization\_annotated: optional object {value, confidence, tlp }
+attributionOrganization\_annotated: optional object { value, confidence, tlp }
 
 </summary>
 
@@ -5092,7 +5022,7 @@ confidence: optional number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -5172,7 +5102,7 @@ externalReferenceLinks: optional array of string
 
 <summary>
 
-externalReferences: optional array of object {url, description }
+externalReferences: optional array of object { url, description }
 
 Structured external references ({ url, description }). Public: returned to all accounts.
 
@@ -5194,7 +5124,7 @@ description: optional string
 
 <summary>
 
-externalReferences\_annotated: optional array of object {value, tlp }
+externalReferences\_annotated: optional array of object { value, tlp }
 
 </summary>
 
@@ -5206,7 +5136,7 @@ value: string
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -5252,7 +5182,7 @@ One of the following:
 
 <summary>
 
-internalAliases: optional array of object {value, confidence, tlp }
+internalAliases: optional array of object { value, confidence, tlp }
 
 Owner-private structured aliases ({ value, confidence 1-10, tlp }). Returned to the owning account and omitted from shared-catalog non-owner responses.
 
@@ -5274,7 +5204,7 @@ minimum1
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -5332,7 +5262,7 @@ motive: optional string
 
 <summary>
 
-motive\_annotated: optional object {value, confidence, tlp }
+motive\_annotated: optional object { value, confidence, tlp }
 
 </summary>
 
@@ -5348,7 +5278,7 @@ confidence: optional number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -5398,7 +5328,7 @@ opsecLevel: optional string
 
 <summary>
 
-opsecLevel\_annotated: optional object {value, confidence, tlp }
+opsecLevel\_annotated: optional object { value, confidence, tlp }
 
 </summary>
 
@@ -5414,7 +5344,7 @@ confidence: optional number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -5466,7 +5396,7 @@ ISO country code (alpha-2 or alpha-3). Normalized to uppercase on read. Null whe
 
 <summary>
 
-originCountryISO\_annotated: optional object {value, confidence, tlp }
+originCountryISO\_annotated: optional object { value, confidence, tlp }
 
 </summary>
 
@@ -5482,7 +5412,7 @@ confidence: optional number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -5532,7 +5462,7 @@ priority: optional number
 
 <summary>
 
-priority\_annotated: optional object {value, tlp }
+priority\_annotated: optional object { value, tlp }
 
 </summary>
 
@@ -5544,7 +5474,7 @@ value: number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -5600,7 +5530,7 @@ sophisticationLevel: optional string
 
 <summary>
 
-sophisticationLevel\_annotated: optional object {value, confidence, tlp }
+sophisticationLevel\_annotated: optional object { value, confidence, tlp }
 
 </summary>
 
@@ -5616,7 +5546,7 @@ confidence: optional number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -5662,7 +5592,7 @@ One of the following:
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 Tag-level TLP handling marking.
 
@@ -5722,7 +5652,7 @@ version: optional number
 
 <summary>
 
-TagCreateResponse object {uuid, value, activeDuration, 34 more }
+TagCreateResponse object { uuid, value, activeDuration, 34 more }
 
 </summary>
 
@@ -5742,7 +5672,7 @@ activeDuration: optional string
 
 <summary>
 
-activeDuration\_annotated: optional object {value, tlp }
+activeDuration\_annotated: optional object { value, tlp }
 
 </summary>
 
@@ -5754,7 +5684,7 @@ value: string
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -5804,7 +5734,7 @@ actorCategory: optional string
 
 <summary>
 
-actorCategory\_annotated: optional object {value, confidence, tlp }
+actorCategory\_annotated: optional object { value, confidence, tlp }
 
 </summary>
 
@@ -5820,7 +5750,7 @@ confidence: optional number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -5866,7 +5796,7 @@ One of the following:
 
 <summary>
 
-aliases: optional array of object {value, confidence, tlp }
+aliases: optional array of object { value, confidence, tlp }
 
 Structured aliases ({ value, confidence 1-10, tlp }). Public: returned to all accounts with per-entry TLP filtering (entries with tlp: purple are removed for non-CFONE accounts).
 
@@ -5888,7 +5818,7 @@ minimum1
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -5946,7 +5876,7 @@ attributionOrganization: optional string
 
 <summary>
 
-attributionOrganization\_annotated: optional object {value, confidence, tlp }
+attributionOrganization\_annotated: optional object { value, confidence, tlp }
 
 </summary>
 
@@ -5962,7 +5892,7 @@ confidence: optional number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -6042,7 +5972,7 @@ externalReferenceLinks: optional array of string
 
 <summary>
 
-externalReferences: optional array of object {url, description }
+externalReferences: optional array of object { url, description }
 
 Structured external references ({ url, description }). Public: returned to all accounts.
 
@@ -6064,7 +5994,7 @@ description: optional string
 
 <summary>
 
-externalReferences\_annotated: optional array of object {value, tlp }
+externalReferences\_annotated: optional array of object { value, tlp }
 
 </summary>
 
@@ -6076,7 +6006,7 @@ value: string
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -6122,7 +6052,7 @@ One of the following:
 
 <summary>
 
-internalAliases: optional array of object {value, confidence, tlp }
+internalAliases: optional array of object { value, confidence, tlp }
 
 Owner-private structured aliases ({ value, confidence 1-10, tlp }). Returned to the owning account and omitted from shared-catalog non-owner responses.
 
@@ -6144,7 +6074,7 @@ minimum1
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -6202,7 +6132,7 @@ motive: optional string
 
 <summary>
 
-motive\_annotated: optional object {value, confidence, tlp }
+motive\_annotated: optional object { value, confidence, tlp }
 
 </summary>
 
@@ -6218,7 +6148,7 @@ confidence: optional number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -6268,7 +6198,7 @@ opsecLevel: optional string
 
 <summary>
 
-opsecLevel\_annotated: optional object {value, confidence, tlp }
+opsecLevel\_annotated: optional object { value, confidence, tlp }
 
 </summary>
 
@@ -6284,7 +6214,7 @@ confidence: optional number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -6336,7 +6266,7 @@ ISO country code (alpha-2 or alpha-3). Normalized to uppercase on read. Null whe
 
 <summary>
 
-originCountryISO\_annotated: optional object {value, confidence, tlp }
+originCountryISO\_annotated: optional object { value, confidence, tlp }
 
 </summary>
 
@@ -6352,7 +6282,7 @@ confidence: optional number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -6402,7 +6332,7 @@ priority: optional number
 
 <summary>
 
-priority\_annotated: optional object {value, tlp }
+priority\_annotated: optional object { value, tlp }
 
 </summary>
 
@@ -6414,7 +6344,7 @@ value: number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -6470,7 +6400,7 @@ sophisticationLevel: optional string
 
 <summary>
 
-sophisticationLevel\_annotated: optional object {value, confidence, tlp }
+sophisticationLevel\_annotated: optional object { value, confidence, tlp }
 
 </summary>
 
@@ -6486,7 +6416,7 @@ confidence: optional number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -6532,7 +6462,7 @@ One of the following:
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 Tag-level TLP handling marking.
 
@@ -6588,7 +6518,7 @@ version: optional number
 
 <summary>
 
-TagEditResponse object {uuid, value, activeDuration, 34 more }
+TagEditResponse object { uuid, value, activeDuration, 34 more }
 
 </summary>
 
@@ -6608,7 +6538,7 @@ activeDuration: optional string
 
 <summary>
 
-activeDuration\_annotated: optional object {value, tlp }
+activeDuration\_annotated: optional object { value, tlp }
 
 </summary>
 
@@ -6620,7 +6550,7 @@ value: string
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -6670,7 +6600,7 @@ actorCategory: optional string
 
 <summary>
 
-actorCategory\_annotated: optional object {value, confidence, tlp }
+actorCategory\_annotated: optional object { value, confidence, tlp }
 
 </summary>
 
@@ -6686,7 +6616,7 @@ confidence: optional number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -6732,7 +6662,7 @@ One of the following:
 
 <summary>
 
-aliases: optional array of object {value, confidence, tlp }
+aliases: optional array of object { value, confidence, tlp }
 
 Structured aliases ({ value, confidence 1-10, tlp }). Public: returned to all accounts with per-entry TLP filtering (entries with tlp: purple are removed for non-CFONE accounts).
 
@@ -6754,7 +6684,7 @@ minimum1
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -6812,7 +6742,7 @@ attributionOrganization: optional string
 
 <summary>
 
-attributionOrganization\_annotated: optional object {value, confidence, tlp }
+attributionOrganization\_annotated: optional object { value, confidence, tlp }
 
 </summary>
 
@@ -6828,7 +6758,7 @@ confidence: optional number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -6908,7 +6838,7 @@ externalReferenceLinks: optional array of string
 
 <summary>
 
-externalReferences: optional array of object {url, description }
+externalReferences: optional array of object { url, description }
 
 Structured external references ({ url, description }). Public: returned to all accounts.
 
@@ -6930,7 +6860,7 @@ description: optional string
 
 <summary>
 
-externalReferences\_annotated: optional array of object {value, tlp }
+externalReferences\_annotated: optional array of object { value, tlp }
 
 </summary>
 
@@ -6942,7 +6872,7 @@ value: string
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -6988,7 +6918,7 @@ One of the following:
 
 <summary>
 
-internalAliases: optional array of object {value, confidence, tlp }
+internalAliases: optional array of object { value, confidence, tlp }
 
 Owner-private structured aliases ({ value, confidence 1-10, tlp }). Returned to the owning account and omitted from shared-catalog non-owner responses.
 
@@ -7010,7 +6940,7 @@ minimum1
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -7068,7 +6998,7 @@ motive: optional string
 
 <summary>
 
-motive\_annotated: optional object {value, confidence, tlp }
+motive\_annotated: optional object { value, confidence, tlp }
 
 </summary>
 
@@ -7084,7 +7014,7 @@ confidence: optional number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -7134,7 +7064,7 @@ opsecLevel: optional string
 
 <summary>
 
-opsecLevel\_annotated: optional object {value, confidence, tlp }
+opsecLevel\_annotated: optional object { value, confidence, tlp }
 
 </summary>
 
@@ -7150,7 +7080,7 @@ confidence: optional number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -7202,7 +7132,7 @@ ISO country code (alpha-2 or alpha-3). Normalized to uppercase on read. Null whe
 
 <summary>
 
-originCountryISO\_annotated: optional object {value, confidence, tlp }
+originCountryISO\_annotated: optional object { value, confidence, tlp }
 
 </summary>
 
@@ -7218,7 +7148,7 @@ confidence: optional number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -7268,7 +7198,7 @@ priority: optional number
 
 <summary>
 
-priority\_annotated: optional object {value, tlp }
+priority\_annotated: optional object { value, tlp }
 
 </summary>
 
@@ -7280,7 +7210,7 @@ value: number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -7336,7 +7266,7 @@ sophisticationLevel: optional string
 
 <summary>
 
-sophisticationLevel\_annotated: optional object {value, confidence, tlp }
+sophisticationLevel\_annotated: optional object { value, confidence, tlp }
 
 </summary>
 
@@ -7352,7 +7282,7 @@ confidence: optional number
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 </summary>
 
@@ -7398,7 +7328,7 @@ One of the following:
 
 <summary>
 
-tlp: optional "red"or "amber"or "amber-strict"or 4 more
+tlp: optional "red" or "amber" or "amber-strict" or 4 more
 
 Tag-level TLP handling marking.
 
@@ -7454,7 +7384,7 @@ version: optional number
 
 <summary>
 
-TagDeleteResponse object {uuid }
+TagDeleteResponse object { uuid }
 
 </summary>
 
@@ -7494,7 +7424,7 @@ DELETE/accounts/{account\_id}/cloudforce-one/events/tags/categories/{category\_u
 
 <summary>
 
-CategoryListResponse object {categories }
+CategoryListResponse object { categories }
 
 </summary>
 
@@ -7502,7 +7432,7 @@ CategoryListResponse object {categories }
 
 <summary>
 
-categories: array of object {name, uuid, createdAt, 3 more }
+categories: array of object { name, uuid, createdAt, 3 more }
 
 </summary>
 
@@ -7526,7 +7456,7 @@ description: optional string
 
 <summary>
 
-schema: optional array of object {key, kind, allowedValues, 11 more }
+schema: optional array of object { key, kind, allowedValues, 11 more }
 
 Parsed FieldDefinition\[] defining custom fields for this category, or null if none.
 
@@ -7540,7 +7470,7 @@ key: string
 
 <summary>
 
-kind: "string"or "number"or "enum"or 3 more
+kind: "string" or "number" or "enum" or 3 more
 
 </summary>
 
@@ -7582,7 +7512,7 @@ allowedValues: optional array of string
 
 <summary>
 
-annotations: optional object {confidence, tlp }
+annotations: optional object { confidence, tlp }
 
 </summary>
 
@@ -7618,7 +7548,7 @@ element: optional unknown
 
 <summary>
 
-enforcement: optional "error"or "warn"or "off"
+enforcement: optional "error" or "warn" or "off"
 
 </summary>
 
@@ -7644,7 +7574,7 @@ One of the following:
 
 <summary>
 
-format: optional "date"or "url"or "duration"or "country"
+format: optional "date" or "url" or "duration" or "country"
 
 </summary>
 
@@ -7690,7 +7620,7 @@ minimum0
 
 <summary>
 
-numberConstraint: optional object {integer, max, min }
+numberConstraint: optional object { integer, max, min }
 
 </summary>
 
@@ -7740,7 +7670,7 @@ updatedAt: optional string
 
 <summary>
 
-CategoryCreateResponse object {name, uuid, createdAt, 3 more }
+CategoryCreateResponse object { name, uuid, createdAt, 3 more }
 
 </summary>
 
@@ -7764,7 +7694,7 @@ description: optional string
 
 <summary>
 
-schema: optional array of object {key, kind, allowedValues, 11 more }
+schema: optional array of object { key, kind, allowedValues, 11 more }
 
 Parsed FieldDefinition\[] defining custom fields for this category, or null if none.
 
@@ -7778,7 +7708,7 @@ key: string
 
 <summary>
 
-kind: "string"or "number"or "enum"or 3 more
+kind: "string" or "number" or "enum" or 3 more
 
 </summary>
 
@@ -7820,7 +7750,7 @@ allowedValues: optional array of string
 
 <summary>
 
-annotations: optional object {confidence, tlp }
+annotations: optional object { confidence, tlp }
 
 </summary>
 
@@ -7856,7 +7786,7 @@ element: optional unknown
 
 <summary>
 
-enforcement: optional "error"or "warn"or "off"
+enforcement: optional "error" or "warn" or "off"
 
 </summary>
 
@@ -7882,7 +7812,7 @@ One of the following:
 
 <summary>
 
-format: optional "date"or "url"or "duration"or "country"
+format: optional "date" or "url" or "duration" or "country"
 
 </summary>
 
@@ -7928,7 +7858,7 @@ minimum0
 
 <summary>
 
-numberConstraint: optional object {integer, max, min }
+numberConstraint: optional object { integer, max, min }
 
 </summary>
 
@@ -7974,7 +7904,7 @@ updatedAt: optional string
 
 <summary>
 
-CategoryEditResponse object {name, uuid, createdAt, 3 more }
+CategoryEditResponse object { name, uuid, createdAt, 3 more }
 
 </summary>
 
@@ -7998,7 +7928,7 @@ description: optional string
 
 <summary>
 
-schema: optional array of object {key, kind, allowedValues, 11 more }
+schema: optional array of object { key, kind, allowedValues, 11 more }
 
 Parsed FieldDefinition\[] defining custom fields for this category, or null if none.
 
@@ -8012,7 +7942,7 @@ key: string
 
 <summary>
 
-kind: "string"or "number"or "enum"or 3 more
+kind: "string" or "number" or "enum" or 3 more
 
 </summary>
 
@@ -8054,7 +7984,7 @@ allowedValues: optional array of string
 
 <summary>
 
-annotations: optional object {confidence, tlp }
+annotations: optional object { confidence, tlp }
 
 </summary>
 
@@ -8090,7 +8020,7 @@ element: optional unknown
 
 <summary>
 
-enforcement: optional "error"or "warn"or "off"
+enforcement: optional "error" or "warn" or "off"
 
 </summary>
 
@@ -8116,7 +8046,7 @@ One of the following:
 
 <summary>
 
-format: optional "date"or "url"or "duration"or "country"
+format: optional "date" or "url" or "duration" or "country"
 
 </summary>
 
@@ -8162,7 +8092,7 @@ minimum0
 
 <summary>
 
-numberConstraint: optional object {integer, max, min }
+numberConstraint: optional object { integer, max, min }
 
 </summary>
 
@@ -8208,7 +8138,7 @@ updatedAt: optional string
 
 <summary>
 
-CategoryDeleteResponse object {uuid }
+CategoryDeleteResponse object { uuid }
 
 </summary>
 
@@ -8232,7 +8162,7 @@ GET/accounts/{account\_id}/cloudforce-one/events/tags/{tag\_uuid}/indicators
 
 <summary>
 
-IndicatorListResponse object {indicators, pagination, failedShardCount, partialResults }
+IndicatorListResponse object { indicators, pagination, failedShardCount, partialResults }
 
 </summary>
 
@@ -8240,7 +8170,7 @@ IndicatorListResponse object {indicators, pagination, failedShardCount, partialR
 
 <summary>
 
-indicators: array of object {createdAt, indicatorType, updatedAt, 7 more }
+indicators: array of object { createdAt, indicatorType, updatedAt, 7 more }
 
 </summary>
 
@@ -8278,7 +8208,7 @@ The dataset ID this indicator belongs to. Included in list responses.
 
 <summary>
 
-relatedEvents: optional array of object {datasetId, eventId, eventDate }
+relatedEvents: optional array of object { datasetId, eventId, eventDate }
 
 Related events, capped by <code>relatedEventsLimit</code> (default 2). Check <code>relatedEventsHasMore</code> to detect a capped list; pass <code>relatedEventsLimit=-1</code> to retrieve all of them.
 
@@ -8312,7 +8242,7 @@ True when this indicator appears in more events than <code>relatedEvents</code> 
 
 <summary>
 
-tags: optional array of object {categoryId, categoryName, uuid, value }
+tags: optional array of object { categoryId, categoryName, uuid, value }
 
 </summary>
 
@@ -8352,7 +8282,7 @@ Traffic Light Protocol designation. UPPERCASE. Possible values: CLEAR, GREEN, AM
 
 <summary>
 
-pagination: object {page, pageSize, totalCount, totalPages }
+pagination: object { page, pageSize, totalCount, totalPages }
 
 </summary>
 
@@ -8406,7 +8336,7 @@ GET/accounts/{account\_id}/cloudforce-one/events/dataset/{dataset\_id}/tags/{tag
 
 <summary>
 
-ByDatasetListResponse object {indicators, pagination, failedShardCount, partialResults }
+ByDatasetListResponse object { indicators, pagination, failedShardCount, partialResults }
 
 </summary>
 
@@ -8414,7 +8344,7 @@ ByDatasetListResponse object {indicators, pagination, failedShardCount, partialR
 
 <summary>
 
-indicators: array of object {createdAt, indicatorType, updatedAt, 7 more }
+indicators: array of object { createdAt, indicatorType, updatedAt, 7 more }
 
 </summary>
 
@@ -8452,7 +8382,7 @@ The dataset ID this indicator belongs to. Included in list responses.
 
 <summary>
 
-relatedEvents: optional array of object {datasetId, eventId, eventDate }
+relatedEvents: optional array of object { datasetId, eventId, eventDate }
 
 Related events, capped by <code>relatedEventsLimit</code> (default 2). Check <code>relatedEventsHasMore</code> to detect a capped list; pass <code>relatedEventsLimit=-1</code> to retrieve all of them.
 
@@ -8486,7 +8416,7 @@ True when this indicator appears in more events than <code>relatedEvents</code> 
 
 <summary>
 
-tags: optional array of object {categoryId, categoryName, uuid, value }
+tags: optional array of object { categoryId, categoryName, uuid, value }
 
 </summary>
 
@@ -8526,7 +8456,7 @@ Traffic Light Protocol designation. UPPERCASE. Possible values: CLEAR, GREEN, AM
 
 <summary>
 
-pagination: object {page, pageSize, totalCount, totalPages }
+pagination: object { page, pageSize, totalCount, totalPages }
 
 </summary>
 
@@ -8582,7 +8512,7 @@ DELETE/accounts/{account\_id}/cloudforce-one/events/event\_tag/{event\_id}
 
 <summary>
 
-EventTagCreateResponse object {success }
+EventTagCreateResponse object { success }
 
 </summary>
 
@@ -8598,7 +8528,7 @@ success: boolean
 
 <summary>
 
-EventTagDeleteResponse object {success }
+EventTagDeleteResponse object { success }
 
 </summary>
 
@@ -8622,7 +8552,7 @@ GET/accounts/{account\_id}/cloudforce-one/events/targetIndustries
 
 <summary>
 
-TargetIndustryListResponse object {items, type }
+TargetIndustryListResponse object { items, type }
 
 </summary>
 
@@ -8630,7 +8560,7 @@ TargetIndustryListResponse object {items, type }
 
 <summary>
 
-items: object {type }
+items: object { type }
 
 </summary>
 
@@ -8662,7 +8592,7 @@ GET/accounts/{account\_id}/cloudforce-one/events/dataset/{dataset\_id}/targetInd
 
 <summary>
 
-ByDatasetListResponse object {items, type }
+ByDatasetListResponse object { items, type }
 
 </summary>
 
@@ -8670,7 +8600,7 @@ ByDatasetListResponse object {items, type }
 
 <summary>
 
-items: object {type }
+items: object { type }
 
 </summary>
 
@@ -8702,7 +8632,7 @@ GET/accounts/{account\_id}/cloudforce-one/events/targetIndustries/catalog
 
 <summary>
 
-CatalogListResponse object {items, type }
+CatalogListResponse object { items, type }
 
 </summary>
 
@@ -8710,7 +8640,7 @@ CatalogListResponse object {items, type }
 
 <summary>
 
-items: object {type }
+items: object { type }
 
 </summary>
 
@@ -8753,7 +8683,7 @@ GET/accounts/{account\_id}/cloudforce-one/v2/threat-signals/search
 
 <summary>
 
-SearchSearchResponse object {count, results }
+SearchSearchResponse object { count, results }
 
 </summary>
 
@@ -8769,7 +8699,7 @@ minimum0
 
 <summary>
 
-results: array of object {article\_id, dataset\_id, event\_id, 3 more }
+results: array of object { article\_id, dataset\_id, event\_id, 3 more }
 
 </summary>
 
@@ -8825,7 +8755,7 @@ GET/accounts/{account\_id}/cloudforce-one/v2/threat-signals/categories
 
 <summary>
 
-CategoryListResponse object {categories }
+CategoryListResponse object { categories }
 
 </summary>
 
@@ -8833,7 +8763,7 @@ CategoryListResponse object {categories }
 
 <summary>
 
-categories: array of object {id, description, name }
+categories: array of object { id, description, name }
 
 </summary>
 
@@ -8893,7 +8823,7 @@ POST/accounts/{account\_id}/cloudforce-one/v2/threat-signals/feeds/poll
 
 <summary>
 
-FeedListResponse object {count, custom\_feed\_count, custom\_feed\_limit, 4 more }
+FeedListResponse object { count, custom\_feed\_count, custom\_feed\_limit, 4 more }
 
 </summary>
 
@@ -8923,7 +8853,7 @@ minimum0
 
 <summary>
 
-feeds: array of object {id, category\_id, category\_name, 13 more }
+feeds: array of object { id, category\_id, category\_name, 13 more }
 
 </summary>
 
@@ -9029,7 +8959,7 @@ total\_count: number
 
 <summary>
 
-FeedCreateResponse object {id, category\_id, category\_name, 13 more }
+FeedCreateResponse object { id, category\_id, category\_name, 13 more }
 
 </summary>
 
@@ -9119,7 +9049,7 @@ url: string
 
 <summary>
 
-FeedEditResponse object {id, category\_id, category\_name, 13 more }
+FeedEditResponse object { id, category\_id, category\_name, 13 more }
 
 </summary>
 
@@ -9209,7 +9139,7 @@ url: string
 
 <summary>
 
-FeedDeleteResponse object {id, category\_id, category\_name, 13 more }
+FeedDeleteResponse object { id, category\_id, category\_name, 13 more }
 
 </summary>
 
@@ -9299,7 +9229,7 @@ url: string
 
 <summary>
 
-FeedPollResponse object {errors, feeds, triggered }
+FeedPollResponse object { errors, feeds, triggered }
 
 </summary>
 
@@ -9311,7 +9241,7 @@ errors: number
 
 <summary>
 
-feeds: array of object {feed\_id, status, workflow\_id, feed\_enabled }
+feeds: array of object { feed\_id, status, workflow\_id, feed\_enabled }
 
 </summary>
 
@@ -9325,7 +9255,7 @@ formatuuid
 
 <summary>
 
-status: "workflow\_created"or "error"
+status: "workflow\_created" or "error"
 
 </summary>
 
@@ -9391,7 +9321,7 @@ PUT/accounts/{account\_id}/cloudforce-one/v2/threat-signals/feeds/{feed\_id}/ski
 
 <summary>
 
-SkillGetResponse object {feed\_id, skills }
+SkillGetResponse object { feed\_id, skills }
 
 </summary>
 
@@ -9405,7 +9335,7 @@ formatuuid
 
 <summary>
 
-skills: array of object {id, config, created\_at, 7 more }
+skills: array of object { id, config, created\_at, 7 more }
 
 </summary>
 
@@ -9447,7 +9377,7 @@ prompt: string
 
 <summary>
 
-source: "default"or "custom"
+source: "default" or "custom"
 
 <code>default</code> for Cloudforce One managed skills (read-only), <code>custom</code> for account skills.
 
@@ -9487,7 +9417,7 @@ updated\_at: string
 
 <summary>
 
-SkillUpdateResponse object {feed\_id, skills }
+SkillUpdateResponse object { feed\_id, skills }
 
 </summary>
 
@@ -9501,7 +9431,7 @@ formatuuid
 
 <summary>
 
-skills: array of object {position, skill\_id }
+skills: array of object { position, skill\_id }
 
 </summary>
 
@@ -9547,7 +9477,7 @@ PATCH/accounts/{account\_id}/cloudforce-one/v2/threat-signals/articles/{article\
 
 <summary>
 
-ArticleListResponse object {articles, has\_more, next\_cursor, 2 more }
+ArticleListResponse object { articles, has\_more, next\_cursor, 2 more }
 
 </summary>
 
@@ -9555,7 +9485,7 @@ ArticleListResponse object {articles, has\_more, next\_cursor, 2 more }
 
 <summary>
 
-articles: array of object {id, dataset\_id, event\_id, 13 more }
+articles: array of object { id, dataset\_id, event\_id, 13 more }
 
 </summary>
 
@@ -9611,7 +9541,7 @@ read\_at: string
 
 <summary>
 
-relevance: object {band, pir\_id, pirs }
+relevance: object { band, pir\_id, pirs }
 
 Beta. The article’s relevance to the account’s active Priority Intelligence Requirements. Null when the article has not been scored against them, including when the account has no active PIRs, or has not been scored against the requested pir\_id.
 
@@ -9621,7 +9551,7 @@ Beta. The article’s relevance to the account’s active Priority Intelligence 
 
 <summary>
 
-band: "low"or "medium"or "high"
+band: "low" or "medium" or "high"
 
 Beta. How relevant the article is to a Priority Intelligence Requirement: high, medium, or low. Cloudflare may change the scores behind each band as relevance scoring is calibrated.
 
@@ -9657,7 +9587,7 @@ formatuuid
 
 <summary>
 
-pirs: array of object {band, pir\_id, requirement\_basis }
+pirs: array of object { band, pir\_id, requirement\_basis }
 
 Beta. Every active PIR the article was scored against, most relevant first. Draft and deleted PIRs are excluded.
 
@@ -9667,7 +9597,7 @@ Beta. Every active PIR the article was scored against, most relevant first. Draf
 
 <summary>
 
-band: "low"or "medium"or "high"
+band: "low" or "medium" or "high"
 
 Beta. How relevant the article is to a Priority Intelligence Requirement: high, medium, or low. Cloudflare may change the scores behind each band as relevance scoring is calibrated.
 
@@ -9701,7 +9631,7 @@ formatuuid
 
 <summary>
 
-requirement\_basis: "current"or "saved"
+requirement\_basis: "current" or "saved"
 
 Beta. current: scored against the PIR’s current requirement. saved: the PIR’s structured definition no longer generates a valid requirement, for example because its topic was retired, so the requirement from its last save was scored instead.
 
@@ -9733,7 +9663,7 @@ One of the following:
 
 <summary>
 
-relevance\_coverage: "current"or "stale"or "pending"or "unavailable"
+relevance\_coverage: "current" or "stale" or "pending" or "unavailable"
 
 Beta. Whether relevance and severity reflect the account’s current Priority Intelligence Requirements, organization profile, and the article’s current content. current: they do. stale: they were scored before a change; articles fetched in the last 7 days are being rescored, older articles keep these scores. pending: not scored yet, fetched in the last 7 days. unavailable: not scored, and will not be scored automatically, because it was fetched more than 7 days ago or processing failed. Updates to managed topics can take up to a day to mark scores stale. Null when the account has no active PIRs or none of its articles has been scored yet.
 
@@ -9765,7 +9695,7 @@ One of the following:
 
 <summary>
 
-severity: "informational"or "low"or "medium"or 2 more
+severity: "informational" or "low" or "medium" or 2 more
 
 Beta. Intrinsic article severity band, from informational to critical, independent of any organisation or Priority Intelligence Requirement. Null when the account has no active Priority Intelligence Requirements, scoring has not completed, or a historic article has not entered an automatic rescore window.
 
@@ -9807,7 +9737,7 @@ Persisted enrichment summary. Null until enrichment produces a summary.
 
 <summary>
 
-tags: array of object {applied\_by, categoryId, uuid, value }
+tags: array of object { applied\_by, categoryId, uuid, value }
 
 </summary>
 
@@ -9815,7 +9745,7 @@ tags: array of object {applied\_by, categoryId, uuid, value }
 
 <summary>
 
-applied\_by: "ai"or "analyst"or "system"
+applied\_by: "ai" or "analyst" or "system"
 
 </summary>
 
@@ -9889,7 +9819,7 @@ total\_count\_is\_exact: boolean
 
 <summary>
 
-ArticleBulkEditResponse object {updated\_count }
+ArticleBulkEditResponse object { updated\_count }
 
 </summary>
 
@@ -9905,7 +9835,7 @@ updated\_count: number
 
 <summary>
 
-ArticleGetResponse object {id, bullet\_points, content\_r2\_key, 19 more }
+ArticleGetResponse object { id, bullet\_points, content\_r2\_key, 19 more }
 
 </summary>
 
@@ -9919,7 +9849,7 @@ formatuuid
 
 <summary>
 
-bullet\_points: object {impact, what\_happened, who\_affected }
+bullet\_points: object { impact, what\_happened, who\_affected }
 
 </summary>
 
@@ -9961,7 +9891,7 @@ fetched\_at: string
 
 <summary>
 
-indicator\_extraction\_status: "in\_progress"or "complete"or "failed"or "unknown"
+indicator\_extraction\_status: "in\_progress" or "complete" or "failed" or "unknown"
 
 Progress of the article’s indicator extraction and IOC contextualization run. complete and failed are terminal; unknown means no run has been recorded.
 
@@ -10013,7 +9943,7 @@ read\_at: string
 
 <summary>
 
-relevance: object {band, pir\_id, pirs }
+relevance: object { band, pir\_id, pirs }
 
 Beta. The article’s relevance to the account’s active Priority Intelligence Requirements. Null when the article has not been scored against them, including when the account has no active PIRs, or has not been scored against the requested pir\_id.
 
@@ -10023,7 +9953,7 @@ Beta. The article’s relevance to the account’s active Priority Intelligence 
 
 <summary>
 
-band: "low"or "medium"or "high"
+band: "low" or "medium" or "high"
 
 Beta. How relevant the article is to a Priority Intelligence Requirement: high, medium, or low. Cloudflare may change the scores behind each band as relevance scoring is calibrated.
 
@@ -10059,7 +9989,7 @@ formatuuid
 
 <summary>
 
-pirs: array of object {band, pir\_id, requirement\_basis }
+pirs: array of object { band, pir\_id, requirement\_basis }
 
 Beta. Every active PIR the article was scored against, most relevant first. Draft and deleted PIRs are excluded.
 
@@ -10069,7 +9999,7 @@ Beta. Every active PIR the article was scored against, most relevant first. Draf
 
 <summary>
 
-band: "low"or "medium"or "high"
+band: "low" or "medium" or "high"
 
 Beta. How relevant the article is to a Priority Intelligence Requirement: high, medium, or low. Cloudflare may change the scores behind each band as relevance scoring is calibrated.
 
@@ -10103,7 +10033,7 @@ formatuuid
 
 <summary>
 
-requirement\_basis: "current"or "saved"
+requirement\_basis: "current" or "saved"
 
 Beta. current: scored against the PIR’s current requirement. saved: the PIR’s structured definition no longer generates a valid requirement, for example because its topic was retired, so the requirement from its last save was scored instead.
 
@@ -10135,7 +10065,7 @@ One of the following:
 
 <summary>
 
-relevance\_coverage: "current"or "stale"or "pending"or "unavailable"
+relevance\_coverage: "current" or "stale" or "pending" or "unavailable"
 
 Beta. Whether relevance and severity reflect the account’s current Priority Intelligence Requirements, organization profile, and the article’s current content. current: they do. stale: they were scored before a change; articles fetched in the last 7 days are being rescored, older articles keep these scores. pending: not scored yet, fetched in the last 7 days. unavailable: not scored, and will not be scored automatically, because it was fetched more than 7 days ago or processing failed. Updates to managed topics can take up to a day to mark scores stale. Null when the account has no active PIRs or none of its articles has been scored yet.
 
@@ -10167,7 +10097,7 @@ One of the following:
 
 <summary>
 
-severity: "informational"or "low"or "medium"or 2 more
+severity: "informational" or "low" or "medium" or 2 more
 
 Beta. Intrinsic article severity band, from informational to critical, independent of any organisation or Priority Intelligence Requirement. Null when the account has no active Priority Intelligence Requirements, scoring has not completed, or a historic article has not entered an automatic rescore window.
 
@@ -10217,7 +10147,7 @@ summary\_r2\_key: string
 
 <summary>
 
-tags: array of object {applied\_by, categoryId, uuid, value }
+tags: array of object { applied\_by, categoryId, uuid, value }
 
 </summary>
 
@@ -10225,7 +10155,7 @@ tags: array of object {applied\_by, categoryId, uuid, value }
 
 <summary>
 
-applied\_by: "ai"or "analyst"or "system"
+applied\_by: "ai" or "analyst" or "system"
 
 </summary>
 
@@ -10287,7 +10217,7 @@ tag\_skill\_version: optional string
 
 <summary>
 
-ArticleEditResponse object {id, bullet\_points, content\_r2\_key, 17 more }
+ArticleEditResponse object { id, bullet\_points, content\_r2\_key, 17 more }
 
 </summary>
 
@@ -10301,7 +10231,7 @@ formatuuid
 
 <summary>
 
-bullet\_points: object {impact, what\_happened, who\_affected }
+bullet\_points: object { impact, what\_happened, who\_affected }
 
 </summary>
 
@@ -10343,7 +10273,7 @@ fetched\_at: string
 
 <summary>
 
-indicator\_extraction\_status: "in\_progress"or "complete"or "failed"or "unknown"
+indicator\_extraction\_status: "in\_progress" or "complete" or "failed" or "unknown"
 
 Progress of the article’s indicator extraction and IOC contextualization run. complete and failed are terminal; unknown means no run has been recorded.
 
@@ -10395,7 +10325,7 @@ read\_at: string
 
 <summary>
 
-severity: "informational"or "low"or "medium"or 2 more
+severity: "informational" or "low" or "medium" or 2 more
 
 Beta. Intrinsic article severity band, from informational to critical, independent of any organisation or Priority Intelligence Requirement. Null when the account has no active Priority Intelligence Requirements, scoring has not completed, or a historic article has not entered an automatic rescore window.
 
@@ -10445,7 +10375,7 @@ summary\_r2\_key: string
 
 <summary>
 
-tags: array of object {applied\_by, categoryId, uuid, value }
+tags: array of object { applied\_by, categoryId, uuid, value }
 
 </summary>
 
@@ -10453,7 +10383,7 @@ tags: array of object {applied\_by, categoryId, uuid, value }
 
 <summary>
 
-applied\_by: "ai"or "analyst"or "system"
+applied\_by: "ai" or "analyst" or "system"
 
 </summary>
 
@@ -10543,7 +10473,7 @@ POST/accounts/{account\_id}/cloudforce-one/v2/threat-signals/articles/{article\_
 
 <summary>
 
-TagCreateResponse object {applied\_by, categoryId, uuid, value }
+TagCreateResponse object { applied\_by, categoryId, uuid, value }
 
 </summary>
 
@@ -10551,7 +10481,7 @@ TagCreateResponse object {applied\_by, categoryId, uuid, value }
 
 <summary>
 
-applied\_by: "ai"or "analyst"or "system"
+applied\_by: "ai" or "analyst" or "system"
 
 </summary>
 
@@ -10597,7 +10527,7 @@ value: string
 
 <summary>
 
-TagDeleteResponse object {applied\_by, categoryId, uuid, value }
+TagDeleteResponse object { applied\_by, categoryId, uuid, value }
 
 </summary>
 
@@ -10605,7 +10535,7 @@ TagDeleteResponse object {applied\_by, categoryId, uuid, value }
 
 <summary>
 
-applied\_by: "ai"or "analyst"or "system"
+applied\_by: "ai" or "analyst" or "system"
 
 </summary>
 
@@ -10651,7 +10581,7 @@ value: string
 
 <summary>
 
-TagGenerateResponse object {tag\_skill\_version, tags }
+TagGenerateResponse object { tag\_skill\_version, tags }
 
 </summary>
 
@@ -10663,7 +10593,7 @@ tag\_skill\_version: string
 
 <summary>
 
-tags: array of object {applied\_by, categoryId, uuid, value }
+tags: array of object { applied\_by, categoryId, uuid, value }
 
 Final hydrated assignment set; may be empty when no applicable tags are selected.
 
@@ -10673,7 +10603,7 @@ Final hydrated assignment set; may be empty when no applicable tags are selected
 
 <summary>
 
-applied\_by: "ai"or "analyst"or "system"
+applied\_by: "ai" or "analyst" or "system"
 
 </summary>
 
@@ -10731,7 +10661,7 @@ GET/accounts/{account\_id}/cloudforce-one/v2/threat-signals/articles/{article\_i
 
 <summary>
 
-SkillOutputGetResponse object {article\_id, custom\_output, custom\_output\_parse\_status, 4 more }
+SkillOutputGetResponse object { article\_id, custom\_output, custom\_output\_parse\_status, 4 more }
 
 </summary>
 
@@ -10747,7 +10677,7 @@ formatuuid
 
 <summary>
 
-custom\_output: stringor numberor booleanor 2 more
+custom\_output: string or number or boolean or 2 more
 
 Untrusted model output: parsed JSON when the stored completion text is valid JSON, otherwise raw text. Consumers must safely render or escape it.
 
@@ -10775,7 +10705,7 @@ map\[unknown]
 
 <summary>
 
-array of stringor numberor booleanor map\[unknown]
+array of string or number or boolean or map\[unknown]
 
 </summary>
 
@@ -10809,7 +10739,7 @@ map\[unknown]
 
 <summary>
 
-custom\_output\_parse\_status: "parsed"or "invalid\_json"
+custom\_output\_parse\_status: "parsed" or "invalid\_json"
 
 Whether custom\_output was parsed from the stored completion text.
 
@@ -10833,7 +10763,7 @@ One of the following:
 
 <summary>
 
-custom\_output\_validation\_status: "valid"or "invalid\_json"or "schema\_invalid"or "unknown"
+custom\_output\_validation\_status: "valid" or "invalid\_json" or "schema\_invalid" or "unknown"
 
 Non-blocking validation classification for untrusted model output. <code>unknown</code> is retained only for historical rows.
 
@@ -10895,7 +10825,7 @@ GET/accounts/{account\_id}/cloudforce-one/v2/threat-signals/indicators
 
 <summary>
 
-IndicatorListResponse object {indicators, pagination }
+IndicatorListResponse object { indicators, pagination }
 
 </summary>
 
@@ -10903,7 +10833,7 @@ IndicatorListResponse object {indicators, pagination }
 
 <summary>
 
-indicators: array of object {id, article\_id, article\_title, 5 more }
+indicators: array of object { id, article\_id, article\_title, 5 more }
 
 </summary>
 
@@ -10955,7 +10885,7 @@ value: string
 
 <summary>
 
-pagination: object {count, cursor, has\_more, 4 more }
+pagination: object { count, cursor, has\_more, 4 more }
 
 </summary>
 
@@ -11035,7 +10965,7 @@ DELETE/accounts/{account\_id}/cloudforce-one/v2/threat-signals/skills/{skill\_id
 
 <summary>
 
-SkillListResponse object {count, custom\_skills\_available, page, 3 more }
+SkillListResponse object { count, custom\_skills\_available, page, 3 more }
 
 </summary>
 
@@ -11063,7 +10993,7 @@ per\_page: number
 
 <summary>
 
-skills: array of object {id, config, created\_at, 7 more }
+skills: array of object { id, config, created\_at, 7 more }
 
 </summary>
 
@@ -11105,7 +11035,7 @@ prompt: string
 
 <summary>
 
-source: "default"or "custom"
+source: "default" or "custom"
 
 <code>default</code> for Cloudforce One managed skills (read-only), <code>custom</code> for account skills.
 
@@ -11149,7 +11079,7 @@ total\_count: number
 
 <summary>
 
-SkillCreateResponse object {id, config, created\_at, 7 more }
+SkillCreateResponse object { id, config, created\_at, 7 more }
 
 </summary>
 
@@ -11191,7 +11121,7 @@ prompt: string
 
 <summary>
 
-source: "default"or "custom"
+source: "default" or "custom"
 
 <code>default</code> for Cloudforce One managed skills (read-only), <code>custom</code> for account skills.
 
@@ -11227,7 +11157,7 @@ updated\_at: string
 
 <summary>
 
-SkillGetResponse object {id, config, created\_at, 7 more }
+SkillGetResponse object { id, config, created\_at, 7 more }
 
 </summary>
 
@@ -11269,7 +11199,7 @@ prompt: string
 
 <summary>
 
-source: "default"or "custom"
+source: "default" or "custom"
 
 <code>default</code> for Cloudforce One managed skills (read-only), <code>custom</code> for account skills.
 
@@ -11305,7 +11235,7 @@ updated\_at: string
 
 <summary>
 
-SkillEditResponse object {id, config, created\_at, 7 more }
+SkillEditResponse object { id, config, created\_at, 7 more }
 
 </summary>
 
@@ -11347,7 +11277,7 @@ prompt: string
 
 <summary>
 
-source: "default"or "custom"
+source: "default" or "custom"
 
 <code>default</code> for Cloudforce One managed skills (read-only), <code>custom</code> for account skills.
 
@@ -11383,7 +11313,7 @@ updated\_at: string
 
 <summary>
 
-SkillDeleteResponse object {id, config, created\_at, 7 more }
+SkillDeleteResponse object { id, config, created\_at, 7 more }
 
 </summary>
 
@@ -11425,7 +11355,7 @@ prompt: string
 
 <summary>
 
-source: "default"or "custom"
+source: "default" or "custom"
 
 <code>default</code> for Cloudforce One managed skills (read-only), <code>custom</code> for account skills.
 
@@ -11473,7 +11403,7 @@ PUT/accounts/{account\_id}/cloudforce-one/v2/threat-signals/skills/{skill\_id}/t
 
 <summary>
 
-TagCategoryGetResponse object {category\_uuids, skill\_id }
+TagCategoryGetResponse object { category\_uuids, skill\_id }
 
 </summary>
 
@@ -11493,7 +11423,7 @@ skill\_id: "default-tagging-skill"
 
 <summary>
 
-TagCategoryUpdateResponse object {category\_uuids, skill\_id }
+TagCategoryUpdateResponse object { category\_uuids, skill\_id }
 
 </summary>
 

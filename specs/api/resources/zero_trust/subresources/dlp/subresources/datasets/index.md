@@ -46,7 +46,7 @@ DELETE/accounts/{account\_id}/dlp/datasets/{dataset\_id}
 
 <summary>
 
-Dataset object {id, columns, created\_at, 9 more }
+Dataset object { id, columns, created\_at, 9 more }
 
 </summary>
 
@@ -60,7 +60,7 @@ formatuuid
 
 <summary>
 
-columns: array of object {entry\_id, header\_name, num\_cells, upload\_status }
+columns: array of object { entry\_id, header\_name, num\_cells, upload\_status }
 
 </summary>
 
@@ -84,7 +84,7 @@ formatint64
 
 <summary>
 
-upload\_status: "empty"or "uploading"or "pending"or 3 more
+upload\_status: "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -154,7 +154,7 @@ secret: boolean
 
 <summary>
 
-status: "empty"or "uploading"or "pending"or 3 more
+status: "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -202,7 +202,7 @@ formatdate-time
 
 <summary>
 
-uploads: array of object {num\_cells, status, version }
+uploads: array of object { num\_cells, status, version }
 
 </summary>
 
@@ -216,7 +216,7 @@ formatint64
 
 <summary>
 
-status: "empty"or "uploading"or "pending"or 3 more
+status: "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -292,7 +292,7 @@ formatuuid
 
 <summary>
 
-columns: array of object {entry\_id, header\_name, num\_cells, upload\_status }
+columns: array of object { entry\_id, header\_name, num\_cells, upload\_status }
 
 </summary>
 
@@ -316,7 +316,7 @@ formatint64
 
 <summary>
 
-upload\_status: "empty"or "uploading"or "pending"or 3 more
+upload\_status: "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -386,7 +386,7 @@ secret: boolean
 
 <summary>
 
-status: "empty"or "uploading"or "pending"or 3 more
+status: "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -434,7 +434,7 @@ formatdate-time
 
 <summary>
 
-uploads: array of object {num\_cells, status, version }
+uploads: array of object { num\_cells, status, version }
 
 </summary>
 
@@ -448,7 +448,7 @@ formatint64
 
 <summary>
 
-status: "empty"or "uploading"or "pending"or 3 more
+status: "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -510,7 +510,7 @@ The description of the dataset.
 
 <summary>
 
-DatasetCreation object {dataset, encoding\_version, max\_cells, 2 more }
+DatasetCreation object { dataset, encoding\_version, max\_cells, 2 more }
 
 </summary>
 
@@ -574,7 +574,7 @@ POST/accounts/{account\_id}/dlp/datasets/{dataset\_id}/upload/{version}
 
 <summary>
 
-NewVersion object {encoding\_version, max\_cells, version, 3 more }
+NewVersion object { encoding\_version, max\_cells, version, 3 more }
 
 </summary>
 
@@ -608,7 +608,7 @@ case\_sensitive: optional boolean
 
 <summary>
 
-columns: optional array of object {entry\_id, header\_name, num\_cells, upload\_status }
+columns: optional array of object { entry\_id, header\_name, num\_cells, upload\_status }
 
 </summary>
 
@@ -632,7 +632,7 @@ formatint64
 
 <summary>
 
-upload\_status: "empty"or "uploading"or "pending"or 3 more
+upload\_status: "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -692,7 +692,7 @@ POST/accounts/{account\_id}/dlp/datasets/{dataset\_id}/versions/{version}
 
 <summary>
 
-VersionCreateResponse object {entry\_id, header\_name, num\_cells, upload\_status }
+VersionCreateResponse object { entry\_id, header\_name, num\_cells, upload\_status }
 
 </summary>
 
@@ -716,7 +716,7 @@ formatint64
 
 <summary>
 
-upload\_status: "empty"or "uploading"or "pending"or 3 more
+upload\_status: "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -766,7 +766,7 @@ POST/accounts/{account\_id}/dlp/datasets/{dataset\_id}/versions/{version}/entrie
 
 <summary>
 
-EntryCreateResponse object {entry\_id, header\_name, num\_cells, upload\_status }
+EntryCreateResponse object { entry\_id, header\_name, num\_cells, upload\_status }
 
 </summary>
 
@@ -790,7 +790,7 @@ formatint64
 
 <summary>
 
-upload\_status: "empty"or "uploading"or "pending"or 3 more
+upload\_status: "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 

@@ -64,7 +64,7 @@ tags: array of string
 
 <summary>
 
-result: object {success }
+result: object { success }
 
 </summary>
 

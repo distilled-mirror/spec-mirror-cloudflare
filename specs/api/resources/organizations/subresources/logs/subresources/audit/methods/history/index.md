@@ -116,7 +116,7 @@ The cursor is an opaque token used to paginate through large sets of records. It
 
 <summary>
 
-direction: optional "desc"or "asc"
+direction: optional "desc" or "asc"
 
 Sets sorting order.
 
@@ -152,7 +152,7 @@ minimum1
 
 <summary>
 
-errors: array of object {message }
+errors: array of object { message }
 
 </summary>
 
@@ -168,7 +168,7 @@ message: string
 
 <summary>
 
-result: array of object {id, action, actor, 3 more }
+result: array of object { id, action, actor, 3 more }
 
 </summary>
 
@@ -184,7 +184,7 @@ maxLength32
 
 <summary>
 
-action: optional object {description, result, time, type }
+action: optional object { description, result, time, type }
 
 Provides information about the action performed.
 
@@ -224,7 +224,7 @@ A short string that describes the action that was performed.
 
 <summary>
 
-actor: optional object {id, context, email, 4 more }
+actor: optional object { id, context, email, 4 more }
 
 Provides details about the actor who performed the action.
 
@@ -240,7 +240,7 @@ The ID of the actor who performed the action. If a user performed the action, th
 
 <summary>
 
-context: optional "api"or "api\_key"or "api\_token"or 3 more
+context: optional "api" or "api\_key" or "api\_token" or 3 more
 
 The context in which the action was initiated.
 
@@ -313,7 +313,7 @@ The API token name when the actor context is an api\_token or oauth.
 
 <summary>
 
-type: optional "cloudflare\_admin"or "system"or "user"
+type: optional "cloudflare\_admin" or "system" or "user"
 
 The type of actor.
 
@@ -345,7 +345,7 @@ One of the following:
 
 <summary>
 
-organization: optional object {id }
+organization: optional object { id }
 
 Contains organization related information.
 
@@ -365,7 +365,7 @@ A unique identifier for the organization.
 
 <summary>
 
-raw: optional object {cf\_ray\_id, method, status\_code, 2 more }
+raw: optional object { cf\_ray\_id, method, status\_code, 2 more }
 
 Provides raw information about the request and response.
 
@@ -409,7 +409,7 @@ The client’s user agent string sent with the request.
 
 <summary>
 
-resource: optional object {id, product, request, 3 more }
+resource: optional object { id, product, request, 3 more }
 
 Provides details about the affected resource.
 
@@ -459,7 +459,7 @@ The type of the resource.
 
 <summary>
 
-result\_info: object {count, history\_status, cursor }
+result\_info: object { count, history\_status, cursor }
 
 Provides information about the result of the request, including count, cursor, and identification quality.
 
@@ -475,7 +475,7 @@ The number of records returned in the response.
 
 <summary>
 
-history\_status: "exact"or "approximate"or "unavailable"
+history\_status: "exact" or "approximate" or "unavailable"
 
 Indicates the quality of the resource identification used to derive the history.
 

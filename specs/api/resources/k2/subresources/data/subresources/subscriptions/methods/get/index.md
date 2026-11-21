@@ -48,7 +48,7 @@ Specifies the ID of the subscription.
 
 <summary>
 
-errors: array of object {message, code }
+errors: array of object { message, code }
 
 </summary>
 
@@ -68,7 +68,7 @@ code: optional number
 
 <summary>
 
-messages: array of object {message, code }
+messages: array of object { message, code }
 
 </summary>
 
@@ -88,7 +88,7 @@ code: optional number
 
 <summary>
 
-result: object {id, created\_at, modified\_at, 2 more }
+result: object { id, created\_at, modified\_at, 2 more }
 
 </summary>
 
@@ -118,7 +118,7 @@ name: string
 
 <summary>
 
-start\_at: object {type }
+start\_at: object { type }
 
 </summary>
 
@@ -126,7 +126,7 @@ start\_at: object {type }
 
 <summary>
 
-type: "earliest"or "latest"
+type: "earliest" or "latest"
 
 </summary>
 

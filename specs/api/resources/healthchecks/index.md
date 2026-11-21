@@ -46,7 +46,7 @@ DELETE/zones/{zone\_id}/healthchecks/{healthcheck\_id}
 
 <summary>
 
-CheckRegion = "WNAM"or "ENAM"or "WEU"or 11 more
+CheckRegion = "WNAM" or "ENAM" or "WEU" or 11 more
 
 WNAM: Western North America, ENAM: Eastern North America, WEU: Western Europe, EEU: Eastern Europe, NSAM: Northern South America, SSAM: Southern South America, OC: Oceania, ME: Middle East, NAF: North Africa, SAF: South Africa, IN: India, SEAS: South East Asia, NEAS: North East Asia, ALL\_REGIONS: all regions (BUSINESS and ENTERPRISE customers only).
 
@@ -118,7 +118,7 @@ One of the following:
 
 <summary>
 
-Healthcheck object {id, address, check\_regions, 15 more }
+Healthcheck object { id, address, check\_regions, 15 more }
 
 </summary>
 
@@ -272,7 +272,7 @@ The number of retries to attempt in case of a timeout before marking the origin 
 
 <summary>
 
-status: optional "unknown"or "healthy"or "unhealthy"or "suspended"
+status: optional "unknown" or "healthy" or "unhealthy" or "suspended"
 
 The current status of the origin server according to the health check.
 
@@ -332,7 +332,7 @@ The protocol to use for the health check. Currently supported protocols are ‘H
 
 <summary>
 
-HTTPConfiguration object {allow\_insecure, expected\_body, expected\_codes, 5 more }
+HTTPConfiguration object { allow\_insecure, expected\_body, expected\_codes, 5 more }
 
 Parameters specific to an HTTP or HTTPS health check.
 
@@ -372,7 +372,7 @@ The HTTP request headers to send in the health check. It is recommended you set 
 
 <summary>
 
-method: optional "GET"or "HEAD"
+method: optional "GET" or "HEAD"
 
 The HTTP method to use for the health check.
 
@@ -412,7 +412,7 @@ Port number to connect to for the health check. Defaults to 80 if type is HTTP o
 
 <summary>
 
-QueryHealthcheck object {address, name, check\_regions, 10 more }
+QueryHealthcheck object { address, name, check\_regions, 10 more }
 
 </summary>
 
@@ -568,7 +568,7 @@ The protocol to use for the health check. Currently supported protocols are ‘H
 
 <summary>
 
-TCPConfiguration object {method, port }
+TCPConfiguration object { method, port }
 
 Parameters specific to TCP health check.
 
@@ -594,7 +594,7 @@ Port number to connect to for the health check. Defaults to 80.
 
 <summary>
 
-HealthcheckDeleteResponse object {id }
+HealthcheckDeleteResponse object { id }
 
 </summary>
 
@@ -630,7 +630,7 @@ DELETE/zones/{zone\_id}/healthchecks/preview/{healthcheck\_id}
 
 <summary>
 
-PreviewDeleteResponse object {id }
+PreviewDeleteResponse object { id }
 
 </summary>
 

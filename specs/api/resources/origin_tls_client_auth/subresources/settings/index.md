@@ -32,7 +32,7 @@ PUT/zones/{zone\_id}/origin\_tls\_client\_auth/settings
 
 <summary>
 
-SettingGetResponse object {enabled }
+SettingGetResponse object { enabled }
 
 </summary>
 
@@ -50,7 +50,7 @@ Indicates whether zone-level authenticated origin pulls is enabled.
 
 <summary>
 
-SettingUpdateResponse object {enabled }
+SettingUpdateResponse object { enabled }
 
 </summary>
 

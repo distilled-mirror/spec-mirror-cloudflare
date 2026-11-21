@@ -30,7 +30,7 @@ GET/accounts/{account\_id}/abuse-reports/submitted/{report\_id}/emails
 
 <summary>
 
-EmailListResponse object {emails }
+EmailListResponse object { emails }
 
 </summary>
 
@@ -38,7 +38,7 @@ EmailListResponse object {emails }
 
 <summary>
 
-emails: array of object {id, body, recipient, 2 more }
+emails: array of object { id, body, recipient, 2 more }
 
 </summary>
 

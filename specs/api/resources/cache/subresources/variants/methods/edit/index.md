@@ -74,7 +74,7 @@ maxLength32
 
 <summary>
 
-value: object {avif, bmp, gif, 8 more }
+value: object { avif, bmp, gif, 8 more }
 
 Value of the zone setting.
 
@@ -178,7 +178,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -220,7 +220,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -246,7 +246,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, editable, value, modified\_on }
+result: optional object { id, editable, value, modified\_on }
 
 </summary>
 
@@ -266,7 +266,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: object {avif, bmp, gif, 8 more }
+value: object { avif, bmp, gif, 8 more }
 
 Value of the zone setting.
 

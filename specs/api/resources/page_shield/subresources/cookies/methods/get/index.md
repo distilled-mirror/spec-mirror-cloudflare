@@ -82,7 +82,7 @@ maxLength32
 
 <summary>
 
-result: object {id, first\_seen\_at, host, 11 more }
+result: object { id, first\_seen\_at, host, 11 more }
 
 </summary>
 
@@ -118,7 +118,7 @@ name: string
 
 <summary>
 
-type: "first\_party"or "unknown"
+type: "first\_party" or "unknown"
 
 </summary>
 
@@ -166,7 +166,7 @@ path\_attribute: optional string
 
 <summary>
 
-same\_site\_attribute: optional "lax"or "strict"or "none"
+same\_site\_attribute: optional "lax" or "strict" or "none"
 
 </summary>
 
@@ -228,7 +228,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -270,7 +270,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 

@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Zone Settings Write``Zone Settings Read``SSL and Certificates Write``SSL and Certificates Read`
+`Workers Metadata Read-Only``Workers Editor``Workers Content Read-Only``Workers Admin``Zone Settings Write``Zone Settings Read``Workers Routes Write``Workers Routes Read``SSL and Certificates Write``SSL and Certificates Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -94,7 +94,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -136,7 +136,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -156,7 +156,7 @@ pointer: optional string
 
 <summary>
 
-result: object {id, editable, modified\_on, 2 more }
+result: object { id, editable, modified\_on, 2 more }
 
 </summary>
 
@@ -182,7 +182,7 @@ formatdate-time
 
 <summary>
 
-value: "auto"or "custom"
+value: "auto" or "custom"
 
 Current setting of the automatic SSL/TLS.
 

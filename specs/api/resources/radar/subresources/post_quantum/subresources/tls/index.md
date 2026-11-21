@@ -30,7 +30,7 @@ GET/radar/post\_quantum/tls/support
 
 <summary>
 
-TLSSupportResponse object {bugs, host, kex, 2 more }
+TLSSupportResponse object { bugs, host, kex, 2 more }
 
 </summary>
 
@@ -38,7 +38,7 @@ TLSSupportResponse object {bugs, host, kex, 2 more }
 
 <summary>
 
-bugs: object {hrrFailure, splitClientHello, unknownKeyshare }
+bugs: object { hrrFailure, splitClientHello, unknownKeyshare }
 
 </summary>
 

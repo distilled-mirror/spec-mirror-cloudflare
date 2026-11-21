@@ -42,7 +42,7 @@ GET/accounts/{account\_id}/access/saml\_certificates/{saml\_cert\_set\_id}/pem
 
 <summary>
 
-SAMLCertificateListResponse object {created\_at, uid, updated\_at, 2 more }
+SAMLCertificateListResponse object { created\_at, uid, updated\_at, 2 more }
 
 </summary>
 
@@ -72,7 +72,7 @@ formatdate-time
 
 <summary>
 
-current\_certificate: optional object {is\_current, not\_after, public\_certificate, uid }
+current\_certificate: optional object { is\_current, not\_after, public\_certificate, uid }
 
 The current active certificate
 
@@ -122,7 +122,7 @@ The previous certificate (maintained during rotation period). May be null when n
 
 <summary>
 
-SAMLCertificateGetResponse object {created\_at, uid, updated\_at, 2 more }
+SAMLCertificateGetResponse object { created\_at, uid, updated\_at, 2 more }
 
 </summary>
 
@@ -152,7 +152,7 @@ formatdate-time
 
 <summary>
 
-current\_certificate: optional object {is\_current, not\_after, public\_certificate, uid }
+current\_certificate: optional object { is\_current, not\_after, public\_certificate, uid }
 
 The current active certificate
 
@@ -202,7 +202,7 @@ The previous certificate (maintained during rotation period). May be null when n
 
 <summary>
 
-SAMLCertificateRotateResponse object {created\_at, uid, updated\_at, 2 more }
+SAMLCertificateRotateResponse object { created\_at, uid, updated\_at, 2 more }
 
 </summary>
 
@@ -232,7 +232,7 @@ formatdate-time
 
 <summary>
 
-current\_certificate: optional object {is\_current, not\_after, public\_certificate, uid }
+current\_certificate: optional object { is\_current, not\_after, public\_certificate, uid }
 
 The current active certificate
 

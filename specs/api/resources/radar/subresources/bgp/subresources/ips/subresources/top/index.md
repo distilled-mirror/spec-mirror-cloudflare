@@ -32,7 +32,7 @@ GET/radar/bgp/ips/top/ases
 
 <summary>
 
-TopAsesResponse object {anchorTs, asns, country, metric }
+TopAsesResponse object { anchorTs, asns, country, metric }
 
 </summary>
 
@@ -46,7 +46,7 @@ formatdate-time
 
 <summary>
 
-asns: array of object {asn, v4\_24s, v6\_48s }
+asns: array of object { asn, v4\_24s, v6\_48s }
 
 </summary>
 

@@ -66,7 +66,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 <summary>
 
-aggInterval: optional "15m"or "1h"or "1d"or "1w"
+aggInterval: optional "15m" or "1h" or "1d" or "1w"
 
 Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to <a href="https://developers.cloudflare.com/radar/concepts/aggregation-intervals/">Aggregation intervals</a>. When omitted, the interval is auto-selected from the requested date range; finer intervals are only available for shorter ranges. If the requested interval is too granular for the date range, the request is rejected.
 
@@ -98,7 +98,7 @@ One of the following:
 
 <summary>
 
-asCategory: optional array of "ACCESS\_ISP"or "HOSTING\_CLOUD\_CONTENT"or "ORGANIZATION"or "UNCLASSIFIED"
+asCategory: optional array of "ACCESS\_ISP" or "HOSTING\_CLOUD\_CONTENT" or "ORGANIZATION" or "UNCLASSIFIED"
 
 Filters results by the inferred network type of the Autonomous System: <code>ACCESS_ISP</code> (networks connecting end users, plus transit), <code>HOSTING_CLOUD_CONTENT</code> (hosting providers, clouds and CDNs), <code>ORGANIZATION</code> (enterprises, universities, governments, banks and IXP route servers), or <code>UNCLASSIFIED</code> (the AS isn’t classified, or the traffic couldn’t be mapped to an AS). In HTTP, only supported for date ranges starting on or after 2023-05-01.
 
@@ -160,7 +160,7 @@ Start of the date range. Alternative to `dateRange`; provide together with `date
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -184,7 +184,7 @@ One of the following:
 
 <summary>
 
-httpMethod: optional array of "GET"or "POST"or "DELETE"or 43 more
+httpMethod: optional array of "GET" or "POST" or "DELETE" or 43 more
 
 Filters results by HTTP method.
 
@@ -384,7 +384,7 @@ One of the following:
 
 <summary>
 
-httpVersion: optional array of "HTTPv1"or "HTTPv2"or "HTTPv3"
+httpVersion: optional array of "HTTPv1" or "HTTPv2" or "HTTPv3"
 
 Filters results by HTTP version.
 
@@ -412,7 +412,7 @@ One of the following:
 
 <summary>
 
-ipVersion: optional array of "IPv4"or "IPv6"
+ipVersion: optional array of "IPv4" or "IPv6"
 
 Filters results by IP version (Ipv4 vs. IPv6).
 
@@ -442,7 +442,7 @@ Filters results by location. Specify a comma-separated list of alpha-2 codes. Pr
 
 <summary>
 
-mitigationProduct: optional array of "DDOS"or "WAF"or "BOT\_MANAGEMENT"or 4 more
+mitigationProduct: optional array of "DDOS" or "WAF" or "BOT\_MANAGEMENT" or 4 more
 
 Filters the results by layer 7 mitigation product.
 
@@ -492,7 +492,7 @@ Array of names used to label the series in the response.
 
 <summary>
 
-normalization: optional "PERCENTAGE\_CHANGE"or "MIN0\_MAX"
+normalization: optional "PERCENTAGE\_CHANGE" or "MIN0\_MAX"
 
 Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>. <code>PERCENTAGE_CHANGE</code> requires exactly one comparison series (e.g. a <code>control</code> date range).
 
@@ -518,7 +518,7 @@ One of the following:
 
 <summary>
 
-result: object {meta, serie\_0 }
+result: object { meta, serie\_0 }
 
 </summary>
 
@@ -526,7 +526,7 @@ result: object {meta, serie\_0 }
 
 <summary>
 
-meta: object {aggInterval, confidenceInfo, dateRange, 3 more }
+meta: object { aggInterval, confidenceInfo, dateRange, 3 more }
 
 Metadata for the results.
 
@@ -536,7 +536,7 @@ Metadata for the results.
 
 <summary>
 
-aggInterval: "FIFTEEN\_MINUTES"or "ONE\_HOUR"or "ONE\_DAY"or 2 more
+aggInterval: "FIFTEEN\_MINUTES" or "ONE\_HOUR" or "ONE\_DAY" or 2 more
 
 Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to <a href="https://developers.cloudflare.com/radar/concepts/aggregation-intervals/">Aggregation intervals</a>.
 
@@ -572,7 +572,7 @@ One of the following:
 
 <summary>
 
-confidenceInfo: object {annotations, level }
+confidenceInfo: object { annotations, level }
 
 </summary>
 
@@ -580,7 +580,7 @@ confidenceInfo: object {annotations, level }
 
 <summary>
 
-annotations: array of object {dataSource, description, endDate, 5 more }
+annotations: array of object { dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -588,7 +588,7 @@ annotations: array of object {dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
+dataSource: "ALL" or "AI\_BOTS" or "AI\_GATEWAY" or 22 more
 
 Data source for annotations.
 
@@ -714,7 +714,7 @@ formatdate-time
 
 <summary>
 
-eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
+eventType: "GENERAL" or "OUTAGE" or "PARTIAL\_PROJECTION" or 2 more
 
 Event type for annotations.
 
@@ -786,7 +786,7 @@ Provides an indication of how much confidence Cloudflare has in the data.
 
 <summary>
 
-dateRange: array of object {endTime, startTime }
+dateRange: array of object { endTime, startTime }
 
 </summary>
 
@@ -822,7 +822,7 @@ formatdate-time
 
 <summary>
 
-normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
+normalization: "PERCENTAGE" or "MIN0\_MAX" or "MIN\_MAX" or 5 more
 
 Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
@@ -870,7 +870,7 @@ One of the following:
 
 <summary>
 
-units: array of object {name, value }
+units: array of object { name, value }
 
 Measurement units for the results.
 
@@ -896,7 +896,7 @@ value: string
 
 <summary>
 
-serie\_0: object {timestamps, values }
+serie\_0: object { timestamps, values }
 
 </summary>
 

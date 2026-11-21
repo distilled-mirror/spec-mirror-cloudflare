@@ -88,7 +88,7 @@ event\_n: number
 
 <summary>
 
-result: object {e, n, t, v }
+result: object { e, n, t, v }
 
 Recorded Event
 
@@ -98,7 +98,7 @@ Recorded Event
 
 <summary>
 
-e: object {k }
+e: object { k }
 
 Event kind plus event-specific payload fields.
 
@@ -140,7 +140,7 @@ Event kinds:
 
 <summary>
 
-k: "Init"or "Leave"or "StartAttestation"or 26 more
+k: "Init" or "Leave" or "StartAttestation" or 26 more
 
 Event kind
 
@@ -302,7 +302,7 @@ success: boolean
 
 <summary>
 
-errors: optional array of object {code, message }
+errors: optional array of object { code, message }
 
 </summary>
 
@@ -322,7 +322,7 @@ message: string
 
 <summary>
 
-messages: optional array of object {code, message }
+messages: optional array of object { code, message }
 
 </summary>
 

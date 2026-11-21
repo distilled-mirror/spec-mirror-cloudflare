@@ -90,7 +90,7 @@ result: optional array of <a href="https://developers.cloudflare.com/api/resourc
 
 <summary>
 
-certificate\_status: "initializing"or "authorizing"or "active"or 4 more
+certificate\_status: "initializing" or "authorizing" or "active" or 4 more
 
 Current status of certificate.
 
@@ -146,7 +146,7 @@ Certificate Pack UUID.
 
 <summary>
 
-signature: optional "ECDSAWithSHA256"or "SHA1WithRSA"or "SHA256WithRSA"
+signature: optional "ECDSAWithSHA256" or "SHA1WithRSA" or "SHA256WithRSA"
 
 Certificate’s signature algorithm.
 
@@ -202,7 +202,7 @@ One of the following:
 
 <summary>
 
-verification\_info: optional object {record\_name, record\_target }
+verification\_info: optional object { record\_name, record\_target }
 
 Certificate’s required verification information.
 
@@ -212,7 +212,7 @@ Certificate’s required verification information.
 
 <summary>
 
-record\_name: optional "record\_name"or "http\_url"or "cname"or "txt\_name"
+record\_name: optional "record\_name" or "http\_url" or "cname" or "txt\_name"
 
 Name of CNAME record.
 
@@ -246,7 +246,7 @@ One of the following:
 
 <summary>
 
-record\_target: optional "record\_value"or "http\_body"or "cname\_target"or "txt\_value"
+record\_target: optional "record\_value" or "http\_body" or "cname\_target" or "txt\_value"
 
 Target of CNAME record.
 
@@ -290,7 +290,7 @@ Status of the required verification information, omitted if verification status 
 
 <summary>
 
-verification\_type: optional "cname"or "meta tag"
+verification\_type: optional "cname" or "meta tag"
 
 Method of verification.
 

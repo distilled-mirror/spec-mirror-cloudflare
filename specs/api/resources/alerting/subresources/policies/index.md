@@ -44,7 +44,7 @@ DELETE/accounts/{account\_id}/alerting/v3/policies/{policy\_id}
 
 <summary>
 
-Mechanism object {email, pagerduty, webhooks }
+Mechanism object { email, pagerduty, webhooks }
 
 List of IDs that will be used when dispatching a notification. IDs for email type will be the email address.
 
@@ -54,7 +54,7 @@ List of IDs that will be used when dispatching a notification. IDs for email typ
 
 <summary>
 
-email: optional array of object {id }
+email: optional array of object { id }
 
 </summary>
 
@@ -72,7 +72,7 @@ The email address
 
 <summary>
 
-pagerduty: optional array of object {id }
+pagerduty: optional array of object { id }
 
 </summary>
 
@@ -92,7 +92,7 @@ maxLength32
 
 <summary>
 
-webhooks: optional array of object {id }
+webhooks: optional array of object { id }
 
 </summary>
 
@@ -116,7 +116,7 @@ maxLength32
 
 <summary>
 
-Policy object {id, alert\_interval, alert\_type, 7 more }
+Policy object { id, alert\_interval, alert\_type, 7 more }
 
 </summary>
 
@@ -138,7 +138,7 @@ Optional specification of how often to re-alert from the same incident, not supp
 
 <summary>
 
-alert\_type: optional "abuse\_report\_alert"or "access\_custom\_certificate\_expiration\_type"or "advanced\_ddos\_attack\_l4\_alert"or 88 more
+alert\_type: optional "abuse\_report\_alert" or "access\_custom\_certificate\_expiration\_type" or "advanced\_ddos\_attack\_l4\_alert" or 88 more
 
 Refers to which event will trigger a Notification dispatch. You can use the endpoint to get available alert types which then will give you a list of possible values. This enum lists every alert type, not the ones a given account can create, since some types depend on entitlements or account type. To get the alert types an account can create, call <code>GET /accounts/{account_id}/alerting/v3/available_alerts</code>.
 
@@ -564,7 +564,7 @@ Name of the policy.
 
 <summary>
 
-PolicyFilter object {actions, affected\_asns, affected\_components, 44 more }
+PolicyFilter object { actions, affected\_asns, affected\_components, 44 more }
 
 Optional filters that allow you to be alerted only on a subset of events for that alert type based on some criteria. This is only available for select alert types. See alert type documentation for more details.
 
@@ -664,7 +664,7 @@ Used for configuring health\_check\_status\_notification
 
 <summary>
 
-incident\_impact: optional array of "INCIDENT\_IMPACT\_NONE"or "INCIDENT\_IMPACT\_MINOR"or "INCIDENT\_IMPACT\_MAJOR"or "INCIDENT\_IMPACT\_CRITICAL"
+incident\_impact: optional array of "INCIDENT\_IMPACT\_NONE" or "INCIDENT\_IMPACT\_MINOR" or "INCIDENT\_IMPACT\_MAJOR" or "INCIDENT\_IMPACT\_CRITICAL"
 
 Used for configuring incident\_alert
 
@@ -886,7 +886,7 @@ Usage depends on specific alert type
 
 <summary>
 
-PolicyCreateResponse object {id }
+PolicyCreateResponse object { id }
 
 </summary>
 
@@ -906,7 +906,7 @@ maxLength32
 
 <summary>
 
-PolicyUpdateResponse object {id }
+PolicyUpdateResponse object { id }
 
 </summary>
 
@@ -926,7 +926,7 @@ maxLength32
 
 <summary>
 
-PolicyDeleteResponse object {errors, messages, success, result\_info }
+PolicyDeleteResponse object { errors, messages, success, result\_info }
 
 </summary>
 
@@ -934,7 +934,7 @@ PolicyDeleteResponse object {errors, messages, success, result\_info }
 
 <summary>
 
-errors: array of object {message, code }
+errors: array of object { message, code }
 
 </summary>
 
@@ -956,7 +956,7 @@ minimum1000
 
 <summary>
 
-messages: array of object {message, code }
+messages: array of object { message, code }
 
 </summary>
 
@@ -984,7 +984,7 @@ Whether the API call was successful
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object { count, page, per\_page, total\_count }
 
 </summary>
 

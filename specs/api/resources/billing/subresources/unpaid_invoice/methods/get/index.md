@@ -92,7 +92,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -134,7 +134,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -154,7 +154,7 @@ pointer: optional string
 
 <summary>
 
-result: object {invoices }
+result: object { invoices }
 
 </summary>
 
@@ -162,7 +162,7 @@ result: object {invoices }
 
 <summary>
 
-invoices: optional array of object {id, action, amount, 12 more }
+invoices: optional array of object { id, action, amount, 12 more }
 
 List of unpaid invoices.
 

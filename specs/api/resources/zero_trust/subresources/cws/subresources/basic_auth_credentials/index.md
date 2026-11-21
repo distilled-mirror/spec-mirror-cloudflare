@@ -42,7 +42,7 @@ DELETE/accounts/{account\_id}/cws/basic-auth-credentials/{credential\_id}
 
 <summary>
 
-BasicAuthCredential object {id, created\_at, updated\_at, username }
+BasicAuthCredential object { id, created\_at, updated\_at, username }
 
 </summary>
 
@@ -84,7 +84,7 @@ minLength1
 
 <summary>
 
-BasicAuthCredentialDeleteResponse object {id }
+BasicAuthCredentialDeleteResponse object { id }
 
 </summary>
 
@@ -122,7 +122,7 @@ DELETE/accounts/{account\_id}/cws/basic-auth-credentials/{credential\_id}/secret
 
 <summary>
 
-BasicAuthSecret object {id, created\_at, expires\_at }
+BasicAuthSecret object { id, created\_at, expires\_at }
 
 </summary>
 
@@ -156,7 +156,7 @@ formatdate-time
 
 <summary>
 
-SecretDeleteResponse object {id }
+SecretDeleteResponse object { id }
 
 </summary>
 

@@ -84,7 +84,7 @@ formatuuid
 
 <summary>
 
-errors: array of object {message, code }
+errors: array of object { message, code }
 
 Always empty on success.
 
@@ -110,7 +110,7 @@ Identifies the error or notice type.
 
 <summary>
 
-messages: array of object {message, code }
+messages: array of object { message, code }
 
 Contains informational notices about the response.
 
@@ -136,7 +136,7 @@ Identifies the error or notice type.
 
 <summary>
 
-result: object {id }
+result: object { id }
 
 </summary>
 

@@ -28,7 +28,7 @@ POST/accounts/{account\_id}/browser-rendering/accessibilityTree
 
 <summary>
 
-AccessibilityTreeCreateResponse object {accessibilityTree }
+AccessibilityTreeCreateResponse object { accessibilityTree }
 
 </summary>
 
@@ -36,7 +36,7 @@ AccessibilityTreeCreateResponse object {accessibilityTree }
 
 <summary>
 
-accessibilityTree: object {role, autocomplete, checked, 23 more }
+accessibilityTree: object { role, autocomplete, checked, 23 more }
 
 Accessibility tree node
 
@@ -54,7 +54,7 @@ autocomplete: optional string
 
 <summary>
 
-checked: optional booleanor "mixed"
+checked: optional boolean or "mixed"
 
 </summary>
 
@@ -132,7 +132,7 @@ orientation: optional string
 
 <summary>
 
-pressed: optional booleanor "mixed"
+pressed: optional boolean or "mixed"
 
 </summary>
 
@@ -170,7 +170,7 @@ selected: optional boolean
 
 <summary>
 
-value: optional stringor number
+value: optional string or number
 
 </summary>
 

@@ -28,7 +28,7 @@ GET/accounts/{account\_id}/intel/dns
 
 <summary>
 
-DNS object {count, page, per\_page, reverse\_records }
+DNS object { count, page, per\_page, reverse\_records }
 
 </summary>
 
@@ -54,7 +54,7 @@ Number of results per page of results.
 
 <summary>
 
-reverse\_records: optional array of object {first\_seen, hostname, last\_seen }
+reverse\_records: optional array of object { first\_seen, hostname, last\_seen }
 
 Reverse DNS look-ups observed during the time period.
 

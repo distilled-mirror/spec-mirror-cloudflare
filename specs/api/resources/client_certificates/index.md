@@ -42,7 +42,7 @@ DELETE/zones/{zone\_id}/client\_certificates/{client\_certificate\_id}
 
 <summary>
 
-ClientCertificate object {id, certificate, certificate\_authority, 15 more }
+ClientCertificate object { id, certificate, certificate\_authority, 15 more }
 
 </summary>
 
@@ -66,7 +66,7 @@ The Client Certificate PEM.
 
 <summary>
 
-certificate\_authority: optional object {id, name }
+certificate\_authority: optional object { id, name }
 
 Certificate Authority used to issue the Client Certificate.
 
@@ -166,7 +166,7 @@ State, provided by the CSR.
 
 <summary>
 
-status: optional "active"or "pending\_reactivation"or "pending\_revocation"or "revoked"
+status: optional "active" or "pending\_reactivation" or "pending\_revocation" or "revoked"
 
 Client Certificates may be active or revoked, and the pending\_reactivation or pending\_revocation represent in-progress asynchronous transitions.
 

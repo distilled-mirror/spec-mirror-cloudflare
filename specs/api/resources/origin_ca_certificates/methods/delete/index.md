@@ -62,7 +62,7 @@ The x509 serial number of the Origin CA certificate.
 
 <summary>
 
-result: optional object {id, revoked\_at }
+result: optional object { id, revoked\_at }
 
 </summary>
 

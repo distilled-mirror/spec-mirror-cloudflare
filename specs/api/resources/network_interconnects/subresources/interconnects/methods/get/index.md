@@ -76,7 +76,7 @@ icon: string
 
 <summary>
 
-NscInterconnectPhysicalBody object {facility, name, site, 5 more }
+NscInterconnectPhysicalBody object { facility, name, site, 5 more }
 
 </summary>
 
@@ -84,7 +84,7 @@ NscInterconnectPhysicalBody object {facility, name, site, 5 more }
 
 <summary>
 
-facility: object {address, name }
+facility: object { address, name }
 
 </summary>
 
@@ -142,7 +142,7 @@ ccr\_device\_name: optional string
 
 <summary>
 
-NscInterconnectGcpPartnerBody object {name, region, type, 2 more }
+NscInterconnectGcpPartnerBody object { name, region, type, 2 more }
 
 </summary>
 
@@ -168,7 +168,7 @@ formatuuid
 
 <summary>
 
-speed: optional "50M"or "100M"or "200M"or 9 more
+speed: optional "50M" or "100M" or "200M" or 9 more
 
 Bandwidth structure as visible through the customer-facing API.
 

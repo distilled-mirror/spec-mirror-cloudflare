@@ -40,7 +40,7 @@ DELETE/zones/{zone\_id}/acm/custom\_trust\_store/{custom\_origin\_trust\_store\_
 
 <summary>
 
-CustomTrustStore object {id, certificate, expires\_on, 5 more }
+CustomTrustStore object { id, certificate, expires\_on, 5 more }
 
 </summary>
 
@@ -82,7 +82,7 @@ The type of hash used for the certificate.
 
 <summary>
 
-status: "initializing"or "pending\_deployment"or "active"or 3 more
+status: "initializing" or "pending\_deployment" or "active" or 3 more
 
 Status of the zone’s custom SSL.
 
@@ -142,7 +142,7 @@ formatdate-time
 
 <summary>
 
-CustomTrustStoreDeleteResponse object {id }
+CustomTrustStoreDeleteResponse object { id }
 
 </summary>
 

@@ -38,7 +38,7 @@ DELETE/accounts/{account\_id}/moq/relays/{relay\_id}/tokens/{jti}
 
 <summary>
 
-TokenCreateResponse object {issuers }
+TokenCreateResponse object { issuers }
 
 A relay’s token collection, keyed on issuer <code>type</code> (a discriminated union). V1 ships exactly one arm (<code>cloudflare_jwt</code>). Clients iterate <code>issuers</code>, switch on <code>type</code>, and ignore unknown types — that contract is what makes adding or removing an arm non-breaking.
 
@@ -48,7 +48,7 @@ A relay’s token collection, keyed on issuer <code>type</code> (a discriminated
 
 <summary>
 
-issuers: array of object {cloudflare\_tokens, issuer, type }
+issuers: array of object { cloudflare\_tokens, issuer, type }
 
 </summary>
 
@@ -56,7 +56,7 @@ issuers: array of object {cloudflare\_tokens, issuer, type }
 
 <summary>
 
-cloudflare\_tokens: array of object {created, expires, jti, 3 more }
+cloudflare\_tokens: array of object { created, expires, jti, 3 more }
 
 Always present (\[] when empty).
 
@@ -86,7 +86,7 @@ Token identity and registry key (32 hex chars).
 
 <summary>
 
-operations: array of "publish"or "subscribe"
+operations: array of "publish" or "subscribe"
 
 Signed allowlist of what the token may do. V1 coarse roles; the array form extends to fine-grained MoQT message names later without a breaking change.
 
@@ -142,7 +142,7 @@ type: "cloudflare\_jwt"
 
 <summary>
 
-TokenListResponse object {issuers }
+TokenListResponse object { issuers }
 
 A relay’s token collection, keyed on issuer <code>type</code> (a discriminated union). V1 ships exactly one arm (<code>cloudflare_jwt</code>). Clients iterate <code>issuers</code>, switch on <code>type</code>, and ignore unknown types — that contract is what makes adding or removing an arm non-breaking.
 
@@ -152,7 +152,7 @@ A relay’s token collection, keyed on issuer <code>type</code> (a discriminated
 
 <summary>
 
-issuers: array of object {cloudflare\_tokens, issuer, type }
+issuers: array of object { cloudflare\_tokens, issuer, type }
 
 </summary>
 
@@ -160,7 +160,7 @@ issuers: array of object {cloudflare\_tokens, issuer, type }
 
 <summary>
 
-cloudflare\_tokens: array of object {created, expires, jti, 3 more }
+cloudflare\_tokens: array of object { created, expires, jti, 3 more }
 
 Always present (\[] when empty).
 
@@ -190,7 +190,7 @@ Token identity and registry key (32 hex chars).
 
 <summary>
 
-operations: array of "publish"or "subscribe"
+operations: array of "publish" or "subscribe"
 
 Signed allowlist of what the token may do. V1 coarse roles; the array form extends to fine-grained MoQT message names later without a breaking change.
 
@@ -246,7 +246,7 @@ type: "cloudflare\_jwt"
 
 <summary>
 
-TokenDeleteResponse object {errors, messages, success }
+TokenDeleteResponse object { errors, messages, success }
 
 </summary>
 
@@ -254,7 +254,7 @@ TokenDeleteResponse object {errors, messages, success }
 
 <summary>
 
-errors: array of object {code, message }
+errors: array of object { code, message }
 
 </summary>
 
@@ -274,7 +274,7 @@ message: optional string
 
 <summary>
 
-messages: array of object {code, message }
+messages: array of object { code, message }
 
 </summary>
 

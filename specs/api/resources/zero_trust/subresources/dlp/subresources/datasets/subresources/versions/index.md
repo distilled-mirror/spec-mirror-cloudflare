@@ -32,7 +32,7 @@ POST/accounts/{account\_id}/dlp/datasets/{dataset\_id}/versions/{version}
 
 <summary>
 
-VersionCreateResponse object {entry\_id, header\_name, num\_cells, upload\_status }
+VersionCreateResponse object { entry\_id, header\_name, num\_cells, upload\_status }
 
 </summary>
 
@@ -56,7 +56,7 @@ formatint64
 
 <summary>
 
-upload\_status: "empty"or "uploading"or "pending"or 3 more
+upload\_status: "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -106,7 +106,7 @@ POST/accounts/{account\_id}/dlp/datasets/{dataset\_id}/versions/{version}/entrie
 
 <summary>
 
-EntryCreateResponse object {entry\_id, header\_name, num\_cells, upload\_status }
+EntryCreateResponse object { entry\_id, header\_name, num\_cells, upload\_status }
 
 </summary>
 
@@ -130,7 +130,7 @@ formatint64
 
 <summary>
 
-upload\_status: "empty"or "uploading"or "pending"or 3 more
+upload\_status: "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 

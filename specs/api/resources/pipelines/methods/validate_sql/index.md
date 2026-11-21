@@ -78,7 +78,7 @@ Specifies SQL to validate.
 
 <summary>
 
-result: object {tables, graph }
+result: object { tables, graph }
 
 </summary>
 
@@ -86,7 +86,7 @@ result: object {tables, graph }
 
 <summary>
 
-tables: map\[object {id, name, type, version } ]
+tables: map\[object { id, name, type, version } ]
 
 Indicates tables involved in the processing.
 
@@ -116,7 +116,7 @@ version: number
 
 <summary>
 
-graph: optional object {edges, nodes }
+graph: optional object { edges, nodes }
 
 Indicates the processing flow to implement the SQL.
 
@@ -126,7 +126,7 @@ Indicates the processing flow to implement the SQL.
 
 <summary>
 
-edges: array of object {dest\_id, edge\_type, key\_type, 2 more }
+edges: array of object { dest\_id, edge\_type, key\_type, 2 more }
 
 </summary>
 
@@ -166,7 +166,7 @@ value\_type: string
 
 <summary>
 
-nodes: array of object {description, node\_id, operator, parallelism }
+nodes: array of object { description, node\_id, operator, parallelism }
 
 </summary>
 

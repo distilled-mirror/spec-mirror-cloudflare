@@ -34,7 +34,7 @@ GET/accounts/{account\_id}/browser-rendering/devtools/session/{session\_id}
 
 <summary>
 
-SessionListResponse = array of object {sessionId, closeReason, closeReasonText, 8 more }
+SessionListResponse = array of object { sessionId, closeReason, closeReasonText, 8 more }
 
 </summary>
 
@@ -114,7 +114,7 @@ WebSocket URL for debugging this target.
 
 <summary>
 
-SessionGetResponse object {sessionId, closeReason, closeReasonText, 8 more }
+SessionGetResponse object { sessionId, closeReason, closeReasonText, 8 more }
 
 </summary>
 
@@ -214,7 +214,7 @@ GET/accounts/{account\_id}/browser-rendering/devtools/browser/{session\_id}/json
 
 <summary>
 
-BrowserCreateResponse object {sessionId, webSocketDebuggerUrl }
+BrowserCreateResponse object { sessionId, webSocketDebuggerUrl }
 
 </summary>
 
@@ -238,7 +238,7 @@ WebSocket URL for the session.
 
 <summary>
 
-BrowserDeleteResponse object {status }
+BrowserDeleteResponse object { status }
 
 </summary>
 
@@ -246,7 +246,7 @@ BrowserDeleteResponse object {status }
 
 <summary>
 
-status: "closing"or "closed"
+status: "closing" or "closed"
 
 </summary>
 
@@ -272,7 +272,7 @@ One of the following:
 
 <summary>
 
-BrowserVersionResponse object {Browser, "Protocol-Version", "User-Agent", 3 more }
+BrowserVersionResponse object { Browser, "Protocol-Version", "User-Agent", 3 more }
 
 </summary>
 
@@ -320,7 +320,7 @@ WebSocket URL for debugging the browser.
 
 <summary>
 
-BrowserProtocolResponse object {domains, version }
+BrowserProtocolResponse object { domains, version }
 
 </summary>
 
@@ -328,7 +328,7 @@ BrowserProtocolResponse object {domains, version }
 
 <summary>
 
-domains: array of object {domain, commands, dependencies, 3 more }
+domains: array of object { domain, commands, dependencies, 3 more }
 
 List of protocol domains.
 
@@ -378,7 +378,7 @@ Type definitions.
 
 <summary>
 
-version: optional object {major, minor }
+version: optional object { major, minor }
 
 Protocol version.
 
@@ -416,7 +416,7 @@ POST/accounts/{account\_id}/browser-rendering/devtools/browser/{session\_id}/liv
 
 <summary>
 
-LiveViewCreateResponse object {id, devtoolsFrontendUrl, options, webSocketDebuggerUrl }
+LiveViewCreateResponse object { id, devtoolsFrontendUrl, options, webSocketDebuggerUrl }
 
 </summary>
 
@@ -438,7 +438,7 @@ formaturi
 
 <summary>
 
-options: object {mode, guardrails }
+options: object { mode, guardrails }
 
 </summary>
 
@@ -446,7 +446,7 @@ options: object {mode, guardrails }
 
 <summary>
 
-mode: "devtools"or "tab"or "full"
+mode: "devtools" or "tab" or "full"
 
 UI mode for the live view
 
@@ -474,7 +474,7 @@ One of the following:
 
 <summary>
 
-guardrails: optional object {mode }
+guardrails: optional object { mode }
 
 Connection guardrails applied to this link
 
@@ -534,7 +534,7 @@ GET/accounts/{account\_id}/browser-rendering/devtools/browser/{session\_id}/json
 
 <summary>
 
-TargetCreateResponse object {id, type, url, 4 more }
+TargetCreateResponse object { id, type, url, 4 more }
 
 </summary>
 
@@ -588,7 +588,7 @@ WebSocket URL for debugging this target.
 
 <summary>
 
-TargetListResponse = array of object {id, type, url, 4 more }
+TargetListResponse = array of object { id, type, url, 4 more }
 
 </summary>
 
@@ -642,7 +642,7 @@ WebSocket URL for debugging this target.
 
 <summary>
 
-TargetGetResponse object {id, type, url, 4 more }
+TargetGetResponse object { id, type, url, 4 more }
 
 </summary>
 
@@ -696,7 +696,7 @@ WebSocket URL for debugging this target.
 
 <summary>
 
-TargetActivateResponse object {message }
+TargetActivateResponse object { message }
 
 </summary>
 
@@ -714,7 +714,7 @@ Target activated.
 
 <summary>
 
-TargetCloseResponse object {message }
+TargetCloseResponse object { message }
 
 </summary>
 

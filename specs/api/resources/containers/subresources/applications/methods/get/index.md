@@ -76,7 +76,7 @@ An Application ID represents an identifier of an application.
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -98,7 +98,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -118,7 +118,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -140,7 +140,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -160,7 +160,7 @@ pointer: optional string
 
 <summary>
 
-result: object {id, account\_id, configuration, 13 more } or object {id, account\_id, created\_at, 8 more }
+result: object { id, account\_id, configuration, 13 more } or object { id, account\_id, created\_at, 8 more }
 
 The public Containers API returns an application.
 
@@ -172,7 +172,7 @@ One of the following:
 
 <summary>
 
-CcScheduledApplication object {id, account\_id, configuration, 13 more }
+CcScheduledApplication object { id, account\_id, configuration, 13 more }
 
 Describes an application and the parameters that govern how it places its instances.
 
@@ -194,7 +194,7 @@ A unique identifier for the user’s account.
 
 <summary>
 
-configuration: object {image, authorized\_keys, command, 4 more }
+configuration: object { image, authorized\_keys, command, 4 more }
 
 User-specified container configuration.
 
@@ -210,7 +210,7 @@ Image url.
 
 <summary>
 
-authorized\_keys: optional array of object {public\_key, name }
+authorized\_keys: optional array of object { public\_key, name }
 
 </summary>
 
@@ -246,7 +246,7 @@ The entry point for the container, specifying the executable to run when the con
 
 <summary>
 
-environment\_variables: optional array of object {name, value }
+environment\_variables: optional array of object { name, value }
 
 Container environment variables.
 
@@ -272,7 +272,7 @@ An environment variable value.
 
 <summary>
 
-instance\_type: optional "lite"or "basic"or "standard-1"or 3 more
+instance\_type: optional "lite" or "basic" or "standard-1" or 3 more
 
 The instance type configures vCPU, memory, and disk.
 
@@ -319,7 +319,7 @@ One of the following:
 
 <summary>
 
-observability: optional object {logs }
+observability: optional object { logs }
 
 Settings for deployment observability such as logging.
 
@@ -329,7 +329,7 @@ Settings for deployment observability such as logging.
 
 <summary>
 
-logs: optional object {enabled }
+logs: optional object { enabled }
 
 Observability logging settings.
 
@@ -373,7 +373,7 @@ The application name.
 
 <summary>
 
-scheduling\_policy: "default"or "durable\_object"
+scheduling\_policy: "default" or "durable\_object"
 
 The scheduling policy to use for an application.
 
@@ -413,7 +413,7 @@ An identifier for a specific rollout within an application.
 
 <summary>
 
-constraints: optional object {jurisdiction, regions }
+constraints: optional object { jurisdiction, regions }
 
 </summary>
 
@@ -435,7 +435,7 @@ regions: optional array of string
 
 <summary>
 
-durable\_objects: optional object {namespace\_id }
+durable\_objects: optional object { namespace\_id }
 
 Durable object configuration stored on and returned from a Cloudchamber application.
 
@@ -455,7 +455,7 @@ The namespace ID of the durable object namespace to use for this application.
 
 <summary>
 
-health: optional object {errors, instances, summary }
+health: optional object { errors, instances, summary }
 
 </summary>
 
@@ -463,7 +463,7 @@ health: optional object {errors, instances, summary }
 
 <summary>
 
-errors: array of object {event, instance\_id }
+errors: array of object { event, instance\_id }
 
 </summary>
 
@@ -471,7 +471,7 @@ errors: array of object {event, instance\_id }
 
 <summary>
 
-event: object {id, details, message, 4 more }
+event: object { id, details, message, 4 more }
 
 An event within a Placement.
 
@@ -493,7 +493,7 @@ message: string
 
 <summary>
 
-name: "SchedulerPlaced"or "NetworkingIPAssigned"or "VMStarted"or 14 more
+name: "SchedulerPlaced" or "NetworkingIPAssigned" or "VMStarted" or 14 more
 
 Name of the event that describes the kind event that happened.
 
@@ -602,7 +602,7 @@ UTC timestamp string in ISO 8601 format.
 
 <summary>
 
-type: "Info"or "Error"or "Warn"or 2 more
+type: "Info" or "Error" or "Warn" or 2 more
 
 </summary>
 
@@ -650,7 +650,7 @@ An instance ID represents an identifier of an instance configuration that mainta
 
 <summary>
 
-instances: object {active, assigned }
+instances: object { active, assigned }
 
 Shows a count of application instance states.
 
@@ -676,7 +676,7 @@ Number of instances bound to a Durable Object with a running placement whose con
 
 <summary>
 
-summary: optional "healthy"or "degraded"or "unhealthy"or "pending"
+summary: optional "healthy" or "degraded" or "unhealthy" or "pending"
 
 High-level health assessment. Only populated for “new\_instances” strategy. Based on a sample of target-version instances rather than a full count.
 
@@ -723,7 +723,7 @@ Maximum number of instances the application allows. This is relevant for applica
 
 <summary>
 
-observability: optional object {logs }
+observability: optional object { logs }
 
 Top-level observability settings for the application. This field is mutually exclusive with configuration.observability.
 
@@ -733,7 +733,7 @@ Top-level observability settings for the application. This field is mutually exc
 
 <summary>
 
-logs: optional object {enabled }
+logs: optional object { enabled }
 
 Observability logging settings.
 
@@ -769,7 +769,7 @@ minimum0
 
 <summary>
 
-CcDurableObjectApplication object {id, account\_id, created\_at, 8 more }
+CcDurableObjectApplication object { id, account\_id, created\_at, 8 more }
 
 Each Durable Object creates and manages the lifecycle of its container instance.
 
@@ -797,7 +797,7 @@ UTC timestamp string in ISO 8601 format.
 
 <summary>
 
-durable\_objects: object {namespace\_id }
+durable\_objects: object { namespace\_id }
 
 Durable object configuration using a namespace ID.
 
@@ -835,7 +835,7 @@ UTC timestamp string in ISO 8601 format.
 
 <summary>
 
-configuration: optional object {authorized\_keys, wrangler\_ssh }
+configuration: optional object { authorized\_keys, wrangler\_ssh }
 
 Application-wide settings for a Durable Object-managed application.
 
@@ -845,7 +845,7 @@ Application-wide settings for a Durable Object-managed application.
 
 <summary>
 
-authorized\_keys: optional array of object {public\_key, name }
+authorized\_keys: optional array of object { public\_key, name }
 
 </summary>
 
@@ -869,7 +869,7 @@ Optional human readable name for this key.
 
 <summary>
 
-wrangler\_ssh: optional object {enabled, port }
+wrangler\_ssh: optional object { enabled, port }
 
 Configuration properties for connecting with SSH to a container using Wrangler.
 
@@ -899,7 +899,7 @@ minimum1
 
 <summary>
 
-constraints: optional object {jurisdiction }
+constraints: optional object { jurisdiction }
 
 The jurisdiction of a Durable Object-managed application’s primary control-plane object. Set this when creating the application; it cannot be changed afterwards. Other placement constraints are not supported by this scheduling policy.
 
@@ -909,7 +909,7 @@ The jurisdiction of a Durable Object-managed application’s primary control-pla
 
 <summary>
 
-jurisdiction: "eu"or "fedramp"or "us"
+jurisdiction: "eu" or "fedramp" or "us"
 
 </summary>
 
@@ -939,7 +939,7 @@ One of the following:
 
 <summary>
 
-health: optional object {instances, summary }
+health: optional object { instances, summary }
 
 Aggregate current activity for the latest observed placement of each instance. Runtime snapshots feed periodic background sweeps. Counts refresh after each complete sweep. Instance listings retain their separate three-month history for failure discovery.
 
@@ -949,7 +949,7 @@ Aggregate current activity for the latest observed placement of each instance. R
 
 <summary>
 
-instances: object {active, starting }
+instances: object { active, starting }
 
 Counts of observed non-terminal instances.
 
@@ -989,7 +989,7 @@ Present as pending until the first activity sweep completes; omitted afterward.
 
 <summary>
 
-observability: optional object {logs }
+observability: optional object { logs }
 
 Application-wide logging settings for a Durable Object-managed application. The application publishes these settings to its runtime metadata. Updating them does not create a deployment or rollout.
 
@@ -999,7 +999,7 @@ Application-wide logging settings for a Durable Object-managed application. The 
 
 <summary>
 
-logs: optional object {enabled }
+logs: optional object { enabled }
 
 Application-wide logging settings.
 

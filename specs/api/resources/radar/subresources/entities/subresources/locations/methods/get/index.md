@@ -78,7 +78,7 @@ minLength2
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -104,7 +104,7 @@ One of the following:
 
 <summary>
 
-result: object {location }
+result: object { location }
 
 </summary>
 
@@ -112,7 +112,7 @@ result: object {location }
 
 <summary>
 
-location: object {alpha2, confidenceLevel, continent, 5 more }
+location: object { alpha2, confidenceLevel, continent, 5 more }
 
 </summary>
 

@@ -36,7 +36,7 @@ PUT/accounts/{account\_id}/r2/buckets/{bucket\_name}/domains/managed
 
 <summary>
 
-ManagedListResponse object {bucketId, domain, enabled }
+ManagedListResponse object { bucketId, domain, enabled }
 
 </summary>
 
@@ -68,7 +68,7 @@ Whether this bucket is publicly accessible at the r2.dev domain.
 
 <summary>
 
-ManagedUpdateResponse object {bucketId, domain, enabled }
+ManagedUpdateResponse object { bucketId, domain, enabled }
 
 </summary>
 

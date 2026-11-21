@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Auto Rag Write`
+`AI Search Write``Auto Rag Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -84,7 +84,7 @@ query: string
 
 <summary>
 
-filters: optional object {key, type, value } or object {filters, type }
+filters: optional object { key, type, value } or object { filters, type }
 
 </summary>
 
@@ -94,7 +94,7 @@ One of the following:
 
 <summary>
 
-object {key, type, value }
+object { key, type, value }
 
 </summary>
 
@@ -106,7 +106,7 @@ key: string
 
 <summary>
 
-type: "eq"or "ne"or "gt"or 3 more
+type: "eq" or "ne" or "gt" or 3 more
 
 </summary>
 
@@ -144,7 +144,7 @@ One of the following:
 
 <summary>
 
-value: stringor numberor boolean
+value: string or number or boolean
 
 </summary>
 
@@ -174,7 +174,7 @@ boolean
 
 <summary>
 
-object {filters, type }
+object { filters, type }
 
 </summary>
 
@@ -182,7 +182,7 @@ object {filters, type }
 
 <summary>
 
-filters: array of object {key, type, value }
+filters: array of object { key, type, value }
 
 </summary>
 
@@ -194,7 +194,7 @@ key: string
 
 <summary>
 
-type: "eq"or "ne"or "gt"or 3 more
+type: "eq" or "ne" or "gt" or 3 more
 
 </summary>
 
@@ -232,7 +232,7 @@ One of the following:
 
 <summary>
 
-value: stringor numberor boolean
+value: string or number or boolean
 
 </summary>
 
@@ -262,7 +262,7 @@ boolean
 
 <summary>
 
-type: "and"or "or"
+type: "and" or "or"
 
 </summary>
 
@@ -300,7 +300,7 @@ minimum1
 
 <summary>
 
-model: optional "@cf/meta/llama-3.3-70b-instruct-fp8-fast"or "@cf/meta/llama-3.1-8b-instruct-fast"or "@cf/meta/llama-3.1-8b-instruct-fp8"or 23 more
+model: optional "@cf/meta/llama-3.3-70b-instruct-fp8-fast" or "@cf/meta/llama-3.1-8b-instruct-fast" or "@cf/meta/llama-3.1-8b-instruct-fp8" or 23 more
 
 </summary>
 
@@ -418,7 +418,7 @@ One of the following:
 
 <summary>
 
-ranking\_options: optional object {ranker, score\_threshold }
+ranking\_options: optional object { ranker, score\_threshold }
 
 </summary>
 
@@ -442,7 +442,7 @@ minimum0
 
 <summary>
 
-reranking: optional object {enabled, model }
+reranking: optional object { enabled, model }
 
 </summary>
 
@@ -454,7 +454,7 @@ enabled: optional boolean
 
 <summary>
 
-model: optional "@cf/baai/bge-reranker-base"or ""
+model: optional "@cf/baai/bge-reranker-base" or ""
 
 </summary>
 
@@ -494,7 +494,7 @@ system\_prompt: optional string
 
 <summary>
 
-result: object {response, search\_query, data, 3 more }
+result: object { response, search\_query, data, 3 more }
 
 </summary>
 
@@ -510,7 +510,7 @@ search\_query: string
 
 <summary>
 
-data: optional array of object {score, attributes, content, 2 more }
+data: optional array of object { score, attributes, content, 2 more }
 
 </summary>
 
@@ -526,7 +526,7 @@ attributes: optional unknown
 
 <summary>
 
-content: optional array of object {text, type }
+content: optional array of object { text, type }
 
 </summary>
 

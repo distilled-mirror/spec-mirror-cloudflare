@@ -88,7 +88,7 @@ maxLength100
 
 <summary>
 
-dataSource: optional "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
+dataSource: optional "ALL" or "AI\_BOTS" or "AI\_GATEWAY" or 22 more
 
 Filters results by data source.
 
@@ -226,7 +226,7 @@ formatdate-time
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -302,7 +302,7 @@ maxLength100
 
 <summary>
 
-outageCause: optional "BLOCKING"or "CABLE\_CUT"or "CYBERATTACK"or 14 more
+outageCause: optional "BLOCKING" or "CABLE\_CUT" or "CYBERATTACK" or 14 more
 
 Filters results by outage cause.
 
@@ -386,7 +386,7 @@ One of the following:
 
 <summary>
 
-outageType: optional "NATIONWIDE"or "REGIONAL"or "NETWORK"or "PLATFORM"
+outageType: optional "NATIONWIDE" or "REGIONAL" or "NETWORK" or "PLATFORM"
 
 Filters results by outage type.
 
@@ -426,7 +426,7 @@ maxLength100
 
 <summary>
 
-tags: optional array of "ADM1"or "ADM2"or "API\_TRAFFIC"or 93 more
+tags: optional array of "ADM1" or "ADM2" or "API\_TRAFFIC" or 93 more
 
 Filters results by annotation tag. Matches annotations carrying at least one of the given tags.
 
@@ -838,7 +838,7 @@ minLength2
 
 <summary>
 
-result: object {annotations }
+result: object { annotations }
 
 </summary>
 
@@ -846,7 +846,7 @@ result: object {annotations }
 
 <summary>
 
-annotations: array of object {id, asns, asnsDetails, 15 more }
+annotations: array of object { id, asns, asnsDetails, 15 more }
 
 </summary>
 
@@ -862,7 +862,7 @@ asns: array of number
 
 <summary>
 
-asnsDetails: array of object {asn, location, name }
+asnsDetails: array of object { asn, location, name }
 
 </summary>
 
@@ -874,7 +874,7 @@ asn: string
 
 <summary>
 
-location: object {code, name }
+location: object { code, name }
 
 </summary>
 
@@ -916,7 +916,7 @@ formatdate-time
 
 <summary>
 
-entities: array of object {entityLocation, entityName, entityType, entityValue }
+entities: array of object { entityLocation, entityName, entityType, entityValue }
 
 </summary>
 
@@ -962,7 +962,7 @@ locations: array of string
 
 <summary>
 
-locationsDetails: array of object {code, name }
+locationsDetails: array of object { code, name }
 
 </summary>
 
@@ -986,7 +986,7 @@ origins: array of string
 
 <summary>
 
-originsDetails: array of object {name, origin }
+originsDetails: array of object { name, origin }
 
 </summary>
 
@@ -1006,7 +1006,7 @@ origin: string
 
 <summary>
 
-outage: object {outageCause, outageType }
+outage: object { outageCause, outageType }
 
 </summary>
 

@@ -30,7 +30,7 @@ GET/accounts/{account\_id}/cloudforce-one/v2/threat-signals/search
 
 <summary>
 
-SearchSearchResponse object {count, results }
+SearchSearchResponse object { count, results }
 
 </summary>
 
@@ -46,7 +46,7 @@ minimum0
 
 <summary>
 
-results: array of object {article\_id, dataset\_id, event\_id, 3 more }
+results: array of object { article\_id, dataset\_id, event\_id, 3 more }
 
 </summary>
 

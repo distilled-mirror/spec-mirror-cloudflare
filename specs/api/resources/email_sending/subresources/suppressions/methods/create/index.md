@@ -54,6 +54,10 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 </details>
 
+##### Accepted Permissions (at least one required)
+
+`Email Sending Write`
+
 ##### P ath ParametersExpand Collapse
 
 account\_id: string
@@ -92,7 +96,7 @@ maxLength1000
 
 <summary>
 
-scope: optional object {type } or object {type, value }
+scope: optional object { type } or object { type, value }
 
 Where the suppression applies. Omit for <code>{ "type": "account" }</code>, which blocks the recipient for every sending domain of the account.
 
@@ -104,7 +108,7 @@ One of the following:
 
 <summary>
 
-Type object {type }
+Type object { type }
 
 </summary>
 
@@ -122,7 +126,7 @@ Blocks the recipient for every sending domain of the account.
 
 <summary>
 
-object {type, value }
+object { type, value }
 
 </summary>
 
@@ -162,7 +166,7 @@ messages: array of unknown
 
 <summary>
 
-result: object {id, scope }
+result: object { id, scope }
 
 </summary>
 
@@ -178,7 +182,7 @@ formatuuid
 
 <summary>
 
-scope: optional object {type } or object {type, value }
+scope: optional object { type } or object { type, value }
 
 Where the suppression applies: <code>account</code> for every sending domain of the account, or <code>sending_domain</code> for one envelope MAIL FROM domain.
 
@@ -190,7 +194,7 @@ One of the following:
 
 <summary>
 
-Type object {type }
+Type object { type }
 
 </summary>
 
@@ -208,7 +212,7 @@ Blocks the recipient for every sending domain of the account.
 
 <summary>
 
-object {type, value }
+object { type, value }
 
 </summary>
 

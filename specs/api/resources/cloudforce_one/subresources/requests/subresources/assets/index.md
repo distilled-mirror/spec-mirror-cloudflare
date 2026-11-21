@@ -42,7 +42,7 @@ DELETE/accounts/{account\_id}/cloudforce-one/requests/{request\_id}/asset/{asset
 
 <summary>
 
-AssetGetResponse object {id, name, created, 2 more }
+AssetGetResponse object { id, name, created, 2 more }
 
 </summary>
 
@@ -86,7 +86,7 @@ Asset file type.
 
 <summary>
 
-AssetCreateResponse object {id, name, created, 2 more }
+AssetCreateResponse object { id, name, created, 2 more }
 
 </summary>
 
@@ -130,7 +130,7 @@ Asset file type.
 
 <summary>
 
-AssetUpdateResponse object {id, name, created, 2 more }
+AssetUpdateResponse object { id, name, created, 2 more }
 
 </summary>
 
@@ -174,7 +174,7 @@ Asset file type.
 
 <summary>
 
-AssetDeleteResponse object {errors, messages, success }
+AssetDeleteResponse object { errors, messages, success }
 
 </summary>
 
@@ -182,7 +182,7 @@ AssetDeleteResponse object {errors, messages, success }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -204,7 +204,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -224,7 +224,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -246,7 +246,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 

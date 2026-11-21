@@ -38,7 +38,7 @@ The preferred authorization scheme for interacting with the Cloudflare API. [Cre
 
 <summary>
 
-records: array of object {content, headers }
+records: array of object { content, headers }
 
 </summary>
 

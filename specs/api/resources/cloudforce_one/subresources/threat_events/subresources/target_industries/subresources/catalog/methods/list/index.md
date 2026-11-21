@@ -54,7 +54,7 @@ Account ID.
 
 <summary>
 
-items: object {type }
+items: object { type }
 
 </summary>
 

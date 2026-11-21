@@ -60,6 +60,10 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 </details>
 
+##### Accepted Permissions (at least one required)
+
+`AI Search Metadata Read``AI Search Write``AI Search Read``Auto Rag Write``Auto Rag Read`
+
 ##### P ath ParametersExpand Collapse
 
 account\_id: string
@@ -86,7 +90,7 @@ job\_id: string
 
 <summary>
 
-result: object {id, source, description, 4 more }
+result: object { id, source, description, 4 more }
 
 </summary>
 
@@ -98,7 +102,7 @@ id: string
 
 <summary>
 
-source: "user"or "schedule"
+source: "user" or "schedule"
 
 </summary>
 

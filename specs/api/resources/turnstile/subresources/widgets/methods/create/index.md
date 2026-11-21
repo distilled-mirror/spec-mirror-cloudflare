@@ -68,99 +68,6 @@ maxLength32
 
 [Link to this property](#)%20turnstile.widgets%20%3E%20(method)%20create%20%3E%20(params)%20default%20%3E%20(param)%20account_id%20%3E%20(schema)>)
 
-##### Q uery ParametersExpand Collapse
-
-<details>
-
-<summary>
-
-direction: optional "asc"or "desc"
-
-Direction to order widgets.
-
-</summary>
-
-One of the following:
-
-"asc"
-
-<a href="#">Link to this property</a>
-
-"desc"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-[Link to this property](#)%20turnstile.widgets%20%3E%20(method)%20create%20%3E%20(params)%20default%20%3E%20(param)%20direction%20%3E%20(schema)>)
-
-filter: optional string
-
-Filter widgets by field. The `name` field uses case-insensitive substring matching; `sitekey` uses exact matching. Format: `field:value`
-
-Supported fields:
-
-- `name` - Filter by widget name (e.g., `filter=name:login-form`)
-- `sitekey` - Filter by sitekey (e.g., `filter=sitekey:0x4AAA`)
-
-Returns 400 Bad Request if the field is unsupported or format is invalid. An empty filter value returns all results.
-
-[Link to this property](#)%20turnstile.widgets%20%3E%20(method)%20create%20%3E%20(params)%20default%20%3E%20(param)%20filter%20%3E%20(schema)>)
-
-<details>
-
-<summary>
-
-order: optional "id"or "sitekey"or "name"or 2 more
-
-Field to order widgets by.
-
-</summary>
-
-One of the following:
-
-"id"
-
-<a href="#">Link to this property</a>
-
-"sitekey"
-
-<a href="#">Link to this property</a>
-
-"name"
-
-<a href="#">Link to this property</a>
-
-"created\_on"
-
-<a href="#">Link to this property</a>
-
-"modified\_on"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-[Link to this property](#)%20turnstile.widgets%20%3E%20(method)%20create%20%3E%20(params)%20default%20%3E%20(param)%20order%20%3E%20(schema)>)
-
-page: optional number
-
-Page number of paginated results.
-
-minimum1
-
-[Link to this property](#)%20turnstile.widgets%20%3E%20(method)%20create%20%3E%20(params)%20default%20%3E%20(param)%20page%20%3E%20(schema)>)
-
-per\_page: optional number
-
-Number of items per page.
-
-maximum1000
-
-minimum5
-
-[Link to this property](#)%20turnstile.widgets%20%3E%20(method)%20create%20%3E%20(params)%20default%20%3E%20(param)%20per_page%20%3E%20(schema)>)
-
 ##### Body ParametersJSONExpand Collapse
 
 domains: array of [WidgetDomain](<https://developers.cloudflare.com/api/resources/turnstile#(resource)%20turnstile.widgets%20%3E%20(model)%20widget_domain%20%3E%20(schema)>)
@@ -173,7 +80,7 @@ maxLength10
 
 <summary>
 
-mode: "non-interactive"or "invisible"or "managed"
+mode: "non-interactive" or "invisible" or "managed"
 
 Widget Mode
 
@@ -217,7 +124,7 @@ If bot\_fight\_mode is set to `true`, Cloudflare issues computationally expensiv
 
 <summary>
 
-clearance\_level: optional "no\_clearance"or "jschallenge"or "managed"or "interactive"
+clearance\_level: optional "no\_clearance" or "jschallenge" or "managed" or "interactive"
 
 If Turnstile is embedded on a Cloudflare site and the widget should grant challenge clearance, this setting can determine the clearance level to be set
 
@@ -261,7 +168,7 @@ Do not show any Cloudflare branding on the widget (ENT only).
 
 <summary>
 
-region: optional "world"or "china"
+region: optional "world" or "china"
 
 Region where this widget can be used. This cannot be changed after creation.
 
@@ -309,7 +216,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -351,7 +258,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -393,7 +300,7 @@ If bot\_fight\_mode is set to <code>true</code>, Cloudflare issues computational
 
 <summary>
 
-clearance\_level: "no\_clearance"or "jschallenge"or "managed"or "interactive"
+clearance\_level: "no\_clearance" or "jschallenge" or "managed" or "interactive"
 
 If Turnstile is embedded on a Cloudflare site and the widget should grant challenge clearance, this setting can determine the clearance level to be set
 
@@ -445,7 +352,7 @@ Return the Ephemeral ID in /siteverify (ENT only).
 
 <summary>
 
-mode: "non-interactive"or "invisible"or "managed"
+mode: "non-interactive" or "invisible" or "managed"
 
 Widget Mode
 
@@ -497,7 +404,7 @@ Do not show any Cloudflare branding on the widget (ENT only).
 
 <summary>
 
-region: "world"or "china"
+region: "world" or "china"
 
 Region where this widget can be used. This cannot be changed after creation.
 
@@ -535,7 +442,7 @@ maxLength32
 
 <summary>
 
-deployed\_via: optional "wrangler"or "dashboard"or "spin"or 2 more
+deployed\_via: optional "wrangler" or "dashboard" or "spin" or 2 more
 
 Origin that created this widget, recorded at creation time and immutable afterward. Server-derived from the create request; not client-settable. Omitted from the response for widgets created before this field existed.
 
@@ -571,7 +478,7 @@ One of the following:
 
 <summary>
 
-last\_modified\_via: optional "wrangler"or "dashboard"or "spin"or 2 more
+last\_modified\_via: optional "wrangler" or "dashboard" or "spin" or 2 more
 
 Origin of the most recent mutation (create, update, delete, or secret rotation). Server-derived; not client-settable. Omitted for widgets last mutated before this field existed.
 
@@ -611,7 +518,7 @@ One of the following:
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object { count, page, per\_page, total\_count }
 
 </summary>
 

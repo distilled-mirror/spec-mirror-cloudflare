@@ -46,7 +46,7 @@ DELETE/accounts/{account\_id}/secondary\_dns/tsigs/{tsig\_id}
 
 <summary>
 
-TSIG object {id, algo, name, secret }
+TSIG object { id, algo, name, secret }
 
 </summary>
 
@@ -80,7 +80,7 @@ TSIG secret.
 
 <summary>
 
-TSIGDeleteResponse object {id }
+TSIGDeleteResponse object { id }
 
 </summary>
 

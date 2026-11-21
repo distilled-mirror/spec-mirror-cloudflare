@@ -28,7 +28,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 <summary>
 
-AccessRequest object {action, allowed, app\_domain, 6 more }
+AccessRequest object { action, allowed, app\_domain, 6 more }
 
 </summary>
 
@@ -106,7 +106,7 @@ GET/accounts/{account\_id}/access/logs/scim/updates
 
 <summary>
 
-UpdateListResponse object {cf\_resource\_id, error\_description, idp\_id, 8 more }
+UpdateListResponse object { cf\_resource\_id, error\_description, idp\_id, 8 more }
 
 </summary>
 

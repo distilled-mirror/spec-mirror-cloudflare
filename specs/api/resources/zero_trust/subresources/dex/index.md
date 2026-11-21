@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 <summary>
 
-DigitalExperienceMonitor object {id, default, name }
+DigitalExperienceMonitor object { id, default, name }
 
 </summary>
 
@@ -54,7 +54,7 @@ name: string
 
 <summary>
 
-NetworkPath object {slots, sampling }
+NetworkPath object { slots, sampling }
 
 </summary>
 
@@ -62,7 +62,7 @@ NetworkPath object {slots, sampling }
 
 <summary>
 
-slots: array of object {id, clientToAppRttMs, clientToCfEgressRttMs, 3 more }
+slots: array of object { id, clientToAppRttMs, clientToCfEgressRttMs, 3 more }
 
 </summary>
 
@@ -110,7 +110,7 @@ Round trip time in ms of the client to ISP mile
 
 <summary>
 
-sampling: optional object {unit, value }
+sampling: optional object { unit, value }
 
 Specifies the sampling applied, if any, to the slots response. When sampled, results shown represent the first test run to the start of each sampling interval.
 
@@ -136,7 +136,7 @@ value: number
 
 <summary>
 
-NetworkPathResponse object {id, deviceName, interval, 4 more }
+NetworkPathResponse object { id, deviceName, interval, 4 more }
 
 </summary>
 
@@ -186,7 +186,7 @@ The host of the Traceroute synthetic application test.
 
 <summary>
 
-Percentiles object {p50, p90, p95, p99 }
+Percentiles object { p50, p90, p95, p99 }
 
 </summary>
 
@@ -230,7 +230,7 @@ GET/accounts/{account\_id}/dex/warp-change-events
 
 <summary>
 
-WARPChangeEventGetResponse = array of object {account\_name, account\_tag, device\_id, 7 more } or object {device\_id, device\_registration, from, 6 more }
+WARPChangeEventGetResponse = array of object { account\_name, account\_tag, device\_id, 7 more } or object { device\_id, device\_registration, from, 6 more }
 
 </summary>
 
@@ -240,7 +240,7 @@ One of the following:
 
 <summary>
 
-DigitalExperienceMonitoringWARPToggleChangeEvent object {account\_name, account\_tag, device\_id, 7 more }
+DigitalExperienceMonitoringWARPToggleChangeEvent object { account\_name, account\_tag, device\_id, 7 more }
 
 </summary>
 
@@ -306,7 +306,7 @@ formatdate-time
 
 <summary>
 
-toggle: optional "on"or "off"
+toggle: optional "on" or "off"
 
 The state of the WARP toggle.
 
@@ -340,7 +340,7 @@ Email tied to the device.
 
 <summary>
 
-DigitalExperienceMonitoringWARPConfigChangeEvent object {device\_id, device\_registration, from, 6 more }
+DigitalExperienceMonitoringWARPConfigChangeEvent object { device\_id, device\_registration, from, 6 more }
 
 </summary>
 
@@ -366,7 +366,7 @@ maxLength36
 
 <summary>
 
-from: optional object {account\_name, account\_tag, config\_name }
+from: optional object { account\_name, account\_tag, config\_name }
 
 The details for the WARP configuration that was switched from.
 
@@ -428,7 +428,7 @@ formatdate-time
 
 <summary>
 
-to: optional object {account\_name, account\_tag, config\_name }
+to: optional object { account\_name, account\_tag, config\_name }
 
 The details for the WARP configuration that was switched to.
 
@@ -488,7 +488,7 @@ POST/accounts/{account\_id}/dex/commands
 
 <summary>
 
-CommandListResponse object {commands }
+CommandListResponse object { commands }
 
 </summary>
 
@@ -496,7 +496,7 @@ CommandListResponse object {commands }
 
 <summary>
 
-commands: optional array of object {id, completed\_date, created\_date, 6 more }
+commands: optional array of object { id, completed\_date, created\_date, 6 more }
 
 </summary>
 
@@ -554,7 +554,7 @@ user\_email: optional string
 
 <summary>
 
-CommandCreateResponse object {commands }
+CommandCreateResponse object { commands }
 
 </summary>
 
@@ -562,7 +562,7 @@ CommandCreateResponse object {commands }
 
 <summary>
 
-commands: optional array of object {id, args, device\_id, 3 more }
+commands: optional array of object { id, args, device\_id, 3 more }
 
 List of created commands
 
@@ -596,7 +596,7 @@ Unique identifier for the device registration
 
 <summary>
 
-status: optional "PENDING\_EXEC"or "PENDING\_UPLOAD"or "SUCCESS"or "FAILED"
+status: optional "PENDING\_EXEC" or "PENDING\_UPLOAD" or "SUCCESS" or "FAILED"
 
 Current status of the command
 
@@ -650,7 +650,7 @@ GET/accounts/{account\_id}/dex/commands/devices
 
 <summary>
 
-DeviceListResponse object {devices }
+DeviceListResponse object { devices }
 
 </summary>
 
@@ -658,7 +658,7 @@ DeviceListResponse object {devices }
 
 <summary>
 
-devices: optional array of object {deviceId, deviceName, eligible, 7 more }
+devices: optional array of object { deviceId, deviceName, eligible, 7 more }
 
 List of eligible devices
 
@@ -748,7 +748,7 @@ GET/accounts/{account\_id}/dex/commands/quota
 
 <summary>
 
-QuotaGetResponse object {quota, quota\_usage, reset\_time }
+QuotaGetResponse object { quota, quota\_usage, reset\_time }
 
 </summary>
 
@@ -788,7 +788,7 @@ GET/accounts/{account\_id}/dex/colos
 
 <summary>
 
-ColoListResponse object {airportCode, city, countryCode }
+ColoListResponse object { airportCode, city, countryCode }
 
 </summary>
 
@@ -830,7 +830,7 @@ GET/accounts/{account\_id}/dex/fleet-status/over-time
 
 <summary>
 
-LiveStat object {uniqueDevicesTotal, value }
+LiveStat object { uniqueDevicesTotal, value }
 
 </summary>
 
@@ -852,7 +852,7 @@ value: optional string
 
 <summary>
 
-FleetStatusLiveResponse object {deviceStats }
+FleetStatusLiveResponse object { deviceStats }
 
 </summary>
 
@@ -860,7 +860,7 @@ FleetStatusLiveResponse object {deviceStats }
 
 <summary>
 
-deviceStats: optional object {byColo, byMode, byPlatform, 3 more }
+deviceStats: optional object { byColo, byMode, byPlatform, 3 more }
 
 </summary>
 
@@ -992,7 +992,7 @@ Number of unique devices
 
 <summary>
 
-FleetStatusOverTimeResponse object {deviceStats }
+FleetStatusOverTimeResponse object { deviceStats }
 
 </summary>
 
@@ -1000,7 +1000,7 @@ FleetStatusOverTimeResponse object {deviceStats }
 
 <summary>
 
-deviceStats: optional object {byMode, byStatus, uniqueDevicesTotal }
+deviceStats: optional object { byMode, byStatus, uniqueDevicesTotal }
 
 </summary>
 
@@ -1008,7 +1008,7 @@ deviceStats: optional object {byMode, byStatus, uniqueDevicesTotal }
 
 <summary>
 
-byMode: optional array of object {timestamp, uniqueDevicesTotal, value }
+byMode: optional array of object { timestamp, uniqueDevicesTotal, value }
 
 </summary>
 
@@ -1034,7 +1034,7 @@ value: optional string
 
 <summary>
 
-byStatus: optional array of object {timestamp, uniqueDevicesTotal, value }
+byStatus: optional array of object { timestamp, uniqueDevicesTotal, value }
 
 </summary>
 
@@ -1082,7 +1082,7 @@ GET/accounts/{account\_id}/dex/fleet-status/devices
 
 <summary>
 
-DeviceListResponse object {colo, deviceId, mode, 40 more }
+DeviceListResponse object { colo, deviceId, mode, 40 more }
 
 </summary>
 
@@ -1160,7 +1160,7 @@ formatfloat
 
 <summary>
 
-cpuPctByApp: optional array of object {cpu\_pct, name }
+cpuPctByApp: optional array of object { cpu\_pct, name }
 
 </summary>
 
@@ -1190,7 +1190,7 @@ Application name.
 
 <summary>
 
-deviceIpv4: optional object {address, asn, aso, 4 more }
+deviceIpv4: optional object { address, asn, aso, 4 more }
 
 </summary>
 
@@ -1210,7 +1210,7 @@ aso: optional string
 
 <summary>
 
-location: optional object {city, country\_iso, state\_iso, zip }
+location: optional object { city, country\_iso, state\_iso, zip }
 
 </summary>
 
@@ -1256,7 +1256,7 @@ IP version (<code>1</code> for IPv4, <code>2</code> for IPv6, <code>0</code> if 
 
 <summary>
 
-deviceIpv6: optional object {address, asn, aso, 4 more }
+deviceIpv6: optional object { address, asn, aso, 4 more }
 
 </summary>
 
@@ -1276,7 +1276,7 @@ aso: optional string
 
 <summary>
 
-location: optional object {city, country\_iso, state\_iso, zip }
+location: optional object { city, country\_iso, state\_iso, zip }
 
 </summary>
 
@@ -1368,7 +1368,7 @@ firewallEnabled: optional boolean
 
 <summary>
 
-gatewayIpv4: optional object {address, asn, aso, 4 more }
+gatewayIpv4: optional object { address, asn, aso, 4 more }
 
 </summary>
 
@@ -1388,7 +1388,7 @@ aso: optional string
 
 <summary>
 
-location: optional object {city, country\_iso, state\_iso, zip }
+location: optional object { city, country\_iso, state\_iso, zip }
 
 </summary>
 
@@ -1434,7 +1434,7 @@ IP version (<code>1</code> for IPv4, <code>2</code> for IPv6, <code>0</code> if 
 
 <summary>
 
-gatewayIpv6: optional object {address, asn, aso, 4 more }
+gatewayIpv6: optional object { address, asn, aso, 4 more }
 
 </summary>
 
@@ -1454,7 +1454,7 @@ aso: optional string
 
 <summary>
 
-location: optional object {city, country\_iso, state\_iso, zip }
+location: optional object { city, country\_iso, state\_iso, zip }
 
 </summary>
 
@@ -1506,7 +1506,7 @@ formatint64
 
 <summary>
 
-ispIpv4: optional object {address, asn, aso, 4 more }
+ispIpv4: optional object { address, asn, aso, 4 more }
 
 </summary>
 
@@ -1526,7 +1526,7 @@ aso: optional string
 
 <summary>
 
-location: optional object {city, country\_iso, state\_iso, zip }
+location: optional object { city, country\_iso, state\_iso, zip }
 
 </summary>
 
@@ -1572,7 +1572,7 @@ IP version (<code>1</code> for IPv4, <code>2</code> for IPv6, <code>0</code> if 
 
 <summary>
 
-ispIpv6: optional object {address, asn, aso, 4 more }
+ispIpv6: optional object { address, asn, aso, 4 more }
 
 </summary>
 
@@ -1592,7 +1592,7 @@ aso: optional string
 
 <summary>
 
-location: optional object {city, country\_iso, state\_iso, zip }
+location: optional object { city, country\_iso, state\_iso, zip }
 
 </summary>
 
@@ -1676,7 +1676,7 @@ formatfloat
 
 <summary>
 
-ramUsedPctByApp: optional array of object {name, ram\_used\_pct }
+ramUsedPctByApp: optional array of object { name, ram\_used\_pct }
 
 </summary>
 
@@ -1712,7 +1712,7 @@ Device registration identifier (UUID v4). On multi-user devices, this uniquely i
 
 <summary>
 
-rtt: optional object {minRttUs, rttUs, rttVarUs }
+rtt: optional object { minRttUs, rttUs, rttVarUs }
 
 Round-trip time statistics for the WARP tunnel.
 
@@ -1722,7 +1722,7 @@ Round-trip time statistics for the WARP tunnel.
 
 <summary>
 
-minRttUs: optional object {downstream, upstream }
+minRttUs: optional object { downstream, upstream }
 
 Minimum round-trip time in microseconds.
 
@@ -1744,7 +1744,7 @@ upstream: optional number
 
 <summary>
 
-rttUs: optional object {downstream, upstream }
+rttUs: optional object { downstream, upstream }
 
 Round-trip time in microseconds.
 
@@ -1766,7 +1766,7 @@ upstream: optional number
 
 <summary>
 
-rttVarUs: optional object {downstream, upstream }
+rttVarUs: optional object { downstream, upstream }
 
 Round-trip time variance in microseconds.
 
@@ -1796,7 +1796,7 @@ switchLocked: optional boolean
 
 <summary>
 
-tunnelStats: optional object {bytesLost, bytesReceived, bytesRetransmitted, 6 more }
+tunnelStats: optional object { bytesLost, bytesReceived, bytesRetransmitted, 6 more }
 
 WARP tunnel packet and byte counters.
 
@@ -1806,7 +1806,7 @@ WARP tunnel packet and byte counters.
 
 <summary>
 
-bytesLost: optional object {downstream, upstream }
+bytesLost: optional object { downstream, upstream }
 
 Number of bytes lost, split by direction.
 
@@ -1828,7 +1828,7 @@ upstream: optional number
 
 <summary>
 
-bytesReceived: optional object {downstream, upstream }
+bytesReceived: optional object { downstream, upstream }
 
 Number of bytes received, split by direction.
 
@@ -1850,7 +1850,7 @@ upstream: optional number
 
 <summary>
 
-bytesRetransmitted: optional object {downstream, upstream }
+bytesRetransmitted: optional object { downstream, upstream }
 
 Number of bytes retransmitted, split by direction.
 
@@ -1872,7 +1872,7 @@ upstream: optional number
 
 <summary>
 
-bytesSent: optional object {downstream, upstream }
+bytesSent: optional object { downstream, upstream }
 
 Number of bytes sent, split by direction.
 
@@ -1894,7 +1894,7 @@ upstream: optional number
 
 <summary>
 
-packetsLost: optional object {downstream, upstream }
+packetsLost: optional object { downstream, upstream }
 
 Number of packets lost, split by direction.
 
@@ -1916,7 +1916,7 @@ upstream: optional number
 
 <summary>
 
-packetsReceived: optional object {downstream, upstream }
+packetsReceived: optional object { downstream, upstream }
 
 Number of packets received, split by direction.
 
@@ -1938,7 +1938,7 @@ upstream: optional number
 
 <summary>
 
-packetsRetransmitted: optional object {downstream, upstream }
+packetsRetransmitted: optional object { downstream, upstream }
 
 Number of packets retransmitted, split by direction.
 
@@ -1960,7 +1960,7 @@ upstream: optional number
 
 <summary>
 
-packetsSent: optional object {downstream, upstream }
+packetsSent: optional object { downstream, upstream }
 
 Number of packets sent, split by direction.
 
@@ -2014,7 +2014,7 @@ GET/accounts/{account\_id}/dex/http-tests/{test\_id}
 
 <summary>
 
-HTTPDetails object {host, httpStats, httpStatsByColo, 6 more }
+HTTPDetails object { host, httpStats, httpStatsByColo, 6 more }
 
 </summary>
 
@@ -2028,7 +2028,7 @@ The url of the HTTP synthetic application test.
 
 <summary>
 
-httpStats: optional object {availabilityPct, dnsResponseTimeMs, httpStatusCode, 3 more }
+httpStats: optional object { availabilityPct, dnsResponseTimeMs, httpStatusCode, 3 more }
 
 </summary>
 
@@ -2036,7 +2036,7 @@ httpStats: optional object {availabilityPct, dnsResponseTimeMs, httpStatusCode, 
 
 <summary>
 
-availabilityPct: object {slots, avg, max, min }
+availabilityPct: object { slots, avg, max, min }
 
 </summary>
 
@@ -2044,7 +2044,7 @@ availabilityPct: object {slots, avg, max, min }
 
 <summary>
 
-slots: array of object {timestamp, value }
+slots: array of object { timestamp, value }
 
 </summary>
 
@@ -2098,7 +2098,7 @@ dnsResponseTimeMs: <a href="https://developers.cloudflare.com/api/resources/zero
 
 <summary>
 
-httpStatusCode: array of object {status200, status300, status400, 2 more }
+httpStatusCode: array of object { status200, status300, status400, 2 more }
 
 </summary>
 
@@ -2148,7 +2148,7 @@ Count of unique devices that have run this test in the given time period.
 
 <summary>
 
-httpStatsByColo: optional array of object {availabilityPct, colo, dnsResponseTimeMs, 4 more }
+httpStatsByColo: optional array of object { availabilityPct, colo, dnsResponseTimeMs, 4 more }
 
 </summary>
 
@@ -2156,7 +2156,7 @@ httpStatsByColo: optional array of object {availabilityPct, colo, dnsResponseTim
 
 <summary>
 
-availabilityPct: object {slots, avg, max, min }
+availabilityPct: object { slots, avg, max, min }
 
 </summary>
 
@@ -2164,7 +2164,7 @@ availabilityPct: object {slots, avg, max, min }
 
 <summary>
 
-slots: array of object {timestamp, value }
+slots: array of object { timestamp, value }
 
 </summary>
 
@@ -2222,7 +2222,7 @@ dnsResponseTimeMs: <a href="https://developers.cloudflare.com/api/resources/zero
 
 <summary>
 
-httpStatusCode: array of object {status200, status300, status400, 2 more }
+httpStatusCode: array of object { status200, status300, status400, 2 more }
 
 </summary>
 
@@ -2340,7 +2340,7 @@ GET/accounts/{account\_id}/dex/http-tests/{test\_id}/percentiles
 
 <summary>
 
-HTTPDetailsPercentiles object {dnsResponseTimeMs, resourceFetchTimeMs, serverResponseTimeMs }
+HTTPDetailsPercentiles object { dnsResponseTimeMs, resourceFetchTimeMs, serverResponseTimeMs }
 
 </summary>
 
@@ -2364,7 +2364,7 @@ serverResponseTimeMs: optional <a href="https://developers.cloudflare.com/api/re
 
 <summary>
 
-TestStatOverTime object {slots, avg, max, min }
+TestStatOverTime object { slots, avg, max, min }
 
 </summary>
 
@@ -2372,7 +2372,7 @@ TestStatOverTime object {slots, avg, max, min }
 
 <summary>
 
-slots: array of object {timestamp, value }
+slots: array of object { timestamp, value }
 
 </summary>
 
@@ -2422,7 +2422,7 @@ GET/accounts/{account\_id}/dex/tests/overview
 
 <summary>
 
-AggregateTimePeriod object {units, value }
+AggregateTimePeriod object { units, value }
 
 </summary>
 
@@ -2430,7 +2430,7 @@ AggregateTimePeriod object {units, value }
 
 <summary>
 
-units: "hours"or "days"or "testRuns"
+units: "hours" or "days" or "testRuns"
 
 </summary>
 
@@ -2464,7 +2464,7 @@ value: number
 
 <summary>
 
-Tests object {overviewMetrics, tests }
+Tests object { overviewMetrics, tests }
 
 </summary>
 
@@ -2472,7 +2472,7 @@ Tests object {overviewMetrics, tests }
 
 <summary>
 
-overviewMetrics: object {testsTotal, avgHttpAvailabilityPct, avgTracerouteAvailabilityPct }
+overviewMetrics: object { testsTotal, avgHttpAvailabilityPct, avgTracerouteAvailabilityPct }
 
 </summary>
 
@@ -2506,7 +2506,7 @@ formatfloat
 
 <summary>
 
-tests: array of object {id, created, description, 13 more }
+tests: array of object { id, created, description, 13 more }
 
 array of test results objects.
 
@@ -2552,7 +2552,7 @@ The interval at which the synthetic application test is set to run.
 
 <summary>
 
-kind: "http"or "traceroute"
+kind: "http" or "traceroute"
 
 test type, http or traceroute
 
@@ -2586,7 +2586,7 @@ updated: string
 
 <summary>
 
-httpResults: optional object {resourceFetchTime }
+httpResults: optional object { resourceFetchTime }
 
 </summary>
 
@@ -2594,7 +2594,7 @@ httpResults: optional object {resourceFetchTime }
 
 <summary>
 
-resourceFetchTime: object {history, avgMs, overTime }
+resourceFetchTime: object { history, avgMs, overTime }
 
 </summary>
 
@@ -2602,7 +2602,7 @@ resourceFetchTime: object {history, avgMs, overTime }
 
 <summary>
 
-history: array of object {timePeriod, avgMs, deltaPct }
+history: array of object { timePeriod, avgMs, deltaPct }
 
 </summary>
 
@@ -2632,7 +2632,7 @@ avgMs: optional number
 
 <summary>
 
-overTime: optional object {timePeriod, values }
+overTime: optional object { timePeriod, values }
 
 </summary>
 
@@ -2644,7 +2644,7 @@ timePeriod: <a href="https://developers.cloudflare.com/api/resources/zero_trust#
 
 <summary>
 
-values: array of object {avgMs, timestamp }
+values: array of object { avgMs, timestamp }
 
 </summary>
 
@@ -2676,7 +2676,7 @@ timestamp: string
 
 <summary>
 
-httpResultsByColo: optional array of object {colo, resourceFetchTime }
+httpResultsByColo: optional array of object { colo, resourceFetchTime }
 
 </summary>
 
@@ -2690,7 +2690,7 @@ Cloudflare colo
 
 <summary>
 
-resourceFetchTime: object {history, avgMs, overTime }
+resourceFetchTime: object { history, avgMs, overTime }
 
 </summary>
 
@@ -2698,7 +2698,7 @@ resourceFetchTime: object {history, avgMs, overTime }
 
 <summary>
 
-history: array of object {timePeriod, avgMs, deltaPct }
+history: array of object { timePeriod, avgMs, deltaPct }
 
 </summary>
 
@@ -2728,7 +2728,7 @@ avgMs: optional number
 
 <summary>
 
-overTime: optional object {timePeriod, values }
+overTime: optional object { timePeriod, values }
 
 </summary>
 
@@ -2740,7 +2740,7 @@ timePeriod: <a href="https://developers.cloudflare.com/api/resources/zero_trust#
 
 <summary>
 
-values: array of object {avgMs, timestamp }
+values: array of object { avgMs, timestamp }
 
 </summary>
 
@@ -2812,7 +2812,7 @@ targeted: optional boolean
 
 <summary>
 
-tracerouteResults: optional object {roundTripTime }
+tracerouteResults: optional object { roundTripTime }
 
 </summary>
 
@@ -2820,7 +2820,7 @@ tracerouteResults: optional object {roundTripTime }
 
 <summary>
 
-roundTripTime: object {history, avgMs, overTime }
+roundTripTime: object { history, avgMs, overTime }
 
 </summary>
 
@@ -2828,7 +2828,7 @@ roundTripTime: object {history, avgMs, overTime }
 
 <summary>
 
-history: array of object {timePeriod, avgMs, deltaPct }
+history: array of object { timePeriod, avgMs, deltaPct }
 
 </summary>
 
@@ -2858,7 +2858,7 @@ avgMs: optional number
 
 <summary>
 
-overTime: optional object {timePeriod, values }
+overTime: optional object { timePeriod, values }
 
 </summary>
 
@@ -2870,7 +2870,7 @@ timePeriod: <a href="https://developers.cloudflare.com/api/resources/zero_trust#
 
 <summary>
 
-values: array of object {avgMs, timestamp }
+values: array of object { avgMs, timestamp }
 
 </summary>
 
@@ -2902,7 +2902,7 @@ timestamp: string
 
 <summary>
 
-tracerouteResultsByColo: optional array of object {colo, roundTripTime }
+tracerouteResultsByColo: optional array of object { colo, roundTripTime }
 
 </summary>
 
@@ -2916,7 +2916,7 @@ Cloudflare colo
 
 <summary>
 
-roundTripTime: object {history, avgMs, overTime }
+roundTripTime: object { history, avgMs, overTime }
 
 </summary>
 
@@ -2924,7 +2924,7 @@ roundTripTime: object {history, avgMs, overTime }
 
 <summary>
 
-history: array of object {timePeriod, avgMs, deltaPct }
+history: array of object { timePeriod, avgMs, deltaPct }
 
 </summary>
 
@@ -2954,7 +2954,7 @@ avgMs: optional number
 
 <summary>
 
-overTime: optional object {timePeriod, values }
+overTime: optional object { timePeriod, values }
 
 </summary>
 
@@ -2966,7 +2966,7 @@ timePeriod: <a href="https://developers.cloudflare.com/api/resources/zero_trust#
 
 <summary>
 
-values: array of object {avgMs, timestamp }
+values: array of object { avgMs, timestamp }
 
 </summary>
 
@@ -3014,7 +3014,7 @@ GET/accounts/{account\_id}/dex/tests/unique-devices
 
 <summary>
 
-UniqueDevices object {uniqueDevicesTotal }
+UniqueDevices object { uniqueDevicesTotal }
 
 </summary>
 
@@ -3042,7 +3042,7 @@ GET/accounts/{account\_id}/dex/traceroute-test-results/{test\_result\_id}/networ
 
 <summary>
 
-NetworkPathGetResponse object {hops, resultId, colo, 6 more }
+NetworkPathGetResponse object { hops, resultId, colo, 6 more }
 
 </summary>
 
@@ -3050,7 +3050,7 @@ NetworkPathGetResponse object {hops, resultId, colo, 6 more }
 
 <summary>
 
-hops: array of object {ttl, asn, aso, 6 more }
+hops: array of object { ttl, asn, aso, 6 more }
 
 An array of the hops taken by the device to reach the end destination.
 
@@ -3076,7 +3076,7 @@ ipAddress: optional string
 
 <summary>
 
-location: optional object {city, state, zip }
+location: optional object { city, state, zip }
 
 </summary>
 
@@ -3100,7 +3100,7 @@ zip: optional string
 
 <summary>
 
-mile: optional "client-to-app"or "client-to-cf-egress"or "client-to-cf-ingress"or "client-to-isp"
+mile: optional "client-to-app" or "client-to-cf-egress" or "client-to-cf-ingress" or "client-to-isp"
 
 </summary>
 
@@ -3168,7 +3168,7 @@ Name of the device associated with this network path response.
 
 <summary>
 
-execution\_context: optional "EXECUTION\_CONTEXT\_INVALID"or "OUT\_OF\_TUNNEL"or "IN\_TUNNEL"
+execution\_context: optional "EXECUTION\_CONTEXT\_INVALID" or "OUT\_OF\_TUNNEL" or "IN\_TUNNEL"
 
 Whether the test was run inside or outside of the WARP tunnel.
 
@@ -3240,7 +3240,7 @@ GET/accounts/{account\_id}/dex/traceroute-tests/{test\_id}/network-path
 
 <summary>
 
-Traceroute object {host, interval, kind, 5 more }
+Traceroute object { host, interval, kind, 5 more }
 
 </summary>
 
@@ -3304,7 +3304,7 @@ targeted: optional boolean
 
 <summary>
 
-tracerouteStats: optional object {availabilityPct, hopsCount, packetLossPct, 2 more }
+tracerouteStats: optional object { availabilityPct, hopsCount, packetLossPct, 2 more }
 
 </summary>
 
@@ -3312,7 +3312,7 @@ tracerouteStats: optional object {availabilityPct, hopsCount, packetLossPct, 2 m
 
 <summary>
 
-availabilityPct: object {slots, avg, max, min }
+availabilityPct: object { slots, avg, max, min }
 
 </summary>
 
@@ -3320,7 +3320,7 @@ availabilityPct: object {slots, avg, max, min }
 
 <summary>
 
-slots: array of object {timestamp, value }
+slots: array of object { timestamp, value }
 
 </summary>
 
@@ -3374,7 +3374,7 @@ hopsCount: <a href="https://developers.cloudflare.com/api/resources/zero_trust#(
 
 <summary>
 
-packetLossPct: object {slots, avg, max, min }
+packetLossPct: object { slots, avg, max, min }
 
 </summary>
 
@@ -3382,7 +3382,7 @@ packetLossPct: object {slots, avg, max, min }
 
 <summary>
 
-slots: array of object {timestamp, value }
+slots: array of object { timestamp, value }
 
 </summary>
 
@@ -3446,7 +3446,7 @@ Count of unique devices that have run this test in the given time period.
 
 <summary>
 
-tracerouteStatsByColo: optional array of object {availabilityPct, colo, hopsCount, 3 more }
+tracerouteStatsByColo: optional array of object { availabilityPct, colo, hopsCount, 3 more }
 
 </summary>
 
@@ -3454,7 +3454,7 @@ tracerouteStatsByColo: optional array of object {availabilityPct, colo, hopsCoun
 
 <summary>
 
-availabilityPct: object {slots, avg, max, min }
+availabilityPct: object { slots, avg, max, min }
 
 </summary>
 
@@ -3462,7 +3462,7 @@ availabilityPct: object {slots, avg, max, min }
 
 <summary>
 
-slots: array of object {timestamp, value }
+slots: array of object { timestamp, value }
 
 </summary>
 
@@ -3520,7 +3520,7 @@ hopsCount: <a href="https://developers.cloudflare.com/api/resources/zero_trust#(
 
 <summary>
 
-packetLossPct: object {slots, avg, max, min }
+packetLossPct: object { slots, avg, max, min }
 
 </summary>
 
@@ -3528,7 +3528,7 @@ packetLossPct: object {slots, avg, max, min }
 
 <summary>
 
-slots: array of object {timestamp, value }
+slots: array of object { timestamp, value }
 
 </summary>
 
@@ -3596,7 +3596,7 @@ Count of unique devices that have run this test in the given time period.
 
 <summary>
 
-TracerouteTestPercentilesResponse object {hopsCount, packetLossPct, roundTripTimeMs }
+TracerouteTestPercentilesResponse object { hopsCount, packetLossPct, roundTripTimeMs }
 
 </summary>
 
@@ -3644,7 +3644,7 @@ GET/accounts/{account\_id}/dex/rules
 
 <summary>
 
-RuleGetResponse object {id, created\_at, match, 4 more }
+RuleGetResponse object { id, created\_at, match, 4 more }
 
 </summary>
 
@@ -3676,7 +3676,7 @@ description: optional string
 
 <summary>
 
-targeted\_tests: optional array of object {data, enabled, name, test\_id }
+targeted\_tests: optional array of object { data, enabled, name, test\_id }
 
 </summary>
 
@@ -3718,7 +3718,7 @@ RuleDeleteResponse = boolean
 
 <summary>
 
-RuleUpdateResponse object {id, created\_at, match, 4 more }
+RuleUpdateResponse object { id, created\_at, match, 4 more }
 
 </summary>
 
@@ -3750,7 +3750,7 @@ description: optional string
 
 <summary>
 
-targeted\_tests: optional array of object {data, enabled, name, test\_id }
+targeted\_tests: optional array of object { data, enabled, name, test\_id }
 
 </summary>
 
@@ -3788,7 +3788,7 @@ updated\_at: optional string
 
 <summary>
 
-RuleCreateResponse object {id, created\_at, match, 4 more }
+RuleCreateResponse object { id, created\_at, match, 4 more }
 
 </summary>
 
@@ -3820,7 +3820,7 @@ description: optional string
 
 <summary>
 
-targeted\_tests: optional array of object {data, enabled, name, test\_id }
+targeted\_tests: optional array of object { data, enabled, name, test\_id }
 
 </summary>
 
@@ -3858,7 +3858,7 @@ updated\_at: optional string
 
 <summary>
 
-RuleListResponse object {rules }
+RuleListResponse object { rules }
 
 </summary>
 
@@ -3866,7 +3866,7 @@ RuleListResponse object {rules }
 
 <summary>
 
-rules: optional array of object {id, created\_at, match, 4 more }
+rules: optional array of object { id, created\_at, match, 4 more }
 
 </summary>
 
@@ -3898,7 +3898,7 @@ description: optional string
 
 <summary>
 
-targeted\_tests: optional array of object {data, enabled, name, test\_id }
+targeted\_tests: optional array of object { data, enabled, name, test\_id }
 
 </summary>
 
@@ -3950,7 +3950,7 @@ GET/accounts/{account\_id}/dex/devices/{device\_id}/isps
 
 <summary>
 
-ISPs object {isps }
+ISPs object { isps }
 
 </summary>
 
@@ -3958,7 +3958,7 @@ ISPs object {isps }
 
 <summary>
 
-isps: array of object {test\_id, test\_result\_id, time\_start, ip }
+isps: array of object { test\_id, test\_result\_id, time\_start, ip }
 
 </summary>
 
@@ -3986,7 +3986,7 @@ formatdate-time
 
 <summary>
 
-ip: optional object {address, asn, aso, 4 more }
+ip: optional object { address, asn, aso, 4 more }
 
 IP address information for the ISP hop. Fields marked as PII-gated (<code>name</code>, <code>address</code>, <code>netmask</code>, and all <code>location</code> sub-fields) will be returned as the literal string <code>"REDACTED"</code> for callers that do not have the PII permission. <code>asn</code>, <code>aso</code>, and <code>version</code> are always returned regardless of PII access.
 
@@ -4014,7 +4014,7 @@ Autonomous System Organization name.
 
 <summary>
 
-location: optional object {city, country\_iso, state\_iso, zip }
+location: optional object { city, country\_iso, state\_iso, zip }
 
 Geographic location information. All fields are returned as the literal string <code>"REDACTED"</code> for callers that do not have the PII permission.
 

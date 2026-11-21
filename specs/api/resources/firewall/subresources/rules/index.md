@@ -78,7 +78,7 @@ DELETE/zones/{zone\_id}/firewall/rules
 
 <summary>
 
-DeletedFilter object {id, deleted }
+DeletedFilter object { id, deleted }
 
 </summary>
 
@@ -106,7 +106,7 @@ When true, indicates that the firewall rule was deleted.
 
 <summary>
 
-FirewallRule object {id, action, description, 5 more }
+FirewallRule object { id, action, description, 5 more }
 
 </summary>
 
@@ -146,7 +146,7 @@ One of the following:
 
 <summary>
 
-FirewallFilter object {id, description, expression, 2 more }
+FirewallFilter object { id, description, expression, 2 more }
 
 </summary>
 
@@ -196,7 +196,7 @@ maxLength50
 
 <summary>
 
-DeletedFilter object {id, deleted }
+DeletedFilter object { id, deleted }
 
 </summary>
 
@@ -298,7 +298,7 @@ maxLength50
 
 <summary>
 
-Product = "zoneLockdown"or "uaBlock"or "bic"or 4 more
+Product = "zoneLockdown" or "uaBlock" or "bic" or 4 more
 
 A list of products to bypass for a request when using the <code>bypass</code> action.
 

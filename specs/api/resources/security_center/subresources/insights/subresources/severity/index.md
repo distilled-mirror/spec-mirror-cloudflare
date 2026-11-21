@@ -30,7 +30,7 @@ GET/{accounts\_or\_zones}/{account\_or\_zone\_id}/security-center/insights/sever
 
 <summary>
 
-SeverityGetResponse = array of object {count, value }
+SeverityGetResponse = array of object { count, value }
 
 </summary>
 

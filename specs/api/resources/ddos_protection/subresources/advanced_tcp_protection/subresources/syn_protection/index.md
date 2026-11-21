@@ -40,7 +40,7 @@ DELETE/accounts/{account\_id}/magic/advanced\_tcp\_protection/configs/syn\_prote
 
 <summary>
 
-FilterListResponse object {id, created\_on, expression, 2 more }
+FilterListResponse object { id, created\_on, expression, 2 more }
 
 </summary>
 
@@ -86,7 +86,7 @@ formatdate-time
 
 <summary>
 
-FilterCreateResponse object {id, created\_on, expression, 2 more }
+FilterCreateResponse object { id, created\_on, expression, 2 more }
 
 </summary>
 
@@ -132,7 +132,7 @@ formatdate-time
 
 <summary>
 
-FilterBulkDeleteResponse object {errors, messages, success }
+FilterBulkDeleteResponse object { errors, messages, success }
 
 </summary>
 
@@ -140,7 +140,7 @@ FilterBulkDeleteResponse object {errors, messages, success }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -162,7 +162,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -182,7 +182,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -204,7 +204,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -250,7 +250,7 @@ DELETE/accounts/{account\_id}/magic/advanced\_tcp\_protection/configs/syn\_prote
 
 <summary>
 
-ItemGetResponse object {id, created\_on, expression, 2 more }
+ItemGetResponse object { id, created\_on, expression, 2 more }
 
 </summary>
 
@@ -296,7 +296,7 @@ formatdate-time
 
 <summary>
 
-ItemEditResponse object {id, created\_on, expression, 2 more }
+ItemEditResponse object { id, created\_on, expression, 2 more }
 
 </summary>
 
@@ -342,7 +342,7 @@ formatdate-time
 
 <summary>
 
-ItemDeleteResponse object {errors, messages, success }
+ItemDeleteResponse object { errors, messages, success }
 
 </summary>
 
@@ -350,7 +350,7 @@ ItemDeleteResponse object {errors, messages, success }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -372,7 +372,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -392,7 +392,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -414,7 +414,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -460,7 +460,7 @@ DELETE/accounts/{account\_id}/magic/advanced\_tcp\_protection/configs/syn\_prote
 
 <summary>
 
-RuleListResponse object {id, burst\_sensitivity, created\_on, 6 more }
+RuleListResponse object { id, burst\_sensitivity, created\_on, 6 more }
 
 </summary>
 
@@ -530,7 +530,7 @@ The scope for the SYN Protection rule. Must be one of ‘global’, ‘region’
 
 <summary>
 
-RuleCreateResponse object {id, burst\_sensitivity, created\_on, 6 more }
+RuleCreateResponse object { id, burst\_sensitivity, created\_on, 6 more }
 
 </summary>
 
@@ -600,7 +600,7 @@ The scope for the SYN Protection rule. Must be one of ‘global’, ‘region’
 
 <summary>
 
-RuleBulkDeleteResponse object {errors, messages, success }
+RuleBulkDeleteResponse object { errors, messages, success }
 
 </summary>
 
@@ -608,7 +608,7 @@ RuleBulkDeleteResponse object {errors, messages, success }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -630,7 +630,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -650,7 +650,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -672,7 +672,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -718,7 +718,7 @@ DELETE/accounts/{account\_id}/magic/advanced\_tcp\_protection/configs/syn\_prote
 
 <summary>
 
-ItemGetResponse object {id, burst\_sensitivity, created\_on, 6 more }
+ItemGetResponse object { id, burst\_sensitivity, created\_on, 6 more }
 
 </summary>
 
@@ -788,7 +788,7 @@ The scope for the SYN Protection rule. Must be one of ‘global’, ‘region’
 
 <summary>
 
-ItemEditResponse object {id, burst\_sensitivity, created\_on, 6 more }
+ItemEditResponse object { id, burst\_sensitivity, created\_on, 6 more }
 
 </summary>
 
@@ -858,7 +858,7 @@ The scope for the SYN Protection rule. Must be one of ‘global’, ‘region’
 
 <summary>
 
-ItemDeleteResponse object {errors, messages, success }
+ItemDeleteResponse object { errors, messages, success }
 
 </summary>
 
@@ -866,7 +866,7 @@ ItemDeleteResponse object {errors, messages, success }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -888,7 +888,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -908,7 +908,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -930,7 +930,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 

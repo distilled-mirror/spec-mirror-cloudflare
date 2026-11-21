@@ -28,7 +28,7 @@ PATCH/accounts/{account\_id}/invoices
 
 <summary>
 
-InvoiceEditResponse = unknownor string
+InvoiceEditResponse = unknown or string
 
 </summary>
 

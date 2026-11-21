@@ -76,7 +76,7 @@ maxLength32
 
 <summary>
 
-direction: optional "asc"or "desc"
+direction: optional "asc" or "desc"
 
 The sorting direction.
 
@@ -118,7 +118,7 @@ Filter by exact policy name.
 
 <summary>
 
-order: optional "name"or "created\_at"
+order: optional "name" or "created\_at"
 
 Field to sort by.
 
@@ -168,7 +168,7 @@ Search term for filtering records. Behavior may change.
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -190,7 +190,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -210,7 +210,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -232,7 +232,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -258,7 +258,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional array of object {id, created\_at, enabled, 6 more }
+result: optional array of object { id, created\_at, enabled, 6 more }
 
 </summary>
 
@@ -328,7 +328,7 @@ minLength1
 
 <summary>
 
-targets: optional array of "SUBJECT"or "BODY"
+targets: optional array of "SUBJECT" or "BODY"
 
 Parts of the email the pattern is matched against.
 
@@ -356,7 +356,7 @@ One of the following:
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object { count, page, per\_page, total\_count }
 
 </summary>
 

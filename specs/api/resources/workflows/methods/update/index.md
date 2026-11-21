@@ -54,7 +54,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Workers Scripts Write`
+`Workers Editor``Workers Admin``Individual Workers Editor``Individual Workers Admin``Workers Scripts Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -92,7 +92,7 @@ minLength1
 
 <summary>
 
-concurrency: optional object {limit }
+concurrency: optional object { limit }
 
 </summary>
 
@@ -114,7 +114,7 @@ minimum1
 
 <summary>
 
-default\_retention: optional object {error\_retention, success\_retention }
+default\_retention: optional object { error\_retention, success\_retention }
 
 Default retention applied to instances of this version when they do not set their own retention.
 
@@ -124,7 +124,7 @@ Default retention applied to instances of this version when they do not set thei
 
 <summary>
 
-error\_retention: optional numberor string
+error\_retention: optional number or string
 
 Specifies the duration in milliseconds or as a string like ‘5 minutes’.
 
@@ -150,7 +150,7 @@ string
 
 <summary>
 
-success\_retention: optional numberor string
+success\_retention: optional number or string
 
 Specifies the duration in milliseconds or as a string like ‘5 minutes’.
 
@@ -180,7 +180,7 @@ string
 
 <summary>
 
-jurisdiction: optional "eu"or "fedramp"or "us"
+jurisdiction: optional "eu" or "fedramp" or "us"
 
 Jurisdiction where instances of this workflow run and store data. Can only be set when the workflow is created and cannot be changed afterwards; omit it to keep the existing jurisdiction.
 
@@ -208,7 +208,7 @@ One of the following:
 
 <summary>
 
-limits: optional object {steps }
+limits: optional object { steps }
 
 </summary>
 
@@ -228,7 +228,7 @@ minimum1
 
 <summary>
 
-schedules: optional array of object {cron }
+schedules: optional array of object { cron }
 
 </summary>
 
@@ -250,7 +250,7 @@ minLength1
 
 <summary>
 
-errors: array of object {code, message }
+errors: array of object { code, message }
 
 </summary>
 
@@ -270,7 +270,7 @@ message: string
 
 <summary>
 
-messages: array of object {code, message }
+messages: array of object { code, message }
 
 </summary>
 
@@ -290,7 +290,7 @@ message: string
 
 <summary>
 
-result: object {id, class\_name, created\_on, 8 more }
+result: object { id, class\_name, created\_on, 8 more }
 
 </summary>
 
@@ -352,7 +352,7 @@ formatuuid
 
 <summary>
 
-jurisdiction: optional "eu"or "fedramp"or "us"
+jurisdiction: optional "eu" or "fedramp" or "us"
 
 Jurisdiction where instances of this workflow run and store data. Set when the workflow is created and cannot be changed.
 
@@ -388,7 +388,7 @@ success: true
 
 <summary>
 
-result\_info: optional object {count, per\_page, total\_count, 3 more }
+result\_info: optional object { count, per\_page, total\_count, 3 more }
 
 </summary>
 

@@ -32,7 +32,7 @@ GET/accounts/{account\_id}/iam/permission\_groups/{permission\_group\_id}
 
 <summary>
 
-PermissionGroupListResponse object {id, meta, name }
+PermissionGroupListResponse object { id, meta, name }
 
 A named group of permissions that map to a group of operations against resources.
 
@@ -48,7 +48,7 @@ Identifier of the permission group.
 
 <summary>
 
-meta: optional object {category, deprecated, description, 5 more }
+meta: optional object { category, deprecated, description, 5 more }
 
 Attributes associated to the permission group.
 
@@ -122,7 +122,7 @@ Name of the permission group.
 
 <summary>
 
-PermissionGroupGetResponse object {id, meta, name }
+PermissionGroupGetResponse object { id, meta, name }
 
 A named group of permissions that map to a group of operations against resources.
 
@@ -138,7 +138,7 @@ Identifier of the permission group.
 
 <summary>
 
-meta: optional object {category, deprecated, description, 5 more }
+meta: optional object { category, deprecated, description, 5 more }
 
 Attributes associated to the permission group.
 
@@ -236,7 +236,7 @@ DELETE/accounts/{account\_id}/iam/resource\_groups/{resource\_group\_id}
 
 <summary>
 
-ResourceGroupListResponse object {id, scope, meta, name }
+ResourceGroupListResponse object { id, scope, meta, name }
 
 A group of scoped resources.
 
@@ -252,7 +252,7 @@ Identifier of the resource group.
 
 <summary>
 
-scope: object {key, objects }
+scope: object { key, objects }
 
 The scope associated to the resource group
 
@@ -268,7 +268,7 @@ This is a combination of pre-defined resource name and identifier (like Account 
 
 <summary>
 
-objects: array of object {key }
+objects: array of object { key }
 
 A list of scope objects for additional context.
 
@@ -292,7 +292,7 @@ This is a combination of pre-defined resource name and identifier (like Zone ID 
 
 <summary>
 
-meta: optional object {key, value }
+meta: optional object { key, value }
 
 Attributes associated to the resource group.
 
@@ -324,7 +324,7 @@ Name of the resource group.
 
 <summary>
 
-ResourceGroupGetResponse object {id, scope, meta, name }
+ResourceGroupGetResponse object { id, scope, meta, name }
 
 A group of scoped resources.
 
@@ -340,7 +340,7 @@ Identifier of the resource group.
 
 <summary>
 
-scope: object {key, objects }
+scope: object { key, objects }
 
 The scope associated to the resource group
 
@@ -356,7 +356,7 @@ This is a combination of pre-defined resource name and identifier (like Account 
 
 <summary>
 
-objects: array of object {key }
+objects: array of object { key }
 
 A list of scope objects for additional context.
 
@@ -380,7 +380,7 @@ This is a combination of pre-defined resource name and identifier (like Zone ID 
 
 <summary>
 
-meta: optional object {key, value }
+meta: optional object { key, value }
 
 Attributes associated to the resource group.
 
@@ -412,7 +412,7 @@ Name of the resource group.
 
 <summary>
 
-ResourceGroupCreateResponse object {id, scope, meta, name }
+ResourceGroupCreateResponse object { id, scope, meta, name }
 
 A group of scoped resources.
 
@@ -428,7 +428,7 @@ Identifier of the resource group.
 
 <summary>
 
-scope: object {key, objects }
+scope: object { key, objects }
 
 The scope associated to the resource group
 
@@ -444,7 +444,7 @@ This is a combination of pre-defined resource name and identifier (like Account 
 
 <summary>
 
-objects: array of object {key }
+objects: array of object { key }
 
 A list of scope objects for additional context.
 
@@ -468,7 +468,7 @@ This is a combination of pre-defined resource name and identifier (like Zone ID 
 
 <summary>
 
-meta: optional object {key, value }
+meta: optional object { key, value }
 
 Attributes associated to the resource group.
 
@@ -500,7 +500,7 @@ Name of the resource group.
 
 <summary>
 
-ResourceGroupUpdateResponse object {id, scope, meta, name }
+ResourceGroupUpdateResponse object { id, scope, meta, name }
 
 A group of scoped resources.
 
@@ -516,7 +516,7 @@ Identifier of the resource group.
 
 <summary>
 
-scope: object {key, objects }
+scope: object { key, objects }
 
 The scope associated to the resource group
 
@@ -532,7 +532,7 @@ This is a combination of pre-defined resource name and identifier (like Account 
 
 <summary>
 
-objects: array of object {key }
+objects: array of object { key }
 
 A list of scope objects for additional context.
 
@@ -556,7 +556,7 @@ This is a combination of pre-defined resource name and identifier (like Zone ID 
 
 <summary>
 
-meta: optional object {key, value }
+meta: optional object { key, value }
 
 Attributes associated to the resource group.
 
@@ -588,7 +588,7 @@ Name of the resource group.
 
 <summary>
 
-ResourceGroupDeleteResponse object {id }
+ResourceGroupDeleteResponse object { id }
 
 </summary>
 
@@ -634,7 +634,7 @@ DELETE/accounts/{account\_id}/iam/user\_groups/{user\_group\_id}
 
 <summary>
 
-UserGroupListResponse object {id, created\_on, modified\_on, 2 more }
+UserGroupListResponse object { id, created\_on, modified\_on, 2 more }
 
 A group of policies resources.
 
@@ -676,7 +676,7 @@ Name of the user group.
 
 <summary>
 
-policies: optional array of object {id, access, permission\_groups, resource\_groups }
+policies: optional array of object { id, access, permission\_groups, resource\_groups }
 
 Policies attached to the User group
 
@@ -692,7 +692,7 @@ Policy identifier.
 
 <summary>
 
-access: optional "allow"or "deny"
+access: optional "allow" or "deny"
 
 Allow or deny operations against the resources.
 
@@ -716,7 +716,7 @@ One of the following:
 
 <summary>
 
-permission\_groups: optional array of object {id, meta, name }
+permission\_groups: optional array of object { id, meta, name }
 
 A set of permission groups that are specified to the policy.
 
@@ -732,7 +732,7 @@ Identifier of the permission group.
 
 <summary>
 
-meta: optional object {category, deprecated, description, 5 more }
+meta: optional object { category, deprecated, description, 5 more }
 
 Attributes associated to the permission group.
 
@@ -806,7 +806,7 @@ Name of the permission group.
 
 <summary>
 
-resource\_groups: optional array of object {id, scope, meta, name }
+resource\_groups: optional array of object { id, scope, meta, name }
 
 A list of resource groups that the policy applies to.
 
@@ -822,7 +822,7 @@ Identifier of the resource group.
 
 <summary>
 
-scope: object {key, objects }
+scope: object { key, objects }
 
 The scope associated to the resource group
 
@@ -838,7 +838,7 @@ This is a combination of pre-defined resource name and identifier (like Account 
 
 <summary>
 
-objects: array of object {key }
+objects: array of object { key }
 
 A list of scope objects for additional context.
 
@@ -862,7 +862,7 @@ This is a combination of pre-defined resource name and identifier (like Zone ID 
 
 <summary>
 
-meta: optional object {key, value }
+meta: optional object { key, value }
 
 Attributes associated to the resource group.
 
@@ -902,7 +902,7 @@ Name of the resource group.
 
 <summary>
 
-UserGroupGetResponse object {id, created\_on, modified\_on, 2 more }
+UserGroupGetResponse object { id, created\_on, modified\_on, 2 more }
 
 A group of policies resources.
 
@@ -944,7 +944,7 @@ Name of the user group.
 
 <summary>
 
-policies: optional array of object {id, access, permission\_groups, resource\_groups }
+policies: optional array of object { id, access, permission\_groups, resource\_groups }
 
 Policies attached to the User group
 
@@ -960,7 +960,7 @@ Policy identifier.
 
 <summary>
 
-access: optional "allow"or "deny"
+access: optional "allow" or "deny"
 
 Allow or deny operations against the resources.
 
@@ -984,7 +984,7 @@ One of the following:
 
 <summary>
 
-permission\_groups: optional array of object {id, meta, name }
+permission\_groups: optional array of object { id, meta, name }
 
 A set of permission groups that are specified to the policy.
 
@@ -1000,7 +1000,7 @@ Identifier of the permission group.
 
 <summary>
 
-meta: optional object {category, deprecated, description, 5 more }
+meta: optional object { category, deprecated, description, 5 more }
 
 Attributes associated to the permission group.
 
@@ -1074,7 +1074,7 @@ Name of the permission group.
 
 <summary>
 
-resource\_groups: optional array of object {id, scope, meta, name }
+resource\_groups: optional array of object { id, scope, meta, name }
 
 A list of resource groups that the policy applies to.
 
@@ -1090,7 +1090,7 @@ Identifier of the resource group.
 
 <summary>
 
-scope: object {key, objects }
+scope: object { key, objects }
 
 The scope associated to the resource group
 
@@ -1106,7 +1106,7 @@ This is a combination of pre-defined resource name and identifier (like Account 
 
 <summary>
 
-objects: array of object {key }
+objects: array of object { key }
 
 A list of scope objects for additional context.
 
@@ -1130,7 +1130,7 @@ This is a combination of pre-defined resource name and identifier (like Zone ID 
 
 <summary>
 
-meta: optional object {key, value }
+meta: optional object { key, value }
 
 Attributes associated to the resource group.
 
@@ -1170,7 +1170,7 @@ Name of the resource group.
 
 <summary>
 
-UserGroupCreateResponse object {id, created\_on, modified\_on, 2 more }
+UserGroupCreateResponse object { id, created\_on, modified\_on, 2 more }
 
 A group of policies resources.
 
@@ -1212,7 +1212,7 @@ Name of the user group.
 
 <summary>
 
-policies: optional array of object {id, access, permission\_groups, resource\_groups }
+policies: optional array of object { id, access, permission\_groups, resource\_groups }
 
 Policies attached to the User group
 
@@ -1228,7 +1228,7 @@ Policy identifier.
 
 <summary>
 
-access: optional "allow"or "deny"
+access: optional "allow" or "deny"
 
 Allow or deny operations against the resources.
 
@@ -1252,7 +1252,7 @@ One of the following:
 
 <summary>
 
-permission\_groups: optional array of object {id, meta, name }
+permission\_groups: optional array of object { id, meta, name }
 
 A set of permission groups that are specified to the policy.
 
@@ -1268,7 +1268,7 @@ Identifier of the permission group.
 
 <summary>
 
-meta: optional object {category, deprecated, description, 5 more }
+meta: optional object { category, deprecated, description, 5 more }
 
 Attributes associated to the permission group.
 
@@ -1342,7 +1342,7 @@ Name of the permission group.
 
 <summary>
 
-resource\_groups: optional array of object {id, scope, meta, name }
+resource\_groups: optional array of object { id, scope, meta, name }
 
 A list of resource groups that the policy applies to.
 
@@ -1358,7 +1358,7 @@ Identifier of the resource group.
 
 <summary>
 
-scope: object {key, objects }
+scope: object { key, objects }
 
 The scope associated to the resource group
 
@@ -1374,7 +1374,7 @@ This is a combination of pre-defined resource name and identifier (like Account 
 
 <summary>
 
-objects: array of object {key }
+objects: array of object { key }
 
 A list of scope objects for additional context.
 
@@ -1398,7 +1398,7 @@ This is a combination of pre-defined resource name and identifier (like Zone ID 
 
 <summary>
 
-meta: optional object {key, value }
+meta: optional object { key, value }
 
 Attributes associated to the resource group.
 
@@ -1438,7 +1438,7 @@ Name of the resource group.
 
 <summary>
 
-UserGroupUpdateResponse object {id, created\_on, modified\_on, 2 more }
+UserGroupUpdateResponse object { id, created\_on, modified\_on, 2 more }
 
 A group of policies resources.
 
@@ -1480,7 +1480,7 @@ Name of the user group.
 
 <summary>
 
-policies: optional array of object {id, access, permission\_groups, resource\_groups }
+policies: optional array of object { id, access, permission\_groups, resource\_groups }
 
 Policies attached to the User group
 
@@ -1496,7 +1496,7 @@ Policy identifier.
 
 <summary>
 
-access: optional "allow"or "deny"
+access: optional "allow" or "deny"
 
 Allow or deny operations against the resources.
 
@@ -1520,7 +1520,7 @@ One of the following:
 
 <summary>
 
-permission\_groups: optional array of object {id, meta, name }
+permission\_groups: optional array of object { id, meta, name }
 
 A set of permission groups that are specified to the policy.
 
@@ -1536,7 +1536,7 @@ Identifier of the permission group.
 
 <summary>
 
-meta: optional object {category, deprecated, description, 5 more }
+meta: optional object { category, deprecated, description, 5 more }
 
 Attributes associated to the permission group.
 
@@ -1610,7 +1610,7 @@ Name of the permission group.
 
 <summary>
 
-resource\_groups: optional array of object {id, scope, meta, name }
+resource\_groups: optional array of object { id, scope, meta, name }
 
 A list of resource groups that the policy applies to.
 
@@ -1626,7 +1626,7 @@ Identifier of the resource group.
 
 <summary>
 
-scope: object {key, objects }
+scope: object { key, objects }
 
 The scope associated to the resource group
 
@@ -1642,7 +1642,7 @@ This is a combination of pre-defined resource name and identifier (like Account 
 
 <summary>
 
-objects: array of object {key }
+objects: array of object { key }
 
 A list of scope objects for additional context.
 
@@ -1666,7 +1666,7 @@ This is a combination of pre-defined resource name and identifier (like Zone ID 
 
 <summary>
 
-meta: optional object {key, value }
+meta: optional object { key, value }
 
 Attributes associated to the resource group.
 
@@ -1706,7 +1706,7 @@ Name of the resource group.
 
 <summary>
 
-UserGroupDeleteResponse object {id }
+UserGroupDeleteResponse object { id }
 
 </summary>
 
@@ -1752,7 +1752,7 @@ DELETE/accounts/{account\_id}/iam/user\_groups/{user\_group\_id}/members/{member
 
 <summary>
 
-MemberListResponse object {id, email, status }
+MemberListResponse object { id, email, status }
 
 Member attached to a User Group.
 
@@ -1776,7 +1776,7 @@ maxLength90
 
 <summary>
 
-status: optional "accepted"or "pending"
+status: optional "accepted" or "pending"
 
 The member’s status in the account.
 
@@ -1804,7 +1804,7 @@ One of the following:
 
 <summary>
 
-MemberGetResponse object {id, created\_at, email, 2 more }
+MemberGetResponse object { id, created\_at, email, 2 more }
 
 Detailed member information for a User Group member.
 
@@ -1836,7 +1836,7 @@ maxLength90
 
 <summary>
 
-status: optional "accepted"or "pending"
+status: optional "accepted" or "pending"
 
 The member’s status in the account.
 
@@ -1860,7 +1860,7 @@ One of the following:
 
 <summary>
 
-user: optional object {id, email, first\_name, last\_name }
+user: optional object { id, email, first\_name, last\_name }
 
 Details of the user associated with this membership.
 
@@ -1904,7 +1904,7 @@ User’s last name.
 
 <summary>
 
-MemberCreateResponse object {id, email, status }
+MemberCreateResponse object { id, email, status }
 
 Member attached to a User Group.
 
@@ -1928,7 +1928,7 @@ maxLength90
 
 <summary>
 
-status: optional "accepted"or "pending"
+status: optional "accepted" or "pending"
 
 The member’s status in the account.
 
@@ -1956,7 +1956,7 @@ One of the following:
 
 <summary>
 
-MemberUpdateResponse object {id, email, status }
+MemberUpdateResponse object { id, email, status }
 
 Member attached to a User Group.
 
@@ -1980,7 +1980,7 @@ maxLength90
 
 <summary>
 
-status: optional "accepted"or "pending"
+status: optional "accepted" or "pending"
 
 The member’s status in the account.
 
@@ -2008,7 +2008,7 @@ One of the following:
 
 <summary>
 
-MemberDeleteResponse object {id, email, status }
+MemberDeleteResponse object { id, email, status }
 
 Member attached to a User Group.
 
@@ -2032,7 +2032,7 @@ maxLength90
 
 <summary>
 
-status: optional "accepted"or "pending"
+status: optional "accepted" or "pending"
 
 The member’s status in the account.
 
@@ -2088,7 +2088,7 @@ POST/accounts/{account\_id}/sso\_connectors/{sso\_connector\_id}/begin\_verifica
 
 <summary>
 
-SSOListResponse object {id, created\_on, email\_domain, 4 more }
+SSOListResponse object { id, created\_on, email\_domain, 4 more }
 
 </summary>
 
@@ -2136,7 +2136,7 @@ Controls the display of FedRAMP language to the user during SSO login
 
 <summary>
 
-verification: optional object {code, status }
+verification: optional object { code, status }
 
 </summary>
 
@@ -2150,7 +2150,7 @@ DNS verification code. Add this entire string to the DNS TXT record of the email
 
 <summary>
 
-status: optional "awaiting"or "pending"or "failed"or "verified"
+status: optional "awaiting" or "pending" or "failed" or "verified"
 
 The status of the verification code from the verification process.
 
@@ -2190,7 +2190,7 @@ One of the following:
 
 <summary>
 
-SSOGetResponse object {id, created\_on, email\_domain, 4 more }
+SSOGetResponse object { id, created\_on, email\_domain, 4 more }
 
 </summary>
 
@@ -2238,7 +2238,7 @@ Controls the display of FedRAMP language to the user during SSO login
 
 <summary>
 
-verification: optional object {code, status }
+verification: optional object { code, status }
 
 </summary>
 
@@ -2252,7 +2252,7 @@ DNS verification code. Add this entire string to the DNS TXT record of the email
 
 <summary>
 
-status: optional "awaiting"or "pending"or "failed"or "verified"
+status: optional "awaiting" or "pending" or "failed" or "verified"
 
 The status of the verification code from the verification process.
 
@@ -2292,7 +2292,7 @@ One of the following:
 
 <summary>
 
-SSOCreateResponse object {id, created\_on, email\_domain, 4 more }
+SSOCreateResponse object { id, created\_on, email\_domain, 4 more }
 
 </summary>
 
@@ -2340,7 +2340,7 @@ Controls the display of FedRAMP language to the user during SSO login
 
 <summary>
 
-verification: optional object {code, status }
+verification: optional object { code, status }
 
 </summary>
 
@@ -2354,7 +2354,7 @@ DNS verification code. Add this entire string to the DNS TXT record of the email
 
 <summary>
 
-status: optional "awaiting"or "pending"or "failed"or "verified"
+status: optional "awaiting" or "pending" or "failed" or "verified"
 
 The status of the verification code from the verification process.
 
@@ -2394,7 +2394,7 @@ One of the following:
 
 <summary>
 
-SSOUpdateResponse object {id, created\_on, email\_domain, 4 more }
+SSOUpdateResponse object { id, created\_on, email\_domain, 4 more }
 
 </summary>
 
@@ -2442,7 +2442,7 @@ Controls the display of FedRAMP language to the user during SSO login
 
 <summary>
 
-verification: optional object {code, status }
+verification: optional object { code, status }
 
 </summary>
 
@@ -2456,7 +2456,7 @@ DNS verification code. Add this entire string to the DNS TXT record of the email
 
 <summary>
 
-status: optional "awaiting"or "pending"or "failed"or "verified"
+status: optional "awaiting" or "pending" or "failed" or "verified"
 
 The status of the verification code from the verification process.
 
@@ -2496,7 +2496,7 @@ One of the following:
 
 <summary>
 
-SSODeleteResponse object {id }
+SSODeleteResponse object { id }
 
 </summary>
 
@@ -2518,7 +2518,7 @@ minLength32
 
 <summary>
 
-SSOBeginVerificationResponse object {errors, messages, success }
+SSOBeginVerificationResponse object { errors, messages, success }
 
 </summary>
 
@@ -2526,7 +2526,7 @@ SSOBeginVerificationResponse object {errors, messages, success }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -2548,7 +2548,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -2568,7 +2568,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -2590,7 +2590,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -2652,7 +2652,7 @@ DELETE/accounts/{account\_id}/oauth\_clients/{oauth\_client\_id}/rotate\_secret
 
 <summary>
 
-OAuthClientListResponse object {client\_id, visibility, allowed\_cors\_origins, 17 more }
+OAuthClientListResponse object { client\_id, visibility, allowed\_cors\_origins, 17 more }
 
 Fields shared by OAuth client responses and create/update requests.
 
@@ -2668,7 +2668,7 @@ The unique identifier for an OAuth client.
 
 <summary>
 
-visibility: "public"or "private"
+visibility: "public" or "private"
 
 Visibility of the OAuth client.
 
@@ -2710,7 +2710,7 @@ URL of the home page of the client.
 
 <summary>
 
-client\_uri\_verification: optional object {status, text }
+client\_uri\_verification: optional object { status, text }
 
 Client URI domain control verification state.
 
@@ -2720,7 +2720,7 @@ Client URI domain control verification state.
 
 <summary>
 
-status: optional "pending"or "in\_progress"or "verified"or "failed"
+status: optional "pending" or "in\_progress" or "verified" or "failed"
 
 Current verification status for the client URI host.
 
@@ -2770,7 +2770,7 @@ formatdate-time
 
 <summary>
 
-grant\_types: optional array of "authorization\_code"or "refresh\_token"
+grant\_types: optional array of "authorization\_code" or "refresh\_token"
 
 Array of OAuth grant types the client is allowed to use. <code>authorization_code</code> is required; <code>refresh_token</code> may be included optionally.
 
@@ -2838,7 +2838,7 @@ Array of allowed redirect URIs for the client.
 
 <summary>
 
-response\_types: optional array of "token"or "id\_token"or "code"
+response\_types: optional array of "token" or "id\_token" or "code"
 
 Array of OAuth response types the client is allowed to use.
 
@@ -2872,7 +2872,7 @@ Array of OAuth scopes the client is allowed to request. Colon-delimited scopes a
 
 <summary>
 
-token\_endpoint\_auth\_method: optional "none"or "client\_secret\_basic"or "client\_secret\_post"
+token\_endpoint\_auth\_method: optional "none" or "client\_secret\_basic" or "client\_secret\_post"
 
 The authentication method the client uses at the token endpoint.
 
@@ -2918,7 +2918,7 @@ formatdate-time
 
 <summary>
 
-OAuthClientGetResponse object {client\_id, visibility, allowed\_cors\_origins, 17 more }
+OAuthClientGetResponse object { client\_id, visibility, allowed\_cors\_origins, 17 more }
 
 Fields shared by OAuth client responses and create/update requests.
 
@@ -2934,7 +2934,7 @@ The unique identifier for an OAuth client.
 
 <summary>
 
-visibility: "public"or "private"
+visibility: "public" or "private"
 
 Visibility of the OAuth client.
 
@@ -2976,7 +2976,7 @@ URL of the home page of the client.
 
 <summary>
 
-client\_uri\_verification: optional object {status, text }
+client\_uri\_verification: optional object { status, text }
 
 Client URI domain control verification state.
 
@@ -2986,7 +2986,7 @@ Client URI domain control verification state.
 
 <summary>
 
-status: optional "pending"or "in\_progress"or "verified"or "failed"
+status: optional "pending" or "in\_progress" or "verified" or "failed"
 
 Current verification status for the client URI host.
 
@@ -3036,7 +3036,7 @@ formatdate-time
 
 <summary>
 
-grant\_types: optional array of "authorization\_code"or "refresh\_token"
+grant\_types: optional array of "authorization\_code" or "refresh\_token"
 
 Array of OAuth grant types the client is allowed to use. <code>authorization_code</code> is required; <code>refresh_token</code> may be included optionally.
 
@@ -3104,7 +3104,7 @@ Array of allowed redirect URIs for the client.
 
 <summary>
 
-response\_types: optional array of "token"or "id\_token"or "code"
+response\_types: optional array of "token" or "id\_token" or "code"
 
 Array of OAuth response types the client is allowed to use.
 
@@ -3138,7 +3138,7 @@ Array of OAuth scopes the client is allowed to request. Colon-delimited scopes a
 
 <summary>
 
-token\_endpoint\_auth\_method: optional "none"or "client\_secret\_basic"or "client\_secret\_post"
+token\_endpoint\_auth\_method: optional "none" or "client\_secret\_basic" or "client\_secret\_post"
 
 The authentication method the client uses at the token endpoint.
 
@@ -3184,7 +3184,7 @@ formatdate-time
 
 <summary>
 
-OAuthClientCreateResponse object {client\_id, visibility, allowed\_cors\_origins, 18 more }
+OAuthClientCreateResponse object { client\_id, visibility, allowed\_cors\_origins, 18 more }
 
 Fields shared by OAuth client responses and create/update requests.
 
@@ -3200,7 +3200,7 @@ The unique identifier for an OAuth client.
 
 <summary>
 
-visibility: "public"or "private"
+visibility: "public" or "private"
 
 Visibility of the OAuth client.
 
@@ -3248,7 +3248,7 @@ URL of the home page of the client.
 
 <summary>
 
-client\_uri\_verification: optional object {status, text }
+client\_uri\_verification: optional object { status, text }
 
 Client URI domain control verification state.
 
@@ -3258,7 +3258,7 @@ Client URI domain control verification state.
 
 <summary>
 
-status: optional "pending"or "in\_progress"or "verified"or "failed"
+status: optional "pending" or "in\_progress" or "verified" or "failed"
 
 Current verification status for the client URI host.
 
@@ -3308,7 +3308,7 @@ formatdate-time
 
 <summary>
 
-grant\_types: optional array of "authorization\_code"or "refresh\_token"
+grant\_types: optional array of "authorization\_code" or "refresh\_token"
 
 Array of OAuth grant types the client is allowed to use. <code>authorization_code</code> is required; <code>refresh_token</code> may be included optionally.
 
@@ -3376,7 +3376,7 @@ Array of allowed redirect URIs for the client.
 
 <summary>
 
-response\_types: optional array of "token"or "id\_token"or "code"
+response\_types: optional array of "token" or "id\_token" or "code"
 
 Array of OAuth response types the client is allowed to use.
 
@@ -3410,7 +3410,7 @@ Array of OAuth scopes the client is allowed to request. Colon-delimited scopes a
 
 <summary>
 
-token\_endpoint\_auth\_method: optional "none"or "client\_secret\_basic"or "client\_secret\_post"
+token\_endpoint\_auth\_method: optional "none" or "client\_secret\_basic" or "client\_secret\_post"
 
 The authentication method the client uses at the token endpoint.
 
@@ -3456,7 +3456,7 @@ formatdate-time
 
 <summary>
 
-OAuthClientUpdateResponse object {client\_id, visibility, allowed\_cors\_origins, 17 more }
+OAuthClientUpdateResponse object { client\_id, visibility, allowed\_cors\_origins, 17 more }
 
 Fields shared by OAuth client responses and create/update requests.
 
@@ -3472,7 +3472,7 @@ The unique identifier for an OAuth client.
 
 <summary>
 
-visibility: "public"or "private"
+visibility: "public" or "private"
 
 Visibility of the OAuth client.
 
@@ -3514,7 +3514,7 @@ URL of the home page of the client.
 
 <summary>
 
-client\_uri\_verification: optional object {status, text }
+client\_uri\_verification: optional object { status, text }
 
 Client URI domain control verification state.
 
@@ -3524,7 +3524,7 @@ Client URI domain control verification state.
 
 <summary>
 
-status: optional "pending"or "in\_progress"or "verified"or "failed"
+status: optional "pending" or "in\_progress" or "verified" or "failed"
 
 Current verification status for the client URI host.
 
@@ -3574,7 +3574,7 @@ formatdate-time
 
 <summary>
 
-grant\_types: optional array of "authorization\_code"or "refresh\_token"
+grant\_types: optional array of "authorization\_code" or "refresh\_token"
 
 Array of OAuth grant types the client is allowed to use. <code>authorization_code</code> is required; <code>refresh_token</code> may be included optionally.
 
@@ -3642,7 +3642,7 @@ Array of allowed redirect URIs for the client.
 
 <summary>
 
-response\_types: optional array of "token"or "id\_token"or "code"
+response\_types: optional array of "token" or "id\_token" or "code"
 
 Array of OAuth response types the client is allowed to use.
 
@@ -3676,7 +3676,7 @@ Array of OAuth scopes the client is allowed to request. Colon-delimited scopes a
 
 <summary>
 
-token\_endpoint\_auth\_method: optional "none"or "client\_secret\_basic"or "client\_secret\_post"
+token\_endpoint\_auth\_method: optional "none" or "client\_secret\_basic" or "client\_secret\_post"
 
 The authentication method the client uses at the token endpoint.
 
@@ -3722,7 +3722,7 @@ formatdate-time
 
 <summary>
 
-OAuthClientDeleteResponse object {id }
+OAuthClientDeleteResponse object { id }
 
 </summary>
 
@@ -3744,7 +3744,7 @@ minLength32
 
 <summary>
 
-OAuthClientRotateSecretResponse object {client\_secret }
+OAuthClientRotateSecretResponse object { client\_secret }
 
 </summary>
 
@@ -3762,7 +3762,7 @@ The new client secret.
 
 <summary>
 
-OAuthClientDeleteRotatedSecretResponse object {id }
+OAuthClientDeleteRotatedSecretResponse object { id }
 
 </summary>
 
@@ -3792,7 +3792,7 @@ GET/oauth/scopes
 
 <summary>
 
-OAuthScopeListResponse object {id, name, category, scopes }
+OAuthScopeListResponse object { id, name, category, scopes }
 
 An available OAuth scope that can be assigned to an OAuth client.
 

@@ -32,7 +32,7 @@ GET/user/billing/profile
 
 <summary>
 
-ProfileGetResponse object {id, account\_type, address, 35 more }
+ProfileGetResponse object { id, account\_type, address, 35 more }
 
 </summary>
 

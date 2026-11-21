@@ -56,7 +56,7 @@ POST/accounts/{account\_id}/magic/ipsec\_tunnels/psk
 
 <summary>
 
-PSKMetadata object {last\_generated\_on }
+PSKMetadata object { last\_generated\_on }
 
 The PSK metadata that includes when the PSK was generated.
 
@@ -78,7 +78,7 @@ formatdate-time
 
 <summary>
 
-IPSECTunnelListResponse object {ipsec\_tunnels }
+IPSECTunnelListResponse object { ipsec\_tunnels }
 
 </summary>
 
@@ -86,7 +86,7 @@ IPSECTunnelListResponse object {ipsec\_tunnels }
 
 <summary>
 
-ipsec\_tunnels: optional array of object {id, cloudflare\_endpoint, interface\_address, 14 more }
+ipsec\_tunnels: optional array of object { id, cloudflare\_endpoint, interface\_address, 14 more }
 
 </summary>
 
@@ -132,7 +132,7 @@ True if automatic stateful return routing should be enabled for a tunnel, false 
 
 <summary>
 
-bgp: optional object {customer\_asn, export\_filter\_id, extra\_prefixes, 2 more }
+bgp: optional object { customer\_asn, export\_filter\_id, extra\_prefixes, 2 more }
 
 </summary>
 
@@ -187,7 +187,7 @@ In other words, MD5 keys may contain any printable ASCII character aside from ne
 
 <summary>
 
-bgp\_status: optional object {state, tcp\_established, updated\_at, 5 more }
+bgp\_status: optional object { state, tcp\_established, updated\_at, 5 more }
 
 </summary>
 
@@ -195,7 +195,7 @@ bgp\_status: optional object {state, tcp\_established, updated\_at, 5 more }
 
 <summary>
 
-state: "BGP\_DOWN"or "BGP\_UP"or "BGP\_ESTABLISHING"
+state: "BGP\_DOWN" or "BGP\_UP" or "BGP\_ESTABLISHING"
 
 </summary>
 
@@ -275,7 +275,7 @@ formatdate-time
 
 <summary>
 
-custom\_remote\_identities: optional object {fqdn\_id }
+custom\_remote\_identities: optional object { fqdn\_id }
 
 </summary>
 
@@ -309,7 +309,7 @@ An optional description forthe IPsec tunnel.
 
 <summary>
 
-health\_check: optional object {direction, enabled, rate, 2 more }
+health\_check: optional object { direction, enabled, rate, 2 more }
 
 </summary>
 
@@ -317,7 +317,7 @@ health\_check: optional object {direction, enabled, rate, 2 more }
 
 <summary>
 
-direction: optional "unidirectional"or "bidirectional"
+direction: optional "unidirectional" or "bidirectional"
 
 The direction of the flow of the healthcheck. Either unidirectional, where the probe comes to you via the tunnel and the result comes back to Cloudflare via the open Internet, or bidirectional where both the probe and result come and go via the tunnel.
 
@@ -353,7 +353,7 @@ How frequent the health check is run. The default value is <code>mid</code>.
 
 <summary>
 
-target: optional object {effective, saved } or string
+target: optional object { effective, saved } or string
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target. Must be in object form if the x-magic-new-hc-target header is set to true and string form if x-magic-new-hc-target is absent or set to false.
 
@@ -365,7 +365,7 @@ One of the following:
 
 <summary>
 
-MagicHealthCheckTarget object {effective, saved }
+MagicHealthCheckTarget object { effective, saved }
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target.
 
@@ -443,7 +443,7 @@ If <code>true</code>, then IPsec replay protection will be supported in the Clou
 
 <summary>
 
-IPSECTunnelGetResponse object {ipsec\_tunnel }
+IPSECTunnelGetResponse object { ipsec\_tunnel }
 
 </summary>
 
@@ -451,7 +451,7 @@ IPSECTunnelGetResponse object {ipsec\_tunnel }
 
 <summary>
 
-ipsec\_tunnel: optional object {id, cloudflare\_endpoint, interface\_address, 14 more }
+ipsec\_tunnel: optional object { id, cloudflare\_endpoint, interface\_address, 14 more }
 
 </summary>
 
@@ -497,7 +497,7 @@ True if automatic stateful return routing should be enabled for a tunnel, false 
 
 <summary>
 
-bgp: optional object {customer\_asn, export\_filter\_id, extra\_prefixes, 2 more }
+bgp: optional object { customer\_asn, export\_filter\_id, extra\_prefixes, 2 more }
 
 </summary>
 
@@ -552,7 +552,7 @@ In other words, MD5 keys may contain any printable ASCII character aside from ne
 
 <summary>
 
-bgp\_status: optional object {state, tcp\_established, updated\_at, 5 more }
+bgp\_status: optional object { state, tcp\_established, updated\_at, 5 more }
 
 </summary>
 
@@ -560,7 +560,7 @@ bgp\_status: optional object {state, tcp\_established, updated\_at, 5 more }
 
 <summary>
 
-state: "BGP\_DOWN"or "BGP\_UP"or "BGP\_ESTABLISHING"
+state: "BGP\_DOWN" or "BGP\_UP" or "BGP\_ESTABLISHING"
 
 </summary>
 
@@ -640,7 +640,7 @@ formatdate-time
 
 <summary>
 
-custom\_remote\_identities: optional object {fqdn\_id }
+custom\_remote\_identities: optional object { fqdn\_id }
 
 </summary>
 
@@ -674,7 +674,7 @@ An optional description forthe IPsec tunnel.
 
 <summary>
 
-health\_check: optional object {direction, enabled, rate, 2 more }
+health\_check: optional object { direction, enabled, rate, 2 more }
 
 </summary>
 
@@ -682,7 +682,7 @@ health\_check: optional object {direction, enabled, rate, 2 more }
 
 <summary>
 
-direction: optional "unidirectional"or "bidirectional"
+direction: optional "unidirectional" or "bidirectional"
 
 The direction of the flow of the healthcheck. Either unidirectional, where the probe comes to you via the tunnel and the result comes back to Cloudflare via the open Internet, or bidirectional where both the probe and result come and go via the tunnel.
 
@@ -718,7 +718,7 @@ How frequent the health check is run. The default value is <code>mid</code>.
 
 <summary>
 
-target: optional object {effective, saved } or string
+target: optional object { effective, saved } or string
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target. Must be in object form if the x-magic-new-hc-target header is set to true and string form if x-magic-new-hc-target is absent or set to false.
 
@@ -730,7 +730,7 @@ One of the following:
 
 <summary>
 
-MagicHealthCheckTarget object {effective, saved }
+MagicHealthCheckTarget object { effective, saved }
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target.
 
@@ -808,7 +808,7 @@ If <code>true</code>, then IPsec replay protection will be supported in the Clou
 
 <summary>
 
-IPSECTunnelCreateResponse object {id, cloudflare\_endpoint, interface\_address, 14 more }
+IPSECTunnelCreateResponse object { id, cloudflare\_endpoint, interface\_address, 14 more }
 
 </summary>
 
@@ -854,7 +854,7 @@ True if automatic stateful return routing should be enabled for a tunnel, false 
 
 <summary>
 
-bgp: optional object {customer\_asn, export\_filter\_id, extra\_prefixes, 2 more }
+bgp: optional object { customer\_asn, export\_filter\_id, extra\_prefixes, 2 more }
 
 </summary>
 
@@ -909,7 +909,7 @@ In other words, MD5 keys may contain any printable ASCII character aside from ne
 
 <summary>
 
-bgp\_status: optional object {state, tcp\_established, updated\_at, 5 more }
+bgp\_status: optional object { state, tcp\_established, updated\_at, 5 more }
 
 </summary>
 
@@ -917,7 +917,7 @@ bgp\_status: optional object {state, tcp\_established, updated\_at, 5 more }
 
 <summary>
 
-state: "BGP\_DOWN"or "BGP\_UP"or "BGP\_ESTABLISHING"
+state: "BGP\_DOWN" or "BGP\_UP" or "BGP\_ESTABLISHING"
 
 </summary>
 
@@ -997,7 +997,7 @@ formatdate-time
 
 <summary>
 
-custom\_remote\_identities: optional object {fqdn\_id }
+custom\_remote\_identities: optional object { fqdn\_id }
 
 </summary>
 
@@ -1031,7 +1031,7 @@ An optional description forthe IPsec tunnel.
 
 <summary>
 
-health\_check: optional object {direction, enabled, rate, 2 more }
+health\_check: optional object { direction, enabled, rate, 2 more }
 
 </summary>
 
@@ -1039,7 +1039,7 @@ health\_check: optional object {direction, enabled, rate, 2 more }
 
 <summary>
 
-direction: optional "unidirectional"or "bidirectional"
+direction: optional "unidirectional" or "bidirectional"
 
 The direction of the flow of the healthcheck. Either unidirectional, where the probe comes to you via the tunnel and the result comes back to Cloudflare via the open Internet, or bidirectional where both the probe and result come and go via the tunnel.
 
@@ -1075,7 +1075,7 @@ How frequent the health check is run. The default value is <code>mid</code>.
 
 <summary>
 
-target: optional object {effective, saved } or string
+target: optional object { effective, saved } or string
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target. Must be in object form if the x-magic-new-hc-target header is set to true and string form if x-magic-new-hc-target is absent or set to false.
 
@@ -1087,7 +1087,7 @@ One of the following:
 
 <summary>
 
-MagicHealthCheckTarget object {effective, saved }
+MagicHealthCheckTarget object { effective, saved }
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target.
 
@@ -1161,7 +1161,7 @@ If <code>true</code>, then IPsec replay protection will be supported in the Clou
 
 <summary>
 
-IPSECTunnelUpdateResponse object {modified, modified\_ipsec\_tunnel }
+IPSECTunnelUpdateResponse object { modified, modified\_ipsec\_tunnel }
 
 </summary>
 
@@ -1173,7 +1173,7 @@ modified: optional boolean
 
 <summary>
 
-modified\_ipsec\_tunnel: optional object {id, cloudflare\_endpoint, interface\_address, 14 more }
+modified\_ipsec\_tunnel: optional object { id, cloudflare\_endpoint, interface\_address, 14 more }
 
 </summary>
 
@@ -1219,7 +1219,7 @@ True if automatic stateful return routing should be enabled for a tunnel, false 
 
 <summary>
 
-bgp: optional object {customer\_asn, export\_filter\_id, extra\_prefixes, 2 more }
+bgp: optional object { customer\_asn, export\_filter\_id, extra\_prefixes, 2 more }
 
 </summary>
 
@@ -1274,7 +1274,7 @@ In other words, MD5 keys may contain any printable ASCII character aside from ne
 
 <summary>
 
-bgp\_status: optional object {state, tcp\_established, updated\_at, 5 more }
+bgp\_status: optional object { state, tcp\_established, updated\_at, 5 more }
 
 </summary>
 
@@ -1282,7 +1282,7 @@ bgp\_status: optional object {state, tcp\_established, updated\_at, 5 more }
 
 <summary>
 
-state: "BGP\_DOWN"or "BGP\_UP"or "BGP\_ESTABLISHING"
+state: "BGP\_DOWN" or "BGP\_UP" or "BGP\_ESTABLISHING"
 
 </summary>
 
@@ -1362,7 +1362,7 @@ formatdate-time
 
 <summary>
 
-custom\_remote\_identities: optional object {fqdn\_id }
+custom\_remote\_identities: optional object { fqdn\_id }
 
 </summary>
 
@@ -1396,7 +1396,7 @@ An optional description forthe IPsec tunnel.
 
 <summary>
 
-health\_check: optional object {direction, enabled, rate, 2 more }
+health\_check: optional object { direction, enabled, rate, 2 more }
 
 </summary>
 
@@ -1404,7 +1404,7 @@ health\_check: optional object {direction, enabled, rate, 2 more }
 
 <summary>
 
-direction: optional "unidirectional"or "bidirectional"
+direction: optional "unidirectional" or "bidirectional"
 
 The direction of the flow of the healthcheck. Either unidirectional, where the probe comes to you via the tunnel and the result comes back to Cloudflare via the open Internet, or bidirectional where both the probe and result come and go via the tunnel.
 
@@ -1440,7 +1440,7 @@ How frequent the health check is run. The default value is <code>mid</code>.
 
 <summary>
 
-target: optional object {effective, saved } or string
+target: optional object { effective, saved } or string
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target. Must be in object form if the x-magic-new-hc-target header is set to true and string form if x-magic-new-hc-target is absent or set to false.
 
@@ -1452,7 +1452,7 @@ One of the following:
 
 <summary>
 
-MagicHealthCheckTarget object {effective, saved }
+MagicHealthCheckTarget object { effective, saved }
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target.
 
@@ -1530,7 +1530,7 @@ If <code>true</code>, then IPsec replay protection will be supported in the Clou
 
 <summary>
 
-IPSECTunnelDeleteResponse object {deleted, deleted\_ipsec\_tunnel }
+IPSECTunnelDeleteResponse object { deleted, deleted\_ipsec\_tunnel }
 
 </summary>
 
@@ -1542,7 +1542,7 @@ deleted: optional boolean
 
 <summary>
 
-deleted\_ipsec\_tunnel: optional object {id, cloudflare\_endpoint, interface\_address, 14 more }
+deleted\_ipsec\_tunnel: optional object { id, cloudflare\_endpoint, interface\_address, 14 more }
 
 </summary>
 
@@ -1588,7 +1588,7 @@ True if automatic stateful return routing should be enabled for a tunnel, false 
 
 <summary>
 
-bgp: optional object {customer\_asn, export\_filter\_id, extra\_prefixes, 2 more }
+bgp: optional object { customer\_asn, export\_filter\_id, extra\_prefixes, 2 more }
 
 </summary>
 
@@ -1643,7 +1643,7 @@ In other words, MD5 keys may contain any printable ASCII character aside from ne
 
 <summary>
 
-bgp\_status: optional object {state, tcp\_established, updated\_at, 5 more }
+bgp\_status: optional object { state, tcp\_established, updated\_at, 5 more }
 
 </summary>
 
@@ -1651,7 +1651,7 @@ bgp\_status: optional object {state, tcp\_established, updated\_at, 5 more }
 
 <summary>
 
-state: "BGP\_DOWN"or "BGP\_UP"or "BGP\_ESTABLISHING"
+state: "BGP\_DOWN" or "BGP\_UP" or "BGP\_ESTABLISHING"
 
 </summary>
 
@@ -1731,7 +1731,7 @@ formatdate-time
 
 <summary>
 
-custom\_remote\_identities: optional object {fqdn\_id }
+custom\_remote\_identities: optional object { fqdn\_id }
 
 </summary>
 
@@ -1765,7 +1765,7 @@ An optional description forthe IPsec tunnel.
 
 <summary>
 
-health\_check: optional object {direction, enabled, rate, 2 more }
+health\_check: optional object { direction, enabled, rate, 2 more }
 
 </summary>
 
@@ -1773,7 +1773,7 @@ health\_check: optional object {direction, enabled, rate, 2 more }
 
 <summary>
 
-direction: optional "unidirectional"or "bidirectional"
+direction: optional "unidirectional" or "bidirectional"
 
 The direction of the flow of the healthcheck. Either unidirectional, where the probe comes to you via the tunnel and the result comes back to Cloudflare via the open Internet, or bidirectional where both the probe and result come and go via the tunnel.
 
@@ -1809,7 +1809,7 @@ How frequent the health check is run. The default value is <code>mid</code>.
 
 <summary>
 
-target: optional object {effective, saved } or string
+target: optional object { effective, saved } or string
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target. Must be in object form if the x-magic-new-hc-target header is set to true and string form if x-magic-new-hc-target is absent or set to false.
 
@@ -1821,7 +1821,7 @@ One of the following:
 
 <summary>
 
-MagicHealthCheckTarget object {effective, saved }
+MagicHealthCheckTarget object { effective, saved }
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target.
 
@@ -1899,7 +1899,7 @@ If <code>true</code>, then IPsec replay protection will be supported in the Clou
 
 <summary>
 
-IPSECTunnelBulkUpdateResponse object {modified, modified\_ipsec\_tunnels }
+IPSECTunnelBulkUpdateResponse object { modified, modified\_ipsec\_tunnels }
 
 </summary>
 
@@ -1911,7 +1911,7 @@ modified: optional boolean
 
 <summary>
 
-modified\_ipsec\_tunnels: optional array of object {id, cloudflare\_endpoint, interface\_address, 14 more }
+modified\_ipsec\_tunnels: optional array of object { id, cloudflare\_endpoint, interface\_address, 14 more }
 
 </summary>
 
@@ -1957,7 +1957,7 @@ True if automatic stateful return routing should be enabled for a tunnel, false 
 
 <summary>
 
-bgp: optional object {customer\_asn, export\_filter\_id, extra\_prefixes, 2 more }
+bgp: optional object { customer\_asn, export\_filter\_id, extra\_prefixes, 2 more }
 
 </summary>
 
@@ -2012,7 +2012,7 @@ In other words, MD5 keys may contain any printable ASCII character aside from ne
 
 <summary>
 
-bgp\_status: optional object {state, tcp\_established, updated\_at, 5 more }
+bgp\_status: optional object { state, tcp\_established, updated\_at, 5 more }
 
 </summary>
 
@@ -2020,7 +2020,7 @@ bgp\_status: optional object {state, tcp\_established, updated\_at, 5 more }
 
 <summary>
 
-state: "BGP\_DOWN"or "BGP\_UP"or "BGP\_ESTABLISHING"
+state: "BGP\_DOWN" or "BGP\_UP" or "BGP\_ESTABLISHING"
 
 </summary>
 
@@ -2100,7 +2100,7 @@ formatdate-time
 
 <summary>
 
-custom\_remote\_identities: optional object {fqdn\_id }
+custom\_remote\_identities: optional object { fqdn\_id }
 
 </summary>
 
@@ -2134,7 +2134,7 @@ An optional description forthe IPsec tunnel.
 
 <summary>
 
-health\_check: optional object {direction, enabled, rate, 2 more }
+health\_check: optional object { direction, enabled, rate, 2 more }
 
 </summary>
 
@@ -2142,7 +2142,7 @@ health\_check: optional object {direction, enabled, rate, 2 more }
 
 <summary>
 
-direction: optional "unidirectional"or "bidirectional"
+direction: optional "unidirectional" or "bidirectional"
 
 The direction of the flow of the healthcheck. Either unidirectional, where the probe comes to you via the tunnel and the result comes back to Cloudflare via the open Internet, or bidirectional where both the probe and result come and go via the tunnel.
 
@@ -2178,7 +2178,7 @@ How frequent the health check is run. The default value is <code>mid</code>.
 
 <summary>
 
-target: optional object {effective, saved } or string
+target: optional object { effective, saved } or string
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target. Must be in object form if the x-magic-new-hc-target header is set to true and string form if x-magic-new-hc-target is absent or set to false.
 
@@ -2190,7 +2190,7 @@ One of the following:
 
 <summary>
 
-MagicHealthCheckTarget object {effective, saved }
+MagicHealthCheckTarget object { effective, saved }
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target.
 
@@ -2268,7 +2268,7 @@ If <code>true</code>, then IPsec replay protection will be supported in the Clou
 
 <summary>
 
-IPSECTunnelPSKGenerateResponse object {ipsec\_tunnel\_id, psk, psk\_metadata }
+IPSECTunnelPSKGenerateResponse object { ipsec\_tunnel\_id, psk, psk\_metadata }
 
 </summary>
 
@@ -2300,7 +2300,7 @@ The PSK metadata that includes when the PSK was generated.
 
 <summary>
 
-IPSECTunnelPSKSetResponse object {successfully\_applied\_psks, unapplied\_psks }
+IPSECTunnelPSKSetResponse object { successfully\_applied\_psks, unapplied\_psks }
 
 </summary>
 
@@ -2308,7 +2308,7 @@ IPSECTunnelPSKSetResponse object {successfully\_applied\_psks, unapplied\_psks }
 
 <summary>
 
-successfully\_applied\_psks: optional map\[object {ipsec\_id, ipsec\_tunnel\_id, psk, psk\_metadata } ]
+successfully\_applied\_psks: optional map\[object { ipsec\_id, ipsec\_tunnel\_id, psk, psk\_metadata } ]
 
 Map of tunnel IDs to successfully applied PSK details.
 

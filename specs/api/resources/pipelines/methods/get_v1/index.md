@@ -80,7 +80,7 @@ minLength32
 
 <summary>
 
-result: object {id, created\_at, modified\_at, 6 more }
+result: object { id, created\_at, modified\_at, 6 more }
 
 </summary>
 
@@ -130,7 +130,7 @@ Indicates the current status of the Pipeline.
 
 <summary>
 
-tables: array of object {id, latest, name, 2 more }
+tables: array of object { id, latest, name, 2 more }
 
 List of streams and sinks used by this pipeline.
 
@@ -162,7 +162,7 @@ minLength1
 
 <summary>
 
-type: "stream"or "sink"
+type: "stream" or "sink"
 
 Type of the connection.
 

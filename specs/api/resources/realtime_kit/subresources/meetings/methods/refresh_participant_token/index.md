@@ -108,7 +108,7 @@ formatdate-time
 
 <summary>
 
-data: object {token, expires\_on, not\_before }
+data: object { token, expires\_on, not\_before }
 
 Data returned by the operation
 

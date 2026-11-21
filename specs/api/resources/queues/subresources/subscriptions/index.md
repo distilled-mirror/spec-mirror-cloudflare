@@ -44,7 +44,7 @@ DELETE/accounts/{account\_id}/event\_subscriptions/subscriptions/{subscription\_
 
 <summary>
 
-SubscriptionListResponse object {id, created\_at, destination, 5 more }
+SubscriptionListResponse object { id, created\_at, destination, 5 more }
 
 </summary>
 
@@ -66,7 +66,7 @@ formatdate-time
 
 <summary>
 
-destination: object {queue\_id, type }
+destination: object { queue\_id, type }
 
 Destination configuration for the subscription
 
@@ -118,7 +118,7 @@ Name of the subscription
 
 <summary>
 
-source: object {type } or object {type } or object {type } or 6 more
+source: object { type } or object { type } or object { type } or 6 more
 
 Source configuration for the subscription
 
@@ -130,7 +130,7 @@ One of the following:
 
 <summary>
 
-MqEventSourceImages object {type }
+MqEventSourceImages object { type }
 
 </summary>
 
@@ -148,7 +148,7 @@ Type of source
 
 <summary>
 
-MqEventSourceKV object {type }
+MqEventSourceKV object { type }
 
 </summary>
 
@@ -166,7 +166,7 @@ Type of source
 
 <summary>
 
-MqEventSourceR2 object {type }
+MqEventSourceR2 object { type }
 
 </summary>
 
@@ -184,7 +184,7 @@ Type of source
 
 <summary>
 
-MqEventSourceSuperSlurper object {type }
+MqEventSourceSuperSlurper object { type }
 
 </summary>
 
@@ -202,7 +202,7 @@ Type of source
 
 <summary>
 
-MqEventSourceVectorize object {type }
+MqEventSourceVectorize object { type }
 
 </summary>
 
@@ -220,7 +220,7 @@ Type of source
 
 <summary>
 
-MqEventSourceWorkersAIModel object {model\_name, type }
+MqEventSourceWorkersAIModel object { model\_name, type }
 
 </summary>
 
@@ -244,7 +244,7 @@ Type of source
 
 <summary>
 
-MqEventSourceWorkersBuildsWorker object {type, worker\_name }
+MqEventSourceWorkersBuildsWorker object { type, worker\_name }
 
 </summary>
 
@@ -268,7 +268,7 @@ Name of the worker
 
 <summary>
 
-MqEventSourceWorkersScript object {script\_tag, type }
+MqEventSourceWorkersScript object { script\_tag, type }
 
 </summary>
 
@@ -292,7 +292,7 @@ Type of source
 
 <summary>
 
-MqEventSourceWorkflowsWorkflow object {type, workflow\_name }
+MqEventSourceWorkflowsWorkflow object { type, workflow\_name }
 
 </summary>
 
@@ -324,7 +324,7 @@ Name of the workflow
 
 <summary>
 
-SubscriptionGetResponse object {id, created\_at, destination, 5 more }
+SubscriptionGetResponse object { id, created\_at, destination, 5 more }
 
 </summary>
 
@@ -346,7 +346,7 @@ formatdate-time
 
 <summary>
 
-destination: object {queue\_id, type }
+destination: object { queue\_id, type }
 
 Destination configuration for the subscription
 
@@ -398,7 +398,7 @@ Name of the subscription
 
 <summary>
 
-source: object {type } or object {type } or object {type } or 6 more
+source: object { type } or object { type } or object { type } or 6 more
 
 Source configuration for the subscription
 
@@ -410,7 +410,7 @@ One of the following:
 
 <summary>
 
-MqEventSourceImages object {type }
+MqEventSourceImages object { type }
 
 </summary>
 
@@ -428,7 +428,7 @@ Type of source
 
 <summary>
 
-MqEventSourceKV object {type }
+MqEventSourceKV object { type }
 
 </summary>
 
@@ -446,7 +446,7 @@ Type of source
 
 <summary>
 
-MqEventSourceR2 object {type }
+MqEventSourceR2 object { type }
 
 </summary>
 
@@ -464,7 +464,7 @@ Type of source
 
 <summary>
 
-MqEventSourceSuperSlurper object {type }
+MqEventSourceSuperSlurper object { type }
 
 </summary>
 
@@ -482,7 +482,7 @@ Type of source
 
 <summary>
 
-MqEventSourceVectorize object {type }
+MqEventSourceVectorize object { type }
 
 </summary>
 
@@ -500,7 +500,7 @@ Type of source
 
 <summary>
 
-MqEventSourceWorkersAIModel object {model\_name, type }
+MqEventSourceWorkersAIModel object { model\_name, type }
 
 </summary>
 
@@ -524,7 +524,7 @@ Type of source
 
 <summary>
 
-MqEventSourceWorkersBuildsWorker object {type, worker\_name }
+MqEventSourceWorkersBuildsWorker object { type, worker\_name }
 
 </summary>
 
@@ -548,7 +548,7 @@ Name of the worker
 
 <summary>
 
-MqEventSourceWorkersScript object {script\_tag, type }
+MqEventSourceWorkersScript object { script\_tag, type }
 
 </summary>
 
@@ -572,7 +572,7 @@ Type of source
 
 <summary>
 
-MqEventSourceWorkflowsWorkflow object {type, workflow\_name }
+MqEventSourceWorkflowsWorkflow object { type, workflow\_name }
 
 </summary>
 
@@ -604,7 +604,7 @@ Name of the workflow
 
 <summary>
 
-SubscriptionCreateResponse object {id, created\_at, destination, 5 more }
+SubscriptionCreateResponse object { id, created\_at, destination, 5 more }
 
 </summary>
 
@@ -626,7 +626,7 @@ formatdate-time
 
 <summary>
 
-destination: object {queue\_id, type }
+destination: object { queue\_id, type }
 
 Destination configuration for the subscription
 
@@ -678,7 +678,7 @@ Name of the subscription
 
 <summary>
 
-source: object {type } or object {type } or object {type } or 6 more
+source: object { type } or object { type } or object { type } or 6 more
 
 Source configuration for the subscription
 
@@ -690,7 +690,7 @@ One of the following:
 
 <summary>
 
-MqEventSourceImages object {type }
+MqEventSourceImages object { type }
 
 </summary>
 
@@ -708,7 +708,7 @@ Type of source
 
 <summary>
 
-MqEventSourceKV object {type }
+MqEventSourceKV object { type }
 
 </summary>
 
@@ -726,7 +726,7 @@ Type of source
 
 <summary>
 
-MqEventSourceR2 object {type }
+MqEventSourceR2 object { type }
 
 </summary>
 
@@ -744,7 +744,7 @@ Type of source
 
 <summary>
 
-MqEventSourceSuperSlurper object {type }
+MqEventSourceSuperSlurper object { type }
 
 </summary>
 
@@ -762,7 +762,7 @@ Type of source
 
 <summary>
 
-MqEventSourceVectorize object {type }
+MqEventSourceVectorize object { type }
 
 </summary>
 
@@ -780,7 +780,7 @@ Type of source
 
 <summary>
 
-MqEventSourceWorkersAIModel object {model\_name, type }
+MqEventSourceWorkersAIModel object { model\_name, type }
 
 </summary>
 
@@ -804,7 +804,7 @@ Type of source
 
 <summary>
 
-MqEventSourceWorkersBuildsWorker object {type, worker\_name }
+MqEventSourceWorkersBuildsWorker object { type, worker\_name }
 
 </summary>
 
@@ -828,7 +828,7 @@ Name of the worker
 
 <summary>
 
-MqEventSourceWorkersScript object {script\_tag, type }
+MqEventSourceWorkersScript object { script\_tag, type }
 
 </summary>
 
@@ -852,7 +852,7 @@ Type of source
 
 <summary>
 
-MqEventSourceWorkflowsWorkflow object {type, workflow\_name }
+MqEventSourceWorkflowsWorkflow object { type, workflow\_name }
 
 </summary>
 
@@ -884,7 +884,7 @@ Name of the workflow
 
 <summary>
 
-SubscriptionUpdateResponse object {id, created\_at, destination, 5 more }
+SubscriptionUpdateResponse object { id, created\_at, destination, 5 more }
 
 </summary>
 
@@ -906,7 +906,7 @@ formatdate-time
 
 <summary>
 
-destination: object {queue\_id, type }
+destination: object { queue\_id, type }
 
 Destination configuration for the subscription
 
@@ -958,7 +958,7 @@ Name of the subscription
 
 <summary>
 
-source: object {type } or object {type } or object {type } or 6 more
+source: object { type } or object { type } or object { type } or 6 more
 
 Source configuration for the subscription
 
@@ -970,7 +970,7 @@ One of the following:
 
 <summary>
 
-MqEventSourceImages object {type }
+MqEventSourceImages object { type }
 
 </summary>
 
@@ -988,7 +988,7 @@ Type of source
 
 <summary>
 
-MqEventSourceKV object {type }
+MqEventSourceKV object { type }
 
 </summary>
 
@@ -1006,7 +1006,7 @@ Type of source
 
 <summary>
 
-MqEventSourceR2 object {type }
+MqEventSourceR2 object { type }
 
 </summary>
 
@@ -1024,7 +1024,7 @@ Type of source
 
 <summary>
 
-MqEventSourceSuperSlurper object {type }
+MqEventSourceSuperSlurper object { type }
 
 </summary>
 
@@ -1042,7 +1042,7 @@ Type of source
 
 <summary>
 
-MqEventSourceVectorize object {type }
+MqEventSourceVectorize object { type }
 
 </summary>
 
@@ -1060,7 +1060,7 @@ Type of source
 
 <summary>
 
-MqEventSourceWorkersAIModel object {model\_name, type }
+MqEventSourceWorkersAIModel object { model\_name, type }
 
 </summary>
 
@@ -1084,7 +1084,7 @@ Type of source
 
 <summary>
 
-MqEventSourceWorkersBuildsWorker object {type, worker\_name }
+MqEventSourceWorkersBuildsWorker object { type, worker\_name }
 
 </summary>
 
@@ -1108,7 +1108,7 @@ Name of the worker
 
 <summary>
 
-MqEventSourceWorkersScript object {script\_tag, type }
+MqEventSourceWorkersScript object { script\_tag, type }
 
 </summary>
 
@@ -1132,7 +1132,7 @@ Type of source
 
 <summary>
 
-MqEventSourceWorkflowsWorkflow object {type, workflow\_name }
+MqEventSourceWorkflowsWorkflow object { type, workflow\_name }
 
 </summary>
 
@@ -1164,7 +1164,7 @@ Name of the workflow
 
 <summary>
 
-SubscriptionDeleteResponse object {id, created\_at, destination, 5 more }
+SubscriptionDeleteResponse object { id, created\_at, destination, 5 more }
 
 </summary>
 
@@ -1186,7 +1186,7 @@ formatdate-time
 
 <summary>
 
-destination: object {queue\_id, type }
+destination: object { queue\_id, type }
 
 Destination configuration for the subscription
 
@@ -1238,7 +1238,7 @@ Name of the subscription
 
 <summary>
 
-source: object {type } or object {type } or object {type } or 6 more
+source: object { type } or object { type } or object { type } or 6 more
 
 Source configuration for the subscription
 
@@ -1250,7 +1250,7 @@ One of the following:
 
 <summary>
 
-MqEventSourceImages object {type }
+MqEventSourceImages object { type }
 
 </summary>
 
@@ -1268,7 +1268,7 @@ Type of source
 
 <summary>
 
-MqEventSourceKV object {type }
+MqEventSourceKV object { type }
 
 </summary>
 
@@ -1286,7 +1286,7 @@ Type of source
 
 <summary>
 
-MqEventSourceR2 object {type }
+MqEventSourceR2 object { type }
 
 </summary>
 
@@ -1304,7 +1304,7 @@ Type of source
 
 <summary>
 
-MqEventSourceSuperSlurper object {type }
+MqEventSourceSuperSlurper object { type }
 
 </summary>
 
@@ -1322,7 +1322,7 @@ Type of source
 
 <summary>
 
-MqEventSourceVectorize object {type }
+MqEventSourceVectorize object { type }
 
 </summary>
 
@@ -1340,7 +1340,7 @@ Type of source
 
 <summary>
 
-MqEventSourceWorkersAIModel object {model\_name, type }
+MqEventSourceWorkersAIModel object { model\_name, type }
 
 </summary>
 
@@ -1364,7 +1364,7 @@ Type of source
 
 <summary>
 
-MqEventSourceWorkersBuildsWorker object {type, worker\_name }
+MqEventSourceWorkersBuildsWorker object { type, worker\_name }
 
 </summary>
 
@@ -1388,7 +1388,7 @@ Name of the worker
 
 <summary>
 
-MqEventSourceWorkersScript object {script\_tag, type }
+MqEventSourceWorkersScript object { script\_tag, type }
 
 </summary>
 
@@ -1412,7 +1412,7 @@ Type of source
 
 <summary>
 
-MqEventSourceWorkflowsWorkflow object {type, workflow\_name }
+MqEventSourceWorkflowsWorkflow object { type, workflow\_name }
 
 </summary>
 

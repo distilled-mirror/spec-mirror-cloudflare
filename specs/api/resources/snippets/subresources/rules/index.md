@@ -40,7 +40,7 @@ DELETE/zones/{zone\_id}/snippets/snippet\_rules
 
 <summary>
 
-RuleGetResponse object {id, expression, last\_updated, 3 more }
+RuleGetResponse object { id, expression, last\_updated, 3 more }
 
 Define a snippet rule.
 
@@ -94,7 +94,7 @@ Indicate whether to execute the rule.
 
 <summary>
 
-RuleListResponse object {id, expression, last\_updated, 3 more }
+RuleListResponse object { id, expression, last\_updated, 3 more }
 
 Define a snippet rule.
 
@@ -148,7 +148,7 @@ Indicate whether to execute the rule.
 
 <summary>
 
-RuleUpdateResponse object {id, expression, last\_updated, 3 more }
+RuleUpdateResponse object { id, expression, last\_updated, 3 more }
 
 Define a snippet rule.
 
@@ -202,7 +202,7 @@ Indicate whether to execute the rule.
 
 <summary>
 
-RuleDeleteResponse object {id, expression, last\_updated, 3 more }
+RuleDeleteResponse object { id, expression, last\_updated, 3 more }
 
 Define a snippet rule.
 

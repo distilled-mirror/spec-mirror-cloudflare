@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Realtime Admin``Realtime`
+`Realtime Read``Realtime Admin``Realtime`
 
 ##### P ath ParametersExpand Collapse
 
@@ -100,13 +100,15 @@ per\_page: optional number
 
 Number of results per page.
 
+minimum1
+
 [Link to this property](#)%20realtime_kit.livestreams%20%3E%20(method)%20get_all_livestreams%20%3E%20(params)%20default%20%3E%20(param)%20per_page%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-sort\_order: optional "ASC"or "DSC"
+sort\_order: optional "ASC" or "DSC"
 
 Specifies the sorting order for the results.
 
@@ -138,7 +140,7 @@ formatdate-time
 
 <summary>
 
-status: optional "LIVE"or "IDLE"or "ERRORED"or "INVOKED"
+status: optional "LIVE" or "IDLE" or "ERRORED" or "INVOKED"
 
 Specifies the status of the operation.
 
@@ -172,7 +174,7 @@ One of the following:
 
 <summary>
 
-data: array of object {id, created\_at, disabled, 9 more }
+data: array of object { id, created\_at, disabled, 9 more }
 
 </summary>
 
@@ -238,7 +240,7 @@ The web address that viewers can use to watch the livestream.
 
 <summary>
 
-status: "LIVE"or "IDLE"or "ERRORED"or 2 more
+status: "LIVE" or "IDLE" or "ERRORED" or 2 more
 
 Status of the livestream.
 
@@ -292,7 +294,7 @@ formatdate-time
 
 <summary>
 
-paging: object {end\_offset, start\_offset, total\_count }
+paging: object { end\_offset, start\_offset, total\_count }
 
 </summary>
 

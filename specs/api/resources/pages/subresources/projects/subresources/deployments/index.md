@@ -64,7 +64,7 @@ GET/accounts/{account\_id}/pages/projects/{project\_name}/deployments/{deploymen
 
 <summary>
 
-LogGetResponse object {data, includes\_container\_logs, total }
+LogGetResponse object { data, includes\_container\_logs, total }
 
 </summary>
 
@@ -72,7 +72,7 @@ LogGetResponse object {data, includes\_container\_logs, total }
 
 <summary>
 
-data: array of object {line, ts }
+data: array of object { line, ts }
 
 </summary>
 
@@ -116,7 +116,7 @@ DELETE/accounts/{account\_id}/pages/projects/{project\_name}/deployments/{deploy
 
 <summary>
 
-TailCreateResponse object {id, url }
+TailCreateResponse object { id, url }
 
 A tail session for streaming logs from a Pages deployment.
 

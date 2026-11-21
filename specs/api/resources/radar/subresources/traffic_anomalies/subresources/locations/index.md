@@ -30,7 +30,7 @@ GET/radar/traffic\_anomalies/locations
 
 <summary>
 
-LocationGetResponse object {trafficAnomalies }
+LocationGetResponse object { trafficAnomalies }
 
 </summary>
 
@@ -38,7 +38,7 @@ LocationGetResponse object {trafficAnomalies }
 
 <summary>
 
-trafficAnomalies: array of object {clientCountryAlpha2, clientCountryName, value }
+trafficAnomalies: array of object { clientCountryAlpha2, clientCountryName, value }
 
 </summary>
 

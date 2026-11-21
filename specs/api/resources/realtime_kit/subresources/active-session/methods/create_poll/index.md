@@ -110,7 +110,7 @@ if votes on an option are visible before a person votes
 
 <summary>
 
-data: optional object {action, poll }
+data: optional object { action, poll }
 
 </summary>
 
@@ -122,7 +122,7 @@ action: optional string
 
 <summary>
 
-poll: optional object {id, options, question, 4 more }
+poll: optional object { id, options, question, 4 more }
 
 </summary>
 
@@ -136,7 +136,7 @@ ID of the poll
 
 <summary>
 
-options: array of object {count, text, votes }
+options: array of object { count, text, votes }
 
 Answer options
 
@@ -156,7 +156,7 @@ Text of the answer option
 
 <summary>
 
-votes: array of object {id, name }
+votes: array of object { id, name }
 
 </summary>
 

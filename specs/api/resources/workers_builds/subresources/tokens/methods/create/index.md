@@ -86,7 +86,7 @@ cloudflare\_token\_id: string
 
 <summary>
 
-errors: array of object {message, code }
+errors: array of object { message, code }
 
 </summary>
 
@@ -110,7 +110,7 @@ messages: array of string
 
 <summary>
 
-result: object {build\_token\_name, build\_token\_uuid, cloudflare\_token\_id, owner\_type } or object {build\_token\_name, build\_token\_uuid, cloudflare\_token\_id, owner\_type }
+result: object { build\_token\_name, build\_token\_uuid, cloudflare\_token\_id, owner\_type } or object { build\_token\_name, build\_token\_uuid, cloudflare\_token\_id, owner\_type }
 
 </summary>
 
@@ -120,7 +120,7 @@ One of the following:
 
 <summary>
 
-object {build\_token\_name, build\_token\_uuid, cloudflare\_token\_id, owner\_type }
+object { build\_token\_name, build\_token\_uuid, cloudflare\_token\_id, owner\_type }
 
 </summary>
 
@@ -152,7 +152,7 @@ owner\_type: optional string
 
 <summary>
 
-object {build\_token\_name, build\_token\_uuid, cloudflare\_token\_id, owner\_type }
+object { build\_token\_name, build\_token\_uuid, cloudflare\_token\_id, owner\_type }
 
 </summary>
 
@@ -192,7 +192,7 @@ success: boolean
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

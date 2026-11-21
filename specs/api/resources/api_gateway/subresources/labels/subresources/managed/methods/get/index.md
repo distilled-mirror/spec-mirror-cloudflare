@@ -112,7 +112,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -154,7 +154,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -174,7 +174,7 @@ pointer: optional string
 
 <summary>
 
-result: object {created\_at, description, last\_updated, 4 more }
+result: object { created\_at, description, last\_updated, 4 more }
 
 </summary>
 
@@ -212,7 +212,7 @@ The name of the label
 
 <summary>
 
-source: "user"or "managed"
+source: "user" or "managed"
 
 - <code>user</code> - label is owned by the user
 - <code>managed</code> - label is owned by cloudflare

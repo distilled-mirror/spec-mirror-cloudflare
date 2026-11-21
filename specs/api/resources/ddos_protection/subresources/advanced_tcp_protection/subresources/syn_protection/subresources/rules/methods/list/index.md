@@ -108,7 +108,7 @@ formatint64
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -130,7 +130,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -150,7 +150,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -172,7 +172,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -198,7 +198,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional array of object {id, burst\_sensitivity, created\_on, 6 more }
+result: optional array of object { id, burst\_sensitivity, created\_on, 6 more }
 
 </summary>
 
@@ -268,7 +268,7 @@ The scope for the SYN Protection rule. Must be one of ‘global’, ‘region’
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

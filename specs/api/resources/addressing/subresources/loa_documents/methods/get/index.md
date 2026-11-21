@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Magic Transit Read``Magic Transit Write`
+`Magic Transit Read``Magic Transit Write``IP Prefixes: Write`
 
 ##### P ath ParametersExpand Collapse
 

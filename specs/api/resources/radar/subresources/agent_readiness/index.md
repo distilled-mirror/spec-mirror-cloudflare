@@ -28,7 +28,7 @@ GET/radar/agent\_readiness/summary/{dimension}
 
 <summary>
 
-AgentReadinessSummaryResponse object {meta, summary\_0 }
+AgentReadinessSummaryResponse object { meta, summary\_0 }
 
 </summary>
 
@@ -36,7 +36,7 @@ AgentReadinessSummaryResponse object {meta, summary\_0 }
 
 <summary>
 
-meta: object {date, domainCategories, lastUpdated, 4 more }
+meta: object { date, domainCategories, lastUpdated, 4 more }
 
 </summary>
 
@@ -52,7 +52,7 @@ formatdate
 
 <summary>
 
-domainCategories: array of object {name, value }
+domainCategories: array of object { name, value }
 
 Available domain sub-categories with their scan counts. Use as filter options for the domainCategory parameter.
 
@@ -86,7 +86,7 @@ formatdate-time
 
 <summary>
 
-normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
+normalization: "PERCENTAGE" or "MIN0\_MAX" or "MIN\_MAX" or 5 more
 
 Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
@@ -146,7 +146,7 @@ Total domains attempted in the scan.
 
 <summary>
 
-units: array of object {name, value }
+units: array of object { name, value }
 
 Measurement units for the results.
 

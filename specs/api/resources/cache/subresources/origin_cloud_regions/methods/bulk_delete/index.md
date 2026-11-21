@@ -92,7 +92,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -134,7 +134,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -160,7 +160,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {failed, succeeded }
+result: optional object { failed, succeeded }
 
 Response result for a batch origin cloud region operation.
 
@@ -170,7 +170,7 @@ Response result for a batch origin cloud region operation.
 
 <summary>
 
-failed: array of object {origin\_ip, error, region, vendor }
+failed: array of object { origin\_ip, error, region, vendor }
 
 Items that could not be applied, with error details.
 
@@ -208,7 +208,7 @@ Cloud vendor identifier. Present on succeeded items (the new value for upsert, t
 
 <summary>
 
-succeeded: array of object {origin\_ip, error, region, vendor }
+succeeded: array of object { origin\_ip, error, region, vendor }
 
 Items that were successfully applied.
 

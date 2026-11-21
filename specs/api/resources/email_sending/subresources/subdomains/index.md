@@ -44,7 +44,7 @@ DELETE/zones/{zone\_id}/email/sending/subdomains/{subdomain\_id}
 
 <summary>
 
-SubdomainListResponse object {enabled, name, tag, 6 more }
+SubdomainListResponse object { enabled, name, tag, 6 more }
 
 </summary>
 
@@ -116,7 +116,7 @@ The return-path domain used for bounce handling. Wildcard rows use <code>cf-boun
 
 <summary>
 
-SubdomainGetResponse object {enabled, name, tag, 6 more }
+SubdomainGetResponse object { enabled, name, tag, 6 more }
 
 </summary>
 
@@ -188,7 +188,7 @@ The return-path domain used for bounce handling. Wildcard rows use <code>cf-boun
 
 <summary>
 
-SubdomainCreateResponse object {enabled, name, tag, 6 more }
+SubdomainCreateResponse object { enabled, name, tag, 6 more }
 
 </summary>
 
@@ -260,7 +260,7 @@ The return-path domain used for bounce handling. Wildcard rows use <code>cf-boun
 
 <summary>
 
-SubdomainEditResponse object {enabled, name, tag, 6 more }
+SubdomainEditResponse object { enabled, name, tag, 6 more }
 
 </summary>
 
@@ -332,7 +332,7 @@ The return-path domain used for bounce handling. Wildcard rows use <code>cf-boun
 
 <summary>
 
-SubdomainDeleteResponse object {errors, messages, success }
+SubdomainDeleteResponse object { errors, messages, success }
 
 </summary>
 
@@ -340,7 +340,7 @@ SubdomainDeleteResponse object {errors, messages, success }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -362,7 +362,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -382,7 +382,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -404,7 +404,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 

@@ -56,6 +56,10 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 </details>
 
+##### Accepted Permissions (at least one required)
+
+`Zero Trust Read``Zero Trust Write`
+
 ##### P ath ParametersExpand Collapse
 
 account\_id: string
@@ -96,7 +100,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -138,7 +142,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -174,7 +178,7 @@ One of the following:
 
 <summary>
 
-IP object {ips, name, id, 4 more }
+IP object { ips, name, id, 4 more }
 
 </summary>
 
@@ -226,7 +230,7 @@ formatdate-time
 
 <summary>
 
-Identity object {kind, name, id, 3 more }
+Identity object { kind, name, id, 3 more }
 
 </summary>
 

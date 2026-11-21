@@ -96,7 +96,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -138,7 +138,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -158,7 +158,7 @@ pointer: optional string
 
 <summary>
 
-result: array of object {account\_app\_id, hostnames, ip\_subnets, 3 more } or object {managed\_app\_id, hostnames, ip\_subnets, 3 more }
+result: array of object { account\_app\_id, hostnames, ip\_subnets, 3 more } or object { managed\_app\_id, hostnames, ip\_subnets, 3 more }
 
 </summary>
 
@@ -168,7 +168,7 @@ One of the following:
 
 <summary>
 
-MagicAccountApp object {account\_app\_id, hostnames, ip\_subnets, 3 more }
+MagicAccountApp object { account\_app\_id, hostnames, ip\_subnets, 3 more }
 
 Custom app defined for an account.
 
@@ -218,7 +218,7 @@ Category of the app.
 
 <summary>
 
-MagicManagedApp object {managed\_app\_id, hostnames, ip\_subnets, 3 more }
+MagicManagedApp object { managed\_app\_id, hostnames, ip\_subnets, 3 more }
 
 Managed app defined by Cloudflare.
 

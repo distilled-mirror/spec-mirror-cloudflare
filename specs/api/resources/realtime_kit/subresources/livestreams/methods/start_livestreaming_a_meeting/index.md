@@ -90,7 +90,7 @@ name: optional string
 
 <summary>
 
-video\_config: optional object {height, width }
+video\_config: optional object { height, width }
 
 </summary>
 
@@ -116,7 +116,7 @@ Width of the livestreaming video in pixels
 
 <summary>
 
-data: object {id, ingest\_server, meeting\_id, 4 more }
+data: object { id, ingest\_server, meeting\_id, 4 more }
 
 </summary>
 
@@ -156,7 +156,7 @@ The web address that viewers can use to watch the livestream.
 
 <summary>
 
-status: "LIVE"or "IDLE"or "ERRORED"or 2 more
+status: "LIVE" or "IDLE" or "ERRORED" or 2 more
 
 Status of the livestream.
 

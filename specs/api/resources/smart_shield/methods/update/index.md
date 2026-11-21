@@ -72,7 +72,7 @@ maxLength32
 
 <summary>
 
-cache\_reserve: optional object {value }
+cache\_reserve: optional object { value }
 
 </summary>
 
@@ -80,7 +80,7 @@ cache\_reserve: optional object {value }
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Cache Reserve.
 
@@ -108,7 +108,7 @@ One of the following:
 
 <summary>
 
-regional\_tiered\_cache: optional object {value }
+regional\_tiered\_cache: optional object { value }
 
 </summary>
 
@@ -116,7 +116,7 @@ regional\_tiered\_cache: optional object {value }
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Regional Tiered Cache.
 
@@ -144,7 +144,7 @@ One of the following:
 
 <summary>
 
-smart\_routing: optional object {value }
+smart\_routing: optional object { value }
 
 </summary>
 
@@ -152,7 +152,7 @@ smart\_routing: optional object {value }
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Smart Routing.
 
@@ -180,7 +180,7 @@ One of the following:
 
 <summary>
 
-smart\_tiered\_cache: optional object {value }
+smart\_tiered\_cache: optional object { value }
 
 </summary>
 
@@ -188,7 +188,7 @@ smart\_tiered\_cache: optional object {value }
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Smart Tiered Cache.
 
@@ -240,7 +240,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -282,7 +282,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -302,7 +302,7 @@ pointer: optional string
 
 <summary>
 
-result: object {cache\_reserve, regional\_tiered\_cache, smart\_routing, smart\_tiered\_cache } or object {cache\_reserve, regional\_tiered\_cache, smart\_routing, smart\_tiered\_cache } or object {cache\_reserve, regional\_tiered\_cache, smart\_routing, smart\_tiered\_cache }
+result: object { cache\_reserve, regional\_tiered\_cache, smart\_routing, smart\_tiered\_cache } or object { cache\_reserve, regional\_tiered\_cache, smart\_routing, smart\_tiered\_cache } or object { cache\_reserve, regional\_tiered\_cache, smart\_routing, smart\_tiered\_cache }
 
 </summary>
 
@@ -312,7 +312,7 @@ One of the following:
 
 <summary>
 
-object {cache\_reserve, regional\_tiered\_cache, smart\_routing, smart\_tiered\_cache }
+object { cache\_reserve, regional\_tiered\_cache, smart\_routing, smart\_tiered\_cache }
 
 </summary>
 
@@ -320,7 +320,7 @@ object {cache\_reserve, regional\_tiered\_cache, smart\_routing, smart\_tiered\_
 
 <summary>
 
-cache\_reserve: optional object {id, editable, value }
+cache\_reserve: optional object { id, editable, value }
 
 </summary>
 
@@ -340,7 +340,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Cache Reserve.
 
@@ -368,7 +368,7 @@ One of the following:
 
 <summary>
 
-regional\_tiered\_cache: optional object {id, editable, value }
+regional\_tiered\_cache: optional object { id, editable, value }
 
 </summary>
 
@@ -388,7 +388,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Regional Tiered Cache.
 
@@ -416,7 +416,7 @@ One of the following:
 
 <summary>
 
-smart\_routing: optional object {id, editable, value }
+smart\_routing: optional object { id, editable, value }
 
 </summary>
 
@@ -436,7 +436,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Argo Smart Routing.
 
@@ -464,7 +464,7 @@ One of the following:
 
 <summary>
 
-smart\_tiered\_cache: optional object {id, editable, modified\_on, value }
+smart\_tiered\_cache: optional object { id, editable, modified\_on, value }
 
 </summary>
 
@@ -490,7 +490,7 @@ The last time the setting was modified.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Tiered Cache.
 
@@ -522,7 +522,7 @@ One of the following:
 
 <summary>
 
-object {cache\_reserve, regional\_tiered\_cache, smart\_routing, smart\_tiered\_cache }
+object { cache\_reserve, regional\_tiered\_cache, smart\_routing, smart\_tiered\_cache }
 
 </summary>
 
@@ -530,7 +530,7 @@ object {cache\_reserve, regional\_tiered\_cache, smart\_routing, smart\_tiered\_
 
 <summary>
 
-cache\_reserve: optional object {id, editable, value }
+cache\_reserve: optional object { id, editable, value }
 
 </summary>
 
@@ -550,7 +550,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Cache Reserve.
 
@@ -578,7 +578,7 @@ One of the following:
 
 <summary>
 
-regional\_tiered\_cache: optional object {id, editable, value }
+regional\_tiered\_cache: optional object { id, editable, value }
 
 </summary>
 
@@ -598,7 +598,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Regional Tiered Cache.
 
@@ -626,7 +626,7 @@ One of the following:
 
 <summary>
 
-smart\_routing: optional object {id, editable, value }
+smart\_routing: optional object { id, editable, value }
 
 </summary>
 
@@ -646,7 +646,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Argo Smart Routing.
 
@@ -674,7 +674,7 @@ One of the following:
 
 <summary>
 
-smart\_tiered\_cache: optional object {id, editable, modified\_on, value }
+smart\_tiered\_cache: optional object { id, editable, modified\_on, value }
 
 </summary>
 
@@ -700,7 +700,7 @@ The last time the setting was modified.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Tiered Cache.
 
@@ -732,7 +732,7 @@ One of the following:
 
 <summary>
 
-object {cache\_reserve, regional\_tiered\_cache, smart\_routing, smart\_tiered\_cache }
+object { cache\_reserve, regional\_tiered\_cache, smart\_routing, smart\_tiered\_cache }
 
 </summary>
 
@@ -740,7 +740,7 @@ object {cache\_reserve, regional\_tiered\_cache, smart\_routing, smart\_tiered\_
 
 <summary>
 
-cache\_reserve: optional object {id, editable, value }
+cache\_reserve: optional object { id, editable, value }
 
 </summary>
 
@@ -760,7 +760,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Cache Reserve.
 
@@ -788,7 +788,7 @@ One of the following:
 
 <summary>
 
-regional\_tiered\_cache: optional object {id, editable, value }
+regional\_tiered\_cache: optional object { id, editable, value }
 
 </summary>
 
@@ -808,7 +808,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Regional Tiered Cache.
 
@@ -836,7 +836,7 @@ One of the following:
 
 <summary>
 
-smart\_routing: optional object {id, editable, value }
+smart\_routing: optional object { id, editable, value }
 
 </summary>
 
@@ -856,7 +856,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Argo Smart Routing.
 
@@ -884,7 +884,7 @@ One of the following:
 
 <summary>
 
-smart\_tiered\_cache: optional object {id, editable, modified\_on, value }
+smart\_tiered\_cache: optional object { id, editable, modified\_on, value }
 
 </summary>
 
@@ -910,7 +910,7 @@ The last time the setting was modified.
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Specifies the enablement value of Tiered Cache.
 

@@ -58,7 +58,7 @@ The report type for submitted reports.
 
 <summary>
 
-body: object {act, address1, agent\_name, 18 more } or object {act, email, email2, 14 more } or object {act, email, email2, 14 more } or 5 more
+body: object { act, address1, agent\_name, 18 more } or object { act, email, email2, 14 more } or object { act, email, email2, 14 more } or 5 more
 
 </summary>
 
@@ -68,7 +68,7 @@ One of the following:
 
 <summary>
 
-AbuseDmca object {act, address1, agent\_name, 18 more }
+AbuseDmca object { act, address1, agent\_name, 18 more }
 
 </summary>
 
@@ -258,7 +258,7 @@ minLength1
 
 <summary>
 
-AbuseTrademark object {act, email, email2, 14 more }
+AbuseTrademark object { act, email, email2, 14 more }
 
 </summary>
 
@@ -416,7 +416,7 @@ minLength1
 
 <summary>
 
-AbuseGeneral object {act, email, email2, 14 more }
+AbuseGeneral object { act, email, email2, 14 more }
 
 </summary>
 
@@ -442,7 +442,7 @@ Should match the value provided in <code>email</code>
 
 <summary>
 
-host\_notification: "send"or "send-anon"
+host\_notification: "send" or "send-anon"
 
 Notification type based on the abuse type. For delegated reports, the report—including contact information and comments—will be forwarded to the customer in full regardless of this value. NOTE: Copyright (DMCA) and Trademark reports cannot be anonymous.
 
@@ -486,7 +486,7 @@ minLength1
 
 <summary>
 
-owner\_notification: "send"or "send-anon"
+owner\_notification: "send" or "send-anon"
 
 Notification type based on the abuse type. For delegated reports, the report—including contact information and comments—will be forwarded to the customer in full regardless of this value. NOTE: Copyright (DMCA) and Trademark reports cannot be anonymous.
 
@@ -598,7 +598,7 @@ minLength1
 
 <summary>
 
-AbusePhishing object {act, email, email2, 12 more }
+AbusePhishing object { act, email, email2, 12 more }
 
 </summary>
 
@@ -624,7 +624,7 @@ Should match the value provided in <code>email</code>
 
 <summary>
 
-host\_notification: "send"or "send-anon"
+host\_notification: "send" or "send-anon"
 
 Notification type based on the abuse type. For delegated reports, the report—including contact information and comments—will be forwarded to the customer in full regardless of this value. NOTE: Copyright (DMCA) and Trademark reports cannot be anonymous.
 
@@ -668,7 +668,7 @@ minLength1
 
 <summary>
 
-owner\_notification: "send"or "send-anon"
+owner\_notification: "send" or "send-anon"
 
 Notification type based on the abuse type. For delegated reports, the report—including contact information and comments—will be forwarded to the customer in full regardless of this value. NOTE: Copyright (DMCA) and Trademark reports cannot be anonymous.
 
@@ -772,7 +772,7 @@ minLength1
 
 <summary>
 
-AbuseChildren object {act, email, email2, 13 more }
+AbuseChildren object { act, email, email2, 13 more }
 
 </summary>
 
@@ -798,7 +798,7 @@ Should match the value provided in <code>email</code>
 
 <summary>
 
-host\_notification: "send"or "send-anon"
+host\_notification: "send" or "send-anon"
 
 Notification type based on the abuse type. For delegated reports, the report—including contact information and comments—will be forwarded to the customer in full regardless of this value. NOTE: Copyright (DMCA) and Trademark reports cannot be anonymous.
 
@@ -842,7 +842,7 @@ minLength1
 
 <summary>
 
-ncmec\_notification: "send"or "send-anon"
+ncmec\_notification: "send" or "send-anon"
 
 Notification type based on the abuse type. NOTE: Copyright (DMCA) and Trademark reports cannot be anonymous.
 
@@ -866,7 +866,7 @@ One of the following:
 
 <summary>
 
-owner\_notification: "send"or "send-anon"or "none"
+owner\_notification: "send" or "send-anon" or "none"
 
 Notification type based on the abuse type. For delegated reports, the report—including contact information and comments—will be forwarded to the customer in full regardless of this value. NOTE: Copyright (DMCA) and Trademark reports cannot be anonymous.
 
@@ -974,7 +974,7 @@ minLength1
 
 <summary>
 
-AbuseThreat object {act, email, email2, 11 more }
+AbuseThreat object { act, email, email2, 11 more }
 
 </summary>
 
@@ -1000,7 +1000,7 @@ Should match the value provided in <code>email</code>
 
 <summary>
 
-host\_notification: "send"or "send-anon"
+host\_notification: "send" or "send-anon"
 
 Notification type based on the abuse type. For delegated reports, the report—including contact information and comments—will be forwarded to the customer in full regardless of this value. NOTE: Copyright (DMCA) and Trademark reports cannot be anonymous.
 
@@ -1044,7 +1044,7 @@ minLength1
 
 <summary>
 
-owner\_notification: "send"or "send-anon"
+owner\_notification: "send" or "send-anon"
 
 Notification type based on the abuse type. For delegated reports, the report—including contact information and comments—will be forwarded to the customer in full regardless of this value. NOTE: Copyright (DMCA) and Trademark reports cannot be anonymous.
 
@@ -1138,7 +1138,7 @@ minLength1
 
 <summary>
 
-AbuseRegistrarWhois object {act, email, email2, 10 more }
+AbuseRegistrarWhois object { act, email, email2, 10 more }
 
 </summary>
 
@@ -1174,7 +1174,7 @@ minLength1
 
 <summary>
 
-owner\_notification: "send"or "send-anon"or "none"
+owner\_notification: "send" or "send-anon" or "none"
 
 Notification type based on the abuse type. For delegated reports, the report—including contact information and comments—will be forwarded to the customer in full regardless of this value. NOTE: Copyright (DMCA) and Trademark reports cannot be anonymous.
 
@@ -1228,7 +1228,7 @@ minLength1
 
 <summary>
 
-reg\_who\_request: optional object {reg\_who\_good\_faith\_affirmation, reg\_who\_lawful\_processing\_agreement, reg\_who\_legal\_basis, 4 more }
+reg\_who\_request: optional object { reg\_who\_good\_faith\_affirmation, reg\_who\_lawful\_processing\_agreement, reg\_who\_legal\_basis, 4 more }
 
 RDP-mandated fields for registrar WHOIS data disclosure requests.
 
@@ -1258,7 +1258,7 @@ maxLength5000
 
 <summary>
 
-reg\_who\_request\_type: "disclosure"or "invalid\_whois"
+reg\_who\_request\_type: "disclosure" or "invalid\_whois"
 
 The type of WHOIS data request per RDP procedure.
 
@@ -1282,7 +1282,7 @@ One of the following:
 
 <summary>
 
-reg\_who\_requested\_data\_elements: array of "registrant\_name"or "registrant\_organization"or "registrant\_email"or 14 more
+reg\_who\_requested\_data\_elements: array of "registrant\_name" or "registrant\_organization" or "registrant\_email" or 14 more
 
 The specific WHOIS data elements being requested per RDP 10.2.2. Required for all WHOIS requests.
 
@@ -1374,7 +1374,7 @@ maxLength5000
 
 <summary>
 
-reg\_who\_requestor\_type: optional "government"or "corporation"or "individual"
+reg\_who\_requestor\_type: optional "government" or "corporation" or "individual"
 
 The nature of the requestor per RDP 10.2.1.2.
 
@@ -1450,7 +1450,7 @@ minLength1
 
 <summary>
 
-AbuseNcsei object {act, email, email2, 12 more }
+AbuseNcsei object { act, email, email2, 12 more }
 
 </summary>
 
@@ -1476,7 +1476,7 @@ Should match the value provided in <code>email</code>
 
 <summary>
 
-host\_notification: "send"or "send-anon"
+host\_notification: "send" or "send-anon"
 
 Notification type based on the abuse type. For delegated reports, the report—including contact information and comments—will be forwarded to the customer in full regardless of this value. NOTE: Copyright (DMCA) and Trademark reports cannot be anonymous.
 
@@ -1516,7 +1516,7 @@ If the submitter is the target of NCSEI in the URLs of the abuse report.
 
 <summary>
 
-owner\_notification: "send"or "send-anon"or "none"
+owner\_notification: "send" or "send-anon" or "none"
 
 Notification type based on the abuse type. For delegated reports, the report—including contact information and comments—will be forwarded to the customer in full regardless of this value. NOTE: Copyright (DMCA) and Trademark reports cannot be anonymous.
 
@@ -1636,7 +1636,7 @@ The identifier for the submitted abuse report.
 
 <summary>
 
-request: object {act }
+request: object { act }
 
 </summary>
 

@@ -88,7 +88,7 @@ minLength64
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -110,7 +110,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -130,7 +130,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -152,7 +152,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -172,7 +172,7 @@ pointer: optional string
 
 <summary>
 
-result: object {id, application\_id, image, 5 more }
+result: object { id, application\_id, image, 5 more }
 
 The last-reported state of a logical container instance.
 
@@ -204,7 +204,7 @@ The image for the current container placement, when one is available.
 
 <summary>
 
-status: object {state, updated\_at, exit\_code }
+status: object { state, updated\_at, exit\_code }
 
 The latest known status of a container instance.
 
@@ -214,7 +214,7 @@ The latest known status of a container instance.
 
 <summary>
 
-state: "provisioning"or "running"or "failed"or 5 more
+state: "provisioning" or "running" or "failed" or 5 more
 
 The current lifecycle state of a container instance.
 
@@ -278,7 +278,7 @@ The process exit code, when the runtime reports one.
 
 <summary>
 
-configuration: optional object {disk, memory, vcpu }
+configuration: optional object { disk, memory, vcpu }
 
 The resources allocated to the container instance.
 
@@ -318,7 +318,7 @@ minimum0
 
 <summary>
 
-location: optional object {name, region }
+location: optional object { name, region }
 
 The location of the instance’s current container placement.
 

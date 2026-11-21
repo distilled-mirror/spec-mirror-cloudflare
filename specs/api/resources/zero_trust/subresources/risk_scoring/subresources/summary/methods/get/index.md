@@ -72,7 +72,7 @@ account\_id: string
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -94,7 +94,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -114,7 +114,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -136,7 +136,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -162,7 +162,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {users }
+result: optional object { users }
 
 </summary>
 
@@ -170,7 +170,7 @@ result: optional object {users }
 
 <summary>
 
-users: array of object {email, event\_count, last\_event, 3 more }
+users: array of object { email, event\_count, last\_event, 3 more }
 
 </summary>
 
@@ -194,7 +194,7 @@ formatdate-time
 
 <summary>
 
-max\_risk\_level: "info"or "low"or "medium"or "high"
+max\_risk\_level: "info" or "low" or "medium" or "high"
 
 </summary>
 
@@ -242,7 +242,7 @@ formatuuid
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

@@ -82,7 +82,7 @@ minLength36
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -104,7 +104,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -124,7 +124,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -146,7 +146,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -196,7 +196,7 @@ The Client Certificate PEM.
 
 <summary>
 
-certificate\_authority: optional object {id, name }
+certificate\_authority: optional object { id, name }
 
 Certificate Authority used to issue the Client Certificate.
 
@@ -296,7 +296,7 @@ State, provided by the CSR.
 
 <summary>
 
-status: optional "active"or "pending\_reactivation"or "pending\_revocation"or "revoked"
+status: optional "active" or "pending\_reactivation" or "pending\_revocation" or "revoked"
 
 Client Certificates may be active or revoked, and the pending\_reactivation or pending\_revocation represent in-progress asynchronous transitions.
 

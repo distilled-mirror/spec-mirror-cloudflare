@@ -60,7 +60,7 @@ OverrideURL = string
 
 <summary>
 
-RewriteAction object {block, challenge, default, 2 more }
+RewriteAction object { block, challenge, default, 2 more }
 
 Specifies that, when a WAF rule matches, its configured action will be replaced by the action configured in this object.
 
@@ -70,7 +70,7 @@ Specifies that, when a WAF rule matches, its configured action will be replaced 
 
 <summary>
 
-block: optional "challenge"or "block"or "simulate"or 2 more
+block: optional "challenge" or "block" or "simulate" or 2 more
 
 The WAF rule action to apply.
 
@@ -106,7 +106,7 @@ One of the following:
 
 <summary>
 
-challenge: optional "challenge"or "block"or "simulate"or 2 more
+challenge: optional "challenge" or "block" or "simulate" or 2 more
 
 The WAF rule action to apply.
 
@@ -142,7 +142,7 @@ One of the following:
 
 <summary>
 
-default: optional "challenge"or "block"or "simulate"or 2 more
+default: optional "challenge" or "block" or "simulate" or 2 more
 
 The WAF rule action to apply.
 
@@ -178,7 +178,7 @@ One of the following:
 
 <summary>
 
-disable: optional "challenge"or "block"or "simulate"or 2 more
+disable: optional "challenge" or "block" or "simulate" or 2 more
 
 The WAF rule action to apply.
 
@@ -214,7 +214,7 @@ One of the following:
 
 <summary>
 
-simulate: optional "challenge"or "block"or "simulate"or 2 more
+simulate: optional "challenge" or "block" or "simulate" or 2 more
 
 The WAF rule action to apply.
 
@@ -254,7 +254,7 @@ One of the following:
 
 <summary>
 
-WAFRule = map\["challenge"or "block"or "simulate"or 2 more]
+WAFRule = map\["challenge" or "block" or "simulate" or 2 more]
 
 An object that allows you to override the action of specific WAF rules. Each key of this object must be the ID of a WAF rule, and each value must be a valid WAF action. Unless you are disabling a rule, ensure that you also enable the rule group that this WAF rule belongs to. When creating a new URI-based WAF override, you must provide a <code>groups</code> object or a <code>rules</code> object.
 

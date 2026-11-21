@@ -98,7 +98,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -140,7 +140,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -190,7 +190,7 @@ The ownership challenge filename stored in the bucket.
 
 <summary>
 
-status: "pending"or "success"or "failed"
+status: "pending" or "success" or "failed"
 
 The status of the ownership challenge. Can be pending, success or failed.
 
@@ -240,7 +240,7 @@ Whether the API call was successful.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object { count, page, per\_page, total\_count }
 
 </summary>
 

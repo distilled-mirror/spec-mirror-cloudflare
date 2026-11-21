@@ -48,7 +48,7 @@ POST/accounts/{account\_id}/subscriptions/cancel-downgrade
 
 <summary>
 
-SubscriptionDeleteResponse object {subscription\_id }
+SubscriptionDeleteResponse object { subscription\_id }
 
 </summary>
 
@@ -68,7 +68,7 @@ maxLength32
 
 <summary>
 
-SubscriptionCancelDowngradeResponse = unknownor string
+SubscriptionCancelDowngradeResponse = unknown or string
 
 </summary>
 
@@ -102,7 +102,7 @@ GET/accounts/{account\_id}/subscriptions/{subscription\_identifier}/cancel-reaso
 
 <summary>
 
-CancelReasonCreateResponse object {id, other, reason\_code, 2 more }
+CancelReasonCreateResponse object { id, other, reason\_code, 2 more }
 
 </summary>
 
@@ -146,7 +146,7 @@ The subscription identifier.
 
 <summary>
 
-CancelReasonGetResponse object {id, other, reason\_code, 2 more }
+CancelReasonGetResponse object { id, other, reason\_code, 2 more }
 
 </summary>
 
@@ -204,7 +204,7 @@ POST/accounts/{account\_id}/bulk/subscriptions
 
 <summary>
 
-BulkCreateResponse object {client\_secrets, subscriptions }
+BulkCreateResponse object { client\_secrets, subscriptions }
 
 </summary>
 
@@ -254,7 +254,7 @@ formatdate-time
 
 <summary>
 
-frequency: optional "weekly"or "monthly"or "quarterly"or "yearly"
+frequency: optional "weekly" or "monthly" or "quarterly" or "yearly"
 
 How often the subscription is renewed automatically.
 
@@ -298,7 +298,7 @@ The rate plan applied to the subscription.
 
 <summary>
 
-state: optional "Trial"or "Provisioned"or "Paid"or 4 more
+state: optional "Trial" or "Provisioned" or "Paid" or 4 more
 
 The state that the subscription is in.
 

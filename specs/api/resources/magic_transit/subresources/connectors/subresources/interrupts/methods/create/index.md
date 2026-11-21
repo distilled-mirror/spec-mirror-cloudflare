@@ -74,7 +74,7 @@ connector\_id: string
 
 <summary>
 
-reboot: optional object {purge }
+reboot: optional object { purge }
 
 </summary>
 
@@ -92,7 +92,7 @@ Purge connector state.
 
 <summary>
 
-restart: optional object {purge }
+restart: optional object { purge }
 
 </summary>
 
@@ -110,7 +110,7 @@ Purge connector state.
 
 <summary>
 
-shutdown: optional object {purge }
+shutdown: optional object { purge }
 
 </summary>
 
@@ -154,7 +154,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -196,7 +196,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -216,7 +216,7 @@ pointer: optional string
 
 <summary>
 
-result: object {submitted\_at, reboot, restart, 2 more }
+result: object { submitted\_at, reboot, restart, 2 more }
 
 Interrupt action for a connector.
 
@@ -230,7 +230,7 @@ submitted\_at: string
 
 <summary>
 
-reboot: optional object {purge }
+reboot: optional object { purge }
 
 </summary>
 
@@ -248,7 +248,7 @@ Purge connector state.
 
 <summary>
 
-restart: optional object {purge }
+restart: optional object { purge }
 
 </summary>
 
@@ -266,7 +266,7 @@ Purge connector state.
 
 <summary>
 
-shutdown: optional object {purge }
+shutdown: optional object { purge }
 
 </summary>
 

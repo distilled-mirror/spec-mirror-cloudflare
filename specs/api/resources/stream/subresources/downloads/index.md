@@ -36,7 +36,7 @@ DELETE/accounts/{account\_id}/stream/{identifier}/downloads
 
 <summary>
 
-DownloadGetResponse object {audio, default }
+DownloadGetResponse object { audio, default }
 
 An object with download type keys. Each key is optional and only present if that download type has been created.
 
@@ -46,7 +46,7 @@ An object with download type keys. Each key is optional and only present if that
 
 <summary>
 
-audio: optional object {percentComplete, status, url }
+audio: optional object { percentComplete, status, url }
 
 The audio-only download. Only present if this download type has been created.
 
@@ -66,7 +66,7 @@ minimum0
 
 <summary>
 
-status: "ready"or "inprogress"or "error"
+status: "ready" or "inprogress" or "error"
 
 The status of a generated download.
 
@@ -106,7 +106,7 @@ formaturi
 
 <summary>
 
-default: optional object {percentComplete, status, url }
+default: optional object { percentComplete, status, url }
 
 The default video download. Only present if this download type has been created.
 
@@ -126,7 +126,7 @@ minimum0
 
 <summary>
 
-status: "ready"or "inprogress"or "error"
+status: "ready" or "inprogress" or "error"
 
 The status of a generated download.
 
@@ -170,7 +170,7 @@ formaturi
 
 <summary>
 
-DownloadCreateResponse object {audio, default }
+DownloadCreateResponse object { audio, default }
 
 An object with download type keys. Each key is optional and only present if that download type has been created.
 
@@ -180,7 +180,7 @@ An object with download type keys. Each key is optional and only present if that
 
 <summary>
 
-audio: optional object {percentComplete, status, url }
+audio: optional object { percentComplete, status, url }
 
 The audio-only download. Only present if this download type has been created.
 
@@ -200,7 +200,7 @@ minimum0
 
 <summary>
 
-status: "ready"or "inprogress"or "error"
+status: "ready" or "inprogress" or "error"
 
 The status of a generated download.
 
@@ -240,7 +240,7 @@ formaturi
 
 <summary>
 
-default: optional object {percentComplete, status, url }
+default: optional object { percentComplete, status, url }
 
 The default video download. Only present if this download type has been created.
 
@@ -260,7 +260,7 @@ minimum0
 
 <summary>
 
-status: "ready"or "inprogress"or "error"
+status: "ready" or "inprogress" or "error"
 
 The status of a generated download.
 

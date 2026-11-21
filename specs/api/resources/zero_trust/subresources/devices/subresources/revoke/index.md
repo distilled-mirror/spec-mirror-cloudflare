@@ -32,7 +32,7 @@ POST/accounts/{account\_id}/devices/revoke
 
 <summary>
 
-RevokeCreateResponse = unknownor string
+RevokeCreateResponse = unknown or string
 
 </summary>
 

@@ -102,7 +102,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -144,7 +144,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -164,7 +164,7 @@ pointer: optional string
 
 <summary>
 
-result: object {pool\_id, pop\_health }
+result: object { pool\_id, pop\_health }
 
 A list of regions from which to run health checks. Null means every Cloudflare data center.
 
@@ -180,7 +180,7 @@ Pool ID.
 
 <summary>
 
-pop\_health: optional object {healthy, origins }
+pop\_health: optional object { healthy, origins }
 
 List of regions and associated health status.
 
@@ -196,7 +196,7 @@ Whether health check in region is healthy.
 
 <summary>
 
-origins: optional array of object {ip }
+origins: optional array of object { ip }
 
 </summary>
 
@@ -204,7 +204,7 @@ origins: optional array of object {ip }
 
 <summary>
 
-ip: optional object {failure\_reason, healthy, response\_code, rtt }
+ip: optional object { failure\_reason, healthy, response\_code, rtt }
 
 </summary>
 

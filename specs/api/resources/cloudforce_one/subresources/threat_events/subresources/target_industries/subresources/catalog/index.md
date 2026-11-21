@@ -32,7 +32,7 @@ GET/accounts/{account\_id}/cloudforce-one/events/targetIndustries/catalog
 
 <summary>
 
-CatalogListResponse object {items, type }
+CatalogListResponse object { items, type }
 
 </summary>
 
@@ -40,7 +40,7 @@ CatalogListResponse object {items, type }
 
 <summary>
 
-items: object {type }
+items: object { type }
 
 </summary>
 

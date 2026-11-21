@@ -54,7 +54,7 @@ DELETE/zones/{zone\_id}/api\_gateway/user\_schemas/{schema\_id}
 
 <summary>
 
-Message = array of object {code, message, documentation\_url, source }
+Message = array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -76,7 +76,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -96,7 +96,7 @@ pointer: optional string
 
 <summary>
 
-OldPublicSchema object {created\_at, kind, name, 3 more }
+OldPublicSchema object { created\_at, kind, name, 3 more }
 
 </summary>
 
@@ -148,7 +148,7 @@ Flag whether schema is enabled for validation.
 
 <summary>
 
-UserSchemaCreateResponse object {schema, upload\_details }
+UserSchemaCreateResponse object { schema, upload\_details }
 
 </summary>
 
@@ -160,7 +160,7 @@ schema: <a href="https://developers.cloudflare.com/api/resources/api_gateway#(re
 
 <summary>
 
-upload\_details: optional object {warnings }
+upload\_details: optional object { warnings }
 
 </summary>
 
@@ -168,7 +168,7 @@ upload\_details: optional object {warnings }
 
 <summary>
 
-warnings: optional array of object {code, locations, message }
+warnings: optional array of object { code, locations, message }
 
 Diagnostic warning events that occurred during processing. These events are non-critical errors found within the schema.
 
@@ -208,7 +208,7 @@ Diagnostic message that describes the event.
 
 <summary>
 
-UserSchemaDeleteResponse object {errors, messages, success }
+UserSchemaDeleteResponse object { errors, messages, success }
 
 </summary>
 
@@ -244,7 +244,7 @@ GET/zones/{zone\_id}/api\_gateway/user\_schemas/{schema\_id}/operations
 
 <summary>
 
-OperationListResponse = object {endpoint, host, last\_updated, 3 more } or object {endpoint, host, method }
+OperationListResponse = object { endpoint, host, last\_updated, 3 more } or object { endpoint, host, method }
 
 </summary>
 
@@ -254,7 +254,7 @@ One of the following:
 
 <summary>
 
-APIShieldOperation object {endpoint, host, last\_updated, 3 more }
+APIShieldOperation object { endpoint, host, last\_updated, 3 more }
 
 </summary>
 
@@ -288,7 +288,7 @@ formatdate-time
 
 <summary>
 
-method: "GET"or "POST"or "HEAD"or 6 more
+method: "GET" or "POST" or "HEAD" or 6 more
 
 The HTTP method used to access the endpoint.
 
@@ -350,7 +350,7 @@ minLength36
 
 <summary>
 
-features: optional object {thresholds } or object {parameter\_schemas } or object {api\_routing } or 2 more
+features: optional object { thresholds } or object { parameter\_schemas } or object { api\_routing } or 2 more
 
 </summary>
 
@@ -360,7 +360,7 @@ One of the following:
 
 <summary>
 
-APIShieldOperationFeatureThresholds object {thresholds }
+APIShieldOperationFeatureThresholds object { thresholds }
 
 </summary>
 
@@ -368,7 +368,7 @@ APIShieldOperationFeatureThresholds object {thresholds }
 
 <summary>
 
-thresholds: optional object {auth\_id\_tokens, data\_points, last\_updated, 6 more }
+thresholds: optional object { auth\_id\_tokens, data\_points, last\_updated, 6 more }
 
 </summary>
 
@@ -438,7 +438,7 @@ The suggested threshold in requests done by the same auth\_id or period\_seconds
 
 <summary>
 
-APIShieldOperationFeatureParameterSchemas object {parameter\_schemas }
+APIShieldOperationFeatureParameterSchemas object { parameter\_schemas }
 
 </summary>
 
@@ -446,7 +446,7 @@ APIShieldOperationFeatureParameterSchemas object {parameter\_schemas }
 
 <summary>
 
-parameter\_schemas: object {last\_updated, parameter\_schemas }
+parameter\_schemas: object { last\_updated, parameter\_schemas }
 
 </summary>
 
@@ -460,7 +460,7 @@ formatdate-time
 
 <summary>
 
-parameter\_schemas: optional object {parameters, responses }
+parameter\_schemas: optional object { parameters, responses }
 
 An operation schema object containing a response.
 
@@ -494,7 +494,7 @@ An empty response object. This field is required to yield a valid operation sche
 
 <summary>
 
-APIShieldOperationFeatureAPIRouting object {api\_routing }
+APIShieldOperationFeatureAPIRouting object { api\_routing }
 
 </summary>
 
@@ -502,7 +502,7 @@ APIShieldOperationFeatureAPIRouting object {api\_routing }
 
 <summary>
 
-api\_routing: optional object {last\_updated, route }
+api\_routing: optional object { last\_updated, route }
 
 API Routing settings on endpoint.
 
@@ -532,7 +532,7 @@ Target route.
 
 <summary>
 
-APIShieldOperationFeatureConfidenceIntervals object {confidence\_intervals }
+APIShieldOperationFeatureConfidenceIntervals object { confidence\_intervals }
 
 </summary>
 
@@ -540,7 +540,7 @@ APIShieldOperationFeatureConfidenceIntervals object {confidence\_intervals }
 
 <summary>
 
-confidence\_intervals: optional object {last\_updated, suggested\_threshold }
+confidence\_intervals: optional object { last\_updated, suggested\_threshold }
 
 </summary>
 
@@ -554,7 +554,7 @@ formatdate-time
 
 <summary>
 
-suggested\_threshold: optional object {confidence\_intervals, mean }
+suggested\_threshold: optional object { confidence\_intervals, mean }
 
 </summary>
 
@@ -562,7 +562,7 @@ suggested\_threshold: optional object {confidence\_intervals, mean }
 
 <summary>
 
-confidence\_intervals: optional object {p90, p95, p99 }
+confidence\_intervals: optional object { p90, p95, p99 }
 
 </summary>
 
@@ -570,7 +570,7 @@ confidence\_intervals: optional object {p90, p95, p99 }
 
 <summary>
 
-p90: optional object {lower, upper }
+p90: optional object { lower, upper }
 
 Upper and lower bound for percentile estimate
 
@@ -596,7 +596,7 @@ Upper bound for percentile estimate
 
 <summary>
 
-p95: optional object {lower, upper }
+p95: optional object { lower, upper }
 
 Upper and lower bound for percentile estimate
 
@@ -622,7 +622,7 @@ Upper bound for percentile estimate
 
 <summary>
 
-p99: optional object {lower, upper }
+p99: optional object { lower, upper }
 
 Upper and lower bound for percentile estimate
 
@@ -670,7 +670,7 @@ Suggested threshold.
 
 <summary>
 
-APIShieldOperationFeatureSchemaInfo object {schema\_info }
+APIShieldOperationFeatureSchemaInfo object { schema\_info }
 
 </summary>
 
@@ -678,7 +678,7 @@ APIShieldOperationFeatureSchemaInfo object {schema\_info }
 
 <summary>
 
-schema\_info: optional object {active\_schema, mitigation\_action }
+schema\_info: optional object { active\_schema, mitigation\_action }
 
 </summary>
 
@@ -686,7 +686,7 @@ schema\_info: optional object {active\_schema, mitigation\_action }
 
 <summary>
 
-active\_schema: optional object {id, created\_at, name }
+active\_schema: optional object { id, created\_at, name }
 
 Schema active on endpoint.
 
@@ -722,7 +722,7 @@ Schema file name.
 
 <summary>
 
-mitigation\_action: optional "none"or "log"or "block"
+mitigation\_action: optional "none" or "log" or "block"
 
 Action taken on requests failing validation.
 
@@ -766,7 +766,7 @@ One of the following:
 
 <summary>
 
-APIShieldBasicOperation object {endpoint, host, method }
+APIShieldBasicOperation object { endpoint, host, method }
 
 </summary>
 
@@ -794,7 +794,7 @@ maxLength255
 
 <summary>
 
-method: "GET"or "POST"or "HEAD"or 6 more
+method: "GET" or "POST" or "HEAD" or 6 more
 
 The HTTP method used to access the endpoint.
 
@@ -864,7 +864,7 @@ GET/zones/{zone\_id}/api\_gateway/user\_schemas/hosts
 
 <summary>
 
-HostListResponse object {created\_at, hosts, name, schema\_id }
+HostListResponse object { created\_at, hosts, name, schema\_id }
 
 </summary>
 

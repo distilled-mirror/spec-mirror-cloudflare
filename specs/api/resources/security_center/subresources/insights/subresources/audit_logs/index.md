@@ -34,7 +34,7 @@ GET/{accounts\_or\_zones}/{account\_or\_zone\_id}/security-center/insights/{issu
 
 <summary>
 
-AuditLogListResponse object {id, changed\_at, changed\_by, 6 more }
+AuditLogListResponse object { id, changed\_at, changed\_by, 6 more }
 
 </summary>
 
@@ -70,7 +70,7 @@ The value of the field after the change. Null if the field was cleared.
 
 <summary>
 
-field\_changed: optional "status"or "user\_classification"
+field\_changed: optional "status" or "user\_classification"
 
 The field that was changed.
 
@@ -124,7 +124,7 @@ formatint64
 
 <summary>
 
-AuditLogListByInsightResponse object {id, changed\_at, changed\_by, 6 more }
+AuditLogListByInsightResponse object { id, changed\_at, changed\_by, 6 more }
 
 </summary>
 
@@ -160,7 +160,7 @@ The value of the field after the change. Null if the field was cleared.
 
 <summary>
 
-field\_changed: optional "status"or "user\_classification"
+field\_changed: optional "status" or "user\_classification"
 
 The field that was changed.
 

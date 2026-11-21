@@ -86,7 +86,7 @@ formatuuid
 
 <summary>
 
-events: array of "meeting.started"or "meeting.ended"or "meeting.participantJoined"or 6 more
+events: array of "meeting.started" or "meeting.ended" or "meeting.participantJoined" or 6 more
 
 Events that this webhook will get triggered by
 
@@ -160,7 +160,7 @@ Set whether or not the webhook should be active when created
 
 <summary>
 
-data: object {id, created\_at, enabled, 4 more }
+data: object { id, created\_at, enabled, 4 more }
 
 </summary>
 
@@ -190,7 +190,7 @@ Set to true if the webhook is active
 
 <summary>
 
-events: array of "meeting.started"or "meeting.ended"or "meeting.participantJoined"or 6 more
+events: array of "meeting.started" or "meeting.ended" or "meeting.participantJoined" or 6 more
 
 Events this webhook will send updates for
 

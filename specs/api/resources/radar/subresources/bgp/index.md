@@ -28,7 +28,7 @@ GET/radar/bgp/timeseries
 
 <summary>
 
-BGPTimeseriesResponse object {meta, serie\_0 }
+BGPTimeseriesResponse object { meta, serie\_0 }
 
 </summary>
 
@@ -36,7 +36,7 @@ BGPTimeseriesResponse object {meta, serie\_0 }
 
 <summary>
 
-meta: object {aggInterval, confidenceInfo, dateRange, lastUpdated }
+meta: object { aggInterval, confidenceInfo, dateRange, lastUpdated }
 
 </summary>
 
@@ -44,7 +44,7 @@ meta: object {aggInterval, confidenceInfo, dateRange, lastUpdated }
 
 <summary>
 
-aggInterval: "15m"or "1h"or "1d"or "1w"
+aggInterval: "15m" or "1h" or "1d" or "1w"
 
 </summary>
 
@@ -74,7 +74,7 @@ One of the following:
 
 <summary>
 
-confidenceInfo: object {annotations, level }
+confidenceInfo: object { annotations, level }
 
 </summary>
 
@@ -82,7 +82,7 @@ confidenceInfo: object {annotations, level }
 
 <summary>
 
-annotations: array of object {dataSource, description, endDate, 5 more }
+annotations: array of object { dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -90,7 +90,7 @@ annotations: array of object {dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
+dataSource: "ALL" or "AI\_BOTS" or "AI\_GATEWAY" or 22 more
 
 Data source for annotations.
 
@@ -216,7 +216,7 @@ formatdate-time
 
 <summary>
 
-eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
+eventType: "GENERAL" or "OUTAGE" or "PARTIAL\_PROJECTION" or 2 more
 
 Event type for annotations.
 
@@ -288,7 +288,7 @@ Provides an indication of how much confidence Cloudflare has in the data.
 
 <summary>
 
-dateRange: array of object {endTime, startTime }
+dateRange: array of object { endTime, startTime }
 
 </summary>
 
@@ -326,7 +326,7 @@ formatdate-time
 
 <summary>
 
-serie\_0: object {timestamps, values }
+serie\_0: object { timestamps, values }
 
 </summary>
 
@@ -360,7 +360,7 @@ GET/radar/bgp/leaks/events
 
 <summary>
 
-EventListResponse object {asn\_info, events }
+EventListResponse object { asn\_info, events }
 
 </summary>
 
@@ -368,7 +368,7 @@ EventListResponse object {asn\_info, events }
 
 <summary>
 
-asn\_info: array of object {asn, country\_code, org\_name }
+asn\_info: array of object { asn, country\_code, org\_name }
 
 </summary>
 
@@ -392,7 +392,7 @@ org\_name: string
 
 <summary>
 
-events: array of object {id, countries, detected\_ts, 10 more }
+events: array of object { id, countries, detected\_ts, 10 more }
 
 </summary>
 
@@ -468,7 +468,7 @@ GET/radar/bgp/top/prefixes
 
 <summary>
 
-TopPrefixesResponse object {meta, top\_0 }
+TopPrefixesResponse object { meta, top\_0 }
 
 </summary>
 
@@ -476,7 +476,7 @@ TopPrefixesResponse object {meta, top\_0 }
 
 <summary>
 
-meta: object {dateRange }
+meta: object { dateRange }
 
 </summary>
 
@@ -484,7 +484,7 @@ meta: object {dateRange }
 
 <summary>
 
-dateRange: array of object {endTime, startTime }
+dateRange: array of object { endTime, startTime }
 
 </summary>
 
@@ -516,7 +516,7 @@ formatdate-time
 
 <summary>
 
-top\_0: array of object {prefix, value }
+top\_0: array of object { prefix, value }
 
 </summary>
 
@@ -554,7 +554,7 @@ GET/radar/bgp/top/ases/prefixes
 
 <summary>
 
-AseGetResponse object {meta, top\_0 }
+AseGetResponse object { meta, top\_0 }
 
 </summary>
 
@@ -562,7 +562,7 @@ AseGetResponse object {meta, top\_0 }
 
 <summary>
 
-meta: object {dateRange }
+meta: object { dateRange }
 
 </summary>
 
@@ -570,7 +570,7 @@ meta: object {dateRange }
 
 <summary>
 
-dateRange: array of object {endTime, startTime }
+dateRange: array of object { endTime, startTime }
 
 </summary>
 
@@ -602,7 +602,7 @@ formatdate-time
 
 <summary>
 
-top\_0: array of object {asn, ASName, value }
+top\_0: array of object { asn, ASName, value }
 
 </summary>
 
@@ -632,7 +632,7 @@ Percentage of updates by this AS out of the total updates by all autonomous syst
 
 <summary>
 
-AsePrefixesResponse object {asns, meta }
+AsePrefixesResponse object { asns, meta }
 
 </summary>
 
@@ -640,7 +640,7 @@ AsePrefixesResponse object {asns, meta }
 
 <summary>
 
-asns: array of object {asn, country, name, pfxs\_count }
+asns: array of object { asn, country, name, pfxs\_count }
 
 </summary>
 
@@ -668,7 +668,7 @@ pfxs\_count: number
 
 <summary>
 
-meta: object {data\_time, query\_time, total\_peers }
+meta: object { data\_time, query\_time, total\_peers }
 
 </summary>
 
@@ -706,7 +706,7 @@ GET/radar/bgp/hijacks/events
 
 <summary>
 
-EventListResponse object {asn\_info, events, total\_monitors }
+EventListResponse object { asn\_info, events, total\_monitors }
 
 </summary>
 
@@ -714,7 +714,7 @@ EventListResponse object {asn\_info, events, total\_monitors }
 
 <summary>
 
-asn\_info: array of object {asn, country\_code, org\_name }
+asn\_info: array of object { asn, country\_code, org\_name }
 
 </summary>
 
@@ -738,7 +738,7 @@ org\_name: string
 
 <summary>
 
-events: array of object {id, confidence\_score, duration, 15 more }
+events: array of object { id, confidence\_score, duration, 15 more }
 
 </summary>
 
@@ -806,7 +806,7 @@ prefixes: array of string
 
 <summary>
 
-tags: array of object {name, score }
+tags: array of object { name, score }
 
 </summary>
 
@@ -870,7 +870,7 @@ GET/radar/bgp/routes/realtime
 
 <summary>
 
-RouteMoasResponse object {meta, moas }
+RouteMoasResponse object { meta, moas }
 
 </summary>
 
@@ -878,7 +878,7 @@ RouteMoasResponse object {meta, moas }
 
 <summary>
 
-meta: object {data\_time, query\_time, total\_peers }
+meta: object { data\_time, query\_time, total\_peers }
 
 </summary>
 
@@ -902,7 +902,7 @@ total\_peers: number
 
 <summary>
 
-moas: array of object {origins, prefix }
+moas: array of object { origins, prefix }
 
 </summary>
 
@@ -910,7 +910,7 @@ moas: array of object {origins, prefix }
 
 <summary>
 
-origins: array of object {origin, peer\_count, rpki\_validation }
+origins: array of object { origin, peer\_count, rpki\_validation }
 
 </summary>
 
@@ -946,7 +946,7 @@ prefix: string
 
 <summary>
 
-RoutePfx2asResponse object {meta, prefix\_origins }
+RoutePfx2asResponse object { meta, prefix\_origins }
 
 </summary>
 
@@ -954,7 +954,7 @@ RoutePfx2asResponse object {meta, prefix\_origins }
 
 <summary>
 
-meta: object {data\_time, query\_time, total\_peers }
+meta: object { data\_time, query\_time, total\_peers }
 
 </summary>
 
@@ -978,7 +978,7 @@ total\_peers: number
 
 <summary>
 
-prefix\_origins: array of object {origin, peer\_count, prefix, rpki\_validation }
+prefix\_origins: array of object { origin, peer\_count, prefix, rpki\_validation }
 
 </summary>
 
@@ -1010,7 +1010,7 @@ rpki\_validation: string
 
 <summary>
 
-RouteStatsResponse object {meta, stats }
+RouteStatsResponse object { meta, stats }
 
 </summary>
 
@@ -1018,7 +1018,7 @@ RouteStatsResponse object {meta, stats }
 
 <summary>
 
-meta: object {data\_time, query\_time, total\_peers }
+meta: object { data\_time, query\_time, total\_peers }
 
 </summary>
 
@@ -1042,7 +1042,7 @@ total\_peers: number
 
 <summary>
 
-stats: object {distinct\_origins, distinct\_origins\_ipv4, distinct\_origins\_ipv6, 15 more }
+stats: object { distinct\_origins, distinct\_origins\_ipv4, distinct\_origins\_ipv6, 15 more }
 
 </summary>
 
@@ -1130,7 +1130,7 @@ routes\_valid\_ipv6: number
 
 <summary>
 
-RouteAsesResponse object {asns, meta }
+RouteAsesResponse object { asns, meta }
 
 </summary>
 
@@ -1138,7 +1138,7 @@ RouteAsesResponse object {asns, meta }
 
 <summary>
 
-asns: array of object {asn, coneSize, country, 7 more }
+asns: array of object { asn, coneSize, country, 7 more }
 
 </summary>
 
@@ -1208,7 +1208,7 @@ Number of RPKI valid prefixes originated by the AS.
 
 <summary>
 
-meta: object {dataTime, queryTime, totalPeers }
+meta: object { dataTime, queryTime, totalPeers }
 
 </summary>
 
@@ -1242,7 +1242,7 @@ Total number of route collector peers used to generate this data.
 
 <summary>
 
-RouteRealtimeResponse object {meta, routes }
+RouteRealtimeResponse object { meta, routes }
 
 </summary>
 
@@ -1250,7 +1250,7 @@ RouteRealtimeResponse object {meta, routes }
 
 <summary>
 
-meta: object {asn\_info, collectors, data\_time, 2 more }
+meta: object { asn\_info, collectors, data\_time, 2 more }
 
 </summary>
 
@@ -1258,7 +1258,7 @@ meta: object {asn\_info, collectors, data\_time, 2 more }
 
 <summary>
 
-asn\_info: array of object {as\_name, asn, country\_code, 2 more }
+asn\_info: array of object { as\_name, asn, country\_code, 2 more }
 
 </summary>
 
@@ -1300,7 +1300,7 @@ Organization name.
 
 <summary>
 
-collectors: array of object {collector, latest\_realtime\_ts, latest\_rib\_ts, 4 more }
+collectors: array of object { collector, latest\_realtime\_ts, latest\_rib\_ts, 4 more }
 
 </summary>
 
@@ -1360,7 +1360,7 @@ The most recent data timestamp for from the real-time sources.
 
 <summary>
 
-prefix\_origins: array of object {origin, prefix, rpki\_validation, 3 more }
+prefix\_origins: array of object { origin, prefix, rpki\_validation, 3 more }
 
 </summary>
 
@@ -1418,7 +1418,7 @@ The timestamp of this query.
 
 <summary>
 
-routes: array of object {as\_path, collector, communities, 2 more }
+routes: array of object { as\_path, collector, communities, 2 more }
 
 </summary>
 
@@ -1472,7 +1472,7 @@ GET/radar/bgp/routes/upstreams/{asn}/timeseries
 
 <summary>
 
-UpstreamTimeseriesResponse object {meta, serie\_0 }
+UpstreamTimeseriesResponse object { meta, serie\_0 }
 
 </summary>
 
@@ -1480,7 +1480,7 @@ UpstreamTimeseriesResponse object {meta, serie\_0 }
 
 <summary>
 
-meta: object {dataTime, effectiveCollector, queryTime, stale }
+meta: object { dataTime, effectiveCollector, queryTime, stale }
 
 </summary>
 
@@ -1516,7 +1516,7 @@ stale: boolean
 
 <summary>
 
-serie\_0: object {timestamps }
+serie\_0: object { timestamps }
 
 </summary>
 
@@ -1544,7 +1544,7 @@ GET/radar/bgp/routes/paths/{asn}
 
 <summary>
 
-PathListResponse object {asnInfo, collectors, meta, paths }
+PathListResponse object { asnInfo, collectors, meta, paths }
 
 </summary>
 
@@ -1552,7 +1552,7 @@ PathListResponse object {asnInfo, collectors, meta, paths }
 
 <summary>
 
-asnInfo: map\[object {asn, country, name } ]
+asnInfo: map\[object { asn, country, name } ]
 
 </summary>
 
@@ -1586,7 +1586,7 @@ collectors: array of string
 
 <summary>
 
-meta: object {dataTime, effectiveCollector, queryTime, stale }
+meta: object { dataTime, effectiveCollector, queryTime, stale }
 
 </summary>
 
@@ -1622,7 +1622,7 @@ stale: boolean
 
 <summary>
 
-paths: array of object {collectors, pathsCount, peersCount, segment }
+paths: array of object { collectors, pathsCount, peersCount, segment }
 
 </summary>
 
@@ -1662,7 +1662,7 @@ GET/radar/bgp/ips/timeseries
 
 <summary>
 
-IPTimeseriesResponse object {meta, serie\_0 }
+IPTimeseriesResponse object { meta, serie\_0 }
 
 </summary>
 
@@ -1670,7 +1670,7 @@ IPTimeseriesResponse object {meta, serie\_0 }
 
 <summary>
 
-meta: object {aggInterval, confidenceInfo, dateRange, 4 more }
+meta: object { aggInterval, confidenceInfo, dateRange, 4 more }
 
 Metadata for the results.
 
@@ -1680,7 +1680,7 @@ Metadata for the results.
 
 <summary>
 
-aggInterval: "FIFTEEN\_MINUTES"or "ONE\_HOUR"or "ONE\_DAY"or 2 more
+aggInterval: "FIFTEEN\_MINUTES" or "ONE\_HOUR" or "ONE\_DAY" or 2 more
 
 Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to <a href="https://developers.cloudflare.com/radar/concepts/aggregation-intervals/">Aggregation intervals</a>.
 
@@ -1716,7 +1716,7 @@ One of the following:
 
 <summary>
 
-confidenceInfo: object {annotations, level }
+confidenceInfo: object { annotations, level }
 
 </summary>
 
@@ -1724,7 +1724,7 @@ confidenceInfo: object {annotations, level }
 
 <summary>
 
-annotations: array of object {dataSource, description, endDate, 5 more }
+annotations: array of object { dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -1732,7 +1732,7 @@ annotations: array of object {dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
+dataSource: "ALL" or "AI\_BOTS" or "AI\_GATEWAY" or 22 more
 
 Data source for annotations.
 
@@ -1858,7 +1858,7 @@ formatdate-time
 
 <summary>
 
-eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
+eventType: "GENERAL" or "OUTAGE" or "PARTIAL\_PROJECTION" or 2 more
 
 Event type for annotations.
 
@@ -1930,7 +1930,7 @@ Provides an indication of how much confidence Cloudflare has in the data.
 
 <summary>
 
-dateRange: array of object {endTime, startTime }
+dateRange: array of object { endTime, startTime }
 
 </summary>
 
@@ -1966,7 +1966,7 @@ formatdate-time
 
 <summary>
 
-normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
+normalization: "PERCENTAGE" or "MIN0\_MAX" or "MIN\_MAX" or 5 more
 
 Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
@@ -2014,7 +2014,7 @@ One of the following:
 
 <summary>
 
-units: array of object {name, value }
+units: array of object { name, value }
 
 Measurement units for the results.
 
@@ -2036,7 +2036,7 @@ value: string
 
 <summary>
 
-delay: optional object {asn\_data, country\_data, healthy, nowTs }
+delay: optional object { asn\_data, country\_data, healthy, nowTs }
 
 </summary>
 
@@ -2044,7 +2044,7 @@ delay: optional object {asn\_data, country\_data, healthy, nowTs }
 
 <summary>
 
-asn\_data: object {delaySecs, delayStr, healthy, latest }
+asn\_data: object { delaySecs, delayStr, healthy, latest }
 
 </summary>
 
@@ -2064,7 +2064,7 @@ healthy: boolean
 
 <summary>
 
-latest: object {entries\_count, path, timestamp }
+latest: object { entries\_count, path, timestamp }
 
 </summary>
 
@@ -2092,7 +2092,7 @@ timestamp: number
 
 <summary>
 
-country\_data: object {delaySecs, delayStr, healthy, latest }
+country\_data: object { delaySecs, delayStr, healthy, latest }
 
 </summary>
 
@@ -2112,7 +2112,7 @@ healthy: boolean
 
 <summary>
 
-latest: object {count, timestamp }
+latest: object { count, timestamp }
 
 </summary>
 
@@ -2152,7 +2152,7 @@ nowTs: number
 
 <summary>
 
-serie\_0: object {ipv4, ipv6, timestamps }
+serie\_0: object { ipv4, ipv6, timestamps }
 
 </summary>
 
@@ -2188,7 +2188,7 @@ GET/radar/bgp/ips/top/ases
 
 <summary>
 
-TopAsesResponse object {anchorTs, asns, country, metric }
+TopAsesResponse object { anchorTs, asns, country, metric }
 
 </summary>
 
@@ -2202,7 +2202,7 @@ formatdate-time
 
 <summary>
 
-asns: array of object {asn, v4\_24s, v6\_48s }
+asns: array of object { asn, v4\_24s, v6\_48s }
 
 </summary>
 
@@ -2256,7 +2256,7 @@ GET/radar/bgp/rpki/aspa/timeseries
 
 <summary>
 
-ASPASnapshotResponse object {asnInfo, aspaObjects, meta }
+ASPASnapshotResponse object { asnInfo, aspaObjects, meta }
 
 </summary>
 
@@ -2264,7 +2264,7 @@ ASPASnapshotResponse object {asnInfo, aspaObjects, meta }
 
 <summary>
 
-asnInfo: object {"13335" }
+asnInfo: object { "13335" }
 
 </summary>
 
@@ -2272,7 +2272,7 @@ asnInfo: object {"13335" }
 
 <summary>
 
-"13335": object {asn, country, name }
+"13335": object { asn, country, name }
 
 </summary>
 
@@ -2306,7 +2306,7 @@ AS name.
 
 <summary>
 
-aspaObjects: array of object {customerAsn, providers }
+aspaObjects: array of object { customerAsn, providers }
 
 </summary>
 
@@ -2328,7 +2328,7 @@ providers: array of number
 
 <summary>
 
-meta: object {dataTime, queryTime, totalCount }
+meta: object { dataTime, queryTime, totalCount }
 
 </summary>
 
@@ -2366,7 +2366,7 @@ Total number of ASPA objects.
 
 <summary>
 
-ASPAChangesResponse object {asnInfo, changes, meta }
+ASPAChangesResponse object { asnInfo, changes, meta }
 
 </summary>
 
@@ -2374,7 +2374,7 @@ ASPAChangesResponse object {asnInfo, changes, meta }
 
 <summary>
 
-asnInfo: object {"13335" }
+asnInfo: object { "13335" }
 
 </summary>
 
@@ -2382,7 +2382,7 @@ asnInfo: object {"13335" }
 
 <summary>
 
-"13335": object {asn, country, name }
+"13335": object { asn, country, name }
 
 </summary>
 
@@ -2416,7 +2416,7 @@ AS name.
 
 <summary>
 
-changes: array of object {customersAdded, customersRemoved, date, 4 more }
+changes: array of object { customersAdded, customersRemoved, date, 4 more }
 
 </summary>
 
@@ -2444,7 +2444,7 @@ formatdate-time
 
 <summary>
 
-entries: array of object {customerAsn, providers, type }
+entries: array of object { customerAsn, providers, type }
 
 </summary>
 
@@ -2462,7 +2462,7 @@ providers: array of number
 
 <summary>
 
-type: "CustomerAdded"or "CustomerRemoved"or "ProvidersAdded"or "ProvidersRemoved"
+type: "CustomerAdded" or "CustomerRemoved" or "ProvidersAdded" or "ProvidersRemoved"
 
 </summary>
 
@@ -2518,7 +2518,7 @@ Running total of active ASPA objects after this day.
 
 <summary>
 
-meta: object {dataTime, queryTime }
+meta: object { dataTime, queryTime }
 
 </summary>
 
@@ -2550,7 +2550,7 @@ formatdate-time
 
 <summary>
 
-ASPATimeseriesResponse object {meta, serie\_0 }
+ASPATimeseriesResponse object { meta, serie\_0 }
 
 </summary>
 
@@ -2558,7 +2558,7 @@ ASPATimeseriesResponse object {meta, serie\_0 }
 
 <summary>
 
-meta: object {dataTime, queryTime }
+meta: object { dataTime, queryTime }
 
 </summary>
 
@@ -2586,7 +2586,7 @@ formatdate-time
 
 <summary>
 
-serie\_0: object {timestamps, values }
+serie\_0: object { timestamps, values }
 
 </summary>
 
@@ -2618,7 +2618,7 @@ GET/radar/bgp/rpki/roas/timeseries
 
 <summary>
 
-RoaTimeseriesResponse object {meta, serie\_0 }
+RoaTimeseriesResponse object { meta, serie\_0 }
 
 </summary>
 
@@ -2626,7 +2626,7 @@ RoaTimeseriesResponse object {meta, serie\_0 }
 
 <summary>
 
-meta: object {dataTime, queryTime }
+meta: object { dataTime, queryTime }
 
 </summary>
 
@@ -2654,7 +2654,7 @@ formatdate-time
 
 <summary>
 
-serie\_0: object {timestamps, values }
+serie\_0: object { timestamps, values }
 
 </summary>
 

@@ -46,7 +46,7 @@ DELETE/accounts/{account\_id}/email-security/settings/url\_ignore\_patterns/{pat
 
 <summary>
 
-URLIgnorePatternListResponse object {id, created\_at, pattern, 3 more }
+URLIgnorePatternListResponse object { id, created\_at, pattern, 3 more }
 
 A URL ignore pattern that exempts matching URLs from Email Security’s URL rewriting.
 
@@ -108,7 +108,7 @@ formatdate-time
 
 <summary>
 
-URLIgnorePatternGetResponse object {id, created\_at, pattern, 3 more }
+URLIgnorePatternGetResponse object { id, created\_at, pattern, 3 more }
 
 A URL ignore pattern that exempts matching URLs from Email Security’s URL rewriting.
 
@@ -170,7 +170,7 @@ formatdate-time
 
 <summary>
 
-URLIgnorePatternCreateResponse object {id, created\_at, pattern, 3 more }
+URLIgnorePatternCreateResponse object { id, created\_at, pattern, 3 more }
 
 A URL ignore pattern that exempts matching URLs from Email Security’s URL rewriting.
 
@@ -232,7 +232,7 @@ formatdate-time
 
 <summary>
 
-URLIgnorePatternEditResponse object {id, created\_at, pattern, 3 more }
+URLIgnorePatternEditResponse object { id, created\_at, pattern, 3 more }
 
 A URL ignore pattern that exempts matching URLs from Email Security’s URL rewriting.
 
@@ -294,7 +294,7 @@ formatdate-time
 
 <summary>
 
-URLIgnorePatternDeleteResponse object {id }
+URLIgnorePatternDeleteResponse object { id }
 
 </summary>
 

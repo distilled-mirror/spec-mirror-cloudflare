@@ -76,7 +76,7 @@ DELETE/accounts/{account\_id}/realtime/kit/{app\_id}/meetings/{meeting\_id}/part
 
 <summary>
 
-MeetingGetResponse object {data, paging, success }
+MeetingGetResponse object { data, paging, success }
 
 </summary>
 
@@ -84,7 +84,7 @@ MeetingGetResponse object {data, paging, success }
 
 <summary>
 
-data: array of object {id, created\_at, updated\_at, 10 more }
+data: array of object { id, created\_at, updated\_at, 10 more }
 
 </summary>
 
@@ -134,7 +134,7 @@ Specifies if the meeting should start getting recorded as soon as someone joins 
 
 <summary>
 
-recording\_config: optional object {audio\_config, file\_name\_prefix, live\_streaming\_config, 4 more }
+recording\_config: optional object { audio\_config, file\_name\_prefix, live\_streaming\_config, 4 more }
 
 Recording Configurations to be used for this meeting. This level of configs takes higher preference over App level configs on the RealtimeKit developer portal.
 
@@ -144,7 +144,7 @@ Recording Configurations to be used for this meeting. This level of configs take
 
 <summary>
 
-audio\_config: optional object {channel, codec, export\_file }
+audio\_config: optional object { channel, codec, export\_file }
 
 Object containing configuration regarding the audio that is being recorded.
 
@@ -154,7 +154,7 @@ Object containing configuration regarding the audio that is being recorded.
 
 <summary>
 
-channel: optional "mono"or "stereo"
+channel: optional "mono" or "stereo"
 
 Audio signal pathway within an audio file that carries a specific sound source.
 
@@ -178,7 +178,7 @@ One of the following:
 
 <summary>
 
-codec: optional "MP3"or "AAC"
+codec: optional "MP3" or "AAC"
 
 Codec using which the recording will be encoded. If VP8/VP9 is selected for videoConfig, changing audioConfig is not allowed. In this case, the codec in the audioConfig is automatically set to vorbis.
 
@@ -218,7 +218,7 @@ Adds a prefix to the beginning of the file name of the recording.
 
 <summary>
 
-live\_streaming\_config: optional object {rtmp\_url }
+live\_streaming\_config: optional object { rtmp\_url }
 
 </summary>
 
@@ -248,7 +248,7 @@ minimum60
 
 <summary>
 
-realtimekit\_bucket\_config: optional object {enabled }
+realtimekit\_bucket\_config: optional object { enabled }
 
 </summary>
 
@@ -266,7 +266,7 @@ Controls whether recordings are uploaded to RealtimeKit’s bucket. If set to fa
 
 <summary>
 
-storage\_config: optional object {access\_key, auth\_method, bucket, 9 more } or object {access\_key, region, auth\_method, 9 more } or object {private\_key, access\_key, auth\_method, 9 more } or object {password, access\_key, auth\_method, 9 more }
+storage\_config: optional object { access\_key, auth\_method, bucket, 9 more } or object { access\_key, region, secret, 9 more } or object { access\_key, region, auth\_method, 9 more } or 2 more
 
 </summary>
 
@@ -276,7 +276,7 @@ One of the following:
 
 <summary>
 
-object {access\_key, auth\_method, bucket, 9 more }
+object { access\_key, auth\_method, bucket, 9 more }
 
 </summary>
 
@@ -292,7 +292,7 @@ Note that this field is not readable by clients, only writeable.
 
 <summary>
 
-auth\_method: optional "KEY"or "PASSWORD"
+auth\_method: optional "KEY" or "PASSWORD"
 
 Authentication method used for “sftp” type storage medium
 
@@ -356,7 +356,7 @@ Region of the storage medium.
 
 secret: optional string
 
-Secret key of the storage medium. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for <code>aws</code> storage. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
 
 <a href="#">Link to this property</a>
 
@@ -378,7 +378,107 @@ SSH destination server username for SFTP type storage medium
 
 <summary>
 
-object {access\_key, region, auth\_method, 9 more }
+object { access\_key, region, secret, 9 more }
+
+</summary>
+
+access\_key: unknown
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+region: unknown
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+secret: unknown
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+auth\_method: optional "KEY" or "PASSWORD"
+
+Authentication method used for “sftp” type storage medium
+
+</summary>
+
+One of the following:
+
+"KEY"
+
+<a href="#">Link to this property</a>
+
+"PASSWORD"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+bucket: optional string
+
+Name of the storage medium’s bucket.
+
+<a href="#">Link to this property</a>
+
+host: optional string
+
+SSH destination server host for SFTP type storage medium
+
+<a href="#">Link to this property</a>
+
+password: optional string
+
+SSH destination server password for SFTP type storage medium when auth\_method is “PASSWORD”. If auth\_method is “KEY”, this specifies the password for the ssh private key.
+
+<a href="#">Link to this property</a>
+
+path: optional string
+
+Path relative to the bucket root at which the recording will be placed.
+
+<a href="#">Link to this property</a>
+
+port: optional number
+
+SSH destination server port for SFTP type storage medium
+
+<a href="#">Link to this property</a>
+
+private\_key: optional string
+
+Private key used to login to destination SSH server for SFTP type storage medium, when auth\_method used is “KEY”
+
+<a href="#">Link to this property</a>
+
+type: optional "aws"
+
+<a href="#">Link to this property</a>
+
+username: optional string
+
+SSH destination server username for SFTP type storage medium
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object { access\_key, region, auth\_method, 9 more }
 
 </summary>
 
@@ -398,7 +498,7 @@ minLength1
 
 <summary>
 
-auth\_method: optional "KEY"or "PASSWORD"
+auth\_method: optional "KEY" or "PASSWORD"
 
 Authentication method used for “sftp” type storage medium
 
@@ -456,7 +556,7 @@ Private key used to login to destination SSH server for SFTP type storage medium
 
 secret: optional string
 
-Secret key of the storage medium. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for <code>aws</code> storage. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
 
 <a href="#">Link to this property</a>
 
@@ -464,15 +564,11 @@ Secret key of the storage medium. Similar to <code>access_key</code>, it is only
 
 <summary>
 
-type: optional "aws"or "azure"or "digitalocean"
+type: optional "azure" or "digitalocean"
 
 </summary>
 
 One of the following:
-
-"aws"
-
-<a href="#">Link to this property</a>
 
 "azure"
 
@@ -500,7 +596,7 @@ SSH destination server username for SFTP type storage medium
 
 <summary>
 
-object {private\_key, access\_key, auth\_method, 9 more }
+object { private\_key, access\_key, auth\_method, 9 more }
 
 </summary>
 
@@ -560,7 +656,7 @@ Region of the storage medium.
 
 secret: optional string
 
-Secret key of the storage medium. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for <code>aws</code> storage. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
 
 <a href="#">Link to this property</a>
 
@@ -568,7 +664,7 @@ Secret key of the storage medium. Similar to <code>access_key</code>, it is only
 
 <summary>
 
-type: optional "aws"or "azure"or "digitalocean"or 2 more
+type: optional "aws" or "azure" or "digitalocean" or 2 more
 
 Type of storage media.
 
@@ -614,7 +710,7 @@ SSH destination server username for SFTP type storage medium
 
 <summary>
 
-object {password, access\_key, auth\_method, 9 more }
+object { password, access\_key, auth\_method, 9 more }
 
 </summary>
 
@@ -674,7 +770,7 @@ Region of the storage medium.
 
 secret: optional string
 
-Secret key of the storage medium. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for <code>aws</code> storage. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
 
 <a href="#">Link to this property</a>
 
@@ -682,7 +778,7 @@ Secret key of the storage medium. Similar to <code>access_key</code>, it is only
 
 <summary>
 
-type: optional "aws"or "azure"or "digitalocean"or 2 more
+type: optional "aws" or "azure" or "digitalocean" or 2 more
 
 Type of storage media.
 
@@ -732,7 +828,7 @@ SSH destination server username for SFTP type storage medium
 
 <summary>
 
-video\_config: optional object {codec, export\_file, height, 2 more }
+video\_config: optional object { codec, export\_file, height, 2 more }
 
 </summary>
 
@@ -740,7 +836,7 @@ video\_config: optional object {codec, export\_file, height, 2 more }
 
 <summary>
 
-codec: optional "H264"or "VP8"or "VP9"
+codec: optional "H264" or "VP8" or "VP9"
 
 Codec using which the recording will be encoded.
 
@@ -784,7 +880,7 @@ minimum1
 
 <summary>
 
-watermark: optional object {position, size, url }
+watermark: optional object { position, size, url }
 
 Watermark to be added to the recording
 
@@ -794,7 +890,7 @@ Watermark to be added to the recording
 
 <summary>
 
-position: optional "left top"or "right top"or "left bottom"or "right bottom"
+position: optional "left top" or "right top" or "left bottom" or "right bottom"
 
 Position of the watermark
 
@@ -826,7 +922,7 @@ One of the following:
 
 <summary>
 
-size: optional object {height, width }
+size: optional object { height, width }
 
 Size of the watermark
 
@@ -896,7 +992,7 @@ minimum60
 
 <summary>
 
-sip: optional object {password, sip\_uri, username }
+sip: optional object { password, sip\_uri, username }
 
 SIP dial-in details. <code>null</code> if SIP is not enabled for the meeting.
 
@@ -928,7 +1024,7 @@ Username for SIP digest authentication.
 
 <summary>
 
-status: optional "ACTIVE"or "INACTIVE"
+status: optional "ACTIVE" or "INACTIVE"
 
 Whether the meeting is <code>ACTIVE</code> or <code>INACTIVE</code>. Users will not be able to join an <code>INACTIVE</code> meeting.
 
@@ -974,7 +1070,7 @@ Automatically generate transcripts when the meeting ends.
 
 <summary>
 
-paging: object {end\_offset, start\_offset, total\_count }
+paging: object { end\_offset, start\_offset, total\_count }
 
 </summary>
 
@@ -1008,7 +1104,7 @@ success: boolean
 
 <summary>
 
-MeetingCreateResponse object {success, data }
+MeetingCreateResponse object { success, data }
 
 </summary>
 
@@ -1022,7 +1118,7 @@ Success status of the operation
 
 <summary>
 
-data: optional object {id, created\_at, updated\_at, 11 more }
+data: optional object { id, created\_at, updated\_at, 11 more }
 
 Data returned by the operation
 
@@ -1056,7 +1152,7 @@ formatdate-time
 
 <summary>
 
-ai\_config: optional object {summarization, transcription }
+ai\_config: optional object { summarization, transcription }
 
 The AI Config allows you to customize the behavior of meeting transcriptions and summaries
 
@@ -1066,7 +1162,7 @@ The AI Config allows you to customize the behavior of meeting transcriptions and
 
 <summary>
 
-summarization: optional object {summary\_type, text\_format, word\_limit }
+summarization: optional object { summary\_type, text\_format, word\_limit }
 
 Summary Config
 
@@ -1076,7 +1172,7 @@ Summary Config
 
 <summary>
 
-summary\_type: optional "general"or "team\_meeting"or "sales\_call"or 6 more
+summary\_type: optional "general" or "team\_meeting" or "sales\_call" or 6 more
 
 Defines the style of the summary, such as general, team meeting, or sales call.
 
@@ -1128,7 +1224,7 @@ One of the following:
 
 <summary>
 
-text\_format: optional "plain\_text"or "markdown"
+text\_format: optional "plain\_text" or "markdown"
 
 Determines the text format of the summary, such as plain text or markdown.
 
@@ -1166,7 +1262,7 @@ minimum150
 
 <summary>
 
-transcription: optional object {keywords, language, profanity\_filter }
+transcription: optional object { keywords, language, profanity\_filter }
 
 Transcription Configurations
 
@@ -1182,7 +1278,7 @@ Adds specific terms to improve accurate detection during transcription.
 
 <summary>
 
-language: optional "en-US"or "en-IN"or "de"or 7 more
+language: optional "en-US" or "en-IN" or "de" or 7 more
 
 Specifies the language code for transcription to ensure accurate results. If omitted, the language is auto-detected for post-meeting (Whisper) transcription.
 
@@ -1270,7 +1366,7 @@ Specifies if the meeting should start getting recorded as soon as someone joins 
 
 <summary>
 
-recording\_config: optional object {audio\_config, file\_name\_prefix, live\_streaming\_config, 4 more }
+recording\_config: optional object { audio\_config, file\_name\_prefix, live\_streaming\_config, 4 more }
 
 Recording Configurations to be used for this meeting. This level of configs takes higher preference over App level configs on the RealtimeKit developer portal.
 
@@ -1280,7 +1376,7 @@ Recording Configurations to be used for this meeting. This level of configs take
 
 <summary>
 
-audio\_config: optional object {channel, codec, export\_file }
+audio\_config: optional object { channel, codec, export\_file }
 
 Object containing configuration regarding the audio that is being recorded.
 
@@ -1290,7 +1386,7 @@ Object containing configuration regarding the audio that is being recorded.
 
 <summary>
 
-channel: optional "mono"or "stereo"
+channel: optional "mono" or "stereo"
 
 Audio signal pathway within an audio file that carries a specific sound source.
 
@@ -1314,7 +1410,7 @@ One of the following:
 
 <summary>
 
-codec: optional "MP3"or "AAC"
+codec: optional "MP3" or "AAC"
 
 Codec using which the recording will be encoded. If VP8/VP9 is selected for videoConfig, changing audioConfig is not allowed. In this case, the codec in the audioConfig is automatically set to vorbis.
 
@@ -1354,7 +1450,7 @@ Adds a prefix to the beginning of the file name of the recording.
 
 <summary>
 
-live\_streaming\_config: optional object {rtmp\_url }
+live\_streaming\_config: optional object { rtmp\_url }
 
 </summary>
 
@@ -1384,7 +1480,7 @@ minimum60
 
 <summary>
 
-realtimekit\_bucket\_config: optional object {enabled }
+realtimekit\_bucket\_config: optional object { enabled }
 
 </summary>
 
@@ -1402,7 +1498,7 @@ Controls whether recordings are uploaded to RealtimeKit’s bucket. If set to fa
 
 <summary>
 
-storage\_config: optional object {access\_key, auth\_method, bucket, 9 more } or object {access\_key, region, auth\_method, 9 more } or object {private\_key, access\_key, auth\_method, 9 more } or object {password, access\_key, auth\_method, 9 more }
+storage\_config: optional object { access\_key, auth\_method, bucket, 9 more } or object { access\_key, region, secret, 9 more } or object { access\_key, region, auth\_method, 9 more } or 2 more
 
 </summary>
 
@@ -1412,7 +1508,7 @@ One of the following:
 
 <summary>
 
-object {access\_key, auth\_method, bucket, 9 more }
+object { access\_key, auth\_method, bucket, 9 more }
 
 </summary>
 
@@ -1428,7 +1524,7 @@ Note that this field is not readable by clients, only writeable.
 
 <summary>
 
-auth\_method: optional "KEY"or "PASSWORD"
+auth\_method: optional "KEY" or "PASSWORD"
 
 Authentication method used for “sftp” type storage medium
 
@@ -1492,7 +1588,7 @@ Region of the storage medium.
 
 secret: optional string
 
-Secret key of the storage medium. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for <code>aws</code> storage. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
 
 <a href="#">Link to this property</a>
 
@@ -1514,7 +1610,107 @@ SSH destination server username for SFTP type storage medium
 
 <summary>
 
-object {access\_key, region, auth\_method, 9 more }
+object { access\_key, region, secret, 9 more }
+
+</summary>
+
+access\_key: unknown
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+region: unknown
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+secret: unknown
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+auth\_method: optional "KEY" or "PASSWORD"
+
+Authentication method used for “sftp” type storage medium
+
+</summary>
+
+One of the following:
+
+"KEY"
+
+<a href="#">Link to this property</a>
+
+"PASSWORD"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+bucket: optional string
+
+Name of the storage medium’s bucket.
+
+<a href="#">Link to this property</a>
+
+host: optional string
+
+SSH destination server host for SFTP type storage medium
+
+<a href="#">Link to this property</a>
+
+password: optional string
+
+SSH destination server password for SFTP type storage medium when auth\_method is “PASSWORD”. If auth\_method is “KEY”, this specifies the password for the ssh private key.
+
+<a href="#">Link to this property</a>
+
+path: optional string
+
+Path relative to the bucket root at which the recording will be placed.
+
+<a href="#">Link to this property</a>
+
+port: optional number
+
+SSH destination server port for SFTP type storage medium
+
+<a href="#">Link to this property</a>
+
+private\_key: optional string
+
+Private key used to login to destination SSH server for SFTP type storage medium, when auth\_method used is “KEY”
+
+<a href="#">Link to this property</a>
+
+type: optional "aws"
+
+<a href="#">Link to this property</a>
+
+username: optional string
+
+SSH destination server username for SFTP type storage medium
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object { access\_key, region, auth\_method, 9 more }
 
 </summary>
 
@@ -1534,7 +1730,7 @@ minLength1
 
 <summary>
 
-auth\_method: optional "KEY"or "PASSWORD"
+auth\_method: optional "KEY" or "PASSWORD"
 
 Authentication method used for “sftp” type storage medium
 
@@ -1592,7 +1788,7 @@ Private key used to login to destination SSH server for SFTP type storage medium
 
 secret: optional string
 
-Secret key of the storage medium. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for <code>aws</code> storage. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
 
 <a href="#">Link to this property</a>
 
@@ -1600,15 +1796,11 @@ Secret key of the storage medium. Similar to <code>access_key</code>, it is only
 
 <summary>
 
-type: optional "aws"or "azure"or "digitalocean"
+type: optional "azure" or "digitalocean"
 
 </summary>
 
 One of the following:
-
-"aws"
-
-<a href="#">Link to this property</a>
 
 "azure"
 
@@ -1636,7 +1828,7 @@ SSH destination server username for SFTP type storage medium
 
 <summary>
 
-object {private\_key, access\_key, auth\_method, 9 more }
+object { private\_key, access\_key, auth\_method, 9 more }
 
 </summary>
 
@@ -1696,7 +1888,7 @@ Region of the storage medium.
 
 secret: optional string
 
-Secret key of the storage medium. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for <code>aws</code> storage. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
 
 <a href="#">Link to this property</a>
 
@@ -1704,7 +1896,7 @@ Secret key of the storage medium. Similar to <code>access_key</code>, it is only
 
 <summary>
 
-type: optional "aws"or "azure"or "digitalocean"or 2 more
+type: optional "aws" or "azure" or "digitalocean" or 2 more
 
 Type of storage media.
 
@@ -1750,7 +1942,7 @@ SSH destination server username for SFTP type storage medium
 
 <summary>
 
-object {password, access\_key, auth\_method, 9 more }
+object { password, access\_key, auth\_method, 9 more }
 
 </summary>
 
@@ -1810,7 +2002,7 @@ Region of the storage medium.
 
 secret: optional string
 
-Secret key of the storage medium. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for <code>aws</code> storage. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
 
 <a href="#">Link to this property</a>
 
@@ -1818,7 +2010,7 @@ Secret key of the storage medium. Similar to <code>access_key</code>, it is only
 
 <summary>
 
-type: optional "aws"or "azure"or "digitalocean"or 2 more
+type: optional "aws" or "azure" or "digitalocean" or 2 more
 
 Type of storage media.
 
@@ -1868,7 +2060,7 @@ SSH destination server username for SFTP type storage medium
 
 <summary>
 
-video\_config: optional object {codec, export\_file, height, 2 more }
+video\_config: optional object { codec, export\_file, height, 2 more }
 
 </summary>
 
@@ -1876,7 +2068,7 @@ video\_config: optional object {codec, export\_file, height, 2 more }
 
 <summary>
 
-codec: optional "H264"or "VP8"or "VP9"
+codec: optional "H264" or "VP8" or "VP9"
 
 Codec using which the recording will be encoded.
 
@@ -1920,7 +2112,7 @@ minimum1
 
 <summary>
 
-watermark: optional object {position, size, url }
+watermark: optional object { position, size, url }
 
 Watermark to be added to the recording
 
@@ -1930,7 +2122,7 @@ Watermark to be added to the recording
 
 <summary>
 
-position: optional "left top"or "right top"or "left bottom"or "right bottom"
+position: optional "left top" or "right top" or "left bottom" or "right bottom"
 
 Position of the watermark
 
@@ -1962,7 +2154,7 @@ One of the following:
 
 <summary>
 
-size: optional object {height, width }
+size: optional object { height, width }
 
 Size of the watermark
 
@@ -2032,7 +2224,7 @@ minimum60
 
 <summary>
 
-sip: optional object {password, sip\_uri, username }
+sip: optional object { password, sip\_uri, username }
 
 SIP dial-in details. <code>null</code> if SIP is not enabled for the meeting.
 
@@ -2064,7 +2256,7 @@ Username for SIP digest authentication.
 
 <summary>
 
-status: optional "ACTIVE"or "INACTIVE"
+status: optional "ACTIVE" or "INACTIVE"
 
 Whether the meeting is <code>ACTIVE</code> or <code>INACTIVE</code>. Users will not be able to join an <code>INACTIVE</code> meeting.
 
@@ -2114,7 +2306,7 @@ Automatically generate transcripts when the meeting ends.
 
 <summary>
 
-MeetingGetMeetingByIDResponse object {success, data }
+MeetingGetMeetingByIDResponse object { success, data }
 
 </summary>
 
@@ -2128,7 +2320,7 @@ Success status of the operation
 
 <summary>
 
-data: optional object {id, created\_at, updated\_at, 11 more }
+data: optional object { id, created\_at, updated\_at, 11 more }
 
 Data returned by the operation
 
@@ -2162,7 +2354,7 @@ formatdate-time
 
 <summary>
 
-ai\_config: optional object {summarization, transcription }
+ai\_config: optional object { summarization, transcription }
 
 The AI Config allows you to customize the behavior of meeting transcriptions and summaries
 
@@ -2172,7 +2364,7 @@ The AI Config allows you to customize the behavior of meeting transcriptions and
 
 <summary>
 
-summarization: optional object {summary\_type, text\_format, word\_limit }
+summarization: optional object { summary\_type, text\_format, word\_limit }
 
 Summary Config
 
@@ -2182,7 +2374,7 @@ Summary Config
 
 <summary>
 
-summary\_type: optional "general"or "team\_meeting"or "sales\_call"or 6 more
+summary\_type: optional "general" or "team\_meeting" or "sales\_call" or 6 more
 
 Defines the style of the summary, such as general, team meeting, or sales call.
 
@@ -2234,7 +2426,7 @@ One of the following:
 
 <summary>
 
-text\_format: optional "plain\_text"or "markdown"
+text\_format: optional "plain\_text" or "markdown"
 
 Determines the text format of the summary, such as plain text or markdown.
 
@@ -2272,7 +2464,7 @@ minimum150
 
 <summary>
 
-transcription: optional object {keywords, language, profanity\_filter }
+transcription: optional object { keywords, language, profanity\_filter }
 
 Transcription Configurations
 
@@ -2288,7 +2480,7 @@ Adds specific terms to improve accurate detection during transcription.
 
 <summary>
 
-language: optional "en-US"or "en-IN"or "de"or 7 more
+language: optional "en-US" or "en-IN" or "de" or 7 more
 
 Specifies the language code for transcription to ensure accurate results. If omitted, the language is auto-detected for post-meeting (Whisper) transcription.
 
@@ -2376,7 +2568,7 @@ Specifies if the meeting should start getting recorded as soon as someone joins 
 
 <summary>
 
-recording\_config: optional object {audio\_config, file\_name\_prefix, live\_streaming\_config, 4 more }
+recording\_config: optional object { audio\_config, file\_name\_prefix, live\_streaming\_config, 4 more }
 
 Recording Configurations to be used for this meeting. This level of configs takes higher preference over App level configs on the RealtimeKit developer portal.
 
@@ -2386,7 +2578,7 @@ Recording Configurations to be used for this meeting. This level of configs take
 
 <summary>
 
-audio\_config: optional object {channel, codec, export\_file }
+audio\_config: optional object { channel, codec, export\_file }
 
 Object containing configuration regarding the audio that is being recorded.
 
@@ -2396,7 +2588,7 @@ Object containing configuration regarding the audio that is being recorded.
 
 <summary>
 
-channel: optional "mono"or "stereo"
+channel: optional "mono" or "stereo"
 
 Audio signal pathway within an audio file that carries a specific sound source.
 
@@ -2420,7 +2612,7 @@ One of the following:
 
 <summary>
 
-codec: optional "MP3"or "AAC"
+codec: optional "MP3" or "AAC"
 
 Codec using which the recording will be encoded. If VP8/VP9 is selected for videoConfig, changing audioConfig is not allowed. In this case, the codec in the audioConfig is automatically set to vorbis.
 
@@ -2460,7 +2652,7 @@ Adds a prefix to the beginning of the file name of the recording.
 
 <summary>
 
-live\_streaming\_config: optional object {rtmp\_url }
+live\_streaming\_config: optional object { rtmp\_url }
 
 </summary>
 
@@ -2490,7 +2682,7 @@ minimum60
 
 <summary>
 
-realtimekit\_bucket\_config: optional object {enabled }
+realtimekit\_bucket\_config: optional object { enabled }
 
 </summary>
 
@@ -2508,7 +2700,7 @@ Controls whether recordings are uploaded to RealtimeKit’s bucket. If set to fa
 
 <summary>
 
-storage\_config: optional object {access\_key, auth\_method, bucket, 9 more } or object {access\_key, region, auth\_method, 9 more } or object {private\_key, access\_key, auth\_method, 9 more } or object {password, access\_key, auth\_method, 9 more }
+storage\_config: optional object { access\_key, auth\_method, bucket, 9 more } or object { access\_key, region, secret, 9 more } or object { access\_key, region, auth\_method, 9 more } or 2 more
 
 </summary>
 
@@ -2518,7 +2710,7 @@ One of the following:
 
 <summary>
 
-object {access\_key, auth\_method, bucket, 9 more }
+object { access\_key, auth\_method, bucket, 9 more }
 
 </summary>
 
@@ -2534,7 +2726,7 @@ Note that this field is not readable by clients, only writeable.
 
 <summary>
 
-auth\_method: optional "KEY"or "PASSWORD"
+auth\_method: optional "KEY" or "PASSWORD"
 
 Authentication method used for “sftp” type storage medium
 
@@ -2598,7 +2790,7 @@ Region of the storage medium.
 
 secret: optional string
 
-Secret key of the storage medium. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for <code>aws</code> storage. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
 
 <a href="#">Link to this property</a>
 
@@ -2620,7 +2812,107 @@ SSH destination server username for SFTP type storage medium
 
 <summary>
 
-object {access\_key, region, auth\_method, 9 more }
+object { access\_key, region, secret, 9 more }
+
+</summary>
+
+access\_key: unknown
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+region: unknown
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+secret: unknown
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+auth\_method: optional "KEY" or "PASSWORD"
+
+Authentication method used for “sftp” type storage medium
+
+</summary>
+
+One of the following:
+
+"KEY"
+
+<a href="#">Link to this property</a>
+
+"PASSWORD"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+bucket: optional string
+
+Name of the storage medium’s bucket.
+
+<a href="#">Link to this property</a>
+
+host: optional string
+
+SSH destination server host for SFTP type storage medium
+
+<a href="#">Link to this property</a>
+
+password: optional string
+
+SSH destination server password for SFTP type storage medium when auth\_method is “PASSWORD”. If auth\_method is “KEY”, this specifies the password for the ssh private key.
+
+<a href="#">Link to this property</a>
+
+path: optional string
+
+Path relative to the bucket root at which the recording will be placed.
+
+<a href="#">Link to this property</a>
+
+port: optional number
+
+SSH destination server port for SFTP type storage medium
+
+<a href="#">Link to this property</a>
+
+private\_key: optional string
+
+Private key used to login to destination SSH server for SFTP type storage medium, when auth\_method used is “KEY”
+
+<a href="#">Link to this property</a>
+
+type: optional "aws"
+
+<a href="#">Link to this property</a>
+
+username: optional string
+
+SSH destination server username for SFTP type storage medium
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object { access\_key, region, auth\_method, 9 more }
 
 </summary>
 
@@ -2640,7 +2932,7 @@ minLength1
 
 <summary>
 
-auth\_method: optional "KEY"or "PASSWORD"
+auth\_method: optional "KEY" or "PASSWORD"
 
 Authentication method used for “sftp” type storage medium
 
@@ -2698,7 +2990,7 @@ Private key used to login to destination SSH server for SFTP type storage medium
 
 secret: optional string
 
-Secret key of the storage medium. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for <code>aws</code> storage. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
 
 <a href="#">Link to this property</a>
 
@@ -2706,15 +2998,11 @@ Secret key of the storage medium. Similar to <code>access_key</code>, it is only
 
 <summary>
 
-type: optional "aws"or "azure"or "digitalocean"
+type: optional "azure" or "digitalocean"
 
 </summary>
 
 One of the following:
-
-"aws"
-
-<a href="#">Link to this property</a>
 
 "azure"
 
@@ -2742,7 +3030,7 @@ SSH destination server username for SFTP type storage medium
 
 <summary>
 
-object {private\_key, access\_key, auth\_method, 9 more }
+object { private\_key, access\_key, auth\_method, 9 more }
 
 </summary>
 
@@ -2802,7 +3090,7 @@ Region of the storage medium.
 
 secret: optional string
 
-Secret key of the storage medium. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for <code>aws</code> storage. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
 
 <a href="#">Link to this property</a>
 
@@ -2810,7 +3098,7 @@ Secret key of the storage medium. Similar to <code>access_key</code>, it is only
 
 <summary>
 
-type: optional "aws"or "azure"or "digitalocean"or 2 more
+type: optional "aws" or "azure" or "digitalocean" or 2 more
 
 Type of storage media.
 
@@ -2856,7 +3144,7 @@ SSH destination server username for SFTP type storage medium
 
 <summary>
 
-object {password, access\_key, auth\_method, 9 more }
+object { password, access\_key, auth\_method, 9 more }
 
 </summary>
 
@@ -2916,7 +3204,7 @@ Region of the storage medium.
 
 secret: optional string
 
-Secret key of the storage medium. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for <code>aws</code> storage. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
 
 <a href="#">Link to this property</a>
 
@@ -2924,7 +3212,7 @@ Secret key of the storage medium. Similar to <code>access_key</code>, it is only
 
 <summary>
 
-type: optional "aws"or "azure"or "digitalocean"or 2 more
+type: optional "aws" or "azure" or "digitalocean" or 2 more
 
 Type of storage media.
 
@@ -2974,7 +3262,7 @@ SSH destination server username for SFTP type storage medium
 
 <summary>
 
-video\_config: optional object {codec, export\_file, height, 2 more }
+video\_config: optional object { codec, export\_file, height, 2 more }
 
 </summary>
 
@@ -2982,7 +3270,7 @@ video\_config: optional object {codec, export\_file, height, 2 more }
 
 <summary>
 
-codec: optional "H264"or "VP8"or "VP9"
+codec: optional "H264" or "VP8" or "VP9"
 
 Codec using which the recording will be encoded.
 
@@ -3026,7 +3314,7 @@ minimum1
 
 <summary>
 
-watermark: optional object {position, size, url }
+watermark: optional object { position, size, url }
 
 Watermark to be added to the recording
 
@@ -3036,7 +3324,7 @@ Watermark to be added to the recording
 
 <summary>
 
-position: optional "left top"or "right top"or "left bottom"or "right bottom"
+position: optional "left top" or "right top" or "left bottom" or "right bottom"
 
 Position of the watermark
 
@@ -3068,7 +3356,7 @@ One of the following:
 
 <summary>
 
-size: optional object {height, width }
+size: optional object { height, width }
 
 Size of the watermark
 
@@ -3138,7 +3426,7 @@ minimum60
 
 <summary>
 
-sip: optional object {password, sip\_uri, username }
+sip: optional object { password, sip\_uri, username }
 
 SIP dial-in details. <code>null</code> if SIP is not enabled for the meeting.
 
@@ -3170,7 +3458,7 @@ Username for SIP digest authentication.
 
 <summary>
 
-status: optional "ACTIVE"or "INACTIVE"
+status: optional "ACTIVE" or "INACTIVE"
 
 Whether the meeting is <code>ACTIVE</code> or <code>INACTIVE</code>. Users will not be able to join an <code>INACTIVE</code> meeting.
 
@@ -3220,7 +3508,7 @@ Automatically generate transcripts when the meeting ends.
 
 <summary>
 
-MeetingUpdateMeetingByIDResponse object {success, data }
+MeetingUpdateMeetingByIDResponse object { success, data }
 
 </summary>
 
@@ -3234,7 +3522,7 @@ Success status of the operation
 
 <summary>
 
-data: optional object {id, created\_at, updated\_at, 11 more }
+data: optional object { id, created\_at, updated\_at, 11 more }
 
 Data returned by the operation
 
@@ -3268,7 +3556,7 @@ formatdate-time
 
 <summary>
 
-ai\_config: optional object {summarization, transcription }
+ai\_config: optional object { summarization, transcription }
 
 The AI Config allows you to customize the behavior of meeting transcriptions and summaries
 
@@ -3278,7 +3566,7 @@ The AI Config allows you to customize the behavior of meeting transcriptions and
 
 <summary>
 
-summarization: optional object {summary\_type, text\_format, word\_limit }
+summarization: optional object { summary\_type, text\_format, word\_limit }
 
 Summary Config
 
@@ -3288,7 +3576,7 @@ Summary Config
 
 <summary>
 
-summary\_type: optional "general"or "team\_meeting"or "sales\_call"or 6 more
+summary\_type: optional "general" or "team\_meeting" or "sales\_call" or 6 more
 
 Defines the style of the summary, such as general, team meeting, or sales call.
 
@@ -3340,7 +3628,7 @@ One of the following:
 
 <summary>
 
-text\_format: optional "plain\_text"or "markdown"
+text\_format: optional "plain\_text" or "markdown"
 
 Determines the text format of the summary, such as plain text or markdown.
 
@@ -3378,7 +3666,7 @@ minimum150
 
 <summary>
 
-transcription: optional object {keywords, language, profanity\_filter }
+transcription: optional object { keywords, language, profanity\_filter }
 
 Transcription Configurations
 
@@ -3394,7 +3682,7 @@ Adds specific terms to improve accurate detection during transcription.
 
 <summary>
 
-language: optional "en-US"or "en-IN"or "de"or 7 more
+language: optional "en-US" or "en-IN" or "de" or 7 more
 
 Specifies the language code for transcription to ensure accurate results. If omitted, the language is auto-detected for post-meeting (Whisper) transcription.
 
@@ -3482,7 +3770,7 @@ Specifies if the meeting should start getting recorded as soon as someone joins 
 
 <summary>
 
-recording\_config: optional object {audio\_config, file\_name\_prefix, live\_streaming\_config, 4 more }
+recording\_config: optional object { audio\_config, file\_name\_prefix, live\_streaming\_config, 4 more }
 
 Recording Configurations to be used for this meeting. This level of configs takes higher preference over App level configs on the RealtimeKit developer portal.
 
@@ -3492,7 +3780,7 @@ Recording Configurations to be used for this meeting. This level of configs take
 
 <summary>
 
-audio\_config: optional object {channel, codec, export\_file }
+audio\_config: optional object { channel, codec, export\_file }
 
 Object containing configuration regarding the audio that is being recorded.
 
@@ -3502,7 +3790,7 @@ Object containing configuration regarding the audio that is being recorded.
 
 <summary>
 
-channel: optional "mono"or "stereo"
+channel: optional "mono" or "stereo"
 
 Audio signal pathway within an audio file that carries a specific sound source.
 
@@ -3526,7 +3814,7 @@ One of the following:
 
 <summary>
 
-codec: optional "MP3"or "AAC"
+codec: optional "MP3" or "AAC"
 
 Codec using which the recording will be encoded. If VP8/VP9 is selected for videoConfig, changing audioConfig is not allowed. In this case, the codec in the audioConfig is automatically set to vorbis.
 
@@ -3566,7 +3854,7 @@ Adds a prefix to the beginning of the file name of the recording.
 
 <summary>
 
-live\_streaming\_config: optional object {rtmp\_url }
+live\_streaming\_config: optional object { rtmp\_url }
 
 </summary>
 
@@ -3596,7 +3884,7 @@ minimum60
 
 <summary>
 
-realtimekit\_bucket\_config: optional object {enabled }
+realtimekit\_bucket\_config: optional object { enabled }
 
 </summary>
 
@@ -3614,7 +3902,7 @@ Controls whether recordings are uploaded to RealtimeKit’s bucket. If set to fa
 
 <summary>
 
-storage\_config: optional object {access\_key, auth\_method, bucket, 9 more } or object {access\_key, region, auth\_method, 9 more } or object {private\_key, access\_key, auth\_method, 9 more } or object {password, access\_key, auth\_method, 9 more }
+storage\_config: optional object { access\_key, auth\_method, bucket, 9 more } or object { access\_key, region, secret, 9 more } or object { access\_key, region, auth\_method, 9 more } or 2 more
 
 </summary>
 
@@ -3624,7 +3912,7 @@ One of the following:
 
 <summary>
 
-object {access\_key, auth\_method, bucket, 9 more }
+object { access\_key, auth\_method, bucket, 9 more }
 
 </summary>
 
@@ -3640,7 +3928,7 @@ Note that this field is not readable by clients, only writeable.
 
 <summary>
 
-auth\_method: optional "KEY"or "PASSWORD"
+auth\_method: optional "KEY" or "PASSWORD"
 
 Authentication method used for “sftp” type storage medium
 
@@ -3704,7 +3992,7 @@ Region of the storage medium.
 
 secret: optional string
 
-Secret key of the storage medium. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for <code>aws</code> storage. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
 
 <a href="#">Link to this property</a>
 
@@ -3726,7 +4014,107 @@ SSH destination server username for SFTP type storage medium
 
 <summary>
 
-object {access\_key, region, auth\_method, 9 more }
+object { access\_key, region, secret, 9 more }
+
+</summary>
+
+access\_key: unknown
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+region: unknown
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+secret: unknown
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+auth\_method: optional "KEY" or "PASSWORD"
+
+Authentication method used for “sftp” type storage medium
+
+</summary>
+
+One of the following:
+
+"KEY"
+
+<a href="#">Link to this property</a>
+
+"PASSWORD"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+bucket: optional string
+
+Name of the storage medium’s bucket.
+
+<a href="#">Link to this property</a>
+
+host: optional string
+
+SSH destination server host for SFTP type storage medium
+
+<a href="#">Link to this property</a>
+
+password: optional string
+
+SSH destination server password for SFTP type storage medium when auth\_method is “PASSWORD”. If auth\_method is “KEY”, this specifies the password for the ssh private key.
+
+<a href="#">Link to this property</a>
+
+path: optional string
+
+Path relative to the bucket root at which the recording will be placed.
+
+<a href="#">Link to this property</a>
+
+port: optional number
+
+SSH destination server port for SFTP type storage medium
+
+<a href="#">Link to this property</a>
+
+private\_key: optional string
+
+Private key used to login to destination SSH server for SFTP type storage medium, when auth\_method used is “KEY”
+
+<a href="#">Link to this property</a>
+
+type: optional "aws"
+
+<a href="#">Link to this property</a>
+
+username: optional string
+
+SSH destination server username for SFTP type storage medium
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object { access\_key, region, auth\_method, 9 more }
 
 </summary>
 
@@ -3746,7 +4134,7 @@ minLength1
 
 <summary>
 
-auth\_method: optional "KEY"or "PASSWORD"
+auth\_method: optional "KEY" or "PASSWORD"
 
 Authentication method used for “sftp” type storage medium
 
@@ -3804,7 +4192,7 @@ Private key used to login to destination SSH server for SFTP type storage medium
 
 secret: optional string
 
-Secret key of the storage medium. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for <code>aws</code> storage. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
 
 <a href="#">Link to this property</a>
 
@@ -3812,15 +4200,11 @@ Secret key of the storage medium. Similar to <code>access_key</code>, it is only
 
 <summary>
 
-type: optional "aws"or "azure"or "digitalocean"
+type: optional "azure" or "digitalocean"
 
 </summary>
 
 One of the following:
-
-"aws"
-
-<a href="#">Link to this property</a>
 
 "azure"
 
@@ -3848,7 +4232,7 @@ SSH destination server username for SFTP type storage medium
 
 <summary>
 
-object {private\_key, access\_key, auth\_method, 9 more }
+object { private\_key, access\_key, auth\_method, 9 more }
 
 </summary>
 
@@ -3908,7 +4292,7 @@ Region of the storage medium.
 
 secret: optional string
 
-Secret key of the storage medium. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for <code>aws</code> storage. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
 
 <a href="#">Link to this property</a>
 
@@ -3916,7 +4300,7 @@ Secret key of the storage medium. Similar to <code>access_key</code>, it is only
 
 <summary>
 
-type: optional "aws"or "azure"or "digitalocean"or 2 more
+type: optional "aws" or "azure" or "digitalocean" or 2 more
 
 Type of storage media.
 
@@ -3962,7 +4346,7 @@ SSH destination server username for SFTP type storage medium
 
 <summary>
 
-object {password, access\_key, auth\_method, 9 more }
+object { password, access\_key, auth\_method, 9 more }
 
 </summary>
 
@@ -4022,7 +4406,7 @@ Region of the storage medium.
 
 secret: optional string
 
-Secret key of the storage medium. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for <code>aws</code> storage. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
 
 <a href="#">Link to this property</a>
 
@@ -4030,7 +4414,7 @@ Secret key of the storage medium. Similar to <code>access_key</code>, it is only
 
 <summary>
 
-type: optional "aws"or "azure"or "digitalocean"or 2 more
+type: optional "aws" or "azure" or "digitalocean" or 2 more
 
 Type of storage media.
 
@@ -4080,7 +4464,7 @@ SSH destination server username for SFTP type storage medium
 
 <summary>
 
-video\_config: optional object {codec, export\_file, height, 2 more }
+video\_config: optional object { codec, export\_file, height, 2 more }
 
 </summary>
 
@@ -4088,7 +4472,7 @@ video\_config: optional object {codec, export\_file, height, 2 more }
 
 <summary>
 
-codec: optional "H264"or "VP8"or "VP9"
+codec: optional "H264" or "VP8" or "VP9"
 
 Codec using which the recording will be encoded.
 
@@ -4132,7 +4516,7 @@ minimum1
 
 <summary>
 
-watermark: optional object {position, size, url }
+watermark: optional object { position, size, url }
 
 Watermark to be added to the recording
 
@@ -4142,7 +4526,7 @@ Watermark to be added to the recording
 
 <summary>
 
-position: optional "left top"or "right top"or "left bottom"or "right bottom"
+position: optional "left top" or "right top" or "left bottom" or "right bottom"
 
 Position of the watermark
 
@@ -4174,7 +4558,7 @@ One of the following:
 
 <summary>
 
-size: optional object {height, width }
+size: optional object { height, width }
 
 Size of the watermark
 
@@ -4244,7 +4628,7 @@ minimum60
 
 <summary>
 
-sip: optional object {password, sip\_uri, username }
+sip: optional object { password, sip\_uri, username }
 
 SIP dial-in details. <code>null</code> if SIP is not enabled for the meeting.
 
@@ -4276,7 +4660,7 @@ Username for SIP digest authentication.
 
 <summary>
 
-status: optional "ACTIVE"or "INACTIVE"
+status: optional "ACTIVE" or "INACTIVE"
 
 Whether the meeting is <code>ACTIVE</code> or <code>INACTIVE</code>. Users will not be able to join an <code>INACTIVE</code> meeting.
 
@@ -4326,7 +4710,7 @@ Automatically generate transcripts when the meeting ends.
 
 <summary>
 
-MeetingReplaceMeetingByIDResponse object {success, data }
+MeetingReplaceMeetingByIDResponse object { success, data }
 
 </summary>
 
@@ -4340,7 +4724,7 @@ Success status of the operation
 
 <summary>
 
-data: optional object {id, created\_at, updated\_at, 11 more }
+data: optional object { id, created\_at, updated\_at, 11 more }
 
 Data returned by the operation
 
@@ -4374,7 +4758,7 @@ formatdate-time
 
 <summary>
 
-ai\_config: optional object {summarization, transcription }
+ai\_config: optional object { summarization, transcription }
 
 The AI Config allows you to customize the behavior of meeting transcriptions and summaries
 
@@ -4384,7 +4768,7 @@ The AI Config allows you to customize the behavior of meeting transcriptions and
 
 <summary>
 
-summarization: optional object {summary\_type, text\_format, word\_limit }
+summarization: optional object { summary\_type, text\_format, word\_limit }
 
 Summary Config
 
@@ -4394,7 +4778,7 @@ Summary Config
 
 <summary>
 
-summary\_type: optional "general"or "team\_meeting"or "sales\_call"or 6 more
+summary\_type: optional "general" or "team\_meeting" or "sales\_call" or 6 more
 
 Defines the style of the summary, such as general, team meeting, or sales call.
 
@@ -4446,7 +4830,7 @@ One of the following:
 
 <summary>
 
-text\_format: optional "plain\_text"or "markdown"
+text\_format: optional "plain\_text" or "markdown"
 
 Determines the text format of the summary, such as plain text or markdown.
 
@@ -4484,7 +4868,7 @@ minimum150
 
 <summary>
 
-transcription: optional object {keywords, language, profanity\_filter }
+transcription: optional object { keywords, language, profanity\_filter }
 
 Transcription Configurations
 
@@ -4500,7 +4884,7 @@ Adds specific terms to improve accurate detection during transcription.
 
 <summary>
 
-language: optional "en-US"or "en-IN"or "de"or 7 more
+language: optional "en-US" or "en-IN" or "de" or 7 more
 
 Specifies the language code for transcription to ensure accurate results. If omitted, the language is auto-detected for post-meeting (Whisper) transcription.
 
@@ -4588,7 +4972,7 @@ Specifies if the meeting should start getting recorded as soon as someone joins 
 
 <summary>
 
-recording\_config: optional object {audio\_config, file\_name\_prefix, live\_streaming\_config, 4 more }
+recording\_config: optional object { audio\_config, file\_name\_prefix, live\_streaming\_config, 4 more }
 
 Recording Configurations to be used for this meeting. This level of configs takes higher preference over App level configs on the RealtimeKit developer portal.
 
@@ -4598,7 +4982,7 @@ Recording Configurations to be used for this meeting. This level of configs take
 
 <summary>
 
-audio\_config: optional object {channel, codec, export\_file }
+audio\_config: optional object { channel, codec, export\_file }
 
 Object containing configuration regarding the audio that is being recorded.
 
@@ -4608,7 +4992,7 @@ Object containing configuration regarding the audio that is being recorded.
 
 <summary>
 
-channel: optional "mono"or "stereo"
+channel: optional "mono" or "stereo"
 
 Audio signal pathway within an audio file that carries a specific sound source.
 
@@ -4632,7 +5016,7 @@ One of the following:
 
 <summary>
 
-codec: optional "MP3"or "AAC"
+codec: optional "MP3" or "AAC"
 
 Codec using which the recording will be encoded. If VP8/VP9 is selected for videoConfig, changing audioConfig is not allowed. In this case, the codec in the audioConfig is automatically set to vorbis.
 
@@ -4672,7 +5056,7 @@ Adds a prefix to the beginning of the file name of the recording.
 
 <summary>
 
-live\_streaming\_config: optional object {rtmp\_url }
+live\_streaming\_config: optional object { rtmp\_url }
 
 </summary>
 
@@ -4702,7 +5086,7 @@ minimum60
 
 <summary>
 
-realtimekit\_bucket\_config: optional object {enabled }
+realtimekit\_bucket\_config: optional object { enabled }
 
 </summary>
 
@@ -4720,7 +5104,7 @@ Controls whether recordings are uploaded to RealtimeKit’s bucket. If set to fa
 
 <summary>
 
-storage\_config: optional object {access\_key, auth\_method, bucket, 9 more } or object {access\_key, region, auth\_method, 9 more } or object {private\_key, access\_key, auth\_method, 9 more } or object {password, access\_key, auth\_method, 9 more }
+storage\_config: optional object { access\_key, auth\_method, bucket, 9 more } or object { access\_key, region, secret, 9 more } or object { access\_key, region, auth\_method, 9 more } or 2 more
 
 </summary>
 
@@ -4730,7 +5114,7 @@ One of the following:
 
 <summary>
 
-object {access\_key, auth\_method, bucket, 9 more }
+object { access\_key, auth\_method, bucket, 9 more }
 
 </summary>
 
@@ -4746,7 +5130,7 @@ Note that this field is not readable by clients, only writeable.
 
 <summary>
 
-auth\_method: optional "KEY"or "PASSWORD"
+auth\_method: optional "KEY" or "PASSWORD"
 
 Authentication method used for “sftp” type storage medium
 
@@ -4810,7 +5194,7 @@ Region of the storage medium.
 
 secret: optional string
 
-Secret key of the storage medium. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for <code>aws</code> storage. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
 
 <a href="#">Link to this property</a>
 
@@ -4832,7 +5216,107 @@ SSH destination server username for SFTP type storage medium
 
 <summary>
 
-object {access\_key, region, auth\_method, 9 more }
+object { access\_key, region, secret, 9 more }
+
+</summary>
+
+access\_key: unknown
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+region: unknown
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+secret: unknown
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+auth\_method: optional "KEY" or "PASSWORD"
+
+Authentication method used for “sftp” type storage medium
+
+</summary>
+
+One of the following:
+
+"KEY"
+
+<a href="#">Link to this property</a>
+
+"PASSWORD"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+bucket: optional string
+
+Name of the storage medium’s bucket.
+
+<a href="#">Link to this property</a>
+
+host: optional string
+
+SSH destination server host for SFTP type storage medium
+
+<a href="#">Link to this property</a>
+
+password: optional string
+
+SSH destination server password for SFTP type storage medium when auth\_method is “PASSWORD”. If auth\_method is “KEY”, this specifies the password for the ssh private key.
+
+<a href="#">Link to this property</a>
+
+path: optional string
+
+Path relative to the bucket root at which the recording will be placed.
+
+<a href="#">Link to this property</a>
+
+port: optional number
+
+SSH destination server port for SFTP type storage medium
+
+<a href="#">Link to this property</a>
+
+private\_key: optional string
+
+Private key used to login to destination SSH server for SFTP type storage medium, when auth\_method used is “KEY”
+
+<a href="#">Link to this property</a>
+
+type: optional "aws"
+
+<a href="#">Link to this property</a>
+
+username: optional string
+
+SSH destination server username for SFTP type storage medium
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object { access\_key, region, auth\_method, 9 more }
 
 </summary>
 
@@ -4852,7 +5336,7 @@ minLength1
 
 <summary>
 
-auth\_method: optional "KEY"or "PASSWORD"
+auth\_method: optional "KEY" or "PASSWORD"
 
 Authentication method used for “sftp” type storage medium
 
@@ -4910,7 +5394,7 @@ Private key used to login to destination SSH server for SFTP type storage medium
 
 secret: optional string
 
-Secret key of the storage medium. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for <code>aws</code> storage. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
 
 <a href="#">Link to this property</a>
 
@@ -4918,15 +5402,11 @@ Secret key of the storage medium. Similar to <code>access_key</code>, it is only
 
 <summary>
 
-type: optional "aws"or "azure"or "digitalocean"
+type: optional "azure" or "digitalocean"
 
 </summary>
 
 One of the following:
-
-"aws"
-
-<a href="#">Link to this property</a>
 
 "azure"
 
@@ -4954,7 +5434,7 @@ SSH destination server username for SFTP type storage medium
 
 <summary>
 
-object {private\_key, access\_key, auth\_method, 9 more }
+object { private\_key, access\_key, auth\_method, 9 more }
 
 </summary>
 
@@ -5014,7 +5494,7 @@ Region of the storage medium.
 
 secret: optional string
 
-Secret key of the storage medium. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for <code>aws</code> storage. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
 
 <a href="#">Link to this property</a>
 
@@ -5022,7 +5502,7 @@ Secret key of the storage medium. Similar to <code>access_key</code>, it is only
 
 <summary>
 
-type: optional "aws"or "azure"or "digitalocean"or 2 more
+type: optional "aws" or "azure" or "digitalocean" or 2 more
 
 Type of storage media.
 
@@ -5068,7 +5548,7 @@ SSH destination server username for SFTP type storage medium
 
 <summary>
 
-object {password, access\_key, auth\_method, 9 more }
+object { password, access\_key, auth\_method, 9 more }
 
 </summary>
 
@@ -5128,7 +5608,7 @@ Region of the storage medium.
 
 secret: optional string
 
-Secret key of the storage medium. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
+Secret key of the storage medium. Required for <code>aws</code> storage. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
 
 <a href="#">Link to this property</a>
 
@@ -5136,7 +5616,7 @@ Secret key of the storage medium. Similar to <code>access_key</code>, it is only
 
 <summary>
 
-type: optional "aws"or "azure"or "digitalocean"or 2 more
+type: optional "aws" or "azure" or "digitalocean" or 2 more
 
 Type of storage media.
 
@@ -5186,7 +5666,7 @@ SSH destination server username for SFTP type storage medium
 
 <summary>
 
-video\_config: optional object {codec, export\_file, height, 2 more }
+video\_config: optional object { codec, export\_file, height, 2 more }
 
 </summary>
 
@@ -5194,7 +5674,7 @@ video\_config: optional object {codec, export\_file, height, 2 more }
 
 <summary>
 
-codec: optional "H264"or "VP8"or "VP9"
+codec: optional "H264" or "VP8" or "VP9"
 
 Codec using which the recording will be encoded.
 
@@ -5238,7 +5718,7 @@ minimum1
 
 <summary>
 
-watermark: optional object {position, size, url }
+watermark: optional object { position, size, url }
 
 Watermark to be added to the recording
 
@@ -5248,7 +5728,7 @@ Watermark to be added to the recording
 
 <summary>
 
-position: optional "left top"or "right top"or "left bottom"or "right bottom"
+position: optional "left top" or "right top" or "left bottom" or "right bottom"
 
 Position of the watermark
 
@@ -5280,7 +5760,7 @@ One of the following:
 
 <summary>
 
-size: optional object {height, width }
+size: optional object { height, width }
 
 Size of the watermark
 
@@ -5350,7 +5830,7 @@ minimum60
 
 <summary>
 
-sip: optional object {password, sip\_uri, username }
+sip: optional object { password, sip\_uri, username }
 
 SIP dial-in details. <code>null</code> if SIP is not enabled for the meeting.
 
@@ -5382,7 +5862,7 @@ Username for SIP digest authentication.
 
 <summary>
 
-status: optional "ACTIVE"or "INACTIVE"
+status: optional "ACTIVE" or "INACTIVE"
 
 Whether the meeting is <code>ACTIVE</code> or <code>INACTIVE</code>. Users will not be able to join an <code>INACTIVE</code> meeting.
 
@@ -5432,7 +5912,7 @@ Automatically generate transcripts when the meeting ends.
 
 <summary>
 
-MeetingGetMeetingParticipantsResponse object {data, paging, success }
+MeetingGetMeetingParticipantsResponse object { data, paging, success }
 
 </summary>
 
@@ -5440,7 +5920,7 @@ MeetingGetMeetingParticipantsResponse object {data, paging, success }
 
 <summary>
 
-data: array of object {id, created\_at, custom\_participant\_id, 4 more }
+data: array of object { id, created\_at, custom\_participant\_id, 4 more }
 
 </summary>
 
@@ -5502,7 +5982,7 @@ formaturi
 
 <summary>
 
-paging: object {end\_offset, start\_offset, total\_count }
+paging: object { end\_offset, start\_offset, total\_count }
 
 </summary>
 
@@ -5536,7 +6016,7 @@ success: boolean
 
 <summary>
 
-MeetingAddParticipantResponse object {success, data }
+MeetingAddParticipantResponse object { success, data }
 
 </summary>
 
@@ -5550,7 +6030,7 @@ Success status of the operation
 
 <summary>
 
-data: optional object {id, token, created\_at, 7 more }
+data: optional object { id, token, created\_at, 7 more }
 
 Represents a participant.
 
@@ -5640,7 +6120,7 @@ formaturi
 
 <summary>
 
-MeetingGetMeetingParticipantResponse object {data, success }
+MeetingGetMeetingParticipantResponse object { data, success }
 
 </summary>
 
@@ -5648,7 +6128,7 @@ MeetingGetMeetingParticipantResponse object {data, success }
 
 <summary>
 
-data: object {id, created\_at, custom\_participant\_id, 4 more }
+data: object { id, created\_at, custom\_participant\_id, 4 more }
 
 Data returned by the operation
 
@@ -5722,7 +6202,7 @@ Success status of the operation
 
 <summary>
 
-MeetingEditParticipantResponse object {success, data }
+MeetingEditParticipantResponse object { success, data }
 
 </summary>
 
@@ -5736,7 +6216,7 @@ Success status of the operation
 
 <summary>
 
-data: optional object {id, token, created\_at, 7 more }
+data: optional object { id, token, created\_at, 7 more }
 
 Represents a participant.
 
@@ -5826,7 +6306,7 @@ formaturi
 
 <summary>
 
-MeetingReplaceParticipantResponse object {success, data }
+MeetingReplaceParticipantResponse object { success, data }
 
 </summary>
 
@@ -5840,7 +6320,7 @@ Success status of the operation
 
 <summary>
 
-data: optional object {id, token, created\_at, 7 more }
+data: optional object { id, token, created\_at, 7 more }
 
 Represents a participant.
 
@@ -5930,7 +6410,7 @@ formaturi
 
 <summary>
 
-MeetingDeleteMeetingParticipantResponse object {success, data }
+MeetingDeleteMeetingParticipantResponse object { success, data }
 
 </summary>
 
@@ -5944,7 +6424,7 @@ Success status of the operation
 
 <summary>
 
-data: optional object {created\_at, custom\_participant\_id, preset\_id, updated\_at }
+data: optional object { created\_at, custom\_participant\_id, preset\_id, updated\_at }
 
 Data returned by the operation
 
@@ -5992,7 +6472,7 @@ formatdate-time
 
 <summary>
 
-MeetingRefreshParticipantTokenResponse object {data, success }
+MeetingRefreshParticipantTokenResponse object { data, success }
 
 </summary>
 
@@ -6000,7 +6480,7 @@ MeetingRefreshParticipantTokenResponse object {data, success }
 
 <summary>
 
-data: object {token, expires\_on, not\_before }
+data: object { token, expires\_on, not\_before }
 
 Data returned by the operation
 
@@ -6046,7 +6526,7 @@ Success status of the operation
 
 <summary>
 
-MeetingRevokeParticipantTokenResponse object {data, success }
+MeetingRevokeParticipantTokenResponse object { data, success }
 
 </summary>
 
@@ -6054,7 +6534,7 @@ MeetingRevokeParticipantTokenResponse object {data, success }
 
 <summary>
 
-data: object {token }
+data: object { token }
 
 Data returned by the operation
 

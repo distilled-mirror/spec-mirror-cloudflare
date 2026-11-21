@@ -64,7 +64,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 <summary>
 
-aggInterval: optional "15m"or "1h"or "1d"or "1w"
+aggInterval: optional "15m" or "1h" or "1d" or "1w"
 
 Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to <a href="https://developers.cloudflare.com/radar/concepts/aggregation-intervals/">Aggregation intervals</a>. When omitted, the interval is auto-selected from the requested date range; finer intervals are only available for shorter ranges. If the requested interval is too granular for the date range, the request is rejected.
 
@@ -126,7 +126,7 @@ Start of the date range. Alternative to `dateRange`; provide together with `date
 
 <summary>
 
-duration: optional array of "LTE\_3D"or "GT\_3D\_LTE\_7D"or "GT\_7D\_LTE\_10D"or 4 more
+duration: optional array of "LTE\_3D" or "GT\_3D\_LTE\_7D" or "GT\_7D\_LTE\_10D" or 4 more
 
 Filters results by certificate duration.
 
@@ -170,7 +170,7 @@ One of the following:
 
 <summary>
 
-entryType: optional array of "PRECERTIFICATE"or "CERTIFICATE"
+entryType: optional array of "PRECERTIFICATE" or "CERTIFICATE"
 
 Filters results by entry type (certificate vs. pre-certificate). Incompatible with the <code>tld</code> filter/dimension.
 
@@ -194,7 +194,7 @@ One of the following:
 
 <summary>
 
-expirationStatus: optional array of "EXPIRED"or "VALID"
+expirationStatus: optional array of "EXPIRED" or "VALID"
 
 Filters results by expiration status (expired vs. valid).
 
@@ -218,7 +218,7 @@ One of the following:
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -260,7 +260,7 @@ Filters results by certificate log. Incompatible with the `tld` filter/dimension
 
 <summary>
 
-logApi: optional array of "RFC6962"or "STATIC"
+logApi: optional array of "RFC6962" or "STATIC"
 
 Filters results by certificate log API (RFC6962 vs. static). Incompatible with the <code>tld</code> filter/dimension.
 
@@ -296,7 +296,7 @@ Array of names used to label the series in the response.
 
 <summary>
 
-publicKeyAlgorithm: optional array of "DSA"or "ECDSA"or "RSA"
+publicKeyAlgorithm: optional array of "DSA" or "ECDSA" or "RSA"
 
 Filters results by public key algorithm.
 
@@ -324,7 +324,7 @@ One of the following:
 
 <summary>
 
-signatureAlgorithm: optional array of "DSA\_SHA\_1"or "DSA\_SHA\_256"or "ECDSA\_SHA\_1"or 12 more
+signatureAlgorithm: optional array of "DSA\_SHA\_1" or "DSA\_SHA\_256" or "ECDSA\_SHA\_1" or 12 more
 
 Filters results by signature algorithm.
 
@@ -406,7 +406,7 @@ Filters results by top-level domain. Incompatible with the `log`, `logApi`, `log
 
 <summary>
 
-uniqueEntries: optional array of "true"or "false"
+uniqueEntries: optional array of "true" or "false"
 
 Specifies whether to filter out duplicate certificates and pre-certificates. Set to true for unique entries only.
 
@@ -430,7 +430,7 @@ One of the following:
 
 <summary>
 
-validationLevel: optional array of "DOMAIN"or "ORGANIZATION"or "EXTENDED"
+validationLevel: optional array of "DOMAIN" or "ORGANIZATION" or "EXTENDED"
 
 Filters results by validation level.
 
@@ -460,7 +460,7 @@ One of the following:
 
 <summary>
 
-result: object {meta }
+result: object { meta }
 
 </summary>
 
@@ -468,7 +468,7 @@ result: object {meta }
 
 <summary>
 
-meta: object {aggInterval, confidenceInfo, dateRange, 3 more }
+meta: object { aggInterval, confidenceInfo, dateRange, 3 more }
 
 Metadata for the results.
 
@@ -478,7 +478,7 @@ Metadata for the results.
 
 <summary>
 
-aggInterval: "FIFTEEN\_MINUTES"or "ONE\_HOUR"or "ONE\_DAY"or 2 more
+aggInterval: "FIFTEEN\_MINUTES" or "ONE\_HOUR" or "ONE\_DAY" or 2 more
 
 Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to <a href="https://developers.cloudflare.com/radar/concepts/aggregation-intervals/">Aggregation intervals</a>.
 
@@ -514,7 +514,7 @@ One of the following:
 
 <summary>
 
-confidenceInfo: object {annotations, level }
+confidenceInfo: object { annotations, level }
 
 </summary>
 
@@ -522,7 +522,7 @@ confidenceInfo: object {annotations, level }
 
 <summary>
 
-annotations: array of object {dataSource, description, endDate, 5 more }
+annotations: array of object { dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -530,7 +530,7 @@ annotations: array of object {dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
+dataSource: "ALL" or "AI\_BOTS" or "AI\_GATEWAY" or 22 more
 
 Data source for annotations.
 
@@ -656,7 +656,7 @@ formatdate-time
 
 <summary>
 
-eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
+eventType: "GENERAL" or "OUTAGE" or "PARTIAL\_PROJECTION" or 2 more
 
 Event type for annotations.
 
@@ -728,7 +728,7 @@ Provides an indication of how much confidence Cloudflare has in the data.
 
 <summary>
 
-dateRange: array of object {endTime, startTime }
+dateRange: array of object { endTime, startTime }
 
 </summary>
 
@@ -764,7 +764,7 @@ formatdate-time
 
 <summary>
 
-normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
+normalization: "PERCENTAGE" or "MIN0\_MAX" or "MIN\_MAX" or 5 more
 
 Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
@@ -812,7 +812,7 @@ One of the following:
 
 <summary>
 
-units: array of object {name, value }
+units: array of object { name, value }
 
 Measurement units for the results.
 

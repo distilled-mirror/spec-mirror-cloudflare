@@ -42,7 +42,7 @@ The preferred authorization scheme for interacting with the Cloudflare API. [Cre
 
 ##### Accepted Permissions (at least one required)
 
-`Zero Trust Write`
+`CASB Write``Zero Trust Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -90,7 +90,7 @@ maxLength256
 
 <summary>
 
-severity: optional "Critical"or "High"or "Medium"or "Low"
+severity: optional "Critical" or "High" or "Medium" or "Low"
 
 Default severity used when no integration-specific severity override exists. Changing it reclassifies existing and future findings that do not have an override.
 
@@ -124,7 +124,7 @@ One of the following:
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -154,7 +154,7 @@ formaturi
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -176,7 +176,7 @@ JSON pointer to the source of the error.
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -206,7 +206,7 @@ formaturi
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -234,7 +234,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, applies\_to\_all\_integrations, asset\_class, 14 more }
+result: optional object { id, applies\_to\_all\_integrations, asset\_class, 14 more }
 
 Basic finding type information.
 
@@ -264,7 +264,7 @@ Asset class the finding type’s policy evaluates.
 
 <summary>
 
-asset\_vendor: "ANTHROPIC"or "AWS"or "BITBUCKET"or 13 more
+asset\_vendor: "ANTHROPIC" or "AWS" or "BITBUCKET" or 13 more
 
 Canonical vendor enum value.
 
@@ -344,7 +344,7 @@ One of the following:
 
 <summary>
 
-category: object {observation, product, type }
+category: object { observation, product, type }
 
 Category information for a finding.
 
@@ -354,7 +354,7 @@ Category information for a finding.
 
 <summary>
 
-observation: "Issue"or "Insight"or "Activity"
+observation: "Issue" or "Insight" or "Activity"
 
 The type of the observation.
 
@@ -382,7 +382,7 @@ One of the following:
 
 <summary>
 
-product: "SaaS"or "Cloud"
+product: "SaaS" or "Cloud"
 
 The product category.
 
@@ -406,7 +406,7 @@ One of the following:
 
 <summary>
 
-type: "Content"or "Posture"
+type: "Content" or "Posture"
 
 The type of the finding category.
 
@@ -460,7 +460,7 @@ The name of the finding.
 
 <summary>
 
-origin: "system"or "custom"
+origin: "system" or "custom"
 
 Whether the finding type is system-managed or customer-created.
 
@@ -484,7 +484,7 @@ One of the following:
 
 <summary>
 
-severity: "Critical"or "High"or "Medium"or "Low"
+severity: "Critical" or "High" or "Medium" or "Low"
 
 Default severity used when no integration-specific severity override exists.
 

@@ -30,7 +30,7 @@ GET/accounts/{account\_id}/load\_balancers/pools/{pool\_id}/references
 
 <summary>
 
-ReferenceGetResponse object {reference\_type, resource\_id, resource\_name, resource\_type }
+ReferenceGetResponse object { reference\_type, resource\_id, resource\_name, resource\_type }
 
 </summary>
 
@@ -38,7 +38,7 @@ ReferenceGetResponse object {reference\_type, resource\_id, resource\_name, reso
 
 <summary>
 
-reference\_type: optional "\*"or "referral"or "referrer"
+reference\_type: optional "\*" or "referral" or "referrer"
 
 </summary>
 

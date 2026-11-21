@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`D1 Read``D1 Write`
+`D1 Metadata Read``AI Search Index Engine``D1 Read``D1 Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -122,7 +122,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -164,7 +164,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -184,7 +184,7 @@ pointer: optional string
 
 <summary>
 
-result: array of object {created\_at, jurisdiction, name, 2 more }
+result: array of object { created\_at, jurisdiction, name, 2 more }
 
 </summary>
 
@@ -200,7 +200,7 @@ formatdate-time
 
 <summary>
 
-jurisdiction: optional "eu"or "fedramp"or "us"
+jurisdiction: optional "eu" or "fedramp" or "us"
 
 Specify the location to restrict the D1 database to run and store data. If this option is present, the location hint is ignored.
 
@@ -254,7 +254,7 @@ Whether the API call was successful
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object { count, page, per\_page, total\_count }
 
 </summary>
 

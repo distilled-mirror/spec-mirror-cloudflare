@@ -82,7 +82,7 @@ Name of the resource group
 
 <summary>
 
-scope: object {key, objects }
+scope: object { key, objects }
 
 The scope associated to the resource group
 
@@ -98,7 +98,7 @@ This is a combination of pre-defined resource name and identifier (like Account 
 
 <summary>
 
-objects: array of object {key }
+objects: array of object { key }
 
 A list of scope objects for additional context. The number of Scope objects should not be zero.
 
@@ -124,7 +124,7 @@ This is a combination of pre-defined resource name and identifier (like Zone ID 
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -146,7 +146,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -166,7 +166,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -188,7 +188,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -214,7 +214,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, scope, meta, name }
+result: optional object { id, scope, meta, name }
 
 A group of scoped resources.
 
@@ -230,7 +230,7 @@ Identifier of the resource group.
 
 <summary>
 
-scope: object {key, objects }
+scope: object { key, objects }
 
 The scope associated to the resource group
 
@@ -246,7 +246,7 @@ This is a combination of pre-defined resource name and identifier (like Account 
 
 <summary>
 
-objects: array of object {key }
+objects: array of object { key }
 
 A list of scope objects for additional context.
 
@@ -270,7 +270,7 @@ This is a combination of pre-defined resource name and identifier (like Zone ID 
 
 <summary>
 
-meta: optional object {key, value }
+meta: optional object { key, value }
 
 Attributes associated to the resource group.
 

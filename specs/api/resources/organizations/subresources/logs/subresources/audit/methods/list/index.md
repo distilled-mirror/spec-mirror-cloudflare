@@ -86,7 +86,7 @@ formatdate
 
 <summary>
 
-id: optional object {not }
+id: optional object { not }
 
 </summary>
 
@@ -104,7 +104,7 @@ Filters out audit logs by their IDs.
 
 <summary>
 
-action\_result: optional object {not }
+action\_result: optional object { not }
 
 </summary>
 
@@ -112,7 +112,7 @@ action\_result: optional object {not }
 
 <summary>
 
-not: optional array of "success"or "failure"
+not: optional array of "success" or "failure"
 
 Filters out audit logs by whether the action was successful or not.
 
@@ -140,7 +140,7 @@ One of the following:
 
 <summary>
 
-action\_type: optional object {not }
+action\_type: optional object { not }
 
 </summary>
 
@@ -148,7 +148,7 @@ action\_type: optional object {not }
 
 <summary>
 
-not: optional array of "create"or "delete"or "view"or "update"
+not: optional array of "create" or "delete" or "view" or "update"
 
 Filters out audit logs by the action type.
 
@@ -184,7 +184,7 @@ One of the following:
 
 <summary>
 
-actor\_context: optional object {not }
+actor\_context: optional object { not }
 
 </summary>
 
@@ -192,7 +192,7 @@ actor\_context: optional object {not }
 
 <summary>
 
-not: optional array of "api"or "api\_key"or "api\_token"or 3 more
+not: optional array of "api" or "api\_key" or "api\_token" or 3 more
 
 Filters out audit logs by the actor context.
 
@@ -243,7 +243,7 @@ One of the following:
 
 <summary>
 
-actor\_email: optional object {not }
+actor\_email: optional object { not }
 
 </summary>
 
@@ -261,7 +261,7 @@ Filters out audit logs by the actor’s email address.
 
 <summary>
 
-actor\_id: optional object {not }
+actor\_id: optional object { not }
 
 </summary>
 
@@ -279,7 +279,7 @@ Filters out audit logs by the actor’s user ID.
 
 <summary>
 
-actor\_ip\_address: optional object {not }
+actor\_ip\_address: optional object { not }
 
 </summary>
 
@@ -297,7 +297,7 @@ Filters out audit logs IP address where the action was initiated.
 
 <summary>
 
-actor\_token\_id: optional object {not }
+actor\_token\_id: optional object { not }
 
 </summary>
 
@@ -315,7 +315,7 @@ Filters out audit logs by the API token ID when the actor context is an api\_tok
 
 <summary>
 
-actor\_token\_name: optional object {not }
+actor\_token\_name: optional object { not }
 
 </summary>
 
@@ -333,7 +333,7 @@ Filters out audit logs by the API token name when the actor context is an api\_t
 
 <summary>
 
-actor\_type: optional object {not }
+actor\_type: optional object { not }
 
 </summary>
 
@@ -341,7 +341,7 @@ actor\_type: optional object {not }
 
 <summary>
 
-not: optional array of "cloudflare\_admin"or "system"or "user"
+not: optional array of "cloudflare\_admin" or "system" or "user"
 
 Filters out audit logs by the actor type.
 
@@ -379,7 +379,7 @@ The cursor is an opaque token used to paginate through large sets of records. It
 
 <summary>
 
-direction: optional "desc"or "asc"
+direction: optional "desc" or "asc"
 
 Sets sorting order.
 
@@ -413,7 +413,7 @@ minimum1
 
 <summary>
 
-raw\_cf\_ray\_id: optional object {not }
+raw\_cf\_ray\_id: optional object { not }
 
 </summary>
 
@@ -431,7 +431,7 @@ Filters out audit logs by the response CF Ray ID.
 
 <summary>
 
-raw\_method: optional object {not }
+raw\_method: optional object { not }
 
 </summary>
 
@@ -449,7 +449,7 @@ Filters out audit logs by the HTTP method for the API call.
 
 <summary>
 
-raw\_status\_code: optional object {not }
+raw\_status\_code: optional object { not }
 
 </summary>
 
@@ -467,7 +467,7 @@ Filters out audit logs by the response status code that was returned.
 
 <summary>
 
-raw\_uri: optional object {not }
+raw\_uri: optional object { not }
 
 </summary>
 
@@ -485,7 +485,7 @@ Filters out audit logs by the request URI.
 
 <summary>
 
-resource\_id: optional object {not }
+resource\_id: optional object { not }
 
 </summary>
 
@@ -503,7 +503,7 @@ Filters out audit logs by the resource ID.
 
 <summary>
 
-resource\_product: optional object {not }
+resource\_product: optional object { not }
 
 </summary>
 
@@ -521,7 +521,7 @@ Filters out audit logs by the Cloudflare product associated with the changed res
 
 <summary>
 
-resource\_scope: optional object {not }
+resource\_scope: optional object { not }
 
 </summary>
 
@@ -539,7 +539,7 @@ Filters out audit logs by the resource scope, specifying whether the resource is
 
 <summary>
 
-resource\_type: optional object {not }
+resource\_type: optional object { not }
 
 </summary>
 
@@ -559,7 +559,7 @@ Filters out audit logs based on the unique type of resource changed by the actio
 
 <summary>
 
-errors: optional array of object {message }
+errors: optional array of object { message }
 
 </summary>
 
@@ -575,7 +575,7 @@ message: string
 
 <summary>
 
-result: optional array of object {id, action, actor, 3 more }
+result: optional array of object { id, action, actor, 3 more }
 
 </summary>
 
@@ -591,7 +591,7 @@ maxLength32
 
 <summary>
 
-action: optional object {description, result, time, type }
+action: optional object { description, result, time, type }
 
 Provides information about the action performed.
 
@@ -631,7 +631,7 @@ A short string that describes the action that was performed.
 
 <summary>
 
-actor: optional object {id, context, email, 4 more }
+actor: optional object { id, context, email, 4 more }
 
 Provides details about the actor who performed the action.
 
@@ -647,7 +647,7 @@ The ID of the actor who performed the action. If a user performed the action, th
 
 <summary>
 
-context: optional "api"or "api\_key"or "api\_token"or 3 more
+context: optional "api" or "api\_key" or "api\_token" or 3 more
 
 The context in which the action was initiated.
 
@@ -720,7 +720,7 @@ The API token name when the actor context is an api\_token or oauth.
 
 <summary>
 
-type: optional "cloudflare\_admin"or "system"or "user"
+type: optional "cloudflare\_admin" or "system" or "user"
 
 The type of actor.
 
@@ -752,7 +752,7 @@ One of the following:
 
 <summary>
 
-organization: optional object {id }
+organization: optional object { id }
 
 Contains organization related information.
 
@@ -772,7 +772,7 @@ A unique identifier for the organization.
 
 <summary>
 
-raw: optional object {cf\_ray\_id, method, status\_code, 2 more }
+raw: optional object { cf\_ray\_id, method, status\_code, 2 more }
 
 Provides raw information about the request and response.
 
@@ -816,7 +816,7 @@ The client’s user agent string sent with the request.
 
 <summary>
 
-resource: optional object {id, product, request, 3 more }
+resource: optional object { id, product, request, 3 more }
 
 Provides details about the affected resource.
 
@@ -866,7 +866,7 @@ The type of the resource.
 
 <summary>
 
-result\_info: optional object {count, cursor }
+result\_info: optional object { count, cursor }
 
 Provides information about the result of the request, including count and cursor.
 

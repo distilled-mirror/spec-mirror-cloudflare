@@ -32,7 +32,7 @@ GET/zones/{zone\_id}/page\_shield/cookies/{cookie\_id}
 
 <summary>
 
-CookieListResponse object {id, first\_seen\_at, host, 11 more }
+CookieListResponse object { id, first\_seen\_at, host, 11 more }
 
 </summary>
 
@@ -68,7 +68,7 @@ name: string
 
 <summary>
 
-type: "first\_party"or "unknown"
+type: "first\_party" or "unknown"
 
 </summary>
 
@@ -116,7 +116,7 @@ path\_attribute: optional string
 
 <summary>
 
-same\_site\_attribute: optional "lax"or "strict"or "none"
+same\_site\_attribute: optional "lax" or "strict" or "none"
 
 </summary>
 
@@ -150,7 +150,7 @@ secure\_attribute: optional boolean
 
 <summary>
 
-CookieGetResponse object {id, first\_seen\_at, host, 11 more }
+CookieGetResponse object { id, first\_seen\_at, host, 11 more }
 
 </summary>
 
@@ -186,7 +186,7 @@ name: string
 
 <summary>
 
-type: "first\_party"or "unknown"
+type: "first\_party" or "unknown"
 
 </summary>
 
@@ -234,7 +234,7 @@ path\_attribute: optional string
 
 <summary>
 
-same\_site\_attribute: optional "lax"or "strict"or "none"
+same\_site\_attribute: optional "lax" or "strict" or "none"
 
 </summary>
 

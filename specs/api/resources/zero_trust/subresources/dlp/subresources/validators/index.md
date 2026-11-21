@@ -34,7 +34,7 @@ GET/accounts/{account\_id}/dlp/validators/{validator\_id}
 
 <summary>
 
-References object {entries, entry\_count }
+References object { entries, entry\_count }
 
 What currently uses a validator. Deleting a validator that is still in use returns <code>409</code>, so check this first.
 
@@ -46,7 +46,7 @@ Read-only. A validator is attached or detached by updating the detection entry t
 
 <summary>
 
-entries: array of object {id, name, type }
+entries: array of object { id, name, type }
 
 The detection entries using this validator, ordered by name.
 
@@ -66,7 +66,7 @@ name: string
 
 <summary>
 
-type: "custom"or "custom\_prompt\_topic"or "predefined"or 4 more
+type: "custom" or "custom\_prompt\_topic" or "predefined" or 4 more
 
 The type of a detection entry.
 
@@ -128,7 +128,7 @@ minimum0
 
 <summary>
 
-Validator = object {id, created\_at, kind, 4 more } or object {id, created\_at, kind, 5 more }
+Validator = object { id, created\_at, kind, 4 more } or object { id, created\_at, kind, 5 more }
 
 Reusable logic that a detection entry can attach to in order to refine its matches. The <code>kind</code> field determines the rest of the body.
 
@@ -140,7 +140,7 @@ One of the following:
 
 <summary>
 
-ProximityWordValidator object {id, created\_at, kind, 4 more }
+ProximityWordValidator object { id, created\_at, kind, 4 more }
 
 A reusable list of weighted words. Attaching it to a detection entry raises the confidence of that entry’s matches when one of the words appears nearby, and lowers it when none do.
 
@@ -218,7 +218,7 @@ The word or phrase to look for. Must contain 1–128 characters and is matched c
 
 <summary>
 
-WorkerValidator object {id, created\_at, kind, 5 more }
+WorkerValidator object { id, created\_at, kind, 5 more }
 
 A customer Worker registered as a validator.
 
@@ -270,7 +270,7 @@ formatdate-time
 
 <summary>
 
-default: optional numberor "veto"
+default: optional number or "veto"
 
 </summary>
 
@@ -310,7 +310,7 @@ One of the following:
 
 <summary>
 
-ProximityWordValidator object {id, created\_at, kind, 4 more }
+ProximityWordValidator object { id, created\_at, kind, 4 more }
 
 A reusable list of weighted words. Attaching it to a detection entry raises the confidence of that entry’s matches when one of the words appears nearby, and lowers it when none do.
 
@@ -388,7 +388,7 @@ The word or phrase to look for. Must contain 1–128 characters and is matched c
 
 <summary>
 
-WorkerValidator object {id, created\_at, kind, 5 more }
+WorkerValidator object { id, created\_at, kind, 5 more }
 
 A customer Worker registered as a validator.
 
@@ -440,7 +440,7 @@ formatdate-time
 
 <summary>
 
-default: optional numberor "veto"
+default: optional number or "veto"
 
 </summary>
 
@@ -470,7 +470,7 @@ number
 
 <summary>
 
-WorkerValidator object {id, created\_at, name, 4 more }
+WorkerValidator object { id, created\_at, name, 4 more }
 
 A customer Worker registered as a validator.
 
@@ -518,7 +518,7 @@ formatdate-time
 
 <summary>
 
-default: optional numberor "veto"
+default: optional number or "veto"
 
 </summary>
 
@@ -568,7 +568,7 @@ DELETE/accounts/{account\_id}/dlp/validators/proximity\_words/{validator\_id}
 
 <summary>
 
-ProximityWordValidator object {id, created\_at, name, 3 more }
+ProximityWordValidator object { id, created\_at, name, 3 more }
 
 A reusable list of weighted words. Attaching it to a detection entry raises the confidence of that entry’s matches when one of the words appears nearby, and lowers it when none do.
 
@@ -714,7 +714,7 @@ The word or phrase to look for. Must contain 1–128 characters and is matched c
 
 <summary>
 
-Weight = "strong"or "moderate"or "weak"
+Weight = "strong" or "moderate" or "weak"
 
 How much a word contributes to a match’s confidence when it is found nearby.
 
@@ -744,7 +744,7 @@ One of the following:
 
 <summary>
 
-Word object {weight, word }
+Word object { weight, word }
 
 A word that raises a match’s confidence when it appears near the match.
 

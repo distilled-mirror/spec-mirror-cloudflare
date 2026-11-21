@@ -60,7 +60,7 @@ minLength3
 
 <summary>
 
-"cf-r2-jurisdiction": optional "default"or "eu"or "us"or 2 more
+"cf-r2-jurisdiction": optional "default" or "eu" or "us" or 2 more
 
 </summary>
 
@@ -118,7 +118,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -150,7 +150,7 @@ result: <a href="https://developers.cloudflare.com/api/resources/r2#(resource)%2
 
 <summary>
 
-destination: optional object {accessKeyId, account, bucket, provider }
+destination: optional object { accessKeyId, account, bucket, provider }
 
 Details about the configured destination bucket.
 
@@ -190,7 +190,7 @@ State of Sippy for this bucket.
 
 <summary>
 
-source: optional object {bucket, bucketUrl, container, 2 more }
+source: optional object { bucket, bucketUrl, container, 2 more }
 
 Details about the configured source bucket.
 
@@ -218,7 +218,7 @@ Name of the Azure Blob Storage container (Azure only).
 
 <summary>
 
-provider: optional "aws"or "gcs"or "s3"or "azure"
+provider: optional "aws" or "gcs" or "s3" or "azure"
 
 </summary>
 

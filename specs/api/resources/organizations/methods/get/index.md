@@ -72,7 +72,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -112,7 +112,7 @@ formatdate-time
 
 <summary>
 
-meta: object {are\_child\_accounts\_accessible\_by\_org\_members, hierarchy\_tags, managed\_by, 2 more }
+meta: object { are\_child\_accounts\_accessible\_by\_org\_members, hierarchy\_tags, managed\_by, 2 more }
 
 </summary>
 
@@ -134,7 +134,7 @@ managed\_by: optional string
 
 <summary>
 
-tenant\_flags: optional object {account\_creation, account\_creation\_applies\_tenant\_defaults, account\_deletion, 5 more }
+tenant\_flags: optional object { account\_creation, account\_creation\_applies\_tenant\_defaults, account\_deletion, 5 more }
 
 Enable features for Organizations.
 
@@ -192,7 +192,7 @@ name: string
 
 <summary>
 
-parent: optional object {id, name }
+parent: optional object { id, name }
 
 </summary>
 

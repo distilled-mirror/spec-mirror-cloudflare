@@ -40,7 +40,7 @@ POST/accounts/{account\_id}/cloudforce-one/v2/threat-signals/articles/{article\_
 
 <summary>
 
-TagCreateResponse object {applied\_by, categoryId, uuid, value }
+TagCreateResponse object { applied\_by, categoryId, uuid, value }
 
 </summary>
 
@@ -48,7 +48,7 @@ TagCreateResponse object {applied\_by, categoryId, uuid, value }
 
 <summary>
 
-applied\_by: "ai"or "analyst"or "system"
+applied\_by: "ai" or "analyst" or "system"
 
 </summary>
 
@@ -94,7 +94,7 @@ value: string
 
 <summary>
 
-TagDeleteResponse object {applied\_by, categoryId, uuid, value }
+TagDeleteResponse object { applied\_by, categoryId, uuid, value }
 
 </summary>
 
@@ -102,7 +102,7 @@ TagDeleteResponse object {applied\_by, categoryId, uuid, value }
 
 <summary>
 
-applied\_by: "ai"or "analyst"or "system"
+applied\_by: "ai" or "analyst" or "system"
 
 </summary>
 
@@ -148,7 +148,7 @@ value: string
 
 <summary>
 
-TagGenerateResponse object {tag\_skill\_version, tags }
+TagGenerateResponse object { tag\_skill\_version, tags }
 
 </summary>
 
@@ -160,7 +160,7 @@ tag\_skill\_version: string
 
 <summary>
 
-tags: array of object {applied\_by, categoryId, uuid, value }
+tags: array of object { applied\_by, categoryId, uuid, value }
 
 Final hydrated assignment set; may be empty when no applicable tags are selected.
 
@@ -170,7 +170,7 @@ Final hydrated assignment set; may be empty when no applicable tags are selected
 
 <summary>
 
-applied\_by: "ai"or "analyst"or "system"
+applied\_by: "ai" or "analyst" or "system"
 
 </summary>
 

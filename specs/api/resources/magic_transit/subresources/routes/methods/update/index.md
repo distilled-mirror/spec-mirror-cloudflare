@@ -162,7 +162,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -204,7 +204,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -224,7 +224,7 @@ pointer: optional string
 
 <summary>
 
-result: object {modified, modified\_route }
+result: object { modified, modified\_route }
 
 </summary>
 
@@ -236,7 +236,7 @@ modified: optional boolean
 
 <summary>
 
-modified\_route: optional object {id, nexthop, prefix, 6 more }
+modified\_route: optional object { id, nexthop, prefix, 6 more }
 
 </summary>
 

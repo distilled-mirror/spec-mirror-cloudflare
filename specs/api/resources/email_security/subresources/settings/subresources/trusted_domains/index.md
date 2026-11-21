@@ -50,7 +50,7 @@ POST/accounts/{account\_id}/email-security/settings/trusted\_domains/batch
 
 <summary>
 
-TrustedDomainListResponse object {id, comments, created\_at, 6 more }
+TrustedDomainListResponse object { id, comments, created\_at, 6 more }
 
 A trusted email domain.
 
@@ -128,7 +128,7 @@ minLength1
 
 <summary>
 
-TrustedDomainGetResponse object {id, comments, created\_at, 6 more }
+TrustedDomainGetResponse object { id, comments, created\_at, 6 more }
 
 A trusted email domain.
 
@@ -206,7 +206,7 @@ minLength1
 
 <summary>
 
-TrustedDomainCreateResponse object {id, comments, created\_at, 6 more }
+TrustedDomainCreateResponse object { id, comments, created\_at, 6 more }
 
 A trusted email domain.
 
@@ -284,7 +284,7 @@ minLength1
 
 <summary>
 
-TrustedDomainEditResponse object {id, comments, created\_at, 6 more }
+TrustedDomainEditResponse object { id, comments, created\_at, 6 more }
 
 A trusted email domain.
 
@@ -362,7 +362,7 @@ minLength1
 
 <summary>
 
-TrustedDomainDeleteResponse object {id }
+TrustedDomainDeleteResponse object { id }
 
 </summary>
 
@@ -382,7 +382,7 @@ formatuuid
 
 <summary>
 
-TrustedDomainBatchResponse object {deletes, patches, posts, puts }
+TrustedDomainBatchResponse object { deletes, patches, posts, puts }
 
 </summary>
 
@@ -390,7 +390,7 @@ TrustedDomainBatchResponse object {deletes, patches, posts, puts }
 
 <summary>
 
-deletes: optional array of object {id }
+deletes: optional array of object { id }
 
 </summary>
 
@@ -410,7 +410,7 @@ formatuuid
 
 <summary>
 
-patches: optional array of object {id, comments, created\_at, 6 more }
+patches: optional array of object { id, comments, created\_at, 6 more }
 
 </summary>
 
@@ -486,7 +486,7 @@ minLength1
 
 <summary>
 
-posts: optional array of object {id, comments, created\_at, 6 more }
+posts: optional array of object { id, comments, created\_at, 6 more }
 
 </summary>
 
@@ -562,7 +562,7 @@ minLength1
 
 <summary>
 
-puts: optional array of object {id, comments, created\_at, 6 more }
+puts: optional array of object { id, comments, created\_at, 6 more }
 
 </summary>
 

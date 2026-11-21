@@ -50,7 +50,7 @@ DELETE/accounts/{account\_id}/magic/sites/{site\_id}/lans/{lan\_id}
 
 <summary>
 
-DHCPRelay object {server\_addresses }
+DHCPRelay object { server\_addresses }
 
 </summary>
 
@@ -68,7 +68,7 @@ List of DHCP server IPs.
 
 <summary>
 
-DHCPServer object {dhcp\_options, dhcp\_pool\_end, dhcp\_pool\_start, 3 more }
+DHCPServer object { dhcp\_options, dhcp\_pool\_end, dhcp\_pool\_start, 3 more }
 
 </summary>
 
@@ -76,7 +76,7 @@ DHCPServer object {dhcp\_options, dhcp\_pool\_end, dhcp\_pool\_start, 3 more }
 
 <summary>
 
-dhcp\_options: optional array of object {code, type, value }
+dhcp\_options: optional array of object { code, type, value }
 
 Optional list of custom DHCP options to include in DHCP responses. Only valid when DHCP server is enabled.
 
@@ -96,7 +96,7 @@ minimum1
 
 <summary>
 
-type: "text"or "hex"or "ip"or 3 more
+type: "text" or "hex" or "ip" or 3 more
 
 The type of the option value. text: a string (max 255 bytes). hex: colon-separated hex bytes (e.g. “01:04:aa:bb:cc”, max 255 bytes). ip: an IPv4 address (e.g. “10.20.30.40”). byte: an unsigned integer 0-255 (1 byte). short: an unsigned integer 0-65535 (2 bytes). integer: an unsigned integer 0-4294967295 (4 bytes).
 
@@ -178,7 +178,7 @@ Mapping of MAC addresses to IP addresses
 
 <summary>
 
-LAN object {id, bond\_id, ha\_link, 10 more }
+LAN object { id, bond\_id, ha\_link, 10 more }
 
 </summary>
 
@@ -228,7 +228,7 @@ physport: optional number
 
 <summary>
 
-remote\_subnets: optional array of object {local\_alias\_prefix, remote\_prefix }
+remote\_subnets: optional array of object { local\_alias\_prefix, remote\_prefix }
 
 </summary>
 
@@ -304,7 +304,7 @@ VLAN ID. Use zero for untagged.
 
 <summary>
 
-LANStaticAddressing object {address, dhcp\_relay, dhcp\_server, 2 more }
+LANStaticAddressing object { address, dhcp\_relay, dhcp\_server, 2 more }
 
 If the site is not configured in high availability mode, this configuration is optional (if omitted, use DHCP). However, if in high availability mode, static\_address is required along with secondary and virtual address.
 
@@ -344,7 +344,7 @@ A valid CIDR notation representing an IP range.
 
 <summary>
 
-Nat object {static\_prefix }
+Nat object { static\_prefix }
 
 </summary>
 
@@ -362,7 +362,7 @@ A valid CIDR notation representing an IP range.
 
 <summary>
 
-RoutedSubnet object {next\_hop, prefix, nat }
+RoutedSubnet object { next\_hop, prefix, nat }
 
 </summary>
 

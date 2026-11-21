@@ -44,7 +44,7 @@ DELETE/accounts/{account\_id}/calls/apps/{app\_id}
 
 <summary>
 
-SFUListResponse object {created, modified, name, uid }
+SFUListResponse object { created, modified, name, uid }
 
 </summary>
 
@@ -88,7 +88,7 @@ minLength32
 
 <summary>
 
-SFUGetResponse object {created, modified, name, uid }
+SFUGetResponse object { created, modified, name, uid }
 
 </summary>
 
@@ -132,7 +132,7 @@ minLength32
 
 <summary>
 
-SFUCreateResponse object {created, modified, name, 2 more }
+SFUCreateResponse object { created, modified, name, 2 more }
 
 </summary>
 
@@ -186,7 +186,7 @@ minLength32
 
 <summary>
 
-SFUUpdateResponse object {created, modified, name, uid }
+SFUUpdateResponse object { created, modified, name, uid }
 
 </summary>
 
@@ -230,7 +230,7 @@ minLength32
 
 <summary>
 
-SFUDeleteResponse object {created, modified, name, uid }
+SFUDeleteResponse object { created, modified, name, uid }
 
 </summary>
 
@@ -298,7 +298,7 @@ DELETE/accounts/{account\_id}/calls/turn\_keys/{key\_id}
 
 <summary>
 
-TURNListResponse object {created, modified, name, uid }
+TURNListResponse object { created, modified, name, uid }
 
 </summary>
 
@@ -342,7 +342,7 @@ minLength32
 
 <summary>
 
-TURNGetResponse object {created, modified, name, uid }
+TURNGetResponse object { created, modified, name, uid }
 
 </summary>
 
@@ -386,7 +386,7 @@ minLength32
 
 <summary>
 
-TURNCreateResponse object {created, modified, name, 2 more }
+TURNCreateResponse object { created, modified, name, 2 more }
 
 </summary>
 
@@ -440,7 +440,7 @@ minLength32
 
 <summary>
 
-TURNUpdateResponse object {created, modified, name, uid }
+TURNUpdateResponse object { created, modified, name, uid }
 
 </summary>
 
@@ -484,7 +484,7 @@ minLength32
 
 <summary>
 
-TURNDeleteResponse object {created, modified, name, uid }
+TURNDeleteResponse object { created, modified, name, uid }
 
 </summary>
 

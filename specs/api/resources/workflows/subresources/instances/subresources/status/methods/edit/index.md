@@ -58,7 +58,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Workers Scripts Write`
+`Workers Editor``Workers Admin``Individual Workers Editor``Individual Workers Admin``Workers Scripts Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -88,7 +88,7 @@ minLength1
 
 <summary>
 
-body: object {status } or object {status } or object {status, rollback } or object {status, from }
+body: object { status } or object { status } or object { status, rollback } or object { status, from }
 
 </summary>
 
@@ -98,7 +98,7 @@ One of the following:
 
 <summary>
 
-Status object {status }
+Status object { status }
 
 </summary>
 
@@ -114,7 +114,7 @@ status: "pause"
 
 <summary>
 
-Status object {status }
+Status object { status }
 
 </summary>
 
@@ -130,7 +130,7 @@ status: "resume"
 
 <summary>
 
-object {status, rollback }
+object { status, rollback }
 
 </summary>
 
@@ -152,7 +152,7 @@ Run rollback before terminating.
 
 <summary>
 
-object {status, from }
+object { status, from }
 
 </summary>
 
@@ -164,7 +164,7 @@ status: "restart"
 
 <summary>
 
-from: optional object {name, count, type }
+from: optional object { name, count, type }
 
 Step to restart from.
 
@@ -192,7 +192,7 @@ minimum0
 
 <summary>
 
-type: optional "do"or "sleep"or "waitForEvent"
+type: optional "do" or "sleep" or "waitForEvent"
 
 </summary>
 
@@ -232,7 +232,7 @@ One of the following:
 
 <summary>
 
-errors: array of object {code, message }
+errors: array of object { code, message }
 
 </summary>
 
@@ -252,7 +252,7 @@ message: string
 
 <summary>
 
-messages: array of object {code, message }
+messages: array of object { code, message }
 
 </summary>
 
@@ -272,7 +272,7 @@ message: string
 
 <summary>
 
-result: object {status, timestamp }
+result: object { status, timestamp }
 
 </summary>
 
@@ -280,7 +280,7 @@ result: object {status, timestamp }
 
 <summary>
 
-status: "queued"or "running"or "paused"or 6 more
+status: "queued" or "running" or "paused" or 6 more
 
 </summary>
 
@@ -346,7 +346,7 @@ success: true
 
 <summary>
 
-result\_info: optional object {count, per\_page, total\_count, 3 more }
+result\_info: optional object { count, per\_page, total\_count, 3 more }
 
 </summary>
 

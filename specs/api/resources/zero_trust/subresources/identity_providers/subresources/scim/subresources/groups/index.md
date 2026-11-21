@@ -40,7 +40,7 @@ DELETE/accounts/{account\_id}/access/identity\_providers/{identity\_provider\_id
 
 <summary>
 
-GroupGetResponse object {id, displayName, externalId, 3 more }
+GroupGetResponse object { id, displayName, externalId, 3 more }
 
 </summary>
 
@@ -66,7 +66,7 @@ The IdP-generated Id of the SCIM resource.
 
 <summary>
 
-members: optional array of object {value, "$ref", display, type }
+members: optional array of object { value, "$ref", display, type }
 
 The direct members of the SCIM Group resource.
 
@@ -96,7 +96,7 @@ The display name of the member resource.
 
 <summary>
 
-type: optional "User"or "Group"
+type: optional "User" or "Group"
 
 The SCIM resource type of the member.
 
@@ -124,7 +124,7 @@ One of the following:
 
 <summary>
 
-meta: optional object {created, lastModified }
+meta: optional object { created, lastModified }
 
 The metadata of the SCIM resource.
 

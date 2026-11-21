@@ -26,15 +26,33 @@ Lists network monitoring rules for account.
 
 ##### Security
 
-API Email + API Key
+<details>
+
+<summary>API Token</summary>
+
+
+
+The preferred authorization scheme for interacting with the Cloudflare API. <a href="https://developers.cloudflare.com/fundamentals/api/get-started/create-token/">Create a token</a>.
+
+**Example:**<code>Authorization: Bearer Sn3lZJTBX6kkg7OdcBUAxOO963GEIyGQqnFTOFYY</code>
+
+</details>
+
+<details>
+
+<summary>API Email + API Key</summary>
+
+
 
 The previous authorization scheme for interacting with the Cloudflare API, used in conjunction with a Global API key.
 
-**Example:**`X-Auth-Email: user@example.com`
+**Example:**<code>X-Auth-Email: user@example.com</code>
 
 The previous authorization scheme for interacting with the Cloudflare API. When possible, use API tokens instead of Global API keys.
 
-**Example:**`X-Auth-Key: 144c9defac04969c7bfad8efaa8ea194`
+**Example:**<code>X-Auth-Key: 144c9defac04969c7bfad8efaa8ea194</code>
+
+</details>
 
 ##### Accepted Permissions (at least one required)
 
@@ -74,7 +92,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -116,7 +134,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -166,7 +184,7 @@ prefixes: array of string
 
 <summary>
 
-type: "threshold"or "zscore"or "advanced\_ddos"
+type: "threshold" or "zscore" or "advanced\_ddos"
 
 MNM rule type.
 
@@ -202,7 +220,7 @@ minimum1
 
 <summary>
 
-duration: optional "1m"or "5m"or "10m"or 5 more
+duration: optional "1m" or "5m" or "10m" or 5 more
 
 The amount of time that the rule threshold must be exceeded to send an alert notification. The final value must be equivalent to one of the following 8 values \[“1m”,“5m”,“10m”,“15m”,“20m”,“30m”,“45m”,“60m”].
 
@@ -258,7 +276,7 @@ minimum1
 
 <summary>
 
-prefix\_match: optional "exact"or "subnet"or "supernet"
+prefix\_match: optional "exact" or "subnet" or "supernet"
 
 Prefix match type to be applied for a prefix auto advertisement when using an advanced\_ddos rule.
 
@@ -286,7 +304,7 @@ One of the following:
 
 <summary>
 
-zscore\_sensitivity: optional "low"or "medium"or "high"
+zscore\_sensitivity: optional "low" or "medium" or "high"
 
 Level of sensitivity set for zscore rules.
 
@@ -314,7 +332,7 @@ One of the following:
 
 <summary>
 
-zscore\_target: optional "bits"or "packets"
+zscore\_target: optional "bits" or "packets"
 
 Target of the zscore rule analysis.
 
@@ -348,7 +366,7 @@ Whether the API call was successful
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object { count, page, per\_page, total\_count }
 
 </summary>
 
@@ -388,8 +406,7 @@ HTTPTypeScriptPythonGoTerraform
 
 ```
 curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/mnm/rules \
-    -H "X-Auth-Email: $CLOUDFLARE_EMAIL" \
-    -H "X-Auth-Key: $CLOUDFLARE_API_KEY"
+    -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN"
 ```
 
 200 example

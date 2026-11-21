@@ -36,7 +36,7 @@ POST/accounts/{account\_id}/devices/resilience/disconnect
 
 <summary>
 
-GlobalWARPOverrideGetResponse object {disconnect, timestamp }
+GlobalWARPOverrideGetResponse object { disconnect, timestamp }
 
 </summary>
 
@@ -62,7 +62,7 @@ formatdate-time
 
 <summary>
 
-GlobalWARPOverrideCreateResponse object {disconnect, timestamp }
+GlobalWARPOverrideCreateResponse object { disconnect, timestamp }
 
 </summary>
 

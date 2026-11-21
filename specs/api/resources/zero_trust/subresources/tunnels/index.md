@@ -28,7 +28,7 @@ GET/accounts/{account\_id}/tunnels
 
 <summary>
 
-TunnelListResponse = <a href="https://developers.cloudflare.com/api/resources/$shared#(resource)%20%24shared%20%3E%20(model)%20cloudflare_tunnel%20%3E%20(schema)">CloudflareTunnel</a> { id, account\_tag, config\_src, 10 more } or object {id, account\_tag, connections, 8 more }
+TunnelListResponse = <a href="https://developers.cloudflare.com/api/resources/$shared#(resource)%20%24shared%20%3E%20(model)%20cloudflare_tunnel%20%3E%20(schema)">CloudflareTunnel</a> { id, account\_tag, config\_src, 10 more } or object { id, account\_tag, connections, 8 more }
 
 A Cloudflare Tunnel that connects your origin to Cloudflare’s edge.
 
@@ -40,7 +40,7 @@ One of the following:
 
 <summary>
 
-CloudflareTunnel object {id, account\_tag, config\_src, 10 more }
+CloudflareTunnel object { id, account\_tag, config\_src, 10 more }
 
 A Cloudflare Tunnel that connects your origin to Cloudflare’s edge.
 
@@ -68,7 +68,7 @@ maxLength32
 
 <summary>
 
-config\_src: optional "local"or "cloudflare"
+config\_src: optional "local" or "cloudflare"
 
 Indicates if this is a locally or remotely configured tunnel. If <code>local</code>, manage the tunnel using a YAML file on the origin machine. If <code>cloudflare</code>, manage the tunnel on the Zero Trust dashboard.
 
@@ -92,7 +92,7 @@ One of the following:
 
 <summary>
 
-Deprecatedconnections: optional array of object {id, client\_id, client\_version, 5 more }
+Deprecatedconnections: optional array of object { id, client\_id, client\_version, 5 more }
 
 This field will start returning an empty array. To fetch the connections of a given tunnel, please use the dedicated endpoint <code>/accounts/{account_id}/{tunnel_type}/{tunnel_id}/connections</code>
 
@@ -224,7 +224,7 @@ If <code>true</code>, the tunnel can be configured remotely from the Zero Trust 
 
 <summary>
 
-status: optional "inactive"or "degraded"or "healthy"or "down"
+status: optional "inactive" or "degraded" or "healthy" or "down"
 
 The status of the tunnel. Valid values are <code>inactive</code> (tunnel has never been run), <code>degraded</code> (tunnel is active and able to serve traffic but in an unhealthy state), <code>healthy</code> (tunnel is active and able to serve traffic), or <code>down</code> (tunnel can not serve traffic as it has no connections to the Cloudflare Edge).
 
@@ -256,7 +256,7 @@ One of the following:
 
 <summary>
 
-tun\_type: optional "cfd\_tunnel"or "warp\_connector"or "warp"or 4 more
+tun\_type: optional "cfd\_tunnel" or "warp\_connector" or "warp" or 4 more
 
 The type of tunnel.
 
@@ -304,7 +304,7 @@ One of the following:
 
 <summary>
 
-TunnelWARPConnectorTunnel object {id, account\_tag, connections, 8 more }
+TunnelWARPConnectorTunnel object { id, account\_tag, connections, 8 more }
 
 A Mesh node that connects your origin to Cloudflare’s edge.
 
@@ -332,7 +332,7 @@ maxLength32
 
 <summary>
 
-Deprecatedconnections: optional array of object {id, client\_id, client\_version, 5 more }
+Deprecatedconnections: optional array of object { id, client\_id, client\_version, 5 more }
 
 This field will start returning an empty array. To fetch the connections of a given tunnel, please use the dedicated endpoint <code>/accounts/{account_id}/{tunnel_type}/{tunnel_id}/connections</code>
 
@@ -456,7 +456,7 @@ A user-friendly name for a tunnel.
 
 <summary>
 
-status: optional "inactive"or "degraded"or "healthy"or "down"
+status: optional "inactive" or "degraded" or "healthy" or "down"
 
 The status of the tunnel. Valid values are <code>inactive</code> (tunnel has never been run), <code>degraded</code> (tunnel is active and able to serve traffic but in an unhealthy state), <code>healthy</code> (tunnel is active and able to serve traffic), or <code>down</code> (tunnel can not serve traffic as it has no connections to the Cloudflare Edge).
 
@@ -488,7 +488,7 @@ One of the following:
 
 <summary>
 
-tun\_type: optional "cfd\_tunnel"or "warp\_connector"or "warp"or 4 more
+tun\_type: optional "cfd\_tunnel" or "warp\_connector" or "warp" or 4 more
 
 The type of tunnel.
 
@@ -578,7 +578,7 @@ PUT/accounts/{account\_id}/cfd\_tunnel/{tunnel\_id}/configurations
 
 <summary>
 
-ConfigurationGetResponse object {account\_id, config, created\_at, 3 more }
+ConfigurationGetResponse object { account\_id, config, created\_at, 3 more }
 
 Cloudflare Tunnel configuration
 
@@ -596,7 +596,7 @@ maxLength32
 
 <summary>
 
-config: optional object {ingress, originRequest }
+config: optional object { ingress, originRequest }
 
 The tunnel configuration and ingress rules.
 
@@ -606,7 +606,7 @@ The tunnel configuration and ingress rules.
 
 <summary>
 
-ingress: optional array of object {hostname, service, originRequest, path }
+ingress: optional array of object { hostname, service, originRequest, path }
 
 List of public hostname definitions. At least one ingress rule needs to be defined for the tunnel.
 
@@ -628,7 +628,7 @@ Protocol and address of destination server. Supported protocols: http://, https:
 
 <summary>
 
-originRequest: optional object {access, caPool, connectTimeout, 12 more }
+originRequest: optional object { access, caPool, connectTimeout, 12 more }
 
 Configuration parameters for the public hostname specific connection settings between cloudflared and origin server.
 
@@ -638,7 +638,7 @@ Configuration parameters for the public hostname specific connection settings be
 
 <summary>
 
-access: optional object {audTag, teamName, required }
+access: optional object { audTag, teamName, required }
 
 For all L7 requests to this hostname, cloudflared will validate each request’s Cf-Access-Jwt-Assertion request header.
 
@@ -766,7 +766,7 @@ Requests with this path route to this public hostname.
 
 <summary>
 
-originRequest: optional object {access, caPool, connectTimeout, 12 more }
+originRequest: optional object { access, caPool, connectTimeout, 12 more }
 
 Configuration parameters for the public hostname specific connection settings between cloudflared and origin server.
 
@@ -776,7 +776,7 @@ Configuration parameters for the public hostname specific connection settings be
 
 <summary>
 
-access: optional object {audTag, teamName, required }
+access: optional object { audTag, teamName, required }
 
 For all L7 requests to this hostname, cloudflared will validate each request’s Cf-Access-Jwt-Assertion request header.
 
@@ -904,7 +904,7 @@ formatdate-time
 
 <summary>
 
-source: optional "local"or "cloudflare"
+source: optional "local" or "cloudflare"
 
 Indicates if this is a locally or remotely configured tunnel. If <code>local</code>, manage the tunnel using a YAML file on the origin machine. If <code>cloudflare</code>, manage the tunnel’s configuration on the Zero Trust dashboard.
 
@@ -948,7 +948,7 @@ The version of the Tunnel Configuration.
 
 <summary>
 
-ConfigurationDeleteResponse = object {account\_id, config, created\_at, 3 more } or unknown
+ConfigurationDeleteResponse = object { account\_id, config, created\_at, 3 more } or unknown
 
 Cloudflare Tunnel configuration
 
@@ -960,7 +960,7 @@ One of the following:
 
 <summary>
 
-TunnelConfiguration object {account\_id, config, created\_at, 3 more }
+TunnelConfiguration object { account\_id, config, created\_at, 3 more }
 
 Cloudflare Tunnel configuration
 
@@ -978,7 +978,7 @@ maxLength32
 
 <summary>
 
-config: optional object {ingress, originRequest }
+config: optional object { ingress, originRequest }
 
 The tunnel configuration and ingress rules.
 
@@ -988,7 +988,7 @@ The tunnel configuration and ingress rules.
 
 <summary>
 
-ingress: optional array of object {hostname, service, originRequest, path }
+ingress: optional array of object { hostname, service, originRequest, path }
 
 List of public hostname definitions. At least one ingress rule needs to be defined for the tunnel.
 
@@ -1010,7 +1010,7 @@ Protocol and address of destination server. Supported protocols: http://, https:
 
 <summary>
 
-originRequest: optional object {access, caPool, connectTimeout, 12 more }
+originRequest: optional object { access, caPool, connectTimeout, 12 more }
 
 Configuration parameters for the public hostname specific connection settings between cloudflared and origin server.
 
@@ -1020,7 +1020,7 @@ Configuration parameters for the public hostname specific connection settings be
 
 <summary>
 
-access: optional object {audTag, teamName, required }
+access: optional object { audTag, teamName, required }
 
 For all L7 requests to this hostname, cloudflared will validate each request’s Cf-Access-Jwt-Assertion request header.
 
@@ -1148,7 +1148,7 @@ Requests with this path route to this public hostname.
 
 <summary>
 
-originRequest: optional object {access, caPool, connectTimeout, 12 more }
+originRequest: optional object { access, caPool, connectTimeout, 12 more }
 
 Configuration parameters for the public hostname specific connection settings between cloudflared and origin server.
 
@@ -1158,7 +1158,7 @@ Configuration parameters for the public hostname specific connection settings be
 
 <summary>
 
-access: optional object {audTag, teamName, required }
+access: optional object { audTag, teamName, required }
 
 For all L7 requests to this hostname, cloudflared will validate each request’s Cf-Access-Jwt-Assertion request header.
 
@@ -1286,7 +1286,7 @@ formatdate-time
 
 <summary>
 
-source: optional "local"or "cloudflare"
+source: optional "local" or "cloudflare"
 
 Indicates if this is a locally or remotely configured tunnel. If <code>local</code>, manage the tunnel using a YAML file on the origin machine. If <code>cloudflare</code>, manage the tunnel’s configuration on the Zero Trust dashboard.
 
@@ -1338,7 +1338,7 @@ unknown
 
 <summary>
 
-ConfigurationUpdateResponse object {account\_id, config, created\_at, 3 more }
+ConfigurationUpdateResponse object { account\_id, config, created\_at, 3 more }
 
 Cloudflare Tunnel configuration
 
@@ -1356,7 +1356,7 @@ maxLength32
 
 <summary>
 
-config: optional object {ingress, originRequest }
+config: optional object { ingress, originRequest }
 
 The tunnel configuration and ingress rules.
 
@@ -1366,7 +1366,7 @@ The tunnel configuration and ingress rules.
 
 <summary>
 
-ingress: optional array of object {hostname, service, originRequest, path }
+ingress: optional array of object { hostname, service, originRequest, path }
 
 List of public hostname definitions. At least one ingress rule needs to be defined for the tunnel.
 
@@ -1388,7 +1388,7 @@ Protocol and address of destination server. Supported protocols: http://, https:
 
 <summary>
 
-originRequest: optional object {access, caPool, connectTimeout, 12 more }
+originRequest: optional object { access, caPool, connectTimeout, 12 more }
 
 Configuration parameters for the public hostname specific connection settings between cloudflared and origin server.
 
@@ -1398,7 +1398,7 @@ Configuration parameters for the public hostname specific connection settings be
 
 <summary>
 
-access: optional object {audTag, teamName, required }
+access: optional object { audTag, teamName, required }
 
 For all L7 requests to this hostname, cloudflared will validate each request’s Cf-Access-Jwt-Assertion request header.
 
@@ -1526,7 +1526,7 @@ Requests with this path route to this public hostname.
 
 <summary>
 
-originRequest: optional object {access, caPool, connectTimeout, 12 more }
+originRequest: optional object { access, caPool, connectTimeout, 12 more }
 
 Configuration parameters for the public hostname specific connection settings between cloudflared and origin server.
 
@@ -1536,7 +1536,7 @@ Configuration parameters for the public hostname specific connection settings be
 
 <summary>
 
-access: optional object {audTag, teamName, required }
+access: optional object { audTag, teamName, required }
 
 For all L7 requests to this hostname, cloudflared will validate each request’s Cf-Access-Jwt-Assertion request header.
 
@@ -1664,7 +1664,7 @@ formatdate-time
 
 <summary>
 
-source: optional "local"or "cloudflare"
+source: optional "local" or "cloudflare"
 
 Indicates if this is a locally or remotely configured tunnel. If <code>local</code>, manage the tunnel using a YAML file on the origin machine. If <code>cloudflare</code>, manage the tunnel’s configuration on the Zero Trust dashboard.
 
@@ -1720,7 +1720,7 @@ DELETE/accounts/{account\_id}/cfd\_tunnel/{tunnel\_id}/connections
 
 <summary>
 
-Client object {id, arch, config\_version, 4 more }
+Client object { id, arch, config\_version, 4 more }
 
 A client (typically cloudflared) that maintains connections to a Cloudflare data center.
 
@@ -1752,7 +1752,7 @@ The version of the remote tunnel configuration. Used internally to sync cloudfla
 
 <summary>
 
-conns: optional array of object {id, client\_id, client\_version, 5 more }
+conns: optional array of object { id, client\_id, client\_version, 5 more }
 
 The Cloudflare Tunnel connections between your origin and Cloudflare’s edge.
 
@@ -1916,7 +1916,7 @@ DELETE/accounts/{account\_id}/warp\_connector/{tunnel\_id}
 
 <summary>
 
-WARPConnectorListResponse object {id, account\_tag, connections, 8 more }
+WARPConnectorListResponse object { id, account\_tag, connections, 8 more }
 
 A Mesh node that connects your origin to Cloudflare’s edge.
 
@@ -1944,7 +1944,7 @@ maxLength32
 
 <summary>
 
-Deprecatedconnections: optional array of object {id, client\_id, client\_version, 5 more }
+Deprecatedconnections: optional array of object { id, client\_id, client\_version, 5 more }
 
 This field will start returning an empty array. To fetch the connections of a given tunnel, please use the dedicated endpoint <code>/accounts/{account_id}/{tunnel_type}/{tunnel_id}/connections</code>
 
@@ -2068,7 +2068,7 @@ A user-friendly name for a tunnel.
 
 <summary>
 
-status: optional "inactive"or "degraded"or "healthy"or "down"
+status: optional "inactive" or "degraded" or "healthy" or "down"
 
 The status of the tunnel. Valid values are <code>inactive</code> (tunnel has never been run), <code>degraded</code> (tunnel is active and able to serve traffic but in an unhealthy state), <code>healthy</code> (tunnel is active and able to serve traffic), or <code>down</code> (tunnel can not serve traffic as it has no connections to the Cloudflare Edge).
 
@@ -2100,7 +2100,7 @@ One of the following:
 
 <summary>
 
-tun\_type: optional "cfd\_tunnel"or "warp\_connector"or "warp"or 4 more
+tun\_type: optional "cfd\_tunnel" or "warp\_connector" or "warp" or 4 more
 
 The type of tunnel.
 
@@ -2148,7 +2148,7 @@ One of the following:
 
 <summary>
 
-WARPConnectorGetResponse object {id, account\_tag, connections, 8 more }
+WARPConnectorGetResponse object { id, account\_tag, connections, 8 more }
 
 A Mesh node that connects your origin to Cloudflare’s edge.
 
@@ -2176,7 +2176,7 @@ maxLength32
 
 <summary>
 
-Deprecatedconnections: optional array of object {id, client\_id, client\_version, 5 more }
+Deprecatedconnections: optional array of object { id, client\_id, client\_version, 5 more }
 
 This field will start returning an empty array. To fetch the connections of a given tunnel, please use the dedicated endpoint <code>/accounts/{account_id}/{tunnel_type}/{tunnel_id}/connections</code>
 
@@ -2300,7 +2300,7 @@ A user-friendly name for a tunnel.
 
 <summary>
 
-status: optional "inactive"or "degraded"or "healthy"or "down"
+status: optional "inactive" or "degraded" or "healthy" or "down"
 
 The status of the tunnel. Valid values are <code>inactive</code> (tunnel has never been run), <code>degraded</code> (tunnel is active and able to serve traffic but in an unhealthy state), <code>healthy</code> (tunnel is active and able to serve traffic), or <code>down</code> (tunnel can not serve traffic as it has no connections to the Cloudflare Edge).
 
@@ -2332,7 +2332,7 @@ One of the following:
 
 <summary>
 
-tun\_type: optional "cfd\_tunnel"or "warp\_connector"or "warp"or 4 more
+tun\_type: optional "cfd\_tunnel" or "warp\_connector" or "warp" or 4 more
 
 The type of tunnel.
 
@@ -2380,7 +2380,7 @@ One of the following:
 
 <summary>
 
-WARPConnectorCreateResponse object {id, account\_tag, connections, 8 more }
+WARPConnectorCreateResponse object { id, account\_tag, connections, 8 more }
 
 A Mesh node that connects your origin to Cloudflare’s edge.
 
@@ -2408,7 +2408,7 @@ maxLength32
 
 <summary>
 
-Deprecatedconnections: optional array of object {id, client\_id, client\_version, 5 more }
+Deprecatedconnections: optional array of object { id, client\_id, client\_version, 5 more }
 
 This field will start returning an empty array. To fetch the connections of a given tunnel, please use the dedicated endpoint <code>/accounts/{account_id}/{tunnel_type}/{tunnel_id}/connections</code>
 
@@ -2532,7 +2532,7 @@ A user-friendly name for a tunnel.
 
 <summary>
 
-status: optional "inactive"or "degraded"or "healthy"or "down"
+status: optional "inactive" or "degraded" or "healthy" or "down"
 
 The status of the tunnel. Valid values are <code>inactive</code> (tunnel has never been run), <code>degraded</code> (tunnel is active and able to serve traffic but in an unhealthy state), <code>healthy</code> (tunnel is active and able to serve traffic), or <code>down</code> (tunnel can not serve traffic as it has no connections to the Cloudflare Edge).
 
@@ -2564,7 +2564,7 @@ One of the following:
 
 <summary>
 
-tun\_type: optional "cfd\_tunnel"or "warp\_connector"or "warp"or 4 more
+tun\_type: optional "cfd\_tunnel" or "warp\_connector" or "warp" or 4 more
 
 The type of tunnel.
 
@@ -2612,7 +2612,7 @@ One of the following:
 
 <summary>
 
-WARPConnectorEditResponse object {id, account\_tag, connections, 8 more }
+WARPConnectorEditResponse object { id, account\_tag, connections, 8 more }
 
 A Mesh node that connects your origin to Cloudflare’s edge.
 
@@ -2640,7 +2640,7 @@ maxLength32
 
 <summary>
 
-Deprecatedconnections: optional array of object {id, client\_id, client\_version, 5 more }
+Deprecatedconnections: optional array of object { id, client\_id, client\_version, 5 more }
 
 This field will start returning an empty array. To fetch the connections of a given tunnel, please use the dedicated endpoint <code>/accounts/{account_id}/{tunnel_type}/{tunnel_id}/connections</code>
 
@@ -2764,7 +2764,7 @@ A user-friendly name for a tunnel.
 
 <summary>
 
-status: optional "inactive"or "degraded"or "healthy"or "down"
+status: optional "inactive" or "degraded" or "healthy" or "down"
 
 The status of the tunnel. Valid values are <code>inactive</code> (tunnel has never been run), <code>degraded</code> (tunnel is active and able to serve traffic but in an unhealthy state), <code>healthy</code> (tunnel is active and able to serve traffic), or <code>down</code> (tunnel can not serve traffic as it has no connections to the Cloudflare Edge).
 
@@ -2796,7 +2796,7 @@ One of the following:
 
 <summary>
 
-tun\_type: optional "cfd\_tunnel"or "warp\_connector"or "warp"or 4 more
+tun\_type: optional "cfd\_tunnel" or "warp\_connector" or "warp" or 4 more
 
 The type of tunnel.
 
@@ -2844,7 +2844,7 @@ One of the following:
 
 <summary>
 
-WARPConnectorDeleteResponse object {id, account\_tag, connections, 8 more }
+WARPConnectorDeleteResponse object { id, account\_tag, connections, 8 more }
 
 A Mesh node that connects your origin to Cloudflare’s edge.
 
@@ -2872,7 +2872,7 @@ maxLength32
 
 <summary>
 
-Deprecatedconnections: optional array of object {id, client\_id, client\_version, 5 more }
+Deprecatedconnections: optional array of object { id, client\_id, client\_version, 5 more }
 
 This field will start returning an empty array. To fetch the connections of a given tunnel, please use the dedicated endpoint <code>/accounts/{account_id}/{tunnel_type}/{tunnel_id}/connections</code>
 
@@ -2996,7 +2996,7 @@ A user-friendly name for a tunnel.
 
 <summary>
 
-status: optional "inactive"or "degraded"or "healthy"or "down"
+status: optional "inactive" or "degraded" or "healthy" or "down"
 
 The status of the tunnel. Valid values are <code>inactive</code> (tunnel has never been run), <code>degraded</code> (tunnel is active and able to serve traffic but in an unhealthy state), <code>healthy</code> (tunnel is active and able to serve traffic), or <code>down</code> (tunnel can not serve traffic as it has no connections to the Cloudflare Edge).
 
@@ -3028,7 +3028,7 @@ One of the following:
 
 <summary>
 
-tun\_type: optional "cfd\_tunnel"or "warp\_connector"or "warp"or 4 more
+tun\_type: optional "cfd\_tunnel" or "warp\_connector" or "warp" or 4 more
 
 The type of tunnel.
 
@@ -3098,7 +3098,7 @@ GET/accounts/{account\_id}/warp\_connector/{tunnel\_id}/connections
 
 <summary>
 
-ConnectionGetResponse object {id, arch, conns, 4 more }
+ConnectionGetResponse object { id, arch, conns, 4 more }
 
 A Mesh node connector that maintains a connection to a Cloudflare data center.
 
@@ -3124,7 +3124,7 @@ The cloudflared OS architecture used to establish this connection.
 
 <summary>
 
-conns: optional array of object {id, client\_id, client\_version, 3 more }
+conns: optional array of object { id, client\_id, client\_version, 3 more }
 
 The Mesh node connections between your origin and Cloudflare’s edge.
 
@@ -3190,7 +3190,7 @@ Features enabled for the Cloudflare Tunnel.
 
 <summary>
 
-ha\_status: optional "offline"or "passive"or "active"
+ha\_status: optional "offline" or "passive" or "active"
 
 The HA status of a Mesh node connector.
 
@@ -3244,7 +3244,7 @@ GET/accounts/{account\_id}/warp\_connector/{tunnel\_id}/connectors/{connector\_i
 
 <summary>
 
-ConnectorGetResponse object {id, arch, conns, 4 more }
+ConnectorGetResponse object { id, arch, conns, 4 more }
 
 A Mesh node connector that maintains a connection to a Cloudflare data center.
 
@@ -3270,7 +3270,7 @@ The cloudflared OS architecture used to establish this connection.
 
 <summary>
 
-conns: optional array of object {id, client\_id, client\_version, 3 more }
+conns: optional array of object { id, client\_id, client\_version, 3 more }
 
 The Mesh node connections between your origin and Cloudflare’s edge.
 
@@ -3336,7 +3336,7 @@ Features enabled for the Cloudflare Tunnel.
 
 <summary>
 
-ha\_status: optional "offline"or "passive"or "active"
+ha\_status: optional "offline" or "passive" or "active"
 
 The HA status of a Mesh node connector.
 
@@ -3406,7 +3406,7 @@ PUT/accounts/{account\_id}/warp\_connector/{tunnel\_id}/configurations
 
 <summary>
 
-ConfigurationGetResponse object {configuration\_version, created\_at, ha\_mode, 3 more }
+ConfigurationGetResponse object { configuration\_version, created\_at, ha\_mode, 3 more }
 
 </summary>
 
@@ -3428,7 +3428,7 @@ formatdate-time
 
 <summary>
 
-ha\_mode: "none"or "disabled"or "aws"or "local"
+ha\_mode: "none" or "disabled" or "aws" or "local"
 
 High-availability mode for the Mesh node. <code>none</code> means HA is enabled but no provider is configured yet (newly created nodes default to this). <code>disabled</code> means HA is explicitly turned off. <code>aws</code> uses AWS ENI move for failover. <code>local</code> uses virtual IPs (VIPs) on the local interface.
 
@@ -3470,7 +3470,7 @@ maxLength36
 
 <summary>
 
-config: optional object {fnr\_id } or object {vips, vips\_previous }
+config: optional object { fnr\_id } or object { vips, vips\_previous }
 
 Provider-specific configuration. Present for <code>aws</code> and <code>local</code> modes.
 
@@ -3482,7 +3482,7 @@ One of the following:
 
 <summary>
 
-TunnelMeshAwsConfig object {fnr\_id }
+TunnelMeshAwsConfig object { fnr\_id }
 
 </summary>
 
@@ -3500,7 +3500,7 @@ Floating Network Resource ID — the secondary ENI that is moved between nodes o
 
 <summary>
 
-TunnelMeshLocalConfig object {vips, vips\_previous }
+TunnelMeshLocalConfig object { vips, vips\_previous }
 
 </summary>
 
@@ -3508,7 +3508,7 @@ TunnelMeshLocalConfig object {vips, vips\_previous }
 
 <summary>
 
-vips: array of object {address }
+vips: array of object { address }
 
 VIPs to assign on the CloudflareWARP interface.
 
@@ -3528,7 +3528,7 @@ Virtual IP address (IPv4 or IPv6).
 
 <summary>
 
-vips\_previous: optional array of object {address }
+vips\_previous: optional array of object { address }
 
 VIPs to clean up on demotion or version drift.
 
@@ -3568,7 +3568,7 @@ formatdate-time
 
 <summary>
 
-ConfigurationUpdateResponse object {configuration\_version, created\_at, ha\_mode, 3 more }
+ConfigurationUpdateResponse object { configuration\_version, created\_at, ha\_mode, 3 more }
 
 </summary>
 
@@ -3590,7 +3590,7 @@ formatdate-time
 
 <summary>
 
-ha\_mode: "none"or "disabled"or "aws"or "local"
+ha\_mode: "none" or "disabled" or "aws" or "local"
 
 High-availability mode for the Mesh node. <code>none</code> means HA is enabled but no provider is configured yet (newly created nodes default to this). <code>disabled</code> means HA is explicitly turned off. <code>aws</code> uses AWS ENI move for failover. <code>local</code> uses virtual IPs (VIPs) on the local interface.
 
@@ -3632,7 +3632,7 @@ maxLength36
 
 <summary>
 
-config: optional object {fnr\_id } or object {vips, vips\_previous }
+config: optional object { fnr\_id } or object { vips, vips\_previous }
 
 Provider-specific configuration. Present for <code>aws</code> and <code>local</code> modes.
 
@@ -3644,7 +3644,7 @@ One of the following:
 
 <summary>
 
-TunnelMeshAwsConfig object {fnr\_id }
+TunnelMeshAwsConfig object { fnr\_id }
 
 </summary>
 
@@ -3662,7 +3662,7 @@ Floating Network Resource ID — the secondary ENI that is moved between nodes o
 
 <summary>
 
-TunnelMeshLocalConfig object {vips, vips\_previous }
+TunnelMeshLocalConfig object { vips, vips\_previous }
 
 </summary>
 
@@ -3670,7 +3670,7 @@ TunnelMeshLocalConfig object {vips, vips\_previous }
 
 <summary>
 
-vips: array of object {address }
+vips: array of object { address }
 
 VIPs to assign on the CloudflareWARP interface.
 
@@ -3690,7 +3690,7 @@ Virtual IP address (IPv4 or IPv6).
 
 <summary>
 
-vips\_previous: optional array of object {address }
+vips\_previous: optional array of object { address }
 
 VIPs to clean up on demotion or version drift.
 

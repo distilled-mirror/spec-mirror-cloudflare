@@ -84,7 +84,7 @@ minLength3
 
 <summary>
 
-compaction: optional object {state, target\_size\_mb }
+compaction: optional object { state, target\_size\_mb }
 
 Updates compaction configuration (all fields optional).
 
@@ -94,7 +94,7 @@ Updates compaction configuration (all fields optional).
 
 <summary>
 
-state: optional "enabled"or "disabled"
+state: optional "enabled" or "disabled"
 
 Specifies the state of maintenance operations.
 
@@ -118,7 +118,7 @@ One of the following:
 
 <summary>
 
-target\_size\_mb: optional "64"or "128"or "256"or "512"
+target\_size\_mb: optional "64" or "128" or "256" or "512"
 
 Sets the target file size for compaction in megabytes. Defaults to “128”.
 
@@ -154,7 +154,7 @@ One of the following:
 
 <summary>
 
-snapshot\_expiration: optional object {max\_snapshot\_age, min\_snapshots\_to\_keep, state }
+snapshot\_expiration: optional object { max\_snapshot\_age, min\_snapshots\_to\_keep, state }
 
 Updates snapshot expiration configuration (all fields optional).
 
@@ -180,7 +180,7 @@ minimum1
 
 <summary>
 
-state: optional "enabled"or "disabled"
+state: optional "enabled" or "disabled"
 
 Specifies the state of maintenance operations.
 
@@ -210,7 +210,7 @@ One of the following:
 
 <summary>
 
-errors: array of object {code, message }
+errors: array of object { code, message }
 
 Contains errors if the API call was unsuccessful.
 
@@ -236,7 +236,7 @@ Describes the error.
 
 <summary>
 
-messages: array of object {code, message }
+messages: array of object { code, message }
 
 Contains informational messages.
 
@@ -268,7 +268,7 @@ Indicates whether the API call was successful.
 
 <summary>
 
-result: optional object {compaction, interval, snapshot\_expiration }
+result: optional object { compaction, interval, snapshot\_expiration }
 
 Configures maintenance for the catalog.
 
@@ -278,7 +278,7 @@ Configures maintenance for the catalog.
 
 <summary>
 
-compaction: optional object {state, target\_size\_mb }
+compaction: optional object { state, target\_size\_mb }
 
 Configures compaction for catalog maintenance.
 
@@ -288,7 +288,7 @@ Configures compaction for catalog maintenance.
 
 <summary>
 
-state: "enabled"or "disabled"
+state: "enabled" or "disabled"
 
 Specifies the state of maintenance operations.
 
@@ -312,7 +312,7 @@ One of the following:
 
 <summary>
 
-target\_size\_mb: "64"or "128"or "256"or "512"
+target\_size\_mb: "64" or "128" or "256" or "512"
 
 Sets the target file size for compaction in megabytes. Defaults to “128”.
 
@@ -354,7 +354,7 @@ Scheduling interval between normal table maintenance runs.
 
 <summary>
 
-snapshot\_expiration: optional object {max\_snapshot\_age, min\_snapshots\_to\_keep, state }
+snapshot\_expiration: optional object { max\_snapshot\_age, min\_snapshots\_to\_keep, state }
 
 Configures snapshot expiration settings.
 
@@ -380,7 +380,7 @@ minimum1
 
 <summary>
 
-state: "enabled"or "disabled"
+state: "enabled" or "disabled"
 
 Specifies the state of maintenance operations.
 

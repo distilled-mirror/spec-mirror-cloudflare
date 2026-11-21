@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Auto Rag Write``Auto Rag Read`
+`AI Search Write``AI Search Read``Auto Rag Write``Auto Rag Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -98,7 +98,7 @@ search: optional string
 
 <summary>
 
-status: optional "completed"or "queued"or "running"or "error"
+status: optional "completed" or "queued" or "running" or "error"
 
 </summary>
 
@@ -130,7 +130,7 @@ One of the following:
 
 <summary>
 
-result: array of object {error, key }
+result: array of object { error, key }
 
 </summary>
 
@@ -150,7 +150,7 @@ key: string
 
 <summary>
 
-result\_info: object {count, page, total\_count, per\_page }
+result\_info: object { count, page, total\_count, per\_page }
 
 </summary>
 

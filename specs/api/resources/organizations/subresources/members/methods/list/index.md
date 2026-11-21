@@ -66,7 +66,7 @@ Parameters used to filter the retrieved list must remain in subsequent requests 
 
 <summary>
 
-status: optional array of "active"or "pending"or "rejected"or "canceled"
+status: optional array of "active" or "pending" or "rejected" or "canceled"
 
 Filter the list of memberships by membership status. Defaults to <code>active</code>, <code>pending</code>, and <code>rejected</code>; pass <code>canceled</code> explicitly to include canceled memberships.
 
@@ -98,7 +98,7 @@ One of the following:
 
 <summary>
 
-user: optional object {email }
+user: optional object { email }
 
 </summary>
 
@@ -144,7 +144,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -188,7 +188,7 @@ meta: map\[unknown]
 
 <summary>
 
-status: "active"or "pending"or "rejected"or "canceled"
+status: "active" or "pending" or "rejected" or "canceled"
 
 </summary>
 
@@ -224,7 +224,7 @@ formatdate-time
 
 <summary>
 
-user: object {id, email, name, two\_factor\_authentication\_enabled }
+user: object { id, email, name, two\_factor\_authentication\_enabled }
 
 </summary>
 
@@ -252,7 +252,7 @@ two\_factor\_authentication\_enabled: boolean
 
 <summary>
 
-policies: optional array of object {roles, scopes, id }
+policies: optional array of object { roles, scopes, id }
 
 Direct policies of the membership. Present only for DSR members enrolled in Organization Roles.
 
@@ -262,7 +262,7 @@ Direct policies of the membership. Present only for DSR members enrolled in Orga
 
 <summary>
 
-roles: array of object {id }
+roles: array of object { id }
 
 </summary>
 
@@ -278,7 +278,7 @@ id: string
 
 <summary>
 
-scopes: array of object {key, subset\_of }
+scopes: array of object { key, subset\_of }
 
 </summary>
 
@@ -316,7 +316,7 @@ Omit to create a policy. An unchanged policy keeps its ID; a changed policy is r
 
 <summary>
 
-result\_info: object {next\_page\_token, total\_size }
+result\_info: object { next\_page\_token, total\_size }
 
 </summary>
 

@@ -44,7 +44,7 @@ DELETE/accounts/{account\_id}/r2/buckets/{bucket\_name}
 
 <summary>
 
-Bucket object {creation\_date, jurisdiction, location, 2 more }
+Bucket object { creation\_date, jurisdiction, location, 2 more }
 
 A single R2 bucket.
 
@@ -60,7 +60,7 @@ Creation timestamp.
 
 <summary>
 
-jurisdiction: optional "default"or "eu"or "us"or 2 more
+jurisdiction: optional "default" or "eu" or "us" or 2 more
 
 Jurisdiction where objects in this bucket are guaranteed to be stored.
 
@@ -96,7 +96,7 @@ One of the following:
 
 <summary>
 
-location: optional "apac"or "eeur"or "enam"or 3 more
+location: optional "apac" or "eeur" or "enam" or 3 more
 
 Location of the bucket.
 
@@ -146,7 +146,7 @@ minLength3
 
 <summary>
 
-storage\_class: optional "Standard"or "InfrequentAccess"
+storage\_class: optional "Standard" or "InfrequentAccess"
 
 Storage class for newly uploaded objects, unless specified otherwise.
 
@@ -174,7 +174,7 @@ One of the following:
 
 <summary>
 
-BucketListResponse object {buckets }
+BucketListResponse object { buckets }
 
 </summary>
 
@@ -196,7 +196,7 @@ Creation timestamp.
 
 <summary>
 
-jurisdiction: optional "default"or "eu"or "us"or 2 more
+jurisdiction: optional "default" or "eu" or "us" or 2 more
 
 Jurisdiction where objects in this bucket are guaranteed to be stored.
 
@@ -232,7 +232,7 @@ One of the following:
 
 <summary>
 
-location: optional "apac"or "eeur"or "enam"or 3 more
+location: optional "apac" or "eeur" or "enam" or 3 more
 
 Location of the bucket.
 
@@ -282,7 +282,7 @@ minLength3
 
 <summary>
 
-storage\_class: optional "Standard"or "InfrequentAccess"
+storage\_class: optional "Standard" or "InfrequentAccess"
 
 Storage class for newly uploaded objects, unless specified otherwise.
 
@@ -330,7 +330,7 @@ PUT/accounts/{account\_id}/r2/buckets/{bucket\_name}/lifecycle
 
 <summary>
 
-LifecycleGetResponse object {rules }
+LifecycleGetResponse object { rules }
 
 </summary>
 
@@ -338,7 +338,7 @@ LifecycleGetResponse object {rules }
 
 <summary>
 
-rules: optional array of object {id, conditions, enabled, 3 more }
+rules: optional array of object { id, conditions, enabled, 3 more }
 
 </summary>
 
@@ -352,7 +352,7 @@ Unique identifier for this rule.
 
 <summary>
 
-conditions: object {prefix }
+conditions: object { prefix }
 
 Conditions that apply to all transitions of this rule.
 
@@ -378,7 +378,7 @@ Whether or not this rule is in effect.
 
 <summary>
 
-abortMultipartUploadsTransition: optional object {condition }
+abortMultipartUploadsTransition: optional object { condition }
 
 Transition to abort ongoing multipart uploads.
 
@@ -388,7 +388,7 @@ Transition to abort ongoing multipart uploads.
 
 <summary>
 
-condition: optional object {maxAge, type }
+condition: optional object { maxAge, type }
 
 Condition for lifecycle transitions to apply after an object reaches an age in seconds.
 
@@ -414,7 +414,7 @@ type: "Age"
 
 <summary>
 
-deleteObjectsTransition: optional object {condition }
+deleteObjectsTransition: optional object { condition }
 
 Transition to delete objects.
 
@@ -424,7 +424,7 @@ Transition to delete objects.
 
 <summary>
 
-condition: optional object {maxAge, type } or object {date, type }
+condition: optional object { maxAge, type } or object { date, type }
 
 Condition for lifecycle transitions to apply after an object reaches an age in seconds.
 
@@ -436,7 +436,7 @@ One of the following:
 
 <summary>
 
-R2LifecycleAgeCondition object {maxAge, type }
+R2LifecycleAgeCondition object { maxAge, type }
 
 Condition for lifecycle transitions to apply after an object reaches an age in seconds.
 
@@ -458,7 +458,7 @@ type: "Age"
 
 <summary>
 
-R2LifecycleDateCondition object {date, type }
+R2LifecycleDateCondition object { date, type }
 
 Condition for lifecycle transitions to apply on a specific date.
 
@@ -490,7 +490,7 @@ type: "Date"
 
 <summary>
 
-storageClassTransitions: optional array of object {condition, storageClass }
+storageClassTransitions: optional array of object { condition, storageClass }
 
 Transitions to change the storage class of objects.
 
@@ -500,7 +500,7 @@ Transitions to change the storage class of objects.
 
 <summary>
 
-condition: object {maxAge, type } or object {date, type }
+condition: object { maxAge, type } or object { date, type }
 
 Condition for lifecycle transitions to apply after an object reaches an age in seconds.
 
@@ -512,7 +512,7 @@ One of the following:
 
 <summary>
 
-R2LifecycleAgeCondition object {maxAge, type }
+R2LifecycleAgeCondition object { maxAge, type }
 
 Condition for lifecycle transitions to apply after an object reaches an age in seconds.
 
@@ -534,7 +534,7 @@ type: "Age"
 
 <summary>
 
-R2LifecycleDateCondition object {date, type }
+R2LifecycleDateCondition object { date, type }
 
 Condition for lifecycle transitions to apply on a specific date.
 
@@ -598,7 +598,7 @@ DELETE/accounts/{account\_id}/r2/buckets/{bucket\_name}/cors
 
 <summary>
 
-CORSGetResponse object {rules }
+CORSGetResponse object { rules }
 
 </summary>
 
@@ -606,7 +606,7 @@ CORSGetResponse object {rules }
 
 <summary>
 
-rules: optional array of object {allowed, id, exposeHeaders, maxAgeSeconds }
+rules: optional array of object { allowed, id, exposeHeaders, maxAgeSeconds }
 
 </summary>
 
@@ -614,7 +614,7 @@ rules: optional array of object {allowed, id, exposeHeaders, maxAgeSeconds }
 
 <summary>
 
-allowed: object {methods, origins, headers }
+allowed: object { methods, origins, headers }
 
 Object specifying allowed origins, methods and headers for this CORS rule.
 
@@ -624,7 +624,7 @@ Object specifying allowed origins, methods and headers for this CORS rule.
 
 <summary>
 
-methods: array of "GET"or "PUT"or "POST"or 2 more
+methods: array of "GET" or "PUT" or "POST" or 2 more
 
 Specifies the value for the Access-Control-Allow-Methods header R2 sets when requesting objects in a bucket from a browser.
 
@@ -736,7 +736,7 @@ DELETE/accounts/{account\_id}/r2/buckets/{bucket\_name}/domains/custom/{domain}
 
 <summary>
 
-CustomListResponse object {domains }
+CustomListResponse object { domains }
 
 </summary>
 
@@ -744,7 +744,7 @@ CustomListResponse object {domains }
 
 <summary>
 
-domains: array of object {domain, enabled, status, 4 more }
+domains: array of object { domain, enabled, status, 4 more }
 
 </summary>
 
@@ -764,7 +764,7 @@ Whether this bucket is publicly accessible at the specified custom domain.
 
 <summary>
 
-status: object {ownership, ssl }
+status: object { ownership, ssl }
 
 </summary>
 
@@ -772,7 +772,7 @@ status: object {ownership, ssl }
 
 <summary>
 
-ownership: "pending"or "active"or "deactivated"or 3 more
+ownership: "pending" or "active" or "deactivated" or 3 more
 
 Ownership status of the domain.
 
@@ -812,7 +812,7 @@ One of the following:
 
 <summary>
 
-ssl: "initializing"or "pending"or "active"or 3 more
+ssl: "initializing" or "pending" or "active" or 3 more
 
 SSL certificate status.
 
@@ -862,7 +862,7 @@ An allowlist of ciphers for TLS termination. These ciphers must be in the Boring
 
 <summary>
 
-minTLS: optional "1.0"or "1.1"or "1.2"or "1.3"
+minTLS: optional "1.0" or "1.1" or "1.2" or "1.3"
 
 Minimum TLS Version the custom domain will accept for incoming connections. If not set, defaults to 1.0.
 
@@ -914,7 +914,7 @@ Zone that the custom domain resides in.
 
 <summary>
 
-CustomGetResponse object {domain, enabled, status, 4 more }
+CustomGetResponse object { domain, enabled, status, 4 more }
 
 </summary>
 
@@ -934,7 +934,7 @@ Whether this bucket is publicly accessible at the specified custom domain.
 
 <summary>
 
-status: object {ownership, ssl }
+status: object { ownership, ssl }
 
 </summary>
 
@@ -942,7 +942,7 @@ status: object {ownership, ssl }
 
 <summary>
 
-ownership: "pending"or "active"or "deactivated"or 3 more
+ownership: "pending" or "active" or "deactivated" or 3 more
 
 Ownership status of the domain.
 
@@ -982,7 +982,7 @@ One of the following:
 
 <summary>
 
-ssl: "initializing"or "pending"or "active"or 3 more
+ssl: "initializing" or "pending" or "active" or 3 more
 
 SSL certificate status.
 
@@ -1032,7 +1032,7 @@ An allowlist of ciphers for TLS termination. These ciphers must be in the Boring
 
 <summary>
 
-minTLS: optional "1.0"or "1.1"or "1.2"or "1.3"
+minTLS: optional "1.0" or "1.1" or "1.2" or "1.3"
 
 Minimum TLS Version the custom domain will accept for incoming connections. If not set, defaults to 1.0.
 
@@ -1080,7 +1080,7 @@ Zone that the custom domain resides in.
 
 <summary>
 
-CustomCreateResponse object {domain, enabled, zoneId, 2 more }
+CustomCreateResponse object { domain, enabled, zoneId, 2 more }
 
 </summary>
 
@@ -1112,7 +1112,7 @@ An allowlist of ciphers for TLS termination. These ciphers must be in the Boring
 
 <summary>
 
-minTLS: optional "1.0"or "1.1"or "1.2"or "1.3"
+minTLS: optional "1.0" or "1.1" or "1.2" or "1.3"
 
 Minimum TLS Version the custom domain will accept for incoming connections. If not set, defaults to 1.0.
 
@@ -1148,7 +1148,7 @@ One of the following:
 
 <summary>
 
-CustomUpdateResponse object {domain, ciphers, enabled, minTLS }
+CustomUpdateResponse object { domain, ciphers, enabled, minTLS }
 
 </summary>
 
@@ -1174,7 +1174,7 @@ Whether this bucket is publicly accessible at the specified custom domain.
 
 <summary>
 
-minTLS: optional "1.0"or "1.1"or "1.2"or "1.3"
+minTLS: optional "1.0" or "1.1" or "1.2" or "1.3"
 
 Minimum TLS Version the custom domain will accept for incoming connections. If not set, defaults to 1.0.
 
@@ -1210,7 +1210,7 @@ One of the following:
 
 <summary>
 
-CustomDeleteResponse object {domain }
+CustomDeleteResponse object { domain }
 
 </summary>
 
@@ -1240,7 +1240,7 @@ PUT/accounts/{account\_id}/r2/buckets/{bucket\_name}/domains/managed
 
 <summary>
 
-ManagedListResponse object {bucketId, domain, enabled }
+ManagedListResponse object { bucketId, domain, enabled }
 
 </summary>
 
@@ -1272,7 +1272,7 @@ Whether this bucket is publicly accessible at the r2.dev domain.
 
 <summary>
 
-ManagedUpdateResponse object {bucketId, domain, enabled }
+ManagedUpdateResponse object { bucketId, domain, enabled }
 
 </summary>
 
@@ -1324,7 +1324,7 @@ DELETE/accounts/{account\_id}/event\_notifications/r2/{bucket\_name}/configurati
 
 <summary>
 
-EventNotificationListResponse object {bucketName, queues }
+EventNotificationListResponse object { bucketName, queues }
 
 </summary>
 
@@ -1338,7 +1338,7 @@ Name of the bucket.
 
 <summary>
 
-queues: optional array of object {queueId, queueName, rules }
+queues: optional array of object { queueId, queueName, rules }
 
 List of queues associated with the bucket.
 
@@ -1360,7 +1360,7 @@ Name of the queue.
 
 <summary>
 
-rules: optional array of object {actions, createdAt, description, 3 more }
+rules: optional array of object { actions, createdAt, description, 3 more }
 
 </summary>
 
@@ -1368,7 +1368,7 @@ rules: optional array of object {actions, createdAt, description, 3 more }
 
 <summary>
 
-actions: array of "PutObject"or "CopyObject"or "DeleteObject"or 2 more
+actions: array of "PutObject" or "CopyObject" or "DeleteObject" or 2 more
 
 Array of R2 object actions that will trigger notifications.
 
@@ -1446,7 +1446,7 @@ Notifications will be sent only for objects with this suffix.
 
 <summary>
 
-EventNotificationGetResponse object {queueId, queueName, rules }
+EventNotificationGetResponse object { queueId, queueName, rules }
 
 </summary>
 
@@ -1466,7 +1466,7 @@ Name of the queue.
 
 <summary>
 
-rules: optional array of object {actions, createdAt, description, 3 more }
+rules: optional array of object { actions, createdAt, description, 3 more }
 
 </summary>
 
@@ -1474,7 +1474,7 @@ rules: optional array of object {actions, createdAt, description, 3 more }
 
 <summary>
 
-actions: array of "PutObject"or "CopyObject"or "DeleteObject"or 2 more
+actions: array of "PutObject" or "CopyObject" or "DeleteObject" or 2 more
 
 Array of R2 object actions that will trigger notifications.
 
@@ -1568,7 +1568,7 @@ PUT/accounts/{account\_id}/r2/buckets/{bucket\_name}/lock
 
 <summary>
 
-LockGetResponse object {rules }
+LockGetResponse object { rules }
 
 </summary>
 
@@ -1576,7 +1576,7 @@ LockGetResponse object {rules }
 
 <summary>
 
-rules: optional array of object {id, condition, enabled, prefix }
+rules: optional array of object { id, condition, enabled, prefix }
 
 </summary>
 
@@ -1590,7 +1590,7 @@ Unique identifier for this rule.
 
 <summary>
 
-condition: object {maxAgeSeconds, type } or object {date, type } or object {type }
+condition: object { maxAgeSeconds, type } or object { date, type } or object { type }
 
 Condition to apply a lock rule to an object for how long in seconds.
 
@@ -1602,7 +1602,7 @@ One of the following:
 
 <summary>
 
-R2LockRuleAgeCondition object {maxAgeSeconds, type }
+R2LockRuleAgeCondition object { maxAgeSeconds, type }
 
 Condition to apply a lock rule to an object for how long in seconds.
 
@@ -1624,7 +1624,7 @@ type: "Age"
 
 <summary>
 
-R2LockRuleDateCondition object {date, type }
+R2LockRuleDateCondition object { date, type }
 
 Condition to apply a lock rule to an object until a specific date.
 
@@ -1648,7 +1648,7 @@ type: "Date"
 
 <summary>
 
-R2LockRuleIndefiniteCondition object {type }
+R2LockRuleIndefiniteCondition object { type }
 
 Condition to apply a lock rule indefinitely.
 
@@ -1702,7 +1702,7 @@ GET/accounts/{account\_id}/r2/metrics
 
 <summary>
 
-MetricListResponse object {infrequentAccess, standard }
+MetricListResponse object { infrequentAccess, standard }
 
 Metrics based on the class they belong to.
 
@@ -1712,7 +1712,7 @@ Metrics based on the class they belong to.
 
 <summary>
 
-infrequentAccess: optional object {published, uploaded }
+infrequentAccess: optional object { published, uploaded }
 
 Metrics based on what state they are in(uploaded or published).
 
@@ -1722,7 +1722,7 @@ Metrics based on what state they are in(uploaded or published).
 
 <summary>
 
-published: optional object {metadataSize, objects, payloadSize }
+published: optional object { metadataSize, objects, payloadSize }
 
 Metrics on number of objects/amount of storage used.
 
@@ -1754,7 +1754,7 @@ Amount of storage used by object data.
 
 <summary>
 
-uploaded: optional object {metadataSize, objects, payloadSize }
+uploaded: optional object { metadataSize, objects, payloadSize }
 
 Metrics on number of objects/amount of storage used.
 
@@ -1790,7 +1790,7 @@ Amount of storage used by object data.
 
 <summary>
 
-standard: optional object {published, uploaded }
+standard: optional object { published, uploaded }
 
 Metrics based on what state they are in(uploaded or published).
 
@@ -1800,7 +1800,7 @@ Metrics based on what state they are in(uploaded or published).
 
 <summary>
 
-published: optional object {metadataSize, objects, payloadSize }
+published: optional object { metadataSize, objects, payloadSize }
 
 Metrics on number of objects/amount of storage used.
 
@@ -1832,7 +1832,7 @@ Amount of storage used by object data.
 
 <summary>
 
-uploaded: optional object {metadataSize, objects, payloadSize }
+uploaded: optional object { metadataSize, objects, payloadSize }
 
 Metrics on number of objects/amount of storage used.
 
@@ -1892,7 +1892,7 @@ Provider = "r2"
 
 <summary>
 
-Sippy object {destination, enabled, source }
+Sippy object { destination, enabled, source }
 
 </summary>
 
@@ -1900,7 +1900,7 @@ Sippy object {destination, enabled, source }
 
 <summary>
 
-destination: optional object {accessKeyId, account, bucket, provider }
+destination: optional object { accessKeyId, account, bucket, provider }
 
 Details about the configured destination bucket.
 
@@ -1940,7 +1940,7 @@ State of Sippy for this bucket.
 
 <summary>
 
-source: optional object {bucket, bucketUrl, container, 2 more }
+source: optional object { bucket, bucketUrl, container, 2 more }
 
 Details about the configured source bucket.
 
@@ -1968,7 +1968,7 @@ Name of the Azure Blob Storage container (Azure only).
 
 <summary>
 
-provider: optional "aws"or "gcs"or "s3"or "azure"
+provider: optional "aws" or "gcs" or "s3" or "azure"
 
 </summary>
 
@@ -2012,7 +2012,7 @@ Region where the bucket resides (AWS only).
 
 <summary>
 
-SippyDeleteResponse object {enabled }
+SippyDeleteResponse object { enabled }
 
 </summary>
 
@@ -2048,7 +2048,7 @@ DELETE/accounts/{account\_id}/r2/buckets/{bucket\_name}/objects/{object\_key}
 
 <summary>
 
-ObjectListResponse object {custom\_metadata, etag, http\_metadata, 5 more }
+ObjectListResponse object { custom\_metadata, etag, http\_metadata, 5 more }
 
 Metadata for an R2 object.
 
@@ -2070,7 +2070,7 @@ The entity tag for the object. In JSON list/get responses this is the raw hex di
 
 <summary>
 
-http\_metadata: optional object {cacheControl, cacheExpiry, contentDisposition, 3 more }
+http\_metadata: optional object { cacheControl, cacheExpiry, contentDisposition, 3 more }
 
 HTTP metadata associated with an R2 object.
 
@@ -2148,7 +2148,7 @@ Whether the object is encrypted with a customer-supplied encryption key.
 
 <summary>
 
-storage\_class: optional "Standard"or "InfrequentAccess"
+storage\_class: optional "Standard" or "InfrequentAccess"
 
 Storage class for newly uploaded objects, unless specified otherwise.
 
@@ -2176,7 +2176,7 @@ One of the following:
 
 <summary>
 
-ObjectUploadResponse object {etag, key, size, 3 more }
+ObjectUploadResponse object { etag, key, size, 3 more }
 
 Result of a successful object upload.
 
@@ -2204,7 +2204,7 @@ The size of the uploaded object in bytes (as a string).
 
 <summary>
 
-storage\_class: optional "Standard"or "InfrequentAccess"
+storage\_class: optional "Standard" or "InfrequentAccess"
 
 Storage class for newly uploaded objects, unless specified otherwise.
 
@@ -2246,7 +2246,7 @@ The version UUID of the uploaded object.
 
 <summary>
 
-ObjectDeleteResponse object {key }
+ObjectDeleteResponse object { key }
 
 Result of a successful object deletion.
 
@@ -2282,7 +2282,7 @@ GET/accounts/{account\_id}/r2/buckets/{bucket\_name}/jobs/{job\_id}
 
 <summary>
 
-JobListResponse object {jobs, nextContinuationToken }
+JobListResponse object { jobs, nextContinuationToken }
 
 </summary>
 
@@ -2290,7 +2290,7 @@ JobListResponse object {jobs, nextContinuationToken }
 
 <summary>
 
-jobs: array of object {id, jobType, prefixDelete, 3 more } or object {id, jobType, startTime, 3 more }
+jobs: array of object { id, jobType, prefixDelete, 3 more } or object { id, jobType, startTime, 3 more }
 
 Bucket jobs in the current page.
 
@@ -2302,7 +2302,7 @@ One of the following:
 
 <summary>
 
-PrefixDelete object {id, jobType, prefixDelete, 3 more }
+PrefixDelete object { id, jobType, prefixDelete, 3 more }
 
 Descriptor of a prefix-delete job. An empty prefix indicates a job that empties the whole bucket.
 
@@ -2324,7 +2324,7 @@ The job kind.
 
 <summary>
 
-prefixDelete: object {deletedObjects, prefix, isBucketClear }
+prefixDelete: object { deletedObjects, prefix, isBucketClear }
 
 Details specific to the prefix-delete job.
 
@@ -2364,7 +2364,7 @@ formatdate-time
 
 <summary>
 
-status: "ENQUEUED"or "RUNNING"or "COMPLETED"or 2 more
+status: "ENQUEUED" or "RUNNING" or "COMPLETED" or 2 more
 
 Lifecycle status of a bucket background job.
 
@@ -2412,7 +2412,7 @@ formatdate-time
 
 <summary>
 
-StorageClassMigration object {id, jobType, startTime, 3 more }
+StorageClassMigration object { id, jobType, startTime, 3 more }
 
 Descriptor of a bucket-wide storage-class migration job.
 
@@ -2442,7 +2442,7 @@ formatdate-time
 
 <summary>
 
-status: "ENQUEUED"or "RUNNING"or "COMPLETED"or 2 more
+status: "ENQUEUED" or "RUNNING" or "COMPLETED" or 2 more
 
 Lifecycle status of a bucket background job.
 
@@ -2478,7 +2478,7 @@ One of the following:
 
 <summary>
 
-storageClassMigration: object {destinationStorageClass, migratedObjects, sourceStorageClass, 6 more }
+storageClassMigration: object { destinationStorageClass, migratedObjects, sourceStorageClass, 6 more }
 
 </summary>
 
@@ -2486,7 +2486,7 @@ storageClassMigration: object {destinationStorageClass, migratedObjects, sourceS
 
 <summary>
 
-destinationStorageClass: "Standard"or "InfrequentAccess"
+destinationStorageClass: "Standard" or "InfrequentAccess"
 
 The storage class objects are migrated to. The source and destination storage classes always differ.
 
@@ -2518,7 +2518,7 @@ minimum0
 
 <summary>
 
-sourceStorageClass: "Standard"or "InfrequentAccess"
+sourceStorageClass: "Standard" or "InfrequentAccess"
 
 The storage class objects are migrated from.
 
@@ -2620,7 +2620,7 @@ Token to pass as <code>continuationToken</code> to retrieve the next page.
 
 <summary>
 
-JobCreateResponse = object {id, jobType, prefixDelete, 3 more } or object {id, jobType, startTime, 3 more }
+JobCreateResponse = object { id, jobType, prefixDelete, 3 more } or object { id, jobType, startTime, 3 more }
 
 Descriptor of a bucket background job, discriminated by <code>jobType</code>. Returned by the Create Bucket Job, Get Bucket Job and List Bucket Jobs endpoints. A small operation can already be <code>COMPLETED</code> when it is returned.
 
@@ -2632,7 +2632,7 @@ One of the following:
 
 <summary>
 
-PrefixDelete object {id, jobType, prefixDelete, 3 more }
+PrefixDelete object { id, jobType, prefixDelete, 3 more }
 
 Descriptor of a prefix-delete job. An empty prefix indicates a job that empties the whole bucket.
 
@@ -2654,7 +2654,7 @@ The job kind.
 
 <summary>
 
-prefixDelete: object {deletedObjects, prefix, isBucketClear }
+prefixDelete: object { deletedObjects, prefix, isBucketClear }
 
 Details specific to the prefix-delete job.
 
@@ -2694,7 +2694,7 @@ formatdate-time
 
 <summary>
 
-status: "ENQUEUED"or "RUNNING"or "COMPLETED"or 2 more
+status: "ENQUEUED" or "RUNNING" or "COMPLETED" or 2 more
 
 Lifecycle status of a bucket background job.
 
@@ -2742,7 +2742,7 @@ formatdate-time
 
 <summary>
 
-StorageClassMigration object {id, jobType, startTime, 3 more }
+StorageClassMigration object { id, jobType, startTime, 3 more }
 
 Descriptor of a bucket-wide storage-class migration job.
 
@@ -2772,7 +2772,7 @@ formatdate-time
 
 <summary>
 
-status: "ENQUEUED"or "RUNNING"or "COMPLETED"or 2 more
+status: "ENQUEUED" or "RUNNING" or "COMPLETED" or 2 more
 
 Lifecycle status of a bucket background job.
 
@@ -2808,7 +2808,7 @@ One of the following:
 
 <summary>
 
-storageClassMigration: object {destinationStorageClass, migratedObjects, sourceStorageClass, 6 more }
+storageClassMigration: object { destinationStorageClass, migratedObjects, sourceStorageClass, 6 more }
 
 </summary>
 
@@ -2816,7 +2816,7 @@ storageClassMigration: object {destinationStorageClass, migratedObjects, sourceS
 
 <summary>
 
-destinationStorageClass: "Standard"or "InfrequentAccess"
+destinationStorageClass: "Standard" or "InfrequentAccess"
 
 The storage class objects are migrated to. The source and destination storage classes always differ.
 
@@ -2848,7 +2848,7 @@ minimum0
 
 <summary>
 
-sourceStorageClass: "Standard"or "InfrequentAccess"
+sourceStorageClass: "Standard" or "InfrequentAccess"
 
 The storage class objects are migrated from.
 
@@ -2940,7 +2940,7 @@ formatdate-time
 
 <summary>
 
-JobGetResponse = object {id, jobType, prefixDelete, 3 more } or object {id, jobType, startTime, 3 more }
+JobGetResponse = object { id, jobType, prefixDelete, 3 more } or object { id, jobType, startTime, 3 more }
 
 Descriptor of a bucket background job, discriminated by <code>jobType</code>. Returned by the Create Bucket Job, Get Bucket Job and List Bucket Jobs endpoints. A small operation can already be <code>COMPLETED</code> when it is returned.
 
@@ -2952,7 +2952,7 @@ One of the following:
 
 <summary>
 
-PrefixDelete object {id, jobType, prefixDelete, 3 more }
+PrefixDelete object { id, jobType, prefixDelete, 3 more }
 
 Descriptor of a prefix-delete job. An empty prefix indicates a job that empties the whole bucket.
 
@@ -2974,7 +2974,7 @@ The job kind.
 
 <summary>
 
-prefixDelete: object {deletedObjects, prefix, isBucketClear }
+prefixDelete: object { deletedObjects, prefix, isBucketClear }
 
 Details specific to the prefix-delete job.
 
@@ -3014,7 +3014,7 @@ formatdate-time
 
 <summary>
 
-status: "ENQUEUED"or "RUNNING"or "COMPLETED"or 2 more
+status: "ENQUEUED" or "RUNNING" or "COMPLETED" or 2 more
 
 Lifecycle status of a bucket background job.
 
@@ -3062,7 +3062,7 @@ formatdate-time
 
 <summary>
 
-StorageClassMigration object {id, jobType, startTime, 3 more }
+StorageClassMigration object { id, jobType, startTime, 3 more }
 
 Descriptor of a bucket-wide storage-class migration job.
 
@@ -3092,7 +3092,7 @@ formatdate-time
 
 <summary>
 
-status: "ENQUEUED"or "RUNNING"or "COMPLETED"or 2 more
+status: "ENQUEUED" or "RUNNING" or "COMPLETED" or 2 more
 
 Lifecycle status of a bucket background job.
 
@@ -3128,7 +3128,7 @@ One of the following:
 
 <summary>
 
-storageClassMigration: object {destinationStorageClass, migratedObjects, sourceStorageClass, 6 more }
+storageClassMigration: object { destinationStorageClass, migratedObjects, sourceStorageClass, 6 more }
 
 </summary>
 
@@ -3136,7 +3136,7 @@ storageClassMigration: object {destinationStorageClass, migratedObjects, sourceS
 
 <summary>
 
-destinationStorageClass: "Standard"or "InfrequentAccess"
+destinationStorageClass: "Standard" or "InfrequentAccess"
 
 The storage class objects are migrated to. The source and destination storage classes always differ.
 
@@ -3168,7 +3168,7 @@ minimum0
 
 <summary>
 
-sourceStorageClass: "Standard"or "InfrequentAccess"
+sourceStorageClass: "Standard" or "InfrequentAccess"
 
 The storage class objects are migrated from.
 
@@ -3268,7 +3268,7 @@ POST/accounts/{account\_id}/r2/temp-access-credentials
 
 <summary>
 
-TemporaryCredential object {bucket, parentAccessKeyId, ttlSeconds, 4 more }
+TemporaryCredential object { bucket, parentAccessKeyId, ttlSeconds, 4 more }
 
 </summary>
 
@@ -3298,7 +3298,7 @@ minimum0
 
 <summary>
 
-actions: optional array of "HeadBucket"or "HeadObject"or "GetObject"or 15 more
+actions: optional array of "HeadBucket" or "HeadObject" or "GetObject" or 15 more
 
 S3 actions allowed on the credentials; requests for any other action are denied. For example, <code>["GetObject", "HeadObject"]</code> allows reading objects without listing them. Exactly one of <code>permission</code> or <code>actions</code> must be provided. The parent token must have Object Read &amp; Write permission if any action writes, and Object Read otherwise.
 
@@ -3392,7 +3392,7 @@ Optional object paths to scope the credentials to.
 
 <summary>
 
-permission: optional "admin-read-write"or "admin-read-only"or "object-read-write"or "object-read-only"
+permission: optional "admin-read-write" or "admin-read-only" or "object-read-write" or "object-read-only"
 
 Permissions allowed on the credentials. Exactly one of <code>permission</code> or <code>actions</code> must be provided.
 
@@ -3434,7 +3434,7 @@ Optional prefix paths to scope the credentials to.
 
 <summary>
 
-TemporaryCredentialCreateResponse object {accessKeyId, secretAccessKey, sessionToken }
+TemporaryCredentialCreateResponse object { accessKeyId, secretAccessKey, sessionToken }
 
 </summary>
 
@@ -3502,7 +3502,7 @@ PUT/accounts/{account\_id}/slurper/jobs/{job\_id}/resume
 
 <summary>
 
-JobListResponse object {id, createdAt, finishedAt, 4 more }
+JobListResponse object { id, createdAt, finishedAt, 4 more }
 
 </summary>
 
@@ -3526,7 +3526,7 @@ overwrite: optional boolean
 
 <summary>
 
-source: optional object {bucket, endpoint, keys, 2 more } or object {bucket, keys, pathPrefix, vendor } or object {bucket, jurisdiction, keys, 2 more }
+source: optional object { bucket, endpoint, keys, 2 more } or object { bucket, keys, pathPrefix, vendor } or object { bucket, jurisdiction, keys, 2 more }
 
 </summary>
 
@@ -3536,7 +3536,7 @@ One of the following:
 
 <summary>
 
-S3SourceResponseSchema object {bucket, endpoint, keys, 2 more }
+S3SourceResponseSchema object { bucket, endpoint, keys, 2 more }
 
 </summary>
 
@@ -3570,7 +3570,7 @@ vendor: optional "s3"
 
 <summary>
 
-GcsSourceResponseSchema object {bucket, keys, pathPrefix, vendor }
+GcsSourceResponseSchema object { bucket, keys, pathPrefix, vendor }
 
 </summary>
 
@@ -3598,7 +3598,7 @@ vendor: optional "gcs"
 
 <summary>
 
-R2SourceResponseSchema object {bucket, jurisdiction, keys, 2 more }
+R2SourceResponseSchema object { bucket, jurisdiction, keys, 2 more }
 
 </summary>
 
@@ -3610,7 +3610,7 @@ bucket: optional string
 
 <summary>
 
-jurisdiction: optional "default"or "eu"or "us"or "fedramp"
+jurisdiction: optional "default" or "eu" or "us" or "fedramp"
 
 </summary>
 
@@ -3660,7 +3660,7 @@ vendor: optional <a href="https://developers.cloudflare.com/api/resources/r2#(re
 
 <summary>
 
-status: optional "running"or "paused"or "aborted"or "completed"
+status: optional "running" or "paused" or "aborted" or "completed"
 
 </summary>
 
@@ -3690,7 +3690,7 @@ One of the following:
 
 <summary>
 
-target: optional object {bucket, jurisdiction, vendor }
+target: optional object { bucket, jurisdiction, vendor }
 
 </summary>
 
@@ -3702,7 +3702,7 @@ bucket: optional string
 
 <summary>
 
-jurisdiction: optional "default"or "eu"or "us"or "fedramp"
+jurisdiction: optional "default" or "eu" or "us" or "fedramp"
 
 </summary>
 
@@ -3744,7 +3744,7 @@ vendor: optional <a href="https://developers.cloudflare.com/api/resources/r2#(re
 
 <summary>
 
-JobGetResponse object {id, createdAt, finishedAt, 4 more }
+JobGetResponse object { id, createdAt, finishedAt, 4 more }
 
 </summary>
 
@@ -3768,7 +3768,7 @@ overwrite: optional boolean
 
 <summary>
 
-source: optional object {bucket, endpoint, keys, 2 more } or object {bucket, keys, pathPrefix, vendor } or object {bucket, jurisdiction, keys, 2 more }
+source: optional object { bucket, endpoint, keys, 2 more } or object { bucket, keys, pathPrefix, vendor } or object { bucket, jurisdiction, keys, 2 more }
 
 </summary>
 
@@ -3778,7 +3778,7 @@ One of the following:
 
 <summary>
 
-S3SourceResponseSchema object {bucket, endpoint, keys, 2 more }
+S3SourceResponseSchema object { bucket, endpoint, keys, 2 more }
 
 </summary>
 
@@ -3812,7 +3812,7 @@ vendor: optional "s3"
 
 <summary>
 
-GcsSourceResponseSchema object {bucket, keys, pathPrefix, vendor }
+GcsSourceResponseSchema object { bucket, keys, pathPrefix, vendor }
 
 </summary>
 
@@ -3840,7 +3840,7 @@ vendor: optional "gcs"
 
 <summary>
 
-R2SourceResponseSchema object {bucket, jurisdiction, keys, 2 more }
+R2SourceResponseSchema object { bucket, jurisdiction, keys, 2 more }
 
 </summary>
 
@@ -3852,7 +3852,7 @@ bucket: optional string
 
 <summary>
 
-jurisdiction: optional "default"or "eu"or "us"or "fedramp"
+jurisdiction: optional "default" or "eu" or "us" or "fedramp"
 
 </summary>
 
@@ -3902,7 +3902,7 @@ vendor: optional <a href="https://developers.cloudflare.com/api/resources/r2#(re
 
 <summary>
 
-status: optional "running"or "paused"or "aborted"or "completed"
+status: optional "running" or "paused" or "aborted" or "completed"
 
 </summary>
 
@@ -3932,7 +3932,7 @@ One of the following:
 
 <summary>
 
-target: optional object {bucket, jurisdiction, vendor }
+target: optional object { bucket, jurisdiction, vendor }
 
 </summary>
 
@@ -3944,7 +3944,7 @@ bucket: optional string
 
 <summary>
 
-jurisdiction: optional "default"or "eu"or "us"or "fedramp"
+jurisdiction: optional "default" or "eu" or "us" or "fedramp"
 
 </summary>
 
@@ -3986,7 +3986,7 @@ vendor: optional <a href="https://developers.cloudflare.com/api/resources/r2#(re
 
 <summary>
 
-JobCreateResponse object {id }
+JobCreateResponse object { id }
 
 </summary>
 
@@ -4014,7 +4014,7 @@ JobPauseResponse = string
 
 <summary>
 
-JobProgressResponse object {id, createdAt, failedObjects, 4 more }
+JobProgressResponse object { id, createdAt, failedObjects, 4 more }
 
 </summary>
 
@@ -4042,7 +4042,7 @@ skippedObjects: optional number
 
 <summary>
 
-status: optional "running"or "paused"or "aborted"or "completed"
+status: optional "running" or "paused" or "aborted" or "completed"
 
 </summary>
 
@@ -4092,7 +4092,7 @@ GET/accounts/{account\_id}/slurper/jobs/{job\_id}/logs
 
 <summary>
 
-LogListResponse object {createdAt, job, logType, 2 more }
+LogListResponse object { createdAt, job, logType, 2 more }
 
 </summary>
 
@@ -4108,7 +4108,7 @@ job: optional string
 
 <summary>
 
-logType: optional "migrationStart"or "migrationComplete"or "migrationAbort"or 12 more
+logType: optional "migrationStart" or "migrationComplete" or "migrationAbort" or 12 more
 
 </summary>
 
@@ -4206,7 +4206,7 @@ PUT/accounts/{account\_id}/slurper/target/connectivity-precheck
 
 <summary>
 
-ConnectivityPrecheckSourceResponse object {connectivityStatus }
+ConnectivityPrecheckSourceResponse object { connectivityStatus }
 
 </summary>
 
@@ -4214,7 +4214,7 @@ ConnectivityPrecheckSourceResponse object {connectivityStatus }
 
 <summary>
 
-connectivityStatus: optional "success"or "error"
+connectivityStatus: optional "success" or "error"
 
 </summary>
 
@@ -4240,7 +4240,7 @@ One of the following:
 
 <summary>
 
-ConnectivityPrecheckTargetResponse object {connectivityStatus }
+ConnectivityPrecheckTargetResponse object { connectivityStatus }
 
 </summary>
 
@@ -4248,7 +4248,7 @@ ConnectivityPrecheckTargetResponse object {connectivityStatus }
 
 <summary>
 
-connectivityStatus: optional "success"or "error"
+connectivityStatus: optional "success" or "error"
 
 </summary>
 

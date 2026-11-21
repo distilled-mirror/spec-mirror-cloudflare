@@ -30,7 +30,7 @@ POST/accounts/{account\_id}/workers/assets/upload
 
 <summary>
 
-UploadCreateResponse object {jwt }
+UploadCreateResponse object { jwt }
 
 </summary>
 

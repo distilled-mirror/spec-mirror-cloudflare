@@ -40,7 +40,7 @@ DELETE/zones/{zone\_id}/observability/tracing/settings
 
 <summary>
 
-SettingGetResponse object {destinations, enabled, forward\_context, 3 more }
+SettingGetResponse object { destinations, enabled, forward\_context, 3 more }
 
 </summary>
 
@@ -72,7 +72,7 @@ Whether traces are persisted in Cloudflare.
 
 <summary>
 
-propagation\_policy: "accept"or "authenticated"or "reject"
+propagation\_policy: "accept" or "authenticated" or "reject"
 
 When inbound trace context may be continued. Authenticated propagation is not supported yet.
 
@@ -114,7 +114,7 @@ minimum0
 
 <summary>
 
-SettingUpdateResponse object {destinations, enabled, forward\_context, 3 more }
+SettingUpdateResponse object { destinations, enabled, forward\_context, 3 more }
 
 </summary>
 
@@ -146,7 +146,7 @@ Whether traces are persisted in Cloudflare.
 
 <summary>
 
-propagation\_policy: "accept"or "authenticated"or "reject"
+propagation\_policy: "accept" or "authenticated" or "reject"
 
 When inbound trace context may be continued. Authenticated propagation is not supported yet.
 
@@ -188,7 +188,7 @@ minimum0
 
 <summary>
 
-SettingDeleteResponse object {destinations, enabled, forward\_context, 3 more }
+SettingDeleteResponse object { destinations, enabled, forward\_context, 3 more }
 
 </summary>
 
@@ -220,7 +220,7 @@ Whether traces are persisted in Cloudflare.
 
 <summary>
 
-propagation\_policy: "accept"or "authenticated"or "reject"
+propagation\_policy: "accept" or "authenticated" or "reject"
 
 When inbound trace context may be continued. Authenticated propagation is not supported yet.
 

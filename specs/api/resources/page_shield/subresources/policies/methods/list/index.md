@@ -74,7 +74,7 @@ maxLength32
 
 <summary>
 
-result: array of object {id, action, description, 3 more }
+result: array of object { id, action, description, 3 more }
 
 </summary>
 
@@ -90,7 +90,7 @@ maxLength32
 
 <summary>
 
-action: "allow"or "log"or "add\_reporting\_directives"
+action: "allow" or "log" or "add\_reporting\_directives"
 
 The action to take if the expression matches
 
@@ -146,7 +146,7 @@ The policy which will be applied
 
 <summary>
 
-result\_info: object {count, page, per\_page, 2 more }
+result\_info: object { count, page, per\_page, 2 more }
 
 </summary>
 
@@ -216,7 +216,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -258,7 +258,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 

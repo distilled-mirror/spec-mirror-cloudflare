@@ -64,7 +64,7 @@ GET/accounts/{account\_id}/ai-search/namespaces/{namespace}/instances/{id}/items
 
 <summary>
 
-ItemListResponse object {id, checksum, chunks\_count, 10 more }
+ItemListResponse object { id, checksum, chunks\_count, 10 more }
 
 </summary>
 
@@ -104,7 +104,7 @@ formatdate-time
 
 <summary>
 
-metadata: map\[stringor numberor boolean]
+metadata: map\[string or number or boolean]
 
 Built-in, configured filterable, and retained source metadata for the item.
 
@@ -136,7 +136,7 @@ namespace: string
 
 <summary>
 
-next\_action: "INDEX"or "DELETE"
+next\_action: "INDEX" or "DELETE"
 
 </summary>
 
@@ -164,7 +164,7 @@ Identifies which data source this item belongs to. “builtin” for uploaded fi
 
 <summary>
 
-status: "queued"or "running"or "completed"or 3 more
+status: "queued" or "running" or "completed" or 3 more
 
 </summary>
 
@@ -210,7 +210,7 @@ error: optional string
 
 <summary>
 
-ItemUploadResponse object {id, checksum, chunks\_count, 11 more }
+ItemUploadResponse object { id, checksum, chunks\_count, 11 more }
 
 </summary>
 
@@ -250,7 +250,7 @@ formatdate-time
 
 <summary>
 
-metadata: map\[stringor numberor boolean]
+metadata: map\[string or number or boolean]
 
 Built-in, configured filterable, and retained source metadata for the item.
 
@@ -282,7 +282,7 @@ namespace: string
 
 <summary>
 
-next\_action: "INDEX"or "DELETE"
+next\_action: "INDEX" or "DELETE"
 
 </summary>
 
@@ -310,7 +310,7 @@ Identifies which data source this item belongs to. “builtin” for uploaded fi
 
 <summary>
 
-status: "queued"or "running"or "completed"or 3 more
+status: "queued" or "running" or "completed" or 3 more
 
 </summary>
 
@@ -352,7 +352,7 @@ error: optional string
 
 <summary>
 
-warnings: optional array of object {code, expected\_type, field } or object {code, field }
+warnings: optional array of object { code, expected\_type, field } or object { code, field }
 
 </summary>
 
@@ -362,7 +362,7 @@ One of the following:
 
 <summary>
 
-object {code, expected\_type, field }
+object { code, expected\_type, field }
 
 </summary>
 
@@ -374,7 +374,7 @@ code: "custom\_metadata\_value\_not\_indexed"
 
 <summary>
 
-expected\_type: "text"or "number"or "boolean"or "datetime"
+expected\_type: "text" or "number" or "boolean" or "datetime"
 
 </summary>
 
@@ -414,7 +414,7 @@ maxLength512
 
 <summary>
 
-object {code, field }
+object { code, field }
 
 </summary>
 
@@ -444,7 +444,7 @@ maxLength512
 
 <summary>
 
-ItemCreateOrUpdateResponse object {id, checksum, chunks\_count, 10 more }
+ItemCreateOrUpdateResponse object { id, checksum, chunks\_count, 10 more }
 
 </summary>
 
@@ -484,7 +484,7 @@ formatdate-time
 
 <summary>
 
-metadata: map\[stringor numberor boolean]
+metadata: map\[string or number or boolean]
 
 Built-in, configured filterable, and retained source metadata for the item.
 
@@ -516,7 +516,7 @@ namespace: string
 
 <summary>
 
-next\_action: "INDEX"or "DELETE"
+next\_action: "INDEX" or "DELETE"
 
 </summary>
 
@@ -544,7 +544,7 @@ Identifies which data source this item belongs to. “builtin” for uploaded fi
 
 <summary>
 
-status: "queued"or "running"or "completed"or 3 more
+status: "queued" or "running" or "completed" or 3 more
 
 </summary>
 
@@ -590,7 +590,7 @@ error: optional string
 
 <summary>
 
-ItemGetResponse object {id, checksum, chunks\_count, 10 more }
+ItemGetResponse object { id, checksum, chunks\_count, 10 more }
 
 </summary>
 
@@ -630,7 +630,7 @@ formatdate-time
 
 <summary>
 
-metadata: map\[stringor numberor boolean]
+metadata: map\[string or number or boolean]
 
 Built-in, configured filterable, and retained source metadata for the item.
 
@@ -662,7 +662,7 @@ namespace: string
 
 <summary>
 
-next\_action: "INDEX"or "DELETE"
+next\_action: "INDEX" or "DELETE"
 
 </summary>
 
@@ -690,7 +690,7 @@ Identifies which data source this item belongs to. “builtin” for uploaded fi
 
 <summary>
 
-status: "queued"or "running"or "completed"or 3 more
+status: "queued" or "running" or "completed" or 3 more
 
 </summary>
 
@@ -736,7 +736,7 @@ error: optional string
 
 <summary>
 
-ItemSyncResponse object {id, checksum, chunks\_count, 10 more }
+ItemSyncResponse object { id, checksum, chunks\_count, 10 more }
 
 </summary>
 
@@ -776,7 +776,7 @@ formatdate-time
 
 <summary>
 
-metadata: map\[stringor numberor boolean]
+metadata: map\[string or number or boolean]
 
 Built-in, configured filterable, and retained source metadata for the item.
 
@@ -808,7 +808,7 @@ namespace: string
 
 <summary>
 
-next\_action: "INDEX"or "DELETE"
+next\_action: "INDEX" or "DELETE"
 
 </summary>
 
@@ -836,7 +836,7 @@ Identifies which data source this item belongs to. “builtin” for uploaded fi
 
 <summary>
 
-status: "queued"or "running"or "completed"or 3 more
+status: "queued" or "running" or "completed" or 3 more
 
 </summary>
 
@@ -882,7 +882,7 @@ error: optional string
 
 <summary>
 
-ItemDeleteResponse object {key }
+ItemDeleteResponse object { key }
 
 </summary>
 
@@ -898,7 +898,7 @@ key: string
 
 <summary>
 
-ItemLogsResponse = array of object {action, chunkCount, errorType, 4 more }
+ItemLogsResponse = array of object { action, chunkCount, errorType, 4 more }
 
 </summary>
 
@@ -940,7 +940,7 @@ formatdate-time
 
 <summary>
 
-ItemChunksResponse = array of object {id, item, text, 5 more }
+ItemChunksResponse = array of object { id, item, text, 5 more }
 
 </summary>
 
@@ -952,7 +952,7 @@ id: string
 
 <summary>
 
-item: object {key, metadata, timestamp }
+item: object { key, metadata, timestamp }
 
 </summary>
 
@@ -1000,7 +1000,7 @@ minimum0
 
 <summary>
 
-source\_media\_type: optional "audio"or "video"
+source\_media\_type: optional "audio" or "video"
 
 Audio/video transcript chunks only: type of the source media file. Omitted for all other chunks.
 

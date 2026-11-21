@@ -90,7 +90,7 @@ Identifier for the query. When parameters are omitted, this ID is used to load a
 
 <summary>
 
-timeframe: object {from, to }
+timeframe: object { from, to }
 
 Timeframe for the query using Unix timestamps in milliseconds. ‘from’ must be earlier than ‘to’. Narrower timeframes produce faster responses and more specific results.
 
@@ -130,7 +130,7 @@ When true, includes time-series data in the response.
 
 <summary>
 
-chartType: optional "timeseries\_and\_aggregate"or "timeseries"or "aggregate"or "distribution"
+chartType: optional "timeseries\_and\_aggregate" or "timeseries" or "aggregate" or "distribution"
 
 Controls the SQL shape and response payload for the ‘calculations’ view. Omitted or ‘timeseries\_and\_aggregate’: current behaviour — both the time-series and aggregate queries. ‘timeseries’: time-series only. ‘aggregate’: aggregate only. ‘distribution’: a bucketed 2D histogram (time × value buckets) returned in ‘distribution’ instead of ‘calculations’. ‘distribution’ is not compatible with ‘compare’ — combining them returns a 400.
 
@@ -168,7 +168,7 @@ When true, includes a comparison dataset from the previous time period of equal 
 
 <summary>
 
-distributionScale: optional "log"or "linear"
+distributionScale: optional "log" or "linear"
 
 Value-axis bucketing for chartType ‘distribution’. Omitted or ‘log’: geometric buckets, best for heavy-tailed latency. ‘linear’: fixed-width buckets, clearer for narrow or additive ranges. Ignored for other chartTypes. The response echoes the scheme used in distribution.bucketMode.
 
@@ -236,7 +236,7 @@ Pagination direction: ‘next’ for forward, ‘prev’ for backward.
 
 <summary>
 
-parameters: optional object {calculations, datasets, filterCombination, 6 more }
+parameters: optional object { calculations, datasets, filterCombination, 6 more }
 
 Query parameters defining what data to retrieve — filters, calculations, group-bys, and ordering. In practice this should always be provided for ad-hoc queries. Only omit when executing a previously saved query by queryId. Use the keys and values endpoints to discover available fields before building filters.
 
@@ -246,7 +246,7 @@ Query parameters defining what data to retrieve — filters, calculations, group
 
 <summary>
 
-calculations: optional array of object {operator, alias, key, keyType } or object {key, operator, alias, keyType }
+calculations: optional array of object { operator, alias, key, keyType } or object { key, operator, alias, keyType }
 
 Aggregation calculations to compute (e.g. count, avg, p99). Each calculation produces aggregate values and optional time-series data.
 
@@ -258,7 +258,7 @@ One of the following:
 
 <summary>
 
-object {operator, alias, key, keyType }
+object { operator, alias, key, keyType }
 
 </summary>
 
@@ -266,7 +266,7 @@ object {operator, alias, key, keyType }
 
 <summary>
 
-operator: "count"or "COUNT"
+operator: "count" or "COUNT"
 
 Aggregation operator to apply. Examples: count, avg, sum, min, max, median, p90, p95, p99, uniq, stddev, variance.
 
@@ -302,7 +302,7 @@ Field name to calculate over. Must exist in the data. Verify with the keys endpo
 
 <summary>
 
-keyType: optional "string"or "number"or "boolean"
+keyType: optional "string" or "number" or "boolean"
 
 Data type of the key. Required when key is provided to ensure correct aggregation.
 
@@ -334,7 +334,7 @@ One of the following:
 
 <summary>
 
-object {key, operator, alias, keyType }
+object { key, operator, alias, keyType }
 
 </summary>
 
@@ -348,7 +348,7 @@ Field name to calculate over. Must exist in the data. Verify with the keys endpo
 
 <summary>
 
-operator: "uniq"or "max"or "min"or 33 more
+operator: "uniq" or "max" or "min" or 33 more
 
 Aggregation operator to apply. Examples: count, avg, sum, min, max, median, p90, p95, p99, uniq, stddev, variance.
 
@@ -514,7 +514,7 @@ Custom label for this calculation in the results. Useful for distinguishing mult
 
 <summary>
 
-keyType: optional "string"or "number"or "boolean"
+keyType: optional "string" or "number" or "boolean"
 
 Data type of the key. Required when key is provided to ensure correct aggregation.
 
@@ -556,7 +556,7 @@ Datasets to query. Leave empty to query all available datasets.
 
 <summary>
 
-filterCombination: optional "and"or "or"or "AND"or "OR"
+filterCombination: optional "and" or "or" or "AND" or "OR"
 
 Logical operator for combining top-level filters: ‘and’ (all must match) or ‘or’ (any must match). Defaults to ‘and’.
 
@@ -588,7 +588,7 @@ One of the following:
 
 <summary>
 
-filters: optional array of object {filterCombination, filters, kind } or object {key, operation, type, 2 more }
+filters: optional array of object { filterCombination, filters, kind } or object { key, operation, type, 2 more }
 
 Filters to narrow query results. Use the keys and values endpoints to discover available fields before building filters. Supports nested groups via kind: ‘group’. Maximum nesting depth is 4.
 
@@ -600,7 +600,7 @@ One of the following:
 
 <summary>
 
-object {filterCombination, filters, kind }
+object { filterCombination, filters, kind }
 
 </summary>
 
@@ -608,7 +608,7 @@ object {filterCombination, filters, kind }
 
 <summary>
 
-filterCombination: "and"or "or"or "AND"or "OR"
+filterCombination: "and" or "or" or "AND" or "OR"
 
 </summary>
 
@@ -638,7 +638,7 @@ One of the following:
 
 <summary>
 
-filters: array of object {filterCombination, filters, kind } or object {key, operation, type, 2 more }
+filters: array of object { filterCombination, filters, kind } or object { key, operation, type, 2 more }
 
 </summary>
 
@@ -648,7 +648,7 @@ One of the following:
 
 <summary>
 
-object {filterCombination, filters, kind }
+object { filterCombination, filters, kind }
 
 </summary>
 
@@ -656,7 +656,7 @@ object {filterCombination, filters, kind }
 
 <summary>
 
-filterCombination: "and"or "or"or "AND"or "OR"
+filterCombination: "and" or "or" or "AND" or "OR"
 
 </summary>
 
@@ -698,7 +698,7 @@ kind: "group"
 
 <summary>
 
-WorkersObservabilityFilterLeaf object {key, operation, type, 2 more }
+WorkersObservabilityFilterLeaf object { key, operation, type, 2 more }
 
 A filter condition applied to query results. Use the keys and values endpoints to discover available fields and their values before constructing filters.
 
@@ -714,7 +714,7 @@ Filter field name. Use verified keys from previous query results or the keys end
 
 <summary>
 
-operation: "includes"or "not\_includes"or "starts\_with"or 27 more
+operation: "includes" or "not\_includes" or "starts\_with" or 27 more
 
 Comparison operator. String operators: includes, not\_includes, starts\_with, ends\_with, regex. Existence: exists, is\_null. Set membership: in, not\_in (comma-separated values). Numeric: eq, neq, gt, gte, lt, lte.
 
@@ -850,7 +850,7 @@ One of the following:
 
 <summary>
 
-type: "string"or "number"or "boolean"
+type: "string" or "number" or "boolean"
 
 Data type of the filter field. Must match the actual type of the key being filtered.
 
@@ -884,7 +884,7 @@ Discriminator for leaf filter nodes. Always ‘filter’ when present; may be om
 
 <summary>
 
-value: optional stringor numberor boolean
+value: optional string or number or boolean
 
 Comparison value. Must match actual values in your data — verify with the values endpoint. Ensure the value type (string/number/boolean) matches the field type. String comparisons are case-sensitive. Regex uses RE2 syntax (no lookaheads/lookbehinds).
 
@@ -928,7 +928,7 @@ kind: "group"
 
 <summary>
 
-WorkersObservabilityFilterLeaf object {key, operation, type, 2 more }
+WorkersObservabilityFilterLeaf object { key, operation, type, 2 more }
 
 A filter condition applied to query results. Use the keys and values endpoints to discover available fields and their values before constructing filters.
 
@@ -944,7 +944,7 @@ Filter field name. Use verified keys from previous query results or the keys end
 
 <summary>
 
-operation: "includes"or "not\_includes"or "starts\_with"or 27 more
+operation: "includes" or "not\_includes" or "starts\_with" or 27 more
 
 Comparison operator. String operators: includes, not\_includes, starts\_with, ends\_with, regex. Existence: exists, is\_null. Set membership: in, not\_in (comma-separated values). Numeric: eq, neq, gt, gte, lt, lte.
 
@@ -1080,7 +1080,7 @@ One of the following:
 
 <summary>
 
-type: "string"or "number"or "boolean"
+type: "string" or "number" or "boolean"
 
 Data type of the filter field. Must match the actual type of the key being filtered.
 
@@ -1114,7 +1114,7 @@ Discriminator for leaf filter nodes. Always ‘filter’ when present; may be om
 
 <summary>
 
-value: optional stringor numberor boolean
+value: optional string or number or boolean
 
 Comparison value. Must match actual values in your data — verify with the values endpoint. Ensure the value type (string/number/boolean) matches the field type. String comparisons are case-sensitive. Regex uses RE2 syntax (no lookaheads/lookbehinds).
 
@@ -1150,7 +1150,7 @@ boolean
 
 <summary>
 
-groupBys: optional array of object {type, value }
+groupBys: optional array of object { type, value }
 
 Fields to group calculation results by. Only applicable when the query view is ‘calculations’. Produces per-group aggregate values.
 
@@ -1160,7 +1160,7 @@ Fields to group calculation results by. Only applicable when the query view is �
 
 <summary>
 
-type: "string"or "number"or "boolean"
+type: "string" or "number" or "boolean"
 
 Data type of the group-by field.
 
@@ -1198,7 +1198,7 @@ Field name to group results by (e.g. $metadata.service, $metadata.statusCode).
 
 <summary>
 
-havings: optional array of object {key, operation, value }
+havings: optional array of object { key, operation, value }
 
 Post-aggregation filters applied to calculation results. Use to filter groups after aggregation (e.g. only groups where count &gt; 100).
 
@@ -1214,7 +1214,7 @@ Calculation alias or operator to filter on after aggregation.
 
 <summary>
 
-operation: "eq"or "neq"or "gt"or 3 more
+operation: "eq" or "neq" or "gt" or 3 more
 
 Numeric comparison operator: eq, neq, gt, gte, lt, lte.
 
@@ -1274,7 +1274,7 @@ minimum0
 
 <summary>
 
-needle: optional object {value, isRegex, matchCase }
+needle: optional object { value, isRegex, matchCase }
 
 Full-text search expression applied across all event fields. Matches events containing the specified text.
 
@@ -1284,7 +1284,7 @@ Full-text search expression applied across all event fields. Matches events cont
 
 <summary>
 
-value: stringor numberor boolean
+value: string or number or boolean
 
 The text or pattern to search for.
 
@@ -1330,7 +1330,7 @@ When true, performs a case-sensitive search. Defaults to case-insensitive.
 
 <summary>
 
-orderBy: optional object {value, order }
+orderBy: optional object { value, order }
 
 Ordering for grouped calculation results. Only effective when a group-by is present.
 
@@ -1346,7 +1346,7 @@ Alias of the calculation to order results by. Must match the alias (or operator)
 
 <summary>
 
-order: optional "asc"or "desc"
+order: optional "asc" or "desc"
 
 Sort direction: ‘asc’ for ascending, ‘desc’ for descending.
 
@@ -1378,7 +1378,7 @@ One of the following:
 
 <summary>
 
-view: optional "traces"or "events"or "calculations"or 3 more
+view: optional "traces" or "events" or "calculations" or 3 more
 
 Controls the shape of the response. ‘events’: individual log lines matching the query. ‘calculations’: aggregated metrics (count, avg, p99, etc.) with optional group-by breakdowns and time-series. ‘invocations’: events grouped by request ID. ‘traces’: distributed trace summaries. ‘agents’: agent-specific trace summaries.
 
@@ -1420,7 +1420,7 @@ One of the following:
 
 <summary>
 
-errors: array of object {message }
+errors: array of object { message }
 
 </summary>
 
@@ -1436,7 +1436,7 @@ message: string
 
 <summary>
 
-messages: array of object {message }
+messages: array of object { message }
 
 </summary>
 
@@ -1452,7 +1452,7 @@ message: "Successful request"
 
 <summary>
 
-result: object {id }
+result: object { id }
 
 </summary>
 

@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Stream Write``Stream Read`
+`Stream Metadata Read``AI Search Index Engine``Stream Write``Stream Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -82,7 +82,7 @@ maxLength32
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -104,7 +104,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -124,7 +124,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -146,7 +146,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -172,7 +172,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {audio, default }
+result: optional object { audio, default }
 
 An object with download type keys. Each key is optional and only present if that download type has been created.
 
@@ -182,7 +182,7 @@ An object with download type keys. Each key is optional and only present if that
 
 <summary>
 
-audio: optional object {percentComplete, status, url }
+audio: optional object { percentComplete, status, url }
 
 The audio-only download. Only present if this download type has been created.
 
@@ -202,7 +202,7 @@ minimum0
 
 <summary>
 
-status: "ready"or "inprogress"or "error"
+status: "ready" or "inprogress" or "error"
 
 The status of a generated download.
 
@@ -242,7 +242,7 @@ formaturi
 
 <summary>
 
-default: optional object {percentComplete, status, url }
+default: optional object { percentComplete, status, url }
 
 The default video download. Only present if this download type has been created.
 
@@ -262,7 +262,7 @@ minimum0
 
 <summary>
 
-status: "ready"or "inprogress"or "error"
+status: "ready" or "inprogress" or "error"
 
 The status of a generated download.
 

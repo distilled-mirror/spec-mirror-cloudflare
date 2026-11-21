@@ -46,7 +46,7 @@ DELETE/accounts/{account\_id}/dlp/sensitivity\_groups/{sensitivity\_group\_id}
 
 <summary>
 
-SensitivityGroupListResponse object {id, created\_at, levels, 4 more }
+SensitivityGroupListResponse object { id, created\_at, levels, 4 more }
 
 </summary>
 
@@ -66,7 +66,7 @@ formatdate-time
 
 <summary>
 
-levels: array of object {id, created\_at, name, 2 more }
+levels: array of object { id, created\_at, name, 2 more }
 
 </summary>
 
@@ -128,7 +128,7 @@ formatuuid
 
 <summary>
 
-SensitivityGroupGetResponse object {id, created\_at, levels, 4 more }
+SensitivityGroupGetResponse object { id, created\_at, levels, 4 more }
 
 </summary>
 
@@ -148,7 +148,7 @@ formatdate-time
 
 <summary>
 
-levels: array of object {id, created\_at, name, 2 more }
+levels: array of object { id, created\_at, name, 2 more }
 
 </summary>
 
@@ -210,7 +210,7 @@ formatuuid
 
 <summary>
 
-SensitivityGroupCreateResponse object {id, created\_at, levels, 4 more }
+SensitivityGroupCreateResponse object { id, created\_at, levels, 4 more }
 
 </summary>
 
@@ -230,7 +230,7 @@ formatdate-time
 
 <summary>
 
-levels: array of object {id, created\_at, name, 2 more }
+levels: array of object { id, created\_at, name, 2 more }
 
 </summary>
 
@@ -292,7 +292,7 @@ formatuuid
 
 <summary>
 
-SensitivityGroupUpdateResponse object {id, created\_at, levels, 4 more }
+SensitivityGroupUpdateResponse object { id, created\_at, levels, 4 more }
 
 </summary>
 
@@ -312,7 +312,7 @@ formatdate-time
 
 <summary>
 
-levels: array of object {id, created\_at, name, 2 more }
+levels: array of object { id, created\_at, name, 2 more }
 
 </summary>
 
@@ -402,7 +402,7 @@ DELETE/accounts/{account\_id}/dlp/sensitivity\_groups/{sensitivity\_group\_id}/l
 
 <summary>
 
-LevelListResponse object {id, created\_at, name, 2 more }
+LevelListResponse object { id, created\_at, name, 2 more }
 
 </summary>
 
@@ -440,7 +440,7 @@ description: optional string
 
 <summary>
 
-LevelGetResponse object {id, created\_at, name, 2 more }
+LevelGetResponse object { id, created\_at, name, 2 more }
 
 </summary>
 
@@ -478,7 +478,7 @@ description: optional string
 
 <summary>
 
-LevelCreateResponse object {id, created\_at, name, 2 more }
+LevelCreateResponse object { id, created\_at, name, 2 more }
 
 </summary>
 
@@ -516,7 +516,7 @@ description: optional string
 
 <summary>
 
-LevelUpdateResponse object {id, created\_at, name, 2 more }
+LevelUpdateResponse object { id, created\_at, name, 2 more }
 
 </summary>
 
@@ -570,7 +570,7 @@ PUT/accounts/{account\_id}/dlp/sensitivity\_groups/{sensitivity\_group\_id}/leve
 
 <summary>
 
-OrderGetResponse object {level\_ids }
+OrderGetResponse object { level\_ids }
 
 The ordered list of level IDs for a sensitivity group. Used to get and set the ordering of levels independently of level attributes.
 
@@ -588,7 +588,7 @@ level\_ids: array of string
 
 <summary>
 
-OrderUpdateResponse object {level\_ids }
+OrderUpdateResponse object { level\_ids }
 
 The ordered list of level IDs for a sensitivity group. Used to get and set the ordering of levels independently of level attributes.
 

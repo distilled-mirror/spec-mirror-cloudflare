@@ -32,7 +32,7 @@ POST/accounts/{account\_id}/ai/finetunes
 
 <summary>
 
-FinetuneListResponse object {id, created\_at, model, 3 more }
+FinetuneListResponse object { id, created\_at, model, 3 more }
 
 </summary>
 
@@ -74,7 +74,7 @@ description: optional string
 
 <summary>
 
-FinetuneCreateResponse object {id, created\_at, model, 4 more }
+FinetuneCreateResponse object { id, created\_at, model, 4 more }
 
 </summary>
 
@@ -128,7 +128,7 @@ POST/accounts/{account\_id}/ai/finetunes/{finetune\_id}/finetune-assets
 
 <summary>
 
-AssetCreateResponse object {success }
+AssetCreateResponse object { success }
 
 </summary>
 
@@ -152,7 +152,7 @@ GET/accounts/{account\_id}/ai/finetunes/public
 
 <summary>
 
-PublicListResponse object {id, created\_at, model, 4 more }
+PublicListResponse object { id, created\_at, model, 4 more }
 
 </summary>
 

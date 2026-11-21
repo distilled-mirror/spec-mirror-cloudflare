@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Workers AI Write``Workers AI Read`
+`Workers AI Metadata Read``AI Search Index Engine``Auto Rag Write Run Engine``Workers AI Write``Workers AI Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -122,7 +122,7 @@ Filter by Task Name.
 
 <summary>
 
-object {errors, messages, result, success }
+object { errors, messages, result, success }
 
 </summary>
 
@@ -150,7 +150,7 @@ success: boolean
 
 <summary>
 
-Data object {data }
+Data object { data }
 
 Marketplace-format response. See <a href="https://openrouter.ai/docs/guides/get-started/for-providers">https://openrouter.ai/docs/guides/get-started/for-providers</a>.
 

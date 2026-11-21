@@ -30,7 +30,7 @@ PUT/zones/{zone\_id}/ai-security/settings
 
 <summary>
 
-AISecurityGetResponse object {enabled }
+AISecurityGetResponse object { enabled }
 
 AI Security for Apps enablement status for a zone.
 
@@ -50,7 +50,7 @@ Whether AI Security for Apps is enabled on the zone.
 
 <summary>
 
-AISecurityUpdateResponse object {enabled }
+AISecurityUpdateResponse object { enabled }
 
 AI Security for Apps enablement status for a zone.
 
@@ -82,7 +82,7 @@ PUT/zones/{zone\_id}/ai-security/custom-topics
 
 <summary>
 
-CustomTopicGetResponse object {topics }
+CustomTopicGetResponse object { topics }
 
 </summary>
 
@@ -90,7 +90,7 @@ CustomTopicGetResponse object {topics }
 
 <summary>
 
-topics: optional array of object {label, topic }
+topics: optional array of object { label, topic }
 
 Custom topic categories for AI Security for Apps content detection.
 
@@ -124,7 +124,7 @@ Description of the topic category. Must contain 2–50 UTF-8 bytes. Text in any 
 
 <summary>
 
-CustomTopicUpdateResponse object {topics }
+CustomTopicUpdateResponse object { topics }
 
 </summary>
 
@@ -132,7 +132,7 @@ CustomTopicUpdateResponse object {topics }
 
 <summary>
 
-topics: optional array of object {label, topic }
+topics: optional array of object { label, topic }
 
 Custom topic categories for AI Security for Apps content detection.
 

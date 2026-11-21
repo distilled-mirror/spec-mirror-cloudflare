@@ -94,7 +94,7 @@ Start of the date range. Alternative to `dateRange`; provide together with `date
 
 <summary>
 
-direction: optional "ORIGIN"or "TARGET"
+direction: optional "ORIGIN" or "TARGET"
 
 Specifies whether the <code>location</code> filter applies to the source or target location.
 
@@ -118,7 +118,7 @@ One of the following:
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -142,7 +142,7 @@ One of the following:
 
 <summary>
 
-ipVersion: optional array of "IPv4"or "IPv6"
+ipVersion: optional array of "IPv4" or "IPv6"
 
 Filters results by IP version (Ipv4 vs. IPv6).
 
@@ -180,7 +180,7 @@ Array of names used to label the series in the response.
 
 <summary>
 
-result: object {meta, summary\_0 }
+result: object { meta, summary\_0 }
 
 </summary>
 
@@ -188,7 +188,7 @@ result: object {meta, summary\_0 }
 
 <summary>
 
-meta: object {confidenceInfo, dateRange, lastUpdated, 2 more }
+meta: object { confidenceInfo, dateRange, lastUpdated, 2 more }
 
 Metadata for the results.
 
@@ -198,7 +198,7 @@ Metadata for the results.
 
 <summary>
 
-confidenceInfo: object {annotations, level }
+confidenceInfo: object { annotations, level }
 
 </summary>
 
@@ -206,7 +206,7 @@ confidenceInfo: object {annotations, level }
 
 <summary>
 
-annotations: array of object {dataSource, description, endDate, 5 more }
+annotations: array of object { dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -214,7 +214,7 @@ annotations: array of object {dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
+dataSource: "ALL" or "AI\_BOTS" or "AI\_GATEWAY" or 22 more
 
 Data source for annotations.
 
@@ -340,7 +340,7 @@ formatdate-time
 
 <summary>
 
-eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
+eventType: "GENERAL" or "OUTAGE" or "PARTIAL\_PROJECTION" or 2 more
 
 Event type for annotations.
 
@@ -412,7 +412,7 @@ Provides an indication of how much confidence Cloudflare has in the data.
 
 <summary>
 
-dateRange: array of object {endTime, startTime }
+dateRange: array of object { endTime, startTime }
 
 </summary>
 
@@ -448,7 +448,7 @@ formatdate-time
 
 <summary>
 
-normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
+normalization: "PERCENTAGE" or "MIN0\_MAX" or "MIN\_MAX" or 5 more
 
 Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
@@ -496,7 +496,7 @@ One of the following:
 
 <summary>
 
-units: array of object {name, value }
+units: array of object { name, value }
 
 Measurement units for the results.
 
@@ -522,7 +522,7 @@ value: string
 
 <summary>
 
-summary\_0: object {GRE, ICMP, TCP, UDP }
+summary\_0: object { GRE, ICMP, TCP, UDP }
 
 </summary>
 

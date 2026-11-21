@@ -32,7 +32,7 @@ GET/zones/{zone\_id}/spectrum/analytics/aggregate/current
 
 <summary>
 
-CurrentGetResponse = array of object {appID, bytesEgress, bytesIngress, 2 more }
+CurrentGetResponse = array of object { appID, bytesEgress, bytesIngress, 2 more }
 
 </summary>
 

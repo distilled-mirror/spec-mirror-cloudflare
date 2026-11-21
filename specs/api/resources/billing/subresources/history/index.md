@@ -28,7 +28,7 @@ GET/accounts/{account\_id}/billing/history
 
 <summary>
 
-HistoryListResponse object {id, action, amount, 12 more }
+HistoryListResponse object { id, action, amount, 12 more }
 
 </summary>
 

@@ -30,7 +30,7 @@ GET/accounts/{account\_id}/cloudforce-one/v2/brand-protection/domain/queries
 
 <summary>
 
-QueryGetResponse = array of object {created, parameters, query\_id, 3 more } or object {created, parameters, query\_id, 3 more }
+QueryGetResponse = array of object { created, parameters, query\_id, 3 more } or object { created, parameters, query\_id, 3 more }
 
 </summary>
 
@@ -40,7 +40,7 @@ One of the following:
 
 <summary>
 
-array of object {created, parameters, query\_id, 3 more }
+array of object { created, parameters, query\_id, 3 more }
 
 </summary>
 
@@ -52,7 +52,7 @@ created: string
 
 <summary>
 
-parameters: object {string\_matches, max\_time, min\_time }
+parameters: object { string\_matches, max\_time, min\_time }
 
 </summary>
 
@@ -60,7 +60,7 @@ parameters: object {string\_matches, max\_time, min\_time }
 
 <summary>
 
-string\_matches: array of object {pattern }
+string\_matches: array of object { pattern }
 
 </summary>
 
@@ -112,7 +112,7 @@ updated: string
 
 <summary>
 
-object {created, parameters, query\_id, 3 more }
+object { created, parameters, query\_id, 3 more }
 
 </summary>
 
@@ -124,7 +124,7 @@ created: string
 
 <summary>
 
-parameters: object {string\_matches, max\_time, min\_time }
+parameters: object { string\_matches, max\_time, min\_time }
 
 </summary>
 
@@ -132,7 +132,7 @@ parameters: object {string\_matches, max\_time, min\_time }
 
 <summary>
 
-string\_matches: array of object {pattern }
+string\_matches: array of object { pattern }
 
 </summary>
 

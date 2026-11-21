@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/zones/{zone\_id}/web3/hostnames
 
-List Web3 Hostnames
+Lists all Web3 hostnames configured for the zone.
 
 ##### Security
 
@@ -96,7 +96,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -138,7 +138,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -208,7 +208,7 @@ maxLength255
 
 <summary>
 
-status: optional "active"or "pending"or "deleting"or "error"
+status: optional "active" or "pending" or "deleting" or "error"
 
 Specifies the status of the hostname’s activation.
 
@@ -240,7 +240,7 @@ One of the following:
 
 <summary>
 
-target: optional "ethereum"or "ipfs"or "ipfs\_universal\_path"
+target: optional "ethereum" or "ipfs" or "ipfs\_universal\_path"
 
 Specify the target gateway of the hostname.
 
@@ -278,7 +278,7 @@ Specifies whether the API call was successful.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object { count, page, per\_page, total\_count }
 
 </summary>
 

@@ -46,7 +46,7 @@ GET/accounts/{account\_id}/autorag/rags/{id}/files
 
 <summary>
 
-AutoRAGAISearchResponse object {response, search\_query, data, 3 more }
+AutoRAGAISearchResponse object { response, search\_query, data, 3 more }
 
 </summary>
 
@@ -62,7 +62,7 @@ search\_query: string
 
 <summary>
 
-data: optional array of object {score, attributes, content, 2 more }
+data: optional array of object { score, attributes, content, 2 more }
 
 </summary>
 
@@ -78,7 +78,7 @@ attributes: optional unknown
 
 <summary>
 
-content: optional array of object {text, type }
+content: optional array of object { text, type }
 
 </summary>
 
@@ -126,7 +126,7 @@ object: optional string
 
 <summary>
 
-AutoRAGSearchResponse object {search\_query, data, has\_more, 2 more }
+AutoRAGSearchResponse object { search\_query, data, has\_more, 2 more }
 
 </summary>
 
@@ -138,7 +138,7 @@ search\_query: string
 
 <summary>
 
-data: optional array of object {score, attributes, content, 2 more }
+data: optional array of object { score, attributes, content, 2 more }
 
 </summary>
 
@@ -154,7 +154,7 @@ attributes: optional unknown
 
 <summary>
 
-content: optional array of object {text, type }
+content: optional array of object { text, type }
 
 </summary>
 
@@ -202,7 +202,7 @@ object: optional string
 
 <summary>
 
-AutoRAGSyncResponse object {job\_id }
+AutoRAGSyncResponse object { job\_id }
 
 </summary>
 
@@ -218,7 +218,7 @@ job\_id: string
 
 <summary>
 
-AutoRAGFilesResponse = array of object {error, key }
+AutoRAGFilesResponse = array of object { error, key }
 
 </summary>
 
@@ -260,7 +260,7 @@ GET/accounts/{account\_id}/autorag/rags/{id}/jobs/{job\_id}/logs
 
 <summary>
 
-JobListResponse object {id, source, end\_reason, 3 more }
+JobListResponse object { id, source, end\_reason, 3 more }
 
 </summary>
 
@@ -272,7 +272,7 @@ id: string
 
 <summary>
 
-source: "user"or "schedule"
+source: "user" or "schedule"
 
 </summary>
 
@@ -314,7 +314,7 @@ started\_at: optional string
 
 <summary>
 
-JobGetResponse object {id, source, end\_reason, 3 more }
+JobGetResponse object { id, source, end\_reason, 3 more }
 
 </summary>
 
@@ -326,7 +326,7 @@ id: string
 
 <summary>
 
-source: "user"or "schedule"
+source: "user" or "schedule"
 
 </summary>
 
@@ -368,7 +368,7 @@ started\_at: optional string
 
 <summary>
 
-JobLogsResponse = array of object {id, created\_at, message, message\_type }
+JobLogsResponse = array of object { id, created\_at, message, message\_type }
 
 </summary>
 

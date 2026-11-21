@@ -66,7 +66,7 @@ Filter by domain name related to the abuse report
 
 <summary>
 
-mitigation\_status: optional "pending"or "active"or "in\_review"or 2 more
+mitigation\_status: optional "pending" or "active" or "in\_review" or 2 more
 
 Filter reports that have any mitigations in the given status.
 
@@ -136,7 +136,7 @@ A property to sort by, followed by the order (id, cdate, domain, type, status)
 
 <summary>
 
-status: optional "accepted"or "in\_review"
+status: optional "accepted" or "in\_review"
 
 Filter by the status of the report.
 
@@ -160,7 +160,7 @@ One of the following:
 
 <summary>
 
-type: optional "PHISH"or "GEN"or "THREAT"or 6 more
+type: optional "PHISH" or "GEN" or "THREAT" or 6 more
 
 Filter by the type of the report.
 
@@ -218,7 +218,7 @@ success: boolean
 
 <summary>
 
-errors: optional array of object {message }
+errors: optional array of object { message }
 
 </summary>
 
@@ -234,7 +234,7 @@ message: string
 
 <summary>
 
-messages: optional array of object {message }
+messages: optional array of object { message }
 
 </summary>
 
@@ -250,7 +250,7 @@ message: string
 
 <summary>
 
-result: optional object {reports }
+result: optional object { reports }
 
 </summary>
 
@@ -258,7 +258,7 @@ result: optional object {reports }
 
 <summary>
 
-reports: array of object {id, cdate, domain, 8 more }
+reports: array of object { id, cdate, domain, 8 more }
 
 </summary>
 
@@ -284,7 +284,7 @@ Domain that relates to the report.
 
 <summary>
 
-mitigation\_summary: object {accepted\_url\_count, active\_count, external\_host\_notified, 2 more }
+mitigation\_summary: object { accepted\_url\_count, active\_count, external\_host\_notified, 2 more }
 
 A summary of the mitigations related to this report.
 
@@ -328,7 +328,7 @@ How many mitigations are pending their effective date.
 
 <summary>
 
-status: "accepted"or "in\_review"
+status: "accepted" or "in\_review"
 
 An enum value that represents the status of an abuse record
 
@@ -352,7 +352,7 @@ One of the following:
 
 <summary>
 
-type: "PHISH"or "GEN"or "THREAT"or 6 more
+type: "PHISH" or "GEN" or "THREAT" or 6 more
 
 The abuse report type
 
@@ -422,7 +422,7 @@ Original work / Targeted brand in the alleged abuse.
 
 <summary>
 
-submitter: optional object {company, email, name, telephone }
+submitter: optional object { company, email, name, telephone }
 
 Information about the submitter of the report.
 
@@ -464,7 +464,7 @@ urls: optional array of string
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

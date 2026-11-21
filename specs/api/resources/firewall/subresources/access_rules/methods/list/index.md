@@ -78,7 +78,7 @@ The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 
 <summary>
 
-configuration: optional object {target, value }
+configuration: optional object { target, value }
 
 </summary>
 
@@ -86,7 +86,7 @@ configuration: optional object {target, value }
 
 <summary>
 
-target: optional "ip"or "ip\_range"or "asn"or "country"
+target: optional "ip" or "ip\_range" or "asn" or "country"
 
 Defines the target to search in existing rules.
 
@@ -128,7 +128,7 @@ Defines the target value to search for in existing rules: an IP address, an IP a
 
 <summary>
 
-direction: optional "asc"or "desc"
+direction: optional "asc" or "desc"
 
 Defines the direction used to sort returned rules.
 
@@ -152,7 +152,7 @@ One of the following:
 
 <summary>
 
-match: optional "any"or "all"
+match: optional "any" or "all"
 
 Defines the search requirements. When set to <code>all</code>, all the search requirements must match. When set to <code>any</code>, only one of the search requirements has to match.
 
@@ -176,7 +176,7 @@ One of the following:
 
 <summary>
 
-mode: optional "block"or "challenge"or "whitelist"or 2 more
+mode: optional "block" or "challenge" or "whitelist" or 2 more
 
 The action to apply to a matched request.
 
@@ -218,7 +218,7 @@ Defines the string to search for in the notes of existing IP Access rules. Notes
 
 <summary>
 
-order: optional "configuration.target"or "configuration.value"or "mode"
+order: optional "configuration.target" or "configuration.value" or "mode"
 
 Defines the field used to sort returned rules.
 
@@ -252,6 +252,8 @@ per\_page: optional number
 
 Defines the maximum number of results requested.
 
+minimum1
+
 [Link to this property](#)%20firewall.access_rules%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20per_page%20%3E%20(schema)>)
 
 ##### ReturnsExpand Collapse
@@ -282,7 +284,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -324,7 +326,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -344,7 +346,7 @@ pointer: optional string
 
 <summary>
 
-result: array of object {id, allowed\_modes, configuration, 5 more }
+result: array of object { id, allowed\_modes, configuration, 5 more }
 
 </summary>
 
@@ -360,7 +362,7 @@ maxLength32
 
 <summary>
 
-allowed\_modes: array of "block"or "challenge"or "whitelist"or 2 more
+allowed\_modes: array of "block" or "challenge" or "whitelist" or 2 more
 
 The available actions that a rule can apply to a matched request.
 
@@ -408,7 +410,7 @@ One of the following:
 
 <summary>
 
-AccessRuleIPConfiguration object {target, value }
+AccessRuleIPConfiguration object { target, value }
 
 </summary>
 
@@ -432,7 +434,7 @@ The IP address to match. This address will be compared to the IP address of inco
 
 <summary>
 
-IPV6Configuration object {target, value }
+IPV6Configuration object { target, value }
 
 </summary>
 
@@ -456,7 +458,7 @@ The IPv6 address to match.
 
 <summary>
 
-AccessRuleCIDRConfiguration object {target, value }
+AccessRuleCIDRConfiguration object { target, value }
 
 </summary>
 
@@ -480,7 +482,7 @@ The IP address range to match. You can only use prefix lengths <code>/16</code> 
 
 <summary>
 
-ASNConfiguration object {target, value }
+ASNConfiguration object { target, value }
 
 </summary>
 
@@ -504,7 +506,7 @@ The AS number to match.
 
 <summary>
 
-CountryConfiguration object {target, value }
+CountryConfiguration object { target, value }
 
 </summary>
 
@@ -532,7 +534,7 @@ The two-letter ISO-3166-1 alpha-2 code to match. For more information, refer to 
 
 <summary>
 
-mode: "block"or "challenge"or "whitelist"or 2 more
+mode: "block" or "challenge" or "whitelist" or 2 more
 
 The action to apply to a matched request.
 
@@ -590,7 +592,7 @@ An informative summary of the rule, typically used as a reminder or explanation.
 
 <summary>
 
-scope: optional object {id, email, type }
+scope: optional object { id, email, type }
 
 All zones owned by the user will have the rule applied.
 
@@ -616,7 +618,7 @@ maxLength90
 
 <summary>
 
-type: optional "user"or "organization"
+type: optional "user" or "organization"
 
 Defines the scope of the rule.
 
@@ -654,7 +656,7 @@ Defines whether the API call was successful.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object { count, page, per\_page, total\_count }
 
 </summary>
 

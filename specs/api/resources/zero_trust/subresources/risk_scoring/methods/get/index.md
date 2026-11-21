@@ -76,7 +76,7 @@ formatuuid
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -98,7 +98,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -118,7 +118,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -140,7 +140,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -166,7 +166,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {email, events, name, 2 more }
+result: optional object { email, events, name, 2 more }
 
 </summary>
 
@@ -178,7 +178,7 @@ email: string
 
 <summary>
 
-events: array of object {id, name, risk\_level, 2 more }
+events: array of object { id, name, risk\_level, 2 more }
 
 </summary>
 
@@ -194,7 +194,7 @@ name: string
 
 <summary>
 
-risk\_level: "info"or "low"or "medium"or "high"
+risk\_level: "info" or "low" or "medium" or "high"
 
 </summary>
 
@@ -248,7 +248,7 @@ formatdate-time
 
 <summary>
 
-risk\_level: optional "info"or "low"or "medium"or "high"
+risk\_level: optional "info" or "low" or "medium" or "high"
 
 </summary>
 
@@ -282,7 +282,7 @@ One of the following:
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

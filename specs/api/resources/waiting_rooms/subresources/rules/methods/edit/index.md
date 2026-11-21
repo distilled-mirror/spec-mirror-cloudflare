@@ -108,7 +108,7 @@ When set to true, the rule is enabled.
 
 <summary>
 
-position: optional object {index } or object {before } or object {after }
+position: optional object { index } or object { before } or object { after }
 
 Reorder the position of a rule
 
@@ -120,7 +120,7 @@ One of the following:
 
 <summary>
 
-Index object {index }
+Index object { index }
 
 </summary>
 
@@ -138,7 +138,7 @@ Places the rule in the exact position specified by the integer number &lt;POSITI
 
 <summary>
 
-Before object {before }
+Before object { before }
 
 </summary>
 
@@ -156,7 +156,7 @@ Places the rule before rule &lt;RULE\_ID&gt;. Use this argument with an empty ru
 
 <summary>
 
-After object {after }
+After object { after }
 
 </summary>
 
@@ -180,7 +180,7 @@ Places the rule after rule &lt;RULE\_ID&gt;. Use this argument with an empty rul
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -202,7 +202,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -222,7 +222,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -244,7 +244,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -324,7 +324,7 @@ The version of the rule.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

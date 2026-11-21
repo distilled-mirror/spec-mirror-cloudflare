@@ -32,7 +32,7 @@ POST/accounts/{account\_id}/zt\_risk\_scoring/{user\_id}/reset
 
 <summary>
 
-RiskScoringGetResponse object {email, events, name, 2 more }
+RiskScoringGetResponse object { email, events, name, 2 more }
 
 </summary>
 
@@ -44,7 +44,7 @@ email: string
 
 <summary>
 
-events: array of object {id, name, risk\_level, 2 more }
+events: array of object { id, name, risk\_level, 2 more }
 
 </summary>
 
@@ -60,7 +60,7 @@ name: string
 
 <summary>
 
-risk\_level: "info"or "low"or "medium"or "high"
+risk\_level: "info" or "low" or "medium" or "high"
 
 </summary>
 
@@ -114,7 +114,7 @@ formatdate-time
 
 <summary>
 
-risk\_level: optional "info"or "low"or "medium"or "high"
+risk\_level: optional "info" or "low" or "medium" or "high"
 
 </summary>
 
@@ -164,7 +164,7 @@ PUT/accounts/{account\_id}/zt\_risk\_scoring/behaviors
 
 <summary>
 
-BehaviourGetResponse object {behaviors }
+BehaviourGetResponse object { behaviors }
 
 </summary>
 
@@ -172,7 +172,7 @@ BehaviourGetResponse object {behaviors }
 
 <summary>
 
-behaviors: map\[object {description, enabled, name, risk\_level } ]
+behaviors: map\[object { description, enabled, name, risk\_level } ]
 
 </summary>
 
@@ -192,7 +192,7 @@ name: string
 
 <summary>
 
-risk\_level: "info"or "low"or "medium"or "high"
+risk\_level: "info" or "low" or "medium" or "high"
 
 </summary>
 
@@ -230,7 +230,7 @@ One of the following:
 
 <summary>
 
-BehaviourUpdateResponse object {behaviors }
+BehaviourUpdateResponse object { behaviors }
 
 </summary>
 
@@ -238,7 +238,7 @@ BehaviourUpdateResponse object {behaviors }
 
 <summary>
 
-behaviors: map\[object {enabled, risk\_level } ]
+behaviors: map\[object { enabled, risk\_level } ]
 
 </summary>
 
@@ -250,7 +250,7 @@ enabled: boolean
 
 <summary>
 
-risk\_level: "info"or "low"or "medium"or "high"
+risk\_level: "info" or "low" or "medium" or "high"
 
 </summary>
 
@@ -296,7 +296,7 @@ GET/accounts/{account\_id}/zt\_risk\_scoring/summary
 
 <summary>
 
-SummaryGetResponse object {users }
+SummaryGetResponse object { users }
 
 </summary>
 
@@ -304,7 +304,7 @@ SummaryGetResponse object {users }
 
 <summary>
 
-users: array of object {email, event\_count, last\_event, 3 more }
+users: array of object { email, event\_count, last\_event, 3 more }
 
 </summary>
 
@@ -328,7 +328,7 @@ formatdate-time
 
 <summary>
 
-max\_risk\_level: "info"or "low"or "medium"or "high"
+max\_risk\_level: "info" or "low" or "medium" or "high"
 
 </summary>
 
@@ -400,7 +400,7 @@ DELETE/accounts/{account\_id}/zt\_risk\_scoring/integrations/{integration\_id}
 
 <summary>
 
-IntegrationListResponse object {id, account\_tag, active, 5 more }
+IntegrationListResponse object { id, account\_tag, active, 5 more }
 
 </summary>
 
@@ -462,7 +462,7 @@ The URL for the Shared Signals Framework configuration, e.g. “/.well-known/sse
 
 <summary>
 
-IntegrationGetResponse object {id, account\_tag, active, 5 more }
+IntegrationGetResponse object { id, account\_tag, active, 5 more }
 
 </summary>
 
@@ -524,7 +524,7 @@ The URL for the Shared Signals Framework configuration, e.g. “/.well-known/sse
 
 <summary>
 
-IntegrationCreateResponse object {id, account\_tag, active, 5 more }
+IntegrationCreateResponse object { id, account\_tag, active, 5 more }
 
 </summary>
 
@@ -586,7 +586,7 @@ The URL for the Shared Signals Framework configuration, e.g. “/.well-known/sse
 
 <summary>
 
-IntegrationUpdateResponse object {id, account\_tag, active, 5 more }
+IntegrationUpdateResponse object { id, account\_tag, active, 5 more }
 
 </summary>
 
@@ -660,7 +660,7 @@ GET/accounts/{account\_id}/zt\_risk\_scoring/integrations/reference\_id/{referen
 
 <summary>
 
-ReferenceGetResponse object {id, account\_tag, active, 5 more }
+ReferenceGetResponse object { id, account\_tag, active, 5 more }
 
 </summary>
 

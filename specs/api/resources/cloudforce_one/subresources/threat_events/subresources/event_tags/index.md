@@ -34,7 +34,7 @@ DELETE/accounts/{account\_id}/cloudforce-one/events/event\_tag/{event\_id}
 
 <summary>
 
-EventTagCreateResponse object {success }
+EventTagCreateResponse object { success }
 
 </summary>
 
@@ -50,7 +50,7 @@ success: boolean
 
 <summary>
 
-EventTagDeleteResponse object {success }
+EventTagDeleteResponse object { success }
 
 </summary>
 

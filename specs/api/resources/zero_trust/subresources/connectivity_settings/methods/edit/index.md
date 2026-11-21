@@ -88,7 +88,7 @@ A flag to enable WARP to WARP traffic.
 
 <summary>
 
-errors: array of object {code, message, context }
+errors: array of object { code, message, context }
 
 </summary>
 
@@ -116,7 +116,7 @@ Optional error-specific context.
 
 <summary>
 
-messages: array of object {code, message, context }
+messages: array of object { code, message, context }
 
 </summary>
 
@@ -144,7 +144,7 @@ Optional error-specific context.
 
 <summary>
 
-result: object {icmp\_proxy\_enabled, offramp\_warp\_enabled }
+result: object { icmp\_proxy\_enabled, offramp\_warp\_enabled }
 
 </summary>
 

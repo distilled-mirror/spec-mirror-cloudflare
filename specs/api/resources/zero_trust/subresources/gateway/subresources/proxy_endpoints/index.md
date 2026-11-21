@@ -52,7 +52,7 @@ Specify an IPv4 or IPv6 CIDR. Limit IPv6 to a maximum of /109 and IPv4 to a maxi
 
 <summary>
 
-ProxyEndpoint = object {ips, name, id, 4 more } or object {kind, name, id, 3 more }
+ProxyEndpoint = object { ips, name, id, 4 more } or object { kind, name, id, 3 more }
 
 </summary>
 
@@ -62,7 +62,7 @@ One of the following:
 
 <summary>
 
-IP object {ips, name, id, 4 more }
+IP object { ips, name, id, 4 more }
 
 </summary>
 
@@ -114,7 +114,7 @@ formatdate-time
 
 <summary>
 
-Identity object {kind, name, id, 3 more }
+Identity object { kind, name, id, 3 more }
 
 </summary>
 

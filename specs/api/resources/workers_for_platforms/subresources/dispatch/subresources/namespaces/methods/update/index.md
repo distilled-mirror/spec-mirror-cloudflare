@@ -58,7 +58,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Workers Scripts Write`
+`Workers Editor``Workers Admin``Individual Workers Editor``Individual Workers Admin``Workers Scripts Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -80,7 +80,7 @@ Name of the Workers for Platforms dispatch namespace.
 
 name: optional string
 
-The name of the dispatch namespace.
+The name of the dispatch namespace. Must match the namespace’s current name. Dispatch namespaces cannot be renamed.
 
 [Link to this property](#)%20workers_for_platforms.dispatch.namespaces%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20name%20%3E%20(schema)>)
 
@@ -96,7 +96,7 @@ Whether the Workers in the namespace are executed in a “trusted” manner. Whe
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -118,7 +118,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -138,7 +138,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -160,7 +160,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -186,7 +186,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {created\_by, created\_on, modified\_by, 5 more }
+result: optional object { created\_by, created\_on, modified\_by, 5 more }
 
 </summary>
 

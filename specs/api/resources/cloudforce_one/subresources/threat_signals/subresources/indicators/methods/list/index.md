@@ -104,7 +104,7 @@ Sort by id. Use id for ascending or -id for descending order; defaults to id.
 
 <summary>
 
-errors: array of object {message }
+errors: array of object { message }
 
 </summary>
 
@@ -120,7 +120,7 @@ message: string
 
 <summary>
 
-result: object {indicators, pagination }
+result: object { indicators, pagination }
 
 </summary>
 
@@ -128,7 +128,7 @@ result: object {indicators, pagination }
 
 <summary>
 
-indicators: array of object {id, article\_id, article\_title, 5 more }
+indicators: array of object { id, article\_id, article\_title, 5 more }
 
 </summary>
 
@@ -180,7 +180,7 @@ value: string
 
 <summary>
 
-pagination: object {count, cursor, has\_more, 4 more }
+pagination: object { count, cursor, has\_more, 4 more }
 
 </summary>
 

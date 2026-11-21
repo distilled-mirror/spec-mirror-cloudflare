@@ -72,7 +72,7 @@ overwrite: optional boolean
 
 <summary>
 
-source: optional object {bucket, secret, vendor, 4 more } or object {bucket, secret, vendor, 2 more } or object {bucket, secret, vendor, 3 more }
+source: optional object { bucket, secret, vendor, 4 more } or object { bucket, secret, vendor, 2 more } or object { bucket, secret, vendor, 3 more }
 
 </summary>
 
@@ -82,7 +82,7 @@ One of the following:
 
 <summary>
 
-R2SlurperS3SourceSchema object {bucket, secret, vendor, 4 more }
+R2SlurperS3SourceSchema object { bucket, secret, vendor, 4 more }
 
 </summary>
 
@@ -94,7 +94,7 @@ bucket: string
 
 <summary>
 
-secret: object {accessKeyId, secretAccessKey }
+secret: object { accessKeyId, secretAccessKey }
 
 </summary>
 
@@ -142,7 +142,7 @@ region: optional string
 
 <summary>
 
-R2SlurperGcsSourceSchema object {bucket, secret, vendor, 2 more }
+R2SlurperGcsSourceSchema object { bucket, secret, vendor, 2 more }
 
 </summary>
 
@@ -154,7 +154,7 @@ bucket: string
 
 <summary>
 
-secret: object {clientEmail, privateKey }
+secret: object { clientEmail, privateKey }
 
 </summary>
 
@@ -190,7 +190,7 @@ pathPrefix: optional string
 
 <summary>
 
-R2SlurperR2SourceSchema object {bucket, secret, vendor, 3 more }
+R2SlurperR2SourceSchema object { bucket, secret, vendor, 3 more }
 
 </summary>
 
@@ -202,7 +202,7 @@ bucket: string
 
 <summary>
 
-secret: object {accessKeyId, secretAccessKey }
+secret: object { accessKeyId, secretAccessKey }
 
 </summary>
 
@@ -226,7 +226,7 @@ vendor: <a href="https://developers.cloudflare.com/api/resources/r2#(resource)%2
 
 <summary>
 
-jurisdiction: optional "default"or "eu"or "us"or "fedramp"
+jurisdiction: optional "default" or "eu" or "us" or "fedramp"
 
 </summary>
 
@@ -272,7 +272,7 @@ pathPrefix: optional string
 
 <summary>
 
-target: optional object {bucket, secret, vendor, jurisdiction }
+target: optional object { bucket, secret, vendor, jurisdiction }
 
 </summary>
 
@@ -284,7 +284,7 @@ bucket: string
 
 <summary>
 
-secret: object {accessKeyId, secretAccessKey }
+secret: object { accessKeyId, secretAccessKey }
 
 </summary>
 
@@ -308,7 +308,7 @@ vendor: <a href="https://developers.cloudflare.com/api/resources/r2#(resource)%2
 
 <summary>
 
-jurisdiction: optional "default"or "eu"or "us"or "fedramp"
+jurisdiction: optional "default" or "eu" or "us" or "fedramp"
 
 </summary>
 
@@ -368,7 +368,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -392,7 +392,7 @@ messages: optional array of string
 
 <summary>
 
-result: optional object {id }
+result: optional object { id }
 
 </summary>
 

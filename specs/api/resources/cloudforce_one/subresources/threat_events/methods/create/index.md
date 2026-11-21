@@ -64,7 +64,7 @@ event: string
 
 <summary>
 
-raw: object {data, source, tlp }
+raw: object { data, source, tlp }
 
 </summary>
 
@@ -112,7 +112,7 @@ indicator: optional string
 
 <summary>
 
-indicators: optional array of object {indicatorType, value }
+indicators: optional array of object { indicatorType, value }
 
 Array of indicators for this event. Supports multiple indicators per event for complex scenarios.
 
@@ -146,7 +146,7 @@ insight: optional string
 
 <summary>
 
-source: optional object {resourceId, resourceType, system, title }
+source: optional object { resourceId, resourceType, system, title }
 
 Controlled provenance for an event and its indicators derived from a Threat Signals article.
 

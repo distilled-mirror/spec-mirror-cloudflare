@@ -48,7 +48,7 @@ DELETE/accounts/{account\_id}/load\_balancers/monitor\_groups/{monitor\_group\_i
 
 <summary>
 
-MonitorGroup object {id, description, members, 2 more }
+MonitorGroup object { id, description, members, 2 more }
 
 </summary>
 
@@ -68,7 +68,7 @@ A short description of the monitor group
 
 <summary>
 
-members: array of object {enabled, monitor\_id, monitoring\_only, 3 more }
+members: array of object { enabled, monitor\_id, monitoring\_only, 3 more }
 
 List of monitors in this group
 
@@ -150,7 +150,7 @@ GET/accounts/{account\_id}/load\_balancers/monitor\_groups/{monitor\_group\_id}/
 
 <summary>
 
-ReferenceGetResponse object {reference\_type, resource\_id, resource\_name, resource\_type }
+ReferenceGetResponse object { reference\_type, resource\_id, resource\_name, resource\_type }
 
 </summary>
 
@@ -158,7 +158,7 @@ ReferenceGetResponse object {reference\_type, resource\_id, resource\_name, reso
 
 <summary>
 
-reference\_type: optional "\*"or "referral"or "referrer"
+reference\_type: optional "\*" or "referral" or "referrer"
 
 </summary>
 

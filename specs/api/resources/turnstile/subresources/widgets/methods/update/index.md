@@ -88,7 +88,7 @@ maxLength10
 
 <summary>
 
-mode: "non-interactive"or "invisible"or "managed"
+mode: "non-interactive" or "invisible" or "managed"
 
 Widget Mode
 
@@ -132,7 +132,7 @@ If bot\_fight\_mode is set to `true`, Cloudflare issues computationally expensiv
 
 <summary>
 
-clearance\_level: optional "no\_clearance"or "jschallenge"or "managed"or "interactive"
+clearance\_level: optional "no\_clearance" or "jschallenge" or "managed" or "interactive"
 
 If Turnstile is embedded on a Cloudflare site and the widget should grant challenge clearance, this setting can determine the clearance level to be set
 
@@ -172,30 +172,6 @@ Do not show any Cloudflare branding on the widget (ENT only).
 
 [Link to this property](#)%20turnstile.widgets%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20offlabel%20%3E%20(schema)>)
 
-<details>
-
-<summary>
-
-region: optional "world"or "china"
-
-Region where this widget can be used. This cannot be changed after creation.
-
-</summary>
-
-One of the following:
-
-"world"
-
-<a href="#">Link to this property</a>
-
-"china"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-[Link to this property](#)%20turnstile.widgets%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20region%20%3E%20(schema)>)
-
 ##### ReturnsExpand Collapse
 
 <details>
@@ -224,7 +200,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -266,7 +242,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -308,7 +284,7 @@ If bot\_fight\_mode is set to <code>true</code>, Cloudflare issues computational
 
 <summary>
 
-clearance\_level: "no\_clearance"or "jschallenge"or "managed"or "interactive"
+clearance\_level: "no\_clearance" or "jschallenge" or "managed" or "interactive"
 
 If Turnstile is embedded on a Cloudflare site and the widget should grant challenge clearance, this setting can determine the clearance level to be set
 
@@ -360,7 +336,7 @@ Return the Ephemeral ID in /siteverify (ENT only).
 
 <summary>
 
-mode: "non-interactive"or "invisible"or "managed"
+mode: "non-interactive" or "invisible" or "managed"
 
 Widget Mode
 
@@ -412,7 +388,7 @@ Do not show any Cloudflare branding on the widget (ENT only).
 
 <summary>
 
-region: "world"or "china"
+region: "world" or "china"
 
 Region where this widget can be used. This cannot be changed after creation.
 
@@ -450,7 +426,7 @@ maxLength32
 
 <summary>
 
-deployed\_via: optional "wrangler"or "dashboard"or "spin"or 2 more
+deployed\_via: optional "wrangler" or "dashboard" or "spin" or 2 more
 
 Origin that created this widget, recorded at creation time and immutable afterward. Server-derived from the create request; not client-settable. Omitted from the response for widgets created before this field existed.
 
@@ -486,7 +462,7 @@ One of the following:
 
 <summary>
 
-last\_modified\_via: optional "wrangler"or "dashboard"or "spin"or 2 more
+last\_modified\_via: optional "wrangler" or "dashboard" or "spin" or 2 more
 
 Origin of the most recent mutation (create, update, delete, or secret rotation). Server-derived; not client-settable. Omitted for widgets last mutated before this field existed.
 

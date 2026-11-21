@@ -44,7 +44,7 @@ DELETE/zones/{zone\_id}/waiting\_rooms/{waiting\_room\_id}/rules/{rule\_id}
 
 <summary>
 
-WaitingRoomRule object {id, action, description, 4 more }
+WaitingRoomRule object { id, action, description, 4 more }
 
 </summary>
 

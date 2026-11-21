@@ -62,7 +62,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 <summary>
 
-identifier: "1000\_errors"or "500\_errors"or "basic\_challenge"or 7 more
+identifier: "1000\_errors" or "500\_errors" or "basic\_challenge" or 7 more
 
 Custom page type.
 
@@ -132,7 +132,7 @@ The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 
 <summary>
 
-state: "default"or "customized"
+state: "default" or "customized"
 
 The custom page state.
 
@@ -166,7 +166,7 @@ formaturi
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -188,7 +188,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -208,7 +208,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -230,7 +230,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -256,7 +256,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, created\_on, description, 5 more }
+result: optional object { id, created\_on, description, 5 more }
 
 </summary>
 
@@ -292,7 +292,7 @@ required\_tokens: optional array of string
 
 <summary>
 
-state: optional "default"or "customized"
+state: optional "default" or "customized"
 
 The custom page state.
 

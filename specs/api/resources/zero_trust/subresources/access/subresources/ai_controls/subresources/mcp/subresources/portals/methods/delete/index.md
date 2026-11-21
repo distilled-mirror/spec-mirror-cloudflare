@@ -86,7 +86,7 @@ minLength1
 
 <summary>
 
-result: object {id, hostname, name, 8 more }
+result: object { id, hostname, name, 8 more }
 
 </summary>
 
@@ -124,7 +124,7 @@ Deprecated: use <code>code_mode</code> for new integrations. <code>true</code> m
 
 <summary>
 
-code\_mode: optional "off"or "opt\_in"or "default\_on"or "enforced"
+code\_mode: optional "off" or "opt\_in" or "default\_on" or "enforced"
 
 Code Mode policy for this portal. <code>off</code>: Code Mode is unavailable; query parameters are ignored. <code>opt_in</code>: Code Mode is off by default; clients turn it on with <code>?codemode=search_and_execute</code>. <code>default_on</code>: Code Mode is on by default; clients can opt out with <code>?codemode=off</code>. <code>enforced</code>: Code Mode is always on; query parameters are ignored. Defaults to <code>opt_in</code> when omitted on create. If both <code>code_mode</code> and <code>allow_code_mode</code> are sent, they must be consistent or the request returns a 400.
 

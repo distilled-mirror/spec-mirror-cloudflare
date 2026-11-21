@@ -30,7 +30,7 @@ GET/radar/ranking/domain/{domain}
 
 <summary>
 
-DomainGetResponse object {details\_0, meta }
+DomainGetResponse object { details\_0, meta }
 
 </summary>
 
@@ -38,7 +38,7 @@ DomainGetResponse object {details\_0, meta }
 
 <summary>
 
-details\_0: object {categories, bucket, rank, top\_locations }
+details\_0: object { categories, bucket, rank, top\_locations }
 
 </summary>
 
@@ -46,7 +46,7 @@ details\_0: object {categories, bucket, rank, top\_locations }
 
 <summary>
 
-categories: array of object {id, name, superCategoryId }
+categories: array of object { id, name, superCategoryId }
 
 </summary>
 
@@ -80,7 +80,7 @@ rank: optional number
 
 <summary>
 
-top\_locations: optional array of object {locationCode, locationName, rank }
+top\_locations: optional array of object { locationCode, locationName, rank }
 
 </summary>
 
@@ -108,7 +108,7 @@ rank: number
 
 <summary>
 
-meta: object {dateRange }
+meta: object { dateRange }
 
 </summary>
 
@@ -116,7 +116,7 @@ meta: object {dateRange }
 
 <summary>
 
-dateRange: array of object {endTime, startTime }
+dateRange: array of object { endTime, startTime }
 
 </summary>
 

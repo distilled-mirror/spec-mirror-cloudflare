@@ -32,7 +32,7 @@ GET/accounts/{account\_id}/access/users/{user\_id}/failed\_logins
 
 <summary>
 
-FailedLoginListResponse object {expiration, metadata }
+FailedLoginListResponse object { expiration, metadata }
 
 </summary>
 

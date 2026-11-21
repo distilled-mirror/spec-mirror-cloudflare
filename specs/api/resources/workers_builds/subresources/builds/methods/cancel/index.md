@@ -80,7 +80,7 @@ formatuuid
 
 <summary>
 
-errors: array of object {message, code }
+errors: array of object { message, code }
 
 </summary>
 
@@ -104,7 +104,7 @@ messages: array of string
 
 <summary>
 
-result: object {build\_outcome, build\_uuid, stopped\_on } or object {build\_outcome, build\_uuid, stopped\_on }
+result: object { build\_outcome, build\_uuid, stopped\_on } or object { build\_outcome, build\_uuid, stopped\_on }
 
 </summary>
 
@@ -114,7 +114,7 @@ One of the following:
 
 <summary>
 
-object {build\_outcome, build\_uuid, stopped\_on }
+object { build\_outcome, build\_uuid, stopped\_on }
 
 </summary>
 
@@ -122,7 +122,7 @@ object {build\_outcome, build\_uuid, stopped\_on }
 
 <summary>
 
-build\_outcome: optional "success"or "fail"or "skipped"or 2 more
+build\_outcome: optional "success" or "fail" or "skipped" or 2 more
 
 </summary>
 
@@ -174,7 +174,7 @@ formatdate-time
 
 <summary>
 
-object {build\_outcome, build\_uuid, stopped\_on }
+object { build\_outcome, build\_uuid, stopped\_on }
 
 </summary>
 
@@ -182,7 +182,7 @@ object {build\_outcome, build\_uuid, stopped\_on }
 
 <summary>
 
-build\_outcome: optional "success"or "fail"or "skipped"or 2 more
+build\_outcome: optional "success" or "fail" or "skipped" or 2 more
 
 </summary>
 
@@ -242,7 +242,7 @@ success: boolean
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

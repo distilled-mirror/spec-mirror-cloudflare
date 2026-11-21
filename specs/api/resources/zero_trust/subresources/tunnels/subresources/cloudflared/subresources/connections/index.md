@@ -36,7 +36,7 @@ DELETE/accounts/{account\_id}/cfd\_tunnel/{tunnel\_id}/connections
 
 <summary>
 
-Client object {id, arch, config\_version, 4 more }
+Client object { id, arch, config\_version, 4 more }
 
 A client (typically cloudflared) that maintains connections to a Cloudflare data center.
 
@@ -68,7 +68,7 @@ The version of the remote tunnel configuration. Used internally to sync cloudfla
 
 <summary>
 
-conns: optional array of object {id, client\_id, client\_version, 5 more }
+conns: optional array of object { id, client\_id, client\_version, 5 more }
 
 The Cloudflare Tunnel connections between your origin and Cloudflare’s edge.
 

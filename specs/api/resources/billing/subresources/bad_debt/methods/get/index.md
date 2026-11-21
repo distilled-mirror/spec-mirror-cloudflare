@@ -92,7 +92,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -134,7 +134,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -154,7 +154,7 @@ pointer: optional string
 
 <summary>
 
-result: object {already\_paid, bad\_debt\_status, invoices, total\_debt\_amount }
+result: object { already\_paid, bad\_debt\_status, invoices, total\_debt\_amount }
 
 </summary>
 
@@ -174,7 +174,7 @@ The current bad debt status of the account.
 
 <summary>
 
-invoices: optional array of object {id, action, amount, 12 more }
+invoices: optional array of object { id, action, amount, 12 more }
 
 List of outstanding invoices contributing to bad debt.
 

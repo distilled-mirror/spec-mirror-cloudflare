@@ -44,7 +44,7 @@ PATCH/accounts/{account\_id}/billing/profile
 
 <summary>
 
-ProfileGetResponse object {id, account\_type, address, 35 more }
+ProfileGetResponse object { id, account\_type, address, 35 more }
 
 </summary>
 
@@ -218,7 +218,7 @@ zipcode: optional string
 
 <summary>
 
-ProfileCreateResponse object {id, account\_type, address, 35 more }
+ProfileCreateResponse object { id, account\_type, address, 35 more }
 
 </summary>
 
@@ -392,7 +392,7 @@ zipcode: optional string
 
 <summary>
 
-ProfileUpdateResponse object {id, account\_type, address, 35 more }
+ProfileUpdateResponse object { id, account\_type, address, 35 more }
 
 </summary>
 
@@ -566,7 +566,7 @@ zipcode: optional string
 
 <summary>
 
-ProfileUpdateBillingEmailResponse object {id, account\_type, address, 35 more }
+ProfileUpdateBillingEmailResponse object { id, account\_type, address, 35 more }
 
 </summary>
 
@@ -748,7 +748,7 @@ POST/accounts/{account\_id}/billing/profile/payment-method
 
 <summary>
 
-PaymentMethodCreateResponse object {client\_secret, intent\_type }
+PaymentMethodCreateResponse object { client\_secret, intent\_type }
 
 </summary>
 

@@ -34,7 +34,7 @@ GET/accounts/{account\_id}/builds/account/limits
 
 <summary>
 
-WorkersBuildGetLatestBuildsResponse = object {builds } or object {builds }
+WorkersBuildGetLatestBuildsResponse = object { builds } or object { builds }
 
 </summary>
 
@@ -44,7 +44,7 @@ One of the following:
 
 <summary>
 
-Builds object {builds }
+Builds object { builds }
 
 </summary>
 
@@ -52,7 +52,7 @@ Builds object {builds }
 
 <summary>
 
-builds: optional map\[object {build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more } ]
+builds: optional map\[object { build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more } ]
 
 </summary>
 
@@ -60,7 +60,7 @@ builds: optional map\[object {build\_outcome, build\_trigger\_metadata, build\_u
 
 <summary>
 
-build\_outcome: optional "success"or "fail"or "skipped"or 2 more
+build\_outcome: optional "success" or "fail" or "skipped" or 2 more
 
 </summary>
 
@@ -94,7 +94,7 @@ One of the following:
 
 <summary>
 
-build\_trigger\_metadata: optional object {author, branch, build\_command, 11 more }
+build\_trigger\_metadata: optional object { author, branch, build\_command, 11 more }
 
 </summary>
 
@@ -130,7 +130,7 @@ formatuuid
 
 <summary>
 
-build\_trigger\_source: optional "push"or "pull\_request"or "manual"or "api"
+build\_trigger\_source: optional "push" or "pull\_request" or "manual" or "api"
 
 </summary>
 
@@ -186,7 +186,7 @@ Human-readable name of the account or namespace that owns the repository.
 
 <summary>
 
-provider\_type: optional "github"or "gitlab"or "gitlab\_internal"or "origin"
+provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
 
 Source control provider.
 
@@ -248,7 +248,7 @@ formatdate-time
 
 <summary>
 
-deploy\_hook: optional object {deploy\_hook\_name }
+deploy\_hook: optional object { deploy\_hook\_name }
 
 </summary>
 
@@ -290,7 +290,7 @@ formaturi
 
 <summary>
 
-pull\_request: optional object {closed\_on, created\_on, pull\_request\_url }
+pull\_request: optional object { closed\_on, created\_on, pull\_request\_url }
 
 </summary>
 
@@ -326,7 +326,7 @@ formatdate-time
 
 <summary>
 
-status: optional "queued"or "initializing"or "running"or "stopped"
+status: optional "queued" or "initializing" or "running" or "stopped"
 
 </summary>
 
@@ -362,7 +362,7 @@ formatdate-time
 
 <summary>
 
-trigger: optional object {branch\_excludes, branch\_includes, build\_caching\_enabled, 12 more }
+trigger: optional object { branch\_excludes, branch\_includes, build\_caching\_enabled, 12 more }
 
 Trigger information without build\_token\_uuid
 
@@ -438,7 +438,7 @@ Path patterns that can start builds.
 
 <summary>
 
-repo\_connection: optional object {created\_on, deleted\_on, modified\_on, 6 more }
+repo\_connection: optional object { created\_on, deleted\_on, modified\_on, 6 more }
 
 </summary>
 
@@ -476,7 +476,7 @@ Human-readable name of the account or namespace that owns the repository.
 
 <summary>
 
-provider\_type: optional "github"or "gitlab"or "gitlab\_internal"or "origin"
+provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
 
 Source control provider.
 
@@ -564,7 +564,7 @@ formatuuid
 
 <summary>
 
-Builds object {builds }
+Builds object { builds }
 
 </summary>
 
@@ -572,7 +572,7 @@ Builds object {builds }
 
 <summary>
 
-builds: optional map\[object {build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more } ]
+builds: optional map\[object { build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more } ]
 
 </summary>
 
@@ -580,7 +580,7 @@ builds: optional map\[object {build\_outcome, build\_trigger\_metadata, build\_u
 
 <summary>
 
-build\_outcome: optional "success"or "fail"or "skipped"or 2 more
+build\_outcome: optional "success" or "fail" or "skipped" or 2 more
 
 </summary>
 
@@ -614,7 +614,7 @@ One of the following:
 
 <summary>
 
-build\_trigger\_metadata: optional object {author, branch, build\_command, 11 more }
+build\_trigger\_metadata: optional object { author, branch, build\_command, 11 more }
 
 </summary>
 
@@ -650,7 +650,7 @@ formatuuid
 
 <summary>
 
-build\_trigger\_source: optional "push"or "pull\_request"or "manual"or "api"
+build\_trigger\_source: optional "push" or "pull\_request" or "manual" or "api"
 
 </summary>
 
@@ -706,7 +706,7 @@ Human-readable name of the account or namespace that owns the repository.
 
 <summary>
 
-provider\_type: optional "github"or "gitlab"or "gitlab\_internal"or "origin"
+provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
 
 Source control provider.
 
@@ -768,7 +768,7 @@ formatdate-time
 
 <summary>
 
-deploy\_hook: optional object {deploy\_hook\_name }
+deploy\_hook: optional object { deploy\_hook\_name }
 
 </summary>
 
@@ -810,7 +810,7 @@ formaturi
 
 <summary>
 
-pull\_request: optional object {closed\_on, created\_on, pull\_request\_url }
+pull\_request: optional object { closed\_on, created\_on, pull\_request\_url }
 
 </summary>
 
@@ -846,7 +846,7 @@ formatdate-time
 
 <summary>
 
-status: optional "queued"or "initializing"or "running"or "stopped"
+status: optional "queued" or "initializing" or "running" or "stopped"
 
 </summary>
 
@@ -882,7 +882,7 @@ formatdate-time
 
 <summary>
 
-trigger: optional object {branch\_excludes, branch\_includes, build\_caching\_enabled, 12 more }
+trigger: optional object { branch\_excludes, branch\_includes, build\_caching\_enabled, 12 more }
 
 Trigger information without build\_token\_uuid
 
@@ -958,7 +958,7 @@ Path patterns that can start builds.
 
 <summary>
 
-repo\_connection: optional object {created\_on, deleted\_on, modified\_on, 6 more }
+repo\_connection: optional object { created\_on, deleted\_on, modified\_on, 6 more }
 
 </summary>
 
@@ -996,7 +996,7 @@ Human-readable name of the account or namespace that owns the repository.
 
 <summary>
 
-provider\_type: optional "github"or "gitlab"or "gitlab\_internal"or "origin"
+provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
 
 Source control provider.
 
@@ -1088,7 +1088,7 @@ formatuuid
 
 <summary>
 
-WorkersBuildGetBuildsByVersionResponse = object {builds } or object {builds }
+WorkersBuildGetBuildsByVersionResponse = object { builds } or object { builds }
 
 </summary>
 
@@ -1098,7 +1098,7 @@ One of the following:
 
 <summary>
 
-Builds object {builds }
+Builds object { builds }
 
 </summary>
 
@@ -1106,7 +1106,7 @@ Builds object {builds }
 
 <summary>
 
-builds: optional map\[object {build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more } ]
+builds: optional map\[object { build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more } ]
 
 </summary>
 
@@ -1114,7 +1114,7 @@ builds: optional map\[object {build\_outcome, build\_trigger\_metadata, build\_u
 
 <summary>
 
-build\_outcome: optional "success"or "fail"or "skipped"or 2 more
+build\_outcome: optional "success" or "fail" or "skipped" or 2 more
 
 </summary>
 
@@ -1148,7 +1148,7 @@ One of the following:
 
 <summary>
 
-build\_trigger\_metadata: optional object {author, branch, build\_command, 11 more }
+build\_trigger\_metadata: optional object { author, branch, build\_command, 11 more }
 
 </summary>
 
@@ -1184,7 +1184,7 @@ formatuuid
 
 <summary>
 
-build\_trigger\_source: optional "push"or "pull\_request"or "manual"or "api"
+build\_trigger\_source: optional "push" or "pull\_request" or "manual" or "api"
 
 </summary>
 
@@ -1240,7 +1240,7 @@ Human-readable name of the account or namespace that owns the repository.
 
 <summary>
 
-provider\_type: optional "github"or "gitlab"or "gitlab\_internal"or "origin"
+provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
 
 Source control provider.
 
@@ -1302,7 +1302,7 @@ formatdate-time
 
 <summary>
 
-deploy\_hook: optional object {deploy\_hook\_name }
+deploy\_hook: optional object { deploy\_hook\_name }
 
 </summary>
 
@@ -1344,7 +1344,7 @@ formaturi
 
 <summary>
 
-pull\_request: optional object {closed\_on, created\_on, pull\_request\_url }
+pull\_request: optional object { closed\_on, created\_on, pull\_request\_url }
 
 </summary>
 
@@ -1380,7 +1380,7 @@ formatdate-time
 
 <summary>
 
-status: optional "queued"or "initializing"or "running"or "stopped"
+status: optional "queued" or "initializing" or "running" or "stopped"
 
 </summary>
 
@@ -1416,7 +1416,7 @@ formatdate-time
 
 <summary>
 
-trigger: optional object {branch\_excludes, branch\_includes, build\_caching\_enabled, 12 more }
+trigger: optional object { branch\_excludes, branch\_includes, build\_caching\_enabled, 12 more }
 
 Trigger information without build\_token\_uuid
 
@@ -1492,7 +1492,7 @@ Path patterns that can start builds.
 
 <summary>
 
-repo\_connection: optional object {created\_on, deleted\_on, modified\_on, 6 more }
+repo\_connection: optional object { created\_on, deleted\_on, modified\_on, 6 more }
 
 </summary>
 
@@ -1530,7 +1530,7 @@ Human-readable name of the account or namespace that owns the repository.
 
 <summary>
 
-provider\_type: optional "github"or "gitlab"or "gitlab\_internal"or "origin"
+provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
 
 Source control provider.
 
@@ -1618,7 +1618,7 @@ formatuuid
 
 <summary>
 
-Builds object {builds }
+Builds object { builds }
 
 </summary>
 
@@ -1626,7 +1626,7 @@ Builds object {builds }
 
 <summary>
 
-builds: optional map\[object {build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more } ]
+builds: optional map\[object { build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more } ]
 
 </summary>
 
@@ -1634,7 +1634,7 @@ builds: optional map\[object {build\_outcome, build\_trigger\_metadata, build\_u
 
 <summary>
 
-build\_outcome: optional "success"or "fail"or "skipped"or 2 more
+build\_outcome: optional "success" or "fail" or "skipped" or 2 more
 
 </summary>
 
@@ -1668,7 +1668,7 @@ One of the following:
 
 <summary>
 
-build\_trigger\_metadata: optional object {author, branch, build\_command, 11 more }
+build\_trigger\_metadata: optional object { author, branch, build\_command, 11 more }
 
 </summary>
 
@@ -1704,7 +1704,7 @@ formatuuid
 
 <summary>
 
-build\_trigger\_source: optional "push"or "pull\_request"or "manual"or "api"
+build\_trigger\_source: optional "push" or "pull\_request" or "manual" or "api"
 
 </summary>
 
@@ -1760,7 +1760,7 @@ Human-readable name of the account or namespace that owns the repository.
 
 <summary>
 
-provider\_type: optional "github"or "gitlab"or "gitlab\_internal"or "origin"
+provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
 
 Source control provider.
 
@@ -1822,7 +1822,7 @@ formatdate-time
 
 <summary>
 
-deploy\_hook: optional object {deploy\_hook\_name }
+deploy\_hook: optional object { deploy\_hook\_name }
 
 </summary>
 
@@ -1864,7 +1864,7 @@ formaturi
 
 <summary>
 
-pull\_request: optional object {closed\_on, created\_on, pull\_request\_url }
+pull\_request: optional object { closed\_on, created\_on, pull\_request\_url }
 
 </summary>
 
@@ -1900,7 +1900,7 @@ formatdate-time
 
 <summary>
 
-status: optional "queued"or "initializing"or "running"or "stopped"
+status: optional "queued" or "initializing" or "running" or "stopped"
 
 </summary>
 
@@ -1936,7 +1936,7 @@ formatdate-time
 
 <summary>
 
-trigger: optional object {branch\_excludes, branch\_includes, build\_caching\_enabled, 12 more }
+trigger: optional object { branch\_excludes, branch\_includes, build\_caching\_enabled, 12 more }
 
 Trigger information without build\_token\_uuid
 
@@ -2012,7 +2012,7 @@ Path patterns that can start builds.
 
 <summary>
 
-repo\_connection: optional object {created\_on, deleted\_on, modified\_on, 6 more }
+repo\_connection: optional object { created\_on, deleted\_on, modified\_on, 6 more }
 
 </summary>
 
@@ -2050,7 +2050,7 @@ Human-readable name of the account or namespace that owns the repository.
 
 <summary>
 
-provider\_type: optional "github"or "gitlab"or "gitlab\_internal"or "origin"
+provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
 
 Source control provider.
 
@@ -2142,7 +2142,7 @@ formatuuid
 
 <summary>
 
-WorkersBuildGetAccountLimitsResponse = object {build\_minutes\_refresh\_on, has\_reached\_build\_minutes\_limit } or object {build\_minutes\_refresh\_on, has\_reached\_build\_minutes\_limit }
+WorkersBuildGetAccountLimitsResponse = object { build\_minutes\_refresh\_on, has\_reached\_build\_minutes\_limit } or object { build\_minutes\_refresh\_on, has\_reached\_build\_minutes\_limit }
 
 </summary>
 
@@ -2152,7 +2152,7 @@ One of the following:
 
 <summary>
 
-object {build\_minutes\_refresh\_on, has\_reached\_build\_minutes\_limit }
+object { build\_minutes\_refresh\_on, has\_reached\_build\_minutes\_limit }
 
 </summary>
 
@@ -2178,7 +2178,7 @@ Whether build minutes limit has been reached (only for non-paid plans)
 
 <summary>
 
-object {build\_minutes\_refresh\_on, has\_reached\_build\_minutes\_limit }
+object { build\_minutes\_refresh\_on, has\_reached\_build\_minutes\_limit }
 
 </summary>
 
@@ -2236,7 +2236,7 @@ POST/accounts/{account\_id}/builds/triggers/{trigger\_uuid}/builds
 
 <summary>
 
-TriggerListResponse = unknownor array of unknown
+TriggerListResponse = unknown or array of unknown
 
 </summary>
 
@@ -2258,7 +2258,7 @@ array of unknown
 
 <summary>
 
-TriggerCreateResponse = object {branch\_excludes, branch\_includes, build\_caching\_enabled, 14 more } or object {branch\_excludes, branch\_includes, build\_caching\_enabled, 14 more }
+TriggerCreateResponse = object { branch\_excludes, branch\_includes, build\_caching\_enabled, 14 more } or object { branch\_excludes, branch\_includes, build\_caching\_enabled, 14 more }
 
 </summary>
 
@@ -2268,7 +2268,7 @@ One of the following:
 
 <summary>
 
-object {branch\_excludes, branch\_includes, build\_caching\_enabled, 14 more }
+object { branch\_excludes, branch\_includes, build\_caching\_enabled, 14 more }
 
 </summary>
 
@@ -2354,7 +2354,7 @@ Path patterns that can start builds.
 
 <summary>
 
-repo\_connection: optional object {created\_on, deleted\_on, modified\_on, 6 more }
+repo\_connection: optional object { created\_on, deleted\_on, modified\_on, 6 more }
 
 </summary>
 
@@ -2392,7 +2392,7 @@ Human-readable name of the account or namespace that owns the repository.
 
 <summary>
 
-provider\_type: optional "github"or "gitlab"or "gitlab\_internal"or "origin"
+provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
 
 Source control provider.
 
@@ -2472,7 +2472,7 @@ formatuuid
 
 <summary>
 
-object {branch\_excludes, branch\_includes, build\_caching\_enabled, 14 more }
+object { branch\_excludes, branch\_includes, build\_caching\_enabled, 14 more }
 
 </summary>
 
@@ -2558,7 +2558,7 @@ Path patterns that can start builds.
 
 <summary>
 
-repo\_connection: optional object {created\_on, deleted\_on, modified\_on, 6 more }
+repo\_connection: optional object { created\_on, deleted\_on, modified\_on, 6 more }
 
 </summary>
 
@@ -2596,7 +2596,7 @@ Human-readable name of the account or namespace that owns the repository.
 
 <summary>
 
-provider\_type: optional "github"or "gitlab"or "gitlab\_internal"or "origin"
+provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
 
 Source control provider.
 
@@ -2680,7 +2680,7 @@ formatuuid
 
 <summary>
 
-TriggerUpdateResponse = object {branch\_excludes, branch\_includes, build\_caching\_enabled, 14 more } or object {branch\_excludes, branch\_includes, build\_caching\_enabled, 14 more }
+TriggerUpdateResponse = object { branch\_excludes, branch\_includes, build\_caching\_enabled, 14 more } or object { branch\_excludes, branch\_includes, build\_caching\_enabled, 14 more }
 
 </summary>
 
@@ -2690,7 +2690,7 @@ One of the following:
 
 <summary>
 
-object {branch\_excludes, branch\_includes, build\_caching\_enabled, 14 more }
+object { branch\_excludes, branch\_includes, build\_caching\_enabled, 14 more }
 
 </summary>
 
@@ -2776,7 +2776,7 @@ Path patterns that can start builds.
 
 <summary>
 
-repo\_connection: optional object {created\_on, deleted\_on, modified\_on, 6 more }
+repo\_connection: optional object { created\_on, deleted\_on, modified\_on, 6 more }
 
 </summary>
 
@@ -2814,7 +2814,7 @@ Human-readable name of the account or namespace that owns the repository.
 
 <summary>
 
-provider\_type: optional "github"or "gitlab"or "gitlab\_internal"or "origin"
+provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
 
 Source control provider.
 
@@ -2894,7 +2894,7 @@ formatuuid
 
 <summary>
 
-object {branch\_excludes, branch\_includes, build\_caching\_enabled, 14 more }
+object { branch\_excludes, branch\_includes, build\_caching\_enabled, 14 more }
 
 </summary>
 
@@ -2980,7 +2980,7 @@ Path patterns that can start builds.
 
 <summary>
 
-repo\_connection: optional object {created\_on, deleted\_on, modified\_on, 6 more }
+repo\_connection: optional object { created\_on, deleted\_on, modified\_on, 6 more }
 
 </summary>
 
@@ -3018,7 +3018,7 @@ Human-readable name of the account or namespace that owns the repository.
 
 <summary>
 
-provider\_type: optional "github"or "gitlab"or "gitlab\_internal"or "origin"
+provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
 
 Source control provider.
 
@@ -3102,7 +3102,7 @@ formatuuid
 
 <summary>
 
-TriggerDeleteResponse = unknownor array of unknown
+TriggerDeleteResponse = unknown or array of unknown
 
 </summary>
 
@@ -3124,7 +3124,7 @@ array of unknown
 
 <summary>
 
-TriggerPurgeCacheResponse = unknownor array of unknown
+TriggerPurgeCacheResponse = unknown or array of unknown
 
 </summary>
 
@@ -3146,7 +3146,7 @@ array of unknown
 
 <summary>
 
-TriggerCreateBuildResponse = object {build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more } or object {build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more }
+TriggerCreateBuildResponse = object { build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more } or object { build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more }
 
 </summary>
 
@@ -3156,7 +3156,7 @@ One of the following:
 
 <summary>
 
-object {build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more }
+object { build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more }
 
 </summary>
 
@@ -3164,7 +3164,7 @@ object {build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more }
 
 <summary>
 
-build\_outcome: optional "success"or "fail"or "skipped"or 2 more
+build\_outcome: optional "success" or "fail" or "skipped" or 2 more
 
 </summary>
 
@@ -3198,7 +3198,7 @@ One of the following:
 
 <summary>
 
-build\_trigger\_metadata: optional object {author, branch, build\_command, 11 more }
+build\_trigger\_metadata: optional object { author, branch, build\_command, 11 more }
 
 </summary>
 
@@ -3234,7 +3234,7 @@ formatuuid
 
 <summary>
 
-build\_trigger\_source: optional "push"or "pull\_request"or "manual"or "api"
+build\_trigger\_source: optional "push" or "pull\_request" or "manual" or "api"
 
 </summary>
 
@@ -3290,7 +3290,7 @@ Human-readable name of the account or namespace that owns the repository.
 
 <summary>
 
-provider\_type: optional "github"or "gitlab"or "gitlab\_internal"or "origin"
+provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
 
 Source control provider.
 
@@ -3352,7 +3352,7 @@ formatdate-time
 
 <summary>
 
-deploy\_hook: optional object {deploy\_hook\_name }
+deploy\_hook: optional object { deploy\_hook\_name }
 
 </summary>
 
@@ -3394,7 +3394,7 @@ formaturi
 
 <summary>
 
-pull\_request: optional object {closed\_on, created\_on, pull\_request\_url }
+pull\_request: optional object { closed\_on, created\_on, pull\_request\_url }
 
 </summary>
 
@@ -3430,7 +3430,7 @@ formatdate-time
 
 <summary>
 
-status: optional "queued"or "initializing"or "running"or "stopped"
+status: optional "queued" or "initializing" or "running" or "stopped"
 
 </summary>
 
@@ -3466,7 +3466,7 @@ formatdate-time
 
 <summary>
 
-trigger: optional object {branch\_excludes, branch\_includes, build\_caching\_enabled, 12 more }
+trigger: optional object { branch\_excludes, branch\_includes, build\_caching\_enabled, 12 more }
 
 Trigger information without build\_token\_uuid
 
@@ -3542,7 +3542,7 @@ Path patterns that can start builds.
 
 <summary>
 
-repo\_connection: optional object {created\_on, deleted\_on, modified\_on, 6 more }
+repo\_connection: optional object { created\_on, deleted\_on, modified\_on, 6 more }
 
 </summary>
 
@@ -3580,7 +3580,7 @@ Human-readable name of the account or namespace that owns the repository.
 
 <summary>
 
-provider\_type: optional "github"or "gitlab"or "gitlab\_internal"or "origin"
+provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
 
 Source control provider.
 
@@ -3664,7 +3664,7 @@ formatuuid
 
 <summary>
 
-object {build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more }
+object { build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more }
 
 </summary>
 
@@ -3672,7 +3672,7 @@ object {build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more }
 
 <summary>
 
-build\_outcome: optional "success"or "fail"or "skipped"or 2 more
+build\_outcome: optional "success" or "fail" or "skipped" or 2 more
 
 </summary>
 
@@ -3706,7 +3706,7 @@ One of the following:
 
 <summary>
 
-build\_trigger\_metadata: optional object {author, branch, build\_command, 11 more }
+build\_trigger\_metadata: optional object { author, branch, build\_command, 11 more }
 
 </summary>
 
@@ -3742,7 +3742,7 @@ formatuuid
 
 <summary>
 
-build\_trigger\_source: optional "push"or "pull\_request"or "manual"or "api"
+build\_trigger\_source: optional "push" or "pull\_request" or "manual" or "api"
 
 </summary>
 
@@ -3798,7 +3798,7 @@ Human-readable name of the account or namespace that owns the repository.
 
 <summary>
 
-provider\_type: optional "github"or "gitlab"or "gitlab\_internal"or "origin"
+provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
 
 Source control provider.
 
@@ -3860,7 +3860,7 @@ formatdate-time
 
 <summary>
 
-deploy\_hook: optional object {deploy\_hook\_name }
+deploy\_hook: optional object { deploy\_hook\_name }
 
 </summary>
 
@@ -3902,7 +3902,7 @@ formaturi
 
 <summary>
 
-pull\_request: optional object {closed\_on, created\_on, pull\_request\_url }
+pull\_request: optional object { closed\_on, created\_on, pull\_request\_url }
 
 </summary>
 
@@ -3938,7 +3938,7 @@ formatdate-time
 
 <summary>
 
-status: optional "queued"or "initializing"or "running"or "stopped"
+status: optional "queued" or "initializing" or "running" or "stopped"
 
 </summary>
 
@@ -3974,7 +3974,7 @@ formatdate-time
 
 <summary>
 
-trigger: optional object {branch\_excludes, branch\_includes, build\_caching\_enabled, 12 more }
+trigger: optional object { branch\_excludes, branch\_includes, build\_caching\_enabled, 12 more }
 
 Trigger information without build\_token\_uuid
 
@@ -4050,7 +4050,7 @@ Path patterns that can start builds.
 
 <summary>
 
-repo\_connection: optional object {created\_on, deleted\_on, modified\_on, 6 more }
+repo\_connection: optional object { created\_on, deleted\_on, modified\_on, 6 more }
 
 </summary>
 
@@ -4088,7 +4088,7 @@ Human-readable name of the account or namespace that owns the repository.
 
 <summary>
 
-provider\_type: optional "github"or "gitlab"or "gitlab\_internal"or "origin"
+provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
 
 Source control provider.
 
@@ -4192,7 +4192,7 @@ DELETE/accounts/{account\_id}/builds/triggers/{trigger\_uuid}/environment\_varia
 
 <summary>
 
-EnvironmentVariableListResponse = unknownor unknown
+EnvironmentVariableListResponse = unknown or unknown
 
 </summary>
 
@@ -4214,7 +4214,7 @@ unknown
 
 <summary>
 
-EnvironmentVariableUpsertResponse = unknownor unknown
+EnvironmentVariableUpsertResponse = unknown or unknown
 
 </summary>
 
@@ -4236,7 +4236,7 @@ unknown
 
 <summary>
 
-EnvironmentVariableDeleteResponse = unknownor array of unknown
+EnvironmentVariableDeleteResponse = unknown or array of unknown
 
 </summary>
 
@@ -4286,7 +4286,7 @@ POST/workers/builds/deploy\_hooks/{deploy\_hook\_uuid}
 
 <summary>
 
-DeployHookListResponse = unknownor array of unknown
+DeployHookListResponse = unknown or array of unknown
 
 </summary>
 
@@ -4308,7 +4308,7 @@ array of unknown
 
 <summary>
 
-DeployHookCreateResponse = object {branch, created\_on, deploy\_hook\_name, 3 more } or object {branch, created\_on, deploy\_hook\_name, 3 more }
+DeployHookCreateResponse = object { branch, created\_on, deploy\_hook\_name, 3 more } or object { branch, created\_on, deploy\_hook\_name, 3 more }
 
 </summary>
 
@@ -4318,7 +4318,7 @@ One of the following:
 
 <summary>
 
-object {branch, created\_on, deploy\_hook\_name, 3 more }
+object { branch, created\_on, deploy\_hook\_name, 3 more }
 
 </summary>
 
@@ -4372,7 +4372,7 @@ formatdate-time
 
 <summary>
 
-object {branch, created\_on, deploy\_hook\_name, 3 more }
+object { branch, created\_on, deploy\_hook\_name, 3 more }
 
 </summary>
 
@@ -4430,7 +4430,7 @@ formatdate-time
 
 <summary>
 
-DeployHookGetResponse = object {branch, created\_on, deploy\_hook\_name, 3 more } or object {branch, created\_on, deploy\_hook\_name, 3 more }
+DeployHookGetResponse = object { branch, created\_on, deploy\_hook\_name, 3 more } or object { branch, created\_on, deploy\_hook\_name, 3 more }
 
 </summary>
 
@@ -4440,7 +4440,7 @@ One of the following:
 
 <summary>
 
-object {branch, created\_on, deploy\_hook\_name, 3 more }
+object { branch, created\_on, deploy\_hook\_name, 3 more }
 
 </summary>
 
@@ -4494,7 +4494,7 @@ formatdate-time
 
 <summary>
 
-object {branch, created\_on, deploy\_hook\_name, 3 more }
+object { branch, created\_on, deploy\_hook\_name, 3 more }
 
 </summary>
 
@@ -4552,7 +4552,7 @@ formatdate-time
 
 <summary>
 
-DeployHookUpdateResponse = object {branch, created\_on, deploy\_hook\_name, 3 more } or object {branch, created\_on, deploy\_hook\_name, 3 more }
+DeployHookUpdateResponse = object { branch, created\_on, deploy\_hook\_name, 3 more } or object { branch, created\_on, deploy\_hook\_name, 3 more }
 
 </summary>
 
@@ -4562,7 +4562,7 @@ One of the following:
 
 <summary>
 
-object {branch, created\_on, deploy\_hook\_name, 3 more }
+object { branch, created\_on, deploy\_hook\_name, 3 more }
 
 </summary>
 
@@ -4616,7 +4616,7 @@ formatdate-time
 
 <summary>
 
-object {branch, created\_on, deploy\_hook\_name, 3 more }
+object { branch, created\_on, deploy\_hook\_name, 3 more }
 
 </summary>
 
@@ -4674,7 +4674,7 @@ formatdate-time
 
 <summary>
 
-DeployHookDeleteResponse = object {branch, created\_on, deploy\_hook\_name, 3 more } or object {branch, created\_on, deploy\_hook\_name, 3 more }
+DeployHookDeleteResponse = object { branch, created\_on, deploy\_hook\_name, 3 more } or object { branch, created\_on, deploy\_hook\_name, 3 more }
 
 </summary>
 
@@ -4684,7 +4684,7 @@ One of the following:
 
 <summary>
 
-object {branch, created\_on, deploy\_hook\_name, 3 more }
+object { branch, created\_on, deploy\_hook\_name, 3 more }
 
 </summary>
 
@@ -4738,7 +4738,7 @@ formatdate-time
 
 <summary>
 
-object {branch, created\_on, deploy\_hook\_name, 3 more }
+object { branch, created\_on, deploy\_hook\_name, 3 more }
 
 </summary>
 
@@ -4796,7 +4796,7 @@ formatdate-time
 
 <summary>
 
-DeployHookTriggerResponse = object {already\_exists, build\_uuid, created\_on, status } or object {already\_exists, build\_uuid, created\_on, status }
+DeployHookTriggerResponse = object { already\_exists, build\_uuid, created\_on, status } or object { already\_exists, build\_uuid, created\_on, status }
 
 </summary>
 
@@ -4806,7 +4806,7 @@ One of the following:
 
 <summary>
 
-object {already\_exists, build\_uuid, created\_on, status }
+object { already\_exists, build\_uuid, created\_on, status }
 
 </summary>
 
@@ -4834,7 +4834,7 @@ formatdate-time
 
 <summary>
 
-status: optional "queued"or "initializing"or "running"or "stopped"
+status: optional "queued" or "initializing" or "running" or "stopped"
 
 </summary>
 
@@ -4868,7 +4868,7 @@ One of the following:
 
 <summary>
 
-object {already\_exists, build\_uuid, created\_on, status }
+object { already\_exists, build\_uuid, created\_on, status }
 
 </summary>
 
@@ -4896,7 +4896,7 @@ formatdate-time
 
 <summary>
 
-status: optional "queued"or "initializing"or "running"or "stopped"
+status: optional "queued" or "initializing" or "running" or "stopped"
 
 </summary>
 
@@ -4950,7 +4950,7 @@ DELETE/accounts/{account\_id}/builds/tokens/{build\_token\_uuid}
 
 <summary>
 
-TokenCreateResponse = object {build\_token\_name, build\_token\_uuid, cloudflare\_token\_id, owner\_type } or object {build\_token\_name, build\_token\_uuid, cloudflare\_token\_id, owner\_type }
+TokenCreateResponse = object { build\_token\_name, build\_token\_uuid, cloudflare\_token\_id, owner\_type } or object { build\_token\_name, build\_token\_uuid, cloudflare\_token\_id, owner\_type }
 
 </summary>
 
@@ -4960,7 +4960,7 @@ One of the following:
 
 <summary>
 
-object {build\_token\_name, build\_token\_uuid, cloudflare\_token\_id, owner\_type }
+object { build\_token\_name, build\_token\_uuid, cloudflare\_token\_id, owner\_type }
 
 </summary>
 
@@ -4992,7 +4992,7 @@ owner\_type: optional string
 
 <summary>
 
-object {build\_token\_name, build\_token\_uuid, cloudflare\_token\_id, owner\_type }
+object { build\_token\_name, build\_token\_uuid, cloudflare\_token\_id, owner\_type }
 
 </summary>
 
@@ -5028,7 +5028,7 @@ owner\_type: optional string
 
 <summary>
 
-TokenListResponse = unknownor array of unknown
+TokenListResponse = unknown or array of unknown
 
 </summary>
 
@@ -5050,7 +5050,7 @@ array of unknown
 
 <summary>
 
-TokenDeleteResponse = unknownor array of unknown
+TokenDeleteResponse = unknown or array of unknown
 
 </summary>
 
@@ -5086,7 +5086,7 @@ DELETE/accounts/{account\_id}/builds/repos/connections/{repo\_connection\_uuid}
 
 <summary>
 
-ConnectionUpsertResponse = object {created\_on, deleted\_on, modified\_on, 6 more } or object {created\_on, deleted\_on, modified\_on, 6 more }
+ConnectionUpsertResponse = object { created\_on, deleted\_on, modified\_on, 6 more } or object { created\_on, deleted\_on, modified\_on, 6 more }
 
 </summary>
 
@@ -5096,7 +5096,7 @@ One of the following:
 
 <summary>
 
-object {created\_on, deleted\_on, modified\_on, 6 more }
+object { created\_on, deleted\_on, modified\_on, 6 more }
 
 </summary>
 
@@ -5134,7 +5134,7 @@ Human-readable name of the account or namespace that owns the repository.
 
 <summary>
 
-provider\_type: optional "github"or "gitlab"or "gitlab\_internal"or "origin"
+provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
 
 Source control provider.
 
@@ -5190,7 +5190,7 @@ Human-readable repository name.
 
 <summary>
 
-object {created\_on, deleted\_on, modified\_on, 6 more }
+object { created\_on, deleted\_on, modified\_on, 6 more }
 
 </summary>
 
@@ -5228,7 +5228,7 @@ Human-readable name of the account or namespace that owns the repository.
 
 <summary>
 
-provider\_type: optional "github"or "gitlab"or "gitlab\_internal"or "origin"
+provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
 
 Source control provider.
 
@@ -5288,7 +5288,7 @@ Human-readable repository name.
 
 <summary>
 
-ConnectionDeleteResponse = unknownor array of unknown
+ConnectionDeleteResponse = unknown or array of unknown
 
 </summary>
 
@@ -5318,7 +5318,7 @@ GET/accounts/{account\_id}/builds/repos/{provider\_type}/{provider\_account\_id}
 
 <summary>
 
-ConfigAutofillGetResponse = object {config\_file, default\_worker\_name, deploy\_tool, 3 more } or object {config\_file, default\_worker\_name, deploy\_tool, 3 more }
+ConfigAutofillGetResponse = object { config\_file, default\_worker\_name, deploy\_tool, 3 more } or object { config\_file, default\_worker\_name, deploy\_tool, 3 more }
 
 </summary>
 
@@ -5328,7 +5328,7 @@ One of the following:
 
 <summary>
 
-object {config\_file, default\_worker\_name, deploy\_tool, 3 more }
+object { config\_file, default\_worker\_name, deploy\_tool, 3 more }
 
 </summary>
 
@@ -5344,7 +5344,7 @@ default\_worker\_name: optional string
 
 <summary>
 
-deploy\_tool: optional "cf"or "wrangler"
+deploy\_tool: optional "cf" or "wrangler"
 
 Deployment CLI detected in the selected root directory. A Wrangler config takes precedence. <code>cf</code> requires <code>cloudflare.config.ts</code> and a <code>cf</code> dependency or dev dependency in <code>package.json</code>.
 
@@ -5372,7 +5372,7 @@ env\_worker\_names: optional map\[string]
 
 <summary>
 
-package\_manager: optional "npm"or "yarn"or "pnpm"or 2 more
+package\_manager: optional "npm" or "yarn" or "pnpm" or 2 more
 
 Package manager inferred from repository lockfiles; defaults to npm when none is detected.
 
@@ -5416,7 +5416,7 @@ scripts: optional map\[string]
 
 <summary>
 
-object {config\_file, default\_worker\_name, deploy\_tool, 3 more }
+object { config\_file, default\_worker\_name, deploy\_tool, 3 more }
 
 </summary>
 
@@ -5432,7 +5432,7 @@ default\_worker\_name: optional string
 
 <summary>
 
-deploy\_tool: optional "cf"or "wrangler"
+deploy\_tool: optional "cf" or "wrangler"
 
 Deployment CLI detected in the selected root directory. A Wrangler config takes precedence. <code>cf</code> requires <code>cloudflare.config.ts</code> and a <code>cf</code> dependency or dev dependency in <code>package.json</code>.
 
@@ -5460,7 +5460,7 @@ env\_worker\_names: optional map\[string]
 
 <summary>
 
-package\_manager: optional "npm"or "yarn"or "pnpm"or 2 more
+package\_manager: optional "npm" or "yarn" or "pnpm" or 2 more
 
 Package manager inferred from repository lockfiles; defaults to npm when none is detected.
 
@@ -5524,7 +5524,7 @@ PUT/accounts/{account\_id}/builds/builds/{build\_uuid}/cancel
 
 <summary>
 
-BuildListResponse = unknownor array of unknown
+BuildListResponse = unknown or array of unknown
 
 </summary>
 
@@ -5546,7 +5546,7 @@ array of unknown
 
 <summary>
 
-BuildGetResponse = object {build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more } or object {build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more }
+BuildGetResponse = object { build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more } or object { build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more }
 
 </summary>
 
@@ -5556,7 +5556,7 @@ One of the following:
 
 <summary>
 
-object {build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more }
+object { build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more }
 
 </summary>
 
@@ -5564,7 +5564,7 @@ object {build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more }
 
 <summary>
 
-build\_outcome: optional "success"or "fail"or "skipped"or 2 more
+build\_outcome: optional "success" or "fail" or "skipped" or 2 more
 
 </summary>
 
@@ -5598,7 +5598,7 @@ One of the following:
 
 <summary>
 
-build\_trigger\_metadata: optional object {author, branch, build\_command, 11 more }
+build\_trigger\_metadata: optional object { author, branch, build\_command, 11 more }
 
 </summary>
 
@@ -5634,7 +5634,7 @@ formatuuid
 
 <summary>
 
-build\_trigger\_source: optional "push"or "pull\_request"or "manual"or "api"
+build\_trigger\_source: optional "push" or "pull\_request" or "manual" or "api"
 
 </summary>
 
@@ -5690,7 +5690,7 @@ Human-readable name of the account or namespace that owns the repository.
 
 <summary>
 
-provider\_type: optional "github"or "gitlab"or "gitlab\_internal"or "origin"
+provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
 
 Source control provider.
 
@@ -5752,7 +5752,7 @@ formatdate-time
 
 <summary>
 
-deploy\_hook: optional object {deploy\_hook\_name }
+deploy\_hook: optional object { deploy\_hook\_name }
 
 </summary>
 
@@ -5794,7 +5794,7 @@ formaturi
 
 <summary>
 
-pull\_request: optional object {closed\_on, created\_on, pull\_request\_url }
+pull\_request: optional object { closed\_on, created\_on, pull\_request\_url }
 
 </summary>
 
@@ -5830,7 +5830,7 @@ formatdate-time
 
 <summary>
 
-status: optional "queued"or "initializing"or "running"or "stopped"
+status: optional "queued" or "initializing" or "running" or "stopped"
 
 </summary>
 
@@ -5866,7 +5866,7 @@ formatdate-time
 
 <summary>
 
-trigger: optional object {branch\_excludes, branch\_includes, build\_caching\_enabled, 12 more }
+trigger: optional object { branch\_excludes, branch\_includes, build\_caching\_enabled, 12 more }
 
 Trigger information without build\_token\_uuid
 
@@ -5942,7 +5942,7 @@ Path patterns that can start builds.
 
 <summary>
 
-repo\_connection: optional object {created\_on, deleted\_on, modified\_on, 6 more }
+repo\_connection: optional object { created\_on, deleted\_on, modified\_on, 6 more }
 
 </summary>
 
@@ -5980,7 +5980,7 @@ Human-readable name of the account or namespace that owns the repository.
 
 <summary>
 
-provider\_type: optional "github"or "gitlab"or "gitlab\_internal"or "origin"
+provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
 
 Source control provider.
 
@@ -6064,7 +6064,7 @@ formatuuid
 
 <summary>
 
-object {build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more }
+object { build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more }
 
 </summary>
 
@@ -6072,7 +6072,7 @@ object {build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more }
 
 <summary>
 
-build\_outcome: optional "success"or "fail"or "skipped"or 2 more
+build\_outcome: optional "success" or "fail" or "skipped" or 2 more
 
 </summary>
 
@@ -6106,7 +6106,7 @@ One of the following:
 
 <summary>
 
-build\_trigger\_metadata: optional object {author, branch, build\_command, 11 more }
+build\_trigger\_metadata: optional object { author, branch, build\_command, 11 more }
 
 </summary>
 
@@ -6142,7 +6142,7 @@ formatuuid
 
 <summary>
 
-build\_trigger\_source: optional "push"or "pull\_request"or "manual"or "api"
+build\_trigger\_source: optional "push" or "pull\_request" or "manual" or "api"
 
 </summary>
 
@@ -6198,7 +6198,7 @@ Human-readable name of the account or namespace that owns the repository.
 
 <summary>
 
-provider\_type: optional "github"or "gitlab"or "gitlab\_internal"or "origin"
+provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
 
 Source control provider.
 
@@ -6260,7 +6260,7 @@ formatdate-time
 
 <summary>
 
-deploy\_hook: optional object {deploy\_hook\_name }
+deploy\_hook: optional object { deploy\_hook\_name }
 
 </summary>
 
@@ -6302,7 +6302,7 @@ formaturi
 
 <summary>
 
-pull\_request: optional object {closed\_on, created\_on, pull\_request\_url }
+pull\_request: optional object { closed\_on, created\_on, pull\_request\_url }
 
 </summary>
 
@@ -6338,7 +6338,7 @@ formatdate-time
 
 <summary>
 
-status: optional "queued"or "initializing"or "running"or "stopped"
+status: optional "queued" or "initializing" or "running" or "stopped"
 
 </summary>
 
@@ -6374,7 +6374,7 @@ formatdate-time
 
 <summary>
 
-trigger: optional object {branch\_excludes, branch\_includes, build\_caching\_enabled, 12 more }
+trigger: optional object { branch\_excludes, branch\_includes, build\_caching\_enabled, 12 more }
 
 Trigger information without build\_token\_uuid
 
@@ -6450,7 +6450,7 @@ Path patterns that can start builds.
 
 <summary>
 
-repo\_connection: optional object {created\_on, deleted\_on, modified\_on, 6 more }
+repo\_connection: optional object { created\_on, deleted\_on, modified\_on, 6 more }
 
 </summary>
 
@@ -6488,7 +6488,7 @@ Human-readable name of the account or namespace that owns the repository.
 
 <summary>
 
-provider\_type: optional "github"or "gitlab"or "gitlab\_internal"or "origin"
+provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
 
 Source control provider.
 
@@ -6576,7 +6576,7 @@ formatuuid
 
 <summary>
 
-BuildCancelResponse = object {build\_outcome, build\_uuid, stopped\_on } or object {build\_outcome, build\_uuid, stopped\_on }
+BuildCancelResponse = object { build\_outcome, build\_uuid, stopped\_on } or object { build\_outcome, build\_uuid, stopped\_on }
 
 </summary>
 
@@ -6586,7 +6586,7 @@ One of the following:
 
 <summary>
 
-object {build\_outcome, build\_uuid, stopped\_on }
+object { build\_outcome, build\_uuid, stopped\_on }
 
 </summary>
 
@@ -6594,7 +6594,7 @@ object {build\_outcome, build\_uuid, stopped\_on }
 
 <summary>
 
-build\_outcome: optional "success"or "fail"or "skipped"or 2 more
+build\_outcome: optional "success" or "fail" or "skipped" or 2 more
 
 </summary>
 
@@ -6646,7 +6646,7 @@ formatdate-time
 
 <summary>
 
-object {build\_outcome, build\_uuid, stopped\_on }
+object { build\_outcome, build\_uuid, stopped\_on }
 
 </summary>
 
@@ -6654,7 +6654,7 @@ object {build\_outcome, build\_uuid, stopped\_on }
 
 <summary>
 
-build\_outcome: optional "success"or "fail"or "skipped"or 2 more
+build\_outcome: optional "success" or "fail" or "skipped" or 2 more
 
 </summary>
 
@@ -6718,7 +6718,7 @@ GET/accounts/{account\_id}/builds/builds/{build\_uuid}/logs
 
 <summary>
 
-LogGetResponse = object {cursor, lines, truncated } or object {cursor, lines, truncated }
+LogGetResponse = object { cursor, lines, truncated } or object { cursor, lines, truncated }
 
 </summary>
 
@@ -6728,7 +6728,7 @@ One of the following:
 
 <summary>
 
-object {cursor, lines, truncated }
+object { cursor, lines, truncated }
 
 </summary>
 
@@ -6742,7 +6742,7 @@ Pagination cursor for log retrieval.
 
 <summary>
 
-lines: optional array of array of numberor string
+lines: optional array of array of number or string
 
 </summary>
 
@@ -6776,7 +6776,7 @@ truncated: optional boolean
 
 <summary>
 
-object {cursor, lines, truncated }
+object { cursor, lines, truncated }
 
 </summary>
 
@@ -6790,7 +6790,7 @@ Pagination cursor for log retrieval.
 
 <summary>
 
-lines: optional array of array of numberor string
+lines: optional array of array of number or string
 
 </summary>
 

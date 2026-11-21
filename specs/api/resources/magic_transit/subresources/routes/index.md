@@ -52,7 +52,7 @@ DELETE/accounts/{account\_id}/magic/routes
 
 <summary>
 
-Scope object {colo\_names, colo\_regions }
+Scope object { colo\_names, colo\_regions }
 
 Used only for ECMP routes.
 
@@ -78,7 +78,7 @@ List of colo regions for the ECMP scope.
 
 <summary>
 
-RouteListResponse object {routes }
+RouteListResponse object { routes }
 
 </summary>
 
@@ -86,7 +86,7 @@ RouteListResponse object {routes }
 
 <summary>
 
-routes: optional array of object {id, nexthop, prefix, 6 more }
+routes: optional array of object { id, nexthop, prefix, 6 more }
 
 </summary>
 
@@ -162,7 +162,7 @@ Optional weight of the ECMP scope - if provided.
 
 <summary>
 
-RouteGetResponse object {route }
+RouteGetResponse object { route }
 
 </summary>
 
@@ -170,7 +170,7 @@ RouteGetResponse object {route }
 
 <summary>
 
-route: optional object {id, nexthop, prefix, 6 more }
+route: optional object { id, nexthop, prefix, 6 more }
 
 </summary>
 
@@ -246,7 +246,7 @@ Optional weight of the ECMP scope - if provided.
 
 <summary>
 
-RouteCreateResponse object {id, nexthop, prefix, 6 more }
+RouteCreateResponse object { id, nexthop, prefix, 6 more }
 
 </summary>
 
@@ -318,7 +318,7 @@ Optional weight of the ECMP scope - if provided.
 
 <summary>
 
-RouteUpdateResponse object {modified, modified\_route }
+RouteUpdateResponse object { modified, modified\_route }
 
 </summary>
 
@@ -330,7 +330,7 @@ modified: optional boolean
 
 <summary>
 
-modified\_route: optional object {id, nexthop, prefix, 6 more }
+modified\_route: optional object { id, nexthop, prefix, 6 more }
 
 </summary>
 
@@ -406,7 +406,7 @@ Optional weight of the ECMP scope - if provided.
 
 <summary>
 
-RouteDeleteResponse object {deleted, deleted\_route }
+RouteDeleteResponse object { deleted, deleted\_route }
 
 </summary>
 
@@ -418,7 +418,7 @@ deleted: optional boolean
 
 <summary>
 
-deleted\_route: optional object {id, nexthop, prefix, 6 more }
+deleted\_route: optional object { id, nexthop, prefix, 6 more }
 
 </summary>
 
@@ -494,7 +494,7 @@ Optional weight of the ECMP scope - if provided.
 
 <summary>
 
-RouteBulkUpdateResponse object {modified, modified\_routes }
+RouteBulkUpdateResponse object { modified, modified\_routes }
 
 </summary>
 
@@ -506,7 +506,7 @@ modified: optional boolean
 
 <summary>
 
-modified\_routes: optional array of object {id, nexthop, prefix, 6 more }
+modified\_routes: optional array of object { id, nexthop, prefix, 6 more }
 
 </summary>
 
@@ -582,7 +582,7 @@ Optional weight of the ECMP scope - if provided.
 
 <summary>
 
-RouteEmptyResponse object {deleted, deleted\_routes }
+RouteEmptyResponse object { deleted, deleted\_routes }
 
 </summary>
 
@@ -594,7 +594,7 @@ deleted: optional boolean
 
 <summary>
 
-deleted\_routes: optional array of object {id, nexthop, prefix, 6 more }
+deleted\_routes: optional array of object { id, nexthop, prefix, 6 more }
 
 </summary>
 

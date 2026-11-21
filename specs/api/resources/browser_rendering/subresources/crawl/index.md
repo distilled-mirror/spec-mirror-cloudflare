@@ -42,7 +42,7 @@ Crawl job ID.
 
 <summary>
 
-CrawlGetResponse object {id, browserSecondsUsed, finished, 6 more }
+CrawlGetResponse object { id, browserSecondsUsed, finished, 6 more }
 
 </summary>
 
@@ -68,7 +68,7 @@ Total number of URLs that have been crawled so far.
 
 <summary>
 
-records: array of object {status, url, html, 4 more }
+records: array of object { status, url, html, 4 more }
 
 List of crawl job records.
 
@@ -78,7 +78,7 @@ List of crawl job records.
 
 <summary>
 
-status: "queued"or "errored"or "completed"or 3 more
+status: "queued" or "errored" or "completed" or 3 more
 
 Current status of the crawled URL.
 
@@ -130,7 +130,7 @@ HTML content of the crawled URL. Null if unreadable.
 
 <summary>
 
-json: optional map\[stringor numberor booleanor 2 more]or array of stringor numberor booleanor 2 moreor string
+json: optional map\[string or number or boolean or 2 more] or array of string or number or boolean or 2 more or string
 
 JSON of the content of the crawled URL, or the raw text if it is not an object or array. Null if unreadable.
 
@@ -142,7 +142,7 @@ One of the following:
 
 <summary>
 
-map\[stringor numberor booleanor 2 more]
+map\[string or number or boolean or 2 more]
 
 </summary>
 
@@ -176,7 +176,7 @@ map\[unknown]
 
 <summary>
 
-array of stringor numberor booleanor 2 more
+array of string or number or boolean or 2 more
 
 </summary>
 
@@ -224,7 +224,7 @@ Markdown of the content of the crawled URL. Null if unreadable.
 
 <summary>
 
-metadata: optional object {status, url, lastModified, 6 more }
+metadata: optional object { status, url, lastModified, 6 more }
 
 Absent for urls that never reached a fetch.
 
@@ -292,7 +292,7 @@ Title of the crawled page.
 
 <summary>
 
-outcome: optional "success"or "robots\_disallowed"or "crawl\_purpose\_disallowed"or 9 more
+outcome: optional "success" or "robots\_disallowed" or "crawl\_purpose\_disallowed" or 9 more
 
 Result of processing the URL. Absent for older records.
 
@@ -360,7 +360,7 @@ One of the following:
 
 <summary>
 
-robots: array of object {origin, state, status }
+robots: array of object { origin, state, status }
 
 Robots.txt state for the first 50 origins encountered by the crawl.
 
@@ -376,7 +376,7 @@ Origin whose robots.txt was checked.
 
 <summary>
 
-state: "available"or "absent"or "fetch\_failed"
+state: "available" or "absent" or "fetch\_failed"
 
 Whether usable robots.txt rules were available.
 
@@ -442,7 +442,7 @@ Cursor for pagination.
 
 <summary>
 
-CrawlDeleteResponse object {job\_id, message }
+CrawlDeleteResponse object { job\_id, message }
 
 </summary>
 

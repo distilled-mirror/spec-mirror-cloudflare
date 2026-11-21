@@ -54,7 +54,7 @@ POST/accounts/{account\_id}/devices/registrations/unrevoke
 
 <summary>
 
-RegistrationListResponse object {id, created\_at, device, 12 more }
+RegistrationListResponse object { id, created\_at, device, 12 more }
 
 A WARP configuration tied to a single user. Multiple registrations can be created from a single WARP device.
 
@@ -76,7 +76,7 @@ The RFC3339 timestamp when the registration was created.
 
 <summary>
 
-device: object {id, name, client\_version }
+device: object { id, name, client\_version }
 
 Device details embedded inside of a registration.
 
@@ -120,7 +120,7 @@ The RFC3339 timestamp when the registration was last seen.
 
 <summary>
 
-registration\_type: "warp"or "browser\_extension"
+registration\_type: "warp" or "browser\_extension"
 
 The registration client type, derived from device\_type.
 
@@ -162,7 +162,7 @@ The type of encryption key used by the WARP client for the active key. Currently
 
 <summary>
 
-policy: optional object {id, default, deleted, 2 more }
+policy: optional object { id, default, deleted, 2 more }
 
 The device settings profile assigned to this registration.
 
@@ -218,7 +218,7 @@ Type of the tunnel - wireguard or masque.
 
 <summary>
 
-user: optional object {id, email, name }
+user: optional object { id, email, name }
 
 </summary>
 
@@ -268,7 +268,7 @@ The virtual IPv6 address assigned to the network interface of the tunnel for thi
 
 <summary>
 
-RegistrationGetResponse object {id, created\_at, device, 12 more }
+RegistrationGetResponse object { id, created\_at, device, 12 more }
 
 A WARP configuration tied to a single user. Multiple registrations can be created from a single WARP device.
 
@@ -290,7 +290,7 @@ The RFC3339 timestamp when the registration was created.
 
 <summary>
 
-device: object {id, name, client\_version }
+device: object { id, name, client\_version }
 
 Device details embedded inside of a registration.
 
@@ -334,7 +334,7 @@ The RFC3339 timestamp when the registration was last seen.
 
 <summary>
 
-registration\_type: "warp"or "browser\_extension"
+registration\_type: "warp" or "browser\_extension"
 
 The registration client type, derived from device\_type.
 
@@ -376,7 +376,7 @@ The type of encryption key used by the WARP client for the active key. Currently
 
 <summary>
 
-policy: optional object {id, default, deleted, 2 more }
+policy: optional object { id, default, deleted, 2 more }
 
 The device settings profile assigned to this registration.
 
@@ -432,7 +432,7 @@ Type of the tunnel - wireguard or masque.
 
 <summary>
 
-user: optional object {id, email, name }
+user: optional object { id, email, name }
 
 </summary>
 

@@ -48,7 +48,7 @@ POST/accounts/{account\_id}/email/sending/suppressions/bulk
 
 <summary>
 
-SuppressionListResponse object {id, created\_at, email, 5 more }
+SuppressionListResponse object { id, created\_at, email, 5 more }
 
 </summary>
 
@@ -106,7 +106,7 @@ Advisory note for this suppression, if any.
 
 <summary>
 
-scope: optional object {type } or object {type, value }
+scope: optional object { type } or object { type, value }
 
 Where the suppression applies: <code>account</code> for every sending domain of the account, or <code>sending_domain</code> for one envelope MAIL FROM domain.
 
@@ -118,7 +118,7 @@ One of the following:
 
 <summary>
 
-Type object {type }
+Type object { type }
 
 </summary>
 
@@ -136,7 +136,7 @@ Blocks the recipient for every sending domain of the account.
 
 <summary>
 
-object {type, value }
+object { type, value }
 
 </summary>
 
@@ -170,7 +170,7 @@ maxLength1024
 
 <summary>
 
-SuppressionGetResponse object {id, created\_at, email, 5 more }
+SuppressionGetResponse object { id, created\_at, email, 5 more }
 
 </summary>
 
@@ -228,7 +228,7 @@ Advisory note for this suppression, if any.
 
 <summary>
 
-scope: optional object {type } or object {type, value }
+scope: optional object { type } or object { type, value }
 
 Where the suppression applies: <code>account</code> for every sending domain of the account, or <code>sending_domain</code> for one envelope MAIL FROM domain.
 
@@ -240,7 +240,7 @@ One of the following:
 
 <summary>
 
-Type object {type }
+Type object { type }
 
 </summary>
 
@@ -258,7 +258,7 @@ Blocks the recipient for every sending domain of the account.
 
 <summary>
 
-object {type, value }
+object { type, value }
 
 </summary>
 
@@ -292,7 +292,7 @@ maxLength1024
 
 <summary>
 
-SuppressionCreateResponse object {id, scope }
+SuppressionCreateResponse object { id, scope }
 
 </summary>
 
@@ -308,7 +308,7 @@ formatuuid
 
 <summary>
 
-scope: optional object {type } or object {type, value }
+scope: optional object { type } or object { type, value }
 
 Where the suppression applies: <code>account</code> for every sending domain of the account, or <code>sending_domain</code> for one envelope MAIL FROM domain.
 
@@ -320,7 +320,7 @@ One of the following:
 
 <summary>
 
-Type object {type }
+Type object { type }
 
 </summary>
 
@@ -338,7 +338,7 @@ Blocks the recipient for every sending domain of the account.
 
 <summary>
 
-object {type, value }
+object { type, value }
 
 </summary>
 
@@ -372,7 +372,7 @@ maxLength1024
 
 <summary>
 
-SuppressionEditResponse object {id, created\_at, email, 5 more }
+SuppressionEditResponse object { id, created\_at, email, 5 more }
 
 </summary>
 
@@ -430,7 +430,7 @@ Advisory note for this suppression, if any.
 
 <summary>
 
-scope: optional object {type } or object {type, value }
+scope: optional object { type } or object { type, value }
 
 Where the suppression applies: <code>account</code> for every sending domain of the account, or <code>sending_domain</code> for one envelope MAIL FROM domain.
 
@@ -442,7 +442,7 @@ One of the following:
 
 <summary>
 
-Type object {type }
+Type object { type }
 
 </summary>
 
@@ -460,7 +460,7 @@ Blocks the recipient for every sending domain of the account.
 
 <summary>
 
-object {type, value }
+object { type, value }
 
 </summary>
 
@@ -494,7 +494,7 @@ maxLength1024
 
 <summary>
 
-SuppressionDeleteResponse object {id, scope }
+SuppressionDeleteResponse object { id, scope }
 
 </summary>
 
@@ -510,7 +510,7 @@ formatuuid
 
 <summary>
 
-scope: optional object {type } or object {type, value }
+scope: optional object { type } or object { type, value }
 
 Where the suppression applies: <code>account</code> for every sending domain of the account, or <code>sending_domain</code> for one envelope MAIL FROM domain.
 
@@ -522,7 +522,7 @@ One of the following:
 
 <summary>
 
-Type object {type }
+Type object { type }
 
 </summary>
 
@@ -540,7 +540,7 @@ Blocks the recipient for every sending domain of the account.
 
 <summary>
 
-object {type, value }
+object { type, value }
 
 </summary>
 
@@ -574,7 +574,7 @@ maxLength1024
 
 <summary>
 
-SuppressionImportResponse object {deduplicated, errors, invalid, 4 more }
+SuppressionImportResponse object { deduplicated, errors, invalid, 4 more }
 
 </summary>
 
@@ -600,7 +600,7 @@ Number of items with an invalid email address or sending domain.
 
 <summary>
 
-items: array of object {index, status, id, 3 more }
+items: array of object { index, status, id, 3 more }
 
 Per-item results, in the same order as the request body.
 
@@ -616,7 +616,7 @@ Zero-based index of this item in the request body.
 
 <summary>
 
-status: "processed"or "invalid"or "error"or "skipped"
+status: "processed" or "invalid" or "error" or "skipped"
 
 Outcome for this item.
 
@@ -670,7 +670,7 @@ Human-readable error message. Present when <code>status</code> is <code>invalid<
 
 <summary>
 
-scope: optional object {type } or object {type, value }
+scope: optional object { type } or object { type, value }
 
 Where the suppression applies: <code>account</code> for every sending domain of the account, or <code>sending_domain</code> for one envelope MAIL FROM domain.
 
@@ -682,7 +682,7 @@ One of the following:
 
 <summary>
 
-Type object {type }
+Type object { type }
 
 </summary>
 
@@ -700,7 +700,7 @@ Blocks the recipient for every sending domain of the account.
 
 <summary>
 
-object {type, value }
+object { type, value }
 
 </summary>
 

@@ -44,7 +44,7 @@ DELETE/accounts/{account\_id}/rules/lists/{list\_id}
 
 <summary>
 
-Hostname object {url\_hostname, exclude\_exact\_hostname }
+Hostname object { url\_hostname, exclude\_exact\_hostname }
 
 Hostnames support ASCII(7) letters from a to z, the digits from 0 to 9, wildcards (\*), and the hyphen (-).
 
@@ -68,7 +68,7 @@ Only applies to wildcard hostnames (e.g., \*.example.com). When true (default), 
 
 <summary>
 
-ListsList object {id, created\_on, kind, 5 more }
+ListsList object { id, created\_on, kind, 5 more }
 
 </summary>
 
@@ -92,7 +92,7 @@ The RFC 3339 timestamp of when the list was created.
 
 <summary>
 
-kind: "ip"or "redirect"or "hostname"or "asn"
+kind: "ip" or "redirect" or "hostname" or "asn"
 
 The type of the list. Each type supports specific list items (IP addresses, ASNs, hostnames or redirects).
 
@@ -162,7 +162,7 @@ maxLength500
 
 <summary>
 
-Redirect object {source\_url, target\_url, include\_subdomains, 4 more }
+Redirect object { source\_url, target\_url, include\_subdomains, 4 more }
 
 The definition of the redirect.
 
@@ -192,7 +192,7 @@ preserve\_query\_string: optional boolean
 
 <summary>
 
-status\_code: optional 301or 302or 307or 308
+status\_code: optional 301 or 302 or 307 or 308
 
 </summary>
 
@@ -230,7 +230,7 @@ subpath\_matching: optional boolean
 
 <summary>
 
-ListGetResponse object {id, created\_on, kind, 5 more }
+ListGetResponse object { id, created\_on, kind, 5 more }
 
 </summary>
 
@@ -254,7 +254,7 @@ The RFC 3339 timestamp of when the list was created.
 
 <summary>
 
-kind: "ip"or "redirect"or "hostname"or "asn"
+kind: "ip" or "redirect" or "hostname" or "asn"
 
 The type of the list. Each type supports specific list items (IP addresses, ASNs, hostnames or redirects).
 
@@ -324,7 +324,7 @@ maxLength500
 
 <summary>
 
-ListCreateResponse object {id, created\_on, kind, 5 more }
+ListCreateResponse object { id, created\_on, kind, 5 more }
 
 </summary>
 
@@ -348,7 +348,7 @@ The RFC 3339 timestamp of when the list was created.
 
 <summary>
 
-kind: "ip"or "redirect"or "hostname"or "asn"
+kind: "ip" or "redirect" or "hostname" or "asn"
 
 The type of the list. Each type supports specific list items (IP addresses, ASNs, hostnames or redirects).
 
@@ -418,7 +418,7 @@ maxLength500
 
 <summary>
 
-ListUpdateResponse object {id, created\_on, kind, 5 more }
+ListUpdateResponse object { id, created\_on, kind, 5 more }
 
 </summary>
 
@@ -442,7 +442,7 @@ The RFC 3339 timestamp of when the list was created.
 
 <summary>
 
-kind: "ip"or "redirect"or "hostname"or "asn"
+kind: "ip" or "redirect" or "hostname" or "asn"
 
 The type of the list. Each type supports specific list items (IP addresses, ASNs, hostnames or redirects).
 
@@ -512,7 +512,7 @@ maxLength500
 
 <summary>
 
-ListDeleteResponse object {id }
+ListDeleteResponse object { id }
 
 </summary>
 
@@ -542,7 +542,7 @@ GET/accounts/{account\_id}/rules/lists/bulk\_operations/{operation\_id}
 
 <summary>
 
-BulkOperationGetResponse = object {id, status } or object {id, completed, status } or object {id, completed, error, status }
+BulkOperationGetResponse = object { id, status } or object { id, completed, status } or object { id, completed, error, status }
 
 </summary>
 
@@ -552,7 +552,7 @@ One of the following:
 
 <summary>
 
-ListsBulkOperationPendingOrRunning object {id, status }
+ListsBulkOperationPendingOrRunning object { id, status }
 
 </summary>
 
@@ -566,7 +566,7 @@ The unique operation ID of the asynchronous action.
 
 <summary>
 
-status: "pending"or "running"
+status: "pending" or "running"
 
 The current status of the asynchronous operation.
 
@@ -594,7 +594,7 @@ One of the following:
 
 <summary>
 
-ListsBulkOperationCompleted object {id, completed, status }
+ListsBulkOperationCompleted object { id, completed, status }
 
 </summary>
 
@@ -624,7 +624,7 @@ The current status of the asynchronous operation.
 
 <summary>
 
-ListsBulkOperationFailed object {id, completed, error, status }
+ListsBulkOperationFailed object { id, completed, error, status }
 
 </summary>
 
@@ -688,7 +688,7 @@ DELETE/accounts/{account\_id}/rules/lists/{list\_id}/items
 
 <summary>
 
-ItemListResponse = object {id, created\_on, ip, 2 more } or object {id, created\_on, hostname, 2 more } or object {id, created\_on, modified\_on, 2 more } or object {id, asn, created\_on, 2 more }
+ItemListResponse = object { id, created\_on, ip, 2 more } or object { id, created\_on, hostname, 2 more } or object { id, created\_on, modified\_on, 2 more } or object { id, asn, created\_on, 2 more }
 
 </summary>
 
@@ -698,7 +698,7 @@ One of the following:
 
 <summary>
 
-ListsListItemIPFull object {id, created\_on, ip, 2 more }
+ListsListItemIPFull object { id, created\_on, ip, 2 more }
 
 </summary>
 
@@ -744,7 +744,7 @@ Defines an informative summary of the list item.
 
 <summary>
 
-ListsListItemHostnameFull object {id, created\_on, hostname, 2 more }
+ListsListItemHostnameFull object { id, created\_on, hostname, 2 more }
 
 </summary>
 
@@ -790,7 +790,7 @@ Defines an informative summary of the list item.
 
 <summary>
 
-ListsListItemRedirectFull object {id, created\_on, modified\_on, 2 more }
+ListsListItemRedirectFull object { id, created\_on, modified\_on, 2 more }
 
 </summary>
 
@@ -836,7 +836,7 @@ Defines an informative summary of the list item.
 
 <summary>
 
-ListsListItemASNFull object {id, asn, created\_on, 2 more }
+ListsListItemASNFull object { id, asn, created\_on, 2 more }
 
 </summary>
 
@@ -886,7 +886,7 @@ Defines an informative summary of the list item.
 
 <summary>
 
-ItemGetResponse = object {id, created\_on, ip, 2 more } or object {id, created\_on, hostname, 2 more } or object {id, created\_on, modified\_on, 2 more } or object {id, asn, created\_on, 2 more }
+ItemGetResponse = object { id, created\_on, ip, 2 more } or object { id, created\_on, hostname, 2 more } or object { id, created\_on, modified\_on, 2 more } or object { id, asn, created\_on, 2 more }
 
 </summary>
 
@@ -896,7 +896,7 @@ One of the following:
 
 <summary>
 
-ListsListItemIPFull object {id, created\_on, ip, 2 more }
+ListsListItemIPFull object { id, created\_on, ip, 2 more }
 
 </summary>
 
@@ -942,7 +942,7 @@ Defines an informative summary of the list item.
 
 <summary>
 
-ListsListItemHostnameFull object {id, created\_on, hostname, 2 more }
+ListsListItemHostnameFull object { id, created\_on, hostname, 2 more }
 
 </summary>
 
@@ -988,7 +988,7 @@ Defines an informative summary of the list item.
 
 <summary>
 
-ListsListItemRedirectFull object {id, created\_on, modified\_on, 2 more }
+ListsListItemRedirectFull object { id, created\_on, modified\_on, 2 more }
 
 </summary>
 
@@ -1034,7 +1034,7 @@ Defines an informative summary of the list item.
 
 <summary>
 
-ListsListItemASNFull object {id, asn, created\_on, 2 more }
+ListsListItemASNFull object { id, asn, created\_on, 2 more }
 
 </summary>
 
@@ -1084,7 +1084,7 @@ Defines an informative summary of the list item.
 
 <summary>
 
-ItemCreateResponse object {operation\_id }
+ItemCreateResponse object { operation\_id }
 
 </summary>
 
@@ -1102,7 +1102,7 @@ The unique operation ID of the asynchronous action.
 
 <summary>
 
-ItemUpdateResponse object {operation\_id }
+ItemUpdateResponse object { operation\_id }
 
 </summary>
 
@@ -1120,7 +1120,7 @@ The unique operation ID of the asynchronous action.
 
 <summary>
 
-ItemDeleteResponse object {operation\_id }
+ItemDeleteResponse object { operation\_id }
 
 </summary>
 

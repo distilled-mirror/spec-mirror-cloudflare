@@ -58,7 +58,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Access: Apps and Policies Revoke``Access: Apps and Policies Write`
+`Individual Access App Admin``Access: Apps Write``Access: Apps Revoke``Access: Apps and Policies Revoke``Zero Trust Write``Access: Apps and Policies Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -92,7 +92,7 @@ result: optional unknown
 
 <summary>
 
-success: optional trueor false
+success: optional true or false
 
 </summary>
 

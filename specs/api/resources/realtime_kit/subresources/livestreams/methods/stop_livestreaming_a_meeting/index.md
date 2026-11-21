@@ -86,7 +86,7 @@ formatuuid
 
 <summary>
 
-data: optional object {message }
+data: optional object { message }
 
 </summary>
 

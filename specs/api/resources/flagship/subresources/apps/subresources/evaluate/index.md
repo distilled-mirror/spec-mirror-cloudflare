@@ -30,7 +30,7 @@ GET/accounts/{account\_id}/flagship/apps/{app\_id}/evaluate
 
 <summary>
 
-EvaluateGetResponse object {flagKey, reason, variant, 2 more }
+EvaluateGetResponse object { flagKey, reason, variant, 2 more }
 
 </summary>
 
@@ -44,7 +44,7 @@ Key of the evaluated flag.
 
 <summary>
 
-reason: "STATIC"or "TARGETING\_MATCH"or "DEFAULT"or 2 more
+reason: "STATIC" or "TARGETING\_MATCH" or "DEFAULT" or 2 more
 
 Reason the evaluator selected this variation.
 
@@ -86,7 +86,7 @@ Name of the variation that supplied the resolved value.
 
 <summary>
 
-metadata: optional map\[booleanor stringor number]
+metadata: optional map\[boolean or string or number]
 
 Key-value metadata associated with the flag. Returned only when the flag has metadata.
 
@@ -114,7 +114,7 @@ number
 
 <summary>
 
-value: optional stringor numberor booleanor 2 more
+value: optional string or number or boolean or 2 more
 
 </summary>
 

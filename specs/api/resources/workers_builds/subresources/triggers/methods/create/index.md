@@ -150,7 +150,7 @@ Whether builds reuse cached dependencies and build artifacts.
 
 <summary>
 
-errors: array of object {message, code }
+errors: array of object { message, code }
 
 </summary>
 
@@ -174,7 +174,7 @@ messages: array of string
 
 <summary>
 
-result: object {branch\_excludes, branch\_includes, build\_caching\_enabled, 14 more } or object {branch\_excludes, branch\_includes, build\_caching\_enabled, 14 more }
+result: object { branch\_excludes, branch\_includes, build\_caching\_enabled, 14 more } or object { branch\_excludes, branch\_includes, build\_caching\_enabled, 14 more }
 
 </summary>
 
@@ -184,7 +184,7 @@ One of the following:
 
 <summary>
 
-object {branch\_excludes, branch\_includes, build\_caching\_enabled, 14 more }
+object { branch\_excludes, branch\_includes, build\_caching\_enabled, 14 more }
 
 </summary>
 
@@ -270,7 +270,7 @@ Path patterns that can start builds.
 
 <summary>
 
-repo\_connection: optional object {created\_on, deleted\_on, modified\_on, 6 more }
+repo\_connection: optional object { created\_on, deleted\_on, modified\_on, 6 more }
 
 </summary>
 
@@ -308,7 +308,7 @@ Human-readable name of the account or namespace that owns the repository.
 
 <summary>
 
-provider\_type: optional "github"or "gitlab"or "gitlab\_internal"or "origin"
+provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
 
 Source control provider.
 
@@ -388,7 +388,7 @@ formatuuid
 
 <summary>
 
-object {branch\_excludes, branch\_includes, build\_caching\_enabled, 14 more }
+object { branch\_excludes, branch\_includes, build\_caching\_enabled, 14 more }
 
 </summary>
 
@@ -474,7 +474,7 @@ Path patterns that can start builds.
 
 <summary>
 
-repo\_connection: optional object {created\_on, deleted\_on, modified\_on, 6 more }
+repo\_connection: optional object { created\_on, deleted\_on, modified\_on, 6 more }
 
 </summary>
 
@@ -512,7 +512,7 @@ Human-readable name of the account or namespace that owns the repository.
 
 <summary>
 
-provider\_type: optional "github"or "gitlab"or "gitlab\_internal"or "origin"
+provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
 
 Source control provider.
 
@@ -600,7 +600,7 @@ success: boolean
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

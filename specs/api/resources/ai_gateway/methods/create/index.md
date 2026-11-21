@@ -54,7 +54,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`AI Gateway Write`
+`AI Search Index Engine``Auto Rag Write Run Engine``AI Gateway Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -116,7 +116,7 @@ Requires customer-provided provider credentials and prevents fallback to Unified
 
 <summary>
 
-dlp: optional object {action, enabled, profiles } or object {enabled, policies }
+dlp: optional object { action, enabled, profiles } or object { enabled, policies }
 
 </summary>
 
@@ -126,7 +126,7 @@ One of the following:
 
 <summary>
 
-object {action, enabled, profiles }
+object { action, enabled, profiles }
 
 </summary>
 
@@ -134,7 +134,7 @@ object {action, enabled, profiles }
 
 <summary>
 
-action: "BLOCK"or "FLAG"
+action: "BLOCK" or "FLAG"
 
 </summary>
 
@@ -168,7 +168,7 @@ profiles: array of string
 
 <summary>
 
-object {enabled, policies }
+object { enabled, policies }
 
 </summary>
 
@@ -180,7 +180,7 @@ enabled: boolean
 
 <summary>
 
-policies: array of object {id, action, check, 2 more }
+policies: array of object { id, action, check, 2 more }
 
 </summary>
 
@@ -192,7 +192,7 @@ id: string
 
 <summary>
 
-action: "FLAG"or "BLOCK"
+action: "FLAG" or "BLOCK"
 
 </summary>
 
@@ -214,7 +214,7 @@ One of the following:
 
 <summary>
 
-check: array of "REQUEST"or "RESPONSE"
+check: array of "REQUEST" or "RESPONSE"
 
 </summary>
 
@@ -256,7 +256,7 @@ profiles: array of string
 
 <summary>
 
-guardrails: optional object {prompt, response }
+guardrails: optional object { prompt, response }
 
 </summary>
 
@@ -264,7 +264,7 @@ guardrails: optional object {prompt, response }
 
 <summary>
 
-prompt: object {P1, S1, S10, 12 more }
+prompt: object { P1, S1, S10, 12 more }
 
 </summary>
 
@@ -272,29 +272,7 @@ prompt: object {P1, S1, S10, 12 more }
 
 <summary>
 
-P1: optional "FLAG"or "BLOCK"
-
-</summary>
-
-One of the following:
-
-"FLAG"
-
-<a href="#">Link to this property</a>
-
-"BLOCK"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-S1: optional "FLAG"or "BLOCK"
+P1: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -316,7 +294,7 @@ One of the following:
 
 <summary>
 
-S10: optional "FLAG"or "BLOCK"
+S1: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -338,7 +316,7 @@ One of the following:
 
 <summary>
 
-S11: optional "FLAG"or "BLOCK"
+S10: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -360,7 +338,7 @@ One of the following:
 
 <summary>
 
-S12: optional "FLAG"or "BLOCK"
+S11: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -382,7 +360,7 @@ One of the following:
 
 <summary>
 
-S13: optional "FLAG"or "BLOCK"
+S12: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -404,7 +382,7 @@ One of the following:
 
 <summary>
 
-S14: optional "FLAG"or "BLOCK"
+S13: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -426,7 +404,7 @@ One of the following:
 
 <summary>
 
-S2: optional "FLAG"or "BLOCK"
+S14: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -448,7 +426,7 @@ One of the following:
 
 <summary>
 
-S3: optional "FLAG"or "BLOCK"
+S2: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -470,7 +448,7 @@ One of the following:
 
 <summary>
 
-S4: optional "FLAG"or "BLOCK"
+S3: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -492,7 +470,7 @@ One of the following:
 
 <summary>
 
-S5: optional "FLAG"or "BLOCK"
+S4: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -514,7 +492,7 @@ One of the following:
 
 <summary>
 
-S6: optional "FLAG"or "BLOCK"
+S5: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -536,7 +514,7 @@ One of the following:
 
 <summary>
 
-S7: optional "FLAG"or "BLOCK"
+S6: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -558,7 +536,7 @@ One of the following:
 
 <summary>
 
-S8: optional "FLAG"or "BLOCK"
+S7: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -580,7 +558,29 @@ One of the following:
 
 <summary>
 
-S9: optional "FLAG"or "BLOCK"
+S8: optional "FLAG" or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S9: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -606,7 +606,7 @@ One of the following:
 
 <summary>
 
-response: object {P1, S1, S10, 12 more }
+response: object { P1, S1, S10, 12 more }
 
 </summary>
 
@@ -614,29 +614,7 @@ response: object {P1, S1, S10, 12 more }
 
 <summary>
 
-P1: optional "FLAG"or "BLOCK"
-
-</summary>
-
-One of the following:
-
-"FLAG"
-
-<a href="#">Link to this property</a>
-
-"BLOCK"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-S1: optional "FLAG"or "BLOCK"
+P1: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -658,7 +636,7 @@ One of the following:
 
 <summary>
 
-S10: optional "FLAG"or "BLOCK"
+S1: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -680,7 +658,7 @@ One of the following:
 
 <summary>
 
-S11: optional "FLAG"or "BLOCK"
+S10: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -702,7 +680,7 @@ One of the following:
 
 <summary>
 
-S12: optional "FLAG"or "BLOCK"
+S11: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -724,7 +702,7 @@ One of the following:
 
 <summary>
 
-S13: optional "FLAG"or "BLOCK"
+S12: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -746,7 +724,7 @@ One of the following:
 
 <summary>
 
-S14: optional "FLAG"or "BLOCK"
+S13: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -768,7 +746,7 @@ One of the following:
 
 <summary>
 
-S2: optional "FLAG"or "BLOCK"
+S14: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -790,7 +768,7 @@ One of the following:
 
 <summary>
 
-S3: optional "FLAG"or "BLOCK"
+S2: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -812,7 +790,7 @@ One of the following:
 
 <summary>
 
-S4: optional "FLAG"or "BLOCK"
+S3: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -834,7 +812,7 @@ One of the following:
 
 <summary>
 
-S5: optional "FLAG"or "BLOCK"
+S4: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -856,7 +834,7 @@ One of the following:
 
 <summary>
 
-S6: optional "FLAG"or "BLOCK"
+S5: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -878,7 +856,7 @@ One of the following:
 
 <summary>
 
-S7: optional "FLAG"or "BLOCK"
+S6: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -900,7 +878,7 @@ One of the following:
 
 <summary>
 
-S8: optional "FLAG"or "BLOCK"
+S7: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -922,7 +900,29 @@ One of the following:
 
 <summary>
 
-S9: optional "FLAG"or "BLOCK"
+S8: optional "FLAG" or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S9: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -964,7 +964,7 @@ minimum10000
 
 <summary>
 
-log\_management\_strategy: optional "STOP\_INSERTING"or "DELETE\_OLDEST"
+log\_management\_strategy: optional "STOP\_INSERTING" or "DELETE\_OLDEST"
 
 </summary>
 
@@ -1004,7 +1004,7 @@ Lets requests to a model use every provider that serves it. When off, a model us
 
 <summary>
 
-otel: optional array of object {headers, url, authorization, content\_type }
+otel: optional array of object { headers, url, authorization, content\_type }
 
 </summary>
 
@@ -1030,7 +1030,7 @@ maxLength256
 
 <summary>
 
-content\_type: optional "json"or "protobuf"
+content\_type: optional "json" or "protobuf"
 
 </summary>
 
@@ -1056,7 +1056,7 @@ One of the following:
 
 <summary>
 
-rate\_limiting\_technique: optional "fixed"or "sliding"
+rate\_limiting\_technique: optional "fixed" or "sliding"
 
 </summary>
 
@@ -1078,7 +1078,7 @@ One of the following:
 
 <summary>
 
-retry\_backoff: optional "constant"or "linear"or "exponential"
+retry\_backoff: optional "constant" or "linear" or "exponential"
 
 Backoff strategy for retry delays
 
@@ -1126,7 +1126,7 @@ minimum1
 
 <summary>
 
-spend\_limits: optional object {enabled, rules }
+spend\_limits: optional object { enabled, rules }
 
 </summary>
 
@@ -1138,7 +1138,7 @@ enabled: optional boolean
 
 <summary>
 
-rules: optional array of object {limit, limitType, window, 6 more }
+rules: optional array of object { limit, limitType, window, 6 more }
 
 </summary>
 
@@ -1176,7 +1176,7 @@ enabled: optional boolean
 
 <summary>
 
-metadata: optional map\[object {mode } or object {mode, values } ]
+metadata: optional map\[object { mode } or object { mode, values } ]
 
 </summary>
 
@@ -1186,7 +1186,7 @@ One of the following:
 
 <summary>
 
-Mode object {mode }
+Mode object { mode }
 
 </summary>
 
@@ -1202,7 +1202,7 @@ mode: "partition"
 
 <summary>
 
-object {mode, values }
+object { mode, values }
 
 </summary>
 
@@ -1226,7 +1226,7 @@ values: array of string
 
 <summary>
 
-model: optional object {mode, values }
+model: optional object { mode, values }
 
 </summary>
 
@@ -1246,7 +1246,7 @@ values: array of string
 
 <summary>
 
-provider: optional object {mode, values }
+provider: optional object { mode, values }
 
 </summary>
 
@@ -1266,7 +1266,7 @@ values: array of string
 
 <summary>
 
-technique: optional "fixed"or "sliding"
+technique: optional "fixed" or "sliding"
 
 </summary>
 
@@ -1302,7 +1302,7 @@ Secrets Store used by this gateway. Omit on update to keep the current store. Ca
 
 <summary>
 
-stripe: optional object {authorization, usage\_events }
+stripe: optional object { authorization, usage\_events }
 
 </summary>
 
@@ -1314,7 +1314,7 @@ authorization: string
 
 <summary>
 
-usage\_events: array of object {payload }
+usage\_events: array of object { payload }
 
 </summary>
 
@@ -1334,7 +1334,7 @@ payload: string
 
 <summary>
 
-workers\_ai\_billing\_mode: optional "postpaid"or "unified"
+workers\_ai\_billing\_mode: optional "postpaid" or "unified"
 
 Controls how Workers AI inference calls routed through this gateway are billed. ‘postpaid’ bills the account directly through Workers AI; ‘unified’ deducts credits via AI Gateway using neuron-based pricing and delegates billing to AI Gateway.
 
@@ -1364,7 +1364,7 @@ zdr: optional boolean
 
 <summary>
 
-result: object {id, cache\_invalidate\_on\_update, cache\_ttl, 29 more }
+result: object { id, cache\_invalidate\_on\_update, cache\_ttl, 29 more }
 
 </summary>
 
@@ -1440,7 +1440,7 @@ Requires customer-provided provider credentials and prevents fallback to Unified
 
 <summary>
 
-dlp: optional object {action, enabled, profiles } or object {enabled, policies }
+dlp: optional object { action, enabled, profiles } or object { enabled, policies }
 
 </summary>
 
@@ -1450,7 +1450,7 @@ One of the following:
 
 <summary>
 
-object {action, enabled, profiles }
+object { action, enabled, profiles }
 
 </summary>
 
@@ -1458,7 +1458,7 @@ object {action, enabled, profiles }
 
 <summary>
 
-action: "BLOCK"or "FLAG"
+action: "BLOCK" or "FLAG"
 
 </summary>
 
@@ -1492,7 +1492,7 @@ profiles: array of string
 
 <summary>
 
-object {enabled, policies }
+object { enabled, policies }
 
 </summary>
 
@@ -1504,7 +1504,7 @@ enabled: boolean
 
 <summary>
 
-policies: array of object {id, action, check, 2 more }
+policies: array of object { id, action, check, 2 more }
 
 </summary>
 
@@ -1516,7 +1516,7 @@ id: string
 
 <summary>
 
-action: "FLAG"or "BLOCK"
+action: "FLAG" or "BLOCK"
 
 </summary>
 
@@ -1538,7 +1538,7 @@ One of the following:
 
 <summary>
 
-check: array of "REQUEST"or "RESPONSE"
+check: array of "REQUEST" or "RESPONSE"
 
 </summary>
 
@@ -1580,7 +1580,7 @@ profiles: array of string
 
 <summary>
 
-fedramp\_level: optional "fedramp-medium"or "fedramp-high"
+fedramp\_level: optional "fedramp-medium" or "fedramp-high"
 
 FedRAMP compliance level: fedramp-medium or fedramp-high.
 
@@ -1604,7 +1604,7 @@ One of the following:
 
 <summary>
 
-fedramp\_mode: optional "prefer"or "require"
+fedramp\_mode: optional "prefer" or "require"
 
 FedRAMP enforcement mode. “prefer” prioritizes compliant connectors but allows fallback. “require” strictly filters.
 
@@ -1628,7 +1628,7 @@ One of the following:
 
 <summary>
 
-guardrails: optional object {prompt, response }
+guardrails: optional object { prompt, response }
 
 </summary>
 
@@ -1636,7 +1636,7 @@ guardrails: optional object {prompt, response }
 
 <summary>
 
-prompt: object {P1, S1, S10, 12 more }
+prompt: object { P1, S1, S10, 12 more }
 
 </summary>
 
@@ -1644,29 +1644,7 @@ prompt: object {P1, S1, S10, 12 more }
 
 <summary>
 
-P1: optional "FLAG"or "BLOCK"
-
-</summary>
-
-One of the following:
-
-"FLAG"
-
-<a href="#">Link to this property</a>
-
-"BLOCK"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-S1: optional "FLAG"or "BLOCK"
+P1: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -1688,7 +1666,7 @@ One of the following:
 
 <summary>
 
-S10: optional "FLAG"or "BLOCK"
+S1: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -1710,7 +1688,7 @@ One of the following:
 
 <summary>
 
-S11: optional "FLAG"or "BLOCK"
+S10: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -1732,7 +1710,7 @@ One of the following:
 
 <summary>
 
-S12: optional "FLAG"or "BLOCK"
+S11: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -1754,7 +1732,7 @@ One of the following:
 
 <summary>
 
-S13: optional "FLAG"or "BLOCK"
+S12: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -1776,7 +1754,7 @@ One of the following:
 
 <summary>
 
-S14: optional "FLAG"or "BLOCK"
+S13: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -1798,7 +1776,7 @@ One of the following:
 
 <summary>
 
-S2: optional "FLAG"or "BLOCK"
+S14: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -1820,7 +1798,7 @@ One of the following:
 
 <summary>
 
-S3: optional "FLAG"or "BLOCK"
+S2: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -1842,7 +1820,7 @@ One of the following:
 
 <summary>
 
-S4: optional "FLAG"or "BLOCK"
+S3: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -1864,7 +1842,7 @@ One of the following:
 
 <summary>
 
-S5: optional "FLAG"or "BLOCK"
+S4: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -1886,7 +1864,7 @@ One of the following:
 
 <summary>
 
-S6: optional "FLAG"or "BLOCK"
+S5: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -1908,7 +1886,7 @@ One of the following:
 
 <summary>
 
-S7: optional "FLAG"or "BLOCK"
+S6: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -1930,7 +1908,7 @@ One of the following:
 
 <summary>
 
-S8: optional "FLAG"or "BLOCK"
+S7: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -1952,7 +1930,29 @@ One of the following:
 
 <summary>
 
-S9: optional "FLAG"or "BLOCK"
+S8: optional "FLAG" or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S9: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -1978,7 +1978,7 @@ One of the following:
 
 <summary>
 
-response: object {P1, S1, S10, 12 more }
+response: object { P1, S1, S10, 12 more }
 
 </summary>
 
@@ -1986,29 +1986,7 @@ response: object {P1, S1, S10, 12 more }
 
 <summary>
 
-P1: optional "FLAG"or "BLOCK"
-
-</summary>
-
-One of the following:
-
-"FLAG"
-
-<a href="#">Link to this property</a>
-
-"BLOCK"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-S1: optional "FLAG"or "BLOCK"
+P1: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -2030,7 +2008,7 @@ One of the following:
 
 <summary>
 
-S10: optional "FLAG"or "BLOCK"
+S1: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -2052,7 +2030,7 @@ One of the following:
 
 <summary>
 
-S11: optional "FLAG"or "BLOCK"
+S10: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -2074,7 +2052,7 @@ One of the following:
 
 <summary>
 
-S12: optional "FLAG"or "BLOCK"
+S11: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -2096,7 +2074,7 @@ One of the following:
 
 <summary>
 
-S13: optional "FLAG"or "BLOCK"
+S12: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -2118,7 +2096,7 @@ One of the following:
 
 <summary>
 
-S14: optional "FLAG"or "BLOCK"
+S13: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -2140,7 +2118,7 @@ One of the following:
 
 <summary>
 
-S2: optional "FLAG"or "BLOCK"
+S14: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -2162,7 +2140,7 @@ One of the following:
 
 <summary>
 
-S3: optional "FLAG"or "BLOCK"
+S2: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -2184,7 +2162,7 @@ One of the following:
 
 <summary>
 
-S4: optional "FLAG"or "BLOCK"
+S3: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -2206,7 +2184,7 @@ One of the following:
 
 <summary>
 
-S5: optional "FLAG"or "BLOCK"
+S4: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -2228,7 +2206,7 @@ One of the following:
 
 <summary>
 
-S6: optional "FLAG"or "BLOCK"
+S5: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -2250,7 +2228,7 @@ One of the following:
 
 <summary>
 
-S7: optional "FLAG"or "BLOCK"
+S6: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -2272,7 +2250,7 @@ One of the following:
 
 <summary>
 
-S8: optional "FLAG"or "BLOCK"
+S7: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -2294,7 +2272,29 @@ One of the following:
 
 <summary>
 
-S9: optional "FLAG"or "BLOCK"
+S8: optional "FLAG" or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S9: optional "FLAG" or "BLOCK"
 
 </summary>
 
@@ -2340,7 +2340,7 @@ minimum10000
 
 <summary>
 
-log\_management\_strategy: optional "STOP\_INSERTING"or "DELETE\_OLDEST"
+log\_management\_strategy: optional "STOP\_INSERTING" or "DELETE\_OLDEST"
 
 </summary>
 
@@ -2380,7 +2380,7 @@ Lets requests to a model use every provider that serves it. When off, a model us
 
 <summary>
 
-otel: optional array of object {headers, url, authorization, content\_type }
+otel: optional array of object { headers, url, authorization, content\_type }
 
 </summary>
 
@@ -2406,7 +2406,7 @@ maxLength256
 
 <summary>
 
-content\_type: optional "json"or "protobuf"
+content\_type: optional "json" or "protobuf"
 
 </summary>
 
@@ -2432,7 +2432,7 @@ One of the following:
 
 <summary>
 
-rate\_limiting\_technique: optional "fixed"or "sliding"
+rate\_limiting\_technique: optional "fixed" or "sliding"
 
 </summary>
 
@@ -2454,7 +2454,7 @@ One of the following:
 
 <summary>
 
-retry\_backoff: optional "constant"or "linear"or "exponential"
+retry\_backoff: optional "constant" or "linear" or "exponential"
 
 Backoff strategy for retry delays
 
@@ -2502,7 +2502,7 @@ minimum1
 
 <summary>
 
-spend\_limits: optional object {enabled, rules }
+spend\_limits: optional object { enabled, rules }
 
 </summary>
 
@@ -2514,7 +2514,7 @@ enabled: optional boolean
 
 <summary>
 
-rules: optional array of object {limit, limitType, window, 6 more }
+rules: optional array of object { limit, limitType, window, 6 more }
 
 </summary>
 
@@ -2552,7 +2552,7 @@ enabled: optional boolean
 
 <summary>
 
-metadata: optional map\[object {mode } or object {mode, values } ]
+metadata: optional map\[object { mode } or object { mode, values } ]
 
 </summary>
 
@@ -2562,7 +2562,7 @@ One of the following:
 
 <summary>
 
-Mode object {mode }
+Mode object { mode }
 
 </summary>
 
@@ -2578,7 +2578,7 @@ mode: "partition"
 
 <summary>
 
-object {mode, values }
+object { mode, values }
 
 </summary>
 
@@ -2602,7 +2602,7 @@ values: array of string
 
 <summary>
 
-model: optional object {mode, values }
+model: optional object { mode, values }
 
 </summary>
 
@@ -2622,7 +2622,7 @@ values: array of string
 
 <summary>
 
-provider: optional object {mode, values }
+provider: optional object { mode, values }
 
 </summary>
 
@@ -2642,7 +2642,7 @@ values: array of string
 
 <summary>
 
-technique: optional "fixed"or "sliding"
+technique: optional "fixed" or "sliding"
 
 </summary>
 
@@ -2678,7 +2678,7 @@ Secrets Store used by this gateway. Omit on update to keep the current store. Ca
 
 <summary>
 
-stripe: optional object {authorization, usage\_events }
+stripe: optional object { authorization, usage\_events }
 
 </summary>
 
@@ -2690,7 +2690,7 @@ authorization: string
 
 <summary>
 
-usage\_events: array of object {payload }
+usage\_events: array of object { payload }
 
 </summary>
 
@@ -2710,7 +2710,7 @@ payload: string
 
 <summary>
 
-workers\_ai\_billing\_mode: optional "postpaid"or "unified"
+workers\_ai\_billing\_mode: optional "postpaid" or "unified"
 
 Controls how Workers AI inference calls routed through this gateway are billed. ‘postpaid’ bills the account directly through Workers AI; ‘unified’ deducts credits via AI Gateway using neuron-based pricing and delegates billing to AI Gateway.
 

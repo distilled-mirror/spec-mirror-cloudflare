@@ -74,7 +74,7 @@ maxLength32
 
 <summary>
 
-direction: optional "asc"or "desc"
+direction: optional "asc" or "desc"
 
 The direction used to sort returned scripts.
 
@@ -130,7 +130,7 @@ Wildcards are supported at the start and end of each hostname to support starts 
 
 <summary>
 
-order\_by: optional "first\_seen\_at"or "last\_seen\_at"
+order\_by: optional "first\_seen\_at" or "last\_seen\_at"
 
 The field used to sort returned scripts.
 
@@ -200,7 +200,7 @@ Includes scripts whose URL contain one or more URL-encoded URLs separated by com
 
 <summary>
 
-result: array of object {id, added\_at, first\_seen\_at, 18 more }
+result: array of object { id, added\_at, first\_seen\_at, 18 more }
 
 </summary>
 
@@ -350,7 +350,7 @@ url\_reported\_malicious: optional boolean
 
 <summary>
 
-result\_info: object {count, page, per\_page, 2 more }
+result\_info: object { count, page, per\_page, 2 more }
 
 </summary>
 
@@ -420,7 +420,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -462,7 +462,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 

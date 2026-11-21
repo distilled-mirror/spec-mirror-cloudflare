@@ -28,7 +28,7 @@ GET/zones/{zone\_id}/speed\_api/availabilities
 
 <summary>
 
-Availability object {quota, regions, regionsPerPlan }
+Availability object { quota, regions, regionsPerPlan }
 
 </summary>
 
@@ -36,7 +36,7 @@ Availability object {quota, regions, regionsPerPlan }
 
 <summary>
 
-quota: optional object {plan, quotasPerPlan, remainingSchedules, 2 more }
+quota: optional object { plan, quotasPerPlan, remainingSchedules, 2 more }
 
 </summary>
 
@@ -50,7 +50,7 @@ Cloudflare plan.
 
 <summary>
 
-quotasPerPlan: optional object {value }
+quotasPerPlan: optional object { value }
 
 The number of tests available per plan.
 
@@ -60,7 +60,7 @@ The number of tests available per plan.
 
 <summary>
 
-value: optional object {business, enterprise, free, pro }
+value: optional object { business, enterprise, free, pro }
 
 Counts per account plan.
 
@@ -106,7 +106,7 @@ The number of remaining tests available.
 
 <summary>
 
-scheduleQuotasPerPlan: optional object {value }
+scheduleQuotasPerPlan: optional object { value }
 
 The number of schedules available per plan.
 
@@ -116,7 +116,7 @@ The number of schedules available per plan.
 
 <summary>
 
-value: optional object {business, enterprise, free, pro }
+value: optional object { business, enterprise, free, pro }
 
 Counts per account plan.
 
@@ -166,7 +166,7 @@ label: optional string
 
 <summary>
 
-value: optional "asia-east1"or "asia-northeast1"or "asia-northeast2"or 18 more
+value: optional "asia-east1" or "asia-northeast1" or "asia-northeast2" or 18 more
 
 A test region.
 
@@ -270,7 +270,7 @@ One of the following:
 
 <summary>
 
-regionsPerPlan: optional object {business, enterprise, free, pro }
+regionsPerPlan: optional object { business, enterprise, free, pro }
 
 Available regions.
 
@@ -292,7 +292,7 @@ label: optional string
 
 <summary>
 
-value: optional "asia-east1"or "asia-northeast1"or "asia-northeast2"or 18 more
+value: optional "asia-east1" or "asia-northeast1" or "asia-northeast2" or 18 more
 
 A test region.
 
@@ -408,7 +408,7 @@ label: optional string
 
 <summary>
 
-value: optional "asia-east1"or "asia-northeast1"or "asia-northeast2"or 18 more
+value: optional "asia-east1" or "asia-northeast1" or "asia-northeast2" or 18 more
 
 A test region.
 
@@ -524,7 +524,7 @@ label: optional string
 
 <summary>
 
-value: optional "asia-east1"or "asia-northeast1"or "asia-northeast2"or 18 more
+value: optional "asia-east1" or "asia-northeast1" or "asia-northeast2" or 18 more
 
 A test region.
 
@@ -640,7 +640,7 @@ label: optional string
 
 <summary>
 
-value: optional "asia-east1"or "asia-northeast1"or "asia-northeast2"or 18 more
+value: optional "asia-east1" or "asia-northeast1" or "asia-northeast2" or 18 more
 
 A test region.
 

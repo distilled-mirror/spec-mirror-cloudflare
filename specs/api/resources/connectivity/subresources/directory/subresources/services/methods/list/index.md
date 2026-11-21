@@ -56,6 +56,10 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 </details>
 
+##### Accepted Permissions (at least one required)
+
+`Connectivity Directory Read``Connectivity Directory Bind``Connectivity Directory Admin`
+
 ##### P ath ParametersExpand Collapse
 
 account\_id: string
@@ -94,7 +98,7 @@ minimum1
 
 <summary>
 
-type: optional "tcp"or "http"
+type: optional "tcp" or "http"
 
 </summary>
 
@@ -118,7 +122,7 @@ One of the following:
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -140,7 +144,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -160,7 +164,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -182,7 +186,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -208,7 +212,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional array of object {host, name, type, 6 more } or object {host, name, type, 6 more }
+result: optional array of object { host, name, type, 6 more } or object { host, name, type, 6 more }
 
 </summary>
 
@@ -218,7 +222,7 @@ One of the following:
 
 <summary>
 
-InfraHTTPServiceConfig object {host, name, type, 6 more }
+InfraHTTPServiceConfig object { host, name, type, 6 more }
 
 </summary>
 
@@ -226,7 +230,7 @@ InfraHTTPServiceConfig object {host, name, type, 6 more }
 
 <summary>
 
-host: object {ipv4, network } or object {ipv6, network } or object {ipv4, ipv6, network } or object {hostname, resolver\_network }
+host: object { ipv4, network } or object { ipv6, network } or object { ipv4, ipv6, network } or object { hostname, resolver\_network }
 
 </summary>
 
@@ -236,7 +240,7 @@ One of the following:
 
 <summary>
 
-InfraIPv4Host object {ipv4, network }
+InfraIPv4Host object { ipv4, network }
 
 </summary>
 
@@ -248,7 +252,7 @@ ipv4: string
 
 <summary>
 
-network: object {tunnel\_id }
+network: object { tunnel\_id }
 
 </summary>
 
@@ -270,7 +274,7 @@ formatuuid
 
 <summary>
 
-InfraIPv6Host object {ipv6, network }
+InfraIPv6Host object { ipv6, network }
 
 </summary>
 
@@ -282,7 +286,7 @@ ipv6: string
 
 <summary>
 
-network: object {tunnel\_id }
+network: object { tunnel\_id }
 
 </summary>
 
@@ -304,7 +308,7 @@ formatuuid
 
 <summary>
 
-InfraDualStackHost object {ipv4, ipv6, network }
+InfraDualStackHost object { ipv4, ipv6, network }
 
 </summary>
 
@@ -320,7 +324,7 @@ ipv6: string
 
 <summary>
 
-network: object {tunnel\_id }
+network: object { tunnel\_id }
 
 </summary>
 
@@ -342,7 +346,7 @@ formatuuid
 
 <summary>
 
-InfraHostnameHost object {hostname, resolver\_network }
+InfraHostnameHost object { hostname, resolver\_network }
 
 </summary>
 
@@ -354,7 +358,7 @@ hostname: string
 
 <summary>
 
-resolver\_network: object {tunnel\_id, resolver\_ips }
+resolver\_network: object { tunnel\_id, resolver\_ips }
 
 </summary>
 
@@ -388,7 +392,7 @@ name: string
 
 <summary>
 
-type: "tcp"or "http"
+type: "tcp" or "http"
 
 </summary>
 
@@ -438,7 +442,7 @@ formatuuid
 
 <summary>
 
-tls\_settings: optional object {cert\_verification\_mode, certificate\_authority, client\_certificate }
+tls\_settings: optional object { cert\_verification\_mode, certificate\_authority, client\_certificate }
 
 TLS settings for a connectivity service.
 
@@ -486,7 +490,7 @@ formatdate-time
 
 <summary>
 
-InfraTCPServiceConfig object {host, name, type, 6 more }
+InfraTCPServiceConfig object { host, name, type, 6 more }
 
 </summary>
 
@@ -494,7 +498,7 @@ InfraTCPServiceConfig object {host, name, type, 6 more }
 
 <summary>
 
-host: object {ipv4, network } or object {ipv6, network } or object {ipv4, ipv6, network } or object {hostname, resolver\_network }
+host: object { ipv4, network } or object { ipv6, network } or object { ipv4, ipv6, network } or object { hostname, resolver\_network }
 
 </summary>
 
@@ -504,7 +508,7 @@ One of the following:
 
 <summary>
 
-InfraIPv4Host object {ipv4, network }
+InfraIPv4Host object { ipv4, network }
 
 </summary>
 
@@ -516,7 +520,7 @@ ipv4: string
 
 <summary>
 
-network: object {tunnel\_id }
+network: object { tunnel\_id }
 
 </summary>
 
@@ -538,7 +542,7 @@ formatuuid
 
 <summary>
 
-InfraIPv6Host object {ipv6, network }
+InfraIPv6Host object { ipv6, network }
 
 </summary>
 
@@ -550,7 +554,7 @@ ipv6: string
 
 <summary>
 
-network: object {tunnel\_id }
+network: object { tunnel\_id }
 
 </summary>
 
@@ -572,7 +576,7 @@ formatuuid
 
 <summary>
 
-InfraDualStackHost object {ipv4, ipv6, network }
+InfraDualStackHost object { ipv4, ipv6, network }
 
 </summary>
 
@@ -588,7 +592,7 @@ ipv6: string
 
 <summary>
 
-network: object {tunnel\_id }
+network: object { tunnel\_id }
 
 </summary>
 
@@ -610,7 +614,7 @@ formatuuid
 
 <summary>
 
-InfraHostnameHost object {hostname, resolver\_network }
+InfraHostnameHost object { hostname, resolver\_network }
 
 </summary>
 
@@ -622,7 +626,7 @@ hostname: string
 
 <summary>
 
-resolver\_network: object {tunnel\_id, resolver\_ips }
+resolver\_network: object { tunnel\_id, resolver\_ips }
 
 </summary>
 
@@ -656,7 +660,7 @@ name: string
 
 <summary>
 
-type: "tcp"or "http"
+type: "tcp" or "http"
 
 </summary>
 
@@ -678,7 +682,7 @@ One of the following:
 
 <summary>
 
-app\_protocol: optional "postgresql"or "mysql"
+app\_protocol: optional "postgresql" or "mysql"
 
 </summary>
 
@@ -720,7 +724,7 @@ minimum1
 
 <summary>
 
-tls\_settings: optional object {cert\_verification\_mode, certificate\_authority, client\_certificate }
+tls\_settings: optional object { cert\_verification\_mode, certificate\_authority, client\_certificate }
 
 TLS settings for a connectivity service.
 
@@ -772,7 +776,7 @@ formatdate-time
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

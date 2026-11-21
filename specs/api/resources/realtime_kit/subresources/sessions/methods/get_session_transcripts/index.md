@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/realtime/kit/{app\_id}/sessions/{session\_id}/transcript
 
-Returns a URL to download the transcript for the session ID in CSV format.
+Returns a URL to download the transcript for the session ID in the requested format.
 
 ##### Security
 
@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Realtime Admin``Realtime`
+`Realtime Read``Realtime Admin``Realtime`
 
 ##### P ath ParametersExpand Collapse
 
@@ -86,7 +86,7 @@ formatuuid
 
 <summary>
 
-format: optional "SRT"or "VTT"or "JSON"or "CSV"
+format: optional "SRT" or "VTT" or "JSON" or "CSV"
 
 Transcript file format to fetch.
 
@@ -120,11 +120,11 @@ One of the following:
 
 <summary>
 
-data: optional object {sessionId, transcript\_download\_url, transcript\_download\_url\_expiry }
+data: optional object { session\_id, transcript\_download\_url, transcript\_download\_url\_expiry }
 
 </summary>
 
-sessionId: string
+session\_id: string
 
 <a href="#">Link to this property</a>
 
@@ -164,7 +164,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/realtime/kit/$APP
 ```
 {
   "data": {
-    "sessionId": "sessionId",
+    "session_id": "session_id",
     "transcript_download_url": "transcript_download_url",
     "transcript_download_url_expiry": "transcript_download_url_expiry"
   },
@@ -179,7 +179,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/realtime/kit/$APP
 ```
 {
   "data": {
-    "sessionId": "sessionId",
+    "session_id": "session_id",
     "transcript_download_url": "transcript_download_url",
     "transcript_download_url_expiry": "transcript_download_url_expiry"
   },

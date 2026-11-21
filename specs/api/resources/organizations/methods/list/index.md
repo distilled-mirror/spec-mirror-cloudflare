@@ -68,7 +68,7 @@ Only return organizations with the specified IDs (ex. id=foo&id=bar). Send multi
 
 <summary>
 
-containing: optional object {account, organization, user }
+containing: optional object { account, organization, user }
 
 </summary>
 
@@ -100,7 +100,7 @@ IMPORTANT: Just because an organization “contains” a user is not a represent
 
 <summary>
 
-direction: optional "asc"or "desc"
+direction: optional "asc" or "desc"
 
 Sort direction for the <code>order_by</code> field. Defaults to <code>asc</code> when <code>order_by</code> is specified.
 
@@ -124,7 +124,7 @@ One of the following:
 
 <summary>
 
-member: optional object {email }
+member: optional object { email }
 
 </summary>
 
@@ -142,7 +142,7 @@ Filter organizations to those where the given user, by email, is an active membe
 
 <summary>
 
-name: optional object {contains, endsWith, startsWith }
+name: optional object { contains, endsWith, startsWith }
 
 </summary>
 
@@ -196,7 +196,7 @@ Parameters used to filter the retrieved list must remain in subsequent requests 
 
 <summary>
 
-parent: optional object {id }
+parent: optional object { id }
 
 </summary>
 
@@ -204,7 +204,7 @@ parent: optional object {id }
 
 <summary>
 
-id: optional stringor "null"
+id: optional string or "null"
 
 Filter the list of organizations to the ones that are a sub-organization of the specified organization.
 
@@ -266,7 +266,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -304,7 +304,7 @@ formatdate-time
 
 <summary>
 
-meta: object {are\_child\_accounts\_accessible\_by\_org\_members, hierarchy\_tags, managed\_by, 2 more }
+meta: object { are\_child\_accounts\_accessible\_by\_org\_members, hierarchy\_tags, managed\_by, 2 more }
 
 </summary>
 
@@ -326,7 +326,7 @@ managed\_by: optional string
 
 <summary>
 
-tenant\_flags: optional object {account\_creation, account\_creation\_applies\_tenant\_defaults, account\_deletion, 5 more }
+tenant\_flags: optional object { account\_creation, account\_creation\_applies\_tenant\_defaults, account\_deletion, 5 more }
 
 Enable features for Organizations.
 
@@ -384,7 +384,7 @@ name: string
 
 <summary>
 
-parent: optional object {id, name }
+parent: optional object { id, name }
 
 </summary>
 
@@ -440,7 +440,7 @@ external\_metadata: string
 
 <summary>
 
-result\_info: object {next\_page\_token, total\_size }
+result\_info: object { next\_page\_token, total\_size }
 
 </summary>
 

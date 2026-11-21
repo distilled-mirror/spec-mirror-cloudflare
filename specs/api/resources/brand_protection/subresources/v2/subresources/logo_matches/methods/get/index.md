@@ -78,7 +78,7 @@ Number of matches to skip, for pagination. Defaults to 0.
 
 <summary>
 
-order: optional "asc"or "desc"
+order: optional "asc" or "desc"
 
 Sort direction: <code>asc</code> or <code>desc</code>. Defaults to <code>desc</code>.
 
@@ -102,7 +102,7 @@ One of the following:
 
 <summary>
 
-orderBy: optional "matchedAt"or "domain"or "similarityScore"or "registrar"
+orderBy: optional "matchedAt" or "domain" or "similarityScore" or "registrar"
 
 Field to sort by: <code>matchedAt</code>, <code>domain</code>, <code>similarityScore</code>, or <code>registrar</code>. Defaults to <code>matchedAt</code>.
 
@@ -136,7 +136,7 @@ One of the following:
 
 <summary>
 
-matches: array of object {id, domain, matched\_at, 6 more }
+matches: array of object { id, domain, matched\_at, 6 more }
 
 </summary>
 

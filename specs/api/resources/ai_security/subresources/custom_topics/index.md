@@ -32,7 +32,7 @@ PUT/zones/{zone\_id}/ai-security/custom-topics
 
 <summary>
 
-CustomTopicGetResponse object {topics }
+CustomTopicGetResponse object { topics }
 
 </summary>
 
@@ -40,7 +40,7 @@ CustomTopicGetResponse object {topics }
 
 <summary>
 
-topics: optional array of object {label, topic }
+topics: optional array of object { label, topic }
 
 Custom topic categories for AI Security for Apps content detection.
 
@@ -74,7 +74,7 @@ Description of the topic category. Must contain 2–50 UTF-8 bytes. Text in any 
 
 <summary>
 
-CustomTopicUpdateResponse object {topics }
+CustomTopicUpdateResponse object { topics }
 
 </summary>
 
@@ -82,7 +82,7 @@ CustomTopicUpdateResponse object {topics }
 
 <summary>
 
-topics: optional array of object {label, topic }
+topics: optional array of object { label, topic }
 
 Custom topic categories for AI Security for Apps content detection.
 

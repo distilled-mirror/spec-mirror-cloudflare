@@ -46,7 +46,7 @@ DELETE/accounts/{account\_id}/cws/deployments/{deployment\_id}
 
 <summary>
 
-Deployment object {id, basic\_auth\_credential\_ids, created\_at, 9 more }
+Deployment object { id, basic\_auth\_credential\_ids, created\_at, 9 more }
 
 </summary>
 
@@ -74,7 +74,7 @@ formatdate-time
 
 <summary>
 
-default\_mode: "ALLOW"or "BLOCK"
+default\_mode: "ALLOW" or "BLOCK"
 
 Default traffic decision when no policy set matches
 
@@ -108,7 +108,7 @@ minLength1
 
 <summary>
 
-on\_error\_action: "BLOCK"or "SKIP"
+on\_error\_action: "BLOCK" or "SKIP"
 
 Action applied when an enforcing policy has a runtime Rego error
 
@@ -176,7 +176,7 @@ formatuuid
 
 <summary>
 
-DeploymentDeleteResponse object {id }
+DeploymentDeleteResponse object { id }
 
 </summary>
 

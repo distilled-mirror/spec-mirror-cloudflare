@@ -48,7 +48,7 @@ DELETE/accounts/{account\_id}/magic/sites/{site\_id}
 
 <summary>
 
-Site object {id, connector\_id, description, 4 more }
+Site object { id, connector\_id, description, 4 more }
 
 </summary>
 
@@ -102,7 +102,7 @@ Magic Connector identifier tag. Used when high availability mode is on.
 
 <summary>
 
-SiteLocation object {lat, lon }
+SiteLocation object { lat, lon }
 
 Location of site in latitude and longitude.
 
@@ -152,7 +152,7 @@ DELETE/accounts/{account\_id}/magic/sites/{site\_id}/app\_configs/{app\_config\_
 
 <summary>
 
-AppConfigurationListResponse = object {account\_app\_id, id, breakout, 3 more } or object {managed\_app\_id, id, breakout, 3 more }
+AppConfigurationListResponse = object { account\_app\_id, id, breakout, 3 more } or object { managed\_app\_id, id, breakout, 3 more }
 
 Traffic decision configuration for an app.
 
@@ -164,7 +164,7 @@ One of the following:
 
 <summary>
 
-AccountApp object {account\_app\_id, id, breakout, 3 more }
+AccountApp object { account\_app\_id, id, breakout, 3 more }
 
 </summary>
 
@@ -220,7 +220,7 @@ maxLength32
 
 <summary>
 
-ManagedApp object {managed\_app\_id, id, breakout, 3 more }
+ManagedApp object { managed\_app\_id, id, breakout, 3 more }
 
 </summary>
 
@@ -280,7 +280,7 @@ maxLength32
 
 <summary>
 
-AppConfigurationCreateResponse = object {account\_app\_id, id, breakout, 3 more } or object {managed\_app\_id, id, breakout, 3 more }
+AppConfigurationCreateResponse = object { account\_app\_id, id, breakout, 3 more } or object { managed\_app\_id, id, breakout, 3 more }
 
 Traffic decision configuration for an app.
 
@@ -292,7 +292,7 @@ One of the following:
 
 <summary>
 
-AccountApp object {account\_app\_id, id, breakout, 3 more }
+AccountApp object { account\_app\_id, id, breakout, 3 more }
 
 </summary>
 
@@ -348,7 +348,7 @@ maxLength32
 
 <summary>
 
-ManagedApp object {managed\_app\_id, id, breakout, 3 more }
+ManagedApp object { managed\_app\_id, id, breakout, 3 more }
 
 </summary>
 
@@ -408,7 +408,7 @@ maxLength32
 
 <summary>
 
-AppConfigurationUpdateResponse = object {account\_app\_id, id, breakout, 3 more } or object {managed\_app\_id, id, breakout, 3 more }
+AppConfigurationUpdateResponse = object { account\_app\_id, id, breakout, 3 more } or object { managed\_app\_id, id, breakout, 3 more }
 
 Traffic decision configuration for an app.
 
@@ -420,7 +420,7 @@ One of the following:
 
 <summary>
 
-AccountApp object {account\_app\_id, id, breakout, 3 more }
+AccountApp object { account\_app\_id, id, breakout, 3 more }
 
 </summary>
 
@@ -476,7 +476,7 @@ maxLength32
 
 <summary>
 
-ManagedApp object {managed\_app\_id, id, breakout, 3 more }
+ManagedApp object { managed\_app\_id, id, breakout, 3 more }
 
 </summary>
 
@@ -536,7 +536,7 @@ maxLength32
 
 <summary>
 
-AppConfigurationEditResponse = object {account\_app\_id, id, breakout, 3 more } or object {managed\_app\_id, id, breakout, 3 more }
+AppConfigurationEditResponse = object { account\_app\_id, id, breakout, 3 more } or object { managed\_app\_id, id, breakout, 3 more }
 
 Traffic decision configuration for an app.
 
@@ -548,7 +548,7 @@ One of the following:
 
 <summary>
 
-AccountApp object {account\_app\_id, id, breakout, 3 more }
+AccountApp object { account\_app\_id, id, breakout, 3 more }
 
 </summary>
 
@@ -604,7 +604,7 @@ maxLength32
 
 <summary>
 
-ManagedApp object {managed\_app\_id, id, breakout, 3 more }
+ManagedApp object { managed\_app\_id, id, breakout, 3 more }
 
 </summary>
 
@@ -664,7 +664,7 @@ maxLength32
 
 <summary>
 
-AppConfigurationDeleteResponse = object {account\_app\_id, id, breakout, 3 more } or object {managed\_app\_id, id, breakout, 3 more }
+AppConfigurationDeleteResponse = object { account\_app\_id, id, breakout, 3 more } or object { managed\_app\_id, id, breakout, 3 more }
 
 Traffic decision configuration for an app.
 
@@ -676,7 +676,7 @@ One of the following:
 
 <summary>
 
-AccountApp object {account\_app\_id, id, breakout, 3 more }
+AccountApp object { account\_app\_id, id, breakout, 3 more }
 
 </summary>
 
@@ -732,7 +732,7 @@ maxLength32
 
 <summary>
 
-ManagedApp object {managed\_app\_id, id, breakout, 3 more }
+ManagedApp object { managed\_app\_id, id, breakout, 3 more }
 
 </summary>
 
@@ -820,7 +820,7 @@ DELETE/accounts/{account\_id}/magic/sites/{site\_id}/acls/{acl\_id}
 
 <summary>
 
-ACL object {id, description, forward\_locally, 5 more }
+ACL object { id, description, forward\_locally, 5 more }
 
 Bidirectional ACL policy for network traffic within a site.
 
@@ -900,7 +900,7 @@ The desired traffic direction for this ACL policy. If set to “false”, the po
 
 <summary>
 
-ACLConfiguration object {lan\_id, lan\_name, port\_ranges, 2 more }
+ACLConfiguration object { lan\_id, lan\_name, port\_ranges, 2 more }
 
 </summary>
 
@@ -942,7 +942,7 @@ Array of subnet IPs within the LAN that will be included in the ACL. If no subne
 
 <summary>
 
-AllowedProtocol = "tcp"or "udp"or "icmp"
+AllowedProtocol = "tcp" or "udp" or "icmp"
 
 Array of allowed communication protocols between configured LANs. If no protocols are provided, all protocols are allowed.
 
@@ -1004,7 +1004,7 @@ DELETE/accounts/{account\_id}/magic/sites/{site\_id}/lans/{lan\_id}
 
 <summary>
 
-DHCPRelay object {server\_addresses }
+DHCPRelay object { server\_addresses }
 
 </summary>
 
@@ -1022,7 +1022,7 @@ List of DHCP server IPs.
 
 <summary>
 
-DHCPServer object {dhcp\_options, dhcp\_pool\_end, dhcp\_pool\_start, 3 more }
+DHCPServer object { dhcp\_options, dhcp\_pool\_end, dhcp\_pool\_start, 3 more }
 
 </summary>
 
@@ -1030,7 +1030,7 @@ DHCPServer object {dhcp\_options, dhcp\_pool\_end, dhcp\_pool\_start, 3 more }
 
 <summary>
 
-dhcp\_options: optional array of object {code, type, value }
+dhcp\_options: optional array of object { code, type, value }
 
 Optional list of custom DHCP options to include in DHCP responses. Only valid when DHCP server is enabled.
 
@@ -1050,7 +1050,7 @@ minimum1
 
 <summary>
 
-type: "text"or "hex"or "ip"or 3 more
+type: "text" or "hex" or "ip" or 3 more
 
 The type of the option value. text: a string (max 255 bytes). hex: colon-separated hex bytes (e.g. “01:04:aa:bb:cc”, max 255 bytes). ip: an IPv4 address (e.g. “10.20.30.40”). byte: an unsigned integer 0-255 (1 byte). short: an unsigned integer 0-65535 (2 bytes). integer: an unsigned integer 0-4294967295 (4 bytes).
 
@@ -1132,7 +1132,7 @@ Mapping of MAC addresses to IP addresses
 
 <summary>
 
-LAN object {id, bond\_id, ha\_link, 10 more }
+LAN object { id, bond\_id, ha\_link, 10 more }
 
 </summary>
 
@@ -1182,7 +1182,7 @@ physport: optional number
 
 <summary>
 
-remote\_subnets: optional array of object {local\_alias\_prefix, remote\_prefix }
+remote\_subnets: optional array of object { local\_alias\_prefix, remote\_prefix }
 
 </summary>
 
@@ -1258,7 +1258,7 @@ VLAN ID. Use zero for untagged.
 
 <summary>
 
-LANStaticAddressing object {address, dhcp\_relay, dhcp\_server, 2 more }
+LANStaticAddressing object { address, dhcp\_relay, dhcp\_server, 2 more }
 
 If the site is not configured in high availability mode, this configuration is optional (if omitted, use DHCP). However, if in high availability mode, static\_address is required along with secondary and virtual address.
 
@@ -1298,7 +1298,7 @@ A valid CIDR notation representing an IP range.
 
 <summary>
 
-Nat object {static\_prefix }
+Nat object { static\_prefix }
 
 </summary>
 
@@ -1316,7 +1316,7 @@ A valid CIDR notation representing an IP range.
 
 <summary>
 
-RoutedSubnet object {next\_hop, prefix, nat }
+RoutedSubnet object { next\_hop, prefix, nat }
 
 </summary>
 
@@ -1372,7 +1372,7 @@ DELETE/accounts/{account\_id}/magic/sites/{site\_id}/wans/{wan\_id}
 
 <summary>
 
-WAN object {id, health\_check\_rate, load\_balance\_inner\_flows, 8 more }
+WAN object { id, health\_check\_rate, load\_balance\_inner\_flows, 8 more }
 
 </summary>
 
@@ -1388,7 +1388,7 @@ maxLength32
 
 <summary>
 
-health\_check\_rate: optional "low"or "mid"or "high"
+health\_check\_rate: optional "low" or "mid" or "high"
 
 Magic WAN health check rate for tunnels created on this link. The default value is <code>mid</code>.
 
@@ -1478,7 +1478,7 @@ VLAN ID. Use zero for untagged.
 
 <summary>
 
-WANStaticAddressing object {address, gateway\_address, secondary\_address, secondary\_gateway\_address }
+WANStaticAddressing object { address, gateway\_address, secondary\_address, secondary\_gateway\_address }
 
 (optional) if omitted, use DHCP. Submit secondary\_address when site is in high availability mode.
 

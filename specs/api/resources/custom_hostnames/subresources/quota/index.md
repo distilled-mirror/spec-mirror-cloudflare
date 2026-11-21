@@ -28,7 +28,7 @@ GET/zones/{zone\_id}/custom\_hostnames/quota
 
 <summary>
 
-QuotaGetResponse object {allocated, exceeded, hard\_cap, used }
+QuotaGetResponse object { allocated, exceeded, hard\_cap, used }
 
 </summary>
 

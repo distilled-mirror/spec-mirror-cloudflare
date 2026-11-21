@@ -42,7 +42,7 @@ DELETE/accounts/{account\_id}/r2/buckets/{bucket\_name}/objects/{object\_key}
 
 <summary>
 
-ObjectListResponse object {custom\_metadata, etag, http\_metadata, 5 more }
+ObjectListResponse object { custom\_metadata, etag, http\_metadata, 5 more }
 
 Metadata for an R2 object.
 
@@ -64,7 +64,7 @@ The entity tag for the object. In JSON list/get responses this is the raw hex di
 
 <summary>
 
-http\_metadata: optional object {cacheControl, cacheExpiry, contentDisposition, 3 more }
+http\_metadata: optional object { cacheControl, cacheExpiry, contentDisposition, 3 more }
 
 HTTP metadata associated with an R2 object.
 
@@ -142,7 +142,7 @@ Whether the object is encrypted with a customer-supplied encryption key.
 
 <summary>
 
-storage\_class: optional "Standard"or "InfrequentAccess"
+storage\_class: optional "Standard" or "InfrequentAccess"
 
 Storage class for newly uploaded objects, unless specified otherwise.
 
@@ -170,7 +170,7 @@ One of the following:
 
 <summary>
 
-ObjectUploadResponse object {etag, key, size, 3 more }
+ObjectUploadResponse object { etag, key, size, 3 more }
 
 Result of a successful object upload.
 
@@ -198,7 +198,7 @@ The size of the uploaded object in bytes (as a string).
 
 <summary>
 
-storage\_class: optional "Standard"or "InfrequentAccess"
+storage\_class: optional "Standard" or "InfrequentAccess"
 
 Storage class for newly uploaded objects, unless specified otherwise.
 
@@ -240,7 +240,7 @@ The version UUID of the uploaded object.
 
 <summary>
 
-ObjectDeleteResponse object {key }
+ObjectDeleteResponse object { key }
 
 Result of a successful object deletion.
 

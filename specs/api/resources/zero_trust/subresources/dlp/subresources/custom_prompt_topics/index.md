@@ -46,7 +46,7 @@ DELETE/accounts/{account\_id}/dlp/custom\_prompt\_topics/{entry\_id}
 
 <summary>
 
-CustomPromptTopic object {id, created\_at, enabled, 5 more }
+CustomPromptTopic object { id, created\_at, enabled, 5 more }
 
 </summary>
 

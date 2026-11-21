@@ -40,7 +40,7 @@ DELETE/accounts/{account\_id}/magic/advanced\_tcp\_protection/configs/allowlist/
 
 <summary>
 
-ItemGetResponse object {id, comment, created\_on, 3 more }
+ItemGetResponse object { id, comment, created\_on, 3 more }
 
 </summary>
 
@@ -92,7 +92,7 @@ The allowlist prefix in CIDR format.
 
 <summary>
 
-ItemEditResponse object {id, comment, created\_on, 3 more }
+ItemEditResponse object { id, comment, created\_on, 3 more }
 
 </summary>
 
@@ -144,7 +144,7 @@ The allowlist prefix in CIDR format.
 
 <summary>
 
-ItemDeleteResponse object {errors, messages, success }
+ItemDeleteResponse object { errors, messages, success }
 
 </summary>
 
@@ -152,7 +152,7 @@ ItemDeleteResponse object {errors, messages, success }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -174,7 +174,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -194,7 +194,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -216,7 +216,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 

@@ -82,7 +82,7 @@ maxLength32
 
 <summary>
 
-result: object {id, added\_at, first\_seen\_at, 10 more }
+result: object { id, added\_at, first\_seen\_at, 10 more }
 
 </summary>
 
@@ -184,7 +184,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -226,7 +226,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 

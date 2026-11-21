@@ -52,7 +52,7 @@ POST/zones/{zone\_id}/email/routing/unlock
 
 <summary>
 
-Settings object {id, enabled, name, 6 more }
+Settings object { id, enabled, name, 6 more }
 
 </summary>
 
@@ -68,7 +68,7 @@ maxLength32
 
 <summary>
 
-enabled: trueor false
+enabled: true or false
 
 State of the zone settings for Email Routing.
 
@@ -114,7 +114,7 @@ formatdate-time
 
 <summary>
 
-skip\_wizard: optional trueor false
+skip\_wizard: optional true or false
 
 Flag to check if the user skipped the configuration wizard.
 
@@ -138,7 +138,7 @@ false
 
 <summary>
 
-status: optional "ready"or "unconfigured"or "misconfigured"or 2 more
+status: optional "ready" or "unconfigured" or "misconfigured" or 2 more
 
 Show the state of your account, and the type or configuration error.
 
@@ -174,7 +174,7 @@ One of the following:
 
 <summary>
 
-support\_subaddress: optional trueor false
+support\_subaddress: optional true or false
 
 Whether subaddressing (plus-addressing) is honored when matching incoming mail against routing rules.
 
@@ -230,7 +230,7 @@ DELETE/zones/{zone\_id}/email/routing/dns
 
 <summary>
 
-DNSRecord object {content, name, priority, 2 more }
+DNSRecord object { content, name, priority, 2 more }
 
 List of records needed to enable an Email Routing zone.
 
@@ -264,7 +264,7 @@ minimum0
 
 <summary>
 
-ttl: optional numberor 1
+ttl: optional number or 1
 
 Time to live, in seconds, of the DNS record. Must be between 60 and 86400, or 1 for ‘automatic’.
 
@@ -290,7 +290,7 @@ Time to live, in seconds, of the DNS record. Must be between 60 and 86400, or 1 
 
 <summary>
 
-type: optional "A"or "AAAA"or "CNAME"or 15 more
+type: optional "A" or "AAAA" or "CNAME" or 15 more
 
 DNS record type.
 
@@ -414,7 +414,7 @@ minimum0
 
 <summary>
 
-ttl: optional numberor 1
+ttl: optional number or 1
 
 Time to live, in seconds, of the DNS record. Must be between 60 and 86400, or 1 for ‘automatic’.
 
@@ -440,7 +440,7 @@ Time to live, in seconds, of the DNS record. Must be between 60 and 86400, or 1 
 
 <summary>
 
-type: optional "A"or "AAAA"or "CNAME"or 15 more
+type: optional "A" or "AAAA" or "CNAME" or 15 more
 
 DNS record type.
 
@@ -556,7 +556,7 @@ DELETE/zones/{zone\_id}/email/routing/rules/{rule\_identifier}
 
 <summary>
 
-Action object {type, value }
+Action object { type, value }
 
 Actions pattern.
 
@@ -566,7 +566,7 @@ Actions pattern.
 
 <summary>
 
-type: "drop"or "forward"or "worker"
+type: "drop" or "forward" or "worker"
 
 Type of supported action.
 
@@ -604,7 +604,7 @@ List of values for the action. Currently limited to a single value.
 
 <summary>
 
-EmailRoutingRule object {id, actions, enabled, 5 more }
+EmailRoutingRule object { id, actions, enabled, 5 more }
 
 </summary>
 
@@ -630,7 +630,7 @@ List actions patterns.
 
 <summary>
 
-type: "drop"or "forward"or "worker"
+type: "drop" or "forward" or "worker"
 
 Type of supported action.
 
@@ -668,7 +668,7 @@ List of values for the action. Currently limited to a single value.
 
 <summary>
 
-enabled: optional trueor false
+enabled: optional true or false
 
 Routing rule status.
 
@@ -702,7 +702,7 @@ Matching patterns to forward to your actions.
 
 <summary>
 
-type: "all"or "literal"
+type: "all" or "literal"
 
 Type of matcher.
 
@@ -760,7 +760,7 @@ minimum0
 
 <summary>
 
-source: optional "api"or "wrangler"
+source: optional "api" or "wrangler"
 
 Who manages the rule. <code>api</code> covers dashboard, generic API, and Terraform; <code>wrangler</code> means the rule is managed by a Worker’s wrangler.jsonc. Defaults to <code>api</code> when omitted on write.
 
@@ -796,7 +796,7 @@ maxLength32
 
 <summary>
 
-Matcher object {type, field, value }
+Matcher object { type, field, value }
 
 Matching pattern to forward your actions.
 
@@ -806,7 +806,7 @@ Matching pattern to forward your actions.
 
 <summary>
 
-type: "all"or "literal"
+type: "all" or "literal"
 
 Type of matcher.
 
@@ -860,7 +860,7 @@ PUT/zones/{zone\_id}/email/routing/rules/catch\_all
 
 <summary>
 
-CatchAllAction object {type, value }
+CatchAllAction object { type, value }
 
 Action for the catch-all routing rule.
 
@@ -870,7 +870,7 @@ Action for the catch-all routing rule.
 
 <summary>
 
-type: "drop"or "forward"or "worker"
+type: "drop" or "forward" or "worker"
 
 Type of action for catch-all rule.
 
@@ -908,7 +908,7 @@ List of values for the action. Currently limited to a single value.
 
 <summary>
 
-CatchAllMatcher object {type }
+CatchAllMatcher object { type }
 
 Matcher for catch-all routing rule.
 
@@ -928,7 +928,7 @@ Type of matcher. Default is ‘all’.
 
 <summary>
 
-CatchAllGetResponse object {id, actions, enabled, 4 more }
+CatchAllGetResponse object { id, actions, enabled, 4 more }
 
 </summary>
 
@@ -954,7 +954,7 @@ List actions for the catch-all routing rule.
 
 <summary>
 
-type: "drop"or "forward"or "worker"
+type: "drop" or "forward" or "worker"
 
 Type of action for catch-all rule.
 
@@ -992,7 +992,7 @@ List of values for the action. Currently limited to a single value.
 
 <summary>
 
-enabled: optional trueor false
+enabled: optional true or false
 
 Routing rule status.
 
@@ -1044,7 +1044,7 @@ maxLength256
 
 <summary>
 
-source: optional "api"or "wrangler"
+source: optional "api" or "wrangler"
 
 Who manages the rule. <code>api</code> covers dashboard, generic API, and Terraform; <code>wrangler</code> means the rule is managed by a Worker’s wrangler.jsonc. Defaults to <code>api</code> when omitted on write.
 
@@ -1080,7 +1080,7 @@ maxLength32
 
 <summary>
 
-CatchAllUpdateResponse object {id, actions, enabled, 4 more }
+CatchAllUpdateResponse object { id, actions, enabled, 4 more }
 
 </summary>
 
@@ -1106,7 +1106,7 @@ List actions for the catch-all routing rule.
 
 <summary>
 
-type: "drop"or "forward"or "worker"
+type: "drop" or "forward" or "worker"
 
 Type of action for catch-all rule.
 
@@ -1144,7 +1144,7 @@ List of values for the action. Currently limited to a single value.
 
 <summary>
 
-enabled: optional trueor false
+enabled: optional true or false
 
 Routing rule status.
 
@@ -1196,7 +1196,7 @@ maxLength256
 
 <summary>
 
-source: optional "api"or "wrangler"
+source: optional "api" or "wrangler"
 
 Who manages the rule. <code>api</code> covers dashboard, generic API, and Terraform; <code>wrangler</code> means the rule is managed by a Worker’s wrangler.jsonc. Defaults to <code>api</code> when omitted on write.
 
@@ -1240,7 +1240,7 @@ GET/{accounts\_or\_zones}/{account\_or\_zone\_id}/email/routing/rules
 
 <summary>
 
-AccountRule object {id, actions, enabled, 6 more }
+AccountRule object { id, actions, enabled, 6 more }
 
 </summary>
 
@@ -1266,7 +1266,7 @@ List actions patterns.
 
 <summary>
 
-type: "drop"or "forward"or "worker"
+type: "drop" or "forward" or "worker"
 
 Type of supported action.
 
@@ -1304,7 +1304,7 @@ List of values for the action. Currently limited to a single value.
 
 <summary>
 
-enabled: optional trueor false
+enabled: optional true or false
 
 Routing rule status.
 
@@ -1338,7 +1338,7 @@ Matching patterns to forward to your actions.
 
 <summary>
 
-type: "all"or "literal"
+type: "all" or "literal"
 
 Type of matcher.
 
@@ -1396,7 +1396,7 @@ minimum0
 
 <summary>
 
-source: optional "api"or "wrangler"
+source: optional "api" or "wrangler"
 
 Who manages the rule. <code>api</code> covers dashboard, generic API, and Terraform; <code>wrangler</code> means the rule is managed by a Worker’s wrangler.jsonc. Defaults to <code>api</code> when omitted on write.
 
@@ -1428,7 +1428,7 @@ maxLength32
 
 <summary>
 
-zone: optional object {name, tag }
+zone: optional object { name, tag }
 
 Zone information for the routing rule.
 
@@ -1484,7 +1484,7 @@ DELETE/accounts/{account\_id}/email/routing/addresses/{destination\_address\_ide
 
 <summary>
 
-Address object {id, created, email, 3 more }
+Address object { id, created, email, 3 more }
 
 </summary>
 

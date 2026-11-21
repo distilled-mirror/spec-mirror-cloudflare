@@ -52,7 +52,7 @@ ID of the zone setting.
 
 <summary>
 
-CacheReserveGetResponse object {id, editable, value, modified\_on }
+CacheReserveGetResponse object { id, editable, value, modified\_on }
 
 </summary>
 
@@ -72,7 +72,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: "on"or "off"
+value: "on" or "off"
 
 Value of the Cache Reserve zone setting.
 
@@ -108,7 +108,7 @@ formatdate-time
 
 <summary>
 
-CacheReserveEditResponse object {id, editable, value, modified\_on }
+CacheReserveEditResponse object { id, editable, value, modified\_on }
 
 </summary>
 
@@ -128,7 +128,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: "on"or "off"
+value: "on" or "off"
 
 Value of the Cache Reserve zone setting.
 
@@ -164,7 +164,7 @@ formatdate-time
 
 <summary>
 
-CacheReserveStatusResponse object {id, start\_ts, state, 2 more }
+CacheReserveStatusResponse object { id, start\_ts, state, 2 more }
 
 You can use Cache Reserve Clear to clear your Cache Reserve, but you must first disable Cache Reserve. In most cases, this will be accomplished within 24 hours. You cannot re-enable Cache Reserve while this process is ongoing. Keep in mind that you cannot undo or cancel this operation.
 
@@ -188,7 +188,7 @@ formatdate-time
 
 <summary>
 
-state: "In-progress"or "Completed"
+state: "In-progress" or "Completed"
 
 The current state of the Cache Reserve Clear operation.
 
@@ -232,7 +232,7 @@ formatdate-time
 
 <summary>
 
-CacheReserveClearResponse object {id, start\_ts, state, 2 more }
+CacheReserveClearResponse object { id, start\_ts, state, 2 more }
 
 You can use Cache Reserve Clear to clear your Cache Reserve, but you must first disable Cache Reserve. In most cases, this will be accomplished within 24 hours. You cannot re-enable Cache Reserve while this process is ongoing. Keep in mind that you cannot undo or cancel this operation.
 
@@ -256,7 +256,7 @@ formatdate-time
 
 <summary>
 
-state: "In-progress"or "Completed"
+state: "In-progress" or "Completed"
 
 The current state of the Cache Reserve Clear operation.
 

@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Workers Tail Read``Workers Scripts Write``Workers Scripts Read`
+`Workers Metadata Read-Only``Workers Editor``Workers Content Read-Only``Workers Admin``Individual Workers Metadata Read-Only``Individual Workers Editor``Individual Workers Content Read-Only``Individual Workers Admin``Granular Workers Scripts Read``Workers Tail Read``Workers Scripts Write``Workers Scripts Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -86,7 +86,7 @@ minLength1
 
 <summary>
 
-order: optional "asc"or "desc"
+order: optional "asc" or "desc"
 
 Step ordering: “asc” (default, oldest first) or “desc” (newest first).
 
@@ -110,7 +110,7 @@ One of the following:
 
 <summary>
 
-simple: optional "true"or "false"
+simple: optional "true" or "false"
 
 When true, omits step details and returns only metadata with step\_count.
 
@@ -136,7 +136,7 @@ One of the following:
 
 <summary>
 
-errors: array of object {code, message }
+errors: array of object { code, message }
 
 </summary>
 
@@ -156,7 +156,7 @@ message: string
 
 <summary>
 
-messages: array of object {code, message }
+messages: array of object { code, message }
 
 </summary>
 
@@ -176,7 +176,7 @@ message: string
 
 <summary>
 
-result: object {end, error, output, 11 more }
+result: object { end, error, output, 11 more }
 
 </summary>
 
@@ -190,7 +190,7 @@ formatdate-time
 
 <summary>
 
-error: object {message, name }
+error: object { message, name }
 
 </summary>
 
@@ -210,7 +210,7 @@ name: string
 
 <summary>
 
-output: stringor number
+output: string or number
 
 </summary>
 
@@ -242,7 +242,7 @@ formatdate-time
 
 <summary>
 
-rollback: object {error, outcome }
+rollback: object { error, outcome }
 
 </summary>
 
@@ -250,7 +250,7 @@ rollback: object {error, outcome }
 
 <summary>
 
-error: object {message, name }
+error: object { message, name }
 
 </summary>
 
@@ -270,7 +270,7 @@ name: string
 
 <summary>
 
-outcome: "complete"or "failed"
+outcome: "complete" or "failed"
 
 </summary>
 
@@ -302,7 +302,7 @@ formatdate-time
 
 <summary>
 
-status: "queued"or "running"or "paused"or 6 more
+status: "queued" or "running" or "paused" or 6 more
 
 </summary>
 
@@ -360,7 +360,7 @@ minimum-9007199254740991
 
 <summary>
 
-steps: array of object {attempts, config, end, 5 more } or object {end, error, finished, 3 more } or object {trigger, type } or object {error, finished, name, 5 more }
+steps: array of object { attempts, config, end, 5 more } or object { end, error, finished, 3 more } or object { trigger, type } or object { error, finished, name, 5 more }
 
 </summary>
 
@@ -370,7 +370,7 @@ One of the following:
 
 <summary>
 
-object {attempts, config, end, 5 more }
+object { attempts, config, end, 5 more }
 
 </summary>
 
@@ -378,7 +378,7 @@ object {attempts, config, end, 5 more }
 
 <summary>
 
-attempts: array of object {end, error, start, success }
+attempts: array of object { end, error, start, success }
 
 </summary>
 
@@ -392,7 +392,7 @@ formatdate-time
 
 <summary>
 
-error: object {message, name }
+error: object { message, name }
 
 </summary>
 
@@ -426,7 +426,7 @@ success: boolean
 
 <summary>
 
-config: object {retries, timeout, sensitive }
+config: object { retries, timeout, sensitive }
 
 </summary>
 
@@ -434,7 +434,7 @@ config: object {retries, timeout, sensitive }
 
 <summary>
 
-retries: object {delay, limit, backoff }
+retries: object { delay, limit, backoff }
 
 </summary>
 
@@ -442,7 +442,7 @@ retries: object {delay, limit, backoff }
 
 <summary>
 
-delay: stringor number
+delay: string or number
 
 Specifies the delay duration. The value ‘\[dynamic]’ means that a user-supplied function computes the delay.
 
@@ -470,7 +470,7 @@ limit: number
 
 <summary>
 
-backoff: optional "constant"or "linear"or "exponential"
+backoff: optional "constant" or "linear" or "exponential"
 
 </summary>
 
@@ -500,7 +500,7 @@ One of the following:
 
 <summary>
 
-timeout: stringor number
+timeout: string or number
 
 Specifies the timeout duration.
 
@@ -558,7 +558,7 @@ success: boolean
 
 <summary>
 
-type: "step"or "rollback"
+type: "step" or "rollback"
 
 </summary>
 
@@ -584,7 +584,7 @@ One of the following:
 
 <summary>
 
-object {end, error, finished, 3 more }
+object { end, error, finished, 3 more }
 
 </summary>
 
@@ -598,7 +598,7 @@ formatdate-time
 
 <summary>
 
-error: object {message, name }
+error: object { message, name }
 
 </summary>
 
@@ -640,7 +640,7 @@ type: "sleep"
 
 <summary>
 
-object {trigger, type }
+object { trigger, type }
 
 </summary>
 
@@ -648,7 +648,7 @@ object {trigger, type }
 
 <summary>
 
-trigger: object {source }
+trigger: object { source }
 
 </summary>
 
@@ -672,7 +672,7 @@ type: "termination"
 
 <summary>
 
-object {error, finished, name, 5 more }
+object { error, finished, name, 5 more }
 
 </summary>
 
@@ -680,7 +680,7 @@ object {error, finished, name, 5 more }
 
 <summary>
 
-error: object {message, name }
+error: object { message, name }
 
 </summary>
 
@@ -744,7 +744,7 @@ success: boolean
 
 <summary>
 
-trigger: object {source }
+trigger: object { source }
 
 </summary>
 
@@ -752,7 +752,7 @@ trigger: object {source }
 
 <summary>
 
-source: "unknown"or "api"or "binding"or 2 more
+source: "unknown" or "api" or "binding" or 2 more
 
 </summary>
 
@@ -796,7 +796,7 @@ formatuuid
 
 <summary>
 
-schedule: optional object {cron, scheduledTime }
+schedule: optional object { cron, scheduledTime }
 
 </summary>
 
@@ -824,7 +824,7 @@ success: true
 
 <summary>
 
-result\_info: optional object {count, per\_page, total\_count, 3 more }
+result\_info: optional object { count, per\_page, total\_count, 3 more }
 
 </summary>
 

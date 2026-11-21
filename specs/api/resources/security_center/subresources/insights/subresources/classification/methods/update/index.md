@@ -80,7 +80,7 @@ The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 
 <summary>
 
-classification: optional "false\_positive"or "accept\_risk"or "other"
+classification: optional "false\_positive" or "accept\_risk" or "other"
 
 User-defined classification for the insight. Can be ‘false\_positive’, ‘accept\_risk’, ‘other’, or null.
 
@@ -116,7 +116,7 @@ Rationale for the classification change. Required when classification is ‘acce
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -138,7 +138,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -158,7 +158,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -180,7 +180,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 

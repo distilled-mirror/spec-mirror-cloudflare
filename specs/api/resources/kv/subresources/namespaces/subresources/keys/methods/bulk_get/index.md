@@ -92,7 +92,7 @@ Array of keys to retrieve (maximum of 100).
 
 <summary>
 
-type: optional "text"or "json"
+type: optional "text" or "json"
 
 Return values as strings with <code>text</code>, or parse stored JSON values with <code>json</code>.
 
@@ -146,7 +146,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -188,7 +188,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -214,7 +214,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {values } or object {values }
+result: optional object { values } or object { values }
 
 </summary>
 
@@ -224,7 +224,7 @@ One of the following:
 
 <summary>
 
-WorkersKVBulkGetResult object {values }
+WorkersKVBulkGetResult object { values }
 
 </summary>
 
@@ -232,7 +232,7 @@ WorkersKVBulkGetResult object {values }
 
 <summary>
 
-values: optional map\[stringor numberor booleanor map\[unknown]]
+values: optional map\[string or number or boolean or map\[unknown]]
 
 Requested keys are paired with their values in an object.
 
@@ -268,7 +268,7 @@ map\[unknown]
 
 <summary>
 
-WorkersKVBulkGetResultWithMetadata object {values }
+WorkersKVBulkGetResultWithMetadata object { values }
 
 </summary>
 
@@ -276,7 +276,7 @@ WorkersKVBulkGetResultWithMetadata object {values }
 
 <summary>
 
-values: optional map\[object {metadata, value, expiration } ]
+values: optional map\[object { metadata, value, expiration } ]
 
 Requested keys are paired with their values and metadata in an object.
 

@@ -30,7 +30,7 @@ GET/zones/{zone\_id}/dns\_records/usage
 
 <summary>
 
-ZoneGetResponse object {record\_quota, record\_usage }
+ZoneGetResponse object { record\_quota, record\_usage }
 
 </summary>
 

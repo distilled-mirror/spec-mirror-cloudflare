@@ -40,7 +40,7 @@ DELETE/accounts/{account\_id}/stream/watermarks/{identifier}
 
 <summary>
 
-Watermark object {created, downloadedFrom, height, 8 more }
+Watermark object { created, downloadedFrom, height, 8 more }
 
 </summary>
 

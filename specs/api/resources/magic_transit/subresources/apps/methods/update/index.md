@@ -136,7 +136,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -178,7 +178,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -198,7 +198,7 @@ pointer: optional string
 
 <summary>
 
-result: object {account\_app\_id, hostnames, ip\_subnets, 3 more }
+result: object { account\_app\_id, hostnames, ip\_subnets, 3 more }
 
 Custom app defined for an account.
 

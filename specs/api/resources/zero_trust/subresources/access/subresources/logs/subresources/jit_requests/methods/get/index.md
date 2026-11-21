@@ -80,7 +80,7 @@ formatuuid
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -102,7 +102,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -122,7 +122,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -144,7 +144,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -170,7 +170,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {app\_aud, app\_hostname, approvals\_received, 8 more }
+result: optional object { app\_aud, app\_hostname, approvals\_received, 8 more }
 
 </summary>
 
@@ -206,7 +206,7 @@ formatdate-time
 
 <summary>
 
-events: optional array of object {actor\_email, actor\_idp, actor\_uuid, 6 more }
+events: optional array of object { actor\_email, actor\_idp, actor\_uuid, 6 more }
 
 </summary>
 
@@ -252,7 +252,7 @@ formatdate-time
 
 <summary>
 
-type: optional "CREATED"or "APPROVER\_DECISION"or "COMMITTED"or 3 more
+type: optional "CREATED" or "APPROVER\_DECISION" or "COMMITTED" or 3 more
 
 </summary>
 
@@ -316,7 +316,7 @@ formatemail
 
 <summary>
 
-status: optional "PENDING"or "APPROVED"or "DENIED"or 2 more
+status: optional "PENDING" or "APPROVED" or "DENIED" or 2 more
 
 JIT request status. <code>SPENT</code> is deprecated and interpreted as <code>APPROVED</code>.
 

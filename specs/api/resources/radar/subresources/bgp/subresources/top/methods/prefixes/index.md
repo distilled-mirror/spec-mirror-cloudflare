@@ -90,7 +90,7 @@ Start of the date range. Alternative to `dateRange`; provide together with `date
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -130,7 +130,7 @@ Array of names used to label the series in the response.
 
 <summary>
 
-updateType: optional array of "ANNOUNCEMENT"or "WITHDRAWAL"
+updateType: optional array of "ANNOUNCEMENT" or "WITHDRAWAL"
 
 Filters results by BGP update type.
 
@@ -156,7 +156,7 @@ One of the following:
 
 <summary>
 
-result: object {meta, top\_0 }
+result: object { meta, top\_0 }
 
 </summary>
 
@@ -164,7 +164,7 @@ result: object {meta, top\_0 }
 
 <summary>
 
-meta: object {dateRange }
+meta: object { dateRange }
 
 </summary>
 
@@ -172,7 +172,7 @@ meta: object {dateRange }
 
 <summary>
 
-dateRange: array of object {endTime, startTime }
+dateRange: array of object { endTime, startTime }
 
 </summary>
 
@@ -204,7 +204,7 @@ formatdate-time
 
 <summary>
 
-top\_0: array of object {prefix, value }
+top\_0: array of object { prefix, value }
 
 </summary>
 

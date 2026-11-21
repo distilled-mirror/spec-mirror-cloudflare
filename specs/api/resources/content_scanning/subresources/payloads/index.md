@@ -40,7 +40,7 @@ PATCH/zones/{zone\_id}/content-upload-scan/payloads/{expression\_id}
 
 <summary>
 
-PayloadListResponse object {id, payload }
+PayloadListResponse object { id, payload }
 
 Defines a Content Scanning custom expression.
 
@@ -68,7 +68,7 @@ Defines the custom content extraction expression used to reach content objects i
 
 <summary>
 
-PayloadCreateResponse object {id, payload }
+PayloadCreateResponse object { id, payload }
 
 Defines a Content Scanning custom expression.
 
@@ -96,7 +96,7 @@ Defines the custom content extraction expression used to reach content objects i
 
 <summary>
 
-PayloadDeleteResponse object {id, payload }
+PayloadDeleteResponse object { id, payload }
 
 Defines a Content Scanning custom expression.
 
@@ -124,7 +124,7 @@ Defines the custom content extraction expression used to reach content objects i
 
 <summary>
 
-PayloadUpdateResponse object {id, payload }
+PayloadUpdateResponse object { id, payload }
 
 Defines a Content Scanning custom expression.
 

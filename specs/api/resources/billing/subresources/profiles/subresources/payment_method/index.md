@@ -30,7 +30,7 @@ POST/accounts/{account\_id}/billing/profile/payment-method
 
 <summary>
 
-PaymentMethodCreateResponse object {client\_secret, intent\_type }
+PaymentMethodCreateResponse object { client\_secret, intent\_type }
 
 </summary>
 

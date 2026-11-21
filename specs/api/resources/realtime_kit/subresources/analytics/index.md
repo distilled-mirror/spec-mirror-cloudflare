@@ -28,7 +28,7 @@ GET/accounts/{account\_id}/realtime/kit/{app\_id}/analytics/daywise
 
 <summary>
 
-AnalyticsGetOrgAnalyticsResponse object {data, success }
+AnalyticsGetOrgAnalyticsResponse object { data, success }
 
 </summary>
 
@@ -36,7 +36,7 @@ AnalyticsGetOrgAnalyticsResponse object {data, success }
 
 <summary>
 
-data: optional object {recording\_stats, session\_stats }
+data: optional object { recording\_stats, session\_stats }
 
 </summary>
 
@@ -44,7 +44,7 @@ data: optional object {recording\_stats, session\_stats }
 
 <summary>
 
-recording\_stats: optional object {day\_stats, recording\_count, recording\_minutes\_consumed }
+recording\_stats: optional object { day\_stats, recording\_count, recording\_minutes\_consumed }
 
 Recording statistics of an App during the range specified
 
@@ -54,7 +54,7 @@ Recording statistics of an App during the range specified
 
 <summary>
 
-day\_stats: optional array of object {day, total\_recording\_minutes, total\_recordings }
+day\_stats: optional array of object { day, total\_recording\_minutes, total\_recordings }
 
 Day wise recording stats
 
@@ -100,7 +100,7 @@ Total recording minutes during the range specified
 
 <summary>
 
-session\_stats: optional object {day\_stats, sessions\_count, sessions\_minutes\_consumed }
+session\_stats: optional object { day\_stats, sessions\_count, sessions\_minutes\_consumed }
 
 Session statistics of an App during the range specified
 
@@ -110,7 +110,7 @@ Session statistics of an App during the range specified
 
 <summary>
 
-day\_stats: optional array of object {day, total\_session\_minutes, total\_sessions }
+day\_stats: optional array of object { day, total\_session\_minutes, total\_sessions }
 
 Day wise session stats
 

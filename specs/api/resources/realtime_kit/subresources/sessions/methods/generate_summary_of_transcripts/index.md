@@ -86,7 +86,7 @@ formatuuid
 
 <summary>
 
-data: optional object {session\_id, status }
+data: optional object { session\_id, status }
 
 </summary>
 

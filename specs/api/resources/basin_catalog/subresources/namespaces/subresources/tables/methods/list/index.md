@@ -58,7 +58,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Workers R2 Data Catalog Write``Workers R2 Data Catalog Read`
+`Workers R2 SQL Read``Workers R2 Data Catalog Write``Workers R2 Data Catalog Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -118,7 +118,7 @@ Whether to include table UUIDs in the response. Set to true to receive the table
 
 <summary>
 
-errors: array of object {code, message }
+errors: array of object { code, message }
 
 Contains errors if the API call was unsuccessful.
 
@@ -144,7 +144,7 @@ Describes the error.
 
 <summary>
 
-messages: array of object {code, message }
+messages: array of object { code, message }
 
 Contains informational messages.
 
@@ -176,7 +176,7 @@ Indicates whether the API call was successful.
 
 <summary>
 
-result: optional object {identifiers, details, next\_page\_token, table\_uuids }
+result: optional object { identifiers, details, next\_page\_token, table\_uuids }
 
 Contains the list of tables with optional pagination.
 
@@ -186,7 +186,7 @@ Contains the list of tables with optional pagination.
 
 <summary>
 
-identifiers: array of object {name, namespace }
+identifiers: array of object { name, namespace }
 
 Lists tables in the namespace.
 
@@ -212,7 +212,7 @@ Specifies the hierarchical namespace parts as an array of strings. For example, 
 
 <summary>
 
-details: optional array of object {identifier, table\_uuid, created\_at, 3 more }
+details: optional array of object { identifier, table\_uuid, created\_at, 3 more }
 
 Contains detailed metadata for each table when return\_details is true. Each object includes identifier, UUID, timestamps, and locations.
 
@@ -222,7 +222,7 @@ Contains detailed metadata for each table when return\_details is true. Each obj
 
 <summary>
 
-identifier: object {name, namespace }
+identifier: object { name, namespace }
 
 Specifies a unique table identifier within a catalog.
 

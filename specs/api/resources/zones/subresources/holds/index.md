@@ -40,7 +40,7 @@ DELETE/zones/{zone\_id}/hold
 
 <summary>
 
-ZoneHold object {hold, hold\_after, include\_subdomains }
+ZoneHold object { hold, hold\_after, include\_subdomains }
 
 </summary>
 

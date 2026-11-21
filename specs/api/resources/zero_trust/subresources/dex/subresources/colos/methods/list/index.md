@@ -100,7 +100,7 @@ End time for connection period in ISO (RFC3339 - ISO 8601) format.
 
 <summary>
 
-sortBy: optional "fleet-status-usage"or "application-tests-usage"
+sortBy: optional "fleet-status-usage" or "application-tests-usage"
 
 Type of usage that colos should be sorted by. If unspecified, returns all Cloudflare colos sorted alphabetically.
 
@@ -126,7 +126,7 @@ One of the following:
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -148,7 +148,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -168,7 +168,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -190,7 +190,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -216,7 +216,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional array of object {airportCode, city, countryCode }
+result: optional array of object { airportCode, city, countryCode }
 
 array of colos.
 

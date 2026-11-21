@@ -70,7 +70,7 @@ maxLength32
 
 <summary>
 
-match\_action: "allow"or "deny"
+match\_action: "allow" or "deny"
 
 Action to take when a route matches one of the targets in this profile
 
@@ -142,7 +142,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -184,7 +184,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -204,7 +204,7 @@ pointer: optional string
 
 <summary>
 
-result: object {id, description, match\_action, 4 more }
+result: object { id, description, match\_action, 4 more }
 
 </summary>
 
@@ -228,7 +228,7 @@ maxLength1024
 
 <summary>
 
-match\_action: "allow"or "deny"
+match\_action: "allow" or "deny"
 
 Action to take when a route matches one of the targets in this profile
 

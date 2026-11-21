@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Queues Write``Workers Scripts Write`
+`Workers Editor``Workers Admin``Queues Write``Workers Scripts Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -120,7 +120,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -144,7 +144,7 @@ messages: optional array of string
 
 <summary>
 
-result: optional object {message\_backlog\_count, messages, metadata }
+result: optional object { message\_backlog\_count, messages, metadata }
 
 </summary>
 
@@ -158,7 +158,7 @@ The number of unacknowledged messages in the queue.
 
 <summary>
 
-messages: optional array of object {id, attempts, body, 3 more }
+messages: optional array of object { id, attempts, body, 3 more }
 
 </summary>
 
@@ -196,7 +196,7 @@ timestamp\_ms: optional number
 
 <summary>
 
-metadata: optional object {metrics }
+metadata: optional object { metrics }
 
 </summary>
 
@@ -204,7 +204,7 @@ metadata: optional object {metrics }
 
 <summary>
 
-metrics: optional object {backlog\_bytes, backlog\_count, oldest\_message\_timestamp\_ms }
+metrics: optional object { backlog\_bytes, backlog\_count, oldest\_message\_timestamp\_ms }
 
 Best-effort metrics for the queue. Values may be approximate due to the distributed nature of queues.
 

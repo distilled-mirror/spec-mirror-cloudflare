@@ -34,7 +34,7 @@ GET/radar/entities/locations/{location}
 
 <summary>
 
-LocationListResponse object {locations }
+LocationListResponse object { locations }
 
 </summary>
 
@@ -42,7 +42,7 @@ LocationListResponse object {locations }
 
 <summary>
 
-locations: array of object {alpha2, continent, latitude, 4 more }
+locations: array of object { alpha2, continent, latitude, 4 more }
 
 </summary>
 
@@ -90,7 +90,7 @@ subregion: string
 
 <summary>
 
-LocationGetResponse object {location }
+LocationGetResponse object { location }
 
 </summary>
 
@@ -98,7 +98,7 @@ LocationGetResponse object {location }
 
 <summary>
 
-location: object {alpha2, confidenceLevel, continent, 5 more }
+location: object { alpha2, confidenceLevel, continent, 5 more }
 
 </summary>
 

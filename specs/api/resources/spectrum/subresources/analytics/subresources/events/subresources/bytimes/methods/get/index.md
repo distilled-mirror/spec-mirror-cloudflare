@@ -78,7 +78,7 @@ maxLength32
 
 <summary>
 
-time\_delta: "year"or "quarter"or "month"or 5 more
+time\_delta: "year" or "quarter" or "month" or 5 more
 
 Used to select time series resolution.
 
@@ -182,7 +182,7 @@ Use the above to construct filters.
 
 <summary>
 
-metrics: optional array of "count"or "bytesIngress"or "bytesEgress"or 4 more
+metrics: optional array of "count" or "bytesIngress" or "bytesEgress" or 4 more
 
 One or more metrics to compute. Options are:
 
@@ -260,7 +260,7 @@ formatdate-time
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -282,7 +282,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -302,7 +302,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -324,7 +324,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -350,7 +350,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {data, data\_lag, max, 5 more }
+result: optional object { data, data\_lag, max, 5 more }
 
 </summary>
 
@@ -358,7 +358,7 @@ result: optional object {data, data\_lag, max, 5 more }
 
 <summary>
 
-data: array of object {dimensions, metrics }
+data: array of object { dimensions, metrics }
 
 List of columns returned by the analytics query.
 
@@ -372,7 +372,7 @@ dimensions: optional array of string
 
 <summary>
 
-metrics: optional array of numberor array of array of number
+metrics: optional array of number or array of array of number
 
 </summary>
 
@@ -418,7 +418,7 @@ Minimum result for each selected metrics across all data.
 
 <summary>
 
-query: object {dimensions, filters, limit, 4 more }
+query: object { dimensions, filters, limit, 4 more }
 
 </summary>
 
@@ -488,7 +488,7 @@ Limit number of returned metrics.
 
 <summary>
 
-metrics: optional array of "count"or "bytesIngress"or "bytesEgress"or 4 more
+metrics: optional array of "count" or "bytesIngress" or "bytesEgress" or 4 more
 
 One or more metrics to compute. Options are:
 

@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Queues Write``Workers Scripts Write`
+`Workers Editor``Workers Admin``Queues Write``Workers Scripts Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -82,7 +82,7 @@ maxLength32
 
 <summary>
 
-acks: optional array of object {lease\_id }
+acks: optional array of object { lease\_id }
 
 </summary>
 
@@ -100,7 +100,7 @@ An ID that represents an “in-flight” message that has been pulled from a Que
 
 <summary>
 
-retries: optional array of object {delay\_seconds, lease\_id }
+retries: optional array of object { delay\_seconds, lease\_id }
 
 </summary>
 
@@ -150,7 +150,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -174,7 +174,7 @@ messages: optional array of string
 
 <summary>
 
-result: optional object {ackCount, retryCount, warnings }
+result: optional object { ackCount, retryCount, warnings }
 
 </summary>
 

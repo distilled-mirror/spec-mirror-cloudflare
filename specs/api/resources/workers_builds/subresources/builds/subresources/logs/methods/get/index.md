@@ -58,7 +58,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Workers CI Write``Workers CI Read`
+`Workers Metadata Read-Only``Workers CI Write``Workers CI Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -90,7 +90,7 @@ Pagination cursor for log retrieval.
 
 <summary>
 
-errors: array of object {message, code }
+errors: array of object { message, code }
 
 </summary>
 
@@ -114,7 +114,7 @@ messages: array of string
 
 <summary>
 
-result: object {cursor, lines, truncated } or object {cursor, lines, truncated }
+result: object { cursor, lines, truncated } or object { cursor, lines, truncated }
 
 </summary>
 
@@ -124,7 +124,7 @@ One of the following:
 
 <summary>
 
-object {cursor, lines, truncated }
+object { cursor, lines, truncated }
 
 </summary>
 
@@ -138,7 +138,7 @@ Pagination cursor for log retrieval.
 
 <summary>
 
-lines: optional array of array of numberor string
+lines: optional array of array of number or string
 
 </summary>
 
@@ -172,7 +172,7 @@ truncated: optional boolean
 
 <summary>
 
-object {cursor, lines, truncated }
+object { cursor, lines, truncated }
 
 </summary>
 
@@ -186,7 +186,7 @@ Pagination cursor for log retrieval.
 
 <summary>
 
-lines: optional array of array of numberor string
+lines: optional array of array of number or string
 
 </summary>
 
@@ -228,7 +228,7 @@ success: boolean
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

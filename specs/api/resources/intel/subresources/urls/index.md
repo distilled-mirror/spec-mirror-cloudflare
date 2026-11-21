@@ -28,7 +28,7 @@ GET/accounts/{account\_id}/intel/url
 
 <summary>
 
-URL object {content\_categories, full\_url, hostname, 2 more }
+URL object { content\_categories, full\_url, hostname, 2 more }
 
 </summary>
 
@@ -36,7 +36,7 @@ URL object {content\_categories, full\_url, hostname, 2 more }
 
 <summary>
 
-content\_categories: array of object {id, name, source\_id, super\_category\_id }
+content\_categories: array of object { id, name, source\_id, super\_category\_id }
 
 Content categories associated with this URL.
 
@@ -78,7 +78,7 @@ The hostname of the URL.
 
 <summary>
 
-risk\_type: array of object {id, name, source\_id, super\_category\_id }
+risk\_type: array of object { id, name, source\_id, super\_category\_id }
 
 Security risk types associated with this URL.
 

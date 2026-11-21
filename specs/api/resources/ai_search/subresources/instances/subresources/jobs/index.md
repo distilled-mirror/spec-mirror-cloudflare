@@ -50,7 +50,7 @@ GET/accounts/{account\_id}/ai-search/instances/{id}/jobs/{job\_id}/logs
 
 <summary>
 
-JobListResponse object {id, source, description, 4 more }
+JobListResponse object { id, source, description, 4 more }
 
 </summary>
 
@@ -62,7 +62,7 @@ id: string
 
 <summary>
 
-source: "user"or "schedule"
+source: "user" or "schedule"
 
 </summary>
 
@@ -108,7 +108,7 @@ started\_at: optional string
 
 <summary>
 
-JobCreateResponse object {id, source, description, 4 more }
+JobCreateResponse object { id, source, description, 4 more }
 
 </summary>
 
@@ -120,7 +120,7 @@ id: string
 
 <summary>
 
-source: "user"or "schedule"
+source: "user" or "schedule"
 
 </summary>
 
@@ -166,7 +166,7 @@ started\_at: optional string
 
 <summary>
 
-JobGetResponse object {id, source, description, 4 more }
+JobGetResponse object { id, source, description, 4 more }
 
 </summary>
 
@@ -178,7 +178,7 @@ id: string
 
 <summary>
 
-source: "user"or "schedule"
+source: "user" or "schedule"
 
 </summary>
 
@@ -224,7 +224,7 @@ started\_at: optional string
 
 <summary>
 
-JobLogsResponse = array of object {id, created\_at, message, message\_type }
+JobLogsResponse = array of object { id, created\_at, message, message\_type }
 
 </summary>
 

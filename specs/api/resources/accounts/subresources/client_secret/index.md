@@ -28,7 +28,7 @@ POST/accounts/{account\_id}/client-secret
 
 <summary>
 
-ClientSecretCreateResponse object {client\_secret }
+ClientSecretCreateResponse object { client\_secret }
 
 </summary>
 

@@ -88,7 +88,7 @@ The `/received` route by default returns a limited set of fields, and allows cus
 
 <summary>
 
-timestamps: optional "unix"or "unixnano"or "rfc3339"
+timestamps: optional "unix" or "unixnano" or "rfc3339"
 
 By default, timestamps in responses are returned as Unix nanosecond integers. The <code>?timestamps=</code> argument can be set to change the format in which response timestamps are returned. Possible values are: <code>unix</code>, <code>unixnano</code>, <code>rfc3339</code>. Note that <code>unix</code> and <code>unixnano</code> return timestamps as integers; <code>rfc3339</code> returns timestamps as strings.
 

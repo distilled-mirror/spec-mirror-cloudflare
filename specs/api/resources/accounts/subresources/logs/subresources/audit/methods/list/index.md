@@ -58,7 +58,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Account Settings Write``Account Settings Read`
+`Audit Logs Read``Account Settings Write``Account Settings Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -90,7 +90,7 @@ formatdate
 
 <summary>
 
-id: optional object {not }
+id: optional object { not }
 
 </summary>
 
@@ -108,7 +108,7 @@ Filters out audit logs by their IDs.
 
 <summary>
 
-account\_name: optional object {not }
+account\_name: optional object { not }
 
 </summary>
 
@@ -126,7 +126,7 @@ Filters out audit logs by the account name.
 
 <summary>
 
-action\_result: optional object {not }
+action\_result: optional object { not }
 
 </summary>
 
@@ -134,7 +134,7 @@ action\_result: optional object {not }
 
 <summary>
 
-not: optional array of "success"or "failure"
+not: optional array of "success" or "failure"
 
 Filters out audit logs by whether the action was successful or not.
 
@@ -162,7 +162,7 @@ One of the following:
 
 <summary>
 
-action\_type: optional object {not }
+action\_type: optional object { not }
 
 </summary>
 
@@ -170,7 +170,7 @@ action\_type: optional object {not }
 
 <summary>
 
-not: optional array of "create"or "delete"or "view"or "update"
+not: optional array of "create" or "delete" or "view" or "update"
 
 Filters out audit logs by the action type.
 
@@ -206,7 +206,7 @@ One of the following:
 
 <summary>
 
-actor\_context: optional object {not }
+actor\_context: optional object { not }
 
 </summary>
 
@@ -214,7 +214,7 @@ actor\_context: optional object {not }
 
 <summary>
 
-not: optional array of "api"or "api\_key"or "api\_token"or 3 more
+not: optional array of "api" or "api\_key" or "api\_token" or 3 more
 
 Filters out audit logs by the actor context.
 
@@ -265,7 +265,7 @@ One of the following:
 
 <summary>
 
-actor\_email: optional object {not }
+actor\_email: optional object { not }
 
 </summary>
 
@@ -283,7 +283,7 @@ Filters out audit logs by the actor’s email address.
 
 <summary>
 
-actor\_id: optional object {not }
+actor\_id: optional object { not }
 
 </summary>
 
@@ -301,7 +301,7 @@ Filters out audit logs by the actor ID. This can be either the Account ID or Use
 
 <summary>
 
-actor\_ip\_address: optional object {not }
+actor\_ip\_address: optional object { not }
 
 </summary>
 
@@ -319,7 +319,7 @@ Filters out audit logs IP address where the action was initiated.
 
 <summary>
 
-actor\_token\_id: optional object {not }
+actor\_token\_id: optional object { not }
 
 </summary>
 
@@ -337,7 +337,7 @@ Filters out audit logs by the API token ID when the actor context is an api\_tok
 
 <summary>
 
-actor\_token\_name: optional object {not }
+actor\_token\_name: optional object { not }
 
 </summary>
 
@@ -355,7 +355,7 @@ Filters out audit logs by the API token name when the actor context is an api\_t
 
 <summary>
 
-actor\_type: optional object {not }
+actor\_type: optional object { not }
 
 </summary>
 
@@ -363,7 +363,7 @@ actor\_type: optional object {not }
 
 <summary>
 
-not: optional array of "account"or "cloudflare\_admin"or "delegated\_service"or 2 more
+not: optional array of "account" or "cloudflare\_admin" or "delegated\_service" or 2 more
 
 Filters out audit logs by the actor type.
 
@@ -403,7 +403,7 @@ One of the following:
 
 <summary>
 
-audit\_log\_id: optional object {not }
+audit\_log\_id: optional object { not }
 
 </summary>
 
@@ -427,7 +427,7 @@ The cursor is an opaque token used to paginate through large sets of records. It
 
 <summary>
 
-direction: optional "desc"or "asc"
+direction: optional "desc" or "asc"
 
 Sets sorting order.
 
@@ -467,7 +467,7 @@ Filters audit logs by one or more predefined product categories. Each product ca
 
 <summary>
 
-raw\_cf\_ray\_id: optional object {not }
+raw\_cf\_ray\_id: optional object { not }
 
 </summary>
 
@@ -485,7 +485,7 @@ Filters out audit logs by the response CF Ray ID.
 
 <summary>
 
-raw\_method: optional object {not }
+raw\_method: optional object { not }
 
 </summary>
 
@@ -503,7 +503,7 @@ Filters out audit logs by the HTTP method for the API call.
 
 <summary>
 
-raw\_status\_code: optional object {not }
+raw\_status\_code: optional object { not }
 
 </summary>
 
@@ -521,7 +521,7 @@ Filters out audit logs by the response status code that was returned.
 
 <summary>
 
-raw\_uri: optional object {not }
+raw\_uri: optional object { not }
 
 </summary>
 
@@ -539,7 +539,7 @@ Filters out audit logs by the request URI.
 
 <summary>
 
-resource\_id: optional object {not }
+resource\_id: optional object { not }
 
 </summary>
 
@@ -557,7 +557,7 @@ Filters out audit logs by the resource ID.
 
 <summary>
 
-resource\_product: optional object {not }
+resource\_product: optional object { not }
 
 </summary>
 
@@ -575,7 +575,7 @@ Filters out audit logs by the Cloudflare product associated with the changed res
 
 <summary>
 
-resource\_scope: optional object {not }
+resource\_scope: optional object { not }
 
 </summary>
 
@@ -583,7 +583,7 @@ resource\_scope: optional object {not }
 
 <summary>
 
-not: optional array of "accounts"or "user"or "zones"or "memberships"
+not: optional array of "accounts" or "user" or "zones" or "memberships"
 
 Filters out audit logs by the resource scope, specifying whether the resource is associated with an user, an account, a zone, or a membership.
 
@@ -619,7 +619,7 @@ One of the following:
 
 <summary>
 
-resource\_type: optional object {not }
+resource\_type: optional object { not }
 
 </summary>
 
@@ -637,7 +637,7 @@ Filters out audit logs based on the unique type of resource changed by the actio
 
 <summary>
 
-zone\_id: optional object {not }
+zone\_id: optional object { not }
 
 </summary>
 
@@ -655,7 +655,7 @@ Filters out audit logs by the zone ID.
 
 <summary>
 
-zone\_name: optional object {not }
+zone\_name: optional object { not }
 
 </summary>
 
@@ -675,7 +675,7 @@ Filters out audit logs by the zone name associated with the change.
 
 <summary>
 
-errors: optional array of object {message }
+errors: optional array of object { message }
 
 </summary>
 
@@ -691,7 +691,7 @@ message: string
 
 <summary>
 
-result: optional array of object {id, account, action, 4 more }
+result: optional array of object { id, account, action, 4 more }
 
 </summary>
 
@@ -707,7 +707,7 @@ maxLength32
 
 <summary>
 
-account: optional object {id, name }
+account: optional object { id, name }
 
 Contains account related information.
 
@@ -733,7 +733,7 @@ A string that identifies the account name.
 
 <summary>
 
-action: optional object {description, result, time, type }
+action: optional object { description, result, time, type }
 
 Provides information about the action performed.
 
@@ -773,7 +773,7 @@ A short string that describes the action that was performed.
 
 <summary>
 
-actor: optional object {id, context, email, 4 more }
+actor: optional object { id, context, email, 4 more }
 
 Provides details about the actor who performed the action.
 
@@ -789,7 +789,7 @@ The ID of the actor who performed the action. If a user performed the action, th
 
 <summary>
 
-context: optional "api"or "api\_key"or "api\_token"or 3 more
+context: optional "api" or "api\_key" or "api\_token" or 3 more
 
 The context in which the action was initiated.
 
@@ -862,7 +862,7 @@ The API token name when the actor context is an api\_token or oauth.
 
 <summary>
 
-type: optional "account"or "cloudflare\_admin"or "delegated\_service"or 2 more
+type: optional "account" or "cloudflare\_admin" or "delegated\_service" or 2 more
 
 The type of actor.
 
@@ -902,7 +902,7 @@ One of the following:
 
 <summary>
 
-raw: optional object {cf\_ray\_id, method, status\_code, 2 more }
+raw: optional object { cf\_ray\_id, method, status\_code, 2 more }
 
 Provides raw information about the request and response.
 
@@ -946,7 +946,7 @@ The client’s user agent string sent with the request.
 
 <summary>
 
-resource: optional object {id, product, request, 3 more }
+resource: optional object { id, product, request, 3 more }
 
 Provides details about the affected resource.
 
@@ -992,7 +992,7 @@ The type of the resource.
 
 <summary>
 
-zone: optional object {id, name }
+zone: optional object { id, name }
 
 Provides details about the zone affected by the action.
 
@@ -1022,7 +1022,7 @@ A string that identifies the zone name.
 
 <summary>
 
-result\_info: optional object {count, cursor }
+result\_info: optional object { count, cursor }
 
 Provides information about the result of the request, including count and cursor.
 

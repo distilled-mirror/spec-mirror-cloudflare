@@ -82,7 +82,7 @@ maxLength512
 
 <summary>
 
-jurisdiction: optional "eu"or "fedramp"or "us"
+jurisdiction: optional "eu" or "fedramp" or "us"
 
 Specify the jurisdiction to restrict the KV namespace to durably store data within. Can only be set at namespace creation time.
 
@@ -140,7 +140,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -182,7 +182,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -232,7 +232,7 @@ maxLength512
 
 <summary>
 
-jurisdiction: optional "eu"or "fedramp"or "us"
+jurisdiction: optional "eu" or "fedramp" or "us"
 
 Specify the jurisdiction to restrict the KV namespace to durably store data within. Can only be set at namespace creation time.
 

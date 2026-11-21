@@ -54,6 +54,10 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 </details>
 
+##### Accepted Permissions (at least one required)
+
+`Email Sending Write`
+
 ##### P ath ParametersExpand Collapse
 
 account\_id: string
@@ -68,7 +72,7 @@ Cloudflare account ID.
 
 <summary>
 
-items: array of object {email, expires\_at, note, scope }
+items: array of object { email, expires\_at, note, scope }
 
 Suppressions to import. Items with the same email address and scope are deduplicated before processing.
 
@@ -100,7 +104,7 @@ maxLength1000
 
 <summary>
 
-scope: optional object {type } or object {type, value }
+scope: optional object { type } or object { type, value }
 
 Where the suppression applies. Omit for <code>{ "type": "account" }</code>, which blocks the recipient for every sending domain of the account.
 
@@ -112,7 +116,7 @@ One of the following:
 
 <summary>
 
-Type object {type }
+Type object { type }
 
 </summary>
 
@@ -130,7 +134,7 @@ Blocks the recipient for every sending domain of the account.
 
 <summary>
 
-object {type, value }
+object { type, value }
 
 </summary>
 
@@ -174,7 +178,7 @@ messages: array of unknown
 
 <summary>
 
-result: object {deduplicated, errors, invalid, 4 more }
+result: object { deduplicated, errors, invalid, 4 more }
 
 </summary>
 
@@ -200,7 +204,7 @@ Number of items with an invalid email address or sending domain.
 
 <summary>
 
-items: array of object {index, status, id, 3 more }
+items: array of object { index, status, id, 3 more }
 
 Per-item results, in the same order as the request body.
 
@@ -216,7 +220,7 @@ Zero-based index of this item in the request body.
 
 <summary>
 
-status: "processed"or "invalid"or "error"or "skipped"
+status: "processed" or "invalid" or "error" or "skipped"
 
 Outcome for this item.
 
@@ -270,7 +274,7 @@ Human-readable error message. Present when <code>status</code> is <code>invalid<
 
 <summary>
 
-scope: optional object {type } or object {type, value }
+scope: optional object { type } or object { type, value }
 
 Where the suppression applies: <code>account</code> for every sending domain of the account, or <code>sending_domain</code> for one envelope MAIL FROM domain.
 
@@ -282,7 +286,7 @@ One of the following:
 
 <summary>
 
-Type object {type }
+Type object { type }
 
 </summary>
 
@@ -300,7 +304,7 @@ Blocks the recipient for every sending domain of the account.
 
 <summary>
 
-object {type, value }
+object { type, value }
 
 </summary>
 

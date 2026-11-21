@@ -36,7 +36,7 @@ POST/accounts/{account\_id}/dlp/email/account\_mapping
 
 <summary>
 
-AccountMappingGetResponse object {addin\_identifier\_token, auth\_requirements }
+AccountMappingGetResponse object { addin\_identifier\_token, auth\_requirements }
 
 </summary>
 
@@ -50,7 +50,7 @@ formatuuid
 
 <summary>
 
-auth\_requirements: object {allowed\_microsoft\_organizations, type } or object {type }
+auth\_requirements: object { allowed\_microsoft\_organizations, type } or object { type }
 
 </summary>
 
@@ -60,7 +60,7 @@ One of the following:
 
 <summary>
 
-object {allowed\_microsoft\_organizations, type }
+object { allowed\_microsoft\_organizations, type }
 
 </summary>
 
@@ -80,7 +80,7 @@ type: "Org"
 
 <summary>
 
-Type object {type }
+Type object { type }
 
 </summary>
 
@@ -104,7 +104,7 @@ type: "NoAuth"
 
 <summary>
 
-AccountMappingCreateResponse object {addin\_identifier\_token, auth\_requirements }
+AccountMappingCreateResponse object { addin\_identifier\_token, auth\_requirements }
 
 </summary>
 
@@ -118,7 +118,7 @@ formatuuid
 
 <summary>
 
-auth\_requirements: object {allowed\_microsoft\_organizations, type } or object {type }
+auth\_requirements: object { allowed\_microsoft\_organizations, type } or object { type }
 
 </summary>
 
@@ -128,7 +128,7 @@ One of the following:
 
 <summary>
 
-object {allowed\_microsoft\_organizations, type }
+object { allowed\_microsoft\_organizations, type }
 
 </summary>
 
@@ -148,7 +148,7 @@ type: "Org"
 
 <summary>
 
-Type object {type }
+Type object { type }
 
 </summary>
 
@@ -200,7 +200,7 @@ PATCH/accounts/{account\_id}/dlp/email/rules
 
 <summary>
 
-RuleListResponse object {action, conditions, created\_at, 6 more }
+RuleListResponse object { action, conditions, created\_at, 6 more }
 
 </summary>
 
@@ -208,7 +208,7 @@ RuleListResponse object {action, conditions, created\_at, 6 more }
 
 <summary>
 
-action: object {action, message }
+action: object { action, message }
 
 </summary>
 
@@ -228,7 +228,7 @@ message: optional string
 
 <summary>
 
-conditions: array of object {operator, selector, value }
+conditions: array of object { operator, selector, value }
 
 Triggered if all conditions match.
 
@@ -238,7 +238,7 @@ Triggered if all conditions match.
 
 <summary>
 
-operator: "InList"or "NotInList"or "MatchRegex"or "NotMatchRegex"
+operator: "InList" or "NotInList" or "MatchRegex" or "NotMatchRegex"
 
 </summary>
 
@@ -268,7 +268,7 @@ One of the following:
 
 <summary>
 
-selector: "Recipients"or "Sender"or "DLPProfiles"
+selector: "Recipients" or "Sender" or "DLPProfiles"
 
 </summary>
 
@@ -294,7 +294,7 @@ One of the following:
 
 <summary>
 
-value: array of stringor string
+value: array of string or string
 
 </summary>
 
@@ -362,7 +362,7 @@ description: optional string
 
 <summary>
 
-RuleGetResponse object {action, conditions, created\_at, 6 more }
+RuleGetResponse object { action, conditions, created\_at, 6 more }
 
 </summary>
 
@@ -370,7 +370,7 @@ RuleGetResponse object {action, conditions, created\_at, 6 more }
 
 <summary>
 
-action: object {action, message }
+action: object { action, message }
 
 </summary>
 
@@ -390,7 +390,7 @@ message: optional string
 
 <summary>
 
-conditions: array of object {operator, selector, value }
+conditions: array of object { operator, selector, value }
 
 Triggered if all conditions match.
 
@@ -400,7 +400,7 @@ Triggered if all conditions match.
 
 <summary>
 
-operator: "InList"or "NotInList"or "MatchRegex"or "NotMatchRegex"
+operator: "InList" or "NotInList" or "MatchRegex" or "NotMatchRegex"
 
 </summary>
 
@@ -430,7 +430,7 @@ One of the following:
 
 <summary>
 
-selector: "Recipients"or "Sender"or "DLPProfiles"
+selector: "Recipients" or "Sender" or "DLPProfiles"
 
 </summary>
 
@@ -456,7 +456,7 @@ One of the following:
 
 <summary>
 
-value: array of stringor string
+value: array of string or string
 
 </summary>
 
@@ -524,7 +524,7 @@ description: optional string
 
 <summary>
 
-RuleCreateResponse object {action, conditions, created\_at, 6 more }
+RuleCreateResponse object { action, conditions, created\_at, 6 more }
 
 </summary>
 
@@ -532,7 +532,7 @@ RuleCreateResponse object {action, conditions, created\_at, 6 more }
 
 <summary>
 
-action: object {action, message }
+action: object { action, message }
 
 </summary>
 
@@ -552,7 +552,7 @@ message: optional string
 
 <summary>
 
-conditions: array of object {operator, selector, value }
+conditions: array of object { operator, selector, value }
 
 Triggered if all conditions match.
 
@@ -562,7 +562,7 @@ Triggered if all conditions match.
 
 <summary>
 
-operator: "InList"or "NotInList"or "MatchRegex"or "NotMatchRegex"
+operator: "InList" or "NotInList" or "MatchRegex" or "NotMatchRegex"
 
 </summary>
 
@@ -592,7 +592,7 @@ One of the following:
 
 <summary>
 
-selector: "Recipients"or "Sender"or "DLPProfiles"
+selector: "Recipients" or "Sender" or "DLPProfiles"
 
 </summary>
 
@@ -618,7 +618,7 @@ One of the following:
 
 <summary>
 
-value: array of stringor string
+value: array of string or string
 
 </summary>
 
@@ -686,7 +686,7 @@ description: optional string
 
 <summary>
 
-RuleUpdateResponse object {action, conditions, created\_at, 6 more }
+RuleUpdateResponse object { action, conditions, created\_at, 6 more }
 
 </summary>
 
@@ -694,7 +694,7 @@ RuleUpdateResponse object {action, conditions, created\_at, 6 more }
 
 <summary>
 
-action: object {action, message }
+action: object { action, message }
 
 </summary>
 
@@ -714,7 +714,7 @@ message: optional string
 
 <summary>
 
-conditions: array of object {operator, selector, value }
+conditions: array of object { operator, selector, value }
 
 Triggered if all conditions match.
 
@@ -724,7 +724,7 @@ Triggered if all conditions match.
 
 <summary>
 
-operator: "InList"or "NotInList"or "MatchRegex"or "NotMatchRegex"
+operator: "InList" or "NotInList" or "MatchRegex" or "NotMatchRegex"
 
 </summary>
 
@@ -754,7 +754,7 @@ One of the following:
 
 <summary>
 
-selector: "Recipients"or "Sender"or "DLPProfiles"
+selector: "Recipients" or "Sender" or "DLPProfiles"
 
 </summary>
 
@@ -780,7 +780,7 @@ One of the following:
 
 <summary>
 
-value: array of stringor string
+value: array of string or string
 
 </summary>
 
@@ -848,7 +848,7 @@ description: optional string
 
 <summary>
 
-RuleDeleteResponse object {action, conditions, created\_at, 6 more }
+RuleDeleteResponse object { action, conditions, created\_at, 6 more }
 
 </summary>
 
@@ -856,7 +856,7 @@ RuleDeleteResponse object {action, conditions, created\_at, 6 more }
 
 <summary>
 
-action: object {action, message }
+action: object { action, message }
 
 </summary>
 
@@ -876,7 +876,7 @@ message: optional string
 
 <summary>
 
-conditions: array of object {operator, selector, value }
+conditions: array of object { operator, selector, value }
 
 Triggered if all conditions match.
 
@@ -886,7 +886,7 @@ Triggered if all conditions match.
 
 <summary>
 
-operator: "InList"or "NotInList"or "MatchRegex"or "NotMatchRegex"
+operator: "InList" or "NotInList" or "MatchRegex" or "NotMatchRegex"
 
 </summary>
 
@@ -916,7 +916,7 @@ One of the following:
 
 <summary>
 
-selector: "Recipients"or "Sender"or "DLPProfiles"
+selector: "Recipients" or "Sender" or "DLPProfiles"
 
 </summary>
 
@@ -942,7 +942,7 @@ One of the following:
 
 <summary>
 
-value: array of stringor string
+value: array of string or string
 
 </summary>
 
@@ -1010,7 +1010,7 @@ description: optional string
 
 <summary>
 
-RuleBulkEditResponse object {action, conditions, created\_at, 6 more }
+RuleBulkEditResponse object { action, conditions, created\_at, 6 more }
 
 </summary>
 
@@ -1018,7 +1018,7 @@ RuleBulkEditResponse object {action, conditions, created\_at, 6 more }
 
 <summary>
 
-action: object {action, message }
+action: object { action, message }
 
 </summary>
 
@@ -1038,7 +1038,7 @@ message: optional string
 
 <summary>
 
-conditions: array of object {operator, selector, value }
+conditions: array of object { operator, selector, value }
 
 Triggered if all conditions match.
 
@@ -1048,7 +1048,7 @@ Triggered if all conditions match.
 
 <summary>
 
-operator: "InList"or "NotInList"or "MatchRegex"or "NotMatchRegex"
+operator: "InList" or "NotInList" or "MatchRegex" or "NotMatchRegex"
 
 </summary>
 
@@ -1078,7 +1078,7 @@ One of the following:
 
 <summary>
 
-selector: "Recipients"or "Sender"or "DLPProfiles"
+selector: "Recipients" or "Sender" or "DLPProfiles"
 
 </summary>
 
@@ -1104,7 +1104,7 @@ One of the following:
 
 <summary>
 
-value: array of stringor string
+value: array of string or string
 
 </summary>
 

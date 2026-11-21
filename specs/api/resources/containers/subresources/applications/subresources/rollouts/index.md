@@ -30,7 +30,7 @@ POST/accounts/{account\_id}/containers/applications/{application\_id}/rollouts
 
 <summary>
 
-RolloutCreateResponse object {id, created\_at, current\_configuration, 14 more }
+RolloutCreateResponse object { id, created\_at, current\_configuration, 14 more }
 
 Represents the status and metadata of a rollout process for an application. For “rolling” strategy: includes steps and progress with instance counts. For “new\_instances” strategy: the response omits steps and progress. Use percentage, version\_distribution, and health.summary for status.
 
@@ -52,7 +52,7 @@ UTC timestamp string in ISO 8601 format.
 
 <summary>
 
-current\_configuration: object {authorized\_keys, command, entrypoint, 4 more }
+current\_configuration: object { authorized\_keys, command, entrypoint, 4 more }
 
 User-specified container configuration changes.
 
@@ -62,7 +62,7 @@ User-specified container configuration changes.
 
 <summary>
 
-authorized\_keys: optional array of object {public\_key, name }
+authorized\_keys: optional array of object { public\_key, name }
 
 </summary>
 
@@ -98,7 +98,7 @@ The entry point for the container, specifying the executable to run when the con
 
 <summary>
 
-environment\_variables: optional array of object {name, value }
+environment\_variables: optional array of object { name, value }
 
 Container environment variables.
 
@@ -130,7 +130,7 @@ Image url.
 
 <summary>
 
-instance\_type: optional "lite"or "basic"or "standard-1"or 3 more
+instance\_type: optional "lite" or "basic" or "standard-1" or 3 more
 
 The instance type configures vCPU, memory, and disk.
 
@@ -177,7 +177,7 @@ One of the following:
 
 <summary>
 
-observability: optional object {logs }
+observability: optional object { logs }
 
 Settings for deployment observability such as logging.
 
@@ -187,7 +187,7 @@ Settings for deployment observability such as logging.
 
 <summary>
 
-logs: optional object {enabled }
+logs: optional object { enabled }
 
 Observability logging settings.
 
@@ -223,7 +223,7 @@ description: string
 
 <summary>
 
-health: object {errors, instances, summary }
+health: object { errors, instances, summary }
 
 </summary>
 
@@ -231,7 +231,7 @@ health: object {errors, instances, summary }
 
 <summary>
 
-errors: array of object {event, instance\_id }
+errors: array of object { event, instance\_id }
 
 </summary>
 
@@ -239,7 +239,7 @@ errors: array of object {event, instance\_id }
 
 <summary>
 
-event: object {id, details, message, 4 more }
+event: object { id, details, message, 4 more }
 
 An event within a Placement.
 
@@ -261,7 +261,7 @@ message: string
 
 <summary>
 
-name: "SchedulerPlaced"or "NetworkingIPAssigned"or "VMStarted"or 14 more
+name: "SchedulerPlaced" or "NetworkingIPAssigned" or "VMStarted" or 14 more
 
 Name of the event that describes the kind event that happened.
 
@@ -370,7 +370,7 @@ UTC timestamp string in ISO 8601 format.
 
 <summary>
 
-type: "Info"or "Error"or "Warn"or 2 more
+type: "Info" or "Error" or "Warn" or 2 more
 
 </summary>
 
@@ -418,7 +418,7 @@ An instance ID represents an identifier of an instance configuration that mainta
 
 <summary>
 
-instances: object {active, assigned }
+instances: object { active, assigned }
 
 Shows a count of application instance states.
 
@@ -444,7 +444,7 @@ Number of instances bound to a Durable Object with a running placement whose con
 
 <summary>
 
-summary: optional "healthy"or "degraded"or "unhealthy"or "pending"
+summary: optional "healthy" or "degraded" or "unhealthy" or "pending"
 
 High-level health assessment. Only populated for “new\_instances” strategy. Based on a sample of target-version instances rather than a full count.
 
@@ -485,7 +485,7 @@ One of the following:
 
 <summary>
 
-kind: "full\_auto"or "full\_manual"or "durable\_objects\_auto"
+kind: "full\_auto" or "full\_manual" or "durable\_objects\_auto"
 
 Kind of the rollout process.
 
@@ -523,7 +523,7 @@ Timestamp of the most recent update to status, health, or progress.
 
 <summary>
 
-status: "pending"or "progressing"or "completed"or 2 more
+status: "pending" or "progressing" or "completed" or 2 more
 
 Current status of the rollout.
 
@@ -559,7 +559,7 @@ One of the following:
 
 <summary>
 
-strategy: "rolling"or "new\_instances"
+strategy: "rolling" or "new\_instances"
 
 The rollout strategy.
 
@@ -586,7 +586,7 @@ One of the following:
 
 <summary>
 
-target\_configuration: object {authorized\_keys, command, entrypoint, 4 more }
+target\_configuration: object { authorized\_keys, command, entrypoint, 4 more }
 
 User-specified container configuration changes.
 
@@ -596,7 +596,7 @@ User-specified container configuration changes.
 
 <summary>
 
-authorized\_keys: optional array of object {public\_key, name }
+authorized\_keys: optional array of object { public\_key, name }
 
 </summary>
 
@@ -632,7 +632,7 @@ The entry point for the container, specifying the executable to run when the con
 
 <summary>
 
-environment\_variables: optional array of object {name, value }
+environment\_variables: optional array of object { name, value }
 
 Container environment variables.
 
@@ -664,7 +664,7 @@ Image url.
 
 <summary>
 
-instance\_type: optional "lite"or "basic"or "standard-1"or 3 more
+instance\_type: optional "lite" or "basic" or "standard-1" or 3 more
 
 The instance type configures vCPU, memory, and disk.
 
@@ -711,7 +711,7 @@ One of the following:
 
 <summary>
 
-observability: optional object {logs }
+observability: optional object { logs }
 
 Settings for deployment observability such as logging.
 
@@ -721,7 +721,7 @@ Settings for deployment observability such as logging.
 
 <summary>
 
-logs: optional object {enabled }
+logs: optional object { enabled }
 
 Observability logging settings.
 
@@ -759,7 +759,7 @@ Current target version percentage (0-100). Only present for “new\_instances”
 
 <summary>
 
-progress: optional object {current\_step, total\_instances, total\_steps, 2 more }
+progress: optional object { current\_step, total\_instances, total\_steps, 2 more }
 
 Progress details of an application rollout.
 
@@ -793,7 +793,7 @@ Number of instances updated in the rollout process.
 
 <summary>
 
-version\_distribution: optional object {current\_version\_instances, current\_version\_percentage, target\_version\_instances, target\_version\_percentage }
+version\_distribution: optional object { current\_version\_instances, current\_version\_percentage, target\_version\_instances, target\_version\_percentage }
 
 Expected distribution of instances per version, based on the current percentage split. Populated during active rollouts. Values derive from the version percentage weights rather than actual running instance counts.
 
@@ -843,7 +843,7 @@ formatdate-time
 
 <summary>
 
-steps: optional array of object {id, description, status, 4 more }
+steps: optional array of object { id, description, status, 4 more }
 
 </summary>
 
@@ -863,7 +863,7 @@ Description of the rollout step.
 
 <summary>
 
-status: "pending"or "progressing"or "reverting"or 2 more
+status: "pending" or "progressing" or "reverting" or 2 more
 
 Status of the rollout step.
 
@@ -899,7 +899,7 @@ One of the following:
 
 <summary>
 
-step\_size: object {percentage }
+step\_size: object { percentage }
 
 </summary>
 
@@ -939,7 +939,7 @@ UTC timestamp string in ISO 8601 format.
 
 <summary>
 
-version\_distribution: optional object {current\_version\_percentage, target\_version\_percentage }
+version\_distribution: optional object { current\_version\_percentage, target\_version\_percentage }
 
 Version percentage distribution. Only present for “new\_instances” strategy. For “rolling” strategy, see progress.version\_distribution instead.
 

@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Browser Rendering Write`
+`AI Search Index Engine``Auto Rag Write Run Engine``Browser Run Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -90,7 +90,7 @@ minimum0
 
 <summary>
 
-body: object {url, actionTimeout, addScriptTag, 20 more } or object {html, actionTimeout, addScriptTag, 20 more }
+body: object { url, actionTimeout, addScriptTag, 20 more } or object { html, actionTimeout, addScriptTag, 20 more }
 
 </summary>
 
@@ -100,7 +100,7 @@ One of the following:
 
 <summary>
 
-object {url, actionTimeout, addScriptTag, 20 more }
+object { url, actionTimeout, addScriptTag, 20 more }
 
 </summary>
 
@@ -120,7 +120,7 @@ maximum120000
 
 <summary>
 
-addScriptTag: optional array of object {id, content, type, url }
+addScriptTag: optional array of object { id, content, type, url }
 
 Adds a script element into the page with the desired URL or content.
 
@@ -152,7 +152,7 @@ formaturi
 
 <summary>
 
-addStyleTag: optional array of object {content, url }
+addStyleTag: optional array of object { content, url }
 
 Adds a <code>&lt;link rel="stylesheet"&gt;</code> tag into the page with the desired URL or a <code>&lt;style type="text/css"&gt;</code> tag with the content.
 
@@ -182,7 +182,7 @@ Only allow requests that match the provided regex patterns, eg. ’/^.\*.(css)�
 
 <summary>
 
-allowResourceTypes: optional array of "document"or "stylesheet"or "image"or 15 more
+allowResourceTypes: optional array of "document" or "stylesheet" or "image" or 15 more
 
 Only allow requests that match the provided resource types, eg. ‘image’ or ‘script’. Reject rules are applied first.
 
@@ -270,7 +270,7 @@ One of the following:
 
 <summary>
 
-authenticate: optional object {password, username }
+authenticate: optional object { password, username }
 
 Provide credentials for HTTP authentication.
 
@@ -302,7 +302,7 @@ Attempt to proceed when ‘awaited’ events fail or timeout.
 
 <summary>
 
-cookies: optional array of object {name, value, domain, 11 more }
+cookies: optional array of object { name, value, domain, 11 more }
 
 Check <a href="https://pptr.dev/api/puppeteer.page.setcookie">options</a>.
 
@@ -342,7 +342,7 @@ path: optional string
 
 <summary>
 
-priority: optional "Low"or "Medium"or "High"
+priority: optional "Low" or "Medium" or "High"
 
 </summary>
 
@@ -372,7 +372,7 @@ sameParty: optional boolean
 
 <summary>
 
-sameSite: optional "Strict"or "Lax"or "None"
+sameSite: optional "Strict" or "Lax" or "None"
 
 </summary>
 
@@ -406,7 +406,7 @@ sourcePort: optional number
 
 <summary>
 
-sourceScheme: optional "Unset"or "NonSecure"or "Secure"
+sourceScheme: optional "Unset" or "NonSecure" or "Secure"
 
 </summary>
 
@@ -444,7 +444,7 @@ emulateMediaType: optional string
 
 <summary>
 
-gotoOptions: optional object {referer, referrerPolicy, timeout, waitUntil }
+gotoOptions: optional object { referer, referrerPolicy, timeout, waitUntil }
 
 Check <a href="https://pptr.dev/api/puppeteer.gotooptions">options</a>.
 
@@ -468,7 +468,7 @@ maximum60000
 
 <summary>
 
-waitUntil: optional "load"or "domcontentloaded"or "networkidle0"or "networkidle2"or array of "load"or "domcontentloaded"or "networkidle0"or "networkidle2"
+waitUntil: optional "load" or "domcontentloaded" or "networkidle0" or "networkidle2" or array of "load" or "domcontentloaded" or "networkidle0" or "networkidle2"
 
 </summary>
 
@@ -478,7 +478,7 @@ One of the following:
 
 <summary>
 
-"load"or "domcontentloaded"or "networkidle0"or "networkidle2"
+"load" or "domcontentloaded" or "networkidle0" or "networkidle2"
 
 </summary>
 
@@ -508,7 +508,7 @@ One of the following:
 
 <summary>
 
-array of "load"or "domcontentloaded"or "networkidle0"or "networkidle2"
+array of "load" or "domcontentloaded" or "networkidle0" or "networkidle2"
 
 </summary>
 
@@ -556,7 +556,7 @@ Block undesired requests that match the provided regex patterns, eg. ’/^.\*.(c
 
 <summary>
 
-rejectResourceTypes: optional array of "document"or "stylesheet"or "image"or 15 more
+rejectResourceTypes: optional array of "document" or "stylesheet" or "image" or 15 more
 
 Block undesired requests that match the provided resource types, eg. ‘image’ or ‘script’.
 
@@ -644,7 +644,7 @@ One of the following:
 
 <summary>
 
-screenshotOptions: optional object {captureBeyondViewport, clip, encoding, 6 more }
+screenshotOptions: optional object { captureBeyondViewport, clip, encoding, 6 more }
 
 Check <a href="https://pptr.dev/api/puppeteer.screenshotoptions">options</a>.
 
@@ -658,7 +658,7 @@ captureBeyondViewport: optional boolean
 
 <summary>
 
-clip: optional object {height, width, x, 2 more }
+clip: optional object { height, width, x, 2 more }
 
 </summary>
 
@@ -690,7 +690,7 @@ scale: optional number
 
 <summary>
 
-encoding: optional "binary"or "base64"
+encoding: optional "binary" or "base64"
 
 </summary>
 
@@ -732,7 +732,7 @@ quality: optional number
 
 <summary>
 
-type: optional "png"or "jpeg"or "webp"
+type: optional "png" or "jpeg" or "webp"
 
 </summary>
 
@@ -782,7 +782,7 @@ userAgent: optional string
 
 <summary>
 
-viewport: optional object {height, width, deviceScaleFactor, 3 more }
+viewport: optional object { height, width, deviceScaleFactor, 3 more }
 
 Check <a href="https://pptr.dev/api/puppeteer.page.setviewport">options</a>.
 
@@ -820,7 +820,7 @@ isMobile: optional boolean
 
 <summary>
 
-waitForSelector: optional object {selector, hidden, timeout, visible }
+waitForSelector: optional object { selector, hidden, timeout, visible }
 
 Wait for the selector to appear in page. Check <a href="https://pptr.dev/api/puppeteer.page.waitforselector">options</a>.
 
@@ -864,7 +864,7 @@ maximum120000
 
 <summary>
 
-object {html, actionTimeout, addScriptTag, 20 more }
+object { html, actionTimeout, addScriptTag, 20 more }
 
 </summary>
 
@@ -884,7 +884,7 @@ maximum120000
 
 <summary>
 
-addScriptTag: optional array of object {id, content, type, url }
+addScriptTag: optional array of object { id, content, type, url }
 
 Adds a script element into the page with the desired URL or content.
 
@@ -916,7 +916,7 @@ formaturi
 
 <summary>
 
-addStyleTag: optional array of object {content, url }
+addStyleTag: optional array of object { content, url }
 
 Adds a <code>&lt;link rel="stylesheet"&gt;</code> tag into the page with the desired URL or a <code>&lt;style type="text/css"&gt;</code> tag with the content.
 
@@ -946,7 +946,7 @@ Only allow requests that match the provided regex patterns, eg. ’/^.\*.(css)�
 
 <summary>
 
-allowResourceTypes: optional array of "document"or "stylesheet"or "image"or 15 more
+allowResourceTypes: optional array of "document" or "stylesheet" or "image" or 15 more
 
 Only allow requests that match the provided resource types, eg. ‘image’ or ‘script’. Reject rules are applied first.
 
@@ -1034,7 +1034,7 @@ One of the following:
 
 <summary>
 
-authenticate: optional object {password, username }
+authenticate: optional object { password, username }
 
 Provide credentials for HTTP authentication.
 
@@ -1066,7 +1066,7 @@ Attempt to proceed when ‘awaited’ events fail or timeout.
 
 <summary>
 
-cookies: optional array of object {name, value, domain, 11 more }
+cookies: optional array of object { name, value, domain, 11 more }
 
 Check <a href="https://pptr.dev/api/puppeteer.page.setcookie">options</a>.
 
@@ -1106,7 +1106,7 @@ path: optional string
 
 <summary>
 
-priority: optional "Low"or "Medium"or "High"
+priority: optional "Low" or "Medium" or "High"
 
 </summary>
 
@@ -1136,7 +1136,7 @@ sameParty: optional boolean
 
 <summary>
 
-sameSite: optional "Strict"or "Lax"or "None"
+sameSite: optional "Strict" or "Lax" or "None"
 
 </summary>
 
@@ -1170,7 +1170,7 @@ sourcePort: optional number
 
 <summary>
 
-sourceScheme: optional "Unset"or "NonSecure"or "Secure"
+sourceScheme: optional "Unset" or "NonSecure" or "Secure"
 
 </summary>
 
@@ -1208,7 +1208,7 @@ emulateMediaType: optional string
 
 <summary>
 
-gotoOptions: optional object {referer, referrerPolicy, timeout, waitUntil }
+gotoOptions: optional object { referer, referrerPolicy, timeout, waitUntil }
 
 Check <a href="https://pptr.dev/api/puppeteer.gotooptions">options</a>.
 
@@ -1232,7 +1232,7 @@ maximum60000
 
 <summary>
 
-waitUntil: optional "load"or "domcontentloaded"or "networkidle0"or "networkidle2"or array of "load"or "domcontentloaded"or "networkidle0"or "networkidle2"
+waitUntil: optional "load" or "domcontentloaded" or "networkidle0" or "networkidle2" or array of "load" or "domcontentloaded" or "networkidle0" or "networkidle2"
 
 </summary>
 
@@ -1242,7 +1242,7 @@ One of the following:
 
 <summary>
 
-"load"or "domcontentloaded"or "networkidle0"or "networkidle2"
+"load" or "domcontentloaded" or "networkidle0" or "networkidle2"
 
 </summary>
 
@@ -1272,7 +1272,7 @@ One of the following:
 
 <summary>
 
-array of "load"or "domcontentloaded"or "networkidle0"or "networkidle2"
+array of "load" or "domcontentloaded" or "networkidle0" or "networkidle2"
 
 </summary>
 
@@ -1316,7 +1316,7 @@ Block undesired requests that match the provided regex patterns, eg. ’/^.\*.(c
 
 <summary>
 
-rejectResourceTypes: optional array of "document"or "stylesheet"or "image"or 15 more
+rejectResourceTypes: optional array of "document" or "stylesheet" or "image" or 15 more
 
 Block undesired requests that match the provided resource types, eg. ‘image’ or ‘script’.
 
@@ -1404,7 +1404,7 @@ One of the following:
 
 <summary>
 
-screenshotOptions: optional object {captureBeyondViewport, clip, encoding, 6 more }
+screenshotOptions: optional object { captureBeyondViewport, clip, encoding, 6 more }
 
 Check <a href="https://pptr.dev/api/puppeteer.screenshotoptions">options</a>.
 
@@ -1418,7 +1418,7 @@ captureBeyondViewport: optional boolean
 
 <summary>
 
-clip: optional object {height, width, x, 2 more }
+clip: optional object { height, width, x, 2 more }
 
 </summary>
 
@@ -1450,7 +1450,7 @@ scale: optional number
 
 <summary>
 
-encoding: optional "binary"or "base64"
+encoding: optional "binary" or "base64"
 
 </summary>
 
@@ -1492,7 +1492,7 @@ quality: optional number
 
 <summary>
 
-type: optional "png"or "jpeg"or "webp"
+type: optional "png" or "jpeg" or "webp"
 
 </summary>
 
@@ -1546,7 +1546,7 @@ userAgent: optional string
 
 <summary>
 
-viewport: optional object {height, width, deviceScaleFactor, 3 more }
+viewport: optional object { height, width, deviceScaleFactor, 3 more }
 
 Check <a href="https://pptr.dev/api/puppeteer.page.setviewport">options</a>.
 
@@ -1584,7 +1584,7 @@ isMobile: optional boolean
 
 <summary>
 
-waitForSelector: optional object {selector, hidden, timeout, visible }
+waitForSelector: optional object { selector, hidden, timeout, visible }
 
 Wait for the selector to appear in page. Check <a href="https://pptr.dev/api/puppeteer.page.waitforselector">options</a>.
 
@@ -1640,7 +1640,7 @@ Response status.
 
 <summary>
 
-errors: optional array of object {code, message }
+errors: optional array of object { code, message }
 
 </summary>
 

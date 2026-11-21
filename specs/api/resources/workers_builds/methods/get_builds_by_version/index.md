@@ -54,7 +54,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Workers CI Write``Workers CI Read`
+`Workers Metadata Read-Only``Workers CI Write``Workers CI Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -78,7 +78,7 @@ Comma-separated list of version UUIDs (max 20).
 
 <summary>
 
-errors: array of object {message, code }
+errors: array of object { message, code }
 
 </summary>
 
@@ -102,7 +102,7 @@ messages: array of string
 
 <summary>
 
-result: object {builds } or object {builds }
+result: object { builds } or object { builds }
 
 </summary>
 
@@ -112,7 +112,7 @@ One of the following:
 
 <summary>
 
-Builds object {builds }
+Builds object { builds }
 
 </summary>
 
@@ -120,7 +120,7 @@ Builds object {builds }
 
 <summary>
 
-builds: optional map\[object {build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more } ]
+builds: optional map\[object { build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more } ]
 
 </summary>
 
@@ -128,7 +128,7 @@ builds: optional map\[object {build\_outcome, build\_trigger\_metadata, build\_u
 
 <summary>
 
-build\_outcome: optional "success"or "fail"or "skipped"or 2 more
+build\_outcome: optional "success" or "fail" or "skipped" or 2 more
 
 </summary>
 
@@ -162,7 +162,7 @@ One of the following:
 
 <summary>
 
-build\_trigger\_metadata: optional object {author, branch, build\_command, 11 more }
+build\_trigger\_metadata: optional object { author, branch, build\_command, 11 more }
 
 </summary>
 
@@ -198,7 +198,7 @@ formatuuid
 
 <summary>
 
-build\_trigger\_source: optional "push"or "pull\_request"or "manual"or "api"
+build\_trigger\_source: optional "push" or "pull\_request" or "manual" or "api"
 
 </summary>
 
@@ -254,7 +254,7 @@ Human-readable name of the account or namespace that owns the repository.
 
 <summary>
 
-provider\_type: optional "github"or "gitlab"or "gitlab\_internal"or "origin"
+provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
 
 Source control provider.
 
@@ -316,7 +316,7 @@ formatdate-time
 
 <summary>
 
-deploy\_hook: optional object {deploy\_hook\_name }
+deploy\_hook: optional object { deploy\_hook\_name }
 
 </summary>
 
@@ -358,7 +358,7 @@ formaturi
 
 <summary>
 
-pull\_request: optional object {closed\_on, created\_on, pull\_request\_url }
+pull\_request: optional object { closed\_on, created\_on, pull\_request\_url }
 
 </summary>
 
@@ -394,7 +394,7 @@ formatdate-time
 
 <summary>
 
-status: optional "queued"or "initializing"or "running"or "stopped"
+status: optional "queued" or "initializing" or "running" or "stopped"
 
 </summary>
 
@@ -430,7 +430,7 @@ formatdate-time
 
 <summary>
 
-trigger: optional object {branch\_excludes, branch\_includes, build\_caching\_enabled, 12 more }
+trigger: optional object { branch\_excludes, branch\_includes, build\_caching\_enabled, 12 more }
 
 Trigger information without build\_token\_uuid
 
@@ -506,7 +506,7 @@ Path patterns that can start builds.
 
 <summary>
 
-repo\_connection: optional object {created\_on, deleted\_on, modified\_on, 6 more }
+repo\_connection: optional object { created\_on, deleted\_on, modified\_on, 6 more }
 
 </summary>
 
@@ -544,7 +544,7 @@ Human-readable name of the account or namespace that owns the repository.
 
 <summary>
 
-provider\_type: optional "github"or "gitlab"or "gitlab\_internal"or "origin"
+provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
 
 Source control provider.
 
@@ -632,7 +632,7 @@ formatuuid
 
 <summary>
 
-Builds object {builds }
+Builds object { builds }
 
 </summary>
 
@@ -640,7 +640,7 @@ Builds object {builds }
 
 <summary>
 
-builds: optional map\[object {build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more } ]
+builds: optional map\[object { build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more } ]
 
 </summary>
 
@@ -648,7 +648,7 @@ builds: optional map\[object {build\_outcome, build\_trigger\_metadata, build\_u
 
 <summary>
 
-build\_outcome: optional "success"or "fail"or "skipped"or 2 more
+build\_outcome: optional "success" or "fail" or "skipped" or 2 more
 
 </summary>
 
@@ -682,7 +682,7 @@ One of the following:
 
 <summary>
 
-build\_trigger\_metadata: optional object {author, branch, build\_command, 11 more }
+build\_trigger\_metadata: optional object { author, branch, build\_command, 11 more }
 
 </summary>
 
@@ -718,7 +718,7 @@ formatuuid
 
 <summary>
 
-build\_trigger\_source: optional "push"or "pull\_request"or "manual"or "api"
+build\_trigger\_source: optional "push" or "pull\_request" or "manual" or "api"
 
 </summary>
 
@@ -774,7 +774,7 @@ Human-readable name of the account or namespace that owns the repository.
 
 <summary>
 
-provider\_type: optional "github"or "gitlab"or "gitlab\_internal"or "origin"
+provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
 
 Source control provider.
 
@@ -836,7 +836,7 @@ formatdate-time
 
 <summary>
 
-deploy\_hook: optional object {deploy\_hook\_name }
+deploy\_hook: optional object { deploy\_hook\_name }
 
 </summary>
 
@@ -878,7 +878,7 @@ formaturi
 
 <summary>
 
-pull\_request: optional object {closed\_on, created\_on, pull\_request\_url }
+pull\_request: optional object { closed\_on, created\_on, pull\_request\_url }
 
 </summary>
 
@@ -914,7 +914,7 @@ formatdate-time
 
 <summary>
 
-status: optional "queued"or "initializing"or "running"or "stopped"
+status: optional "queued" or "initializing" or "running" or "stopped"
 
 </summary>
 
@@ -950,7 +950,7 @@ formatdate-time
 
 <summary>
 
-trigger: optional object {branch\_excludes, branch\_includes, build\_caching\_enabled, 12 more }
+trigger: optional object { branch\_excludes, branch\_includes, build\_caching\_enabled, 12 more }
 
 Trigger information without build\_token\_uuid
 
@@ -1026,7 +1026,7 @@ Path patterns that can start builds.
 
 <summary>
 
-repo\_connection: optional object {created\_on, deleted\_on, modified\_on, 6 more }
+repo\_connection: optional object { created\_on, deleted\_on, modified\_on, 6 more }
 
 </summary>
 
@@ -1064,7 +1064,7 @@ Human-readable name of the account or namespace that owns the repository.
 
 <summary>
 
-provider\_type: optional "github"or "gitlab"or "gitlab\_internal"or "origin"
+provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
 
 Source control provider.
 
@@ -1160,7 +1160,7 @@ success: boolean
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

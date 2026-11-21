@@ -44,7 +44,7 @@ DELETE/accounts/{account\_id}/magic/bgp/filter\_profiles/{profile\_id}
 
 <summary>
 
-BGPFilterProfileListResponse object {id, description, match\_action, 4 more }
+BGPFilterProfileListResponse object { id, description, match\_action, 4 more }
 
 </summary>
 
@@ -68,7 +68,7 @@ maxLength1024
 
 <summary>
 
-match\_action: "allow"or "deny"
+match\_action: "allow" or "deny"
 
 Action to take when a route matches one of the targets in this profile
 
@@ -124,7 +124,7 @@ formatdate-time
 
 <summary>
 
-BGPFilterProfileGetResponse object {id, description, match\_action, 4 more }
+BGPFilterProfileGetResponse object { id, description, match\_action, 4 more }
 
 </summary>
 
@@ -148,7 +148,7 @@ maxLength1024
 
 <summary>
 
-match\_action: "allow"or "deny"
+match\_action: "allow" or "deny"
 
 Action to take when a route matches one of the targets in this profile
 
@@ -204,7 +204,7 @@ formatdate-time
 
 <summary>
 
-BGPFilterProfileCreateResponse object {id, description, match\_action, 4 more }
+BGPFilterProfileCreateResponse object { id, description, match\_action, 4 more }
 
 </summary>
 
@@ -228,7 +228,7 @@ maxLength1024
 
 <summary>
 
-match\_action: "allow"or "deny"
+match\_action: "allow" or "deny"
 
 Action to take when a route matches one of the targets in this profile
 
@@ -284,7 +284,7 @@ formatdate-time
 
 <summary>
 
-BGPFilterProfileUpdateResponse object {id, description, match\_action, 4 more }
+BGPFilterProfileUpdateResponse object { id, description, match\_action, 4 more }
 
 </summary>
 
@@ -308,7 +308,7 @@ maxLength1024
 
 <summary>
 
-match\_action: "allow"or "deny"
+match\_action: "allow" or "deny"
 
 Action to take when a route matches one of the targets in this profile
 
@@ -364,7 +364,7 @@ formatdate-time
 
 <summary>
 
-BGPFilterProfileDeleteResponse object {id, description, match\_action, 4 more }
+BGPFilterProfileDeleteResponse object { id, description, match\_action, 4 more }
 
 </summary>
 
@@ -388,7 +388,7 @@ maxLength1024
 
 <summary>
 
-match\_action: "allow"or "deny"
+match\_action: "allow" or "deny"
 
 Action to take when a route matches one of the targets in this profile
 

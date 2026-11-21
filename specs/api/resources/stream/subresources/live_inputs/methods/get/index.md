@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Stream Write``Stream Read`
+`Stream Metadata Read``Stream Write``Stream Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -82,7 +82,7 @@ maxLength32
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -104,7 +104,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -124,7 +124,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -146,7 +146,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -226,7 +226,7 @@ formatdate-time
 
 <summary>
 
-playback: optional object {dash, hls }
+playback: optional object { dash, hls }
 
 Details for playing a live input’s broadcast using the HLS or DASH manifests. URLs reference the live input ID.
 
@@ -258,7 +258,7 @@ When enabled, the live stream is delivered using Low-Latency HLS (LL-HLS), reduc
 
 <summary>
 
-recording: optional object {allowedOrigins, hideLiveViewerCount, mode, 2 more }
+recording: optional object { allowedOrigins, hideLiveViewerCount, mode, 2 more }
 
 Records the input to a Cloudflare Stream video. Behavior depends on the mode. In most cases, the video will initially be viewable as a live video and transition to on-demand after a condition is satisfied.
 
@@ -280,7 +280,7 @@ Disables reporting the number of live viewers when this property is set to <code
 
 <summary>
 
-mode: optional "off"or "automatic"
+mode: optional "off" or "automatic"
 
 Specifies the recording behavior for the live input. Set this value to <code>off</code> to prevent a recording. Set the value to <code>automatic</code> to begin a recording and transition to on-demand after Stream Live stops receiving input.
 
@@ -320,7 +320,7 @@ Determines the amount of time a live input configured in <code>automatic</code> 
 
 <summary>
 
-rtmps: optional object {streamKey, url }
+rtmps: optional object { streamKey, url }
 
 Details for streaming to an live input using RTMPS.
 
@@ -346,7 +346,7 @@ The RTMPS URL you provide to the broadcaster, which they stream live video to.
 
 <summary>
 
-rtmpsPlayback: optional object {streamKey, url }
+rtmpsPlayback: optional object { streamKey, url }
 
 Details for playback from an live input using RTMPS.
 
@@ -372,7 +372,7 @@ The URL used to play live video over RTMPS.
 
 <summary>
 
-srt: optional object {passphrase, streamId, url }
+srt: optional object { passphrase, streamId, url }
 
 Details for streaming to a live input using SRT.
 
@@ -404,7 +404,7 @@ The SRT URL you provide to the broadcaster, which they stream live video to.
 
 <summary>
 
-srtPlayback: optional object {passphrase, streamId, url }
+srtPlayback: optional object { passphrase, streamId, url }
 
 Details for playback from an live input using SRT.
 
@@ -436,7 +436,7 @@ The URL used to play live video over SRT.
 
 <summary>
 
-status: optional "connected"or "reconnected"or "reconnecting"or 5 more
+status: optional "connected" or "reconnected" or "reconnecting" or 5 more
 
 The connection status of a live input.
 
@@ -492,7 +492,7 @@ maxLength32
 
 <summary>
 
-webRTC: optional object {url }
+webRTC: optional object { url }
 
 Details for streaming to a live input using WebRTC.
 
@@ -512,7 +512,7 @@ The WebRTC URL you provide to the broadcaster, which they stream live video to.
 
 <summary>
 
-webRTCPlayback: optional object {url }
+webRTCPlayback: optional object { url }
 
 Details for playback from a live input using WebRTC.
 

@@ -28,7 +28,7 @@ GET/zones/{zone\_id}/settings/zaraz/workflow
 
 <summary>
 
-Workflow = "realtime"or "preview"
+Workflow = "realtime" or "preview"
 
 Zaraz workflow.
 

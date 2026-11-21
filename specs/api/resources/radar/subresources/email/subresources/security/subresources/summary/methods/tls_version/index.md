@@ -70,7 +70,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 <summary>
 
-arc: optional array of "PASS"or "NONE"or "FAIL"
+arc: optional array of "PASS" or "NONE" or "FAIL"
 
 Filters results by ARC (Authenticated Received Chain) validation.
 
@@ -116,7 +116,7 @@ Start of the date range. Alternative to `dateRange`; provide together with `date
 
 <summary>
 
-dkim: optional array of "PASS"or "NONE"or "FAIL"
+dkim: optional array of "PASS" or "NONE" or "FAIL"
 
 Filters results by DKIM (DomainKeys Identified Mail) validation status.
 
@@ -144,7 +144,7 @@ One of the following:
 
 <summary>
 
-dmarc: optional array of "PASS"or "NONE"or "FAIL"
+dmarc: optional array of "PASS" or "NONE" or "FAIL"
 
 Filters results by DMARC (Domain-based Message Authentication, Reporting and Conformance) validation status.
 
@@ -172,7 +172,7 @@ One of the following:
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -202,7 +202,7 @@ Array of names used to label the series in the response.
 
 <summary>
 
-spf: optional array of "PASS"or "NONE"or "FAIL"
+spf: optional array of "PASS" or "NONE" or "FAIL"
 
 Filters results by SPF (Sender Policy Framework) validation status.
 
@@ -232,7 +232,7 @@ One of the following:
 
 <summary>
 
-result: object {meta, summary\_0 }
+result: object { meta, summary\_0 }
 
 </summary>
 
@@ -240,7 +240,7 @@ result: object {meta, summary\_0 }
 
 <summary>
 
-meta: object {confidenceInfo, dateRange, lastUpdated, 2 more }
+meta: object { confidenceInfo, dateRange, lastUpdated, 2 more }
 
 Metadata for the results.
 
@@ -250,7 +250,7 @@ Metadata for the results.
 
 <summary>
 
-confidenceInfo: object {annotations, level }
+confidenceInfo: object { annotations, level }
 
 </summary>
 
@@ -258,7 +258,7 @@ confidenceInfo: object {annotations, level }
 
 <summary>
 
-annotations: array of object {dataSource, description, endDate, 5 more }
+annotations: array of object { dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -266,7 +266,7 @@ annotations: array of object {dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
+dataSource: "ALL" or "AI\_BOTS" or "AI\_GATEWAY" or 22 more
 
 Data source for annotations.
 
@@ -392,7 +392,7 @@ formatdate-time
 
 <summary>
 
-eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
+eventType: "GENERAL" or "OUTAGE" or "PARTIAL\_PROJECTION" or 2 more
 
 Event type for annotations.
 
@@ -464,7 +464,7 @@ Provides an indication of how much confidence Cloudflare has in the data.
 
 <summary>
 
-dateRange: array of object {endTime, startTime }
+dateRange: array of object { endTime, startTime }
 
 </summary>
 
@@ -500,7 +500,7 @@ formatdate-time
 
 <summary>
 
-normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
+normalization: "PERCENTAGE" or "MIN0\_MAX" or "MIN\_MAX" or 5 more
 
 Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
@@ -548,7 +548,7 @@ One of the following:
 
 <summary>
 
-units: array of object {name, value }
+units: array of object { name, value }
 
 Measurement units for the results.
 
@@ -574,7 +574,7 @@ value: string
 
 <summary>
 
-summary\_0: object {"TLS 1.0", "TLS 1.1", "TLS 1.2", "TLS 1.3" }
+summary\_0: object { "TLS 1.0", "TLS 1.1", "TLS 1.2", "TLS 1.3" }
 
 </summary>
 

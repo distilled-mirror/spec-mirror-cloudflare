@@ -82,7 +82,7 @@ maxLength36
 
 <summary>
 
-action: optional "log"or "block"
+action: optional "log" or "block"
 
 Action to take on requests that match operations included in <code>selector</code> and fail <code>expression</code>.
 
@@ -128,7 +128,7 @@ For details on expressions, see the [Cloudflare Docs](https://developers.cloudfl
 
 <summary>
 
-position: optional object {index } or object {before } or object {after }
+position: optional object { index } or object { before } or object { after }
 
 Update rule order among zone rules.
 
@@ -140,7 +140,7 @@ One of the following:
 
 <summary>
 
-APIShieldIndex object {index }
+APIShieldIndex object { index }
 
 </summary>
 
@@ -160,7 +160,7 @@ minimum1
 
 <summary>
 
-APIShieldBefore object {before }
+APIShieldBefore object { before }
 
 Move rule to after rule with ID.
 
@@ -184,7 +184,7 @@ maxLength36
 
 <summary>
 
-APIShieldAfter object {after }
+APIShieldAfter object { after }
 
 Move rule to before rule with ID.
 
@@ -212,7 +212,7 @@ maxLength36
 
 <summary>
 
-selector: optional object {exclude, include }
+selector: optional object { exclude, include }
 
 Select operations covered by this rule.
 
@@ -224,7 +224,7 @@ For details on selectors, see the <a href="https://developers.cloudflare.com/api
 
 <summary>
 
-exclude: optional array of object {operation\_ids }
+exclude: optional array of object { operation\_ids }
 
 Ignore operations that were otherwise included by <code>include</code>.
 
@@ -244,7 +244,7 @@ Excluded operation IDs.
 
 <summary>
 
-include: optional array of object {host }
+include: optional array of object { host }
 
 Select all matching operations.
 
@@ -300,7 +300,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -342,7 +342,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -372,7 +372,7 @@ A Token Validation rule that can enforce security policies using JWT Tokens.
 
 <summary>
 
-action: "log"or "block"
+action: "log" or "block"
 
 Action to take on requests that match operations included in <code>selector</code> and fail <code>expression</code>.
 
@@ -418,7 +418,7 @@ For details on expressions, see the <a href="https://developers.cloudflare.com/a
 
 <summary>
 
-selector: object {exclude, include }
+selector: object { exclude, include }
 
 Select operations covered by this rule.
 
@@ -430,7 +430,7 @@ For details on selectors, see the <a href="https://developers.cloudflare.com/api
 
 <summary>
 
-exclude: optional array of object {operation\_ids }
+exclude: optional array of object { operation\_ids }
 
 Ignore operations that were otherwise included by <code>include</code>.
 
@@ -450,7 +450,7 @@ Excluded operation IDs.
 
 <summary>
 
-include: optional array of object {host }
+include: optional array of object { host }
 
 Select all matching operations.
 

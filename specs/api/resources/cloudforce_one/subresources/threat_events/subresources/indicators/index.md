@@ -30,7 +30,7 @@ GET/accounts/{account\_id}/cloudforce-one/events/indicators
 
 <summary>
 
-IndicatorListResponse object {properties, type }
+IndicatorListResponse object { properties, type }
 
 </summary>
 
@@ -38,7 +38,7 @@ IndicatorListResponse object {properties, type }
 
 <summary>
 
-properties: object {completeness, indicators, pagination }
+properties: object { completeness, indicators, pagination }
 
 </summary>
 
@@ -46,7 +46,7 @@ properties: object {completeness, indicators, pagination }
 
 <summary>
 
-completeness: object {properties, type }
+completeness: object { properties, type }
 
 </summary>
 
@@ -54,7 +54,7 @@ completeness: object {properties, type }
 
 <summary>
 
-properties: object {complete, failedDatasets, failedShards, warnings }
+properties: object { complete, failedDatasets, failedShards, warnings }
 
 </summary>
 
@@ -62,7 +62,7 @@ properties: object {complete, failedDatasets, failedShards, warnings }
 
 <summary>
 
-complete: object {type }
+complete: object { type }
 
 </summary>
 
@@ -78,7 +78,7 @@ type: string
 
 <summary>
 
-failedDatasets: object {items, type }
+failedDatasets: object { items, type }
 
 </summary>
 
@@ -86,85 +86,9 @@ failedDatasets: object {items, type }
 
 <summary>
 
-items: object {type }
+items: object { type }
 
 </summary>
-
-type: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-type: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-failedShards: object {items, type }
-
-</summary>
-
-<details>
-
-<summary>
-
-items: object {properties, type }
-
-</summary>
-
-<details>
-
-<summary>
-
-properties: object {datasetId, shardId }
-
-</summary>
-
-<details>
-
-<summary>
-
-datasetId: object {type }
-
-</summary>
-
-type: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-shardId: object {type }
-
-</summary>
-
-type: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
 
 type: string
 
@@ -186,7 +110,7 @@ type: string
 
 <summary>
 
-warnings: object {items, type }
+failedShards: object { items, type }
 
 </summary>
 
@@ -194,7 +118,83 @@ warnings: object {items, type }
 
 <summary>
 
-items: object {type }
+items: object { properties, type }
+
+</summary>
+
+<details>
+
+<summary>
+
+properties: object { datasetId, shardId }
+
+</summary>
+
+<details>
+
+<summary>
+
+datasetId: object { type }
+
+</summary>
+
+type: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+shardId: object { type }
+
+</summary>
+
+type: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+type: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+type: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+warnings: object { items, type }
+
+</summary>
+
+<details>
+
+<summary>
+
+items: object { type }
 
 </summary>
 
@@ -230,7 +230,7 @@ type: string
 
 <summary>
 
-indicators: object {items, type }
+indicators: object { items, type }
 
 </summary>
 
@@ -238,7 +238,7 @@ indicators: object {items, type }
 
 <summary>
 
-items: object {createdAt, indicatorType, sources, 8 more }
+items: object { createdAt, indicatorType, sources, 8 more }
 
 </summary>
 
@@ -256,7 +256,7 @@ indicatorType: string
 
 <summary>
 
-sources: array of object {resourceId, resourceType, system, title }
+sources: array of object { resourceId, resourceType, system, title }
 
 RSS article sources from which this indicator was extracted.
 
@@ -310,7 +310,7 @@ The dataset ID this indicator belongs to. Included in list responses.
 
 <summary>
 
-relatedEvents: optional array of object {datasetId, eventId, eventDate }
+relatedEvents: optional array of object { datasetId, eventId, eventDate }
 
 Related events, capped by <code>relatedEventsLimit</code> (default 2). Check <code>relatedEventsHasMore</code> to detect a capped list; pass <code>relatedEventsLimit=-1</code> to retrieve all of them.
 
@@ -344,7 +344,7 @@ True when this indicator appears in more events than <code>relatedEvents</code> 
 
 <summary>
 
-tags: optional array of object {categoryId, categoryName, uuid, value }
+tags: optional array of object { categoryId, categoryName, uuid, value }
 
 </summary>
 
@@ -392,7 +392,7 @@ type: string
 
 <summary>
 
-pagination: object {properties, type }
+pagination: object { properties, type }
 
 </summary>
 
@@ -400,7 +400,7 @@ pagination: object {properties, type }
 
 <summary>
 
-properties: object {count, cursor, has\_more, 4 more }
+properties: object { count, cursor, has\_more, 4 more }
 
 </summary>
 
@@ -408,7 +408,7 @@ properties: object {count, cursor, has\_more, 4 more }
 
 <summary>
 
-count: object {type }
+count: object { type }
 
 </summary>
 
@@ -424,7 +424,7 @@ type: string
 
 <summary>
 
-cursor: object {description, nullable, type }
+cursor: object { description, nullable, type }
 
 </summary>
 
@@ -448,7 +448,7 @@ type: string
 
 <summary>
 
-has\_more: object {description, type }
+has\_more: object { description, type }
 
 </summary>
 
@@ -468,7 +468,7 @@ type: string
 
 <summary>
 
-page: object {type }
+page: object { type }
 
 </summary>
 
@@ -484,7 +484,7 @@ type: string
 
 <summary>
 
-per\_page: object {type }
+per\_page: object { type }
 
 </summary>
 
@@ -500,7 +500,7 @@ type: string
 
 <summary>
 
-total\_count: object {description, nullable, type }
+total\_count: object { description, nullable, type }
 
 </summary>
 
@@ -524,7 +524,7 @@ type: string
 
 <summary>
 
-total\_count\_is\_exact: object {description, type }
+total\_count\_is\_exact: object { description, type }
 
 </summary>
 
@@ -576,7 +576,7 @@ GET/accounts/{account\_id}/cloudforce-one/events/indicators/aggregate
 
 <summary>
 
-AggregateListResponse object {aggregateBy, aggregations, failedDatasets, total }
+AggregateListResponse object { aggregateBy, aggregations, failedDatasets, total }
 
 </summary>
 
@@ -590,7 +590,7 @@ Column(s) that were aggregated by
 
 <summary>
 
-aggregations: array of object {count }
+aggregations: array of object { count }
 
 Array of aggregation results with dynamic fields based on aggregateBy columns
 
@@ -634,7 +634,7 @@ GET/accounts/{account\_id}/cloudforce-one/events/indicator-types
 
 <summary>
 
-TypeListResponse object {items, type }
+TypeListResponse object { items, type }
 
 </summary>
 
@@ -642,7 +642,7 @@ TypeListResponse object {items, type }
 
 <summary>
 
-items: object {type }
+items: object { type }
 
 </summary>
 
@@ -680,7 +680,7 @@ GET/accounts/{account\_id}/cloudforce-one/events/dataset/{dataset\_id}/indicator
 
 <summary>
 
-ByDatasetListResponse object {indicators, pagination }
+ByDatasetListResponse object { indicators, pagination }
 
 </summary>
 
@@ -688,7 +688,7 @@ ByDatasetListResponse object {indicators, pagination }
 
 <summary>
 
-indicators: array of object {createdAt, indicatorType, sources, 8 more }
+indicators: array of object { createdAt, indicatorType, sources, 8 more }
 
 </summary>
 
@@ -706,7 +706,7 @@ indicatorType: string
 
 <summary>
 
-sources: array of object {resourceId, resourceType, system, title }
+sources: array of object { resourceId, resourceType, system, title }
 
 RSS article sources from which this indicator was extracted.
 
@@ -760,7 +760,7 @@ The dataset ID this indicator belongs to. Included in list responses.
 
 <summary>
 
-relatedEvents: optional array of object {datasetId, eventId, eventDate }
+relatedEvents: optional array of object { datasetId, eventId, eventDate }
 
 Related events, capped by <code>relatedEventsLimit</code> (default 2). Check <code>relatedEventsHasMore</code> to detect a capped list; pass <code>relatedEventsLimit=-1</code> to retrieve all of them.
 
@@ -794,7 +794,7 @@ True when this indicator appears in more events than <code>relatedEvents</code> 
 
 <summary>
 
-tags: optional array of object {categoryId, categoryName, uuid, value }
+tags: optional array of object { categoryId, categoryName, uuid, value }
 
 </summary>
 
@@ -834,7 +834,7 @@ Traffic Light Protocol designation. UPPERCASE. Possible values: CLEAR, GREEN, AM
 
 <summary>
 
-pagination: object {page, pageSize, totalCount, totalPages }
+pagination: object { page, pageSize, totalCount, totalPages }
 
 </summary>
 
@@ -866,7 +866,7 @@ totalPages: number
 
 <summary>
 
-ByDatasetGetResponse object {createdAt, indicatorType, updatedAt, 7 more }
+ByDatasetGetResponse object { createdAt, indicatorType, updatedAt, 7 more }
 
 </summary>
 
@@ -904,7 +904,7 @@ The dataset ID this indicator belongs to. Included in list responses.
 
 <summary>
 
-relatedEvents: optional array of object {datasetId, eventId, eventDate }
+relatedEvents: optional array of object { datasetId, eventId, eventDate }
 
 Related events, capped by <code>relatedEventsLimit</code> (default 2). Check <code>relatedEventsHasMore</code> to detect a capped list; pass <code>relatedEventsLimit=-1</code> to retrieve all of them.
 
@@ -938,7 +938,7 @@ True when this indicator appears in more events than <code>relatedEvents</code> 
 
 <summary>
 
-tags: optional array of object {categoryId, categoryName, uuid, value }
+tags: optional array of object { categoryId, categoryName, uuid, value }
 
 </summary>
 

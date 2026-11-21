@@ -34,7 +34,7 @@ GET/accounts/{account\_id}/subscriptions/{subscription\_identifier}/cancel-reaso
 
 <summary>
 
-CancelReasonCreateResponse object {id, other, reason\_code, 2 more }
+CancelReasonCreateResponse object { id, other, reason\_code, 2 more }
 
 </summary>
 
@@ -78,7 +78,7 @@ The subscription identifier.
 
 <summary>
 
-CancelReasonGetResponse object {id, other, reason\_code, 2 more }
+CancelReasonGetResponse object { id, other, reason\_code, 2 more }
 
 </summary>
 

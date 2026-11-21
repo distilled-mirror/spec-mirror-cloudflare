@@ -94,7 +94,7 @@ name: optional string
 
 <summary>
 
-sensitivity\_levels: optional array of object {group\_id, level\_id }
+sensitivity\_levels: optional array of object { group\_id, level\_id }
 
 </summary>
 
@@ -120,7 +120,7 @@ formatuuid
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -142,7 +142,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -162,7 +162,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -184,7 +184,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -210,7 +210,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, created\_at, data\_tags, 5 more }
+result: optional object { id, created\_at, data\_tags, 5 more }
 
 </summary>
 
@@ -242,7 +242,7 @@ name: string
 
 <summary>
 
-sensitivity\_levels: array of object {group\_id, level\_id }
+sensitivity\_levels: array of object { group\_id, level\_id }
 
 </summary>
 

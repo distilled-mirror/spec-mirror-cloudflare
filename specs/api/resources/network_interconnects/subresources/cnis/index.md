@@ -44,7 +44,7 @@ DELETE/accounts/{account\_id}/cni/cnis/{cni}
 
 <summary>
 
-CNIListResponse object {items, next }
+CNIListResponse object { items, next }
 
 </summary>
 
@@ -52,7 +52,7 @@ CNIListResponse object {items, next }
 
 <summary>
 
-items: array of object {id, account, cust\_ip, 5 more }
+items: array of object { id, account, cust\_ip, 5 more }
 
 </summary>
 
@@ -88,7 +88,7 @@ Interconnect identifier hosting this CNI
 
 <summary>
 
-magic: object {conduit\_name, description, mtu }
+magic: object { conduit\_name, description, mtu }
 
 </summary>
 
@@ -124,7 +124,7 @@ formatA.B.C.D/N
 
 <summary>
 
-bgp: optional object {customer\_asn, extra\_prefixes, md5\_key }
+bgp: optional object { customer\_asn, extra\_prefixes, md5\_key }
 
 BGP Control settings. For non-GCP CNIs, null disables BGP Control. GCP CNIs require BGP configuration, so explicit null is rejected; omission preserves stored settings or repairs missing settings with the Google defaults.
 
@@ -169,7 +169,7 @@ In other words, MD5 keys may contain any printable ASCII character aside from ne
 
 <summary>
 
-bgp\_mode: optional "dynamic\_route\_exchange"or "advertise\_only"
+bgp\_mode: optional "dynamic\_route\_exchange" or "advertise\_only"
 
 Controls the customer-facing route exchange behavior. Omitting this field during an update preserves the current mode. When enabling BGP on a BGP-disabled CNI, an omitted or null mode defaults to AdvertiseOnly. Otherwise, null clears the explicitly selected mode.
 
@@ -207,7 +207,7 @@ formatint32
 
 <summary>
 
-CNIGetResponse object {id, account, cust\_ip, 5 more }
+CNIGetResponse object { id, account, cust\_ip, 5 more }
 
 </summary>
 
@@ -243,7 +243,7 @@ Interconnect identifier hosting this CNI
 
 <summary>
 
-magic: object {conduit\_name, description, mtu }
+magic: object { conduit\_name, description, mtu }
 
 </summary>
 
@@ -279,7 +279,7 @@ formatA.B.C.D/N
 
 <summary>
 
-bgp: optional object {customer\_asn, extra\_prefixes, md5\_key }
+bgp: optional object { customer\_asn, extra\_prefixes, md5\_key }
 
 BGP Control settings. For non-GCP CNIs, null disables BGP Control. GCP CNIs require BGP configuration, so explicit null is rejected; omission preserves stored settings or repairs missing settings with the Google defaults.
 
@@ -324,7 +324,7 @@ In other words, MD5 keys may contain any printable ASCII character aside from ne
 
 <summary>
 
-bgp\_mode: optional "dynamic\_route\_exchange"or "advertise\_only"
+bgp\_mode: optional "dynamic\_route\_exchange" or "advertise\_only"
 
 Controls the customer-facing route exchange behavior. Omitting this field during an update preserves the current mode. When enabling BGP on a BGP-disabled CNI, an omitted or null mode defaults to AdvertiseOnly. Otherwise, null clears the explicitly selected mode.
 
@@ -352,7 +352,7 @@ One of the following:
 
 <summary>
 
-CNICreateResponse object {id, account, cust\_ip, 5 more }
+CNICreateResponse object { id, account, cust\_ip, 5 more }
 
 </summary>
 
@@ -388,7 +388,7 @@ Interconnect identifier hosting this CNI
 
 <summary>
 
-magic: object {conduit\_name, description, mtu }
+magic: object { conduit\_name, description, mtu }
 
 </summary>
 
@@ -424,7 +424,7 @@ formatA.B.C.D/N
 
 <summary>
 
-bgp: optional object {customer\_asn, extra\_prefixes, md5\_key }
+bgp: optional object { customer\_asn, extra\_prefixes, md5\_key }
 
 BGP Control settings. For non-GCP CNIs, null disables BGP Control. GCP CNIs require BGP configuration, so explicit null is rejected; omission preserves stored settings or repairs missing settings with the Google defaults.
 
@@ -469,7 +469,7 @@ In other words, MD5 keys may contain any printable ASCII character aside from ne
 
 <summary>
 
-bgp\_mode: optional "dynamic\_route\_exchange"or "advertise\_only"
+bgp\_mode: optional "dynamic\_route\_exchange" or "advertise\_only"
 
 Controls the customer-facing route exchange behavior. Omitting this field during an update preserves the current mode. When enabling BGP on a BGP-disabled CNI, an omitted or null mode defaults to AdvertiseOnly. Otherwise, null clears the explicitly selected mode.
 
@@ -497,7 +497,7 @@ One of the following:
 
 <summary>
 
-CNIUpdateResponse object {id, account, cust\_ip, 5 more }
+CNIUpdateResponse object { id, account, cust\_ip, 5 more }
 
 </summary>
 
@@ -533,7 +533,7 @@ Interconnect identifier hosting this CNI
 
 <summary>
 
-magic: object {conduit\_name, description, mtu }
+magic: object { conduit\_name, description, mtu }
 
 </summary>
 
@@ -569,7 +569,7 @@ formatA.B.C.D/N
 
 <summary>
 
-bgp: optional object {customer\_asn, extra\_prefixes, md5\_key }
+bgp: optional object { customer\_asn, extra\_prefixes, md5\_key }
 
 BGP Control settings. For non-GCP CNIs, null disables BGP Control. GCP CNIs require BGP configuration, so explicit null is rejected; omission preserves stored settings or repairs missing settings with the Google defaults.
 
@@ -614,7 +614,7 @@ In other words, MD5 keys may contain any printable ASCII character aside from ne
 
 <summary>
 
-bgp\_mode: optional "dynamic\_route\_exchange"or "advertise\_only"
+bgp\_mode: optional "dynamic\_route\_exchange" or "advertise\_only"
 
 Controls the customer-facing route exchange behavior. Omitting this field during an update preserves the current mode. When enabling BGP on a BGP-disabled CNI, an omitted or null mode defaults to AdvertiseOnly. Otherwise, null clears the explicitly selected mode.
 

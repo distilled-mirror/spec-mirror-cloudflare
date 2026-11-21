@@ -30,7 +30,7 @@ GET/accounts/{account\_id}/zt\_risk\_scoring/summary
 
 <summary>
 
-SummaryGetResponse object {users }
+SummaryGetResponse object { users }
 
 </summary>
 
@@ -38,7 +38,7 @@ SummaryGetResponse object {users }
 
 <summary>
 
-users: array of object {email, event\_count, last\_event, 3 more }
+users: array of object { email, event\_count, last\_event, 3 more }
 
 </summary>
 
@@ -62,7 +62,7 @@ formatdate-time
 
 <summary>
 
-max\_risk\_level: "info"or "low"or "medium"or "high"
+max\_risk\_level: "info" or "low" or "medium" or "high"
 
 </summary>
 

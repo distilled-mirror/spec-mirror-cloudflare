@@ -30,7 +30,7 @@ GET/accounts/{account\_id}/logpush/transformers/{transformer\_id}/versions
 
 <summary>
 
-VersionListResponse object {id, created\_at, version }
+VersionListResponse object { id, created\_at, version }
 
 </summary>
 

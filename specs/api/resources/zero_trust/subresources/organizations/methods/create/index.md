@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Access: Organizations, Identity Providers, and Groups Write`
+`Access: Organizations Write``Zero Trust Write``Access: Organizations, Identity Providers, and Groups Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -162,7 +162,7 @@ The text color on your login page.
 
 <summary>
 
-mfa\_config: optional object {allowed\_authenticators, amr\_matching\_session\_duration, required\_aaguids, session\_duration }
+mfa\_config: optional object { allowed\_authenticators, amr\_matching\_session\_duration, required\_aaguids, session\_duration }
 
 Configures multi-factor authentication (MFA) settings for an organization.
 
@@ -172,7 +172,7 @@ Configures multi-factor authentication (MFA) settings for an organization.
 
 <summary>
 
-allowed\_authenticators: optional array of "totp"or "biometrics"or "security\_key"or 2 more
+allowed\_authenticators: optional array of "totp" or "biometrics" or "security\_key" or 2 more
 
 Lists the MFA methods that users can authenticate with. The <code>piv_key</code> and <code>ssh_fido2_key</code> values are supported only for infrastructure applications.
 
@@ -232,7 +232,7 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 
 <summary>
 
-mfa\_piv\_key\_requirements: optional object {pin\_policy, require\_fips\_device, ssh\_key\_size, 2 more }
+mfa\_piv\_key\_requirements: optional object { pin\_policy, require\_fips\_device, ssh\_key\_size, 2 more }
 
 Configures PIV key requirements for MFA using hardware security keys.
 
@@ -242,7 +242,7 @@ Configures PIV key requirements for MFA using hardware security keys.
 
 <summary>
 
-pin\_policy: optional "never"or "once"or "always"
+pin\_policy: optional "never" or "once" or "always"
 
 Defines when a PIN is required to use the SSH key. Valid values: <code>never</code> (no PIN required), <code>once</code> (PIN required once per session), <code>always</code> (PIN required for each use).
 
@@ -276,7 +276,7 @@ Requires the PIV key to be stored on a FIPS 140-2 Level 1 or higher validated de
 
 <summary>
 
-ssh\_key\_size: optional array of 256or 384or 521or 3 more
+ssh\_key\_size: optional array of 256 or 384 or 521 or 3 more
 
 Specifies the allowed SSH key sizes in bits. Valid sizes depend on key type. Ed25519 has a fixed key size and does not accept this parameter.
 
@@ -316,7 +316,7 @@ One of the following:
 
 <summary>
 
-ssh\_key\_type: optional array of "ecdsa"or "ed25519"or "rsa"
+ssh\_key\_type: optional array of "ecdsa" or "ed25519" or "rsa"
 
 Specifies the allowed SSH key types. Valid values are <code>ecdsa</code>, <code>ed25519</code>, and <code>rsa</code>.
 
@@ -344,7 +344,7 @@ One of the following:
 
 <summary>
 
-touch\_policy: optional "never"or "always"or "cached"
+touch\_policy: optional "never" or "always" or "cached"
 
 Defines when physical touch is required to use the SSH key. Valid values: <code>never</code> (no touch required), <code>always</code> (touch required for each use), <code>cached</code> (touch cached for 15 seconds).
 
@@ -388,7 +388,7 @@ The name of your Zero Trust organization. When omitted on creation, defaults to 
 
 <summary>
 
-service\_token\_inactivity: optional object {action, enabled, inactivity\_threshold\_days }
+service\_token\_inactivity: optional object { action, enabled, inactivity\_threshold\_days }
 
 Configures automatic enforcement for inactive service tokens. A service token is inactive if no policy references it, and it has not successfully authenticated with an Access application during the selected inactivity period. This setting applies to every service token in your Zero Trust account.
 
@@ -398,7 +398,7 @@ Configures automatic enforcement for inactive service tokens. A service token is
 
 <summary>
 
-action: "disable"or "delete"
+action: "disable" or "delete"
 
 The action applied to an inactive service token.
 
@@ -480,7 +480,7 @@ The amount of time that tokens issued for applications will be valid. Must be in
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -502,7 +502,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -522,7 +522,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -544,7 +544,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -596,7 +596,7 @@ When set to <code>true</code>, users skip the identity provider selection step d
 
 <summary>
 
-custom\_pages: optional object {forbidden, identity\_denied }
+custom\_pages: optional object { forbidden, identity\_denied }
 
 </summary>
 
@@ -686,7 +686,7 @@ The text color on your login page.
 
 <summary>
 
-mfa\_config: optional object {allowed\_authenticators, amr\_matching\_session\_duration, required\_aaguids, session\_duration }
+mfa\_config: optional object { allowed\_authenticators, amr\_matching\_session\_duration, required\_aaguids, session\_duration }
 
 Configures multi-factor authentication (MFA) settings for an organization.
 
@@ -696,7 +696,7 @@ Configures multi-factor authentication (MFA) settings for an organization.
 
 <summary>
 
-allowed\_authenticators: optional array of "totp"or "biometrics"or "security\_key"or 2 more
+allowed\_authenticators: optional array of "totp" or "biometrics" or "security\_key" or 2 more
 
 Lists the MFA methods that users can authenticate with. The <code>piv_key</code> and <code>ssh_fido2_key</code> values are supported only for infrastructure applications.
 
@@ -756,7 +756,7 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 
 <summary>
 
-mfa\_piv\_key\_requirements: optional object {pin\_policy, require\_fips\_device, ssh\_key\_size, 2 more }
+mfa\_piv\_key\_requirements: optional object { pin\_policy, require\_fips\_device, ssh\_key\_size, 2 more }
 
 Configures PIV key requirements for MFA using hardware security keys.
 
@@ -766,7 +766,7 @@ Configures PIV key requirements for MFA using hardware security keys.
 
 <summary>
 
-pin\_policy: optional "never"or "once"or "always"
+pin\_policy: optional "never" or "once" or "always"
 
 Defines when a PIN is required to use the SSH key. Valid values: <code>never</code> (no PIN required), <code>once</code> (PIN required once per session), <code>always</code> (PIN required for each use).
 
@@ -800,7 +800,7 @@ Requires the PIV key to be stored on a FIPS 140-2 Level 1 or higher validated de
 
 <summary>
 
-ssh\_key\_size: optional array of 256or 384or 521or 3 more
+ssh\_key\_size: optional array of 256 or 384 or 521 or 3 more
 
 Specifies the allowed SSH key sizes in bits. Valid sizes depend on key type. Ed25519 has a fixed key size and does not accept this parameter.
 
@@ -840,7 +840,7 @@ One of the following:
 
 <summary>
 
-ssh\_key\_type: optional array of "ecdsa"or "ed25519"or "rsa"
+ssh\_key\_type: optional array of "ecdsa" or "ed25519" or "rsa"
 
 Specifies the allowed SSH key types. Valid values are <code>ecdsa</code>, <code>ed25519</code>, and <code>rsa</code>.
 
@@ -868,7 +868,7 @@ One of the following:
 
 <summary>
 
-touch\_policy: optional "never"or "always"or "cached"
+touch\_policy: optional "never" or "always" or "cached"
 
 Defines when physical touch is required to use the SSH key. Valid values: <code>never</code> (no touch required), <code>always</code> (touch required for each use), <code>cached</code> (touch cached for 15 seconds).
 
@@ -912,7 +912,7 @@ The name of your Zero Trust organization. When omitted on creation, defaults to 
 
 <summary>
 
-service\_token\_inactivity: optional object {action, enabled, inactivity\_threshold\_days }
+service\_token\_inactivity: optional object { action, enabled, inactivity\_threshold\_days }
 
 Configures automatic enforcement for inactive service tokens. A service token is inactive if no policy references it, and it has not successfully authenticated with an Access application during the selected inactivity period. This setting applies to every service token in your Zero Trust account.
 
@@ -922,7 +922,7 @@ Configures automatic enforcement for inactive service tokens. A service token is
 
 <summary>
 
-action: "disable"or "delete"
+action: "disable" or "delete"
 
 The action applied to an inactive service token.
 

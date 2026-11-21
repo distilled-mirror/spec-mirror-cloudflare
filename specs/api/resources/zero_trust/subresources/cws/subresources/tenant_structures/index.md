@@ -46,7 +46,7 @@ DELETE/accounts/{account\_id}/cws/tenant-structures/{structure\_id}
 
 <summary>
 
-TenantStructure object {id, application, created\_at, 3 more }
+TenantStructure object { id, application, created\_at, 3 more }
 
 </summary>
 
@@ -62,7 +62,7 @@ formatuuid
 
 <summary>
 
-application: "aws"or "cloudflare"
+application: "aws" or "cloudflare"
 
 Platform this structure models. Immutable after creation; determines valid node kinds and identifier formats.
 
@@ -122,7 +122,7 @@ minLength1
 
 <summary>
 
-TenantStructureDeleteResponse object {id }
+TenantStructureDeleteResponse object { id }
 
 </summary>
 
@@ -168,7 +168,7 @@ POST/accounts/{account\_id}/cws/tenant-structures/{structure\_id}/nodes/batch
 
 <summary>
 
-TenantStructureNode object {id, created\_at, native\_id, 4 more }
+TenantStructureNode object { id, created\_at, native\_id, 4 more }
 
 </summary>
 
@@ -236,7 +236,7 @@ maxLength255
 
 <summary>
 
-NodeDeleteResponse object {id }
+NodeDeleteResponse object { id }
 
 </summary>
 
@@ -254,7 +254,7 @@ formatuuid
 
 <summary>
 
-NodeBatchResponse object {created, deleted, updated }
+NodeBatchResponse object { created, deleted, updated }
 
 </summary>
 
@@ -330,7 +330,7 @@ maxLength255
 
 <summary>
 
-deleted: array of object {id }
+deleted: array of object { id }
 
 </summary>
 

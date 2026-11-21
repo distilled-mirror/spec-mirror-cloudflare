@@ -28,7 +28,7 @@ PATCH/accounts/{account\_id}/access/seats
 
 <summary>
 
-Seat object {access\_seat, created\_at, gateway\_seat, 2 more }
+Seat object { access\_seat, created\_at, gateway\_seat, 2 more }
 
 </summary>
 

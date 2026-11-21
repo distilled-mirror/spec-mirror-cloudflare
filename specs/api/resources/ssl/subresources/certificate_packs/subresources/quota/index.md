@@ -30,7 +30,7 @@ GET/zones/{zone\_id}/ssl/certificate\_packs/quota
 
 <summary>
 
-QuotaGetResponse object {advanced }
+QuotaGetResponse object { advanced }
 
 </summary>
 
@@ -38,7 +38,7 @@ QuotaGetResponse object {advanced }
 
 <summary>
 
-advanced: optional object {allocated, used }
+advanced: optional object { allocated, used }
 
 </summary>
 

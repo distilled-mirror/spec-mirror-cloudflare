@@ -52,7 +52,7 @@ POST/accounts/{account\_id}/data-security/posture/finding\_types/validate
 
 <summary>
 
-FindingTypeListResponse object {id, category, name, 14 more }
+FindingTypeListResponse object { id, category, name, 14 more }
 
 Basic finding type information.
 
@@ -70,7 +70,7 @@ formatuuid
 
 <summary>
 
-category: object {observation, product, type }
+category: object { observation, product, type }
 
 Category information for a finding.
 
@@ -80,7 +80,7 @@ Category information for a finding.
 
 <summary>
 
-observation: "Issue"or "Insight"or "Activity"
+observation: "Issue" or "Insight" or "Activity"
 
 The type of the observation.
 
@@ -108,7 +108,7 @@ One of the following:
 
 <summary>
 
-product: "SaaS"or "Cloud"
+product: "SaaS" or "Cloud"
 
 The product category.
 
@@ -132,7 +132,7 @@ One of the following:
 
 <summary>
 
-type: "Content"or "Posture"
+type: "Content" or "Posture"
 
 The type of the finding category.
 
@@ -166,7 +166,7 @@ The name of the finding.
 
 <summary>
 
-severity: "Critical"or "High"or "Medium"or "Low"
+severity: "Critical" or "High" or "Medium" or "Low"
 
 Default severity used when no integration-specific severity override exists.
 
@@ -216,7 +216,7 @@ Asset class the finding type’s policy evaluates.
 
 <summary>
 
-asset\_vendor: optional "ANTHROPIC"or "AWS"or "BITBUCKET"or 13 more
+asset\_vendor: optional "ANTHROPIC" or "AWS" or "BITBUCKET" or 13 more
 
 Canonical vendor enum value.
 
@@ -330,7 +330,7 @@ formatint64
 
 <summary>
 
-origin: optional "system"or "custom"
+origin: optional "system" or "custom"
 
 Whether the finding type is system-managed or customer-created.
 
@@ -380,7 +380,7 @@ formatuint32
 
 <summary>
 
-FindingTypeCreateResponse object {id, applies\_to\_all\_integrations, asset\_class, 14 more }
+FindingTypeCreateResponse object { id, applies\_to\_all\_integrations, asset\_class, 14 more }
 
 Basic finding type information.
 
@@ -410,7 +410,7 @@ Asset class the finding type’s policy evaluates.
 
 <summary>
 
-asset\_vendor: "ANTHROPIC"or "AWS"or "BITBUCKET"or 13 more
+asset\_vendor: "ANTHROPIC" or "AWS" or "BITBUCKET" or 13 more
 
 Canonical vendor enum value.
 
@@ -490,7 +490,7 @@ One of the following:
 
 <summary>
 
-category: object {observation, product, type }
+category: object { observation, product, type }
 
 Category information for a finding.
 
@@ -500,7 +500,7 @@ Category information for a finding.
 
 <summary>
 
-observation: "Issue"or "Insight"or "Activity"
+observation: "Issue" or "Insight" or "Activity"
 
 The type of the observation.
 
@@ -528,7 +528,7 @@ One of the following:
 
 <summary>
 
-product: "SaaS"or "Cloud"
+product: "SaaS" or "Cloud"
 
 The product category.
 
@@ -552,7 +552,7 @@ One of the following:
 
 <summary>
 
-type: "Content"or "Posture"
+type: "Content" or "Posture"
 
 The type of the finding category.
 
@@ -606,7 +606,7 @@ The name of the finding.
 
 <summary>
 
-origin: "system"or "custom"
+origin: "system" or "custom"
 
 Whether the finding type is system-managed or customer-created.
 
@@ -630,7 +630,7 @@ One of the following:
 
 <summary>
 
-severity: "Critical"or "High"or "Medium"or "Low"
+severity: "Critical" or "High" or "Medium" or "Low"
 
 Default severity used when no integration-specific severity override exists.
 
@@ -708,7 +708,7 @@ Whether evaluation of this finding type is suspended by an operator. Present onl
 
 <summary>
 
-FindingTypeGetResponse object {id, category, name, 14 more }
+FindingTypeGetResponse object { id, category, name, 14 more }
 
 Basic finding type information.
 
@@ -726,7 +726,7 @@ formatuuid
 
 <summary>
 
-category: object {observation, product, type }
+category: object { observation, product, type }
 
 Category information for a finding.
 
@@ -736,7 +736,7 @@ Category information for a finding.
 
 <summary>
 
-observation: "Issue"or "Insight"or "Activity"
+observation: "Issue" or "Insight" or "Activity"
 
 The type of the observation.
 
@@ -764,7 +764,7 @@ One of the following:
 
 <summary>
 
-product: "SaaS"or "Cloud"
+product: "SaaS" or "Cloud"
 
 The product category.
 
@@ -788,7 +788,7 @@ One of the following:
 
 <summary>
 
-type: "Content"or "Posture"
+type: "Content" or "Posture"
 
 The type of the finding category.
 
@@ -822,7 +822,7 @@ The name of the finding.
 
 <summary>
 
-severity: "Critical"or "High"or "Medium"or "Low"
+severity: "Critical" or "High" or "Medium" or "Low"
 
 Default severity used when no integration-specific severity override exists.
 
@@ -872,7 +872,7 @@ Asset class the finding type’s policy evaluates.
 
 <summary>
 
-asset\_vendor: optional "ANTHROPIC"or "AWS"or "BITBUCKET"or 13 more
+asset\_vendor: optional "ANTHROPIC" or "AWS" or "BITBUCKET" or 13 more
 
 Canonical vendor enum value.
 
@@ -986,7 +986,7 @@ formatint64
 
 <summary>
 
-origin: optional "system"or "custom"
+origin: optional "system" or "custom"
 
 Whether the finding type is system-managed or customer-created.
 
@@ -1036,7 +1036,7 @@ formatuint32
 
 <summary>
 
-FindingTypeUpdateResponse object {id, applies\_to\_all\_integrations, asset\_class, 14 more }
+FindingTypeUpdateResponse object { id, applies\_to\_all\_integrations, asset\_class, 14 more }
 
 Basic finding type information.
 
@@ -1066,7 +1066,7 @@ Asset class the finding type’s policy evaluates.
 
 <summary>
 
-asset\_vendor: "ANTHROPIC"or "AWS"or "BITBUCKET"or 13 more
+asset\_vendor: "ANTHROPIC" or "AWS" or "BITBUCKET" or 13 more
 
 Canonical vendor enum value.
 
@@ -1146,7 +1146,7 @@ One of the following:
 
 <summary>
 
-category: object {observation, product, type }
+category: object { observation, product, type }
 
 Category information for a finding.
 
@@ -1156,7 +1156,7 @@ Category information for a finding.
 
 <summary>
 
-observation: "Issue"or "Insight"or "Activity"
+observation: "Issue" or "Insight" or "Activity"
 
 The type of the observation.
 
@@ -1184,7 +1184,7 @@ One of the following:
 
 <summary>
 
-product: "SaaS"or "Cloud"
+product: "SaaS" or "Cloud"
 
 The product category.
 
@@ -1208,7 +1208,7 @@ One of the following:
 
 <summary>
 
-type: "Content"or "Posture"
+type: "Content" or "Posture"
 
 The type of the finding category.
 
@@ -1262,7 +1262,7 @@ The name of the finding.
 
 <summary>
 
-origin: "system"or "custom"
+origin: "system" or "custom"
 
 Whether the finding type is system-managed or customer-created.
 
@@ -1286,7 +1286,7 @@ One of the following:
 
 <summary>
 
-severity: "Critical"or "High"or "Medium"or "Low"
+severity: "Critical" or "High" or "Medium" or "Low"
 
 Default severity used when no integration-specific severity override exists.
 
@@ -1364,7 +1364,7 @@ Whether evaluation of this finding type is suspended by an operator. Present onl
 
 <summary>
 
-FindingTypeValidateResponse object {errors, valid }
+FindingTypeValidateResponse object { errors, valid }
 
 </summary>
 
@@ -1372,7 +1372,7 @@ FindingTypeValidateResponse object {errors, valid }
 
 <summary>
 
-errors: array of object {detail, message, code, 3 more }
+errors: array of object { detail, message, code, 3 more }
 
 Every problem found with the candidate, so all of them can be surfaced at once. Empty when <code>valid</code> is true. Problems without a location come first, followed by located problems ordered by <code>line</code>, then <code>column</code>.
 
@@ -1440,7 +1440,7 @@ GET/accounts/{account\_id}/data-security/posture/finding\_types/{finding\_type\_
 
 <summary>
 
-RemediationTypeListResponse object {id, description, display\_name, 2 more }
+RemediationTypeListResponse object { id, description, display\_name, 2 more }
 
 Information about a remediation type.
 

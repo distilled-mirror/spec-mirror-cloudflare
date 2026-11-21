@@ -38,7 +38,7 @@ POST/accounts/{account\_id}/gateway/audit\_ssh\_settings/rotate\_seed
 
 <summary>
 
-GatewaySettings object {created\_at, public\_key, seed\_id, updated\_at }
+GatewaySettings object { created\_at, public\_key, seed\_id, updated\_at }
 
 </summary>
 

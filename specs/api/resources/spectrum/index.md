@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 <summary>
 
-DNS object {name, type }
+DNS object { name, type }
 
 The name and type of DNS record for the Spectrum application.
 
@@ -40,7 +40,7 @@ formathostname
 
 <summary>
 
-type: optional "CNAME"or "ADDRESS"
+type: optional "CNAME" or "ADDRESS"
 
 The type of DNS record associated with the application.
 
@@ -68,7 +68,7 @@ One of the following:
 
 <summary>
 
-EdgeIPs = object {connectivity, type } or object {ips, type }
+EdgeIPs = object { connectivity, type } or object { ips, type }
 
 The anycast edge IP configuration for the hostname of this application.
 
@@ -80,7 +80,7 @@ One of the following:
 
 <summary>
 
-Dynamic object {connectivity, type }
+Dynamic object { connectivity, type }
 
 </summary>
 
@@ -88,7 +88,7 @@ Dynamic object {connectivity, type }
 
 <summary>
 
-connectivity: optional "all"or "ipv4"or "ipv6"
+connectivity: optional "all" or "ipv4" or "ipv6"
 
 The IP versions supported for inbound connections on Spectrum anycast IPs.
 
@@ -126,7 +126,7 @@ The type of edge IP configuration specified. Dynamically allocated edge IPs use 
 
 <summary>
 
-Static object {ips, type }
+Static object { ips, type }
 
 </summary>
 
@@ -154,7 +154,7 @@ The type of edge IP configuration specified. Statically allocated edge IPs use c
 
 <summary>
 
-OriginDNS object {name, ttl, type }
+OriginDNS object { name, ttl, type }
 
 The name and type of DNS record for the Spectrum application.
 
@@ -180,7 +180,7 @@ minimum600
 
 <summary>
 
-type: optional ""or "A"or "AAAA"or "SRV"
+type: optional "" or "A" or "AAAA" or "SRV"
 
 The type of DNS record associated with the origin. "" is used to specify a combination of A/AAAA records.
 
@@ -216,7 +216,7 @@ One of the following:
 
 <summary>
 
-OriginPort = numberor string
+OriginPort = number or string
 
 The destination port at the origin. Only specified in conjunction with origin\_dns. May use an integer to specify a single origin port, for example <code>1000</code>, or a string to specify a range of origin ports, for example <code>"1000-2000"</code>. Notes: If specifying a port range, the number of ports in the range must match the number of ports specified in the “protocol” field.
 
@@ -252,7 +252,7 @@ GET/zones/{zone\_id}/spectrum/analytics/aggregate/current
 
 <summary>
 
-CurrentGetResponse = array of object {appID, bytesEgress, bytesIngress, 2 more }
+CurrentGetResponse = array of object { appID, bytesEgress, bytesIngress, 2 more }
 
 </summary>
 
@@ -300,7 +300,7 @@ Average duration of connections.
 
 <summary>
 
-Dimension = "event"or "appID"or "coloName"or "ipVersion"
+Dimension = "event" or "appID" or "coloName" or "ipVersion"
 
 </summary>
 
@@ -338,7 +338,7 @@ GET/zones/{zone\_id}/spectrum/analytics/events/bytime
 
 <summary>
 
-BytimeGetResponse object {data, data\_lag, max, 5 more }
+BytimeGetResponse object { data, data\_lag, max, 5 more }
 
 </summary>
 
@@ -346,7 +346,7 @@ BytimeGetResponse object {data, data\_lag, max, 5 more }
 
 <summary>
 
-data: array of object {dimensions, metrics }
+data: array of object { dimensions, metrics }
 
 List of columns returned by the analytics query.
 
@@ -360,7 +360,7 @@ dimensions: optional array of string
 
 <summary>
 
-metrics: optional array of numberor array of array of number
+metrics: optional array of number or array of array of number
 
 </summary>
 
@@ -406,7 +406,7 @@ Minimum result for each selected metrics across all data.
 
 <summary>
 
-query: object {dimensions, filters, limit, 4 more }
+query: object { dimensions, filters, limit, 4 more }
 
 </summary>
 
@@ -476,7 +476,7 @@ Limit number of returned metrics.
 
 <summary>
 
-metrics: optional array of "count"or "bytesIngress"or "bytesEgress"or 4 more
+metrics: optional array of "count" or "bytesIngress" or "bytesEgress" or 4 more
 
 One or more metrics to compute. Options are:
 
@@ -588,7 +588,7 @@ GET/zones/{zone\_id}/spectrum/analytics/events/summary
 
 <summary>
 
-SummaryGetResponse object {data, data\_lag, max, 5 more }
+SummaryGetResponse object { data, data\_lag, max, 5 more }
 
 </summary>
 
@@ -596,7 +596,7 @@ SummaryGetResponse object {data, data\_lag, max, 5 more }
 
 <summary>
 
-data: array of object {dimensions, metrics }
+data: array of object { dimensions, metrics }
 
 List of columns returned by the analytics query.
 
@@ -610,7 +610,7 @@ dimensions: optional array of string
 
 <summary>
 
-metrics: optional array of numberor array of array of number
+metrics: optional array of number or array of array of number
 
 </summary>
 
@@ -656,7 +656,7 @@ Minimum result for each selected metrics across all data.
 
 <summary>
 
-query: object {dimensions, filters, limit, 4 more }
+query: object { dimensions, filters, limit, 4 more }
 
 </summary>
 
@@ -726,7 +726,7 @@ Limit number of returned metrics.
 
 <summary>
 
-metrics: optional array of "count"or "bytesIngress"or "bytesEgress"or 4 more
+metrics: optional array of "count" or "bytesIngress" or "bytesEgress" or 4 more
 
 One or more metrics to compute. Options are:
 
@@ -854,7 +854,7 @@ DELETE/zones/{zone\_id}/spectrum/apps/{app\_id}
 
 <summary>
 
-AppListResponse = object {id, created\_on, dns, 15 more } or object {id, created\_on, dns, 7 more }
+AppListResponse = object { id, created\_on, dns, 15 more } or object { id, created\_on, dns, 7 more }
 
 </summary>
 
@@ -864,7 +864,7 @@ One of the following:
 
 <summary>
 
-SpectrumConfigAppConfig object {id, created\_on, dns, 15 more }
+SpectrumConfigAppConfig object { id, created\_on, dns, 15 more }
 
 </summary>
 
@@ -908,7 +908,7 @@ The port configuration at Cloudflare’s edge. May specify a single port, for ex
 
 <summary>
 
-traffic\_type: "direct"or "http"or "https"or "worker"
+traffic\_type: "direct" or "http" or "https" or "worker"
 
 Determines how data travels from the edge to your origin. When set to “direct”, Spectrum will send traffic directly to your origin, and the application’s type is derived from the <code>protocol</code>. When set to “http” or “https”, Spectrum will apply Cloudflare’s HTTP/HTTPS features as it sends traffic to your origin, and the application type matches this property exactly. When set to “worker”, traffic is sent to the Worker specified by <code>origin_worker_id</code>.
 
@@ -992,7 +992,7 @@ Name of the Worker origin. Omitted when the Worker is not found or its name cann
 
 <summary>
 
-origin\_worker\_status: optional "available"or "not\_found"or "unknown"
+origin\_worker\_status: optional "available" or "not\_found" or "unknown"
 
 Lookup status of the Worker origin. Unknown indicates that its name could not be resolved. Only returned for Worker origins.
 
@@ -1020,7 +1020,7 @@ One of the following:
 
 <summary>
 
-proxy\_protocol: optional "off"or "v1"or "v2"or "simple"
+proxy\_protocol: optional "off" or "v1" or "v2" or "simple"
 
 Enables Proxy Protocol to the origin. Refer to <a href="https://developers.cloudflare.com/spectrum/getting-started/proxy-protocol/">Enable Proxy protocol</a> for implementation details on PROXY Protocol V1, PROXY Protocol V2, and Simple Proxy Protocol.
 
@@ -1052,7 +1052,7 @@ One of the following:
 
 <summary>
 
-tls: optional "off"or "flexible"or "full"or "strict"
+tls: optional "off" or "flexible" or "full" or "strict"
 
 The type of TLS termination associated with the application.
 
@@ -1096,7 +1096,7 @@ formatuuid
 
 <summary>
 
-SpectrumConfigPaygoAppConfig object {id, created\_on, dns, 7 more }
+SpectrumConfigPaygoAppConfig object { id, created\_on, dns, 7 more }
 
 </summary>
 
@@ -1158,7 +1158,7 @@ Name of the Worker origin. Omitted when the Worker is not found or its name cann
 
 <summary>
 
-origin\_worker\_status: optional "available"or "not\_found"or "unknown"
+origin\_worker\_status: optional "available" or "not\_found" or "unknown"
 
 Lookup status of the Worker origin. Unknown indicates that its name could not be resolved. Only returned for Worker origins.
 
@@ -1186,7 +1186,7 @@ One of the following:
 
 <summary>
 
-traffic\_type: optional "direct"or "worker"or string
+traffic\_type: optional "direct" or "worker" or string
 
 Determines how traffic is sent to the origin. If absent or empty, defaults to “direct”. Direct mode uses origin\_direct. Worker mode requires origin\_worker\_id, TCP or UDP with a single port, and CNAME DNS; origin\_worker\_id and origin\_direct are mutually exclusive. A PAYG zone may have at most one Worker application per transport (one TCP and one UDP); creating another for the same transport, or converting another application to Worker while that quota is full, is rejected with error code 11034 and HTTP status 400.
 
@@ -1198,7 +1198,7 @@ One of the following:
 
 <summary>
 
-"direct"or "worker"
+"direct" or "worker"
 
 Determines how traffic is sent to the origin. If absent or empty, defaults to “direct”. Direct mode uses origin\_direct. Worker mode requires origin\_worker\_id, TCP or UDP with a single port, and CNAME DNS; origin\_worker\_id and origin\_direct are mutually exclusive. A PAYG zone may have at most one Worker application per transport (one TCP and one UDP); creating another for the same transport, or converting another application to Worker while that quota is full, is rejected with error code 11034 and HTTP status 400.
 
@@ -1238,7 +1238,7 @@ string
 
 <summary>
 
-AppGetResponse = object {id, created\_on, dns, 15 more } or object {id, created\_on, dns, 7 more }
+AppGetResponse = object { id, created\_on, dns, 15 more } or object { id, created\_on, dns, 7 more }
 
 </summary>
 
@@ -1248,7 +1248,7 @@ One of the following:
 
 <summary>
 
-SpectrumConfigAppConfig object {id, created\_on, dns, 15 more }
+SpectrumConfigAppConfig object { id, created\_on, dns, 15 more }
 
 </summary>
 
@@ -1292,7 +1292,7 @@ The port configuration at Cloudflare’s edge. May specify a single port, for ex
 
 <summary>
 
-traffic\_type: "direct"or "http"or "https"or "worker"
+traffic\_type: "direct" or "http" or "https" or "worker"
 
 Determines how data travels from the edge to your origin. When set to “direct”, Spectrum will send traffic directly to your origin, and the application’s type is derived from the <code>protocol</code>. When set to “http” or “https”, Spectrum will apply Cloudflare’s HTTP/HTTPS features as it sends traffic to your origin, and the application type matches this property exactly. When set to “worker”, traffic is sent to the Worker specified by <code>origin_worker_id</code>.
 
@@ -1376,7 +1376,7 @@ Name of the Worker origin. Omitted when the Worker is not found or its name cann
 
 <summary>
 
-origin\_worker\_status: optional "available"or "not\_found"or "unknown"
+origin\_worker\_status: optional "available" or "not\_found" or "unknown"
 
 Lookup status of the Worker origin. Unknown indicates that its name could not be resolved. Only returned for Worker origins.
 
@@ -1404,7 +1404,7 @@ One of the following:
 
 <summary>
 
-proxy\_protocol: optional "off"or "v1"or "v2"or "simple"
+proxy\_protocol: optional "off" or "v1" or "v2" or "simple"
 
 Enables Proxy Protocol to the origin. Refer to <a href="https://developers.cloudflare.com/spectrum/getting-started/proxy-protocol/">Enable Proxy protocol</a> for implementation details on PROXY Protocol V1, PROXY Protocol V2, and Simple Proxy Protocol.
 
@@ -1436,7 +1436,7 @@ One of the following:
 
 <summary>
 
-tls: optional "off"or "flexible"or "full"or "strict"
+tls: optional "off" or "flexible" or "full" or "strict"
 
 The type of TLS termination associated with the application.
 
@@ -1480,7 +1480,7 @@ formatuuid
 
 <summary>
 
-SpectrumConfigPaygoAppConfig object {id, created\_on, dns, 7 more }
+SpectrumConfigPaygoAppConfig object { id, created\_on, dns, 7 more }
 
 </summary>
 
@@ -1542,7 +1542,7 @@ Name of the Worker origin. Omitted when the Worker is not found or its name cann
 
 <summary>
 
-origin\_worker\_status: optional "available"or "not\_found"or "unknown"
+origin\_worker\_status: optional "available" or "not\_found" or "unknown"
 
 Lookup status of the Worker origin. Unknown indicates that its name could not be resolved. Only returned for Worker origins.
 
@@ -1570,7 +1570,7 @@ One of the following:
 
 <summary>
 
-traffic\_type: optional "direct"or "worker"or string
+traffic\_type: optional "direct" or "worker" or string
 
 Determines how traffic is sent to the origin. If absent or empty, defaults to “direct”. Direct mode uses origin\_direct. Worker mode requires origin\_worker\_id, TCP or UDP with a single port, and CNAME DNS; origin\_worker\_id and origin\_direct are mutually exclusive. A PAYG zone may have at most one Worker application per transport (one TCP and one UDP); creating another for the same transport, or converting another application to Worker while that quota is full, is rejected with error code 11034 and HTTP status 400.
 
@@ -1582,7 +1582,7 @@ One of the following:
 
 <summary>
 
-"direct"or "worker"
+"direct" or "worker"
 
 Determines how traffic is sent to the origin. If absent or empty, defaults to “direct”. Direct mode uses origin\_direct. Worker mode requires origin\_worker\_id, TCP or UDP with a single port, and CNAME DNS; origin\_worker\_id and origin\_direct are mutually exclusive. A PAYG zone may have at most one Worker application per transport (one TCP and one UDP); creating another for the same transport, or converting another application to Worker while that quota is full, is rejected with error code 11034 and HTTP status 400.
 
@@ -1622,7 +1622,7 @@ string
 
 <summary>
 
-AppCreateResponse = object {id, created\_on, dns, 15 more } or object {id, created\_on, dns, 7 more }
+AppCreateResponse = object { id, created\_on, dns, 15 more } or object { id, created\_on, dns, 7 more }
 
 </summary>
 
@@ -1632,7 +1632,7 @@ One of the following:
 
 <summary>
 
-SpectrumConfigAppConfig object {id, created\_on, dns, 15 more }
+SpectrumConfigAppConfig object { id, created\_on, dns, 15 more }
 
 </summary>
 
@@ -1676,7 +1676,7 @@ The port configuration at Cloudflare’s edge. May specify a single port, for ex
 
 <summary>
 
-traffic\_type: "direct"or "http"or "https"or "worker"
+traffic\_type: "direct" or "http" or "https" or "worker"
 
 Determines how data travels from the edge to your origin. When set to “direct”, Spectrum will send traffic directly to your origin, and the application’s type is derived from the <code>protocol</code>. When set to “http” or “https”, Spectrum will apply Cloudflare’s HTTP/HTTPS features as it sends traffic to your origin, and the application type matches this property exactly. When set to “worker”, traffic is sent to the Worker specified by <code>origin_worker_id</code>.
 
@@ -1760,7 +1760,7 @@ Name of the Worker origin. Omitted when the Worker is not found or its name cann
 
 <summary>
 
-origin\_worker\_status: optional "available"or "not\_found"or "unknown"
+origin\_worker\_status: optional "available" or "not\_found" or "unknown"
 
 Lookup status of the Worker origin. Unknown indicates that its name could not be resolved. Only returned for Worker origins.
 
@@ -1788,7 +1788,7 @@ One of the following:
 
 <summary>
 
-proxy\_protocol: optional "off"or "v1"or "v2"or "simple"
+proxy\_protocol: optional "off" or "v1" or "v2" or "simple"
 
 Enables Proxy Protocol to the origin. Refer to <a href="https://developers.cloudflare.com/spectrum/getting-started/proxy-protocol/">Enable Proxy protocol</a> for implementation details on PROXY Protocol V1, PROXY Protocol V2, and Simple Proxy Protocol.
 
@@ -1820,7 +1820,7 @@ One of the following:
 
 <summary>
 
-tls: optional "off"or "flexible"or "full"or "strict"
+tls: optional "off" or "flexible" or "full" or "strict"
 
 The type of TLS termination associated with the application.
 
@@ -1864,7 +1864,7 @@ formatuuid
 
 <summary>
 
-SpectrumConfigPaygoAppConfig object {id, created\_on, dns, 7 more }
+SpectrumConfigPaygoAppConfig object { id, created\_on, dns, 7 more }
 
 </summary>
 
@@ -1926,7 +1926,7 @@ Name of the Worker origin. Omitted when the Worker is not found or its name cann
 
 <summary>
 
-origin\_worker\_status: optional "available"or "not\_found"or "unknown"
+origin\_worker\_status: optional "available" or "not\_found" or "unknown"
 
 Lookup status of the Worker origin. Unknown indicates that its name could not be resolved. Only returned for Worker origins.
 
@@ -1954,7 +1954,7 @@ One of the following:
 
 <summary>
 
-traffic\_type: optional "direct"or "worker"or string
+traffic\_type: optional "direct" or "worker" or string
 
 Determines how traffic is sent to the origin. If absent or empty, defaults to “direct”. Direct mode uses origin\_direct. Worker mode requires origin\_worker\_id, TCP or UDP with a single port, and CNAME DNS; origin\_worker\_id and origin\_direct are mutually exclusive. A PAYG zone may have at most one Worker application per transport (one TCP and one UDP); creating another for the same transport, or converting another application to Worker while that quota is full, is rejected with error code 11034 and HTTP status 400.
 
@@ -1966,7 +1966,7 @@ One of the following:
 
 <summary>
 
-"direct"or "worker"
+"direct" or "worker"
 
 Determines how traffic is sent to the origin. If absent or empty, defaults to “direct”. Direct mode uses origin\_direct. Worker mode requires origin\_worker\_id, TCP or UDP with a single port, and CNAME DNS; origin\_worker\_id and origin\_direct are mutually exclusive. A PAYG zone may have at most one Worker application per transport (one TCP and one UDP); creating another for the same transport, or converting another application to Worker while that quota is full, is rejected with error code 11034 and HTTP status 400.
 
@@ -2006,7 +2006,7 @@ string
 
 <summary>
 
-AppUpdateResponse = object {id, created\_on, dns, 15 more } or object {id, created\_on, dns, 7 more }
+AppUpdateResponse = object { id, created\_on, dns, 15 more } or object { id, created\_on, dns, 7 more }
 
 </summary>
 
@@ -2016,7 +2016,7 @@ One of the following:
 
 <summary>
 
-SpectrumConfigAppConfig object {id, created\_on, dns, 15 more }
+SpectrumConfigAppConfig object { id, created\_on, dns, 15 more }
 
 </summary>
 
@@ -2060,7 +2060,7 @@ The port configuration at Cloudflare’s edge. May specify a single port, for ex
 
 <summary>
 
-traffic\_type: "direct"or "http"or "https"or "worker"
+traffic\_type: "direct" or "http" or "https" or "worker"
 
 Determines how data travels from the edge to your origin. When set to “direct”, Spectrum will send traffic directly to your origin, and the application’s type is derived from the <code>protocol</code>. When set to “http” or “https”, Spectrum will apply Cloudflare’s HTTP/HTTPS features as it sends traffic to your origin, and the application type matches this property exactly. When set to “worker”, traffic is sent to the Worker specified by <code>origin_worker_id</code>.
 
@@ -2144,7 +2144,7 @@ Name of the Worker origin. Omitted when the Worker is not found or its name cann
 
 <summary>
 
-origin\_worker\_status: optional "available"or "not\_found"or "unknown"
+origin\_worker\_status: optional "available" or "not\_found" or "unknown"
 
 Lookup status of the Worker origin. Unknown indicates that its name could not be resolved. Only returned for Worker origins.
 
@@ -2172,7 +2172,7 @@ One of the following:
 
 <summary>
 
-proxy\_protocol: optional "off"or "v1"or "v2"or "simple"
+proxy\_protocol: optional "off" or "v1" or "v2" or "simple"
 
 Enables Proxy Protocol to the origin. Refer to <a href="https://developers.cloudflare.com/spectrum/getting-started/proxy-protocol/">Enable Proxy protocol</a> for implementation details on PROXY Protocol V1, PROXY Protocol V2, and Simple Proxy Protocol.
 
@@ -2204,7 +2204,7 @@ One of the following:
 
 <summary>
 
-tls: optional "off"or "flexible"or "full"or "strict"
+tls: optional "off" or "flexible" or "full" or "strict"
 
 The type of TLS termination associated with the application.
 
@@ -2248,7 +2248,7 @@ formatuuid
 
 <summary>
 
-SpectrumConfigPaygoAppConfig object {id, created\_on, dns, 7 more }
+SpectrumConfigPaygoAppConfig object { id, created\_on, dns, 7 more }
 
 </summary>
 
@@ -2310,7 +2310,7 @@ Name of the Worker origin. Omitted when the Worker is not found or its name cann
 
 <summary>
 
-origin\_worker\_status: optional "available"or "not\_found"or "unknown"
+origin\_worker\_status: optional "available" or "not\_found" or "unknown"
 
 Lookup status of the Worker origin. Unknown indicates that its name could not be resolved. Only returned for Worker origins.
 
@@ -2338,7 +2338,7 @@ One of the following:
 
 <summary>
 
-traffic\_type: optional "direct"or "worker"or string
+traffic\_type: optional "direct" or "worker" or string
 
 Determines how traffic is sent to the origin. If absent or empty, defaults to “direct”. Direct mode uses origin\_direct. Worker mode requires origin\_worker\_id, TCP or UDP with a single port, and CNAME DNS; origin\_worker\_id and origin\_direct are mutually exclusive. A PAYG zone may have at most one Worker application per transport (one TCP and one UDP); creating another for the same transport, or converting another application to Worker while that quota is full, is rejected with error code 11034 and HTTP status 400.
 
@@ -2350,7 +2350,7 @@ One of the following:
 
 <summary>
 
-"direct"or "worker"
+"direct" or "worker"
 
 Determines how traffic is sent to the origin. If absent or empty, defaults to “direct”. Direct mode uses origin\_direct. Worker mode requires origin\_worker\_id, TCP or UDP with a single port, and CNAME DNS; origin\_worker\_id and origin\_direct are mutually exclusive. A PAYG zone may have at most one Worker application per transport (one TCP and one UDP); creating another for the same transport, or converting another application to Worker while that quota is full, is rejected with error code 11034 and HTTP status 400.
 
@@ -2390,7 +2390,7 @@ string
 
 <summary>
 
-AppDeleteResponse object {id }
+AppDeleteResponse object { id }
 
 </summary>
 
@@ -2418,7 +2418,7 @@ GET/zones/{zone\_id}/spectrum/protocols
 
 <summary>
 
-ProtocolListResponse object {description, name, ports, transport }
+ProtocolListResponse object { description, name, ports, transport }
 
 </summary>
 

@@ -36,7 +36,7 @@ DELETE/accounts/{account\_id}/workers/subdomain
 
 <summary>
 
-SubdomainGetResponse object {subdomain }
+SubdomainGetResponse object { subdomain }
 
 </summary>
 
@@ -52,7 +52,7 @@ subdomain: string
 
 <summary>
 
-SubdomainUpdateResponse object {subdomain }
+SubdomainUpdateResponse object { subdomain }
 
 </summary>
 

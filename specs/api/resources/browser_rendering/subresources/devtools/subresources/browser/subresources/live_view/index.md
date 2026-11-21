@@ -32,7 +32,7 @@ POST/accounts/{account\_id}/browser-rendering/devtools/browser/{session\_id}/liv
 
 <summary>
 
-LiveViewCreateResponse object {id, devtoolsFrontendUrl, options, webSocketDebuggerUrl }
+LiveViewCreateResponse object { id, devtoolsFrontendUrl, options, webSocketDebuggerUrl }
 
 </summary>
 
@@ -54,7 +54,7 @@ formaturi
 
 <summary>
 
-options: object {mode, guardrails }
+options: object { mode, guardrails }
 
 </summary>
 
@@ -62,7 +62,7 @@ options: object {mode, guardrails }
 
 <summary>
 
-mode: "devtools"or "tab"or "full"
+mode: "devtools" or "tab" or "full"
 
 UI mode for the live view
 
@@ -90,7 +90,7 @@ One of the following:
 
 <summary>
 
-guardrails: optional object {mode }
+guardrails: optional object { mode }
 
 Connection guardrails applied to this link
 

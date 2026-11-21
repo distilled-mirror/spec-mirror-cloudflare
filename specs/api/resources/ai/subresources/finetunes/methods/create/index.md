@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Workers AI Write`
+`AI Search Index Engine``Auto Rag Write Run Engine``Workers AI Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -88,7 +88,7 @@ public: optional boolean
 
 <summary>
 
-result: object {id, created\_at, model, 4 more }
+result: object { id, created\_at, model, 4 more }
 
 </summary>
 

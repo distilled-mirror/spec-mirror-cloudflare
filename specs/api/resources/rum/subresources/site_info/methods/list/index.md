@@ -74,7 +74,7 @@ maxLength32
 
 <summary>
 
-order\_by: optional "host"or "created"
+order\_by: optional "host" or "created"
 
 The property used to sort the list of results.
 
@@ -134,7 +134,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -176,7 +176,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -276,7 +276,7 @@ priority: optional number
 
 <summary>
 
-ruleset: optional object {id, enabled, zone\_name, zone\_tag }
+ruleset: optional object { id, enabled, zone\_name, zone\_tag }
 
 </summary>
 
@@ -332,7 +332,7 @@ Encoded JavaScript snippet.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

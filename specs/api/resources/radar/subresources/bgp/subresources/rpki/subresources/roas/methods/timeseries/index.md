@@ -90,7 +90,7 @@ formatdate-time
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -120,7 +120,7 @@ Filters results by location. Specify a comma-separated list of alpha-2 location 
 
 <summary>
 
-metric: optional "validPfxsRatio"or "validPfxsV4Ratio"or "validPfxsV6Ratio"or 3 more
+metric: optional "validPfxsRatio" or "validPfxsV4Ratio" or "validPfxsV6Ratio" or 3 more
 
 Which RPKI ROA validation metric to return. validPfxsRatio = ratio of RPKI-valid prefixes (IPv4+IPv6 combined). validPfxsV4Ratio / validPfxsV6Ratio = same, split by IP version. validIpsRatio = ratio of RPKI-valid address space (IPv4 /24s + IPv6 /48s). validIpsV4Ratio / validIpsV6Ratio = same, split by IP version.
 
@@ -168,7 +168,7 @@ Array of names used to label the series in the response.
 
 <summary>
 
-result: object {meta, serie\_0 }
+result: object { meta, serie\_0 }
 
 </summary>
 
@@ -176,7 +176,7 @@ result: object {meta, serie\_0 }
 
 <summary>
 
-meta: object {dataTime, queryTime }
+meta: object { dataTime, queryTime }
 
 </summary>
 
@@ -204,7 +204,7 @@ formatdate-time
 
 <summary>
 
-serie\_0: object {timestamps, values }
+serie\_0: object { timestamps, values }
 
 </summary>
 

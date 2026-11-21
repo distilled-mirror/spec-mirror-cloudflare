@@ -76,7 +76,7 @@ maxLength32
 
 <summary>
 
-body: map\[object {mitigation\_action } ]
+body: map\[object { mitigation\_action } ]
 
 </summary>
 
@@ -84,7 +84,7 @@ body: map\[object {mitigation\_action } ]
 
 <summary>
 
-mitigation\_action: optional "none"or "log"or "block"
+mitigation\_action: optional "none" or "log" or "block"
 
 Mitigation actions are as follows:
 
@@ -142,7 +142,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -184,7 +184,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -204,7 +204,7 @@ pointer: optional string
 
 <summary>
 
-result: map\[object {mitigation\_action } ]
+result: map\[object { mitigation\_action } ]
 
 Operation ID to updated mitigation action mapping
 
@@ -214,7 +214,7 @@ Operation ID to updated mitigation action mapping
 
 <summary>
 
-mitigation\_action: optional "log"or "block"or "none"
+mitigation\_action: optional "log" or "block" or "none"
 
 When set, this applies a mitigation action to this operation
 

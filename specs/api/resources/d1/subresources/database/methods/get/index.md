@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`D1 Read``D1 Write`
+`D1 Metadata Read``AI Search Index Engine``D1 Read``D1 Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -80,7 +80,7 @@ D1 database identifier (UUID).
 
 <summary>
 
-fields: optional array of "uuid"or "name"or "created\_at"or 6 more
+fields: optional array of "uuid" or "name" or "created\_at" or 6 more
 
 Comma-separated list of fields to include in the response. When omitted, all fields are returned.
 
@@ -156,7 +156,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -198,7 +198,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -242,7 +242,7 @@ The D1 database’s size, in bytes.
 
 <summary>
 
-jurisdiction: optional "eu"or "fedramp"or "us"
+jurisdiction: optional "eu" or "fedramp" or "us"
 
 Specify the location to restrict the D1 database to run and store data. If this option is present, the location hint is ignored.
 
@@ -282,7 +282,7 @@ The number of tables in the D1 database. This count is no longer accurate and sh
 
 <summary>
 
-read\_replication: optional object {mode }
+read\_replication: optional object { mode }
 
 Configuration for D1 read replication.
 
@@ -292,7 +292,7 @@ Configuration for D1 read replication.
 
 <summary>
 
-mode: "auto"or "disabled"
+mode: "auto" or "disabled"
 
 The read replication mode for the database. Mode ‘auto’ denotes that D1 creates replicas and automatically places them around the world. Mode ‘disabled’ denotes that no database replicas are used.
 

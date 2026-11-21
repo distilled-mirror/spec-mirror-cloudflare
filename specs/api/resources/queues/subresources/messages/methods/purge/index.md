@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Queues Write``Workers Scripts Write`
+`Workers Editor``Workers Admin``Queues Write``Workers Scripts Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -82,7 +82,7 @@ maxLength32
 
 <summary>
 
-refs: array of object {ref }
+refs: array of object { ref }
 
 </summary>
 
@@ -126,7 +126,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -150,7 +150,7 @@ messages: optional array of string
 
 <summary>
 
-result: optional object {errors, warnings }
+result: optional object { errors, warnings }
 
 </summary>
 
@@ -158,7 +158,7 @@ result: optional object {errors, warnings }
 
 <summary>
 
-errors: optional array of object {message }
+errors: optional array of object { message }
 
 Errors encountered while purging messages.
 

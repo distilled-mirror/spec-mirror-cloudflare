@@ -28,7 +28,7 @@ GET/zones/{zone\_id}/api\_gateway/schemas
 
 <summary>
 
-SchemaListResponse object {schemas, timestamp }
+SchemaListResponse object { schemas, timestamp }
 
 </summary>
 

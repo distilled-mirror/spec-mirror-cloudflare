@@ -46,7 +46,7 @@ DELETE/accounts/{account\_id}/devices/deployment-groups/{group\_id}
 
 <summary>
 
-DeploymentGroup object {id, created\_at, name, 3 more }
+DeploymentGroup object { id, created\_at, name, 3 more }
 
 </summary>
 
@@ -82,7 +82,7 @@ The RFC3339Nano timestamp when the deployment group was last updated.
 
 <summary>
 
-version\_config: array of object {target\_environment, version }
+version\_config: array of object { target\_environment, version }
 
 Contains version configurations for different target environments.
 
@@ -154,7 +154,7 @@ The RFC3339Nano timestamp when the deployment group was last updated.
 
 <summary>
 
-version\_config: array of object {target\_environment, version }
+version\_config: array of object { target\_environment, version }
 
 Contains version configurations for different target environments.
 
@@ -190,7 +190,7 @@ Contains a list of policy IDs assigned to this deployment group.
 
 <summary>
 
-DeploymentGroupDeleteResponse object {id }
+DeploymentGroupDeleteResponse object { id }
 
 </summary>
 

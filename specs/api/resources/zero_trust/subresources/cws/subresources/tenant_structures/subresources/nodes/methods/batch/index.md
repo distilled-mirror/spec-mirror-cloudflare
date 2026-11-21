@@ -84,7 +84,7 @@ formatuuid
 
 <summary>
 
-creates: array of object {native\_id, node\_kind, name, parent }
+creates: array of object { native\_id, node\_kind, name, parent }
 
 Nodes to create; parents may be created elsewhere in this request
 
@@ -134,7 +134,7 @@ maxLength255
 
 <summary>
 
-deletes: array of object {id }
+deletes: array of object { id }
 
 Nodes to delete; every descendant that will not be reparented must also be deleted
 
@@ -156,7 +156,7 @@ formatuuid
 
 <summary>
 
-updates: array of object {id, name, parent }
+updates: array of object { id, name, parent }
 
 Nodes whose mutable fields should be fully replaced
 
@@ -196,7 +196,7 @@ maxLength255
 
 <summary>
 
-errors: array of object {code, message, source }
+errors: array of object { code, message, source }
 
 </summary>
 
@@ -214,7 +214,7 @@ message: string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -234,7 +234,7 @@ pointer: string
 
 <summary>
 
-messages: array of object {code, message, source }
+messages: array of object { code, message, source }
 
 </summary>
 
@@ -252,7 +252,7 @@ message: string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -272,7 +272,7 @@ pointer: string
 
 <summary>
 
-result: object {created, deleted, updated }
+result: object { created, deleted, updated }
 
 </summary>
 
@@ -348,7 +348,7 @@ maxLength255
 
 <summary>
 
-deleted: array of object {id }
+deleted: array of object { id }
 
 </summary>
 

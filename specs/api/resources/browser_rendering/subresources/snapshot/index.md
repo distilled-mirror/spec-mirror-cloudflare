@@ -28,7 +28,7 @@ POST/accounts/{account\_id}/browser-rendering/snapshot
 
 <summary>
 
-SnapshotCreateResponse object {accessibilityTree, content, json, 5 more }
+SnapshotCreateResponse object { accessibilityTree, content, json, 5 more }
 
 </summary>
 
@@ -36,7 +36,7 @@ SnapshotCreateResponse object {accessibilityTree, content, json, 5 more }
 
 <summary>
 
-accessibilityTree: optional object {role, autocomplete, checked, 23 more }
+accessibilityTree: optional object { role, autocomplete, checked, 23 more }
 
 Accessibility tree node
 
@@ -54,7 +54,7 @@ autocomplete: optional string
 
 <summary>
 
-checked: optional booleanor "mixed"
+checked: optional boolean or "mixed"
 
 </summary>
 
@@ -132,7 +132,7 @@ orientation: optional string
 
 <summary>
 
-pressed: optional booleanor "mixed"
+pressed: optional boolean or "mixed"
 
 </summary>
 
@@ -170,7 +170,7 @@ selected: optional boolean
 
 <summary>
 
-value: optional stringor number
+value: optional string or number
 
 </summary>
 
@@ -214,7 +214,7 @@ HTML content.
 
 <summary>
 
-json: optional map\[unknown]or array of unknown
+json: optional map\[unknown] or array of unknown
 
 Data extracted from the page HTML by the requested prompt.
 
@@ -256,7 +256,7 @@ Base64 encoded PDF.
 
 <summary>
 
-scrape: optional array of object {results, selector }
+scrape: optional array of object { results, selector }
 
 Elements matched by the requested selectors.
 
@@ -266,7 +266,7 @@ Elements matched by the requested selectors.
 
 <summary>
 
-results: array of object {attributes, html, left, 4 more }
+results: array of object { attributes, html, left, 4 more }
 
 </summary>
 
@@ -274,7 +274,7 @@ results: array of object {attributes, html, left, 4 more }
 
 <summary>
 
-attributes: array of object {name, value }
+attributes: array of object { name, value }
 
 </summary>
 

@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Realtime Admin``Realtime`
+`Realtime Read``Realtime Admin``Realtime`
 
 ##### P ath ParametersExpand Collapse
 
@@ -104,7 +104,7 @@ formatint64
 
 <summary>
 
-data: optional array of object {count, date, total\_ingest\_seconds, total\_viewer\_seconds }
+data: optional array of object { count, date, total\_ingest\_seconds, total\_viewer\_seconds }
 
 </summary>
 

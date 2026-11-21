@@ -104,7 +104,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -128,7 +128,7 @@ messages: optional array of string
 
 <summary>
 
-result: optional array of object {id, createdAt, finishedAt, 4 more }
+result: optional array of object { id, createdAt, finishedAt, 4 more }
 
 </summary>
 
@@ -152,7 +152,7 @@ overwrite: optional boolean
 
 <summary>
 
-source: optional object {bucket, endpoint, keys, 2 more } or object {bucket, keys, pathPrefix, vendor } or object {bucket, jurisdiction, keys, 2 more }
+source: optional object { bucket, endpoint, keys, 2 more } or object { bucket, keys, pathPrefix, vendor } or object { bucket, jurisdiction, keys, 2 more }
 
 </summary>
 
@@ -162,7 +162,7 @@ One of the following:
 
 <summary>
 
-S3SourceResponseSchema object {bucket, endpoint, keys, 2 more }
+S3SourceResponseSchema object { bucket, endpoint, keys, 2 more }
 
 </summary>
 
@@ -196,7 +196,7 @@ vendor: optional "s3"
 
 <summary>
 
-GcsSourceResponseSchema object {bucket, keys, pathPrefix, vendor }
+GcsSourceResponseSchema object { bucket, keys, pathPrefix, vendor }
 
 </summary>
 
@@ -224,7 +224,7 @@ vendor: optional "gcs"
 
 <summary>
 
-R2SourceResponseSchema object {bucket, jurisdiction, keys, 2 more }
+R2SourceResponseSchema object { bucket, jurisdiction, keys, 2 more }
 
 </summary>
 
@@ -236,7 +236,7 @@ bucket: optional string
 
 <summary>
 
-jurisdiction: optional "default"or "eu"or "us"or "fedramp"
+jurisdiction: optional "default" or "eu" or "us" or "fedramp"
 
 </summary>
 
@@ -286,7 +286,7 @@ vendor: optional <a href="https://developers.cloudflare.com/api/resources/r2#(re
 
 <summary>
 
-status: optional "running"or "paused"or "aborted"or "completed"
+status: optional "running" or "paused" or "aborted" or "completed"
 
 </summary>
 
@@ -316,7 +316,7 @@ One of the following:
 
 <summary>
 
-target: optional object {bucket, jurisdiction, vendor }
+target: optional object { bucket, jurisdiction, vendor }
 
 </summary>
 
@@ -328,7 +328,7 @@ bucket: optional string
 
 <summary>
 
-jurisdiction: optional "default"or "eu"or "us"or "fedramp"
+jurisdiction: optional "default" or "eu" or "us" or "fedramp"
 
 </summary>
 

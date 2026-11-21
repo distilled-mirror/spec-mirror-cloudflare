@@ -72,7 +72,7 @@ account\_id: string
 
 <summary>
 
-kind: optional "proximity\_words"or "worker"
+kind: optional "proximity\_words" or "worker"
 
 Only return validators of this kind. Omit to return every kind.
 
@@ -98,7 +98,7 @@ One of the following:
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -120,7 +120,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -140,7 +140,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -162,7 +162,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -198,7 +198,7 @@ One of the following:
 
 <summary>
 
-ProximityWordValidator object {id, created\_at, kind, 4 more }
+ProximityWordValidator object { id, created\_at, kind, 4 more }
 
 A reusable list of weighted words. Attaching it to a detection entry raises the confidence of that entry’s matches when one of the words appears nearby, and lowers it when none do.
 
@@ -242,7 +242,7 @@ Read-only. A validator is attached or detached by updating the detection entry t
 
 <summary>
 
-entries: array of object {id, name, type }
+entries: array of object { id, name, type }
 
 The detection entries using this validator, ordered by name.
 
@@ -262,7 +262,7 @@ name: string
 
 <summary>
 
-type: "custom"or "custom\_prompt\_topic"or "predefined"or 4 more
+type: "custom" or "custom\_prompt\_topic" or "predefined" or 4 more
 
 The type of a detection entry.
 
@@ -384,7 +384,7 @@ The word or phrase to look for. Must contain 1–128 characters and is matched c
 
 <summary>
 
-WorkerValidator object {id, created\_at, kind, 5 more }
+WorkerValidator object { id, created\_at, kind, 5 more }
 
 A customer Worker registered as a validator.
 
@@ -428,7 +428,7 @@ Read-only. A validator is attached or detached by updating the detection entry t
 
 <summary>
 
-entries: array of object {id, name, type }
+entries: array of object { id, name, type }
 
 The detection entries using this validator, ordered by name.
 
@@ -448,7 +448,7 @@ name: string
 
 <summary>
 
-type: "custom"or "custom\_prompt\_topic"or "predefined"or 4 more
+type: "custom" or "custom\_prompt\_topic" or "predefined" or 4 more
 
 The type of a detection entry.
 
@@ -522,7 +522,7 @@ formatdate-time
 
 <summary>
 
-default: optional numberor "veto"
+default: optional number or "veto"
 
 </summary>
 

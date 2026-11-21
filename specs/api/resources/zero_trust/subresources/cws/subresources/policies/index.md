@@ -46,7 +46,7 @@ DELETE/accounts/{account\_id}/cws/policies/{policy\_id}
 
 <summary>
 
-Policy object {id, created\_at, entrypoint, 7 more }
+Policy object { id, created\_at, entrypoint, 7 more }
 
 </summary>
 
@@ -138,7 +138,7 @@ maxLength1024
 
 <summary>
 
-PolicyDeleteResponse object {id }
+PolicyDeleteResponse object { id }
 
 </summary>
 

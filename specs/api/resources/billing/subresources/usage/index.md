@@ -54,7 +54,7 @@ GET/accounts/{account\_id}/billable/usage
 
 <summary>
 
-UsagePaygoInfoResponse object {covered, subscriptions }
+UsagePaygoInfoResponse object { covered, subscriptions }
 
 Contains the usage info.
 
@@ -70,7 +70,7 @@ Indicates whether the account is covered.
 
 <summary>
 
-subscriptions: array of object {id, billing\_cycle\_anchor\_timestamp, start\_timestamp, end\_timestamp }
+subscriptions: array of object { id, billing\_cycle\_anchor\_timestamp, start\_timestamp, end\_timestamp }
 
 List of subscriptions for the account.
 
@@ -118,7 +118,7 @@ formatdate-time
 
 <summary>
 
-UsagePaygoResponse = array of object {BilledCost, BillingAccountId, BillingAccountName, 24 more }
+UsagePaygoResponse = array of object { BilledCost, BillingAccountId, BillingAccountName, 24 more }
 
 Contains the array of billable usage records.
 
@@ -300,7 +300,7 @@ The display name of the Cloudflare zone.
 
 <summary>
 
-UsageGetResponse = array of object {ChargeCategory, ChargeDescription, ChargeFrequency, 33 more }
+UsageGetResponse = array of object { ChargeCategory, ChargeDescription, ChargeFrequency, 33 more }
 
 Contains the array of cost and usage records.
 
@@ -492,7 +492,7 @@ Name assigned to a grouping of services. For Cloudflare, this is the subscriptio
 
 <summary>
 
-Tags: optional map\[stringor true]
+Tags: optional map\[string or true]
 
 Tag values for the requested <code>GroupBy</code> keys. Omitted when <code>GroupBy</code> is not provided. Missing keys are omitted, and key-only tags are returned as boolean <code>true</code>. All other tag values are strings.
 
@@ -556,7 +556,7 @@ The display name of the Cloudflare zone. Omitted when zone is not part of the re
 
 <summary>
 
-UsageGetAccountUsageInfoV1Response object {covered, subscriptions }
+UsageGetAccountUsageInfoV1Response object { covered, subscriptions }
 
 Contains the usage info.
 
@@ -572,7 +572,7 @@ Indicates whether the account is covered.
 
 <summary>
 
-subscriptions: array of object {id, billing\_cycle\_anchor\_timestamp, start\_timestamp, end\_timestamp }
+subscriptions: array of object { id, billing\_cycle\_anchor\_timestamp, start\_timestamp, end\_timestamp }
 
 List of subscriptions for the account.
 
@@ -620,7 +620,7 @@ formatdate-time
 
 <summary>
 
-UsageGetAccountUsageV1Response = array of object {BilledCost, BillingAccountId, BillingAccountName, 24 more }
+UsageGetAccountUsageV1Response = array of object { BilledCost, BillingAccountId, BillingAccountName, 24 more }
 
 Contains the array of billable usage records.
 
@@ -802,7 +802,7 @@ The display name of the Cloudflare zone.
 
 <summary>
 
-UsageGetAccountUsageV2Response = array of object {ChargeCategory, ChargeDescription, ChargeFrequency, 33 more }
+UsageGetAccountUsageV2Response = array of object { ChargeCategory, ChargeDescription, ChargeFrequency, 33 more }
 
 Contains the array of cost and usage records.
 
@@ -994,7 +994,7 @@ Name assigned to a grouping of services. For Cloudflare, this is the subscriptio
 
 <summary>
 
-Tags: optional map\[stringor true]
+Tags: optional map\[string or true]
 
 Tag values for the requested <code>GroupBy</code> keys. Omitted when <code>GroupBy</code> is not provided. Missing keys are omitted, and key-only tags are returned as boolean <code>true</code>. All other tag values are strings.
 

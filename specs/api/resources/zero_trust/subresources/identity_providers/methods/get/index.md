@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Access: Organizations, Identity Providers, and Groups Write``Access: Organizations, Identity Providers, and Groups Read`
+`Individual Access Identity Provider Read``Individual Access Identity Provider Admin``Access: Identity Providers Write``Access: Identity Providers Read``Zero Trust Read``Zero Trust Write``Access: Organizations, Identity Providers, and Groups Write``Access: Organizations, Identity Providers, and Groups Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -86,7 +86,7 @@ The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -108,7 +108,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -128,7 +128,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -150,7 +150,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -186,7 +186,7 @@ One of the following:
 
 <summary>
 
-AzureAD object {config, name, type, 5 more }
+AzureAD object { config, name, type, 5 more }
 
 </summary>
 
@@ -194,7 +194,7 @@ AzureAD object {config, name, type, 5 more }
 
 <summary>
 
-config: object {claims, client\_id, client\_secret, 5 more }
+config: object { claims, client\_id, client\_secret, 5 more }
 
 The configuration parameters for the identity provider. To view the required parameters for a specific provider, refer to our <a href="https://developers.cloudflare.com/cloudflare-one/identity/idp-integration/">developer documentation</a>.
 
@@ -240,7 +240,7 @@ The claim name for email in the id\_token response.
 
 <summary>
 
-prompt: optional "login"or "select\_account"or "none"
+prompt: optional "login" or "select\_account" or "none"
 
 Indicates the type of user interaction that is required. prompt=login forces the user to enter their credentials on that request, negating single-sign on. prompt=none is the opposite. It ensures that the user isn’t presented with any interactive prompt. If the request can’t be completed silently by using single-sign on, the Microsoft identity platform returns an interaction\_required error. prompt=select\_account interrupts single sign-on providing account selection experience listing all the accounts either in session or any remembered account or an option to choose to use a different account altogether.
 
@@ -382,7 +382,7 @@ Indicates that the identity provider is immutable and cannot be updated or delet
 
 <summary>
 
-saml\_certificate\_set: optional object {created\_at, uid, updated\_at, 2 more }
+saml\_certificate\_set: optional object { created\_at, uid, updated\_at, 2 more }
 
 The SAML encryption certificate set details, including current and previous certificates. Only present for SAML identity providers with a certificate set assigned.
 
@@ -416,7 +416,7 @@ formatdate-time
 
 <summary>
 
-current\_certificate: optional object {is\_current, not\_after, public\_certificate, uid }
+current\_certificate: optional object { is\_current, not\_after, public\_certificate, uid }
 
 The currently active certificate used for encrypting SAML assertions
 
@@ -492,7 +492,7 @@ A flag to enable or disable SCIM for the identity provider.
 
 <summary>
 
-identity\_update\_behavior: optional "automatic"or "reauth"or "no\_action"
+identity\_update\_behavior: optional "automatic" or "reauth" or "no\_action"
 
 Indicates how a SCIM event updates a user identity used for policy evaluation. Use “automatic” to automatically update a user’s identity and augment it with fields from the SCIM user resource. Use “reauth” to force re-authentication on group membership updates, user identity update will only occur after successful re-authentication. With “reauth” identities will not contain fields from the SCIM user resource. With “no\_action” identities will not be changed by SCIM updates in any way and users will not be prompted to reauthenticate.
 
@@ -552,7 +552,7 @@ A flag to enable revoking a user’s session in Access and Gateway when they hav
 
 <summary>
 
-AccessCentrify object {config, name, type, 5 more }
+AccessCentrify object { config, name, type, 5 more }
 
 </summary>
 
@@ -560,7 +560,7 @@ AccessCentrify object {config, name, type, 5 more }
 
 <summary>
 
-config: object {centrify\_account, centrify\_app\_id, claims, 3 more }
+config: object { centrify\_account, centrify\_app\_id, claims, 3 more }
 
 The configuration parameters for the identity provider. To view the required parameters for a specific provider, refer to our <a href="https://developers.cloudflare.com/cloudflare-one/identity/idp-integration/">developer documentation</a>.
 
@@ -714,7 +714,7 @@ Indicates that the identity provider is immutable and cannot be updated or delet
 
 <summary>
 
-saml\_certificate\_set: optional object {created\_at, uid, updated\_at, 2 more }
+saml\_certificate\_set: optional object { created\_at, uid, updated\_at, 2 more }
 
 The SAML encryption certificate set details, including current and previous certificates. Only present for SAML identity providers with a certificate set assigned.
 
@@ -748,7 +748,7 @@ formatdate-time
 
 <summary>
 
-current\_certificate: optional object {is\_current, not\_after, public\_certificate, uid }
+current\_certificate: optional object { is\_current, not\_after, public\_certificate, uid }
 
 The currently active certificate used for encrypting SAML assertions
 
@@ -824,7 +824,7 @@ A flag to enable or disable SCIM for the identity provider.
 
 <summary>
 
-identity\_update\_behavior: optional "automatic"or "reauth"or "no\_action"
+identity\_update\_behavior: optional "automatic" or "reauth" or "no\_action"
 
 Indicates how a SCIM event updates a user identity used for policy evaluation. Use “automatic” to automatically update a user’s identity and augment it with fields from the SCIM user resource. Use “reauth” to force re-authentication on group membership updates, user identity update will only occur after successful re-authentication. With “reauth” identities will not contain fields from the SCIM user resource. With “no\_action” identities will not be changed by SCIM updates in any way and users will not be prompted to reauthenticate.
 
@@ -884,7 +884,7 @@ A flag to enable revoking a user’s session in Access and Gateway when they hav
 
 <summary>
 
-AccessFacebook object {config, name, type, 5 more }
+AccessFacebook object { config, name, type, 5 more }
 
 </summary>
 
@@ -1022,7 +1022,7 @@ Indicates that the identity provider is immutable and cannot be updated or delet
 
 <summary>
 
-saml\_certificate\_set: optional object {created\_at, uid, updated\_at, 2 more }
+saml\_certificate\_set: optional object { created\_at, uid, updated\_at, 2 more }
 
 The SAML encryption certificate set details, including current and previous certificates. Only present for SAML identity providers with a certificate set assigned.
 
@@ -1056,7 +1056,7 @@ formatdate-time
 
 <summary>
 
-current\_certificate: optional object {is\_current, not\_after, public\_certificate, uid }
+current\_certificate: optional object { is\_current, not\_after, public\_certificate, uid }
 
 The currently active certificate used for encrypting SAML assertions
 
@@ -1132,7 +1132,7 @@ A flag to enable or disable SCIM for the identity provider.
 
 <summary>
 
-identity\_update\_behavior: optional "automatic"or "reauth"or "no\_action"
+identity\_update\_behavior: optional "automatic" or "reauth" or "no\_action"
 
 Indicates how a SCIM event updates a user identity used for policy evaluation. Use “automatic” to automatically update a user’s identity and augment it with fields from the SCIM user resource. Use “reauth” to force re-authentication on group membership updates, user identity update will only occur after successful re-authentication. With “reauth” identities will not contain fields from the SCIM user resource. With “no\_action” identities will not be changed by SCIM updates in any way and users will not be prompted to reauthenticate.
 
@@ -1192,7 +1192,7 @@ A flag to enable revoking a user’s session in Access and Gateway when they hav
 
 <summary>
 
-AccessGitHub object {config, name, type, 5 more }
+AccessGitHub object { config, name, type, 5 more }
 
 </summary>
 
@@ -1330,7 +1330,7 @@ Indicates that the identity provider is immutable and cannot be updated or delet
 
 <summary>
 
-saml\_certificate\_set: optional object {created\_at, uid, updated\_at, 2 more }
+saml\_certificate\_set: optional object { created\_at, uid, updated\_at, 2 more }
 
 The SAML encryption certificate set details, including current and previous certificates. Only present for SAML identity providers with a certificate set assigned.
 
@@ -1364,7 +1364,7 @@ formatdate-time
 
 <summary>
 
-current\_certificate: optional object {is\_current, not\_after, public\_certificate, uid }
+current\_certificate: optional object { is\_current, not\_after, public\_certificate, uid }
 
 The currently active certificate used for encrypting SAML assertions
 
@@ -1440,7 +1440,7 @@ A flag to enable or disable SCIM for the identity provider.
 
 <summary>
 
-identity\_update\_behavior: optional "automatic"or "reauth"or "no\_action"
+identity\_update\_behavior: optional "automatic" or "reauth" or "no\_action"
 
 Indicates how a SCIM event updates a user identity used for policy evaluation. Use “automatic” to automatically update a user’s identity and augment it with fields from the SCIM user resource. Use “reauth” to force re-authentication on group membership updates, user identity update will only occur after successful re-authentication. With “reauth” identities will not contain fields from the SCIM user resource. With “no\_action” identities will not be changed by SCIM updates in any way and users will not be prompted to reauthenticate.
 
@@ -1500,7 +1500,7 @@ A flag to enable revoking a user’s session in Access and Gateway when they hav
 
 <summary>
 
-AccessGoogle object {config, name, type, 5 more }
+AccessGoogle object { config, name, type, 5 more }
 
 </summary>
 
@@ -1508,7 +1508,7 @@ AccessGoogle object {config, name, type, 5 more }
 
 <summary>
 
-config: object {claims, client\_id, client\_secret, email\_claim\_name }
+config: object { claims, client\_id, client\_secret, email\_claim\_name }
 
 The configuration parameters for the identity provider. To view the required parameters for a specific provider, refer to our <a href="https://developers.cloudflare.com/cloudflare-one/identity/idp-integration/">developer documentation</a>.
 
@@ -1650,7 +1650,7 @@ Indicates that the identity provider is immutable and cannot be updated or delet
 
 <summary>
 
-saml\_certificate\_set: optional object {created\_at, uid, updated\_at, 2 more }
+saml\_certificate\_set: optional object { created\_at, uid, updated\_at, 2 more }
 
 The SAML encryption certificate set details, including current and previous certificates. Only present for SAML identity providers with a certificate set assigned.
 
@@ -1684,7 +1684,7 @@ formatdate-time
 
 <summary>
 
-current\_certificate: optional object {is\_current, not\_after, public\_certificate, uid }
+current\_certificate: optional object { is\_current, not\_after, public\_certificate, uid }
 
 The currently active certificate used for encrypting SAML assertions
 
@@ -1760,7 +1760,7 @@ A flag to enable or disable SCIM for the identity provider.
 
 <summary>
 
-identity\_update\_behavior: optional "automatic"or "reauth"or "no\_action"
+identity\_update\_behavior: optional "automatic" or "reauth" or "no\_action"
 
 Indicates how a SCIM event updates a user identity used for policy evaluation. Use “automatic” to automatically update a user’s identity and augment it with fields from the SCIM user resource. Use “reauth” to force re-authentication on group membership updates, user identity update will only occur after successful re-authentication. With “reauth” identities will not contain fields from the SCIM user resource. With “no\_action” identities will not be changed by SCIM updates in any way and users will not be prompted to reauthenticate.
 
@@ -1820,7 +1820,7 @@ A flag to enable revoking a user’s session in Access and Gateway when they hav
 
 <summary>
 
-AccessGoogleApps object {config, name, type, 5 more }
+AccessGoogleApps object { config, name, type, 5 more }
 
 </summary>
 
@@ -1828,7 +1828,7 @@ AccessGoogleApps object {config, name, type, 5 more }
 
 <summary>
 
-config: object {apps\_domain, claims, client\_id, 4 more }
+config: object { apps\_domain, claims, client\_id, 4 more }
 
 The configuration parameters for the identity provider. To view the required parameters for a specific provider, refer to our <a href="https://developers.cloudflare.com/cloudflare-one/identity/idp-integration/">developer documentation</a>.
 
@@ -1868,7 +1868,7 @@ The claim name for email in the id\_token response.
 
 <summary>
 
-prompt: optional "none"or "consent"or "select\_account"
+prompt: optional "none" or "consent" or "select\_account"
 
 Configures the prompt behavior for Google authentication.
 
@@ -2010,7 +2010,7 @@ Indicates that the identity provider is immutable and cannot be updated or delet
 
 <summary>
 
-saml\_certificate\_set: optional object {created\_at, uid, updated\_at, 2 more }
+saml\_certificate\_set: optional object { created\_at, uid, updated\_at, 2 more }
 
 The SAML encryption certificate set details, including current and previous certificates. Only present for SAML identity providers with a certificate set assigned.
 
@@ -2044,7 +2044,7 @@ formatdate-time
 
 <summary>
 
-current\_certificate: optional object {is\_current, not\_after, public\_certificate, uid }
+current\_certificate: optional object { is\_current, not\_after, public\_certificate, uid }
 
 The currently active certificate used for encrypting SAML assertions
 
@@ -2120,7 +2120,7 @@ A flag to enable or disable SCIM for the identity provider.
 
 <summary>
 
-identity\_update\_behavior: optional "automatic"or "reauth"or "no\_action"
+identity\_update\_behavior: optional "automatic" or "reauth" or "no\_action"
 
 Indicates how a SCIM event updates a user identity used for policy evaluation. Use “automatic” to automatically update a user’s identity and augment it with fields from the SCIM user resource. Use “reauth” to force re-authentication on group membership updates, user identity update will only occur after successful re-authentication. With “reauth” identities will not contain fields from the SCIM user resource. With “no\_action” identities will not be changed by SCIM updates in any way and users will not be prompted to reauthenticate.
 
@@ -2180,7 +2180,7 @@ A flag to enable revoking a user’s session in Access and Gateway when they hav
 
 <summary>
 
-AccessLinkedin object {config, name, type, 5 more }
+AccessLinkedin object { config, name, type, 5 more }
 
 </summary>
 
@@ -2318,7 +2318,7 @@ Indicates that the identity provider is immutable and cannot be updated or delet
 
 <summary>
 
-saml\_certificate\_set: optional object {created\_at, uid, updated\_at, 2 more }
+saml\_certificate\_set: optional object { created\_at, uid, updated\_at, 2 more }
 
 The SAML encryption certificate set details, including current and previous certificates. Only present for SAML identity providers with a certificate set assigned.
 
@@ -2352,7 +2352,7 @@ formatdate-time
 
 <summary>
 
-current\_certificate: optional object {is\_current, not\_after, public\_certificate, uid }
+current\_certificate: optional object { is\_current, not\_after, public\_certificate, uid }
 
 The currently active certificate used for encrypting SAML assertions
 
@@ -2428,7 +2428,7 @@ A flag to enable or disable SCIM for the identity provider.
 
 <summary>
 
-identity\_update\_behavior: optional "automatic"or "reauth"or "no\_action"
+identity\_update\_behavior: optional "automatic" or "reauth" or "no\_action"
 
 Indicates how a SCIM event updates a user identity used for policy evaluation. Use “automatic” to automatically update a user’s identity and augment it with fields from the SCIM user resource. Use “reauth” to force re-authentication on group membership updates, user identity update will only occur after successful re-authentication. With “reauth” identities will not contain fields from the SCIM user resource. With “no\_action” identities will not be changed by SCIM updates in any way and users will not be prompted to reauthenticate.
 
@@ -2488,7 +2488,7 @@ A flag to enable revoking a user’s session in Access and Gateway when they hav
 
 <summary>
 
-AccessOIDC object {config, name, type, 5 more }
+AccessOIDC object { config, name, type, 5 more }
 
 </summary>
 
@@ -2496,7 +2496,7 @@ AccessOIDC object {config, name, type, 5 more }
 
 <summary>
 
-config: object {auth\_url, certs\_url, claims, 6 more }
+config: object { auth\_url, certs\_url, claims, 6 more }
 
 The configuration parameters for the identity provider. To view the required parameters for a specific provider, refer to our <a href="https://developers.cloudflare.com/cloudflare-one/identity/idp-integration/">developer documentation</a>.
 
@@ -2668,7 +2668,7 @@ Indicates that the identity provider is immutable and cannot be updated or delet
 
 <summary>
 
-saml\_certificate\_set: optional object {created\_at, uid, updated\_at, 2 more }
+saml\_certificate\_set: optional object { created\_at, uid, updated\_at, 2 more }
 
 The SAML encryption certificate set details, including current and previous certificates. Only present for SAML identity providers with a certificate set assigned.
 
@@ -2702,7 +2702,7 @@ formatdate-time
 
 <summary>
 
-current\_certificate: optional object {is\_current, not\_after, public\_certificate, uid }
+current\_certificate: optional object { is\_current, not\_after, public\_certificate, uid }
 
 The currently active certificate used for encrypting SAML assertions
 
@@ -2778,7 +2778,7 @@ A flag to enable or disable SCIM for the identity provider.
 
 <summary>
 
-identity\_update\_behavior: optional "automatic"or "reauth"or "no\_action"
+identity\_update\_behavior: optional "automatic" or "reauth" or "no\_action"
 
 Indicates how a SCIM event updates a user identity used for policy evaluation. Use “automatic” to automatically update a user’s identity and augment it with fields from the SCIM user resource. Use “reauth” to force re-authentication on group membership updates, user identity update will only occur after successful re-authentication. With “reauth” identities will not contain fields from the SCIM user resource. With “no\_action” identities will not be changed by SCIM updates in any way and users will not be prompted to reauthenticate.
 
@@ -2838,7 +2838,7 @@ A flag to enable revoking a user’s session in Access and Gateway when they hav
 
 <summary>
 
-AccessDuo object {config, name, type, 5 more }
+AccessDuo object { config, name, type, 5 more }
 
 </summary>
 
@@ -2846,7 +2846,7 @@ AccessDuo object {config, name, type, 5 more }
 
 <summary>
 
-config: object {client\_id, client\_secret, issuer\_url }
+config: object { client\_id, client\_secret, issuer\_url }
 
 The configuration parameters for the identity provider. To view the required parameters for a specific provider, refer to our <a href="https://developers.cloudflare.com/cloudflare-one/identity/idp-integration/">developer documentation</a>.
 
@@ -2984,7 +2984,7 @@ Indicates that the identity provider is immutable and cannot be updated or delet
 
 <summary>
 
-saml\_certificate\_set: optional object {created\_at, uid, updated\_at, 2 more }
+saml\_certificate\_set: optional object { created\_at, uid, updated\_at, 2 more }
 
 The SAML encryption certificate set details, including current and previous certificates. Only present for SAML identity providers with a certificate set assigned.
 
@@ -3018,7 +3018,7 @@ formatdate-time
 
 <summary>
 
-current\_certificate: optional object {is\_current, not\_after, public\_certificate, uid }
+current\_certificate: optional object { is\_current, not\_after, public\_certificate, uid }
 
 The currently active certificate used for encrypting SAML assertions
 
@@ -3094,7 +3094,7 @@ A flag to enable or disable SCIM for the identity provider.
 
 <summary>
 
-identity\_update\_behavior: optional "automatic"or "reauth"or "no\_action"
+identity\_update\_behavior: optional "automatic" or "reauth" or "no\_action"
 
 Indicates how a SCIM event updates a user identity used for policy evaluation. Use “automatic” to automatically update a user’s identity and augment it with fields from the SCIM user resource. Use “reauth” to force re-authentication on group membership updates, user identity update will only occur after successful re-authentication. With “reauth” identities will not contain fields from the SCIM user resource. With “no\_action” identities will not be changed by SCIM updates in any way and users will not be prompted to reauthenticate.
 
@@ -3154,7 +3154,7 @@ A flag to enable revoking a user’s session in Access and Gateway when they hav
 
 <summary>
 
-AccessOkta object {config, name, type, 5 more }
+AccessOkta object { config, name, type, 5 more }
 
 </summary>
 
@@ -3162,7 +3162,7 @@ AccessOkta object {config, name, type, 5 more }
 
 <summary>
 
-config: object {authorization\_server\_id, claims, client\_id, 3 more }
+config: object { authorization\_server\_id, claims, client\_id, 3 more }
 
 The configuration parameters for the identity provider. To view the required parameters for a specific provider, refer to our <a href="https://developers.cloudflare.com/cloudflare-one/identity/idp-integration/">developer documentation</a>.
 
@@ -3316,7 +3316,7 @@ Indicates that the identity provider is immutable and cannot be updated or delet
 
 <summary>
 
-saml\_certificate\_set: optional object {created\_at, uid, updated\_at, 2 more }
+saml\_certificate\_set: optional object { created\_at, uid, updated\_at, 2 more }
 
 The SAML encryption certificate set details, including current and previous certificates. Only present for SAML identity providers with a certificate set assigned.
 
@@ -3350,7 +3350,7 @@ formatdate-time
 
 <summary>
 
-current\_certificate: optional object {is\_current, not\_after, public\_certificate, uid }
+current\_certificate: optional object { is\_current, not\_after, public\_certificate, uid }
 
 The currently active certificate used for encrypting SAML assertions
 
@@ -3426,7 +3426,7 @@ A flag to enable or disable SCIM for the identity provider.
 
 <summary>
 
-identity\_update\_behavior: optional "automatic"or "reauth"or "no\_action"
+identity\_update\_behavior: optional "automatic" or "reauth" or "no\_action"
 
 Indicates how a SCIM event updates a user identity used for policy evaluation. Use “automatic” to automatically update a user’s identity and augment it with fields from the SCIM user resource. Use “reauth” to force re-authentication on group membership updates, user identity update will only occur after successful re-authentication. With “reauth” identities will not contain fields from the SCIM user resource. With “no\_action” identities will not be changed by SCIM updates in any way and users will not be prompted to reauthenticate.
 
@@ -3486,7 +3486,7 @@ A flag to enable revoking a user’s session in Access and Gateway when they hav
 
 <summary>
 
-AccessOnelogin object {config, name, type, 5 more }
+AccessOnelogin object { config, name, type, 5 more }
 
 </summary>
 
@@ -3494,7 +3494,7 @@ AccessOnelogin object {config, name, type, 5 more }
 
 <summary>
 
-config: object {claims, client\_id, client\_secret, 2 more }
+config: object { claims, client\_id, client\_secret, 2 more }
 
 The configuration parameters for the identity provider. To view the required parameters for a specific provider, refer to our <a href="https://developers.cloudflare.com/cloudflare-one/identity/idp-integration/">developer documentation</a>.
 
@@ -3642,7 +3642,7 @@ Indicates that the identity provider is immutable and cannot be updated or delet
 
 <summary>
 
-saml\_certificate\_set: optional object {created\_at, uid, updated\_at, 2 more }
+saml\_certificate\_set: optional object { created\_at, uid, updated\_at, 2 more }
 
 The SAML encryption certificate set details, including current and previous certificates. Only present for SAML identity providers with a certificate set assigned.
 
@@ -3676,7 +3676,7 @@ formatdate-time
 
 <summary>
 
-current\_certificate: optional object {is\_current, not\_after, public\_certificate, uid }
+current\_certificate: optional object { is\_current, not\_after, public\_certificate, uid }
 
 The currently active certificate used for encrypting SAML assertions
 
@@ -3752,7 +3752,7 @@ A flag to enable or disable SCIM for the identity provider.
 
 <summary>
 
-identity\_update\_behavior: optional "automatic"or "reauth"or "no\_action"
+identity\_update\_behavior: optional "automatic" or "reauth" or "no\_action"
 
 Indicates how a SCIM event updates a user identity used for policy evaluation. Use “automatic” to automatically update a user’s identity and augment it with fields from the SCIM user resource. Use “reauth” to force re-authentication on group membership updates, user identity update will only occur after successful re-authentication. With “reauth” identities will not contain fields from the SCIM user resource. With “no\_action” identities will not be changed by SCIM updates in any way and users will not be prompted to reauthenticate.
 
@@ -3812,7 +3812,7 @@ A flag to enable revoking a user’s session in Access and Gateway when they hav
 
 <summary>
 
-AccessPingone object {config, name, type, 5 more }
+AccessPingone object { config, name, type, 5 more }
 
 </summary>
 
@@ -3820,7 +3820,7 @@ AccessPingone object {config, name, type, 5 more }
 
 <summary>
 
-config: object {claims, client\_id, client\_secret, 2 more }
+config: object { claims, client\_id, client\_secret, 2 more }
 
 The configuration parameters for the identity provider. To view the required parameters for a specific provider, refer to our <a href="https://developers.cloudflare.com/cloudflare-one/identity/idp-integration/">developer documentation</a>.
 
@@ -3968,7 +3968,7 @@ Indicates that the identity provider is immutable and cannot be updated or delet
 
 <summary>
 
-saml\_certificate\_set: optional object {created\_at, uid, updated\_at, 2 more }
+saml\_certificate\_set: optional object { created\_at, uid, updated\_at, 2 more }
 
 The SAML encryption certificate set details, including current and previous certificates. Only present for SAML identity providers with a certificate set assigned.
 
@@ -4002,7 +4002,7 @@ formatdate-time
 
 <summary>
 
-current\_certificate: optional object {is\_current, not\_after, public\_certificate, uid }
+current\_certificate: optional object { is\_current, not\_after, public\_certificate, uid }
 
 The currently active certificate used for encrypting SAML assertions
 
@@ -4078,7 +4078,7 @@ A flag to enable or disable SCIM for the identity provider.
 
 <summary>
 
-identity\_update\_behavior: optional "automatic"or "reauth"or "no\_action"
+identity\_update\_behavior: optional "automatic" or "reauth" or "no\_action"
 
 Indicates how a SCIM event updates a user identity used for policy evaluation. Use “automatic” to automatically update a user’s identity and augment it with fields from the SCIM user resource. Use “reauth” to force re-authentication on group membership updates, user identity update will only occur after successful re-authentication. With “reauth” identities will not contain fields from the SCIM user resource. With “no\_action” identities will not be changed by SCIM updates in any way and users will not be prompted to reauthenticate.
 
@@ -4138,7 +4138,7 @@ A flag to enable revoking a user’s session in Access and Gateway when they hav
 
 <summary>
 
-AccessSAML object {config, name, type, 5 more }
+AccessSAML object { config, name, type, 5 more }
 
 </summary>
 
@@ -4146,7 +4146,7 @@ AccessSAML object {config, name, type, 5 more }
 
 <summary>
 
-config: object {attributes, email\_attribute\_name, enable\_encryption, 8 more }
+config: object { attributes, email\_attribute\_name, enable\_encryption, 8 more }
 
 The configuration parameters for the identity provider. To view the required parameters for a specific provider, refer to our <a href="https://developers.cloudflare.com/cloudflare-one/identity/idp-integration/">developer documentation</a>.
 
@@ -4188,7 +4188,7 @@ Asks the IdP to reauthenticate the user for each SAML authentication request.
 
 <summary>
 
-header\_attributes: optional array of object {attribute\_name, header\_name }
+header\_attributes: optional array of object { attribute\_name, header\_name }
 
 Add a list of attribute names that will be returned in the response header from the Access callback.
 
@@ -4364,7 +4364,7 @@ Indicates that the identity provider is immutable and cannot be updated or delet
 
 <summary>
 
-saml\_certificate\_set: optional object {created\_at, uid, updated\_at, 2 more }
+saml\_certificate\_set: optional object { created\_at, uid, updated\_at, 2 more }
 
 The SAML encryption certificate set details, including current and previous certificates. Only present for SAML identity providers with a certificate set assigned.
 
@@ -4398,7 +4398,7 @@ formatdate-time
 
 <summary>
 
-current\_certificate: optional object {is\_current, not\_after, public\_certificate, uid }
+current\_certificate: optional object { is\_current, not\_after, public\_certificate, uid }
 
 The currently active certificate used for encrypting SAML assertions
 
@@ -4474,7 +4474,7 @@ A flag to enable or disable SCIM for the identity provider.
 
 <summary>
 
-identity\_update\_behavior: optional "automatic"or "reauth"or "no\_action"
+identity\_update\_behavior: optional "automatic" or "reauth" or "no\_action"
 
 Indicates how a SCIM event updates a user identity used for policy evaluation. Use “automatic” to automatically update a user’s identity and augment it with fields from the SCIM user resource. Use “reauth” to force re-authentication on group membership updates, user identity update will only occur after successful re-authentication. With “reauth” identities will not contain fields from the SCIM user resource. With “no\_action” identities will not be changed by SCIM updates in any way and users will not be prompted to reauthenticate.
 
@@ -4534,7 +4534,7 @@ A flag to enable revoking a user’s session in Access and Gateway when they hav
 
 <summary>
 
-AccessYandex object {config, name, type, 5 more }
+AccessYandex object { config, name, type, 5 more }
 
 </summary>
 
@@ -4672,7 +4672,7 @@ Indicates that the identity provider is immutable and cannot be updated or delet
 
 <summary>
 
-saml\_certificate\_set: optional object {created\_at, uid, updated\_at, 2 more }
+saml\_certificate\_set: optional object { created\_at, uid, updated\_at, 2 more }
 
 The SAML encryption certificate set details, including current and previous certificates. Only present for SAML identity providers with a certificate set assigned.
 
@@ -4706,7 +4706,7 @@ formatdate-time
 
 <summary>
 
-current\_certificate: optional object {is\_current, not\_after, public\_certificate, uid }
+current\_certificate: optional object { is\_current, not\_after, public\_certificate, uid }
 
 The currently active certificate used for encrypting SAML assertions
 
@@ -4782,7 +4782,7 @@ A flag to enable or disable SCIM for the identity provider.
 
 <summary>
 
-identity\_update\_behavior: optional "automatic"or "reauth"or "no\_action"
+identity\_update\_behavior: optional "automatic" or "reauth" or "no\_action"
 
 Indicates how a SCIM event updates a user identity used for policy evaluation. Use “automatic” to automatically update a user’s identity and augment it with fields from the SCIM user resource. Use “reauth” to force re-authentication on group membership updates, user identity update will only occur after successful re-authentication. With “reauth” identities will not contain fields from the SCIM user resource. With “no\_action” identities will not be changed by SCIM updates in any way and users will not be prompted to reauthenticate.
 
@@ -4842,7 +4842,7 @@ A flag to enable revoking a user’s session in Access and Gateway when they hav
 
 <summary>
 
-AccessOnetimepin object {config, name, type, 5 more }
+AccessOnetimepin object { config, name, type, 5 more }
 
 </summary>
 
@@ -4850,7 +4850,7 @@ AccessOnetimepin object {config, name, type, 5 more }
 
 <summary>
 
-config: object {redirect\_url }
+config: object { redirect\_url }
 
 The configuration parameters for the identity provider. To view the required parameters for a specific provider, refer to our <a href="https://developers.cloudflare.com/cloudflare-one/identity/idp-integration/">developer documentation</a>.
 
@@ -4972,7 +4972,7 @@ Indicates that the identity provider is immutable and cannot be updated or delet
 
 <summary>
 
-saml\_certificate\_set: optional object {created\_at, uid, updated\_at, 2 more }
+saml\_certificate\_set: optional object { created\_at, uid, updated\_at, 2 more }
 
 The SAML encryption certificate set details, including current and previous certificates. Only present for SAML identity providers with a certificate set assigned.
 
@@ -5006,7 +5006,7 @@ formatdate-time
 
 <summary>
 
-current\_certificate: optional object {is\_current, not\_after, public\_certificate, uid }
+current\_certificate: optional object { is\_current, not\_after, public\_certificate, uid }
 
 The currently active certificate used for encrypting SAML assertions
 
@@ -5082,7 +5082,7 @@ A flag to enable or disable SCIM for the identity provider.
 
 <summary>
 
-identity\_update\_behavior: optional "automatic"or "reauth"or "no\_action"
+identity\_update\_behavior: optional "automatic" or "reauth" or "no\_action"
 
 Indicates how a SCIM event updates a user identity used for policy evaluation. Use “automatic” to automatically update a user’s identity and augment it with fields from the SCIM user resource. Use “reauth” to force re-authentication on group membership updates, user identity update will only occur after successful re-authentication. With “reauth” identities will not contain fields from the SCIM user resource. With “no\_action” identities will not be changed by SCIM updates in any way and users will not be prompted to reauthenticate.
 
@@ -5142,7 +5142,7 @@ A flag to enable revoking a user’s session in Access and Gateway when they hav
 
 <summary>
 
-AccessCloudflare object {config, name, type, 5 more }
+AccessCloudflare object { config, name, type, 5 more }
 
 </summary>
 
@@ -5150,7 +5150,7 @@ AccessCloudflare object {config, name, type, 5 more }
 
 <summary>
 
-config: object {redirect\_url, restrict\_to\_account\_members }
+config: object { redirect\_url, restrict\_to\_account\_members }
 
 The configuration parameters for the identity provider. To view the required parameters for a specific provider, refer to our <a href="https://developers.cloudflare.com/cloudflare-one/identity/idp-integration/">developer documentation</a>.
 
@@ -5278,7 +5278,7 @@ Indicates that the identity provider is immutable and cannot be updated or delet
 
 <summary>
 
-saml\_certificate\_set: optional object {created\_at, uid, updated\_at, 2 more }
+saml\_certificate\_set: optional object { created\_at, uid, updated\_at, 2 more }
 
 The SAML encryption certificate set details, including current and previous certificates. Only present for SAML identity providers with a certificate set assigned.
 
@@ -5312,7 +5312,7 @@ formatdate-time
 
 <summary>
 
-current\_certificate: optional object {is\_current, not\_after, public\_certificate, uid }
+current\_certificate: optional object { is\_current, not\_after, public\_certificate, uid }
 
 The currently active certificate used for encrypting SAML assertions
 
@@ -5388,7 +5388,7 @@ A flag to enable or disable SCIM for the identity provider.
 
 <summary>
 
-identity\_update\_behavior: optional "automatic"or "reauth"or "no\_action"
+identity\_update\_behavior: optional "automatic" or "reauth" or "no\_action"
 
 Indicates how a SCIM event updates a user identity used for policy evaluation. Use “automatic” to automatically update a user’s identity and augment it with fields from the SCIM user resource. Use “reauth” to force re-authentication on group membership updates, user identity update will only occur after successful re-authentication. With “reauth” identities will not contain fields from the SCIM user resource. With “no\_action” identities will not be changed by SCIM updates in any way and users will not be prompted to reauthenticate.
 
@@ -5448,7 +5448,7 @@ A flag to enable revoking a user’s session in Access and Gateway when they hav
 
 <summary>
 
-AccessPasskeys object {config, name, type, 5 more }
+AccessPasskeys object { config, name, type, 5 more }
 
 </summary>
 
@@ -5456,7 +5456,7 @@ AccessPasskeys object {config, name, type, 5 more }
 
 <summary>
 
-config: object {login\_page\_auto\_prompt, redirect\_url }
+config: object { login\_page\_auto\_prompt, redirect\_url }
 
 The configuration parameters for the identity provider. To view the required parameters for a specific provider, refer to our <a href="https://developers.cloudflare.com/cloudflare-one/identity/idp-integration/">developer documentation</a>.
 
@@ -5584,7 +5584,7 @@ Indicates that the identity provider is immutable and cannot be updated or delet
 
 <summary>
 
-saml\_certificate\_set: optional object {created\_at, uid, updated\_at, 2 more }
+saml\_certificate\_set: optional object { created\_at, uid, updated\_at, 2 more }
 
 The SAML encryption certificate set details, including current and previous certificates. Only present for SAML identity providers with a certificate set assigned.
 
@@ -5618,7 +5618,7 @@ formatdate-time
 
 <summary>
 
-current\_certificate: optional object {is\_current, not\_after, public\_certificate, uid }
+current\_certificate: optional object { is\_current, not\_after, public\_certificate, uid }
 
 The currently active certificate used for encrypting SAML assertions
 
@@ -5694,7 +5694,7 @@ A flag to enable or disable SCIM for the identity provider.
 
 <summary>
 
-identity\_update\_behavior: optional "automatic"or "reauth"or "no\_action"
+identity\_update\_behavior: optional "automatic" or "reauth" or "no\_action"
 
 Indicates how a SCIM event updates a user identity used for policy evaluation. Use “automatic” to automatically update a user’s identity and augment it with fields from the SCIM user resource. Use “reauth” to force re-authentication on group membership updates, user identity update will only occur after successful re-authentication. With “reauth” identities will not contain fields from the SCIM user resource. With “no\_action” identities will not be changed by SCIM updates in any way and users will not be prompted to reauthenticate.
 

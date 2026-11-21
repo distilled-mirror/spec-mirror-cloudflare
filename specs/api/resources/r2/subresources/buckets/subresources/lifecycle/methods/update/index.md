@@ -60,7 +60,7 @@ minLength3
 
 <summary>
 
-"cf-r2-jurisdiction": optional "default"or "eu"or "us"or 2 more
+"cf-r2-jurisdiction": optional "default" or "eu" or "us" or 2 more
 
 </summary>
 
@@ -96,7 +96,7 @@ One of the following:
 
 <summary>
 
-rules: optional array of object {id, conditions, enabled, 3 more }
+rules: optional array of object { id, conditions, enabled, 3 more }
 
 </summary>
 
@@ -110,7 +110,7 @@ Unique identifier for this rule.
 
 <summary>
 
-conditions: object {prefix }
+conditions: object { prefix }
 
 Conditions that apply to all transitions of this rule.
 
@@ -136,7 +136,7 @@ Whether or not this rule is in effect.
 
 <summary>
 
-abortMultipartUploadsTransition: optional object {condition }
+abortMultipartUploadsTransition: optional object { condition }
 
 Transition to abort ongoing multipart uploads.
 
@@ -146,7 +146,7 @@ Transition to abort ongoing multipart uploads.
 
 <summary>
 
-condition: optional object {maxAge, type }
+condition: optional object { maxAge, type }
 
 Condition for lifecycle transitions to apply after an object reaches an age in seconds.
 
@@ -172,7 +172,7 @@ type: "Age"
 
 <summary>
 
-deleteObjectsTransition: optional object {condition }
+deleteObjectsTransition: optional object { condition }
 
 Transition to delete objects.
 
@@ -182,7 +182,7 @@ Transition to delete objects.
 
 <summary>
 
-condition: optional object {maxAge, type } or object {date, type }
+condition: optional object { maxAge, type } or object { date, type }
 
 Condition for lifecycle transitions to apply after an object reaches an age in seconds.
 
@@ -194,7 +194,7 @@ One of the following:
 
 <summary>
 
-R2LifecycleAgeCondition object {maxAge, type }
+R2LifecycleAgeCondition object { maxAge, type }
 
 Condition for lifecycle transitions to apply after an object reaches an age in seconds.
 
@@ -216,7 +216,7 @@ type: "Age"
 
 <summary>
 
-R2LifecycleDateCondition object {date, type }
+R2LifecycleDateCondition object { date, type }
 
 Condition for lifecycle transitions to apply on a specific date.
 
@@ -248,7 +248,7 @@ type: "Date"
 
 <summary>
 
-storageClassTransitions: optional array of object {condition, storageClass }
+storageClassTransitions: optional array of object { condition, storageClass }
 
 Transitions to change the storage class of objects.
 
@@ -258,7 +258,7 @@ Transitions to change the storage class of objects.
 
 <summary>
 
-condition: object {maxAge, type } or object {date, type }
+condition: object { maxAge, type } or object { date, type }
 
 Condition for lifecycle transitions to apply after an object reaches an age in seconds.
 
@@ -270,7 +270,7 @@ One of the following:
 
 <summary>
 
-R2LifecycleAgeCondition object {maxAge, type }
+R2LifecycleAgeCondition object { maxAge, type }
 
 Condition for lifecycle transitions to apply after an object reaches an age in seconds.
 
@@ -292,7 +292,7 @@ type: "Age"
 
 <summary>
 
-R2LifecycleDateCondition object {date, type }
+R2LifecycleDateCondition object { date, type }
 
 Condition for lifecycle transitions to apply on a specific date.
 
@@ -356,7 +356,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 

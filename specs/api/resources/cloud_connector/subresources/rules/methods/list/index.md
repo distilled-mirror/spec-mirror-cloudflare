@@ -74,7 +74,7 @@ maxLength32
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -96,7 +96,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -116,7 +116,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -138,7 +138,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -164,7 +164,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional array of object {id, description, enabled, 3 more }
+result: optional array of object { id, description, enabled, 3 more }
 
 List of Cloud Connector rules
 
@@ -190,7 +190,7 @@ expression: optional string
 
 <summary>
 
-parameters: optional object {host }
+parameters: optional object { host }
 
 Parameters of Cloud Connector Rule
 
@@ -210,7 +210,7 @@ Host to perform Cloud Connection to
 
 <summary>
 
-provider: optional "aws\_s3"or "cloudflare\_r2"or "gcp\_storage"or 2 more
+provider: optional "aws\_s3" or "cloudflare\_r2" or "gcp\_storage" or 2 more
 
 Cloud Provider type
 

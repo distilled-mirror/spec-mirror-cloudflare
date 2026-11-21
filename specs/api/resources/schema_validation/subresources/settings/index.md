@@ -36,7 +36,7 @@ PATCH/zones/{zone\_id}/schema\_validation/settings
 
 <summary>
 
-SettingGetResponse object {validation\_default\_mitigation\_action, validation\_override\_mitigation\_action }
+SettingGetResponse object { validation\_default\_mitigation\_action, validation\_override\_mitigation\_action }
 
 </summary>
 
@@ -44,7 +44,7 @@ SettingGetResponse object {validation\_default\_mitigation\_action, validation\_
 
 <summary>
 
-validation\_default\_mitigation\_action: "none"or "log"or "block"
+validation\_default\_mitigation\_action: "none" or "log" or "block"
 
 The default mitigation action used
 
@@ -90,7 +90,7 @@ When not null, this overrides global both zone level and operation level mitigat
 
 <summary>
 
-SettingUpdateResponse object {validation\_default\_mitigation\_action, validation\_override\_mitigation\_action }
+SettingUpdateResponse object { validation\_default\_mitigation\_action, validation\_override\_mitigation\_action }
 
 </summary>
 
@@ -98,7 +98,7 @@ SettingUpdateResponse object {validation\_default\_mitigation\_action, validatio
 
 <summary>
 
-validation\_default\_mitigation\_action: "none"or "log"or "block"
+validation\_default\_mitigation\_action: "none" or "log" or "block"
 
 The default mitigation action used
 
@@ -144,7 +144,7 @@ When not null, this overrides global both zone level and operation level mitigat
 
 <summary>
 
-SettingEditResponse object {validation\_default\_mitigation\_action, validation\_override\_mitigation\_action }
+SettingEditResponse object { validation\_default\_mitigation\_action, validation\_override\_mitigation\_action }
 
 </summary>
 
@@ -152,7 +152,7 @@ SettingEditResponse object {validation\_default\_mitigation\_action, validation\
 
 <summary>
 
-validation\_default\_mitigation\_action: "none"or "log"or "block"
+validation\_default\_mitigation\_action: "none" or "log" or "block"
 
 The default mitigation action used
 
@@ -222,7 +222,7 @@ DELETE/zones/{zone\_id}/schema\_validation/settings/operations/{operation\_id}
 
 <summary>
 
-OperationListResponse object {mitigation\_action, operation\_id }
+OperationListResponse object { mitigation\_action, operation\_id }
 
 </summary>
 
@@ -230,7 +230,7 @@ OperationListResponse object {mitigation\_action, operation\_id }
 
 <summary>
 
-mitigation\_action: "log"or "block"or "none"
+mitigation\_action: "log" or "block" or "none"
 
 When set, this applies a mitigation action to this operation which supersedes a global schema validation setting just for this operation
 
@@ -276,7 +276,7 @@ minLength36
 
 <summary>
 
-OperationGetResponse object {mitigation\_action, operation\_id }
+OperationGetResponse object { mitigation\_action, operation\_id }
 
 </summary>
 
@@ -284,7 +284,7 @@ OperationGetResponse object {mitigation\_action, operation\_id }
 
 <summary>
 
-mitigation\_action: "log"or "block"or "none"
+mitigation\_action: "log" or "block" or "none"
 
 When set, this applies a mitigation action to this operation which supersedes a global schema validation setting just for this operation
 
@@ -330,7 +330,7 @@ minLength36
 
 <summary>
 
-OperationUpdateResponse object {mitigation\_action, operation\_id }
+OperationUpdateResponse object { mitigation\_action, operation\_id }
 
 </summary>
 
@@ -338,7 +338,7 @@ OperationUpdateResponse object {mitigation\_action, operation\_id }
 
 <summary>
 
-mitigation\_action: "log"or "block"or "none"
+mitigation\_action: "log" or "block" or "none"
 
 When set, this applies a mitigation action to this operation which supersedes a global schema validation setting just for this operation
 
@@ -384,7 +384,7 @@ minLength36
 
 <summary>
 
-OperationBulkEditResponse = map\[object {mitigation\_action } ]
+OperationBulkEditResponse = map\[object { mitigation\_action } ]
 
 Operation ID to updated mitigation action mapping
 
@@ -394,7 +394,7 @@ Operation ID to updated mitigation action mapping
 
 <summary>
 
-mitigation\_action: optional "log"or "block"or "none"
+mitigation\_action: optional "log" or "block" or "none"
 
 When set, this applies a mitigation action to this operation
 
@@ -431,7 +431,7 @@ One of the following:
 
 <summary>
 
-OperationDeleteResponse object {operation\_id }
+OperationDeleteResponse object { operation\_id }
 
 </summary>
 

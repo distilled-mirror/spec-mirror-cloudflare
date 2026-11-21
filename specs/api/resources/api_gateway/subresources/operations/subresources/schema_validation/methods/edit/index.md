@@ -86,7 +86,7 @@ settings\_multiple\_request: <a href="https://developers.cloudflare.com/api/reso
 
 <summary>
 
-mitigation\_action: optional "log"or "block"or "none"
+mitigation\_action: optional "log" or "block" or "none"
 
 When set, this applies a mitigation action to this operation
 
@@ -147,7 +147,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -189,7 +189,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -217,7 +217,7 @@ result: <a href="https://developers.cloudflare.com/api/resources/api_gateway#(re
 
 <summary>
 
-mitigation\_action: optional "log"or "block"or "none"
+mitigation\_action: optional "log" or "block" or "none"
 
 When set, this applies a mitigation action to this operation
 

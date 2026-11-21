@@ -72,7 +72,7 @@ minimum1
 
 <summary>
 
-result: object {emails }
+result: object { emails }
 
 </summary>
 
@@ -80,7 +80,7 @@ result: object {emails }
 
 <summary>
 
-emails: array of object {id, body, recipient, 2 more }
+emails: array of object { id, body, recipient, 2 more }
 
 </summary>
 
@@ -130,7 +130,7 @@ success: boolean
 
 <summary>
 
-errors: optional array of object {message, code }
+errors: optional array of object { message, code }
 
 </summary>
 
@@ -142,7 +142,7 @@ message: string
 
 <summary>
 
-code: optional stringor number
+code: optional string or number
 
 </summary>
 
@@ -168,7 +168,7 @@ number
 
 <summary>
 
-messages: optional array of object {message }
+messages: optional array of object { message }
 
 </summary>
 
@@ -184,7 +184,7 @@ message: string
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

@@ -70,7 +70,7 @@ Used when interacting with the Origin CA certificates API. <a href="https://deve
 
 ##### Accepted Permissions (at least one required)
 
-`Workers Observability Write``Workers Observability Read`
+`Workers Metadata Read-Only``Workers Observability Write``Workers Observability Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -84,7 +84,7 @@ account\_id: string
 
 <summary>
 
-order: optional "asc"or "desc"
+order: optional "asc" or "desc"
 
 </summary>
 
@@ -106,7 +106,7 @@ One of the following:
 
 <summary>
 
-orderBy: optional "created"or "updated"
+orderBy: optional "created" or "updated"
 
 </summary>
 
@@ -144,7 +144,7 @@ minimum5
 
 <summary>
 
-errors: array of object {message }
+errors: array of object { message }
 
 </summary>
 
@@ -160,7 +160,7 @@ message: string
 
 <summary>
 
-messages: array of object {message }
+messages: array of object { message }
 
 </summary>
 
@@ -176,7 +176,7 @@ message: "Successful request"
 
 <summary>
 
-result: array of object {configuration, enabled, name, 2 more }
+result: array of object { configuration, enabled, name, 2 more }
 
 </summary>
 
@@ -184,7 +184,7 @@ result: array of object {configuration, enabled, name, 2 more }
 
 <summary>
 
-configuration: object {headers, jobStatus, logpushDataset, 2 more }
+configuration: object { headers, jobStatus, logpushDataset, 2 more }
 
 </summary>
 
@@ -196,7 +196,7 @@ headers: map\[string]
 
 <summary>
 
-jobStatus: object {error\_message, last\_complete, last\_error }
+jobStatus: object { error\_message, last\_complete, last\_error }
 
 </summary>
 
@@ -220,7 +220,7 @@ last\_error: string
 
 <summary>
 
-logpushDataset: "opentelemetry-traces"or "opentelemetry-logs"or "opentelemetry-metrics"
+logpushDataset: "opentelemetry-traces" or "opentelemetry-logs" or "opentelemetry-metrics"
 
 </summary>
 

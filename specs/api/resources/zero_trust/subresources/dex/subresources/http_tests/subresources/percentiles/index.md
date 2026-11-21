@@ -32,7 +32,7 @@ GET/accounts/{account\_id}/dex/http-tests/{test\_id}/percentiles
 
 <summary>
 
-HTTPDetailsPercentiles object {dnsResponseTimeMs, resourceFetchTimeMs, serverResponseTimeMs }
+HTTPDetailsPercentiles object { dnsResponseTimeMs, resourceFetchTimeMs, serverResponseTimeMs }
 
 </summary>
 
@@ -56,7 +56,7 @@ serverResponseTimeMs: optional <a href="https://developers.cloudflare.com/api/re
 
 <summary>
 
-TestStatOverTime object {slots, avg, max, min }
+TestStatOverTime object { slots, avg, max, min }
 
 </summary>
 
@@ -64,7 +64,7 @@ TestStatOverTime object {slots, avg, max, min }
 
 <summary>
 
-slots: array of object {timestamp, value }
+slots: array of object { timestamp, value }
 
 </summary>
 

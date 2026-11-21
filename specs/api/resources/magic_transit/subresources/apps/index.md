@@ -44,7 +44,7 @@ DELETE/accounts/{account\_id}/magic/apps/{account\_app\_id}
 
 <summary>
 
-AppListResponse = object {account\_app\_id, hostnames, ip\_subnets, 3 more } or object {managed\_app\_id, hostnames, ip\_subnets, 3 more }
+AppListResponse = object { account\_app\_id, hostnames, ip\_subnets, 3 more } or object { managed\_app\_id, hostnames, ip\_subnets, 3 more }
 
 Collection of Hostnames and/or IP Subnets to associate with traffic decisions.
 
@@ -56,7 +56,7 @@ One of the following:
 
 <summary>
 
-MagicAccountApp object {account\_app\_id, hostnames, ip\_subnets, 3 more }
+MagicAccountApp object { account\_app\_id, hostnames, ip\_subnets, 3 more }
 
 Custom app defined for an account.
 
@@ -106,7 +106,7 @@ Category of the app.
 
 <summary>
 
-MagicManagedApp object {managed\_app\_id, hostnames, ip\_subnets, 3 more }
+MagicManagedApp object { managed\_app\_id, hostnames, ip\_subnets, 3 more }
 
 Managed app defined by Cloudflare.
 
@@ -160,7 +160,7 @@ Category of the app.
 
 <summary>
 
-AppCreateResponse object {account\_app\_id, hostnames, ip\_subnets, 3 more }
+AppCreateResponse object { account\_app\_id, hostnames, ip\_subnets, 3 more }
 
 Custom app defined for an account.
 
@@ -210,7 +210,7 @@ Category of the app.
 
 <summary>
 
-AppUpdateResponse object {account\_app\_id, hostnames, ip\_subnets, 3 more }
+AppUpdateResponse object { account\_app\_id, hostnames, ip\_subnets, 3 more }
 
 Custom app defined for an account.
 
@@ -260,7 +260,7 @@ Category of the app.
 
 <summary>
 
-AppEditResponse object {account\_app\_id, hostnames, ip\_subnets, 3 more }
+AppEditResponse object { account\_app\_id, hostnames, ip\_subnets, 3 more }
 
 Custom app defined for an account.
 
@@ -310,7 +310,7 @@ Category of the app.
 
 <summary>
 
-AppDeleteResponse object {account\_app\_id, hostnames, ip\_subnets, 3 more }
+AppDeleteResponse object { account\_app\_id, hostnames, ip\_subnets, 3 more }
 
 Custom app defined for an account.
 

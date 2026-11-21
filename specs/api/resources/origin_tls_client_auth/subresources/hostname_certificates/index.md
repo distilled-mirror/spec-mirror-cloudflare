@@ -40,7 +40,7 @@ DELETE/zones/{zone\_id}/origin\_tls\_client\_auth/hostnames/certificates/{certif
 
 <summary>
 
-Certificate object {id, certificate, expires\_on, 5 more }
+Certificate object { id, certificate, expires\_on, 5 more }
 
 </summary>
 
@@ -88,7 +88,7 @@ The type of hash used for the certificate.
 
 <summary>
 
-status: optional "initializing"or "pending\_deployment"or "pending\_deletion"or 4 more
+status: optional "initializing" or "pending\_deployment" or "pending\_deletion" or 4 more
 
 Status of the certificate or the association.
 
@@ -144,7 +144,7 @@ formatdate-time
 
 <summary>
 
-HostnameCertificateListResponse object {id, certificate, expires\_on, 5 more }
+HostnameCertificateListResponse object { id, certificate, expires\_on, 5 more }
 
 </summary>
 
@@ -192,7 +192,7 @@ The type of hash used for the certificate.
 
 <summary>
 
-status: optional "initializing"or "pending\_deployment"or "pending\_deletion"or 4 more
+status: optional "initializing" or "pending\_deployment" or "pending\_deletion" or 4 more
 
 Status of the certificate or the association.
 
@@ -248,7 +248,7 @@ formatdate-time
 
 <summary>
 
-HostnameCertificateGetResponse object {id, certificate, expires\_on, 5 more }
+HostnameCertificateGetResponse object { id, certificate, expires\_on, 5 more }
 
 </summary>
 
@@ -296,7 +296,7 @@ The type of hash used for the certificate.
 
 <summary>
 
-status: optional "initializing"or "pending\_deployment"or "pending\_deletion"or 4 more
+status: optional "initializing" or "pending\_deployment" or "pending\_deletion" or 4 more
 
 Status of the certificate or the association.
 
@@ -352,7 +352,7 @@ formatdate-time
 
 <summary>
 
-HostnameCertificateCreateResponse object {id, certificate, expires\_on, 5 more }
+HostnameCertificateCreateResponse object { id, certificate, expires\_on, 5 more }
 
 </summary>
 
@@ -400,7 +400,7 @@ The type of hash used for the certificate.
 
 <summary>
 
-status: optional "initializing"or "pending\_deployment"or "pending\_deletion"or 4 more
+status: optional "initializing" or "pending\_deployment" or "pending\_deletion" or 4 more
 
 Status of the certificate or the association.
 
@@ -456,7 +456,7 @@ formatdate-time
 
 <summary>
 
-HostnameCertificateDeleteResponse object {id, certificate, expires\_on, 5 more }
+HostnameCertificateDeleteResponse object { id, certificate, expires\_on, 5 more }
 
 </summary>
 
@@ -504,7 +504,7 @@ The type of hash used for the certificate.
 
 <summary>
 
-status: optional "initializing"or "pending\_deployment"or "pending\_deletion"or 4 more
+status: optional "initializing" or "pending\_deployment" or "pending\_deletion" or 4 more
 
 Status of the certificate or the association.
 

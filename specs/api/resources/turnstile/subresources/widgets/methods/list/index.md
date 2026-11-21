@@ -74,7 +74,7 @@ maxLength32
 
 <summary>
 
-direction: optional "asc"or "desc"
+direction: optional "asc" or "desc"
 
 Direction to order widgets.
 
@@ -111,7 +111,7 @@ Returns 400 Bad Request if the field is unsupported or format is invalid. An emp
 
 <summary>
 
-order: optional "id"or "sitekey"or "name"or 2 more
+order: optional "id" or "sitekey" or "name" or 2 more
 
 Field to order widgets by.
 
@@ -189,7 +189,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -231,7 +231,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -257,7 +257,7 @@ Whether the API call was successful
 
 <summary>
 
-result: optional array of object {bot\_fight\_mode, clearance\_level, created\_on, 10 more }
+result: optional array of object { bot\_fight\_mode, clearance\_level, created\_on, 10 more }
 
 </summary>
 
@@ -271,7 +271,7 @@ If bot\_fight\_mode is set to <code>true</code>, Cloudflare issues computational
 
 <summary>
 
-clearance\_level: "no\_clearance"or "jschallenge"or "managed"or "interactive"
+clearance\_level: "no\_clearance" or "jschallenge" or "managed" or "interactive"
 
 If Turnstile is embedded on a Cloudflare site and the widget should grant challenge clearance, this setting can determine the clearance level to be set
 
@@ -323,7 +323,7 @@ Return the Ephemeral ID in /siteverify (ENT only).
 
 <summary>
 
-mode: "non-interactive"or "invisible"or "managed"
+mode: "non-interactive" or "invisible" or "managed"
 
 Widget Mode
 
@@ -375,7 +375,7 @@ Do not show any Cloudflare branding on the widget (ENT only).
 
 <summary>
 
-region: "world"or "china"
+region: "world" or "china"
 
 Region where this widget can be used. This cannot be changed after creation.
 
@@ -407,7 +407,7 @@ maxLength32
 
 <summary>
 
-deployed\_via: optional "wrangler"or "dashboard"or "spin"or 2 more
+deployed\_via: optional "wrangler" or "dashboard" or "spin" or 2 more
 
 Origin that created this widget, recorded at creation time and immutable afterward. Server-derived from the create request; not client-settable. Omitted from the response for widgets created before this field existed.
 
@@ -443,7 +443,7 @@ One of the following:
 
 <summary>
 
-last\_modified\_via: optional "wrangler"or "dashboard"or "spin"or 2 more
+last\_modified\_via: optional "wrangler" or "dashboard" or "spin" or 2 more
 
 Origin of the most recent mutation (create, update, delete, or secret rotation). Server-derived; not client-settable. Omitted for widgets last mutated before this field existed.
 
@@ -483,7 +483,7 @@ One of the following:
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object { count, page, per\_page, total\_count }
 
 </summary>
 

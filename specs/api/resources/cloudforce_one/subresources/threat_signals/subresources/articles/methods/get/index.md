@@ -58,7 +58,7 @@ formatuuid
 
 <summary>
 
-errors: array of object {message }
+errors: array of object { message }
 
 </summary>
 
@@ -74,7 +74,7 @@ message: string
 
 <summary>
 
-result: object {id, bullet\_points, content\_r2\_key, 19 more }
+result: object { id, bullet\_points, content\_r2\_key, 19 more }
 
 </summary>
 
@@ -88,7 +88,7 @@ formatuuid
 
 <summary>
 
-bullet\_points: object {impact, what\_happened, who\_affected }
+bullet\_points: object { impact, what\_happened, who\_affected }
 
 </summary>
 
@@ -130,7 +130,7 @@ fetched\_at: string
 
 <summary>
 
-indicator\_extraction\_status: "in\_progress"or "complete"or "failed"or "unknown"
+indicator\_extraction\_status: "in\_progress" or "complete" or "failed" or "unknown"
 
 Progress of the article’s indicator extraction and IOC contextualization run. complete and failed are terminal; unknown means no run has been recorded.
 
@@ -182,7 +182,7 @@ read\_at: string
 
 <summary>
 
-relevance: object {band, pir\_id, pirs }
+relevance: object { band, pir\_id, pirs }
 
 Beta. The article’s relevance to the account’s active Priority Intelligence Requirements. Null when the article has not been scored against them, including when the account has no active PIRs, or has not been scored against the requested pir\_id.
 
@@ -192,7 +192,7 @@ Beta. The article’s relevance to the account’s active Priority Intelligence 
 
 <summary>
 
-band: "low"or "medium"or "high"
+band: "low" or "medium" or "high"
 
 Beta. How relevant the article is to a Priority Intelligence Requirement: high, medium, or low. Cloudflare may change the scores behind each band as relevance scoring is calibrated.
 
@@ -228,7 +228,7 @@ formatuuid
 
 <summary>
 
-pirs: array of object {band, pir\_id, requirement\_basis }
+pirs: array of object { band, pir\_id, requirement\_basis }
 
 Beta. Every active PIR the article was scored against, most relevant first. Draft and deleted PIRs are excluded.
 
@@ -238,7 +238,7 @@ Beta. Every active PIR the article was scored against, most relevant first. Draf
 
 <summary>
 
-band: "low"or "medium"or "high"
+band: "low" or "medium" or "high"
 
 Beta. How relevant the article is to a Priority Intelligence Requirement: high, medium, or low. Cloudflare may change the scores behind each band as relevance scoring is calibrated.
 
@@ -272,7 +272,7 @@ formatuuid
 
 <summary>
 
-requirement\_basis: "current"or "saved"
+requirement\_basis: "current" or "saved"
 
 Beta. current: scored against the PIR’s current requirement. saved: the PIR’s structured definition no longer generates a valid requirement, for example because its topic was retired, so the requirement from its last save was scored instead.
 
@@ -304,7 +304,7 @@ One of the following:
 
 <summary>
 
-relevance\_coverage: "current"or "stale"or "pending"or "unavailable"
+relevance\_coverage: "current" or "stale" or "pending" or "unavailable"
 
 Beta. Whether relevance and severity reflect the account’s current Priority Intelligence Requirements, organization profile, and the article’s current content. current: they do. stale: they were scored before a change; articles fetched in the last 7 days are being rescored, older articles keep these scores. pending: not scored yet, fetched in the last 7 days. unavailable: not scored, and will not be scored automatically, because it was fetched more than 7 days ago or processing failed. Updates to managed topics can take up to a day to mark scores stale. Null when the account has no active PIRs or none of its articles has been scored yet.
 
@@ -336,7 +336,7 @@ One of the following:
 
 <summary>
 
-severity: "informational"or "low"or "medium"or 2 more
+severity: "informational" or "low" or "medium" or 2 more
 
 Beta. Intrinsic article severity band, from informational to critical, independent of any organisation or Priority Intelligence Requirement. Null when the account has no active Priority Intelligence Requirements, scoring has not completed, or a historic article has not entered an automatic rescore window.
 
@@ -386,7 +386,7 @@ summary\_r2\_key: string
 
 <summary>
 
-tags: array of object {applied\_by, categoryId, uuid, value }
+tags: array of object { applied\_by, categoryId, uuid, value }
 
 </summary>
 
@@ -394,7 +394,7 @@ tags: array of object {applied\_by, categoryId, uuid, value }
 
 <summary>
 
-applied\_by: "ai"or "analyst"or "system"
+applied\_by: "ai" or "analyst" or "system"
 
 </summary>
 

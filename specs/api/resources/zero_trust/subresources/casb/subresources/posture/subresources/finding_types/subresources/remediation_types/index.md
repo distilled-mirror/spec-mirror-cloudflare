@@ -34,7 +34,7 @@ GET/accounts/{account\_id}/data-security/posture/finding\_types/{finding\_type\_
 
 <summary>
 
-RemediationTypeListResponse object {id, description, display\_name, 2 more }
+RemediationTypeListResponse object { id, description, display\_name, 2 more }
 
 Information about a remediation type.
 

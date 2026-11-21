@@ -46,7 +46,7 @@ DELETE/accounts/{account\_id}/dlp/entries/{entry\_id}
 
 <summary>
 
-EntryListResponse = object {id, created\_at, enabled, 8 more } or object {id, created\_at, enabled, 5 more } or object {id, confidence, enabled, 6 more } or 4 more
+EntryListResponse = object { id, created\_at, enabled, 8 more } or object { id, created\_at, enabled, 5 more } or object { id, confidence, enabled, 6 more } or 4 more
 
 </summary>
 
@@ -56,7 +56,7 @@ One of the following:
 
 <summary>
 
-object {id, created\_at, enabled, 8 more }
+object { id, created\_at, enabled, 8 more }
 
 </summary>
 
@@ -108,7 +108,7 @@ formatuuid
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -158,7 +158,7 @@ Returned by the entry endpoints. Not returned on entries embedded in other respo
 
 <summary>
 
-object {id, created\_at, enabled, 5 more }
+object { id, created\_at, enabled, 5 more }
 
 </summary>
 
@@ -202,7 +202,7 @@ The optional description of the custom prompt topic entry.
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -244,7 +244,7 @@ One of the following:
 
 <summary>
 
-object {id, confidence, enabled, 6 more }
+object { id, confidence, enabled, 6 more }
 
 </summary>
 
@@ -258,7 +258,7 @@ formatuuid
 
 <summary>
 
-confidence: object {ai\_context\_available, available }
+confidence: object { ai\_context\_available, available }
 
 </summary>
 
@@ -306,7 +306,7 @@ formatuuid
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -344,7 +344,7 @@ One of the following:
 
 <summary>
 
-variant: optional object {topic\_type, type, description } or object {type, description }
+variant: optional object { topic\_type, type, description } or object { type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -356,7 +356,7 @@ One of the following:
 
 <summary>
 
-object {topic\_type, type, description }
+object { topic\_type, type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -366,7 +366,7 @@ A Predefined AI prompt classification topic entry.
 
 <summary>
 
-topic\_type: "Intent"or "Content"
+topic\_type: "Intent" or "Content"
 
 </summary>
 
@@ -402,7 +402,7 @@ A customer-facing explanation of what this predefined AI prompt topic represents
 
 <summary>
 
-object {type, description }
+object { type, description }
 
 A general predefined entry.
 
@@ -434,7 +434,7 @@ A customer-facing explanation of what this predefined entry represents.
 
 <summary>
 
-object {id, created\_at, enabled, 5 more }
+object { id, created\_at, enabled, 5 more }
 
 </summary>
 
@@ -478,7 +478,7 @@ formatuuid
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -520,7 +520,7 @@ One of the following:
 
 <summary>
 
-object {id, case\_sensitive, created\_at, 7 more }
+object { id, case\_sensitive, created\_at, 7 more }
 
 </summary>
 
@@ -574,7 +574,7 @@ The optional description of the exact data entry.
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -616,7 +616,7 @@ One of the following:
 
 <summary>
 
-object {id, created\_at, enabled, 5 more }
+object { id, created\_at, enabled, 5 more }
 
 </summary>
 
@@ -660,7 +660,7 @@ The optional description of the document fingerprint entry.
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -702,7 +702,7 @@ One of the following:
 
 <summary>
 
-object {id, created\_at, enabled, 6 more }
+object { id, created\_at, enabled, 6 more }
 
 </summary>
 
@@ -750,7 +750,7 @@ formatuuid
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -796,7 +796,7 @@ One of the following:
 
 <summary>
 
-EntryGetResponse = object {id, created\_at, enabled, 9 more } or object {id, created\_at, enabled, 6 more } or object {id, confidence, enabled, 7 more } or 4 more
+EntryGetResponse = object { id, created\_at, enabled, 9 more } or object { id, created\_at, enabled, 6 more } or object { id, confidence, enabled, 7 more } or 4 more
 
 </summary>
 
@@ -806,7 +806,7 @@ One of the following:
 
 <summary>
 
-object {id, created\_at, enabled, 9 more }
+object { id, created\_at, enabled, 9 more }
 
 </summary>
 
@@ -858,7 +858,7 @@ formatuuid
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -880,7 +880,7 @@ name: string
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -930,7 +930,7 @@ Returned by the entry endpoints. Not returned on entries embedded in other respo
 
 <summary>
 
-object {id, created\_at, enabled, 6 more }
+object { id, created\_at, enabled, 6 more }
 
 </summary>
 
@@ -974,7 +974,7 @@ The optional description of the custom prompt topic entry.
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -996,7 +996,7 @@ name: string
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -1038,7 +1038,7 @@ One of the following:
 
 <summary>
 
-object {id, confidence, enabled, 7 more }
+object { id, confidence, enabled, 7 more }
 
 </summary>
 
@@ -1052,7 +1052,7 @@ formatuuid
 
 <summary>
 
-confidence: object {ai\_context\_available, available }
+confidence: object { ai\_context\_available, available }
 
 </summary>
 
@@ -1100,7 +1100,7 @@ formatuuid
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -1122,7 +1122,7 @@ name: string
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -1160,7 +1160,7 @@ One of the following:
 
 <summary>
 
-variant: optional object {topic\_type, type, description } or object {type, description }
+variant: optional object { topic\_type, type, description } or object { type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -1172,7 +1172,7 @@ One of the following:
 
 <summary>
 
-object {topic\_type, type, description }
+object { topic\_type, type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -1182,7 +1182,7 @@ A Predefined AI prompt classification topic entry.
 
 <summary>
 
-topic\_type: "Intent"or "Content"
+topic\_type: "Intent" or "Content"
 
 </summary>
 
@@ -1218,7 +1218,7 @@ A customer-facing explanation of what this predefined AI prompt topic represents
 
 <summary>
 
-object {type, description }
+object { type, description }
 
 A general predefined entry.
 
@@ -1250,7 +1250,7 @@ A customer-facing explanation of what this predefined entry represents.
 
 <summary>
 
-object {id, created\_at, enabled, 6 more }
+object { id, created\_at, enabled, 6 more }
 
 </summary>
 
@@ -1294,7 +1294,7 @@ formatuuid
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -1316,7 +1316,7 @@ name: string
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -1358,7 +1358,7 @@ One of the following:
 
 <summary>
 
-object {id, case\_sensitive, created\_at, 8 more }
+object { id, case\_sensitive, created\_at, 8 more }
 
 </summary>
 
@@ -1412,7 +1412,7 @@ The optional description of the exact data entry.
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -1434,7 +1434,7 @@ name: string
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -1476,7 +1476,7 @@ One of the following:
 
 <summary>
 
-object {id, created\_at, enabled, 6 more }
+object { id, created\_at, enabled, 6 more }
 
 </summary>
 
@@ -1520,7 +1520,7 @@ The optional description of the document fingerprint entry.
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -1542,7 +1542,7 @@ name: string
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -1584,7 +1584,7 @@ One of the following:
 
 <summary>
 
-object {id, created\_at, enabled, 7 more }
+object { id, created\_at, enabled, 7 more }
 
 </summary>
 
@@ -1632,7 +1632,7 @@ formatuuid
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -1654,7 +1654,7 @@ name: string
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -1700,7 +1700,7 @@ One of the following:
 
 <summary>
 
-EntryCreateResponse object {id, created\_at, enabled, 6 more }
+EntryCreateResponse object { id, created\_at, enabled, 6 more }
 
 </summary>
 
@@ -1760,7 +1760,7 @@ Returned by the entry endpoints. Not returned on entries embedded in other respo
 
 <summary>
 
-EntryUpdateResponse = object {id, created\_at, enabled, 7 more } or object {id, created\_at, enabled, 4 more } or object {id, confidence, enabled, 5 more } or 4 more
+EntryUpdateResponse = object { id, created\_at, enabled, 7 more } or object { id, created\_at, enabled, 4 more } or object { id, confidence, enabled, 5 more } or 4 more
 
 </summary>
 
@@ -1770,7 +1770,7 @@ One of the following:
 
 <summary>
 
-CustomEntry object {id, created\_at, enabled, 7 more }
+CustomEntry object { id, created\_at, enabled, 7 more }
 
 </summary>
 
@@ -1834,7 +1834,7 @@ Returned by the entry endpoints. Not returned on entries embedded in other respo
 
 <summary>
 
-CustomPromptTopicEntry object {id, created\_at, enabled, 4 more }
+CustomPromptTopicEntry object { id, created\_at, enabled, 4 more }
 
 </summary>
 
@@ -1882,7 +1882,7 @@ The optional description of the custom prompt topic entry.
 
 <summary>
 
-PredefinedEntry object {id, confidence, enabled, 5 more }
+PredefinedEntry object { id, confidence, enabled, 5 more }
 
 </summary>
 
@@ -1896,7 +1896,7 @@ formatuuid
 
 <summary>
 
-confidence: object {ai\_context\_available, available }
+confidence: object { ai\_context\_available, available }
 
 </summary>
 
@@ -1944,7 +1944,7 @@ formatuuid
 
 <summary>
 
-variant: optional object {topic\_type, type, description } or object {type, description }
+variant: optional object { topic\_type, type, description } or object { type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -1956,7 +1956,7 @@ One of the following:
 
 <summary>
 
-object {topic\_type, type, description }
+object { topic\_type, type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -1966,7 +1966,7 @@ A Predefined AI prompt classification topic entry.
 
 <summary>
 
-topic\_type: "Intent"or "Content"
+topic\_type: "Intent" or "Content"
 
 </summary>
 
@@ -2002,7 +2002,7 @@ A customer-facing explanation of what this predefined AI prompt topic represents
 
 <summary>
 
-object {type, description }
+object { type, description }
 
 A general predefined entry.
 
@@ -2034,7 +2034,7 @@ A customer-facing explanation of what this predefined entry represents.
 
 <summary>
 
-IntegrationEntry object {id, created\_at, enabled, 4 more }
+IntegrationEntry object { id, created\_at, enabled, 4 more }
 
 </summary>
 
@@ -2082,7 +2082,7 @@ formatuuid
 
 <summary>
 
-ExactDataEntry object {id, case\_sensitive, created\_at, 6 more }
+ExactDataEntry object { id, case\_sensitive, created\_at, 6 more }
 
 </summary>
 
@@ -2140,7 +2140,7 @@ The optional description of the exact data entry.
 
 <summary>
 
-DocumentFingerprintEntry object {id, created\_at, enabled, 4 more }
+DocumentFingerprintEntry object { id, created\_at, enabled, 4 more }
 
 </summary>
 
@@ -2188,7 +2188,7 @@ The optional description of the document fingerprint entry.
 
 <summary>
 
-WordListEntry object {id, created\_at, enabled, 5 more }
+WordListEntry object { id, created\_at, enabled, 5 more }
 
 </summary>
 
@@ -2272,7 +2272,7 @@ GET/accounts/{account\_id}/dlp/entries
 
 <summary>
 
-CustomCreateResponse object {id, created\_at, enabled, 6 more }
+CustomCreateResponse object { id, created\_at, enabled, 6 more }
 
 </summary>
 
@@ -2332,7 +2332,7 @@ Returned by the entry endpoints. Not returned on entries embedded in other respo
 
 <summary>
 
-CustomUpdateResponse object {id, created\_at, enabled, 6 more }
+CustomUpdateResponse object { id, created\_at, enabled, 6 more }
 
 </summary>
 
@@ -2396,7 +2396,7 @@ CustomDeleteResponse = unknown
 
 <summary>
 
-CustomGetResponse = object {id, created\_at, enabled, 9 more } or object {id, created\_at, enabled, 6 more } or object {id, confidence, enabled, 7 more } or 4 more
+CustomGetResponse = object { id, created\_at, enabled, 9 more } or object { id, created\_at, enabled, 6 more } or object { id, confidence, enabled, 7 more } or 4 more
 
 </summary>
 
@@ -2406,7 +2406,7 @@ One of the following:
 
 <summary>
 
-object {id, created\_at, enabled, 9 more }
+object { id, created\_at, enabled, 9 more }
 
 </summary>
 
@@ -2458,7 +2458,7 @@ formatuuid
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -2480,7 +2480,7 @@ name: string
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -2530,7 +2530,7 @@ Returned by the entry endpoints. Not returned on entries embedded in other respo
 
 <summary>
 
-object {id, created\_at, enabled, 6 more }
+object { id, created\_at, enabled, 6 more }
 
 </summary>
 
@@ -2574,7 +2574,7 @@ The optional description of the custom prompt topic entry.
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -2596,7 +2596,7 @@ name: string
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -2638,7 +2638,7 @@ One of the following:
 
 <summary>
 
-object {id, confidence, enabled, 7 more }
+object { id, confidence, enabled, 7 more }
 
 </summary>
 
@@ -2652,7 +2652,7 @@ formatuuid
 
 <summary>
 
-confidence: object {ai\_context\_available, available }
+confidence: object { ai\_context\_available, available }
 
 </summary>
 
@@ -2700,7 +2700,7 @@ formatuuid
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -2722,7 +2722,7 @@ name: string
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -2760,7 +2760,7 @@ One of the following:
 
 <summary>
 
-variant: optional object {topic\_type, type, description } or object {type, description }
+variant: optional object { topic\_type, type, description } or object { type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -2772,7 +2772,7 @@ One of the following:
 
 <summary>
 
-object {topic\_type, type, description }
+object { topic\_type, type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -2782,7 +2782,7 @@ A Predefined AI prompt classification topic entry.
 
 <summary>
 
-topic\_type: "Intent"or "Content"
+topic\_type: "Intent" or "Content"
 
 </summary>
 
@@ -2818,7 +2818,7 @@ A customer-facing explanation of what this predefined AI prompt topic represents
 
 <summary>
 
-object {type, description }
+object { type, description }
 
 A general predefined entry.
 
@@ -2850,7 +2850,7 @@ A customer-facing explanation of what this predefined entry represents.
 
 <summary>
 
-object {id, created\_at, enabled, 6 more }
+object { id, created\_at, enabled, 6 more }
 
 </summary>
 
@@ -2894,7 +2894,7 @@ formatuuid
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -2916,7 +2916,7 @@ name: string
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -2958,7 +2958,7 @@ One of the following:
 
 <summary>
 
-object {id, case\_sensitive, created\_at, 8 more }
+object { id, case\_sensitive, created\_at, 8 more }
 
 </summary>
 
@@ -3012,7 +3012,7 @@ The optional description of the exact data entry.
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -3034,7 +3034,7 @@ name: string
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -3076,7 +3076,7 @@ One of the following:
 
 <summary>
 
-object {id, created\_at, enabled, 6 more }
+object { id, created\_at, enabled, 6 more }
 
 </summary>
 
@@ -3120,7 +3120,7 @@ The optional description of the document fingerprint entry.
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -3142,7 +3142,7 @@ name: string
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -3184,7 +3184,7 @@ One of the following:
 
 <summary>
 
-object {id, created\_at, enabled, 7 more }
+object { id, created\_at, enabled, 7 more }
 
 </summary>
 
@@ -3232,7 +3232,7 @@ formatuuid
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -3254,7 +3254,7 @@ name: string
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -3300,7 +3300,7 @@ One of the following:
 
 <summary>
 
-CustomListResponse = object {id, created\_at, enabled, 8 more } or object {id, created\_at, enabled, 5 more } or object {id, confidence, enabled, 6 more } or 4 more
+CustomListResponse = object { id, created\_at, enabled, 8 more } or object { id, created\_at, enabled, 5 more } or object { id, confidence, enabled, 6 more } or 4 more
 
 </summary>
 
@@ -3310,7 +3310,7 @@ One of the following:
 
 <summary>
 
-object {id, created\_at, enabled, 8 more }
+object { id, created\_at, enabled, 8 more }
 
 </summary>
 
@@ -3362,7 +3362,7 @@ formatuuid
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -3412,7 +3412,7 @@ Returned by the entry endpoints. Not returned on entries embedded in other respo
 
 <summary>
 
-object {id, created\_at, enabled, 5 more }
+object { id, created\_at, enabled, 5 more }
 
 </summary>
 
@@ -3456,7 +3456,7 @@ The optional description of the custom prompt topic entry.
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -3498,7 +3498,7 @@ One of the following:
 
 <summary>
 
-object {id, confidence, enabled, 6 more }
+object { id, confidence, enabled, 6 more }
 
 </summary>
 
@@ -3512,7 +3512,7 @@ formatuuid
 
 <summary>
 
-confidence: object {ai\_context\_available, available }
+confidence: object { ai\_context\_available, available }
 
 </summary>
 
@@ -3560,7 +3560,7 @@ formatuuid
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -3598,7 +3598,7 @@ One of the following:
 
 <summary>
 
-variant: optional object {topic\_type, type, description } or object {type, description }
+variant: optional object { topic\_type, type, description } or object { type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -3610,7 +3610,7 @@ One of the following:
 
 <summary>
 
-object {topic\_type, type, description }
+object { topic\_type, type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -3620,7 +3620,7 @@ A Predefined AI prompt classification topic entry.
 
 <summary>
 
-topic\_type: "Intent"or "Content"
+topic\_type: "Intent" or "Content"
 
 </summary>
 
@@ -3656,7 +3656,7 @@ A customer-facing explanation of what this predefined AI prompt topic represents
 
 <summary>
 
-object {type, description }
+object { type, description }
 
 A general predefined entry.
 
@@ -3688,7 +3688,7 @@ A customer-facing explanation of what this predefined entry represents.
 
 <summary>
 
-object {id, created\_at, enabled, 5 more }
+object { id, created\_at, enabled, 5 more }
 
 </summary>
 
@@ -3732,7 +3732,7 @@ formatuuid
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -3774,7 +3774,7 @@ One of the following:
 
 <summary>
 
-object {id, case\_sensitive, created\_at, 7 more }
+object { id, case\_sensitive, created\_at, 7 more }
 
 </summary>
 
@@ -3828,7 +3828,7 @@ The optional description of the exact data entry.
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -3870,7 +3870,7 @@ One of the following:
 
 <summary>
 
-object {id, created\_at, enabled, 5 more }
+object { id, created\_at, enabled, 5 more }
 
 </summary>
 
@@ -3914,7 +3914,7 @@ The optional description of the document fingerprint entry.
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -3956,7 +3956,7 @@ One of the following:
 
 <summary>
 
-object {id, created\_at, enabled, 6 more }
+object { id, created\_at, enabled, 6 more }
 
 </summary>
 
@@ -4004,7 +4004,7 @@ formatuuid
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -4074,7 +4074,7 @@ GET/accounts/{account\_id}/dlp/entries
 
 <summary>
 
-PredefinedCreateResponse object {id, confidence, enabled, 4 more }
+PredefinedCreateResponse object { id, confidence, enabled, 4 more }
 
 </summary>
 
@@ -4088,7 +4088,7 @@ formatuuid
 
 <summary>
 
-confidence: object {ai\_context\_available, available }
+confidence: object { ai\_context\_available, available }
 
 </summary>
 
@@ -4132,7 +4132,7 @@ formatuuid
 
 <summary>
 
-variant: optional object {topic\_type, type, description } or object {type, description }
+variant: optional object { topic\_type, type, description } or object { type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -4144,7 +4144,7 @@ One of the following:
 
 <summary>
 
-object {topic\_type, type, description }
+object { topic\_type, type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -4154,7 +4154,7 @@ A Predefined AI prompt classification topic entry.
 
 <summary>
 
-topic\_type: "Intent"or "Content"
+topic\_type: "Intent" or "Content"
 
 </summary>
 
@@ -4190,7 +4190,7 @@ A customer-facing explanation of what this predefined AI prompt topic represents
 
 <summary>
 
-object {type, description }
+object { type, description }
 
 A general predefined entry.
 
@@ -4222,7 +4222,7 @@ A customer-facing explanation of what this predefined entry represents.
 
 <summary>
 
-PredefinedUpdateResponse object {id, confidence, enabled, 4 more }
+PredefinedUpdateResponse object { id, confidence, enabled, 4 more }
 
 </summary>
 
@@ -4236,7 +4236,7 @@ formatuuid
 
 <summary>
 
-confidence: object {ai\_context\_available, available }
+confidence: object { ai\_context\_available, available }
 
 </summary>
 
@@ -4280,7 +4280,7 @@ formatuuid
 
 <summary>
 
-variant: optional object {topic\_type, type, description } or object {type, description }
+variant: optional object { topic\_type, type, description } or object { type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -4292,7 +4292,7 @@ One of the following:
 
 <summary>
 
-object {topic\_type, type, description }
+object { topic\_type, type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -4302,7 +4302,7 @@ A Predefined AI prompt classification topic entry.
 
 <summary>
 
-topic\_type: "Intent"or "Content"
+topic\_type: "Intent" or "Content"
 
 </summary>
 
@@ -4338,7 +4338,7 @@ A customer-facing explanation of what this predefined AI prompt topic represents
 
 <summary>
 
-object {type, description }
+object { type, description }
 
 A general predefined entry.
 
@@ -4374,7 +4374,7 @@ PredefinedDeleteResponse = unknown
 
 <summary>
 
-PredefinedGetResponse = object {id, created\_at, enabled, 9 more } or object {id, created\_at, enabled, 6 more } or object {id, confidence, enabled, 7 more } or 4 more
+PredefinedGetResponse = object { id, created\_at, enabled, 9 more } or object { id, created\_at, enabled, 6 more } or object { id, confidence, enabled, 7 more } or 4 more
 
 </summary>
 
@@ -4384,7 +4384,7 @@ One of the following:
 
 <summary>
 
-object {id, created\_at, enabled, 9 more }
+object { id, created\_at, enabled, 9 more }
 
 </summary>
 
@@ -4436,7 +4436,7 @@ formatuuid
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -4458,7 +4458,7 @@ name: string
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -4508,7 +4508,7 @@ Returned by the entry endpoints. Not returned on entries embedded in other respo
 
 <summary>
 
-object {id, created\_at, enabled, 6 more }
+object { id, created\_at, enabled, 6 more }
 
 </summary>
 
@@ -4552,7 +4552,7 @@ The optional description of the custom prompt topic entry.
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -4574,7 +4574,7 @@ name: string
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -4616,7 +4616,7 @@ One of the following:
 
 <summary>
 
-object {id, confidence, enabled, 7 more }
+object { id, confidence, enabled, 7 more }
 
 </summary>
 
@@ -4630,7 +4630,7 @@ formatuuid
 
 <summary>
 
-confidence: object {ai\_context\_available, available }
+confidence: object { ai\_context\_available, available }
 
 </summary>
 
@@ -4678,7 +4678,7 @@ formatuuid
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -4700,7 +4700,7 @@ name: string
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -4738,7 +4738,7 @@ One of the following:
 
 <summary>
 
-variant: optional object {topic\_type, type, description } or object {type, description }
+variant: optional object { topic\_type, type, description } or object { type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -4750,7 +4750,7 @@ One of the following:
 
 <summary>
 
-object {topic\_type, type, description }
+object { topic\_type, type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -4760,7 +4760,7 @@ A Predefined AI prompt classification topic entry.
 
 <summary>
 
-topic\_type: "Intent"or "Content"
+topic\_type: "Intent" or "Content"
 
 </summary>
 
@@ -4796,7 +4796,7 @@ A customer-facing explanation of what this predefined AI prompt topic represents
 
 <summary>
 
-object {type, description }
+object { type, description }
 
 A general predefined entry.
 
@@ -4828,7 +4828,7 @@ A customer-facing explanation of what this predefined entry represents.
 
 <summary>
 
-object {id, created\_at, enabled, 6 more }
+object { id, created\_at, enabled, 6 more }
 
 </summary>
 
@@ -4872,7 +4872,7 @@ formatuuid
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -4894,7 +4894,7 @@ name: string
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -4936,7 +4936,7 @@ One of the following:
 
 <summary>
 
-object {id, case\_sensitive, created\_at, 8 more }
+object { id, case\_sensitive, created\_at, 8 more }
 
 </summary>
 
@@ -4990,7 +4990,7 @@ The optional description of the exact data entry.
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -5012,7 +5012,7 @@ name: string
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -5054,7 +5054,7 @@ One of the following:
 
 <summary>
 
-object {id, created\_at, enabled, 6 more }
+object { id, created\_at, enabled, 6 more }
 
 </summary>
 
@@ -5098,7 +5098,7 @@ The optional description of the document fingerprint entry.
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -5120,7 +5120,7 @@ name: string
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -5162,7 +5162,7 @@ One of the following:
 
 <summary>
 
-object {id, created\_at, enabled, 7 more }
+object { id, created\_at, enabled, 7 more }
 
 </summary>
 
@@ -5210,7 +5210,7 @@ formatuuid
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -5232,7 +5232,7 @@ name: string
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -5278,7 +5278,7 @@ One of the following:
 
 <summary>
 
-PredefinedListResponse = object {id, created\_at, enabled, 8 more } or object {id, created\_at, enabled, 5 more } or object {id, confidence, enabled, 6 more } or 4 more
+PredefinedListResponse = object { id, created\_at, enabled, 8 more } or object { id, created\_at, enabled, 5 more } or object { id, confidence, enabled, 6 more } or 4 more
 
 </summary>
 
@@ -5288,7 +5288,7 @@ One of the following:
 
 <summary>
 
-object {id, created\_at, enabled, 8 more }
+object { id, created\_at, enabled, 8 more }
 
 </summary>
 
@@ -5340,7 +5340,7 @@ formatuuid
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -5390,7 +5390,7 @@ Returned by the entry endpoints. Not returned on entries embedded in other respo
 
 <summary>
 
-object {id, created\_at, enabled, 5 more }
+object { id, created\_at, enabled, 5 more }
 
 </summary>
 
@@ -5434,7 +5434,7 @@ The optional description of the custom prompt topic entry.
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -5476,7 +5476,7 @@ One of the following:
 
 <summary>
 
-object {id, confidence, enabled, 6 more }
+object { id, confidence, enabled, 6 more }
 
 </summary>
 
@@ -5490,7 +5490,7 @@ formatuuid
 
 <summary>
 
-confidence: object {ai\_context\_available, available }
+confidence: object { ai\_context\_available, available }
 
 </summary>
 
@@ -5538,7 +5538,7 @@ formatuuid
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -5576,7 +5576,7 @@ One of the following:
 
 <summary>
 
-variant: optional object {topic\_type, type, description } or object {type, description }
+variant: optional object { topic\_type, type, description } or object { type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -5588,7 +5588,7 @@ One of the following:
 
 <summary>
 
-object {topic\_type, type, description }
+object { topic\_type, type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -5598,7 +5598,7 @@ A Predefined AI prompt classification topic entry.
 
 <summary>
 
-topic\_type: "Intent"or "Content"
+topic\_type: "Intent" or "Content"
 
 </summary>
 
@@ -5634,7 +5634,7 @@ A customer-facing explanation of what this predefined AI prompt topic represents
 
 <summary>
 
-object {type, description }
+object { type, description }
 
 A general predefined entry.
 
@@ -5666,7 +5666,7 @@ A customer-facing explanation of what this predefined entry represents.
 
 <summary>
 
-object {id, created\_at, enabled, 5 more }
+object { id, created\_at, enabled, 5 more }
 
 </summary>
 
@@ -5710,7 +5710,7 @@ formatuuid
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -5752,7 +5752,7 @@ One of the following:
 
 <summary>
 
-object {id, case\_sensitive, created\_at, 7 more }
+object { id, case\_sensitive, created\_at, 7 more }
 
 </summary>
 
@@ -5806,7 +5806,7 @@ The optional description of the exact data entry.
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -5848,7 +5848,7 @@ One of the following:
 
 <summary>
 
-object {id, created\_at, enabled, 5 more }
+object { id, created\_at, enabled, 5 more }
 
 </summary>
 
@@ -5892,7 +5892,7 @@ The optional description of the document fingerprint entry.
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -5934,7 +5934,7 @@ One of the following:
 
 <summary>
 
-object {id, created\_at, enabled, 6 more }
+object { id, created\_at, enabled, 6 more }
 
 </summary>
 
@@ -5982,7 +5982,7 @@ formatuuid
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -6052,7 +6052,7 @@ GET/accounts/{account\_id}/dlp/entries
 
 <summary>
 
-IntegrationCreateResponse object {id, created\_at, enabled, 3 more }
+IntegrationCreateResponse object { id, created\_at, enabled, 3 more }
 
 </summary>
 
@@ -6096,7 +6096,7 @@ formatuuid
 
 <summary>
 
-IntegrationUpdateResponse object {id, created\_at, enabled, 3 more }
+IntegrationUpdateResponse object { id, created\_at, enabled, 3 more }
 
 </summary>
 
@@ -6144,7 +6144,7 @@ IntegrationDeleteResponse = unknown
 
 <summary>
 
-IntegrationGetResponse = object {id, created\_at, enabled, 9 more } or object {id, created\_at, enabled, 6 more } or object {id, confidence, enabled, 7 more } or 4 more
+IntegrationGetResponse = object { id, created\_at, enabled, 9 more } or object { id, created\_at, enabled, 6 more } or object { id, confidence, enabled, 7 more } or 4 more
 
 </summary>
 
@@ -6154,7 +6154,7 @@ One of the following:
 
 <summary>
 
-object {id, created\_at, enabled, 9 more }
+object { id, created\_at, enabled, 9 more }
 
 </summary>
 
@@ -6206,7 +6206,7 @@ formatuuid
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -6228,7 +6228,7 @@ name: string
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -6278,7 +6278,7 @@ Returned by the entry endpoints. Not returned on entries embedded in other respo
 
 <summary>
 
-object {id, created\_at, enabled, 6 more }
+object { id, created\_at, enabled, 6 more }
 
 </summary>
 
@@ -6322,7 +6322,7 @@ The optional description of the custom prompt topic entry.
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -6344,7 +6344,7 @@ name: string
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -6386,7 +6386,7 @@ One of the following:
 
 <summary>
 
-object {id, confidence, enabled, 7 more }
+object { id, confidence, enabled, 7 more }
 
 </summary>
 
@@ -6400,7 +6400,7 @@ formatuuid
 
 <summary>
 
-confidence: object {ai\_context\_available, available }
+confidence: object { ai\_context\_available, available }
 
 </summary>
 
@@ -6448,7 +6448,7 @@ formatuuid
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -6470,7 +6470,7 @@ name: string
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -6508,7 +6508,7 @@ One of the following:
 
 <summary>
 
-variant: optional object {topic\_type, type, description } or object {type, description }
+variant: optional object { topic\_type, type, description } or object { type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -6520,7 +6520,7 @@ One of the following:
 
 <summary>
 
-object {topic\_type, type, description }
+object { topic\_type, type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -6530,7 +6530,7 @@ A Predefined AI prompt classification topic entry.
 
 <summary>
 
-topic\_type: "Intent"or "Content"
+topic\_type: "Intent" or "Content"
 
 </summary>
 
@@ -6566,7 +6566,7 @@ A customer-facing explanation of what this predefined AI prompt topic represents
 
 <summary>
 
-object {type, description }
+object { type, description }
 
 A general predefined entry.
 
@@ -6598,7 +6598,7 @@ A customer-facing explanation of what this predefined entry represents.
 
 <summary>
 
-object {id, created\_at, enabled, 6 more }
+object { id, created\_at, enabled, 6 more }
 
 </summary>
 
@@ -6642,7 +6642,7 @@ formatuuid
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -6664,7 +6664,7 @@ name: string
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -6706,7 +6706,7 @@ One of the following:
 
 <summary>
 
-object {id, case\_sensitive, created\_at, 8 more }
+object { id, case\_sensitive, created\_at, 8 more }
 
 </summary>
 
@@ -6760,7 +6760,7 @@ The optional description of the exact data entry.
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -6782,7 +6782,7 @@ name: string
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -6824,7 +6824,7 @@ One of the following:
 
 <summary>
 
-object {id, created\_at, enabled, 6 more }
+object { id, created\_at, enabled, 6 more }
 
 </summary>
 
@@ -6868,7 +6868,7 @@ The optional description of the document fingerprint entry.
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -6890,7 +6890,7 @@ name: string
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -6932,7 +6932,7 @@ One of the following:
 
 <summary>
 
-object {id, created\_at, enabled, 7 more }
+object { id, created\_at, enabled, 7 more }
 
 </summary>
 
@@ -6980,7 +6980,7 @@ formatuuid
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -7002,7 +7002,7 @@ name: string
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -7048,7 +7048,7 @@ One of the following:
 
 <summary>
 
-IntegrationListResponse = object {id, created\_at, enabled, 8 more } or object {id, created\_at, enabled, 5 more } or object {id, confidence, enabled, 6 more } or 4 more
+IntegrationListResponse = object { id, created\_at, enabled, 8 more } or object { id, created\_at, enabled, 5 more } or object { id, confidence, enabled, 6 more } or 4 more
 
 </summary>
 
@@ -7058,7 +7058,7 @@ One of the following:
 
 <summary>
 
-object {id, created\_at, enabled, 8 more }
+object { id, created\_at, enabled, 8 more }
 
 </summary>
 
@@ -7110,7 +7110,7 @@ formatuuid
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -7160,7 +7160,7 @@ Returned by the entry endpoints. Not returned on entries embedded in other respo
 
 <summary>
 
-object {id, created\_at, enabled, 5 more }
+object { id, created\_at, enabled, 5 more }
 
 </summary>
 
@@ -7204,7 +7204,7 @@ The optional description of the custom prompt topic entry.
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -7246,7 +7246,7 @@ One of the following:
 
 <summary>
 
-object {id, confidence, enabled, 6 more }
+object { id, confidence, enabled, 6 more }
 
 </summary>
 
@@ -7260,7 +7260,7 @@ formatuuid
 
 <summary>
 
-confidence: object {ai\_context\_available, available }
+confidence: object { ai\_context\_available, available }
 
 </summary>
 
@@ -7308,7 +7308,7 @@ formatuuid
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -7346,7 +7346,7 @@ One of the following:
 
 <summary>
 
-variant: optional object {topic\_type, type, description } or object {type, description }
+variant: optional object { topic\_type, type, description } or object { type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -7358,7 +7358,7 @@ One of the following:
 
 <summary>
 
-object {topic\_type, type, description }
+object { topic\_type, type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -7368,7 +7368,7 @@ A Predefined AI prompt classification topic entry.
 
 <summary>
 
-topic\_type: "Intent"or "Content"
+topic\_type: "Intent" or "Content"
 
 </summary>
 
@@ -7404,7 +7404,7 @@ A customer-facing explanation of what this predefined AI prompt topic represents
 
 <summary>
 
-object {type, description }
+object { type, description }
 
 A general predefined entry.
 
@@ -7436,7 +7436,7 @@ A customer-facing explanation of what this predefined entry represents.
 
 <summary>
 
-object {id, created\_at, enabled, 5 more }
+object { id, created\_at, enabled, 5 more }
 
 </summary>
 
@@ -7480,7 +7480,7 @@ formatuuid
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -7522,7 +7522,7 @@ One of the following:
 
 <summary>
 
-object {id, case\_sensitive, created\_at, 7 more }
+object { id, case\_sensitive, created\_at, 7 more }
 
 </summary>
 
@@ -7576,7 +7576,7 @@ The optional description of the exact data entry.
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -7618,7 +7618,7 @@ One of the following:
 
 <summary>
 
-object {id, created\_at, enabled, 5 more }
+object { id, created\_at, enabled, 5 more }
 
 </summary>
 
@@ -7662,7 +7662,7 @@ The optional description of the document fingerprint entry.
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -7704,7 +7704,7 @@ One of the following:
 
 <summary>
 
-object {id, created\_at, enabled, 6 more }
+object { id, created\_at, enabled, 6 more }
 
 </summary>
 
@@ -7752,7 +7752,7 @@ formatuuid
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload\_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 

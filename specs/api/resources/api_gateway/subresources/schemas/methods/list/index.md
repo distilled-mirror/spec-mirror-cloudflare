@@ -74,7 +74,7 @@ maxLength32
 
 <summary>
 
-feature: optional array of "thresholds"or "parameter\_schemas"or "schema\_info"or "confidence\_intervals"
+feature: optional array of "thresholds" or "parameter\_schemas" or "schema\_info" or "confidence\_intervals"
 
 Add feature(s) to the results. The feature name that is given here corresponds to the resulting feature object. Have a look at the top-level object description for more details on the specific meaning.
 
@@ -142,7 +142,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -184,7 +184,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -204,7 +204,7 @@ pointer: optional string
 
 <summary>
 
-result: object {schemas, timestamp }
+result: object { schemas, timestamp }
 
 </summary>
 

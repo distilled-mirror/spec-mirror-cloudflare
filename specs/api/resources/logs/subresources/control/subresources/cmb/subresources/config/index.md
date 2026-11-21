@@ -40,7 +40,7 @@ DELETE/accounts/{account\_id}/logs/control/cmb/config
 
 <summary>
 
-CmbConfig object {allow\_out\_of\_region\_access, regions }
+CmbConfig object { allow\_out\_of\_region\_access, regions }
 
 </summary>
 

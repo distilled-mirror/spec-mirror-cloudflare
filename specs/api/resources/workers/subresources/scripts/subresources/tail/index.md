@@ -38,7 +38,7 @@ DELETE/accounts/{account\_id}/workers/scripts/{script\_name}/tails/{id}
 
 <summary>
 
-ConsumerScript object {service, environment, namespace }
+ConsumerScript object { service, environment, namespace }
 
 A reference to a script that will consume logs from the attached Worker.
 
@@ -70,7 +70,7 @@ Optional dispatch namespace the script belongs to.
 
 <summary>
 
-TailGetResponse object {id, expires\_at, url }
+TailGetResponse object { id, expires\_at, url }
 
 </summary>
 
@@ -98,7 +98,7 @@ url: string
 
 <summary>
 
-TailCreateResponse object {id, expires\_at, url }
+TailCreateResponse object { id, expires\_at, url }
 
 </summary>
 
@@ -126,7 +126,7 @@ url: string
 
 <summary>
 
-TailDeleteResponse object {errors, messages, success }
+TailDeleteResponse object { errors, messages, success }
 
 </summary>
 
@@ -134,7 +134,7 @@ TailDeleteResponse object {errors, messages, success }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -156,7 +156,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -176,7 +176,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -198,7 +198,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 

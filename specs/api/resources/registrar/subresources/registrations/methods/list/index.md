@@ -80,7 +80,7 @@ maxLength256
 
 <summary>
 
-direction: optional "asc"or "desc"
+direction: optional "asc" or "desc"
 
 Sort direction for results. Defaults to ascending order.
 
@@ -114,7 +114,7 @@ minimum1
 
 <summary>
 
-sort\_by: optional "registry\_created\_at"or "registry\_expires\_at"or "name"
+sort\_by: optional "registry\_created\_at" or "registry\_expires\_at" or "name"
 
 Column to sort results by. Defaults to registration date (<code>registry_created_at</code>) when omitted.
 
@@ -144,7 +144,7 @@ One of the following:
 
 <summary>
 
-errors: array of object {code, message, source }
+errors: array of object { code, message, source }
 
 </summary>
 
@@ -162,7 +162,7 @@ message: string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 Location of the invalid value that caused the error.
 
@@ -186,7 +186,7 @@ JSON Pointer to the invalid or missing request value.
 
 <summary>
 
-messages: array of object {code, message, source }
+messages: array of object { code, message, source }
 
 </summary>
 
@@ -204,7 +204,7 @@ message: string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 Location of the invalid value that caused the error.
 
@@ -270,7 +270,7 @@ Whether the domain is locked for transfer.
 
 <summary>
 
-privacy\_mode: "off"or "redaction"
+privacy\_mode: "off" or "redaction"
 
 Current WHOIS privacy mode for the registration.
 
@@ -294,7 +294,7 @@ One of the following:
 
 <summary>
 
-status: "active"or "registration\_pending"or "transfer\_pending"or 4 more
+status: "active" or "registration\_pending" or "transfer\_pending" or 4 more
 
 Current registration status.
 
@@ -350,7 +350,7 @@ One of the following:
 
 <summary>
 
-result\_info: object {count, cursor, per\_page }
+result\_info: object { count, cursor, per\_page }
 
 Provides cursor-based pagination metadata. List endpoints use this metadata for cursor pagination. Pass the <code>cursor</code> value as a query parameter in the next request to fetch the next page. An empty string indicates the end of pagination.
 

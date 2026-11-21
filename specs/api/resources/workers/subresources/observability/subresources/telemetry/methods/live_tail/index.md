@@ -84,7 +84,7 @@ account\_id: string
 
 <summary>
 
-filterCombination: optional "and"or "or"or "AND"or "OR"
+filterCombination: optional "and" or "or" or "AND" or "OR"
 
 Set a flag to describe how to combine the filters on the query.
 
@@ -116,7 +116,7 @@ One of the following:
 
 <summary>
 
-filters: optional array of object {filterCombination, filters, kind } or object {key, operation, type, 2 more }
+filters: optional array of object { filterCombination, filters, kind } or object { key, operation, type, 2 more }
 
 Apply filters to the query. Supports nested groups via kind: ‘group’.
 
@@ -128,7 +128,7 @@ One of the following:
 
 <summary>
 
-object {filterCombination, filters, kind }
+object { filterCombination, filters, kind }
 
 </summary>
 
@@ -136,7 +136,7 @@ object {filterCombination, filters, kind }
 
 <summary>
 
-filterCombination: "and"or "or"or "AND"or "OR"
+filterCombination: "and" or "or" or "AND" or "OR"
 
 </summary>
 
@@ -166,7 +166,7 @@ One of the following:
 
 <summary>
 
-filters: array of object {filterCombination, filters, kind } or object {key, operation, type, 2 more }
+filters: array of object { filterCombination, filters, kind } or object { key, operation, type, 2 more }
 
 </summary>
 
@@ -176,7 +176,7 @@ One of the following:
 
 <summary>
 
-object {filterCombination, filters, kind }
+object { filterCombination, filters, kind }
 
 </summary>
 
@@ -184,7 +184,7 @@ object {filterCombination, filters, kind }
 
 <summary>
 
-filterCombination: "and"or "or"or "AND"or "OR"
+filterCombination: "and" or "or" or "AND" or "OR"
 
 </summary>
 
@@ -226,7 +226,7 @@ kind: "group"
 
 <summary>
 
-WorkersObservabilityFilterLeaf object {key, operation, type, 2 more }
+WorkersObservabilityFilterLeaf object { key, operation, type, 2 more }
 
 A filter condition applied to query results. Use the keys and values endpoints to discover available fields and their values before constructing filters.
 
@@ -242,7 +242,7 @@ Filter field name. Use verified keys from previous query results or the keys end
 
 <summary>
 
-operation: "includes"or "not\_includes"or "starts\_with"or 27 more
+operation: "includes" or "not\_includes" or "starts\_with" or 27 more
 
 Comparison operator. String operators: includes, not\_includes, starts\_with, ends\_with, regex. Existence: exists, is\_null. Set membership: in, not\_in (comma-separated values). Numeric: eq, neq, gt, gte, lt, lte.
 
@@ -378,7 +378,7 @@ One of the following:
 
 <summary>
 
-type: "string"or "number"or "boolean"
+type: "string" or "number" or "boolean"
 
 Data type of the filter field. Must match the actual type of the key being filtered.
 
@@ -412,7 +412,7 @@ Discriminator for leaf filter nodes. Always ‘filter’ when present; may be om
 
 <summary>
 
-value: optional stringor numberor boolean
+value: optional string or number or boolean
 
 Comparison value. Must match actual values in your data — verify with the values endpoint. Ensure the value type (string/number/boolean) matches the field type. String comparisons are case-sensitive. Regex uses RE2 syntax (no lookaheads/lookbehinds).
 
@@ -456,7 +456,7 @@ kind: "group"
 
 <summary>
 
-WorkersObservabilityFilterLeaf object {key, operation, type, 2 more }
+WorkersObservabilityFilterLeaf object { key, operation, type, 2 more }
 
 A filter condition applied to query results. Use the keys and values endpoints to discover available fields and their values before constructing filters.
 
@@ -472,7 +472,7 @@ Filter field name. Use verified keys from previous query results or the keys end
 
 <summary>
 
-operation: "includes"or "not\_includes"or "starts\_with"or 27 more
+operation: "includes" or "not\_includes" or "starts\_with" or 27 more
 
 Comparison operator. String operators: includes, not\_includes, starts\_with, ends\_with, regex. Existence: exists, is\_null. Set membership: in, not\_in (comma-separated values). Numeric: eq, neq, gt, gte, lt, lte.
 
@@ -608,7 +608,7 @@ One of the following:
 
 <summary>
 
-type: "string"or "number"or "boolean"
+type: "string" or "number" or "boolean"
 
 Data type of the filter field. Must match the actual type of the key being filtered.
 
@@ -642,7 +642,7 @@ Discriminator for leaf filter nodes. Always ‘filter’ when present; may be om
 
 <summary>
 
-value: optional stringor numberor boolean
+value: optional string or number or boolean
 
 Comparison value. Must match actual values in your data — verify with the values endpoint. Ensure the value type (string/number/boolean) matches the field type. String comparisons are case-sensitive. Regex uses RE2 syntax (no lookaheads/lookbehinds).
 
@@ -684,7 +684,7 @@ scriptId: optional string
 
 <summary>
 
-errors: array of object {message }
+errors: array of object { message }
 
 </summary>
 
@@ -700,7 +700,7 @@ message: string
 
 <summary>
 
-messages: array of object {message }
+messages: array of object { message }
 
 </summary>
 
@@ -716,7 +716,7 @@ message: "Successful request"
 
 <summary>
 
-result: object {wsUrl }
+result: object { wsUrl }
 
 </summary>
 

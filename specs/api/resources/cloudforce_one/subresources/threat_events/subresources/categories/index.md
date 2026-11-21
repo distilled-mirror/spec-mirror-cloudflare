@@ -52,7 +52,7 @@ DELETE/accounts/{account\_id}/cloudforce-one/events/categories/{category\_id}
 
 <summary>
 
-CategoryListResponse = array of object {killChain, name, uuid, 3 more }
+CategoryListResponse = array of object { killChain, name, uuid, 3 more }
 
 </summary>
 
@@ -88,7 +88,7 @@ shortname: optional string
 
 <summary>
 
-CategoryGetResponse object {killChain, name, uuid, 3 more }
+CategoryGetResponse object { killChain, name, uuid, 3 more }
 
 </summary>
 
@@ -124,7 +124,7 @@ shortname: optional string
 
 <summary>
 
-CategoryCreateResponse object {killChain, name, uuid, 3 more }
+CategoryCreateResponse object { killChain, name, uuid, 3 more }
 
 </summary>
 
@@ -160,7 +160,7 @@ shortname: optional string
 
 <summary>
 
-CategoryEditResponse object {killChain, name, uuid, 3 more }
+CategoryEditResponse object { killChain, name, uuid, 3 more }
 
 </summary>
 
@@ -196,7 +196,7 @@ shortname: optional string
 
 <summary>
 
-CategoryDeleteResponse object {uuid }
+CategoryDeleteResponse object { uuid }
 
 </summary>
 
@@ -220,7 +220,7 @@ GET/accounts/{account\_id}/cloudforce-one/events/categories/catalog
 
 <summary>
 
-CatalogListResponse = array of object {killChain, name, uuid, 3 more }
+CatalogListResponse = array of object { killChain, name, uuid, 3 more }
 
 </summary>
 

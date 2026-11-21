@@ -90,7 +90,7 @@ Provides the Cloudflare API token for accessing R2.
 
 <summary>
 
-errors: array of object {code, message }
+errors: array of object { code, message }
 
 Contains errors if the API call was unsuccessful.
 
@@ -116,7 +116,7 @@ Describes the error.
 
 <summary>
 
-messages: array of object {code, message }
+messages: array of object { code, message }
 
 Contains informational messages.
 

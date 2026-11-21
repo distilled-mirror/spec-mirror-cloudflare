@@ -28,7 +28,7 @@ GET/accounts/{account\_id}/workers/durable\_objects/namespaces
 
 <summary>
 
-Namespace object {id, class, name, 2 more }
+Namespace object { id, class, name, 2 more }
 
 </summary>
 
@@ -68,7 +68,7 @@ GET/accounts/{account\_id}/workers/durable\_objects/namespaces/{id}/objects
 
 <summary>
 
-DurableObject object {id, hasStoredData }
+DurableObject object { id, hasStoredData }
 
 </summary>
 

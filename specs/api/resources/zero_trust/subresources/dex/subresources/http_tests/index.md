@@ -30,7 +30,7 @@ GET/accounts/{account\_id}/dex/http-tests/{test\_id}
 
 <summary>
 
-HTTPDetails object {host, httpStats, httpStatsByColo, 6 more }
+HTTPDetails object { host, httpStats, httpStatsByColo, 6 more }
 
 </summary>
 
@@ -44,7 +44,7 @@ The url of the HTTP synthetic application test.
 
 <summary>
 
-httpStats: optional object {availabilityPct, dnsResponseTimeMs, httpStatusCode, 3 more }
+httpStats: optional object { availabilityPct, dnsResponseTimeMs, httpStatusCode, 3 more }
 
 </summary>
 
@@ -52,7 +52,7 @@ httpStats: optional object {availabilityPct, dnsResponseTimeMs, httpStatusCode, 
 
 <summary>
 
-availabilityPct: object {slots, avg, max, min }
+availabilityPct: object { slots, avg, max, min }
 
 </summary>
 
@@ -60,7 +60,7 @@ availabilityPct: object {slots, avg, max, min }
 
 <summary>
 
-slots: array of object {timestamp, value }
+slots: array of object { timestamp, value }
 
 </summary>
 
@@ -114,7 +114,7 @@ dnsResponseTimeMs: <a href="https://developers.cloudflare.com/api/resources/zero
 
 <summary>
 
-httpStatusCode: array of object {status200, status300, status400, 2 more }
+httpStatusCode: array of object { status200, status300, status400, 2 more }
 
 </summary>
 
@@ -164,7 +164,7 @@ Count of unique devices that have run this test in the given time period.
 
 <summary>
 
-httpStatsByColo: optional array of object {availabilityPct, colo, dnsResponseTimeMs, 4 more }
+httpStatsByColo: optional array of object { availabilityPct, colo, dnsResponseTimeMs, 4 more }
 
 </summary>
 
@@ -172,7 +172,7 @@ httpStatsByColo: optional array of object {availabilityPct, colo, dnsResponseTim
 
 <summary>
 
-availabilityPct: object {slots, avg, max, min }
+availabilityPct: object { slots, avg, max, min }
 
 </summary>
 
@@ -180,7 +180,7 @@ availabilityPct: object {slots, avg, max, min }
 
 <summary>
 
-slots: array of object {timestamp, value }
+slots: array of object { timestamp, value }
 
 </summary>
 
@@ -238,7 +238,7 @@ dnsResponseTimeMs: <a href="https://developers.cloudflare.com/api/resources/zero
 
 <summary>
 
-httpStatusCode: array of object {status200, status300, status400, 2 more }
+httpStatusCode: array of object { status200, status300, status400, 2 more }
 
 </summary>
 
@@ -356,7 +356,7 @@ GET/accounts/{account\_id}/dex/http-tests/{test\_id}/percentiles
 
 <summary>
 
-HTTPDetailsPercentiles object {dnsResponseTimeMs, resourceFetchTimeMs, serverResponseTimeMs }
+HTTPDetailsPercentiles object { dnsResponseTimeMs, resourceFetchTimeMs, serverResponseTimeMs }
 
 </summary>
 
@@ -380,7 +380,7 @@ serverResponseTimeMs: optional <a href="https://developers.cloudflare.com/api/re
 
 <summary>
 
-TestStatOverTime object {slots, avg, max, min }
+TestStatOverTime object { slots, avg, max, min }
 
 </summary>
 
@@ -388,7 +388,7 @@ TestStatOverTime object {slots, avg, max, min }
 
 <summary>
 
-slots: array of object {timestamp, value }
+slots: array of object { timestamp, value }
 
 </summary>
 

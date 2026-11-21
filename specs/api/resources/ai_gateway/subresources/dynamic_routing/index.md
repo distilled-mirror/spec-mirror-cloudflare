@@ -64,7 +64,7 @@ GET/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/routes/{id}/version
 
 <summary>
 
-DynamicRoutingListResponse object {data, success }
+DynamicRoutingListResponse object { data, success }
 
 </summary>
 
@@ -72,7 +72,7 @@ DynamicRoutingListResponse object {data, success }
 
 <summary>
 
-data: object {order\_by, order\_by\_direction, page, 2 more }
+data: object { order\_by, order\_by\_direction, page, 2 more }
 
 </summary>
 
@@ -96,7 +96,7 @@ per\_page: number
 
 <summary>
 
-routes: array of object {id, account\_tag, created\_at, 6 more }
+routes: array of object { id, account\_tag, created\_at, 6 more }
 
 </summary>
 
@@ -118,7 +118,7 @@ formatdate-time
 
 <summary>
 
-deployment: object {created\_at, deployment\_id, version\_id }
+deployment: object { created\_at, deployment\_id, version\_id }
 
 </summary>
 
@@ -142,7 +142,7 @@ version\_id: string
 
 <summary>
 
-elements: array of object {id, outputs, type } or object {id, outputs, properties, type } or object {id, outputs, type } or 3 more
+elements: array of object { id, outputs, type } or object { id, outputs, properties, type } or object { id, outputs, type } or 3 more
 
 </summary>
 
@@ -152,7 +152,7 @@ One of the following:
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -164,7 +164,7 @@ id: string
 
 <summary>
 
-outputs: object {next }
+outputs: object { next }
 
 </summary>
 
@@ -172,7 +172,7 @@ outputs: object {next }
 
 <summary>
 
-next: object {elementId }
+next: object { elementId }
 
 </summary>
 
@@ -200,7 +200,7 @@ type: "start"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -212,7 +212,7 @@ id: string
 
 <summary>
 
-outputs: object {false, true }
+outputs: object { false, true }
 
 </summary>
 
@@ -220,23 +220,7 @@ outputs: object {false, true }
 
 <summary>
 
-false: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-true: object {elementId }
+false: object { elementId }
 
 </summary>
 
@@ -248,6 +232,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+true: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -256,7 +256,7 @@ elementId: string
 
 <summary>
 
-properties: object {conditions }
+properties: object { conditions }
 
 </summary>
 
@@ -280,7 +280,7 @@ type: "conditional"
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -292,7 +292,7 @@ id: string
 
 <summary>
 
-outputs: map\[object {elementId } ]
+outputs: map\[object { elementId } ]
 
 </summary>
 
@@ -316,7 +316,7 @@ type: "percentage"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -328,7 +328,7 @@ id: string
 
 <summary>
 
-outputs: object {fallback, success }
+outputs: object { fallback, success }
 
 </summary>
 
@@ -336,23 +336,7 @@ outputs: object {fallback, success }
 
 <summary>
 
-fallback: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-success: object {elementId }
+fallback: object { elementId }
 
 </summary>
 
@@ -364,6 +348,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+success: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -372,7 +372,7 @@ elementId: string
 
 <summary>
 
-properties: object {key, limit, limitType, window }
+properties: object { key, limit, limitType, window }
 
 </summary>
 
@@ -388,7 +388,7 @@ limit: number
 
 <summary>
 
-limitType: "count"or "cost"
+limitType: "count" or "cost"
 
 </summary>
 
@@ -426,7 +426,7 @@ type: "rate"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -438,7 +438,7 @@ id: string
 
 <summary>
 
-outputs: object {fallback, success }
+outputs: object { fallback, success }
 
 </summary>
 
@@ -446,23 +446,7 @@ outputs: object {fallback, success }
 
 <summary>
 
-fallback: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-success: object {elementId }
+fallback: object { elementId }
 
 </summary>
 
@@ -474,6 +458,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+success: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -482,7 +482,7 @@ elementId: string
 
 <summary>
 
-properties: object {model, provider, retries, timeout }
+properties: object { model, provider, retries, timeout }
 
 </summary>
 
@@ -518,7 +518,7 @@ type: "model"
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -530,7 +530,7 @@ id: string
 
 <summary>
 
-outputs: map\[object {elementId } ]
+outputs: map\[object { elementId } ]
 
 </summary>
 
@@ -574,7 +574,7 @@ minLength1
 
 <summary>
 
-version: object {active, created\_at, data, 2 more }
+version: object { active, created\_at, data, 2 more }
 
 </summary>
 
@@ -582,7 +582,7 @@ version: object {active, created\_at, data, 2 more }
 
 <summary>
 
-active: "true"or "false"
+active: "true" or "false"
 
 </summary>
 
@@ -640,7 +640,7 @@ success: boolean
 
 <summary>
 
-DynamicRoutingGetResponse object {id, created\_at, deployment, 5 more }
+DynamicRoutingGetResponse object { id, created\_at, deployment, 5 more }
 
 </summary>
 
@@ -658,7 +658,7 @@ formatdate-time
 
 <summary>
 
-deployment: object {created\_at, deployment\_id, version\_id }
+deployment: object { created\_at, deployment\_id, version\_id }
 
 </summary>
 
@@ -682,7 +682,7 @@ version\_id: string
 
 <summary>
 
-elements: array of object {id, outputs, type } or object {id, outputs, properties, type } or object {id, outputs, type } or 3 more
+elements: array of object { id, outputs, type } or object { id, outputs, properties, type } or object { id, outputs, type } or 3 more
 
 </summary>
 
@@ -692,7 +692,7 @@ One of the following:
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -704,7 +704,7 @@ id: string
 
 <summary>
 
-outputs: object {next }
+outputs: object { next }
 
 </summary>
 
@@ -712,7 +712,7 @@ outputs: object {next }
 
 <summary>
 
-next: object {elementId }
+next: object { elementId }
 
 </summary>
 
@@ -740,7 +740,7 @@ type: "start"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -752,7 +752,7 @@ id: string
 
 <summary>
 
-outputs: object {false, true }
+outputs: object { false, true }
 
 </summary>
 
@@ -760,23 +760,7 @@ outputs: object {false, true }
 
 <summary>
 
-false: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-true: object {elementId }
+false: object { elementId }
 
 </summary>
 
@@ -788,6 +772,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+true: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -796,7 +796,7 @@ elementId: string
 
 <summary>
 
-properties: object {conditions }
+properties: object { conditions }
 
 </summary>
 
@@ -820,7 +820,7 @@ type: "conditional"
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -832,7 +832,7 @@ id: string
 
 <summary>
 
-outputs: map\[object {elementId } ]
+outputs: map\[object { elementId } ]
 
 </summary>
 
@@ -856,7 +856,7 @@ type: "percentage"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -868,7 +868,7 @@ id: string
 
 <summary>
 
-outputs: object {fallback, success }
+outputs: object { fallback, success }
 
 </summary>
 
@@ -876,23 +876,7 @@ outputs: object {fallback, success }
 
 <summary>
 
-fallback: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-success: object {elementId }
+fallback: object { elementId }
 
 </summary>
 
@@ -904,6 +888,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+success: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -912,7 +912,7 @@ elementId: string
 
 <summary>
 
-properties: object {key, limit, limitType, window }
+properties: object { key, limit, limitType, window }
 
 </summary>
 
@@ -928,7 +928,7 @@ limit: number
 
 <summary>
 
-limitType: "count"or "cost"
+limitType: "count" or "cost"
 
 </summary>
 
@@ -966,7 +966,7 @@ type: "rate"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -978,7 +978,7 @@ id: string
 
 <summary>
 
-outputs: object {fallback, success }
+outputs: object { fallback, success }
 
 </summary>
 
@@ -986,23 +986,7 @@ outputs: object {fallback, success }
 
 <summary>
 
-fallback: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-success: object {elementId }
+fallback: object { elementId }
 
 </summary>
 
@@ -1014,6 +998,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+success: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -1022,7 +1022,7 @@ elementId: string
 
 <summary>
 
-properties: object {model, provider, retries, timeout }
+properties: object { model, provider, retries, timeout }
 
 </summary>
 
@@ -1058,7 +1058,7 @@ type: "model"
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -1070,7 +1070,7 @@ id: string
 
 <summary>
 
-outputs: map\[object {elementId } ]
+outputs: map\[object { elementId } ]
 
 </summary>
 
@@ -1114,7 +1114,7 @@ minLength1
 
 <summary>
 
-version: object {active, created\_at, data, 2 more }
+version: object { active, created\_at, data, 2 more }
 
 </summary>
 
@@ -1122,7 +1122,7 @@ version: object {active, created\_at, data, 2 more }
 
 <summary>
 
-active: "true"or "false"
+active: "true" or "false"
 
 </summary>
 
@@ -1168,7 +1168,7 @@ is\_valid: optional boolean
 
 <summary>
 
-DynamicRoutingCreateResponse object {id, created\_at, deployment, 5 more }
+DynamicRoutingCreateResponse object { id, created\_at, deployment, 5 more }
 
 </summary>
 
@@ -1186,7 +1186,7 @@ formatdate-time
 
 <summary>
 
-deployment: object {created\_at, deployment\_id, version\_id }
+deployment: object { created\_at, deployment\_id, version\_id }
 
 </summary>
 
@@ -1210,7 +1210,7 @@ version\_id: string
 
 <summary>
 
-elements: array of object {id, outputs, type } or object {id, outputs, properties, type } or object {id, outputs, type } or 3 more
+elements: array of object { id, outputs, type } or object { id, outputs, properties, type } or object { id, outputs, type } or 3 more
 
 </summary>
 
@@ -1220,7 +1220,7 @@ One of the following:
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -1232,7 +1232,7 @@ id: string
 
 <summary>
 
-outputs: object {next }
+outputs: object { next }
 
 </summary>
 
@@ -1240,7 +1240,7 @@ outputs: object {next }
 
 <summary>
 
-next: object {elementId }
+next: object { elementId }
 
 </summary>
 
@@ -1268,7 +1268,7 @@ type: "start"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -1280,7 +1280,7 @@ id: string
 
 <summary>
 
-outputs: object {false, true }
+outputs: object { false, true }
 
 </summary>
 
@@ -1288,23 +1288,7 @@ outputs: object {false, true }
 
 <summary>
 
-false: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-true: object {elementId }
+false: object { elementId }
 
 </summary>
 
@@ -1316,6 +1300,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+true: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -1324,7 +1324,7 @@ elementId: string
 
 <summary>
 
-properties: object {conditions }
+properties: object { conditions }
 
 </summary>
 
@@ -1348,7 +1348,7 @@ type: "conditional"
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -1360,7 +1360,7 @@ id: string
 
 <summary>
 
-outputs: map\[object {elementId } ]
+outputs: map\[object { elementId } ]
 
 </summary>
 
@@ -1384,7 +1384,7 @@ type: "percentage"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -1396,7 +1396,7 @@ id: string
 
 <summary>
 
-outputs: object {fallback, success }
+outputs: object { fallback, success }
 
 </summary>
 
@@ -1404,23 +1404,7 @@ outputs: object {fallback, success }
 
 <summary>
 
-fallback: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-success: object {elementId }
+fallback: object { elementId }
 
 </summary>
 
@@ -1432,6 +1416,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+success: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -1440,7 +1440,7 @@ elementId: string
 
 <summary>
 
-properties: object {key, limit, limitType, window }
+properties: object { key, limit, limitType, window }
 
 </summary>
 
@@ -1456,7 +1456,7 @@ limit: number
 
 <summary>
 
-limitType: "count"or "cost"
+limitType: "count" or "cost"
 
 </summary>
 
@@ -1494,7 +1494,7 @@ type: "rate"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -1506,7 +1506,7 @@ id: string
 
 <summary>
 
-outputs: object {fallback, success }
+outputs: object { fallback, success }
 
 </summary>
 
@@ -1514,23 +1514,7 @@ outputs: object {fallback, success }
 
 <summary>
 
-fallback: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-success: object {elementId }
+fallback: object { elementId }
 
 </summary>
 
@@ -1542,6 +1526,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+success: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -1550,7 +1550,7 @@ elementId: string
 
 <summary>
 
-properties: object {model, provider, retries, timeout }
+properties: object { model, provider, retries, timeout }
 
 </summary>
 
@@ -1586,7 +1586,7 @@ type: "model"
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -1598,7 +1598,7 @@ id: string
 
 <summary>
 
-outputs: map\[object {elementId } ]
+outputs: map\[object { elementId } ]
 
 </summary>
 
@@ -1642,7 +1642,7 @@ minLength1
 
 <summary>
 
-version: object {active, created\_at, data, 2 more }
+version: object { active, created\_at, data, 2 more }
 
 </summary>
 
@@ -1650,7 +1650,7 @@ version: object {active, created\_at, data, 2 more }
 
 <summary>
 
-active: "true"or "false"
+active: "true" or "false"
 
 </summary>
 
@@ -1696,7 +1696,7 @@ is\_valid: optional boolean
 
 <summary>
 
-DynamicRoutingUpdateResponse object {route, success }
+DynamicRoutingUpdateResponse object { route, success }
 
 </summary>
 
@@ -1704,7 +1704,7 @@ DynamicRoutingUpdateResponse object {route, success }
 
 <summary>
 
-route: object {id, account\_tag, created\_at, 6 more }
+route: object { id, account\_tag, created\_at, 6 more }
 
 </summary>
 
@@ -1726,7 +1726,7 @@ formatdate-time
 
 <summary>
 
-deployment: object {created\_at, deployment\_id, version\_id }
+deployment: object { created\_at, deployment\_id, version\_id }
 
 </summary>
 
@@ -1750,7 +1750,7 @@ version\_id: string
 
 <summary>
 
-elements: array of object {id, outputs, type } or object {id, outputs, properties, type } or object {id, outputs, type } or 3 more
+elements: array of object { id, outputs, type } or object { id, outputs, properties, type } or object { id, outputs, type } or 3 more
 
 </summary>
 
@@ -1760,7 +1760,7 @@ One of the following:
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -1772,7 +1772,7 @@ id: string
 
 <summary>
 
-outputs: object {next }
+outputs: object { next }
 
 </summary>
 
@@ -1780,7 +1780,7 @@ outputs: object {next }
 
 <summary>
 
-next: object {elementId }
+next: object { elementId }
 
 </summary>
 
@@ -1808,7 +1808,7 @@ type: "start"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -1820,7 +1820,7 @@ id: string
 
 <summary>
 
-outputs: object {false, true }
+outputs: object { false, true }
 
 </summary>
 
@@ -1828,23 +1828,7 @@ outputs: object {false, true }
 
 <summary>
 
-false: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-true: object {elementId }
+false: object { elementId }
 
 </summary>
 
@@ -1856,6 +1840,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+true: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -1864,7 +1864,7 @@ elementId: string
 
 <summary>
 
-properties: object {conditions }
+properties: object { conditions }
 
 </summary>
 
@@ -1888,7 +1888,7 @@ type: "conditional"
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -1900,7 +1900,7 @@ id: string
 
 <summary>
 
-outputs: map\[object {elementId } ]
+outputs: map\[object { elementId } ]
 
 </summary>
 
@@ -1924,7 +1924,7 @@ type: "percentage"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -1936,7 +1936,7 @@ id: string
 
 <summary>
 
-outputs: object {fallback, success }
+outputs: object { fallback, success }
 
 </summary>
 
@@ -1944,23 +1944,7 @@ outputs: object {fallback, success }
 
 <summary>
 
-fallback: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-success: object {elementId }
+fallback: object { elementId }
 
 </summary>
 
@@ -1972,6 +1956,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+success: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -1980,7 +1980,7 @@ elementId: string
 
 <summary>
 
-properties: object {key, limit, limitType, window }
+properties: object { key, limit, limitType, window }
 
 </summary>
 
@@ -1996,7 +1996,7 @@ limit: number
 
 <summary>
 
-limitType: "count"or "cost"
+limitType: "count" or "cost"
 
 </summary>
 
@@ -2034,7 +2034,7 @@ type: "rate"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -2046,7 +2046,7 @@ id: string
 
 <summary>
 
-outputs: object {fallback, success }
+outputs: object { fallback, success }
 
 </summary>
 
@@ -2054,23 +2054,7 @@ outputs: object {fallback, success }
 
 <summary>
 
-fallback: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-success: object {elementId }
+fallback: object { elementId }
 
 </summary>
 
@@ -2082,6 +2066,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+success: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -2090,7 +2090,7 @@ elementId: string
 
 <summary>
 
-properties: object {model, provider, retries, timeout }
+properties: object { model, provider, retries, timeout }
 
 </summary>
 
@@ -2126,7 +2126,7 @@ type: "model"
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -2138,7 +2138,7 @@ id: string
 
 <summary>
 
-outputs: map\[object {elementId } ]
+outputs: map\[object { elementId } ]
 
 </summary>
 
@@ -2182,7 +2182,7 @@ minLength1
 
 <summary>
 
-version: object {active, created\_at, data, 2 more }
+version: object { active, created\_at, data, 2 more }
 
 </summary>
 
@@ -2190,7 +2190,7 @@ version: object {active, created\_at, data, 2 more }
 
 <summary>
 
-active: "true"or "false"
+active: "true" or "false"
 
 </summary>
 
@@ -2244,7 +2244,7 @@ success: boolean
 
 <summary>
 
-DynamicRoutingDeleteResponse object {id, created\_at, elements, 3 more }
+DynamicRoutingDeleteResponse object { id, created\_at, elements, 3 more }
 
 </summary>
 
@@ -2262,7 +2262,7 @@ formatdate-time
 
 <summary>
 
-elements: array of object {id, outputs, type } or object {id, outputs, properties, type } or object {id, outputs, type } or 3 more
+elements: array of object { id, outputs, type } or object { id, outputs, properties, type } or object { id, outputs, type } or 3 more
 
 </summary>
 
@@ -2272,7 +2272,7 @@ One of the following:
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -2284,7 +2284,7 @@ id: string
 
 <summary>
 
-outputs: object {next }
+outputs: object { next }
 
 </summary>
 
@@ -2292,7 +2292,7 @@ outputs: object {next }
 
 <summary>
 
-next: object {elementId }
+next: object { elementId }
 
 </summary>
 
@@ -2320,7 +2320,7 @@ type: "start"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -2332,7 +2332,7 @@ id: string
 
 <summary>
 
-outputs: object {false, true }
+outputs: object { false, true }
 
 </summary>
 
@@ -2340,23 +2340,7 @@ outputs: object {false, true }
 
 <summary>
 
-false: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-true: object {elementId }
+false: object { elementId }
 
 </summary>
 
@@ -2368,6 +2352,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+true: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -2376,7 +2376,7 @@ elementId: string
 
 <summary>
 
-properties: object {conditions }
+properties: object { conditions }
 
 </summary>
 
@@ -2400,7 +2400,7 @@ type: "conditional"
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -2412,7 +2412,7 @@ id: string
 
 <summary>
 
-outputs: map\[object {elementId } ]
+outputs: map\[object { elementId } ]
 
 </summary>
 
@@ -2436,7 +2436,7 @@ type: "percentage"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -2448,7 +2448,7 @@ id: string
 
 <summary>
 
-outputs: object {fallback, success }
+outputs: object { fallback, success }
 
 </summary>
 
@@ -2456,23 +2456,7 @@ outputs: object {fallback, success }
 
 <summary>
 
-fallback: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-success: object {elementId }
+fallback: object { elementId }
 
 </summary>
 
@@ -2484,6 +2468,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+success: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -2492,7 +2492,7 @@ elementId: string
 
 <summary>
 
-properties: object {key, limit, limitType, window }
+properties: object { key, limit, limitType, window }
 
 </summary>
 
@@ -2508,7 +2508,7 @@ limit: number
 
 <summary>
 
-limitType: "count"or "cost"
+limitType: "count" or "cost"
 
 </summary>
 
@@ -2546,7 +2546,7 @@ type: "rate"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -2558,7 +2558,7 @@ id: string
 
 <summary>
 
-outputs: object {fallback, success }
+outputs: object { fallback, success }
 
 </summary>
 
@@ -2566,23 +2566,7 @@ outputs: object {fallback, success }
 
 <summary>
 
-fallback: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-success: object {elementId }
+fallback: object { elementId }
 
 </summary>
 
@@ -2594,6 +2578,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+success: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -2602,7 +2602,7 @@ elementId: string
 
 <summary>
 
-properties: object {model, provider, retries, timeout }
+properties: object { model, provider, retries, timeout }
 
 </summary>
 
@@ -2638,7 +2638,7 @@ type: "model"
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -2650,7 +2650,7 @@ id: string
 
 <summary>
 
-outputs: map\[object {elementId } ]
+outputs: map\[object { elementId } ]
 
 </summary>
 
@@ -2698,7 +2698,7 @@ minLength1
 
 <summary>
 
-DynamicRoutingListDeploymentsResponse object {data, success }
+DynamicRoutingListDeploymentsResponse object { data, success }
 
 </summary>
 
@@ -2706,7 +2706,7 @@ DynamicRoutingListDeploymentsResponse object {data, success }
 
 <summary>
 
-data: object {deployments, order\_by, order\_by\_direction, 2 more }
+data: object { deployments, order\_by, order\_by\_direction, 2 more }
 
 </summary>
 
@@ -2714,7 +2714,7 @@ data: object {deployments, order\_by, order\_by\_direction, 2 more }
 
 <summary>
 
-deployments: array of object {created\_at, deployment\_id, version\_id }
+deployments: array of object { created\_at, deployment\_id, version\_id }
 
 </summary>
 
@@ -2766,7 +2766,7 @@ success: boolean
 
 <summary>
 
-DynamicRoutingCreateDeploymentResponse object {id, created\_at, elements, 3 more }
+DynamicRoutingCreateDeploymentResponse object { id, created\_at, elements, 3 more }
 
 </summary>
 
@@ -2784,7 +2784,7 @@ formatdate-time
 
 <summary>
 
-elements: array of object {id, outputs, type } or object {id, outputs, properties, type } or object {id, outputs, type } or 3 more
+elements: array of object { id, outputs, type } or object { id, outputs, properties, type } or object { id, outputs, type } or 3 more
 
 </summary>
 
@@ -2794,7 +2794,7 @@ One of the following:
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -2806,7 +2806,7 @@ id: string
 
 <summary>
 
-outputs: object {next }
+outputs: object { next }
 
 </summary>
 
@@ -2814,7 +2814,7 @@ outputs: object {next }
 
 <summary>
 
-next: object {elementId }
+next: object { elementId }
 
 </summary>
 
@@ -2842,7 +2842,7 @@ type: "start"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -2854,7 +2854,7 @@ id: string
 
 <summary>
 
-outputs: object {false, true }
+outputs: object { false, true }
 
 </summary>
 
@@ -2862,23 +2862,7 @@ outputs: object {false, true }
 
 <summary>
 
-false: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-true: object {elementId }
+false: object { elementId }
 
 </summary>
 
@@ -2890,6 +2874,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+true: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -2898,7 +2898,7 @@ elementId: string
 
 <summary>
 
-properties: object {conditions }
+properties: object { conditions }
 
 </summary>
 
@@ -2922,7 +2922,7 @@ type: "conditional"
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -2934,7 +2934,7 @@ id: string
 
 <summary>
 
-outputs: map\[object {elementId } ]
+outputs: map\[object { elementId } ]
 
 </summary>
 
@@ -2958,7 +2958,7 @@ type: "percentage"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -2970,7 +2970,7 @@ id: string
 
 <summary>
 
-outputs: object {fallback, success }
+outputs: object { fallback, success }
 
 </summary>
 
@@ -2978,23 +2978,7 @@ outputs: object {fallback, success }
 
 <summary>
 
-fallback: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-success: object {elementId }
+fallback: object { elementId }
 
 </summary>
 
@@ -3006,6 +2990,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+success: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -3014,7 +3014,7 @@ elementId: string
 
 <summary>
 
-properties: object {key, limit, limitType, window }
+properties: object { key, limit, limitType, window }
 
 </summary>
 
@@ -3030,7 +3030,7 @@ limit: number
 
 <summary>
 
-limitType: "count"or "cost"
+limitType: "count" or "cost"
 
 </summary>
 
@@ -3068,7 +3068,7 @@ type: "rate"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -3080,7 +3080,7 @@ id: string
 
 <summary>
 
-outputs: object {fallback, success }
+outputs: object { fallback, success }
 
 </summary>
 
@@ -3088,23 +3088,7 @@ outputs: object {fallback, success }
 
 <summary>
 
-fallback: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-success: object {elementId }
+fallback: object { elementId }
 
 </summary>
 
@@ -3116,6 +3100,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+success: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -3124,7 +3124,7 @@ elementId: string
 
 <summary>
 
-properties: object {model, provider, retries, timeout }
+properties: object { model, provider, retries, timeout }
 
 </summary>
 
@@ -3160,7 +3160,7 @@ type: "model"
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -3172,7 +3172,7 @@ id: string
 
 <summary>
 
-outputs: map\[object {elementId } ]
+outputs: map\[object { elementId } ]
 
 </summary>
 
@@ -3220,7 +3220,7 @@ minLength1
 
 <summary>
 
-DynamicRoutingListVersionsResponse object {data, success }
+DynamicRoutingListVersionsResponse object { data, success }
 
 </summary>
 
@@ -3228,7 +3228,7 @@ DynamicRoutingListVersionsResponse object {data, success }
 
 <summary>
 
-data: object {order\_by, order\_by\_direction, page, 2 more }
+data: object { order\_by, order\_by\_direction, page, 2 more }
 
 </summary>
 
@@ -3252,7 +3252,7 @@ per\_page: number
 
 <summary>
 
-versions: array of object {active, created\_at, data, 2 more }
+versions: array of object { active, created\_at, data, 2 more }
 
 </summary>
 
@@ -3260,7 +3260,7 @@ versions: array of object {active, created\_at, data, 2 more }
 
 <summary>
 
-active: "true"or "false"
+active: "true" or "false"
 
 </summary>
 
@@ -3314,7 +3314,7 @@ success: boolean
 
 <summary>
 
-DynamicRoutingCreateVersionResponse object {id, created\_at, elements, 3 more }
+DynamicRoutingCreateVersionResponse object { id, created\_at, elements, 3 more }
 
 </summary>
 
@@ -3332,7 +3332,7 @@ formatdate-time
 
 <summary>
 
-elements: array of object {id, outputs, type } or object {id, outputs, properties, type } or object {id, outputs, type } or 3 more
+elements: array of object { id, outputs, type } or object { id, outputs, properties, type } or object { id, outputs, type } or 3 more
 
 </summary>
 
@@ -3342,7 +3342,7 @@ One of the following:
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -3354,7 +3354,7 @@ id: string
 
 <summary>
 
-outputs: object {next }
+outputs: object { next }
 
 </summary>
 
@@ -3362,7 +3362,7 @@ outputs: object {next }
 
 <summary>
 
-next: object {elementId }
+next: object { elementId }
 
 </summary>
 
@@ -3390,7 +3390,7 @@ type: "start"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -3402,7 +3402,7 @@ id: string
 
 <summary>
 
-outputs: object {false, true }
+outputs: object { false, true }
 
 </summary>
 
@@ -3410,23 +3410,7 @@ outputs: object {false, true }
 
 <summary>
 
-false: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-true: object {elementId }
+false: object { elementId }
 
 </summary>
 
@@ -3438,6 +3422,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+true: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -3446,7 +3446,7 @@ elementId: string
 
 <summary>
 
-properties: object {conditions }
+properties: object { conditions }
 
 </summary>
 
@@ -3470,7 +3470,7 @@ type: "conditional"
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -3482,7 +3482,7 @@ id: string
 
 <summary>
 
-outputs: map\[object {elementId } ]
+outputs: map\[object { elementId } ]
 
 </summary>
 
@@ -3506,7 +3506,7 @@ type: "percentage"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -3518,7 +3518,7 @@ id: string
 
 <summary>
 
-outputs: object {fallback, success }
+outputs: object { fallback, success }
 
 </summary>
 
@@ -3526,23 +3526,7 @@ outputs: object {fallback, success }
 
 <summary>
 
-fallback: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-success: object {elementId }
+fallback: object { elementId }
 
 </summary>
 
@@ -3554,6 +3538,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+success: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -3562,7 +3562,7 @@ elementId: string
 
 <summary>
 
-properties: object {key, limit, limitType, window }
+properties: object { key, limit, limitType, window }
 
 </summary>
 
@@ -3578,7 +3578,7 @@ limit: number
 
 <summary>
 
-limitType: "count"or "cost"
+limitType: "count" or "cost"
 
 </summary>
 
@@ -3616,7 +3616,7 @@ type: "rate"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -3628,7 +3628,7 @@ id: string
 
 <summary>
 
-outputs: object {fallback, success }
+outputs: object { fallback, success }
 
 </summary>
 
@@ -3636,23 +3636,7 @@ outputs: object {fallback, success }
 
 <summary>
 
-fallback: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-success: object {elementId }
+fallback: object { elementId }
 
 </summary>
 
@@ -3664,6 +3648,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+success: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -3672,7 +3672,7 @@ elementId: string
 
 <summary>
 
-properties: object {model, provider, retries, timeout }
+properties: object { model, provider, retries, timeout }
 
 </summary>
 
@@ -3708,7 +3708,7 @@ type: "model"
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -3720,7 +3720,7 @@ id: string
 
 <summary>
 
-outputs: map\[object {elementId } ]
+outputs: map\[object { elementId } ]
 
 </summary>
 
@@ -3768,7 +3768,7 @@ minLength1
 
 <summary>
 
-DynamicRoutingGetVersionResponse object {id, active, created\_at, 7 more }
+DynamicRoutingGetVersionResponse object { id, active, created\_at, 7 more }
 
 </summary>
 
@@ -3780,7 +3780,7 @@ id: string
 
 <summary>
 
-active: "true"or "false"
+active: "true" or "false"
 
 </summary>
 
@@ -3810,7 +3810,7 @@ data: string
 
 <summary>
 
-elements: array of object {id, outputs, type } or object {id, outputs, properties, type } or object {id, outputs, type } or 3 more
+elements: array of object { id, outputs, type } or object { id, outputs, properties, type } or object { id, outputs, type } or 3 more
 
 </summary>
 
@@ -3820,7 +3820,7 @@ One of the following:
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -3832,7 +3832,7 @@ id: string
 
 <summary>
 
-outputs: object {next }
+outputs: object { next }
 
 </summary>
 
@@ -3840,7 +3840,7 @@ outputs: object {next }
 
 <summary>
 
-next: object {elementId }
+next: object { elementId }
 
 </summary>
 
@@ -3868,7 +3868,7 @@ type: "start"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -3880,7 +3880,7 @@ id: string
 
 <summary>
 
-outputs: object {false, true }
+outputs: object { false, true }
 
 </summary>
 
@@ -3888,23 +3888,7 @@ outputs: object {false, true }
 
 <summary>
 
-false: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-true: object {elementId }
+false: object { elementId }
 
 </summary>
 
@@ -3916,6 +3900,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+true: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -3924,7 +3924,7 @@ elementId: string
 
 <summary>
 
-properties: object {conditions }
+properties: object { conditions }
 
 </summary>
 
@@ -3948,7 +3948,7 @@ type: "conditional"
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -3960,7 +3960,7 @@ id: string
 
 <summary>
 
-outputs: map\[object {elementId } ]
+outputs: map\[object { elementId } ]
 
 </summary>
 
@@ -3984,7 +3984,7 @@ type: "percentage"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -3996,7 +3996,7 @@ id: string
 
 <summary>
 
-outputs: object {fallback, success }
+outputs: object { fallback, success }
 
 </summary>
 
@@ -4004,23 +4004,7 @@ outputs: object {fallback, success }
 
 <summary>
 
-fallback: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-success: object {elementId }
+fallback: object { elementId }
 
 </summary>
 
@@ -4032,6 +4016,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+success: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -4040,7 +4040,7 @@ elementId: string
 
 <summary>
 
-properties: object {key, limit, limitType, window }
+properties: object { key, limit, limitType, window }
 
 </summary>
 
@@ -4056,7 +4056,7 @@ limit: number
 
 <summary>
 
-limitType: "count"or "cost"
+limitType: "count" or "cost"
 
 </summary>
 
@@ -4094,7 +4094,7 @@ type: "rate"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -4106,7 +4106,7 @@ id: string
 
 <summary>
 
-outputs: object {fallback, success }
+outputs: object { fallback, success }
 
 </summary>
 
@@ -4114,23 +4114,7 @@ outputs: object {fallback, success }
 
 <summary>
 
-fallback: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-success: object {elementId }
+fallback: object { elementId }
 
 </summary>
 
@@ -4142,6 +4126,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+success: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -4150,7 +4150,7 @@ elementId: string
 
 <summary>
 
-properties: object {model, provider, retries, timeout }
+properties: object { model, provider, retries, timeout }
 
 </summary>
 
@@ -4186,7 +4186,7 @@ type: "model"
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -4198,7 +4198,7 @@ id: string
 
 <summary>
 
-outputs: map\[object {elementId } ]
+outputs: map\[object { elementId } ]
 
 </summary>
 

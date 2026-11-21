@@ -88,7 +88,7 @@ formatdate-time
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -122,7 +122,7 @@ minimum0
 
 <summary>
 
-status: optional "VERIFIED"or "UNVERIFIED"
+status: optional "VERIFIED" or "UNVERIFIED"
 
 </summary>
 
@@ -146,7 +146,7 @@ One of the following:
 
 <summary>
 
-result: object {trafficAnomalies }
+result: object { trafficAnomalies }
 
 </summary>
 
@@ -154,7 +154,7 @@ result: object {trafficAnomalies }
 
 <summary>
 
-trafficAnomalies: array of object {clientCountryAlpha2, clientCountryName, value }
+trafficAnomalies: array of object { clientCountryAlpha2, clientCountryName, value }
 
 </summary>
 

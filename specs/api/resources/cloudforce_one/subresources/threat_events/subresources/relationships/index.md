@@ -32,7 +32,7 @@ GET/accounts/{account\_id}/cloudforce-one/events/{event\_id}/relationships
 
 <summary>
 
-RelationshipListResponse = array of object {attacker, attackerCountry, attackerCountryAlpha3, 26 more }
+RelationshipListResponse = array of object { attacker, attackerCountry, attackerCountryAlpha3, 26 more }
 
 </summary>
 

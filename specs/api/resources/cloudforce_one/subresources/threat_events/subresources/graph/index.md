@@ -30,7 +30,7 @@ GET/accounts/{account\_id}/cloudforce-one/events/graph
 
 <summary>
 
-GraphListResponse object {edges, node, nodes }
+GraphListResponse object { edges, node, nodes }
 
 </summary>
 
@@ -38,7 +38,7 @@ GraphListResponse object {edges, node, nodes }
 
 <summary>
 
-edges: array of object {id, relationshipType, source, 5 more }
+edges: array of object { id, relationshipType, source, 5 more }
 
 </summary>
 

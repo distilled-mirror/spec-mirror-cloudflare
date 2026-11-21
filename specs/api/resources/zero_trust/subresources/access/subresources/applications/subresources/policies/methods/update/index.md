@@ -60,7 +60,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Access: Apps and Policies Write`
+`Individual Access Policy Admin``Access: Policies Write``Zero Trust Write``Access: Apps and Policies Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -98,7 +98,7 @@ The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 
 <summary>
 
-body: object {approval\_groups, approval\_required, connection\_rules, 6 more } or object {decision, include, name, 5 more }
+body: object { approval\_groups, approval\_required, connection\_rules, 6 more } or object { decision, include, name, 5 more }
 
 </summary>
 
@@ -108,7 +108,7 @@ One of the following:
 
 <summary>
 
-AccessAppPolicyRequest object {approval\_groups, approval\_required, connection\_rules, 6 more }
+AccessAppPolicyRequest object { approval\_groups, approval\_required, connection\_rules, 6 more }
 
 </summary>
 
@@ -156,7 +156,7 @@ Requires the user to request access from an administrator at the start of each s
 
 <summary>
 
-connection\_rules: optional object {rdp }
+connection\_rules: optional object { rdp }
 
 The rules that define how users may connect to targets secured by your application.
 
@@ -166,7 +166,7 @@ The rules that define how users may connect to targets secured by your applicati
 
 <summary>
 
-rdp: optional object {allowed\_clipboard\_local\_to\_remote\_formats, allowed\_clipboard\_remote\_to\_local\_formats }
+rdp: optional object { allowed\_clipboard\_local\_to\_remote\_formats, allowed\_clipboard\_remote\_to\_local\_formats }
 
 The RDP-specific rules that define clipboard behavior for RDP connections.
 
@@ -176,7 +176,7 @@ The RDP-specific rules that define clipboard behavior for RDP connections.
 
 <summary>
 
-allowed\_clipboard\_local\_to\_remote\_formats: optional array of "text"or "file"
+allowed\_clipboard\_local\_to\_remote\_formats: optional array of "text" or "file"
 
 Clipboard formats allowed when copying from local machine to remote RDP session.
 
@@ -200,7 +200,7 @@ One of the following:
 
 <summary>
 
-allowed\_clipboard\_remote\_to\_local\_formats: optional array of "text"or "file"
+allowed\_clipboard\_remote\_to\_local\_formats: optional array of "text" or "file"
 
 Clipboard formats allowed when copying from remote RDP session to local machine.
 
@@ -238,7 +238,7 @@ Require this application to be served in an isolated browser for users matching 
 
 <summary>
 
-mfa\_config: optional object {allowed\_authenticators, mfa\_disabled, session\_duration }
+mfa\_config: optional object { allowed\_authenticators, mfa\_disabled, session\_duration }
 
 Configures multi-factor authentication (MFA) settings.
 
@@ -248,7 +248,7 @@ Configures multi-factor authentication (MFA) settings.
 
 <summary>
 
-allowed\_authenticators: optional array of "totp"or "biometrics"or "security\_key"
+allowed\_authenticators: optional array of "totp" or "biometrics" or "security\_key"
 
 Lists the MFA methods that users can authenticate with.
 
@@ -320,7 +320,7 @@ The amount of time that tokens issued for the application will be valid. Must be
 
 <summary>
 
-object {decision, include, name, 5 more }
+object { decision, include, name, 5 more }
 
 </summary>
 
@@ -372,7 +372,7 @@ One of the following:
 
 <summary>
 
-GroupRule object {group }
+GroupRule object { group }
 
 Matches an Access group.
 
@@ -382,7 +382,7 @@ Matches an Access group.
 
 <summary>
 
-group: object {id }
+group: object { id }
 
 </summary>
 
@@ -404,13 +404,13 @@ The ID of a previously created Access group.
 
 <summary>
 
-AnyValidServiceTokenRule object {any\_valid\_service\_token }
+AnyValidServiceTokenRule object { any\_valid\_service\_token }
 
 Matches any valid Access Service Token
 
 </summary>
 
-any\_valid\_service\_token: object {}
+any\_valid\_service\_token: object { }
 
 An empty object which matches on all service tokens.
 
@@ -424,7 +424,7 @@ An empty object which matches on all service tokens.
 
 <summary>
 
-AccessAuthContextRule object {auth\_context }
+AccessAuthContextRule object { auth\_context }
 
 Matches an Azure Authentication Context. Requires an Azure identity provider.
 
@@ -434,7 +434,7 @@ Matches an Azure Authentication Context. Requires an Azure identity provider.
 
 <summary>
 
-auth\_context: object {id, ac\_id, identity\_provider\_id }
+auth\_context: object { id, ac\_id, identity\_provider\_id }
 
 </summary>
 
@@ -468,7 +468,7 @@ The ID of your Azure identity provider.
 
 <summary>
 
-AuthenticationMethodRule object {auth\_method }
+AuthenticationMethodRule object { auth\_method }
 
 Enforce different MFA options
 
@@ -478,7 +478,7 @@ Enforce different MFA options
 
 <summary>
 
-auth\_method: object {auth\_method }
+auth\_method: object { auth\_method }
 
 </summary>
 
@@ -500,7 +500,7 @@ The type of authentication method <a href="https://datatracker.ietf.org/doc/html
 
 <summary>
 
-AzureGroupRule object {azureAD }
+AzureGroupRule object { azureAD }
 
 Matches an Azure group. Requires an Azure identity provider.
 
@@ -510,7 +510,7 @@ Matches an Azure group. Requires an Azure identity provider.
 
 <summary>
 
-azureAD: object {id, identity\_provider\_id }
+azureAD: object { id, identity\_provider\_id }
 
 </summary>
 
@@ -538,13 +538,13 @@ The ID of your Azure identity provider.
 
 <summary>
 
-CertificateRule object {certificate }
+CertificateRule object { certificate }
 
 Matches any valid client certificate.
 
 </summary>
 
-certificate: object {}
+certificate: object { }
 
 <a href="#">Link to this property</a>
 
@@ -556,7 +556,7 @@ certificate: object {}
 
 <summary>
 
-AccessCommonNameRule object {common\_name }
+AccessCommonNameRule object { common\_name }
 
 Matches a specific common name.
 
@@ -566,7 +566,7 @@ Matches a specific common name.
 
 <summary>
 
-common\_name: object {common\_name }
+common\_name: object { common\_name }
 
 </summary>
 
@@ -588,7 +588,7 @@ The common name to match.
 
 <summary>
 
-CountryRule object {geo }
+CountryRule object { geo }
 
 Matches a specific country
 
@@ -598,7 +598,7 @@ Matches a specific country
 
 <summary>
 
-geo: object {country\_code }
+geo: object { country\_code }
 
 </summary>
 
@@ -620,7 +620,7 @@ The country code that should be matched.
 
 <summary>
 
-AccessDevicePostureRule object {device\_posture }
+AccessDevicePostureRule object { device\_posture }
 
 Enforces a device posture rule has run successfully
 
@@ -630,7 +630,7 @@ Enforces a device posture rule has run successfully
 
 <summary>
 
-device\_posture: object {integration\_uid, account\_id }
+device\_posture: object { integration\_uid, account\_id }
 
 </summary>
 
@@ -660,7 +660,7 @@ maxLength32
 
 <summary>
 
-DomainRule object {email\_domain }
+DomainRule object { email\_domain }
 
 Match an entire email domain.
 
@@ -670,7 +670,7 @@ Match an entire email domain.
 
 <summary>
 
-email\_domain: object {domain }
+email\_domain: object { domain }
 
 </summary>
 
@@ -692,7 +692,7 @@ The email domain to match.
 
 <summary>
 
-EmailListRule object {email\_list }
+EmailListRule object { email\_list }
 
 Matches an email address from a list.
 
@@ -702,7 +702,7 @@ Matches an email address from a list.
 
 <summary>
 
-email\_list: object {id }
+email\_list: object { id }
 
 </summary>
 
@@ -724,7 +724,7 @@ The ID of a previously created email list.
 
 <summary>
 
-EmailRule object {email }
+EmailRule object { email }
 
 Matches a specific email.
 
@@ -734,7 +734,7 @@ Matches a specific email.
 
 <summary>
 
-email: object {email }
+email: object { email }
 
 </summary>
 
@@ -758,13 +758,13 @@ formatemail
 
 <summary>
 
-EveryoneRule object {everyone }
+EveryoneRule object { everyone }
 
 Matches everyone.
 
 </summary>
 
-everyone: object {}
+everyone: object { }
 
 An empty object which matches on all users.
 
@@ -778,7 +778,7 @@ An empty object which matches on all users.
 
 <summary>
 
-ExternalEvaluationRule object {external\_evaluation }
+ExternalEvaluationRule object { external\_evaluation }
 
 Create Allow or Block policies which evaluate the user based on custom criteria.
 
@@ -788,7 +788,7 @@ Create Allow or Block policies which evaluate the user based on custom criteria.
 
 <summary>
 
-external\_evaluation: object {evaluate\_url, keys\_url }
+external\_evaluation: object { evaluate\_url, keys\_url }
 
 </summary>
 
@@ -816,7 +816,7 @@ The API endpoint containing the key that Access uses to verify that the response
 
 <summary>
 
-GitHubOrganizationRule object {"github-organization" }
+GitHubOrganizationRule object { "github-organization" }
 
 Matches a Github organization. Requires a Github identity provider.
 
@@ -826,7 +826,7 @@ Matches a Github organization. Requires a Github identity provider.
 
 <summary>
 
-"github-organization": object {identity\_provider\_id, name, team }
+"github-organization": object { identity\_provider\_id, name, team }
 
 </summary>
 
@@ -860,7 +860,7 @@ The name of the team
 
 <summary>
 
-GSuiteGroupRule object {gsuite }
+GSuiteGroupRule object { gsuite }
 
 Matches a group in Google Workspace. Requires a Google Workspace identity provider.
 
@@ -870,7 +870,7 @@ Matches a group in Google Workspace. Requires a Google Workspace identity provid
 
 <summary>
 
-gsuite: object {email, identity\_provider\_id }
+gsuite: object { email, identity\_provider\_id }
 
 </summary>
 
@@ -898,7 +898,7 @@ The ID of your Google Workspace identity provider.
 
 <summary>
 
-AccessLoginMethodRule object {login\_method }
+AccessLoginMethodRule object { login\_method }
 
 Matches a specific identity provider id.
 
@@ -908,7 +908,7 @@ Matches a specific identity provider id.
 
 <summary>
 
-login\_method: object {id }
+login\_method: object { id }
 
 </summary>
 
@@ -930,7 +930,7 @@ The ID of an identity provider.
 
 <summary>
 
-IPListRule object {ip\_list }
+IPListRule object { ip\_list }
 
 Matches an IP address from a list.
 
@@ -940,7 +940,7 @@ Matches an IP address from a list.
 
 <summary>
 
-ip\_list: object {id }
+ip\_list: object { id }
 
 </summary>
 
@@ -962,7 +962,7 @@ The ID of a previously created IP list.
 
 <summary>
 
-IPRule object {ip }
+IPRule object { ip }
 
 Matches an IP address block.
 
@@ -972,7 +972,7 @@ Matches an IP address block.
 
 <summary>
 
-ip: object {ip }
+ip: object { ip }
 
 </summary>
 
@@ -994,7 +994,7 @@ An IPv4 or IPv6 CIDR block.
 
 <summary>
 
-OktaGroupRule object {okta }
+OktaGroupRule object { okta }
 
 Matches an Okta group. Requires an Okta identity provider.
 
@@ -1004,7 +1004,7 @@ Matches an Okta group. Requires an Okta identity provider.
 
 <summary>
 
-okta: object {identity\_provider\_id, name }
+okta: object { identity\_provider\_id, name }
 
 </summary>
 
@@ -1032,7 +1032,7 @@ The name of the Okta group.
 
 <summary>
 
-SAMLGroupRule object {saml }
+SAMLGroupRule object { saml }
 
 Matches a SAML group. Requires a SAML identity provider.
 
@@ -1042,7 +1042,7 @@ Matches a SAML group. Requires a SAML identity provider.
 
 <summary>
 
-saml: object {attribute\_name, attribute\_value, identity\_provider\_id }
+saml: object { attribute\_name, attribute\_value, identity\_provider\_id }
 
 </summary>
 
@@ -1076,7 +1076,7 @@ The ID of your SAML identity provider.
 
 <summary>
 
-AccessOIDCClaimRule object {oidc }
+AccessOIDCClaimRule object { oidc }
 
 Matches an OIDC claim. Requires an OIDC identity provider.
 
@@ -1086,7 +1086,7 @@ Matches an OIDC claim. Requires an OIDC identity provider.
 
 <summary>
 
-oidc: object {claim\_name, claim\_value, identity\_provider\_id }
+oidc: object { claim\_name, claim\_value, identity\_provider\_id }
 
 </summary>
 
@@ -1120,7 +1120,7 @@ The ID of your OIDC identity provider.
 
 <summary>
 
-ServiceTokenRule object {service\_token }
+ServiceTokenRule object { service\_token }
 
 Matches a specific Access Service Token
 
@@ -1130,7 +1130,7 @@ Matches a specific Access Service Token
 
 <summary>
 
-service\_token: object {token\_id }
+service\_token: object { token\_id }
 
 </summary>
 
@@ -1152,7 +1152,7 @@ The ID of a Service Token.
 
 <summary>
 
-AccessServiceTokenTagRule object {service\_token\_tag }
+AccessServiceTokenTagRule object { service\_token\_tag }
 
 Matches an Access service token with the specified tag key and value. Only compatible with non\_identity decisions.
 
@@ -1162,7 +1162,7 @@ Matches an Access service token with the specified tag key and value. Only compa
 
 <summary>
 
-service\_token\_tag: object {key, value }
+service\_token\_tag: object { key, value }
 
 </summary>
 
@@ -1198,7 +1198,7 @@ minLength1
 
 <summary>
 
-AccessLinkedAppTokenRule object {linked\_app\_token }
+AccessLinkedAppTokenRule object { linked\_app\_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non\_identity and bypass decisions.
 
@@ -1208,7 +1208,7 @@ Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS applica
 
 <summary>
 
-linked\_app\_token: object {app\_uid }
+linked\_app\_token: object { app\_uid }
 
 </summary>
 
@@ -1230,7 +1230,7 @@ The ID of an Access OIDC SaaS application
 
 <summary>
 
-AccessUserRiskScoreRule object {user\_risk\_score }
+AccessUserRiskScoreRule object { user\_risk\_score }
 
 Matches a user’s risk score.
 
@@ -1240,7 +1240,7 @@ Matches a user’s risk score.
 
 <summary>
 
-user\_risk\_score: object {user\_risk\_score }
+user\_risk\_score: object { user\_risk\_score }
 
 </summary>
 
@@ -1248,7 +1248,7 @@ user\_risk\_score: object {user\_risk\_score }
 
 <summary>
 
-user\_risk\_score: array of "low"or "medium"or "high"or "unscored"
+user\_risk\_score: array of "low" or "medium" or "high" or "unscored"
 
 A list of risk score levels to match. Values can be low, medium, high, or unscored.
 
@@ -1288,7 +1288,7 @@ One of the following:
 
 <summary>
 
-AccessCloudflareAccountMemberRule object {cloudflare\_account\_member }
+AccessCloudflareAccountMemberRule object { cloudflare\_account\_member }
 
 Matches users who are members of a specific Cloudflare account. Requires a Cloudflare identity provider.
 
@@ -1298,7 +1298,7 @@ Matches users who are members of a specific Cloudflare account. Requires a Cloud
 
 <summary>
 
-cloudflare\_account\_member: object {account\_id }
+cloudflare\_account\_member: object { account\_id }
 
 </summary>
 
@@ -1332,7 +1332,7 @@ The name of the Access policy.
 
 <summary>
 
-connection\_rules: optional object {ssh }
+connection\_rules: optional object { ssh }
 
 The rules that define how users may connect to the targets secured by your application.
 
@@ -1342,7 +1342,7 @@ The rules that define how users may connect to the targets secured by your appli
 
 <summary>
 
-ssh: optional object {usernames, allow\_email\_alias }
+ssh: optional object { usernames, allow\_email\_alias }
 
 The SSH-specific rules that define how users may connect to the targets secured by your application.
 
@@ -1384,7 +1384,7 @@ One of the following:
 
 <summary>
 
-GroupRule object {group }
+GroupRule object { group }
 
 Matches an Access group.
 
@@ -1394,7 +1394,7 @@ Matches an Access group.
 
 <summary>
 
-group: object {id }
+group: object { id }
 
 </summary>
 
@@ -1416,13 +1416,13 @@ The ID of a previously created Access group.
 
 <summary>
 
-AnyValidServiceTokenRule object {any\_valid\_service\_token }
+AnyValidServiceTokenRule object { any\_valid\_service\_token }
 
 Matches any valid Access Service Token
 
 </summary>
 
-any\_valid\_service\_token: object {}
+any\_valid\_service\_token: object { }
 
 An empty object which matches on all service tokens.
 
@@ -1436,7 +1436,7 @@ An empty object which matches on all service tokens.
 
 <summary>
 
-AccessAuthContextRule object {auth\_context }
+AccessAuthContextRule object { auth\_context }
 
 Matches an Azure Authentication Context. Requires an Azure identity provider.
 
@@ -1446,7 +1446,7 @@ Matches an Azure Authentication Context. Requires an Azure identity provider.
 
 <summary>
 
-auth\_context: object {id, ac\_id, identity\_provider\_id }
+auth\_context: object { id, ac\_id, identity\_provider\_id }
 
 </summary>
 
@@ -1480,7 +1480,7 @@ The ID of your Azure identity provider.
 
 <summary>
 
-AuthenticationMethodRule object {auth\_method }
+AuthenticationMethodRule object { auth\_method }
 
 Enforce different MFA options
 
@@ -1490,7 +1490,7 @@ Enforce different MFA options
 
 <summary>
 
-auth\_method: object {auth\_method }
+auth\_method: object { auth\_method }
 
 </summary>
 
@@ -1512,7 +1512,7 @@ The type of authentication method <a href="https://datatracker.ietf.org/doc/html
 
 <summary>
 
-AzureGroupRule object {azureAD }
+AzureGroupRule object { azureAD }
 
 Matches an Azure group. Requires an Azure identity provider.
 
@@ -1522,7 +1522,7 @@ Matches an Azure group. Requires an Azure identity provider.
 
 <summary>
 
-azureAD: object {id, identity\_provider\_id }
+azureAD: object { id, identity\_provider\_id }
 
 </summary>
 
@@ -1550,13 +1550,13 @@ The ID of your Azure identity provider.
 
 <summary>
 
-CertificateRule object {certificate }
+CertificateRule object { certificate }
 
 Matches any valid client certificate.
 
 </summary>
 
-certificate: object {}
+certificate: object { }
 
 <a href="#">Link to this property</a>
 
@@ -1568,7 +1568,7 @@ certificate: object {}
 
 <summary>
 
-AccessCommonNameRule object {common\_name }
+AccessCommonNameRule object { common\_name }
 
 Matches a specific common name.
 
@@ -1578,7 +1578,7 @@ Matches a specific common name.
 
 <summary>
 
-common\_name: object {common\_name }
+common\_name: object { common\_name }
 
 </summary>
 
@@ -1600,7 +1600,7 @@ The common name to match.
 
 <summary>
 
-CountryRule object {geo }
+CountryRule object { geo }
 
 Matches a specific country
 
@@ -1610,7 +1610,7 @@ Matches a specific country
 
 <summary>
 
-geo: object {country\_code }
+geo: object { country\_code }
 
 </summary>
 
@@ -1632,7 +1632,7 @@ The country code that should be matched.
 
 <summary>
 
-AccessDevicePostureRule object {device\_posture }
+AccessDevicePostureRule object { device\_posture }
 
 Enforces a device posture rule has run successfully
 
@@ -1642,7 +1642,7 @@ Enforces a device posture rule has run successfully
 
 <summary>
 
-device\_posture: object {integration\_uid, account\_id }
+device\_posture: object { integration\_uid, account\_id }
 
 </summary>
 
@@ -1672,7 +1672,7 @@ maxLength32
 
 <summary>
 
-DomainRule object {email\_domain }
+DomainRule object { email\_domain }
 
 Match an entire email domain.
 
@@ -1682,7 +1682,7 @@ Match an entire email domain.
 
 <summary>
 
-email\_domain: object {domain }
+email\_domain: object { domain }
 
 </summary>
 
@@ -1704,7 +1704,7 @@ The email domain to match.
 
 <summary>
 
-EmailListRule object {email\_list }
+EmailListRule object { email\_list }
 
 Matches an email address from a list.
 
@@ -1714,7 +1714,7 @@ Matches an email address from a list.
 
 <summary>
 
-email\_list: object {id }
+email\_list: object { id }
 
 </summary>
 
@@ -1736,7 +1736,7 @@ The ID of a previously created email list.
 
 <summary>
 
-EmailRule object {email }
+EmailRule object { email }
 
 Matches a specific email.
 
@@ -1746,7 +1746,7 @@ Matches a specific email.
 
 <summary>
 
-email: object {email }
+email: object { email }
 
 </summary>
 
@@ -1770,13 +1770,13 @@ formatemail
 
 <summary>
 
-EveryoneRule object {everyone }
+EveryoneRule object { everyone }
 
 Matches everyone.
 
 </summary>
 
-everyone: object {}
+everyone: object { }
 
 An empty object which matches on all users.
 
@@ -1790,7 +1790,7 @@ An empty object which matches on all users.
 
 <summary>
 
-ExternalEvaluationRule object {external\_evaluation }
+ExternalEvaluationRule object { external\_evaluation }
 
 Create Allow or Block policies which evaluate the user based on custom criteria.
 
@@ -1800,7 +1800,7 @@ Create Allow or Block policies which evaluate the user based on custom criteria.
 
 <summary>
 
-external\_evaluation: object {evaluate\_url, keys\_url }
+external\_evaluation: object { evaluate\_url, keys\_url }
 
 </summary>
 
@@ -1828,7 +1828,7 @@ The API endpoint containing the key that Access uses to verify that the response
 
 <summary>
 
-GitHubOrganizationRule object {"github-organization" }
+GitHubOrganizationRule object { "github-organization" }
 
 Matches a Github organization. Requires a Github identity provider.
 
@@ -1838,7 +1838,7 @@ Matches a Github organization. Requires a Github identity provider.
 
 <summary>
 
-"github-organization": object {identity\_provider\_id, name, team }
+"github-organization": object { identity\_provider\_id, name, team }
 
 </summary>
 
@@ -1872,7 +1872,7 @@ The name of the team
 
 <summary>
 
-GSuiteGroupRule object {gsuite }
+GSuiteGroupRule object { gsuite }
 
 Matches a group in Google Workspace. Requires a Google Workspace identity provider.
 
@@ -1882,7 +1882,7 @@ Matches a group in Google Workspace. Requires a Google Workspace identity provid
 
 <summary>
 
-gsuite: object {email, identity\_provider\_id }
+gsuite: object { email, identity\_provider\_id }
 
 </summary>
 
@@ -1910,7 +1910,7 @@ The ID of your Google Workspace identity provider.
 
 <summary>
 
-AccessLoginMethodRule object {login\_method }
+AccessLoginMethodRule object { login\_method }
 
 Matches a specific identity provider id.
 
@@ -1920,7 +1920,7 @@ Matches a specific identity provider id.
 
 <summary>
 
-login\_method: object {id }
+login\_method: object { id }
 
 </summary>
 
@@ -1942,7 +1942,7 @@ The ID of an identity provider.
 
 <summary>
 
-IPListRule object {ip\_list }
+IPListRule object { ip\_list }
 
 Matches an IP address from a list.
 
@@ -1952,7 +1952,7 @@ Matches an IP address from a list.
 
 <summary>
 
-ip\_list: object {id }
+ip\_list: object { id }
 
 </summary>
 
@@ -1974,7 +1974,7 @@ The ID of a previously created IP list.
 
 <summary>
 
-IPRule object {ip }
+IPRule object { ip }
 
 Matches an IP address block.
 
@@ -1984,7 +1984,7 @@ Matches an IP address block.
 
 <summary>
 
-ip: object {ip }
+ip: object { ip }
 
 </summary>
 
@@ -2006,7 +2006,7 @@ An IPv4 or IPv6 CIDR block.
 
 <summary>
 
-OktaGroupRule object {okta }
+OktaGroupRule object { okta }
 
 Matches an Okta group. Requires an Okta identity provider.
 
@@ -2016,7 +2016,7 @@ Matches an Okta group. Requires an Okta identity provider.
 
 <summary>
 
-okta: object {identity\_provider\_id, name }
+okta: object { identity\_provider\_id, name }
 
 </summary>
 
@@ -2044,7 +2044,7 @@ The name of the Okta group.
 
 <summary>
 
-SAMLGroupRule object {saml }
+SAMLGroupRule object { saml }
 
 Matches a SAML group. Requires a SAML identity provider.
 
@@ -2054,7 +2054,7 @@ Matches a SAML group. Requires a SAML identity provider.
 
 <summary>
 
-saml: object {attribute\_name, attribute\_value, identity\_provider\_id }
+saml: object { attribute\_name, attribute\_value, identity\_provider\_id }
 
 </summary>
 
@@ -2088,7 +2088,7 @@ The ID of your SAML identity provider.
 
 <summary>
 
-AccessOIDCClaimRule object {oidc }
+AccessOIDCClaimRule object { oidc }
 
 Matches an OIDC claim. Requires an OIDC identity provider.
 
@@ -2098,7 +2098,7 @@ Matches an OIDC claim. Requires an OIDC identity provider.
 
 <summary>
 
-oidc: object {claim\_name, claim\_value, identity\_provider\_id }
+oidc: object { claim\_name, claim\_value, identity\_provider\_id }
 
 </summary>
 
@@ -2132,7 +2132,7 @@ The ID of your OIDC identity provider.
 
 <summary>
 
-ServiceTokenRule object {service\_token }
+ServiceTokenRule object { service\_token }
 
 Matches a specific Access Service Token
 
@@ -2142,7 +2142,7 @@ Matches a specific Access Service Token
 
 <summary>
 
-service\_token: object {token\_id }
+service\_token: object { token\_id }
 
 </summary>
 
@@ -2164,7 +2164,7 @@ The ID of a Service Token.
 
 <summary>
 
-AccessServiceTokenTagRule object {service\_token\_tag }
+AccessServiceTokenTagRule object { service\_token\_tag }
 
 Matches an Access service token with the specified tag key and value. Only compatible with non\_identity decisions.
 
@@ -2174,7 +2174,7 @@ Matches an Access service token with the specified tag key and value. Only compa
 
 <summary>
 
-service\_token\_tag: object {key, value }
+service\_token\_tag: object { key, value }
 
 </summary>
 
@@ -2210,7 +2210,7 @@ minLength1
 
 <summary>
 
-AccessLinkedAppTokenRule object {linked\_app\_token }
+AccessLinkedAppTokenRule object { linked\_app\_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non\_identity and bypass decisions.
 
@@ -2220,7 +2220,7 @@ Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS applica
 
 <summary>
 
-linked\_app\_token: object {app\_uid }
+linked\_app\_token: object { app\_uid }
 
 </summary>
 
@@ -2242,7 +2242,7 @@ The ID of an Access OIDC SaaS application
 
 <summary>
 
-AccessUserRiskScoreRule object {user\_risk\_score }
+AccessUserRiskScoreRule object { user\_risk\_score }
 
 Matches a user’s risk score.
 
@@ -2252,7 +2252,7 @@ Matches a user’s risk score.
 
 <summary>
 
-user\_risk\_score: object {user\_risk\_score }
+user\_risk\_score: object { user\_risk\_score }
 
 </summary>
 
@@ -2260,7 +2260,7 @@ user\_risk\_score: object {user\_risk\_score }
 
 <summary>
 
-user\_risk\_score: array of "low"or "medium"or "high"or "unscored"
+user\_risk\_score: array of "low" or "medium" or "high" or "unscored"
 
 A list of risk score levels to match. Values can be low, medium, high, or unscored.
 
@@ -2300,7 +2300,7 @@ One of the following:
 
 <summary>
 
-AccessCloudflareAccountMemberRule object {cloudflare\_account\_member }
+AccessCloudflareAccountMemberRule object { cloudflare\_account\_member }
 
 Matches users who are members of a specific Cloudflare account. Requires a Cloudflare identity provider.
 
@@ -2310,7 +2310,7 @@ Matches users who are members of a specific Cloudflare account. Requires a Cloud
 
 <summary>
 
-cloudflare\_account\_member: object {account\_id }
+cloudflare\_account\_member: object { account\_id }
 
 </summary>
 
@@ -2338,7 +2338,7 @@ maxLength32
 
 <summary>
 
-mfa\_config: optional object {allowed\_authenticators, mfa\_disabled, session\_duration }
+mfa\_config: optional object { allowed\_authenticators, mfa\_disabled, session\_duration }
 
 Configures multi-factor authentication (MFA) settings for infrastructure applications.
 
@@ -2348,7 +2348,7 @@ Configures multi-factor authentication (MFA) settings for infrastructure applica
 
 <summary>
 
-allowed\_authenticators: optional array of "piv\_key"or "ssh\_fido2\_key"
+allowed\_authenticators: optional array of "piv\_key" or "ssh\_fido2\_key"
 
 Lists the MFA methods that users can authenticate with. For infrastructure applications, supported values are <code>piv_key</code> and <code>ssh_fido2_key</code>.
 
@@ -2406,7 +2406,7 @@ One of the following:
 
 <summary>
 
-GroupRule object {group }
+GroupRule object { group }
 
 Matches an Access group.
 
@@ -2416,7 +2416,7 @@ Matches an Access group.
 
 <summary>
 
-group: object {id }
+group: object { id }
 
 </summary>
 
@@ -2438,13 +2438,13 @@ The ID of a previously created Access group.
 
 <summary>
 
-AnyValidServiceTokenRule object {any\_valid\_service\_token }
+AnyValidServiceTokenRule object { any\_valid\_service\_token }
 
 Matches any valid Access Service Token
 
 </summary>
 
-any\_valid\_service\_token: object {}
+any\_valid\_service\_token: object { }
 
 An empty object which matches on all service tokens.
 
@@ -2458,7 +2458,7 @@ An empty object which matches on all service tokens.
 
 <summary>
 
-AccessAuthContextRule object {auth\_context }
+AccessAuthContextRule object { auth\_context }
 
 Matches an Azure Authentication Context. Requires an Azure identity provider.
 
@@ -2468,7 +2468,7 @@ Matches an Azure Authentication Context. Requires an Azure identity provider.
 
 <summary>
 
-auth\_context: object {id, ac\_id, identity\_provider\_id }
+auth\_context: object { id, ac\_id, identity\_provider\_id }
 
 </summary>
 
@@ -2502,7 +2502,7 @@ The ID of your Azure identity provider.
 
 <summary>
 
-AuthenticationMethodRule object {auth\_method }
+AuthenticationMethodRule object { auth\_method }
 
 Enforce different MFA options
 
@@ -2512,7 +2512,7 @@ Enforce different MFA options
 
 <summary>
 
-auth\_method: object {auth\_method }
+auth\_method: object { auth\_method }
 
 </summary>
 
@@ -2534,7 +2534,7 @@ The type of authentication method <a href="https://datatracker.ietf.org/doc/html
 
 <summary>
 
-AzureGroupRule object {azureAD }
+AzureGroupRule object { azureAD }
 
 Matches an Azure group. Requires an Azure identity provider.
 
@@ -2544,7 +2544,7 @@ Matches an Azure group. Requires an Azure identity provider.
 
 <summary>
 
-azureAD: object {id, identity\_provider\_id }
+azureAD: object { id, identity\_provider\_id }
 
 </summary>
 
@@ -2572,13 +2572,13 @@ The ID of your Azure identity provider.
 
 <summary>
 
-CertificateRule object {certificate }
+CertificateRule object { certificate }
 
 Matches any valid client certificate.
 
 </summary>
 
-certificate: object {}
+certificate: object { }
 
 <a href="#">Link to this property</a>
 
@@ -2590,7 +2590,7 @@ certificate: object {}
 
 <summary>
 
-AccessCommonNameRule object {common\_name }
+AccessCommonNameRule object { common\_name }
 
 Matches a specific common name.
 
@@ -2600,7 +2600,7 @@ Matches a specific common name.
 
 <summary>
 
-common\_name: object {common\_name }
+common\_name: object { common\_name }
 
 </summary>
 
@@ -2622,7 +2622,7 @@ The common name to match.
 
 <summary>
 
-CountryRule object {geo }
+CountryRule object { geo }
 
 Matches a specific country
 
@@ -2632,7 +2632,7 @@ Matches a specific country
 
 <summary>
 
-geo: object {country\_code }
+geo: object { country\_code }
 
 </summary>
 
@@ -2654,7 +2654,7 @@ The country code that should be matched.
 
 <summary>
 
-AccessDevicePostureRule object {device\_posture }
+AccessDevicePostureRule object { device\_posture }
 
 Enforces a device posture rule has run successfully
 
@@ -2664,7 +2664,7 @@ Enforces a device posture rule has run successfully
 
 <summary>
 
-device\_posture: object {integration\_uid, account\_id }
+device\_posture: object { integration\_uid, account\_id }
 
 </summary>
 
@@ -2694,7 +2694,7 @@ maxLength32
 
 <summary>
 
-DomainRule object {email\_domain }
+DomainRule object { email\_domain }
 
 Match an entire email domain.
 
@@ -2704,7 +2704,7 @@ Match an entire email domain.
 
 <summary>
 
-email\_domain: object {domain }
+email\_domain: object { domain }
 
 </summary>
 
@@ -2726,7 +2726,7 @@ The email domain to match.
 
 <summary>
 
-EmailListRule object {email\_list }
+EmailListRule object { email\_list }
 
 Matches an email address from a list.
 
@@ -2736,7 +2736,7 @@ Matches an email address from a list.
 
 <summary>
 
-email\_list: object {id }
+email\_list: object { id }
 
 </summary>
 
@@ -2758,7 +2758,7 @@ The ID of a previously created email list.
 
 <summary>
 
-EmailRule object {email }
+EmailRule object { email }
 
 Matches a specific email.
 
@@ -2768,7 +2768,7 @@ Matches a specific email.
 
 <summary>
 
-email: object {email }
+email: object { email }
 
 </summary>
 
@@ -2792,13 +2792,13 @@ formatemail
 
 <summary>
 
-EveryoneRule object {everyone }
+EveryoneRule object { everyone }
 
 Matches everyone.
 
 </summary>
 
-everyone: object {}
+everyone: object { }
 
 An empty object which matches on all users.
 
@@ -2812,7 +2812,7 @@ An empty object which matches on all users.
 
 <summary>
 
-ExternalEvaluationRule object {external\_evaluation }
+ExternalEvaluationRule object { external\_evaluation }
 
 Create Allow or Block policies which evaluate the user based on custom criteria.
 
@@ -2822,7 +2822,7 @@ Create Allow or Block policies which evaluate the user based on custom criteria.
 
 <summary>
 
-external\_evaluation: object {evaluate\_url, keys\_url }
+external\_evaluation: object { evaluate\_url, keys\_url }
 
 </summary>
 
@@ -2850,7 +2850,7 @@ The API endpoint containing the key that Access uses to verify that the response
 
 <summary>
 
-GitHubOrganizationRule object {"github-organization" }
+GitHubOrganizationRule object { "github-organization" }
 
 Matches a Github organization. Requires a Github identity provider.
 
@@ -2860,7 +2860,7 @@ Matches a Github organization. Requires a Github identity provider.
 
 <summary>
 
-"github-organization": object {identity\_provider\_id, name, team }
+"github-organization": object { identity\_provider\_id, name, team }
 
 </summary>
 
@@ -2894,7 +2894,7 @@ The name of the team
 
 <summary>
 
-GSuiteGroupRule object {gsuite }
+GSuiteGroupRule object { gsuite }
 
 Matches a group in Google Workspace. Requires a Google Workspace identity provider.
 
@@ -2904,7 +2904,7 @@ Matches a group in Google Workspace. Requires a Google Workspace identity provid
 
 <summary>
 
-gsuite: object {email, identity\_provider\_id }
+gsuite: object { email, identity\_provider\_id }
 
 </summary>
 
@@ -2932,7 +2932,7 @@ The ID of your Google Workspace identity provider.
 
 <summary>
 
-AccessLoginMethodRule object {login\_method }
+AccessLoginMethodRule object { login\_method }
 
 Matches a specific identity provider id.
 
@@ -2942,7 +2942,7 @@ Matches a specific identity provider id.
 
 <summary>
 
-login\_method: object {id }
+login\_method: object { id }
 
 </summary>
 
@@ -2964,7 +2964,7 @@ The ID of an identity provider.
 
 <summary>
 
-IPListRule object {ip\_list }
+IPListRule object { ip\_list }
 
 Matches an IP address from a list.
 
@@ -2974,7 +2974,7 @@ Matches an IP address from a list.
 
 <summary>
 
-ip\_list: object {id }
+ip\_list: object { id }
 
 </summary>
 
@@ -2996,7 +2996,7 @@ The ID of a previously created IP list.
 
 <summary>
 
-IPRule object {ip }
+IPRule object { ip }
 
 Matches an IP address block.
 
@@ -3006,7 +3006,7 @@ Matches an IP address block.
 
 <summary>
 
-ip: object {ip }
+ip: object { ip }
 
 </summary>
 
@@ -3028,7 +3028,7 @@ An IPv4 or IPv6 CIDR block.
 
 <summary>
 
-OktaGroupRule object {okta }
+OktaGroupRule object { okta }
 
 Matches an Okta group. Requires an Okta identity provider.
 
@@ -3038,7 +3038,7 @@ Matches an Okta group. Requires an Okta identity provider.
 
 <summary>
 
-okta: object {identity\_provider\_id, name }
+okta: object { identity\_provider\_id, name }
 
 </summary>
 
@@ -3066,7 +3066,7 @@ The name of the Okta group.
 
 <summary>
 
-SAMLGroupRule object {saml }
+SAMLGroupRule object { saml }
 
 Matches a SAML group. Requires a SAML identity provider.
 
@@ -3076,7 +3076,7 @@ Matches a SAML group. Requires a SAML identity provider.
 
 <summary>
 
-saml: object {attribute\_name, attribute\_value, identity\_provider\_id }
+saml: object { attribute\_name, attribute\_value, identity\_provider\_id }
 
 </summary>
 
@@ -3110,7 +3110,7 @@ The ID of your SAML identity provider.
 
 <summary>
 
-AccessOIDCClaimRule object {oidc }
+AccessOIDCClaimRule object { oidc }
 
 Matches an OIDC claim. Requires an OIDC identity provider.
 
@@ -3120,7 +3120,7 @@ Matches an OIDC claim. Requires an OIDC identity provider.
 
 <summary>
 
-oidc: object {claim\_name, claim\_value, identity\_provider\_id }
+oidc: object { claim\_name, claim\_value, identity\_provider\_id }
 
 </summary>
 
@@ -3154,7 +3154,7 @@ The ID of your OIDC identity provider.
 
 <summary>
 
-ServiceTokenRule object {service\_token }
+ServiceTokenRule object { service\_token }
 
 Matches a specific Access Service Token
 
@@ -3164,7 +3164,7 @@ Matches a specific Access Service Token
 
 <summary>
 
-service\_token: object {token\_id }
+service\_token: object { token\_id }
 
 </summary>
 
@@ -3186,7 +3186,7 @@ The ID of a Service Token.
 
 <summary>
 
-AccessServiceTokenTagRule object {service\_token\_tag }
+AccessServiceTokenTagRule object { service\_token\_tag }
 
 Matches an Access service token with the specified tag key and value. Only compatible with non\_identity decisions.
 
@@ -3196,7 +3196,7 @@ Matches an Access service token with the specified tag key and value. Only compa
 
 <summary>
 
-service\_token\_tag: object {key, value }
+service\_token\_tag: object { key, value }
 
 </summary>
 
@@ -3232,7 +3232,7 @@ minLength1
 
 <summary>
 
-AccessLinkedAppTokenRule object {linked\_app\_token }
+AccessLinkedAppTokenRule object { linked\_app\_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non\_identity and bypass decisions.
 
@@ -3242,7 +3242,7 @@ Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS applica
 
 <summary>
 
-linked\_app\_token: object {app\_uid }
+linked\_app\_token: object { app\_uid }
 
 </summary>
 
@@ -3264,7 +3264,7 @@ The ID of an Access OIDC SaaS application
 
 <summary>
 
-AccessUserRiskScoreRule object {user\_risk\_score }
+AccessUserRiskScoreRule object { user\_risk\_score }
 
 Matches a user’s risk score.
 
@@ -3274,7 +3274,7 @@ Matches a user’s risk score.
 
 <summary>
 
-user\_risk\_score: object {user\_risk\_score }
+user\_risk\_score: object { user\_risk\_score }
 
 </summary>
 
@@ -3282,7 +3282,7 @@ user\_risk\_score: object {user\_risk\_score }
 
 <summary>
 
-user\_risk\_score: array of "low"or "medium"or "high"or "unscored"
+user\_risk\_score: array of "low" or "medium" or "high" or "unscored"
 
 A list of risk score levels to match. Values can be low, medium, high, or unscored.
 
@@ -3322,7 +3322,7 @@ One of the following:
 
 <summary>
 
-AccessCloudflareAccountMemberRule object {cloudflare\_account\_member }
+AccessCloudflareAccountMemberRule object { cloudflare\_account\_member }
 
 Matches users who are members of a specific Cloudflare account. Requires a Cloudflare identity provider.
 
@@ -3332,7 +3332,7 @@ Matches users who are members of a specific Cloudflare account. Requires a Cloud
 
 <summary>
 
-cloudflare\_account\_member: object {account\_id }
+cloudflare\_account\_member: object { account\_id }
 
 </summary>
 
@@ -3370,7 +3370,7 @@ maxLength32
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -3392,7 +3392,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -3412,7 +3412,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -3434,7 +3434,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -3460,7 +3460,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, account\_id, approval\_groups, 16 more } or object {id, connection\_rules, created\_at, 8 more }
+result: optional object { id, account\_id, approval\_groups, 16 more } or object { id, connection\_rules, created\_at, 8 more }
 
 </summary>
 
@@ -3470,7 +3470,7 @@ One of the following:
 
 <summary>
 
-object {id, account\_id, approval\_groups, 16 more }
+object { id, account\_id, approval\_groups, 16 more }
 
 </summary>
 
@@ -3534,7 +3534,7 @@ Requires the user to request access from an administrator at the start of each s
 
 <summary>
 
-connection\_rules: optional object {rdp }
+connection\_rules: optional object { rdp }
 
 The rules that define how users may connect to targets secured by your application.
 
@@ -3544,7 +3544,7 @@ The rules that define how users may connect to targets secured by your applicati
 
 <summary>
 
-rdp: optional object {allowed\_clipboard\_local\_to\_remote\_formats, allowed\_clipboard\_remote\_to\_local\_formats }
+rdp: optional object { allowed\_clipboard\_local\_to\_remote\_formats, allowed\_clipboard\_remote\_to\_local\_formats }
 
 The RDP-specific rules that define clipboard behavior for RDP connections.
 
@@ -3554,7 +3554,7 @@ The RDP-specific rules that define clipboard behavior for RDP connections.
 
 <summary>
 
-allowed\_clipboard\_local\_to\_remote\_formats: optional array of "text"or "file"
+allowed\_clipboard\_local\_to\_remote\_formats: optional array of "text" or "file"
 
 Clipboard formats allowed when copying from local machine to remote RDP session.
 
@@ -3578,7 +3578,7 @@ One of the following:
 
 <summary>
 
-allowed\_clipboard\_remote\_to\_local\_formats: optional array of "text"or "file"
+allowed\_clipboard\_remote\_to\_local\_formats: optional array of "text" or "file"
 
 Clipboard formats allowed when copying from remote RDP session to local machine.
 
@@ -3660,7 +3660,7 @@ One of the following:
 
 <summary>
 
-GroupRule object {group }
+GroupRule object { group }
 
 Matches an Access group.
 
@@ -3670,7 +3670,7 @@ Matches an Access group.
 
 <summary>
 
-group: object {id }
+group: object { id }
 
 </summary>
 
@@ -3692,13 +3692,13 @@ The ID of a previously created Access group.
 
 <summary>
 
-AnyValidServiceTokenRule object {any\_valid\_service\_token }
+AnyValidServiceTokenRule object { any\_valid\_service\_token }
 
 Matches any valid Access Service Token
 
 </summary>
 
-any\_valid\_service\_token: object {}
+any\_valid\_service\_token: object { }
 
 An empty object which matches on all service tokens.
 
@@ -3712,7 +3712,7 @@ An empty object which matches on all service tokens.
 
 <summary>
 
-AccessAuthContextRule object {auth\_context }
+AccessAuthContextRule object { auth\_context }
 
 Matches an Azure Authentication Context. Requires an Azure identity provider.
 
@@ -3722,7 +3722,7 @@ Matches an Azure Authentication Context. Requires an Azure identity provider.
 
 <summary>
 
-auth\_context: object {id, ac\_id, identity\_provider\_id }
+auth\_context: object { id, ac\_id, identity\_provider\_id }
 
 </summary>
 
@@ -3756,7 +3756,7 @@ The ID of your Azure identity provider.
 
 <summary>
 
-AuthenticationMethodRule object {auth\_method }
+AuthenticationMethodRule object { auth\_method }
 
 Enforce different MFA options
 
@@ -3766,7 +3766,7 @@ Enforce different MFA options
 
 <summary>
 
-auth\_method: object {auth\_method }
+auth\_method: object { auth\_method }
 
 </summary>
 
@@ -3788,7 +3788,7 @@ The type of authentication method <a href="https://datatracker.ietf.org/doc/html
 
 <summary>
 
-AzureGroupRule object {azureAD }
+AzureGroupRule object { azureAD }
 
 Matches an Azure group. Requires an Azure identity provider.
 
@@ -3798,7 +3798,7 @@ Matches an Azure group. Requires an Azure identity provider.
 
 <summary>
 
-azureAD: object {id, identity\_provider\_id }
+azureAD: object { id, identity\_provider\_id }
 
 </summary>
 
@@ -3826,13 +3826,13 @@ The ID of your Azure identity provider.
 
 <summary>
 
-CertificateRule object {certificate }
+CertificateRule object { certificate }
 
 Matches any valid client certificate.
 
 </summary>
 
-certificate: object {}
+certificate: object { }
 
 <a href="#">Link to this property</a>
 
@@ -3844,7 +3844,7 @@ certificate: object {}
 
 <summary>
 
-AccessCommonNameRule object {common\_name }
+AccessCommonNameRule object { common\_name }
 
 Matches a specific common name.
 
@@ -3854,7 +3854,7 @@ Matches a specific common name.
 
 <summary>
 
-common\_name: object {common\_name }
+common\_name: object { common\_name }
 
 </summary>
 
@@ -3876,7 +3876,7 @@ The common name to match.
 
 <summary>
 
-CountryRule object {geo }
+CountryRule object { geo }
 
 Matches a specific country
 
@@ -3886,7 +3886,7 @@ Matches a specific country
 
 <summary>
 
-geo: object {country\_code }
+geo: object { country\_code }
 
 </summary>
 
@@ -3908,7 +3908,7 @@ The country code that should be matched.
 
 <summary>
 
-AccessDevicePostureRule object {device\_posture }
+AccessDevicePostureRule object { device\_posture }
 
 Enforces a device posture rule has run successfully
 
@@ -3918,7 +3918,7 @@ Enforces a device posture rule has run successfully
 
 <summary>
 
-device\_posture: object {integration\_uid, account\_id }
+device\_posture: object { integration\_uid, account\_id }
 
 </summary>
 
@@ -3948,7 +3948,7 @@ maxLength32
 
 <summary>
 
-DomainRule object {email\_domain }
+DomainRule object { email\_domain }
 
 Match an entire email domain.
 
@@ -3958,7 +3958,7 @@ Match an entire email domain.
 
 <summary>
 
-email\_domain: object {domain }
+email\_domain: object { domain }
 
 </summary>
 
@@ -3980,7 +3980,7 @@ The email domain to match.
 
 <summary>
 
-EmailListRule object {email\_list }
+EmailListRule object { email\_list }
 
 Matches an email address from a list.
 
@@ -3990,7 +3990,7 @@ Matches an email address from a list.
 
 <summary>
 
-email\_list: object {id }
+email\_list: object { id }
 
 </summary>
 
@@ -4012,7 +4012,7 @@ The ID of a previously created email list.
 
 <summary>
 
-EmailRule object {email }
+EmailRule object { email }
 
 Matches a specific email.
 
@@ -4022,7 +4022,7 @@ Matches a specific email.
 
 <summary>
 
-email: object {email }
+email: object { email }
 
 </summary>
 
@@ -4046,13 +4046,13 @@ formatemail
 
 <summary>
 
-EveryoneRule object {everyone }
+EveryoneRule object { everyone }
 
 Matches everyone.
 
 </summary>
 
-everyone: object {}
+everyone: object { }
 
 An empty object which matches on all users.
 
@@ -4066,7 +4066,7 @@ An empty object which matches on all users.
 
 <summary>
 
-ExternalEvaluationRule object {external\_evaluation }
+ExternalEvaluationRule object { external\_evaluation }
 
 Create Allow or Block policies which evaluate the user based on custom criteria.
 
@@ -4076,7 +4076,7 @@ Create Allow or Block policies which evaluate the user based on custom criteria.
 
 <summary>
 
-external\_evaluation: object {evaluate\_url, keys\_url }
+external\_evaluation: object { evaluate\_url, keys\_url }
 
 </summary>
 
@@ -4104,7 +4104,7 @@ The API endpoint containing the key that Access uses to verify that the response
 
 <summary>
 
-GitHubOrganizationRule object {"github-organization" }
+GitHubOrganizationRule object { "github-organization" }
 
 Matches a Github organization. Requires a Github identity provider.
 
@@ -4114,7 +4114,7 @@ Matches a Github organization. Requires a Github identity provider.
 
 <summary>
 
-"github-organization": object {identity\_provider\_id, name, team }
+"github-organization": object { identity\_provider\_id, name, team }
 
 </summary>
 
@@ -4148,7 +4148,7 @@ The name of the team
 
 <summary>
 
-GSuiteGroupRule object {gsuite }
+GSuiteGroupRule object { gsuite }
 
 Matches a group in Google Workspace. Requires a Google Workspace identity provider.
 
@@ -4158,7 +4158,7 @@ Matches a group in Google Workspace. Requires a Google Workspace identity provid
 
 <summary>
 
-gsuite: object {email, identity\_provider\_id }
+gsuite: object { email, identity\_provider\_id }
 
 </summary>
 
@@ -4186,7 +4186,7 @@ The ID of your Google Workspace identity provider.
 
 <summary>
 
-AccessLoginMethodRule object {login\_method }
+AccessLoginMethodRule object { login\_method }
 
 Matches a specific identity provider id.
 
@@ -4196,7 +4196,7 @@ Matches a specific identity provider id.
 
 <summary>
 
-login\_method: object {id }
+login\_method: object { id }
 
 </summary>
 
@@ -4218,7 +4218,7 @@ The ID of an identity provider.
 
 <summary>
 
-IPListRule object {ip\_list }
+IPListRule object { ip\_list }
 
 Matches an IP address from a list.
 
@@ -4228,7 +4228,7 @@ Matches an IP address from a list.
 
 <summary>
 
-ip\_list: object {id }
+ip\_list: object { id }
 
 </summary>
 
@@ -4250,7 +4250,7 @@ The ID of a previously created IP list.
 
 <summary>
 
-IPRule object {ip }
+IPRule object { ip }
 
 Matches an IP address block.
 
@@ -4260,7 +4260,7 @@ Matches an IP address block.
 
 <summary>
 
-ip: object {ip }
+ip: object { ip }
 
 </summary>
 
@@ -4282,7 +4282,7 @@ An IPv4 or IPv6 CIDR block.
 
 <summary>
 
-OktaGroupRule object {okta }
+OktaGroupRule object { okta }
 
 Matches an Okta group. Requires an Okta identity provider.
 
@@ -4292,7 +4292,7 @@ Matches an Okta group. Requires an Okta identity provider.
 
 <summary>
 
-okta: object {identity\_provider\_id, name }
+okta: object { identity\_provider\_id, name }
 
 </summary>
 
@@ -4320,7 +4320,7 @@ The name of the Okta group.
 
 <summary>
 
-SAMLGroupRule object {saml }
+SAMLGroupRule object { saml }
 
 Matches a SAML group. Requires a SAML identity provider.
 
@@ -4330,7 +4330,7 @@ Matches a SAML group. Requires a SAML identity provider.
 
 <summary>
 
-saml: object {attribute\_name, attribute\_value, identity\_provider\_id }
+saml: object { attribute\_name, attribute\_value, identity\_provider\_id }
 
 </summary>
 
@@ -4364,7 +4364,7 @@ The ID of your SAML identity provider.
 
 <summary>
 
-AccessOIDCClaimRule object {oidc }
+AccessOIDCClaimRule object { oidc }
 
 Matches an OIDC claim. Requires an OIDC identity provider.
 
@@ -4374,7 +4374,7 @@ Matches an OIDC claim. Requires an OIDC identity provider.
 
 <summary>
 
-oidc: object {claim\_name, claim\_value, identity\_provider\_id }
+oidc: object { claim\_name, claim\_value, identity\_provider\_id }
 
 </summary>
 
@@ -4408,7 +4408,7 @@ The ID of your OIDC identity provider.
 
 <summary>
 
-ServiceTokenRule object {service\_token }
+ServiceTokenRule object { service\_token }
 
 Matches a specific Access Service Token
 
@@ -4418,7 +4418,7 @@ Matches a specific Access Service Token
 
 <summary>
 
-service\_token: object {token\_id }
+service\_token: object { token\_id }
 
 </summary>
 
@@ -4440,7 +4440,7 @@ The ID of a Service Token.
 
 <summary>
 
-AccessServiceTokenTagRule object {service\_token\_tag }
+AccessServiceTokenTagRule object { service\_token\_tag }
 
 Matches an Access service token with the specified tag key and value. Only compatible with non\_identity decisions.
 
@@ -4450,7 +4450,7 @@ Matches an Access service token with the specified tag key and value. Only compa
 
 <summary>
 
-service\_token\_tag: object {key, value }
+service\_token\_tag: object { key, value }
 
 </summary>
 
@@ -4486,7 +4486,7 @@ minLength1
 
 <summary>
 
-AccessLinkedAppTokenRule object {linked\_app\_token }
+AccessLinkedAppTokenRule object { linked\_app\_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non\_identity and bypass decisions.
 
@@ -4496,7 +4496,7 @@ Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS applica
 
 <summary>
 
-linked\_app\_token: object {app\_uid }
+linked\_app\_token: object { app\_uid }
 
 </summary>
 
@@ -4518,7 +4518,7 @@ The ID of an Access OIDC SaaS application
 
 <summary>
 
-AccessUserRiskScoreRule object {user\_risk\_score }
+AccessUserRiskScoreRule object { user\_risk\_score }
 
 Matches a user’s risk score.
 
@@ -4528,7 +4528,7 @@ Matches a user’s risk score.
 
 <summary>
 
-user\_risk\_score: object {user\_risk\_score }
+user\_risk\_score: object { user\_risk\_score }
 
 </summary>
 
@@ -4536,7 +4536,7 @@ user\_risk\_score: object {user\_risk\_score }
 
 <summary>
 
-user\_risk\_score: array of "low"or "medium"or "high"or "unscored"
+user\_risk\_score: array of "low" or "medium" or "high" or "unscored"
 
 A list of risk score levels to match. Values can be low, medium, high, or unscored.
 
@@ -4576,7 +4576,7 @@ One of the following:
 
 <summary>
 
-AccessCloudflareAccountMemberRule object {cloudflare\_account\_member }
+AccessCloudflareAccountMemberRule object { cloudflare\_account\_member }
 
 Matches users who are members of a specific Cloudflare account. Requires a Cloudflare identity provider.
 
@@ -4586,7 +4586,7 @@ Matches users who are members of a specific Cloudflare account. Requires a Cloud
 
 <summary>
 
-cloudflare\_account\_member: object {account\_id }
+cloudflare\_account\_member: object { account\_id }
 
 </summary>
 
@@ -4626,7 +4626,7 @@ One of the following:
 
 <summary>
 
-GroupRule object {group }
+GroupRule object { group }
 
 Matches an Access group.
 
@@ -4636,7 +4636,7 @@ Matches an Access group.
 
 <summary>
 
-group: object {id }
+group: object { id }
 
 </summary>
 
@@ -4658,13 +4658,13 @@ The ID of a previously created Access group.
 
 <summary>
 
-AnyValidServiceTokenRule object {any\_valid\_service\_token }
+AnyValidServiceTokenRule object { any\_valid\_service\_token }
 
 Matches any valid Access Service Token
 
 </summary>
 
-any\_valid\_service\_token: object {}
+any\_valid\_service\_token: object { }
 
 An empty object which matches on all service tokens.
 
@@ -4678,7 +4678,7 @@ An empty object which matches on all service tokens.
 
 <summary>
 
-AccessAuthContextRule object {auth\_context }
+AccessAuthContextRule object { auth\_context }
 
 Matches an Azure Authentication Context. Requires an Azure identity provider.
 
@@ -4688,7 +4688,7 @@ Matches an Azure Authentication Context. Requires an Azure identity provider.
 
 <summary>
 
-auth\_context: object {id, ac\_id, identity\_provider\_id }
+auth\_context: object { id, ac\_id, identity\_provider\_id }
 
 </summary>
 
@@ -4722,7 +4722,7 @@ The ID of your Azure identity provider.
 
 <summary>
 
-AuthenticationMethodRule object {auth\_method }
+AuthenticationMethodRule object { auth\_method }
 
 Enforce different MFA options
 
@@ -4732,7 +4732,7 @@ Enforce different MFA options
 
 <summary>
 
-auth\_method: object {auth\_method }
+auth\_method: object { auth\_method }
 
 </summary>
 
@@ -4754,7 +4754,7 @@ The type of authentication method <a href="https://datatracker.ietf.org/doc/html
 
 <summary>
 
-AzureGroupRule object {azureAD }
+AzureGroupRule object { azureAD }
 
 Matches an Azure group. Requires an Azure identity provider.
 
@@ -4764,7 +4764,7 @@ Matches an Azure group. Requires an Azure identity provider.
 
 <summary>
 
-azureAD: object {id, identity\_provider\_id }
+azureAD: object { id, identity\_provider\_id }
 
 </summary>
 
@@ -4792,13 +4792,13 @@ The ID of your Azure identity provider.
 
 <summary>
 
-CertificateRule object {certificate }
+CertificateRule object { certificate }
 
 Matches any valid client certificate.
 
 </summary>
 
-certificate: object {}
+certificate: object { }
 
 <a href="#">Link to this property</a>
 
@@ -4810,7 +4810,7 @@ certificate: object {}
 
 <summary>
 
-AccessCommonNameRule object {common\_name }
+AccessCommonNameRule object { common\_name }
 
 Matches a specific common name.
 
@@ -4820,7 +4820,7 @@ Matches a specific common name.
 
 <summary>
 
-common\_name: object {common\_name }
+common\_name: object { common\_name }
 
 </summary>
 
@@ -4842,7 +4842,7 @@ The common name to match.
 
 <summary>
 
-CountryRule object {geo }
+CountryRule object { geo }
 
 Matches a specific country
 
@@ -4852,7 +4852,7 @@ Matches a specific country
 
 <summary>
 
-geo: object {country\_code }
+geo: object { country\_code }
 
 </summary>
 
@@ -4874,7 +4874,7 @@ The country code that should be matched.
 
 <summary>
 
-AccessDevicePostureRule object {device\_posture }
+AccessDevicePostureRule object { device\_posture }
 
 Enforces a device posture rule has run successfully
 
@@ -4884,7 +4884,7 @@ Enforces a device posture rule has run successfully
 
 <summary>
 
-device\_posture: object {integration\_uid, account\_id }
+device\_posture: object { integration\_uid, account\_id }
 
 </summary>
 
@@ -4914,7 +4914,7 @@ maxLength32
 
 <summary>
 
-DomainRule object {email\_domain }
+DomainRule object { email\_domain }
 
 Match an entire email domain.
 
@@ -4924,7 +4924,7 @@ Match an entire email domain.
 
 <summary>
 
-email\_domain: object {domain }
+email\_domain: object { domain }
 
 </summary>
 
@@ -4946,7 +4946,7 @@ The email domain to match.
 
 <summary>
 
-EmailListRule object {email\_list }
+EmailListRule object { email\_list }
 
 Matches an email address from a list.
 
@@ -4956,7 +4956,7 @@ Matches an email address from a list.
 
 <summary>
 
-email\_list: object {id }
+email\_list: object { id }
 
 </summary>
 
@@ -4978,7 +4978,7 @@ The ID of a previously created email list.
 
 <summary>
 
-EmailRule object {email }
+EmailRule object { email }
 
 Matches a specific email.
 
@@ -4988,7 +4988,7 @@ Matches a specific email.
 
 <summary>
 
-email: object {email }
+email: object { email }
 
 </summary>
 
@@ -5012,13 +5012,13 @@ formatemail
 
 <summary>
 
-EveryoneRule object {everyone }
+EveryoneRule object { everyone }
 
 Matches everyone.
 
 </summary>
 
-everyone: object {}
+everyone: object { }
 
 An empty object which matches on all users.
 
@@ -5032,7 +5032,7 @@ An empty object which matches on all users.
 
 <summary>
 
-ExternalEvaluationRule object {external\_evaluation }
+ExternalEvaluationRule object { external\_evaluation }
 
 Create Allow or Block policies which evaluate the user based on custom criteria.
 
@@ -5042,7 +5042,7 @@ Create Allow or Block policies which evaluate the user based on custom criteria.
 
 <summary>
 
-external\_evaluation: object {evaluate\_url, keys\_url }
+external\_evaluation: object { evaluate\_url, keys\_url }
 
 </summary>
 
@@ -5070,7 +5070,7 @@ The API endpoint containing the key that Access uses to verify that the response
 
 <summary>
 
-GitHubOrganizationRule object {"github-organization" }
+GitHubOrganizationRule object { "github-organization" }
 
 Matches a Github organization. Requires a Github identity provider.
 
@@ -5080,7 +5080,7 @@ Matches a Github organization. Requires a Github identity provider.
 
 <summary>
 
-"github-organization": object {identity\_provider\_id, name, team }
+"github-organization": object { identity\_provider\_id, name, team }
 
 </summary>
 
@@ -5114,7 +5114,7 @@ The name of the team
 
 <summary>
 
-GSuiteGroupRule object {gsuite }
+GSuiteGroupRule object { gsuite }
 
 Matches a group in Google Workspace. Requires a Google Workspace identity provider.
 
@@ -5124,7 +5124,7 @@ Matches a group in Google Workspace. Requires a Google Workspace identity provid
 
 <summary>
 
-gsuite: object {email, identity\_provider\_id }
+gsuite: object { email, identity\_provider\_id }
 
 </summary>
 
@@ -5152,7 +5152,7 @@ The ID of your Google Workspace identity provider.
 
 <summary>
 
-AccessLoginMethodRule object {login\_method }
+AccessLoginMethodRule object { login\_method }
 
 Matches a specific identity provider id.
 
@@ -5162,7 +5162,7 @@ Matches a specific identity provider id.
 
 <summary>
 
-login\_method: object {id }
+login\_method: object { id }
 
 </summary>
 
@@ -5184,7 +5184,7 @@ The ID of an identity provider.
 
 <summary>
 
-IPListRule object {ip\_list }
+IPListRule object { ip\_list }
 
 Matches an IP address from a list.
 
@@ -5194,7 +5194,7 @@ Matches an IP address from a list.
 
 <summary>
 
-ip\_list: object {id }
+ip\_list: object { id }
 
 </summary>
 
@@ -5216,7 +5216,7 @@ The ID of a previously created IP list.
 
 <summary>
 
-IPRule object {ip }
+IPRule object { ip }
 
 Matches an IP address block.
 
@@ -5226,7 +5226,7 @@ Matches an IP address block.
 
 <summary>
 
-ip: object {ip }
+ip: object { ip }
 
 </summary>
 
@@ -5248,7 +5248,7 @@ An IPv4 or IPv6 CIDR block.
 
 <summary>
 
-OktaGroupRule object {okta }
+OktaGroupRule object { okta }
 
 Matches an Okta group. Requires an Okta identity provider.
 
@@ -5258,7 +5258,7 @@ Matches an Okta group. Requires an Okta identity provider.
 
 <summary>
 
-okta: object {identity\_provider\_id, name }
+okta: object { identity\_provider\_id, name }
 
 </summary>
 
@@ -5286,7 +5286,7 @@ The name of the Okta group.
 
 <summary>
 
-SAMLGroupRule object {saml }
+SAMLGroupRule object { saml }
 
 Matches a SAML group. Requires a SAML identity provider.
 
@@ -5296,7 +5296,7 @@ Matches a SAML group. Requires a SAML identity provider.
 
 <summary>
 
-saml: object {attribute\_name, attribute\_value, identity\_provider\_id }
+saml: object { attribute\_name, attribute\_value, identity\_provider\_id }
 
 </summary>
 
@@ -5330,7 +5330,7 @@ The ID of your SAML identity provider.
 
 <summary>
 
-AccessOIDCClaimRule object {oidc }
+AccessOIDCClaimRule object { oidc }
 
 Matches an OIDC claim. Requires an OIDC identity provider.
 
@@ -5340,7 +5340,7 @@ Matches an OIDC claim. Requires an OIDC identity provider.
 
 <summary>
 
-oidc: object {claim\_name, claim\_value, identity\_provider\_id }
+oidc: object { claim\_name, claim\_value, identity\_provider\_id }
 
 </summary>
 
@@ -5374,7 +5374,7 @@ The ID of your OIDC identity provider.
 
 <summary>
 
-ServiceTokenRule object {service\_token }
+ServiceTokenRule object { service\_token }
 
 Matches a specific Access Service Token
 
@@ -5384,7 +5384,7 @@ Matches a specific Access Service Token
 
 <summary>
 
-service\_token: object {token\_id }
+service\_token: object { token\_id }
 
 </summary>
 
@@ -5406,7 +5406,7 @@ The ID of a Service Token.
 
 <summary>
 
-AccessServiceTokenTagRule object {service\_token\_tag }
+AccessServiceTokenTagRule object { service\_token\_tag }
 
 Matches an Access service token with the specified tag key and value. Only compatible with non\_identity decisions.
 
@@ -5416,7 +5416,7 @@ Matches an Access service token with the specified tag key and value. Only compa
 
 <summary>
 
-service\_token\_tag: object {key, value }
+service\_token\_tag: object { key, value }
 
 </summary>
 
@@ -5452,7 +5452,7 @@ minLength1
 
 <summary>
 
-AccessLinkedAppTokenRule object {linked\_app\_token }
+AccessLinkedAppTokenRule object { linked\_app\_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non\_identity and bypass decisions.
 
@@ -5462,7 +5462,7 @@ Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS applica
 
 <summary>
 
-linked\_app\_token: object {app\_uid }
+linked\_app\_token: object { app\_uid }
 
 </summary>
 
@@ -5484,7 +5484,7 @@ The ID of an Access OIDC SaaS application
 
 <summary>
 
-AccessUserRiskScoreRule object {user\_risk\_score }
+AccessUserRiskScoreRule object { user\_risk\_score }
 
 Matches a user’s risk score.
 
@@ -5494,7 +5494,7 @@ Matches a user’s risk score.
 
 <summary>
 
-user\_risk\_score: object {user\_risk\_score }
+user\_risk\_score: object { user\_risk\_score }
 
 </summary>
 
@@ -5502,7 +5502,7 @@ user\_risk\_score: object {user\_risk\_score }
 
 <summary>
 
-user\_risk\_score: array of "low"or "medium"or "high"or "unscored"
+user\_risk\_score: array of "low" or "medium" or "high" or "unscored"
 
 A list of risk score levels to match. Values can be low, medium, high, or unscored.
 
@@ -5542,7 +5542,7 @@ One of the following:
 
 <summary>
 
-AccessCloudflareAccountMemberRule object {cloudflare\_account\_member }
+AccessCloudflareAccountMemberRule object { cloudflare\_account\_member }
 
 Matches users who are members of a specific Cloudflare account. Requires a Cloudflare identity provider.
 
@@ -5552,7 +5552,7 @@ Matches users who are members of a specific Cloudflare account. Requires a Cloud
 
 <summary>
 
-cloudflare\_account\_member: object {account\_id }
+cloudflare\_account\_member: object { account\_id }
 
 </summary>
 
@@ -5586,7 +5586,7 @@ Require this application to be served in an isolated browser for users matching 
 
 <summary>
 
-mfa\_config: optional object {allowed\_authenticators, mfa\_disabled, session\_duration }
+mfa\_config: optional object { allowed\_authenticators, mfa\_disabled, session\_duration }
 
 Configures multi-factor authentication (MFA) settings.
 
@@ -5596,7 +5596,7 @@ Configures multi-factor authentication (MFA) settings.
 
 <summary>
 
-allowed\_authenticators: optional array of "totp"or "biometrics"or "security\_key"
+allowed\_authenticators: optional array of "totp" or "biometrics" or "security\_key"
 
 Lists the MFA methods that users can authenticate with.
 
@@ -5682,7 +5682,7 @@ One of the following:
 
 <summary>
 
-GroupRule object {group }
+GroupRule object { group }
 
 Matches an Access group.
 
@@ -5692,7 +5692,7 @@ Matches an Access group.
 
 <summary>
 
-group: object {id }
+group: object { id }
 
 </summary>
 
@@ -5714,13 +5714,13 @@ The ID of a previously created Access group.
 
 <summary>
 
-AnyValidServiceTokenRule object {any\_valid\_service\_token }
+AnyValidServiceTokenRule object { any\_valid\_service\_token }
 
 Matches any valid Access Service Token
 
 </summary>
 
-any\_valid\_service\_token: object {}
+any\_valid\_service\_token: object { }
 
 An empty object which matches on all service tokens.
 
@@ -5734,7 +5734,7 @@ An empty object which matches on all service tokens.
 
 <summary>
 
-AccessAuthContextRule object {auth\_context }
+AccessAuthContextRule object { auth\_context }
 
 Matches an Azure Authentication Context. Requires an Azure identity provider.
 
@@ -5744,7 +5744,7 @@ Matches an Azure Authentication Context. Requires an Azure identity provider.
 
 <summary>
 
-auth\_context: object {id, ac\_id, identity\_provider\_id }
+auth\_context: object { id, ac\_id, identity\_provider\_id }
 
 </summary>
 
@@ -5778,7 +5778,7 @@ The ID of your Azure identity provider.
 
 <summary>
 
-AuthenticationMethodRule object {auth\_method }
+AuthenticationMethodRule object { auth\_method }
 
 Enforce different MFA options
 
@@ -5788,7 +5788,7 @@ Enforce different MFA options
 
 <summary>
 
-auth\_method: object {auth\_method }
+auth\_method: object { auth\_method }
 
 </summary>
 
@@ -5810,7 +5810,7 @@ The type of authentication method <a href="https://datatracker.ietf.org/doc/html
 
 <summary>
 
-AzureGroupRule object {azureAD }
+AzureGroupRule object { azureAD }
 
 Matches an Azure group. Requires an Azure identity provider.
 
@@ -5820,7 +5820,7 @@ Matches an Azure group. Requires an Azure identity provider.
 
 <summary>
 
-azureAD: object {id, identity\_provider\_id }
+azureAD: object { id, identity\_provider\_id }
 
 </summary>
 
@@ -5848,13 +5848,13 @@ The ID of your Azure identity provider.
 
 <summary>
 
-CertificateRule object {certificate }
+CertificateRule object { certificate }
 
 Matches any valid client certificate.
 
 </summary>
 
-certificate: object {}
+certificate: object { }
 
 <a href="#">Link to this property</a>
 
@@ -5866,7 +5866,7 @@ certificate: object {}
 
 <summary>
 
-AccessCommonNameRule object {common\_name }
+AccessCommonNameRule object { common\_name }
 
 Matches a specific common name.
 
@@ -5876,7 +5876,7 @@ Matches a specific common name.
 
 <summary>
 
-common\_name: object {common\_name }
+common\_name: object { common\_name }
 
 </summary>
 
@@ -5898,7 +5898,7 @@ The common name to match.
 
 <summary>
 
-CountryRule object {geo }
+CountryRule object { geo }
 
 Matches a specific country
 
@@ -5908,7 +5908,7 @@ Matches a specific country
 
 <summary>
 
-geo: object {country\_code }
+geo: object { country\_code }
 
 </summary>
 
@@ -5930,7 +5930,7 @@ The country code that should be matched.
 
 <summary>
 
-AccessDevicePostureRule object {device\_posture }
+AccessDevicePostureRule object { device\_posture }
 
 Enforces a device posture rule has run successfully
 
@@ -5940,7 +5940,7 @@ Enforces a device posture rule has run successfully
 
 <summary>
 
-device\_posture: object {integration\_uid, account\_id }
+device\_posture: object { integration\_uid, account\_id }
 
 </summary>
 
@@ -5970,7 +5970,7 @@ maxLength32
 
 <summary>
 
-DomainRule object {email\_domain }
+DomainRule object { email\_domain }
 
 Match an entire email domain.
 
@@ -5980,7 +5980,7 @@ Match an entire email domain.
 
 <summary>
 
-email\_domain: object {domain }
+email\_domain: object { domain }
 
 </summary>
 
@@ -6002,7 +6002,7 @@ The email domain to match.
 
 <summary>
 
-EmailListRule object {email\_list }
+EmailListRule object { email\_list }
 
 Matches an email address from a list.
 
@@ -6012,7 +6012,7 @@ Matches an email address from a list.
 
 <summary>
 
-email\_list: object {id }
+email\_list: object { id }
 
 </summary>
 
@@ -6034,7 +6034,7 @@ The ID of a previously created email list.
 
 <summary>
 
-EmailRule object {email }
+EmailRule object { email }
 
 Matches a specific email.
 
@@ -6044,7 +6044,7 @@ Matches a specific email.
 
 <summary>
 
-email: object {email }
+email: object { email }
 
 </summary>
 
@@ -6068,13 +6068,13 @@ formatemail
 
 <summary>
 
-EveryoneRule object {everyone }
+EveryoneRule object { everyone }
 
 Matches everyone.
 
 </summary>
 
-everyone: object {}
+everyone: object { }
 
 An empty object which matches on all users.
 
@@ -6088,7 +6088,7 @@ An empty object which matches on all users.
 
 <summary>
 
-ExternalEvaluationRule object {external\_evaluation }
+ExternalEvaluationRule object { external\_evaluation }
 
 Create Allow or Block policies which evaluate the user based on custom criteria.
 
@@ -6098,7 +6098,7 @@ Create Allow or Block policies which evaluate the user based on custom criteria.
 
 <summary>
 
-external\_evaluation: object {evaluate\_url, keys\_url }
+external\_evaluation: object { evaluate\_url, keys\_url }
 
 </summary>
 
@@ -6126,7 +6126,7 @@ The API endpoint containing the key that Access uses to verify that the response
 
 <summary>
 
-GitHubOrganizationRule object {"github-organization" }
+GitHubOrganizationRule object { "github-organization" }
 
 Matches a Github organization. Requires a Github identity provider.
 
@@ -6136,7 +6136,7 @@ Matches a Github organization. Requires a Github identity provider.
 
 <summary>
 
-"github-organization": object {identity\_provider\_id, name, team }
+"github-organization": object { identity\_provider\_id, name, team }
 
 </summary>
 
@@ -6170,7 +6170,7 @@ The name of the team
 
 <summary>
 
-GSuiteGroupRule object {gsuite }
+GSuiteGroupRule object { gsuite }
 
 Matches a group in Google Workspace. Requires a Google Workspace identity provider.
 
@@ -6180,7 +6180,7 @@ Matches a group in Google Workspace. Requires a Google Workspace identity provid
 
 <summary>
 
-gsuite: object {email, identity\_provider\_id }
+gsuite: object { email, identity\_provider\_id }
 
 </summary>
 
@@ -6208,7 +6208,7 @@ The ID of your Google Workspace identity provider.
 
 <summary>
 
-AccessLoginMethodRule object {login\_method }
+AccessLoginMethodRule object { login\_method }
 
 Matches a specific identity provider id.
 
@@ -6218,7 +6218,7 @@ Matches a specific identity provider id.
 
 <summary>
 
-login\_method: object {id }
+login\_method: object { id }
 
 </summary>
 
@@ -6240,7 +6240,7 @@ The ID of an identity provider.
 
 <summary>
 
-IPListRule object {ip\_list }
+IPListRule object { ip\_list }
 
 Matches an IP address from a list.
 
@@ -6250,7 +6250,7 @@ Matches an IP address from a list.
 
 <summary>
 
-ip\_list: object {id }
+ip\_list: object { id }
 
 </summary>
 
@@ -6272,7 +6272,7 @@ The ID of a previously created IP list.
 
 <summary>
 
-IPRule object {ip }
+IPRule object { ip }
 
 Matches an IP address block.
 
@@ -6282,7 +6282,7 @@ Matches an IP address block.
 
 <summary>
 
-ip: object {ip }
+ip: object { ip }
 
 </summary>
 
@@ -6304,7 +6304,7 @@ An IPv4 or IPv6 CIDR block.
 
 <summary>
 
-OktaGroupRule object {okta }
+OktaGroupRule object { okta }
 
 Matches an Okta group. Requires an Okta identity provider.
 
@@ -6314,7 +6314,7 @@ Matches an Okta group. Requires an Okta identity provider.
 
 <summary>
 
-okta: object {identity\_provider\_id, name }
+okta: object { identity\_provider\_id, name }
 
 </summary>
 
@@ -6342,7 +6342,7 @@ The name of the Okta group.
 
 <summary>
 
-SAMLGroupRule object {saml }
+SAMLGroupRule object { saml }
 
 Matches a SAML group. Requires a SAML identity provider.
 
@@ -6352,7 +6352,7 @@ Matches a SAML group. Requires a SAML identity provider.
 
 <summary>
 
-saml: object {attribute\_name, attribute\_value, identity\_provider\_id }
+saml: object { attribute\_name, attribute\_value, identity\_provider\_id }
 
 </summary>
 
@@ -6386,7 +6386,7 @@ The ID of your SAML identity provider.
 
 <summary>
 
-AccessOIDCClaimRule object {oidc }
+AccessOIDCClaimRule object { oidc }
 
 Matches an OIDC claim. Requires an OIDC identity provider.
 
@@ -6396,7 +6396,7 @@ Matches an OIDC claim. Requires an OIDC identity provider.
 
 <summary>
 
-oidc: object {claim\_name, claim\_value, identity\_provider\_id }
+oidc: object { claim\_name, claim\_value, identity\_provider\_id }
 
 </summary>
 
@@ -6430,7 +6430,7 @@ The ID of your OIDC identity provider.
 
 <summary>
 
-ServiceTokenRule object {service\_token }
+ServiceTokenRule object { service\_token }
 
 Matches a specific Access Service Token
 
@@ -6440,7 +6440,7 @@ Matches a specific Access Service Token
 
 <summary>
 
-service\_token: object {token\_id }
+service\_token: object { token\_id }
 
 </summary>
 
@@ -6462,7 +6462,7 @@ The ID of a Service Token.
 
 <summary>
 
-AccessServiceTokenTagRule object {service\_token\_tag }
+AccessServiceTokenTagRule object { service\_token\_tag }
 
 Matches an Access service token with the specified tag key and value. Only compatible with non\_identity decisions.
 
@@ -6472,7 +6472,7 @@ Matches an Access service token with the specified tag key and value. Only compa
 
 <summary>
 
-service\_token\_tag: object {key, value }
+service\_token\_tag: object { key, value }
 
 </summary>
 
@@ -6508,7 +6508,7 @@ minLength1
 
 <summary>
 
-AccessLinkedAppTokenRule object {linked\_app\_token }
+AccessLinkedAppTokenRule object { linked\_app\_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non\_identity and bypass decisions.
 
@@ -6518,7 +6518,7 @@ Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS applica
 
 <summary>
 
-linked\_app\_token: object {app\_uid }
+linked\_app\_token: object { app\_uid }
 
 </summary>
 
@@ -6540,7 +6540,7 @@ The ID of an Access OIDC SaaS application
 
 <summary>
 
-AccessUserRiskScoreRule object {user\_risk\_score }
+AccessUserRiskScoreRule object { user\_risk\_score }
 
 Matches a user’s risk score.
 
@@ -6550,7 +6550,7 @@ Matches a user’s risk score.
 
 <summary>
 
-user\_risk\_score: object {user\_risk\_score }
+user\_risk\_score: object { user\_risk\_score }
 
 </summary>
 
@@ -6558,7 +6558,7 @@ user\_risk\_score: object {user\_risk\_score }
 
 <summary>
 
-user\_risk\_score: array of "low"or "medium"or "high"or "unscored"
+user\_risk\_score: array of "low" or "medium" or "high" or "unscored"
 
 A list of risk score levels to match. Values can be low, medium, high, or unscored.
 
@@ -6598,7 +6598,7 @@ One of the following:
 
 <summary>
 
-AccessCloudflareAccountMemberRule object {cloudflare\_account\_member }
+AccessCloudflareAccountMemberRule object { cloudflare\_account\_member }
 
 Matches users who are members of a specific Cloudflare account. Requires a Cloudflare identity provider.
 
@@ -6608,7 +6608,7 @@ Matches users who are members of a specific Cloudflare account. Requires a Cloud
 
 <summary>
 
-cloudflare\_account\_member: object {account\_id }
+cloudflare\_account\_member: object { account\_id }
 
 </summary>
 
@@ -6652,7 +6652,7 @@ formatdate-time
 
 <summary>
 
-object {id, connection\_rules, created\_at, 8 more }
+object { id, connection\_rules, created\_at, 8 more }
 
 </summary>
 
@@ -6668,7 +6668,7 @@ maxLength36
 
 <summary>
 
-connection\_rules: optional object {ssh }
+connection\_rules: optional object { ssh }
 
 The rules that define how users may connect to the targets secured by your application.
 
@@ -6678,7 +6678,7 @@ The rules that define how users may connect to the targets secured by your appli
 
 <summary>
 
-ssh: optional object {usernames, allow\_email\_alias }
+ssh: optional object { usernames, allow\_email\_alias }
 
 The SSH-specific rules that define how users may connect to the targets secured by your application.
 
@@ -6758,7 +6758,7 @@ One of the following:
 
 <summary>
 
-GroupRule object {group }
+GroupRule object { group }
 
 Matches an Access group.
 
@@ -6768,7 +6768,7 @@ Matches an Access group.
 
 <summary>
 
-group: object {id }
+group: object { id }
 
 </summary>
 
@@ -6790,13 +6790,13 @@ The ID of a previously created Access group.
 
 <summary>
 
-AnyValidServiceTokenRule object {any\_valid\_service\_token }
+AnyValidServiceTokenRule object { any\_valid\_service\_token }
 
 Matches any valid Access Service Token
 
 </summary>
 
-any\_valid\_service\_token: object {}
+any\_valid\_service\_token: object { }
 
 An empty object which matches on all service tokens.
 
@@ -6810,7 +6810,7 @@ An empty object which matches on all service tokens.
 
 <summary>
 
-AccessAuthContextRule object {auth\_context }
+AccessAuthContextRule object { auth\_context }
 
 Matches an Azure Authentication Context. Requires an Azure identity provider.
 
@@ -6820,7 +6820,7 @@ Matches an Azure Authentication Context. Requires an Azure identity provider.
 
 <summary>
 
-auth\_context: object {id, ac\_id, identity\_provider\_id }
+auth\_context: object { id, ac\_id, identity\_provider\_id }
 
 </summary>
 
@@ -6854,7 +6854,7 @@ The ID of your Azure identity provider.
 
 <summary>
 
-AuthenticationMethodRule object {auth\_method }
+AuthenticationMethodRule object { auth\_method }
 
 Enforce different MFA options
 
@@ -6864,7 +6864,7 @@ Enforce different MFA options
 
 <summary>
 
-auth\_method: object {auth\_method }
+auth\_method: object { auth\_method }
 
 </summary>
 
@@ -6886,7 +6886,7 @@ The type of authentication method <a href="https://datatracker.ietf.org/doc/html
 
 <summary>
 
-AzureGroupRule object {azureAD }
+AzureGroupRule object { azureAD }
 
 Matches an Azure group. Requires an Azure identity provider.
 
@@ -6896,7 +6896,7 @@ Matches an Azure group. Requires an Azure identity provider.
 
 <summary>
 
-azureAD: object {id, identity\_provider\_id }
+azureAD: object { id, identity\_provider\_id }
 
 </summary>
 
@@ -6924,13 +6924,13 @@ The ID of your Azure identity provider.
 
 <summary>
 
-CertificateRule object {certificate }
+CertificateRule object { certificate }
 
 Matches any valid client certificate.
 
 </summary>
 
-certificate: object {}
+certificate: object { }
 
 <a href="#">Link to this property</a>
 
@@ -6942,7 +6942,7 @@ certificate: object {}
 
 <summary>
 
-AccessCommonNameRule object {common\_name }
+AccessCommonNameRule object { common\_name }
 
 Matches a specific common name.
 
@@ -6952,7 +6952,7 @@ Matches a specific common name.
 
 <summary>
 
-common\_name: object {common\_name }
+common\_name: object { common\_name }
 
 </summary>
 
@@ -6974,7 +6974,7 @@ The common name to match.
 
 <summary>
 
-CountryRule object {geo }
+CountryRule object { geo }
 
 Matches a specific country
 
@@ -6984,7 +6984,7 @@ Matches a specific country
 
 <summary>
 
-geo: object {country\_code }
+geo: object { country\_code }
 
 </summary>
 
@@ -7006,7 +7006,7 @@ The country code that should be matched.
 
 <summary>
 
-AccessDevicePostureRule object {device\_posture }
+AccessDevicePostureRule object { device\_posture }
 
 Enforces a device posture rule has run successfully
 
@@ -7016,7 +7016,7 @@ Enforces a device posture rule has run successfully
 
 <summary>
 
-device\_posture: object {integration\_uid, account\_id }
+device\_posture: object { integration\_uid, account\_id }
 
 </summary>
 
@@ -7046,7 +7046,7 @@ maxLength32
 
 <summary>
 
-DomainRule object {email\_domain }
+DomainRule object { email\_domain }
 
 Match an entire email domain.
 
@@ -7056,7 +7056,7 @@ Match an entire email domain.
 
 <summary>
 
-email\_domain: object {domain }
+email\_domain: object { domain }
 
 </summary>
 
@@ -7078,7 +7078,7 @@ The email domain to match.
 
 <summary>
 
-EmailListRule object {email\_list }
+EmailListRule object { email\_list }
 
 Matches an email address from a list.
 
@@ -7088,7 +7088,7 @@ Matches an email address from a list.
 
 <summary>
 
-email\_list: object {id }
+email\_list: object { id }
 
 </summary>
 
@@ -7110,7 +7110,7 @@ The ID of a previously created email list.
 
 <summary>
 
-EmailRule object {email }
+EmailRule object { email }
 
 Matches a specific email.
 
@@ -7120,7 +7120,7 @@ Matches a specific email.
 
 <summary>
 
-email: object {email }
+email: object { email }
 
 </summary>
 
@@ -7144,13 +7144,13 @@ formatemail
 
 <summary>
 
-EveryoneRule object {everyone }
+EveryoneRule object { everyone }
 
 Matches everyone.
 
 </summary>
 
-everyone: object {}
+everyone: object { }
 
 An empty object which matches on all users.
 
@@ -7164,7 +7164,7 @@ An empty object which matches on all users.
 
 <summary>
 
-ExternalEvaluationRule object {external\_evaluation }
+ExternalEvaluationRule object { external\_evaluation }
 
 Create Allow or Block policies which evaluate the user based on custom criteria.
 
@@ -7174,7 +7174,7 @@ Create Allow or Block policies which evaluate the user based on custom criteria.
 
 <summary>
 
-external\_evaluation: object {evaluate\_url, keys\_url }
+external\_evaluation: object { evaluate\_url, keys\_url }
 
 </summary>
 
@@ -7202,7 +7202,7 @@ The API endpoint containing the key that Access uses to verify that the response
 
 <summary>
 
-GitHubOrganizationRule object {"github-organization" }
+GitHubOrganizationRule object { "github-organization" }
 
 Matches a Github organization. Requires a Github identity provider.
 
@@ -7212,7 +7212,7 @@ Matches a Github organization. Requires a Github identity provider.
 
 <summary>
 
-"github-organization": object {identity\_provider\_id, name, team }
+"github-organization": object { identity\_provider\_id, name, team }
 
 </summary>
 
@@ -7246,7 +7246,7 @@ The name of the team
 
 <summary>
 
-GSuiteGroupRule object {gsuite }
+GSuiteGroupRule object { gsuite }
 
 Matches a group in Google Workspace. Requires a Google Workspace identity provider.
 
@@ -7256,7 +7256,7 @@ Matches a group in Google Workspace. Requires a Google Workspace identity provid
 
 <summary>
 
-gsuite: object {email, identity\_provider\_id }
+gsuite: object { email, identity\_provider\_id }
 
 </summary>
 
@@ -7284,7 +7284,7 @@ The ID of your Google Workspace identity provider.
 
 <summary>
 
-AccessLoginMethodRule object {login\_method }
+AccessLoginMethodRule object { login\_method }
 
 Matches a specific identity provider id.
 
@@ -7294,7 +7294,7 @@ Matches a specific identity provider id.
 
 <summary>
 
-login\_method: object {id }
+login\_method: object { id }
 
 </summary>
 
@@ -7316,7 +7316,7 @@ The ID of an identity provider.
 
 <summary>
 
-IPListRule object {ip\_list }
+IPListRule object { ip\_list }
 
 Matches an IP address from a list.
 
@@ -7326,7 +7326,7 @@ Matches an IP address from a list.
 
 <summary>
 
-ip\_list: object {id }
+ip\_list: object { id }
 
 </summary>
 
@@ -7348,7 +7348,7 @@ The ID of a previously created IP list.
 
 <summary>
 
-IPRule object {ip }
+IPRule object { ip }
 
 Matches an IP address block.
 
@@ -7358,7 +7358,7 @@ Matches an IP address block.
 
 <summary>
 
-ip: object {ip }
+ip: object { ip }
 
 </summary>
 
@@ -7380,7 +7380,7 @@ An IPv4 or IPv6 CIDR block.
 
 <summary>
 
-OktaGroupRule object {okta }
+OktaGroupRule object { okta }
 
 Matches an Okta group. Requires an Okta identity provider.
 
@@ -7390,7 +7390,7 @@ Matches an Okta group. Requires an Okta identity provider.
 
 <summary>
 
-okta: object {identity\_provider\_id, name }
+okta: object { identity\_provider\_id, name }
 
 </summary>
 
@@ -7418,7 +7418,7 @@ The name of the Okta group.
 
 <summary>
 
-SAMLGroupRule object {saml }
+SAMLGroupRule object { saml }
 
 Matches a SAML group. Requires a SAML identity provider.
 
@@ -7428,7 +7428,7 @@ Matches a SAML group. Requires a SAML identity provider.
 
 <summary>
 
-saml: object {attribute\_name, attribute\_value, identity\_provider\_id }
+saml: object { attribute\_name, attribute\_value, identity\_provider\_id }
 
 </summary>
 
@@ -7462,7 +7462,7 @@ The ID of your SAML identity provider.
 
 <summary>
 
-AccessOIDCClaimRule object {oidc }
+AccessOIDCClaimRule object { oidc }
 
 Matches an OIDC claim. Requires an OIDC identity provider.
 
@@ -7472,7 +7472,7 @@ Matches an OIDC claim. Requires an OIDC identity provider.
 
 <summary>
 
-oidc: object {claim\_name, claim\_value, identity\_provider\_id }
+oidc: object { claim\_name, claim\_value, identity\_provider\_id }
 
 </summary>
 
@@ -7506,7 +7506,7 @@ The ID of your OIDC identity provider.
 
 <summary>
 
-ServiceTokenRule object {service\_token }
+ServiceTokenRule object { service\_token }
 
 Matches a specific Access Service Token
 
@@ -7516,7 +7516,7 @@ Matches a specific Access Service Token
 
 <summary>
 
-service\_token: object {token\_id }
+service\_token: object { token\_id }
 
 </summary>
 
@@ -7538,7 +7538,7 @@ The ID of a Service Token.
 
 <summary>
 
-AccessServiceTokenTagRule object {service\_token\_tag }
+AccessServiceTokenTagRule object { service\_token\_tag }
 
 Matches an Access service token with the specified tag key and value. Only compatible with non\_identity decisions.
 
@@ -7548,7 +7548,7 @@ Matches an Access service token with the specified tag key and value. Only compa
 
 <summary>
 
-service\_token\_tag: object {key, value }
+service\_token\_tag: object { key, value }
 
 </summary>
 
@@ -7584,7 +7584,7 @@ minLength1
 
 <summary>
 
-AccessLinkedAppTokenRule object {linked\_app\_token }
+AccessLinkedAppTokenRule object { linked\_app\_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non\_identity and bypass decisions.
 
@@ -7594,7 +7594,7 @@ Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS applica
 
 <summary>
 
-linked\_app\_token: object {app\_uid }
+linked\_app\_token: object { app\_uid }
 
 </summary>
 
@@ -7616,7 +7616,7 @@ The ID of an Access OIDC SaaS application
 
 <summary>
 
-AccessUserRiskScoreRule object {user\_risk\_score }
+AccessUserRiskScoreRule object { user\_risk\_score }
 
 Matches a user’s risk score.
 
@@ -7626,7 +7626,7 @@ Matches a user’s risk score.
 
 <summary>
 
-user\_risk\_score: object {user\_risk\_score }
+user\_risk\_score: object { user\_risk\_score }
 
 </summary>
 
@@ -7634,7 +7634,7 @@ user\_risk\_score: object {user\_risk\_score }
 
 <summary>
 
-user\_risk\_score: array of "low"or "medium"or "high"or "unscored"
+user\_risk\_score: array of "low" or "medium" or "high" or "unscored"
 
 A list of risk score levels to match. Values can be low, medium, high, or unscored.
 
@@ -7674,7 +7674,7 @@ One of the following:
 
 <summary>
 
-AccessCloudflareAccountMemberRule object {cloudflare\_account\_member }
+AccessCloudflareAccountMemberRule object { cloudflare\_account\_member }
 
 Matches users who are members of a specific Cloudflare account. Requires a Cloudflare identity provider.
 
@@ -7684,7 +7684,7 @@ Matches users who are members of a specific Cloudflare account. Requires a Cloud
 
 <summary>
 
-cloudflare\_account\_member: object {account\_id }
+cloudflare\_account\_member: object { account\_id }
 
 </summary>
 
@@ -7724,7 +7724,7 @@ One of the following:
 
 <summary>
 
-GroupRule object {group }
+GroupRule object { group }
 
 Matches an Access group.
 
@@ -7734,7 +7734,7 @@ Matches an Access group.
 
 <summary>
 
-group: object {id }
+group: object { id }
 
 </summary>
 
@@ -7756,13 +7756,13 @@ The ID of a previously created Access group.
 
 <summary>
 
-AnyValidServiceTokenRule object {any\_valid\_service\_token }
+AnyValidServiceTokenRule object { any\_valid\_service\_token }
 
 Matches any valid Access Service Token
 
 </summary>
 
-any\_valid\_service\_token: object {}
+any\_valid\_service\_token: object { }
 
 An empty object which matches on all service tokens.
 
@@ -7776,7 +7776,7 @@ An empty object which matches on all service tokens.
 
 <summary>
 
-AccessAuthContextRule object {auth\_context }
+AccessAuthContextRule object { auth\_context }
 
 Matches an Azure Authentication Context. Requires an Azure identity provider.
 
@@ -7786,7 +7786,7 @@ Matches an Azure Authentication Context. Requires an Azure identity provider.
 
 <summary>
 
-auth\_context: object {id, ac\_id, identity\_provider\_id }
+auth\_context: object { id, ac\_id, identity\_provider\_id }
 
 </summary>
 
@@ -7820,7 +7820,7 @@ The ID of your Azure identity provider.
 
 <summary>
 
-AuthenticationMethodRule object {auth\_method }
+AuthenticationMethodRule object { auth\_method }
 
 Enforce different MFA options
 
@@ -7830,7 +7830,7 @@ Enforce different MFA options
 
 <summary>
 
-auth\_method: object {auth\_method }
+auth\_method: object { auth\_method }
 
 </summary>
 
@@ -7852,7 +7852,7 @@ The type of authentication method <a href="https://datatracker.ietf.org/doc/html
 
 <summary>
 
-AzureGroupRule object {azureAD }
+AzureGroupRule object { azureAD }
 
 Matches an Azure group. Requires an Azure identity provider.
 
@@ -7862,7 +7862,7 @@ Matches an Azure group. Requires an Azure identity provider.
 
 <summary>
 
-azureAD: object {id, identity\_provider\_id }
+azureAD: object { id, identity\_provider\_id }
 
 </summary>
 
@@ -7890,13 +7890,13 @@ The ID of your Azure identity provider.
 
 <summary>
 
-CertificateRule object {certificate }
+CertificateRule object { certificate }
 
 Matches any valid client certificate.
 
 </summary>
 
-certificate: object {}
+certificate: object { }
 
 <a href="#">Link to this property</a>
 
@@ -7908,7 +7908,7 @@ certificate: object {}
 
 <summary>
 
-AccessCommonNameRule object {common\_name }
+AccessCommonNameRule object { common\_name }
 
 Matches a specific common name.
 
@@ -7918,7 +7918,7 @@ Matches a specific common name.
 
 <summary>
 
-common\_name: object {common\_name }
+common\_name: object { common\_name }
 
 </summary>
 
@@ -7940,7 +7940,7 @@ The common name to match.
 
 <summary>
 
-CountryRule object {geo }
+CountryRule object { geo }
 
 Matches a specific country
 
@@ -7950,7 +7950,7 @@ Matches a specific country
 
 <summary>
 
-geo: object {country\_code }
+geo: object { country\_code }
 
 </summary>
 
@@ -7972,7 +7972,7 @@ The country code that should be matched.
 
 <summary>
 
-AccessDevicePostureRule object {device\_posture }
+AccessDevicePostureRule object { device\_posture }
 
 Enforces a device posture rule has run successfully
 
@@ -7982,7 +7982,7 @@ Enforces a device posture rule has run successfully
 
 <summary>
 
-device\_posture: object {integration\_uid, account\_id }
+device\_posture: object { integration\_uid, account\_id }
 
 </summary>
 
@@ -8012,7 +8012,7 @@ maxLength32
 
 <summary>
 
-DomainRule object {email\_domain }
+DomainRule object { email\_domain }
 
 Match an entire email domain.
 
@@ -8022,7 +8022,7 @@ Match an entire email domain.
 
 <summary>
 
-email\_domain: object {domain }
+email\_domain: object { domain }
 
 </summary>
 
@@ -8044,7 +8044,7 @@ The email domain to match.
 
 <summary>
 
-EmailListRule object {email\_list }
+EmailListRule object { email\_list }
 
 Matches an email address from a list.
 
@@ -8054,7 +8054,7 @@ Matches an email address from a list.
 
 <summary>
 
-email\_list: object {id }
+email\_list: object { id }
 
 </summary>
 
@@ -8076,7 +8076,7 @@ The ID of a previously created email list.
 
 <summary>
 
-EmailRule object {email }
+EmailRule object { email }
 
 Matches a specific email.
 
@@ -8086,7 +8086,7 @@ Matches a specific email.
 
 <summary>
 
-email: object {email }
+email: object { email }
 
 </summary>
 
@@ -8110,13 +8110,13 @@ formatemail
 
 <summary>
 
-EveryoneRule object {everyone }
+EveryoneRule object { everyone }
 
 Matches everyone.
 
 </summary>
 
-everyone: object {}
+everyone: object { }
 
 An empty object which matches on all users.
 
@@ -8130,7 +8130,7 @@ An empty object which matches on all users.
 
 <summary>
 
-ExternalEvaluationRule object {external\_evaluation }
+ExternalEvaluationRule object { external\_evaluation }
 
 Create Allow or Block policies which evaluate the user based on custom criteria.
 
@@ -8140,7 +8140,7 @@ Create Allow or Block policies which evaluate the user based on custom criteria.
 
 <summary>
 
-external\_evaluation: object {evaluate\_url, keys\_url }
+external\_evaluation: object { evaluate\_url, keys\_url }
 
 </summary>
 
@@ -8168,7 +8168,7 @@ The API endpoint containing the key that Access uses to verify that the response
 
 <summary>
 
-GitHubOrganizationRule object {"github-organization" }
+GitHubOrganizationRule object { "github-organization" }
 
 Matches a Github organization. Requires a Github identity provider.
 
@@ -8178,7 +8178,7 @@ Matches a Github organization. Requires a Github identity provider.
 
 <summary>
 
-"github-organization": object {identity\_provider\_id, name, team }
+"github-organization": object { identity\_provider\_id, name, team }
 
 </summary>
 
@@ -8212,7 +8212,7 @@ The name of the team
 
 <summary>
 
-GSuiteGroupRule object {gsuite }
+GSuiteGroupRule object { gsuite }
 
 Matches a group in Google Workspace. Requires a Google Workspace identity provider.
 
@@ -8222,7 +8222,7 @@ Matches a group in Google Workspace. Requires a Google Workspace identity provid
 
 <summary>
 
-gsuite: object {email, identity\_provider\_id }
+gsuite: object { email, identity\_provider\_id }
 
 </summary>
 
@@ -8250,7 +8250,7 @@ The ID of your Google Workspace identity provider.
 
 <summary>
 
-AccessLoginMethodRule object {login\_method }
+AccessLoginMethodRule object { login\_method }
 
 Matches a specific identity provider id.
 
@@ -8260,7 +8260,7 @@ Matches a specific identity provider id.
 
 <summary>
 
-login\_method: object {id }
+login\_method: object { id }
 
 </summary>
 
@@ -8282,7 +8282,7 @@ The ID of an identity provider.
 
 <summary>
 
-IPListRule object {ip\_list }
+IPListRule object { ip\_list }
 
 Matches an IP address from a list.
 
@@ -8292,7 +8292,7 @@ Matches an IP address from a list.
 
 <summary>
 
-ip\_list: object {id }
+ip\_list: object { id }
 
 </summary>
 
@@ -8314,7 +8314,7 @@ The ID of a previously created IP list.
 
 <summary>
 
-IPRule object {ip }
+IPRule object { ip }
 
 Matches an IP address block.
 
@@ -8324,7 +8324,7 @@ Matches an IP address block.
 
 <summary>
 
-ip: object {ip }
+ip: object { ip }
 
 </summary>
 
@@ -8346,7 +8346,7 @@ An IPv4 or IPv6 CIDR block.
 
 <summary>
 
-OktaGroupRule object {okta }
+OktaGroupRule object { okta }
 
 Matches an Okta group. Requires an Okta identity provider.
 
@@ -8356,7 +8356,7 @@ Matches an Okta group. Requires an Okta identity provider.
 
 <summary>
 
-okta: object {identity\_provider\_id, name }
+okta: object { identity\_provider\_id, name }
 
 </summary>
 
@@ -8384,7 +8384,7 @@ The name of the Okta group.
 
 <summary>
 
-SAMLGroupRule object {saml }
+SAMLGroupRule object { saml }
 
 Matches a SAML group. Requires a SAML identity provider.
 
@@ -8394,7 +8394,7 @@ Matches a SAML group. Requires a SAML identity provider.
 
 <summary>
 
-saml: object {attribute\_name, attribute\_value, identity\_provider\_id }
+saml: object { attribute\_name, attribute\_value, identity\_provider\_id }
 
 </summary>
 
@@ -8428,7 +8428,7 @@ The ID of your SAML identity provider.
 
 <summary>
 
-AccessOIDCClaimRule object {oidc }
+AccessOIDCClaimRule object { oidc }
 
 Matches an OIDC claim. Requires an OIDC identity provider.
 
@@ -8438,7 +8438,7 @@ Matches an OIDC claim. Requires an OIDC identity provider.
 
 <summary>
 
-oidc: object {claim\_name, claim\_value, identity\_provider\_id }
+oidc: object { claim\_name, claim\_value, identity\_provider\_id }
 
 </summary>
 
@@ -8472,7 +8472,7 @@ The ID of your OIDC identity provider.
 
 <summary>
 
-ServiceTokenRule object {service\_token }
+ServiceTokenRule object { service\_token }
 
 Matches a specific Access Service Token
 
@@ -8482,7 +8482,7 @@ Matches a specific Access Service Token
 
 <summary>
 
-service\_token: object {token\_id }
+service\_token: object { token\_id }
 
 </summary>
 
@@ -8504,7 +8504,7 @@ The ID of a Service Token.
 
 <summary>
 
-AccessServiceTokenTagRule object {service\_token\_tag }
+AccessServiceTokenTagRule object { service\_token\_tag }
 
 Matches an Access service token with the specified tag key and value. Only compatible with non\_identity decisions.
 
@@ -8514,7 +8514,7 @@ Matches an Access service token with the specified tag key and value. Only compa
 
 <summary>
 
-service\_token\_tag: object {key, value }
+service\_token\_tag: object { key, value }
 
 </summary>
 
@@ -8550,7 +8550,7 @@ minLength1
 
 <summary>
 
-AccessLinkedAppTokenRule object {linked\_app\_token }
+AccessLinkedAppTokenRule object { linked\_app\_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non\_identity and bypass decisions.
 
@@ -8560,7 +8560,7 @@ Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS applica
 
 <summary>
 
-linked\_app\_token: object {app\_uid }
+linked\_app\_token: object { app\_uid }
 
 </summary>
 
@@ -8582,7 +8582,7 @@ The ID of an Access OIDC SaaS application
 
 <summary>
 
-AccessUserRiskScoreRule object {user\_risk\_score }
+AccessUserRiskScoreRule object { user\_risk\_score }
 
 Matches a user’s risk score.
 
@@ -8592,7 +8592,7 @@ Matches a user’s risk score.
 
 <summary>
 
-user\_risk\_score: object {user\_risk\_score }
+user\_risk\_score: object { user\_risk\_score }
 
 </summary>
 
@@ -8600,7 +8600,7 @@ user\_risk\_score: object {user\_risk\_score }
 
 <summary>
 
-user\_risk\_score: array of "low"or "medium"or "high"or "unscored"
+user\_risk\_score: array of "low" or "medium" or "high" or "unscored"
 
 A list of risk score levels to match. Values can be low, medium, high, or unscored.
 
@@ -8640,7 +8640,7 @@ One of the following:
 
 <summary>
 
-AccessCloudflareAccountMemberRule object {cloudflare\_account\_member }
+AccessCloudflareAccountMemberRule object { cloudflare\_account\_member }
 
 Matches users who are members of a specific Cloudflare account. Requires a Cloudflare identity provider.
 
@@ -8650,7 +8650,7 @@ Matches users who are members of a specific Cloudflare account. Requires a Cloud
 
 <summary>
 
-cloudflare\_account\_member: object {account\_id }
+cloudflare\_account\_member: object { account\_id }
 
 </summary>
 
@@ -8678,7 +8678,7 @@ maxLength32
 
 <summary>
 
-mfa\_config: optional object {allowed\_authenticators, mfa\_disabled, session\_duration }
+mfa\_config: optional object { allowed\_authenticators, mfa\_disabled, session\_duration }
 
 Configures multi-factor authentication (MFA) settings for infrastructure applications.
 
@@ -8688,7 +8688,7 @@ Configures multi-factor authentication (MFA) settings for infrastructure applica
 
 <summary>
 
-allowed\_authenticators: optional array of "piv\_key"or "ssh\_fido2\_key"
+allowed\_authenticators: optional array of "piv\_key" or "ssh\_fido2\_key"
 
 Lists the MFA methods that users can authenticate with. For infrastructure applications, supported values are <code>piv_key</code> and <code>ssh_fido2_key</code>.
 
@@ -8752,7 +8752,7 @@ One of the following:
 
 <summary>
 
-GroupRule object {group }
+GroupRule object { group }
 
 Matches an Access group.
 
@@ -8762,7 +8762,7 @@ Matches an Access group.
 
 <summary>
 
-group: object {id }
+group: object { id }
 
 </summary>
 
@@ -8784,13 +8784,13 @@ The ID of a previously created Access group.
 
 <summary>
 
-AnyValidServiceTokenRule object {any\_valid\_service\_token }
+AnyValidServiceTokenRule object { any\_valid\_service\_token }
 
 Matches any valid Access Service Token
 
 </summary>
 
-any\_valid\_service\_token: object {}
+any\_valid\_service\_token: object { }
 
 An empty object which matches on all service tokens.
 
@@ -8804,7 +8804,7 @@ An empty object which matches on all service tokens.
 
 <summary>
 
-AccessAuthContextRule object {auth\_context }
+AccessAuthContextRule object { auth\_context }
 
 Matches an Azure Authentication Context. Requires an Azure identity provider.
 
@@ -8814,7 +8814,7 @@ Matches an Azure Authentication Context. Requires an Azure identity provider.
 
 <summary>
 
-auth\_context: object {id, ac\_id, identity\_provider\_id }
+auth\_context: object { id, ac\_id, identity\_provider\_id }
 
 </summary>
 
@@ -8848,7 +8848,7 @@ The ID of your Azure identity provider.
 
 <summary>
 
-AuthenticationMethodRule object {auth\_method }
+AuthenticationMethodRule object { auth\_method }
 
 Enforce different MFA options
 
@@ -8858,7 +8858,7 @@ Enforce different MFA options
 
 <summary>
 
-auth\_method: object {auth\_method }
+auth\_method: object { auth\_method }
 
 </summary>
 
@@ -8880,7 +8880,7 @@ The type of authentication method <a href="https://datatracker.ietf.org/doc/html
 
 <summary>
 
-AzureGroupRule object {azureAD }
+AzureGroupRule object { azureAD }
 
 Matches an Azure group. Requires an Azure identity provider.
 
@@ -8890,7 +8890,7 @@ Matches an Azure group. Requires an Azure identity provider.
 
 <summary>
 
-azureAD: object {id, identity\_provider\_id }
+azureAD: object { id, identity\_provider\_id }
 
 </summary>
 
@@ -8918,13 +8918,13 @@ The ID of your Azure identity provider.
 
 <summary>
 
-CertificateRule object {certificate }
+CertificateRule object { certificate }
 
 Matches any valid client certificate.
 
 </summary>
 
-certificate: object {}
+certificate: object { }
 
 <a href="#">Link to this property</a>
 
@@ -8936,7 +8936,7 @@ certificate: object {}
 
 <summary>
 
-AccessCommonNameRule object {common\_name }
+AccessCommonNameRule object { common\_name }
 
 Matches a specific common name.
 
@@ -8946,7 +8946,7 @@ Matches a specific common name.
 
 <summary>
 
-common\_name: object {common\_name }
+common\_name: object { common\_name }
 
 </summary>
 
@@ -8968,7 +8968,7 @@ The common name to match.
 
 <summary>
 
-CountryRule object {geo }
+CountryRule object { geo }
 
 Matches a specific country
 
@@ -8978,7 +8978,7 @@ Matches a specific country
 
 <summary>
 
-geo: object {country\_code }
+geo: object { country\_code }
 
 </summary>
 
@@ -9000,7 +9000,7 @@ The country code that should be matched.
 
 <summary>
 
-AccessDevicePostureRule object {device\_posture }
+AccessDevicePostureRule object { device\_posture }
 
 Enforces a device posture rule has run successfully
 
@@ -9010,7 +9010,7 @@ Enforces a device posture rule has run successfully
 
 <summary>
 
-device\_posture: object {integration\_uid, account\_id }
+device\_posture: object { integration\_uid, account\_id }
 
 </summary>
 
@@ -9040,7 +9040,7 @@ maxLength32
 
 <summary>
 
-DomainRule object {email\_domain }
+DomainRule object { email\_domain }
 
 Match an entire email domain.
 
@@ -9050,7 +9050,7 @@ Match an entire email domain.
 
 <summary>
 
-email\_domain: object {domain }
+email\_domain: object { domain }
 
 </summary>
 
@@ -9072,7 +9072,7 @@ The email domain to match.
 
 <summary>
 
-EmailListRule object {email\_list }
+EmailListRule object { email\_list }
 
 Matches an email address from a list.
 
@@ -9082,7 +9082,7 @@ Matches an email address from a list.
 
 <summary>
 
-email\_list: object {id }
+email\_list: object { id }
 
 </summary>
 
@@ -9104,7 +9104,7 @@ The ID of a previously created email list.
 
 <summary>
 
-EmailRule object {email }
+EmailRule object { email }
 
 Matches a specific email.
 
@@ -9114,7 +9114,7 @@ Matches a specific email.
 
 <summary>
 
-email: object {email }
+email: object { email }
 
 </summary>
 
@@ -9138,13 +9138,13 @@ formatemail
 
 <summary>
 
-EveryoneRule object {everyone }
+EveryoneRule object { everyone }
 
 Matches everyone.
 
 </summary>
 
-everyone: object {}
+everyone: object { }
 
 An empty object which matches on all users.
 
@@ -9158,7 +9158,7 @@ An empty object which matches on all users.
 
 <summary>
 
-ExternalEvaluationRule object {external\_evaluation }
+ExternalEvaluationRule object { external\_evaluation }
 
 Create Allow or Block policies which evaluate the user based on custom criteria.
 
@@ -9168,7 +9168,7 @@ Create Allow or Block policies which evaluate the user based on custom criteria.
 
 <summary>
 
-external\_evaluation: object {evaluate\_url, keys\_url }
+external\_evaluation: object { evaluate\_url, keys\_url }
 
 </summary>
 
@@ -9196,7 +9196,7 @@ The API endpoint containing the key that Access uses to verify that the response
 
 <summary>
 
-GitHubOrganizationRule object {"github-organization" }
+GitHubOrganizationRule object { "github-organization" }
 
 Matches a Github organization. Requires a Github identity provider.
 
@@ -9206,7 +9206,7 @@ Matches a Github organization. Requires a Github identity provider.
 
 <summary>
 
-"github-organization": object {identity\_provider\_id, name, team }
+"github-organization": object { identity\_provider\_id, name, team }
 
 </summary>
 
@@ -9240,7 +9240,7 @@ The name of the team
 
 <summary>
 
-GSuiteGroupRule object {gsuite }
+GSuiteGroupRule object { gsuite }
 
 Matches a group in Google Workspace. Requires a Google Workspace identity provider.
 
@@ -9250,7 +9250,7 @@ Matches a group in Google Workspace. Requires a Google Workspace identity provid
 
 <summary>
 
-gsuite: object {email, identity\_provider\_id }
+gsuite: object { email, identity\_provider\_id }
 
 </summary>
 
@@ -9278,7 +9278,7 @@ The ID of your Google Workspace identity provider.
 
 <summary>
 
-AccessLoginMethodRule object {login\_method }
+AccessLoginMethodRule object { login\_method }
 
 Matches a specific identity provider id.
 
@@ -9288,7 +9288,7 @@ Matches a specific identity provider id.
 
 <summary>
 
-login\_method: object {id }
+login\_method: object { id }
 
 </summary>
 
@@ -9310,7 +9310,7 @@ The ID of an identity provider.
 
 <summary>
 
-IPListRule object {ip\_list }
+IPListRule object { ip\_list }
 
 Matches an IP address from a list.
 
@@ -9320,7 +9320,7 @@ Matches an IP address from a list.
 
 <summary>
 
-ip\_list: object {id }
+ip\_list: object { id }
 
 </summary>
 
@@ -9342,7 +9342,7 @@ The ID of a previously created IP list.
 
 <summary>
 
-IPRule object {ip }
+IPRule object { ip }
 
 Matches an IP address block.
 
@@ -9352,7 +9352,7 @@ Matches an IP address block.
 
 <summary>
 
-ip: object {ip }
+ip: object { ip }
 
 </summary>
 
@@ -9374,7 +9374,7 @@ An IPv4 or IPv6 CIDR block.
 
 <summary>
 
-OktaGroupRule object {okta }
+OktaGroupRule object { okta }
 
 Matches an Okta group. Requires an Okta identity provider.
 
@@ -9384,7 +9384,7 @@ Matches an Okta group. Requires an Okta identity provider.
 
 <summary>
 
-okta: object {identity\_provider\_id, name }
+okta: object { identity\_provider\_id, name }
 
 </summary>
 
@@ -9412,7 +9412,7 @@ The name of the Okta group.
 
 <summary>
 
-SAMLGroupRule object {saml }
+SAMLGroupRule object { saml }
 
 Matches a SAML group. Requires a SAML identity provider.
 
@@ -9422,7 +9422,7 @@ Matches a SAML group. Requires a SAML identity provider.
 
 <summary>
 
-saml: object {attribute\_name, attribute\_value, identity\_provider\_id }
+saml: object { attribute\_name, attribute\_value, identity\_provider\_id }
 
 </summary>
 
@@ -9456,7 +9456,7 @@ The ID of your SAML identity provider.
 
 <summary>
 
-AccessOIDCClaimRule object {oidc }
+AccessOIDCClaimRule object { oidc }
 
 Matches an OIDC claim. Requires an OIDC identity provider.
 
@@ -9466,7 +9466,7 @@ Matches an OIDC claim. Requires an OIDC identity provider.
 
 <summary>
 
-oidc: object {claim\_name, claim\_value, identity\_provider\_id }
+oidc: object { claim\_name, claim\_value, identity\_provider\_id }
 
 </summary>
 
@@ -9500,7 +9500,7 @@ The ID of your OIDC identity provider.
 
 <summary>
 
-ServiceTokenRule object {service\_token }
+ServiceTokenRule object { service\_token }
 
 Matches a specific Access Service Token
 
@@ -9510,7 +9510,7 @@ Matches a specific Access Service Token
 
 <summary>
 
-service\_token: object {token\_id }
+service\_token: object { token\_id }
 
 </summary>
 
@@ -9532,7 +9532,7 @@ The ID of a Service Token.
 
 <summary>
 
-AccessServiceTokenTagRule object {service\_token\_tag }
+AccessServiceTokenTagRule object { service\_token\_tag }
 
 Matches an Access service token with the specified tag key and value. Only compatible with non\_identity decisions.
 
@@ -9542,7 +9542,7 @@ Matches an Access service token with the specified tag key and value. Only compa
 
 <summary>
 
-service\_token\_tag: object {key, value }
+service\_token\_tag: object { key, value }
 
 </summary>
 
@@ -9578,7 +9578,7 @@ minLength1
 
 <summary>
 
-AccessLinkedAppTokenRule object {linked\_app\_token }
+AccessLinkedAppTokenRule object { linked\_app\_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non\_identity and bypass decisions.
 
@@ -9588,7 +9588,7 @@ Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS applica
 
 <summary>
 
-linked\_app\_token: object {app\_uid }
+linked\_app\_token: object { app\_uid }
 
 </summary>
 
@@ -9610,7 +9610,7 @@ The ID of an Access OIDC SaaS application
 
 <summary>
 
-AccessUserRiskScoreRule object {user\_risk\_score }
+AccessUserRiskScoreRule object { user\_risk\_score }
 
 Matches a user’s risk score.
 
@@ -9620,7 +9620,7 @@ Matches a user’s risk score.
 
 <summary>
 
-user\_risk\_score: object {user\_risk\_score }
+user\_risk\_score: object { user\_risk\_score }
 
 </summary>
 
@@ -9628,7 +9628,7 @@ user\_risk\_score: object {user\_risk\_score }
 
 <summary>
 
-user\_risk\_score: array of "low"or "medium"or "high"or "unscored"
+user\_risk\_score: array of "low" or "medium" or "high" or "unscored"
 
 A list of risk score levels to match. Values can be low, medium, high, or unscored.
 
@@ -9668,7 +9668,7 @@ One of the following:
 
 <summary>
 
-AccessCloudflareAccountMemberRule object {cloudflare\_account\_member }
+AccessCloudflareAccountMemberRule object { cloudflare\_account\_member }
 
 Matches users who are members of a specific Cloudflare account. Requires a Cloudflare identity provider.
 
@@ -9678,7 +9678,7 @@ Matches users who are members of a specific Cloudflare account. Requires a Cloud
 
 <summary>
 
-cloudflare\_account\_member: object {account\_id }
+cloudflare\_account\_member: object { account\_id }
 
 </summary>
 

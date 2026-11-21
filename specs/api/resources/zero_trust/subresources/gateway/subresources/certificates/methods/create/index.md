@@ -56,6 +56,10 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 </details>
 
+##### Accepted Permissions (at least one required)
+
+`Zero Trust Write`
+
 ##### P ath ParametersExpand Collapse
 
 account\_id: string
@@ -106,7 +110,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -148,7 +152,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -174,7 +178,7 @@ Indicate whether the API call was successful.
 
 <summary>
 
-result: optional object {id, binding\_status, certificate, 10 more }
+result: optional object { id, binding\_status, certificate, 10 more }
 
 </summary>
 
@@ -190,7 +194,7 @@ maxLength36
 
 <summary>
 
-binding\_status: optional "pending\_deployment"or "available"or "pending\_deletion"or "inactive"
+binding\_status: optional "pending\_deployment" or "available" or "pending\_deletion" or "inactive"
 
 Indicate the read-only deployment status of the certificate on Cloudflare’s edge. Gateway TLS interception can use certificates in the ‘available’ (previously called ‘active’) state.
 
@@ -270,7 +274,7 @@ Indicate the read-only Data Localization Suite region the certificate authority�
 
 <summary>
 
-type: optional "custom"or "gateway\_managed"
+type: optional "custom" or "gateway\_managed"
 
 Indicate the read-only certificate type, BYO-PKI (custom) or Gateway-managed.
 

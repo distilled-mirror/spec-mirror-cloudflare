@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`AI Gateway Write``AI Gateway Read`
+`AI Gateway Metadata Read``AI Search Index Engine``Auto Rag Write Run Engine``AI Gateway Write``AI Gateway Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -102,7 +102,7 @@ Search by id, name, slug
 
 <summary>
 
-result: array of object {id, base\_url, created\_at, 12 more }
+result: array of object { id, base\_url, created\_at, 12 more }
 
 </summary>
 

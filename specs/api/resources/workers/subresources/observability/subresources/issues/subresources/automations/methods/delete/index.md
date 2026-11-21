@@ -92,7 +92,7 @@ minLength1
 
 <summary>
 
-errors: array of object {message }
+errors: array of object { message }
 
 </summary>
 
@@ -108,7 +108,7 @@ message: string
 
 <summary>
 
-messages: array of object {message }
+messages: array of object { message }
 
 </summary>
 
@@ -124,7 +124,7 @@ message: "Successful request"
 
 <summary>
 
-result: object {automation }
+result: object { automation }
 
 </summary>
 
@@ -132,7 +132,7 @@ result: object {automation }
 
 <summary>
 
-automation: object {id, ansPolicyId, created, 12 more }
+automation: object { id, ansPolicyId, created, 12 more }
 
 </summary>
 
@@ -172,7 +172,7 @@ revision: number
 
 <summary>
 
-scope: "account"or "service"
+scope: "account" or "service"
 
 </summary>
 
@@ -206,7 +206,7 @@ threshold: number
 
 <summary>
 
-triggerType: "occurrence\_threshold"or "recurrence\_after\_inactivity"
+triggerType: "occurrence\_threshold" or "recurrence\_after\_inactivity"
 
 </summary>
 

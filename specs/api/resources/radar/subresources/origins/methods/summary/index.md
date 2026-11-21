@@ -64,7 +64,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 <summary>
 
-dimension: "ORIGIN"or "REGION"or "SUCCESS\_RATE"or "PERCENTILE"
+dimension: "ORIGIN" or "REGION" or "SUCCESS\_RATE" or "PERCENTILE"
 
 Specifies the origin attribute by which to group the results. <code>ORIGIN</code> groups across all providers and does not accept an <code>origin</code> or <code>region</code>. <code>REGION</code> requires an <code>origin</code>. <code>SUCCESS_RATE</code> and <code>PERCENTILE</code> require both an <code>origin</code> and a <code>region</code> and constrain the <code>metric</code> (<code>SUCCESS_RATE</code> supports only <code>REQUESTS</code>; <code>PERCENTILE</code> supports any metric except <code>REQUESTS</code>). <code>limitPerGroup</code> is only supported on the <code>REGION</code> dimension.
 
@@ -98,7 +98,7 @@ One of the following:
 
 <summary>
 
-metric: "CONNECTION\_FAILURES"or "REQUESTS"or "RESPONSE\_HEADER\_RECEIVE\_DURATION"or 3 more
+metric: "CONNECTION\_FAILURES" or "REQUESTS" or "RESPONSE\_HEADER\_RECEIVE\_DURATION" or 3 more
 
 Specifies the metric to retrieve. Allowed metrics depend on the selected dimension (see the <code>dimension</code> path parameter).
 
@@ -156,7 +156,7 @@ Start of the date range. Alternative to `dateRange`; provide together with `date
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -192,7 +192,7 @@ Array of names used to label the series in the response.
 
 <summary>
 
-origin: optional array of "AMAZON"or "GOOGLE"or "MICROSOFT"or "ORACLE"
+origin: optional array of "AMAZON" or "GOOGLE" or "MICROSOFT" or "ORACLE"
 
 Filters results by origin. Required for every dimension except <code>ORIGIN</code>; must not be set on the <code>ORIGIN</code> dimension, which groups across all providers.
 
@@ -232,7 +232,7 @@ Filters results by origin region. Requires `origin` to be set and is validated a
 
 <summary>
 
-result: object {meta, summary\_0 }
+result: object { meta, summary\_0 }
 
 </summary>
 
@@ -240,7 +240,7 @@ result: object {meta, summary\_0 }
 
 <summary>
 
-meta: object {confidenceInfo, dateRange, lastUpdated, 2 more }
+meta: object { confidenceInfo, dateRange, lastUpdated, 2 more }
 
 Metadata for the results.
 
@@ -250,7 +250,7 @@ Metadata for the results.
 
 <summary>
 
-confidenceInfo: object {annotations, level }
+confidenceInfo: object { annotations, level }
 
 </summary>
 
@@ -258,7 +258,7 @@ confidenceInfo: object {annotations, level }
 
 <summary>
 
-annotations: array of object {dataSource, description, endDate, 5 more }
+annotations: array of object { dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -266,7 +266,7 @@ annotations: array of object {dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
+dataSource: "ALL" or "AI\_BOTS" or "AI\_GATEWAY" or 22 more
 
 Data source for annotations.
 
@@ -392,7 +392,7 @@ formatdate-time
 
 <summary>
 
-eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
+eventType: "GENERAL" or "OUTAGE" or "PARTIAL\_PROJECTION" or 2 more
 
 Event type for annotations.
 
@@ -464,7 +464,7 @@ Provides an indication of how much confidence Cloudflare has in the data.
 
 <summary>
 
-dateRange: array of object {endTime, startTime }
+dateRange: array of object { endTime, startTime }
 
 </summary>
 
@@ -500,7 +500,7 @@ formatdate-time
 
 <summary>
 
-normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
+normalization: "PERCENTAGE" or "MIN0\_MAX" or "MIN\_MAX" or 5 more
 
 Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
@@ -548,7 +548,7 @@ One of the following:
 
 <summary>
 
-units: array of object {name, value }
+units: array of object { name, value }
 
 Measurement units for the results.
 

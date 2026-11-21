@@ -114,7 +114,7 @@ Device-specific ID, given as UUID.
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -136,7 +136,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -156,7 +156,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -178,7 +178,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -204,7 +204,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {deviceStats }
+result: optional object { deviceStats }
 
 </summary>
 
@@ -212,7 +212,7 @@ result: optional object {deviceStats }
 
 <summary>
 
-deviceStats: optional object {byMode, byStatus, uniqueDevicesTotal }
+deviceStats: optional object { byMode, byStatus, uniqueDevicesTotal }
 
 </summary>
 
@@ -220,7 +220,7 @@ deviceStats: optional object {byMode, byStatus, uniqueDevicesTotal }
 
 <summary>
 
-byMode: optional array of object {timestamp, uniqueDevicesTotal, value }
+byMode: optional array of object { timestamp, uniqueDevicesTotal, value }
 
 </summary>
 
@@ -246,7 +246,7 @@ value: optional string
 
 <summary>
 
-byStatus: optional array of object {timestamp, uniqueDevicesTotal, value }
+byStatus: optional array of object { timestamp, uniqueDevicesTotal, value }
 
 </summary>
 

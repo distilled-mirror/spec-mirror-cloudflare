@@ -32,7 +32,7 @@ GET/accounts/{account\_id}/cloudforce-one/events/indicator-types
 
 <summary>
 
-TypeListResponse object {items, type }
+TypeListResponse object { items, type }
 
 </summary>
 
@@ -40,7 +40,7 @@ TypeListResponse object {items, type }
 
 <summary>
 
-items: object {type }
+items: object { type }
 
 </summary>
 

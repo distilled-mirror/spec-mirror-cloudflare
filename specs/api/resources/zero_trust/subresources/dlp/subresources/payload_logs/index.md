@@ -38,7 +38,7 @@ PUT/accounts/{account\_id}/dlp/payload\_log
 
 <summary>
 
-PayloadLogGetResponse object {updated\_at, masking\_level, public\_key }
+PayloadLogGetResponse object { updated\_at, masking\_level, public\_key }
 
 </summary>
 
@@ -52,7 +52,7 @@ formatdate-time
 
 <summary>
 
-masking\_level: optional "full"or "partial"or "clear"or "default"
+masking\_level: optional "full" or "partial" or "clear" or "default"
 
 Masking level for payload logs.
 
@@ -99,7 +99,7 @@ Base64-encoded public key for encrypting payload logs. Null when payload logging
 
 <summary>
 
-PayloadLogUpdateResponse object {updated\_at, masking\_level, public\_key }
+PayloadLogUpdateResponse object { updated\_at, masking\_level, public\_key }
 
 </summary>
 
@@ -113,7 +113,7 @@ formatdate-time
 
 <summary>
 
-masking\_level: optional "full"or "partial"or "clear"or "default"
+masking\_level: optional "full" or "partial" or "clear" or "default"
 
 Masking level for payload logs.
 

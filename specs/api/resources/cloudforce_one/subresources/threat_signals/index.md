@@ -37,7 +37,7 @@ GET/accounts/{account\_id}/cloudforce-one/v2/threat-signals/search
 
 <summary>
 
-SearchSearchResponse object {count, results }
+SearchSearchResponse object { count, results }
 
 </summary>
 
@@ -53,7 +53,7 @@ minimum0
 
 <summary>
 
-results: array of object {article\_id, dataset\_id, event\_id, 3 more }
+results: array of object { article\_id, dataset\_id, event\_id, 3 more }
 
 </summary>
 
@@ -109,7 +109,7 @@ GET/accounts/{account\_id}/cloudforce-one/v2/threat-signals/categories
 
 <summary>
 
-CategoryListResponse object {categories }
+CategoryListResponse object { categories }
 
 </summary>
 
@@ -117,7 +117,7 @@ CategoryListResponse object {categories }
 
 <summary>
 
-categories: array of object {id, description, name }
+categories: array of object { id, description, name }
 
 </summary>
 
@@ -177,7 +177,7 @@ POST/accounts/{account\_id}/cloudforce-one/v2/threat-signals/feeds/poll
 
 <summary>
 
-FeedListResponse object {count, custom\_feed\_count, custom\_feed\_limit, 4 more }
+FeedListResponse object { count, custom\_feed\_count, custom\_feed\_limit, 4 more }
 
 </summary>
 
@@ -207,7 +207,7 @@ minimum0
 
 <summary>
 
-feeds: array of object {id, category\_id, category\_name, 13 more }
+feeds: array of object { id, category\_id, category\_name, 13 more }
 
 </summary>
 
@@ -313,7 +313,7 @@ total\_count: number
 
 <summary>
 
-FeedCreateResponse object {id, category\_id, category\_name, 13 more }
+FeedCreateResponse object { id, category\_id, category\_name, 13 more }
 
 </summary>
 
@@ -403,7 +403,7 @@ url: string
 
 <summary>
 
-FeedEditResponse object {id, category\_id, category\_name, 13 more }
+FeedEditResponse object { id, category\_id, category\_name, 13 more }
 
 </summary>
 
@@ -493,7 +493,7 @@ url: string
 
 <summary>
 
-FeedDeleteResponse object {id, category\_id, category\_name, 13 more }
+FeedDeleteResponse object { id, category\_id, category\_name, 13 more }
 
 </summary>
 
@@ -583,7 +583,7 @@ url: string
 
 <summary>
 
-FeedPollResponse object {errors, feeds, triggered }
+FeedPollResponse object { errors, feeds, triggered }
 
 </summary>
 
@@ -595,7 +595,7 @@ errors: number
 
 <summary>
 
-feeds: array of object {feed\_id, status, workflow\_id, feed\_enabled }
+feeds: array of object { feed\_id, status, workflow\_id, feed\_enabled }
 
 </summary>
 
@@ -609,7 +609,7 @@ formatuuid
 
 <summary>
 
-status: "workflow\_created"or "error"
+status: "workflow\_created" or "error"
 
 </summary>
 
@@ -675,7 +675,7 @@ PUT/accounts/{account\_id}/cloudforce-one/v2/threat-signals/feeds/{feed\_id}/ski
 
 <summary>
 
-SkillGetResponse object {feed\_id, skills }
+SkillGetResponse object { feed\_id, skills }
 
 </summary>
 
@@ -689,7 +689,7 @@ formatuuid
 
 <summary>
 
-skills: array of object {id, config, created\_at, 7 more }
+skills: array of object { id, config, created\_at, 7 more }
 
 </summary>
 
@@ -731,7 +731,7 @@ prompt: string
 
 <summary>
 
-source: "default"or "custom"
+source: "default" or "custom"
 
 <code>default</code> for Cloudforce One managed skills (read-only), <code>custom</code> for account skills.
 
@@ -771,7 +771,7 @@ updated\_at: string
 
 <summary>
 
-SkillUpdateResponse object {feed\_id, skills }
+SkillUpdateResponse object { feed\_id, skills }
 
 </summary>
 
@@ -785,7 +785,7 @@ formatuuid
 
 <summary>
 
-skills: array of object {position, skill\_id }
+skills: array of object { position, skill\_id }
 
 </summary>
 
@@ -831,7 +831,7 @@ PATCH/accounts/{account\_id}/cloudforce-one/v2/threat-signals/articles/{article\
 
 <summary>
 
-ArticleListResponse object {articles, has\_more, next\_cursor, 2 more }
+ArticleListResponse object { articles, has\_more, next\_cursor, 2 more }
 
 </summary>
 
@@ -839,7 +839,7 @@ ArticleListResponse object {articles, has\_more, next\_cursor, 2 more }
 
 <summary>
 
-articles: array of object {id, dataset\_id, event\_id, 13 more }
+articles: array of object { id, dataset\_id, event\_id, 13 more }
 
 </summary>
 
@@ -895,7 +895,7 @@ read\_at: string
 
 <summary>
 
-relevance: object {band, pir\_id, pirs }
+relevance: object { band, pir\_id, pirs }
 
 Beta. The article’s relevance to the account’s active Priority Intelligence Requirements. Null when the article has not been scored against them, including when the account has no active PIRs, or has not been scored against the requested pir\_id.
 
@@ -905,7 +905,7 @@ Beta. The article’s relevance to the account’s active Priority Intelligence 
 
 <summary>
 
-band: "low"or "medium"or "high"
+band: "low" or "medium" or "high"
 
 Beta. How relevant the article is to a Priority Intelligence Requirement: high, medium, or low. Cloudflare may change the scores behind each band as relevance scoring is calibrated.
 
@@ -941,7 +941,7 @@ formatuuid
 
 <summary>
 
-pirs: array of object {band, pir\_id, requirement\_basis }
+pirs: array of object { band, pir\_id, requirement\_basis }
 
 Beta. Every active PIR the article was scored against, most relevant first. Draft and deleted PIRs are excluded.
 
@@ -951,7 +951,7 @@ Beta. Every active PIR the article was scored against, most relevant first. Draf
 
 <summary>
 
-band: "low"or "medium"or "high"
+band: "low" or "medium" or "high"
 
 Beta. How relevant the article is to a Priority Intelligence Requirement: high, medium, or low. Cloudflare may change the scores behind each band as relevance scoring is calibrated.
 
@@ -985,7 +985,7 @@ formatuuid
 
 <summary>
 
-requirement\_basis: "current"or "saved"
+requirement\_basis: "current" or "saved"
 
 Beta. current: scored against the PIR’s current requirement. saved: the PIR’s structured definition no longer generates a valid requirement, for example because its topic was retired, so the requirement from its last save was scored instead.
 
@@ -1017,7 +1017,7 @@ One of the following:
 
 <summary>
 
-relevance\_coverage: "current"or "stale"or "pending"or "unavailable"
+relevance\_coverage: "current" or "stale" or "pending" or "unavailable"
 
 Beta. Whether relevance and severity reflect the account’s current Priority Intelligence Requirements, organization profile, and the article’s current content. current: they do. stale: they were scored before a change; articles fetched in the last 7 days are being rescored, older articles keep these scores. pending: not scored yet, fetched in the last 7 days. unavailable: not scored, and will not be scored automatically, because it was fetched more than 7 days ago or processing failed. Updates to managed topics can take up to a day to mark scores stale. Null when the account has no active PIRs or none of its articles has been scored yet.
 
@@ -1049,7 +1049,7 @@ One of the following:
 
 <summary>
 
-severity: "informational"or "low"or "medium"or 2 more
+severity: "informational" or "low" or "medium" or 2 more
 
 Beta. Intrinsic article severity band, from informational to critical, independent of any organisation or Priority Intelligence Requirement. Null when the account has no active Priority Intelligence Requirements, scoring has not completed, or a historic article has not entered an automatic rescore window.
 
@@ -1091,7 +1091,7 @@ Persisted enrichment summary. Null until enrichment produces a summary.
 
 <summary>
 
-tags: array of object {applied\_by, categoryId, uuid, value }
+tags: array of object { applied\_by, categoryId, uuid, value }
 
 </summary>
 
@@ -1099,7 +1099,7 @@ tags: array of object {applied\_by, categoryId, uuid, value }
 
 <summary>
 
-applied\_by: "ai"or "analyst"or "system"
+applied\_by: "ai" or "analyst" or "system"
 
 </summary>
 
@@ -1173,7 +1173,7 @@ total\_count\_is\_exact: boolean
 
 <summary>
 
-ArticleBulkEditResponse object {updated\_count }
+ArticleBulkEditResponse object { updated\_count }
 
 </summary>
 
@@ -1189,7 +1189,7 @@ updated\_count: number
 
 <summary>
 
-ArticleGetResponse object {id, bullet\_points, content\_r2\_key, 19 more }
+ArticleGetResponse object { id, bullet\_points, content\_r2\_key, 19 more }
 
 </summary>
 
@@ -1203,7 +1203,7 @@ formatuuid
 
 <summary>
 
-bullet\_points: object {impact, what\_happened, who\_affected }
+bullet\_points: object { impact, what\_happened, who\_affected }
 
 </summary>
 
@@ -1245,7 +1245,7 @@ fetched\_at: string
 
 <summary>
 
-indicator\_extraction\_status: "in\_progress"or "complete"or "failed"or "unknown"
+indicator\_extraction\_status: "in\_progress" or "complete" or "failed" or "unknown"
 
 Progress of the article’s indicator extraction and IOC contextualization run. complete and failed are terminal; unknown means no run has been recorded.
 
@@ -1297,7 +1297,7 @@ read\_at: string
 
 <summary>
 
-relevance: object {band, pir\_id, pirs }
+relevance: object { band, pir\_id, pirs }
 
 Beta. The article’s relevance to the account’s active Priority Intelligence Requirements. Null when the article has not been scored against them, including when the account has no active PIRs, or has not been scored against the requested pir\_id.
 
@@ -1307,7 +1307,7 @@ Beta. The article’s relevance to the account’s active Priority Intelligence 
 
 <summary>
 
-band: "low"or "medium"or "high"
+band: "low" or "medium" or "high"
 
 Beta. How relevant the article is to a Priority Intelligence Requirement: high, medium, or low. Cloudflare may change the scores behind each band as relevance scoring is calibrated.
 
@@ -1343,7 +1343,7 @@ formatuuid
 
 <summary>
 
-pirs: array of object {band, pir\_id, requirement\_basis }
+pirs: array of object { band, pir\_id, requirement\_basis }
 
 Beta. Every active PIR the article was scored against, most relevant first. Draft and deleted PIRs are excluded.
 
@@ -1353,7 +1353,7 @@ Beta. Every active PIR the article was scored against, most relevant first. Draf
 
 <summary>
 
-band: "low"or "medium"or "high"
+band: "low" or "medium" or "high"
 
 Beta. How relevant the article is to a Priority Intelligence Requirement: high, medium, or low. Cloudflare may change the scores behind each band as relevance scoring is calibrated.
 
@@ -1387,7 +1387,7 @@ formatuuid
 
 <summary>
 
-requirement\_basis: "current"or "saved"
+requirement\_basis: "current" or "saved"
 
 Beta. current: scored against the PIR’s current requirement. saved: the PIR’s structured definition no longer generates a valid requirement, for example because its topic was retired, so the requirement from its last save was scored instead.
 
@@ -1419,7 +1419,7 @@ One of the following:
 
 <summary>
 
-relevance\_coverage: "current"or "stale"or "pending"or "unavailable"
+relevance\_coverage: "current" or "stale" or "pending" or "unavailable"
 
 Beta. Whether relevance and severity reflect the account’s current Priority Intelligence Requirements, organization profile, and the article’s current content. current: they do. stale: they were scored before a change; articles fetched in the last 7 days are being rescored, older articles keep these scores. pending: not scored yet, fetched in the last 7 days. unavailable: not scored, and will not be scored automatically, because it was fetched more than 7 days ago or processing failed. Updates to managed topics can take up to a day to mark scores stale. Null when the account has no active PIRs or none of its articles has been scored yet.
 
@@ -1451,7 +1451,7 @@ One of the following:
 
 <summary>
 
-severity: "informational"or "low"or "medium"or 2 more
+severity: "informational" or "low" or "medium" or 2 more
 
 Beta. Intrinsic article severity band, from informational to critical, independent of any organisation or Priority Intelligence Requirement. Null when the account has no active Priority Intelligence Requirements, scoring has not completed, or a historic article has not entered an automatic rescore window.
 
@@ -1501,7 +1501,7 @@ summary\_r2\_key: string
 
 <summary>
 
-tags: array of object {applied\_by, categoryId, uuid, value }
+tags: array of object { applied\_by, categoryId, uuid, value }
 
 </summary>
 
@@ -1509,7 +1509,7 @@ tags: array of object {applied\_by, categoryId, uuid, value }
 
 <summary>
 
-applied\_by: "ai"or "analyst"or "system"
+applied\_by: "ai" or "analyst" or "system"
 
 </summary>
 
@@ -1571,7 +1571,7 @@ tag\_skill\_version: optional string
 
 <summary>
 
-ArticleEditResponse object {id, bullet\_points, content\_r2\_key, 17 more }
+ArticleEditResponse object { id, bullet\_points, content\_r2\_key, 17 more }
 
 </summary>
 
@@ -1585,7 +1585,7 @@ formatuuid
 
 <summary>
 
-bullet\_points: object {impact, what\_happened, who\_affected }
+bullet\_points: object { impact, what\_happened, who\_affected }
 
 </summary>
 
@@ -1627,7 +1627,7 @@ fetched\_at: string
 
 <summary>
 
-indicator\_extraction\_status: "in\_progress"or "complete"or "failed"or "unknown"
+indicator\_extraction\_status: "in\_progress" or "complete" or "failed" or "unknown"
 
 Progress of the article’s indicator extraction and IOC contextualization run. complete and failed are terminal; unknown means no run has been recorded.
 
@@ -1679,7 +1679,7 @@ read\_at: string
 
 <summary>
 
-severity: "informational"or "low"or "medium"or 2 more
+severity: "informational" or "low" or "medium" or 2 more
 
 Beta. Intrinsic article severity band, from informational to critical, independent of any organisation or Priority Intelligence Requirement. Null when the account has no active Priority Intelligence Requirements, scoring has not completed, or a historic article has not entered an automatic rescore window.
 
@@ -1729,7 +1729,7 @@ summary\_r2\_key: string
 
 <summary>
 
-tags: array of object {applied\_by, categoryId, uuid, value }
+tags: array of object { applied\_by, categoryId, uuid, value }
 
 </summary>
 
@@ -1737,7 +1737,7 @@ tags: array of object {applied\_by, categoryId, uuid, value }
 
 <summary>
 
-applied\_by: "ai"or "analyst"or "system"
+applied\_by: "ai" or "analyst" or "system"
 
 </summary>
 
@@ -1827,7 +1827,7 @@ POST/accounts/{account\_id}/cloudforce-one/v2/threat-signals/articles/{article\_
 
 <summary>
 
-TagCreateResponse object {applied\_by, categoryId, uuid, value }
+TagCreateResponse object { applied\_by, categoryId, uuid, value }
 
 </summary>
 
@@ -1835,7 +1835,7 @@ TagCreateResponse object {applied\_by, categoryId, uuid, value }
 
 <summary>
 
-applied\_by: "ai"or "analyst"or "system"
+applied\_by: "ai" or "analyst" or "system"
 
 </summary>
 
@@ -1881,7 +1881,7 @@ value: string
 
 <summary>
 
-TagDeleteResponse object {applied\_by, categoryId, uuid, value }
+TagDeleteResponse object { applied\_by, categoryId, uuid, value }
 
 </summary>
 
@@ -1889,7 +1889,7 @@ TagDeleteResponse object {applied\_by, categoryId, uuid, value }
 
 <summary>
 
-applied\_by: "ai"or "analyst"or "system"
+applied\_by: "ai" or "analyst" or "system"
 
 </summary>
 
@@ -1935,7 +1935,7 @@ value: string
 
 <summary>
 
-TagGenerateResponse object {tag\_skill\_version, tags }
+TagGenerateResponse object { tag\_skill\_version, tags }
 
 </summary>
 
@@ -1947,7 +1947,7 @@ tag\_skill\_version: string
 
 <summary>
 
-tags: array of object {applied\_by, categoryId, uuid, value }
+tags: array of object { applied\_by, categoryId, uuid, value }
 
 Final hydrated assignment set; may be empty when no applicable tags are selected.
 
@@ -1957,7 +1957,7 @@ Final hydrated assignment set; may be empty when no applicable tags are selected
 
 <summary>
 
-applied\_by: "ai"or "analyst"or "system"
+applied\_by: "ai" or "analyst" or "system"
 
 </summary>
 
@@ -2015,7 +2015,7 @@ GET/accounts/{account\_id}/cloudforce-one/v2/threat-signals/articles/{article\_i
 
 <summary>
 
-SkillOutputGetResponse object {article\_id, custom\_output, custom\_output\_parse\_status, 4 more }
+SkillOutputGetResponse object { article\_id, custom\_output, custom\_output\_parse\_status, 4 more }
 
 </summary>
 
@@ -2031,7 +2031,7 @@ formatuuid
 
 <summary>
 
-custom\_output: stringor numberor booleanor 2 more
+custom\_output: string or number or boolean or 2 more
 
 Untrusted model output: parsed JSON when the stored completion text is valid JSON, otherwise raw text. Consumers must safely render or escape it.
 
@@ -2059,7 +2059,7 @@ map\[unknown]
 
 <summary>
 
-array of stringor numberor booleanor map\[unknown]
+array of string or number or boolean or map\[unknown]
 
 </summary>
 
@@ -2093,7 +2093,7 @@ map\[unknown]
 
 <summary>
 
-custom\_output\_parse\_status: "parsed"or "invalid\_json"
+custom\_output\_parse\_status: "parsed" or "invalid\_json"
 
 Whether custom\_output was parsed from the stored completion text.
 
@@ -2117,7 +2117,7 @@ One of the following:
 
 <summary>
 
-custom\_output\_validation\_status: "valid"or "invalid\_json"or "schema\_invalid"or "unknown"
+custom\_output\_validation\_status: "valid" or "invalid\_json" or "schema\_invalid" or "unknown"
 
 Non-blocking validation classification for untrusted model output. <code>unknown</code> is retained only for historical rows.
 
@@ -2179,7 +2179,7 @@ GET/accounts/{account\_id}/cloudforce-one/v2/threat-signals/indicators
 
 <summary>
 
-IndicatorListResponse object {indicators, pagination }
+IndicatorListResponse object { indicators, pagination }
 
 </summary>
 
@@ -2187,7 +2187,7 @@ IndicatorListResponse object {indicators, pagination }
 
 <summary>
 
-indicators: array of object {id, article\_id, article\_title, 5 more }
+indicators: array of object { id, article\_id, article\_title, 5 more }
 
 </summary>
 
@@ -2239,7 +2239,7 @@ value: string
 
 <summary>
 
-pagination: object {count, cursor, has\_more, 4 more }
+pagination: object { count, cursor, has\_more, 4 more }
 
 </summary>
 
@@ -2319,7 +2319,7 @@ DELETE/accounts/{account\_id}/cloudforce-one/v2/threat-signals/skills/{skill\_id
 
 <summary>
 
-SkillListResponse object {count, custom\_skills\_available, page, 3 more }
+SkillListResponse object { count, custom\_skills\_available, page, 3 more }
 
 </summary>
 
@@ -2347,7 +2347,7 @@ per\_page: number
 
 <summary>
 
-skills: array of object {id, config, created\_at, 7 more }
+skills: array of object { id, config, created\_at, 7 more }
 
 </summary>
 
@@ -2389,7 +2389,7 @@ prompt: string
 
 <summary>
 
-source: "default"or "custom"
+source: "default" or "custom"
 
 <code>default</code> for Cloudforce One managed skills (read-only), <code>custom</code> for account skills.
 
@@ -2433,7 +2433,7 @@ total\_count: number
 
 <summary>
 
-SkillCreateResponse object {id, config, created\_at, 7 more }
+SkillCreateResponse object { id, config, created\_at, 7 more }
 
 </summary>
 
@@ -2475,7 +2475,7 @@ prompt: string
 
 <summary>
 
-source: "default"or "custom"
+source: "default" or "custom"
 
 <code>default</code> for Cloudforce One managed skills (read-only), <code>custom</code> for account skills.
 
@@ -2511,7 +2511,7 @@ updated\_at: string
 
 <summary>
 
-SkillGetResponse object {id, config, created\_at, 7 more }
+SkillGetResponse object { id, config, created\_at, 7 more }
 
 </summary>
 
@@ -2553,7 +2553,7 @@ prompt: string
 
 <summary>
 
-source: "default"or "custom"
+source: "default" or "custom"
 
 <code>default</code> for Cloudforce One managed skills (read-only), <code>custom</code> for account skills.
 
@@ -2589,7 +2589,7 @@ updated\_at: string
 
 <summary>
 
-SkillEditResponse object {id, config, created\_at, 7 more }
+SkillEditResponse object { id, config, created\_at, 7 more }
 
 </summary>
 
@@ -2631,7 +2631,7 @@ prompt: string
 
 <summary>
 
-source: "default"or "custom"
+source: "default" or "custom"
 
 <code>default</code> for Cloudforce One managed skills (read-only), <code>custom</code> for account skills.
 
@@ -2667,7 +2667,7 @@ updated\_at: string
 
 <summary>
 
-SkillDeleteResponse object {id, config, created\_at, 7 more }
+SkillDeleteResponse object { id, config, created\_at, 7 more }
 
 </summary>
 
@@ -2709,7 +2709,7 @@ prompt: string
 
 <summary>
 
-source: "default"or "custom"
+source: "default" or "custom"
 
 <code>default</code> for Cloudforce One managed skills (read-only), <code>custom</code> for account skills.
 
@@ -2757,7 +2757,7 @@ PUT/accounts/{account\_id}/cloudforce-one/v2/threat-signals/skills/{skill\_id}/t
 
 <summary>
 
-TagCategoryGetResponse object {category\_uuids, skill\_id }
+TagCategoryGetResponse object { category\_uuids, skill\_id }
 
 </summary>
 
@@ -2777,7 +2777,7 @@ skill\_id: "default-tagging-skill"
 
 <summary>
 
-TagCategoryUpdateResponse object {category\_uuids, skill\_id }
+TagCategoryUpdateResponse object { category\_uuids, skill\_id }
 
 </summary>
 

@@ -44,7 +44,7 @@ DELETE/accounts/{account\_id}/rum/site\_info/{site\_id}
 
 <summary>
 
-Site object {auto\_install, created, rules, 4 more }
+Site object { auto\_install, created, rules, 4 more }
 
 </summary>
 
@@ -118,7 +118,7 @@ priority: optional number
 
 <summary>
 
-ruleset: optional object {id, enabled, zone\_name, zone\_tag }
+ruleset: optional object { id, enabled, zone\_name, zone\_tag }
 
 </summary>
 
@@ -174,7 +174,7 @@ Encoded JavaScript snippet.
 
 <summary>
 
-SiteInfoDeleteResponse object {site\_tag }
+SiteInfoDeleteResponse object { site\_tag }
 
 </summary>
 

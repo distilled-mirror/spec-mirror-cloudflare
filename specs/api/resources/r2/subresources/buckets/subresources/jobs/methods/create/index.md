@@ -45,7 +45,7 @@ The preferred authorization scheme for interacting with the Cloudflare API. [Cre
 
 ##### Accepted Permissions (at least one required)
 
-`Workers R2 Storage Write`
+`Auto Rag Write Run Engine``Workers R2 Storage Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -77,7 +77,7 @@ minLength3
 
 <summary>
 
-"cf-r2-jurisdiction": optional "default"or "eu"or "us"or 2 more
+"cf-r2-jurisdiction": optional "default" or "eu" or "us" or 2 more
 
 </summary>
 
@@ -113,7 +113,7 @@ One of the following:
 
 <summary>
 
-body: object {jobType, prefix } or object {jobType, destinationStorageClass, sourceStorageClass }
+body: object { jobType, prefix } or object { jobType, destinationStorageClass, sourceStorageClass }
 
 Request body that creates a prefix-delete job.
 
@@ -125,7 +125,7 @@ One of the following:
 
 <summary>
 
-PrefixDelete object {jobType, prefix }
+PrefixDelete object { jobType, prefix }
 
 Request body that creates a prefix-delete job.
 
@@ -149,7 +149,7 @@ Prefix matched against object keys. A non-empty value must end in <code>/</code>
 
 <summary>
 
-StorageClassMigration object {jobType, destinationStorageClass, sourceStorageClass }
+StorageClassMigration object { jobType, destinationStorageClass, sourceStorageClass }
 
 Request body that creates a storage-class migration job.
 
@@ -163,7 +163,7 @@ jobType: "storageClassMigration"
 
 <summary>
 
-destinationStorageClass: optional "Standard"or "InfrequentAccess"
+destinationStorageClass: optional "Standard" or "InfrequentAccess"
 
 </summary>
 
@@ -185,7 +185,7 @@ One of the following:
 
 <summary>
 
-sourceStorageClass: optional "Standard"or "InfrequentAccess"
+sourceStorageClass: optional "Standard" or "InfrequentAccess"
 
 </summary>
 
@@ -239,7 +239,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -263,7 +263,7 @@ messages: array of string
 
 <summary>
 
-result: object {id, jobType, prefixDelete, 3 more } or object {id, jobType, startTime, 3 more }
+result: object { id, jobType, prefixDelete, 3 more } or object { id, jobType, startTime, 3 more }
 
 Descriptor of a bucket background job, discriminated by <code>jobType</code>. Returned by the Create Bucket Job, Get Bucket Job and List Bucket Jobs endpoints. A small operation can already be <code>COMPLETED</code> when it is returned.
 
@@ -275,7 +275,7 @@ One of the following:
 
 <summary>
 
-PrefixDelete object {id, jobType, prefixDelete, 3 more }
+PrefixDelete object { id, jobType, prefixDelete, 3 more }
 
 Descriptor of a prefix-delete job. An empty prefix indicates a job that empties the whole bucket.
 
@@ -297,7 +297,7 @@ The job kind.
 
 <summary>
 
-prefixDelete: object {deletedObjects, prefix, isBucketClear }
+prefixDelete: object { deletedObjects, prefix, isBucketClear }
 
 Details specific to the prefix-delete job.
 
@@ -337,7 +337,7 @@ formatdate-time
 
 <summary>
 
-status: "ENQUEUED"or "RUNNING"or "COMPLETED"or 2 more
+status: "ENQUEUED" or "RUNNING" or "COMPLETED" or 2 more
 
 Lifecycle status of a bucket background job.
 
@@ -385,7 +385,7 @@ formatdate-time
 
 <summary>
 
-StorageClassMigration object {id, jobType, startTime, 3 more }
+StorageClassMigration object { id, jobType, startTime, 3 more }
 
 Descriptor of a bucket-wide storage-class migration job.
 
@@ -415,7 +415,7 @@ formatdate-time
 
 <summary>
 
-status: "ENQUEUED"or "RUNNING"or "COMPLETED"or 2 more
+status: "ENQUEUED" or "RUNNING" or "COMPLETED" or 2 more
 
 Lifecycle status of a bucket background job.
 
@@ -451,7 +451,7 @@ One of the following:
 
 <summary>
 
-storageClassMigration: object {destinationStorageClass, migratedObjects, sourceStorageClass, 6 more }
+storageClassMigration: object { destinationStorageClass, migratedObjects, sourceStorageClass, 6 more }
 
 </summary>
 
@@ -459,7 +459,7 @@ storageClassMigration: object {destinationStorageClass, migratedObjects, sourceS
 
 <summary>
 
-destinationStorageClass: "Standard"or "InfrequentAccess"
+destinationStorageClass: "Standard" or "InfrequentAccess"
 
 The storage class objects are migrated to. The source and destination storage classes always differ.
 
@@ -491,7 +491,7 @@ minimum0
 
 <summary>
 
-sourceStorageClass: "Standard"or "InfrequentAccess"
+sourceStorageClass: "Standard" or "InfrequentAccess"
 
 The storage class objects are migrated from.
 

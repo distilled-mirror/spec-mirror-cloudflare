@@ -90,7 +90,7 @@ Maximum number of results requested.
 
 <summary>
 
-start\_end\_params: optional object {end, start }
+start\_end\_params: optional object { end, start }
 
 </summary>
 
@@ -120,7 +120,7 @@ formatdate
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -142,7 +142,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -162,7 +162,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -184,7 +184,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -236,7 +236,7 @@ Number of results per page of results.
 
 <summary>
 
-reverse\_records: optional array of object {first\_seen, hostname, last\_seen }
+reverse\_records: optional array of object { first\_seen, hostname, last\_seen }
 
 Reverse DNS look-ups observed during the time period.
 
@@ -276,7 +276,7 @@ formatdate
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object { count, page, per\_page, total\_count }
 
 </summary>
 
@@ -350,9 +350,9 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/intel/dns \
     "per_page": 20,
     "reverse_records": [
       {
-        "first_seen": "2021-04-01",
+        "first_seen": "2019-12-27",
         "hostname": "hostname",
-        "last_seen": "2021-04-30"
+        "last_seen": "2019-12-27"
       }
     ]
   },
@@ -398,9 +398,9 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/intel/dns \
     "per_page": 20,
     "reverse_records": [
       {
-        "first_seen": "2021-04-01",
+        "first_seen": "2019-12-27",
         "hostname": "hostname",
-        "last_seen": "2021-04-30"
+        "last_seen": "2019-12-27"
       }
     ]
   },

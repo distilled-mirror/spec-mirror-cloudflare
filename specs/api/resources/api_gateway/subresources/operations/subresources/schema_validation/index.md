@@ -44,7 +44,7 @@ PATCH/zones/{zone\_id}/api\_gateway/operations/schema\_validation
 
 <summary>
 
-SettingsMultipleRequest = map\[object {mitigation\_action } ]
+SettingsMultipleRequest = map\[object { mitigation\_action } ]
 
 </summary>
 
@@ -52,7 +52,7 @@ SettingsMultipleRequest = map\[object {mitigation\_action } ]
 
 <summary>
 
-mitigation\_action: optional "log"or "block"or "none"
+mitigation\_action: optional "log" or "block" or "none"
 
 When set, this applies a mitigation action to this operation
 
@@ -89,7 +89,7 @@ One of the following:
 
 <summary>
 
-SchemaValidationGetResponse object {mitigation\_action, operation\_id }
+SchemaValidationGetResponse object { mitigation\_action, operation\_id }
 
 </summary>
 
@@ -97,7 +97,7 @@ SchemaValidationGetResponse object {mitigation\_action, operation\_id }
 
 <summary>
 
-mitigation\_action: optional "log"or "block"or "none"
+mitigation\_action: optional "log" or "block" or "none"
 
 When set, this applies a mitigation action to this operation
 
@@ -144,7 +144,7 @@ minLength36
 
 <summary>
 
-SchemaValidationUpdateResponse object {mitigation\_action, operation\_id }
+SchemaValidationUpdateResponse object { mitigation\_action, operation\_id }
 
 </summary>
 
@@ -152,7 +152,7 @@ SchemaValidationUpdateResponse object {mitigation\_action, operation\_id }
 
 <summary>
 
-mitigation\_action: optional "log"or "block"or "none"
+mitigation\_action: optional "log" or "block" or "none"
 
 When set, this applies a mitigation action to this operation
 

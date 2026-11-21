@@ -118,7 +118,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -160,7 +160,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -180,7 +180,7 @@ pointer: optional string
 
 <summary>
 
-result: object {validated\_addresses }
+result: object { validated\_addresses }
 
 </summary>
 
@@ -188,7 +188,7 @@ result: object {validated\_addresses }
 
 <summary>
 
-validated\_addresses: optional array of object {address, address2, city, 4 more }
+validated\_addresses: optional array of object { address, address2, city, 4 more }
 
 List of validated address suggestions.
 

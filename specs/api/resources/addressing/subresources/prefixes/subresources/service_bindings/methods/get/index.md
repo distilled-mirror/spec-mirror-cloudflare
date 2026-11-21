@@ -92,7 +92,7 @@ maxLength32
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -114,7 +114,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -134,7 +134,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -156,7 +156,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -204,7 +204,7 @@ IP Prefix in Classless Inter-Domain Routing format.
 
 <summary>
 
-provisioning: optional object {state }
+provisioning: optional object { state }
 
 Status of a Service Binding’s deployment to the Cloudflare network
 
@@ -214,7 +214,7 @@ Status of a Service Binding’s deployment to the Cloudflare network
 
 <summary>
 
-state: optional "provisioning"or "active"or "magic\_transit\_route\_missing"
+state: optional "provisioning" or "active" or "magic\_transit\_route\_missing"
 
 When a binding has been deployed to a majority of Cloudflare datacenters, the binding will become active and can be used with its associated service.
 

@@ -30,7 +30,7 @@ GET/accounts/{account\_id}/dns\_records/usage
 
 <summary>
 
-AccountGetResponse object {record\_quota, record\_usage, internal\_record\_quota, internal\_record\_usage }
+AccountGetResponse object { record\_quota, record\_usage, internal\_record\_quota, internal\_record\_usage }
 
 </summary>
 

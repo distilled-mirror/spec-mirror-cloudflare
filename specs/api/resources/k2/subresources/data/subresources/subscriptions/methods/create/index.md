@@ -46,7 +46,7 @@ Specifies the name of the subscription. Creating a subscription with an existing
 
 <summary>
 
-start\_at: object {type }
+start\_at: object { type }
 
 </summary>
 
@@ -54,7 +54,7 @@ start\_at: object {type }
 
 <summary>
 
-type: "earliest"or "latest"
+type: "earliest" or "latest"
 
 Starts at the oldest retained record or at the end of the stream.
 
@@ -84,7 +84,7 @@ One of the following:
 
 <summary>
 
-errors: array of object {message, code }
+errors: array of object { message, code }
 
 </summary>
 
@@ -104,7 +104,7 @@ code: optional number
 
 <summary>
 
-messages: array of object {message, code }
+messages: array of object { message, code }
 
 </summary>
 
@@ -124,7 +124,7 @@ code: optional number
 
 <summary>
 
-result: object {id }
+result: object { id }
 
 </summary>
 

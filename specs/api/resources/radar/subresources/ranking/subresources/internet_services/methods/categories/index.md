@@ -72,7 +72,7 @@ Filters results by the specified array of dates.
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -110,7 +110,7 @@ Array of names used to label the series in the response.
 
 <summary>
 
-result: object {categories\_0 }
+result: object { categories\_0 }
 
 </summary>
 
@@ -118,7 +118,7 @@ result: object {categories\_0 }
 
 <summary>
 
-categories\_0: array of object {name }
+categories\_0: array of object { name }
 
 </summary>
 

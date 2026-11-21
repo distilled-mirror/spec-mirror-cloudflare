@@ -74,7 +74,7 @@ maxLength32
 
 <summary>
 
-frequency: optional "weekly"or "monthly"or "quarterly"or "yearly"
+frequency: optional "weekly" or "monthly" or "quarterly" or "yearly"
 
 How often the subscription is renewed automatically.
 
@@ -116,7 +116,7 @@ The rate plan applied to the subscription.
 
 <summary>
 
-id: optional "free"or "lite"or "pro"or 7 moreor string
+id: optional "free" or "lite" or "pro" or 7 more or string
 
 The ID of the rate plan.
 
@@ -128,7 +128,7 @@ One of the following:
 
 <summary>
 
-"free"or "lite"or "pro"or 7 more
+"free" or "lite" or "pro" or 7 more
 
 The ID of the rate plan.
 
@@ -256,7 +256,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -298,7 +298,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -318,7 +318,7 @@ pointer: optional string
 
 <summary>
 
-result: unknownor string
+result: unknown or string
 
 </summary>
 

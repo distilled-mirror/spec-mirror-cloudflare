@@ -84,7 +84,7 @@ The optional ID of a Stream signing key. If present, the `pem` field is also req
 
 <summary>
 
-accessRules: optional array of object {action, country, ip, type }
+accessRules: optional array of object { action, country, ip, type }
 
 The optional list of access rule constraints on the token. Access can be blocked or allowed based on an IP, IP range, or by country. Access rules are evaluated from first to last. If a rule matches, the associated action is applied and no further rules are evaluated.
 
@@ -94,7 +94,7 @@ The optional list of access rule constraints on the token. Access can be blocked
 
 <summary>
 
-action: optional "allow"or "block"
+action: optional "allow" or "block"
 
 The action to take when a request matches a rule. If the action is <code>block</code>, the signed token blocks views for viewers matching the rule.
 
@@ -130,7 +130,7 @@ An array of IPv4 or IPV6 addresses or CIDRs used to match requests.
 
 <summary>
 
-type: optional "any"or "ip.src"or "ip.geoip.country"
+type: optional "any" or "ip.src" or "ip.geoip.country"
 
 Lists available rule types to match for requests. An <code>any</code> type matches all requests and can be used as a wildcard to apply default actions after other rules.
 
@@ -174,7 +174,7 @@ The optional unix epoch timestamp that specficies the time after a token is not 
 
 <summary>
 
-flags: optional object {original }
+flags: optional object { original }
 
 Optional flags for the signed token.
 
@@ -208,7 +208,7 @@ The optional base64 encoded private key in PEM format associated with a Stream s
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -230,7 +230,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -250,7 +250,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -272,7 +272,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -298,7 +298,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {token }
+result: optional object { token }
 
 </summary>
 

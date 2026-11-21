@@ -32,7 +32,7 @@ GET/accounts/{account\_id}/zt\_risk\_scoring/integrations/reference\_id/{referen
 
 <summary>
 
-ReferenceGetResponse object {id, account\_tag, active, 5 more }
+ReferenceGetResponse object { id, account\_tag, active, 5 more }
 
 </summary>
 

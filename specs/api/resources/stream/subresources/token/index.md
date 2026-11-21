@@ -28,7 +28,7 @@ POST/accounts/{account\_id}/stream/{identifier}/token
 
 <summary>
 
-TokenCreateResponse object {token }
+TokenCreateResponse object { token }
 
 </summary>
 

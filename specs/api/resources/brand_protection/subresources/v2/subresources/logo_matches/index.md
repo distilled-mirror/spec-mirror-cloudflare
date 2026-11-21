@@ -30,7 +30,7 @@ GET/accounts/{account\_id}/cloudforce-one/v2/brand-protection/logo/matches
 
 <summary>
 
-LogoMatchGetResponse object {matches, total }
+LogoMatchGetResponse object { matches, total }
 
 </summary>
 
@@ -38,7 +38,7 @@ LogoMatchGetResponse object {matches, total }
 
 <summary>
 
-matches: array of object {id, domain, matched\_at, 6 more }
+matches: array of object { id, domain, matched\_at, 6 more }
 
 </summary>
 

@@ -70,7 +70,7 @@ minLength1
 
 <summary>
 
-errors: array of object {message, code }
+errors: array of object { message, code }
 
 </summary>
 
@@ -90,7 +90,7 @@ code: optional number
 
 <summary>
 
-messages: array of object {message, code }
+messages: array of object { message, code }
 
 </summary>
 
@@ -110,7 +110,7 @@ code: optional number
 
 <summary>
 
-result: object {batch\_id, leased\_until\_ms, records }
+result: object { batch\_id, leased\_until\_ms, records }
 
 </summary>
 
@@ -130,7 +130,7 @@ Shows when the lease on the batch expires, in epoch milliseconds. ACK or NACK th
 
 <summary>
 
-records: array of object {content, timestamp\_ms, headers }
+records: array of object { content, timestamp\_ms, headers }
 
 </summary>
 

@@ -94,7 +94,7 @@ minimum1
 
 <summary>
 
-result: array of object {id, alias, default\_config, 8 more }
+result: array of object { id, alias, default\_config, 8 more }
 
 </summary>
 

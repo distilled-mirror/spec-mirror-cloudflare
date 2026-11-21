@@ -30,7 +30,7 @@ GET/accounts/{account\_id}/dex/colos
 
 <summary>
 
-ColoListResponse object {airportCode, city, countryCode }
+ColoListResponse object { airportCode, city, countryCode }
 
 </summary>
 

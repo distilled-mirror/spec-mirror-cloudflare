@@ -34,7 +34,7 @@ PATCH/zones/{zone\_id}/ct/alerting
 
 <summary>
 
-CTAlertingSubscription object {enabled, emails }
+CTAlertingSubscription object { enabled, emails }
 
 Certificate Transparency alerting subscription settings for a zone.
 

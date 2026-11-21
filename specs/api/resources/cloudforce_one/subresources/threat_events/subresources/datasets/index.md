@@ -52,7 +52,7 @@ GET/accounts/{account\_id}/cloudforce-one/events/raw/{dataset\_id}/{event\_id}
 
 <summary>
 
-DatasetListResponse = array of object {indicatorWriteMode, isAnalytics, isPublic, 3 more }
+DatasetListResponse = array of object { indicatorWriteMode, isAnalytics, isPublic, 3 more }
 
 </summary>
 
@@ -60,7 +60,7 @@ DatasetListResponse = array of object {indicatorWriteMode, isAnalytics, isPublic
 
 <summary>
 
-indicatorWriteMode: "read\_only"or "create\_only"or "full"
+indicatorWriteMode: "read\_only" or "create\_only" or "full"
 
 Effective indicator mutation capability after account/dataset authorization and dataset storage capability are applied. API Gateway method permissions are separate and must also allow the requested operation.
 
@@ -112,7 +112,7 @@ deletedAt: optional string
 
 <summary>
 
-DatasetGetResponse object {isAnalytics, isPublic, name, uuid }
+DatasetGetResponse object { isAnalytics, isPublic, name, uuid }
 
 </summary>
 
@@ -140,7 +140,7 @@ uuid: string
 
 <summary>
 
-DatasetCreateResponse object {isAnalytics, isPublic, name, uuid }
+DatasetCreateResponse object { isAnalytics, isPublic, name, uuid }
 
 </summary>
 
@@ -168,7 +168,7 @@ uuid: string
 
 <summary>
 
-DatasetEditResponse object {isAnalytics, isPublic, name, uuid }
+DatasetEditResponse object { isAnalytics, isPublic, name, uuid }
 
 </summary>
 
@@ -196,7 +196,7 @@ uuid: string
 
 <summary>
 
-DatasetDeleteResponse object {name, uuid }
+DatasetDeleteResponse object { name, uuid }
 
 </summary>
 
@@ -216,7 +216,7 @@ uuid: string
 
 <summary>
 
-DatasetRawResponse object {id, accountId, created, 3 more }
+DatasetRawResponse object { id, accountId, created, 3 more }
 
 </summary>
 
@@ -262,7 +262,7 @@ GET/accounts/{account\_id}/cloudforce-one/events/dataset/{dataset\_id}/events/{e
 
 <summary>
 
-EventGetResponse object {attacker, attackerCountry, attackerCountryAlpha3, 26 more }
+EventGetResponse object { attacker, attackerCountry, attackerCountryAlpha3, 26 more }
 
 </summary>
 

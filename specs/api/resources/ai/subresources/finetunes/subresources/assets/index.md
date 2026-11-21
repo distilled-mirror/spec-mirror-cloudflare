@@ -30,7 +30,7 @@ POST/accounts/{account\_id}/ai/finetunes/{finetune\_id}/finetune-assets
 
 <summary>
 
-AssetCreateResponse object {success }
+AssetCreateResponse object { success }
 
 </summary>
 

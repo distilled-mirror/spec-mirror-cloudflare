@@ -60,7 +60,7 @@ The ID of the resource to remove tags from.
 
 <summary>
 
-resource\_type: "access\_application\_policy"or "api\_gateway\_operation"or "custom\_certificate"or 8 more
+resource\_type: "access\_application\_policy" or "api\_gateway\_operation" or "custom\_certificate" or 8 more
 
 The type of the resource.
 

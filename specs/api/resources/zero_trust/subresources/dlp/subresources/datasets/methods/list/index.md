@@ -72,7 +72,7 @@ account\_id: string
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -94,7 +94,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -114,7 +114,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -136,7 +136,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -176,7 +176,7 @@ formatuuid
 
 <summary>
 
-columns: array of object {entry\_id, header\_name, num\_cells, upload\_status }
+columns: array of object { entry\_id, header\_name, num\_cells, upload\_status }
 
 </summary>
 
@@ -200,7 +200,7 @@ formatint64
 
 <summary>
 
-upload\_status: "empty"or "uploading"or "pending"or 3 more
+upload\_status: "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -270,7 +270,7 @@ secret: boolean
 
 <summary>
 
-status: "empty"or "uploading"or "pending"or 3 more
+status: "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -318,7 +318,7 @@ formatdate-time
 
 <summary>
 
-uploads: array of object {num\_cells, status, version }
+uploads: array of object { num\_cells, status, version }
 
 </summary>
 
@@ -332,7 +332,7 @@ formatint64
 
 <summary>
 
-status: "empty"or "uploading"or "pending"or 3 more
+status: "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 

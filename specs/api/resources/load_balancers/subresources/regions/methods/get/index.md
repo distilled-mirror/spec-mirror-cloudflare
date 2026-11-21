@@ -72,7 +72,7 @@ maxLength32
 
 <summary>
 
-region\_id: "WNAM"or "ENAM"or "WEU"or 10 more
+region\_id: "WNAM" or "ENAM" or "WEU" or 10 more
 
 A list of Cloudflare regions. WNAM: Western North America, ENAM: Eastern North America, WEU: Western Europe, EEU: Eastern Europe, NSAM: Northern South America, SSAM: Southern South America, OC: Oceania, ME: Middle East, NAF: North Africa, SAF: South Africa, SAS: Southern Asia, SEAS: South East Asia, NEAS: North East Asia).
 
@@ -164,7 +164,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -206,7 +206,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -226,7 +226,7 @@ pointer: optional string
 
 <summary>
 
-result: unknownor string
+result: unknown or string
 
 A list of countries and subdivisions mapped to a region.
 

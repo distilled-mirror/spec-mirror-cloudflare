@@ -56,6 +56,10 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 </details>
 
+##### Accepted Permissions (at least one required)
+
+`Intel Write`
+
 ##### P ath ParametersExpand Collapse
 
 account\_id: string
@@ -84,7 +88,7 @@ Content category IDs to remove.
 
 <summary>
 
-indicator\_type: optional "domain"or "ipv4"or "ipv6"or "url"
+indicator\_type: optional "domain" or "ipv4" or "ipv6" or "url"
 
 </summary>
 
@@ -140,7 +144,7 @@ Provide only if indicator\_type is `domain` or `url`. Example if indicator\_type
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -162,7 +166,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -182,7 +186,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -204,7 +208,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 

@@ -34,7 +34,7 @@ PUT/accounts/{account\_id}/workers/scripts/{script\_name}/schedules
 
 <summary>
 
-ScheduleGetResponse object {schedules }
+ScheduleGetResponse object { schedules }
 
 </summary>
 
@@ -42,7 +42,7 @@ ScheduleGetResponse object {schedules }
 
 <summary>
 
-schedules: array of object {cron, created\_on, modified\_on }
+schedules: array of object { cron, created\_on, modified\_on }
 
 </summary>
 
@@ -70,7 +70,7 @@ modified\_on: optional string
 
 <summary>
 
-ScheduleUpdateResponse object {schedules }
+ScheduleUpdateResponse object { schedules }
 
 </summary>
 
@@ -78,7 +78,7 @@ ScheduleUpdateResponse object {schedules }
 
 <summary>
 
-schedules: array of object {cron, created\_on, modified\_on }
+schedules: array of object { cron, created\_on, modified\_on }
 
 </summary>
 

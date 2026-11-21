@@ -34,7 +34,7 @@ PUT/zones/{zone\_id}/cache/origin\_post\_quantum\_encryption
 
 <summary>
 
-OriginPostQuantumEncryptionGetResponse object {id, editable, value, modified\_on }
+OriginPostQuantumEncryptionGetResponse object { id, editable, value, modified\_on }
 
 </summary>
 
@@ -54,7 +54,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: "preferred"or "supported"or "off"
+value: "preferred" or "supported" or "off"
 
 Value of the Origin Post Quantum Encryption Setting.
 
@@ -94,7 +94,7 @@ formatdate-time
 
 <summary>
 
-OriginPostQuantumEncryptionUpdateResponse object {id, editable, value, modified\_on }
+OriginPostQuantumEncryptionUpdateResponse object { id, editable, value, modified\_on }
 
 </summary>
 
@@ -114,7 +114,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: "preferred"or "supported"or "off"
+value: "preferred" or "supported" or "off"
 
 Value of the Origin Post Quantum Encryption Setting.
 

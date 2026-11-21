@@ -62,7 +62,7 @@ formatuuid
 
 <summary>
 
-items: object {type }
+items: object { type }
 
 </summary>
 

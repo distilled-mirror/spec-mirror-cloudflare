@@ -74,7 +74,7 @@ account\_id: string
 
 <summary>
 
-body: object {amount, threshold } or object {amount, consent\_version, payment\_method\_id, 4 more }
+body: object { amount, threshold } or object { amount, consent\_version, payment\_method\_id, 4 more }
 
 </summary>
 
@@ -84,7 +84,7 @@ One of the following:
 
 <summary>
 
-object {amount, threshold }
+object { amount, threshold }
 
 </summary>
 
@@ -112,7 +112,7 @@ minimum500
 
 <summary>
 
-object {amount, consent\_version, payment\_method\_id, 4 more }
+object { amount, consent\_version, payment\_method\_id, 4 more }
 
 </summary>
 
@@ -182,7 +182,7 @@ Successfully confirmed payment-method setup identifier.
 
 <summary>
 
-errors: array of object {code, message }
+errors: array of object { code, message }
 
 </summary>
 
@@ -202,7 +202,7 @@ message: string
 
 <summary>
 
-messages: array of object {code, message }
+messages: array of object { code, message }
 
 </summary>
 
@@ -222,7 +222,7 @@ message: string
 
 <summary>
 
-result: object {amount, threshold } or object {amount, status, threshold } or object {amount, client\_secret, setup\_intent\_id, 2 more }
+result: object { amount, threshold } or object { amount, status, threshold } or object { amount, client\_secret, setup\_intent\_id, 2 more }
 
 </summary>
 
@@ -232,7 +232,7 @@ One of the following:
 
 <summary>
 
-object {amount, threshold }
+object { amount, threshold }
 
 </summary>
 
@@ -256,7 +256,7 @@ Balance threshold in cents from the request.
 
 <summary>
 
-object {amount, status, threshold }
+object { amount, status, threshold }
 
 </summary>
 
@@ -286,7 +286,7 @@ Balance threshold in cents from the request.
 
 <summary>
 
-object {amount, client\_secret, setup\_intent\_id, 2 more }
+object { amount, client\_secret, setup\_intent\_id, 2 more }
 
 </summary>
 
@@ -336,7 +336,7 @@ success: true
 
 <summary>
 
-result\_info: optional object {has\_more, page, per\_page, total\_count }
+result\_info: optional object { has\_more, page, per\_page, total\_count }
 
 </summary>
 

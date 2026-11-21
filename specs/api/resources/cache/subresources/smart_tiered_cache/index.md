@@ -40,7 +40,7 @@ DELETE/zones/{zone\_id}/cache/tiered\_cache\_smart\_topology\_enable
 
 <summary>
 
-SmartTieredCacheGetResponse object {id, editable, value, modified\_on }
+SmartTieredCacheGetResponse object { id, editable, value, modified\_on }
 
 </summary>
 
@@ -60,7 +60,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: "on"or "off"
+value: "on" or "off"
 
 Value of the Smart Tiered Cache zone setting.
 
@@ -96,7 +96,7 @@ formatdate-time
 
 <summary>
 
-SmartTieredCacheCreateResponse object {id, editable, value, modified\_on }
+SmartTieredCacheCreateResponse object { id, editable, value, modified\_on }
 
 </summary>
 
@@ -116,7 +116,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: "on"or "off"
+value: "on" or "off"
 
 Value of the Smart Tiered Cache zone setting.
 
@@ -152,7 +152,7 @@ formatdate-time
 
 <summary>
 
-SmartTieredCacheEditResponse object {id, editable, value, modified\_on }
+SmartTieredCacheEditResponse object { id, editable, value, modified\_on }
 
 </summary>
 
@@ -172,7 +172,7 @@ Whether the setting is editable.
 
 <summary>
 
-value: "on"or "off"
+value: "on" or "off"
 
 Value of the Smart Tiered Cache zone setting.
 
@@ -208,7 +208,7 @@ formatdate-time
 
 <summary>
 
-SmartTieredCacheDeleteResponse object {id, editable, modified\_on }
+SmartTieredCacheDeleteResponse object { id, editable, modified\_on }
 
 </summary>
 

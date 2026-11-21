@@ -34,7 +34,7 @@ DELETE/accounts/{account\_id}/field\_extractors/{extractor}
 
 <summary>
 
-FieldExtractorGetResponse object {extractor, rules }
+FieldExtractorGetResponse object { extractor, rules }
 
 </summary>
 
@@ -48,7 +48,7 @@ Extractor type.
 
 <summary>
 
-rules: array of object {fields, ref, description }
+rules: array of object { fields, ref, description }
 
 </summary>
 
@@ -56,7 +56,7 @@ rules: array of object {fields, ref, description }
 
 <summary>
 
-fields: array of object {expression, name }
+fields: array of object { expression, name }
 
 </summary>
 
@@ -100,7 +100,7 @@ Human-readable rule description.
 
 <summary>
 
-FieldExtractorUpdateResponse object {extractor, rules }
+FieldExtractorUpdateResponse object { extractor, rules }
 
 </summary>
 
@@ -114,7 +114,7 @@ Extractor type.
 
 <summary>
 
-rules: array of object {fields, ref, description }
+rules: array of object { fields, ref, description }
 
 </summary>
 
@@ -122,7 +122,7 @@ rules: array of object {fields, ref, description }
 
 <summary>
 
-fields: array of object {expression, name }
+fields: array of object { expression, name }
 
 </summary>
 

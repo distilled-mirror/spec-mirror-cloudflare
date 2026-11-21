@@ -54,6 +54,10 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 </details>
 
+##### Accepted Permissions (at least one required)
+
+`AI Search Write``Auto Rag Write`
+
 ##### P ath ParametersExpand Collapse
 
 account\_id: string

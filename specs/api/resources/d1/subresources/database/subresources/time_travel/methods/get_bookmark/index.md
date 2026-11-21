@@ -58,7 +58,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`D1 Read``D1 Write`
+`D1 Metadata Read``AI Search Index Engine``D1 Read``D1 Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -114,7 +114,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -156,7 +156,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -176,7 +176,7 @@ pointer: optional string
 
 <summary>
 
-result: object {bookmark }
+result: object { bookmark }
 
 </summary>
 

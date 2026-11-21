@@ -40,7 +40,7 @@ PATCH/accounts/{account\_id}/registrar-sandbox/registrations/{domain\_name}
 
 <summary>
 
-RegistrationCreateResponse object {completed, created\_at, links, 4 more }
+RegistrationCreateResponse object { completed, created\_at, links, 4 more }
 
 Status of an async registration workflow.
 
@@ -62,7 +62,7 @@ formatdate-time
 
 <summary>
 
-links: object {self, resource }
+links: object { self, resource }
 
 </summary>
 
@@ -86,7 +86,7 @@ URL to the domain resource.
 
 <summary>
 
-state: "pending"or "in\_progress"or "action\_required"or 3 more
+state: "pending" or "in\_progress" or "action\_required" or 3 more
 
 Describes the workflow lifecycle state.
 
@@ -147,7 +147,7 @@ For domain-centric workflows, <code>context.domain_name</code> identifies the wo
 
 <summary>
 
-error: optional object {code, message }
+error: optional object { code, message }
 
 Provides error details when a workflow reaches the <code>failed</code> state. The workflow type (registration, update, etc.) and underlying registry response determine the specific codes and messages. Workflow error codes differ from immediate HTTP error <code>errors[].code</code> values in non-2xx responses. Surface <code>error.message</code> to the user for context.
 
@@ -177,7 +177,7 @@ Human-readable explanation of the failure. May include registry-specific details
 
 <summary>
 
-RegistrationListResponse object {auto\_renew, created\_at, domain\_name, 4 more }
+RegistrationListResponse object { auto\_renew, created\_at, domain\_name, 4 more }
 
 A domain registration resource representing the current state of a registered domain.
 
@@ -221,7 +221,7 @@ Whether the domain is locked for transfer.
 
 <summary>
 
-privacy\_mode: "off"or "redaction"
+privacy\_mode: "off" or "redaction"
 
 Current WHOIS privacy mode for the registration.
 
@@ -245,7 +245,7 @@ One of the following:
 
 <summary>
 
-status: "active"or "registration\_pending"or "transfer\_pending"or 4 more
+status: "active" or "registration\_pending" or "transfer\_pending" or 4 more
 
 Current registration status.
 
@@ -301,7 +301,7 @@ One of the following:
 
 <summary>
 
-RegistrationGetResponse object {auto\_renew, created\_at, domain\_name, 4 more }
+RegistrationGetResponse object { auto\_renew, created\_at, domain\_name, 4 more }
 
 A domain registration resource representing the current state of a registered domain.
 
@@ -345,7 +345,7 @@ Whether the domain is locked for transfer.
 
 <summary>
 
-privacy\_mode: "off"or "redaction"
+privacy\_mode: "off" or "redaction"
 
 Current WHOIS privacy mode for the registration.
 
@@ -369,7 +369,7 @@ One of the following:
 
 <summary>
 
-status: "active"or "registration\_pending"or "transfer\_pending"or 4 more
+status: "active" or "registration\_pending" or "transfer\_pending" or 4 more
 
 Current registration status.
 
@@ -425,7 +425,7 @@ One of the following:
 
 <summary>
 
-RegistrationEditResponse object {completed, created\_at, links, 4 more }
+RegistrationEditResponse object { completed, created\_at, links, 4 more }
 
 Status of an async registration workflow.
 
@@ -447,7 +447,7 @@ formatdate-time
 
 <summary>
 
-links: object {self, resource }
+links: object { self, resource }
 
 </summary>
 
@@ -471,7 +471,7 @@ URL to the domain resource.
 
 <summary>
 
-state: "pending"or "in\_progress"or "action\_required"or 3 more
+state: "pending" or "in\_progress" or "action\_required" or 3 more
 
 Describes the workflow lifecycle state.
 
@@ -532,7 +532,7 @@ For domain-centric workflows, <code>context.domain_name</code> identifies the wo
 
 <summary>
 
-error: optional object {code, message }
+error: optional object { code, message }
 
 Provides error details when a workflow reaches the <code>failed</code> state. The workflow type (registration, update, etc.) and underlying registry response determine the specific codes and messages. Workflow error codes differ from immediate HTTP error <code>errors[].code</code> values in non-2xx responses. Surface <code>error.message</code> to the user for context.
 

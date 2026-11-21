@@ -32,7 +32,7 @@ GET/accounts/{account\_id}/magic/connectors/{connector\_id}/telemetry/snapshots/
 
 <summary>
 
-LatestListResponse object {count, items }
+LatestListResponse object { count, items }
 
 </summary>
 
@@ -44,7 +44,7 @@ count: number
 
 <summary>
 
-items: array of object {count\_reclaim\_failures, count\_reclaimed\_paths, count\_record\_failed, 173 more }
+items: array of object { count\_reclaim\_failures, count\_reclaimed\_paths, count\_record\_failed, 173 more }
 
 </summary>
 
@@ -88,7 +88,7 @@ Version
 
 <summary>
 
-bonds: optional array of object {name, status }
+bonds: optional array of object { name, status }
 
 </summary>
 
@@ -208,7 +208,7 @@ Number of network operations applied during state transition
 
 <summary>
 
-dhcp\_leases: optional array of object {client\_id, expiry\_time, hostname, 3 more }
+dhcp\_leases: optional array of object { client\_id, expiry\_time, hostname, 3 more }
 
 </summary>
 
@@ -256,7 +256,7 @@ MAC Address of the device the IP Address was leased to
 
 <summary>
 
-disks: optional array of object {in\_progress, major, merged, 17 more }
+disks: optional array of object { in\_progress, major, merged, 17 more }
 
 </summary>
 
@@ -406,7 +406,7 @@ Numeric value associated with high availability state (0 = disabled, 1 = active,
 
 <summary>
 
-interfaces: optional array of object {name, operstate, health\_reason, 3 more }
+interfaces: optional array of object { name, operstate, health\_reason, 3 more }
 
 </summary>
 
@@ -438,7 +438,7 @@ Aggregate health score (0-100)
 
 <summary>
 
-ip\_addresses: optional array of object {interface\_name, ip\_address }
+ip\_addresses: optional array of object { interface\_name, ip\_address }
 
 </summary>
 
@@ -904,7 +904,7 @@ Amount of anonymous memory stored in zswap, uncompressed
 
 <summary>
 
-mounts: optional array of object {file\_system, kind, mount\_point, 7 more }
+mounts: optional array of object { file\_system, kind, mount\_point, 7 more }
 
 </summary>
 
@@ -976,7 +976,7 @@ Total inodes on filesystem
 
 <summary>
 
-netdevs: optional array of object {name, recv\_bytes, recv\_compressed, 14 more }
+netdevs: optional array of object { name, recv\_bytes, recv\_compressed, 14 more }
 
 </summary>
 
@@ -1096,7 +1096,7 @@ Platform identifier
 
 <summary>
 
-qdiscs: optional array of object {backlog, bytes, dev, 10 more }
+qdiscs: optional array of object { backlog, bytes, dev, 10 more }
 
 </summary>
 
@@ -1164,7 +1164,7 @@ Total packets requeued
 
 <summary>
 
-cake\_stats: optional object {avg\_hdr\_offset, capacity\_estimate, max\_adj\_size, 7 more }
+cake\_stats: optional object { avg\_hdr\_offset, capacity\_estimate, max\_adj\_size, 7 more }
 
 Snapshot Qdisc CAKE
 
@@ -1222,7 +1222,7 @@ Smallest network-layer packet seen (bytes, 65535 until the first packet after cr
 
 <summary>
 
-options: object {ack\_filter, bandwidth, diffserv, 13 more }
+options: object { ack\_filter, bandwidth, diffserv, 13 more }
 
 Snapshot Qdisc CAKE Options
 
@@ -1332,7 +1332,7 @@ Minimum packet size (bytes, absent when unset)
 
 <summary>
 
-tins: array of object {ack\_drops, avg\_delay\_us, backlog\_bytes, 17 more }
+tins: array of object { ack\_drops, avg\_delay\_us, backlog\_bytes, 17 more }
 
 </summary>
 
@@ -1484,7 +1484,7 @@ Set when attached at the root of the interface
 
 <summary>
 
-routes: optional array of object {destination, interface\_name, kind, 3 more }
+routes: optional array of object { destination, interface\_name, kind, 3 more }
 
 </summary>
 
@@ -1928,7 +1928,7 @@ Boottime of the system (seconds since the Unix epoch)
 
 <summary>
 
-thermals: optional array of object {label, critical\_celcius, current\_celcius, max\_celcius }
+thermals: optional array of object { label, critical\_celcius, current\_celcius, max\_celcius }
 
 </summary>
 
@@ -1964,7 +1964,7 @@ Maximum temperature of the component (degrees Celsius)
 
 <summary>
 
-tunnels: optional array of object {health\_state, health\_value, interface\_name, 9 more }
+tunnels: optional array of object { health\_state, health\_value, interface\_name, 9 more }
 
 </summary>
 

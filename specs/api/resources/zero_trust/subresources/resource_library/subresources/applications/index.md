@@ -46,7 +46,7 @@ DELETE/accounts/{account\_id}/resource-library/applications/{id}
 
 <summary>
 
-ApplicationListResponse object {id, application\_confidence\_score, application\_score\_composition, 16 more }
+ApplicationListResponse object { id, application\_confidence\_score, application\_score\_composition, 16 more }
 
 Describes one application in a list response. The response returns every property below unless <code>fields</code> narrows it. Treat all properties except <code>id</code> as optional.
 
@@ -156,7 +156,7 @@ Ports matched by the application, in <code>protocol/port</code> or inclusive <co
 
 <summary>
 
-review\_status: optional "approved"or "unapproved"or "in\_review"or "unreviewed"
+review\_status: optional "approved" or "unapproved" or "in\_review" or "unreviewed"
 
 The account-specific Gateway review status. Applications with no assigned review status are returned as <code>unreviewed</code>.
 
@@ -194,7 +194,7 @@ Support domains matched by the application.
 
 <summary>
 
-supported: optional array of "GATEWAY"or "ACCESS"or "CASB"
+supported: optional array of "GATEWAY" or "ACCESS" or "CASB"
 
 Cloudflare products that support this application.
 
@@ -238,7 +238,7 @@ Returns the application version.
 
 <summary>
 
-ApplicationGetResponse object {id, application\_confidence\_score, application\_source, 15 more }
+ApplicationGetResponse object { id, application\_confidence\_score, application\_source, 15 more }
 
 </summary>
 
@@ -346,7 +346,7 @@ Support domains matched by the application.
 
 <summary>
 
-supported: array of "GATEWAY"or "ACCESS"or "CASB"
+supported: array of "GATEWAY" or "ACCESS" or "CASB"
 
 Cloudflare products that support this application.
 
@@ -396,7 +396,7 @@ Returns the score composition breakdown for the application.
 
 <summary>
 
-ApplicationCreateResponse object {id, application\_confidence\_score, application\_source, 15 more }
+ApplicationCreateResponse object { id, application\_confidence\_score, application\_source, 15 more }
 
 </summary>
 
@@ -504,7 +504,7 @@ Support domains matched by the application.
 
 <summary>
 
-supported: array of "GATEWAY"or "ACCESS"or "CASB"
+supported: array of "GATEWAY" or "ACCESS" or "CASB"
 
 Cloudflare products that support this application.
 
@@ -554,7 +554,7 @@ Returns the score composition breakdown for the application.
 
 <summary>
 
-ApplicationUpdateResponse object {id, application\_confidence\_score, application\_source, 15 more }
+ApplicationUpdateResponse object { id, application\_confidence\_score, application\_source, 15 more }
 
 </summary>
 
@@ -662,7 +662,7 @@ Support domains matched by the application.
 
 <summary>
 
-supported: array of "GATEWAY"or "ACCESS"or "CASB"
+supported: array of "GATEWAY" or "ACCESS" or "CASB"
 
 Cloudflare products that support this application.
 

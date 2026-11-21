@@ -60,7 +60,7 @@ formatuuid
 
 <summary>
 
-errors: array of object {message }
+errors: array of object { message }
 
 </summary>
 
@@ -76,7 +76,7 @@ message: string
 
 <summary>
 
-messages: array of object {message, code, custom\_feed\_count, 4 more }
+messages: array of object { message, code, custom\_feed\_count, 4 more }
 
 </summary>
 
@@ -116,7 +116,7 @@ path: optional array of string
 
 <summary>
 
-reason: optional "threat\_signals\_feed\_limit"or "free\_custom\_skills\_disabled"or "free\_skill\_run\_disabled"or 4 more
+reason: optional "threat\_signals\_feed\_limit" or "free\_custom\_skills\_disabled" or "free\_skill\_run\_disabled" or 4 more
 
 </summary>
 
@@ -162,7 +162,7 @@ One of the following:
 
 <summary>
 
-result: object {tag\_skill\_version, tags }
+result: object { tag\_skill\_version, tags }
 
 </summary>
 
@@ -174,7 +174,7 @@ tag\_skill\_version: string
 
 <summary>
 
-tags: array of object {applied\_by, categoryId, uuid, value }
+tags: array of object { applied\_by, categoryId, uuid, value }
 
 Final hydrated assignment set; may be empty when no applicable tags are selected.
 
@@ -184,7 +184,7 @@ Final hydrated assignment set; may be empty when no applicable tags are selected
 
 <summary>
 
-applied\_by: "ai"or "analyst"or "system"
+applied\_by: "ai" or "analyst" or "system"
 
 </summary>
 

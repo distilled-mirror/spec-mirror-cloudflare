@@ -66,7 +66,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -108,7 +108,7 @@ prefix: optional string
 
 <summary>
 
-result: object {meta, moas }
+result: object { meta, moas }
 
 </summary>
 
@@ -116,7 +116,7 @@ result: object {meta, moas }
 
 <summary>
 
-meta: object {data\_time, query\_time, total\_peers }
+meta: object { data\_time, query\_time, total\_peers }
 
 </summary>
 
@@ -140,7 +140,7 @@ total\_peers: number
 
 <summary>
 
-moas: array of object {origins, prefix }
+moas: array of object { origins, prefix }
 
 </summary>
 
@@ -148,7 +148,7 @@ moas: array of object {origins, prefix }
 
 <summary>
 
-origins: array of object {origin, peer\_count, rpki\_validation }
+origins: array of object { origin, peer\_count, rpki\_validation }
 
 </summary>
 

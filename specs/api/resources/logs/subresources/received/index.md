@@ -28,7 +28,7 @@ GET/zones/{zone\_id}/logs/received
 
 <summary>
 
-ReceivedGetResponse = stringor unknown
+ReceivedGetResponse = string or unknown
 
 </summary>
 
@@ -58,7 +58,7 @@ GET/zones/{zone\_id}/logs/received/fields
 
 <summary>
 
-FieldGetResponse object {key }
+FieldGetResponse object { key }
 
 </summary>
 

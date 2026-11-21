@@ -38,7 +38,7 @@ PATCH/accounts/{account\_id}/addressing/prefixes/{prefix\_id}/bgp/status
 
 <summary>
 
-AdvertisementStatusGetResponse object {advertised, advertised\_modified\_at }
+AdvertisementStatusGetResponse object { advertised, advertised\_modified\_at }
 
 </summary>
 
@@ -64,7 +64,7 @@ formatdate-time
 
 <summary>
 
-AdvertisementStatusEditResponse object {advertised, advertised\_modified\_at }
+AdvertisementStatusEditResponse object { advertised, advertised\_modified\_at }
 
 </summary>
 

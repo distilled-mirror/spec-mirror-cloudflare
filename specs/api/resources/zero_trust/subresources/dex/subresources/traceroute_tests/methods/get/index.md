@@ -102,7 +102,7 @@ Start time for aggregate metrics in ISO ms.
 
 <summary>
 
-interval: "minute"or "hour"
+interval: "minute" or "hour"
 
 Time interval for aggregate time slots.
 
@@ -146,7 +146,7 @@ Optionally filter result stats to a specific device(s). Cannot be used in combin
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -168,7 +168,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -188,7 +188,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -210,7 +210,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -300,7 +300,7 @@ targeted: optional boolean
 
 <summary>
 
-tracerouteStats: optional object {availabilityPct, hopsCount, packetLossPct, 2 more }
+tracerouteStats: optional object { availabilityPct, hopsCount, packetLossPct, 2 more }
 
 </summary>
 
@@ -308,7 +308,7 @@ tracerouteStats: optional object {availabilityPct, hopsCount, packetLossPct, 2 m
 
 <summary>
 
-availabilityPct: object {slots, avg, max, min }
+availabilityPct: object { slots, avg, max, min }
 
 </summary>
 
@@ -316,7 +316,7 @@ availabilityPct: object {slots, avg, max, min }
 
 <summary>
 
-slots: array of object {timestamp, value }
+slots: array of object { timestamp, value }
 
 </summary>
 
@@ -374,7 +374,7 @@ hopsCount: <a href="https://developers.cloudflare.com/api/resources/zero_trust#(
 
 <summary>
 
-slots: array of object {timestamp, value }
+slots: array of object { timestamp, value }
 
 </summary>
 
@@ -416,7 +416,7 @@ lowest observed in the time period.
 
 <summary>
 
-packetLossPct: object {slots, avg, max, min }
+packetLossPct: object { slots, avg, max, min }
 
 </summary>
 
@@ -424,7 +424,7 @@ packetLossPct: object {slots, avg, max, min }
 
 <summary>
 
-slots: array of object {timestamp, value }
+slots: array of object { timestamp, value }
 
 </summary>
 
@@ -482,7 +482,7 @@ roundTripTimeMs: <a href="https://developers.cloudflare.com/api/resources/zero_t
 
 <summary>
 
-slots: array of object {timestamp, value }
+slots: array of object { timestamp, value }
 
 </summary>
 
@@ -534,7 +534,7 @@ Count of unique devices that have run this test in the given time period.
 
 <summary>
 
-tracerouteStatsByColo: optional array of object {availabilityPct, colo, hopsCount, 3 more }
+tracerouteStatsByColo: optional array of object { availabilityPct, colo, hopsCount, 3 more }
 
 </summary>
 
@@ -542,7 +542,7 @@ tracerouteStatsByColo: optional array of object {availabilityPct, colo, hopsCoun
 
 <summary>
 
-availabilityPct: object {slots, avg, max, min }
+availabilityPct: object { slots, avg, max, min }
 
 </summary>
 
@@ -550,7 +550,7 @@ availabilityPct: object {slots, avg, max, min }
 
 <summary>
 
-slots: array of object {timestamp, value }
+slots: array of object { timestamp, value }
 
 </summary>
 
@@ -612,7 +612,7 @@ hopsCount: <a href="https://developers.cloudflare.com/api/resources/zero_trust#(
 
 <summary>
 
-slots: array of object {timestamp, value }
+slots: array of object { timestamp, value }
 
 </summary>
 
@@ -654,7 +654,7 @@ lowest observed in the time period.
 
 <summary>
 
-packetLossPct: object {slots, avg, max, min }
+packetLossPct: object { slots, avg, max, min }
 
 </summary>
 
@@ -662,7 +662,7 @@ packetLossPct: object {slots, avg, max, min }
 
 <summary>
 
-slots: array of object {timestamp, value }
+slots: array of object { timestamp, value }
 
 </summary>
 
@@ -720,7 +720,7 @@ roundTripTimeMs: <a href="https://developers.cloudflare.com/api/resources/zero_t
 
 <summary>
 
-slots: array of object {timestamp, value }
+slots: array of object { timestamp, value }
 
 </summary>
 

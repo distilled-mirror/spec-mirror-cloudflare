@@ -106,7 +106,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -148,7 +148,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -184,7 +184,7 @@ maxLength32
 
 <summary>
 
-health\_check\_rate: optional "low"or "mid"or "high"
+health\_check\_rate: optional "low" or "mid" or "high"
 
 Magic WAN health check rate for tunnels created on this link. The default value is <code>mid</code>.
 

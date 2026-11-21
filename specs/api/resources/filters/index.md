@@ -64,7 +64,7 @@ DELETE/zones/{zone\_id}/filters
 
 <summary>
 
-FirewallFilter object {id, description, expression, 2 more }
+FirewallFilter object { id, description, expression, 2 more }
 
 </summary>
 
@@ -114,7 +114,7 @@ maxLength50
 
 <summary>
 
-FilterDeleteResponse object {id }
+FilterDeleteResponse object { id }
 
 </summary>
 
@@ -136,7 +136,7 @@ minLength32
 
 <summary>
 
-FilterBulkDeleteResponse = array of object {id }
+FilterBulkDeleteResponse = array of object { id }
 
 </summary>
 

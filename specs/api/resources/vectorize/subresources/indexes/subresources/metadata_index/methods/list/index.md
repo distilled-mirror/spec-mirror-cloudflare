@@ -58,7 +58,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Vectorize Write``Vectorize Read`
+`Auto Rag Write Run Engine``Vectorize Write``Vectorize Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -102,7 +102,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -144,7 +144,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -164,7 +164,7 @@ pointer: optional string
 
 <summary>
 
-result: object {metadataIndexes }
+result: object { metadataIndexes }
 
 </summary>
 
@@ -172,7 +172,7 @@ result: object {metadataIndexes }
 
 <summary>
 
-metadataIndexes: optional array of object {indexType, propertyName }
+metadataIndexes: optional array of object { indexType, propertyName }
 
 Array of indexed metadata properties.
 
@@ -182,7 +182,7 @@ Array of indexed metadata properties.
 
 <summary>
 
-indexType: optional "string"or "number"or "boolean"
+indexType: optional "string" or "number" or "boolean"
 
 Specifies the type of indexed metadata property.
 

@@ -66,7 +66,7 @@ The zone transfer status of a primary zone.
 
 <summary>
 
-Outgoing object {id, checked\_time, created\_time, 4 more }
+Outgoing object { id, checked\_time, created\_time, 4 more }
 
 </summary>
 
@@ -124,7 +124,7 @@ The zone transfer status of a primary zone.
 
 <summary>
 
-OutgoingGetResponse object {id, checked\_time, created\_time, 4 more }
+OutgoingGetResponse object { id, checked\_time, created\_time, 4 more }
 
 </summary>
 
@@ -176,7 +176,7 @@ The serial number of the SOA for the given zone.
 
 <summary>
 
-OutgoingCreateResponse object {id, checked\_time, created\_time, 4 more }
+OutgoingCreateResponse object { id, checked\_time, created\_time, 4 more }
 
 </summary>
 
@@ -228,7 +228,7 @@ The serial number of the SOA for the given zone.
 
 <summary>
 
-OutgoingUpdateResponse object {id, checked\_time, created\_time, 4 more }
+OutgoingUpdateResponse object { id, checked\_time, created\_time, 4 more }
 
 </summary>
 
@@ -280,7 +280,7 @@ The serial number of the SOA for the given zone.
 
 <summary>
 
-OutgoingDeleteResponse object {id }
+OutgoingDeleteResponse object { id }
 
 </summary>
 

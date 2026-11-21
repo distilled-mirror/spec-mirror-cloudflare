@@ -32,7 +32,7 @@ POST/zones/{zone\_id}/smart\_shield/cache\_reserve\_clear
 
 <summary>
 
-CacheReserveClearStatusResponse = object {id, end\_ts, modified\_on, 2 more } or object {id, end\_ts, modified\_on, 2 more } or object {id, end\_ts, modified\_on, 2 more }
+CacheReserveClearStatusResponse = object { id, end\_ts, modified\_on, 2 more } or object { id, end\_ts, modified\_on, 2 more } or object { id, end\_ts, modified\_on, 2 more }
 
 </summary>
 
@@ -42,7 +42,7 @@ One of the following:
 
 <summary>
 
-object {id, end\_ts, modified\_on, 2 more }
+object { id, end\_ts, modified\_on, 2 more }
 
 </summary>
 
@@ -80,7 +80,7 @@ formatdate-time
 
 <summary>
 
-state: optional "In-progress"or "Completed"
+state: optional "In-progress" or "Completed"
 
 The current state of the Cache Reserve Clear operation.
 
@@ -108,7 +108,7 @@ One of the following:
 
 <summary>
 
-object {id, end\_ts, modified\_on, 2 more }
+object { id, end\_ts, modified\_on, 2 more }
 
 </summary>
 
@@ -146,7 +146,7 @@ formatdate-time
 
 <summary>
 
-state: optional "In-progress"or "Completed"
+state: optional "In-progress" or "Completed"
 
 The current state of the Cache Reserve Clear operation.
 
@@ -174,7 +174,7 @@ One of the following:
 
 <summary>
 
-object {id, end\_ts, modified\_on, 2 more }
+object { id, end\_ts, modified\_on, 2 more }
 
 </summary>
 
@@ -212,7 +212,7 @@ formatdate-time
 
 <summary>
 
-state: optional "In-progress"or "Completed"
+state: optional "In-progress" or "Completed"
 
 The current state of the Cache Reserve Clear operation.
 
@@ -244,7 +244,7 @@ One of the following:
 
 <summary>
 
-CacheReserveClearClearResponse = object {id, end\_ts, modified\_on, 2 more } or object {id, end\_ts, modified\_on, 2 more } or object {id, end\_ts, modified\_on, 2 more }
+CacheReserveClearClearResponse = object { id, end\_ts, modified\_on, 2 more } or object { id, end\_ts, modified\_on, 2 more } or object { id, end\_ts, modified\_on, 2 more }
 
 </summary>
 
@@ -254,7 +254,7 @@ One of the following:
 
 <summary>
 
-object {id, end\_ts, modified\_on, 2 more }
+object { id, end\_ts, modified\_on, 2 more }
 
 </summary>
 
@@ -292,7 +292,7 @@ formatdate-time
 
 <summary>
 
-state: optional "In-progress"or "Completed"
+state: optional "In-progress" or "Completed"
 
 The current state of the Cache Reserve Clear operation.
 
@@ -320,7 +320,7 @@ One of the following:
 
 <summary>
 
-object {id, end\_ts, modified\_on, 2 more }
+object { id, end\_ts, modified\_on, 2 more }
 
 </summary>
 
@@ -358,7 +358,7 @@ formatdate-time
 
 <summary>
 
-state: optional "In-progress"or "Completed"
+state: optional "In-progress" or "Completed"
 
 The current state of the Cache Reserve Clear operation.
 
@@ -386,7 +386,7 @@ One of the following:
 
 <summary>
 
-object {id, end\_ts, modified\_on, 2 more }
+object { id, end\_ts, modified\_on, 2 more }
 
 </summary>
 
@@ -424,7 +424,7 @@ formatdate-time
 
 <summary>
 
-state: optional "In-progress"or "Completed"
+state: optional "In-progress" or "Completed"
 
 The current state of the Cache Reserve Clear operation.
 

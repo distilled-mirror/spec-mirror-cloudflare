@@ -50,7 +50,7 @@ POST/accounts/{account\_id}/data-security/posture/findings/{finding\_id}/instanc
 
 <summary>
 
-InstanceListResponse object {affliction\_date, asset, dlp\_contexts, 4 more }
+InstanceListResponse object { affliction\_date, asset, dlp\_contexts, 4 more }
 
 A specific instance of a security finding. In the API interface, we refer to the ‘finding’ table in our DB as finding instances, optimized for the p99 use case.
 
@@ -68,7 +68,7 @@ formatdate-time
 
 <summary>
 
-asset: object {category, external\_id, fields, 4 more }
+asset: object { category, external\_id, fields, 4 more }
 
 Asset information including metadata and categorization.
 
@@ -78,7 +78,7 @@ Asset information including metadata and categorization.
 
 <summary>
 
-category: object {service, type, vendor, id }
+category: object { service, type, vendor, id }
 
 Category information for an asset.
 
@@ -126,7 +126,7 @@ maxLength512
 
 <summary>
 
-fields: array of object {name, value, link }
+fields: array of object { name, value, link }
 
 The fields associated with the asset.
 
@@ -196,7 +196,7 @@ formatdate-time
 
 <summary>
 
-dlp\_contexts: array of object {created, entry\_ids, profile\_id, 6 more }
+dlp\_contexts: array of object { created, entry\_ids, profile\_id, 6 more }
 
 DLP context information if this is a content finding.
 
@@ -282,7 +282,7 @@ DLP Match context payload that matched the profile in question.
 
 <summary>
 
-remediations: array of object {id, created\_at, stale, status }
+remediations: array of object { id, created\_at, stale, status }
 
 A list of the 10 most recent remediation jobs for this finding instance, ordered by creation time (most recent first). The ‘stale’ field indicates whether the remediation job was created before the finding instance’s affliction\_date (true) or after it (false). If there has never been a remediation job for this finding instance, this field will be an empty array.
 
@@ -314,7 +314,7 @@ Whether this remediation job is stale (created before the finding instance’s a
 
 <summary>
 
-status: "pending"or "processing"or "completed"or 2 more
+status: "pending" or "processing" or "completed" or 2 more
 
 Status of a remediation job.
 
@@ -354,7 +354,7 @@ One of the following:
 
 <summary>
 
-webhooks: array of object {latest\_job, webhook\_id, webhook\_label }
+webhooks: array of object { latest\_job, webhook\_id, webhook\_label }
 
 The most recent webhook job invocation for each webhook configuration associated with this finding instance. Each entry represents the latest job (any status) per webhook config. The ‘stale’ field indicates whether the job was invoked before the finding instance’s current affliction\_date. If no webhook jobs have been created, this field will be an empty array.
 
@@ -364,7 +364,7 @@ The most recent webhook job invocation for each webhook configuration associated
 
 <summary>
 
-latest\_job: object {id, created\_at, stale, status }
+latest\_job: object { id, created\_at, stale, status }
 
 The most recent webhook job for this webhook configuration.
 
@@ -396,7 +396,7 @@ Whether this webhook job is stale (created before the finding instance’s curre
 
 <summary>
 
-status: "pending"or "processing"or "completed"
+status: "pending" or "processing" or "completed"
 
 Current status of the webhook job.
 
@@ -464,7 +464,7 @@ Whether this finding instance has been archived.
 
 <summary>
 
-InstanceGetResponse object {affliction\_date, asset, dlp\_contexts, 4 more }
+InstanceGetResponse object { affliction\_date, asset, dlp\_contexts, 4 more }
 
 A specific instance of a security finding. In the API interface, we refer to the ‘finding’ table in our DB as finding instances, optimized for the p99 use case.
 
@@ -482,7 +482,7 @@ formatdate-time
 
 <summary>
 
-asset: object {category, external\_id, fields, 4 more }
+asset: object { category, external\_id, fields, 4 more }
 
 Asset information including metadata and categorization.
 
@@ -492,7 +492,7 @@ Asset information including metadata and categorization.
 
 <summary>
 
-category: object {service, type, vendor, id }
+category: object { service, type, vendor, id }
 
 Category information for an asset.
 
@@ -540,7 +540,7 @@ maxLength512
 
 <summary>
 
-fields: array of object {name, value, link }
+fields: array of object { name, value, link }
 
 The fields associated with the asset.
 
@@ -610,7 +610,7 @@ formatdate-time
 
 <summary>
 
-dlp\_contexts: array of object {created, entry\_ids, profile\_id, 6 more }
+dlp\_contexts: array of object { created, entry\_ids, profile\_id, 6 more }
 
 DLP context information if this is a content finding.
 
@@ -696,7 +696,7 @@ DLP Match context payload that matched the profile in question.
 
 <summary>
 
-remediations: array of object {id, created\_at, stale, status }
+remediations: array of object { id, created\_at, stale, status }
 
 A list of the 10 most recent remediation jobs for this finding instance, ordered by creation time (most recent first). The ‘stale’ field indicates whether the remediation job was created before the finding instance’s affliction\_date (true) or after it (false). If there has never been a remediation job for this finding instance, this field will be an empty array.
 
@@ -728,7 +728,7 @@ Whether this remediation job is stale (created before the finding instance’s a
 
 <summary>
 
-status: "pending"or "processing"or "completed"or 2 more
+status: "pending" or "processing" or "completed" or 2 more
 
 Status of a remediation job.
 
@@ -768,7 +768,7 @@ One of the following:
 
 <summary>
 
-webhooks: array of object {latest\_job, webhook\_id, webhook\_label }
+webhooks: array of object { latest\_job, webhook\_id, webhook\_label }
 
 The most recent webhook job invocation for each webhook configuration associated with this finding instance. Each entry represents the latest job (any status) per webhook config. The ‘stale’ field indicates whether the job was invoked before the finding instance’s current affliction\_date. If no webhook jobs have been created, this field will be an empty array.
 
@@ -778,7 +778,7 @@ The most recent webhook job invocation for each webhook configuration associated
 
 <summary>
 
-latest\_job: object {id, created\_at, stale, status }
+latest\_job: object { id, created\_at, stale, status }
 
 The most recent webhook job for this webhook configuration.
 
@@ -810,7 +810,7 @@ Whether this webhook job is stale (created before the finding instance’s curre
 
 <summary>
 
-status: "pending"or "processing"or "completed"
+status: "pending" or "processing" or "completed"
 
 Current status of the webhook job.
 
@@ -878,7 +878,7 @@ Whether this finding instance has been archived.
 
 <summary>
 
-InstanceExportResponse object {id, status, type, 5 more }
+InstanceExportResponse object { id, status, type, 5 more }
 
 Information about an export job.
 
@@ -896,7 +896,7 @@ formatuuid
 
 <summary>
 
-status: "Pending"or "Success"or "Failure"or 2 more
+status: "Pending" or "Success" or "Failure" or 2 more
 
 Status of an export job.
 
@@ -932,7 +932,7 @@ One of the following:
 
 <summary>
 
-type: "finding"or "findingInstance"or "content"or "remediationJob"
+type: "finding" or "findingInstance" or "content" or "remediationJob"
 
 Type of export job.
 
@@ -1008,7 +1008,7 @@ maxLength512
 
 <summary>
 
-InstanceArchiveResponse object {affliction\_date, asset, dlp\_contexts, 4 more }
+InstanceArchiveResponse object { affliction\_date, asset, dlp\_contexts, 4 more }
 
 A specific instance of a security finding. In the API interface, we refer to the ‘finding’ table in our DB as finding instances, optimized for the p99 use case.
 
@@ -1026,7 +1026,7 @@ formatdate-time
 
 <summary>
 
-asset: object {category, external\_id, fields, 4 more }
+asset: object { category, external\_id, fields, 4 more }
 
 Asset information including metadata and categorization.
 
@@ -1036,7 +1036,7 @@ Asset information including metadata and categorization.
 
 <summary>
 
-category: object {service, type, vendor, id }
+category: object { service, type, vendor, id }
 
 Category information for an asset.
 
@@ -1084,7 +1084,7 @@ maxLength512
 
 <summary>
 
-fields: array of object {name, value, link }
+fields: array of object { name, value, link }
 
 The fields associated with the asset.
 
@@ -1154,7 +1154,7 @@ formatdate-time
 
 <summary>
 
-dlp\_contexts: array of object {created, entry\_ids, profile\_id, 6 more }
+dlp\_contexts: array of object { created, entry\_ids, profile\_id, 6 more }
 
 DLP context information if this is a content finding.
 
@@ -1240,7 +1240,7 @@ DLP Match context payload that matched the profile in question.
 
 <summary>
 
-remediations: array of object {id, created\_at, stale, status }
+remediations: array of object { id, created\_at, stale, status }
 
 A list of the 10 most recent remediation jobs for this finding instance, ordered by creation time (most recent first). The ‘stale’ field indicates whether the remediation job was created before the finding instance’s affliction\_date (true) or after it (false). If there has never been a remediation job for this finding instance, this field will be an empty array.
 
@@ -1272,7 +1272,7 @@ Whether this remediation job is stale (created before the finding instance’s a
 
 <summary>
 
-status: "pending"or "processing"or "completed"or 2 more
+status: "pending" or "processing" or "completed" or 2 more
 
 Status of a remediation job.
 
@@ -1312,7 +1312,7 @@ One of the following:
 
 <summary>
 
-webhooks: array of object {latest\_job, webhook\_id, webhook\_label }
+webhooks: array of object { latest\_job, webhook\_id, webhook\_label }
 
 The most recent webhook job invocation for each webhook configuration associated with this finding instance. Each entry represents the latest job (any status) per webhook config. The ‘stale’ field indicates whether the job was invoked before the finding instance’s current affliction\_date. If no webhook jobs have been created, this field will be an empty array.
 
@@ -1322,7 +1322,7 @@ The most recent webhook job invocation for each webhook configuration associated
 
 <summary>
 
-latest\_job: object {id, created\_at, stale, status }
+latest\_job: object { id, created\_at, stale, status }
 
 The most recent webhook job for this webhook configuration.
 
@@ -1354,7 +1354,7 @@ Whether this webhook job is stale (created before the finding instance’s curre
 
 <summary>
 
-status: "pending"or "processing"or "completed"
+status: "pending" or "processing" or "completed"
 
 Current status of the webhook job.
 
@@ -1422,7 +1422,7 @@ Whether this finding instance has been archived.
 
 <summary>
 
-InstanceUnarchiveResponse object {affliction\_date, asset, dlp\_contexts, 4 more }
+InstanceUnarchiveResponse object { affliction\_date, asset, dlp\_contexts, 4 more }
 
 A specific instance of a security finding. In the API interface, we refer to the ‘finding’ table in our DB as finding instances, optimized for the p99 use case.
 
@@ -1440,7 +1440,7 @@ formatdate-time
 
 <summary>
 
-asset: object {category, external\_id, fields, 4 more }
+asset: object { category, external\_id, fields, 4 more }
 
 Asset information including metadata and categorization.
 
@@ -1450,7 +1450,7 @@ Asset information including metadata and categorization.
 
 <summary>
 
-category: object {service, type, vendor, id }
+category: object { service, type, vendor, id }
 
 Category information for an asset.
 
@@ -1498,7 +1498,7 @@ maxLength512
 
 <summary>
 
-fields: array of object {name, value, link }
+fields: array of object { name, value, link }
 
 The fields associated with the asset.
 
@@ -1568,7 +1568,7 @@ formatdate-time
 
 <summary>
 
-dlp\_contexts: array of object {created, entry\_ids, profile\_id, 6 more }
+dlp\_contexts: array of object { created, entry\_ids, profile\_id, 6 more }
 
 DLP context information if this is a content finding.
 
@@ -1654,7 +1654,7 @@ DLP Match context payload that matched the profile in question.
 
 <summary>
 
-remediations: array of object {id, created\_at, stale, status }
+remediations: array of object { id, created\_at, stale, status }
 
 A list of the 10 most recent remediation jobs for this finding instance, ordered by creation time (most recent first). The ‘stale’ field indicates whether the remediation job was created before the finding instance’s affliction\_date (true) or after it (false). If there has never been a remediation job for this finding instance, this field will be an empty array.
 
@@ -1686,7 +1686,7 @@ Whether this remediation job is stale (created before the finding instance’s a
 
 <summary>
 
-status: "pending"or "processing"or "completed"or 2 more
+status: "pending" or "processing" or "completed" or 2 more
 
 Status of a remediation job.
 
@@ -1726,7 +1726,7 @@ One of the following:
 
 <summary>
 
-webhooks: array of object {latest\_job, webhook\_id, webhook\_label }
+webhooks: array of object { latest\_job, webhook\_id, webhook\_label }
 
 The most recent webhook job invocation for each webhook configuration associated with this finding instance. Each entry represents the latest job (any status) per webhook config. The ‘stale’ field indicates whether the job was invoked before the finding instance’s current affliction\_date. If no webhook jobs have been created, this field will be an empty array.
 
@@ -1736,7 +1736,7 @@ The most recent webhook job invocation for each webhook configuration associated
 
 <summary>
 
-latest\_job: object {id, created\_at, stale, status }
+latest\_job: object { id, created\_at, stale, status }
 
 The most recent webhook job for this webhook configuration.
 
@@ -1768,7 +1768,7 @@ Whether this webhook job is stale (created before the finding instance’s curre
 
 <summary>
 
-status: "pending"or "processing"or "completed"
+status: "pending" or "processing" or "completed"
 
 Current status of the webhook job.
 

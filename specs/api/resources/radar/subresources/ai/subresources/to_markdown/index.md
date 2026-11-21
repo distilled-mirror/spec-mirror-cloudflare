@@ -32,7 +32,7 @@ POST/accounts/{account\_id}/ai/tomarkdown
 
 <summary>
 
-ToMarkdownCreateResponse object {data, format, mimeType, 2 more }
+ToMarkdownCreateResponse object { data, format, mimeType, 2 more }
 
 </summary>
 

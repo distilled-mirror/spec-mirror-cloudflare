@@ -56,7 +56,7 @@ DELETE/accounts/{account\_id}/access/bookmarks/{bookmark\_id}
 
 <summary>
 
-Bookmark object {id, app\_launcher\_visible, domain, 2 more }
+Bookmark object { id, app\_launcher\_visible, domain, 2 more }
 
 </summary>
 
@@ -98,7 +98,7 @@ The name of the Bookmark application.
 
 <summary>
 
-BookmarkDeleteResponse object {id }
+BookmarkDeleteResponse object { id }
 
 </summary>
 

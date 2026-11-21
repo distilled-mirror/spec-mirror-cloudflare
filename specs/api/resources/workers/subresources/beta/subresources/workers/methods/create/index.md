@@ -58,7 +58,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Workers Scripts Write`
+`Workers Admin``Workers Scripts Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -88,7 +88,7 @@ Whether logpush is enabled for the Worker.
 
 <summary>
 
-observability: optional object {agents, enabled, head\_sampling\_rate, 4 more }
+observability: optional object { agents, enabled, head\_sampling\_rate, 4 more }
 
 Observability settings for the Worker.
 
@@ -98,7 +98,7 @@ Observability settings for the Worker.
 
 <summary>
 
-agents: optional object {enabled, head\_sampling\_rate, persist }
+agents: optional object { enabled, head\_sampling\_rate, persist }
 
 Agents observability settings for the Worker.
 
@@ -142,7 +142,7 @@ The sampling rate for observability. From 0 to 1 (1 = 100%, 0.1 = 10%).
 
 <summary>
 
-issues: optional object {enabled }
+issues: optional object { enabled }
 
 Real-time Issues settings for the Worker.
 
@@ -162,7 +162,7 @@ Whether real-time Issues are enabled for the Worker.
 
 <summary>
 
-logs: optional object {destinations, enabled, head\_sampling\_rate, 2 more }
+logs: optional object { destinations, enabled, head\_sampling\_rate, 2 more }
 
 Log settings for the Worker.
 
@@ -212,7 +212,7 @@ Whether query strings are removed from request URLs in logs and traces.
 
 <summary>
 
-traces: optional object {destinations, enabled, head\_sampling\_rate, 2 more }
+traces: optional object { destinations, enabled, head\_sampling\_rate, 2 more }
 
 Trace settings for the Worker.
 
@@ -246,7 +246,7 @@ Whether trace persistence is enabled for the Worker.
 
 <summary>
 
-propagation\_policy: optional "authenticated"or "accept"
+propagation\_policy: optional "authenticated" or "accept"
 
 Controls how inbound trace context (traceparent/tracestate) headers on incoming requests are handled. “authenticated” honors inbound trace context only when accompanied by a valid trace auth token. “accept” unconditionally accepts inbound trace context. Requires the trace propagation feature to be enabled. Returns null when the trace propagation feature is not enabled for the account.
 
@@ -278,7 +278,7 @@ One of the following:
 
 <summary>
 
-previews\_base\_config: optional object {cache\_options, env, limits, 4 more }
+previews\_base\_config: optional object { cache\_options, env, limits, 4 more }
 
 Template configuration used when creating new Previews for this Worker.
 
@@ -288,7 +288,7 @@ Template configuration used when creating new Previews for this Worker.
 
 <summary>
 
-cache\_options: optional object {enabled, cross\_version\_cache }
+cache\_options: optional object { enabled, cross\_version\_cache }
 
 Cache options used when creating new Previews.
 
@@ -314,7 +314,7 @@ Whether cached responses are shared across Worker version uploads. This is indep
 
 <summary>
 
-env: optional map\[object {type } ]
+env: optional map\[object { type } ]
 
 Bindings used when creating new Previews, keyed by binding name.
 
@@ -334,7 +334,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-limits: optional object {cpu\_ms, subrequests }
+limits: optional object { cpu\_ms, subrequests }
 
 Resource limits enforced at runtime for newly created Previews.
 
@@ -366,7 +366,7 @@ Whether logpush is enabled when creating new Previews.
 
 <summary>
 
-observability: optional object {agents, enabled, head\_sampling\_rate, 4 more }
+observability: optional object { agents, enabled, head\_sampling\_rate, 4 more }
 
 Observability settings used when creating new Previews.
 
@@ -376,7 +376,7 @@ Observability settings used when creating new Previews.
 
 <summary>
 
-agents: optional object {enabled, head\_sampling\_rate, persist }
+agents: optional object { enabled, head\_sampling\_rate, persist }
 
 Agents observability settings for the Worker.
 
@@ -420,7 +420,7 @@ The sampling rate for observability. From 0 to 1 (1 = 100%, 0.1 = 10%).
 
 <summary>
 
-issues: optional object {enabled }
+issues: optional object { enabled }
 
 Real-time Issues settings for the Worker.
 
@@ -440,7 +440,7 @@ Whether real-time Issues are enabled for the Worker.
 
 <summary>
 
-logs: optional object {destinations, enabled, head\_sampling\_rate, 2 more }
+logs: optional object { destinations, enabled, head\_sampling\_rate, 2 more }
 
 Log settings for the Worker.
 
@@ -490,7 +490,7 @@ Whether query strings are removed from request URLs in logs and traces.
 
 <summary>
 
-traces: optional object {destinations, enabled, head\_sampling\_rate, 2 more }
+traces: optional object { destinations, enabled, head\_sampling\_rate, 2 more }
 
 Trace settings for the Worker.
 
@@ -524,7 +524,7 @@ Whether trace persistence is enabled for the Worker.
 
 <summary>
 
-propagation\_policy: optional "authenticated"or "accept"
+propagation\_policy: optional "authenticated" or "accept"
 
 Controls how inbound trace context (traceparent/tracestate) headers on incoming requests are handled. “authenticated” honors inbound trace context only when accompanied by a valid trace auth token. “accept” unconditionally accepts inbound trace context. Requires the trace propagation feature to be enabled. Returns null when the trace propagation feature is not enabled for the account.
 
@@ -556,7 +556,7 @@ One of the following:
 
 <summary>
 
-placement: optional object {mode } or object {region } or object {hostname } or 5 more
+placement: optional object { mode } or object { region } or object { hostname } or 5 more
 
 Placement configuration used when creating new Previews.
 
@@ -568,7 +568,7 @@ One of the following:
 
 <summary>
 
-Mode object {mode }
+Mode object { mode }
 
 </summary>
 
@@ -586,7 +586,7 @@ Enables <a href="https://developers.cloudflare.com/workers/configuration/smart-p
 
 <summary>
 
-Region object {region }
+Region object { region }
 
 </summary>
 
@@ -604,7 +604,7 @@ Cloud region for targeted placement in format ‘provider:region’.
 
 <summary>
 
-Hostname object {hostname }
+Hostname object { hostname }
 
 </summary>
 
@@ -622,7 +622,7 @@ HTTP hostname for targeted placement.
 
 <summary>
 
-Host object {host }
+Host object { host }
 
 </summary>
 
@@ -640,7 +640,7 @@ TCP host and port for targeted placement.
 
 <summary>
 
-object {mode, region }
+object { mode, region }
 
 </summary>
 
@@ -664,7 +664,7 @@ Cloud region for targeted placement in format ‘provider:region’.
 
 <summary>
 
-object {hostname, mode }
+object { hostname, mode }
 
 </summary>
 
@@ -688,7 +688,7 @@ Targeted placement mode.
 
 <summary>
 
-object {host, mode }
+object { host, mode }
 
 </summary>
 
@@ -712,7 +712,7 @@ Targeted placement mode.
 
 <summary>
 
-object {mode, target }
+object { mode, target }
 
 </summary>
 
@@ -726,7 +726,7 @@ Targeted placement mode.
 
 <summary>
 
-target: array of object {region } or object {hostname } or object {host }
+target: array of object { region } or object { hostname } or object { host }
 
 Array of placement targets (currently limited to single target).
 
@@ -738,7 +738,7 @@ One of the following:
 
 <summary>
 
-Region object {region }
+Region object { region }
 
 </summary>
 
@@ -756,7 +756,7 @@ Cloud region in format ‘provider:region’.
 
 <summary>
 
-Hostname object {hostname }
+Hostname object { hostname }
 
 </summary>
 
@@ -774,7 +774,7 @@ HTTP hostname for targeted placement.
 
 <summary>
 
-Host object {host }
+Host object { host }
 
 </summary>
 
@@ -804,7 +804,7 @@ TCP host:port for targeted placement.
 
 <summary>
 
-tail\_consumers: optional array of object {name }
+tail\_consumers: optional array of object { name }
 
 Other Workers that should consume logs from newly created Previews.
 
@@ -828,7 +828,7 @@ Name of the consumer Worker.
 
 <summary>
 
-subdomain: optional object {enabled, preview\_url\_suffix, previews\_enabled, url }
+subdomain: optional object { enabled, preview\_url\_suffix, previews\_enabled, url }
 
 Subdomain settings for the Worker.
 
@@ -874,7 +874,7 @@ Tags associated with the Worker.
 
 <summary>
 
-tail\_consumers: optional array of object {name }
+tail\_consumers: optional array of object { name }
 
 Other Workers that should consume logs from the Worker.
 
@@ -896,7 +896,7 @@ Name of the consumer Worker.
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -918,7 +918,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -938,7 +938,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -960,7 +960,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -1014,7 +1014,7 @@ Name of the Worker.
 
 <summary>
 
-observability: object {agents, enabled, head\_sampling\_rate, 4 more }
+observability: object { agents, enabled, head\_sampling\_rate, 4 more }
 
 Observability settings for the Worker.
 
@@ -1024,7 +1024,7 @@ Observability settings for the Worker.
 
 <summary>
 
-agents: optional object {enabled, head\_sampling\_rate, persist }
+agents: optional object { enabled, head\_sampling\_rate, persist }
 
 Agents observability settings for the Worker.
 
@@ -1068,7 +1068,7 @@ The sampling rate for observability. From 0 to 1 (1 = 100%, 0.1 = 10%).
 
 <summary>
 
-issues: optional object {enabled }
+issues: optional object { enabled }
 
 Real-time Issues settings for the Worker.
 
@@ -1088,7 +1088,7 @@ Whether real-time Issues are enabled for the Worker.
 
 <summary>
 
-logs: optional object {destinations, enabled, head\_sampling\_rate, 2 more }
+logs: optional object { destinations, enabled, head\_sampling\_rate, 2 more }
 
 Log settings for the Worker.
 
@@ -1138,7 +1138,7 @@ Whether query strings are removed from request URLs in logs and traces.
 
 <summary>
 
-traces: optional object {destinations, enabled, head\_sampling\_rate, 2 more }
+traces: optional object { destinations, enabled, head\_sampling\_rate, 2 more }
 
 Trace settings for the Worker.
 
@@ -1172,7 +1172,7 @@ Whether trace persistence is enabled for the Worker.
 
 <summary>
 
-propagation\_policy: optional "authenticated"or "accept"
+propagation\_policy: optional "authenticated" or "accept"
 
 Controls how inbound trace context (traceparent/tracestate) headers on incoming requests are handled. “authenticated” honors inbound trace context only when accompanied by a valid trace auth token. “accept” unconditionally accepts inbound trace context. Requires the trace propagation feature to be enabled. Returns null when the trace propagation feature is not enabled for the account.
 
@@ -1204,7 +1204,7 @@ One of the following:
 
 <summary>
 
-references: object {dispatch\_namespace\_outbounds, domains, durable\_objects, 2 more }
+references: object { dispatch\_namespace\_outbounds, domains, durable\_objects, 2 more }
 
 Other resources that reference the Worker and depend on it existing.
 
@@ -1214,7 +1214,7 @@ Other resources that reference the Worker and depend on it existing.
 
 <summary>
 
-dispatch\_namespace\_outbounds: array of object {namespace\_id, namespace\_name, worker\_id, worker\_name }
+dispatch\_namespace\_outbounds: array of object { namespace\_id, namespace\_name, worker\_id, worker\_name }
 
 Other Workers that reference the Worker as an outbound for a dispatch namespace.
 
@@ -1252,7 +1252,7 @@ Name of the Worker using the dispatch namespace.
 
 <summary>
 
-domains: array of object {id, certificate\_id, hostname, 2 more }
+domains: array of object { id, certificate\_id, hostname, 2 more }
 
 Custom domains connected to the Worker.
 
@@ -1296,7 +1296,7 @@ Name of the zone.
 
 <summary>
 
-durable\_objects: array of object {namespace\_id, namespace\_name, worker\_id, worker\_name }
+durable\_objects: array of object { namespace\_id, namespace\_name, worker\_id, worker\_name }
 
 Other Workers that reference Durable Object classes implemented by the Worker.
 
@@ -1334,7 +1334,7 @@ Name of the Worker using the Durable Object implementation.
 
 <summary>
 
-queues: array of object {queue\_consumer\_id, queue\_id, queue\_name }
+queues: array of object { queue\_consumer\_id, queue\_id, queue\_name }
 
 Queues that send messages to the Worker.
 
@@ -1366,7 +1366,7 @@ Name of the queue.
 
 <summary>
 
-workers: array of object {id, name }
+workers: array of object { id, name }
 
 Other Workers that reference the Worker using <a href="https://developers.cloudflare.com/workers/runtime-apis/bindings/service-bindings/">service bindings</a>.
 
@@ -1396,7 +1396,7 @@ Name of the referencing Worker.
 
 <summary>
 
-subdomain: object {enabled, preview\_url\_suffix, previews\_enabled, url }
+subdomain: object { enabled, preview\_url\_suffix, previews\_enabled, url }
 
 Subdomain settings for the Worker.
 
@@ -1442,7 +1442,7 @@ Tags associated with the Worker.
 
 <summary>
 
-tail\_consumers: array of object {name }
+tail\_consumers: array of object { name }
 
 Other Workers that should consume logs from the Worker.
 
@@ -1478,7 +1478,7 @@ formatdate-time
 
 <summary>
 
-previews\_base\_config: optional object {cache\_options, env, limits, 4 more }
+previews\_base\_config: optional object { cache\_options, env, limits, 4 more }
 
 Template configuration used when creating new Previews for this Worker.
 
@@ -1488,7 +1488,7 @@ Template configuration used when creating new Previews for this Worker.
 
 <summary>
 
-cache\_options: optional object {enabled, cross\_version\_cache }
+cache\_options: optional object { enabled, cross\_version\_cache }
 
 Cache options used when creating new Previews.
 
@@ -1514,7 +1514,7 @@ Whether cached responses are shared across Worker version uploads. This is indep
 
 <summary>
 
-env: optional map\[object {type } ]
+env: optional map\[object { type } ]
 
 Bindings used when creating new Previews, keyed by binding name.
 
@@ -1534,7 +1534,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-limits: optional object {cpu\_ms, subrequests }
+limits: optional object { cpu\_ms, subrequests }
 
 Resource limits enforced at runtime for newly created Previews.
 
@@ -1566,7 +1566,7 @@ Whether logpush is enabled when creating new Previews.
 
 <summary>
 
-observability: optional object {agents, enabled, head\_sampling\_rate, 4 more }
+observability: optional object { agents, enabled, head\_sampling\_rate, 4 more }
 
 Observability settings used when creating new Previews.
 
@@ -1576,7 +1576,7 @@ Observability settings used when creating new Previews.
 
 <summary>
 
-agents: optional object {enabled, head\_sampling\_rate, persist }
+agents: optional object { enabled, head\_sampling\_rate, persist }
 
 Agents observability settings for the Worker.
 
@@ -1620,7 +1620,7 @@ The sampling rate for observability. From 0 to 1 (1 = 100%, 0.1 = 10%).
 
 <summary>
 
-issues: optional object {enabled }
+issues: optional object { enabled }
 
 Real-time Issues settings for the Worker.
 
@@ -1640,7 +1640,7 @@ Whether real-time Issues are enabled for the Worker.
 
 <summary>
 
-logs: optional object {destinations, enabled, head\_sampling\_rate, 2 more }
+logs: optional object { destinations, enabled, head\_sampling\_rate, 2 more }
 
 Log settings for the Worker.
 
@@ -1690,7 +1690,7 @@ Whether query strings are removed from request URLs in logs and traces.
 
 <summary>
 
-traces: optional object {destinations, enabled, head\_sampling\_rate, 2 more }
+traces: optional object { destinations, enabled, head\_sampling\_rate, 2 more }
 
 Trace settings for the Worker.
 
@@ -1724,7 +1724,7 @@ Whether trace persistence is enabled for the Worker.
 
 <summary>
 
-propagation\_policy: optional "authenticated"or "accept"
+propagation\_policy: optional "authenticated" or "accept"
 
 Controls how inbound trace context (traceparent/tracestate) headers on incoming requests are handled. “authenticated” honors inbound trace context only when accompanied by a valid trace auth token. “accept” unconditionally accepts inbound trace context. Requires the trace propagation feature to be enabled. Returns null when the trace propagation feature is not enabled for the account.
 
@@ -1756,7 +1756,7 @@ One of the following:
 
 <summary>
 
-placement: optional object {mode } or object {region } or object {hostname } or 5 more
+placement: optional object { mode } or object { region } or object { hostname } or 5 more
 
 Placement configuration used when creating new Previews.
 
@@ -1768,7 +1768,7 @@ One of the following:
 
 <summary>
 
-Mode object {mode }
+Mode object { mode }
 
 </summary>
 
@@ -1786,7 +1786,7 @@ Enables <a href="https://developers.cloudflare.com/workers/configuration/smart-p
 
 <summary>
 
-Region object {region }
+Region object { region }
 
 </summary>
 
@@ -1804,7 +1804,7 @@ Cloud region for targeted placement in format ‘provider:region’.
 
 <summary>
 
-Hostname object {hostname }
+Hostname object { hostname }
 
 </summary>
 
@@ -1822,7 +1822,7 @@ HTTP hostname for targeted placement.
 
 <summary>
 
-Host object {host }
+Host object { host }
 
 </summary>
 
@@ -1840,7 +1840,7 @@ TCP host and port for targeted placement.
 
 <summary>
 
-object {mode, region }
+object { mode, region }
 
 </summary>
 
@@ -1864,7 +1864,7 @@ Cloud region for targeted placement in format ‘provider:region’.
 
 <summary>
 
-object {hostname, mode }
+object { hostname, mode }
 
 </summary>
 
@@ -1888,7 +1888,7 @@ Targeted placement mode.
 
 <summary>
 
-object {host, mode }
+object { host, mode }
 
 </summary>
 
@@ -1912,7 +1912,7 @@ Targeted placement mode.
 
 <summary>
 
-object {mode, target }
+object { mode, target }
 
 </summary>
 
@@ -1926,7 +1926,7 @@ Targeted placement mode.
 
 <summary>
 
-target: array of object {region } or object {hostname } or object {host }
+target: array of object { region } or object { hostname } or object { host }
 
 Array of placement targets (currently limited to single target).
 
@@ -1938,7 +1938,7 @@ One of the following:
 
 <summary>
 
-Region object {region }
+Region object { region }
 
 </summary>
 
@@ -1956,7 +1956,7 @@ Cloud region in format ‘provider:region’.
 
 <summary>
 
-Hostname object {hostname }
+Hostname object { hostname }
 
 </summary>
 
@@ -1974,7 +1974,7 @@ HTTP hostname for targeted placement.
 
 <summary>
 
-Host object {host }
+Host object { host }
 
 </summary>
 
@@ -2004,7 +2004,7 @@ TCP host:port for targeted placement.
 
 <summary>
 
-tail\_consumers: optional array of object {name }
+tail\_consumers: optional array of object { name }
 
 Other Workers that should consume logs from newly created Previews.
 

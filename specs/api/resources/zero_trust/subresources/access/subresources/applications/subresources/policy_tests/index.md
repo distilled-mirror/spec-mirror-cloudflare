@@ -36,7 +36,7 @@ POST/accounts/{account\_id}/access/policy-tests
 
 <summary>
 
-PolicyTestGetResponse object {id, percent\_approved, percent\_blocked, 7 more }
+PolicyTestGetResponse object { id, percent\_approved, percent\_blocked, 7 more }
 
 </summary>
 
@@ -76,7 +76,7 @@ The percentage of users processed so far (of the entire user base).
 
 <summary>
 
-status: optional "blocked"or "processing"or "exceeded time"or "complete"
+status: optional "blocked" or "processing" or "exceeded time" or "complete"
 
 The status of the policy test.
 
@@ -136,7 +136,7 @@ The number of (processed) users errored based on policy evaluation results.
 
 <summary>
 
-PolicyTestCreateResponse object {id, status }
+PolicyTestCreateResponse object { id, status }
 
 </summary>
 
@@ -170,7 +170,7 @@ GET/accounts/{account\_id}/access/policy-tests/{policy\_test\_id}/users
 
 <summary>
 
-UserListResponse object {id, email, name, status }
+UserListResponse object { id, email, name, status }
 
 </summary>
 
@@ -200,7 +200,7 @@ The name of the user.
 
 <summary>
 
-status: optional "approved"or "blocked"or "error"
+status: optional "approved" or "blocked" or "error"
 
 Policy evaluation result for an individual user.
 

@@ -108,7 +108,7 @@ messages: array of unknown
 
 <summary>
 
-result: object {id, created\_at, email, 5 more }
+result: object { id, created\_at, email, 5 more }
 
 </summary>
 
@@ -166,7 +166,7 @@ Advisory note for this suppression, if any.
 
 <summary>
 
-scope: optional object {type } or object {type, value }
+scope: optional object { type } or object { type, value }
 
 Where the suppression applies: <code>account</code> for every sending domain of the account, or <code>sending_domain</code> for one envelope MAIL FROM domain.
 
@@ -178,7 +178,7 @@ One of the following:
 
 <summary>
 
-Type object {type }
+Type object { type }
 
 </summary>
 
@@ -196,7 +196,7 @@ Blocks the recipient for every sending domain of the account.
 
 <summary>
 
-object {type, value }
+object { type, value }
 
 </summary>
 

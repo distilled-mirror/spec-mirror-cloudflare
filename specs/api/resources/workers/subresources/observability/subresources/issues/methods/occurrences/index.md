@@ -70,7 +70,7 @@ Used when interacting with the Origin CA certificates API. <a href="https://deve
 
 ##### Accepted Permissions (at least one required)
 
-`Workers Observability Write``Workers Observability Read`
+`Workers Metadata Read-Only``Workers Observability Write``Workers Observability Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -112,7 +112,7 @@ minimum1
 
 <summary>
 
-errors: array of object {message }
+errors: array of object { message }
 
 </summary>
 
@@ -128,7 +128,7 @@ message: string
 
 <summary>
 
-messages: array of object {message }
+messages: array of object { message }
 
 </summary>
 
@@ -144,7 +144,7 @@ message: "Successful request"
 
 <summary>
 
-result: array of object {id, error, invocation, 5 more }
+result: array of object { id, error, invocation, 5 more }
 
 </summary>
 
@@ -158,7 +158,7 @@ Unique occurrence ID.
 
 <summary>
 
-error: object {handled, mechanism, message, 3 more }
+error: object { handled, mechanism, message, 3 more }
 
 </summary>
 
@@ -170,7 +170,7 @@ handled: boolean
 
 <summary>
 
-mechanism: "structured-log"or "error-log"or "stack-log"or 3 more
+mechanism: "structured-log" or "error-log" or "stack-log" or 3 more
 
 </summary>
 
@@ -228,7 +228,7 @@ stack: optional string
 
 <summary>
 
-invocation: object {id, traceId, type, 16 more }
+invocation: object { id, traceId, type, 16 more }
 
 </summary>
 
@@ -328,7 +328,7 @@ Occurrence timestamp as Unix epoch milliseconds.
 
 <summary>
 
-trail: array of object {level, message, timestamp, type } or object {name, ongoing, spanId, 3 more }
+trail: array of object { level, message, timestamp, type } or object { name, ongoing, spanId, 3 more }
 
 </summary>
 
@@ -338,7 +338,7 @@ One of the following:
 
 <summary>
 
-object {level, message, timestamp, type }
+object { level, message, timestamp, type }
 
 </summary>
 
@@ -366,7 +366,7 @@ type: "log"
 
 <summary>
 
-object {name, ongoing, spanId, 3 more }
+object { name, ongoing, spanId, 3 more }
 
 </summary>
 
@@ -406,7 +406,7 @@ parentSpanId: optional string
 
 <summary>
 
-worker: object {executionModel, scriptName, scriptTags, 3 more }
+worker: object { executionModel, scriptName, scriptTags, 3 more }
 
 </summary>
 
@@ -434,7 +434,7 @@ entrypoint: optional string
 
 <summary>
 
-scriptVersion: optional object {id, tag }
+scriptVersion: optional object { id, tag }
 
 </summary>
 
@@ -458,7 +458,7 @@ tag: optional string
 
 <summary>
 
-context: optional object {account, session, user }
+context: optional object { account, session, user }
 
 </summary>
 
@@ -482,7 +482,7 @@ user: optional string
 
 <summary>
 
-request: optional object {headers }
+request: optional object { headers }
 
 </summary>
 
@@ -502,7 +502,7 @@ headers: map\[string]
 
 <summary>
 
-result\_info: object {count, cursors, per\_page }
+result\_info: object { count, cursors, per\_page }
 
 </summary>
 
@@ -516,7 +516,7 @@ minimum0
 
 <summary>
 
-cursors: object {after }
+cursors: object { after }
 
 </summary>
 

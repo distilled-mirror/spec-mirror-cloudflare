@@ -58,7 +58,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Images Read``Images Write`
+`Images Metadata Read``Images Read``Images Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -98,7 +98,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -140,7 +140,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -168,7 +168,7 @@ result: <a href="https://developers.cloudflare.com/api/resources/images#(resourc
 
 <summary>
 
-variants: optional object {hero }
+variants: optional object { hero }
 
 </summary>
 
@@ -176,7 +176,7 @@ variants: optional object {hero }
 
 <summary>
 
-hero: optional object {id, options, neverRequireSignedURLs }
+hero: optional object { id, options, neverRequireSignedURLs }
 
 </summary>
 
@@ -190,7 +190,7 @@ maxLength99
 
 <summary>
 
-options: object {fit, height, metadata, width }
+options: object { fit, height, metadata, width }
 
 Allows you to define image resizing sizes for different use cases.
 
@@ -200,7 +200,7 @@ Allows you to define image resizing sizes for different use cases.
 
 <summary>
 
-fit: "scale-down"or "contain"or "cover"or 2 more
+fit: "scale-down" or "contain" or "cover" or 2 more
 
 The fit property describes how the width and height dimensions should be interpreted.
 
@@ -244,7 +244,7 @@ minimum1
 
 <summary>
 
-metadata: "keep"or "copyright"or "none"
+metadata: "keep" or "copyright" or "none"
 
 What EXIF data should be preserved in the output image.
 

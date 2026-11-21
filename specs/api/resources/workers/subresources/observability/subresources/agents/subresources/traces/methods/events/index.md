@@ -72,7 +72,7 @@ Used when interacting with the Origin CA certificates API. <a href="https://deve
 
 ##### Accepted Permissions (at least one required)
 
-`Workers Observability Write``Workers Observability Read`
+`Workers Metadata Read-Only``Workers Observability Write``Workers Observability Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -130,7 +130,7 @@ minimum0
 
 <summary>
 
-errors: array of object {message }
+errors: array of object { message }
 
 </summary>
 
@@ -146,7 +146,7 @@ message: string
 
 <summary>
 
-messages: array of object {message }
+messages: array of object { message }
 
 </summary>
 
@@ -162,7 +162,7 @@ message: "Successful request"
 
 <summary>
 
-result: array of object {"$metadata", dataset, source, 3 more }
+result: array of object { "$metadata", dataset, source, 3 more }
 
 </summary>
 
@@ -170,7 +170,7 @@ result: array of object {"$metadata", dataset, source, 3 more }
 
 <summary>
 
-"$metadata": object {id, account, cloudService, 35 more }
+"$metadata": object { id, account, cloudService, 35 more }
 
 Structured metadata extracted from the event. These fields are indexed and available for filtering and aggregation.
 
@@ -344,7 +344,7 @@ Human-readable name for this span.
 
 <summary>
 
-spanStatus: optional "unset"or "ok"or "error"
+spanStatus: optional "unset" or "ok" or "error"
 
 OpenTelemetry span status. Present only on spans. <code>unset</code> when the span did not set a status, including spans recorded before status was captured.
 
@@ -464,7 +464,7 @@ The dataset this event belongs to (e.g. cloudflare-workers).
 
 <summary>
 
-source: stringor map\[unknown]
+source: string or map\[unknown]
 
 Raw log payload. May be a string or a structured object depending on how the log was emitted.
 
@@ -502,7 +502,7 @@ Cloudflare Containers event information that enriches your logs for identifying 
 
 <summary>
 
-"$workers": optional object {eventType, scriptName, durableObjectId, 11 more } or object {cpuTimeMs, eventType, outcome, 15 more }
+"$workers": optional object { eventType, scriptName, durableObjectId, 11 more } or object { cpuTimeMs, eventType, outcome, 15 more }
 
 Cloudflare Workers event information that enriches your logs for identifying and debugging issues.
 
@@ -514,7 +514,7 @@ One of the following:
 
 <summary>
 
-object {eventType, scriptName, durableObjectId, 11 more }
+object { eventType, scriptName, durableObjectId, 11 more }
 
 </summary>
 
@@ -522,7 +522,7 @@ object {eventType, scriptName, durableObjectId, 11 more }
 
 <summary>
 
-eventType: "fetch"or "scheduled"or "alarm"or 9 more
+eventType: "fetch" or "scheduled" or "alarm" or 9 more
 
 </summary>
 
@@ -600,7 +600,7 @@ event: optional map\[unknown]
 
 <summary>
 
-executionModel: optional "durableObject"or "stateless"
+executionModel: optional "durableObject" or "stateless"
 
 </summary>
 
@@ -622,7 +622,7 @@ One of the following:
 
 <summary>
 
-gateway: optional object {requestId }
+gateway: optional object { requestId }
 
 </summary>
 
@@ -642,7 +642,7 @@ outcome: optional string
 
 <summary>
 
-preview: optional object {id, name, slug }
+preview: optional object { id, name, slug }
 
 </summary>
 
@@ -670,7 +670,7 @@ requestId: optional string
 
 <summary>
 
-scriptVersion: optional object {id, message, tag }
+scriptVersion: optional object { id, message, tag }
 
 </summary>
 
@@ -710,7 +710,7 @@ truncated: optional boolean
 
 <summary>
 
-object {cpuTimeMs, eventType, outcome, 15 more }
+object { cpuTimeMs, eventType, outcome, 15 more }
 
 </summary>
 
@@ -722,7 +722,7 @@ cpuTimeMs: number
 
 <summary>
 
-eventType: "fetch"or "scheduled"or "alarm"or 9 more
+eventType: "fetch" or "scheduled" or "alarm" or 9 more
 
 </summary>
 
@@ -796,7 +796,7 @@ wallTimeMs: number
 
 <summary>
 
-diagnosticsChannelEvents: optional array of object {channel, message, timestamp }
+diagnosticsChannelEvents: optional array of object { channel, message, timestamp }
 
 </summary>
 
@@ -836,7 +836,7 @@ event: optional map\[unknown]
 
 <summary>
 
-executionModel: optional "durableObject"or "stateless"
+executionModel: optional "durableObject" or "stateless"
 
 </summary>
 
@@ -858,7 +858,7 @@ One of the following:
 
 <summary>
 
-gateway: optional object {requestId }
+gateway: optional object { requestId }
 
 </summary>
 
@@ -874,7 +874,7 @@ requestId: string
 
 <summary>
 
-preview: optional object {id, name, slug }
+preview: optional object { id, name, slug }
 
 </summary>
 
@@ -902,7 +902,7 @@ requestId: optional string
 
 <summary>
 
-scriptVersion: optional object {id, message, tag }
+scriptVersion: optional object { id, message, tag }
 
 </summary>
 
@@ -950,7 +950,7 @@ truncated: optional boolean
 
 <summary>
 
-result\_info: object {count, cursors, from, 2 more }
+result\_info: object { count, cursors, from, 2 more }
 
 </summary>
 
@@ -966,7 +966,7 @@ minimum0
 
 <summary>
 
-cursors: object {after }
+cursors: object { after }
 
 </summary>
 

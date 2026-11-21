@@ -28,7 +28,7 @@ PUT/zones/{zone\_id}/activation\_check
 
 <summary>
 
-ActivationCheckTriggerResponse object {id }
+ActivationCheckTriggerResponse object { id }
 
 </summary>
 

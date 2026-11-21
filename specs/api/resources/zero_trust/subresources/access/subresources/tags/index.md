@@ -46,7 +46,7 @@ DELETE/accounts/{account\_id}/access/tags/{tag\_name}
 
 <summary>
 
-Tag object {name }
+Tag object { name }
 
 A tag
 
@@ -66,7 +66,7 @@ The name of the tag
 
 <summary>
 
-TagDeleteResponse object {name }
+TagDeleteResponse object { name }
 
 </summary>
 

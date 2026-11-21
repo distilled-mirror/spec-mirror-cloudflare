@@ -90,7 +90,7 @@ minimum0
 
 <summary>
 
-sortField: optional "id"or "user\_id"or "description"or 2 more
+sortField: optional "id" or "user\_id" or "description" or 2 more
 
 The field to sort by. Default is updated\_at.
 
@@ -126,7 +126,7 @@ One of the following:
 
 <summary>
 
-sortOrder: optional "DESC"or "ASC"
+sortOrder: optional "DESC" or "ASC"
 
 Sorting order. Default is DESC.
 
@@ -152,7 +152,7 @@ One of the following:
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -174,7 +174,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -194,7 +194,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -216,7 +216,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -236,7 +236,7 @@ pointer: optional string
 
 <summary>
 
-result: array of object {id, createdAt, description, 2 more }
+result: array of object { id, createdAt, description, 2 more }
 
 </summary>
 

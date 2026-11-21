@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Workers AI Write``Workers AI Read`
+`AI Search Index Engine``Auto Rag Write Run Engine``Workers AI Write``Workers AI Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -72,7 +72,7 @@ Cloudflare account ID used for this AI model request.
 
 <summary>
 
-file: object {files }
+file: object { files }
 
 </summary>
 
@@ -92,7 +92,7 @@ Files to convert, supplied as multipart file uploads.
 
 <summary>
 
-result: array of object {data, format, mimeType, 2 more }
+result: array of object { data, format, mimeType, 2 more }
 
 </summary>
 

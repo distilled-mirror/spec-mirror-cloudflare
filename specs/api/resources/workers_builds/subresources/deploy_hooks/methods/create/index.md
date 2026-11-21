@@ -94,7 +94,7 @@ minLength1
 
 <summary>
 
-errors: array of object {message, code }
+errors: array of object { message, code }
 
 </summary>
 
@@ -118,7 +118,7 @@ messages: array of string
 
 <summary>
 
-result: object {branch, created\_on, deploy\_hook\_name, 3 more } or object {branch, created\_on, deploy\_hook\_name, 3 more }
+result: object { branch, created\_on, deploy\_hook\_name, 3 more } or object { branch, created\_on, deploy\_hook\_name, 3 more }
 
 </summary>
 
@@ -128,7 +128,7 @@ One of the following:
 
 <summary>
 
-object {branch, created\_on, deploy\_hook\_name, 3 more }
+object { branch, created\_on, deploy\_hook\_name, 3 more }
 
 </summary>
 
@@ -182,7 +182,7 @@ formatdate-time
 
 <summary>
 
-object {branch, created\_on, deploy\_hook\_name, 3 more }
+object { branch, created\_on, deploy\_hook\_name, 3 more }
 
 </summary>
 
@@ -244,7 +244,7 @@ success: boolean
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

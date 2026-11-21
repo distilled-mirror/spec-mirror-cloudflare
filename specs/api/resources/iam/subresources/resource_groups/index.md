@@ -44,7 +44,7 @@ DELETE/accounts/{account\_id}/iam/resource\_groups/{resource\_group\_id}
 
 <summary>
 
-ResourceGroupListResponse object {id, scope, meta, name }
+ResourceGroupListResponse object { id, scope, meta, name }
 
 A group of scoped resources.
 
@@ -60,7 +60,7 @@ Identifier of the resource group.
 
 <summary>
 
-scope: object {key, objects }
+scope: object { key, objects }
 
 The scope associated to the resource group
 
@@ -76,7 +76,7 @@ This is a combination of pre-defined resource name and identifier (like Account 
 
 <summary>
 
-objects: array of object {key }
+objects: array of object { key }
 
 A list of scope objects for additional context.
 
@@ -100,7 +100,7 @@ This is a combination of pre-defined resource name and identifier (like Zone ID 
 
 <summary>
 
-meta: optional object {key, value }
+meta: optional object { key, value }
 
 Attributes associated to the resource group.
 
@@ -132,7 +132,7 @@ Name of the resource group.
 
 <summary>
 
-ResourceGroupGetResponse object {id, scope, meta, name }
+ResourceGroupGetResponse object { id, scope, meta, name }
 
 A group of scoped resources.
 
@@ -148,7 +148,7 @@ Identifier of the resource group.
 
 <summary>
 
-scope: object {key, objects }
+scope: object { key, objects }
 
 The scope associated to the resource group
 
@@ -164,7 +164,7 @@ This is a combination of pre-defined resource name and identifier (like Account 
 
 <summary>
 
-objects: array of object {key }
+objects: array of object { key }
 
 A list of scope objects for additional context.
 
@@ -188,7 +188,7 @@ This is a combination of pre-defined resource name and identifier (like Zone ID 
 
 <summary>
 
-meta: optional object {key, value }
+meta: optional object { key, value }
 
 Attributes associated to the resource group.
 
@@ -220,7 +220,7 @@ Name of the resource group.
 
 <summary>
 
-ResourceGroupCreateResponse object {id, scope, meta, name }
+ResourceGroupCreateResponse object { id, scope, meta, name }
 
 A group of scoped resources.
 
@@ -236,7 +236,7 @@ Identifier of the resource group.
 
 <summary>
 
-scope: object {key, objects }
+scope: object { key, objects }
 
 The scope associated to the resource group
 
@@ -252,7 +252,7 @@ This is a combination of pre-defined resource name and identifier (like Account 
 
 <summary>
 
-objects: array of object {key }
+objects: array of object { key }
 
 A list of scope objects for additional context.
 
@@ -276,7 +276,7 @@ This is a combination of pre-defined resource name and identifier (like Zone ID 
 
 <summary>
 
-meta: optional object {key, value }
+meta: optional object { key, value }
 
 Attributes associated to the resource group.
 
@@ -308,7 +308,7 @@ Name of the resource group.
 
 <summary>
 
-ResourceGroupUpdateResponse object {id, scope, meta, name }
+ResourceGroupUpdateResponse object { id, scope, meta, name }
 
 A group of scoped resources.
 
@@ -324,7 +324,7 @@ Identifier of the resource group.
 
 <summary>
 
-scope: object {key, objects }
+scope: object { key, objects }
 
 The scope associated to the resource group
 
@@ -340,7 +340,7 @@ This is a combination of pre-defined resource name and identifier (like Account 
 
 <summary>
 
-objects: array of object {key }
+objects: array of object { key }
 
 A list of scope objects for additional context.
 
@@ -364,7 +364,7 @@ This is a combination of pre-defined resource name and identifier (like Zone ID 
 
 <summary>
 
-meta: optional object {key, value }
+meta: optional object { key, value }
 
 Attributes associated to the resource group.
 
@@ -396,7 +396,7 @@ Name of the resource group.
 
 <summary>
 
-ResourceGroupDeleteResponse object {id }
+ResourceGroupDeleteResponse object { id }
 
 </summary>
 

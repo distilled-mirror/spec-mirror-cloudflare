@@ -34,7 +34,7 @@ DELETE/accounts/{account\_id}/botnet\_feed/configs/asn/{asn\_id}
 
 <summary>
 
-ASNGetResponse object {asn }
+ASNGetResponse object { asn }
 
 </summary>
 
@@ -50,7 +50,7 @@ asn: optional number
 
 <summary>
 
-ASNDeleteResponse object {asn }
+ASNDeleteResponse object { asn }
 
 </summary>
 

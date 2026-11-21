@@ -86,7 +86,7 @@ formatdate-time
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -120,7 +120,7 @@ minimum1
 
 <summary>
 
-metric: optional "v4\_24s"or "v6\_48s"
+metric: optional "v4\_24s" or "v6\_48s"
 
 Ranking metric: IPv4 /24 count or IPv6 /48 count.
 
@@ -146,7 +146,7 @@ One of the following:
 
 <summary>
 
-result: object {anchorTs, asns, country, metric }
+result: object { anchorTs, asns, country, metric }
 
 </summary>
 
@@ -160,7 +160,7 @@ formatdate-time
 
 <summary>
 
-asns: array of object {asn, v4\_24s, v6\_48s }
+asns: array of object { asn, v4\_24s, v6\_48s }
 
 </summary>
 

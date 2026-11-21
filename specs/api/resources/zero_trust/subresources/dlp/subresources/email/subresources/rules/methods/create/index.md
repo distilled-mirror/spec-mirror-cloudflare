@@ -74,7 +74,7 @@ account\_id: string
 
 <summary>
 
-action: object {action, message }
+action: object { action, message }
 
 </summary>
 
@@ -94,7 +94,7 @@ message: optional string
 
 <summary>
 
-conditions: array of object {operator, selector, value }
+conditions: array of object { operator, selector, value }
 
 Triggered if all conditions match.
 
@@ -104,7 +104,7 @@ Triggered if all conditions match.
 
 <summary>
 
-operator: "InList"or "NotInList"or "MatchRegex"or "NotMatchRegex"
+operator: "InList" or "NotInList" or "MatchRegex" or "NotMatchRegex"
 
 </summary>
 
@@ -134,7 +134,7 @@ One of the following:
 
 <summary>
 
-selector: "Recipients"or "Sender"or "DLPProfiles"
+selector: "Recipients" or "Sender" or "DLPProfiles"
 
 </summary>
 
@@ -160,7 +160,7 @@ One of the following:
 
 <summary>
 
-value: array of stringor string
+value: array of string or string
 
 </summary>
 
@@ -200,7 +200,7 @@ description: optional string
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -222,7 +222,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -242,7 +242,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -264,7 +264,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -290,7 +290,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {action, conditions, created\_at, 6 more }
+result: optional object { action, conditions, created\_at, 6 more }
 
 </summary>
 
@@ -298,7 +298,7 @@ result: optional object {action, conditions, created\_at, 6 more }
 
 <summary>
 
-action: object {action, message }
+action: object { action, message }
 
 </summary>
 
@@ -318,7 +318,7 @@ message: optional string
 
 <summary>
 
-conditions: array of object {operator, selector, value }
+conditions: array of object { operator, selector, value }
 
 Triggered if all conditions match.
 
@@ -328,7 +328,7 @@ Triggered if all conditions match.
 
 <summary>
 
-operator: "InList"or "NotInList"or "MatchRegex"or "NotMatchRegex"
+operator: "InList" or "NotInList" or "MatchRegex" or "NotMatchRegex"
 
 </summary>
 
@@ -358,7 +358,7 @@ One of the following:
 
 <summary>
 
-selector: "Recipients"or "Sender"or "DLPProfiles"
+selector: "Recipients" or "Sender" or "DLPProfiles"
 
 </summary>
 
@@ -384,7 +384,7 @@ One of the following:
 
 <summary>
 
-value: array of stringor string
+value: array of string or string
 
 </summary>
 

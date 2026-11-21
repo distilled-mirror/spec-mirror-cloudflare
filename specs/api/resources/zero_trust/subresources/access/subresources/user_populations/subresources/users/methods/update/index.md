@@ -88,7 +88,7 @@ The SCIM user identifier.
 
 <summary>
 
-Operations: array of object {op, path, value }
+Operations: array of object { op, path, value }
 
 </summary>
 
@@ -96,7 +96,7 @@ Operations: array of object {op, path, value }
 
 <summary>
 
-op: "add"or "remove"or "replace"
+op: "add" or "remove" or "replace"
 
 </summary>
 
@@ -126,7 +126,7 @@ path: optional string
 
 <summary>
 
-value: optional stringor numberor booleanor 2 more
+value: optional string or number or boolean or 2 more
 
 </summary>
 
@@ -148,7 +148,7 @@ boolean
 
 <summary>
 
-array of stringor booleanor numberor unknown
+array of string or boolean or number or unknown
 
 </summary>
 
@@ -196,7 +196,7 @@ schemas: optional array of string
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -218,7 +218,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -238,7 +238,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -260,7 +260,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -286,7 +286,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, active, displayName, 6 more }
+result: optional object { id, active, displayName, 6 more }
 
 A SCIM User resource. Additional SCIM extension attributes are supported.
 
@@ -308,7 +308,7 @@ displayName: optional string
 
 <summary>
 
-emails: optional array of object {primary, type, value }
+emails: optional array of object { primary, type, value }
 
 </summary>
 
@@ -336,7 +336,7 @@ externalId: optional string
 
 <summary>
 
-meta: optional object {created, lastModified, location, 2 more }
+meta: optional object { created, lastModified, location, 2 more }
 
 </summary>
 
@@ -374,7 +374,7 @@ version: optional string
 
 <summary>
 
-name: optional object {familyName, formatted, givenName, 3 more }
+name: optional object { familyName, formatted, givenName, 3 more }
 
 </summary>
 

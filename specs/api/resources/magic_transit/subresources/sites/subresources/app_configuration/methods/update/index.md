@@ -150,7 +150,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -192,7 +192,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -212,7 +212,7 @@ pointer: optional string
 
 <summary>
 
-result: object {account\_app\_id, id, breakout, 3 more } or object {managed\_app\_id, id, breakout, 3 more }
+result: object { account\_app\_id, id, breakout, 3 more } or object { managed\_app\_id, id, breakout, 3 more }
 
 Traffic decision configuration for an app.
 
@@ -224,7 +224,7 @@ One of the following:
 
 <summary>
 
-AccountApp object {account\_app\_id, id, breakout, 3 more }
+AccountApp object { account\_app\_id, id, breakout, 3 more }
 
 </summary>
 
@@ -280,7 +280,7 @@ maxLength32
 
 <summary>
 
-ManagedApp object {managed\_app\_id, id, breakout, 3 more }
+ManagedApp object { managed\_app\_id, id, breakout, 3 more }
 
 </summary>
 

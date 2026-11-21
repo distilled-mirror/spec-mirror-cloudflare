@@ -52,7 +52,7 @@ A fully-qualified domain name (FQDN).
 
 <summary>
 
-Certificate object {id, associated\_hostnames, expires\_on, 2 more }
+Certificate object { id, associated\_hostnames, expires\_on, 2 more }
 
 </summary>
 
@@ -94,7 +94,7 @@ The name of the certificate.
 
 <summary>
 
-CertificateDeleteResponse object {id }
+CertificateDeleteResponse object { id }
 
 </summary>
 
@@ -126,7 +126,7 @@ PUT/{accounts\_or\_zones}/{account\_or\_zone\_id}/access/certificates/settings
 
 <summary>
 
-CertificateSettings object {china\_network, client\_certificate\_forwarding, hostname }
+CertificateSettings object { china\_network, client\_certificate\_forwarding, hostname }
 
 </summary>
 

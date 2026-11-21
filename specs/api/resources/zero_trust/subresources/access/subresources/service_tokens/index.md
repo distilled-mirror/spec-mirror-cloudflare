@@ -54,7 +54,7 @@ POST/accounts/{account\_id}/access/service\_tokens/{service\_token\_id}/rotate
 
 <summary>
 
-ServiceToken object {id, client\_id, duration, 7 more }
+ServiceToken object { id, client\_id, duration, 7 more }
 
 </summary>
 
@@ -132,7 +132,7 @@ Tags associated with the service token, as key-value pairs. On update, replaces 
 
 <summary>
 
-ServiceTokenCreateResponse object {id, client\_id, client\_secret, 4 more }
+ServiceTokenCreateResponse object { id, client\_id, client\_secret, 4 more }
 
 </summary>
 
@@ -186,7 +186,7 @@ Tags associated with the service token, as key-value pairs. On update, replaces 
 
 <summary>
 
-ServiceTokenRotateResponse object {id, client\_id, client\_secret, 4 more }
+ServiceTokenRotateResponse object { id, client\_id, client\_secret, 4 more }
 
 </summary>
 

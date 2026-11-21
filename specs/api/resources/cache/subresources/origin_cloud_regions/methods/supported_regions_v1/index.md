@@ -94,7 +94,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -136,7 +136,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -162,7 +162,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {obtained\_codes, vendors }
+result: optional object { obtained\_codes, vendors }
 
 Cloud vendors and their supported regions for origin cloud region mappings.
 
@@ -178,7 +178,7 @@ Whether Cloudflare airport codes (IATA colo identifiers) were successfully resol
 
 <summary>
 
-vendors: map\[array of object {name, upper\_tier\_colos } ]
+vendors: map\[array of object { name, upper\_tier\_colos } ]
 
 Map of vendor name to list of supported regions.
 

@@ -70,7 +70,7 @@ maxLength32
 
 <summary>
 
-body: object {messages, type } or object {messages, type }
+body: object { messages, type } or object { messages, type }
 
 </summary>
 
@@ -80,7 +80,7 @@ One of the following:
 
 <summary>
 
-Reclassification object {messages, type }
+Reclassification object { messages, type }
 
 </summary>
 
@@ -88,7 +88,7 @@ Reclassification object {messages, type }
 
 <summary>
 
-messages: array of object {alert\_id, expected\_disposition, escalated\_submission\_id }
+messages: array of object { alert\_id, expected\_disposition, escalated\_submission\_id }
 
 </summary>
 
@@ -102,7 +102,7 @@ Alert ID of the detection to reclassify.
 
 <summary>
 
-expected\_disposition: "MALICIOUS"or "SUSPICIOUS"or "SPOOF"or 3 more
+expected\_disposition: "MALICIOUS" or "SUSPICIOUS" or "SPOOF" or 3 more
 
 The disposition a message is submitted to have.
 
@@ -160,7 +160,7 @@ type: "reclassification"
 
 <summary>
 
-MissedDetection object {messages, type }
+MissedDetection object { messages, type }
 
 </summary>
 
@@ -168,7 +168,7 @@ MissedDetection object {messages, type }
 
 <summary>
 
-messages: array of object {expected\_disposition, message\_id, postfix\_id, 3 more }
+messages: array of object { expected\_disposition, message\_id, postfix\_id, 3 more }
 
 </summary>
 
@@ -176,7 +176,7 @@ messages: array of object {expected\_disposition, message\_id, postfix\_id, 3 mo
 
 <summary>
 
-expected\_disposition: "MALICIOUS"or "SUSPICIOUS"or "SPOOF"or 3 more
+expected\_disposition: "MALICIOUS" or "SUSPICIOUS" or "SPOOF" or 3 more
 
 The disposition a message is submitted to have.
 
@@ -264,7 +264,7 @@ type: "missed\_detection"
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -286,7 +286,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -306,7 +306,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -328,7 +328,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -348,7 +348,7 @@ pointer: optional string
 
 <summary>
 
-result: object {results }
+result: object { results }
 
 </summary>
 
@@ -356,7 +356,7 @@ result: object {results }
 
 <summary>
 
-results: array of object {id, accepted, error }
+results: array of object { id, accepted, error }
 
 </summary>
 

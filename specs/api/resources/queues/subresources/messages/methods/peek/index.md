@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Queues Write``Workers Scripts Write`
+`Workers Metadata Read-Only``Workers Editor``Workers Content Read-Only``Workers Admin``Queues Write``Queues Read``Workers Scripts Write``Workers Scripts Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -114,7 +114,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -138,7 +138,7 @@ messages: optional array of string
 
 <summary>
 
-result: optional object {messages }
+result: optional object { messages }
 
 </summary>
 
@@ -146,7 +146,7 @@ result: optional object {messages }
 
 <summary>
 
-messages: optional array of object {id, attempts, body, 3 more }
+messages: optional array of object { id, attempts, body, 3 more }
 
 </summary>
 

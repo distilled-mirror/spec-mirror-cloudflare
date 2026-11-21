@@ -96,7 +96,7 @@ Column(s) that were aggregated by
 
 <summary>
 
-aggregations: array of object {count, date }
+aggregations: array of object { count, date }
 
 Array of aggregation results with dynamic fields based on aggregateBy columns
 
@@ -128,7 +128,7 @@ Total number of events in the aggregation
 
 <summary>
 
-dateRange: optional object {endDate, startDate }
+dateRange: optional object { endDate, startDate }
 
 Date range used for filtering
 

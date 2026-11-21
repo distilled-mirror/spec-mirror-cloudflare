@@ -34,7 +34,7 @@ DELETE/zones/{zone\_id}/managed\_headers
 
 <summary>
 
-ManagedTransformListResponse = object {managed\_request\_headers, managed\_response\_headers } or object {managed\_request\_headers, managed\_response\_headers } or object {managed\_request\_headers, managed\_response\_headers } or 2 more
+ManagedTransformListResponse = object { managed\_request\_headers, managed\_response\_headers } or object { managed\_request\_headers, managed\_response\_headers } or object { managed\_request\_headers, managed\_response\_headers } or 2 more
 
 A result.
 
@@ -46,7 +46,7 @@ One of the following:
 
 <summary>
 
-object {managed\_request\_headers, managed\_response\_headers }
+object { managed\_request\_headers, managed\_response\_headers }
 
 </summary>
 
@@ -54,7 +54,7 @@ object {managed\_request\_headers, managed\_response\_headers }
 
 <summary>
 
-managed\_request\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
+managed\_request\_headers: optional array of object { id, enabled, has\_conflict, conflicts\_with }
 
 The list of Managed Request Transforms.
 
@@ -94,7 +94,7 @@ The Managed Transforms that this Managed Transform conflicts with.
 
 <summary>
 
-managed\_response\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
+managed\_response\_headers: optional array of object { id, enabled, has\_conflict, conflicts\_with }
 
 The list of Managed Response Transforms.
 
@@ -138,7 +138,7 @@ The Managed Transforms that this Managed Transform conflicts with.
 
 <summary>
 
-object {managed\_request\_headers, managed\_response\_headers }
+object { managed\_request\_headers, managed\_response\_headers }
 
 </summary>
 
@@ -146,7 +146,7 @@ object {managed\_request\_headers, managed\_response\_headers }
 
 <summary>
 
-managed\_request\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
+managed\_request\_headers: optional array of object { id, enabled, has\_conflict, conflicts\_with }
 
 The list of Managed Request Transforms.
 
@@ -186,7 +186,7 @@ The Managed Transforms that this Managed Transform conflicts with.
 
 <summary>
 
-managed\_response\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
+managed\_response\_headers: optional array of object { id, enabled, has\_conflict, conflicts\_with }
 
 The list of Managed Response Transforms.
 
@@ -230,7 +230,7 @@ The Managed Transforms that this Managed Transform conflicts with.
 
 <summary>
 
-object {managed\_request\_headers, managed\_response\_headers }
+object { managed\_request\_headers, managed\_response\_headers }
 
 </summary>
 
@@ -238,7 +238,7 @@ object {managed\_request\_headers, managed\_response\_headers }
 
 <summary>
 
-managed\_request\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
+managed\_request\_headers: optional array of object { id, enabled, has\_conflict, conflicts\_with }
 
 The list of Managed Request Transforms.
 
@@ -278,7 +278,7 @@ The Managed Transforms that this Managed Transform conflicts with.
 
 <summary>
 
-managed\_response\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
+managed\_response\_headers: optional array of object { id, enabled, has\_conflict, conflicts\_with }
 
 The list of Managed Response Transforms.
 
@@ -322,7 +322,7 @@ The Managed Transforms that this Managed Transform conflicts with.
 
 <summary>
 
-object {managed\_request\_headers, managed\_response\_headers }
+object { managed\_request\_headers, managed\_response\_headers }
 
 </summary>
 
@@ -330,7 +330,7 @@ object {managed\_request\_headers, managed\_response\_headers }
 
 <summary>
 
-managed\_request\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
+managed\_request\_headers: optional array of object { id, enabled, has\_conflict, conflicts\_with }
 
 The list of Managed Request Transforms.
 
@@ -370,7 +370,7 @@ The Managed Transforms that this Managed Transform conflicts with.
 
 <summary>
 
-managed\_response\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
+managed\_response\_headers: optional array of object { id, enabled, has\_conflict, conflicts\_with }
 
 The list of Managed Response Transforms.
 
@@ -414,7 +414,7 @@ The Managed Transforms that this Managed Transform conflicts with.
 
 <summary>
 
-object {managed\_request\_headers, managed\_response\_headers }
+object { managed\_request\_headers, managed\_response\_headers }
 
 </summary>
 
@@ -422,7 +422,7 @@ object {managed\_request\_headers, managed\_response\_headers }
 
 <summary>
 
-managed\_request\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
+managed\_request\_headers: optional array of object { id, enabled, has\_conflict, conflicts\_with }
 
 The list of Managed Request Transforms.
 
@@ -462,7 +462,7 @@ The Managed Transforms that this Managed Transform conflicts with.
 
 <summary>
 
-managed\_response\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
+managed\_response\_headers: optional array of object { id, enabled, has\_conflict, conflicts\_with }
 
 The list of Managed Response Transforms.
 
@@ -510,7 +510,7 @@ The Managed Transforms that this Managed Transform conflicts with.
 
 <summary>
 
-ManagedTransformEditResponse = object {managed\_request\_headers, managed\_response\_headers } or object {managed\_request\_headers, managed\_response\_headers } or object {managed\_request\_headers, managed\_response\_headers } or 2 more
+ManagedTransformEditResponse = object { managed\_request\_headers, managed\_response\_headers } or object { managed\_request\_headers, managed\_response\_headers } or object { managed\_request\_headers, managed\_response\_headers } or 2 more
 
 A result.
 
@@ -522,7 +522,7 @@ One of the following:
 
 <summary>
 
-object {managed\_request\_headers, managed\_response\_headers }
+object { managed\_request\_headers, managed\_response\_headers }
 
 </summary>
 
@@ -530,7 +530,7 @@ object {managed\_request\_headers, managed\_response\_headers }
 
 <summary>
 
-managed\_request\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
+managed\_request\_headers: optional array of object { id, enabled, has\_conflict, conflicts\_with }
 
 The list of Managed Request Transforms.
 
@@ -570,7 +570,7 @@ The Managed Transforms that this Managed Transform conflicts with.
 
 <summary>
 
-managed\_response\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
+managed\_response\_headers: optional array of object { id, enabled, has\_conflict, conflicts\_with }
 
 The list of Managed Response Transforms.
 
@@ -614,7 +614,7 @@ The Managed Transforms that this Managed Transform conflicts with.
 
 <summary>
 
-object {managed\_request\_headers, managed\_response\_headers }
+object { managed\_request\_headers, managed\_response\_headers }
 
 </summary>
 
@@ -622,7 +622,7 @@ object {managed\_request\_headers, managed\_response\_headers }
 
 <summary>
 
-managed\_request\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
+managed\_request\_headers: optional array of object { id, enabled, has\_conflict, conflicts\_with }
 
 The list of Managed Request Transforms.
 
@@ -662,7 +662,7 @@ The Managed Transforms that this Managed Transform conflicts with.
 
 <summary>
 
-managed\_response\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
+managed\_response\_headers: optional array of object { id, enabled, has\_conflict, conflicts\_with }
 
 The list of Managed Response Transforms.
 
@@ -706,7 +706,7 @@ The Managed Transforms that this Managed Transform conflicts with.
 
 <summary>
 
-object {managed\_request\_headers, managed\_response\_headers }
+object { managed\_request\_headers, managed\_response\_headers }
 
 </summary>
 
@@ -714,7 +714,7 @@ object {managed\_request\_headers, managed\_response\_headers }
 
 <summary>
 
-managed\_request\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
+managed\_request\_headers: optional array of object { id, enabled, has\_conflict, conflicts\_with }
 
 The list of Managed Request Transforms.
 
@@ -754,7 +754,7 @@ The Managed Transforms that this Managed Transform conflicts with.
 
 <summary>
 
-managed\_response\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
+managed\_response\_headers: optional array of object { id, enabled, has\_conflict, conflicts\_with }
 
 The list of Managed Response Transforms.
 
@@ -798,7 +798,7 @@ The Managed Transforms that this Managed Transform conflicts with.
 
 <summary>
 
-object {managed\_request\_headers, managed\_response\_headers }
+object { managed\_request\_headers, managed\_response\_headers }
 
 </summary>
 
@@ -806,7 +806,7 @@ object {managed\_request\_headers, managed\_response\_headers }
 
 <summary>
 
-managed\_request\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
+managed\_request\_headers: optional array of object { id, enabled, has\_conflict, conflicts\_with }
 
 The list of Managed Request Transforms.
 
@@ -846,7 +846,7 @@ The Managed Transforms that this Managed Transform conflicts with.
 
 <summary>
 
-managed\_response\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
+managed\_response\_headers: optional array of object { id, enabled, has\_conflict, conflicts\_with }
 
 The list of Managed Response Transforms.
 
@@ -890,7 +890,7 @@ The Managed Transforms that this Managed Transform conflicts with.
 
 <summary>
 
-object {managed\_request\_headers, managed\_response\_headers }
+object { managed\_request\_headers, managed\_response\_headers }
 
 </summary>
 
@@ -898,7 +898,7 @@ object {managed\_request\_headers, managed\_response\_headers }
 
 <summary>
 
-managed\_request\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
+managed\_request\_headers: optional array of object { id, enabled, has\_conflict, conflicts\_with }
 
 The list of Managed Request Transforms.
 
@@ -938,7 +938,7 @@ The Managed Transforms that this Managed Transform conflicts with.
 
 <summary>
 
-managed\_response\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
+managed\_response\_headers: optional array of object { id, enabled, has\_conflict, conflicts\_with }
 
 The list of Managed Response Transforms.
 

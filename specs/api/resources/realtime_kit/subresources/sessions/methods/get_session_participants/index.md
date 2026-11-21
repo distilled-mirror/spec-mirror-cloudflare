@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Realtime Admin``Realtime`
+`Realtime Read``Realtime Admin``Realtime`
 
 ##### P ath ParametersExpand Collapse
 
@@ -116,7 +116,7 @@ The search query string. You can search using participant ID, custom participant
 
 <summary>
 
-sort\_by: optional "joinedAt"or "duration"
+sort\_by: optional "joinedAt" or "duration"
 
 </summary>
 
@@ -138,7 +138,7 @@ One of the following:
 
 <summary>
 
-sort\_order: optional "ASC"or "DESC"
+sort\_order: optional "ASC" or "DESC"
 
 </summary>
 
@@ -160,7 +160,7 @@ One of the following:
 
 <summary>
 
-view: optional "raw"or "consolidated"
+view: optional "raw" or "consolidated"
 
 In breakout room sessions, the view parameter can be set to <code>raw</code> for session specific duration for participants or <code>consolidated</code> to accumulate breakout room durations.
 
@@ -186,7 +186,7 @@ One of the following:
 
 <summary>
 
-data: optional object {participants }
+data: optional object { participants }
 
 </summary>
 
@@ -194,7 +194,7 @@ data: optional object {participants }
 
 <summary>
 
-participants: optional array of object {id, created\_at, custom\_participant\_id, 8 more }
+participants: optional array of object { id, created\_at, custom\_participant\_id, 8 more }
 
 </summary>
 
@@ -244,7 +244,7 @@ timestamp at which participant left the session.
 
 <summary>
 
-peer\_events: optional array of object {id, created\_at, event\_name, 7 more }
+peer\_events: optional array of object { id, created\_at, event\_name, 7 more }
 
 Connection lifecycle events for the participant’s peer. Only included when <code>include_peer_events</code> is true.
 
@@ -266,7 +266,7 @@ Timestamp when this peer event was created.
 
 <summary>
 
-event\_name: optional "PEER\_CREATED"or "PEER\_JOINING"or "PEER\_LEAVING"
+event\_name: optional "PEER\_CREATED" or "PEER\_JOINING" or "PEER\_LEAVING"
 
 Name of the peer event.
 
@@ -312,7 +312,7 @@ Peer ID this event belongs to.
 
 <summary>
 
-preset\_view\_type: optional "GROUP\_CALL"or "WEBINAR"or "AUDIO\_ROOM"or 2 more
+preset\_view\_type: optional "GROUP\_CALL" or "WEBINAR" or "AUDIO\_ROOM" or 2 more
 
 View type of the preset associated with the peer.
 

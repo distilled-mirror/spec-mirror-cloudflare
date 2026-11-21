@@ -84,7 +84,7 @@ maxLength32
 
 <summary>
 
-body: object {id, roles, status, user } or object {policies }
+body: object { id, roles, status, user } or object { policies }
 
 </summary>
 
@@ -94,7 +94,7 @@ One of the following:
 
 <summary>
 
-IAMUpdateMemberWithRoles object {id, roles, status, user }
+IAMUpdateMemberWithRoles object { id, roles, status, user }
 
 </summary>
 
@@ -142,7 +142,7 @@ maxLength120
 
 <summary>
 
-permissions: object {analytics, billing, cache\_purge, 9 more }
+permissions: object { analytics, billing, cache\_purge, 9 more }
 
 </summary>
 
@@ -398,7 +398,7 @@ write: optional boolean
 
 <summary>
 
-status: optional "accepted"or "pending"
+status: optional "accepted" or "pending"
 
 A member’s status in the account.
 
@@ -422,7 +422,7 @@ One of the following:
 
 <summary>
 
-user: optional object {email, id, first\_name, 2 more }
+user: optional object { email, id, first\_name, 2 more }
 
 Details of the user associated to the membership.
 
@@ -480,7 +480,7 @@ Indicates whether two-factor authentication is enabled for the user account. Doe
 
 <summary>
 
-IAMUpdateMemberWithPolicies object {policies }
+IAMUpdateMemberWithPolicies object { policies }
 
 </summary>
 
@@ -488,7 +488,7 @@ IAMUpdateMemberWithPolicies object {policies }
 
 <summary>
 
-policies: array of object {id, access, permission\_groups, resource\_groups }
+policies: array of object { id, access, permission\_groups, resource\_groups }
 
 Array of policies associated with this member.
 
@@ -504,7 +504,7 @@ Policy identifier.
 
 <summary>
 
-access: "allow"or "deny"
+access: "allow" or "deny"
 
 Allow or deny operations against the resources.
 
@@ -528,7 +528,7 @@ One of the following:
 
 <summary>
 
-permission\_groups: array of object {id }
+permission\_groups: array of object { id }
 
 A set of permission groups that are specified to the policy.
 
@@ -548,7 +548,7 @@ Identifier of the group.
 
 <summary>
 
-resource\_groups: array of object {id }
+resource\_groups: array of object { id }
 
 A list of resource groups that the policy applies to.
 
@@ -582,7 +582,7 @@ Identifier of the group.
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -604,7 +604,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -624,7 +624,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -646,7 +646,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -696,7 +696,7 @@ maxLength90
 
 <summary>
 
-policies: optional array of object {id, access, permission\_groups, resource\_groups }
+policies: optional array of object { id, access, permission\_groups, resource\_groups }
 
 Access policy for the membership
 
@@ -712,7 +712,7 @@ Policy identifier.
 
 <summary>
 
-access: optional "allow"or "deny"
+access: optional "allow" or "deny"
 
 Allow or deny operations against the resources.
 
@@ -736,7 +736,7 @@ One of the following:
 
 <summary>
 
-permission\_groups: optional array of object {id, meta, name }
+permission\_groups: optional array of object { id, meta, name }
 
 A set of permission groups that are specified to the policy.
 
@@ -752,7 +752,7 @@ Identifier of the permission group.
 
 <summary>
 
-meta: optional object {category, deprecated, description, 5 more }
+meta: optional object { category, deprecated, description, 5 more }
 
 Attributes associated to the permission group.
 
@@ -826,7 +826,7 @@ Name of the permission group.
 
 <summary>
 
-resource\_groups: optional array of object {id, scope, meta, name }
+resource\_groups: optional array of object { id, scope, meta, name }
 
 A list of resource groups that the policy applies to.
 
@@ -842,7 +842,7 @@ Identifier of the resource group.
 
 <summary>
 
-scope: object {key, objects }
+scope: object { key, objects }
 
 The scope associated to the resource group
 
@@ -858,7 +858,7 @@ This is a combination of pre-defined resource name and identifier (like Account 
 
 <summary>
 
-objects: array of object {key }
+objects: array of object { key }
 
 A list of scope objects for additional context.
 
@@ -882,7 +882,7 @@ This is a combination of pre-defined resource name and identifier (like Zone ID 
 
 <summary>
 
-meta: optional object {key, value }
+meta: optional object { key, value }
 
 Attributes associated to the resource group.
 
@@ -950,7 +950,7 @@ maxLength120
 
 <summary>
 
-permissions: object {analytics, billing, cache\_purge, 9 more }
+permissions: object { analytics, billing, cache\_purge, 9 more }
 
 </summary>
 
@@ -1206,7 +1206,7 @@ write: optional boolean
 
 <summary>
 
-status: optional "accepted"or "pending"
+status: optional "accepted" or "pending"
 
 A member’s status in the account.
 
@@ -1230,7 +1230,7 @@ One of the following:
 
 <summary>
 
-user: optional object {email, id, first\_name, 2 more }
+user: optional object { email, id, first\_name, 2 more }
 
 Details of the user associated to the membership.
 

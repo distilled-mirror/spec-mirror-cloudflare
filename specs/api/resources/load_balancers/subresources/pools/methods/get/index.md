@@ -100,7 +100,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -142,7 +142,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -274,7 +274,7 @@ Whether to enable (the default) or disable this pool. Disabled pools will not re
 
 <summary>
 
-health\_sources: optional array of "local"or "regional"or "global"
+health\_sources: optional array of "local" or "regional" or "global"
 
 A list of health sources, ordered from highest to lowest priority, used to evaluate individual origin health and overall pool health. The load balancer uses the first source that has data and falls back to the next. Currently accepted values are null or the exact array \[“regional”, “global”]; any other combination is rejected. Null (the default) behaves like \[“local”, “global”]. \[“regional”, “global”] makes each region steer on its own health, falling back to the global decision when a region has no fresh data. Setting regional requires at least one region in check\_regions.
 
@@ -328,7 +328,7 @@ minimum0
 
 <summary>
 
-default\_policy: optional "random"or "hash"
+default\_policy: optional "random" or "hash"
 
 The default policy to use when load shedding. A random policy randomly sheds a given percent of requests. A hash policy computes a hash over the CF-Connecting-IP address and sheds all requests originating from a percent of IPs.
 
@@ -494,7 +494,7 @@ Configures origin steering for the pool. Controls how origins are selected for n
 
 <summary>
 
-policy: optional "random"or "hash"or "least\_outstanding\_requests"or "least\_connections"
+policy: optional "random" or "hash" or "least\_outstanding\_requests" or "least\_connections"
 
 The type of origin steering policy to use.
 

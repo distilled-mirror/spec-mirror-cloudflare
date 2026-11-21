@@ -86,7 +86,7 @@ Filters results by domain category.
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -118,7 +118,7 @@ Array of names used to label the series in the response.
 
 <summary>
 
-result: object {meta, summary\_0 }
+result: object { meta, summary\_0 }
 
 </summary>
 
@@ -126,7 +126,7 @@ result: object {meta, summary\_0 }
 
 <summary>
 
-meta: object {date, domainCategories, lastUpdated, 4 more }
+meta: object { date, domainCategories, lastUpdated, 4 more }
 
 </summary>
 
@@ -142,7 +142,7 @@ formatdate
 
 <summary>
 
-domainCategories: array of object {name, value }
+domainCategories: array of object { name, value }
 
 Available domain sub-categories with their scan counts. Use as filter options for the domainCategory parameter.
 
@@ -176,7 +176,7 @@ formatdate-time
 
 <summary>
 
-normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
+normalization: "PERCENTAGE" or "MIN0\_MAX" or "MIN\_MAX" or 5 more
 
 Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
@@ -236,7 +236,7 @@ Total domains attempted in the scan.
 
 <summary>
 
-units: array of object {name, value }
+units: array of object { name, value }
 
 Measurement units for the results.
 
@@ -287,7 +287,7 @@ curl https://api.cloudflare.com/client/v4/radar/agent_readiness/summary/$DIMENSI
 {
   "result": {
     "meta": {
-      "date": "2026-03-24",
+      "date": "2019-12-27",
       "domainCategories": [
         {
           "name": "News & Media",
@@ -322,7 +322,7 @@ curl https://api.cloudflare.com/client/v4/radar/agent_readiness/summary/$DIMENSI
 {
   "result": {
     "meta": {
-      "date": "2026-03-24",
+      "date": "2019-12-27",
       "domainCategories": [
         {
           "name": "News & Media",

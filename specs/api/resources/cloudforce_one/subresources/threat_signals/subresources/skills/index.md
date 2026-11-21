@@ -46,7 +46,7 @@ DELETE/accounts/{account\_id}/cloudforce-one/v2/threat-signals/skills/{skill\_id
 
 <summary>
 
-SkillListResponse object {count, custom\_skills\_available, page, 3 more }
+SkillListResponse object { count, custom\_skills\_available, page, 3 more }
 
 </summary>
 
@@ -74,7 +74,7 @@ per\_page: number
 
 <summary>
 
-skills: array of object {id, config, created\_at, 7 more }
+skills: array of object { id, config, created\_at, 7 more }
 
 </summary>
 
@@ -116,7 +116,7 @@ prompt: string
 
 <summary>
 
-source: "default"or "custom"
+source: "default" or "custom"
 
 <code>default</code> for Cloudforce One managed skills (read-only), <code>custom</code> for account skills.
 
@@ -160,7 +160,7 @@ total\_count: number
 
 <summary>
 
-SkillCreateResponse object {id, config, created\_at, 7 more }
+SkillCreateResponse object { id, config, created\_at, 7 more }
 
 </summary>
 
@@ -202,7 +202,7 @@ prompt: string
 
 <summary>
 
-source: "default"or "custom"
+source: "default" or "custom"
 
 <code>default</code> for Cloudforce One managed skills (read-only), <code>custom</code> for account skills.
 
@@ -238,7 +238,7 @@ updated\_at: string
 
 <summary>
 
-SkillGetResponse object {id, config, created\_at, 7 more }
+SkillGetResponse object { id, config, created\_at, 7 more }
 
 </summary>
 
@@ -280,7 +280,7 @@ prompt: string
 
 <summary>
 
-source: "default"or "custom"
+source: "default" or "custom"
 
 <code>default</code> for Cloudforce One managed skills (read-only), <code>custom</code> for account skills.
 
@@ -316,7 +316,7 @@ updated\_at: string
 
 <summary>
 
-SkillEditResponse object {id, config, created\_at, 7 more }
+SkillEditResponse object { id, config, created\_at, 7 more }
 
 </summary>
 
@@ -358,7 +358,7 @@ prompt: string
 
 <summary>
 
-source: "default"or "custom"
+source: "default" or "custom"
 
 <code>default</code> for Cloudforce One managed skills (read-only), <code>custom</code> for account skills.
 
@@ -394,7 +394,7 @@ updated\_at: string
 
 <summary>
 
-SkillDeleteResponse object {id, config, created\_at, 7 more }
+SkillDeleteResponse object { id, config, created\_at, 7 more }
 
 </summary>
 
@@ -436,7 +436,7 @@ prompt: string
 
 <summary>
 
-source: "default"or "custom"
+source: "default" or "custom"
 
 <code>default</code> for Cloudforce One managed skills (read-only), <code>custom</code> for account skills.
 
@@ -484,7 +484,7 @@ PUT/accounts/{account\_id}/cloudforce-one/v2/threat-signals/skills/{skill\_id}/t
 
 <summary>
 
-TagCategoryGetResponse object {category\_uuids, skill\_id }
+TagCategoryGetResponse object { category\_uuids, skill\_id }
 
 </summary>
 
@@ -504,7 +504,7 @@ skill\_id: "default-tagging-skill"
 
 <summary>
 
-TagCategoryUpdateResponse object {category\_uuids, skill\_id }
+TagCategoryUpdateResponse object { category\_uuids, skill\_id }
 
 </summary>
 

@@ -50,7 +50,7 @@ account\_id: string
 
 <summary>
 
-feed\_id: optional stringor "all"
+feed\_id: optional string or "all"
 
 UUID of a specific feed to poll, or “all” to poll all feeds. Omit or pass “all” for all feeds.
 
@@ -78,7 +78,7 @@ UUID of a specific feed to poll, or “all” to poll all feeds. Omit or pass �
 
 <summary>
 
-errors: array of object {message }
+errors: array of object { message }
 
 </summary>
 
@@ -94,7 +94,7 @@ message: string
 
 <summary>
 
-result: object {errors, feeds, triggered }
+result: object { errors, feeds, triggered }
 
 </summary>
 
@@ -106,7 +106,7 @@ errors: number
 
 <summary>
 
-feeds: array of object {feed\_id, status, workflow\_id, feed\_enabled }
+feeds: array of object { feed\_id, status, workflow\_id, feed\_enabled }
 
 </summary>
 
@@ -120,7 +120,7 @@ formatuuid
 
 <summary>
 
-status: "workflow\_created"or "error"
+status: "workflow\_created" or "error"
 
 </summary>
 

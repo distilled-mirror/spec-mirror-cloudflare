@@ -32,7 +32,7 @@ PUT/accounts/{account\_id}/cni/settings
 
 <summary>
 
-SettingGetResponse object {default\_asn }
+SettingGetResponse object { default\_asn }
 
 </summary>
 
@@ -52,7 +52,7 @@ minimum0
 
 <summary>
 
-SettingUpdateResponse object {default\_asn }
+SettingUpdateResponse object { default\_asn }
 
 </summary>
 

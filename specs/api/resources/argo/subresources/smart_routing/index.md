@@ -32,7 +32,7 @@ PATCH/zones/{zone\_id}/argo/smart\_routing
 
 <summary>
 
-SmartRoutingGetResponse object {id, editable, value, modified\_on }
+SmartRoutingGetResponse object { id, editable, value, modified\_on }
 
 </summary>
 
@@ -52,7 +52,7 @@ Specifies if the setting is editable.
 
 <summary>
 
-value: "on"or "off"
+value: "on" or "off"
 
 Specifies the enablement value of Argo Smart Routing.
 
@@ -88,7 +88,7 @@ formatdate-time
 
 <summary>
 
-SmartRoutingEditResponse object {id, editable, value, modified\_on }
+SmartRoutingEditResponse object { id, editable, value, modified\_on }
 
 </summary>
 
@@ -108,7 +108,7 @@ Specifies if the setting is editable.
 
 <summary>
 
-value: "on"or "off"
+value: "on" or "off"
 
 Specifies the enablement value of Argo Smart Routing.
 

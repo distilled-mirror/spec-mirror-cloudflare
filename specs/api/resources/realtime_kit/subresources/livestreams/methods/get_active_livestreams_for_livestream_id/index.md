@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Realtime Admin``Realtime`
+`Realtime Read``Realtime Admin``Realtime`
 
 ##### P ath ParametersExpand Collapse
 
@@ -84,7 +84,7 @@ livestream\_id: string
 
 <summary>
 
-data: object {livestream, session }
+data: object { livestream, session }
 
 </summary>
 
@@ -92,7 +92,7 @@ data: object {livestream, session }
 
 <summary>
 
-livestream: object {id, created\_at, disabled, 9 more }
+livestream: object { id, created\_at, disabled, 9 more }
 
 </summary>
 
@@ -158,7 +158,7 @@ The web address that viewers can use to watch the livestream.
 
 <summary>
 
-status: "LIVE"or "IDLE"or "ERRORED"or 2 more
+status: "LIVE" or "IDLE" or "ERRORED" or 2 more
 
 Status of the livestream.
 
@@ -212,7 +212,7 @@ formatdate-time
 
 <summary>
 
-session: object {id, created\_at, err\_message, 7 more }
+session: object { id, created\_at, err\_message, 7 more }
 
 </summary>
 

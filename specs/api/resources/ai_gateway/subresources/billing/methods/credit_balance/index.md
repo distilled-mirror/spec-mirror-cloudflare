@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`AI Gateway Write``AI Gateway Read`
+`AI Gateway Metadata Read``AI Search Index Engine``Auto Rag Write Run Engine``AI Gateway Write``AI Gateway Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -70,7 +70,7 @@ account\_id: string
 
 <summary>
 
-errors: array of object {code, message }
+errors: array of object { code, message }
 
 </summary>
 
@@ -90,7 +90,7 @@ message: string
 
 <summary>
 
-messages: array of object {code, message }
+messages: array of object { code, message }
 
 </summary>
 
@@ -110,7 +110,7 @@ message: string
 
 <summary>
 
-result: object {balance, has\_default\_payment\_method, payment\_method, 2 more }
+result: object { balance, has\_default\_payment\_method, payment\_method, 2 more }
 
 </summary>
 
@@ -130,7 +130,7 @@ Whether AI Gateway billing has a default payment method for the account.
 
 <summary>
 
-payment\_method: object {brand, last4 }
+payment\_method: object { brand, last4 }
 
 The default payment method’s card. Null when there is no default, it isn’t a card, or it couldn’t be read.
 
@@ -156,7 +156,7 @@ Last 4 digits of the card.
 
 <summary>
 
-topup\_config: object {amount, threshold, disabledReason, 2 more }
+topup\_config: object { amount, threshold, disabledReason, 2 more }
 
 Auto top-up configuration, as GET /topup/config returns it.
 
@@ -214,7 +214,7 @@ success: true
 
 <summary>
 
-result\_info: optional object {has\_more, page, per\_page, total\_count }
+result\_info: optional object { has\_more, page, per\_page, total\_count }
 
 </summary>
 

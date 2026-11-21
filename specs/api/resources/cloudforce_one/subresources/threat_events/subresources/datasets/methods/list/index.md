@@ -60,7 +60,7 @@ When true, include soft-deleted datasets in the response. Each item includes a `
 
 <summary>
 
-indicatorWriteMode: "read\_only"or "create\_only"or "full"
+indicatorWriteMode: "read\_only" or "create\_only" or "full"
 
 Effective indicator mutation capability after account/dataset authorization and dataset storage capability are applied. API Gateway method permissions are separate and must also allow the requested operation.
 

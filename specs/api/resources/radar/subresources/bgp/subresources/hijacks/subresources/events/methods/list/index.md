@@ -96,7 +96,7 @@ The unique identifier of a event.
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -178,7 +178,7 @@ prefix: optional string
 
 <summary>
 
-sortBy: optional "ID"or "TIME"or "CONFIDENCE"
+sortBy: optional "ID" or "TIME" or "CONFIDENCE"
 
 Sorts results by the specified field.
 
@@ -206,7 +206,7 @@ One of the following:
 
 <summary>
 
-sortOrder: optional "ASC"or "DESC"
+sortOrder: optional "ASC" or "DESC"
 
 Sort order.
 
@@ -238,7 +238,7 @@ The potential victim AS of a BGP hijack event.
 
 <summary>
 
-result: object {asn\_info, events, total\_monitors }
+result: object { asn\_info, events, total\_monitors }
 
 </summary>
 
@@ -246,7 +246,7 @@ result: object {asn\_info, events, total\_monitors }
 
 <summary>
 
-asn\_info: array of object {asn, country\_code, org\_name }
+asn\_info: array of object { asn, country\_code, org\_name }
 
 </summary>
 
@@ -270,7 +270,7 @@ org\_name: string
 
 <summary>
 
-events: array of object {id, confidence\_score, duration, 15 more }
+events: array of object { id, confidence\_score, duration, 15 more }
 
 </summary>
 
@@ -338,7 +338,7 @@ prefixes: array of string
 
 <summary>
 
-tags: array of object {name, score }
+tags: array of object { name, score }
 
 </summary>
 
@@ -378,7 +378,7 @@ total\_monitors: number
 
 <summary>
 
-result\_info: object {count, page, per\_page, total\_count }
+result\_info: object { count, page, per\_page, total\_count }
 
 </summary>
 

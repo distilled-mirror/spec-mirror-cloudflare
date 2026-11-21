@@ -38,7 +38,7 @@ DELETE/accounts/{account\_id}/addressing/prefixes/{prefix\_id}/delegations/{dele
 
 <summary>
 
-Delegations object {id, cidr, created\_at, 3 more }
+Delegations object { id, cidr, created\_at, 3 more }
 
 </summary>
 
@@ -92,7 +92,7 @@ maxLength32
 
 <summary>
 
-DelegationDeleteResponse object {id }
+DelegationDeleteResponse object { id }
 
 </summary>
 

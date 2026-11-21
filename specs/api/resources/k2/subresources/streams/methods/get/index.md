@@ -82,7 +82,7 @@ minLength32
 
 <summary>
 
-errors: array of object {message, code }
+errors: array of object { message, code }
 
 </summary>
 
@@ -102,7 +102,7 @@ code: optional number
 
 <summary>
 
-messages: array of object {message, code }
+messages: array of object { message, code }
 
 </summary>
 
@@ -122,7 +122,7 @@ code: optional number
 
 <summary>
 
-result: object {id, created\_at, endpoint, 5 more }
+result: object { id, created\_at, endpoint, 5 more }
 
 </summary>
 
@@ -154,7 +154,7 @@ formaturi
 
 <summary>
 
-http: object {enabled, authentication, cors }
+http: object { enabled, authentication, cors }
 
 Configures the HTTP endpoint. Disabling HTTP keeps <code>authentication</code> and <code>cors</code>, so enabling it again restores them.
 
@@ -176,7 +176,7 @@ Indicates whether the HTTP endpoint requires an API token with K2 produce permis
 
 <summary>
 
-cors: optional object {origins }
+cors: optional object { origins }
 
 </summary>
 
@@ -224,7 +224,7 @@ minimum3600
 
 <summary>
 
-worker\_binding: object {enabled }
+worker\_binding: object { enabled }
 
 Configures whether Workers bindings can produce records to the stream.
 

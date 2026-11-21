@@ -58,6 +58,10 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 </details>
 
+##### Accepted Permissions (at least one required)
+
+`AI Search Write``Auto Rag Write`
+
 ##### P ath ParametersExpand Collapse
 
 account\_id: string
@@ -102,7 +106,7 @@ Wait for indexing before responding. After processing, vector-indexed instances 
 
 <summary>
 
-result: object {id, checksum, chunks\_count, 10 more }
+result: object { id, checksum, chunks\_count, 10 more }
 
 </summary>
 
@@ -142,7 +146,7 @@ formatdate-time
 
 <summary>
 
-metadata: map\[stringor numberor boolean]
+metadata: map\[string or number or boolean]
 
 Built-in, configured filterable, and retained source metadata for the item.
 
@@ -174,7 +178,7 @@ namespace: string
 
 <summary>
 
-next\_action: "INDEX"or "DELETE"
+next\_action: "INDEX" or "DELETE"
 
 </summary>
 
@@ -202,7 +206,7 @@ Identifies which data source this item belongs to. “builtin” for uploaded fi
 
 <summary>
 
-status: "queued"or "running"or "completed"or 3 more
+status: "queued" or "running" or "completed" or 3 more
 
 </summary>
 

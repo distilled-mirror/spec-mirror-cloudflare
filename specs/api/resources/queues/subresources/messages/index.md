@@ -48,7 +48,7 @@ POST/accounts/{account\_id}/queues/{queue\_id}/messages/purge
 
 <summary>
 
-MessagePushResponse object {metadata }
+MessagePushResponse object { metadata }
 
 </summary>
 
@@ -56,7 +56,7 @@ MessagePushResponse object {metadata }
 
 <summary>
 
-metadata: optional object {metrics }
+metadata: optional object { metrics }
 
 </summary>
 
@@ -64,7 +64,7 @@ metadata: optional object {metrics }
 
 <summary>
 
-metrics: optional object {backlog\_bytes, backlog\_count, oldest\_message\_timestamp\_ms }
+metrics: optional object { backlog\_bytes, backlog\_count, oldest\_message\_timestamp\_ms }
 
 Best-effort metrics for the queue. Values may be approximate due to the distributed nature of queues.
 
@@ -104,7 +104,7 @@ Unix timestamp in milliseconds of the oldest unacknowledged message in the queue
 
 <summary>
 
-MessageAckResponse object {ackCount, retryCount, warnings }
+MessageAckResponse object { ackCount, retryCount, warnings }
 
 </summary>
 
@@ -134,7 +134,7 @@ Map of lease IDs to warning messages encountered during acknowledgement.
 
 <summary>
 
-MessagePullResponse object {message\_backlog\_count, messages, metadata }
+MessagePullResponse object { message\_backlog\_count, messages, metadata }
 
 </summary>
 
@@ -148,7 +148,7 @@ The number of unacknowledged messages in the queue.
 
 <summary>
 
-messages: optional array of object {id, attempts, body, 3 more }
+messages: optional array of object { id, attempts, body, 3 more }
 
 </summary>
 
@@ -186,7 +186,7 @@ timestamp\_ms: optional number
 
 <summary>
 
-metadata: optional object {metrics }
+metadata: optional object { metrics }
 
 </summary>
 
@@ -194,7 +194,7 @@ metadata: optional object {metrics }
 
 <summary>
 
-metrics: optional object {backlog\_bytes, backlog\_count, oldest\_message\_timestamp\_ms }
+metrics: optional object { backlog\_bytes, backlog\_count, oldest\_message\_timestamp\_ms }
 
 Best-effort metrics for the queue. Values may be approximate due to the distributed nature of queues.
 
@@ -234,7 +234,7 @@ Unix timestamp in milliseconds of the oldest unacknowledged message in the queue
 
 <summary>
 
-MessageBulkPushResponse object {metadata }
+MessageBulkPushResponse object { metadata }
 
 </summary>
 
@@ -242,7 +242,7 @@ MessageBulkPushResponse object {metadata }
 
 <summary>
 
-metadata: optional object {metrics }
+metadata: optional object { metrics }
 
 </summary>
 
@@ -250,7 +250,7 @@ metadata: optional object {metrics }
 
 <summary>
 
-metrics: optional object {backlog\_bytes, backlog\_count, oldest\_message\_timestamp\_ms }
+metrics: optional object { backlog\_bytes, backlog\_count, oldest\_message\_timestamp\_ms }
 
 Best-effort metrics for the queue. Values may be approximate due to the distributed nature of queues.
 
@@ -290,7 +290,7 @@ Unix timestamp in milliseconds of the oldest unacknowledged message in the queue
 
 <summary>
 
-MessagePeekResponse object {messages }
+MessagePeekResponse object { messages }
 
 </summary>
 
@@ -298,7 +298,7 @@ MessagePeekResponse object {messages }
 
 <summary>
 
-messages: optional array of object {id, attempts, body, 3 more }
+messages: optional array of object { id, attempts, body, 3 more }
 
 </summary>
 
@@ -340,7 +340,7 @@ timestamp\_ms: optional number
 
 <summary>
 
-MessagePurgeResponse object {errors, warnings }
+MessagePurgeResponse object { errors, warnings }
 
 </summary>
 
@@ -348,7 +348,7 @@ MessagePurgeResponse object {errors, warnings }
 
 <summary>
 
-errors: optional array of object {message }
+errors: optional array of object { message }
 
 Errors encountered while purging messages.
 

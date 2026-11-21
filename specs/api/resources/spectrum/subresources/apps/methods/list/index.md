@@ -74,7 +74,7 @@ maxLength32
 
 <summary>
 
-direction: optional "asc"or "desc"
+direction: optional "asc" or "desc"
 
 Sets the direction by which results are ordered.
 
@@ -98,7 +98,7 @@ One of the following:
 
 <summary>
 
-order: optional "protocol"or "app\_id"or "created\_on"or 2 more
+order: optional "protocol" or "app\_id" or "created\_on" or 2 more
 
 Application field by which results are ordered.
 
@@ -154,7 +154,7 @@ minimum1
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -176,7 +176,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -196,7 +196,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -218,7 +218,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -244,7 +244,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional array of object {id, created\_on, dns, 15 more } or array of object {id, created\_on, dns, 7 more }
+result: optional array of object { id, created\_on, dns, 15 more } or array of object { id, created\_on, dns, 7 more }
 
 </summary>
 
@@ -254,7 +254,7 @@ One of the following:
 
 <summary>
 
-array of object {id, created\_on, dns, 15 more }
+array of object { id, created\_on, dns, 15 more }
 
 </summary>
 
@@ -296,7 +296,7 @@ formathostname
 
 <summary>
 
-type: optional "CNAME"or "ADDRESS"
+type: optional "CNAME" or "ADDRESS"
 
 The type of DNS record associated with the application.
 
@@ -338,7 +338,7 @@ The port configuration at Cloudflare’s edge. May specify a single port, for ex
 
 <summary>
 
-traffic\_type: "direct"or "http"or "https"or "worker"
+traffic\_type: "direct" or "http" or "https" or "worker"
 
 Determines how data travels from the edge to your origin. When set to “direct”, Spectrum will send traffic directly to your origin, and the application’s type is derived from the <code>protocol</code>. When set to “http” or “https”, Spectrum will apply Cloudflare’s HTTP/HTTPS features as it sends traffic to your origin, and the application type matches this property exactly. When set to “worker”, traffic is sent to the Worker specified by <code>origin_worker_id</code>.
 
@@ -388,7 +388,7 @@ One of the following:
 
 <summary>
 
-Dynamic object {connectivity, type }
+Dynamic object { connectivity, type }
 
 </summary>
 
@@ -396,7 +396,7 @@ Dynamic object {connectivity, type }
 
 <summary>
 
-connectivity: optional "all"or "ipv4"or "ipv6"
+connectivity: optional "all" or "ipv4" or "ipv6"
 
 The IP versions supported for inbound connections on Spectrum anycast IPs.
 
@@ -434,7 +434,7 @@ The type of edge IP configuration specified. Dynamically allocated edge IPs use 
 
 <summary>
 
-Static object {ips, type }
+Static object { ips, type }
 
 </summary>
 
@@ -500,7 +500,7 @@ minimum600
 
 <summary>
 
-type: optional ""or "A"or "AAAA"or "SRV"
+type: optional "" or "A" or "AAAA" or "SRV"
 
 The type of DNS record associated with the origin. "" is used to specify a combination of A/AAAA records.
 
@@ -576,7 +576,7 @@ Name of the Worker origin. Omitted when the Worker is not found or its name cann
 
 <summary>
 
-origin\_worker\_status: optional "available"or "not\_found"or "unknown"
+origin\_worker\_status: optional "available" or "not\_found" or "unknown"
 
 Lookup status of the Worker origin. Unknown indicates that its name could not be resolved. Only returned for Worker origins.
 
@@ -604,7 +604,7 @@ One of the following:
 
 <summary>
 
-proxy\_protocol: optional "off"or "v1"or "v2"or "simple"
+proxy\_protocol: optional "off" or "v1" or "v2" or "simple"
 
 Enables Proxy Protocol to the origin. Refer to <a href="https://developers.cloudflare.com/spectrum/getting-started/proxy-protocol/">Enable Proxy protocol</a> for implementation details on PROXY Protocol V1, PROXY Protocol V2, and Simple Proxy Protocol.
 
@@ -636,7 +636,7 @@ One of the following:
 
 <summary>
 
-tls: optional "off"or "flexible"or "full"or "strict"
+tls: optional "off" or "flexible" or "full" or "strict"
 
 The type of TLS termination associated with the application.
 
@@ -680,7 +680,7 @@ formatuuid
 
 <summary>
 
-array of object {id, created\_on, dns, 7 more }
+array of object { id, created\_on, dns, 7 more }
 
 </summary>
 
@@ -722,7 +722,7 @@ formathostname
 
 <summary>
 
-type: optional "CNAME"or "ADDRESS"
+type: optional "CNAME" or "ADDRESS"
 
 The type of DNS record associated with the application.
 
@@ -782,7 +782,7 @@ Name of the Worker origin. Omitted when the Worker is not found or its name cann
 
 <summary>
 
-origin\_worker\_status: optional "available"or "not\_found"or "unknown"
+origin\_worker\_status: optional "available" or "not\_found" or "unknown"
 
 Lookup status of the Worker origin. Unknown indicates that its name could not be resolved. Only returned for Worker origins.
 
@@ -810,7 +810,7 @@ One of the following:
 
 <summary>
 
-traffic\_type: optional "direct"or "worker"or string
+traffic\_type: optional "direct" or "worker" or string
 
 Determines how traffic is sent to the origin. If absent or empty, defaults to “direct”. Direct mode uses origin\_direct. Worker mode requires origin\_worker\_id, TCP or UDP with a single port, and CNAME DNS; origin\_worker\_id and origin\_direct are mutually exclusive. A PAYG zone may have at most one Worker application per transport (one TCP and one UDP); creating another for the same transport, or converting another application to Worker while that quota is full, is rejected with error code 11034 and HTTP status 400.
 
@@ -822,7 +822,7 @@ One of the following:
 
 <summary>
 
-"direct"or "worker"
+"direct" or "worker"
 
 Determines how traffic is sent to the origin. If absent or empty, defaults to “direct”. Direct mode uses origin\_direct. Worker mode requires origin\_worker\_id, TCP or UDP with a single port, and CNAME DNS; origin\_worker\_id and origin\_direct are mutually exclusive. A PAYG zone may have at most one Worker application per transport (one TCP and one UDP); creating another for the same transport, or converting another application to Worker while that quota is full, is rejected with error code 11034 and HTTP status 400.
 
@@ -862,7 +862,7 @@ string
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

@@ -72,7 +72,7 @@ forceRefresh: optional boolean
 
 <summary>
 
-format: optional "json"or "stix2"or "taxii"
+format: optional "json" or "stix2" or "taxii"
 
 </summary>
 
@@ -98,7 +98,7 @@ One of the following:
 
 <summary>
 
-order: optional "asc"or "desc"
+order: optional "asc" or "desc"
 
 </summary>
 
@@ -136,7 +136,7 @@ Number of results per page. Maximum 25,000.
 
 <summary>
 
-search: optional array of object {field, op, value } or object {field, op, value } or object {field, op, value } or 4 more
+search: optional array of object { field, op, value } or object { field, op, value } or object { field, op, value } or 4 more
 
 JSON-encoded. Structured search as a JSON array of {field, op, value} objects, AND’d together. Max 10 conditions per request. <code>in</code> and <code>notIn</code> take an array of up to 100 values. <code>containsAny</code> takes an array of up to 50 strings and matches when the field contains any of them; it is not supported for <code>indicator</code>, <code>date</code>, <code>killChain</code>, or <code>hasChildren</code>. Exclusions: <code>not</code> drops events without a value for the field; <code>notIn</code> and <code>notContains</code> keep them. On intelligence datasets, a <code>notIn</code> list containing <code>"unknown"</code> also drops them; analytics datasets treat <code>"unknown"</code> as a literal value.
 
@@ -148,7 +148,7 @@ One of the following:
 
 <summary>
 
-object {field, op, value }
+object { field, op, value }
 
 </summary>
 
@@ -156,7 +156,7 @@ object {field, op, value }
 
 <summary>
 
-field: "attacker"or "attackerCountry"or "category"or 12 more
+field: "attacker" or "attackerCountry" or "category" or 12 more
 
 </summary>
 
@@ -230,7 +230,7 @@ One of the following:
 
 <summary>
 
-op: "equals"or "not"or "gt"or 9 more
+op: "equals" or "not" or "gt" or 9 more
 
 </summary>
 
@@ -304,7 +304,7 @@ minLength1
 
 <summary>
 
-object {field, op, value }
+object { field, op, value }
 
 </summary>
 
@@ -312,7 +312,7 @@ object {field, op, value }
 
 <summary>
 
-field: "attacker"or "attackerCountry"or "category"or 12 more
+field: "attacker" or "attackerCountry" or "category" or 12 more
 
 </summary>
 
@@ -386,7 +386,7 @@ One of the following:
 
 <summary>
 
-op: "in"or "notIn"
+op: "in" or "notIn"
 
 </summary>
 
@@ -416,7 +416,7 @@ value: array of string
 
 <summary>
 
-object {field, op, value }
+object { field, op, value }
 
 </summary>
 
@@ -424,7 +424,7 @@ object {field, op, value }
 
 <summary>
 
-field: "attacker"or "attackerCountry"or "category"or 10 more
+field: "attacker" or "attackerCountry" or "category" or 10 more
 
 </summary>
 
@@ -502,7 +502,7 @@ value: array of string
 
 <summary>
 
-object {field, op, value }
+object { field, op, value }
 
 </summary>
 
@@ -514,7 +514,7 @@ field: "killChain"
 
 <summary>
 
-op: "equals"or "not"or "gt"or 3 more
+op: "equals" or "not" or "gt" or 3 more
 
 </summary>
 
@@ -552,7 +552,7 @@ One of the following:
 
 <summary>
 
-value: numberor string
+value: number or string
 
 </summary>
 
@@ -578,7 +578,7 @@ string
 
 <summary>
 
-object {field, op, value }
+object { field, op, value }
 
 </summary>
 
@@ -590,7 +590,7 @@ field: "killChain"
 
 <summary>
 
-op: "in"or "notIn"
+op: "in" or "notIn"
 
 </summary>
 
@@ -612,7 +612,7 @@ One of the following:
 
 <summary>
 
-value: array of numberor string
+value: array of number or string
 
 </summary>
 
@@ -638,7 +638,7 @@ string
 
 <summary>
 
-object {field, op, value }
+object { field, op, value }
 
 </summary>
 
@@ -650,7 +650,7 @@ field: "hasChildren"
 
 <summary>
 
-op: "equals"or "not"or "gt"or 3 more
+op: "equals" or "not" or "gt" or 3 more
 
 </summary>
 
@@ -688,7 +688,7 @@ One of the following:
 
 <summary>
 
-value: unknownor boolean
+value: unknown or boolean
 
 </summary>
 
@@ -714,7 +714,7 @@ boolean
 
 <summary>
 
-object {field, op, value }
+object { field, op, value }
 
 </summary>
 
@@ -726,7 +726,7 @@ field: "hasChildren"
 
 <summary>
 
-op: "in"or "notIn"
+op: "in" or "notIn"
 
 </summary>
 
@@ -748,7 +748,7 @@ One of the following:
 
 <summary>
 
-value: array of unknownor boolean
+value: array of unknown or boolean
 
 </summary>
 
@@ -778,7 +778,7 @@ boolean
 
 <summary>
 
-searchBranches: optional array of array of object {field, op, value } or object {field, op, value } or object {field, op, value } or 4 more
+searchBranches: optional array of array of object { field, op, value } or object { field, op, value } or object { field, op, value } or 4 more
 
 JSON-encoded. OR branches of structured search filters. Filters within a branch are AND’d, branches are OR’d, and the result is AND’d with <code>search</code>: <code>AND(search) AND OR(AND(branch 1), ...)</code>. Max 8 branches of 1-10 conditions each. Not supported for analytics datasets, and <code>indicator</code> filters are not yet supported inside branches. Cursor pages carry the original branches, so do not resend them with <code>cursor</code>.
 
@@ -790,7 +790,7 @@ One of the following:
 
 <summary>
 
-object {field, op, value }
+object { field, op, value }
 
 </summary>
 
@@ -798,7 +798,7 @@ object {field, op, value }
 
 <summary>
 
-field: "attacker"or "attackerCountry"or "category"or 12 more
+field: "attacker" or "attackerCountry" or "category" or 12 more
 
 </summary>
 
@@ -872,7 +872,7 @@ One of the following:
 
 <summary>
 
-op: "equals"or "not"or "gt"or 9 more
+op: "equals" or "not" or "gt" or 9 more
 
 </summary>
 
@@ -946,7 +946,7 @@ minLength1
 
 <summary>
 
-object {field, op, value }
+object { field, op, value }
 
 </summary>
 
@@ -954,7 +954,7 @@ object {field, op, value }
 
 <summary>
 
-field: "attacker"or "attackerCountry"or "category"or 12 more
+field: "attacker" or "attackerCountry" or "category" or 12 more
 
 </summary>
 
@@ -1028,7 +1028,7 @@ One of the following:
 
 <summary>
 
-op: "in"or "notIn"
+op: "in" or "notIn"
 
 </summary>
 
@@ -1058,7 +1058,7 @@ value: array of string
 
 <summary>
 
-object {field, op, value }
+object { field, op, value }
 
 </summary>
 
@@ -1066,7 +1066,7 @@ object {field, op, value }
 
 <summary>
 
-field: "attacker"or "attackerCountry"or "category"or 10 more
+field: "attacker" or "attackerCountry" or "category" or 10 more
 
 </summary>
 
@@ -1144,7 +1144,7 @@ value: array of string
 
 <summary>
 
-object {field, op, value }
+object { field, op, value }
 
 </summary>
 
@@ -1156,7 +1156,7 @@ field: "killChain"
 
 <summary>
 
-op: "equals"or "not"or "gt"or 3 more
+op: "equals" or "not" or "gt" or 3 more
 
 </summary>
 
@@ -1194,7 +1194,7 @@ One of the following:
 
 <summary>
 
-value: numberor string
+value: number or string
 
 </summary>
 
@@ -1220,7 +1220,7 @@ string
 
 <summary>
 
-object {field, op, value }
+object { field, op, value }
 
 </summary>
 
@@ -1232,7 +1232,7 @@ field: "killChain"
 
 <summary>
 
-op: "in"or "notIn"
+op: "in" or "notIn"
 
 </summary>
 
@@ -1254,7 +1254,7 @@ One of the following:
 
 <summary>
 
-value: array of numberor string
+value: array of number or string
 
 </summary>
 
@@ -1280,7 +1280,7 @@ string
 
 <summary>
 
-object {field, op, value }
+object { field, op, value }
 
 </summary>
 
@@ -1292,7 +1292,7 @@ field: "hasChildren"
 
 <summary>
 
-op: "equals"or "not"or "gt"or 3 more
+op: "equals" or "not" or "gt" or 3 more
 
 </summary>
 
@@ -1330,7 +1330,7 @@ One of the following:
 
 <summary>
 
-value: unknownor boolean
+value: unknown or boolean
 
 </summary>
 
@@ -1356,7 +1356,7 @@ boolean
 
 <summary>
 
-object {field, op, value }
+object { field, op, value }
 
 </summary>
 
@@ -1368,7 +1368,7 @@ field: "hasChildren"
 
 <summary>
 
-op: "in"or "notIn"
+op: "in" or "notIn"
 
 </summary>
 
@@ -1390,7 +1390,7 @@ One of the following:
 
 <summary>
 
-value: array of unknownor boolean
+value: array of unknown or boolean
 
 </summary>
 

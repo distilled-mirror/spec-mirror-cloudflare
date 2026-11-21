@@ -76,7 +76,7 @@ D1 database identifier (UUID).
 
 <summary>
 
-body: object {action, etag } or object {action, etag, filename } or object {action, current\_bookmark }
+body: object { action, etag } or object { action, etag, filename } or object { action, current\_bookmark }
 
 </summary>
 
@@ -86,7 +86,7 @@ One of the following:
 
 <summary>
 
-Init object {action, etag }
+Init object { action, etag }
 
 </summary>
 
@@ -110,7 +110,7 @@ Required when action is ‘init’ or ‘ingest’. An md5 hash of the file you�
 
 <summary>
 
-Ingest object {action, etag, filename }
+Ingest object { action, etag, filename }
 
 </summary>
 
@@ -140,7 +140,7 @@ The filename you have successfully uploaded.
 
 <summary>
 
-Poll object {action, current\_bookmark }
+Poll object { action, current\_bookmark }
 
 </summary>
 
@@ -192,7 +192,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -234,7 +234,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -254,7 +254,7 @@ pointer: optional string
 
 <summary>
 
-result: object {at\_bookmark, error, filename, 6 more }
+result: object { at\_bookmark, error, filename, 6 more }
 
 </summary>
 
@@ -286,7 +286,7 @@ Logs since the last time you polled
 
 <summary>
 
-result: optional object {final\_bookmark, meta, num\_queries }
+result: optional object { final\_bookmark, meta, num\_queries }
 
 Only present when status = ‘complete’
 
@@ -302,7 +302,7 @@ The time-travel bookmark if you need restore your D1 to directly after the impor
 
 <summary>
 
-meta: optional object {changed\_db, changes, duration, 8 more }
+meta: optional object { changed\_db, changes, duration, 8 more }
 
 </summary>
 
@@ -358,7 +358,7 @@ Denotes if the query has been handled by the database primary instance.
 
 <summary>
 
-served\_by\_region: optional "WNAM"or "ENAM"or "WEUR"or 3 more
+served\_by\_region: optional "WNAM" or "ENAM" or "WEUR" or 3 more
 
 Region location hint of the database instance that handled the query.
 
@@ -404,7 +404,7 @@ Size of the database after the query committed, in bytes.
 
 <summary>
 
-timings: optional object {sql\_duration\_ms }
+timings: optional object { sql\_duration\_ms }
 
 Various durations for the query.
 
@@ -438,7 +438,7 @@ The total number of queries that were executed during the import.
 
 <summary>
 
-status: optional "complete"or "error"
+status: optional "complete" or "error"
 
 </summary>
 

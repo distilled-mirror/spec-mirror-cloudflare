@@ -74,7 +74,7 @@ maxLength32
 
 <summary>
 
-errors: array of object {code, message }
+errors: array of object { code, message }
 
 </summary>
 
@@ -98,7 +98,7 @@ Human-readable message.
 
 <summary>
 
-messages: array of object {code, message }
+messages: array of object { code, message }
 
 </summary>
 
@@ -152,7 +152,7 @@ formatdate-time
 
 <summary>
 
-value: object {enabled }
+value: object { enabled }
 
 The NEL configuration value.
 

@@ -30,7 +30,7 @@ PUT/zones/{zone\_id}/precursor
 
 <summary>
 
-PrecursorConfig object {mode, rules, show\_interstitial }
+PrecursorConfig object { mode, rules, show\_interstitial }
 
 </summary>
 
@@ -38,7 +38,7 @@ PrecursorConfig object {mode, rules, show\_interstitial }
 
 <summary>
 
-mode: optional "off"or "monitor"or "arm"
+mode: optional "off" or "monitor" or "arm"
 
 Controls Precursor detection for the zone. <code>off</code> disables detection, <code>monitor</code> records detections without affecting bot scores, and <code>arm</code> allows detections to affect bot scores.
 
@@ -66,7 +66,7 @@ One of the following:
 
 <summary>
 
-rules: optional array of object {expression, show\_interstitial, id, 2 more }
+rules: optional array of object { expression, show\_interstitial, id, 2 more }
 
 The ordered list of Precursor rules for the zone.
 

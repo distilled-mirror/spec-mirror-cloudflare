@@ -34,7 +34,7 @@ POST/accounts/{account\_id}/magic/connectors/{connector\_id}/interrupts
 
 <summary>
 
-InterruptListResponse object {submitted\_at, reboot, restart, 2 more }
+InterruptListResponse object { submitted\_at, reboot, restart, 2 more }
 
 Interrupt action for a connector.
 
@@ -48,7 +48,7 @@ submitted\_at: string
 
 <summary>
 
-reboot: optional object {purge }
+reboot: optional object { purge }
 
 </summary>
 
@@ -66,7 +66,7 @@ Purge connector state.
 
 <summary>
 
-restart: optional object {purge }
+restart: optional object { purge }
 
 </summary>
 
@@ -84,7 +84,7 @@ Purge connector state.
 
 <summary>
 
-shutdown: optional object {purge }
+shutdown: optional object { purge }
 
 </summary>
 
@@ -110,7 +110,7 @@ triggered\_at: optional string
 
 <summary>
 
-InterruptCreateResponse object {submitted\_at, reboot, restart, 2 more }
+InterruptCreateResponse object { submitted\_at, reboot, restart, 2 more }
 
 Interrupt action for a connector.
 
@@ -124,7 +124,7 @@ submitted\_at: string
 
 <summary>
 
-reboot: optional object {purge }
+reboot: optional object { purge }
 
 </summary>
 
@@ -142,7 +142,7 @@ Purge connector state.
 
 <summary>
 
-restart: optional object {purge }
+restart: optional object { purge }
 
 </summary>
 
@@ -160,7 +160,7 @@ Purge connector state.
 
 <summary>
 
-shutdown: optional object {purge }
+shutdown: optional object { purge }
 
 </summary>
 

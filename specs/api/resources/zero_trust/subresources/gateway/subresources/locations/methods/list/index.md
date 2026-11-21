@@ -74,7 +74,7 @@ Specify the Cloudflare account identifier.
 
 <summary>
 
-direction: optional "asc"or "desc"
+direction: optional "asc" or "desc"
 
 Sort direction. Only takes effect when <code>order_by</code> is also provided; it is ignored otherwise. When <code>direction</code> is omitted the effective direction is field-specific: <code>created_at</code> and <code>updated_at</code> default to descending (newest first); <code>name</code> defaults to ascending.
 
@@ -119,7 +119,7 @@ Each entry must match one of the per-field patterns below:
 
 <summary>
 
-order\_by: optional "name"or "created\_at"or "updated\_at"
+order\_by: optional "name" or "created\_at" or "updated\_at"
 
 Field to sort the returned locations by. When omitted, the order of results is unspecified. Supported values:
 
@@ -181,7 +181,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -223,7 +223,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -473,7 +473,7 @@ Show the backup destination IPv4 address from the pair identified dns\_destinati
 
 <summary>
 
-max\_ttl: optional object {mode, ttl\_secs }
+max\_ttl: optional object { mode, ttl\_secs }
 
 Controls how DNS response TTLs are capped for this location relative to the account <code>max_ttl_secs</code> setting. Omitting <code>max_ttl</code> on update resets it to <code>inherit</code>.
 
@@ -483,7 +483,7 @@ Controls how DNS response TTLs are capped for this location relative to the acco
 
 <summary>
 
-mode: "inherit"or "override"or "disabled"
+mode: "inherit" or "override" or "disabled"
 
 <code>inherit</code> uses the account <code>max_ttl_secs</code>. <code>override</code> uses this location’s <code>ttl_secs</code>. <code>disabled</code> leaves returned TTLs unchanged.
 
@@ -531,7 +531,7 @@ Specify the location name.
 
 <summary>
 
-networks: optional array of object {network }
+networks: optional array of object { network }
 
 Specify the list of network ranges from which requests at this location originate. The list takes effect only if it is non-empty and the IPv4 endpoint is enabled for this location.
 
@@ -561,7 +561,7 @@ formatdate-time
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object { count, page, per\_page, total\_count }
 
 </summary>
 

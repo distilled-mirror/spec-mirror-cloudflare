@@ -44,7 +44,7 @@ DELETE/accounts/{account\_id}/email/routing/addresses/{destination\_address\_ide
 
 <summary>
 
-Address object {id, created, email, 3 more }
+Address object { id, created, email, 3 more }
 
 </summary>
 

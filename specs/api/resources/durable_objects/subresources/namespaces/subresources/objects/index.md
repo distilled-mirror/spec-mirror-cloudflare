@@ -30,7 +30,7 @@ GET/accounts/{account\_id}/workers/durable\_objects/namespaces/{id}/objects
 
 <summary>
 
-DurableObject object {id, hasStoredData }
+DurableObject object { id, hasStoredData }
 
 </summary>
 

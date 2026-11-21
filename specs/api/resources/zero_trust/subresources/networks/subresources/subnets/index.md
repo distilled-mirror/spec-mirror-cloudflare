@@ -48,7 +48,7 @@ DELETE/accounts/{account\_id}/zerotrust/subnets/warp/{subnet\_id}
 
 <summary>
 
-Subnet object {id, capacity, comment, 6 more }
+Subnet object { id, capacity, comment, 6 more }
 
 </summary>
 
@@ -64,7 +64,7 @@ formatuuid
 
 <summary>
 
-capacity: optional object {total, used }
+capacity: optional object { total, used }
 
 IP capacity information for the subnet.
 
@@ -130,7 +130,7 @@ The private IPv4 or IPv6 range defining the subnet, in CIDR notation.
 
 <summary>
 
-subnet\_type: optional "cloudflare\_source"or "initial\_resolved\_ip"or "warp"
+subnet\_type: optional "cloudflare\_source" or "initial\_resolved\_ip" or "warp"
 
 The type of subnet.
 
@@ -162,7 +162,7 @@ One of the following:
 
 <summary>
 
-WARPDeleteResponse object {id, capacity, comment, 6 more }
+WARPDeleteResponse object { id, capacity, comment, 6 more }
 
 </summary>
 
@@ -178,7 +178,7 @@ formatuuid
 
 <summary>
 
-capacity: optional object {total, used }
+capacity: optional object { total, used }
 
 IP capacity information for the subnet.
 
@@ -244,7 +244,7 @@ The private IPv4 or IPv6 range defining the subnet, in CIDR notation.
 
 <summary>
 
-subnet\_type: optional "cloudflare\_source"or "initial\_resolved\_ip"or "warp"
+subnet\_type: optional "cloudflare\_source" or "initial\_resolved\_ip" or "warp"
 
 The type of subnet.
 

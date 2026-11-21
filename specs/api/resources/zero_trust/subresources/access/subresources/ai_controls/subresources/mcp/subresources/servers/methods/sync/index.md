@@ -86,7 +86,7 @@ minLength1
 
 <summary>
 
-result: object {error, error\_details, status }
+result: object { error, error\_details, status }
 
 </summary>
 
@@ -98,7 +98,7 @@ error: optional string
 
 <summary>
 
-error\_details: optional object {cause, is\_upstream, mcp\_code, 2 more }
+error\_details: optional object { cause, is\_upstream, mcp\_code, 2 more }
 
 </summary>
 
@@ -140,7 +140,7 @@ HTTP status code from the server
 
 <summary>
 
-status: optional "waiting"or "ready"or "stale"or "error"
+status: optional "waiting" or "ready" or "stale" or "error"
 
 </summary>
 

@@ -50,7 +50,7 @@ ContentScanningDisableResponse = unknown
 
 <summary>
 
-ContentScanningCreateResponse object {modified, value }
+ContentScanningCreateResponse object { modified, value }
 
 Defines the status for Content Scanning.
 
@@ -76,7 +76,7 @@ Defines the status of Content Scanning.
 
 <summary>
 
-ContentScanningUpdateResponse object {modified, value }
+ContentScanningUpdateResponse object { modified, value }
 
 Defines the status for Content Scanning.
 
@@ -102,7 +102,7 @@ Defines the status of Content Scanning.
 
 <summary>
 
-ContentScanningGetResponse object {modified, value }
+ContentScanningGetResponse object { modified, value }
 
 Defines the status for Content Scanning.
 
@@ -148,7 +148,7 @@ PATCH/zones/{zone\_id}/content-upload-scan/payloads/{expression\_id}
 
 <summary>
 
-PayloadListResponse object {id, payload }
+PayloadListResponse object { id, payload }
 
 Defines a Content Scanning custom expression.
 
@@ -176,7 +176,7 @@ Defines the custom content extraction expression used to reach content objects i
 
 <summary>
 
-PayloadCreateResponse object {id, payload }
+PayloadCreateResponse object { id, payload }
 
 Defines a Content Scanning custom expression.
 
@@ -204,7 +204,7 @@ Defines the custom content extraction expression used to reach content objects i
 
 <summary>
 
-PayloadDeleteResponse object {id, payload }
+PayloadDeleteResponse object { id, payload }
 
 Defines a Content Scanning custom expression.
 
@@ -232,7 +232,7 @@ Defines the custom content extraction expression used to reach content objects i
 
 <summary>
 
-PayloadUpdateResponse object {id, payload }
+PayloadUpdateResponse object { id, payload }
 
 Defines a Content Scanning custom expression.
 
@@ -268,7 +268,7 @@ GET/zones/{zone\_id}/content-upload-scan/settings
 
 <summary>
 
-SettingGetResponse object {modified, value }
+SettingGetResponse object { modified, value }
 
 Defines the status for Content Scanning.
 

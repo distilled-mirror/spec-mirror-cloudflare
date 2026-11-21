@@ -64,7 +64,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 <summary>
 
-datasetType: optional "RANKING\_BUCKET"or "REPORT"
+datasetType: optional "RANKING\_BUCKET" or "REPORT"
 
 Filters results by dataset type.
 
@@ -96,7 +96,7 @@ formatdate
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -140,7 +140,7 @@ minimum0
 
 <summary>
 
-result: object {datasets }
+result: object { datasets }
 
 </summary>
 
@@ -148,7 +148,7 @@ result: object {datasets }
 
 <summary>
 
-datasets: array of object {id, description, meta, 3 more }
+datasets: array of object { id, description, meta, 3 more }
 
 </summary>
 

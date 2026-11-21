@@ -40,7 +40,7 @@ GET/accounts/{account\_id}/workers/observability/agents/traces/{traceId}/events
 
 <summary>
 
-TraceListResponse object {agents, conversationIds, errorCount, 19 more }
+TraceListResponse object { agents, conversationIds, errorCount, 19 more }
 
 </summary>
 
@@ -202,7 +202,7 @@ Error messages encountered during the trace, if any.
 
 <summary>
 
-TraceGetResponse object {agents, conversationIds, errorCount, 19 more }
+TraceGetResponse object { agents, conversationIds, errorCount, 19 more }
 
 </summary>
 
@@ -364,7 +364,7 @@ Error messages encountered during the trace, if any.
 
 <summary>
 
-TraceEventsResponse = array of object {"$metadata", dataset, source, 3 more }
+TraceEventsResponse = array of object { "$metadata", dataset, source, 3 more }
 
 </summary>
 
@@ -372,7 +372,7 @@ TraceEventsResponse = array of object {"$metadata", dataset, source, 3 more }
 
 <summary>
 
-"$metadata": object {id, account, cloudService, 35 more }
+"$metadata": object { id, account, cloudService, 35 more }
 
 Structured metadata extracted from the event. These fields are indexed and available for filtering and aggregation.
 
@@ -546,7 +546,7 @@ Human-readable name for this span.
 
 <summary>
 
-spanStatus: optional "unset"or "ok"or "error"
+spanStatus: optional "unset" or "ok" or "error"
 
 OpenTelemetry span status. Present only on spans. <code>unset</code> when the span did not set a status, including spans recorded before status was captured.
 
@@ -666,7 +666,7 @@ The dataset this event belongs to (e.g. cloudflare-workers).
 
 <summary>
 
-source: stringor map\[unknown]
+source: string or map\[unknown]
 
 Raw log payload. May be a string or a structured object depending on how the log was emitted.
 
@@ -704,7 +704,7 @@ Cloudflare Containers event information that enriches your logs for identifying 
 
 <summary>
 
-"$workers": optional object {eventType, scriptName, durableObjectId, 11 more } or object {cpuTimeMs, eventType, outcome, 15 more }
+"$workers": optional object { eventType, scriptName, durableObjectId, 11 more } or object { cpuTimeMs, eventType, outcome, 15 more }
 
 Cloudflare Workers event information that enriches your logs for identifying and debugging issues.
 
@@ -716,7 +716,7 @@ One of the following:
 
 <summary>
 
-object {eventType, scriptName, durableObjectId, 11 more }
+object { eventType, scriptName, durableObjectId, 11 more }
 
 </summary>
 
@@ -724,7 +724,7 @@ object {eventType, scriptName, durableObjectId, 11 more }
 
 <summary>
 
-eventType: "fetch"or "scheduled"or "alarm"or 9 more
+eventType: "fetch" or "scheduled" or "alarm" or 9 more
 
 </summary>
 
@@ -802,7 +802,7 @@ event: optional map\[unknown]
 
 <summary>
 
-executionModel: optional "durableObject"or "stateless"
+executionModel: optional "durableObject" or "stateless"
 
 </summary>
 
@@ -824,7 +824,7 @@ One of the following:
 
 <summary>
 
-gateway: optional object {requestId }
+gateway: optional object { requestId }
 
 </summary>
 
@@ -844,7 +844,7 @@ outcome: optional string
 
 <summary>
 
-preview: optional object {id, name, slug }
+preview: optional object { id, name, slug }
 
 </summary>
 
@@ -872,7 +872,7 @@ requestId: optional string
 
 <summary>
 
-scriptVersion: optional object {id, message, tag }
+scriptVersion: optional object { id, message, tag }
 
 </summary>
 
@@ -912,7 +912,7 @@ truncated: optional boolean
 
 <summary>
 
-object {cpuTimeMs, eventType, outcome, 15 more }
+object { cpuTimeMs, eventType, outcome, 15 more }
 
 </summary>
 
@@ -924,7 +924,7 @@ cpuTimeMs: number
 
 <summary>
 
-eventType: "fetch"or "scheduled"or "alarm"or 9 more
+eventType: "fetch" or "scheduled" or "alarm" or 9 more
 
 </summary>
 
@@ -998,7 +998,7 @@ wallTimeMs: number
 
 <summary>
 
-diagnosticsChannelEvents: optional array of object {channel, message, timestamp }
+diagnosticsChannelEvents: optional array of object { channel, message, timestamp }
 
 </summary>
 
@@ -1038,7 +1038,7 @@ event: optional map\[unknown]
 
 <summary>
 
-executionModel: optional "durableObject"or "stateless"
+executionModel: optional "durableObject" or "stateless"
 
 </summary>
 
@@ -1060,7 +1060,7 @@ One of the following:
 
 <summary>
 
-gateway: optional object {requestId }
+gateway: optional object { requestId }
 
 </summary>
 
@@ -1076,7 +1076,7 @@ requestId: string
 
 <summary>
 
-preview: optional object {id, name, slug }
+preview: optional object { id, name, slug }
 
 </summary>
 
@@ -1104,7 +1104,7 @@ requestId: optional string
 
 <summary>
 
-scriptVersion: optional object {id, message, tag }
+scriptVersion: optional object { id, message, tag }
 
 </summary>
 

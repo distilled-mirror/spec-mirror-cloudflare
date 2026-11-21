@@ -36,7 +36,7 @@ DELETE/accounts/{account\_id}/stream/keys/{identifier}
 
 <summary>
 
-Keys object {id, created, jwk, pem }
+Keys object { id, created, jwk, pem }
 
 </summary>
 
@@ -76,7 +76,7 @@ The signing key in PEM format.
 
 <summary>
 
-KeyGetResponse object {id, created, key\_id }
+KeyGetResponse object { id, created, key\_id }
 
 </summary>
 

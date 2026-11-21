@@ -54,7 +54,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Workers Tail Read``Workers Scripts Write``Workers Scripts Read`
+`Workers Metadata Read-Only``Workers Editor``Workers Content Read-Only``Workers Admin``Individual Workers Metadata Read-Only``Individual Workers Editor``Individual Workers Content Read-Only``Individual Workers Admin``Granular Workers Scripts Read``Workers Tail Read``Workers Scripts Write``Workers Scripts Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -94,7 +94,7 @@ minLength1
 
 <summary>
 
-errors: array of object {code, message }
+errors: array of object { code, message }
 
 </summary>
 
@@ -114,7 +114,7 @@ message: string
 
 <summary>
 
-messages: array of object {code, message }
+messages: array of object { code, message }
 
 </summary>
 
@@ -134,7 +134,7 @@ message: string
 
 <summary>
 
-result: array of object {id, class\_name, created\_on, 8 more }
+result: array of object { id, class\_name, created\_on, 8 more }
 
 </summary>
 
@@ -186,7 +186,7 @@ formatdate-time
 
 <summary>
 
-jurisdiction: optional "eu"or "fedramp"or "us"
+jurisdiction: optional "eu" or "fedramp" or "us"
 
 Jurisdiction where instances of this workflow run and store data. Set when the workflow is created and cannot be changed.
 
@@ -214,7 +214,7 @@ One of the following:
 
 <summary>
 
-schedules: optional array of object {cron, next\_instance }
+schedules: optional array of object { cron, next\_instance }
 
 </summary>
 
@@ -248,7 +248,7 @@ success: true
 
 <summary>
 
-result\_info: optional object {count, per\_page, total\_count, 3 more }
+result\_info: optional object { count, per\_page, total\_count, 3 more }
 
 </summary>
 

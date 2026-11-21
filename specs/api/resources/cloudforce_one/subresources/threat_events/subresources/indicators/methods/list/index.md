@@ -86,7 +86,7 @@ Dataset UUIDs to query, or one standalone scope value: ‘all’/’\*’ or ‘
 
 <summary>
 
-format: optional "json"or "stix2"or "taxii"
+format: optional "json" or "stix2" or "taxii"
 
 Output format for indicator data. ‘json’ returns the default format, ‘stix2’ returns STIX 2.1 Indicator SDOs, ‘taxii’ returns a TAXII 2.1 Envelope with Content-Type application/taxii+json;version=2.1.
 
@@ -156,7 +156,7 @@ Limit the number of related events returned per indicator. Default: 2. Set to 0 
 
 <summary>
 
-search: optional array of object {field, op, value }
+search: optional array of object { field, op, value }
 
 Structured search as a JSON array of {field, op, value} objects. Searchable fields: value, indicatorType, uuid. Supports operators: equals, not, contains, startsWith, endsWith, gt, lt, gte, lte, like, in, find. Use the ‘in’ operator with an array value to bulk-check up to 100 indicators in a single request, e.g. search=\[{“field”:“value”,“op”:“in”,“value”:\[“evil.com”,“bad.org”]}]. Multiple conditions are AND’d together. Max 10 conditions per request.
 
@@ -166,7 +166,7 @@ Structured search as a JSON array of {field, op, value} objects. Searchable fiel
 
 <summary>
 
-field: "value"or "indicatorType"or "uuid"
+field: "value" or "indicatorType" or "uuid"
 
 The indicator field to search on. Allowed: value, indicatorType, uuid.
 
@@ -194,7 +194,7 @@ One of the following:
 
 <summary>
 
-op: "equals"or "not"or "gt"or 9 more
+op: "equals" or "not" or "gt" or 9 more
 
 Search operator. Use ‘in’ for bulk lookup of up to 100 values at once, e.g. {field:‘value’, op:‘in’, value:\[‘evil.com’,‘bad.org’]}.
 
@@ -258,7 +258,7 @@ One of the following:
 
 <summary>
 
-value: stringor array of string
+value: string or array of string
 
 Search value. String for most operators. Array of strings for ‘in’ operator (max 100 items).
 
@@ -292,7 +292,7 @@ Filter by tag values or UUIDs. Indicators must have at least one of the specifie
 
 <summary>
 
-tagSearch: optional array of object {field, op, value }
+tagSearch: optional array of object { field, op, value }
 
 Structured tag-metadata filter as a JSON array of {field, op, value} objects. Operates against the per-dataset IndicatorTag mirror so you can find indicators by tag attributes (origin country, motive, sophistication, priority, etc.) without a separate Tags lookup. Common dashboard usage: drill from a country into indicators, e.g. tagSearch=\[{“field”:“originCountryISO”,“op”:“in”,“value”:\[“IR”,“CN”]}]. Country values may be passed as alpha-2, alpha-3, name, or alias (e.g. “iran”). Operators: equals, not, gt/gte/lt/lte (numeric only), contains/like/find/startsWith/endsWith (string only), in. AND-joined across entries; combined with <code>tags</code>, a matching tag must satisfy both. Max 10 entries per request, max 100 values per ‘in’. Performance notes: <code>originCountryISO</code> uses its B-tree index for equals/not/in. <code>priority</code> uses its B-tree index for numeric comparisons. Other string columns (<code>actorCategory</code>, <code>motive</code>, etc.) are case-insensitive and unindexed; current catalog size makes this a non-issue. <code>endsWith</code> and <code>aliasGroupNames</code> contains/like are leading-wildcard scans and slow on large result sets. <code>aliasGroupNames</code> matches on the JSON-encoded text, so substrings can cross alias boundaries (“apt28” also matches “apt280” when both appear in the same tag’s alias list).
 
@@ -302,7 +302,7 @@ Structured tag-metadata filter as a JSON array of {field, op, value} objects. Op
 
 <summary>
 
-field: "value"or "categoryId"or "actorCategory"or 9 more
+field: "value" or "categoryId" or "actorCategory" or 9 more
 
 Tag mirror field to filter on. Allowed: value, categoryId, actorCategory, aliasGroupNames, attributionConfidence, attributionOrganization, motive, opsecLevel, originCountryISO, sophisticationLevel, priority, analyticPriority. Filters operate against the per-dataset IndicatorTag mirror (which is kept in sync with the Tags SoT by the tag-propagation workflow).
 
@@ -366,7 +366,7 @@ One of the following:
 
 <summary>
 
-op: "equals"or "not"or "gt"or 9 more
+op: "equals" or "not" or "gt" or 9 more
 
 Search operator. Use ‘in’ for bulk OR within a single field, e.g. {field:“originCountryISO”, op:“in”, value:\[“IR”,“CN”]}.
 
@@ -430,7 +430,7 @@ One of the following:
 
 <summary>
 
-value: optional stringor numberor array of stringor number
+value: optional string or number or array of string or number
 
 Search value. String or number for most operators. Array for ‘in’ (max 100 items). Country values may be passed as alpha-2, alpha-3, name, or common alias (e.g. “iran”, “IR”, “IRN”) and are normalized to alpha-2 server-side.
 
@@ -450,7 +450,7 @@ number
 
 <summary>
 
-array of stringor number
+array of string or number
 
 </summary>
 
@@ -482,7 +482,7 @@ number
 
 <summary>
 
-properties: object {completeness, indicators, pagination }
+properties: object { completeness, indicators, pagination }
 
 </summary>
 
@@ -490,7 +490,7 @@ properties: object {completeness, indicators, pagination }
 
 <summary>
 
-completeness: object {properties, type }
+completeness: object { properties, type }
 
 </summary>
 
@@ -498,7 +498,7 @@ completeness: object {properties, type }
 
 <summary>
 
-properties: object {complete, failedDatasets, failedShards, warnings }
+properties: object { complete, failedDatasets, failedShards, warnings }
 
 </summary>
 
@@ -506,7 +506,7 @@ properties: object {complete, failedDatasets, failedShards, warnings }
 
 <summary>
 
-complete: object {type }
+complete: object { type }
 
 </summary>
 
@@ -522,7 +522,7 @@ type: string
 
 <summary>
 
-failedDatasets: object {items, type }
+failedDatasets: object { items, type }
 
 </summary>
 
@@ -530,85 +530,9 @@ failedDatasets: object {items, type }
 
 <summary>
 
-items: object {type }
+items: object { type }
 
 </summary>
-
-type: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-type: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-failedShards: object {items, type }
-
-</summary>
-
-<details>
-
-<summary>
-
-items: object {properties, type }
-
-</summary>
-
-<details>
-
-<summary>
-
-properties: object {datasetId, shardId }
-
-</summary>
-
-<details>
-
-<summary>
-
-datasetId: object {type }
-
-</summary>
-
-type: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-shardId: object {type }
-
-</summary>
-
-type: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
 
 type: string
 
@@ -630,7 +554,7 @@ type: string
 
 <summary>
 
-warnings: object {items, type }
+failedShards: object { items, type }
 
 </summary>
 
@@ -638,7 +562,83 @@ warnings: object {items, type }
 
 <summary>
 
-items: object {type }
+items: object { properties, type }
+
+</summary>
+
+<details>
+
+<summary>
+
+properties: object { datasetId, shardId }
+
+</summary>
+
+<details>
+
+<summary>
+
+datasetId: object { type }
+
+</summary>
+
+type: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+shardId: object { type }
+
+</summary>
+
+type: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+type: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+type: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+warnings: object { items, type }
+
+</summary>
+
+<details>
+
+<summary>
+
+items: object { type }
 
 </summary>
 
@@ -674,7 +674,7 @@ type: string
 
 <summary>
 
-indicators: object {items, type }
+indicators: object { items, type }
 
 </summary>
 
@@ -682,7 +682,7 @@ indicators: object {items, type }
 
 <summary>
 
-items: object {createdAt, indicatorType, sources, 8 more }
+items: object { createdAt, indicatorType, sources, 8 more }
 
 </summary>
 
@@ -700,7 +700,7 @@ indicatorType: string
 
 <summary>
 
-sources: array of object {resourceId, resourceType, system, title }
+sources: array of object { resourceId, resourceType, system, title }
 
 RSS article sources from which this indicator was extracted.
 
@@ -754,7 +754,7 @@ The dataset ID this indicator belongs to. Included in list responses.
 
 <summary>
 
-relatedEvents: optional array of object {datasetId, eventId, eventDate }
+relatedEvents: optional array of object { datasetId, eventId, eventDate }
 
 Related events, capped by <code>relatedEventsLimit</code> (default 2). Check <code>relatedEventsHasMore</code> to detect a capped list; pass <code>relatedEventsLimit=-1</code> to retrieve all of them.
 
@@ -788,7 +788,7 @@ True when this indicator appears in more events than <code>relatedEvents</code> 
 
 <summary>
 
-tags: optional array of object {categoryId, categoryName, uuid, value }
+tags: optional array of object { categoryId, categoryName, uuid, value }
 
 </summary>
 
@@ -836,7 +836,7 @@ type: string
 
 <summary>
 
-pagination: object {properties, type }
+pagination: object { properties, type }
 
 </summary>
 
@@ -844,7 +844,7 @@ pagination: object {properties, type }
 
 <summary>
 
-properties: object {count, cursor, has\_more, 4 more }
+properties: object { count, cursor, has\_more, 4 more }
 
 </summary>
 
@@ -852,7 +852,7 @@ properties: object {count, cursor, has\_more, 4 more }
 
 <summary>
 
-count: object {type }
+count: object { type }
 
 </summary>
 
@@ -868,7 +868,7 @@ type: string
 
 <summary>
 
-cursor: object {description, nullable, type }
+cursor: object { description, nullable, type }
 
 </summary>
 
@@ -892,7 +892,7 @@ type: string
 
 <summary>
 
-has\_more: object {description, type }
+has\_more: object { description, type }
 
 </summary>
 
@@ -912,7 +912,7 @@ type: string
 
 <summary>
 
-page: object {type }
+page: object { type }
 
 </summary>
 
@@ -928,7 +928,7 @@ type: string
 
 <summary>
 
-per\_page: object {type }
+per\_page: object { type }
 
 </summary>
 
@@ -944,7 +944,7 @@ type: string
 
 <summary>
 
-total\_count: object {description, nullable, type }
+total\_count: object { description, nullable, type }
 
 </summary>
 
@@ -968,7 +968,7 @@ type: string
 
 <summary>
 
-total\_count\_is\_exact: object {description, type }
+total\_count\_is\_exact: object { description, type }
 
 </summary>
 

@@ -60,7 +60,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`AI Gateway Write`
+`AI Search Index Engine``Auto Rag Write Run Engine``AI Gateway Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -82,7 +82,7 @@ minimum100
 
 <summary>
 
-duration: "daily"or "weekly"or "monthly"
+duration: "daily" or "weekly" or "monthly"
 
 Spending limit duration.
 
@@ -110,7 +110,7 @@ One of the following:
 
 <summary>
 
-strategy: "fixed"or "sliding"
+strategy: "fixed" or "sliding"
 
 Spending limit strategy.
 
@@ -136,7 +136,7 @@ One of the following:
 
 <summary>
 
-errors: array of object {code, message }
+errors: array of object { code, message }
 
 </summary>
 
@@ -156,7 +156,7 @@ message: string
 
 <summary>
 
-messages: array of object {code, message }
+messages: array of object { code, message }
 
 </summary>
 
@@ -184,7 +184,7 @@ success: true
 
 <summary>
 
-result\_info: optional object {has\_more, page, per\_page, total\_count }
+result\_info: optional object { has\_more, page, per\_page, total\_count }
 
 </summary>
 

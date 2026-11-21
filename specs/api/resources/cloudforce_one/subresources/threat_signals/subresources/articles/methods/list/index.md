@@ -100,7 +100,7 @@ When true on the first page, count matching articles and return an exact total. 
 
 <summary>
 
-min\_relevance: optional "low"or "medium"or "high"
+min\_relevance: optional "low" or "medium" or "high"
 
 Beta. Return only articles at or above this relevance band for pir\_id, or for any active PIR when pir\_id is omitted. Excludes articles that have not been scored.
 
@@ -178,7 +178,7 @@ minLength1
 
 <summary>
 
-severity: optional array of "informational"or "low"or "medium"or 2 more
+severity: optional array of "informational" or "low" or "medium" or 2 more
 
 Beta. Repeatable intrinsic severity band filter. An article matches any selected band, the band reported as its severity. Excludes articles without a severity. Like the severity field, severity is reported only while the account has an active Priority Intelligence Requirement; otherwise no articles match.
 
@@ -220,7 +220,7 @@ Sort by fetched\_at, published\_at, title, or relevance (beta). Prefix the field
 
 <summary>
 
-source\_type: optional "curated"or "custom"
+source\_type: optional "curated" or "custom"
 
 Filter by curated or custom feed source. Omit to include both source types.
 
@@ -250,7 +250,7 @@ Legacy human-readable tag-value filter. Ignored when tag\_id is supplied; prefer
 
 <summary>
 
-tag\_applied\_by: optional "ai"or "analyst"or "system"
+tag\_applied\_by: optional "ai" or "analyst" or "system"
 
 Assignment provenance filter. When combined with tag\_id or tag\_category\_id, the matching assignment must have this provenance.
 
@@ -298,7 +298,7 @@ Repeatable tag UUID filter. An article matches any selected tag.
 
 <summary>
 
-errors: array of object {message }
+errors: array of object { message }
 
 </summary>
 
@@ -314,7 +314,7 @@ message: string
 
 <summary>
 
-result: object {articles, has\_more, next\_cursor, 2 more }
+result: object { articles, has\_more, next\_cursor, 2 more }
 
 </summary>
 
@@ -322,7 +322,7 @@ result: object {articles, has\_more, next\_cursor, 2 more }
 
 <summary>
 
-articles: array of object {id, dataset\_id, event\_id, 13 more }
+articles: array of object { id, dataset\_id, event\_id, 13 more }
 
 </summary>
 
@@ -378,7 +378,7 @@ read\_at: string
 
 <summary>
 
-relevance: object {band, pir\_id, pirs }
+relevance: object { band, pir\_id, pirs }
 
 Beta. The article’s relevance to the account’s active Priority Intelligence Requirements. Null when the article has not been scored against them, including when the account has no active PIRs, or has not been scored against the requested pir\_id.
 
@@ -388,7 +388,7 @@ Beta. The article’s relevance to the account’s active Priority Intelligence 
 
 <summary>
 
-band: "low"or "medium"or "high"
+band: "low" or "medium" or "high"
 
 Beta. How relevant the article is to a Priority Intelligence Requirement: high, medium, or low. Cloudflare may change the scores behind each band as relevance scoring is calibrated.
 
@@ -424,7 +424,7 @@ formatuuid
 
 <summary>
 
-pirs: array of object {band, pir\_id, requirement\_basis }
+pirs: array of object { band, pir\_id, requirement\_basis }
 
 Beta. Every active PIR the article was scored against, most relevant first. Draft and deleted PIRs are excluded.
 
@@ -434,7 +434,7 @@ Beta. Every active PIR the article was scored against, most relevant first. Draf
 
 <summary>
 
-band: "low"or "medium"or "high"
+band: "low" or "medium" or "high"
 
 Beta. How relevant the article is to a Priority Intelligence Requirement: high, medium, or low. Cloudflare may change the scores behind each band as relevance scoring is calibrated.
 
@@ -468,7 +468,7 @@ formatuuid
 
 <summary>
 
-requirement\_basis: "current"or "saved"
+requirement\_basis: "current" or "saved"
 
 Beta. current: scored against the PIR’s current requirement. saved: the PIR’s structured definition no longer generates a valid requirement, for example because its topic was retired, so the requirement from its last save was scored instead.
 
@@ -500,7 +500,7 @@ One of the following:
 
 <summary>
 
-relevance\_coverage: "current"or "stale"or "pending"or "unavailable"
+relevance\_coverage: "current" or "stale" or "pending" or "unavailable"
 
 Beta. Whether relevance and severity reflect the account’s current Priority Intelligence Requirements, organization profile, and the article’s current content. current: they do. stale: they were scored before a change; articles fetched in the last 7 days are being rescored, older articles keep these scores. pending: not scored yet, fetched in the last 7 days. unavailable: not scored, and will not be scored automatically, because it was fetched more than 7 days ago or processing failed. Updates to managed topics can take up to a day to mark scores stale. Null when the account has no active PIRs or none of its articles has been scored yet.
 
@@ -532,7 +532,7 @@ One of the following:
 
 <summary>
 
-severity: "informational"or "low"or "medium"or 2 more
+severity: "informational" or "low" or "medium" or 2 more
 
 Beta. Intrinsic article severity band, from informational to critical, independent of any organisation or Priority Intelligence Requirement. Null when the account has no active Priority Intelligence Requirements, scoring has not completed, or a historic article has not entered an automatic rescore window.
 
@@ -574,7 +574,7 @@ Persisted enrichment summary. Null until enrichment produces a summary.
 
 <summary>
 
-tags: array of object {applied\_by, categoryId, uuid, value }
+tags: array of object { applied\_by, categoryId, uuid, value }
 
 </summary>
 
@@ -582,7 +582,7 @@ tags: array of object {applied\_by, categoryId, uuid, value }
 
 <summary>
 
-applied\_by: "ai"or "analyst"or "system"
+applied\_by: "ai" or "analyst" or "system"
 
 </summary>
 

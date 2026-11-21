@@ -74,7 +74,7 @@ Filter by application/vendor (e.g., GOOGLE\_WORKSPACE, MICROSOFT\_INTERNAL).
 
 <summary>
 
-direction: optional "asc"or "desc"
+direction: optional "asc" or "desc"
 
 Direction to order results.
 
@@ -104,7 +104,7 @@ Filter by DLP enabled status (true/false).
 
 <summary>
 
-order: optional "application"or "created"or "name"or "status"
+order: optional "application" or "created" or "name" or "status"
 
 Field to order results by.
 
@@ -154,7 +154,7 @@ Search integrations by name or application.
 
 <summary>
 
-status: optional "Healthy"or "Initializing"or "Offline"or "Unhealthy"
+status: optional "Healthy" or "Initializing" or "Offline" or "Unhealthy"
 
 Filter by integration status.
 
@@ -206,7 +206,7 @@ List of messages.
 
 <summary>
 
-result: array of object {id, application, auth\_method, 7 more }
+result: array of object { id, application, auth\_method, 7 more }
 
 List of items.
 
@@ -228,7 +228,7 @@ application: map\[string]
 
 <summary>
 
-auth\_method: object {id, display\_name }
+auth\_method: object { id, display\_name }
 
 The integration’s authentication method.
 
@@ -250,7 +250,7 @@ display\_name: string
 
 <summary>
 
-config: object {gitlab }
+config: object { gitlab }
 
 Vendor-specific integration configuration.
 
@@ -260,7 +260,7 @@ Vendor-specific integration configuration.
 
 <summary>
 
-gitlab: optional object {groups, projects }
+gitlab: optional object { groups, projects }
 
 GitLab-specific configuration. Present only for GitLab integrations.
 
@@ -270,7 +270,7 @@ GitLab-specific configuration. Present only for GitLab integrations.
 
 <summary>
 
-groups: array of object {id, display\_name, path }
+groups: array of object { id, display\_name, path }
 
 Selected top-level GitLab groups.
 
@@ -302,7 +302,7 @@ Full GitLab resource path.
 
 <summary>
 
-projects: array of object {id, display\_name, path }
+projects: array of object { id, display\_name, path }
 
 Selected GitLab projects.
 
@@ -386,7 +386,7 @@ Use cases enabled for the integration.
 
 <summary>
 
-result\_info: object {count, next, page, 3 more }
+result\_info: object { count, next, page, 3 more }
 
 Pagination metadata.
 

@@ -74,7 +74,7 @@ maxLength32
 
 <summary>
 
-direction: optional "asc"or "desc"
+direction: optional "asc" or "desc"
 
 The direction used to sort returned connections.
 
@@ -124,7 +124,7 @@ Wildcards are supported at the start and end of each hostname to support starts 
 
 <summary>
 
-order\_by: optional "first\_seen\_at"or "last\_seen\_at"
+order\_by: optional "first\_seen\_at" or "last\_seen\_at"
 
 The field used to sort returned connections.
 
@@ -194,7 +194,7 @@ Includes connections whose URL contain one or more URL-encoded URLs separated by
 
 <summary>
 
-result\_info: object {count, page, per\_page, 2 more }
+result\_info: object { count, page, per\_page, 2 more }
 
 </summary>
 
@@ -264,7 +264,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -306,7 +306,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -326,7 +326,7 @@ pointer: optional string
 
 <summary>
 
-result: optional array of object {id, added\_at, first\_seen\_at, 10 more }
+result: optional array of object { id, added\_at, first\_seen\_at, 10 more }
 
 </summary>
 

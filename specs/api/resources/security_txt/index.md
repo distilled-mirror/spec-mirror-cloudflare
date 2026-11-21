@@ -34,7 +34,7 @@ DELETE/zones/{zone\_id}/security-center/securitytxt
 
 <summary>
 
-SecurityTXTGetResponse object {contact, expires, acknowledgments, 6 more }
+SecurityTXTGetResponse object { contact, expires, acknowledgments, 6 more }
 
 Configuration of the zone security.txt file
 
@@ -104,7 +104,7 @@ Comma-separated list of natural languages that are preferred when submitting sec
 
 <summary>
 
-SecurityTXTUpdateResponse object {errors, messages, success }
+SecurityTXTUpdateResponse object { errors, messages, success }
 
 </summary>
 
@@ -112,7 +112,7 @@ SecurityTXTUpdateResponse object {errors, messages, success }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -134,7 +134,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -154,7 +154,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -176,7 +176,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -206,7 +206,7 @@ Whether the API call was successful.
 
 <summary>
 
-SecurityTXTDeleteResponse object {errors, messages, success }
+SecurityTXTDeleteResponse object { errors, messages, success }
 
 </summary>
 
@@ -214,7 +214,7 @@ SecurityTXTDeleteResponse object {errors, messages, success }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -236,7 +236,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -256,7 +256,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -278,7 +278,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 

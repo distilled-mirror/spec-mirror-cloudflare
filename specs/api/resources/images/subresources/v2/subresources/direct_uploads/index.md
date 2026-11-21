@@ -30,7 +30,7 @@ POST/accounts/{account\_id}/images/v2/direct\_upload
 
 <summary>
 
-DirectUploadCreateResponse object {id, uploadURL }
+DirectUploadCreateResponse object { id, uploadURL }
 
 </summary>
 

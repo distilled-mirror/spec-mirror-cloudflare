@@ -32,7 +32,7 @@ POST/zones/{zone\_id}/logpush/edge/jobs
 
 <summary>
 
-InstantLogpushJob object {destination\_conf, fields, filter, 2 more }
+InstantLogpushJob object { destination\_conf, fields, filter, 2 more }
 
 </summary>
 

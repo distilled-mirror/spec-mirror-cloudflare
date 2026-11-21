@@ -34,7 +34,7 @@ PUT/accounts/{account\_id}/gateway/logging
 
 <summary>
 
-LoggingSetting object {redact\_pii, settings\_by\_rule\_type }
+LoggingSetting object { redact\_pii, settings\_by\_rule\_type }
 
 </summary>
 
@@ -48,7 +48,7 @@ Indicate whether to redact personally identifiable information from activity log
 
 <summary>
 
-settings\_by\_rule\_type: optional object {dns, http, l4 }
+settings\_by\_rule\_type: optional object { dns, http, l4 }
 
 Configure logging settings for each rule type.
 
@@ -58,7 +58,7 @@ Configure logging settings for each rule type.
 
 <summary>
 
-dns: optional object {log\_all, log\_blocks }
+dns: optional object { log\_all, log\_blocks }
 
 Configure logging settings for DNS firewall.
 
@@ -84,7 +84,7 @@ Specify whether to log only blocking requests to this service.
 
 <summary>
 
-http: optional object {log\_all, log\_blocks }
+http: optional object { log\_all, log\_blocks }
 
 Configure logging settings for HTTP/HTTPS firewall.
 
@@ -110,7 +110,7 @@ Specify whether to log only blocking requests to this service.
 
 <summary>
 
-l4: optional object {log\_all, log\_blocks }
+l4: optional object { log\_all, log\_blocks }
 
 Configure logging settings for Network firewall.
 

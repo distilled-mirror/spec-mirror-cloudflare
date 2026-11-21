@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Workers AI Write``Workers AI Read`
+`Workers AI Metadata Read``AI Search Index Engine``Auto Rag Write Run Engine``Workers AI Write``Workers AI Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -70,7 +70,7 @@ account\_id: string
 
 <summary>
 
-result: object {id, created\_at, model, 3 more }
+result: object { id, created\_at, model, 3 more }
 
 </summary>
 

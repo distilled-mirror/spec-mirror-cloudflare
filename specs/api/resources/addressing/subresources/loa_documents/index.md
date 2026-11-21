@@ -32,7 +32,7 @@ POST/accounts/{account\_id}/addressing/loa\_documents
 
 <summary>
 
-LOADocumentCreateResponse object {id, account\_id, auto\_generated, 5 more }
+LOADocumentCreateResponse object { id, account\_id, auto\_generated, 5 more }
 
 </summary>
 

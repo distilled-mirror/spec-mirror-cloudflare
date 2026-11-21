@@ -32,7 +32,7 @@ GET/radar/bgp/routes/upstreams/{asn}/timeseries
 
 <summary>
 
-UpstreamTimeseriesResponse object {meta, serie\_0 }
+UpstreamTimeseriesResponse object { meta, serie\_0 }
 
 </summary>
 
@@ -40,7 +40,7 @@ UpstreamTimeseriesResponse object {meta, serie\_0 }
 
 <summary>
 
-meta: object {dataTime, effectiveCollector, queryTime, stale }
+meta: object { dataTime, effectiveCollector, queryTime, stale }
 
 </summary>
 
@@ -76,7 +76,7 @@ stale: boolean
 
 <summary>
 
-serie\_0: object {timestamps }
+serie\_0: object { timestamps }
 
 </summary>
 

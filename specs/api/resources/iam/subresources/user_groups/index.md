@@ -44,7 +44,7 @@ DELETE/accounts/{account\_id}/iam/user\_groups/{user\_group\_id}
 
 <summary>
 
-UserGroupListResponse object {id, created\_on, modified\_on, 2 more }
+UserGroupListResponse object { id, created\_on, modified\_on, 2 more }
 
 A group of policies resources.
 
@@ -86,7 +86,7 @@ Name of the user group.
 
 <summary>
 
-policies: optional array of object {id, access, permission\_groups, resource\_groups }
+policies: optional array of object { id, access, permission\_groups, resource\_groups }
 
 Policies attached to the User group
 
@@ -102,7 +102,7 @@ Policy identifier.
 
 <summary>
 
-access: optional "allow"or "deny"
+access: optional "allow" or "deny"
 
 Allow or deny operations against the resources.
 
@@ -126,7 +126,7 @@ One of the following:
 
 <summary>
 
-permission\_groups: optional array of object {id, meta, name }
+permission\_groups: optional array of object { id, meta, name }
 
 A set of permission groups that are specified to the policy.
 
@@ -142,7 +142,7 @@ Identifier of the permission group.
 
 <summary>
 
-meta: optional object {category, deprecated, description, 5 more }
+meta: optional object { category, deprecated, description, 5 more }
 
 Attributes associated to the permission group.
 
@@ -216,7 +216,7 @@ Name of the permission group.
 
 <summary>
 
-resource\_groups: optional array of object {id, scope, meta, name }
+resource\_groups: optional array of object { id, scope, meta, name }
 
 A list of resource groups that the policy applies to.
 
@@ -232,7 +232,7 @@ Identifier of the resource group.
 
 <summary>
 
-scope: object {key, objects }
+scope: object { key, objects }
 
 The scope associated to the resource group
 
@@ -248,7 +248,7 @@ This is a combination of pre-defined resource name and identifier (like Account 
 
 <summary>
 
-objects: array of object {key }
+objects: array of object { key }
 
 A list of scope objects for additional context.
 
@@ -272,7 +272,7 @@ This is a combination of pre-defined resource name and identifier (like Zone ID 
 
 <summary>
 
-meta: optional object {key, value }
+meta: optional object { key, value }
 
 Attributes associated to the resource group.
 
@@ -312,7 +312,7 @@ Name of the resource group.
 
 <summary>
 
-UserGroupGetResponse object {id, created\_on, modified\_on, 2 more }
+UserGroupGetResponse object { id, created\_on, modified\_on, 2 more }
 
 A group of policies resources.
 
@@ -354,7 +354,7 @@ Name of the user group.
 
 <summary>
 
-policies: optional array of object {id, access, permission\_groups, resource\_groups }
+policies: optional array of object { id, access, permission\_groups, resource\_groups }
 
 Policies attached to the User group
 
@@ -370,7 +370,7 @@ Policy identifier.
 
 <summary>
 
-access: optional "allow"or "deny"
+access: optional "allow" or "deny"
 
 Allow or deny operations against the resources.
 
@@ -394,7 +394,7 @@ One of the following:
 
 <summary>
 
-permission\_groups: optional array of object {id, meta, name }
+permission\_groups: optional array of object { id, meta, name }
 
 A set of permission groups that are specified to the policy.
 
@@ -410,7 +410,7 @@ Identifier of the permission group.
 
 <summary>
 
-meta: optional object {category, deprecated, description, 5 more }
+meta: optional object { category, deprecated, description, 5 more }
 
 Attributes associated to the permission group.
 
@@ -484,7 +484,7 @@ Name of the permission group.
 
 <summary>
 
-resource\_groups: optional array of object {id, scope, meta, name }
+resource\_groups: optional array of object { id, scope, meta, name }
 
 A list of resource groups that the policy applies to.
 
@@ -500,7 +500,7 @@ Identifier of the resource group.
 
 <summary>
 
-scope: object {key, objects }
+scope: object { key, objects }
 
 The scope associated to the resource group
 
@@ -516,7 +516,7 @@ This is a combination of pre-defined resource name and identifier (like Account 
 
 <summary>
 
-objects: array of object {key }
+objects: array of object { key }
 
 A list of scope objects for additional context.
 
@@ -540,7 +540,7 @@ This is a combination of pre-defined resource name and identifier (like Zone ID 
 
 <summary>
 
-meta: optional object {key, value }
+meta: optional object { key, value }
 
 Attributes associated to the resource group.
 
@@ -580,7 +580,7 @@ Name of the resource group.
 
 <summary>
 
-UserGroupCreateResponse object {id, created\_on, modified\_on, 2 more }
+UserGroupCreateResponse object { id, created\_on, modified\_on, 2 more }
 
 A group of policies resources.
 
@@ -622,7 +622,7 @@ Name of the user group.
 
 <summary>
 
-policies: optional array of object {id, access, permission\_groups, resource\_groups }
+policies: optional array of object { id, access, permission\_groups, resource\_groups }
 
 Policies attached to the User group
 
@@ -638,7 +638,7 @@ Policy identifier.
 
 <summary>
 
-access: optional "allow"or "deny"
+access: optional "allow" or "deny"
 
 Allow or deny operations against the resources.
 
@@ -662,7 +662,7 @@ One of the following:
 
 <summary>
 
-permission\_groups: optional array of object {id, meta, name }
+permission\_groups: optional array of object { id, meta, name }
 
 A set of permission groups that are specified to the policy.
 
@@ -678,7 +678,7 @@ Identifier of the permission group.
 
 <summary>
 
-meta: optional object {category, deprecated, description, 5 more }
+meta: optional object { category, deprecated, description, 5 more }
 
 Attributes associated to the permission group.
 
@@ -752,7 +752,7 @@ Name of the permission group.
 
 <summary>
 
-resource\_groups: optional array of object {id, scope, meta, name }
+resource\_groups: optional array of object { id, scope, meta, name }
 
 A list of resource groups that the policy applies to.
 
@@ -768,7 +768,7 @@ Identifier of the resource group.
 
 <summary>
 
-scope: object {key, objects }
+scope: object { key, objects }
 
 The scope associated to the resource group
 
@@ -784,7 +784,7 @@ This is a combination of pre-defined resource name and identifier (like Account 
 
 <summary>
 
-objects: array of object {key }
+objects: array of object { key }
 
 A list of scope objects for additional context.
 
@@ -808,7 +808,7 @@ This is a combination of pre-defined resource name and identifier (like Zone ID 
 
 <summary>
 
-meta: optional object {key, value }
+meta: optional object { key, value }
 
 Attributes associated to the resource group.
 
@@ -848,7 +848,7 @@ Name of the resource group.
 
 <summary>
 
-UserGroupUpdateResponse object {id, created\_on, modified\_on, 2 more }
+UserGroupUpdateResponse object { id, created\_on, modified\_on, 2 more }
 
 A group of policies resources.
 
@@ -890,7 +890,7 @@ Name of the user group.
 
 <summary>
 
-policies: optional array of object {id, access, permission\_groups, resource\_groups }
+policies: optional array of object { id, access, permission\_groups, resource\_groups }
 
 Policies attached to the User group
 
@@ -906,7 +906,7 @@ Policy identifier.
 
 <summary>
 
-access: optional "allow"or "deny"
+access: optional "allow" or "deny"
 
 Allow or deny operations against the resources.
 
@@ -930,7 +930,7 @@ One of the following:
 
 <summary>
 
-permission\_groups: optional array of object {id, meta, name }
+permission\_groups: optional array of object { id, meta, name }
 
 A set of permission groups that are specified to the policy.
 
@@ -946,7 +946,7 @@ Identifier of the permission group.
 
 <summary>
 
-meta: optional object {category, deprecated, description, 5 more }
+meta: optional object { category, deprecated, description, 5 more }
 
 Attributes associated to the permission group.
 
@@ -1020,7 +1020,7 @@ Name of the permission group.
 
 <summary>
 
-resource\_groups: optional array of object {id, scope, meta, name }
+resource\_groups: optional array of object { id, scope, meta, name }
 
 A list of resource groups that the policy applies to.
 
@@ -1036,7 +1036,7 @@ Identifier of the resource group.
 
 <summary>
 
-scope: object {key, objects }
+scope: object { key, objects }
 
 The scope associated to the resource group
 
@@ -1052,7 +1052,7 @@ This is a combination of pre-defined resource name and identifier (like Account 
 
 <summary>
 
-objects: array of object {key }
+objects: array of object { key }
 
 A list of scope objects for additional context.
 
@@ -1076,7 +1076,7 @@ This is a combination of pre-defined resource name and identifier (like Zone ID 
 
 <summary>
 
-meta: optional object {key, value }
+meta: optional object { key, value }
 
 Attributes associated to the resource group.
 
@@ -1116,7 +1116,7 @@ Name of the resource group.
 
 <summary>
 
-UserGroupDeleteResponse object {id }
+UserGroupDeleteResponse object { id }
 
 </summary>
 
@@ -1162,7 +1162,7 @@ DELETE/accounts/{account\_id}/iam/user\_groups/{user\_group\_id}/members/{member
 
 <summary>
 
-MemberListResponse object {id, email, status }
+MemberListResponse object { id, email, status }
 
 Member attached to a User Group.
 
@@ -1186,7 +1186,7 @@ maxLength90
 
 <summary>
 
-status: optional "accepted"or "pending"
+status: optional "accepted" or "pending"
 
 The member’s status in the account.
 
@@ -1214,7 +1214,7 @@ One of the following:
 
 <summary>
 
-MemberGetResponse object {id, created\_at, email, 2 more }
+MemberGetResponse object { id, created\_at, email, 2 more }
 
 Detailed member information for a User Group member.
 
@@ -1246,7 +1246,7 @@ maxLength90
 
 <summary>
 
-status: optional "accepted"or "pending"
+status: optional "accepted" or "pending"
 
 The member’s status in the account.
 
@@ -1270,7 +1270,7 @@ One of the following:
 
 <summary>
 
-user: optional object {id, email, first\_name, last\_name }
+user: optional object { id, email, first\_name, last\_name }
 
 Details of the user associated with this membership.
 
@@ -1314,7 +1314,7 @@ User’s last name.
 
 <summary>
 
-MemberCreateResponse object {id, email, status }
+MemberCreateResponse object { id, email, status }
 
 Member attached to a User Group.
 
@@ -1338,7 +1338,7 @@ maxLength90
 
 <summary>
 
-status: optional "accepted"or "pending"
+status: optional "accepted" or "pending"
 
 The member’s status in the account.
 
@@ -1366,7 +1366,7 @@ One of the following:
 
 <summary>
 
-MemberUpdateResponse object {id, email, status }
+MemberUpdateResponse object { id, email, status }
 
 Member attached to a User Group.
 
@@ -1390,7 +1390,7 @@ maxLength90
 
 <summary>
 
-status: optional "accepted"or "pending"
+status: optional "accepted" or "pending"
 
 The member’s status in the account.
 
@@ -1418,7 +1418,7 @@ One of the following:
 
 <summary>
 
-MemberDeleteResponse object {id, email, status }
+MemberDeleteResponse object { id, email, status }
 
 Member attached to a User Group.
 
@@ -1442,7 +1442,7 @@ maxLength90
 
 <summary>
 
-status: optional "accepted"or "pending"
+status: optional "accepted" or "pending"
 
 The member’s status in the account.
 

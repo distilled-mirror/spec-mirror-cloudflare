@@ -38,7 +38,7 @@ PUT/accounts/{account\_id}/dlp/sensitivity\_groups/{sensitivity\_group\_id}/leve
 
 <summary>
 
-OrderGetResponse object {level\_ids }
+OrderGetResponse object { level\_ids }
 
 The ordered list of level IDs for a sensitivity group. Used to get and set the ordering of levels independently of level attributes.
 
@@ -56,7 +56,7 @@ level\_ids: array of string
 
 <summary>
 
-OrderUpdateResponse object {level\_ids }
+OrderUpdateResponse object { level\_ids }
 
 The ordered list of level IDs for a sensitivity group. Used to get and set the ordering of levels independently of level attributes.
 

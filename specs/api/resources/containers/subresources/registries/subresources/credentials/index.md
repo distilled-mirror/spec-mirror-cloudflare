@@ -30,7 +30,7 @@ POST/accounts/{account\_id}/containers/registries/{domain}/credentials
 
 <summary>
 
-CredentialGenerateResponse object {account\_id, password, registry\_host, username }
+CredentialGenerateResponse object { account\_id, password, registry\_host, username }
 
 Credentials returned for an authenticated registry configured on a Containers account.
 

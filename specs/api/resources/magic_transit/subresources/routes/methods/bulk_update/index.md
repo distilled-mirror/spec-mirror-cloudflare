@@ -74,7 +74,7 @@ maxLength32
 
 <summary>
 
-routes: array of object {id, nexthop, prefix, 4 more }
+routes: array of object { id, nexthop, prefix, 4 more }
 
 </summary>
 
@@ -174,7 +174,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -216,7 +216,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -236,7 +236,7 @@ pointer: optional string
 
 <summary>
 
-result: object {modified, modified\_routes }
+result: object { modified, modified\_routes }
 
 </summary>
 
@@ -248,7 +248,7 @@ modified: optional boolean
 
 <summary>
 
-modified\_routes: optional array of object {id, nexthop, prefix, 6 more }
+modified\_routes: optional array of object { id, nexthop, prefix, 6 more }
 
 </summary>
 

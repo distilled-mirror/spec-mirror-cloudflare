@@ -88,7 +88,7 @@ formatuuid
 
 <summary>
 
-layers: optional map\[object {file\_name\_prefix, media\_kind } ]
+layers: optional map\[object { file\_name\_prefix, media\_kind } ]
 
 Optional audio layer configuration. If omitted, RealtimeKit records all participant audio using the default file name prefix.
 
@@ -128,7 +128,7 @@ Success status of the operation
 
 <summary>
 
-data: optional object {recording }
+data: optional object { recording }
 
 Data returned by the operation
 
@@ -138,7 +138,7 @@ Data returned by the operation
 
 <summary>
 
-recording: object {id, audio\_download\_url, download\_url, 9 more }
+recording: object { id, audio\_download\_url, download\_url, 9 more }
 
 </summary>
 
@@ -214,7 +214,7 @@ formatdate-time
 
 <summary>
 
-status: "INVOKED"or "RECORDING"or "UPLOADING"or 3 more
+status: "INVOKED" or "RECORDING" or "UPLOADING" or 3 more
 
 Current status of the recording.
 

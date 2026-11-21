@@ -62,7 +62,7 @@ The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 
 <summary>
 
-AvailableList object {errors, messages, success, result }
+AvailableList object { errors, messages, success, result }
 
 </summary>
 
@@ -92,7 +92,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -134,7 +134,7 @@ Dataset type name (e.g. <code>http_requests</code>).
 
 <summary>
 
-object\_type: "account"or "zone"
+object\_type: "account" or "zone"
 
 Whether this dataset type is account-scoped or zone-scoped.
 
@@ -158,7 +158,7 @@ One of the following:
 
 <summary>
 
-schema: object {properties, required, type }
+schema: object { properties, required, type }
 
 JSON Schema that describes the fields this dataset exposes.
 

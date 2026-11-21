@@ -44,7 +44,7 @@ DELETE/accounts/{account\_id}/intel/sinkholes/{sinkhole\_id}
 
 <summary>
 
-Sinkhole object {id, account\_tag, created\_on, 4 more }
+Sinkhole object { id, account\_tag, created\_on, 4 more }
 
 </summary>
 
@@ -130,7 +130,7 @@ DELETE/zones/{zone\_id}/intel/sinkholes/{sinkhole\_id}/ingresses/{ingress\_id}
 
 <summary>
 
-IngressCreateResponse object {id, cidr, created\_on, 3 more }
+IngressCreateResponse object { id, cidr, created\_on, 3 more }
 
 </summary>
 
@@ -182,7 +182,7 @@ The zone tag associated with this ingress rule.
 
 <summary>
 
-IngressGetResponse object {id, cidr, created\_on, 3 more }
+IngressGetResponse object { id, cidr, created\_on, 3 more }
 
 </summary>
 

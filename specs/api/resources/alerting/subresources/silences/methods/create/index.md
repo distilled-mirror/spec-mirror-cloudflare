@@ -74,7 +74,7 @@ maxLength32
 
 <summary>
 
-body: array of object {end\_time, policy\_id, start\_time }
+body: array of object { end\_time, policy\_id, start\_time }
 
 </summary>
 
@@ -108,7 +108,7 @@ When the silence starts.
 
 <summary>
 
-errors: array of object {message, code }
+errors: array of object { message, code }
 
 </summary>
 
@@ -130,7 +130,7 @@ minimum1000
 
 <summary>
 
-messages: array of object {message, code }
+messages: array of object { message, code }
 
 </summary>
 

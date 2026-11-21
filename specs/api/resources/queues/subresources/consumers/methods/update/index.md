@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Queues Write``Workers Scripts Write`
+`Workers Admin``Queues Write``Workers Scripts Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -90,7 +90,7 @@ maxLength32
 
 <summary>
 
-body: object {script\_name, type, dead\_letter\_queue, settings } or object {type, dead\_letter\_queue, settings }
+body: object { script\_name, type, dead\_letter\_queue, settings } or object { type, dead\_letter\_queue, settings }
 
 Request body for creating or updating a consumer
 
@@ -102,7 +102,7 @@ One of the following:
 
 <summary>
 
-Worker object {script\_name, type, dead\_letter\_queue, settings }
+Worker object { script\_name, type, dead\_letter\_queue, settings }
 
 </summary>
 
@@ -124,7 +124,7 @@ dead\_letter\_queue: optional string
 
 <summary>
 
-settings: optional object {batch\_size, max\_concurrency, max\_retries, 2 more }
+settings: optional object { batch\_size, max\_concurrency, max\_retries, 2 more }
 
 </summary>
 
@@ -170,7 +170,7 @@ The number of seconds to delay before making the message available for another a
 
 <summary>
 
-HTTPPull object {type, dead\_letter\_queue, settings }
+HTTPPull object { type, dead\_letter\_queue, settings }
 
 </summary>
 
@@ -186,7 +186,7 @@ dead\_letter\_queue: optional string
 
 <summary>
 
-settings: optional object {batch\_size, max\_retries, retry\_delay, visibility\_timeout\_ms }
+settings: optional object { batch\_size, max\_retries, retry\_delay, visibility\_timeout\_ms }
 
 </summary>
 
@@ -256,7 +256,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -292,7 +292,7 @@ One of the following:
 
 <summary>
 
-Worker object {consumer\_id, created\_on, dead\_letter\_queue, 4 more }
+Worker object { consumer\_id, created\_on, dead\_letter\_queue, 4 more }
 
 </summary>
 
@@ -330,7 +330,7 @@ Name of a Worker
 
 <summary>
 
-settings: optional object {batch\_size, max\_concurrency, max\_retries, 2 more }
+settings: optional object { batch\_size, max\_concurrency, max\_retries, 2 more }
 
 </summary>
 
@@ -380,7 +380,7 @@ type: optional "worker"
 
 <summary>
 
-HTTPPull object {consumer\_id, created\_on, dead\_letter\_queue, 3 more }
+HTTPPull object { consumer\_id, created\_on, dead\_letter\_queue, 3 more }
 
 </summary>
 
@@ -412,7 +412,7 @@ queue\_name: optional string
 
 <summary>
 
-settings: optional object {batch\_size, max\_retries, retry\_delay, visibility\_timeout\_ms }
+settings: optional object { batch\_size, max\_retries, retry\_delay, visibility\_timeout\_ms }
 
 </summary>
 

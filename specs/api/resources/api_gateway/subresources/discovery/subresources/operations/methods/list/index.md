@@ -82,7 +82,7 @@ When `true`, only return API Discovery results that are not saved into API Shiel
 
 <summary>
 
-direction: optional "asc"or "desc"
+direction: optional "asc" or "desc"
 
 Direction to order results.
 
@@ -124,7 +124,7 @@ Filter results to only include the specified HTTP methods.
 
 <summary>
 
-order: optional "host"or "method"or "endpoint"or 2 more
+order: optional "host" or "method" or "endpoint" or 2 more
 
 Field to order by
 
@@ -160,7 +160,7 @@ One of the following:
 
 <summary>
 
-origin: optional "ML"or "SessionIdentifier"or "LabelDiscovery"
+origin: optional "ML" or "SessionIdentifier" or "LabelDiscovery"
 
 Filter results to only include discovery results sourced from a particular discovery engine
 
@@ -209,7 +209,7 @@ minimum5
 
 <summary>
 
-state: optional "review"or "saved"or "ignored"
+state: optional "review" or "saved" or "ignored"
 
 Filter results to only include discovery results in a particular state. States are as follows
 
@@ -265,7 +265,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -307,7 +307,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -371,7 +371,7 @@ formatdate-time
 
 <summary>
 
-method: "GET"or "POST"or "HEAD"or 6 more
+method: "GET" or "POST" or "HEAD" or 6 more
 
 The HTTP method used to access the endpoint.
 
@@ -423,7 +423,7 @@ One of the following:
 
 <summary>
 
-origin: array of "ML"or "SessionIdentifier"or "LabelDiscovery"
+origin: array of "ML" or "SessionIdentifier" or "LabelDiscovery"
 
 API discovery engine(s) that discovered this operation
 
@@ -451,7 +451,7 @@ One of the following:
 
 <summary>
 
-state: "review"or "saved"or "ignored"
+state: "review" or "saved" or "ignored"
 
 State of operation in API Discovery
 
@@ -483,7 +483,7 @@ One of the following:
 
 <summary>
 
-features: optional object {traffic\_stats }
+features: optional object { traffic\_stats }
 
 </summary>
 
@@ -491,7 +491,7 @@ features: optional object {traffic\_stats }
 
 <summary>
 
-traffic\_stats: optional object {last\_updated, period\_seconds, requests }
+traffic\_stats: optional object { last\_updated, period\_seconds, requests }
 
 </summary>
 
@@ -537,7 +537,7 @@ Whether the API call was successful.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

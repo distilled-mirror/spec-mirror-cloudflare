@@ -46,7 +46,7 @@ DELETE/accounts/{account\_id}/zerotrust/routes/hostname/{hostname\_route\_id}
 
 <summary>
 
-HostnameRoute object {id, comment, created\_at, 5 more }
+HostnameRoute object { id, comment, created\_at, 5 more }
 
 </summary>
 
@@ -90,7 +90,7 @@ The hostname of the route.
 
 <summary>
 
-tun\_type: optional "cfd\_tunnel"or "warp\_connector"or "warp"or 4 more
+tun\_type: optional "cfd\_tunnel" or "warp\_connector" or "warp" or 4 more
 
 The type of tunnel.
 

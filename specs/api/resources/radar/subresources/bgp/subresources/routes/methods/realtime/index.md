@@ -66,7 +66,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -96,7 +96,7 @@ prefix: optional string
 
 <summary>
 
-result: object {meta, routes }
+result: object { meta, routes }
 
 </summary>
 
@@ -104,7 +104,7 @@ result: object {meta, routes }
 
 <summary>
 
-meta: object {asn\_info, collectors, data\_time, 2 more }
+meta: object { asn\_info, collectors, data\_time, 2 more }
 
 </summary>
 
@@ -112,7 +112,7 @@ meta: object {asn\_info, collectors, data\_time, 2 more }
 
 <summary>
 
-asn\_info: array of object {as\_name, asn, country\_code, 2 more }
+asn\_info: array of object { as\_name, asn, country\_code, 2 more }
 
 </summary>
 
@@ -154,7 +154,7 @@ Organization name.
 
 <summary>
 
-collectors: array of object {collector, latest\_realtime\_ts, latest\_rib\_ts, 4 more }
+collectors: array of object { collector, latest\_realtime\_ts, latest\_rib\_ts, 4 more }
 
 </summary>
 
@@ -214,7 +214,7 @@ The most recent data timestamp for from the real-time sources.
 
 <summary>
 
-prefix\_origins: array of object {origin, prefix, rpki\_validation, 3 more }
+prefix\_origins: array of object { origin, prefix, rpki\_validation, 3 more }
 
 </summary>
 
@@ -272,7 +272,7 @@ The timestamp of this query.
 
 <summary>
 
-routes: array of object {as\_path, collector, communities, 2 more }
+routes: array of object { as\_path, collector, communities, 2 more }
 
 </summary>
 

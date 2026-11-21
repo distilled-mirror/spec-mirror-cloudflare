@@ -32,7 +32,7 @@ PUT/organizations/{organization\_id}/profile
 
 <summary>
 
-OrganizationProfile object {business\_address, business\_email, business\_name, 2 more }
+OrganizationProfile object { business\_address, business\_email, business\_name, 2 more }
 
 </summary>
 

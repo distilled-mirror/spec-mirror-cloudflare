@@ -42,7 +42,7 @@ POST/accounts/{account\_id}/pcaps/ownership/validate
 
 <summary>
 
-Ownership object {id, destination\_conf, filename, 3 more }
+Ownership object { id, destination\_conf, filename, 3 more }
 
 </summary>
 
@@ -72,7 +72,7 @@ The ownership challenge filename stored in the bucket.
 
 <summary>
 
-status: "pending"or "success"or "failed"
+status: "pending" or "success" or "failed"
 
 The status of the ownership challenge. Can be pending, success or failed.
 

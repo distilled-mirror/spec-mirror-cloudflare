@@ -28,7 +28,7 @@ GET/accounts/{account\_id}/ai-gateway/evaluation-types
 
 <summary>
 
-EvaluationTypeListResponse object {id, created\_at, description, 5 more }
+EvaluationTypeListResponse object { id, created\_at, description, 5 more }
 
 </summary>
 

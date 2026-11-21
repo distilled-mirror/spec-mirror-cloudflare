@@ -58,6 +58,10 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 </details>
 
+##### Accepted Permissions (at least one required)
+
+`AI Search Write``Auto Rag Write`
+
 ##### P ath ParametersExpand Collapse
 
 account\_id: string
@@ -88,7 +92,7 @@ cache: optional boolean
 
 <summary>
 
-cache\_threshold: optional "super\_strict\_match"or "close\_enough"or "flexible\_friend"or "anything\_goes"
+cache\_threshold: optional "super\_strict\_match" or "close\_enough" or "flexible\_friend" or "anything\_goes"
 
 </summary>
 
@@ -118,7 +122,7 @@ One of the following:
 
 <summary>
 
-cache\_ttl: optional 600or 1800or 3600or 7 more
+cache\_ttl: optional 600 or 1800 or 3600 or 7 more
 
 Cache entry TTL in seconds. Allowed values: 600 (10min), 1800 (30min), 3600 (1h), 7200 (2h), 21600 (6h), 43200 (12h), 86400 (24h), 172800 (48h), 259200 (72h), 518400 (6d).
 
@@ -192,7 +196,7 @@ minimum64
 
 <summary>
 
-custom\_metadata: optional array of object {data\_type, field\_name }
+custom\_metadata: optional array of object { data\_type, field\_name }
 
 </summary>
 
@@ -200,7 +204,7 @@ custom\_metadata: optional array of object {data\_type, field\_name }
 
 <summary>
 
-data\_type: "text"or "number"or "boolean"or "datetime"
+data\_type: "text" or "number" or "boolean" or "datetime"
 
 </summary>
 
@@ -246,7 +250,7 @@ embedding\_model: optional string
 
 <summary>
 
-fusion\_method: optional "max"or "rrf"
+fusion\_method: optional "max" or "rrf"
 
 </summary>
 
@@ -268,7 +272,7 @@ One of the following:
 
 <summary>
 
-index\_method: optional object {keyword, vector }
+index\_method: optional object { keyword, vector }
 
 Controls which storage backends indexing uses. Defaults to vector and keyword indexing for new instances. When set, both vector and keyword are required.
 
@@ -294,7 +298,7 @@ Enable vector (embedding) storage backend.
 
 <summary>
 
-indexing\_options: optional object {file\_summary, keyword\_tokenizer, use\_ocr }
+indexing\_options: optional object { file\_summary, keyword\_tokenizer, use\_ocr }
 
 </summary>
 
@@ -308,7 +312,7 @@ Generates a per-file summary, topics, and keywords during indexing for text file
 
 <summary>
 
-keyword\_tokenizer: optional "porter"or "trigram"
+keyword\_tokenizer: optional "porter" or "trigram"
 
 Tokenizer used for keyword search indexing. porter provides word-level tokenization with Porter stemming (good for natural language queries). trigram enables character-level substring matching (good for partial matches, code, identifiers). Changing this triggers a full re-index. Defaults to porter.
 
@@ -350,7 +354,7 @@ minimum1
 
 <summary>
 
-metadata: optional object {created\_from\_aisearch\_wizard, created\_from\_emdash\_plugin, worker\_domain }
+metadata: optional object { created\_from\_aisearch\_wizard, created\_from\_emdash\_plugin, worker\_domain }
 
 </summary>
 
@@ -362,7 +366,7 @@ created\_from\_aisearch\_wizard: optional boolean
 
 <summary>
 
-created\_from\_emdash\_plugin: optional object {type, version }
+created\_from\_emdash\_plugin: optional object { type, version }
 
 </summary>
 
@@ -370,7 +374,7 @@ created\_from\_emdash\_plugin: optional object {type, version }
 
 <summary>
 
-type: "native"or "rest"
+type: "native" or "rest"
 
 </summary>
 
@@ -412,7 +416,7 @@ paused: optional boolean
 
 <summary>
 
-public\_endpoint\_params: optional object {authorized\_hosts, chat\_completions\_endpoint, custom\_domains, 5 more }
+public\_endpoint\_params: optional object { authorized\_hosts, chat\_completions\_endpoint, custom\_domains, 5 more }
 
 </summary>
 
@@ -424,7 +428,7 @@ authorized\_hosts: optional array of string
 
 <summary>
 
-chat\_completions\_endpoint: optional object {disabled }
+chat\_completions\_endpoint: optional object { disabled }
 
 </summary>
 
@@ -458,7 +462,7 @@ enabled: optional boolean
 
 <summary>
 
-mcp: optional object {description, disabled }
+mcp: optional object { description, disabled }
 
 </summary>
 
@@ -480,7 +484,7 @@ Disable MCP endpoint for this public endpoint.
 
 <summary>
 
-rate\_limit: optional object {period\_ms, requests, technique }
+rate\_limit: optional object { period\_ms, requests, technique }
 
 </summary>
 
@@ -502,7 +506,7 @@ minimum1
 
 <summary>
 
-technique: optional "fixed"or "sliding"
+technique: optional "fixed" or "sliding"
 
 </summary>
 
@@ -528,7 +532,7 @@ One of the following:
 
 <summary>
 
-search\_endpoint: optional object {disabled }
+search\_endpoint: optional object { disabled }
 
 </summary>
 
@@ -558,7 +562,7 @@ reranking\_model: optional string
 
 <summary>
 
-retrieval\_options: optional object {boost\_by, keyword\_match\_mode }
+retrieval\_options: optional object { boost\_by, keyword\_match\_mode }
 
 </summary>
 
@@ -566,7 +570,7 @@ retrieval\_options: optional object {boost\_by, keyword\_match\_mode }
 
 <summary>
 
-boost\_by: optional array of object {field, direction }
+boost\_by: optional array of object { field, direction }
 
 Metadata fields to boost search results by. Each entry specifies a metadata field and an optional direction. Direction defaults to ‘asc’ for numeric/datetime fields and ‘exists’ for text/boolean fields. Fields must match ‘timestamp’ or a defined custom\_metadata field.
 
@@ -586,7 +590,7 @@ minLength1
 
 <summary>
 
-direction: optional "asc"or "desc"or "exists"or "not\_exists"
+direction: optional "asc" or "desc" or "exists" or "not\_exists"
 
 Boost direction. ‘desc’ = higher values rank higher (e.g. newer timestamps). ‘asc’ = lower values rank higher. ‘exists’ = boost chunks that have the field. ‘not\_exists’ = boost chunks that lack the field. Optional — defaults to ‘asc’ for numeric/datetime fields, ‘exists’ for text/boolean fields.
 
@@ -622,7 +626,7 @@ One of the following:
 
 <summary>
 
-keyword\_match\_mode: optional "and"or "or"
+keyword\_match\_mode: optional "and" or "or"
 
 Controls which documents become candidates for BM25 scoring. ‘and’ restricts candidates to documents containing all query terms; ‘or’ includes any document containing at least one term and ranks results according to BM25 relevance. When omitted on an update, the existing stored value stays unchanged; when never set, search falls back to ‘and’.
 
@@ -676,7 +680,7 @@ The R2 bucket name for r2, the website URL for web-crawler, or the D1 database I
 
 <summary>
 
-source\_params: optional object {d1, exclude\_items, include\_items, 3 more }
+source\_params: optional object { d1, exclude\_items, include\_items, 3 more }
 
 </summary>
 
@@ -684,7 +688,7 @@ source\_params: optional object {d1, exclude\_items, include\_items, 3 more }
 
 <summary>
 
-d1: optional object {query, template }
+d1: optional object { query, template }
 
 D1 source configuration of a d1 instance; ignored for other types. An omitted d1, query, or template keeps its stored value. For d1, include\_items and exclude\_items match each row’s item key, <code>&lt;id&gt;.md</code>; a submitted source\_params replaces both lists (an omitted list is cleared), so omit source\_params to keep them.
 
@@ -704,7 +708,7 @@ minLength1
 
 <summary>
 
-template: optional "labelled"or "content\_only"or "key\_value"or "json"
+template: optional "labelled" or "content\_only" or "key\_value" or "json"
 
 How each row is rendered into the indexed document: labelled renders the title, the labelled fields, then the content; content\_only renders the title and content (labelled fields only when there is no content); key\_value renders every column as name: value; json renders every column as a JSON object. Omit to keep the stored template.
 
@@ -760,7 +764,7 @@ r2\_jurisdiction: optional string
 
 <summary>
 
-web\_crawler: optional object {discover\_options, parse\_options, parse\_type }
+web\_crawler: optional object { discover\_options, parse\_options, parse\_type }
 
 </summary>
 
@@ -768,7 +772,7 @@ web\_crawler: optional object {discover\_options, parse\_options, parse\_type }
 
 <summary>
 
-discover\_options: optional object {depth, include\_external\_links, include\_subdomains, 3 more }
+discover\_options: optional object { depth, include\_external\_links, include\_subdomains, 3 more }
 
 Options for parse\_type ‘discover’, where Browser Run discovers URLs through link following and sitemaps. Ignored for ‘sitemap’.
 
@@ -820,7 +824,7 @@ minimum0
 
 <summary>
 
-source: optional "all"or "sitemaps"or "links"
+source: optional "all" or "sitemaps" or "links"
 
 Where the crawler looks for URLs: ‘sitemaps’ reads sitemap XML only, ‘links’ follows page links only, ‘all’ does both.
 
@@ -852,7 +856,7 @@ One of the following:
 
 <summary>
 
-parse\_options: optional object {content\_selector, include\_headers, include\_images, 2 more }
+parse\_options: optional object { content\_selector, include\_headers, include\_images, 2 more }
 
 </summary>
 
@@ -860,7 +864,7 @@ parse\_options: optional object {content\_selector, include\_headers, include\_i
 
 <summary>
 
-content\_selector: optional array of object {path, selector }
+content\_selector: optional array of object { path, selector }
 
 List of path-to-selector mappings for extracting specific content from crawled pages. Each entry pairs a URL glob pattern with a CSS selector. The first matching path wins. The crawler stores and indexes only the matched HTML fragment. Omit the field to disable content selection; the API rejects empty arrays.
 
@@ -918,7 +922,7 @@ use\_browser\_rendering: optional boolean
 
 <summary>
 
-parse\_type: optional "sitemap"or "discover"
+parse\_type: optional "sitemap" or "discover"
 
 How the crawler finds URLs. ‘sitemap’ reads XML sitemaps; ‘discover’ follows links recursively and requires the source to belong to a Verified zone on this account.
 
@@ -962,7 +966,7 @@ Deprecated and ignored during indexing and search; changing it still re-indexes 
 
 <summary>
 
-sync\_interval: optional 900or 1800or 3600or 5 more
+sync\_interval: optional 900 or 1800 or 3600 or 5 more
 
 Interval between automatic syncs, in seconds. Allowed values: 900 (15min), 1800 (30min), 3600 (1h), 7200 (2h), 14400 (4h), 21600 (6h), 43200 (12h), 86400 (24h). Defaults to 86400 (24h).
 
@@ -1032,7 +1036,7 @@ formatuuid
 
 <summary>
 
-result: object {id, created\_at, modified\_at, 36 more }
+result: object { id, created\_at, modified\_at, 36 more }
 
 </summary>
 
@@ -1076,7 +1080,7 @@ cache: optional boolean
 
 <summary>
 
-cache\_threshold: optional "super\_strict\_match"or "close\_enough"or "flexible\_friend"or "anything\_goes"
+cache\_threshold: optional "super\_strict\_match" or "close\_enough" or "flexible\_friend" or "anything\_goes"
 
 </summary>
 
@@ -1106,7 +1110,7 @@ One of the following:
 
 <summary>
 
-cache\_ttl: optional 600or 1800or 3600or 7 more
+cache\_ttl: optional 600 or 1800 or 3600 or 7 more
 
 Cache entry TTL in seconds. Allowed values: 600 (10min), 1800 (30min), 3600 (1h), 7200 (2h), 21600 (6h), 43200 (12h), 86400 (24h), 172800 (48h), 259200 (72h), 518400 (6d).
 
@@ -1180,7 +1184,7 @@ created\_by: optional string
 
 <summary>
 
-custom\_metadata: optional array of object {data\_type, field\_name }
+custom\_metadata: optional array of object { data\_type, field\_name }
 
 </summary>
 
@@ -1188,7 +1192,7 @@ custom\_metadata: optional array of object {data\_type, field\_name }
 
 <summary>
 
-data\_type: "text"or "number"or "boolean"or "datetime"
+data\_type: "text" or "number" or "boolean" or "datetime"
 
 </summary>
 
@@ -1242,7 +1246,7 @@ engine\_version: optional number
 
 <summary>
 
-fusion\_method: optional "max"or "rrf"
+fusion\_method: optional "max" or "rrf"
 
 </summary>
 
@@ -1270,7 +1274,7 @@ Deprecated — use index\_method instead. Defaults to true for new instances; se
 
 <summary>
 
-index\_method: optional object {keyword, vector }
+index\_method: optional object { keyword, vector }
 
 Controls which storage backends indexing uses. Defaults to vector and keyword indexing for new instances. When set, both vector and keyword are required.
 
@@ -1296,7 +1300,7 @@ Enable vector (embedding) storage backend.
 
 <summary>
 
-indexing\_options: optional object {file\_summary, keyword\_tokenizer, use\_ocr }
+indexing\_options: optional object { file\_summary, keyword\_tokenizer, use\_ocr }
 
 </summary>
 
@@ -1310,7 +1314,7 @@ Generates a per-file summary, topics, and keywords during indexing for text file
 
 <summary>
 
-keyword\_tokenizer: optional "porter"or "trigram"
+keyword\_tokenizer: optional "porter" or "trigram"
 
 Tokenizer used for keyword search indexing. porter provides word-level tokenization with Porter stemming (good for natural language queries). trigram enables character-level substring matching (good for partial matches, code, identifiers). Changing this triggers a full re-index. Defaults to porter.
 
@@ -1358,7 +1362,7 @@ minimum1
 
 <summary>
 
-metadata: optional object {created\_from\_aisearch\_wizard, created\_from\_emdash\_plugin, worker\_domain }
+metadata: optional object { created\_from\_aisearch\_wizard, created\_from\_emdash\_plugin, worker\_domain }
 
 </summary>
 
@@ -1370,7 +1374,7 @@ created\_from\_aisearch\_wizard: optional boolean
 
 <summary>
 
-created\_from\_emdash\_plugin: optional object {type, version }
+created\_from\_emdash\_plugin: optional object { type, version }
 
 </summary>
 
@@ -1378,7 +1382,7 @@ created\_from\_emdash\_plugin: optional object {type, version }
 
 <summary>
 
-type: "native"or "rest"
+type: "native" or "rest"
 
 </summary>
 
@@ -1432,7 +1436,7 @@ public\_endpoint\_id: optional string
 
 <summary>
 
-public\_endpoint\_params: optional object {authorized\_hosts, chat\_completions\_endpoint, custom\_domains, 5 more }
+public\_endpoint\_params: optional object { authorized\_hosts, chat\_completions\_endpoint, custom\_domains, 5 more }
 
 </summary>
 
@@ -1444,7 +1448,7 @@ authorized\_hosts: optional array of string
 
 <summary>
 
-chat\_completions\_endpoint: optional object {disabled }
+chat\_completions\_endpoint: optional object { disabled }
 
 </summary>
 
@@ -1478,7 +1482,7 @@ enabled: optional boolean
 
 <summary>
 
-mcp: optional object {description, disabled }
+mcp: optional object { description, disabled }
 
 </summary>
 
@@ -1500,7 +1504,7 @@ Disable MCP endpoint for this public endpoint.
 
 <summary>
 
-rate\_limit: optional object {period\_ms, requests, technique }
+rate\_limit: optional object { period\_ms, requests, technique }
 
 </summary>
 
@@ -1522,7 +1526,7 @@ minimum1
 
 <summary>
 
-technique: optional "fixed"or "sliding"
+technique: optional "fixed" or "sliding"
 
 </summary>
 
@@ -1548,7 +1552,7 @@ One of the following:
 
 <summary>
 
-search\_endpoint: optional object {disabled }
+search\_endpoint: optional object { disabled }
 
 </summary>
 
@@ -1578,7 +1582,7 @@ reranking\_model: optional string
 
 <summary>
 
-retrieval\_options: optional object {boost\_by, keyword\_match\_mode }
+retrieval\_options: optional object { boost\_by, keyword\_match\_mode }
 
 </summary>
 
@@ -1586,7 +1590,7 @@ retrieval\_options: optional object {boost\_by, keyword\_match\_mode }
 
 <summary>
 
-boost\_by: optional array of object {field, direction }
+boost\_by: optional array of object { field, direction }
 
 Metadata fields to boost search results by. Each entry specifies a metadata field and an optional direction. Direction defaults to ‘asc’ for numeric/datetime fields and ‘exists’ for text/boolean fields. Fields must match ‘timestamp’ or a defined custom\_metadata field.
 
@@ -1606,7 +1610,7 @@ minLength1
 
 <summary>
 
-direction: optional "asc"or "desc"or "exists"or "not\_exists"
+direction: optional "asc" or "desc" or "exists" or "not\_exists"
 
 Boost direction. ‘desc’ = higher values rank higher (e.g. newer timestamps). ‘asc’ = lower values rank higher. ‘exists’ = boost chunks that have the field. ‘not\_exists’ = boost chunks that lack the field. Optional — defaults to ‘asc’ for numeric/datetime fields, ‘exists’ for text/boolean fields.
 
@@ -1642,7 +1646,7 @@ One of the following:
 
 <summary>
 
-keyword\_match\_mode: optional "and"or "or"
+keyword\_match\_mode: optional "and" or "or"
 
 Controls which documents become candidates for BM25 scoring. ‘and’ restricts candidates to documents containing all query terms; ‘or’ includes any document containing at least one term and ranks results according to BM25 relevance. When omitted on an update, the existing stored value stays unchanged; when never set, search falls back to ‘and’.
 
@@ -1696,7 +1700,7 @@ The R2 bucket name for r2, the website URL for web-crawler, or the D1 database I
 
 <summary>
 
-source\_params: optional object {d1, exclude\_items, include\_items, 3 more }
+source\_params: optional object { d1, exclude\_items, include\_items, 3 more }
 
 </summary>
 
@@ -1704,7 +1708,7 @@ source\_params: optional object {d1, exclude\_items, include\_items, 3 more }
 
 <summary>
 
-d1: optional object {query, template }
+d1: optional object { query, template }
 
 D1 source configuration. Required when creating a d1 instance and ignored for other types. For d1, include\_items and exclude\_items match each row’s item key, <code>&lt;id&gt;.md</code>; a submitted source\_params replaces both lists (an omitted list is cleared), so omit source\_params to keep them.
 
@@ -1724,7 +1728,7 @@ minLength1
 
 <summary>
 
-template: optional "labelled"or "content\_only"or "key\_value"or "json"
+template: optional "labelled" or "content\_only" or "key\_value" or "json"
 
 How each row is rendered into the indexed document: labelled renders the title, the labelled fields, then the content; content\_only renders the title and content (labelled fields only when there is no content); key\_value renders every column as name: value; json renders every column as a JSON object.
 
@@ -1780,7 +1784,7 @@ r2\_jurisdiction: optional string
 
 <summary>
 
-web\_crawler: optional object {discover\_options, parse\_options, parse\_type }
+web\_crawler: optional object { discover\_options, parse\_options, parse\_type }
 
 </summary>
 
@@ -1788,7 +1792,7 @@ web\_crawler: optional object {discover\_options, parse\_options, parse\_type }
 
 <summary>
 
-discover\_options: optional object {depth, include\_external\_links, include\_subdomains, 3 more }
+discover\_options: optional object { depth, include\_external\_links, include\_subdomains, 3 more }
 
 Options for parse\_type ‘discover’, where Browser Run discovers URLs through link following and sitemaps. Ignored for ‘sitemap’.
 
@@ -1840,7 +1844,7 @@ minimum0
 
 <summary>
 
-source: optional "all"or "sitemaps"or "links"
+source: optional "all" or "sitemaps" or "links"
 
 Where the crawler looks for URLs: ‘sitemaps’ reads sitemap XML only, ‘links’ follows page links only, ‘all’ does both.
 
@@ -1872,7 +1876,7 @@ One of the following:
 
 <summary>
 
-parse\_options: optional object {content\_selector, include\_headers, include\_images, 2 more }
+parse\_options: optional object { content\_selector, include\_headers, include\_images, 2 more }
 
 </summary>
 
@@ -1880,7 +1884,7 @@ parse\_options: optional object {content\_selector, include\_headers, include\_i
 
 <summary>
 
-content\_selector: optional array of object {path, selector }
+content\_selector: optional array of object { path, selector }
 
 List of path-to-selector mappings for extracting specific content from crawled pages. Each entry pairs a URL glob pattern with a CSS selector. The first matching path wins. The crawler stores and indexes only the matched HTML fragment. Omit the field to disable content selection; the API rejects empty arrays.
 
@@ -1938,7 +1942,7 @@ use\_browser\_rendering: optional boolean
 
 <summary>
 
-parse\_type: optional "sitemap"or "discover"
+parse\_type: optional "sitemap" or "discover"
 
 How the crawler finds URLs. ‘sitemap’ reads XML sitemaps; ‘discover’ follows links recursively and requires the source to belong to a Verified zone on this account.
 
@@ -1974,7 +1978,7 @@ status: optional string
 
 <summary>
 
-sync\_interval: optional 900or 1800or 3600or 5 more
+sync\_interval: optional 900 or 1800 or 3600 or 5 more
 
 Interval between automatic syncs, in seconds. Allowed values: 900 (15min), 1800 (30min), 3600 (1h), 7200 (2h), 14400 (4h), 21600 (6h), 43200 (12h), 86400 (24h). Defaults to 86400 (24h).
 
@@ -2028,7 +2032,7 @@ formatuuid
 
 <summary>
 
-type: optional "r2"or "web-crawler"or "d1"
+type: optional "r2" or "web-crawler" or "d1"
 
 Source type. When omitted or null with a non-blank source, HTTP(S) URLs infer web-crawler and existing R2 bucket names infer r2. A missing or blank source without a type uses managed upload-only storage. d1 is never inferred; it indexes the rows returned by source\_params.d1.query.
 

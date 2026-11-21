@@ -74,7 +74,7 @@ maxLength32
 
 <summary>
 
-body: object {packet\_limit, system, time\_limit, 3 more } or object {colo\_name, destination\_conf, system, 5 more }
+body: object { packet\_limit, system, time\_limit, 3 more } or object { colo\_name, destination\_conf, system, 5 more }
 
 </summary>
 
@@ -84,7 +84,7 @@ One of the following:
 
 <summary>
 
-MagicVisibilityPCAPsPCAPsRequestSimple object {packet\_limit, system, time\_limit, 3 more }
+MagicVisibilityPCAPsPCAPsRequestSimple object { packet\_limit, system, time\_limit, 3 more }
 
 </summary>
 
@@ -118,7 +118,7 @@ minimum1
 
 <summary>
 
-type: "simple"or "full"
+type: "simple" or "full"
 
 The type of packet capture. <code>Simple</code> captures sampled packets, and <code>full</code> captures entire payloads and non-sampled packets.
 
@@ -198,7 +198,7 @@ formatdate-time
 
 <summary>
 
-MagicVisibilityPCAPsPCAPsRequestFull object {colo\_name, destination\_conf, system, 5 more }
+MagicVisibilityPCAPsPCAPsRequestFull object { colo\_name, destination\_conf, system, 5 more }
 
 </summary>
 
@@ -234,7 +234,7 @@ minimum1
 
 <summary>
 
-type: "simple"or "full"
+type: "simple" or "full"
 
 The type of packet capture. <code>Simple</code> captures sampled packets, and <code>full</code> captures entire payloads and non-sampled packets.
 
@@ -354,7 +354,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -396,7 +396,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -416,7 +416,7 @@ pointer: optional string
 
 <summary>
 
-result: <a href="https://developers.cloudflare.com/api/resources/magic_transit#(resource)%20magic_transit.pcaps%20%3E%20(model)%20pcap%20%3E%20(schema)">PCAP</a> { id, filter\_v1, offset\_time, 5 more } or object {id, byte\_limit, colo\_name, 10 more }
+result: <a href="https://developers.cloudflare.com/api/resources/magic_transit#(resource)%20magic_transit.pcaps%20%3E%20(model)%20pcap%20%3E%20(schema)">PCAP</a> { id, filter\_v1, offset\_time, 5 more } or object { id, byte\_limit, colo\_name, 10 more }
 
 </summary>
 
@@ -426,7 +426,7 @@ One of the following:
 
 <summary>
 
-PCAP object {id, filter\_v1, offset\_time, 5 more }
+PCAP object { id, filter\_v1, offset\_time, 5 more }
 
 </summary>
 
@@ -496,7 +496,7 @@ formatdate-time
 
 <summary>
 
-status: optional "unknown"or "success"or "pending"or 5 more
+status: optional "unknown" or "success" or "pending" or 5 more
 
 The status of the packet capture request.
 
@@ -566,7 +566,7 @@ minimum1
 
 <summary>
 
-type: optional "simple"or "full"
+type: optional "simple" or "full"
 
 The type of packet capture. <code>Simple</code> captures sampled packets, and <code>full</code> captures entire payloads and non-sampled packets.
 
@@ -594,7 +594,7 @@ One of the following:
 
 <summary>
 
-MagicVisibilityPCAPsPCAPsResponseFull object {id, byte\_limit, colo\_name, 10 more }
+MagicVisibilityPCAPsPCAPsResponseFull object { id, byte\_limit, colo\_name, 10 more }
 
 </summary>
 
@@ -690,7 +690,7 @@ The number of packets captured.
 
 <summary>
 
-status: optional "unknown"or "success"or "pending"or 5 more
+status: optional "unknown" or "success" or "pending" or 5 more
 
 The status of the packet capture request.
 
@@ -768,7 +768,7 @@ minimum1
 
 <summary>
 
-type: optional "simple"or "full"
+type: optional "simple" or "full"
 
 The type of packet capture. <code>Simple</code> captures sampled packets, and <code>full</code> captures entire payloads and non-sampled packets.
 

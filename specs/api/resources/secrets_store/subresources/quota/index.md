@@ -28,7 +28,7 @@ GET/accounts/{account\_id}/secrets\_store/quota
 
 <summary>
 
-QuotaGetResponse object {secrets }
+QuotaGetResponse object { secrets }
 
 </summary>
 
@@ -36,7 +36,7 @@ QuotaGetResponse object {secrets }
 
 <summary>
 
-secrets: object {quota, usage }
+secrets: object { quota, usage }
 
 </summary>
 

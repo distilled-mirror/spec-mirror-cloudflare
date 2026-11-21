@@ -54,6 +54,10 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 </details>
 
+##### Accepted Permissions (at least one required)
+
+`Cloud Email Security: Write``Cloud Email Security: Read`
+
 ##### P ath ParametersExpand Collapse
 
 account\_id: string
@@ -70,7 +74,7 @@ maxLength32
 
 <summary>
 
-direction: optional "asc"or "desc"
+direction: optional "asc" or "desc"
 
 The sorting direction.
 
@@ -108,7 +112,7 @@ When true, return only submissions that were escalated by an end user (vs. by th
 
 <summary>
 
-order: optional "submission\_id"or "subject"or "original\_disposition"or 3 more
+order: optional "submission\_id" or "subject" or "original\_disposition" or 3 more
 
 Field to sort by.
 
@@ -148,7 +152,7 @@ One of the following:
 
 <summary>
 
-original\_disposition: optional "MALICIOUS"or "SUSPICIOUS"or "SPOOF"or 3 more
+original\_disposition: optional "MALICIOUS" or "SUSPICIOUS" or "SPOOF" or 3 more
 
 The disposition a message is submitted to have.
 
@@ -188,7 +192,7 @@ One of the following:
 
 <summary>
 
-outcome\_disposition: optional "MALICIOUS"or "SUSPICIOUS"or "SPOOF"or 3 more
+outcome\_disposition: optional "MALICIOUS" or "SUSPICIOUS" or "SPOOF" or 3 more
 
 The disposition a message is submitted to have.
 
@@ -252,7 +256,7 @@ Search term for filtering submissions.
 
 <summary>
 
-requested\_disposition: optional "MALICIOUS"or "SUSPICIOUS"or "SPOOF"or 3 more
+requested\_disposition: optional "MALICIOUS" or "SUSPICIOUS" or "SPOOF" or 3 more
 
 The disposition a message is submitted to have.
 
@@ -312,7 +316,7 @@ Filter by a specific submission ID.
 
 <summary>
 
-type: optional "TEAM"or "USER"
+type: optional "TEAM" or "USER"
 
 Filter by who created the submission — <code>TEAM</code> for security team members or <code>USER</code> for end users.
 
@@ -338,7 +342,7 @@ One of the following:
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -360,7 +364,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -380,7 +384,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -402,7 +406,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -428,7 +432,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional array of object {requested\_at, submission\_id, customer\_status, 15 more }
+result: optional array of object { requested\_at, submission\_id, customer\_status, 15 more }
 
 </summary>
 
@@ -448,7 +452,7 @@ submission\_id: string
 
 <summary>
 
-customer\_status: optional "escalated"or "reviewed"or "unreviewed"
+customer\_status: optional "escalated" or "reviewed" or "unreviewed"
 
 </summary>
 
@@ -474,7 +478,7 @@ One of the following:
 
 <summary>
 
-escalated\_as: optional "MALICIOUS"or "SUSPICIOUS"or "SPOOF"or 3 more
+escalated\_as: optional "MALICIOUS" or "SUSPICIOUS" or "SPOOF" or 3 more
 
 The disposition a message is submitted to have.
 
@@ -534,7 +538,7 @@ Submission ID of the escalated team submission, when this user submission was es
 
 <summary>
 
-original\_disposition: optional "MALICIOUS"or "SUSPICIOUS"or "SPOOF"or 3 more
+original\_disposition: optional "MALICIOUS" or "SUSPICIOUS" or "SPOOF" or 3 more
 
 The disposition a message is submitted to have.
 
@@ -592,7 +596,7 @@ Processing outcome of the submission.
 
 <summary>
 
-outcome\_disposition: optional "MALICIOUS"or "SUSPICIOUS"or "SPOOF"or 3 more
+outcome\_disposition: optional "MALICIOUS" or "SUSPICIOUS" or "SPOOF" or 3 more
 
 The disposition a message is submitted to have.
 
@@ -638,7 +642,7 @@ Email address of the user who requested the submission.
 
 <summary>
 
-requested\_disposition: optional "MALICIOUS"or "SUSPICIOUS"or "SPOOF"or 3 more
+requested\_disposition: optional "MALICIOUS" or "SUSPICIOUS" or "SPOOF" or 3 more
 
 The disposition a message is submitted to have.
 
@@ -698,7 +702,7 @@ Subject line of the submitted message.
 
 <summary>
 
-type: optional "Team"or "User"
+type: optional "Team" or "User"
 
 Indicates whether a team member or an end user created the submission.
 
@@ -726,7 +730,7 @@ One of the following:
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object { count, page, per\_page, total\_count }
 
 </summary>
 

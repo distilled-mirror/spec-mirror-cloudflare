@@ -60,7 +60,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`AI Gateway Write``AI Gateway Read`
+`AI Gateway Metadata Read``AI Search Index Engine``Auto Rag Write Run Engine``AI Gateway Write``AI Gateway Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -74,7 +74,7 @@ account\_id: string
 
 <summary>
 
-errors: array of object {code, message }
+errors: array of object { code, message }
 
 </summary>
 
@@ -94,7 +94,7 @@ message: string
 
 <summary>
 
-messages: array of object {code, message }
+messages: array of object { code, message }
 
 </summary>
 
@@ -114,7 +114,7 @@ message: string
 
 <summary>
 
-result: object {config, enabled }
+result: object { config, enabled }
 
 </summary>
 
@@ -122,7 +122,7 @@ result: object {config, enabled }
 
 <summary>
 
-config: object {amount, duration, strategy }
+config: object { amount, duration, strategy }
 
 Spending limit configuration.
 
@@ -168,7 +168,7 @@ success: true
 
 <summary>
 
-result\_info: optional object {has\_more, page, per\_page, total\_count }
+result\_info: optional object { has\_more, page, per\_page, total\_count }
 
 </summary>
 

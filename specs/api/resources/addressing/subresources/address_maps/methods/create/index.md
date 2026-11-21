@@ -90,7 +90,7 @@ ips: optional array of string
 
 <summary>
 
-memberships: optional array of object {identifier, kind }
+memberships: optional array of object { identifier, kind }
 
 Zones and Accounts which will be assigned IPs on this Address Map. A zone membership will take priority over an account membership.
 
@@ -138,7 +138,7 @@ One of the following:
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -160,7 +160,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -180,7 +180,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -202,7 +202,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -228,7 +228,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, can\_delete, can\_modify\_ips, 7 more }
+result: optional object { id, can\_delete, can\_modify\_ips, 7 more }
 
 </summary>
 
@@ -306,7 +306,7 @@ An IPv4 or IPv6 address.
 
 <summary>
 
-memberships: optional array of object {can\_delete, created\_at, identifier, kind }
+memberships: optional array of object { can\_delete, created\_at, identifier, kind }
 
 Zones and Accounts which will be assigned IPs on this Address Map. A zone membership will take priority over an account membership.
 

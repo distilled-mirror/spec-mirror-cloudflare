@@ -28,7 +28,7 @@ GET/accounts/{account\_id}/intel/domain-history
 
 <summary>
 
-DomainHistory object {categorizations, domain }
+DomainHistory object { categorizations, domain }
 
 </summary>
 
@@ -36,7 +36,7 @@ DomainHistory object {categorizations, domain }
 
 <summary>
 
-categorizations: optional array of object {categories, end, start }
+categorizations: optional array of object { categories, end, start }
 
 </summary>
 
@@ -44,7 +44,7 @@ categorizations: optional array of object {categories, end, start }
 
 <summary>
 
-categories: optional array of object {id, name }
+categories: optional array of object { id, name }
 
 </summary>
 
@@ -96,7 +96,7 @@ DomainHistoryGetResponse = array of <a href="https://developers.cloudflare.com/a
 
 <summary>
 
-categorizations: optional array of object {categories, end, start }
+categorizations: optional array of object { categories, end, start }
 
 </summary>
 
@@ -104,7 +104,7 @@ categorizations: optional array of object {categories, end, start }
 
 <summary>
 
-categories: optional array of object {id, name }
+categories: optional array of object { id, name }
 
 </summary>
 

@@ -92,7 +92,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -134,7 +134,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -154,7 +154,7 @@ pointer: optional string
 
 <summary>
 
-result: object {topics }
+result: object { topics }
 
 </summary>
 
@@ -162,7 +162,7 @@ result: object {topics }
 
 <summary>
 
-topics: optional array of object {label, topic }
+topics: optional array of object { label, topic }
 
 Custom topic categories for AI Security for Apps content detection.
 

@@ -108,7 +108,7 @@ minLength1
 
 <summary>
 
-pattern\_type: "EMAIL"or "DOMAIN"or "IP"or "UNKNOWN"
+pattern\_type: "EMAIL" or "DOMAIN" or "IP" or "UNKNOWN"
 
 Type of pattern matching.
 
@@ -191,7 +191,7 @@ Deprecated as of July 1, 2025. Use `is_acceptable_sender` instead. End of life: 
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -213,7 +213,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -233,7 +233,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -255,7 +255,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -281,7 +281,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, created\_at, last\_modified, 13 more }
+result: optional object { id, created\_at, last\_modified, 13 more }
 
 An email allow policy.
 
@@ -391,7 +391,7 @@ minLength1
 
 <summary>
 
-pattern\_type: optional "EMAIL"or "DOMAIN"or "IP"or "UNKNOWN"
+pattern\_type: optional "EMAIL" or "DOMAIN" or "IP" or "UNKNOWN"
 
 Type of pattern matching.
 

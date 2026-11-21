@@ -36,7 +36,7 @@ GET/accounts/{account\_id}/devices/registrations/{registration\_id}/override\_co
 
 <summary>
 
-OverrideCodeListResponse object {disable\_for\_time }
+OverrideCodeListResponse object { disable\_for\_time }
 
 </summary>
 
@@ -44,7 +44,7 @@ OverrideCodeListResponse object {disable\_for\_time }
 
 <summary>
 
-disable\_for\_time: optional object {"1", "12", "24", 2 more }
+disable\_for\_time: optional object { "1", "12", "24", 2 more }
 
 </summary>
 
@@ -90,7 +90,7 @@ Override code that is valid for 6 hours.
 
 <summary>
 
-OverrideCodeGetResponse object {disable\_for\_time }
+OverrideCodeGetResponse object { disable\_for\_time }
 
 </summary>
 

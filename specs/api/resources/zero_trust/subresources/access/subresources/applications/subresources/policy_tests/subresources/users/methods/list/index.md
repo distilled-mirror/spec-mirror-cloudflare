@@ -100,7 +100,7 @@ maximum1000
 
 <summary>
 
-status: optional "success"or "fail"or "error"
+status: optional "success" or "fail" or "error"
 
 Filter users by their policy evaluation status.
 
@@ -130,7 +130,7 @@ One of the following:
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -152,7 +152,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -172,7 +172,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -194,7 +194,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -220,7 +220,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional array of object {id, email, name, status }
+result: optional array of object { id, email, name, status }
 
 Page of processed users.
 
@@ -252,7 +252,7 @@ The name of the user.
 
 <summary>
 
-status: optional "approved"or "blocked"or "error"
+status: optional "approved" or "blocked" or "error"
 
 Policy evaluation result for an individual user.
 

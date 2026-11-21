@@ -64,7 +64,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 <summary>
 
-slug: "AMAZON"or "GOOGLE"or "MICROSOFT"or "ORACLE"
+slug: "AMAZON" or "GOOGLE" or "MICROSOFT" or "ORACLE"
 
 Origin slug.
 
@@ -98,7 +98,7 @@ One of the following:
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -124,7 +124,7 @@ One of the following:
 
 <summary>
 
-result: object {origin }
+result: object { origin }
 
 </summary>
 
@@ -132,7 +132,7 @@ result: object {origin }
 
 <summary>
 
-origin: object {regions, slug }
+origin: object { regions, slug }
 
 </summary>
 
@@ -140,7 +140,7 @@ origin: object {regions, slug }
 
 <summary>
 
-regions: array of object {region }
+regions: array of object { region }
 
 </summary>
 

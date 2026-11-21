@@ -38,7 +38,7 @@ DELETE/memberships/{membership\_id}
 
 <summary>
 
-Membership object {id, account, api\_access\_enabled, 3 more }
+Membership object { id, account, api\_access\_enabled, 3 more }
 
 </summary>
 
@@ -64,7 +64,7 @@ Enterprise only. Indicates whether or not API access is enabled specifically for
 
 <summary>
 
-permissions: optional object {analytics, billing, cache\_purge, 9 more }
+permissions: optional object { analytics, billing, cache\_purge, 9 more }
 
 All access permissions for the user at the account.
 
@@ -132,7 +132,7 @@ List of role names the membership has for this account.
 
 <summary>
 
-status: optional "accepted"or "pending"or "rejected"
+status: optional "accepted" or "pending" or "rejected"
 
 Status of this membership.
 
@@ -164,7 +164,7 @@ One of the following:
 
 <summary>
 
-MembershipGetResponse object {id, account, api\_access\_enabled, 4 more }
+MembershipGetResponse object { id, account, api\_access\_enabled, 4 more }
 
 </summary>
 
@@ -190,7 +190,7 @@ Enterprise only. Indicates whether or not API access is enabled specifically for
 
 <summary>
 
-permissions: optional object {analytics, billing, cache\_purge, 9 more }
+permissions: optional object { analytics, billing, cache\_purge, 9 more }
 
 All access permissions for the user at the account.
 
@@ -252,7 +252,7 @@ zones: optional <a href="https://developers.cloudflare.com/api/resources/$shared
 
 <summary>
 
-policies: optional array of object {id, access, permission\_groups, resource\_groups }
+policies: optional array of object { id, access, permission\_groups, resource\_groups }
 
 Access policy for the membership
 
@@ -268,7 +268,7 @@ Policy identifier.
 
 <summary>
 
-access: optional "allow"or "deny"
+access: optional "allow" or "deny"
 
 Allow or deny operations against the resources.
 
@@ -292,7 +292,7 @@ One of the following:
 
 <summary>
 
-permission\_groups: optional array of object {id, meta, name }
+permission\_groups: optional array of object { id, meta, name }
 
 A set of permission groups that are specified to the policy.
 
@@ -308,7 +308,7 @@ Identifier of the permission group.
 
 <summary>
 
-meta: optional object {category, deprecated, description, 5 more }
+meta: optional object { category, deprecated, description, 5 more }
 
 Attributes associated to the permission group.
 
@@ -382,7 +382,7 @@ Name of the permission group.
 
 <summary>
 
-resource\_groups: optional array of object {id, scope, meta, name }
+resource\_groups: optional array of object { id, scope, meta, name }
 
 A list of resource groups that the policy applies to.
 
@@ -398,7 +398,7 @@ Identifier of the resource group.
 
 <summary>
 
-scope: object {key, objects }
+scope: object { key, objects }
 
 The scope associated to the resource group
 
@@ -414,7 +414,7 @@ This is a combination of pre-defined resource name and identifier (like Account 
 
 <summary>
 
-objects: array of object {key }
+objects: array of object { key }
 
 A list of scope objects for additional context.
 
@@ -438,7 +438,7 @@ This is a combination of pre-defined resource name and identifier (like Zone ID 
 
 <summary>
 
-meta: optional object {key, value }
+meta: optional object { key, value }
 
 Attributes associated to the resource group.
 
@@ -480,7 +480,7 @@ List of role names the membership has for this account.
 
 <summary>
 
-status: optional "accepted"or "pending"or "rejected"
+status: optional "accepted" or "pending" or "rejected"
 
 Status of this membership.
 
@@ -512,7 +512,7 @@ One of the following:
 
 <summary>
 
-MembershipUpdateResponse object {id, account, api\_access\_enabled, 4 more }
+MembershipUpdateResponse object { id, account, api\_access\_enabled, 4 more }
 
 </summary>
 
@@ -538,7 +538,7 @@ Enterprise only. Indicates whether or not API access is enabled specifically for
 
 <summary>
 
-permissions: optional object {analytics, billing, cache\_purge, 9 more }
+permissions: optional object { analytics, billing, cache\_purge, 9 more }
 
 All access permissions for the user at the account.
 
@@ -600,7 +600,7 @@ zones: optional <a href="https://developers.cloudflare.com/api/resources/$shared
 
 <summary>
 
-policies: optional array of object {id, access, permission\_groups, resource\_groups }
+policies: optional array of object { id, access, permission\_groups, resource\_groups }
 
 Access policy for the membership
 
@@ -616,7 +616,7 @@ Policy identifier.
 
 <summary>
 
-access: optional "allow"or "deny"
+access: optional "allow" or "deny"
 
 Allow or deny operations against the resources.
 
@@ -640,7 +640,7 @@ One of the following:
 
 <summary>
 
-permission\_groups: optional array of object {id, meta, name }
+permission\_groups: optional array of object { id, meta, name }
 
 A set of permission groups that are specified to the policy.
 
@@ -656,7 +656,7 @@ Identifier of the permission group.
 
 <summary>
 
-meta: optional object {category, deprecated, description, 5 more }
+meta: optional object { category, deprecated, description, 5 more }
 
 Attributes associated to the permission group.
 
@@ -730,7 +730,7 @@ Name of the permission group.
 
 <summary>
 
-resource\_groups: optional array of object {id, scope, meta, name }
+resource\_groups: optional array of object { id, scope, meta, name }
 
 A list of resource groups that the policy applies to.
 
@@ -746,7 +746,7 @@ Identifier of the resource group.
 
 <summary>
 
-scope: object {key, objects }
+scope: object { key, objects }
 
 The scope associated to the resource group
 
@@ -762,7 +762,7 @@ This is a combination of pre-defined resource name and identifier (like Account 
 
 <summary>
 
-objects: array of object {key }
+objects: array of object { key }
 
 A list of scope objects for additional context.
 
@@ -786,7 +786,7 @@ This is a combination of pre-defined resource name and identifier (like Zone ID 
 
 <summary>
 
-meta: optional object {key, value }
+meta: optional object { key, value }
 
 Attributes associated to the resource group.
 
@@ -828,7 +828,7 @@ List of role names the membership has for this account.
 
 <summary>
 
-status: optional "accepted"or "pending"or "rejected"
+status: optional "accepted" or "pending" or "rejected"
 
 Status of this membership.
 
@@ -860,7 +860,7 @@ One of the following:
 
 <summary>
 
-MembershipDeleteResponse object {id }
+MembershipDeleteResponse object { id }
 
 </summary>
 

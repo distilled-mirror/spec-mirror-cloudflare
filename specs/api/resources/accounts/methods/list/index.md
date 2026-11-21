@@ -58,7 +58,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 <summary>
 
-direction: optional "asc"or "desc"
+direction: optional "asc" or "desc"
 
 Direction to order results.
 
@@ -108,7 +108,7 @@ minimum5
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -130,7 +130,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -150,7 +150,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -172,7 +172,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -222,7 +222,7 @@ Account name. When creating or updating an account, the name is limited to 65 UT
 
 <summary>
 
-type: "standard"or "enterprise"
+type: "standard" or "enterprise"
 
 </summary>
 
@@ -252,7 +252,7 @@ formatdate-time
 
 <summary>
 
-legacy\_flags: optional object {enterprise\_zone\_quota }
+legacy\_flags: optional object { enterprise\_zone\_quota }
 
 Legacy account flags.
 
@@ -262,7 +262,7 @@ Legacy account flags.
 
 <summary>
 
-enterprise\_zone\_quota: optional object {available, current, maximum }
+enterprise\_zone\_quota: optional object { available, current, maximum }
 
 Enterprise zone quota for standard and enterprise accounts. Accounts without a quota have a maximum of 0.
 
@@ -298,7 +298,7 @@ Maximum number of Enterprise zones allowed.
 
 <summary>
 
-managed\_by: optional object {parent\_org\_id, parent\_org\_name, root\_org\_id, should\_display\_parent\_orgs }
+managed\_by: optional object { parent\_org\_id, parent\_org\_name, root\_org\_id, should\_display\_parent\_orgs }
 
 Parent container details
 
@@ -340,7 +340,7 @@ Indicates whether the parent Organization hierarchy should be displayed
 
 <summary>
 
-settings: optional object {abuse\_contact\_email, enforce\_twofactor }
+settings: optional object { abuse\_contact\_email, enforce\_twofactor }
 
 Account settings
 
@@ -370,7 +370,7 @@ Indicates whether membership in this account requires that Two-Factor Authentica
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object { count, page, per\_page, total\_count }
 
 </summary>
 

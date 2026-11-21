@@ -104,7 +104,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -146,7 +146,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -194,7 +194,7 @@ One of the following:
 
 <summary>
 
-LockdownIPConfiguration object {target, value }
+LockdownIPConfiguration object { target, value }
 
 </summary>
 
@@ -218,7 +218,7 @@ The IP address to match. This address will be compared to the IP address of inco
 
 <summary>
 
-LockdownCIDRConfiguration object {target, value }
+LockdownCIDRConfiguration object { target, value }
 
 </summary>
 

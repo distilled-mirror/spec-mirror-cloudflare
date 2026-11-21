@@ -110,7 +110,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -152,7 +152,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -172,7 +172,7 @@ pointer: optional string
 
 <summary>
 
-result: object {gre\_tunnel }
+result: object { gre\_tunnel }
 
 </summary>
 
@@ -180,7 +180,7 @@ result: object {gre\_tunnel }
 
 <summary>
 
-gre\_tunnel: optional object {id, cloudflare\_gre\_endpoint, customer\_gre\_endpoint, 12 more }
+gre\_tunnel: optional object { id, cloudflare\_gre\_endpoint, customer\_gre\_endpoint, 12 more }
 
 </summary>
 
@@ -226,7 +226,7 @@ True if automatic stateful return routing should be enabled for a tunnel, false 
 
 <summary>
 
-bgp: optional object {customer\_asn, export\_filter\_id, extra\_prefixes, 2 more }
+bgp: optional object { customer\_asn, export\_filter\_id, extra\_prefixes, 2 more }
 
 </summary>
 
@@ -281,7 +281,7 @@ In other words, MD5 keys may contain any printable ASCII character aside from ne
 
 <summary>
 
-bgp\_status: optional object {state, tcp\_established, updated\_at, 5 more }
+bgp\_status: optional object { state, tcp\_established, updated\_at, 5 more }
 
 </summary>
 
@@ -289,7 +289,7 @@ bgp\_status: optional object {state, tcp\_established, updated\_at, 5 more }
 
 <summary>
 
-state: "BGP\_DOWN"or "BGP\_UP"or "BGP\_ESTABLISHING"
+state: "BGP\_DOWN" or "BGP\_UP" or "BGP\_ESTABLISHING"
 
 </summary>
 
@@ -375,7 +375,7 @@ An optional description of the GRE tunnel.
 
 <summary>
 
-health\_check: optional object {direction, enabled, rate, 2 more }
+health\_check: optional object { direction, enabled, rate, 2 more }
 
 </summary>
 
@@ -383,7 +383,7 @@ health\_check: optional object {direction, enabled, rate, 2 more }
 
 <summary>
 
-direction: optional "unidirectional"or "bidirectional"
+direction: optional "unidirectional" or "bidirectional"
 
 The direction of the flow of the healthcheck. Either unidirectional, where the probe comes to you via the tunnel and the result comes back to Cloudflare via the open Internet, or bidirectional where both the probe and result come and go via the tunnel.
 
@@ -441,7 +441,7 @@ One of the following:
 
 <summary>
 
-target: optional object {effective, saved } or string
+target: optional object { effective, saved } or string
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target. Must be in object form if the x-magic-new-hc-target header is set to true and string form if x-magic-new-hc-target is absent or set to false.
 
@@ -453,7 +453,7 @@ One of the following:
 
 <summary>
 
-MagicHealthCheckTarget object {effective, saved }
+MagicHealthCheckTarget object { effective, saved }
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target.
 

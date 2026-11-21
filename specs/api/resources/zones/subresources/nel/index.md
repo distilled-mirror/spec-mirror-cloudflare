@@ -32,7 +32,7 @@ PATCH/zones/{zone\_id}/settings/nel
 
 <summary>
 
-Setting object {id, editable, modified\_on, value }
+Setting object { id, editable, modified\_on, value }
 
 A zone-scoped NEL configuration setting.
 
@@ -62,7 +62,7 @@ formatdate-time
 
 <summary>
 
-value: object {enabled }
+value: object { enabled }
 
 The NEL configuration value.
 

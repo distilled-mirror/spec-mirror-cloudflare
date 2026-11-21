@@ -28,7 +28,7 @@ POST/accounts/{account\_id}/pay-invoice
 
 <summary>
 
-PayInvoiceCreateResponse object {client\_secret }
+PayInvoiceCreateResponse object { client\_secret }
 
 </summary>
 

@@ -82,7 +82,7 @@ formatuuid
 
 <summary>
 
-application: "aws"or "cloudflare"
+application: "aws" or "cloudflare"
 
 Platform this structure models. Must match the existing value.
 
@@ -128,7 +128,7 @@ minLength1
 
 <summary>
 
-errors: array of object {code, message, source }
+errors: array of object { code, message, source }
 
 </summary>
 
@@ -146,7 +146,7 @@ message: string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -166,7 +166,7 @@ pointer: string
 
 <summary>
 
-messages: array of object {code, message, source }
+messages: array of object { code, message, source }
 
 </summary>
 
@@ -184,7 +184,7 @@ message: string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -220,7 +220,7 @@ formatuuid
 
 <summary>
 
-application: "aws"or "cloudflare"
+application: "aws" or "cloudflare"
 
 Platform this structure models. Immutable after creation; determines valid node kinds and identifier formats.
 

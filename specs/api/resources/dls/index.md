@@ -32,7 +32,7 @@ GET/accounts/{account\_id}/dls/regions/{region\_id}
 
 <summary>
 
-RegionListResponse object {id, created\_on, modified\_on, 4 more }
+RegionListResponse object { id, created\_on, modified\_on, 4 more }
 
 </summary>
 
@@ -82,7 +82,7 @@ formatdate-time
 
 <summary>
 
-RegionGetResponse object {id, created\_on, modified\_on, 4 more }
+RegionGetResponse object { id, created\_on, modified\_on, 4 more }
 
 </summary>
 
@@ -158,7 +158,7 @@ DELETE/accounts/{account\_id}/dls/regional\_services/prefix\_bindings/{binding\_
 
 <summary>
 
-PrefixBindingListResponse object {id, cidr, prefix\_id, region\_key }
+PrefixBindingListResponse object { id, cidr, prefix\_id, region\_key }
 
 </summary>
 
@@ -198,7 +198,7 @@ minLength1
 
 <summary>
 
-PrefixBindingGetResponse object {id, cidr, prefix\_id, region\_key }
+PrefixBindingGetResponse object { id, cidr, prefix\_id, region\_key }
 
 </summary>
 
@@ -238,7 +238,7 @@ minLength1
 
 <summary>
 
-PrefixBindingCreateResponse object {id, cidr, prefix\_id, region\_key }
+PrefixBindingCreateResponse object { id, cidr, prefix\_id, region\_key }
 
 </summary>
 
@@ -278,7 +278,7 @@ minLength1
 
 <summary>
 
-PrefixBindingEditResponse object {id, cidr, prefix\_id, region\_key }
+PrefixBindingEditResponse object { id, cidr, prefix\_id, region\_key }
 
 </summary>
 
@@ -318,7 +318,7 @@ minLength1
 
 <summary>
 
-PrefixBindingDeleteResponse object {messages, success, errors }
+PrefixBindingDeleteResponse object { messages, success, errors }
 
 </summary>
 
@@ -326,7 +326,7 @@ PrefixBindingDeleteResponse object {messages, success, errors }
 
 <summary>
 
-messages: array of object {code, message, error\_chain }
+messages: array of object { code, message, error\_chain }
 
 </summary>
 
@@ -358,7 +358,7 @@ success: boolean
 
 <summary>
 
-errors: optional array of object {code, message, error\_chain }
+errors: optional array of object { code, message, error\_chain }
 
 maxLength0
 

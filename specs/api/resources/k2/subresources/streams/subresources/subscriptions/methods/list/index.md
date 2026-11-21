@@ -84,7 +84,7 @@ minLength32
 
 <summary>
 
-errors: array of object {message, code }
+errors: array of object { message, code }
 
 </summary>
 
@@ -104,7 +104,7 @@ code: optional number
 
 <summary>
 
-messages: array of object {message, code }
+messages: array of object { message, code }
 
 </summary>
 
@@ -124,7 +124,7 @@ code: optional number
 
 <summary>
 
-result: array of object {id, created\_at, lag, 3 more }
+result: array of object { id, created\_at, lag, 3 more }
 
 </summary>
 
@@ -142,7 +142,7 @@ formatdate-time
 
 <summary>
 
-lag: object {records, status }
+lag: object { records, status }
 
 </summary>
 
@@ -156,7 +156,7 @@ Decimal-string distance from the subscription’s committed position to the obse
 
 <summary>
 
-status: "available"or "unsupported"or "unavailable"
+status: "available" or "unsupported" or "unavailable"
 
 Unsupported means the subscription or stream topology cannot be measured; unavailable means a required observation failed or was inconsistent.
 
@@ -198,7 +198,7 @@ name: string
 
 <summary>
 
-start\_at: object {type }
+start\_at: object { type }
 
 </summary>
 
@@ -206,7 +206,7 @@ start\_at: object {type }
 
 <summary>
 
-type: "earliest"or "latest"
+type: "earliest" or "latest"
 
 </summary>
 

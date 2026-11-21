@@ -30,7 +30,7 @@ PATCH/{accounts\_or\_zones}/{account\_or\_zone\_id}/security-center/insights/{is
 
 <summary>
 
-ClassificationUpdateResponse object {errors, messages, success }
+ClassificationUpdateResponse object { errors, messages, success }
 
 </summary>
 
@@ -38,7 +38,7 @@ ClassificationUpdateResponse object {errors, messages, success }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -60,7 +60,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -80,7 +80,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -102,7 +102,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 

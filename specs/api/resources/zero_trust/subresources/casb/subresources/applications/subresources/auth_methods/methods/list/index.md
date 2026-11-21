@@ -68,7 +68,7 @@ account\_id: string
 
 <summary>
 
-application\_id: "ANTHROPIC"or "AWS"or "BITBUCKET"or 13 more
+application\_id: "ANTHROPIC" or "AWS" or "BITBUCKET" or 13 more
 
 </summary>
 
@@ -148,7 +148,7 @@ One of the following:
 
 <summary>
 
-environment: optional "fedramp"or "standard"
+environment: optional "fedramp" or "standard"
 
 Environment to request (standard, fedramp). The result follows the account’s FedRAMP entitlement: FedRAMP-enabled accounts always receive FedRAMP applications and other accounts receive standard applications. Any other non-empty value returns 400.
 
@@ -198,7 +198,7 @@ List of messages.
 
 <summary>
 
-result: array of object {id, display\_name, human\_interaction\_required, 4 more }
+result: array of object { id, display\_name, human\_interaction\_required, 4 more }
 
 List of items.
 
@@ -226,7 +226,7 @@ Whether setup requires human interaction or integration can be created purely us
 
 <summary>
 
-instructions: object {markdown }
+instructions: object { markdown }
 
 Step-by-step instructions for obtaining credentials.
 
@@ -268,7 +268,7 @@ OAuth redirect URL for vendors requiring human interaction.
 
 <summary>
 
-result\_info: object {count, next, page, 3 more }
+result\_info: object { count, next, page, 3 more }
 
 Pagination metadata.
 

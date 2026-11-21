@@ -89,7 +89,7 @@ DNS record ID (rec\_tag) to inspect
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -111,7 +111,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -131,7 +131,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -153,7 +153,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -179,7 +179,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {components, domain, record, 2 more }
+result: optional object { components, domain, record, 2 more }
 
 Recursive SPF inspection tree
 
@@ -213,7 +213,7 @@ Total number of DNS lookups performed across all includes
 
 <summary>
 
-errors: optional array of object {code, domain, message, details }
+errors: optional array of object { code, domain, message, details }
 
 All errors encountered during inspection, collected from the entire tree. This includes errors from nested includes at any depth, providing a quick overview of all issues without needing to traverse the nested structure. Each error includes a <code>domain</code> field to identify where it occurred. Empty array if no errors (omitted from JSON when empty).
 

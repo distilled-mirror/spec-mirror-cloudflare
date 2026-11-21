@@ -28,7 +28,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 PUT/zones/{zone\_id}/web3/hostnames/{identifier}/ipfs\_universal\_path/content\_list/entries/{content\_list\_entry\_identifier}
 
-Edit IPFS Universal Path Gateway Content List Entry
+Updates an IPFS Universal Path Gateway content list entry.
 
 ##### Security
 
@@ -104,7 +104,7 @@ maxLength500
 
 <summary>
 
-type: "cid"or "content\_path"
+type: "cid" or "content\_path"
 
 Specify the type of content list entry to block.
 
@@ -160,7 +160,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -202,7 +202,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -222,7 +222,7 @@ pointer: optional string
 
 <summary>
 
-result: object {id, content, created\_on, 3 more }
+result: object { id, content, created\_on, 3 more }
 
 Specify a content list entry to block.
 
@@ -268,7 +268,7 @@ formatdate-time
 
 <summary>
 
-type: optional "cid"or "content\_path"
+type: optional "cid" or "content\_path"
 
 Specify the type of content list entry to block.
 
@@ -302,7 +302,7 @@ Specifies whether the API call was successful.
 
 <summary>
 
-result\_info: optional unknownor string
+result\_info: optional unknown or string
 
 Provides the API response.
 

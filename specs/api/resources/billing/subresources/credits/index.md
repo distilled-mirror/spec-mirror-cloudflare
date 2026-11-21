@@ -28,7 +28,7 @@ GET/accounts/{account\_id}/billing/credits
 
 <summary>
 
-CreditGetResponse object {confirmed\_balance\_cents, currency, days\_remaining, 7 more }
+CreditGetResponse object { confirmed\_balance\_cents, currency, days\_remaining, 7 more }
 
 </summary>
 

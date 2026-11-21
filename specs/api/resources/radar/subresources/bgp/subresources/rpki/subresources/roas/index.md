@@ -32,7 +32,7 @@ GET/radar/bgp/rpki/roas/timeseries
 
 <summary>
 
-RoaTimeseriesResponse object {meta, serie\_0 }
+RoaTimeseriesResponse object { meta, serie\_0 }
 
 </summary>
 
@@ -40,7 +40,7 @@ RoaTimeseriesResponse object {meta, serie\_0 }
 
 <summary>
 
-meta: object {dataTime, queryTime }
+meta: object { dataTime, queryTime }
 
 </summary>
 
@@ -68,7 +68,7 @@ formatdate-time
 
 <summary>
 
-serie\_0: object {timestamps, values }
+serie\_0: object { timestamps, values }
 
 </summary>
 

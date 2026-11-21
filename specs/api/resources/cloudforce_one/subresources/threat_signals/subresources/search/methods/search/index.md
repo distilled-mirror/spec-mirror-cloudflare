@@ -68,7 +68,7 @@ formatuuid
 
 <summary>
 
-max\_results: optional ""or string
+max\_results: optional "" or string
 
 Maximum search matches to request, an integer from 1 to 50. Defaults to 20 when omitted or empty; multiple matches from one article can produce fewer returned articles.
 
@@ -96,7 +96,7 @@ string
 
 <summary>
 
-errors: array of object {message }
+errors: array of object { message }
 
 </summary>
 
@@ -112,7 +112,7 @@ message: string
 
 <summary>
 
-result: object {count, results }
+result: object { count, results }
 
 </summary>
 
@@ -128,7 +128,7 @@ minimum0
 
 <summary>
 
-results: array of object {article\_id, dataset\_id, event\_id, 3 more }
+results: array of object { article\_id, dataset\_id, event\_id, 3 more }
 
 </summary>
 

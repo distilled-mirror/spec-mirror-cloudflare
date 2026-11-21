@@ -64,7 +64,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 <summary>
 
-dimension: "ADM1"or "AS"or "AS\_CATEGORY"or 2 more
+dimension: "ADM1" or "AS" or "AS\_CATEGORY" or 2 more
 
 Specifies the NetFlows attribute by which to group the results.
 
@@ -102,7 +102,7 @@ One of the following:
 
 <summary>
 
-asCategory: optional array of "ACCESS\_ISP"or "HOSTING\_CLOUD\_CONTENT"or "ORGANIZATION"or "UNCLASSIFIED"
+asCategory: optional array of "ACCESS\_ISP" or "HOSTING\_CLOUD\_CONTENT" or "ORGANIZATION" or "UNCLASSIFIED"
 
 Filters results by the inferred network type of the Autonomous System: <code>ACCESS_ISP</code> (networks connecting end users, plus transit), <code>HOSTING_CLOUD_CONTENT</code> (hosting providers, clouds and CDNs), <code>ORGANIZATION</code> (enterprises, universities, governments, banks and IXP route servers), or <code>UNCLASSIFIED</code> (the AS isn’t classified, or the traffic couldn’t be mapped to an AS). In HTTP, only supported for date ranges starting on or after 2023-05-01.
 
@@ -164,7 +164,7 @@ Start of the date range. Alternative to `dateRange`; provide together with `date
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -212,7 +212,7 @@ Array of names used to label the series in the response.
 
 <summary>
 
-product: optional array of "HTTP"or "ALL"
+product: optional array of "HTTP" or "ALL"
 
 Filters the results by network traffic product types.
 
@@ -238,7 +238,7 @@ One of the following:
 
 <summary>
 
-result: object {meta, summary\_0 }
+result: object { meta, summary\_0 }
 
 </summary>
 
@@ -246,7 +246,7 @@ result: object {meta, summary\_0 }
 
 <summary>
 
-meta: object {confidenceInfo, dateRange, lastUpdated, 2 more }
+meta: object { confidenceInfo, dateRange, lastUpdated, 2 more }
 
 Metadata for the results.
 
@@ -256,7 +256,7 @@ Metadata for the results.
 
 <summary>
 
-confidenceInfo: object {annotations, level }
+confidenceInfo: object { annotations, level }
 
 </summary>
 
@@ -264,7 +264,7 @@ confidenceInfo: object {annotations, level }
 
 <summary>
 
-annotations: array of object {dataSource, description, endDate, 5 more }
+annotations: array of object { dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -272,7 +272,7 @@ annotations: array of object {dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
+dataSource: "ALL" or "AI\_BOTS" or "AI\_GATEWAY" or 22 more
 
 Data source for annotations.
 
@@ -398,7 +398,7 @@ formatdate-time
 
 <summary>
 
-eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
+eventType: "GENERAL" or "OUTAGE" or "PARTIAL\_PROJECTION" or 2 more
 
 Event type for annotations.
 
@@ -470,7 +470,7 @@ Provides an indication of how much confidence Cloudflare has in the data.
 
 <summary>
 
-dateRange: array of object {endTime, startTime }
+dateRange: array of object { endTime, startTime }
 
 </summary>
 
@@ -506,7 +506,7 @@ formatdate-time
 
 <summary>
 
-normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
+normalization: "PERCENTAGE" or "MIN0\_MAX" or "MIN\_MAX" or 5 more
 
 Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
@@ -554,7 +554,7 @@ One of the following:
 
 <summary>
 
-units: array of object {name, value }
+units: array of object { name, value }
 
 Measurement units for the results.
 

@@ -58,7 +58,7 @@ DELETE/{accounts\_or\_zones}/{account\_or\_zone\_id}/logs/explorer/datasets/{dat
 
 <summary>
 
-CreateRequest object {dataset, fields, filter, filter\_attack\_traffic }
+CreateRequest object { dataset, fields, filter, filter\_attack\_traffic }
 
 </summary>
 
@@ -72,7 +72,7 @@ Dataset type name to create (e.g. <code>http_requests</code>).
 
 <summary>
 
-fields: optional array of object {enabled, name }
+fields: optional array of object { enabled, name }
 
 Controls which fields the API ingests. Defaults to all available fields when absent.
 
@@ -114,7 +114,7 @@ Whether to filter attack traffic from the Logpush job. Defaults to <code>true</c
 
 <summary>
 
-Dataset object {created\_at, dataset, dataset\_id, 8 more }
+Dataset object { created\_at, dataset, dataset\_id, 8 more }
 
 A Log Explorer dataset summary. List endpoints return this type and omit field configuration; use the single-dataset endpoint to retrieve it.
 
@@ -156,7 +156,7 @@ Whether log ingest is currently active for this dataset.
 
 <summary>
 
-fields: array of object {enabled, name }
+fields: array of object { enabled, name }
 
 The field configuration for this dataset.
 
@@ -188,7 +188,7 @@ Public ID of the account or zone that owns this dataset.
 
 <summary>
 
-object\_type: "account"or "zone"
+object\_type: "account" or "zone"
 
 Whether this dataset belongs to an account or a zone.
 
@@ -236,7 +236,7 @@ Whether the Logpush job filters attack traffic. Omitted for datasets that do not
 
 <summary>
 
-DatasetSummary object {created\_at, dataset, dataset\_id, 5 more }
+DatasetSummary object { created\_at, dataset, dataset\_id, 5 more }
 
 A Log Explorer dataset summary. List endpoints return this type and omit field configuration; use the single-dataset endpoint to retrieve it.
 
@@ -284,7 +284,7 @@ Public ID of the account or zone that owns this dataset.
 
 <summary>
 
-object\_type: "account"or "zone"
+object\_type: "account" or "zone"
 
 Whether this dataset belongs to an account or a zone.
 
@@ -320,7 +320,7 @@ formatdate-time
 
 <summary>
 
-UpdateRequest object {enabled, deletion\_protection, fields, 2 more }
+UpdateRequest object { enabled, deletion\_protection, fields, 2 more }
 
 </summary>
 
@@ -340,7 +340,7 @@ Set to <code>false</code> to allow deletion of this dataset.
 
 <summary>
 
-fields: optional array of object {enabled, name }
+fields: optional array of object { enabled, name }
 
 Controls which fields the API ingests after the update. Defaults to all available fields when absent.
 
@@ -390,7 +390,7 @@ GET/{accounts\_or\_zones}/{account\_or\_zone\_id}/logs/explorer/datasets/availab
 
 <summary>
 
-AvailableDataset object {dataset, object\_type, schema, timestamp\_field }
+AvailableDataset object { dataset, object\_type, schema, timestamp\_field }
 
 A dataset type that the account or zone can create.
 
@@ -406,7 +406,7 @@ Dataset type name (e.g. <code>http_requests</code>).
 
 <summary>
 
-object\_type: "account"or "zone"
+object\_type: "account" or "zone"
 
 Whether this dataset type is account-scoped or zone-scoped.
 
@@ -430,7 +430,7 @@ One of the following:
 
 <summary>
 
-schema: object {properties, required, type }
+schema: object { properties, required, type }
 
 JSON Schema that describes the fields this dataset exposes.
 
@@ -466,7 +466,7 @@ The primary timestamp field name for this dataset.
 
 <summary>
 
-AvailableList object {errors, messages, success, result }
+AvailableList object { errors, messages, success, result }
 
 </summary>
 
@@ -496,7 +496,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -538,7 +538,7 @@ Dataset type name (e.g. <code>http_requests</code>).
 
 <summary>
 
-object\_type: "account"or "zone"
+object\_type: "account" or "zone"
 
 Whether this dataset type is account-scoped or zone-scoped.
 
@@ -562,7 +562,7 @@ One of the following:
 
 <summary>
 
-schema: object {properties, required, type }
+schema: object { properties, required, type }
 
 JSON Schema that describes the fields this dataset exposes.
 

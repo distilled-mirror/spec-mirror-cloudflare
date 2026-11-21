@@ -56,6 +56,10 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 </details>
 
+##### Accepted Permissions (at least one required)
+
+`Zero Trust Read``Zero Trust Write`
+
 ##### P ath ParametersExpand Collapse
 
 account\_id: string
@@ -70,7 +74,7 @@ Specify the Cloudflare account identifier.
 
 <summary>
 
-direction: optional "asc"or "desc"
+direction: optional "asc" or "desc"
 
 Sort direction. Only takes effect when <code>order_by</code> is also provided; it is ignored otherwise. When <code>direction</code> is omitted the effective direction is field-specific: <code>created_at</code> and <code>updated_at</code> default to descending (newest first); <code>name</code> defaults to ascending.
 
@@ -111,7 +115,7 @@ Each entry must match one of the per-field patterns below: the field must be one
 
 <summary>
 
-order\_by: optional "name"or "created\_at"or "updated\_at"
+order\_by: optional "name" or "created\_at" or "updated\_at"
 
 Field to sort the returned endpoints by. When omitted, the order of results is unspecified. Supported values:
 
@@ -173,7 +177,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -215,7 +219,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -251,7 +255,7 @@ One of the following:
 
 <summary>
 
-IP object {ips, name, id, 4 more }
+IP object { ips, name, id, 4 more }
 
 </summary>
 
@@ -303,7 +307,7 @@ formatdate-time
 
 <summary>
 
-Identity object {kind, name, id, 3 more }
+Identity object { kind, name, id, 3 more }
 
 </summary>
 
@@ -353,7 +357,7 @@ formatdate-time
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object { count, page, per\_page, total\_count }
 
 </summary>
 

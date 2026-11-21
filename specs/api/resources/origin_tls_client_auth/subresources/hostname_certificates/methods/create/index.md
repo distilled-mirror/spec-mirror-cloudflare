@@ -88,7 +88,7 @@ The hostname certificate’s private key.
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -110,7 +110,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -130,7 +130,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -152,7 +152,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -178,7 +178,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, certificate, expires\_on, 5 more }
+result: optional object { id, certificate, expires\_on, 5 more }
 
 </summary>
 
@@ -226,7 +226,7 @@ The type of hash used for the certificate.
 
 <summary>
 
-status: optional "initializing"or "pending\_deployment"or "pending\_deletion"or 4 more
+status: optional "initializing" or "pending\_deployment" or "pending\_deletion" or 4 more
 
 Status of the certificate or the association.
 

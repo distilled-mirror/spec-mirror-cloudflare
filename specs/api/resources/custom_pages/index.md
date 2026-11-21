@@ -34,7 +34,7 @@ PUT/{accounts\_or\_zones}/{account\_or\_zone\_id}/custom\_pages/{identifier}
 
 <summary>
 
-CustomPageListResponse object {id, created\_on, description, 5 more }
+CustomPageListResponse object { id, created\_on, description, 5 more }
 
 </summary>
 
@@ -70,7 +70,7 @@ required\_tokens: optional array of string
 
 <summary>
 
-state: optional "default"or "customized"
+state: optional "default" or "customized"
 
 The custom page state.
 
@@ -106,7 +106,7 @@ formaturi
 
 <summary>
 
-CustomPageGetResponse object {id, created\_on, description, 5 more }
+CustomPageGetResponse object { id, created\_on, description, 5 more }
 
 </summary>
 
@@ -142,7 +142,7 @@ required\_tokens: optional array of string
 
 <summary>
 
-state: optional "default"or "customized"
+state: optional "default" or "customized"
 
 The custom page state.
 
@@ -178,7 +178,7 @@ formaturi
 
 <summary>
 
-CustomPageUpdateResponse object {id, created\_on, description, 5 more }
+CustomPageUpdateResponse object { id, created\_on, description, 5 more }
 
 </summary>
 
@@ -214,7 +214,7 @@ required\_tokens: optional array of string
 
 <summary>
 
-state: optional "default"or "customized"
+state: optional "default" or "customized"
 
 The custom page state.
 
@@ -274,7 +274,7 @@ DELETE/{accounts\_or\_zones}/{account\_or\_zone\_id}/custom\_pages/assets/{asset
 
 <summary>
 
-AssetListResponse object {description, last\_updated, name, 2 more }
+AssetListResponse object { description, last\_updated, name, 2 more }
 
 </summary>
 
@@ -320,7 +320,7 @@ formaturi
 
 <summary>
 
-AssetGetResponse object {description, last\_updated, name, 2 more }
+AssetGetResponse object { description, last\_updated, name, 2 more }
 
 </summary>
 
@@ -366,7 +366,7 @@ formaturi
 
 <summary>
 
-AssetCreateResponse object {description, last\_updated, name, 2 more }
+AssetCreateResponse object { description, last\_updated, name, 2 more }
 
 </summary>
 
@@ -412,7 +412,7 @@ formaturi
 
 <summary>
 
-AssetUpdateResponse object {description, last\_updated, name, 2 more }
+AssetUpdateResponse object { description, last\_updated, name, 2 more }
 
 </summary>
 

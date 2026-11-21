@@ -36,7 +36,7 @@ POST/accounts/{account\_id}/basin-catalog/{bucket\_name}/namespaces/{namespace}/
 
 <summary>
 
-MaintenanceConfigGetResponse object {maintenance\_config }
+MaintenanceConfigGetResponse object { maintenance\_config }
 
 Contains table maintenance configuration.
 
@@ -46,7 +46,7 @@ Contains table maintenance configuration.
 
 <summary>
 
-maintenance\_config: object {compaction, interval, snapshot\_expiration }
+maintenance\_config: object { compaction, interval, snapshot\_expiration }
 
 Configures maintenance for the table.
 
@@ -56,7 +56,7 @@ Configures maintenance for the table.
 
 <summary>
 
-compaction: optional object {state, target\_size\_mb, next\_eligible\_at, next\_eligible\_reason }
+compaction: optional object { state, target\_size\_mb, next\_eligible\_at, next\_eligible\_reason }
 
 Configures compaction settings for table optimization.
 
@@ -66,7 +66,7 @@ Configures compaction settings for table optimization.
 
 <summary>
 
-state: "enabled"or "disabled"
+state: "enabled" or "disabled"
 
 Specifies the state of maintenance operations.
 
@@ -90,7 +90,7 @@ One of the following:
 
 <summary>
 
-target\_size\_mb: "64"or "128"or "256"or "512"
+target\_size\_mb: "64" or "128" or "256" or "512"
 
 Sets the target file size for compaction in megabytes. Defaults to “128”.
 
@@ -130,7 +130,7 @@ formatdate-time
 
 <summary>
 
-next\_eligible\_reason: optional "disabled"or "held\_after\_user\_error"or "running"or 2 more
+next\_eligible\_reason: optional "disabled" or "held\_after\_user\_error" or "running" or 2 more
 
 Why the operation is not eligible to run before next\_eligible\_at. Returned by the per-table GET only, and absent from the update response. <code>held_after_user_error</code> means a customer-caused failure holds the lease until it expires.
 
@@ -176,7 +176,7 @@ Scheduling interval between normal table maintenance runs.
 
 <summary>
 
-snapshot\_expiration: optional object {max\_snapshot\_age, min\_snapshots\_to\_keep, state, 2 more }
+snapshot\_expiration: optional object { max\_snapshot\_age, min\_snapshots\_to\_keep, state, 2 more }
 
 </summary>
 
@@ -200,7 +200,7 @@ minimum1
 
 <summary>
 
-state: "enabled"or "disabled"
+state: "enabled" or "disabled"
 
 Specifies the state of maintenance operations.
 
@@ -232,7 +232,7 @@ formatdate-time
 
 <summary>
 
-next\_eligible\_reason: optional "disabled"or "held\_after\_user\_error"or "running"or 2 more
+next\_eligible\_reason: optional "disabled" or "held\_after\_user\_error" or "running" or 2 more
 
 Why the operation is not eligible to run before next\_eligible\_at. Returned by the per-table GET only, and absent from the update response. <code>held_after_user_error</code> means a customer-caused failure holds the lease until it expires.
 
@@ -280,7 +280,7 @@ One of the following:
 
 <summary>
 
-MaintenanceConfigUpdateResponse object {compaction, interval, snapshot\_expiration }
+MaintenanceConfigUpdateResponse object { compaction, interval, snapshot\_expiration }
 
 Configures maintenance for the table.
 
@@ -290,7 +290,7 @@ Configures maintenance for the table.
 
 <summary>
 
-compaction: optional object {state, target\_size\_mb, next\_eligible\_at, next\_eligible\_reason }
+compaction: optional object { state, target\_size\_mb, next\_eligible\_at, next\_eligible\_reason }
 
 Configures compaction settings for table optimization.
 
@@ -300,7 +300,7 @@ Configures compaction settings for table optimization.
 
 <summary>
 
-state: "enabled"or "disabled"
+state: "enabled" or "disabled"
 
 Specifies the state of maintenance operations.
 
@@ -324,7 +324,7 @@ One of the following:
 
 <summary>
 
-target\_size\_mb: "64"or "128"or "256"or "512"
+target\_size\_mb: "64" or "128" or "256" or "512"
 
 Sets the target file size for compaction in megabytes. Defaults to “128”.
 
@@ -364,7 +364,7 @@ formatdate-time
 
 <summary>
 
-next\_eligible\_reason: optional "disabled"or "held\_after\_user\_error"or "running"or 2 more
+next\_eligible\_reason: optional "disabled" or "held\_after\_user\_error" or "running" or 2 more
 
 Why the operation is not eligible to run before next\_eligible\_at. Returned by the per-table GET only, and absent from the update response. <code>held_after_user_error</code> means a customer-caused failure holds the lease until it expires.
 
@@ -410,7 +410,7 @@ Scheduling interval between normal table maintenance runs.
 
 <summary>
 
-snapshot\_expiration: optional object {max\_snapshot\_age, min\_snapshots\_to\_keep, state, 2 more }
+snapshot\_expiration: optional object { max\_snapshot\_age, min\_snapshots\_to\_keep, state, 2 more }
 
 </summary>
 
@@ -434,7 +434,7 @@ minimum1
 
 <summary>
 
-state: "enabled"or "disabled"
+state: "enabled" or "disabled"
 
 Specifies the state of maintenance operations.
 
@@ -466,7 +466,7 @@ formatdate-time
 
 <summary>
 
-next\_eligible\_reason: optional "disabled"or "held\_after\_user\_error"or "running"or 2 more
+next\_eligible\_reason: optional "disabled" or "held\_after\_user\_error" or "running" or 2 more
 
 Why the operation is not eligible to run before next\_eligible\_at. Returned by the per-table GET only, and absent from the update response. <code>held_after_user_error</code> means a customer-caused failure holds the lease until it expires.
 

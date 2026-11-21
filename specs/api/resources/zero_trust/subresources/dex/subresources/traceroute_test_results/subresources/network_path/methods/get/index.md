@@ -98,7 +98,7 @@ maxLength36
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -120,7 +120,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -140,7 +140,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -162,7 +162,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -188,7 +188,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {hops, resultId, colo, 6 more }
+result: optional object { hops, resultId, colo, 6 more }
 
 </summary>
 
@@ -196,7 +196,7 @@ result: optional object {hops, resultId, colo, 6 more }
 
 <summary>
 
-hops: array of object {ttl, asn, aso, 6 more }
+hops: array of object { ttl, asn, aso, 6 more }
 
 An array of the hops taken by the device to reach the end destination.
 
@@ -222,7 +222,7 @@ ipAddress: optional string
 
 <summary>
 
-location: optional object {city, state, zip }
+location: optional object { city, state, zip }
 
 </summary>
 
@@ -246,7 +246,7 @@ zip: optional string
 
 <summary>
 
-mile: optional "client-to-app"or "client-to-cf-egress"or "client-to-cf-ingress"or "client-to-isp"
+mile: optional "client-to-app" or "client-to-cf-egress" or "client-to-cf-ingress" or "client-to-isp"
 
 </summary>
 
@@ -314,7 +314,7 @@ Name of the device associated with this network path response.
 
 <summary>
 
-execution\_context: optional "EXECUTION\_CONTEXT\_INVALID"or "OUT\_OF\_TUNNEL"or "IN\_TUNNEL"
+execution\_context: optional "EXECUTION\_CONTEXT\_INVALID" or "OUT\_OF\_TUNNEL" or "IN\_TUNNEL"
 
 Whether the test was run inside or outside of the WARP tunnel.
 

@@ -32,7 +32,7 @@ GET/accounts/{account\_id}/dex/devices/{device\_id}/isps
 
 <summary>
 
-ISPs object {isps }
+ISPs object { isps }
 
 </summary>
 
@@ -40,7 +40,7 @@ ISPs object {isps }
 
 <summary>
 
-isps: array of object {test\_id, test\_result\_id, time\_start, ip }
+isps: array of object { test\_id, test\_result\_id, time\_start, ip }
 
 </summary>
 
@@ -68,7 +68,7 @@ formatdate-time
 
 <summary>
 
-ip: optional object {address, asn, aso, 4 more }
+ip: optional object { address, asn, aso, 4 more }
 
 IP address information for the ISP hop. Fields marked as PII-gated (<code>name</code>, <code>address</code>, <code>netmask</code>, and all <code>location</code> sub-fields) will be returned as the literal string <code>"REDACTED"</code> for callers that do not have the PII permission. <code>asn</code>, <code>aso</code>, and <code>version</code> are always returned regardless of PII access.
 
@@ -96,7 +96,7 @@ Autonomous System Organization name.
 
 <summary>
 
-location: optional object {city, country\_iso, state\_iso, zip }
+location: optional object { city, country\_iso, state\_iso, zip }
 
 Geographic location information. All fields are returned as the literal string <code>"REDACTED"</code> for callers that do not have the PII permission.
 

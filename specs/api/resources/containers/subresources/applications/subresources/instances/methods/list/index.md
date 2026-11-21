@@ -100,7 +100,7 @@ minimum1
 
 <summary>
 
-state: optional "active"or "not-active"
+state: optional "active" or "not-active"
 
 Filters instances by lifecycle state. <code>active</code> includes provisioning, running, and stopping instances; <code>not-active</code> includes stopped and failed instances. When omitted, all instances are returned.
 
@@ -126,7 +126,7 @@ One of the following:
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -148,7 +148,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -168,7 +168,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -190,7 +190,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -210,7 +210,7 @@ pointer: optional string
 
 <summary>
 
-result: array of object {id, application\_id, image, 5 more }
+result: array of object { id, application\_id, image, 5 more }
 
 Container instances belonging to an application.
 
@@ -242,7 +242,7 @@ The image for the current container placement, when one is available.
 
 <summary>
 
-status: object {state, updated\_at, exit\_code }
+status: object { state, updated\_at, exit\_code }
 
 The latest known status of a container instance.
 
@@ -252,7 +252,7 @@ The latest known status of a container instance.
 
 <summary>
 
-state: "provisioning"or "running"or "failed"or 5 more
+state: "provisioning" or "running" or "failed" or 5 more
 
 The current lifecycle state of a container instance.
 
@@ -316,7 +316,7 @@ The process exit code, when the runtime reports one.
 
 <summary>
 
-configuration: optional object {disk, memory, vcpu }
+configuration: optional object { disk, memory, vcpu }
 
 The resources allocated to the container instance.
 
@@ -356,7 +356,7 @@ minimum0
 
 <summary>
 
-location: optional object {name, region }
+location: optional object { name, region }
 
 The location of the instance’s current container placement.
 
@@ -398,7 +398,7 @@ The time at which the current container placement started, when one exists.
 
 <summary>
 
-result\_info: object {next\_page\_token, page\_token, per\_page }
+result\_info: object { next\_page\_token, page\_token, per\_page }
 
 Cursor pagination details for a v4 API list response.
 

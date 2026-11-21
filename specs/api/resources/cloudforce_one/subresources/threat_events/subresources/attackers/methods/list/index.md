@@ -60,7 +60,7 @@ Array of dataset IDs to query attackers from. If not provided, uses the default 
 
 <summary>
 
-items: object {type }
+items: object { type }
 
 </summary>
 

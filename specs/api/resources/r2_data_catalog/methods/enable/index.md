@@ -82,7 +82,7 @@ minLength3
 
 <summary>
 
-credential: optional object {token }
+credential: optional object { token }
 
 Contains request to store catalog credentials.
 
@@ -104,7 +104,7 @@ Provides the Cloudflare API token for accessing R2.
 
 <summary>
 
-errors: array of object {code, message }
+errors: array of object { code, message }
 
 Contains errors if the API call was unsuccessful.
 
@@ -130,7 +130,7 @@ Describes the error.
 
 <summary>
 
-messages: array of object {code, message }
+messages: array of object { code, message }
 
 Contains informational messages.
 
@@ -162,7 +162,7 @@ Indicates whether the API call was successful.
 
 <summary>
 
-result: optional object {id, name, catalog\_uri }
+result: optional object { id, name, catalog\_uri }
 
 Contains response from activating an R2 bucket as a catalog.
 

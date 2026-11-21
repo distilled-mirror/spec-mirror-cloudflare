@@ -32,7 +32,7 @@ POST/accounts/{account\_id}/cloudforce-one/binary
 
 <summary>
 
-BinaryStorageCreateResponse object {content\_type, md5, sha1, sha256 }
+BinaryStorageCreateResponse object { content\_type, md5, sha1, sha256 }
 
 </summary>
 

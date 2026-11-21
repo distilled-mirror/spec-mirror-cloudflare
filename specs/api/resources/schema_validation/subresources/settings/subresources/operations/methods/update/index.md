@@ -84,7 +84,7 @@ maxLength36
 
 <summary>
 
-mitigation\_action: "log"or "block"or "none"
+mitigation\_action: "log" or "block" or "none"
 
 When set, this applies a mitigation action to this operation
 
@@ -141,7 +141,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -183,7 +183,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -203,7 +203,7 @@ pointer: optional string
 
 <summary>
 
-result: object {mitigation\_action, operation\_id }
+result: object { mitigation\_action, operation\_id }
 
 </summary>
 
@@ -211,7 +211,7 @@ result: object {mitigation\_action, operation\_id }
 
 <summary>
 
-mitigation\_action: "log"or "block"or "none"
+mitigation\_action: "log" or "block" or "none"
 
 When set, this applies a mitigation action to this operation which supersedes a global schema validation setting just for this operation
 

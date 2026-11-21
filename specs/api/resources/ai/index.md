@@ -26,7 +26,7 @@ POST/accounts/{account\_id}/ai/run/{model\_name}
 
 <summary>
 
-AIRunResponse = array of object {label, score } or stringor object {audio } or 12 more
+AIRunResponse = array of object { label, score } or string or object { audio } or 12 more
 
 An array of classification results for the input text
 
@@ -38,7 +38,7 @@ One of the following:
 
 <summary>
 
-TextClassification = array of object {label, score }
+TextClassification = array of object { label, score }
 
 An array of classification results for the input text
 
@@ -70,7 +70,7 @@ The generated image in PNG format
 
 <summary>
 
-Audio object {audio }
+Audio object { audio }
 
 </summary>
 
@@ -94,7 +94,7 @@ The generated audio in MP3 format
 
 <summary>
 
-TextEmbeddings object {data, shape }
+TextEmbeddings object { data, shape }
 
 </summary>
 
@@ -116,7 +116,7 @@ shape: optional array of number
 
 <summary>
 
-AutomaticSpeechRecognition object {text, vtt, word\_count, words }
+AutomaticSpeechRecognition object { text, vtt, word\_count, words }
 
 </summary>
 
@@ -138,7 +138,7 @@ word\_count: optional number
 
 <summary>
 
-words: optional array of object {end, start, word }
+words: optional array of object { end, start, word }
 
 </summary>
 
@@ -170,7 +170,7 @@ word: optional string
 
 <summary>
 
-ImageClassification = array of object {label, score }
+ImageClassification = array of object { label, score }
 
 </summary>
 
@@ -194,7 +194,7 @@ A confidence value, between 0 and 1, indicating how certain the model is about t
 
 <summary>
 
-ObjectDetection = array of object {box, label, score }
+ObjectDetection = array of object { box, label, score }
 
 An array of detected objects within the input image
 
@@ -204,7 +204,7 @@ An array of detected objects within the input image
 
 <summary>
 
-box: optional object {xmax, xmin, ymax, ymin }
+box: optional object { xmax, xmin, ymax, ymin }
 
 Coordinates defining the bounding box around the detected object
 
@@ -258,7 +258,7 @@ Confidence score indicating the likelihood that the detection is correct
 
 <summary>
 
-object {response, tool\_calls, usage }
+object { response, tool\_calls, usage }
 
 </summary>
 
@@ -272,7 +272,7 @@ The generated text response from the model
 
 <summary>
 
-tool\_calls: optional array of object {arguments, name }
+tool\_calls: optional array of object { arguments, name }
 
 An array of tool calls requests made during the response generation
 
@@ -298,7 +298,7 @@ The name of the tool to be called
 
 <summary>
 
-usage: optional object {completion\_tokens, prompt\_tokens, total\_tokens }
+usage: optional object { completion\_tokens, prompt\_tokens, total\_tokens }
 
 Usage statistics for the inference request
 
@@ -338,7 +338,7 @@ string
 
 <summary>
 
-Translation object {translated\_text }
+Translation object { translated\_text }
 
 </summary>
 
@@ -356,7 +356,7 @@ The translated text in the target language
 
 <summary>
 
-Summarization object {summary }
+Summarization object { summary }
 
 </summary>
 
@@ -374,7 +374,7 @@ The summarized version of the input text
 
 <summary>
 
-ImageToText object {description }
+ImageToText object { description }
 
 </summary>
 
@@ -390,7 +390,7 @@ description: optional string
 
 <summary>
 
-ImageTextToText object {description }
+ImageTextToText object { description }
 
 </summary>
 
@@ -406,7 +406,7 @@ description: optional string
 
 <summary>
 
-MultimodalEmbeddings object {data, shape }
+MultimodalEmbeddings object { data, shape }
 
 </summary>
 
@@ -442,7 +442,7 @@ POST/accounts/{account\_id}/ai/finetunes
 
 <summary>
 
-FinetuneListResponse object {id, created\_at, model, 3 more }
+FinetuneListResponse object { id, created\_at, model, 3 more }
 
 </summary>
 
@@ -484,7 +484,7 @@ description: optional string
 
 <summary>
 
-FinetuneCreateResponse object {id, created\_at, model, 4 more }
+FinetuneCreateResponse object { id, created\_at, model, 4 more }
 
 </summary>
 
@@ -538,7 +538,7 @@ POST/accounts/{account\_id}/ai/finetunes/{finetune\_id}/finetune-assets
 
 <summary>
 
-AssetCreateResponse object {success }
+AssetCreateResponse object { success }
 
 </summary>
 
@@ -562,7 +562,7 @@ GET/accounts/{account\_id}/ai/finetunes/public
 
 <summary>
 
-PublicListResponse object {id, created\_at, model, 4 more }
+PublicListResponse object { id, created\_at, model, 4 more }
 
 </summary>
 
@@ -652,7 +652,7 @@ GET/accounts/{account\_id}/ai/models/schema
 
 <summary>
 
-SchemaGetResponse object {input, output }
+SchemaGetResponse object { input, output }
 
 </summary>
 
@@ -660,7 +660,7 @@ SchemaGetResponse object {input, output }
 
 <summary>
 
-input: object {additionalProperties, description, type }
+input: object { additionalProperties, description, type }
 
 </summary>
 
@@ -684,7 +684,7 @@ type: string
 
 <summary>
 
-output: object {additionalProperties, description, type }
+output: object { additionalProperties, description, type }
 
 </summary>
 
@@ -724,7 +724,7 @@ GET/accounts/{account\_id}/ai/tomarkdown/supported
 
 <summary>
 
-ToMarkdownTransformResponse object {data, format, mimeType, 2 more }
+ToMarkdownTransformResponse object { data, format, mimeType, 2 more }
 
 </summary>
 
@@ -756,7 +756,7 @@ tokens: string
 
 <summary>
 
-ToMarkdownSupportedResponse object {extension, mimeType }
+ToMarkdownSupportedResponse object { extension, mimeType }
 
 </summary>
 

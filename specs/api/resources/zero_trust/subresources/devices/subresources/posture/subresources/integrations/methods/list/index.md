@@ -92,7 +92,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -134,7 +134,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -170,7 +170,7 @@ maxLength36
 
 <summary>
 
-config: optional object {api\_url, auth\_url, client\_id }
+config: optional object { api\_url, auth\_url, client\_id }
 
 The configuration object containing third-party integration information.
 
@@ -214,7 +214,7 @@ The name of the device posture integration.
 
 <summary>
 
-type: optional "workspace\_one"or "crowdstrike\_s2s"or "uptycs"or 5 more
+type: optional "workspace\_one" or "crowdstrike\_s2s" or "uptycs" or 5 more
 
 The type of device posture integration.
 
@@ -272,7 +272,7 @@ Whether the API call was successful.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object { count, page, per\_page, total\_count }
 
 </summary>
 

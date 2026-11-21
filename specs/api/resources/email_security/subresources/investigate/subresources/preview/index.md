@@ -34,7 +34,7 @@ POST/accounts/{account\_id}/email-security/investigate/preview
 
 <summary>
 
-PreviewGetResponse object {screenshot }
+PreviewGetResponse object { screenshot }
 
 </summary>
 
@@ -52,7 +52,7 @@ A base64 encoded PNG image of the email.
 
 <summary>
 
-PreviewCreateResponse object {screenshot }
+PreviewCreateResponse object { screenshot }
 
 </summary>
 

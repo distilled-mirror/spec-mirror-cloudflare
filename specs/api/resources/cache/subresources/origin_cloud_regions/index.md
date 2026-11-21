@@ -100,7 +100,7 @@ GET/zones/{zone\_id}/cache/origin\_cloud\_regions/supported\_regions
 
 <summary>
 
-OriginCloudRegionListResponse object {origin\_ip, region, vendor, modified\_on }
+OriginCloudRegionListResponse object { origin\_ip, region, vendor, modified\_on }
 
 A single origin IP-to-cloud-region mapping.
 
@@ -122,7 +122,7 @@ Cloud vendor region identifier.
 
 <summary>
 
-vendor: "aws"or "azure"or "gcp"or "oci"
+vendor: "aws" or "azure" or "gcp" or "oci"
 
 Cloud vendor hosting the origin.
 
@@ -166,7 +166,7 @@ formatdate-time
 
 <summary>
 
-OriginCloudRegionGetResponse object {origin\_ip, region, vendor, modified\_on }
+OriginCloudRegionGetResponse object { origin\_ip, region, vendor, modified\_on }
 
 A single origin IP-to-cloud-region mapping.
 
@@ -188,7 +188,7 @@ Cloud vendor region identifier.
 
 <summary>
 
-vendor: "aws"or "azure"or "gcp"or "oci"
+vendor: "aws" or "azure" or "gcp" or "oci"
 
 Cloud vendor hosting the origin.
 
@@ -232,7 +232,7 @@ formatdate-time
 
 <summary>
 
-OriginCloudRegionUpdateResponse object {origin\_ip, region, vendor, modified\_on }
+OriginCloudRegionUpdateResponse object { origin\_ip, region, vendor, modified\_on }
 
 A single origin IP-to-cloud-region mapping.
 
@@ -254,7 +254,7 @@ Cloud vendor region identifier.
 
 <summary>
 
-vendor: "aws"or "azure"or "gcp"or "oci"
+vendor: "aws" or "azure" or "gcp" or "oci"
 
 Cloud vendor hosting the origin.
 
@@ -298,7 +298,7 @@ formatdate-time
 
 <summary>
 
-OriginCloudRegionDeleteResponse object {origin\_ip }
+OriginCloudRegionDeleteResponse object { origin\_ip }
 
 Response result for a delete operation. Identifies the deleted mapping.
 
@@ -318,7 +318,7 @@ The origin IP address whose mapping was deleted.
 
 <summary>
 
-OriginCloudRegionBulkUpdateResponse object {failed, succeeded }
+OriginCloudRegionBulkUpdateResponse object { failed, succeeded }
 
 Response result for a batch origin cloud region operation.
 
@@ -328,7 +328,7 @@ Response result for a batch origin cloud region operation.
 
 <summary>
 
-failed: array of object {origin\_ip, error, region, vendor }
+failed: array of object { origin\_ip, error, region, vendor }
 
 Items that could not be applied, with error details.
 
@@ -366,7 +366,7 @@ Cloud vendor identifier. Present on succeeded items (the new value for upsert, t
 
 <summary>
 
-succeeded: array of object {origin\_ip, error, region, vendor }
+succeeded: array of object { origin\_ip, error, region, vendor }
 
 Items that were successfully applied.
 
@@ -408,7 +408,7 @@ Cloud vendor identifier. Present on succeeded items (the new value for upsert, t
 
 <summary>
 
-OriginCloudRegionBulkDeleteResponse object {failed, succeeded }
+OriginCloudRegionBulkDeleteResponse object { failed, succeeded }
 
 Response result for a batch origin cloud region operation.
 
@@ -418,7 +418,7 @@ Response result for a batch origin cloud region operation.
 
 <summary>
 
-failed: array of object {origin\_ip, error, region, vendor }
+failed: array of object { origin\_ip, error, region, vendor }
 
 Items that could not be applied, with error details.
 
@@ -456,7 +456,7 @@ Cloud vendor identifier. Present on succeeded items (the new value for upsert, t
 
 <summary>
 
-succeeded: array of object {origin\_ip, error, region, vendor }
+succeeded: array of object { origin\_ip, error, region, vendor }
 
 Items that were successfully applied.
 
@@ -498,7 +498,7 @@ Cloud vendor identifier. Present on succeeded items (the new value for upsert, t
 
 <summary>
 
-OriginCloudRegionSupportedRegionsResponse object {obtained\_codes, vendors }
+OriginCloudRegionSupportedRegionsResponse object { obtained\_codes, vendors }
 
 Cloud vendors and their supported regions for origin cloud region mappings.
 
@@ -514,7 +514,7 @@ Whether Cloudflare airport codes (IATA colo identifiers) were successfully resol
 
 <summary>
 
-vendors: map\[array of object {name, upper\_tier\_colos } ]
+vendors: map\[array of object { name, upper\_tier\_colos } ]
 
 Map of vendor name to list of supported regions.
 
@@ -544,7 +544,7 @@ Cloudflare Tiered Cache upper-tier colocation codes co-located with this cloud r
 
 <summary>
 
-OriginCloudRegionListV1Response object {id, editable, value, modified\_on }
+OriginCloudRegionListV1Response object { id, editable, value, modified\_on }
 
 Response result for a list of origin cloud region mappings.
 
@@ -564,7 +564,7 @@ Whether the setting can be modified by the current user.
 
 <summary>
 
-value: array of object {"origin-ip", region, vendor, modified\_on }
+value: array of object { "origin-ip", region, vendor, modified\_on }
 
 </summary>
 
@@ -584,7 +584,7 @@ Cloud vendor region identifier.
 
 <summary>
 
-vendor: "aws"or "azure"or "gcp"or "oci"
+vendor: "aws" or "azure" or "gcp" or "oci"
 
 Cloud vendor hosting the origin.
 
@@ -640,7 +640,7 @@ formatdate-time
 
 <summary>
 
-OriginCloudRegionCreateV1Response object {id, editable, value, modified\_on }
+OriginCloudRegionCreateV1Response object { id, editable, value, modified\_on }
 
 Response result for a single origin cloud region mapping.
 
@@ -660,7 +660,7 @@ Whether the setting can be modified by the current user.
 
 <summary>
 
-value: object {"origin-ip", region, vendor, modified\_on }
+value: object { "origin-ip", region, vendor, modified\_on }
 
 A single origin IP-to-cloud-region mapping.
 
@@ -682,7 +682,7 @@ Cloud vendor region identifier.
 
 <summary>
 
-vendor: "aws"or "azure"or "gcp"or "oci"
+vendor: "aws" or "azure" or "gcp" or "oci"
 
 Cloud vendor hosting the origin.
 
@@ -738,7 +738,7 @@ formatdate-time
 
 <summary>
 
-OriginCloudRegionEditV1Response object {id, editable, value, modified\_on }
+OriginCloudRegionEditV1Response object { id, editable, value, modified\_on }
 
 Response result for a list of origin cloud region mappings.
 
@@ -758,7 +758,7 @@ Whether the setting can be modified by the current user.
 
 <summary>
 
-value: array of object {"origin-ip", region, vendor, modified\_on }
+value: array of object { "origin-ip", region, vendor, modified\_on }
 
 </summary>
 
@@ -778,7 +778,7 @@ Cloud vendor region identifier.
 
 <summary>
 
-vendor: "aws"or "azure"or "gcp"or "oci"
+vendor: "aws" or "azure" or "gcp" or "oci"
 
 Cloud vendor hosting the origin.
 
@@ -834,7 +834,7 @@ formatdate-time
 
 <summary>
 
-OriginCloudRegionGetV1Response object {id, editable, value, modified\_on }
+OriginCloudRegionGetV1Response object { id, editable, value, modified\_on }
 
 Response result for a single origin cloud region mapping.
 
@@ -854,7 +854,7 @@ Whether the setting can be modified by the current user.
 
 <summary>
 
-value: object {"origin-ip", region, vendor, modified\_on }
+value: object { "origin-ip", region, vendor, modified\_on }
 
 A single origin IP-to-cloud-region mapping.
 
@@ -876,7 +876,7 @@ Cloud vendor region identifier.
 
 <summary>
 
-vendor: "aws"or "azure"or "gcp"or "oci"
+vendor: "aws" or "azure" or "gcp" or "oci"
 
 Cloud vendor hosting the origin.
 
@@ -932,7 +932,7 @@ formatdate-time
 
 <summary>
 
-OriginCloudRegionDeleteV1Response object {id, editable, value, modified\_on }
+OriginCloudRegionDeleteV1Response object { id, editable, value, modified\_on }
 
 Response result for a single origin cloud region mapping.
 
@@ -952,7 +952,7 @@ Whether the setting can be modified by the current user.
 
 <summary>
 
-value: object {"origin-ip", region, vendor, modified\_on }
+value: object { "origin-ip", region, vendor, modified\_on }
 
 A single origin IP-to-cloud-region mapping.
 
@@ -974,7 +974,7 @@ Cloud vendor region identifier.
 
 <summary>
 
-vendor: "aws"or "azure"or "gcp"or "oci"
+vendor: "aws" or "azure" or "gcp" or "oci"
 
 Cloud vendor hosting the origin.
 
@@ -1030,7 +1030,7 @@ formatdate-time
 
 <summary>
 
-OriginCloudRegionBulkEditV1Response object {id, editable, value, modified\_on }
+OriginCloudRegionBulkEditV1Response object { id, editable, value, modified\_on }
 
 Response result for a batch origin cloud region operation.
 
@@ -1050,7 +1050,7 @@ Whether the setting can be modified by the current user.
 
 <summary>
 
-value: object {failed, succeeded }
+value: object { failed, succeeded }
 
 </summary>
 
@@ -1058,7 +1058,7 @@ value: object {failed, succeeded }
 
 <summary>
 
-failed: array of object {"origin-ip", error, region, vendor }
+failed: array of object { "origin-ip", error, region, vendor }
 
 Items that could not be applied, with error details.
 
@@ -1096,7 +1096,7 @@ Cloud vendor identifier. Present on succeeded items for patch operations.
 
 <summary>
 
-succeeded: array of object {"origin-ip", error, region, vendor }
+succeeded: array of object { "origin-ip", error, region, vendor }
 
 Items that were successfully applied.
 
@@ -1150,7 +1150,7 @@ formatdate-time
 
 <summary>
 
-OriginCloudRegionBulkDeleteV1Response object {id, editable, value, modified\_on }
+OriginCloudRegionBulkDeleteV1Response object { id, editable, value, modified\_on }
 
 Response result for a batch origin cloud region operation.
 
@@ -1170,7 +1170,7 @@ Whether the setting can be modified by the current user.
 
 <summary>
 
-value: object {failed, succeeded }
+value: object { failed, succeeded }
 
 </summary>
 
@@ -1178,7 +1178,7 @@ value: object {failed, succeeded }
 
 <summary>
 
-failed: array of object {"origin-ip", error, region, vendor }
+failed: array of object { "origin-ip", error, region, vendor }
 
 Items that could not be applied, with error details.
 
@@ -1216,7 +1216,7 @@ Cloud vendor identifier. Present on succeeded items for patch operations.
 
 <summary>
 
-succeeded: array of object {"origin-ip", error, region, vendor }
+succeeded: array of object { "origin-ip", error, region, vendor }
 
 Items that were successfully applied.
 
@@ -1270,7 +1270,7 @@ formatdate-time
 
 <summary>
 
-OriginCloudRegionSupportedRegionsV1Response object {obtained\_codes, vendors }
+OriginCloudRegionSupportedRegionsV1Response object { obtained\_codes, vendors }
 
 Cloud vendors and their supported regions for origin cloud region mappings.
 
@@ -1286,7 +1286,7 @@ Whether Cloudflare airport codes (IATA colo identifiers) were successfully resol
 
 <summary>
 
-vendors: map\[array of object {name, upper\_tier\_colos } ]
+vendors: map\[array of object { name, upper\_tier\_colos } ]
 
 Map of vendor name to list of supported regions.
 

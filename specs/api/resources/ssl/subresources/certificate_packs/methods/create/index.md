@@ -74,7 +74,7 @@ maxLength32
 
 <summary>
 
-certificate\_authority: "google"or "lets\_encrypt"or "ssl\_com"
+certificate\_authority: "google" or "lets\_encrypt" or "ssl\_com"
 
 Certificate Authority selected for the order. For information on any certificate authority specific details or restrictions <a href="https://developers.cloudflare.com/ssl/reference/certificate-authorities">see this page for more details</a>.
 
@@ -114,7 +114,7 @@ Type of certificate pack.
 
 <summary>
 
-validation\_method: "txt"or "http"or "email"
+validation\_method: "txt" or "http" or "email"
 
 Validation Method selected for the order.
 
@@ -142,7 +142,7 @@ One of the following:
 
 <summary>
 
-validity\_days: 14or 30or 90or 365
+validity\_days: 14 or 30 or 90 or 365
 
 Validity Days selected for the order.
 
@@ -182,7 +182,7 @@ Whether or not to add Cloudflare Branding for the order. This will add a subdoma
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -204,7 +204,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -224,7 +224,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -246,7 +246,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -272,7 +272,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, hosts, status, 4 more }
+result: optional object { id, hosts, status, 4 more }
 
 A newly ordered certificate pack. Certificates are not included until they are issued; get the certificate pack to retrieve them.
 
@@ -394,7 +394,7 @@ One of the following:
 
 <summary>
 
-type: "mh\_custom"or "managed\_hostname"or "sni\_custom"or 5 more
+type: "mh\_custom" or "managed\_hostname" or "sni\_custom" or 5 more
 
 Type of certificate pack.
 
@@ -442,7 +442,7 @@ One of the following:
 
 <summary>
 
-certificate\_authority: optional "google"or "lets\_encrypt"or "ssl\_com"
+certificate\_authority: optional "google" or "lets\_encrypt" or "ssl\_com"
 
 Certificate Authority selected for the order. For information on any certificate authority specific details or restrictions <a href="https://developers.cloudflare.com/ssl/reference/certificate-authorities">see this page for more details</a>.
 
@@ -470,7 +470,7 @@ One of the following:
 
 <summary>
 
-validation\_method: optional "txt"or "http"or "email"
+validation\_method: optional "txt" or "http" or "email"
 
 Validation Method selected for the order.
 
@@ -498,7 +498,7 @@ One of the following:
 
 <summary>
 
-validity\_days: optional 14or 30or 90or 365
+validity\_days: optional 14 or 30 or 90 or 365
 
 Validity Days selected for the order.
 

@@ -28,7 +28,7 @@ GET/zones/{zone\_id}/spectrum/protocols
 
 <summary>
 
-ProtocolListResponse object {description, name, ports, transport }
+ProtocolListResponse object { description, name, ports, transport }
 
 </summary>
 

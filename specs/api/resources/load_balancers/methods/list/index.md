@@ -98,7 +98,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -140,7 +140,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -236,7 +236,7 @@ Controls location-based steering for non-proxied requests. See <code>steering_po
 
 <summary>
 
-mode: optional "pop"or "resolver\_ip"
+mode: optional "pop" or "resolver\_ip"
 
 Determines the authoritative location when ECS is not preferred, does not exist in the request, or its GeoIP lookup is unsuccessful.
 
@@ -263,7 +263,7 @@ One of the following:
 
 <summary>
 
-prefer\_ecs: optional "always"or "never"or "proximity"or "geo"
+prefer\_ecs: optional "always" or "never" or "proximity" or "geo"
 
 Whether the EDNS Client Subnet (ECS) GeoIP should be preferred as the authoritative location.
 
@@ -320,7 +320,7 @@ List of networks where Load Balancer or Pool is enabled.
 
 <summary>
 
-pool\_sets: optional array of object {disabled, fixed\_response, match, 2 more }
+pool\_sets: optional array of object { disabled, fixed\_response, match, 2 more }
 
 An optional list of pool sets, evaluated in array order with first match wins. Pool sets are independent from the standard steering fields (<code>region_pools</code> / <code>country_pools</code> / <code>pop_pools</code> / <code>default_pools</code> / <code>steering_policy</code> / <code>random_steering</code> / <code>fallback_pool</code> / <code>rules</code>). On a PATCH, an empty array (<code>pool_sets: []</code>) clears all pool sets, while omitting the field leaves existing pool sets unchanged.
 
@@ -336,7 +336,7 @@ Disable this specific pool set. It will no longer be evaluated.
 
 <summary>
 
-fixed\_response: optional object {content\_type, location, message\_body, status\_code }
+fixed\_response: optional object { content\_type, location, message\_body, status\_code }
 
 A collection of fields used to directly respond to the client instead of routing to a pool. When supplied on a rule, that rule stops further rule evaluation.
 
@@ -380,7 +380,7 @@ The http status code to respond with.
 
 <summary>
 
-match: optional object {default, topology }
+match: optional object { default, topology }
 
 Determines which requests a pool set applies to. Set <code>topology</code> to match by location or <code>default: true</code> to match all requests; the two are mutually exclusive. A pool set with no <code>match</code> matches all requests.
 
@@ -396,7 +396,7 @@ When true, matches every request. Cannot be combined with <code>topology</code>.
 
 <summary>
 
-topology: optional object {countries, pops, regions }
+topology: optional object { countries, pops, regions }
 
 Matches requests by location. Set any combination of <code>pops</code>, <code>countries</code>, and <code>regions</code> (at least one is required); a request matches when its value appears in any populated list (e.g. <code>regions: ["WNAM"]</code> with <code>countries: ["US"]</code> matches a request in either WNAM or the US).
 
@@ -440,7 +440,7 @@ maxLength200
 
 <summary>
 
-overrides: optional object {fallback\_pool, pool\_default\_weight, pool\_weights, 2 more }
+overrides: optional object { fallback\_pool, pool\_default\_weight, pool\_weights, 2 more }
 
 The behavior a pool set applies when its <code>match</code> succeeds. A strict subset of a rule’s <code>overrides</code>: a pool set replaces the topology wholesale with a flat pool list (<code>pools</code>), so only the declarative pool-routing fields plus <code>fallback_pool</code> and <code>steering_policy</code> are settable. All fields are optional.
 
@@ -621,7 +621,7 @@ Disable this specific rule. It will no longer be evaluated by this load balancer
 
 <summary>
 
-fixed\_response: optional object {content\_type, location, message\_body, status\_code }
+fixed\_response: optional object { content\_type, location, message\_body, status\_code }
 
 A collection of fields used to directly respond to the client instead of routing to a pool. When supplied on a rule, that rule stops further rule evaluation.
 
@@ -673,7 +673,7 @@ maxLength200
 
 <summary>
 
-overrides: optional object {adaptive\_routing, country\_pools, default\_pools, 13 more }
+overrides: optional object { adaptive\_routing, country\_pools, default\_pools, 13 more }
 
 A collection of overrides to apply when this rule’s condition (or a pool set’s <code>match</code>) is true. All fields are optional.
 
@@ -731,7 +731,7 @@ Controls location-based steering for non-proxied requests. See <code>steering_po
 
 <summary>
 
-mode: optional "pop"or "resolver\_ip"
+mode: optional "pop" or "resolver\_ip"
 
 Determines the authoritative location when ECS is not preferred, does not exist in the request, or its GeoIP lookup is unsuccessful.
 
@@ -758,7 +758,7 @@ One of the following:
 
 <summary>
 
-prefer\_ecs: optional "always"or "never"or "proximity"or "geo"
+prefer\_ecs: optional "always" or "never" or "proximity" or "geo"
 
 Whether the EDNS Client Subnet (ECS) GeoIP should be preferred as the authoritative location.
 
@@ -829,7 +829,7 @@ Enterprise only: A mapping of Cloudflare PoP identifiers to a list of pool IDs (
 
 <summary>
 
-random\_steering: optional object {default\_weight, pool\_weights }
+random\_steering: optional object { default\_weight, pool\_weights }
 
 Configures pool weights for a rule override. An omitted default\_weight inherits the load balancer’s default weight.
 
@@ -931,7 +931,7 @@ When header <code>session_affinity</code> is enabled, this option can be used to
 
 <summary>
 
-samesite: optional "Auto"or "Lax"or "None"or "Strict"
+samesite: optional "Auto" or "Lax" or "None" or "Strict"
 
 Configures the SameSite attribute on session affinity cookie. Value “Auto” will be translated to “Lax” or “None” depending if Always Use HTTPS is enabled. Note: when using value “None”, the secure attribute can not be set to “Never”.
 
@@ -963,7 +963,7 @@ One of the following:
 
 <summary>
 
-secure: optional "Auto"or "Always"or "Never"
+secure: optional "Auto" or "Always" or "Never"
 
 Configures the Secure attribute on session affinity cookie. Value “Always” indicates the Secure attribute will be set in the Set-Cookie header, “Never” indicates the Secure attribute will not be set, and “Auto” will set the Secure attribute depending if Always Use HTTPS is enabled.
 
@@ -991,7 +991,7 @@ One of the following:
 
 <summary>
 
-zero\_downtime\_failover: optional "none"or "temporary"or "sticky"
+zero\_downtime\_failover: optional "none" or "temporary" or "sticky"
 
 Configures the zero-downtime failover between origins within a pool when session affinity is enabled. This feature is currently incompatible with Argo, Tiered Cache, and Bandwidth Alliance. The supported values are: - <code>"none"</code>: No failover takes place for sessions pinned to the origin (default). - <code>"temporary"</code>: Traffic will be sent to another other healthy origin until the originally pinned origin is available; note that this can potentially result in heavy origin flapping. - <code>"sticky"</code>: The session affinity cookie is updated and subsequent requests are sent to the new origin. Note: Zero-downtime failover with sticky sessions is currently not supported for session affinity by header.
 
@@ -1174,7 +1174,7 @@ When header <code>session_affinity</code> is enabled, this option can be used to
 
 <summary>
 
-samesite: optional "Auto"or "Lax"or "None"or "Strict"
+samesite: optional "Auto" or "Lax" or "None" or "Strict"
 
 Configures the SameSite attribute on session affinity cookie. Value “Auto” will be translated to “Lax” or “None” depending if Always Use HTTPS is enabled. Note: when using value “None”, the secure attribute can not be set to “Never”.
 
@@ -1206,7 +1206,7 @@ One of the following:
 
 <summary>
 
-secure: optional "Auto"or "Always"or "Never"
+secure: optional "Auto" or "Always" or "Never"
 
 Configures the Secure attribute on session affinity cookie. Value “Always” indicates the Secure attribute will be set in the Set-Cookie header, “Never” indicates the Secure attribute will not be set, and “Auto” will set the Secure attribute depending if Always Use HTTPS is enabled.
 
@@ -1234,7 +1234,7 @@ One of the following:
 
 <summary>
 
-zero\_downtime\_failover: optional "none"or "temporary"or "sticky"
+zero\_downtime\_failover: optional "none" or "temporary" or "sticky"
 
 Configures the zero-downtime failover between origins within a pool when session affinity is enabled. This feature is currently incompatible with Argo, Tiered Cache, and Bandwidth Alliance. The supported values are: - <code>"none"</code>: No failover takes place for sessions pinned to the origin (default). - <code>"temporary"</code>: Traffic will be sent to another other healthy origin until the originally pinned origin is available; note that this can potentially result in heavy origin flapping. - <code>"sticky"</code>: The session affinity cookie is updated and subsequent requests are sent to the new origin. Note: Zero-downtime failover with sticky sessions is currently not supported for session affinity by header.
 
@@ -1349,7 +1349,7 @@ Whether the API call was successful.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

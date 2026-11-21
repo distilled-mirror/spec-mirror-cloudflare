@@ -96,7 +96,7 @@ Success status of the operation
 
 <summary>
 
-data: optional object {created\_at, custom\_participant\_id, preset\_id, updated\_at }
+data: optional object { created\_at, custom\_participant\_id, preset\_id, updated\_at }
 
 Data returned by the operation
 

@@ -32,7 +32,7 @@ GET/zones/{zone\_id}/dns\_analytics/report
 
 <summary>
 
-Report object {data, data\_lag, max, 4 more }
+Report object { data, data\_lag, max, 4 more }
 
 </summary>
 
@@ -40,7 +40,7 @@ Report object {data, data\_lag, max, 4 more }
 
 <summary>
 
-data: array of object {dimensions, metrics }
+data: array of object { dimensions, metrics }
 
 Array with one row per combination of dimension values.
 
@@ -86,7 +86,7 @@ Minimum results for each metric (object mapping metric names to values). Current
 
 <summary>
 
-query: object {dimensions, limit, metrics, 4 more }
+query: object { dimensions, limit, metrics, 4 more }
 
 </summary>
 
@@ -172,7 +172,7 @@ GET/zones/{zone\_id}/dns\_analytics/report/bytime
 
 <summary>
 
-ByTime object {data, data\_lag, max, 5 more }
+ByTime object { data, data\_lag, max, 5 more }
 
 </summary>
 
@@ -180,7 +180,7 @@ ByTime object {data, data\_lag, max, 5 more }
 
 <summary>
 
-data: array of object {dimensions, metrics }
+data: array of object { dimensions, metrics }
 
 Array with one row per combination of dimension values.
 
@@ -226,7 +226,7 @@ Minimum results for each metric (object mapping metric names to values). Current
 
 <summary>
 
-query: object {dimensions, limit, metrics, 5 more }
+query: object { dimensions, limit, metrics, 5 more }
 
 </summary>
 
@@ -260,7 +260,7 @@ formatdate-time
 
 <summary>
 
-time\_delta: "all"or "auto"or "year"or 7 more
+time\_delta: "all" or "auto" or "year" or 7 more
 
 Unit of time to group data by.
 

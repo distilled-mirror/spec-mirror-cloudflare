@@ -74,7 +74,7 @@ maxLength32
 
 <summary>
 
-direction: optional "asc"or "desc"
+direction: optional "asc" or "desc"
 
 The direction used to sort returned cookies.’
 
@@ -134,7 +134,7 @@ maxLength1024
 
 <summary>
 
-order\_by: optional "first\_seen\_at"or "last\_seen\_at"
+order\_by: optional "first\_seen\_at" or "last\_seen\_at"
 
 The field used to sort returned cookies.
 
@@ -192,7 +192,7 @@ minimum1
 
 <summary>
 
-same\_site: optional "lax"or "strict"or "none"
+same\_site: optional "lax" or "strict" or "none"
 
 Filters the returned cookies that match the specified same\_site attribute
 
@@ -226,7 +226,7 @@ Filters the returned cookies that are set with Secure
 
 <summary>
 
-type: optional "first\_party"or "unknown"
+type: optional "first\_party" or "unknown"
 
 Filters the returned cookies that match the specified type attribute
 
@@ -252,7 +252,7 @@ One of the following:
 
 <summary>
 
-result: array of object {id, first\_seen\_at, host, 11 more }
+result: array of object { id, first\_seen\_at, host, 11 more }
 
 </summary>
 
@@ -288,7 +288,7 @@ name: string
 
 <summary>
 
-type: "first\_party"or "unknown"
+type: "first\_party" or "unknown"
 
 </summary>
 
@@ -336,7 +336,7 @@ path\_attribute: optional string
 
 <summary>
 
-same\_site\_attribute: optional "lax"or "strict"or "none"
+same\_site\_attribute: optional "lax" or "strict" or "none"
 
 </summary>
 
@@ -370,7 +370,7 @@ secure\_attribute: optional boolean
 
 <summary>
 
-result\_info: object {count, page, per\_page, 2 more }
+result\_info: object { count, page, per\_page, 2 more }
 
 </summary>
 
@@ -440,7 +440,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -482,7 +482,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 

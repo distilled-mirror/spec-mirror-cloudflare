@@ -28,7 +28,7 @@ GET/accounts/{account\_id}/registrar-sandbox/registrations/{domain\_name}/regist
 
 <summary>
 
-RegistrationStatusGetResponse object {completed, created\_at, links, 4 more }
+RegistrationStatusGetResponse object { completed, created\_at, links, 4 more }
 
 Status of an async registration workflow.
 
@@ -50,7 +50,7 @@ formatdate-time
 
 <summary>
 
-links: object {self, resource }
+links: object { self, resource }
 
 </summary>
 
@@ -74,7 +74,7 @@ URL to the domain resource.
 
 <summary>
 
-state: "pending"or "in\_progress"or "action\_required"or 3 more
+state: "pending" or "in\_progress" or "action\_required" or 3 more
 
 Describes the workflow lifecycle state.
 
@@ -135,7 +135,7 @@ For domain-centric workflows, <code>context.domain_name</code> identifies the wo
 
 <summary>
 
-error: optional object {code, message }
+error: optional object { code, message }
 
 Provides error details when a workflow reaches the <code>failed</code> state. The workflow type (registration, update, etc.) and underlying registry response determine the specific codes and messages. Workflow error codes differ from immediate HTTP error <code>errors[].code</code> values in non-2xx responses. Surface <code>error.message</code> to the user for context.
 

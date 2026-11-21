@@ -76,7 +76,7 @@ Filters results by domain category.
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -118,7 +118,7 @@ Array of names used to label the series in the response.
 
 <summary>
 
-rankingType: optional "POPULAR"or "TRENDING\_RISE"or "TRENDING\_STEADY"
+rankingType: optional "POPULAR" or "TRENDING\_RISE" or "TRENDING\_STEADY"
 
 The ranking type.
 
@@ -148,7 +148,7 @@ One of the following:
 
 <summary>
 
-result: object {meta, top\_0 }
+result: object { meta, top\_0 }
 
 </summary>
 
@@ -156,7 +156,7 @@ result: object {meta, top\_0 }
 
 <summary>
 
-meta: object {confidenceInfo, dateRange, lastUpdated, 3 more }
+meta: object { confidenceInfo, dateRange, lastUpdated, 3 more }
 
 </summary>
 
@@ -164,7 +164,7 @@ meta: object {confidenceInfo, dateRange, lastUpdated, 3 more }
 
 <summary>
 
-confidenceInfo: object {annotations, level }
+confidenceInfo: object { annotations, level }
 
 </summary>
 
@@ -172,7 +172,7 @@ confidenceInfo: object {annotations, level }
 
 <summary>
 
-annotations: array of object {dataSource, description, endDate, 5 more }
+annotations: array of object { dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -180,7 +180,7 @@ annotations: array of object {dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
+dataSource: "ALL" or "AI\_BOTS" or "AI\_GATEWAY" or 22 more
 
 Data source for annotations.
 
@@ -306,7 +306,7 @@ formatdate-time
 
 <summary>
 
-eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
+eventType: "GENERAL" or "OUTAGE" or "PARTIAL\_PROJECTION" or 2 more
 
 Event type for annotations.
 
@@ -378,7 +378,7 @@ Provides an indication of how much confidence Cloudflare has in the data.
 
 <summary>
 
-dateRange: array of object {endTime, startTime }
+dateRange: array of object { endTime, startTime }
 
 </summary>
 
@@ -414,7 +414,7 @@ formatdate-time
 
 <summary>
 
-normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
+normalization: "PERCENTAGE" or "MIN0\_MAX" or "MIN\_MAX" or 5 more
 
 Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
@@ -462,7 +462,7 @@ One of the following:
 
 <summary>
 
-top\_0: object {date }
+top\_0: object { date }
 
 </summary>
 
@@ -480,7 +480,7 @@ formatdate
 
 <summary>
 
-units: array of object {name, value }
+units: array of object { name, value }
 
 Measurement units for the results.
 
@@ -506,7 +506,7 @@ value: string
 
 <summary>
 
-top\_0: array of object {categories, domain, rank, pctRankChange }
+top\_0: array of object { categories, domain, rank, pctRankChange }
 
 </summary>
 
@@ -514,7 +514,7 @@ top\_0: array of object {categories, domain, rank, pctRankChange }
 
 <summary>
 
-categories: array of object {id, name, superCategoryId }
+categories: array of object { id, name, superCategoryId }
 
 </summary>
 

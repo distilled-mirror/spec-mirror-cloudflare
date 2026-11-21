@@ -30,7 +30,7 @@ GET/accounts/{account\_id}/alerting/v3/destinations/eligible
 
 <summary>
 
-EligibleGetResponse = map\[array of object {eligible, ready, type } ]
+EligibleGetResponse = map\[array of object { eligible, ready, type } ]
 
 </summary>
 
@@ -50,7 +50,7 @@ Beta flag. Users can create a policy with a mechanism that is not ready, but we 
 
 <summary>
 
-type: optional "email"or "pagerduty"or "webhook"
+type: optional "email" or "pagerduty" or "webhook"
 
 Determines type of delivery mechanism.
 

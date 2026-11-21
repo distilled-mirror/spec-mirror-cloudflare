@@ -60,7 +60,7 @@ minLength3
 
 <summary>
 
-"cf-r2-jurisdiction": optional "default"or "eu"or "us"or 2 more
+"cf-r2-jurisdiction": optional "default" or "eu" or "us" or 2 more
 
 </summary>
 
@@ -96,7 +96,7 @@ One of the following:
 
 <summary>
 
-rules: optional array of object {allowed, id, exposeHeaders, maxAgeSeconds }
+rules: optional array of object { allowed, id, exposeHeaders, maxAgeSeconds }
 
 </summary>
 
@@ -104,7 +104,7 @@ rules: optional array of object {allowed, id, exposeHeaders, maxAgeSeconds }
 
 <summary>
 
-allowed: object {methods, origins, headers }
+allowed: object { methods, origins, headers }
 
 Object specifying allowed origins, methods and headers for this CORS rule.
 
@@ -114,7 +114,7 @@ Object specifying allowed origins, methods and headers for this CORS rule.
 
 <summary>
 
-methods: array of "GET"or "PUT"or "POST"or 2 more
+methods: array of "GET" or "PUT" or "POST" or 2 more
 
 Specifies the value for the Access-Control-Allow-Methods header R2 sets when requesting objects in a bucket from a browser.
 
@@ -212,7 +212,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 

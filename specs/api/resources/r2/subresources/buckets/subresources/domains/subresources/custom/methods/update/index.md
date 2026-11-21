@@ -68,7 +68,7 @@ Name of the custom domain.
 
 <summary>
 
-"cf-r2-jurisdiction": optional "default"or "eu"or "us"or 2 more
+"cf-r2-jurisdiction": optional "default" or "eu" or "us" or 2 more
 
 </summary>
 
@@ -116,7 +116,7 @@ Whether to enable public bucket access at the specified custom domain.
 
 <summary>
 
-minTLS: optional "1.0"or "1.1"or "1.2"or "1.3"
+minTLS: optional "1.0" or "1.1" or "1.2" or "1.3"
 
 Minimum TLS Version the custom domain will accept for incoming connections. If not set, defaults to previous value.
 
@@ -172,7 +172,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -196,7 +196,7 @@ messages: array of string
 
 <summary>
 
-result: object {domain, ciphers, enabled, minTLS }
+result: object { domain, ciphers, enabled, minTLS }
 
 </summary>
 
@@ -222,7 +222,7 @@ Whether this bucket is publicly accessible at the specified custom domain.
 
 <summary>
 
-minTLS: optional "1.0"or "1.1"or "1.2"or "1.3"
+minTLS: optional "1.0" or "1.1" or "1.2" or "1.3"
 
 Minimum TLS Version the custom domain will accept for incoming connections. If not set, defaults to 1.0.
 

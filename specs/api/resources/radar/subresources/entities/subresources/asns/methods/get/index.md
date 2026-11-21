@@ -74,7 +74,7 @@ Single Autonomous System Number (ASN) as integer.
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -106,7 +106,7 @@ Include the traffic data confidence level in the response. Set to `false` to ski
 
 <summary>
 
-result: object {asn }
+result: object { asn }
 
 </summary>
 
@@ -114,7 +114,7 @@ result: object {asn }
 
 <summary>
 
-asn: object {asn, category, country, 9 more }
+asn: object { asn, category, country, 9 more }
 
 </summary>
 
@@ -126,7 +126,7 @@ asn: number
 
 <summary>
 
-category: "ACCESS\_ISP"or "HOSTING\_CLOUD\_CONTENT"or "ORGANIZATION"
+category: "ACCESS\_ISP" or "HOSTING\_CLOUD\_CONTENT" or "ORGANIZATION"
 
 Inferred network type of the AS: <code>ACCESS_ISP</code> (networks connecting end users, plus transit), <code>HOSTING_CLOUD_CONTENT</code> (hosting providers, clouds and CDNs) or <code>ORGANIZATION</code> (enterprises, universities, governments, banks and IXP route servers). <code>null</code> when the AS is not classified.
 
@@ -162,7 +162,7 @@ countryName: string
 
 <summary>
 
-estimatedUsers: object {locations, estimatedUsers }
+estimatedUsers: object { locations, estimatedUsers }
 
 </summary>
 
@@ -170,7 +170,7 @@ estimatedUsers: object {locations, estimatedUsers }
 
 <summary>
 
-locations: array of object {locationAlpha2, locationName, estimatedUsers }
+locations: array of object { locationAlpha2, locationName, estimatedUsers }
 
 </summary>
 
@@ -214,7 +214,7 @@ orgName: string
 
 <summary>
 
-related: array of object {asn, category, name, 2 more }
+related: array of object { asn, category, name, 2 more }
 
 </summary>
 
@@ -226,7 +226,7 @@ asn: number
 
 <summary>
 
-category: "ACCESS\_ISP"or "HOSTING\_CLOUD\_CONTENT"or "ORGANIZATION"
+category: "ACCESS\_ISP" or "HOSTING\_CLOUD\_CONTENT" or "ORGANIZATION"
 
 Inferred network type of the AS: <code>ACCESS_ISP</code> (networks connecting end users, plus transit), <code>HOSTING_CLOUD_CONTENT</code> (hosting providers, clouds and CDNs) or <code>ORGANIZATION</code> (enterprises, universities, governments, banks and IXP route servers). <code>null</code> when the AS is not classified.
 

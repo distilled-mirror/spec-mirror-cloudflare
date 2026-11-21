@@ -82,7 +82,7 @@ The URL to look up.
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -104,7 +104,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -124,7 +124,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -146,7 +146,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -180,7 +180,7 @@ result: optional <a href="https://developers.cloudflare.com/api/resources/intel#
 
 <summary>
 
-content\_categories: array of object {id, name, source\_id, super\_category\_id }
+content\_categories: array of object { id, name, source\_id, super\_category\_id }
 
 Content categories associated with this URL.
 
@@ -222,7 +222,7 @@ The hostname of the URL.
 
 <summary>
 
-risk\_type: array of object {id, name, source\_id, super\_category\_id }
+risk\_type: array of object { id, name, source\_id, super\_category\_id }
 
 Security risk types associated with this URL.
 

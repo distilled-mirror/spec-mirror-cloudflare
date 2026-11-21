@@ -62,7 +62,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 <summary>
 
-account: optional object {id, name }
+account: optional object { id, name }
 
 </summary>
 
@@ -97,7 +97,7 @@ maxLength253
 
 <summary>
 
-direction: optional "asc"or "desc"
+direction: optional "asc" or "desc"
 
 Direction to order zones.
 
@@ -121,7 +121,7 @@ One of the following:
 
 <summary>
 
-match: optional "any"or "all"
+match: optional "any" or "all"
 
 Whether to match all search requirements or at least one (any).
 
@@ -162,7 +162,7 @@ maxLength253
 
 <summary>
 
-order: optional "name"or "status"or "account.id"or 2 more
+order: optional "name" or "status" or "account.id" or 2 more
 
 Field to order zones by.
 
@@ -216,7 +216,7 @@ minimum5
 
 <summary>
 
-status: optional "initializing"or "pending"or "active"or "moved"
+status: optional "initializing" or "pending" or "active" or "moved"
 
 Specify a zone status to filter by.
 
@@ -248,7 +248,7 @@ One of the following:
 
 <summary>
 
-type: optional array of "full"or "partial"or "secondary"or "internal"
+type: optional array of "full" or "partial" or "secondary" or "internal"
 
 Zone types to filter by. Multiple types can be specified as a comma-separated list (e.g., ?type=full,partial,secondary). When this parameter is not provided, zones with type “internal” are excluded from the results.
 
@@ -304,7 +304,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -346,7 +346,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -388,7 +388,7 @@ maxLength32
 
 <summary>
 
-account: object {id, name }
+account: object { id, name }
 
 The account the zone belongs to.
 
@@ -438,7 +438,7 @@ The interval (in seconds) from when development mode expires (positive integer) 
 
 <summary>
 
-meta: object {cdn\_only, custom\_certificate\_quota, dns\_only, 4 more }
+meta: object { cdn\_only, custom\_certificate\_quota, dns\_only, 4 more }
 
 Metadata about the zone.
 
@@ -534,7 +534,7 @@ Registrar for the domain at the time of switching to Cloudflare.
 
 <summary>
 
-owner: object {id, name, type }
+owner: object { id, name, type }
 
 The owner of the zone.
 
@@ -568,7 +568,7 @@ The type of owner.
 
 <summary>
 
-Deprecatedplan: object {id, can\_subscribe, currency, 7 more }
+Deprecatedplan: object { id, can\_subscribe, currency, 7 more }
 
 Please use the <code>/zones/{zone_id}/subscription</code> API to update a zone’s plan. Changing this value will create/cancel associated subscriptions. To view available plans for this zone, see <a href="https://developers.cloudflare.com/api/resources/zones/subresources/plans/">Zone Plans</a>.
 
@@ -666,7 +666,7 @@ Legacy permissions based on legacy user membership information.
 
 <summary>
 
-status: optional "initializing"or "pending"or "active"or "moved"
+status: optional "initializing" or "pending" or "active" or "moved"
 
 The zone status on Cloudflare.
 
@@ -698,7 +698,7 @@ One of the following:
 
 <summary>
 
-tenant: optional object {id, name }
+tenant: optional object { id, name }
 
 The root organizational unit that this zone belongs to (such as a tenant or organization).
 
@@ -726,7 +726,7 @@ The name of the Tenant account.
 
 <summary>
 
-tenant\_unit: optional object {id }
+tenant\_unit: optional object { id }
 
 The immediate parent organizational unit that this zone belongs to (such as under a tenant or sub-organization).
 
@@ -796,7 +796,7 @@ Verification key for partial zone setup.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

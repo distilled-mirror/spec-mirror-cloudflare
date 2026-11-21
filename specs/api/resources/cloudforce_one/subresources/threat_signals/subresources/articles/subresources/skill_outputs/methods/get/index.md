@@ -66,7 +66,7 @@ Custom Skill UUID or a Managed Default Skill ID (IOC-context: default-ioc-contex
 
 <summary>
 
-errors: array of object {message }
+errors: array of object { message }
 
 </summary>
 
@@ -82,7 +82,7 @@ message: string
 
 <summary>
 
-messages: array of object {message, code, custom\_feed\_count, 4 more }
+messages: array of object { message, code, custom\_feed\_count, 4 more }
 
 </summary>
 
@@ -122,7 +122,7 @@ path: optional array of string
 
 <summary>
 
-reason: optional "threat\_signals\_feed\_limit"or "free\_custom\_skills\_disabled"or "free\_skill\_run\_disabled"or 4 more
+reason: optional "threat\_signals\_feed\_limit" or "free\_custom\_skills\_disabled" or "free\_skill\_run\_disabled" or 4 more
 
 </summary>
 
@@ -168,7 +168,7 @@ One of the following:
 
 <summary>
 
-result: object {article\_id, custom\_output, custom\_output\_parse\_status, 4 more }
+result: object { article\_id, custom\_output, custom\_output\_parse\_status, 4 more }
 
 </summary>
 
@@ -184,7 +184,7 @@ formatuuid
 
 <summary>
 
-custom\_output: stringor numberor booleanor 2 more
+custom\_output: string or number or boolean or 2 more
 
 Untrusted model output: parsed JSON when the stored completion text is valid JSON, otherwise raw text. Consumers must safely render or escape it.
 
@@ -212,7 +212,7 @@ map\[unknown]
 
 <summary>
 
-array of stringor numberor booleanor map\[unknown]
+array of string or number or boolean or map\[unknown]
 
 </summary>
 
@@ -246,7 +246,7 @@ map\[unknown]
 
 <summary>
 
-custom\_output\_parse\_status: "parsed"or "invalid\_json"
+custom\_output\_parse\_status: "parsed" or "invalid\_json"
 
 Whether custom\_output was parsed from the stored completion text.
 
@@ -270,7 +270,7 @@ One of the following:
 
 <summary>
 
-custom\_output\_validation\_status: "valid"or "invalid\_json"or "schema\_invalid"or "unknown"
+custom\_output\_validation\_status: "valid" or "invalid\_json" or "schema\_invalid" or "unknown"
 
 Non-blocking validation classification for untrusted model output. <code>unknown</code> is retained only for historical rows.
 

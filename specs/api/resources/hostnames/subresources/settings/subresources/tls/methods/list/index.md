@@ -74,7 +74,7 @@ maxLength32
 
 <summary>
 
-setting\_id: "ciphers"or "min\_tls\_version"or "http2"
+setting\_id: "ciphers" or "min\_tls\_version" or "http2"
 
 The TLS Setting name. The value type depends on the setting:
 
@@ -146,7 +146,7 @@ minimum0
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -168,7 +168,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -188,7 +188,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -210,7 +210,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -236,7 +236,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional array of object {created\_at, hostname, status, 2 more }
+result: optional array of object { created\_at, hostname, status, 2 more }
 
 </summary>
 
@@ -288,7 +288,7 @@ One of the following:
 
 <summary>
 
-"1.0"or "1.1"or "1.2"or 3 more
+"1.0" or "1.1" or "1.2" or 3 more
 
 </summary>
 
@@ -340,7 +340,7 @@ Used when <code>setting_id</code> is <code>ciphers</code>. An array of allowed c
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

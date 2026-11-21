@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Workers Scripts Write`
+`Workers Admin``Workers Scripts Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -78,7 +78,7 @@ minLength1
 
 <summary>
 
-body: array of object {instance\_id, instance\_retention, location\_hint, params }
+body: array of object { instance\_id, instance\_retention, location\_hint, params }
 
 </summary>
 
@@ -96,7 +96,7 @@ minimum1
 
 <summary>
 
-instance\_retention: optional object {error\_retention, success\_retention }
+instance\_retention: optional object { error\_retention, success\_retention }
 
 </summary>
 
@@ -104,7 +104,7 @@ instance\_retention: optional object {error\_retention, success\_retention }
 
 <summary>
 
-error\_retention: optional numberor string
+error\_retention: optional number or string
 
 Specifies the duration in milliseconds or as a string like ‘5 minutes’.
 
@@ -130,7 +130,7 @@ string
 
 <summary>
 
-success\_retention: optional numberor string
+success\_retention: optional number or string
 
 Specifies the duration in milliseconds or as a string like ‘5 minutes’.
 
@@ -160,7 +160,7 @@ string
 
 <summary>
 
-location\_hint: optional "wnam"or "weur"or "enam"or 8 more
+location\_hint: optional "wnam" or "weur" or "enam" or 8 more
 
 </summary>
 
@@ -230,7 +230,7 @@ JSON-encoded event payload passed into the new instance.
 
 <summary>
 
-errors: array of object {code, message }
+errors: array of object { code, message }
 
 </summary>
 
@@ -250,7 +250,7 @@ message: string
 
 <summary>
 
-messages: array of object {code, message }
+messages: array of object { code, message }
 
 </summary>
 
@@ -270,7 +270,7 @@ message: string
 
 <summary>
 
-result: array of object {id, status, version\_id, 2 more }
+result: array of object { id, status, version\_id, 2 more }
 
 </summary>
 
@@ -286,7 +286,7 @@ minLength1
 
 <summary>
 
-status: "queued"or "running"or "paused"or 6 more
+status: "queued" or "running" or "paused" or 6 more
 
 </summary>
 
@@ -348,7 +348,7 @@ formatuuid
 
 <summary>
 
-trigger\_source: optional "unknown"or "api"or "binding"or 2 more
+trigger\_source: optional "unknown" or "api" or "binding" or 2 more
 
 </summary>
 
@@ -390,7 +390,7 @@ success: true
 
 <summary>
 
-result\_info: optional object {count, per\_page, total\_count, 3 more }
+result\_info: optional object { count, per\_page, total\_count, 3 more }
 
 </summary>
 

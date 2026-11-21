@@ -30,7 +30,7 @@ GET/accounts/{account\_id}/email-security/investigate/{investigate\_id}/raw
 
 <summary>
 
-RawGetResponse object {raw }
+RawGetResponse object { raw }
 
 </summary>
 

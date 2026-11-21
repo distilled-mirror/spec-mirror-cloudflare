@@ -84,7 +84,7 @@ formatdate-time
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -120,7 +120,7 @@ Array of names used to label the series in the response.
 
 <summary>
 
-rir: optional array of "RIPE\_NCC"or "ARIN"or "APNIC"or 2 more
+rir: optional array of "RIPE\_NCC" or "ARIN" or "APNIC" or 2 more
 
 Filter by Regional Internet Registry (RIR). Multiple RIRs generate multiple series.
 
@@ -158,7 +158,7 @@ One of the following:
 
 <summary>
 
-result: object {meta, serie\_0 }
+result: object { meta, serie\_0 }
 
 </summary>
 
@@ -166,7 +166,7 @@ result: object {meta, serie\_0 }
 
 <summary>
 
-meta: object {dataTime, queryTime }
+meta: object { dataTime, queryTime }
 
 </summary>
 
@@ -194,7 +194,7 @@ formatdate-time
 
 <summary>
 
-serie\_0: object {timestamps, values }
+serie\_0: object { timestamps, values }
 
 </summary>
 

@@ -72,7 +72,7 @@ account\_id: string
 
 <summary>
 
-auth: object {private\_credential, public\_credential }
+auth: object { private\_credential, public\_credential }
 
 Credentials for authenticating to a private external image registry. Store the private credential in <a href="https://developers.cloudflare.com/secrets-store/">Secrets Store</a> before calling the API. Refer to <a href="https://developers.cloudflare.com/containers/platform-details/image-management/">Image management</a> for the credential required by each supported registry provider.
 
@@ -82,7 +82,7 @@ Credentials for authenticating to a private external image registry. Store the p
 
 <summary>
 
-private\_credential: object {secret\_name, store\_id }
+private\_credential: object { secret\_name, store\_id }
 
 A reference to the private registry credential in Secrets Store. The referenced secret must have the <code>containers</code> scope. Raw secret values are not accepted.
 
@@ -132,7 +132,7 @@ Hostname of the private registry, without a scheme or image path. Supported host
 
 <summary>
 
-kind: "ECR"or "DockerHub"or "GAR"
+kind: "ECR" or "DockerHub" or "GAR"
 
 Registry provider. This must match <code>domain</code>: <code>DockerHub</code> for <code>docker.io</code>, <code>ECR</code> for AWS ECR, or <code>GAR</code> for Google Artifact Registry.
 
@@ -168,7 +168,7 @@ Omit this field or set it to `false`. Public Docker Hub images do not require re
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -190,7 +190,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -210,7 +210,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -232,7 +232,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -252,7 +252,7 @@ pointer: optional string
 
 <summary>
 
-result: object {created\_at, domain, kind, public\_key }
+result: object { created\_at, domain, kind, public\_key }
 
 An image registry added in a customer account.
 
@@ -274,7 +274,7 @@ A string representation of a domain name. See RFC-1034 (<a href="https://www.iet
 
 <summary>
 
-kind: optional "ECR"or "DockerHub"or "GAR"or "default"
+kind: optional "ECR" or "DockerHub" or "GAR" or "default"
 
 The type of registry that is being configured.
 

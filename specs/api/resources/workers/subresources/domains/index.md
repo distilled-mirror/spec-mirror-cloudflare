@@ -40,7 +40,7 @@ DELETE/accounts/{account\_id}/workers/domains/{domain\_id}
 
 <summary>
 
-DomainListResponse object {id, cert\_id, enabled, 6 more }
+DomainListResponse object { id, cert\_id, enabled, 6 more }
 
 </summary>
 
@@ -108,7 +108,7 @@ Name of the zone containing the domain hostname.
 
 <summary>
 
-DomainGetResponse object {id, cert\_id, enabled, 6 more }
+DomainGetResponse object { id, cert\_id, enabled, 6 more }
 
 </summary>
 
@@ -176,7 +176,7 @@ Name of the zone containing the domain hostname.
 
 <summary>
 
-DomainUpdateResponse object {id, cert\_id, enabled, 6 more }
+DomainUpdateResponse object { id, cert\_id, enabled, 6 more }
 
 </summary>
 
@@ -244,7 +244,7 @@ Name of the zone containing the domain hostname.
 
 <summary>
 
-DomainDeleteResponse object {errors, messages, success }
+DomainDeleteResponse object { errors, messages, success }
 
 </summary>
 
@@ -252,7 +252,7 @@ DomainDeleteResponse object {errors, messages, success }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -274,7 +274,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -294,7 +294,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -316,7 +316,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 

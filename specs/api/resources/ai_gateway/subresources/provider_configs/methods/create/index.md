@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Secrets Store Write`
+`Secrets Store Write``AI Gateway Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -112,7 +112,7 @@ secret\_id: optional string
 
 <summary>
 
-result: object {id, alias, default\_config, 8 more }
+result: object { id, alias, default\_config, 8 more }
 
 </summary>
 

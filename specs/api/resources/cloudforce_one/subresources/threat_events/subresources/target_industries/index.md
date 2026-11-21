@@ -30,7 +30,7 @@ GET/accounts/{account\_id}/cloudforce-one/events/targetIndustries
 
 <summary>
 
-TargetIndustryListResponse object {items, type }
+TargetIndustryListResponse object { items, type }
 
 </summary>
 
@@ -38,7 +38,7 @@ TargetIndustryListResponse object {items, type }
 
 <summary>
 
-items: object {type }
+items: object { type }
 
 </summary>
 
@@ -70,7 +70,7 @@ GET/accounts/{account\_id}/cloudforce-one/events/dataset/{dataset\_id}/targetInd
 
 <summary>
 
-ByDatasetListResponse object {items, type }
+ByDatasetListResponse object { items, type }
 
 </summary>
 
@@ -78,7 +78,7 @@ ByDatasetListResponse object {items, type }
 
 <summary>
 
-items: object {type }
+items: object { type }
 
 </summary>
 
@@ -110,7 +110,7 @@ GET/accounts/{account\_id}/cloudforce-one/events/targetIndustries/catalog
 
 <summary>
 
-CatalogListResponse object {items, type }
+CatalogListResponse object { items, type }
 
 </summary>
 
@@ -118,7 +118,7 @@ CatalogListResponse object {items, type }
 
 <summary>
 
-items: object {type }
+items: object { type }
 
 </summary>
 

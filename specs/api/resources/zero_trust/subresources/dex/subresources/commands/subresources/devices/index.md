@@ -32,7 +32,7 @@ GET/accounts/{account\_id}/dex/commands/devices
 
 <summary>
 
-DeviceListResponse object {devices }
+DeviceListResponse object { devices }
 
 </summary>
 
@@ -40,7 +40,7 @@ DeviceListResponse object {devices }
 
 <summary>
 
-devices: optional array of object {deviceId, deviceName, eligible, 7 more }
+devices: optional array of object { deviceId, deviceName, eligible, 7 more }
 
 List of eligible devices
 

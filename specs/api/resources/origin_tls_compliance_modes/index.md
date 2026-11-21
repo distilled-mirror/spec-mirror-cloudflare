@@ -38,7 +38,7 @@ DELETE/zones/{zone\_id}/settings/origin\_tls\_compliance\_modes
 
 <summary>
 
-OriginTLSComplianceModeGetResponse object {id, editable, value, modified\_on }
+OriginTLSComplianceModeGetResponse object { id, editable, value, modified\_on }
 
 </summary>
 
@@ -76,7 +76,7 @@ formatdate-time
 
 <summary>
 
-OriginTLSComplianceModeUpdateResponse object {id, editable, value, modified\_on }
+OriginTLSComplianceModeUpdateResponse object { id, editable, value, modified\_on }
 
 </summary>
 
@@ -114,7 +114,7 @@ formatdate-time
 
 <summary>
 
-OriginTLSComplianceModeEditResponse object {id, editable, value, modified\_on }
+OriginTLSComplianceModeEditResponse object { id, editable, value, modified\_on }
 
 </summary>
 
@@ -152,7 +152,7 @@ formatdate-time
 
 <summary>
 
-OriginTLSComplianceModeDeleteResponse object {id, editable, modified\_on }
+OriginTLSComplianceModeDeleteResponse object { id, editable, modified\_on }
 
 </summary>
 

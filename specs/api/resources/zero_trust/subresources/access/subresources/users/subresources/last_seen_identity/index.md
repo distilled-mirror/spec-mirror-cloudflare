@@ -32,7 +32,7 @@ GET/accounts/{account\_id}/access/users/{user\_id}/last\_seen\_identity
 
 <summary>
 
-Identity object {account\_id, auth\_status, common\_name, 15 more }
+Identity object { account\_id, auth\_status, common\_name, 15 more }
 
 </summary>
 
@@ -56,7 +56,7 @@ device\_id: optional string
 
 <summary>
 
-device\_sessions: optional map\[object {last\_authenticated } ]
+device\_sessions: optional map\[object { last\_authenticated } ]
 
 </summary>
 
@@ -72,7 +72,7 @@ last\_authenticated: optional number
 
 <summary>
 
-devicePosture: optional map\[object {id, check, data, 6 more } ]
+devicePosture: optional map\[object { id, check, data, 6 more } ]
 
 </summary>
 
@@ -84,7 +84,7 @@ id: optional string
 
 <summary>
 
-check: optional object {exists, path }
+check: optional object { exists, path }
 
 </summary>
 
@@ -140,7 +140,7 @@ email: optional string
 
 <summary>
 
-geo: optional object {country }
+geo: optional object { country }
 
 </summary>
 
@@ -160,7 +160,7 @@ iat: optional number
 
 <summary>
 
-idp: optional object {id, type }
+idp: optional object { id, type }
 
 </summary>
 
@@ -192,7 +192,7 @@ is\_warp: optional boolean
 
 <summary>
 
-mtls\_auth: optional object {auth\_status, cert\_issuer\_dn, cert\_issuer\_ski, 2 more }
+mtls\_auth: optional object { auth\_status, cert\_issuer\_dn, cert\_issuer\_ski, 2 more }
 
 </summary>
 
@@ -244,7 +244,7 @@ version: optional number
 
 <summary>
 
-LastSeenIdentityGetResponse object {account\_id, auth\_status, common\_name, 16 more }
+LastSeenIdentityGetResponse object { account\_id, auth\_status, common\_name, 16 more }
 
 </summary>
 
@@ -268,7 +268,7 @@ device\_id: optional string
 
 <summary>
 
-device\_sessions: optional map\[object {last\_authenticated } ]
+device\_sessions: optional map\[object { last\_authenticated } ]
 
 </summary>
 
@@ -284,7 +284,7 @@ last\_authenticated: optional number
 
 <summary>
 
-devicePosture: optional map\[object {id, check, data, 6 more } ]
+devicePosture: optional map\[object { id, check, data, 6 more } ]
 
 </summary>
 
@@ -296,7 +296,7 @@ id: optional string
 
 <summary>
 
-check: optional object {exists, path }
+check: optional object { exists, path }
 
 </summary>
 
@@ -352,7 +352,7 @@ email: optional string
 
 <summary>
 
-geo: optional object {country }
+geo: optional object { country }
 
 </summary>
 
@@ -372,7 +372,7 @@ iat: optional number
 
 <summary>
 
-idp: optional object {id, type }
+idp: optional object { id, type }
 
 </summary>
 
@@ -404,7 +404,7 @@ is\_warp: optional boolean
 
 <summary>
 
-mtls\_auth: optional object {auth\_status, cert\_issuer\_dn, cert\_issuer\_ski, 2 more }
+mtls\_auth: optional object { auth\_status, cert\_issuer\_dn, cert\_issuer\_ski, 2 more }
 
 </summary>
 
@@ -436,7 +436,7 @@ cert\_serial: optional string
 
 <summary>
 
-passkeys: optional array of object {id, created\_at, last\_used\_at, name }
+passkeys: optional array of object { id, created\_at, last\_used\_at, name }
 
 Active passkey enrollments for the user.
 

@@ -44,7 +44,7 @@ DELETE/{accounts\_or\_zones}/{account\_or\_zone\_id}/access/apps/{app\_id}/ca
 
 <summary>
 
-CA object {id, aud, public\_key }
+CA object { id, aud, public\_key }
 
 </summary>
 
@@ -78,7 +78,7 @@ The public key to add to your SSH server configuration.
 
 <summary>
 
-CADeleteResponse object {id }
+CADeleteResponse object { id }
 
 </summary>
 

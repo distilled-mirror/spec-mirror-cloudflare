@@ -42,7 +42,7 @@ DELETE/accounts/{account\_id}/dns\_firewall/{dns\_firewall\_id}
 
 <summary>
 
-AttackMitigation object {enabled, only\_when\_upstream\_unhealthy }
+AttackMitigation object { enabled, only\_when\_upstream\_unhealthy }
 
 Attack mitigation settings
 
@@ -80,7 +80,7 @@ Upstream DNS Server IPv4 address
 
 <summary>
 
-DNSFirewallListResponse object {id, deprecate\_any\_requests, dns\_firewall\_ips, 10 more }
+DNSFirewallListResponse object { id, deprecate\_any\_requests, dns\_firewall\_ips, 10 more }
 
 </summary>
 
@@ -204,7 +204,7 @@ Attack mitigation settings
 
 <summary>
 
-DNSFirewallGetResponse object {id, deprecate\_any\_requests, dns\_firewall\_ips, 10 more }
+DNSFirewallGetResponse object { id, deprecate\_any\_requests, dns\_firewall\_ips, 10 more }
 
 </summary>
 
@@ -328,7 +328,7 @@ Attack mitigation settings
 
 <summary>
 
-DNSFirewallCreateResponse object {id, deprecate\_any\_requests, dns\_firewall\_ips, 10 more }
+DNSFirewallCreateResponse object { id, deprecate\_any\_requests, dns\_firewall\_ips, 10 more }
 
 </summary>
 
@@ -452,7 +452,7 @@ Attack mitigation settings
 
 <summary>
 
-DNSFirewallEditResponse object {id, deprecate\_any\_requests, dns\_firewall\_ips, 10 more }
+DNSFirewallEditResponse object { id, deprecate\_any\_requests, dns\_firewall\_ips, 10 more }
 
 </summary>
 
@@ -576,7 +576,7 @@ Attack mitigation settings
 
 <summary>
 
-DNSFirewallDeleteResponse object {id }
+DNSFirewallDeleteResponse object { id }
 
 </summary>
 
@@ -626,7 +626,7 @@ PATCH/accounts/{account\_id}/dns\_firewall/{dns\_firewall\_id}/reverse\_dns
 
 <summary>
 
-ReverseDNSGetResponse object {ptr }
+ReverseDNSGetResponse object { ptr }
 
 </summary>
 
@@ -644,7 +644,7 @@ Map of cluster IP addresses to PTR record contents
 
 <summary>
 
-ReverseDNSEditResponse object {ptr }
+ReverseDNSEditResponse object { ptr }
 
 </summary>
 

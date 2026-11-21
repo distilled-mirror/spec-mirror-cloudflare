@@ -64,7 +64,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -108,7 +108,7 @@ minimum0
 
 <summary>
 
-result: object {origins }
+result: object { origins }
 
 </summary>
 
@@ -116,7 +116,7 @@ result: object {origins }
 
 <summary>
 
-origins: array of object {regions, slug }
+origins: array of object { regions, slug }
 
 </summary>
 
@@ -124,7 +124,7 @@ origins: array of object {regions, slug }
 
 <summary>
 
-regions: array of object {region }
+regions: array of object { region }
 
 </summary>
 

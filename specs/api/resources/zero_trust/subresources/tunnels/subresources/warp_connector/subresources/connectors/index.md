@@ -32,7 +32,7 @@ GET/accounts/{account\_id}/warp\_connector/{tunnel\_id}/connectors/{connector\_i
 
 <summary>
 
-ConnectorGetResponse object {id, arch, conns, 4 more }
+ConnectorGetResponse object { id, arch, conns, 4 more }
 
 A Mesh node connector that maintains a connection to a Cloudflare data center.
 
@@ -58,7 +58,7 @@ The cloudflared OS architecture used to establish this connection.
 
 <summary>
 
-conns: optional array of object {id, client\_id, client\_version, 3 more }
+conns: optional array of object { id, client\_id, client\_version, 3 more }
 
 The Mesh node connections between your origin and Cloudflare’s edge.
 
@@ -124,7 +124,7 @@ Features enabled for the Cloudflare Tunnel.
 
 <summary>
 
-ha\_status: optional "offline"or "passive"or "active"
+ha\_status: optional "offline" or "passive" or "active"
 
 The HA status of a Mesh node connector.
 

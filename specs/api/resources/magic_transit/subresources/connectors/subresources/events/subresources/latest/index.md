@@ -32,7 +32,7 @@ GET/accounts/{account\_id}/magic/connectors/{connector\_id}/telemetry/events/lat
 
 <summary>
 
-LatestListResponse object {count, items }
+LatestListResponse object { count, items }
 
 </summary>
 
@@ -44,7 +44,7 @@ count: number
 
 <summary>
 
-items: array of object {e, n, t, v }
+items: array of object { e, n, t, v }
 
 </summary>
 
@@ -52,7 +52,7 @@ items: array of object {e, n, t, v }
 
 <summary>
 
-e: object {k }
+e: object { k }
 
 Event kind plus event-specific payload fields.
 
@@ -94,7 +94,7 @@ Event kinds:
 
 <summary>
 
-k: "Init"or "Leave"or "StartAttestation"or 26 more
+k: "Init" or "Leave" or "StartAttestation" or 26 more
 
 Event kind
 

@@ -74,7 +74,7 @@ maxLength32
 
 <summary>
 
-validation\_default\_mitigation\_action: optional "none"or "log"or "block"
+validation\_default\_mitigation\_action: optional "none" or "log" or "block"
 
 The default mitigation action used Mitigation actions are as follows:
 
@@ -139,7 +139,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -181,7 +181,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -201,7 +201,7 @@ pointer: optional string
 
 <summary>
 
-result: object {validation\_default\_mitigation\_action, validation\_override\_mitigation\_action }
+result: object { validation\_default\_mitigation\_action, validation\_override\_mitigation\_action }
 
 </summary>
 
@@ -209,7 +209,7 @@ result: object {validation\_default\_mitigation\_action, validation\_override\_m
 
 <summary>
 
-validation\_default\_mitigation\_action: "none"or "log"or "block"
+validation\_default\_mitigation\_action: "none" or "log" or "block"
 
 The default mitigation action used
 

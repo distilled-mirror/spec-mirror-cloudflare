@@ -82,7 +82,7 @@ Name of the script.
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -104,7 +104,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -124,7 +124,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -146,7 +146,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -180,7 +180,7 @@ Whether Logpush is turned on for the Worker.
 
 <summary>
 
-observability: optional object {enabled, agents, head\_sampling\_rate, 4 more }
+observability: optional object { enabled, agents, head\_sampling\_rate, 4 more }
 
 Observability settings for the Worker.
 
@@ -196,7 +196,7 @@ Whether observability is enabled for the Worker.
 
 <summary>
 
-agents: optional object {enabled, head\_sampling\_rate, persist }
+agents: optional object { enabled, head\_sampling\_rate, persist }
 
 Agents observability settings for the Worker.
 
@@ -234,7 +234,7 @@ The sampling rate for incoming requests. From 0 to 1 (1 = 100%, 0.1 = 10%). Defa
 
 <summary>
 
-issues: optional object {enabled }
+issues: optional object { enabled }
 
 Real-time Issues settings for the Worker.
 
@@ -254,7 +254,7 @@ Whether real-time Issues are enabled for the Worker.
 
 <summary>
 
-logs: optional object {enabled, invocation\_logs, destinations, 2 more }
+logs: optional object { enabled, invocation\_logs, destinations, 2 more }
 
 Log settings for the Worker.
 
@@ -304,7 +304,7 @@ Whether query strings are removed from request URLs in logs and traces.
 
 <summary>
 
-traces: optional object {destinations, enabled, head\_sampling\_rate, 2 more }
+traces: optional object { destinations, enabled, head\_sampling\_rate, 2 more }
 
 Trace settings for the Worker.
 
@@ -338,7 +338,7 @@ Whether trace persistence is enabled for the Worker.
 
 <summary>
 
-propagation\_policy: optional "authenticated"or "accept"
+propagation\_policy: optional "authenticated" or "accept"
 
 Controls how inbound trace context (traceparent/tracestate) headers on incoming requests are handled. “authenticated” honors inbound trace context only when accompanied by a valid trace auth token. “accept” unconditionally accepts inbound trace context. Requires the trace propagation feature to be enabled. Returns null when the trace propagation feature is not enabled for the account.
 

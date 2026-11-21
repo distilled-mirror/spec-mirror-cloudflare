@@ -46,7 +46,7 @@ DELETE/accounts/{account\_id}/cws/rego-modules/{rego\_module\_id}
 
 <summary>
 
-RegoModule object {id, created\_at, name, 3 more }
+RegoModule object { id, created\_at, name, 3 more }
 
 </summary>
 
@@ -106,7 +106,7 @@ formatdate-time
 
 <summary>
 
-RegoModuleDeleteResponse object {id }
+RegoModuleDeleteResponse object { id }
 
 </summary>
 

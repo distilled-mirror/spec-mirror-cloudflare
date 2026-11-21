@@ -86,7 +86,7 @@ Pagination cursor from the previous response’s `result_info`.
 
 <summary>
 
-delivery\_status: optional "delivered"or "moved"or "quarantined"or 5 more
+delivery\_status: optional "delivered" or "moved" or "quarantined" or 5 more
 
 Delivery status to filter by.
 
@@ -154,7 +154,7 @@ formatdate-time
 
 <summary>
 
-final\_disposition: optional "MALICIOUS"or "SUSPICIOUS"or "SPOOF"or 3 more
+final\_disposition: optional "MALICIOUS" or "SUSPICIOUS" or "SPOOF" or 3 more
 
 Dispositions to filter by.
 
@@ -194,7 +194,7 @@ One of the following:
 
 <summary>
 
-message\_action: optional "PREVIEW"or "QUARANTINE\_RELEASED"or "MOVED"
+message\_action: optional "PREVIEW" or "QUARANTINE\_RELEASED" or "MOVED"
 
 Message actions to filter by.
 
@@ -292,7 +292,7 @@ Search for messages containing individual keywords in any order within the subje
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -314,7 +314,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -334,7 +334,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -356,7 +356,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -376,7 +376,7 @@ pointer: optional string
 
 <summary>
 
-result: array of object {id, action\_log, client\_recipients, 32 more }
+result: array of object { id, action\_log, client\_recipients, 32 more }
 
 </summary>
 
@@ -390,7 +390,7 @@ Unique identifier for a message retrieved from investigation.
 
 <summary>
 
-Deprecatedaction\_log: array of object {completed\_at, operation, completed\_timestamp, 2 more }
+Deprecatedaction\_log: array of object { completed\_at, operation, completed\_timestamp, 2 more }
 
 Use GET /investigate/{investigate\_id}/action\_log instead.
 
@@ -410,7 +410,7 @@ formatdate-time
 
 <summary>
 
-operation: "MOVE"or "RELEASE"or "RECLASSIFY"or 3 more
+operation: "MOVE" or "RELEASE" or "RECLASSIFY" or 3 more
 
 Type of action performed.
 
@@ -458,7 +458,7 @@ Deprecated, use <code>completed_at</code> instead. End of life: November 1, 2026
 
 <summary>
 
-properties: optional object {folder, requested\_by }
+properties: optional object { folder, requested\_by }
 
 Additional properties for the action.
 
@@ -516,7 +516,7 @@ The identifier of the message.
 
 <summary>
 
-properties: object {allowlisted\_pattern, allowlisted\_pattern\_type, blocklisted\_message, 2 more }
+properties: object { allowlisted\_pattern, allowlisted\_pattern\_type, blocklisted\_message, 2 more }
 
 Message processing properties.
 
@@ -532,7 +532,7 @@ Pattern that allowlisted this message.
 
 <summary>
 
-allowlisted\_pattern\_type: optional "quarantine\_release"or "acceptable\_sender"or "allowed\_sender"or 5 more
+allowlisted\_pattern\_type: optional "quarantine\_release" or "acceptable\_sender" or "allowed\_sender" or 5 more
 
 Type of allowlist pattern.
 
@@ -592,7 +592,7 @@ Pattern that blocklisted this message.
 
 <summary>
 
-whitelisted\_pattern\_type: optional "quarantine\_release"or "acceptable\_sender"or "allowed\_sender"or 5 more
+whitelisted\_pattern\_type: optional "quarantine\_release" or "acceptable\_sender" or "allowed\_sender" or 5 more
 
 Legacy field for allowlist pattern type.
 
@@ -656,7 +656,7 @@ alert\_id: optional string
 
 <summary>
 
-delivery\_mode: optional "DIRECT"or "BCC"or "JOURNAL"or 8 more
+delivery\_mode: optional "DIRECT" or "BCC" or "JOURNAL" or 8 more
 
 </summary>
 
@@ -714,7 +714,7 @@ One of the following:
 
 <summary>
 
-delivery\_status: optional array of "delivered"or "moved"or "quarantined"or 5 more
+delivery\_status: optional array of "delivered" or "moved" or "quarantined" or 5 more
 
 </summary>
 
@@ -772,7 +772,7 @@ envelope\_to: optional array of string
 
 <summary>
 
-final\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+final\_disposition: optional "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 The verdict Email Security assigns to a message.
 
@@ -828,7 +828,7 @@ One of the following:
 
 <summary>
 
-Deprecatedfindings: optional array of object {attachment, detail, detection, 6 more }
+Deprecatedfindings: optional array of object { attachment, detail, detection, 6 more }
 
 Use the <code>findings</code> field from GET /investigate/{investigate\_id}/detections instead.
 
@@ -848,7 +848,7 @@ detail: optional string
 
 <summary>
 
-detection: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+detection: optional "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 The verdict Email Security assigns to a message.
 
@@ -950,7 +950,7 @@ message\_id: optional string
 
 <summary>
 
-post\_delivery\_operations: optional array of "PREVIEW"or "QUARANTINE\_RELEASE"or "SUBMISSION"or "MOVE"
+post\_delivery\_operations: optional array of "PREVIEW" or "QUARANTINE\_RELEASE" or "SUBMISSION" or "MOVE"
 
 Post-delivery operations performed on this message.
 
@@ -1034,7 +1034,7 @@ to\_name: optional array of string
 
 <summary>
 
-validation: optional object {comment, dkim, dmarc, spf } or unknown
+validation: optional object { comment, dkim, dmarc, spf } or unknown
 
 </summary>
 
@@ -1044,7 +1044,7 @@ One of the following:
 
 <summary>
 
-EmailSecurityValidation object {comment, dkim, dmarc, spf }
+EmailSecurityValidation object { comment, dkim, dmarc, spf }
 
 </summary>
 
@@ -1056,7 +1056,7 @@ comment: optional string
 
 <summary>
 
-dkim: optional "pass"or "neutral"or "fail"or 2 more
+dkim: optional "pass" or "neutral" or "fail" or 2 more
 
 </summary>
 
@@ -1090,7 +1090,7 @@ One of the following:
 
 <summary>
 
-dmarc: optional "pass"or "neutral"or "fail"or 2 more
+dmarc: optional "pass" or "neutral" or "fail" or 2 more
 
 </summary>
 
@@ -1124,7 +1124,7 @@ One of the following:
 
 <summary>
 
-spf: optional "pass"or "neutral"or "fail"or 2 more
+spf: optional "pass" or "neutral" or "fail" or 2 more
 
 </summary>
 
@@ -1178,7 +1178,7 @@ x\_originating\_ip: optional string
 
 <summary>
 
-result\_info: object {count, per\_page, total\_count, 3 more }
+result\_info: object { count, per\_page, total\_count, 3 more }
 
 </summary>
 

@@ -62,7 +62,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Workers Scripts Write`
+`Workers Editor``Workers Admin``Individual Workers Editor``Individual Workers Admin``Workers Scripts Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -92,7 +92,7 @@ Name of the script.
 
 <summary>
 
-settings: optional object {bindings, cache\_options, compatibility\_date, 11 more }
+settings: optional object { bindings, cache\_options, compatibility\_date, 11 more }
 
 Script and version settings for Workers for Platforms namespace scripts. Same as script-and-version-settings-item but without annotations, which are not supported for namespace scripts.
 
@@ -102,7 +102,7 @@ Script and version settings for Workers for Platforms namespace scripts. Same as
 
 <summary>
 
-bindings: optional array of object {name, type } or object {instance\_name, name, type, namespace } or object {name, namespace, type } or 36 more
+bindings: optional array of object { name, type } or object { instance\_name, name, type, namespace } or object { name, namespace, type } or 36 more
 
 List of bindings attached to a Worker. You can find more about bindings on our docs: <a href="https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings">https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings</a>.
 
@@ -114,7 +114,7 @@ One of the following:
 
 <summary>
 
-AI object {name, type }
+AI object { name, type }
 
 </summary>
 
@@ -138,7 +138,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-AISearch object {instance\_name, name, type, namespace }
+AISearch object { instance\_name, name, type, namespace }
 
 </summary>
 
@@ -174,7 +174,7 @@ The namespace the instance belongs to. Defaults to “default” if omitted. Cus
 
 <summary>
 
-AISearchNamespace object {name, namespace, type }
+AISearchNamespace object { name, namespace, type }
 
 </summary>
 
@@ -204,7 +204,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-Messaging object {name, namespace, type }
+Messaging object { name, namespace, type }
 
 </summary>
 
@@ -234,7 +234,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-AnalyticsEngine object {dataset, name, type }
+AnalyticsEngine object { dataset, name, type }
 
 </summary>
 
@@ -264,7 +264,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-Artifacts object {name, namespace, type }
+Artifacts object { name, namespace, type }
 
 </summary>
 
@@ -298,7 +298,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-Assets object {name, type }
+Assets object { name, type }
 
 </summary>
 
@@ -322,7 +322,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-Browser object {name, type }
+Browser object { name, type }
 
 </summary>
 
@@ -346,7 +346,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-D1 object {database\_id, name, type, id }
+D1 object { database\_id, name, type, id }
 
 </summary>
 
@@ -384,7 +384,7 @@ Identifier of the D1 database to bind to.
 
 <summary>
 
-DataBlob object {name, part, type }
+DataBlob object { name, part, type }
 
 </summary>
 
@@ -414,7 +414,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-DispatchNamespace object {name, namespace, type, outbound }
+DispatchNamespace object { name, namespace, type, outbound }
 
 </summary>
 
@@ -440,7 +440,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-outbound: optional object {params, worker }
+outbound: optional object { params, worker }
 
 Outbound worker.
 
@@ -450,7 +450,7 @@ Outbound worker.
 
 <summary>
 
-params: optional array of object {name }
+params: optional array of object { name }
 
 Pass information from the Dispatch Worker to the Outbound Worker through the parameters.
 
@@ -470,7 +470,7 @@ Name of the parameter.
 
 <summary>
 
-worker: optional object {entrypoint, environment, service }
+worker: optional object { entrypoint, environment, service }
 
 Outbound worker.
 
@@ -510,7 +510,7 @@ Name of the outbound worker.
 
 <summary>
 
-DurableObjectNamespace object {name, type, class\_name, 4 more }
+DurableObjectNamespace object { name, type, class\_name, 4 more }
 
 </summary>
 
@@ -566,7 +566,7 @@ The script where the Durable Object is defined, if it is external to this Worker
 
 <summary>
 
-Hyperdrive object {id, name, type }
+Hyperdrive object { id, name, type }
 
 </summary>
 
@@ -596,7 +596,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-Inherit object {name, type, old\_name, version\_id }
+Inherit object { name, type, old\_name, version\_id }
 
 </summary>
 
@@ -632,7 +632,7 @@ Identifier for the version to inherit the binding from. This can be a version ID
 
 <summary>
 
-Images object {name, type }
+Images object { name, type }
 
 </summary>
 
@@ -656,7 +656,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-Json object {json, name, type }
+Json object { json, name, type }
 
 </summary>
 
@@ -686,7 +686,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-KVNamespace object {name, namespace\_id, type }
+KVNamespace object { name, namespace\_id, type }
 
 </summary>
 
@@ -718,7 +718,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-Media object {name, type }
+Media object { name, type }
 
 </summary>
 
@@ -742,7 +742,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-MTLSCertificate object {certificate\_id, name, type }
+MTLSCertificate object { certificate\_id, name, type }
 
 </summary>
 
@@ -772,7 +772,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-PlainText object {name, text, type }
+PlainText object { name, text, type }
 
 </summary>
 
@@ -802,7 +802,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-Pipelines object {name, pipeline, type }
+Pipelines object { name, pipeline, type }
 
 </summary>
 
@@ -832,7 +832,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-K2 object {name, stream, type }
+K2 object { name, stream, type }
 
 A K2 stream binding. Available only to accounts enabled for K2.
 
@@ -864,7 +864,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-Queue object {name, queue\_name, type }
+Queue object { name, queue\_name, type }
 
 </summary>
 
@@ -894,7 +894,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-Ratelimit object {name, namespace\_id, simple, type }
+Ratelimit object { name, namespace\_id, simple, type }
 
 </summary>
 
@@ -914,7 +914,7 @@ Identifier of the rate limit namespace to bind to.
 
 <summary>
 
-simple: object {limit, period, mitigation\_timeout }
+simple: object { limit, period, mitigation\_timeout }
 
 The rate limit configuration.
 
@@ -956,7 +956,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-R2Bucket object {bucket\_name, name, type, jurisdiction }
+R2Bucket object { bucket\_name, name, type, jurisdiction }
 
 </summary>
 
@@ -982,7 +982,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-jurisdiction: optional "eu"or "fedramp"or "fedramp-high"or "us"
+jurisdiction: optional "eu" or "fedramp" or "fedramp-high" or "us"
 
 The <a href="https://developers.cloudflare.com/r2/reference/data-location/#jurisdictional-restrictions">jurisdiction</a> of the R2 bucket.
 
@@ -1018,7 +1018,7 @@ One of the following:
 
 <summary>
 
-SecretText object {name, text, type }
+SecretText object { name, text, type }
 
 </summary>
 
@@ -1048,7 +1048,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-SendEmail object {name, type, allowed\_destination\_addresses, 2 more }
+SendEmail object { name, type, allowed\_destination\_addresses, 2 more }
 
 </summary>
 
@@ -1092,7 +1092,7 @@ formatemail
 
 <summary>
 
-Service object {name, service, type, 2 more }
+Service object { name, service, type, 2 more }
 
 </summary>
 
@@ -1134,7 +1134,7 @@ Optional environment if the Worker utilizes one.
 
 <summary>
 
-TextBlob object {name, part, type }
+TextBlob object { name, part, type }
 
 </summary>
 
@@ -1164,7 +1164,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-Vectorize object {index\_name, name, type }
+Vectorize object { index\_name, name, type }
 
 </summary>
 
@@ -1194,7 +1194,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-VersionMetadata object {name, type }
+VersionMetadata object { name, type }
 
 </summary>
 
@@ -1218,7 +1218,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-SecretsStoreSecret object {name, secret\_name, store\_id, type }
+SecretsStoreSecret object { name, secret\_name, store\_id, type }
 
 </summary>
 
@@ -1254,7 +1254,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-Flagship object {app\_id, name, type }
+Flagship object { app\_id, name, type }
 
 </summary>
 
@@ -1286,7 +1286,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-SecretKey object {algorithm, format, name, 4 more }
+SecretKey object { algorithm, format, name, 4 more }
 
 </summary>
 
@@ -1300,7 +1300,7 @@ Algorithm-specific key parameters. <a href="https://developer.mozilla.org/en-US/
 
 <summary>
 
-format: "raw"or "pkcs8"or "spki"or "jwk"
+format: "raw" or "pkcs8" or "spki" or "jwk"
 
 Data format of the key. <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#format">Learn more</a>.
 
@@ -1344,7 +1344,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-usages: array of "encrypt"or "decrypt"or "sign"or 5 more
+usages: array of "encrypt" or "decrypt" or "sign" or 5 more
 
 Allowed operations with the key. <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#keyUsages">Learn more</a>.
 
@@ -1408,7 +1408,7 @@ Key data in <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCryp
 
 <summary>
 
-Workflow object {name, type, workflow\_name, 2 more }
+Workflow object { name, type, workflow\_name, 2 more }
 
 </summary>
 
@@ -1450,7 +1450,7 @@ Script name that contains the Workflow. If not provided, defaults to this script
 
 <summary>
 
-WasmModule object {name, part, type }
+WasmModule object { name, part, type }
 
 </summary>
 
@@ -1480,7 +1480,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-VPCService object {name, service\_id, type }
+VPCService object { name, service\_id, type }
 
 </summary>
 
@@ -1510,7 +1510,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-VPCNetwork object {name, type, identity, 2 more }
+VPCNetwork object { name, type, identity, 2 more }
 
 </summary>
 
@@ -1552,7 +1552,7 @@ UUID of the Cloudflare Tunnel to bind to. Mutually exclusive with network\_id.
 
 <summary>
 
-WorkerLoader object {name, type }
+WorkerLoader object { name, type }
 
 </summary>
 
@@ -1580,7 +1580,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-cache\_options: optional object {enabled, cross\_version\_cache }
+cache\_options: optional object { enabled, cross\_version\_cache }
 
 Global CacheW configuration for the Worker. When caching is on, the platform provisions a <code>cloudflare.app</code> zone for the Worker. A <code>type: worker</code> entry in the <code>exports</code> map can override this value for a single entrypoint.
 
@@ -1618,7 +1618,7 @@ Flags that enable or disable certain features in the Workers runtime. Used to en
 
 <summary>
 
-exports: optional map\[object {type, cache, state } or object {storage, type, container, state } or object {state, type } or 3 more]
+exports: optional map\[object { type, cache, state } or object { storage, type, container, state } or object { state, type } or 3 more]
 
 Declarative exports for the Worker. Worker entrypoint entries (<code>type: worker</code>) carry cache configuration for that entrypoint.
 
@@ -1630,7 +1630,7 @@ One of the following:
 
 <summary>
 
-Worker object {type, cache, state }
+Worker object { type, cache, state }
 
 A named Worker entrypoint export (<code>type: worker</code>). Worker entrypoints are always live (<code>state: created</code>) and carry no storage or lifecycle fields. The optional <code>cache</code> block overrides the Worker’s global <code>cache_options.enabled</code> for this entrypoint.
 
@@ -1646,7 +1646,7 @@ Marks this entry as a Worker entrypoint export.
 
 <summary>
 
-cache: optional object {enabled }
+cache: optional object { enabled }
 
 Cache override for this entrypoint. Overrides the Worker’s global <code>cache_options.enabled</code> for this entrypoint only.
 
@@ -1676,7 +1676,7 @@ Live export. May be omitted; defaults to <code>created</code>.
 
 <summary>
 
-WorkersDurableObjectExport object {storage, type, container, state }
+WorkersDurableObjectExport object { storage, type, container, state }
 
 A live Durable Object export (<code>state: created</code>, the default). The platform auto-provisions the namespace on first deploy, matches it on subsequent deploys, and never mutates or deletes it as a side effect of a code-only change. <code>storage</code> is required; <code>renamed_to</code>, <code>transferred_to</code> and <code>transfer_from</code> are not allowed on a live entry.
 
@@ -1686,7 +1686,7 @@ A live Durable Object export (<code>state: created</code>, the default). The pla
 
 <summary>
 
-storage: "sqlite"or "legacy-kv"
+storage: "sqlite" or "legacy-kv"
 
 Durable Object storage backend. <code>sqlite</code> is the recommended (and only) backend for new namespaces. <code>legacy-kv</code> is accepted only for a class whose namespace already exists as KV-backed; the <code>exports</code> flow never provisions a new <code>legacy-kv</code> namespace.
 
@@ -1734,7 +1734,7 @@ Live export. May be omitted; defaults to <code>created</code>.
 
 <summary>
 
-WorkersDurableObjectDeletedExport object {state, type }
+WorkersDurableObjectDeletedExport object { state, type }
 
 A <code>deleted</code> tombstone: retires the provisioned namespace for this class and all of its data. The class must be absent from the uploaded code and no other Worker in the account may bind to the namespace, otherwise the deploy is rejected. No other fields are allowed. Deletion is irreversible.
 
@@ -1760,7 +1760,7 @@ Marks this entry as a Durable Object export.
 
 <summary>
 
-WorkersDurableObjectRenamedExport object {renamed\_to, state, type }
+WorkersDurableObjectRenamedExport object { renamed\_to, state, type }
 
 A <code>renamed</code> tombstone: rewrites the provisioned namespace’s class name from this map key to <code>renamed_to</code>. The source class may stay in code during the rollout window (an info notice is emitted). <code>storage</code>, <code>transferred_to</code> and <code>transfer_from</code> are not allowed.
 
@@ -1794,7 +1794,7 @@ Marks this entry as a Durable Object export.
 
 <summary>
 
-WorkersDurableObjectTransferredExport object {state, transferred\_to, type }
+WorkersDurableObjectTransferredExport object { state, transferred\_to, type }
 
 A <code>transferred</code> tombstone (source side of a two-phase transfer): hands ownership of the provisioned namespace to another script in the same account, named by <code>transferred_to</code>. The target must have already deployed a matching <code>expecting-transfer</code> entry. The source class may stay in code during the rollout window (an info notice is emitted). <code>storage</code>, <code>renamed_to</code> and <code>transfer_from</code> are not allowed.
 
@@ -1828,7 +1828,7 @@ Marks this entry as a Durable Object export.
 
 <summary>
 
-WorkersDurableObjectExpectingTransferExport object {state, storage, transfer\_from, 2 more }
+WorkersDurableObjectExpectingTransferExport object { state, storage, transfer\_from, 2 more }
 
 The target side of a two-phase transfer (<code>state: expecting-transfer</code>). Declares that this script expects to receive a namespace for this class from the <code>transfer_from</code> script. This is a live entry, not a tombstone: bindings resolve through the source’s namespace until the source commits with a <code>transferred</code> tombstone. <code>storage</code> and <code>transfer_from</code> are required; <code>renamed_to</code> and <code>transferred_to</code> are not allowed.
 
@@ -1844,7 +1844,7 @@ Target side of a two-phase transfer.
 
 <summary>
 
-storage: "sqlite"or "legacy-kv"
+storage: "sqlite" or "legacy-kv"
 
 Durable Object storage backend. <code>sqlite</code> is the recommended (and only) backend for new namespaces. <code>legacy-kv</code> is accepted only for a class whose namespace already exists as KV-backed; the <code>exports</code> flow never provisions a new <code>legacy-kv</code> namespace.
 
@@ -1898,7 +1898,7 @@ maxLength128
 
 <summary>
 
-exports\_reconciliation: optional object {created, deleted, info, 6 more }
+exports\_reconciliation: optional object { created, deleted, info, 6 more }
 
 Summary of the declarative exports reconciliation that ran on this upload. Populated only when the uploaded metadata included an <code>exports</code> block. Durable Object entries drive reconciliation; <code>type: worker</code> entries do not contribute to this summary.
 
@@ -1920,7 +1920,7 @@ Class names whose namespace was deleted by a <code>deleted</code> tombstone.
 
 <summary>
 
-info: array of object {class, message, scenario, 2 more }
+info: array of object { class, message, scenario, 2 more }
 
 Non-blocking info entries (stale tombstones, tombstone applied with class still in code). See <code>exports_reconciliation_info</code>.
 
@@ -1942,7 +1942,7 @@ Human-readable explanation.
 
 <summary>
 
-scenario: "code\_class\_not\_in\_exports"or "provisioned\_class\_missing\_from\_config"or "config\_export\_not\_in\_code"or 30 more
+scenario: "code\_class\_not\_in\_exports" or "provisioned\_class\_missing\_from\_config" or "config\_export\_not\_in\_code" or 30 more
 
 Stable, machine-readable tag identifying which reconciliation scenario produced an error, warning, or info entry. Clients may branch on this value instead of parsing <code>message</code>.
 
@@ -2114,7 +2114,7 @@ Source class names whose tombstone entry is now stale and safe to delete from <c
 
 <summary>
 
-renamed: array of object {from, to }
+renamed: array of object { from, to }
 
 Applied <code>renamed</code> tombstones.
 
@@ -2140,7 +2140,7 @@ The new class name (<code>renamed_to</code>).
 
 <summary>
 
-transfer\_pending: array of object {class, from }
+transfer\_pending: array of object { class, from }
 
 Phase-1 transfer hints recorded on the target side.
 
@@ -2166,7 +2166,7 @@ The source script the namespace will be transferred from.
 
 <summary>
 
-transferred: array of object {class, phase, to }
+transferred: array of object { class, phase, to }
 
 Committed <code>transferred</code> tombstones (phase-2).
 
@@ -2204,7 +2204,7 @@ Class names whose provisioned namespace was mutated in place.
 
 <summary>
 
-warnings: array of object {class, message, scenario, namespace\_id }
+warnings: array of object { class, message, scenario, namespace\_id }
 
 Non-blocking warnings. See <code>exports_reconciliation_warning</code>.
 
@@ -2226,7 +2226,7 @@ Human-readable explanation of the warning.
 
 <summary>
 
-scenario: "code\_class\_not\_in\_exports"or "provisioned\_class\_missing\_from\_config"or "config\_export\_not\_in\_code"or 30 more
+scenario: "code\_class\_not\_in\_exports" or "provisioned\_class\_missing\_from\_config" or "config\_export\_not\_in\_code" or 30 more
 
 Stable, machine-readable tag identifying which reconciliation scenario produced an error, warning, or info entry. Clients may branch on this value instead of parsing <code>message</code>.
 
@@ -2390,7 +2390,7 @@ formatuuid
 
 <summary>
 
-limits: optional object {cpu\_ms, subrequests }
+limits: optional object { cpu\_ms, subrequests }
 
 Limits to apply for this Worker.
 
@@ -2422,7 +2422,7 @@ Whether Logpush is turned on for the Worker.
 
 <summary>
 
-migrations: optional <a href="https://developers.cloudflare.com/api/resources/workers#(resource)%20workers%20%3E%20(model)%20single_step_migration%20%3E%20(schema)">SingleStepMigration</a> { deleted\_classes, new\_classes, new\_sqlite\_classes, 4 more } or object {new\_tag, old\_tag, steps }
+migrations: optional <a href="https://developers.cloudflare.com/api/resources/workers#(resource)%20workers%20%3E%20(model)%20single_step_migration%20%3E%20(schema)">SingleStepMigration</a> { deleted\_classes, new\_classes, new\_sqlite\_classes, 4 more } or object { new\_tag, old\_tag, steps }
 
 Migrations to apply for Durable Objects associated with this Worker.
 
@@ -2434,7 +2434,7 @@ One of the following:
 
 <summary>
 
-SingleStepMigration object {deleted\_classes, new\_classes, new\_sqlite\_classes, 4 more }
+SingleStepMigration object { deleted\_classes, new\_classes, new\_sqlite\_classes, 4 more }
 
 A single set of migrations to apply.
 
@@ -2474,7 +2474,7 @@ Tag used to verify against the latest migration tag for this Worker. If they don
 
 <summary>
 
-renamed\_classes: optional array of object {from, to }
+renamed\_classes: optional array of object { from, to }
 
 A list of classes with Durable Object namespaces that were renamed.
 
@@ -2496,7 +2496,7 @@ to: optional string
 
 <summary>
 
-transferred\_classes: optional array of object {from, from\_script, to }
+transferred\_classes: optional array of object { from, from\_script, to }
 
 A list of transfers for Durable Object namespaces from a different Worker and class to a class defined in this Worker.
 
@@ -2526,7 +2526,7 @@ to: optional string
 
 <summary>
 
-WorkersMultipleStepMigrations object {new\_tag, old\_tag, steps }
+WorkersMultipleStepMigrations object { new\_tag, old\_tag, steps }
 
 </summary>
 
@@ -2574,7 +2574,7 @@ A list of classes to create Durable Object namespaces with SQLite from.
 
 <summary>
 
-renamed\_classes: optional array of object {from, to }
+renamed\_classes: optional array of object { from, to }
 
 A list of classes with Durable Object namespaces that were renamed.
 
@@ -2596,7 +2596,7 @@ to: optional string
 
 <summary>
 
-transferred\_classes: optional array of object {from, from\_script, to }
+transferred\_classes: optional array of object { from, from\_script, to }
 
 A list of transfers for Durable Object namespaces from a different Worker and class to a class defined in this Worker.
 
@@ -2634,7 +2634,7 @@ to: optional string
 
 <summary>
 
-observability: optional object {enabled, agents, head\_sampling\_rate, 4 more }
+observability: optional object { enabled, agents, head\_sampling\_rate, 4 more }
 
 Observability settings for the Worker.
 
@@ -2650,7 +2650,7 @@ Whether observability is enabled for the Worker.
 
 <summary>
 
-agents: optional object {enabled, head\_sampling\_rate, persist }
+agents: optional object { enabled, head\_sampling\_rate, persist }
 
 Agents observability settings for the Worker.
 
@@ -2688,7 +2688,7 @@ The sampling rate for incoming requests. From 0 to 1 (1 = 100%, 0.1 = 10%). Defa
 
 <summary>
 
-issues: optional object {enabled }
+issues: optional object { enabled }
 
 Real-time Issues settings for the Worker.
 
@@ -2708,7 +2708,7 @@ Whether real-time Issues are enabled for the Worker.
 
 <summary>
 
-logs: optional object {enabled, invocation\_logs, destinations, 2 more }
+logs: optional object { enabled, invocation\_logs, destinations, 2 more }
 
 Log settings for the Worker.
 
@@ -2758,7 +2758,7 @@ Whether query strings are removed from request URLs in logs and traces.
 
 <summary>
 
-traces: optional object {destinations, enabled, head\_sampling\_rate, 2 more }
+traces: optional object { destinations, enabled, head\_sampling\_rate, 2 more }
 
 Trace settings for the Worker.
 
@@ -2792,7 +2792,7 @@ Whether trace persistence is enabled for the Worker.
 
 <summary>
 
-propagation\_policy: optional "authenticated"or "accept"
+propagation\_policy: optional "authenticated" or "accept"
 
 Controls how inbound trace context (traceparent/tracestate) headers on incoming requests are handled. “authenticated” honors inbound trace context only when accompanied by a valid trace auth token. “accept” unconditionally accepts inbound trace context. Requires the trace propagation feature to be enabled. Returns null when the trace propagation feature is not enabled for the account.
 
@@ -2824,7 +2824,7 @@ One of the following:
 
 <summary>
 
-placement: optional object {mode } or object {region } or object {hostname } or 5 more
+placement: optional object { mode } or object { region } or object { hostname } or 5 more
 
 Configuration for <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>. Specify mode=‘smart’ for Smart Placement, or one of region/hostname/host.
 
@@ -2836,7 +2836,7 @@ One of the following:
 
 <summary>
 
-Mode object {mode }
+Mode object { mode }
 
 </summary>
 
@@ -2854,7 +2854,7 @@ Enables <a href="https://developers.cloudflare.com/workers/configuration/smart-p
 
 <summary>
 
-Region object {region }
+Region object { region }
 
 </summary>
 
@@ -2872,7 +2872,7 @@ Cloud region for targeted placement in format ‘provider:region’.
 
 <summary>
 
-Hostname object {hostname }
+Hostname object { hostname }
 
 </summary>
 
@@ -2890,7 +2890,7 @@ HTTP hostname for targeted placement.
 
 <summary>
 
-Host object {host }
+Host object { host }
 
 </summary>
 
@@ -2908,7 +2908,7 @@ TCP host and port for targeted placement.
 
 <summary>
 
-object {mode, region }
+object { mode, region }
 
 </summary>
 
@@ -2932,7 +2932,7 @@ Cloud region for targeted placement in format ‘provider:region’.
 
 <summary>
 
-object {hostname, mode }
+object { hostname, mode }
 
 </summary>
 
@@ -2956,7 +2956,7 @@ Targeted placement mode.
 
 <summary>
 
-object {host, mode }
+object { host, mode }
 
 </summary>
 
@@ -2980,7 +2980,7 @@ Targeted placement mode.
 
 <summary>
 
-object {mode, target }
+object { mode, target }
 
 </summary>
 
@@ -2994,7 +2994,7 @@ Targeted placement mode.
 
 <summary>
 
-target: array of object {region } or object {hostname } or object {host }
+target: array of object { region } or object { hostname } or object { host }
 
 Array of placement targets (currently limited to single target).
 
@@ -3006,7 +3006,7 @@ One of the following:
 
 <summary>
 
-Region object {region }
+Region object { region }
 
 </summary>
 
@@ -3024,7 +3024,7 @@ Cloud region in format ‘provider:region’.
 
 <summary>
 
-Hostname object {hostname }
+Hostname object { hostname }
 
 </summary>
 
@@ -3042,7 +3042,7 @@ HTTP hostname for targeted placement.
 
 <summary>
 
-Host object {host }
+Host object { host }
 
 </summary>
 
@@ -3110,7 +3110,7 @@ Optional dispatch namespace the script belongs to.
 
 <summary>
 
-usage\_model: optional "standard"or "bundled"or "unbound"
+usage\_model: optional "standard" or "bundled" or "unbound"
 
 Usage model for the Worker invocations.
 
@@ -3144,7 +3144,7 @@ One of the following:
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -3166,7 +3166,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -3186,7 +3186,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -3208,7 +3208,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -3234,7 +3234,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {bindings, cache\_options, compatibility\_date, 11 more }
+result: optional object { bindings, cache\_options, compatibility\_date, 11 more }
 
 Script and version settings for Workers for Platforms namespace scripts. Same as script-and-version-settings-item but without annotations, which are not supported for namespace scripts.
 
@@ -3244,7 +3244,7 @@ Script and version settings for Workers for Platforms namespace scripts. Same as
 
 <summary>
 
-bindings: optional array of object {name, type } or object {instance\_name, name, type, namespace } or object {name, namespace, type } or 36 more
+bindings: optional array of object { name, type } or object { instance\_name, name, type, namespace } or object { name, namespace, type } or 36 more
 
 List of bindings attached to a Worker. You can find more about bindings on our docs: <a href="https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings">https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings</a>.
 
@@ -3256,7 +3256,7 @@ One of the following:
 
 <summary>
 
-AI object {name, type }
+AI object { name, type }
 
 </summary>
 
@@ -3280,7 +3280,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-AISearch object {instance\_name, name, type, namespace }
+AISearch object { instance\_name, name, type, namespace }
 
 </summary>
 
@@ -3316,7 +3316,7 @@ The namespace the instance belongs to. Defaults to “default” if omitted. Cus
 
 <summary>
 
-AISearchNamespace object {name, namespace, type }
+AISearchNamespace object { name, namespace, type }
 
 </summary>
 
@@ -3346,7 +3346,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-Messaging object {name, namespace, type }
+Messaging object { name, namespace, type }
 
 </summary>
 
@@ -3376,7 +3376,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-AnalyticsEngine object {dataset, name, type }
+AnalyticsEngine object { dataset, name, type }
 
 </summary>
 
@@ -3406,7 +3406,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-Artifacts object {name, namespace, type }
+Artifacts object { name, namespace, type }
 
 </summary>
 
@@ -3440,7 +3440,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-Assets object {name, type }
+Assets object { name, type }
 
 </summary>
 
@@ -3464,7 +3464,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-Browser object {name, type }
+Browser object { name, type }
 
 </summary>
 
@@ -3488,7 +3488,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-D1 object {database\_id, name, type, id }
+D1 object { database\_id, name, type, id }
 
 </summary>
 
@@ -3526,7 +3526,7 @@ Identifier of the D1 database to bind to.
 
 <summary>
 
-DataBlob object {name, part, type }
+DataBlob object { name, part, type }
 
 </summary>
 
@@ -3556,7 +3556,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-DispatchNamespace object {name, namespace, type, outbound }
+DispatchNamespace object { name, namespace, type, outbound }
 
 </summary>
 
@@ -3582,7 +3582,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-outbound: optional object {params, worker }
+outbound: optional object { params, worker }
 
 Outbound worker.
 
@@ -3592,7 +3592,7 @@ Outbound worker.
 
 <summary>
 
-params: optional array of object {name }
+params: optional array of object { name }
 
 Pass information from the Dispatch Worker to the Outbound Worker through the parameters.
 
@@ -3612,7 +3612,7 @@ Name of the parameter.
 
 <summary>
 
-worker: optional object {entrypoint, environment, service }
+worker: optional object { entrypoint, environment, service }
 
 Outbound worker.
 
@@ -3652,7 +3652,7 @@ Name of the outbound worker.
 
 <summary>
 
-DurableObjectNamespace object {name, type, class\_name, 4 more }
+DurableObjectNamespace object { name, type, class\_name, 4 more }
 
 </summary>
 
@@ -3708,7 +3708,7 @@ The script where the Durable Object is defined, if it is external to this Worker
 
 <summary>
 
-Hyperdrive object {id, name, type }
+Hyperdrive object { id, name, type }
 
 </summary>
 
@@ -3738,7 +3738,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-Inherit object {name, type, old\_name, version\_id }
+Inherit object { name, type, old\_name, version\_id }
 
 </summary>
 
@@ -3774,7 +3774,7 @@ Identifier for the version to inherit the binding from. This can be a version ID
 
 <summary>
 
-Images object {name, type }
+Images object { name, type }
 
 </summary>
 
@@ -3798,7 +3798,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-Json object {json, name, type }
+Json object { json, name, type }
 
 </summary>
 
@@ -3828,7 +3828,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-KVNamespace object {name, namespace\_id, type }
+KVNamespace object { name, namespace\_id, type }
 
 </summary>
 
@@ -3860,7 +3860,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-Media object {name, type }
+Media object { name, type }
 
 </summary>
 
@@ -3884,7 +3884,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-MTLSCertificate object {certificate\_id, name, type }
+MTLSCertificate object { certificate\_id, name, type }
 
 </summary>
 
@@ -3914,7 +3914,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-PlainText object {name, text, type }
+PlainText object { name, text, type }
 
 </summary>
 
@@ -3944,7 +3944,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-Pipelines object {name, pipeline, type }
+Pipelines object { name, pipeline, type }
 
 </summary>
 
@@ -3974,7 +3974,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-K2 object {name, stream, type }
+K2 object { name, stream, type }
 
 A K2 stream binding. Available only to accounts enabled for K2.
 
@@ -4006,7 +4006,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-Queue object {name, queue\_name, type }
+Queue object { name, queue\_name, type }
 
 </summary>
 
@@ -4036,7 +4036,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-Ratelimit object {name, namespace\_id, simple, type }
+Ratelimit object { name, namespace\_id, simple, type }
 
 </summary>
 
@@ -4056,7 +4056,7 @@ Identifier of the rate limit namespace to bind to.
 
 <summary>
 
-simple: object {limit, period, mitigation\_timeout }
+simple: object { limit, period, mitigation\_timeout }
 
 The rate limit configuration.
 
@@ -4098,7 +4098,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-R2Bucket object {bucket\_name, name, type, jurisdiction }
+R2Bucket object { bucket\_name, name, type, jurisdiction }
 
 </summary>
 
@@ -4124,7 +4124,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-jurisdiction: optional "eu"or "fedramp"or "fedramp-high"or "us"
+jurisdiction: optional "eu" or "fedramp" or "fedramp-high" or "us"
 
 The <a href="https://developers.cloudflare.com/r2/reference/data-location/#jurisdictional-restrictions">jurisdiction</a> of the R2 bucket.
 
@@ -4160,7 +4160,7 @@ One of the following:
 
 <summary>
 
-SecretText object {name, text, type }
+SecretText object { name, text, type }
 
 </summary>
 
@@ -4190,7 +4190,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-SendEmail object {name, type, allowed\_destination\_addresses, 2 more }
+SendEmail object { name, type, allowed\_destination\_addresses, 2 more }
 
 </summary>
 
@@ -4234,7 +4234,7 @@ formatemail
 
 <summary>
 
-Service object {name, service, type, 2 more }
+Service object { name, service, type, 2 more }
 
 </summary>
 
@@ -4276,7 +4276,7 @@ Optional environment if the Worker utilizes one.
 
 <summary>
 
-TextBlob object {name, part, type }
+TextBlob object { name, part, type }
 
 </summary>
 
@@ -4306,7 +4306,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-Vectorize object {index\_name, name, type }
+Vectorize object { index\_name, name, type }
 
 </summary>
 
@@ -4336,7 +4336,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-VersionMetadata object {name, type }
+VersionMetadata object { name, type }
 
 </summary>
 
@@ -4360,7 +4360,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-SecretsStoreSecret object {name, secret\_name, store\_id, type }
+SecretsStoreSecret object { name, secret\_name, store\_id, type }
 
 </summary>
 
@@ -4396,7 +4396,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-Flagship object {app\_id, name, type }
+Flagship object { app\_id, name, type }
 
 </summary>
 
@@ -4428,7 +4428,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-SecretKey object {algorithm, format, name, 4 more }
+SecretKey object { algorithm, format, name, 4 more }
 
 </summary>
 
@@ -4442,7 +4442,7 @@ Algorithm-specific key parameters. <a href="https://developer.mozilla.org/en-US/
 
 <summary>
 
-format: "raw"or "pkcs8"or "spki"or "jwk"
+format: "raw" or "pkcs8" or "spki" or "jwk"
 
 Data format of the key. <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#format">Learn more</a>.
 
@@ -4486,7 +4486,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-usages: array of "encrypt"or "decrypt"or "sign"or 5 more
+usages: array of "encrypt" or "decrypt" or "sign" or 5 more
 
 Allowed operations with the key. <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#keyUsages">Learn more</a>.
 
@@ -4550,7 +4550,7 @@ Key data in <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCryp
 
 <summary>
 
-Workflow object {name, type, workflow\_name, 2 more }
+Workflow object { name, type, workflow\_name, 2 more }
 
 </summary>
 
@@ -4592,7 +4592,7 @@ Script name that contains the Workflow. If not provided, defaults to this script
 
 <summary>
 
-WasmModule object {name, part, type }
+WasmModule object { name, part, type }
 
 </summary>
 
@@ -4622,7 +4622,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-VPCService object {name, service\_id, type }
+VPCService object { name, service\_id, type }
 
 </summary>
 
@@ -4652,7 +4652,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-VPCNetwork object {name, type, identity, 2 more }
+VPCNetwork object { name, type, identity, 2 more }
 
 </summary>
 
@@ -4694,7 +4694,7 @@ UUID of the Cloudflare Tunnel to bind to. Mutually exclusive with network\_id.
 
 <summary>
 
-WorkerLoader object {name, type }
+WorkerLoader object { name, type }
 
 </summary>
 
@@ -4722,7 +4722,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-cache\_options: optional object {enabled, cross\_version\_cache }
+cache\_options: optional object { enabled, cross\_version\_cache }
 
 Global CacheW configuration for the Worker. When caching is on, the platform provisions a <code>cloudflare.app</code> zone for the Worker. A <code>type: worker</code> entry in the <code>exports</code> map can override this value for a single entrypoint.
 
@@ -4760,7 +4760,7 @@ Flags that enable or disable certain features in the Workers runtime. Used to en
 
 <summary>
 
-exports: optional map\[object {type, cache, state } or object {storage, type, container, state } or object {state, type } or 3 more]
+exports: optional map\[object { type, cache, state } or object { storage, type, container, state } or object { state, type } or 3 more]
 
 Declarative exports for the Worker. Worker entrypoint entries (<code>type: worker</code>) carry cache configuration for that entrypoint.
 
@@ -4772,7 +4772,7 @@ One of the following:
 
 <summary>
 
-Worker object {type, cache, state }
+Worker object { type, cache, state }
 
 A named Worker entrypoint export (<code>type: worker</code>). Worker entrypoints are always live (<code>state: created</code>) and carry no storage or lifecycle fields. The optional <code>cache</code> block overrides the Worker’s global <code>cache_options.enabled</code> for this entrypoint.
 
@@ -4788,7 +4788,7 @@ Marks this entry as a Worker entrypoint export.
 
 <summary>
 
-cache: optional object {enabled }
+cache: optional object { enabled }
 
 Cache override for this entrypoint. Overrides the Worker’s global <code>cache_options.enabled</code> for this entrypoint only.
 
@@ -4818,7 +4818,7 @@ Live export. May be omitted; defaults to <code>created</code>.
 
 <summary>
 
-WorkersDurableObjectExport object {storage, type, container, state }
+WorkersDurableObjectExport object { storage, type, container, state }
 
 A live Durable Object export (<code>state: created</code>, the default). The platform auto-provisions the namespace on first deploy, matches it on subsequent deploys, and never mutates or deletes it as a side effect of a code-only change. <code>storage</code> is required; <code>renamed_to</code>, <code>transferred_to</code> and <code>transfer_from</code> are not allowed on a live entry.
 
@@ -4828,7 +4828,7 @@ A live Durable Object export (<code>state: created</code>, the default). The pla
 
 <summary>
 
-storage: "sqlite"or "legacy-kv"
+storage: "sqlite" or "legacy-kv"
 
 Durable Object storage backend. <code>sqlite</code> is the recommended (and only) backend for new namespaces. <code>legacy-kv</code> is accepted only for a class whose namespace already exists as KV-backed; the <code>exports</code> flow never provisions a new <code>legacy-kv</code> namespace.
 
@@ -4876,7 +4876,7 @@ Live export. May be omitted; defaults to <code>created</code>.
 
 <summary>
 
-WorkersDurableObjectDeletedExport object {state, type }
+WorkersDurableObjectDeletedExport object { state, type }
 
 A <code>deleted</code> tombstone: retires the provisioned namespace for this class and all of its data. The class must be absent from the uploaded code and no other Worker in the account may bind to the namespace, otherwise the deploy is rejected. No other fields are allowed. Deletion is irreversible.
 
@@ -4902,7 +4902,7 @@ Marks this entry as a Durable Object export.
 
 <summary>
 
-WorkersDurableObjectRenamedExport object {renamed\_to, state, type }
+WorkersDurableObjectRenamedExport object { renamed\_to, state, type }
 
 A <code>renamed</code> tombstone: rewrites the provisioned namespace’s class name from this map key to <code>renamed_to</code>. The source class may stay in code during the rollout window (an info notice is emitted). <code>storage</code>, <code>transferred_to</code> and <code>transfer_from</code> are not allowed.
 
@@ -4936,7 +4936,7 @@ Marks this entry as a Durable Object export.
 
 <summary>
 
-WorkersDurableObjectTransferredExport object {state, transferred\_to, type }
+WorkersDurableObjectTransferredExport object { state, transferred\_to, type }
 
 A <code>transferred</code> tombstone (source side of a two-phase transfer): hands ownership of the provisioned namespace to another script in the same account, named by <code>transferred_to</code>. The target must have already deployed a matching <code>expecting-transfer</code> entry. The source class may stay in code during the rollout window (an info notice is emitted). <code>storage</code>, <code>renamed_to</code> and <code>transfer_from</code> are not allowed.
 
@@ -4970,7 +4970,7 @@ Marks this entry as a Durable Object export.
 
 <summary>
 
-WorkersDurableObjectExpectingTransferExport object {state, storage, transfer\_from, 2 more }
+WorkersDurableObjectExpectingTransferExport object { state, storage, transfer\_from, 2 more }
 
 The target side of a two-phase transfer (<code>state: expecting-transfer</code>). Declares that this script expects to receive a namespace for this class from the <code>transfer_from</code> script. This is a live entry, not a tombstone: bindings resolve through the source’s namespace until the source commits with a <code>transferred</code> tombstone. <code>storage</code> and <code>transfer_from</code> are required; <code>renamed_to</code> and <code>transferred_to</code> are not allowed.
 
@@ -4986,7 +4986,7 @@ Target side of a two-phase transfer.
 
 <summary>
 
-storage: "sqlite"or "legacy-kv"
+storage: "sqlite" or "legacy-kv"
 
 Durable Object storage backend. <code>sqlite</code> is the recommended (and only) backend for new namespaces. <code>legacy-kv</code> is accepted only for a class whose namespace already exists as KV-backed; the <code>exports</code> flow never provisions a new <code>legacy-kv</code> namespace.
 
@@ -5040,7 +5040,7 @@ maxLength128
 
 <summary>
 
-exports\_reconciliation: optional object {created, deleted, info, 6 more }
+exports\_reconciliation: optional object { created, deleted, info, 6 more }
 
 Summary of the declarative exports reconciliation that ran on this upload. Populated only when the uploaded metadata included an <code>exports</code> block. Durable Object entries drive reconciliation; <code>type: worker</code> entries do not contribute to this summary.
 
@@ -5062,7 +5062,7 @@ Class names whose namespace was deleted by a <code>deleted</code> tombstone.
 
 <summary>
 
-info: array of object {class, message, scenario, 2 more }
+info: array of object { class, message, scenario, 2 more }
 
 Non-blocking info entries (stale tombstones, tombstone applied with class still in code). See <code>exports_reconciliation_info</code>.
 
@@ -5084,7 +5084,7 @@ Human-readable explanation.
 
 <summary>
 
-scenario: "code\_class\_not\_in\_exports"or "provisioned\_class\_missing\_from\_config"or "config\_export\_not\_in\_code"or 30 more
+scenario: "code\_class\_not\_in\_exports" or "provisioned\_class\_missing\_from\_config" or "config\_export\_not\_in\_code" or 30 more
 
 Stable, machine-readable tag identifying which reconciliation scenario produced an error, warning, or info entry. Clients may branch on this value instead of parsing <code>message</code>.
 
@@ -5256,7 +5256,7 @@ Source class names whose tombstone entry is now stale and safe to delete from <c
 
 <summary>
 
-renamed: array of object {from, to }
+renamed: array of object { from, to }
 
 Applied <code>renamed</code> tombstones.
 
@@ -5282,7 +5282,7 @@ The new class name (<code>renamed_to</code>).
 
 <summary>
 
-transfer\_pending: array of object {class, from }
+transfer\_pending: array of object { class, from }
 
 Phase-1 transfer hints recorded on the target side.
 
@@ -5308,7 +5308,7 @@ The source script the namespace will be transferred from.
 
 <summary>
 
-transferred: array of object {class, phase, to }
+transferred: array of object { class, phase, to }
 
 Committed <code>transferred</code> tombstones (phase-2).
 
@@ -5346,7 +5346,7 @@ Class names whose provisioned namespace was mutated in place.
 
 <summary>
 
-warnings: array of object {class, message, scenario, namespace\_id }
+warnings: array of object { class, message, scenario, namespace\_id }
 
 Non-blocking warnings. See <code>exports_reconciliation_warning</code>.
 
@@ -5368,7 +5368,7 @@ Human-readable explanation of the warning.
 
 <summary>
 
-scenario: "code\_class\_not\_in\_exports"or "provisioned\_class\_missing\_from\_config"or "config\_export\_not\_in\_code"or 30 more
+scenario: "code\_class\_not\_in\_exports" or "provisioned\_class\_missing\_from\_config" or "config\_export\_not\_in\_code" or 30 more
 
 Stable, machine-readable tag identifying which reconciliation scenario produced an error, warning, or info entry. Clients may branch on this value instead of parsing <code>message</code>.
 
@@ -5532,7 +5532,7 @@ formatuuid
 
 <summary>
 
-limits: optional object {cpu\_ms, subrequests }
+limits: optional object { cpu\_ms, subrequests }
 
 Limits to apply for this Worker.
 
@@ -5564,7 +5564,7 @@ Whether Logpush is turned on for the Worker.
 
 <summary>
 
-migrations: optional <a href="https://developers.cloudflare.com/api/resources/workers#(resource)%20workers%20%3E%20(model)%20single_step_migration%20%3E%20(schema)">SingleStepMigration</a> { deleted\_classes, new\_classes, new\_sqlite\_classes, 4 more } or object {new\_tag, old\_tag, steps }
+migrations: optional <a href="https://developers.cloudflare.com/api/resources/workers#(resource)%20workers%20%3E%20(model)%20single_step_migration%20%3E%20(schema)">SingleStepMigration</a> { deleted\_classes, new\_classes, new\_sqlite\_classes, 4 more } or object { new\_tag, old\_tag, steps }
 
 Migrations to apply for Durable Objects associated with this Worker.
 
@@ -5576,7 +5576,7 @@ One of the following:
 
 <summary>
 
-SingleStepMigration object {deleted\_classes, new\_classes, new\_sqlite\_classes, 4 more }
+SingleStepMigration object { deleted\_classes, new\_classes, new\_sqlite\_classes, 4 more }
 
 A single set of migrations to apply.
 
@@ -5616,7 +5616,7 @@ Tag used to verify against the latest migration tag for this Worker. If they don
 
 <summary>
 
-renamed\_classes: optional array of object {from, to }
+renamed\_classes: optional array of object { from, to }
 
 A list of classes with Durable Object namespaces that were renamed.
 
@@ -5638,7 +5638,7 @@ to: optional string
 
 <summary>
 
-transferred\_classes: optional array of object {from, from\_script, to }
+transferred\_classes: optional array of object { from, from\_script, to }
 
 A list of transfers for Durable Object namespaces from a different Worker and class to a class defined in this Worker.
 
@@ -5668,7 +5668,7 @@ to: optional string
 
 <summary>
 
-WorkersMultipleStepMigrations object {new\_tag, old\_tag, steps }
+WorkersMultipleStepMigrations object { new\_tag, old\_tag, steps }
 
 </summary>
 
@@ -5716,7 +5716,7 @@ A list of classes to create Durable Object namespaces with SQLite from.
 
 <summary>
 
-renamed\_classes: optional array of object {from, to }
+renamed\_classes: optional array of object { from, to }
 
 A list of classes with Durable Object namespaces that were renamed.
 
@@ -5738,7 +5738,7 @@ to: optional string
 
 <summary>
 
-transferred\_classes: optional array of object {from, from\_script, to }
+transferred\_classes: optional array of object { from, from\_script, to }
 
 A list of transfers for Durable Object namespaces from a different Worker and class to a class defined in this Worker.
 
@@ -5776,7 +5776,7 @@ to: optional string
 
 <summary>
 
-observability: optional object {enabled, agents, head\_sampling\_rate, 4 more }
+observability: optional object { enabled, agents, head\_sampling\_rate, 4 more }
 
 Observability settings for the Worker.
 
@@ -5792,7 +5792,7 @@ Whether observability is enabled for the Worker.
 
 <summary>
 
-agents: optional object {enabled, head\_sampling\_rate, persist }
+agents: optional object { enabled, head\_sampling\_rate, persist }
 
 Agents observability settings for the Worker.
 
@@ -5830,7 +5830,7 @@ The sampling rate for incoming requests. From 0 to 1 (1 = 100%, 0.1 = 10%). Defa
 
 <summary>
 
-issues: optional object {enabled }
+issues: optional object { enabled }
 
 Real-time Issues settings for the Worker.
 
@@ -5850,7 +5850,7 @@ Whether real-time Issues are enabled for the Worker.
 
 <summary>
 
-logs: optional object {enabled, invocation\_logs, destinations, 2 more }
+logs: optional object { enabled, invocation\_logs, destinations, 2 more }
 
 Log settings for the Worker.
 
@@ -5900,7 +5900,7 @@ Whether query strings are removed from request URLs in logs and traces.
 
 <summary>
 
-traces: optional object {destinations, enabled, head\_sampling\_rate, 2 more }
+traces: optional object { destinations, enabled, head\_sampling\_rate, 2 more }
 
 Trace settings for the Worker.
 
@@ -5934,7 +5934,7 @@ Whether trace persistence is enabled for the Worker.
 
 <summary>
 
-propagation\_policy: optional "authenticated"or "accept"
+propagation\_policy: optional "authenticated" or "accept"
 
 Controls how inbound trace context (traceparent/tracestate) headers on incoming requests are handled. “authenticated” honors inbound trace context only when accompanied by a valid trace auth token. “accept” unconditionally accepts inbound trace context. Requires the trace propagation feature to be enabled. Returns null when the trace propagation feature is not enabled for the account.
 
@@ -5966,7 +5966,7 @@ One of the following:
 
 <summary>
 
-placement: optional object {mode } or object {region } or object {hostname } or 5 more
+placement: optional object { mode } or object { region } or object { hostname } or 5 more
 
 Configuration for <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>. Specify mode=‘smart’ for Smart Placement, or one of region/hostname/host.
 
@@ -5978,7 +5978,7 @@ One of the following:
 
 <summary>
 
-Mode object {mode }
+Mode object { mode }
 
 </summary>
 
@@ -5996,7 +5996,7 @@ Enables <a href="https://developers.cloudflare.com/workers/configuration/smart-p
 
 <summary>
 
-Region object {region }
+Region object { region }
 
 </summary>
 
@@ -6014,7 +6014,7 @@ Cloud region for targeted placement in format ‘provider:region’.
 
 <summary>
 
-Hostname object {hostname }
+Hostname object { hostname }
 
 </summary>
 
@@ -6032,7 +6032,7 @@ HTTP hostname for targeted placement.
 
 <summary>
 
-Host object {host }
+Host object { host }
 
 </summary>
 
@@ -6050,7 +6050,7 @@ TCP host and port for targeted placement.
 
 <summary>
 
-object {mode, region }
+object { mode, region }
 
 </summary>
 
@@ -6074,7 +6074,7 @@ Cloud region for targeted placement in format ‘provider:region’.
 
 <summary>
 
-object {hostname, mode }
+object { hostname, mode }
 
 </summary>
 
@@ -6098,7 +6098,7 @@ Targeted placement mode.
 
 <summary>
 
-object {host, mode }
+object { host, mode }
 
 </summary>
 
@@ -6122,7 +6122,7 @@ Targeted placement mode.
 
 <summary>
 
-object {mode, target }
+object { mode, target }
 
 </summary>
 
@@ -6136,7 +6136,7 @@ Targeted placement mode.
 
 <summary>
 
-target: array of object {region } or object {hostname } or object {host }
+target: array of object { region } or object { hostname } or object { host }
 
 Array of placement targets (currently limited to single target).
 
@@ -6148,7 +6148,7 @@ One of the following:
 
 <summary>
 
-Region object {region }
+Region object { region }
 
 </summary>
 
@@ -6166,7 +6166,7 @@ Cloud region in format ‘provider:region’.
 
 <summary>
 
-Hostname object {hostname }
+Hostname object { hostname }
 
 </summary>
 
@@ -6184,7 +6184,7 @@ HTTP hostname for targeted placement.
 
 <summary>
 
-Host object {host }
+Host object { host }
 
 </summary>
 
@@ -6252,7 +6252,7 @@ Optional dispatch namespace the script belongs to.
 
 <summary>
 
-usage\_model: optional "standard"or "bundled"or "unbound"
+usage\_model: optional "standard" or "bundled" or "unbound"
 
 Usage model for the Worker invocations.
 

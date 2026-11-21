@@ -34,7 +34,7 @@ PATCH/accounts/{account\_id}/magic/advanced\_tcp\_protection/configs/tcp\_protec
 
 <summary>
 
-StatusGetResponse object {enabled }
+StatusGetResponse object { enabled }
 
 </summary>
 
@@ -50,7 +50,7 @@ enabled: boolean
 
 <summary>
 
-StatusEditResponse object {enabled }
+StatusEditResponse object { enabled }
 
 </summary>
 

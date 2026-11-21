@@ -52,7 +52,7 @@ PATCH/accounts/{account\_id}/load\_balancers/pools
 
 <summary>
 
-Pool object {id, check\_regions, created\_on, 17 more }
+Pool object { id, check\_regions, created\_on, 17 more }
 
 </summary>
 
@@ -164,7 +164,7 @@ Whether to enable (the default) or disable this pool. Disabled pools will not re
 
 <summary>
 
-health\_sources: optional array of "local"or "regional"or "global"
+health\_sources: optional array of "local" or "regional" or "global"
 
 A list of health sources, ordered from highest to lowest priority, used to evaluate individual origin health and overall pool health. The load balancer uses the first source that has data and falls back to the next. Currently accepted values are null or the exact array \[“regional”, “global”]; any other combination is rejected. Null (the default) behaves like \[“local”, “global”]. \[“regional”, “global”] makes each region steer on its own health, falling back to the global decision when a region has no fresh data. Setting regional requires at least one region in check\_regions.
 
@@ -345,7 +345,7 @@ multipleOf0.01
 
 <summary>
 
-PoolDeleteResponse object {id }
+PoolDeleteResponse object { id }
 
 </summary>
 
@@ -373,7 +373,7 @@ POST/accounts/{account\_id}/load\_balancers/pools/{pool\_id}/preview
 
 <summary>
 
-HealthGetResponse object {pool\_id, pop\_health }
+HealthGetResponse object { pool\_id, pop\_health }
 
 A list of regions from which to run health checks. Null means every Cloudflare data center.
 
@@ -389,7 +389,7 @@ Pool ID.
 
 <summary>
 
-pop\_health: optional object {healthy, origins }
+pop\_health: optional object { healthy, origins }
 
 List of regions and associated health status.
 
@@ -405,7 +405,7 @@ Whether health check in region is healthy.
 
 <summary>
 
-origins: optional array of object {ip }
+origins: optional array of object { ip }
 
 </summary>
 
@@ -413,7 +413,7 @@ origins: optional array of object {ip }
 
 <summary>
 
-ip: optional object {failure\_reason, healthy, response\_code, rtt }
+ip: optional object { failure\_reason, healthy, response\_code, rtt }
 
 </summary>
 
@@ -461,7 +461,7 @@ Origin RTT (Round Trip Time) response.
 
 <summary>
 
-HealthCreateResponse object {pools, preview\_id }
+HealthCreateResponse object { pools, preview\_id }
 
 </summary>
 
@@ -491,7 +491,7 @@ GET/accounts/{account\_id}/load\_balancers/pools/{pool\_id}/references
 
 <summary>
 
-ReferenceGetResponse object {reference\_type, resource\_id, resource\_name, resource\_type }
+ReferenceGetResponse object { reference\_type, resource\_id, resource\_name, resource\_type }
 
 </summary>
 
@@ -499,7 +499,7 @@ ReferenceGetResponse object {reference\_type, resource\_id, resource\_name, reso
 
 <summary>
 
-reference\_type: optional "\*"or "referral"or "referrer"
+reference\_type: optional "\*" or "referral" or "referrer"
 
 </summary>
 

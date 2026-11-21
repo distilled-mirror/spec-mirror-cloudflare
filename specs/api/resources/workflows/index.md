@@ -38,7 +38,7 @@ DELETE/accounts/{account\_id}/workflows/{workflow\_name}
 
 <summary>
 
-WorkflowListResponse object {id, class\_name, created\_on, 8 more }
+WorkflowListResponse object { id, class\_name, created\_on, 8 more }
 
 </summary>
 
@@ -90,7 +90,7 @@ formatdate-time
 
 <summary>
 
-jurisdiction: optional "eu"or "fedramp"or "us"
+jurisdiction: optional "eu" or "fedramp" or "us"
 
 Jurisdiction where instances of this workflow run and store data. Set when the workflow is created and cannot be changed.
 
@@ -118,7 +118,7 @@ One of the following:
 
 <summary>
 
-schedules: optional array of object {cron, next\_instance }
+schedules: optional array of object { cron, next\_instance }
 
 </summary>
 
@@ -148,7 +148,7 @@ Whether the bound Worker was deleted, leaving this Workflow inactive.
 
 <summary>
 
-WorkflowGetResponse object {id, class\_name, created\_on, 8 more }
+WorkflowGetResponse object { id, class\_name, created\_on, 8 more }
 
 </summary>
 
@@ -200,7 +200,7 @@ formatdate-time
 
 <summary>
 
-jurisdiction: optional "eu"or "fedramp"or "us"
+jurisdiction: optional "eu" or "fedramp" or "us"
 
 Jurisdiction where instances of this workflow run and store data. Set when the workflow is created and cannot be changed.
 
@@ -228,7 +228,7 @@ One of the following:
 
 <summary>
 
-schedules: optional array of object {cron, next\_instance }
+schedules: optional array of object { cron, next\_instance }
 
 </summary>
 
@@ -258,7 +258,7 @@ Whether the bound Worker was deleted, leaving this Workflow inactive.
 
 <summary>
 
-WorkflowUpdateResponse object {id, class\_name, created\_on, 8 more }
+WorkflowUpdateResponse object { id, class\_name, created\_on, 8 more }
 
 </summary>
 
@@ -320,7 +320,7 @@ formatuuid
 
 <summary>
 
-jurisdiction: optional "eu"or "fedramp"or "us"
+jurisdiction: optional "eu" or "fedramp" or "us"
 
 Jurisdiction where instances of this workflow run and store data. Set when the workflow is created and cannot be changed.
 
@@ -352,7 +352,7 @@ One of the following:
 
 <summary>
 
-WorkflowDeleteResponse object {status, success }
+WorkflowDeleteResponse object { status, success }
 
 </summary>
 
@@ -396,7 +396,7 @@ GET/accounts/{account\_id}/workflows/{workflow\_name}/instances/{instance\_id}/s
 
 <summary>
 
-InstanceListResponse object {id, created\_on, ended\_on, 6 more }
+InstanceListResponse object { id, created\_on, ended\_on, 6 more }
 
 </summary>
 
@@ -436,7 +436,7 @@ formatdate-time
 
 <summary>
 
-status: "queued"or "running"or "paused"or 6 more
+status: "queued" or "running" or "paused" or 6 more
 
 </summary>
 
@@ -498,7 +498,7 @@ formatuuid
 
 <summary>
 
-trigger\_source: optional "unknown"or "api"or "binding"or 2 more
+trigger\_source: optional "unknown" or "api" or "binding" or 2 more
 
 </summary>
 
@@ -536,7 +536,7 @@ One of the following:
 
 <summary>
 
-InstanceGetResponse object {end, error, output, 11 more }
+InstanceGetResponse object { end, error, output, 11 more }
 
 </summary>
 
@@ -550,7 +550,7 @@ formatdate-time
 
 <summary>
 
-error: object {message, name }
+error: object { message, name }
 
 </summary>
 
@@ -570,7 +570,7 @@ name: string
 
 <summary>
 
-output: stringor number
+output: string or number
 
 </summary>
 
@@ -602,7 +602,7 @@ formatdate-time
 
 <summary>
 
-rollback: object {error, outcome }
+rollback: object { error, outcome }
 
 </summary>
 
@@ -610,7 +610,7 @@ rollback: object {error, outcome }
 
 <summary>
 
-error: object {message, name }
+error: object { message, name }
 
 </summary>
 
@@ -630,7 +630,7 @@ name: string
 
 <summary>
 
-outcome: "complete"or "failed"
+outcome: "complete" or "failed"
 
 </summary>
 
@@ -662,7 +662,7 @@ formatdate-time
 
 <summary>
 
-status: "queued"or "running"or "paused"or 6 more
+status: "queued" or "running" or "paused" or 6 more
 
 </summary>
 
@@ -720,7 +720,7 @@ minimum-9007199254740991
 
 <summary>
 
-steps: array of object {attempts, config, end, 5 more } or object {end, error, finished, 3 more } or object {trigger, type } or object {error, finished, name, 5 more }
+steps: array of object { attempts, config, end, 5 more } or object { end, error, finished, 3 more } or object { trigger, type } or object { error, finished, name, 5 more }
 
 </summary>
 
@@ -730,7 +730,7 @@ One of the following:
 
 <summary>
 
-object {attempts, config, end, 5 more }
+object { attempts, config, end, 5 more }
 
 </summary>
 
@@ -738,7 +738,7 @@ object {attempts, config, end, 5 more }
 
 <summary>
 
-attempts: array of object {end, error, start, success }
+attempts: array of object { end, error, start, success }
 
 </summary>
 
@@ -752,7 +752,7 @@ formatdate-time
 
 <summary>
 
-error: object {message, name }
+error: object { message, name }
 
 </summary>
 
@@ -786,7 +786,7 @@ success: boolean
 
 <summary>
 
-config: object {retries, timeout, sensitive }
+config: object { retries, timeout, sensitive }
 
 </summary>
 
@@ -794,7 +794,7 @@ config: object {retries, timeout, sensitive }
 
 <summary>
 
-retries: object {delay, limit, backoff }
+retries: object { delay, limit, backoff }
 
 </summary>
 
@@ -802,7 +802,7 @@ retries: object {delay, limit, backoff }
 
 <summary>
 
-delay: stringor number
+delay: string or number
 
 Specifies the delay duration. The value ‘\[dynamic]’ means that a user-supplied function computes the delay.
 
@@ -830,7 +830,7 @@ limit: number
 
 <summary>
 
-backoff: optional "constant"or "linear"or "exponential"
+backoff: optional "constant" or "linear" or "exponential"
 
 </summary>
 
@@ -860,7 +860,7 @@ One of the following:
 
 <summary>
 
-timeout: stringor number
+timeout: string or number
 
 Specifies the timeout duration.
 
@@ -918,7 +918,7 @@ success: boolean
 
 <summary>
 
-type: "step"or "rollback"
+type: "step" or "rollback"
 
 </summary>
 
@@ -944,7 +944,7 @@ One of the following:
 
 <summary>
 
-object {end, error, finished, 3 more }
+object { end, error, finished, 3 more }
 
 </summary>
 
@@ -958,7 +958,7 @@ formatdate-time
 
 <summary>
 
-error: object {message, name }
+error: object { message, name }
 
 </summary>
 
@@ -1000,7 +1000,7 @@ type: "sleep"
 
 <summary>
 
-object {trigger, type }
+object { trigger, type }
 
 </summary>
 
@@ -1008,7 +1008,7 @@ object {trigger, type }
 
 <summary>
 
-trigger: object {source }
+trigger: object { source }
 
 </summary>
 
@@ -1032,7 +1032,7 @@ type: "termination"
 
 <summary>
 
-object {error, finished, name, 5 more }
+object { error, finished, name, 5 more }
 
 </summary>
 
@@ -1040,7 +1040,7 @@ object {error, finished, name, 5 more }
 
 <summary>
 
-error: object {message, name }
+error: object { message, name }
 
 </summary>
 
@@ -1104,7 +1104,7 @@ success: boolean
 
 <summary>
 
-trigger: object {source }
+trigger: object { source }
 
 </summary>
 
@@ -1112,7 +1112,7 @@ trigger: object {source }
 
 <summary>
 
-source: "unknown"or "api"or "binding"or 2 more
+source: "unknown" or "api" or "binding" or 2 more
 
 </summary>
 
@@ -1156,7 +1156,7 @@ formatuuid
 
 <summary>
 
-schedule: optional object {cron, scheduledTime }
+schedule: optional object { cron, scheduledTime }
 
 </summary>
 
@@ -1180,7 +1180,7 @@ scheduledTime: number
 
 <summary>
 
-InstanceCreateResponse object {id, status, version\_id, 2 more }
+InstanceCreateResponse object { id, status, version\_id, 2 more }
 
 </summary>
 
@@ -1196,7 +1196,7 @@ minLength1
 
 <summary>
 
-status: "queued"or "running"or "paused"or 6 more
+status: "queued" or "running" or "paused" or 6 more
 
 </summary>
 
@@ -1258,7 +1258,7 @@ formatuuid
 
 <summary>
 
-trigger\_source: optional "unknown"or "api"or "binding"or 2 more
+trigger\_source: optional "unknown" or "api" or "binding" or 2 more
 
 </summary>
 
@@ -1296,7 +1296,7 @@ One of the following:
 
 <summary>
 
-InstanceBulkResponse object {id, status, version\_id, 2 more }
+InstanceBulkResponse object { id, status, version\_id, 2 more }
 
 </summary>
 
@@ -1312,7 +1312,7 @@ minLength1
 
 <summary>
 
-status: "queued"or "running"or "paused"or 6 more
+status: "queued" or "running" or "paused" or 6 more
 
 </summary>
 
@@ -1374,7 +1374,7 @@ formatuuid
 
 <summary>
 
-trigger\_source: optional "unknown"or "api"or "binding"or 2 more
+trigger\_source: optional "unknown" or "api" or "binding" or 2 more
 
 </summary>
 
@@ -1412,7 +1412,7 @@ One of the following:
 
 <summary>
 
-InstanceStepResponse object {error, status, event\_type, output }
+InstanceStepResponse object { error, status, event\_type, output }
 
 </summary>
 
@@ -1420,7 +1420,7 @@ InstanceStepResponse object {error, status, event\_type, output }
 
 <summary>
 
-error: object {message, name }
+error: object { message, name }
 
 Error details when status=‘errored’; null otherwise.
 
@@ -1442,7 +1442,7 @@ name: string
 
 <summary>
 
-status: "queued"or "running"or "paused"or 6 more
+status: "queued" or "running" or "paused" or 6 more
 
 </summary>
 
@@ -1516,7 +1516,7 @@ PATCH/accounts/{account\_id}/workflows/{workflow\_name}/instances/{instance\_id}
 
 <summary>
 
-StatusEditResponse object {status, timestamp }
+StatusEditResponse object { status, timestamp }
 
 </summary>
 
@@ -1524,7 +1524,7 @@ StatusEditResponse object {status, timestamp }
 
 <summary>
 
-status: "queued"or "running"or "paused"or 6 more
+status: "queued" or "running" or "paused" or 6 more
 
 </summary>
 
@@ -1594,7 +1594,7 @@ POST/accounts/{account\_id}/workflows/{workflow\_name}/instances/{instance\_id}/
 
 <summary>
 
-EventCreateResponse object {instanceId, timestamp }
+EventCreateResponse object { instanceId, timestamp }
 
 </summary>
 
@@ -1634,7 +1634,7 @@ GET/accounts/{account\_id}/workflows/{workflow\_name}/versions/{version\_id}/gra
 
 <summary>
 
-VersionListResponse object {id, class\_name, created\_on, 7 more }
+VersionListResponse object { id, class\_name, created\_on, 7 more }
 
 </summary>
 
@@ -1662,7 +1662,7 @@ has\_dag: boolean
 
 <summary>
 
-language: "javascript"or "python"
+language: "javascript" or "python"
 
 The programming language of the workflow implementation.
 
@@ -1698,7 +1698,7 @@ formatuuid
 
 <summary>
 
-concurrency: optional object {limit }
+concurrency: optional object { limit }
 
 </summary>
 
@@ -1720,7 +1720,7 @@ minimum1
 
 <summary>
 
-default\_retention: optional object {error\_retention, success\_retention }
+default\_retention: optional object { error\_retention, success\_retention }
 
 </summary>
 
@@ -1752,7 +1752,7 @@ minimum-9007199254740991
 
 <summary>
 
-limits: optional object {steps }
+limits: optional object { steps }
 
 </summary>
 
@@ -1776,7 +1776,7 @@ minimum1
 
 <summary>
 
-VersionGetResponse object {id, class\_name, created\_on, 7 more }
+VersionGetResponse object { id, class\_name, created\_on, 7 more }
 
 </summary>
 
@@ -1804,7 +1804,7 @@ has\_dag: boolean
 
 <summary>
 
-language: "javascript"or "python"
+language: "javascript" or "python"
 
 The programming language of the workflow implementation.
 
@@ -1840,7 +1840,7 @@ formatuuid
 
 <summary>
 
-concurrency: optional object {limit }
+concurrency: optional object { limit }
 
 </summary>
 
@@ -1862,7 +1862,7 @@ minimum1
 
 <summary>
 
-default\_retention: optional object {error\_retention, success\_retention }
+default\_retention: optional object { error\_retention, success\_retention }
 
 </summary>
 
@@ -1894,7 +1894,7 @@ minimum-9007199254740991
 
 <summary>
 
-limits: optional object {steps }
+limits: optional object { steps }
 
 </summary>
 
@@ -1918,7 +1918,7 @@ minimum1
 
 <summary>
 
-VersionGraphResponse object {id, class\_name, created\_on, 3 more }
+VersionGraphResponse object { id, class\_name, created\_on, 3 more }
 
 </summary>
 
@@ -1942,7 +1942,7 @@ formatdate-time
 
 <summary>
 
-graph: object {version, workflow }
+graph: object { version, workflow }
 
 Versioned workflow graph payload.
 
@@ -1956,7 +1956,7 @@ version: number
 
 <summary>
 
-workflow: object {class\_name, functions, nodes, payload }
+workflow: object { class\_name, functions, nodes, payload }
 
 A parsed workflow entrypoint with its step graph.
 
@@ -1970,7 +1970,7 @@ class\_name: string
 
 <summary>
 
-functions: map\[object {name, nodes, type } ]
+functions: map\[object { name, nodes, type } ]
 
 </summary>
 
@@ -1996,7 +1996,7 @@ type: "function\_def"
 
 <summary>
 
-nodes: array of object {duration, name, type, 2 more } or object {config, name, nodes, 3 more } or object {name, options, type, 3 more } or 13 more
+nodes: array of object { duration, name, type, 2 more } or object { config, name, nodes, 3 more } or object { name, options, type, 3 more } or 13 more
 
 </summary>
 
@@ -2006,7 +2006,7 @@ One of the following:
 
 <summary>
 
-object {duration, name, type, 2 more }
+object { duration, name, type, 2 more }
 
 </summary>
 
@@ -2014,7 +2014,7 @@ object {duration, name, type, 2 more }
 
 <summary>
 
-duration: numberor string
+duration: number or string
 
 Duration as milliseconds (number) or human-readable string.
 
@@ -2058,7 +2058,7 @@ starts: optional number
 
 <summary>
 
-object {config, name, nodes, 3 more }
+object { config, name, nodes, 3 more }
 
 </summary>
 
@@ -2066,7 +2066,7 @@ object {config, name, nodes, 3 more }
 
 <summary>
 
-config: object {retries, timeout }
+config: object { retries, timeout }
 
 Configuration for a step (retries and timeout).
 
@@ -2076,7 +2076,7 @@ Configuration for a step (retries and timeout).
 
 <summary>
 
-retries: object {backoff, delay, limit }
+retries: object { backoff, delay, limit }
 
 Retry policy for a step.
 
@@ -2086,7 +2086,7 @@ Retry policy for a step.
 
 <summary>
 
-backoff: "constant"or "linear"or "exponential"
+backoff: "constant" or "linear" or "exponential"
 
 Backoff strategy for step retries.
 
@@ -2114,7 +2114,7 @@ One of the following:
 
 <summary>
 
-delay: numberor string
+delay: number or string
 
 Duration as milliseconds (number) or human-readable string.
 
@@ -2146,7 +2146,7 @@ limit: number
 
 <summary>
 
-timeout: numberor string
+timeout: number or string
 
 Duration as milliseconds (number) or human-readable string.
 
@@ -2200,7 +2200,7 @@ starts: optional number
 
 <summary>
 
-object {name, options, type, 3 more }
+object { name, options, type, 3 more }
 
 </summary>
 
@@ -2212,7 +2212,7 @@ name: string
 
 <summary>
 
-options: object {event\_type, timeout }
+options: object { event\_type, timeout }
 
 Options for a waitForEvent step.
 
@@ -2226,7 +2226,7 @@ event\_type: string
 
 <summary>
 
-timeout: numberor string
+timeout: number or string
 
 Duration as milliseconds (number) or human-readable string.
 
@@ -2258,7 +2258,7 @@ type: "step\_wait\_for\_event"
 
 <summary>
 
-payload: optional object {type } or object {fields, type }
+payload: optional object { type } or object { fields, type }
 
 Shape descriptor for JSON payloads.
 
@@ -2270,7 +2270,7 @@ One of the following:
 
 <summary>
 
-Type object {type }
+Type object { type }
 
 </summary>
 
@@ -2286,7 +2286,7 @@ type: "unknown"
 
 <summary>
 
-object {fields, type }
+object { fields, type }
 
 </summary>
 
@@ -2324,7 +2324,7 @@ starts: optional number
 
 <summary>
 
-object {name, timestamp, type, 2 more }
+object { name, timestamp, type, 2 more }
 
 </summary>
 
@@ -2356,7 +2356,7 @@ starts: optional number
 
 <summary>
 
-object {config, name, options, 3 more }
+object { config, name, options, 3 more }
 
 A step.runner() call (managed CI): a shell command run in a container as one durable step.
 
@@ -2366,7 +2366,7 @@ A step.runner() call (managed CI): a shell command run in a container as one dur
 
 <summary>
 
-config: object {retries, timeout }
+config: object { retries, timeout }
 
 Configuration for a step (retries and timeout).
 
@@ -2376,7 +2376,7 @@ Configuration for a step (retries and timeout).
 
 <summary>
 
-retries: object {backoff, delay, limit }
+retries: object { backoff, delay, limit }
 
 Retry policy for a step.
 
@@ -2386,7 +2386,7 @@ Retry policy for a step.
 
 <summary>
 
-backoff: "constant"or "linear"or "exponential"
+backoff: "constant" or "linear" or "exponential"
 
 Backoff strategy for step retries.
 
@@ -2414,7 +2414,7 @@ One of the following:
 
 <summary>
 
-delay: numberor string
+delay: number or string
 
 Duration as milliseconds (number) or human-readable string.
 
@@ -2446,7 +2446,7 @@ limit: number
 
 <summary>
 
-timeout: numberor string
+timeout: number or string
 
 Duration as milliseconds (number) or human-readable string.
 
@@ -2478,7 +2478,7 @@ name: string
 
 <summary>
 
-options: object {allow\_failure, command, image, 2 more }
+options: object { allow\_failure, command, image, 2 more }
 
 Statically known step.runner() options. A null field is not statically known (a non-literal value, an options object passed as a variable, or a field a spread may set).
 
@@ -2528,7 +2528,7 @@ starts: optional number
 
 <summary>
 
-object {entrypoint, isolation\_key, name, 4 more }
+object { entrypoint, isolation\_key, name, 4 more }
 
 A step.dynamic() call (managed CI): runs a workflow bundle in a dynamic Worker. The steps of the child workflow are not known statically, so nodes is empty.
 
@@ -2572,7 +2572,7 @@ starts: optional number
 
 <summary>
 
-object {nodes, type }
+object { nodes, type }
 
 </summary>
 
@@ -2594,7 +2594,7 @@ type: "loop"
 
 <summary>
 
-object {kind, nodes, type }
+object { kind, nodes, type }
 
 </summary>
 
@@ -2602,7 +2602,7 @@ object {kind, nodes, type }
 
 <summary>
 
-kind: "all"or "any"or "all\_settled"or "race"
+kind: "all" or "any" or "all\_settled" or "race"
 
 Parallel execution strategy.
 
@@ -2648,7 +2648,7 @@ type: "parallel"
 
 <summary>
 
-object {catch\_block, finally\_block, try\_block, type }
+object { catch\_block, finally\_block, try\_block, type }
 
 </summary>
 
@@ -2656,29 +2656,7 @@ object {catch\_block, finally\_block, try\_block, type }
 
 <summary>
 
-catch\_block: object {nodes, type }
-
-</summary>
-
-nodes: array of unknown
-
-Child nodes (recursive).
-
-<a href="#">Link to this property</a>
-
-type: "block"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-finally\_block: object {nodes, type }
+catch\_block: object { nodes, type }
 
 </summary>
 
@@ -2700,7 +2678,29 @@ type: "block"
 
 <summary>
 
-try\_block: object {nodes, type }
+finally\_block: object { nodes, type }
+
+</summary>
+
+nodes: array of unknown
+
+Child nodes (recursive).
+
+<a href="#">Link to this property</a>
+
+type: "block"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+try\_block: object { nodes, type }
 
 </summary>
 
@@ -2730,7 +2730,7 @@ type: "try"
 
 <summary>
 
-object {nodes, type }
+object { nodes, type }
 
 </summary>
 
@@ -2752,7 +2752,7 @@ type: "block"
 
 <summary>
 
-object {branches, type }
+object { branches, type }
 
 </summary>
 
@@ -2760,7 +2760,7 @@ object {branches, type }
 
 <summary>
 
-branches: array of object {condition, nodes }
+branches: array of object { condition, nodes }
 
 </summary>
 
@@ -2790,7 +2790,7 @@ type: "if"
 
 <summary>
 
-object {branches, discriminant, type }
+object { branches, discriminant, type }
 
 </summary>
 
@@ -2798,7 +2798,7 @@ object {branches, discriminant, type }
 
 <summary>
 
-branches: array of object {condition, nodes }
+branches: array of object { condition, nodes }
 
 </summary>
 
@@ -2832,7 +2832,7 @@ type: "switch"
 
 <summary>
 
-object {class\_name, functions, nodes, 2 more }
+object { class\_name, functions, nodes, 2 more }
 
 </summary>
 
@@ -2844,7 +2844,7 @@ class\_name: string
 
 <summary>
 
-functions: map\[object {name, nodes, type } ]
+functions: map\[object { name, nodes, type } ]
 
 </summary>
 
@@ -2880,7 +2880,7 @@ type: "start"
 
 <summary>
 
-payload: optional object {type } or object {fields, type }
+payload: optional object { type } or object { fields, type }
 
 Shape descriptor for JSON payloads.
 
@@ -2892,7 +2892,7 @@ One of the following:
 
 <summary>
 
-Type object {type }
+Type object { type }
 
 </summary>
 
@@ -2908,7 +2908,7 @@ type: "unknown"
 
 <summary>
 
-object {fields, type }
+object { fields, type }
 
 </summary>
 
@@ -2938,7 +2938,7 @@ type: "object"
 
 <summary>
 
-object {name, type, resolves, starts }
+object { name, type, resolves, starts }
 
 </summary>
 
@@ -2966,7 +2966,7 @@ starts: optional number
 
 <summary>
 
-object {name, nodes, type }
+object { name, nodes, type }
 
 </summary>
 
@@ -2992,7 +2992,7 @@ type: "function\_def"
 
 <summary>
 
-object {kind, type }
+object { kind, type }
 
 </summary>
 
@@ -3000,7 +3000,7 @@ object {kind, type }
 
 <summary>
 
-kind: "break"or "return"
+kind: "break" or "return"
 
 Break or return from a loop.
 
@@ -3036,7 +3036,7 @@ type: "break"
 
 <summary>
 
-payload: optional object {type } or object {fields, type }
+payload: optional object { type } or object { fields, type }
 
 Shape descriptor for JSON payloads.
 
@@ -3048,7 +3048,7 @@ One of the following:
 
 <summary>
 
-Type object {type }
+Type object { type }
 
 </summary>
 
@@ -3064,7 +3064,7 @@ type: "unknown"
 
 <summary>
 
-object {fields, type }
+object { fields, type }
 
 </summary>
 

@@ -46,7 +46,7 @@ DELETE/accounts/{account\_id}/cws/workloads/{workload\_id}
 
 <summary>
 
-Workload object {id, created\_at, filter, 4 more }
+Workload object { id, created\_at, filter, 4 more }
 
 </summary>
 
@@ -112,7 +112,7 @@ maxLength1024
 
 <summary>
 
-WorkloadDeleteResponse object {id }
+WorkloadDeleteResponse object { id }
 
 </summary>
 

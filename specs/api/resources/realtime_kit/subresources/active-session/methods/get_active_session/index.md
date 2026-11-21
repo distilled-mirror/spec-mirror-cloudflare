@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Realtime Admin``Realtime`
+`Realtime Read``Realtime Admin``Realtime`
 
 ##### P ath ParametersExpand Collapse
 
@@ -84,7 +84,7 @@ meeting\_id: string
 
 <summary>
 
-data: optional object {id, associated\_id, created\_at, 11 more }
+data: optional object { id, associated\_id, created\_at, 11 more }
 
 </summary>
 
@@ -146,7 +146,7 @@ timestamp when session started
 
 <summary>
 
-status: "LIVE"or "ENDED"
+status: "LIVE" or "ENDED"
 
 current status of session
 
@@ -170,7 +170,7 @@ One of the following:
 
 <summary>
 
-type: "meeting"or "livestream"or "participant"
+type: "meeting" or "livestream" or "participant"
 
 type of session
 
@@ -238,7 +238,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/realtime/kit/$APP
   "data": {
     "associated_id": "6bf2b8be-04dd-4191-b602-1128921a306b",
     "created_at": "2022-01-12T14:21:34.398Z",
-    "ended_at": "null",
+    "ended_at": null,
     "id": "813432c7-3c5a-45e2-9acf-eef7061c7584",
     "live_participants": 1,
     "max_concurrent_participants": 2,
@@ -275,7 +275,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/realtime/kit/$APP
   "data": {
     "associated_id": "6bf2b8be-04dd-4191-b602-1128921a306b",
     "created_at": "2022-01-12T14:21:34.398Z",
-    "ended_at": "null",
+    "ended_at": null,
     "id": "813432c7-3c5a-45e2-9acf-eef7061c7584",
     "live_participants": 1,
     "max_concurrent_participants": 2,

@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`URL Scanner Write``URL Scanner Read`
+`Cloudforce One Write``Cloudforce One Read``URL Scanner Write``URL Scanner Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -80,7 +80,7 @@ formatuuid
 
 <summary>
 
-resolution: optional "desktop"or "mobile"or "tablet"
+resolution: optional "desktop" or "mobile" or "tablet"
 
 Target device type.
 

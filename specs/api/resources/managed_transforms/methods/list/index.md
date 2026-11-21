@@ -54,7 +54,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Response Compression Write``Response Compression Read``Config Settings Write``Config Settings Read``Dynamic URL Redirects Write``Dynamic URL Redirects Read``Cache Settings Write``Cache Settings Read``Custom Errors Write``Custom Errors Read``Origin Write``Origin Read``Managed headers Write``Managed headers Read``Zone Transform Rules Write``Zone Transform Rules Read``Mass URL Redirects Write``Mass URL Redirects Read``Magic Firewall Write``Magic Firewall Read``L4 DDoS Managed Ruleset Write``L4 DDoS Managed Ruleset Read``HTTP DDoS Managed Ruleset Write``HTTP DDoS Managed Ruleset Read``Sanitize Write``Sanitize Read``Transform Rules Write``Transform Rules Read``Select Configuration Write``Select Configuration Read``Bot Management Write``Bot Management Read``Zone WAF Write``Zone WAF Read``Account WAF Write``Account WAF Read``Account Rulesets Read``Account Rulesets Write``Logs Write``Logs Read``Logs Write``Logs Read`
+`Account Custom Error Rules Write``Account Custom Error Rules Read``Response Compression Write``Response Compression Read``Account Custom Pages Write``Account Custom Pages Read``Custom Pages Write``Custom Pages Read``Config Settings Write``Config Settings Read``Dynamic URL Redirects Write``Dynamic URL Redirects Read``Cache Settings Write``Cache Settings Read``Custom Errors Write``Custom Errors Read``Origin Write``Origin Read``Managed headers Write``Managed headers Read``Zone Transform Rules Write``Zone Transform Rules Read``Mass URL Redirects Write``Mass URL Redirects Read``Magic Firewall Write``Magic Firewall Read``L4 DDoS Managed Ruleset Write``L4 DDoS Managed Ruleset Read``HTTP DDoS Managed Ruleset Write``HTTP DDoS Managed Ruleset Read``Sanitize Write``Sanitize Read``Transform Rules Write``Transform Rules Read``Select Configuration Write``Select Configuration Read``Bot Management Write``Bot Management Read``Zone WAF Write``Zone WAF Read``Account WAF Write``Account WAF Read``Account Rulesets Read``Account Rulesets Write``Logs Write``Logs Read``Logs Write``Logs Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -70,7 +70,7 @@ The unique ID of the zone.
 
 <summary>
 
-errors: array of object {message, code, source }
+errors: array of object { message, code, source }
 
 A list of error messages.
 
@@ -94,7 +94,7 @@ A unique code for this message.
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 The source of this message.
 
@@ -120,7 +120,7 @@ minLength1
 
 <summary>
 
-messages: array of object {message, code, source }
+messages: array of object { message, code, source }
 
 A list of warning messages.
 
@@ -144,7 +144,7 @@ A unique code for this message.
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 The source of this message.
 
@@ -170,7 +170,7 @@ minLength1
 
 <summary>
 
-result: object {managed\_request\_headers, managed\_response\_headers } or object {managed\_request\_headers, managed\_response\_headers } or object {managed\_request\_headers, managed\_response\_headers } or 2 more
+result: object { managed\_request\_headers, managed\_response\_headers } or object { managed\_request\_headers, managed\_response\_headers } or object { managed\_request\_headers, managed\_response\_headers } or 2 more
 
 A result.
 
@@ -182,7 +182,7 @@ One of the following:
 
 <summary>
 
-object {managed\_request\_headers, managed\_response\_headers }
+object { managed\_request\_headers, managed\_response\_headers }
 
 </summary>
 
@@ -190,7 +190,7 @@ object {managed\_request\_headers, managed\_response\_headers }
 
 <summary>
 
-managed\_request\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
+managed\_request\_headers: optional array of object { id, enabled, has\_conflict, conflicts\_with }
 
 The list of Managed Request Transforms.
 
@@ -230,7 +230,7 @@ The Managed Transforms that this Managed Transform conflicts with.
 
 <summary>
 
-managed\_response\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
+managed\_response\_headers: optional array of object { id, enabled, has\_conflict, conflicts\_with }
 
 The list of Managed Response Transforms.
 
@@ -274,7 +274,7 @@ The Managed Transforms that this Managed Transform conflicts with.
 
 <summary>
 
-object {managed\_request\_headers, managed\_response\_headers }
+object { managed\_request\_headers, managed\_response\_headers }
 
 </summary>
 
@@ -282,7 +282,7 @@ object {managed\_request\_headers, managed\_response\_headers }
 
 <summary>
 
-managed\_request\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
+managed\_request\_headers: optional array of object { id, enabled, has\_conflict, conflicts\_with }
 
 The list of Managed Request Transforms.
 
@@ -322,7 +322,7 @@ The Managed Transforms that this Managed Transform conflicts with.
 
 <summary>
 
-managed\_response\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
+managed\_response\_headers: optional array of object { id, enabled, has\_conflict, conflicts\_with }
 
 The list of Managed Response Transforms.
 
@@ -366,7 +366,7 @@ The Managed Transforms that this Managed Transform conflicts with.
 
 <summary>
 
-object {managed\_request\_headers, managed\_response\_headers }
+object { managed\_request\_headers, managed\_response\_headers }
 
 </summary>
 
@@ -374,7 +374,7 @@ object {managed\_request\_headers, managed\_response\_headers }
 
 <summary>
 
-managed\_request\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
+managed\_request\_headers: optional array of object { id, enabled, has\_conflict, conflicts\_with }
 
 The list of Managed Request Transforms.
 
@@ -414,7 +414,7 @@ The Managed Transforms that this Managed Transform conflicts with.
 
 <summary>
 
-managed\_response\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
+managed\_response\_headers: optional array of object { id, enabled, has\_conflict, conflicts\_with }
 
 The list of Managed Response Transforms.
 
@@ -458,7 +458,7 @@ The Managed Transforms that this Managed Transform conflicts with.
 
 <summary>
 
-object {managed\_request\_headers, managed\_response\_headers }
+object { managed\_request\_headers, managed\_response\_headers }
 
 </summary>
 
@@ -466,7 +466,7 @@ object {managed\_request\_headers, managed\_response\_headers }
 
 <summary>
 
-managed\_request\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
+managed\_request\_headers: optional array of object { id, enabled, has\_conflict, conflicts\_with }
 
 The list of Managed Request Transforms.
 
@@ -506,7 +506,7 @@ The Managed Transforms that this Managed Transform conflicts with.
 
 <summary>
 
-managed\_response\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
+managed\_response\_headers: optional array of object { id, enabled, has\_conflict, conflicts\_with }
 
 The list of Managed Response Transforms.
 
@@ -550,7 +550,7 @@ The Managed Transforms that this Managed Transform conflicts with.
 
 <summary>
 
-object {managed\_request\_headers, managed\_response\_headers }
+object { managed\_request\_headers, managed\_response\_headers }
 
 </summary>
 
@@ -558,7 +558,7 @@ object {managed\_request\_headers, managed\_response\_headers }
 
 <summary>
 
-managed\_request\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
+managed\_request\_headers: optional array of object { id, enabled, has\_conflict, conflicts\_with }
 
 The list of Managed Request Transforms.
 
@@ -598,7 +598,7 @@ The Managed Transforms that this Managed Transform conflicts with.
 
 <summary>
 
-managed\_response\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
+managed\_response\_headers: optional array of object { id, enabled, has\_conflict, conflicts\_with }
 
 The list of Managed Response Transforms.
 

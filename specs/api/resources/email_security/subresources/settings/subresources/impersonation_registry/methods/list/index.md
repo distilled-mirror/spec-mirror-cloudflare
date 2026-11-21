@@ -76,7 +76,7 @@ maxLength32
 
 <summary>
 
-direction: optional "asc"or "desc"
+direction: optional "asc" or "desc"
 
 The sorting direction.
 
@@ -100,7 +100,7 @@ One of the following:
 
 <summary>
 
-order: optional "name"or "email"or "created\_at"
+order: optional "name" or "email" or "created\_at"
 
 Field to sort by.
 
@@ -146,7 +146,7 @@ minimum1
 
 <summary>
 
-provenance: optional "A1S\_INTERNAL"or "SNOOPY-CASB\_OFFICE\_365"or "SNOOPY-OFFICE\_365"or "SNOOPY-GOOGLE\_DIRECTORY"
+provenance: optional "A1S\_INTERNAL" or "SNOOPY-CASB\_OFFICE\_365" or "SNOOPY-OFFICE\_365" or "SNOOPY-GOOGLE\_DIRECTORY"
 
 </summary>
 
@@ -184,7 +184,7 @@ Search term for filtering records. Behavior may change.
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -206,7 +206,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -226,7 +226,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -248,7 +248,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -274,7 +274,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional array of object {id, comments, created\_at, 9 more }
+result: optional array of object { id, comments, created\_at, 9 more }
 
 </summary>
 
@@ -358,7 +358,7 @@ maxLength1024
 
 <summary>
 
-provenance: optional "A1S\_INTERNAL"or "SNOOPY-CASB\_OFFICE\_365"or "SNOOPY-OFFICE\_365"or "SNOOPY-GOOGLE\_DIRECTORY"
+provenance: optional "A1S\_INTERNAL" or "SNOOPY-CASB\_OFFICE\_365" or "SNOOPY-OFFICE\_365" or "SNOOPY-GOOGLE\_DIRECTORY"
 
 Source the entry was created from.
 
@@ -394,7 +394,7 @@ One of the following:
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object { count, page, per\_page, total\_count }
 
 </summary>
 

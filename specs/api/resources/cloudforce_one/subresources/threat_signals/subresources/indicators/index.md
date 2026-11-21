@@ -30,7 +30,7 @@ GET/accounts/{account\_id}/cloudforce-one/v2/threat-signals/indicators
 
 <summary>
 
-IndicatorListResponse object {indicators, pagination }
+IndicatorListResponse object { indicators, pagination }
 
 </summary>
 
@@ -38,7 +38,7 @@ IndicatorListResponse object {indicators, pagination }
 
 <summary>
 
-indicators: array of object {id, article\_id, article\_title, 5 more }
+indicators: array of object { id, article\_id, article\_title, 5 more }
 
 </summary>
 
@@ -90,7 +90,7 @@ value: string
 
 <summary>
 
-pagination: object {count, cursor, has\_more, 4 more }
+pagination: object { count, cursor, has\_more, 4 more }
 
 </summary>
 

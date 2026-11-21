@@ -34,7 +34,7 @@ PATCH/zones/{zone\_id}/ssl/universal/settings
 
 <summary>
 
-UniversalSSLSettings object {enabled }
+UniversalSSLSettings object { enabled }
 
 </summary>
 

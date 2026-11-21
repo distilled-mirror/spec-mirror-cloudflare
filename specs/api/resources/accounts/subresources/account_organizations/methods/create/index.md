@@ -82,7 +82,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -102,7 +102,7 @@ pointer: optional string
 
 <summary>
 
-result: object {account\_id, destination\_organization\_id, source\_organization\_id }
+result: object { account\_id, destination\_organization\_id, source\_organization\_id }
 
 </summary>
 

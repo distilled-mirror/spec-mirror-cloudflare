@@ -66,7 +66,7 @@ Up to 100 unique tag category UUIDs that the managed default tagging skill may s
 
 <summary>
 
-errors: array of object {message }
+errors: array of object { message }
 
 </summary>
 
@@ -82,7 +82,7 @@ message: string
 
 <summary>
 
-result: object {category\_uuids, skill\_id }
+result: object { category\_uuids, skill\_id }
 
 </summary>
 

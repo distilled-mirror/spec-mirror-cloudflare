@@ -74,7 +74,7 @@ maxLength32
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -96,7 +96,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -116,7 +116,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -138,7 +138,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -198,7 +198,7 @@ formatdate-time
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
 
 Extra Cloudflare-specific metadata about the record.
 
@@ -298,7 +298,7 @@ formatdate-time
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
 
 Extra Cloudflare-specific metadata about the record.
 
@@ -398,7 +398,7 @@ formatdate-time
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
 
 Extra Cloudflare-specific metadata about the record.
 
@@ -498,7 +498,7 @@ formatdate-time
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
 
 Extra Cloudflare-specific metadata about the record.
 
@@ -598,7 +598,7 @@ formatdate-time
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
 
 Extra Cloudflare-specific metadata about the record.
 
@@ -674,7 +674,7 @@ formatdate-time
 
 <summary>
 
-OpenpgpkeyRecord object {id, comment, content, 12 more }
+OpenpgpkeyRecord object { id, comment, content, 12 more }
 
 </summary>
 
@@ -710,7 +710,7 @@ formatdate-time
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
 
 Extra Cloudflare-specific metadata about the record.
 
@@ -782,7 +782,7 @@ Whether the record is receiving the performance and security benefits of Cloudfl
 
 <summary>
 
-settings: object {ipv4\_only, ipv6\_only }
+settings: object { ipv4\_only, ipv6\_only }
 
 Settings for the DNS record.
 
@@ -890,7 +890,7 @@ formatdate-time
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
 
 Extra Cloudflare-specific metadata about the record.
 
@@ -990,7 +990,7 @@ formatdate-time
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
 
 Extra Cloudflare-specific metadata about the record.
 
@@ -1090,7 +1090,7 @@ formatdate-time
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
 
 Extra Cloudflare-specific metadata about the record.
 
@@ -1190,7 +1190,7 @@ formatdate-time
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
 
 Extra Cloudflare-specific metadata about the record.
 
@@ -1290,7 +1290,7 @@ formatdate-time
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
 
 Extra Cloudflare-specific metadata about the record.
 
@@ -1390,7 +1390,7 @@ formatdate-time
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
 
 Extra Cloudflare-specific metadata about the record.
 
@@ -1490,7 +1490,7 @@ formatdate-time
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
 
 Extra Cloudflare-specific metadata about the record.
 
@@ -1590,7 +1590,7 @@ formatdate-time
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
 
 Extra Cloudflare-specific metadata about the record.
 
@@ -1690,7 +1690,7 @@ formatdate-time
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
 
 Extra Cloudflare-specific metadata about the record.
 
@@ -1790,7 +1790,7 @@ formatdate-time
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
 
 Extra Cloudflare-specific metadata about the record.
 
@@ -1890,7 +1890,7 @@ formatdate-time
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
 
 Extra Cloudflare-specific metadata about the record.
 
@@ -1990,7 +1990,7 @@ formatdate-time
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
 
 Extra Cloudflare-specific metadata about the record.
 
@@ -2090,7 +2090,7 @@ formatdate-time
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
 
 Extra Cloudflare-specific metadata about the record.
 
@@ -2190,7 +2190,7 @@ formatdate-time
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
 
 Extra Cloudflare-specific metadata about the record.
 
@@ -2290,7 +2290,7 @@ formatdate-time
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
 
 Extra Cloudflare-specific metadata about the record.
 
@@ -2370,7 +2370,7 @@ formatdate-time
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

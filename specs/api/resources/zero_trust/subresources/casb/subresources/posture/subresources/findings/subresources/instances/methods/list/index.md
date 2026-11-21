@@ -40,7 +40,7 @@ The preferred authorization scheme for interacting with the Cloudflare API. [Cre
 
 ##### Accepted Permissions (at least one required)
 
-`Zero Trust Read``Zero Trust Write`
+`CASB Write``CASB Read``Zero Trust Read``Zero Trust Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -78,7 +78,7 @@ A cursor for pagination. Obtained from the `result_info.cursor` field of a previ
 
 <summary>
 
-direction: optional "asc"or "desc"
+direction: optional "asc" or "desc"
 
 Direction to order results.
 
@@ -124,7 +124,7 @@ formatdate-time
 
 <summary>
 
-order: optional "affliction\_date"or "asset.name"or "remediation.status"
+order: optional "affliction\_date" or "asset.name" or "remediation.status"
 
 Which field to use when ordering the Finding’s instances. When ordering by ‘remediation.status’, only the most recent non-stale remediation job is considered. Stale jobs (created before the instance’s affliction\_date) are treated as having no status for ordering purposes.
 
@@ -166,7 +166,7 @@ minimum1
 
 <summary>
 
-remediation\_statuses: optional array of "none"or "pending"or "processing"or 3 more
+remediation\_statuses: optional array of "none" or "pending" or "processing" or 3 more
 
 Filter finding instances by most recent remediation job status. Supports multiple comma-separated values. Use ‘none’ to filter instances with no remediation jobs or instances where the most recent job is stale. Note: Stale jobs (created before the instance’s affliction\_date) are ignored for filtering purposes, but are still included in the ‘remediations’ array with stale=true.
 
@@ -214,7 +214,7 @@ A search term.
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -244,7 +244,7 @@ formaturi
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -266,7 +266,7 @@ JSON pointer to the source of the error.
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -296,7 +296,7 @@ formaturi
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -318,7 +318,7 @@ JSON pointer to the source of the error.
 
 <summary>
 
-result\_info: object {count, cursor, next, 4 more }
+result\_info: object { count, cursor, next, 4 more }
 
 Pagination and result information.
 
@@ -384,7 +384,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional array of object {affliction\_date, asset, dlp\_contexts, 4 more }
+result: optional array of object { affliction\_date, asset, dlp\_contexts, 4 more }
 
 Array of finding instance objects.
 
@@ -402,7 +402,7 @@ formatdate-time
 
 <summary>
 
-asset: object {category, external\_id, fields, 4 more }
+asset: object { category, external\_id, fields, 4 more }
 
 Asset information including metadata and categorization.
 
@@ -412,7 +412,7 @@ Asset information including metadata and categorization.
 
 <summary>
 
-category: object {service, type, vendor, id }
+category: object { service, type, vendor, id }
 
 Category information for an asset.
 
@@ -460,7 +460,7 @@ maxLength512
 
 <summary>
 
-fields: array of object {name, value, link }
+fields: array of object { name, value, link }
 
 The fields associated with the asset.
 
@@ -530,7 +530,7 @@ formatdate-time
 
 <summary>
 
-dlp\_contexts: array of object {created, entry\_ids, profile\_id, 6 more }
+dlp\_contexts: array of object { created, entry\_ids, profile\_id, 6 more }
 
 DLP context information if this is a content finding.
 
@@ -616,7 +616,7 @@ DLP Match context payload that matched the profile in question.
 
 <summary>
 
-remediations: array of object {id, created\_at, stale, status }
+remediations: array of object { id, created\_at, stale, status }
 
 A list of the 10 most recent remediation jobs for this finding instance, ordered by creation time (most recent first). The ‘stale’ field indicates whether the remediation job was created before the finding instance’s affliction\_date (true) or after it (false). If there has never been a remediation job for this finding instance, this field will be an empty array.
 
@@ -648,7 +648,7 @@ Whether this remediation job is stale (created before the finding instance’s a
 
 <summary>
 
-status: "pending"or "processing"or "completed"or 2 more
+status: "pending" or "processing" or "completed" or 2 more
 
 Status of a remediation job.
 
@@ -688,7 +688,7 @@ One of the following:
 
 <summary>
 
-webhooks: array of object {latest\_job, webhook\_id, webhook\_label }
+webhooks: array of object { latest\_job, webhook\_id, webhook\_label }
 
 The most recent webhook job invocation for each webhook configuration associated with this finding instance. Each entry represents the latest job (any status) per webhook config. The ‘stale’ field indicates whether the job was invoked before the finding instance’s current affliction\_date. If no webhook jobs have been created, this field will be an empty array.
 
@@ -698,7 +698,7 @@ The most recent webhook job invocation for each webhook configuration associated
 
 <summary>
 
-latest\_job: object {id, created\_at, stale, status }
+latest\_job: object { id, created\_at, stale, status }
 
 The most recent webhook job for this webhook configuration.
 
@@ -730,7 +730,7 @@ Whether this webhook job is stale (created before the finding instance’s curre
 
 <summary>
 
-status: "pending"or "processing"or "completed"
+status: "pending" or "processing" or "completed"
 
 Current status of the webhook job.
 

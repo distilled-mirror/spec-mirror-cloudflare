@@ -34,7 +34,7 @@ POST/accounts/{account\_id}/d1/database/{database\_id}/time\_travel/restore
 
 <summary>
 
-TimeTravelGetBookmarkResponse object {bookmark }
+TimeTravelGetBookmarkResponse object { bookmark }
 
 </summary>
 
@@ -52,7 +52,7 @@ A bookmark representing a specific state of the database at a specific point in 
 
 <summary>
 
-TimeTravelRestoreResponse object {bookmark, message, previous\_bookmark }
+TimeTravelRestoreResponse object { bookmark, message, previous\_bookmark }
 
 Response from a time travel restore operation.
 

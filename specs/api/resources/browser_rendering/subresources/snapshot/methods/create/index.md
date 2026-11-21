@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Browser Rendering Write`
+`AI Search Index Engine``Auto Rag Write Run Engine``Browser Run Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -90,7 +90,7 @@ minimum0
 
 <summary>
 
-body: object {url, actionTimeout, addScriptTag, 30 more } or object {html, actionTimeout, addScriptTag, 30 more }
+body: object { url, actionTimeout, addScriptTag, 30 more } or object { html, actionTimeout, addScriptTag, 30 more }
 
 </summary>
 
@@ -100,7 +100,7 @@ One of the following:
 
 <summary>
 
-object {url, actionTimeout, addScriptTag, 30 more }
+object { url, actionTimeout, addScriptTag, 30 more }
 
 </summary>
 
@@ -120,7 +120,7 @@ maximum120000
 
 <summary>
 
-addScriptTag: optional array of object {id, content, type, url }
+addScriptTag: optional array of object { id, content, type, url }
 
 Adds a script element into the page with the desired URL or content.
 
@@ -152,7 +152,7 @@ formaturi
 
 <summary>
 
-addStyleTag: optional array of object {content, url }
+addStyleTag: optional array of object { content, url }
 
 Adds a <code>&lt;link rel="stylesheet"&gt;</code> tag into the page with the desired URL or a <code>&lt;style type="text/css"&gt;</code> tag with the content.
 
@@ -182,7 +182,7 @@ Only allow requests that match the provided regex patterns, eg. ’/^.\*.(css)�
 
 <summary>
 
-allowResourceTypes: optional array of "document"or "stylesheet"or "image"or 15 more
+allowResourceTypes: optional array of "document" or "stylesheet" or "image" or 15 more
 
 Only allow requests that match the provided resource types, eg. ‘image’ or ‘script’. Reject rules are applied first.
 
@@ -270,7 +270,7 @@ One of the following:
 
 <summary>
 
-authenticate: optional object {password, username }
+authenticate: optional object { password, username }
 
 Provide credentials for HTTP authentication.
 
@@ -302,7 +302,7 @@ Attempt to proceed when ‘awaited’ events fail or timeout.
 
 <summary>
 
-cookies: optional array of object {name, value, domain, 11 more }
+cookies: optional array of object { name, value, domain, 11 more }
 
 Check <a href="https://pptr.dev/api/puppeteer.page.setcookie">options</a>.
 
@@ -342,7 +342,7 @@ path: optional string
 
 <summary>
 
-priority: optional "Low"or "Medium"or "High"
+priority: optional "Low" or "Medium" or "High"
 
 </summary>
 
@@ -372,7 +372,7 @@ sameParty: optional boolean
 
 <summary>
 
-sameSite: optional "Strict"or "Lax"or "None"
+sameSite: optional "Strict" or "Lax" or "None"
 
 </summary>
 
@@ -406,7 +406,7 @@ sourcePort: optional number
 
 <summary>
 
-sourceScheme: optional "Unset"or "NonSecure"or "Secure"
+sourceScheme: optional "Unset" or "NonSecure" or "Secure"
 
 </summary>
 
@@ -440,7 +440,7 @@ url: optional string
 
 <summary>
 
-custom\_ai: optional array of object {model, authorization }
+custom\_ai: optional array of object { model, authorization }
 
 Optional list of custom AI models to use for the request. The models will be tried in the order provided, and in case a model returns an error, the next one will be used as fallback.
 
@@ -466,7 +466,7 @@ Authorization token for the AI model: <code>Bearer &lt;token&gt;</code>. Not nee
 
 <summary>
 
-elements: optional array of object {selector }
+elements: optional array of object { selector }
 
 </summary>
 
@@ -490,7 +490,7 @@ excludeExternalLinks: optional boolean
 
 <summary>
 
-formats: optional array of "content"or "screenshot"or "markdown"or 5 more
+formats: optional array of "content" or "screenshot" or "markdown" or 5 more
 
 </summary>
 
@@ -536,7 +536,7 @@ One of the following:
 
 <summary>
 
-gotoOptions: optional object {referer, referrerPolicy, timeout, waitUntil }
+gotoOptions: optional object { referer, referrerPolicy, timeout, waitUntil }
 
 Check <a href="https://pptr.dev/api/puppeteer.gotooptions">options</a>.
 
@@ -560,7 +560,7 @@ maximum60000
 
 <summary>
 
-waitUntil: optional "load"or "domcontentloaded"or "networkidle0"or "networkidle2"or array of "load"or "domcontentloaded"or "networkidle0"or "networkidle2"
+waitUntil: optional "load" or "domcontentloaded" or "networkidle0" or "networkidle2" or array of "load" or "domcontentloaded" or "networkidle0" or "networkidle2"
 
 </summary>
 
@@ -570,7 +570,7 @@ One of the following:
 
 <summary>
 
-"load"or "domcontentloaded"or "networkidle0"or "networkidle2"
+"load" or "domcontentloaded" or "networkidle0" or "networkidle2"
 
 </summary>
 
@@ -600,7 +600,7 @@ One of the following:
 
 <summary>
 
-array of "load"or "domcontentloaded"or "networkidle0"or "networkidle2"
+array of "load" or "domcontentloaded" or "networkidle0" or "networkidle2"
 
 </summary>
 
@@ -646,7 +646,7 @@ interestingOnly: optional boolean
 
 <summary>
 
-pdfOptions: optional object {displayHeaderFooter, footerTemplate, format, 13 more }
+pdfOptions: optional object { displayHeaderFooter, footerTemplate, format, 13 more }
 
 Check <a href="https://pptr.dev/api/puppeteer.pdfoptions">options</a>.
 
@@ -668,7 +668,7 @@ HTML template for the print footer.
 
 <summary>
 
-format: optional "letter"or "legal"or "tabloid"or 8 more
+format: optional "letter" or "legal" or "tabloid" or 8 more
 
 Paper format. Takes priority over width and height if set.
 
@@ -734,7 +734,7 @@ HTML template for the print header.
 
 <summary>
 
-height: optional stringor number
+height: optional string or number
 
 Sets the height of paper. Can be a number or string with unit.
 
@@ -764,7 +764,7 @@ Whether to print in landscape orientation.
 
 <summary>
 
-margin: optional object {bottom, left, right, top }
+margin: optional object { bottom, left, right, top }
 
 Set the PDF margins. Useful when setting header and footer.
 
@@ -774,7 +774,7 @@ Set the PDF margins. Useful when setting header and footer.
 
 <summary>
 
-bottom: optional stringor number
+bottom: optional string or number
 
 </summary>
 
@@ -796,7 +796,7 @@ number
 
 <summary>
 
-left: optional stringor number
+left: optional string or number
 
 </summary>
 
@@ -818,7 +818,7 @@ number
 
 <summary>
 
-right: optional stringor number
+right: optional string or number
 
 </summary>
 
@@ -840,7 +840,7 @@ number
 
 <summary>
 
-top: optional stringor number
+top: optional string or number
 
 </summary>
 
@@ -918,7 +918,7 @@ Timeout in milliseconds.
 
 <summary>
 
-width: optional stringor number
+width: optional string or number
 
 Sets the width of paper. Can be a number or string with unit.
 
@@ -956,7 +956,7 @@ Block undesired requests that match the provided regex patterns, eg. ’/^.\*.(c
 
 <summary>
 
-rejectResourceTypes: optional array of "document"or "stylesheet"or "image"or 15 more
+rejectResourceTypes: optional array of "document" or "stylesheet" or "image" or 15 more
 
 Block undesired requests that match the provided resource types, eg. ‘image’ or ‘script’.
 
@@ -1044,7 +1044,7 @@ One of the following:
 
 <summary>
 
-response\_format: optional object {type, json\_schema }
+response\_format: optional object { type, json\_schema }
 
 </summary>
 
@@ -1070,7 +1070,7 @@ root: optional string
 
 <summary>
 
-screenshotOptions: optional object {captureBeyondViewport, clip, fromSurface, 5 more }
+screenshotOptions: optional object { captureBeyondViewport, clip, fromSurface, 5 more }
 
 </summary>
 
@@ -1082,7 +1082,7 @@ captureBeyondViewport: optional boolean
 
 <summary>
 
-clip: optional object {height, width, x, 2 more }
+clip: optional object { height, width, x, 2 more }
 
 </summary>
 
@@ -1134,7 +1134,7 @@ quality: optional number
 
 <summary>
 
-type: optional "png"or "jpeg"or "webp"
+type: optional "png" or "jpeg" or "webp"
 
 </summary>
 
@@ -1184,7 +1184,7 @@ userAgent: optional string
 
 <summary>
 
-viewport: optional object {height, width, deviceScaleFactor, 3 more }
+viewport: optional object { height, width, deviceScaleFactor, 3 more }
 
 Check <a href="https://pptr.dev/api/puppeteer.page.setviewport">options</a>.
 
@@ -1226,7 +1226,7 @@ visibleLinksOnly: optional boolean
 
 <summary>
 
-waitForSelector: optional object {selector, hidden, timeout, visible }
+waitForSelector: optional object { selector, hidden, timeout, visible }
 
 Wait for the selector to appear in page. Check <a href="https://pptr.dev/api/puppeteer.page.waitforselector">options</a>.
 
@@ -1270,7 +1270,7 @@ maximum120000
 
 <summary>
 
-object {html, actionTimeout, addScriptTag, 30 more }
+object { html, actionTimeout, addScriptTag, 30 more }
 
 </summary>
 
@@ -1290,7 +1290,7 @@ maximum120000
 
 <summary>
 
-addScriptTag: optional array of object {id, content, type, url }
+addScriptTag: optional array of object { id, content, type, url }
 
 Adds a script element into the page with the desired URL or content.
 
@@ -1322,7 +1322,7 @@ formaturi
 
 <summary>
 
-addStyleTag: optional array of object {content, url }
+addStyleTag: optional array of object { content, url }
 
 Adds a <code>&lt;link rel="stylesheet"&gt;</code> tag into the page with the desired URL or a <code>&lt;style type="text/css"&gt;</code> tag with the content.
 
@@ -1352,7 +1352,7 @@ Only allow requests that match the provided regex patterns, eg. ’/^.\*.(css)�
 
 <summary>
 
-allowResourceTypes: optional array of "document"or "stylesheet"or "image"or 15 more
+allowResourceTypes: optional array of "document" or "stylesheet" or "image" or 15 more
 
 Only allow requests that match the provided resource types, eg. ‘image’ or ‘script’. Reject rules are applied first.
 
@@ -1440,7 +1440,7 @@ One of the following:
 
 <summary>
 
-authenticate: optional object {password, username }
+authenticate: optional object { password, username }
 
 Provide credentials for HTTP authentication.
 
@@ -1472,7 +1472,7 @@ Attempt to proceed when ‘awaited’ events fail or timeout.
 
 <summary>
 
-cookies: optional array of object {name, value, domain, 11 more }
+cookies: optional array of object { name, value, domain, 11 more }
 
 Check <a href="https://pptr.dev/api/puppeteer.page.setcookie">options</a>.
 
@@ -1512,7 +1512,7 @@ path: optional string
 
 <summary>
 
-priority: optional "Low"or "Medium"or "High"
+priority: optional "Low" or "Medium" or "High"
 
 </summary>
 
@@ -1542,7 +1542,7 @@ sameParty: optional boolean
 
 <summary>
 
-sameSite: optional "Strict"or "Lax"or "None"
+sameSite: optional "Strict" or "Lax" or "None"
 
 </summary>
 
@@ -1576,7 +1576,7 @@ sourcePort: optional number
 
 <summary>
 
-sourceScheme: optional "Unset"or "NonSecure"or "Secure"
+sourceScheme: optional "Unset" or "NonSecure" or "Secure"
 
 </summary>
 
@@ -1610,7 +1610,7 @@ url: optional string
 
 <summary>
 
-custom\_ai: optional array of object {model, authorization }
+custom\_ai: optional array of object { model, authorization }
 
 Optional list of custom AI models to use for the request. The models will be tried in the order provided, and in case a model returns an error, the next one will be used as fallback.
 
@@ -1636,7 +1636,7 @@ Authorization token for the AI model: <code>Bearer &lt;token&gt;</code>. Not nee
 
 <summary>
 
-elements: optional array of object {selector }
+elements: optional array of object { selector }
 
 </summary>
 
@@ -1660,7 +1660,7 @@ excludeExternalLinks: optional boolean
 
 <summary>
 
-formats: optional array of "content"or "screenshot"or "markdown"or 5 more
+formats: optional array of "content" or "screenshot" or "markdown" or 5 more
 
 </summary>
 
@@ -1706,7 +1706,7 @@ One of the following:
 
 <summary>
 
-gotoOptions: optional object {referer, referrerPolicy, timeout, waitUntil }
+gotoOptions: optional object { referer, referrerPolicy, timeout, waitUntil }
 
 Check <a href="https://pptr.dev/api/puppeteer.gotooptions">options</a>.
 
@@ -1730,7 +1730,7 @@ maximum60000
 
 <summary>
 
-waitUntil: optional "load"or "domcontentloaded"or "networkidle0"or "networkidle2"or array of "load"or "domcontentloaded"or "networkidle0"or "networkidle2"
+waitUntil: optional "load" or "domcontentloaded" or "networkidle0" or "networkidle2" or array of "load" or "domcontentloaded" or "networkidle0" or "networkidle2"
 
 </summary>
 
@@ -1740,7 +1740,7 @@ One of the following:
 
 <summary>
 
-"load"or "domcontentloaded"or "networkidle0"or "networkidle2"
+"load" or "domcontentloaded" or "networkidle0" or "networkidle2"
 
 </summary>
 
@@ -1770,7 +1770,7 @@ One of the following:
 
 <summary>
 
-array of "load"or "domcontentloaded"or "networkidle0"or "networkidle2"
+array of "load" or "domcontentloaded" or "networkidle0" or "networkidle2"
 
 </summary>
 
@@ -1812,7 +1812,7 @@ interestingOnly: optional boolean
 
 <summary>
 
-pdfOptions: optional object {displayHeaderFooter, footerTemplate, format, 13 more }
+pdfOptions: optional object { displayHeaderFooter, footerTemplate, format, 13 more }
 
 Check <a href="https://pptr.dev/api/puppeteer.pdfoptions">options</a>.
 
@@ -1834,7 +1834,7 @@ HTML template for the print footer.
 
 <summary>
 
-format: optional "letter"or "legal"or "tabloid"or 8 more
+format: optional "letter" or "legal" or "tabloid" or 8 more
 
 Paper format. Takes priority over width and height if set.
 
@@ -1900,7 +1900,7 @@ HTML template for the print header.
 
 <summary>
 
-height: optional stringor number
+height: optional string or number
 
 Sets the height of paper. Can be a number or string with unit.
 
@@ -1930,7 +1930,7 @@ Whether to print in landscape orientation.
 
 <summary>
 
-margin: optional object {bottom, left, right, top }
+margin: optional object { bottom, left, right, top }
 
 Set the PDF margins. Useful when setting header and footer.
 
@@ -1940,7 +1940,7 @@ Set the PDF margins. Useful when setting header and footer.
 
 <summary>
 
-bottom: optional stringor number
+bottom: optional string or number
 
 </summary>
 
@@ -1962,7 +1962,7 @@ number
 
 <summary>
 
-left: optional stringor number
+left: optional string or number
 
 </summary>
 
@@ -1984,7 +1984,7 @@ number
 
 <summary>
 
-right: optional stringor number
+right: optional string or number
 
 </summary>
 
@@ -2006,7 +2006,7 @@ number
 
 <summary>
 
-top: optional stringor number
+top: optional string or number
 
 </summary>
 
@@ -2084,7 +2084,7 @@ Timeout in milliseconds.
 
 <summary>
 
-width: optional stringor number
+width: optional string or number
 
 Sets the width of paper. Can be a number or string with unit.
 
@@ -2122,7 +2122,7 @@ Block undesired requests that match the provided regex patterns, eg. ’/^.\*.(c
 
 <summary>
 
-rejectResourceTypes: optional array of "document"or "stylesheet"or "image"or 15 more
+rejectResourceTypes: optional array of "document" or "stylesheet" or "image" or 15 more
 
 Block undesired requests that match the provided resource types, eg. ‘image’ or ‘script’.
 
@@ -2210,7 +2210,7 @@ One of the following:
 
 <summary>
 
-response\_format: optional object {type, json\_schema }
+response\_format: optional object { type, json\_schema }
 
 </summary>
 
@@ -2236,7 +2236,7 @@ root: optional string
 
 <summary>
 
-screenshotOptions: optional object {captureBeyondViewport, clip, fromSurface, 5 more }
+screenshotOptions: optional object { captureBeyondViewport, clip, fromSurface, 5 more }
 
 </summary>
 
@@ -2248,7 +2248,7 @@ captureBeyondViewport: optional boolean
 
 <summary>
 
-clip: optional object {height, width, x, 2 more }
+clip: optional object { height, width, x, 2 more }
 
 </summary>
 
@@ -2300,7 +2300,7 @@ quality: optional number
 
 <summary>
 
-type: optional "png"or "jpeg"or "webp"
+type: optional "png" or "jpeg" or "webp"
 
 </summary>
 
@@ -2354,7 +2354,7 @@ userAgent: optional string
 
 <summary>
 
-viewport: optional object {height, width, deviceScaleFactor, 3 more }
+viewport: optional object { height, width, deviceScaleFactor, 3 more }
 
 Check <a href="https://pptr.dev/api/puppeteer.page.setviewport">options</a>.
 
@@ -2396,7 +2396,7 @@ visibleLinksOnly: optional boolean
 
 <summary>
 
-waitForSelector: optional object {selector, hidden, timeout, visible }
+waitForSelector: optional object { selector, hidden, timeout, visible }
 
 Wait for the selector to appear in page. Check <a href="https://pptr.dev/api/puppeteer.page.waitforselector">options</a>.
 
@@ -2446,7 +2446,7 @@ maximum120000
 
 <summary>
 
-meta: object {finalUrl, headers, redirectChain, 2 more }
+meta: object { finalUrl, headers, redirectChain, 2 more }
 
 </summary>
 
@@ -2466,7 +2466,7 @@ Origin response headers, lowercased. Repeated headers are joined with a newline.
 
 <summary>
 
-redirectChain: optional array of object {headers, status, url }
+redirectChain: optional array of object { headers, status, url }
 
 HTTP redirects followed to reach <code>finalUrl</code>, oldest first. Omitted for direct navigation and for client-side redirects such as meta refresh. An empty array means redirects occurred but their intermediate responses could not be read.
 
@@ -2520,7 +2520,7 @@ Response status.
 
 <summary>
 
-errors: optional array of object {code, message }
+errors: optional array of object { code, message }
 
 </summary>
 
@@ -2544,7 +2544,7 @@ Error message.
 
 <summary>
 
-result: optional object {accessibilityTree, content, json, 5 more }
+result: optional object { accessibilityTree, content, json, 5 more }
 
 </summary>
 
@@ -2552,7 +2552,7 @@ result: optional object {accessibilityTree, content, json, 5 more }
 
 <summary>
 
-accessibilityTree: optional object {role, autocomplete, checked, 23 more }
+accessibilityTree: optional object { role, autocomplete, checked, 23 more }
 
 Accessibility tree node
 
@@ -2570,7 +2570,7 @@ autocomplete: optional string
 
 <summary>
 
-checked: optional booleanor "mixed"
+checked: optional boolean or "mixed"
 
 </summary>
 
@@ -2648,7 +2648,7 @@ orientation: optional string
 
 <summary>
 
-pressed: optional booleanor "mixed"
+pressed: optional boolean or "mixed"
 
 </summary>
 
@@ -2686,7 +2686,7 @@ selected: optional boolean
 
 <summary>
 
-value: optional stringor number
+value: optional string or number
 
 </summary>
 
@@ -2730,7 +2730,7 @@ HTML content.
 
 <summary>
 
-json: optional map\[unknown]or array of unknown
+json: optional map\[unknown] or array of unknown
 
 Data extracted from the page HTML by the requested prompt.
 
@@ -2772,7 +2772,7 @@ Base64 encoded PDF.
 
 <summary>
 
-scrape: optional array of object {results, selector }
+scrape: optional array of object { results, selector }
 
 Elements matched by the requested selectors.
 
@@ -2782,7 +2782,7 @@ Elements matched by the requested selectors.
 
 <summary>
 
-results: array of object {attributes, html, left, 4 more }
+results: array of object { attributes, html, left, 4 more }
 
 </summary>
 
@@ -2790,7 +2790,7 @@ results: array of object {attributes, html, left, 4 more }
 
 <summary>
 
-attributes: array of object {name, value }
+attributes: array of object { name, value }
 
 </summary>
 

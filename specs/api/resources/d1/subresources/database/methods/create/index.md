@@ -80,7 +80,7 @@ D1 database name.
 
 <summary>
 
-jurisdiction: optional "eu"or "fedramp"or "us"
+jurisdiction: optional "eu" or "fedramp" or "us"
 
 Specify the location to restrict the D1 database to run and store data. If this option is present, the location hint is ignored.
 
@@ -108,7 +108,7 @@ One of the following:
 
 <summary>
 
-primary\_location\_hint: optional "wnam"or "enam"or "weur"or 3 more
+primary\_location\_hint: optional "wnam" or "enam" or "weur" or 3 more
 
 Specify the region to create the D1 primary, if available. If this option is omitted, the D1 will be created as close as possible to the current user.
 
@@ -148,7 +148,7 @@ One of the following:
 
 <summary>
 
-read\_replication: optional object {mode }
+read\_replication: optional object { mode }
 
 Configuration for D1 read replication.
 
@@ -158,7 +158,7 @@ Configuration for D1 read replication.
 
 <summary>
 
-mode: "auto"or "disabled"
+mode: "auto" or "disabled"
 
 The read replication mode for the database. Use ‘auto’ to create replicas and allow D1 automatically place them around the world, or ‘disabled’ to not use any database replicas (it can take a few hours for all replicas to be deleted).
 
@@ -210,7 +210,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -252,7 +252,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -296,7 +296,7 @@ The D1 database’s size, in bytes.
 
 <summary>
 
-jurisdiction: optional "eu"or "fedramp"or "us"
+jurisdiction: optional "eu" or "fedramp" or "us"
 
 Specify the location to restrict the D1 database to run and store data. If this option is present, the location hint is ignored.
 
@@ -336,7 +336,7 @@ The number of tables in the D1 database. This count is no longer accurate and sh
 
 <summary>
 
-read\_replication: optional object {mode }
+read\_replication: optional object { mode }
 
 Configuration for D1 read replication.
 
@@ -346,7 +346,7 @@ Configuration for D1 read replication.
 
 <summary>
 
-mode: "auto"or "disabled"
+mode: "auto" or "disabled"
 
 The read replication mode for the database. Mode ‘auto’ denotes that D1 creates replicas and automatically places them around the world. Mode ‘disabled’ denotes that no database replicas are used.
 

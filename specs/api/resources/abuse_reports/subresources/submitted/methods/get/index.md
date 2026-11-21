@@ -54,7 +54,7 @@ report\_id: string
 
 <summary>
 
-result: object {id, cdate, denial\_reason, 25 more }
+result: object { id, cdate, denial\_reason, 25 more }
 
 </summary>
 
@@ -76,7 +76,7 @@ formatdate-time
 
 <summary>
 
-denial\_reason: "unable\_to\_confirm"or "incomplete\_report"or "not\_on\_cloudflare"or 10 more
+denial\_reason: "unable\_to\_confirm" or "incomplete\_report" or "not\_on\_cloudflare" or 10 more
 
 Submitter-safe reason for a denied report. Null when unavailable.
 
@@ -156,7 +156,7 @@ Whether the submitter provided the Digital Services Act attestation.
 
 <summary>
 
-status: "submitted"or "accepted"or "denied"
+status: "submitted" or "accepted" or "denied"
 
 Status visible to the account that submitted the report.
 
@@ -184,7 +184,7 @@ One of the following:
 
 <summary>
 
-type: "PHISH"or "GEN"or "THREAT"or 6 more
+type: "PHISH" or "GEN" or "THREAT" or 6 more
 
 The abuse report type
 
@@ -308,7 +308,7 @@ Ports and protocols supplied with a network abuse report.
 
 <summary>
 
-reg\_who\_request: optional object {reg\_who\_good\_faith\_affirmation, reg\_who\_lawful\_processing\_agreement, reg\_who\_legal\_basis, 4 more }
+reg\_who\_request: optional object { reg\_who\_good\_faith\_affirmation, reg\_who\_lawful\_processing\_agreement, reg\_who\_legal\_basis, 4 more }
 
 RDP-mandated fields for registrar WHOIS data disclosure requests.
 
@@ -338,7 +338,7 @@ maxLength5000
 
 <summary>
 
-reg\_who\_request\_type: "disclosure"or "invalid\_whois"
+reg\_who\_request\_type: "disclosure" or "invalid\_whois"
 
 The type of WHOIS data request per RDP procedure.
 
@@ -362,7 +362,7 @@ One of the following:
 
 <summary>
 
-reg\_who\_requested\_data\_elements: array of "registrant\_name"or "registrant\_organization"or "registrant\_email"or 14 more
+reg\_who\_requested\_data\_elements: array of "registrant\_name" or "registrant\_organization" or "registrant\_email" or 14 more
 
 The specific WHOIS data elements being requested per RDP 10.2.2. Required for all WHOIS requests.
 
@@ -454,7 +454,7 @@ maxLength5000
 
 <summary>
 
-reg\_who\_requestor\_type: optional "government"or "corporation"or "individual"
+reg\_who\_requestor\_type: optional "government" or "corporation" or "individual"
 
 The nature of the requestor per RDP 10.2.1.2.
 
@@ -504,7 +504,7 @@ Source IP addresses supplied with a network abuse report.
 
 <summary>
 
-submitter: optional object {company, email, name, telephone }
+submitter: optional object { company, email, name, telephone }
 
 Information about the submitter of the report.
 
@@ -566,7 +566,7 @@ success: boolean
 
 <summary>
 
-errors: optional array of object {message, code }
+errors: optional array of object { message, code }
 
 </summary>
 
@@ -578,7 +578,7 @@ message: string
 
 <summary>
 
-code: optional stringor number
+code: optional string or number
 
 </summary>
 
@@ -604,7 +604,7 @@ number
 
 <summary>
 
-messages: optional array of object {message }
+messages: optional array of object { message }
 
 </summary>
 

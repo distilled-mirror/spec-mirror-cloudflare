@@ -84,7 +84,7 @@ formatuuid
 
 <summary>
 
-allowed\_delivery\_modes: optional array of "DIRECT"or "BCC"or "JOURNAL"or 2 more
+allowed\_delivery\_modes: optional array of "DIRECT" or "BCC" or "JOURNAL" or 2 more
 
 Delivery modes to onboard the domain through.
 
@@ -120,7 +120,7 @@ One of the following:
 
 <summary>
 
-drop\_dispositions: optional array of "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+drop\_dispositions: optional array of "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 Dispositions to drop instead of delivering, e.g. <code>["MALICIOUS", "SPAM"]</code>.
 
@@ -176,7 +176,7 @@ One of the following:
 
 <summary>
 
-folder: optional "AllItems"or "Inbox"
+folder: optional "AllItems" or "Inbox"
 
 The mailbox folder to scan, for API-scanning domains.
 
@@ -224,7 +224,7 @@ minimum1
 
 <summary>
 
-regions: optional array of "GLOBAL"or "AU"or "DE"or 2 more
+regions: optional array of "GLOBAL" or "AU" or "DE" or 2 more
 
 Regions that process messages for this domain, e.g. <code>["GLOBAL"]</code> or <code>["US"]</code>.
 
@@ -280,7 +280,7 @@ The mail transport hostname for MX/Inline delivery — the MX record Cloudflare 
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -302,7 +302,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -322,7 +322,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -344,7 +344,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -370,7 +370,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, allowed\_delivery\_modes, authorization, 19 more }
+result: optional object { id, allowed\_delivery\_modes, authorization, 19 more }
 
 </summary>
 
@@ -386,7 +386,7 @@ formatuuid
 
 <summary>
 
-allowed\_delivery\_modes: optional array of "DIRECT"or "BCC"or "JOURNAL"or 2 more
+allowed\_delivery\_modes: optional array of "DIRECT" or "BCC" or "JOURNAL" or 2 more
 
 </summary>
 
@@ -420,7 +420,7 @@ One of the following:
 
 <summary>
 
-authorization: optional object {authorized, timestamp, status\_message }
+authorization: optional object { authorized, timestamp, status\_message }
 
 </summary>
 
@@ -452,7 +452,7 @@ formatdate-time
 
 <summary>
 
-dmarc\_status: optional "none"or "good"or "invalid"
+dmarc\_status: optional "none" or "good" or "invalid"
 
 </summary>
 
@@ -482,7 +482,7 @@ domain: optional string
 
 <summary>
 
-drop\_dispositions: optional array of "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+drop\_dispositions: optional array of "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 </summary>
 
@@ -536,7 +536,7 @@ One of the following:
 
 <summary>
 
-emails\_processed: optional object {timestamp, total\_emails\_processed, total\_emails\_processed\_previous }
+emails\_processed: optional object { timestamp, total\_emails\_processed, total\_emails\_processed\_previous }
 
 </summary>
 
@@ -566,7 +566,7 @@ minimum0
 
 <summary>
 
-folder: optional "AllItems"or "Inbox"
+folder: optional "AllItems" or "Inbox"
 
 The mailbox folder to scan, for API-scanning domains.
 
@@ -590,7 +590,7 @@ One of the following:
 
 <summary>
 
-inbox\_provider: optional "Microsoft"or "Google"
+inbox\_provider: optional "Microsoft" or "Google"
 
 </summary>
 
@@ -646,7 +646,7 @@ o365\_tenant\_id: optional string
 
 <summary>
 
-regions: optional array of "GLOBAL"or "AU"or "DE"or 2 more
+regions: optional array of "GLOBAL" or "AU" or "DE" or 2 more
 
 </summary>
 
@@ -688,7 +688,7 @@ require\_tls\_outbound: optional boolean
 
 <summary>
 
-spf\_status: optional "none"or "good"or "neutral"or 2 more
+spf\_status: optional "none" or "good" or "neutral" or 2 more
 
 </summary>
 
@@ -722,7 +722,7 @@ One of the following:
 
 <summary>
 
-status: optional "PENDING"or "ACTIVE"or "FAILED"or "TIMEOUT"
+status: optional "PENDING" or "ACTIVE" or "FAILED" or "TIMEOUT"
 
 </summary>
 

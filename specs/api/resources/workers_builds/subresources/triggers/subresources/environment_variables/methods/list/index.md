@@ -58,7 +58,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Workers CI Write``Workers CI Read`
+`Workers Metadata Read-Only``Workers CI Write``Workers CI Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -82,7 +82,7 @@ formatuuid
 
 <summary>
 
-errors: array of object {message, code }
+errors: array of object { message, code }
 
 </summary>
 
@@ -106,7 +106,7 @@ messages: array of string
 
 <summary>
 
-result: unknownor unknown
+result: unknown or unknown
 
 </summary>
 
@@ -132,7 +132,7 @@ success: boolean
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

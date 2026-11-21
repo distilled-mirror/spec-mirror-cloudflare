@@ -42,7 +42,7 @@ DELETE/zones/{zone\_id}/custom\_certificates/{custom\_certificate\_id}
 
 <summary>
 
-CustomCertificate object {id, zone\_id, bundle\_method, 12 more }
+CustomCertificate object { id, zone\_id, bundle\_method, 12 more }
 
 </summary>
 
@@ -134,7 +134,7 @@ The type of hash used for the certificate.
 
 <summary>
 
-status: optional "active"or "expired"or "deleted"or 2 more
+status: optional "active" or "expired" or "deleted" or 2 more
 
 Status of the zone’s custom SSL.
 
@@ -182,7 +182,7 @@ formatdate-time
 
 <summary>
 
-GeoRestrictions object {label }
+GeoRestrictions object { label }
 
 Specify the region where your private key can be held locally for optimal TLS performance. HTTPS connections to any excluded data center will still be fully encrypted, but will incur some latency while Keyless SSL is used to complete the handshake with the nearest allowed data center. Options allow distribution to only to U.S. data centers, only to E.U. data centers, or only to highest security data centers. Default distribution is to all Cloudflare datacenters, for optimal performance.
 
@@ -192,7 +192,7 @@ Specify the region where your private key can be held locally for optimal TLS pe
 
 <summary>
 
-label: optional "us"or "eu"or "highest\_security"
+label: optional "us" or "eu" or "highest\_security"
 
 </summary>
 
@@ -222,7 +222,7 @@ One of the following:
 
 <summary>
 
-CustomCertificateDeleteResponse object {id }
+CustomCertificateDeleteResponse object { id }
 
 </summary>
 

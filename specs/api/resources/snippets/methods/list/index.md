@@ -88,7 +88,7 @@ minimum1
 
 <summary>
 
-errors: array of object {message, code }
+errors: array of object { message, code }
 
 Lists error messages.
 
@@ -116,7 +116,7 @@ Identify the message code.
 
 <summary>
 
-messages: array of object {message, code }
+messages: array of object { message, code }
 
 Contain warning messages.
 
@@ -144,7 +144,7 @@ Identify the message code.
 
 <summary>
 
-result: array of object {created\_on, snippet\_name, modified\_on }
+result: array of object { created\_on, snippet\_name, modified\_on }
 
 Contain snippets.
 
@@ -186,7 +186,7 @@ Indicate whether the API call was successful.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 Additional information to navigate the results.
 

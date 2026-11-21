@@ -78,7 +78,7 @@ maxLength32
 
 <summary>
 
-action: object {mode, response, timeout }
+action: object { mode, response, timeout }
 
 The action to perform when the threshold of matched traffic within the configured period is exceeded.
 
@@ -88,7 +88,7 @@ The action to perform when the threshold of matched traffic within the configure
 
 <summary>
 
-mode: optional "simulate"or "ban"or "challenge"or 2 more
+mode: optional "simulate" or "ban" or "challenge" or 2 more
 
 The action to perform.
 
@@ -124,7 +124,7 @@ One of the following:
 
 <summary>
 
-response: optional object {body, content\_type }
+response: optional object { body, content\_type }
 
 A custom content type and reponse to return when the threshold is exceeded. The custom response configured in this object will override the custom error for the zone. This object is optional. Notes: If you omit this object, Cloudflare will use the default HTML error page. If “mode” is “challenge”, “managed\_challenge”, or “js\_challenge”, Cloudflare will use the zone challenge pages and you should not provide the “response” object.
 
@@ -242,7 +242,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -284,7 +284,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -382,7 +382,7 @@ One of the following:
 
 <summary>
 
-FirewallFilter object {id, description, expression, 2 more }
+FirewallFilter object { id, description, expression, 2 more }
 
 </summary>
 
@@ -432,7 +432,7 @@ maxLength50
 
 <summary>
 
-DeletedFilter object {id, deleted }
+DeletedFilter object { id, deleted }
 
 </summary>
 
@@ -540,7 +540,7 @@ Defines whether the API call was successful.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object { count, page, per\_page, total\_count }
 
 </summary>
 

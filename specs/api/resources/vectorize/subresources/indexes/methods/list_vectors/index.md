@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Vectorize Write``Vectorize Read`
+`Auto Rag Write Run Engine``Vectorize Write``Vectorize Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -118,7 +118,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -160,7 +160,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -180,7 +180,7 @@ pointer: optional string
 
 <summary>
 
-result: object {count, isTruncated, totalCount, 3 more }
+result: object { count, isTruncated, totalCount, 3 more }
 
 </summary>
 
@@ -206,7 +206,7 @@ Total number of vectors in the index
 
 <summary>
 
-vectors: array of object {id }
+vectors: array of object { id }
 
 Array of vector items
 

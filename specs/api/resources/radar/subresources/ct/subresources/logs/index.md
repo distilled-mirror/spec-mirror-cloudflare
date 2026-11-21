@@ -34,7 +34,7 @@ GET/radar/ct/logs
 
 <summary>
 
-LogGetResponse object {certificateLog }
+LogGetResponse object { certificateLog }
 
 </summary>
 
@@ -42,7 +42,7 @@ LogGetResponse object {certificateLog }
 
 <summary>
 
-certificateLog: object {api, avgThroughput, description, 12 more }
+certificateLog: object { api, avgThroughput, description, 12 more }
 
 </summary>
 
@@ -50,7 +50,7 @@ certificateLog: object {api, avgThroughput, description, 12 more }
 
 <summary>
 
-api: "RFC6962"or "STATIC"
+api: "RFC6962" or "STATIC"
 
 The API standard that the certificate log follows.
 
@@ -108,7 +108,7 @@ The organization responsible for operating the certificate log.
 
 <summary>
 
-performance: object {endpoints, responseTime, uptime }
+performance: object { endpoints, responseTime, uptime }
 
 Log performance metrics, including averages and per-endpoint details.
 
@@ -118,7 +118,7 @@ Log performance metrics, including averages and per-endpoint details.
 
 <summary>
 
-endpoints: array of object {endpoint, responseTime, uptime }
+endpoints: array of object { endpoint, responseTime, uptime }
 
 </summary>
 
@@ -126,7 +126,7 @@ endpoints: array of object {endpoint, responseTime, uptime }
 
 <summary>
 
-endpoint: "add-chain (new)"or "add-chain (old)"or "add-pre-chain (new)"or 4 more
+endpoint: "add-chain (new)" or "add-chain (old)" or "add-pre-chain (new)" or 4 more
 
 The certificate log endpoint names used in performance metrics.
 
@@ -194,7 +194,7 @@ uptime: number
 
 <summary>
 
-related: array of object {description, endExclusive, slug, 2 more }
+related: array of object { description, endExclusive, slug, 2 more }
 
 Logs from the same operator.
 
@@ -232,7 +232,7 @@ formatdate-time
 
 <summary>
 
-state: "USABLE"or "PENDING"or "QUALIFIED"or 3 more
+state: "USABLE" or "PENDING" or "QUALIFIED" or 3 more
 
 The current state of the certificate log. More details about log states can be found here: <a href="https://googlechrome.github.io/CertificateTransparency/log_states.html">https://googlechrome.github.io/CertificateTransparency/log\_states.html</a>
 
@@ -290,7 +290,7 @@ formatdate-time
 
 <summary>
 
-state: "USABLE"or "PENDING"or "QUALIFIED"or 3 more
+state: "USABLE" or "PENDING" or "QUALIFIED" or 3 more
 
 The current state of the certificate log. More details about log states can be found here: <a href="https://googlechrome.github.io/CertificateTransparency/log_states.html">https://googlechrome.github.io/CertificateTransparency/log\_states.html</a>
 
@@ -364,7 +364,7 @@ The URL for the certificate log.
 
 <summary>
 
-LogListResponse object {certificateLogs }
+LogListResponse object { certificateLogs }
 
 </summary>
 
@@ -372,7 +372,7 @@ LogListResponse object {certificateLogs }
 
 <summary>
 
-certificateLogs: array of object {api, description, endExclusive, 6 more }
+certificateLogs: array of object { api, description, endExclusive, 6 more }
 
 </summary>
 
@@ -380,7 +380,7 @@ certificateLogs: array of object {api, description, endExclusive, 6 more }
 
 <summary>
 
-api: "RFC6962"or "STATIC"
+api: "RFC6962" or "STATIC"
 
 The API standard that the certificate log follows.
 
@@ -438,7 +438,7 @@ formatdate-time
 
 <summary>
 
-state: "USABLE"or "PENDING"or "QUALIFIED"or 3 more
+state: "USABLE" or "PENDING" or "QUALIFIED" or 3 more
 
 The current state of the certificate log. More details about log states can be found here: <a href="https://googlechrome.github.io/CertificateTransparency/log_states.html">https://googlechrome.github.io/CertificateTransparency/log\_states.html</a>
 

@@ -44,7 +44,7 @@ DELETE/zones/{zone\_id}/email/routing/rules/{rule\_identifier}
 
 <summary>
 
-Action object {type, value }
+Action object { type, value }
 
 Actions pattern.
 
@@ -54,7 +54,7 @@ Actions pattern.
 
 <summary>
 
-type: "drop"or "forward"or "worker"
+type: "drop" or "forward" or "worker"
 
 Type of supported action.
 
@@ -92,7 +92,7 @@ List of values for the action. Currently limited to a single value.
 
 <summary>
 
-EmailRoutingRule object {id, actions, enabled, 5 more }
+EmailRoutingRule object { id, actions, enabled, 5 more }
 
 </summary>
 
@@ -118,7 +118,7 @@ List actions patterns.
 
 <summary>
 
-type: "drop"or "forward"or "worker"
+type: "drop" or "forward" or "worker"
 
 Type of supported action.
 
@@ -156,7 +156,7 @@ List of values for the action. Currently limited to a single value.
 
 <summary>
 
-enabled: optional trueor false
+enabled: optional true or false
 
 Routing rule status.
 
@@ -190,7 +190,7 @@ Matching patterns to forward to your actions.
 
 <summary>
 
-type: "all"or "literal"
+type: "all" or "literal"
 
 Type of matcher.
 
@@ -248,7 +248,7 @@ minimum0
 
 <summary>
 
-source: optional "api"or "wrangler"
+source: optional "api" or "wrangler"
 
 Who manages the rule. <code>api</code> covers dashboard, generic API, and Terraform; <code>wrangler</code> means the rule is managed by a Worker’s wrangler.jsonc. Defaults to <code>api</code> when omitted on write.
 
@@ -284,7 +284,7 @@ maxLength32
 
 <summary>
 
-Matcher object {type, field, value }
+Matcher object { type, field, value }
 
 Matching pattern to forward your actions.
 
@@ -294,7 +294,7 @@ Matching pattern to forward your actions.
 
 <summary>
 
-type: "all"or "literal"
+type: "all" or "literal"
 
 Type of matcher.
 
@@ -348,7 +348,7 @@ PUT/zones/{zone\_id}/email/routing/rules/catch\_all
 
 <summary>
 
-CatchAllAction object {type, value }
+CatchAllAction object { type, value }
 
 Action for the catch-all routing rule.
 
@@ -358,7 +358,7 @@ Action for the catch-all routing rule.
 
 <summary>
 
-type: "drop"or "forward"or "worker"
+type: "drop" or "forward" or "worker"
 
 Type of action for catch-all rule.
 
@@ -396,7 +396,7 @@ List of values for the action. Currently limited to a single value.
 
 <summary>
 
-CatchAllMatcher object {type }
+CatchAllMatcher object { type }
 
 Matcher for catch-all routing rule.
 
@@ -416,7 +416,7 @@ Type of matcher. Default is ‘all’.
 
 <summary>
 
-CatchAllGetResponse object {id, actions, enabled, 4 more }
+CatchAllGetResponse object { id, actions, enabled, 4 more }
 
 </summary>
 
@@ -442,7 +442,7 @@ List actions for the catch-all routing rule.
 
 <summary>
 
-type: "drop"or "forward"or "worker"
+type: "drop" or "forward" or "worker"
 
 Type of action for catch-all rule.
 
@@ -480,7 +480,7 @@ List of values for the action. Currently limited to a single value.
 
 <summary>
 
-enabled: optional trueor false
+enabled: optional true or false
 
 Routing rule status.
 
@@ -532,7 +532,7 @@ maxLength256
 
 <summary>
 
-source: optional "api"or "wrangler"
+source: optional "api" or "wrangler"
 
 Who manages the rule. <code>api</code> covers dashboard, generic API, and Terraform; <code>wrangler</code> means the rule is managed by a Worker’s wrangler.jsonc. Defaults to <code>api</code> when omitted on write.
 
@@ -568,7 +568,7 @@ maxLength32
 
 <summary>
 
-CatchAllUpdateResponse object {id, actions, enabled, 4 more }
+CatchAllUpdateResponse object { id, actions, enabled, 4 more }
 
 </summary>
 
@@ -594,7 +594,7 @@ List actions for the catch-all routing rule.
 
 <summary>
 
-type: "drop"or "forward"or "worker"
+type: "drop" or "forward" or "worker"
 
 Type of action for catch-all rule.
 
@@ -632,7 +632,7 @@ List of values for the action. Currently limited to a single value.
 
 <summary>
 
-enabled: optional trueor false
+enabled: optional true or false
 
 Routing rule status.
 
@@ -684,7 +684,7 @@ maxLength256
 
 <summary>
 
-source: optional "api"or "wrangler"
+source: optional "api" or "wrangler"
 
 Who manages the rule. <code>api</code> covers dashboard, generic API, and Terraform; <code>wrangler</code> means the rule is managed by a Worker’s wrangler.jsonc. Defaults to <code>api</code> when omitted on write.
 

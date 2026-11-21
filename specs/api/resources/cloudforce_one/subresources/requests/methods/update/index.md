@@ -88,7 +88,7 @@ Brief description of the request.
 
 <summary>
 
-tlp: optional "clear"or "amber"or "amber-strict"or 2 more
+tlp: optional "clear" or "amber" or "amber-strict" or 2 more
 
 The CISA defined Traffic Light Protocol (TLP).
 
@@ -126,7 +126,7 @@ One of the following:
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -148,7 +148,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -168,7 +168,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -190,7 +190,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -262,7 +262,7 @@ Brief description of the request.
 
 <summary>
 
-tlp: "clear"or "amber"or "amber-strict"or 2 more
+tlp: "clear" or "amber" or "amber-strict" or 2 more
 
 The CISA defined Traffic Light Protocol (TLP).
 
@@ -322,7 +322,7 @@ Readable Request ID.
 
 <summary>
 
-status: optional "open"or "accepted"or "reported"or 3 more
+status: optional "open" or "accepted" or "reported" or 3 more
 
 Request Status.
 

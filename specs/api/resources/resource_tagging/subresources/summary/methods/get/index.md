@@ -62,7 +62,7 @@ Cursor for pagination.
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -84,7 +84,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -104,7 +104,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -126,7 +126,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -152,7 +152,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional array of object {key, values }
+result: optional array of object { key, values }
 
 Contains an array of tag keys with their distinct values.
 
@@ -178,7 +178,7 @@ All distinct values for this tag key.
 
 <summary>
 
-result\_info: optional object {count, cursor }
+result\_info: optional object { count, cursor }
 
 </summary>
 

@@ -62,7 +62,7 @@ Dataset UUIDs to query, or one standalone scope value: ‘operational’ for rea
 
 <summary>
 
-items: object {type }
+items: object { type }
 
 </summary>
 

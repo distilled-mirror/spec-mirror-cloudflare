@@ -42,7 +42,7 @@ DELETE/accounts/{account\_id}/event\_notifications/r2/{bucket\_name}/configurati
 
 <summary>
 
-EventNotificationListResponse object {bucketName, queues }
+EventNotificationListResponse object { bucketName, queues }
 
 </summary>
 
@@ -56,7 +56,7 @@ Name of the bucket.
 
 <summary>
 
-queues: optional array of object {queueId, queueName, rules }
+queues: optional array of object { queueId, queueName, rules }
 
 List of queues associated with the bucket.
 
@@ -78,7 +78,7 @@ Name of the queue.
 
 <summary>
 
-rules: optional array of object {actions, createdAt, description, 3 more }
+rules: optional array of object { actions, createdAt, description, 3 more }
 
 </summary>
 
@@ -86,7 +86,7 @@ rules: optional array of object {actions, createdAt, description, 3 more }
 
 <summary>
 
-actions: array of "PutObject"or "CopyObject"or "DeleteObject"or 2 more
+actions: array of "PutObject" or "CopyObject" or "DeleteObject" or 2 more
 
 Array of R2 object actions that will trigger notifications.
 
@@ -164,7 +164,7 @@ Notifications will be sent only for objects with this suffix.
 
 <summary>
 
-EventNotificationGetResponse object {queueId, queueName, rules }
+EventNotificationGetResponse object { queueId, queueName, rules }
 
 </summary>
 
@@ -184,7 +184,7 @@ Name of the queue.
 
 <summary>
 
-rules: optional array of object {actions, createdAt, description, 3 more }
+rules: optional array of object { actions, createdAt, description, 3 more }
 
 </summary>
 
@@ -192,7 +192,7 @@ rules: optional array of object {actions, createdAt, description, 3 more }
 
 <summary>
 
-actions: array of "PutObject"or "CopyObject"or "DeleteObject"or 2 more
+actions: array of "PutObject" or "CopyObject" or "DeleteObject" or 2 more
 
 Array of R2 object actions that will trigger notifications.
 

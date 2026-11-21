@@ -28,7 +28,7 @@ GET/accounts/{account\_id}/load\_balancers/search
 
 <summary>
 
-SearchListResponse object {resources }
+SearchListResponse object { resources }
 
 </summary>
 
@@ -36,7 +36,7 @@ SearchListResponse object {resources }
 
 <summary>
 
-resources: optional array of object {reference\_type, references, resource\_id, 2 more }
+resources: optional array of object { reference\_type, references, resource\_id, 2 more }
 
 A list of resources matching the search query.
 
@@ -46,7 +46,7 @@ A list of resources matching the search query.
 
 <summary>
 
-reference\_type: optional "referral"or "referrer"
+reference\_type: optional "referral" or "referrer"
 
 When listed as a reference, the type (direction) of the reference.
 
@@ -86,7 +86,7 @@ The human-identifiable name of the resource.
 
 <summary>
 
-resource\_type: optional "load\_balancer"or "monitor"or "pool"
+resource\_type: optional "load\_balancer" or "monitor" or "pool"
 
 The type of the resource.
 

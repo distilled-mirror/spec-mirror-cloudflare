@@ -32,7 +32,7 @@ PATCH/zones/{zone\_id}/settings/transformations\_allowed\_origins
 
 <summary>
 
-TransformationsAllowedOrigins object {id, editable, modified\_on, value }
+TransformationsAllowedOrigins object { id, editable, modified\_on, value }
 
 Controls which origins are allowed to request image and video transformations.
 
@@ -48,7 +48,7 @@ ID of the zone setting.
 
 <summary>
 
-editable: optional trueor false
+editable: optional true or false
 
 Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
 
@@ -80,7 +80,7 @@ formatdate-time
 
 <summary>
 
-value: optional "on"or "off"
+value: optional "on" or "off"
 
 Comma-separated list of allowed origin domains for image and video transformations. Use ”\*” to allow all origins (default).
 

@@ -34,7 +34,7 @@ PUT/zones/{zone\_id}/api\_gateway/labels/managed/{name}/resources/operation
 
 <summary>
 
-OperationUpdateResponse object {created\_at, description, last\_updated, 4 more }
+OperationUpdateResponse object { created\_at, description, last\_updated, 4 more }
 
 </summary>
 
@@ -72,7 +72,7 @@ The name of the label
 
 <summary>
 
-source: "user"or "managed"
+source: "user" or "managed"
 
 - <code>user</code> - label is owned by the user
 - <code>managed</code> - label is owned by cloudflare

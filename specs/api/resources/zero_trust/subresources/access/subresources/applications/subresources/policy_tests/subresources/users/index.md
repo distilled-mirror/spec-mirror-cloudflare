@@ -34,7 +34,7 @@ GET/accounts/{account\_id}/access/policy-tests/{policy\_test\_id}/users
 
 <summary>
 
-UserListResponse object {id, email, name, status }
+UserListResponse object { id, email, name, status }
 
 </summary>
 
@@ -64,7 +64,7 @@ The name of the user.
 
 <summary>
 
-status: optional "approved"or "blocked"or "error"
+status: optional "approved" or "blocked" or "error"
 
 Policy evaluation result for an individual user.
 

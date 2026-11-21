@@ -76,7 +76,7 @@ maxLength32
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -98,7 +98,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -118,7 +118,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -140,7 +140,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -166,7 +166,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional array of object {DNSKEY, Location, Name, 2 more }
+result: optional array of object { DNSKEY, Location, Name, 2 more }
 
 </summary>
 
@@ -174,7 +174,7 @@ result: optional array of object {DNSKEY, Location, Name, 2 more }
 
 <summary>
 
-DNSKEY: optional object {Algorithm, Flags, Hdr, 2 more }
+DNSKEY: optional object { Algorithm, Flags, Hdr, 2 more }
 
 </summary>
 
@@ -190,7 +190,7 @@ Flags: optional number
 
 <summary>
 
-Hdr: optional object {Class, Name, Rdlength, 2 more }
+Hdr: optional object { Class, Name, Rdlength, 2 more }
 
 </summary>
 
@@ -234,7 +234,7 @@ PublicKey: optional string
 
 <summary>
 
-Location: optional "database"or "vault"
+Location: optional "database" or "vault"
 
 Storage backend where the DNSSEC key material is stored.
 
@@ -264,7 +264,7 @@ Internal key name for the ZSK.
 
 <summary>
 
-SigningKey: optional object {kek, privkey, pubkey }
+SigningKey: optional object { kek, privkey, pubkey }
 
 </summary>
 
@@ -296,7 +296,7 @@ Public key content associated with the signing key.
 
 <summary>
 
-Tag: optional "active"or "publish"or "external"or 3 more
+Tag: optional "active" or "publish" or "external" or 3 more
 
 Lifecycle state tag attached to the DNSSEC key.
 

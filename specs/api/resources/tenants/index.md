@@ -30,7 +30,7 @@ GET/tenants/{tenant\_id}/accounts
 
 <summary>
 
-TenantAccount object {id, created\_on, name, 3 more }
+TenantAccount object { id, created\_on, name, 3 more }
 
 </summary>
 
@@ -52,7 +52,7 @@ name: string
 
 <summary>
 
-settings: object {abuse\_contact\_email, access\_approval\_expiry, api\_access\_enabled, 3 more }
+settings: object { abuse\_contact\_email, access\_approval\_expiry, api\_access\_enabled, 3 more }
 
 </summary>
 
@@ -94,7 +94,7 @@ Use <a href="https://developers.cloudflare.com/api/operations/dns-settings-for-a
 
 <summary>
 
-type: "standard"or "enterprise"
+type: "standard" or "enterprise"
 
 </summary>
 
@@ -126,7 +126,7 @@ Account tags, present only when <code>include_tags=true</code> is requested.
 
 <summary>
 
-AccountListResponse object {account\_pubname, account\_tag, account\_type, 2 more }
+AccountListResponse object { account\_pubname, account\_tag, account\_type, 2 more }
 
 </summary>
 
@@ -142,7 +142,7 @@ account\_tag: string
 
 <summary>
 
-account\_type: "standard"or "enterprise"
+account\_type: "standard" or "enterprise"
 
 </summary>
 
@@ -170,7 +170,7 @@ formatdate-time
 
 <summary>
 
-settings: object {access\_approval\_expiry, api\_access\_enabled, enforce\_two\_factor, use\_account\_custom\_ns\_by\_default }
+settings: object { access\_approval\_expiry, api\_access\_enabled, enforce\_two\_factor, use\_account\_custom\_ns\_by\_default }
 
 </summary>
 

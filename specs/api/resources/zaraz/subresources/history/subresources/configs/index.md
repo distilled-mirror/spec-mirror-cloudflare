@@ -30,7 +30,7 @@ GET/zones/{zone\_id}/settings/zaraz/history/configs
 
 <summary>
 
-ConfigGetResponse = map\[object {id, config, createdAt, 2 more } ]
+ConfigGetResponse = map\[object { id, config, createdAt, 2 more } ]
 
 Object where keys are numeric configuration IDs.
 

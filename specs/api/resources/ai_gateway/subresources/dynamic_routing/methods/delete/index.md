@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`AI Gateway Write`
+`AI Search Index Engine``Auto Rag Write Run Engine``AI Gateway Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -78,7 +78,7 @@ id: string
 
 <summary>
 
-result: object {id, created\_at, elements, 3 more }
+result: object { id, created\_at, elements, 3 more }
 
 </summary>
 
@@ -96,7 +96,7 @@ formatdate-time
 
 <summary>
 
-elements: array of object {id, outputs, type } or object {id, outputs, properties, type } or object {id, outputs, type } or 3 more
+elements: array of object { id, outputs, type } or object { id, outputs, properties, type } or object { id, outputs, type } or 3 more
 
 </summary>
 
@@ -106,7 +106,7 @@ One of the following:
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -118,7 +118,7 @@ id: string
 
 <summary>
 
-outputs: object {next }
+outputs: object { next }
 
 </summary>
 
@@ -126,7 +126,7 @@ outputs: object {next }
 
 <summary>
 
-next: object {elementId }
+next: object { elementId }
 
 </summary>
 
@@ -154,7 +154,7 @@ type: "start"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -166,7 +166,7 @@ id: string
 
 <summary>
 
-outputs: object {false, true }
+outputs: object { false, true }
 
 </summary>
 
@@ -174,23 +174,7 @@ outputs: object {false, true }
 
 <summary>
 
-false: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-true: object {elementId }
+false: object { elementId }
 
 </summary>
 
@@ -202,6 +186,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+true: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -210,7 +210,7 @@ elementId: string
 
 <summary>
 
-properties: object {conditions }
+properties: object { conditions }
 
 </summary>
 
@@ -234,7 +234,7 @@ type: "conditional"
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -246,7 +246,7 @@ id: string
 
 <summary>
 
-outputs: map\[object {elementId } ]
+outputs: map\[object { elementId } ]
 
 </summary>
 
@@ -270,7 +270,7 @@ type: "percentage"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -282,7 +282,7 @@ id: string
 
 <summary>
 
-outputs: object {fallback, success }
+outputs: object { fallback, success }
 
 </summary>
 
@@ -290,23 +290,7 @@ outputs: object {fallback, success }
 
 <summary>
 
-fallback: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-success: object {elementId }
+fallback: object { elementId }
 
 </summary>
 
@@ -318,6 +302,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+success: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -326,7 +326,7 @@ elementId: string
 
 <summary>
 
-properties: object {key, limit, limitType, window }
+properties: object { key, limit, limitType, window }
 
 </summary>
 
@@ -342,7 +342,7 @@ limit: number
 
 <summary>
 
-limitType: "count"or "cost"
+limitType: "count" or "cost"
 
 </summary>
 
@@ -380,7 +380,7 @@ type: "rate"
 
 <summary>
 
-object {id, outputs, properties, type }
+object { id, outputs, properties, type }
 
 </summary>
 
@@ -392,7 +392,7 @@ id: string
 
 <summary>
 
-outputs: object {fallback, success }
+outputs: object { fallback, success }
 
 </summary>
 
@@ -400,23 +400,7 @@ outputs: object {fallback, success }
 
 <summary>
 
-fallback: object {elementId }
-
-</summary>
-
-elementId: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-success: object {elementId }
+fallback: object { elementId }
 
 </summary>
 
@@ -428,6 +412,22 @@ elementId: string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+success: object { elementId }
+
+</summary>
+
+elementId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -436,7 +436,7 @@ elementId: string
 
 <summary>
 
-properties: object {model, provider, retries, timeout }
+properties: object { model, provider, retries, timeout }
 
 </summary>
 
@@ -472,7 +472,7 @@ type: "model"
 
 <summary>
 
-object {id, outputs, type }
+object { id, outputs, type }
 
 </summary>
 
@@ -484,7 +484,7 @@ id: string
 
 <summary>
 
-outputs: map\[object {elementId } ]
+outputs: map\[object { elementId } ]
 
 </summary>
 

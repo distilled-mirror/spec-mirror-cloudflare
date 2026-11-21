@@ -74,7 +74,7 @@ maxLength32
 
 <summary>
 
-errors: array of object {message, code }
+errors: array of object { message, code }
 
 </summary>
 
@@ -96,7 +96,7 @@ minimum1000
 
 <summary>
 
-messages: array of object {message, code }
+messages: array of object { message, code }
 
 </summary>
 
@@ -146,7 +146,7 @@ Optional specification of how often to re-alert from the same incident, not supp
 
 <summary>
 
-alert\_type: optional "abuse\_report\_alert"or "access\_custom\_certificate\_expiration\_type"or "advanced\_ddos\_attack\_l4\_alert"or 88 more
+alert\_type: optional "abuse\_report\_alert" or "access\_custom\_certificate\_expiration\_type" or "advanced\_ddos\_attack\_l4\_alert" or 88 more
 
 Refers to which event will trigger a Notification dispatch. You can use the endpoint to get available alert types which then will give you a list of possible values. This enum lists every alert type, not the ones a given account can create, since some types depend on entitlements or account type. To get the alert types an account can create, call <code>GET /accounts/{account_id}/alerting/v3/available_alerts</code>.
 
@@ -644,7 +644,7 @@ Used for configuring health\_check\_status\_notification
 
 <summary>
 
-incident\_impact: optional array of "INCIDENT\_IMPACT\_NONE"or "INCIDENT\_IMPACT\_MINOR"or "INCIDENT\_IMPACT\_MAJOR"or "INCIDENT\_IMPACT\_CRITICAL"
+incident\_impact: optional array of "INCIDENT\_IMPACT\_NONE" or "INCIDENT\_IMPACT\_MINOR" or "INCIDENT\_IMPACT\_MAJOR" or "INCIDENT\_IMPACT\_CRITICAL"
 
 Used for configuring incident\_alert
 
@@ -876,7 +876,7 @@ List of IDs that will be used when dispatching a notification. IDs for email typ
 
 <summary>
 
-email: optional array of object {id }
+email: optional array of object { id }
 
 </summary>
 
@@ -894,7 +894,7 @@ The email address
 
 <summary>
 
-pagerduty: optional array of object {id }
+pagerduty: optional array of object { id }
 
 </summary>
 
@@ -914,7 +914,7 @@ maxLength32
 
 <summary>
 
-webhooks: optional array of object {id }
+webhooks: optional array of object { id }
 
 </summary>
 

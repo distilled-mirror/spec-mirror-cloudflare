@@ -32,7 +32,7 @@ GET/accounts/{account\_id}/email-security/investigate/{investigate\_id}
 
 <summary>
 
-InvestigateListResponse object {id, action\_log, client\_recipients, 32 more }
+InvestigateListResponse object { id, action\_log, client\_recipients, 32 more }
 
 </summary>
 
@@ -46,7 +46,7 @@ Unique identifier for a message retrieved from investigation.
 
 <summary>
 
-Deprecatedaction\_log: array of object {completed\_at, operation, completed\_timestamp, 2 more }
+Deprecatedaction\_log: array of object { completed\_at, operation, completed\_timestamp, 2 more }
 
 Use GET /investigate/{investigate\_id}/action\_log instead.
 
@@ -66,7 +66,7 @@ formatdate-time
 
 <summary>
 
-operation: "MOVE"or "RELEASE"or "RECLASSIFY"or 3 more
+operation: "MOVE" or "RELEASE" or "RECLASSIFY" or 3 more
 
 Type of action performed.
 
@@ -114,7 +114,7 @@ Deprecated, use <code>completed_at</code> instead. End of life: November 1, 2026
 
 <summary>
 
-properties: optional object {folder, requested\_by }
+properties: optional object { folder, requested\_by }
 
 Additional properties for the action.
 
@@ -172,7 +172,7 @@ The identifier of the message.
 
 <summary>
 
-properties: object {allowlisted\_pattern, allowlisted\_pattern\_type, blocklisted\_message, 2 more }
+properties: object { allowlisted\_pattern, allowlisted\_pattern\_type, blocklisted\_message, 2 more }
 
 Message processing properties.
 
@@ -188,7 +188,7 @@ Pattern that allowlisted this message.
 
 <summary>
 
-allowlisted\_pattern\_type: optional "quarantine\_release"or "acceptable\_sender"or "allowed\_sender"or 5 more
+allowlisted\_pattern\_type: optional "quarantine\_release" or "acceptable\_sender" or "allowed\_sender" or 5 more
 
 Type of allowlist pattern.
 
@@ -248,7 +248,7 @@ Pattern that blocklisted this message.
 
 <summary>
 
-whitelisted\_pattern\_type: optional "quarantine\_release"or "acceptable\_sender"or "allowed\_sender"or 5 more
+whitelisted\_pattern\_type: optional "quarantine\_release" or "acceptable\_sender" or "allowed\_sender" or 5 more
 
 Legacy field for allowlist pattern type.
 
@@ -312,7 +312,7 @@ alert\_id: optional string
 
 <summary>
 
-delivery\_mode: optional "DIRECT"or "BCC"or "JOURNAL"or 8 more
+delivery\_mode: optional "DIRECT" or "BCC" or "JOURNAL" or 8 more
 
 </summary>
 
@@ -370,7 +370,7 @@ One of the following:
 
 <summary>
 
-delivery\_status: optional array of "delivered"or "moved"or "quarantined"or 5 more
+delivery\_status: optional array of "delivered" or "moved" or "quarantined" or 5 more
 
 </summary>
 
@@ -428,7 +428,7 @@ envelope\_to: optional array of string
 
 <summary>
 
-final\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+final\_disposition: optional "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 The verdict Email Security assigns to a message.
 
@@ -484,7 +484,7 @@ One of the following:
 
 <summary>
 
-Deprecatedfindings: optional array of object {attachment, detail, detection, 6 more }
+Deprecatedfindings: optional array of object { attachment, detail, detection, 6 more }
 
 Use the <code>findings</code> field from GET /investigate/{investigate\_id}/detections instead.
 
@@ -504,7 +504,7 @@ detail: optional string
 
 <summary>
 
-detection: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+detection: optional "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 The verdict Email Security assigns to a message.
 
@@ -606,7 +606,7 @@ message\_id: optional string
 
 <summary>
 
-post\_delivery\_operations: optional array of "PREVIEW"or "QUARANTINE\_RELEASE"or "SUBMISSION"or "MOVE"
+post\_delivery\_operations: optional array of "PREVIEW" or "QUARANTINE\_RELEASE" or "SUBMISSION" or "MOVE"
 
 Post-delivery operations performed on this message.
 
@@ -690,7 +690,7 @@ to\_name: optional array of string
 
 <summary>
 
-validation: optional object {comment, dkim, dmarc, spf } or unknown
+validation: optional object { comment, dkim, dmarc, spf } or unknown
 
 </summary>
 
@@ -700,7 +700,7 @@ One of the following:
 
 <summary>
 
-EmailSecurityValidation object {comment, dkim, dmarc, spf }
+EmailSecurityValidation object { comment, dkim, dmarc, spf }
 
 </summary>
 
@@ -712,7 +712,7 @@ comment: optional string
 
 <summary>
 
-dkim: optional "pass"or "neutral"or "fail"or 2 more
+dkim: optional "pass" or "neutral" or "fail" or 2 more
 
 </summary>
 
@@ -746,7 +746,7 @@ One of the following:
 
 <summary>
 
-dmarc: optional "pass"or "neutral"or "fail"or 2 more
+dmarc: optional "pass" or "neutral" or "fail" or 2 more
 
 </summary>
 
@@ -780,7 +780,7 @@ One of the following:
 
 <summary>
 
-spf: optional "pass"or "neutral"or "fail"or 2 more
+spf: optional "pass" or "neutral" or "fail" or 2 more
 
 </summary>
 
@@ -834,7 +834,7 @@ x\_originating\_ip: optional string
 
 <summary>
 
-InvestigateGetResponse object {id, action\_log, client\_recipients, 32 more }
+InvestigateGetResponse object { id, action\_log, client\_recipients, 32 more }
 
 </summary>
 
@@ -848,7 +848,7 @@ Unique identifier for a message retrieved from investigation.
 
 <summary>
 
-Deprecatedaction\_log: array of object {completed\_at, operation, completed\_timestamp, 2 more }
+Deprecatedaction\_log: array of object { completed\_at, operation, completed\_timestamp, 2 more }
 
 Use GET /investigate/{investigate\_id}/action\_log instead.
 
@@ -868,7 +868,7 @@ formatdate-time
 
 <summary>
 
-operation: "MOVE"or "RELEASE"or "RECLASSIFY"or 3 more
+operation: "MOVE" or "RELEASE" or "RECLASSIFY" or 3 more
 
 Type of action performed.
 
@@ -916,7 +916,7 @@ Deprecated, use <code>completed_at</code> instead. End of life: November 1, 2026
 
 <summary>
 
-properties: optional object {folder, requested\_by }
+properties: optional object { folder, requested\_by }
 
 Additional properties for the action.
 
@@ -974,7 +974,7 @@ The identifier of the message.
 
 <summary>
 
-properties: object {allowlisted\_pattern, allowlisted\_pattern\_type, blocklisted\_message, 2 more }
+properties: object { allowlisted\_pattern, allowlisted\_pattern\_type, blocklisted\_message, 2 more }
 
 Message processing properties.
 
@@ -990,7 +990,7 @@ Pattern that allowlisted this message.
 
 <summary>
 
-allowlisted\_pattern\_type: optional "quarantine\_release"or "acceptable\_sender"or "allowed\_sender"or 5 more
+allowlisted\_pattern\_type: optional "quarantine\_release" or "acceptable\_sender" or "allowed\_sender" or 5 more
 
 Type of allowlist pattern.
 
@@ -1050,7 +1050,7 @@ Pattern that blocklisted this message.
 
 <summary>
 
-whitelisted\_pattern\_type: optional "quarantine\_release"or "acceptable\_sender"or "allowed\_sender"or 5 more
+whitelisted\_pattern\_type: optional "quarantine\_release" or "acceptable\_sender" or "allowed\_sender" or 5 more
 
 Legacy field for allowlist pattern type.
 
@@ -1114,7 +1114,7 @@ alert\_id: optional string
 
 <summary>
 
-delivery\_mode: optional "DIRECT"or "BCC"or "JOURNAL"or 8 more
+delivery\_mode: optional "DIRECT" or "BCC" or "JOURNAL" or 8 more
 
 </summary>
 
@@ -1172,7 +1172,7 @@ One of the following:
 
 <summary>
 
-delivery\_status: optional array of "delivered"or "moved"or "quarantined"or 5 more
+delivery\_status: optional array of "delivered" or "moved" or "quarantined" or 5 more
 
 </summary>
 
@@ -1230,7 +1230,7 @@ envelope\_to: optional array of string
 
 <summary>
 
-final\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+final\_disposition: optional "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 The verdict Email Security assigns to a message.
 
@@ -1286,7 +1286,7 @@ One of the following:
 
 <summary>
 
-Deprecatedfindings: optional array of object {attachment, detail, detection, 6 more }
+Deprecatedfindings: optional array of object { attachment, detail, detection, 6 more }
 
 Use the <code>findings</code> field from GET /investigate/{investigate\_id}/detections instead.
 
@@ -1306,7 +1306,7 @@ detail: optional string
 
 <summary>
 
-detection: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+detection: optional "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 The verdict Email Security assigns to a message.
 
@@ -1408,7 +1408,7 @@ message\_id: optional string
 
 <summary>
 
-post\_delivery\_operations: optional array of "PREVIEW"or "QUARANTINE\_RELEASE"or "SUBMISSION"or "MOVE"
+post\_delivery\_operations: optional array of "PREVIEW" or "QUARANTINE\_RELEASE" or "SUBMISSION" or "MOVE"
 
 Post-delivery operations performed on this message.
 
@@ -1492,7 +1492,7 @@ to\_name: optional array of string
 
 <summary>
 
-validation: optional object {comment, dkim, dmarc, spf } or unknown
+validation: optional object { comment, dkim, dmarc, spf } or unknown
 
 </summary>
 
@@ -1502,7 +1502,7 @@ One of the following:
 
 <summary>
 
-EmailSecurityValidation object {comment, dkim, dmarc, spf }
+EmailSecurityValidation object { comment, dkim, dmarc, spf }
 
 </summary>
 
@@ -1514,7 +1514,7 @@ comment: optional string
 
 <summary>
 
-dkim: optional "pass"or "neutral"or "fail"or 2 more
+dkim: optional "pass" or "neutral" or "fail" or 2 more
 
 </summary>
 
@@ -1548,7 +1548,7 @@ One of the following:
 
 <summary>
 
-dmarc: optional "pass"or "neutral"or "fail"or 2 more
+dmarc: optional "pass" or "neutral" or "fail" or 2 more
 
 </summary>
 
@@ -1582,7 +1582,7 @@ One of the following:
 
 <summary>
 
-spf: optional "pass"or "neutral"or "fail"or 2 more
+spf: optional "pass" or "neutral" or "fail" or 2 more
 
 </summary>
 
@@ -1644,7 +1644,7 @@ GET/accounts/{account\_id}/email-security/investigate/{investigate\_id}/detectio
 
 <summary>
 
-DetectionGetResponse object {action, attachments, findings, 6 more }
+DetectionGetResponse object { action, attachments, findings, 6 more }
 
 </summary>
 
@@ -1656,7 +1656,7 @@ action: string
 
 <summary>
 
-attachments: array of object {size, content\_type, detection, 6 more }
+attachments: array of object { size, content\_type, detection, 6 more }
 
 </summary>
 
@@ -1678,7 +1678,7 @@ MIME type of the attachment.
 
 <summary>
 
-detection: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+detection: optional "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 Detection result for this attachment.
 
@@ -1774,7 +1774,7 @@ SHA256 hash of the attachment.
 
 <summary>
 
-findings: array of object {attachment, detail, detection, 6 more }
+findings: array of object { attachment, detail, detection, 6 more }
 
 </summary>
 
@@ -1790,7 +1790,7 @@ detail: optional string
 
 <summary>
 
-detection: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+detection: optional "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 Detection result associated with this finding.
 
@@ -1876,7 +1876,7 @@ value: optional string
 
 <summary>
 
-headers: array of object {name, value }
+headers: array of object { name, value }
 
 </summary>
 
@@ -1896,7 +1896,7 @@ value: string
 
 <summary>
 
-links: array of object {href, text }
+links: array of object { href, text }
 
 </summary>
 
@@ -1916,7 +1916,7 @@ text: optional string
 
 <summary>
 
-sender\_info: object {as\_name, as\_number, geo, 2 more }
+sender\_info: object { as\_name, as\_number, geo, 2 more }
 
 </summary>
 
@@ -1952,7 +1952,7 @@ pld: optional string
 
 <summary>
 
-threat\_categories: array of object {id, description, name }
+threat\_categories: array of object { id, description, name }
 
 </summary>
 
@@ -1976,7 +1976,7 @@ name: optional string
 
 <summary>
 
-validation: object {comment, dkim, dmarc, spf }
+validation: object { comment, dkim, dmarc, spf }
 
 </summary>
 
@@ -1988,7 +1988,7 @@ comment: optional string
 
 <summary>
 
-dkim: optional "pass"or "neutral"or "fail"or 2 more
+dkim: optional "pass" or "neutral" or "fail" or 2 more
 
 </summary>
 
@@ -2022,7 +2022,7 @@ One of the following:
 
 <summary>
 
-dmarc: optional "pass"or "neutral"or "fail"or 2 more
+dmarc: optional "pass" or "neutral" or "fail" or 2 more
 
 </summary>
 
@@ -2056,7 +2056,7 @@ One of the following:
 
 <summary>
 
-spf: optional "pass"or "neutral"or "fail"or 2 more
+spf: optional "pass" or "neutral" or "fail" or 2 more
 
 </summary>
 
@@ -2094,7 +2094,7 @@ One of the following:
 
 <summary>
 
-final\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+final\_disposition: optional "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 The verdict Email Security assigns to a message.
 
@@ -2166,7 +2166,7 @@ POST/accounts/{account\_id}/email-security/investigate/preview
 
 <summary>
 
-PreviewGetResponse object {screenshot }
+PreviewGetResponse object { screenshot }
 
 </summary>
 
@@ -2184,7 +2184,7 @@ A base64 encoded PNG image of the email.
 
 <summary>
 
-PreviewCreateResponse object {screenshot }
+PreviewCreateResponse object { screenshot }
 
 </summary>
 
@@ -2210,7 +2210,7 @@ GET/accounts/{account\_id}/email-security/investigate/{investigate\_id}/raw
 
 <summary>
 
-RawGetResponse object {raw }
+RawGetResponse object { raw }
 
 </summary>
 
@@ -2236,7 +2236,7 @@ GET/accounts/{account\_id}/email-security/investigate/{investigate\_id}/trace
 
 <summary>
 
-TraceGetResponse object {inbound, outbound }
+TraceGetResponse object { inbound, outbound }
 
 </summary>
 
@@ -2244,7 +2244,7 @@ TraceGetResponse object {inbound, outbound }
 
 <summary>
 
-inbound: object {lines, pending }
+inbound: object { lines, pending }
 
 </summary>
 
@@ -2252,7 +2252,7 @@ inbound: object {lines, pending }
 
 <summary>
 
-lines: optional array of object {lineno, logged\_at, message, ts }
+lines: optional array of object { lineno, logged\_at, message, ts }
 
 </summary>
 
@@ -2296,7 +2296,7 @@ pending: optional boolean
 
 <summary>
 
-outbound: object {lines, pending }
+outbound: object { lines, pending }
 
 </summary>
 
@@ -2304,7 +2304,7 @@ outbound: object {lines, pending }
 
 <summary>
 
-lines: optional array of object {lineno, logged\_at, message, ts }
+lines: optional array of object { lineno, logged\_at, message, ts }
 
 </summary>
 
@@ -2364,7 +2364,7 @@ POST/accounts/{account\_id}/email-security/investigate/move
 
 <summary>
 
-MoveCreateResponse object {success, completed\_at, completed\_timestamp, 6 more }
+MoveCreateResponse object { success, completed\_at, completed\_timestamp, 6 more }
 
 </summary>
 
@@ -2438,7 +2438,7 @@ Operation status.
 
 <summary>
 
-MoveBulkResponse object {success, completed\_at, completed\_timestamp, 6 more }
+MoveBulkResponse object { success, completed\_at, completed\_timestamp, 6 more }
 
 </summary>
 
@@ -2534,7 +2534,7 @@ POST/accounts/{account\_id}/email-security/investigate/release
 
 <summary>
 
-ReleaseBulkResponse object {id, delivered, failed, 2 more }
+ReleaseBulkResponse object { id, delivered, failed, 2 more }
 
 </summary>
 
@@ -2592,7 +2592,7 @@ DELETE/accounts/{account\_id}/email-security/investigate/bulk/{job\_id}
 
 <summary>
 
-BulkListResponse object {action\_params, action\_type, created\_at, 13 more }
+BulkListResponse object { action\_params, action\_type, created\_at, 13 more }
 
 </summary>
 
@@ -2600,7 +2600,7 @@ BulkListResponse object {action\_params, action\_type, created\_at, 13 more }
 
 <summary>
 
-action\_params: object {destination, type, expected\_disposition } or object {type }
+action\_params: object { destination, type, expected\_disposition } or object { type }
 
 </summary>
 
@@ -2610,7 +2610,7 @@ One of the following:
 
 <summary>
 
-Move object {destination, type, expected\_disposition }
+Move object { destination, type, expected\_disposition }
 
 </summary>
 
@@ -2618,7 +2618,7 @@ Move object {destination, type, expected\_disposition }
 
 <summary>
 
-destination: "Inbox"or "JunkEmail"or "DeletedItems"or 2 more
+destination: "Inbox" or "JunkEmail" or "DeletedItems" or 2 more
 
 The mailbox folder to move messages to.
 
@@ -2658,7 +2658,7 @@ type: "MOVE"
 
 <summary>
 
-Deprecatedexpected\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+Deprecatedexpected\_disposition: optional "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 This field is nonfunctional.
 
@@ -2720,7 +2720,7 @@ One of the following:
 
 <summary>
 
-Release object {type }
+Release object { type }
 
 </summary>
 
@@ -2740,7 +2740,7 @@ type: "RELEASE"
 
 <summary>
 
-action\_type: "MOVE"or "RELEASE"
+action\_type: "MOVE" or "RELEASE"
 
 </summary>
 
@@ -2798,7 +2798,7 @@ messages\_successful: number
 
 <summary>
 
-search\_params: object {action\_log, alert\_id, delivery\_status, 15 more }
+search\_params: object { action\_log, alert\_id, delivery\_status, 15 more }
 
 </summary>
 
@@ -2820,7 +2820,7 @@ Alert ID of the detection to filter by.
 
 <summary>
 
-delivery\_status: optional "delivered"or "moved"or "quarantined"or 5 more
+delivery\_status: optional "delivered" or "moved" or "quarantined" or 5 more
 
 Delivery status to filter by.
 
@@ -2894,7 +2894,7 @@ Match messages whose subject line equals this value exactly.
 
 <summary>
 
-final\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+final\_disposition: optional "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 Dispositions to filter by.
 
@@ -2950,7 +2950,7 @@ One of the following:
 
 <summary>
 
-message\_action: optional "PREVIEW"or "QUARANTINE\_RELEASED"or "MOVED"
+message\_action: optional "PREVIEW" or "QUARANTINE\_RELEASED" or "MOVED"
 
 Message actions to filter by.
 
@@ -3038,7 +3038,7 @@ Whether to search reclassification submissions instead of original messages.
 
 <summary>
 
-status: "PENDING"or "DISCOVERING"or "PROCESSING"or 3 more
+status: "PENDING" or "DISCOVERING" or "PROCESSING" or 3 more
 
 Status of a bulk action job.
 
@@ -3106,7 +3106,7 @@ status\_message: optional string
 
 <summary>
 
-BulkCreateResponse object {action\_params, action\_type, created\_at, 13 more }
+BulkCreateResponse object { action\_params, action\_type, created\_at, 13 more }
 
 </summary>
 
@@ -3114,7 +3114,7 @@ BulkCreateResponse object {action\_params, action\_type, created\_at, 13 more }
 
 <summary>
 
-action\_params: object {destination, type, expected\_disposition } or object {type }
+action\_params: object { destination, type, expected\_disposition } or object { type }
 
 </summary>
 
@@ -3124,7 +3124,7 @@ One of the following:
 
 <summary>
 
-Move object {destination, type, expected\_disposition }
+Move object { destination, type, expected\_disposition }
 
 </summary>
 
@@ -3132,7 +3132,7 @@ Move object {destination, type, expected\_disposition }
 
 <summary>
 
-destination: "Inbox"or "JunkEmail"or "DeletedItems"or 2 more
+destination: "Inbox" or "JunkEmail" or "DeletedItems" or 2 more
 
 The mailbox folder to move messages to.
 
@@ -3172,7 +3172,7 @@ type: "MOVE"
 
 <summary>
 
-Deprecatedexpected\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+Deprecatedexpected\_disposition: optional "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 This field is nonfunctional.
 
@@ -3234,7 +3234,7 @@ One of the following:
 
 <summary>
 
-Release object {type }
+Release object { type }
 
 </summary>
 
@@ -3254,7 +3254,7 @@ type: "RELEASE"
 
 <summary>
 
-action\_type: "MOVE"or "RELEASE"
+action\_type: "MOVE" or "RELEASE"
 
 </summary>
 
@@ -3312,7 +3312,7 @@ messages\_successful: number
 
 <summary>
 
-search\_params: object {action\_log, alert\_id, delivery\_status, 15 more }
+search\_params: object { action\_log, alert\_id, delivery\_status, 15 more }
 
 </summary>
 
@@ -3334,7 +3334,7 @@ Alert ID of the detection to filter by.
 
 <summary>
 
-delivery\_status: optional "delivered"or "moved"or "quarantined"or 5 more
+delivery\_status: optional "delivered" or "moved" or "quarantined" or 5 more
 
 Delivery status to filter by.
 
@@ -3408,7 +3408,7 @@ Match messages whose subject line equals this value exactly.
 
 <summary>
 
-final\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+final\_disposition: optional "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 Dispositions to filter by.
 
@@ -3464,7 +3464,7 @@ One of the following:
 
 <summary>
 
-message\_action: optional "PREVIEW"or "QUARANTINE\_RELEASED"or "MOVED"
+message\_action: optional "PREVIEW" or "QUARANTINE\_RELEASED" or "MOVED"
 
 Message actions to filter by.
 
@@ -3552,7 +3552,7 @@ Whether to search reclassification submissions instead of original messages.
 
 <summary>
 
-status: "PENDING"or "DISCOVERING"or "PROCESSING"or 3 more
+status: "PENDING" or "DISCOVERING" or "PROCESSING" or 3 more
 
 Status of a bulk action job.
 
@@ -3620,7 +3620,7 @@ status\_message: optional string
 
 <summary>
 
-BulkGetResponse object {action\_params, action\_type, created\_at, 13 more }
+BulkGetResponse object { action\_params, action\_type, created\_at, 13 more }
 
 </summary>
 
@@ -3628,7 +3628,7 @@ BulkGetResponse object {action\_params, action\_type, created\_at, 13 more }
 
 <summary>
 
-action\_params: object {destination, type, expected\_disposition } or object {type }
+action\_params: object { destination, type, expected\_disposition } or object { type }
 
 </summary>
 
@@ -3638,7 +3638,7 @@ One of the following:
 
 <summary>
 
-Move object {destination, type, expected\_disposition }
+Move object { destination, type, expected\_disposition }
 
 </summary>
 
@@ -3646,7 +3646,7 @@ Move object {destination, type, expected\_disposition }
 
 <summary>
 
-destination: "Inbox"or "JunkEmail"or "DeletedItems"or 2 more
+destination: "Inbox" or "JunkEmail" or "DeletedItems" or 2 more
 
 The mailbox folder to move messages to.
 
@@ -3686,7 +3686,7 @@ type: "MOVE"
 
 <summary>
 
-Deprecatedexpected\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+Deprecatedexpected\_disposition: optional "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 This field is nonfunctional.
 
@@ -3748,7 +3748,7 @@ One of the following:
 
 <summary>
 
-Release object {type }
+Release object { type }
 
 </summary>
 
@@ -3768,7 +3768,7 @@ type: "RELEASE"
 
 <summary>
 
-action\_type: "MOVE"or "RELEASE"
+action\_type: "MOVE" or "RELEASE"
 
 </summary>
 
@@ -3826,7 +3826,7 @@ messages\_successful: number
 
 <summary>
 
-search\_params: object {action\_log, alert\_id, delivery\_status, 15 more }
+search\_params: object { action\_log, alert\_id, delivery\_status, 15 more }
 
 </summary>
 
@@ -3848,7 +3848,7 @@ Alert ID of the detection to filter by.
 
 <summary>
 
-delivery\_status: optional "delivered"or "moved"or "quarantined"or 5 more
+delivery\_status: optional "delivered" or "moved" or "quarantined" or 5 more
 
 Delivery status to filter by.
 
@@ -3922,7 +3922,7 @@ Match messages whose subject line equals this value exactly.
 
 <summary>
 
-final\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+final\_disposition: optional "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 Dispositions to filter by.
 
@@ -3978,7 +3978,7 @@ One of the following:
 
 <summary>
 
-message\_action: optional "PREVIEW"or "QUARANTINE\_RELEASED"or "MOVED"
+message\_action: optional "PREVIEW" or "QUARANTINE\_RELEASED" or "MOVED"
 
 Message actions to filter by.
 
@@ -4066,7 +4066,7 @@ Whether to search reclassification submissions instead of original messages.
 
 <summary>
 
-status: "PENDING"or "DISCOVERING"or "PROCESSING"or 3 more
+status: "PENDING" or "DISCOVERING" or "PROCESSING" or 3 more
 
 Status of a bulk action job.
 
@@ -4134,7 +4134,7 @@ status\_message: optional string
 
 <summary>
 
-BulkDeleteResponse object {id }
+BulkDeleteResponse object { id }
 
 </summary>
 
@@ -4160,7 +4160,7 @@ POST/accounts/{account\_id}/email-security/investigate/bulk/{job\_id}/cancel
 
 <summary>
 
-CancelCreateResponse object {action\_params, action\_type, created\_at, 13 more }
+CancelCreateResponse object { action\_params, action\_type, created\_at, 13 more }
 
 </summary>
 
@@ -4168,7 +4168,7 @@ CancelCreateResponse object {action\_params, action\_type, created\_at, 13 more 
 
 <summary>
 
-action\_params: object {destination, type, expected\_disposition } or object {type }
+action\_params: object { destination, type, expected\_disposition } or object { type }
 
 </summary>
 
@@ -4178,7 +4178,7 @@ One of the following:
 
 <summary>
 
-Move object {destination, type, expected\_disposition }
+Move object { destination, type, expected\_disposition }
 
 </summary>
 
@@ -4186,7 +4186,7 @@ Move object {destination, type, expected\_disposition }
 
 <summary>
 
-destination: "Inbox"or "JunkEmail"or "DeletedItems"or 2 more
+destination: "Inbox" or "JunkEmail" or "DeletedItems" or 2 more
 
 The mailbox folder to move messages to.
 
@@ -4226,7 +4226,7 @@ type: "MOVE"
 
 <summary>
 
-Deprecatedexpected\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+Deprecatedexpected\_disposition: optional "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 This field is nonfunctional.
 
@@ -4288,7 +4288,7 @@ One of the following:
 
 <summary>
 
-Release object {type }
+Release object { type }
 
 </summary>
 
@@ -4308,7 +4308,7 @@ type: "RELEASE"
 
 <summary>
 
-action\_type: "MOVE"or "RELEASE"
+action\_type: "MOVE" or "RELEASE"
 
 </summary>
 
@@ -4366,7 +4366,7 @@ messages\_successful: number
 
 <summary>
 
-search\_params: object {action\_log, alert\_id, delivery\_status, 15 more }
+search\_params: object { action\_log, alert\_id, delivery\_status, 15 more }
 
 </summary>
 
@@ -4388,7 +4388,7 @@ Alert ID of the detection to filter by.
 
 <summary>
 
-delivery\_status: optional "delivered"or "moved"or "quarantined"or 5 more
+delivery\_status: optional "delivered" or "moved" or "quarantined" or 5 more
 
 Delivery status to filter by.
 
@@ -4462,7 +4462,7 @@ Match messages whose subject line equals this value exactly.
 
 <summary>
 
-final\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+final\_disposition: optional "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 Dispositions to filter by.
 
@@ -4518,7 +4518,7 @@ One of the following:
 
 <summary>
 
-message\_action: optional "PREVIEW"or "QUARANTINE\_RELEASED"or "MOVED"
+message\_action: optional "PREVIEW" or "QUARANTINE\_RELEASED" or "MOVED"
 
 Message actions to filter by.
 
@@ -4606,7 +4606,7 @@ Whether to search reclassification submissions instead of original messages.
 
 <summary>
 
-status: "PENDING"or "DISCOVERING"or "PROCESSING"or 3 more
+status: "PENDING" or "DISCOVERING" or "PROCESSING" or 3 more
 
 Status of a bulk action job.
 
@@ -4682,7 +4682,7 @@ GET/accounts/{account\_id}/email-security/investigate/bulk/{job\_id}/messages
 
 <summary>
 
-MessageListResponse object {action\_params, action\_type, created\_at, 10 more }
+MessageListResponse object { action\_params, action\_type, created\_at, 10 more }
 
 </summary>
 
@@ -4690,7 +4690,7 @@ MessageListResponse object {action\_params, action\_type, created\_at, 10 more }
 
 <summary>
 
-action\_params: object {client\_recipient, destination, type, expected\_disposition } or object {client\_recipient, type }
+action\_params: object { client\_recipient, destination, type, expected\_disposition } or object { client\_recipient, type }
 
 </summary>
 
@@ -4700,7 +4700,7 @@ One of the following:
 
 <summary>
 
-Move object {client\_recipient, destination, type, expected\_disposition }
+Move object { client\_recipient, destination, type, expected\_disposition }
 
 </summary>
 
@@ -4712,7 +4712,7 @@ client\_recipient: string
 
 <summary>
 
-destination: "Inbox"or "JunkEmail"or "DeletedItems"or 2 more
+destination: "Inbox" or "JunkEmail" or "DeletedItems" or 2 more
 
 The mailbox folder to move messages to.
 
@@ -4752,7 +4752,7 @@ type: "MOVE"
 
 <summary>
 
-Deprecatedexpected\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+Deprecatedexpected\_disposition: optional "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 This field is nonfunctional.
 
@@ -4814,7 +4814,7 @@ One of the following:
 
 <summary>
 
-Release object {client\_recipient, type }
+Release object { client\_recipient, type }
 
 </summary>
 
@@ -4838,7 +4838,7 @@ type: "RELEASE"
 
 <summary>
 
-action\_type: "MOVE"or "RELEASE"
+action\_type: "MOVE" or "RELEASE"
 
 </summary>
 
@@ -4880,7 +4880,7 @@ retry\_count: number
 
 <summary>
 
-status: "PENDING"or "PROCESSING"or "COMPLETED"or 3 more
+status: "PENDING" or "PROCESSING" or "COMPLETED" or 3 more
 
 Status of a message within a bulk action job.
 
@@ -4928,7 +4928,7 @@ email\_message\_id: optional string
 
 <summary>
 
-message: optional object {id, action\_log, client\_recipients, 32 more }
+message: optional object { id, action\_log, client\_recipients, 32 more }
 
 </summary>
 
@@ -4942,7 +4942,7 @@ Unique identifier for a message retrieved from investigation.
 
 <summary>
 
-Deprecatedaction\_log: array of object {completed\_at, operation, completed\_timestamp, 2 more }
+Deprecatedaction\_log: array of object { completed\_at, operation, completed\_timestamp, 2 more }
 
 Use GET /investigate/{investigate\_id}/action\_log instead.
 
@@ -4962,7 +4962,7 @@ formatdate-time
 
 <summary>
 
-operation: "MOVE"or "RELEASE"or "RECLASSIFY"or 3 more
+operation: "MOVE" or "RELEASE" or "RECLASSIFY" or 3 more
 
 Type of action performed.
 
@@ -5010,7 +5010,7 @@ Deprecated, use <code>completed_at</code> instead. End of life: November 1, 2026
 
 <summary>
 
-properties: optional object {folder, requested\_by }
+properties: optional object { folder, requested\_by }
 
 Additional properties for the action.
 
@@ -5068,7 +5068,7 @@ The identifier of the message.
 
 <summary>
 
-properties: object {allowlisted\_pattern, allowlisted\_pattern\_type, blocklisted\_message, 2 more }
+properties: object { allowlisted\_pattern, allowlisted\_pattern\_type, blocklisted\_message, 2 more }
 
 Message processing properties.
 
@@ -5084,7 +5084,7 @@ Pattern that allowlisted this message.
 
 <summary>
 
-allowlisted\_pattern\_type: optional "quarantine\_release"or "acceptable\_sender"or "allowed\_sender"or 5 more
+allowlisted\_pattern\_type: optional "quarantine\_release" or "acceptable\_sender" or "allowed\_sender" or 5 more
 
 Type of allowlist pattern.
 
@@ -5144,7 +5144,7 @@ Pattern that blocklisted this message.
 
 <summary>
 
-whitelisted\_pattern\_type: optional "quarantine\_release"or "acceptable\_sender"or "allowed\_sender"or 5 more
+whitelisted\_pattern\_type: optional "quarantine\_release" or "acceptable\_sender" or "allowed\_sender" or 5 more
 
 Legacy field for allowlist pattern type.
 
@@ -5208,7 +5208,7 @@ alert\_id: optional string
 
 <summary>
 
-delivery\_mode: optional "DIRECT"or "BCC"or "JOURNAL"or 8 more
+delivery\_mode: optional "DIRECT" or "BCC" or "JOURNAL" or 8 more
 
 </summary>
 
@@ -5266,7 +5266,7 @@ One of the following:
 
 <summary>
 
-delivery\_status: optional array of "delivered"or "moved"or "quarantined"or 5 more
+delivery\_status: optional array of "delivered" or "moved" or "quarantined" or 5 more
 
 </summary>
 
@@ -5324,7 +5324,7 @@ envelope\_to: optional array of string
 
 <summary>
 
-final\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+final\_disposition: optional "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 The verdict Email Security assigns to a message.
 
@@ -5380,7 +5380,7 @@ One of the following:
 
 <summary>
 
-Deprecatedfindings: optional array of object {attachment, detail, detection, 6 more }
+Deprecatedfindings: optional array of object { attachment, detail, detection, 6 more }
 
 Use the <code>findings</code> field from GET /investigate/{investigate\_id}/detections instead.
 
@@ -5400,7 +5400,7 @@ detail: optional string
 
 <summary>
 
-detection: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+detection: optional "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 The verdict Email Security assigns to a message.
 
@@ -5502,7 +5502,7 @@ message\_id: optional string
 
 <summary>
 
-post\_delivery\_operations: optional array of "PREVIEW"or "QUARANTINE\_RELEASE"or "SUBMISSION"or "MOVE"
+post\_delivery\_operations: optional array of "PREVIEW" or "QUARANTINE\_RELEASE" or "SUBMISSION" or "MOVE"
 
 Post-delivery operations performed on this message.
 
@@ -5586,7 +5586,7 @@ to\_name: optional array of string
 
 <summary>
 
-validation: optional object {comment, dkim, dmarc, spf } or unknown
+validation: optional object { comment, dkim, dmarc, spf } or unknown
 
 </summary>
 
@@ -5596,7 +5596,7 @@ One of the following:
 
 <summary>
 
-EmailSecurityValidation object {comment, dkim, dmarc, spf }
+EmailSecurityValidation object { comment, dkim, dmarc, spf }
 
 </summary>
 
@@ -5608,7 +5608,7 @@ comment: optional string
 
 <summary>
 
-dkim: optional "pass"or "neutral"or "fail"or 2 more
+dkim: optional "pass" or "neutral" or "fail" or 2 more
 
 </summary>
 
@@ -5642,7 +5642,7 @@ One of the following:
 
 <summary>
 
-dmarc: optional "pass"or "neutral"or "fail"or 2 more
+dmarc: optional "pass" or "neutral" or "fail" or 2 more
 
 </summary>
 
@@ -5676,7 +5676,7 @@ One of the following:
 
 <summary>
 
-spf: optional "pass"or "neutral"or "fail"or 2 more
+spf: optional "pass" or "neutral" or "fail" or 2 more
 
 </summary>
 
@@ -5762,7 +5762,7 @@ GET/accounts/{account\_id}/email-security/phishguard/reports
 
 <summary>
 
-ReportListResponse object {id, content, disposition, 7 more }
+ReportListResponse object { id, content, disposition, 7 more }
 
 </summary>
 
@@ -5778,7 +5778,7 @@ content: string
 
 <summary>
 
-disposition: "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+disposition: "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 The verdict Email Security assigns to a message.
 
@@ -5834,7 +5834,7 @@ One of the following:
 
 <summary>
 
-fields: object {to, from, occurred\_at, 2 more }
+fields: object { to, from, occurred\_at, 2 more }
 
 </summary>
 
@@ -5888,7 +5888,7 @@ formatdate-time
 
 <summary>
 
-tags: optional array of object {category, value }
+tags: optional array of object { category, value }
 
 </summary>
 
@@ -5958,7 +5958,7 @@ POST/accounts/{account\_id}/email-security/settings/allow\_policies/batch
 
 <summary>
 
-AllowPolicyListResponse object {id, created\_at, last\_modified, 13 more }
+AllowPolicyListResponse object { id, created\_at, last\_modified, 13 more }
 
 An email allow policy.
 
@@ -6068,7 +6068,7 @@ minLength1
 
 <summary>
 
-pattern\_type: optional "EMAIL"or "DOMAIN"or "IP"or "UNKNOWN"
+pattern\_type: optional "EMAIL" or "DOMAIN" or "IP" or "UNKNOWN"
 
 Type of pattern matching.
 
@@ -6115,7 +6115,7 @@ Enforce DMARC, SPF or DKIM authentication. When on, Email Security only honors p
 
 <summary>
 
-AllowPolicyGetResponse object {id, created\_at, last\_modified, 13 more }
+AllowPolicyGetResponse object { id, created\_at, last\_modified, 13 more }
 
 An email allow policy.
 
@@ -6225,7 +6225,7 @@ minLength1
 
 <summary>
 
-pattern\_type: optional "EMAIL"or "DOMAIN"or "IP"or "UNKNOWN"
+pattern\_type: optional "EMAIL" or "DOMAIN" or "IP" or "UNKNOWN"
 
 Type of pattern matching.
 
@@ -6272,7 +6272,7 @@ Enforce DMARC, SPF or DKIM authentication. When on, Email Security only honors p
 
 <summary>
 
-AllowPolicyCreateResponse object {id, created\_at, last\_modified, 13 more }
+AllowPolicyCreateResponse object { id, created\_at, last\_modified, 13 more }
 
 An email allow policy.
 
@@ -6382,7 +6382,7 @@ minLength1
 
 <summary>
 
-pattern\_type: optional "EMAIL"or "DOMAIN"or "IP"or "UNKNOWN"
+pattern\_type: optional "EMAIL" or "DOMAIN" or "IP" or "UNKNOWN"
 
 Type of pattern matching.
 
@@ -6429,7 +6429,7 @@ Enforce DMARC, SPF or DKIM authentication. When on, Email Security only honors p
 
 <summary>
 
-AllowPolicyEditResponse object {id, created\_at, last\_modified, 13 more }
+AllowPolicyEditResponse object { id, created\_at, last\_modified, 13 more }
 
 An email allow policy.
 
@@ -6539,7 +6539,7 @@ minLength1
 
 <summary>
 
-pattern\_type: optional "EMAIL"or "DOMAIN"or "IP"or "UNKNOWN"
+pattern\_type: optional "EMAIL" or "DOMAIN" or "IP" or "UNKNOWN"
 
 Type of pattern matching.
 
@@ -6586,7 +6586,7 @@ Enforce DMARC, SPF or DKIM authentication. When on, Email Security only honors p
 
 <summary>
 
-AllowPolicyDeleteResponse object {id }
+AllowPolicyDeleteResponse object { id }
 
 </summary>
 
@@ -6606,7 +6606,7 @@ formatuuid
 
 <summary>
 
-AllowPolicyBatchResponse object {deletes, patches, posts, puts }
+AllowPolicyBatchResponse object { deletes, patches, posts, puts }
 
 </summary>
 
@@ -6614,7 +6614,7 @@ AllowPolicyBatchResponse object {deletes, patches, posts, puts }
 
 <summary>
 
-deletes: optional array of object {id }
+deletes: optional array of object { id }
 
 </summary>
 
@@ -6634,7 +6634,7 @@ formatuuid
 
 <summary>
 
-patches: optional array of object {id, created\_at, last\_modified, 13 more }
+patches: optional array of object { id, created\_at, last\_modified, 13 more }
 
 </summary>
 
@@ -6742,7 +6742,7 @@ minLength1
 
 <summary>
 
-pattern\_type: optional "EMAIL"or "DOMAIN"or "IP"or "UNKNOWN"
+pattern\_type: optional "EMAIL" or "DOMAIN" or "IP" or "UNKNOWN"
 
 Type of pattern matching.
 
@@ -6789,7 +6789,7 @@ Enforce DMARC, SPF or DKIM authentication. When on, Email Security only honors p
 
 <summary>
 
-posts: optional array of object {id, created\_at, last\_modified, 13 more }
+posts: optional array of object { id, created\_at, last\_modified, 13 more }
 
 </summary>
 
@@ -6897,7 +6897,7 @@ minLength1
 
 <summary>
 
-pattern\_type: optional "EMAIL"or "DOMAIN"or "IP"or "UNKNOWN"
+pattern\_type: optional "EMAIL" or "DOMAIN" or "IP" or "UNKNOWN"
 
 Type of pattern matching.
 
@@ -6944,7 +6944,7 @@ Enforce DMARC, SPF or DKIM authentication. When on, Email Security only honors p
 
 <summary>
 
-puts: optional array of object {id, created\_at, last\_modified, 13 more }
+puts: optional array of object { id, created\_at, last\_modified, 13 more }
 
 </summary>
 
@@ -7052,7 +7052,7 @@ minLength1
 
 <summary>
 
-pattern\_type: optional "EMAIL"or "DOMAIN"or "IP"or "UNKNOWN"
+pattern\_type: optional "EMAIL" or "DOMAIN" or "IP" or "UNKNOWN"
 
 Type of pattern matching.
 
@@ -7131,7 +7131,7 @@ POST/accounts/{account\_id}/email-security/settings/block\_senders/batch
 
 <summary>
 
-BlockSenderListResponse object {id, comments, created\_at, 6 more }
+BlockSenderListResponse object { id, comments, created\_at, 6 more }
 
 A blocked sender pattern.
 
@@ -7201,7 +7201,7 @@ minLength1
 
 <summary>
 
-pattern\_type: optional "EMAIL"or "DOMAIN"or "IP"or "UNKNOWN"
+pattern\_type: optional "EMAIL" or "DOMAIN" or "IP" or "UNKNOWN"
 
 Type of pattern matching.
 
@@ -7242,7 +7242,7 @@ One of the following:
 
 <summary>
 
-BlockSenderGetResponse object {id, comments, created\_at, 6 more }
+BlockSenderGetResponse object { id, comments, created\_at, 6 more }
 
 A blocked sender pattern.
 
@@ -7312,7 +7312,7 @@ minLength1
 
 <summary>
 
-pattern\_type: optional "EMAIL"or "DOMAIN"or "IP"or "UNKNOWN"
+pattern\_type: optional "EMAIL" or "DOMAIN" or "IP" or "UNKNOWN"
 
 Type of pattern matching.
 
@@ -7353,7 +7353,7 @@ One of the following:
 
 <summary>
 
-BlockSenderCreateResponse object {id, comments, created\_at, 6 more }
+BlockSenderCreateResponse object { id, comments, created\_at, 6 more }
 
 A blocked sender pattern.
 
@@ -7423,7 +7423,7 @@ minLength1
 
 <summary>
 
-pattern\_type: optional "EMAIL"or "DOMAIN"or "IP"or "UNKNOWN"
+pattern\_type: optional "EMAIL" or "DOMAIN" or "IP" or "UNKNOWN"
 
 Type of pattern matching.
 
@@ -7464,7 +7464,7 @@ One of the following:
 
 <summary>
 
-BlockSenderEditResponse object {id, comments, created\_at, 6 more }
+BlockSenderEditResponse object { id, comments, created\_at, 6 more }
 
 A blocked sender pattern.
 
@@ -7534,7 +7534,7 @@ minLength1
 
 <summary>
 
-pattern\_type: optional "EMAIL"or "DOMAIN"or "IP"or "UNKNOWN"
+pattern\_type: optional "EMAIL" or "DOMAIN" or "IP" or "UNKNOWN"
 
 Type of pattern matching.
 
@@ -7575,7 +7575,7 @@ One of the following:
 
 <summary>
 
-BlockSenderDeleteResponse object {id }
+BlockSenderDeleteResponse object { id }
 
 </summary>
 
@@ -7595,7 +7595,7 @@ formatuuid
 
 <summary>
 
-BlockSenderBatchResponse object {deletes, patches, posts, puts }
+BlockSenderBatchResponse object { deletes, patches, posts, puts }
 
 </summary>
 
@@ -7603,7 +7603,7 @@ BlockSenderBatchResponse object {deletes, patches, posts, puts }
 
 <summary>
 
-deletes: optional array of object {id }
+deletes: optional array of object { id }
 
 </summary>
 
@@ -7623,7 +7623,7 @@ formatuuid
 
 <summary>
 
-patches: optional array of object {id, comments, created\_at, 6 more }
+patches: optional array of object { id, comments, created\_at, 6 more }
 
 </summary>
 
@@ -7691,7 +7691,7 @@ minLength1
 
 <summary>
 
-pattern\_type: optional "EMAIL"or "DOMAIN"or "IP"or "UNKNOWN"
+pattern\_type: optional "EMAIL" or "DOMAIN" or "IP" or "UNKNOWN"
 
 Type of pattern matching.
 
@@ -7732,7 +7732,7 @@ One of the following:
 
 <summary>
 
-posts: optional array of object {id, comments, created\_at, 6 more }
+posts: optional array of object { id, comments, created\_at, 6 more }
 
 </summary>
 
@@ -7800,7 +7800,7 @@ minLength1
 
 <summary>
 
-pattern\_type: optional "EMAIL"or "DOMAIN"or "IP"or "UNKNOWN"
+pattern\_type: optional "EMAIL" or "DOMAIN" or "IP" or "UNKNOWN"
 
 Type of pattern matching.
 
@@ -7841,7 +7841,7 @@ One of the following:
 
 <summary>
 
-puts: optional array of object {id, comments, created\_at, 6 more }
+puts: optional array of object { id, comments, created\_at, 6 more }
 
 </summary>
 
@@ -7909,7 +7909,7 @@ minLength1
 
 <summary>
 
-pattern\_type: optional "EMAIL"or "DOMAIN"or "IP"or "UNKNOWN"
+pattern\_type: optional "EMAIL" or "DOMAIN" or "IP" or "UNKNOWN"
 
 Type of pattern matching.
 
@@ -7982,7 +7982,7 @@ POST/accounts/{account\_id}/email-security/settings/content\_policies/batch
 
 <summary>
 
-ContentPolicyListResponse object {id, created\_at, enabled, 6 more }
+ContentPolicyListResponse object { id, created\_at, enabled, 6 more }
 
 A content policy pattern that matches against the subject or body of an email.
 
@@ -8054,7 +8054,7 @@ minLength1
 
 <summary>
 
-targets: optional array of "SUBJECT"or "BODY"
+targets: optional array of "SUBJECT" or "BODY"
 
 Parts of the email the pattern is matched against.
 
@@ -8082,7 +8082,7 @@ One of the following:
 
 <summary>
 
-ContentPolicyGetResponse object {id, created\_at, enabled, 6 more }
+ContentPolicyGetResponse object { id, created\_at, enabled, 6 more }
 
 A content policy pattern that matches against the subject or body of an email.
 
@@ -8154,7 +8154,7 @@ minLength1
 
 <summary>
 
-targets: optional array of "SUBJECT"or "BODY"
+targets: optional array of "SUBJECT" or "BODY"
 
 Parts of the email the pattern is matched against.
 
@@ -8182,7 +8182,7 @@ One of the following:
 
 <summary>
 
-ContentPolicyCreateResponse object {id, created\_at, enabled, 6 more }
+ContentPolicyCreateResponse object { id, created\_at, enabled, 6 more }
 
 A content policy pattern that matches against the subject or body of an email.
 
@@ -8254,7 +8254,7 @@ minLength1
 
 <summary>
 
-targets: optional array of "SUBJECT"or "BODY"
+targets: optional array of "SUBJECT" or "BODY"
 
 Parts of the email the pattern is matched against.
 
@@ -8282,7 +8282,7 @@ One of the following:
 
 <summary>
 
-ContentPolicyEditResponse object {id, created\_at, enabled, 6 more }
+ContentPolicyEditResponse object { id, created\_at, enabled, 6 more }
 
 A content policy pattern that matches against the subject or body of an email.
 
@@ -8354,7 +8354,7 @@ minLength1
 
 <summary>
 
-targets: optional array of "SUBJECT"or "BODY"
+targets: optional array of "SUBJECT" or "BODY"
 
 Parts of the email the pattern is matched against.
 
@@ -8382,7 +8382,7 @@ One of the following:
 
 <summary>
 
-ContentPolicyDeleteResponse object {id }
+ContentPolicyDeleteResponse object { id }
 
 </summary>
 
@@ -8402,7 +8402,7 @@ formatuuid
 
 <summary>
 
-ContentPolicyBatchResponse object {deletes, patches, posts, puts }
+ContentPolicyBatchResponse object { deletes, patches, posts, puts }
 
 </summary>
 
@@ -8410,7 +8410,7 @@ ContentPolicyBatchResponse object {deletes, patches, posts, puts }
 
 <summary>
 
-deletes: optional array of object {id }
+deletes: optional array of object { id }
 
 </summary>
 
@@ -8430,7 +8430,7 @@ formatuuid
 
 <summary>
 
-patches: optional array of object {id, created\_at, enabled, 6 more }
+patches: optional array of object { id, created\_at, enabled, 6 more }
 
 </summary>
 
@@ -8500,7 +8500,7 @@ minLength1
 
 <summary>
 
-targets: optional array of "SUBJECT"or "BODY"
+targets: optional array of "SUBJECT" or "BODY"
 
 Parts of the email the pattern is matched against.
 
@@ -8528,7 +8528,7 @@ One of the following:
 
 <summary>
 
-posts: optional array of object {id, created\_at, enabled, 6 more }
+posts: optional array of object { id, created\_at, enabled, 6 more }
 
 </summary>
 
@@ -8598,7 +8598,7 @@ minLength1
 
 <summary>
 
-targets: optional array of "SUBJECT"or "BODY"
+targets: optional array of "SUBJECT" or "BODY"
 
 Parts of the email the pattern is matched against.
 
@@ -8626,7 +8626,7 @@ One of the following:
 
 <summary>
 
-puts: optional array of object {id, created\_at, enabled, 6 more }
+puts: optional array of object { id, created\_at, enabled, 6 more }
 
 </summary>
 
@@ -8696,7 +8696,7 @@ minLength1
 
 <summary>
 
-targets: optional array of "SUBJECT"or "BODY"
+targets: optional array of "SUBJECT" or "BODY"
 
 Parts of the email the pattern is matched against.
 
@@ -8766,7 +8766,7 @@ DELETE/accounts/{account\_id}/email-security/settings/domains
 
 <summary>
 
-DomainListResponse object {id, allowed\_delivery\_modes, authorization, 19 more }
+DomainListResponse object { id, allowed\_delivery\_modes, authorization, 19 more }
 
 </summary>
 
@@ -8782,7 +8782,7 @@ formatuuid
 
 <summary>
 
-allowed\_delivery\_modes: optional array of "DIRECT"or "BCC"or "JOURNAL"or 2 more
+allowed\_delivery\_modes: optional array of "DIRECT" or "BCC" or "JOURNAL" or 2 more
 
 </summary>
 
@@ -8816,7 +8816,7 @@ One of the following:
 
 <summary>
 
-authorization: optional object {authorized, timestamp, status\_message }
+authorization: optional object { authorized, timestamp, status\_message }
 
 </summary>
 
@@ -8848,7 +8848,7 @@ formatdate-time
 
 <summary>
 
-dmarc\_status: optional "none"or "good"or "invalid"
+dmarc\_status: optional "none" or "good" or "invalid"
 
 </summary>
 
@@ -8878,7 +8878,7 @@ domain: optional string
 
 <summary>
 
-drop\_dispositions: optional array of "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+drop\_dispositions: optional array of "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 </summary>
 
@@ -8932,7 +8932,7 @@ One of the following:
 
 <summary>
 
-emails\_processed: optional object {timestamp, total\_emails\_processed, total\_emails\_processed\_previous }
+emails\_processed: optional object { timestamp, total\_emails\_processed, total\_emails\_processed\_previous }
 
 </summary>
 
@@ -8962,7 +8962,7 @@ minimum0
 
 <summary>
 
-folder: optional "AllItems"or "Inbox"
+folder: optional "AllItems" or "Inbox"
 
 The mailbox folder to scan, for API-scanning domains.
 
@@ -8986,7 +8986,7 @@ One of the following:
 
 <summary>
 
-inbox\_provider: optional "Microsoft"or "Google"
+inbox\_provider: optional "Microsoft" or "Google"
 
 </summary>
 
@@ -9042,7 +9042,7 @@ o365\_tenant\_id: optional string
 
 <summary>
 
-regions: optional array of "GLOBAL"or "AU"or "DE"or 2 more
+regions: optional array of "GLOBAL" or "AU" or "DE" or 2 more
 
 </summary>
 
@@ -9084,7 +9084,7 @@ require\_tls\_outbound: optional boolean
 
 <summary>
 
-spf\_status: optional "none"or "good"or "neutral"or 2 more
+spf\_status: optional "none" or "good" or "neutral" or 2 more
 
 </summary>
 
@@ -9118,7 +9118,7 @@ One of the following:
 
 <summary>
 
-status: optional "PENDING"or "ACTIVE"or "FAILED"or "TIMEOUT"
+status: optional "PENDING" or "ACTIVE" or "FAILED" or "TIMEOUT"
 
 </summary>
 
@@ -9156,7 +9156,7 @@ transport: optional string
 
 <summary>
 
-DomainGetResponse object {id, allowed\_delivery\_modes, authorization, 19 more }
+DomainGetResponse object { id, allowed\_delivery\_modes, authorization, 19 more }
 
 </summary>
 
@@ -9172,7 +9172,7 @@ formatuuid
 
 <summary>
 
-allowed\_delivery\_modes: optional array of "DIRECT"or "BCC"or "JOURNAL"or 2 more
+allowed\_delivery\_modes: optional array of "DIRECT" or "BCC" or "JOURNAL" or 2 more
 
 </summary>
 
@@ -9206,7 +9206,7 @@ One of the following:
 
 <summary>
 
-authorization: optional object {authorized, timestamp, status\_message }
+authorization: optional object { authorized, timestamp, status\_message }
 
 </summary>
 
@@ -9238,7 +9238,7 @@ formatdate-time
 
 <summary>
 
-dmarc\_status: optional "none"or "good"or "invalid"
+dmarc\_status: optional "none" or "good" or "invalid"
 
 </summary>
 
@@ -9268,7 +9268,7 @@ domain: optional string
 
 <summary>
 
-drop\_dispositions: optional array of "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+drop\_dispositions: optional array of "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 </summary>
 
@@ -9322,7 +9322,7 @@ One of the following:
 
 <summary>
 
-emails\_processed: optional object {timestamp, total\_emails\_processed, total\_emails\_processed\_previous }
+emails\_processed: optional object { timestamp, total\_emails\_processed, total\_emails\_processed\_previous }
 
 </summary>
 
@@ -9352,7 +9352,7 @@ minimum0
 
 <summary>
 
-folder: optional "AllItems"or "Inbox"
+folder: optional "AllItems" or "Inbox"
 
 The mailbox folder to scan, for API-scanning domains.
 
@@ -9376,7 +9376,7 @@ One of the following:
 
 <summary>
 
-inbox\_provider: optional "Microsoft"or "Google"
+inbox\_provider: optional "Microsoft" or "Google"
 
 </summary>
 
@@ -9432,7 +9432,7 @@ o365\_tenant\_id: optional string
 
 <summary>
 
-regions: optional array of "GLOBAL"or "AU"or "DE"or 2 more
+regions: optional array of "GLOBAL" or "AU" or "DE" or 2 more
 
 </summary>
 
@@ -9474,7 +9474,7 @@ require\_tls\_outbound: optional boolean
 
 <summary>
 
-spf\_status: optional "none"or "good"or "neutral"or 2 more
+spf\_status: optional "none" or "good" or "neutral" or 2 more
 
 </summary>
 
@@ -9508,7 +9508,7 @@ One of the following:
 
 <summary>
 
-status: optional "PENDING"or "ACTIVE"or "FAILED"or "TIMEOUT"
+status: optional "PENDING" or "ACTIVE" or "FAILED" or "TIMEOUT"
 
 </summary>
 
@@ -9546,7 +9546,7 @@ transport: optional string
 
 <summary>
 
-DomainUpdateResponse object {id, allowed\_delivery\_modes, authorization, 19 more }
+DomainUpdateResponse object { id, allowed\_delivery\_modes, authorization, 19 more }
 
 </summary>
 
@@ -9562,7 +9562,7 @@ formatuuid
 
 <summary>
 
-allowed\_delivery\_modes: optional array of "DIRECT"or "BCC"or "JOURNAL"or 2 more
+allowed\_delivery\_modes: optional array of "DIRECT" or "BCC" or "JOURNAL" or 2 more
 
 </summary>
 
@@ -9596,7 +9596,7 @@ One of the following:
 
 <summary>
 
-authorization: optional object {authorized, timestamp, status\_message }
+authorization: optional object { authorized, timestamp, status\_message }
 
 </summary>
 
@@ -9628,7 +9628,7 @@ formatdate-time
 
 <summary>
 
-dmarc\_status: optional "none"or "good"or "invalid"
+dmarc\_status: optional "none" or "good" or "invalid"
 
 </summary>
 
@@ -9658,7 +9658,7 @@ domain: optional string
 
 <summary>
 
-drop\_dispositions: optional array of "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+drop\_dispositions: optional array of "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 </summary>
 
@@ -9712,7 +9712,7 @@ One of the following:
 
 <summary>
 
-emails\_processed: optional object {timestamp, total\_emails\_processed, total\_emails\_processed\_previous }
+emails\_processed: optional object { timestamp, total\_emails\_processed, total\_emails\_processed\_previous }
 
 </summary>
 
@@ -9742,7 +9742,7 @@ minimum0
 
 <summary>
 
-folder: optional "AllItems"or "Inbox"
+folder: optional "AllItems" or "Inbox"
 
 The mailbox folder to scan, for API-scanning domains.
 
@@ -9766,7 +9766,7 @@ One of the following:
 
 <summary>
 
-inbox\_provider: optional "Microsoft"or "Google"
+inbox\_provider: optional "Microsoft" or "Google"
 
 </summary>
 
@@ -9822,7 +9822,7 @@ o365\_tenant\_id: optional string
 
 <summary>
 
-regions: optional array of "GLOBAL"or "AU"or "DE"or 2 more
+regions: optional array of "GLOBAL" or "AU" or "DE" or 2 more
 
 </summary>
 
@@ -9864,7 +9864,7 @@ require\_tls\_outbound: optional boolean
 
 <summary>
 
-spf\_status: optional "none"or "good"or "neutral"or 2 more
+spf\_status: optional "none" or "good" or "neutral" or 2 more
 
 </summary>
 
@@ -9898,7 +9898,7 @@ One of the following:
 
 <summary>
 
-status: optional "PENDING"or "ACTIVE"or "FAILED"or "TIMEOUT"
+status: optional "PENDING" or "ACTIVE" or "FAILED" or "TIMEOUT"
 
 </summary>
 
@@ -9936,7 +9936,7 @@ transport: optional string
 
 <summary>
 
-DomainEditResponse object {id, allowed\_delivery\_modes, authorization, 19 more }
+DomainEditResponse object { id, allowed\_delivery\_modes, authorization, 19 more }
 
 </summary>
 
@@ -9952,7 +9952,7 @@ formatuuid
 
 <summary>
 
-allowed\_delivery\_modes: optional array of "DIRECT"or "BCC"or "JOURNAL"or 2 more
+allowed\_delivery\_modes: optional array of "DIRECT" or "BCC" or "JOURNAL" or 2 more
 
 </summary>
 
@@ -9986,7 +9986,7 @@ One of the following:
 
 <summary>
 
-authorization: optional object {authorized, timestamp, status\_message }
+authorization: optional object { authorized, timestamp, status\_message }
 
 </summary>
 
@@ -10018,7 +10018,7 @@ formatdate-time
 
 <summary>
 
-dmarc\_status: optional "none"or "good"or "invalid"
+dmarc\_status: optional "none" or "good" or "invalid"
 
 </summary>
 
@@ -10048,7 +10048,7 @@ domain: optional string
 
 <summary>
 
-drop\_dispositions: optional array of "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+drop\_dispositions: optional array of "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 </summary>
 
@@ -10102,7 +10102,7 @@ One of the following:
 
 <summary>
 
-emails\_processed: optional object {timestamp, total\_emails\_processed, total\_emails\_processed\_previous }
+emails\_processed: optional object { timestamp, total\_emails\_processed, total\_emails\_processed\_previous }
 
 </summary>
 
@@ -10132,7 +10132,7 @@ minimum0
 
 <summary>
 
-folder: optional "AllItems"or "Inbox"
+folder: optional "AllItems" or "Inbox"
 
 The mailbox folder to scan, for API-scanning domains.
 
@@ -10156,7 +10156,7 @@ One of the following:
 
 <summary>
 
-inbox\_provider: optional "Microsoft"or "Google"
+inbox\_provider: optional "Microsoft" or "Google"
 
 </summary>
 
@@ -10212,7 +10212,7 @@ o365\_tenant\_id: optional string
 
 <summary>
 
-regions: optional array of "GLOBAL"or "AU"or "DE"or 2 more
+regions: optional array of "GLOBAL" or "AU" or "DE" or 2 more
 
 </summary>
 
@@ -10254,7 +10254,7 @@ require\_tls\_outbound: optional boolean
 
 <summary>
 
-spf\_status: optional "none"or "good"or "neutral"or 2 more
+spf\_status: optional "none" or "good" or "neutral" or 2 more
 
 </summary>
 
@@ -10288,7 +10288,7 @@ One of the following:
 
 <summary>
 
-status: optional "PENDING"or "ACTIVE"or "FAILED"or "TIMEOUT"
+status: optional "PENDING" or "ACTIVE" or "FAILED" or "TIMEOUT"
 
 </summary>
 
@@ -10326,7 +10326,7 @@ transport: optional string
 
 <summary>
 
-DomainCreateResponse object {id, allowed\_delivery\_modes, authorization, 19 more }
+DomainCreateResponse object { id, allowed\_delivery\_modes, authorization, 19 more }
 
 </summary>
 
@@ -10342,7 +10342,7 @@ formatuuid
 
 <summary>
 
-allowed\_delivery\_modes: optional array of "DIRECT"or "BCC"or "JOURNAL"or 2 more
+allowed\_delivery\_modes: optional array of "DIRECT" or "BCC" or "JOURNAL" or 2 more
 
 </summary>
 
@@ -10376,7 +10376,7 @@ One of the following:
 
 <summary>
 
-authorization: optional object {authorized, timestamp, status\_message }
+authorization: optional object { authorized, timestamp, status\_message }
 
 </summary>
 
@@ -10408,7 +10408,7 @@ formatdate-time
 
 <summary>
 
-dmarc\_status: optional "none"or "good"or "invalid"
+dmarc\_status: optional "none" or "good" or "invalid"
 
 </summary>
 
@@ -10438,7 +10438,7 @@ domain: optional string
 
 <summary>
 
-drop\_dispositions: optional array of "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+drop\_dispositions: optional array of "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 </summary>
 
@@ -10492,7 +10492,7 @@ One of the following:
 
 <summary>
 
-emails\_processed: optional object {timestamp, total\_emails\_processed, total\_emails\_processed\_previous }
+emails\_processed: optional object { timestamp, total\_emails\_processed, total\_emails\_processed\_previous }
 
 </summary>
 
@@ -10522,7 +10522,7 @@ minimum0
 
 <summary>
 
-folder: optional "AllItems"or "Inbox"
+folder: optional "AllItems" or "Inbox"
 
 The mailbox folder to scan, for API-scanning domains.
 
@@ -10546,7 +10546,7 @@ One of the following:
 
 <summary>
 
-inbox\_provider: optional "Microsoft"or "Google"
+inbox\_provider: optional "Microsoft" or "Google"
 
 </summary>
 
@@ -10602,7 +10602,7 @@ o365\_tenant\_id: optional string
 
 <summary>
 
-regions: optional array of "GLOBAL"or "AU"or "DE"or 2 more
+regions: optional array of "GLOBAL" or "AU" or "DE" or 2 more
 
 </summary>
 
@@ -10644,7 +10644,7 @@ require\_tls\_outbound: optional boolean
 
 <summary>
 
-spf\_status: optional "none"or "good"or "neutral"or 2 more
+spf\_status: optional "none" or "good" or "neutral" or 2 more
 
 </summary>
 
@@ -10678,7 +10678,7 @@ One of the following:
 
 <summary>
 
-status: optional "PENDING"or "ACTIVE"or "FAILED"or "TIMEOUT"
+status: optional "PENDING" or "ACTIVE" or "FAILED" or "TIMEOUT"
 
 </summary>
 
@@ -10716,7 +10716,7 @@ transport: optional string
 
 <summary>
 
-DomainDeleteResponse object {id }
+DomainDeleteResponse object { id }
 
 </summary>
 
@@ -10736,7 +10736,7 @@ formatuuid
 
 <summary>
 
-DomainBatchResponse object {deletes, patches, posts, puts }
+DomainBatchResponse object { deletes, patches, posts, puts }
 
 </summary>
 
@@ -10744,7 +10744,7 @@ DomainBatchResponse object {deletes, patches, posts, puts }
 
 <summary>
 
-deletes: array of object {id }
+deletes: array of object { id }
 
 </summary>
 
@@ -10764,7 +10764,7 @@ formatuuid
 
 <summary>
 
-patches: array of object {id, allowed\_delivery\_modes, authorization, 19 more }
+patches: array of object { id, allowed\_delivery\_modes, authorization, 19 more }
 
 </summary>
 
@@ -10780,7 +10780,7 @@ formatuuid
 
 <summary>
 
-allowed\_delivery\_modes: optional array of "DIRECT"or "BCC"or "JOURNAL"or 2 more
+allowed\_delivery\_modes: optional array of "DIRECT" or "BCC" or "JOURNAL" or 2 more
 
 </summary>
 
@@ -10814,7 +10814,7 @@ One of the following:
 
 <summary>
 
-authorization: optional object {authorized, timestamp, status\_message }
+authorization: optional object { authorized, timestamp, status\_message }
 
 </summary>
 
@@ -10846,7 +10846,7 @@ formatdate-time
 
 <summary>
 
-dmarc\_status: optional "none"or "good"or "invalid"
+dmarc\_status: optional "none" or "good" or "invalid"
 
 </summary>
 
@@ -10876,7 +10876,7 @@ domain: optional string
 
 <summary>
 
-drop\_dispositions: optional array of "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+drop\_dispositions: optional array of "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 </summary>
 
@@ -10930,7 +10930,7 @@ One of the following:
 
 <summary>
 
-emails\_processed: optional object {timestamp, total\_emails\_processed, total\_emails\_processed\_previous }
+emails\_processed: optional object { timestamp, total\_emails\_processed, total\_emails\_processed\_previous }
 
 </summary>
 
@@ -10960,7 +10960,7 @@ minimum0
 
 <summary>
 
-folder: optional "AllItems"or "Inbox"
+folder: optional "AllItems" or "Inbox"
 
 The mailbox folder to scan, for API-scanning domains.
 
@@ -10984,7 +10984,7 @@ One of the following:
 
 <summary>
 
-inbox\_provider: optional "Microsoft"or "Google"
+inbox\_provider: optional "Microsoft" or "Google"
 
 </summary>
 
@@ -11040,7 +11040,7 @@ o365\_tenant\_id: optional string
 
 <summary>
 
-regions: optional array of "GLOBAL"or "AU"or "DE"or 2 more
+regions: optional array of "GLOBAL" or "AU" or "DE" or 2 more
 
 </summary>
 
@@ -11082,7 +11082,7 @@ require\_tls\_outbound: optional boolean
 
 <summary>
 
-spf\_status: optional "none"or "good"or "neutral"or 2 more
+spf\_status: optional "none" or "good" or "neutral" or 2 more
 
 </summary>
 
@@ -11116,7 +11116,7 @@ One of the following:
 
 <summary>
 
-status: optional "PENDING"or "ACTIVE"or "FAILED"or "TIMEOUT"
+status: optional "PENDING" or "ACTIVE" or "FAILED" or "TIMEOUT"
 
 </summary>
 
@@ -11154,7 +11154,7 @@ transport: optional string
 
 <summary>
 
-posts: array of object {id, allowed\_delivery\_modes, authorization, 19 more }
+posts: array of object { id, allowed\_delivery\_modes, authorization, 19 more }
 
 </summary>
 
@@ -11170,7 +11170,7 @@ formatuuid
 
 <summary>
 
-allowed\_delivery\_modes: optional array of "DIRECT"or "BCC"or "JOURNAL"or 2 more
+allowed\_delivery\_modes: optional array of "DIRECT" or "BCC" or "JOURNAL" or 2 more
 
 </summary>
 
@@ -11204,7 +11204,7 @@ One of the following:
 
 <summary>
 
-authorization: optional object {authorized, timestamp, status\_message }
+authorization: optional object { authorized, timestamp, status\_message }
 
 </summary>
 
@@ -11236,7 +11236,7 @@ formatdate-time
 
 <summary>
 
-dmarc\_status: optional "none"or "good"or "invalid"
+dmarc\_status: optional "none" or "good" or "invalid"
 
 </summary>
 
@@ -11266,7 +11266,7 @@ domain: optional string
 
 <summary>
 
-drop\_dispositions: optional array of "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+drop\_dispositions: optional array of "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 </summary>
 
@@ -11320,7 +11320,7 @@ One of the following:
 
 <summary>
 
-emails\_processed: optional object {timestamp, total\_emails\_processed, total\_emails\_processed\_previous }
+emails\_processed: optional object { timestamp, total\_emails\_processed, total\_emails\_processed\_previous }
 
 </summary>
 
@@ -11350,7 +11350,7 @@ minimum0
 
 <summary>
 
-folder: optional "AllItems"or "Inbox"
+folder: optional "AllItems" or "Inbox"
 
 The mailbox folder to scan, for API-scanning domains.
 
@@ -11374,7 +11374,7 @@ One of the following:
 
 <summary>
 
-inbox\_provider: optional "Microsoft"or "Google"
+inbox\_provider: optional "Microsoft" or "Google"
 
 </summary>
 
@@ -11430,7 +11430,7 @@ o365\_tenant\_id: optional string
 
 <summary>
 
-regions: optional array of "GLOBAL"or "AU"or "DE"or 2 more
+regions: optional array of "GLOBAL" or "AU" or "DE" or 2 more
 
 </summary>
 
@@ -11472,7 +11472,7 @@ require\_tls\_outbound: optional boolean
 
 <summary>
 
-spf\_status: optional "none"or "good"or "neutral"or 2 more
+spf\_status: optional "none" or "good" or "neutral" or 2 more
 
 </summary>
 
@@ -11506,7 +11506,7 @@ One of the following:
 
 <summary>
 
-status: optional "PENDING"or "ACTIVE"or "FAILED"or "TIMEOUT"
+status: optional "PENDING" or "ACTIVE" or "FAILED" or "TIMEOUT"
 
 </summary>
 
@@ -11544,7 +11544,7 @@ transport: optional string
 
 <summary>
 
-puts: array of object {id, allowed\_delivery\_modes, authorization, 19 more }
+puts: array of object { id, allowed\_delivery\_modes, authorization, 19 more }
 
 </summary>
 
@@ -11560,7 +11560,7 @@ formatuuid
 
 <summary>
 
-allowed\_delivery\_modes: optional array of "DIRECT"or "BCC"or "JOURNAL"or 2 more
+allowed\_delivery\_modes: optional array of "DIRECT" or "BCC" or "JOURNAL" or 2 more
 
 </summary>
 
@@ -11594,7 +11594,7 @@ One of the following:
 
 <summary>
 
-authorization: optional object {authorized, timestamp, status\_message }
+authorization: optional object { authorized, timestamp, status\_message }
 
 </summary>
 
@@ -11626,7 +11626,7 @@ formatdate-time
 
 <summary>
 
-dmarc\_status: optional "none"or "good"or "invalid"
+dmarc\_status: optional "none" or "good" or "invalid"
 
 </summary>
 
@@ -11656,7 +11656,7 @@ domain: optional string
 
 <summary>
 
-drop\_dispositions: optional array of "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+drop\_dispositions: optional array of "MALICIOUS" or "MALICIOUS-BEC" or "SUSPICIOUS" or 7 more
 
 </summary>
 
@@ -11710,7 +11710,7 @@ One of the following:
 
 <summary>
 
-emails\_processed: optional object {timestamp, total\_emails\_processed, total\_emails\_processed\_previous }
+emails\_processed: optional object { timestamp, total\_emails\_processed, total\_emails\_processed\_previous }
 
 </summary>
 
@@ -11740,7 +11740,7 @@ minimum0
 
 <summary>
 
-folder: optional "AllItems"or "Inbox"
+folder: optional "AllItems" or "Inbox"
 
 The mailbox folder to scan, for API-scanning domains.
 
@@ -11764,7 +11764,7 @@ One of the following:
 
 <summary>
 
-inbox\_provider: optional "Microsoft"or "Google"
+inbox\_provider: optional "Microsoft" or "Google"
 
 </summary>
 
@@ -11820,7 +11820,7 @@ o365\_tenant\_id: optional string
 
 <summary>
 
-regions: optional array of "GLOBAL"or "AU"or "DE"or 2 more
+regions: optional array of "GLOBAL" or "AU" or "DE" or 2 more
 
 </summary>
 
@@ -11862,7 +11862,7 @@ require\_tls\_outbound: optional boolean
 
 <summary>
 
-spf\_status: optional "none"or "good"or "neutral"or 2 more
+spf\_status: optional "none" or "good" or "neutral" or 2 more
 
 </summary>
 
@@ -11896,7 +11896,7 @@ One of the following:
 
 <summary>
 
-status: optional "PENDING"or "ACTIVE"or "FAILED"or "TIMEOUT"
+status: optional "PENDING" or "ACTIVE" or "FAILED" or "TIMEOUT"
 
 </summary>
 
@@ -11938,7 +11938,7 @@ transport: optional string
 
 <summary>
 
-DomainBulkDeleteResponse object {id }
+DomainBulkDeleteResponse object { id }
 
 </summary>
 
@@ -11982,7 +11982,7 @@ DELETE/accounts/{account\_id}/email-security/settings/impersonation\_registry/{i
 
 <summary>
 
-ImpersonationRegistryListResponse object {id, comments, created\_at, 9 more }
+ImpersonationRegistryListResponse object { id, comments, created\_at, 9 more }
 
 An impersonation registry entry.
 
@@ -12068,7 +12068,7 @@ maxLength1024
 
 <summary>
 
-provenance: optional "A1S\_INTERNAL"or "SNOOPY-CASB\_OFFICE\_365"or "SNOOPY-OFFICE\_365"or "SNOOPY-GOOGLE\_DIRECTORY"
+provenance: optional "A1S\_INTERNAL" or "SNOOPY-CASB\_OFFICE\_365" or "SNOOPY-OFFICE\_365" or "SNOOPY-GOOGLE\_DIRECTORY"
 
 Source the entry was created from.
 
@@ -12104,7 +12104,7 @@ One of the following:
 
 <summary>
 
-ImpersonationRegistryGetResponse object {id, comments, created\_at, 9 more }
+ImpersonationRegistryGetResponse object { id, comments, created\_at, 9 more }
 
 An impersonation registry entry.
 
@@ -12190,7 +12190,7 @@ maxLength1024
 
 <summary>
 
-provenance: optional "A1S\_INTERNAL"or "SNOOPY-CASB\_OFFICE\_365"or "SNOOPY-OFFICE\_365"or "SNOOPY-GOOGLE\_DIRECTORY"
+provenance: optional "A1S\_INTERNAL" or "SNOOPY-CASB\_OFFICE\_365" or "SNOOPY-OFFICE\_365" or "SNOOPY-GOOGLE\_DIRECTORY"
 
 Source the entry was created from.
 
@@ -12226,7 +12226,7 @@ One of the following:
 
 <summary>
 
-ImpersonationRegistryCreateResponse object {id, comments, created\_at, 9 more }
+ImpersonationRegistryCreateResponse object { id, comments, created\_at, 9 more }
 
 An impersonation registry entry.
 
@@ -12312,7 +12312,7 @@ maxLength1024
 
 <summary>
 
-provenance: optional "A1S\_INTERNAL"or "SNOOPY-CASB\_OFFICE\_365"or "SNOOPY-OFFICE\_365"or "SNOOPY-GOOGLE\_DIRECTORY"
+provenance: optional "A1S\_INTERNAL" or "SNOOPY-CASB\_OFFICE\_365" or "SNOOPY-OFFICE\_365" or "SNOOPY-GOOGLE\_DIRECTORY"
 
 Source the entry was created from.
 
@@ -12348,7 +12348,7 @@ One of the following:
 
 <summary>
 
-ImpersonationRegistryEditResponse object {id, comments, created\_at, 9 more }
+ImpersonationRegistryEditResponse object { id, comments, created\_at, 9 more }
 
 An impersonation registry entry.
 
@@ -12434,7 +12434,7 @@ maxLength1024
 
 <summary>
 
-provenance: optional "A1S\_INTERNAL"or "SNOOPY-CASB\_OFFICE\_365"or "SNOOPY-OFFICE\_365"or "SNOOPY-GOOGLE\_DIRECTORY"
+provenance: optional "A1S\_INTERNAL" or "SNOOPY-CASB\_OFFICE\_365" or "SNOOPY-OFFICE\_365" or "SNOOPY-GOOGLE\_DIRECTORY"
 
 Source the entry was created from.
 
@@ -12470,7 +12470,7 @@ One of the following:
 
 <summary>
 
-ImpersonationRegistryDeleteResponse object {id }
+ImpersonationRegistryDeleteResponse object { id }
 
 </summary>
 
@@ -12514,7 +12514,7 @@ DELETE/accounts/{account\_id}/email-security/settings/sending\_domain\_restricti
 
 <summary>
 
-SendingDomainRestrictionListResponse object {id, comments, created\_at, 4 more }
+SendingDomainRestrictionListResponse object { id, comments, created\_at, 4 more }
 
 A sending domain restriction that enforces TLS (Transport Layer Security) requirements for emails from specific domains. If TLS is required, the system drops mail without TLS from the specified domain.
 
@@ -12576,7 +12576,7 @@ formatdate-time
 
 <summary>
 
-SendingDomainRestrictionGetResponse object {id, comments, created\_at, 4 more }
+SendingDomainRestrictionGetResponse object { id, comments, created\_at, 4 more }
 
 A sending domain restriction that enforces TLS (Transport Layer Security) requirements for emails from specific domains. If TLS is required, the system drops mail without TLS from the specified domain.
 
@@ -12638,7 +12638,7 @@ formatdate-time
 
 <summary>
 
-SendingDomainRestrictionCreateResponse object {id, comments, created\_at, 4 more }
+SendingDomainRestrictionCreateResponse object { id, comments, created\_at, 4 more }
 
 A sending domain restriction that enforces TLS (Transport Layer Security) requirements for emails from specific domains. If TLS is required, the system drops mail without TLS from the specified domain.
 
@@ -12700,7 +12700,7 @@ formatdate-time
 
 <summary>
 
-SendingDomainRestrictionEditResponse object {id, comments, created\_at, 4 more }
+SendingDomainRestrictionEditResponse object { id, comments, created\_at, 4 more }
 
 A sending domain restriction that enforces TLS (Transport Layer Security) requirements for emails from specific domains. If TLS is required, the system drops mail without TLS from the specified domain.
 
@@ -12762,7 +12762,7 @@ formatdate-time
 
 <summary>
 
-SendingDomainRestrictionDeleteResponse object {id }
+SendingDomainRestrictionDeleteResponse object { id }
 
 </summary>
 
@@ -12810,7 +12810,7 @@ POST/accounts/{account\_id}/email-security/settings/trusted\_domains/batch
 
 <summary>
 
-TrustedDomainListResponse object {id, comments, created\_at, 6 more }
+TrustedDomainListResponse object { id, comments, created\_at, 6 more }
 
 A trusted email domain.
 
@@ -12888,7 +12888,7 @@ minLength1
 
 <summary>
 
-TrustedDomainGetResponse object {id, comments, created\_at, 6 more }
+TrustedDomainGetResponse object { id, comments, created\_at, 6 more }
 
 A trusted email domain.
 
@@ -12966,7 +12966,7 @@ minLength1
 
 <summary>
 
-TrustedDomainCreateResponse object {id, comments, created\_at, 6 more }
+TrustedDomainCreateResponse object { id, comments, created\_at, 6 more }
 
 A trusted email domain.
 
@@ -13044,7 +13044,7 @@ minLength1
 
 <summary>
 
-TrustedDomainEditResponse object {id, comments, created\_at, 6 more }
+TrustedDomainEditResponse object { id, comments, created\_at, 6 more }
 
 A trusted email domain.
 
@@ -13122,7 +13122,7 @@ minLength1
 
 <summary>
 
-TrustedDomainDeleteResponse object {id }
+TrustedDomainDeleteResponse object { id }
 
 </summary>
 
@@ -13142,7 +13142,7 @@ formatuuid
 
 <summary>
 
-TrustedDomainBatchResponse object {deletes, patches, posts, puts }
+TrustedDomainBatchResponse object { deletes, patches, posts, puts }
 
 </summary>
 
@@ -13150,7 +13150,7 @@ TrustedDomainBatchResponse object {deletes, patches, posts, puts }
 
 <summary>
 
-deletes: optional array of object {id }
+deletes: optional array of object { id }
 
 </summary>
 
@@ -13170,7 +13170,7 @@ formatuuid
 
 <summary>
 
-patches: optional array of object {id, comments, created\_at, 6 more }
+patches: optional array of object { id, comments, created\_at, 6 more }
 
 </summary>
 
@@ -13246,7 +13246,7 @@ minLength1
 
 <summary>
 
-posts: optional array of object {id, comments, created\_at, 6 more }
+posts: optional array of object { id, comments, created\_at, 6 more }
 
 </summary>
 
@@ -13322,7 +13322,7 @@ minLength1
 
 <summary>
 
-puts: optional array of object {id, comments, created\_at, 6 more }
+puts: optional array of object { id, comments, created\_at, 6 more }
 
 </summary>
 
@@ -13426,7 +13426,7 @@ DELETE/accounts/{account\_id}/email-security/settings/url\_ignore\_patterns/{pat
 
 <summary>
 
-URLIgnorePatternListResponse object {id, created\_at, pattern, 3 more }
+URLIgnorePatternListResponse object { id, created\_at, pattern, 3 more }
 
 A URL ignore pattern that exempts matching URLs from Email Security’s URL rewriting.
 
@@ -13488,7 +13488,7 @@ formatdate-time
 
 <summary>
 
-URLIgnorePatternGetResponse object {id, created\_at, pattern, 3 more }
+URLIgnorePatternGetResponse object { id, created\_at, pattern, 3 more }
 
 A URL ignore pattern that exempts matching URLs from Email Security’s URL rewriting.
 
@@ -13550,7 +13550,7 @@ formatdate-time
 
 <summary>
 
-URLIgnorePatternCreateResponse object {id, created\_at, pattern, 3 more }
+URLIgnorePatternCreateResponse object { id, created\_at, pattern, 3 more }
 
 A URL ignore pattern that exempts matching URLs from Email Security’s URL rewriting.
 
@@ -13612,7 +13612,7 @@ formatdate-time
 
 <summary>
 
-URLIgnorePatternEditResponse object {id, created\_at, pattern, 3 more }
+URLIgnorePatternEditResponse object { id, created\_at, pattern, 3 more }
 
 A URL ignore pattern that exempts matching URLs from Email Security’s URL rewriting.
 
@@ -13674,7 +13674,7 @@ formatdate-time
 
 <summary>
 
-URLIgnorePatternDeleteResponse object {id }
+URLIgnorePatternDeleteResponse object { id }
 
 </summary>
 
@@ -13706,7 +13706,7 @@ POST/accounts/{account\_id}/email-security/submissions
 
 <summary>
 
-SubmissionListResponse object {requested\_at, submission\_id, customer\_status, 15 more }
+SubmissionListResponse object { requested\_at, submission\_id, customer\_status, 15 more }
 
 </summary>
 
@@ -13726,7 +13726,7 @@ submission\_id: string
 
 <summary>
 
-customer\_status: optional "escalated"or "reviewed"or "unreviewed"
+customer\_status: optional "escalated" or "reviewed" or "unreviewed"
 
 </summary>
 
@@ -13752,7 +13752,7 @@ One of the following:
 
 <summary>
 
-escalated\_as: optional "MALICIOUS"or "SUSPICIOUS"or "SPOOF"or 3 more
+escalated\_as: optional "MALICIOUS" or "SUSPICIOUS" or "SPOOF" or 3 more
 
 The disposition a message is submitted to have.
 
@@ -13812,7 +13812,7 @@ Submission ID of the escalated team submission, when this user submission was es
 
 <summary>
 
-original\_disposition: optional "MALICIOUS"or "SUSPICIOUS"or "SPOOF"or 3 more
+original\_disposition: optional "MALICIOUS" or "SUSPICIOUS" or "SPOOF" or 3 more
 
 The disposition a message is submitted to have.
 
@@ -13870,7 +13870,7 @@ Processing outcome of the submission.
 
 <summary>
 
-outcome\_disposition: optional "MALICIOUS"or "SUSPICIOUS"or "SPOOF"or 3 more
+outcome\_disposition: optional "MALICIOUS" or "SUSPICIOUS" or "SPOOF" or 3 more
 
 The disposition a message is submitted to have.
 
@@ -13916,7 +13916,7 @@ Email address of the user who requested the submission.
 
 <summary>
 
-requested\_disposition: optional "MALICIOUS"or "SUSPICIOUS"or "SPOOF"or 3 more
+requested\_disposition: optional "MALICIOUS" or "SUSPICIOUS" or "SPOOF" or 3 more
 
 The disposition a message is submitted to have.
 
@@ -13976,7 +13976,7 @@ Subject line of the submitted message.
 
 <summary>
 
-type: optional "Team"or "User"
+type: optional "Team" or "User"
 
 Indicates whether a team member or an end user created the submission.
 
@@ -14004,7 +14004,7 @@ One of the following:
 
 <summary>
 
-SubmissionCreateResponse object {results }
+SubmissionCreateResponse object { results }
 
 </summary>
 
@@ -14012,7 +14012,7 @@ SubmissionCreateResponse object {results }
 
 <summary>
 
-results: array of object {id, accepted, error }
+results: array of object { id, accepted, error }
 
 </summary>
 

@@ -60,7 +60,7 @@ minLength32
 
 <summary>
 
-body: object {resource\_id, resource\_type, worker\_id, tags } or object {resource\_id, resource\_type, tags }
+body: object { resource\_id, resource\_type, worker\_id, tags } or object { resource\_id, resource\_type, tags }
 
 Request body schema for setting tags on account-level resources.
 
@@ -72,7 +72,7 @@ One of the following:
 
 <summary>
 
-WorkerVersion object {resource\_id, resource\_type, worker\_id, tags }
+WorkerVersion object { resource\_id, resource\_type, worker\_id, tags }
 
 Request body schema for deleting tags from worker\_version resources.
 
@@ -110,7 +110,7 @@ Contains key-value pairs of tags. Keys may contain at most 256 characters. Value
 
 <summary>
 
-ResourceTaggingSetTagsRequestAccountLevelBase object {resource\_id, resource\_type, tags }
+ResourceTaggingSetTagsRequestAccountLevelBase object { resource\_id, resource\_type, tags }
 
 Request body schema for deleting tags from account-level resources.
 
@@ -126,7 +126,7 @@ Identifies the unique resource.
 
 <summary>
 
-resource\_type: "access\_application"or "access\_group"or "access\_service\_token"or 32 more
+resource\_type: "access\_application" or "access\_group" or "access\_service\_token" or 32 more
 
 Enum for base account-level resource types (those with no extra required fields).
 
@@ -298,7 +298,7 @@ Contains key-value pairs of tags. Keys may contain at most 256 characters. Value
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -320,7 +320,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -340,7 +340,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -362,7 +362,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -388,7 +388,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, etag, name, 3 more } or object {id, access\_application\_id, etag, 5 more } or object {id, etag, name, 3 more } or 44 more
+result: optional object { id, etag, name, 3 more } or object { id, access\_application\_id, etag, 5 more } or object { id, etag, name, 3 more } or 44 more
 
 Response for access\_application resources
 
@@ -400,7 +400,7 @@ One of the following:
 
 <summary>
 
-AccessApplication object {id, etag, name, 3 more }
+AccessApplication object { id, etag, name, 3 more }
 
 Response for access\_application resources
 
@@ -450,7 +450,7 @@ formatdate-time
 
 <summary>
 
-AccessApplicationPolicy object {id, access\_application\_id, etag, 5 more }
+AccessApplicationPolicy object { id, access\_application\_id, etag, 5 more }
 
 Response for access\_application\_policy resources
 
@@ -518,7 +518,7 @@ formatdate-time
 
 <summary>
 
-AccessGroup object {id, etag, name, 3 more }
+AccessGroup object { id, etag, name, 3 more }
 
 Response for access\_group resources
 
@@ -568,7 +568,7 @@ formatdate-time
 
 <summary>
 
-AccessServiceToken object {id, etag, name, 3 more }
+AccessServiceToken object { id, etag, name, 3 more }
 
 Response for access\_service\_token resources
 
@@ -618,7 +618,7 @@ formatdate-time
 
 <summary>
 
-Account object {id, etag, name, 3 more }
+Account object { id, etag, name, 3 more }
 
 Response for account resources
 
@@ -668,7 +668,7 @@ formatdate-time
 
 <summary>
 
-AccountRuleset object {id, etag, name, 3 more }
+AccountRuleset object { id, etag, name, 3 more }
 
 Response for account\_ruleset resources
 
@@ -718,7 +718,7 @@ formatdate-time
 
 <summary>
 
-AIGateway object {id, etag, name, 3 more }
+AIGateway object { id, etag, name, 3 more }
 
 Response for ai\_gateway resources
 
@@ -768,7 +768,7 @@ formatdate-time
 
 <summary>
 
-AISearchInstance object {id, etag, name, 3 more }
+AISearchInstance object { id, etag, name, 3 more }
 
 Response for ai\_search\_instance resources
 
@@ -818,7 +818,7 @@ formatdate-time
 
 <summary>
 
-AISearchNamespace object {id, etag, name, 3 more }
+AISearchNamespace object { id, etag, name, 3 more }
 
 Response for ai\_search\_namespace resources
 
@@ -868,7 +868,7 @@ formatdate-time
 
 <summary>
 
-AlertingPolicy object {id, etag, name, 3 more }
+AlertingPolicy object { id, etag, name, 3 more }
 
 Response for alerting\_policy resources
 
@@ -918,7 +918,7 @@ formatdate-time
 
 <summary>
 
-AlertingWebhook object {id, etag, name, 3 more }
+AlertingWebhook object { id, etag, name, 3 more }
 
 Response for alerting\_webhook resources
 
@@ -968,7 +968,7 @@ formatdate-time
 
 <summary>
 
-APIGatewayOperation object {id, etag, name, 4 more }
+APIGatewayOperation object { id, etag, name, 4 more }
 
 Response for api\_gateway\_operation resources
 
@@ -1028,7 +1028,7 @@ formatdate-time
 
 <summary>
 
-AppLibraryApplication object {id, etag, name, 3 more }
+AppLibraryApplication object { id, etag, name, 3 more }
 
 Response for app\_library\_application resources
 
@@ -1078,7 +1078,7 @@ formatdate-time
 
 <summary>
 
-CloudflaredTunnel object {id, etag, name, 3 more }
+CloudflaredTunnel object { id, etag, name, 3 more }
 
 Response for cloudflared\_tunnel resources
 
@@ -1128,7 +1128,7 @@ formatdate-time
 
 <summary>
 
-CustomCertificate object {id, etag, name, 4 more }
+CustomCertificate object { id, etag, name, 4 more }
 
 Response for custom\_certificate resources
 
@@ -1188,7 +1188,7 @@ formatdate-time
 
 <summary>
 
-CustomHostname object {id, etag, name, 4 more }
+CustomHostname object { id, etag, name, 4 more }
 
 Response for custom\_hostname resources
 
@@ -1248,7 +1248,7 @@ formatdate-time
 
 <summary>
 
-CWSDeployment object {id, etag, name, 3 more }
+CWSDeployment object { id, etag, name, 3 more }
 
 Response for cws\_deployment resources
 
@@ -1298,7 +1298,7 @@ formatdate-time
 
 <summary>
 
-CWSPolicy object {id, etag, name, 3 more }
+CWSPolicy object { id, etag, name, 3 more }
 
 Response for cws\_policy resources
 
@@ -1348,7 +1348,7 @@ formatdate-time
 
 <summary>
 
-CWSPolicySet object {id, etag, name, 3 more }
+CWSPolicySet object { id, etag, name, 3 more }
 
 Response for cws\_policy\_set resources
 
@@ -1398,7 +1398,7 @@ formatdate-time
 
 <summary>
 
-CWSWorkload object {id, etag, name, 3 more }
+CWSWorkload object { id, etag, name, 3 more }
 
 Response for cws\_workload resources
 
@@ -1448,7 +1448,7 @@ formatdate-time
 
 <summary>
 
-D1Database object {id, etag, name, 3 more }
+D1Database object { id, etag, name, 3 more }
 
 Response for d1\_database resources
 
@@ -1498,7 +1498,7 @@ formatdate-time
 
 <summary>
 
-Device object {id, etag, name, 3 more }
+Device object { id, etag, name, 3 more }
 
 Response for device resources
 
@@ -1548,7 +1548,7 @@ formatdate-time
 
 <summary>
 
-DNSRecord object {id, etag, name, 4 more }
+DNSRecord object { id, etag, name, 4 more }
 
 Response for dns\_record resources
 
@@ -1608,7 +1608,7 @@ formatdate-time
 
 <summary>
 
-DurableObjectNamespace object {id, etag, name, 3 more }
+DurableObjectNamespace object { id, etag, name, 3 more }
 
 Response for durable\_object\_namespace resources
 
@@ -1658,7 +1658,7 @@ formatdate-time
 
 <summary>
 
-GatewayList object {id, etag, name, 3 more }
+GatewayList object { id, etag, name, 3 more }
 
 Response for gateway\_list resources
 
@@ -1708,7 +1708,7 @@ formatdate-time
 
 <summary>
 
-GatewayRule object {id, etag, name, 3 more }
+GatewayRule object { id, etag, name, 3 more }
 
 Response for gateway\_rule resources
 
@@ -1758,7 +1758,7 @@ formatdate-time
 
 <summary>
 
-Healthcheck object {id, etag, name, 4 more }
+Healthcheck object { id, etag, name, 4 more }
 
 Response for healthcheck resources
 
@@ -1818,7 +1818,7 @@ formatdate-time
 
 <summary>
 
-Image object {id, etag, name, 3 more }
+Image object { id, etag, name, 3 more }
 
 Response for image resources
 
@@ -1868,7 +1868,7 @@ formatdate-time
 
 <summary>
 
-InfrastructureTarget object {id, etag, name, 3 more }
+InfrastructureTarget object { id, etag, name, 3 more }
 
 Response for infrastructure\_target resources
 
@@ -1918,7 +1918,7 @@ formatdate-time
 
 <summary>
 
-KVNamespace object {id, etag, name, 3 more }
+KVNamespace object { id, etag, name, 3 more }
 
 Response for kv\_namespace resources
 
@@ -1968,7 +1968,7 @@ formatdate-time
 
 <summary>
 
-LoadBalancer object {id, etag, name, 4 more }
+LoadBalancer object { id, etag, name, 4 more }
 
 Response for load\_balancer resources
 
@@ -2028,7 +2028,7 @@ formatdate-time
 
 <summary>
 
-LoadBalancerMonitor object {id, etag, name, 3 more }
+LoadBalancerMonitor object { id, etag, name, 3 more }
 
 Response for load\_balancer\_monitor resources
 
@@ -2078,7 +2078,7 @@ formatdate-time
 
 <summary>
 
-LoadBalancerPool object {id, etag, name, 3 more }
+LoadBalancerPool object { id, etag, name, 3 more }
 
 Response for load\_balancer\_pool resources
 
@@ -2128,7 +2128,7 @@ formatdate-time
 
 <summary>
 
-ManagedClientCertificate object {id, etag, name, 4 more }
+ManagedClientCertificate object { id, etag, name, 4 more }
 
 Response for managed\_client\_certificate resources
 
@@ -2188,7 +2188,7 @@ formatdate-time
 
 <summary>
 
-NamespaceWorker object {id, etag, name, 4 more }
+NamespaceWorker object { id, etag, name, 4 more }
 
 Response for namespace\_worker resources
 
@@ -2226,7 +2226,7 @@ type: "namespace\_worker"
 
 <summary>
 
-navigation: optional object {namespace\_id, namespace\_name, script\_name }
+navigation: optional object { namespace\_id, namespace\_name, script\_name }
 
 Read-only routing metadata resolved from EWC using the account and immutable namespace Worker ID. Returned only by tagged-resource lists requested with include\_navigation=true. Omitted when lookup is unavailable or the child has been deleted. Never supplied on tag writes or stored as extra\_data.
 
@@ -2270,7 +2270,7 @@ formatdate-time
 
 <summary>
 
-PagesProject object {id, etag, name, 3 more }
+PagesProject object { id, etag, name, 3 more }
 
 Response for pages\_project resources
 
@@ -2320,7 +2320,7 @@ formatdate-time
 
 <summary>
 
-Queue object {id, etag, name, 3 more }
+Queue object { id, etag, name, 3 more }
 
 Response for queue resources
 
@@ -2370,7 +2370,7 @@ formatdate-time
 
 <summary>
 
-R2Bucket object {id, etag, name, 3 more }
+R2Bucket object { id, etag, name, 3 more }
 
 Response for r2\_bucket resources
 
@@ -2420,7 +2420,7 @@ formatdate-time
 
 <summary>
 
-ResourceShare object {id, etag, name, 3 more }
+ResourceShare object { id, etag, name, 3 more }
 
 Response for resource\_share resources
 
@@ -2470,7 +2470,7 @@ formatdate-time
 
 <summary>
 
-StreamLiveInput object {id, etag, name, 3 more }
+StreamLiveInput object { id, etag, name, 3 more }
 
 Response for stream\_live\_input resources
 
@@ -2520,7 +2520,7 @@ formatdate-time
 
 <summary>
 
-StreamVideo object {id, etag, name, 3 more }
+StreamVideo object { id, etag, name, 3 more }
 
 Response for stream\_video resources
 
@@ -2570,7 +2570,7 @@ formatdate-time
 
 <summary>
 
-VectorizeIndex object {id, etag, name, 3 more }
+VectorizeIndex object { id, etag, name, 3 more }
 
 Response for vectorize\_index resources
 
@@ -2620,7 +2620,7 @@ formatdate-time
 
 <summary>
 
-Worker object {id, etag, name, 3 more }
+Worker object { id, etag, name, 3 more }
 
 Response for worker resources
 
@@ -2670,7 +2670,7 @@ formatdate-time
 
 <summary>
 
-WorkerRoute object {id, etag, name, 4 more }
+WorkerRoute object { id, etag, name, 4 more }
 
 Response for worker\_route resources
 
@@ -2730,7 +2730,7 @@ formatdate-time
 
 <summary>
 
-WorkerVersion object {id, etag, name, 4 more }
+WorkerVersion object { id, etag, name, 4 more }
 
 Response for worker\_version resources
 
@@ -2786,7 +2786,7 @@ formatdate-time
 
 <summary>
 
-Zone object {id, etag, name, 4 more }
+Zone object { id, etag, name, 4 more }
 
 Response for zone resources
 
@@ -2846,7 +2846,7 @@ formatdate-time
 
 <summary>
 
-ZoneRuleset object {id, etag, name, 4 more }
+ZoneRuleset object { id, etag, name, 4 more }
 
 Response for zone\_ruleset resources
 

@@ -28,7 +28,7 @@ GET/accounts/{account\_id}/images/v2
 
 <summary>
 
-V2ListResponse object {continuation\_token, images }
+V2ListResponse object { continuation\_token, images }
 
 </summary>
 
@@ -118,7 +118,7 @@ POST/accounts/{account\_id}/images/v2/direct\_upload
 
 <summary>
 
-DirectUploadCreateResponse object {id, uploadURL }
+DirectUploadCreateResponse object { id, uploadURL }
 
 </summary>
 

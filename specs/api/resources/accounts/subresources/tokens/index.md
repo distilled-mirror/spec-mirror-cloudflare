@@ -48,7 +48,7 @@ GET/accounts/{account\_id}/tokens/verify
 
 <summary>
 
-TokenCreateResponse object {id, condition, creator\_email\_at\_creation, 13 more }
+TokenCreateResponse object { id, condition, creator\_email\_at\_creation, 13 more }
 
 </summary>
 
@@ -64,7 +64,7 @@ maxLength32
 
 <summary>
 
-condition: optional object {request\_ip }
+condition: optional object { request\_ip }
 
 </summary>
 
@@ -72,7 +72,7 @@ condition: optional object {request\_ip }
 
 <summary>
 
-request\_ip: optional object {in, not\_in }
+request\_ip: optional object { in, not\_in }
 
 Client IP restrictions.
 
@@ -174,7 +174,7 @@ Policy identifier.
 
 <summary>
 
-effect: "allow"or "deny"
+effect: "allow" or "deny"
 
 Allow or deny operations against the resources.
 
@@ -198,7 +198,7 @@ One of the following:
 
 <summary>
 
-permission\_groups: array of object {id, meta, name }
+permission\_groups: array of object { id, meta, name }
 
 A set of permission groups that are specified to the policy.
 
@@ -214,7 +214,7 @@ Identifier of the permission group.
 
 <summary>
 
-meta: optional object {category, deprecated, description, 5 more }
+meta: optional object { category, deprecated, description, 5 more }
 
 Attributes associated to the permission group.
 
@@ -288,7 +288,7 @@ Name of the permission group.
 
 <summary>
 
-resources: map\[string]or map\[map\[string]]
+resources: map\[string] or map\[map\[string]]
 
 A list of resource names that the policy applies to.
 
@@ -332,7 +332,7 @@ The type of service that provisioned the token. Only present for provisioned Acc
 
 <summary>
 
-status: optional "active"or "disabled"or "expired"
+status: optional "active" or "disabled" or "expired"
 
 Status of the token.
 
@@ -390,7 +390,7 @@ minLength40
 
 <summary>
 
-TokenDeleteResponse object {id }
+TokenDeleteResponse object { id }
 
 </summary>
 
@@ -412,7 +412,7 @@ minLength32
 
 <summary>
 
-TokenVerifyResponse object {id, status, expires\_on, not\_before }
+TokenVerifyResponse object { id, status, expires\_on, not\_before }
 
 </summary>
 
@@ -428,7 +428,7 @@ maxLength32
 
 <summary>
 
-status: "active"or "disabled"or "expired"
+status: "active" or "disabled" or "expired"
 
 Status of the token.
 
@@ -488,7 +488,7 @@ GET/accounts/{account\_id}/tokens/permission\_groups
 
 <summary>
 
-PermissionGroupListResponse object {id, category, is\_selectable, 2 more }
+PermissionGroupListResponse object { id, category, is\_selectable, 2 more }
 
 </summary>
 
@@ -502,7 +502,7 @@ Public ID.
 
 <summary>
 
-category: optional "developer\_platform"or "ai\_and\_machine\_learning"or "dns\_and\_zones"or 10 more
+category: optional "developer\_platform" or "ai\_and\_machine\_learning" or "dns\_and\_zones" or 10 more
 
 Product category that this permission group belongs to.
 
@@ -582,7 +582,7 @@ Permission Group Name
 
 <summary>
 
-scopes: optional array of "com.cloudflare.api.account"or "com.cloudflare.api.account.zone"or "com.cloudflare.api.user"or "com.cloudflare.edge.r2.bucket"
+scopes: optional array of "com.cloudflare.api.account" or "com.cloudflare.api.account.zone" or "com.cloudflare.api.user" or "com.cloudflare.edge.r2.bucket"
 
 Resources to which the Permission Group is scoped
 
@@ -618,7 +618,7 @@ One of the following:
 
 <summary>
 
-PermissionGroupGetResponse = array of object {id, category, is\_selectable, 2 more }
+PermissionGroupGetResponse = array of object { id, category, is\_selectable, 2 more }
 
 </summary>
 
@@ -632,7 +632,7 @@ Public ID.
 
 <summary>
 
-category: optional "developer\_platform"or "ai\_and\_machine\_learning"or "dns\_and\_zones"or 10 more
+category: optional "developer\_platform" or "ai\_and\_machine\_learning" or "dns\_and\_zones" or 10 more
 
 Product category that this permission group belongs to.
 
@@ -712,7 +712,7 @@ Permission Group Name
 
 <summary>
 
-scopes: optional array of "com.cloudflare.api.account"or "com.cloudflare.api.account.zone"or "com.cloudflare.api.user"or "com.cloudflare.edge.r2.bucket"
+scopes: optional array of "com.cloudflare.api.account" or "com.cloudflare.api.account.zone" or "com.cloudflare.api.user" or "com.cloudflare.edge.r2.bucket"
 
 Resources to which the Permission Group is scoped
 

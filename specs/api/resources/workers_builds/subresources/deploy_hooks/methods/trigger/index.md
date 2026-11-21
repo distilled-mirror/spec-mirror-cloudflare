@@ -62,7 +62,7 @@ formatuuid
 
 <summary>
 
-errors: array of object {message, code }
+errors: array of object { message, code }
 
 </summary>
 
@@ -86,7 +86,7 @@ messages: array of string
 
 <summary>
 
-result: object {already\_exists, build\_uuid, created\_on, status } or object {already\_exists, build\_uuid, created\_on, status }
+result: object { already\_exists, build\_uuid, created\_on, status } or object { already\_exists, build\_uuid, created\_on, status }
 
 </summary>
 
@@ -96,7 +96,7 @@ One of the following:
 
 <summary>
 
-object {already\_exists, build\_uuid, created\_on, status }
+object { already\_exists, build\_uuid, created\_on, status }
 
 </summary>
 
@@ -124,7 +124,7 @@ formatdate-time
 
 <summary>
 
-status: optional "queued"or "initializing"or "running"or "stopped"
+status: optional "queued" or "initializing" or "running" or "stopped"
 
 </summary>
 
@@ -158,7 +158,7 @@ One of the following:
 
 <summary>
 
-object {already\_exists, build\_uuid, created\_on, status }
+object { already\_exists, build\_uuid, created\_on, status }
 
 </summary>
 
@@ -186,7 +186,7 @@ formatdate-time
 
 <summary>
 
-status: optional "queued"or "initializing"or "running"or "stopped"
+status: optional "queued" or "initializing" or "running" or "stopped"
 
 </summary>
 
@@ -228,7 +228,7 @@ success: boolean
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

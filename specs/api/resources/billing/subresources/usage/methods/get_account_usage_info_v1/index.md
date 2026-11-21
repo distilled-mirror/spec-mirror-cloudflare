@@ -70,7 +70,7 @@ maxLength32
 
 <summary>
 
-errors: array of object {message, code }
+errors: array of object { message, code }
 
 Contains error details if the request failed.
 
@@ -96,7 +96,7 @@ Identifies the error or notice type.
 
 <summary>
 
-messages: array of object {message, code }
+messages: array of object { message, code }
 
 Contains any informational messages from the API.
 
@@ -122,7 +122,7 @@ Identifies the error or notice type.
 
 <summary>
 
-result: object {covered, subscriptions }
+result: object { covered, subscriptions }
 
 Contains the usage info.
 
@@ -138,7 +138,7 @@ Indicates whether the account is covered.
 
 <summary>
 
-subscriptions: array of object {id, billing\_cycle\_anchor\_timestamp, start\_timestamp, end\_timestamp }
+subscriptions: array of object { id, billing\_cycle\_anchor\_timestamp, start\_timestamp, end\_timestamp }
 
 List of subscriptions for the account.
 

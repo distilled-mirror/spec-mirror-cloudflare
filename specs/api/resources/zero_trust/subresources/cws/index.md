@@ -42,7 +42,7 @@ DELETE/accounts/{account\_id}/cws/basic-auth-credentials/{credential\_id}
 
 <summary>
 
-BasicAuthCredential object {id, created\_at, updated\_at, username }
+BasicAuthCredential object { id, created\_at, updated\_at, username }
 
 </summary>
 
@@ -84,7 +84,7 @@ minLength1
 
 <summary>
 
-BasicAuthCredentialDeleteResponse object {id }
+BasicAuthCredentialDeleteResponse object { id }
 
 </summary>
 
@@ -122,7 +122,7 @@ DELETE/accounts/{account\_id}/cws/basic-auth-credentials/{credential\_id}/secret
 
 <summary>
 
-BasicAuthSecret object {id, created\_at, expires\_at }
+BasicAuthSecret object { id, created\_at, expires\_at }
 
 </summary>
 
@@ -156,7 +156,7 @@ formatdate-time
 
 <summary>
 
-SecretDeleteResponse object {id }
+SecretDeleteResponse object { id }
 
 </summary>
 
@@ -198,7 +198,7 @@ DELETE/accounts/{account\_id}/cws/deployments/{deployment\_id}
 
 <summary>
 
-Deployment object {id, basic\_auth\_credential\_ids, created\_at, 9 more }
+Deployment object { id, basic\_auth\_credential\_ids, created\_at, 9 more }
 
 </summary>
 
@@ -226,7 +226,7 @@ formatdate-time
 
 <summary>
 
-default\_mode: "ALLOW"or "BLOCK"
+default\_mode: "ALLOW" or "BLOCK"
 
 Default traffic decision when no policy set matches
 
@@ -260,7 +260,7 @@ minLength1
 
 <summary>
 
-on\_error\_action: "BLOCK"or "SKIP"
+on\_error\_action: "BLOCK" or "SKIP"
 
 Action applied when an enforcing policy has a runtime Rego error
 
@@ -328,7 +328,7 @@ formatuuid
 
 <summary>
 
-DeploymentDeleteResponse object {id }
+DeploymentDeleteResponse object { id }
 
 </summary>
 
@@ -370,7 +370,7 @@ DELETE/accounts/{account\_id}/cws/domain-acls/{domain\_acl\_id}
 
 <summary>
 
-DomainACL object {id, created\_at, default\_action, 3 more }
+DomainACL object { id, created\_at, default\_action, 3 more }
 
 </summary>
 
@@ -392,7 +392,7 @@ formatdate-time
 
 <summary>
 
-default\_action: "ALLOW"or "BLOCK"
+default\_action: "ALLOW" or "BLOCK"
 
 Action applied when no entry matches the request domain
 
@@ -416,7 +416,7 @@ One of the following:
 
 <summary>
 
-entries: array of object {action, domain }
+entries: array of object { action, domain }
 
 Per-domain action overrides. Each domain appears at most once.
 
@@ -426,7 +426,7 @@ Per-domain action overrides. Each domain appears at most once.
 
 <summary>
 
-action: "ALLOW"or "BLOCK"
+action: "ALLOW" or "BLOCK"
 
 Per-domain decision overriding the parent ACL’s default\_action
 
@@ -484,7 +484,7 @@ formatdate-time
 
 <summary>
 
-DomainACLDeleteResponse object {id }
+DomainACLDeleteResponse object { id }
 
 </summary>
 
@@ -526,7 +526,7 @@ DELETE/accounts/{account\_id}/cws/policies/{policy\_id}
 
 <summary>
 
-Policy object {id, created\_at, entrypoint, 7 more }
+Policy object { id, created\_at, entrypoint, 7 more }
 
 </summary>
 
@@ -618,7 +618,7 @@ maxLength1024
 
 <summary>
 
-PolicyDeleteResponse object {id }
+PolicyDeleteResponse object { id }
 
 </summary>
 
@@ -660,7 +660,7 @@ DELETE/accounts/{account\_id}/cws/policy-sets/{policy\_set\_id}
 
 <summary>
 
-PolicySet object {id, created\_at, exclude\_workload\_ids, 6 more }
+PolicySet object { id, created\_at, exclude\_workload\_ids, 6 more }
 
 </summary>
 
@@ -704,7 +704,7 @@ minLength1
 
 <summary>
 
-policies: array of object {enforce, policy\_id }
+policies: array of object { enforce, policy\_id }
 
 Member policies and their per-membership enforcement mode
 
@@ -756,7 +756,7 @@ maxLength1024
 
 <summary>
 
-PolicySetDeleteResponse object {id }
+PolicySetDeleteResponse object { id }
 
 </summary>
 
@@ -798,7 +798,7 @@ DELETE/accounts/{account\_id}/cws/rego-metadata/{rego\_metadata\_id}
 
 <summary>
 
-RegoMetadata object {id, created\_at, data, 3 more }
+RegoMetadata object { id, created\_at, data, 3 more }
 
 </summary>
 
@@ -854,7 +854,7 @@ formatdate-time
 
 <summary>
 
-RegoMetadataDeleteResponse object {id }
+RegoMetadataDeleteResponse object { id }
 
 </summary>
 
@@ -896,7 +896,7 @@ DELETE/accounts/{account\_id}/cws/rego-modules/{rego\_module\_id}
 
 <summary>
 
-RegoModule object {id, created\_at, name, 3 more }
+RegoModule object { id, created\_at, name, 3 more }
 
 </summary>
 
@@ -956,7 +956,7 @@ formatdate-time
 
 <summary>
 
-RegoModuleDeleteResponse object {id }
+RegoModuleDeleteResponse object { id }
 
 </summary>
 
@@ -998,7 +998,7 @@ DELETE/accounts/{account\_id}/cws/tenant-structures/{structure\_id}
 
 <summary>
 
-TenantStructure object {id, application, created\_at, 3 more }
+TenantStructure object { id, application, created\_at, 3 more }
 
 </summary>
 
@@ -1014,7 +1014,7 @@ formatuuid
 
 <summary>
 
-application: "aws"or "cloudflare"
+application: "aws" or "cloudflare"
 
 Platform this structure models. Immutable after creation; determines valid node kinds and identifier formats.
 
@@ -1074,7 +1074,7 @@ minLength1
 
 <summary>
 
-TenantStructureDeleteResponse object {id }
+TenantStructureDeleteResponse object { id }
 
 </summary>
 
@@ -1120,7 +1120,7 @@ POST/accounts/{account\_id}/cws/tenant-structures/{structure\_id}/nodes/batch
 
 <summary>
 
-TenantStructureNode object {id, created\_at, native\_id, 4 more }
+TenantStructureNode object { id, created\_at, native\_id, 4 more }
 
 </summary>
 
@@ -1188,7 +1188,7 @@ maxLength255
 
 <summary>
 
-NodeDeleteResponse object {id }
+NodeDeleteResponse object { id }
 
 </summary>
 
@@ -1206,7 +1206,7 @@ formatuuid
 
 <summary>
 
-NodeBatchResponse object {created, deleted, updated }
+NodeBatchResponse object { created, deleted, updated }
 
 </summary>
 
@@ -1282,7 +1282,7 @@ maxLength255
 
 <summary>
 
-deleted: array of object {id }
+deleted: array of object { id }
 
 </summary>
 
@@ -1396,7 +1396,7 @@ DELETE/accounts/{account\_id}/cws/workloads/{workload\_id}
 
 <summary>
 
-Workload object {id, created\_at, filter, 4 more }
+Workload object { id, created\_at, filter, 4 more }
 
 </summary>
 
@@ -1462,7 +1462,7 @@ maxLength1024
 
 <summary>
 
-WorkloadDeleteResponse object {id }
+WorkloadDeleteResponse object { id }
 
 </summary>
 

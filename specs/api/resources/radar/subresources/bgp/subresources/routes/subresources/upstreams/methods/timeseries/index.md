@@ -92,7 +92,7 @@ formatdate-time
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -116,7 +116,7 @@ One of the following:
 
 <summary>
 
-ipVersion: optional "IPv4"or "IPv6"
+ipVersion: optional "IPv4" or "IPv6"
 
 Address family of the observed paths. Defaults to IPv4.
 
@@ -148,7 +148,7 @@ Number of upstream ASNs to return as separate series, ranked by the first bucket
 
 <summary>
 
-result: object {meta, serie\_0 }
+result: object { meta, serie\_0 }
 
 </summary>
 
@@ -156,7 +156,7 @@ result: object {meta, serie\_0 }
 
 <summary>
 
-meta: object {dataTime, effectiveCollector, queryTime, stale }
+meta: object { dataTime, effectiveCollector, queryTime, stale }
 
 </summary>
 
@@ -192,7 +192,7 @@ stale: boolean
 
 <summary>
 
-serie\_0: object {timestamps }
+serie\_0: object { timestamps }
 
 </summary>
 

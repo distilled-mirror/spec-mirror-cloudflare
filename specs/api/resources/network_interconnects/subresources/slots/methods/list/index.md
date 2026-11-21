@@ -110,7 +110,7 @@ If specified, only show slots that support the given speed
 
 <summary>
 
-items: array of object {id, facility, occupied, 4 more }
+items: array of object { id, facility, occupied, 4 more }
 
 </summary>
 
@@ -126,7 +126,7 @@ formatuuid
 
 <summary>
 
-facility: object {address, name }
+facility: object { address, name }
 
 </summary>
 

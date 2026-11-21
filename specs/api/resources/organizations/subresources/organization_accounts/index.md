@@ -28,7 +28,7 @@ GET/organizations/{organization\_id}/accounts
 
 <summary>
 
-OrganizationAccounts object {id, name, type, 4 more }
+OrganizationAccounts object { id, name, type, 4 more }
 
 </summary>
 
@@ -52,7 +52,7 @@ Account name. When creating or updating an account, the name is limited to 65 UT
 
 <summary>
 
-type: "standard"or "enterprise"
+type: "standard" or "enterprise"
 
 </summary>
 
@@ -82,7 +82,7 @@ formatdate-time
 
 <summary>
 
-legacy\_flags: optional object {enterprise\_zone\_quota }
+legacy\_flags: optional object { enterprise\_zone\_quota }
 
 Legacy account flags.
 
@@ -92,7 +92,7 @@ Legacy account flags.
 
 <summary>
 
-enterprise\_zone\_quota: optional object {available, current, maximum }
+enterprise\_zone\_quota: optional object { available, current, maximum }
 
 Enterprise zone quota for standard and enterprise accounts. Accounts without a quota have a maximum of 0.
 
@@ -128,7 +128,7 @@ Maximum number of Enterprise zones allowed.
 
 <summary>
 
-managed\_by: optional object {parent\_org\_id, parent\_org\_name, root\_org\_id, should\_display\_parent\_orgs }
+managed\_by: optional object { parent\_org\_id, parent\_org\_name, root\_org\_id, should\_display\_parent\_orgs }
 
 Parent container details
 
@@ -170,7 +170,7 @@ Indicates whether the parent Organization hierarchy should be displayed
 
 <summary>
 
-settings: optional object {abuse\_contact\_email, enforce\_twofactor }
+settings: optional object { abuse\_contact\_email, enforce\_twofactor }
 
 Account settings
 
@@ -200,7 +200,7 @@ Indicates whether membership in this account requires that Two-Factor Authentica
 
 <summary>
 
-OrganizationAccountGetResponse = array of <a href="https://developers.cloudflare.com/api/resources/tenants#(resource)%20tenants.accounts%20%3E%20(model)%20tenant_account%20%3E%20(schema)">TenantAccount</a> { id, created\_on, name, 3 more } or object {account\_pubname, account\_tag, account\_type, 2 more }
+OrganizationAccountGetResponse = array of <a href="https://developers.cloudflare.com/api/resources/tenants#(resource)%20tenants.accounts%20%3E%20(model)%20tenant_account%20%3E%20(schema)">TenantAccount</a> { id, created\_on, name, 3 more } or object { account\_pubname, account\_tag, account\_type, 2 more }
 
 </summary>
 
@@ -210,7 +210,7 @@ One of the following:
 
 <summary>
 
-TenantAccount object {id, created\_on, name, 3 more }
+TenantAccount object { id, created\_on, name, 3 more }
 
 </summary>
 
@@ -232,7 +232,7 @@ name: string
 
 <summary>
 
-settings: object {abuse\_contact\_email, access\_approval\_expiry, api\_access\_enabled, 3 more }
+settings: object { abuse\_contact\_email, access\_approval\_expiry, api\_access\_enabled, 3 more }
 
 </summary>
 
@@ -274,7 +274,7 @@ Use <a href="https://developers.cloudflare.com/api/operations/dns-settings-for-a
 
 <summary>
 
-type: "standard"or "enterprise"
+type: "standard" or "enterprise"
 
 </summary>
 
@@ -306,7 +306,7 @@ Account tags, present only when <code>include_tags=true</code> is requested.
 
 <summary>
 
-OrganizationsAPILegacyAccount object {account\_pubname, account\_tag, account\_type, 2 more }
+OrganizationsAPILegacyAccount object { account\_pubname, account\_tag, account\_type, 2 more }
 
 </summary>
 
@@ -322,7 +322,7 @@ account\_tag: string
 
 <summary>
 
-account\_type: "standard"or "enterprise"
+account\_type: "standard" or "enterprise"
 
 </summary>
 
@@ -350,7 +350,7 @@ formatdate-time
 
 <summary>
 
-settings: object {access\_approval\_expiry, api\_access\_enabled, enforce\_two\_factor, use\_account\_custom\_ns\_by\_default }
+settings: object { access\_approval\_expiry, api\_access\_enabled, enforce\_two\_factor, use\_account\_custom\_ns\_by\_default }
 
 </summary>
 

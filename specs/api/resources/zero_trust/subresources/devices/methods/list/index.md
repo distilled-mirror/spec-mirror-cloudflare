@@ -61,6 +61,10 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 </details>
 
+##### Accepted Permissions (at least one required)
+
+`Zero Trust Read``Zero Trust Write`
+
 ##### P ath ParametersExpand Collapse
 
 account\_id: string
@@ -95,7 +99,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -137,7 +141,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -187,7 +191,7 @@ True if the device was deleted.
 
 <summary>
 
-device\_type: optional "windows"or "mac"or "linux"or 3 more
+device\_type: optional "windows" or "mac" or "linux" or 3 more
 
 </summary>
 
@@ -315,7 +319,7 @@ formatdate-time
 
 <summary>
 
-user: optional object {id, email, name }
+user: optional object { id, email, name }
 
 </summary>
 
@@ -365,7 +369,7 @@ Whether the API call was successful.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object { count, page, per\_page, total\_count }
 
 </summary>
 

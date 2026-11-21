@@ -34,7 +34,7 @@ GET/accounts/{account\_id}/intel/asn/{asn}/subnets
 
 <summary>
 
-SubnetGetResponse object {asn, count, ip\_count\_total, 3 more }
+SubnetGetResponse object { asn, count, ip\_count\_total, 3 more }
 
 </summary>
 
@@ -84,7 +84,7 @@ GET/accounts/{account\_id}/intel/dns
 
 <summary>
 
-DNS object {count, page, per\_page, reverse\_records }
+DNS object { count, page, per\_page, reverse\_records }
 
 </summary>
 
@@ -110,7 +110,7 @@ Number of results per page of results.
 
 <summary>
 
-reverse\_records: optional array of object {first\_seen, hostname, last\_seen }
+reverse\_records: optional array of object { first\_seen, hostname, last\_seen }
 
 Reverse DNS look-ups observed during the time period.
 
@@ -158,7 +158,7 @@ GET/accounts/{account\_id}/intel/domain
 
 <summary>
 
-Domain object {additional\_information, application, content\_categories, 8 more }
+Domain object { additional\_information, application, content\_categories, 8 more }
 
 </summary>
 
@@ -166,7 +166,7 @@ Domain object {additional\_information, application, content\_categories, 8 more
 
 <summary>
 
-additional\_information: optional object {suspected\_malware\_family }
+additional\_information: optional object { suspected\_malware\_family }
 
 Additional information related to the host name.
 
@@ -186,7 +186,7 @@ Suspected DGA malware family.
 
 <summary>
 
-application: optional object {id, name }
+application: optional object { id, name }
 
 Application that the hostname belongs to.
 
@@ -208,7 +208,7 @@ name: optional string
 
 <summary>
 
-content\_categories: optional array of object {id, name, super\_category\_id }
+content\_categories: optional array of object { id, name, super\_category\_id }
 
 </summary>
 
@@ -236,7 +236,7 @@ domain: optional string
 
 <summary>
 
-inherited\_content\_categories: optional array of object {id, name, super\_category\_id }
+inherited\_content\_categories: optional array of object { id, name, super\_category\_id }
 
 </summary>
 
@@ -266,7 +266,7 @@ Domain from which <code>inherited_content_categories</code> and <code>inherited_
 
 <summary>
 
-inherited\_risk\_types: optional array of object {id, name, super\_category\_id }
+inherited\_risk\_types: optional array of object { id, name, super\_category\_id }
 
 </summary>
 
@@ -296,7 +296,7 @@ Global Cloudflare 100k ranking for the last 30 days, if available for the hostna
 
 <summary>
 
-resolves\_to\_refs: optional array of object {id, value }
+resolves\_to\_refs: optional array of object { id, value }
 
 Specifies a list of references to one or more IP addresses or domain names that the domain name currently resolves to.
 
@@ -328,7 +328,7 @@ Hostname risk score, which is a value between 0 (lowest risk) to 1 (highest risk
 
 <summary>
 
-risk\_types: optional array of object {id, name, super\_category\_id }
+risk\_types: optional array of object { id, name, super\_category\_id }
 
 </summary>
 
@@ -364,7 +364,7 @@ GET/accounts/{account\_id}/intel/domain/bulk
 
 <summary>
 
-BulkGetResponse = array of object {additional\_information, application, content\_categories, 7 more }
+BulkGetResponse = array of object { additional\_information, application, content\_categories, 7 more }
 
 </summary>
 
@@ -372,7 +372,7 @@ BulkGetResponse = array of object {additional\_information, application, content
 
 <summary>
 
-additional\_information: optional object {suspected\_malware\_family }
+additional\_information: optional object { suspected\_malware\_family }
 
 Additional information related to the host name.
 
@@ -392,7 +392,7 @@ Suspected DGA malware family.
 
 <summary>
 
-application: optional object {id, name }
+application: optional object { id, name }
 
 Application that the hostname belongs to.
 
@@ -414,7 +414,7 @@ name: optional string
 
 <summary>
 
-content\_categories: optional array of object {id, name, super\_category\_id }
+content\_categories: optional array of object { id, name, super\_category\_id }
 
 </summary>
 
@@ -442,7 +442,7 @@ domain: optional string
 
 <summary>
 
-inherited\_content\_categories: optional array of object {id, name, super\_category\_id }
+inherited\_content\_categories: optional array of object { id, name, super\_category\_id }
 
 </summary>
 
@@ -472,7 +472,7 @@ Domain from which <code>inherited_content_categories</code> and <code>inherited_
 
 <summary>
 
-inherited\_risk\_types: optional array of object {id, name, super\_category\_id }
+inherited\_risk\_types: optional array of object { id, name, super\_category\_id }
 
 </summary>
 
@@ -508,7 +508,7 @@ Hostname risk score, which is a value between 0 (lowest risk) to 1 (highest risk
 
 <summary>
 
-risk\_types: optional array of object {id, name, super\_category\_id }
+risk\_types: optional array of object { id, name, super\_category\_id }
 
 </summary>
 
@@ -544,7 +544,7 @@ GET/accounts/{account\_id}/intel/domain-history
 
 <summary>
 
-DomainHistory object {categorizations, domain }
+DomainHistory object { categorizations, domain }
 
 </summary>
 
@@ -552,7 +552,7 @@ DomainHistory object {categorizations, domain }
 
 <summary>
 
-categorizations: optional array of object {categories, end, start }
+categorizations: optional array of object { categories, end, start }
 
 </summary>
 
@@ -560,7 +560,7 @@ categorizations: optional array of object {categories, end, start }
 
 <summary>
 
-categories: optional array of object {id, name }
+categories: optional array of object { id, name }
 
 </summary>
 
@@ -612,7 +612,7 @@ DomainHistoryGetResponse = array of <a href="https://developers.cloudflare.com/a
 
 <summary>
 
-categorizations: optional array of object {categories, end, start }
+categorizations: optional array of object { categories, end, start }
 
 </summary>
 
@@ -620,7 +620,7 @@ categorizations: optional array of object {categories, end, start }
 
 <summary>
 
-categories: optional array of object {id, name }
+categories: optional array of object { id, name }
 
 </summary>
 
@@ -672,7 +672,7 @@ GET/accounts/{account\_id}/intel/ip
 
 <summary>
 
-IP object {belongs\_to\_ref, ip, risk\_types }
+IP object { belongs\_to\_ref, ip, risk\_types }
 
 </summary>
 
@@ -680,7 +680,7 @@ IP object {belongs\_to\_ref, ip, risk\_types }
 
 <summary>
 
-belongs\_to\_ref: optional object {id, country, description, 2 more }
+belongs\_to\_ref: optional object { id, country, description, 2 more }
 
 Specifies a reference to the autonomous systems (AS) that the IP address belongs to.
 
@@ -702,7 +702,7 @@ description: optional string
 
 <summary>
 
-type: optional "hosting\_provider"or "isp"or "organization"
+type: optional "hosting\_provider" or "isp" or "organization"
 
 Infrastructure type of this ASN.
 
@@ -744,7 +744,7 @@ formatipv4
 
 <summary>
 
-risk\_types: optional array of object {id, name, super\_category\_id }
+risk\_types: optional array of object { id, name, super\_category\_id }
 
 </summary>
 
@@ -780,7 +780,7 @@ IPGetResponse = array of <a href="https://developers.cloudflare.com/api/resource
 
 <summary>
 
-belongs\_to\_ref: optional object {id, country, description, 2 more }
+belongs\_to\_ref: optional object { id, country, description, 2 more }
 
 Specifies a reference to the autonomous systems (AS) that the IP address belongs to.
 
@@ -802,7 +802,7 @@ description: optional string
 
 <summary>
 
-type: optional "hosting\_provider"or "isp"or "organization"
+type: optional "hosting\_provider" or "isp" or "organization"
 
 Infrastructure type of this ASN.
 
@@ -844,7 +844,7 @@ formatipv4
 
 <summary>
 
-risk\_types: optional array of object {id, name, super\_category\_id }
+risk\_types: optional array of object { id, name, super\_category\_id }
 
 </summary>
 
@@ -876,7 +876,7 @@ super\_category\_id: optional number
 
 <summary>
 
-IPList object {id, description, name }
+IPList object { id, description, name }
 
 </summary>
 
@@ -908,7 +908,7 @@ POST/accounts/{account\_id}/intel/miscategorization
 
 <summary>
 
-MiscategorizationCreateResponse object {errors, messages, success }
+MiscategorizationCreateResponse object { errors, messages, success }
 
 </summary>
 
@@ -916,7 +916,7 @@ MiscategorizationCreateResponse object {errors, messages, success }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -938,7 +938,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -958,7 +958,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -980,7 +980,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -1018,7 +1018,7 @@ GET/accounts/{account\_id}/intel/whois
 
 <summary>
 
-WhoisGetResponse object {dnssec, domain, extension, 84 more }
+WhoisGetResponse object { dnssec, domain, extension, 84 more }
 
 </summary>
 
@@ -1392,7 +1392,7 @@ GET/accounts/{account\_id}/intel/url
 
 <summary>
 
-URL object {content\_categories, full\_url, hostname, 2 more }
+URL object { content\_categories, full\_url, hostname, 2 more }
 
 </summary>
 
@@ -1400,7 +1400,7 @@ URL object {content\_categories, full\_url, hostname, 2 more }
 
 <summary>
 
-content\_categories: array of object {id, name, source\_id, super\_category\_id }
+content\_categories: array of object { id, name, source\_id, super\_category\_id }
 
 Content categories associated with this URL.
 
@@ -1442,7 +1442,7 @@ The hostname of the URL.
 
 <summary>
 
-risk\_type: array of object {id, name, source\_id, super\_category\_id }
+risk\_type: array of object { id, name, source\_id, super\_category\_id }
 
 Security risk types associated with this URL.
 
@@ -1506,7 +1506,7 @@ GET/accounts/{account\_id}/intel/indicator-feeds/{feed\_id}/data
 
 <summary>
 
-IndicatorFeedListResponse object {id, created\_on, description, 5 more }
+IndicatorFeedListResponse object { id, created\_on, description, 5 more }
 
 </summary>
 
@@ -1570,7 +1570,7 @@ The name of the indicator feed
 
 <summary>
 
-IndicatorFeedGetResponse object {id, created\_on, description, 10 more }
+IndicatorFeedGetResponse object { id, created\_on, description, 10 more }
 
 </summary>
 
@@ -1616,7 +1616,7 @@ Whether the indicator feed is exposed to customers
 
 <summary>
 
-last\_upload\_summary: optional object {persisted, skipped, uploaded }
+last\_upload\_summary: optional object { persisted, skipped, uploaded }
 
 Summary of indicator counts from the last successful upload to this feed. Populated by the custom-threat-feeds loader at the end of each successful load. Absent (omitted) when no upload has completed successfully or the upload errored before the summary write. Surfaces silent-failure paths so operators can see when their indicators were dropped (popularity allowlist, expired valid\_until, etc.) without reading loader logs.
 
@@ -1626,7 +1626,7 @@ Summary of indicator counts from the last successful upload to this feed. Popula
 
 <summary>
 
-persisted: optional object {domains\_added, domains\_removed, ips\_added, 3 more }
+persisted: optional object { domains\_added, domains\_removed, ips\_added, 3 more }
 
 Net delta applied to feed indicators by this upload. Snapshot uploads emit both \*\_added and \*\_removed; delta-add emits only \*\_added; delta-remove emits only \*\_removed.
 
@@ -1664,7 +1664,7 @@ urls\_removed: optional number
 
 <summary>
 
-skipped: optional object {allowlisted\_domains, expired\_indicators, invalid\_indicators }
+skipped: optional object { allowlisted\_domains, expired\_indicators, invalid\_indicators }
 
 Counts of indicators that were uploaded but did not reach QuickSilver, broken down by reason.
 
@@ -1696,7 +1696,7 @@ Reserved for future use. Currently always 0 — the unifier aborts the entire up
 
 <summary>
 
-uploaded: optional object {domains, ips, urls }
+uploaded: optional object { domains, ips, urls }
 
 Indicator counts from the unified file the loader received
 
@@ -1738,7 +1738,7 @@ Human-readable error message describing why the latest upload failed. Populated 
 
 <summary>
 
-latest\_upload\_status: optional "Mirroring"or "Unifying"or "Loading"or 3 more
+latest\_upload\_status: optional "Mirroring" or "Unifying" or "Loading" or 3 more
 
 Status of the latest snapshot uploaded
 
@@ -1808,7 +1808,7 @@ The provider of the indicator feed
 
 <summary>
 
-IndicatorFeedCreateResponse object {id, created\_on, description, 5 more }
+IndicatorFeedCreateResponse object { id, created\_on, description, 5 more }
 
 </summary>
 
@@ -1872,7 +1872,7 @@ The name of the indicator feed
 
 <summary>
 
-IndicatorFeedUpdateResponse object {id, created\_on, description, 5 more }
+IndicatorFeedUpdateResponse object { id, created\_on, description, 5 more }
 
 </summary>
 
@@ -1948,7 +1948,7 @@ PUT/accounts/{account\_id}/intel/indicator-feeds/{feed\_id}/snapshot
 
 <summary>
 
-SnapshotUpdateResponse object {file\_id, filename, poll\_url, 2 more }
+SnapshotUpdateResponse object { file\_id, filename, poll\_url, 2 more }
 
 </summary>
 
@@ -2008,7 +2008,7 @@ PUT/accounts/{account\_id}/intel/indicator-feeds/permissions/remove
 
 <summary>
 
-PermissionListResponse = array of object {id, description, is\_attributable, 3 more }
+PermissionListResponse = array of object { id, description, is\_attributable, 3 more }
 
 </summary>
 
@@ -2056,7 +2056,7 @@ The name of the indicator feed
 
 <summary>
 
-PermissionCreateResponse object {success }
+PermissionCreateResponse object { success }
 
 </summary>
 
@@ -2074,7 +2074,7 @@ Whether the update succeeded or not
 
 <summary>
 
-PermissionDeleteResponse object {success }
+PermissionDeleteResponse object { success }
 
 </summary>
 
@@ -2118,7 +2118,7 @@ DELETE/accounts/{account\_id}/intel/sinkholes/{sinkhole\_id}
 
 <summary>
 
-Sinkhole object {id, account\_tag, created\_on, 4 more }
+Sinkhole object { id, account\_tag, created\_on, 4 more }
 
 </summary>
 
@@ -2204,7 +2204,7 @@ DELETE/zones/{zone\_id}/intel/sinkholes/{sinkhole\_id}/ingresses/{ingress\_id}
 
 <summary>
 
-IngressCreateResponse object {id, cidr, created\_on, 3 more }
+IngressCreateResponse object { id, cidr, created\_on, 3 more }
 
 </summary>
 
@@ -2256,7 +2256,7 @@ The zone tag associated with this ingress rule.
 
 <summary>
 
-IngressGetResponse object {id, cidr, created\_on, 3 more }
+IngressGetResponse object { id, cidr, created\_on, 3 more }
 
 </summary>
 
@@ -2358,7 +2358,7 @@ GET/accounts/{account\_id}/intel/attack-surface-report/issues/type
 
 <summary>
 
-IssueType = "compliance\_violation"or "email\_security"or "exposed\_infrastructure"or 3 more
+IssueType = "compliance\_violation" or "email\_security" or "exposed\_infrastructure" or 3 more
 
 </summary>
 
@@ -2396,7 +2396,7 @@ One of the following:
 
 <summary>
 
-SeverityQueryParam = "low"or "moderate"or "critical"
+SeverityQueryParam = "low" or "moderate" or "critical"
 
 </summary>
 
@@ -2422,7 +2422,7 @@ One of the following:
 
 <summary>
 
-IssueListResponse object {count, issues, page, per\_page }
+IssueListResponse object { count, issues, page, per\_page }
 
 </summary>
 
@@ -2436,7 +2436,7 @@ Indicates the total number of results.
 
 <summary>
 
-issues: optional array of object {id, dismissed, has\_extended\_context, 12 more }
+issues: optional array of object { id, dismissed, has\_extended\_context, 12 more }
 
 </summary>
 
@@ -2466,7 +2466,7 @@ issue\_type: optional <a href="https://developers.cloudflare.com/api/resources/i
 
 <summary>
 
-payload: optional object {detection\_method, zone\_tag }
+payload: optional object { detection\_method, zone\_tag }
 
 </summary>
 
@@ -2496,7 +2496,7 @@ resolve\_text: optional string
 
 <summary>
 
-severity: optional "Low"or "Moderate"or "Critical"
+severity: optional "Low" or "Moderate" or "Critical"
 
 </summary>
 
@@ -2528,7 +2528,7 @@ formatdate-time
 
 <summary>
 
-source: optional "cloudflare"or "riskrecon"
+source: optional "cloudflare" or "riskrecon"
 
 Who generated the insight. <code>cloudflare</code> for Cloudflare-generated insights, otherwise the partner.
 
@@ -2552,7 +2552,7 @@ One of the following:
 
 <summary>
 
-status: optional "active"or "resolved"
+status: optional "active" or "resolved"
 
 The current status of the insight.
 
@@ -2586,7 +2586,7 @@ formatdate-time
 
 <summary>
 
-user\_classification: optional "false\_positive"or "accept\_risk"or "other"
+user\_classification: optional "false\_positive" or "accept\_risk" or "other"
 
 User-defined classification for the insight. Can be ‘false\_positive’, ‘accept\_risk’, ‘other’, or null.
 
@@ -2638,7 +2638,7 @@ minimum1
 
 <summary>
 
-IssueClassResponse = array of object {count, value }
+IssueClassResponse = array of object { count, value }
 
 </summary>
 
@@ -2658,7 +2658,7 @@ value: optional string
 
 <summary>
 
-IssueSeverityResponse = array of object {count, value }
+IssueSeverityResponse = array of object { count, value }
 
 </summary>
 
@@ -2678,7 +2678,7 @@ value: optional string
 
 <summary>
 
-IssueTypeResponse = array of object {count, value }
+IssueTypeResponse = array of object { count, value }
 
 </summary>
 

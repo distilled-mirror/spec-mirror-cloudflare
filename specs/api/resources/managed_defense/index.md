@@ -38,7 +38,7 @@ GET/accounts/{account\_id}/managed-defense/vulnerability-discovery/repos/{repo\_
 
 <summary>
 
-RepositoryListResponse object {id, created\_at, name, 3 more }
+RepositoryListResponse object { id, created\_at, name, 3 more }
 
 </summary>
 
@@ -66,7 +66,7 @@ minLength1
 
 <summary>
 
-readiness: "awaiting\_source"or "processing"or "ready"or "failed"
+readiness: "awaiting\_source" or "processing" or "ready" or "failed"
 
 Source state. <code>awaiting_source</code>: the upload repository’s default branch has no commits yet. <code>processing</code>: an import is in progress. <code>ready</code>: source is available. <code>failed</code>: the Worker import failed or could not be verified.
 
@@ -98,7 +98,7 @@ One of the following:
 
 <summary>
 
-source: "upload"or "worker"
+source: "upload" or "worker"
 
 </summary>
 
@@ -120,7 +120,7 @@ One of the following:
 
 <summary>
 
-import\_error: optional object {code, message }
+import\_error: optional object { code, message }
 
 </summary>
 
@@ -144,7 +144,7 @@ message: "Worker import failed."
 
 <summary>
 
-RepositoryCreateResponse = object {repository, upload } or object {repository }
+RepositoryCreateResponse = object { repository, upload } or object { repository }
 
 </summary>
 
@@ -154,7 +154,7 @@ One of the following:
 
 <summary>
 
-object {repository, upload }
+object { repository, upload }
 
 </summary>
 
@@ -162,7 +162,7 @@ object {repository, upload }
 
 <summary>
 
-repository: object {id, name, readiness, 2 more }
+repository: object { id, name, readiness, 2 more }
 
 </summary>
 
@@ -184,7 +184,7 @@ minLength1
 
 <summary>
 
-readiness: "awaiting\_source"or "processing"or "ready"or "failed"
+readiness: "awaiting\_source" or "processing" or "ready" or "failed"
 
 Source state. <code>awaiting_source</code>: the upload repository’s default branch has no commits yet. <code>processing</code>: an import is in progress. <code>ready</code>: source is available. <code>failed</code>: the Worker import failed or could not be verified.
 
@@ -216,7 +216,7 @@ One of the following:
 
 <summary>
 
-source: "upload"or "worker"
+source: "upload" or "worker"
 
 </summary>
 
@@ -238,7 +238,7 @@ One of the following:
 
 <summary>
 
-import\_error: optional object {code, message }
+import\_error: optional object { code, message }
 
 </summary>
 
@@ -262,7 +262,7 @@ message: "Worker import failed."
 
 <summary>
 
-upload: object {token, expires\_in, remote }
+upload: object { token, expires\_in, remote }
 
 </summary>
 
@@ -298,7 +298,7 @@ maxLength2048
 
 <summary>
 
-Repository object {repository }
+Repository object { repository }
 
 </summary>
 
@@ -306,7 +306,7 @@ Repository object {repository }
 
 <summary>
 
-repository: object {id, name, readiness, 2 more }
+repository: object { id, name, readiness, 2 more }
 
 </summary>
 
@@ -328,7 +328,7 @@ minLength1
 
 <summary>
 
-readiness: "awaiting\_source"or "processing"or "ready"or "failed"
+readiness: "awaiting\_source" or "processing" or "ready" or "failed"
 
 Source state. <code>awaiting_source</code>: the upload repository’s default branch has no commits yet. <code>processing</code>: an import is in progress. <code>ready</code>: source is available. <code>failed</code>: the Worker import failed or could not be verified.
 
@@ -360,7 +360,7 @@ One of the following:
 
 <summary>
 
-source: "upload"or "worker"
+source: "upload" or "worker"
 
 </summary>
 
@@ -382,7 +382,7 @@ One of the following:
 
 <summary>
 
-import\_error: optional object {code, message }
+import\_error: optional object { code, message }
 
 </summary>
 
@@ -414,7 +414,7 @@ message: "Worker import failed."
 
 <summary>
 
-RepositoryGetResponse object {repository, scans }
+RepositoryGetResponse object { repository, scans }
 
 </summary>
 
@@ -422,7 +422,7 @@ RepositoryGetResponse object {repository, scans }
 
 <summary>
 
-repository: object {id, created\_at, name, 3 more }
+repository: object { id, created\_at, name, 3 more }
 
 </summary>
 
@@ -450,7 +450,7 @@ minLength1
 
 <summary>
 
-readiness: "awaiting\_source"or "processing"or "ready"or "failed"
+readiness: "awaiting\_source" or "processing" or "ready" or "failed"
 
 Source state. <code>awaiting_source</code>: the upload repository’s default branch has no commits yet. <code>processing</code>: an import is in progress. <code>ready</code>: source is available. <code>failed</code>: the Worker import failed or could not be verified.
 
@@ -482,7 +482,7 @@ One of the following:
 
 <summary>
 
-source: "upload"or "worker"
+source: "upload" or "worker"
 
 </summary>
 
@@ -504,7 +504,7 @@ One of the following:
 
 <summary>
 
-import\_error: optional object {code, message }
+import\_error: optional object { code, message }
 
 </summary>
 
@@ -528,7 +528,7 @@ message: "Worker import failed."
 
 <summary>
 
-scans: array of object {id, completed\_at, message, 6 more }
+scans: array of object { id, completed\_at, message, 6 more }
 
 </summary>
 
@@ -554,7 +554,7 @@ maxLength1024
 
 <summary>
 
-phase: "provisioning"or "indexing"or "analyzing"or 2 more
+phase: "provisioning" or "indexing" or "analyzing" or 2 more
 
 </summary>
 
@@ -588,7 +588,7 @@ One of the following:
 
 <summary>
 
-repositories: array of object {id, name, phase, 2 more }
+repositories: array of object { id, name, phase, 2 more }
 
 </summary>
 
@@ -606,7 +606,7 @@ name: string
 
 <summary>
 
-phase: "provisioning"or "indexing"or "analyzing"or 2 more
+phase: "provisioning" or "indexing" or "analyzing" or 2 more
 
 </summary>
 
@@ -640,7 +640,7 @@ One of the following:
 
 <summary>
 
-report\_status: "not\_ready"or "pending\_review"or "published"or "withdrawn"
+report\_status: "not\_ready" or "pending\_review" or "published" or "withdrawn"
 
 </summary>
 
@@ -670,7 +670,7 @@ One of the following:
 
 <summary>
 
-status: "requested"or "accepted"or "running"or 4 more
+status: "requested" or "accepted" or "running" or 4 more
 
 </summary>
 
@@ -722,7 +722,7 @@ formatdate-time
 
 <summary>
 
-status: "requested"or "accepted"or "running"or 4 more
+status: "requested" or "accepted" or "running" or 4 more
 
 </summary>
 
@@ -770,7 +770,7 @@ formatdate-time
 
 <summary>
 
-telemetry\_window: optional object {end, start }
+telemetry\_window: optional object { end, start }
 
 UTC ISO-8601 interval. Start is inclusive, end is exclusive, and the interval must be positive and at most seven days.
 
@@ -824,7 +824,7 @@ GET/accounts/{account\_id}/managed-defense/vulnerability-discovery/scans/{scan\_
 
 <summary>
 
-ScanListResponse object {id, completed\_at, message, 6 more }
+ScanListResponse object { id, completed\_at, message, 6 more }
 
 </summary>
 
@@ -850,7 +850,7 @@ maxLength1024
 
 <summary>
 
-phase: "provisioning"or "indexing"or "analyzing"or 2 more
+phase: "provisioning" or "indexing" or "analyzing" or 2 more
 
 </summary>
 
@@ -884,7 +884,7 @@ One of the following:
 
 <summary>
 
-repositories: array of object {id, name, phase, 2 more }
+repositories: array of object { id, name, phase, 2 more }
 
 </summary>
 
@@ -902,7 +902,7 @@ name: string
 
 <summary>
 
-phase: "provisioning"or "indexing"or "analyzing"or 2 more
+phase: "provisioning" or "indexing" or "analyzing" or 2 more
 
 </summary>
 
@@ -936,7 +936,7 @@ One of the following:
 
 <summary>
 
-report\_status: "not\_ready"or "pending\_review"or "published"or "withdrawn"
+report\_status: "not\_ready" or "pending\_review" or "published" or "withdrawn"
 
 </summary>
 
@@ -966,7 +966,7 @@ One of the following:
 
 <summary>
 
-status: "requested"or "accepted"or "running"or 4 more
+status: "requested" or "accepted" or "running" or 4 more
 
 </summary>
 
@@ -1018,7 +1018,7 @@ formatdate-time
 
 <summary>
 
-status: "requested"or "accepted"or "running"or 4 more
+status: "requested" or "accepted" or "running" or 4 more
 
 </summary>
 
@@ -1066,7 +1066,7 @@ formatdate-time
 
 <summary>
 
-telemetry\_window: optional object {end, start }
+telemetry\_window: optional object { end, start }
 
 UTC ISO-8601 interval. Start is inclusive, end is exclusive, and the interval must be positive and at most seven days.
 
@@ -1096,7 +1096,7 @@ formatdate-time
 
 <summary>
 
-ScanCreateResponse object {id, completed\_at, message, 6 more }
+ScanCreateResponse object { id, completed\_at, message, 6 more }
 
 </summary>
 
@@ -1122,7 +1122,7 @@ maxLength1024
 
 <summary>
 
-phase: "provisioning"or "indexing"or "analyzing"or 2 more
+phase: "provisioning" or "indexing" or "analyzing" or 2 more
 
 </summary>
 
@@ -1156,7 +1156,7 @@ One of the following:
 
 <summary>
 
-repositories: array of object {id, name, phase, 2 more }
+repositories: array of object { id, name, phase, 2 more }
 
 </summary>
 
@@ -1174,7 +1174,7 @@ name: string
 
 <summary>
 
-phase: "provisioning"or "indexing"or "analyzing"or 2 more
+phase: "provisioning" or "indexing" or "analyzing" or 2 more
 
 </summary>
 
@@ -1208,7 +1208,7 @@ One of the following:
 
 <summary>
 
-report\_status: "not\_ready"or "pending\_review"or "published"or "withdrawn"
+report\_status: "not\_ready" or "pending\_review" or "published" or "withdrawn"
 
 </summary>
 
@@ -1238,7 +1238,7 @@ One of the following:
 
 <summary>
 
-status: "requested"or "accepted"or "running"or 4 more
+status: "requested" or "accepted" or "running" or 4 more
 
 </summary>
 
@@ -1290,7 +1290,7 @@ formatdate-time
 
 <summary>
 
-status: "requested"or "accepted"or "running"or 4 more
+status: "requested" or "accepted" or "running" or 4 more
 
 </summary>
 
@@ -1338,7 +1338,7 @@ formatdate-time
 
 <summary>
 
-telemetry\_window: optional object {end, start }
+telemetry\_window: optional object { end, start }
 
 UTC ISO-8601 interval. Start is inclusive, end is exclusive, and the interval must be positive and at most seven days.
 
@@ -1368,7 +1368,7 @@ formatdate-time
 
 <summary>
 
-ScanGetResponse object {id, completed\_at, message, 6 more }
+ScanGetResponse object { id, completed\_at, message, 6 more }
 
 </summary>
 
@@ -1394,7 +1394,7 @@ maxLength1024
 
 <summary>
 
-phase: "provisioning"or "indexing"or "analyzing"or 2 more
+phase: "provisioning" or "indexing" or "analyzing" or 2 more
 
 </summary>
 
@@ -1428,7 +1428,7 @@ One of the following:
 
 <summary>
 
-repositories: array of object {id, name, phase, 2 more }
+repositories: array of object { id, name, phase, 2 more }
 
 </summary>
 
@@ -1446,7 +1446,7 @@ name: string
 
 <summary>
 
-phase: "provisioning"or "indexing"or "analyzing"or 2 more
+phase: "provisioning" or "indexing" or "analyzing" or 2 more
 
 </summary>
 
@@ -1480,7 +1480,7 @@ One of the following:
 
 <summary>
 
-report\_status: "not\_ready"or "pending\_review"or "published"or "withdrawn"
+report\_status: "not\_ready" or "pending\_review" or "published" or "withdrawn"
 
 </summary>
 
@@ -1510,7 +1510,7 @@ One of the following:
 
 <summary>
 
-status: "requested"or "accepted"or "running"or 4 more
+status: "requested" or "accepted" or "running" or 4 more
 
 </summary>
 
@@ -1562,7 +1562,7 @@ formatdate-time
 
 <summary>
 
-status: "requested"or "accepted"or "running"or 4 more
+status: "requested" or "accepted" or "running" or 4 more
 
 </summary>
 
@@ -1610,7 +1610,7 @@ formatdate-time
 
 <summary>
 
-telemetry\_window: optional object {end, start }
+telemetry\_window: optional object { end, start }
 
 UTC ISO-8601 interval. Start is inclusive, end is exclusive, and the interval must be positive and at most seven days.
 
@@ -1640,7 +1640,7 @@ formatdate-time
 
 <summary>
 
-ScanGetReportResponse object {publication, report, repositories, scan\_id }
+ScanGetReportResponse object { publication, report, repositories, scan\_id }
 
 </summary>
 
@@ -1648,7 +1648,7 @@ ScanGetReportResponse object {publication, report, repositories, scan\_id }
 
 <summary>
 
-publication: object {published\_at, revision\_id, version }
+publication: object { published\_at, revision\_id, version }
 
 </summary>
 
@@ -1678,7 +1678,7 @@ minimum1
 
 <summary>
 
-report: object {executive\_summary, generated\_at, overall\_severity, 3 more }
+report: object { executive\_summary, generated\_at, overall\_severity, 3 more }
 
 </summary>
 
@@ -1702,7 +1702,7 @@ formatdate-time
 
 <summary>
 
-overall\_severity: "critical"or "high"or "medium"or 2 more
+overall\_severity: "critical" or "high" or "medium" or 2 more
 
 </summary>
 
@@ -1736,7 +1736,7 @@ One of the following:
 
 <summary>
 
-repositories: array of object {findings, overall\_severity, repository\_id, 5 more }
+repositories: array of object { findings, overall\_severity, repository\_id, 5 more }
 
 </summary>
 
@@ -1744,7 +1744,7 @@ repositories: array of object {findings, overall\_severity, repository\_id, 5 mo
 
 <summary>
 
-findings: array of object {id, conditions, cwe, 19 more }
+findings: array of object { id, conditions, cwe, 19 more }
 
 </summary>
 
@@ -1778,7 +1778,7 @@ minLength1
 
 <summary>
 
-location: object {file, line, route }
+location: object { file, line, route }
 
 </summary>
 
@@ -1806,7 +1806,7 @@ route: string
 
 <summary>
 
-reachability: array of object {consumer, reachable, via }
+reachability: array of object { consumer, reachable, via }
 
 </summary>
 
@@ -1832,7 +1832,7 @@ via: string
 
 <summary>
 
-remediation: object {code\_changes, strategy }
+remediation: object { code\_changes, strategy }
 
 </summary>
 
@@ -1862,7 +1862,7 @@ minLength1
 
 <summary>
 
-severity: "critical"or "high"or "medium"or 2 more
+severity: "critical" or "high" or "medium" or 2 more
 
 </summary>
 
@@ -1910,7 +1910,7 @@ minLength1
 
 <summary>
 
-telemetry: object {references, state }
+telemetry: object { references, state }
 
 </summary>
 
@@ -1922,7 +1922,7 @@ references: array of string
 
 <summary>
 
-state: "no\_route"or "no\_telemetry"or "no\_match"or "matched"
+state: "no\_route" or "no\_telemetry" or "no\_match" or "matched"
 
 </summary>
 
@@ -1964,7 +1964,7 @@ minLength1
 
 <summary>
 
-trace: array of object {line, path, scope, 2 more }
+trace: array of object { line, path, scope, 2 more }
 
 </summary>
 
@@ -2004,7 +2004,7 @@ formatuuid
 
 <summary>
 
-waf\_rules: object {broad, targeted }
+waf\_rules: object { broad, targeted }
 
 </summary>
 
@@ -2012,7 +2012,7 @@ waf\_rules: object {broad, targeted }
 
 <summary>
 
-broad: object {action, confidence, description, 4 more }
+broad: object { action, confidence, description, 4 more }
 
 </summary>
 
@@ -2020,7 +2020,7 @@ broad: object {action, confidence, description, 4 more }
 
 <summary>
 
-action: "block"or "managed\_challenge"or "js\_challenge"or "log"
+action: "block" or "managed\_challenge" or "js\_challenge" or "log"
 
 </summary>
 
@@ -2050,7 +2050,7 @@ One of the following:
 
 <summary>
 
-confidence: "low"or "medium"or "high"
+confidence: "low" or "medium" or "high"
 
 </summary>
 
@@ -2114,7 +2114,7 @@ minLength1
 
 <summary>
 
-targeted: object {action, confidence, description, 4 more }
+targeted: object { action, confidence, description, 4 more }
 
 </summary>
 
@@ -2122,7 +2122,7 @@ targeted: object {action, confidence, description, 4 more }
 
 <summary>
 
-action: "block"or "managed\_challenge"or "js\_challenge"or "log"
+action: "block" or "managed\_challenge" or "js\_challenge" or "log"
 
 </summary>
 
@@ -2152,7 +2152,7 @@ One of the following:
 
 <summary>
 
-confidence: "low"or "medium"or "high"
+confidence: "low" or "medium" or "high"
 
 </summary>
 
@@ -2220,7 +2220,7 @@ minLength1
 
 <summary>
 
-attacker\_position: optional "external"or "authenticated"or "internal"or "post\_compromise"
+attacker\_position: optional "external" or "authenticated" or "internal" or "post\_compromise"
 
 Least-privileged position required to trigger the finding. Optional on legacy report revisions.
 
@@ -2252,7 +2252,7 @@ One of the following:
 
 <summary>
 
-external\_links: optional array of object {title, url }
+external\_links: optional array of object { title, url }
 
 </summary>
 
@@ -2294,7 +2294,7 @@ maxLength500
 
 <summary>
 
-proof\_method: optional "structural"or "experimental"or "acquired\_source"or 2 more
+proof\_method: optional "structural" or "experimental" or "acquired\_source" or 2 more
 
 Method used or needed to close the proof. Optional on legacy report revisions.
 
@@ -2330,7 +2330,7 @@ One of the following:
 
 <summary>
 
-proof\_state: optional "closed"or "pending\_source"or "pending\_public"or 2 more
+proof\_state: optional "closed" or "pending\_source" or "pending\_public" or 2 more
 
 Current proof lifecycle state. Optional on legacy report revisions.
 
@@ -2376,7 +2376,7 @@ Accepted settled threat-model premises cited by the finding. Optional on legacy 
 
 <summary>
 
-overall\_severity: "critical"or "high"or "medium"or 2 more
+overall\_severity: "critical" or "high" or "medium" or 2 more
 
 </summary>
 
@@ -2430,7 +2430,7 @@ minLength1
 
 <summary>
 
-traffic\_context: object {http, target, waf, web\_assets }
+traffic\_context: object { http, target, waf, web\_assets }
 
 </summary>
 
@@ -2438,7 +2438,7 @@ traffic\_context: object {http, target, waf, web\_assets }
 
 <summary>
 
-http: object {error\_paths, hot\_paths, request\_volume }
+http: object { error\_paths, hot\_paths, request\_volume }
 
 </summary>
 
@@ -2446,7 +2446,7 @@ http: object {error\_paths, hot\_paths, request\_volume }
 
 <summary>
 
-error\_paths: array of object {id, hits, host, 2 more }
+error\_paths: array of object { id, hits, host, 2 more }
 
 </summary>
 
@@ -2490,7 +2490,7 @@ minimum100
 
 <summary>
 
-hot\_paths: array of object {id, hits, host, 2 more }
+hot\_paths: array of object { id, hits, host, 2 more }
 
 </summary>
 
@@ -2544,7 +2544,7 @@ minimum0
 
 <summary>
 
-target: object {hosts, kind, telemetry\_window }
+target: object { hosts, kind, telemetry\_window }
 
 </summary>
 
@@ -2556,7 +2556,7 @@ hosts: array of string
 
 <summary>
 
-kind: "worker"or "origin"
+kind: "worker" or "origin"
 
 </summary>
 
@@ -2578,7 +2578,7 @@ One of the following:
 
 <summary>
 
-telemetry\_window: optional object {end, start }
+telemetry\_window: optional object { end, start }
 
 UTC ISO-8601 interval. Start is inclusive, end is exclusive, and the interval must be positive and at most seven days.
 
@@ -2608,7 +2608,7 @@ formatdate-time
 
 <summary>
 
-waf: object {hit\_volume, rules }
+waf: object { hit\_volume, rules }
 
 </summary>
 
@@ -2622,7 +2622,7 @@ minimum0
 
 <summary>
 
-rules: array of object {id, hit\_volume, paths, 2 more }
+rules: array of object { id, hit\_volume, paths, 2 more }
 
 </summary>
 
@@ -2642,7 +2642,7 @@ minimum0
 
 <summary>
 
-paths: array of object {id, hit\_volume, host, path }
+paths: array of object { id, hit\_volume, host, path }
 
 </summary>
 
@@ -2698,7 +2698,7 @@ minimum0
 
 <summary>
 
-web\_assets: object {operations, paths, risk\_types }
+web\_assets: object { operations, paths, risk\_types }
 
 </summary>
 
@@ -2706,7 +2706,7 @@ web\_assets: object {operations, paths, risk\_types }
 
 <summary>
 
-operations: array of object {id, endpoint, host, 3 more }
+operations: array of object { id, endpoint, host, 3 more }
 
 </summary>
 
@@ -2738,7 +2738,7 @@ minLength1
 
 <summary>
 
-risk\_labels: array of object {description, name }
+risk\_labels: array of object { description, name }
 
 </summary>
 
@@ -2760,7 +2760,7 @@ minLength1
 
 <summary>
 
-performance: optional object {avg\_origin\_latency\_ms, error\_rate, estimated\_requests }
+performance: optional object { avg\_origin\_latency\_ms, error\_rate, estimated\_requests }
 
 </summary>
 
@@ -2796,7 +2796,7 @@ minimum0
 
 <summary>
 
-paths: array of object {id, avg\_origin\_latency\_ms, error\_rate, 3 more }
+paths: array of object { id, avg\_origin\_latency\_ms, error\_rate, 3 more }
 
 </summary>
 
@@ -2846,7 +2846,7 @@ minLength1
 
 <summary>
 
-risk\_types: array of object {description, name, operation\_count }
+risk\_types: array of object { description, name, operation\_count }
 
 </summary>
 
@@ -2882,7 +2882,7 @@ minimum0
 
 <summary>
 
-external\_links: optional array of object {title, url }
+external\_links: optional array of object { title, url }
 
 </summary>
 
@@ -2934,7 +2934,7 @@ minLength1
 
 <summary>
 
-repositories: array of object {id, name, report\_status, scan\_status }
+repositories: array of object { id, name, report\_status, scan\_status }
 
 </summary>
 
@@ -2952,7 +2952,7 @@ name: string
 
 <summary>
 
-report\_status: "not\_ready"or "pending\_review"or "published"or "withdrawn"
+report\_status: "not\_ready" or "pending\_review" or "published" or "withdrawn"
 
 </summary>
 
@@ -2982,7 +2982,7 @@ One of the following:
 
 <summary>
 
-scan\_status: "requested"or "accepted"or "running"or 4 more
+scan\_status: "requested" or "accepted" or "running" or 4 more
 
 </summary>
 
@@ -3046,7 +3046,7 @@ GET/accounts/{account\_id}/managed-defense/vulnerability-discovery/repos/{repo\_
 
 <summary>
 
-ReportGetResponse object {publication, report, repository\_id, scan\_id }
+ReportGetResponse object { publication, report, repository\_id, scan\_id }
 
 </summary>
 
@@ -3054,7 +3054,7 @@ ReportGetResponse object {publication, report, repository\_id, scan\_id }
 
 <summary>
 
-publication: object {published\_at, revision\_id, version }
+publication: object { published\_at, revision\_id, version }
 
 </summary>
 
@@ -3084,7 +3084,7 @@ minimum1
 
 <summary>
 
-report: object {findings, overall\_severity, repository\_id, 5 more }
+report: object { findings, overall\_severity, repository\_id, 5 more }
 
 </summary>
 
@@ -3092,7 +3092,7 @@ report: object {findings, overall\_severity, repository\_id, 5 more }
 
 <summary>
 
-findings: array of object {id, conditions, cwe, 19 more }
+findings: array of object { id, conditions, cwe, 19 more }
 
 </summary>
 
@@ -3126,7 +3126,7 @@ minLength1
 
 <summary>
 
-location: object {file, line, route }
+location: object { file, line, route }
 
 </summary>
 
@@ -3154,7 +3154,7 @@ route: string
 
 <summary>
 
-reachability: array of object {consumer, reachable, via }
+reachability: array of object { consumer, reachable, via }
 
 </summary>
 
@@ -3180,7 +3180,7 @@ via: string
 
 <summary>
 
-remediation: object {code\_changes, strategy }
+remediation: object { code\_changes, strategy }
 
 </summary>
 
@@ -3210,7 +3210,7 @@ minLength1
 
 <summary>
 
-severity: "critical"or "high"or "medium"or 2 more
+severity: "critical" or "high" or "medium" or 2 more
 
 </summary>
 
@@ -3258,7 +3258,7 @@ minLength1
 
 <summary>
 
-telemetry: object {references, state }
+telemetry: object { references, state }
 
 </summary>
 
@@ -3270,7 +3270,7 @@ references: array of string
 
 <summary>
 
-state: "no\_route"or "no\_telemetry"or "no\_match"or "matched"
+state: "no\_route" or "no\_telemetry" or "no\_match" or "matched"
 
 </summary>
 
@@ -3312,7 +3312,7 @@ minLength1
 
 <summary>
 
-trace: array of object {line, path, scope, 2 more }
+trace: array of object { line, path, scope, 2 more }
 
 </summary>
 
@@ -3352,7 +3352,7 @@ formatuuid
 
 <summary>
 
-waf\_rules: object {broad, targeted }
+waf\_rules: object { broad, targeted }
 
 </summary>
 
@@ -3360,7 +3360,7 @@ waf\_rules: object {broad, targeted }
 
 <summary>
 
-broad: object {action, confidence, description, 4 more }
+broad: object { action, confidence, description, 4 more }
 
 </summary>
 
@@ -3368,7 +3368,7 @@ broad: object {action, confidence, description, 4 more }
 
 <summary>
 
-action: "block"or "managed\_challenge"or "js\_challenge"or "log"
+action: "block" or "managed\_challenge" or "js\_challenge" or "log"
 
 </summary>
 
@@ -3398,7 +3398,7 @@ One of the following:
 
 <summary>
 
-confidence: "low"or "medium"or "high"
+confidence: "low" or "medium" or "high"
 
 </summary>
 
@@ -3462,7 +3462,7 @@ minLength1
 
 <summary>
 
-targeted: object {action, confidence, description, 4 more }
+targeted: object { action, confidence, description, 4 more }
 
 </summary>
 
@@ -3470,7 +3470,7 @@ targeted: object {action, confidence, description, 4 more }
 
 <summary>
 
-action: "block"or "managed\_challenge"or "js\_challenge"or "log"
+action: "block" or "managed\_challenge" or "js\_challenge" or "log"
 
 </summary>
 
@@ -3500,7 +3500,7 @@ One of the following:
 
 <summary>
 
-confidence: "low"or "medium"or "high"
+confidence: "low" or "medium" or "high"
 
 </summary>
 
@@ -3568,7 +3568,7 @@ minLength1
 
 <summary>
 
-attacker\_position: optional "external"or "authenticated"or "internal"or "post\_compromise"
+attacker\_position: optional "external" or "authenticated" or "internal" or "post\_compromise"
 
 Least-privileged position required to trigger the finding. Optional on legacy report revisions.
 
@@ -3600,7 +3600,7 @@ One of the following:
 
 <summary>
 
-external\_links: optional array of object {title, url }
+external\_links: optional array of object { title, url }
 
 </summary>
 
@@ -3642,7 +3642,7 @@ maxLength500
 
 <summary>
 
-proof\_method: optional "structural"or "experimental"or "acquired\_source"or 2 more
+proof\_method: optional "structural" or "experimental" or "acquired\_source" or 2 more
 
 Method used or needed to close the proof. Optional on legacy report revisions.
 
@@ -3678,7 +3678,7 @@ One of the following:
 
 <summary>
 
-proof\_state: optional "closed"or "pending\_source"or "pending\_public"or 2 more
+proof\_state: optional "closed" or "pending\_source" or "pending\_public" or 2 more
 
 Current proof lifecycle state. Optional on legacy report revisions.
 
@@ -3724,7 +3724,7 @@ Accepted settled threat-model premises cited by the finding. Optional on legacy 
 
 <summary>
 
-overall\_severity: "critical"or "high"or "medium"or 2 more
+overall\_severity: "critical" or "high" or "medium" or 2 more
 
 </summary>
 
@@ -3778,7 +3778,7 @@ minLength1
 
 <summary>
 
-traffic\_context: object {http, target, waf, web\_assets }
+traffic\_context: object { http, target, waf, web\_assets }
 
 </summary>
 
@@ -3786,7 +3786,7 @@ traffic\_context: object {http, target, waf, web\_assets }
 
 <summary>
 
-http: object {error\_paths, hot\_paths, request\_volume }
+http: object { error\_paths, hot\_paths, request\_volume }
 
 </summary>
 
@@ -3794,7 +3794,7 @@ http: object {error\_paths, hot\_paths, request\_volume }
 
 <summary>
 
-error\_paths: array of object {id, hits, host, 2 more }
+error\_paths: array of object { id, hits, host, 2 more }
 
 </summary>
 
@@ -3838,7 +3838,7 @@ minimum100
 
 <summary>
 
-hot\_paths: array of object {id, hits, host, 2 more }
+hot\_paths: array of object { id, hits, host, 2 more }
 
 </summary>
 
@@ -3892,7 +3892,7 @@ minimum0
 
 <summary>
 
-target: object {hosts, kind, telemetry\_window }
+target: object { hosts, kind, telemetry\_window }
 
 </summary>
 
@@ -3904,7 +3904,7 @@ hosts: array of string
 
 <summary>
 
-kind: "worker"or "origin"
+kind: "worker" or "origin"
 
 </summary>
 
@@ -3926,7 +3926,7 @@ One of the following:
 
 <summary>
 
-telemetry\_window: optional object {end, start }
+telemetry\_window: optional object { end, start }
 
 UTC ISO-8601 interval. Start is inclusive, end is exclusive, and the interval must be positive and at most seven days.
 
@@ -3956,7 +3956,7 @@ formatdate-time
 
 <summary>
 
-waf: object {hit\_volume, rules }
+waf: object { hit\_volume, rules }
 
 </summary>
 
@@ -3970,7 +3970,7 @@ minimum0
 
 <summary>
 
-rules: array of object {id, hit\_volume, paths, 2 more }
+rules: array of object { id, hit\_volume, paths, 2 more }
 
 </summary>
 
@@ -3990,7 +3990,7 @@ minimum0
 
 <summary>
 
-paths: array of object {id, hit\_volume, host, path }
+paths: array of object { id, hit\_volume, host, path }
 
 </summary>
 
@@ -4046,7 +4046,7 @@ minimum0
 
 <summary>
 
-web\_assets: object {operations, paths, risk\_types }
+web\_assets: object { operations, paths, risk\_types }
 
 </summary>
 
@@ -4054,7 +4054,7 @@ web\_assets: object {operations, paths, risk\_types }
 
 <summary>
 
-operations: array of object {id, endpoint, host, 3 more }
+operations: array of object { id, endpoint, host, 3 more }
 
 </summary>
 
@@ -4086,7 +4086,7 @@ minLength1
 
 <summary>
 
-risk\_labels: array of object {description, name }
+risk\_labels: array of object { description, name }
 
 </summary>
 
@@ -4108,7 +4108,7 @@ minLength1
 
 <summary>
 
-performance: optional object {avg\_origin\_latency\_ms, error\_rate, estimated\_requests }
+performance: optional object { avg\_origin\_latency\_ms, error\_rate, estimated\_requests }
 
 </summary>
 
@@ -4144,7 +4144,7 @@ minimum0
 
 <summary>
 
-paths: array of object {id, avg\_origin\_latency\_ms, error\_rate, 3 more }
+paths: array of object { id, avg\_origin\_latency\_ms, error\_rate, 3 more }
 
 </summary>
 
@@ -4194,7 +4194,7 @@ minLength1
 
 <summary>
 
-risk\_types: array of object {description, name, operation\_count }
+risk\_types: array of object { description, name, operation\_count }
 
 </summary>
 
@@ -4230,7 +4230,7 @@ minimum0
 
 <summary>
 
-external\_links: optional array of object {title, url }
+external\_links: optional array of object { title, url }
 
 </summary>
 

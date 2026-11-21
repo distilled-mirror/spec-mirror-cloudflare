@@ -28,7 +28,7 @@ POST/accounts/{account\_id}/diagnostics/traceroute
 
 <summary>
 
-Traceroute object {colos, target }
+Traceroute object { colos, target }
 
 </summary>
 
@@ -36,7 +36,7 @@ Traceroute object {colos, target }
 
 <summary>
 
-colos: optional array of object {colo, error, hops, 2 more }
+colos: optional array of object { colo, error, hops, 2 more }
 
 </summary>
 
@@ -44,7 +44,7 @@ colos: optional array of object {colo, error, hops, 2 more }
 
 <summary>
 
-colo: optional object {city, name }
+colo: optional object { city, name }
 
 </summary>
 
@@ -68,7 +68,7 @@ Source colo name.
 
 <summary>
 
-error: optional ""or "Could not gather traceroute data: Code 1"or "Could not gather traceroute data: Code 2"or 2 more
+error: optional "" or "Could not gather traceroute data: Code 1" or "Could not gather traceroute data: Code 2" or 2 more
 
 Errors resulting from collecting traceroute from colo to target.
 
@@ -104,7 +104,7 @@ One of the following:
 
 <summary>
 
-hops: optional array of object {nodes, packets\_lost, packets\_sent, packets\_ttl }
+hops: optional array of object { nodes, packets\_lost, packets\_sent, packets\_ttl }
 
 </summary>
 
@@ -112,7 +112,7 @@ hops: optional array of object {nodes, packets\_lost, packets\_sent, packets\_tt
 
 <summary>
 
-nodes: optional array of object {asn, ip, labels, 6 more }
+nodes: optional array of object { asn, ip, labels, 6 more }
 
 An array of node objects.
 
@@ -252,7 +252,7 @@ PUT/accounts/{account\_id}/diagnostics/endpoint-healthchecks/{id}
 
 <summary>
 
-EndpointHealthcheck object {check\_type, endpoint, name }
+EndpointHealthcheck object { check\_type, endpoint, name }
 
 </summary>
 
@@ -282,7 +282,7 @@ Optional name associated with this check
 
 <summary>
 
-EndpointHealthcheckListResponse object {check\_type, endpoint, id, name }
+EndpointHealthcheckListResponse object { check\_type, endpoint, id, name }
 
 </summary>
 
@@ -320,7 +320,7 @@ Optional name associated with this check
 
 <summary>
 
-EndpointHealthcheckCreateResponse object {check\_type, endpoint, id, name }
+EndpointHealthcheckCreateResponse object { check\_type, endpoint, id, name }
 
 </summary>
 
@@ -358,7 +358,7 @@ Optional name associated with this check
 
 <summary>
 
-EndpointHealthcheckGetResponse object {check\_type, endpoint, id, name }
+EndpointHealthcheckGetResponse object { check\_type, endpoint, id, name }
 
 </summary>
 
@@ -396,7 +396,7 @@ Optional name associated with this check
 
 <summary>
 
-EndpointHealthcheckDeleteResponse object {errors, messages, success }
+EndpointHealthcheckDeleteResponse object { errors, messages, success }
 
 </summary>
 
@@ -404,7 +404,7 @@ EndpointHealthcheckDeleteResponse object {errors, messages, success }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -426,7 +426,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -446,7 +446,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -468,7 +468,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -498,7 +498,7 @@ Whether the API call was successful.
 
 <summary>
 
-EndpointHealthcheckUpdateResponse object {check\_type, endpoint, id, name }
+EndpointHealthcheckUpdateResponse object { check\_type, endpoint, id, name }
 
 </summary>
 

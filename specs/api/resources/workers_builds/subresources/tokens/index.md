@@ -36,7 +36,7 @@ DELETE/accounts/{account\_id}/builds/tokens/{build\_token\_uuid}
 
 <summary>
 
-TokenCreateResponse = object {build\_token\_name, build\_token\_uuid, cloudflare\_token\_id, owner\_type } or object {build\_token\_name, build\_token\_uuid, cloudflare\_token\_id, owner\_type }
+TokenCreateResponse = object { build\_token\_name, build\_token\_uuid, cloudflare\_token\_id, owner\_type } or object { build\_token\_name, build\_token\_uuid, cloudflare\_token\_id, owner\_type }
 
 </summary>
 
@@ -46,7 +46,7 @@ One of the following:
 
 <summary>
 
-object {build\_token\_name, build\_token\_uuid, cloudflare\_token\_id, owner\_type }
+object { build\_token\_name, build\_token\_uuid, cloudflare\_token\_id, owner\_type }
 
 </summary>
 
@@ -78,7 +78,7 @@ owner\_type: optional string
 
 <summary>
 
-object {build\_token\_name, build\_token\_uuid, cloudflare\_token\_id, owner\_type }
+object { build\_token\_name, build\_token\_uuid, cloudflare\_token\_id, owner\_type }
 
 </summary>
 
@@ -114,7 +114,7 @@ owner\_type: optional string
 
 <summary>
 
-TokenListResponse = unknownor array of unknown
+TokenListResponse = unknown or array of unknown
 
 </summary>
 
@@ -136,7 +136,7 @@ array of unknown
 
 <summary>
 
-TokenDeleteResponse = unknownor array of unknown
+TokenDeleteResponse = unknown or array of unknown
 
 </summary>
 

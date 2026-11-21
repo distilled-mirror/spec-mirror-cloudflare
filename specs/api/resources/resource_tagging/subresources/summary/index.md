@@ -28,7 +28,7 @@ GET/accounts/{account\_id}/tags/summary
 
 <summary>
 
-SummaryGetResponse = array of object {key, values }
+SummaryGetResponse = array of object { key, values }
 
 Contains an array of tag keys with their distinct values.
 

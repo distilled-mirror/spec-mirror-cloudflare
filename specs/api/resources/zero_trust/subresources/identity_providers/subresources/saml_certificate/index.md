@@ -30,7 +30,7 @@ POST/accounts/{account\_id}/access/identity\_providers/{identity\_provider\_id}/
 
 <summary>
 
-SAMLCertificateCreateResponse object {created\_at, uid, updated\_at, 2 more }
+SAMLCertificateCreateResponse object { created\_at, uid, updated\_at, 2 more }
 
 A SAML encryption certificate set containing current and optionally previous certificates for encryption key rotation.
 
@@ -64,7 +64,7 @@ formatdate-time
 
 <summary>
 
-current\_certificate: optional object {is\_current, not\_after, public\_certificate, uid }
+current\_certificate: optional object { is\_current, not\_after, public\_certificate, uid }
 
 The currently active certificate used for encrypting SAML assertions
 

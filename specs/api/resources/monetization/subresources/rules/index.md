@@ -108,7 +108,7 @@ maxLength32
 
 <summary>
 
-MonetizationRuleCollection object {rules }
+MonetizationRuleCollection object { rules }
 
 The zone’s payment rules. Mirrors the shape of the ruleset submitted to the deploy endpoint, so the response can be read back as the desired state.
 
@@ -194,7 +194,7 @@ One of the following:
 
 <summary>
 
-MonetizationRuleInputFixedPrice object {address, expression, price, 4 more }
+MonetizationRuleInputFixedPrice object { address, expression, price, 4 more }
 
 Payment rule with a fixed price set at configuration time.
 
@@ -222,7 +222,7 @@ Price in the smallest indivisible unit of the configured payment token, encoded 
 
 <summary>
 
-scheme: "exact"or "upto"
+scheme: "exact" or "upto"
 
 X402 payment scheme. “exact” requires the specified payment amount; “upto” permits a payment up to the specified amount. Both fixed-price schemes require the price field.
 
@@ -268,7 +268,7 @@ enabled: optional boolean
 
 <summary>
 
-MonetizationRuleInputOriginControlled object {address, expression, scheme, 3 more }
+MonetizationRuleInputOriginControlled object { address, expression, scheme, 3 more }
 
 Payment rule whose price the origin server sets dynamically. The rule carries no price and the price field must be omitted — any provided value, including “0”, is rejected because it would not be enforced.
 
@@ -322,7 +322,7 @@ enabled: optional boolean
 
 <summary>
 
-MonetizationRuleInputFixedPrice object {address, expression, price, 4 more }
+MonetizationRuleInputFixedPrice object { address, expression, price, 4 more }
 
 Payment rule with a fixed price set at configuration time.
 
@@ -350,7 +350,7 @@ Price in the smallest indivisible unit of the configured payment token, encoded 
 
 <summary>
 
-scheme: "exact"or "upto"
+scheme: "exact" or "upto"
 
 X402 payment scheme. “exact” requires the specified payment amount; “upto” permits a payment up to the specified amount. Both fixed-price schemes require the price field.
 
@@ -396,7 +396,7 @@ enabled: optional boolean
 
 <summary>
 
-MonetizationRuleInputOriginControlled object {address, expression, scheme, 3 more }
+MonetizationRuleInputOriginControlled object { address, expression, scheme, 3 more }
 
 Payment rule whose price the origin server sets dynamically. The rule carries no price and the price field must be omitted — any provided value, including “0”, is rejected because it would not be enforced.
 
@@ -446,7 +446,7 @@ enabled: optional boolean
 
 <summary>
 
-MonetizationRulePatch object {address, description, enabled, 3 more }
+MonetizationRulePatch object { address, description, enabled, 3 more }
 
 Partial update to a single payment rule. Only the fields present are modified; omitted fields keep their existing values.
 
@@ -484,7 +484,7 @@ Price in the smallest indivisible unit of the configured payment token, encoded 
 
 <summary>
 
-scheme: optional "exact"or "upto"or "origin\_controlled"
+scheme: optional "exact" or "upto" or "origin\_controlled"
 
 X402 payment scheme. “exact” requires the specified payment amount; “upto” permits a payment up to the specified amount; “origin\_controlled” lets the origin server set pricing dynamically, in which case the rule carries no price and the price field must be omitted.
 
@@ -516,7 +516,7 @@ One of the following:
 
 <summary>
 
-MonetizationRulesetInput object {rules }
+MonetizationRulesetInput object { rules }
 
 </summary>
 
@@ -536,7 +536,7 @@ One of the following:
 
 <summary>
 
-MonetizationRuleInputFixedPrice object {address, expression, price, 4 more }
+MonetizationRuleInputFixedPrice object { address, expression, price, 4 more }
 
 Payment rule with a fixed price set at configuration time.
 
@@ -564,7 +564,7 @@ Price in the smallest indivisible unit of the configured payment token, encoded 
 
 <summary>
 
-scheme: "exact"or "upto"
+scheme: "exact" or "upto"
 
 X402 payment scheme. “exact” requires the specified payment amount; “upto” permits a payment up to the specified amount. Both fixed-price schemes require the price field.
 
@@ -610,7 +610,7 @@ enabled: optional boolean
 
 <summary>
 
-MonetizationRuleInputOriginControlled object {address, expression, scheme, 3 more }
+MonetizationRuleInputOriginControlled object { address, expression, scheme, 3 more }
 
 Payment rule whose price the origin server sets dynamically. The rule carries no price and the price field must be omitted — any provided value, including “0”, is rejected because it would not be enforced.
 

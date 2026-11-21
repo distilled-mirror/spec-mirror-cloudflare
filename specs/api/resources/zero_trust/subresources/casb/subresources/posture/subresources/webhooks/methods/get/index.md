@@ -38,7 +38,7 @@ The preferred authorization scheme for interacting with the Cloudflare API. [Cre
 
 ##### Accepted Permissions (at least one required)
 
-`Zero Trust Read``Zero Trust Write`
+`CASB Write``CASB Read``Zero Trust Read``Zero Trust Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -58,7 +58,7 @@ formatuuid
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -88,7 +88,7 @@ formaturi
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -110,7 +110,7 @@ JSON pointer to the source of the error.
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -140,7 +140,7 @@ formaturi
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -168,7 +168,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, authentication\_type, created\_at, 6 more }
+result: optional object { id, authentication\_type, created\_at, 6 more }
 
 Webhook configuration for sending finding notifications.
 
@@ -186,7 +186,7 @@ formatuuid
 
 <summary>
 
-authentication\_type: "Basic Auth"or "None"or "Bearer Auth"or 2 more
+authentication\_type: "Basic Auth" or "None" or "Bearer Auth" or 2 more
 
 Type of authentication used for the webhook.
 
@@ -244,7 +244,7 @@ Account-specified display label for the webhook configuration.
 
 <summary>
 
-status: "enabled"or "disabled"
+status: "enabled" or "disabled"
 
 Current status of the webhook configuration. If disabled, data cannot be sent through this configuration.
 
@@ -284,7 +284,7 @@ formatuint32
 
 <summary>
 
-headers: optional array of object {key, value }
+headers: optional array of object { key, value }
 
 List of header keys configured for this webhook. Values are not included for security reasons.
 

@@ -94,7 +94,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -118,7 +118,7 @@ messages: array of string
 
 <summary>
 
-result\_info: object {dataset }
+result\_info: object { dataset }
 
 Metadata about the query execution.
 

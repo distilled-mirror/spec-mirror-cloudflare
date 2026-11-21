@@ -134,7 +134,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -176,7 +176,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -196,7 +196,7 @@ pointer: optional string
 
 <summary>
 
-result: array of object {id, created\_on, ip, 2 more } or object {id, created\_on, hostname, 2 more } or object {id, created\_on, modified\_on, 2 more } or object {id, asn, created\_on, 2 more }
+result: array of object { id, created\_on, ip, 2 more } or object { id, created\_on, hostname, 2 more } or object { id, created\_on, modified\_on, 2 more } or object { id, asn, created\_on, 2 more }
 
 </summary>
 
@@ -206,7 +206,7 @@ One of the following:
 
 <summary>
 
-ListsListItemIPFull object {id, created\_on, ip, 2 more }
+ListsListItemIPFull object { id, created\_on, ip, 2 more }
 
 </summary>
 
@@ -252,7 +252,7 @@ Defines an informative summary of the list item.
 
 <summary>
 
-ListsListItemHostnameFull object {id, created\_on, hostname, 2 more }
+ListsListItemHostnameFull object { id, created\_on, hostname, 2 more }
 
 </summary>
 
@@ -316,7 +316,7 @@ Defines an informative summary of the list item.
 
 <summary>
 
-ListsListItemRedirectFull object {id, created\_on, modified\_on, 2 more }
+ListsListItemRedirectFull object { id, created\_on, modified\_on, 2 more }
 
 </summary>
 
@@ -376,7 +376,7 @@ preserve\_query\_string: optional boolean
 
 <summary>
 
-status\_code: optional 301or 302or 307or 308
+status\_code: optional 301 or 302 or 307 or 308
 
 </summary>
 
@@ -424,7 +424,7 @@ Defines an informative summary of the list item.
 
 <summary>
 
-ListsListItemASNFull object {id, asn, created\_on, 2 more }
+ListsListItemASNFull object { id, asn, created\_on, 2 more }
 
 </summary>
 
@@ -480,7 +480,7 @@ Defines whether the API call was successful.
 
 <summary>
 
-result\_info: optional object {cursors }
+result\_info: optional object { cursors }
 
 </summary>
 
@@ -488,7 +488,7 @@ result\_info: optional object {cursors }
 
 <summary>
 
-cursors: optional object {after, before }
+cursors: optional object { after, before }
 
 </summary>
 

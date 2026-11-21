@@ -46,7 +46,7 @@ DELETE/accounts/{account\_id}/gateway/locations/{location\_id}
 
 <summary>
 
-DOHEndpoint object {enabled, networks, require\_token }
+DOHEndpoint object { enabled, networks, require\_token }
 
 </summary>
 
@@ -90,7 +90,7 @@ Specify whether the DOH endpoint requires user identity authentication.
 
 <summary>
 
-DOTEndpoint object {enabled, networks }
+DOTEndpoint object { enabled, networks }
 
 </summary>
 
@@ -128,7 +128,7 @@ Specify the IP address or IP CIDR.
 
 <summary>
 
-Endpoint object {doh, dot, ipv4, ipv6 }
+Endpoint object { doh, dot, ipv4, ipv6 }
 
 Configure the destination endpoints for this location.
 
@@ -158,7 +158,7 @@ ipv6: <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resou
 
 <summary>
 
-IPNetwork object {network }
+IPNetwork object { network }
 
 </summary>
 
@@ -176,7 +176,7 @@ Specify the IP address or IP CIDR.
 
 <summary>
 
-IPV4Endpoint object {enabled }
+IPV4Endpoint object { enabled }
 
 </summary>
 
@@ -194,7 +194,7 @@ Indicate whether the IPv4 endpoint is enabled for this location.
 
 <summary>
 
-IPV6Endpoint object {enabled, networks }
+IPV6Endpoint object { enabled, networks }
 
 </summary>
 
@@ -232,7 +232,7 @@ Specify the IPv6 address or IPv6 CIDR.
 
 <summary>
 
-IPV6Network object {network }
+IPV6Network object { network }
 
 </summary>
 
@@ -250,7 +250,7 @@ Specify the IPv6 address or IPv6 CIDR.
 
 <summary>
 
-Location object {id, client\_default, created\_at, 13 more }
+Location object { id, client\_default, created\_at, 13 more }
 
 </summary>
 
@@ -328,7 +328,7 @@ Show the backup destination IPv4 address from the pair identified dns\_destinati
 
 <summary>
 
-max\_ttl: optional object {mode, ttl\_secs }
+max\_ttl: optional object { mode, ttl\_secs }
 
 Controls how DNS response TTLs are capped for this location relative to the account <code>max_ttl_secs</code> setting. Omitting <code>max_ttl</code> on update resets it to <code>inherit</code>.
 
@@ -338,7 +338,7 @@ Controls how DNS response TTLs are capped for this location relative to the acco
 
 <summary>
 
-mode: "inherit"or "override"or "disabled"
+mode: "inherit" or "override" or "disabled"
 
 <code>inherit</code> uses the account <code>max_ttl_secs</code>. <code>override</code> uses this location’s <code>ttl_secs</code>. <code>disabled</code> leaves returned TTLs unchanged.
 
@@ -386,7 +386,7 @@ Specify the location name.
 
 <summary>
 
-networks: optional array of object {network }
+networks: optional array of object { network }
 
 Specify the list of network ranges from which requests at this location originate. The list takes effect only if it is non-empty and the IPv4 endpoint is enabled for this location.
 

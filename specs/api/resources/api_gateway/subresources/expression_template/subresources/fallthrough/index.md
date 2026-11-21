@@ -32,7 +32,7 @@ POST/zones/{zone\_id}/api\_gateway/expression-template/fallthrough
 
 <summary>
 
-FallthroughCreateResponse object {expression, title }
+FallthroughCreateResponse object { expression, title }
 
 </summary>
 

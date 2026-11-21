@@ -66,7 +66,7 @@ Replaces the entire list of policy IDs.
 
 <summary>
 
-version\_config: optional array of object {target\_environment, version }
+version\_config: optional array of object { target\_environment, version }
 
 Replaces the entire version\_config array.
 
@@ -94,7 +94,7 @@ The specific client version to deploy.
 
 <summary>
 
-errors: array of object {code, message }
+errors: array of object { code, message }
 
 </summary>
 
@@ -114,7 +114,7 @@ message: string
 
 <summary>
 
-messages: array of object {code, message }
+messages: array of object { code, message }
 
 </summary>
 
@@ -170,7 +170,7 @@ The RFC3339Nano timestamp when the deployment group was last updated.
 
 <summary>
 
-version\_config: array of object {target\_environment, version }
+version\_config: array of object { target\_environment, version }
 
 Contains version configurations for different target environments.
 

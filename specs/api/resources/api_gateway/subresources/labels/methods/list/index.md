@@ -74,7 +74,7 @@ maxLength32
 
 <summary>
 
-direction: optional "asc"or "desc"
+direction: optional "asc" or "desc"
 
 Direction to order results.
 
@@ -104,7 +104,7 @@ Filter for labels where the name or description matches using substring match
 
 <summary>
 
-order: optional "name"or "description"or "created\_at"or 2 more
+order: optional "name" or "description" or "created\_at" or 2 more
 
 Field to order by
 
@@ -158,7 +158,7 @@ minimum5
 
 <summary>
 
-source: optional "user"or "managed"
+source: optional "user" or "managed"
 
 Filter for labels with source
 
@@ -212,7 +212,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -254,7 +254,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -274,7 +274,7 @@ pointer: optional string
 
 <summary>
 
-result: array of object {created\_at, description, last\_updated, 4 more }
+result: array of object { created\_at, description, last\_updated, 4 more }
 
 </summary>
 
@@ -312,7 +312,7 @@ The name of the label
 
 <summary>
 
-source: "user"or "managed"
+source: "user" or "managed"
 
 - <code>user</code> - label is owned by the user
 - <code>managed</code> - label is owned by cloudflare
@@ -353,7 +353,7 @@ Whether the API call was successful.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

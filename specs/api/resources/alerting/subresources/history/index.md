@@ -28,7 +28,7 @@ GET/accounts/{account\_id}/alerting/v3/history
 
 <summary>
 
-History object {id, alert\_body, alert\_type, 6 more }
+History object { id, alert\_body, alert\_type, 6 more }
 
 </summary>
 
@@ -68,7 +68,7 @@ The mechanism to which the notification has been dispatched.
 
 <summary>
 
-mechanism\_type: optional "email"or "pagerduty"or "webhook"
+mechanism\_type: optional "email" or "pagerduty" or "webhook"
 
 The type of mechanism to which the notification has been dispatched. This can be email/pagerduty/webhook based on the mechanism configured.
 

@@ -46,7 +46,7 @@ POST/subscriptions/{subscription\_id}/consume
 
 <summary>
 
-SubscriptionListResponse object {id, created\_at, modified\_at, 2 more }
+SubscriptionListResponse object { id, created\_at, modified\_at, 2 more }
 
 </summary>
 
@@ -76,7 +76,7 @@ name: string
 
 <summary>
 
-start\_at: object {type }
+start\_at: object { type }
 
 </summary>
 
@@ -84,7 +84,7 @@ start\_at: object {type }
 
 <summary>
 
-type: "earliest"or "latest"
+type: "earliest" or "latest"
 
 </summary>
 
@@ -114,7 +114,7 @@ One of the following:
 
 <summary>
 
-SubscriptionCreateResponse object {id }
+SubscriptionCreateResponse object { id }
 
 </summary>
 
@@ -132,7 +132,7 @@ Specifies the ID of the subscription.
 
 <summary>
 
-SubscriptionGetResponse object {id, created\_at, modified\_at, 2 more }
+SubscriptionGetResponse object { id, created\_at, modified\_at, 2 more }
 
 </summary>
 
@@ -162,7 +162,7 @@ name: string
 
 <summary>
 
-start\_at: object {type }
+start\_at: object { type }
 
 </summary>
 
@@ -170,7 +170,7 @@ start\_at: object {type }
 
 <summary>
 
-type: "earliest"or "latest"
+type: "earliest" or "latest"
 
 </summary>
 
@@ -200,7 +200,7 @@ One of the following:
 
 <summary>
 
-SubscriptionDeleteResponse object {id }
+SubscriptionDeleteResponse object { id }
 
 </summary>
 
@@ -218,7 +218,7 @@ Specifies the ID of the subscription.
 
 <summary>
 
-SubscriptionConsumeResponse object {batch\_id, leased\_until\_ms, records }
+SubscriptionConsumeResponse object { batch\_id, leased\_until\_ms, records }
 
 </summary>
 
@@ -238,7 +238,7 @@ Shows when the lease on the batch expires, in epoch milliseconds. ACK or NACK th
 
 <summary>
 
-records: array of object {content, timestamp\_ms, headers }
+records: array of object { content, timestamp\_ms, headers }
 
 </summary>
 
@@ -298,7 +298,7 @@ BatchNackResponse = unknown
 
 <summary>
 
-BatchExtendResponse object {leased\_until\_ms }
+BatchExtendResponse object { leased\_until\_ms }
 
 </summary>
 

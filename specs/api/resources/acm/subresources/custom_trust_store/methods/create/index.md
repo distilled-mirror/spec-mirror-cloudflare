@@ -82,7 +82,7 @@ The root CA certificate in PEM format. Only root CA certificates are accepted; i
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -104,7 +104,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -124,7 +124,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -146,7 +146,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -214,7 +214,7 @@ The type of hash used for the certificate.
 
 <summary>
 
-status: "initializing"or "pending\_deployment"or "active"or 3 more
+status: "initializing" or "pending\_deployment" or "active" or 3 more
 
 Status of the zone’s custom SSL.
 

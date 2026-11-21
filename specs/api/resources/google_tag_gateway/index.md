@@ -32,7 +32,7 @@ PUT/zones/{zone\_id}/settings/google-tag-gateway/config
 
 <summary>
 
-Config object {enabled, endpoint, measurementId, 2 more }
+Config object { enabled, endpoint, measurementId, 2 more }
 
 Google Tag Gateway configuration for a zone.
 

@@ -38,7 +38,7 @@ PATCH/accounts/{account\_id}/gateway/configuration
 
 <summary>
 
-ActivityLogSettings object {enabled }
+ActivityLogSettings object { enabled }
 
 Specify activity log settings.
 
@@ -58,7 +58,7 @@ Specify whether to log activity.
 
 <summary>
 
-AntiVirusSettings object {enabled\_download\_phase, enabled\_upload\_phase, fail\_closed, notification\_settings }
+AntiVirusSettings object { enabled\_download\_phase, enabled\_upload\_phase, fail\_closed, notification\_settings }
 
 Specify anti-virus settings.
 
@@ -96,7 +96,7 @@ Configure the message the user’s device shows during an antivirus scan.
 
 <summary>
 
-BlockPageSettings object {background\_color, enabled, footer\_text, 12 more }
+BlockPageSettings object { background\_color, enabled, footer\_text, 12 more }
 
 Specify block page layout settings.
 
@@ -154,7 +154,7 @@ Specify the subject line for emails created from the block page when the mode is
 
 <summary>
 
-mode: optional ""or "customized\_block\_page"or "redirect\_uri"
+mode: optional "" or "customized\_block\_page" or "redirect\_uri"
 
 Specify whether to redirect users to a Cloudflare-hosted block page or a customer-provided URI.
 
@@ -224,7 +224,7 @@ Indicate the version number of the setting.
 
 <summary>
 
-BodyScanningSettings object {inspection\_mode }
+BodyScanningSettings object { inspection\_mode }
 
 Specify the DLP inspection mode.
 
@@ -234,7 +234,7 @@ Specify the DLP inspection mode.
 
 <summary>
 
-inspection\_mode: optional "deep"or "shallow"
+inspection\_mode: optional "deep" or "shallow"
 
 Specify the inspection mode as either <code>deep</code> or <code>shallow</code>.
 
@@ -262,7 +262,7 @@ One of the following:
 
 <summary>
 
-BrowserIsolationSettings object {non\_identity\_enabled, url\_browser\_isolation\_enabled }
+BrowserIsolationSettings object { non\_identity\_enabled, url\_browser\_isolation\_enabled }
 
 Specify Clientless Browser Isolation settings.
 
@@ -288,7 +288,7 @@ Specify whether to enable Clientless Browser Isolation.
 
 <summary>
 
-CustomCertificateSettings object {enabled, id, binding\_status, updated\_at }
+CustomCertificateSettings object { enabled, id, binding\_status, updated\_at }
 
 Specify custom certificate settings for BYO-PKI. This field is deprecated; use <code>certificate</code> instead.
 
@@ -326,7 +326,7 @@ formatdate-time
 
 <summary>
 
-ExtendedEmailMatching object {enabled, read\_only, source\_account, version }
+ExtendedEmailMatching object { enabled, read\_only, source\_account, version }
 
 Configures user email settings for firewall policies. When you enable this, the system standardizes email addresses in the identity portion of the rule to match extended email variants in firewall policies. When you disable this setting, the system matches email addresses exactly as you provide them. Enable this setting if your email uses <code>.</code> or <code>+</code> modifiers.
 
@@ -364,7 +364,7 @@ Indicate the version number of the setting.
 
 <summary>
 
-FipsSettings object {tls }
+FipsSettings object { tls }
 
 Specify FIPS settings.
 
@@ -384,7 +384,7 @@ Enforce cipher suites and TLS versions compliant with FIPS 140-2.
 
 <summary>
 
-GatewayConfigurationSettings object {activity\_log, antivirus, block\_page, 13 more }
+GatewayConfigurationSettings object { activity\_log, antivirus, block\_page, 13 more }
 
 Specify account settings.
 
@@ -424,7 +424,7 @@ Specify Clientless Browser Isolation settings.
 
 <summary>
 
-certificate: optional object {id }
+certificate: optional object { id }
 
 Specify certificate settings for Gateway TLS interception. If unset, the Cloudflare Root CA handles interception.
 
@@ -462,7 +462,7 @@ Specify FIPS settings.
 
 <summary>
 
-host\_selector: optional object {enabled }
+host\_selector: optional object { enabled }
 
 Enable host selection in egress policies.
 
@@ -482,7 +482,7 @@ Specify whether to enable filtering via hosts for egress policies.
 
 <summary>
 
-inspection: optional object {mode }
+inspection: optional object { mode }
 
 Define the proxy inspection mode.
 
@@ -492,7 +492,7 @@ Define the proxy inspection mode.
 
 <summary>
 
-mode: optional "static"or "dynamic"
+mode: optional "static" or "dynamic"
 
 Define the proxy inspection mode. 1. static: Gateway applies static inspection to HTTP on TCP(80). With TLS decryption on, Gateway inspects HTTPS traffic on TCP(443) and UDP(443). 2. dynamic: Gateway applies protocol detection to inspect HTTP and HTTPS traffic on any port. TLS decryption must remain on to inspect HTTPS traffic.
 
@@ -536,7 +536,7 @@ Specify whether to detect protocols from the initial bytes of client traffic.
 
 <summary>
 
-regions: optional map\[object {tls\_decrypt, certificate } ]
+regions: optional map\[object { tls\_decrypt, certificate } ]
 
 Specify per-region TLS interception and certificate settings for Gateway, keyed by Data Localization Suite region key. Relies on the Zero Trust account region setting (<code>GET</code>/<code>PUT /accounts/{account_id}/zerotrust/region</code>) - the account must select a region before Gateway applies these settings for it.
 
@@ -552,7 +552,7 @@ Specify whether to inspect encrypted HTTP traffic.
 
 <summary>
 
-certificate: optional object {id }
+certificate: optional object { id }
 
 Specify certificate settings for Gateway TLS interception. If unset, the Cloudflare Root CA handles interception.
 
@@ -576,7 +576,7 @@ Specify the UUID of the certificate used for interception. Ensure the certificat
 
 <summary>
 
-sandbox: optional object {enabled, fallback\_action }
+sandbox: optional object { enabled, fallback\_action }
 
 Specify whether to enable the sandbox.
 
@@ -592,7 +592,7 @@ Specify whether to enable the sandbox.
 
 <summary>
 
-fallback\_action: optional "allow"or "block"
+fallback\_action: optional "allow" or "block"
 
 Specify the action to take when the system cannot scan the file.
 
@@ -630,7 +630,7 @@ Specify whether to inspect encrypted HTTP traffic.
 
 <summary>
 
-NotificationSettings object {enabled, include\_context, msg, support\_url }
+NotificationSettings object { enabled, include\_context, msg, support\_url }
 
 Configure the message the user’s device shows during an antivirus scan.
 
@@ -668,7 +668,7 @@ Specify a URL that directs users to more information. If unset, the notification
 
 <summary>
 
-ProtocolDetection object {enabled }
+ProtocolDetection object { enabled }
 
 Specify whether to detect protocols from the initial bytes of client traffic.
 
@@ -688,7 +688,7 @@ Specify whether to detect protocols from the initial bytes of client traffic.
 
 <summary>
 
-TLSSettings object {enabled }
+TLSSettings object { enabled }
 
 Specify whether to inspect encrypted HTTP traffic.
 
@@ -708,7 +708,7 @@ Specify whether to inspect encrypted HTTP traffic.
 
 <summary>
 
-ConfigurationGetResponse object {created\_at, settings, updated\_at }
+ConfigurationGetResponse object { created\_at, settings, updated\_at }
 
 Specify account settings.
 
@@ -740,7 +740,7 @@ formatdate-time
 
 <summary>
 
-ConfigurationUpdateResponse object {created\_at, settings, updated\_at }
+ConfigurationUpdateResponse object { created\_at, settings, updated\_at }
 
 Specify account settings.
 
@@ -772,7 +772,7 @@ formatdate-time
 
 <summary>
 
-ConfigurationEditResponse object {created\_at, settings, updated\_at }
+ConfigurationEditResponse object { created\_at, settings, updated\_at }
 
 Specify account settings.
 

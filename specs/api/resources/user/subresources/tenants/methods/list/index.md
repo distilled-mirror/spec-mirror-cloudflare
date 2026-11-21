@@ -72,7 +72,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -92,7 +92,7 @@ pointer: optional string
 
 <summary>
 
-result: array of object {cdate, customer\_id, edate, 10 more }
+result: array of object { cdate, customer\_id, edate, 10 more }
 
 </summary>
 
@@ -116,7 +116,7 @@ formatdate-time
 
 <summary>
 
-tenant\_contacts: object {email, website }
+tenant\_contacts: object { email, website }
 
 </summary>
 
@@ -140,7 +140,7 @@ tenant\_labels: array of string
 
 <summary>
 
-tenant\_metadata: object {billing\_account\_type, configuration\_account, created\_by, 4 more }
+tenant\_metadata: object { billing\_account\_type, configuration\_account, created\_by, 4 more }
 
 </summary>
 
@@ -160,7 +160,7 @@ created\_by: optional string
 
 <summary>
 
-dns: optional object {ns\_pool }
+dns: optional object { ns\_pool }
 
 </summary>
 
@@ -168,7 +168,7 @@ dns: optional object {ns\_pool }
 
 <summary>
 
-ns\_pool: object {primary, secondary }
+ns\_pool: object { primary, secondary }
 
 </summary>
 
@@ -196,7 +196,7 @@ flags: optional map\[string]
 
 <summary>
 
-innate\_account\_entitlements: optional array of object {allocation, feature }
+innate\_account\_entitlements: optional array of object { allocation, feature }
 
 </summary>
 
@@ -204,7 +204,7 @@ innate\_account\_entitlements: optional array of object {allocation, feature }
 
 <summary>
 
-allocation: object {type, value }
+allocation: object { type, value }
 
 </summary>
 
@@ -216,7 +216,7 @@ type: string
 
 <summary>
 
-value: booleanor numberor stringor 2 more
+value: boolean or number or string or 2 more
 
 </summary>
 
@@ -254,7 +254,7 @@ array of unknown
 
 <summary>
 
-feature: object {key }
+feature: object { key }
 
 </summary>
 
@@ -274,7 +274,7 @@ key: string
 
 <summary>
 
-tenant\_entitlements: optional array of object {allocation, feature }
+tenant\_entitlements: optional array of object { allocation, feature }
 
 </summary>
 
@@ -282,7 +282,7 @@ tenant\_entitlements: optional array of object {allocation, feature }
 
 <summary>
 
-allocation: object {type, value }
+allocation: object { type, value }
 
 </summary>
 
@@ -294,7 +294,7 @@ type: string
 
 <summary>
 
-value: booleanor numberor stringor 2 more
+value: boolean or number or string or 2 more
 
 </summary>
 
@@ -332,7 +332,7 @@ array of unknown
 
 <summary>
 
-feature: object {key }
+feature: object { key }
 
 </summary>
 
@@ -360,7 +360,7 @@ tenant\_name: string
 
 <summary>
 
-tenant\_network: object {choices }
+tenant\_network: object { choices }
 
 </summary>
 
@@ -388,7 +388,7 @@ tenant\_type: string
 
 <summary>
 
-tenant\_units: array of object {unit\_memberships, unit\_metadata, unit\_name, 2 more }
+tenant\_units: array of object { unit\_memberships, unit\_metadata, unit\_name, 2 more }
 
 </summary>
 
@@ -396,7 +396,7 @@ tenant\_units: array of object {unit\_memberships, unit\_metadata, unit\_name, 2
 
 <summary>
 
-unit\_memberships: array of object {member\_metadata, member\_status, member\_tag }
+unit\_memberships: array of object { member\_metadata, member\_status, member\_tag }
 
 </summary>
 
@@ -440,7 +440,7 @@ unit\_tag: string
 
 <summary>
 
-ui\_flags: object {show\_orgs\_ui, show\_tenants\_ui }
+ui\_flags: object { show\_orgs\_ui, show\_tenants\_ui }
 
 Which top-level dashboard experiences to render for this tenant; both may be true.
 

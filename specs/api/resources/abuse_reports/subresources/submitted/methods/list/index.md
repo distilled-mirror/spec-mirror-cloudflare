@@ -102,7 +102,7 @@ A property and direction to sort by (id, cdate, domain, type, status).
 
 <summary>
 
-status: optional array of "submitted"or "accepted"or "denied"
+status: optional array of "submitted" or "accepted" or "denied"
 
 Filter by submitter-facing status. This parameter can be specified multiple times.
 
@@ -130,7 +130,7 @@ One of the following:
 
 <summary>
 
-type: optional array of "PHISH"or "GEN"or "THREAT"or 6 more
+type: optional array of "PHISH" or "GEN" or "THREAT" or 6 more
 
 Filter by report type. This parameter can be specified multiple times.
 
@@ -184,7 +184,7 @@ One of the following:
 
 <summary>
 
-result: object {reports }
+result: object { reports }
 
 </summary>
 
@@ -192,7 +192,7 @@ result: object {reports }
 
 <summary>
 
-reports: array of object {id, cdate, denial\_reason, 4 more }
+reports: array of object { id, cdate, denial\_reason, 4 more }
 
 </summary>
 
@@ -214,7 +214,7 @@ formatdate-time
 
 <summary>
 
-denial\_reason: "unable\_to\_confirm"or "incomplete\_report"or "not\_on\_cloudflare"or 10 more
+denial\_reason: "unable\_to\_confirm" or "incomplete\_report" or "not\_on\_cloudflare" or 10 more
 
 Submitter-safe reason for a denied report. Null when unavailable.
 
@@ -288,7 +288,7 @@ Domain identified in the report.
 
 <summary>
 
-status: "submitted"or "accepted"or "denied"
+status: "submitted" or "accepted" or "denied"
 
 Status visible to the account that submitted the report.
 
@@ -316,7 +316,7 @@ One of the following:
 
 <summary>
 
-type: "PHISH"or "GEN"or "THREAT"or 6 more
+type: "PHISH" or "GEN" or "THREAT" or 6 more
 
 The abuse report type
 
@@ -368,7 +368,7 @@ One of the following:
 
 <summary>
 
-submitter: optional object {company, email, name, telephone }
+submitter: optional object { company, email, name, telephone }
 
 Information about the submitter of the report.
 
@@ -410,7 +410,7 @@ success: boolean
 
 <summary>
 
-errors: optional array of object {message, code }
+errors: optional array of object { message, code }
 
 </summary>
 
@@ -422,7 +422,7 @@ message: string
 
 <summary>
 
-code: optional stringor number
+code: optional string or number
 
 </summary>
 
@@ -448,7 +448,7 @@ number
 
 <summary>
 
-messages: optional array of object {message }
+messages: optional array of object { message }
 
 </summary>
 
@@ -464,7 +464,7 @@ message: string
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, 2 more }
 
 </summary>
 

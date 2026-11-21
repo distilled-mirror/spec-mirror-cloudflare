@@ -36,7 +36,7 @@ PATCH/zones/{zone\_id}/waiting\_rooms/settings
 
 <summary>
 
-Setting object {search\_engine\_crawler\_bypass }
+Setting object { search\_engine\_crawler\_bypass }
 
 </summary>
 
@@ -54,7 +54,7 @@ Whether to allow verified search engine crawlers to bypass all waiting rooms on 
 
 <summary>
 
-SettingGetResponse object {search\_engine\_crawler\_bypass }
+SettingGetResponse object { search\_engine\_crawler\_bypass }
 
 </summary>
 
@@ -72,7 +72,7 @@ Whether to allow verified search engine crawlers to bypass all waiting rooms on 
 
 <summary>
 
-SettingUpdateResponse object {search\_engine\_crawler\_bypass }
+SettingUpdateResponse object { search\_engine\_crawler\_bypass }
 
 </summary>
 
@@ -90,7 +90,7 @@ Whether to allow verified search engine crawlers to bypass all waiting rooms on 
 
 <summary>
 
-SettingEditResponse object {search\_engine\_crawler\_bypass }
+SettingEditResponse object { search\_engine\_crawler\_bypass }
 
 </summary>
 

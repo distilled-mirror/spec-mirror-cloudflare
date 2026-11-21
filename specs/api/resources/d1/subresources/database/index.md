@@ -68,7 +68,7 @@ POST/accounts/{account\_id}/d1/database/{database\_id}/import
 
 <summary>
 
-QueryResult object {meta, results, success }
+QueryResult object { meta, results, success }
 
 </summary>
 
@@ -76,7 +76,7 @@ QueryResult object {meta, results, success }
 
 <summary>
 
-meta: optional object {changed\_db, changes, duration, 8 more }
+meta: optional object { changed\_db, changes, duration, 8 more }
 
 </summary>
 
@@ -132,7 +132,7 @@ Denotes if the query has been handled by the database primary instance.
 
 <summary>
 
-served\_by\_region: optional "WNAM"or "ENAM"or "WEUR"or 3 more
+served\_by\_region: optional "WNAM" or "ENAM" or "WEUR" or 3 more
 
 Region location hint of the database instance that handled the query.
 
@@ -178,7 +178,7 @@ Size of the database after the query committed, in bytes.
 
 <summary>
 
-timings: optional object {sql\_duration\_ms }
+timings: optional object { sql\_duration\_ms }
 
 Various durations for the query.
 
@@ -214,7 +214,7 @@ success: optional boolean
 
 <summary>
 
-DatabaseListResponse object {created\_at, jurisdiction, name, 2 more }
+DatabaseListResponse object { created\_at, jurisdiction, name, 2 more }
 
 </summary>
 
@@ -230,7 +230,7 @@ formatdate-time
 
 <summary>
 
-jurisdiction: optional "eu"or "fedramp"or "us"
+jurisdiction: optional "eu" or "fedramp" or "us"
 
 Specify the location to restrict the D1 database to run and store data. If this option is present, the location hint is ignored.
 
@@ -282,7 +282,7 @@ DatabaseDeleteResponse = unknown
 
 <summary>
 
-DatabaseRawResponse object {meta, results, success }
+DatabaseRawResponse object { meta, results, success }
 
 </summary>
 
@@ -290,7 +290,7 @@ DatabaseRawResponse object {meta, results, success }
 
 <summary>
 
-meta: optional object {changed\_db, changes, duration, 8 more }
+meta: optional object { changed\_db, changes, duration, 8 more }
 
 </summary>
 
@@ -346,7 +346,7 @@ Denotes if the query has been handled by the database primary instance.
 
 <summary>
 
-served\_by\_region: optional "WNAM"or "ENAM"or "WEUR"or 3 more
+served\_by\_region: optional "WNAM" or "ENAM" or "WEUR" or 3 more
 
 Region location hint of the database instance that handled the query.
 
@@ -392,7 +392,7 @@ Size of the database after the query committed, in bytes.
 
 <summary>
 
-timings: optional object {sql\_duration\_ms }
+timings: optional object { sql\_duration\_ms }
 
 Various durations for the query.
 
@@ -416,7 +416,7 @@ The duration of the SQL query execution inside the database. Does not include an
 
 <summary>
 
-results: optional object {columns, rows }
+results: optional object { columns, rows }
 
 </summary>
 
@@ -428,7 +428,7 @@ columns: optional array of string
 
 <summary>
 
-rows: optional array of array of numberor stringor unknown
+rows: optional array of array of number or string or unknown
 
 </summary>
 
@@ -466,7 +466,7 @@ success: optional boolean
 
 <summary>
 
-DatabaseExportResponse object {at\_bookmark, error, messages, 4 more }
+DatabaseExportResponse object { at\_bookmark, error, messages, 4 more }
 
 </summary>
 
@@ -492,7 +492,7 @@ Logs since the last time you polled
 
 <summary>
 
-result: optional object {filename, signed\_url }
+result: optional object { filename, signed\_url }
 
 Only present when status = ‘complete’
 
@@ -518,7 +518,7 @@ The URL to download the exported SQL. Available for one hour.
 
 <summary>
 
-status: optional "complete"or "error"
+status: optional "complete" or "error"
 
 </summary>
 
@@ -552,7 +552,7 @@ type: optional "export"
 
 <summary>
 
-DatabaseImportResponse object {at\_bookmark, error, filename, 6 more }
+DatabaseImportResponse object { at\_bookmark, error, filename, 6 more }
 
 </summary>
 
@@ -584,7 +584,7 @@ Logs since the last time you polled
 
 <summary>
 
-result: optional object {final\_bookmark, meta, num\_queries }
+result: optional object { final\_bookmark, meta, num\_queries }
 
 Only present when status = ‘complete’
 
@@ -600,7 +600,7 @@ The time-travel bookmark if you need restore your D1 to directly after the impor
 
 <summary>
 
-meta: optional object {changed\_db, changes, duration, 8 more }
+meta: optional object { changed\_db, changes, duration, 8 more }
 
 </summary>
 
@@ -656,7 +656,7 @@ Denotes if the query has been handled by the database primary instance.
 
 <summary>
 
-served\_by\_region: optional "WNAM"or "ENAM"or "WEUR"or 3 more
+served\_by\_region: optional "WNAM" or "ENAM" or "WEUR" or 3 more
 
 Region location hint of the database instance that handled the query.
 
@@ -702,7 +702,7 @@ Size of the database after the query committed, in bytes.
 
 <summary>
 
-timings: optional object {sql\_duration\_ms }
+timings: optional object { sql\_duration\_ms }
 
 Various durations for the query.
 
@@ -736,7 +736,7 @@ The total number of queries that were executed during the import.
 
 <summary>
 
-status: optional "complete"or "error"
+status: optional "complete" or "error"
 
 </summary>
 
@@ -788,7 +788,7 @@ POST/accounts/{account\_id}/d1/database/{database\_id}/time\_travel/restore
 
 <summary>
 
-TimeTravelGetBookmarkResponse object {bookmark }
+TimeTravelGetBookmarkResponse object { bookmark }
 
 </summary>
 
@@ -806,7 +806,7 @@ A bookmark representing a specific state of the database at a specific point in 
 
 <summary>
 
-TimeTravelRestoreResponse object {bookmark, message, previous\_bookmark }
+TimeTravelRestoreResponse object { bookmark, message, previous\_bookmark }
 
 Response from a time travel restore operation.
 

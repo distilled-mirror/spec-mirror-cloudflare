@@ -32,7 +32,7 @@ Trace = array of [TraceItem](<https://developers.cloudflare.com/api/resources/re
 
 <summary>
 
-TraceItem object {action, action\_parameters, description, 7 more }
+TraceItem object { action, action\_parameters, description, 7 more }
 
 List of steps acting on request/response
 
@@ -104,7 +104,7 @@ Tracing step type
 
 <summary>
 
-TraceCreateResponse object {status\_code, trace }
+TraceCreateResponse object { status\_code, trace }
 
 Trace result with an origin status code
 

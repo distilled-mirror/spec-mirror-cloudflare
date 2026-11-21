@@ -82,7 +82,7 @@ formatuuid
 
 <summary>
 
-errors: array of object {code, message, source }
+errors: array of object { code, message, source }
 
 </summary>
 
@@ -100,7 +100,7 @@ message: string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -120,7 +120,7 @@ pointer: string
 
 <summary>
 
-messages: array of object {code, message, source }
+messages: array of object { code, message, source }
 
 </summary>
 
@@ -138,7 +138,7 @@ message: string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -180,7 +180,7 @@ formatdate-time
 
 <summary>
 
-default\_action: "ALLOW"or "BLOCK"
+default\_action: "ALLOW" or "BLOCK"
 
 Action applied when no entry matches the request domain
 
@@ -204,7 +204,7 @@ One of the following:
 
 <summary>
 
-entries: array of object {action, domain }
+entries: array of object { action, domain }
 
 Per-domain action overrides. Each domain appears at most once.
 
@@ -214,7 +214,7 @@ Per-domain action overrides. Each domain appears at most once.
 
 <summary>
 
-action: "ALLOW"or "BLOCK"
+action: "ALLOW" or "BLOCK"
 
 Per-domain decision overriding the parent ACL’s default\_action
 

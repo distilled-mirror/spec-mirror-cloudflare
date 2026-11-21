@@ -62,7 +62,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Workers Tail Read``Workers Scripts Write``Workers Scripts Read`
+`Workers Metadata Read-Only``Workers Editor``Workers Content Read-Only``Workers Admin``Individual Workers Metadata Read-Only``Individual Workers Editor``Individual Workers Content Read-Only``Individual Workers Admin``Granular Workers Scripts Read``IAM Test - Granular Workers Read``Workers Tail Read``Workers Scripts Write``Workers Scripts Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -92,7 +92,7 @@ Name of the script.
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -114,7 +114,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -134,7 +134,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -156,7 +156,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -176,7 +176,7 @@ pointer: optional string
 
 <summary>
 
-result: array of object {name, type } or object {instance\_name, name, type, namespace } or object {name, namespace, type } or 36 more
+result: array of object { name, type } or object { instance\_name, name, type, namespace } or object { name, namespace, type } or 36 more
 
 List of bindings attached to a Worker. You can find more about bindings on our docs: <a href="https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings">https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings</a>.
 
@@ -188,7 +188,7 @@ One of the following:
 
 <summary>
 
-AI object {name, type }
+AI object { name, type }
 
 </summary>
 
@@ -212,7 +212,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-AISearch object {instance\_name, name, type, namespace }
+AISearch object { instance\_name, name, type, namespace }
 
 </summary>
 
@@ -248,7 +248,7 @@ The namespace the instance belongs to. Defaults to “default” if omitted. Cus
 
 <summary>
 
-AISearchNamespace object {name, namespace, type }
+AISearchNamespace object { name, namespace, type }
 
 </summary>
 
@@ -278,7 +278,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-Messaging object {name, namespace, type }
+Messaging object { name, namespace, type }
 
 </summary>
 
@@ -308,7 +308,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-AnalyticsEngine object {dataset, name, type }
+AnalyticsEngine object { dataset, name, type }
 
 </summary>
 
@@ -338,7 +338,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-Artifacts object {name, namespace, type }
+Artifacts object { name, namespace, type }
 
 </summary>
 
@@ -372,7 +372,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-Assets object {name, type }
+Assets object { name, type }
 
 </summary>
 
@@ -396,7 +396,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-Browser object {name, type }
+Browser object { name, type }
 
 </summary>
 
@@ -420,7 +420,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-D1 object {database\_id, name, type, id }
+D1 object { database\_id, name, type, id }
 
 </summary>
 
@@ -458,7 +458,7 @@ Identifier of the D1 database to bind to.
 
 <summary>
 
-DataBlob object {name, part, type }
+DataBlob object { name, part, type }
 
 </summary>
 
@@ -488,7 +488,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-DispatchNamespace object {name, namespace, type, outbound }
+DispatchNamespace object { name, namespace, type, outbound }
 
 </summary>
 
@@ -514,7 +514,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-outbound: optional object {params, worker }
+outbound: optional object { params, worker }
 
 Outbound worker.
 
@@ -524,7 +524,7 @@ Outbound worker.
 
 <summary>
 
-params: optional array of object {name }
+params: optional array of object { name }
 
 Pass information from the Dispatch Worker to the Outbound Worker through the parameters.
 
@@ -544,7 +544,7 @@ Name of the parameter.
 
 <summary>
 
-worker: optional object {entrypoint, environment, service }
+worker: optional object { entrypoint, environment, service }
 
 Outbound worker.
 
@@ -584,7 +584,7 @@ Name of the outbound worker.
 
 <summary>
 
-DurableObjectNamespace object {name, type, class\_name, 4 more }
+DurableObjectNamespace object { name, type, class\_name, 4 more }
 
 </summary>
 
@@ -640,7 +640,7 @@ The script where the Durable Object is defined, if it is external to this Worker
 
 <summary>
 
-Hyperdrive object {id, name, type }
+Hyperdrive object { id, name, type }
 
 </summary>
 
@@ -670,7 +670,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-Inherit object {name, type, old\_name, version\_id }
+Inherit object { name, type, old\_name, version\_id }
 
 </summary>
 
@@ -706,7 +706,7 @@ Identifier for the version to inherit the binding from. This can be a version ID
 
 <summary>
 
-Images object {name, type }
+Images object { name, type }
 
 </summary>
 
@@ -730,7 +730,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-Json object {json, name, type }
+Json object { json, name, type }
 
 </summary>
 
@@ -760,7 +760,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-KVNamespace object {name, namespace\_id, type }
+KVNamespace object { name, namespace\_id, type }
 
 </summary>
 
@@ -792,7 +792,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-Media object {name, type }
+Media object { name, type }
 
 </summary>
 
@@ -816,7 +816,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-MTLSCertificate object {certificate\_id, name, type }
+MTLSCertificate object { certificate\_id, name, type }
 
 </summary>
 
@@ -846,7 +846,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-PlainText object {name, text, type }
+PlainText object { name, text, type }
 
 </summary>
 
@@ -876,7 +876,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-Pipelines object {name, pipeline, type }
+Pipelines object { name, pipeline, type }
 
 </summary>
 
@@ -906,7 +906,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-K2 object {name, stream, type }
+K2 object { name, stream, type }
 
 A K2 stream binding. Available only to accounts enabled for K2.
 
@@ -938,7 +938,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-Queue object {name, queue\_name, type }
+Queue object { name, queue\_name, type }
 
 </summary>
 
@@ -968,7 +968,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-Ratelimit object {name, namespace\_id, simple, type }
+Ratelimit object { name, namespace\_id, simple, type }
 
 </summary>
 
@@ -988,7 +988,7 @@ Identifier of the rate limit namespace to bind to.
 
 <summary>
 
-simple: object {limit, period, mitigation\_timeout }
+simple: object { limit, period, mitigation\_timeout }
 
 The rate limit configuration.
 
@@ -1030,7 +1030,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-R2Bucket object {bucket\_name, name, type, jurisdiction }
+R2Bucket object { bucket\_name, name, type, jurisdiction }
 
 </summary>
 
@@ -1056,7 +1056,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-jurisdiction: optional "eu"or "fedramp"or "fedramp-high"or "us"
+jurisdiction: optional "eu" or "fedramp" or "fedramp-high" or "us"
 
 The <a href="https://developers.cloudflare.com/r2/reference/data-location/#jurisdictional-restrictions">jurisdiction</a> of the R2 bucket.
 
@@ -1092,7 +1092,7 @@ One of the following:
 
 <summary>
 
-SecretText object {name, text, type }
+SecretText object { name, text, type }
 
 </summary>
 
@@ -1122,7 +1122,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-SendEmail object {name, type, allowed\_destination\_addresses, 2 more }
+SendEmail object { name, type, allowed\_destination\_addresses, 2 more }
 
 </summary>
 
@@ -1166,7 +1166,7 @@ formatemail
 
 <summary>
 
-Service object {name, service, type, 2 more }
+Service object { name, service, type, 2 more }
 
 </summary>
 
@@ -1208,7 +1208,7 @@ Optional environment if the Worker utilizes one.
 
 <summary>
 
-TextBlob object {name, part, type }
+TextBlob object { name, part, type }
 
 </summary>
 
@@ -1238,7 +1238,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-Vectorize object {index\_name, name, type }
+Vectorize object { index\_name, name, type }
 
 </summary>
 
@@ -1268,7 +1268,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-VersionMetadata object {name, type }
+VersionMetadata object { name, type }
 
 </summary>
 
@@ -1292,7 +1292,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-SecretsStoreSecret object {name, secret\_name, store\_id, type }
+SecretsStoreSecret object { name, secret\_name, store\_id, type }
 
 </summary>
 
@@ -1328,7 +1328,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-Flagship object {app\_id, name, type }
+Flagship object { app\_id, name, type }
 
 </summary>
 
@@ -1360,7 +1360,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-SecretKey object {algorithm, format, name, 4 more }
+SecretKey object { algorithm, format, name, 4 more }
 
 </summary>
 
@@ -1374,7 +1374,7 @@ Algorithm-specific key parameters. <a href="https://developer.mozilla.org/en-US/
 
 <summary>
 
-format: "raw"or "pkcs8"or "spki"or "jwk"
+format: "raw" or "pkcs8" or "spki" or "jwk"
 
 Data format of the key. <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#format">Learn more</a>.
 
@@ -1418,7 +1418,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-usages: array of "encrypt"or "decrypt"or "sign"or 5 more
+usages: array of "encrypt" or "decrypt" or "sign" or 5 more
 
 Allowed operations with the key. <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#keyUsages">Learn more</a>.
 
@@ -1482,7 +1482,7 @@ Key data in <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCryp
 
 <summary>
 
-Workflow object {name, type, workflow\_name, 2 more }
+Workflow object { name, type, workflow\_name, 2 more }
 
 </summary>
 
@@ -1524,7 +1524,7 @@ Script name that contains the Workflow. If not provided, defaults to this script
 
 <summary>
 
-WasmModule object {name, part, type }
+WasmModule object { name, part, type }
 
 </summary>
 
@@ -1554,7 +1554,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-VPCService object {name, service\_id, type }
+VPCService object { name, service\_id, type }
 
 </summary>
 
@@ -1584,7 +1584,7 @@ The kind of resource that the binding provides.
 
 <summary>
 
-VPCNetwork object {name, type, identity, 2 more }
+VPCNetwork object { name, type, identity, 2 more }
 
 </summary>
 
@@ -1626,7 +1626,7 @@ UUID of the Cloudflare Tunnel to bind to. Mutually exclusive with network\_id.
 
 <summary>
 
-WorkerLoader object {name, type }
+WorkerLoader object { name, type }
 
 </summary>
 

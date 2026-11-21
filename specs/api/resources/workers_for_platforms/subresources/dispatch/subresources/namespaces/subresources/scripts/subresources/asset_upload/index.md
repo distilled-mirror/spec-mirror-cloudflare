@@ -34,7 +34,7 @@ POST/accounts/{account\_id}/workers/dispatch/namespaces/{dispatch\_namespace}/sc
 
 <summary>
 
-AssetUploadCreateResponse object {buckets, jwt }
+AssetUploadCreateResponse object { buckets, jwt }
 
 </summary>
 

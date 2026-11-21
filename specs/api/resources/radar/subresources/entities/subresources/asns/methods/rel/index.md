@@ -80,7 +80,7 @@ Retrieves the AS relationship of ASN2 with respect to the given ASN.
 
 <summary>
 
-format: optional "JSON"or "CSV"
+format: optional "JSON" or "CSV"
 
 Format in which results will be returned.
 
@@ -106,7 +106,7 @@ One of the following:
 
 <summary>
 
-result: object {meta, rels }
+result: object { meta, rels }
 
 </summary>
 
@@ -114,7 +114,7 @@ result: object {meta, rels }
 
 <summary>
 
-meta: object {data\_time, query\_time, total\_peers }
+meta: object { data\_time, query\_time, total\_peers }
 
 </summary>
 
@@ -138,7 +138,7 @@ total\_peers: number
 
 <summary>
 
-rels: array of object {asn1, asn1\_country, asn1\_name, 4 more }
+rels: array of object { asn1, asn1\_country, asn1\_name, 4 more }
 
 </summary>
 

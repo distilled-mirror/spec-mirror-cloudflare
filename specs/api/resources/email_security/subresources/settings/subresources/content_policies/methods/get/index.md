@@ -84,7 +84,7 @@ formatuuid
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -106,7 +106,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -126,7 +126,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -148,7 +148,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -174,7 +174,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, created\_at, enabled, 6 more }
+result: optional object { id, created\_at, enabled, 6 more }
 
 A content policy pattern that matches against the subject or body of an email.
 
@@ -246,7 +246,7 @@ minLength1
 
 <summary>
 
-targets: optional array of "SUBJECT"or "BODY"
+targets: optional array of "SUBJECT" or "BODY"
 
 Parts of the email the pattern is matched against.
 

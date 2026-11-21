@@ -32,7 +32,7 @@ PUT/accounts/{account\_id}/workers/account-settings
 
 <summary>
 
-AccountSettingGetResponse object {default\_usage\_model, green\_compute }
+AccountSettingGetResponse object { default\_usage\_model, green\_compute }
 
 </summary>
 
@@ -52,7 +52,7 @@ green\_compute: optional boolean
 
 <summary>
 
-AccountSettingUpdateResponse object {default\_usage\_model, green\_compute }
+AccountSettingUpdateResponse object { default\_usage\_model, green\_compute }
 
 </summary>
 

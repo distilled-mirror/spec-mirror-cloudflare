@@ -92,7 +92,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -134,7 +134,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -154,7 +154,7 @@ pointer: optional string
 
 <summary>
 
-result: object {allow\_mode\_switch, allow\_updates, allowed\_to\_leave, 26 more }
+result: object { allow\_mode\_switch, allow\_updates, allowed\_to\_leave, 26 more }
 
 </summary>
 
@@ -204,7 +204,7 @@ If the <code>dns_server</code> field of a fallback domain is not present, the cl
 
 <summary>
 
-dns\_search\_suffixes: optional array of object {suffix, description }
+dns\_search\_suffixes: optional array of object { suffix, description }
 
 List of DNS search suffixes to apply to clients. Suffixes are evaluated in order. Use an empty array to clear.
 
@@ -260,7 +260,7 @@ One of the following:
 
 <summary>
 
-TeamsDevicesExcludeSplitTunnelWithAddress object {address, description }
+TeamsDevicesExcludeSplitTunnelWithAddress object { address, description }
 
 </summary>
 
@@ -286,7 +286,7 @@ maxLength100
 
 <summary>
 
-TeamsDevicesExcludeSplitTunnelWithHost object {host, description }
+TeamsDevicesExcludeSplitTunnelWithHost object { host, description }
 
 </summary>
 
@@ -358,7 +358,7 @@ gateway\_unique\_id: optional string
 
 <summary>
 
-global\_acceleration: optional object {api\_endpoints, enabled, masque\_endpoints, 3 more }
+global\_acceleration: optional object { api\_endpoints, enabled, masque\_endpoints, 3 more }
 
 Global Acceleration settings for China. When configured, WARP clients connect to the Global Accelerator addresses instead of the default ones. Please contact your account representative to enable this feature on your account. See <a href="https://developers.cloudflare.com/china-network/concepts/global-acceleration/">https://developers.cloudflare.com/china-network/concepts/global-acceleration/</a>.
 
@@ -420,7 +420,7 @@ One of the following:
 
 <summary>
 
-TeamsDevicesIncludeSplitTunnelWithAddress object {address, description }
+TeamsDevicesIncludeSplitTunnelWithAddress object { address, description }
 
 </summary>
 
@@ -446,7 +446,7 @@ maxLength100
 
 <summary>
 
-TeamsDevicesIncludeSplitTunnelWithHost object {host, description }
+TeamsDevicesIncludeSplitTunnelWithHost object { host, description }
 
 </summary>
 
@@ -494,7 +494,7 @@ maxLength36
 
 <summary>
 
-profile\_type: optional "warp"or "browser\_extension"
+profile\_type: optional "warp" or "browser\_extension"
 
 The client type to which the device settings profile applies. This field is set when the profile is created and cannot be changed.
 
@@ -530,7 +530,7 @@ Determines whether the WARP client indicates to SCCM that it is inside a VPN bou
 
 <summary>
 
-service\_mode\_v2: optional object {mode, port }
+service\_mode\_v2: optional object { mode, port }
 
 </summary>
 
@@ -578,7 +578,7 @@ Determines whether uninstalling the WARP client requires an override code. (Wind
 
 <summary>
 
-virtual\_networks: optional object {allowed, default }
+virtual\_networks: optional object { allowed, default }
 
 Virtual network access settings for the device.
 

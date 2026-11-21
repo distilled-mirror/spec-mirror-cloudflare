@@ -32,7 +32,7 @@ GET/zones/{zone\_id}/spectrum/analytics/aggregate/current
 
 <summary>
 
-CurrentGetResponse = array of object {appID, bytesEgress, bytesIngress, 2 more }
+CurrentGetResponse = array of object { appID, bytesEgress, bytesIngress, 2 more }
 
 </summary>
 
@@ -80,7 +80,7 @@ Average duration of connections.
 
 <summary>
 
-Dimension = "event"or "appID"or "coloName"or "ipVersion"
+Dimension = "event" or "appID" or "coloName" or "ipVersion"
 
 </summary>
 
@@ -118,7 +118,7 @@ GET/zones/{zone\_id}/spectrum/analytics/events/bytime
 
 <summary>
 
-BytimeGetResponse object {data, data\_lag, max, 5 more }
+BytimeGetResponse object { data, data\_lag, max, 5 more }
 
 </summary>
 
@@ -126,7 +126,7 @@ BytimeGetResponse object {data, data\_lag, max, 5 more }
 
 <summary>
 
-data: array of object {dimensions, metrics }
+data: array of object { dimensions, metrics }
 
 List of columns returned by the analytics query.
 
@@ -140,7 +140,7 @@ dimensions: optional array of string
 
 <summary>
 
-metrics: optional array of numberor array of array of number
+metrics: optional array of number or array of array of number
 
 </summary>
 
@@ -186,7 +186,7 @@ Minimum result for each selected metrics across all data.
 
 <summary>
 
-query: object {dimensions, filters, limit, 4 more }
+query: object { dimensions, filters, limit, 4 more }
 
 </summary>
 
@@ -256,7 +256,7 @@ Limit number of returned metrics.
 
 <summary>
 
-metrics: optional array of "count"or "bytesIngress"or "bytesEgress"or 4 more
+metrics: optional array of "count" or "bytesIngress" or "bytesEgress" or 4 more
 
 One or more metrics to compute. Options are:
 
@@ -368,7 +368,7 @@ GET/zones/{zone\_id}/spectrum/analytics/events/summary
 
 <summary>
 
-SummaryGetResponse object {data, data\_lag, max, 5 more }
+SummaryGetResponse object { data, data\_lag, max, 5 more }
 
 </summary>
 
@@ -376,7 +376,7 @@ SummaryGetResponse object {data, data\_lag, max, 5 more }
 
 <summary>
 
-data: array of object {dimensions, metrics }
+data: array of object { dimensions, metrics }
 
 List of columns returned by the analytics query.
 
@@ -390,7 +390,7 @@ dimensions: optional array of string
 
 <summary>
 
-metrics: optional array of numberor array of array of number
+metrics: optional array of number or array of array of number
 
 </summary>
 
@@ -436,7 +436,7 @@ Minimum result for each selected metrics across all data.
 
 <summary>
 
-query: object {dimensions, filters, limit, 4 more }
+query: object { dimensions, filters, limit, 4 more }
 
 </summary>
 
@@ -506,7 +506,7 @@ Limit number of returned metrics.
 
 <summary>
 
-metrics: optional array of "count"or "bytesIngress"or "bytesEgress"or 4 more
+metrics: optional array of "count" or "bytesIngress" or "bytesEgress" or 4 more
 
 One or more metrics to compute. Options are:
 

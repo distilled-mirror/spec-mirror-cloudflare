@@ -76,7 +76,7 @@ maxLength32
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -98,7 +98,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -118,7 +118,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -140,7 +140,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -166,7 +166,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {zone\_defaults, enforce\_dns\_only }
+result: optional object { zone\_defaults, enforce\_dns\_only }
 
 </summary>
 
@@ -174,7 +174,7 @@ result: optional object {zone\_defaults, enforce\_dns\_only }
 
 <summary>
 
-zone\_defaults: object {flatten\_all\_cnames, internal\_dns, multi\_provider, 5 more }
+zone\_defaults: object { flatten\_all\_cnames, internal\_dns, multi\_provider, 5 more }
 
 Default settings for new zones created in this account.
 
@@ -190,7 +190,7 @@ Whether to flatten all CNAME records in the zone. Note that, due to DNS limitati
 
 <summary>
 
-internal\_dns: object {reference\_zone\_id }
+internal\_dns: object { reference\_zone\_id }
 
 Settings for this internal zone.
 
@@ -216,7 +216,7 @@ Whether to enable multi-provider DNS, which causes Cloudflare to activate the zo
 
 <summary>
 
-nameservers: object {type }
+nameservers: object { type }
 
 Settings determining the nameservers through which the zone should be available.
 
@@ -226,7 +226,7 @@ Settings determining the nameservers through which the zone should be available.
 
 <summary>
 
-type: "cloudflare.standard"or "cloudflare.advanced"or "cloudflare.standard.random"or 2 more
+type: "cloudflare.standard" or "cloudflare.advanced" or "cloudflare.standard.random" or 2 more
 
 Nameserver type
 
@@ -282,7 +282,7 @@ Allows a Secondary DNS zone to use (proxied) override records and CNAME flatteni
 
 <summary>
 
-soa: object {expire, min\_ttl, mname, 4 more }
+soa: object { expire, min\_ttl, mname, 4 more }
 
 Components of the zone’s SOA record.
 
@@ -358,7 +358,7 @@ minimum300
 
 <summary>
 
-zone\_mode: "standard"or "cdn\_only"or "dns\_only"
+zone\_mode: "standard" or "cdn\_only" or "dns\_only"
 
 Whether the zone mode is a regular or CDN/DNS only zone.
 

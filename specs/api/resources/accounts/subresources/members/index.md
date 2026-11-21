@@ -44,7 +44,7 @@ DELETE/accounts/{account\_id}/members/{member\_id}
 
 <summary>
 
-Status = "member"or "invited"
+Status = "member" or "invited"
 
 Whether the user is a member of the organization or has an invitation pending.
 
@@ -68,7 +68,7 @@ One of the following:
 
 <summary>
 
-MemberDeleteResponse object {id }
+MemberDeleteResponse object { id }
 
 </summary>
 

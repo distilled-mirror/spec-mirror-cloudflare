@@ -38,7 +38,7 @@ DELETE/accounts/{account\_id}/builds/triggers/{trigger\_uuid}/environment\_varia
 
 <summary>
 
-EnvironmentVariableListResponse = unknownor unknown
+EnvironmentVariableListResponse = unknown or unknown
 
 </summary>
 
@@ -60,7 +60,7 @@ unknown
 
 <summary>
 
-EnvironmentVariableUpsertResponse = unknownor unknown
+EnvironmentVariableUpsertResponse = unknown or unknown
 
 </summary>
 
@@ -82,7 +82,7 @@ unknown
 
 <summary>
 
-EnvironmentVariableDeleteResponse = unknownor array of unknown
+EnvironmentVariableDeleteResponse = unknown or array of unknown
 
 </summary>
 

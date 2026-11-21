@@ -82,7 +82,7 @@ maxLength99
 
 <summary>
 
-options: object {fit, height, metadata, width }
+options: object { fit, height, metadata, width }
 
 Allows you to define image resizing sizes for different use cases.
 
@@ -92,7 +92,7 @@ Allows you to define image resizing sizes for different use cases.
 
 <summary>
 
-fit: "scale-down"or "contain"or "cover"or 2 more
+fit: "scale-down" or "contain" or "cover" or 2 more
 
 The fit property describes how the width and height dimensions should be interpreted.
 
@@ -136,7 +136,7 @@ minimum1
 
 <summary>
 
-metadata: "keep"or "copyright"or "none"
+metadata: "keep" or "copyright" or "none"
 
 What EXIF data should be preserved in the output image.
 
@@ -206,7 +206,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -248,7 +248,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -268,7 +268,7 @@ pointer: optional string
 
 <summary>
 
-result: object {variant }
+result: object { variant }
 
 </summary>
 
@@ -276,7 +276,7 @@ result: object {variant }
 
 <summary>
 
-variant: optional object {id, options, neverRequireSignedURLs }
+variant: optional object { id, options, neverRequireSignedURLs }
 
 </summary>
 
@@ -290,7 +290,7 @@ maxLength99
 
 <summary>
 
-options: object {fit, height, metadata, width }
+options: object { fit, height, metadata, width }
 
 Allows you to define image resizing sizes for different use cases.
 
@@ -300,7 +300,7 @@ Allows you to define image resizing sizes for different use cases.
 
 <summary>
 
-fit: "scale-down"or "contain"or "cover"or 2 more
+fit: "scale-down" or "contain" or "cover" or 2 more
 
 The fit property describes how the width and height dimensions should be interpreted.
 
@@ -344,7 +344,7 @@ minimum1
 
 <summary>
 
-metadata: "keep"or "copyright"or "none"
+metadata: "keep" or "copyright" or "none"
 
 What EXIF data should be preserved in the output image.
 

@@ -34,7 +34,7 @@ The preferred authorization scheme for interacting with the Cloudflare API. [Cre
 
 ##### Accepted Permissions (at least one required)
 
-`Workers R2 Storage Write``Workers R2 Storage Read`
+`Workers R2 Storage Metadata Read``AI Search Index Engine``Auto Rag Write Run Engine``Workers R2 Storage Write``Workers R2 Storage Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -58,7 +58,7 @@ Pagination cursor received during the last List Buckets call. R2 buckets are pag
 
 <summary>
 
-direction: optional "asc"or "desc"
+direction: optional "asc" or "desc"
 
 Direction to order buckets.
 
@@ -112,7 +112,7 @@ Bucket name to start searching after. Buckets are ordered lexicographically.
 
 <summary>
 
-"cf-r2-jurisdiction": optional "default"or "eu"or "us"or 2 more
+"cf-r2-jurisdiction": optional "default" or "eu" or "us" or 2 more
 
 </summary>
 
@@ -170,7 +170,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -194,7 +194,7 @@ messages: array of string
 
 <summary>
 
-result: object {buckets }
+result: object { buckets }
 
 </summary>
 
@@ -216,7 +216,7 @@ Creation timestamp.
 
 <summary>
 
-jurisdiction: optional "default"or "eu"or "us"or 2 more
+jurisdiction: optional "default" or "eu" or "us" or 2 more
 
 Jurisdiction where objects in this bucket are guaranteed to be stored.
 
@@ -252,7 +252,7 @@ One of the following:
 
 <summary>
 
-location: optional "apac"or "eeur"or "enam"or 3 more
+location: optional "apac" or "eeur" or "enam" or 3 more
 
 Location of the bucket.
 
@@ -302,7 +302,7 @@ minLength3
 
 <summary>
 
-storage\_class: optional "Standard"or "InfrequentAccess"
+storage\_class: optional "Standard" or "InfrequentAccess"
 
 Storage class for newly uploaded objects, unless specified otherwise.
 
@@ -334,7 +334,7 @@ One of the following:
 
 <summary>
 
-result\_info: object {total\_count, cursor, per\_page }
+result\_info: object { total\_count, cursor, per\_page }
 
 </summary>
 

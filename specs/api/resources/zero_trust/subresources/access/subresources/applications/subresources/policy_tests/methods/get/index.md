@@ -86,7 +86,7 @@ maxLength64
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -108,7 +108,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -128,7 +128,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -150,7 +150,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -176,7 +176,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, percent\_approved, percent\_blocked, 7 more }
+result: optional object { id, percent\_approved, percent\_blocked, 7 more }
 
 </summary>
 
@@ -216,7 +216,7 @@ The percentage of users processed so far (of the entire user base).
 
 <summary>
 
-status: optional "blocked"or "processing"or "exceeded time"or "complete"
+status: optional "blocked" or "processing" or "exceeded time" or "complete"
 
 The status of the policy test.
 

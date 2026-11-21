@@ -72,7 +72,7 @@ Used when interacting with the Origin CA certificates API. <a href="https://deve
 
 ##### Accepted Permissions (at least one required)
 
-`Workers Observability Write``Workers Observability Read`
+`Workers Metadata Read-Only``Workers Observability Write``Workers Observability Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -96,7 +96,7 @@ minLength1
 
 <summary>
 
-errors: array of object {message }
+errors: array of object { message }
 
 </summary>
 
@@ -112,7 +112,7 @@ message: string
 
 <summary>
 
-messages: array of object {message }
+messages: array of object { message }
 
 </summary>
 
@@ -128,7 +128,7 @@ message: "Successful request"
 
 <summary>
 
-result: object {automations }
+result: object { automations }
 
 </summary>
 
@@ -136,7 +136,7 @@ result: object {automations }
 
 <summary>
 
-automations: array of object {id, ansPolicyId, created, 12 more }
+automations: array of object { id, ansPolicyId, created, 12 more }
 
 </summary>
 
@@ -176,7 +176,7 @@ revision: number
 
 <summary>
 
-scope: "account"or "service"
+scope: "account" or "service"
 
 </summary>
 
@@ -210,7 +210,7 @@ threshold: number
 
 <summary>
 
-triggerType: "occurrence\_threshold"or "recurrence\_after\_inactivity"
+triggerType: "occurrence\_threshold" or "recurrence\_after\_inactivity"
 
 </summary>
 

@@ -42,7 +42,7 @@ GET/accounts/{account\_id}/autorag/rags/{id}/jobs/{job\_id}/logs
 
 <summary>
 
-JobListResponse object {id, source, end\_reason, 3 more }
+JobListResponse object { id, source, end\_reason, 3 more }
 
 </summary>
 
@@ -54,7 +54,7 @@ id: string
 
 <summary>
 
-source: "user"or "schedule"
+source: "user" or "schedule"
 
 </summary>
 
@@ -96,7 +96,7 @@ started\_at: optional string
 
 <summary>
 
-JobGetResponse object {id, source, end\_reason, 3 more }
+JobGetResponse object { id, source, end\_reason, 3 more }
 
 </summary>
 
@@ -108,7 +108,7 @@ id: string
 
 <summary>
 
-source: "user"or "schedule"
+source: "user" or "schedule"
 
 </summary>
 
@@ -150,7 +150,7 @@ started\_at: optional string
 
 <summary>
 
-JobLogsResponse = array of object {id, created\_at, message, message\_type }
+JobLogsResponse = array of object { id, created\_at, message, message\_type }
 
 </summary>
 

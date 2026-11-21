@@ -38,7 +38,7 @@ GET/accounts/{account\_id}/dex/traceroute-tests/{test\_id}/network-path
 
 <summary>
 
-Traceroute object {host, interval, kind, 5 more }
+Traceroute object { host, interval, kind, 5 more }
 
 </summary>
 
@@ -102,7 +102,7 @@ targeted: optional boolean
 
 <summary>
 
-tracerouteStats: optional object {availabilityPct, hopsCount, packetLossPct, 2 more }
+tracerouteStats: optional object { availabilityPct, hopsCount, packetLossPct, 2 more }
 
 </summary>
 
@@ -110,7 +110,7 @@ tracerouteStats: optional object {availabilityPct, hopsCount, packetLossPct, 2 m
 
 <summary>
 
-availabilityPct: object {slots, avg, max, min }
+availabilityPct: object { slots, avg, max, min }
 
 </summary>
 
@@ -118,7 +118,7 @@ availabilityPct: object {slots, avg, max, min }
 
 <summary>
 
-slots: array of object {timestamp, value }
+slots: array of object { timestamp, value }
 
 </summary>
 
@@ -172,7 +172,7 @@ hopsCount: <a href="https://developers.cloudflare.com/api/resources/zero_trust#(
 
 <summary>
 
-packetLossPct: object {slots, avg, max, min }
+packetLossPct: object { slots, avg, max, min }
 
 </summary>
 
@@ -180,7 +180,7 @@ packetLossPct: object {slots, avg, max, min }
 
 <summary>
 
-slots: array of object {timestamp, value }
+slots: array of object { timestamp, value }
 
 </summary>
 
@@ -244,7 +244,7 @@ Count of unique devices that have run this test in the given time period.
 
 <summary>
 
-tracerouteStatsByColo: optional array of object {availabilityPct, colo, hopsCount, 3 more }
+tracerouteStatsByColo: optional array of object { availabilityPct, colo, hopsCount, 3 more }
 
 </summary>
 
@@ -252,7 +252,7 @@ tracerouteStatsByColo: optional array of object {availabilityPct, colo, hopsCoun
 
 <summary>
 
-availabilityPct: object {slots, avg, max, min }
+availabilityPct: object { slots, avg, max, min }
 
 </summary>
 
@@ -260,7 +260,7 @@ availabilityPct: object {slots, avg, max, min }
 
 <summary>
 
-slots: array of object {timestamp, value }
+slots: array of object { timestamp, value }
 
 </summary>
 
@@ -318,7 +318,7 @@ hopsCount: <a href="https://developers.cloudflare.com/api/resources/zero_trust#(
 
 <summary>
 
-packetLossPct: object {slots, avg, max, min }
+packetLossPct: object { slots, avg, max, min }
 
 </summary>
 
@@ -326,7 +326,7 @@ packetLossPct: object {slots, avg, max, min }
 
 <summary>
 
-slots: array of object {timestamp, value }
+slots: array of object { timestamp, value }
 
 </summary>
 
@@ -394,7 +394,7 @@ Count of unique devices that have run this test in the given time period.
 
 <summary>
 
-TracerouteTestPercentilesResponse object {hopsCount, packetLossPct, roundTripTimeMs }
+TracerouteTestPercentilesResponse object { hopsCount, packetLossPct, roundTripTimeMs }
 
 </summary>
 

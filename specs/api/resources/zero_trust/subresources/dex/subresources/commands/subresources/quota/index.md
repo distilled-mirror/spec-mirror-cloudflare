@@ -32,7 +32,7 @@ GET/accounts/{account\_id}/dex/commands/quota
 
 <summary>
 
-QuotaGetResponse object {quota, quota\_usage, reset\_time }
+QuotaGetResponse object { quota, quota\_usage, reset\_time }
 
 </summary>
 

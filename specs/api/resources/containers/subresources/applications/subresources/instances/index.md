@@ -40,7 +40,7 @@ GET/accounts/{account\_id}/containers/applications/{application\_id}/instances/{
 
 <summary>
 
-InstanceListV1Response object {id, application\_id, image, 5 more }
+InstanceListV1Response object { id, application\_id, image, 5 more }
 
 The last-reported state of a logical container instance.
 
@@ -72,7 +72,7 @@ The image for the current container placement, when one is available.
 
 <summary>
 
-status: object {state, updated\_at, exit\_code }
+status: object { state, updated\_at, exit\_code }
 
 The latest known status of a container instance.
 
@@ -82,7 +82,7 @@ The latest known status of a container instance.
 
 <summary>
 
-state: "provisioning"or "running"or "failed"or 5 more
+state: "provisioning" or "running" or "failed" or 5 more
 
 The current lifecycle state of a container instance.
 
@@ -146,7 +146,7 @@ The process exit code, when the runtime reports one.
 
 <summary>
 
-configuration: optional object {disk, memory, vcpu }
+configuration: optional object { disk, memory, vcpu }
 
 The resources allocated to the container instance.
 
@@ -186,7 +186,7 @@ minimum0
 
 <summary>
 
-location: optional object {name, region }
+location: optional object { name, region }
 
 The location of the instance’s current container placement.
 
@@ -228,7 +228,7 @@ The time at which the current container placement started, when one exists.
 
 <summary>
 
-InstanceListResponse object {id, application\_id, image, 5 more }
+InstanceListResponse object { id, application\_id, image, 5 more }
 
 The last-reported state of a logical container instance.
 
@@ -260,7 +260,7 @@ The image for the current container placement, when one is available.
 
 <summary>
 
-status: object {state, updated\_at, exit\_code }
+status: object { state, updated\_at, exit\_code }
 
 The latest known status of a container instance.
 
@@ -270,7 +270,7 @@ The latest known status of a container instance.
 
 <summary>
 
-state: "provisioning"or "running"or "failed"or 5 more
+state: "provisioning" or "running" or "failed" or 5 more
 
 The current lifecycle state of a container instance.
 
@@ -334,7 +334,7 @@ The process exit code, when the runtime reports one.
 
 <summary>
 
-configuration: optional object {disk, memory, vcpu }
+configuration: optional object { disk, memory, vcpu }
 
 The resources allocated to the container instance.
 
@@ -374,7 +374,7 @@ minimum0
 
 <summary>
 
-location: optional object {name, region }
+location: optional object { name, region }
 
 The location of the instance’s current container placement.
 
@@ -416,7 +416,7 @@ The time at which the current container placement started, when one exists.
 
 <summary>
 
-InstanceGetResponse object {id, application\_id, image, 5 more }
+InstanceGetResponse object { id, application\_id, image, 5 more }
 
 The last-reported state of a logical container instance.
 
@@ -448,7 +448,7 @@ The image for the current container placement, when one is available.
 
 <summary>
 
-status: object {state, updated\_at, exit\_code }
+status: object { state, updated\_at, exit\_code }
 
 The latest known status of a container instance.
 
@@ -458,7 +458,7 @@ The latest known status of a container instance.
 
 <summary>
 
-state: "provisioning"or "running"or "failed"or 5 more
+state: "provisioning" or "running" or "failed" or 5 more
 
 The current lifecycle state of a container instance.
 
@@ -522,7 +522,7 @@ The process exit code, when the runtime reports one.
 
 <summary>
 
-configuration: optional object {disk, memory, vcpu }
+configuration: optional object { disk, memory, vcpu }
 
 The resources allocated to the container instance.
 
@@ -562,7 +562,7 @@ minimum0
 
 <summary>
 
-location: optional object {name, region }
+location: optional object { name, region }
 
 The location of the instance’s current container placement.
 

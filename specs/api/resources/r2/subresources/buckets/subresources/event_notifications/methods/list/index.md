@@ -36,7 +36,7 @@ The preferred authorization scheme for interacting with the Cloudflare API. [Cre
 
 ##### Accepted Permissions (at least one required)
 
-`Workers R2 Storage Write``Workers R2 Storage Read`
+`Workers R2 Storage Metadata Read``AI Search Index Engine``Auto Rag Write Run Engine``Workers R2 Storage Write``Workers R2 Storage Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -64,7 +64,7 @@ minLength3
 
 <summary>
 
-"cf-r2-jurisdiction": optional "default"or "eu"or "us"or 2 more
+"cf-r2-jurisdiction": optional "default" or "eu" or "us" or 2 more
 
 </summary>
 
@@ -122,7 +122,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -146,7 +146,7 @@ messages: array of string
 
 <summary>
 
-result: object {bucketName, queues }
+result: object { bucketName, queues }
 
 </summary>
 
@@ -160,7 +160,7 @@ Name of the bucket.
 
 <summary>
 
-queues: optional array of object {queueId, queueName, rules }
+queues: optional array of object { queueId, queueName, rules }
 
 List of queues associated with the bucket.
 
@@ -182,7 +182,7 @@ Name of the queue.
 
 <summary>
 
-rules: optional array of object {actions, createdAt, description, 3 more }
+rules: optional array of object { actions, createdAt, description, 3 more }
 
 </summary>
 
@@ -190,7 +190,7 @@ rules: optional array of object {actions, createdAt, description, 3 more }
 
 <summary>
 
-actions: array of "PutObject"or "CopyObject"or "DeleteObject"or 2 more
+actions: array of "PutObject" or "CopyObject" or "DeleteObject" or 2 more
 
 Array of R2 object actions that will trigger notifications.
 

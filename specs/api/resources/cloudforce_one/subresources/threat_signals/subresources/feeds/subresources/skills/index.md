@@ -36,7 +36,7 @@ PUT/accounts/{account\_id}/cloudforce-one/v2/threat-signals/feeds/{feed\_id}/ski
 
 <summary>
 
-SkillGetResponse object {feed\_id, skills }
+SkillGetResponse object { feed\_id, skills }
 
 </summary>
 
@@ -50,7 +50,7 @@ formatuuid
 
 <summary>
 
-skills: array of object {id, config, created\_at, 7 more }
+skills: array of object { id, config, created\_at, 7 more }
 
 </summary>
 
@@ -92,7 +92,7 @@ prompt: string
 
 <summary>
 
-source: "default"or "custom"
+source: "default" or "custom"
 
 <code>default</code> for Cloudforce One managed skills (read-only), <code>custom</code> for account skills.
 
@@ -132,7 +132,7 @@ updated\_at: string
 
 <summary>
 
-SkillUpdateResponse object {feed\_id, skills }
+SkillUpdateResponse object { feed\_id, skills }
 
 </summary>
 
@@ -146,7 +146,7 @@ formatuuid
 
 <summary>
 
-skills: array of object {position, skill\_id }
+skills: array of object { position, skill\_id }
 
 </summary>
 

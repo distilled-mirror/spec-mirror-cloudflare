@@ -36,7 +36,7 @@ POST/zones/{zone\_id}/acm/total\_tls
 
 <summary>
 
-CertificateAuthority = "google"or "lets\_encrypt"or "ssl\_com"
+CertificateAuthority = "google" or "lets\_encrypt" or "ssl\_com"
 
 The Certificate Authority that Total TLS certificates will be issued through. Not returned in responses when Total TLS is disabled.
 
@@ -64,7 +64,7 @@ One of the following:
 
 <summary>
 
-TotalTLSGetResponse object {certificate\_authority, enabled, validity\_period }
+TotalTLSGetResponse object { certificate\_authority, enabled, validity\_period }
 
 </summary>
 
@@ -94,7 +94,7 @@ The validity period in days for the certificates ordered via Total TLS. Not retu
 
 <summary>
 
-TotalTLSUpdateResponse object {certificate\_authority, enabled, validity\_period }
+TotalTLSUpdateResponse object { certificate\_authority, enabled, validity\_period }
 
 </summary>
 
@@ -124,7 +124,7 @@ The validity period in days for the certificates ordered via Total TLS. Not retu
 
 <summary>
 
-TotalTLSEditResponse object {certificate\_authority, enabled, validity\_period }
+TotalTLSEditResponse object { certificate\_authority, enabled, validity\_period }
 
 </summary>
 
@@ -174,7 +174,7 @@ DELETE/zones/{zone\_id}/acm/custom\_trust\_store/{custom\_origin\_trust\_store\_
 
 <summary>
 
-CustomTrustStore object {id, certificate, expires\_on, 5 more }
+CustomTrustStore object { id, certificate, expires\_on, 5 more }
 
 </summary>
 
@@ -216,7 +216,7 @@ The type of hash used for the certificate.
 
 <summary>
 
-status: "initializing"or "pending\_deployment"or "active"or 3 more
+status: "initializing" or "pending\_deployment" or "active" or 3 more
 
 Status of the zone’s custom SSL.
 
@@ -276,7 +276,7 @@ formatdate-time
 
 <summary>
 
-CustomTrustStoreDeleteResponse object {id }
+CustomTrustStoreDeleteResponse object { id }
 
 </summary>
 

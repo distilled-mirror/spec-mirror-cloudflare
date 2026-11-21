@@ -76,7 +76,7 @@ maxLength32
 
 <summary>
 
-deletes: array of object {id }
+deletes: array of object { id }
 
 IDs of the trusted domain patterns to delete.
 
@@ -98,7 +98,7 @@ formatuuid
 
 <summary>
 
-patches: array of object {id, comments, created\_at, 6 more }
+patches: array of object { id, comments, created\_at, 6 more }
 
 Partial updates to apply — each entry carries the pattern’s ID and only the fields to change.
 
@@ -176,7 +176,7 @@ minLength1
 
 <summary>
 
-posts: array of object {is\_recent, is\_regex, is\_similarity, 6 more }
+posts: array of object { is\_recent, is\_regex, is\_similarity, 6 more }
 
 Trusted domain patterns to create.
 
@@ -254,7 +254,7 @@ formatdate-time
 
 <summary>
 
-puts: array of object {id, is\_recent, is\_regex, 6 more }
+puts: array of object { id, is\_recent, is\_regex, 6 more }
 
 Full replacements to apply — each entry carries the pattern’s ID and every field of its new value.
 
@@ -334,7 +334,7 @@ formatdate-time
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -356,7 +356,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -376,7 +376,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -398,7 +398,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -424,7 +424,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {deletes, patches, posts, puts }
+result: optional object { deletes, patches, posts, puts }
 
 </summary>
 
@@ -432,7 +432,7 @@ result: optional object {deletes, patches, posts, puts }
 
 <summary>
 
-deletes: optional array of object {id }
+deletes: optional array of object { id }
 
 </summary>
 
@@ -452,7 +452,7 @@ formatuuid
 
 <summary>
 
-patches: optional array of object {id, comments, created\_at, 6 more }
+patches: optional array of object { id, comments, created\_at, 6 more }
 
 </summary>
 
@@ -528,7 +528,7 @@ minLength1
 
 <summary>
 
-posts: optional array of object {id, comments, created\_at, 6 more }
+posts: optional array of object { id, comments, created\_at, 6 more }
 
 </summary>
 
@@ -604,7 +604,7 @@ minLength1
 
 <summary>
 
-puts: optional array of object {id, comments, created\_at, 6 more }
+puts: optional array of object { id, comments, created\_at, 6 more }
 
 </summary>
 

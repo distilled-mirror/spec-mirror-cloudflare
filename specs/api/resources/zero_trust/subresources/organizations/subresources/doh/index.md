@@ -34,7 +34,7 @@ PUT/accounts/{account\_id}/access/organizations/doh
 
 <summary>
 
-DOHGetResponse object {id, client\_id, doh\_jwt\_duration, 8 more }
+DOHGetResponse object { id, client\_id, doh\_jwt\_duration, 8 more }
 
 </summary>
 
@@ -118,7 +118,7 @@ Tags associated with the service token, as key-value pairs. On update, replaces 
 
 <summary>
 
-DOHUpdateResponse object {id, client\_id, doh\_jwt\_duration, 8 more }
+DOHUpdateResponse object { id, client\_id, doh\_jwt\_duration, 8 more }
 
 </summary>
 

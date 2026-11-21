@@ -28,7 +28,7 @@ GET/accounts/{account\_id}/stream/storage-usage
 
 <summary>
 
-VideoStorageUsageResponse object {creator, totalStorageMinutes, totalStorageMinutesLimit, videoCount }
+VideoStorageUsageResponse object { creator, totalStorageMinutes, totalStorageMinutesLimit, videoCount }
 
 </summary>
 

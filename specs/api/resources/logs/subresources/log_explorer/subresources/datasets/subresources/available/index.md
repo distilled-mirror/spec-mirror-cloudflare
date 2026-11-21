@@ -32,7 +32,7 @@ GET/{accounts\_or\_zones}/{account\_or\_zone\_id}/logs/explorer/datasets/availab
 
 <summary>
 
-AvailableDataset object {dataset, object\_type, schema, timestamp\_field }
+AvailableDataset object { dataset, object\_type, schema, timestamp\_field }
 
 A dataset type that the account or zone can create.
 
@@ -48,7 +48,7 @@ Dataset type name (e.g. <code>http_requests</code>).
 
 <summary>
 
-object\_type: "account"or "zone"
+object\_type: "account" or "zone"
 
 Whether this dataset type is account-scoped or zone-scoped.
 
@@ -72,7 +72,7 @@ One of the following:
 
 <summary>
 
-schema: object {properties, required, type }
+schema: object { properties, required, type }
 
 JSON Schema that describes the fields this dataset exposes.
 
@@ -108,7 +108,7 @@ The primary timestamp field name for this dataset.
 
 <summary>
 
-AvailableList object {errors, messages, success, result }
+AvailableList object { errors, messages, success, result }
 
 </summary>
 
@@ -138,7 +138,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -180,7 +180,7 @@ Dataset type name (e.g. <code>http_requests</code>).
 
 <summary>
 
-object\_type: "account"or "zone"
+object\_type: "account" or "zone"
 
 Whether this dataset type is account-scoped or zone-scoped.
 
@@ -204,7 +204,7 @@ One of the following:
 
 <summary>
 
-schema: object {properties, required, type }
+schema: object { properties, required, type }
 
 JSON Schema that describes the fields this dataset exposes.
 

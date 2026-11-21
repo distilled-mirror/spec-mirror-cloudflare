@@ -62,7 +62,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Workers Scripts Write`
+`Workers Editor``Workers Admin``Individual Workers Editor``Individual Workers Admin``Workers Scripts Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -137,7 +137,7 @@ Possible Content-Type(s) are: `application/javascript+module`, `text/javascript+
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -159,7 +159,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -179,7 +179,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -201,7 +201,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -235,7 +235,7 @@ The name used to identify the script.
 
 <summary>
 
-cache\_options: optional object {enabled, cross\_version\_cache }
+cache\_options: optional object { enabled, cross\_version\_cache }
 
 Global CacheW configuration for the Worker. When caching is on, the platform provisions a <code>cloudflare.app</code> zone for the Worker. A <code>type: worker</code> entry in the <code>exports</code> map can override this value for a single entrypoint.
 
@@ -287,7 +287,7 @@ Hashed script content, can be used in a If-None-Match header when updating.
 
 <summary>
 
-exports: optional map\[object {type, cache, state } or object {storage, type, container, state } or object {state, type } or 3 more]
+exports: optional map\[object { type, cache, state } or object { storage, type, container, state } or object { state, type } or 3 more]
 
 Declarative exports for the Worker’s most recent version, including Durable Object classes (with their <code>storage</code> backend) and named Worker entrypoints. Tombstoned lifecycle entries are omitted, so only live exports (<code>created</code> and <code>expecting-transfer</code>) are returned.
 
@@ -299,7 +299,7 @@ One of the following:
 
 <summary>
 
-Worker object {type, cache, state }
+Worker object { type, cache, state }
 
 A named Worker entrypoint export (<code>type: worker</code>). Worker entrypoints are always live (<code>state: created</code>) and carry no storage or lifecycle fields. The optional <code>cache</code> block overrides the Worker’s global <code>cache_options.enabled</code> for this entrypoint.
 
@@ -315,7 +315,7 @@ Marks this entry as a Worker entrypoint export.
 
 <summary>
 
-cache: optional object {enabled }
+cache: optional object { enabled }
 
 Cache override for this entrypoint. Overrides the Worker’s global <code>cache_options.enabled</code> for this entrypoint only.
 
@@ -345,7 +345,7 @@ Live export. May be omitted; defaults to <code>created</code>.
 
 <summary>
 
-WorkersDurableObjectExport object {storage, type, container, state }
+WorkersDurableObjectExport object { storage, type, container, state }
 
 A live Durable Object export (<code>state: created</code>, the default). The platform auto-provisions the namespace on first deploy, matches it on subsequent deploys, and never mutates or deletes it as a side effect of a code-only change. <code>storage</code> is required; <code>renamed_to</code>, <code>transferred_to</code> and <code>transfer_from</code> are not allowed on a live entry.
 
@@ -355,7 +355,7 @@ A live Durable Object export (<code>state: created</code>, the default). The pla
 
 <summary>
 
-storage: "sqlite"or "legacy-kv"
+storage: "sqlite" or "legacy-kv"
 
 Durable Object storage backend. <code>sqlite</code> is the recommended (and only) backend for new namespaces. <code>legacy-kv</code> is accepted only for a class whose namespace already exists as KV-backed; the <code>exports</code> flow never provisions a new <code>legacy-kv</code> namespace.
 
@@ -403,7 +403,7 @@ Live export. May be omitted; defaults to <code>created</code>.
 
 <summary>
 
-WorkersDurableObjectDeletedExport object {state, type }
+WorkersDurableObjectDeletedExport object { state, type }
 
 A <code>deleted</code> tombstone: retires the provisioned namespace for this class and all of its data. The class must be absent from the uploaded code and no other Worker in the account may bind to the namespace, otherwise the deploy is rejected. No other fields are allowed. Deletion is irreversible.
 
@@ -429,7 +429,7 @@ Marks this entry as a Durable Object export.
 
 <summary>
 
-WorkersDurableObjectRenamedExport object {renamed\_to, state, type }
+WorkersDurableObjectRenamedExport object { renamed\_to, state, type }
 
 A <code>renamed</code> tombstone: rewrites the provisioned namespace’s class name from this map key to <code>renamed_to</code>. The source class may stay in code during the rollout window (an info notice is emitted). <code>storage</code>, <code>transferred_to</code> and <code>transfer_from</code> are not allowed.
 
@@ -463,7 +463,7 @@ Marks this entry as a Durable Object export.
 
 <summary>
 
-WorkersDurableObjectTransferredExport object {state, transferred\_to, type }
+WorkersDurableObjectTransferredExport object { state, transferred\_to, type }
 
 A <code>transferred</code> tombstone (source side of a two-phase transfer): hands ownership of the provisioned namespace to another script in the same account, named by <code>transferred_to</code>. The target must have already deployed a matching <code>expecting-transfer</code> entry. The source class may stay in code during the rollout window (an info notice is emitted). <code>storage</code>, <code>renamed_to</code> and <code>transfer_from</code> are not allowed.
 
@@ -497,7 +497,7 @@ Marks this entry as a Durable Object export.
 
 <summary>
 
-WorkersDurableObjectExpectingTransferExport object {state, storage, transfer\_from, 2 more }
+WorkersDurableObjectExpectingTransferExport object { state, storage, transfer\_from, 2 more }
 
 The target side of a two-phase transfer (<code>state: expecting-transfer</code>). Declares that this script expects to receive a namespace for this class from the <code>transfer_from</code> script. This is a live entry, not a tombstone: bindings resolve through the source’s namespace until the source commits with a <code>transferred</code> tombstone. <code>storage</code> and <code>transfer_from</code> are required; <code>renamed_to</code> and <code>transferred_to</code> are not allowed.
 
@@ -513,7 +513,7 @@ Target side of a two-phase transfer.
 
 <summary>
 
-storage: "sqlite"or "legacy-kv"
+storage: "sqlite" or "legacy-kv"
 
 Durable Object storage backend. <code>sqlite</code> is the recommended (and only) backend for new namespaces. <code>legacy-kv</code> is accepted only for a class whose namespace already exists as KV-backed; the <code>exports</code> flow never provisions a new <code>legacy-kv</code> namespace.
 
@@ -611,7 +611,7 @@ formatdate-time
 
 <summary>
 
-named\_handlers: optional array of object {handlers, name }
+named\_handlers: optional array of object { handlers, name }
 
 Named exports, such as Durable Object class implementations and named entrypoints.
 
@@ -637,7 +637,7 @@ The name of the export.
 
 <summary>
 
-observability: optional object {enabled, agents, head\_sampling\_rate, 4 more }
+observability: optional object { enabled, agents, head\_sampling\_rate, 4 more }
 
 Observability settings for the Worker.
 
@@ -653,7 +653,7 @@ Whether observability is enabled for the Worker.
 
 <summary>
 
-agents: optional object {enabled, head\_sampling\_rate, persist }
+agents: optional object { enabled, head\_sampling\_rate, persist }
 
 Agents observability settings for the Worker.
 
@@ -691,7 +691,7 @@ The sampling rate for incoming requests. From 0 to 1 (1 = 100%, 0.1 = 10%). Defa
 
 <summary>
 
-issues: optional object {enabled }
+issues: optional object { enabled }
 
 Real-time Issues settings for the Worker.
 
@@ -711,7 +711,7 @@ Whether real-time Issues are enabled for the Worker.
 
 <summary>
 
-logs: optional object {enabled, invocation\_logs, destinations, 2 more }
+logs: optional object { enabled, invocation\_logs, destinations, 2 more }
 
 Log settings for the Worker.
 
@@ -761,7 +761,7 @@ Whether query strings are removed from request URLs in logs and traces.
 
 <summary>
 
-traces: optional object {destinations, enabled, head\_sampling\_rate, 2 more }
+traces: optional object { destinations, enabled, head\_sampling\_rate, 2 more }
 
 Trace settings for the Worker.
 
@@ -795,7 +795,7 @@ Whether trace persistence is enabled for the Worker.
 
 <summary>
 
-propagation\_policy: optional "authenticated"or "accept"
+propagation\_policy: optional "authenticated" or "accept"
 
 Controls how inbound trace context (traceparent/tracestate) headers on incoming requests are handled. “authenticated” honors inbound trace context only when accompanied by a valid trace auth token. “accept” unconditionally accepts inbound trace context. Requires the trace propagation feature to be enabled. Returns null when the trace propagation feature is not enabled for the account.
 
@@ -827,7 +827,7 @@ One of the following:
 
 <summary>
 
-placement: optional object {mode, last\_analyzed\_at, status } or object {region, last\_analyzed\_at, status } or object {hostname, last\_analyzed\_at, status } or 5 more
+placement: optional object { mode, last\_analyzed\_at, status } or object { region, last\_analyzed\_at, status } or object { hostname, last\_analyzed\_at, status } or 5 more
 
 Configuration for <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>. Specify mode=‘smart’ for Smart Placement, or one of region/hostname/host.
 
@@ -839,7 +839,7 @@ One of the following:
 
 <summary>
 
-object {mode, last\_analyzed\_at, status }
+object { mode, last\_analyzed\_at, status }
 
 </summary>
 
@@ -861,7 +861,7 @@ formatdate-time
 
 <summary>
 
-status: optional "SUCCESS"or "UNSUPPORTED\_APPLICATION"or "INSUFFICIENT\_INVOCATIONS"
+status: optional "SUCCESS" or "UNSUPPORTED\_APPLICATION" or "INSUFFICIENT\_INVOCATIONS"
 
 Status of <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
@@ -893,7 +893,7 @@ One of the following:
 
 <summary>
 
-object {region, last\_analyzed\_at, status }
+object { region, last\_analyzed\_at, status }
 
 </summary>
 
@@ -915,7 +915,7 @@ formatdate-time
 
 <summary>
 
-status: optional "SUCCESS"or "UNSUPPORTED\_APPLICATION"or "INSUFFICIENT\_INVOCATIONS"
+status: optional "SUCCESS" or "UNSUPPORTED\_APPLICATION" or "INSUFFICIENT\_INVOCATIONS"
 
 Status of <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
@@ -947,7 +947,7 @@ One of the following:
 
 <summary>
 
-object {hostname, last\_analyzed\_at, status }
+object { hostname, last\_analyzed\_at, status }
 
 </summary>
 
@@ -969,7 +969,7 @@ formatdate-time
 
 <summary>
 
-status: optional "SUCCESS"or "UNSUPPORTED\_APPLICATION"or "INSUFFICIENT\_INVOCATIONS"
+status: optional "SUCCESS" or "UNSUPPORTED\_APPLICATION" or "INSUFFICIENT\_INVOCATIONS"
 
 Status of <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
@@ -1001,7 +1001,7 @@ One of the following:
 
 <summary>
 
-object {host, last\_analyzed\_at, status }
+object { host, last\_analyzed\_at, status }
 
 </summary>
 
@@ -1023,7 +1023,7 @@ formatdate-time
 
 <summary>
 
-status: optional "SUCCESS"or "UNSUPPORTED\_APPLICATION"or "INSUFFICIENT\_INVOCATIONS"
+status: optional "SUCCESS" or "UNSUPPORTED\_APPLICATION" or "INSUFFICIENT\_INVOCATIONS"
 
 Status of <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
@@ -1055,7 +1055,7 @@ One of the following:
 
 <summary>
 
-object {mode, region, last\_analyzed\_at, status }
+object { mode, region, last\_analyzed\_at, status }
 
 </summary>
 
@@ -1083,7 +1083,7 @@ formatdate-time
 
 <summary>
 
-status: optional "SUCCESS"or "UNSUPPORTED\_APPLICATION"or "INSUFFICIENT\_INVOCATIONS"
+status: optional "SUCCESS" or "UNSUPPORTED\_APPLICATION" or "INSUFFICIENT\_INVOCATIONS"
 
 Status of <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
@@ -1115,7 +1115,7 @@ One of the following:
 
 <summary>
 
-object {hostname, mode, last\_analyzed\_at, status }
+object { hostname, mode, last\_analyzed\_at, status }
 
 </summary>
 
@@ -1143,7 +1143,7 @@ formatdate-time
 
 <summary>
 
-status: optional "SUCCESS"or "UNSUPPORTED\_APPLICATION"or "INSUFFICIENT\_INVOCATIONS"
+status: optional "SUCCESS" or "UNSUPPORTED\_APPLICATION" or "INSUFFICIENT\_INVOCATIONS"
 
 Status of <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
@@ -1175,7 +1175,7 @@ One of the following:
 
 <summary>
 
-object {host, mode, last\_analyzed\_at, status }
+object { host, mode, last\_analyzed\_at, status }
 
 </summary>
 
@@ -1203,7 +1203,7 @@ formatdate-time
 
 <summary>
 
-status: optional "SUCCESS"or "UNSUPPORTED\_APPLICATION"or "INSUFFICIENT\_INVOCATIONS"
+status: optional "SUCCESS" or "UNSUPPORTED\_APPLICATION" or "INSUFFICIENT\_INVOCATIONS"
 
 Status of <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
@@ -1235,7 +1235,7 @@ One of the following:
 
 <summary>
 
-object {mode, target, last\_analyzed\_at, status }
+object { mode, target, last\_analyzed\_at, status }
 
 </summary>
 
@@ -1249,7 +1249,7 @@ Targeted placement mode.
 
 <summary>
 
-target: array of object {region } or object {hostname } or object {host }
+target: array of object { region } or object { hostname } or object { host }
 
 Array of placement targets (currently limited to single target).
 
@@ -1261,7 +1261,7 @@ One of the following:
 
 <summary>
 
-Region object {region }
+Region object { region }
 
 </summary>
 
@@ -1279,7 +1279,7 @@ Cloud region in format ‘provider:region’.
 
 <summary>
 
-Hostname object {hostname }
+Hostname object { hostname }
 
 </summary>
 
@@ -1297,7 +1297,7 @@ HTTP hostname for targeted placement.
 
 <summary>
 
-Host object {host }
+Host object { host }
 
 </summary>
 
@@ -1327,7 +1327,7 @@ formatdate-time
 
 <summary>
 
-status: optional "SUCCESS"or "UNSUPPORTED\_APPLICATION"or "INSUFFICIENT\_INVOCATIONS"
+status: optional "SUCCESS" or "UNSUPPORTED\_APPLICATION" or "INSUFFICIENT\_INVOCATIONS"
 
 Status of <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
@@ -1363,7 +1363,7 @@ One of the following:
 
 <summary>
 
-Deprecatedplacement\_mode: optional "smart"or "targeted"
+Deprecatedplacement\_mode: optional "smart" or "targeted"
 
 Configuration for <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>. Specify mode=‘smart’ for Smart Placement, or one of region/hostname/host.
 
@@ -1387,7 +1387,7 @@ One of the following:
 
 <summary>
 
-Deprecatedplacement\_status: optional "SUCCESS"or "UNSUPPORTED\_APPLICATION"or "INSUFFICIENT\_INVOCATIONS"
+Deprecatedplacement\_status: optional "SUCCESS" or "UNSUPPORTED\_APPLICATION" or "INSUFFICIENT\_INVOCATIONS"
 
 Status of <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
@@ -1459,7 +1459,7 @@ Optional dispatch namespace the script belongs to.
 
 <summary>
 
-usage\_model: optional "standard"or "bundled"or "unbound"
+usage\_model: optional "standard" or "bundled" or "unbound"
 
 Usage model for the Worker invocations.
 

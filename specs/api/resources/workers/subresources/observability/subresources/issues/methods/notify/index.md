@@ -100,7 +100,7 @@ minLength1
 
 <summary>
 
-errors: array of object {message }
+errors: array of object { message }
 
 </summary>
 
@@ -116,7 +116,7 @@ message: string
 
 <summary>
 
-messages: array of object {message }
+messages: array of object { message }
 
 </summary>
 
@@ -132,7 +132,7 @@ message: "Successful request"
 
 <summary>
 
-result: object {run }
+result: object { run }
 
 </summary>
 
@@ -140,7 +140,7 @@ result: object {run }
 
 <summary>
 
-run: object {id, created, inactivitySeconds, 13 more }
+run: object { id, created, inactivitySeconds, 13 more }
 
 </summary>
 
@@ -160,7 +160,7 @@ inactivitySeconds: number
 
 <summary>
 
-initiatedBy: "automatic"or "manual"
+initiatedBy: "automatic" or "manual"
 
 </summary>
 
@@ -198,7 +198,7 @@ policyId: string
 
 <summary>
 
-status: "pending"or "succeeded"or "failed"
+status: "pending" or "succeeded" or "failed"
 
 </summary>
 
@@ -244,7 +244,7 @@ automationRevision: optional number
 
 <summary>
 
-scope: optional "account"or "service"
+scope: optional "account" or "service"
 
 </summary>
 
@@ -266,7 +266,7 @@ One of the following:
 
 <summary>
 
-triggerType: optional "occurrence\_threshold"or "recurrence\_after\_inactivity"
+triggerType: optional "occurrence\_threshold" or "recurrence\_after\_inactivity"
 
 </summary>
 

@@ -52,7 +52,7 @@ maxLength32
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -74,7 +74,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -94,7 +94,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -116,7 +116,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -158,7 +158,7 @@ maxLength32
 
 <summary>
 
-condition: optional object {request\_ip }
+condition: optional object { request\_ip }
 
 </summary>
 
@@ -166,7 +166,7 @@ condition: optional object {request\_ip }
 
 <summary>
 
-request\_ip: optional object {in, not\_in }
+request\_ip: optional object { in, not\_in }
 
 Client IP restrictions.
 
@@ -268,7 +268,7 @@ Policy identifier.
 
 <summary>
 
-effect: "allow"or "deny"
+effect: "allow" or "deny"
 
 Allow or deny operations against the resources.
 
@@ -292,7 +292,7 @@ One of the following:
 
 <summary>
 
-permission\_groups: array of object {id, meta, name }
+permission\_groups: array of object { id, meta, name }
 
 A set of permission groups that are specified to the policy.
 
@@ -308,7 +308,7 @@ Identifier of the permission group.
 
 <summary>
 
-meta: optional object {category, deprecated, description, 5 more }
+meta: optional object { category, deprecated, description, 5 more }
 
 Attributes associated to the permission group.
 
@@ -382,7 +382,7 @@ Name of the permission group.
 
 <summary>
 
-resources: map\[string]or map\[map\[string]]
+resources: map\[string] or map\[map\[string]]
 
 A list of resource names that the policy applies to.
 
@@ -426,7 +426,7 @@ The type of service that provisioned the token. Only present for provisioned Acc
 
 <summary>
 
-status: optional "active"or "disabled"or "expired"
+status: optional "active" or "disabled" or "expired"
 
 Status of the token.
 

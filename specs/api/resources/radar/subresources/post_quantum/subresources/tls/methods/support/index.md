@@ -76,7 +76,7 @@ minLength1
 
 <summary>
 
-result: object {bugs, host, kex, 2 more }
+result: object { bugs, host, kex, 2 more }
 
 </summary>
 
@@ -84,7 +84,7 @@ result: object {bugs, host, kex, 2 more }
 
 <summary>
 
-bugs: object {hrrFailure, splitClientHello, unknownKeyshare }
+bugs: object { hrrFailure, splitClientHello, unknownKeyshare }
 
 </summary>
 

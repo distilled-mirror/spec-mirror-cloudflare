@@ -56,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Queues Write``Queues Read``Workers Scripts Write``Workers Scripts Read`
+`Workers Metadata Read-Only``Workers Editor``Workers Content Read-Only``Workers Admin``Queues Metadata Read``Queues Write``Queues Read``Workers Scripts Write``Workers Scripts Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -114,7 +114,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -150,7 +150,7 @@ One of the following:
 
 <summary>
 
-Worker object {consumer\_id, created\_on, dead\_letter\_queue, 4 more }
+Worker object { consumer\_id, created\_on, dead\_letter\_queue, 4 more }
 
 </summary>
 
@@ -188,7 +188,7 @@ Name of a Worker
 
 <summary>
 
-settings: optional object {batch\_size, max\_concurrency, max\_retries, 2 more }
+settings: optional object { batch\_size, max\_concurrency, max\_retries, 2 more }
 
 </summary>
 
@@ -238,7 +238,7 @@ type: optional "worker"
 
 <summary>
 
-HTTPPull object {consumer\_id, created\_on, dead\_letter\_queue, 3 more }
+HTTPPull object { consumer\_id, created\_on, dead\_letter\_queue, 3 more }
 
 </summary>
 
@@ -270,7 +270,7 @@ queue\_name: optional string
 
 <summary>
 
-settings: optional object {batch\_size, max\_retries, retry\_delay, visibility\_timeout\_ms }
+settings: optional object { batch\_size, max\_retries, retry\_delay, visibility\_timeout\_ms }
 
 </summary>
 

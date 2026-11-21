@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/accounts/{account\_id}/stream/direct\_upload
 
-Creates a direct upload endpoint that allows an end-user to upload a video without an API key.
+Creates a direct upload endpoint that allows an end-user to upload a video without an API key. `encodingMode` is fixed when the upload URL is created and cannot be changed when the generated URL is used.
 
 ##### Security
 
@@ -104,6 +104,30 @@ maxLength64
 
 [Link to this property](#)%20stream.direct_upload%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20creator%20%3E%20(schema)>)
 
+<details>
+
+<summary>
+
+encodingMode: optional "default" or "previewFirst"
+
+Specifies whether to generate a preview rendition before the standard encoding ladder. <code>default</code> generates only the standard encoding ladder. <code>previewFirst</code> generates a preview rendition first.
+
+</summary>
+
+One of the following:
+
+"default"
+
+<a href="#">Link to this property</a>
+
+"previewFirst"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20stream.direct_upload%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20encodingMode%20%3E%20(schema)>)
+
 expiry: optional string
 
 The date and time after upload when videos will not be accepted.
@@ -146,7 +170,7 @@ minimum0
 
 <summary>
 
-watermark: optional object {uid }
+watermark: optional object { uid }
 
 </summary>
 
@@ -168,7 +192,7 @@ maxLength32
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -190,7 +214,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -210,7 +234,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation\_url, source }
 
 </summary>
 
@@ -232,7 +256,7 @@ documentation\_url: optional string
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
@@ -258,7 +282,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {scheduledDeletion, uid, uploadURL, watermark }
+result: optional object { scheduledDeletion, uid, uploadURL, watermark }
 
 </summary>
 

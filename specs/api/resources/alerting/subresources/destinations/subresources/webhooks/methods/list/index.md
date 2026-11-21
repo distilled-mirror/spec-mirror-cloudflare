@@ -76,7 +76,7 @@ maxLength32
 
 <summary>
 
-errors: array of object {message, code }
+errors: array of object { message, code }
 
 </summary>
 
@@ -98,7 +98,7 @@ minimum1000
 
 <summary>
 
-messages: array of object {message, code }
+messages: array of object { message, code }
 
 </summary>
 
@@ -178,7 +178,7 @@ Optional secret that will be passed in the <code>cf-webhook-auth</code> header w
 
 <summary>
 
-type: optional "datadog"or "discord"or "feishu"or 5 more
+type: optional "datadog" or "discord" or "feishu" or 5 more
 
 Type of webhook endpoint.
 

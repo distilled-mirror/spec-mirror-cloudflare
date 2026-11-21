@@ -40,7 +40,7 @@ PUT/accounts/{account\_id}/magic/cf\_interconnects
 
 <summary>
 
-CfInterconnectListResponse object {interconnects }
+CfInterconnectListResponse object { interconnects }
 
 </summary>
 
@@ -48,7 +48,7 @@ CfInterconnectListResponse object {interconnects }
 
 <summary>
 
-interconnects: optional array of object {id, automatic\_return\_routing, bgp, 12 more }
+interconnects: optional array of object { id, automatic\_return\_routing, bgp, 12 more }
 
 </summary>
 
@@ -70,7 +70,7 @@ True if automatic stateful return routing should be enabled for a tunnel, false 
 
 <summary>
 
-bgp: optional object {as\_no, cloudflare\_endpoint, customer\_asn, 5 more }
+bgp: optional object { as\_no, cloudflare\_endpoint, customer\_asn, 5 more }
 
 </summary>
 
@@ -167,7 +167,7 @@ An optional description of the interconnect.
 
 <summary>
 
-gre: optional object {cloudflare\_endpoint }
+gre: optional object { cloudflare\_endpoint }
 
 Omitted in responses for version 1.5 interconnects.
 
@@ -187,7 +187,7 @@ The IP address assigned to the Cloudflare side of the GRE tunnel created as part
 
 <summary>
 
-health\_check: optional object {direction, enabled, rate, 3 more }
+health\_check: optional object { direction, enabled, rate, 3 more }
 
 </summary>
 
@@ -195,7 +195,7 @@ health\_check: optional object {direction, enabled, rate, 3 more }
 
 <summary>
 
-direction: optional "unidirectional"or "bidirectional"
+direction: optional "unidirectional" or "bidirectional"
 
 The direction of the flow of the healthcheck. Either unidirectional, where the probe comes to you via the interconnect and the result comes back to Cloudflare via the open Internet, or bidirectional where both the probe and result come and go via the interconnect.
 
@@ -237,7 +237,7 @@ The source IPv4 address used for bidirectional health checks. Supported only for
 
 <summary>
 
-target: optional object {effective, saved } or string
+target: optional object { effective, saved } or string
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target. Must be in object form if the x-magic-new-hc-target header is set to true and string form if x-magic-new-hc-target is absent or set to false.
 
@@ -249,7 +249,7 @@ One of the following:
 
 <summary>
 
-MagicHealthCheckTarget object {effective, saved }
+MagicHealthCheckTarget object { effective, saved }
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target.
 
@@ -351,7 +351,7 @@ maxLength32
 
 <summary>
 
-CfInterconnectGetResponse object {interconnect }
+CfInterconnectGetResponse object { interconnect }
 
 </summary>
 
@@ -359,7 +359,7 @@ CfInterconnectGetResponse object {interconnect }
 
 <summary>
 
-interconnect: optional object {id, automatic\_return\_routing, bgp, 12 more }
+interconnect: optional object { id, automatic\_return\_routing, bgp, 12 more }
 
 </summary>
 
@@ -381,7 +381,7 @@ True if automatic stateful return routing should be enabled for a tunnel, false 
 
 <summary>
 
-bgp: optional object {as\_no, cloudflare\_endpoint, customer\_asn, 5 more }
+bgp: optional object { as\_no, cloudflare\_endpoint, customer\_asn, 5 more }
 
 </summary>
 
@@ -478,7 +478,7 @@ An optional description of the interconnect.
 
 <summary>
 
-gre: optional object {cloudflare\_endpoint }
+gre: optional object { cloudflare\_endpoint }
 
 Omitted in responses for version 1.5 interconnects.
 
@@ -498,7 +498,7 @@ The IP address assigned to the Cloudflare side of the GRE tunnel created as part
 
 <summary>
 
-health\_check: optional object {direction, enabled, rate, 3 more }
+health\_check: optional object { direction, enabled, rate, 3 more }
 
 </summary>
 
@@ -506,7 +506,7 @@ health\_check: optional object {direction, enabled, rate, 3 more }
 
 <summary>
 
-direction: optional "unidirectional"or "bidirectional"
+direction: optional "unidirectional" or "bidirectional"
 
 The direction of the flow of the healthcheck. Either unidirectional, where the probe comes to you via the interconnect and the result comes back to Cloudflare via the open Internet, or bidirectional where both the probe and result come and go via the interconnect.
 
@@ -548,7 +548,7 @@ The source IPv4 address used for bidirectional health checks. Supported only for
 
 <summary>
 
-target: optional object {effective, saved } or string
+target: optional object { effective, saved } or string
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target. Must be in object form if the x-magic-new-hc-target header is set to true and string form if x-magic-new-hc-target is absent or set to false.
 
@@ -560,7 +560,7 @@ One of the following:
 
 <summary>
 
-MagicHealthCheckTarget object {effective, saved }
+MagicHealthCheckTarget object { effective, saved }
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target.
 
@@ -662,7 +662,7 @@ maxLength32
 
 <summary>
 
-CfInterconnectUpdateResponse object {modified, modified\_interconnect }
+CfInterconnectUpdateResponse object { modified, modified\_interconnect }
 
 </summary>
 
@@ -674,7 +674,7 @@ modified: optional boolean
 
 <summary>
 
-modified\_interconnect: optional object {id, automatic\_return\_routing, bgp, 12 more }
+modified\_interconnect: optional object { id, automatic\_return\_routing, bgp, 12 more }
 
 </summary>
 
@@ -696,7 +696,7 @@ True if automatic stateful return routing should be enabled for a tunnel, false 
 
 <summary>
 
-bgp: optional object {as\_no, cloudflare\_endpoint, customer\_asn, 5 more }
+bgp: optional object { as\_no, cloudflare\_endpoint, customer\_asn, 5 more }
 
 </summary>
 
@@ -793,7 +793,7 @@ An optional description of the interconnect.
 
 <summary>
 
-gre: optional object {cloudflare\_endpoint }
+gre: optional object { cloudflare\_endpoint }
 
 Omitted in responses for version 1.5 interconnects.
 
@@ -813,7 +813,7 @@ The IP address assigned to the Cloudflare side of the GRE tunnel created as part
 
 <summary>
 
-health\_check: optional object {direction, enabled, rate, 3 more }
+health\_check: optional object { direction, enabled, rate, 3 more }
 
 </summary>
 
@@ -821,7 +821,7 @@ health\_check: optional object {direction, enabled, rate, 3 more }
 
 <summary>
 
-direction: optional "unidirectional"or "bidirectional"
+direction: optional "unidirectional" or "bidirectional"
 
 The direction of the flow of the healthcheck. Either unidirectional, where the probe comes to you via the interconnect and the result comes back to Cloudflare via the open Internet, or bidirectional where both the probe and result come and go via the interconnect.
 
@@ -863,7 +863,7 @@ The source IPv4 address used for bidirectional health checks. Supported only for
 
 <summary>
 
-target: optional object {effective, saved } or string
+target: optional object { effective, saved } or string
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target. Must be in object form if the x-magic-new-hc-target header is set to true and string form if x-magic-new-hc-target is absent or set to false.
 
@@ -875,7 +875,7 @@ One of the following:
 
 <summary>
 
-MagicHealthCheckTarget object {effective, saved }
+MagicHealthCheckTarget object { effective, saved }
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target.
 
@@ -977,7 +977,7 @@ maxLength32
 
 <summary>
 
-CfInterconnectBulkUpdateResponse object {modified, modified\_interconnects }
+CfInterconnectBulkUpdateResponse object { modified, modified\_interconnects }
 
 </summary>
 
@@ -989,7 +989,7 @@ modified: optional boolean
 
 <summary>
 
-modified\_interconnects: optional array of object {id, automatic\_return\_routing, bgp, 12 more }
+modified\_interconnects: optional array of object { id, automatic\_return\_routing, bgp, 12 more }
 
 </summary>
 
@@ -1011,7 +1011,7 @@ True if automatic stateful return routing should be enabled for a tunnel, false 
 
 <summary>
 
-bgp: optional object {as\_no, cloudflare\_endpoint, customer\_asn, 5 more }
+bgp: optional object { as\_no, cloudflare\_endpoint, customer\_asn, 5 more }
 
 </summary>
 
@@ -1108,7 +1108,7 @@ An optional description of the interconnect.
 
 <summary>
 
-gre: optional object {cloudflare\_endpoint }
+gre: optional object { cloudflare\_endpoint }
 
 Omitted in responses for version 1.5 interconnects.
 
@@ -1128,7 +1128,7 @@ The IP address assigned to the Cloudflare side of the GRE tunnel created as part
 
 <summary>
 
-health\_check: optional object {direction, enabled, rate, 3 more }
+health\_check: optional object { direction, enabled, rate, 3 more }
 
 </summary>
 
@@ -1136,7 +1136,7 @@ health\_check: optional object {direction, enabled, rate, 3 more }
 
 <summary>
 
-direction: optional "unidirectional"or "bidirectional"
+direction: optional "unidirectional" or "bidirectional"
 
 The direction of the flow of the healthcheck. Either unidirectional, where the probe comes to you via the interconnect and the result comes back to Cloudflare via the open Internet, or bidirectional where both the probe and result come and go via the interconnect.
 
@@ -1178,7 +1178,7 @@ The source IPv4 address used for bidirectional health checks. Supported only for
 
 <summary>
 
-target: optional object {effective, saved } or string
+target: optional object { effective, saved } or string
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target. Must be in object form if the x-magic-new-hc-target header is set to true and string form if x-magic-new-hc-target is absent or set to false.
 
@@ -1190,7 +1190,7 @@ One of the following:
 
 <summary>
 
-MagicHealthCheckTarget object {effective, saved }
+MagicHealthCheckTarget object { effective, saved }
 
 The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to <code>customer_gre_endpoint address</code>. This field is ignored for bidirectional healthchecks as the interface\_address (not assigned to the Cloudflare side of the tunnel) is used as the target.
 

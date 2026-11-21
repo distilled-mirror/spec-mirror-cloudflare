@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/accounts/{account\_id}/realtime/kit/{app\_id}/meetings/{meeting\_id}/active-session/kick-all
 
-Kicks all participants from an active session for the given meeting ID.
+Kicks all participants from an active session for the given meeting ID and ends the session. Participants in connected breakout rooms are kicked as well.
 
 ##### Security
 
@@ -84,15 +84,17 @@ meeting\_id: string
 
 <summary>
 
-data: optional object {action, kicked\_participants\_count }
+data: optional object { action, kicked\_participants\_count }
 
 </summary>
 
-action: optional string
+action: optional "kick-all"
 
 <a href="#">Link to this property</a>
 
 kicked\_participants\_count: optional number
+
+Number of connections (peers) that were in the session when it was ended.
 
 <a href="#">Link to this property</a>
 
@@ -118,13 +120,81 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/realtime/kit/$APP
 
 200 example
 
+400 example
+
+401 example
+
+404 example
+
+404 example
+
+500 example
+
 ```
 {
   "data": {
-    "action": "action",
-    "kicked_participants_count": 0
+    "action": "kick-all",
+    "kicked_participants_count": 3
   },
   "success": true
+}
+```
+
+```
+{
+  "error": {
+    "code": 400,
+    "details": [
+      {
+        "code": "invalid_format",
+        "field": "meeting_id",
+        "location": "path",
+        "message": "Invalid GUID"
+      }
+    ],
+    "message": "Request validation failed"
+  },
+  "success": false
+}
+```
+
+```
+{
+  "error": {
+    "code": 401,
+    "message": "app not found"
+  },
+  "success": false
+}
+```
+
+```
+{
+  "error": {
+    "code": 404,
+    "message": "No active session found for meeting id: 6bf2b8be-04dd-4191-b602-1128921a306b"
+  },
+  "success": false
+}
+```
+
+```
+{
+  "error": {
+    "code": 404,
+    "message": "Meeting 6bf2b8be-04dd-4191-b602-1128921a306b not found for organization 4f6c1a8e-2b39-4f6b-9c2d-7a1e5b3c9d10"
+  },
+  "success": false
+}
+```
+
+```
+{
+  "error": {
+    "code": 500,
+    "message": "Internal Server Error"
+  },
+  "success": false
 }
 ```
 
@@ -132,12 +202,80 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/realtime/kit/$APP
 
 200 example
 
+400 example
+
+401 example
+
+404 example
+
+404 example
+
+500 example
+
 ```
 {
   "data": {
-    "action": "action",
-    "kicked_participants_count": 0
+    "action": "kick-all",
+    "kicked_participants_count": 3
   },
   "success": true
+}
+```
+
+```
+{
+  "error": {
+    "code": 400,
+    "details": [
+      {
+        "code": "invalid_format",
+        "field": "meeting_id",
+        "location": "path",
+        "message": "Invalid GUID"
+      }
+    ],
+    "message": "Request validation failed"
+  },
+  "success": false
+}
+```
+
+```
+{
+  "error": {
+    "code": 401,
+    "message": "app not found"
+  },
+  "success": false
+}
+```
+
+```
+{
+  "error": {
+    "code": 404,
+    "message": "No active session found for meeting id: 6bf2b8be-04dd-4191-b602-1128921a306b"
+  },
+  "success": false
+}
+```
+
+```
+{
+  "error": {
+    "code": 404,
+    "message": "Meeting 6bf2b8be-04dd-4191-b602-1128921a306b not found for organization 4f6c1a8e-2b39-4f6b-9c2d-7a1e5b3c9d10"
+  },
+  "success": false
+}
+```
+
+```
+{
+  "error": {
+    "code": 500,
+    "message": "Internal Server Error"
+  },
+  "success": false
 }
 ```

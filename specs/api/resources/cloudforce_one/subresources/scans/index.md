@@ -30,7 +30,7 @@ GET/accounts/{account\_id}/cloudforce-one/scans/results/{config\_id}
 
 <summary>
 
-ScanResult object {number, proto, status }
+ScanResult object { number, proto, status }
 
 </summary>
 
@@ -54,7 +54,7 @@ status: optional string
 
 <summary>
 
-ResultGetResponse object {"1.1.1.1" }
+ResultGetResponse object { "1.1.1.1" }
 
 </summary>
 
@@ -110,7 +110,7 @@ DELETE/accounts/{account\_id}/cloudforce-one/scans/config/{config\_id}
 
 <summary>
 
-ConfigListResponse object {id, account\_id, frequency, 2 more }
+ConfigListResponse object { id, account\_id, frequency, 2 more }
 
 </summary>
 
@@ -150,7 +150,7 @@ Defines a list of ports to scan. Valid values are:“default”, “all”, or a
 
 <summary>
 
-ConfigCreateResponse object {id, account\_id, frequency, 2 more }
+ConfigCreateResponse object { id, account\_id, frequency, 2 more }
 
 </summary>
 
@@ -190,7 +190,7 @@ Defines a list of ports to scan. Valid values are:“default”, “all”, or a
 
 <summary>
 
-ConfigEditResponse object {id, account\_id, frequency, 2 more }
+ConfigEditResponse object { id, account\_id, frequency, 2 more }
 
 </summary>
 
