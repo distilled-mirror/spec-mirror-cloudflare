@@ -1462,7 +1462,7 @@ Name of the entity that made the services available for purchase.
 
 x\_BillableMetricId: string
 
-The unique identifier for the billable metric in the Cloudflare catalog. Cloudflare extension; replaces FOCUS SkuId.
+The unique identifier for the billable metric in the Cloudflare catalog. For cost billed under a since-archived billable metric this is the metric’s catalog public id (a UUID) rather than its usage metric name, so it stays separate from the live metric that replaced it. Cloudflare extension; replaces FOCUS SkuId.
 
 <a href="#">Link to this property</a>
 
