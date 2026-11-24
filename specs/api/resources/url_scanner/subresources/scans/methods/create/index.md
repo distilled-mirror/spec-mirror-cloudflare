@@ -1,4 +1,7 @@
 ---
+agent:
+  instructions: "This site offers a search API that returns relevant content across the entire site. Use the search endpoint to find information instead of crawling individual pages."
+  search: "https://developers.cloudflare.com/.well-known/search?q={query}"
 title: Create URL Scan
 ---
 
@@ -82,7 +85,7 @@ Enable agent readiness checks.
 
 <summary>
 
-country: optional "AE" or "AL" or "AM" or 137 more
+country: optional "AE" or "AL" or "AM" or 126 more
 
 Country to geo egress from
 
@@ -174,10 +177,6 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-"CD"
-
-<a href="#">Link to this property</a>
-
 "CH"
 
 <a href="#">Link to this property</a>
@@ -199,10 +198,6 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "CR"
-
-<a href="#">Link to this property</a>
-
-"CW"
 
 <a href="#">Link to this property</a>
 
@@ -270,10 +265,6 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-"GD"
-
-<a href="#">Link to this property</a>
-
 "GE"
 
 <a href="#">Link to this property</a>
@@ -290,10 +281,6 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-"GU"
-
-<a href="#">Link to this property</a>
-
 "GY"
 
 <a href="#">Link to this property</a>
@@ -307,10 +294,6 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "HR"
-
-<a href="#">Link to this property</a>
-
-"HT"
 
 <a href="#">Link to this property</a>
 
@@ -394,10 +377,6 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-"LR"
-
-<a href="#">Link to this property</a>
-
 "LT"
 
 <a href="#">Link to this property</a>
@@ -410,10 +389,6 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-"MA"
-
-<a href="#">Link to this property</a>
-
 "MD"
 
 <a href="#">Link to this property</a>
@@ -423,10 +398,6 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "MK"
-
-<a href="#">Link to this property</a>
-
-"MM"
 
 <a href="#">Link to this property</a>
 
@@ -447,10 +418,6 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "MV"
-
-<a href="#">Link to this property</a>
-
-"MW"
 
 <a href="#">Link to this property</a>
 
@@ -594,10 +561,6 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-"TJ"
-
-<a href="#">Link to this property</a>
-
 "TN"
 
 <a href="#">Link to this property</a>
@@ -627,10 +590,6 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "US"
-
-<a href="#">Link to this property</a>
-
-"UZ"
 
 <a href="#">Link to this property</a>
 

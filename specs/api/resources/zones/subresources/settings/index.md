@@ -7936,7 +7936,7 @@ formatdate-time
 
 ZonesSearchForAgents object { id, value, editable, modified_on }
 
-When enabled, Cloudflare provisions an AI Search instance for the zone and exposes a /.well-known/ai-search endpoint that AI agents can query. Markdown responses also receive an agent: YAML capability block advertising the search endpoint.
+When enabled, Cloudflare provisions an AI Search instance for the zone and exposes a /.well-known/search endpoint that AI agents can query. Available on all plans. Markdown responses also receive an agent: YAML capability block advertising the search endpoint.
 
 </summary>
 
@@ -14316,7 +14316,7 @@ formatdate-time
 
 ZonesSearchForAgents object { id, value, editable, modified_on }
 
-When enabled, Cloudflare provisions an AI Search instance for the zone and exposes a /.well-known/ai-search endpoint that AI agents can query. Markdown responses also receive an agent: YAML capability block advertising the search endpoint.
+When enabled, Cloudflare provisions an AI Search instance for the zone and exposes a /.well-known/search endpoint that AI agents can query. Available on all plans. Markdown responses also receive an agent: YAML capability block advertising the search endpoint.
 
 </summary>
 
@@ -20696,7 +20696,7 @@ formatdate-time
 
 ZonesSearchForAgents object { id, value, editable, modified_on }
 
-When enabled, Cloudflare provisions an AI Search instance for the zone and exposes a /.well-known/ai-search endpoint that AI agents can query. Markdown responses also receive an agent: YAML capability block advertising the search endpoint.
+When enabled, Cloudflare provisions an AI Search instance for the zone and exposes a /.well-known/search endpoint that AI agents can query. Available on all plans. Markdown responses also receive an agent: YAML capability block advertising the search endpoint.
 
 </summary>
 
@@ -26988,7 +26988,7 @@ formatdate-time
 
 ZonesSearchForAgents object { id, value, editable, modified_on }
 
-When enabled, Cloudflare provisions an AI Search instance for the zone and exposes a /.well-known/ai-search endpoint that AI agents can query. Markdown responses also receive an agent: YAML capability block advertising the search endpoint.
+When enabled, Cloudflare provisions an AI Search instance for the zone and exposes a /.well-known/search endpoint that AI agents can query. Available on all plans. Markdown responses also receive an agent: YAML capability block advertising the search endpoint.
 
 </summary>
 

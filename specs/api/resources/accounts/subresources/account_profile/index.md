@@ -1,4 +1,7 @@
 ---
+agent:
+  instructions: "This site offers a search API that returns relevant content across the entire site. Use the search endpoint to find information instead of crawling individual pages."
+  search: "https://developers.cloudflare.com/.well-known/search?q={query}"
 title: Account Profile
 ---
 
@@ -32,7 +35,7 @@ PUT/accounts/{account\_id}/profile
 
 <summary>
 
-AccountProfile object { business\_address, business\_email, business\_name, 2 more }
+AccountProfileGetResponse object { business\_address, business\_email, business\_name, 2 more }
 
 </summary>
 
@@ -58,4 +61,4 @@ external\_metadata: string
 
 </details>
 
-[Link to this property](#)%20accounts.account_profile%20%3E%20(model)%20account_profile%20%3E%20(schema)>)
+[Link to this property](#)%20accounts.account_profile%20%3E%20(model)%20account_profile_get_response%20%3E%20(schema)>)

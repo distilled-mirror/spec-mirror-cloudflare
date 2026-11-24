@@ -1,4 +1,7 @@
 ---
+agent:
+  instructions: "This site offers a search API that returns relevant content across the entire site. Use the search endpoint to find information instead of crawling individual pages."
+  search: "https://developers.cloudflare.com/.well-known/search?q={query}"
 title: Get organization
 ---
 
@@ -92,7 +95,7 @@ pointer: optional string
 
 <summary>
 
-result: <a href="https://developers.cloudflare.com/api/resources/organizations#(resource)%20organizations%20%3E%20(model)%20organization%20%3E%20(schema)">Organization</a> { id, create\_time, meta, 3 more }
+result: object { id, create\_time, meta, 3 more }
 
 References an Organization in the Cloudflare data model.
 
@@ -212,7 +215,7 @@ name: string
 
 <summary>
 
-profile: optional <a href="https://developers.cloudflare.com/api/resources/accounts#(resource)%20accounts.account_profile%20%3E%20(model)%20account_profile%20%3E%20(schema)">AccountProfile</a> { business\_address, business\_email, business\_name, 2 more }
+profile: optional object { business\_address, business\_email, business\_name, 2 more }
 
 </summary>
 

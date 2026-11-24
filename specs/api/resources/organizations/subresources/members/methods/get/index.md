@@ -1,4 +1,7 @@
 ---
+agent:
+  instructions: "This site offers a search API that returns relevant content across the entire site. Use the search endpoint to find information instead of crawling individual pages."
+  search: "https://developers.cloudflare.com/.well-known/search?q={query}"
 title: Get organization member
 ---
 
@@ -100,7 +103,7 @@ pointer: optional string
 
 <summary>
 
-result: <a href="https://developers.cloudflare.com/api/resources/organizations#(resource)%20organizations.members%20%3E%20(model)%20organization_member%20%3E%20(schema)">OrganizationMember</a> { id, create\_time, meta, 4 more }
+result: object { id, create\_time, meta, 4 more }
 
 </summary>
 

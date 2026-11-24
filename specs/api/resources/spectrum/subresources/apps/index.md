@@ -1,4 +1,7 @@
 ---
+agent:
+  instructions: "This site offers a search API that returns relevant content across the entire site. Use the search endpoint to find information instead of crawling individual pages."
+  search: "https://developers.cloudflare.com/.well-known/search?q={query}"
 title: Apps
 ---
 
@@ -44,7 +47,7 @@ DELETE/zones/{zone\_id}/spectrum/apps/{app\_id}
 
 <summary>
 
-AppListResponse = object { id, created\_on, dns, 15 more } or object { id, created\_on, dns, 7 more }
+AppListResponse = object { id, created\_on, dns, 16 more } or object { id, created\_on, dns, 7 more }
 
 </summary>
 
@@ -54,7 +57,7 @@ One of the following:
 
 <summary>
 
-SpectrumConfigAppConfig object { id, created\_on, dns, 15 more }
+SpectrumConfigAppConfig object { id, created\_on, dns, 16 more }
 
 </summary>
 
@@ -129,6 +132,12 @@ One of the following:
 argo\_smart\_routing: optional boolean
 
 Enables Argo Smart Routing for this application. Notes: Only available for TCP or UDP applications with traffic\_type set to “direct”.
+
+<a href="#">Link to this property</a>
+
+edge\_alpn\_protocols: optional array of string
+
+ALPN protocol IDs the edge offers on client TLS connections, in preference order, for example <code>["h2"]</code> for gRPC or <code>["postgresql"]</code> for PostgreSQL direct TLS. When set, clients that offer none of these protocols, or no ALPN at all, are disconnected. Empty means no ALPN. Notes: Requires tls “flexible”, “full” or “strict”, and is not available with traffic\_type “ftp”. IDs are case-sensitive and unique, each 1 to 255 bytes; the list encodes to at most 65535 bytes, counting each ID plus one length byte.
 
 <a href="#">Link to this property</a>
 
@@ -428,7 +437,7 @@ string
 
 <summary>
 
-AppGetResponse = object { id, created\_on, dns, 15 more } or object { id, created\_on, dns, 7 more }
+AppGetResponse = object { id, created\_on, dns, 16 more } or object { id, created\_on, dns, 7 more }
 
 </summary>
 
@@ -438,7 +447,7 @@ One of the following:
 
 <summary>
 
-SpectrumConfigAppConfig object { id, created\_on, dns, 15 more }
+SpectrumConfigAppConfig object { id, created\_on, dns, 16 more }
 
 </summary>
 
@@ -513,6 +522,12 @@ One of the following:
 argo\_smart\_routing: optional boolean
 
 Enables Argo Smart Routing for this application. Notes: Only available for TCP or UDP applications with traffic\_type set to “direct”.
+
+<a href="#">Link to this property</a>
+
+edge\_alpn\_protocols: optional array of string
+
+ALPN protocol IDs the edge offers on client TLS connections, in preference order, for example <code>["h2"]</code> for gRPC or <code>["postgresql"]</code> for PostgreSQL direct TLS. When set, clients that offer none of these protocols, or no ALPN at all, are disconnected. Empty means no ALPN. Notes: Requires tls “flexible”, “full” or “strict”, and is not available with traffic\_type “ftp”. IDs are case-sensitive and unique, each 1 to 255 bytes; the list encodes to at most 65535 bytes, counting each ID plus one length byte.
 
 <a href="#">Link to this property</a>
 
@@ -812,7 +827,7 @@ string
 
 <summary>
 
-AppCreateResponse = object { id, created\_on, dns, 15 more } or object { id, created\_on, dns, 7 more }
+AppCreateResponse = object { id, created\_on, dns, 16 more } or object { id, created\_on, dns, 7 more }
 
 </summary>
 
@@ -822,7 +837,7 @@ One of the following:
 
 <summary>
 
-SpectrumConfigAppConfig object { id, created\_on, dns, 15 more }
+SpectrumConfigAppConfig object { id, created\_on, dns, 16 more }
 
 </summary>
 
@@ -897,6 +912,12 @@ One of the following:
 argo\_smart\_routing: optional boolean
 
 Enables Argo Smart Routing for this application. Notes: Only available for TCP or UDP applications with traffic\_type set to “direct”.
+
+<a href="#">Link to this property</a>
+
+edge\_alpn\_protocols: optional array of string
+
+ALPN protocol IDs the edge offers on client TLS connections, in preference order, for example <code>["h2"]</code> for gRPC or <code>["postgresql"]</code> for PostgreSQL direct TLS. When set, clients that offer none of these protocols, or no ALPN at all, are disconnected. Empty means no ALPN. Notes: Requires tls “flexible”, “full” or “strict”, and is not available with traffic\_type “ftp”. IDs are case-sensitive and unique, each 1 to 255 bytes; the list encodes to at most 65535 bytes, counting each ID plus one length byte.
 
 <a href="#">Link to this property</a>
 
@@ -1196,7 +1217,7 @@ string
 
 <summary>
 
-AppUpdateResponse = object { id, created\_on, dns, 15 more } or object { id, created\_on, dns, 7 more }
+AppUpdateResponse = object { id, created\_on, dns, 16 more } or object { id, created\_on, dns, 7 more }
 
 </summary>
 
@@ -1206,7 +1227,7 @@ One of the following:
 
 <summary>
 
-SpectrumConfigAppConfig object { id, created\_on, dns, 15 more }
+SpectrumConfigAppConfig object { id, created\_on, dns, 16 more }
 
 </summary>
 
@@ -1281,6 +1302,12 @@ One of the following:
 argo\_smart\_routing: optional boolean
 
 Enables Argo Smart Routing for this application. Notes: Only available for TCP or UDP applications with traffic\_type set to “direct”.
+
+<a href="#">Link to this property</a>
+
+edge\_alpn\_protocols: optional array of string
+
+ALPN protocol IDs the edge offers on client TLS connections, in preference order, for example <code>["h2"]</code> for gRPC or <code>["postgresql"]</code> for PostgreSQL direct TLS. When set, clients that offer none of these protocols, or no ALPN at all, are disconnected. Empty means no ALPN. Notes: Requires tls “flexible”, “full” or “strict”, and is not available with traffic\_type “ftp”. IDs are case-sensitive and unique, each 1 to 255 bytes; the list encodes to at most 65535 bytes, counting each ID plus one length byte.
 
 <a href="#">Link to this property</a>
 

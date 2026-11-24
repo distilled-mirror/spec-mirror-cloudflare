@@ -1,4 +1,7 @@
 ---
+agent:
+  instructions: "This site offers a search API that returns relevant content across the entire site. Use the search endpoint to find information instead of crawling individual pages."
+  search: "https://developers.cloudflare.com/.well-known/search?q={query}"
 title: Security TXT
 ---
 
@@ -15,6 +18,8 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 **Copy Markdown****View as Markdown**
 
 # Security TXT
+
+Security.txt configuration for a zone, including vulnerability reporting contacts, disclosure policies, and other information published at `/.well-known/security.txt` when enabled.
 
 ##### [Retrieves security.txt](https://developers.cloudflare.com/api/resources/security_txt/methods/get)
 

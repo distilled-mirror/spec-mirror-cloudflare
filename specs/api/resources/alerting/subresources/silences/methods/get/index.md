@@ -1,4 +1,7 @@
 ---
+agent:
+  instructions: "This site offers a search API that returns relevant content across the entire site. Use the search endpoint to find information instead of crawling individual pages."
+  search: "https://developers.cloudflare.com/.well-known/search?q={query}"
 title: Get Silence
 ---
 
@@ -56,7 +59,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Zero Trust: PII Read``Notifications Write``Notifications Read``Account Settings Write``Account Settings Read`
+`Observability Write``Observability Read``Zero Trust: PII Read``Notifications Write``Notifications Read``Account Settings Write``Account Settings Read`
 
 ##### P ath ParametersExpand Collapse
 

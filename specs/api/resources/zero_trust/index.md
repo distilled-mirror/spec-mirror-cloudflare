@@ -1832,6 +1832,10 @@ GET/accounts/{account_id}/devices/physical-devices
 
 GET/accounts/{account_id}/devices/physical-devices/{device_id}
 
+##### [Update device](/api/resources/zero_trust/subresources/devices/subresources/devices/methods/update)
+
+PATCH/accounts/{account_id}/devices/physical-devices/{device_id}
+
 ##### [Delete device](/api/resources/zero_trust/subresources/devices/subresources/devices/methods/delete)
 
 DELETE/accounts/{account_id}/devices/physical-devices/{device_id}
@@ -2069,6 +2073,228 @@ The device serial number.
 <summary>
 
 DeviceGetResponse object { id, active_registrations, created_at, 18 more }
+
+A WARP Device.
+
+</summary>
+
+id: string
+
+The unique ID of the device.
+
+[Link to this property](#)
+
+active_registrations: number
+
+The number of active registrations for the device. Active registrations are those which haven’t been revoked or deleted.
+
+[Link to this property](#)
+
+created_at: string
+
+The RFC3339 timestamp when the device was created.
+
+[Link to this property](#)
+
+last_seen_at: string
+
+The RFC3339 timestamp when the device was last seen.
+
+[Link to this property](#)
+
+name: string
+
+The name of the device.
+
+[Link to this property](#)
+
+tags: map[string]
+
+Tags assigned to the device. An empty object if the device has no tags.
+
+[Link to this property](#)
+
+updated_at: string
+
+The RFC3339 timestamp when the device was last updated.
+
+[Link to this property](#)
+
+client_version: optional string
+
+Version of the WARP client.
+
+[Link to this property](#)
+
+deleted_at: optional string
+
+The RFC3339 timestamp when the device was deleted.
+
+[Link to this property](#)
+
+device_type: optional string
+
+The device operating system.
+
+[Link to this property](#)
+
+hardware_id: optional string
+
+A string that uniquely identifies the hardware or virtual machine (VM).
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+last_seen_registration: optional object { policy }
+
+The last seen registration for the device.
+
+</summary>
+
+<details>
+
+<summary>
+
+policy: optional object { id, default, deleted, 2 more }
+
+A summary of the device profile evaluated for the registration.
+
+</summary>
+
+id: string
+
+The ID of the device settings profile.
+
+[Link to this property](#)
+
+default: boolean
+
+Whether the device settings profile is the default profile for the account.
+
+[Link to this property](#)
+
+deleted: boolean
+
+Whether the device settings profile was deleted.
+
+[Link to this property](#)
+
+name: string
+
+The name of the device settings profile.
+
+[Link to this property](#)
+
+updated_at: string
+
+The RFC3339 timestamp of when the device settings profile last changed for the registration.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+last_seen_user: optional object { id, email, name }
+
+The last user to use the WARP device.
+
+</summary>
+
+id: optional string
+
+UUID.
+
+maxLength36
+
+[Link to this property](#)
+
+email: optional string
+
+The contact email address of the user.
+
+maxLength90
+
+[Link to this property](#)
+
+name: optional string
+
+The enrolled device user’s name.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+mac_address: optional string
+
+The device MAC address.
+
+[Link to this property](#)
+
+manufacturer: optional string
+
+The device manufacturer.
+
+[Link to this property](#)
+
+model: optional string
+
+The model name of the device.
+
+[Link to this property](#)
+
+multiuser: optional boolean
+
+True if this device is in [multi-user mode](https://developers.cloudflare.com/cloudflare-one/connections/connect-devices/warp/deployment/mdm-deployment/windows-multiuser/).
+
+[Link to this property](#)
+
+os_version: optional string
+
+The device operating system version number.
+
+[Link to this property](#)
+
+os_version_extra: optional string
+
+Additional operating system version details. For Windows, the UBR (Update Build Revision). For Mac or iOS, the Product Version Extra. For Linux, the distribution name and version.
+
+[Link to this property](#)
+
+Deprecatedpublic_ip: optional string
+
+Deprecated: IP information is provided by DEX - see https://developers.cloudflare.com/api/resources/zero_trust/subresources/dex/subresources/fleet_status/subresources/devices/methods/list/
+
+[Link to this property](#)
+
+serial_number: optional string
+
+The device serial number.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+DeviceUpdateResponse object { id, active_registrations, created_at, 18 more }
 
 A WARP Device.
 
@@ -9126,6 +9352,10 @@ GET/accounts/{account_id}/devices/{device_id}/override_codes
 
 GET/accounts/{account_id}/devices/registrations/{registration_id}/override_codes
 
+##### [Generate an uninstall protection override code](/api/resources/zero_trust/subresources/devices/subresources/override_codes/methods/create)
+
+POST/accounts/{account_id}/devices/override_codes
+
 ##### Models
 
 <details>
@@ -9191,6 +9421,24 @@ OverrideCodeGetResponse object { disable_for_time }
 </summary>
 
 disable_for_time: optional map[string]
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+OverrideCodeCreateResponse object { code }
+
+</summary>
+
+code: string
+
+Uninstall protection override code.
 
 [Link to this property](#)
 

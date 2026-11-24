@@ -1,4 +1,7 @@
 ---
+agent:
+  instructions: "This site offers a search API that returns relevant content across the entire site. Use the search endpoint to find information instead of crawling individual pages."
+  search: "https://developers.cloudflare.com/.well-known/search?q={query}"
 title: Override Codes
 ---
 
@@ -29,6 +32,10 @@ GET/accounts/{account\_id}/devices/{device\_id}/override\_codes
 ##### [Get override codes](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/override_codes/methods/get)
 
 GET/accounts/{account\_id}/devices/registrations/{registration\_id}/override\_codes
+
+##### [Generate an uninstall protection override code](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/override_codes/methods/create)
+
+POST/accounts/{account\_id}/devices/override\_codes
 
 ##### ModelsExpand Collapse
 
@@ -101,3 +108,21 @@ disable\_for\_time: optional map\[string]
 </details>
 
 [Link to this property](#)%20zero_trust.devices.override_codes%20%3E%20(model)%20override_code_get_response%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+OverrideCodeCreateResponse object { code }
+
+</summary>
+
+code: string
+
+Uninstall protection override code.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20zero_trust.devices.override_codes%20%3E%20(model)%20override_code_create_response%20%3E%20(schema)>)

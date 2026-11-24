@@ -1,4 +1,7 @@
 ---
+agent:
+  instructions: "This site offers a search API that returns relevant content across the entire site. Use the search endpoint to find information instead of crawling individual pages."
+  search: "https://developers.cloudflare.com/.well-known/search?q={query}"
 title: Delete a basic-auth credential
 ---
 
@@ -82,7 +85,7 @@ formatuuid
 
 <summary>
 
-errors: array of object { code, message, source }
+errors: array of object { code, message, details, source }
 
 </summary>
 
@@ -93,6 +96,70 @@ formatint64
 <a href="#">Link to this property</a>
 
 message: string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+details: optional object { references }
+
+</summary>
+
+<details>
+
+<summary>
+
+references: optional array of object { id, name, resource\_type }
+
+</summary>
+
+id: string
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+name: string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+resource\_type: "deployment" or "policy\_set" or "policy" or "rego\_module"
+
+</summary>
+
+One of the following:
+
+"deployment"
+
+<a href="#">Link to this property</a>
+
+"policy\_set"
+
+<a href="#">Link to this property</a>
+
+"policy"
+
+<a href="#">Link to this property</a>
+
+"rego\_module"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -120,7 +187,7 @@ pointer: string
 
 <summary>
 
-messages: array of object { code, message, source }
+messages: array of object { code, message, details, source }
 
 </summary>
 
@@ -131,6 +198,70 @@ formatint64
 <a href="#">Link to this property</a>
 
 message: string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+details: optional object { references }
+
+</summary>
+
+<details>
+
+<summary>
+
+references: optional array of object { id, name, resource\_type }
+
+</summary>
+
+id: string
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+name: string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+resource\_type: "deployment" or "policy\_set" or "policy" or "rego\_module"
+
+</summary>
+
+One of the following:
+
+"deployment"
+
+<a href="#">Link to this property</a>
+
+"policy\_set"
+
+<a href="#">Link to this property</a>
+
+"policy"
+
+<a href="#">Link to this property</a>
+
+"rego\_module"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -196,6 +327,15 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/cws/basic-auth-cr
     {
       "code": 0,
       "message": "message",
+      "details": {
+        "references": [
+          {
+            "id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            "name": "name",
+            "resource_type": "deployment"
+          }
+        ]
+      },
       "source": {
         "pointer": "pointer"
       }
@@ -205,6 +345,15 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/cws/basic-auth-cr
     {
       "code": 0,
       "message": "message",
+      "details": {
+        "references": [
+          {
+            "id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            "name": "name",
+            "resource_type": "deployment"
+          }
+        ]
+      },
       "source": {
         "pointer": "pointer"
       }
@@ -227,6 +376,15 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/cws/basic-auth-cr
     {
       "code": 0,
       "message": "message",
+      "details": {
+        "references": [
+          {
+            "id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            "name": "name",
+            "resource_type": "deployment"
+          }
+        ]
+      },
       "source": {
         "pointer": "pointer"
       }
@@ -236,6 +394,15 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/cws/basic-auth-cr
     {
       "code": 0,
       "message": "message",
+      "details": {
+        "references": [
+          {
+            "id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            "name": "name",
+            "resource_type": "deployment"
+          }
+        ]
+      },
       "source": {
         "pointer": "pointer"
       }

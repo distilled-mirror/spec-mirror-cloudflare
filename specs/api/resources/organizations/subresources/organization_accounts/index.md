@@ -1,4 +1,7 @@
 ---
+agent:
+  instructions: "This site offers a search API that returns relevant content across the entire site. Use the search endpoint to find information instead of crawling individual pages."
+  search: "https://developers.cloudflare.com/.well-known/search?q={query}"
 title: Organization Accounts
 ---
 
@@ -200,7 +203,7 @@ Indicates whether membership in this account requires that Two-Factor Authentica
 
 <summary>
 
-OrganizationAccountGetResponse = array of <a href="https://developers.cloudflare.com/api/resources/tenants#(resource)%20tenants.accounts%20%3E%20(model)%20tenant_account%20%3E%20(schema)">TenantAccount</a> { id, created\_on, name, 3 more } or object { account\_pubname, account\_tag, account\_type, 2 more }
+OrganizationAccountGetResponse = array of object { id, created\_on, name, 3 more } or object { account\_pubname, account\_tag, account\_type, 2 more }
 
 </summary>
 
@@ -210,7 +213,7 @@ One of the following:
 
 <summary>
 
-TenantAccount object { id, created\_on, name, 3 more }
+OrganizationsAccount object { id, created\_on, name, 3 more }
 
 </summary>
 
@@ -306,7 +309,7 @@ Account tags, present only when <code>include_tags=true</code> is requested.
 
 <summary>
 
-OrganizationsAPILegacyAccount object { account\_pubname, account\_tag, account\_type, 2 more }
+OrganizationsLegacyAccount object { account\_pubname, account\_tag, account\_type, 2 more }
 
 </summary>
 

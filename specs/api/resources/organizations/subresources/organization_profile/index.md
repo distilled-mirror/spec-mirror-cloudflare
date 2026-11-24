@@ -1,4 +1,7 @@
 ---
+agent:
+  instructions: "This site offers a search API that returns relevant content across the entire site. Use the search endpoint to find information instead of crawling individual pages."
+  search: "https://developers.cloudflare.com/.well-known/search?q={query}"
 title: Organization Profile
 ---
 
@@ -32,7 +35,7 @@ PUT/organizations/{organization\_id}/profile
 
 <summary>
 
-OrganizationProfile object { business\_address, business\_email, business\_name, 2 more }
+OrganizationProfileGetResponse object { business\_address, business\_email, business\_name, 2 more }
 
 </summary>
 
@@ -58,4 +61,4 @@ external\_metadata: string
 
 </details>
 
-[Link to this property](#)%20organizations.organization_profile%20%3E%20(model)%20organization_profile%20%3E%20(schema)>)
+[Link to this property](#)%20organizations.organization_profile%20%3E%20(model)%20organization_profile_get_response%20%3E%20(schema)>)

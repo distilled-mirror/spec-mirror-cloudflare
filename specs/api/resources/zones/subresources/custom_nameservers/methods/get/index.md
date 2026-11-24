@@ -1,4 +1,7 @@
 ---
+agent:
+  instructions: "This site offers a search API that returns relevant content across the entire site. Use the search endpoint to find information instead of crawling individual pages."
+  search: "https://developers.cloudflare.com/.well-known/search?q={query}"
 title: Get Account Custom Nameserver Related Zone Metadata
 ---
 
@@ -60,7 +63,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Zone Security Insights Partner Assets Read``Workers Metadata Read-Only``Workers Editor``Workers Content Read-Only``Workers Admin``Registrar Sandbox Domains Read``Registrar Sandbox Domains Admin``Precursor Write``Precursor Read``Account Abuse Protection PII Read``Registrar Domains Admin``Zone Security Center Insights Write``Zone Security Center Insights Read``Access: Policies Write``Access: Policies Read``Access: Apps Write``Access: Apps Revoke``Access: Apps Read``Registrar Domains Read``Trust and Safety Write``Trust and Safety Read``Zero Trust: PII Read``Zaraz Edit``Zaraz Read``Zaraz Admin``Access: Apps and Policies Revoke``Access: Apps and Policies Write``Access: Apps and Policies Read``Access: Apps and Policies Revoke``Access: Mutual TLS Certificates Write``Access: Organizations, Identity Providers, and Groups Write``Zone Settings Write``Zone Settings Read``Zone Read``DNS Read``Workers Scripts Write``Workers Scripts Read``Zone Write``Workers Routes Write``Workers Routes Read``Stream Write``Stream Read``SSL and Certificates Write``SSL and Certificates Read``Logs Write``Logs Read``Cache Purge``Page Rules Write``Page Rules Read``Load Balancers Write``Load Balancers Read``Firewall Services Write``Firewall Services Read``DNS Write``Apps Write``Analytics Read``Access: Apps and Policies Write``Access: Apps and Policies Read`
+`Observability Write``Observability Read``Zone Security Insights Partner Assets Read``Workers Metadata Read-Only``Workers Editor``Workers Content Read-Only``Workers Admin``Registrar Sandbox Domains Read``Registrar Sandbox Domains Admin``Precursor Write``Precursor Read``Account Abuse Protection PII Read``Registrar Domains Admin``Zone Security Center Insights Write``Zone Security Center Insights Read``Access: Policies Write``Access: Policies Read``Access: Apps Write``Access: Apps Revoke``Access: Apps Read``Registrar Domains Read``Trust and Safety Write``Trust and Safety Read``Zero Trust: PII Read``Zaraz Edit``Zaraz Read``Zaraz Admin``Access: Apps and Policies Revoke``Access: Apps and Policies Write``Access: Apps and Policies Read``Access: Apps and Policies Revoke``Access: Mutual TLS Certificates Write``Access: Organizations, Identity Providers, and Groups Write``Zone Settings Write``Zone Settings Read``Zone Read``DNS Read``Workers Scripts Write``Workers Scripts Read``Zone Write``Workers Routes Write``Workers Routes Read``Stream Write``Stream Read``SSL and Certificates Write``SSL and Certificates Read``Logs Write``Logs Read``Cache Purge``Page Rules Write``Page Rules Read``Load Balancers Write``Load Balancers Read``Firewall Services Write``Firewall Services Read``DNS Write``Apps Write``Analytics Read``Access: Apps and Policies Write``Access: Apps and Policies Read`
 
 ##### P ath ParametersExpand Collapse
 

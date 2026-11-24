@@ -1,4 +1,7 @@
 ---
+agent:
+  instructions: "This site offers a search API that returns relevant content across the entire site. Use the search endpoint to find information instead of crawling individual pages."
+  search: "https://developers.cloudflare.com/.well-known/search?q={query}"
 title: Security Center
 ---
 
@@ -745,6 +748,8 @@ ContextGetResponse = map\[unknown]
 [Link to this property](#)%20security_center.insights.context%20%3E%20(model)%20context_get_response%20%3E%20(schema)>)
 
 #### Security CenterState
+
+Account-level Security Insights configuration for enabling or disabling scheduled security scans.
 
 ##### [Retrieves Account State](https://developers.cloudflare.com/api/resources/security_center/subresources/state/methods/get)
 

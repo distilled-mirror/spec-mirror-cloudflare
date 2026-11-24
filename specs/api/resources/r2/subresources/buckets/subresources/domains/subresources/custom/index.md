@@ -1,4 +1,7 @@
 ---
+agent:
+  instructions: "This site offers a search API that returns relevant content across the entire site. Use the search endpoint to find information instead of crawling individual pages."
+  search: "https://developers.cloudflare.com/.well-known/search?q={query}"
 title: Custom
 ---
 
@@ -41,6 +44,24 @@ PUT/accounts/{account\_id}/r2/buckets/{bucket\_name}/domains/custom/{domain}
 ##### [Remove Custom Domain From Bucket](https://developers.cloudflare.com/api/resources/r2/subresources/buckets/subresources/domains/subresources/custom/methods/delete)
 
 DELETE/accounts/{account\_id}/r2/buckets/{bucket\_name}/domains/custom/{domain}
+
+##### [List Custom Domains of Bucket (Deprecated)](https://developers.cloudflare.com/api/resources/r2/subresources/buckets/subresources/domains/subresources/custom/methods/list_legacy)
+
+Deprecated
+
+GET/accounts/{account\_id}/r2/buckets/{bucket\_name}/custom\_domains
+
+##### [Attach Custom Domain To Bucket (Deprecated)](https://developers.cloudflare.com/api/resources/r2/subresources/buckets/subresources/domains/subresources/custom/methods/create_legacy)
+
+Deprecated
+
+POST/accounts/{account\_id}/r2/buckets/{bucket\_name}/custom\_domains
+
+##### [Remove Custom Domain From Bucket (Deprecated)](https://developers.cloudflare.com/api/resources/r2/subresources/buckets/subresources/domains/subresources/custom/methods/delete_legacy)
+
+Deprecated
+
+DELETE/accounts/{account\_id}/r2/buckets/{bucket\_name}/custom\_domains/{domain}
 
 ##### ModelsExpand Collapse
 
@@ -535,3 +556,211 @@ Name of the removed custom domain.
 </details>
 
 [Link to this property](#)%20r2.buckets.domains.custom%20%3E%20(model)%20custom_delete_response%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+CustomListLegacyResponse object { domains }
+
+</summary>
+
+<details>
+
+<summary>
+
+domains: array of object { domain, status, ciphers, 3 more }
+
+</summary>
+
+domain: string
+
+Domain name of the custom domain.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+status: object { ownership, ssl }
+
+</summary>
+
+<details>
+
+<summary>
+
+ownership: "pending" or "active" or "deactivated" or 3 more
+
+Ownership status of the domain.
+
+</summary>
+
+One of the following:
+
+"pending"
+
+<a href="#">Link to this property</a>
+
+"active"
+
+<a href="#">Link to this property</a>
+
+"deactivated"
+
+<a href="#">Link to this property</a>
+
+"blocked"
+
+<a href="#">Link to this property</a>
+
+"error"
+
+<a href="#">Link to this property</a>
+
+"unknown"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+ssl: "initializing" or "pending" or "active" or 3 more
+
+SSL certificate status.
+
+</summary>
+
+One of the following:
+
+"initializing"
+
+<a href="#">Link to this property</a>
+
+"pending"
+
+<a href="#">Link to this property</a>
+
+"active"
+
+<a href="#">Link to this property</a>
+
+"deactivated"
+
+<a href="#">Link to this property</a>
+
+"error"
+
+<a href="#">Link to this property</a>
+
+"unknown"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+ciphers: optional array of string
+
+An allowlist of ciphers for TLS termination. These ciphers must be in the BoringSSL format.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+minTLS: optional "1.0" or "1.1" or "1.2" or "1.3"
+
+Minimum TLS Version the custom domain will accept for incoming connections. If not set, defaults to 1.0.
+
+</summary>
+
+One of the following:
+
+"1.0"
+
+<a href="#">Link to this property</a>
+
+"1.1"
+
+<a href="#">Link to this property</a>
+
+"1.2"
+
+<a href="#">Link to this property</a>
+
+"1.3"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+zoneId: optional string
+
+Zone ID of the custom domain.
+
+<a href="#">Link to this property</a>
+
+zoneName: optional string
+
+Zone that the custom domain resides in.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20r2.buckets.domains.custom%20%3E%20(model)%20custom_list_legacy_response%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+CustomCreateLegacyResponse object { domain }
+
+</summary>
+
+domain: string
+
+Name of the custom domain.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20r2.buckets.domains.custom%20%3E%20(model)%20custom_create_legacy_response%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+CustomDeleteLegacyResponse object { domain }
+
+</summary>
+
+domain: string
+
+Name of the custom domain.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20r2.buckets.domains.custom%20%3E%20(model)%20custom_delete_legacy_response%20%3E%20(schema)>)
