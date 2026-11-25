@@ -65,15 +65,61 @@ minLength1
 
 feed\_category: optional string
 
-Exact feed-category filter after trimming. Omit to include every category.
+Exact match on a feed’s legacy free-form category after trimming. Omit to include every category; to filter by the categories shown on feeds, use feed\_category\_id.
 
 [Link to this property](#)%20cloudforce_one.threat_signals.articles%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20feed_category%20%3E%20(schema)>)
 
-feed\_id: optional string
+<details>
 
-Feed UUID filter. Omit to include articles from every account feed.
+<summary>
 
-formatuuid
+feed\_category\_id: optional array of "b12a0fd6-f7b9-5393-9ef3-f888d506c550" or "d5b70eaa-626f-5761-b55b-6d9590df49fb" or "3b572d2b-890d-5286-9433-f18c85079030" or 5 more
+
+Repeatable feed category UUID filter, using the ids from the feed categories list. An article matches when its feed has any selected category; feeds without a category never match.
+
+</summary>
+
+One of the following:
+
+"b12a0fd6-f7b9-5393-9ef3-f888d506c550"
+
+<a href="#">Link to this property</a>
+
+"d5b70eaa-626f-5761-b55b-6d9590df49fb"
+
+<a href="#">Link to this property</a>
+
+"3b572d2b-890d-5286-9433-f18c85079030"
+
+<a href="#">Link to this property</a>
+
+"17f90d3b-37d3-5241-8ad4-7d6abbc2006c"
+
+<a href="#">Link to this property</a>
+
+"c68f28e9-7e8f-5d4b-853b-f3076893a9ee"
+
+<a href="#">Link to this property</a>
+
+"bb0e4a94-38ab-5c14-80a7-28cee9f4b139"
+
+<a href="#">Link to this property</a>
+
+"b1ef66d9-a73c-58dc-b269-22d34dfd11f4"
+
+<a href="#">Link to this property</a>
+
+"ab02a976-0a20-5c76-a553-7f6325afacfe"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20cloudforce_one.threat_signals.articles%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20feed_category_id%20%3E%20(schema)>)
+
+feed\_id: optional array of string
+
+Repeatable feed UUID filter. An article matches any selected feed. Omit to include articles from every account feed.
 
 [Link to this property](#)%20cloudforce_one.threat_signals.articles%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20feed_id%20%3E%20(schema)>)
 

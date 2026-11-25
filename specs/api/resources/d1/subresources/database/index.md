@@ -217,7 +217,7 @@ success: optional boolean
 
 <summary>
 
-DatabaseListResponse object { created\_at, jurisdiction, name, 2 more }
+DatabaseListResponse object { created\_at, file\_size, jurisdiction, 5 more }
 
 </summary>
 
@@ -226,6 +226,12 @@ created\_at: optional string
 Specifies the timestamp the resource was created as an ISO8601 string.
 
 formatdate-time
+
+<a href="#">Link to this property</a>
+
+file\_size: optional number
+
+The D1 database’s size, in bytes.
 
 <a href="#">Link to this property</a>
 
@@ -260,6 +266,22 @@ One of the following:
 name: optional string
 
 D1 database name.
+
+<a href="#">Link to this property</a>
+
+Deprecatednum\_tables: optional number
+
+The number of tables in the D1 database. This count is no longer accurate and should not be relied upon.
+
+<a href="#">Link to this property</a>
+
+recommendation\_count: optional number
+
+Number of current index recommendations for the database. To list them, use <code>GET /accounts/{account_id}/d1/insights/recommendations?database_id={database_id}</code>.
+
+Only returned when requested with <code>fields</code>. Left out of every database when D1 Insights is turned off for the account, or when the count is unavailable, so a missing value means unknown, not <code>0</code>.
+
+minimum0
 
 <a href="#">Link to this property</a>
 

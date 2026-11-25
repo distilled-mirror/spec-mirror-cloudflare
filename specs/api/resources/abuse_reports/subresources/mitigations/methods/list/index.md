@@ -255,7 +255,7 @@ result: optional object { mitigations }
 
 <summary>
 
-mitigations: array of object { id, effective\_date, entity\_id, 3 more }
+mitigations: array of object { id, effective\_date, entity\_id, 4 more }
 
 </summary>
 
@@ -353,6 +353,14 @@ The type of mitigation applied to a reported entity.
 
 <a href="#">Link to this property</a>
 
+scheduled\_removal\_date: optional string
+
+Date when the mitigation is scheduled to be removed. Present only when a removal is scheduled, for example after an approved counter notice. Time in RFC 3339 format (<a href="https://www.rfc-editor.org/rfc/rfc3339.html">https://www.rfc-editor.org/rfc/rfc3339.html</a>)
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -427,7 +435,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/abuse-reports/$RE
         "entity_id": "entity_id",
         "entity_type": "url_pattern",
         "status": "pending",
-        "type": "type"
+        "type": "type",
+        "scheduled_removal_date": "2009-11-10T23:00:00Z"
       }
     ]
   },
@@ -466,7 +475,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/abuse-reports/$RE
         "entity_id": "entity_id",
         "entity_type": "url_pattern",
         "status": "pending",
-        "type": "type"
+        "type": "type",
+        "scheduled_removal_date": "2009-11-10T23:00:00Z"
       }
     ]
   },

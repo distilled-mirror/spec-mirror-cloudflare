@@ -259,7 +259,7 @@ Prefix of the DNS record name. Name filters are case-insensitive.
 
 <summary>
 
-order: optional "type" or "name" or "content" or 2 more
+order: optional "type" or "name" or "content" or 4 more
 
 Field to order DNS records by.
 
@@ -284,6 +284,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "proxied"
+
+<a href="#">Link to this property</a>
+
+"created\_on"
+
+<a href="#">Link to this property</a>
+
+"modified\_on"
 
 <a href="#">Link to this property</a>
 

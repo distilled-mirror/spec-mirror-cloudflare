@@ -97,7 +97,7 @@ pointer: optional string
 
 <summary>
 
-result: object { business\_address, business\_email, business\_name, 2 more }
+result: <a href="https://developers.cloudflare.com/api/resources/accounts#(resource)%20accounts.account_profile%20%3E%20(model)%20account_profile%20%3E%20(schema)">AccountProfile</a> { business\_address, business\_email, business\_name, 2 more }
 
 </summary>
 

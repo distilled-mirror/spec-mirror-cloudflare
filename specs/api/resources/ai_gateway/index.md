@@ -15253,7 +15253,7 @@ Whether this is the account’s default payment method.
 
 type: "card" or "apple\_pay" or "google\_pay" or 3 more
 
-Payment method type.
+Payment method type. A card saved in a wallet has the wallet type and its card details. <code>link</code> is a card saved with Link, which has card details, or a Link payment that no card funds, which has none.
 
 </summary>
 
@@ -15295,25 +15295,25 @@ Whether this payment method can pay for a top-up.
 
 brand: optional string
 
-Card brand. Present for cards.
+Card brand. Present for cards, including cards saved in a wallet.
 
 <a href="#">Link to this property</a>
 
 exp\_month: optional number
 
-Expiration month, 1 to 12. Present for cards.
+Expiration month, 1 to 12. Present for cards, including cards saved in a wallet.
 
 <a href="#">Link to this property</a>
 
 exp\_year: optional number
 
-Four-digit expiration year. Present for cards.
+Four-digit expiration year. Present for cards, including cards saved in a wallet.
 
 <a href="#">Link to this property</a>
 
 last4: optional string
 
-Last 4 digits. Present for cards.
+Last 4 digits. Present for cards, including cards saved in a wallet.
 
 <a href="#">Link to this property</a>
 

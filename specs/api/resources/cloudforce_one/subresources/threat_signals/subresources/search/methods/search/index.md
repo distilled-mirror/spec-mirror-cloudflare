@@ -59,11 +59,9 @@ minLength1
 
 [Link to this property](#)%20cloudforce_one.threat_signals.search%20%3E%20(method)%20search%20%3E%20(params)%20default%20%3E%20(param)%20query%20%3E%20(schema)>)
 
-feed\_id: optional string
+feed\_id: optional array of string
 
-Optional feed UUID that restricts results to articles from that feed.
-
-formatuuid
+Optional repeatable feed UUID filter, up to 40 feeds. Results come only from articles in the selected feeds.
 
 [Link to this property](#)%20cloudforce_one.threat_signals.search%20%3E%20(method)%20search%20%3E%20(params)%20default%20%3E%20(param)%20feed_id%20%3E%20(schema)>)
 

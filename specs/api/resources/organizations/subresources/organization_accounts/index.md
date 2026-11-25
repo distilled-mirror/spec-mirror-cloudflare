@@ -203,7 +203,7 @@ Indicates whether membership in this account requires that Two-Factor Authentica
 
 <summary>
 
-OrganizationAccountGetResponse = array of object { id, created\_on, name, 3 more } or object { account\_pubname, account\_tag, account\_type, 2 more }
+OrganizationAccountGetResponse = array of <a href="https://developers.cloudflare.com/api/resources/tenants#(resource)%20tenants.accounts%20%3E%20(model)%20tenant_account%20%3E%20(schema)">TenantAccount</a> { id, created\_on, name, 5 more } or object { account\_pubname, account\_tag, account\_type, 2 more }
 
 </summary>
 
@@ -213,7 +213,7 @@ One of the following:
 
 <summary>
 
-OrganizationsAccount object { id, created\_on, name, 3 more }
+TenantAccount object { id, created\_on, name, 5 more }
 
 </summary>
 
@@ -292,6 +292,40 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+enterprise\_provisioning\_status: optional "pending" or "completed" or "rejected" or "cancelled"
+
+</summary>
+
+One of the following:
+
+"pending"
+
+<a href="#">Link to this property</a>
+
+"completed"
+
+<a href="#">Link to this property</a>
+
+"rejected"
+
+<a href="#">Link to this property</a>
+
+"cancelled"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+provisioning\_mode: optional "assisted"
 
 <a href="#">Link to this property</a>
 

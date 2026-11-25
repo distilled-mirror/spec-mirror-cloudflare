@@ -69,9 +69,9 @@ Account ID
 
 [Link to this property](#)%20cloudforce_one.threat_events.queries%20%3E%20(model)%20query_get_response%20%3E%20(schema)%20%3E%20(property)%20account_id>)
 
-Deprecatedalert\_enabled: boolean
+alert\_enabled: boolean
 
-Deprecated: saved-query alerting and rules were removed. Always false.
+Send an hourly notification when new events match this saved view. Receive it by adding the view to a Threat Events saved query notification policy.
 
 [Link to this property](#)%20cloudforce_one.threat_events.queries%20%3E%20(model)%20query_get_response%20%3E%20(schema)%20%3E%20(property)%20alert_enabled>)
 

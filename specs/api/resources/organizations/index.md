@@ -49,7 +49,7 @@ DELETE/organizations/{organization\_id}
 
 <summary>
 
-OrganizationListResponse object { id, create\_time, meta, 3 more }
+Organization object { id, create\_time, meta, 3 more }
 
 References an Organization in the Cloudflare data model.
 
@@ -165,509 +165,13 @@ name: string
 
 <a href="#">Link to this property</a>
 
-<details>
-
-<summary>
-
-profile: optional object { business\_address, business\_email, business\_name, 2 more }
-
-</summary>
-
-business\_address: string
-
-<a href="#">Link to this property</a>
-
-business\_email: string
-
-<a href="#">Link to this property</a>
-
-business\_name: string
-
-<a href="#">Link to this property</a>
-
-business\_phone: string
-
-<a href="#">Link to this property</a>
-
-external\_metadata: string
+profile: optional <a href="https://developers.cloudflare.com/api/resources/accounts#(resource)%20accounts.account_profile%20%3E%20(model)%20account_profile%20%3E%20(schema)">AccountProfile</a> { business\_address, business\_email, business\_name, 2 more }
 
 <a href="#">Link to this property</a>
 
 </details>
 
-<a href="#">Link to this property</a>
-
-</details>
-
-[Link to this property](#)%20organizations%20%3E%20(model)%20organization_list_response%20%3E%20(schema)>)
-
-<details>
-
-<summary>
-
-OrganizationGetResponse object { id, create\_time, meta, 3 more }
-
-References an Organization in the Cloudflare data model.
-
-</summary>
-
-id: string
-
-<a href="#">Link to this property</a>
-
-create\_time: string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-meta: object { are\_child\_accounts\_accessible\_by\_org\_members, hierarchy\_tags, managed\_by, 2 more }
-
-</summary>
-
-are\_child\_accounts\_accessible\_by\_org\_members: optional boolean
-
-<a href="#">Link to this property</a>
-
-hierarchy\_tags: optional array of string
-
-Ordered chain of organization tags from the root organization down to (and including) this organization itself. Root organizations return a single-element array containing their own tag; sub-organizations return <code>[rootTag, ...intermediateTags, parentTag, selfTag]</code>. Useful for constructing authorization scopes that need to cover every ancestor in the hierarchy.
-
-<a href="#">Link to this property</a>
-
-managed\_by: optional string
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-tenant\_flags: optional object { account\_creation, account\_creation\_applies\_tenant\_defaults, account\_deletion, 5 more }
-
-Enable features for Organizations.
-
-</summary>
-
-account\_creation: string
-
-<a href="#">Link to this property</a>
-
-account\_creation\_applies\_tenant\_defaults: string
-
-<a href="#">Link to this property</a>
-
-account\_deletion: string
-
-<a href="#">Link to this property</a>
-
-account\_migration: string
-
-<a href="#">Link to this property</a>
-
-account\_mobility: string
-
-<a href="#">Link to this property</a>
-
-enterprise\_capability: string
-
-<a href="#">Link to this property</a>
-
-member\_management: string
-
-<a href="#">Link to this property</a>
-
-sub\_org\_creation: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-tenant\_type: optional string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-name: string
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-parent: optional object { id, name }
-
-</summary>
-
-id: string
-
-<a href="#">Link to this property</a>
-
-name: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-profile: optional object { business\_address, business\_email, business\_name, 2 more }
-
-</summary>
-
-business\_address: string
-
-<a href="#">Link to this property</a>
-
-business\_email: string
-
-<a href="#">Link to this property</a>
-
-business\_name: string
-
-<a href="#">Link to this property</a>
-
-business\_phone: string
-
-<a href="#">Link to this property</a>
-
-external\_metadata: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-[Link to this property](#)%20organizations%20%3E%20(model)%20organization_get_response%20%3E%20(schema)>)
-
-<details>
-
-<summary>
-
-OrganizationCreateResponse object { id, create\_time, meta, 3 more }
-
-References an Organization in the Cloudflare data model.
-
-</summary>
-
-id: string
-
-<a href="#">Link to this property</a>
-
-create\_time: string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-meta: object { are\_child\_accounts\_accessible\_by\_org\_members, hierarchy\_tags, managed\_by, 2 more }
-
-</summary>
-
-are\_child\_accounts\_accessible\_by\_org\_members: optional boolean
-
-<a href="#">Link to this property</a>
-
-hierarchy\_tags: optional array of string
-
-Ordered chain of organization tags from the root organization down to (and including) this organization itself. Root organizations return a single-element array containing their own tag; sub-organizations return <code>[rootTag, ...intermediateTags, parentTag, selfTag]</code>. Useful for constructing authorization scopes that need to cover every ancestor in the hierarchy.
-
-<a href="#">Link to this property</a>
-
-managed\_by: optional string
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-tenant\_flags: optional object { account\_creation, account\_creation\_applies\_tenant\_defaults, account\_deletion, 5 more }
-
-Enable features for Organizations.
-
-</summary>
-
-account\_creation: string
-
-<a href="#">Link to this property</a>
-
-account\_creation\_applies\_tenant\_defaults: string
-
-<a href="#">Link to this property</a>
-
-account\_deletion: string
-
-<a href="#">Link to this property</a>
-
-account\_migration: string
-
-<a href="#">Link to this property</a>
-
-account\_mobility: string
-
-<a href="#">Link to this property</a>
-
-enterprise\_capability: string
-
-<a href="#">Link to this property</a>
-
-member\_management: string
-
-<a href="#">Link to this property</a>
-
-sub\_org\_creation: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-tenant\_type: optional string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-name: string
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-parent: optional object { id, name }
-
-</summary>
-
-id: string
-
-<a href="#">Link to this property</a>
-
-name: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-profile: optional object { business\_address, business\_email, business\_name, 2 more }
-
-</summary>
-
-business\_address: string
-
-<a href="#">Link to this property</a>
-
-business\_email: string
-
-<a href="#">Link to this property</a>
-
-business\_name: string
-
-<a href="#">Link to this property</a>
-
-business\_phone: string
-
-<a href="#">Link to this property</a>
-
-external\_metadata: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-[Link to this property](#)%20organizations%20%3E%20(model)%20organization_create_response%20%3E%20(schema)>)
-
-<details>
-
-<summary>
-
-OrganizationUpdateResponse object { id, create\_time, meta, 3 more }
-
-References an Organization in the Cloudflare data model.
-
-</summary>
-
-id: string
-
-<a href="#">Link to this property</a>
-
-create\_time: string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-meta: object { are\_child\_accounts\_accessible\_by\_org\_members, hierarchy\_tags, managed\_by, 2 more }
-
-</summary>
-
-are\_child\_accounts\_accessible\_by\_org\_members: optional boolean
-
-<a href="#">Link to this property</a>
-
-hierarchy\_tags: optional array of string
-
-Ordered chain of organization tags from the root organization down to (and including) this organization itself. Root organizations return a single-element array containing their own tag; sub-organizations return <code>[rootTag, ...intermediateTags, parentTag, selfTag]</code>. Useful for constructing authorization scopes that need to cover every ancestor in the hierarchy.
-
-<a href="#">Link to this property</a>
-
-managed\_by: optional string
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-tenant\_flags: optional object { account\_creation, account\_creation\_applies\_tenant\_defaults, account\_deletion, 5 more }
-
-Enable features for Organizations.
-
-</summary>
-
-account\_creation: string
-
-<a href="#">Link to this property</a>
-
-account\_creation\_applies\_tenant\_defaults: string
-
-<a href="#">Link to this property</a>
-
-account\_deletion: string
-
-<a href="#">Link to this property</a>
-
-account\_migration: string
-
-<a href="#">Link to this property</a>
-
-account\_mobility: string
-
-<a href="#">Link to this property</a>
-
-enterprise\_capability: string
-
-<a href="#">Link to this property</a>
-
-member\_management: string
-
-<a href="#">Link to this property</a>
-
-sub\_org\_creation: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-tenant\_type: optional string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-name: string
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-parent: optional object { id, name }
-
-</summary>
-
-id: string
-
-<a href="#">Link to this property</a>
-
-name: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-profile: optional object { business\_address, business\_email, business\_name, 2 more }
-
-</summary>
-
-business\_address: string
-
-<a href="#">Link to this property</a>
-
-business\_email: string
-
-<a href="#">Link to this property</a>
-
-business\_name: string
-
-<a href="#">Link to this property</a>
-
-business\_phone: string
-
-<a href="#">Link to this property</a>
-
-external\_metadata: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-[Link to this property](#)%20organizations%20%3E%20(model)%20organization_update_response%20%3E%20(schema)>)
+[Link to this property](#)%20organizations%20%3E%20(model)%20organization%20%3E%20(schema)>)
 
 <details>
 
@@ -869,7 +373,7 @@ Indicates whether membership in this account requires that Two-Factor Authentica
 
 <summary>
 
-OrganizationAccountGetResponse = array of object { id, created\_on, name, 3 more } or object { account\_pubname, account\_tag, account\_type, 2 more }
+OrganizationAccountGetResponse = array of <a href="https://developers.cloudflare.com/api/resources/tenants#(resource)%20tenants.accounts%20%3E%20(model)%20tenant_account%20%3E%20(schema)">TenantAccount</a> { id, created\_on, name, 5 more } or object { account\_pubname, account\_tag, account\_type, 2 more }
 
 </summary>
 
@@ -879,7 +383,7 @@ One of the following:
 
 <summary>
 
-OrganizationsAccount object { id, created\_on, name, 3 more }
+TenantAccount object { id, created\_on, name, 5 more }
 
 </summary>
 
@@ -958,6 +462,40 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+enterprise\_provisioning\_status: optional "pending" or "completed" or "rejected" or "cancelled"
+
+</summary>
+
+One of the following:
+
+"pending"
+
+<a href="#">Link to this property</a>
+
+"completed"
+
+<a href="#">Link to this property</a>
+
+"rejected"
+
+<a href="#">Link to this property</a>
+
+"cancelled"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+provisioning\_mode: optional "assisted"
 
 <a href="#">Link to this property</a>
 
@@ -1069,7 +607,7 @@ PUT/organizations/{organization\_id}/profile
 
 <summary>
 
-OrganizationProfileGetResponse object { business\_address, business\_email, business\_name, 2 more }
+OrganizationProfile object { business\_address, business\_email, business\_name, 2 more }
 
 </summary>
 
@@ -1095,7 +633,7 @@ external\_metadata: string
 
 </details>
 
-[Link to this property](#)%20organizations.organization_profile%20%3E%20(model)%20organization_profile_get_response%20%3E%20(schema)>)
+[Link to this property](#)%20organizations.organization_profile%20%3E%20(model)%20organization_profile%20%3E%20(schema)>)
 
 #### OrganizationsMembers
 
@@ -1121,7 +659,7 @@ DELETE/organizations/{organization\_id}/members/{member\_id}
 
 <summary>
 
-MemberListResponse object { id, create\_time, meta, 4 more }
+OrganizationMember object { id, create\_time, meta, 4 more }
 
 </summary>
 
@@ -1267,311 +805,7 @@ Omit to create a policy. An unchanged policy keeps its ID; a changed policy is r
 
 </details>
 
-[Link to this property](#)%20organizations.members%20%3E%20(model)%20member_list_response%20%3E%20(schema)>)
-
-<details>
-
-<summary>
-
-MemberGetResponse object { id, create\_time, meta, 4 more }
-
-</summary>
-
-id: string
-
-Organization Member ID
-
-<a href="#">Link to this property</a>
-
-create\_time: string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-meta: map\[unknown]
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-status: "active" or "pending" or "rejected" or "canceled"
-
-</summary>
-
-One of the following:
-
-"active"
-
-<a href="#">Link to this property</a>
-
-"pending"
-
-<a href="#">Link to this property</a>
-
-"rejected"
-
-<a href="#">Link to this property</a>
-
-"canceled"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-update\_time: string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-user: object { id, email, name, two\_factor\_authentication\_enabled }
-
-</summary>
-
-id: string
-
-<a href="#">Link to this property</a>
-
-email: string
-
-<a href="#">Link to this property</a>
-
-name: string
-
-<a href="#">Link to this property</a>
-
-two\_factor\_authentication\_enabled: boolean
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-policies: optional array of object { roles, scopes, id }
-
-Direct policies of the membership. Present only for DSR members enrolled in Organization Roles.
-
-</summary>
-
-<details>
-
-<summary>
-
-roles: array of object { id }
-
-</summary>
-
-id: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-scopes: array of object { key, subset\_of }
-
-</summary>
-
-key: string
-
-An Organization (<code>com.cloudflare.api.tenant.unit.&lt;tag&gt;</code>) or Account (<code>com.cloudflare.api.account.&lt;tag&gt;</code>) key.
-
-<a href="#">Link to this property</a>
-
-subset\_of: optional array of unknown
-
-The route Organization for Account scopes. Optional in requests and always returned for Account scopes.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-id: optional string
-
-Omit to create a policy. An unchanged policy keeps its ID; a changed policy is replaced under a new ID.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-[Link to this property](#)%20organizations.members%20%3E%20(model)%20member_get_response%20%3E%20(schema)>)
-
-<details>
-
-<summary>
-
-MemberCreateResponse object { id, create\_time, meta, 4 more }
-
-</summary>
-
-id: string
-
-Organization Member ID
-
-<a href="#">Link to this property</a>
-
-create\_time: string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-meta: map\[unknown]
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-status: "active" or "pending" or "rejected" or "canceled"
-
-</summary>
-
-One of the following:
-
-"active"
-
-<a href="#">Link to this property</a>
-
-"pending"
-
-<a href="#">Link to this property</a>
-
-"rejected"
-
-<a href="#">Link to this property</a>
-
-"canceled"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-update\_time: string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-user: object { id, email, name, two\_factor\_authentication\_enabled }
-
-</summary>
-
-id: string
-
-<a href="#">Link to this property</a>
-
-email: string
-
-<a href="#">Link to this property</a>
-
-name: string
-
-<a href="#">Link to this property</a>
-
-two\_factor\_authentication\_enabled: boolean
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-policies: optional array of object { roles, scopes, id }
-
-Direct policies of the membership. Present only for DSR members enrolled in Organization Roles.
-
-</summary>
-
-<details>
-
-<summary>
-
-roles: array of object { id }
-
-</summary>
-
-id: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-scopes: array of object { key, subset\_of }
-
-</summary>
-
-key: string
-
-An Organization (<code>com.cloudflare.api.tenant.unit.&lt;tag&gt;</code>) or Account (<code>com.cloudflare.api.account.&lt;tag&gt;</code>) key.
-
-<a href="#">Link to this property</a>
-
-subset\_of: optional array of unknown
-
-The route Organization for Account scopes. Optional in requests and always returned for Account scopes.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-id: optional string
-
-Omit to create a policy. An unchanged policy keeps its ID; a changed policy is replaced under a new ID.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-[Link to this property](#)%20organizations.members%20%3E%20(model)%20member_create_response%20%3E%20(schema)>)
+[Link to this property](#)%20organizations.members%20%3E%20(model)%20organization_member%20%3E%20(schema)>)
 
 <details>
 

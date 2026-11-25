@@ -27,7 +27,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 PATCH/accounts/{account\_id}/cloudforce-one/v2/threat-signals/skills/{skill\_id}
 
-Updates a Custom Skill. Managed Default Skills cannot be updated. Free Threat Signals accounts cannot update Custom Skills.
+Updates a Custom Skill. Managed Default Skills cannot be updated. Free Threat Signals accounts cannot update Custom Skills. Activating an inactive skill (`is_active` true) returns 403 with `errors[0].reason` `threat_signals_skill_limit` when the account is at its active Custom Skill limit, or `threat_signals_feed_skill_limit` (with `errors[0].feed_id`, `errors[0].feed_custom_skill_limit`, and `errors[0].feed_custom_skill_count`) when a feed it is assigned to is at its per-feed limit.
 
 ##### Security
 
@@ -119,7 +119,7 @@ message: string
 
 <summary>
 
-messages: array of object { message, code, custom\_feed\_count, 4 more }
+messages: array of object { message, code, expected, path }
 
 </summary>
 
@@ -131,69 +131,11 @@ code: optional number
 
 <a href="#">Link to this property</a>
 
-custom\_feed\_count: optional number
-
-The current count of custom feeds for the account.
-
-minimum0
-
-<a href="#">Link to this property</a>
-
-custom\_feed\_limit: optional number
-
-The custom feed limit for the account.
-
-minimum0
-
-<a href="#">Link to this property</a>
-
 expected: optional string
 
 <a href="#">Link to this property</a>
 
 path: optional array of string
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-reason: optional "threat\_signals\_feed\_limit" or "free\_custom\_skills\_disabled" or "free\_skill\_run\_disabled" or 4 more
-
-</summary>
-
-One of the following:
-
-"threat\_signals\_feed\_limit"
-
-<a href="#">Link to this property</a>
-
-"free\_custom\_skills\_disabled"
-
-<a href="#">Link to this property</a>
-
-"free\_skill\_run\_disabled"
-
-<a href="#">Link to this property</a>
-
-"free\_tier\_reconciliation\_in\_progress"
-
-<a href="#">Link to this property</a>
-
-"free\_tier\_reconciliation\_failed"
-
-<a href="#">Link to this property</a>
-
-"raw\_content\_expired"
-
-<a href="#">Link to this property</a>
-
-"curated\_visibility\_changed"
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 
@@ -308,13 +250,10 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/cloudforce-one/v2
     {
       "message": "message",
       "code": 0,
-      "custom_feed_count": 0,
-      "custom_feed_limit": 0,
       "expected": "expected",
       "path": [
         "string"
-      ],
-      "reason": "threat_signals_feed_limit"
+      ]
     }
   ],
   "result": {
@@ -348,13 +287,10 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/cloudforce-one/v2
     {
       "message": "message",
       "code": 0,
-      "custom_feed_count": 0,
-      "custom_feed_limit": 0,
       "expected": "expected",
       "path": [
         "string"
-      ],
-      "reason": "threat_signals_feed_limit"
+      ]
     }
   ],
   "result": {

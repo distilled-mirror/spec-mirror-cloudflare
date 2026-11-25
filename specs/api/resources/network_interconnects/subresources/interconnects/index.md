@@ -41,6 +41,10 @@ DELETE/accounts/{account\_id}/cni/interconnects/{icon}
 
 GET/accounts/{account\_id}/cni/interconnects/{icon}/loa
 
+##### [Get the default customer name for LOA generation](https://developers.cloudflare.com/api/resources/network_interconnects/subresources/interconnects/methods/loa_default_name)
+
+GET/accounts/{account\_id}/cni/interconnects/{icon}/loa/default
+
 ##### [Get the current status of an interconnect object](https://developers.cloudflare.com/api/resources/network_interconnects/subresources/interconnects/methods/status)
 
 GET/accounts/{account\_id}/cni/interconnects/{icon}/status
@@ -586,6 +590,24 @@ One of the following:
 </details>
 
 [Link to this property](#)%20network_interconnects.interconnects%20%3E%20(model)%20interconnect_create_response%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+InterconnectLOADefaultNameResponse object { name }
+
+</summary>
+
+name: string
+
+The default customer name for the interconnect
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20network_interconnects.interconnects%20%3E%20(model)%20interconnect_loa_default_name_response%20%3E%20(schema)>)
 
 <details>
 

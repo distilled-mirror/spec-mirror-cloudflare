@@ -35,7 +35,7 @@ PUT/organizations/{organization\_id}/profile
 
 <summary>
 
-OrganizationProfileGetResponse object { business\_address, business\_email, business\_name, 2 more }
+OrganizationProfile object { business\_address, business\_email, business\_name, 2 more }
 
 </summary>
 
@@ -61,4 +61,4 @@ external\_metadata: string
 
 </details>
 
-[Link to this property](#)%20organizations.organization_profile%20%3E%20(model)%20organization_profile_get_response%20%3E%20(schema)>)
+[Link to this property](#)%20organizations.organization_profile%20%3E%20(model)%20organization_profile%20%3E%20(schema)>)

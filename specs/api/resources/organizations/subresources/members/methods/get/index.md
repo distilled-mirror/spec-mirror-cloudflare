@@ -103,7 +103,7 @@ pointer: optional string
 
 <summary>
 
-result: object { id, create\_time, meta, 4 more }
+result: <a href="https://developers.cloudflare.com/api/resources/organizations#(resource)%20organizations.members%20%3E%20(model)%20organization_member%20%3E%20(schema)">OrganizationMember</a> { id, create\_time, meta, 4 more }
 
 </summary>
 

@@ -285,7 +285,7 @@ PUT/accounts/{account\_id}/profile
 
 <summary>
 
-AccountProfileGetResponse object { business\_address, business\_email, business\_name, 2 more }
+AccountProfile object { business\_address, business\_email, business\_name, 2 more }
 
 </summary>
 
@@ -311,7 +311,7 @@ external\_metadata: string
 
 </details>
 
-[Link to this property](#)%20accounts.account_profile%20%3E%20(model)%20account_profile_get_response%20%3E%20(schema)>)
+[Link to this property](#)%20accounts.account_profile%20%3E%20(model)%20account_profile%20%3E%20(schema)>)
 
 #### AccountsMembers
 

@@ -895,9 +895,9 @@ Account ID
 
 <a href="#">Link to this property</a>
 
-Deprecatedalert\_enabled: boolean
+alert\_enabled: boolean
 
-Deprecated: saved-query alerting and rules were removed. Always false.
+Send an hourly notification when new events match this saved view. Receive it by adding the view to a Threat Events saved query notification policy.
 
 <a href="#">Link to this property</a>
 
@@ -985,9 +985,9 @@ Account ID
 
 <a href="#">Link to this property</a>
 
-Deprecatedalert\_enabled: boolean
+alert\_enabled: boolean
 
-Deprecated: saved-query alerting and rules were removed. Always false.
+Send an hourly notification when new events match this saved view. Receive it by adding the view to a Threat Events saved query notification policy.
 
 <a href="#">Link to this property</a>
 
@@ -1075,9 +1075,9 @@ Account ID
 
 <a href="#">Link to this property</a>
 
-Deprecatedalert\_enabled: boolean
+alert\_enabled: boolean
 
-Deprecated: saved-query alerting and rules were removed. Always false.
+Send an hourly notification when new events match this saved view. Receive it by adding the view to a Threat Events saved query notification policy.
 
 <a href="#">Link to this property</a>
 
@@ -1165,9 +1165,9 @@ Account ID
 
 <a href="#">Link to this property</a>
 
-Deprecatedalert\_enabled: boolean
+alert\_enabled: boolean
 
-Deprecated: saved-query alerting and rules were removed. Always false.
+Send an hourly notification when new events match this saved view. Receive it by adding the view to a Threat Events saved query notification policy.
 
 <a href="#">Link to this property</a>
 

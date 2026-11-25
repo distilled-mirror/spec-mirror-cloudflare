@@ -73,6 +73,54 @@ maxLength32
 
 ##### Q uery ParametersExpand Collapse
 
+<details>
+
+<summary>
+
+fields: optional array of "uuid" or "name" or "created\_at" or 5 more
+
+Comma-separated list of fields to include for each database. When omitted, every field except <code>recommendation_count</code> is returned.
+
+</summary>
+
+One of the following:
+
+"uuid"
+
+<a href="#">Link to this property</a>
+
+"name"
+
+<a href="#">Link to this property</a>
+
+"created\_at"
+
+<a href="#">Link to this property</a>
+
+"version"
+
+<a href="#">Link to this property</a>
+
+"jurisdiction"
+
+<a href="#">Link to this property</a>
+
+"num\_tables"
+
+<a href="#">Link to this property</a>
+
+"file\_size"
+
+<a href="#">Link to this property</a>
+
+"recommendation\_count"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20d1.database%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20fields%20%3E%20(schema)>)
+
 name: optional string
 
 a database name to search for.
@@ -187,7 +235,7 @@ pointer: optional string
 
 <summary>
 
-result: array of object { created\_at, jurisdiction, name, 2 more }
+result: array of object { created\_at, file\_size, jurisdiction, 5 more }
 
 </summary>
 
@@ -196,6 +244,12 @@ created\_at: optional string
 Specifies the timestamp the resource was created as an ISO8601 string.
 
 formatdate-time
+
+<a href="#">Link to this property</a>
+
+file\_size: optional number
+
+The D1 database’s size, in bytes.
 
 <a href="#">Link to this property</a>
 
@@ -230,6 +284,22 @@ One of the following:
 name: optional string
 
 D1 database name.
+
+<a href="#">Link to this property</a>
+
+Deprecatednum\_tables: optional number
+
+The number of tables in the D1 database. This count is no longer accurate and should not be relied upon.
+
+<a href="#">Link to this property</a>
+
+recommendation\_count: optional number
+
+Number of current index recommendations for the database. To list them, use <code>GET /accounts/{account_id}/d1/insights/recommendations?database_id={database_id}</code>.
+
+Only returned when requested with <code>fields</code>. Left out of every database when D1 Insights is turned off for the account, or when the count is unavailable, so a missing value means unknown, not <code>0</code>.
+
+minimum0
 
 <a href="#">Link to this property</a>
 
@@ -327,8 +397,11 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/d1/database \
   "result": [
     {
       "created_at": "2022-11-15T18:25:44.442097Z",
+      "file_size": 12,
       "jurisdiction": "eu",
       "name": "my-database",
+      "num_tables": 12,
+      "recommendation_count": 2,
       "uuid": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
       "version": "production"
     }
@@ -372,8 +445,11 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/d1/database \
   "result": [
     {
       "created_at": "2022-11-15T18:25:44.442097Z",
+      "file_size": 12,
       "jurisdiction": "eu",
       "name": "my-database",
+      "num_tables": 12,
+      "recommendation_count": 2,
       "uuid": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
       "version": "production"
     }
