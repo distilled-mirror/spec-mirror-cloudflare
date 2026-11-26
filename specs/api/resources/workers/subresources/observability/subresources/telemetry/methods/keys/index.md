@@ -1,7 +1,9 @@
 ---
 agent:
-  instructions: "This site offers a search API that returns relevant content across the entire site. Use the search endpoint to find information instead of crawling individual pages."
-  search: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  instructions: "Use this search API to find relevant content across this site with keywords or natural-language queries, instead of crawling individual pages. Results are returned in Markdown."
+  endpoint: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  method: "GET"
+  documentation: "https://developers.cloudflare.com/ai-search/how-to/search-for-agents/"
 title: List keys
 ---
 
@@ -21,7 +23,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 ---
 
-**Copy Markdown****View as Markdown**
+**Copy MarkdownView as Markdown**
 
 # List keys
 
@@ -73,7 +75,7 @@ Used when interacting with the Origin CA certificates API. <a href="https://deve
 
 ##### Accepted Permissions (at least one required)
 
-`Observability Write``Workers Observability Write`
+`Observability Write` `Workers Observability Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -665,33 +667,11 @@ If the user suggests a key, use this to narrow down the list of keys returned. M
 
 </summary>
 
-<details>
-
-<summary>
-
-value: string or number or boolean
+value: string
 
 The text or pattern to search for.
 
 maxLength1000
-
-</summary>
-
-One of the following:
-
-string
-
-<a href="#">Link to this property</a>
-
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 
@@ -727,33 +707,11 @@ Search for a specific substring in any of the events
 
 </summary>
 
-<details>
-
-<summary>
-
-value: string or number or boolean
+value: string
 
 The text or pattern to search for.
 
 maxLength1000
-
-</summary>
-
-One of the following:
-
-string
-
-<a href="#">Link to this property</a>
-
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 

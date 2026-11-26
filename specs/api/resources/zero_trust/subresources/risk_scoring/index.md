@@ -1,7 +1,9 @@
 ---
 agent:
-  instructions: "This site offers a search API that returns relevant content across the entire site. Use the search endpoint to find information instead of crawling individual pages."
-  search: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  instructions: "Use this search API to find relevant content across this site with keywords or natural-language queries, instead of crawling individual pages. Results are returned in Markdown."
+  endpoint: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  method: "GET"
+  documentation: "https://developers.cloudflare.com/ai-search/how-to/search-for-agents/"
 title: Risk Scoring
 ---
 
@@ -17,13 +19,469 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 ---
 
-**Copy Markdown****View as Markdown**
+**Copy MarkdownView as Markdown**
 
 # Risk Scoring
 
+##### [Get risk event/score information for a specific user](https://developers.cloudflare.com/api/resources/zero_trust/subresources/risk_scoring/methods/get)
+
+GET/accounts/{account\_id}/zt\_risk\_scoring/{user\_id}
+
+##### [Clear the risk score for a particular user](https://developers.cloudflare.com/api/resources/zero_trust/subresources/risk_scoring/methods/reset)
+
+POST/accounts/{account\_id}/zt\_risk\_scoring/{user\_id}/reset
+
+##### ModelsExpand Collapse
+
+<details>
+
+<summary>
+
+RiskScoringGetResponse object { email, events, last\_reset\_time, 2 more }
+
+Risk level, last reset time, and risk events of one user.
+
+</summary>
+
+email: string
+
+Email address of the user.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+events: array of object { id, name, points, 3 more }
+
+Risk events of the user on this page.
+
+</summary>
+
+id: string
+
+ID of the behavior that caused the event.
+
+<a href="#">Link to this property</a>
+
+name: string
+
+Name of the behavior that caused the event.
+
+<a href="#">Link to this property</a>
+
+points: number
+
+Risk score points of a behavior.
+
+maximum100
+
+minimum1
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+risk\_level: "info" or "low" or "medium" or "high"
+
+Risk level of a behavior or an event.
+
+</summary>
+
+One of the following:
+
+"info"
+
+<a href="#">Link to this property</a>
+
+"low"
+
+<a href="#">Link to this property</a>
+
+"medium"
+
+<a href="#">Link to this property</a>
+
+"high"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+timestamp: string
+
+Time of the event.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+event\_details: optional map\[unknown]
+
+Details of the event. The fields depend on the behavior. The server omits the field when the details are not valid JSON.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+last\_reset\_time: string
+
+Time of the last risk score reset of the user. The value is null when the score was never reset.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+name: string
+
+Name of the user.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+risk\_level: optional "info" or "low" or "medium" or "high"
+
+Risk level of a behavior or an event.
+
+</summary>
+
+One of the following:
+
+"info"
+
+<a href="#">Link to this property</a>
+
+"low"
+
+<a href="#">Link to this property</a>
+
+"medium"
+
+<a href="#">Link to this property</a>
+
+"high"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20zero_trust.risk_scoring%20%3E%20(model)%20risk_scoring_get_response%20%3E%20(schema)>)
+
+RiskScoringResetResponse = unknown
+
+Empty result.
+
+[Link to this property](#)%20zero_trust.risk_scoring%20%3E%20(model)%20risk_scoring_reset_response%20%3E%20(schema)>)
+
 #### Risk ScoringBehaviours
 
+##### [Get all behaviors and associated configuration](https://developers.cloudflare.com/api/resources/zero_trust/subresources/risk_scoring/subresources/behaviours/methods/get)
+
+GET/accounts/{account\_id}/zt\_risk\_scoring/behaviors
+
+##### [Update configuration for risk behaviors](https://developers.cloudflare.com/api/resources/zero_trust/subresources/risk_scoring/subresources/behaviours/methods/update)
+
+PUT/accounts/{account\_id}/zt\_risk\_scoring/behaviors
+
+##### ModelsExpand Collapse
+
+<details>
+
+<summary>
+
+BehaviourGetResponse object { behaviors }
+
+Risk behaviors, keyed by behavior ID.
+
+</summary>
+
+<details>
+
+<summary>
+
+behaviors: map\[object { description, enabled, name, 2 more } ]
+
+Risk behaviors, keyed by behavior ID.
+
+</summary>
+
+description: string
+
+Explains what the behavior detects.
+
+<a href="#">Link to this property</a>
+
+enabled: boolean
+
+Whether the behavior counts toward the risk score.
+
+<a href="#">Link to this property</a>
+
+name: string
+
+Display name of the behavior.
+
+<a href="#">Link to this property</a>
+
+points: number
+
+Risk score points of a behavior.
+
+maximum100
+
+minimum1
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+risk\_level: "info" or "low" or "medium" or "high"
+
+Risk level of a behavior or an event.
+
+</summary>
+
+One of the following:
+
+"info"
+
+<a href="#">Link to this property</a>
+
+"low"
+
+<a href="#">Link to this property</a>
+
+"medium"
+
+<a href="#">Link to this property</a>
+
+"high"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20zero_trust.risk_scoring.behaviours%20%3E%20(model)%20behaviour_get_response%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+BehaviourUpdateResponse object { behaviors }
+
+Risk behaviors, keyed by behavior ID.
+
+</summary>
+
+<details>
+
+<summary>
+
+behaviors: map\[object { description, enabled, name, 2 more } ]
+
+Risk behaviors, keyed by behavior ID.
+
+</summary>
+
+description: string
+
+Explains what the behavior detects.
+
+<a href="#">Link to this property</a>
+
+enabled: boolean
+
+Whether the behavior counts toward the risk score.
+
+<a href="#">Link to this property</a>
+
+name: string
+
+Display name of the behavior.
+
+<a href="#">Link to this property</a>
+
+points: number
+
+Risk score points of a behavior.
+
+maximum100
+
+minimum1
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+risk\_level: "info" or "low" or "medium" or "high"
+
+Risk level of a behavior or an event.
+
+</summary>
+
+One of the following:
+
+"info"
+
+<a href="#">Link to this property</a>
+
+"low"
+
+<a href="#">Link to this property</a>
+
+"medium"
+
+<a href="#">Link to this property</a>
+
+"high"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20zero_trust.risk_scoring.behaviours%20%3E%20(model)%20behaviour_update_response%20%3E%20(schema)>)
+
 #### Risk ScoringSummary
+
+##### [Get risk score info for all users in the account](https://developers.cloudflare.com/api/resources/zero_trust/subresources/risk_scoring/subresources/summary/methods/get)
+
+GET/accounts/{account\_id}/zt\_risk\_scoring/summary
+
+##### ModelsExpand Collapse
+
+<details>
+
+<summary>
+
+SummaryGetResponse object { users }
+
+Risk summary of the users in an account.
+
+</summary>
+
+<details>
+
+<summary>
+
+users: array of object { email, event\_count, last\_event, 3 more }
+
+Users on this page, with their risk summary.
+
+</summary>
+
+email: string
+
+Email address of the user.
+
+<a href="#">Link to this property</a>
+
+event\_count: number
+
+Number of risk events of the user.
+
+minimum0
+
+<a href="#">Link to this property</a>
+
+last\_event: string
+
+Time of the most recent risk event of the user.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+max\_risk\_level: "unset" or "info" or "low" or 2 more
+
+Highest risk level. The value is unset when no event maps to a configured behavior.
+
+</summary>
+
+One of the following:
+
+"unset"
+
+<a href="#">Link to this property</a>
+
+"info"
+
+<a href="#">Link to this property</a>
+
+"low"
+
+<a href="#">Link to this property</a>
+
+"medium"
+
+<a href="#">Link to this property</a>
+
+"high"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+name: string
+
+Name of the user.
+
+<a href="#">Link to this property</a>
+
+user\_id: string
+
+User ID (UUID v4).
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20zero_trust.risk_scoring.summary%20%3E%20(model)%20summary_get_response%20%3E%20(schema)>)
 
 #### Risk ScoringIntegrations
 

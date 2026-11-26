@@ -1,7 +1,9 @@
 ---
 agent:
-  instructions: "This site offers a search API that returns relevant content across the entire site. Use the search endpoint to find information instead of crawling individual pages."
-  search: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  instructions: "Use this search API to find relevant content across this site with keywords or natural-language queries, instead of crawling individual pages. Results are returned in Markdown."
+  endpoint: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  method: "GET"
+  documentation: "https://developers.cloudflare.com/ai-search/how-to/search-for-agents/"
 title: Environment Variables
 ---
 
@@ -19,7 +21,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 ---
 
-**Copy Markdown****View as Markdown**
+**Copy MarkdownView as Markdown**
 
 # Environment Variables
 
@@ -41,17 +43,25 @@ DELETE/accounts/{account\_id}/builds/triggers/{trigger\_uuid}/environment\_varia
 
 <summary>
 
-EnvironmentVariableListResponse = unknown or unknown
+EnvironmentVariableListResponse = map\[object { created\_on, is\_secret, value } ]
 
 </summary>
 
-One of the following:
+created\_on: string
 
-unknown
+formatdate-time
 
 <a href="#">Link to this property</a>
 
-unknown
+is\_secret: boolean
+
+Whether to hide the value after it is saved. Secret values remain available to builds but appear as <code>null</code> when you list variables; non-secret values remain visible.
+
+<a href="#">Link to this property</a>
+
+value: optional string
+
+Value is null for secret environment variables
 
 <a href="#">Link to this property</a>
 
@@ -63,17 +73,25 @@ unknown
 
 <summary>
 
-EnvironmentVariableUpsertResponse = unknown or unknown
+EnvironmentVariableUpsertResponse = map\[object { created\_on, is\_secret, value } ]
 
 </summary>
 
-One of the following:
+created\_on: string
 
-unknown
+formatdate-time
 
 <a href="#">Link to this property</a>
 
-unknown
+is\_secret: boolean
+
+Whether to hide the value after it is saved. Secret values remain available to builds but appear as <code>null</code> when you list variables; non-secret values remain visible.
+
+<a href="#">Link to this property</a>
+
+value: optional string
+
+Value is null for secret environment variables
 
 <a href="#">Link to this property</a>
 

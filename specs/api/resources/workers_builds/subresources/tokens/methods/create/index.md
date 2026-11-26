@@ -1,7 +1,9 @@
 ---
 agent:
-  instructions: "This site offers a search API that returns relevant content across the entire site. Use the search endpoint to find information instead of crawling individual pages."
-  search: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  instructions: "Use this search API to find relevant content across this site with keywords or natural-language queries, instead of crawling individual pages. Results are returned in Markdown."
+  endpoint: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  method: "GET"
+  documentation: "https://developers.cloudflare.com/ai-search/how-to/search-for-agents/"
 title: Create build token
 ---
 
@@ -19,7 +21,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 ---
 
-**Copy Markdown****View as Markdown**
+**Copy MarkdownView as Markdown**
 
 # Create build token
 
@@ -113,17 +115,7 @@ messages: array of string
 
 <summary>
 
-result: object { build\_token\_name, build\_token\_uuid, cloudflare\_token\_id, owner\_type } or object { build\_token\_name, build\_token\_uuid, cloudflare\_token\_id, owner\_type }
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-object { build\_token\_name, build\_token\_uuid, cloudflare\_token\_id, owner\_type }
+result: object { build\_token\_name, build\_token\_uuid, cloudflare\_token\_id, owner\_type }
 
 </summary>
 
@@ -144,42 +136,6 @@ cloudflare\_token\_id: optional string
 <a href="#">Link to this property</a>
 
 owner\_type: optional string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { build\_token\_name, build\_token\_uuid, cloudflare\_token\_id, owner\_type }
-
-</summary>
-
-build\_token\_name: optional string
-
-<a href="#">Link to this property</a>
-
-build\_token\_uuid: optional string
-
-UUID of the build token used when deploying the Worker.
-
-formatuuid
-
-<a href="#">Link to this property</a>
-
-cloudflare\_token\_id: optional string
-
-<a href="#">Link to this property</a>
-
-owner\_type: optional string
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 

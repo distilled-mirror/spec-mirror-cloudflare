@@ -1,7 +1,9 @@
 ---
 agent:
-  instructions: "This site offers a search API that returns relevant content across the entire site. Use the search endpoint to find information instead of crawling individual pages."
-  search: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  instructions: "Use this search API to find relevant content across this site with keywords or natural-language queries, instead of crawling individual pages. Results are returned in Markdown."
+  endpoint: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  method: "GET"
+  documentation: "https://developers.cloudflare.com/ai-search/how-to/search-for-agents/"
 title: Recordings
 ---
 
@@ -17,7 +19,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 ---
 
-**Copy Markdown****View as Markdown**
+**Copy MarkdownView as Markdown**
 
 # Recordings
 
@@ -365,7 +367,7 @@ Controls whether recordings are uploaded to RealtimeKit’s bucket. If set to fa
 
 <summary>
 
-storage\_config: optional object { access\_key, auth\_method, bucket, 9 more } or object { access\_key, region, secret, 9 more } or object { access\_key, region, auth\_method, 9 more } or 2 more
+storage\_config: optional object { access\_key, account\_id, auth\_method, 10 more } or object { access\_key, region, secret, 10 more } or object { access\_key, region, account\_id, 10 more } or 3 more
 
 </summary>
 
@@ -375,7 +377,7 @@ One of the following:
 
 <summary>
 
-object { access\_key, auth\_method, bucket, 9 more }
+object { access\_key, account\_id, auth\_method, 10 more }
 
 </summary>
 
@@ -384,6 +386,12 @@ access\_key: optional string
 Access key of the storage medium. Access key is not required for the <code>gcs</code> storage media type.
 
 Note that this field is not readable by clients, only writeable.
+
+<a href="#">Link to this property</a>
+
+account\_id: optional string
+
+Cloudflare account ID, a 32-character hexadecimal string. Required for <code>cloudflare</code> storage.
 
 <a href="#">Link to this property</a>
 
@@ -477,7 +485,7 @@ SSH destination server username for SFTP type storage medium
 
 <summary>
 
-object { access\_key, region, secret, 9 more }
+object { access\_key, region, secret, 10 more }
 
 </summary>
 
@@ -496,6 +504,12 @@ minLength1
 secret: unknown
 
 minLength1
+
+<a href="#">Link to this property</a>
+
+account\_id: optional string
+
+Cloudflare account ID, a 32-character hexadecimal string. Required for <code>cloudflare</code> storage.
 
 <a href="#">Link to this property</a>
 
@@ -577,7 +591,7 @@ SSH destination server username for SFTP type storage medium
 
 <summary>
 
-object { access\_key, region, auth\_method, 9 more }
+object { access\_key, region, account\_id, 10 more }
 
 </summary>
 
@@ -590,6 +604,12 @@ minLength1
 region: unknown
 
 minLength1
+
+<a href="#">Link to this property</a>
+
+account\_id: optional string
+
+Cloudflare account ID, a 32-character hexadecimal string. Required for <code>cloudflare</code> storage.
 
 <a href="#">Link to this property</a>
 
@@ -695,7 +715,7 @@ SSH destination server username for SFTP type storage medium
 
 <summary>
 
-object { private\_key, access\_key, auth\_method, 9 more }
+object { private\_key, access\_key, account\_id, 10 more }
 
 </summary>
 
@@ -710,6 +730,12 @@ access\_key: optional string
 Access key of the storage medium. Access key is not required for the <code>gcs</code> storage media type.
 
 Note that this field is not readable by clients, only writeable.
+
+<a href="#">Link to this property</a>
+
+account\_id: optional string
+
+Cloudflare account ID, a 32-character hexadecimal string. Required for <code>cloudflare</code> storage.
 
 <a href="#">Link to this property</a>
 
@@ -763,7 +789,7 @@ Secret key of the storage medium. Required for <code>aws</code> storage. Similar
 
 <summary>
 
-type: optional "aws" or "azure" or "digitalocean" or 2 more
+type: optional "aws" or "azure" or "digitalocean" or 3 more
 
 Type of storage media.
 
@@ -791,6 +817,10 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"cloudflare"
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -809,7 +839,7 @@ SSH destination server username for SFTP type storage medium
 
 <summary>
 
-object { password, access\_key, auth\_method, 9 more }
+object { password, access\_key, account\_id, 10 more }
 
 </summary>
 
@@ -824,6 +854,12 @@ access\_key: optional string
 Access key of the storage medium. Access key is not required for the <code>gcs</code> storage media type.
 
 Note that this field is not readable by clients, only writeable.
+
+<a href="#">Link to this property</a>
+
+account\_id: optional string
+
+Cloudflare account ID, a 32-character hexadecimal string. Required for <code>cloudflare</code> storage.
 
 <a href="#">Link to this property</a>
 
@@ -877,7 +913,7 @@ Secret key of the storage medium. Required for <code>aws</code> storage. Similar
 
 <summary>
 
-type: optional "aws" or "azure" or "digitalocean" or 2 more
+type: optional "aws" or "azure" or "digitalocean" or 3 more
 
 Type of storage media.
 
@@ -905,7 +941,119 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"cloudflare"
+
+<a href="#">Link to this property</a>
+
 </details>
+
+<a href="#">Link to this property</a>
+
+username: optional string
+
+SSH destination server username for SFTP type storage medium
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object { access\_key, account\_id, auth\_method, 10 more }
+
+</summary>
+
+access\_key: string
+
+Access key of the storage medium. Access key is not required for the <code>gcs</code> storage media type.
+
+Note that this field is not readable by clients, only writeable.
+
+<a href="#">Link to this property</a>
+
+account\_id: string
+
+Cloudflare account ID, a 32-character hexadecimal string. Required for <code>cloudflare</code> storage.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+auth\_method: optional "KEY" or "PASSWORD"
+
+Authentication method used for “sftp” type storage medium
+
+</summary>
+
+One of the following:
+
+"KEY"
+
+<a href="#">Link to this property</a>
+
+"PASSWORD"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+bucket: optional string
+
+Name of the storage medium’s bucket.
+
+<a href="#">Link to this property</a>
+
+host: optional string
+
+SSH destination server host for SFTP type storage medium
+
+<a href="#">Link to this property</a>
+
+password: optional string
+
+SSH destination server password for SFTP type storage medium when auth\_method is “PASSWORD”. If auth\_method is “KEY”, this specifies the password for the ssh private key.
+
+<a href="#">Link to this property</a>
+
+path: optional string
+
+Path relative to the bucket root at which the recording will be placed.
+
+<a href="#">Link to this property</a>
+
+port: optional number
+
+SSH destination server port for SFTP type storage medium
+
+<a href="#">Link to this property</a>
+
+private\_key: optional string
+
+Private key used to login to destination SSH server for SFTP type storage medium, when auth\_method used is “KEY”
+
+<a href="#">Link to this property</a>
+
+region: optional string
+
+Region of the storage medium.
+
+<a href="#">Link to this property</a>
+
+secret: optional string
+
+Secret key of the storage medium. Required for <code>aws</code> storage. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
+
+<a href="#">Link to this property</a>
+
+type: optional "cloudflare"
 
 <a href="#">Link to this property</a>
 
@@ -1175,7 +1323,7 @@ Total recording time in seconds.
 
 <summary>
 
-storage\_config: optional object { access\_key, auth\_method, bucket, 9 more } or object { access\_key, region, secret, 9 more } or object { access\_key, region, auth\_method, 9 more } or 2 more
+storage\_config: optional object { access\_key, account\_id, auth\_method, 10 more } or object { access\_key, region, secret, 10 more } or object { access\_key, region, account\_id, 10 more } or 3 more
 
 </summary>
 
@@ -1185,7 +1333,7 @@ One of the following:
 
 <summary>
 
-object { access\_key, auth\_method, bucket, 9 more }
+object { access\_key, account\_id, auth\_method, 10 more }
 
 </summary>
 
@@ -1194,6 +1342,12 @@ access\_key: optional string
 Access key of the storage medium. Access key is not required for the <code>gcs</code> storage media type.
 
 Note that this field is not readable by clients, only writeable.
+
+<a href="#">Link to this property</a>
+
+account\_id: optional string
+
+Cloudflare account ID, a 32-character hexadecimal string. Required for <code>cloudflare</code> storage.
 
 <a href="#">Link to this property</a>
 
@@ -1287,7 +1441,7 @@ SSH destination server username for SFTP type storage medium
 
 <summary>
 
-object { access\_key, region, secret, 9 more }
+object { access\_key, region, secret, 10 more }
 
 </summary>
 
@@ -1306,6 +1460,12 @@ minLength1
 secret: unknown
 
 minLength1
+
+<a href="#">Link to this property</a>
+
+account\_id: optional string
+
+Cloudflare account ID, a 32-character hexadecimal string. Required for <code>cloudflare</code> storage.
 
 <a href="#">Link to this property</a>
 
@@ -1387,7 +1547,7 @@ SSH destination server username for SFTP type storage medium
 
 <summary>
 
-object { access\_key, region, auth\_method, 9 more }
+object { access\_key, region, account\_id, 10 more }
 
 </summary>
 
@@ -1400,6 +1560,12 @@ minLength1
 region: unknown
 
 minLength1
+
+<a href="#">Link to this property</a>
+
+account\_id: optional string
+
+Cloudflare account ID, a 32-character hexadecimal string. Required for <code>cloudflare</code> storage.
 
 <a href="#">Link to this property</a>
 
@@ -1505,7 +1671,7 @@ SSH destination server username for SFTP type storage medium
 
 <summary>
 
-object { private\_key, access\_key, auth\_method, 9 more }
+object { private\_key, access\_key, account\_id, 10 more }
 
 </summary>
 
@@ -1520,6 +1686,12 @@ access\_key: optional string
 Access key of the storage medium. Access key is not required for the <code>gcs</code> storage media type.
 
 Note that this field is not readable by clients, only writeable.
+
+<a href="#">Link to this property</a>
+
+account\_id: optional string
+
+Cloudflare account ID, a 32-character hexadecimal string. Required for <code>cloudflare</code> storage.
 
 <a href="#">Link to this property</a>
 
@@ -1573,7 +1745,7 @@ Secret key of the storage medium. Required for <code>aws</code> storage. Similar
 
 <summary>
 
-type: optional "aws" or "azure" or "digitalocean" or 2 more
+type: optional "aws" or "azure" or "digitalocean" or 3 more
 
 Type of storage media.
 
@@ -1601,6 +1773,10 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"cloudflare"
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -1619,7 +1795,7 @@ SSH destination server username for SFTP type storage medium
 
 <summary>
 
-object { password, access\_key, auth\_method, 9 more }
+object { password, access\_key, account\_id, 10 more }
 
 </summary>
 
@@ -1634,6 +1810,12 @@ access\_key: optional string
 Access key of the storage medium. Access key is not required for the <code>gcs</code> storage media type.
 
 Note that this field is not readable by clients, only writeable.
+
+<a href="#">Link to this property</a>
+
+account\_id: optional string
+
+Cloudflare account ID, a 32-character hexadecimal string. Required for <code>cloudflare</code> storage.
 
 <a href="#">Link to this property</a>
 
@@ -1687,7 +1869,7 @@ Secret key of the storage medium. Required for <code>aws</code> storage. Similar
 
 <summary>
 
-type: optional "aws" or "azure" or "digitalocean" or 2 more
+type: optional "aws" or "azure" or "digitalocean" or 3 more
 
 Type of storage media.
 
@@ -1715,7 +1897,119 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"cloudflare"
+
+<a href="#">Link to this property</a>
+
 </details>
+
+<a href="#">Link to this property</a>
+
+username: optional string
+
+SSH destination server username for SFTP type storage medium
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object { access\_key, account\_id, auth\_method, 10 more }
+
+</summary>
+
+access\_key: string
+
+Access key of the storage medium. Access key is not required for the <code>gcs</code> storage media type.
+
+Note that this field is not readable by clients, only writeable.
+
+<a href="#">Link to this property</a>
+
+account\_id: string
+
+Cloudflare account ID, a 32-character hexadecimal string. Required for <code>cloudflare</code> storage.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+auth\_method: optional "KEY" or "PASSWORD"
+
+Authentication method used for “sftp” type storage medium
+
+</summary>
+
+One of the following:
+
+"KEY"
+
+<a href="#">Link to this property</a>
+
+"PASSWORD"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+bucket: optional string
+
+Name of the storage medium’s bucket.
+
+<a href="#">Link to this property</a>
+
+host: optional string
+
+SSH destination server host for SFTP type storage medium
+
+<a href="#">Link to this property</a>
+
+password: optional string
+
+SSH destination server password for SFTP type storage medium when auth\_method is “PASSWORD”. If auth\_method is “KEY”, this specifies the password for the ssh private key.
+
+<a href="#">Link to this property</a>
+
+path: optional string
+
+Path relative to the bucket root at which the recording will be placed.
+
+<a href="#">Link to this property</a>
+
+port: optional number
+
+SSH destination server port for SFTP type storage medium
+
+<a href="#">Link to this property</a>
+
+private\_key: optional string
+
+Private key used to login to destination SSH server for SFTP type storage medium, when auth\_method used is “KEY”
+
+<a href="#">Link to this property</a>
+
+region: optional string
+
+Region of the storage medium.
+
+<a href="#">Link to this property</a>
+
+secret: optional string
+
+Secret key of the storage medium. Required for <code>aws</code> storage. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
+
+<a href="#">Link to this property</a>
+
+type: optional "cloudflare"
 
 <a href="#">Link to this property</a>
 
@@ -2099,7 +2393,7 @@ One of the following:
 
 <summary>
 
-storage\_config: optional object { access\_key, auth\_method, bucket, 9 more } or object { access\_key, region, secret, 9 more } or object { access\_key, region, auth\_method, 9 more } or 2 more
+storage\_config: optional object { access\_key, account\_id, auth\_method, 10 more } or object { access\_key, region, secret, 10 more } or object { access\_key, region, account\_id, 10 more } or 3 more
 
 </summary>
 
@@ -2109,7 +2403,7 @@ One of the following:
 
 <summary>
 
-object { access\_key, auth\_method, bucket, 9 more }
+object { access\_key, account\_id, auth\_method, 10 more }
 
 </summary>
 
@@ -2118,6 +2412,12 @@ access\_key: optional string
 Access key of the storage medium. Access key is not required for the <code>gcs</code> storage media type.
 
 Note that this field is not readable by clients, only writeable.
+
+<a href="#">Link to this property</a>
+
+account\_id: optional string
+
+Cloudflare account ID, a 32-character hexadecimal string. Required for <code>cloudflare</code> storage.
 
 <a href="#">Link to this property</a>
 
@@ -2211,7 +2511,7 @@ SSH destination server username for SFTP type storage medium
 
 <summary>
 
-object { access\_key, region, secret, 9 more }
+object { access\_key, region, secret, 10 more }
 
 </summary>
 
@@ -2230,6 +2530,12 @@ minLength1
 secret: unknown
 
 minLength1
+
+<a href="#">Link to this property</a>
+
+account\_id: optional string
+
+Cloudflare account ID, a 32-character hexadecimal string. Required for <code>cloudflare</code> storage.
 
 <a href="#">Link to this property</a>
 
@@ -2311,7 +2617,7 @@ SSH destination server username for SFTP type storage medium
 
 <summary>
 
-object { access\_key, region, auth\_method, 9 more }
+object { access\_key, region, account\_id, 10 more }
 
 </summary>
 
@@ -2324,6 +2630,12 @@ minLength1
 region: unknown
 
 minLength1
+
+<a href="#">Link to this property</a>
+
+account\_id: optional string
+
+Cloudflare account ID, a 32-character hexadecimal string. Required for <code>cloudflare</code> storage.
 
 <a href="#">Link to this property</a>
 
@@ -2429,7 +2741,7 @@ SSH destination server username for SFTP type storage medium
 
 <summary>
 
-object { private\_key, access\_key, auth\_method, 9 more }
+object { private\_key, access\_key, account\_id, 10 more }
 
 </summary>
 
@@ -2444,6 +2756,12 @@ access\_key: optional string
 Access key of the storage medium. Access key is not required for the <code>gcs</code> storage media type.
 
 Note that this field is not readable by clients, only writeable.
+
+<a href="#">Link to this property</a>
+
+account\_id: optional string
+
+Cloudflare account ID, a 32-character hexadecimal string. Required for <code>cloudflare</code> storage.
 
 <a href="#">Link to this property</a>
 
@@ -2497,7 +2815,7 @@ Secret key of the storage medium. Required for <code>aws</code> storage. Similar
 
 <summary>
 
-type: optional "aws" or "azure" or "digitalocean" or 2 more
+type: optional "aws" or "azure" or "digitalocean" or 3 more
 
 Type of storage media.
 
@@ -2525,6 +2843,10 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"cloudflare"
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -2543,7 +2865,7 @@ SSH destination server username for SFTP type storage medium
 
 <summary>
 
-object { password, access\_key, auth\_method, 9 more }
+object { password, access\_key, account\_id, 10 more }
 
 </summary>
 
@@ -2558,6 +2880,12 @@ access\_key: optional string
 Access key of the storage medium. Access key is not required for the <code>gcs</code> storage media type.
 
 Note that this field is not readable by clients, only writeable.
+
+<a href="#">Link to this property</a>
+
+account\_id: optional string
+
+Cloudflare account ID, a 32-character hexadecimal string. Required for <code>cloudflare</code> storage.
 
 <a href="#">Link to this property</a>
 
@@ -2611,7 +2939,7 @@ Secret key of the storage medium. Required for <code>aws</code> storage. Similar
 
 <summary>
 
-type: optional "aws" or "azure" or "digitalocean" or 2 more
+type: optional "aws" or "azure" or "digitalocean" or 3 more
 
 Type of storage media.
 
@@ -2639,7 +2967,119 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"cloudflare"
+
+<a href="#">Link to this property</a>
+
 </details>
+
+<a href="#">Link to this property</a>
+
+username: optional string
+
+SSH destination server username for SFTP type storage medium
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object { access\_key, account\_id, auth\_method, 10 more }
+
+</summary>
+
+access\_key: string
+
+Access key of the storage medium. Access key is not required for the <code>gcs</code> storage media type.
+
+Note that this field is not readable by clients, only writeable.
+
+<a href="#">Link to this property</a>
+
+account\_id: string
+
+Cloudflare account ID, a 32-character hexadecimal string. Required for <code>cloudflare</code> storage.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+auth\_method: optional "KEY" or "PASSWORD"
+
+Authentication method used for “sftp” type storage medium
+
+</summary>
+
+One of the following:
+
+"KEY"
+
+<a href="#">Link to this property</a>
+
+"PASSWORD"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+bucket: optional string
+
+Name of the storage medium’s bucket.
+
+<a href="#">Link to this property</a>
+
+host: optional string
+
+SSH destination server host for SFTP type storage medium
+
+<a href="#">Link to this property</a>
+
+password: optional string
+
+SSH destination server password for SFTP type storage medium when auth\_method is “PASSWORD”. If auth\_method is “KEY”, this specifies the password for the ssh private key.
+
+<a href="#">Link to this property</a>
+
+path: optional string
+
+Path relative to the bucket root at which the recording will be placed.
+
+<a href="#">Link to this property</a>
+
+port: optional number
+
+SSH destination server port for SFTP type storage medium
+
+<a href="#">Link to this property</a>
+
+private\_key: optional string
+
+Private key used to login to destination SSH server for SFTP type storage medium, when auth\_method used is “KEY”
+
+<a href="#">Link to this property</a>
+
+region: optional string
+
+Region of the storage medium.
+
+<a href="#">Link to this property</a>
+
+secret: optional string
+
+Secret key of the storage medium. Required for <code>aws</code> storage. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
+
+<a href="#">Link to this property</a>
+
+type: optional "cloudflare"
 
 <a href="#">Link to this property</a>
 
@@ -3147,7 +3587,7 @@ One of the following:
 
 <summary>
 
-storage\_config: optional object { access\_key, auth\_method, bucket, 9 more } or object { access\_key, region, secret, 9 more } or object { access\_key, region, auth\_method, 9 more } or 2 more
+storage\_config: optional object { access\_key, account\_id, auth\_method, 10 more } or object { access\_key, region, secret, 10 more } or object { access\_key, region, account\_id, 10 more } or 3 more
 
 </summary>
 
@@ -3157,7 +3597,7 @@ One of the following:
 
 <summary>
 
-object { access\_key, auth\_method, bucket, 9 more }
+object { access\_key, account\_id, auth\_method, 10 more }
 
 </summary>
 
@@ -3166,6 +3606,12 @@ access\_key: optional string
 Access key of the storage medium. Access key is not required for the <code>gcs</code> storage media type.
 
 Note that this field is not readable by clients, only writeable.
+
+<a href="#">Link to this property</a>
+
+account\_id: optional string
+
+Cloudflare account ID, a 32-character hexadecimal string. Required for <code>cloudflare</code> storage.
 
 <a href="#">Link to this property</a>
 
@@ -3259,7 +3705,7 @@ SSH destination server username for SFTP type storage medium
 
 <summary>
 
-object { access\_key, region, secret, 9 more }
+object { access\_key, region, secret, 10 more }
 
 </summary>
 
@@ -3278,6 +3724,12 @@ minLength1
 secret: unknown
 
 minLength1
+
+<a href="#">Link to this property</a>
+
+account\_id: optional string
+
+Cloudflare account ID, a 32-character hexadecimal string. Required for <code>cloudflare</code> storage.
 
 <a href="#">Link to this property</a>
 
@@ -3359,7 +3811,7 @@ SSH destination server username for SFTP type storage medium
 
 <summary>
 
-object { access\_key, region, auth\_method, 9 more }
+object { access\_key, region, account\_id, 10 more }
 
 </summary>
 
@@ -3372,6 +3824,12 @@ minLength1
 region: unknown
 
 minLength1
+
+<a href="#">Link to this property</a>
+
+account\_id: optional string
+
+Cloudflare account ID, a 32-character hexadecimal string. Required for <code>cloudflare</code> storage.
 
 <a href="#">Link to this property</a>
 
@@ -3477,7 +3935,7 @@ SSH destination server username for SFTP type storage medium
 
 <summary>
 
-object { private\_key, access\_key, auth\_method, 9 more }
+object { private\_key, access\_key, account\_id, 10 more }
 
 </summary>
 
@@ -3492,6 +3950,12 @@ access\_key: optional string
 Access key of the storage medium. Access key is not required for the <code>gcs</code> storage media type.
 
 Note that this field is not readable by clients, only writeable.
+
+<a href="#">Link to this property</a>
+
+account\_id: optional string
+
+Cloudflare account ID, a 32-character hexadecimal string. Required for <code>cloudflare</code> storage.
 
 <a href="#">Link to this property</a>
 
@@ -3545,7 +4009,7 @@ Secret key of the storage medium. Required for <code>aws</code> storage. Similar
 
 <summary>
 
-type: optional "aws" or "azure" or "digitalocean" or 2 more
+type: optional "aws" or "azure" or "digitalocean" or 3 more
 
 Type of storage media.
 
@@ -3573,6 +4037,10 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"cloudflare"
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -3591,7 +4059,7 @@ SSH destination server username for SFTP type storage medium
 
 <summary>
 
-object { password, access\_key, auth\_method, 9 more }
+object { password, access\_key, account\_id, 10 more }
 
 </summary>
 
@@ -3606,6 +4074,12 @@ access\_key: optional string
 Access key of the storage medium. Access key is not required for the <code>gcs</code> storage media type.
 
 Note that this field is not readable by clients, only writeable.
+
+<a href="#">Link to this property</a>
+
+account\_id: optional string
+
+Cloudflare account ID, a 32-character hexadecimal string. Required for <code>cloudflare</code> storage.
 
 <a href="#">Link to this property</a>
 
@@ -3659,7 +4133,7 @@ Secret key of the storage medium. Required for <code>aws</code> storage. Similar
 
 <summary>
 
-type: optional "aws" or "azure" or "digitalocean" or 2 more
+type: optional "aws" or "azure" or "digitalocean" or 3 more
 
 Type of storage media.
 
@@ -3687,7 +4161,119 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"cloudflare"
+
+<a href="#">Link to this property</a>
+
 </details>
+
+<a href="#">Link to this property</a>
+
+username: optional string
+
+SSH destination server username for SFTP type storage medium
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object { access\_key, account\_id, auth\_method, 10 more }
+
+</summary>
+
+access\_key: string
+
+Access key of the storage medium. Access key is not required for the <code>gcs</code> storage media type.
+
+Note that this field is not readable by clients, only writeable.
+
+<a href="#">Link to this property</a>
+
+account\_id: string
+
+Cloudflare account ID, a 32-character hexadecimal string. Required for <code>cloudflare</code> storage.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+auth\_method: optional "KEY" or "PASSWORD"
+
+Authentication method used for “sftp” type storage medium
+
+</summary>
+
+One of the following:
+
+"KEY"
+
+<a href="#">Link to this property</a>
+
+"PASSWORD"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+bucket: optional string
+
+Name of the storage medium’s bucket.
+
+<a href="#">Link to this property</a>
+
+host: optional string
+
+SSH destination server host for SFTP type storage medium
+
+<a href="#">Link to this property</a>
+
+password: optional string
+
+SSH destination server password for SFTP type storage medium when auth\_method is “PASSWORD”. If auth\_method is “KEY”, this specifies the password for the ssh private key.
+
+<a href="#">Link to this property</a>
+
+path: optional string
+
+Path relative to the bucket root at which the recording will be placed.
+
+<a href="#">Link to this property</a>
+
+port: optional number
+
+SSH destination server port for SFTP type storage medium
+
+<a href="#">Link to this property</a>
+
+private\_key: optional string
+
+Private key used to login to destination SSH server for SFTP type storage medium, when auth\_method used is “KEY”
+
+<a href="#">Link to this property</a>
+
+region: optional string
+
+Region of the storage medium.
+
+<a href="#">Link to this property</a>
+
+secret: optional string
+
+Secret key of the storage medium. Required for <code>aws</code> storage. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
+
+<a href="#">Link to this property</a>
+
+type: optional "cloudflare"
 
 <a href="#">Link to this property</a>
 
@@ -4041,7 +4627,7 @@ One of the following:
 
 <summary>
 
-storage\_config: optional object { access\_key, auth\_method, bucket, 9 more } or object { access\_key, region, secret, 9 more } or object { access\_key, region, auth\_method, 9 more } or 2 more
+storage\_config: optional object { access\_key, account\_id, auth\_method, 10 more } or object { access\_key, region, secret, 10 more } or object { access\_key, region, account\_id, 10 more } or 3 more
 
 </summary>
 
@@ -4051,7 +4637,7 @@ One of the following:
 
 <summary>
 
-object { access\_key, auth\_method, bucket, 9 more }
+object { access\_key, account\_id, auth\_method, 10 more }
 
 </summary>
 
@@ -4060,6 +4646,12 @@ access\_key: optional string
 Access key of the storage medium. Access key is not required for the <code>gcs</code> storage media type.
 
 Note that this field is not readable by clients, only writeable.
+
+<a href="#">Link to this property</a>
+
+account\_id: optional string
+
+Cloudflare account ID, a 32-character hexadecimal string. Required for <code>cloudflare</code> storage.
 
 <a href="#">Link to this property</a>
 
@@ -4153,7 +4745,7 @@ SSH destination server username for SFTP type storage medium
 
 <summary>
 
-object { access\_key, region, secret, 9 more }
+object { access\_key, region, secret, 10 more }
 
 </summary>
 
@@ -4172,6 +4764,12 @@ minLength1
 secret: unknown
 
 minLength1
+
+<a href="#">Link to this property</a>
+
+account\_id: optional string
+
+Cloudflare account ID, a 32-character hexadecimal string. Required for <code>cloudflare</code> storage.
 
 <a href="#">Link to this property</a>
 
@@ -4253,7 +4851,7 @@ SSH destination server username for SFTP type storage medium
 
 <summary>
 
-object { access\_key, region, auth\_method, 9 more }
+object { access\_key, region, account\_id, 10 more }
 
 </summary>
 
@@ -4266,6 +4864,12 @@ minLength1
 region: unknown
 
 minLength1
+
+<a href="#">Link to this property</a>
+
+account\_id: optional string
+
+Cloudflare account ID, a 32-character hexadecimal string. Required for <code>cloudflare</code> storage.
 
 <a href="#">Link to this property</a>
 
@@ -4371,7 +4975,7 @@ SSH destination server username for SFTP type storage medium
 
 <summary>
 
-object { private\_key, access\_key, auth\_method, 9 more }
+object { private\_key, access\_key, account\_id, 10 more }
 
 </summary>
 
@@ -4386,6 +4990,12 @@ access\_key: optional string
 Access key of the storage medium. Access key is not required for the <code>gcs</code> storage media type.
 
 Note that this field is not readable by clients, only writeable.
+
+<a href="#">Link to this property</a>
+
+account\_id: optional string
+
+Cloudflare account ID, a 32-character hexadecimal string. Required for <code>cloudflare</code> storage.
 
 <a href="#">Link to this property</a>
 
@@ -4439,7 +5049,7 @@ Secret key of the storage medium. Required for <code>aws</code> storage. Similar
 
 <summary>
 
-type: optional "aws" or "azure" or "digitalocean" or 2 more
+type: optional "aws" or "azure" or "digitalocean" or 3 more
 
 Type of storage media.
 
@@ -4467,6 +5077,10 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"cloudflare"
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -4485,7 +5099,7 @@ SSH destination server username for SFTP type storage medium
 
 <summary>
 
-object { password, access\_key, auth\_method, 9 more }
+object { password, access\_key, account\_id, 10 more }
 
 </summary>
 
@@ -4500,6 +5114,12 @@ access\_key: optional string
 Access key of the storage medium. Access key is not required for the <code>gcs</code> storage media type.
 
 Note that this field is not readable by clients, only writeable.
+
+<a href="#">Link to this property</a>
+
+account\_id: optional string
+
+Cloudflare account ID, a 32-character hexadecimal string. Required for <code>cloudflare</code> storage.
 
 <a href="#">Link to this property</a>
 
@@ -4553,7 +5173,7 @@ Secret key of the storage medium. Required for <code>aws</code> storage. Similar
 
 <summary>
 
-type: optional "aws" or "azure" or "digitalocean" or 2 more
+type: optional "aws" or "azure" or "digitalocean" or 3 more
 
 Type of storage media.
 
@@ -4581,7 +5201,119 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"cloudflare"
+
+<a href="#">Link to this property</a>
+
 </details>
+
+<a href="#">Link to this property</a>
+
+username: optional string
+
+SSH destination server username for SFTP type storage medium
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object { access\_key, account\_id, auth\_method, 10 more }
+
+</summary>
+
+access\_key: string
+
+Access key of the storage medium. Access key is not required for the <code>gcs</code> storage media type.
+
+Note that this field is not readable by clients, only writeable.
+
+<a href="#">Link to this property</a>
+
+account\_id: string
+
+Cloudflare account ID, a 32-character hexadecimal string. Required for <code>cloudflare</code> storage.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+auth\_method: optional "KEY" or "PASSWORD"
+
+Authentication method used for “sftp” type storage medium
+
+</summary>
+
+One of the following:
+
+"KEY"
+
+<a href="#">Link to this property</a>
+
+"PASSWORD"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+bucket: optional string
+
+Name of the storage medium’s bucket.
+
+<a href="#">Link to this property</a>
+
+host: optional string
+
+SSH destination server host for SFTP type storage medium
+
+<a href="#">Link to this property</a>
+
+password: optional string
+
+SSH destination server password for SFTP type storage medium when auth\_method is “PASSWORD”. If auth\_method is “KEY”, this specifies the password for the ssh private key.
+
+<a href="#">Link to this property</a>
+
+path: optional string
+
+Path relative to the bucket root at which the recording will be placed.
+
+<a href="#">Link to this property</a>
+
+port: optional number
+
+SSH destination server port for SFTP type storage medium
+
+<a href="#">Link to this property</a>
+
+private\_key: optional string
+
+Private key used to login to destination SSH server for SFTP type storage medium, when auth\_method used is “KEY”
+
+<a href="#">Link to this property</a>
+
+region: optional string
+
+Region of the storage medium.
+
+<a href="#">Link to this property</a>
+
+secret: optional string
+
+Secret key of the storage medium. Required for <code>aws</code> storage. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
+
+<a href="#">Link to this property</a>
+
+type: optional "cloudflare"
 
 <a href="#">Link to this property</a>
 

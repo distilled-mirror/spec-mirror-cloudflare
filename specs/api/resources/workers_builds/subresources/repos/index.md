@@ -1,7 +1,9 @@
 ---
 agent:
-  instructions: "This site offers a search API that returns relevant content across the entire site. Use the search endpoint to find information instead of crawling individual pages."
-  search: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  instructions: "Use this search API to find relevant content across this site with keywords or natural-language queries, instead of crawling individual pages. Results are returned in Markdown."
+  endpoint: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  method: "GET"
+  documentation: "https://developers.cloudflare.com/ai-search/how-to/search-for-agents/"
 title: Repos
 ---
 
@@ -17,7 +19,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 ---
 
-**Copy Markdown****View as Markdown**
+**Copy MarkdownView as Markdown**
 
 # Repos
 
@@ -37,17 +39,7 @@ DELETE/accounts/{account\_id}/builds/repos/connections/{repo\_connection\_uuid}
 
 <summary>
 
-ConnectionUpsertResponse = object { created\_on, deleted\_on, modified\_on, 6 more } or object { created\_on, deleted\_on, modified\_on, 6 more }
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-object { created\_on, deleted\_on, modified\_on, 6 more }
+ConnectionUpsertResponse object { created\_on, deleted\_on, modified\_on, 6 more }
 
 </summary>
 
@@ -130,104 +122,6 @@ Provider-specific repository identifier.
 repo\_name: optional string
 
 Human-readable repository name.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { created\_on, deleted\_on, modified\_on, 6 more }
-
-</summary>
-
-created\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-deleted\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-modified\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-provider\_account\_id: optional string
-
-Provider-specific identifier of the account or namespace that owns the repository.
-
-<a href="#">Link to this property</a>
-
-provider\_account\_name: optional string
-
-Human-readable name of the account or namespace that owns the repository.
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
-
-Source control provider.
-
-</summary>
-
-One of the following:
-
-"github"
-
-<a href="#">Link to this property</a>
-
-"gitlab"
-
-<a href="#">Link to this property</a>
-
-"gitlab\_internal"
-
-<a href="#">Link to this property</a>
-
-"origin"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-repo\_connection\_uuid: optional string
-
-Repository connection UUID.
-
-formatuuid
-
-<a href="#">Link to this property</a>
-
-repo\_id: optional string
-
-Provider-specific repository identifier.
-
-<a href="#">Link to this property</a>
-
-repo\_name: optional string
-
-Human-readable repository name.
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 
@@ -269,17 +163,7 @@ GET/accounts/{account\_id}/builds/repos/{provider\_type}/{provider\_account\_id}
 
 <summary>
 
-ConfigAutofillGetResponse = object { config\_file, default\_worker\_name, deploy\_tool, 3 more } or object { config\_file, default\_worker\_name, deploy\_tool, 3 more }
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-object { config\_file, default\_worker\_name, deploy\_tool, 3 more }
+ConfigAutofillGetResponse object { config\_file, default\_worker\_name, deploy\_tool, 3 more }
 
 </summary>
 
@@ -356,98 +240,6 @@ One of the following:
 <a href="#">Link to this property</a>
 
 scripts: optional map\[string]
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { config\_file, default\_worker\_name, deploy\_tool, 3 more }
-
-</summary>
-
-config\_file: optional string
-
-<a href="#">Link to this property</a>
-
-default\_worker\_name: optional string
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-deploy\_tool: optional "cf" or "wrangler"
-
-Deployment CLI detected in the selected root directory. A Wrangler config takes precedence. <code>cf</code> requires <code>cloudflare.config.ts</code> and a <code>cf</code> dependency or dev dependency in <code>package.json</code>.
-
-</summary>
-
-One of the following:
-
-"cf"
-
-<a href="#">Link to this property</a>
-
-"wrangler"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-env\_worker\_names: optional map\[string]
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-package\_manager: optional "npm" or "yarn" or "pnpm" or 2 more
-
-Package manager inferred from repository lockfiles; defaults to npm when none is detected.
-
-</summary>
-
-One of the following:
-
-"npm"
-
-<a href="#">Link to this property</a>
-
-"yarn"
-
-<a href="#">Link to this property</a>
-
-"pnpm"
-
-<a href="#">Link to this property</a>
-
-"bun"
-
-<a href="#">Link to this property</a>
-
-"uv"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-scripts: optional map\[string]
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 

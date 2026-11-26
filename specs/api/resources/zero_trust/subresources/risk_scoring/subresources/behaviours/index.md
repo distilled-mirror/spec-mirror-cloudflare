@@ -1,7 +1,9 @@
 ---
 agent:
-  instructions: "This site offers a search API that returns relevant content across the entire site. Use the search endpoint to find information instead of crawling individual pages."
-  search: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  instructions: "Use this search API to find relevant content across this site with keywords or natural-language queries, instead of crawling individual pages. Results are returned in Markdown."
+  endpoint: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  method: "GET"
+  documentation: "https://developers.cloudflare.com/ai-search/how-to/search-for-agents/"
 title: Behaviours
 ---
 
@@ -19,7 +21,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 ---
 
-**Copy Markdown****View as Markdown**
+**Copy MarkdownView as Markdown**
 
 # Behaviours
 
@@ -39,25 +41,45 @@ PUT/accounts/{account\_id}/zt\_risk\_scoring/behaviors
 
 BehaviourGetResponse object { behaviors }
 
+Risk behaviors, keyed by behavior ID.
+
 </summary>
 
 <details>
 
 <summary>
 
-behaviors: map\[object { description, enabled, name, risk\_level } ]
+behaviors: map\[object { description, enabled, name, 2 more } ]
+
+Risk behaviors, keyed by behavior ID.
 
 </summary>
 
 description: string
 
+Explains what the behavior detects.
+
 <a href="#">Link to this property</a>
 
 enabled: boolean
 
+Whether the behavior counts toward the risk score.
+
 <a href="#">Link to this property</a>
 
 name: string
+
+Display name of the behavior.
+
+<a href="#">Link to this property</a>
+
+points: number
+
+Risk score points of a behavior.
+
+maximum100
+
+minimum1
 
 <a href="#">Link to this property</a>
 
@@ -66,6 +88,8 @@ name: string
 <summary>
 
 risk\_level: "info" or "low" or "medium" or "high"
+
+Risk level of a behavior or an event.
 
 </summary>
 
@@ -105,17 +129,45 @@ One of the following:
 
 BehaviourUpdateResponse object { behaviors }
 
+Risk behaviors, keyed by behavior ID.
+
 </summary>
 
 <details>
 
 <summary>
 
-behaviors: map\[object { enabled, risk\_level } ]
+behaviors: map\[object { description, enabled, name, 2 more } ]
+
+Risk behaviors, keyed by behavior ID.
 
 </summary>
 
+description: string
+
+Explains what the behavior detects.
+
+<a href="#">Link to this property</a>
+
 enabled: boolean
+
+Whether the behavior counts toward the risk score.
+
+<a href="#">Link to this property</a>
+
+name: string
+
+Display name of the behavior.
+
+<a href="#">Link to this property</a>
+
+points: number
+
+Risk score points of a behavior.
+
+maximum100
+
+minimum1
 
 <a href="#">Link to this property</a>
 
@@ -124,6 +176,8 @@ enabled: boolean
 <summary>
 
 risk\_level: "info" or "low" or "medium" or "high"
+
+Risk level of a behavior or an event.
 
 </summary>
 

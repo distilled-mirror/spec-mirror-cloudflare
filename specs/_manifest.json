@@ -1,6 +1,6 @@
 {
   "source": "https://developers.cloudflare.com/api/",
-  "count": 4109,
+  "count": 4116,
   "pages": [
     {
       "page": "https://developers.cloudflare.com/api/resources/$shared",
@@ -15983,6 +15983,26 @@
       "markdown": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/risk_scoring/index.md"
     },
     {
+      "page": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/risk_scoring/methods/get",
+      "markdown": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/risk_scoring/methods/get/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/risk_scoring/methods/reset",
+      "markdown": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/risk_scoring/methods/reset/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/risk_scoring/subresources/behaviours",
+      "markdown": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/risk_scoring/subresources/behaviours/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/risk_scoring/subresources/behaviours/methods/get",
+      "markdown": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/risk_scoring/subresources/behaviours/methods/get/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/risk_scoring/subresources/behaviours/methods/update",
+      "markdown": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/risk_scoring/subresources/behaviours/methods/update/index.md"
+    },
+    {
       "page": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/risk_scoring/subresources/integrations",
       "markdown": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/risk_scoring/subresources/integrations/index.md"
     },
@@ -16013,6 +16033,14 @@
     {
       "page": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/risk_scoring/subresources/integrations/subresources/references/methods/get",
       "markdown": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/risk_scoring/subresources/integrations/subresources/references/methods/get/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/risk_scoring/subresources/summary",
+      "markdown": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/risk_scoring/subresources/summary/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/risk_scoring/subresources/summary/methods/get",
+      "markdown": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/risk_scoring/subresources/summary/methods/get/index.md"
     },
     {
       "page": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/seats",
@@ -16447,11 +16475,6 @@
     "https://developers.cloudflare.com/api/resources/radar/subresources/http",
     "https://developers.cloudflare.com/api/resources/realtime_kit",
     "https://developers.cloudflare.com/api/resources/rulesets",
-    "https://developers.cloudflare.com/api/resources/rulesets/methods/get",
-    "https://developers.cloudflare.com/api/resources/rulesets/subresources/phases",
-    "https://developers.cloudflare.com/api/resources/rulesets/subresources/phases/methods/get",
-    "https://developers.cloudflare.com/api/resources/rulesets/subresources/phases/subresources/versions/methods/get",
-    "https://developers.cloudflare.com/api/resources/rulesets/subresources/versions/methods/get",
     "https://developers.cloudflare.com/api/resources/workers",
     "https://developers.cloudflare.com/api/resources/zero_trust",
     "https://developers.cloudflare.com/api/resources/zero_trust/subresources/access",
@@ -16537,13 +16560,6 @@
     "api/resources/tenants/subresources/memberships/index.md",
     "api/resources/tenants/subresources/memberships/methods/list/index.md",
     "api/resources/zero_trust/subresources/casb/subresources/applications/subresources/setup_flows/index.md",
-    "api/resources/zero_trust/subresources/casb/subresources/applications/subresources/setup_flows/methods/list/index.md",
-    "api/resources/zero_trust/subresources/risk_scoring/methods/get/index.md",
-    "api/resources/zero_trust/subresources/risk_scoring/methods/reset/index.md",
-    "api/resources/zero_trust/subresources/risk_scoring/subresources/behaviours/index.md",
-    "api/resources/zero_trust/subresources/risk_scoring/subresources/behaviours/methods/get/index.md",
-    "api/resources/zero_trust/subresources/risk_scoring/subresources/behaviours/methods/update/index.md",
-    "api/resources/zero_trust/subresources/risk_scoring/subresources/summary/index.md",
-    "api/resources/zero_trust/subresources/risk_scoring/subresources/summary/methods/get/index.md"
+    "api/resources/zero_trust/subresources/casb/subresources/applications/subresources/setup_flows/methods/list/index.md"
   ]
 }

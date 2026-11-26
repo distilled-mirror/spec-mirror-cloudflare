@@ -1,7 +1,9 @@
 ---
 agent:
-  instructions: "This site offers a search API that returns relevant content across the entire site. Use the search endpoint to find information instead of crawling individual pages."
-  search: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  instructions: "Use this search API to find relevant content across this site with keywords or natural-language queries, instead of crawling individual pages. Results are returned in Markdown."
+  endpoint: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  method: "GET"
+  documentation: "https://developers.cloudflare.com/ai-search/how-to/search-for-agents/"
 title: List queries
 ---
 
@@ -21,7 +23,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 ---
 
-**Copy Markdown****View as Markdown**
+**Copy MarkdownView as Markdown**
 
 # List queries
 
@@ -73,7 +75,7 @@ Used when interacting with the Origin CA certificates API. <a href="https://deve
 
 ##### Accepted Permissions (at least one required)
 
-`Observability Write``Observability Read``Workers Metadata Read-Only``Workers Observability Write``Workers Observability Read`
+`Observability Write` `Observability Read` `Workers Metadata Read-Only` `Workers Observability Write` `Workers Observability Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -961,31 +963,9 @@ Define an expression to search using full-text search.
 
 </summary>
 
-<details>
-
-<summary>
-
-value: string or number or boolean
+value: string
 
 maxLength1000
-
-</summary>
-
-One of the following:
-
-string
-
-<a href="#">Link to this property</a>
-
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 
@@ -1138,7 +1118,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/workers/observabi
         ],
         "limit": 0,
         "needle": {
-          "value": "string",
+          "value": "value",
           "isRegex": true,
           "matchCase": true
         },
@@ -1216,7 +1196,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/workers/observabi
         ],
         "limit": 0,
         "needle": {
-          "value": "string",
+          "value": "value",
           "isRegex": true,
           "matchCase": true
         },

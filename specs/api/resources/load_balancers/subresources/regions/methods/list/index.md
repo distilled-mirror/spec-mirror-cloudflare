@@ -1,7 +1,9 @@
 ---
 agent:
-  instructions: "This site offers a search API that returns relevant content across the entire site. Use the search endpoint to find information instead of crawling individual pages."
-  search: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  instructions: "Use this search API to find relevant content across this site with keywords or natural-language queries, instead of crawling individual pages. Results are returned in Markdown."
+  endpoint: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  method: "GET"
+  documentation: "https://developers.cloudflare.com/ai-search/how-to/search-for-agents/"
 title: List Regions
 ---
 
@@ -19,7 +21,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 ---
 
-**Copy Markdown****View as Markdown**
+**Copy MarkdownView as Markdown**
 
 # List Regions
 
@@ -59,7 +61,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Load Balancing: Monitors and Pools Write``Load Balancing: Monitors and Pools Read`
+`Load Balancing: Monitors and Pools Write` `Load Balancing: Monitors and Pools Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -177,25 +179,7 @@ pointer: optional string
 
 [Link to this property](#)%20load_balancers.regions%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20messages>)
 
-<details>
-
-<summary>
-
-result: unknown or string
-
-</summary>
-
-One of the following:
-
-unknown
-
-<a href="#">Link to this property</a>
-
-string
-
-<a href="#">Link to this property</a>
-
-</details>
+result: unknown
 
 [Link to this property](#)%20load_balancers.regions%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 

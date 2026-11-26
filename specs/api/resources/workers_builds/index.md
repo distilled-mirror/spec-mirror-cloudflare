@@ -1,7 +1,9 @@
 ---
 agent:
-  instructions: "This site offers a search API that returns relevant content across the entire site. Use the search endpoint to find information instead of crawling individual pages."
-  search: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  instructions: "Use this search API to find relevant content across this site with keywords or natural-language queries, instead of crawling individual pages. Results are returned in Markdown."
+  endpoint: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  method: "GET"
+  documentation: "https://developers.cloudflare.com/ai-search/how-to/search-for-agents/"
 title: Workers Builds
 ---
 
@@ -15,7 +17,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 ---
 
-**Copy Markdown****View as Markdown**
+**Copy MarkdownView as Markdown**
 
 # Workers Builds
 
@@ -37,17 +39,7 @@ GET/accounts/{account\_id}/builds/account/limits
 
 <summary>
 
-WorkersBuildGetLatestBuildsResponse = object { builds } or object { builds }
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-Builds object { builds }
+WorkersBuildGetLatestBuildsResponse object { builds }
 
 </summary>
 
@@ -548,530 +540,6 @@ trigger\_uuid: optional string
 Trigger UUID.
 
 formatuuid
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-Builds object { builds }
-
-</summary>
-
-<details>
-
-<summary>
-
-builds: optional map\[object { build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more } ]
-
-</summary>
-
-<details>
-
-<summary>
-
-build\_outcome: optional "success" or "fail" or "skipped" or 2 more
-
-</summary>
-
-One of the following:
-
-"success"
-
-<a href="#">Link to this property</a>
-
-"fail"
-
-<a href="#">Link to this property</a>
-
-"skipped"
-
-<a href="#">Link to this property</a>
-
-"cancelled"
-
-<a href="#">Link to this property</a>
-
-"terminated"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-build\_trigger\_metadata: optional object { author, branch, build\_command, 11 more }
-
-</summary>
-
-author: optional string
-
-<a href="#">Link to this property</a>
-
-branch: optional string
-
-Git branch name.
-
-<a href="#">Link to this property</a>
-
-build\_command: optional string
-
-Command to build the Worker.
-
-<a href="#">Link to this property</a>
-
-build\_token\_name: optional string
-
-<a href="#">Link to this property</a>
-
-build\_token\_uuid: optional string
-
-UUID of the build token used when deploying the Worker.
-
-formatuuid
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-build\_trigger\_source: optional "push" or "pull\_request" or "manual" or "api"
-
-</summary>
-
-One of the following:
-
-"push"
-
-<a href="#">Link to this property</a>
-
-"pull\_request"
-
-<a href="#">Link to this property</a>
-
-"manual"
-
-<a href="#">Link to this property</a>
-
-"api"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-commit\_hash: optional string
-
-Git commit hash
-
-<a href="#">Link to this property</a>
-
-commit\_message: optional string
-
-<a href="#">Link to this property</a>
-
-deploy\_command: optional string
-
-Command to deploy the Worker.
-
-<a href="#">Link to this property</a>
-
-environment\_variables: optional map\[string]
-
-<a href="#">Link to this property</a>
-
-provider\_account\_name: optional string
-
-Human-readable name of the account or namespace that owns the repository.
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
-
-Source control provider.
-
-</summary>
-
-One of the following:
-
-"github"
-
-<a href="#">Link to this property</a>
-
-"gitlab"
-
-<a href="#">Link to this property</a>
-
-"gitlab\_internal"
-
-<a href="#">Link to this property</a>
-
-"origin"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-repo\_name: optional string
-
-Human-readable repository name.
-
-<a href="#">Link to this property</a>
-
-root\_directory: optional string
-
-Repository directory in which build and deploy commands run.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-build\_uuid: optional string
-
-Build UUID.
-
-formatuuid
-
-<a href="#">Link to this property</a>
-
-created\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-deploy\_hook: optional object { deploy\_hook\_name }
-
-</summary>
-
-deploy\_hook\_name: optional string
-
-Deploy hook name (1-58 characters).
-
-maxLength58
-
-minLength1
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-initializing\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-modified\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-preview\_url: optional string
-
-URL serving the Worker version this build deployed. Only returned by Get build by UUID, and only once the build has produced a preview artifact.
-
-formaturi
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-pull\_request: optional object { closed\_on, created\_on, pull\_request\_url }
-
-</summary>
-
-closed\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-created\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-pull\_request\_url: optional string
-
-formaturi
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-running\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-status: optional "queued" or "initializing" or "running" or "stopped"
-
-</summary>
-
-One of the following:
-
-"queued"
-
-<a href="#">Link to this property</a>
-
-"initializing"
-
-<a href="#">Link to this property</a>
-
-"running"
-
-<a href="#">Link to this property</a>
-
-"stopped"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-stopped\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-trigger: optional object { branch\_excludes, branch\_includes, build\_caching\_enabled, 12 more }
-
-Trigger information without build\_token\_uuid
-
-</summary>
-
-branch\_excludes: optional array of string
-
-Branch patterns that must not start builds.
-
-<a href="#">Link to this property</a>
-
-branch\_includes: optional array of string
-
-Branch patterns that can start builds.
-
-<a href="#">Link to this property</a>
-
-build\_caching\_enabled: optional boolean
-
-Whether builds reuse cached dependencies and build artifacts.
-
-<a href="#">Link to this property</a>
-
-build\_command: optional string
-
-Command to build the Worker.
-
-<a href="#">Link to this property</a>
-
-created\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-deleted\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-deploy\_command: optional string
-
-Command to deploy the Worker.
-
-<a href="#">Link to this property</a>
-
-external\_script\_id: optional string
-
-System-generated tag of the Worker. This is not the Worker name.
-
-<a href="#">Link to this property</a>
-
-modified\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-path\_excludes: optional array of string
-
-Path patterns that must not start builds.
-
-<a href="#">Link to this property</a>
-
-path\_includes: optional array of string
-
-Path patterns that can start builds.
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-repo\_connection: optional object { created\_on, deleted\_on, modified\_on, 6 more }
-
-</summary>
-
-created\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-deleted\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-modified\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-provider\_account\_id: optional string
-
-Provider-specific identifier of the account or namespace that owns the repository.
-
-<a href="#">Link to this property</a>
-
-provider\_account\_name: optional string
-
-Human-readable name of the account or namespace that owns the repository.
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
-
-Source control provider.
-
-</summary>
-
-One of the following:
-
-"github"
-
-<a href="#">Link to this property</a>
-
-"gitlab"
-
-<a href="#">Link to this property</a>
-
-"gitlab\_internal"
-
-<a href="#">Link to this property</a>
-
-"origin"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-repo\_connection\_uuid: optional string
-
-Repository connection UUID.
-
-formatuuid
-
-<a href="#">Link to this property</a>
-
-repo\_id: optional string
-
-Provider-specific repository identifier.
-
-<a href="#">Link to this property</a>
-
-repo\_name: optional string
-
-Human-readable repository name.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-root\_directory: optional string
-
-Repository directory in which build and deploy commands run.
-
-<a href="#">Link to this property</a>
-
-trigger\_name: optional string
-
-Human-readable name of the build trigger.
-
-<a href="#">Link to this property</a>
-
-trigger\_uuid: optional string
-
-Trigger UUID.
-
-formatuuid
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 
@@ -1091,17 +559,7 @@ formatuuid
 
 <summary>
 
-WorkersBuildGetBuildsByVersionResponse = object { builds } or object { builds }
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-Builds object { builds }
+WorkersBuildGetBuildsByVersionResponse object { builds }
 
 </summary>
 
@@ -1602,530 +1060,6 @@ trigger\_uuid: optional string
 Trigger UUID.
 
 formatuuid
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-Builds object { builds }
-
-</summary>
-
-<details>
-
-<summary>
-
-builds: optional map\[object { build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more } ]
-
-</summary>
-
-<details>
-
-<summary>
-
-build\_outcome: optional "success" or "fail" or "skipped" or 2 more
-
-</summary>
-
-One of the following:
-
-"success"
-
-<a href="#">Link to this property</a>
-
-"fail"
-
-<a href="#">Link to this property</a>
-
-"skipped"
-
-<a href="#">Link to this property</a>
-
-"cancelled"
-
-<a href="#">Link to this property</a>
-
-"terminated"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-build\_trigger\_metadata: optional object { author, branch, build\_command, 11 more }
-
-</summary>
-
-author: optional string
-
-<a href="#">Link to this property</a>
-
-branch: optional string
-
-Git branch name.
-
-<a href="#">Link to this property</a>
-
-build\_command: optional string
-
-Command to build the Worker.
-
-<a href="#">Link to this property</a>
-
-build\_token\_name: optional string
-
-<a href="#">Link to this property</a>
-
-build\_token\_uuid: optional string
-
-UUID of the build token used when deploying the Worker.
-
-formatuuid
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-build\_trigger\_source: optional "push" or "pull\_request" or "manual" or "api"
-
-</summary>
-
-One of the following:
-
-"push"
-
-<a href="#">Link to this property</a>
-
-"pull\_request"
-
-<a href="#">Link to this property</a>
-
-"manual"
-
-<a href="#">Link to this property</a>
-
-"api"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-commit\_hash: optional string
-
-Git commit hash
-
-<a href="#">Link to this property</a>
-
-commit\_message: optional string
-
-<a href="#">Link to this property</a>
-
-deploy\_command: optional string
-
-Command to deploy the Worker.
-
-<a href="#">Link to this property</a>
-
-environment\_variables: optional map\[string]
-
-<a href="#">Link to this property</a>
-
-provider\_account\_name: optional string
-
-Human-readable name of the account or namespace that owns the repository.
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
-
-Source control provider.
-
-</summary>
-
-One of the following:
-
-"github"
-
-<a href="#">Link to this property</a>
-
-"gitlab"
-
-<a href="#">Link to this property</a>
-
-"gitlab\_internal"
-
-<a href="#">Link to this property</a>
-
-"origin"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-repo\_name: optional string
-
-Human-readable repository name.
-
-<a href="#">Link to this property</a>
-
-root\_directory: optional string
-
-Repository directory in which build and deploy commands run.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-build\_uuid: optional string
-
-Build UUID.
-
-formatuuid
-
-<a href="#">Link to this property</a>
-
-created\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-deploy\_hook: optional object { deploy\_hook\_name }
-
-</summary>
-
-deploy\_hook\_name: optional string
-
-Deploy hook name (1-58 characters).
-
-maxLength58
-
-minLength1
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-initializing\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-modified\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-preview\_url: optional string
-
-URL serving the Worker version this build deployed. Only returned by Get build by UUID, and only once the build has produced a preview artifact.
-
-formaturi
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-pull\_request: optional object { closed\_on, created\_on, pull\_request\_url }
-
-</summary>
-
-closed\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-created\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-pull\_request\_url: optional string
-
-formaturi
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-running\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-status: optional "queued" or "initializing" or "running" or "stopped"
-
-</summary>
-
-One of the following:
-
-"queued"
-
-<a href="#">Link to this property</a>
-
-"initializing"
-
-<a href="#">Link to this property</a>
-
-"running"
-
-<a href="#">Link to this property</a>
-
-"stopped"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-stopped\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-trigger: optional object { branch\_excludes, branch\_includes, build\_caching\_enabled, 12 more }
-
-Trigger information without build\_token\_uuid
-
-</summary>
-
-branch\_excludes: optional array of string
-
-Branch patterns that must not start builds.
-
-<a href="#">Link to this property</a>
-
-branch\_includes: optional array of string
-
-Branch patterns that can start builds.
-
-<a href="#">Link to this property</a>
-
-build\_caching\_enabled: optional boolean
-
-Whether builds reuse cached dependencies and build artifacts.
-
-<a href="#">Link to this property</a>
-
-build\_command: optional string
-
-Command to build the Worker.
-
-<a href="#">Link to this property</a>
-
-created\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-deleted\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-deploy\_command: optional string
-
-Command to deploy the Worker.
-
-<a href="#">Link to this property</a>
-
-external\_script\_id: optional string
-
-System-generated tag of the Worker. This is not the Worker name.
-
-<a href="#">Link to this property</a>
-
-modified\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-path\_excludes: optional array of string
-
-Path patterns that must not start builds.
-
-<a href="#">Link to this property</a>
-
-path\_includes: optional array of string
-
-Path patterns that can start builds.
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-repo\_connection: optional object { created\_on, deleted\_on, modified\_on, 6 more }
-
-</summary>
-
-created\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-deleted\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-modified\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-provider\_account\_id: optional string
-
-Provider-specific identifier of the account or namespace that owns the repository.
-
-<a href="#">Link to this property</a>
-
-provider\_account\_name: optional string
-
-Human-readable name of the account or namespace that owns the repository.
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
-
-Source control provider.
-
-</summary>
-
-One of the following:
-
-"github"
-
-<a href="#">Link to this property</a>
-
-"gitlab"
-
-<a href="#">Link to this property</a>
-
-"gitlab\_internal"
-
-<a href="#">Link to this property</a>
-
-"origin"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-repo\_connection\_uuid: optional string
-
-Repository connection UUID.
-
-formatuuid
-
-<a href="#">Link to this property</a>
-
-repo\_id: optional string
-
-Provider-specific repository identifier.
-
-<a href="#">Link to this property</a>
-
-repo\_name: optional string
-
-Human-readable repository name.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-root\_directory: optional string
-
-Repository directory in which build and deploy commands run.
-
-<a href="#">Link to this property</a>
-
-trigger\_name: optional string
-
-Human-readable name of the build trigger.
-
-<a href="#">Link to this property</a>
-
-trigger\_uuid: optional string
-
-Trigger UUID.
-
-formatuuid
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 
@@ -2145,17 +1079,7 @@ formatuuid
 
 <summary>
 
-WorkersBuildGetAccountLimitsResponse = object { build\_minutes\_refresh\_on, has\_reached\_build\_minutes\_limit } or object { build\_minutes\_refresh\_on, has\_reached\_build\_minutes\_limit }
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-object { build\_minutes\_refresh\_on, has\_reached\_build\_minutes\_limit }
+WorkersBuildGetAccountLimitsResponse object { build\_minutes\_refresh\_on, has\_reached\_build\_minutes\_limit }
 
 </summary>
 
@@ -2170,36 +1094,6 @@ formatdate-time
 has\_reached\_build\_minutes\_limit: optional boolean
 
 Whether build minutes limit has been reached (only for non-paid plans)
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { build\_minutes\_refresh\_on, has\_reached\_build\_minutes\_limit }
-
-</summary>
-
-build\_minutes\_refresh\_on: optional string
-
-When build minutes will refresh (only for non-paid plans)
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-has\_reached\_build\_minutes\_limit: optional boolean
-
-Whether build minutes limit has been reached (only for non-paid plans)
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 
@@ -2239,17 +1133,199 @@ POST/accounts/{account\_id}/builds/triggers/{trigger\_uuid}/builds
 
 <summary>
 
-TriggerListResponse = unknown or array of unknown
+TriggerListResponse object { branch\_excludes, branch\_includes, build\_caching\_enabled, 14 more }
+
+</summary>
+
+branch\_excludes: optional array of string
+
+Branch patterns that must not start builds.
+
+<a href="#">Link to this property</a>
+
+branch\_includes: optional array of string
+
+Branch patterns that can start builds.
+
+<a href="#">Link to this property</a>
+
+build\_caching\_enabled: optional boolean
+
+Whether builds reuse cached dependencies and build artifacts.
+
+<a href="#">Link to this property</a>
+
+build\_command: optional string
+
+Command to build the Worker.
+
+<a href="#">Link to this property</a>
+
+build\_token\_name: optional string
+
+<a href="#">Link to this property</a>
+
+build\_token\_uuid: optional string
+
+UUID of the build token used when deploying the Worker.
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+created\_on: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+deleted\_on: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+deploy\_command: optional string
+
+Command to deploy the Worker.
+
+<a href="#">Link to this property</a>
+
+external\_script\_id: optional string
+
+System-generated tag of the Worker. This is not the Worker name.
+
+<a href="#">Link to this property</a>
+
+modified\_on: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+path\_excludes: optional array of string
+
+Path patterns that must not start builds.
+
+<a href="#">Link to this property</a>
+
+path\_includes: optional array of string
+
+Path patterns that can start builds.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+repo\_connection: optional object { created\_on, deleted\_on, modified\_on, 6 more }
+
+</summary>
+
+created\_on: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+deleted\_on: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+modified\_on: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+provider\_account\_id: optional string
+
+Provider-specific identifier of the account or namespace that owns the repository.
+
+<a href="#">Link to this property</a>
+
+provider\_account\_name: optional string
+
+Human-readable name of the account or namespace that owns the repository.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
+
+Source control provider.
 
 </summary>
 
 One of the following:
 
-unknown
+"github"
 
 <a href="#">Link to this property</a>
 
-array of unknown
+"gitlab"
+
+<a href="#">Link to this property</a>
+
+"gitlab\_internal"
+
+<a href="#">Link to this property</a>
+
+"origin"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+repo\_connection\_uuid: optional string
+
+Repository connection UUID.
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+repo\_id: optional string
+
+Provider-specific repository identifier.
+
+<a href="#">Link to this property</a>
+
+repo\_name: optional string
+
+Human-readable repository name.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+root\_directory: optional string
+
+Repository directory in which build and deploy commands run.
+
+<a href="#">Link to this property</a>
+
+trigger\_name: optional string
+
+Human-readable name of the build trigger.
+
+<a href="#">Link to this property</a>
+
+trigger\_uuid: optional string
+
+Trigger UUID.
+
+formatuuid
 
 <a href="#">Link to this property</a>
 
@@ -2261,17 +1337,7 @@ array of unknown
 
 <summary>
 
-TriggerCreateResponse = object { branch\_excludes, branch\_includes, build\_caching\_enabled, 14 more } or object { branch\_excludes, branch\_includes, build\_caching\_enabled, 14 more }
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-object { branch\_excludes, branch\_includes, build\_caching\_enabled, 14 more }
+TriggerCreateResponse object { branch\_excludes, branch\_includes, build\_caching\_enabled, 14 more }
 
 </summary>
 
@@ -2464,214 +1530,6 @@ trigger\_uuid: optional string
 Trigger UUID.
 
 formatuuid
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { branch\_excludes, branch\_includes, build\_caching\_enabled, 14 more }
-
-</summary>
-
-branch\_excludes: optional array of string
-
-Branch patterns that must not start builds.
-
-<a href="#">Link to this property</a>
-
-branch\_includes: optional array of string
-
-Branch patterns that can start builds.
-
-<a href="#">Link to this property</a>
-
-build\_caching\_enabled: optional boolean
-
-Whether builds reuse cached dependencies and build artifacts.
-
-<a href="#">Link to this property</a>
-
-build\_command: optional string
-
-Command to build the Worker.
-
-<a href="#">Link to this property</a>
-
-build\_token\_name: optional string
-
-<a href="#">Link to this property</a>
-
-build\_token\_uuid: optional string
-
-UUID of the build token used when deploying the Worker.
-
-formatuuid
-
-<a href="#">Link to this property</a>
-
-created\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-deleted\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-deploy\_command: optional string
-
-Command to deploy the Worker.
-
-<a href="#">Link to this property</a>
-
-external\_script\_id: optional string
-
-System-generated tag of the Worker. This is not the Worker name.
-
-<a href="#">Link to this property</a>
-
-modified\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-path\_excludes: optional array of string
-
-Path patterns that must not start builds.
-
-<a href="#">Link to this property</a>
-
-path\_includes: optional array of string
-
-Path patterns that can start builds.
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-repo\_connection: optional object { created\_on, deleted\_on, modified\_on, 6 more }
-
-</summary>
-
-created\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-deleted\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-modified\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-provider\_account\_id: optional string
-
-Provider-specific identifier of the account or namespace that owns the repository.
-
-<a href="#">Link to this property</a>
-
-provider\_account\_name: optional string
-
-Human-readable name of the account or namespace that owns the repository.
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
-
-Source control provider.
-
-</summary>
-
-One of the following:
-
-"github"
-
-<a href="#">Link to this property</a>
-
-"gitlab"
-
-<a href="#">Link to this property</a>
-
-"gitlab\_internal"
-
-<a href="#">Link to this property</a>
-
-"origin"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-repo\_connection\_uuid: optional string
-
-Repository connection UUID.
-
-formatuuid
-
-<a href="#">Link to this property</a>
-
-repo\_id: optional string
-
-Provider-specific repository identifier.
-
-<a href="#">Link to this property</a>
-
-repo\_name: optional string
-
-Human-readable repository name.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-root\_directory: optional string
-
-Repository directory in which build and deploy commands run.
-
-<a href="#">Link to this property</a>
-
-trigger\_name: optional string
-
-Human-readable name of the build trigger.
-
-<a href="#">Link to this property</a>
-
-trigger\_uuid: optional string
-
-Trigger UUID.
-
-formatuuid
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 
@@ -2683,17 +1541,7 @@ formatuuid
 
 <summary>
 
-TriggerUpdateResponse = object { branch\_excludes, branch\_includes, build\_caching\_enabled, 14 more } or object { branch\_excludes, branch\_includes, build\_caching\_enabled, 14 more }
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-object { branch\_excludes, branch\_includes, build\_caching\_enabled, 14 more }
+TriggerUpdateResponse object { branch\_excludes, branch\_includes, build\_caching\_enabled, 14 more }
 
 </summary>
 
@@ -2886,214 +1734,6 @@ trigger\_uuid: optional string
 Trigger UUID.
 
 formatuuid
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { branch\_excludes, branch\_includes, build\_caching\_enabled, 14 more }
-
-</summary>
-
-branch\_excludes: optional array of string
-
-Branch patterns that must not start builds.
-
-<a href="#">Link to this property</a>
-
-branch\_includes: optional array of string
-
-Branch patterns that can start builds.
-
-<a href="#">Link to this property</a>
-
-build\_caching\_enabled: optional boolean
-
-Whether builds reuse cached dependencies and build artifacts.
-
-<a href="#">Link to this property</a>
-
-build\_command: optional string
-
-Command to build the Worker.
-
-<a href="#">Link to this property</a>
-
-build\_token\_name: optional string
-
-<a href="#">Link to this property</a>
-
-build\_token\_uuid: optional string
-
-UUID of the build token used when deploying the Worker.
-
-formatuuid
-
-<a href="#">Link to this property</a>
-
-created\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-deleted\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-deploy\_command: optional string
-
-Command to deploy the Worker.
-
-<a href="#">Link to this property</a>
-
-external\_script\_id: optional string
-
-System-generated tag of the Worker. This is not the Worker name.
-
-<a href="#">Link to this property</a>
-
-modified\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-path\_excludes: optional array of string
-
-Path patterns that must not start builds.
-
-<a href="#">Link to this property</a>
-
-path\_includes: optional array of string
-
-Path patterns that can start builds.
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-repo\_connection: optional object { created\_on, deleted\_on, modified\_on, 6 more }
-
-</summary>
-
-created\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-deleted\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-modified\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-provider\_account\_id: optional string
-
-Provider-specific identifier of the account or namespace that owns the repository.
-
-<a href="#">Link to this property</a>
-
-provider\_account\_name: optional string
-
-Human-readable name of the account or namespace that owns the repository.
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
-
-Source control provider.
-
-</summary>
-
-One of the following:
-
-"github"
-
-<a href="#">Link to this property</a>
-
-"gitlab"
-
-<a href="#">Link to this property</a>
-
-"gitlab\_internal"
-
-<a href="#">Link to this property</a>
-
-"origin"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-repo\_connection\_uuid: optional string
-
-Repository connection UUID.
-
-formatuuid
-
-<a href="#">Link to this property</a>
-
-repo\_id: optional string
-
-Provider-specific repository identifier.
-
-<a href="#">Link to this property</a>
-
-repo\_name: optional string
-
-Human-readable repository name.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-root\_directory: optional string
-
-Repository directory in which build and deploy commands run.
-
-<a href="#">Link to this property</a>
-
-trigger\_name: optional string
-
-Human-readable name of the build trigger.
-
-<a href="#">Link to this property</a>
-
-trigger\_uuid: optional string
-
-Trigger UUID.
-
-formatuuid
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 
@@ -3149,17 +1789,7 @@ array of unknown
 
 <summary>
 
-TriggerCreateBuildResponse = object { build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more } or object { build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more }
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-object { build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more }
+TriggerCreateBuildResponse object { build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more }
 
 </summary>
 
@@ -3652,518 +2282,6 @@ trigger\_uuid: optional string
 Trigger UUID.
 
 formatuuid
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more }
-
-</summary>
-
-<details>
-
-<summary>
-
-build\_outcome: optional "success" or "fail" or "skipped" or 2 more
-
-</summary>
-
-One of the following:
-
-"success"
-
-<a href="#">Link to this property</a>
-
-"fail"
-
-<a href="#">Link to this property</a>
-
-"skipped"
-
-<a href="#">Link to this property</a>
-
-"cancelled"
-
-<a href="#">Link to this property</a>
-
-"terminated"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-build\_trigger\_metadata: optional object { author, branch, build\_command, 11 more }
-
-</summary>
-
-author: optional string
-
-<a href="#">Link to this property</a>
-
-branch: optional string
-
-Git branch name.
-
-<a href="#">Link to this property</a>
-
-build\_command: optional string
-
-Command to build the Worker.
-
-<a href="#">Link to this property</a>
-
-build\_token\_name: optional string
-
-<a href="#">Link to this property</a>
-
-build\_token\_uuid: optional string
-
-UUID of the build token used when deploying the Worker.
-
-formatuuid
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-build\_trigger\_source: optional "push" or "pull\_request" or "manual" or "api"
-
-</summary>
-
-One of the following:
-
-"push"
-
-<a href="#">Link to this property</a>
-
-"pull\_request"
-
-<a href="#">Link to this property</a>
-
-"manual"
-
-<a href="#">Link to this property</a>
-
-"api"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-commit\_hash: optional string
-
-Git commit hash
-
-<a href="#">Link to this property</a>
-
-commit\_message: optional string
-
-<a href="#">Link to this property</a>
-
-deploy\_command: optional string
-
-Command to deploy the Worker.
-
-<a href="#">Link to this property</a>
-
-environment\_variables: optional map\[string]
-
-<a href="#">Link to this property</a>
-
-provider\_account\_name: optional string
-
-Human-readable name of the account or namespace that owns the repository.
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
-
-Source control provider.
-
-</summary>
-
-One of the following:
-
-"github"
-
-<a href="#">Link to this property</a>
-
-"gitlab"
-
-<a href="#">Link to this property</a>
-
-"gitlab\_internal"
-
-<a href="#">Link to this property</a>
-
-"origin"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-repo\_name: optional string
-
-Human-readable repository name.
-
-<a href="#">Link to this property</a>
-
-root\_directory: optional string
-
-Repository directory in which build and deploy commands run.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-build\_uuid: optional string
-
-Build UUID.
-
-formatuuid
-
-<a href="#">Link to this property</a>
-
-created\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-deploy\_hook: optional object { deploy\_hook\_name }
-
-</summary>
-
-deploy\_hook\_name: optional string
-
-Deploy hook name (1-58 characters).
-
-maxLength58
-
-minLength1
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-initializing\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-modified\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-preview\_url: optional string
-
-URL serving the Worker version this build deployed. Only returned by Get build by UUID, and only once the build has produced a preview artifact.
-
-formaturi
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-pull\_request: optional object { closed\_on, created\_on, pull\_request\_url }
-
-</summary>
-
-closed\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-created\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-pull\_request\_url: optional string
-
-formaturi
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-running\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-status: optional "queued" or "initializing" or "running" or "stopped"
-
-</summary>
-
-One of the following:
-
-"queued"
-
-<a href="#">Link to this property</a>
-
-"initializing"
-
-<a href="#">Link to this property</a>
-
-"running"
-
-<a href="#">Link to this property</a>
-
-"stopped"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-stopped\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-trigger: optional object { branch\_excludes, branch\_includes, build\_caching\_enabled, 12 more }
-
-Trigger information without build\_token\_uuid
-
-</summary>
-
-branch\_excludes: optional array of string
-
-Branch patterns that must not start builds.
-
-<a href="#">Link to this property</a>
-
-branch\_includes: optional array of string
-
-Branch patterns that can start builds.
-
-<a href="#">Link to this property</a>
-
-build\_caching\_enabled: optional boolean
-
-Whether builds reuse cached dependencies and build artifacts.
-
-<a href="#">Link to this property</a>
-
-build\_command: optional string
-
-Command to build the Worker.
-
-<a href="#">Link to this property</a>
-
-created\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-deleted\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-deploy\_command: optional string
-
-Command to deploy the Worker.
-
-<a href="#">Link to this property</a>
-
-external\_script\_id: optional string
-
-System-generated tag of the Worker. This is not the Worker name.
-
-<a href="#">Link to this property</a>
-
-modified\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-path\_excludes: optional array of string
-
-Path patterns that must not start builds.
-
-<a href="#">Link to this property</a>
-
-path\_includes: optional array of string
-
-Path patterns that can start builds.
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-repo\_connection: optional object { created\_on, deleted\_on, modified\_on, 6 more }
-
-</summary>
-
-created\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-deleted\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-modified\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-provider\_account\_id: optional string
-
-Provider-specific identifier of the account or namespace that owns the repository.
-
-<a href="#">Link to this property</a>
-
-provider\_account\_name: optional string
-
-Human-readable name of the account or namespace that owns the repository.
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
-
-Source control provider.
-
-</summary>
-
-One of the following:
-
-"github"
-
-<a href="#">Link to this property</a>
-
-"gitlab"
-
-<a href="#">Link to this property</a>
-
-"gitlab\_internal"
-
-<a href="#">Link to this property</a>
-
-"origin"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-repo\_connection\_uuid: optional string
-
-Repository connection UUID.
-
-formatuuid
-
-<a href="#">Link to this property</a>
-
-repo\_id: optional string
-
-Provider-specific repository identifier.
-
-<a href="#">Link to this property</a>
-
-repo\_name: optional string
-
-Human-readable repository name.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-root\_directory: optional string
-
-Repository directory in which build and deploy commands run.
-
-<a href="#">Link to this property</a>
-
-trigger\_name: optional string
-
-Human-readable name of the build trigger.
-
-<a href="#">Link to this property</a>
-
-trigger\_uuid: optional string
-
-Trigger UUID.
-
-formatuuid
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 
@@ -4195,17 +2313,25 @@ DELETE/accounts/{account\_id}/builds/triggers/{trigger\_uuid}/environment\_varia
 
 <summary>
 
-EnvironmentVariableListResponse = unknown or unknown
+EnvironmentVariableListResponse = map\[object { created\_on, is\_secret, value } ]
 
 </summary>
 
-One of the following:
+created\_on: string
 
-unknown
+formatdate-time
 
 <a href="#">Link to this property</a>
 
-unknown
+is\_secret: boolean
+
+Whether to hide the value after it is saved. Secret values remain available to builds but appear as <code>null</code> when you list variables; non-secret values remain visible.
+
+<a href="#">Link to this property</a>
+
+value: optional string
+
+Value is null for secret environment variables
 
 <a href="#">Link to this property</a>
 
@@ -4217,17 +2343,25 @@ unknown
 
 <summary>
 
-EnvironmentVariableUpsertResponse = unknown or unknown
+EnvironmentVariableUpsertResponse = map\[object { created\_on, is\_secret, value } ]
 
 </summary>
 
-One of the following:
+created\_on: string
 
-unknown
+formatdate-time
 
 <a href="#">Link to this property</a>
 
-unknown
+is\_secret: boolean
+
+Whether to hide the value after it is saved. Secret values remain available to builds but appear as <code>null</code> when you list variables; non-secret values remain visible.
+
+<a href="#">Link to this property</a>
+
+value: optional string
+
+Value is null for secret environment variables
 
 <a href="#">Link to this property</a>
 
@@ -4289,17 +2423,67 @@ POST/workers/builds/deploy\_hooks/{deploy\_hook\_uuid}
 
 <summary>
 
-DeployHookListResponse = unknown or array of unknown
+DeployHookListResponse object { branch, created\_on, deploy\_hook\_name, 4 more }
 
 </summary>
 
-One of the following:
+branch: optional string
 
-unknown
+Git branch name.
 
 <a href="#">Link to this property</a>
 
-array of unknown
+created\_on: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+deploy\_hook\_name: optional string
+
+Deploy hook name (1-58 characters).
+
+maxLength58
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+deploy\_hook\_uuid: optional string
+
+Deploy hook UUID.
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+external\_script\_id: optional string
+
+System-generated tag of the Worker. This is not the Worker name.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+latest\_build: optional object { created\_on }
+
+</summary>
+
+created\_on: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+modified\_on: optional string
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -4311,17 +2495,7 @@ array of unknown
 
 <summary>
 
-DeployHookCreateResponse = object { branch, created\_on, deploy\_hook\_name, 3 more } or object { branch, created\_on, deploy\_hook\_name, 3 more }
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-object { branch, created\_on, deploy\_hook\_name, 3 more }
+DeployHookCreateResponse object { branch, created\_on, deploy\_hook\_name, 3 more }
 
 </summary>
 
@@ -4364,64 +2538,6 @@ System-generated tag of the Worker. This is not the Worker name.
 modified\_on: optional string
 
 formatdate-time
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { branch, created\_on, deploy\_hook\_name, 3 more }
-
-</summary>
-
-branch: optional string
-
-Git branch name.
-
-<a href="#">Link to this property</a>
-
-created\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-deploy\_hook\_name: optional string
-
-Deploy hook name (1-58 characters).
-
-maxLength58
-
-minLength1
-
-<a href="#">Link to this property</a>
-
-deploy\_hook\_uuid: optional string
-
-Deploy hook UUID.
-
-formatuuid
-
-<a href="#">Link to this property</a>
-
-external\_script\_id: optional string
-
-System-generated tag of the Worker. This is not the Worker name.
-
-<a href="#">Link to this property</a>
-
-modified\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 
@@ -4433,17 +2549,7 @@ formatdate-time
 
 <summary>
 
-DeployHookGetResponse = object { branch, created\_on, deploy\_hook\_name, 3 more } or object { branch, created\_on, deploy\_hook\_name, 3 more }
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-object { branch, created\_on, deploy\_hook\_name, 3 more }
+DeployHookGetResponse object { branch, created\_on, deploy\_hook\_name, 3 more }
 
 </summary>
 
@@ -4486,64 +2592,6 @@ System-generated tag of the Worker. This is not the Worker name.
 modified\_on: optional string
 
 formatdate-time
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { branch, created\_on, deploy\_hook\_name, 3 more }
-
-</summary>
-
-branch: optional string
-
-Git branch name.
-
-<a href="#">Link to this property</a>
-
-created\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-deploy\_hook\_name: optional string
-
-Deploy hook name (1-58 characters).
-
-maxLength58
-
-minLength1
-
-<a href="#">Link to this property</a>
-
-deploy\_hook\_uuid: optional string
-
-Deploy hook UUID.
-
-formatuuid
-
-<a href="#">Link to this property</a>
-
-external\_script\_id: optional string
-
-System-generated tag of the Worker. This is not the Worker name.
-
-<a href="#">Link to this property</a>
-
-modified\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 
@@ -4555,17 +2603,7 @@ formatdate-time
 
 <summary>
 
-DeployHookUpdateResponse = object { branch, created\_on, deploy\_hook\_name, 3 more } or object { branch, created\_on, deploy\_hook\_name, 3 more }
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-object { branch, created\_on, deploy\_hook\_name, 3 more }
+DeployHookUpdateResponse object { branch, created\_on, deploy\_hook\_name, 3 more }
 
 </summary>
 
@@ -4608,64 +2646,6 @@ System-generated tag of the Worker. This is not the Worker name.
 modified\_on: optional string
 
 formatdate-time
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { branch, created\_on, deploy\_hook\_name, 3 more }
-
-</summary>
-
-branch: optional string
-
-Git branch name.
-
-<a href="#">Link to this property</a>
-
-created\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-deploy\_hook\_name: optional string
-
-Deploy hook name (1-58 characters).
-
-maxLength58
-
-minLength1
-
-<a href="#">Link to this property</a>
-
-deploy\_hook\_uuid: optional string
-
-Deploy hook UUID.
-
-formatuuid
-
-<a href="#">Link to this property</a>
-
-external\_script\_id: optional string
-
-System-generated tag of the Worker. This is not the Worker name.
-
-<a href="#">Link to this property</a>
-
-modified\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 
@@ -4677,17 +2657,7 @@ formatdate-time
 
 <summary>
 
-DeployHookDeleteResponse = object { branch, created\_on, deploy\_hook\_name, 3 more } or object { branch, created\_on, deploy\_hook\_name, 3 more }
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-object { branch, created\_on, deploy\_hook\_name, 3 more }
+DeployHookDeleteResponse object { branch, created\_on, deploy\_hook\_name, 3 more }
 
 </summary>
 
@@ -4730,64 +2700,6 @@ System-generated tag of the Worker. This is not the Worker name.
 modified\_on: optional string
 
 formatdate-time
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { branch, created\_on, deploy\_hook\_name, 3 more }
-
-</summary>
-
-branch: optional string
-
-Git branch name.
-
-<a href="#">Link to this property</a>
-
-created\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-deploy\_hook\_name: optional string
-
-Deploy hook name (1-58 characters).
-
-maxLength58
-
-minLength1
-
-<a href="#">Link to this property</a>
-
-deploy\_hook\_uuid: optional string
-
-Deploy hook UUID.
-
-formatuuid
-
-<a href="#">Link to this property</a>
-
-external\_script\_id: optional string
-
-System-generated tag of the Worker. This is not the Worker name.
-
-<a href="#">Link to this property</a>
-
-modified\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 
@@ -4799,17 +2711,7 @@ formatdate-time
 
 <summary>
 
-DeployHookTriggerResponse = object { already\_exists, build\_uuid, created\_on, status } or object { already\_exists, build\_uuid, created\_on, status }
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-object { already\_exists, build\_uuid, created\_on, status }
+DeployHookTriggerResponse object { already\_exists, build\_uuid, created\_on, status }
 
 </summary>
 
@@ -4856,72 +2758,6 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "stopped"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { already\_exists, build\_uuid, created\_on, status }
-
-</summary>
-
-already\_exists: optional boolean
-
-True if a pending build already exists for this branch
-
-<a href="#">Link to this property</a>
-
-build\_uuid: optional string
-
-Build UUID.
-
-formatuuid
-
-<a href="#">Link to this property</a>
-
-created\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-status: optional "queued" or "initializing" or "running" or "stopped"
-
-</summary>
-
-One of the following:
-
-"queued"
-
-<a href="#">Link to this property</a>
-
-"initializing"
-
-<a href="#">Link to this property</a>
-
-"running"
-
-<a href="#">Link to this property</a>
-
-"stopped"
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 
@@ -4953,17 +2789,7 @@ DELETE/accounts/{account\_id}/builds/tokens/{build\_token\_uuid}
 
 <summary>
 
-TokenCreateResponse = object { build\_token\_name, build\_token\_uuid, cloudflare\_token\_id, owner\_type } or object { build\_token\_name, build\_token\_uuid, cloudflare\_token\_id, owner\_type }
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-object { build\_token\_name, build\_token\_uuid, cloudflare\_token\_id, owner\_type }
+TokenCreateResponse object { build\_token\_name, build\_token\_uuid, cloudflare\_token\_id, owner\_type }
 
 </summary>
 
@@ -4984,42 +2810,6 @@ cloudflare\_token\_id: optional string
 <a href="#">Link to this property</a>
 
 owner\_type: optional string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { build\_token\_name, build\_token\_uuid, cloudflare\_token\_id, owner\_type }
-
-</summary>
-
-build\_token\_name: optional string
-
-<a href="#">Link to this property</a>
-
-build\_token\_uuid: optional string
-
-UUID of the build token used when deploying the Worker.
-
-formatuuid
-
-<a href="#">Link to this property</a>
-
-cloudflare\_token\_id: optional string
-
-<a href="#">Link to this property</a>
-
-owner\_type: optional string
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 
@@ -5031,17 +2821,27 @@ owner\_type: optional string
 
 <summary>
 
-TokenListResponse = unknown or array of unknown
+TokenListResponse object { build\_token\_name, build\_token\_uuid, cloudflare\_token\_id, owner\_type }
 
 </summary>
 
-One of the following:
-
-unknown
+build\_token\_name: optional string
 
 <a href="#">Link to this property</a>
 
-array of unknown
+build\_token\_uuid: optional string
+
+UUID of the build token used when deploying the Worker.
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+cloudflare\_token\_id: optional string
+
+<a href="#">Link to this property</a>
+
+owner\_type: optional string
 
 <a href="#">Link to this property</a>
 
@@ -5089,17 +2889,7 @@ DELETE/accounts/{account\_id}/builds/repos/connections/{repo\_connection\_uuid}
 
 <summary>
 
-ConnectionUpsertResponse = object { created\_on, deleted\_on, modified\_on, 6 more } or object { created\_on, deleted\_on, modified\_on, 6 more }
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-object { created\_on, deleted\_on, modified\_on, 6 more }
+ConnectionUpsertResponse object { created\_on, deleted\_on, modified\_on, 6 more }
 
 </summary>
 
@@ -5182,104 +2972,6 @@ Provider-specific repository identifier.
 repo\_name: optional string
 
 Human-readable repository name.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { created\_on, deleted\_on, modified\_on, 6 more }
-
-</summary>
-
-created\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-deleted\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-modified\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-provider\_account\_id: optional string
-
-Provider-specific identifier of the account or namespace that owns the repository.
-
-<a href="#">Link to this property</a>
-
-provider\_account\_name: optional string
-
-Human-readable name of the account or namespace that owns the repository.
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
-
-Source control provider.
-
-</summary>
-
-One of the following:
-
-"github"
-
-<a href="#">Link to this property</a>
-
-"gitlab"
-
-<a href="#">Link to this property</a>
-
-"gitlab\_internal"
-
-<a href="#">Link to this property</a>
-
-"origin"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-repo\_connection\_uuid: optional string
-
-Repository connection UUID.
-
-formatuuid
-
-<a href="#">Link to this property</a>
-
-repo\_id: optional string
-
-Provider-specific repository identifier.
-
-<a href="#">Link to this property</a>
-
-repo\_name: optional string
-
-Human-readable repository name.
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 
@@ -5321,17 +3013,7 @@ GET/accounts/{account\_id}/builds/repos/{provider\_type}/{provider\_account\_id}
 
 <summary>
 
-ConfigAutofillGetResponse = object { config\_file, default\_worker\_name, deploy\_tool, 3 more } or object { config\_file, default\_worker\_name, deploy\_tool, 3 more }
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-object { config\_file, default\_worker\_name, deploy\_tool, 3 more }
+ConfigAutofillGetResponse object { config\_file, default\_worker\_name, deploy\_tool, 3 more }
 
 </summary>
 
@@ -5408,98 +3090,6 @@ One of the following:
 <a href="#">Link to this property</a>
 
 scripts: optional map\[string]
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { config\_file, default\_worker\_name, deploy\_tool, 3 more }
-
-</summary>
-
-config\_file: optional string
-
-<a href="#">Link to this property</a>
-
-default\_worker\_name: optional string
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-deploy\_tool: optional "cf" or "wrangler"
-
-Deployment CLI detected in the selected root directory. A Wrangler config takes precedence. <code>cf</code> requires <code>cloudflare.config.ts</code> and a <code>cf</code> dependency or dev dependency in <code>package.json</code>.
-
-</summary>
-
-One of the following:
-
-"cf"
-
-<a href="#">Link to this property</a>
-
-"wrangler"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-env\_worker\_names: optional map\[string]
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-package\_manager: optional "npm" or "yarn" or "pnpm" or 2 more
-
-Package manager inferred from repository lockfiles; defaults to npm when none is detected.
-
-</summary>
-
-One of the following:
-
-"npm"
-
-<a href="#">Link to this property</a>
-
-"yarn"
-
-<a href="#">Link to this property</a>
-
-"pnpm"
-
-<a href="#">Link to this property</a>
-
-"bun"
-
-<a href="#">Link to this property</a>
-
-"uv"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-scripts: optional map\[string]
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 
@@ -5527,17 +3117,503 @@ PUT/accounts/{account\_id}/builds/builds/{build\_uuid}/cancel
 
 <summary>
 
-BuildListResponse = unknown or array of unknown
+BuildListResponse object { build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more }
+
+</summary>
+
+<details>
+
+<summary>
+
+build\_outcome: optional "success" or "fail" or "skipped" or 2 more
 
 </summary>
 
 One of the following:
 
-unknown
+"success"
 
 <a href="#">Link to this property</a>
 
-array of unknown
+"fail"
+
+<a href="#">Link to this property</a>
+
+"skipped"
+
+<a href="#">Link to this property</a>
+
+"cancelled"
+
+<a href="#">Link to this property</a>
+
+"terminated"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+build\_trigger\_metadata: optional object { author, branch, build\_command, 11 more }
+
+</summary>
+
+author: optional string
+
+<a href="#">Link to this property</a>
+
+branch: optional string
+
+Git branch name.
+
+<a href="#">Link to this property</a>
+
+build\_command: optional string
+
+Command to build the Worker.
+
+<a href="#">Link to this property</a>
+
+build\_token\_name: optional string
+
+<a href="#">Link to this property</a>
+
+build\_token\_uuid: optional string
+
+UUID of the build token used when deploying the Worker.
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+build\_trigger\_source: optional "push" or "pull\_request" or "manual" or "api"
+
+</summary>
+
+One of the following:
+
+"push"
+
+<a href="#">Link to this property</a>
+
+"pull\_request"
+
+<a href="#">Link to this property</a>
+
+"manual"
+
+<a href="#">Link to this property</a>
+
+"api"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+commit\_hash: optional string
+
+Git commit hash
+
+<a href="#">Link to this property</a>
+
+commit\_message: optional string
+
+<a href="#">Link to this property</a>
+
+deploy\_command: optional string
+
+Command to deploy the Worker.
+
+<a href="#">Link to this property</a>
+
+environment\_variables: optional map\[string]
+
+<a href="#">Link to this property</a>
+
+provider\_account\_name: optional string
+
+Human-readable name of the account or namespace that owns the repository.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
+
+Source control provider.
+
+</summary>
+
+One of the following:
+
+"github"
+
+<a href="#">Link to this property</a>
+
+"gitlab"
+
+<a href="#">Link to this property</a>
+
+"gitlab\_internal"
+
+<a href="#">Link to this property</a>
+
+"origin"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+repo\_name: optional string
+
+Human-readable repository name.
+
+<a href="#">Link to this property</a>
+
+root\_directory: optional string
+
+Repository directory in which build and deploy commands run.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+build\_uuid: optional string
+
+Build UUID.
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+created\_on: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+deploy\_hook: optional object { deploy\_hook\_name }
+
+</summary>
+
+deploy\_hook\_name: optional string
+
+Deploy hook name (1-58 characters).
+
+maxLength58
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+initializing\_on: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+modified\_on: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+preview\_url: optional string
+
+URL serving the Worker version this build deployed. Only returned by Get build by UUID, and only once the build has produced a preview artifact.
+
+formaturi
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+pull\_request: optional object { closed\_on, created\_on, pull\_request\_url }
+
+</summary>
+
+closed\_on: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+created\_on: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+pull\_request\_url: optional string
+
+formaturi
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+running\_on: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+status: optional "queued" or "initializing" or "running" or "stopped"
+
+</summary>
+
+One of the following:
+
+"queued"
+
+<a href="#">Link to this property</a>
+
+"initializing"
+
+<a href="#">Link to this property</a>
+
+"running"
+
+<a href="#">Link to this property</a>
+
+"stopped"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+stopped\_on: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+trigger: optional object { branch\_excludes, branch\_includes, build\_caching\_enabled, 12 more }
+
+Trigger information without build\_token\_uuid
+
+</summary>
+
+branch\_excludes: optional array of string
+
+Branch patterns that must not start builds.
+
+<a href="#">Link to this property</a>
+
+branch\_includes: optional array of string
+
+Branch patterns that can start builds.
+
+<a href="#">Link to this property</a>
+
+build\_caching\_enabled: optional boolean
+
+Whether builds reuse cached dependencies and build artifacts.
+
+<a href="#">Link to this property</a>
+
+build\_command: optional string
+
+Command to build the Worker.
+
+<a href="#">Link to this property</a>
+
+created\_on: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+deleted\_on: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+deploy\_command: optional string
+
+Command to deploy the Worker.
+
+<a href="#">Link to this property</a>
+
+external\_script\_id: optional string
+
+System-generated tag of the Worker. This is not the Worker name.
+
+<a href="#">Link to this property</a>
+
+modified\_on: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+path\_excludes: optional array of string
+
+Path patterns that must not start builds.
+
+<a href="#">Link to this property</a>
+
+path\_includes: optional array of string
+
+Path patterns that can start builds.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+repo\_connection: optional object { created\_on, deleted\_on, modified\_on, 6 more }
+
+</summary>
+
+created\_on: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+deleted\_on: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+modified\_on: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+provider\_account\_id: optional string
+
+Provider-specific identifier of the account or namespace that owns the repository.
+
+<a href="#">Link to this property</a>
+
+provider\_account\_name: optional string
+
+Human-readable name of the account or namespace that owns the repository.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
+
+Source control provider.
+
+</summary>
+
+One of the following:
+
+"github"
+
+<a href="#">Link to this property</a>
+
+"gitlab"
+
+<a href="#">Link to this property</a>
+
+"gitlab\_internal"
+
+<a href="#">Link to this property</a>
+
+"origin"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+repo\_connection\_uuid: optional string
+
+Repository connection UUID.
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+repo\_id: optional string
+
+Provider-specific repository identifier.
+
+<a href="#">Link to this property</a>
+
+repo\_name: optional string
+
+Human-readable repository name.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+root\_directory: optional string
+
+Repository directory in which build and deploy commands run.
+
+<a href="#">Link to this property</a>
+
+trigger\_name: optional string
+
+Human-readable name of the build trigger.
+
+<a href="#">Link to this property</a>
+
+trigger\_uuid: optional string
+
+Trigger UUID.
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -5549,17 +3625,7 @@ array of unknown
 
 <summary>
 
-BuildGetResponse = object { build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more } or object { build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more }
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-object { build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more }
+BuildGetResponse object { build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more }
 
 </summary>
 
@@ -6052,518 +4118,6 @@ trigger\_uuid: optional string
 Trigger UUID.
 
 formatuuid
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more }
-
-</summary>
-
-<details>
-
-<summary>
-
-build\_outcome: optional "success" or "fail" or "skipped" or 2 more
-
-</summary>
-
-One of the following:
-
-"success"
-
-<a href="#">Link to this property</a>
-
-"fail"
-
-<a href="#">Link to this property</a>
-
-"skipped"
-
-<a href="#">Link to this property</a>
-
-"cancelled"
-
-<a href="#">Link to this property</a>
-
-"terminated"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-build\_trigger\_metadata: optional object { author, branch, build\_command, 11 more }
-
-</summary>
-
-author: optional string
-
-<a href="#">Link to this property</a>
-
-branch: optional string
-
-Git branch name.
-
-<a href="#">Link to this property</a>
-
-build\_command: optional string
-
-Command to build the Worker.
-
-<a href="#">Link to this property</a>
-
-build\_token\_name: optional string
-
-<a href="#">Link to this property</a>
-
-build\_token\_uuid: optional string
-
-UUID of the build token used when deploying the Worker.
-
-formatuuid
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-build\_trigger\_source: optional "push" or "pull\_request" or "manual" or "api"
-
-</summary>
-
-One of the following:
-
-"push"
-
-<a href="#">Link to this property</a>
-
-"pull\_request"
-
-<a href="#">Link to this property</a>
-
-"manual"
-
-<a href="#">Link to this property</a>
-
-"api"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-commit\_hash: optional string
-
-Git commit hash
-
-<a href="#">Link to this property</a>
-
-commit\_message: optional string
-
-<a href="#">Link to this property</a>
-
-deploy\_command: optional string
-
-Command to deploy the Worker.
-
-<a href="#">Link to this property</a>
-
-environment\_variables: optional map\[string]
-
-<a href="#">Link to this property</a>
-
-provider\_account\_name: optional string
-
-Human-readable name of the account or namespace that owns the repository.
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
-
-Source control provider.
-
-</summary>
-
-One of the following:
-
-"github"
-
-<a href="#">Link to this property</a>
-
-"gitlab"
-
-<a href="#">Link to this property</a>
-
-"gitlab\_internal"
-
-<a href="#">Link to this property</a>
-
-"origin"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-repo\_name: optional string
-
-Human-readable repository name.
-
-<a href="#">Link to this property</a>
-
-root\_directory: optional string
-
-Repository directory in which build and deploy commands run.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-build\_uuid: optional string
-
-Build UUID.
-
-formatuuid
-
-<a href="#">Link to this property</a>
-
-created\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-deploy\_hook: optional object { deploy\_hook\_name }
-
-</summary>
-
-deploy\_hook\_name: optional string
-
-Deploy hook name (1-58 characters).
-
-maxLength58
-
-minLength1
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-initializing\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-modified\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-preview\_url: optional string
-
-URL serving the Worker version this build deployed. Only returned by Get build by UUID, and only once the build has produced a preview artifact.
-
-formaturi
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-pull\_request: optional object { closed\_on, created\_on, pull\_request\_url }
-
-</summary>
-
-closed\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-created\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-pull\_request\_url: optional string
-
-formaturi
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-running\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-status: optional "queued" or "initializing" or "running" or "stopped"
-
-</summary>
-
-One of the following:
-
-"queued"
-
-<a href="#">Link to this property</a>
-
-"initializing"
-
-<a href="#">Link to this property</a>
-
-"running"
-
-<a href="#">Link to this property</a>
-
-"stopped"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-stopped\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-trigger: optional object { branch\_excludes, branch\_includes, build\_caching\_enabled, 12 more }
-
-Trigger information without build\_token\_uuid
-
-</summary>
-
-branch\_excludes: optional array of string
-
-Branch patterns that must not start builds.
-
-<a href="#">Link to this property</a>
-
-branch\_includes: optional array of string
-
-Branch patterns that can start builds.
-
-<a href="#">Link to this property</a>
-
-build\_caching\_enabled: optional boolean
-
-Whether builds reuse cached dependencies and build artifacts.
-
-<a href="#">Link to this property</a>
-
-build\_command: optional string
-
-Command to build the Worker.
-
-<a href="#">Link to this property</a>
-
-created\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-deleted\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-deploy\_command: optional string
-
-Command to deploy the Worker.
-
-<a href="#">Link to this property</a>
-
-external\_script\_id: optional string
-
-System-generated tag of the Worker. This is not the Worker name.
-
-<a href="#">Link to this property</a>
-
-modified\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-path\_excludes: optional array of string
-
-Path patterns that must not start builds.
-
-<a href="#">Link to this property</a>
-
-path\_includes: optional array of string
-
-Path patterns that can start builds.
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-repo\_connection: optional object { created\_on, deleted\_on, modified\_on, 6 more }
-
-</summary>
-
-created\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-deleted\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-modified\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-provider\_account\_id: optional string
-
-Provider-specific identifier of the account or namespace that owns the repository.
-
-<a href="#">Link to this property</a>
-
-provider\_account\_name: optional string
-
-Human-readable name of the account or namespace that owns the repository.
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
-
-Source control provider.
-
-</summary>
-
-One of the following:
-
-"github"
-
-<a href="#">Link to this property</a>
-
-"gitlab"
-
-<a href="#">Link to this property</a>
-
-"gitlab\_internal"
-
-<a href="#">Link to this property</a>
-
-"origin"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-repo\_connection\_uuid: optional string
-
-Repository connection UUID.
-
-formatuuid
-
-<a href="#">Link to this property</a>
-
-repo\_id: optional string
-
-Provider-specific repository identifier.
-
-<a href="#">Link to this property</a>
-
-repo\_name: optional string
-
-Human-readable repository name.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-root\_directory: optional string
-
-Repository directory in which build and deploy commands run.
-
-<a href="#">Link to this property</a>
-
-trigger\_name: optional string
-
-Human-readable name of the build trigger.
-
-<a href="#">Link to this property</a>
-
-trigger\_uuid: optional string
-
-Trigger UUID.
-
-formatuuid
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 
@@ -6579,17 +4133,7 @@ formatuuid
 
 <summary>
 
-BuildCancelResponse = object { build\_outcome, build\_uuid, stopped\_on } or object { build\_outcome, build\_uuid, stopped\_on }
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-object { build\_outcome, build\_uuid, stopped\_on }
+BuildCancelResponse object { build\_outcome, build\_uuid, stopped\_on }
 
 </summary>
 
@@ -6638,70 +4182,6 @@ formatuuid
 stopped\_on: optional string
 
 formatdate-time
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { build\_outcome, build\_uuid, stopped\_on }
-
-</summary>
-
-<details>
-
-<summary>
-
-build\_outcome: optional "success" or "fail" or "skipped" or 2 more
-
-</summary>
-
-One of the following:
-
-"success"
-
-<a href="#">Link to this property</a>
-
-"fail"
-
-<a href="#">Link to this property</a>
-
-"skipped"
-
-<a href="#">Link to this property</a>
-
-"cancelled"
-
-<a href="#">Link to this property</a>
-
-"terminated"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-build\_uuid: optional string
-
-Build UUID.
-
-formatuuid
-
-<a href="#">Link to this property</a>
-
-stopped\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 
@@ -6721,17 +4201,7 @@ GET/accounts/{account\_id}/builds/builds/{build\_uuid}/logs
 
 <summary>
 
-LogGetResponse = object { cursor, lines, truncated } or object { cursor, lines, truncated }
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-object { cursor, lines, truncated }
+LogGetResponse object { cursor, lines, truncated }
 
 </summary>
 
@@ -6768,58 +4238,6 @@ Log message
 <a href="#">Link to this property</a>
 
 truncated: optional boolean
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { cursor, lines, truncated }
-
-</summary>
-
-cursor: optional string
-
-Pagination cursor for log retrieval.
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-lines: optional array of array of number or string
-
-</summary>
-
-One of the following:
-
-number
-
-Unix epoch timestamp
-
-<a href="#">Link to this property</a>
-
-string
-
-Log message
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-truncated: optional boolean
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 

@@ -1,7 +1,9 @@
 ---
 agent:
-  instructions: "This site offers a search API that returns relevant content across the entire site. Use the search endpoint to find information instead of crawling individual pages."
-  search: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  instructions: "Use this search API to find relevant content across this site with keywords or natural-language queries, instead of crawling individual pages. Results are returned in Markdown."
+  endpoint: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  method: "GET"
+  documentation: "https://developers.cloudflare.com/ai-search/how-to/search-for-agents/"
 title: Update Managed Transforms
 ---
 
@@ -17,7 +19,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 ---
 
-**Copy Markdown****View as Markdown**
+**Copy MarkdownView as Markdown**
 
 # Update Managed Transforms
 
@@ -57,7 +59,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Account Custom Error Rules Write``Response Compression Write``Account Custom Pages Write``Custom Pages Write``Config Settings Write``Dynamic URL Redirects Write``Cache Settings Write``Custom Errors Write``Origin Write``Managed headers Write``Zone Transform Rules Write``Mass URL Redirects Write``Magic Firewall Write``L4 DDoS Managed Ruleset Write``HTTP DDoS Managed Ruleset Write``Sanitize Write``Transform Rules Write``Select Configuration Write``Bot Management Write``Zone WAF Write``Account WAF Write``Account Rulesets Write``Logs Write``Logs Write`
+`Account Custom Error Rules Write` `Response Compression Write` `Account Custom Pages Write` `Custom Pages Write` `Config Settings Write` `Dynamic URL Redirects Write` `Cache Settings Write` `Custom Errors Write` `Origin Write` `Managed headers Write` `Zone Transform Rules Write` `Mass URL Redirects Write` `Magic Firewall Write` `L4 DDoS Managed Ruleset Write` `HTTP DDoS Managed Ruleset Write` `Sanitize Write` `Transform Rules Write` `Select Configuration Write` `Bot Management Write` `Zone WAF Write` `Account WAF Write` `Account Rulesets Write` `Logs Write` `Logs Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -255,19 +257,9 @@ minLength1
 
 <summary>
 
-result: object { managed\_request\_headers, managed\_response\_headers } or object { managed\_request\_headers, managed\_response\_headers } or object { managed\_request\_headers, managed\_response\_headers } or 2 more
+result: object { managed\_request\_headers, managed\_response\_headers }
 
-A result.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-object { managed\_request\_headers, managed\_response\_headers }
+A Managed Transforms object.
 
 </summary>
 
@@ -275,7 +267,7 @@ object { managed\_request\_headers, managed\_response\_headers }
 
 <summary>
 
-managed\_request\_headers: optional array of object { id, enabled, has\_conflict, conflicts\_with }
+managed\_request\_headers: array of object { id, enabled, has\_conflict, conflicts\_with }
 
 The list of Managed Request Transforms.
 
@@ -315,7 +307,7 @@ The Managed Transforms that this Managed Transform conflicts with.
 
 <summary>
 
-managed\_response\_headers: optional array of object { id, enabled, has\_conflict, conflicts\_with }
+managed\_response\_headers: array of object { id, enabled, has\_conflict, conflicts\_with }
 
 The list of Managed Response Transforms.
 
@@ -344,378 +336,6 @@ Whether the Managed Transform conflicts with the currently-enabled Managed Trans
 conflicts\_with: optional array of string
 
 The Managed Transforms that this Managed Transform conflicts with.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { managed\_request\_headers, managed\_response\_headers }
-
-</summary>
-
-<details>
-
-<summary>
-
-managed\_request\_headers: optional array of object { id, enabled, has\_conflict, conflicts\_with }
-
-The list of Managed Request Transforms.
-
-</summary>
-
-id: string
-
-The human-readable identifier of the Managed Transform.
-
-minLength1
-
-<a href="#">Link to this property</a>
-
-enabled: boolean
-
-Whether the Managed Transform is enabled.
-
-<a href="#">Link to this property</a>
-
-has\_conflict: boolean
-
-Whether the Managed Transform conflicts with the currently-enabled Managed Transforms.
-
-<a href="#">Link to this property</a>
-
-conflicts\_with: optional array of string
-
-The Managed Transforms that this Managed Transform conflicts with.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-managed\_response\_headers: optional array of object { id, enabled, has\_conflict, conflicts\_with }
-
-The list of Managed Response Transforms.
-
-</summary>
-
-id: string
-
-The human-readable identifier of the Managed Transform.
-
-minLength1
-
-<a href="#">Link to this property</a>
-
-enabled: boolean
-
-Whether the Managed Transform is enabled.
-
-<a href="#">Link to this property</a>
-
-has\_conflict: boolean
-
-Whether the Managed Transform conflicts with the currently-enabled Managed Transforms.
-
-<a href="#">Link to this property</a>
-
-conflicts\_with: optional array of string
-
-The Managed Transforms that this Managed Transform conflicts with.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { managed\_request\_headers, managed\_response\_headers }
-
-</summary>
-
-<details>
-
-<summary>
-
-managed\_request\_headers: optional array of object { id, enabled, has\_conflict, conflicts\_with }
-
-The list of Managed Request Transforms.
-
-</summary>
-
-id: string
-
-The human-readable identifier of the Managed Transform.
-
-minLength1
-
-<a href="#">Link to this property</a>
-
-enabled: boolean
-
-Whether the Managed Transform is enabled.
-
-<a href="#">Link to this property</a>
-
-has\_conflict: boolean
-
-Whether the Managed Transform conflicts with the currently-enabled Managed Transforms.
-
-<a href="#">Link to this property</a>
-
-conflicts\_with: optional array of string
-
-The Managed Transforms that this Managed Transform conflicts with.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-managed\_response\_headers: optional array of object { id, enabled, has\_conflict, conflicts\_with }
-
-The list of Managed Response Transforms.
-
-</summary>
-
-id: string
-
-The human-readable identifier of the Managed Transform.
-
-minLength1
-
-<a href="#">Link to this property</a>
-
-enabled: boolean
-
-Whether the Managed Transform is enabled.
-
-<a href="#">Link to this property</a>
-
-has\_conflict: boolean
-
-Whether the Managed Transform conflicts with the currently-enabled Managed Transforms.
-
-<a href="#">Link to this property</a>
-
-conflicts\_with: optional array of string
-
-The Managed Transforms that this Managed Transform conflicts with.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { managed\_request\_headers, managed\_response\_headers }
-
-</summary>
-
-<details>
-
-<summary>
-
-managed\_request\_headers: optional array of object { id, enabled, has\_conflict, conflicts\_with }
-
-The list of Managed Request Transforms.
-
-</summary>
-
-id: string
-
-The human-readable identifier of the Managed Transform.
-
-minLength1
-
-<a href="#">Link to this property</a>
-
-enabled: boolean
-
-Whether the Managed Transform is enabled.
-
-<a href="#">Link to this property</a>
-
-has\_conflict: boolean
-
-Whether the Managed Transform conflicts with the currently-enabled Managed Transforms.
-
-<a href="#">Link to this property</a>
-
-conflicts\_with: optional array of string
-
-The Managed Transforms that this Managed Transform conflicts with.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-managed\_response\_headers: optional array of object { id, enabled, has\_conflict, conflicts\_with }
-
-The list of Managed Response Transforms.
-
-</summary>
-
-id: string
-
-The human-readable identifier of the Managed Transform.
-
-minLength1
-
-<a href="#">Link to this property</a>
-
-enabled: boolean
-
-Whether the Managed Transform is enabled.
-
-<a href="#">Link to this property</a>
-
-has\_conflict: boolean
-
-Whether the Managed Transform conflicts with the currently-enabled Managed Transforms.
-
-<a href="#">Link to this property</a>
-
-conflicts\_with: optional array of string
-
-The Managed Transforms that this Managed Transform conflicts with.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { managed\_request\_headers, managed\_response\_headers }
-
-</summary>
-
-<details>
-
-<summary>
-
-managed\_request\_headers: optional array of object { id, enabled, has\_conflict, conflicts\_with }
-
-The list of Managed Request Transforms.
-
-</summary>
-
-id: string
-
-The human-readable identifier of the Managed Transform.
-
-minLength1
-
-<a href="#">Link to this property</a>
-
-enabled: boolean
-
-Whether the Managed Transform is enabled.
-
-<a href="#">Link to this property</a>
-
-has\_conflict: boolean
-
-Whether the Managed Transform conflicts with the currently-enabled Managed Transforms.
-
-<a href="#">Link to this property</a>
-
-conflicts\_with: optional array of string
-
-The Managed Transforms that this Managed Transform conflicts with.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-managed\_response\_headers: optional array of object { id, enabled, has\_conflict, conflicts\_with }
-
-The list of Managed Response Transforms.
-
-</summary>
-
-id: string
-
-The human-readable identifier of the Managed Transform.
-
-minLength1
-
-<a href="#">Link to this property</a>
-
-enabled: boolean
-
-Whether the Managed Transform is enabled.
-
-<a href="#">Link to this property</a>
-
-has\_conflict: boolean
-
-Whether the Managed Transform conflicts with the currently-enabled Managed Transforms.
-
-<a href="#">Link to this property</a>
-
-conflicts\_with: optional array of string
-
-The Managed Transforms that this Managed Transform conflicts with.
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 

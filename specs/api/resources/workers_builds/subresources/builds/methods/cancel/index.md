@@ -1,7 +1,9 @@
 ---
 agent:
-  instructions: "This site offers a search API that returns relevant content across the entire site. Use the search endpoint to find information instead of crawling individual pages."
-  search: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  instructions: "Use this search API to find relevant content across this site with keywords or natural-language queries, instead of crawling individual pages. Results are returned in Markdown."
+  endpoint: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  method: "GET"
+  documentation: "https://developers.cloudflare.com/ai-search/how-to/search-for-agents/"
 title: Cancel a Workers build
 ---
 
@@ -19,7 +21,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 ---
 
-**Copy Markdown****View as Markdown**
+**Copy MarkdownView as Markdown**
 
 # Cancel a Workers build
 
@@ -107,17 +109,7 @@ messages: array of string
 
 <summary>
 
-result: object { build\_outcome, build\_uuid, stopped\_on } or object { build\_outcome, build\_uuid, stopped\_on }
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-object { build\_outcome, build\_uuid, stopped\_on }
+result: object { build\_outcome, build\_uuid, stopped\_on }
 
 </summary>
 
@@ -166,70 +158,6 @@ formatuuid
 stopped\_on: optional string
 
 formatdate-time
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { build\_outcome, build\_uuid, stopped\_on }
-
-</summary>
-
-<details>
-
-<summary>
-
-build\_outcome: optional "success" or "fail" or "skipped" or 2 more
-
-</summary>
-
-One of the following:
-
-"success"
-
-<a href="#">Link to this property</a>
-
-"fail"
-
-<a href="#">Link to this property</a>
-
-"skipped"
-
-<a href="#">Link to this property</a>
-
-"cancelled"
-
-<a href="#">Link to this property</a>
-
-"terminated"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-build\_uuid: optional string
-
-Build UUID.
-
-formatuuid
-
-<a href="#">Link to this property</a>
-
-stopped\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 

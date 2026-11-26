@@ -1,7 +1,9 @@
 ---
 agent:
-  instructions: "This site offers a search API that returns relevant content across the entire site. Use the search endpoint to find information instead of crawling individual pages."
-  search: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  instructions: "Use this search API to find relevant content across this site with keywords or natural-language queries, instead of crawling individual pages. Results are returned in Markdown."
+  endpoint: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  method: "GET"
+  documentation: "https://developers.cloudflare.com/ai-search/how-to/search-for-agents/"
 title: List build tokens
 ---
 
@@ -19,7 +21,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 ---
 
-**Copy Markdown****View as Markdown**
+**Copy MarkdownView as Markdown**
 
 # List build tokens
 
@@ -59,7 +61,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Workers Metadata Read-Only``Workers CI Write``Workers CI Read`
+`Workers Metadata Read-Only` `Workers CI Write` `Workers CI Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -119,17 +121,27 @@ messages: array of string
 
 <summary>
 
-result: unknown or array of unknown
+result: array of object { build\_token\_name, build\_token\_uuid, cloudflare\_token\_id, owner\_type }
 
 </summary>
 
-One of the following:
-
-unknown
+build\_token\_name: optional string
 
 <a href="#">Link to this property</a>
 
-array of unknown
+build\_token\_uuid: optional string
+
+UUID of the build token used when deploying the Worker.
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+cloudflare\_token\_id: optional string
+
+<a href="#">Link to this property</a>
+
+owner\_type: optional string
 
 <a href="#">Link to this property</a>
 
@@ -197,7 +209,14 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/tokens \
   "messages": [
     "string"
   ],
-  "result": {},
+  "result": [
+    {
+      "build_token_name": "My Build Token",
+      "build_token_uuid": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+      "cloudflare_token_id": "cf-token-123",
+      "owner_type": "user"
+    }
+  ],
   "success": true,
   "result_info": {
     "count": 25,
@@ -224,7 +243,14 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/tokens \
   "messages": [
     "string"
   ],
-  "result": {},
+  "result": [
+    {
+      "build_token_name": "My Build Token",
+      "build_token_uuid": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+      "cloudflare_token_id": "cf-token-123",
+      "owner_type": "user"
+    }
+  ],
   "success": true,
   "result_info": {
     "count": 25,

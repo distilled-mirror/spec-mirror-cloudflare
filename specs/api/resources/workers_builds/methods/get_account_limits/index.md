@@ -1,7 +1,9 @@
 ---
 agent:
-  instructions: "This site offers a search API that returns relevant content across the entire site. Use the search endpoint to find information instead of crawling individual pages."
-  search: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  instructions: "Use this search API to find relevant content across this site with keywords or natural-language queries, instead of crawling individual pages. Results are returned in Markdown."
+  endpoint: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  method: "GET"
+  documentation: "https://developers.cloudflare.com/ai-search/how-to/search-for-agents/"
 title: Get build-minute availability
 ---
 
@@ -17,7 +19,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 ---
 
-**Copy Markdown****View as Markdown**
+**Copy MarkdownView as Markdown**
 
 # Get build-minute availability
 
@@ -57,7 +59,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Workers Metadata Read-Only``Workers CI Write``Workers CI Read`
+`Workers Metadata Read-Only` `Workers CI Write` `Workers CI Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -97,17 +99,7 @@ messages: array of string
 
 <summary>
 
-result: object { build\_minutes\_refresh\_on, has\_reached\_build\_minutes\_limit } or object { build\_minutes\_refresh\_on, has\_reached\_build\_minutes\_limit }
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-object { build\_minutes\_refresh\_on, has\_reached\_build\_minutes\_limit }
+result: object { build\_minutes\_refresh\_on, has\_reached\_build\_minutes\_limit }
 
 </summary>
 
@@ -122,36 +114,6 @@ formatdate-time
 has\_reached\_build\_minutes\_limit: optional boolean
 
 Whether build minutes limit has been reached (only for non-paid plans)
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { build\_minutes\_refresh\_on, has\_reached\_build\_minutes\_limit }
-
-</summary>
-
-build\_minutes\_refresh\_on: optional string
-
-When build minutes will refresh (only for non-paid plans)
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-has\_reached\_build\_minutes\_limit: optional boolean
-
-Whether build minutes limit has been reached (only for non-paid plans)
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 

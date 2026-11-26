@@ -1,7 +1,9 @@
 ---
 agent:
-  instructions: "This site offers a search API that returns relevant content across the entire site. Use the search endpoint to find information instead of crawling individual pages."
-  search: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  instructions: "Use this search API to find relevant content across this site with keywords or natural-language queries, instead of crawling individual pages. Results are returned in Markdown."
+  endpoint: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  method: "GET"
+  documentation: "https://developers.cloudflare.com/ai-search/how-to/search-for-agents/"
 title: Create or update a repository connection
 ---
 
@@ -21,7 +23,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 ---
 
-**Copy Markdown****View as Markdown**
+**Copy MarkdownView as Markdown**
 
 # Create or update a repository connection
 
@@ -159,17 +161,7 @@ messages: array of string
 
 <summary>
 
-result: object { created\_on, deleted\_on, modified\_on, 6 more } or object { created\_on, deleted\_on, modified\_on, 6 more }
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-object { created\_on, deleted\_on, modified\_on, 6 more }
+result: object { created\_on, deleted\_on, modified\_on, 6 more }
 
 </summary>
 
@@ -252,104 +244,6 @@ Provider-specific repository identifier.
 repo\_name: optional string
 
 Human-readable repository name.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { created\_on, deleted\_on, modified\_on, 6 more }
-
-</summary>
-
-created\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-deleted\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-modified\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-provider\_account\_id: optional string
-
-Provider-specific identifier of the account or namespace that owns the repository.
-
-<a href="#">Link to this property</a>
-
-provider\_account\_name: optional string
-
-Human-readable name of the account or namespace that owns the repository.
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
-
-Source control provider.
-
-</summary>
-
-One of the following:
-
-"github"
-
-<a href="#">Link to this property</a>
-
-"gitlab"
-
-<a href="#">Link to this property</a>
-
-"gitlab\_internal"
-
-<a href="#">Link to this property</a>
-
-"origin"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-repo\_connection\_uuid: optional string
-
-Repository connection UUID.
-
-formatuuid
-
-<a href="#">Link to this property</a>
-
-repo\_id: optional string
-
-Provider-specific repository identifier.
-
-<a href="#">Link to this property</a>
-
-repo\_name: optional string
-
-Human-readable repository name.
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 

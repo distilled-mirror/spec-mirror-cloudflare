@@ -1,7 +1,9 @@
 ---
 agent:
-  instructions: "This site offers a search API that returns relevant content across the entire site. Use the search endpoint to find information instead of crawling individual pages."
-  search: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  instructions: "Use this search API to find relevant content across this site with keywords or natural-language queries, instead of crawling individual pages. Results are returned in Markdown."
+  endpoint: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  method: "GET"
+  documentation: "https://developers.cloudflare.com/ai-search/how-to/search-for-agents/"
 title: V1
 ---
 
@@ -17,7 +19,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 ---
 
-**Copy Markdown****View as Markdown**
+**Copy MarkdownView as Markdown**
 
 # V1
 
@@ -181,25 +183,7 @@ Object specifying available variants for an image.
 
 [Link to this property](#)%20images.v1%20%3E%20(model)%20v1_list_response%20%3E%20(schema)>)
 
-<details>
-
-<summary>
-
-V1DeleteResponse = unknown or string
-
-</summary>
-
-One of the following:
-
-unknown
-
-<a href="#">Link to this property</a>
-
-string
-
-<a href="#">Link to this property</a>
-
-</details>
+V1DeleteResponse = unknown
 
 [Link to this property](#)%20images.v1%20%3E%20(model)%20v1_delete_response%20%3E%20(schema)>)
 
@@ -951,25 +935,7 @@ Indicates whether the variant can access an image without a signature, regardles
 
 [Link to this property](#)%20images.v1.variants%20%3E%20(model)%20variant_edit_response%20%3E%20(schema)>)
 
-<details>
-
-<summary>
-
-VariantDeleteResponse = unknown or string
-
-</summary>
-
-One of the following:
-
-unknown
-
-<a href="#">Link to this property</a>
-
-string
-
-<a href="#">Link to this property</a>
-
-</details>
+VariantDeleteResponse = unknown
 
 [Link to this property](#)%20images.v1.variants%20%3E%20(model)%20variant_delete_response%20%3E%20(schema)>)
 

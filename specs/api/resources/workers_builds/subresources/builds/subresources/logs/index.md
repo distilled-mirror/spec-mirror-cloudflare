@@ -1,7 +1,9 @@
 ---
 agent:
-  instructions: "This site offers a search API that returns relevant content across the entire site. Use the search endpoint to find information instead of crawling individual pages."
-  search: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  instructions: "Use this search API to find relevant content across this site with keywords or natural-language queries, instead of crawling individual pages. Results are returned in Markdown."
+  endpoint: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  method: "GET"
+  documentation: "https://developers.cloudflare.com/ai-search/how-to/search-for-agents/"
 title: Logs
 ---
 
@@ -19,7 +21,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 ---
 
-**Copy Markdown****View as Markdown**
+**Copy MarkdownView as Markdown**
 
 # Logs
 
@@ -33,17 +35,7 @@ GET/accounts/{account\_id}/builds/builds/{build\_uuid}/logs
 
 <summary>
 
-LogGetResponse = object { cursor, lines, truncated } or object { cursor, lines, truncated }
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-object { cursor, lines, truncated }
+LogGetResponse object { cursor, lines, truncated }
 
 </summary>
 
@@ -80,58 +72,6 @@ Log message
 <a href="#">Link to this property</a>
 
 truncated: optional boolean
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { cursor, lines, truncated }
-
-</summary>
-
-cursor: optional string
-
-Pagination cursor for log retrieval.
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-lines: optional array of array of number or string
-
-</summary>
-
-One of the following:
-
-number
-
-Unix epoch timestamp
-
-<a href="#">Link to this property</a>
-
-string
-
-Log message
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-truncated: optional boolean
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 

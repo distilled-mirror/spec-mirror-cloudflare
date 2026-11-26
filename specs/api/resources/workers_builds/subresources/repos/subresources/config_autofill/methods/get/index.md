@@ -1,7 +1,9 @@
 ---
 agent:
-  instructions: "This site offers a search API that returns relevant content across the entire site. Use the search endpoint to find information instead of crawling individual pages."
-  search: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  instructions: "Use this search API to find relevant content across this site with keywords or natural-language queries, instead of crawling individual pages. Results are returned in Markdown."
+  endpoint: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  method: "GET"
+  documentation: "https://developers.cloudflare.com/ai-search/how-to/search-for-agents/"
 title: Get repository configuration autofill
 ---
 
@@ -21,7 +23,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 ---
 
-**Copy Markdown****View as Markdown**
+**Copy MarkdownView as Markdown**
 
 # Get repository configuration autofill
 
@@ -61,7 +63,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Workers Metadata Read-Only``Workers CI Write``Workers CI Read`
+`Workers Metadata Read-Only` `Workers CI Write` `Workers CI Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -159,17 +161,7 @@ messages: array of string
 
 <summary>
 
-result: object { config\_file, default\_worker\_name, deploy\_tool, 3 more } or object { config\_file, default\_worker\_name, deploy\_tool, 3 more }
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-object { config\_file, default\_worker\_name, deploy\_tool, 3 more }
+result: object { config\_file, default\_worker\_name, deploy\_tool, 3 more }
 
 </summary>
 
@@ -246,98 +238,6 @@ One of the following:
 <a href="#">Link to this property</a>
 
 scripts: optional map\[string]
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { config\_file, default\_worker\_name, deploy\_tool, 3 more }
-
-</summary>
-
-config\_file: optional string
-
-<a href="#">Link to this property</a>
-
-default\_worker\_name: optional string
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-deploy\_tool: optional "cf" or "wrangler"
-
-Deployment CLI detected in the selected root directory. A Wrangler config takes precedence. <code>cf</code> requires <code>cloudflare.config.ts</code> and a <code>cf</code> dependency or dev dependency in <code>package.json</code>.
-
-</summary>
-
-One of the following:
-
-"cf"
-
-<a href="#">Link to this property</a>
-
-"wrangler"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-env\_worker\_names: optional map\[string]
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-package\_manager: optional "npm" or "yarn" or "pnpm" or 2 more
-
-Package manager inferred from repository lockfiles; defaults to npm when none is detected.
-
-</summary>
-
-One of the following:
-
-"npm"
-
-<a href="#">Link to this property</a>
-
-"yarn"
-
-<a href="#">Link to this property</a>
-
-"pnpm"
-
-<a href="#">Link to this property</a>
-
-"bun"
-
-<a href="#">Link to this property</a>
-
-"uv"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-scripts: optional map\[string]
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 

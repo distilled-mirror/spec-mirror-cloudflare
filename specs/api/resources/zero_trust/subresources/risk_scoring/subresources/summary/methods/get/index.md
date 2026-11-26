@@ -1,7 +1,9 @@
 ---
 agent:
-  instructions: "This site offers a search API that returns relevant content across the entire site. Use the search endpoint to find information instead of crawling individual pages."
-  search: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  instructions: "Use this search API to find relevant content across this site with keywords or natural-language queries, instead of crawling individual pages. Results are returned in Markdown."
+  endpoint: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  method: "GET"
+  documentation: "https://developers.cloudflare.com/ai-search/how-to/search-for-agents/"
 title: Get risk score info for all users in the account
 ---
 
@@ -21,13 +23,13 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 ---
 
-**Copy Markdown****View as Markdown**
+**Copy MarkdownView as Markdown**
 
 # Get risk score info for all users in the account
 
 GET/accounts/{account\_id}/zt\_risk\_scoring/summary
 
-Gets an aggregate summary of risk scores across the account, including distribution and trends.
+Gets the users in an account that have risk events, with the highest risk level, the event count, and the time of the last event for each user. The server reads risk events from at most 180 days before the current time, and after the last reset of each user. Returns 404 when the request reaches a server outside of the configured region of the account.
 
 ##### Security
 
@@ -68,6 +70,78 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 account\_id: string
 
 [Link to this property](#)%20zero_trust.risk_scoring.summary%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20account_id%20%3E%20(schema)>)
+
+##### Q uery ParametersExpand Collapse
+
+<details>
+
+<summary>
+
+direction: optional "asc" or "desc"
+
+Sort direction.
+
+</summary>
+
+One of the following:
+
+"asc"
+
+<a href="#">Link to this property</a>
+
+"desc"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20zero_trust.risk_scoring.summary%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20direction%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+order\_by: optional "last\_event" or "event\_count" or "max\_risk\_level"
+
+Field to sort the users by.
+
+</summary>
+
+One of the following:
+
+"last\_event"
+
+<a href="#">Link to this property</a>
+
+"event\_count"
+
+<a href="#">Link to this property</a>
+
+"max\_risk\_level"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20zero_trust.risk_scoring.summary%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20order_by%20%3E%20(schema)>)
+
+page: optional number
+
+Page number, starting at 1.
+
+minimum1
+
+[Link to this property](#)%20zero_trust.risk_scoring.summary%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20page%20%3E%20(schema)>)
+
+per\_page: optional number
+
+Number of results per page. The server uses 100 for a larger value.
+
+maximum100
+
+minimum1
+
+[Link to this property](#)%20zero_trust.risk_scoring.summary%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20per_page%20%3E%20(schema)>)
 
 ##### ReturnsExpand Collapse
 
@@ -167,6 +241,8 @@ Whether the API call was successful.
 
 result: optional object { users }
 
+Risk summary of the users in an account.
+
 </summary>
 
 <details>
@@ -175,19 +251,27 @@ result: optional object { users }
 
 users: array of object { email, event\_count, last\_event, 3 more }
 
+Users on this page, with their risk summary.
+
 </summary>
 
 email: string
 
+Email address of the user.
+
 <a href="#">Link to this property</a>
 
 event\_count: number
+
+Number of risk events of the user.
 
 minimum0
 
 <a href="#">Link to this property</a>
 
 last\_event: string
+
+Time of the most recent risk event of the user.
 
 formatdate-time
 
@@ -197,11 +281,17 @@ formatdate-time
 
 <summary>
 
-max\_risk\_level: "info" or "low" or "medium" or "high"
+max\_risk\_level: "unset" or "info" or "low" or 2 more
+
+Highest risk level. The value is unset when no event maps to a configured behavior.
 
 </summary>
 
 One of the following:
+
+"unset"
+
+<a href="#">Link to this property</a>
 
 "info"
 
@@ -225,9 +315,13 @@ One of the following:
 
 name: string
 
+Name of the user.
+
 <a href="#">Link to this property</a>
 
 user\_id: string
+
+User ID (UUID v4).
 
 formatuuid
 
@@ -245,37 +339,33 @@ formatuuid
 
 <summary>
 
-result\_info: optional object { count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, total\_count }
+
+Pagination information. The server always returns every field.
 
 </summary>
 
-count: optional number
+count: number
 
-Total number of results for the requested service.
-
-<a href="#">Link to this property</a>
-
-page: optional number
-
-Current page within paginated list of results.
+Number of results on this page.
 
 <a href="#">Link to this property</a>
 
-per\_page: optional number
+page: number
 
-Number of results per page of results.
-
-<a href="#">Link to this property</a>
-
-total\_count: optional number
-
-Total results available without any search parameters.
+Current page within the paginated list of results.
 
 <a href="#">Link to this property</a>
 
-total\_pages: optional number
+per\_page: number
 
-The number of total pages in the entire result set.
+Number of results per page.
+
+<a href="#">Link to this property</a>
+
+total\_count: number
+
+Total number of results that match the request.
 
 <a href="#">Link to this property</a>
 
@@ -325,18 +415,17 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/zt_risk_scoring/s
         "email": "email",
         "event_count": 0,
         "last_event": "2019-12-27T18:11:19.117Z",
-        "max_risk_level": "info",
+        "max_risk_level": "unset",
         "name": "name",
         "user_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"
       }
     ]
   },
   "result_info": {
-    "count": 1,
+    "count": 25,
     "page": 1,
-    "per_page": 20,
-    "total_count": 2000,
-    "total_pages": 100
+    "per_page": 25,
+    "total_count": 2000
   }
 }
 ```
@@ -374,18 +463,17 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/zt_risk_scoring/s
         "email": "email",
         "event_count": 0,
         "last_event": "2019-12-27T18:11:19.117Z",
-        "max_risk_level": "info",
+        "max_risk_level": "unset",
         "name": "name",
         "user_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"
       }
     ]
   },
   "result_info": {
-    "count": 1,
+    "count": 25,
     "page": 1,
-    "per_page": 20,
-    "total_count": 2000,
-    "total_pages": 100
+    "per_page": 25,
+    "total_count": 2000
   }
 }
 ```

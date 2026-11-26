@@ -1,7 +1,9 @@
 ---
 agent:
-  instructions: "This site offers a search API that returns relevant content across the entire site. Use the search endpoint to find information instead of crawling individual pages."
-  search: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  instructions: "Use this search API to find relevant content across this site with keywords or natural-language queries, instead of crawling individual pages. Results are returned in Markdown."
+  endpoint: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  method: "GET"
+  documentation: "https://developers.cloudflare.com/ai-search/how-to/search-for-agents/"
 title: Account Details
 ---
 
@@ -17,7 +19,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 ---
 
-**Copy Markdown****View as Markdown**
+**Copy MarkdownView as Markdown**
 
 # Account Details
 
@@ -57,7 +59,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Observability Write``Observability Read``Account Security Insights Partner Integrations Write``Account Security Insights Partner Integrations Read``Workers Metadata Read-Only``Workers Editor``Workers Content Read-Only``Workers Admin``Account Abuse Protection PII Read``Workers R2 Storage Metadata Read``AI Search Index Engine``Account Security Center Insights Write``Account Security Center Insights Read``Auto Rag Write Run Engine``Trust and Safety Write``Trust and Safety Read``DNS View Write``DNS View Read``SCIM Provisioning``Load Balancers Account Write``Load Balancers Account Read``Zero Trust: PII Read``DDoS Botnet Feed Write``DDoS Botnet Feed Read``Workers R2 Storage Write``Workers R2 Storage Read``DDoS Protection Write``DDoS Protection Read``Workers Tail Read``Workers KV Storage Write``Workers KV Storage Read``Workers Scripts Write``Workers Scripts Read``Load Balancing: Monitors and Pools Write``Load Balancing: Monitors and Pools Read``Account Firewall Access Rules Write``Account Firewall Access Rules Read``DNS Firewall Write``DNS Firewall Read``Billing Write``Billing Read``Account Settings Write``Account Settings Read`
+`Observability Write` `Observability Read` `Account Security Insights Partner Integrations Write` `Account Security Insights Partner Integrations Read` `Workers Metadata Read-Only` `Workers Editor` `Workers Content Read-Only` `Workers Admin` `Account Abuse Protection PII Read` `Workers R2 Storage Metadata Read` `AI Search Index Engine` `Account Security Center Insights Write` `Account Security Center Insights Read` `Auto Rag Write Run Engine` `Trust and Safety Write` `Trust and Safety Read` `DNS View Write` `DNS View Read` `SCIM Provisioning` `Load Balancers Account Write` `Load Balancers Account Read` `Zero Trust: PII Read` `DDoS Botnet Feed Write` `DDoS Botnet Feed Read` `Workers R2 Storage Write` `Workers R2 Storage Read` `DDoS Protection Write` `DDoS Protection Read` `Workers Tail Read` `Workers KV Storage Write` `Workers KV Storage Read` `Workers Scripts Write` `Workers Scripts Read` `Load Balancing: Monitors and Pools Write` `Load Balancing: Monitors and Pools Read` `Account Firewall Access Rules Write` `Account Firewall Access Rules Read` `DNS Firewall Write` `DNS Firewall Read` `Billing Write` `Billing Read` `Account Settings Write` `Account Settings Read`
 
 ##### P ath ParametersExpand Collapse
 

@@ -1,7 +1,9 @@
 ---
 agent:
-  instructions: "This site offers a search API that returns relevant content across the entire site. Use the search endpoint to find information instead of crawling individual pages."
-  search: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  instructions: "Use this search API to find relevant content across this site with keywords or natural-language queries, instead of crawling individual pages. Results are returned in Markdown."
+  endpoint: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  method: "GET"
+  documentation: "https://developers.cloudflare.com/ai-search/how-to/search-for-agents/"
 title: List deploy hooks
 ---
 
@@ -19,7 +21,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 ---
 
-**Copy Markdown****View as Markdown**
+**Copy MarkdownView as Markdown**
 
 # List deploy hooks
 
@@ -59,7 +61,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Workers Metadata Read-Only``Workers CI Write``Workers CI Read`
+`Workers Metadata Read-Only` `Workers CI Write` `Workers CI Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -103,17 +105,67 @@ messages: array of string
 
 <summary>
 
-result: unknown or array of unknown
+result: array of object { branch, created\_on, deploy\_hook\_name, 4 more }
 
 </summary>
 
-One of the following:
+branch: optional string
 
-unknown
+Git branch name.
 
 <a href="#">Link to this property</a>
 
-array of unknown
+created\_on: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+deploy\_hook\_name: optional string
+
+Deploy hook name (1-58 characters).
+
+maxLength58
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+deploy\_hook\_uuid: optional string
+
+Deploy hook UUID.
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+external\_script\_id: optional string
+
+System-generated tag of the Worker. This is not the Worker name.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+latest\_build: optional object { created\_on }
+
+</summary>
+
+created\_on: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+modified\_on: optional string
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -181,7 +233,19 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/workers/$S
   "messages": [
     "string"
   ],
-  "result": {},
+  "result": [
+    {
+      "branch": "main",
+      "created_on": "2019-12-27T18:11:19.117Z",
+      "deploy_hook_name": "Production Deploy Hook",
+      "deploy_hook_uuid": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+      "external_script_id": "0123456789abcdef0123456789abcdef",
+      "latest_build": {
+        "created_on": "2019-12-27T18:11:19.117Z"
+      },
+      "modified_on": "2019-12-27T18:11:19.117Z"
+    }
+  ],
   "success": true,
   "result_info": {
     "count": 25,
@@ -208,7 +272,19 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/workers/$S
   "messages": [
     "string"
   ],
-  "result": {},
+  "result": [
+    {
+      "branch": "main",
+      "created_on": "2019-12-27T18:11:19.117Z",
+      "deploy_hook_name": "Production Deploy Hook",
+      "deploy_hook_uuid": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+      "external_script_id": "0123456789abcdef0123456789abcdef",
+      "latest_build": {
+        "created_on": "2019-12-27T18:11:19.117Z"
+      },
+      "modified_on": "2019-12-27T18:11:19.117Z"
+    }
+  ],
   "success": true,
   "result_info": {
     "count": 25,

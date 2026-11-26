@@ -1,7 +1,9 @@
 ---
 agent:
-  instructions: "This site offers a search API that returns relevant content across the entire site. Use the search endpoint to find information instead of crawling individual pages."
-  search: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  instructions: "Use this search API to find relevant content across this site with keywords or natural-language queries, instead of crawling individual pages. Results are returned in Markdown."
+  endpoint: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  method: "GET"
+  documentation: "https://developers.cloudflare.com/ai-search/how-to/search-for-agents/"
 title: Get risk event/score information for a specific user
 ---
 
@@ -19,13 +21,13 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 ---
 
-**Copy Markdown****View as Markdown**
+**Copy MarkdownView as Markdown**
 
 # Get risk event/score information for a specific user
 
 GET/accounts/{account\_id}/zt\_risk\_scoring/{user\_id}
 
-Retrieves the detailed risk score breakdown for a specific user, including contributing factors.
+Gets the risk level, the last reset time, and the risk events of one user. The server reads risk events from at most 180 days before the current time, and after the last reset of the user. Returns 404 when the request reaches a server outside of the configured region of the account.
 
 ##### Security
 
@@ -72,6 +74,98 @@ user\_id: string
 formatuuid
 
 [Link to this property](#)%20zero_trust.risk_scoring%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20user_id%20%3E%20(schema)>)
+
+##### Q uery ParametersExpand Collapse
+
+<details>
+
+<summary>
+
+direction: optional "asc" or "desc"
+
+Sort direction.
+
+</summary>
+
+One of the following:
+
+"asc"
+
+<a href="#">Link to this property</a>
+
+"desc"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20zero_trust.risk_scoring%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20direction%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+order\_by: optional "timestamp" or "risk\_level"
+
+Field to sort the events by.
+
+</summary>
+
+One of the following:
+
+"timestamp"
+
+<a href="#">Link to this property</a>
+
+"risk\_level"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20zero_trust.risk_scoring%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20order_by%20%3E%20(schema)>)
+
+page: optional number
+
+Page number, starting at 1.
+
+minimum1
+
+[Link to this property](#)%20zero_trust.risk_scoring%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20page%20%3E%20(schema)>)
+
+per\_page: optional number
+
+Number of results per page. The server uses 100 for a larger value.
+
+maximum100
+
+minimum1
+
+[Link to this property](#)%20zero_trust.risk_scoring%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20per_page%20%3E%20(schema)>)
+
+time\_zone: optional string
+
+IANA time zone name. The server validates the value. The value does not change the response.
+
+[Link to this property](#)%20zero_trust.risk_scoring%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20time_zone%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+timestamp: optional object { between }
+
+</summary>
+
+between: optional string
+
+Time range as &lt;start\_seconds&gt;:&lt;end\_seconds&gt; in Unix epoch seconds. The start must be before the end.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20zero_trust.risk_scoring%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20timestamp%20%3E%20(schema)>)
 
 ##### ReturnsExpand Collapse
 
@@ -169,11 +263,15 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object { email, events, name, 2 more }
+result: optional object { email, events, last\_reset\_time, 2 more }
+
+Risk level, last reset time, and risk events of one user.
 
 </summary>
 
 email: string
+
+Email address of the user.
 
 <a href="#">Link to this property</a>
 
@@ -181,15 +279,31 @@ email: string
 
 <summary>
 
-events: array of object { id, name, risk\_level, 2 more }
+events: array of object { id, name, points, 3 more }
+
+Risk events of the user on this page.
 
 </summary>
 
 id: string
 
+ID of the behavior that caused the event.
+
 <a href="#">Link to this property</a>
 
 name: string
+
+Name of the behavior that caused the event.
+
+<a href="#">Link to this property</a>
+
+points: number
+
+Risk score points of a behavior.
+
+maximum100
+
+minimum1
 
 <a href="#">Link to this property</a>
 
@@ -198,6 +312,8 @@ name: string
 <summary>
 
 risk\_level: "info" or "low" or "medium" or "high"
+
+Risk level of a behavior or an event.
 
 </summary>
 
@@ -225,11 +341,15 @@ One of the following:
 
 timestamp: string
 
+Time of the event.
+
 formatdate-time
 
 <a href="#">Link to this property</a>
 
-event\_details: optional unknown
+event\_details: optional map\[unknown]
+
+Details of the event. The fields depend on the behavior. The server omits the field when the details are not valid JSON.
 
 <a href="#">Link to this property</a>
 
@@ -237,13 +357,17 @@ event\_details: optional unknown
 
 <a href="#">Link to this property</a>
 
-name: string
+last\_reset\_time: string
+
+Time of the last risk score reset of the user. The value is null when the score was never reset.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
-last\_reset\_time: optional string
+name: string
 
-formatdate-time
+Name of the user.
 
 <a href="#">Link to this property</a>
 
@@ -252,6 +376,8 @@ formatdate-time
 <summary>
 
 risk\_level: optional "info" or "low" or "medium" or "high"
+
+Risk level of a behavior or an event.
 
 </summary>
 
@@ -285,37 +411,33 @@ One of the following:
 
 <summary>
 
-result\_info: optional object { count, page, per\_page, 2 more }
+result\_info: optional object { count, page, per\_page, total\_count }
+
+Pagination information. The server always returns every field.
 
 </summary>
 
-count: optional number
+count: number
 
-Total number of results for the requested service.
-
-<a href="#">Link to this property</a>
-
-page: optional number
-
-Current page within paginated list of results.
+Number of results on this page.
 
 <a href="#">Link to this property</a>
 
-per\_page: optional number
+page: number
 
-Number of results per page of results.
-
-<a href="#">Link to this property</a>
-
-total\_count: optional number
-
-Total results available without any search parameters.
+Current page within the paginated list of results.
 
 <a href="#">Link to this property</a>
 
-total\_pages: optional number
+per\_page: number
 
-The number of total pages in the entire result set.
+Number of results per page.
+
+<a href="#">Link to this property</a>
+
+total\_count: number
+
+Total number of results that match the request.
 
 <a href="#">Link to this property</a>
 
@@ -360,26 +482,28 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/zt_risk_scoring/$
   ],
   "success": true,
   "result": {
-    "email": "email",
+    "email": "jdoe@example.com",
     "events": [
       {
-        "id": "id",
-        "name": "name",
+        "id": "high_dlp",
+        "name": "High number of DLP policies triggered",
+        "points": 85,
         "risk_level": "info",
-        "timestamp": "2019-12-27T18:11:19.117Z",
-        "event_details": {}
+        "timestamp": "2026-04-08T13:48:01Z",
+        "event_details": {
+          "foo": "bar"
+        }
       }
     ],
-    "name": "name",
     "last_reset_time": "2019-12-27T18:11:19.117Z",
+    "name": "John Doe",
     "risk_level": "info"
   },
   "result_info": {
-    "count": 1,
+    "count": 25,
     "page": 1,
-    "per_page": 20,
-    "total_count": 2000,
-    "total_pages": 100
+    "per_page": 25,
+    "total_count": 2000
   }
 }
 ```
@@ -412,26 +536,28 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/zt_risk_scoring/$
   ],
   "success": true,
   "result": {
-    "email": "email",
+    "email": "jdoe@example.com",
     "events": [
       {
-        "id": "id",
-        "name": "name",
+        "id": "high_dlp",
+        "name": "High number of DLP policies triggered",
+        "points": 85,
         "risk_level": "info",
-        "timestamp": "2019-12-27T18:11:19.117Z",
-        "event_details": {}
+        "timestamp": "2026-04-08T13:48:01Z",
+        "event_details": {
+          "foo": "bar"
+        }
       }
     ],
-    "name": "name",
     "last_reset_time": "2019-12-27T18:11:19.117Z",
+    "name": "John Doe",
     "risk_level": "info"
   },
   "result_info": {
-    "count": 1,
+    "count": 25,
     "page": 1,
-    "per_page": 20,
-    "total_count": 2000,
-    "total_pages": 100
+    "per_page": 25,
+    "total_count": 2000
   }
 }
 ```

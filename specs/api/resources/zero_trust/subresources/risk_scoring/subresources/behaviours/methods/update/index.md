@@ -1,7 +1,9 @@
 ---
 agent:
-  instructions: "This site offers a search API that returns relevant content across the entire site. Use the search endpoint to find information instead of crawling individual pages."
-  search: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  instructions: "Use this search API to find relevant content across this site with keywords or natural-language queries, instead of crawling individual pages. Results are returned in Markdown."
+  endpoint: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  method: "GET"
+  documentation: "https://developers.cloudflare.com/ai-search/how-to/search-for-agents/"
 title: Update configuration for risk behaviors
 ---
 
@@ -21,13 +23,13 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 ---
 
-**Copy Markdown****View as Markdown**
+**Copy MarkdownView as Markdown**
 
 # Update configuration for risk behaviors
 
 PUT/accounts/{account\_id}/zt\_risk\_scoring/behaviors
 
-Updates risk score behavior configurations, defining weights and thresholds for risk calculation.
+Updates the configuration of one or more risk behaviors for an account. The server skips an unknown behavior, and a behavior that the account does not have the gates or entitlements for. The response contains all behaviors for the account.
 
 ##### Security
 
@@ -75,11 +77,25 @@ account\_id: string
 
 <summary>
 
-behaviors: map\[object { enabled, risk\_level } ]
+behaviors: map\[object { enabled, points, risk\_level } ]
+
+Settings for each behavior to update, keyed by behavior ID.
 
 </summary>
 
 enabled: boolean
+
+Whether the behavior counts toward the risk score.
+
+<a href="#">Link to this property</a>
+
+points: optional number
+
+Risk score points of the behavior. A null value is the same as an omitted value.
+
+maximum100
+
+minimum1
 
 <a href="#">Link to this property</a>
 
@@ -87,7 +103,9 @@ enabled: boolean
 
 <summary>
 
-risk\_level: "info" or "low" or "medium" or "high"
+risk\_level: optional "info" or "low" or "medium" or "high"
+
+Risk level of a behavior or an event.
 
 </summary>
 
@@ -215,17 +233,45 @@ Whether the API call was successful.
 
 result: optional object { behaviors }
 
+Risk behaviors, keyed by behavior ID.
+
 </summary>
 
 <details>
 
 <summary>
 
-behaviors: map\[object { enabled, risk\_level } ]
+behaviors: map\[object { description, enabled, name, 2 more } ]
+
+Risk behaviors, keyed by behavior ID.
 
 </summary>
 
+description: string
+
+Explains what the behavior detects.
+
+<a href="#">Link to this property</a>
+
 enabled: boolean
+
+Whether the behavior counts toward the risk score.
+
+<a href="#">Link to this property</a>
+
+name: string
+
+Display name of the behavior.
+
+<a href="#">Link to this property</a>
+
+points: number
+
+Risk score points of a behavior.
+
+maximum100
+
+minimum1
 
 <a href="#">Link to this property</a>
 
@@ -234,6 +280,8 @@ enabled: boolean
 <summary>
 
 risk\_level: "info" or "low" or "medium" or "high"
+
+Risk level of a behavior or an event.
 
 </summary>
 
@@ -281,8 +329,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/zt_risk_scoring/b
     -d '{
           "behaviors": {
             "foo": {
-              "enabled": true,
-              "risk_level": "info"
+              "enabled": true
             }
           }
         }'
@@ -316,7 +363,10 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/zt_risk_scoring/b
   "result": {
     "behaviors": {
       "foo": {
+        "description": "A user signed in from two locations that are too far apart for the time between them.",
         "enabled": true,
+        "name": "Impossible travel",
+        "points": 85,
         "risk_level": "info"
       }
     }
@@ -354,7 +404,10 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/zt_risk_scoring/b
   "result": {
     "behaviors": {
       "foo": {
+        "description": "A user signed in from two locations that are too far apart for the time between them.",
         "enabled": true,
+        "name": "Impossible travel",
+        "points": 85,
         "risk_level": "info"
       }
     }

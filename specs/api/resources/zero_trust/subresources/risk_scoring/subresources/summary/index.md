@@ -1,7 +1,9 @@
 ---
 agent:
-  instructions: "This site offers a search API that returns relevant content across the entire site. Use the search endpoint to find information instead of crawling individual pages."
-  search: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  instructions: "Use this search API to find relevant content across this site with keywords or natural-language queries, instead of crawling individual pages. Results are returned in Markdown."
+  endpoint: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  method: "GET"
+  documentation: "https://developers.cloudflare.com/ai-search/how-to/search-for-agents/"
 title: Summary
 ---
 
@@ -19,7 +21,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 ---
 
-**Copy Markdown****View as Markdown**
+**Copy MarkdownView as Markdown**
 
 # Summary
 
@@ -35,6 +37,8 @@ GET/accounts/{account\_id}/zt\_risk\_scoring/summary
 
 SummaryGetResponse object { users }
 
+Risk summary of the users in an account.
+
 </summary>
 
 <details>
@@ -43,19 +47,27 @@ SummaryGetResponse object { users }
 
 users: array of object { email, event\_count, last\_event, 3 more }
 
+Users on this page, with their risk summary.
+
 </summary>
 
 email: string
 
+Email address of the user.
+
 <a href="#">Link to this property</a>
 
 event\_count: number
+
+Number of risk events of the user.
 
 minimum0
 
 <a href="#">Link to this property</a>
 
 last\_event: string
+
+Time of the most recent risk event of the user.
 
 formatdate-time
 
@@ -65,11 +77,17 @@ formatdate-time
 
 <summary>
 
-max\_risk\_level: "info" or "low" or "medium" or "high"
+max\_risk\_level: "unset" or "info" or "low" or 2 more
+
+Highest risk level. The value is unset when no event maps to a configured behavior.
 
 </summary>
 
 One of the following:
+
+"unset"
+
+<a href="#">Link to this property</a>
 
 "info"
 
@@ -93,9 +111,13 @@ One of the following:
 
 name: string
 
+Name of the user.
+
 <a href="#">Link to this property</a>
 
 user\_id: string
+
+User ID (UUID v4).
 
 formatuuid
 

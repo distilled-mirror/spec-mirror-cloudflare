@@ -1,7 +1,9 @@
 ---
 agent:
-  instructions: "This site offers a search API that returns relevant content across the entire site. Use the search endpoint to find information instead of crawling individual pages."
-  search: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  instructions: "Use this search API to find relevant content across this site with keywords or natural-language queries, instead of crawling individual pages. Results are returned in Markdown."
+  endpoint: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  method: "GET"
+  documentation: "https://developers.cloudflare.com/ai-search/how-to/search-for-agents/"
 title: Update a build trigger
 ---
 
@@ -19,7 +21,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 ---
 
-**Copy Markdown****View as Markdown**
+**Copy MarkdownView as Markdown**
 
 # Update a build trigger
 
@@ -171,17 +173,7 @@ messages: array of string
 
 <summary>
 
-result: object { branch\_excludes, branch\_includes, build\_caching\_enabled, 14 more } or object { branch\_excludes, branch\_includes, build\_caching\_enabled, 14 more }
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-object { branch\_excludes, branch\_includes, build\_caching\_enabled, 14 more }
+result: object { branch\_excludes, branch\_includes, build\_caching\_enabled, 14 more }
 
 </summary>
 
@@ -374,214 +366,6 @@ trigger\_uuid: optional string
 Trigger UUID.
 
 formatuuid
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { branch\_excludes, branch\_includes, build\_caching\_enabled, 14 more }
-
-</summary>
-
-branch\_excludes: optional array of string
-
-Branch patterns that must not start builds.
-
-<a href="#">Link to this property</a>
-
-branch\_includes: optional array of string
-
-Branch patterns that can start builds.
-
-<a href="#">Link to this property</a>
-
-build\_caching\_enabled: optional boolean
-
-Whether builds reuse cached dependencies and build artifacts.
-
-<a href="#">Link to this property</a>
-
-build\_command: optional string
-
-Command to build the Worker.
-
-<a href="#">Link to this property</a>
-
-build\_token\_name: optional string
-
-<a href="#">Link to this property</a>
-
-build\_token\_uuid: optional string
-
-UUID of the build token used when deploying the Worker.
-
-formatuuid
-
-<a href="#">Link to this property</a>
-
-created\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-deleted\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-deploy\_command: optional string
-
-Command to deploy the Worker.
-
-<a href="#">Link to this property</a>
-
-external\_script\_id: optional string
-
-System-generated tag of the Worker. This is not the Worker name.
-
-<a href="#">Link to this property</a>
-
-modified\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-path\_excludes: optional array of string
-
-Path patterns that must not start builds.
-
-<a href="#">Link to this property</a>
-
-path\_includes: optional array of string
-
-Path patterns that can start builds.
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-repo\_connection: optional object { created\_on, deleted\_on, modified\_on, 6 more }
-
-</summary>
-
-created\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-deleted\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-modified\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-provider\_account\_id: optional string
-
-Provider-specific identifier of the account or namespace that owns the repository.
-
-<a href="#">Link to this property</a>
-
-provider\_account\_name: optional string
-
-Human-readable name of the account or namespace that owns the repository.
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-provider\_type: optional "github" or "gitlab" or "gitlab\_internal" or "origin"
-
-Source control provider.
-
-</summary>
-
-One of the following:
-
-"github"
-
-<a href="#">Link to this property</a>
-
-"gitlab"
-
-<a href="#">Link to this property</a>
-
-"gitlab\_internal"
-
-<a href="#">Link to this property</a>
-
-"origin"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-repo\_connection\_uuid: optional string
-
-Repository connection UUID.
-
-formatuuid
-
-<a href="#">Link to this property</a>
-
-repo\_id: optional string
-
-Provider-specific repository identifier.
-
-<a href="#">Link to this property</a>
-
-repo\_name: optional string
-
-Human-readable repository name.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-root\_directory: optional string
-
-Repository directory in which build and deploy commands run.
-
-<a href="#">Link to this property</a>
-
-trigger\_name: optional string
-
-Human-readable name of the build trigger.
-
-<a href="#">Link to this property</a>
-
-trigger\_uuid: optional string
-
-Trigger UUID.
-
-formatuuid
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 

@@ -1,7 +1,9 @@
 ---
 agent:
-  instructions: "This site offers a search API that returns relevant content across the entire site. Use the search endpoint to find information instead of crawling individual pages."
-  search: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  instructions: "Use this search API to find relevant content across this site with keywords or natural-language queries, instead of crawling individual pages. Results are returned in Markdown."
+  endpoint: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  method: "GET"
+  documentation: "https://developers.cloudflare.com/ai-search/how-to/search-for-agents/"
 title: Edit zone setting
 ---
 
@@ -19,7 +21,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 ---
 
-**Copy Markdown****View as Markdown**
+**Copy MarkdownView as Markdown**
 
 # Edit zone setting
 
@@ -59,7 +61,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Zone Settings Write``Workers Routes Write`
+`Zone Settings Write` `Workers Routes Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -433,31 +435,19 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: "on" or "off"
 
-Current value of the zone setting.
+Value of the 0-RTT setting.
 
 </summary>
 
 One of the following:
 
-string
+"on"
 
 <a href="#">Link to this property</a>
 
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"off"
 
 <a href="#">Link to this property</a>
 
@@ -521,31 +511,19 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: "on" or "off"
 
-Current value of the zone setting.
+Value of the zone setting. Notes: Defaults to on for Business+ plans
 
 </summary>
 
 One of the following:
 
-string
+"on"
 
 <a href="#">Link to this property</a>
 
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"off"
 
 <a href="#">Link to this property</a>
 
@@ -663,31 +641,19 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: "on" or "off"
 
-Current value of the zone setting.
+Value of the zone setting.
 
 </summary>
 
 One of the following:
 
-string
+"on"
 
 <a href="#">Link to this property</a>
 
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"off"
 
 <a href="#">Link to this property</a>
 
@@ -751,31 +717,19 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: "on" or "off"
 
-Current value of the zone setting.
+Value of the zone setting.
 
 </summary>
 
 One of the following:
 
-string
+"on"
 
 <a href="#">Link to this property</a>
 
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"off"
 
 <a href="#">Link to this property</a>
 
@@ -839,31 +793,19 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: "on" or "off"
 
-Current value of the zone setting.
+Value of the zone setting. Notes: Default value depends on the zone’s plan level.
 
 </summary>
 
 One of the following:
 
-string
+"on"
 
 <a href="#">Link to this property</a>
 
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"off"
 
 <a href="#">Link to this property</a>
 
@@ -927,31 +869,19 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: "off" or "on"
 
-Current value of the zone setting.
+Value of the zone setting.
 
 </summary>
 
 One of the following:
 
-string
+"off"
 
 <a href="#">Link to this property</a>
 
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"on"
 
 <a href="#">Link to this property</a>
 
@@ -1011,11 +941,7 @@ ID of the zone setting.
 
 <a href="#">Link to this property</a>
 
-<details>
-
-<summary>
-
-value: string or number or boolean or 2 more
+value: number
 
 Value of the zone setting in seconds. Minimum values by plan:
 
@@ -1027,32 +953,6 @@ Value of the zone setting in seconds. Minimum values by plan:
 maximum31536000
 
 minimum0
-
-</summary>
-
-One of the following:
-
-string
-
-<a href="#">Link to this property</a>
-
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 
@@ -1112,31 +1012,19 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: "on" or "off"
 
-Current value of the zone setting.
+Value of the zone setting.
 
 </summary>
 
 One of the following:
 
-string
+"on"
 
 <a href="#">Link to this property</a>
 
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"off"
 
 <a href="#">Link to this property</a>
 
@@ -1200,31 +1088,23 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: "aggressive" or "basic" or "simplified"
 
-Current value of the zone setting.
+Value of the zone setting.
 
 </summary>
 
 One of the following:
 
-string
+"aggressive"
 
 <a href="#">Link to this property</a>
 
-number
+"basic"
 
 <a href="#">Link to this property</a>
 
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"simplified"
 
 <a href="#">Link to this property</a>
 
@@ -1288,31 +1168,67 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: 300 or 900 or 1800 or 11 more
 
-Current value of the zone setting.
+Value of the zone setting.
 
 </summary>
 
 One of the following:
 
-string
+300
 
 <a href="#">Link to this property</a>
 
-number
+900
 
 <a href="#">Link to this property</a>
 
-boolean
+1800
 
 <a href="#">Link to this property</a>
 
-unknown
+2700
 
 <a href="#">Link to this property</a>
 
-array of string
+3600
+
+<a href="#">Link to this property</a>
+
+7200
+
+<a href="#">Link to this property</a>
+
+10800
+
+<a href="#">Link to this property</a>
+
+14400
+
+<a href="#">Link to this property</a>
+
+28800
+
+<a href="#">Link to this property</a>
+
+57600
+
+<a href="#">Link to this property</a>
+
+86400
+
+<a href="#">Link to this property</a>
+
+604800
+
+<a href="#">Link to this property</a>
+
+2592000
+
+<a href="#">Link to this property</a>
+
+31536000
 
 <a href="#">Link to this property</a>
 
@@ -1376,31 +1292,19 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: "on" or "off"
 
-Current value of the zone setting.
+Value of the zone setting.
 
 </summary>
 
 One of the following:
 
-string
+"on"
 
 <a href="#">Link to this property</a>
 
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"off"
 
 <a href="#">Link to this property</a>
 
@@ -1464,31 +1368,19 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: "off" or "on"
 
-Current value of the zone setting.
+Value of the zone setting.
 
 </summary>
 
 One of the following:
 
-string
+"off"
 
 <a href="#">Link to this property</a>
 
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"on"
 
 <a href="#">Link to this property</a>
 
@@ -1548,39 +1440,9 @@ ID of the zone setting.
 
 <a href="#">Link to this property</a>
 
-<details>
-
-<summary>
-
-value: string or number or boolean or 2 more
+value: array of string
 
 Current value of the zone setting.
-
-</summary>
-
-One of the following:
-
-string
-
-<a href="#">Link to this property</a>
-
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 
@@ -1640,31 +1502,21 @@ How to flatten the cname destination.
 
 <summary>
 
-value: string or number or boolean or 2 more
+Deprecatedvalue: "flatten\_at\_root" or "flatten\_all"
 
-Current value of the zone setting.
+This zone setting is deprecated; please use the DNS Settings route instead. More information at <a href="https://developers.cloudflare.com/fundamentals/api/reference/deprecations/#2025-03-21">https://developers.cloudflare.com/fundamentals/api/reference/deprecations/#2025-03-21</a>
+
+Value of the cname flattening setting.
 
 </summary>
 
 One of the following:
 
-string
+"flatten\_at\_root"
 
 <a href="#">Link to this property</a>
 
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"flatten\_all"
 
 <a href="#">Link to this property</a>
 
@@ -1728,31 +1580,19 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: "on" or "off"
 
-Current value of the zone setting.
+Value of the zone setting.
 
 </summary>
 
 One of the following:
 
-string
+"on"
 
 <a href="#">Link to this property</a>
 
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"off"
 
 <a href="#">Link to this property</a>
 
@@ -1822,31 +1662,19 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: "on" or "off"
 
-Current value of the zone setting.
+Value of the zone setting.
 
 </summary>
 
 One of the following:
 
-string
+"on"
 
 <a href="#">Link to this property</a>
 
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"off"
 
 <a href="#">Link to this property</a>
 
@@ -1910,31 +1738,95 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: 30 or 60 or 300 or 18 more
 
-Current value of the zone setting.
+Value of the zone setting. Notes: The minimum TTL available depends on the plan level of the zone. (Enterprise = 30, Business = 1800, Pro = 3600, Free = 7200)
 
 </summary>
 
 One of the following:
 
-string
+30
 
 <a href="#">Link to this property</a>
 
-number
+60
 
 <a href="#">Link to this property</a>
 
-boolean
+300
 
 <a href="#">Link to this property</a>
 
-unknown
+1200
 
 <a href="#">Link to this property</a>
 
-array of string
+1800
+
+<a href="#">Link to this property</a>
+
+3600
+
+<a href="#">Link to this property</a>
+
+7200
+
+<a href="#">Link to this property</a>
+
+10800
+
+<a href="#">Link to this property</a>
+
+14400
+
+<a href="#">Link to this property</a>
+
+18000
+
+<a href="#">Link to this property</a>
+
+28800
+
+<a href="#">Link to this property</a>
+
+43200
+
+<a href="#">Link to this property</a>
+
+57600
+
+<a href="#">Link to this property</a>
+
+72000
+
+<a href="#">Link to this property</a>
+
+86400
+
+<a href="#">Link to this property</a>
+
+172800
+
+<a href="#">Link to this property</a>
+
+259200
+
+<a href="#">Link to this property</a>
+
+345600
+
+<a href="#">Link to this property</a>
+
+432000
+
+<a href="#">Link to this property</a>
+
+518400
+
+<a href="#">Link to this property</a>
+
+604800
 
 <a href="#">Link to this property</a>
 
@@ -1998,31 +1890,19 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: "on" or "off"
 
-Current value of the zone setting.
+Value of the zone setting.
 
 </summary>
 
 One of the following:
 
-string
+"on"
 
 <a href="#">Link to this property</a>
 
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"off"
 
 <a href="#">Link to this property</a>
 
@@ -2086,31 +1966,23 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: "on" or "off" or "custom"
 
-Current value of the zone setting.
+Value of the zone setting.
 
 </summary>
 
 One of the following:
 
-string
+"on"
 
 <a href="#">Link to this property</a>
 
-number
+"off"
 
 <a href="#">Link to this property</a>
 
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"custom"
 
 <a href="#">Link to this property</a>
 
@@ -2174,31 +2046,19 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: "on" or "off"
 
-Current value of the zone setting.
+Value of the zone setting.
 
 </summary>
 
 One of the following:
 
-string
+"on"
 
 <a href="#">Link to this property</a>
 
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"off"
 
 <a href="#">Link to this property</a>
 
@@ -2262,31 +2122,19 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: "on" or "off"
 
-Current value of the zone setting.
+Value of the HTTP2 setting.
 
 </summary>
 
 One of the following:
 
-string
+"on"
 
 <a href="#">Link to this property</a>
 
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"off"
 
 <a href="#">Link to this property</a>
 
@@ -2350,31 +2198,19 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: "on" or "off"
 
-Current value of the zone setting.
+Value of the HTTP3 setting.
 
 </summary>
 
 One of the following:
 
-string
+"on"
 
 <a href="#">Link to this property</a>
 
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"off"
 
 <a href="#">Link to this property</a>
 
@@ -2438,31 +2274,23 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: "on" or "off" or "open"
 
-Current value of the zone setting.
+Whether the feature is enabled, disabled, or enabled in <code>open proxy</code> mode.
 
 </summary>
 
 One of the following:
 
-string
+"on"
 
 <a href="#">Link to this property</a>
 
-number
+"off"
 
 <a href="#">Link to this property</a>
 
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"open"
 
 <a href="#">Link to this property</a>
 
@@ -2526,31 +2354,19 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: "on" or "off"
 
-Current value of the zone setting.
+Value of the zone setting.
 
 </summary>
 
 One of the following:
 
-string
+"on"
 
 <a href="#">Link to this property</a>
 
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"off"
 
 <a href="#">Link to this property</a>
 
@@ -2614,31 +2430,19 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: "off" or "on"
 
-Current value of the zone setting.
+Value of the zone setting.
 
 </summary>
 
 One of the following:
 
-string
+"off"
 
 <a href="#">Link to this property</a>
 
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"on"
 
 <a href="#">Link to this property</a>
 
@@ -2702,31 +2506,115 @@ identifier of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: 100 or 125 or 150 or 23 more
 
-Current value of the zone setting.
+Value of the zone setting. Notes: The size depends on the plan level of the zone. (Enterprise = 5000, Business = 200, Pro = 100, Free = 100)
 
 </summary>
 
 One of the following:
 
-string
+100
 
 <a href="#">Link to this property</a>
 
-number
+125
 
 <a href="#">Link to this property</a>
 
-boolean
+150
 
 <a href="#">Link to this property</a>
 
-unknown
+175
 
 <a href="#">Link to this property</a>
 
-array of string
+200
+
+<a href="#">Link to this property</a>
+
+225
+
+<a href="#">Link to this property</a>
+
+250
+
+<a href="#">Link to this property</a>
+
+275
+
+<a href="#">Link to this property</a>
+
+300
+
+<a href="#">Link to this property</a>
+
+325
+
+<a href="#">Link to this property</a>
+
+350
+
+<a href="#">Link to this property</a>
+
+375
+
+<a href="#">Link to this property</a>
+
+400
+
+<a href="#">Link to this property</a>
+
+425
+
+<a href="#">Link to this property</a>
+
+450
+
+<a href="#">Link to this property</a>
+
+475
+
+<a href="#">Link to this property</a>
+
+500
+
+<a href="#">Link to this property</a>
+
+1000
+
+<a href="#">Link to this property</a>
+
+1500
+
+<a href="#">Link to this property</a>
+
+2000
+
+<a href="#">Link to this property</a>
+
+2500
+
+<a href="#">Link to this property</a>
+
+3000
+
+<a href="#">Link to this property</a>
+
+3500
+
+<a href="#">Link to this property</a>
+
+4000
+
+<a href="#">Link to this property</a>
+
+4500
+
+<a href="#">Link to this property</a>
+
+5000
 
 <a href="#">Link to this property</a>
 
@@ -2790,31 +2678,27 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: "1.0" or "1.1" or "1.2" or "1.3"
 
-Current value of the zone setting.
+Value of the zone setting.
 
 </summary>
 
 One of the following:
 
-string
+"1.0"
 
 <a href="#">Link to this property</a>
 
-number
+"1.1"
 
 <a href="#">Link to this property</a>
 
-boolean
+"1.2"
 
 <a href="#">Link to this property</a>
 
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"1.3"
 
 <a href="#">Link to this property</a>
 
@@ -2878,31 +2762,21 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+Deprecatedvalue: "on" or "off"
 
-Current value of the zone setting.
+Mirage is being deprecated. More information at <a href="https://developers.cloudflare.com/speed/optimization/images/mirage/">https://developers.cloudflare.com/speed/optimization/images/mirage/</a>
+
+Value of the zone setting.
 
 </summary>
 
 One of the following:
 
-string
+"on"
 
 <a href="#">Link to this property</a>
 
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"off"
 
 <a href="#">Link to this property</a>
 
@@ -2966,91 +2840,13 @@ Zone setting identifier.
 
 <summary>
 
-value: object { enabled } or object { enabled } or object { enabled } or 2 more
+value: object { enabled }
 
-Current value of the zone setting.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-Enabled object { enabled }
+Value of the zone setting.
 
 </summary>
 
 enabled: optional boolean
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-Enabled object { enabled }
-
-</summary>
-
-enabled: optional boolean
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-Enabled object { enabled }
-
-</summary>
-
-enabled: optional boolean
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-Enabled object { enabled }
-
-</summary>
-
-enabled: optional boolean
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-Enabled object { enabled }
-
-</summary>
-
-enabled: optional boolean
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 
@@ -3114,31 +2910,19 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: "on" or "off"
 
-Current value of the zone setting.
+Value of the zone setting. Notes: Default value depends on the zone’s plan level.
 
 </summary>
 
 One of the following:
 
-string
+"on"
 
 <a href="#">Link to this property</a>
 
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"off"
 
 <a href="#">Link to this property</a>
 
@@ -3202,31 +2986,19 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: "on" or "off"
 
-Current value of the zone setting.
+Value of the zone setting. Notes: Default value depends on the zone’s plan level.
 
 </summary>
 
 One of the following:
 
-string
+"on"
 
 <a href="#">Link to this property</a>
 
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"off"
 
 <a href="#">Link to this property</a>
 
@@ -3290,31 +3062,21 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+Deprecatedvalue: "on" or "off"
 
-Current value of the zone setting.
+This setting is deprecated. Orange to Orange (O2O) is applied automatically for eligible zones and no longer requires configuration; this setting only controlled the legacy O2O v1 (Managed CNAME) path. More information at <a href="https://developers.cloudflare.com/fundamentals/api/reference/deprecations/">https://developers.cloudflare.com/fundamentals/api/reference/deprecations/</a>
+
+Value of the zone setting.
 
 </summary>
 
 One of the following:
 
-string
+"on"
 
 <a href="#">Link to this property</a>
 
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"off"
 
 <a href="#">Link to this property</a>
 
@@ -3378,31 +3140,19 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: "on" or "off"
 
-Current value of the zone setting.
+Value of the zone setting.
 
 </summary>
 
 One of the following:
 
-string
+"on"
 
 <a href="#">Link to this property</a>
 
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"off"
 
 <a href="#">Link to this property</a>
 
@@ -3556,31 +3306,23 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: "off" or "lossless" or "lossy"
 
-Current value of the zone setting.
+Value of the zone setting.
 
 </summary>
 
 One of the following:
 
-string
+"off"
 
 <a href="#">Link to this property</a>
 
-number
+"lossless"
 
 <a href="#">Link to this property</a>
 
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"lossy"
 
 <a href="#">Link to this property</a>
 
@@ -3644,31 +3386,19 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: "on" or "off"
 
-Current value of the zone setting.
+Value of the zone setting.
 
 </summary>
 
 One of the following:
 
-string
+"on"
 
 <a href="#">Link to this property</a>
 
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"off"
 
 <a href="#">Link to this property</a>
 
@@ -3732,31 +3462,19 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: "off" or "on"
 
-Current value of the zone setting.
+Value of the zone setting.
 
 </summary>
 
 One of the following:
 
-string
+"off"
 
 <a href="#">Link to this property</a>
 
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"on"
 
 <a href="#">Link to this property</a>
 
@@ -3820,31 +3538,21 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+Deprecatedvalue: "on" or "off"
 
-Current value of the zone setting.
+Privacy Pass v1 was deprecated in 2023. (Announcement - <a href="https://blog.cloudflare.com/privacy-pass-standard/">https://blog.cloudflare.com/privacy-pass-standard/</a>) and (API deprecation details - <a href="https://developers.cloudflare.com/fundamentals/api/reference/deprecations/#2024-03-31">https://developers.cloudflare.com/fundamentals/api/reference/deprecations/#2024-03-31</a>)
+
+Value of the Privacy Pass v1 (deprecated) zone setting
 
 </summary>
 
 One of the following:
 
-string
+"on"
 
 <a href="#">Link to this property</a>
 
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"off"
 
 <a href="#">Link to this property</a>
 
@@ -3904,39 +3612,9 @@ ID of the zone setting.
 
 <a href="#">Link to this property</a>
 
-<details>
-
-<summary>
-
-value: string or number or boolean or 2 more
+value: number
 
 Value of the zone setting, in seconds. Notes: Value must be between 1 and 6000
-
-</summary>
-
-One of the following:
-
-string
-
-<a href="#">Link to this property</a>
-
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 
@@ -3996,31 +3674,23 @@ Value of the Pseudo IPv4 setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: "off" or "add\_header" or "overwrite\_header"
 
-Current value of the zone setting.
+Value of the Pseudo IPv4 setting.
 
 </summary>
 
 One of the following:
 
-string
+"off"
 
 <a href="#">Link to this property</a>
 
-number
+"add\_header"
 
 <a href="#">Link to this property</a>
 
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"overwrite\_header"
 
 <a href="#">Link to this property</a>
 
@@ -4084,31 +3754,19 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: "off" or "on"
 
-Current value of the zone setting.
+Value of the zone setting.
 
 </summary>
 
 One of the following:
 
-string
+"off"
 
 <a href="#">Link to this property</a>
 
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"on"
 
 <a href="#">Link to this property</a>
 
@@ -4172,31 +3830,19 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: "on" or "off"
 
-Current value of the zone setting.
+Value of the zone setting.
 
 </summary>
 
 One of the following:
 
-string
+"on"
 
 <a href="#">Link to this property</a>
 
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"off"
 
 <a href="#">Link to this property</a>
 
@@ -4260,31 +3906,19 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: "on" or "off"
 
-Current value of the zone setting.
+Value of the zone setting.
 
 </summary>
 
 One of the following:
 
-string
+"on"
 
 <a href="#">Link to this property</a>
 
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"off"
 
 <a href="#">Link to this property</a>
 
@@ -4348,31 +3982,19 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: "on" or "off"
 
-Current value of the zone setting.
+Value of the zone setting.
 
 </summary>
 
 One of the following:
 
-string
+"on"
 
 <a href="#">Link to this property</a>
 
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"off"
 
 <a href="#">Link to this property</a>
 
@@ -4436,251 +4058,45 @@ ID of the zone setting.
 
 <summary>
 
-value: object { cache\_by\_device\_type, cf, enabled, 3 more } or object { cache\_by\_device\_type, cf, enabled, 3 more } or object { cache\_by\_device\_type, cf, enabled, 3 more } or 2 more
+value: object { cache\_by\_device\_type, cf, enabled, 3 more }
 
 Current value of the zone setting.
 
 </summary>
 
-One of the following:
-
-<details>
-
-<summary>
-
-object { cache\_by\_device\_type, cf, enabled, 3 more }
-
-</summary>
-
-cache\_by\_device\_type: optional boolean
+cache\_by\_device\_type: boolean
 
 Indicates whether or not <a href="https://developers.cloudflare.com/automatic-platform-optimization/reference/cache-device-type/">cache by device type</a> is enabled.
 
 <a href="#">Link to this property</a>
 
-cf: optional boolean
+cf: boolean
 
 Indicates whether or not Cloudflare proxy is enabled.
 
 <a href="#">Link to this property</a>
 
-enabled: optional boolean
+enabled: boolean
 
 Indicates whether or not Automatic Platform Optimization is enabled.
 
 <a href="#">Link to this property</a>
 
-hostnames: optional array of string
+hostnames: array of string
 
 An array of hostnames where Automatic Platform Optimization for WordPress is activated.
 
 <a href="#">Link to this property</a>
 
-wordpress: optional boolean
+wordpress: boolean
 
 Indicates whether or not site is powered by WordPress.
 
 <a href="#">Link to this property</a>
 
-wp\_plugin: optional boolean
+wp\_plugin: boolean
 
 Indicates whether or not <a href="https://wordpress.org/plugins/cloudflare/">Cloudflare for WordPress plugin</a> is installed.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { cache\_by\_device\_type, cf, enabled, 3 more }
-
-</summary>
-
-cache\_by\_device\_type: optional boolean
-
-Indicates whether or not <a href="https://developers.cloudflare.com/automatic-platform-optimization/reference/cache-device-type/">cache by device type</a> is enabled.
-
-<a href="#">Link to this property</a>
-
-cf: optional boolean
-
-Indicates whether or not Cloudflare proxy is enabled.
-
-<a href="#">Link to this property</a>
-
-enabled: optional boolean
-
-Indicates whether or not Automatic Platform Optimization is enabled.
-
-<a href="#">Link to this property</a>
-
-hostnames: optional array of string
-
-An array of hostnames where Automatic Platform Optimization for WordPress is activated.
-
-<a href="#">Link to this property</a>
-
-wordpress: optional boolean
-
-Indicates whether or not site is powered by WordPress.
-
-<a href="#">Link to this property</a>
-
-wp\_plugin: optional boolean
-
-Indicates whether or not <a href="https://wordpress.org/plugins/cloudflare/">Cloudflare for WordPress plugin</a> is installed.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { cache\_by\_device\_type, cf, enabled, 3 more }
-
-</summary>
-
-cache\_by\_device\_type: optional boolean
-
-Indicates whether or not <a href="https://developers.cloudflare.com/automatic-platform-optimization/reference/cache-device-type/">cache by device type</a> is enabled.
-
-<a href="#">Link to this property</a>
-
-cf: optional boolean
-
-Indicates whether or not Cloudflare proxy is enabled.
-
-<a href="#">Link to this property</a>
-
-enabled: optional boolean
-
-Indicates whether or not Automatic Platform Optimization is enabled.
-
-<a href="#">Link to this property</a>
-
-hostnames: optional array of string
-
-An array of hostnames where Automatic Platform Optimization for WordPress is activated.
-
-<a href="#">Link to this property</a>
-
-wordpress: optional boolean
-
-Indicates whether or not site is powered by WordPress.
-
-<a href="#">Link to this property</a>
-
-wp\_plugin: optional boolean
-
-Indicates whether or not <a href="https://wordpress.org/plugins/cloudflare/">Cloudflare for WordPress plugin</a> is installed.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { cache\_by\_device\_type, cf, enabled, 3 more }
-
-</summary>
-
-cache\_by\_device\_type: optional boolean
-
-Indicates whether or not <a href="https://developers.cloudflare.com/automatic-platform-optimization/reference/cache-device-type/">cache by device type</a> is enabled.
-
-<a href="#">Link to this property</a>
-
-cf: optional boolean
-
-Indicates whether or not Cloudflare proxy is enabled.
-
-<a href="#">Link to this property</a>
-
-enabled: optional boolean
-
-Indicates whether or not Automatic Platform Optimization is enabled.
-
-<a href="#">Link to this property</a>
-
-hostnames: optional array of string
-
-An array of hostnames where Automatic Platform Optimization for WordPress is activated.
-
-<a href="#">Link to this property</a>
-
-wordpress: optional boolean
-
-Indicates whether or not site is powered by WordPress.
-
-<a href="#">Link to this property</a>
-
-wp\_plugin: optional boolean
-
-Indicates whether or not <a href="https://wordpress.org/plugins/cloudflare/">Cloudflare for WordPress plugin</a> is installed.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { cache\_by\_device\_type, cf, enabled, 3 more }
-
-</summary>
-
-cache\_by\_device\_type: optional boolean
-
-Indicates whether or not <a href="https://developers.cloudflare.com/automatic-platform-optimization/reference/cache-device-type/">cache by device type</a> is enabled.
-
-<a href="#">Link to this property</a>
-
-cf: optional boolean
-
-Indicates whether or not Cloudflare proxy is enabled.
-
-<a href="#">Link to this property</a>
-
-enabled: optional boolean
-
-Indicates whether or not Automatic Platform Optimization is enabled.
-
-<a href="#">Link to this property</a>
-
-hostnames: optional array of string
-
-An array of hostnames where Automatic Platform Optimization for WordPress is activated.
-
-<a href="#">Link to this property</a>
-
-wordpress: optional boolean
-
-Indicates whether or not site is powered by WordPress.
-
-<a href="#">Link to this property</a>
-
-wp\_plugin: optional boolean
-
-Indicates whether or not <a href="https://wordpress.org/plugins/cloudflare/">Cloudflare for WordPress plugin</a> is installed.
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 
@@ -4744,31 +4160,19 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: "off" or "on"
 
-Current value of the zone setting.
+Value of the zone setting.
 
 </summary>
 
 One of the following:
 
-string
+"off"
 
 <a href="#">Link to this property</a>
 
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"on"
 
 <a href="#">Link to this property</a>
 
@@ -4832,22 +4236,12 @@ ID of the zone’s security header.
 
 <summary>
 
-value: object { strict\_transport\_security } or object { strict\_transport\_security } or object { strict\_transport\_security } or 2 more
+value: object { strict\_transport\_security }
 
 Current value of the zone setting.
 
 </summary>
 
-One of the following:
-
-<details>
-
-<summary>
-
-StrictTransportSecurity object { strict\_transport\_security }
-
-</summary>
-
 <details>
 
 <summary>
@@ -4885,234 +4279,6 @@ Whether or not to include ‘X-Content-Type-Options: nosniff’ header.
 preload: optional boolean
 
 Enable automatic preload of the HSTS configuration.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-StrictTransportSecurity object { strict\_transport\_security }
-
-</summary>
-
-<details>
-
-<summary>
-
-strict\_transport\_security: optional object { enabled, include\_subdomains, max\_age, 2 more }
-
-Strict Transport Security.
-
-</summary>
-
-enabled: optional boolean
-
-Whether or not strict transport security is enabled.
-
-<a href="#">Link to this property</a>
-
-include\_subdomains: optional boolean
-
-Include all subdomains for strict transport security.
-
-<a href="#">Link to this property</a>
-
-max\_age: optional number
-
-Max age in seconds of the strict transport security.
-
-<a href="#">Link to this property</a>
-
-nosniff: optional boolean
-
-Whether or not to include ‘X-Content-Type-Options: nosniff’ header.
-
-<a href="#">Link to this property</a>
-
-preload: optional boolean
-
-Enable automatic preload of the HSTS configuration.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-StrictTransportSecurity object { strict\_transport\_security }
-
-</summary>
-
-<details>
-
-<summary>
-
-strict\_transport\_security: optional object { enabled, include\_subdomains, max\_age, 2 more }
-
-Strict Transport Security.
-
-</summary>
-
-enabled: optional boolean
-
-Whether or not strict transport security is enabled.
-
-<a href="#">Link to this property</a>
-
-include\_subdomains: optional boolean
-
-Include all subdomains for strict transport security.
-
-<a href="#">Link to this property</a>
-
-max\_age: optional number
-
-Max age in seconds of the strict transport security.
-
-<a href="#">Link to this property</a>
-
-nosniff: optional boolean
-
-Whether or not to include ‘X-Content-Type-Options: nosniff’ header.
-
-<a href="#">Link to this property</a>
-
-preload: optional boolean
-
-Enable automatic preload of the HSTS configuration.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-StrictTransportSecurity object { strict\_transport\_security }
-
-</summary>
-
-<details>
-
-<summary>
-
-strict\_transport\_security: optional object { enabled, include\_subdomains, max\_age, 2 more }
-
-Strict Transport Security.
-
-</summary>
-
-enabled: optional boolean
-
-Whether or not strict transport security is enabled.
-
-<a href="#">Link to this property</a>
-
-include\_subdomains: optional boolean
-
-Include all subdomains for strict transport security.
-
-<a href="#">Link to this property</a>
-
-max\_age: optional number
-
-Max age in seconds of the strict transport security.
-
-<a href="#">Link to this property</a>
-
-nosniff: optional boolean
-
-Whether or not to include ‘X-Content-Type-Options: nosniff’ header.
-
-<a href="#">Link to this property</a>
-
-preload: optional boolean
-
-Enable automatic preload of the HSTS configuration.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-StrictTransportSecurity object { strict\_transport\_security }
-
-</summary>
-
-<details>
-
-<summary>
-
-strict\_transport\_security: optional object { enabled, include\_subdomains, max\_age, 2 more }
-
-Strict Transport Security.
-
-</summary>
-
-enabled: optional boolean
-
-Whether or not strict transport security is enabled.
-
-<a href="#">Link to this property</a>
-
-include\_subdomains: optional boolean
-
-Include all subdomains for strict transport security.
-
-<a href="#">Link to this property</a>
-
-max\_age: optional number
-
-Max age in seconds of the strict transport security.
-
-<a href="#">Link to this property</a>
-
-nosniff: optional boolean
-
-Whether or not to include ‘X-Content-Type-Options: nosniff’ header.
-
-<a href="#">Link to this property</a>
-
-preload: optional boolean
-
-Enable automatic preload of the HSTS configuration.
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 
@@ -5180,31 +4346,35 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: "off" or "essentially\_off" or "low" or 3 more
 
-Current value of the zone setting.
+Value of the zone setting.
 
 </summary>
 
 One of the following:
 
-string
+"off"
 
 <a href="#">Link to this property</a>
 
-number
+"essentially\_off"
 
 <a href="#">Link to this property</a>
 
-boolean
+"low"
 
 <a href="#">Link to this property</a>
 
-unknown
+"medium"
 
 <a href="#">Link to this property</a>
 
-array of string
+"high"
+
+<a href="#">Link to this property</a>
+
+"under\_attack"
 
 <a href="#">Link to this property</a>
 
@@ -5268,31 +4438,19 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: "on" or "off"
 
-Current value of the zone setting.
+Value of the zone setting.
 
 </summary>
 
 One of the following:
 
-string
+"on"
 
 <a href="#">Link to this property</a>
 
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"off"
 
 <a href="#">Link to this property</a>
 
@@ -5356,31 +4514,19 @@ Zone setting identifier.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: "off" or "on"
 
-Current value of the zone setting.
+Value of the zone setting.
 
 </summary>
 
 One of the following:
 
-string
+"off"
 
 <a href="#">Link to this property</a>
 
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"on"
 
 <a href="#">Link to this property</a>
 
@@ -5444,31 +4590,19 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: "on" or "off"
 
-Current value of the zone setting.
+Value of the zone setting.
 
 </summary>
 
 One of the following:
 
-string
+"on"
 
 <a href="#">Link to this property</a>
 
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"off"
 
 <a href="#">Link to this property</a>
 
@@ -5532,31 +4666,27 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: "off" or "flexible" or "full" or "strict"
 
-Current value of the zone setting.
+Value of the zone setting. Notes: Depends on the zone’s plan level
 
 </summary>
 
 One of the following:
 
-string
+"off"
 
 <a href="#">Link to this property</a>
 
-number
+"flexible"
 
 <a href="#">Link to this property</a>
 
-boolean
+"full"
 
 <a href="#">Link to this property</a>
 
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"strict"
 
 <a href="#">Link to this property</a>
 
@@ -5646,31 +4776,19 @@ Zone setting identifier.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: "off" or "on"
 
-Current value of the zone setting.
+Value of the zone setting.
 
 </summary>
 
 One of the following:
 
-string
+"off"
 
 <a href="#">Link to this property</a>
 
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"on"
 
 <a href="#">Link to this property</a>
 
@@ -5734,31 +4852,23 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: "on" or "off" or "zrt"
 
-Current value of the zone setting.
+Value of the zone setting. Notes: Default value depends on the zone’s plan level.
 
 </summary>
 
 One of the following:
 
-string
+"on"
 
 <a href="#">Link to this property</a>
 
-number
+"off"
 
 <a href="#">Link to this property</a>
 
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"zrt"
 
 <a href="#">Link to this property</a>
 
@@ -5822,31 +4932,19 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: "on" or "off"
 
-Current value of the zone setting.
+value of the zone setting.
 
 </summary>
 
 One of the following:
 
-string
+"on"
 
 <a href="#">Link to this property</a>
 
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"off"
 
 <a href="#">Link to this property</a>
 
@@ -5910,31 +5008,23 @@ ID of the zone setting. Shared between Image Transformations and Video Transform
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: "on" or "off" or "open"
 
-Current value of the zone setting.
+Whether the feature is enabled, disabled, or enabled in <code>open proxy</code> mode.
 
 </summary>
 
 One of the following:
 
-string
+"on"
 
 <a href="#">Link to this property</a>
 
-number
+"off"
 
 <a href="#">Link to this property</a>
 
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"open"
 
 <a href="#">Link to this property</a>
 
@@ -5994,39 +5084,9 @@ ID of the zone setting. Shared between Image Transformations and Video Transform
 
 <a href="#">Link to this property</a>
 
-<details>
-
-<summary>
-
-value: string or number or boolean or 2 more
+value: string
 
 Comma-separated list of allowed origins. Refer to the <a href="https://developers.cloudflare.com/images/transform-images/sources/">Image Transformations</a> and <a href="https://developers.cloudflare.com/stream/transform-videos/#getting-started">Video Transformations</a> documentation for more information.
-
-</summary>
-
-One of the following:
-
-string
-
-<a href="#">Link to this property</a>
-
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 
@@ -6086,31 +5146,19 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: "on" or "off"
 
-Current value of the zone setting.
+Value of the zone setting.
 
 </summary>
 
 One of the following:
 
-string
+"on"
 
 <a href="#">Link to this property</a>
 
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"off"
 
 <a href="#">Link to this property</a>
 
@@ -6174,31 +5222,19 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: "on" or "off"
 
-Current value of the zone setting.
+Value of the zone setting.
 
 </summary>
 
 One of the following:
 
-string
+"on"
 
 <a href="#">Link to this property</a>
 
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"off"
 
 <a href="#">Link to this property</a>
 
@@ -6262,31 +5298,19 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: "off" or "on"
 
-Current value of the zone setting.
+Value of the zone setting.
 
 </summary>
 
 One of the following:
 
-string
+"off"
 
 <a href="#">Link to this property</a>
 
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"on"
 
 <a href="#">Link to this property</a>
 
@@ -6346,41 +5370,11 @@ ID of the zone setting.
 
 <a href="#">Link to this property</a>
 
-<details>
-
-<summary>
-
-value: string or number or boolean or 2 more
+value: string
 
 Root-relative path (with optional query string) of this zone’s MCP endpoint, for example “/api/mcp”. Surfaced to the injected bridge as the data-mcp-url attribute. Absolute and protocol-relative URLs, fragments, and characters outside RFC 3986 paths and queries are rejected. An empty value clears the override so the bridge uses /mcp.
 
 maxLength2048
-
-</summary>
-
-One of the following:
-
-string
-
-<a href="#">Link to this property</a>
-
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 
@@ -6436,41 +5430,11 @@ ID of the zone setting.
 
 <a href="#">Link to this property</a>
 
-<details>
-
-<summary>
-
-value: string or number or boolean or 2 more
+value: string
 
 Comma-separated list of WebMCP tool-pack names to activate for this zone (for example, “c2pa,mcp-server-client”), surfaced to the injected bridge as the data-packs attribute. An empty value clears the override so the bridge uses its built-in default pack set.
 
 maxLength256
-
-</summary>
-
-One of the following:
-
-string
-
-<a href="#">Link to this property</a>
-
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 
@@ -6530,31 +5494,19 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: "off" or "on"
 
-Current value of the zone setting.
+Value of the zone setting.
 
 </summary>
 
 One of the following:
 
-string
+"off"
 
 <a href="#">Link to this property</a>
 
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"on"
 
 <a href="#">Link to this property</a>
 
@@ -6618,31 +5570,19 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: "off" or "on"
 
-Current value of the zone setting.
+Value of the zone setting.
 
 </summary>
 
 One of the following:
 
-string
+"off"
 
 <a href="#">Link to this property</a>
 
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"on"
 
 <a href="#">Link to this property</a>
 
@@ -6706,31 +5646,19 @@ ID of the zone setting.
 
 <summary>
 
-value: string or number or boolean or 2 more
+value: "off" or "on"
 
-Current value of the zone setting.
+Value of the zone setting.
 
 </summary>
 
 One of the following:
 
-string
+"off"
 
 <a href="#">Link to this property</a>
 
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-unknown
-
-<a href="#">Link to this property</a>
-
-array of string
+"on"
 
 <a href="#">Link to this property</a>
 

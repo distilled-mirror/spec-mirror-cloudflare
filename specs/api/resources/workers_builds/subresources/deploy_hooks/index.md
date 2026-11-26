@@ -1,7 +1,9 @@
 ---
 agent:
-  instructions: "This site offers a search API that returns relevant content across the entire site. Use the search endpoint to find information instead of crawling individual pages."
-  search: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  instructions: "Use this search API to find relevant content across this site with keywords or natural-language queries, instead of crawling individual pages. Results are returned in Markdown."
+  endpoint: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  method: "GET"
+  documentation: "https://developers.cloudflare.com/ai-search/how-to/search-for-agents/"
 title: Deploy Hooks
 ---
 
@@ -17,7 +19,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 ---
 
-**Copy Markdown****View as Markdown**
+**Copy MarkdownView as Markdown**
 
 # Deploy Hooks
 
@@ -51,17 +53,67 @@ POST/workers/builds/deploy\_hooks/{deploy\_hook\_uuid}
 
 <summary>
 
-DeployHookListResponse = unknown or array of unknown
+DeployHookListResponse object { branch, created\_on, deploy\_hook\_name, 4 more }
 
 </summary>
 
-One of the following:
+branch: optional string
 
-unknown
+Git branch name.
 
 <a href="#">Link to this property</a>
 
-array of unknown
+created\_on: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+deploy\_hook\_name: optional string
+
+Deploy hook name (1-58 characters).
+
+maxLength58
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+deploy\_hook\_uuid: optional string
+
+Deploy hook UUID.
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+external\_script\_id: optional string
+
+System-generated tag of the Worker. This is not the Worker name.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+latest\_build: optional object { created\_on }
+
+</summary>
+
+created\_on: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+modified\_on: optional string
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -73,17 +125,7 @@ array of unknown
 
 <summary>
 
-DeployHookCreateResponse = object { branch, created\_on, deploy\_hook\_name, 3 more } or object { branch, created\_on, deploy\_hook\_name, 3 more }
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-object { branch, created\_on, deploy\_hook\_name, 3 more }
+DeployHookCreateResponse object { branch, created\_on, deploy\_hook\_name, 3 more }
 
 </summary>
 
@@ -126,64 +168,6 @@ System-generated tag of the Worker. This is not the Worker name.
 modified\_on: optional string
 
 formatdate-time
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { branch, created\_on, deploy\_hook\_name, 3 more }
-
-</summary>
-
-branch: optional string
-
-Git branch name.
-
-<a href="#">Link to this property</a>
-
-created\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-deploy\_hook\_name: optional string
-
-Deploy hook name (1-58 characters).
-
-maxLength58
-
-minLength1
-
-<a href="#">Link to this property</a>
-
-deploy\_hook\_uuid: optional string
-
-Deploy hook UUID.
-
-formatuuid
-
-<a href="#">Link to this property</a>
-
-external\_script\_id: optional string
-
-System-generated tag of the Worker. This is not the Worker name.
-
-<a href="#">Link to this property</a>
-
-modified\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 
@@ -195,17 +179,7 @@ formatdate-time
 
 <summary>
 
-DeployHookGetResponse = object { branch, created\_on, deploy\_hook\_name, 3 more } or object { branch, created\_on, deploy\_hook\_name, 3 more }
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-object { branch, created\_on, deploy\_hook\_name, 3 more }
+DeployHookGetResponse object { branch, created\_on, deploy\_hook\_name, 3 more }
 
 </summary>
 
@@ -248,64 +222,6 @@ System-generated tag of the Worker. This is not the Worker name.
 modified\_on: optional string
 
 formatdate-time
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { branch, created\_on, deploy\_hook\_name, 3 more }
-
-</summary>
-
-branch: optional string
-
-Git branch name.
-
-<a href="#">Link to this property</a>
-
-created\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-deploy\_hook\_name: optional string
-
-Deploy hook name (1-58 characters).
-
-maxLength58
-
-minLength1
-
-<a href="#">Link to this property</a>
-
-deploy\_hook\_uuid: optional string
-
-Deploy hook UUID.
-
-formatuuid
-
-<a href="#">Link to this property</a>
-
-external\_script\_id: optional string
-
-System-generated tag of the Worker. This is not the Worker name.
-
-<a href="#">Link to this property</a>
-
-modified\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 
@@ -317,17 +233,7 @@ formatdate-time
 
 <summary>
 
-DeployHookUpdateResponse = object { branch, created\_on, deploy\_hook\_name, 3 more } or object { branch, created\_on, deploy\_hook\_name, 3 more }
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-object { branch, created\_on, deploy\_hook\_name, 3 more }
+DeployHookUpdateResponse object { branch, created\_on, deploy\_hook\_name, 3 more }
 
 </summary>
 
@@ -370,64 +276,6 @@ System-generated tag of the Worker. This is not the Worker name.
 modified\_on: optional string
 
 formatdate-time
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { branch, created\_on, deploy\_hook\_name, 3 more }
-
-</summary>
-
-branch: optional string
-
-Git branch name.
-
-<a href="#">Link to this property</a>
-
-created\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-deploy\_hook\_name: optional string
-
-Deploy hook name (1-58 characters).
-
-maxLength58
-
-minLength1
-
-<a href="#">Link to this property</a>
-
-deploy\_hook\_uuid: optional string
-
-Deploy hook UUID.
-
-formatuuid
-
-<a href="#">Link to this property</a>
-
-external\_script\_id: optional string
-
-System-generated tag of the Worker. This is not the Worker name.
-
-<a href="#">Link to this property</a>
-
-modified\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 
@@ -439,17 +287,7 @@ formatdate-time
 
 <summary>
 
-DeployHookDeleteResponse = object { branch, created\_on, deploy\_hook\_name, 3 more } or object { branch, created\_on, deploy\_hook\_name, 3 more }
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-object { branch, created\_on, deploy\_hook\_name, 3 more }
+DeployHookDeleteResponse object { branch, created\_on, deploy\_hook\_name, 3 more }
 
 </summary>
 
@@ -492,64 +330,6 @@ System-generated tag of the Worker. This is not the Worker name.
 modified\_on: optional string
 
 formatdate-time
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { branch, created\_on, deploy\_hook\_name, 3 more }
-
-</summary>
-
-branch: optional string
-
-Git branch name.
-
-<a href="#">Link to this property</a>
-
-created\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-deploy\_hook\_name: optional string
-
-Deploy hook name (1-58 characters).
-
-maxLength58
-
-minLength1
-
-<a href="#">Link to this property</a>
-
-deploy\_hook\_uuid: optional string
-
-Deploy hook UUID.
-
-formatuuid
-
-<a href="#">Link to this property</a>
-
-external\_script\_id: optional string
-
-System-generated tag of the Worker. This is not the Worker name.
-
-<a href="#">Link to this property</a>
-
-modified\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 
@@ -561,17 +341,7 @@ formatdate-time
 
 <summary>
 
-DeployHookTriggerResponse = object { already\_exists, build\_uuid, created\_on, status } or object { already\_exists, build\_uuid, created\_on, status }
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-object { already\_exists, build\_uuid, created\_on, status }
+DeployHookTriggerResponse object { already\_exists, build\_uuid, created\_on, status }
 
 </summary>
 
@@ -618,72 +388,6 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "stopped"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { already\_exists, build\_uuid, created\_on, status }
-
-</summary>
-
-already\_exists: optional boolean
-
-True if a pending build already exists for this branch
-
-<a href="#">Link to this property</a>
-
-build\_uuid: optional string
-
-Build UUID.
-
-formatuuid
-
-<a href="#">Link to this property</a>
-
-created\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-status: optional "queued" or "initializing" or "running" or "stopped"
-
-</summary>
-
-One of the following:
-
-"queued"
-
-<a href="#">Link to this property</a>
-
-"initializing"
-
-<a href="#">Link to this property</a>
-
-"running"
-
-<a href="#">Link to this property</a>
-
-"stopped"
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 

@@ -1,7 +1,9 @@
 ---
 agent:
-  instructions: "This site offers a search API that returns relevant content across the entire site. Use the search endpoint to find information instead of crawling individual pages."
-  search: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  instructions: "Use this search API to find relevant content across this site with keywords or natural-language queries, instead of crawling individual pages. Results are returned in Markdown."
+  endpoint: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  method: "GET"
+  documentation: "https://developers.cloudflare.com/ai-search/how-to/search-for-agents/"
 title: URL Normalization
 ---
 
@@ -15,7 +17,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 ---
 
-**Copy Markdown****View as Markdown**
+**Copy MarkdownView as Markdown**
 
 # URL Normalization
 
@@ -37,19 +39,9 @@ DELETE/zones/{zone\_id}/url\_normalization
 
 <summary>
 
-URLNormalizationGetResponse = object { scope, type } or object { scope, type } or object { scope, type } or 2 more
+URLNormalizationGetResponse object { scope, type }
 
-A result.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-object { scope, type }
+A URL Normalization object.
 
 </summary>
 
@@ -57,7 +49,7 @@ object { scope, type }
 
 <summary>
 
-scope: optional "incoming" or "both" or "none"
+scope: "incoming" or "both" or "none"
 
 The scope of the URL normalization.
 
@@ -85,7 +77,7 @@ One of the following:
 
 <summary>
 
-type: optional "cloudflare" or "rfc3986"
+type: "cloudflare" or "rfc3986"
 
 The type of URL normalization performed by Cloudflare.
 
@@ -98,266 +90,6 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "rfc3986"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { scope, type }
-
-</summary>
-
-<details>
-
-<summary>
-
-scope: optional "incoming" or "both" or "none"
-
-The scope of the URL normalization.
-
-</summary>
-
-One of the following:
-
-"incoming"
-
-<a href="#">Link to this property</a>
-
-"both"
-
-<a href="#">Link to this property</a>
-
-"none"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-type: optional "cloudflare" or "rfc3986"
-
-The type of URL normalization performed by Cloudflare.
-
-</summary>
-
-One of the following:
-
-"cloudflare"
-
-<a href="#">Link to this property</a>
-
-"rfc3986"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { scope, type }
-
-</summary>
-
-<details>
-
-<summary>
-
-scope: optional "incoming" or "both" or "none"
-
-The scope of the URL normalization.
-
-</summary>
-
-One of the following:
-
-"incoming"
-
-<a href="#">Link to this property</a>
-
-"both"
-
-<a href="#">Link to this property</a>
-
-"none"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-type: optional "cloudflare" or "rfc3986"
-
-The type of URL normalization performed by Cloudflare.
-
-</summary>
-
-One of the following:
-
-"cloudflare"
-
-<a href="#">Link to this property</a>
-
-"rfc3986"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { scope, type }
-
-</summary>
-
-<details>
-
-<summary>
-
-scope: optional "incoming" or "both" or "none"
-
-The scope of the URL normalization.
-
-</summary>
-
-One of the following:
-
-"incoming"
-
-<a href="#">Link to this property</a>
-
-"both"
-
-<a href="#">Link to this property</a>
-
-"none"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-type: optional "cloudflare" or "rfc3986"
-
-The type of URL normalization performed by Cloudflare.
-
-</summary>
-
-One of the following:
-
-"cloudflare"
-
-<a href="#">Link to this property</a>
-
-"rfc3986"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { scope, type }
-
-</summary>
-
-<details>
-
-<summary>
-
-scope: optional "incoming" or "both" or "none"
-
-The scope of the URL normalization.
-
-</summary>
-
-One of the following:
-
-"incoming"
-
-<a href="#">Link to this property</a>
-
-"both"
-
-<a href="#">Link to this property</a>
-
-"none"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-type: optional "cloudflare" or "rfc3986"
-
-The type of URL normalization performed by Cloudflare.
-
-</summary>
-
-One of the following:
-
-"cloudflare"
-
-<a href="#">Link to this property</a>
-
-"rfc3986"
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 
@@ -373,19 +105,9 @@ One of the following:
 
 <summary>
 
-URLNormalizationUpdateResponse = object { scope, type } or object { scope, type } or object { scope, type } or 2 more
+URLNormalizationUpdateResponse object { scope, type }
 
-A result.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-object { scope, type }
+A URL Normalization object.
 
 </summary>
 
@@ -393,7 +115,7 @@ object { scope, type }
 
 <summary>
 
-scope: optional "incoming" or "both" or "none"
+scope: "incoming" or "both" or "none"
 
 The scope of the URL normalization.
 
@@ -421,7 +143,7 @@ One of the following:
 
 <summary>
 
-type: optional "cloudflare" or "rfc3986"
+type: "cloudflare" or "rfc3986"
 
 The type of URL normalization performed by Cloudflare.
 
@@ -434,266 +156,6 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "rfc3986"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { scope, type }
-
-</summary>
-
-<details>
-
-<summary>
-
-scope: optional "incoming" or "both" or "none"
-
-The scope of the URL normalization.
-
-</summary>
-
-One of the following:
-
-"incoming"
-
-<a href="#">Link to this property</a>
-
-"both"
-
-<a href="#">Link to this property</a>
-
-"none"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-type: optional "cloudflare" or "rfc3986"
-
-The type of URL normalization performed by Cloudflare.
-
-</summary>
-
-One of the following:
-
-"cloudflare"
-
-<a href="#">Link to this property</a>
-
-"rfc3986"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { scope, type }
-
-</summary>
-
-<details>
-
-<summary>
-
-scope: optional "incoming" or "both" or "none"
-
-The scope of the URL normalization.
-
-</summary>
-
-One of the following:
-
-"incoming"
-
-<a href="#">Link to this property</a>
-
-"both"
-
-<a href="#">Link to this property</a>
-
-"none"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-type: optional "cloudflare" or "rfc3986"
-
-The type of URL normalization performed by Cloudflare.
-
-</summary>
-
-One of the following:
-
-"cloudflare"
-
-<a href="#">Link to this property</a>
-
-"rfc3986"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { scope, type }
-
-</summary>
-
-<details>
-
-<summary>
-
-scope: optional "incoming" or "both" or "none"
-
-The scope of the URL normalization.
-
-</summary>
-
-One of the following:
-
-"incoming"
-
-<a href="#">Link to this property</a>
-
-"both"
-
-<a href="#">Link to this property</a>
-
-"none"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-type: optional "cloudflare" or "rfc3986"
-
-The type of URL normalization performed by Cloudflare.
-
-</summary>
-
-One of the following:
-
-"cloudflare"
-
-<a href="#">Link to this property</a>
-
-"rfc3986"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { scope, type }
-
-</summary>
-
-<details>
-
-<summary>
-
-scope: optional "incoming" or "both" or "none"
-
-The scope of the URL normalization.
-
-</summary>
-
-One of the following:
-
-"incoming"
-
-<a href="#">Link to this property</a>
-
-"both"
-
-<a href="#">Link to this property</a>
-
-"none"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-type: optional "cloudflare" or "rfc3986"
-
-The type of URL normalization performed by Cloudflare.
-
-</summary>
-
-One of the following:
-
-"cloudflare"
-
-<a href="#">Link to this property</a>
-
-"rfc3986"
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 

@@ -1,7 +1,9 @@
 ---
 agent:
-  instructions: "This site offers a search API that returns relevant content across the entire site. Use the search endpoint to find information instead of crawling individual pages."
-  search: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  instructions: "Use this search API to find relevant content across this site with keywords or natural-language queries, instead of crawling individual pages. Results are returned in Markdown."
+  endpoint: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  method: "GET"
+  documentation: "https://developers.cloudflare.com/ai-search/how-to/search-for-agents/"
 title: Get URL Normalization settings
 ---
 
@@ -17,7 +19,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 ---
 
-**Copy Markdown****View as Markdown**
+**Copy MarkdownView as Markdown**
 
 # Get URL Normalization settings
 
@@ -57,7 +59,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Account Custom Error Rules Write``Account Custom Error Rules Read``Response Compression Write``Response Compression Read``Account Custom Pages Write``Account Custom Pages Read``Custom Pages Write``Custom Pages Read``Config Settings Write``Config Settings Read``Dynamic URL Redirects Write``Dynamic URL Redirects Read``Cache Settings Write``Cache Settings Read``Custom Errors Write``Custom Errors Read``Origin Write``Origin Read``Managed headers Write``Managed headers Read``Zone Transform Rules Write``Zone Transform Rules Read``Mass URL Redirects Write``Mass URL Redirects Read``Magic Firewall Write``Magic Firewall Read``L4 DDoS Managed Ruleset Write``L4 DDoS Managed Ruleset Read``HTTP DDoS Managed Ruleset Write``HTTP DDoS Managed Ruleset Read``Sanitize Write``Sanitize Read``Transform Rules Write``Transform Rules Read``Select Configuration Write``Select Configuration Read``Bot Management Write``Bot Management Read``Zone WAF Write``Zone WAF Read``Account WAF Write``Account WAF Read``Account Rulesets Read``Account Rulesets Write``Logs Write``Logs Read``Logs Write``Logs Read`
+`Account Custom Error Rules Write` `Account Custom Error Rules Read` `Response Compression Write` `Response Compression Read` `Account Custom Pages Write` `Account Custom Pages Read` `Custom Pages Write` `Custom Pages Read` `Config Settings Write` `Config Settings Read` `Dynamic URL Redirects Write` `Dynamic URL Redirects Read` `Cache Settings Write` `Cache Settings Read` `Custom Errors Write` `Custom Errors Read` `Origin Write` `Origin Read` `Managed headers Write` `Managed headers Read` `Zone Transform Rules Write` `Zone Transform Rules Read` `Mass URL Redirects Write` `Mass URL Redirects Read` `Magic Firewall Write` `Magic Firewall Read` `L4 DDoS Managed Ruleset Write` `L4 DDoS Managed Ruleset Read` `HTTP DDoS Managed Ruleset Write` `HTTP DDoS Managed Ruleset Read` `Sanitize Write` `Sanitize Read` `Transform Rules Write` `Transform Rules Read` `Select Configuration Write` `Select Configuration Read` `Bot Management Write` `Bot Management Read` `Zone WAF Write` `Zone WAF Read` `Account WAF Write` `Account WAF Read` `Account Rulesets Read` `Account Rulesets Write` `Logs Write` `Logs Read` `Logs Write` `Logs Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -173,19 +175,9 @@ minLength1
 
 <summary>
 
-result: object { scope, type } or object { scope, type } or object { scope, type } or 2 more
+result: object { scope, type }
 
-A result.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-object { scope, type }
+A URL Normalization object.
 
 </summary>
 
@@ -193,7 +185,7 @@ object { scope, type }
 
 <summary>
 
-scope: optional "incoming" or "both" or "none"
+scope: "incoming" or "both" or "none"
 
 The scope of the URL normalization.
 
@@ -221,7 +213,7 @@ One of the following:
 
 <summary>
 
-type: optional "cloudflare" or "rfc3986"
+type: "cloudflare" or "rfc3986"
 
 The type of URL normalization performed by Cloudflare.
 
@@ -234,266 +226,6 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "rfc3986"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { scope, type }
-
-</summary>
-
-<details>
-
-<summary>
-
-scope: optional "incoming" or "both" or "none"
-
-The scope of the URL normalization.
-
-</summary>
-
-One of the following:
-
-"incoming"
-
-<a href="#">Link to this property</a>
-
-"both"
-
-<a href="#">Link to this property</a>
-
-"none"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-type: optional "cloudflare" or "rfc3986"
-
-The type of URL normalization performed by Cloudflare.
-
-</summary>
-
-One of the following:
-
-"cloudflare"
-
-<a href="#">Link to this property</a>
-
-"rfc3986"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { scope, type }
-
-</summary>
-
-<details>
-
-<summary>
-
-scope: optional "incoming" or "both" or "none"
-
-The scope of the URL normalization.
-
-</summary>
-
-One of the following:
-
-"incoming"
-
-<a href="#">Link to this property</a>
-
-"both"
-
-<a href="#">Link to this property</a>
-
-"none"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-type: optional "cloudflare" or "rfc3986"
-
-The type of URL normalization performed by Cloudflare.
-
-</summary>
-
-One of the following:
-
-"cloudflare"
-
-<a href="#">Link to this property</a>
-
-"rfc3986"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { scope, type }
-
-</summary>
-
-<details>
-
-<summary>
-
-scope: optional "incoming" or "both" or "none"
-
-The scope of the URL normalization.
-
-</summary>
-
-One of the following:
-
-"incoming"
-
-<a href="#">Link to this property</a>
-
-"both"
-
-<a href="#">Link to this property</a>
-
-"none"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-type: optional "cloudflare" or "rfc3986"
-
-The type of URL normalization performed by Cloudflare.
-
-</summary>
-
-One of the following:
-
-"cloudflare"
-
-<a href="#">Link to this property</a>
-
-"rfc3986"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object { scope, type }
-
-</summary>
-
-<details>
-
-<summary>
-
-scope: optional "incoming" or "both" or "none"
-
-The scope of the URL normalization.
-
-</summary>
-
-One of the following:
-
-"incoming"
-
-<a href="#">Link to this property</a>
-
-"both"
-
-<a href="#">Link to this property</a>
-
-"none"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-type: optional "cloudflare" or "rfc3986"
-
-The type of URL normalization performed by Cloudflare.
-
-</summary>
-
-One of the following:
-
-"cloudflare"
-
-<a href="#">Link to this property</a>
-
-"rfc3986"
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 

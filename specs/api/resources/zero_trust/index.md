@@ -338162,6 +338162,462 @@ A user-friendly name for a tunnel.
 
 [Link to this property](#)
 
+##### [Get risk event/score information for a specific user](/api/resources/zero_trust/subresources/risk_scoring/methods/get)
+
+GET/accounts/{account_id}/zt_risk_scoring/{user_id}
+
+##### [Clear the risk score for a particular user](/api/resources/zero_trust/subresources/risk_scoring/methods/reset)
+
+POST/accounts/{account_id}/zt_risk_scoring/{user_id}/reset
+
+##### Models
+
+<details>
+
+<summary>
+
+RiskScoringGetResponse object { email, events, last_reset_time, 2 more }
+
+Risk level, last reset time, and risk events of one user.
+
+</summary>
+
+email: string
+
+Email address of the user.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+events: array of object { id, name, points, 3 more }
+
+Risk events of the user on this page.
+
+</summary>
+
+id: string
+
+ID of the behavior that caused the event.
+
+[Link to this property](#)
+
+name: string
+
+Name of the behavior that caused the event.
+
+[Link to this property](#)
+
+points: number
+
+Risk score points of a behavior.
+
+maximum100
+
+minimum1
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+risk_level: "info" or "low" or "medium" or "high"
+
+Risk level of a behavior or an event.
+
+</summary>
+
+One of the following:
+
+"info"
+
+[Link to this property](#)
+
+"low"
+
+[Link to this property](#)
+
+"medium"
+
+[Link to this property](#)
+
+"high"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+timestamp: string
+
+Time of the event.
+
+formatdate-time
+
+[Link to this property](#)
+
+event_details: optional map[unknown]
+
+Details of the event. The fields depend on the behavior. The server omits the field when the details are not valid JSON.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+last_reset_time: string
+
+Time of the last risk score reset of the user. The value is null when the score was never reset.
+
+formatdate-time
+
+[Link to this property](#)
+
+name: string
+
+Name of the user.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+risk_level: optional "info" or "low" or "medium" or "high"
+
+Risk level of a behavior or an event.
+
+</summary>
+
+One of the following:
+
+"info"
+
+[Link to this property](#)
+
+"low"
+
+[Link to this property](#)
+
+"medium"
+
+[Link to this property](#)
+
+"high"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+RiskScoringResetResponse = unknown
+
+Empty result.
+
+[Link to this property](#)
+
+##### [Get all behaviors and associated configuration](/api/resources/zero_trust/subresources/risk_scoring/subresources/behaviours/methods/get)
+
+GET/accounts/{account_id}/zt_risk_scoring/behaviors
+
+##### [Update configuration for risk behaviors](/api/resources/zero_trust/subresources/risk_scoring/subresources/behaviours/methods/update)
+
+PUT/accounts/{account_id}/zt_risk_scoring/behaviors
+
+##### Models
+
+<details>
+
+<summary>
+
+BehaviourGetResponse object { behaviors }
+
+Risk behaviors, keyed by behavior ID.
+
+</summary>
+
+<details>
+
+<summary>
+
+behaviors: map[object { description, enabled, name, 2 more } ]
+
+Risk behaviors, keyed by behavior ID.
+
+</summary>
+
+description: string
+
+Explains what the behavior detects.
+
+[Link to this property](#)
+
+enabled: boolean
+
+Whether the behavior counts toward the risk score.
+
+[Link to this property](#)
+
+name: string
+
+Display name of the behavior.
+
+[Link to this property](#)
+
+points: number
+
+Risk score points of a behavior.
+
+maximum100
+
+minimum1
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+risk_level: "info" or "low" or "medium" or "high"
+
+Risk level of a behavior or an event.
+
+</summary>
+
+One of the following:
+
+"info"
+
+[Link to this property](#)
+
+"low"
+
+[Link to this property](#)
+
+"medium"
+
+[Link to this property](#)
+
+"high"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+BehaviourUpdateResponse object { behaviors }
+
+Risk behaviors, keyed by behavior ID.
+
+</summary>
+
+<details>
+
+<summary>
+
+behaviors: map[object { description, enabled, name, 2 more } ]
+
+Risk behaviors, keyed by behavior ID.
+
+</summary>
+
+description: string
+
+Explains what the behavior detects.
+
+[Link to this property](#)
+
+enabled: boolean
+
+Whether the behavior counts toward the risk score.
+
+[Link to this property](#)
+
+name: string
+
+Display name of the behavior.
+
+[Link to this property](#)
+
+points: number
+
+Risk score points of a behavior.
+
+maximum100
+
+minimum1
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+risk_level: "info" or "low" or "medium" or "high"
+
+Risk level of a behavior or an event.
+
+</summary>
+
+One of the following:
+
+"info"
+
+[Link to this property](#)
+
+"low"
+
+[Link to this property](#)
+
+"medium"
+
+[Link to this property](#)
+
+"high"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+##### [Get risk score info for all users in the account](/api/resources/zero_trust/subresources/risk_scoring/subresources/summary/methods/get)
+
+GET/accounts/{account_id}/zt_risk_scoring/summary
+
+##### Models
+
+<details>
+
+<summary>
+
+SummaryGetResponse object { users }
+
+Risk summary of the users in an account.
+
+</summary>
+
+<details>
+
+<summary>
+
+users: array of object { email, event_count, last_event, 3 more }
+
+Users on this page, with their risk summary.
+
+</summary>
+
+email: string
+
+Email address of the user.
+
+[Link to this property](#)
+
+event_count: number
+
+Number of risk events of the user.
+
+minimum0
+
+[Link to this property](#)
+
+last_event: string
+
+Time of the most recent risk event of the user.
+
+formatdate-time
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+max_risk_level: "unset" or "info" or "low" or 2 more
+
+Highest risk level. The value is unset when no event maps to a configured behavior.
+
+</summary>
+
+One of the following:
+
+"unset"
+
+[Link to this property](#)
+
+"info"
+
+[Link to this property](#)
+
+"low"
+
+[Link to this property](#)
+
+"medium"
+
+[Link to this property](#)
+
+"high"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+name: string
+
+Name of the user.
+
+[Link to this property](#)
+
+user_id: string
+
+User ID (UUID v4).
+
+formatuuid
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 ##### [List all risk score integrations for the account.](/api/resources/zero_trust/subresources/risk_scoring/subresources/integrations/methods/list)
 
 GET/accounts/{account_id}/zt_risk_scoring/integrations

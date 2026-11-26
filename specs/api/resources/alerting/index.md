@@ -1,7 +1,9 @@
 ---
 agent:
-  instructions: "This site offers a search API that returns relevant content across the entire site. Use the search endpoint to find information instead of crawling individual pages."
-  search: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  instructions: "Use this search API to find relevant content across this site with keywords or natural-language queries, instead of crawling individual pages. Results are returned in Markdown."
+  endpoint: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  method: "GET"
+  documentation: "https://developers.cloudflare.com/ai-search/how-to/search-for-agents/"
 title: Alerting
 ---
 
@@ -15,7 +17,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 ---
 
-**Copy Markdown****View as Markdown**
+**Copy MarkdownView as Markdown**
 
 # Alerting
 
@@ -1127,7 +1129,7 @@ Whether or not the Notification policy is enabled.
 
 <a href="#">Link to this property</a>
 
-filters: optional <a href="https://developers.cloudflare.com/api/resources/alerting#(resource)%20alerting.policies%20%3E%20(model)%20policy_filter%20%3E%20(schema)">PolicyFilter</a> { actions, affected\_asns, affected\_components, 44 more }
+filters: optional <a href="https://developers.cloudflare.com/api/resources/alerting#(resource)%20alerting.policies%20%3E%20(model)%20policy_filter%20%3E%20(schema)">PolicyFilter</a> { actions, affected\_asns, affected\_components, 50 more }
 
 Optional filters that allow you to be alerted only on a subset of events for that alert type based on some criteria. This is only available for select alert types. See alert type documentation for more details.
 
@@ -1159,7 +1161,7 @@ Name of the policy.
 
 <summary>
 
-PolicyFilter object { actions, affected\_asns, affected\_components, 44 more }
+PolicyFilter object { actions, affected\_asns, affected\_components, 50 more }
 
 Optional filters that allow you to be alerted only on a subset of events for that alert type based on some criteria. This is only available for select alert types. See alert type documentation for more details.
 
@@ -1198,6 +1200,64 @@ Used for configuring maintenance\_event\_notification
 alert\_trigger\_preferences: optional array of string
 
 Usage depends on specific alert type
+
+<a href="#">Link to this property</a>
+
+alert\_trigger\_preferences\_long\_window: optional array of string
+
+Usage depends on specific alert type. Takes at most one value, a duration such as <code>4h</code>. custom\_analytics requires it when alert\_trigger\_preferences is slo, zscore\_spike, zscore\_drop or zscore\_spike\_and\_drop. There it must be at most 24h, and for the z-score types at least six times alert\_trigger\_preferences\_short\_window.
+
+<a href="#">Link to this property</a>
+
+alert\_trigger\_preferences\_minimum\_threshold: optional array of string
+
+Usage depends on specific alert type. Takes at most one value, a number as a string.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+alert\_trigger\_preferences\_operator: optional array of "&lt;" or "&gt;" or "&lt;=" or 3 more
+
+Used for configuring custom\_analytics, which requires it. Takes exactly one value, the operator that compares the result with alert\_trigger\_preferences\_value. It must be <code>&lt;</code> unless alert\_trigger\_preferences is threshold.
+
+</summary>
+
+One of the following:
+
+"&lt;"
+
+<a href="#">Link to this property</a>
+
+"&gt;"
+
+<a href="#">Link to this property</a>
+
+"&lt;="
+
+<a href="#">Link to this property</a>
+
+"&gt;="
+
+<a href="#">Link to this property</a>
+
+"=="
+
+<a href="#">Link to this property</a>
+
+"!="
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+alert\_trigger\_preferences\_short\_window: optional array of string
+
+Usage depends on specific alert type. Takes at most one value, a duration such as <code>5m</code>. custom\_analytics requires it, and it must be at least 1m there. queues\_lag\_alert requires it, at least 5m.
 
 <a href="#">Link to this property</a>
 
@@ -1240,6 +1300,12 @@ Used for configuring load\_balancing\_health\_alert
 event\_type: optional array of string
 
 Usage depends on specific alert type
+
+<a href="#">Link to this property</a>
+
+execution\_interval: optional array of string
+
+Used for configuring custom\_analytics when source is sql\_api. Other sources reject it. Takes at most one value, how often the query runs, as a duration in whole seconds such as <code>5m</code>. It can’t be shorter than the minimum for the query, which is 1m, or 10m for Log Explorer datasets. If it’s omitted, the API sets it to that minimum.
 
 <a href="#">Link to this property</a>
 
@@ -1398,6 +1464,30 @@ Used for configuring clickhouse\_alert\_fw\_ent\_anomaly
 slo: optional array of string
 
 Usage depends on specific alert type
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+source: optional array of "workers\_analytics\_engine" or "sql\_api"
+
+Used for configuring custom\_analytics, which requires it. Takes exactly one value, the dataset the alert queries.
+
+</summary>
+
+One of the following:
+
+"workers\_analytics\_engine"
+
+<a href="#">Link to this property</a>
+
+"sql\_api"
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 

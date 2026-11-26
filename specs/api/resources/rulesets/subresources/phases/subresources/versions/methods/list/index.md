@@ -1,7 +1,9 @@
 ---
 agent:
-  instructions: "This site offers a search API that returns relevant content across the entire site. Use the search endpoint to find information instead of crawling individual pages."
-  search: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  instructions: "Use this search API to find relevant content across this site with keywords or natural-language queries, instead of crawling individual pages. Results are returned in Markdown."
+  endpoint: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  method: "GET"
+  documentation: "https://developers.cloudflare.com/ai-search/how-to/search-for-agents/"
 title: List an account or zone entry point ruleset's versions
 ---
 
@@ -21,7 +23,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 ---
 
-**Copy Markdown****View as Markdown**
+**Copy MarkdownView as Markdown**
 
 # List an account or zone entry point ruleset's versions
 
@@ -61,7 +63,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Account Custom Error Rules Write``Account Custom Error Rules Read``Account Custom Pages Write``Account Custom Pages Read``Mass URL Redirects Write``Mass URL Redirects Read``Magic Firewall Write``Magic Firewall Read``L4 DDoS Managed Ruleset Write``L4 DDoS Managed Ruleset Read``Transform Rules Write``Transform Rules Read``Select Configuration Write``Select Configuration Read``Account WAF Write``Account WAF Read``Account Rulesets Read``Account Rulesets Write``Logs Write``Logs Read`
+`Account Custom Error Rules Write` `Account Custom Error Rules Read` `Account Custom Pages Write` `Account Custom Pages Read` `Mass URL Redirects Write` `Mass URL Redirects Read` `Magic Firewall Write` `Magic Firewall Read` `L4 DDoS Managed Ruleset Write` `L4 DDoS Managed Ruleset Read` `Transform Rules Write` `Transform Rules Read` `Select Configuration Write` `Select Configuration Read` `Account WAF Write` `Account WAF Read` `Account Rulesets Read` `Account Rulesets Write` `Logs Write` `Logs Read`
 
 ##### P ath ParametersExpand Collapse
 
@@ -299,31 +301,191 @@ minLength1
 
 <summary>
 
-result: unknown or array of unknown or string or 2 more
+result: array of object { id, kind, last\_updated, 4 more }
 
 A result.
 
 </summary>
 
+id: string
+
+The unique ID of the ruleset.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+kind: <a href="https://developers.cloudflare.com/api/resources/rulesets#(resource)%20rulesets%20%3E%20(model)%20kind%20%3E%20(schema)">Kind</a>
+
+The kind of the ruleset.
+
+</summary>
+
 One of the following:
 
-unknown
+"managed"
 
 <a href="#">Link to this property</a>
 
-array of unknown
+"custom"
 
 <a href="#">Link to this property</a>
 
-string
+"root"
 
 <a href="#">Link to this property</a>
 
-number
+"zone"
 
 <a href="#">Link to this property</a>
 
-boolean
+</details>
+
+<a href="#">Link to this property</a>
+
+last\_updated: string
+
+The timestamp of when the ruleset was last modified.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+name: string
+
+The human-readable name of the ruleset.
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+phase: <a href="https://developers.cloudflare.com/api/resources/rulesets#(resource)%20rulesets%20%3E%20(model)%20phase%20%3E%20(schema)">Phase</a>
+
+The phase of the ruleset.
+
+</summary>
+
+One of the following:
+
+"ddos\_l4"
+
+<a href="#">Link to this property</a>
+
+"ddos\_l7"
+
+<a href="#">Link to this property</a>
+
+"http\_config\_settings"
+
+<a href="#">Link to this property</a>
+
+"http\_custom\_errors"
+
+<a href="#">Link to this property</a>
+
+"http\_log\_custom\_fields"
+
+<a href="#">Link to this property</a>
+
+"http\_ratelimit"
+
+<a href="#">Link to this property</a>
+
+"http\_request\_cache\_settings"
+
+<a href="#">Link to this property</a>
+
+"http\_request\_dynamic\_redirect"
+
+<a href="#">Link to this property</a>
+
+"http\_request\_firewall\_custom"
+
+<a href="#">Link to this property</a>
+
+"http\_request\_firewall\_managed"
+
+<a href="#">Link to this property</a>
+
+"http\_request\_late\_transform"
+
+<a href="#">Link to this property</a>
+
+"http\_request\_origin"
+
+<a href="#">Link to this property</a>
+
+"http\_request\_redirect"
+
+<a href="#">Link to this property</a>
+
+"http\_request\_sanitize"
+
+<a href="#">Link to this property</a>
+
+"http\_request\_sbfm"
+
+<a href="#">Link to this property</a>
+
+"http\_request\_transform"
+
+<a href="#">Link to this property</a>
+
+"http\_response\_cache\_settings"
+
+<a href="#">Link to this property</a>
+
+"http\_response\_compression"
+
+<a href="#">Link to this property</a>
+
+"http\_response\_firewall\_custom"
+
+<a href="#">Link to this property</a>
+
+"http\_response\_firewall\_managed"
+
+<a href="#">Link to this property</a>
+
+"http\_response\_headers\_transform"
+
+<a href="#">Link to this property</a>
+
+"magic\_transit"
+
+<a href="#">Link to this property</a>
+
+"magic\_transit\_ids\_managed"
+
+<a href="#">Link to this property</a>
+
+"magic\_transit\_managed"
+
+<a href="#">Link to this property</a>
+
+"magic\_transit\_ratelimit"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+version: string
+
+The version of the ruleset.
+
+<a href="#">Link to this property</a>
+
+description: optional string
+
+An informative description of the ruleset.
 
 <a href="#">Link to this property</a>
 
@@ -406,7 +568,17 @@ curl https://api.cloudflare.com/client/v4/$ACCOUNTS_OR_ZONES/$ACCOUNT_OR_ZONE_ID
       }
     }
   ],
-  "result": {},
+  "result": [
+    {
+      "id": "2f2feab2026849078ba485f918791bdc",
+      "kind": "root",
+      "last_updated": "2000-01-01T00:00:00Z",
+      "name": "My ruleset",
+      "phase": "http_request_firewall_custom",
+      "version": "1",
+      "description": "A description for my ruleset."
+    }
+  ],
   "success": true,
   "result_info": {
     "cursors": {
@@ -440,7 +612,17 @@ curl https://api.cloudflare.com/client/v4/$ACCOUNTS_OR_ZONES/$ACCOUNT_OR_ZONE_ID
       }
     }
   ],
-  "result": {},
+  "result": [
+    {
+      "id": "2f2feab2026849078ba485f918791bdc",
+      "kind": "root",
+      "last_updated": "2000-01-01T00:00:00Z",
+      "name": "My ruleset",
+      "phase": "http_request_firewall_custom",
+      "version": "1",
+      "description": "A description for my ruleset."
+    }
+  ],
   "success": true,
   "result_info": {
     "cursors": {

@@ -1,7 +1,9 @@
 ---
 agent:
-  instructions: "This site offers a search API that returns relevant content across the entire site. Use the search endpoint to find information instead of crawling individual pages."
-  search: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  instructions: "Use this search API to find relevant content across this site with keywords or natural-language queries, instead of crawling individual pages. Results are returned in Markdown."
+  endpoint: "https://developers.cloudflare.com/.well-known/search?q={query}"
+  method: "GET"
+  documentation: "https://developers.cloudflare.com/ai-search/how-to/search-for-agents/"
 title: Clear the risk score for a particular user
 ---
 
@@ -19,13 +21,13 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 ---
 
-**Copy Markdown****View as Markdown**
+**Copy MarkdownView as Markdown**
 
 # Clear the risk score for a particular user
 
 POST/accounts/{account\_id}/zt\_risk\_scoring/{user\_id}/reset
 
-Resets risk scores for specified users, clearing their accumulated risk history.
+Resets the risk score of one user. Risk events before the reset do not count toward the score of the user.
 
 ##### Security
 
@@ -166,6 +168,8 @@ Whether the API call was successful.
 [Link to this property](#)%20zero_trust.risk_scoring%20%3E%20(method)%20reset%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
 result: optional unknown
+
+Empty result.
 
 [Link to this property](#)%20zero_trust.risk_scoring%20%3E%20(method)%20reset%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 

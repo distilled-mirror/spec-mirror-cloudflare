@@ -27214,31 +27214,9 @@ Define an expression to search using full-text search.
 
 </summary>
 
-<details>
-
-<summary>
-
-value: string or number or boolean
+value: string
 
 maxLength1000
-
-</summary>
-
-One of the following:
-
-string
-
-[Link to this property](#)
-
-number
-
-[Link to this property](#)
-
-boolean
-
-[Link to this property](#)
-
-</details>
 
 [Link to this property](#)
 
@@ -28102,31 +28080,9 @@ Define an expression to search using full-text search.
 
 </summary>
 
-<details>
-
-<summary>
-
-value: string or number or boolean
+value: string
 
 maxLength1000
-
-</summary>
-
-One of the following:
-
-string
-
-[Link to this property](#)
-
-number
-
-[Link to this property](#)
-
-boolean
-
-[Link to this property](#)
-
-</details>
 
 [Link to this property](#)
 
