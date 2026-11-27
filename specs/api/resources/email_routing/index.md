@@ -699,7 +699,7 @@ false
 
 matchers: optional array of <a href="https://developers.cloudflare.com/api/resources/email_routing#(resource)%20email_routing.rules%20%3E%20(model)%20matcher%20%3E%20(schema)">Matcher</a> { type, field, value }
 
-Matching patterns to forward to your actions.
+Matching patterns to forward to your actions. Creating or updating a rule requires exactly one matcher.
 
 </summary>
 
@@ -729,7 +729,7 @@ One of the following:
 
 field: optional "to"
 
-Field for type matcher.
+Field for type matcher. Required for <code>literal</code> matchers, and must be <code>to</code>.
 
 <a href="#">Link to this property</a>
 
@@ -833,7 +833,7 @@ One of the following:
 
 field: optional "to"
 
-Field for type matcher.
+Field for type matcher. Required for <code>literal</code> matchers, and must be <code>to</code>.
 
 <a href="#">Link to this property</a>
 
@@ -1335,7 +1335,7 @@ false
 
 matchers: optional array of <a href="https://developers.cloudflare.com/api/resources/email_routing#(resource)%20email_routing.rules%20%3E%20(model)%20matcher%20%3E%20(schema)">Matcher</a> { type, field, value }
 
-Matching patterns to forward to your actions.
+Matching patterns to forward to your actions. Creating or updating a rule requires exactly one matcher.
 
 </summary>
 
@@ -1365,7 +1365,7 @@ One of the following:
 
 field: optional "to"
 
-Field for type matcher.
+Field for type matcher. Required for <code>literal</code> matchers, and must be <code>to</code>.
 
 <a href="#">Link to this property</a>
 
