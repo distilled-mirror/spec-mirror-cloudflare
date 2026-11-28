@@ -915,9 +915,39 @@ One of the following:
 
 <summary>
 
-parse\_options: optional object { content\_selector, include\_headers, include\_images, 2 more }
+parse\_options: optional object { browser\_rendering\_wait\_until, content\_selector, include\_headers, 3 more }
 
 </summary>
+
+<details>
+
+<summary>
+
+browser\_rendering\_wait\_until: optional "load" or "domcontentloaded" or "networkidle0" or "networkidle2"
+
+</summary>
+
+One of the following:
+
+"load"
+
+<a href="#">Link to this property</a>
+
+"domcontentloaded"
+
+<a href="#">Link to this property</a>
+
+"networkidle0"
+
+<a href="#">Link to this property</a>
+
+"networkidle2"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 <details>
 
@@ -1266,6 +1296,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-search/namespa
             "source": "all"
           },
           "parse_options": {
+            "browser_rendering_wait_until": "load",
             "content_selector": [
               {
                 "path": "x",
@@ -1423,6 +1454,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-search/namespa
             "source": "all"
           },
           "parse_options": {
+            "browser_rendering_wait_until": "load",
             "content_selector": [
               {
                 "path": "x",
